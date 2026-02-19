@@ -5,6 +5,7 @@ import { AffiliateDisclosureInline } from "@/components/affiliate-disclosure-inl
 import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
+import { getAutoNews } from "@/content/auto-news";
 import { getLatestNews, getLocalizedNews } from "@/content/news";
 import { siteConfig } from "@/config/site";
 import { getAllCategories, getPopularPosts, recommendedTools, slugify } from "@/content/posts";
@@ -12,6 +13,15 @@ import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { alternateLanguages } from "@/i18n/helpers";
 import { absoluteUrl } from "@/lib/site-url";
+import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+
+function formatPublishedDate(date: string, locale: Locale) {
+  return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric"
+  }).format(new Date(date));
+}
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
   if (!isLocale(params.lang)) return {};
@@ -54,6 +64,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
   const categories = getAllCategories();
   const latestNews = getLatestNews(locale, 4);
   const allNews = getLocalizedNews(locale);
+  const autoUpdates = getAutoNews(locale, 6);
   const socialStats =
     siteConfig.socialProofStats.length > 0
       ? siteConfig.socialProofStats
@@ -133,6 +144,10 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
             cta: "Open comparisons"
           }
         ];
+
+  const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
+  const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
+  const hasCheckoutUrl = Boolean(checkoutUrl);
 
   const knowledgeReferences = [
     {
@@ -297,6 +312,120 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
                 {locale === "fr" ? "Comparatifs techniques" : "Technical comparisons"}
               </Link>
             </div>
+          </div>
+        </section>
+      </div>
+
+      <div className="mt-4 grid gap-4 lg:grid-cols-[1.2fr,1fr]">
+        <section className="wiki-panel overflow-hidden rounded-md">
+          <div className="wiki-head wiki-head-blue px-4 py-2 text-xl md:text-2xl">
+            {locale === "fr" ? "Signaux web automatiques (AI/CS)" : "Automatic web signals (AI/CS)"}
+          </div>
+          <div className="p-4">
+            <p className="text-sm text-[color:var(--text)]">
+              {locale === "fr"
+                ? "Selection automatique depuis des sources fiables. Utilise ces signaux pour choisir ton prochain article."
+                : "Auto-selected from trusted sources. Use these signals to choose your next article."}
+            </p>
+            {autoUpdates.length ? (
+              <ol className="mt-4 space-y-3">
+                {autoUpdates.map((item, index) => (
+                  <li key={item.slug} className="rounded border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)] p-3">
+                    <p className="text-xs text-[color:var(--muted)]">
+                      [{index + 1}] {item.source} • {formatPublishedDate(item.publishedAt, locale)}
+                    </p>
+                    <h3 className="mt-1 text-sm font-semibold text-[color:var(--text-strong)]">{item.title}</h3>
+                    <p className="mt-1 text-sm text-[color:var(--text)]">{item.summary}</p>
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="do-link mt-2 inline-block text-sm"
+                    >
+                      {locale === "fr" ? "Source officielle" : "Official source"}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            ) : (
+              <article className="mt-4 rounded border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)] p-3">
+                <p className="text-sm text-[color:var(--text)]">
+                  {locale === "fr"
+                    ? "Les sources externes n'ont pas encore fourni de nouvel item."
+                    : "External sources have not provided new items yet."}
+                </p>
+              </article>
+            )}
+            <div className="mt-4 flex flex-wrap gap-2">
+              <Link href={`/${locale}/news/live`} className="btn-secondary">
+                {locale === "fr" ? "Ouvrir le flux live" : "Open live stream"}
+              </Link>
+              <Link href={`/${locale}/news`} className="btn-secondary">
+                {locale === "fr" ? "Tous les briefs" : "All briefs"}
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="wiki-panel overflow-hidden rounded-md">
+          <div className="wiki-head wiki-head-purple px-4 py-2 text-xl md:text-2xl">
+            {locale === "fr" ? "Plan revenu starter ($10/mois)" : "Starter revenue plan ($10/month)"}
+          </div>
+          <div className="space-y-3 p-4 text-sm text-[color:var(--text)]">
+            <p>
+              {locale === "fr"
+                ? "Objectif realiste: premier palier revenu avec execution legere et constante."
+                : "Realistic target: first revenue milestone with light but consistent execution."}
+            </p>
+            <ul className="space-y-2">
+              <li>
+                {locale === "fr"
+                  ? "1. Publie 1 article utile/semaine base sur les signaux auto."
+                  : "1. Publish 1 useful article/week based on auto signals."}
+              </li>
+              <li>
+                {locale === "fr"
+                  ? "2. Mets 2 CTA naturels vers outils/comparatifs dans chaque article."
+                  : "2. Add 2 natural tool/comparison CTAs in each article."}
+              </li>
+              <li>
+                {locale === "fr"
+                  ? "3. Capture emails puis renvoie vers guide $9-$19."
+                  : "3. Capture emails, then route to your $9-$19 guide."}
+              </li>
+            </ul>
+            <div className="rounded border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
+              {locale === "fr"
+                ? "Modele: 300 visites/mois x 4% clic affiliation x 8% conversion x ~$10 commission = ~$9.6/mois."
+                : "Model: 300 visits/mo x 4% affiliate CTR x 8% conversion x ~$10 commission = ~$9.6/mo."}
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <Link href={`/${locale}/resources`} className="btn-secondary">
+                {locale === "fr" ? "Outils recommandes" : "Recommended tools"}
+              </Link>
+              <Link href={`/${locale}/compare`} className="btn-secondary">
+                {locale === "fr" ? "Comparatifs" : "Comparisons"}
+              </Link>
+              {hasCheckoutUrl ? (
+                <TrackableAnchor
+                  href={checkoutUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  event="product_checkout_click"
+                  meta={{ page: "home_revenue_plan", locale, offer: "ai-career-guide" }}
+                  className="btn-primary"
+                >
+                  {locale === "fr" ? "Acheter le guide" : "Buy the guide"}
+                </TrackableAnchor>
+              ) : (
+                <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
+                  {locale === "fr" ? "Voir le guide" : "Open student guide"}
+                </Link>
+              )}
+            </div>
+            <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "home_revenue_plan", locale }} className="do-link">
+              {locale === "fr" ? "Recuperer la roadmap gratuite" : "Get the free roadmap"}
+            </TrackableAnchor>
           </div>
         </section>
       </div>

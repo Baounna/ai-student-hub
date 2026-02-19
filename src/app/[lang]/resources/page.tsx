@@ -10,6 +10,7 @@ import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { alternateLanguages } from "@/i18n/helpers";
+import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
   if (!isLocale(params.lang)) return {};
@@ -42,6 +43,10 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
 
   const locale: Locale = params.lang;
   const dict = getDictionary(locale);
+  const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
+  const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
+  const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
+  const hasCheckoutUrl = Boolean(checkoutUrl);
   const toolsCount = recommendedTools.length;
   const stackCards = [
     {
@@ -208,6 +213,63 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
                 <p className="card-copy mt-2 text-[color:var(--text)]">{item.body}</p>
               </article>
             ))}
+          </section>
+
+          <section className="surface rounded-2xl p-6">
+            <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
+              {locale === "fr" ? "Sprint revenu 30 jours (objectif $10)" : "30-day revenue sprint ($10 target)"}
+            </h2>
+            <p className="mt-2 text-sm text-[color:var(--text)]">
+              {locale === "fr"
+                ? "Plan minimum viable pour transformer trafic etudiant en premier revenu mensuel."
+                : "Minimum viable plan to convert student traffic into your first monthly revenue."}
+            </p>
+            <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
+              <li>
+                {locale === "fr"
+                  ? "1. 4 articles/mois avec un angle comparison ou budget."
+                  : "1. Publish 4 articles/month with comparison or budget intent."}
+              </li>
+              <li>
+                {locale === "fr"
+                  ? "2. 2 liens affiliés naturels + 1 CTA roadmap dans chaque article."
+                  : "2. Add 2 natural affiliate links + 1 roadmap CTA per article."}
+              </li>
+              <li>
+                {locale === "fr"
+                  ? "3. 1 email hebdo qui pousse vers ressources puis guide payant."
+                  : "3. Send 1 weekly email pushing resources first, then paid guide."}
+              </li>
+            </ul>
+            <p className="mt-3 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
+              {locale === "fr"
+                ? "Repere: 300 visites/mois x 4% CTR affiliation x 8% conversion x ~$10 commission = ~$9.6/mois."
+                : "Reference: 300 visits/mo x 4% affiliate CTR x 8% conversion x ~$10 commission = ~$9.6/mo."}
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "resources_revenue_sprint", locale }} className="btn-secondary">
+                {locale === "fr" ? "Roadmap gratuite" : "Free roadmap"}
+              </TrackableAnchor>
+              <Link href={`/${locale}/compare`} className="btn-secondary">
+                {locale === "fr" ? "Ouvrir comparatifs" : "Open comparisons"}
+              </Link>
+              {hasCheckoutUrl ? (
+                <TrackableAnchor
+                  href={checkoutUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  event="product_checkout_click"
+                  meta={{ page: "resources_revenue_sprint", locale, offer: "ai-career-guide" }}
+                  className="btn-primary"
+                >
+                  {locale === "fr" ? "Acheter le guide" : "Buy student guide"}
+                </TrackableAnchor>
+              ) : (
+                <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
+                  {locale === "fr" ? "Voir le guide" : "Open student guide"}
+                </Link>
+              )}
+            </div>
           </section>
 
           <section className="grid gap-4 md:grid-cols-3">
