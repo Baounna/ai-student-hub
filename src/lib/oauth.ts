@@ -1,8 +1,9 @@
-import { randomBytes } from "node:crypto";
+import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
 import { absoluteUrl } from "@/lib/site-url";
 import { isOAuthEnabled } from "@/lib/runtime-config";
 
 export const OAUTH_STATE_COOKIE = "ash_oauth_state";
+const OAUTH_STATE_PATTERN = /^[a-f0-9]{40}$/;
 
 export type OAuthProvider = "google" | "github" | "linkedin";
 export type OAuthMode = "register" | "login";
@@ -28,7 +29,6 @@ type OAuthContext = {
   mode: OAuthMode;
   returnTo: string;
   state: string;
-  origin: string;
 };
 
 type OAuthTokenPayload = {
@@ -111,16 +111,44 @@ export function createOAuthState() {
   return randomBytes(20).toString("hex");
 }
 
+function getOAuthSecret() {
+  const raw = process.env.AUTH_SESSION_SECRET?.trim() || "";
+  if (raw && raw !== "change-this-in-production" && raw.length >= 32) return raw;
+  if (process.env.NODE_ENV === "production") return null;
+  return "dev-oauth-state-secret-not-for-production";
+}
+
 export function encodeOAuthContext(context: OAuthContext) {
-  return Buffer.from(JSON.stringify(context)).toString("base64url");
+  const secret = getOAuthSecret();
+  if (!secret) return "";
+
+  const encodedPayload = Buffer.from(JSON.stringify(context)).toString("base64url");
+  const signature = createHmac("sha256", secret).update(encodedPayload).digest("base64url");
+  return `${encodedPayload}.${signature}`;
 }
 
 export function decodeOAuthContext(value: string | undefined): OAuthContext | null {
   if (!value) return null;
+
+  const secret = getOAuthSecret();
+  if (!secret) return null;
+
+  const [encodedPayload, encodedSignature] = value.split(".");
+  if (!encodedPayload || !encodedSignature) return null;
+
+  const expectedSignature = createHmac("sha256", secret).update(encodedPayload).digest("base64url");
+  const sigBuffer = Buffer.from(encodedSignature);
+  const expectedBuffer = Buffer.from(expectedSignature);
+  if (sigBuffer.length !== expectedBuffer.length) return null;
+  if (!timingSafeEqual(sigBuffer, expectedBuffer)) return null;
+
   try {
-    const parsed = JSON.parse(Buffer.from(value, "base64url").toString("utf8")) as OAuthContext;
+    const parsed = JSON.parse(Buffer.from(encodedPayload, "base64url").toString("utf8")) as OAuthContext;
     if (!parsed || !isOAuthProvider(parsed.provider) || !isEnFr(parsed.locale)) return null;
-    if (!parsed.origin || !/^https?:\/\//.test(parsed.origin)) return null;
+    if (parsed.mode !== "login" && parsed.mode !== "register") return null;
+    if (!parsed.returnTo || !parsed.returnTo.startsWith("/") || parsed.returnTo.startsWith("//")) return null;
+    if (parsed.returnTo.length > 2048) return null;
+    if (!OAUTH_STATE_PATTERN.test(parsed.state || "")) return null;
     return parsed;
   } catch {
     return null;
@@ -143,21 +171,18 @@ export function isProviderConfigured(provider: OAuthProvider) {
   return Boolean(creds.clientId && creds.clientSecret);
 }
 
-function getRedirectUri(provider: OAuthProvider, origin?: string) {
-  if (origin && /^https?:\/\//.test(origin)) {
-    return `${origin.replace(/\/+$/, "")}/api/auth/oauth/${provider}/callback`;
-  }
+function getRedirectUri(provider: OAuthProvider) {
   return absoluteUrl(`/api/auth/oauth/${provider}/callback`);
 }
 
-export function buildProviderAuthorizeUrl(provider: OAuthProvider, state: string, origin?: string) {
+export function buildProviderAuthorizeUrl(provider: OAuthProvider, state: string) {
   const config = providerConfigs[provider];
   const creds = getProviderCredentials(provider);
   if (!creds.clientId || !creds.clientSecret) return null;
 
   const params = new URLSearchParams();
   params.set("client_id", creds.clientId);
-  params.set("redirect_uri", getRedirectUri(provider, origin));
+  params.set("redirect_uri", getRedirectUri(provider));
   params.set("response_type", "code");
   params.set("scope", config.scopes.join(" "));
   params.set("state", state);
@@ -172,8 +197,7 @@ export function buildProviderAuthorizeUrl(provider: OAuthProvider, state: string
 
 export async function exchangeOAuthCode(
   provider: OAuthProvider,
-  code: string,
-  origin?: string
+  code: string
 ): Promise<OAuthTokenPayload> {
   const config = providerConfigs[provider];
   const creds = getProviderCredentials(provider);
@@ -185,7 +209,7 @@ export async function exchangeOAuthCode(
   params.set("client_id", creds.clientId);
   params.set("client_secret", creds.clientSecret);
   params.set("code", code);
-  params.set("redirect_uri", getRedirectUri(provider, origin));
+  params.set("redirect_uri", getRedirectUri(provider));
   params.set("grant_type", "authorization_code");
 
   const response = await fetch(config.tokenUrl, {

@@ -26,8 +26,8 @@ export function AccountAccessForm({ locale, mode }: AccountAccessFormProps) {
       ? "Creer mon acces"
       : "Create my account"
     : locale === "fr"
-      ? "Connexion instantanee"
-      : "Instant sign in";
+      ? "Continuer par email"
+      : "Continue with email";
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -87,8 +87,8 @@ export function AccountAccessForm({ locale, mode }: AccountAccessFormProps) {
             ? "Acces gratuit a AI Student Hub"
             : "Free AI Student Hub access"
           : locale === "fr"
-            ? "Connexion instantanee"
-            : "Instant sign in"}
+            ? "Acces par email"
+            : "Email access"}
       </h2>
       <p className="mt-2 text-sm text-[color:var(--text)]">
         {isRegister
@@ -96,14 +96,14 @@ export function AccountAccessForm({ locale, mode }: AccountAccessFormProps) {
             ? "Entre ton email pour creer ton acces et recevoir les mises a jour."
             : "Enter your email to create access and receive platform updates."
           : locale === "fr"
-            ? "Entre ton email pour ouvrir ta session immediatement."
-            : "Enter your email to open your session instantly."}
+            ? "Entre ton email pour recevoir un acces ou des instructions de connexion."
+            : "Enter your email to receive access or sign-in instructions."}
       </p>
 
       <div className="mt-3 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-2 text-xs text-[color:var(--muted)]">
         {locale === "fr"
-          ? "Acces instantane apres validation. Email optionnel si la livraison est active."
-          : "Instant access after submit. Email is optional when delivery is active."}
+          ? "La livraison email depend de la configuration production."
+          : "Email delivery depends on production configuration."}
       </div>
 
       <div className="mt-4 grid gap-3">

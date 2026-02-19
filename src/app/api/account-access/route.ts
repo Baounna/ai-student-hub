@@ -3,6 +3,8 @@ import { getClientIp } from "@/lib/request";
 import { rateLimit } from "@/lib/rate-limit";
 import { normalizeLocale, normalizeSource, subscribeConvertKit } from "@/lib/convertkit";
 import { AUTH_SESSION_COOKIE, createSessionToken } from "@/lib/auth-session";
+import { isInsecureEmailAuthAllowed } from "@/lib/runtime-config";
+import { isTrustedMutationRequest } from "@/lib/security";
 
 type AccountPayload = {
   email?: string;
@@ -26,6 +28,10 @@ function displayNameFromEmail(email: string) {
 
 export async function POST(request: Request) {
   try {
+    if (!isTrustedMutationRequest(request)) {
+      return NextResponse.json({ ok: false, error: "Forbidden" }, { status: 403 });
+    }
+
     const body = (await request.json()) as AccountPayload;
     const ip = getClientIp(request);
     const key = `account-access:${ip}`;
@@ -51,46 +57,59 @@ export async function POST(request: Request) {
     }
 
     const accountName = mode === "register" ? body.name?.trim() || "" : "";
+    if (accountName.length > 80) {
+      return NextResponse.json({ ok: false, error: "Invalid name" }, { status: 400 });
+    }
+
     const normalizedName = accountName || displayNameFromEmail(email);
-    const sessionToken = createSessionToken({
-      provider: "email",
-      providerUserId: email,
-      email,
-      name: normalizedName
-    });
 
     const locale = normalizeLocale(body.locale);
     const source = normalizeSource(body.source, `auth_${mode}`);
     const subscribeResult = await subscribeConvertKit({
       email,
-      firstName: mode === "register" ? body.name?.trim() || undefined : undefined,
+      firstName: mode === "register" ? accountName || undefined : undefined,
       locale,
       source,
       extraTags: [`account_${mode}`]
     });
     const emailForwarded = subscribeResult.ok && !subscribeResult.skipped;
+    const canIssueEmailSession = isInsecureEmailAuthAllowed();
 
     const response = NextResponse.json({
       ok: true,
       mode,
       forwarded: emailForwarded,
       emailDeliveryFailed: !subscribeResult.ok,
-      authenticated: true,
-      redirectTo: `/${locale}/account?auth=success`,
-      message: emailForwarded
-        ? mode === "register"
-          ? "Account request received. Check your inbox."
-          : "Login request received. Check your inbox."
-        : "Signed in successfully."
+      authenticated: canIssueEmailSession,
+      redirectTo: canIssueEmailSession ? `/${locale}/account?auth=success` : null,
+      message: canIssueEmailSession
+        ? emailForwarded
+          ? mode === "register"
+            ? "Account request received. Check your inbox."
+            : "Login request received. Check your inbox."
+          : "Signed in successfully."
+        : emailForwarded
+          ? "Access request received. Check your inbox to continue."
+          : "Access request saved. Email delivery is not active yet."
     });
 
-    response.cookies.set(AUTH_SESSION_COOKIE, sessionToken, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
-      path: "/",
-      maxAge: 60 * 60 * 24 * 30
-    });
+    if (canIssueEmailSession) {
+      const sessionToken = createSessionToken({
+        provider: "email",
+        providerUserId: email,
+        email,
+        name: normalizedName
+      });
+
+      response.cookies.set(AUTH_SESSION_COOKIE, sessionToken, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+        sameSite: "lax",
+        path: "/",
+        maxAge: 60 * 60 * 24 * 30,
+        priority: "high"
+      });
+    }
 
     return response;
   } catch {

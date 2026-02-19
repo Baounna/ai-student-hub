@@ -9,6 +9,29 @@ import {
 } from "@/lib/oauth";
 import { isOAuthEnabled } from "@/lib/runtime-config";
 
+const SAFE_OAUTH_ERRORS = new Set([
+  "oauth_disabled",
+  "provider_not_configured",
+  "context_encode_failed",
+  "missing_context",
+  "provider_mismatch",
+  "state_mismatch",
+  "missing_code",
+  "token_exchange_failed",
+  "missing_access_token",
+  "google_userinfo_failed",
+  "google_userinfo_incomplete",
+  "github_userinfo_failed",
+  "github_userinfo_incomplete",
+  "linkedin_userinfo_failed",
+  "linkedin_userinfo_incomplete",
+  "oauth_failed"
+]);
+
+function sanitizeOAuthError(value: string) {
+  return SAFE_OAUTH_ERRORS.has(value) ? value : "oauth_failed";
+}
+
 function withQuery(path: string, key: string, value: string) {
   const url = new URL(path, "https://local.invalid");
   url.searchParams.set(key, value);
@@ -35,12 +58,19 @@ export async function GET(request: NextRequest, { params }: { params: { provider
     return NextResponse.redirect(new URL(withQuery(fallbackTarget, "oauth_error", "oauth_disabled"), request.url));
   }
 
+  const cookieOptions = {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax" as const,
+    path: "/",
+    priority: "high" as const
+  };
+
   function redirectWithError(error: string) {
-    const response = NextResponse.redirect(new URL(withQuery(fallbackTarget, "oauth_error", error), request.url));
-    response.cookies.set(OAUTH_STATE_COOKIE, "", {
-      path: "/",
-      maxAge: 0
-    });
+    const response = NextResponse.redirect(
+      new URL(withQuery(fallbackTarget, "oauth_error", sanitizeOAuthError(error)), request.url)
+    );
+    response.cookies.set(OAUTH_STATE_COOKIE, "", { ...cookieOptions, maxAge: 0 });
     return response;
   }
 
@@ -51,29 +81,23 @@ export async function GET(request: NextRequest, { params }: { params: { provider
   if (!code) return redirectWithError("missing_code");
 
   try {
-    const { accessToken } = await exchangeOAuthCode(providerRaw, code, context.origin);
+    const { accessToken } = await exchangeOAuthCode(providerRaw, code);
     const user = await fetchOAuthUser(providerRaw, accessToken);
     const sessionToken = createSessionToken(user);
 
     const successTarget = withQuery(context.returnTo, "auth", "success");
     const response = NextResponse.redirect(new URL(successTarget, request.url));
 
-    response.cookies.set(OAUTH_STATE_COOKIE, "", {
-      path: "/",
-      maxAge: 0
-    });
+    response.cookies.set(OAUTH_STATE_COOKIE, "", { ...cookieOptions, maxAge: 0 });
 
     response.cookies.set(AUTH_SESSION_COOKIE, sessionToken, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
-      path: "/",
+      ...cookieOptions,
       maxAge: 60 * 60 * 24 * 30
     });
 
     return response;
   } catch (error) {
-    const reason = error instanceof Error ? error.message : "oauth_failed";
+    const reason = error instanceof Error ? sanitizeOAuthError(error.message) : "oauth_failed";
     return redirectWithError(reason);
   }
 }

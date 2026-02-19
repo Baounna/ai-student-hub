@@ -29,8 +29,7 @@ export async function GET(request: NextRequest, { params }: { params: { provider
 
   const state = createOAuthState();
 
-  const origin = request.nextUrl.origin;
-  const authorizeUrl = buildProviderAuthorizeUrl(providerRaw, state, origin);
+  const authorizeUrl = buildProviderAuthorizeUrl(providerRaw, state);
   if (!authorizeUrl) {
     return NextResponse.redirect(new URL(`/${locale}/${mode}?oauth_error=provider_not_configured`, request.url));
   }
@@ -40,8 +39,7 @@ export async function GET(request: NextRequest, { params }: { params: { provider
     locale,
     mode,
     returnTo,
-    state,
-    origin
+    state
   });
 
   // decode function imported to keep context format in one module and avoid drift in callback route.
@@ -55,7 +53,8 @@ export async function GET(request: NextRequest, { params }: { params: { provider
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
     path: "/",
-    maxAge: 10 * 60
+    maxAge: 10 * 60,
+    priority: "high"
   });
 
   return response;

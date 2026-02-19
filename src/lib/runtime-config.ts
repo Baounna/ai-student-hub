@@ -1,6 +1,7 @@
 type OAuthMode = "enable" | "disable";
 type EmailProvider = "none" | "convertkit";
 type AnalyticsMode = "none" | "ga4";
+type EmailAuthMode = "oauth_only" | "insecure_demo";
 
 function normalize(value: string | undefined) {
   return (value || "").trim().toLowerCase();
@@ -18,6 +19,22 @@ export function isOAuthEnabled() {
 export function getEmailProvider(): EmailProvider {
   const value = normalize(process.env.EMAIL_PROVIDER);
   return value === "convertkit" ? "convertkit" : "none";
+}
+
+export function getEmailAuthMode(): EmailAuthMode {
+  const value = normalize(process.env.EMAIL_AUTH_MODE);
+  return value === "insecure_demo" ? "insecure_demo" : "oauth_only";
+}
+
+export function isInsecureEmailAuthAllowed() {
+  // Never allow insecure email-auth sessions in production unless explicitly enabled.
+  if (process.env.NODE_ENV === "production") {
+    return getEmailAuthMode() === "insecure_demo";
+  }
+
+  // Local development can keep fast iteration by default.
+  if (!process.env.EMAIL_AUTH_MODE?.trim()) return true;
+  return getEmailAuthMode() === "insecure_demo";
 }
 
 export function getAnalyticsMode(): AnalyticsMode {

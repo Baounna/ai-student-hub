@@ -236,28 +236,31 @@ Environment is grouped by:
 5. Choose email provider mode:
    - `EMAIL_PROVIDER=none` (capture endpoint active without ConvertKit forwarding)
    - or `EMAIL_PROVIDER=convertkit` with `CONVERTKIT_FORM_ID` and `CONVERTKIT_API_KEY`.
-6. Add donation and affiliate links:
+6. Choose email auth security mode:
+   - `EMAIL_AUTH_MODE=oauth_only` (recommended production, no unverified email session issuance)
+   - `EMAIL_AUTH_MODE=insecure_demo` (dev/demo only)
+7. Add donation and affiliate links:
    - `NEXT_PUBLIC_DONATION_PRIMARY_URL`/`PAYPAL`/`KOFI`/`GITHUB_SPONSORS`
    - `AFFILIATE_1..5` URLs and placements
-7. Verify affiliate coverage:
+8. Verify affiliate coverage:
 
 ```bash
 npm run verify:affiliates
 ```
 
-8. Run production preflight:
+9. Run production preflight:
 
 ```bash
 npm run verify:production
 ```
 
-9. Run:
+10. Run:
 
 ```bash
 npm run lint && npm run build
 ```
 
-10. Deploy to Vercel, then re-test:
+11. Deploy to Vercel, then re-test:
    - `/en`, `/fr`
    - `/en/login`, `/en/register`, `/en/account`
    - `/en/donate`
@@ -345,7 +348,9 @@ Automatic tagging:
 - OAuth mode:
   - `OAUTH_MODE=enable` to use Google/GitHub/LinkedIn (recommended for production identity trust).
   - `OAUTH_MODE=disable` for email/local flow only.
-- Email/local flow (`/login`, `/register`) creates a secure signed session cookie immediately after submit.
+- Email auth mode:
+  - `EMAIL_AUTH_MODE=oauth_only` (default/recommended): email forms capture requests, but do not create an authenticated session.
+  - `EMAIL_AUTH_MODE=insecure_demo`: email forms can create a local signed session immediately (use only for local demos).
 - If ConvertKit is configured, the same flow can also forward contact capture tags for email automation.
 
 ## Content Workflow

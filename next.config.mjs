@@ -1,17 +1,24 @@
 const isDevelopment = process.env.NODE_ENV !== "production";
 
-const contentSecurityPolicy = [
+const cspDirectives = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDevelopment ? " 'unsafe-eval'" : ""}`,
+  `script-src 'self' 'unsafe-inline' https://www.googletagmanager.com${isDevelopment ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https:",
   "font-src 'self' data:",
-  `connect-src 'self' https:${isDevelopment ? " ws: wss:" : ""}`,
+  `connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com${isDevelopment ? " ws: wss:" : ""}`,
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
-  "frame-ancestors 'none'"
-].join("; ");
+  "frame-ancestors 'none'",
+  "frame-src 'none'"
+];
+
+if (!isDevelopment) {
+  cspDirectives.push("upgrade-insecure-requests");
+}
+
+const contentSecurityPolicy = cspDirectives.join("; ");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -26,8 +33,10 @@ const nextConfig = {
       { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
       { key: "X-Frame-Options", value: "DENY" },
       { key: "X-Content-Type-Options", value: "nosniff" },
+      { key: "X-Permitted-Cross-Domain-Policies", value: "none" },
       { key: "X-DNS-Prefetch-Control", value: "on" },
       { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), browsing-topics=()" },
+      { key: "Origin-Agent-Cluster", value: "?1" },
       { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
       { key: "Cross-Origin-Resource-Policy", value: "same-origin" }
     ];

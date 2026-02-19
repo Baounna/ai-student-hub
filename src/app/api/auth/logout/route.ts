@@ -15,7 +15,8 @@ export async function GET(request: NextRequest) {
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
     path: "/",
-    maxAge: 0
+    maxAge: 0,
+    priority: "high"
   });
 
   return response;

@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import { getClientIp } from "@/lib/request";
 import { rateLimit } from "@/lib/rate-limit";
+import { isSafeWebhookTarget, isTrustedMutationRequest } from "@/lib/security";
 import { sanitizeTrackPayload } from "@/lib/tracking-schema";
-import { isSafeHttpUrl } from "@/lib/url";
 
 const isTrackingDebugEnabled =
   process.env.NODE_ENV !== "production" &&
@@ -15,6 +15,10 @@ function debugLog(payload: unknown) {
 
 export async function POST(request: Request) {
   try {
+    if (!isTrustedMutationRequest(request)) {
+      return NextResponse.json({ ok: false, error: "Forbidden" }, { status: 403 });
+    }
+
     const ip = getClientIp(request);
     const limiter = rateLimit(`track:${ip}`, 240, 60 * 1000);
     if (!limiter.allowed) {
@@ -32,7 +36,7 @@ export async function POST(request: Request) {
 
     const event = sanitized.data;
     const webhook = (process.env.TRACKING_WEBHOOK_URL || "").trim();
-    const shouldSendWebhook = isSafeHttpUrl(webhook);
+    const shouldSendWebhook = isSafeWebhookTarget(webhook);
 
     if (shouldSendWebhook) {
       try {

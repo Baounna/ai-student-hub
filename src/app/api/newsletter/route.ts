@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getClientIp } from "@/lib/request";
 import { rateLimit } from "@/lib/rate-limit";
 import { normalizeLocale, normalizeSource, subscribeConvertKit } from "@/lib/convertkit";
+import { isTrustedMutationRequest } from "@/lib/security";
 
 type NewsletterPayload = {
   email?: string;
@@ -13,6 +14,10 @@ type NewsletterPayload = {
 
 export async function POST(request: Request) {
   try {
+    if (!isTrustedMutationRequest(request)) {
+      return NextResponse.json({ ok: false, error: "Forbidden" }, { status: 403 });
+    }
+
     const body = (await request.json()) as NewsletterPayload;
     const ip = getClientIp(request);
     const key = `newsletter:${ip}`;

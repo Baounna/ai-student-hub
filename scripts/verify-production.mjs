@@ -145,6 +145,7 @@ if (!isUrl(checkout)) {
 }
 
 const oauthMode = ((env.OAUTH_MODE || "disable").trim().toLowerCase() || "disable");
+const emailAuthMode = ((env.EMAIL_AUTH_MODE || "oauth_only").trim().toLowerCase() || "oauth_only");
 if (oauthMode === "enable") {
   const providers = [
     ["GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET", "Google"],
@@ -159,6 +160,10 @@ if (oauthMode === "enable") {
   }
 } else {
   warn("OAuth is disabled. Only email/local access flow is available.");
+}
+
+if (emailAuthMode === "insecure_demo") {
+  warn("EMAIL_AUTH_MODE=insecure_demo enables unverified email session login. Avoid this in production.");
 }
 
 const emailProvider = ((env.EMAIL_PROVIDER || "none").trim().toLowerCase() || "none");
@@ -187,6 +192,9 @@ const webhook = (env.TRACKING_WEBHOOK_URL || "").trim();
 if (webhook && !isUrl(webhook)) {
   error("TRACKING_WEBHOOK_URL is invalid.");
 } else if (webhook) {
+  if (webhook.startsWith("http://")) {
+    warn("TRACKING_WEBHOOK_URL should use HTTPS in production.");
+  }
   ok("Tracking webhook URL set.");
 }
 
