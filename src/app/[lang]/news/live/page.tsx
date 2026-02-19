@@ -7,7 +7,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords } from "@/lib/seo";
 import { getLiveAiCsUpdates, getLiveNewsSources } from "@/lib/live-news";
 
-export const revalidate = 60 * 30;
+export const dynamic = "force-dynamic";
 
 function formatPublishedDate(date: string, locale: Locale) {
   if (!date) return locale === "fr" ? "Date indisponible" : "Date unavailable";

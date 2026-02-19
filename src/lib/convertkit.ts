@@ -51,20 +51,25 @@ export async function subscribeConvertKit(options: SubscribeOptions) {
   const sourceTag = normalizeSource(options.source, "site");
   const extraTags = (options.extraTags || []).map((tag) => sanitizeTagFragment(tag, "tag")).filter(Boolean);
 
-  const response = await fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    signal: AbortSignal.timeout(12_000),
-    body: JSON.stringify({
-      api_key: apiKey,
-      email: options.email,
-      first_name: options.firstName || undefined,
-      tags: ["ai-student-hub", `locale:${localeTag}`, `source:${sourceTag}`, ...extraTags]
-    })
-  });
+  try {
+    const response = await fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      signal: AbortSignal.timeout(12_000),
+      body: JSON.stringify({
+        api_key: apiKey,
+        email: options.email,
+        first_name: options.firstName || undefined,
+        tags: ["ai-student-hub", `locale:${localeTag}`, `source:${sourceTag}`, ...extraTags]
+      })
+    });
 
-  if (!response.ok) {
-    if (isDev) console.info("[convertkit] provider error", response.status);
+    if (!response.ok) {
+      if (isDev) console.info("[convertkit] provider error", response.status);
+      return { ok: false, skipped: false as const, reason: "provider_error" };
+    }
+  } catch {
+    if (isDev) console.info("[convertkit] provider request failed");
     return { ok: false, skipped: false as const, reason: "provider_error" };
   }
 

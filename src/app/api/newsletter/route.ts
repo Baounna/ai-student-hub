@@ -44,12 +44,12 @@ export async function POST(request: Request) {
       locale,
       source
     });
-
-    if (!subscribeResult.ok) {
-      return NextResponse.json({ ok: false, error: "Provider error" }, { status: 502 });
-    }
-
-    return NextResponse.json({ ok: true, forwarded: !subscribeResult.skipped });
+    const emailForwarded = subscribeResult.ok && !subscribeResult.skipped;
+    return NextResponse.json({
+      ok: true,
+      forwarded: emailForwarded,
+      emailDeliveryFailed: !subscribeResult.ok
+    });
   } catch {
     return NextResponse.json({ ok: false, error: "Unexpected error" }, { status: 500 });
   }

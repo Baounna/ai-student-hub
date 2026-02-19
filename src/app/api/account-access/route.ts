@@ -68,18 +68,16 @@ export async function POST(request: Request) {
       source,
       extraTags: [`account_${mode}`]
     });
-
-    if (!subscribeResult.ok) {
-      return NextResponse.json({ ok: false, error: "Provider error" }, { status: 502 });
-    }
+    const emailForwarded = subscribeResult.ok && !subscribeResult.skipped;
 
     const response = NextResponse.json({
       ok: true,
       mode,
-      forwarded: !subscribeResult.skipped,
+      forwarded: emailForwarded,
+      emailDeliveryFailed: !subscribeResult.ok,
       authenticated: true,
       redirectTo: `/${locale}/account?auth=success`,
-      message: !subscribeResult.skipped
+      message: emailForwarded
         ? mode === "register"
           ? "Account request received. Check your inbox."
           : "Login request received. Check your inbox."

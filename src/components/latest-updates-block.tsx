@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { getAutoNews } from "@/content/auto-news";
 import type { Locale } from "@/i18n/config";
-import { getLiveAiCsUpdates } from "@/lib/live-news";
 
 type LatestUpdatesBlockProps = {
   locale: Locale;
@@ -21,14 +20,12 @@ function formatUpdateDate(value: string, locale: Locale) {
 
 export async function LatestUpdatesBlock({ locale, limit = 6, compact = false, className = "" }: LatestUpdatesBlockProps) {
   const fr = locale === "fr";
-  const liveUpdates = await getLiveAiCsUpdates(limit);
-  const fallbackUpdates = getAutoNews(locale, limit).map((item) => ({
+  const updates = getAutoNews(locale, limit).map((item) => ({
     title: item.title,
     href: item.href,
     source: item.source,
     publishedAt: item.publishedAt
   }));
-  const updates = liveUpdates.length ? liveUpdates : fallbackUpdates;
 
   const sectionClass = compact
     ? "surface rounded-2xl p-5"
@@ -41,8 +38,8 @@ export async function LatestUpdatesBlock({ locale, limit = 6, compact = false, c
       </h2>
       <p className="mt-2 text-sm text-[color:var(--text)]">
         {fr
-          ? "Flux automatise depuis des sources fiables. Chaque lien pointe vers la publication originale."
-          : "Automated stream from trusted sources. Every link points to the original publication."}
+          ? "Flux automatise depuis les briefs verifies. Chaque lien pointe vers la publication originale."
+          : "Automated stream from verified briefs. Every link points to the original publication."}
       </p>
 
       {updates.length ? (
