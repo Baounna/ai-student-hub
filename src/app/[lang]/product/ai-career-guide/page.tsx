@@ -5,6 +5,8 @@ import { TrackableAnchor } from "@/components/trackable-anchor";
 import { Newsletter } from "@/components/newsletter";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
 const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
@@ -23,6 +25,10 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title,
     description,
+    keywords: getSeoKeywords(params.lang, "product", [
+      fr ? "guide carriere ia etudiant pdf" : "ai student career guide pdf",
+      fr ? "roadmap stage ia" : "ai internship roadmap"
+    ]),
     openGraph: {
       title,
       description,
@@ -36,12 +42,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       description,
       images: ["/images/post-roadmap.svg"]
     },
-    alternates: {
-      languages: {
-        en: "/en/product/ai-career-guide",
-        fr: "/fr/product/ai-career-guide"
-      }
-    }
+    alternates: localizedAlternates("/product/ai-career-guide", params.lang)
   };
 }
 

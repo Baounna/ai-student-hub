@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
   if (!isLocale(params.lang)) return {};
@@ -10,9 +10,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title: params.lang === "fr" ? "Divulgation d'affiliation" : "Affiliate Disclosure",
     description: params.lang === "fr" ? "Informations sur les liens d'affiliation." : "Information about affiliate links.",
-    alternates: {
-      languages: alternateLanguages("/affiliate-disclosure")
-    }
+    alternates: localizedAlternates("/affiliate-disclosure", params.lang)
   };
 }
 

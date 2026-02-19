@@ -9,7 +9,8 @@ import { recommendedTools } from "@/content/posts";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
@@ -19,6 +20,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title: dict.resources.title,
     description: dict.resources.subtitle,
+    keywords: getSeoKeywords(params.lang, "resources"),
     openGraph: {
       title: dict.resources.title,
       description: dict.resources.subtitle,
@@ -32,9 +34,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       description: dict.resources.subtitle,
       images: ["/images/post-deploy.svg"]
     },
-    alternates: {
-      languages: alternateLanguages("/resources")
-    }
+    alternates: localizedAlternates("/resources", params.lang)
   };
 }
 
@@ -217,12 +217,12 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
 
           <section className="surface rounded-2xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "Sprint revenu 30 jours (objectif $10)" : "30-day revenue sprint ($10 target)"}
+              {locale === "fr" ? "Sprint execution 30 jours" : "30-day execution sprint"}
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Plan minimum viable pour transformer trafic etudiant en premier revenu mensuel."
-                : "Minimum viable plan to convert student traffic into your first monthly revenue."}
+                ? "Plan minimum viable pour structurer contenu, SEO et conversion de maniere professionnelle."
+                : "Minimum viable plan to structure content, SEO, and conversion in a professional way."}
             </p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
@@ -243,11 +243,11 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
             </ul>
             <p className="mt-3 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Repere: 300 visites/mois x 4% CTR affiliation x 8% conversion x ~$10 commission = ~$9.6/mois."
-                : "Reference: 300 visits/mo x 4% affiliate CTR x 8% conversion x ~$10 commission = ~$9.6/mo."}
+                ? "Repere: suis les KPI chaque semaine (CTR, opt-ins, clics produit) et optimise en continu."
+                : "Reference: track weekly KPIs (CTR, opt-ins, product clicks) and optimize continuously."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
-              <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "resources_revenue_sprint", locale }} className="btn-secondary">
+              <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "resources_execution_sprint", locale }} className="btn-secondary">
                 {locale === "fr" ? "Roadmap gratuite" : "Free roadmap"}
               </TrackableAnchor>
               <Link href={`/${locale}/compare`} className="btn-secondary">
@@ -262,7 +262,7 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
                   target="_blank"
                   rel="noopener noreferrer"
                   event="product_checkout_click"
-                  meta={{ page: "resources_revenue_sprint", locale, offer: "ai-career-guide" }}
+                  meta={{ page: "resources_execution_sprint", locale, offer: "ai-career-guide" }}
                   className="btn-primary"
                 >
                   {locale === "fr" ? "Acheter le guide" : "Buy student guide"}

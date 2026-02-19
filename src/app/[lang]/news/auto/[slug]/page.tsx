@@ -10,6 +10,8 @@ import { ReadingProgress } from "@/components/reading-progress";
 import { getAutoNews, getAutoNewsBySlug } from "@/content/auto-news";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -139,6 +141,11 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
   return {
     title: item.title,
     description: item.summary,
+    keywords: getSeoKeywords(params.lang, "newsPost", [
+      item.topic,
+      item.source,
+      params.lang === "fr" ? "brief auto ia" : "auto ai brief"
+    ]),
     openGraph: {
       title: item.title,
       description: item.summary,
@@ -153,12 +160,7 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
       description: item.summary,
       images: ["/images/post-deploy.svg"]
     },
-    alternates: {
-      languages: {
-        en: `/en/news/auto/${params.slug}`,
-        fr: `/fr/news/auto/${params.slug}`
-      }
-    }
+    alternates: localizedAlternates(`/news/auto/${params.slug}`, params.lang)
   };
 }
 
@@ -192,13 +194,18 @@ export default function AutoNewsDetailPage({ params }: { params: { lang: string;
     inLanguage: locale,
     publisher: {
       "@type": "Organization",
-      name: "AI Student Hub"
+      name: "AI Student Hub",
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl("/icon.svg")
+      }
     },
     author: {
       "@type": "Organization",
       name: "AI Student Hub"
     },
     mainEntityOfPage: absoluteUrl(`/${locale}/news/auto/${item.slug}`),
+    image: [absoluteUrl("/images/post-deploy.svg")],
     articleSection: item.topic,
     citation: [item.href, item.sourceFeed]
   };

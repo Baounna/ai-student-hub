@@ -4,7 +4,8 @@ import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
@@ -19,9 +20,11 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title,
     description,
-    alternates: {
-      languages: alternateLanguages("/donate")
-    }
+    keywords: getSeoKeywords(params.lang, "about", [
+      fr ? "don education ia" : "donate ai education",
+      fr ? "soutenir blog ia etudiant" : "support student ai blog"
+    ]),
+    alternates: localizedAlternates("/donate", params.lang)
   };
 }
 

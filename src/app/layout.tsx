@@ -1,11 +1,38 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { siteConfig } from "@/config/site";
 import { getGa4MeasurementId, isGa4Enabled } from "@/lib/runtime-config";
-import { getSiteUrl } from "@/lib/site-url";
+import { absoluteUrl, getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
+
+function getMetadataVerification(): Metadata["verification"] | undefined {
+  const google = (process.env.GOOGLE_SITE_VERIFICATION || "").trim();
+  const bing = (process.env.BING_SITE_VERIFICATION || "").trim();
+  const yandex = (process.env.YANDEX_SITE_VERIFICATION || "").trim();
+  const baidu = (process.env.BAIDU_SITE_VERIFICATION || "").trim();
+
+  const verification: Metadata["verification"] = {};
+
+  if (google) verification.google = google;
+  if (yandex) verification.yandex = yandex;
+
+  const other: Record<string, string | string[]> = {};
+  if (bing) other["msvalidate.01"] = bing;
+  if (baidu) other["baidu-site-verification"] = baidu;
+  if (Object.keys(other).length) verification.other = other;
+
+  return Object.keys(verification).length ? verification : undefined;
+}
+
+const metadataVerification = getMetadataVerification();
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
+  applicationName: "AI Student Hub",
+  category: "education",
+  creator: "AI Student Hub",
+  publisher: "AI Student Hub",
+  authors: [{ name: "AI Student Hub", url: getSiteUrl() }],
   title: {
     default: "AI Student Hub | AI Engineering Blog for Students",
     template: "%s | AI Student Hub"
@@ -16,14 +43,17 @@ export const metadata: Metadata = {
     "AI engineering blog",
     "AI projects for students",
     "machine learning internships",
-    "student AI portfolio"
+    "student AI portfolio",
+    "AI and computer science news",
+    "AI tools comparison for students"
   ],
   openGraph: {
     title: "AI Student Hub | AI Engineering Blog for Students",
     description:
       "Project-first AI tutorials, portfolio frameworks, and internship-ready engineering systems for students.",
     type: "website",
-    url: "/"
+    url: "/",
+    siteName: "AI Student Hub"
   },
   twitter: {
     card: "summary_large_image",
@@ -35,16 +65,41 @@ export const metadata: Metadata = {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
     shortcut: "/icon.svg"
   },
+  manifest: "/manifest.webmanifest",
   alternates: {
+    canonical: "/",
     types: {
       "application/rss+xml": "/feed.xml"
     }
-  }
+  },
+  verification: metadataVerification
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const ga4Enabled = isGa4Enabled();
   const ga4MeasurementId = getGa4MeasurementId();
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: siteConfig.brandName,
+    url: getSiteUrl(),
+    logo: absoluteUrl("/icon.svg"),
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        email: siteConfig.contactEmail
+      }
+    ],
+    sameAs: siteConfig.linkedinUrl ? [siteConfig.linkedinUrl] : undefined
+  };
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "AI Student Hub",
+    url: getSiteUrl(),
+    inLanguage: ["en", "fr"]
+  };
 
   return (
     <html
@@ -56,6 +111,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       suppressHydrationWarning
     >
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <Script id="theme-init" strategy="beforeInteractive">
           {`(() => {
             try {

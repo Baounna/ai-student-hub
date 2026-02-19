@@ -17,6 +17,8 @@ import { recommendedTools, getLocalizedPost, posts, slugify } from "@/content/po
 import { StickyPostCta } from "@/components/sticky-post-cta";
 import { isLocale, type Locale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 
 const ScrollCaptureCta = dynamic(() => import("@/components/scroll-capture-cta").then((mod) => mod.ScrollCaptureCta), {
@@ -61,6 +63,7 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
   return {
     title: post.title,
     description: post.excerpt,
+    keywords: getSeoKeywords(params.lang, "blogPost", post.keywords),
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -75,12 +78,7 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
       description: post.excerpt,
       images: [post.coverImage]
     },
-    alternates: {
-      languages: {
-        en: `/en/blog/${params.slug}`,
-        fr: `/fr/blog/${params.slug}`
-      }
-    }
+    alternates: localizedAlternates(`/blog/${params.slug}`, params.lang)
   };
 }
 
@@ -111,15 +109,22 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
     description: post.excerpt,
     image: [absoluteUrl(post.coverImage)],
     datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    inLanguage: locale,
     author: {
       "@type": "Person",
       name: "AI Student Hub"
     },
     publisher: {
       "@type": "Organization",
-      name: "AI Student Hub"
+      name: "AI Student Hub",
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl("/icon.svg")
+      }
     },
     mainEntityOfPage: absoluteUrl(`/${locale}/blog/${post.slug}`),
+    keywords: post.keywords.join(", "),
     citation: post.references.map((reference) => reference.href)
   };
 

@@ -6,7 +6,8 @@ import { getAutoNews, getAutoNewsUpdatedAt } from "@/content/auto-news";
 import { getLocalizedNews, getNewsTopics, slugifyTopic } from "@/content/news";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 
 type NewsSearchParams = {
   topic?: string | string[];
@@ -28,6 +29,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title: dict.news.title,
     description: dict.news.subtitle,
+    keywords: getSeoKeywords(params.lang, "news"),
     openGraph: {
       title: dict.news.title,
       description: dict.news.subtitle,
@@ -41,9 +43,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       description: dict.news.subtitle,
       images: ["/images/post-deploy.svg"]
     },
-    alternates: {
-      languages: alternateLanguages("/news")
-    }
+    alternates: localizedAlternates("/news", params.lang)
   };
 }
 

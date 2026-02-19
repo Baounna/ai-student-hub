@@ -4,7 +4,8 @@ import { Newsletter } from "@/components/newsletter";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
   if (!isLocale(params.lang)) return {};
@@ -13,6 +14,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title: dict.nav.about,
     description: dict.about.subtitle,
+    keywords: getSeoKeywords(params.lang, "about"),
     openGraph: {
       title: dict.nav.about,
       description: dict.about.subtitle,
@@ -26,9 +28,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       description: dict.about.subtitle,
       images: ["/images/post-portfolio.svg"]
     },
-    alternates: {
-      languages: alternateLanguages("/about")
-    }
+    alternates: localizedAlternates("/about", params.lang)
   };
 }
 

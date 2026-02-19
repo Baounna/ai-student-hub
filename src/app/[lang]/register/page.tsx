@@ -5,7 +5,7 @@ import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { SocialAuthButtons } from "@/components/social-auth-buttons";
 import { isLocale, type Locale } from "@/i18n/config";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
 import { getOAuthErrorMessage } from "@/lib/auth-feedback";
 import { getOAuthProviderViews } from "@/lib/oauth";
 
@@ -22,9 +22,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
     title,
     description,
     robots: { index: false, follow: true },
-    alternates: {
-      languages: alternateLanguages("/register")
-    }
+    alternates: localizedAlternates("/register", params.lang)
   };
 }
 

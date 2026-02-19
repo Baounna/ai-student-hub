@@ -12,6 +12,8 @@ import { getNewsBySlug, getLocalizedNews } from "@/content/news";
 import { getLocalizedPost, slugify } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -83,6 +85,7 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
   return {
     title: brief.title,
     description: brief.summary,
+    keywords: getSeoKeywords(params.lang, "newsPost", brief.keywords),
     openGraph: {
       title: brief.title,
       description: brief.summary,
@@ -97,12 +100,7 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
       description: brief.summary,
       images: ["/images/post-deploy.svg"]
     },
-    alternates: {
-      languages: {
-        en: `/en/news/${params.slug}`,
-        fr: `/fr/news/${params.slug}`
-      }
-    }
+    alternates: localizedAlternates(`/news/${params.slug}`, params.lang)
   };
 }
 
@@ -152,13 +150,18 @@ export default function LocalizedNewsArticlePage({ params }: { params: { lang: s
     inLanguage: locale,
     publisher: {
       "@type": "Organization",
-      name: "AI Student Hub"
+      name: "AI Student Hub",
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl("/icon.svg")
+      }
     },
     author: {
       "@type": "Organization",
       name: "AI Student Hub"
     },
     mainEntityOfPage: absoluteUrl(`/${locale}/news/${brief.slug}`),
+    image: [absoluteUrl("/images/post-deploy.svg")],
     keywords: brief.keywords.join(", "),
     about: brief.topic
   };

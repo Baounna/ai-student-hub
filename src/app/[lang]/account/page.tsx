@@ -6,7 +6,7 @@ import { Newsletter } from "@/components/newsletter";
 import { getOAuthProviderViews } from "@/lib/oauth";
 import { AUTH_SESSION_COOKIE, parseSessionToken } from "@/lib/auth-session";
 import { isLocale, type Locale } from "@/i18n/config";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
 
 const providerLabel: Record<string, string> = {
   email: "Email",
@@ -24,9 +24,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
     title: fr ? "Mon compte" : "My account",
     description: fr ? "Espace compte AI Student Hub." : "AI Student Hub account area.",
     robots: { index: false, follow: false },
-    alternates: {
-      languages: alternateLanguages("/account")
-    }
+    alternates: localizedAlternates("/account", params.lang)
   };
 }
 

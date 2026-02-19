@@ -6,7 +6,8 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getAllTags, getPostsByTag, slugify } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => getAllTags().map((tag) => ({ lang, tag: slugify(tag) })));
@@ -34,9 +35,11 @@ export async function generateMetadata({ params }: { params: { lang: string; tag
     title: `${dict.blog.title} - #${tagName}`,
     description:
       params.lang === "fr" ? `Articles avec le tag #${tagName} sur AI Student Hub.` : `Articles tagged #${tagName} on AI Student Hub.`,
-    alternates: {
-      languages: alternateLanguages(`/blog/tag/${params.tag}`)
-    }
+    keywords: getSeoKeywords(params.lang, "blog", [
+      params.lang === "fr" ? `tag ${tagName} ia` : `${tagName} ai tag`,
+      tagName
+    ]),
+    alternates: localizedAlternates(`/blog/tag/${params.tag}`, params.lang)
   };
 }
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
   if (!isLocale(params.lang)) return {};
@@ -10,9 +10,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title: params.lang === "fr" ? "Politique de confidentialite" : "Privacy Policy",
     description: params.lang === "fr" ? "Politique de confidentialite d'AI Student Hub." : "AI Student Hub privacy policy.",
-    alternates: {
-      languages: alternateLanguages("/privacy")
-    }
+    alternates: localizedAlternates("/privacy", params.lang)
   };
 }
 

@@ -36,7 +36,13 @@ const nextConfig = {
       headers.push({ key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains; preload" });
     }
 
+    const apiHeaders = [...headers, { key: "X-Robots-Tag", value: "noindex, nofollow" }];
+
     return [
+      {
+        source: "/api/:path*",
+        headers: apiHeaders
+      },
       {
         source: "/(.*)",
         headers

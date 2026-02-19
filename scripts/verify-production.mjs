@@ -91,6 +91,16 @@ if (!isUrl(siteUrl)) {
   ok(`Site URL set: ${siteUrl}`);
 }
 
+if ((env.GOOGLE_SITE_VERIFICATION || "").trim()) {
+  ok("Google site verification token is set.");
+} else {
+  warn("GOOGLE_SITE_VERIFICATION is missing (recommended for faster Search Console validation).");
+}
+
+if ((env.BING_SITE_VERIFICATION || "").trim()) {
+  ok("Bing site verification token is set.");
+}
+
 const authSecret = (env.AUTH_SESSION_SECRET || "").trim();
 if (!authSecret || authSecret === "change-this-in-production" || authSecret.length < 32) {
   error("AUTH_SESSION_SECRET must be set with at least 32 characters.");

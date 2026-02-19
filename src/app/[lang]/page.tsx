@@ -11,7 +11,8 @@ import { siteConfig } from "@/config/site";
 import { getAllCategories, getPopularPosts, recommendedTools, slugify } from "@/content/posts";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
@@ -31,6 +32,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title: dict.home.headline,
     description: dict.home.subheadline,
+    keywords: getSeoKeywords(params.lang, "home"),
     openGraph: {
       title: dict.home.headline,
       description: dict.home.subheadline,
@@ -45,9 +47,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       description: dict.home.subheadline,
       images: ["/images/post-portfolio.svg"]
     },
-    alternates: {
-      languages: alternateLanguages("")
-    }
+    alternates: localizedAlternates("", params.lang)
   };
 }
 

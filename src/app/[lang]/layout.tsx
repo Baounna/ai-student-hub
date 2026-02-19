@@ -11,7 +11,8 @@ import { AuthLinks } from "@/components/ui/auth-links";
 import { HeaderSearchShortcut } from "@/components/ui/header-search-shortcut";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -28,9 +29,8 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       template: `%s | AI Student Hub`
     },
     description: dict.home.subheadline,
-    alternates: {
-      languages: alternateLanguages("")
-    }
+    keywords: getSeoKeywords(params.lang, "home"),
+    alternates: localizedAlternates("", params.lang)
   };
 }
 

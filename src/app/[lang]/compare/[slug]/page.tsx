@@ -12,6 +12,8 @@ import { ReadingProgress } from "@/components/reading-progress";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { comparisons, getComparisonBySlug } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 
 function getEvidenceSource(toolName: string, locale: Locale) {
   const sources: Record<string, { label: string; href: string }> = {
@@ -54,10 +56,14 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
   return {
     title,
     description,
-    keywords: [comparison.intentKeyword, "comparison", "affiliate recommendation"],
+    keywords: getSeoKeywords(params.lang, "compare", [
+      comparison.intentKeyword,
+      ...comparison.tools.map((tool) => `${tool.name} vs`)
+    ]),
     openGraph: {
       title,
       description,
+      url: `/${params.lang}/compare/${params.slug}`,
       type: "article",
       images: [{ url: "/images/post-deploy.svg", width: 1200, height: 675, alt: comparison.title }]
     },
@@ -67,12 +73,7 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
       description,
       images: ["/images/post-deploy.svg"]
     },
-    alternates: {
-      languages: {
-        en: `/en/compare/${params.slug}`,
-        fr: `/fr/compare/${params.slug}`
-      }
-    }
+    alternates: localizedAlternates(`/compare/${params.slug}`, params.lang)
   };
 }
 

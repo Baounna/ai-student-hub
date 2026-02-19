@@ -6,7 +6,8 @@ import { Newsletter } from "@/components/newsletter";
 import { getAllCategories, getAllTags, getLocalizedPosts, slugify } from "@/content/posts";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title: dict.blog.title,
     description: dict.blog.subtitle,
+    keywords: getSeoKeywords(params.lang, "blog"),
     openGraph: {
       title: dict.blog.title,
       description: dict.blog.subtitle,
@@ -37,9 +39,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       description: dict.blog.subtitle,
       images: ["/images/post-roadmap.svg"]
     },
-    alternates: {
-      languages: alternateLanguages("/blog")
-    }
+    alternates: localizedAlternates("/blog", params.lang)
   };
 }
 

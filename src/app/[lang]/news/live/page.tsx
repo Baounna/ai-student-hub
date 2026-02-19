@@ -3,7 +3,8 @@ import Link from "next/link";
 import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { isLocale, type Locale } from "@/i18n/config";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 import { getLiveAiCsUpdates, getLiveNewsSources } from "@/lib/live-news";
 
 export const revalidate = 60 * 30;
@@ -31,20 +32,24 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title,
     description,
+    keywords: getSeoKeywords(params.lang, "news", [
+      fr ? "flux actualites ia en direct" : "live ai news stream",
+      fr ? "veille informatique temps reel" : "real-time computer science updates"
+    ]),
     openGraph: {
       title,
       description,
       url: `/${params.lang}/news/live`,
-      type: "website"
+      type: "website",
+      images: [{ url: "/images/post-deploy.svg", width: 1200, height: 675, alt: title }]
     },
     twitter: {
       card: "summary_large_image",
       title,
-      description
+      description,
+      images: ["/images/post-deploy.svg"]
     },
-    alternates: {
-      languages: alternateLanguages("/news/live")
-    }
+    alternates: localizedAlternates("/news/live", params.lang)
   };
 }
 

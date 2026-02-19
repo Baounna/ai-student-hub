@@ -4,7 +4,8 @@ import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
@@ -13,26 +14,30 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   const fr = params.lang === "fr";
   const title = fr ? "Sprint croissance 14 jours" : "14-day growth sprint";
   const description = fr
-    ? "Plan d'execution concret pour rendre AI Student Hub plus attractif et atteindre les premiers revenus."
-    : "Concrete execution plan to make AI Student Hub more attractive and reach first revenue milestones.";
+    ? "Plan d'execution concret pour rendre AI Student Hub plus attractif et plus utile aux etudiants."
+    : "Concrete execution plan to make AI Student Hub more attractive and more useful for students.";
 
   return {
     title,
     description,
+    keywords: getSeoKeywords(params.lang, "growth", [
+      fr ? "sprint croissance blog" : "blog growth sprint",
+      fr ? "plan 14 jours blog ia" : "14 day ai blog plan"
+    ]),
     openGraph: {
       title,
       description,
       url: `/${params.lang}/growth-sprint`,
-      type: "website"
+      type: "website",
+      images: [{ url: "/images/post-roadmap.svg", width: 1200, height: 675, alt: title }]
     },
     twitter: {
       card: "summary_large_image",
       title,
-      description
+      description,
+      images: ["/images/post-roadmap.svg"]
     },
-    alternates: {
-      languages: alternateLanguages("/growth-sprint")
-    }
+    alternates: localizedAlternates("/growth-sprint", params.lang)
   };
 }
 
@@ -246,12 +251,12 @@ export default function GrowthSprintPage({ params }: { params: { lang: string } 
       <header className="do-hero rounded-3xl p-7 md:p-10">
         <p className="do-kicker">{fr ? "Execution sprint" : "Execution sprint"}</p>
         <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
-          {fr ? "Plan 14 jours pour rendre le blog attractif et rentable" : "14-day plan to make the blog attractive and profitable"}
+          {fr ? "Plan 14 jours pour rendre le blog attractif et utile" : "14-day plan to make the blog attractive and useful"}
         </h1>
         <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
           {fr
-            ? "Playbook concret pour atteindre rapidement les premiers revenus (objectif $10/mois) avec contenu, SEO et conversion."
-            : "Concrete playbook to reach first revenue quickly ($10/month target) with content, SEO, and conversion."}
+            ? "Playbook concret pour ameliorer contenu, SEO et conversion avec un systeme simple."
+            : "Concrete playbook to improve content, SEO, and conversion with a simple system."}
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           <Link href={`/${locale}/news`} className="btn-secondary">

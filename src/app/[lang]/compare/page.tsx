@@ -8,7 +8,8 @@ import { TrackableAnchor } from "@/components/trackable-anchor";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { comparisons, recommendedTools } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
-import { alternateLanguages } from "@/i18n/helpers";
+import { localizedAlternates } from "@/i18n/helpers";
+import { getSeoKeywords } from "@/lib/seo";
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -26,6 +27,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title,
     description,
+    keywords: getSeoKeywords(params.lang, "compare"),
     openGraph: {
       title,
       description,
@@ -39,9 +41,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       description,
       images: ["/images/post-deploy.svg"]
     },
-    alternates: {
-      languages: alternateLanguages("/compare")
-    }
+    alternates: localizedAlternates("/compare", params.lang)
   };
 }
 

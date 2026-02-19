@@ -30,9 +30,12 @@ Built with Next.js 14 App Router.
 
 - SEO foundations
   - Route-level metadata
+  - Canonical URLs + hreflang alternates (`en`, `fr`, `x-default`)
   - OpenGraph + Twitter cards
+  - Search engine verification support (Google/Bing/Yandex/Baidu)
   - `sitemap.xml`
   - `robots.txt`
+  - `manifest.webmanifest`
   - RSS feed (`/feed.xml`) including blog + news
   - JSON-LD for articles/news articles
 - Internationalization
@@ -194,6 +197,7 @@ Copy `.env.example` to `.env.local` and fill your real production values.
 
 Environment is grouped by:
 - Brand + site URLs
+- Search engine verification tokens (Google/Bing/Yandex/Baidu)
 - Donation links (non-Stripe supported first)
 - OAuth mode and provider keys
 - Email provider mode (`convertkit` or `none`)
@@ -211,6 +215,7 @@ Environment is grouped by:
    - `AUTH_SESSION_SECRET` (long random string)
    - `NEXT_PUBLIC_CONTACT_EMAIL`
    - `NEXT_PUBLIC_LEGAL_NAME`
+   - `GOOGLE_SITE_VERIFICATION` (recommended)
 2. Set product checkout:
    - `NEXT_PUBLIC_PRODUCT_CHECKOUT_URL`.
 3. Choose OAuth mode:
@@ -249,6 +254,27 @@ npm run lint && npm run build
    - `/en/login`, `/en/register`, `/en/account`
    - `/en/donate`
    - `/sitemap.xml`, `/feed.xml`, `/robots.txt`
+
+## Google Indexing Checklist (Production)
+
+1. In Google Search Console, add your property (`https://your-domain.com`).
+2. Use the meta verification token:
+   - set `GOOGLE_SITE_VERIFICATION` in environment variables.
+3. Redeploy and verify ownership in Search Console.
+4. Submit sitemap:
+   - `https://your-domain.com/sitemap.xml`
+5. Request indexing for priority URLs first:
+   - `/en`
+   - `/en/news`
+   - `/en/blog`
+   - `/en/resources`
+   - `/en/compare`
+6. Confirm crawlability:
+   - `https://your-domain.com/robots.txt` returns allow rules + sitemap + host.
+7. Monitor Search Console weekly:
+   - indexing status
+   - core web vitals
+   - top queries and CTR.
 
 ## Analytics and Event Tracking
 
