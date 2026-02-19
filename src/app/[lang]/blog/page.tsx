@@ -71,6 +71,11 @@ export default function LocalizedBlogPage({
   const topPosts = [...allPosts].sort((a, b) => b.popularScore - a.popularScore).slice(0, 3);
   const categories = getAllCategories();
   const tags = getAllTags().slice(0, 14);
+  const highlightCategories = categories.slice(0, 5);
+  const totalReadMinutes = allPosts.reduce((sum, post) => sum + (Number.parseInt(post.readTime, 10) || 0), 0);
+  const averageReadMinutes = allPosts.length ? Math.max(1, Math.round(totalReadMinutes / allPosts.length)) : 0;
+  const totalReferences = allPosts.reduce((sum, post) => sum + post.references.length, 0);
+  const sourceLabel = locale === "fr" ? "sources citees" : "cited sources";
   const streamHeading = locale === "fr" ? "Articles recents" : "Latest articles";
   const weekSnapshotTitle = locale === "fr" ? "Cette semaine sur AI Student Hub" : "This week on AI Student Hub";
   const searchPlaceholder = locale === "fr" ? "Rechercher par mot-cle..." : "Search by keyword...";
@@ -103,6 +108,50 @@ export default function LocalizedBlogPage({
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
                 {locale === "fr" ? "Pratique + actionnable" : "Practical and actionable"}
               </span>
+            </div>
+
+            <div className="mt-5 grid gap-3 sm:grid-cols-3">
+              <article className="blog-signal-card rounded-xl p-3">
+                <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+                  {locale === "fr" ? "Confort lecture" : "Read comfort"}
+                </p>
+                <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
+                  ~{averageReadMinutes} min
+                </p>
+              </article>
+              <article className="blog-signal-card rounded-xl p-3">
+                <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+                  {locale === "fr" ? "Fiabilite" : "Evidence"}
+                </p>
+                <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
+                  {totalReferences}+ {sourceLabel}
+                </p>
+              </article>
+              <article className="blog-signal-card rounded-xl p-3">
+                <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+                  {locale === "fr" ? "Intentions" : "User intent"}
+                </p>
+                <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
+                  {locale === "fr" ? "News, outils, comparatifs" : "News, tools, comparisons"}
+                </p>
+              </article>
+            </div>
+
+            <div className="mt-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[color:var(--primary)]">
+                {locale === "fr" ? "Filtres rapides" : "Quick filters"}
+              </p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {highlightCategories.map((category) => (
+                  <Link
+                    key={category}
+                    href={`/${locale}/blog/category/${slugify(category)}`}
+                    className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-xs text-[color:var(--text)] hover:border-[color:var(--primary)]/35"
+                  >
+                    {category}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -151,6 +200,9 @@ export default function LocalizedBlogPage({
                 <span className="text-xs text-[color:var(--muted)]">{featuredPost.readTime}</span>
                 <span className="text-xs text-[color:var(--muted)]">
                   {formatPublishedDate(featuredPost.publishedAt, locale)}
+                </span>
+                <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-0.5 text-[11px] text-[color:var(--muted)]">
+                  {featuredPost.references.length} {locale === "fr" ? "sources" : "sources"}
                 </span>
               </div>
               <div className="mt-5 flex flex-wrap gap-3">
@@ -230,6 +282,9 @@ export default function LocalizedBlogPage({
                     </Link>
                     <p className="text-xs text-[color:var(--muted)]">{post.readTime}</p>
                     <p className="text-xs text-[color:var(--muted)]">{formatPublishedDate(post.publishedAt, locale)}</p>
+                    <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2 py-0.5 text-[11px] text-[color:var(--muted)]">
+                      {post.references.length} {locale === "fr" ? "sources" : "sources"}
+                    </span>
                   </div>
                   <h3 className="font-display section-title mt-3 font-semibold text-[color:var(--text-strong)]">
                     <Link href={`/${locale}/blog/${post.slug}`} className="hover:opacity-90">
@@ -289,6 +344,9 @@ export default function LocalizedBlogPage({
                     </Link>
                   </h4>
                   <p className="mt-1 text-xs text-[color:var(--muted)]">{post.readTime}</p>
+                  <p className="mt-1 text-xs text-[color:var(--muted)]">
+                    {post.references.length} {locale === "fr" ? "sources citees" : "cited sources"}
+                  </p>
                 </article>
               ))}
             </div>

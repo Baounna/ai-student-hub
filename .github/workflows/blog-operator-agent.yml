@@ -30,6 +30,14 @@ jobs:
       - name: Run blog operator agent
         run: npm run agent:blog
 
+      - name: Sync operator actions to GitHub Issues
+        env:
+          AGENT_ISSUES_ENABLED: "1"
+          AGENT_ISSUES_MAX_PER_RUN: "3"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: npm run agent:issues
+
       - name: Commit and push agent outputs
         run: |
           if git diff --quiet -- src/content/auto-news.json docs/agent; then

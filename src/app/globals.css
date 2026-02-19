@@ -353,6 +353,26 @@ html[data-content-width="wide"] {
     line-height: 1.72;
   }
 
+  .blog-signal-card {
+    border: 1px solid color-mix(in srgb, var(--border), var(--primary) 14%);
+    background:
+      radial-gradient(130% 180% at 0% -20%, color-mix(in srgb, var(--primary), transparent 88%), transparent 55%),
+      linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 7%) 0%, color-mix(in srgb, var(--surface), #ffffff 2%) 100%);
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 28%),
+      0 14px 26px -24px rgba(10, 31, 66, 0.82);
+  }
+
+  .blog-signal-value {
+    font-size: clamp(0.95rem, 2.7vw, 1.08rem);
+    font-weight: 650;
+    letter-spacing: -0.01em;
+  }
+
+  .post-signal-grid {
+    position: relative;
+  }
+
   .reading-panel {
     border: 1px solid var(--border);
     background:
@@ -382,12 +402,40 @@ html[data-content-width="wide"] {
     margin-top: 0.95rem;
   }
 
+  .reading-lead {
+    font-size: clamp(1.06rem, 1.2vw, 1.2rem);
+    line-height: 1.9;
+    letter-spacing: -0.01em;
+  }
+
+  .reading-lead::first-letter {
+    float: left;
+    margin-right: 0.25rem;
+    line-height: 0.9;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: color-mix(in srgb, var(--primary), var(--text-strong) 24%);
+  }
+
   .inline-citation {
     vertical-align: super;
     font-size: 0.72rem;
     font-weight: 700;
     color: var(--primary);
     text-decoration: none;
+  }
+
+  .reference-host-pill {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--border), var(--primary) 18%);
+    background: color-mix(in srgb, var(--surface), #ffffff 7%);
+    padding: 0.08rem 0.5rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.01em;
   }
 
   .inline-citation:hover {
@@ -504,6 +552,11 @@ html[data-content-width="wide"] {
   .reading-prose p {
     font-size: 1rem;
     line-height: 1.88;
+  }
+
+  .reading-lead::first-letter {
+    font-size: 2.15rem;
+    margin-right: 0.2rem;
   }
 }
 

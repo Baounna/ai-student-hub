@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-02-19T22:53:00.028Z",
+  "repository": "",
+  "mode": "dry-run",
+  "queueGeneratedAt": "2026-02-19T22:51:58.957Z",
+  "maxPerRun": 3,
+  "summary": {
+    "created": 0,
+    "existing": 0,
+    "dryRun": 3,
+    "errors": 0,
+    "tracked": 3
+  },
+  "items": [
+    {
+      "hash": "17bb8aed9e8b26dc",
+      "priority": "P1",
+      "action": "Add at least 3 valid affiliate links (name + final URL + placement).",
+      "why": "Without valid links, affiliate revenue path is blocked.",
+      "title": "[Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).",
+      "status": "dry-run",
+      "createdAt": "2026-02-19T22:53:00.028Z",
+      "lastSeenAt": "2026-02-19T22:53:00.028Z",
+      "inQueue": true
+    },
+    {
+      "hash": "ac27281ad50b8eb8",
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: blog.",
+      "why": "Missing placement means lost monetization intent on that traffic surface.",
+      "title": "[Operator P1] Cover missing affiliate placement: blog.",
+      "status": "dry-run",
+      "createdAt": "2026-02-19T22:53:00.028Z",
+      "lastSeenAt": "2026-02-19T22:53:00.028Z",
+      "inQueue": true
+    },
+    {
+      "hash": "52ce84de891f7cfe",
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: comparison.",
+      "why": "Missing placement means lost monetization intent on that traffic surface.",
+      "title": "[Operator P1] Cover missing affiliate placement: comparison.",
+      "status": "dry-run",
+      "createdAt": "2026-02-19T22:53:00.028Z",
+      "lastSeenAt": "2026-02-19T22:53:00.028Z",
+      "inQueue": true
+    }
+  ]
+}

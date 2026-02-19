@@ -1,0 +1,170 @@
+{
+  "generatedAt": "2026-02-19T22:54:32.114Z",
+  "targetScore": 88,
+  "score": 100,
+  "weightedScore": 103,
+  "totalWeight": 103,
+  "ratio": 1,
+  "summary": {
+    "checks": 17,
+    "passed": 17,
+    "failed": 0,
+    "onTarget": true
+  },
+  "checks": [
+    {
+      "id": "index-hero",
+      "label": "Blog index hero section",
+      "file": "src/app/[lang]/blog/page.tsx",
+      "weight": 8,
+      "passed": true,
+      "action": "Add a premium hero section on blog index with clear value proposition.",
+      "why": "Hero hierarchy directly affects first-scroll retention."
+    },
+    {
+      "id": "index-search",
+      "label": "Blog keyword search form",
+      "file": "src/app/[lang]/blog/page.tsx",
+      "weight": 6,
+      "passed": true,
+      "action": "Expose search intent capture on blog index (query form).",
+      "why": "Search reduces bounce for high-intent visitors."
+    },
+    {
+      "id": "index-featured-card",
+      "label": "Featured post card",
+      "file": "src/app/[lang]/blog/page.tsx",
+      "weight": 7,
+      "passed": true,
+      "action": "Add a featured article block above stream posts.",
+      "why": "Featured content guides attention toward best converting content."
+    },
+    {
+      "id": "index-quick-filters",
+      "label": "Quick category filters",
+      "file": "src/app/[lang]/blog/page.tsx",
+      "weight": 6,
+      "passed": true,
+      "action": "Add quick category chips near the hero section.",
+      "why": "Filter chips increase exploration depth and pages per session."
+    },
+    {
+      "id": "index-social-proof-strip",
+      "label": "Blog quality signal strip",
+      "file": "src/app/[lang]/blog/page.tsx",
+      "weight": 7,
+      "passed": true,
+      "action": "Add quality signal cards (sources, cadence, practical focus) to blog index.",
+      "why": "Trust indicators improve click-through to articles."
+    },
+    {
+      "id": "index-most-popular",
+      "label": "Most popular sidebar",
+      "file": "src/app/[lang]/blog/page.tsx",
+      "weight": 5,
+      "passed": true,
+      "action": "Add a most-popular section in sidebar.",
+      "why": "Popular content shortcuts improve route-to-value for first-time users."
+    },
+    {
+      "id": "index-newsletter",
+      "label": "Newsletter in blog sidebar",
+      "file": "src/app/[lang]/blog/page.tsx",
+      "weight": 6,
+      "passed": true,
+      "action": "Add compact newsletter capture to blog sidebar.",
+      "why": "Email capture monetizes non-buying traffic."
+    },
+    {
+      "id": "post-reading-progress",
+      "label": "Reading progress component",
+      "file": "src/app/[lang]/blog/[slug]/page.tsx",
+      "weight": 5,
+      "passed": true,
+      "action": "Add reading progress bar for long-form post usability.",
+      "why": "Progress signals reduce abandonment on long pages."
+    },
+    {
+      "id": "post-at-a-glance",
+      "label": "Post at-a-glance summary panel",
+      "file": "src/app/[lang]/blog/[slug]/page.tsx",
+      "weight": 6,
+      "passed": true,
+      "action": "Add an at-a-glance panel in the post header.",
+      "why": "Fast skim context improves perceived clarity."
+    },
+    {
+      "id": "post-metrics-strip",
+      "label": "Post metrics signal strip",
+      "file": "src/app/[lang]/blog/[slug]/page.tsx",
+      "weight": 7,
+      "passed": true,
+      "action": "Add post metrics strip (sources, read effort, related depth).",
+      "why": "Visible evidence and structure builds editorial trust."
+    },
+    {
+      "id": "post-lead-typography",
+      "label": "Enhanced lead paragraph styling",
+      "file": "src/app/[lang]/blog/[slug]/page.tsx",
+      "weight": 4,
+      "passed": true,
+      "action": "Style the lead paragraph to improve scannability and visual hierarchy.",
+      "why": "Strong opening typography increases time on page."
+    },
+    {
+      "id": "post-toc",
+      "label": "Article table of contents",
+      "file": "src/app/[lang]/blog/[slug]/page.tsx",
+      "weight": 6,
+      "passed": true,
+      "action": "Add sticky table of contents for long articles.",
+      "why": "TOC improves navigation and mobile return usage."
+    },
+    {
+      "id": "post-references",
+      "label": "References section with source labels",
+      "file": "src/app/[lang]/blog/[slug]/page.tsx",
+      "weight": 6,
+      "passed": true,
+      "action": "Add structured references section with clear source labels.",
+      "why": "Source transparency improves trust and SEO quality signals."
+    },
+    {
+      "id": "post-reference-domain-pill",
+      "label": "Reference domain pills",
+      "file": "src/app/[lang]/blog/[slug]/page.tsx",
+      "weight": 5,
+      "passed": true,
+      "action": "Add domain pills to reference links for quick source recognition.",
+      "why": "Faster source scanning improves perceived authority."
+    },
+    {
+      "id": "post-tool-cards",
+      "label": "Recommended tools cards",
+      "file": "src/app/[lang]/blog/[slug]/page.tsx",
+      "weight": 6,
+      "passed": true,
+      "action": "Keep recommended tools cards in article body with clear CTA hierarchy.",
+      "why": "Natural tool placement drives ethical affiliate clicks."
+    },
+    {
+      "id": "post-sticky-cta",
+      "label": "Sticky conversion CTA",
+      "file": "src/app/[lang]/blog/[slug]/page.tsx",
+      "weight": 6,
+      "passed": true,
+      "action": "Add sticky CTA at post level for conversion recapture.",
+      "why": "Sticky CTAs increase conversion without disrupting reading flow."
+    },
+    {
+      "id": "styles-design-tokens",
+      "label": "Global design helper classes",
+      "file": "src/app/globals.css",
+      "weight": 7,
+      "passed": true,
+      "action": "Define reusable CSS classes for blog signal cards and lead typography.",
+      "why": "Reusable tokens keep visual system consistent and scalable."
+    }
+  ],
+  "actions": []
+}

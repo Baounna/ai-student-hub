@@ -55,6 +55,15 @@ function getCitationIndex(paragraphIndex: number, totalReferences: number) {
   return (paragraphIndex % totalReferences) + 1;
 }
 
+function getHostLabel(href: string) {
+  try {
+    const url = new URL(href);
+    return url.hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+}
+
 export async function generateMetadata({ params }: { params: { lang: string; slug: string } }): Promise<Metadata> {
   if (!isLocale(params.lang)) return {};
   const post = getLocalizedPost(params.slug, params.lang);
@@ -92,6 +101,10 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
   const relatedPosts = post.relatedSlugs
     .map((relatedSlug) => getLocalizedPost(relatedSlug, locale))
     .filter((related): related is NonNullable<typeof related> => Boolean(related));
+  const wordCount = post.content.reduce((sum, paragraph) => sum + paragraph.split(/\s+/).filter(Boolean).length, 0);
+  const readingEffortMinutes = Math.max(1, Math.round(wordCount / 220));
+  const executionAssets = post.affiliateCallout.links.length + Math.min(recommendedTools.length, 3);
+  const sourceDensity = wordCount ? Math.max(1, Math.round((post.references.length / wordCount) * 1000)) : 0;
   const tocItems = [
     { id: "summary", label: locale === "fr" ? "Synthese" : "Summary" },
     { id: "latest-updates", label: locale === "fr" ? "Dernieres actus" : "Latest updates" },
@@ -201,6 +214,39 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
         </div>
       </header>
 
+      <section className="post-signal-grid mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <article className="blog-signal-card rounded-xl p-3">
+          <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+            {locale === "fr" ? "Sources" : "Sources"}
+          </p>
+          <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
+            {post.references.length} {locale === "fr" ? "references" : "references"}
+          </p>
+        </article>
+        <article className="blog-signal-card rounded-xl p-3">
+          <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+            {locale === "fr" ? "Effort reel" : "Read effort"}
+          </p>
+          <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">~{readingEffortMinutes} min</p>
+        </article>
+        <article className="blog-signal-card rounded-xl p-3">
+          <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+            {locale === "fr" ? "Actions directes" : "Action assets"}
+          </p>
+          <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
+            {executionAssets} {locale === "fr" ? "liens pratiques" : "practical links"}
+          </p>
+        </article>
+        <article className="blog-signal-card rounded-xl p-3">
+          <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+            {locale === "fr" ? "Densite source" : "Source density"}
+          </p>
+          <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
+            {sourceDensity}/1k {locale === "fr" ? "mots" : "words"}
+          </p>
+        </article>
+      </section>
+
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
         <div className="space-y-8">
           <div className="media-frame group relative aspect-[16/10] rounded-2xl">
@@ -220,7 +266,7 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
             <div className="reading-prose space-y-6">
               {post.content.map((paragraph, idx) => (
                 <div key={idx}>
-                  <p className={idx === 0 ? "text-[color:var(--text-strong)]" : undefined}>
+                  <p className={idx === 0 ? "reading-lead text-[color:var(--text-strong)]" : undefined}>
                     {paragraph}
                     {post.references.length ? (
                       <>
@@ -267,6 +313,9 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
                     <a href={reference.href} target="_blank" rel="noopener noreferrer nofollow" className="do-link">
                       {reference.label[locale]}
                     </a>
+                    {getHostLabel(reference.href) ? (
+                      <span className="reference-host-pill ml-2">{getHostLabel(reference.href)}</span>
+                    ) : null}
                     <span className="ml-2 text-xs text-[color:var(--muted)]">({reference.source})</span>
                   </li>
                 ))}

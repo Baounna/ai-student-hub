@@ -409,6 +409,8 @@ Optional agent env knobs:
 - Outputs (private repo files, not public routes):
   - `docs/agent/latest-report.md`
   - `docs/agent/next-actions.json`
+  - `docs/agent/issues-state.json`
+  - `docs/agent/issues-report.md`
   - `docs/agent/drafts/*.md` (review-only draft templates)
 - What it does:
   - audits affiliate/email/checkout setup coverage
@@ -417,8 +419,39 @@ Optional agent env knobs:
   - computes internal monthly model vs `$10/month` target
   - generates prioritized action queue (P1/P2/P3)
   - generates private article draft templates from top opportunities
+  - syncs top queued actions to GitHub Issues (when enabled)
 - Optional env knob:
   - `AGENT_DRAFTS_PER_RUN` (default `2`, range `0-10`)
+  - `AGENT_ISSUES_ENABLED` (default `1`)
+  - `AGENT_ISSUES_MAX_PER_RUN` (default `3`)
+
+### Operator issue sync (private)
+- Script: `scripts/sync-operator-issues.mjs`
+- Local command: `npm run agent:issues`
+- Input: `docs/agent/next-actions.json`
+- Outputs:
+  - `docs/agent/issues-state.json`
+  - `docs/agent/issues-report.md`
+- Behavior:
+  - creates issues only for top-priority actions (capped)
+  - deduplicates by stable action hash and issue title
+  - runs in dry-run mode when GitHub token/repository env is missing
+
+### Blog design agent (private)
+- Script: `scripts/blog-design-agent.mjs`
+- Local command: `npm run agent:design`
+- Automation workflow: `.github/workflows/blog-design-agent.yml`
+- Schedule: weekly (`20 7 * * 1`)
+- Outputs:
+  - `docs/agent/design-report.md`
+  - `docs/agent/design-actions.json`
+- Behavior:
+  - scores blog design quality (index + post + style system)
+  - flags missing UX/design conversion elements
+  - produces prioritized design action queue (P1/P2/P3)
+- Optional env knobs:
+  - `DESIGN_AGENT_TARGET_SCORE` (default `88`)
+  - `DESIGN_AGENT_MAX_ACTIONS` (default `10`)
 
 Important:
 - This operator is internal planning only.  
