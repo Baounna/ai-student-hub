@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-02-19T23:11:19.323Z",
+  "generatedAt": "2026-02-19T23:18:45.836Z",
   "settings": {
     "includeAutoNews": true,
     "includeOperator": true,
     "includeDesign": true,
     "includeIssues": true,
     "includeVerify": true,
+    "writeReports": true,
     "issuesMaxPerRun": 6
   },
   "summary": {
@@ -20,35 +21,35 @@
       "label": "Auto news agent",
       "ok": true,
       "code": 0,
-      "durationMs": 135
+      "durationMs": 133
     },
     {
       "id": "operator",
       "label": "Blog operator agent",
       "ok": true,
       "code": 0,
-      "durationMs": 84
+      "durationMs": 80
     },
     {
       "id": "design",
       "label": "Blog design agent",
       "ok": true,
       "code": 0,
-      "durationMs": 69
+      "durationMs": 76
     },
     {
       "id": "issues",
       "label": "Issue sync",
       "ok": true,
       "code": 0,
-      "durationMs": 83
+      "durationMs": 88
     },
     {
       "id": "verify",
       "label": "Agent health verification",
       "ok": true,
       "code": 0,
-      "durationMs": 69
+      "durationMs": 68
     }
   ]
 }

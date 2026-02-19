@@ -2,8 +2,6 @@ name: Blog Operator Agent
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "35 6 * * *"
 
 concurrency:
   group: ai-student-hub-agents

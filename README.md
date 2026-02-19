@@ -389,8 +389,9 @@ Automatic tagging:
 - Script: `scripts/auto-news-agent.mjs`
 - Output data: `src/content/auto-news.json`
 - UI surface: `/{lang}/news` (auto section) and article latest-updates blocks
-- Automation workflow: `.github/workflows/auto-news-agent.yml`
+- Master automation workflow: `.github/workflows/agents-master.yml` (`hourly` profile)
 - Schedule: every hour (`15 * * * *`)
+- Legacy manual workflow: `.github/workflows/auto-news-agent.yml` (`workflow_dispatch` only)
 - Behavior:
   - fetch trusted AI/CS feeds
   - deduplicate by title+URL
@@ -404,8 +405,9 @@ Optional agent env knobs:
 ### Internal Blog Operator Agent (private)
 - Script: `scripts/blog-operator-agent.mjs`
 - Local command: `npm run agent:blog`
-- Automation workflow: `.github/workflows/blog-operator-agent.yml`
+- Master automation workflow: `.github/workflows/agents-master.yml` (`daily` profile)
 - Schedule: daily (`35 6 * * *`)
+- Legacy manual workflow: `.github/workflows/blog-operator-agent.yml` (`workflow_dispatch` only)
 - Outputs (private repo files, not public routes):
   - `docs/agent/latest-report.md`
   - `docs/agent/next-actions.json`
@@ -448,8 +450,9 @@ Optional agent env knobs:
 ### Blog design agent (private)
 - Script: `scripts/blog-design-agent.mjs`
 - Local command: `npm run agent:design`
-- Automation workflow: `.github/workflows/blog-design-agent.yml`
+- Master automation workflow: `.github/workflows/agents-master.yml` (`weekly` profile)
 - Schedule: weekly (`20 7 * * 1`)
+- Legacy manual workflow: `.github/workflows/blog-design-agent.yml` (`workflow_dispatch` only)
 - Outputs:
   - `docs/agent/design-report.md`
   - `docs/agent/design-actions.json`
@@ -465,6 +468,7 @@ Optional agent env knobs:
 ### Unified agent pipeline (recommended)
 - Script: `scripts/agent-pipeline.mjs`
 - Local command: `npm run agent:all`
+- Master workflow entrypoint: `.github/workflows/agents-master.yml`
 - Outputs:
   - `docs/agent/pipeline-report.md`
   - `docs/agent/pipeline-status.json`
@@ -480,7 +484,14 @@ Optional agent env knobs:
   - `AGENT_PIPELINE_INCLUDE_DESIGN` (default `1`)
   - `AGENT_PIPELINE_INCLUDE_ISSUES` (default `1`)
   - `AGENT_PIPELINE_INCLUDE_VERIFY` (default `1`)
+  - `AGENT_PIPELINE_WRITE_REPORTS` (default `1`, set `0` for non-committing CI runs)
   - `AGENT_PIPELINE_ISSUES_MAX_PER_RUN` (default `6`)
+
+Master workflow profiles:
+- `hourly` (cron `15 * * * *`): auto-news only
+- `daily` (cron `35 6 * * *`): auto-news + operator + issue sync + verify
+- `weekly` (cron `20 7 * * 1`): design + issue sync + verify
+- `full` (manual dispatch): full pipeline
 
 ### Agent health verify
 - Script: `scripts/verify-agent-health.mjs`

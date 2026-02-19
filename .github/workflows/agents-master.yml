@@ -1,0 +1,128 @@
+name: AI Student Hub Agents (Master)
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_mode:
+        description: "Automation profile to execute"
+        required: true
+        default: full
+        type: choice
+        options:
+          - full
+          - hourly
+          - daily
+          - weekly
+  schedule:
+    - cron: "15 * * * *"
+    - cron: "35 6 * * *"
+    - cron: "20 7 * * 1"
+
+concurrency:
+  group: ai-student-hub-agents
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run-agents:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Resolve execution profile
+        shell: bash
+        run: |
+          MODE="full"
+
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            case "${{ github.event.schedule }}" in
+              "15 * * * *") MODE="hourly" ;;
+              "35 6 * * *") MODE="daily" ;;
+              "20 7 * * 1") MODE="weekly" ;;
+            esac
+          elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            MODE="${{ inputs.run_mode }}"
+          fi
+
+          echo "AGENT_RUN_MODE=$MODE" >> "$GITHUB_ENV"
+          echo "AGENT_PIPELINE_WRITE_REPORTS=0" >> "$GITHUB_ENV"
+
+          case "$MODE" in
+            hourly)
+              echo "AGENT_PIPELINE_INCLUDE_AUTO_NEWS=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_OPERATOR=0" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_DESIGN=0" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_ISSUES=0" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_VERIFY=0" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_ISSUES_MAX_PER_RUN=1" >> "$GITHUB_ENV"
+              echo "TARGET_PATHS=src/content/auto-news.json" >> "$GITHUB_ENV"
+              ;;
+            daily)
+              echo "AGENT_PIPELINE_INCLUDE_AUTO_NEWS=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_OPERATOR=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_DESIGN=0" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_ISSUES=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_VERIFY=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_ISSUES_MAX_PER_RUN=3" >> "$GITHUB_ENV"
+              echo "TARGET_PATHS=src/content/auto-news.json docs/agent/latest-report.md docs/agent/next-actions.json docs/agent/issues-state.json docs/agent/issues-report.md docs/agent/drafts" >> "$GITHUB_ENV"
+              ;;
+            weekly)
+              echo "AGENT_PIPELINE_INCLUDE_AUTO_NEWS=0" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_OPERATOR=0" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_DESIGN=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_ISSUES=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_VERIFY=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_ISSUES_MAX_PER_RUN=3" >> "$GITHUB_ENV"
+              echo "TARGET_PATHS=docs/agent/design-report.md docs/agent/design-actions.json docs/agent/issues-state.json docs/agent/issues-report.md" >> "$GITHUB_ENV"
+              ;;
+            *)
+              echo "AGENT_PIPELINE_INCLUDE_AUTO_NEWS=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_OPERATOR=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_DESIGN=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_ISSUES=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_VERIFY=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_ISSUES_MAX_PER_RUN=6" >> "$GITHUB_ENV"
+              echo "TARGET_PATHS=src/content/auto-news.json docs/agent/latest-report.md docs/agent/next-actions.json docs/agent/design-report.md docs/agent/design-actions.json docs/agent/issues-state.json docs/agent/issues-report.md docs/agent/drafts" >> "$GITHUB_ENV"
+              ;;
+          esac
+
+          echo "Resolved mode: $MODE"
+
+      - name: Run unified agent pipeline
+        run: npm run agent:all
+
+      - name: Commit and push updates
+        shell: bash
+        run: |
+          if git diff --quiet -- $TARGET_PATHS; then
+            echo "No agent output changes to commit for mode=$AGENT_RUN_MODE."
+            exit 0
+          fi
+
+          git config user.name "AI Student Hub Bot"
+          git config user.email "ai-student-hub-bot@users.noreply.github.com"
+
+          git add $TARGET_PATHS
+
+          if git diff --cached --quiet; then
+            echo "No staged changes after filtering tracked paths."
+            exit 0
+          fi
+
+          git commit -m "chore(agent): $AGENT_RUN_MODE automation refresh"
+          git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+          git push

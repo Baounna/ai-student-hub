@@ -107,6 +107,7 @@ async function run() {
     includeDesign: toBoolean(process.env.AGENT_PIPELINE_INCLUDE_DESIGN, true),
     includeIssues: toBoolean(process.env.AGENT_PIPELINE_INCLUDE_ISSUES, true),
     includeVerify: toBoolean(process.env.AGENT_PIPELINE_INCLUDE_VERIFY, true),
+    writeReports: toBoolean(process.env.AGENT_PIPELINE_WRITE_REPORTS, true),
     issuesMaxPerRun: Math.max(1, Math.min(toInteger(process.env.AGENT_PIPELINE_ISSUES_MAX_PER_RUN, 6), 20))
   };
 
@@ -160,17 +161,23 @@ async function run() {
     steps: results
   };
 
-  const report = buildMarkdown({ generatedAt, settings, results });
-  await fs.mkdir(path.dirname(REPORT_FILE), { recursive: true });
-  await fs.writeFile(REPORT_FILE, report, "utf8");
-  await fs.writeFile(STATUS_FILE, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+  if (settings.writeReports) {
+    const report = buildMarkdown({ generatedAt, settings, results });
+    await fs.mkdir(path.dirname(REPORT_FILE), { recursive: true });
+    await fs.writeFile(REPORT_FILE, report, "utf8");
+    await fs.writeFile(STATUS_FILE, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+  }
 
   console.log("Agent pipeline");
   console.log("--------------");
   console.log(`Steps executed: ${results.length}`);
   console.log(`Success: ${payload.summary.success ? "YES" : "NO"}`);
-  console.log(`Report: ${path.relative(ROOT, REPORT_FILE)}`);
-  console.log(`Status: ${path.relative(ROOT, STATUS_FILE)}`);
+  if (settings.writeReports) {
+    console.log(`Report: ${path.relative(ROOT, REPORT_FILE)}`);
+    console.log(`Status: ${path.relative(ROOT, STATUS_FILE)}`);
+  } else {
+    console.log("Report writing: disabled");
+  }
 
   if (!payload.summary.success) {
     process.exitCode = 1;
