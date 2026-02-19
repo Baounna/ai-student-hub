@@ -1,0 +1,533 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --page-shell-max: 76rem;
+  --font-manrope: "IBM Plex Sans", "Avenir Next", "Segoe UI", sans-serif;
+  --font-space: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  --motion-fast: 140ms;
+  --motion-standard: 220ms;
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --bg: #060b14;
+  --bg-soft: #0d1b2f;
+  --surface: rgba(16, 29, 47, 0.78);
+  --surface-strong: rgba(9, 18, 31, 0.92);
+  --text: #d8e6ff;
+  --text-strong: #f7faff;
+  --muted: #97afcf;
+  --border: rgba(141, 172, 218, 0.22);
+  --primary: #3b86ff;
+  --primary-strong: #2369e0;
+  --primary-foreground: #ffffff;
+  --hero-glow-a: rgba(66, 136, 255, 0.18);
+  --hero-glow-b: rgba(99, 102, 241, 0.12);
+  --page-glow-a: rgba(61, 146, 255, 0.16);
+  --page-glow-b: rgba(28, 84, 195, 0.12);
+  --elevated-shadow: 0 32px 70px -42px rgba(2, 9, 24, 0.9);
+  --wiki-panel-bg: rgba(12, 23, 39, 0.86);
+  --wiki-panel-border: rgba(128, 157, 198, 0.2);
+  --wiki-head-bg: linear-gradient(92deg, rgba(39, 72, 122, 0.56) 0%, rgba(29, 49, 82, 0.56) 100%);
+  --wiki-head-green: linear-gradient(90deg, rgba(20, 96, 78, 0.58) 0%, rgba(24, 67, 59, 0.58) 100%);
+  --wiki-head-blue: linear-gradient(90deg, rgba(26, 63, 127, 0.62) 0%, rgba(23, 42, 86, 0.58) 100%);
+  --wiki-head-purple: linear-gradient(90deg, rgba(71, 54, 129, 0.56) 0%, rgba(49, 39, 99, 0.56) 100%);
+  --wiki-link: #91bcff;
+  --success-bg: rgba(15, 138, 94, 0.14);
+  --success-border: rgba(45, 194, 134, 0.42);
+  --success-text: #92f5ca;
+  --danger-bg: rgba(179, 46, 84, 0.16);
+  --danger-border: rgba(247, 120, 156, 0.42);
+  --danger-text: #ffb7cd;
+  --warning-bg: rgba(178, 118, 17, 0.18);
+  --warning-border: rgba(255, 186, 79, 0.44);
+  --warning-text: #ffd58f;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f5f8fd;
+  --bg-soft: #eaf1ff;
+  --surface: rgba(255, 255, 255, 0.94);
+  --surface-strong: rgba(255, 255, 255, 0.98);
+  --text: #213758;
+  --text-strong: #12284b;
+  --muted: #5d7397;
+  --border: rgba(26, 66, 127, 0.16);
+  --primary: #246ef3;
+  --primary-strong: #1a57c9;
+  --primary-foreground: #f8fafc;
+  --hero-glow-a: rgba(36, 110, 243, 0.15);
+  --hero-glow-b: rgba(67, 124, 230, 0.16);
+  --page-glow-a: rgba(42, 119, 241, 0.09);
+  --page-glow-b: rgba(36, 92, 186, 0.1);
+  --elevated-shadow: 0 30px 58px -38px rgba(16, 53, 113, 0.26);
+  --wiki-panel-bg: rgba(255, 255, 255, 0.95);
+  --wiki-panel-border: rgba(38, 70, 126, 0.15);
+  --wiki-head-bg: linear-gradient(92deg, rgba(219, 232, 255, 0.9) 0%, rgba(241, 246, 255, 0.95) 100%);
+  --wiki-head-green: linear-gradient(92deg, rgba(208, 237, 224, 0.95) 0%, rgba(231, 245, 239, 0.95) 100%);
+  --wiki-head-blue: linear-gradient(92deg, rgba(213, 228, 247, 0.95) 0%, rgba(234, 241, 255, 0.95) 100%);
+  --wiki-head-purple: linear-gradient(92deg, rgba(226, 221, 247, 0.96) 0%, rgba(240, 236, 255, 0.96) 100%);
+  --wiki-link: #215ac1;
+  --success-bg: rgba(20, 132, 83, 0.13);
+  --success-border: rgba(14, 122, 76, 0.28);
+  --success-text: #12653e;
+  --danger-bg: rgba(193, 47, 79, 0.12);
+  --danger-border: rgba(176, 34, 64, 0.24);
+  --danger-text: #8b1836;
+  --warning-bg: rgba(194, 123, 18, 0.14);
+  --warning-border: rgba(175, 104, 3, 0.24);
+  --warning-text: #7a4a00;
+}
+
+html[data-text-size="small"] {
+  font-size: 15px;
+}
+
+html[data-text-size="medium"] {
+  font-size: 16px;
+}
+
+html[data-text-size="large"] {
+  font-size: 18px;
+}
+
+html[data-content-width="standard"] {
+  --page-shell-max: 72rem;
+}
+
+html[data-content-width="wide"] {
+  --page-shell-max: 90rem;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    transition:
+      background-color var(--motion-fast) var(--ease-smooth),
+      color var(--motion-fast) var(--ease-smooth),
+      border-color var(--motion-fast) var(--ease-smooth),
+      box-shadow var(--motion-standard) var(--ease-smooth),
+      transform var(--motion-standard) var(--ease-smooth),
+      opacity var(--motion-fast) var(--ease-smooth);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html,
+  body {
+    background-color: var(--bg);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid color-mix(in srgb, var(--primary), #ffffff 20%);
+    outline-offset: 2px;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-manrope), sans-serif;
+    min-height: 100vh;
+    background:
+      radial-gradient(60rem 60rem at 20% -20%, var(--page-glow-a), transparent 60%),
+      radial-gradient(55rem 55rem at 85% -30%, var(--page-glow-b), transparent 62%),
+      linear-gradient(color-mix(in srgb, var(--border), transparent 86%) 1px, transparent 1px) 0 0 / 34px 34px,
+      linear-gradient(90deg, color-mix(in srgb, var(--border), transparent 88%) 1px, transparent 1px) 0 0 / 34px 34px,
+      var(--bg);
+    color: var(--text);
+    letter-spacing: -0.01em;
+    line-height: 1.7;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--primary), transparent 72%);
+    color: var(--text-strong);
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-space), sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-xl px-4 py-2.5 text-sm font-semibold;
+    background: linear-gradient(135deg, var(--primary) 0%, color-mix(in srgb, var(--primary), #99bcff 22%) 100%);
+    color: var(--primary-foreground);
+    border: 1px solid color-mix(in srgb, var(--primary), #ffffff 14%);
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, #ffffff, transparent 58%),
+      0 18px 34px -20px color-mix(in srgb, var(--primary), transparent 32%);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+    transform: translateZ(0);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-primary:hover {
+      background: var(--primary-strong);
+      transform: translateY(-1px) scale(1.01);
+    }
+  }
+
+  .btn-primary:active {
+    transform: translateY(0) scale(0.99);
+    background: var(--primary-strong);
+  }
+
+  .btn-secondary {
+    @apply rounded-xl border px-4 py-2.5 text-sm font-semibold;
+    border-color: color-mix(in srgb, var(--border), var(--text) 8%);
+    color: var(--text-strong);
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--surface), #ffffff 10%) 0%,
+      color-mix(in srgb, var(--surface), #ffffff 2%) 100%
+    );
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 32%),
+      0 10px 28px -24px rgba(12, 34, 73, 0.56);
+    transform: translateZ(0);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-secondary:hover {
+      border-color: color-mix(in srgb, var(--border), var(--primary) 38%);
+      background: color-mix(in srgb, var(--surface), #ffffff 14%);
+      transform: translateY(-1px) scale(1.01);
+    }
+  }
+
+  .btn-secondary:active {
+    transform: translateY(0) scale(0.99);
+    border-color: color-mix(in srgb, var(--border), var(--primary) 38%);
+  }
+
+  .card-hover {
+    @apply transition duration-300 ease-out;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .card-hover:hover {
+      transform: translateY(-4px);
+      border-color: color-mix(in srgb, var(--border), var(--primary) 30%);
+      box-shadow: var(--elevated-shadow);
+    }
+  }
+
+  .utility-link {
+    @apply inline-flex items-center rounded-lg px-3 py-1.5 text-xs font-medium;
+    color: var(--text);
+    border: 1px solid transparent;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .utility-link:hover {
+      border-color: var(--border);
+      background: color-mix(in srgb, var(--surface), transparent 16%);
+      color: var(--text-strong);
+    }
+  }
+
+  .utility-link-primary {
+    @apply inline-flex items-center rounded-lg px-3 py-1.5 text-xs font-semibold;
+    color: var(--wiki-link);
+    border: 1px solid color-mix(in srgb, var(--wiki-link), transparent 75%);
+    background: color-mix(in srgb, var(--wiki-link), transparent 92%);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .utility-link-primary:hover {
+      opacity: 0.92;
+    }
+  }
+
+  .status-success {
+    border: 1px solid var(--success-border);
+    background: var(--success-bg);
+    color: var(--success-text);
+  }
+
+  .status-error {
+    border: 1px solid var(--danger-border);
+    background: var(--danger-bg);
+    color: var(--danger-text);
+  }
+
+  .status-warning {
+    border: 1px solid var(--warning-border);
+    background: var(--warning-bg);
+    color: var(--warning-text);
+  }
+}
+
+@layer utilities {
+  .glass {
+    background:
+      radial-gradient(90% 120% at 10% -10%, color-mix(in srgb, var(--primary), transparent 88%), transparent 55%),
+      linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 6%) 0%, var(--surface) 100%);
+    border: 1px solid var(--border);
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 24%),
+      0 18px 34px -30px rgba(8, 25, 52, 0.68);
+    backdrop-filter: blur(14px);
+  }
+
+  .surface {
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 26%),
+      0 16px 30px -28px rgba(9, 26, 55, 0.62);
+  }
+
+  .do-hero {
+    border: 1px solid var(--border);
+    background:
+      radial-gradient(120% 120% at 0% 0%, color-mix(in srgb, var(--primary), transparent 84%), transparent 50%),
+      radial-gradient(110% 100% at 100% -20%, color-mix(in srgb, var(--hero-glow-b), transparent 35%), transparent 60%),
+      linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 5%) 0%, var(--surface) 100%);
+    box-shadow: var(--elevated-shadow);
+  }
+
+  .do-kicker {
+    @apply text-xs font-semibold uppercase tracking-[0.18em];
+    color: var(--primary);
+  }
+
+  .do-link {
+    color: var(--wiki-link);
+    font-weight: 600;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .do-link:hover {
+      opacity: 0.85;
+    }
+  }
+
+  .page-shell {
+    @apply mx-auto px-4 sm:px-6;
+    max-width: var(--page-shell-max) !important;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 5.8vw, 3.55rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .section-title {
+    font-size: clamp(1.3rem, 4.1vw, 2.1rem);
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+  }
+
+  .body-copy {
+    font-size: clamp(0.98rem, 2.7vw, 1.05rem);
+    line-height: 1.82;
+  }
+
+  .card-copy {
+    font-size: clamp(0.9rem, 2.45vw, 0.98rem);
+    line-height: 1.72;
+  }
+
+  .reading-panel {
+    border: 1px solid var(--border);
+    background:
+      linear-gradient(155deg, color-mix(in srgb, var(--primary), transparent 90%) 0%, transparent 36%),
+      linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 4%) 0%, var(--surface-strong) 100%);
+    box-shadow: var(--elevated-shadow);
+  }
+
+  .media-frame {
+    overflow: hidden;
+    border-radius: 0.95rem;
+    border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--surface), #ffffff 5%);
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 24%),
+      0 16px 30px -28px rgba(9, 26, 55, 0.62);
+  }
+
+  .reading-prose p {
+    max-width: 72ch;
+    line-height: 1.95;
+    font-size: clamp(1rem, 1.04vw, 1.1rem);
+    color: var(--text);
+  }
+
+  .reading-prose p + p {
+    margin-top: 0.95rem;
+  }
+
+  .inline-citation {
+    vertical-align: super;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .inline-citation:hover {
+    opacity: 0.8;
+  }
+
+  .fade-up {
+    animation: fadeUp 0.5s ease-out both;
+  }
+
+  .wiki-panel {
+    border: 1px solid var(--wiki-panel-border);
+    background: var(--wiki-panel-bg);
+    box-shadow: 0 18px 36px -30px rgba(6, 19, 41, 0.7);
+    transition:
+      border-color var(--motion-fast) var(--ease-smooth),
+      box-shadow var(--motion-standard) var(--ease-smooth),
+      transform var(--motion-standard) var(--ease-smooth);
+  }
+
+  .wiki-head {
+    border-bottom: 1px solid var(--wiki-panel-border);
+    background: var(--wiki-head-bg);
+    font-weight: 700;
+    color: var(--text-strong);
+    letter-spacing: -0.01em;
+  }
+
+  .wiki-head-green {
+    background: var(--wiki-head-green);
+  }
+
+  .wiki-head-blue {
+    background: var(--wiki-head-blue);
+  }
+
+  .wiki-head-purple {
+    background: var(--wiki-head-purple);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .wiki-panel:hover {
+      border-color: color-mix(in srgb, var(--wiki-panel-border), var(--primary) 26%);
+      box-shadow: 0 24px 42px -34px rgba(12, 36, 78, 0.72);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background: color-mix(in srgb, var(--muted), transparent 45%);
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--primary), transparent 45%);
+  background-clip: padding-box;
+}
+
+@media (max-width: 768px) {
+  .do-hero {
+    border-radius: 1rem;
+  }
+
+  .do-kicker {
+    letter-spacing: 0.14em;
+  }
+
+  .wiki-panel {
+    border-radius: 0.9rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    min-height: 2.65rem;
+  }
+
+  .reading-prose p {
+    font-size: 1rem;
+    line-height: 1.88;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-shell {
+    padding-left: 0.875rem !important;
+    padding-right: 0.875rem !important;
+  }
+
+  .hero-title {
+    line-height: 1.1;
+  }
+
+  .section-title {
+    line-height: 1.18;
+  }
+}
+
+.anchor-offset {
+  scroll-margin-top: 7.5rem;
+}
+
+@media (max-width: 768px) {
+  .anchor-offset {
+    scroll-margin-top: 6.5rem;
+  }
+}
