@@ -18,6 +18,7 @@ Built with Next.js 14 App Router.
 - Live-source stream + in-article latest updates blocks
 - Blog hub + post pages + category/tag archives
 - Auto web ingestion agent (scheduled, no manual intervention)
+- Internal blog operator agent (scheduled private growth report + action queue)
 - Resources page for tool recommendations (affiliate-ready)
 - Comparison pages for high-intent SEO
 - 14-day growth sprint page for execution and early monetization
@@ -191,6 +192,12 @@ npm run dev
 npm run auto:news
 ```
 
+5. Run internal blog operator agent manually (optional)
+
+```bash
+npm run agent:blog
+```
+
 ## Environment Variables
 
 Copy `.env.example` to `.env.local` and fill your real production values.
@@ -207,6 +214,7 @@ Environment is grouped by:
 - Tracking (`ANALYTICS_MODE`, `GA4_MEASUREMENT_ID`, `TRACKING_WEBHOOK_URL`)
 - Legal text overrides
 - Optional local tracking debug (`TRACKING_DEBUG`, `NEXT_PUBLIC_TRACKING_DEBUG`)
+- Optional internal operator assumptions (`AGENT_*`)
 
 ## 10-Minute Production Setup
 
@@ -392,6 +400,26 @@ Automatic tagging:
 Optional agent env knobs:
 - `AUTO_NEWS_MAX_ITEMS` (default `240`)
 - `AUTO_NEWS_MAX_AGE_DAYS` (default `45`)
+
+### Internal Blog Operator Agent (private)
+- Script: `scripts/blog-operator-agent.mjs`
+- Local command: `npm run agent:blog`
+- Automation workflow: `.github/workflows/blog-operator-agent.yml`
+- Schedule: daily (`35 6 * * *`)
+- Outputs (private repo files, not public routes):
+  - `docs/agent/latest-report.md`
+  - `docs/agent/next-actions.json`
+- What it does:
+  - audits affiliate/email/checkout setup coverage
+  - audits CTA instrumentation surfaces
+  - ranks top auto-news monetization opportunities
+  - computes internal monthly model vs `$10/month` target
+  - generates prioritized action queue (P1/P2/P3)
+
+Important:
+- This operator is internal planning only.  
+- It does not expose your private target/strategy on public blog pages.
+- Keep the repository private if you want these internal reports private.
 
 ### Add a comparison
 - Edit `src/content/posts.ts` in `comparisons`

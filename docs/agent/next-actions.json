@@ -1,0 +1,163 @@
+{
+  "generatedAt": "2026-02-19T22:29:59.006Z",
+  "target": {
+    "monthlyRevenueUsd": 10
+  },
+  "summary": {
+    "postsCount": 6,
+    "comparisonsCount": 1,
+    "newsCount": 7,
+    "autoNewsCount": 240
+  },
+  "monetization": {
+    "validAffiliates": 0,
+    "placementCoverage": {
+      "home": false,
+      "resources": false,
+      "blog": false,
+      "comparison": false
+    },
+    "hasCheckoutUrl": false,
+    "emailProvider": "none",
+    "hasLeadMagnet": false
+  },
+  "revenueModel": {
+    "assumptions": {
+      "monthlyVisits": 300,
+      "affiliateCtr": 0.04,
+      "affiliateCvr": 0.08,
+      "affiliateCommission": 10,
+      "productCvr": 0.005,
+      "productPrice": 12,
+      "emailOptin": 0.03,
+      "emailToProduct": 0.02,
+      "infraGates": {
+        "hasAffiliates": false,
+        "hasCheckoutUrl": false,
+        "hasEmailAutomation": false
+      }
+    },
+    "estimate": {
+      "affiliateRevenue": 0,
+      "productRevenue": 0,
+      "emailRevenue": 0,
+      "totalRevenue": 0,
+      "targetUsd": 10,
+      "gapUsd": 10
+    }
+  },
+  "opportunities": [
+    {
+      "source": "Hugging Face Blog",
+      "topic": "AI Systems",
+      "publishedAt": "2026-02-20T00:00:00.000Z",
+      "href": "https://huggingface.co/blog/unsloth-jobs",
+      "title": "Train AI models with Unsloth and Hugging Face Jobs for FREE: What It Means for AI/CS Students",
+      "keyword": "how to build hugging face blog",
+      "monetizationAngle": "how to build and ship this update as a student project",
+      "cta": "Resources stack + roadmap"
+    },
+    {
+      "source": "GitHub Blog",
+      "topic": "Computer Science",
+      "publishedAt": "2026-02-19T17:00:00.000Z",
+      "href": "https://github.blog/ai-and-ml/generative-ai/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/",
+      "title": "How AI is reshaping developer choice (and Octoverse data proves it): What It Means for AI/CS Students",
+      "keyword": "ai cs update for students github blog",
+      "monetizationAngle": "student-focused practical summary",
+      "cta": "Roadmap + related blog guide"
+    },
+    {
+      "source": "Hugging Face Blog",
+      "topic": "AI Research",
+      "publishedAt": "2026-02-19T15:32:38.000Z",
+      "href": "https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata-ja",
+      "title": "「データ不足」の壁を越える：合成ペルソナが日本のAI開発を加速: What It Means for AI/CS Students",
+      "keyword": "ai cs update for students hugging face blog",
+      "monetizationAngle": "student-focused practical summary",
+      "cta": "Roadmap + related blog guide"
+    },
+    {
+      "source": "OpenAI News",
+      "topic": "AI Systems",
+      "publishedAt": "2026-02-19T10:00:00.000Z",
+      "href": "https://openai.com/index/advancing-independent-research-ai-alignment",
+      "title": "Advancing independent research on AI alignment: What It Means for AI/CS Students",
+      "keyword": "how to build openai news",
+      "monetizationAngle": "how to build and ship this update as a student project",
+      "cta": "Resources stack + roadmap"
+    },
+    {
+      "source": "arXiv cs.AI",
+      "topic": "AI Systems",
+      "publishedAt": "2026-02-19T05:00:00.000Z",
+      "href": "https://arxiv.org/abs/2602.16173",
+      "title": "Learning Personalized Agents from Human Feedback: What It Means for AI/CS Students",
+      "keyword": "how to build arxiv cs.ai",
+      "monetizationAngle": "how to build and ship this update as a student project",
+      "cta": "Resources stack + roadmap"
+    },
+    {
+      "source": "arXiv cs.AI",
+      "topic": "AI Systems",
+      "publishedAt": "2026-02-19T05:00:00.000Z",
+      "href": "https://arxiv.org/abs/2602.16105",
+      "title": "GPSBench: Do Large Language Models Understand GPS Coordinates?: What It Means for AI/CS Students",
+      "keyword": "how to build arxiv cs.ai",
+      "monetizationAngle": "how to build and ship this update as a student project",
+      "cta": "Resources stack + roadmap"
+    }
+  ],
+  "actions": [
+    {
+      "priority": "P1",
+      "action": "Add at least 3 valid affiliate links (name + final URL + placement).",
+      "why": "Without valid links, affiliate revenue path is blocked."
+    },
+    {
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: home.",
+      "why": "Missing placement means lost monetization intent on that traffic surface."
+    },
+    {
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: resources.",
+      "why": "Missing placement means lost monetization intent on that traffic surface."
+    },
+    {
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: blog.",
+      "why": "Missing placement means lost monetization intent on that traffic surface."
+    },
+    {
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: comparison.",
+      "why": "Missing placement means lost monetization intent on that traffic surface."
+    },
+    {
+      "priority": "P1",
+      "action": "Set NEXT_PUBLIC_PRODUCT_CHECKOUT_URL (Gumroad/LemonSqueezy) and test buy CTA.",
+      "why": "Product revenue cannot convert without a live checkout URL."
+    },
+    {
+      "priority": "P1",
+      "action": "Enable ConvertKit and connect newsletter form ID/API key.",
+      "why": "Email capture without automation loses warm leads and repeat conversions."
+    },
+    {
+      "priority": "P1",
+      "action": "Set lead magnet URLs for EN/FR and ensure CTA appears on home/resources/posts.",
+      "why": "Lead magnet is the lowest-friction conversion path for student traffic."
+    },
+    {
+      "priority": "P2",
+      "action": "Add lead magnet CTA on blog.",
+      "why": "Increases opt-ins per 100 visitors."
+    },
+    {
+      "priority": "P2",
+      "action": "Add lead magnet CTA on compare.",
+      "why": "Increases opt-ins per 100 visitors."
+    }
+  ]
+}

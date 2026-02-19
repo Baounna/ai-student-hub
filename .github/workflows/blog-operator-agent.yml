@@ -1,0 +1,44 @@
+name: Blog Operator Agent
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "35 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  operator-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh auto-news feed
+        run: npm run auto:news
+
+      - name: Run blog operator agent
+        run: npm run agent:blog
+
+      - name: Commit and push agent outputs
+        run: |
+          if git diff --quiet -- src/content/auto-news.json docs/agent/latest-report.md docs/agent/next-actions.json; then
+            echo "No operator changes to commit."
+            exit 0
+          fi
+
+          git config user.name "AI Student Hub Bot"
+          git config user.email "ai-student-hub-bot@users.noreply.github.com"
+          git add src/content/auto-news.json docs/agent/latest-report.md docs/agent/next-actions.json
+          git commit -m "chore(agent): refresh blog operator report and feed"
+          git push

@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "auto:news": "node scripts/auto-news-agent.mjs",
+    "agent:blog": "node scripts/blog-operator-agent.mjs",
     "verify:affiliates": "node scripts/verify-affiliates.mjs",
     "verify:production": "node scripts/verify-production.mjs"
   },
