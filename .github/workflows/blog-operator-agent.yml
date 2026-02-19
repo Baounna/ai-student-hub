@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "35 6 * * *"
 
+concurrency:
+  group: ai-student-hub-agents
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -51,4 +55,5 @@ jobs:
           git config user.email "ai-student-hub-bot@users.noreply.github.com"
           git add src/content/auto-news.json docs/agent
           git commit -m "chore(agent): refresh blog operator report and feed"
+          git pull --rebase origin "${GITHUB_REF_NAME:-main}"
           git push

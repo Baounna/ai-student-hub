@@ -11,6 +11,8 @@
     "agent:blog": "node scripts/blog-operator-agent.mjs",
     "agent:issues": "node scripts/sync-operator-issues.mjs",
     "agent:design": "node scripts/blog-design-agent.mjs",
+    "agent:all": "node scripts/agent-pipeline.mjs",
+    "verify:agents": "node scripts/verify-agent-health.mjs",
     "verify:affiliates": "node scripts/verify-affiliates.mjs",
     "verify:production": "node scripts/verify-production.mjs"
   },

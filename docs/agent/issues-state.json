@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-02-19T23:04:53.120Z",
+  "generatedAt": "2026-02-19T23:11:19.678Z",
   "repository": "",
   "mode": "dry-run",
-  "maxPerRun": 3,
+  "maxPerRun": 6,
   "sources": [
     {
       "sourceId": "operator",
       "label": "Operator",
       "queueFile": "docs/agent/next-actions.json",
       "enabled": true,
-      "queueGeneratedAt": "2026-02-19T23:04:38.567Z",
+      "queueGeneratedAt": "2026-02-19T23:11:19.525Z",
       "totalActions": 10,
-      "selectedCount": 3
+      "selectedCount": 6
     },
     {
       "sourceId": "design",
       "label": "Design",
       "queueFile": "docs/agent/design-actions.json",
       "enabled": true,
-      "queueGeneratedAt": "2026-02-19T23:04:38.567Z",
+      "queueGeneratedAt": "2026-02-19T23:11:19.601Z",
       "totalActions": 0,
       "selectedCount": 0
     }
@@ -26,9 +26,9 @@
   "summary": {
     "created": 0,
     "existing": 0,
-    "dryRun": 3,
+    "dryRun": 6,
     "errors": 0,
-    "tracked": 3
+    "tracked": 6
   },
   "items": [
     {
@@ -36,7 +36,7 @@
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-02-19T23:04:38.567Z",
+      "queueGeneratedAt": "2026-02-19T23:11:19.525Z",
       "priority": "P1",
       "action": "Add at least 3 valid affiliate links (name + final URL + placement).",
       "why": "Without valid links, affiliate revenue path is blocked.",
@@ -45,7 +45,7 @@
       "title": "[Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).",
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-02-19T23:04:53.120Z",
+      "lastSeenAt": "2026-02-19T23:11:19.678Z",
       "inQueue": true
     },
     {
@@ -53,7 +53,7 @@
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-02-19T23:04:38.567Z",
+      "queueGeneratedAt": "2026-02-19T23:11:19.525Z",
       "priority": "P1",
       "action": "Cover missing affiliate placement: blog.",
       "why": "Missing placement means lost monetization intent on that traffic surface.",
@@ -62,7 +62,7 @@
       "title": "[Operator P1] Cover missing affiliate placement: blog.",
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-02-19T23:04:53.120Z",
+      "lastSeenAt": "2026-02-19T23:11:19.678Z",
       "inQueue": true
     },
     {
@@ -70,7 +70,7 @@
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-02-19T23:04:38.567Z",
+      "queueGeneratedAt": "2026-02-19T23:11:19.525Z",
       "priority": "P1",
       "action": "Cover missing affiliate placement: comparison.",
       "why": "Missing placement means lost monetization intent on that traffic surface.",
@@ -79,7 +79,58 @@
       "title": "[Operator P1] Cover missing affiliate placement: comparison.",
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-02-19T23:04:53.120Z",
+      "lastSeenAt": "2026-02-19T23:11:19.678Z",
+      "inQueue": true
+    },
+    {
+      "hash": "df74184273544a1a",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-02-19T23:11:19.525Z",
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: home.",
+      "why": "Missing placement means lost monetization intent on that traffic surface.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P1] Cover missing affiliate placement: home.",
+      "status": "dry-run",
+      "createdAt": "2026-02-19T23:11:19.678Z",
+      "lastSeenAt": "2026-02-19T23:11:19.678Z",
+      "inQueue": true
+    },
+    {
+      "hash": "69ff75aa31341962",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-02-19T23:11:19.525Z",
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: resources.",
+      "why": "Missing placement means lost monetization intent on that traffic surface.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P1] Cover missing affiliate placement: resources.",
+      "status": "dry-run",
+      "createdAt": "2026-02-19T23:11:19.678Z",
+      "lastSeenAt": "2026-02-19T23:11:19.678Z",
+      "inQueue": true
+    },
+    {
+      "hash": "2474542d2e8e4d91",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-02-19T23:11:19.525Z",
+      "priority": "P1",
+      "action": "Enable ConvertKit and connect newsletter form ID/API key.",
+      "why": "Email capture without automation loses warm leads and repeat conversions.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P1] Enable ConvertKit and connect newsletter form ID/API key.",
+      "status": "dry-run",
+      "createdAt": "2026-02-19T23:11:19.678Z",
+      "lastSeenAt": "2026-02-19T23:11:19.678Z",
       "inQueue": true
     }
   ]

@@ -462,6 +462,37 @@ Optional agent env knobs:
   - `DESIGN_AGENT_TARGET_SCORE` (default `88`)
   - `DESIGN_AGENT_MAX_ACTIONS` (default `10`)
 
+### Unified agent pipeline (recommended)
+- Script: `scripts/agent-pipeline.mjs`
+- Local command: `npm run agent:all`
+- Outputs:
+  - `docs/agent/pipeline-report.md`
+  - `docs/agent/pipeline-status.json`
+- Pipeline order:
+  1. auto-news
+  2. blog-operator
+  3. blog-design
+  4. issue-sync
+  5. agent-health verify
+- Optional env knobs:
+  - `AGENT_PIPELINE_INCLUDE_AUTO_NEWS` (default `1`)
+  - `AGENT_PIPELINE_INCLUDE_OPERATOR` (default `1`)
+  - `AGENT_PIPELINE_INCLUDE_DESIGN` (default `1`)
+  - `AGENT_PIPELINE_INCLUDE_ISSUES` (default `1`)
+  - `AGENT_PIPELINE_INCLUDE_VERIFY` (default `1`)
+  - `AGENT_PIPELINE_ISSUES_MAX_PER_RUN` (default `6`)
+
+### Agent health verify
+- Script: `scripts/verify-agent-health.mjs`
+- Local command: `npm run verify:agents`
+- Validates:
+  - required agent outputs exist
+  - queue/state JSON schemas are valid
+  - issue-state hash uniqueness
+  - generatedAt freshness window
+- Optional env knob:
+  - `AGENT_HEALTH_MAX_AGE_HOURS` (default `96`)
+
 Important:
 - This operator is internal planning only.  
 - It does not expose your private target/strategy on public blog pages.
@@ -478,6 +509,7 @@ Run:
 ```bash
 npm run lint
 npm run build
+npm run verify:agents
 npm run verify:affiliates
 npm run verify:production
 ```

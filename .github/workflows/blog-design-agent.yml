@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "20 7 * * 1"
 
+concurrency:
+  group: ai-student-hub-agents
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -48,4 +52,5 @@ jobs:
           git config user.email "ai-student-hub-bot@users.noreply.github.com"
           git add docs/agent/design-report.md docs/agent/design-actions.json docs/agent/issues-report.md docs/agent/issues-state.json
           git commit -m "chore(agent): refresh blog design audit"
+          git pull --rebase origin "${GITHUB_REF_NAME:-main}"
           git push

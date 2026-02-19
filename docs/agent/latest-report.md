@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-19T23:04:38.567Z
+Generated: 2026-02-19T23:11:19.525Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -95,7 +95,6 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 2
-- docs/agent/drafts/20260219--20260219-investigating-gnn-convergence-on-large-randomly-generated-graphs-32a31ddb.md
-- docs/agent/drafts/20260219--20260219-on-the-power-of-source-screening-for-learning-shared-feature-ext-77c86918.md
+- New drafts generated: 0
+- No new drafts generated (existing coverage or no opportunities).
 
