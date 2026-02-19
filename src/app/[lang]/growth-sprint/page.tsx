@@ -20,6 +20,16 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title,
     description,
+    robots: {
+      index: false,
+      follow: false,
+      nocache: true,
+      googleBot: {
+        index: false,
+        follow: false,
+        noimageindex: true
+      }
+    },
     keywords: getSeoKeywords(params.lang, "growth", [
       fr ? "sprint croissance blog" : "blog growth sprint",
       fr ? "plan 14 jours blog ia" : "14 day ai blog plan"

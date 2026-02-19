@@ -28,7 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { route: "/resources", priority: 0.9, changeFrequency: "weekly" as const },
       { route: "/compare", priority: 0.9, changeFrequency: "weekly" as const },
       { route: "/donate", priority: 0.52, changeFrequency: "monthly" as const },
-      { route: "/growth-sprint", priority: 0.7, changeFrequency: "weekly" as const },
       { route: "/product/ai-career-guide", priority: 0.86, changeFrequency: "weekly" as const }
     ].map((item) => ({
       url: absoluteUrl(`/${locale}${item.route}`),

@@ -369,13 +369,13 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
 
         <section className="wiki-panel overflow-hidden rounded-md">
           <div className="wiki-head wiki-head-purple px-4 py-2 text-xl md:text-2xl">
-            {locale === "fr" ? "Plan revenu starter ($10/mois)" : "Starter revenue plan ($10/month)"}
+            {locale === "fr" ? "Plan execution starter" : "Starter execution plan"}
           </div>
           <div className="space-y-3 p-4 text-sm text-[color:var(--text)]">
             <p>
               {locale === "fr"
-                ? "Objectif realiste: premier palier revenu avec execution legere et constante."
-                : "Realistic target: first revenue milestone with light but consistent execution."}
+                ? "Objectif realiste: progresser chaque semaine avec execution legere et constante."
+                : "Realistic target: improve every week with light but consistent execution."}
             </p>
             <ul className="space-y-2">
               <li>
@@ -390,14 +390,14 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
               </li>
               <li>
                 {locale === "fr"
-                  ? "3. Capture emails puis renvoie vers guide $9-$19."
-                  : "3. Capture emails, then route to your $9-$19 guide."}
+                  ? "3. Capture emails puis renvoie vers ressources et guides."
+                  : "3. Capture emails, then route visitors to resources and guides."}
               </li>
             </ul>
             <div className="rounded border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Modele: 300 visites/mois x 4% clic affiliation x 8% conversion x ~$10 commission = ~$9.6/mois."
-                : "Model: 300 visits/mo x 4% affiliate CTR x 8% conversion x ~$10 commission = ~$9.6/mo."}
+                ? "Repere: mesure chaque semaine CTR, opt-ins et clics guide, puis optimise en continu."
+                : "Reference: track CTR, opt-ins, and guide clicks weekly, then optimize continuously."}
             </div>
             <div className="flex flex-wrap gap-2">
               <Link href={`/${locale}/resources`} className="btn-secondary">
@@ -406,16 +406,13 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
               <Link href={`/${locale}/compare`} className="btn-secondary">
                 {locale === "fr" ? "Comparatifs" : "Comparisons"}
               </Link>
-              <Link href={`/${locale}/growth-sprint`} className="btn-secondary">
-                {locale === "fr" ? "Sprint 14 jours" : "14-day sprint"}
-              </Link>
               {hasCheckoutUrl ? (
                 <TrackableAnchor
                   href={checkoutUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   event="product_checkout_click"
-                  meta={{ page: "home_revenue_plan", locale, offer: "ai-career-guide" }}
+                  meta={{ page: "home_execution_plan", locale, offer: "ai-career-guide" }}
                   className="btn-primary"
                 >
                   {locale === "fr" ? "Acheter le guide" : "Buy the guide"}
@@ -426,7 +423,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
                 </Link>
               )}
             </div>
-            <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "home_revenue_plan", locale }} className="do-link">
+            <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "home_execution_plan", locale }} className="do-link">
               {locale === "fr" ? "Recuperer la roadmap gratuite" : "Get the free roadmap"}
             </TrackableAnchor>
           </div>

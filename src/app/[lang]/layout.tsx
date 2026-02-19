@@ -299,11 +299,6 @@ export default function LocalizedLayout({ children, params }: { children: React.
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/growth-sprint`} className="transition hover:opacity-70">
-                  {locale === "fr" ? "Sprint 14 jours" : "14-day sprint"}
-                </Link>
-              </li>
-              <li>
                 <TrackableAnchor
                   href={leadMagnetHref}
                   event="lead_magnet_click"

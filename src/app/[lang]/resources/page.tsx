@@ -253,9 +253,6 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
               <Link href={`/${locale}/compare`} className="btn-secondary">
                 {locale === "fr" ? "Ouvrir comparatifs" : "Open comparisons"}
               </Link>
-              <Link href={`/${locale}/growth-sprint`} className="btn-secondary">
-                {locale === "fr" ? "Sprint 14 jours" : "14-day sprint"}
-              </Link>
               {hasCheckoutUrl ? (
                 <TrackableAnchor
                   href={checkoutUrl}

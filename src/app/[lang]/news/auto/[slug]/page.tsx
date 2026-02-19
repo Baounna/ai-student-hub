@@ -315,9 +315,6 @@ export default function AutoNewsDetailPage({ params }: { params: { lang: string;
               <Link href={`/${locale}/compare`} className="btn-primary">
                 {fr ? "Compare" : "Compare"}
               </Link>
-              <Link href={`/${locale}/growth-sprint`} className="btn-secondary">
-                {fr ? "Sprint 14 jours" : "14-day sprint"}
-              </Link>
             </div>
           </section>
 

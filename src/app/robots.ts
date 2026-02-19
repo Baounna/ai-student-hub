@@ -17,7 +17,10 @@ export default function robots(): MetadataRoute.Robots {
           "/en/login",
           "/fr/login",
           "/en/register",
-          "/fr/register"
+          "/fr/register",
+          "/growth-sprint",
+          "/en/growth-sprint",
+          "/fr/growth-sprint"
         ]
       }
     ],

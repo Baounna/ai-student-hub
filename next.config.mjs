@@ -37,8 +37,17 @@ const nextConfig = {
     }
 
     const apiHeaders = [...headers, { key: "X-Robots-Tag", value: "noindex, nofollow" }];
+    const growthSprintNoindexHeaders = [...headers, { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" }];
 
     return [
+      {
+        source: "/growth-sprint",
+        headers: growthSprintNoindexHeaders
+      },
+      {
+        source: "/:lang(en|fr)/growth-sprint",
+        headers: growthSprintNoindexHeaders
+      },
       {
         source: "/api/:path*",
         headers: apiHeaders
