@@ -15,6 +15,24 @@ function normalizeOrigin(value: string | null | undefined) {
   }
 }
 
+function requestOrigin(request: Request) {
+  try {
+    return new URL(request.url).origin;
+  } catch {
+    return null;
+  }
+}
+
+function isLoopbackOrigin(origin: string) {
+  try {
+    const parsed = new URL(origin);
+    const host = parsed.hostname.toLowerCase();
+    return LOCALHOST_HOSTS.has(host);
+  } catch {
+    return false;
+  }
+}
+
 function collectTrustedOrigins() {
   const origins = new Set<string>();
   const candidates = [
@@ -70,12 +88,23 @@ const TRUSTED_ORIGINS = collectTrustedOrigins();
 export function isTrustedMutationRequest(request: Request) {
   if (!MUTATION_METHODS.has(request.method.toUpperCase())) return true;
   const allowedOrigins = TRUSTED_ORIGINS;
+  const currentOrigin = requestOrigin(request);
 
   const originHeader = normalizeOrigin(request.headers.get("origin"));
-  if (originHeader) return allowedOrigins.has(originHeader);
+  if (originHeader) {
+    if (currentOrigin && originHeader === currentOrigin) return true;
+    if (allowedOrigins.has(originHeader)) return true;
+    if (process.env.NODE_ENV !== "production" && isLoopbackOrigin(originHeader)) return true;
+    return false;
+  }
 
   const refererOrigin = normalizeOrigin(request.headers.get("referer"));
-  if (refererOrigin) return allowedOrigins.has(refererOrigin);
+  if (refererOrigin) {
+    if (currentOrigin && refererOrigin === currentOrigin) return true;
+    if (allowedOrigins.has(refererOrigin)) return true;
+    if (process.env.NODE_ENV !== "production" && isLoopbackOrigin(refererOrigin)) return true;
+    return false;
+  }
 
   const fetchSite = (request.headers.get("sec-fetch-site") || "").trim().toLowerCase();
   if (LOW_TRUST_FETCH_SITES.has(fetchSite)) return false;
