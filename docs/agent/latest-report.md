@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-19T22:29:59.006Z
+Generated: 2026-02-19T22:39:36.758Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -92,4 +92,10 @@ Internal target: $10.00/month (private operator metric)
    - Why: Increases opt-ins per 100 visitors.
 10. [P2] Add lead magnet CTA on compare.
    - Why: Increases opt-ins per 100 visitors.
+
+## Draft Generation
+- Draft slots per run: 2
+- New drafts generated: 2
+- docs/agent/drafts/20260219--20260219-ai-7904925c.md
+- docs/agent/drafts/20260219--20260219-advancing-independent-research-on-ai-alignment-a3ef4d9d.md
 

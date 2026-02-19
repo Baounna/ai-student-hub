@@ -409,12 +409,16 @@ Optional agent env knobs:
 - Outputs (private repo files, not public routes):
   - `docs/agent/latest-report.md`
   - `docs/agent/next-actions.json`
+  - `docs/agent/drafts/*.md` (review-only draft templates)
 - What it does:
   - audits affiliate/email/checkout setup coverage
   - audits CTA instrumentation surfaces
   - ranks top auto-news monetization opportunities
   - computes internal monthly model vs `$10/month` target
   - generates prioritized action queue (P1/P2/P3)
+  - generates private article draft templates from top opportunities
+- Optional env knob:
+  - `AGENT_DRAFTS_PER_RUN` (default `2`, range `0-10`)
 
 Important:
 - This operator is internal planning only.  
