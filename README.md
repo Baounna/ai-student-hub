@@ -20,6 +20,7 @@ Built with Next.js 14 App Router.
 - Auto web ingestion agent (scheduled, no manual intervention)
 - Resources page for tool recommendations (affiliate-ready)
 - Comparison pages for high-intent SEO
+- 14-day growth sprint page for execution and early monetization
 - Product page for low-ticket digital guide
 - Newsletter capture with optional ConvertKit integration
 - Social auth-ready account flows (Google/GitHub/LinkedIn)
@@ -75,6 +76,7 @@ Built with Next.js 14 App Router.
 - `/{lang}/resources`
 - `/{lang}/compare`
 - `/{lang}/compare/[slug]`
+- `/{lang}/growth-sprint`
 - `/{lang}/about`
 - `/{lang}/product/ai-career-guide`
 - `/{lang}/register`
@@ -103,6 +105,7 @@ Built with Next.js 14 App Router.
 - `/blog` -> `/en/blog`
 - `/about` -> `/en/about`
 - `/resources` -> `/en/resources`
+- `/growth-sprint` -> `/en/growth-sprint`
 - `/register` -> `/en/register`
 - `/login` -> `/en/login`
 - `/account` -> `/en/account`
