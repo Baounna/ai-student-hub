@@ -21,6 +21,11 @@ export type AutoNewsItem = {
   };
 };
 
+export type LocalizedAutoNewsItem = AutoNewsItem & {
+  title: string;
+  summary: string;
+};
+
 type AutoNewsPayload = {
   version: number;
   updatedAt: string;
@@ -49,7 +54,22 @@ export function getAutoNews(locale: Locale, limit = 24) {
       ...item,
       title: item.locales[locale].title,
       summary: item.locales[locale].summary
-    }));
+    })) satisfies LocalizedAutoNewsItem[];
+}
+
+export function getAutoNewsBySlug(slug: string, locale: Locale): LocalizedAutoNewsItem | undefined {
+  const item = payload.items.find((entry) => entry.slug === slug);
+  if (!item) return undefined;
+
+  return {
+    ...item,
+    title: item.locales[locale].title,
+    summary: item.locales[locale].summary
+  };
+}
+
+export function getAutoNewsRaw() {
+  return payload.items;
 }
 
 export function getAutoNewsCount() {

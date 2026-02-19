@@ -1,3 +1,4 @@
+import { getAutoNews } from "@/content/auto-news";
 import { newsBriefs } from "@/content/news";
 import { posts } from "@/content/posts";
 import { absoluteUrl } from "@/lib/site-url";
@@ -28,7 +29,15 @@ export async function GET() {
     publishedAt: brief.publishedAt
   }));
 
-  const items = [...blogItems, ...newsItems]
+  const autoNewsItems = getAutoNews("en", 60).map((item) => ({
+    type: "auto-news" as const,
+    link: absoluteUrl(`/en/news/auto/${item.slug}`),
+    title: `[Auto] ${item.title}`,
+    description: item.summary,
+    publishedAt: item.publishedAt
+  }));
+
+  const items = [...blogItems, ...newsItems, ...autoNewsItems]
     .sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1))
     .map((item) => {
       const title = escapeXml(item.title);
@@ -42,7 +51,7 @@ export async function GET() {
           <guid>${item.link}</guid>
           <description>${description}</description>
           <pubDate>${pubDate}</pubDate>
-          <category>${item.type === "news" ? "AI/CS News" : "Blog"}</category>
+          <category>${item.type === "news" ? "AI/CS News" : item.type === "auto-news" ? "Auto AI/CS News" : "Blog"}</category>
         </item>
       `;
     })

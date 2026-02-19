@@ -288,14 +288,19 @@ export default function LocalizedNewsPage({
                     </div>
                     <h3 className="mt-2 text-base font-semibold text-[color:var(--text-strong)]">{item.title}</h3>
                     <p className="mt-2 text-sm text-[color:var(--text)]">{item.summary}</p>
-                    <a
-                      href={item.href}
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      className="do-link mt-3 inline-block text-sm"
-                    >
-                      {locale === "fr" ? "Lire la source officielle" : "Read official source"}
-                    </a>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      <Link href={`/${locale}/news/auto/${item.slug}`} className="btn-secondary px-3 py-1.5 text-xs">
+                        {locale === "fr" ? "Lire brief auto" : "Read auto brief"}
+                      </Link>
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        className="do-link inline-block pt-1 text-sm"
+                      >
+                        {locale === "fr" ? "Source officielle" : "Official source"}
+                      </a>
+                    </div>
                   </article>
                 ))}
               </div>

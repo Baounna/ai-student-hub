@@ -69,6 +69,7 @@ Built with Next.js 14 App Router.
 - `/{lang}/news`
 - `/{lang}/news/live`
 - `/{lang}/news/[slug]`
+- `/{lang}/news/auto/[slug]`
 - `/{lang}/blog`
 - `/{lang}/blog/[slug]`
 - `/{lang}/blog/category/[category]`
@@ -341,6 +342,14 @@ Automatic tagging:
 - Blog and news article pages now include an automatic "Latest AI/CS updates (with sources)" block.
 - Each item links to the original source publication.
 - This keeps article pages fresh without manual edits to every article.
+
+### Auto brief pages from web signals
+- Route: `/{lang}/news/auto/[slug]`
+- Each auto-ingested web signal gets an internal brief page with:
+  - source reference links
+  - student impact context
+  - action steps + execution links
+- News hub now links to these internal auto briefs and to the original source.
 
 ### Fully automatic web-ingestion agent
 - Script: `scripts/auto-news-agent.mjs`

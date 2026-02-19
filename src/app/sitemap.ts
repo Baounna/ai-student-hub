@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getAutoNewsRaw } from "@/content/auto-news";
 import { comparisons, getAllCategories, getAllTags, posts, slugify } from "@/content/posts";
 import { newsBriefs } from "@/content/news";
 import { locales } from "@/i18n/config";
@@ -22,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     newsBriefs.map((brief) => ({
       url: absoluteUrl(`/${locale}/news/${brief.slug}`),
       lastModified: new Date(brief.publishedAt)
+    }))
+  );
+  const autoNewsPages = locales.flatMap((locale) =>
+    getAutoNewsRaw().map((item) => ({
+      url: absoluteUrl(`/${locale}/news/auto/${item.slug}`),
+      lastModified: new Date(item.publishedAt || item.discoveredAt || Date.now())
     }))
   );
 
@@ -53,6 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...localizedStaticPages,
     ...blogPages,
     ...newsPages,
+    ...autoNewsPages,
     ...localizedComparisonPages,
     ...monetizationPages,
     ...categoryPages,
