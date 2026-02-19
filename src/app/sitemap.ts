@@ -6,7 +6,7 @@ import { absoluteUrl } from "@/lib/site-url";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const localizedStaticPages = locales.flatMap((locale) =>
-    ["", "/news", "/blog", "/about", "/resources", "/compare", "/donate", "/product/ai-career-guide"].map((route) => ({
+    ["", "/news", "/blog", "/about", "/resources", "/compare", "/donate", "/growth-sprint", "/product/ai-career-guide"].map((route) => ({
       url: absoluteUrl(`/${locale}${route}`),
       lastModified: new Date()
     }))

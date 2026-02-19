@@ -406,6 +406,9 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
               <Link href={`/${locale}/compare`} className="btn-secondary">
                 {locale === "fr" ? "Comparatifs" : "Comparisons"}
               </Link>
+              <Link href={`/${locale}/growth-sprint`} className="btn-secondary">
+                {locale === "fr" ? "Sprint 14 jours" : "14-day sprint"}
+              </Link>
               {hasCheckoutUrl ? (
                 <TrackableAnchor
                   href={checkoutUrl}
