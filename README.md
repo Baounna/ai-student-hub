@@ -428,14 +428,22 @@ Optional agent env knobs:
 ### Operator issue sync (private)
 - Script: `scripts/sync-operator-issues.mjs`
 - Local command: `npm run agent:issues`
-- Input: `docs/agent/next-actions.json`
+- Inputs:
+  - `docs/agent/next-actions.json` (operator queue)
+  - `docs/agent/design-actions.json` (design queue)
 - Outputs:
   - `docs/agent/issues-state.json`
   - `docs/agent/issues-report.md`
 - Behavior:
   - creates issues only for top-priority actions (capped)
   - deduplicates by stable action hash and issue title
+  - supports source toggles (`operator` / `design`) per workflow run
   - runs in dry-run mode when GitHub token/repository env is missing
+- Optional env knobs:
+  - `AGENT_ISSUES_ENABLED` (default `1`)
+  - `AGENT_ISSUES_MAX_PER_RUN` (default `3`)
+  - `AGENT_ISSUES_INCLUDE_OPERATOR` (default `1`)
+  - `AGENT_ISSUES_INCLUDE_DESIGN` (default `1`)
 
 ### Blog design agent (private)
 - Script: `scripts/blog-design-agent.mjs`
@@ -445,6 +453,7 @@ Optional agent env knobs:
 - Outputs:
   - `docs/agent/design-report.md`
   - `docs/agent/design-actions.json`
+  - `docs/agent/issues-state.json` and `docs/agent/issues-report.md` (when issue sync runs)
 - Behavior:
   - scores blog design quality (index + post + style system)
   - flags missing UX/design conversion elements

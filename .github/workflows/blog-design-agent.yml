@@ -27,15 +27,25 @@ jobs:
       - name: Run design agent
         run: npm run agent:design
 
+      - name: Sync design actions to GitHub Issues
+        env:
+          AGENT_ISSUES_ENABLED: "1"
+          AGENT_ISSUES_MAX_PER_RUN: "3"
+          AGENT_ISSUES_INCLUDE_OPERATOR: "0"
+          AGENT_ISSUES_INCLUDE_DESIGN: "1"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: npm run agent:issues
+
       - name: Commit and push design outputs
         run: |
-          if git diff --quiet -- docs/agent/design-report.md docs/agent/design-actions.json; then
+          if git diff --quiet -- docs/agent/design-report.md docs/agent/design-actions.json docs/agent/issues-report.md docs/agent/issues-state.json; then
             echo "No design-agent changes to commit."
             exit 0
           fi
 
           git config user.name "AI Student Hub Bot"
           git config user.email "ai-student-hub-bot@users.noreply.github.com"
-          git add docs/agent/design-report.md docs/agent/design-actions.json
+          git add docs/agent/design-report.md docs/agent/design-actions.json docs/agent/issues-report.md docs/agent/issues-state.json
           git commit -m "chore(agent): refresh blog design audit"
           git push

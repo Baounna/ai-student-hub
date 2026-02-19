@@ -1,9 +1,28 @@
 {
-  "generatedAt": "2026-02-19T22:53:00.028Z",
+  "generatedAt": "2026-02-19T23:04:53.120Z",
   "repository": "",
   "mode": "dry-run",
-  "queueGeneratedAt": "2026-02-19T22:51:58.957Z",
   "maxPerRun": 3,
+  "sources": [
+    {
+      "sourceId": "operator",
+      "label": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "enabled": true,
+      "queueGeneratedAt": "2026-02-19T23:04:38.567Z",
+      "totalActions": 10,
+      "selectedCount": 3
+    },
+    {
+      "sourceId": "design",
+      "label": "Design",
+      "queueFile": "docs/agent/design-actions.json",
+      "enabled": true,
+      "queueGeneratedAt": "2026-02-19T23:04:38.567Z",
+      "totalActions": 0,
+      "selectedCount": 0
+    }
+  ],
   "summary": {
     "created": 0,
     "existing": 0,
@@ -13,36 +32,54 @@
   },
   "items": [
     {
-      "hash": "17bb8aed9e8b26dc",
+      "hash": "bc2da6910999c9b7",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-02-19T23:04:38.567Z",
       "priority": "P1",
       "action": "Add at least 3 valid affiliate links (name + final URL + placement).",
       "why": "Without valid links, affiliate revenue path is blocked.",
+      "file": "",
+      "checkId": "",
       "title": "[Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).",
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-02-19T22:53:00.028Z",
+      "lastSeenAt": "2026-02-19T23:04:53.120Z",
       "inQueue": true
     },
     {
-      "hash": "ac27281ad50b8eb8",
+      "hash": "a8f39a3cbc2c9fd0",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-02-19T23:04:38.567Z",
       "priority": "P1",
       "action": "Cover missing affiliate placement: blog.",
       "why": "Missing placement means lost monetization intent on that traffic surface.",
+      "file": "",
+      "checkId": "",
       "title": "[Operator P1] Cover missing affiliate placement: blog.",
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-02-19T22:53:00.028Z",
+      "lastSeenAt": "2026-02-19T23:04:53.120Z",
       "inQueue": true
     },
     {
-      "hash": "52ce84de891f7cfe",
+      "hash": "cb9aea0bb5576d89",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-02-19T23:04:38.567Z",
       "priority": "P1",
       "action": "Cover missing affiliate placement: comparison.",
       "why": "Missing placement means lost monetization intent on that traffic surface.",
+      "file": "",
+      "checkId": "",
       "title": "[Operator P1] Cover missing affiliate placement: comparison.",
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-02-19T22:53:00.028Z",
+      "lastSeenAt": "2026-02-19T23:04:53.120Z",
       "inQueue": true
     }
   ]

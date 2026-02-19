@@ -34,6 +34,8 @@ jobs:
         env:
           AGENT_ISSUES_ENABLED: "1"
           AGENT_ISSUES_MAX_PER_RUN: "3"
+          AGENT_ISSUES_INCLUDE_OPERATOR: "1"
+          AGENT_ISSUES_INCLUDE_DESIGN: "0"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: npm run agent:issues
