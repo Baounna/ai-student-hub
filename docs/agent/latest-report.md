@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-20T07:32:27.112Z
+Generated: 2026-02-20T14:05:08.612Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. TopoFlow: Physics-guided Neural Networks for high-resolution air quality prediction: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. Code Mode: give agents an entire API in 1,000 tokens: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. WarpRec: Unifying Academic Rigor and Industrial Scale for Responsible, Reproducible, and Efficient Recommendation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Efficient Tail-Aware Generative Optimization via Flow Model Fine-Tuning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+3. A Privacy by Design Framework for Large Language Model-Based Applications for Children: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Escaping the Cognitive Well: Efficient Competition Math with Off-the-Shelf Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Better Think Thrice: Learning to Reason Causally with Double Counterfactual Consistency: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+4. A Contrastive Variational AutoEncoder for NSCLC Survival Prediction with Missing Modalities: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Omitted Variable Bias in Language Models Under Distribution Shift: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+5. Visual Model Checking: Graph-Based Inference of Visual Routines for Image Retrieval: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Machine Learning Argument of Latitude Error Model for LEO Satellite Orbit and Covariance Correction: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+6. Dataless Weight Disentanglement in Task Arithmetic via Kronecker-Factored Approximate Curvature: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260220--20260220-topoflow-physics-guided-neural-networks-for-high-resolution-air--b734674d.md
-- docs/agent/drafts/20260220--20260220-efficient-tail-aware-generative-optimization-via-flow-model-fine-4792cfde.md
+- docs/agent/drafts/20260220--20260220-code-mode-give-agents-an-entire-api-in-1000-tokens-87ac3d4a.md
+- docs/agent/drafts/20260220--20260220-warprec-unifying-academic-rigor-and-industrial-scale-for-respons-3208d56d.md
 
