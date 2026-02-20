@@ -74,23 +74,29 @@ export async function POST(request: Request) {
     });
     const emailForwarded = subscribeResult.ok && !subscribeResult.skipped;
     const canIssueEmailSession = isInsecureEmailAuthAllowed();
+    const deliveryStatus = emailForwarded ? "sent" : subscribeResult.ok ? "queued" : "failed";
+
+    const message = canIssueEmailSession
+      ? emailForwarded
+        ? mode === "register"
+          ? "Account request received. Check your inbox."
+          : "Login request received. Check your inbox."
+        : "Signed in successfully."
+      : emailForwarded
+        ? "Access request received. Check your inbox to continue."
+        : mode === "register"
+          ? "Account request received. We will send your access updates soon."
+          : "Login request received. We will send your access instructions soon.";
 
     const response = NextResponse.json({
       ok: true,
       mode,
       forwarded: emailForwarded,
+      deliveryStatus,
       emailDeliveryFailed: !subscribeResult.ok,
       authenticated: canIssueEmailSession,
       redirectTo: canIssueEmailSession ? `/${locale}/account?auth=success` : null,
-      message: canIssueEmailSession
-        ? emailForwarded
-          ? mode === "register"
-            ? "Account request received. Check your inbox."
-            : "Login request received. Check your inbox."
-          : "Signed in successfully."
-        : emailForwarded
-          ? "Access request received. Check your inbox to continue."
-          : "Access request saved. Email delivery is not active yet."
+      message
     });
 
     if (canIssueEmailSession) {

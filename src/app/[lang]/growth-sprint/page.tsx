@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { siteConfig } from "@/config/site";
@@ -7,6 +8,11 @@ import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords } from "@/lib/seo";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+
+function isInternalGrowthSprintEnabled() {
+  const flag = (process.env.ENABLE_INTERNAL_GROWTH_SPRINT || "").trim().toLowerCase();
+  return process.env.NODE_ENV !== "production" || flag === "1" || flag === "true" || flag === "yes";
+}
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
   if (!isLocale(params.lang)) return {};
@@ -215,6 +221,7 @@ const sprintDays: SprintDay[] = [
 ];
 
 export default function GrowthSprintPage({ params }: { params: { lang: string } }) {
+  if (!isInternalGrowthSprintEnabled()) notFound();
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;

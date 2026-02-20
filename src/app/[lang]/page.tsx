@@ -69,8 +69,8 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
     siteConfig.socialProofStats.length > 0
       ? siteConfig.socialProofStats
       : locale === "fr"
-        ? ["+1000 etudiants servis (objectif 2026)", "+30 ressources pratiques publiees", "Mises a jour hebdomadaires IA + CS"]
-        : ["1000+ students supported (2026 target)", "30+ practical resources published", "Weekly AI + CS updates"];
+        ? ["Base de connaissance orientee etudiants IA/CS", "Ressources pratiques mises a jour regulierement", "Mises a jour hebdomadaires IA + CS"]
+        : ["Student-first AI/CS knowledge base", "Practical resources updated regularly", "Weekly AI + CS updates"];
 
   const didYouKnowItems =
     locale === "fr"
@@ -369,35 +369,35 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
 
         <section className="wiki-panel overflow-hidden rounded-md">
           <div className="wiki-head wiki-head-purple px-4 py-2 text-xl md:text-2xl">
-            {locale === "fr" ? "Plan execution starter" : "Starter execution plan"}
+            {locale === "fr" ? "Plan d'etude hebdomadaire" : "Weekly learning plan"}
           </div>
           <div className="space-y-3 p-4 text-sm text-[color:var(--text)]">
             <p>
               {locale === "fr"
-                ? "Objectif realiste: progresser chaque semaine avec execution legere et constante."
-                : "Realistic target: improve every week with light but consistent execution."}
+                ? "Progression simple: une boucle claire pour apprendre, construire, et documenter chaque semaine."
+                : "Simple progression loop: learn, build, and document every week."}
             </p>
             <ul className="space-y-2">
               <li>
                 {locale === "fr"
-                  ? "1. Publie 1 article utile/semaine base sur les signaux auto."
-                  : "1. Publish 1 useful article/week based on auto signals."}
+                  ? "1. Choisis un signal IA/CS important de la semaine."
+                  : "1. Pick one important AI/CS update from this week."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "2. Mets 2 CTA naturels vers outils/comparatifs dans chaque article."
-                  : "2. Add 2 natural tool/comparison CTAs in each article."}
+                  ? "2. Construis une mini demo ou un mini exercice pratique."
+                  : "2. Build a mini demo or practical exercise from it."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "3. Capture emails puis renvoie vers ressources et guides."
-                  : "3. Capture emails, then route visitors to resources and guides."}
+                  ? "3. Documente ce que tu as appris et partage les references."
+                  : "3. Document what you learned and share references."}
               </li>
             </ul>
             <div className="rounded border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Repere: mesure chaque semaine CTR, opt-ins et clics guide, puis optimise en continu."
-                : "Reference: track CTR, opt-ins, and guide clicks weekly, then optimize continuously."}
+                ? "Repere: suis ton nombre de projets finalises, la qualite de documentation, et la constance."
+                : "Reference: track completed projects, documentation quality, and consistency."}
             </div>
             <div className="flex flex-wrap gap-2">
               <Link href={`/${locale}/resources`} className="btn-secondary">

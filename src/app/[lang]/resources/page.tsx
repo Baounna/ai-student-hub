@@ -217,34 +217,34 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
 
           <section className="surface rounded-2xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "Sprint execution 30 jours" : "30-day execution sprint"}
+              {locale === "fr" ? "Plan d'apprentissage 30 jours" : "30-day learning plan"}
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Plan minimum viable pour structurer contenu, SEO et conversion de maniere professionnelle."
-                : "Minimum viable plan to structure content, SEO, and conversion in a professional way."}
+                ? "Plan simple pour structurer ton apprentissage, tes mini-projets et ta documentation."
+                : "Simple plan to structure your learning, mini projects, and documentation."}
             </p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
                 {locale === "fr"
-                  ? "1. 4 articles/mois avec un angle comparison ou budget."
-                  : "1. Publish 4 articles/month with comparison or budget intent."}
+                  ? "1. Choisis un sujet utile par semaine et publie un recap clair."
+                  : "1. Pick one useful topic each week and publish a clear recap."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "2. 2 liens affiliés naturels + 1 CTA roadmap dans chaque article."
-                  : "2. Add 2 natural affiliate links + 1 roadmap CTA per article."}
+                  ? "2. Ajoute un exemple pratique ou une mini-demo pour chaque sujet."
+                  : "2. Add one practical example or mini demo for each topic."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "3. 1 email hebdo qui pousse vers ressources puis guide payant."
-                  : "3. Send 1 weekly email pushing resources first, then paid guide."}
+                  ? "3. Mets a jour tes notes et references pour consolider tes acquis."
+                  : "3. Update your notes and references to consolidate your progress."}
               </li>
             </ul>
             <p className="mt-3 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Repere: suis les KPI chaque semaine (CTR, opt-ins, clics produit) et optimise en continu."
-                : "Reference: track weekly KPIs (CTR, opt-ins, product clicks) and optimize continuously."}
+                ? "Repere: suis le nombre de projets finalises, la clarte de ton portfolio, et ta regularite."
+                : "Reference: track completed projects, portfolio clarity, and weekly consistency."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "resources_execution_sprint", locale }} className="btn-secondary">
@@ -301,8 +301,8 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {locale === "fr"
-                  ? "Ressources monetisees utilisees dans le blog, les comparatifs et la page ressources."
-                  : "Monetized resources used across home, blog, comparison, and resources pages."}
+                  ? "Ressources partenaires utilisees dans le blog, les comparatifs et cette page."
+                  : "Partner resources referenced across the blog, comparisons, and this page."}
               </p>
               <div className="mt-4 grid gap-2 md:grid-cols-2">
                 {siteConfig.affiliatePartners.map((partner) => (

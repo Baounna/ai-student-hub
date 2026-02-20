@@ -6,6 +6,7 @@ const cwd = process.cwd();
 const envFiles = [".env.local", ".env"];
 const PLACEHOLDER_HOSTS = new Set(["example.com", "www.example.com", "your-domain.com", "www.your-domain.com"]);
 const PLACEHOLDER_FRAGMENTS = ["placeholder", "replace-me", "your-domain", "your-link", "changeme"];
+const LOCALHOST_HOSTS = new Set(["localhost", "127.0.0.1", "::1"]);
 
 function parseEnvFile(filePath) {
   if (!fs.existsSync(filePath)) return {};
@@ -41,12 +42,23 @@ function isEmail(value) {
 }
 
 function isUrl(value) {
+  return isUrlWithOptions(value, {});
+}
+
+function isLocalHost(hostname) {
+  const host = (hostname || "").trim().toLowerCase();
+  return LOCALHOST_HOSTS.has(host) || host.endsWith(".local");
+}
+
+function isUrlWithOptions(value, options = {}) {
   const raw = (value || "").trim();
   if (!raw) return false;
   if (PLACEHOLDER_FRAGMENTS.some((fragment) => raw.toLowerCase().includes(fragment))) return false;
   try {
     const parsed = new URL(raw);
     if (parsed.protocol !== "http:" && parsed.protocol !== "https:") return false;
+    if (options.requireHttps && parsed.protocol !== "https:") return false;
+    if (options.disallowLocalhost && isLocalHost(parsed.hostname)) return false;
     if (PLACEHOLDER_HOSTS.has(parsed.hostname.toLowerCase())) return false;
     return true;
   } catch {
@@ -56,6 +68,14 @@ function isUrl(value) {
 
 function boolish(value) {
   return ["1", "true", "yes"].includes((value || "").trim().toLowerCase());
+}
+
+function parseBoolean(value) {
+  const normalized = (value || "").trim().toLowerCase();
+  if (!normalized) return null;
+  if (["1", "true", "yes", "on", "enable", "enabled"].includes(normalized)) return true;
+  if (["0", "false", "no", "off", "disable", "disabled"].includes(normalized)) return false;
+  return null;
 }
 
 function printCheck(type, message) {
@@ -84,11 +104,25 @@ function error(message) {
 console.log("AI Student Hub production preflight");
 console.log("-----------------------------------");
 
-const siteUrl = (env.NEXT_PUBLIC_SITE_URL || env.SITE_URL || "").trim();
-if (!isUrl(siteUrl)) {
-  error("Set NEXT_PUBLIC_SITE_URL or SITE_URL to a valid production URL.");
+const nextPublicSiteUrl = (env.NEXT_PUBLIC_SITE_URL || "").trim();
+const serverSiteUrl = (env.SITE_URL || "").trim();
+const siteUrl = (nextPublicSiteUrl || serverSiteUrl || "").trim();
+if (!isUrlWithOptions(siteUrl, { requireHttps: true, disallowLocalhost: true })) {
+  error("Set NEXT_PUBLIC_SITE_URL or SITE_URL to a valid HTTPS production URL (non-localhost).");
 } else {
   ok(`Site URL set: ${siteUrl}`);
+}
+
+if (nextPublicSiteUrl && serverSiteUrl) {
+  try {
+    const nextOrigin = new URL(nextPublicSiteUrl).origin;
+    const serverOrigin = new URL(serverSiteUrl).origin;
+    if (nextOrigin !== serverOrigin) {
+      warn("NEXT_PUBLIC_SITE_URL and SITE_URL do not match. Keep them aligned.");
+    }
+  } catch {
+    // no-op; invalid URL cases are already handled above.
+  }
 }
 
 if ((env.GOOGLE_SITE_VERIFICATION || "").trim()) {
@@ -144,7 +178,19 @@ if (!isUrl(checkout)) {
   ok("Product checkout URL set.");
 }
 
-const oauthMode = ((env.OAUTH_MODE || "disable").trim().toLowerCase() || "disable");
+const enableOAuth = parseBoolean(env.ENABLE_OAUTH);
+if ((env.ENABLE_OAUTH || "").trim() && enableOAuth === null) {
+  warn("ENABLE_OAUTH is set but invalid. Use true/false.");
+}
+
+const oauthModeByLegacyEnv = ((env.OAUTH_MODE || "disable").trim().toLowerCase() || "disable");
+if (enableOAuth !== null && (env.OAUTH_MODE || "").trim()) {
+  const toggleMode = enableOAuth ? "enable" : "disable";
+  if (toggleMode !== oauthModeByLegacyEnv) {
+    warn("ENABLE_OAUTH overrides OAUTH_MODE. Keep only one to avoid confusion.");
+  }
+}
+const oauthMode = enableOAuth === null ? oauthModeByLegacyEnv : enableOAuth ? "enable" : "disable";
 const emailAuthMode = ((env.EMAIL_AUTH_MODE || "oauth_only").trim().toLowerCase() || "oauth_only");
 if (oauthMode === "enable") {
   const providers = [
@@ -154,7 +200,7 @@ if (oauthMode === "enable") {
   ];
   const configuredCount = providers.filter(([idKey, secretKey]) => (env[idKey] || "").trim() && (env[secretKey] || "").trim()).length;
   if (!configuredCount) {
-    error("OAUTH_MODE=enable but no provider keys are fully configured.");
+    error("OAuth enabled but no provider keys are fully configured.");
   } else {
     ok(`OAuth enabled with ${configuredCount} configured provider(s).`);
   }

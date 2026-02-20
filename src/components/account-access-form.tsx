@@ -18,6 +18,7 @@ export function AccountAccessForm({ locale, mode }: AccountAccessFormProps) {
   const [name, setName] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [emailForwarded, setEmailForwarded] = useState<boolean | null>(null);
+  const [deliveryStatus, setDeliveryStatus] = useState<"sent" | "queued" | "failed" | null>(null);
   const [signedIn, setSignedIn] = useState(false);
 
   const isRegister = mode === "register";
@@ -55,10 +56,16 @@ export function AccountAccessForm({ locale, mode }: AccountAccessFormProps) {
       });
 
       if (!response.ok) throw new Error("failed");
-      const data = (await response.json()) as { forwarded?: boolean; authenticated?: boolean; redirectTo?: string };
+      const data = (await response.json()) as {
+        forwarded?: boolean;
+        authenticated?: boolean;
+        redirectTo?: string;
+        deliveryStatus?: "sent" | "queued" | "failed";
+      };
 
       setStatus("success");
       setEmailForwarded(Boolean(data.forwarded));
+      setDeliveryStatus(data.deliveryStatus || (data.forwarded ? "sent" : "queued"));
       setSignedIn(Boolean(data.authenticated));
       if (isRegister) setName("");
       setEmail("");
@@ -73,6 +80,7 @@ export function AccountAccessForm({ locale, mode }: AccountAccessFormProps) {
     } catch {
       setStatus("error");
       setEmailForwarded(null);
+      setDeliveryStatus(null);
       setSignedIn(false);
       trackEvent("account_access_submit_error", { locale, mode });
     }
@@ -99,12 +107,6 @@ export function AccountAccessForm({ locale, mode }: AccountAccessFormProps) {
             ? "Entre ton email pour recevoir un acces ou des instructions de connexion."
             : "Enter your email to receive access or sign-in instructions."}
       </p>
-
-      <div className="mt-3 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-2 text-xs text-[color:var(--muted)]">
-        {locale === "fr"
-          ? "La livraison email depend de la configuration production."
-          : "Email delivery depends on production configuration."}
-      </div>
 
       <div className="mt-4 grid gap-3">
         {isRegister && (
@@ -158,8 +160,12 @@ export function AccountAccessForm({ locale, mode }: AccountAccessFormProps) {
                 ? "Connexion reussie. Redirection vers ton compte..."
                 : "Signed in successfully. Redirecting to your account..."
               : locale === "fr"
-                ? "Demande enregistree."
-                : "Request received."}
+                ? deliveryStatus === "failed"
+                  ? "Demande enregistree. Reessaie plus tard pour recevoir l'email de confirmation."
+                  : "Demande enregistree. Nous t'envoyons la suite par email."
+                : deliveryStatus === "failed"
+                  ? "Request saved. Retry later to receive the confirmation email."
+                  : "Request received. We will send the next steps by email."}
           </p>
           {signedIn && emailForwarded ? (
             <p className="mt-1 opacity-90">

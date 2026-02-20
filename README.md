@@ -206,7 +206,7 @@ Environment is grouped by:
 - Brand + site URLs
 - Search engine verification tokens (Google/Bing/Yandex/Baidu)
 - Donation links (non-Stripe supported first)
-- OAuth mode and provider keys
+- OAuth toggle/mode and provider keys (`ENABLE_OAUTH` or `OAUTH_MODE`)
 - Email provider mode (`convertkit` or `none`)
 - Affiliate links (`AFFILIATE_1..5`)
 - Social proof/testimonials
@@ -215,21 +215,25 @@ Environment is grouped by:
 - Legal text overrides
 - Optional local tracking debug (`TRACKING_DEBUG`, `NEXT_PUBLIC_TRACKING_DEBUG`)
 - Optional internal operator assumptions (`AGENT_*`)
+- Optional internal page flags (`ENABLE_INTERNAL_GROWTH_SPRINT`)
 
 ## 10-Minute Production Setup
 
 1. Create `.env.local` and set at minimum:
    - `NEXT_PUBLIC_SITE_URL=https://your-domain.com`
+   - `SITE_URL=https://your-domain.com`
    - `AUTH_SESSION_SECRET` (long random string)
    - `NEXT_PUBLIC_CONTACT_EMAIL`
    - `NEXT_PUBLIC_LEGAL_NAME`
    - `GOOGLE_SITE_VERIFICATION` (recommended)
+   - do not use localhost values for production URLs
 2. Set product checkout:
    - `NEXT_PUBLIC_PRODUCT_CHECKOUT_URL`.
 3. Choose OAuth mode:
-   - `OAUTH_MODE=disable` (email-only auth UI)
-   - or `OAUTH_MODE=enable` + provider keys.
-4. If `OAUTH_MODE=enable`, configure provider callbacks:
+   - `ENABLE_OAUTH=false` (email-only auth UI)
+   - or `ENABLE_OAUTH=true` + provider keys.
+   - legacy fallback is still supported: `OAUTH_MODE=enable|disable`
+4. If OAuth is enabled, configure provider callbacks:
    - Google callback: `https://your-domain.com/api/auth/oauth/google/callback`
    - GitHub callback: `https://your-domain.com/api/auth/oauth/github/callback`
    - LinkedIn callback: `https://your-domain.com/api/auth/oauth/linkedin/callback`
@@ -242,25 +246,27 @@ Environment is grouped by:
 7. Add donation and affiliate links:
    - `NEXT_PUBLIC_DONATION_PRIMARY_URL`/`PAYPAL`/`KOFI`/`GITHUB_SPONSORS`
    - `AFFILIATE_1..5` URLs and placements
-8. Verify affiliate coverage:
+8. Keep internal growth page private in production:
+   - `ENABLE_INTERNAL_GROWTH_SPRINT=false` (default recommended)
+9. Verify affiliate coverage:
 
 ```bash
 npm run verify:affiliates
 ```
 
-9. Run production preflight:
+10. Run production preflight:
 
 ```bash
 npm run verify:production
 ```
 
-10. Run:
+11. Run:
 
 ```bash
 npm run lint && npm run build
 ```
 
-11. Deploy to Vercel, then re-test:
+12. Deploy to Vercel, then re-test:
    - `/en`, `/fr`
    - `/en/login`, `/en/register`, `/en/account`
    - `/en/donate`
@@ -346,8 +352,9 @@ Automatic tagging:
 ## Auth Behavior
 
 - OAuth mode:
-  - `OAUTH_MODE=enable` to use Google/GitHub/LinkedIn (recommended for production identity trust).
-  - `OAUTH_MODE=disable` for email/local flow only.
+  - `ENABLE_OAUTH=true` to use Google/GitHub/LinkedIn (recommended for production identity trust).
+  - `ENABLE_OAUTH=false` for email/local flow only.
+  - legacy fallback: `OAUTH_MODE=enable|disable`.
 - Email auth mode:
   - `EMAIL_AUTH_MODE=oauth_only` (default/recommended): email forms capture requests, but do not create an authenticated session.
   - `EMAIL_AUTH_MODE=insecure_demo`: email forms can create a local signed session immediately (use only for local demos).
@@ -530,29 +537,40 @@ npm run verify:affiliates
 npm run verify:production
 ```
 
-Both should pass before release.
+All checks should pass before release.
 
 ## Deployment Checklist
 
-1. Set all production env vars
-2. Validate routes:
+1. Deploy on Vercel and connect your custom domain.
+2. Set production environment variables in Vercel:
+   - `NEXT_PUBLIC_SITE_URL=https://your-domain.com`
+   - `SITE_URL=https://your-domain.com`
+   - `AUTH_SESSION_SECRET` (32+ chars)
+   - `ENABLE_OAUTH=true|false` (or legacy `OAUTH_MODE`)
+   - `EMAIL_PROVIDER=convertkit` + `CONVERTKIT_FORM_ID` + `CONVERTKIT_API_KEY`
+   - `ANALYTICS_MODE=ga4` + `GA4_MEASUREMENT_ID`
+   - `GOOGLE_SITE_VERIFICATION`
+   - `ENABLE_INTERNAL_GROWTH_SPRINT=false` (keep private/internal page hidden)
+3. Run `npm run verify:production` before release branch merge.
+4. Validate routes:
    - `/en`, `/fr`
    - `/en/news`, `/en/blog`, `/en/resources`, `/en/compare`
    - `/sitemap.xml`, `/robots.txt`, `/feed.xml`, `/health`
-3. Test auth flows:
+5. Test auth flows:
    - email login/register
    - social login (only if OAuth enabled)
-4. Test newsletter/account capture API behavior with selected email provider mode
-5. Verify affiliate links and product checkout URL
-6. Verify legal pages and footer legal/contact values
-7. Validate EN/FR switching and dark/light toggle
-8. Click-test key events:
+6. Test newsletter/account capture API behavior with ConvertKit active.
+7. Verify affiliate links and product checkout URL.
+8. Verify legal pages and footer legal/contact values.
+9. Validate EN/FR switching and dark/light toggle.
+10. Verify GA4 receives events:
    - lead magnet CTA
    - newsletter submit
    - affiliate click
    - product checkout click
    - login/register attempts
-9. Validate auth session UX:
+11. Verify Search Console ownership and submit `https://your-domain.com/sitemap.xml`.
+12. Validate auth session UX:
    - register -> redirect to `/account?auth=success`
    - login -> redirect to `/account?auth=success`
    - navbar account state updates correctly on navigation

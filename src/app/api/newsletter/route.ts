@@ -50,10 +50,13 @@ export async function POST(request: Request) {
       source
     });
     const emailForwarded = subscribeResult.ok && !subscribeResult.skipped;
+    const deliveryStatus = emailForwarded ? "sent" : subscribeResult.ok ? "queued" : "failed";
     return NextResponse.json({
       ok: true,
       forwarded: emailForwarded,
-      emailDeliveryFailed: !subscribeResult.ok
+      deliveryStatus,
+      emailDeliveryFailed: !subscribeResult.ok,
+      message: emailForwarded ? "Subscription confirmed. Check your inbox." : "Subscription received."
     });
   } catch {
     return NextResponse.json({ ok: false, error: "Unexpected error" }, { status: 500 });

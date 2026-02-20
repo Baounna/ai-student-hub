@@ -24,7 +24,7 @@ function formatPublishedDate(date: string, locale: Locale) {
 
 function getTopicBrief(topic: string, locale: Locale) {
   const fr = locale === "fr";
-  const map: Record<string, { why: string; actions: string[]; monetization: string }> = {
+  const map: Record<string, { why: string; actions: string[]; nextStep: string }> = {
     "AI Performance": {
       why: fr
         ? "Les benchmarks influencent directement le choix de modele pour les projets etudiants."
@@ -40,9 +40,9 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Add a cost-vs-quality table in your README.",
             "Update your stack when a better performance/price option appears."
           ],
-      monetization: fr
-        ? "Angle revenu: article comparatif + CTA resource tool stack."
-        : "Revenue angle: comparison article + resource stack CTA."
+      nextStep: fr
+        ? "Prochaine etape: ecris une comparaison claire avec un tableau cout/qualite."
+        : "Next step: write a clear comparison with a cost/quality table."
     },
     "AI Systems": {
       why: fr
@@ -59,9 +59,9 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Add a clear architecture section in your article.",
             "Measure latency, cost, and quality for credibility."
           ],
-      monetization: fr
-        ? "Angle revenu: tutoriel practical + liens outillage deployment."
-        : "Revenue angle: practical tutorial + deployment tool links."
+      nextStep: fr
+        ? "Prochaine etape: publie un mini tutoriel avec architecture + mesure de latence."
+        : "Next step: publish a mini tutorial with architecture and latency checks."
     },
     "Computer Systems": {
       why: fr
@@ -78,9 +78,9 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Highlight tradeoffs in a simple comparison table.",
             "Link to your compare page to capture high intent."
           ],
-      monetization: fr
-        ? "Angle revenu: contenu 'best tool for students' + affiliate links."
-        : "Revenue angle: 'best tool for students' content + affiliate links."
+      nextStep: fr
+        ? "Prochaine etape: cree un guide 'quelle option choisir selon ton budget'."
+        : "Next step: create a 'which option fits your budget' guide."
     },
     "Computer Science": {
       why: fr
@@ -97,9 +97,9 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Connect the topic to a concrete deployed example.",
             "Publish a short LinkedIn recap linking back to your article."
           ],
-      monetization: fr
-        ? "Angle revenu: article pedagogique + CTA roadmap en fin."
-        : "Revenue angle: educational article + end-of-article roadmap CTA."
+      nextStep: fr
+        ? "Prochaine etape: transforme ce sujet en article pedagogique base sur un exemple concret."
+        : "Next step: turn this into a teaching article backed by one concrete example."
     }
   };
 
@@ -119,9 +119,9 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Show one immediate practical application.",
             "Add 2 internal links to resources/compare."
           ],
-      monetization: fr
-        ? "Angle revenu: relier ce brief a resources + guide etudiant."
-        : "Revenue angle: route this brief to resources + student guide."
+      nextStep: fr
+        ? "Prochaine etape: relie ce brief a une ressource et a un guide pratique."
+        : "Next step: connect this brief to one resource and one practical guide."
     }
   );
 }
@@ -281,7 +281,7 @@ export default function AutoNewsDetailPage({ params }: { params: { lang: string;
               ))}
             </ul>
             <p className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 text-xs text-[color:var(--muted)]">
-              {topicBrief.monetization}
+              {topicBrief.nextStep}
             </p>
           </section>
 

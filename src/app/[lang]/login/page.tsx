@@ -122,7 +122,7 @@ export default function LocalizedLoginPage({
             </p>
             <ul className="mt-2 space-y-1 text-sm text-[color:var(--text)]">
               <li>- {fr ? "Si blocage: vide cache navigateur puis reessaie." : "If blocked: clear browser cache then retry."}</li>
-              <li>- {fr ? "Pour OAuth, verifie que le provider est configure." : "For OAuth, verify provider config."}</li>
+              <li>- {fr ? "Pour social login, teste un autre provider ou l'email." : "For social login, try another provider or email."}</li>
               <li>- {fr ? "Utilise la meme adresse que ton compte." : "Use the same email as your account."}</li>
             </ul>
           </section>

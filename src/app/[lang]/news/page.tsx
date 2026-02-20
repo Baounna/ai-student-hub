@@ -97,7 +97,7 @@ export default function LocalizedNewsPage({
                 {allBriefs.length} {locale === "fr" ? "briefs disponibles" : "briefs available"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {autoNews.length} {locale === "fr" ? "updates auto web" : "auto web updates"}
+                {autoNews.length} {locale === "fr" ? "updates sources web" : "web source updates"}
               </span>
             </div>
           </div>
@@ -258,7 +258,7 @@ export default function LocalizedNewsPage({
           <section className="surface rounded-2xl p-6">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-                {locale === "fr" ? "Agent automatique: nouveautes web AI/CS" : "Automatic agent: latest AI/CS from the web"}
+                {locale === "fr" ? "Nouveautes AI/CS depuis le web" : "Latest AI/CS from the web"}
               </h2>
               <Link href={`/${locale}/news/live`} className="btn-secondary">
                 {locale === "fr" ? "Flux live complet" : "Open full live stream"}
@@ -266,8 +266,8 @@ export default function LocalizedNewsPage({
             </div>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Ces updates sont publies automatiquement depuis des sources officielles, sans intervention manuelle."
-                : "These updates are published automatically from official sources, with no manual intervention."}
+                ? "Ces updates viennent de sources officielles et sont regroupes en briefs lisibles."
+                : "These updates come from official sources and are grouped into readable briefs."}
             </p>
             {autoUpdatedAt ? (
               <p className="mt-1 text-xs text-[color:var(--muted)]">
@@ -308,8 +308,8 @@ export default function LocalizedNewsPage({
               <article className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
                 <p className="text-sm text-[color:var(--text)]">
                   {locale === "fr"
-                    ? "Aucun item auto pour le moment. L'agent publiera des updates des qu'une source sort du contenu."
-                    : "No auto items yet. The agent will publish updates as soon as sources release new content."}
+                    ? "Aucun nouvel item pour le moment. Reviens plus tard pour les prochaines mises a jour."
+                    : "No new items yet. Check back soon for fresh updates."}
                 </p>
               </article>
             )}

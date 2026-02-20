@@ -41,8 +41,8 @@ export default function LocalizedAboutPage({ params }: { params: { lang: string 
     siteConfig.socialProofStats.length > 0
       ? siteConfig.socialProofStats
       : locale === "fr"
-        ? ["+1000 etudiants soutenus (objectif 2026)", "Mises a jour hebdomadaires IA + CS", "Ressources pratiques orientees resultats"]
-        : ["1000+ students supported (2026 target)", "Weekly AI + CS updates", "Practical resources built for outcomes"];
+        ? ["Base de connaissance IA/CS orientee etudiants", "Mises a jour hebdomadaires IA + CS", "Ressources pratiques orientees resultats"]
+        : ["Student-first AI/CS knowledge base", "Weekly AI + CS updates", "Practical resources built for outcomes"];
   const principles = [
     locale === "fr" ? "Construire des projets utiles, pas seulement des notebooks." : "Ship useful projects, not only notebooks.",
     locale === "fr" ? "Mesurer les resultats: demos, candidatures, entretiens." : "Measure outcomes: demos, applications, interviews.",
@@ -67,8 +67,8 @@ export default function LocalizedAboutPage({ params }: { params: { lang: string 
       phase: "90 days",
       body:
         locale === "fr"
-          ? "Transformer execution en stages, freelancing ou premiere monetisation."
-          : "Convert execution into internships, freelance opportunities, or first monetization."
+          ? "Transformer execution en stages, projets collaboratifs, et opportunites concretes."
+          : "Convert execution into internships, collaborative projects, and concrete opportunities."
     }
   ];
 
@@ -144,8 +144,8 @@ export default function LocalizedAboutPage({ params }: { params: { lang: string 
         </h2>
         <p className="mt-2 text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? "Plan simple pour convertir apprentissage IA/CS en projets deployes, signal recruteur et premiers revenus."
-            : "Simple plan to convert AI/CS learning into deployed projects, recruiter signal, and early revenue."}
+            ? "Plan simple pour convertir apprentissage IA/CS en projets deployes et signal recruteur."
+            : "Simple plan to convert AI/CS learning into deployed projects and recruiter signal."}
         </p>
         <div className="mt-4 grid gap-3 md:grid-cols-3">
           {roadmap.map((step) => (

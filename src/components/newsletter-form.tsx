@@ -21,7 +21,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [emailForwarded, setEmailForwarded] = useState<boolean | null>(null);
+  const [deliveryStatus, setDeliveryStatus] = useState<"sent" | "queued" | "failed" | null>(null);
   const sourceTag = normalizeSource(source, compact);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -45,10 +45,13 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       });
 
       if (!response.ok) throw new Error("failed");
-      const data = (await response.json()) as { forwarded?: boolean };
+      const data = (await response.json()) as {
+        forwarded?: boolean;
+        deliveryStatus?: "sent" | "queued" | "failed";
+      };
 
       setStatus("success");
-      setEmailForwarded(Boolean(data.forwarded));
+      setDeliveryStatus(data.deliveryStatus || (data.forwarded ? "sent" : "queued"));
       setEmail("");
       setName("");
       trackEvent("newsletter_submit_success", {
@@ -57,7 +60,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       });
     } catch {
       setStatus("error");
-      setEmailForwarded(null);
+      setDeliveryStatus(null);
       trackEvent("newsletter_submit_error", {
         locale,
         source: sourceTag
@@ -116,13 +119,17 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       </button>
       {status === "success" && (
         <p className={`status-success ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
-          {emailForwarded
+          {deliveryStatus === "sent"
             ? locale === "fr"
               ? "Parfait. Verifie ta boite mail."
               : "Great. Check your inbox."
+            : deliveryStatus === "failed"
+              ? locale === "fr"
+                ? "Inscription enregistree. Reessaie plus tard pour recevoir l'email de confirmation."
+                : "Signup saved. Retry later to receive the confirmation email."
             : locale === "fr"
-              ? "Inscription enregistree. Livraison email non active pour le moment."
-              : "Signup saved. Email delivery is not active yet."}
+              ? "Inscription enregistree. Tu recevras les prochaines mises a jour."
+              : "Signup saved. You will receive upcoming updates."}
         </p>
       )}
       {status === "error" && (
