@@ -505,6 +505,26 @@ Master workflow profiles:
 - `weekly` (cron `20 7 * * 1`): design + issue sync + verify
 - `full` (manual dispatch): full pipeline
 
+### Autonomous BlogOps autopilot (A→Z)
+- Script: `scripts/autopilot-agent.mjs`
+- Local command: `npm run agent:autopilot`
+- Workflow: `.github/workflows/autopilot-agent.yml`
+- Schedule: daily (`45 6 * * *`)
+- Report output: `docs/agent/autopilot-report.md`
+- Execution flow:
+  1. sync latest branch state
+  2. run unified agents (`agent:all`)
+  3. run quality gates (`lint`, `build`, `verify:production`, `verify:affiliates`, `verify:public-content`)
+  4. retry once when checks fail
+  5. commit + push changes automatically when checks pass
+- Optional env knobs:
+  - `AUTOPILOT_PULL` (default `true`)
+  - `AUTOPILOT_COMMIT` (default `true` in CI, `false` locally)
+  - `AUTOPILOT_PUSH` (default `false`; workflow sets `true`)
+  - `AUTOPILOT_MAX_RETRIES` (default `2`)
+  - `AUTOPILOT_BRANCH` (default detected branch)
+  - `AUTOPILOT_COMMIT_MESSAGE`
+
 ### Agent health verify
 - Script: `scripts/verify-agent-health.mjs`
 - Local command: `npm run verify:agents`
@@ -535,6 +555,7 @@ npm run build
 npm run verify:agents
 npm run verify:affiliates
 npm run verify:production
+npm run verify:public-content
 ```
 
 All checks should pass before release.

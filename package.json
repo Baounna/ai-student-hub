@@ -12,9 +12,11 @@
     "agent:issues": "node scripts/sync-operator-issues.mjs",
     "agent:design": "node scripts/blog-design-agent.mjs",
     "agent:all": "node scripts/agent-pipeline.mjs",
+    "agent:autopilot": "node scripts/autopilot-agent.mjs",
     "verify:agents": "node scripts/verify-agent-health.mjs",
     "verify:affiliates": "node scripts/verify-affiliates.mjs",
-    "verify:production": "node scripts/verify-production.mjs"
+    "verify:production": "node scripts/verify-production.mjs",
+    "verify:public-content": "node scripts/verify-public-content.mjs"
   },
   "dependencies": {
     "next": "14.2.32",

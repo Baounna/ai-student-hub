@@ -1,0 +1,43 @@
+name: AI Student Hub Autopilot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "45 6 * * *"
+
+concurrency:
+  group: ai-student-hub-autopilot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  autopilot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run autonomous BlogOps pipeline
+        env:
+          AUTOPILOT_PULL: "true"
+          AUTOPILOT_COMMIT: "true"
+          AUTOPILOT_PUSH: "true"
+          AUTOPILOT_MAX_RETRIES: "2"
+          AUTOPILOT_BRANCH: ${{ github.ref_name }}
+          AUTOPILOT_COMMIT_MESSAGE: "chore(autopilot): continuous blog optimization"
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+        run: npm run agent:autopilot
