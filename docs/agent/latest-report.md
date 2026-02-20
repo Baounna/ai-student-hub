@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-19T23:18:46.028Z
+Generated: 2026-02-20T07:32:27.112Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Train AI models with Unsloth and Hugging Face Jobs for FREE: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. How AI is reshaping developer choice (and Octoverse data proves it): What It Means for AI/CS Students
-   - Source: GitHub Blog
-   - Keyword: ai cs update for students github blog
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. 「データ不足」の壁を越える：合成ペルソナが日本のAI開発を加速: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: ai cs update for students hugging face blog
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Advancing independent research on AI alignment: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Investigating GNN Convergence on Large Randomly Generated Graphs with Realistic Node Feature Correlations: What It Means for AI/CS Students
+1. TopoFlow: Physics-guided Neural Networks for high-resolution air quality prediction: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. On the Power of Source Screening for Learning Shared Feature Extractors: What It Means for AI/CS Students
+2. Efficient Tail-Aware Generative Optimization via Flow Model Fine-Tuning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Escaping the Cognitive Well: Efficient Competition Math with Off-the-Shelf Models: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Better Think Thrice: Learning to Reason Causally with Double Counterfactual Consistency: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+5. Omitted Variable Bias in Language Models Under Distribution Shift: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Machine Learning Argument of Latitude Error Model for LEO Satellite Orbit and Covariance Correction: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -95,6 +95,7 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 0
-- No new drafts generated (existing coverage or no opportunities).
+- New drafts generated: 2
+- docs/agent/drafts/20260220--20260220-topoflow-physics-guided-neural-networks-for-high-resolution-air--b734674d.md
+- docs/agent/drafts/20260220--20260220-efficient-tail-aware-generative-optimization-via-flow-model-fine-4792cfde.md
 
