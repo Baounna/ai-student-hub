@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-02-21T18:54:44.599Z",
+  "updatedAt": "2026-02-21T19:37:12.872Z",
   "items": [
+    {
+      "slug": "20260221-cloudflare-outage-on-february-20-2026-ddc53062",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/cloudflare-outage-february-20-2026/",
+      "publishedAt": "2026-02-21T00:00:00.000Z",
+      "discoveredAt": "2026-02-21T19:37:12.872Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare outage on February 20, 2026",
+          "summary": "Cloudflare suffered a service outage on February 20, 2026. A subset of customers who use Cloudflare’s Bring Your Own IP (BYOIP) service saw their routes to the Internet withdrawn via Border Gateway Protocol (BGP)."
+        },
+        "fr": {
+          "title": "Cloudflare outage on February 20, 2026",
+          "summary": "Cloudflare suffered a service outage on February 20, 2026. A subset of customers who use Cloudflare’s Bring Your Own IP (BYOIP) service saw their routes to the Internet withdrawn via Border Gateway Protocol (BGP)."
+        }
+      }
+    },
     {
       "slug": "20260220-our-first-proof-submissions-19824856",
       "topic": "AI Systems",
@@ -4540,25 +4559,6 @@
         "fr": {
           "title": "All Leaks Count, Some Count More: Interpretable Temporal Contamination Detection in LLM Backtesting",
           "summary": "arXiv:2602.17234v1 Announce Type: new Abstract: To evaluate whether LLMs can accurately predict future events, we need the ability to \\textit{backtest} them on events that have already resolved. This requires models to reason onl…"
-        }
-      }
-    },
-    {
-      "slug": "20260220-web-verbs-typed-abstractions-for-reliable-task-composition-on-th-f27106ad",
-      "topic": "AI Systems",
-      "source": "arXiv cs.AI",
-      "sourceFeed": "https://arxiv.org/rss/cs.AI",
-      "href": "https://arxiv.org/abs/2602.17245",
-      "publishedAt": "2026-02-20T05:00:00.000Z",
-      "discoveredAt": "2026-02-21T02:48:45.711Z",
-      "locales": {
-        "en": {
-          "title": "Web Verbs: Typed Abstractions for Reliable Task Composition on the Agentic Web",
-          "summary": "arXiv:2602.17245v1 Announce Type: new Abstract: The Web is evolving from a medium that humans browse to an environment where software agents act on behalf of users. Advances in large language models (LLMs) make natural language a…"
-        },
-        "fr": {
-          "title": "Web Verbs: Typed Abstractions for Reliable Task Composition on the Agentic Web",
-          "summary": "arXiv:2602.17245v1 Announce Type: new Abstract: The Web is evolving from a medium that humans browse to an environment where software agents act on behalf of users. Advances in large language models (LLMs) make natural language a…"
         }
       }
     }
