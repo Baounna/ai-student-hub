@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-21T07:20:53.788Z
+Generated: 2026-02-22T07:24:17.081Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,19 +40,19 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Our First Proof submissions: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Code Mode: give agents an entire API in 1,000 tokens: What It Means for AI/CS Students
+1. Cloudflare outage on February 20, 2026: What It Means for AI/CS Students
    - Source: Cloudflare Blog
    - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Web Verbs: Typed Abstractions for Reliable Task Composition on the Agentic Web: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+2. Our First Proof submissions: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Code Mode: give agents an entire API in 1,000 tokens: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 4. All Leaks Count, Some Count More: Interpretable Temporal Contamination Detection in LLM Backtesting: What It Means for AI/CS Students
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260221--20260220-all-leaks-count-some-count-more-interpretable-temporal-contamina-e88ccb38.md
-- docs/agent/drafts/20260221--20260220-mechanistic-interpretability-of-cognitive-complexity-in-llms-via-6608d480.md
+- docs/agent/drafts/20260222--20260221-cloudflare-outage-on-february-20-2026-ddc53062.md
+- docs/agent/drafts/20260222--20260220-decoding-the-human-factor-high-fidelity-behavioral-prediction-fo-7da59ce3.md
 
