@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-22T07:24:17.081Z
+Generated: 2026-02-22T07:26:00.701Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -95,7 +95,6 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 2
-- docs/agent/drafts/20260222--20260221-cloudflare-outage-on-february-20-2026-ddc53062.md
-- docs/agent/drafts/20260222--20260220-decoding-the-human-factor-high-fidelity-behavioral-prediction-fo-7da59ce3.md
+- New drafts generated: 0
+- No new drafts generated (existing coverage or no opportunities).
 
