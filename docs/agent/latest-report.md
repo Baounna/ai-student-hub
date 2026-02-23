@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-22T07:26:00.701Z
+Generated: 2026-02-23T07:40:12.224Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Cloudflare outage on February 20, 2026: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
+1. Improving Sampling for Masked Diffusion Models via Information Gain: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Our First Proof submissions: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
+2. The Statistical Signature of LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Code Mode: give agents an entire API in 1,000 tokens: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
+3. Detecting Contextual Hallucinations in LLMs with Frequency-Aware Attention: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. All Leaks Count, Some Count More: Interpretable Temporal Contamination Detection in LLM Backtesting: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+4. Decomposing Retrieval Failures in RAG for Long-Document Financial Question Answering: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Mechanistic Interpretability of Cognitive Complexity in LLMs via Linear Probing using Bloom's Taxonomy: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+5. Analyzing LLM Instruction Optimization for Tabular Fact Verification: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Decoding the Human Factor: High Fidelity Behavioral Prediction for Strategic Foresight: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+6. On the scaling relationship between cloze probabilities and language model next-token prediction: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -95,6 +95,7 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 0
-- No new drafts generated (existing coverage or no opportunities).
+- New drafts generated: 2
+- docs/agent/drafts/20260223--20260223-improving-sampling-for-masked-diffusion-models-via-information-g-66a95df2.md
+- docs/agent/drafts/20260223--20260223-the-statistical-signature-of-llms-33b25fcc.md
 
