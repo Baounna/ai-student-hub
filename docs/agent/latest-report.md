@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-24T07:35:19.781Z
+Generated: 2026-02-24T07:39:07.416Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. On the Limits of Self-Improving in Large Language Models: The Singularity Is Not Near Without Symbolic Model Synthesis: What It Means for AI/CS Students
+1. Agentic AI as a Cybersecurity Attack Surface: Threats, Exploits, and Defenses in Runtime Supply Chains: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. STaRR: Spatial-Temporal Token-Dynamics-Aware Responsive Remasking for Diffusion Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Fast-weight Product Key Memory: What It Means for AI/CS Students
+2. A Green Learning Approach to LDCT Image Restoration: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. RAIR: A Rule-Aware Benchmark Uniting Challenging Long-Tail and Visual Salience Subset for E-commerce Relevance Assessment: What It Means for AI/CS Students
+3. Cost-Aware Diffusion Active Search: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-5. Nightjar: Dynamic Adaptive Speculative Decoding for Large Language Models Serving: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Fore-Mamba3D: Mamba-based Foreground-Enhanced Encoding for 3D Object Detection: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Large Language Model-Assisted UAV Operations and Communications: A Multifaceted Survey and Tutorial: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. CricBench: A Multilingual Benchmark for Evaluating LLMs in Cricket Analytics: What It Means for AI/CS Students
+6. Grokking Finite-Dimensional Algebra: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260224--20260224-on-the-limits-of-self-improving-in-large-language-models-the-sin-11128c5b.md
-- docs/agent/drafts/20260224--20260224-starr-spatial-temporal-token-dynamics-aware-responsive-remasking-501373e7.md
+- docs/agent/drafts/20260224--20260224-agentic-ai-as-a-cybersecurity-attack-surface-threats-exploits-an-3fa058ee.md
+- docs/agent/drafts/20260224--20260224-a-green-learning-approach-to-ldct-image-restoration-0589ab2a.md
 
