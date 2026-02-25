@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-24T07:39:07.416Z
+Generated: 2026-02-25T07:36:03.506Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Agentic AI as a Cybersecurity Attack Surface: Threats, Exploits, and Defenses in Runtime Supply Chains: What It Means for AI/CS Students
+1. Anatomy of Capability Emergence: Scale-Invariant Representation Collapse and Top-Down Reorganization in Neural Networks: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. ST-EVO: Towards Generative Spatio-Temporal Evolution of Multi-Agent Communication Topologies: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. A Green Learning Approach to LDCT Image Restoration: What It Means for AI/CS Students
+3. Silent Inconsistency in Data-Parallel Full Fine-Tuning: Diagnosing Worker-Level Optimization Misalignment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Cost-Aware Diffusion Active Search: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Fore-Mamba3D: Mamba-based Foreground-Enhanced Encoding for 3D Object Detection: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Large Language Model-Assisted UAV Operations and Communications: A Multifaceted Survey and Tutorial: What It Means for AI/CS Students
+4. Pawsterior: Variational Flow Matching for Structured Simulation-Based Inference: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Grokking Finite-Dimensional Algebra: What It Means for AI/CS Students
+5. Automated Generation of Microfluidic Netlists using Large Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Sim2Radar: Toward Bridging the Radar Sim-to-Real Gap with VLM-Guided Scene Reconstruction: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260224--20260224-agentic-ai-as-a-cybersecurity-attack-surface-threats-exploits-an-3fa058ee.md
-- docs/agent/drafts/20260224--20260224-a-green-learning-approach-to-ldct-image-restoration-0589ab2a.md
+- docs/agent/drafts/20260225--20260225-anatomy-of-capability-emergence-scale-invariant-representation-c-de5a3034.md
+- docs/agent/drafts/20260225--20260225-st-evo-towards-generative-spatio-temporal-evolution-of-multi-age-0f936df6.md
 
