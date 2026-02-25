@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-25T07:36:03.506Z
+Generated: 2026-02-25T07:39:09.713Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Anatomy of Capability Emergence: Scale-Invariant Representation Collapse and Top-Down Reorganization in Neural Networks: What It Means for AI/CS Students
+1. Inner Speech as Behavior Guides: Steerable Imitation of Diverse Behaviors for Human-AI coordination: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. ST-EVO: Towards Generative Spatio-Temporal Evolution of Multi-Agent Communication Topologies: What It Means for AI/CS Students
+2. ActionEngine: From Reactive to Programmatic GUI Agents via State Machine Memory: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Silent Inconsistency in Data-Parallel Full Fine-Tuning: Diagnosing Worker-Level Optimization Misalignment: What It Means for AI/CS Students
+3. KairosVL: Orchestrating Time Series and Semantics for Unified Reasoning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Pawsterior: Variational Flow Matching for Structured Simulation-Based Inference: What It Means for AI/CS Students
+4. PreScience: A Benchmark for Forecasting Scientific Contributions: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+5. Learning to Rewrite Tool Descriptions for Reliable LLM-Agent Tool Use: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Automated Generation of Microfluidic Netlists using Large Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+6. Nacrith: Neural Lossless Compression via Ensemble Context Modeling and High-Precision CDF Coding: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Sim2Radar: Toward Bridging the Radar Sim-to-Real Gap with VLM-Guided Scene Reconstruction: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260225--20260225-anatomy-of-capability-emergence-scale-invariant-representation-c-de5a3034.md
-- docs/agent/drafts/20260225--20260225-st-evo-towards-generative-spatio-temporal-evolution-of-multi-age-0f936df6.md
+- docs/agent/drafts/20260225--20260225-inner-speech-as-behavior-guides-steerable-imitation-of-diverse-b-a7110ceb.md
+- docs/agent/drafts/20260225--20260225-actionengine-from-reactive-to-programmatic-gui-agents-via-state--fd5289d3.md
 
