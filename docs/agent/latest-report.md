@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-25T07:39:09.713Z
+Generated: 2026-02-26T07:34:47.097Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Inner Speech as Behavior Guides: Steerable Imitation of Diverse Behaviors for Human-AI coordination: What It Means for AI/CS Students
+1. The Headless Firm: How AI Reshapes Enterprise Boundaries: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. ActionEngine: From Reactive to Programmatic GUI Agents via State Machine Memory: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. KairosVL: Orchestrating Time Series and Semantics for Unified Reasoning: What It Means for AI/CS Students
+2. FedVG: Gradient-Guided Aggregation for Enhanced Federated Learning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. PreScience: A Benchmark for Forecasting Scientific Contributions: What It Means for AI/CS Students
+3. VCDF: A Validated Consensus-Driven Framework for Time Series Causal Discovery: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-5. Learning to Rewrite Tool Descriptions for Reliable LLM-Agent Tool Use: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. MrBERT: Modern Multilingual Encoders via Vocabulary, Domain, and Dimensional Adaptation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Small Language Models for Privacy-Preserving Clinical Information Extraction in Low-Resource Languages: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Nacrith: Neural Lossless Compression via Ensemble Context Modeling and High-Precision CDF Coding: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+6. The Mean is the Mirage: Entropy-Adaptive Model Merging under Heterogeneous Domain Shifts in Medical Imaging: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260225--20260225-inner-speech-as-behavior-guides-steerable-imitation-of-diverse-b-a7110ceb.md
-- docs/agent/drafts/20260225--20260225-actionengine-from-reactive-to-programmatic-gui-agents-via-state--fd5289d3.md
+- docs/agent/drafts/20260226--20260226-the-headless-firm-how-ai-reshapes-enterprise-boundaries-338f426f.md
+- docs/agent/drafts/20260226--20260226-fedvg-gradient-guided-aggregation-for-enhanced-federated-learnin-d8619b40.md
 
