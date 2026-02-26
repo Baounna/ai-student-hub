@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-26T07:34:47.097Z
+Generated: 2026-02-26T07:39:15.970Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. The Headless Firm: How AI Reshapes Enterprise Boundaries: What It Means for AI/CS Students
+1. Make Every Draft Count: Hidden State based Speculative Decoding: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. FedVG: Gradient-Guided Aggregation for Enhanced Federated Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. VCDF: A Validated Consensus-Driven Framework for Time Series Causal Discovery: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. MrBERT: Modern Multilingual Encoders via Vocabulary, Domain, and Dimensional Adaptation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Small Language Models for Privacy-Preserving Clinical Information Extraction in Low-Resource Languages: What It Means for AI/CS Students
+2. Measuring Pragmatic Influence in Large Language Model Instructions: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. The Mean is the Mirage: Entropy-Adaptive Model Merging under Heterogeneous Domain Shifts in Medical Imaging: What It Means for AI/CS Students
+3. Task-Aware LoRA Adapter Composition via Similarity Retrieval in Vector Databases: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Latent Context Compilation: Distilling Long Context into Compact Portable Memory: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Field-Theoretic Memory for AI Agents: Continuous Dynamics for Context Preservation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+6. Reasoning-Based Personalized Generation for Users with Sparse Data: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260226--20260226-the-headless-firm-how-ai-reshapes-enterprise-boundaries-338f426f.md
-- docs/agent/drafts/20260226--20260226-fedvg-gradient-guided-aggregation-for-enhanced-federated-learnin-d8619b40.md
+- docs/agent/drafts/20260226--20260226-make-every-draft-count-hidden-state-based-speculative-decoding-d283135c.md
+- docs/agent/drafts/20260226--20260226-measuring-pragmatic-influence-in-large-language-model-instructio-397a64fc.md
 
