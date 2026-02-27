@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-27T07:31:02.513Z
+Generated: 2026-02-27T07:34:15.218Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. From Open Vocabulary to Open World: Teaching Vision Language Models to Detect Novel Objects: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. Symmetry in language statistics shapes the geometry of model representations: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Toward Automated Validation of Language Model Synthesized Test Cases using Semantic Entropy: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+2. When Less is More: The LLM Scaling Paradox in Context Compression: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. On the Complexity of Neural Computation in Superposition: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+3. Learning Credal Ensembles via Distributionally Robust Optimization: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Abstracted Gaussian Prototypes for True One-Shot Concept Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Parameter-Efficient Fine-Tuning for Continual Learning: A Neural Tangent Kernel Perspective: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+4. Detecting Misbehaviors of Large Vision-Language Models by Evidential Uncertainty Quantification: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. NoRD: A Data-Efficient Vision-Language-Action Model that Drives without Reasoning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+5. Phase Transitions for Feature Learning in Neural Networks: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Agentic Framework for Epidemiological Modeling: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260227--20260227-from-open-vocabulary-to-open-world-teaching-vision-language-mode-f9f68a84.md
-- docs/agent/drafts/20260227--20260227-toward-automated-validation-of-language-model-synthesized-test-c-6eebd3ef.md
+- docs/agent/drafts/20260227--20260227-symmetry-in-language-statistics-shapes-the-geometry-of-model-rep-6e720696.md
+- docs/agent/drafts/20260227--20260227-when-less-is-more-the-llm-scaling-paradox-in-context-compression-a7a606f9.md
 
