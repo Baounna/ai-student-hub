@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-02-28T07:03:44.718Z
+Generated: 2026-02-28T07:05:17.827Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. SignVLA: A Gloss-Free Vision-Language-Action Framework for Real-Time Sign Language-Guided Robotic Manipulation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+1. UPDESH: Synthesizing Grounded Instruction Tuning Data for 13 Indic Languages: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Reinforcement-aware Knowledge Distillation for LLM Reasoning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+2. A Third Paradigm for LLM Evaluation: Dialogue Game-Based Evaluation using clembench: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. From Shallow Bayesian Neural Networks to Gaussian Processes: General Convergence, Identifiability and Scalable Inference: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+3. Parallel Continuous Chain-of-Thought with Jacobi Iteration: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. DeVisE: Behavioral Testing of Medical Large Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Explainability-Aware Evaluation of Transfer Learning Models for IoT DDoS Detection Under Resource Constraints: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+5. When Large Multimodal Models Confront Evolving Knowledge: Challenges and Explorations: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Beyond Dominant Patches: Spatial Credit Redistribution For Grounded Vision-Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Automating the Detection of Requirement Dependencies Using Large Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+6. Can LLMs Simulate Human Behavioral Variability? A Case Study in the Phonemic Fluency Task: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260228--20260228-signvla-a-gloss-free-vision-language-action-framework-for-real-t-573a35c0.md
-- docs/agent/drafts/20260228--20260228-reinforcement-aware-knowledge-distillation-for-llm-reasoning-f1571dbc.md
+- docs/agent/drafts/20260228--20260228-updesh-synthesizing-grounded-instruction-tuning-data-for-13-indi-a214ebf6.md
+- docs/agent/drafts/20260228--20260228-a-third-paradigm-for-llm-evaluation-dialogue-game-based-evaluati-ddd329dd.md
 
