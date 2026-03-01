@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-01T07:20:47.808Z
+Generated: 2026-03-01T07:22:22.728Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260301--20260228-our-agreement-with-the-department-of-war-7fc87634.md
-- docs/agent/drafts/20260301--20260228-predicting-tennis-serve-directions-with-machine-learning-d8234f15.md
+- docs/agent/drafts/20260301--20260228-from-shallow-bayesian-neural-networks-to-gaussian-processes-gene-aea1d5d0.md
+- docs/agent/drafts/20260301--20260228-explainability-aware-evaluation-of-transfer-learning-models-for--31479ca0.md
 
