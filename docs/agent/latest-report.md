@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-02T07:33:30.400Z
+Generated: 2026-03-02T07:37:58.049Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. GenAI-Net: A Generative AI Framework for Automated Biomolecular Network Design: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. Intention-Adaptive LLM Fine-Tuning for Text Revision Generation: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. CSyMR: Benchmarking Compositional Music Information Retrieval in Symbolic Music Reasoning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-3. VISTA: Knowledge-Driven Vessel Trajectory Imputation with Repair Provenance: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+2. The Growing Gains and Pains of Iterative Web Corpora Crawling: Insights from South Slavic CLASSLA-web 2.0 Corpora: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. Interpreting Transformers Through Attention Head Intervention: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Modeling Clinical Uncertainty in Radiology Reports: from Explicit Uncertainty Markers to Implicit Reasoning Pathways: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. LIA: Supervised Fine-Tuning of Large Language Models for Automatic Issue Assignment: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Trust Region Masking for Long-Horizon LLM Reinforcement Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Smoothing DiLoCo with Primal Averaging for Faster Training of LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+5. GRDD+: An Extended Greek Dialectal Dataset with Cross-Architecture Fine-tuning Evaluation: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Error-Aware Knowledge Distillation via Targeted Revision for Customer-Service Summarization: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260302--20260302-genai-net-a-generative-ai-framework-for-automated-biomolecular-n-677f816e.md
-- docs/agent/drafts/20260302--20260302-csymr-benchmarking-compositional-music-information-retrieval-in--d3690a80.md
+- docs/agent/drafts/20260302--20260302-intention-adaptive-llm-fine-tuning-for-text-revision-generation-03910917.md
+- docs/agent/drafts/20260302--20260302-the-growing-gains-and-pains-of-iterative-web-corpora-crawling-in-a086787e.md
 
