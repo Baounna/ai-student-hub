@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-02T07:37:58.049Z
+Generated: 2026-03-03T07:28:03.480Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Intention-Adaptive LLM Fine-Tuning for Text Revision Generation: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+1. Whisper-MLA: Reducing GPU Memory Consumption of ASR Models based on MHA2MLA Conversion: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. The Growing Gains and Pains of Iterative Web Corpora Crawling: Insights from South Slavic CLASSLA-web 2.0 Corpora: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+2. Geometry OR Tracker: Universal Geometric Operating Room Tracking: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Interpreting Transformers Through Attention Head Intervention: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Modeling Clinical Uncertainty in Radiology Reports: from Explicit Uncertainty Markers to Implicit Reasoning Pathways: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+3. Are LLMs Reliable Code Reviewers? Systematic Overcorrection in Requirement Conformance Judgement: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. GRDD+: An Extended Greek Dialectal Dataset with Cross-Architecture Fine-tuning Evaluation: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+4. CaptionFool: Universal Image Captioning Model Attacks: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. CIRCUS: Circuit Consensus under Uncertainty via Stability Ensembles: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Error-Aware Knowledge Distillation via Targeted Revision for Customer-Service Summarization: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+6. Phys-Diff: A Physics-Inspired Latent Diffusion Model for Tropical Cyclone Forecasting: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260302--20260302-intention-adaptive-llm-fine-tuning-for-text-revision-generation-03910917.md
-- docs/agent/drafts/20260302--20260302-the-growing-gains-and-pains-of-iterative-web-corpora-crawling-in-a086787e.md
+- docs/agent/drafts/20260303--20260303-whisper-mla-reducing-gpu-memory-consumption-of-asr-models-based--6a47de0e.md
+- docs/agent/drafts/20260303--20260303-geometry-or-tracker-universal-geometric-operating-room-tracking-7a717fd2.md
 
