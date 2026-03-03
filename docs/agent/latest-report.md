@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-03T07:28:03.480Z
+Generated: 2026-03-03T07:30:24.956Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Whisper-MLA: Reducing GPU Memory Consumption of ASR Models based on MHA2MLA Conversion: What It Means for AI/CS Students
+1. See, Think, Act: Teaching Multimodal Agents to Effectively Interact with GUI by Identifying Toggles: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Geometry OR Tracker: Universal Geometric Operating Room Tracking: What It Means for AI/CS Students
+2. AISSISTANT: Human-AI Collaborative Review and Perspective Research Workflows in Data Science: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Are LLMs Reliable Code Reviewers? Systematic Overcorrection in Requirement Conformance Judgement: What It Means for AI/CS Students
+3. Toward Clinically Explainable AI for Medical Diagnosis: A Foundation Model with Human-Compatible Reasoning via Reinforcement Learning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. CaptionFool: Universal Image Captioning Model Attacks: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. CIRCUS: Circuit Consensus under Uncertainty via Stability Ensembles: What It Means for AI/CS Students
+4. EigenBench: A Comparative Behavioral Measure of Value Alignment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Phys-Diff: A Physics-Inspired Latent Diffusion Model for Tropical Cyclone Forecasting: What It Means for AI/CS Students
+5. Re4: Scientific Computing Agent with Rewriting, Resolution, Review and Revision: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Collab-REC: An LLM-based Agentic Framework for Balancing Recommendations in Tourism: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260303--20260303-whisper-mla-reducing-gpu-memory-consumption-of-asr-models-based--6a47de0e.md
-- docs/agent/drafts/20260303--20260303-geometry-or-tracker-universal-geometric-operating-room-tracking-7a717fd2.md
+- docs/agent/drafts/20260303--20260303-see-think-act-teaching-multimodal-agents-to-effectively-interact-62c72436.md
+- docs/agent/drafts/20260303--20260303-aissistant-human-ai-collaborative-review-and-perspective-researc-f2dd9e91.md
 
