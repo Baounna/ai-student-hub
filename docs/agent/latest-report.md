@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-04T07:24:55.481Z
+Generated: 2026-03-04T07:27:04.697Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Accuracy-Efficiency Trade-Offs in Spiking Neural Networks: A Lempel-Ziv Complexity Perspective on Learning Rules: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Beyond RLHF and NLHF: Population-Proportional Alignment under an Axiomatic Framework: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Control Tax: The Price of Keeping AI in Check: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. FAuNO: Semi-Asynchronous Federated Reinforcement Learning Framework for Task Offloading in Edge Systems: What It Means for AI/CS Students
+1. See, Think, Act: Teaching Multimodal Agents to Effectively Interact with GUI by Identifying Toggles: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. VPI-Bench: Visual Prompt Injection Attacks for Computer-Use Agents: What It Means for AI/CS Students
+2. AISSISTANT: Human-AI Collaborative Review and Perspective Research Workflows in Data Science: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. Toward Clinically Explainable AI for Medical Diagnosis: A Foundation Model with Human-Compatible Reasoning via Reinforcement Learning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. CityLens: Evaluating Large Vision-Language Models for Urban Socioeconomic Sensing: What It Means for AI/CS Students
+4. EigenBench: A Comparative Behavioral Measure of Value Alignment: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Re4: Scientific Computing Agent with Rewriting, Resolution, Review and Revision: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Collab-REC: An LLM-based Agentic Framework for Balancing Recommendations in Tourism: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260304--20260304-accuracy-efficiency-trade-offs-in-spiking-neural-networks-a-lemp-9d0d35fc.md
-- docs/agent/drafts/20260304--20260304-beyond-rlhf-and-nlhf-population-proportional-alignment-under-an--f3f4ebe6.md
+- docs/agent/drafts/20260304--20260304-see-think-act-teaching-multimodal-agents-to-effectively-interact-62c72436.md
+- docs/agent/drafts/20260304--20260304-aissistant-human-ai-collaborative-review-and-perspective-researc-f2dd9e91.md
 
