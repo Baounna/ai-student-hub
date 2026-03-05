@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-04T07:27:04.697Z
+Generated: 2026-03-05T07:27:32.553Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. See, Think, Act: Teaching Multimodal Agents to Effectively Interact with GUI by Identifying Toggles: What It Means for AI/CS Students
+1. ToolRLA: Multiplicative Reward Decomposition for Tool-Integrated Agents: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. AISSISTANT: Human-AI Collaborative Review and Perspective Research Workflows in Data Science: What It Means for AI/CS Students
+2. Causal Identification from Counterfactual Data: Completeness and Bounding Results: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Toward Clinically Explainable AI for Medical Diagnosis: A Foundation Model with Human-Compatible Reasoning via Reinforcement Learning: What It Means for AI/CS Students
+3. AMA-Bench: Evaluating Long-Horizon Memory for Agentic Applications: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. EigenBench: A Comparative Behavioral Measure of Value Alignment: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Re4: Scientific Computing Agent with Rewriting, Resolution, Review and Revision: What It Means for AI/CS Students
+4. From Agent-Only Social Networks to Autonomous Scientific Research: Lessons from OpenClaw and Moltbook, and the Architecture of ClawdLab and Beach.Science: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Collab-REC: An LLM-based Agentic Framework for Balancing Recommendations in Tourism: What It Means for AI/CS Students
+5. To Think or Not To Think, That is The Question for Large Reasoning Models in Theory of Mind Tasks: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Why Do AI Agents Systematically Fail at Cloud Root Cause Analysis?: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260304--20260304-see-think-act-teaching-multimodal-agents-to-effectively-interact-62c72436.md
-- docs/agent/drafts/20260304--20260304-aissistant-human-ai-collaborative-review-and-perspective-researc-f2dd9e91.md
+- docs/agent/drafts/20260305--20260305-toolrla-multiplicative-reward-decomposition-for-tool-integrated--aca88adb.md
+- docs/agent/drafts/20260305--20260305-causal-identification-from-counterfactual-data-completeness-and--f735f0de.md
 
