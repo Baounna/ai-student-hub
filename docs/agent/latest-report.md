@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-06T07:27:21.182Z
+Generated: 2026-03-07T07:06:01.848Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Revolutionizing Mixed Precision Quantization: Towards Training-free Automatic Proxy Discovery via Large Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. A physics-informed U-Net-LSTM network for nonlinear structural response under seismic excitation: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework: What It Means for AI/CS Students
+   - Source: GitHub Blog
+   - Keyword: ai cs update for students github blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. ReCast: Reliability-aware Codebook Assisted Lightweight Time Series Forecasting: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. SPOT: Single-Shot Positioning via Trainable Near-Field Rainbow Beamforming: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Breaking and Fixing Defenses Against Control-Flow Hijacking in Multi-Agent Systems: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+2. Conversational LLM Evaluations in Minutes with NVIDIA NeMo Evaluator Agent Skills: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: how to build hugging face blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Do We Really Need Permutations? Impact of Model Width on Linear Mode Connectivity: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+3. How our open-source AI model SpeciesNet is helping to promote wildlife conservation: What It Means for AI/CS Students
+   - Source: Google AI Blog
+   - Keyword: how to build google ai blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+4. From the endpoint to the prompt: a unified data security vision in Cloudflare One: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. How Descript enables multilingual video dubbing at scale: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Codex Security: now in research preview: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: ai cs update for students openai news
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260306--20260306-revolutionizing-mixed-precision-quantization-towards-training-fr-3454c42f.md
-- docs/agent/drafts/20260306--20260306-a-physics-informed-u-net-lstm-network-for-nonlinear-structural-r-f851823e.md
+- docs/agent/drafts/20260307--20260306-how-to-scan-for-vulnerabilities-with-github-security-labs-open-s-3b393ff4.md
+- docs/agent/drafts/20260307--20260306-conversational-llm-evaluations-in-minutes-with-nvidia-nemo-evalu-e090e2e5.md
 
