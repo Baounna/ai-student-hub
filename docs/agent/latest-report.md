@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-07T07:06:01.848Z
+Generated: 2026-03-07T07:16:59.305Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260307--20260306-how-to-scan-for-vulnerabilities-with-github-security-labs-open-s-3b393ff4.md
-- docs/agent/drafts/20260307--20260306-conversational-llm-evaluations-in-minutes-with-nvidia-nemo-evalu-e090e2e5.md
+- docs/agent/drafts/20260307--20260306-how-our-open-source-ai-model-speciesnet-is-helping-to-promote-wi-ea451c9a.md
+- docs/agent/drafts/20260307--20260306-from-the-endpoint-to-the-prompt-a-unified-data-security-vision-i-8b5525bd.md
 
