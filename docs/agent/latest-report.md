@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-08T07:21:03.425Z
+Generated: 2026-03-09T07:35:28.695Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework: What It Means for AI/CS Students
-   - Source: GitHub Blog
-   - Keyword: ai cs update for students github blog
+1. Aligning the True Semantics: Constrained Decoupling and Distribution Sampling for Cross-Modal Alignment: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Conversational LLM Evaluations in Minutes with NVIDIA NeMo Evaluator Agent Skills: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
+2. Autocorrelation effects in a stochastic-process model for decision making via time series: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. How our open-source AI model SpeciesNet is helping to promote wildlife conservation: What It Means for AI/CS Students
-   - Source: Google AI Blog
-   - Keyword: how to build google ai blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. From the endpoint to the prompt: a unified data security vision in Cloudflare One: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. How Descript enables multilingual video dubbing at scale: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Codex Security: now in research preview: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: ai cs update for students openai news
+3. IntSeqBERT: Learning Arithmetic Structure in OEIS via Modulo-Spectrum Embeddings: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+4. RoboPocket: Improve Robot Policies Instantly with Your Phone: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. vLLM Semantic Router: Signal Driven Decision Routing for Mixture-of-Modality Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Simulating Meaning, Nevermore! Introducing ICR: A Semiotic-Hermeneutic Metric for Evaluating Meaning in LLM Text Summaries: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -95,6 +95,7 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 0
-- No new drafts generated (existing coverage or no opportunities).
+- New drafts generated: 2
+- docs/agent/drafts/20260309--20260309-aligning-the-true-semantics-constrained-decoupling-and-distribut-a2a1c43b.md
+- docs/agent/drafts/20260309--20260309-autocorrelation-effects-in-a-stochastic-process-model-for-decisi-4b669879.md
 
