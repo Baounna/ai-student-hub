@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-09T07:35:28.695Z
+Generated: 2026-03-09T07:38:34.942Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Aligning the True Semantics: Constrained Decoupling and Distribution Sampling for Cross-Modal Alignment: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Autocorrelation effects in a stochastic-process model for decision making via time series: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. IntSeqBERT: Learning Arithmetic Structure in OEIS via Modulo-Spectrum Embeddings: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. RoboPocket: Improve Robot Policies Instantly with Your Phone: What It Means for AI/CS Students
+1. Adversarial Batch Representation Augmentation for Batch Correction in High-Content Cellular Screening: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. vLLM Semantic Router: Signal Driven Decision Routing for Mixture-of-Modality Models: What It Means for AI/CS Students
+2. RACAS: Controlling Diverse Robots With a Single Agentic System: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Simulating Meaning, Nevermore! Introducing ICR: A Semiotic-Hermeneutic Metric for Evaluating Meaning in LLM Text Summaries: What It Means for AI/CS Students
+3. DreamCAD: Scaling Multi-modal CAD Generation using Differentiable Parametric Surfaces: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. On the Value of Tokeniser Pretraining in Physics Foundation Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+5. Spatiotemporal Heterogeneity of AI-Driven Traffic Flow Patterns and Land Use Interaction: A GeoAI-Based Analysis of Multimodal Urban Mobility: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Tool-Genesis: A Task-Driven Tool Creation Benchmark for Self-Evolving Language Agent: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260309--20260309-aligning-the-true-semantics-constrained-decoupling-and-distribut-a2a1c43b.md
-- docs/agent/drafts/20260309--20260309-autocorrelation-effects-in-a-stochastic-process-model-for-decisi-4b669879.md
+- docs/agent/drafts/20260309--20260309-adversarial-batch-representation-augmentation-for-batch-correcti-2eb96c5a.md
+- docs/agent/drafts/20260309--20260309-racas-controlling-diverse-robots-with-a-single-agentic-system-08b44979.md
 
