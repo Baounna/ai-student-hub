@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-09T07:38:34.942Z
+Generated: 2026-03-10T07:26:18.160Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Adversarial Batch Representation Augmentation for Batch Correction in High-Content Cellular Screening: What It Means for AI/CS Students
+1. From Semantic To Instance: A Semi-Self-Supervised Learning Approach: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. RACAS: Controlling Diverse Robots With a Single Agentic System: What It Means for AI/CS Students
+2. Context Matters! Relaxing Goals with LLMs for Feasible 3D Scene Planning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. DreamCAD: Scaling Multi-modal CAD Generation using Differentiable Parametric Surfaces: What It Means for AI/CS Students
+3. Co-LoRA: Collaborative Model Personalization on Heterogeneous Multi-Modal Clients: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. BemaGANv2: Discriminator Combination Strategies for GAN-based Vocoders in Long-Term Audio Generation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. On the Value of Tokeniser Pretraining in Physics Foundation Models: What It Means for AI/CS Students
+5. RoboPARA: Dual-Arm Robot Planning with Parallel Allocation and Recomposition Across Tasks: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Spatiotemporal Heterogeneity of AI-Driven Traffic Flow Patterns and Land Use Interaction: A GeoAI-Based Analysis of Multimodal Urban Mobility: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Representing local protein environments with machine learning force fields: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Tool-Genesis: A Task-Driven Tool Creation Benchmark for Self-Evolving Language Agent: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260309--20260309-adversarial-batch-representation-augmentation-for-batch-correcti-2eb96c5a.md
-- docs/agent/drafts/20260309--20260309-racas-controlling-diverse-robots-with-a-single-agentic-system-08b44979.md
+- docs/agent/drafts/20260310--20260310-from-semantic-to-instance-a-semi-self-supervised-learning-approa-93cc8286.md
+- docs/agent/drafts/20260310--20260310-context-matters-relaxing-goals-with-llms-for-feasible-3d-scene-p-8fa4d939.md
 
