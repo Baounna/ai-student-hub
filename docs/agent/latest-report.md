@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-10T07:26:18.160Z
+Generated: 2026-03-10T07:28:48.920Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. From Semantic To Instance: A Semi-Self-Supervised Learning Approach: What It Means for AI/CS Students
+1. Interpretable-by-Design Transformers via Architectural Stream Independence: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Context Matters! Relaxing Goals with LLMs for Feasible 3D Scene Planning: What It Means for AI/CS Students
+2. Cross-Modal Taxonomic Generalization in (Vision-) Language Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Co-LoRA: Collaborative Model Personalization on Heterogeneous Multi-Modal Clients: What It Means for AI/CS Students
+3. Give Them an Inch and They Will Take a Mile:Understanding and Measuring Caller Identity Confusion in MCP-Based AI Systems: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Contact-Guided 3D Genome Structure Generation of E. coli via Diffusion Transformers: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Towards Lightweight Adaptation of Speech Enhancement Models in Real-World Environments: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. BemaGANv2: Discriminator Combination Strategies for GAN-based Vocoders in Long-Term Audio Generation: What It Means for AI/CS Students
+6. The Dual-Stream Transformer: Channelized Architecture for Interpretable Language Modeling: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. RoboPARA: Dual-Arm Robot Planning with Parallel Allocation and Recomposition Across Tasks: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Representing local protein environments with machine learning force fields: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260310--20260310-from-semantic-to-instance-a-semi-self-supervised-learning-approa-93cc8286.md
-- docs/agent/drafts/20260310--20260310-context-matters-relaxing-goals-with-llms-for-feasible-3d-scene-p-8fa4d939.md
+- docs/agent/drafts/20260310--20260310-interpretable-by-design-transformers-via-architectural-stream-in-94d38701.md
+- docs/agent/drafts/20260310--20260310-cross-modal-taxonomic-generalization-in-vision--language-models-edceaa43.md
 
