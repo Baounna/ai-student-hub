@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-11T07:28:42.672Z
+Generated: 2026-03-11T07:32:09.981Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. LLM as a Meta-Judge: Synthetic Data for NLP Evaluation Metric Validation: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Reward Prediction with Factorized World States: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+1. REAP the Experts: Why Pruning Prevails for One-Shot MoE compression: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Quantifying and extending the coverage of spatial categorization data sets: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. LooComp: Leverage Leave-One-Out Strategy to Encoder-only Transformer for Efficient Query-aware Context Compression: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. SPAR-K: Scheduled Periodic Alternating Early Exit for Spoken Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. DEO: Training-Free Direct Embedding Optimization for Negation-Aware Retrieval: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+2. RECODE: Reasoning Through Code Generation for Visual Question Answering: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+3. NavSpace: How Navigation Agents Follow Spatial Intelligence Instructions: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Latent Speech-Text Transformer: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. v-HUB: A Benchmark for Video Humor Understanding from Vision and Sound: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+6. VoiceBridge: General Speech Restoration with One-step Latent Bridge Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260311--20260311-llm-as-a-meta-judge-synthetic-data-for-nlp-evaluation-metric-val-76fe5d7c.md
-- docs/agent/drafts/20260311--20260311-reward-prediction-with-factorized-world-states-496ac3f2.md
+- docs/agent/drafts/20260311--20260311-reap-the-experts-why-pruning-prevails-for-one-shot-moe-compressi-5febfead.md
+- docs/agent/drafts/20260311--20260311-recode-reasoning-through-code-generation-for-visual-question-ans-92b198c3.md
 
