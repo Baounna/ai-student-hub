@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-12T07:30:29.128Z
+Generated: 2026-03-12T07:35:12.184Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,31 +45,31 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: how to build google ai blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Reason and Verify: A Framework for Faithful Retrieval-Augmented Generation: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. The Prediction-Measurement Gap: Toward Meaning Representations as Scientific Instruments: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. TriageSim: A Conversational Emergency Triage Simulation Framework from Structured Electronic Health Records: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. A Principle-Driven Adaptive Policy for Group Cognitive Stimulation Dialogue for Elderly with Cognitive Impairment: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Gemma Needs Help: Investigating and Mitigating Emotional Instability in LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+2. KV Cache Transform Coding for Compact Storage in LLM Inference: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+3. Predicting kernel regression learning curves from only raw data statistics: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. MVCustom: Multi-View Customized Diffusion via Geometric Latent Rendering and Completion: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Reveal-to-Revise: Explainable Bias-Aware Generative Modeling with Multimodal Attention: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. HyWA: Hypernetwork Weight Adapting Personalized Voice Activity Detection: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260312--20260312-how-ai-is-helping-improve-heart-health-in-rural-australia-dbf82fe6.md
-- docs/agent/drafts/20260312--20260312-reason-and-verify-a-framework-for-faithful-retrieval-augmented-g-4e1f0940.md
+- docs/agent/drafts/20260312--20260312-kv-cache-transform-coding-for-compact-storage-in-llm-inference-743bbfd5.md
+- docs/agent/drafts/20260312--20260312-predicting-kernel-regression-learning-curves-from-only-raw-data--1354b2bb.md
 
