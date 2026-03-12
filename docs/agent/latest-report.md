@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-11T07:32:09.981Z
+Generated: 2026-03-12T07:30:29.128Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. REAP the Experts: Why Pruning Prevails for One-Shot MoE compression: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. RECODE: Reasoning Through Code Generation for Visual Question Answering: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. NavSpace: How Navigation Agents Follow Spatial Intelligence Instructions: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. How AI is helping improve heart health in rural Australia: What It Means for AI/CS Students
+   - Source: Google AI Blog
+   - Keyword: how to build google ai blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Latent Speech-Text Transformer: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. Reason and Verify: A Framework for Faithful Retrieval-Augmented Generation: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. v-HUB: A Benchmark for Video Humor Understanding from Vision and Sound: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-6. VoiceBridge: General Speech Restoration with One-step Latent Bridge Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+3. The Prediction-Measurement Gap: Toward Meaning Representations as Scientific Instruments: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. TriageSim: A Conversational Emergency Triage Simulation Framework from Structured Electronic Health Records: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. A Principle-Driven Adaptive Policy for Group Cognitive Stimulation Dialogue for Elderly with Cognitive Impairment: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Gemma Needs Help: Investigating and Mitigating Emotional Instability in LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260311--20260311-reap-the-experts-why-pruning-prevails-for-one-shot-moe-compressi-5febfead.md
-- docs/agent/drafts/20260311--20260311-recode-reasoning-through-code-generation-for-visual-question-ans-92b198c3.md
+- docs/agent/drafts/20260312--20260312-how-ai-is-helping-improve-heart-health-in-rural-australia-dbf82fe6.md
+- docs/agent/drafts/20260312--20260312-reason-and-verify-a-framework-for-faithful-retrieval-augmented-g-4e1f0940.md
 
