@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-13T07:29:54.022Z
+Generated: 2026-03-13T07:32:52.974Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. A technology-oriented mapping of the language and translation industry: Analysing stakeholder values and their potential implication for translation pedagogy: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+1. Hope Speech Detection in code-mixed Roman Urdu tweets: A Positive Turn in Natural Language Processing: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Multi-Task Reinforcement Learning for Enhanced Multimodal LLM-as-a-Judge: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+2. Measuring Intent Comprehension in LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. QChunker: Learning Question-Aware Text Chunking for Domain RAG via Multi-Agent Debate: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+3. Can Theoretical Physics Research Benefit from Language Agents?: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Streaming Translation and Transcription Through Speech-to-Text Causal Alignment: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+4. Your Classifier Can Do More: Towards Balancing the Gaps in Classification, Robustness, and Generation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Where Matters More Than What: Decoding-aligned KV Cache Compression via Position-aware Pseudo Queries: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Can Small Language Models Use What They Retrieve? An Empirical Study of Retrieval Utilization Across Model Scale: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+5. LLLMs: A Data-Driven Survey of Evolving Research on Limitations of Large Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+6. ReasonMap: Towards Fine-Grained Visual Reasoning from Transit Maps: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260313--20260313-a-technology-oriented-mapping-of-the-language-and-translation-in-a6db1f4e.md
-- docs/agent/drafts/20260313--20260313-multi-task-reinforcement-learning-for-enhanced-multimodal-llm-as-0c802914.md
+- docs/agent/drafts/20260313--20260313-hope-speech-detection-in-code-mixed-roman-urdu-tweets-a-positive-98c8c6cb.md
+- docs/agent/drafts/20260313--20260313-measuring-intent-comprehension-in-llms-6cd63500.md
 
