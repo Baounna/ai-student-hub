@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-12T07:35:12.184Z
+Generated: 2026-03-13T07:29:54.022Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. How AI is helping improve heart health in rural Australia: What It Means for AI/CS Students
-   - Source: Google AI Blog
-   - Keyword: how to build google ai blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. KV Cache Transform Coding for Compact Storage in LLM Inference: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Predicting kernel regression learning curves from only raw data statistics: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. MVCustom: Multi-View Customized Diffusion via Geometric Latent Rendering and Completion: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+1. A technology-oriented mapping of the language and translation industry: Analysing stakeholder values and their potential implication for translation pedagogy: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Reveal-to-Revise: Explainable Bias-Aware Generative Modeling with Multimodal Attention: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+2. Multi-Task Reinforcement Learning for Enhanced Multimodal LLM-as-a-Judge: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. HyWA: Hypernetwork Weight Adapting Personalized Voice Activity Detection: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+3. QChunker: Learning Question-Aware Text Chunking for Domain RAG via Multi-Agent Debate: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Streaming Translation and Transcription Through Speech-to-Text Causal Alignment: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+5. Where Matters More Than What: Decoding-aligned KV Cache Compression via Position-aware Pseudo Queries: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Can Small Language Models Use What They Retrieve? An Empirical Study of Retrieval Utilization Across Model Scale: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260312--20260312-kv-cache-transform-coding-for-compact-storage-in-llm-inference-743bbfd5.md
-- docs/agent/drafts/20260312--20260312-predicting-kernel-regression-learning-curves-from-only-raw-data--1354b2bb.md
+- docs/agent/drafts/20260313--20260313-a-technology-oriented-mapping-of-the-language-and-translation-in-a6db1f4e.md
+- docs/agent/drafts/20260313--20260313-multi-task-reinforcement-learning-for-enhanced-multimodal-llm-as-0c802914.md
 
