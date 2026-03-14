@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-13T07:32:52.974Z
+Generated: 2026-03-14T07:23:02.310Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Hope Speech Detection in code-mixed Roman Urdu tweets: A Positive Turn in Natural Language Processing: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Measuring Intent Comprehension in LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. From legacy architecture to Cloudflare One: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Can Theoretical Physics Research Benefit from Language Agents?: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Your Classifier Can Do More: Towards Balancing the Gaps in Classification, Robustness, and Generation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. Jr. AI Scientist and Its Risk Report: Autonomous Scientific Exploration from a Baseline Paper: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+3. CodeEvolve: an open source evolutionary coding agent for algorithmic discovery and optimization: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Agentic Design Review System: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 5. LLLMs: A Data-Driven Survey of Evolving Research on Limitations of Large Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. ReasonMap: Towards Fine-Grained Visual Reasoning from Transit Maps: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+6. RouteNet-Gauss: Hardware-Enhanced Network Modeling with Machine Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260313--20260313-hope-speech-detection-in-code-mixed-roman-urdu-tweets-a-positive-98c8c6cb.md
-- docs/agent/drafts/20260313--20260313-measuring-intent-comprehension-in-llms-6cd63500.md
+- docs/agent/drafts/20260314--20260316-from-legacy-architecture-to-cloudflare-one-1976efb3.md
+- docs/agent/drafts/20260314--20260314-jr-ai-scientist-and-its-risk-report-autonomous-scientific-explor-95432ab0.md
 
