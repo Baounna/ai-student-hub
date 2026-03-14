@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-14T07:23:02.310Z
+Generated: 2026-03-14T07:24:20.578Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,31 +45,31 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Jr. AI Scientist and Its Risk Report: Autonomous Scientific Exploration from a Baseline Paper: What It Means for AI/CS Students
+2. BTZSC: A Benchmark for Zero-Shot Text Classification Across Cross-Encoders, Embedding Models, Rerankers and LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: best ai model benchmark for students arxiv cs.lg
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+3. Learning Transferable Sensor Models via Language-Informed Pretraining: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Prototype-Based Knowledge Guidance for Fine-Grained Structured Radiology Reporting: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Anomaly detection in time-series via inductive biases in the latent space of conditional normalizing flows: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. CodeEvolve: an open source evolutionary coding agent for algorithmic discovery and optimization: What It Means for AI/CS Students
+6. CINDI: Conditional Imputation and Noisy Data Integrity with Flows in Power Grid Data: What It Means for AI/CS Students
    - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Agentic Design Review System: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. LLLMs: A Data-Driven Survey of Evolving Research on Limitations of Large Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. RouteNet-Gauss: Hardware-Enhanced Network Modeling with Machine Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260314--20260316-from-legacy-architecture-to-cloudflare-one-1976efb3.md
-- docs/agent/drafts/20260314--20260314-jr-ai-scientist-and-its-risk-report-autonomous-scientific-explor-95432ab0.md
+- docs/agent/drafts/20260314--20260314-btzsc-a-benchmark-for-zero-shot-text-classification-across-cross-387282b6.md
+- docs/agent/drafts/20260314--20260314-learning-transferable-sensor-models-via-language-informed-pretra-92afe73d.md
 
