@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-14T07:24:20.578Z
+Generated: 2026-03-15T07:29:47.381Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,27 +45,27 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. BTZSC: A Benchmark for Zero-Shot Text Classification Across Cross-Encoders, Embedding Models, Rerankers and LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: best ai model benchmark for students arxiv cs.lg
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-3. Learning Transferable Sensor Models via Language-Informed Pretraining: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Prototype-Based Knowledge Guidance for Fine-Grained Structured Radiology Reporting: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Anomaly detection in time-series via inductive biases in the latent space of conditional normalizing flows: What It Means for AI/CS Students
+2. Subliminal Signals in Preference Labels: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. CINDI: Conditional Imputation and Noisy Data Integrity with Flows in Power Grid Data: What It Means for AI/CS Students
+3. Extending Sequence Length is Not All You Need: Effective Integration of Multimodal Signals for Gene Expression Prediction: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. De novo molecular structure elucidation from mass spectra via flow matching: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. RAT+: Train Dense, Infer Sparse -- Recurrence Augmented Attention for Dilated Inference: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Domain Feature Collapse: Implications for Out-of-Distribution Detection and Solutions: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260314--20260314-btzsc-a-benchmark-for-zero-shot-text-classification-across-cross-387282b6.md
-- docs/agent/drafts/20260314--20260314-learning-transferable-sensor-models-via-language-informed-pretra-92afe73d.md
+- docs/agent/drafts/20260315--20260314-subliminal-signals-in-preference-labels-acf85055.md
+- docs/agent/drafts/20260315--20260314-extending-sequence-length-is-not-all-you-need-effective-integrat-a5a01e37.md
 
