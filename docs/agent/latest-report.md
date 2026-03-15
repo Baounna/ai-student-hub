@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-15T07:29:47.381Z
+Generated: 2026-03-15T07:33:32.595Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260315--20260314-subliminal-signals-in-preference-labels-acf85055.md
-- docs/agent/drafts/20260315--20260314-extending-sequence-length-is-not-all-you-need-effective-integrat-a5a01e37.md
+- docs/agent/drafts/20260315--20260314-de-novo-molecular-structure-elucidation-from-mass-spectra-via-fl-141ab3bb.md
+- docs/agent/drafts/20260315--20260314-rat-train-dense-infer-sparse----recurrence-augmented-attention-f-37c12131.md
 
