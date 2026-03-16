@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-16T07:55:57.790Z
+Generated: 2026-03-16T07:58:03.271Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,29 +45,29 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. 3DTCR: A Physics-Based Generative Framework for Vortex-Following 3D Reconstruction to Improve Tropical Cyclone Intensity Forecasting: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. OpenACMv2: An Accuracy-Constrained Co-Optimization Framework for Approximate DCiM: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+2. Cost-Efficient Multimodal LLM Inference via Cross-Tier GPU Heterogeneity: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Deconstructing the Failure of Ideal Noise Correction: A Three-Pillar Diagnosis: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human-AI Collaboration: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Dependency-Aware Parallel Decoding via Attention for Diffusion LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+4. HSEmotion Team at ABAW-10 Competition: Facial Expression Recognition, Valence-Arousal Estimation, Action Unit Detection and Fine-Grained Violence Classification: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Federated Hierarchical Clustering with Automatic Selection of Optimal Cluster Numbers: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Experimental evidence of progressive ChatGPT models self-convergence: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260316--20260316-3dtcr-a-physics-based-generative-framework-for-vortex-following--55d8291b.md
-- docs/agent/drafts/20260316--20260316-openacmv2-an-accuracy-constrained-co-optimization-framework-for--5cf0f57e.md
+- docs/agent/drafts/20260316--20260316-cost-efficient-multimodal-llm-inference-via-cross-tier-gpu-heter-a4cc08e5.md
+- docs/agent/drafts/20260316--20260316-seeing-eye-to-eye-enabling-cognitive-alignment-through-shared-fi-100e4bdb.md
 
