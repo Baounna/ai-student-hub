@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-16T07:58:03.271Z
+Generated: 2026-03-17T07:38:48.946Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. From legacy architecture to Cloudflare One: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Cost-Efficient Multimodal LLM Inference via Cross-Tier GPU Heterogeneity: What It Means for AI/CS Students
+1. EMMA: Generalizing Real-World Robot Manipulation via Generative Visual Transfer: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. The Future of Artificial Intelligence and the Mathematical and Physical Sciences (AI+MPS): What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. Breaking the SFT Plateau: Multimodal Structured Reinforcement Learning for Chart-to-Code Generation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human-AI Collaboration: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. HSEmotion Team at ABAW-10 Competition: Facial Expression Recognition, Valence-Arousal Estimation, Action Unit Detection and Fine-Grained Violence Classification: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Federated Hierarchical Clustering with Automatic Selection of Optimal Cluster Numbers: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Experimental evidence of progressive ChatGPT models self-convergence: What It Means for AI/CS Students
+4. QA-Dragon: Query-Aware Dynamic RAG System for Knowledge-Intensive Visual Question Answering: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+5. Chart-R1: Chain-of-Thought Supervision and Reinforcement for Advanced Chart Reasoner: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Efficient Story Point Estimation With Comparative Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260316--20260316-cost-efficient-multimodal-llm-inference-via-cross-tier-gpu-heter-a4cc08e5.md
-- docs/agent/drafts/20260316--20260316-seeing-eye-to-eye-enabling-cognitive-alignment-through-shared-fi-100e4bdb.md
+- docs/agent/drafts/20260317--20260317-emma-generalizing-real-world-robot-manipulation-via-generative-v-3cd3d13e.md
+- docs/agent/drafts/20260317--20260317-the-future-of-artificial-intelligence-and-the-mathematical-and-p-7db9800e.md
 
