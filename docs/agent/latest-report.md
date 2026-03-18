@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-18T07:37:22.479Z
+Generated: 2026-03-18T07:40:06.962Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,29 +45,29 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Federated Learning with Multi-Partner OneFlorida+ Consortium Data for Predicting Major Postoperative Complications: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. Controlling Fish Schools via Reinforcement Learning of Virtual Fish Movement: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Cost Trade-offs in Matrix Inversion Updates for Streaming Outlier Detection: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+3. Encoding Predictability and Legibility for Style-Conditioned Diffusion Policy: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. When Should a Robot Think? Resource-Aware Reasoning via Reinforcement Learning for Embodied Robotic Decision-Making: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+4. PashtoCorp: A 1.25-Billion-Word Corpus, Evaluation Suite, and Reproducible Pipeline for Low-Resource Language Development: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Fast-WAM: Do World Action Models Need Test-time Future Imagination?: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Kestrel: Grounding Self-Refinement for LVLM Hallucination Mitigation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+5. Locate-then-Sparsify: Attribution Guided Sparse Strategy for Visual Hallucination Mitigation: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Neural Pushforward Samplers for the Fokker-Planck Equation on Embedded Riemannian Manifolds: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260318--20260318-introducing-custom-regions-for-precision-data-control-a62a97b4.md
-- docs/agent/drafts/20260318--20260318-federated-learning-with-multi-partner-oneflorida-consortium-data-8adfb228.md
+- docs/agent/drafts/20260318--20260318-controlling-fish-schools-via-reinforcement-learning-of-virtual-f-f7d0bf28.md
+- docs/agent/drafts/20260318--20260318-encoding-predictability-and-legibility-for-style-conditioned-dif-9f75e2db.md
 
