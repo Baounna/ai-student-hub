@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-17T07:41:30.115Z
+Generated: 2026-03-18T07:37:22.479Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. REFINE-DP: Diffusion Policy Fine-tuning for Humanoid Loco-manipulation via Reinforcement Learning: What It Means for AI/CS Students
+1. Introducing Custom Regions for precision data control: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. Federated Learning with Multi-Partner OneFlorida+ Consortium Data for Predicting Major Postoperative Complications: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Routing Channel-Patch Dependencies in Time Series Forecasting with Graph Spectral Decomposition: What It Means for AI/CS Students
+3. Cost Trade-offs in Matrix Inversion Updates for Streaming Outlier Detection: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. SAATT Nav: a Socially Aware Autonomous Transparent Transportation Navigation Framework for Wheelchairs: What It Means for AI/CS Students
+4. When Should a Robot Think? Resource-Aware Reasoning via Reinforcement Learning for Embodied Robotic Decision-Making: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. QuarkMedBench: A Real-World Scenario Driven Benchmark for Evaluating Large Language Models: What It Means for AI/CS Students
+5. Fast-WAM: Do World Action Models Need Test-time Future Imagination?: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-5. Quantum-Enhanced Vision Transformer for Flood Detection using Remote Sensing Imagery: What It Means for AI/CS Students
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Kestrel: Grounding Self-Refinement for LVLM Hallucination Mitigation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. $\tau$-Voice: Benchmarking Full-Duplex Voice Agents on Real-World Domains: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260317--20260317-refine-dp-diffusion-policy-fine-tuning-for-humanoid-loco-manipul-a3882044.md
-- docs/agent/drafts/20260317--20260317-routing-channel-patch-dependencies-in-time-series-forecasting-wi-929990aa.md
+- docs/agent/drafts/20260318--20260318-introducing-custom-regions-for-precision-data-control-a62a97b4.md
+- docs/agent/drafts/20260318--20260318-federated-learning-with-multi-partner-oneflorida-consortium-data-8adfb228.md
 
