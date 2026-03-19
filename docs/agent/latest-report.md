@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-18T07:40:06.962Z
+Generated: 2026-03-19T07:32:27.887Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Introducing Custom Regions for precision data control: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
+1. IA2: Alignment with ICL Activations Improves Supervised Fine-Tuning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. Tree Search for LLM Agent Reinforcement Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Controlling Fish Schools via Reinforcement Learning of Virtual Fish Movement: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. EdiVal-Agent: An Object-Centric Framework for Automated, Fine-Grained Evaluation of Multi-Turn Editing: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Human Psychometric Questionnaires Mischaracterize LLM Psychology: Evidence from Generation Behavior: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Learning Domain- and Class-Disentangled Prototypes for Domain-Generalized EEG Emotion Recognition: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Encoding Predictability and Legibility for Style-Conditioned Diffusion Policy: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. PashtoCorp: A 1.25-Billion-Word Corpus, Evaluation Suite, and Reproducible Pipeline for Low-Resource Language Development: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Locate-then-Sparsify: Attribution Guided Sparse Strategy for Visual Hallucination Mitigation: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Neural Pushforward Samplers for the Fokker-Planck Equation on Embedded Riemannian Manifolds: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+6. AgriChrono: A Multi-modal Dataset Capturing Crop Growth and Lighting Variability with a Field Robot: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260318--20260318-controlling-fish-schools-via-reinforcement-learning-of-virtual-f-f7d0bf28.md
-- docs/agent/drafts/20260318--20260318-encoding-predictability-and-legibility-for-style-conditioned-dif-9f75e2db.md
+- docs/agent/drafts/20260319--20260319-ia2-alignment-with-icl-activations-improves-supervised-fine-tuni-ceca4a24.md
+- docs/agent/drafts/20260319--20260319-tree-search-for-llm-agent-reinforcement-learning-df6644d7.md
 
