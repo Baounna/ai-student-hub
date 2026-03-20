@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-19T07:36:50.743Z
+Generated: 2026-03-20T07:31:13.074Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Online Learning for Supervisory Switching Control: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. ASAP: Attention-Shift-Aware Pruning for Efficient LVLM Inference: What It Means for AI/CS Students
+1. Do VLMs Need Vision Transformers? Evaluating State Space Models as Vision Encoders: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. AR-Flow VAE: A Structured Autoregressive Flow Prior Variational Autoencoder for Unsupervised Blind Source Separation: What It Means for AI/CS Students
+2. The Exponentially Weighted Signature: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Solving physics-constrained inverse problems with conditional flow matching: What It Means for AI/CS Students
+3. Optimal Splitting of Language Models from Mixtures to Specialized Domains: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Fast and Effective Computation of Generalized Symmetric Matrix Factorization: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Event-Driven Video Generation: What It Means for AI/CS Students
+5. Hardness of High-Dimensional Linear Classification: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Dual Space Preconditioning for Gradient Descent in the Overparameterized Regime: What It Means for AI/CS Students
+6. Fast and Interpretable Autoregressive Estimation with Neural Network Backpropagation: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260319--20260319-online-learning-for-supervisory-switching-control-d6a41722.md
-- docs/agent/drafts/20260319--20260319-asap-attention-shift-aware-pruning-for-efficient-lvlm-inference-c0e5cd85.md
+- docs/agent/drafts/20260320--20260320-do-vlms-need-vision-transformers-evaluating-state-space-models-a-6bef1d20.md
+- docs/agent/drafts/20260320--20260320-the-exponentially-weighted-signature-90237bb4.md
 
