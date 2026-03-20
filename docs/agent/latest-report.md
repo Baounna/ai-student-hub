@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-20T07:31:13.074Z
+Generated: 2026-03-20T07:35:24.319Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Do VLMs Need Vision Transformers? Evaluating State Space Models as Vision Encoders: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+1. An Order-Sensitive Conflict Measure for Random Permutation Sets: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. Don't Pass@k: A Bayesian Framework for Large Language Model Evaluation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. The Exponentially Weighted Signature: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Optimal Splitting of Language Models from Mixtures to Specialized Domains: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+3. CausalARC: Abstract Reasoning with Causal World Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Fast and Effective Computation of Generalized Symmetric Matrix Factorization: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Hardness of High-Dimensional Linear Classification: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Fast and Interpretable Autoregressive Estimation with Neural Network Backpropagation: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+4. MMSearch-Plus: Benchmarking Provenance-Aware Search for Multimodal Browsing Agents: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+5. Single Agent Robust Deep Reinforcement Learning for Bus Fleet Control: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Multimodal Fused Learning for Solving the Generalized Traveling Salesman Problem in Robotic Task Planning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260320--20260320-do-vlms-need-vision-transformers-evaluating-state-space-models-a-6bef1d20.md
-- docs/agent/drafts/20260320--20260320-the-exponentially-weighted-signature-90237bb4.md
+- docs/agent/drafts/20260320--20260320-an-order-sensitive-conflict-measure-for-random-permutation-sets-861f868e.md
+- docs/agent/drafts/20260320--20260320-dont-passk-a-bayesian-framework-for-large-language-model-evaluat-aea2a39f.md
 
