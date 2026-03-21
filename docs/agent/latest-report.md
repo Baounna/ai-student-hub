@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-21T07:20:05.105Z
+Generated: 2026-03-21T07:22:07.060Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Prompt Architecture Determines Reasoning Quality: A Variable Isolation Study on the Car Wash Problem: What It Means for AI/CS Students
+1. Auditing Preferences for Brands and Cultures in LLMs: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. From Logs to Language: Learning Optimal Verbalization for LLM-Based Recommendation at Industry Scale: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Verifiable Semantics for Agent-to-Agent Communication: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Developing a Discrete-Event Simulator of School Shooter Behavior from VR Data: What It Means for AI/CS Students
+2. Sparse3DTrack: Monocular 3D Object Tracking Using Sparse Supervision: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Memory Bear AI A Breakthrough from Memory to Cognition Toward Artificial General Intelligence: What It Means for AI/CS Students
+3. Offload or Overload: A Platform Measurement Study of Mobile Robotic Manipulation Workloads: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. AgroCoT: A Chain-of-Thought Benchmark for Evaluating Reasoning in Vision-Language Models for Agriculture: What It Means for AI/CS Students
+4. Detection Is Cheap, Routing Is Learned: Why Refusal-Based Alignment Evaluation Fails: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Enactor: From Traffic Simulators to Surrogate World Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. LRConv-NeRV: Low Rank Convolution for Efficient Neural Video Compression: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260321--20260321-prompt-architecture-determines-reasoning-quality-a-variable-isol-f6c5c500.md
-- docs/agent/drafts/20260321--20260321-from-logs-to-language-learning-optimal-verbalization-for-llm-bas-9a5e833b.md
+- docs/agent/drafts/20260321--20260321-auditing-preferences-for-brands-and-cultures-in-llms-42c35754.md
+- docs/agent/drafts/20260321--20260321-sparse3dtrack-monocular-3d-object-tracking-using-sparse-supervis-71c130ab.md
 
