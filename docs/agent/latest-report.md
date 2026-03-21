@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-20T07:35:24.319Z
+Generated: 2026-03-21T07:20:05.105Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. An Order-Sensitive Conflict Measure for Random Permutation Sets: What It Means for AI/CS Students
+1. Prompt Architecture Determines Reasoning Quality: A Variable Isolation Study on the Car Wash Problem: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. From Logs to Language: Learning Optimal Verbalization for LLM-Based Recommendation at Industry Scale: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Verifiable Semantics for Agent-to-Agent Communication: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Developing a Discrete-Event Simulator of School Shooter Behavior from VR Data: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Don't Pass@k: A Bayesian Framework for Large Language Model Evaluation: What It Means for AI/CS Students
+5. Memory Bear AI A Breakthrough from Memory to Cognition Toward Artificial General Intelligence: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. CausalARC: Abstract Reasoning with Causal World Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. MMSearch-Plus: Benchmarking Provenance-Aware Search for Multimodal Browsing Agents: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. AgroCoT: A Chain-of-Thought Benchmark for Evaluating Reasoning in Vision-Language Models for Agriculture: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: best ai model benchmark for students arxiv cs.ai
    - Monetization angle: benchmark + budget-friendly model/tool choice
    - CTA: Compare tools + student guide
-5. Single Agent Robust Deep Reinforcement Learning for Bus Fleet Control: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Multimodal Fused Learning for Solving the Generalized Traveling Salesman Problem in Robotic Task Planning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260320--20260320-an-order-sensitive-conflict-measure-for-random-permutation-sets-861f868e.md
-- docs/agent/drafts/20260320--20260320-dont-passk-a-bayesian-framework-for-large-language-model-evaluat-aea2a39f.md
+- docs/agent/drafts/20260321--20260321-prompt-architecture-determines-reasoning-quality-a-variable-isol-f6c5c500.md
+- docs/agent/drafts/20260321--20260321-from-logs-to-language-learning-optimal-verbalization-for-llm-bas-9a5e833b.md
 
