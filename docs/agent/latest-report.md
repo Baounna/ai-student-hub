@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-21T07:22:07.060Z
+Generated: 2026-03-22T07:24:57.225Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Auditing Preferences for Brands and Cultures in LLMs: What It Means for AI/CS Students
+1. Thinking with Constructions: A Benchmark and Policy Optimization for Visual-Text Interleaved Geometric Reasoning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+2. Balanced Thinking: Improving Chain of Thought Training in Vision Language Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Sparse3DTrack: Monocular 3D Object Tracking Using Sparse Supervision: What It Means for AI/CS Students
+3. An Onto-Relational-Sophic Framework for Governing Synthetic Minds: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Offload or Overload: A Platform Measurement Study of Mobile Robotic Manipulation Workloads: What It Means for AI/CS Students
+4. TeachingCoach: A Fine-Tuned Scaffolding Chatbot for Instructional Guidance to Instructors: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Detection Is Cheap, Routing Is Learned: Why Refusal-Based Alignment Evaluation Fails: What It Means for AI/CS Students
+5. Efficient Dense Crowd Trajectory Prediction Via Dynamic Clustering: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Enactor: From Traffic Simulators to Surrogate World Models: What It Means for AI/CS Students
+6. Don't Vibe Code, Do Skele-Code: Interactive No-Code Notebooks for Subject Matter Experts to Build Lower-Cost Agentic Workflows: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. LRConv-NeRV: Low Rank Convolution for Efficient Neural Video Compression: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260321--20260321-auditing-preferences-for-brands-and-cultures-in-llms-42c35754.md
-- docs/agent/drafts/20260321--20260321-sparse3dtrack-monocular-3d-object-tracking-using-sparse-supervis-71c130ab.md
+- docs/agent/drafts/20260322--20260321-thinking-with-constructions-a-benchmark-and-policy-optimization--b9788718.md
+- docs/agent/drafts/20260322--20260321-balanced-thinking-improving-chain-of-thought-training-in-vision--6be8b091.md
 
