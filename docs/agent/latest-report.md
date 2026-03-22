@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-22T07:24:57.225Z
+Generated: 2026-03-22T07:27:25.554Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260322--20260321-thinking-with-constructions-a-benchmark-and-policy-optimization--b9788718.md
-- docs/agent/drafts/20260322--20260321-balanced-thinking-improving-chain-of-thought-training-in-vision--6be8b091.md
+- docs/agent/drafts/20260322--20260321-an-onto-relational-sophic-framework-for-governing-synthetic-mind-799f6b23.md
+- docs/agent/drafts/20260322--20260321-teachingcoach-a-fine-tuned-scaffolding-chatbot-for-instructional-36fee57a.md
 
