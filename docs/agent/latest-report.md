@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-23T07:46:23.507Z
+Generated: 2026-03-23T07:47:49.181Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. FedPDPO: Federated Personalized Direct Preference Optimization for Large Language Model Alignment: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+1. Prompt-tuning with Attribute Guidance for Low-resource Entity Matching: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Learning from Similarity/Dissimilarity and Pairwise Comparison: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+2. Ternary Gamma Semirings: From Neural Implementation to Categorical Foundations: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Regret Analysis of Sleeping Competing Bandits: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Ontology-Based Knowledge Modeling and Uncertainty-Aware Outdoor Air Quality Assessment Using Weighted Interval Type-2 Fuzzy Logic: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+3. Memory-Driven Role-Playing: Evaluation and Enhancement of Persona Knowledge Utilization in LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Scale-Dependent Radial Geometry and Metric Mismatch in Wasserstein Propagation for Reverse Diffusion: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Ensembles-based Feature Guided Analysis: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+4. LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. MemReward: Graph-Based Experience Memory for LLM Reward Prediction with Limited Labels: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. GT-Space: Enhancing Heterogeneous Collaborative Perception with Ground Truth Feature Space: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260323--20260323-fedpdpo-federated-personalized-direct-preference-optimization-fo-2f1da480.md
-- docs/agent/drafts/20260323--20260323-learning-from-similaritydissimilarity-and-pairwise-comparison-6444abdd.md
+- docs/agent/drafts/20260323--20260323-prompt-tuning-with-attribute-guidance-for-low-resource-entity-ma-a276dab2.md
+- docs/agent/drafts/20260323--20260323-ternary-gamma-semirings-from-neural-implementation-to-categorica-c57e1ade.md
 
