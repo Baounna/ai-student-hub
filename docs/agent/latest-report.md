@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-24T07:38:20.277Z
+Generated: 2026-03-24T07:40:51.473Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Satellite to Street : Disaster Impact Estimator: What It Means for AI/CS Students
+1. Mixture of Chapters: Scaling Learnt Memory in Transformers: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. The Price of Progress: Price Performance and the Future of AI: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-3. Real-Time Long Horizon Air Quality Forecasting via Group-Relative Policy Optimization: What It Means for AI/CS Students
+2. Representation-Level Adversarial Regularization for Clinically Aligned Multitask Thyroid Ultrasound Assessment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Multi-Context Fusion Transformer for Pedestrian Crossing Intention Prediction in Urban Environments: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Open-weight genome language model safeguards: Assessing robustness via adversarial fine-tuning: What It Means for AI/CS Students
+3. ViCLSR: A Supervised Contrastive Learning Framework with Natural Language Inference for Natural Language Understanding Tasks: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. SAGE: Shape-Adapting Gated Experts for Adaptive Histopathology Image Segmentation: What It Means for AI/CS Students
+4. Assessing the Ability of Neural TTS Systems to Model Consonant-Induced F0 Perturbation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. CTFS : Collaborative Teacher Framework for Forward-Looking Sonar Image Semantic Segmentation with Extremely Limited Labels: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Harmful Visual Content Manipulation Matters in Misinformation Detection Under Multimedia Scenarios: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260324--20260324-satellite-to-street-disaster-impact-estimator-9b496e71.md
-- docs/agent/drafts/20260324--20260324-the-price-of-progress-price-performance-and-the-future-of-ai-0369c4f2.md
+- docs/agent/drafts/20260324--20260324-mixture-of-chapters-scaling-learnt-memory-in-transformers-6aec9ffa.md
+- docs/agent/drafts/20260324--20260324-representation-level-adversarial-regularization-for-clinically-a-f97dc82d.md
 
