@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-23T07:47:49.181Z
+Generated: 2026-03-24T07:38:20.277Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Prompt-tuning with Attribute Guidance for Low-resource Entity Matching: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Ternary Gamma Semirings: From Neural Implementation to Categorical Foundations: What It Means for AI/CS Students
+1. Satellite to Street : Disaster Impact Estimator: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Memory-Driven Role-Playing: Evaluation and Enhancement of Persona Knowledge Utilization in LLMs: What It Means for AI/CS Students
+2. The Price of Progress: Price Performance and the Future of AI: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+3. Real-Time Long Horizon Air Quality Forecasting via Group-Relative Policy Optimization: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Multi-Context Fusion Transformer for Pedestrian Crossing Intention Prediction in Urban Environments: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Open-weight genome language model safeguards: Assessing robustness via adversarial fine-tuning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. MemReward: Graph-Based Experience Memory for LLM Reward Prediction with Limited Labels: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. GT-Space: Enhancing Heterogeneous Collaborative Perception with Ground Truth Feature Space: What It Means for AI/CS Students
+6. SAGE: Shape-Adapting Gated Experts for Adaptive Histopathology Image Segmentation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260323--20260323-prompt-tuning-with-attribute-guidance-for-low-resource-entity-ma-a276dab2.md
-- docs/agent/drafts/20260323--20260323-ternary-gamma-semirings-from-neural-implementation-to-categorica-c57e1ade.md
+- docs/agent/drafts/20260324--20260324-satellite-to-street-disaster-impact-estimator-9b496e71.md
+- docs/agent/drafts/20260324--20260324-the-price-of-progress-price-performance-and-the-future-of-ai-0369c4f2.md
 
