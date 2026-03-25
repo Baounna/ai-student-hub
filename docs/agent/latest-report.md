@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-24T07:40:51.473Z
+Generated: 2026-03-25T07:37:34.712Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Mixture of Chapters: Scaling Learnt Memory in Transformers: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Representation-Level Adversarial Regularization for Clinically Aligned Multitask Thyroid Ultrasound Assessment: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. ViCLSR: A Supervised Contrastive Learning Framework with Natural Language Inference for Natural Language Understanding Tasks: What It Means for AI/CS Students
+1. Automating quantum feature map design via large language models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Assessing the Ability of Neural TTS Systems to Model Consonant-Induced F0 Perturbation: What It Means for AI/CS Students
+2. Multiplicative learning from observation-prediction ratios: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. Collaborative Evaluation of Deepfake Text with Deliberation-Enhancing Dialogue Systems: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Training-free Adjustable Polynomial Graph Filtering for Ultra-fast Multimodal Recommendation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. CTFS : Collaborative Teacher Framework for Forward-Looking Sonar Image Semantic Segmentation with Extremely Limited Labels: What It Means for AI/CS Students
+5. Streaming Attention Approximation via Discrepancy Theory: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Harmful Visual Content Manipulation Matters in Misinformation Detection Under Multimedia Scenarios: What It Means for AI/CS Students
+6. Mitigating Object Hallucinations in Large Vision-Language Models via Attention Calibration: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260324--20260324-mixture-of-chapters-scaling-learnt-memory-in-transformers-6aec9ffa.md
-- docs/agent/drafts/20260324--20260324-representation-level-adversarial-regularization-for-clinically-a-f97dc82d.md
+- docs/agent/drafts/20260325--20260325-automating-quantum-feature-map-design-via-large-language-models-b494f322.md
+- docs/agent/drafts/20260325--20260325-multiplicative-learning-from-observation-prediction-ratios-647e42e1.md
 
