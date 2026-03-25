@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-25T07:37:34.712Z
+Generated: 2026-03-25T07:40:13.008Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Automating quantum feature map design via large language models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. Generative AI Meets 6G and Beyond: Diffusion Models for Semantic Communications: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Multiplicative learning from observation-prediction ratios: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. MoEGCL: Mixture of Ego-Graphs Contrastive Representation Learning for Multi-View Clustering: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Collaborative Evaluation of Deepfake Text with Deliberation-Enhancing Dialogue Systems: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+3. Riesz Regression As Direct Density Ratio Estimation: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Training-free Adjustable Polynomial Graph Filtering for Ultra-fast Multimodal Recommendation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+4. Morphology-Aware Peptide Discovery via Masked Conditional Generative Modeling: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Streaming Attention Approximation via Discrepancy Theory: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Mitigating Object Hallucinations in Large Vision-Language Models via Attention Calibration: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+5. Prediction-Powered Inference with Inverse Probability Weighting: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+6. BeltCrack: the First Sequential-image Industrial Conveyor Belt Crack Detection Dataset and Its Baseline with Triple-domain Feature Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260325--20260325-automating-quantum-feature-map-design-via-large-language-models-b494f322.md
-- docs/agent/drafts/20260325--20260325-multiplicative-learning-from-observation-prediction-ratios-647e42e1.md
+- docs/agent/drafts/20260325--20260325-generative-ai-meets-6g-and-beyond-diffusion-models-for-semantic--cd725610.md
+- docs/agent/drafts/20260325--20260325-moegcl-mixture-of-ego-graphs-contrastive-representation-learning-1bd40a5d.md
 
