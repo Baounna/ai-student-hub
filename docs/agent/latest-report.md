@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-26T07:43:59.084Z
+Generated: 2026-03-26T07:45:33.600Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Beyond State-Wise Mirror Descent: Offline Policy Optimization with Parametric Policies: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Smooth Gate Functions for Soft Advantage Policy Optimization: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Team of Thoughts: Efficient Test-time Scaling of Agentic Systems through Orchestrated Tool Calling: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. Comparing Developer and LLM Biases in Code Evaluation: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. OmniCustom: Sync Audio-Video Customization Via Joint Audio-Video Generation Model: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. AceGRPO: Adaptive Curriculum Enhanced Group Relative Policy Optimization for Autonomous Machine Learning Engineering: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. Analysing the Safety Pitfalls of Steering Vectors: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. KRONE: Hierarchical and Modular Log Anomaly Detection: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+3. What and When to Learn: CURriculum Ranking Loss for Large-Scale Speaker Verification: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. SpinGQE: A Generative Quantum Eigensolver for Spin Hamiltonians: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. MARCH: Multi-Agent Reinforced Self-Check for LLM Hallucination: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Robust Multilingual Text-to-Pictogram Mapping for Scalable Reading Rehabilitation: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260326--20260326-beyond-state-wise-mirror-descent-offline-policy-optimization-wit-9d85108b.md
-- docs/agent/drafts/20260326--20260326-smooth-gate-functions-for-soft-advantage-policy-optimization-758cbf68.md
+- docs/agent/drafts/20260326--20260326-comparing-developer-and-llm-biases-in-code-evaluation-a8d774af.md
+- docs/agent/drafts/20260326--20260326-analysing-the-safety-pitfalls-of-steering-vectors-bf404921.md
 
