@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-25T07:40:13.008Z
+Generated: 2026-03-26T07:43:59.084Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Generative AI Meets 6G and Beyond: Diffusion Models for Semantic Communications: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. MoEGCL: Mixture of Ego-Graphs Contrastive Representation Learning for Multi-View Clustering: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. Beyond State-Wise Mirror Descent: Offline Policy Optimization with Parametric Policies: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Riesz Regression As Direct Density Ratio Estimation: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+2. Smooth Gate Functions for Soft Advantage Policy Optimization: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Morphology-Aware Peptide Discovery via Masked Conditional Generative Modeling: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+3. Team of Thoughts: Efficient Test-time Scaling of Agentic Systems through Orchestrated Tool Calling: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Prediction-Powered Inference with Inverse Probability Weighting: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+4. OmniCustom: Sync Audio-Video Customization Via Joint Audio-Video Generation Model: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. BeltCrack: the First Sequential-image Industrial Conveyor Belt Crack Detection Dataset and Its Baseline with Triple-domain Feature Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+5. AceGRPO: Adaptive Curriculum Enhanced Group Relative Policy Optimization for Autonomous Machine Learning Engineering: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. KRONE: Hierarchical and Modular Log Anomaly Detection: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260325--20260325-generative-ai-meets-6g-and-beyond-diffusion-models-for-semantic--cd725610.md
-- docs/agent/drafts/20260325--20260325-moegcl-mixture-of-ego-graphs-contrastive-representation-learning-1bd40a5d.md
+- docs/agent/drafts/20260326--20260326-beyond-state-wise-mirror-descent-offline-policy-optimization-wit-9d85108b.md
+- docs/agent/drafts/20260326--20260326-smooth-gate-functions-for-soft-advantage-policy-optimization-758cbf68.md
 
