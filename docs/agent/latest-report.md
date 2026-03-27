@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-26T07:45:33.600Z
+Generated: 2026-03-27T07:43:44.236Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Comparing Developer and LLM Biases in Code Evaluation: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+1. Konkani LLM: Multi-Script Instruction Tuning and Evaluation for a Low-Resource Indian Language: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Analysing the Safety Pitfalls of Steering Vectors: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. What and When to Learn: CURriculum Ranking Loss for Large-Scale Speaker Verification: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. SpinGQE: A Generative Quantum Eigensolver for Spin Hamiltonians: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. MARCH: Multi-Agent Reinforced Self-Check for LLM Hallucination: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+2. Navigating the Concept Space of Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Robust Multilingual Text-to-Pictogram Mapping for Scalable Reading Rehabilitation: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+3. Qworld: Question-Specific Evaluation Criteria for LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Chitrakshara: A Large Multilingual Multimodal Dataset for Indian languages: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. From Physician Expertise to Clinical Agents: Preserving, Standardizing, and Scaling Physicians' Medical Expertise with Lightweight LLM: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. MedMT-Bench: Can LLMs Memorize and Understand Long Multi-Turn Conversations in Medical Scenarios?: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260326--20260326-comparing-developer-and-llm-biases-in-code-evaluation-a8d774af.md
-- docs/agent/drafts/20260326--20260326-analysing-the-safety-pitfalls-of-steering-vectors-bf404921.md
+- docs/agent/drafts/20260327--20260327-konkani-llm-multi-script-instruction-tuning-and-evaluation-for-a-6dd2b21d.md
+- docs/agent/drafts/20260327--20260327-navigating-the-concept-space-of-language-models-2c70cf46.md
 
