@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-28T07:30:04.449Z
+Generated: 2026-03-28T07:33:56.777Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260328--20260327-stadler-reshapes-knowledge-work-at-a-230-year-old-company-757698a9.md
-- docs/agent/drafts/20260328--20260327-how-we-use-abstract-syntax-trees-asts-to-turn-workflows-code-int-c5787618.md
+- docs/agent/drafts/20260328--20260327-the-cognitive-firewallsecuring-browser-based-ai-agents-against-i-41ed0828.md
+- docs/agent/drafts/20260328--20260327-probabilistic-geometric-alignment-via-bayesian-latent-transport--f0cbc12f.md
 
