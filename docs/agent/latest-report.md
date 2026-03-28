@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-27T07:45:42.897Z
+Generated: 2026-03-28T07:30:04.449Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Wireless communication empowers online scheduling of partially-observable transportation multi-robot systems in a smart factory: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. GRMLR: Knowledge-Enhanced Small-Data Learning for Deep-Sea Cold Seep Stage Inference: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+1. STADLER reshapes knowledge work at a 230-year-old company: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Optimal Variance-Dependent Regret Bounds for Infinite-Horizon MDPs: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Off-Policy Safe Reinforcement Learning with Constrained Optimistic Exploration: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. An Invariant Compiler for Neural ODEs in AI-Accelerated Scientific Simulation: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Symbolic--KAN: Kolmogorov-Arnold Networks with Discrete Symbolic Structure for Interpretable Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+2. How we use Abstract Syntax Trees (ASTs) to turn Workflows code into visual diagrams: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. The Cognitive Firewall:Securing Browser Based AI Agents Against Indirect Prompt Injection Via Hybrid Edge Cloud Defense: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Probabilistic Geometric Alignment via Bayesian Latent Transport for Domain-Adaptive Foundation Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Human-in-the-Loop Pareto Optimization: Trade-off Characterization for Assist-as-Needed Training and Performance Evaluation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+6. AI-driven Intent-Based Networking Approach for Self-configuration of Next Generation Networks: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260327--20260327-wireless-communication-empowers-online-scheduling-of-partially-o-08db56a0.md
-- docs/agent/drafts/20260327--20260327-grmlr-knowledge-enhanced-small-data-learning-for-deep-sea-cold-s-dcc63900.md
+- docs/agent/drafts/20260328--20260327-stadler-reshapes-knowledge-work-at-a-230-year-old-company-757698a9.md
+- docs/agent/drafts/20260328--20260327-how-we-use-abstract-syntax-trees-asts-to-turn-workflows-code-int-c5787618.md
 
