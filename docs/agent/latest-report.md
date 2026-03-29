@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-29T07:35:39.353Z
+Generated: 2026-03-29T07:38:27.364Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -95,7 +95,6 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 2
-- docs/agent/drafts/20260329--20260327-human-in-the-loop-pareto-optimization-trade-off-characterization-083c15e8.md
-- docs/agent/drafts/20260329--20260327-ai-driven-intent-based-networking-approach-for-self-configuratio-0edd0dfd.md
+- New drafts generated: 0
+- No new drafts generated (existing coverage or no opportunities).
 
