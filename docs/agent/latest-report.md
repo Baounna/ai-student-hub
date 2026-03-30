@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-30T08:10:21.618Z
+Generated: 2026-03-30T08:11:25.607Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. LiteCache: A Query Similarity-Driven, GPU-Centric KVCache Subsystem for Efficient LLM Inference: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Cascading Bandits With Feedback: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. Complexity-Aware Deep Symbolic Regression with Robust Risk-Seeking Policy Gradients: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Is the Hard-Label Cryptanalytic Model Extraction Really Polynomial?: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. NeST-BO: Fast Local Bayesian Optimization via Newton-Step Targeting of Gradient and Hessian Information: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+2. Uncovering What, Why and How: A Comprehensive Benchmark for Causation Understanding of Video Anomaly: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+3. Error Estimation for Physics-informed Neural Networks Approximating Semilinear Wave Equations: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Activation Steering with a Feedback Controller: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+4. The Competence Shadow: Theory and Bounds of AI Assistance in Safety Engineering: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Large Language Models Can Perform Automatic Modulation Classification via Discretized Self-supervised Candidate Retrieval: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+5. Governance-Aware Vector Subscriptions for Multi-Agent Knowledge Ecosystems: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+6. Large-Scale Analysis of Persuasive Content on Moltbook: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260330--20260330-litecache-a-query-similarity-driven-gpu-centric-kvcache-subsyste-1eaf7383.md
-- docs/agent/drafts/20260330--20260330-cascading-bandits-with-feedback-3a589a77.md
+- docs/agent/drafts/20260330--20260330-complexity-aware-deep-symbolic-regression-with-robust-risk-seeki-4150b556.md
+- docs/agent/drafts/20260330--20260330-uncovering-what-why-and-how-a-comprehensive-benchmark-for-causat-be74ef6d.md
 
