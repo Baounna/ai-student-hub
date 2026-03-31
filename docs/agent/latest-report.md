@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-31T07:53:06.939Z
+Generated: 2026-03-31T07:54:47.782Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. RAP: Retrieve, Adapt, and Prompt-Fit for Training-Free Few-Shot Medical Image Segmentation: What It Means for AI/CS Students
+1. PhysMem: Scaling Test-time Physical Memory for Robot Manipulation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. Benchmarking Early Deterioration Prediction Across Hospital-Rich and MCI-Like Emergency Triage Under Constrained Sensing: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+3. FUSAR-GPT : A Spatiotemporal Feature-Embedded and Two-Stage Decoupled Visual Language Model for SAR Imagery: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. LVRPO: Language-Visual Alignment with GRPO for Multimodal Understanding and Generation: What It Means for AI/CS Students
+4. MALLVI: A Multi-Agent Framework for Integrated Generalized Robotics Manipulation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. ProgressVLA: Progress-Guided Diffusion Policy for Vision-Language Robotic Manipulation: What It Means for AI/CS Students
+5. When AI Agents Teach Each Other: Discourse Patterns Resembling Peer Learning in the Moltbook Community: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. EvA: An Evidence-First Audio Understanding Paradigm for LALMs: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. ContraMap: Contrastive Uncertainty Mapping for Robot Environment Representation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Umwelt Engineering: Designing the Cognitive Worlds of Linguistic Agents: What It Means for AI/CS Students
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. CoPE-VideoLM: Leveraging Codec Primitives For Efficient Video Language Modeling: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260331--20260331-rap-retrieve-adapt-and-prompt-fit-for-training-free-few-shot-med-ed439bec.md
-- docs/agent/drafts/20260331--20260331-lvrpo-language-visual-alignment-with-grpo-for-multimodal-underst-8c6b026d.md
+- docs/agent/drafts/20260331--20260331-physmem-scaling-test-time-physical-memory-for-robot-manipulation-4e15ae82.md
+- docs/agent/drafts/20260331--20260331-benchmarking-early-deterioration-prediction-across-hospital-rich-f98d2160.md
 
