@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-30T08:11:25.607Z
+Generated: 2026-03-31T07:53:06.939Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Complexity-Aware Deep Symbolic Regression with Robust Risk-Seeking Policy Gradients: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Uncovering What, Why and How: A Comprehensive Benchmark for Causation Understanding of Video Anomaly: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-3. Error Estimation for Physics-informed Neural Networks Approximating Semilinear Wave Equations: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. The Competence Shadow: Theory and Bounds of AI Assistance in Safety Engineering: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Governance-Aware Vector Subscriptions for Multi-Agent Knowledge Ecosystems: What It Means for AI/CS Students
+1. RAP: Retrieve, Adapt, and Prompt-Fit for Training-Free Few-Shot Medical Image Segmentation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Large-Scale Analysis of Persuasive Content on Moltbook: What It Means for AI/CS Students
+2. LVRPO: Language-Visual Alignment with GRPO for Multimodal Understanding and Generation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. ProgressVLA: Progress-Guided Diffusion Policy for Vision-Language Robotic Manipulation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+4. EvA: An Evidence-First Audio Understanding Paradigm for LALMs: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. ContraMap: Contrastive Uncertainty Mapping for Robot Environment Representation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Umwelt Engineering: Designing the Cognitive Worlds of Linguistic Agents: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260330--20260330-complexity-aware-deep-symbolic-regression-with-robust-risk-seeki-4150b556.md
-- docs/agent/drafts/20260330--20260330-uncovering-what-why-and-how-a-comprehensive-benchmark-for-causat-be74ef6d.md
+- docs/agent/drafts/20260331--20260331-rap-retrieve-adapt-and-prompt-fit-for-training-free-few-shot-med-ed439bec.md
+- docs/agent/drafts/20260331--20260331-lvrpo-language-visual-alignment-with-grpo-for-multimodal-underst-8c6b026d.md
 
