@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-01T08:03:38.592Z
+Generated: 2026-04-01T08:04:56.831Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,29 +45,29 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: ai cs update for students hugging face blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Accelerating Diffusion Large Language Models with SlowFast Sampling: The Three Golden Principles: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. AVA-Bench: Atomic Visual Ability Benchmark for Vision Foundation Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
+2. ProxyAttn: Guided Sparse Attention via Representative Heads: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. The Pareto Frontier of Resilient Jet Tagging: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Joint Cooperative and Non-Cooperative Localization in WSNs with Distributed Scaled Proximal ADMM Algorithms: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. ORIC: Benchmarking Object Recognition under Contextual Incongruity in Large Vision-Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: best ai model benchmark for students arxiv cs.lg
    - Monetization angle: benchmark + budget-friendly model/tool choice
    - CTA: Compare tools + student guide
-4. Denoising the Future: Top-p Distributions for Moving Through Time: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. FA-INR: Adaptive Implicit Neural Representations for Interpretable Exploration of Simulation Ensembles: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. AI-Generated Compromises for Coalition Formation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+6. A Machine Learning Based Explainability Framework for Interpreting Swarm Intelligence: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260401--20260401-falcon-perception-427e27dd.md
-- docs/agent/drafts/20260401--20260401-accelerating-diffusion-large-language-models-with-slowfast-sampl-652ffce8.md
+- docs/agent/drafts/20260401--20260401-proxyattn-guided-sparse-attention-via-representative-heads-c1a62761.md
+- docs/agent/drafts/20260401--20260401-the-pareto-frontier-of-resilient-jet-tagging-808d68bb.md
 
