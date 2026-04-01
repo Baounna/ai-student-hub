@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-03-31T07:54:47.782Z
+Generated: 2026-04-01T08:03:38.592Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. PhysMem: Scaling Test-time Physical Memory for Robot Manipulation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+1. Falcon Perception: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: ai cs update for students hugging face blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Benchmarking Early Deterioration Prediction Across Hospital-Rich and MCI-Like Emergency Triage Under Constrained Sensing: What It Means for AI/CS Students
+2. Accelerating Diffusion Large Language Models with SlowFast Sampling: The Three Golden Principles: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. AVA-Bench: Atomic Visual Ability Benchmark for Vision Foundation Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: best ai model benchmark for students arxiv cs.ai
    - Monetization angle: benchmark + budget-friendly model/tool choice
    - CTA: Compare tools + student guide
-3. FUSAR-GPT : A Spatiotemporal Feature-Embedded and Two-Stage Decoupled Visual Language Model for SAR Imagery: What It Means for AI/CS Students
+4. Denoising the Future: Top-p Distributions for Moving Through Time: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. MALLVI: A Multi-Agent Framework for Integrated Generalized Robotics Manipulation: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. FA-INR: Adaptive Implicit Neural Representations for Interpretable Exploration of Simulation Ensembles: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. When AI Agents Teach Each Other: Discourse Patterns Resembling Peer Learning in the Moltbook Community: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. AI-Generated Compromises for Coalition Formation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. CoPE-VideoLM: Leveraging Codec Primitives For Efficient Video Language Modeling: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260331--20260331-physmem-scaling-test-time-physical-memory-for-robot-manipulation-4e15ae82.md
-- docs/agent/drafts/20260331--20260331-benchmarking-early-deterioration-prediction-across-hospital-rich-f98d2160.md
+- docs/agent/drafts/20260401--20260401-falcon-perception-427e27dd.md
+- docs/agent/drafts/20260401--20260401-accelerating-diffusion-large-language-models-with-slowfast-sampl-652ffce8.md
 
