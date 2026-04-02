@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-02T07:48:49.146Z
+Generated: 2026-04-02T07:50:18.530Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. OPERA: Online Data Pruning for Efficient Retrieval Model Adaptation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. CHIMERA-Bench: A Benchmark Dataset for Epitope-Specific Antibody Design: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-3. RoboClaw: An Agentic Framework for Scalable Long-Horizon Robotic Tasks: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Mousse: Rectifying the Geometry of Muon with Curvature-Aware Preconditioning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+1. Narrative Fingerprints: Multi-Scale Author Identification via Novelty Curve Dynamics: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+2. Uncertainty-Aware Variational Reward Factorization via Probabilistic Preference Bases for LLM Personalization: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. TaCarla: A comprehensive benchmarking dataset for end-to-end autonomous driving: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
+3. Phase transition on a context-sensitive random language model with short range interactions: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Positional Cognitive Specialization: Where Do LLMs Learn To Comprehend and Speak Your Language?: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. GPT-NL Public Corpus: A Permissively Licensed, Dutch-First Dataset for LLM Pre-training: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260402--20260402-opera-online-data-pruning-for-efficient-retrieval-model-adaptati-b44979b6.md
-- docs/agent/drafts/20260402--20260402-chimera-bench-a-benchmark-dataset-for-epitope-specific-antibody--f4c0efe6.md
+- docs/agent/drafts/20260402--20260402-narrative-fingerprints-multi-scale-author-identification-via-nov-2d0c1184.md
+- docs/agent/drafts/20260402--20260402-uncertainty-aware-variational-reward-factorization-via-probabili-0aa5fd53.md
 
