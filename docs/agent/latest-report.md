@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-03T07:45:50.948Z
+Generated: 2026-04-03T07:47:21.095Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. An Online Machine Learning Multi-resolution Optimization Framework for Energy System Design Limit of Performance Analysis: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: best ai model benchmark for students arxiv cs.lg
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-2. UQ-SHRED: uncertainty quantification of shallow recurrent decoder networks for sparse sensing via engression: What It Means for AI/CS Students
+1. Causal K-Means Clustering: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Forecasting Supply Chain Disruptions with Foresight Learning: What It Means for AI/CS Students
+2. Tackling Non-IIDness in HAPS-Aided Federated Learning: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Sven: Singular Value Descent as a Computationally Efficient Natural Gradient Method: What It Means for AI/CS Students
+3. Information theory for dimensionality reduction in dynamical systems: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. DySCo: Dynamic Semantic Compression for Effective Long-term Time Series Forecasting: What It Means for AI/CS Students
+4. Property-Level Flood Risk Assessment Using AI-Enabled Street-View Lowest Floor Elevation Extraction and ML Imputation Across Texas: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. TaCarla: A comprehensive benchmarking dataset for end-to-end autonomous driving: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
+5. Toward Personalized Darts Training: A Data-Driven Framework Based on Skeleton-Based Biomechanical Analysis and Motion Modeling: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Chameleons do not Forget: Prompt-Based Online Continual Learning for Next Activity Prediction: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260403--20260403-an-online-machine-learning-multi-resolution-optimization-framewo-ef99de91.md
-- docs/agent/drafts/20260403--20260403-uq-shred-uncertainty-quantification-of-shallow-recurrent-decoder-4ff7a33b.md
+- docs/agent/drafts/20260403--20260403-causal-k-means-clustering-b1648d47.md
+- docs/agent/drafts/20260403--20260403-tackling-non-iidness-in-haps-aided-federated-learning-446d5523.md
 
