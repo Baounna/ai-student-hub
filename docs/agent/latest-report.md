@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-02T07:50:18.530Z
+Generated: 2026-04-03T07:45:50.948Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Narrative Fingerprints: Multi-Scale Author Identification via Novelty Curve Dynamics: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+1. An Online Machine Learning Multi-resolution Optimization Framework for Energy System Design Limit of Performance Analysis: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: best ai model benchmark for students arxiv cs.lg
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+2. UQ-SHRED: uncertainty quantification of shallow recurrent decoder networks for sparse sensing via engression: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Uncertainty-Aware Variational Reward Factorization via Probabilistic Preference Bases for LLM Personalization: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Phase transition on a context-sensitive random language model with short range interactions: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Positional Cognitive Specialization: Where Do LLMs Learn To Comprehend and Speak Your Language?: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. GPT-NL Public Corpus: A Permissively Licensed, Dutch-First Dataset for LLM Pre-training: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+3. Forecasting Supply Chain Disruptions with Foresight Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Sven: Singular Value Descent as a Computationally Efficient Natural Gradient Method: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. DySCo: Dynamic Semantic Compression for Effective Long-term Time Series Forecasting: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. TaCarla: A comprehensive benchmarking dataset for end-to-end autonomous driving: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260402--20260402-narrative-fingerprints-multi-scale-author-identification-via-nov-2d0c1184.md
-- docs/agent/drafts/20260402--20260402-uncertainty-aware-variational-reward-factorization-via-probabili-0aa5fd53.md
+- docs/agent/drafts/20260403--20260403-an-online-machine-learning-multi-resolution-optimization-framewo-ef99de91.md
+- docs/agent/drafts/20260403--20260403-uq-shred-uncertainty-quantification-of-shallow-recurrent-decoder-4ff7a33b.md
 
