@@ -1,6 +1,6 @@
 # AI Student Hub Agent Pipeline Report
 
-Generated: 2026-04-04T07:36:51.970Z
+Generated: 2026-04-05T07:41:30.814Z
 Overall: SUCCESS
 
 ## Settings
@@ -12,9 +12,9 @@ Overall: SUCCESS
 - Issue max per run: 6
 
 ## Step Results
-- [PASS] Auto news agent (774ms)
-- [PASS] Blog operator agent (45ms)
-- [PASS] Blog design agent (36ms)
-- [PASS] Issue sync (58ms)
-- [PASS] Agent health verification (39ms)
+- [PASS] Auto news agent (938ms)
+- [PASS] Blog operator agent (44ms)
+- [PASS] Blog design agent (42ms)
+- [PASS] Issue sync (59ms)
+- [PASS] Agent health verification (43ms)
 
