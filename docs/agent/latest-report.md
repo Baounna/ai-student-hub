@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-06T08:12:50.057Z
+Generated: 2026-04-07T07:58:18.671Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Speaking of Language: Reflections on Metalanguage Research in NLP: What It Means for AI/CS Students
+1. Learning from Imperfect Demonstrations via Temporal Behavior Tree-Guided Trajectory Repair: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Cross-Vehicle 3D Geometric Consistency for Self-Supervised Surround Depth Estimation on Articulated Vehicles: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Analytic Drift Resister for Non-Exemplar Continual Graph Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Toys that listen, talk, and play: Understanding Children's Sensemaking and Interactions with AI Toys: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Smart Transfer: Leveraging Vision Foundation Model for Rapid Building Damage Mapping with Post-Earthquake VHR Imagery: What It Means for AI/CS Students
+2. LOCARD: An Agentic Framework for Blockchain Forensics: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Poison Once, Exploit Forever: Environment-Injected Memory Poisoning Attacks on Web Agents: What It Means for AI/CS Students
+3. Which English Do LLMs Prefer? Triangulating Structural Bias Towards American English in Foundation Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+4. ClawArena: Benchmarking AI Agents in Evolving Information Environments: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+5. Robots Need Some Education: On the complexity of learning in evolutionary robotics: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. PATHFINDER: Multi-objective discovery in structural and spectral spaces: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260406--20260406-speaking-of-language-reflections-on-metalanguage-research-in-nlp-651e0ced.md
-- docs/agent/drafts/20260406--20260406-cross-vehicle-3d-geometric-consistency-for-self-supervised-surro-bb62fb3e.md
+- docs/agent/drafts/20260407--20260407-learning-from-imperfect-demonstrations-via-temporal-behavior-tre-6e55b07c.md
+- docs/agent/drafts/20260407--20260407-locard-an-agentic-framework-for-blockchain-forensics-0a77af6a.md
 
