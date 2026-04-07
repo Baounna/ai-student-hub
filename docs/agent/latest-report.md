@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-07T07:58:18.671Z
+Generated: 2026-04-07T08:00:24.111Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Learning from Imperfect Demonstrations via Temporal Behavior Tree-Guided Trajectory Repair: What It Means for AI/CS Students
+1. ASTRA: Mapping Art-Technology Institutions via Conceptual Axes, Text Embeddings, and Unsupervised Clustering: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. LOCARD: An Agentic Framework for Blockchain Forensics: What It Means for AI/CS Students
+2. Detecting low left ventricular ejection fraction from ECG using an interpretable and scalable predictor-driven framework: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. MRI-to-CT synthesis using drifting models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Which English Do LLMs Prefer? Triangulating Structural Bias Towards American English in Foundation Models: What It Means for AI/CS Students
+4. HISA: Efficient Hierarchical Indexing for Fine-Grained Sparse Attention: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Towards Context-Aware Image Anonymization with Multi-Agent Reasoning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. ClawArena: Benchmarking AI Agents in Evolving Information Environments: What It Means for AI/CS Students
+6. A Firefly Algorithm for Mixed-Variable Optimization Based on Hybrid Distance Modeling: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-5. Robots Need Some Education: On the complexity of learning in evolutionary robotics: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. PATHFINDER: Multi-objective discovery in structural and spectral spaces: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260407--20260407-learning-from-imperfect-demonstrations-via-temporal-behavior-tre-6e55b07c.md
-- docs/agent/drafts/20260407--20260407-locard-an-agentic-framework-for-blockchain-forensics-0a77af6a.md
+- docs/agent/drafts/20260407--20260407-astra-mapping-art-technology-institutions-via-conceptual-axes-te-72aa858b.md
+- docs/agent/drafts/20260407--20260407-detecting-low-left-ventricular-ejection-fraction-from-ecg-using--90bad7f8.md
 
