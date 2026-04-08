@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-07T08:00:24.111Z
+Generated: 2026-04-08T08:01:37.013Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. ASTRA: Mapping Art-Technology Institutions via Conceptual Axes, Text Embeddings, and Unsupervised Clustering: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Detecting low left ventricular ejection fraction from ECG using an interpretable and scalable predictor-driven framework: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. MRI-to-CT synthesis using drifting models: What It Means for AI/CS Students
+1. Reveal-to-Revise: Explainable Bias-Aware Generative Modeling with Multimodal Attention: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. HISA: Efficient Hierarchical Indexing for Fine-Grained Sparse Attention: What It Means for AI/CS Students
+2. Dissecting Transformers: A CLEAR Perspective towards Green AI: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Towards Context-Aware Image Anonymization with Multi-Agent Reasoning: What It Means for AI/CS Students
+3. StateX: Enhancing RNN Recall via Post-training State Expansion: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Chiplet-Based RISC-V SoC with Modular AI Acceleration: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. A Firefly Algorithm for Mixed-Variable Optimization Based on Hybrid Distance Modeling: What It Means for AI/CS Students
+5. A State-Update Prompting Strategy for Efficient and Robust Multi-turn Dialogue: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. LifeAlign: Lifelong Alignment for Large Language Models with Memory-Augmented Focalized Preference Optimization: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260407--20260407-astra-mapping-art-technology-institutions-via-conceptual-axes-te-72aa858b.md
-- docs/agent/drafts/20260407--20260407-detecting-low-left-ventricular-ejection-fraction-from-ecg-using--90bad7f8.md
+- docs/agent/drafts/20260408--20260408-reveal-to-revise-explainable-bias-aware-generative-modeling-with-ef4df01c.md
+- docs/agent/drafts/20260408--20260408-dissecting-transformers-a-clear-perspective-towards-green-ai-8951b5c2.md
 
