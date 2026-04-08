@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-08T08:01:37.013Z
+Generated: 2026-04-08T08:02:40.842Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Reveal-to-Revise: Explainable Bias-Aware Generative Modeling with Multimodal Attention: What It Means for AI/CS Students
+1. Epistemic Blinding: An Inference-Time Protocol for Auditing Prior Contamination in LLM-Assisted Analysis: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Dissecting Transformers: A CLEAR Perspective towards Green AI: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. StateX: Enhancing RNN Recall via Post-training State Expansion: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Chiplet-Based RISC-V SoC with Modular AI Acceleration: What It Means for AI/CS Students
+2. Flowr -- Scaling Up Retail Supply Chain Operations Through Agentic AI in Large Scale Supermarket Chains: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. A State-Update Prompting Strategy for Efficient and Robust Multi-turn Dialogue: What It Means for AI/CS Students
+3. Beyond Compromise: Pareto-Lenient Consensus for Efficient Multi-Preference LLM Alignment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. LifeAlign: Lifelong Alignment for Large Language Models with Memory-Augmented Focalized Preference Optimization: What It Means for AI/CS Students
+4. Towards Trustworthy Report Generation: A Deep Research Agent with Progressive Confidence Estimation and Calibration: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. MARL-GPT: Foundation Model for Multi-Agent Reinforcement Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Context-Value-Action Architecture for Value-Driven Large Language Model Agents: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260408--20260408-reveal-to-revise-explainable-bias-aware-generative-modeling-with-ef4df01c.md
-- docs/agent/drafts/20260408--20260408-dissecting-transformers-a-clear-perspective-towards-green-ai-8951b5c2.md
+- docs/agent/drafts/20260408--20260408-epistemic-blinding-an-inference-time-protocol-for-auditing-prior-6d2e2380.md
+- docs/agent/drafts/20260408--20260408-flowr----scaling-up-retail-supply-chain-operations-through-agent-4d4b4a21.md
 
