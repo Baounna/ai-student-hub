@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-08T08:02:40.842Z
+Generated: 2026-04-09T08:06:06.293Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Epistemic Blinding: An Inference-Time Protocol for Auditing Prior Contamination in LLM-Assisted Analysis: What It Means for AI/CS Students
+1. Resource-constrained Amazons chess decision framework integrating large language models and graph attention: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Flowr -- Scaling Up Retail Supply Chain Operations Through Agentic AI in Large Scale Supermarket Chains: What It Means for AI/CS Students
+2. Logics-Parsing-Omni Technical Report: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. Do MLLMs Really Understand Space? A Mathematical Reasoning Evaluation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Beyond Compromise: Pareto-Lenient Consensus for Efficient Multi-Preference LLM Alignment: What It Means for AI/CS Students
+4. FBS: Modeling Native Parallel Reading inside a Transformer: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Towards Trustworthy Report Generation: A Deep Research Agent with Progressive Confidence Estimation and Calibration: What It Means for AI/CS Students
+5. ConvoLearn: A Dataset for Fine-Tuning Dialogic AI Tutors: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. MARL-GPT: Foundation Model for Multi-Agent Reinforcement Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Context-Value-Action Architecture for Value-Driven Large Language Model Agents: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Diagnosing and Mitigating Sycophancy and Skepticism in LLM Causal Judgment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260408--20260408-epistemic-blinding-an-inference-time-protocol-for-auditing-prior-6d2e2380.md
-- docs/agent/drafts/20260408--20260408-flowr----scaling-up-retail-supply-chain-operations-through-agent-4d4b4a21.md
+- docs/agent/drafts/20260409--20260409-resource-constrained-amazons-chess-decision-framework-integratin-7905a073.md
+- docs/agent/drafts/20260409--20260409-logics-parsing-omni-technical-report-87171f03.md
 
