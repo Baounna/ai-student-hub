@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-09T08:06:06.293Z
+Generated: 2026-04-09T08:06:29.812Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Resource-constrained Amazons chess decision framework integrating large language models and graph attention: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. Matrix Profile for Time-Series Anomaly Detection: A Reproducible Open-Source Benchmark on TSB-AD: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: best ai model benchmark for students arxiv cs.lg
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+2. Toward Personalized Darts Training: A Data-Driven Framework Based on Skeleton-Based Biomechanical Analysis and Motion Modeling: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Logics-Parsing-Omni Technical Report: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+3. CRPS-Optimal Binning for Univariate Conformal Regression: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Do MLLMs Really Understand Space? A Mathematical Reasoning Evaluation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. FBS: Modeling Native Parallel Reading inside a Transformer: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. ConvoLearn: A Dataset for Fine-Tuning Dialogic AI Tutors: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+4. Shapes are not enough: CONSERVAttack and its use for finding vulnerabilities and uncertainties in machine learning applications: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Diagnosing and Mitigating Sycophancy and Skepticism in LLM Causal Judgment: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+5. EvoFlows: Evolutionary Edit-Based Flow-Matching for Protein Engineering: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Interventional Time Series Priors for Causal Foundation Models: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260409--20260409-resource-constrained-amazons-chess-decision-framework-integratin-7905a073.md
-- docs/agent/drafts/20260409--20260409-logics-parsing-omni-technical-report-87171f03.md
+- docs/agent/drafts/20260409--20260409-matrix-profile-for-time-series-anomaly-detection-a-reproducible--ac9f7bc3.md
+- docs/agent/drafts/20260409--20260409-toward-personalized-darts-training-a-data-driven-framework-based-775e8a22.md
 
