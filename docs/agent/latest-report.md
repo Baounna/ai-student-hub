@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-10T08:09:58.098Z
+Generated: 2026-04-10T08:11:12.551Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Order-Optimal Sequential 1-Bit Mean Estimation in General Tail Regimes: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. SEARL: Joint Optimization of Policy and Tool Graph Memory for Self-Evolving Agents: What It Means for AI/CS Students
+1. GRASS: Gradient-based Adaptive Layer-wise Importance Sampling for Memory-efficient Large Language Model Fine-tuning: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+2. Resource-constrained Amazons chess decision framework integrating large language models and graph attention: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Logics-Parsing-Omni Technical Report: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Toward Generalizable Graph Learning for 3D Engineering AI: Explainable Workflows for CAE Mode Shape Classification and CFD Field Prediction: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Sensitivity-Positional Co-Localization in GQA Transformers: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Generative optimal transport via forward-backward HJB matching: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+4. Do MLLMs Really Understand Space? A Mathematical Reasoning Evaluation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. FBS: Modeling Native Parallel Reading inside a Transformer: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. ConvoLearn: A Dataset for Fine-Tuning Dialogic AI Tutors: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260410--20260410-order-optimal-sequential-1-bit-mean-estimation-in-general-tail-r-f23ba638.md
-- docs/agent/drafts/20260410--20260410-searl-joint-optimization-of-policy-and-tool-graph-memory-for-sel-0c708f7f.md
+- docs/agent/drafts/20260410--20260410-grass-gradient-based-adaptive-layer-wise-importance-sampling-for-cbc0a095.md
+- docs/agent/drafts/20260410--20260410-resource-constrained-amazons-chess-decision-framework-integratin-7905a073.md
 
