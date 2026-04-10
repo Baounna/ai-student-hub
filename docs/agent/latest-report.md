@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-09T08:06:29.812Z
+Generated: 2026-04-10T08:09:58.098Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Matrix Profile for Time-Series Anomaly Detection: A Reproducible Open-Source Benchmark on TSB-AD: What It Means for AI/CS Students
+1. Order-Optimal Sequential 1-Bit Mean Estimation in General Tail Regimes: What It Means for AI/CS Students
    - Source: arXiv cs.LG
-   - Keyword: best ai model benchmark for students arxiv cs.lg
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-2. Toward Personalized Darts Training: A Data-Driven Framework Based on Skeleton-Based Biomechanical Analysis and Motion Modeling: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. SEARL: Joint Optimization of Policy and Tool Graph Memory for Self-Evolving Agents: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. CRPS-Optimal Binning for Univariate Conformal Regression: What It Means for AI/CS Students
+3. Cross-Modal Emotion Transfer for Emotion Editing in Talking Face Video: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Shapes are not enough: CONSERVAttack and its use for finding vulnerabilities and uncertainties in machine learning applications: What It Means for AI/CS Students
+4. Toward Generalizable Graph Learning for 3D Engineering AI: Explainable Workflows for CAE Mode Shape Classification and CFD Field Prediction: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. EvoFlows: Evolutionary Edit-Based Flow-Matching for Protein Engineering: What It Means for AI/CS Students
+5. Sensitivity-Positional Co-Localization in GQA Transformers: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Interventional Time Series Priors for Causal Foundation Models: What It Means for AI/CS Students
+6. Generative optimal transport via forward-backward HJB matching: What It Means for AI/CS Students
    - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260409--20260409-matrix-profile-for-time-series-anomaly-detection-a-reproducible--ac9f7bc3.md
-- docs/agent/drafts/20260409--20260409-toward-personalized-darts-training-a-data-driven-framework-based-775e8a22.md
+- docs/agent/drafts/20260410--20260410-order-optimal-sequential-1-bit-mean-estimation-in-general-tail-r-f23ba638.md
+- docs/agent/drafts/20260410--20260410-searl-joint-optimization-of-policy-and-tool-graph-memory-for-sel-0c708f7f.md
 
