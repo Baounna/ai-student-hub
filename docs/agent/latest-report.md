@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-10T08:11:12.551Z
+Generated: 2026-04-11T07:34:12.087Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. GRASS: Gradient-based Adaptive Layer-wise Importance Sampling for Memory-efficient Large Language Model Fine-tuning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+1. How Much LLM Does a Self-Revising Agent Actually Need?: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Resource-constrained Amazons chess decision framework integrating large language models and graph attention: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Logics-Parsing-Omni Technical Report: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Do MLLMs Really Understand Space? A Mathematical Reasoning Evaluation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+3. Clinical Cognition Alignment for Gastrointestinal Diagnosis with Multimodal LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. FBS: Modeling Native Parallel Reading inside a Transformer: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+4. Exploring Plan Space through Conversation: An Agentic Framework for LLM-Mediated Explanations in Planning: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. ConvoLearn: A Dataset for Fine-Tuning Dialogic AI Tutors: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+5. Understanding Structured Financial Data with LLMs: A Case Study on Fraud Detection: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Reasoning Within the Mind: Dynamic Multimodal Interleaving in Latent Space: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260410--20260410-grass-gradient-based-adaptive-layer-wise-importance-sampling-for-cbc0a095.md
-- docs/agent/drafts/20260410--20260410-resource-constrained-amazons-chess-decision-framework-integratin-7905a073.md
+- docs/agent/drafts/20260411--20260411-how-much-llm-does-a-self-revising-agent-actually-need-08fce7f5.md
+- docs/agent/drafts/20260411--20260411-mineru25-pro-pushing-the-limits-of-data-centric-document-parsing-5f233d45.md
 
