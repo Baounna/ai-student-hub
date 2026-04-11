@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-11T07:34:12.087Z
+Generated: 2026-04-11T07:38:07.079Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260411--20260411-how-much-llm-does-a-self-revising-agent-actually-need-08fce7f5.md
-- docs/agent/drafts/20260411--20260411-mineru25-pro-pushing-the-limits-of-data-centric-document-parsing-5f233d45.md
+- docs/agent/drafts/20260411--20260411-clinical-cognition-alignment-for-gastrointestinal-diagnosis-with-ad1516a0.md
+- docs/agent/drafts/20260411--20260411-exploring-plan-space-through-conversation-an-agentic-framework-f-d6d37fd8.md
 
