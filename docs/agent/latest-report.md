@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-12T07:51:00.730Z
+Generated: 2026-04-12T07:52:10.146Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -95,7 +95,6 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 2
-- docs/agent/drafts/20260412--20260411-understanding-structured-financial-data-with-llms-a-case-study-o-01de7883.md
-- docs/agent/drafts/20260412--20260411-reasoning-within-the-mind-dynamic-multimodal-interleaving-in-lat-d650ad12.md
+- New drafts generated: 0
+- No new drafts generated (existing coverage or no opportunities).
 
