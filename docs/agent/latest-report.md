@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-12T07:52:10.146Z
+Generated: 2026-04-13T08:32:20.124Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. How Much LLM Does a Self-Revising Agent Actually Need?: What It Means for AI/CS Students
+1. Facet-Level Tracing of Evidence Uncertainty and Hallucination in RAG: What It Means for AI/CS Students
    - Source: arXiv cs.CL
    - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale: What It Means for AI/CS Students
+2. Think Less, Know More: State-Aware Reasoning Compression with Knowledge Guidance for Efficient Reasoning: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Prototype-Regularized Federated Learning for Cross-Domain Aspect Sentiment Triplet Extraction: What It Means for AI/CS Students
    - Source: arXiv cs.CL
    - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Clinical Cognition Alignment for Gastrointestinal Diagnosis with Multimodal LLMs: What It Means for AI/CS Students
+4. Hierarchical Alignment: Enforcing Hierarchical Instruction-Following in LLMs through Logical Consistency: What It Means for AI/CS Students
    - Source: arXiv cs.CL
    - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Exploring Plan Space through Conversation: An Agentic Framework for LLM-Mediated Explanations in Planning: What It Means for AI/CS Students
+5. Anchored Sliding Window: Toward Robust and Imperceptible Linguistic Steganography: What It Means for AI/CS Students
    - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Understanding Structured Financial Data with LLMs: A Case Study on Fraud Detection: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Testing the Assumptions of Active Learning for Translation Tasks with Few Samples: What It Means for AI/CS Students
    - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Reasoning Within the Mind: Dynamic Multimodal Interleaving in Latent Space: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -95,6 +95,7 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 0
-- No new drafts generated (existing coverage or no opportunities).
+- New drafts generated: 2
+- docs/agent/drafts/20260413--20260413-facet-level-tracing-of-evidence-uncertainty-and-hallucination-in-514b791b.md
+- docs/agent/drafts/20260413--20260413-think-less-know-more-state-aware-reasoning-compression-with-know-d2d21f6a.md
 
