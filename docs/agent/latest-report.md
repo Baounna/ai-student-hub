@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-13T08:32:20.124Z
+Generated: 2026-04-13T08:35:07.206Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Facet-Level Tracing of Evidence Uncertainty and Hallucination in RAG: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Think Less, Know More: State-Aware Reasoning Compression with Knowledge Guidance for Efficient Reasoning: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Prototype-Regularized Federated Learning for Cross-Domain Aspect Sentiment Triplet Extraction: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+1. Evolutionary Optimization Trumps Adam Optimization on Embedding Space Exploration: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Hierarchical Alignment: Enforcing Hierarchical Instruction-Following in LLMs through Logical Consistency: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Anchored Sliding Window: Toward Robust and Imperceptible Linguistic Steganography: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+2. EGMOF: Efficient Generation of Metal-Organic Frameworks Using a Hybrid Diffusion-Transformer Architecture: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Testing the Assumptions of Active Learning for Translation Tasks with Few Samples: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+3. How Similar Are Grokipedia and Wikipedia? A Multi-Dimensional Textual and Structural Comparison: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. LLM4Delay: Flight Delay Prediction via Cross-Modality Adaptation of Large Language Models and Aircraft Trajectory Representation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. RESample: A Robust Data Augmentation Framework via Exploratory Sampling for Robotic Manipulation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Dejavu: Towards Experience Feedback Learning for Embodied Intelligence: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260413--20260413-facet-level-tracing-of-evidence-uncertainty-and-hallucination-in-514b791b.md
-- docs/agent/drafts/20260413--20260413-think-less-know-more-state-aware-reasoning-compression-with-know-d2d21f6a.md
+- docs/agent/drafts/20260413--20260413-evolutionary-optimization-trumps-adam-optimization-on-embedding--dcb4e007.md
+- docs/agent/drafts/20260413--20260413-egmof-efficient-generation-of-metal-organic-frameworks-using-a-h-a37b7f76.md
 
