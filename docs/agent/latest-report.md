@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-13T08:35:07.206Z
+Generated: 2026-04-14T08:13:11.692Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Evolutionary Optimization Trumps Adam Optimization on Embedding Space Exploration: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. EGMOF: Efficient Generation of Metal-Organic Frameworks Using a Hybrid Diffusion-Transformer Architecture: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. How Similar Are Grokipedia and Wikipedia? A Multi-Dimensional Textual and Structural Comparison: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. LLM4Delay: Flight Delay Prediction via Cross-Modality Adaptation of Large Language Models and Aircraft Trajectory Representation: What It Means for AI/CS Students
+1. LAST: Leveraging Tools as Hints to Enhance Spatial Reasoning for Multimodal Large Language Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. RESample: A Robust Data Augmentation Framework via Exploratory Sampling for Robotic Manipulation: What It Means for AI/CS Students
+2. Orthogonal Quadratic Complements for Vision Transformer Feed-Forward Networks: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Dejavu: Towards Experience Feedback Learning for Embodied Intelligence: What It Means for AI/CS Students
+3. The Deployment Gap in AI Media Detection: Platform-Aware and Visually Constrained Adversarial Evaluation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Identity-Aware U-Net: Fine-grained Cell Segmentation via Identity-Aware Representation Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Attention-Guided Flow-Matching for Sparse 3D Geological Generation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Evaluating Scene-based In-Situ Item Labeling for Immersive Conversational Recommendation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260413--20260413-evolutionary-optimization-trumps-adam-optimization-on-embedding--dcb4e007.md
-- docs/agent/drafts/20260413--20260413-egmof-efficient-generation-of-metal-organic-frameworks-using-a-h-a37b7f76.md
+- docs/agent/drafts/20260414--20260414-last-leveraging-tools-as-hints-to-enhance-spatial-reasoning-for--c8e8d879.md
+- docs/agent/drafts/20260414--20260414-orthogonal-quadratic-complements-for-vision-transformer-feed-for-c6d10d6a.md
 
