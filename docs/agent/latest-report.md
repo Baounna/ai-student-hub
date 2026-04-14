@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-14T08:13:11.692Z
+Generated: 2026-04-14T08:14:42.274Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. LAST: Leveraging Tools as Hints to Enhance Spatial Reasoning for Multimodal Large Language Models: What It Means for AI/CS Students
+1. NetworkNet: A Deep Neural Network Approach for Random Networks with Sparse Nodal Attributes and Complex Nodal Heterogeneity: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. Playing Along: Learning a Double-Agent Defender for Belief Steering via Theory of Mind: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Orthogonal Quadratic Complements for Vision Transformer Feed-Forward Networks: What It Means for AI/CS Students
+3. Beyond LLMs, Sparse Distributed Memory, and Neuromorphics: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Towards Autonomous Mechanistic Reasoning in Virtual Cells: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. The Deployment Gap in AI Media Detection: Platform-Aware and Visually Constrained Adversarial Evaluation: What It Means for AI/CS Students
+5. RPA-Check: A Multi-Stage Automated Framework for Evaluating Dynamic LLM-based Role-Playing Agents: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Identity-Aware U-Net: Fine-grained Cell Segmentation via Identity-Aware Representation Learning: What It Means for AI/CS Students
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. CodeTracer: Towards Traceable Agent States: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Attention-Guided Flow-Matching for Sparse 3D Geological Generation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Evaluating Scene-based In-Situ Item Labeling for Immersive Conversational Recommendation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260414--20260414-last-leveraging-tools-as-hints-to-enhance-spatial-reasoning-for--c8e8d879.md
-- docs/agent/drafts/20260414--20260414-orthogonal-quadratic-complements-for-vision-transformer-feed-for-c6d10d6a.md
+- docs/agent/drafts/20260414--20260414-networknet-a-deep-neural-network-approach-for-random-networks-wi-f92bcb83.md
+- docs/agent/drafts/20260414--20260414-playing-along-learning-a-double-agent-defender-for-belief-steeri-40bf0c4e.md
 
