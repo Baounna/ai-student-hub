@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-14T08:14:42.274Z
+Generated: 2026-04-15T08:14:55.509Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. NetworkNet: A Deep Neural Network Approach for Random Networks with Sparse Nodal Attributes and Complex Nodal Heterogeneity: What It Means for AI/CS Students
+1. On the Mathematical Relationship Between Layer Normalization and Dynamic Activation Functions: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Playing Along: Learning a Double-Agent Defender for Belief Steering via Theory of Mind: What It Means for AI/CS Students
+2. Characterizing higher-order representations through generative diffusion models explains human decoded neurofeedback performance: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+3. Fine-Tuning LLMs for Report Summarization: Analysis on Supervised and Unsupervised Data: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Beyond LLMs, Sparse Distributed Memory, and Neuromorphics: What It Means for AI/CS Students
+4. Siamese Foundation Models for Crystal Structure Prediction: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Towards Autonomous Mechanistic Reasoning in Virtual Cells: What It Means for AI/CS Students
+5. Large Language Models are Powerful Electronic Health Record Encoders: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. RegD: Hierarchical Embeddings via Dissimilarity between Arbitrary Euclidean Regions: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. RPA-Check: A Multi-Stage Automated Framework for Evaluating Dynamic LLM-based Role-Playing Agents: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. CodeTracer: Towards Traceable Agent States: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260414--20260414-networknet-a-deep-neural-network-approach-for-random-networks-wi-f92bcb83.md
-- docs/agent/drafts/20260414--20260414-playing-along-learning-a-double-agent-defender-for-belief-steeri-40bf0c4e.md
+- docs/agent/drafts/20260415--20260415-on-the-mathematical-relationship-between-layer-normalization-and-0168c6de.md
+- docs/agent/drafts/20260415--20260415-characterizing-higher-order-representations-through-generative-d-8133d245.md
 
