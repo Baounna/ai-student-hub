@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-15T08:14:55.509Z
+Generated: 2026-04-15T08:16:29.812Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. On the Mathematical Relationship Between Layer Normalization and Dynamic Activation Functions: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+1. Incentivizing High-Quality Human Annotations with Golden Questions: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Characterizing higher-order representations through generative diffusion models explains human decoded neurofeedback performance: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-3. Fine-Tuning LLMs for Report Summarization: Analysis on Supervised and Unsupervised Data: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Siamese Foundation Models for Crystal Structure Prediction: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Large Language Models are Powerful Electronic Health Record Encoders: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. RegD: Hierarchical Embeddings via Dissimilarity between Arbitrary Euclidean Regions: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. A Two-Timescale Primal-Dual Framework for Reinforcement Learning via Online Dual Variable Guidance: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+3. Privacy-Preserving Transfer Learning for Community Detection using Locally Distributed Multiple Networks: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Influence Strength Estimation in Hyperbolic Space for Social Influence Maximization: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. The Illusion of Fit: Spatially Resolved Assessment of Constitutive Model Validity in Elastography and Physics-Based Inverse Problems: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Surrogate models for diffusion on graphs via sparse polynomials: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260415--20260415-on-the-mathematical-relationship-between-layer-normalization-and-0168c6de.md
-- docs/agent/drafts/20260415--20260415-characterizing-higher-order-representations-through-generative-d-8133d245.md
+- docs/agent/drafts/20260415--20260415-incentivizing-high-quality-human-annotations-with-golden-questio-ccda3418.md
+- docs/agent/drafts/20260415--20260415-a-two-timescale-primal-dual-framework-for-reinforcement-learning-8b76dc10.md
 
