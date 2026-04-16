@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-16T08:16:03.658Z
+Generated: 2026-04-16T08:17:54.270Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Quantifying and Understanding Uncertainty in Large Reasoning Models: What It Means for AI/CS Students
+1. A Mechanistic Analysis of Sim-and-Real Co-Training in Generative Robot Policies: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. Calibrated Speculative Decoding: Frequency-Guided Candidate Selection for Efficient Inference: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. A short proof of near-linear convergence of adaptive gradient descent under fourth-order growth and convexity: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. AeTHERON: Autoregressive Topology-aware Heterogeneous Graph Operator Network for Fluid-Structure Interaction: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Event Tensor: A Unified Abstraction for Compiling Dynamic Megakernel: What It Means for AI/CS Students
+3. C2: Scalable Rubric-Augmented Reward Modeling from Binary Preferences: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. The Spectrascapes Dataset: Street-view imagery beyond the visible captured using a mobile platform: What It Means for AI/CS Students
+4. Irregularly Sampled Time Series Interpolation for Binary Evolution Simulations Using Dynamic Time Warping: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Deep Spatially-Regularized and Superpixel-Based Diffusion Learning for Unsupervised Hyperspectral Image Clustering: What It Means for AI/CS Students
+5. Data-driven Learning of Probabilistic Model of Binary Droplet Collision for Spray Simulation: What It Means for AI/CS Students
    - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Cross-Layer Co-Optimized LSTM Accelerator for Real-Time Gait Analysis: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260416--20260416-quantifying-and-understanding-uncertainty-in-large-reasoning-mod-7e419cb6.md
-- docs/agent/drafts/20260416--20260416-a-short-proof-of-near-linear-convergence-of-adaptive-gradient-de-decf72af.md
+- docs/agent/drafts/20260416--20260416-a-mechanistic-analysis-of-sim-and-real-co-training-in-generative-ac3a43ad.md
+- docs/agent/drafts/20260416--20260416-calibrated-speculative-decoding-frequency-guided-candidate-selec-468bd0bb.md
 
