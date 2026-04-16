@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-15T08:16:29.812Z
+Generated: 2026-04-16T08:16:03.658Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Incentivizing High-Quality Human Annotations with Golden Questions: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. A Two-Timescale Primal-Dual Framework for Reinforcement Learning via Online Dual Variable Guidance: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Privacy-Preserving Transfer Learning for Community Detection using Locally Distributed Multiple Networks: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Influence Strength Estimation in Hyperbolic Space for Social Influence Maximization: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. The Illusion of Fit: Spatially Resolved Assessment of Constitutive Model Validity in Elastography and Physics-Based Inverse Problems: What It Means for AI/CS Students
+1. Quantifying and Understanding Uncertainty in Large Reasoning Models: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Surrogate models for diffusion on graphs via sparse polynomials: What It Means for AI/CS Students
+2. A short proof of near-linear convergence of adaptive gradient descent under fourth-order growth and convexity: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. AeTHERON: Autoregressive Topology-aware Heterogeneous Graph Operator Network for Fluid-Structure Interaction: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Event Tensor: A Unified Abstraction for Compiling Dynamic Megakernel: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+5. The Spectrascapes Dataset: Street-view imagery beyond the visible captured using a mobile platform: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Deep Spatially-Regularized and Superpixel-Based Diffusion Learning for Unsupervised Hyperspectral Image Clustering: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260415--20260415-incentivizing-high-quality-human-annotations-with-golden-questio-ccda3418.md
-- docs/agent/drafts/20260415--20260415-a-two-timescale-primal-dual-framework-for-reinforcement-learning-8b76dc10.md
+- docs/agent/drafts/20260416--20260416-quantifying-and-understanding-uncertainty-in-large-reasoning-mod-7e419cb6.md
+- docs/agent/drafts/20260416--20260416-a-short-proof-of-near-linear-convergence-of-adaptive-gradient-de-decf72af.md
 
