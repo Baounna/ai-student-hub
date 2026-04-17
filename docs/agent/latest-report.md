@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-17T08:14:38.127Z
+Generated: 2026-04-17T08:16:24.250Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. GUI-Perturbed: Domain Randomization Reveals Systematic Brittleness in GUI Grounding Models: What It Means for AI/CS Students
+1. Rethinking LLM-Driven Heuristic Design: Generating Efficient and Specialized Solvers via Dynamics-Aware Optimization: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Calibrate-Then-Delegate: Safety Monitoring with Risk and Budget Guarantees via Model Cascades: What It Means for AI/CS Students
+2. Learning temporal embeddings from electronic health records of chronic kidney disease patients: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. LLMOrbit: A Circular Taxonomy of Large Language Models -From Scaling Walls to Agentic AI Systems: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Metric-Aware Principal Component Analysis (MAPCA):A Unified Framework for Scale-Invariant Representation Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Awakening Dormant Experts:Counterfactual Routing to Mitigate MoE Hallucinations: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Optimistic Policy Learning under Pessimistic Adversaries with Regret and Violation Guarantees: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. TOPCELL: Topology Optimization of Standard Cell via LLMs: What It Means for AI/CS Students
+4. Threshold Differential Attention for Sink-Free, Ultra-Sparse, and Non-Dispersive Language Modeling: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+5. Fundamental Limitations of Favorable Privacy-Utility Guarantees for DP-SGD: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. ORBIT: On-policy Exploration-Exploitation for Controllable Multi-Budget Reasoning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260417--20260417-gui-perturbed-domain-randomization-reveals-systematic-brittlenes-a363b46d.md
-- docs/agent/drafts/20260417--20260417-calibrate-then-delegate-safety-monitoring-with-risk-and-budget-g-cddf514d.md
+- docs/agent/drafts/20260417--20260417-rethinking-llm-driven-heuristic-design-generating-efficient-and--aa60bb04.md
+- docs/agent/drafts/20260417--20260417-learning-temporal-embeddings-from-electronic-health-records-of-c-6a766f15.md
 
