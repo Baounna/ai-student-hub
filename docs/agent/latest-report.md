@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-16T08:17:54.270Z
+Generated: 2026-04-17T08:14:38.127Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. A Mechanistic Analysis of Sim-and-Real Co-Training in Generative Robot Policies: What It Means for AI/CS Students
+1. GUI-Perturbed: Domain Randomization Reveals Systematic Brittleness in GUI Grounding Models: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. Calibrate-Then-Delegate: Safety Monitoring with Risk and Budget Guarantees via Model Cascades: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Metric-Aware Principal Component Analysis (MAPCA):A Unified Framework for Scale-Invariant Representation Learning: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Calibrated Speculative Decoding: Frequency-Guided Candidate Selection for Efficient Inference: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. C2: Scalable Rubric-Augmented Reward Modeling from Binary Preferences: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Irregularly Sampled Time Series Interpolation for Binary Evolution Simulations Using Dynamic Time Warping: What It Means for AI/CS Students
+4. Awakening Dormant Experts:Counterfactual Routing to Mitigate MoE Hallucinations: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Data-driven Learning of Probabilistic Model of Binary Droplet Collision for Spray Simulation: What It Means for AI/CS Students
+5. Optimistic Policy Learning under Pessimistic Adversaries with Regret and Violation Guarantees: What It Means for AI/CS Students
    - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Cross-Layer Co-Optimized LSTM Accelerator for Real-Time Gait Analysis: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. TOPCELL: Topology Optimization of Standard Cell via LLMs: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260416--20260416-a-mechanistic-analysis-of-sim-and-real-co-training-in-generative-ac3a43ad.md
-- docs/agent/drafts/20260416--20260416-calibrated-speculative-decoding-frequency-guided-candidate-selec-468bd0bb.md
+- docs/agent/drafts/20260417--20260417-gui-perturbed-domain-randomization-reveals-systematic-brittlenes-a363b46d.md
+- docs/agent/drafts/20260417--20260417-calibrate-then-delegate-safety-monitoring-with-risk-and-budget-g-cddf514d.md
 
