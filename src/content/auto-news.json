@@ -1,7 +1,482 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-18T19:09:52.659Z",
+  "updatedAt": "2026-04-18T19:53:26.550Z",
   "items": [
+    {
+      "slug": "20260418-similarity-distance-magnitude-activations-184eb03b",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2509.12760",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Similarity-Distance-Magnitude Activations",
+          "summary": "arXiv:2509.12760v4 Announce Type: replace Abstract: We introduce the Similarity-Distance-Magnitude (SDM) activation function, a more robust and interpretable formulation of the standard softmax activation function, adding Similar…"
+        },
+        "fr": {
+          "title": "Similarity-Distance-Magnitude Activations",
+          "summary": "arXiv:2509.12760v4 Announce Type: replace Abstract: We introduce the Similarity-Distance-Magnitude (SDM) activation function, a more robust and interpretable formulation of the standard softmax activation function, adding Similar…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-safe-reinforcement-learning-using-action-projection-safeguard-th-f86a0e41",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2509.12833",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Safe Reinforcement Learning using Action Projection: Safeguard the Policy or the Environment?",
+          "summary": "arXiv:2509.12833v2 Announce Type: replace Abstract: Projection-based safety filters, which modify unsafe actions by mapping them to the closest safe alternative, are widely used to enforce safety constraints in reinforcement lear…"
+        },
+        "fr": {
+          "title": "Safe Reinforcement Learning using Action Projection: Safeguard the Policy or the Environment?",
+          "summary": "arXiv:2509.12833v2 Announce Type: replace Abstract: Projection-based safety filters, which modify unsafe actions by mapping them to the closest safe alternative, are widely used to enforce safety constraints in reinforcement lear…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-model-based-reinforcement-learning-under-random-observation-dela-ff24e57f",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2509.20869",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Model-Based Reinforcement Learning under Random Observation Delays",
+          "summary": "arXiv:2509.20869v2 Announce Type: replace Abstract: Delays frequently occur in real-world environments, yet standard reinforcement learning (RL) algorithms often assume instantaneous perception of the environment. We study random…"
+        },
+        "fr": {
+          "title": "Model-Based Reinforcement Learning under Random Observation Delays",
+          "summary": "arXiv:2509.20869v2 Announce Type: replace Abstract: Delays frequently occur in real-world environments, yet standard reinforcement learning (RL) algorithms often assume instantaneous perception of the environment. We study random…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-deep-learning-for-subspace-regression-cc8d6d68",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2509.23249",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Deep Learning for Subspace Regression",
+          "summary": "arXiv:2509.23249v4 Announce Type: replace Abstract: It is often possible to perform reduced order modelling by specifying linear subspace which accurately captures the dynamics of the system. This approach becomes especially appe…"
+        },
+        "fr": {
+          "title": "Deep Learning for Subspace Regression",
+          "summary": "arXiv:2509.23249v4 Announce Type: replace Abstract: It is often possible to perform reduced order modelling by specifying linear subspace which accurately captures the dynamics of the system. This approach becomes especially appe…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-layerscope-predictive-cross-layer-scheduling-for-efficient-multi-04c7835d",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2509.23638",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "LayerScope: Predictive Cross-Layer Scheduling for Efficient Multi-Batch MoE Inference on Legacy Servers",
+          "summary": "arXiv:2509.23638v2 Announce Type: replace Abstract: Mixture-of-Experts (MoE) models face memory and PCIe latency bottlenecks when deployed on commodity hardware. Offloading expert weights to CPU memory results in PCIe transfer la…"
+        },
+        "fr": {
+          "title": "LayerScope: Predictive Cross-Layer Scheduling for Efficient Multi-Batch MoE Inference on Legacy Servers",
+          "summary": "arXiv:2509.23638v2 Announce Type: replace Abstract: Mixture-of-Experts (MoE) models face memory and PCIe latency bottlenecks when deployed on commodity hardware. Offloading expert weights to CPU memory results in PCIe transfer la…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-adaptive-canonicalization-with-application-to-invariant-anisotro-3f6f3b0f",
+      "topic": "Computer Science",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2509.24886",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Adaptive Canonicalization with Application to Invariant Anisotropic Geometric Networks",
+          "summary": "arXiv:2509.24886v3 Announce Type: replace Abstract: Canonicalization is a widely used strategy in equivariant machine learning, enforcing symmetry in neural networks by mapping each input to a standard form. Yet, it often introdu…"
+        },
+        "fr": {
+          "title": "Adaptive Canonicalization with Application to Invariant Anisotropic Geometric Networks",
+          "summary": "arXiv:2509.24886v3 Announce Type: replace Abstract: Canonicalization is a widely used strategy in equivariant machine learning, enforcing symmetry in neural networks by mapping each input to a standard form. Yet, it often introdu…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-from-tokens-to-layers-redefining-stall-free-scheduling-for-moe-s-614a5b8a",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2510.08055",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "From Tokens to Layers: Redefining Stall-Free Scheduling for MoE Serving with Layered Prefill",
+          "summary": "arXiv:2510.08055v2 Announce Type: replace Abstract: Large Language Model (LLM) inference in production must meet stringent service-level objectives for both time-to-first-token (TTFT) and time-between-token (TBT) while maximizing…"
+        },
+        "fr": {
+          "title": "From Tokens to Layers: Redefining Stall-Free Scheduling for MoE Serving with Layered Prefill",
+          "summary": "arXiv:2510.08055v2 Announce Type: replace Abstract: Large Language Model (LLM) inference in production must meet stringent service-level objectives for both time-to-first-token (TTFT) and time-between-token (TBT) while maximizing…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-fall-into-a-pit-gain-in-a-wit-cognitive-guided-harmful-meme-dete-a9d1c3fb",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2510.15946",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Fall into a Pit, Gain in a Wit: Cognitive-Guided Harmful Meme Detection via Misjudgment Risk Pattern Retrieval",
+          "summary": "arXiv:2510.15946v3 Announce Type: replace Abstract: Internet memes have emerged as a popular multimodal medium, yet they are increasingly weaponized to convey harmful opinions through subtle rhetorical devices like irony and meta…"
+        },
+        "fr": {
+          "title": "Fall into a Pit, Gain in a Wit: Cognitive-Guided Harmful Meme Detection via Misjudgment Risk Pattern Retrieval",
+          "summary": "arXiv:2510.15946v3 Announce Type: replace Abstract: Internet memes have emerged as a popular multimodal medium, yet they are increasingly weaponized to convey harmful opinions through subtle rhetorical devices like irony and meta…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-topology-aware-active-learning-on-graphs-44ef2643",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2510.25892",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Topology-Aware Active Learning on Graphs",
+          "summary": "arXiv:2510.25892v2 Announce Type: replace Abstract: We propose a graph-topological approach to active learning that directly targets the core challenge of exploration versus exploitation under scarce label budgets. To guide explo…"
+        },
+        "fr": {
+          "title": "Topology-Aware Active Learning on Graphs",
+          "summary": "arXiv:2510.25892v2 Announce Type: replace Abstract: We propose a graph-topological approach to active learning that directly targets the core challenge of exploration versus exploitation under scarce label budgets. To guide explo…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-do-not-step-into-the-same-river-twice-learning-to-reason-from-tr-62fb59a1",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2510.26109",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error",
+          "summary": "arXiv:2510.26109v4 Announce Type: replace Abstract: Reinforcement learning with verifiable rewards (RLVR) has significantly boosted the reasoning capability of language models (LMs). However, existing RLVR approaches train LMs ba…"
+        },
+        "fr": {
+          "title": "Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error",
+          "summary": "arXiv:2510.26109v4 Announce Type: replace Abstract: Reinforcement learning with verifiable rewards (RLVR) has significantly boosted the reasoning capability of language models (LMs). However, existing RLVR approaches train LMs ba…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-enabling-agents-to-communicate-entirely-in-latent-space-20bc4100",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2511.09149",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Enabling Agents to Communicate Entirely in Latent Space",
+          "summary": "arXiv:2511.09149v4 Announce Type: replace Abstract: While natural language is the de facto communication medium for LLM-based agents, it presents a fundamental constraint. The process of downsampling rich, internal latent states…"
+        },
+        "fr": {
+          "title": "Enabling Agents to Communicate Entirely in Latent Space",
+          "summary": "arXiv:2511.09149v4 Announce Type: replace Abstract: While natural language is the de facto communication medium for LLM-based agents, it presents a fundamental constraint. The process of downsampling rich, internal latent states…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-accelopt-a-self-improving-llm-agentic-system-for-ai-accelerator--e5178686",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2511.15915",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "AccelOpt: A Self-Improving LLM Agentic System for AI Accelerator Kernel Optimization",
+          "summary": "arXiv:2511.15915v2 Announce Type: replace Abstract: We present AccelOpt, a self-improving large language model (LLM) agentic system that autonomously optimizes kernels for emerging AI acclerators, eliminating the need for expert-…"
+        },
+        "fr": {
+          "title": "AccelOpt: A Self-Improving LLM Agentic System for AI Accelerator Kernel Optimization",
+          "summary": "arXiv:2511.15915v2 Announce Type: replace Abstract: We present AccelOpt, a self-improving large language model (LLM) agentic system that autonomously optimizes kernels for emerging AI acclerators, eliminating the need for expert-…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-active-learning-with-selective-time-step-acquisition-for-pdes-09eb9c86",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2511.18107",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Active Learning with Selective Time-Step Acquisition for PDEs",
+          "summary": "arXiv:2511.18107v2 Announce Type: replace Abstract: Accurately solving partial differential equations (PDEs) is critical to understanding complex scientific and engineering phenomena, yet traditional numerical solvers are computa…"
+        },
+        "fr": {
+          "title": "Active Learning with Selective Time-Step Acquisition for PDEs",
+          "summary": "arXiv:2511.18107v2 Announce Type: replace Abstract: Accurately solving partial differential equations (PDEs) is critical to understanding complex scientific and engineering phenomena, yet traditional numerical solvers are computa…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-pay-less-attention-to-function-words-for-free-robustness-of-visi-d42f6e64",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2512.07222",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Pay Less Attention to Function Words for Free Robustness of Vision-Language Models",
+          "summary": "arXiv:2512.07222v4 Announce Type: replace Abstract: To address the trade-off between robustness and performance for robust VLM, we observe that function words could incur vulnerability of VLMs against cross-modal adversarial atta…"
+        },
+        "fr": {
+          "title": "Pay Less Attention to Function Words for Free Robustness of Vision-Language Models",
+          "summary": "arXiv:2512.07222v4 Announce Type: replace Abstract: To address the trade-off between robustness and performance for robust VLM, we observe that function words could incur vulnerability of VLMs against cross-modal adversarial atta…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-cornfigurator-automated-planning-for-any-to-any-multimodal-model-afab104c",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2512.14098",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Cornfigurator: Automated Planning for Any-to-Any Multimodal Model Serving",
+          "summary": "arXiv:2512.14098v3 Announce Type: replace Abstract: Any-to-Any models are an emerging class of multimodal models that accept combinations of text and multimodal data as input and generate them as output, introducing heterogeneous…"
+        },
+        "fr": {
+          "title": "Cornfigurator: Automated Planning for Any-to-Any Multimodal Model Serving",
+          "summary": "arXiv:2512.14098v3 Announce Type: replace Abstract: Any-to-Any models are an emerging class of multimodal models that accept combinations of text and multimodal data as input and generate them as output, introducing heterogeneous…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-learning-to-plan-planning-to-learn-adaptive-hierarchical-rl-mpc--038485cb",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2512.17091",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Learning to Plan, Planning to Learn: Adaptive Hierarchical RL-MPC for Sample-Efficient Decision Making",
+          "summary": "arXiv:2512.17091v2 Announce Type: replace Abstract: We propose a new approach for solving planning problems with a hierarchical structure, fusing reinforcement learning and MPC planning. Our formulation tightly and elegantly coup…"
+        },
+        "fr": {
+          "title": "Learning to Plan, Planning to Learn: Adaptive Hierarchical RL-MPC for Sample-Efficient Decision Making",
+          "summary": "arXiv:2512.17091v2 Announce Type: replace Abstract: We propose a new approach for solving planning problems with a hierarchical structure, fusing reinforcement learning and MPC planning. Our formulation tightly and elegantly coup…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-federated-multi-task-clustering-3b7e134b",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2512.22897",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Federated Multi-Task Clustering",
+          "summary": "arXiv:2512.22897v3 Announce Type: replace Abstract: Spectral clustering has emerged as one of the most effective clustering algorithms due to its superior performance. However, most existing models are designed for centralized se…"
+        },
+        "fr": {
+          "title": "Federated Multi-Task Clustering",
+          "summary": "arXiv:2512.22897v3 Announce Type: replace Abstract: Spectral clustering has emerged as one of the most effective clustering algorithms due to its superior performance. However, most existing models are designed for centralized se…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-from-memorization-to-creativity-llm-as-a-designer-of-novel-neura-204f89d1",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2601.02997",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "From Memorization to Creativity: LLM as a Designer of Novel Neural Architectures",
+          "summary": "arXiv:2601.02997v2 Announce Type: replace Abstract: Large language models (LLMs) excel in program synthesis, yet their capacity for neural architecture design -- balancing syntactic reliability, performance, and structural novelt…"
+        },
+        "fr": {
+          "title": "From Memorization to Creativity: LLM as a Designer of Novel Neural Architectures",
+          "summary": "arXiv:2601.02997v2 Announce Type: replace Abstract: Large language models (LLMs) excel in program synthesis, yet their capacity for neural architecture design -- balancing syntactic reliability, performance, and structural novelt…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-orbit-on-policy-exploration-exploitation-for-controllable-multi--68bed8af",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2601.08310",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "ORBIT: On-policy Exploration-Exploitation for Controllable Multi-Budget Reasoning",
+          "summary": "arXiv:2601.08310v2 Announce Type: replace Abstract: Recent Large Reasoning Models (LRMs) achieve strong performance by leveraging long-form Chain-of-Thought (CoT) reasoning, but uniformly applying overlong reasoning at inference…"
+        },
+        "fr": {
+          "title": "ORBIT: On-policy Exploration-Exploitation for Controllable Multi-Budget Reasoning",
+          "summary": "arXiv:2601.08310v2 Announce Type: replace Abstract: Recent Large Reasoning Models (LRMs) achieve strong performance by leveraging long-form Chain-of-Thought (CoT) reasoning, but uniformly applying overlong reasoning at inference…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-fundamental-limitations-of-favorable-privacy-utility-guarantees--168ebff1",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2601.10237",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Fundamental Limitations of Favorable Privacy-Utility Guarantees for DP-SGD",
+          "summary": "arXiv:2601.10237v2 Announce Type: replace Abstract: Differentially Private Stochastic Gradient Descent (DP-SGD) is the dominant paradigm for private training, but its fundamental limitations under worst-case adversarial privacy d…"
+        },
+        "fr": {
+          "title": "Fundamental Limitations of Favorable Privacy-Utility Guarantees for DP-SGD",
+          "summary": "arXiv:2601.10237v2 Announce Type: replace Abstract: Differentially Private Stochastic Gradient Descent (DP-SGD) is the dominant paradigm for private training, but its fundamental limitations under worst-case adversarial privacy d…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-threshold-differential-attention-for-sink-free-ultra-sparse-and--2c88fb5b",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2601.12145",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Threshold Differential Attention for Sink-Free, Ultra-Sparse, and Non-Dispersive Language Modeling",
+          "summary": "arXiv:2601.12145v2 Announce Type: replace Abstract: Softmax attention struggles with long contexts due to structural limitations: the strict sum-to-one constraint forces attention sinks on irrelevant tokens, and probability mass…"
+        },
+        "fr": {
+          "title": "Threshold Differential Attention for Sink-Free, Ultra-Sparse, and Non-Dispersive Language Modeling",
+          "summary": "arXiv:2601.12145v2 Announce Type: replace Abstract: Softmax attention struggles with long contexts due to structural limitations: the strict sum-to-one constraint forces attention sinks on irrelevant tokens, and probability mass…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-llmorbit-a-circular-taxonomy-of-large-language-models--from-scal-3c1b0823",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2601.14053",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "LLMOrbit: A Circular Taxonomy of Large Language Models -From Scaling Walls to Agentic AI Systems",
+          "summary": "arXiv:2601.14053v2 Announce Type: replace Abstract: The field of artificial intelligence has undergone a revolution from foundational Transformer architectures to reasoning-capable systems approaching human-level performance. We…"
+        },
+        "fr": {
+          "title": "LLMOrbit: A Circular Taxonomy of Large Language Models -From Scaling Walls to Agentic AI Systems",
+          "summary": "arXiv:2601.14053v2 Announce Type: replace Abstract: The field of artificial intelligence has undergone a revolution from foundational Transformer architectures to reasoning-capable systems approaching human-level performance. We…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-learning-temporal-embeddings-from-electronic-health-records-of-c-6a766f15",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2601.18675",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Learning temporal embeddings from electronic health records of chronic kidney disease patients",
+          "summary": "arXiv:2601.18675v2 Announce Type: replace Abstract: We investigate whether temporal embedding models trained on longitudinal electronic health records can learn clinically meaningful representations without compromising predictiv…"
+        },
+        "fr": {
+          "title": "Learning temporal embeddings from electronic health records of chronic kidney disease patients",
+          "summary": "arXiv:2601.18675v2 Announce Type: replace Abstract: We investigate whether temporal embedding models trained on longitudinal electronic health records can learn clinically meaningful representations without compromising predictiv…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-rethinking-llm-driven-heuristic-design-generating-efficient-and--aa60bb04",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2601.20868",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Rethinking LLM-Driven Heuristic Design: Generating Efficient and Specialized Solvers via Dynamics-Aware Optimization",
+          "summary": "arXiv:2601.20868v2 Announce Type: replace Abstract: Large Language Models (LLMs) have advanced the field of Combinatorial Optimization through automated heuristic generation. Instead of relying on manual design, this LLM-Driven H…"
+        },
+        "fr": {
+          "title": "Rethinking LLM-Driven Heuristic Design: Generating Efficient and Specialized Solvers via Dynamics-Aware Optimization",
+          "summary": "arXiv:2601.20868v2 Announce Type: replace Abstract: Large Language Models (LLMs) have advanced the field of Combinatorial Optimization through automated heuristic generation. Instead of relying on manual design, this LLM-Driven H…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-continuous-time-reinforcement-learning-ellipticity-enables-model-ef7effc3",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2602.06930",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-18T19:53:26.550Z",
+      "locales": {
+        "en": {
+          "title": "Continuous-time reinforcement learning: ellipticity enables model-free value function approximation",
+          "summary": "arXiv:2602.06930v2 Announce Type: replace Abstract: We study off-policy reinforcement learning for controlling continuous-time Markov diffusion processes with discrete-time observations and actions. We consider model-free algorit…"
+        },
+        "fr": {
+          "title": "Continuous-time reinforcement learning: ellipticity enables model-free value function approximation",
+          "summary": "arXiv:2602.06930v2 Announce Type: replace Abstract: We study off-policy reinforcement learning for controlling continuous-time Markov diffusion processes with discrete-time observations and actions. We consider model-free algorit…"
+        }
+      }
+    },
     {
       "slug": "20260418-medverse-efficient-and-reliable-medical-reasoning-via-dag-struct-f47edf12",
       "topic": "AI Research",
@@ -4084,481 +4559,6 @@
         "fr": {
           "title": "SegWithU: Uncertainty as Perturbation Energy for Single-Forward-Pass Risk-Aware Medical Image Segmentation",
           "summary": "arXiv:2604.15271v1 Announce Type: cross Abstract: Reliable uncertainty estimation is critical for medical image segmentation, where automated contours feed downstream quantification and clinical decision support. Many strong unce…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-prism-symbolic-superoptimization-of-tensor-programs-17a751cf",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.15272",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T10:02:02.125Z",
-      "locales": {
-        "en": {
-          "title": "Prism: Symbolic Superoptimization of Tensor Programs",
-          "summary": "arXiv:2604.15272v1 Announce Type: cross Abstract: This paper presents Prism, the first symbolic superoptimizer for tensor programs. The key idea is sGraph, a symbolic, hierarchical representation that compactly encodes large clas…"
-        },
-        "fr": {
-          "title": "Prism: Symbolic Superoptimization of Tensor Programs",
-          "summary": "arXiv:2604.15272v1 Announce Type: cross Abstract: This paper presents Prism, the first symbolic superoptimizer for tensor programs. The key idea is sGraph, a symbolic, hierarchical representation that compactly encodes large clas…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-structural-interpretability-in-svms-with-truncated-orthogonal-po-f9e57f6e",
-      "topic": "Computer Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.15285",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T10:02:02.125Z",
-      "locales": {
-        "en": {
-          "title": "Structural interpretability in SVMs with truncated orthogonal polynomial kernels",
-          "summary": "arXiv:2604.15285v1 Announce Type: cross Abstract: We study post-training interpretability for Support Vector Machines (SVMs) built from truncated orthogonal polynomial kernels. Since the associated reproducing kernel Hilbert spac…"
-        },
-        "fr": {
-          "title": "Structural interpretability in SVMs with truncated orthogonal polynomial kernels",
-          "summary": "arXiv:2604.15285v1 Announce Type: cross Abstract: We study post-training interpretability for Support Vector Machines (SVMs) built from truncated orthogonal polynomial kernels. Since the associated reproducing kernel Hilbert spac…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-diagnosing-llm-judge-reliability-conformal-prediction-sets-and-t-6bf2bfe0",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.15302",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T10:02:02.125Z",
-      "locales": {
-        "en": {
-          "title": "Diagnosing LLM Judge Reliability: Conformal Prediction Sets and Transitivity Violations",
-          "summary": "arXiv:2604.15302v1 Announce Type: cross Abstract: LLM-as-judge frameworks are increasingly used for automatic NLG evaluation, yet their per-instance reliability remains poorly understood. We present a two-pronged diagnostic toolk…"
-        },
-        "fr": {
-          "title": "Diagnosing LLM Judge Reliability: Conformal Prediction Sets and Transitivity Violations",
-          "summary": "arXiv:2604.15302v1 Announce Type: cross Abstract: LLM-as-judge frameworks are increasingly used for automatic NLG evaluation, yet their per-instance reliability remains poorly understood. We present a two-pronged diagnostic toolk…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-generalization-in-llm-problem-solving-the-case-of-the-shortest-p-0e6dd809",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.15306",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T10:02:02.125Z",
-      "locales": {
-        "en": {
-          "title": "Generalization in LLM Problem Solving: The Case of the Shortest Path",
-          "summary": "arXiv:2604.15306v1 Announce Type: cross Abstract: Whether language models can systematically generalize remains actively debated. Yet empirical performance is jointly shaped by multiple factors such as training data, training par…"
-        },
-        "fr": {
-          "title": "Generalization in LLM Problem Solving: The Case of the Shortest Path",
-          "summary": "arXiv:2604.15306v1 Announce Type: cross Abstract: Whether language models can systematically generalize remains actively debated. Yet empirical performance is jointly shaped by multiple factors such as training data, training par…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-universal-hidden-monotonic-trend-estimation-with-contrastive-lea-9f0caecc",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2210.09817",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T10:02:02.125Z",
-      "locales": {
-        "en": {
-          "title": "Universal hidden monotonic trend estimation with contrastive learning",
-          "summary": "arXiv:2210.09817v3 Announce Type: replace Abstract: In this paper, we describe a universal method for extracting the underlying monotonic trend factor from time series data. We propose an approach related to the Mann-Kendall test…"
-        },
-        "fr": {
-          "title": "Universal hidden monotonic trend estimation with contrastive learning",
-          "summary": "arXiv:2210.09817v3 Announce Type: replace Abstract: In this paper, we describe a universal method for extracting the underlying monotonic trend factor from time series data. We propose an approach related to the Mann-Kendall test…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-an-optimal-transport-driven-approach-for-cultivating-latent-spac-c27b805a",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2211.16780",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T10:02:02.125Z",
-      "locales": {
-        "en": {
-          "title": "An Optimal Transport-driven Approach for Cultivating Latent Space in Online Incremental Learning",
-          "summary": "arXiv:2211.16780v4 Announce Type: replace Abstract: In online incremental learning, data continuously arrives with substantial distributional shifts, creating a significant challenge because previous samples have limited replay v…"
-        },
-        "fr": {
-          "title": "An Optimal Transport-driven Approach for Cultivating Latent Space in Online Incremental Learning",
-          "summary": "arXiv:2211.16780v4 Announce Type: replace Abstract: In online incremental learning, data continuously arrives with substantial distributional shifts, creating a significant challenge because previous samples have limited replay v…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-generative-models-and-connected-and-automated-vehicles-a-survey--7b216dbc",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2403.10559",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T10:02:02.125Z",
-      "locales": {
-        "en": {
-          "title": "Generative Models and Connected and Automated Vehicles: A Survey in Exploring the Intersection of Transportation and AI",
-          "summary": "arXiv:2403.10559v3 Announce Type: replace Abstract: This report investigates the history and impact of Generative Models and Connected and Automated Vehicles (CAVs), two groundbreaking forces pushing progress in technology and tr…"
-        },
-        "fr": {
-          "title": "Generative Models and Connected and Automated Vehicles: A Survey in Exploring the Intersection of Transportation and AI",
-          "summary": "arXiv:2403.10559v3 Announce Type: replace Abstract: This report investigates the history and impact of Generative Models and Connected and Automated Vehicles (CAVs), two groundbreaking forces pushing progress in technology and tr…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-kernel-neural-operators-knos-for-scalable-memory-efficient-geome-f3c86a88",
-      "topic": "Computer Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2407.00809",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T10:02:02.125Z",
-      "locales": {
-        "en": {
-          "title": "Kernel Neural Operators (KNOs) for Scalable, Memory-efficient, Geometrically-flexible Operator Learning",
-          "summary": "arXiv:2407.00809v3 Announce Type: replace Abstract: This paper introduces the Kernel Neural Operator (KNO), a provably convergent operator-learning architecture that utilizes compositions of deep kernel-based integral operators f…"
-        },
-        "fr": {
-          "title": "Kernel Neural Operators (KNOs) for Scalable, Memory-efficient, Geometrically-flexible Operator Learning",
-          "summary": "arXiv:2407.00809v3 Announce Type: replace Abstract: This paper introduces the Kernel Neural Operator (KNO), a provably convergent operator-learning architecture that utilizes compositions of deep kernel-based integral operators f…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-improving-clean-accuracy-via-a-tangent-space-perspective-on-adve-aa2cec8e",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2408.14728",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T10:02:02.125Z",
-      "locales": {
-        "en": {
-          "title": "Improving Clean Accuracy via a Tangent-Space Perspective on Adversarial Training",
-          "summary": "arXiv:2408.14728v2 Announce Type: replace Abstract: Adversarial training has proven effective in improving the robustness of deep neural networks against adversarial attacks. However, this enhanced robustness often comes at the c…"
-        },
-        "fr": {
-          "title": "Improving Clean Accuracy via a Tangent-Space Perspective on Adversarial Training",
-          "summary": "arXiv:2408.14728v2 Announce Type: replace Abstract: Adversarial training has proven effective in improving the robustness of deep neural networks against adversarial attacks. However, this enhanced robustness often comes at the c…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-survey-of-deep-learning-and-physics-based-approaches-in-computat-a27b9ff0",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2410.08329",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T10:02:02.125Z",
-      "locales": {
-        "en": {
-          "title": "Survey of Deep Learning and Physics-Based Approaches in Computational Wave Imaging",
-          "summary": "arXiv:2410.08329v3 Announce Type: replace Abstract: Computational wave imaging (CWI) extracts hidden structure and physical properties of a volume of material by analyzing wave signals that traverse that volume. Applications incl…"
-        },
-        "fr": {
-          "title": "Survey of Deep Learning and Physics-Based Approaches in Computational Wave Imaging",
-          "summary": "arXiv:2410.08329v3 Announce Type: replace Abstract: Computational wave imaging (CWI) extracts hidden structure and physical properties of a volume of material by analyzing wave signals that traverse that volume. Applications incl…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-direct-preference-optimization-for-primitive-enabled-hierarchica-8f979d06",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2411.00361",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "Direct Preference Optimization for Primitive-Enabled Hierarchical RL: A Bilevel Approach",
-          "summary": "arXiv:2411.00361v4 Announce Type: replace Abstract: Hierarchical reinforcement learning (HRL) enables agents to solve complex, long-horizon tasks by decomposing them into manageable sub-tasks. However, HRL methods face two fundam…"
-        },
-        "fr": {
-          "title": "Direct Preference Optimization for Primitive-Enabled Hierarchical RL: A Bilevel Approach",
-          "summary": "arXiv:2411.00361v4 Announce Type: replace Abstract: Hierarchical reinforcement learning (HRL) enables agents to solve complex, long-horizon tasks by decomposing them into manageable sub-tasks. However, HRL methods face two fundam…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-bridging-the-gap-between-learning-and-inference-for-diffusion-ba-f261f954",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2411.05472",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "Bridging the Gap between Learning and Inference for Diffusion-Based Molecule Generation",
-          "summary": "arXiv:2411.05472v2 Announce Type: replace Abstract: The paradigm shift toward structure-driven molecule generation has been propelled by advances in deep generative models, such as variational auto-encoders and diffusion models.…"
-        },
-        "fr": {
-          "title": "Bridging the Gap between Learning and Inference for Diffusion-Based Molecule Generation",
-          "summary": "arXiv:2411.05472v2 Announce Type: replace Abstract: The paradigm shift toward structure-driven molecule generation has been propelled by advances in deep generative models, such as variational auto-encoders and diffusion models.…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-identifying-information-from-observations-with-uncertainty-and-n-77a156cd",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2501.09331",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "Identifying Information from Observations with Uncertainty and Novelty",
-          "summary": "arXiv:2501.09331v3 Announce Type: replace Abstract: A machine that learns a task from observations must encounter and process uncertainty and novelty, especially when it is to maintain performance when observing new information a…"
-        },
-        "fr": {
-          "title": "Identifying Information from Observations with Uncertainty and Novelty",
-          "summary": "arXiv:2501.09331v3 Announce Type: replace Abstract: A machine that learns a task from observations must encounter and process uncertainty and novelty, especially when it is to maintain performance when observing new information a…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-leveraging-graph-neural-networks-and-mobility-data-for-covid-19--fa7e6ce3",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2501.11711",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "Leveraging graph neural networks and mobility data for COVID-19 forecasting",
-          "summary": "arXiv:2501.11711v2 Announce Type: replace Abstract: The COVID-19 pandemic has claimed millions of lives, spurring the development of diverse forecasting models. In this context, the true utility of complex spatio-temporal archite…"
-        },
-        "fr": {
-          "title": "Leveraging graph neural networks and mobility data for COVID-19 forecasting",
-          "summary": "arXiv:2501.11711v2 Announce Type: replace Abstract: The COVID-19 pandemic has claimed millions of lives, spurring the development of diverse forecasting models. In this context, the true utility of complex spatio-temporal archite…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-maximal-brain-damage-without-data-or-optimization-disrupting-neu-b6fbb7f6",
-      "topic": "Computer Science",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2502.07408",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips",
-          "summary": "arXiv:2502.07408v2 Announce Type: replace Abstract: Deep Neural Networks (DNNs) can be catastrophically disrupted by flipping only a handful of parameter bits. We introduce Deep Neural Lesion (DNL), a data-free and optimizationfr…"
-        },
-        "fr": {
-          "title": "Maximal Brain Damage Without Data or Optimization: Disrupting Neural Networks via Sign-Bit Flips",
-          "summary": "arXiv:2502.07408v2 Announce Type: replace Abstract: Deep Neural Networks (DNNs) can be catastrophically disrupted by flipping only a handful of parameter bits. We introduce Deep Neural Lesion (DNL), a data-free and optimizationfr…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-impactx-improving-model-performance-by-appropriately-constrainin-3ae180ed",
-      "topic": "AI Performance",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2502.12222",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "IMPACTX: improving model performance by appropriately constraining the training with teacher explanations",
-          "summary": "arXiv:2502.12222v2 Announce Type: replace Abstract: The eXplainable Artificial Intelligence (XAI) research predominantly concentrates to provide explainations about AI model decisions, especially Deep Learning (DL) models. Howeve…"
-        },
-        "fr": {
-          "title": "IMPACTX: improving model performance by appropriately constraining the training with teacher explanations",
-          "summary": "arXiv:2502.12222v2 Announce Type: replace Abstract: The eXplainable Artificial Intelligence (XAI) research predominantly concentrates to provide explainations about AI model decisions, especially Deep Learning (DL) models. Howeve…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-autoran-automated-hijacking-of-safety-reasoning-in-large-reasoni-7bd3b48f",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2505.10846",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "AutoRAN: Automated Hijacking of Safety Reasoning in Large Reasoning Models",
-          "summary": "arXiv:2505.10846v3 Announce Type: replace Abstract: This paper presents AutoRAN, the first framework to automate the hijacking of internal safety reasoning in large reasoning models (LRMs). At its core, AutoRAN pioneers an execut…"
-        },
-        "fr": {
-          "title": "AutoRAN: Automated Hijacking of Safety Reasoning in Large Reasoning Models",
-          "summary": "arXiv:2505.10846v3 Announce Type: replace Abstract: This paper presents AutoRAN, the first framework to automate the hijacking of internal safety reasoning in large reasoning models (LRMs). At its core, AutoRAN pioneers an execut…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-logo-llm-local-and-global-modeling-with-large-language-models-fo-b15a15ff",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2505.11017",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "Logo-LLM: Local and Global Modeling with Large Language Models for Time Series Forecasting",
-          "summary": "arXiv:2505.11017v2 Announce Type: replace Abstract: Time series forecasting is critical across multiple domains, where time series data exhibit both local patterns and global dependencies. While Transformer-based methods effectiv…"
-        },
-        "fr": {
-          "title": "Logo-LLM: Local and Global Modeling with Large Language Models for Time Series Forecasting",
-          "summary": "arXiv:2505.11017v2 Announce Type: replace Abstract: Time series forecasting is critical across multiple domains, where time series data exhibit both local patterns and global dependencies. While Transformer-based methods effectiv…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-unsupervised-learning-of-local-updates-for-maximum-independent-s-03ae60eb",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2505.13754",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "Unsupervised Learning of Local Updates for Maximum Independent Set in Dynamic Graphs",
-          "summary": "arXiv:2505.13754v3 Announce Type: replace Abstract: We present the first unsupervised learning model for Maximum-Independent-Set (MaxIS) in dynamic graphs where edges change over time. Our method combines structural learning from…"
-        },
-        "fr": {
-          "title": "Unsupervised Learning of Local Updates for Maximum Independent Set in Dynamic Graphs",
-          "summary": "arXiv:2505.13754v3 Announce Type: replace Abstract: We present the first unsupervised learning model for Maximum-Independent-Set (MaxIS) in dynamic graphs where edges change over time. Our method combines structural learning from…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-practical-estimation-of-the-optimal-classification-error-with-so-911a581d",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2505.20761",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "Practical estimation of the optimal classification error with soft labels and calibration",
-          "summary": "arXiv:2505.20761v3 Announce Type: replace Abstract: While the performance of machine learning systems has experienced significant improvement in recent years, relatively little attention has been paid to the fundamental question:…"
-        },
-        "fr": {
-          "title": "Practical estimation of the optimal classification error with soft labels and calibration",
-          "summary": "arXiv:2505.20761v3 Announce Type: replace Abstract: While the performance of machine learning systems has experienced significant improvement in recent years, relatively little attention has been paid to the fundamental question:…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-diagnosing-and-improving-diffusion-models-by-estimating-the-opti-035ce4ff",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2506.13763",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "Diagnosing and Improving Diffusion Models by Estimating the Optimal Loss Value",
-          "summary": "arXiv:2506.13763v2 Announce Type: replace Abstract: Diffusion models have achieved remarkable success in generative modeling. Despite more stable training, the loss of diffusion models is not indicative of absolute data-fitting q…"
-        },
-        "fr": {
-          "title": "Diagnosing and Improving Diffusion Models by Estimating the Optimal Loss Value",
-          "summary": "arXiv:2506.13763v2 Announce Type: replace Abstract: Diffusion models have achieved remarkable success in generative modeling. Despite more stable training, the loss of diffusion models is not indicative of absolute data-fitting q…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-time-ra-towards-time-series-reasoning-for-anomaly-diagnosis-with-66d67ae0",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2507.15066",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "Time-RA: Towards Time Series Reasoning for Anomaly Diagnosis with LLM Feedback",
-          "summary": "arXiv:2507.15066v5 Announce Type: replace Abstract: Time series anomaly detection (TSAD) has traditionally focused on binary classification and often lacks the fine-grained categorization and explanatory reasoning required for tr…"
-        },
-        "fr": {
-          "title": "Time-RA: Towards Time Series Reasoning for Anomaly Diagnosis with LLM Feedback",
-          "summary": "arXiv:2507.15066v5 Announce Type: replace Abstract: Time series anomaly detection (TSAD) has traditionally focused on binary classification and often lacks the fine-grained categorization and explanatory reasoning required for tr…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-space-unlocking-sample-efficient-large-language-models-training--e2ef6690",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2508.05015",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "SPaCe: Unlocking Sample-Efficient Large Language Models Training With Self-Pace Curriculum Learning",
-          "summary": "arXiv:2508.05015v2 Announce Type: replace Abstract: Large language models (LLMs) have shown strong reasoning capabilities when fine-tuned with reinforcement learning (RL). However, such methods require extensive data and compute,…"
-        },
-        "fr": {
-          "title": "SPaCe: Unlocking Sample-Efficient Large Language Models Training With Self-Pace Curriculum Learning",
-          "summary": "arXiv:2508.05015v2 Announce Type: replace Abstract: Large language models (LLMs) have shown strong reasoning capabilities when fine-tuned with reinforcement learning (RL). However, such methods require extensive data and compute,…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-eegdm-learning-eeg-representation-with-latent-diffusion-model-38a2edc3",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2508.20705",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "EEGDM: Learning EEG Representation with Latent Diffusion Model",
-          "summary": "arXiv:2508.20705v3 Announce Type: replace Abstract: Recent advances in self-supervised learning for EEG representation have largely relied on masked reconstruction, where models are trained to recover randomly masked signal segme…"
-        },
-        "fr": {
-          "title": "EEGDM: Learning EEG Representation with Latent Diffusion Model",
-          "summary": "arXiv:2508.20705v3 Announce Type: replace Abstract: Recent advances in self-supervised learning for EEG representation have largely relied on masked reconstruction, where models are trained to recover randomly masked signal segme…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-dpquant-efficient-and-differentially-private-model-training-via--f2488746",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2509.03472",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T09:05:34.606Z",
-      "locales": {
-        "en": {
-          "title": "DPQuant: Efficient and Differentially-Private Model Training via Dynamic Quantization Scheduling",
-          "summary": "arXiv:2509.03472v2 Announce Type: replace Abstract: Differentially-Private SGD (DP-SGD) and its adaptive variant DP-Adam are powerful techniques to protect user privacy when using sensitive data to train neural networks. During t…"
-        },
-        "fr": {
-          "title": "DPQuant: Efficient and Differentially-Private Model Training via Dynamic Quantization Scheduling",
-          "summary": "arXiv:2509.03472v2 Announce Type: replace Abstract: Differentially-Private SGD (DP-SGD) and its adaptive variant DP-Adam are powerful techniques to protect user privacy when using sensitive data to train neural networks. During t…"
         }
       }
     }
