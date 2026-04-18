@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-18T07:43:20.036Z
+Generated: 2026-04-18T07:45:39.035Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error: What It Means for AI/CS Students
+1. Survey of Deep Learning and Physics-Based Approaches in Computational Wave Imaging: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Topology-Aware Active Learning on Graphs: What It Means for AI/CS Students
+2. Improving Clean Accuracy via a Tangent-Space Perspective on Adversarial Training: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Fall into a Pit, Gain in a Wit: Cognitive-Guided Harmful Meme Detection via Misjudgment Risk Pattern Retrieval: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. From Tokens to Layers: Redefining Stall-Free Scheduling for MoE Serving with Layered Prefill: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Adaptive Canonicalization with Application to Invariant Anisotropic Geometric Networks: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. LayerScope: Predictive Cross-Layer Scheduling for Efficient Multi-Batch MoE Inference on Legacy Servers: What It Means for AI/CS Students
+3. Kernel Neural Operators (KNOs) for Scalable, Memory-efficient, Geometrically-flexible Operator Learning: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+4. Generative Models and Connected and Automated Vehicles: A Survey in Exploring the Intersection of Transportation and AI: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. An Optimal Transport-driven Approach for Cultivating Latent Space in Online Incremental Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Universal hidden monotonic trend estimation with contrastive learning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260418--20260418-do-not-step-into-the-same-river-twice-learning-to-reason-from-tr-62fb59a1.md
-- docs/agent/drafts/20260418--20260418-topology-aware-active-learning-on-graphs-44ef2643.md
+- docs/agent/drafts/20260418--20260418-survey-of-deep-learning-and-physics-based-approaches-in-computat-a27b9ff0.md
+- docs/agent/drafts/20260418--20260418-improving-clean-accuracy-via-a-tangent-space-perspective-on-adve-aa2cec8e.md
 
