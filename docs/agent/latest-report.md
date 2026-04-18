@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-17T08:16:24.250Z
+Generated: 2026-04-18T07:43:20.036Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Rethinking LLM-Driven Heuristic Design: Generating Efficient and Specialized Solvers via Dynamics-Aware Optimization: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Learning temporal embeddings from electronic health records of chronic kidney disease patients: What It Means for AI/CS Students
+1. Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. LLMOrbit: A Circular Taxonomy of Large Language Models -From Scaling Walls to Agentic AI Systems: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Threshold Differential Attention for Sink-Free, Ultra-Sparse, and Non-Dispersive Language Modeling: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Fundamental Limitations of Favorable Privacy-Utility Guarantees for DP-SGD: What It Means for AI/CS Students
+2. Topology-Aware Active Learning on Graphs: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. ORBIT: On-policy Exploration-Exploitation for Controllable Multi-Budget Reasoning: What It Means for AI/CS Students
+3. Fall into a Pit, Gain in a Wit: Cognitive-Guided Harmful Meme Detection via Misjudgment Risk Pattern Retrieval: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+4. From Tokens to Layers: Redefining Stall-Free Scheduling for MoE Serving with Layered Prefill: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Adaptive Canonicalization with Application to Invariant Anisotropic Geometric Networks: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. LayerScope: Predictive Cross-Layer Scheduling for Efficient Multi-Batch MoE Inference on Legacy Servers: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260417--20260417-rethinking-llm-driven-heuristic-design-generating-efficient-and--aa60bb04.md
-- docs/agent/drafts/20260417--20260417-learning-temporal-embeddings-from-electronic-health-records-of-c-6a766f15.md
+- docs/agent/drafts/20260418--20260418-do-not-step-into-the-same-river-twice-learning-to-reason-from-tr-62fb59a1.md
+- docs/agent/drafts/20260418--20260418-topology-aware-active-learning-on-graphs-44ef2643.md
 
