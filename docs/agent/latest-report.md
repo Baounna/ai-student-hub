@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-18T07:45:39.035Z
+Generated: 2026-04-19T07:55:29.885Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Survey of Deep Learning and Physics-Based Approaches in Computational Wave Imaging: What It Means for AI/CS Students
+1. An unsupervised decision-support framework for multivariate biomarker analysis in athlete monitoring: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Improving Clean Accuracy via a Tangent-Space Perspective on Adversarial Training: What It Means for AI/CS Students
+2. CSRA: Controlled Spectral Residual Augmentation for Robust Sepsis Prediction: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Kernel Neural Operators (KNOs) for Scalable, Memory-efficient, Geometrically-flexible Operator Learning: What It Means for AI/CS Students
+3. CI-CBM: Class-Incremental Concept Bottleneck Model for Interpretable Continual Learning: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Generative Models and Connected and Automated Vehicles: A Survey in Exploring the Intersection of Transportation and AI: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. An Optimal Transport-driven Approach for Cultivating Latent Space in Online Incremental Learning: What It Means for AI/CS Students
+4. On the Expressive Power and Limitations of Multi-Layer SSMs: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Universal hidden monotonic trend estimation with contrastive learning: What It Means for AI/CS Students
+5. Quantization of Spiking Neural Networks Beyond Accuracy: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Scouting By Reward: VLM-TO-IRL-Driven Player Selection For Esports: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260418--20260418-survey-of-deep-learning-and-physics-based-approaches-in-computat-a27b9ff0.md
-- docs/agent/drafts/20260418--20260418-improving-clean-accuracy-via-a-tangent-space-perspective-on-adve-aa2cec8e.md
+- docs/agent/drafts/20260419--20260418-an-unsupervised-decision-support-framework-for-multivariate-biom-9fc37e7b.md
+- docs/agent/drafts/20260419--20260418-csra-controlled-spectral-residual-augmentation-for-robust-sepsis-ebbb6f50.md
 
