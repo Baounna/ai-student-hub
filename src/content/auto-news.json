@@ -1,7 +1,482 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-18T23:51:34.646Z",
+  "updatedAt": "2026-04-19T03:50:09.722Z",
   "items": [
+    {
+      "slug": "20260418-beyond-importance-sampling-rejection-gated-policy-optimization-833af7d1",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.14895",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Beyond Importance Sampling: Rejection-Gated Policy Optimization",
+          "summary": "arXiv:2604.14895v1 Announce Type: new Abstract: We propose a new perspective on policy optimization: rather than reweighting all samples by their importance ratios, an optimizer should select which samples are trustworthy enough…"
+        },
+        "fr": {
+          "title": "Beyond Importance Sampling: Rejection-Gated Policy Optimization",
+          "summary": "arXiv:2604.14895v1 Announce Type: new Abstract: We propose a new perspective on policy optimization: rather than reweighting all samples by their importance ratios, an optimizer should select which samples are trustworthy enough…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-multi-user-mmwave-beam-and-rate-adaptation-via-combinatorial-sat-f4a04fed",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.14908",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Multi-User mmWave Beam and Rate Adaptation via Combinatorial Satisficing Bandits",
+          "summary": "arXiv:2604.14908v1 Announce Type: new Abstract: We study downlink beam and rate adaptation in a multi-user mmWave MISO system where multiple base stations (BSs), each using analog beamforming from finite codebooks, serve multiple…"
+        },
+        "fr": {
+          "title": "Multi-User mmWave Beam and Rate Adaptation via Combinatorial Satisficing Bandits",
+          "summary": "arXiv:2604.14908v1 Announce Type: new Abstract: We study downlink beam and rate adaptation in a multi-user mmWave MISO system where multiple base stations (BSs), each using analog beamforming from finite codebooks, serve multiple…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-longact-harnessing-intrinsic-activation-patterns-for-long-contex-43c01063",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.14922",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "LongAct: Harnessing Intrinsic Activation Patterns for Long-Context Reinforcement Learning",
+          "summary": "arXiv:2604.14922v1 Announce Type: new Abstract: Reinforcement Learning (RL) has emerged as a critical driver for enhancing the reasoning capabilities of Large Language Models (LLMs). While recent advancements have focused on rewa…"
+        },
+        "fr": {
+          "title": "LongAct: Harnessing Intrinsic Activation Patterns for Long-Context Reinforcement Learning",
+          "summary": "arXiv:2604.14922v1 Announce Type: new Abstract: Reinforcement Learning (RL) has emerged as a critical driver for enhancing the reasoning capabilities of Large Language Models (LLMs). While recent advancements have focused on rewa…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-improving-sparse-autoencoder-with-dynamic-attention-c18c61fa",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.14925",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Improving Sparse Autoencoder with Dynamic Attention",
+          "summary": "arXiv:2604.14925v1 Announce Type: new Abstract: Recently, sparse autoencoders (SAEs) have emerged as a promising technique for interpreting activations in foundation models by disentangling features into a sparse set of concepts.…"
+        },
+        "fr": {
+          "title": "Improving Sparse Autoencoder with Dynamic Attention",
+          "summary": "arXiv:2604.14925v1 Announce Type: new Abstract: Recently, sparse autoencoders (SAEs) have emerged as a promising technique for interpreting activations in foundation models by disentangling features into a sparse set of concepts.…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-calibration-gated-llm-pseudo-observations-for-online-contextual--27930ffb",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.14961",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Calibration-Gated LLM Pseudo-Observations for Online Contextual Bandits",
+          "summary": "arXiv:2604.14961v1 Announce Type: new Abstract: Contextual bandit algorithms suffer from high regret during cold-start, when the learner has insufficient data to distinguish good arms from bad. We propose augmenting Disjoint LinU…"
+        },
+        "fr": {
+          "title": "Calibration-Gated LLM Pseudo-Observations for Online Contextual Bandits",
+          "summary": "arXiv:2604.14961v1 Announce Type: new Abstract: Contextual bandit algorithms suffer from high regret during cold-start, when the learner has insufficient data to distinguish good arms from bad. We propose augmenting Disjoint LinU…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-blazing-the-trails-before-beating-the-path-sample-efficient-mont-151347fb",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.14974",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Blazing the trails before beating the path: Sample-efficient Monte-Carlo planning",
+          "summary": "arXiv:2604.14974v1 Announce Type: new Abstract: You are a robot and you live in a Markov decision process (MDP) with a finite or an infinite number of transitions from state-action to next states. You got brains and so you plan b…"
+        },
+        "fr": {
+          "title": "Blazing the trails before beating the path: Sample-efficient Monte-Carlo planning",
+          "summary": "arXiv:2604.14974v1 Announce Type: new Abstract: You are a robot and you live in a Markov decision process (MDP) with a finite or an infinite number of transitions from state-action to next states. You got brains and so you plan b…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-what-is-the-minimum-architecture-for-prolepsis-early-irrevocable-6cecc658",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15010",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "What Is the Minimum Architecture for Prolepsis? Early Irrevocable Commitment Across Tasks in Small Transformers",
+          "summary": "arXiv:2604.15010v1 Announce Type: new Abstract: When do transformers commit to a decision, and what prevents them from correcting it? We introduce \\textbf{prolepsis}: a transformer commits early, task-specific attention heads sus…"
+        },
+        "fr": {
+          "title": "What Is the Minimum Architecture for Prolepsis? Early Irrevocable Commitment Across Tasks in Small Transformers",
+          "summary": "arXiv:2604.15010v1 Announce Type: new Abstract: When do transformers commit to a decision, and what prevents them from correcting it? We introduce \\textbf{prolepsis}: a transformer commits early, task-specific attention heads sus…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-dlink-distilling-layer-wise-and-dominant-knowledge-from-eeg-foun-5de3f1ad",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15016",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "DLink: Distilling Layer-wise and Dominant Knowledge from EEG Foundation Models",
+          "summary": "arXiv:2604.15016v1 Announce Type: new Abstract: EEG foundation models (FMs) achieve strong cross-subject and cross-task generalization but impose substantial computational and memory costs that hinder deployment on embedded BCI s…"
+        },
+        "fr": {
+          "title": "DLink: Distilling Layer-wise and Dominant Knowledge from EEG Foundation Models",
+          "summary": "arXiv:2604.15016v1 Announce Type: new Abstract: EEG foundation models (FMs) achieve strong cross-subject and cross-task generalization but impose substantial computational and memory costs that hinder deployment on embedded BCI s…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-when-fairness-metrics-disagree-evaluating-the-reliability-of-dem-250cc7bb",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15038",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "When Fairness Metrics Disagree: Evaluating the Reliability of Demographic Fairness Assessment in Machine Learning",
+          "summary": "arXiv:2604.15038v1 Announce Type: new Abstract: The evaluation of fairness in machine learning systems has become a central concern in high-stakes applications, including biometric recognition, healthcare decision-making, and aut…"
+        },
+        "fr": {
+          "title": "When Fairness Metrics Disagree: Evaluating the Reliability of Demographic Fairness Assessment in Machine Learning",
+          "summary": "arXiv:2604.15038v1 Announce Type: new Abstract: The evaluation of fairness in machine learning systems has become a central concern in high-stakes applications, including biometric recognition, healthcare decision-making, and aut…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-no-more-guessing-a-verifiable-gradient-inversion-attack-in-feder-d1f18782",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15063",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "No More Guessing: a Verifiable Gradient Inversion Attack in Federated Learning",
+          "summary": "arXiv:2604.15063v1 Announce Type: new Abstract: Gradient inversion attacks threaten client privacy in federated learning by reconstructing training samples from clients' shared gradients. Gradients aggregate contributions from mu…"
+        },
+        "fr": {
+          "title": "No More Guessing: a Verifiable Gradient Inversion Attack in Federated Learning",
+          "summary": "arXiv:2604.15063v1 Announce Type: new Abstract: Gradient inversion attacks threaten client privacy in federated learning by reconstructing training samples from clients' shared gradients. Gradients aggregate contributions from mu…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-beyond-the-laplacian-doubly-stochastic-matrices-for-graph-neural-e7834f2c",
+      "topic": "Computer Science",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15069",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Beyond the Laplacian: Doubly Stochastic Matrices for Graph Neural Networks",
+          "summary": "arXiv:2604.15069v1 Announce Type: new Abstract: Graph Neural Networks (GNNs) conventionally rely on standard Laplacian or adjacency matrices for structural message passing. In this work, we substitute the traditional Laplacian wi…"
+        },
+        "fr": {
+          "title": "Beyond the Laplacian: Doubly Stochastic Matrices for Graph Neural Networks",
+          "summary": "arXiv:2604.15069v1 Announce Type: new Abstract: Graph Neural Networks (GNNs) conventionally rely on standard Laplacian or adjacency matrices for structural message passing. In this work, we substitute the traditional Laplacian wi…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-fedidm-achieving-fast-and-stable-convergence-in-byzantine-federa-4f19d0cb",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15115",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "FedIDM: Achieving Fast and Stable Convergence in Byzantine Federated Learning through Iterative Distribution Matching",
+          "summary": "arXiv:2604.15115v1 Announce Type: new Abstract: Most existing Byzantine-robust federated learning (FL) methods suffer from slow and unstable convergence. Moreover, when handling a substantial proportion of colluded malicious clie…"
+        },
+        "fr": {
+          "title": "FedIDM: Achieving Fast and Stable Convergence in Byzantine Federated Learning through Iterative Distribution Matching",
+          "summary": "arXiv:2604.15115v1 Announce Type: new Abstract: Most existing Byzantine-robust federated learning (FL) methods suffer from slow and unstable convergence. Moreover, when handling a substantial proportion of colluded malicious clie…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-llms-gaming-verifiers-rlvr-can-lead-to-reward-hacking-f0b558fc",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15149",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "LLMs Gaming Verifiers: RLVR can Lead to Reward Hacking",
+          "summary": "arXiv:2604.15149v1 Announce Type: new Abstract: As reinforcement Learning with Verifiable Rewards (RLVR) has become the dominant paradigm for scaling reasoning capabilities in LLMs, a new failure mode emerges: LLMs gaming verifie…"
+        },
+        "fr": {
+          "title": "LLMs Gaming Verifiers: RLVR can Lead to Reward Hacking",
+          "summary": "arXiv:2604.15149v1 Announce Type: new Abstract: As reinforcement Learning with Verifiable Rewards (RLVR) has become the dominant paradigm for scaling reasoning capabilities in LLMs, a new failure mode emerges: LLMs gaming verifie…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-when-flat-minima-fail-characterizing-int4-quantization-collapse--4babbe3b",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15167",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "When Flat Minima Fail: Characterizing INT4 Quantization Collapse After FP32 Convergence",
+          "summary": "arXiv:2604.15167v1 Announce Type: new Abstract: Post-training quantization (PTQ) assumes that a well-converged model is a quantization-ready model. We show this assumption fails in a structured, measurable, and previously unchara…"
+        },
+        "fr": {
+          "title": "When Flat Minima Fail: Characterizing INT4 Quantization Collapse After FP32 Convergence",
+          "summary": "arXiv:2604.15167v1 Announce Type: new Abstract: Post-training quantization (PTQ) assumes that a well-converged model is a quantization-ready model. We show this assumption fails in a structured, measurable, and previously unchara…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-assessing-the-potential-of-masked-autoencoder-foundation-models--eee58ec6",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15169",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Assessing the Potential of Masked Autoencoder Foundation Models in Predicting Downhole Metrics from Surface Drilling Data",
+          "summary": "arXiv:2604.15169v1 Announce Type: new Abstract: Oil and gas drilling operations generate extensive time-series data from surface sensors, yet accurate real-time prediction of critical downhole metrics remains challenging due to t…"
+        },
+        "fr": {
+          "title": "Assessing the Potential of Masked Autoencoder Foundation Models in Predicting Downhole Metrics from Surface Drilling Data",
+          "summary": "arXiv:2604.15169v1 Announce Type: new Abstract: Oil and gas drilling operations generate extensive time-series data from surface sensors, yet accurate real-time prediction of critical downhole metrics remains challenging due to t…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-mambasl-exploring-single-layer-mamba-for-time-series-classificat-1730092c",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15174",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "MambaSL: Exploring Single-Layer Mamba for Time Series Classification",
+          "summary": "arXiv:2604.15174v1 Announce Type: new Abstract: Despite recent advances in state space models (SSMs) such as Mamba across various sequence domains, research on their standalone capacity for time series classification (TSC) has re…"
+        },
+        "fr": {
+          "title": "MambaSL: Exploring Single-Layer Mamba for Time Series Classification",
+          "summary": "arXiv:2604.15174v1 Announce Type: new Abstract: Despite recent advances in state space models (SSMs) such as Mamba across various sequence domains, research on their standalone capacity for time series classification (TSC) has re…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-adasplash-2-faster-differentiable-sparse-attention-cdfc2978",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15180",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "AdaSplash-2: Faster Differentiable Sparse Attention",
+          "summary": "arXiv:2604.15180v1 Announce Type: new Abstract: Sparse attention has been proposed as a way to alleviate the quadratic cost of transformers, a central bottleneck in long-context training. A promising line of work is $\\alpha$-entm…"
+        },
+        "fr": {
+          "title": "AdaSplash-2: Faster Differentiable Sparse Attention",
+          "summary": "arXiv:2604.15180v1 Announce Type: new Abstract: Sparse attention has been proposed as a way to alleviate the quadratic cost of transformers, a central bottleneck in long-context training. A promising line of work is $\\alpha$-entm…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-one-shot-learning-for-the-complex-dynamical-behaviors-of-weakly--d0b7a8af",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15181",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "One-shot learning for the complex dynamical behaviors of weakly nonlinear forced oscillators",
+          "summary": "arXiv:2604.15181v1 Announce Type: new Abstract: Extrapolative prediction of complex nonlinear dynamics remains a central challenge in engineering. This study proposes a one-shot learning method to identify global frequency-respon…"
+        },
+        "fr": {
+          "title": "One-shot learning for the complex dynamical behaviors of weakly nonlinear forced oscillators",
+          "summary": "arXiv:2604.15181v1 Announce Type: new Abstract: Extrapolative prediction of complex nonlinear dynamics remains a central challenge in engineering. This study proposes a one-shot learning method to identify global frequency-respon…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-rl-stpa-adapting-system-theoretic-hazard-analysis-for-safety-cri-0af889db",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15201",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "RL-STPA: Adapting System-Theoretic Hazard Analysis for Safety-Critical Reinforcement Learning",
+          "summary": "arXiv:2604.15201v1 Announce Type: new Abstract: As reinforcement learning (RL) deployments expand into safety-critical domains, existing evaluation methods fail to systematically identify hazards arising from the black-box nature…"
+        },
+        "fr": {
+          "title": "RL-STPA: Adapting System-Theoretic Hazard Analysis for Safety-Critical Reinforcement Learning",
+          "summary": "arXiv:2604.15201v1 Announce Type: new Abstract: As reinforcement learning (RL) deployments expand into safety-critical domains, existing evaluation methods fail to systematically identify hazards arising from the black-box nature…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-optimal-last-iterate-convergence-in-matrix-games-with-bandit-fee-3761dfc8",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15242",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Optimal last-iterate convergence in matrix games with bandit feedback using the log-barrier",
+          "summary": "arXiv:2604.15242v1 Announce Type: new Abstract: We study the problem of learning minimax policies in zero-sum matrix games. Fiegel et al. (2025) recently showed that achieving last-iterate convergence in this setting is harder wh…"
+        },
+        "fr": {
+          "title": "Optimal last-iterate convergence in matrix games with bandit feedback using the log-barrier",
+          "summary": "arXiv:2604.15242v1 Announce Type: new Abstract: We study the problem of learning minimax policies in zero-sum matrix games. Fiegel et al. (2025) recently showed that achieving last-iterate convergence in this setting is harder wh…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-stability-and-generalization-in-looped-transformers-9d53c448",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15259",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Stability and Generalization in Looped Transformers",
+          "summary": "arXiv:2604.15259v1 Announce Type: new Abstract: Looped transformers promise test-time compute scaling by spending more iterations on harder problems, but it remains unclear which architectural choices let them extrapolate to hard…"
+        },
+        "fr": {
+          "title": "Stability and Generalization in Looped Transformers",
+          "summary": "arXiv:2604.15259v1 Announce Type: new Abstract: Looped transformers promise test-time compute scaling by spending more iterations on harder problems, but it remains unclear which architectural choices let them extrapolate to hard…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-how-embeddings-shape-graph-neural-networks-classical-vs-quantum--2a8a3105",
+      "topic": "Computer Science",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15273",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "How Embeddings Shape Graph Neural Networks: Classical vs Quantum-Oriented Node Representations",
+          "summary": "arXiv:2604.15273v1 Announce Type: new Abstract: Node embeddings act as the information interface for graph neural networks, yet their empirical impact is often reported under mismatched backbones, splits, and training budgets. Th…"
+        },
+        "fr": {
+          "title": "How Embeddings Shape Graph Neural Networks: Classical vs Quantum-Oriented Node Representations",
+          "summary": "arXiv:2604.15273v1 Announce Type: new Abstract: Node embeddings act as the information interface for graph neural networks, yet their empirical impact is often reported under mismatched backbones, splits, and training budgets. Th…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-benchmarking-optimizers-for-mlps-in-tabular-deep-learning-d89035ff",
+      "topic": "AI Performance",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.15297",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Benchmarking Optimizers for MLPs in Tabular Deep Learning",
+          "summary": "arXiv:2604.15297v1 Announce Type: new Abstract: MLP is a heavily used backbone in modern deep learning (DL) architectures for supervised learning on tabular data, and AdamW is the go-to optimizer used to train tabular DL models.…"
+        },
+        "fr": {
+          "title": "Benchmarking Optimizers for MLPs in Tabular Deep Learning",
+          "summary": "arXiv:2604.15297v1 Announce Type: new Abstract: MLP is a heavily used backbone in modern deep learning (DL) architectures for supervised learning on tabular data, and AdamW is the go-to optimizer used to train tabular DL models.…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-predictions-of-charge-density-distributions-for-nuclei-with-z-ge-ff848aef",
+      "topic": "AI Research",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.05312",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Predictions of charge density distributions for nuclei with $Z \\geq 8$",
+          "summary": "arXiv:2604.05312v1 Announce Type: cross Abstract: A deep neural network (DNN) has been developed to accurately predict nuclear charge density distributions for nuclei with proton numbers $Z \\geq 8$. By incorporating essential nuc…"
+        },
+        "fr": {
+          "title": "Predictions of charge density distributions for nuclei with $Z \\geq 8$",
+          "summary": "arXiv:2604.05312v1 Announce Type: cross Abstract: A deep neural network (DNN) has been developed to accurately predict nuclear charge density distributions for nuclei with proton numbers $Z \\geq 8$. By incorporating essential nuc…"
+        }
+      }
+    },
+    {
+      "slug": "20260418-can-large-language-models-detect-methodological-flaws-evidence-f-e92cc32b",
+      "topic": "AI Systems",
+      "source": "arXiv cs.LG",
+      "sourceFeed": "https://arxiv.org/rss/cs.LG",
+      "href": "https://arxiv.org/abs/2604.14161",
+      "publishedAt": "2026-04-18T04:00:00.000Z",
+      "discoveredAt": "2026-04-19T03:50:09.722Z",
+      "locales": {
+        "en": {
+          "title": "Can Large Language Models Detect Methodological Flaws? Evidence from Gesture Recognition for UAV-Based Rescue Operation Based on Deep Learning",
+          "summary": "arXiv:2604.14161v1 Announce Type: cross Abstract: Reliable evaluation is essential in machine learning research, yet methodological flaws-particularly data leakage-continue to undermine the validity of reported results. In this w…"
+        },
+        "fr": {
+          "title": "Can Large Language Models Detect Methodological Flaws? Evidence from Gesture Recognition for UAV-Based Rescue Operation Based on Deep Learning",
+          "summary": "arXiv:2604.14161v1 Announce Type: cross Abstract: Reliable evaluation is essential in machine learning research, yet methodological flaws-particularly data leakage-continue to undermine the validity of reported results. In this w…"
+        }
+      }
+    },
     {
       "slug": "20260418-decoupling-scores-and-text-the-politeness-principle-in-peer-revi-722693a1",
       "topic": "AI Performance",
@@ -4084,481 +4559,6 @@
         "fr": {
           "title": "An unsupervised decision-support framework for multivariate biomarker analysis in athlete monitoring",
           "summary": "arXiv:2604.14534v1 Announce Type: new Abstract: Purpose. Athlete monitoring is constrained by small cohorts, heterogeneous biomarker scales, limited feasibility of repeated sampling, and the lack of reliable injury ground truth.…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-predicting-post-traumatic-epilepsy-from-clinical-records-using-l-922b0ef4",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14547",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T15:54:16.363Z",
-      "locales": {
-        "en": {
-          "title": "Predicting Post-Traumatic Epilepsy from Clinical Records using Large Language Model Embeddings",
-          "summary": "arXiv:2604.14547v1 Announce Type: new Abstract: Objective: Post-traumatic epilepsy (PTE) is a debilitating neurological disorder that develops after traumatic brain injury (TBI). Early prediction of PTE remains challenging due to…"
-        },
-        "fr": {
-          "title": "Predicting Post-Traumatic Epilepsy from Clinical Records using Large Language Model Embeddings",
-          "summary": "arXiv:2604.14547v1 Announce Type: new Abstract: Objective: Post-traumatic epilepsy (PTE) is a debilitating neurological disorder that develops after traumatic brain injury (TBI). Early prediction of PTE remains challenging due to…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-material-agnostic-zero-shot-thermal-inference-for-metal-additive-227f16fe",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14562",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T15:54:16.363Z",
-      "locales": {
-        "en": {
-          "title": "Material-Agnostic Zero-Shot Thermal Inference for Metal Additive Manufacturing via a Parametric PINN Framework",
-          "summary": "arXiv:2604.14562v1 Announce Type: new Abstract: Accurate thermal modeling in metal additive manufacturing (AM) is essential for understanding the process-structure-performance relationship. While prior studies have explored gener…"
-        },
-        "fr": {
-          "title": "Material-Agnostic Zero-Shot Thermal Inference for Metal Additive Manufacturing via a Parametric PINN Framework",
-          "summary": "arXiv:2604.14562v1 Announce Type: new Abstract: Accurate thermal modeling in metal additive manufacturing (AM) is essential for understanding the process-structure-performance relationship. While prior studies have explored gener…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-physics-informed-machine-learning-for-pouch-cell-temperature-est-a82e5497",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14566",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T15:54:16.363Z",
-      "locales": {
-        "en": {
-          "title": "Physics-Informed Machine Learning for Pouch Cell Temperature Estimation",
-          "summary": "arXiv:2604.14566v1 Announce Type: new Abstract: Accurate temperature estimation of pouch cells with indirect liquid cooling is essential for optimizing battery thermal management systems for transportation electrification. Howeve…"
-        },
-        "fr": {
-          "title": "Physics-Informed Machine Learning for Pouch Cell Temperature Estimation",
-          "summary": "arXiv:2604.14566v1 Announce Type: new Abstract: Accurate temperature estimation of pouch cells with indirect liquid cooling is essential for optimizing battery thermal management systems for transportation electrification. Howeve…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-generative-augmented-inference-beb1f4ef",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14575",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T15:54:16.363Z",
-      "locales": {
-        "en": {
-          "title": "Generative Augmented Inference",
-          "summary": "arXiv:2604.14575v1 Announce Type: new Abstract: Data-driven operations management often relies on parameters estimated from costly human-generated labels. Recent advances in large language models (LLMs) and other AI systems offer…"
-        },
-        "fr": {
-          "title": "Generative Augmented Inference",
-          "summary": "arXiv:2604.14575v1 Announce Type: new Abstract: Data-driven operations management often relies on parameters estimated from costly human-generated labels. Recent advances in large language models (LLMs) and other AI systems offer…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-from-risk-to-rescue-an-agentic-survival-analysis-framework-for-l-e941dade",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14583",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T15:54:16.363Z",
-      "locales": {
-        "en": {
-          "title": "From Risk to Rescue: An Agentic Survival Analysis Framework for Liquidation Prevention",
-          "summary": "arXiv:2604.14583v1 Announce Type: new Abstract: Decentralized Finance (DeFi) lending protocols like Aave v3 rely on over-collateralization to secure loans, yet users frequently face liquidation due to volatile market conditions.…"
-        },
-        "fr": {
-          "title": "From Risk to Rescue: An Agentic Survival Analysis Framework for Liquidation Prevention",
-          "summary": "arXiv:2604.14583v1 Announce Type: new Abstract: Decentralized Finance (DeFi) lending protocols like Aave v3 rely on over-collateralization to secure loans, yet users frequently face liquidation due to volatile market conditions.…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-clion-efficient-cautious-lion-optimizer-with-enhanced-generaliza-4ace139a",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14587",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T15:54:16.363Z",
-      "locales": {
-        "en": {
-          "title": "CLion: Efficient Cautious Lion Optimizer with Enhanced Generalization",
-          "summary": "arXiv:2604.14587v1 Announce Type: new Abstract: Lion optimizer is a popular learning-based optimization algorithm in machine learning, which shows impressive performance in training many deep learning models. Although convergence…"
-        },
-        "fr": {
-          "title": "CLion: Efficient Cautious Lion Optimizer with Enhanced Generalization",
-          "summary": "arXiv:2604.14587v1 Announce Type: new Abstract: Lion optimizer is a popular learning-based optimization algorithm in machine learning, which shows impressive performance in training many deep learning models. Although convergence…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-conflayers-adaptive-confidence-based-layer-skipping-for-self-spe-9d10d58d",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14612",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T15:54:16.363Z",
-      "locales": {
-        "en": {
-          "title": "ConfLayers: Adaptive Confidence-based Layer Skipping for Self-Speculative Decoding",
-          "summary": "arXiv:2604.14612v1 Announce Type: new Abstract: Self-speculative decoding is an inference technique for large language models designed to speed up generation without sacrificing output quality. It combines fast, approximate decod…"
-        },
-        "fr": {
-          "title": "ConfLayers: Adaptive Confidence-based Layer Skipping for Self-Speculative Decoding",
-          "summary": "arXiv:2604.14612v1 Announce Type: new Abstract: Self-speculative decoding is an inference technique for large language models designed to speed up generation without sacrificing output quality. It combines fast, approximate decod…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-elmoe-3d-leveraging-intrinsic-elasticity-of-moe-for-hybrid-bondi-a26e3381",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14626",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T15:54:16.363Z",
-      "locales": {
-        "en": {
-          "title": "ELMoE-3D: Leveraging Intrinsic Elasticity of MoE for Hybrid-Bonding-Enabled Self-Speculative Decoding in On-Premises Serving",
-          "summary": "arXiv:2604.14626v1 Announce Type: new Abstract: Mixture-of-Experts (MoE) models have become the dominant architecture for large-scale language models, yet on-premises serving remains fundamentally memory-bound as batching turns s…"
-        },
-        "fr": {
-          "title": "ELMoE-3D: Leveraging Intrinsic Elasticity of MoE for Hybrid-Bonding-Enabled Self-Speculative Decoding in On-Premises Serving",
-          "summary": "arXiv:2604.14626v1 Announce Type: new Abstract: Mixture-of-Experts (MoE) models have become the dominant architecture for large-scale language models, yet on-premises serving remains fundamentally memory-bound as batching turns s…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-zeroth-order-optimization-at-the-edge-of-stability-ccc3e855",
-      "topic": "Computer Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14669",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T15:54:16.363Z",
-      "locales": {
-        "en": {
-          "title": "Zeroth-Order Optimization at the Edge of Stability",
-          "summary": "arXiv:2604.14669v1 Announce Type: new Abstract: Zeroth-order (ZO) methods are widely used when gradients are unavailable or prohibitively expensive, including black-box learning and memory-efficient fine-tuning of large models, y…"
-        },
-        "fr": {
-          "title": "Zeroth-Order Optimization at the Edge of Stability",
-          "summary": "arXiv:2604.14669v1 Announce Type: new Abstract: Zeroth-order (ZO) methods are widely used when gradients are unavailable or prohibitively expensive, including black-box learning and memory-efficient fine-tuning of large models, y…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-mean-flow-policy-optimization-c0fdfffb",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14698",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T15:54:16.363Z",
-      "locales": {
-        "en": {
-          "title": "Mean Flow Policy Optimization",
-          "summary": "arXiv:2604.14698v1 Announce Type: new Abstract: Diffusion models have recently emerged as expressive policy representations for online reinforcement learning (RL). However, their iterative generative processes introduce substanti…"
-        },
-        "fr": {
-          "title": "Mean Flow Policy Optimization",
-          "summary": "arXiv:2604.14698v1 Announce Type: new Abstract: Diffusion models have recently emerged as expressive policy representations for online reinforcement learning (RL). However, their iterative generative processes introduce substanti…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-gating-enables-curvature-a-geometric-expressivity-gap-in-attenti-29d52b98",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14702",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "Gating Enables Curvature: A Geometric Expressivity Gap in Attention",
-          "summary": "arXiv:2604.14702v1 Announce Type: new Abstract: Multiplicative gating is widely used in neural architectures and has recently been applied to attention layers to improve performance and training stability in large language models…"
-        },
-        "fr": {
-          "title": "Gating Enables Curvature: A Geometric Expressivity Gap in Attention",
-          "summary": "arXiv:2604.14702v1 Announce Type: new Abstract: Multiplicative gating is widely used in neural architectures and has recently been applied to attention layers to improve performance and training stability in large language models…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-a-mechanistic-account-of-attention-sinks-in-gpt-2-one-circuit-br-dd2d3946",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14722",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "A Mechanistic Account of Attention Sinks in GPT-2: One Circuit, Broader Implications for Mitigation",
-          "summary": "arXiv:2604.14722v1 Announce Type: new Abstract: Transformers commonly exhibit an attention sink: disproportionately high attention to the first position. We study this behavior in GPT-2-style models with learned query biases and…"
-        },
-        "fr": {
-          "title": "A Mechanistic Account of Attention Sinks in GPT-2: One Circuit, Broader Implications for Mitigation",
-          "summary": "arXiv:2604.14722v1 Announce Type: new Abstract: Transformers commonly exhibit an attention sink: disproportionately high attention to the first position. We study this behavior in GPT-2-style models with learned query biases and…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-catching-every-ripple-enhanced-anomaly-awareness-via-dynamic-con-8fbd1067",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14726",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "Catching Every Ripple: Enhanced Anomaly Awareness via Dynamic Concept Adaptation",
-          "summary": "arXiv:2604.14726v1 Announce Type: new Abstract: Online anomaly detection (OAD) plays a pivotal role in real-time analytics and decision-making for evolving data streams. However, existing methods often rely on costly retraining a…"
-        },
-        "fr": {
-          "title": "Catching Every Ripple: Enhanced Anomaly Awareness via Dynamic Concept Adaptation",
-          "summary": "arXiv:2604.14726v1 Announce Type: new Abstract: Online anomaly detection (OAD) plays a pivotal role in real-time analytics and decision-making for evolving data streams. However, existing methods often rely on costly retraining a…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-expressivity-of-transformers-a-tropical-geometry-perspective-aca31f2b",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14727",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "Expressivity of Transformers: A Tropical Geometry Perspective",
-          "summary": "arXiv:2604.14727v1 Announce Type: new Abstract: To quantify the geometric expressivity of transformers, we introduce a tropical geometry framework to characterize their exact spatial partitioning capabilities. By modeling self-at…"
-        },
-        "fr": {
-          "title": "Expressivity of Transformers: A Tropical Geometry Perspective",
-          "summary": "arXiv:2604.14727v1 Announce Type: new Abstract: To quantify the geometric expressivity of transformers, we introduce a tropical geometry framework to characterize their exact spatial partitioning capabilities. By modeling self-at…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-assessing-the-performance-efficiency-trade-off-of-foundation-mod-e3a270e5",
-      "topic": "AI Performance",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14739",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "Assessing the Performance-Efficiency Trade-off of Foundation Models in Probabilistic Electricity Price Forecasting",
-          "summary": "arXiv:2604.14739v1 Announce Type: new Abstract: Large-scale renewable energy deployment introduces pronounced volatility into the electricity system, turning grid operation into a complex stochastic optimization problem. Accurate…"
-        },
-        "fr": {
-          "title": "Assessing the Performance-Efficiency Trade-off of Foundation Models in Probabilistic Electricity Price Forecasting",
-          "summary": "arXiv:2604.14739v1 Announce Type: new Abstract: Large-scale renewable energy deployment introduces pronounced volatility into the electricity system, turning grid operation into a complex stochastic optimization problem. Accurate…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-wasserstein-formulation-of-reinforcement-learning-an-optimal-tra-c98bf8fa",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14765",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "Wasserstein Formulation of Reinforcement Learning. An Optimal Transport Perspective on Policy Optimization",
-          "summary": "arXiv:2604.14765v1 Announce Type: new Abstract: We present a geometric framework for Reinforcement Learning (RL) that views policies as maps into the Wasserstein space of action probabilities. First, we define a Riemannian struct…"
-        },
-        "fr": {
-          "title": "Wasserstein Formulation of Reinforcement Learning. An Optimal Transport Perspective on Policy Optimization",
-          "summary": "arXiv:2604.14765v1 Announce Type: new Abstract: We present a geometric framework for Reinforcement Learning (RL) that views policies as maps into the Wasserstein space of action probabilities. First, we define a Riemannian struct…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-constraint-based-pre-training-from-structured-constraints-to-sca-29751280",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14769",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "Constraint-based Pre-training: From Structured Constraints to Scalable Model Initialization",
-          "summary": "arXiv:2604.14769v1 Announce Type: new Abstract: The pre-training and fine-tuning paradigm has become the dominant approach for model adaptation. However, conventional pre-training typically yields models at a fixed scale, whereas…"
-        },
-        "fr": {
-          "title": "Constraint-based Pre-training: From Structured Constraints to Scalable Model Initialization",
-          "summary": "arXiv:2604.14769v1 Announce Type: new Abstract: The pre-training and fine-tuning paradigm has become the dominant approach for model adaptation. However, conventional pre-training typically yields models at a fixed scale, whereas…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-learning-ad-hoc-network-dynamics-via-graph-structured-world-mode-f774ad40",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14811",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "Learning Ad Hoc Network Dynamics via Graph-Structured World Models",
-          "summary": "arXiv:2604.14811v1 Announce Type: new Abstract: Ad hoc wireless networks exhibit complex, innate and coupled dynamics: node mobility, energy depletion and topology change that are difficult to model analytically. Model-free deep…"
-        },
-        "fr": {
-          "title": "Learning Ad Hoc Network Dynamics via Graph-Structured World Models",
-          "summary": "arXiv:2604.14811v1 Announce Type: new Abstract: Ad hoc wireless networks exhibit complex, innate and coupled dynamics: node mobility, energy depletion and topology change that are difficult to model analytically. Model-free deep…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-adaptive-test-time-compute-allocation-for-reasoning-llms-via-con-c6814f39",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14853",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "Adaptive Test-Time Compute Allocation for Reasoning LLMs via Constrained Policy Optimization",
-          "summary": "arXiv:2604.14853v1 Announce Type: new Abstract: Test-time compute scaling, the practice of spending extra computation during inference via repeated sampling, search, or extended reasoning, has become a powerful lever for improvin…"
-        },
-        "fr": {
-          "title": "Adaptive Test-Time Compute Allocation for Reasoning LLMs via Constrained Policy Optimization",
-          "summary": "arXiv:2604.14853v1 Announce Type: new Abstract: Test-time compute scaling, the practice of spending extra computation during inference via repeated sampling, search, or extended reasoning, has become a powerful lever for improvin…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-curvature-aligned-probing-for-local-loss-landscape-stabilization-b077a050",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14870",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "Curvature-Aligned Probing for Local Loss-Landscape Stabilization",
-          "summary": "arXiv:2604.14870v1 Announce Type: new Abstract: Local loss-landscape stabilization under sample growth is typically measured either pointwise or through isotropic averaging in the full parameter space. Despite practical value, bo…"
-        },
-        "fr": {
-          "title": "Curvature-Aligned Probing for Local Loss-Landscape Stabilization",
-          "summary": "arXiv:2604.14870v1 Announce Type: new Abstract: Local loss-landscape stabilization under sample growth is typically measured either pointwise or through isotropic averaging in the full parameter space. Despite practical value, bo…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-does-rl-expand-the-capability-boundary-of-llm-agents-a-passkt-an-44537ec1",
-      "topic": "AI Systems",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14877",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "Does RL Expand the Capability Boundary of LLM Agents? A PASS@(k,T) Analysis",
-          "summary": "arXiv:2604.14877v1 Announce Type: new Abstract: Does reinforcement learning genuinely expand what LLM agents can do, or merely make them more reliable? For static reasoning, recent work answers the second: base and RL pass@k curv…"
-        },
-        "fr": {
-          "title": "Does RL Expand the Capability Boundary of LLM Agents? A PASS@(k,T) Analysis",
-          "summary": "arXiv:2604.14877v1 Announce Type: new Abstract: Does reinforcement learning genuinely expand what LLM agents can do, or merely make them more reliable? For static reasoning, recent work answers the second: base and RL pass@k curv…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-solis-physics-informed-learning-of-interpretable-neural-surrogat-7e5ad704",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14879",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "SOLIS: Physics-Informed Learning of Interpretable Neural Surrogates for Nonlinear Systems",
-          "summary": "arXiv:2604.14879v1 Announce Type: new Abstract: Nonlinear system identification must balance physical interpretability with model flexibility. Classical methods yield structured, control-relevant models but rely on rigid parametr…"
-        },
-        "fr": {
-          "title": "SOLIS: Physics-Informed Learning of Interpretable Neural Surrogates for Nonlinear Systems",
-          "summary": "arXiv:2604.14879v1 Announce Type: new Abstract: Nonlinear system identification must balance physical interpretability with model flexibility. Classical methods yield structured, control-relevant models but rely on rigid parametr…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-xfode-explainable-type-2-fuzzy-additive-odes-for-uncertainty-qua-a4ee07bd",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14880",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "xFODE+: Explainable Type-2 Fuzzy Additive ODEs for Uncertainty Quantification",
-          "summary": "arXiv:2604.14880v1 Announce Type: new Abstract: Recent advances in Deep Learning (DL) have boosted data-driven System Identification (SysID), but reliable use requires Uncertainty Quantification (UQ) alongside accurate prediction…"
-        },
-        "fr": {
-          "title": "xFODE+: Explainable Type-2 Fuzzy Additive ODEs for Uncertainty Quantification",
-          "summary": "arXiv:2604.14880v1 Announce Type: new Abstract: Recent advances in Deep Learning (DL) have boosted data-driven System Identification (SysID), but reliable use requires Uncertainty Quantification (UQ) alongside accurate prediction…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-xfode-an-explainable-fuzzy-additive-ode-framework-for-system-ide-fa3a69f7",
-      "topic": "AI Research",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14883",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "xFODE: An Explainable Fuzzy Additive ODE Framework for System Identification",
-          "summary": "arXiv:2604.14883v1 Announce Type: new Abstract: Recent advances in Deep Learning (DL) have strengthened data-driven System Identification (SysID), with Neural and Fuzzy Ordinary Differential Equation (NODE/FODE) models achieving…"
-        },
-        "fr": {
-          "title": "xFODE: An Explainable Fuzzy Additive ODE Framework for System Identification",
-          "summary": "arXiv:2604.14883v1 Announce Type: new Abstract: Recent advances in Deep Learning (DL) have strengthened data-driven System Identification (SysID), with Neural and Fuzzy Ordinary Differential Equation (NODE/FODE) models achieving…"
-        }
-      }
-    },
-    {
-      "slug": "20260418-can-llms-score-medical-diagnoses-and-clinical-reasoning-as-well--a8b40868",
-      "topic": "AI Performance",
-      "source": "arXiv cs.LG",
-      "sourceFeed": "https://arxiv.org/rss/cs.LG",
-      "href": "https://arxiv.org/abs/2604.14892",
-      "publishedAt": "2026-04-18T04:00:00.000Z",
-      "discoveredAt": "2026-04-18T14:58:22.902Z",
-      "locales": {
-        "en": {
-          "title": "Can LLMs Score Medical Diagnoses and Clinical Reasoning as well as Expert Panels?",
-          "summary": "arXiv:2604.14892v1 Announce Type: new Abstract: Evaluating medical AI systems using expert clinician panels is costly and slow, motivating the use of large language models (LLMs) as alternative adjudicators. Here, we evaluate an…"
-        },
-        "fr": {
-          "title": "Can LLMs Score Medical Diagnoses and Clinical Reasoning as well as Expert Panels?",
-          "summary": "arXiv:2604.14892v1 Announce Type: new Abstract: Evaluating medical AI systems using expert clinician panels is costly and slow, motivating the use of large language models (LLMs) as alternative adjudicators. Here, we evaluate an…"
         }
       }
     }
