@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-20T08:36:53.481Z
+Generated: 2026-04-20T09:00:36.207Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. ATTNPO: Attention-Guided Process Supervision for Efficient Reasoning: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+1. CLewR: Curriculum Learning with Restarts for Machine Translation Preference Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. FS-Researcher: Test-Time Scaling for Long-Horizon Research Tasks with File-System-Based Agents: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+2. EnvScaler: Scaling Tool-Interactive Environments for LLM Agent via Programmatic Synthesis: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Reward Modeling for Scientific Writing Evaluation: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+3. VIB-Probe: Detecting and Mitigating Hallucinations in Vision-Language Models via Variational Information Bottleneck: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. HumanLLM: Benchmarking and Improving LLM Anthropomorphism via Human Cognitive Patterns: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: best ai model benchmark for students arxiv cs.cl
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-5. Whose Facts Win? LLM Source Preferences under Knowledge Conflicts: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+4. Mechanisms of Prompt-Induced Hallucination in Vision-Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. RedBench: A Universal Dataset for Comprehensive Red Teaming of Large Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+5. Disco-RAG: Discourse-Aware Retrieval-Augmented Generation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+6. MFC-RFNet: A Multi-scale Guided Rectified Flow Network for Radar Sequence Prediction: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260420--20260420-attnpo-attention-guided-process-supervision-for-efficient-reason-3faab373.md
-- docs/agent/drafts/20260420--20260420-fs-researcher-test-time-scaling-for-long-horizon-research-tasks--29f387d2.md
+- docs/agent/drafts/20260420--20260420-clewr-curriculum-learning-with-restarts-for-machine-translation--9391aa41.md
+- docs/agent/drafts/20260420--20260420-envscaler-scaling-tool-interactive-environments-for-llm-agent-vi-f9ab352f.md
 
