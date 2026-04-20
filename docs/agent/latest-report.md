@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-19T07:56:58.509Z
+Generated: 2026-04-20T08:36:53.481Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. An unsupervised decision-support framework for multivariate biomarker analysis in athlete monitoring: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. ATTNPO: Attention-Guided Process Supervision for Efficient Reasoning: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. CSRA: Controlled Spectral Residual Augmentation for Robust Sepsis Prediction: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. CI-CBM: Class-Incremental Concept Bottleneck Model for Interpretable Continual Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+2. FS-Researcher: Test-Time Scaling for Long-Horizon Research Tasks with File-System-Based Agents: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. On the Expressive Power and Limitations of Multi-Layer SSMs: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Quantization of Spiking Neural Networks Beyond Accuracy: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Scouting By Reward: VLM-TO-IRL-Driven Player Selection For Esports: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+3. Reward Modeling for Scientific Writing Evaluation: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. HumanLLM: Benchmarking and Improving LLM Anthropomorphism via Human Cognitive Patterns: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: best ai model benchmark for students arxiv cs.cl
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+5. Whose Facts Win? LLM Source Preferences under Knowledge Conflicts: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. RedBench: A Universal Dataset for Comprehensive Red Teaming of Large Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260419--20260418-ci-cbm-class-incremental-concept-bottleneck-model-for-interpreta-27e4c158.md
-- docs/agent/drafts/20260419--20260418-on-the-expressive-power-and-limitations-of-multi-layer-ssms-1deb5ca3.md
+- docs/agent/drafts/20260420--20260420-attnpo-attention-guided-process-supervision-for-efficient-reason-3faab373.md
+- docs/agent/drafts/20260420--20260420-fs-researcher-test-time-scaling-for-long-horizon-research-tasks--29f387d2.md
 
