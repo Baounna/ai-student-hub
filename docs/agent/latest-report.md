@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-21T08:19:59.227Z
+Generated: 2026-04-21T08:22:23.914Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. AdaExplore: Failure-Driven Adaptation and Diversity-Preserving Search for Efficient Kernel Generation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Aligning Backchannel and Dialogue Context Representations via Contrastive LLM Fine-Tuning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Spotlights and Blindspots: Evaluation Machine-Generated Text Detection: What It Means for AI/CS Students
+1. CLewR: Curriculum Learning with Restarts for Machine Translation Preference Learning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Human Cognition in Machines: A Unified Perspective of World Models: What It Means for AI/CS Students
+2. EnvScaler: Scaling Tool-Interactive Environments for LLM Agent via Programmatic Synthesis: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. MambaKick: Early Penalty Direction Prediction from HAR Embeddings: What It Means for AI/CS Students
+3. VIB-Probe: Detecting and Mitigating Hallucinations in Vision-Language Models via Variational Information Bottleneck: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Mechanisms of Prompt-Induced Hallucination in Vision-Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Disco-RAG: Discourse-Aware Retrieval-Augmented Generation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. MFC-RFNet: A Multi-scale Guided Rectified Flow Network for Radar Sequence Prediction: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Real-Time Visual Attribution Streaming in Thinking Model: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260421--20260421-adaexplore-failure-driven-adaptation-and-diversity-preserving-se-8d483c8e.md
-- docs/agent/drafts/20260421--20260421-aligning-backchannel-and-dialogue-context-representations-via-co-47f7a884.md
+- docs/agent/drafts/20260421--20260421-clewr-curriculum-learning-with-restarts-for-machine-translation--9391aa41.md
+- docs/agent/drafts/20260421--20260421-envscaler-scaling-tool-interactive-environments-for-llm-agent-vi-f9ab352f.md
 
