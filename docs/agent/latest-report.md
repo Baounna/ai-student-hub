@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-22T08:17:51.575Z
+Generated: 2026-04-22T08:19:56.335Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. OmniGen2: Towards Instruction-Aligned Multimodal Generation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. Enforcing Reciprocity in Operator Learning for Seismic Wave Propagation: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. When and What to Ask: AskBench and Rubric-Guided RLVR for LLM Clarification: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. LPO: Towards Accurate GUI Agent Interaction via Location Preference Optimization: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+3. Local Updates in Distributed Optimization: Provable Acceleration and Topology Effects: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Fitted Q Evaluation Without Bellman Completeness via Stationary Weighting: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Benchmarking Misuse Mitigation Against Covert Adversaries: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-4. PuzzleWorld: A Benchmark for Multimodal, Open-Ended Reasoning in Puzzlehunts: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-5. CASS: Nvidia to AMD Transpilation with Data, Models, and Benchmark: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-6. OMAC: A Holistic Optimization Framework for LLM-Based Multi-Agent Collaboration: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+5. Real-Time Streamable Generative Speech Restoration with Flow Matching: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Fast and Robust Diffusion Posterior Sampling for MR Image Reconstruction Using the Preconditioned Unadjusted Langevin Algorithm: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260422--20260422-omnigen2-towards-instruction-aligned-multimodal-generation-5b578233.md
-- docs/agent/drafts/20260422--20260422-lpo-towards-accurate-gui-agent-interaction-via-location-preferen-4653e5a5.md
+- docs/agent/drafts/20260422--20260422-enforcing-reciprocity-in-operator-learning-for-seismic-wave-prop-9936a67a.md
+- docs/agent/drafts/20260422--20260422-when-and-what-to-ask-askbench-and-rubric-guided-rlvr-for-llm-cla-0a558af4.md
 
