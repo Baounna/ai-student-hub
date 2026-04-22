@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-21T08:22:23.914Z
+Generated: 2026-04-22T08:17:51.575Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. CLewR: Curriculum Learning with Restarts for Machine Translation Preference Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. EnvScaler: Scaling Tool-Interactive Environments for LLM Agent via Programmatic Synthesis: What It Means for AI/CS Students
+1. OmniGen2: Towards Instruction-Aligned Multimodal Generation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. VIB-Probe: Detecting and Mitigating Hallucinations in Vision-Language Models via Variational Information Bottleneck: What It Means for AI/CS Students
+2. LPO: Towards Accurate GUI Agent Interaction via Location Preference Optimization: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Mechanisms of Prompt-Induced Hallucination in Vision-Language Models: What It Means for AI/CS Students
+3. Benchmarking Misuse Mitigation Against Covert Adversaries: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+4. PuzzleWorld: A Benchmark for Multimodal, Open-Ended Reasoning in Puzzlehunts: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+5. CASS: Nvidia to AMD Transpilation with Data, Models, and Benchmark: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+6. OMAC: A Holistic Optimization Framework for LLM-Based Multi-Agent Collaboration: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Disco-RAG: Discourse-Aware Retrieval-Augmented Generation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. MFC-RFNet: A Multi-scale Guided Rectified Flow Network for Radar Sequence Prediction: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260421--20260421-clewr-curriculum-learning-with-restarts-for-machine-translation--9391aa41.md
-- docs/agent/drafts/20260421--20260421-envscaler-scaling-tool-interactive-environments-for-llm-agent-vi-f9ab352f.md
+- docs/agent/drafts/20260422--20260422-omnigen2-towards-instruction-aligned-multimodal-generation-5b578233.md
+- docs/agent/drafts/20260422--20260422-lpo-towards-accurate-gui-agent-interaction-via-location-preferen-4653e5a5.md
 
