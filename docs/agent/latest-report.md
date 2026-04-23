@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-22T08:19:56.335Z
+Generated: 2026-04-23T08:22:39.461Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Enforcing Reciprocity in Operator Learning for Seismic Wave Propagation: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. When and What to Ask: AskBench and Rubric-Guided RLVR for LLM Clarification: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+1. How Much Does Persuasion Strategy Matter? LLM-Annotated Evidence from Charitable Donation Dialogues: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Local Updates in Distributed Optimization: Provable Acceleration and Topology Effects: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Fitted Q Evaluation Without Bellman Completeness via Stationary Weighting: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+2. Avoiding Overthinking and Underthinking: Curriculum-Aware Budget Scheduling for LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Real-Time Streamable Generative Speech Restoration with Flow Matching: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. ESGLens: An LLM-Based RAG Framework for Interactive ESG Report Analysis and Score Prediction: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: best ai model benchmark for students arxiv cs.cl
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+4. Towards High-Quality Machine Translation for Kokborok: A Low-Resource Tibeto-Burman Language of Northeast India: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Fast and Robust Diffusion Posterior Sampling for MR Image Reconstruction Using the Preconditioned Unadjusted Langevin Algorithm: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+5. Hybrid Multi-Phase Page Matching and Multi-Layer Diff Detection for Japanese Building Permit Document Review: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Evidence of Layered Positional and Directional Constraints in the Voynich Manuscript: Implications for Cipher-Like Structure: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260422--20260422-enforcing-reciprocity-in-operator-learning-for-seismic-wave-prop-9936a67a.md
-- docs/agent/drafts/20260422--20260422-when-and-what-to-ask-askbench-and-rubric-guided-rlvr-for-llm-cla-0a558af4.md
+- docs/agent/drafts/20260423--20260423-how-much-does-persuasion-strategy-matter-llm-annotated-evidence--1bebd226.md
+- docs/agent/drafts/20260423--20260423-avoiding-overthinking-and-underthinking-curriculum-aware-budget--49911e67.md
 
