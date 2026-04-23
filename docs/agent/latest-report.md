@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-23T08:22:39.461Z
+Generated: 2026-04-23T08:24:29.610Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. How Much Does Persuasion Strategy Matter? LLM-Annotated Evidence from Charitable Donation Dialogues: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+1. Combo-Gait: Unified Transformer Framework for Multi-Modal Gait Recognition and Attribute Analysis: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. Locate-Then-Examine: Grounded Region Reasoning Improves Detection of AI-Generated Images: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. Representational Alignment Across Model Layers and Brain Regions with Multi-Level Optimal Transport: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Avoiding Overthinking and Underthinking: Curriculum-Aware Budget Scheduling for LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+4. Transformers Can Learn Connectivity in Some Graphs but Not Others: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. SMARTER: A Data-efficient Framework to Improve Toxicity Detection with Explanation via Self-augmenting Large Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. ESGLens: An LLM-Based RAG Framework for Interactive ESG Report Analysis and Score Prediction: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: best ai model benchmark for students arxiv cs.cl
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-4. Towards High-Quality Machine Translation for Kokborok: A Low-Resource Tibeto-Burman Language of Northeast India: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Hybrid Multi-Phase Page Matching and Multi-Layer Diff Detection for Japanese Building Permit Document Review: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Evidence of Layered Positional and Directional Constraints in the Voynich Manuscript: Implications for Cipher-Like Structure: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+6. Task-Stratified Knowledge Scaling Laws for Post-Training Quantized Large Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260423--20260423-how-much-does-persuasion-strategy-matter-llm-annotated-evidence--1bebd226.md
-- docs/agent/drafts/20260423--20260423-avoiding-overthinking-and-underthinking-curriculum-aware-budget--49911e67.md
+- docs/agent/drafts/20260423--20260423-combo-gait-unified-transformer-framework-for-multi-modal-gait-re-20646503.md
+- docs/agent/drafts/20260423--20260423-locate-then-examine-grounded-region-reasoning-improves-detection-4ad93f42.md
 
