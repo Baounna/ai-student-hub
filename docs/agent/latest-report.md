@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-24T08:34:12.043Z
+Generated: 2026-04-24T08:35:26.081Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Not All Rollouts are Useful: Down-Sampling Rollouts in LLM Reinforcement Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Recency Biased Causal Attention for Time-series Forecasting: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. HyperAdapt: Simple High-Rank Adaptation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Best Policy Learning from Trajectory Preference Feedback: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+2. A Comprehensive Guide to Differential Privacy: From Theory to User Expectations: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. MixLLM: LLM Quantization with Global Mixed-precision between Output-features and Highly-efficient System Design: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+3. FunduSegmenter: Leveraging the RETFound Foundation Model for Joint Optic Disc and Optic Cup Segmentation in Retinal Fundus Images: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Verification of Machine Unlearning is Fragile: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+4. Algebraic Language Models for Inverse Design of Metamaterials via Diffusion Transformers: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Towards Certified Unlearning for Deep Neural Networks: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+5. mGRADE: Minimal Recurrent Gating Meets Delay Convolutions for Lightweight Sequence Modeling: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Counterfactual Segmentation Reasoning: Diagnosing and Mitigating Pixel-Grounding Hallucination: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260424--20260424-not-all-rollouts-are-useful-down-sampling-rollouts-in-llm-reinfo-a5d7bc74.md
-- docs/agent/drafts/20260424--20260424-recency-biased-causal-attention-for-time-series-forecasting-d96c4588.md
+- docs/agent/drafts/20260424--20260424-hyperadapt-simple-high-rank-adaptation-d02af898.md
+- docs/agent/drafts/20260424--20260424-a-comprehensive-guide-to-differential-privacy-from-theory-to-use-ebc95b6b.md
 
