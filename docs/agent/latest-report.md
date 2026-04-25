@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-24T08:35:26.081Z
+Generated: 2026-04-25T07:53:08.214Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,11 +40,11 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. HyperAdapt: Simple High-Rank Adaptation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+1. 8 Gemini tips for organizing your space (and life): What It Means for AI/CS Students
+   - Source: Google AI Blog
+   - Keyword: how to build google ai blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 2. A Comprehensive Guide to Differential Privacy: From Theory to User Expectations: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260424--20260424-hyperadapt-simple-high-rank-adaptation-d02af898.md
-- docs/agent/drafts/20260424--20260424-a-comprehensive-guide-to-differential-privacy-from-theory-to-use-ebc95b6b.md
+- docs/agent/drafts/20260425--20260424-8-gemini-tips-for-organizing-your-space-and-life-ebab479a.md
+- docs/agent/drafts/20260425--20260424-fundusegmenter-leveraging-the-retfound-foundation-model-for-join-b05fcb0a.md
 
