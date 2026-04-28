@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-28T09:05:08.619Z
+Generated: 2026-04-28T09:08:21.934Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. CAPSULE: Control-Theoretic Action Perturbations for Safe Uncertainty-Aware Reinforcement Learning: What It Means for AI/CS Students
+1. MEASER: Malware embedding attacks on open-source LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. Token Is All You Price: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. CyberCane: Neuro-Symbolic RAG for Privacy-Preserving Phishing Detection with Formal Ontology Reasoning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. EyeBrain: Left and Right Brain Lateralization Activity Classification Through Pupil Diameter and Fixation Duration: What It Means for AI/CS Students
+3. Verifying Quantized GNNs With Readout Is Decidable But Highly Intractable: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. DLM: Unified Decision Language Models for Offline Multi-Agent Sequential Decision Making: What It Means for AI/CS Students
+4. Resolution scaling governs DINOv3 transfer performance in chest radiograph classification: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+5. Data-efficient Targeted Token-level Preference Optimization for LLM-based Text-to-Speech: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. On the Memorization of Consistency Distillation for Diffusion Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Hardware-Efficient FPGA Implementation of Sigmoid Function Using Mixed-Radix Hyperbolic Rotation CORDIC: What It Means for AI/CS Students
+6. What Drives Compositional Generalization? The Importance of Continuous Training Objectives in Visual Generative Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260428--20260428-capsule-control-theoretic-action-perturbations-for-safe-uncertai-363715ed.md
-- docs/agent/drafts/20260428--20260428-cybercane-neuro-symbolic-rag-for-privacy-preserving-phishing-det-0c44c267.md
+- docs/agent/drafts/20260428--20260428-measer-malware-embedding-attacks-on-open-source-llms-c9dde465.md
+- docs/agent/drafts/20260428--20260428-token-is-all-you-price-0b2c2c4b.md
 
