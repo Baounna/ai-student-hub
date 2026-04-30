@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-30T08:40:37.381Z
+Generated: 2026-04-30T09:02:37.646Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,29 +45,29 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Occam's Razor is Only as Sharp as Your ELBO: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+2. Uncertainty-Aware Reward Discounting for Mitigating Reward Hacking: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Mining Negative Sequential Patterns to Improve Viral Genomic Feature Representation and Classification: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Adversarial Robustness of NTK Neural Networks: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Large Language Models for Multilingual Code Intelligence: A Survey: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+3. ACPO: Anchor-Constrained Perceptual Optimization for Diffusion Models with No-Reference Quality Guidance: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Associative-State Universal Transformers: Sparse Retrieval Meets Structured Recurrence: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+4. DSIPA: Detecting LLM-Generated Texts via Sentiment-Invariant Patterns Divergence Analysis: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. CheXthought: A global multimodal dataset of clinical chain-of-thought reasoning and visual attention for chest X-ray interpretation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. MedSynapse-V: Bridging Visual Perception and Clinical Intuition via Latent Memory Evolution: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260430--20260430-agents-can-now-create-cloudflare-accounts-buy-domains-and-deploy-276d2f41.md
-- docs/agent/drafts/20260430--20260430-occams-razor-is-only-as-sharp-as-your-elbo-2d4429cc.md
+- docs/agent/drafts/20260430--20260430-uncertainty-aware-reward-discounting-for-mitigating-reward-hacki-b8a22b61.md
+- docs/agent/drafts/20260430--20260430-acpo-anchor-constrained-perceptual-optimization-for-diffusion-mo-c56e82d8.md
 
