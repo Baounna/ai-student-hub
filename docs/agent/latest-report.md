@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-04-30T09:02:37.646Z
+Generated: 2026-05-01T08:30:49.084Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Agents can now create Cloudflare accounts, buy domains, and deploy: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Uncertainty-Aware Reward Discounting for Mitigating Reward Hacking: What It Means for AI/CS Students
+1. Semantic Variational Bayes Based on Semantic Information G Theory for Solving Latent Variables: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. ACPO: Anchor-Constrained Perceptual Optimization for Diffusion Models with No-Reference Quality Guidance: What It Means for AI/CS Students
+2. Junk DNA Hypothesis: Pruning Small Pre-Trained Weights Irreversibly and Monotonically Impairs "Difficult" Downstream Tasks in LLMs: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. DSIPA: Detecting LLM-Generated Texts via Sentiment-Invariant Patterns Divergence Analysis: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. CheXthought: A global multimodal dataset of clinical chain-of-thought reasoning and visual attention for chest X-ray interpretation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. MedSynapse-V: Bridging Visual Perception and Clinical Intuition via Latent Memory Evolution: What It Means for AI/CS Students
+3. FP-IRL: Fokker--Planck Inverse Reinforcement Learning -- A Physics-Constrained Approach to Markov Decision Processes: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+4. Epistemic reflections on AI answering our questions: overwatch, erudite, logician, interlocutor: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Querying Inconsistent Prioritized Data with ORBITS: Algorithms, Implementation, and Experiments: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. QED: An Open-Source Multi-Agent System for Generating Mathematical Proofs on Open Problems: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260430--20260430-uncertainty-aware-reward-discounting-for-mitigating-reward-hacki-b8a22b61.md
-- docs/agent/drafts/20260430--20260430-acpo-anchor-constrained-perceptual-optimization-for-diffusion-mo-c56e82d8.md
+- docs/agent/drafts/20260501--20260501-semantic-variational-bayes-based-on-semantic-information-g-theor-fd77c03c.md
+- docs/agent/drafts/20260501--20260501-junk-dna-hypothesis-pruning-small-pre-trained-weights-irreversib-930a581e.md
 
