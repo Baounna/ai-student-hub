@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-01T08:32:02.603Z
+Generated: 2026-05-02T08:11:51.119Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Evaluating Assurance Cases as Text-Attributed Graphs for Structure and Provenance Analysis: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. Code Orange: Fail Small is complete. The result is a stronger Cloudflare network: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: ai cs update for students cloudflare blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. FeaXDrive: Feasibility-aware Trajectory-Centric Diffusion Planning for End-to-End Autonomous Driving: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. DDO-RM: Distribution-Level Policy Improvement after Reward Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. EmDT: Embedding Diffusion Transformer for Tabular Data Generation in Fraud Detection: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Bayesian Hierarchical Models and the Maximum Entropy Principle: What It Means for AI/CS Students
+2. Introducing Dynamic Workflows: durable execution that follows the tenant: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Bayesian Hierarchical Models and the Maximum Entropy Principle: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Predicting Atomistic Transitions with Transformers: What It Means for AI/CS Students
+4. Predicting Atomistic Transitions with Transformers: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. LUNA: LUT-Based Neural Architecture for Fast and Low-Cost Qubit Readout: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. PVeRA: Probabilistic Vector-Based Random Matrix Adaptation: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260501--20260501-evaluating-assurance-cases-as-text-attributed-graphs-for-structu-ba2445f6.md
-- docs/agent/drafts/20260501--20260501-feaxdrive-feasibility-aware-trajectory-centric-diffusion-plannin-14aba653.md
+- docs/agent/drafts/20260502--20260501-code-orange-fail-small-is-complete-the-result-is-a-stronger-clou-70dd3b18.md
+- docs/agent/drafts/20260502--20260501-introducing-dynamic-workflows-durable-execution-that-follows-the-83c1f626.md
 
