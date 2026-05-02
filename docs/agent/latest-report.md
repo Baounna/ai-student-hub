@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-02T08:11:51.119Z
+Generated: 2026-05-02T08:13:04.093Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260502--20260501-code-orange-fail-small-is-complete-the-result-is-a-stronger-clou-70dd3b18.md
-- docs/agent/drafts/20260502--20260501-introducing-dynamic-workflows-durable-execution-that-follows-the-83c1f626.md
+- docs/agent/drafts/20260502--20260501-bayesian-hierarchical-models-and-the-maximum-entropy-principle-9d225b21.md
+- docs/agent/drafts/20260502--20260501-predicting-atomistic-transitions-with-transformers-8737530b.md
 
