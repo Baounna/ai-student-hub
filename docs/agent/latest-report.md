@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-03T08:21:18.745Z
+Generated: 2026-05-03T08:25:54.730Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -95,7 +95,6 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 2
-- docs/agent/drafts/20260503--20260501-luna-lut-based-neural-architecture-for-fast-and-low-cost-qubit-r-0962a459.md
-- docs/agent/drafts/20260503--20260501-pvera-probabilistic-vector-based-random-matrix-adaptation-949938a8.md
+- New drafts generated: 0
+- No new drafts generated (existing coverage or no opportunities).
 
