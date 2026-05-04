@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-04T09:04:55.153Z
+Generated: 2026-05-04T09:06:15.117Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. OTSS: Output-Targeted Soft Segmentation for Contextual Decision-Weight Learning: What It Means for AI/CS Students
+1. From Cursed to Competitive: Closing the ZO-FO Gap via Input-to-State Stability: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Fair Dataset Distillation via Cross-Group Barycenter Alignment: What It Means for AI/CS Students
+2. Conditional Diffusion Posterior Alignment for Sparse-View CT Reconstruction: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Introducing WARM-VR: Benchmark Dataset for Multimodal Wearable Affect Recognition in Virtual Reality: What It Means for AI/CS Students
+3. SAHM: A Benchmark for Arabic Financial and Shari'ah-Compliant Reasoning: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: best ai model benchmark for students arxiv cs.lg
    - Monetization angle: benchmark + budget-friendly model/tool choice
    - CTA: Compare tools + student guide
-4. Towards A Generative Protein Evolution Machine with DPLM-Evo: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Consistent Diffusion Language Models: What It Means for AI/CS Students
+4. Generative Modeling under Non-Monotone MAR Missingness via Approximate Wasserstein Gradient Flows: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Wasserstein Distributionally Robust Regret Optimization for Reinforcement Learning from Human Feedback: What It Means for AI/CS Students
+5. How Alignment Routes: Localizing, Scaling, and Controlling Policy Circuits in Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. On the Expressive Power of Contextual Relations in Transformers: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260504--20260504-otss-output-targeted-soft-segmentation-for-contextual-decision-w-d20b85bb.md
-- docs/agent/drafts/20260504--20260504-fair-dataset-distillation-via-cross-group-barycenter-alignment-78e9cafc.md
+- docs/agent/drafts/20260504--20260504-from-cursed-to-competitive-closing-the-zo-fo-gap-via-input-to-st-1d35674f.md
+- docs/agent/drafts/20260504--20260504-conditional-diffusion-posterior-alignment-for-sparse-view-ct-rec-f81ee724.md
 
