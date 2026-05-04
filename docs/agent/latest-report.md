@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-03T08:25:54.730Z
+Generated: 2026-05-04T09:04:55.153Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Code Orange: Fail Small is complete. The result is a stronger Cloudflare network: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: ai cs update for students cloudflare blog
+1. OTSS: Output-Targeted Soft Segmentation for Contextual Decision-Weight Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Introducing Dynamic Workflows: durable execution that follows the tenant: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Bayesian Hierarchical Models and the Maximum Entropy Principle: What It Means for AI/CS Students
+2. Fair Dataset Distillation via Cross-Group Barycenter Alignment: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. Introducing WARM-VR: Benchmark Dataset for Multimodal Wearable Affect Recognition in Virtual Reality: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: best ai model benchmark for students arxiv cs.lg
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+4. Towards A Generative Protein Evolution Machine with DPLM-Evo: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Consistent Diffusion Language Models: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Predicting Atomistic Transitions with Transformers: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. LUNA: LUT-Based Neural Architecture for Fast and Low-Cost Qubit Readout: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. PVeRA: Probabilistic Vector-Based Random Matrix Adaptation: What It Means for AI/CS Students
+6. Wasserstein Distributionally Robust Regret Optimization for Reinforcement Learning from Human Feedback: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
@@ -95,6 +95,7 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 0
-- No new drafts generated (existing coverage or no opportunities).
+- New drafts generated: 2
+- docs/agent/drafts/20260504--20260504-otss-output-targeted-soft-segmentation-for-contextual-decision-w-d20b85bb.md
+- docs/agent/drafts/20260504--20260504-fair-dataset-distillation-via-cross-group-barycenter-alignment-78e9cafc.md
 
