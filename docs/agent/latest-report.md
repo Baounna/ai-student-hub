@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-04T09:06:15.117Z
+Generated: 2026-05-05T08:35:19.508Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. From Cursed to Competitive: Closing the ZO-FO Gap via Input-to-State Stability: What It Means for AI/CS Students
+1. Class-Aware Adaptive Differential Privacy in Deep Learning for Sensor-Based Fall Detection: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Conditional Diffusion Posterior Alignment for Sparse-View CT Reconstruction: What It Means for AI/CS Students
+2. Missingness-aware Data Imputation via AI-powered Bayesian Generative Modeling: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. PRCD-MAP: Learning How Much to Trust Imperfect Priors in Causal Discovery: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. SAHM: A Benchmark for Arabic Financial and Shari'ah-Compliant Reasoning: What It Means for AI/CS Students
+4. From Cortical Synchronous Rhythm to Brain Inspired Learning Mechanism: An Oscillatory Spiking Neural Network with Time-Delayed Coordination: What It Means for AI/CS Students
    - Source: arXiv cs.LG
-   - Keyword: best ai model benchmark for students arxiv cs.lg
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-4. Generative Modeling under Non-Monotone MAR Missingness via Approximate Wasserstein Gradient Flows: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Exact Loop Controllers for ReLU Realization of Homogeneous Curve Refinements: What It Means for AI/CS Students
    - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. How Alignment Routes: Localizing, Scaling, and Controlling Policy Circuits in Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. On the Expressive Power of Contextual Relations in Transformers: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Self-Normalized Martingales and Uniform Regret Bounds for Linear Regression: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260504--20260504-from-cursed-to-competitive-closing-the-zo-fo-gap-via-input-to-st-1d35674f.md
-- docs/agent/drafts/20260504--20260504-conditional-diffusion-posterior-alignment-for-sparse-view-ct-rec-f81ee724.md
+- docs/agent/drafts/20260505--20260505-class-aware-adaptive-differential-privacy-in-deep-learning-for-s-e7851ae8.md
+- docs/agent/drafts/20260505--20260505-missingness-aware-data-imputation-via-ai-powered-bayesian-genera-b9733478.md
 
