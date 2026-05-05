@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-05T08:35:19.508Z
+Generated: 2026-05-05T09:00:58.163Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Class-Aware Adaptive Differential Privacy in Deep Learning for Sensor-Based Fall Detection: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Missingness-aware Data Imputation via AI-powered Bayesian Generative Modeling: What It Means for AI/CS Students
+1. Skipping the Zeros in Diffusion Models for Sparse Data Generation: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. PRCD-MAP: Learning How Much to Trust Imperfect Priors in Causal Discovery: What It Means for AI/CS Students
+2. Federated Semi-Supervised Graph Neural Networks with Prototype-Guided Pseudo-Labeling for Privacy-Preserving Gestational Diabetes Mellitus Prediction: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. From Cortical Synchronous Rhythm to Brain Inspired Learning Mechanism: An Oscillatory Spiking Neural Network with Time-Delayed Coordination: What It Means for AI/CS Students
+3. Beyond ECE: Calibrated Size Ratio, Risk Assessment, and Confidence-Weighted Metrics: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Exact Loop Controllers for ReLU Realization of Homogeneous Curve Refinements: What It Means for AI/CS Students
+4. Adversarial Imitation Learning with General Function Approximation: Theoretical Analysis and Practical Algorithms: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Self-Normalized Martingales and Uniform Regret Bounds for Linear Regression: What It Means for AI/CS Students
+5. Mitigating Multimodal LLMs Hallucinations via Relevance Propagation at Inference Time: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Robust Linear Dueling Bandits with Post-serving Context under Unknown Delays and Adversarial Corruptions: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260505--20260505-class-aware-adaptive-differential-privacy-in-deep-learning-for-s-e7851ae8.md
-- docs/agent/drafts/20260505--20260505-missingness-aware-data-imputation-via-ai-powered-bayesian-genera-b9733478.md
+- docs/agent/drafts/20260505--20260505-skipping-the-zeros-in-diffusion-models-for-sparse-data-generatio-942482f8.md
+- docs/agent/drafts/20260505--20260505-federated-semi-supervised-graph-neural-networks-with-prototype-g-e57ca2df.md
 
