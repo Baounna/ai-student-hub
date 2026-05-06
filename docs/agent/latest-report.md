@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-05T09:00:58.163Z
+Generated: 2026-05-06T09:09:09.291Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Skipping the Zeros in Diffusion Models for Sparse Data Generation: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+1. SplitZip: Ultra Fast Lossless KV Compression for Disaggregated LLM Serving: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Federated Semi-Supervised Graph Neural Networks with Prototype-Guided Pseudo-Labeling for Privacy-Preserving Gestational Diabetes Mellitus Prediction: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Beyond ECE: Calibrated Size Ratio, Risk Assessment, and Confidence-Weighted Metrics: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Adversarial Imitation Learning with General Function Approximation: Theoretical Analysis and Practical Algorithms: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Mitigating Multimodal LLMs Hallucinations via Relevance Propagation at Inference Time: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+2. BIM Information Extraction Through LLM-based Adaptive Exploration: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Robust Linear Dueling Bandits with Post-serving Context under Unknown Delays and Adversarial Corruptions: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. GRAVITY: Architecture-Agnostic Structured Anchoring for Long-Horizon Conversational Memory: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Class-Aware Adaptive Differential Privacy in Deep Learning for Sensor-Based Fall Detection: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Missingness-aware Data Imputation via AI-powered Bayesian Generative Modeling: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. IMPACT-Scribe: Interactive Temporal Action Segmentation with Boundary Scribbles and Query Planning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260505--20260505-skipping-the-zeros-in-diffusion-models-for-sparse-data-generatio-942482f8.md
-- docs/agent/drafts/20260505--20260505-federated-semi-supervised-graph-neural-networks-with-prototype-g-e57ca2df.md
+- docs/agent/drafts/20260506--20260506-splitzip-ultra-fast-lossless-kv-compression-for-disaggregated-ll-a23b7053.md
+- docs/agent/drafts/20260506--20260506-bim-information-extraction-through-llm-based-adaptive-exploratio-576c8701.md
 

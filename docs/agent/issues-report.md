@@ -1,16 +1,16 @@
 # AI Student Hub Agent Issue Sync
 
-Generated: 2026-05-05T09:00:58.263Z
+Generated: 2026-05-06T09:09:09.387Z
 Mode: dry-run
 Repository: Baounna/ai-student-hub
 Max issues per run: 6
 
 ## Queue Sources
 - Operator: enabled=YES | actions=10 | queue=docs/agent/next-actions.json
-  - Queue generated at: 2026-05-05T09:00:58.163Z
+  - Queue generated at: 2026-05-06T09:09:09.291Z
   - Selected this run: 6
 - Design: enabled=YES | actions=0 | queue=docs/agent/design-actions.json
-  - Queue generated at: 2026-05-05T09:00:58.216Z
+  - Queue generated at: 2026-05-06T09:09:09.340Z
   - Selected this run: 0
 
 ## Run Summary
@@ -31,20 +31,20 @@ Max issues per run: 6
 ## Tracked Actions
 - [Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).
   - Status: dry-run
-  - Last seen: 2026-05-05T09:00:58.263Z
+  - Last seen: 2026-05-06T09:09:09.387Z
 - [Operator P1] Cover missing affiliate placement: blog.
   - Status: dry-run
-  - Last seen: 2026-05-05T09:00:58.263Z
+  - Last seen: 2026-05-06T09:09:09.387Z
 - [Operator P1] Cover missing affiliate placement: comparison.
   - Status: dry-run
-  - Last seen: 2026-05-05T09:00:58.263Z
+  - Last seen: 2026-05-06T09:09:09.387Z
 - [Operator P1] Cover missing affiliate placement: home.
   - Status: dry-run
-  - Last seen: 2026-05-05T09:00:58.263Z
+  - Last seen: 2026-05-06T09:09:09.387Z
 - [Operator P1] Cover missing affiliate placement: resources.
   - Status: dry-run
-  - Last seen: 2026-05-05T09:00:58.263Z
+  - Last seen: 2026-05-06T09:09:09.387Z
 - [Operator P1] Enable ConvertKit and connect newsletter form ID/API key.
   - Status: dry-run
-  - Last seen: 2026-05-05T09:00:58.263Z
+  - Last seen: 2026-05-06T09:09:09.387Z
 
