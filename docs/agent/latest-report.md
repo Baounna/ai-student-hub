@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-06T09:09:09.291Z
+Generated: 2026-05-07T09:12:59.777Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. SplitZip: Ultra Fast Lossless KV Compression for Disaggregated LLM Serving: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. BIM Information Extraction Through LLM-based Adaptive Exploration: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. GRAVITY: Architecture-Agnostic Structured Anchoring for Long-Horizon Conversational Memory: What It Means for AI/CS Students
+1. AI4EOSC: a Federated Cloud Platform for Artificial Intelligence in Scientific Research: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Class-Aware Adaptive Differential Privacy in Deep Learning for Sensor-Based Fall Detection: What It Means for AI/CS Students
+2. Benchmarking Document Parsers on Mathematical Formula Extraction from PDFs: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+3. Bootstrapped Mixed Rewards for RL Post-Training: Injecting Canonical Action Order: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Missingness-aware Data Imputation via AI-powered Bayesian Generative Modeling: What It Means for AI/CS Students
+4. Can LLMs Make (Personalized) Access Control Decisions?: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. IMPACT-Scribe: Interactive Temporal Action Segmentation with Boundary Scribbles and Query Planning: What It Means for AI/CS Students
+5. HiFiNet: Hierarchical Fault Identification in Wireless Sensor Networks via Edge-Based Classification and Graph Aggregation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Hierarchical Memorization in Large Language Models: Evidence from Citation Generation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260506--20260506-splitzip-ultra-fast-lossless-kv-compression-for-disaggregated-ll-a23b7053.md
-- docs/agent/drafts/20260506--20260506-bim-information-extraction-through-llm-based-adaptive-exploratio-576c8701.md
+- docs/agent/drafts/20260507--20260507-ai4eosc-a-federated-cloud-platform-for-artificial-intelligence-i-562db2c1.md
+- docs/agent/drafts/20260507--20260507-benchmarking-document-parsers-on-mathematical-formula-extraction-4fd75d5a.md
 
