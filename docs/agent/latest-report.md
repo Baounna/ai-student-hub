@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-07T09:16:05.978Z
+Generated: 2026-05-08T08:12:19.213Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Intermediate Representations are Strong AI-Generated Image Detectors: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. MedQA: Fine-Tuning a Clinical AI on AMD ROCm — No CUDA Required: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: ai cs update for students hugging face blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Coral: Cost-Efficient Multi-LLM Serving over Heterogeneous Cloud GPUs: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Perturbation is All You Need for Extrapolating Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. A foundation model of vision, audition, and language for in-silico neuroscience: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Adapt or Forget: Provable Tradeoffs Between Adam and SGD in Nonstationary Optimization: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+2. VARS-FL: Validation-Aligned Client Selection for Non-IID Federated Learning in IoT Systems: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Imagery Dataset for Remaining Useful Life Estimation of Synthetic Fibre Ropes: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. Detecting AI-Generated Videos with Spiking Neural Networks: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Logic-Regularized Verifier Elicits Reasoning from LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. MTL-MAD: Multi-Task Learners are Effective Medical Anomaly Detectors: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. DBMSolver: A Training-free Diffusion Bridge Sampler for High-Quality Image-to-Image Translation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260507--20260507-intermediate-representations-are-strong-ai-generated-image-detec-5eb8f06c.md
-- docs/agent/drafts/20260507--20260507-coral-cost-efficient-multi-llm-serving-over-heterogeneous-cloud--33d4a735.md
+- docs/agent/drafts/20260508--20260508-medqa-fine-tuning-a-clinical-ai-on-amd-rocm-no-cuda-required-55ae1c06.md
+- docs/agent/drafts/20260508--20260508-vars-fl-validation-aligned-client-selection-for-non-iid-federate-7bdcd9a2.md
 
