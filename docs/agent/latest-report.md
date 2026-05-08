@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-08T08:12:19.213Z
+Generated: 2026-05-08T08:13:20.643Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,31 +45,31 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: ai cs update for students hugging face blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. VARS-FL: Validation-Aligned Client Selection for Non-IID Federated Learning in IoT Systems: What It Means for AI/CS Students
+2. A Detection-Gated Pipeline for Robust Glottal Area Waveform Extraction and Clinical Pathology Assessment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Detecting AI-Generated Videos with Spiking Neural Networks: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Logic-Regularized Verifier Elicits Reasoning from LLMs: What It Means for AI/CS Students
+3. PEPA: a Persistently Autonomous Embodied Agent with Personalities: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. MTL-MAD: Multi-Task Learners are Effective Medical Anomaly Detectors: What It Means for AI/CS Students
+4. AI Agents Alone Are Not (Yet) Sufficient for Social Simulation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Same Words, Different Judgments: How Preferences Vary Across Modalities: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. DBMSolver: A Training-free Diffusion Bridge Sampler for High-Quality Image-to-Image Translation: What It Means for AI/CS Students
+6. CAMEL: Confidence-Gated Reflection for Reward Modeling: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260508--20260508-medqa-fine-tuning-a-clinical-ai-on-amd-rocm-no-cuda-required-55ae1c06.md
-- docs/agent/drafts/20260508--20260508-vars-fl-validation-aligned-client-selection-for-non-iid-federate-7bdcd9a2.md
+- docs/agent/drafts/20260508--20260508-a-detection-gated-pipeline-for-robust-glottal-area-waveform-extr-46c5e7a2.md
+- docs/agent/drafts/20260508--20260508-pepa-a-persistently-autonomous-embodied-agent-with-personalities-4a9b8865.md
 
