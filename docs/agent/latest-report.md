@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-08T08:13:20.643Z
+Generated: 2026-05-09T08:18:57.242Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. MedQA: Fine-Tuning a Clinical AI on AMD ROCm — No CUDA Required: What It Means for AI/CS Students
+1. CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: how to build hugging face blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. Why age assurance laws matter for developers: What It Means for AI/CS Students
+   - Source: GitHub Blog
+   - Keyword: ai cs update for students github blog
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. EMO: Pretraining mixture of experts for emergent modularity: What It Means for AI/CS Students
    - Source: Hugging Face Blog
    - Keyword: ai cs update for students hugging face blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. A Detection-Gated Pipeline for Robust Glottal Area Waveform Extraction and Clinical Pathology Assessment: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+4. How researchers are using GitHub Innovation Graph data to reveal the “digital complexity” of nations: What It Means for AI/CS Students
+   - Source: GitHub Blog
+   - Keyword: ai cs update for students github blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. PEPA: a Persistently Autonomous Embodied Agent with Personalities: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+5. See what happens when creative legends use AI to make ads for small businesses: What It Means for AI/CS Students
+   - Source: Google AI Blog
+   - Keyword: how to build google ai blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. AI Agents Alone Are Not (Yet) Sufficient for Social Simulation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Same Words, Different Judgments: How Preferences Vary Across Modalities: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. CAMEL: Confidence-Gated Reflection for Reward Modeling: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+6. See what happens when creative legends use AI to make ads for small businesses.: What It Means for AI/CS Students
+   - Source: Google AI Blog
+   - Keyword: how to build google ai blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260508--20260508-a-detection-gated-pipeline-for-robust-glottal-area-waveform-extr-46c5e7a2.md
-- docs/agent/drafts/20260508--20260508-pepa-a-persistently-autonomous-embodied-agent-with-personalities-4a9b8865.md
+- docs/agent/drafts/20260509--20260508-cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-loca-4862d065.md
+- docs/agent/drafts/20260509--20260508-why-age-assurance-laws-matter-for-developers-2212b307.md
 
