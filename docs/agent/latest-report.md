@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-10T08:27:40.731Z
+Generated: 2026-05-10T08:29:31.016Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -95,7 +95,6 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 2
-- docs/agent/drafts/20260510--20260509-oncoagent-a-dual-tier-multi-agent-framework-for-privacy-preservi-a66112d7.md
-- docs/agent/drafts/20260510--20260508-see-what-happens-when-creative-legends-use-ai-to-make-ads-for-sm-68512a3c.md
+- New drafts generated: 0
+- No new drafts generated (existing coverage or no opportunities).
 
