@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-09T08:22:21.003Z
+Generated: 2026-05-10T08:27:40.731Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models: What It Means for AI/CS Students
+1. "OncoAgent: A Dual-Tier Multi-Agent Framework for Privacy-Preserving Oncology Clinical Decision Support": What It Means for AI/CS Students
    - Source: Hugging Face Blog
    - Keyword: how to build hugging face blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Why age assurance laws matter for developers: What It Means for AI/CS Students
+2. CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: how to build hugging face blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Why age assurance laws matter for developers: What It Means for AI/CS Students
    - Source: GitHub Blog
    - Keyword: ai cs update for students github blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. EMO: Pretraining mixture of experts for emergent modularity: What It Means for AI/CS Students
+4. EMO: Pretraining mixture of experts for emergent modularity: What It Means for AI/CS Students
    - Source: Hugging Face Blog
    - Keyword: ai cs update for students hugging face blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. How researchers are using GitHub Innovation Graph data to reveal the “digital complexity” of nations: What It Means for AI/CS Students
+5. How researchers are using GitHub Innovation Graph data to reveal the “digital complexity” of nations: What It Means for AI/CS Students
    - Source: GitHub Blog
    - Keyword: ai cs update for students github blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. See what happens when creative legends use AI to make ads for small businesses: What It Means for AI/CS Students
-   - Source: Google AI Blog
-   - Keyword: how to build google ai blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. See what happens when creative legends use AI to make ads for small businesses.: What It Means for AI/CS Students
+6. See what happens when creative legends use AI to make ads for small businesses: What It Means for AI/CS Students
    - Source: Google AI Blog
    - Keyword: how to build google ai blog
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260509--20260508-emo-pretraining-mixture-of-experts-for-emergent-modularity-a40b2ba2.md
-- docs/agent/drafts/20260509--20260508-how-researchers-are-using-github-innovation-graph-data-to-reveal-0dee7348.md
+- docs/agent/drafts/20260510--20260509-oncoagent-a-dual-tier-multi-agent-framework-for-privacy-preservi-a66112d7.md
+- docs/agent/drafts/20260510--20260508-see-what-happens-when-creative-legends-use-ai-to-make-ads-for-sm-68512a3c.md
 

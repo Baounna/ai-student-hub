@@ -1,22 +1,21 @@
 # AI Student Hub Agent Issue Sync
 
-Generated: 2026-05-09T08:22:21.091Z
+Generated: 2026-05-10T08:27:40.781Z
 Mode: dry-run
 Repository: Baounna/ai-student-hub
-Max issues per run: 6
+Max issues per run: 3
 
 ## Queue Sources
 - Operator: enabled=YES | actions=10 | queue=docs/agent/next-actions.json
-  - Queue generated at: 2026-05-09T08:22:21.003Z
-  - Selected this run: 6
-- Design: enabled=YES | actions=0 | queue=docs/agent/design-actions.json
-  - Queue generated at: 2026-05-09T08:22:21.048Z
+  - Queue generated at: 2026-05-10T08:27:40.731Z
+  - Selected this run: 3
+- Design: enabled=NO | actions=0 | queue=docs/agent/design-actions.json
   - Selected this run: 0
 
 ## Run Summary
 - Created: 0
 - Already open/tracked: 0
-- Dry-run candidates: 6
+- Dry-run candidates: 3
 - Errors: 0
 - Tracked total: 6
 
@@ -24,20 +23,17 @@ Max issues per run: 6
 - [Operator] [Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).
 - [Operator] [Operator P1] Cover missing affiliate placement: blog.
 - [Operator] [Operator P1] Cover missing affiliate placement: comparison.
-- [Operator] [Operator P1] Cover missing affiliate placement: home.
-- [Operator] [Operator P1] Cover missing affiliate placement: resources.
-- [Operator] [Operator P1] Enable ConvertKit and connect newsletter form ID/API key.
 
 ## Tracked Actions
 - [Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).
   - Status: dry-run
-  - Last seen: 2026-05-09T08:22:21.091Z
+  - Last seen: 2026-05-10T08:27:40.781Z
 - [Operator P1] Cover missing affiliate placement: blog.
   - Status: dry-run
-  - Last seen: 2026-05-09T08:22:21.091Z
+  - Last seen: 2026-05-10T08:27:40.781Z
 - [Operator P1] Cover missing affiliate placement: comparison.
   - Status: dry-run
-  - Last seen: 2026-05-09T08:22:21.091Z
+  - Last seen: 2026-05-10T08:27:40.781Z
 - [Operator P1] Cover missing affiliate placement: home.
   - Status: dry-run
   - Last seen: 2026-05-09T08:22:21.091Z
