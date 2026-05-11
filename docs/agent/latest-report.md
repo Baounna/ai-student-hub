@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-11T10:08:18.357Z
+Generated: 2026-05-11T10:25:16.062Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -55,21 +55,21 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: how to build google ai blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. MAVEN: Multi-Agent Verification-Elaboration Network with In-Step Epistemic Auditing: What It Means for AI/CS Students
+4. Retina-RAG: Retrieval-Augmented Vision-Language Modeling for Joint Retinal Diagnosis and Clinical Report Generation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. LithoBench: Benchmarking Large Multimodal Models for Remote-Sensing Lithology Interpretation: What It Means for AI/CS Students
+5. Entropy-Regularized Adjoint Matching for Offline Reinforcement Learning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-6. Post-training makes large language models less human-like: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. VISD: Enhancing Video Reasoning via Structured Self-Distillation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260511--20260511-how-enterprises-are-scaling-ai-4ca12da2.md
-- docs/agent/drafts/20260511--20260511-openai-campus-network-student-club-interest-form-ee5564e4.md
+- docs/agent/drafts/20260511--20260511-the-new-ai-powered-google-finance-is-expanding-to-europe-519f0d44.md
+- docs/agent/drafts/20260511--20260511-retina-rag-retrieval-augmented-vision-language-modeling-for-join-83cbd18d.md
 
