@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-10T08:29:31.016Z
+Generated: 2026-05-11T10:08:18.357Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. "OncoAgent: A Dual-Tier Multi-Agent Framework for Privacy-Preserving Oncology Clinical Decision Support": What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
+1. How enterprises are scaling AI: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Why age assurance laws matter for developers: What It Means for AI/CS Students
-   - Source: GitHub Blog
-   - Keyword: ai cs update for students github blog
+2. OpenAI Campus Network: Student club interest form: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: ai cs update for students openai news
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. EMO: Pretraining mixture of experts for emergent modularity: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: ai cs update for students hugging face blog
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. How researchers are using GitHub Innovation Graph data to reveal the “digital complexity” of nations: What It Means for AI/CS Students
-   - Source: GitHub Blog
-   - Keyword: ai cs update for students github blog
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. See what happens when creative legends use AI to make ads for small businesses: What It Means for AI/CS Students
+3. The new AI-powered Google Finance is expanding to Europe.: What It Means for AI/CS Students
    - Source: Google AI Blog
    - Keyword: how to build google ai blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. MAVEN: Multi-Agent Verification-Elaboration Network with In-Step Epistemic Auditing: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. LithoBench: Benchmarking Large Multimodal Models for Remote-Sensing Lithology Interpretation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+6. Post-training makes large language models less human-like: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -95,6 +95,7 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 0
-- No new drafts generated (existing coverage or no opportunities).
+- New drafts generated: 2
+- docs/agent/drafts/20260511--20260511-how-enterprises-are-scaling-ai-4ca12da2.md
+- docs/agent/drafts/20260511--20260511-openai-campus-network-student-club-interest-form-ee5564e4.md
 
