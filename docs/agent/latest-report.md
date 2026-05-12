@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-11T10:25:16.062Z
+Generated: 2026-05-12T09:20:00.734Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. How enterprises are scaling AI: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. OpenAI Campus Network: Student club interest form: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: ai cs update for students openai news
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. The new AI-powered Google Finance is expanding to Europe.: What It Means for AI/CS Students
-   - Source: Google AI Blog
-   - Keyword: how to build google ai blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Retina-RAG: Retrieval-Augmented Vision-Language Modeling for Joint Retinal Diagnosis and Clinical Report Generation: What It Means for AI/CS Students
+1. Benchmarking ResNet Backbones in RT-DETR: Impact of Depth and Regularization under environmental conditions: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+2. DARE: Diffusion Language Model Activation Reuse for Efficient Inference: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Entropy-Regularized Adjoint Matching for Offline Reinforcement Learning: What It Means for AI/CS Students
+3. VLADriver-RAG: Retrieval-Augmented Vision-Language-Action Models for Autonomous Driving: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Towards Universal Gene Regulatory Network Inference: Unlocking Generalizable Regulatory Knowledge in Single-cell Foundation Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Feature Repulsion and Spectral Lock-in: An Empirical Study of Two-Layer Network Grokking: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. VISD: Enhancing Video Reasoning via Structured Self-Distillation: What It Means for AI/CS Students
+6. The Safety-Aware Denoiser for Text Diffusion Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260511--20260511-the-new-ai-powered-google-finance-is-expanding-to-europe-519f0d44.md
-- docs/agent/drafts/20260511--20260511-retina-rag-retrieval-augmented-vision-language-modeling-for-join-83cbd18d.md
+- docs/agent/drafts/20260512--20260512-benchmarking-resnet-backbones-in-rt-detr-impact-of-depth-and-reg-9ef13b73.md
+- docs/agent/drafts/20260512--20260512-dare-diffusion-language-model-activation-reuse-for-efficient-inf-af5fac81.md
 
