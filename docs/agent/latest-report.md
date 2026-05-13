@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-12T09:21:35.941Z
+Generated: 2026-05-13T09:26:54.375Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Neural Information Causality: What It Means for AI/CS Students
+1. MC$^2$: Monte Carlo Correction for Fast Elliptic PDE Solving: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Teaching Molecular Dynamics to a Non-Autoregressive Ionic Transport Predictor: What It Means for AI/CS Students
+2. Semi-Supervised Neural Super-Resolution for Mesh-Based Simulations: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Hierarchical Attention-based Graph Neural Network with Relevance-driven Pruning: What It Means for AI/CS Students
+3. Memorize Theorems, Not Instances: Probing SFT Generalization through Mathematical Reasoning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Neural Cluster First, Route Second: One-Shot Capacitated Vehicle Routing via Differentiable Optimal Transport: What It Means for AI/CS Students
+4. Beyond Continuity: Challenges of Context Switching in Multi-Turn Dialogue with LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Remix the Timbre: Diffusion-Based Style Transfer Across Polyphonic Stems: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Micro-Defects Expose Macro-Fakes: Detecting AI-Generated Images via Local Distributional Shifts: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Towards Effective Theory of LLMs: A Representation Learning Approach: What It Means for AI/CS Students
+6. Monocular Biomechanical Tracking of Fingers with Inverse Kinematics to Foundation Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260512--20260512-neural-information-causality-7b141c24.md
-- docs/agent/drafts/20260512--20260512-teaching-molecular-dynamics-to-a-non-autoregressive-ionic-transp-a3be2bb1.md
+- docs/agent/drafts/20260513--20260513-mc2-monte-carlo-correction-for-fast-elliptic-pde-solving-7538bd17.md
+- docs/agent/drafts/20260513--20260513-semi-supervised-neural-super-resolution-for-mesh-based-simulatio-37b630a4.md
 
