@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-13T09:30:59.233Z
+Generated: 2026-05-14T09:17:25.267Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Neural Information Causality: What It Means for AI/CS Students
+1. Building a safe, effective sandbox to enable Codex on Windows: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. Children's English Reading Story Generation via Supervised Fine-Tuning of Compact LLMs with Controllable Difficulty and Safety: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Identifying AI Web Scrapers Using Canary Tokens: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Teaching Molecular Dynamics to a Non-Autoregressive Ionic Transport Predictor: What It Means for AI/CS Students
+4. RTLC -- Research, Teach-to-Learn, Critique: A three-stage prompting paradigm inspired by the Feynman Learning Technique that lifts LLM-as-judge accuracy on JudgeBench with no fine-tuning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. The WidthWall: A Strict Expressivity Hierarchy for Hypergraph Neural Networks: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Hierarchical Attention-based Graph Neural Network with Relevance-driven Pruning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Neural Cluster First, Route Second: One-Shot Capacitated Vehicle Routing via Differentiable Optimal Transport: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Micro-Defects Expose Macro-Fakes: Detecting AI-Generated Images via Local Distributional Shifts: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Towards Effective Theory of LLMs: A Representation Learning Approach: What It Means for AI/CS Students
+6. A Hierarchical Language Model with Predictable Scaling Laws and Provable Benefits of Reasoning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260513--20260513-neural-information-causality-7b141c24.md
-- docs/agent/drafts/20260513--20260513-teaching-molecular-dynamics-to-a-non-autoregressive-ionic-transp-a3be2bb1.md
+- docs/agent/drafts/20260514--20260515-building-a-safe-effective-sandbox-to-enable-codex-on-windows-5502a50a.md
+- docs/agent/drafts/20260514--20260514-childrens-english-reading-story-generation-via-supervised-fine-t-18c62f12.md
 
