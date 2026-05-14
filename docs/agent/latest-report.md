@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-14T09:17:25.267Z
+Generated: 2026-05-14T09:19:21.306Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,31 +45,31 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: how to build openai news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Children's English Reading Story Generation via Supervised Fine-Tuning of Compact LLMs with Controllable Difficulty and Safety: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Identifying AI Web Scrapers Using Canary Tokens: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. What Information Matters? Graph Out-of-Distribution Detection via Tri-Component Information Decomposition: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. RTLC -- Research, Teach-to-Learn, Critique: A three-stage prompting paradigm inspired by the Feynman Learning Technique that lifts LLM-as-judge accuracy on JudgeBench with no fine-tuning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. The WidthWall: A Strict Expressivity Hierarchy for Hypergraph Neural Networks: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+3. Offline Two-Player Zero-Sum Markov Games with KL Regularization: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. A Hierarchical Language Model with Predictable Scaling Laws and Provable Benefits of Reasoning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+4. JEDI: Joint Embedding Diffusion World Model for Online Model-Based Reinforcement Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+5. \emph{DRIFT}: A Benchmark for Task-Free Continual Graph Learning with Continuous Distribution Shifts: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: best ai model benchmark for students arxiv cs.lg
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+6. Frequency Bias and OOD Generalization in Neural Operators under a Variable-Coefficient Wave Equation: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260514--20260515-building-a-safe-effective-sandbox-to-enable-codex-on-windows-5502a50a.md
-- docs/agent/drafts/20260514--20260514-childrens-english-reading-story-generation-via-supervised-fine-t-18c62f12.md
+- docs/agent/drafts/20260514--20260514-what-information-matters-graph-out-of-distribution-detection-via-3b7ce26f.md
+- docs/agent/drafts/20260514--20260514-offline-two-player-zero-sum-markov-games-with-kl-regularization-b204b872.md
 
