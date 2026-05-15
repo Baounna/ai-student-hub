@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-14T09:19:21.306Z
+Generated: 2026-05-15T09:33:26.563Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Building a safe, effective sandbox to enable Codex on Windows: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
+1. IFPV: An Integrated Multi-Agent Framework for Generative Operational Planning and High-Fidelity Plan Verification: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. What Information Matters? Graph Out-of-Distribution Detection via Tri-Component Information Decomposition: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Offline Two-Player Zero-Sum Markov Games with KL Regularization: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. JEDI: Joint Embedding Diffusion World Model for Online Model-Based Reinforcement Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+2. XFP: Quality-Targeted Adaptive Codebook Quantization with Sparse Outlier Separation for LLM Inference: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. \emph{DRIFT}: A Benchmark for Task-Free Continual Graph Learning with Continuous Distribution Shifts: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: best ai model benchmark for students arxiv cs.lg
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-6. Frequency Bias and OOD Generalization in Neural Operators under a Variable-Coefficient Wave Equation: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. GPart: End-to-End Isometric Fine-Tuning via Global Parameter Partitioning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+4. Beyond AI as Assistants: Toward Autonomous Discovery in Cosmology: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Graphs of Research: Citation Evolution Graphs as Supervision for Research Idea Generation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Known By Their Actions: Fingerprinting LLM Browser Agents via UI Traces: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260514--20260514-what-information-matters-graph-out-of-distribution-detection-via-3b7ce26f.md
-- docs/agent/drafts/20260514--20260514-offline-two-player-zero-sum-markov-games-with-kl-regularization-b204b872.md
+- docs/agent/drafts/20260515--20260515-ifpv-an-integrated-multi-agent-framework-for-generative-operatio-143a69d4.md
+- docs/agent/drafts/20260515--20260515-xfp-quality-targeted-adaptive-codebook-quantization-with-sparse--f4584a37.md
 
