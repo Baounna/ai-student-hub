@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-15T09:33:26.563Z
+Generated: 2026-05-15T09:35:08.530Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. IFPV: An Integrated Multi-Agent Framework for Generative Operational Planning and High-Fidelity Plan Verification: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. XFP: Quality-Targeted Adaptive Codebook Quantization with Sparse Outlier Separation for LLM Inference: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. GPart: End-to-End Isometric Fine-Tuning via Global Parameter Partitioning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+1. Nearest-Neighbor Radii under Dependent Sampling: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Beyond AI as Assistants: Toward Autonomous Discovery in Cosmology: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. Guided Diffusion Sampling for Precipitation Forecast Interventions: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Graphs of Research: Citation Evolution Graphs as Supervision for Research Idea Generation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+3. Language-Induced Priors for Domain Adaptation: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Known By Their Actions: Fingerprinting LLM Browser Agents via UI Traces: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+4. Minimal-Intervention KV Retention: A Design-Space Study and a Diversity-Penalty Survivor: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Smooth Multi-Policy Causal Effect Estimation in Longitudinal Settings: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. TILT: Target-induced loss tilting under covariate shift: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260515--20260515-ifpv-an-integrated-multi-agent-framework-for-generative-operatio-143a69d4.md
-- docs/agent/drafts/20260515--20260515-xfp-quality-targeted-adaptive-codebook-quantization-with-sparse--f4584a37.md
+- docs/agent/drafts/20260515--20260515-nearest-neighbor-radii-under-dependent-sampling-ad4210ec.md
+- docs/agent/drafts/20260515--20260515-guided-diffusion-sampling-for-precipitation-forecast-interventio-937ff1d3.md
 
