@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-16T08:25:40.746Z
+Generated: 2026-05-16T08:27:59.000Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. ML-Embed: Inclusive and Efficient Embeddings for a Multilingual World: What It Means for AI/CS Students
+1. Teaching Large Language Models When Not to Know: Learning Temporal Critique for Ex-Ante Reasoning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. SliceGraph: Mapping Process Isomers in Multi-Run Chain-of-Thought Reasoning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Concurrency without Model Changes: Future-based Asynchronous Function Calling for LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. On the Cultural Anachronism and Temporal Reasoning in Vision Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. NeuroTrain: Surveying Local Learning Rules for Spiking Neural Networks with an Open Benchmarking Framework: What It Means for AI/CS Students
+3. Sycophancy is an Educational Safety Risk: Why LLM Tutors Need Sycophancy Benchmarks: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: best ai model benchmark for students arxiv cs.ai
    - Monetization angle: benchmark + budget-friendly model/tool choice
    - CTA: Compare tools + student guide
-5. TFGN: Task-Free, Replay-Free Continual Pre-Training Without Catastrophic Forgetting at LLM Scale: What It Means for AI/CS Students
+4. Prompt Segmentation and Annotation Optimisation: Controlling LLM Behaviour via Optimised Segment-Level Annotations: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. SpeakerLLM: A Speaker-Specialized Audio-LLM for Speaker Understanding and Verification Reasoning: What It Means for AI/CS Students
+5. PyCSP3-Scheduling: A Scheduling Extension for PyCSP3: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. TeachAnything: A Multimodal Crowdsourcing Platform for Training Embodied AI Agents in Symmetrical Reality: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260516--20260516-ml-embed-inclusive-and-efficient-embeddings-for-a-multilingual-w-edb07e1e.md
-- docs/agent/drafts/20260516--20260516-concurrency-without-model-changes-future-based-asynchronous-func-0d62c710.md
+- docs/agent/drafts/20260516--20260516-teaching-large-language-models-when-not-to-know-learning-tempora-0945d741.md
+- docs/agent/drafts/20260516--20260516-slicegraph-mapping-process-isomers-in-multi-run-chain-of-thought-ecb6b813.md
 
