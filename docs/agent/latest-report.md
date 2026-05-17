@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-16T08:27:59.000Z
+Generated: 2026-05-17T08:37:49.259Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260516--20260516-teaching-large-language-models-when-not-to-know-learning-tempora-0945d741.md
-- docs/agent/drafts/20260516--20260516-slicegraph-mapping-process-isomers-in-multi-run-chain-of-thought-ecb6b813.md
+- docs/agent/drafts/20260517--20260516-sycophancy-is-an-educational-safety-risk-why-llm-tutors-need-syc-df822621.md
+- docs/agent/drafts/20260517--20260516-prompt-segmentation-and-annotation-optimisation-controlling-llm--b06a5753.md
 
