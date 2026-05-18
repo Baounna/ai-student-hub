@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-17T08:54:52.894Z
+Generated: 2026-05-18T10:48:20.991Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Teaching Large Language Models When Not to Know: Learning Temporal Critique for Ex-Ante Reasoning: What It Means for AI/CS Students
+1. Do Chinese models speak Chinese languages?: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. SliceGraph: Mapping Process Isomers in Multi-Run Chain-of-Thought Reasoning: What It Means for AI/CS Students
+2. TokenButler: Token Importance is Predictable: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Sycophancy is an Educational Safety Risk: Why LLM Tutors Need Sycophancy Benchmarks: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-4. Prompt Segmentation and Annotation Optimisation: Controlling LLM Behaviour via Optimised Segment-Level Annotations: What It Means for AI/CS Students
+3. Seeing is Understanding: Unlocking Causal Attention into Modality-Mutual Attention for Multimodal LLMs: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. PyCSP3-Scheduling: A Scheduling Extension for PyCSP3: What It Means for AI/CS Students
+4. Shaping Sparse Rewards in Reinforcement Learning: A Semi-supervised Approach: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. TeachAnything: A Multimodal Crowdsourcing Platform for Training Embodied AI Agents in Symmetrical Reality: What It Means for AI/CS Students
+5. TrainMover: An Interruption-Resilient Runtime for ML Training: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Tube Loss: A Novel Approach for Prediction Interval Estimation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260517--20260516-pycsp3-scheduling-a-scheduling-extension-for-pycsp3-ea29212f.md
-- docs/agent/drafts/20260517--20260516-teachanything-a-multimodal-crowdsourcing-platform-for-training-e-ce675830.md
+- docs/agent/drafts/20260518--20260518-do-chinese-models-speak-chinese-languages-e2813340.md
+- docs/agent/drafts/20260518--20260518-tokenbutler-token-importance-is-predictable-e11a497a.md
 
