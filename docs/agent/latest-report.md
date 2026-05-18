@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-18T10:48:20.991Z
+Generated: 2026-05-18T10:49:06.799Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Do Chinese models speak Chinese languages?: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. A projection-based framework for gradient-free and parallel learning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. SPDEBench: An Extensive Benchmark for Learning Stochastic PDEs: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: best ai model benchmark for students arxiv cs.lg
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+3. Rethinking Predictive Modeling for LLM Routing: When Simple kNN Beats Complex Learned Routers: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. TokenButler: Token Importance is Predictable: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+4. Integrating chemical structures as treatments improves representations of microscopy images for morphological profiling: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Seeing is Understanding: Unlocking Causal Attention into Modality-Mutual Attention for Multimodal LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+5. Searching on a Budget: HW-NAS with 10 Latency Probes: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Shaping Sparse Rewards in Reinforcement Learning: A Semi-supervised Approach: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. TrainMover: An Interruption-Resilient Runtime for ML Training: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Tube Loss: A Novel Approach for Prediction Interval Estimation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+6. A Statistical Analysis for Per-Instance Evaluation of Stochastic Optimizers: Avoiding Unreliable Conclusions: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260518--20260518-do-chinese-models-speak-chinese-languages-e2813340.md
-- docs/agent/drafts/20260518--20260518-tokenbutler-token-importance-is-predictable-e11a497a.md
+- docs/agent/drafts/20260518--20260518-a-projection-based-framework-for-gradient-free-and-parallel-lear-4369a6bf.md
+- docs/agent/drafts/20260518--20260518-spdebench-an-extensive-benchmark-for-learning-stochastic-pdes-6b0fd116.md
 
