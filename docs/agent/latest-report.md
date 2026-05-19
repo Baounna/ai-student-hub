@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-19T10:25:27.694Z
+Generated: 2026-05-19T10:27:16.406Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Physics-Guided Geometric Diffusion for Macro Placement Generation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. PESD-TSF: A Period-Aware and Explicit Structured Decomposition Framework for Long-Term Time Series Forecasting: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Nested Spatio-Temporal Time Series Forecasting: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Avoiding Structural Failure Modes in Tabular Fair SSL: Online Primal-Dual Allocation under Confidence Gating: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Membership Inference Attacks on Discrete Diffusion Language Models: What It Means for AI/CS Students
+1. An Empirical Study of Privacy Leakage Chains via Prompt Injection in Black-Box Chatbot Environments: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Diffusion Attention Expert Model for Predicting and Semi-automatic Localizing STAS in Lung Cancer Histopathological Images: What It Means for AI/CS Students
+2. Who Generated This 3D Asset? Learning Source Attribution for Generative 3D Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Symmetry-Compatible Principle for Optimizer Design: Embeddings, LM Heads, SwiGLU MLPs, and MoE Routers: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. SENSE: Satellite-based ENergy Synthesis for Sustainable Environment: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Parameterized 4-Qubit EWL Quantum Game Circuits with Dirac-Solow-Swan Hamiltonian Integration for Quadruple Helix Disruptive Innovation Recommender Systems: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. A-ProS: Towards Reliable Autonomous Programming Through Multi-Model Feedback: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260519--20260519-physics-guided-geometric-diffusion-for-macro-placement-generatio-fe7f63af.md
-- docs/agent/drafts/20260519--20260519-pesd-tsf-a-period-aware-and-explicit-structured-decomposition-fr-a4e0b9f0.md
+- docs/agent/drafts/20260519--20260519-an-empirical-study-of-privacy-leakage-chains-via-prompt-injectio-e8582547.md
+- docs/agent/drafts/20260519--20260519-who-generated-this-3d-asset-learning-source-attribution-for-gene-83998db4.md
 
