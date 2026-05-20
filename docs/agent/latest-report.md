@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-19T10:27:16.406Z
+Generated: 2026-05-20T10:02:08.028Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. An Empirical Study of Privacy Leakage Chains via Prompt Injection in Black-Box Chatbot Environments: What It Means for AI/CS Students
+1. Base Models Look Human To AI Detectors: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Who Generated This 3D Asset? Learning Source Attribution for Generative 3D Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Symmetry-Compatible Principle for Optimizer Design: Embeddings, LM Heads, SwiGLU MLPs, and MoE Routers: What It Means for AI/CS Students
+2. ARC-RL: A Reinforcement Learning Playground Inspired by ARC Raiders: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. SENSE: Satellite-based ENergy Synthesis for Sustainable Environment: What It Means for AI/CS Students
+3. CANINE: Coaching Visually Impaired Users for Interactive Navigation with a Robot Guide Dog: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Parameterized 4-Qubit EWL Quantum Game Circuits with Dirac-Solow-Swan Hamiltonian Integration for Quadruple Helix Disruptive Innovation Recommender Systems: What It Means for AI/CS Students
+4. CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+5. Sampling-Based Safe Reinforcement Learning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. A-ProS: Towards Reliable Autonomous Programming Through Multi-Model Feedback: What It Means for AI/CS Students
+6. Quantifying the Pre-training Dividend: Generative versus Latent Self-Supervised Learning for Time Series Foundation Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260519--20260519-an-empirical-study-of-privacy-leakage-chains-via-prompt-injectio-e8582547.md
-- docs/agent/drafts/20260519--20260519-who-generated-this-3d-asset-learning-source-attribution-for-gene-83998db4.md
+- docs/agent/drafts/20260520--20260520-base-models-look-human-to-ai-detectors-bfa223bb.md
+- docs/agent/drafts/20260520--20260520-arc-rl-a-reinforcement-learning-playground-inspired-by-arc-raide-4d973dd4.md
 
