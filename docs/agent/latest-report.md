@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-20T10:03:44.763Z
+Generated: 2026-05-21T10:22:45.991Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Evaluating Memory Condensation Strategies for Coding Agents in Data-Driven Scientific Discovery: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. INAR-VL: Input-Aware Routing for Edge-Cloud Vision-Language Inference: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. STRIDE: Learnable Stepwise Language Feedback for LLM Reasoning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. TEMPO: Temporal Enforcement via Mode-Separated Policy Optimization for Trustworthy LLM Backtesting: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Safe Continual Reinforcement Learning under Nonstationarity via Adaptive Safety Constraints: What It Means for AI/CS Students
+1. TabPFN-MT: A Natively Multitask In-Context Learner for Tabular Data: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. From Cumulative Constraints to Adaptive Runtime Safety Control for Nonstationary Reinforcement Learning: What It Means for AI/CS Students
+2. GraphDiffMed: Knowledge-Constrained Differential Attention with Pharmacological Graph Priors for Medication Recommendation: What It Means for AI/CS Students
    - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Neural Estimation of Pairwise Mutual Information in Masked Discrete Sequence Models: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Component-Aware Structure-Preserving Style Transfer for Satellite Visual Sim2Real Data Construction: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+5. Sampling-Based Safe Reinforcement Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Quantifying the Pre-training Dividend: Generative versus Latent Self-Supervised Learning for Time Series Foundation Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260520--20260520-evaluating-memory-condensation-strategies-for-coding-agents-in-d-79f0d528.md
-- docs/agent/drafts/20260520--20260520-inar-vl-input-aware-routing-for-edge-cloud-vision-language-infer-c6a4f303.md
+- docs/agent/drafts/20260521--20260521-tabpfn-mt-a-natively-multitask-in-context-learner-for-tabular-da-a789cc5a.md
+- docs/agent/drafts/20260521--20260521-graphdiffmed-knowledge-constrained-differential-attention-with-p-3914663a.md
 
