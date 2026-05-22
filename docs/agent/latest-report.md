@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-21T10:25:20.568Z
+Generated: 2026-05-22T09:58:27.644Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Conformal Selective Acting: Anytime-Valid Risk Control for RLVR-Trained LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Catching a Moving Subspace: Low-Rank Bandits Beyond Stationarity: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. Variance Reduction for Expectations with Diffusion Teachers: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Chronicle: A Multimodal Foundation Model for Joint Language and Time Series Understanding: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Residual Paving: Diagnosing the Routing Bottleneck in Selective Refusal Editing: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+2. Quantifying Hyperparameter Transfer and the Importance of Embedding Layer Learning Rate: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. It Takes Two: Complementary Self-Distillation for Contextual Integrity in LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+3. WikiVQABench: A Knowledge-Grounded Visual Question Answering Benchmark from Wikipedia and Wikidata: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+4. Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Instance Discrimination for Link Prediction: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+5. Mem-$\pi$: Adaptive Memory through Learning When and What to Generate: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. HITL-D: Human In The Loop Diffusion Assisted Shared Control: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260521--20260521-conformal-selective-acting-anytime-valid-risk-control-for-rlvr-t-fcd457c5.md
-- docs/agent/drafts/20260521--20260521-catching-a-moving-subspace-low-rank-bandits-beyond-stationarity-413da06e.md
+- docs/agent/drafts/20260522--20260522-variance-reduction-for-expectations-with-diffusion-teachers-a55d4a27.md
+- docs/agent/drafts/20260522--20260522-quantifying-hyperparameter-transfer-and-the-importance-of-embedd-d6a54b62.md
 
