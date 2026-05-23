@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-22T10:00:49.521Z
+Generated: 2026-05-23T08:36:57.254Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. ARC-STAR: Auditable Post-Hoc Correction for PDE Foundation Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+1. Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: how to build hugging face blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Can Transformers Learn to Verify During Backtracking Search?: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Survive or Collapse: The Asymmetric Roles of Data Gating and Reward Grounding in Self-Play RL: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Reinforced Graph of Thoughts: RL-Driven Adaptive Prompting for LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+2. Catch up on the Dialogues stage at Google I/O 2026.: What It Means for AI/CS Students
+   - Source: Google AI Blog
+   - Keyword: how to build google ai blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Bandit Convex Optimization with Gradient Prediction Adaptivity: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. GitHub recognized as a Leader in the Gartner® Magic Quadrant™ for Enterprise AI Coding Agents for the third year in a row: What It Means for AI/CS Students
+   - Source: GitHub Blog
+   - Keyword: how to build github blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: ai cs update for students hugging face blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. From Sequential Nodes to GPU Batches: Parallel Branch and Bound for Optimal $k$-Sparse GLMs: What It Means for AI/CS Students
+5. Text Degeneration: A Production Failure Mode That Most Benchmarks Do Not Track: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: best ai model benchmark for students hugging face blog
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+6. One-Way Policy Optimization for Self-Evolving LLMs: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260522--20260522-arc-star-auditable-post-hoc-correction-for-pde-foundation-models-b533b1fa.md
-- docs/agent/drafts/20260522--20260522-can-transformers-learn-to-verify-during-backtracking-search-a2547453.md
+- docs/agent/drafts/20260523--20260523-towards-speed-of-light-text-generation-with-nemotron-labs-diffus-e7490cde.md
+- docs/agent/drafts/20260523--20260522-catch-up-on-the-dialogues-stage-at-google-io-2026-3405d5d5.md
 
