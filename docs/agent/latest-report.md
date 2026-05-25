@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-24T09:09:09.013Z
+Generated: 2026-05-25T10:57:51.018Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Catch up on the Dialogues stage at Google I/O 2026.: What It Means for AI/CS Students
-   - Source: Google AI Blog
-   - Keyword: how to build google ai blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. GitHub recognized as a Leader in the Gartner® Magic Quadrant™ for Enterprise AI Coding Agents for the third year in a row: What It Means for AI/CS Students
-   - Source: GitHub Blog
-   - Keyword: how to build github blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Specialization Beats Scale: A Strategic Variable Most AI Procurement Decisions Overlook: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: ai cs update for students hugging face blog
+1. Stellar Age Compression Reshapes Interpretations of the Milky Way Thick-Disk Formation History: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Text Degeneration: A Production Failure Mode That Most Benchmarks Do Not Track: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: best ai model benchmark for students hugging face blog
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-6. One-Way Policy Optimization for Self-Evolving LLMs: What It Means for AI/CS Students
+2. Parameterized Complexity of Stationarity Testing for Piecewise-Affine Functions and Shallow CNN Losses: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. Order-Optimal Sequential 1-Bit Mean Estimation in General Tail Regimes: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. No Coin Left Behind: Maximizing Strategic Surplus Against No-Regret Dynamics: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Joint Model Parameter Scaling and Universal-Domain Data Integration for E-commerce Search Ranking: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+6. Learning Decision-Sufficient Representations for Linear Optimization: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -95,6 +95,7 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 0
-- No new drafts generated (existing coverage or no opportunities).
+- New drafts generated: 2
+- docs/agent/drafts/20260525--20260525-stellar-age-compression-reshapes-interpretations-of-the-milky-wa-592472ab.md
+- docs/agent/drafts/20260525--20260525-parameterized-complexity-of-stationarity-testing-for-piecewise-a-08f32266.md
 
