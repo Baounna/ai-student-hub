@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-25T10:59:25.913Z
+Generated: 2026-05-26T10:35:42.735Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Multimodal Crystal Flow: Any-to-Any Modality Generation for Unified Crystal Modeling: What It Means for AI/CS Students
+1. Attested Tool-Server Admission: A Security Extension to the Model Context Protocol: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. BarrierSteer: LLM Safety via Learning Barrier Steering: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. A Systematic Evaluation of Co-folding Model Representations for Small-Molecule Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Empowering 9-1-1 Calltaking Training with Generative AI: Experiences and Lessons Learned: What It Means for AI/CS Students
+2. Improving Labeling Consistency with Detailed Constitutional Definitions and AI-Driven Evaluation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. VI-CuRL: Stabilizing Verifier-Independent RL Reasoning via Confidence-Guided Variance Reduction: What It Means for AI/CS Students
+3. GIBLy: Improving 3D Semantic Segmentation through an Architecture-Agnostic Lightweight Geometric Inductive Bias Layer: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Beyond VLM-Based Rewards: Diffusion-Native Latent Reward Modeling: What It Means for AI/CS Students
+4. Unlocking Apple's Private Cloud Compute: An Analysis of Privacy-Preserving Artificial Intelligence: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Agent-ToM: Learning to Monitor Autonomous LLM Agents via Theory-of-Mind Reasoning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+6. Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260525--20260525-multimodal-crystal-flow-any-to-any-modality-generation-for-unifi-84058533.md
-- docs/agent/drafts/20260525--20260525-barriersteer-llm-safety-via-learning-barrier-steering-be5e553f.md
+- docs/agent/drafts/20260526--20260526-attested-tool-server-admission-a-security-extension-to-the-model-9eb82997.md
+- docs/agent/drafts/20260526--20260526-improving-labeling-consistency-with-detailed-constitutional-defi-87c07047.md
 
