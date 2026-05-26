@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-26T10:35:42.735Z
+Generated: 2026-05-26T10:37:22.633Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Attested Tool-Server Admission: A Security Extension to the Model Context Protocol: What It Means for AI/CS Students
+1. Squeezing Capacity from Multimodal Large Language Models for Subject-driven Generation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Improving Labeling Consistency with Detailed Constitutional Definitions and AI-Driven Evaluation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. GIBLy: Improving 3D Semantic Segmentation through an Architecture-Agnostic Lightweight Geometric Inductive Bias Layer: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Unlocking Apple's Private Cloud Compute: An Analysis of Privacy-Preserving Artificial Intelligence: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Agent-ToM: Learning to Monitor Autonomous LLM Agents via Theory-of-Mind Reasoning: What It Means for AI/CS Students
+2. Beyond Summaries: Structure-Aware Labeling of Code Changes with Large Language Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Towards Evaluation Engineering: An Empirical Study of ML Evaluation Harnesses in the Wild: What It Means for AI/CS Students
+3. Language Models Need Sleep: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. OrpQuant: Geometric Orthogonal Residual Projection for Multiplier-Free Power-of-Two Transformer Quantization: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Channel-wise Vector Quantization: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. StakeBench: Evaluating Language Understanding Grounded in Market Commitment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260526--20260526-attested-tool-server-admission-a-security-extension-to-the-model-9eb82997.md
-- docs/agent/drafts/20260526--20260526-improving-labeling-consistency-with-detailed-constitutional-defi-87c07047.md
+- docs/agent/drafts/20260526--20260526-squeezing-capacity-from-multimodal-large-language-models-for-sub-10c753aa.md
+- docs/agent/drafts/20260526--20260526-beyond-summaries-structure-aware-labeling-of-code-changes-with-l-4b64f5cf.md
 
