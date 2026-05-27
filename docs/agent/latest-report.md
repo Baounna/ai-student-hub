@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-26T10:37:22.633Z
+Generated: 2026-05-27T10:39:47.071Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Squeezing Capacity from Multimodal Large Language Models for Subject-driven Generation: What It Means for AI/CS Students
+1. Qiskit QuantumKatas: Adapting Microsoft's Quantum Computing exercises for LLM evaluation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Beyond Summaries: Structure-Aware Labeling of Code Changes with Large Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Language Models Need Sleep: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. OrpQuant: Geometric Orthogonal Residual Projection for Multiplier-Free Power-of-Two Transformer Quantization: What It Means for AI/CS Students
+2. TWIST: Closed-Loop token Synchronization for Application-Aware Wireless Digital Twins: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Channel-wise Vector Quantization: What It Means for AI/CS Students
+3. Generative Animations: A Multi-Model Pipeline for Prompt-Driven Motion Synthesis: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. StakeBench: Evaluating Language Understanding Grounded in Market Commitment: What It Means for AI/CS Students
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Learning When to Think While Listening in Large Audio-Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. FoundObj: Self-supervised Foundation Models as Rewards for Label-free 3D Object Segmentation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. An investigation of AI integration in sound designer workflows and experiences: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260526--20260526-squeezing-capacity-from-multimodal-large-language-models-for-sub-10c753aa.md
-- docs/agent/drafts/20260526--20260526-beyond-summaries-structure-aware-labeling-of-code-changes-with-l-4b64f5cf.md
+- docs/agent/drafts/20260527--20260527-qiskit-quantumkatas-adapting-microsofts-quantum-computing-exerci-3ca362fd.md
+- docs/agent/drafts/20260527--20260527-twist-closed-loop-token-synchronization-for-application-aware-wi-7257f45e.md
 
