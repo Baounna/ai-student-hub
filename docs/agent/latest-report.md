@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-27T10:39:47.071Z
+Generated: 2026-05-27T10:41:57.656Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Qiskit QuantumKatas: Adapting Microsoft's Quantum Computing exercises for LLM evaluation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. TWIST: Closed-Loop token Synchronization for Application-Aware Wireless Digital Twins: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+1. A PAC-Bayesian View of Generalisation for Physics-Informed Machine Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Generative Animations: A Multi-Model Pipeline for Prompt-Driven Motion Synthesis: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+2. QAM-W: Joint 2D Codebook Quantization for LLM Weights via Hadamard Rotation and Activation-Aware Scaling: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Learning When to Think While Listening in Large Audio-Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+3. Reparametrizing Shampoo and SOAP for Subspace Basis Updates and BFloat16 Storage: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. FoundObj: Self-supervised Foundation Models as Rewards for Label-free 3D Object Segmentation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+4. MULTISEISMO: A Multimodal Seismic Dataset and Model for Cross-Modal Seismic Understanding: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. An investigation of AI integration in sound designer workflows and experiences: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+5. Classification and detection of multiple UAVs using rational Gaussian wavelet neural networks: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Dynamic Link Prediction with Temporally Enhanced Signed Graph Neural Networks: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260527--20260527-qiskit-quantumkatas-adapting-microsofts-quantum-computing-exerci-3ca362fd.md
-- docs/agent/drafts/20260527--20260527-twist-closed-loop-token-synchronization-for-application-aware-wi-7257f45e.md
+- docs/agent/drafts/20260527--20260527-a-pac-bayesian-view-of-generalisation-for-physics-informed-machi-b2bb9ba5.md
+- docs/agent/drafts/20260527--20260527-qam-w-joint-2d-codebook-quantization-for-llm-weights-via-hadamar-c49aa27b.md
 
