@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-27T10:41:57.656Z
+Generated: 2026-05-28T10:39:32.309Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. A PAC-Bayesian View of Generalisation for Physics-Informed Machine Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. Simulation-Informed Diffusion for Decentralized Multi-robot Motion Planning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. QAM-W: Joint 2D Codebook Quantization for LLM Weights via Hadamard Rotation and Activation-Aware Scaling: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Reparametrizing Shampoo and SOAP for Subspace Basis Updates and BFloat16 Storage: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. MULTISEISMO: A Multimodal Seismic Dataset and Model for Cross-Modal Seismic Understanding: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Classification and detection of multiple UAVs using rational Gaussian wavelet neural networks: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+2. Tensor Memory: Fixed-Size Recurrent State for Long-Horizon Transformers: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Dynamic Link Prediction with Temporally Enhanced Signed Graph Neural Networks: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. Backdoor Attacks on Fault Detection and Localization in Cyber-Physical Systems: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Aligning LLMs with Human Uncertainty: A Beta-Bernoulli Calibrator for LLM Forecasting: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. How the Optimizer Shapes Learned Solutions in Equivariant Neural Networks: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Transferable Reinforcement Learning via Probabilistic Latent Embeddings and Dynamic Policy Adaptation for Sim-to-Real Deployment: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260527--20260527-a-pac-bayesian-view-of-generalisation-for-physics-informed-machi-b2bb9ba5.md
-- docs/agent/drafts/20260527--20260527-qam-w-joint-2d-codebook-quantization-for-llm-weights-via-hadamar-c49aa27b.md
+- docs/agent/drafts/20260528--20260528-simulation-informed-diffusion-for-decentralized-multi-robot-moti-b9dadb51.md
+- docs/agent/drafts/20260528--20260528-tensor-memory-fixed-size-recurrent-state-for-long-horizon-transf-1aee8dc5.md
 
