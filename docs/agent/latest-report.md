@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-28T10:39:32.309Z
+Generated: 2026-05-28T10:41:43.339Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Simulation-Informed Diffusion for Decentralized Multi-robot Motion Planning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Tensor Memory: Fixed-Size Recurrent State for Long-Horizon Transformers: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Backdoor Attacks on Fault Detection and Localization in Cyber-Physical Systems: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Aligning LLMs with Human Uncertainty: A Beta-Bernoulli Calibrator for LLM Forecasting: What It Means for AI/CS Students
+1. A Sheaf-Theoretic and Topological Perspective on Complex Network Modeling and Attention Mechanisms in Graph Neural Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. How the Optimizer Shapes Learned Solutions in Equivariant Neural Networks: What It Means for AI/CS Students
+2. NCSAM Noise-Compensated Sharpness-Aware Minimization for Noisy Label Learning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Transferable Reinforcement Learning via Probabilistic Latent Embeddings and Dynamic Policy Adaptation for Sim-to-Real Deployment: What It Means for AI/CS Students
+3. The Grammar of Transformers: A Systematic Review of Interpretability Research on Syntactic Knowledge in Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Do readers prefer AI-generated Italian short stories?: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+6. Teaching and Evaluating LLMs to Reason About Polymer Design Related Tasks: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260528--20260528-simulation-informed-diffusion-for-decentralized-multi-robot-moti-b9dadb51.md
-- docs/agent/drafts/20260528--20260528-tensor-memory-fixed-size-recurrent-state-for-long-horizon-transf-1aee8dc5.md
+- docs/agent/drafts/20260528--20260528-a-sheaf-theoretic-and-topological-perspective-on-complex-network-620fd2e7.md
+- docs/agent/drafts/20260528--20260528-ncsam-noise-compensated-sharpness-aware-minimization-for-noisy-l-19ce91fc.md
 
