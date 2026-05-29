@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-28T10:41:43.339Z
+Generated: 2026-05-29T10:32:20.688Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. A Sheaf-Theoretic and Topological Perspective on Complex Network Modeling and Attention Mechanisms in Graph Neural Models: What It Means for AI/CS Students
+1. Inform, Coach, Relate, Listen: Auditing LLM Caregiving Support Roles: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. NCSAM Noise-Compensated Sharpness-Aware Minimization for Noisy Label Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. The Grammar of Transformers: A Systematic Review of Interpretability Research on Syntactic Knowledge in Language Models: What It Means for AI/CS Students
+2. SciIntBench: Measuring LLM Compliance with Research Integrity Norms Under Adversarial Framing: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation: What It Means for AI/CS Students
+3. Composing Non-Conjugate Factor Graphs with Closed-Form Variational Inference: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Do readers prefer AI-generated Italian short stories?: What It Means for AI/CS Students
+4. Honest Lying: Understanding Memory Confabulation in Reflexive Agents: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Teaching and Evaluating LLMs to Reason About Polymer Design Related Tasks: What It Means for AI/CS Students
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Benchmarking Large Vision-Language Models on CFMME: A Comprehensive Chinese Financial Multimodal Evaluation Dataset: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+6. Adaptive Interviewing for Persona Simulation in LLMs: Evidence-Grounded Reasoning Improves Decision Alignment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260528--20260528-a-sheaf-theoretic-and-topological-perspective-on-complex-network-620fd2e7.md
-- docs/agent/drafts/20260528--20260528-ncsam-noise-compensated-sharpness-aware-minimization-for-noisy-l-19ce91fc.md
+- docs/agent/drafts/20260529--20260529-inform-coach-relate-listen-auditing-llm-caregiving-support-roles-76e98789.md
+- docs/agent/drafts/20260529--20260529-sciintbench-measuring-llm-compliance-with-research-integrity-nor-0b89d90c.md
 
