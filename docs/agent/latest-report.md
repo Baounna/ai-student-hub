@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-30T09:01:30.540Z
+Generated: 2026-05-30T09:04:33.945Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260530--20260529-take-our-io-2026-quiz-vibe-coded-in-google-ai-studio-944dd86b.md
-- docs/agent/drafts/20260530--20260529-9-demos-of-gemini-omni-and-gemini-35-in-action-bf7abda6.md
+- docs/agent/drafts/20260530--20260529-check-out-real-life-ai-prototypes-from-the-futures-lab-daac52c1.md
+- docs/agent/drafts/20260530--20260529-boston-childrens-uses-ai-to-unlock-new-diagnoses-e63fa88b.md
 
