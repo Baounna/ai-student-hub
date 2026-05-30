@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-29T10:34:32.254Z
+Generated: 2026-05-30T09:01:30.540Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. S-MARC: Causal Streaming Reasoning for Full-Duplex Conversational Behavior Modeling: What It Means for AI/CS Students
+1. Take our I/O 2026 quiz, vibe coded in Google AI Studio.: What It Means for AI/CS Students
+   - Source: Google AI Blog
+   - Keyword: how to build google ai blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. 9 demos of Gemini Omni and Gemini 3.5 in action: What It Means for AI/CS Students
+   - Source: Google AI Blog
+   - Keyword: how to build google ai blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Check out real-life AI prototypes from the Futures Lab.: What It Means for AI/CS Students
+   - Source: Google AI Blog
+   - Keyword: how to build google ai blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Boston Children’s uses AI to unlock new diagnoses: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. How Braintrust turns customer requests into code with Codex: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Adaptive Interviewing for Persona Simulation in LLMs: Evidence-Grounded Reasoning Improves Decision Alignment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Less is Enough: Synthesizing Diverse Data in LLM Feature Space with Sparse Autoencoders: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. PipeMFL-240K: A Large-scale Dataset and Benchmark for Object Detection in Pipeline Magnetic Flux Leakage Imaging: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-4. Scaling Small Agents Through Strategy Auctions: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Good SFT Optimizes for SFT, Better SFT Prepares for Reinforcement Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Learn from A Rationalist: Distilling Intermediate Interpretable Rationales: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260529--20260529-s-marc-causal-streaming-reasoning-for-full-duplex-conversational-86521828.md
-- docs/agent/drafts/20260529--20260529-less-is-enough-synthesizing-diverse-data-in-llm-feature-space-wi-97701960.md
+- docs/agent/drafts/20260530--20260529-take-our-io-2026-quiz-vibe-coded-in-google-ai-studio-944dd86b.md
+- docs/agent/drafts/20260530--20260529-9-demos-of-gemini-omni-and-gemini-35-in-action-bf7abda6.md
 
