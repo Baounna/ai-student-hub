@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-31T09:35:25.124Z
+Generated: 2026-05-31T09:37:16.832Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -95,7 +95,6 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 2
-- docs/agent/drafts/20260531--20260529-how-braintrust-turns-customer-requests-into-code-with-codex-507ec0fd.md
-- docs/agent/drafts/20260531--20260529-adaptive-interviewing-for-persona-simulation-in-llms-evidence-gr-d4f24ccd.md
+- New drafts generated: 0
+- No new drafts generated (existing coverage or no opportunities).
 
