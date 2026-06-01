@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-01T12:19:04.372Z
+Generated: 2026-06-01T12:21:03.403Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,31 +45,31 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: how to build hugging face blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Debate with Images: Detecting Deceptive Behaviors in Multimodal Large Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. HERMES: Towards Efficient and Verifiable Mathematical Reasoning in LLMs: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Post-Training LLMs as Better Decision-Making Agents: A Regret-Minimization Approach: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. SAC-Opt: Semantic Anchors for Iterative Correction in Optimization Modeling: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. ReTabAD: A Benchmark for Restoring Semantic Context in Tabular Anomaly Detection: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
+2. The Challenges of Using Reinforcement Learning for Controlling Industrial Energy Systems: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. UniRTL: Unifying Code and Graph for Robust RTL Representation Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Multi-Scale Separable Fourier Neural Networks for Solving High-Frequency PDEs: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Augmented Lagrangian Predictive Coding: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. An Efficient and Scalable Graph Condensation with Structure-Preserving: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260601--20260601-welcome-nvidia-cosmos-3-the-first-open-omni-model-for-physical-a-7c8c63c4.md
-- docs/agent/drafts/20260601--20260601-debate-with-images-detecting-deceptive-behaviors-in-multimodal-l-1e62640d.md
+- docs/agent/drafts/20260601--20260601-the-challenges-of-using-reinforcement-learning-for-controlling-i-93df4672.md
+- docs/agent/drafts/20260601--20260601-unirtl-unifying-code-and-graph-for-robust-rtl-representation-lea-6ac786bc.md
 
