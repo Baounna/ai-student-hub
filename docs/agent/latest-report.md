@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-05-31T09:37:16.832Z
+Generated: 2026-06-01T12:19:04.372Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Take our I/O 2026 quiz, vibe coded in Google AI Studio.: What It Means for AI/CS Students
-   - Source: Google AI Blog
-   - Keyword: how to build google ai blog
+1. Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: how to build hugging face blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. 9 demos of Gemini Omni and Gemini 3.5 in action: What It Means for AI/CS Students
-   - Source: Google AI Blog
-   - Keyword: how to build google ai blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Check out real-life AI prototypes from the Futures Lab.: What It Means for AI/CS Students
-   - Source: Google AI Blog
-   - Keyword: how to build google ai blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Boston Children’s uses AI to unlock new diagnoses: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. How Braintrust turns customer requests into code with Codex: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Adaptive Interviewing for Persona Simulation in LLMs: Evidence-Grounded Reasoning Improves Decision Alignment: What It Means for AI/CS Students
+2. Debate with Images: Detecting Deceptive Behaviors in Multimodal Large Language Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+3. HERMES: Towards Efficient and Verifiable Mathematical Reasoning in LLMs: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Post-Training LLMs as Better Decision-Making Agents: A Regret-Minimization Approach: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. SAC-Opt: Semantic Anchors for Iterative Correction in Optimization Modeling: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. ReTabAD: A Benchmark for Restoring Semantic Context in Tabular Anomaly Detection: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -95,6 +95,7 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 0
-- No new drafts generated (existing coverage or no opportunities).
+- New drafts generated: 2
+- docs/agent/drafts/20260601--20260601-welcome-nvidia-cosmos-3-the-first-open-omni-model-for-physical-a-7c8c63c4.md
+- docs/agent/drafts/20260601--20260601-debate-with-images-detecting-deceptive-behaviors-in-multimodal-l-1e62640d.md
 
