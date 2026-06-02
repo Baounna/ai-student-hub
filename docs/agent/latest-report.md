@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-01T12:21:03.403Z
+Generated: 2026-06-02T11:06:50.342Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
+1. Time-Aware Diffusion based on Preference Disentanglement for Generative Recommendation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. DOT-MoE: Differentiable Optimal Transport for MoEfication: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. MINTS: Minimalist Thompson Sampling: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Easier to Mislead Than to Correct: Harmful and Beneficial Revision in LLM Conformity: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. The Challenges of Using Reinforcement Learning for Controlling Industrial Energy Systems: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. UniRTL: Unifying Code and Graph for Robust RTL Representation Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Multi-Scale Separable Fourier Neural Networks for Solving High-Frequency PDEs: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Augmented Lagrangian Predictive Coding: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. An Efficient and Scalable Graph Condensation with Structure-Preserving: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+5. AlphaToken: Decoupling Adaptation and Stability for Path-Aware Response Token Valuation in LLM Post-Training: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. E4GEN: Event-level Explainable Extreme-Enhanced Time-series Generation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260601--20260601-the-challenges-of-using-reinforcement-learning-for-controlling-i-93df4672.md
-- docs/agent/drafts/20260601--20260601-unirtl-unifying-code-and-graph-for-robust-rtl-representation-lea-6ac786bc.md
+- docs/agent/drafts/20260602--20260602-time-aware-diffusion-based-on-preference-disentanglement-for-gen-b245a1b0.md
+- docs/agent/drafts/20260602--20260602-dot-moe-differentiable-optimal-transport-for-moefication-5af3645c.md
 
