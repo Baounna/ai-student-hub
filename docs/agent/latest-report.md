@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-02T11:06:50.342Z
+Generated: 2026-06-02T11:07:55.719Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Time-Aware Diffusion based on Preference Disentanglement for Generative Recommendation: What It Means for AI/CS Students
+1. Automatically Differentiable Nonlinear Tensor Networks (ADNTNs) for Exponential Compression of Deep Neural Networks: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. DOT-MoE: Differentiable Optimal Transport for MoEfication: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. MINTS: Minimalist Thompson Sampling: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Easier to Mislead Than to Correct: Harmful and Beneficial Revision in LLM Conformity: What It Means for AI/CS Students
+2. A Shared Valence Axis Across Modern LLMs and Human EEG: The Saturation Regularity: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. AlphaToken: Decoupling Adaptation and Stability for Path-Aware Response Token Valuation in LLM Post-Training: What It Means for AI/CS Students
+3. Multimodal Music Recommendation System using LLMs: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. E4GEN: Event-level Explainable Extreme-Enhanced Time-series Generation: What It Means for AI/CS Students
+4. CardioLens: Revealing the Clinical Reality Gap of MLLMs via Multi-Sequence Cardiac MRI Evaluations: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Versatile Framework with Semantic and Structural guidance for Image Reconstruction from Brain Activity: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+6. SpikeWFM: Spiking-Aided Wireless Foundation Model for Robust Channel Prediction: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260602--20260602-time-aware-diffusion-based-on-preference-disentanglement-for-gen-b245a1b0.md
-- docs/agent/drafts/20260602--20260602-dot-moe-differentiable-optimal-transport-for-moefication-5af3645c.md
+- docs/agent/drafts/20260602--20260602-automatically-differentiable-nonlinear-tensor-networks-adntns-fo-c26e8bee.md
+- docs/agent/drafts/20260602--20260602-a-shared-valence-axis-across-modern-llms-and-human-eeg-the-satur-b1da547c.md
 
