@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-03T11:29:55.630Z
+Generated: 2026-06-03T11:31:55.542Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. FGRPO: Federated GRPO with Adaptive Aggregation on Non-IID Data: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. VidMsg: A Benchmark for Implicit Message Inference in Short Videos: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+2. AnchorMoE: Interpretable Time Series Classification via Anchor-Routed MoE: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Learning to Solve, Forgetting to Retain: Correct-Set Turnover in RLVR: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. Building Reliable Long-Form Generation via Hallucination Rejection Sampling: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Multi-component Causal Tracing in Large Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. RMPrior: Bridging Propagation Priors and Diffusion Refinement for Efficient Radio Map Construction: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+4. TurtleAI: Benchmarking Multimodal Models for Visual Programming in Turtle Graphics: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+5. Physics-Guided Policy Optimization with Self-Distillation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. What Do Students Learn? A Feature-Level Analysis of Dark Knowledge: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Will Accurate Fields Mislead Photonic Design? FromGlobal Accuracy to Port Readout: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+6. Exploiting Verification-Generation Gap: Test-Time Reinforcement Learning with Confidence-Conditioned Verification: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260603--20260603-fgrpo-federated-grpo-with-adaptive-aggregation-on-non-iid-data-54ce3c20.md
-- docs/agent/drafts/20260603--20260603-learning-to-solve-forgetting-to-retain-correct-set-turnover-in-r-64363134.md
+- docs/agent/drafts/20260603--20260603-vidmsg-a-benchmark-for-implicit-message-inference-in-short-video-2f58b6d4.md
+- docs/agent/drafts/20260603--20260603-anchormoe-interpretable-time-series-classification-via-anchor-ro-f64b9581.md
 
