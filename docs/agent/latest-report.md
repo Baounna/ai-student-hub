@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-03T11:31:55.542Z
+Generated: 2026-06-04T10:27:25.420Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. VidMsg: A Benchmark for Implicit Message Inference in Short Videos: What It Means for AI/CS Students
+1. How Endava is redesigning software delivery around AI agents: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. LaVIDE: Language-Prompted Satellite Change Detection via Map-Image Alignment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-2. AnchorMoE: Interpretable Time Series Classification via Anchor-Routed MoE: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Building Reliable Long-Form Generation via Hallucination Rejection Sampling: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. TurtleAI: Benchmarking Multimodal Models for Visual Programming in Turtle Graphics: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-5. Physics-Guided Policy Optimization with Self-Distillation: What It Means for AI/CS Students
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. SSSD: Simply-Scalable Speculative Decoding: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Exploiting Verification-Generation Gap: Test-Time Reinforcement Learning with Confidence-Conditioned Verification: What It Means for AI/CS Students
+4. CounterFace: A Synthetic Face Dataset for Fine-Grained Counterfactual Evaluation of Face Recognition Systems: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+5. ChatSOP: An SOP-Guided MCTS Planning Framework for Controllable LLM Dialogue Agents: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Transformer-Based Autonomous Driving Models and Deployment-Oriented Compression: A Survey: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260603--20260603-vidmsg-a-benchmark-for-implicit-message-inference-in-short-video-2f58b6d4.md
-- docs/agent/drafts/20260603--20260603-anchormoe-interpretable-time-series-classification-via-anchor-ro-f64b9581.md
+- docs/agent/drafts/20260604--20260604-how-endava-is-redesigning-software-delivery-around-ai-agents-d0841d29.md
+- docs/agent/drafts/20260604--20260604-lavide-language-prompted-satellite-change-detection-via-map-imag-6c750d25.md
 
