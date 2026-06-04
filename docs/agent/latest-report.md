@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-04T10:27:25.420Z
+Generated: 2026-06-04T10:28:23.679Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,31 +45,31 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: how to build openai news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. LaVIDE: Language-Prompted Satellite Change Detection via Map-Image Alignment: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. SSSD: Simply-Scalable Speculative Decoding: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. Expert-Aware Refusal Steering: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. CounterFace: A Synthetic Face Dataset for Fine-Grained Counterfactual Evaluation of Face Recognition Systems: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+3. EpiFormer: Learning Antigen-Antibody Interactions for Epitope Prediction via Geometric Deep Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. ChatSOP: An SOP-Guided MCTS Planning Framework for Controllable LLM Dialogue Agents: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+4. veriFIRE: an Industrial Case Study in Verifying Consistency Properties for a DNN-Based Wildfire Detection System: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. UltraEP: Unleash MoE Training and Inference on Rack-Scale Nodes with Near-Optimal Load Balancing: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Transformer-Based Autonomous Driving Models and Deployment-Oriented Compression: A Survey: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+6. Optimal Transport Flow Matching by Design: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260604--20260604-how-endava-is-redesigning-software-delivery-around-ai-agents-d0841d29.md
-- docs/agent/drafts/20260604--20260604-lavide-language-prompted-satellite-change-detection-via-map-imag-6c750d25.md
+- docs/agent/drafts/20260604--20260604-expert-aware-refusal-steering-cdf300fe.md
+- docs/agent/drafts/20260604--20260604-epiformer-learning-antigen-antibody-interactions-for-epitope-pre-cceff3d2.md
 
