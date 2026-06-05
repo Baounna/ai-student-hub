@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-05T10:34:55.991Z
+Generated: 2026-06-05T10:36:15.437Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Learning to model pediatric asthma exacerbation from multiple risk factors: a case study in coastal Virginia: What It Means for AI/CS Students
+1. Your GFlowNet Secretly Learns an Optimal Transport Plan: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. Generative Criticality in Large Language Model Temperature Scaling: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. On the training of physics-informed neural operators for solving parametric partial differential equations: What It Means for AI/CS Students
+3. Tracing the Oracle: Improving Diffusion Timestep Scheduling for 3D CT Reconstruction: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Trust-Aware Predictive Emissions Monitoring for Gas Turbine Fleets with Limited Labelled Data: What It Means for AI/CS Students
+4. Design a Reliable LLM-Integrated Interface for Mortality Forecasting: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Non-Negative Matrix Factorization for Event Data: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Tight list replicability bounds via a novel sphere covering theorem: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Adaptive state-action abstractions via rate-distortion: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. A Sliced-Wasserstein Framework on Correlation Matrices for EEG Decoding: What It Means for AI/CS Students
+6. A Machine Learning-Based Framework for Discovering Huntington's Disease Stages: Integrating Graph Representation Learning and clustering to Uncover Progression Dynamics in Longitudinal Enroll-HD Dataset: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260605--20260605-learning-to-model-pediatric-asthma-exacerbation-from-multiple-ri-b6d7eedb.md
-- docs/agent/drafts/20260605--20260605-on-the-training-of-physics-informed-neural-operators-for-solving-9f68a82f.md
+- docs/agent/drafts/20260605--20260605-your-gflownet-secretly-learns-an-optimal-transport-plan-80410599.md
+- docs/agent/drafts/20260605--20260605-generative-criticality-in-large-language-model-temperature-scali-332f0f82.md
 
