@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-04T10:28:23.679Z
+Generated: 2026-06-05T10:34:55.991Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. How Endava is redesigning software delivery around AI agents: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Expert-Aware Refusal Steering: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. EpiFormer: Learning Antigen-Antibody Interactions for Epitope Prediction via Geometric Deep Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. veriFIRE: an Industrial Case Study in Verifying Consistency Properties for a DNN-Based Wildfire Detection System: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. UltraEP: Unleash MoE Training and Inference on Rack-Scale Nodes with Near-Optimal Load Balancing: What It Means for AI/CS Students
+1. Learning to model pediatric asthma exacerbation from multiple risk factors: a case study in coastal Virginia: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Optimal Transport Flow Matching by Design: What It Means for AI/CS Students
+2. On the training of physics-informed neural operators for solving parametric partial differential equations: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. Trust-Aware Predictive Emissions Monitoring for Gas Turbine Fleets with Limited Labelled Data: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Tight list replicability bounds via a novel sphere covering theorem: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Adaptive state-action abstractions via rate-distortion: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. A Sliced-Wasserstein Framework on Correlation Matrices for EEG Decoding: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260604--20260604-expert-aware-refusal-steering-cdf300fe.md
-- docs/agent/drafts/20260604--20260604-epiformer-learning-antigen-antibody-interactions-for-epitope-pre-cceff3d2.md
+- docs/agent/drafts/20260605--20260605-learning-to-model-pediatric-asthma-exacerbation-from-multiple-ri-b6d7eedb.md
+- docs/agent/drafts/20260605--20260605-on-the-training-of-physics-informed-neural-operators-for-solving-9f68a82f.md
 
