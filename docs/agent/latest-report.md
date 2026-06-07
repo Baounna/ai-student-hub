@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-06T09:12:44.945Z
+Generated: 2026-06-07T09:47:54.828Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. The Score Hamiltonian: Mapping Diffusion Models to Adiabatic Transport: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-2. Ontology-constrained multi-LLM scoring of hypothesis support in the predictive processing literature: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. Five labs, five minds: building a multi-model finance drama on small models: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: how to build hugging face blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Finite Element-Based Material Learning via Automatic Differentiation: Learning constitutive neural network models from full-field deformation data: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Temporal Preference Concepts and their Functions in a Large Language Model: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Assessing the Geographic Diversity of AI's Platial Representations in Image Generation: What It Means for AI/CS Students
+2. Job Searcher: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: ai cs update for students hugging face blog
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. When Surface Form Changes Moderation Decisions: A Paired Study of Code-Mixed Workflow Instability: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Geographic Bias and Diversity in AI Evaluation: What It Means for AI/CS Students
+4. Enhancing Software Engineering Through Closed-Loop Memory Optimization: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+5. When New Generators Arrive: Lifelong Machine-Generated Text Attribution via Ridge Feature Transfer: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. SlotGCG: Exploiting the Positional Vulnerability in LLMs for Jailbreak Attacks: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260606--20260606-the-score-hamiltonian-mapping-diffusion-models-to-adiabatic-tran-4a8c0658.md
-- docs/agent/drafts/20260606--20260606-ontology-constrained-multi-llm-scoring-of-hypothesis-support-in--9df2f19f.md
+- docs/agent/drafts/20260607--20260606-five-labs-five-minds-building-a-multi-model-finance-drama-on-sma-47468f27.md
+- docs/agent/drafts/20260607--20260606-job-searcher-bce955dc.md
 
