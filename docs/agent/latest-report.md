@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-07T09:50:08.390Z
+Generated: 2026-06-08T11:28:18.913Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Five labs, five minds: building a multi-model finance drama on small models: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
+1. Physics Guided Generative Optimization for Trotter Suzuki Decomposition: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. Implicit Neural Optimal Transport via Fixed-Point Optimization: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. Latent Geometry Beyond Search: Amortizing Planning in World Models: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Job Searcher: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: ai cs update for students hugging face blog
+4. Self-Supervised Learning for Android Malware Detection on a Time-Stamped Dataset: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. When Surface Form Changes Moderation Decisions: A Paired Study of Code-Mixed Workflow Instability: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+5. Characterization of Gaussian Universality Breakdown in High-Dimensional Empirical Risk Minimization: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Enhancing Software Engineering Through Closed-Loop Memory Optimization: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. When New Generators Arrive: Lifelong Machine-Generated Text Attribution via Ridge Feature Transfer: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. SlotGCG: Exploiting the Positional Vulnerability in LLMs for Jailbreak Attacks: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+6. The Dual Mechanisms of Spatial Variable Binding in Vision-Language Models: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260607--20260606-when-surface-form-changes-moderation-decisions-a-paired-study-of-c8b2a5bb.md
-- docs/agent/drafts/20260607--20260606-enhancing-software-engineering-through-closed-loop-memory-optimi-336a13bc.md
+- docs/agent/drafts/20260608--20260608-physics-guided-generative-optimization-for-trotter-suzuki-decomp-4a485b62.md
+- docs/agent/drafts/20260608--20260608-implicit-neural-optimal-transport-via-fixed-point-optimization-67ec6931.md
 
