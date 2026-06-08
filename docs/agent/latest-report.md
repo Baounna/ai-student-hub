@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-08T11:28:18.913Z
+Generated: 2026-06-08T11:30:07.007Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Physics Guided Generative Optimization for Trotter Suzuki Decomposition: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. Forecasting as Rendering: A 2D Gaussian Splatting Framework for Time Series Forecasting: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Implicit Neural Optimal Transport via Fixed-Point Optimization: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Latent Geometry Beyond Search: Amortizing Planning in World Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+2. TRUE: A Trustworthy Unified Explanation Framework for Large Language Model Reasoning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Self-Supervised Learning for Android Malware Detection on a Time-Stamped Dataset: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Characterization of Gaussian Universality Breakdown in High-Dimensional Empirical Risk Minimization: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. The Dual Mechanisms of Spatial Variable Binding in Vision-Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+3. Position: A Dynamical Systems Perspective is Needed to Advance Time Series Modeling: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+4. ScenicRules: An Autonomous Driving Benchmark with Multi-Objective Specifications and Abstract Scenarios: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+5. TokaMind: A Multi-Modal Transformer Foundation Model for Tokamak Plasma Dynamics: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Discovering Interpretable Algorithms by Decompiling Transformers to RASP: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260608--20260608-physics-guided-generative-optimization-for-trotter-suzuki-decomp-4a485b62.md
-- docs/agent/drafts/20260608--20260608-implicit-neural-optimal-transport-via-fixed-point-optimization-67ec6931.md
+- docs/agent/drafts/20260608--20260608-forecasting-as-rendering-a-2d-gaussian-splatting-framework-for-t-18d4433d.md
+- docs/agent/drafts/20260608--20260608-true-a-trustworthy-unified-explanation-framework-for-large-langu-7dcb2182.md
 
