@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-08T11:30:07.007Z
+Generated: 2026-06-09T10:10:33.454Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Forecasting as Rendering: A 2D Gaussian Splatting Framework for Time Series Forecasting: What It Means for AI/CS Students
+1. NeuroBait: I fine-tuned a model to spark dopamine for ADHD brain: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: how to build hugging face blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. Test-Time Adaptive Composition for Machine Learning as a Service (MLaaS) in IoT Environments: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. TRUE: A Trustworthy Unified Explanation Framework for Large Language Model Reasoning: What It Means for AI/CS Students
+3. Semantic Cache Distillation: Efficient State Transfer via Reuse and Selective Patching: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Position: A Dynamical Systems Perspective is Needed to Advance Time Series Modeling: What It Means for AI/CS Students
+5. Systematic LLM Translation of Legacy Scientific Code to Differentiable Frameworks: Application to a Land Surface Model: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. ScenicRules: An Autonomous Driving Benchmark with Multi-Objective Specifications and Abstract Scenarios: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-5. TokaMind: A Multi-Modal Transformer Foundation Model for Tokamak Plasma Dynamics: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Discovering Interpretable Algorithms by Decompiling Transformers to RASP: What It Means for AI/CS Students
+6. DOG-DPO:Dynamic Optimization in Geometry for Safety Alignment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260608--20260608-forecasting-as-rendering-a-2d-gaussian-splatting-framework-for-t-18d4433d.md
-- docs/agent/drafts/20260608--20260608-true-a-trustworthy-unified-explanation-framework-for-large-langu-7dcb2182.md
+- docs/agent/drafts/20260609--20260609-neurobait-i-fine-tuned-a-model-to-spark-dopamine-for-adhd-brain-4fb2c1ca.md
+- docs/agent/drafts/20260609--20260609-test-time-adaptive-composition-for-machine-learning-as-a-service-e3070081.md
 

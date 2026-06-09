@@ -1,34 +1,39 @@
 # AI Student Hub Agent Issue Sync
 
-Generated: 2026-06-08T12:10:55.815Z
+Generated: 2026-06-09T10:10:33.503Z
 Mode: dry-run
 Repository: Baounna/ai-student-hub
 Max issues per run: 3
 
 ## Queue Sources
-- Operator: enabled=NO | actions=0 | queue=docs/agent/next-actions.json
-  - Selected this run: 0
-- Design: enabled=YES | actions=0 | queue=docs/agent/design-actions.json
-  - Queue generated at: 2026-06-08T12:10:55.753Z
+- Operator: enabled=YES | actions=10 | queue=docs/agent/next-actions.json
+  - Queue generated at: 2026-06-09T10:10:33.454Z
+  - Selected this run: 3
+- Design: enabled=NO | actions=0 | queue=docs/agent/design-actions.json
   - Selected this run: 0
 
 ## Run Summary
 - Created: 0
 - Already open/tracked: 0
-- Dry-run candidates: 0
+- Dry-run candidates: 3
 - Errors: 0
 - Tracked total: 6
+
+## Dry-run
+- [Operator] [Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).
+- [Operator] [Operator P1] Cover missing affiliate placement: blog.
+- [Operator] [Operator P1] Cover missing affiliate placement: comparison.
 
 ## Tracked Actions
 - [Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).
   - Status: dry-run
-  - Last seen: 2026-06-08T11:30:07.100Z
+  - Last seen: 2026-06-09T10:10:33.503Z
 - [Operator P1] Cover missing affiliate placement: blog.
   - Status: dry-run
-  - Last seen: 2026-06-08T11:30:07.100Z
+  - Last seen: 2026-06-09T10:10:33.503Z
 - [Operator P1] Cover missing affiliate placement: comparison.
   - Status: dry-run
-  - Last seen: 2026-06-08T11:30:07.100Z
+  - Last seen: 2026-06-09T10:10:33.503Z
 - [Operator P1] Cover missing affiliate placement: home.
   - Status: dry-run
   - Last seen: 2026-06-08T11:30:07.100Z
