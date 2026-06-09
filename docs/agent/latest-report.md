@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-09T10:10:33.454Z
+Generated: 2026-06-09T10:23:55.101Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -45,31 +45,31 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: how to build hugging face blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Test-Time Adaptive Composition for Machine Learning as a Service (MLaaS) in IoT Environments: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Semantic Cache Distillation: Efficient State Transfer via Reuse and Selective Patching: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?: What It Means for AI/CS Students
+2. CT-VAM: A Cerebello-Thalamic-Inspired Vision-Action Model for Efficient Visuomotor Control: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Systematic LLM Translation of Legacy Scientific Code to Differentiable Frameworks: Application to a Land Surface Model: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. DOG-DPO:Dynamic Optimization in Geometry for Safety Alignment: What It Means for AI/CS Students
+3. Safe-RULE: Safe Reinforcement UnLEarning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+4. FuseFSS: Efficient Secure LLM Inference with Function Secret Sharing: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. SecureClaw: Clawing Back Control of LLM Agents: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Model Poisoning Against Federated Model Adaptation with Chain of Bit-Flips: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260609--20260609-neurobait-i-fine-tuned-a-model-to-spark-dopamine-for-adhd-brain-4fb2c1ca.md
-- docs/agent/drafts/20260609--20260609-test-time-adaptive-composition-for-machine-learning-as-a-service-e3070081.md
+- docs/agent/drafts/20260609--20260609-ct-vam-a-cerebello-thalamic-inspired-vision-action-model-for-eff-13cbe4d3.md
+- docs/agent/drafts/20260609--20260609-safe-rule-safe-reinforcement-unlearning-d8727c83.md
 
