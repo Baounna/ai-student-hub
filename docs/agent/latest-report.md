@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-10T10:42:53.015Z
+Generated: 2026-06-10T10:43:54.665Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Flow-DPPO: Divergence Proximal Policy Optimization for Flow Matching Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+1. Spatial-Omni: Spatial Audio Understanding Integration in Multimodal LLMs via FOA Encoding: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Data-Driven Runway and Taxiway Exits Prediction of Landing Aircraft: A Case Study at Hartsfield-Jackson Atlanta International Airport: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Learning Doubly Sparse Explicitly Conditioned Transforms: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Population-Aware Physics-Informed Neural Particle Flow for Bayesian Update: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Express Language Modeling: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+2. Detecting Knowledge Gaps from Conversational AI Interactions Using Curriculum Prerequisite Graphs: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. A Systematic Approach for Selecting Trajectories for Data Augmentation: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. Transformer Based Model for Spatiotemporal Feature Learning in EEG Emotion Recognition: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Attention Expansion: Enhancing Keyphrase Extraction from Long Documents with Attention-Augmented Contextualized Embeddings: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+5. ++nnU-Net: Scaling nnU-Net with Prefix-Based Data Augmentation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Effective Reinforcement Learning for Agentic Search by Recycling Zero-Variance Queries During Training: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260610--20260610-flow-dppo-divergence-proximal-policy-optimization-for-flow-match-feee082b.md
-- docs/agent/drafts/20260610--20260610-data-driven-runway-and-taxiway-exits-prediction-of-landing-aircr-a42fee55.md
+- docs/agent/drafts/20260610--20260610-spatial-omni-spatial-audio-understanding-integration-in-multimod-a51173f0.md
+- docs/agent/drafts/20260610--20260610-detecting-knowledge-gaps-from-conversational-ai-interactions-usi-f0bdddb9.md
 
