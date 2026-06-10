@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-09T10:23:55.101Z
+Generated: 2026-06-10T10:42:53.015Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. NeuroBait: I fine-tuned a model to spark dopamine for ADHD brain: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
+1. Flow-DPPO: Divergence Proximal Policy Optimization for Flow Matching Models: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. CT-VAM: A Cerebello-Thalamic-Inspired Vision-Action Model for Efficient Visuomotor Control: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Safe-RULE: Safe Reinforcement UnLEarning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. Data-Driven Runway and Taxiway Exits Prediction of Landing Aircraft: A Case Study at Hartsfield-Jackson Atlanta International Airport: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. FuseFSS: Efficient Secure LLM Inference with Function Secret Sharing: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+3. Learning Doubly Sparse Explicitly Conditioned Transforms: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Population-Aware Physics-Informed Neural Particle Flow for Bayesian Update: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Express Language Modeling: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. SecureClaw: Clawing Back Control of LLM Agents: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Model Poisoning Against Federated Model Adaptation with Chain of Bit-Flips: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+6. A Systematic Approach for Selecting Trajectories for Data Augmentation: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260609--20260609-ct-vam-a-cerebello-thalamic-inspired-vision-action-model-for-eff-13cbe4d3.md
-- docs/agent/drafts/20260609--20260609-safe-rule-safe-reinforcement-unlearning-d8727c83.md
+- docs/agent/drafts/20260610--20260610-flow-dppo-divergence-proximal-policy-optimization-for-flow-match-feee082b.md
+- docs/agent/drafts/20260610--20260610-data-driven-runway-and-taxiway-exits-prediction-of-landing-aircr-a42fee55.md
 
