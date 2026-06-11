@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-11T11:13:20.478Z
+Generated: 2026-06-11T11:14:51.519Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Vector Quantized Latent Concepts: A Scalable Alternative to Clustering-Based Concept Discovery: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+1. A Physics-Inspired Optimizer: Velocity Regularized Adam: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. AI4SLT: Empirical Processes in Lean 4 for Formal Statistical Learning Theory: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+2. The Unreasonable Effectiveness of Discrete-Time Gaussian Process Mixtures for Robot Policy Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Prediction-Powered Risk Monitoring of Deployed Models for Detecting Harmful Distribution Shifts: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Open Materials Generation with Inference-Time Reinforcement Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. FOCUS: DLLMs Know How to Tame Their Compute Bound: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Robustness of Mixtures of Experts to Feature Noise: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. Erased but Not Forgotten: How Backdoors Compromise Concept Erasure: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+4. FOCUS on Contamination: Hydrology-Informed Noise-Aware Learning for Geospatial PFAS Mapping: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. LSTM based IoT Device Identification: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. WeaveBench: A Long-Horizon, Real-World Benchmark for Computer-Use Agents with Hybrid Interfaces: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260611--20260611-vector-quantized-latent-concepts-a-scalable-alternative-to-clust-b006ab7c.md
-- docs/agent/drafts/20260611--20260611-ai4slt-empirical-processes-in-lean-4-for-formal-statistical-lear-6af13468.md
+- docs/agent/drafts/20260611--20260611-a-physics-inspired-optimizer-velocity-regularized-adam-5e0f13ed.md
+- docs/agent/drafts/20260611--20260611-the-unreasonable-effectiveness-of-discrete-time-gaussian-process-f8852284.md
 
