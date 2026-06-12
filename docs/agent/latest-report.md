@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-12T10:51:03.421Z
+Generated: 2026-06-12T10:52:23.301Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Adv-TGD: Adversarial Text-Guided Diffusion for Face Recognition Impersonation Attacks: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. When is Your LLM Steerable?: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+1. Agents' Last Exam: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Enhancing Spectral Embedding through Robust and Flexible Knowledge Transfer in Electronic Health Records: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+2. What Type of Inference is Active Inference?: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Privacy-Preserving Federated Autoencoder for ECG Anomaly Detection on Edge Devices: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+3. Parthenon Law: A Self-Evolving Legal-Agent Framework: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. End-to-End Machine Learning for Depressive State Classification via EEG and fNIRS: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+4. Interaction-Centered Intelligence: Toward an Interaction-Based Theory of Human-AI Co-Creation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Teaching Diffusion to Speculate Left-to-Right: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+5. Intelligence as Managed Autonomy: Failure, Escalation, and Governance for Agentic AI Systems: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. Entropy-Gradient Inversion: Moving Toward Internal Mechanism of Large Reasoning Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260612--20260612-adv-tgd-adversarial-text-guided-diffusion-for-face-recognition-i-4315e8c7.md
-- docs/agent/drafts/20260612--20260612-when-is-your-llm-steerable-1248e5ef.md
+- docs/agent/drafts/20260612--20260612-agents-last-exam-903029d9.md
+- docs/agent/drafts/20260612--20260612-what-type-of-inference-is-active-inference-56feb9b6.md
 
