@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-12T10:52:23.301Z
+Generated: 2026-06-13T09:44:09.044Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,26 +40,26 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Agents' Last Exam: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. What Type of Inference is Active Inference?: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Parthenon Law: A Self-Evolving Legal-Agent Framework: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Interaction-Centered Intelligence: Toward an Interaction-Based Theory of Human-AI Co-Creation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+1. How we made GitHub Copilot CLI more selective about delegation: What It Means for AI/CS Students
+   - Source: GitHub Blog
+   - Keyword: ai cs update for students github blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+2. olmo-eval: An evaluation workbench for the model development loop: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: how to build hugging face blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Scaling Security Insights: how we achieved a 10x increase in global scanning capacity: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: ai cs update for students cloudflare blog
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. New OpenAI Academy courses for the next era of work: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 5. Intelligence as Managed Autonomy: Failure, Escalation, and Governance for Agentic AI Systems: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260612--20260612-agents-last-exam-903029d9.md
-- docs/agent/drafts/20260612--20260612-what-type-of-inference-is-active-inference-56feb9b6.md
+- docs/agent/drafts/20260613--20260612-how-we-made-github-copilot-cli-more-selective-about-delegation-05195255.md
+- docs/agent/drafts/20260613--20260612-olmo-eval-an-evaluation-workbench-for-the-model-development-loop-80b8efd8.md
 
