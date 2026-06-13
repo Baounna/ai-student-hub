@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-13T09:44:09.044Z
+Generated: 2026-06-13T09:45:52.885Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260613--20260612-how-we-made-github-copilot-cli-more-selective-about-delegation-05195255.md
-- docs/agent/drafts/20260613--20260612-olmo-eval-an-evaluation-workbench-for-the-model-development-loop-80b8efd8.md
+- docs/agent/drafts/20260613--20260612-scaling-security-insights-how-we-achieved-a-10x-increase-in-glob-9fe2cb91.md
+- docs/agent/drafts/20260613--20260612-new-openai-academy-courses-for-the-next-era-of-work-e17db838.md
 
