@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-14T10:05:24.818Z
+Generated: 2026-06-14T10:15:33.736Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -95,7 +95,6 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 2
-- docs/agent/drafts/20260614--20260612-intelligence-as-managed-autonomy-failure-escalation-and-governan-9336489a.md
-- docs/agent/drafts/20260614--20260612-entropy-gradient-inversion-moving-toward-internal-mechanism-of-l-b7ad5f29.md
+- New drafts generated: 0
+- No new drafts generated (existing coverage or no opportunities).
 
