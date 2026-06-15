@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-15T12:51:20.998Z
+Generated: 2026-06-15T12:53:42.978Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Rotation-Invariant Spherical Watermarking via Third-Order SO(3) Representation Coupling: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Catching magnetic resonance imaging outliers in artificial intelligence-supported radiotherapy workflows: unsupervised detection and localization of image anomalies using deep learning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. Manga109-v2026: Revisiting Manga109 Annotations for Modern Manga Understanding: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. Exact Linear Attention: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. The Insurability Frontier of AI Risk: Mapping Threats to Affirmative Coverage, Silent Exposures, and Exclusions: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. Multimodal Speaker Identification in Classroom Environments: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. EmoMind: Decoding Affective Captions from Human Brain fMRI: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. Incentives Of EdTech: A Systematic Review Of EduNLP Research: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
+3. Indirect Computing Model with Indirect Formal Method: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. AdaSR: Adaptive Streaming Reasoning with Hierarchical Relative Policy Optimization: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. CORA: Analyzing and bridging thinking-answer gap in Multimodal RLVR via Consistency-Oriented Reasoning Alignment: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260615--20260615-rotation-invariant-spherical-watermarking-via-third-order-so3-re-055b24b5.md
-- docs/agent/drafts/20260615--20260615-catching-magnetic-resonance-imaging-outliers-in-artificial-intel-aa4dfa52.md
+- docs/agent/drafts/20260615--20260615-multimodal-speaker-identification-in-classroom-environments-a8101d2b.md
+- docs/agent/drafts/20260615--20260615-incentives-of-edtech-a-systematic-review-of-edunlp-research-668ce6a5.md
 
