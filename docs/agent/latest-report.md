@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-14T10:15:33.736Z
+Generated: 2026-06-15T12:51:20.998Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. How we made GitHub Copilot CLI more selective about delegation: What It Means for AI/CS Students
-   - Source: GitHub Blog
-   - Keyword: ai cs update for students github blog
+1. Rotation-Invariant Spherical Watermarking via Third-Order SO(3) Representation Coupling: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. olmo-eval: An evaluation workbench for the model development loop: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. Scaling Security Insights: how we achieved a 10x increase in global scanning capacity: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: ai cs update for students cloudflare blog
+2. Catching magnetic resonance imaging outliers in artificial intelligence-supported radiotherapy workflows: unsupervised detection and localization of image anomalies using deep learning: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. New OpenAI Academy courses for the next era of work: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Intelligence as Managed Autonomy: Failure, Escalation, and Governance for Agentic AI Systems: What It Means for AI/CS Students
+3. Manga109-v2026: Revisiting Manga109 Annotations for Modern Manga Understanding: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. Exact Linear Attention: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. The Insurability Frontier of AI Risk: Mapping Threats to Affirmative Coverage, Silent Exposures, and Exclusions: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Entropy-Gradient Inversion: Moving Toward Internal Mechanism of Large Reasoning Models: What It Means for AI/CS Students
+6. EmoMind: Decoding Affective Captions from Human Brain fMRI: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -95,6 +95,7 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 0
-- No new drafts generated (existing coverage or no opportunities).
+- New drafts generated: 2
+- docs/agent/drafts/20260615--20260615-rotation-invariant-spherical-watermarking-via-third-order-so3-re-055b24b5.md
+- docs/agent/drafts/20260615--20260615-catching-magnetic-resonance-imaging-outliers-in-artificial-intel-aa4dfa52.md
 
