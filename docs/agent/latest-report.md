@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-15T12:53:42.978Z
+Generated: 2026-06-16T11:54:38.348Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Multimodal Speaker Identification in Classroom Environments: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+1. Constitutional Value Potentials: reading and steering internal priority margins in language models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Incentives Of EdTech: A Systematic Review Of EduNLP Research: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
+2. Let LLMs Judge Each Other: Multi-Agent Peer-Reviewed Reasoning for Medical Question Answering: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Few-Shot Biomedical Relation Extraction with Large Language Models: A Viable Alternative to Supervised Learning?: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. T-Mem: Memory That Anticipates, Not Archives: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Indirect Computing Model with Indirect Formal Method: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+5. CHILLGuard: Towards Fine-Grained Chinese LLM Safety Guardrail with Scalable Data Construction and Model-aware Preference Alignment: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. AdaSR: Adaptive Streaming Reasoning with Hierarchical Relative Policy Optimization: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: ai cs update for students arxiv cs.cl
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. CORA: Analyzing and bridging thinking-answer gap in Multimodal RLVR via Consistency-Oriented Reasoning Alignment: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition: What It Means for AI/CS Students
-   - Source: arXiv cs.CL
-   - Keyword: how to build arxiv cs.cl
+6. Not All Skills Help: Measuring and Repairing Agent Knowledge: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260615--20260615-multimodal-speaker-identification-in-classroom-environments-a8101d2b.md
-- docs/agent/drafts/20260615--20260615-incentives-of-edtech-a-systematic-review-of-edunlp-research-668ce6a5.md
+- docs/agent/drafts/20260616--20260616-constitutional-value-potentials-reading-and-steering-internal-pr-2cdeea71.md
+- docs/agent/drafts/20260616--20260616-let-llms-judge-each-other-multi-agent-peer-reviewed-reasoning-fo-0ba4fd0a.md
 
