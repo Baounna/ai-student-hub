@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-17T11:22:32.037Z
+Generated: 2026-06-17T11:23:08.040Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -50,26 +50,26 @@ Internal target: $10.00/month (private operator metric)
    - Keyword: ai cs update for students hugging face blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. SSIL: Self-Supervised Imitation Learning for End-to-End Driving: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+3. DeMix: Debugging Training Data with Mixed Data Error Types by Investigating Influence Vectors: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. MOSAIC: Modality-Specific Adaptation for Incremental Continual Learning in Parkinson's Disease Gait Assessment: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+4. Asynchronous Decentralized Federated Learning over Lossy Wireless Links via Reception- and Age-Aware Aggregation: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. Under What Conditions Can a Machine Be Called Genuinely Creative?: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-6. Reducing the Complexity of Deep Learning Models for EEG Analysis on Wearable Devices: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+5. From Observation to Intervention: A Causal Audit of Expert Importance in Mixture-of-Experts Models: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
+6. Weisfeiler Lehman Test on Combinatorial Complexes: Generalized Expressive Power of Topological Neural Networks: What It Means for AI/CS Students
+   - Source: arXiv cs.LG
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260617--20260617-from-the-hugging-face-hub-to-robot-hardware-with-strands-agents--c7b6e0d1.md
-- docs/agent/drafts/20260617--20260617-glm-52-built-for-long-horizon-tasks-64d6b4cb.md
+- docs/agent/drafts/20260617--20260617-demix-debugging-training-data-with-mixed-data-error-types-by-inv-1582d1ab.md
+- docs/agent/drafts/20260617--20260617-asynchronous-decentralized-federated-learning-over-lossy-wireles-c1e86c8b.md
 
