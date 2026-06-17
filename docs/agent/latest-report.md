@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-16T11:56:46.246Z
+Generated: 2026-06-17T11:22:32.037Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Early Diagnosis of Wasted Computation in Multi-Agent LLM Systems via Failure-Aware Observability: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: how to build hugging face blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Model-Native Computing Architecture: Envisioning Future System Architecture Through the Lens of Computer Architecture: What It Means for AI/CS Students
+2. GLM-5.2: Built for Long-Horizon Tasks: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: ai cs update for students hugging face blog
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+3. SSIL: Self-Supervised Imitation Learning for End-to-End Driving: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. SAAS: Self-Aware Reinforcement Learning for Over-Search Mitigation in Agentic Search: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+4. MOSAIC: Modality-Specific Adaptation for Incremental Continual Learning in Parkinson's Disease Gait Assessment: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Boosting Knowledge Graph Foundation Models via Enhanced Negative Sampling: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Under What Conditions Can a Machine Be Called Genuinely Creative?: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. MBABench: Evaluating LLM Agents on End-to-End Spreadsheet Tasks in Finance: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. LLM Jaggedness Unlocks Scientific Creativity: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Reducing the Complexity of Deep Learning Models for EEG Analysis on Wearable Devices: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260616--20260616-early-diagnosis-of-wasted-computation-in-multi-agent-llm-systems-c7d7dc57.md
-- docs/agent/drafts/20260616--20260616-model-native-computing-architecture-envisioning-future-system-ar-9b4579cb.md
+- docs/agent/drafts/20260617--20260617-from-the-hugging-face-hub-to-robot-hardware-with-strands-agents--c7b6e0d1.md
+- docs/agent/drafts/20260617--20260617-glm-52-built-for-long-horizon-tasks-64d6b4cb.md
 
