@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-17T11:23:08.040Z
+Generated: 2026-06-18T10:57:12.826Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
+1. IPSL-AID: Generative Diffusion Models for Climate Downscaling from Global to Regional Scales: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. GLM-5.2: Built for Long-Horizon Tasks: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: ai cs update for students hugging face blog
+2. A CEFR-Inspired Classification Framework with Fuzzy C-Means To Automate Assessment of Programming Skills in Scratch: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. DeMix: Debugging Training Data with Mixed Data Error Types by Investigating Influence Vectors: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+3. MemRerank: Preference Memory for Personalized Product Reranking: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. Asynchronous Decentralized Federated Learning over Lossy Wireless Links via Reception- and Age-Aware Aggregation: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
+4. A Convex Route to Thermoelasticity: Learning Internal Energy and Dissipation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. From Observation to Intervention: A Causal Audit of Expert Importance in Mixture-of-Experts Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+5. Something from Nothing: Data Augmentation for Robust Severity Level Estimation of Dysarthric Speech: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Speaker Verification with Speech-Aware LLMs: Evaluation and Augmentation: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Weisfeiler Lehman Test on Combinatorial Complexes: Generalized Expressive Power of Topological Neural Networks: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260617--20260617-demix-debugging-training-data-with-mixed-data-error-types-by-inv-1582d1ab.md
-- docs/agent/drafts/20260617--20260617-asynchronous-decentralized-federated-learning-over-lossy-wireles-c1e86c8b.md
+- docs/agent/drafts/20260618--20260618-ipsl-aid-generative-diffusion-models-for-climate-downscaling-fro-89231a6c.md
+- docs/agent/drafts/20260618--20260618-a-cefr-inspired-classification-framework-with-fuzzy-c-means-to-a-ac4844af.md
 
