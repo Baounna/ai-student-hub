@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-18T11:00:58.737Z
+Generated: 2026-06-19T11:06:05.743Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,32 +40,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. OmniPlan: An Adaptive Framework for Timely and Near-Optimal Network Planning Optimization: What It Means for AI/CS Students
+1. DisjunctiveNet: Neural Symbolic Learning via Differentiable Convexified Optimization Layers: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Qwen-RobotManip Technical Report: Alignment Unlocks Scale for Robotic Manipulation Foundation Models: What It Means for AI/CS Students
+2. Distributionally Robust Set Representation Learning Under Inference-Time Element Corruption: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: how to build arxiv cs.lg
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. A Bayesian Boolean Matrix Factorization with Application to Copy Number Analysis in Cancer: What It Means for AI/CS Students
+3. Mask-Morph Graph U-Net: A Generalisable Mesh-Based Surrogate for Crashworthiness Field Prediction under Large Geometric Variation: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. On the Memorization Behavior of LLMs in Generative Recommendation: Observations, Implications, and Training Strategies: What It Means for AI/CS Students
+4. Minimal Filling Architectures of Polynomial Neural Networks: Counterexamples, Frontier Search, and Defects: What It Means for AI/CS Students
    - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. GRACE-DS: a Guarded Reward-guided Agent Correction Environment in Data Science: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. Approximate Next Policy Sampling: Replacing Conservative Target Policy Updates in Deep RL: What It Means for AI/CS Students
    - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Graph Reinforcement Learning for Calibration-Aware Quantum Circuit Routing: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.lg
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Reversible Residual Normalization Alleviates Spatio-Temporal Distribution Shift: What It Means for AI/CS Students
    - Source: arXiv cs.LG
    - Keyword: ai cs update for students arxiv cs.lg
    - Monetization angle: student-focused practical summary
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260618--20260618-omniplan-an-adaptive-framework-for-timely-and-near-optimal-netwo-e12a6493.md
-- docs/agent/drafts/20260618--20260618-qwen-robotmanip-technical-report-alignment-unlocks-scale-for-rob-b7f3b1e3.md
+- docs/agent/drafts/20260619--20260619-disjunctivenet-neural-symbolic-learning-via-differentiable-conve-3a907d16.md
+- docs/agent/drafts/20260619--20260619-distributionally-robust-set-representation-learning-under-infere-6f72af6b.md
 
