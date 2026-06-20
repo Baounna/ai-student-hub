@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-19T11:07:32.126Z
+Generated: 2026-06-20T09:51:19.070Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Science Earth: Towards A Planet-Scale Operating System for AI-Native Scientific Discovery: What It Means for AI/CS Students
+1. Triangular Consistency as a Universal Constraint for Learning Optical Flow: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. VitalAgent: A Tool-Augmented Agent for Reactive and Proactive Physiological Monitoring over Wearable Health Data: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-3. FundaPod: A Multi-Persona Agent Pod Platform with Knowledge Graph Memory for AI-Assisted Fundamental Investment Research: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. ScaleWoB: Guiding GUI Agents with Coding Agents via Large-Scale Environmental Synthesis: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. CogniFold: Always-On Proactive Memory via Cognitive Folding: What It Means for AI/CS Students
+2. Speeding up the annotation process in semantic segmentation industrial applications: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Too long; didn't solve: What It Means for AI/CS Students
+3. Spatial-Aware Reduction Framework: Towards Efficient and Faithful Visual State Space Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Co-policy: Responsive Human-Robot Co-Creation for Musical Performances: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: best ai model benchmark for students arxiv cs.ai
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+5. Measuring Biological Capabilities and Risks of AI Agents: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. SL-S4Wave: Self-Supervised Learning of Physiological Waveforms with Structured State Space Models: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260619--20260619-science-earth-towards-a-planet-scale-operating-system-for-ai-nat-e65f0fb5.md
-- docs/agent/drafts/20260619--20260619-vitalagent-a-tool-augmented-agent-for-reactive-and-proactive-phy-973a1d2a.md
+- docs/agent/drafts/20260620--20260620-triangular-consistency-as-a-universal-constraint-for-learning-op-67f01ff2.md
+- docs/agent/drafts/20260620--20260620-speeding-up-the-annotation-process-in-semantic-segmentation-indu-2918559c.md
 
