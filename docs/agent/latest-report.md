@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-20T09:51:19.070Z
+Generated: 2026-06-20T09:52:56.514Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Triangular Consistency as a Universal Constraint for Learning Optical Flow: What It Means for AI/CS Students
+1. Emyx: Fast and efficient all-atom protein generation: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-2. Speeding up the annotation process in semantic segmentation industrial applications: What It Means for AI/CS Students
+2. Cost-Optimal LLM Routing with Limited User Feedback under User Satisfaction Guarantees: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Protein Representation Learning with Secondary-Structure and Energy-Filtered Hydrogen-Bond Graphs: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Spatial-Aware Reduction Framework: Towards Efficient and Faithful Visual State Space Models: What It Means for AI/CS Students
+4. cAPM: Continual AI-Assisted Pace-Mapping with Active Learning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Co-policy: Responsive Human-Robot Co-Creation for Musical Performances: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+5. ProMUSE: Progressive Multi-modal Uncertainty-guided Staged Evidential Alzheimer Disease Classification: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: best ai model benchmark for students arxiv cs.ai
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-5. Measuring Biological Capabilities and Risks of AI Agents: What It Means for AI/CS Students
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+6. Human-like autonomy emerges from self-play and a pinch of human data: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. SL-S4Wave: Self-Supervised Learning of Physiological Waveforms with Structured State Space Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
+   - Keyword: ai cs update for students arxiv cs.ai
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260620--20260620-triangular-consistency-as-a-universal-constraint-for-learning-op-67f01ff2.md
-- docs/agent/drafts/20260620--20260620-speeding-up-the-annotation-process-in-semantic-segmentation-indu-2918559c.md
+- docs/agent/drafts/20260620--20260620-emyx-fast-and-efficient-all-atom-protein-generation-7f0f5e72.md
+- docs/agent/drafts/20260620--20260620-cost-optimal-llm-routing-with-limited-user-feedback-under-user-s-3f88e9aa.md
 
