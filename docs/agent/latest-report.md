@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-21T10:20:08.711Z
+Generated: 2026-06-21T10:21:27.434Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260621--20260620-manifold-bandits-bayesian-curriculum-learning-over-the-latent-ge-fdb12ca7.md
-- docs/agent/drafts/20260621--20260620-beyond-uniform-forgetting-a-study-of-sequential-direct-preferenc-a47dd9e6.md
+- docs/agent/drafts/20260621--20260620-querygaussian-scalable-and-training-free-open-vocabulary-3d-inst-8ba10580.md
+- docs/agent/drafts/20260621--20260620-voila-vectorized-online-planning-with-learned-diffusion-model-fo-366f33b2.md
 
