@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-20T09:52:56.514Z
+Generated: 2026-06-21T10:20:08.711Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Emyx: Fast and efficient all-atom protein generation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Cost-Optimal LLM Routing with Limited User Feedback under User Satisfaction Guarantees: What It Means for AI/CS Students
+1. Manifold Bandits: Bayesian Curriculum Learning over the Latent Geometry of Large Language Models: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: how to build arxiv cs.ai
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Protein Representation Learning with Secondary-Structure and Energy-Filtered Hydrogen-Bond Graphs: What It Means for AI/CS Students
+2. Beyond Uniform Forgetting: A Study of Sequential Direct Preference Optimization Across Preference Settings: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-4. cAPM: Continual AI-Assisted Pace-Mapping with Active Learning: What It Means for AI/CS Students
+3. QueryGaussian: Scalable and Training-Free Open-Vocabulary 3D Instance Retrieval: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-5. ProMUSE: Progressive Multi-modal Uncertainty-guided Staged Evidential Alzheimer Disease Classification: What It Means for AI/CS Students
+4. VOiLA: Vectorized Online Planning with Learned Diffusion Model for POMDP Agents: What It Means for AI/CS Students
+   - Source: arXiv cs.AI
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Bidirectional Tutoring for Developmental Motor Learning in Robots: Co-Developed Interaction Dynamics Support Stable Learning: What It Means for AI/CS Students
    - Source: arXiv cs.AI
    - Keyword: ai cs update for students arxiv cs.ai
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. Human-like autonomy emerges from self-play and a pinch of human data: What It Means for AI/CS Students
+6. NRITYAM: Language Models Meet Art and Heritage of Dance: What It Means for AI/CS Students
    - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
+   - Keyword: how to build arxiv cs.ai
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260620--20260620-emyx-fast-and-efficient-all-atom-protein-generation-7f0f5e72.md
-- docs/agent/drafts/20260620--20260620-cost-optimal-llm-routing-with-limited-user-feedback-under-user-s-3f88e9aa.md
+- docs/agent/drafts/20260621--20260620-manifold-bandits-bayesian-curriculum-learning-over-the-latent-ge-fdb12ca7.md
+- docs/agent/drafts/20260621--20260620-beyond-uniform-forgetting-a-study-of-sequential-direct-preferenc-a47dd9e6.md
 
