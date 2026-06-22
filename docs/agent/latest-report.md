@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-21T10:21:27.434Z
+Generated: 2026-06-22T12:36:04.261Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,9 +40,9 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Manifold Bandits: Bayesian Curriculum Learning over the Latent Geometry of Large Language Models: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. Samsung Electronics brings ChatGPT and Codex to employees: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 2. Beyond Uniform Forgetting: A Study of Sequential Direct Preference Optimization Across Preference Settings: What It Means for AI/CS Students
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260621--20260620-querygaussian-scalable-and-training-free-open-vocabulary-3d-inst-8ba10580.md
-- docs/agent/drafts/20260621--20260620-voila-vectorized-online-planning-with-learned-diffusion-model-fo-366f33b2.md
+- docs/agent/drafts/20260622--20260621-samsung-electronics-brings-chatgpt-and-codex-to-employees-eebdb7f6.md
+- docs/agent/drafts/20260622--20260620-bidirectional-tutoring-for-developmental-motor-learning-in-robot-3604a04a.md
 
