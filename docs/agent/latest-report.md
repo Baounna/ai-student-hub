@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-22T12:36:04.261Z
+Generated: 2026-06-22T12:37:47.106Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -95,7 +95,6 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 2
-- docs/agent/drafts/20260622--20260621-samsung-electronics-brings-chatgpt-and-codex-to-employees-eebdb7f6.md
-- docs/agent/drafts/20260622--20260620-bidirectional-tutoring-for-developmental-motor-learning-in-robot-3604a04a.md
+- New drafts generated: 1
+- docs/agent/drafts/20260622--20260620-nrityam-language-models-meet-art-and-heritage-of-dance-acd40b3b.md
 
