@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-22T17:50:14.574Z",
+  "updatedAt": "2026-06-22T21:13:22.828Z",
   "items": [
+    {
+      "slug": "20260622-how-we-found-a-bug-in-the-hyper-http-library-14861279",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/hyper-bug/",
+      "publishedAt": "2026-06-22T18:00:00.000Z",
+      "discoveredAt": "2026-06-22T21:13:22.828Z",
+      "locales": {
+        "en": {
+          "title": "How we found a bug in the hyper HTTP library",
+          "summary": "By rearchitecting the Images binding, we accidentally uncovered a bug that existed in the open-source hyper library across multiple major versions."
+        },
+        "fr": {
+          "title": "How we found a bug in the hyper HTTP library",
+          "summary": "By rearchitecting the Images binding, we accidentally uncovered a bug that existed in the open-source hyper library across multiple major versions."
+        }
+      }
+    },
     {
       "slug": "20260622-from-pledge-to-practice-building-a-more-inclusive-open-source-ec-43163564",
       "topic": "Computer Systems",
@@ -75,6 +94,25 @@
         "fr": {
           "title": "Daybreak: Tools for securing every organization in the world",
           "summary": "OpenAI introduces new Daybreak tools, including Codex Security and GPT-5.5-Cyber, to help organizations find, validate, and patch vulnerabilities at scale."
+        }
+      }
+    },
+    {
+      "slug": "20260622-codex-maxxing-for-long-running-work-6fdda2fd",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/codex-maxxing-long-running-work",
+      "publishedAt": "2026-06-22T00:00:00.000Z",
+      "discoveredAt": "2026-06-22T21:13:22.828Z",
+      "locales": {
+        "en": {
+          "title": "Codex-maxxing for long-running work",
+          "summary": "Learn how Jason Liu uses Codex to preserve context, manage complex projects, and help work continue beyond a single prompt."
+        },
+        "fr": {
+          "title": "Codex-maxxing for long-running work",
+          "summary": "Learn how Jason Liu uses Codex to preserve context, manage complex projects, and help work continue beyond a single prompt."
         }
       }
     },
@@ -4521,44 +4559,6 @@
         "fr": {
           "title": "OnDeFog: Online Decision Transformer under Frame Dropping",
           "summary": "arXiv:2606.19721v1 Announce Type: cross Abstract: In challenging real-world reinforcement learning applications, communication delays or sensor failures often cause frame dropping, in which the agent cannot receive the dropped st…"
-        }
-      }
-    },
-    {
-      "slug": "20260620-library-aware-doubles-and-iterative-repair-for-large-language-mo-570380ba",
-      "topic": "AI Systems",
-      "source": "arXiv cs.AI",
-      "sourceFeed": "https://arxiv.org/rss/cs.AI",
-      "href": "https://arxiv.org/abs/2606.19725",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "discoveredAt": "2026-06-20T18:45:35.841Z",
-      "locales": {
-        "en": {
-          "title": "Library-Aware Doubles and Iterative Repair for Large Language Model-Generated Unit Tests in OpenSIL Firmware",
-          "summary": "arXiv:2606.19725v1 Announce Type: cross Abstract: Validating changes in low-level C firmware is expensive because unit tests (UTs) are fragile under strict build constraints, where missing headers, unresolved symbols, and depende…"
-        },
-        "fr": {
-          "title": "Library-Aware Doubles and Iterative Repair for Large Language Model-Generated Unit Tests in OpenSIL Firmware",
-          "summary": "arXiv:2606.19725v1 Announce Type: cross Abstract: Validating changes in low-level C firmware is expensive because unit tests (UTs) are fragile under strict build constraints, where missing headers, unresolved symbols, and depende…"
-        }
-      }
-    },
-    {
-      "slug": "20260620-nrityam-language-models-meet-art-and-heritage-of-dance-acd40b3b",
-      "topic": "AI Systems",
-      "source": "arXiv cs.AI",
-      "sourceFeed": "https://arxiv.org/rss/cs.AI",
-      "href": "https://arxiv.org/abs/2606.19727",
-      "publishedAt": "2026-06-20T04:00:00.000Z",
-      "discoveredAt": "2026-06-20T18:45:35.841Z",
-      "locales": {
-        "en": {
-          "title": "NRITYAM: Language Models Meet Art and Heritage of Dance",
-          "summary": "arXiv:2606.19727v1 Announce Type: cross Abstract: Language models have become essential tools in shaping modern workflows. However, their global effectiveness hinges on a nuanced understanding of local socio-cultural contexts. To…"
-        },
-        "fr": {
-          "title": "NRITYAM: Language Models Meet Art and Heritage of Dance",
-          "summary": "arXiv:2606.19727v1 Announce Type: cross Abstract: Language models have become essential tools in shaping modern workflows. However, their global effectiveness hinges on a nuanced understanding of local socio-cultural contexts. To…"
         }
       }
     }
