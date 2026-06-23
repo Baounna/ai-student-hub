@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-23T10:21:29.646Z
+Generated: 2026-06-23T10:23:12.249Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260623--20260623-shipping-huggingfacehub-every-week-with-ai-open-tools-and-a-huma-49c16039.md
-- docs/agent/drafts/20260623--20260623-how-omio-is-building-the-future-of-conversational-travel-0c794cbb.md
+- docs/agent/drafts/20260623--20260622-how-we-found-a-bug-in-the-hyper-http-library-14861279.md
+- docs/agent/drafts/20260623--20260622-from-pledge-to-practice-building-a-more-inclusive-open-source-ec-43163564.md
 
