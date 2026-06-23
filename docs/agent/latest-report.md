@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-22T12:37:47.106Z
+Generated: 2026-06-23T10:21:29.646Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,34 +40,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Samsung Electronics brings ChatGPT and Codex to employees: What It Means for AI/CS Students
+1. Shipping huggingface_hub every week with AI, open tools, and a human in the loop: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: ai cs update for students hugging face blog
+   - Monetization angle: student-focused practical summary
+   - CTA: Roadmap + related blog guide
+2. How Omio is building the future of conversational travel: What It Means for AI/CS Students
    - Source: OpenAI News
    - Keyword: how to build openai news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Beyond Uniform Forgetting: A Study of Sequential Direct Preference Optimization Across Preference Settings: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-3. QueryGaussian: Scalable and Training-Free Open-Vocabulary 3D Instance Retrieval: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-4. VOiLA: Vectorized Online Planning with Learned Diffusion Model for POMDP Agents: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+3. How we found a bug in the hyper HTTP library: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Bidirectional Tutoring for Developmental Motor Learning in Robots: Co-Developed Interaction Dynamics Support Stable Learning: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+4. From pledge to practice: Building a more inclusive open source ecosystem: What It Means for AI/CS Students
+   - Source: GitHub Blog
+   - Keyword: how to build github blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. PP-OCRv6 on Hugging Face: 50-Language OCR from 1.5M to 34.5M Parameters: What It Means for AI/CS Students
+   - Source: Hugging Face Blog
+   - Keyword: ai cs update for students hugging face blog
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-6. NRITYAM: Language Models Meet Art and Heritage of Dance: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+6. Daybreak: Tools for securing every organization in the world: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -95,6 +95,7 @@ Internal target: $10.00/month (private operator metric)
 
 ## Draft Generation
 - Draft slots per run: 2
-- New drafts generated: 1
-- docs/agent/drafts/20260622--20260620-nrityam-language-models-meet-art-and-heritage-of-dance-acd40b3b.md
+- New drafts generated: 2
+- docs/agent/drafts/20260623--20260623-shipping-huggingfacehub-every-week-with-ai-open-tools-and-a-huma-49c16039.md
+- docs/agent/drafts/20260623--20260623-how-omio-is-building-the-future-of-conversational-travel-0c794cbb.md
 
