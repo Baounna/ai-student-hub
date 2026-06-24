@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   const fr = params.lang === "fr";
   const title = fr ? "Faire un don" : "Donate";
   const description = fr
-    ? "Soutiens AI Student Hub pour financer du contenu pratique IA/CS pour etudiants."
-    : "Support AI Student Hub and fund practical AI/CS education content for students.";
+    ? "Soutiens AI and Cybersecurity News pour financer du contenu pratique IA/CS pour etudiants."
+    : "Support AI and Cybersecurity News and fund practical AI + Cybersecurity education content for students.";
 
   return {
     title,
@@ -33,30 +33,44 @@ export default function LocalizedDonatePage({ params }: { params: { lang: string
 
   const locale: Locale = params.lang;
   const fr = locale === "fr";
-  const methods = [
-    {
-      name: "Buy Me a Coffee",
-      href: siteConfig.donation.primaryUrl,
-      detail: fr ? "Contribution rapide en un clic." : "Quick one-click contribution."
-    },
+  const primaryMethods = [
     {
       name: "PayPal",
       href: siteConfig.donation.paypalUrl,
-      detail: fr ? "Paiement international facile." : "Global donation checkout."
+      detail: fr ? "PayPal avec cartes bancaires (Mastercard, Visa)." : "PayPal with card checkout (Mastercard, Visa).",
+      badges: ["PayPal", "Mastercard", "Visa"]
     },
     {
-      name: "Ko-fi",
-      href: siteConfig.donation.koFiUrl,
-      detail: fr ? "Support ponctuel ou mensuel." : "One-time or monthly support."
-    },
-    {
-      name: "GitHub Sponsors",
-      href: siteConfig.donation.githubSponsorsUrl,
-      detail: fr ? "Soutien public et recurrent." : "Public recurring support."
+      name: siteConfig.donation.cardLabel,
+      href: siteConfig.donation.cardUrl,
+      detail: fr ? "Paiement carte bancaire securise." : "Secure card payment checkout.",
+      badges: ["Mastercard", "Visa"]
     }
   ];
-  const availableMethods = methods.filter((item) => isSafeHttpUrl(item.href));
-  const hasLiveDonationLinks = availableMethods.length > 0;
+
+  const availablePrimaryMethods = primaryMethods.filter((item) => isSafeHttpUrl(item.href));
+  const seenPrimaryUrls = new Set<string>();
+  const uniquePrimaryMethods = availablePrimaryMethods.filter((item) => {
+    const key = (item.href || "").trim().replace(/\/+$/, "").toLowerCase();
+    if (!key) return false;
+    if (seenPrimaryUrls.has(key)) return false;
+    seenPrimaryUrls.add(key);
+    return true;
+  });
+  const hasLiveDonationLinks = uniquePrimaryMethods.length > 0;
+  const donationSignals = siteConfig.socialProofStats.length
+    ? siteConfig.socialProofStats.slice(0, 3)
+    : fr
+      ? [
+          "Contenu pratique publie regulierement pour etudiants IA/CS.",
+          "Sources explicites et references visibles.",
+          "Approche execution-first adaptee aux budgets etudiants."
+        ]
+      : [
+          "Practical content published consistently for AI + Cybersecurity students.",
+          "Explicit sources and visible references.",
+          "Execution-first approach aligned with student budgets."
+        ];
 
   return (
     <div className="page-shell max-w-6xl py-10 md:py-14">
@@ -65,12 +79,12 @@ export default function LocalizedDonatePage({ params }: { params: { lang: string
           <div>
             <p className="do-kicker">{fr ? "Soutien" : "Support"}</p>
             <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
-              {fr ? "Soutiens AI Student Hub" : "Support AI Student Hub"}
+              {fr ? "Soutiens AI and Cybersecurity News" : "Support AI and Cybersecurity News"}
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr
                 ? "Chaque don finance la recherche, la production d'articles de qualite, et des ressources accessibles pour etudiants IA/CS."
-                : "Every donation funds research, high-quality articles, and accessible resources for AI/CS students."}
+                : "Every donation funds research, high-quality articles, and accessible resources for AI + Cybersecurity students."}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
@@ -80,7 +94,7 @@ export default function LocalizedDonatePage({ params }: { params: { lang: string
                 {fr ? "Mises a jour mensuelles" : "Monthly updates"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Execution IA/CS" : "AI/CS execution"}
+                {fr ? "Execution IA/CS" : "AI + Cybersecurity execution"}
               </span>
             </div>
           </div>
@@ -98,13 +112,25 @@ export default function LocalizedDonatePage({ params }: { params: { lang: string
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
         <div className="space-y-6">
-          {hasLiveDonationLinks ? (
+          {uniquePrimaryMethods.length > 0 ? (
             <section className="grid gap-4 md:grid-cols-2">
-              {availableMethods.map((method, index) => (
+              {uniquePrimaryMethods.map((method, index) => (
                 <article key={method.name} className="card-hover glass rounded-2xl p-5">
-                  <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">#{index + 1}</p>
+                  <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+                    {fr ? `Methode ${index + 1}` : `Method ${index + 1}`}
+                  </p>
                   <h2 className="font-display mt-1 text-xl font-semibold text-[color:var(--text-strong)]">{method.name}</h2>
                   <p className="mt-2 text-sm text-[color:var(--text)]">{method.detail}</p>
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    {method.badges.map((badge) => (
+                      <span
+                        key={`${method.name}-${badge}`}
+                        className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] font-medium text-[color:var(--muted)]"
+                      >
+                        {badge}
+                      </span>
+                    ))}
+                  </div>
                   <a href={method.href} target="_blank" rel="noopener noreferrer" className="btn-primary mt-4 inline-flex">
                     {fr ? "Faire un don" : "Donate now"}
                   </a>
@@ -114,23 +140,12 @@ export default function LocalizedDonatePage({ params }: { params: { lang: string
           ) : null}
 
           <section className="grid gap-3 sm:grid-cols-3">
-            {[
-              {
-                label: fr ? "Guides livres" : "Guides shipped",
-                value: "20+"
-              },
-              {
-                label: fr ? "Pays touches" : "Countries reached",
-                value: "30+"
-              },
-              {
-                label: fr ? "Mises a jour / mois" : "Updates / month",
-                value: "4"
-              }
-            ].map((item) => (
-              <article key={item.label} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
-                <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">{item.label}</p>
-                <p className="mt-2 text-2xl font-bold text-[color:var(--text-strong)]">{item.value}</p>
+            {donationSignals.map((signal, index) => (
+              <article key={`${index}-${signal}`} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
+                <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+                  {fr ? `Signal ${index + 1}` : `Signal ${index + 1}`}
+                </p>
+                <p className="mt-2 text-sm font-medium text-[color:var(--text-strong)]">{signal}</p>
               </article>
             ))}
           </section>
@@ -154,7 +169,12 @@ export default function LocalizedDonatePage({ params }: { params: { lang: string
                   <p className="text-2xl font-bold text-[color:var(--text-strong)]">{tier.amount}</p>
                   <p className="mt-1 text-sm text-[color:var(--text)]">{tier.label}</p>
                   {hasLiveDonationLinks ? (
-                    <a href={availableMethods[0]?.href} target="_blank" rel="noopener noreferrer" className="btn-primary mt-3 inline-flex">
+                    <a
+                      href={uniquePrimaryMethods[0]?.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary mt-3 inline-flex"
+                    >
                       {fr ? "Choisir" : "Select"}
                     </a>
                   ) : (
@@ -190,8 +210,8 @@ export default function LocalizedDonatePage({ params }: { params: { lang: string
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {fr
-                  ? "Tu peux soutenir le projet via le guide etudiant ou en partageant AI Student Hub."
-                  : "You can support the project via the student guide or by sharing AI Student Hub."}
+                  ? "Tu peux soutenir le projet via le guide etudiant ou en partageant AI and Cybersecurity News."
+                  : "You can support the project via the student guide or by sharing AI and Cybersecurity News."}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
@@ -225,8 +245,8 @@ export default function LocalizedDonatePage({ params }: { params: { lang: string
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Cela depend de la plateforme choisie (ex: GitHub Sponsors peut etre public)."
-                    : "It depends on the platform (for example GitHub Sponsors can be public)."}
+                    ? "Cela depend du mode choisi et de tes parametres de confidentialite."
+                    : "It depends on your selected payment method and privacy settings."}
                 </p>
               </div>
               <div>

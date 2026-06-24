@@ -2,8 +2,10 @@
 import { spawn } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { loadScriptEnv } from "./lib/load-env.mjs";
 
 const ROOT = process.cwd();
+loadScriptEnv(ROOT);
 const REPORT_FILE = path.join(ROOT, "docs/agent/pipeline-report.md");
 const STATUS_FILE = path.join(ROOT, "docs/agent/pipeline-status.json");
 
@@ -63,18 +65,21 @@ function buildMarkdown({ generatedAt, settings, results }) {
   const lines = [];
   const failed = results.filter((step) => !step.ok);
 
-  lines.push("# AI Student Hub Agent Pipeline Report");
+  lines.push("# AI and Cybersecurity News Agent Pipeline Report");
   lines.push("");
   lines.push(`Generated: ${generatedAt}`);
   lines.push(`Overall: ${failed.length ? "FAILED" : "SUCCESS"}`);
   lines.push("");
 
   lines.push("## Settings");
+  lines.push(`- Auto tools: ${settings.includeAutoTools ? "ON" : "OFF"}`);
   lines.push(`- Auto news: ${settings.includeAutoNews ? "ON" : "OFF"}`);
   lines.push(`- Blog operator: ${settings.includeOperator ? "ON" : "OFF"}`);
   lines.push(`- Blog design: ${settings.includeDesign ? "ON" : "OFF"}`);
+  lines.push(`- Daily checklist: ${settings.includeDailyChecklist ? "ON" : "OFF"}`);
   lines.push(`- Issue sync: ${settings.includeIssues ? "ON" : "OFF"}`);
   lines.push(`- Agent health verify: ${settings.includeVerify ? "ON" : "OFF"}`);
+  lines.push(`- Public-content verify: ${settings.includePublicContentVerify ? "ON" : "OFF"}`);
   lines.push(`- Issue max per run: ${settings.issuesMaxPerRun}`);
   lines.push("");
 
@@ -102,16 +107,22 @@ function buildMarkdown({ generatedAt, settings, results }) {
 async function run() {
   const generatedAt = new Date().toISOString();
   const settings = {
+    includeAutoTools: toBoolean(process.env.AGENT_PIPELINE_INCLUDE_AUTO_TOOLS, true),
     includeAutoNews: toBoolean(process.env.AGENT_PIPELINE_INCLUDE_AUTO_NEWS, true),
     includeOperator: toBoolean(process.env.AGENT_PIPELINE_INCLUDE_OPERATOR, true),
     includeDesign: toBoolean(process.env.AGENT_PIPELINE_INCLUDE_DESIGN, true),
+    includeDailyChecklist: toBoolean(process.env.AGENT_PIPELINE_INCLUDE_DAILY_CHECKLIST, true),
     includeIssues: toBoolean(process.env.AGENT_PIPELINE_INCLUDE_ISSUES, true),
     includeVerify: toBoolean(process.env.AGENT_PIPELINE_INCLUDE_VERIFY, true),
+    includePublicContentVerify: toBoolean(process.env.AGENT_PIPELINE_INCLUDE_PUBLIC_CONTENT_VERIFY, true),
     writeReports: toBoolean(process.env.AGENT_PIPELINE_WRITE_REPORTS, true),
     issuesMaxPerRun: Math.max(1, Math.min(toInteger(process.env.AGENT_PIPELINE_ISSUES_MAX_PER_RUN, 6), 20))
   };
 
   const steps = [];
+  if (settings.includeAutoTools) {
+    steps.push({ id: "auto-tools", label: "Auto tools agent", command: "node", args: ["scripts/auto-tools-agent.mjs"] });
+  }
   if (settings.includeAutoNews) {
     steps.push({ id: "auto-news", label: "Auto news agent", command: "node", args: ["scripts/auto-news-agent.mjs"] });
   }
@@ -121,11 +132,27 @@ async function run() {
   if (settings.includeDesign) {
     steps.push({ id: "design", label: "Blog design agent", command: "node", args: ["scripts/blog-design-agent.mjs"] });
   }
+  if (settings.includeDailyChecklist) {
+    steps.push({
+      id: "daily-checklist",
+      label: "Daily checklist generator",
+      command: "node",
+      args: ["scripts/generate-daily-checklist.mjs"]
+    });
+  }
   if (settings.includeIssues) {
     steps.push({ id: "issues", label: "Issue sync", command: "node", args: ["scripts/sync-operator-issues.mjs"] });
   }
   if (settings.includeVerify) {
     steps.push({ id: "verify", label: "Agent health verification", command: "node", args: ["scripts/verify-agent-health.mjs"] });
+  }
+  if (settings.includePublicContentVerify) {
+    steps.push({
+      id: "verify-public-content",
+      label: "Public content privacy check",
+      command: "node",
+      args: ["scripts/verify-public-content.mjs"]
+    });
   }
 
   if (!steps.length) {

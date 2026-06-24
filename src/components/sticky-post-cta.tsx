@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { siteConfig } from "@/config/site";
+import { TrackableAnchor } from "@/components/trackable-anchor";
 
 export function StickyPostCta({ locale }: { locale: Locale }) {
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
@@ -59,9 +60,14 @@ export function StickyPostCta({ locale }: { locale: Locale }) {
           </button>
         </div>
         <div className="flex items-center gap-2">
-          <a href={leadMagnetHref} className="btn-primary flex-1 text-center text-xs">
+          <TrackableAnchor
+            href={leadMagnetHref}
+            event="lead_magnet_click"
+            meta={{ page: "sticky_post_cta", locale }}
+            className="btn-primary flex-1 text-center text-xs"
+          >
             {locale === "fr" ? "Roadmap gratuite" : "Free Roadmap"}
-          </a>
+          </TrackableAnchor>
           <Link href={`/${locale}/resources`} className="btn-secondary flex-1 text-center text-xs">
             {locale === "fr" ? "Ressources" : "Resources"}
           </Link>

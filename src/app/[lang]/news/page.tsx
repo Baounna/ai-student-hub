@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { getAutoNews, getAutoNewsUpdatedAt } from "@/content/auto-news";
-import { getLocalizedNews, getNewsTopics, slugifyTopic } from "@/content/news";
+import { getLocalizedNews, getNewsTopics, getNewsTrack, getNewsTrackCounts, slugifyTopic, type NewsTrack } from "@/content/news";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
+import { getLiveAiCsUpdates } from "@/lib/live-news";
 import { getSeoKeywords } from "@/lib/seo";
+
+export const revalidate = 1800;
 
 type NewsSearchParams = {
   topic?: string | string[];
+  track?: string | string[];
 };
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -29,7 +34,13 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   return {
     title: dict.news.title,
     description: dict.news.subtitle,
-    keywords: getSeoKeywords(params.lang, "news"),
+    keywords: getSeoKeywords(params.lang, "news", [
+      params.lang === "fr" ? "actualites ia" : "ai news",
+      params.lang === "fr" ? "outils ia" : "ai tools",
+      params.lang === "fr" ? "mises a jour ia" : "ai updates",
+      params.lang === "fr" ? "sorties machine learning" : "machine learning releases",
+      params.lang === "fr" ? "outils developpeur" : "developer tools"
+    ]),
     openGraph: {
       title: dict.news.title,
       description: dict.news.subtitle,
@@ -47,7 +58,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   };
 }
 
-export default function LocalizedNewsPage({
+export default async function LocalizedNewsPage({
   params,
   searchParams
 }: {
@@ -60,89 +71,268 @@ export default function LocalizedNewsPage({
   const dict = getDictionary(locale);
   const allBriefs = getLocalizedNews(locale);
   const autoNews = getAutoNews(locale, 12);
+  const liveUpdates = await getLiveAiCsUpdates(12);
+  const hasLiveUpdates = liveUpdates.length > 0;
   const autoUpdatedAt = getAutoNewsUpdatedAt();
+  const webUpdates = hasLiveUpdates
+    ? liveUpdates.map((item, index) => ({
+        key: `live-${index}-${item.href}`,
+        topic: item.topic,
+        source: item.source,
+        publishedAt: item.publishedAt,
+        title: item.title,
+        summary:
+          locale === "fr"
+            ? "Mise a jour source officielle capturee en direct."
+            : "Official source update captured from live feed.",
+        href: item.href,
+        briefHref: ""
+      }))
+    : autoNews.map((item) => ({
+        key: `auto-${item.slug}`,
+        topic: item.topic,
+        source: item.source,
+        publishedAt: item.publishedAt,
+        title: item.title,
+        summary: item.summary,
+        href: item.href,
+        briefHref: `/${locale}/news/auto/${item.slug}`
+      }));
+  const webUpdatedAt = hasLiveUpdates ? new Date().toISOString() : autoUpdatedAt;
   const topics = getNewsTopics();
 
   const topicValue = searchParams?.topic;
   const topicFilter = typeof topicValue === "string" ? topicValue.trim().toLowerCase() : "";
+  const trackValue = searchParams?.track;
+  const parsedTrack = typeof trackValue === "string" ? trackValue.trim().toLowerCase() : "";
+  const trackFilter: NewsTrack | "all" = parsedTrack === "ai" || parsedTrack === "cs" || parsedTrack === "career" ? parsedTrack : "all";
+  const trackCounts = getNewsTrackCounts();
 
+  const trackScopedBriefs = trackFilter === "all" ? allBriefs : allBriefs.filter((brief) => getNewsTrack(brief.topic) === trackFilter);
   const filteredBriefs = topicFilter
-    ? allBriefs.filter((brief) => slugifyTopic(brief.topic) === topicFilter)
-    : allBriefs;
+    ? trackScopedBriefs.filter((brief) => slugifyTopic(brief.topic) === topicFilter)
+    : trackScopedBriefs;
 
   const featuredBrief = filteredBriefs[0];
-  const otherBriefs = filteredBriefs.slice(1);
+  const relatedBriefs = filteredBriefs.slice(1, 8);
+  const streamBriefs = filteredBriefs.slice(1);
   const recentSignals = allBriefs.slice(0, 4);
-  const pulseHeading = locale === "fr" ? "Tableau de bord hebdomadaire" : "Weekly signal board";
-  const streamHeading = locale === "fr" ? "Flux actualite IA/CS" : "AI/CS signal stream";
+  const streamHeading =
+    trackFilter === "ai"
+      ? locale === "fr"
+        ? "Flux actualite IA"
+        : "AI signal stream"
+      : trackFilter === "cs"
+        ? locale === "fr"
+          ? "Flux actualite informatique"
+          : "Computer science signal stream"
+        : trackFilter === "career"
+          ? locale === "fr"
+            ? "Flux actualite carriere"
+            : "Career signal stream"
+          : locale === "fr"
+            ? "Flux actualite IA/CS"
+            : "AI + Cybersecurity signal stream";
+
+  const trackOptions: Array<{ key: NewsTrack | "all"; label: string; count: number }> = [
+    { key: "all", label: locale === "fr" ? "Tout IA + CS" : "All AI + Cybersecurity", count: allBriefs.length },
+    { key: "ai", label: "AI", count: trackCounts.ai },
+    { key: "cs", label: locale === "fr" ? "Informatique" : "Computer Science", count: trackCounts.cs },
+    { key: "career", label: locale === "fr" ? "Carriere" : "Career", count: trackCounts.career }
+  ];
+
+  const buildNewsFilterHref = (nextTrack: NewsTrack | "all", nextTopic = topicFilter) => {
+    const params = new URLSearchParams();
+    if (nextTrack !== "all") params.set("track", nextTrack);
+    if (nextTopic) params.set("topic", nextTopic);
+    const suffix = params.toString();
+    return suffix ? `/${locale}/news?${suffix}` : `/${locale}/news`;
+  };
+
+  const featuredVisuals = ["/images/post-roadmap.svg", "/images/post-portfolio.svg", "/images/post-deploy.svg"] as const;
 
   return (
     <section className="page-shell max-w-6xl py-10 md:py-16">
-      <div className="do-hero overflow-hidden rounded-3xl p-7 md:p-10">
-        <div className="grid gap-6 lg:grid-cols-[1.35fr,1fr] lg:items-end">
+      <div className="do-hero overflow-hidden rounded-3xl p-6 md:p-8">
+        <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
           <div>
             <p className="do-kicker">{dict.nav.news}</p>
-            <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
-              {dict.news.title}
+            <h1 className="font-display mt-2 text-4xl font-bold leading-[1.08] text-[color:var(--text-strong)] md:text-5xl">
+              {locale === "fr" ? "News IA + Cybersecurite" : "AI + Cybersecurity News"}
             </h1>
-            <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">{dict.news.subtitle}</p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {locale === "fr" ? "Briefs actionnables" : "Actionable briefs"}
-              </span>
-              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {locale === "fr" ? "Impact etudiant" : "Student impact first"}
-              </span>
-              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {allBriefs.length} {locale === "fr" ? "briefs disponibles" : "briefs available"}
-              </span>
-              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {autoNews.length} {locale === "fr" ? "updates sources web" : "web source updates"}
-              </span>
-            </div>
+            <p className="mt-3 max-w-3xl text-sm text-[color:var(--text)] md:text-base">{dict.news.subtitle}</p>
           </div>
+          <Link href={`/${locale}/news/live`} className="btn-secondary">
+            {locale === "fr" ? "Flux live complet" : "Open full live stream"}
+          </Link>
+        </div>
 
-          <div className="surface rounded-2xl p-5">
-            <p className="do-kicker">{pulseHeading}</p>
-            <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
-              <li>
-                {locale === "fr"
-                  ? "1. Nouvelles tendances IA transformees en actions etudiantes."
-                  : "1. New AI trends translated into student actions."}
-              </li>
-              <li>
-                {locale === "fr"
-                  ? "2. Signal impact: portfolio, stages, candidatures."
-                  : "2. Impact signal: portfolio, internships, applications."}
-              </li>
-              <li>
-                {locale === "fr"
-                  ? "3. Liens directs vers guides, ressources et comparatifs."
-                  : "3. Direct links to guides, resources, and comparisons."}
-              </li>
-            </ul>
-            <div className="mt-4 flex flex-wrap gap-2">
-              <Link href={`/${locale}/blog`} className="btn-secondary">
-                {dict.news.openBlog}
-              </Link>
-              <Link href={`/${locale}/resources`} className="btn-primary">
-                {dict.news.openResources}
-              </Link>
-              <Link href={`/${locale}/news/live`} className="btn-secondary">
-                {locale === "fr" ? "Flux live" : "Live stream"}
-              </Link>
-            </div>
-          </div>
+        <div className="grid gap-4 xl:grid-cols-[0.92fr,1.45fr]">
+          <aside className="space-y-3">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[color:var(--primary)]">
+              {locale === "fr" ? "News liees" : "Related updates"}
+            </p>
+            {(relatedBriefs.length ? relatedBriefs : recentSignals).map((brief) => (
+              <article key={brief.slug} className="news-related-card rounded-2xl p-4">
+                <div className="mb-2 flex flex-wrap items-center gap-2">
+                  <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--bg-soft)]/55 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
+                    {brief.topic}
+                  </span>
+                  <span className="text-[11px] text-[color:var(--muted)]">{formatPublishedDate(brief.publishedAt, locale)}</span>
+                </div>
+                <h2 className="line-clamp-2 text-sm font-semibold text-[color:var(--text-strong)] md:text-base">
+                  <Link href={`/${locale}/news/${brief.slug}`} className="hover:opacity-85">
+                    {brief.title}
+                  </Link>
+                </h2>
+                <p className="mt-2 line-clamp-2 text-xs text-[color:var(--muted)]">{brief.summary}</p>
+              </article>
+            ))}
+          </aside>
+
+          {featuredBrief ? (
+            <article className="news-feature-card overflow-hidden rounded-3xl">
+              <div className="news-feature-media grid grid-cols-3 gap-1 p-1">
+                {featuredVisuals.map((src, index) => (
+                  <div key={`${src}-${index}`} className="relative h-[16rem] overflow-hidden rounded-2xl md:h-[22rem]">
+                    <Image
+                      src={src}
+                      alt=""
+                      fill
+                      sizes="(max-width: 1280px) 33vw, 24vw"
+                      className="object-cover object-center opacity-90"
+                      priority={index === 0}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="px-5 pb-5 pt-4 md:px-7 md:pb-7">
+                <div className="mb-2 flex flex-wrap items-center gap-2">
+                  <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
+                    {featuredBrief.topic}
+                  </span>
+                  <span className="text-xs text-[color:var(--muted)]">{featuredBrief.readTime}</span>
+                  <time dateTime={featuredBrief.publishedAt} className="text-xs text-[color:var(--muted)]">
+                    {formatPublishedDate(featuredBrief.publishedAt, locale)}
+                  </time>
+                </div>
+                <h2 className="font-display text-2xl font-bold leading-tight text-[color:var(--text-strong)] md:text-4xl">
+                  <Link href={`/${locale}/news/${featuredBrief.slug}`} className="hover:opacity-85">
+                    {featuredBrief.title}
+                  </Link>
+                </h2>
+                <p className="mt-3 text-sm text-[color:var(--text)] md:text-base">{featuredBrief.summary}</p>
+                <div className="mt-4 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[color:var(--primary)]">{dict.news.impact}</p>
+                  <p className="mt-2 text-sm text-[color:var(--text)]">{featuredBrief.studentImpact}</p>
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <Link href={`/${locale}/news/${featuredBrief.slug}`} className="btn-primary">
+                    {dict.news.readBrief}
+                  </Link>
+                  <a href={featuredBrief.source.href} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                    {locale === "fr" ? "Source officielle" : "Official source"}
+                  </a>
+                </div>
+              </div>
+            </article>
+          ) : null}
         </div>
       </div>
 
+      <section className="mt-6 surface rounded-2xl p-6">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
+            {locale === "fr" ? "Nouveautes AI + Cybersecurity depuis le web" : "Latest AI + Cybersecurity from the web"}
+          </h2>
+          <Link href={`/${locale}/news/live`} className="btn-secondary">
+            {locale === "fr" ? "Flux live complet" : "Open full live stream"}
+          </Link>
+        </div>
+        <p className="mt-2 text-sm text-[color:var(--text)]">
+          {locale === "fr"
+            ? "Ces updates viennent de sources officielles et passent en priorite en haut de la page."
+            : "These updates come from official sources and stay prioritized at the top of this page."}
+        </p>
+        {webUpdatedAt ? (
+          <p className="mt-1 text-xs text-[color:var(--muted)]">
+            {locale === "fr" ? "Derniere synchronisation" : "Last sync"}: {formatPublishedDate(webUpdatedAt, locale)}
+          </p>
+        ) : null}
+
+        {webUpdates.length ? (
+          <div className="mt-4 grid gap-3">
+            {webUpdates.map((item) => (
+              <article key={item.key} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--bg-soft)]/50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
+                    {item.topic}
+                  </span>
+                  <span className="text-xs text-[color:var(--muted)]">{item.source}</span>
+                  {item.publishedAt ? (
+                    <span className="text-xs text-[color:var(--muted)]">{formatPublishedDate(item.publishedAt, locale)}</span>
+                  ) : null}
+                </div>
+                <h3 className="mt-2 text-base font-semibold text-[color:var(--text-strong)]">{item.title}</h3>
+                <p className="mt-2 text-sm text-[color:var(--text)]">{item.summary}</p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {item.briefHref ? (
+                    <Link href={item.briefHref} className="btn-secondary px-3 py-1.5 text-xs">
+                      {locale === "fr" ? "Lire brief auto" : "Read auto brief"}
+                    </Link>
+                  ) : null}
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="do-link inline-block pt-1 text-sm"
+                  >
+                    {locale === "fr" ? "Source officielle" : "Official source"}
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <article className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
+            <p className="text-sm text-[color:var(--text)]">
+              {locale === "fr"
+                ? "Aucun nouvel item pour le moment. Reviens plus tard pour les prochaines mises a jour."
+                : "No new items yet. Check back soon for fresh updates."}
+            </p>
+          </article>
+        )}
+      </section>
+
       <div className="mt-6 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
+          {locale === "fr" ? "Split IA + cybersecurite" : "AI + Cybersecurity split"}
+        </p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {trackOptions.map((option) => {
+            const isActive = option.key === trackFilter;
+            return (
+              <Link
+                key={option.key}
+                href={buildNewsFilterHref(option.key)}
+                className={`rounded-full border px-3 py-1 text-xs ${
+                  isActive
+                    ? "border-[color:var(--primary)] bg-[color:var(--bg-soft)]/60 text-[color:var(--text-strong)]"
+                    : "border-[color:var(--border)] bg-[color:var(--surface)] text-[color:var(--text)]"
+                }`}
+              >
+                {option.label} ({option.count})
+              </Link>
+            );
+          })}
+        </div>
+
+        <p className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
           {locale === "fr" ? "Filtrer par theme" : "Filter by topic"}
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
           <Link
-            href={`/${locale}/news`}
+            href={buildNewsFilterHref(trackFilter, "")}
             className={`rounded-full border px-3 py-1 text-xs ${
               !topicFilter
                 ? "border-[color:var(--primary)] bg-[color:var(--bg-soft)]/60 text-[color:var(--text-strong)]"
@@ -158,7 +348,7 @@ export default function LocalizedNewsPage({
             return (
               <Link
                 key={topic}
-                href={`/${locale}/news?topic=${slug}`}
+                href={buildNewsFilterHref(trackFilter, slug)}
                 className={`rounded-full border px-3 py-1 text-xs ${
                   active
                     ? "border-[color:var(--primary)] bg-[color:var(--bg-soft)]/60 text-[color:var(--text-strong)]"
@@ -175,40 +365,14 @@ export default function LocalizedNewsPage({
       <div className="mt-8 grid gap-6 md:grid-cols-[2fr,1fr]">
         <div className="space-y-4">
           <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">{streamHeading}</h2>
-          {featuredBrief && (
-            <article className="card-hover glass rounded-2xl p-6 md:p-7">
-              <p className="do-kicker">{dict.news.latest}</p>
-              <h2 className="font-display section-title mt-2 font-bold text-[color:var(--text-strong)]">
-                <Link href={`/${locale}/news/${featuredBrief.slug}`} className="hover:opacity-85">
-                  {featuredBrief.title}
-                </Link>
-              </h2>
-              <div className="mt-3 flex flex-wrap items-center gap-2">
-                <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
-                  {featuredBrief.topic}
-                </span>
-                <time dateTime={featuredBrief.publishedAt} className="text-xs text-[color:var(--muted)]">
-                  {formatPublishedDate(featuredBrief.publishedAt, locale)}
-                </time>
-                <span className="text-xs text-[color:var(--muted)]">{featuredBrief.readTime}</span>
-              </div>
-              <p className="card-copy mt-4 text-[color:var(--text)]">{featuredBrief.summary}</p>
-              <div className="mt-5 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[color:var(--primary)]">{dict.news.impact}</p>
-                <p className="mt-2 text-sm text-[color:var(--text)]">{featuredBrief.studentImpact}</p>
-              </div>
-              <Link href={`/${locale}/news/${featuredBrief.slug}`} className="btn-primary mt-5 inline-block">
-                {dict.news.readBrief}
-              </Link>
-            </article>
-          )}
 
-          {otherBriefs.map((brief) => (
+          {streamBriefs.map((brief) => (
             <article key={brief.slug} className="card-hover glass rounded-2xl p-6">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
                   {brief.topic}
                 </span>
+                <span className="text-xs text-[color:var(--muted)]">{brief.source.name}</span>
                 <time dateTime={brief.publishedAt} className="text-xs text-[color:var(--muted)]">
                   {formatPublishedDate(brief.publishedAt, locale)}
                 </time>
@@ -236,10 +400,13 @@ export default function LocalizedNewsPage({
               <Link href={`/${locale}/news/${brief.slug}`} className="do-link mt-4 inline-block text-sm">
                 {dict.news.readBrief}
               </Link>
+              <a href={brief.source.href} target="_blank" rel="noopener noreferrer" className="do-link mt-4 ml-3 inline-block text-sm">
+                {locale === "fr" ? "Source officielle" : "Official source"}
+              </a>
             </article>
           ))}
 
-          {!filteredBriefs.length && (
+          {!streamBriefs.length && (
             <article className="glass rounded-2xl p-6">
               <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
                 {locale === "fr" ? "Aucun brief trouve" : "No briefs found"}
@@ -254,66 +421,6 @@ export default function LocalizedNewsPage({
               </Link>
             </article>
           )}
-
-          <section className="surface rounded-2xl p-6">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-                {locale === "fr" ? "Nouveautes AI/CS depuis le web" : "Latest AI/CS from the web"}
-              </h2>
-              <Link href={`/${locale}/news/live`} className="btn-secondary">
-                {locale === "fr" ? "Flux live complet" : "Open full live stream"}
-              </Link>
-            </div>
-            <p className="mt-2 text-sm text-[color:var(--text)]">
-              {locale === "fr"
-                ? "Ces updates viennent de sources officielles et sont regroupes en briefs lisibles."
-                : "These updates come from official sources and are grouped into readable briefs."}
-            </p>
-            {autoUpdatedAt ? (
-              <p className="mt-1 text-xs text-[color:var(--muted)]">
-                {locale === "fr" ? "Derniere synchronisation" : "Last sync"}: {formatPublishedDate(autoUpdatedAt, locale)}
-              </p>
-            ) : null}
-
-            {autoNews.length ? (
-              <div className="mt-4 grid gap-3">
-                {autoNews.map((item, index) => (
-                  <article key={`${item.slug}-${index}`} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--bg-soft)]/50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
-                        {item.topic}
-                      </span>
-                      <span className="text-xs text-[color:var(--muted)]">{item.source}</span>
-                      <span className="text-xs text-[color:var(--muted)]">{formatPublishedDate(item.publishedAt, locale)}</span>
-                    </div>
-                    <h3 className="mt-2 text-base font-semibold text-[color:var(--text-strong)]">{item.title}</h3>
-                    <p className="mt-2 text-sm text-[color:var(--text)]">{item.summary}</p>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      <Link href={`/${locale}/news/auto/${item.slug}`} className="btn-secondary px-3 py-1.5 text-xs">
-                        {locale === "fr" ? "Lire brief auto" : "Read auto brief"}
-                      </Link>
-                      <a
-                        href={item.href}
-                        target="_blank"
-                        rel="noopener noreferrer nofollow"
-                        className="do-link inline-block pt-1 text-sm"
-                      >
-                        {locale === "fr" ? "Source officielle" : "Official source"}
-                      </a>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            ) : (
-              <article className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
-                <p className="text-sm text-[color:var(--text)]">
-                  {locale === "fr"
-                    ? "Aucun nouvel item pour le moment. Reviens plus tard pour les prochaines mises a jour."
-                    : "No new items yet. Check back soon for fresh updates."}
-                </p>
-              </article>
-            )}
-          </section>
         </div>
 
         <aside className="space-y-4 md:sticky md:top-36 md:h-fit">
@@ -360,6 +467,9 @@ export default function LocalizedNewsPage({
               </Link>
               <Link href={`/${locale}/compare`} className="btn-primary">
                 {dict.news.openCompare}
+              </Link>
+              <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
+                {locale === "fr" ? "Roadmap execution" : "Execution roadmap"}
               </Link>
             </div>
           </div>

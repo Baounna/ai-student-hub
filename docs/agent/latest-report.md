@@ -1,25 +1,39 @@
-# AI Student Hub Blog Operator Report
+# AI and Cybersecurity News Blog Operator Report
 
-Generated: 2026-02-20T07:32:27.112Z
+Generated: 2026-03-04T16:48:26.477Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
-- Blog posts: 6
-- Comparison pages: 1
-- Curated news briefs: 7
-- Auto web signals: 240
+- Blog posts: 18
+- Comparison pages: 3
+- Curated news briefs: 10
+- Auto web signals: 8
+
+## AI + CS Editorial Audit
+- Track counts (AI/CS/Career): 2/14/2
+- Track shares (AI/CS): 11.11% / 77.78%
+- CS share target >= 35.00%: YES
+- AI share ceiling <= 60.00%: YES
+- Required category coverage: YES
+- Split navigation (blog/news): NO/NO
+
+## Citation Coverage
+- Posts with references blocks: 18/18
+- Estimated uncited posts: 0
+- News entries with source href: 10/10
+- Estimated uncited news briefs: 0
 
 ## Monetization Infrastructure
-- Valid affiliate links: 0/5
-- Placement coverage (home/resources/blog/comparison): NO/NO/NO/NO
-- Lead magnet configured (EN+FR): NO
-- Product checkout configured: NO
-- Email automation provider: none
+- Valid affiliate links: 5/5
+- Placement coverage (home/resources/blog/comparison): YES/YES/YES/YES
+- Lead magnet configured (EN+FR): YES
+- Product checkout configured: YES
+- Email automation provider: convertkit
 
 ## CTA Surface Audit
 - home: lead_magnet=YES | affiliate=YES | checkout=YES
 - resources: lead_magnet=YES | affiliate=YES | checkout=YES
-- blog: lead_magnet=NO | affiliate=YES | checkout=NO
+- blog: lead_magnet=YES | affiliate=YES | checkout=YES
 - compare: lead_magnet=NO | affiliate=YES | checkout=NO
 
 ## Revenue Model (Assumptions)
@@ -33,69 +47,55 @@ Internal target: $10.00/month (private operator metric)
 - Email->product CVR: 2.00%
 
 ## Revenue Estimate (Internal)
-- Affiliate: $0.00
-- Product direct: $0.00
-- Email-driven product: $0.00
-- Total estimated: $0.00
-- Gap to target: $10.00
+- Affiliate: $9.60
+- Product direct: $18.00
+- Email-driven product: $2.16
+- Total estimated: $29.76
+- Gap to target: $0.00
 
 ## Top Auto-News Opportunities
-1. TopoFlow: Physics-guided Neural Networks for high-resolution air quality prediction: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-2. Efficient Tail-Aware Generative Optimization via Flow Model Fine-Tuning: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+1. W3C official blog feed: What It Means for AI/CS Students
+   - Source: W3C Blog
+   - Keyword: computer science workflow for students w3c blog
+   - Monetization angle: CS implementation and tooling decision for student budgets
+   - CTA: Resources + compare pages
+2. NIST official news feed: What It Means for AI/CS Students
+   - Source: NIST News
+   - Keyword: api security for student projects nist news
+   - Monetization angle: security checklist and reliability upgrade path for student apps
+   - CTA: Security guide + resources
+3. NVIDIA Developer Blog official feed: What It Means for AI/CS Students
+   - Source: NVIDIA Developer Blog
+   - Keyword: how to build nvidia developer blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Escaping the Cognitive Well: Efficient Competition Math with Off-the-Shelf Models: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+4. Cloudflare official blog feed: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Better Think Thrice: Learning to Reason Causally with Double Counterfactual Consistency: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: ai cs update for students arxiv cs.lg
-   - Monetization angle: student-focused practical summary
-   - CTA: Roadmap + related blog guide
-5. Omitted Variable Bias in Language Models Under Distribution Shift: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Machine Learning Argument of Latitude Error Model for LEO Satellite Orbit and Covariance Correction: What It Means for AI/CS Students
-   - Source: arXiv cs.LG
-   - Keyword: how to build arxiv cs.lg
+5. GitHub Blog official feed: What It Means for AI/CS Students
+   - Source: GitHub Blog
+   - Keyword: computer science workflow for students github blog
+   - Monetization angle: CS implementation and tooling decision for student budgets
+   - CTA: Resources + compare pages
+6. Google AI Blog official feed: What It Means for AI/CS Students
+   - Source: Google AI Blog
+   - Keyword: how to build google ai blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
-1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
-   - Why: Without valid links, affiliate revenue path is blocked.
-2. [P1] Cover missing affiliate placement: home.
-   - Why: Missing placement means lost monetization intent on that traffic surface.
-3. [P1] Cover missing affiliate placement: resources.
-   - Why: Missing placement means lost monetization intent on that traffic surface.
-4. [P1] Cover missing affiliate placement: blog.
-   - Why: Missing placement means lost monetization intent on that traffic surface.
-5. [P1] Cover missing affiliate placement: comparison.
-   - Why: Missing placement means lost monetization intent on that traffic surface.
-6. [P1] Set NEXT_PUBLIC_PRODUCT_CHECKOUT_URL (Gumroad/LemonSqueezy) and test buy CTA.
-   - Why: Product revenue cannot convert without a live checkout URL.
-7. [P1] Enable ConvertKit and connect newsletter form ID/API key.
-   - Why: Email capture without automation loses warm leads and repeat conversions.
-8. [P1] Set lead magnet URLs for EN/FR and ensure CTA appears on home/resources/posts.
-   - Why: Lead magnet is the lowest-friction conversion path for student traffic.
-9. [P2] Add lead magnet CTA on blog.
+1. [P1] Keep visible AI/CS split filters on both blog and news index pages.
+   - Why: Split navigation helps users quickly enter the right track and increases session depth.
+2. [P2] Add lead magnet CTA on compare.
    - Why: Increases opt-ins per 100 visitors.
-10. [P2] Add lead magnet CTA on compare.
-   - Why: Increases opt-ins per 100 visitors.
+3. [P3] Review weekly: CS share, citation coverage, and CTA CTR. Update weakest section copy.
+   - Why: Editorial quality and conversion copy iteration compound growth without extra acquisition cost.
 
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260220--20260220-topoflow-physics-guided-neural-networks-for-high-resolution-air--b734674d.md
-- docs/agent/drafts/20260220--20260220-efficient-tail-aware-generative-optimization-via-flow-model-fine-4792cfde.md
+- docs/agent/drafts/20260304--20260304-github-blog-official-feed-de50eb10.md
+- docs/agent/drafts/20260304--20260304-google-ai-blog-official-feed-a7291165.md
 

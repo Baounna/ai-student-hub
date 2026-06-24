@@ -1,17 +1,19 @@
-name: Auto News Agent
+name: Auto News + Tools Agent
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "15 */2 * * *"
 
 concurrency:
-  group: ai-student-hub-agents
+  group: ai-student-hub-main-automation
   cancel-in-progress: false
 
 permissions:
   contents: write
 
 jobs:
-  auto-update-news:
+  auto-update-content:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,16 +31,19 @@ jobs:
       - name: Run auto news agent
         run: npm run auto:news
 
+      - name: Run auto tools agent
+        run: npm run auto:tools
+
       - name: Commit and push if content changed
         run: |
-          if git diff --quiet -- src/content/auto-news.json; then
-            echo "No auto-news changes to commit."
+          if git diff --quiet -- src/content/auto-news.json src/content/auto-tools.json; then
+            echo "No auto-content changes to commit."
             exit 0
           fi
 
-          git config user.name "AI Student Hub Bot"
-          git config user.email "ai-student-hub-bot@users.noreply.github.com"
-          git add src/content/auto-news.json
-          git commit -m "chore(news): auto-update AI/CS web feed"
+          git config user.name "NexaPulse Bot"
+          git config user.email "nexapulse-bot@users.noreply.github.com"
+          git add src/content/auto-news.json src/content/auto-tools.json
+          git commit -m "chore(content): auto-update AI/CS news + tools feeds"
           git pull --rebase origin "${GITHUB_REF_NAME:-main}"
           git push

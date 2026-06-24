@@ -1,14 +1,20 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
+import { loadScriptEnv } from "./lib/load-env.mjs";
 
 const ROOT = process.cwd();
+loadScriptEnv(ROOT);
+
 const AUTO_NEWS_FILE = path.join(ROOT, "src/content/auto-news.json");
 const POSTS_FILE = path.join(ROOT, "src/content/posts.ts");
+const POSTS_CS_FILE = path.join(ROOT, "src/content/posts-cs.ts");
 const NEWS_FILE = path.join(ROOT, "src/content/news.ts");
 const REPORT_FILE = path.join(ROOT, "docs/agent/latest-report.md");
 const QUEUE_FILE = path.join(ROOT, "docs/agent/next-actions.json");
 const DRAFTS_DIR = path.join(ROOT, "docs/agent/drafts");
+const BLOG_INDEX_FILE = path.join(ROOT, "src/app/[lang]/blog/page.tsx");
+const NEWS_INDEX_FILE = path.join(ROOT, "src/app/[lang]/news/page.tsx");
 
 const CTA_FILES = {
   home: path.join(ROOT, "src/app/[lang]/page.tsx"),
@@ -18,6 +24,27 @@ const CTA_FILES = {
 };
 
 const INTERNAL_TARGET_USD = 10;
+const REQUIRED_CATEGORIES = [
+  "AI Fundamentals",
+  "ML Engineering",
+  "LLM Systems",
+  "CS Fundamentals",
+  "Systems & Backend",
+  "Cloud/DevOps",
+  "Security & Performance",
+  "Career/Interviews"
+];
+
+const CATEGORY_TRACKS = {
+  "AI Fundamentals": "ai",
+  "ML Engineering": "ai",
+  "LLM Systems": "ai",
+  "CS Fundamentals": "cs",
+  "Systems & Backend": "cs",
+  "Cloud/DevOps": "cs",
+  "Security & Performance": "cs",
+  "Career/Interviews": "career"
+};
 
 const PLACEHOLDER_FRAGMENTS = ["placeholder", "replace-me", "your-link", "your-domain", "changeme"];
 
@@ -81,14 +108,121 @@ function hasPlacement(rows, target) {
   });
 }
 
-function countBlockEntries(fileText, startPattern) {
-  const start = fileText.indexOf(startPattern);
-  if (start < 0) return 0;
-  const end = fileText.indexOf("];", start);
-  if (end < 0) return 0;
-  const block = fileText.slice(start, end);
+function extractArrayBlock(source, startPattern) {
+  const start = source.search(startPattern);
+  if (start < 0) return "";
+  const equalsIndex = source.indexOf("=", start);
+  if (equalsIndex < 0) return "";
+  const openBracket = source.indexOf("[", equalsIndex);
+  if (openBracket < 0) return "";
+
+  let depth = 0;
+  for (let index = openBracket; index < source.length; index += 1) {
+    const char = source[index];
+    if (char === "[") {
+      depth += 1;
+      continue;
+    }
+    if (char !== "]") continue;
+    depth -= 1;
+    if (depth === 0) return source.slice(openBracket, index + 1);
+  }
+
+  return "";
+}
+
+function countSlugEntriesInBlock(block) {
   const matches = block.match(/\bslug:\s*"/g);
   return matches ? matches.length : 0;
+}
+
+function countCategoryEntriesInBlock(block) {
+  return Array.from(block.matchAll(/\bcategory:\s*"([^"]+)"/g))
+    .map((match) => String(match[1] || "").trim())
+    .filter(Boolean);
+}
+
+function countTrackEntriesInBlock(block) {
+  return Array.from(block.matchAll(/\btrack:\s*"(ai|cs|career)"/gi))
+    .map((match) => String(match[1] || "").trim().toLowerCase())
+    .filter(Boolean);
+}
+
+function countSourceBlocksWithHref(block) {
+  const items = block.match(/source:\s*\{[\s\S]*?href:\s*"https?:\/\/[^"]+"[\s\S]*?\}/g);
+  return items ? items.length : 0;
+}
+
+function detectEditorialSplitCoverage(blogIndexSource, newsIndexSource) {
+  const splitLabelPattern = /AI \+ CS split|Split IA \+ informatique/;
+  const splitChipPattern = /key:\s*"ai"[\s\S]*key:\s*"cs"|trackFilterOptions|trackOptions/;
+
+  return {
+    blogSplit: splitLabelPattern.test(blogIndexSource) && splitChipPattern.test(blogIndexSource),
+    newsSplit: splitLabelPattern.test(newsIndexSource) && splitChipPattern.test(newsIndexSource)
+  };
+}
+
+function buildEditorialAudit({ basePostsBlock, csPostsBlock, newsBlock, blogIndexSource, newsIndexSource }) {
+  const postsCount = countSlugEntriesInBlock(basePostsBlock) + countSlugEntriesInBlock(csPostsBlock);
+  const newsCount = countSlugEntriesInBlock(newsBlock);
+
+  const baseCategoryNames = countCategoryEntriesInBlock(basePostsBlock);
+  const csCategoryNames = countCategoryEntriesInBlock(csPostsBlock);
+  const categoryNames = [...baseCategoryNames, ...csCategoryNames];
+  const categorySet = new Set(categoryNames);
+  const missingCategories = REQUIRED_CATEGORIES.filter((category) => !categorySet.has(category));
+
+  const trackCounts = { ai: 0, cs: 0, career: 0 };
+  for (const category of baseCategoryNames) {
+    const mapped = CATEGORY_TRACKS[category];
+    if (!mapped) continue;
+    trackCounts[mapped] += 1;
+  }
+
+  const explicitTracks = countTrackEntriesInBlock(csPostsBlock);
+  for (const track of explicitTracks) {
+    if (!Object.prototype.hasOwnProperty.call(trackCounts, track)) continue;
+    trackCounts[track] += 1;
+  }
+
+  const totalTracked = Math.max(trackCounts.ai + trackCounts.cs + trackCounts.career, 1);
+  const csShare = trackCounts.cs / totalTracked;
+  const aiShare = trackCounts.ai / totalTracked;
+
+  const minCsShare = Math.max(0.2, Math.min(toNumber(process.env.AGENT_MIN_CS_SHARE, 0.35), 0.8));
+  const maxAiShare = Math.max(0.3, Math.min(toNumber(process.env.AGENT_MAX_AI_SHARE, 0.6), 0.9));
+  const splitCoverage = detectEditorialSplitCoverage(blogIndexSource, newsIndexSource);
+
+  const referencesInPosts =
+    (basePostsBlock.match(/\breferences:\s*\[/g) || []).length + (csPostsBlock.match(/\breferences:\s*\[/g) || []).length;
+  const uncitedPostsEstimate = Math.max(postsCount - referencesInPosts, 0);
+  const sourcedNewsCount = countSourceBlocksWithHref(newsBlock);
+  const uncitedNewsEstimate = Math.max(newsCount - sourcedNewsCount, 0);
+
+  return {
+    postsCount,
+    newsCount,
+    categories: {
+      total: categorySet.size,
+      missingRequired: missingCategories
+    },
+    tracks: {
+      counts: trackCounts,
+      total: totalTracked,
+      aiShare,
+      csShare,
+      minCsShare,
+      maxAiShare
+    },
+    citations: {
+      postsWithReferences: referencesInPosts,
+      uncitedPostsEstimate,
+      sourcedNewsCount,
+      uncitedNewsEstimate
+    },
+    splitCoverage
+  };
 }
 
 function parseAutoNewsItems(raw) {
@@ -119,6 +253,20 @@ function topicToMoneyAngle(topic) {
       angle: "deployment and infra tradeoffs for student budgets",
       cta: "Cloud comparison + resources",
       keywordPrefix: "best cloud setup for students"
+    };
+  }
+  if (normalized.includes("computer science") || normalized.includes("backend") || normalized.includes("devops")) {
+    return {
+      angle: "CS implementation and tooling decision for student budgets",
+      cta: "Resources + compare pages",
+      keywordPrefix: "computer science workflow for students"
+    };
+  }
+  if (normalized.includes("security")) {
+    return {
+      angle: "security checklist and reliability upgrade path for student apps",
+      cta: "Security guide + resources",
+      keywordPrefix: "api security for student projects"
     };
   }
   return {
@@ -369,9 +517,68 @@ async function detectCtaCoverage() {
   return coverage;
 }
 
-function buildActionQueue({ affiliateRows, placementCoverage, ctaCoverage, revenueModel, hasCheckoutUrl, emailProvider, hasLeadMagnet }) {
+function buildActionQueue({
+  affiliateRows,
+  placementCoverage,
+  ctaCoverage,
+  revenueModel,
+  hasCheckoutUrl,
+  emailProvider,
+  hasLeadMagnet,
+  editorialAudit
+}) {
   const actions = [];
   const validAffiliates = affiliateRows.filter((row) => row.valid).length;
+  const csShareTooLow = editorialAudit.tracks.csShare < editorialAudit.tracks.minCsShare;
+  const aiShareTooHigh = editorialAudit.tracks.aiShare > editorialAudit.tracks.maxAiShare;
+
+  if (csShareTooLow) {
+    actions.push({
+      priority: "P1",
+      action: `Increase CS editorial share to at least ${(editorialAudit.tracks.minCsShare * 100).toFixed(0)}%.`,
+      why: "Balanced AI + CS coverage improves relevance for engineering students and diversifies SEO intent."
+    });
+  }
+
+  if (aiShareTooHigh) {
+    actions.push({
+      priority: "P2",
+      action: `Reduce AI concentration below ${(editorialAudit.tracks.maxAiShare * 100).toFixed(0)}% by publishing CS-first articles.`,
+      why: "Over-concentration on AI weakens core CS positioning and limits broader technical keyword coverage."
+    });
+  }
+
+  if (editorialAudit.categories.missingRequired.length) {
+    actions.push({
+      priority: "P1",
+      action: `Restore missing required categories: ${editorialAudit.categories.missingRequired.join(", ")}.`,
+      why: "Category coverage keeps the publication architecture complete for AI + CS discovery."
+    });
+  }
+
+  if (!editorialAudit.splitCoverage.blogSplit || !editorialAudit.splitCoverage.newsSplit) {
+    actions.push({
+      priority: "P1",
+      action: "Keep visible AI/CS split filters on both blog and news index pages.",
+      why: "Split navigation helps users quickly enter the right track and increases session depth."
+    });
+  }
+
+  if (editorialAudit.citations.uncitedPostsEstimate > 0) {
+    actions.push({
+      priority: "P1",
+      action: "Add explicit references blocks to all long-form posts missing citations.",
+      why: "Source-backed articles improve trust, SEO quality, and editorial credibility."
+    });
+  }
+
+  if (editorialAudit.citations.uncitedNewsEstimate > 0) {
+    actions.push({
+      priority: "P1",
+      action: "Ensure every curated news brief has a valid source href.",
+      why: "Uncited news weakens trust and violates source integrity standards."
+    });
+  }
 
   if (validAffiliates < 3) {
     actions.push({
@@ -442,11 +649,11 @@ function buildActionQueue({ affiliateRows, placementCoverage, ctaCoverage, reven
 
   actions.push({
     priority: "P3",
-    action: "Review CTR/opt-in/product-click events weekly and update weakest CTA copy.",
-    why: "Copy iteration compounds conversions without extra traffic costs."
+    action: "Review weekly: CS share, citation coverage, and CTA CTR. Update weakest section copy.",
+    why: "Editorial quality and conversion copy iteration compound growth without extra acquisition cost."
   });
 
-  return actions.slice(0, 10);
+  return actions.slice(0, 14);
 }
 
 function toPercent(value) {
@@ -459,6 +666,7 @@ function buildMarkdown({
   comparisonsCount,
   newsCount,
   autoNewsCount,
+  editorialAudit,
   affiliateRows,
   placementCoverage,
   ctaCoverage,
@@ -470,7 +678,7 @@ function buildMarkdown({
   const validAffiliates = affiliateRows.filter((row) => row.valid).length;
   const lines = [];
 
-  lines.push("# AI Student Hub Blog Operator Report");
+  lines.push("# AI and Cybersecurity News Blog Operator Report");
   lines.push("");
   lines.push(`Generated: ${generatedAt}`);
   lines.push(`Internal target: $${INTERNAL_TARGET_USD.toFixed(2)}/month (private operator metric)`);
@@ -480,6 +688,41 @@ function buildMarkdown({
   lines.push(`- Comparison pages: ${comparisonsCount}`);
   lines.push(`- Curated news briefs: ${newsCount}`);
   lines.push(`- Auto web signals: ${autoNewsCount}`);
+  lines.push("");
+  lines.push("## AI + CS Editorial Audit");
+  lines.push(
+    `- Track counts (AI/CS/Career): ${editorialAudit.tracks.counts.ai}/${editorialAudit.tracks.counts.cs}/${editorialAudit.tracks.counts.career}`
+  );
+  lines.push(
+    `- Track shares (AI/CS): ${toPercent(editorialAudit.tracks.aiShare)} / ${toPercent(editorialAudit.tracks.csShare)}`
+  );
+  lines.push(
+    `- CS share target >= ${toPercent(editorialAudit.tracks.minCsShare)}: ${boolToMark(
+      editorialAudit.tracks.csShare >= editorialAudit.tracks.minCsShare
+    )}`
+  );
+  lines.push(
+    `- AI share ceiling <= ${toPercent(editorialAudit.tracks.maxAiShare)}: ${boolToMark(
+      editorialAudit.tracks.aiShare <= editorialAudit.tracks.maxAiShare
+    )}`
+  );
+  lines.push(
+    `- Required category coverage: ${boolToMark(!editorialAudit.categories.missingRequired.length)}`
+  );
+  if (editorialAudit.categories.missingRequired.length) {
+    lines.push(`- Missing categories: ${editorialAudit.categories.missingRequired.join(", ")}`);
+  }
+  lines.push(
+    `- Split navigation (blog/news): ${boolToMark(editorialAudit.splitCoverage.blogSplit)}/${boolToMark(
+      editorialAudit.splitCoverage.newsSplit
+    )}`
+  );
+  lines.push("");
+  lines.push("## Citation Coverage");
+  lines.push(`- Posts with references blocks: ${editorialAudit.citations.postsWithReferences}/${postsCount}`);
+  lines.push(`- Estimated uncited posts: ${editorialAudit.citations.uncitedPostsEstimate}`);
+  lines.push(`- News entries with source href: ${editorialAudit.citations.sourcedNewsCount}/${newsCount}`);
+  lines.push(`- Estimated uncited news briefs: ${editorialAudit.citations.uncitedNewsEstimate}`);
   lines.push("");
   lines.push("## Monetization Infrastructure");
   lines.push(`- Valid affiliate links: ${validAffiliates}/5`);
@@ -545,12 +788,28 @@ function buildMarkdown({
 async function run() {
   const generatedAt = new Date().toISOString();
   const postsSource = await safeReadText(POSTS_FILE);
+  const csPostsSource = await safeReadText(POSTS_CS_FILE);
   const newsSource = await safeReadText(NEWS_FILE);
+  const blogIndexSource = await safeReadText(BLOG_INDEX_FILE);
+  const newsIndexSource = await safeReadText(NEWS_INDEX_FILE);
   const autoNews = await safeReadJson(AUTO_NEWS_FILE, { items: [] });
 
-  const postsCount = countBlockEntries(postsSource, "export const posts:");
-  const comparisonsCount = countBlockEntries(postsSource, "export const comparisons:");
-  const newsCount = countBlockEntries(newsSource, "export const newsBriefs:");
+  const basePostsBlock = extractArrayBlock(postsSource, /const\s+basePosts\s*:\s*BlogPost\[\]\s*=\s*\[/);
+  const comparisonsBlock = extractArrayBlock(postsSource, /export\s+const\s+comparisons\s*:\s*ComparisonPage\[\]\s*=\s*\[/);
+  const csPostsBlock = extractArrayBlock(csPostsSource, /export\s+const\s+csExpansionPosts\s*:\s*BlogPost\[\]\s*=\s*\[/);
+  const newsBlock = extractArrayBlock(newsSource, /export\s+const\s+newsBriefs\s*:\s*NewsBrief\[\]\s*=\s*\[/);
+
+  const editorialAudit = buildEditorialAudit({
+    basePostsBlock,
+    csPostsBlock,
+    newsBlock,
+    blogIndexSource,
+    newsIndexSource
+  });
+
+  const postsCount = editorialAudit.postsCount;
+  const comparisonsCount = countSlugEntriesInBlock(comparisonsBlock);
+  const newsCount = editorialAudit.newsCount;
   const autoItems = parseAutoNewsItems(autoNews);
   const opportunities = autoItems.slice(0, 6).map(createOpportunity);
 
@@ -580,7 +839,8 @@ async function run() {
     revenueModel,
     hasCheckoutUrl,
     emailProvider,
-    hasLeadMagnet
+    hasLeadMagnet,
+    editorialAudit
   });
   const draftInfo = await generateDrafts(opportunities, generatedAt);
 
@@ -590,6 +850,7 @@ async function run() {
     comparisonsCount,
     newsCount,
     autoNewsCount: autoItems.length,
+    editorialAudit,
     affiliateRows,
     placementCoverage,
     ctaCoverage,
@@ -610,6 +871,7 @@ async function run() {
       newsCount,
       autoNewsCount: autoItems.length
     },
+    editorial: editorialAudit,
     monetization: {
       validAffiliates: validAffiliateCount,
       placementCoverage,

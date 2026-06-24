@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { headers } from "next/headers";
 import { siteConfig } from "@/config/site";
 import { getGa4MeasurementId, isGa4Enabled } from "@/lib/runtime-config";
 import { absoluteUrl, getSiteUrl } from "@/lib/site-url";
+import { assertProductionRuntimeConfig } from "@/lib/env-validation";
 import "./globals.css";
 
 function getMetadataVerification(): Metadata["verification"] | undefined {
@@ -25,41 +27,47 @@ function getMetadataVerification(): Metadata["verification"] | undefined {
 }
 
 const metadataVerification = getMetadataVerification();
+assertProductionRuntimeConfig();
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  applicationName: "AI Student Hub",
+  applicationName: "AI and Cybersecurity News",
   category: "education",
-  creator: "AI Student Hub",
-  publisher: "AI Student Hub",
-  authors: [{ name: "AI Student Hub", url: getSiteUrl() }],
+  creator: "AI and Cybersecurity News",
+  publisher: "AI and Cybersecurity News",
+  authors: [{ name: "AI and Cybersecurity News", url: getSiteUrl() }],
   title: {
-    default: "AI Student Hub | AI Engineering Blog for Students",
-    template: "%s | AI Student Hub"
+    default: "AI and Cybersecurity News | AI + Cybersecurity Signals for Real Builders",
+    template: "%s | AI and Cybersecurity News"
   },
   description:
-    "Project-first AI tutorials, portfolio frameworks, and internship-ready engineering systems for students.",
+    "AI + Cybersecurity Signals for Real Builders. Trusted updates, practical tools, and execution guides for anyone who builds, learns, or works with AI.",
   keywords: [
-    "AI engineering blog",
-    "AI projects for students",
-    "machine learning internships",
-    "student AI portfolio",
-    "AI and computer science news",
-    "AI tools comparison for students"
+    "AI news",
+    "AI tools",
+    "AI updates",
+    "machine learning releases",
+    "cybersecurity news",
+    "developer tools",
+    "AI + Cybersecurity execution guides",
+    "budget-friendly AI tools",
+    "student AI roadmap",
+    "AI and cybersecurity news",
+    "AI tools comparison"
   ],
   openGraph: {
-    title: "AI Student Hub | AI Engineering Blog for Students",
+    title: "AI and Cybersecurity News | AI + Cybersecurity Signals for Real Builders",
     description:
-      "Project-first AI tutorials, portfolio frameworks, and internship-ready engineering systems for students.",
+      "AI + Cybersecurity Signals for Real Builders. Trusted updates, practical tools, and execution guides for anyone who builds, learns, or works with AI.",
     type: "website",
     url: "/",
-    siteName: "AI Student Hub"
+    siteName: "AI and Cybersecurity News"
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Student Hub | AI Engineering Blog for Students",
+    title: "AI and Cybersecurity News | AI + Cybersecurity Signals for Real Builders",
     description:
-      "Project-first AI tutorials, portfolio frameworks, and internship-ready engineering systems for students."
+      "AI + Cybersecurity Signals for Real Builders. Trusted updates, practical tools, and execution guides for anyone who builds, learns, or works with AI."
   },
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
@@ -76,6 +84,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const nonce = headers().get("x-csp-nonce") || undefined;
   const ga4Enabled = isGa4Enabled();
   const ga4MeasurementId = getGa4MeasurementId();
   const organizationSchema = {
@@ -96,7 +105,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "AI Student Hub",
+    name: "AI and Cybersecurity News",
     url: getSiteUrl(),
     inLanguage: ["en", "fr"]
   };
@@ -107,19 +116,20 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       data-theme="dark"
       data-text-size="medium"
       data-content-width="standard"
-      data-appearance-panel="visible"
       suppressHydrationWarning
     >
       <head>
         <script
           type="application/ld+json"
+          nonce={nonce}
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <script
           type="application/ld+json"
+          nonce={nonce}
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-        <Script id="theme-init" strategy="beforeInteractive">
+        <Script id="theme-init" strategy="beforeInteractive" nonce={nonce}>
           {`(() => {
             try {
               const storedThemePreference = localStorage.getItem('appearance_theme_preference');
@@ -141,15 +151,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               const storedWidth = localStorage.getItem('appearance_content_width');
               const contentWidth = storedWidth === 'wide' ? 'wide' : 'standard';
               document.documentElement.setAttribute('data-content-width', contentWidth);
-
-              const storedAppearancePanel = localStorage.getItem('appearance_panel');
-              const appearancePanel = storedAppearancePanel === 'hidden' ? 'hidden' : 'visible';
-              document.documentElement.setAttribute('data-appearance-panel', appearancePanel);
             } catch (_) {
               document.documentElement.setAttribute('data-theme', 'dark');
               document.documentElement.setAttribute('data-text-size', 'medium');
               document.documentElement.setAttribute('data-content-width', 'standard');
-              document.documentElement.setAttribute('data-appearance-panel', 'visible');
             }
           })();`}
         </Script>
@@ -158,8 +163,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${ga4MeasurementId}`}
               strategy="afterInteractive"
+              nonce={nonce}
             />
-            <Script id="ga4-init" strategy="afterInteractive">
+            <Script id="ga4-init" strategy="afterInteractive" nonce={nonce}>
               {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());

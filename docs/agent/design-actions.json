@@ -1,17 +1,53 @@
 {
-  "generatedAt": "2026-02-19T23:18:46.110Z",
+  "generatedAt": "2026-03-04T16:48:26.480Z",
   "targetScore": 88,
-  "score": 100,
-  "weightedScore": 103,
-  "totalWeight": 103,
-  "ratio": 1,
+  "score": 85,
+  "weightedScore": 144,
+  "totalWeight": 170,
+  "ratio": 0.847,
   "summary": {
-    "checks": 17,
-    "passed": 17,
-    "failed": 0,
-    "onTarget": true
+    "checks": 28,
+    "passed": 24,
+    "failed": 4,
+    "onTarget": false
   },
   "checks": [
+    {
+      "id": "layout-header-search-component",
+      "label": "Header uses unified search component",
+      "file": "src/app/[lang]/layout.tsx",
+      "weight": 7,
+      "passed": true,
+      "action": "Use the shared HeaderSearchForm component in localized layout.",
+      "why": "A single search component keeps UX and conversion behavior consistent across pages."
+    },
+    {
+      "id": "header-search-premium-shell",
+      "label": "Header search clean field styling",
+      "file": "src/components/ui/header-search-form.tsx",
+      "weight": 7,
+      "passed": false,
+      "action": "Use clean field-input styling for search with clear visual hierarchy.",
+      "why": "Simple high-contrast search fields improve scan speed and reduce visual noise."
+    },
+    {
+      "id": "header-search-clear-ux",
+      "label": "Search clear/reset interaction",
+      "file": "src/components/ui/header-search-form.tsx",
+      "weight": 6,
+      "passed": true,
+      "action": "Keep clear/reset behavior for query input including Escape handling.",
+      "why": "Clear search controls reduce friction and improve repeated searches."
+    },
+    {
+      "id": "header-search-shortcut-hint",
+      "label": "Search shortcut hint on desktop",
+      "file": "src/components/ui/header-search-form.tsx",
+      "weight": 5,
+      "passed": true,
+      "action": "Keep keyboard shortcut hint to reinforce fast search behavior.",
+      "why": "Visible shortcuts improve repeated navigation speed for power users."
+    },
     {
       "id": "index-hero",
       "label": "Blog index hero section",
@@ -40,13 +76,76 @@
       "why": "Featured content guides attention toward best converting content."
     },
     {
-      "id": "index-quick-filters",
-      "label": "Quick category filters",
+      "id": "index-ai-cs-split",
+      "label": "Blog AI+CS split filters",
       "file": "src/app/[lang]/blog/page.tsx",
       "weight": 6,
+      "passed": false,
+      "action": "Keep visible AI/CS split filters near blog hero.",
+      "why": "Track split improves content discovery speed for mixed AI+CS audience."
+    },
+    {
+      "id": "home-track-entry",
+      "label": "Homepage AI and CS entry cards",
+      "file": "src/app/[lang]/page.tsx",
+      "weight": 7,
       "passed": true,
-      "action": "Add quick category chips near the hero section.",
-      "why": "Filter chips increase exploration depth and pages per session."
+      "action": "Preserve clear split entry cards for AI and CS tracks on homepage.",
+      "why": "Dual entry points reduce confusion and improve route-to-value."
+    },
+    {
+      "id": "home-cs-first-block",
+      "label": "Homepage CS-first value block",
+      "file": "src/app/[lang]/page.tsx",
+      "weight": 7,
+      "passed": false,
+      "action": "Keep CS-first value proposition cards visible on homepage.",
+      "why": "CS-first framing balances publication positioning beyond AI-only messaging."
+    },
+    {
+      "id": "news-ai-cs-split",
+      "label": "News AI+CS split filters",
+      "file": "src/app/[lang]/news/page.tsx",
+      "weight": 6,
+      "passed": false,
+      "action": "Keep AI/CS split filters on news page with track chips.",
+      "why": "Split navigation improves topical relevance and retention."
+    },
+    {
+      "id": "compare-index-premium-hero",
+      "label": "Tools index premium hero sizing",
+      "file": "src/app/[lang]/compare/page.tsx",
+      "weight": 6,
+      "passed": true,
+      "action": "Use tools-specific hero sizing for clearer hierarchy on tools page.",
+      "why": "Large utility pages need controlled heading scale to preserve readability."
+    },
+    {
+      "id": "compare-detail-premium-hero",
+      "label": "Tools detail premium hero sizing",
+      "file": "src/app/[lang]/compare/[slug]/page.tsx",
+      "weight": 6,
+      "passed": true,
+      "action": "Use tools-specific hero sizing for comparison detail pages.",
+      "why": "Balanced heading scale improves scanning for high-intent buying pages."
+    },
+    {
+      "id": "compare-hide-appearance-panel",
+      "label": "Appearance panel hidden on tools pages",
+      "file": "src/components/ui/appearance-panel-shell.tsx",
+      "weight": 5,
+      "passed": true,
+      "action": "Hide appearance panel on tools routes to reduce visual clutter.",
+      "why": "Removing side controls on conversion pages keeps focus on decisions and CTAs."
+    },
+    {
+      "id": "sticky-tools-mobile-only",
+      "label": "Tools sticky CTA mobile-only behavior",
+      "file": "src/components/sticky-tools-cta.tsx",
+      "weight": 5,
+      "passed": true,
+      "action": "Keep sticky tools CTA focused on mobile while desktop uses in-flow side actions.",
+      "why": "Avoiding desktop overlay prevents clutter and improves perceived quality."
     },
     {
       "id": "index-social-proof-strip",
@@ -166,5 +265,38 @@
       "why": "Reusable tokens keep visual system consistent and scalable."
     }
   ],
-  "actions": []
+  "actions": [
+    {
+      "priority": "P1",
+      "action": "Use clean field-input styling for search with clear visual hierarchy.",
+      "why": "Simple high-contrast search fields improve scan speed and reduce visual noise.",
+      "file": "src/components/ui/header-search-form.tsx",
+      "checkId": "header-search-premium-shell",
+      "weight": 7
+    },
+    {
+      "priority": "P1",
+      "action": "Keep CS-first value proposition cards visible on homepage.",
+      "why": "CS-first framing balances publication positioning beyond AI-only messaging.",
+      "file": "src/app/[lang]/page.tsx",
+      "checkId": "home-cs-first-block",
+      "weight": 7
+    },
+    {
+      "priority": "P2",
+      "action": "Keep visible AI/CS split filters near blog hero.",
+      "why": "Track split improves content discovery speed for mixed AI+CS audience.",
+      "file": "src/app/[lang]/blog/page.tsx",
+      "checkId": "index-ai-cs-split",
+      "weight": 6
+    },
+    {
+      "priority": "P2",
+      "action": "Keep AI/CS split filters on news page with track chips.",
+      "why": "Split navigation improves topical relevance and retention.",
+      "file": "src/app/[lang]/news/page.tsx",
+      "checkId": "news-ai-cs-split",
+      "weight": 6
+    }
+  ]
 }

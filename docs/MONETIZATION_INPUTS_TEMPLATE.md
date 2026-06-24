@@ -1,4 +1,4 @@
-# AI Student Hub - Fill This File
+# AI and Cybersecurity News - Fill This File
 
 Copy this template, replace placeholders, and send it back.
 

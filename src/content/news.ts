@@ -1,5 +1,7 @@
 import type { Locale } from "@/i18n/config";
 
+export type NewsTrack = "ai" | "cs" | "career";
+
 export type NewsBrief = {
   slug: string;
   publishedAt: string;
@@ -58,9 +60,9 @@ export const newsBriefs: NewsBrief[] = [
         benchmark: "Humanity's Last Exam (No tools)",
         snapshot: { en: "February 2026 snapshot", fr: "Snapshot fevrier 2026" },
         stats: [
-          { model: "Gemini 3 Pro Thinking", value: "37.5%" },
-          { model: "GPT-5.1", value: "26.5%" },
-          { model: "Claude Sonnet 4.5 Thinking", value: "13.7%" }
+          { model: "Gemini 3 Pro Thinking", value: "Official source table" },
+          { model: "GPT-5.1", value: "Official source table" },
+          { model: "Claude Sonnet 4.5 Thinking", value: "Official source table" }
         ]
       },
       {
@@ -68,9 +70,9 @@ export const newsBriefs: NewsBrief[] = [
         benchmark: "GPQA Diamond (No tools)",
         snapshot: { en: "February 2026 snapshot", fr: "Snapshot fevrier 2026" },
         stats: [
-          { model: "Gemini 3 Pro Thinking", value: "91.9%" },
-          { model: "GPT-5.1", value: "88.1%" },
-          { model: "Claude Sonnet 4.5 Thinking", value: "83.4%" }
+          { model: "Gemini 3 Pro Thinking", value: "Official source table" },
+          { model: "GPT-5.1", value: "Official source table" },
+          { model: "Claude Sonnet 4.5 Thinking", value: "Official source table" }
         ]
       },
       {
@@ -78,9 +80,9 @@ export const newsBriefs: NewsBrief[] = [
         benchmark: "AIME 2025 (No tools)",
         snapshot: { en: "February 2026 snapshot", fr: "Snapshot fevrier 2026" },
         stats: [
-          { model: "Gemini 3 Pro Thinking", value: "95.0%" },
-          { model: "GPT-5.1", value: "94.0%" },
-          { model: "Claude Sonnet 4.5 Thinking", value: "87.0%" }
+          { model: "Gemini 3 Pro Thinking", value: "Official source table" },
+          { model: "GPT-5.1", value: "Official source table" },
+          { model: "Claude Sonnet 4.5 Thinking", value: "Official source table" }
         ]
       },
       {
@@ -88,9 +90,9 @@ export const newsBriefs: NewsBrief[] = [
         benchmark: "MMMU-Pro",
         snapshot: { en: "February 2026 snapshot", fr: "Snapshot fevrier 2026" },
         stats: [
-          { model: "Gemini 3 Pro Thinking", value: "81.0%" },
-          { model: "GPT-5.1", value: "76.0%" },
-          { model: "Claude Sonnet 4.5 Thinking", value: "68.0%" }
+          { model: "Gemini 3 Pro Thinking", value: "Official source table" },
+          { model: "GPT-5.1", value: "Official source table" },
+          { model: "Claude Sonnet 4.5 Thinking", value: "Official source table" }
         ]
       },
       {
@@ -98,9 +100,9 @@ export const newsBriefs: NewsBrief[] = [
         benchmark: "ScreenSpot-Pro",
         snapshot: { en: "February 2026 snapshot", fr: "Snapshot fevrier 2026" },
         stats: [
-          { model: "Gemini 3 Pro Thinking", value: "72.7%" },
-          { model: "Claude Sonnet 4.5 Thinking", value: "36.2%" },
-          { model: "GPT-5.1", value: "3.5%" }
+          { model: "Gemini 3 Pro Thinking", value: "Official source table" },
+          { model: "Claude Sonnet 4.5 Thinking", value: "Official source table" },
+          { model: "GPT-5.1", value: "Official source table" }
         ]
       }
     ],
@@ -207,8 +209,8 @@ export const newsBriefs: NewsBrief[] = [
     ],
     tags: ["multimodal", "vision", "research"],
     source: {
-      name: "Research labs and model release notes",
-      href: "https://arxiv.org"
+      name: "Google DeepMind and OpenAI release notes",
+      href: "https://deepmind.google/discover/blog/"
     },
     relatedPostSlugs: ["ai-portfolio-project-recruiters-notice"],
     locales: {
@@ -459,6 +461,165 @@ export const newsBriefs: NewsBrief[] = [
         ]
       }
     }
+  },
+  {
+    slug: "api-security-checklists-become-standard-in-student-projects",
+    publishedAt: "2026-02-11",
+    topic: "Security & Performance",
+    readTime: "4 min read",
+    keywords: [
+      "api security checklist for students",
+      "owasp api security student projects",
+      "secure backend for ai apps"
+    ],
+    tags: ["security", "api", "backend"],
+    source: {
+      name: "OWASP API Security documentation",
+      href: "https://owasp.org/API-Security/"
+    },
+    relatedPostSlugs: ["security-checklist-for-student-ai-and-cs-projects", "backend-apis-for-ml-apps"],
+    locales: {
+      en: {
+        title: "API security checklists are becoming standard in student projects",
+        summary:
+          "More student teams are adding API security baselines before launch, including auth scope checks, input validation, and rate controls.",
+        studentImpact:
+          "Security is now a visible quality signal for internships in backend, platform, and ML engineering roles.",
+        takeaways: [
+          "Treat API security as a release requirement, not a final patch.",
+          "Add rate limits and ownership checks on all public endpoints.",
+          "Document security controls in project READMEs for reviewer trust."
+        ],
+        actionSteps: [
+          "Run one security checklist before your next deploy.",
+          "Add endpoint-level auth tests to CI.",
+          "Publish a short security section in your architecture docs."
+        ]
+      },
+      fr: {
+        title: "Les checklists securite API deviennent standard dans les projets etudiants",
+        summary:
+          "De plus en plus d'equipes etudiantes appliquent une base securite API avant lancement: scopes auth, validation d'entrees, et controle de debit.",
+        studentImpact:
+          "La securite est devenue un signal visible pour les stages backend, platform, et ML engineering.",
+        takeaways: [
+          "Traite la securite API comme prerequis release.",
+          "Ajoute rate limiting et verification ownership sur les endpoints publics.",
+          "Documente les controles securite dans le README."
+        ],
+        actionSteps: [
+          "Execute une checklist securite avant ton prochain deploy.",
+          "Ajoute des tests auth endpoint dans CI.",
+          "Publie une section securite dans la doc architecture."
+        ]
+      }
+    }
+  },
+  {
+    slug: "kubernetes-and-lightweight-devops-patterns-enter-student-workflows",
+    publishedAt: "2026-02-10",
+    topic: "Cloud/DevOps",
+    readTime: "4 min read",
+    keywords: [
+      "kubernetes for students",
+      "devops workflow for student engineers",
+      "cloud deployment patterns for ai apps"
+    ],
+    tags: ["devops", "kubernetes", "deployment"],
+    source: {
+      name: "Kubernetes blog and ecosystem updates",
+      href: "https://kubernetes.io/blog/"
+    },
+    relatedPostSlugs: ["linux-devops-workflow-for-students", "cicd-for-ml-and-backend-projects"],
+    locales: {
+      en: {
+        title: "Kubernetes and lightweight DevOps patterns are entering student workflows",
+        summary:
+          "Student teams are combining simple CI/CD pipelines with container-based deployments to reduce release friction across AI and backend projects.",
+        studentImpact:
+          "Students who can explain deployment workflows and rollback plans now stand out in engineering interviews.",
+        takeaways: [
+          "Use simple deployment patterns before introducing orchestration complexity.",
+          "Track release quality with one rollback metric and one incident metric.",
+          "Document your deploy flow so teammates can ship safely."
+        ],
+        actionSteps: [
+          "Create a two-environment setup (staging + production).",
+          "Add one smoke test after each deployment.",
+          "Write a rollback runbook in your repo."
+        ]
+      },
+      fr: {
+        title: "Kubernetes et patterns DevOps legers entrent dans les workflows etudiants",
+        summary:
+          "Les equipes etudiantes combinent pipelines CI/CD simples et deploiements conteneurises pour reduire la friction release.",
+        studentImpact:
+          "Savoir expliquer workflow deploiement et rollback devient un avantage fort en entretien technique.",
+        takeaways: [
+          "Commence par des patterns simples avant orchestration complexe.",
+          "Suis une metrique rollback et une metrique incident.",
+          "Documente le flow deploy pour que l'equipe shippe en securite."
+        ],
+        actionSteps: [
+          "Mets en place staging + production.",
+          "Ajoute un smoke test apres chaque deploiement.",
+          "Ecris un runbook rollback dans le repo."
+        ]
+      }
+    }
+  },
+  {
+    slug: "backend-observability-becomes-core-skill-for-ai-cs-students",
+    publishedAt: "2026-02-09",
+    topic: "Systems & Backend",
+    readTime: "3 min read",
+    keywords: [
+      "observability for student backend",
+      "logs metrics traces student projects",
+      "monitoring ai backend apps"
+    ],
+    tags: ["observability", "backend", "performance"],
+    source: {
+      name: "OpenTelemetry documentation and ecosystem guides",
+      href: "https://opentelemetry.io/docs/"
+    },
+    relatedPostSlugs: ["observability-for-student-engineers", "system-design-for-student-ai-projects"],
+    locales: {
+      en: {
+        title: "Backend observability is becoming a core skill for AI + Cybersecurity students",
+        summary:
+          "Logs, metrics, and traces are now expected in serious student projects, especially when demos involve APIs, queues, and model inference.",
+        studentImpact:
+          "Observability shortens debugging time and improves project credibility for recruiter reviews.",
+        takeaways: [
+          "Instrument key endpoints before scaling traffic.",
+          "Use request IDs to connect frontend errors to backend traces.",
+          "Track p95 latency and error rate as default service KPIs."
+        ],
+        actionSteps: [
+          "Add structured logging on one critical route this week.",
+          "Expose one dashboard for latency and error trends.",
+          "Write a short incident note after each major bug."
+        ]
+      },
+      fr: {
+        title: "L'observabilite backend devient une competence centrale pour etudiants IA/CS",
+        summary:
+          "Logs, metriques, et traces sont maintenant attendus dans les projets etudiants serieux avec APIs, files, et inference modele.",
+        studentImpact:
+          "L'observabilite reduit le temps de debug et renforce la credibilite des projets en review recruteur.",
+        takeaways: [
+          "Instrumente les endpoints critiques avant de scaler.",
+          "Utilise des request IDs pour relier erreurs front et traces backend.",
+          "Suis p95 latence et taux d'erreur comme KPIs par defaut."
+        ],
+        actionSteps: [
+          "Ajoute des logs structures sur une route critique cette semaine.",
+          "Expose un dashboard latence + erreurs.",
+          "Ecris une note incident apres chaque bug majeur."
+        ]
+      }
+    }
   }
 ];
 
@@ -492,6 +653,34 @@ export function getNewsBySlug(slug: string, locale: Locale) {
 
 export function getNewsTopics() {
   return Array.from(new Set(newsBriefs.map((brief) => brief.topic)));
+}
+
+const TOPIC_TRACK_MAP: Record<string, NewsTrack> = {
+  "AI Performance": "ai",
+  "AI Systems": "ai",
+  "AI Research": "ai",
+  "ML Engineering": "ai",
+  MLOps: "ai",
+  "Computer Systems": "cs",
+  "Computer Science": "cs",
+  "Cloud/DevOps": "cs",
+  "Systems & Backend": "cs",
+  "Security & Performance": "cs",
+  Career: "career"
+};
+
+export function getNewsTrack(topic: string): NewsTrack {
+  return TOPIC_TRACK_MAP[topic] || "cs";
+}
+
+export function getNewsTrackCounts() {
+  return newsBriefs.reduce(
+    (acc, brief) => {
+      acc[getNewsTrack(brief.topic)] += 1;
+      return acc;
+    },
+    { ai: 0, cs: 0, career: 0 } as Record<NewsTrack, number>
+  );
 }
 
 export function getNewsByTopic(topic: string, locale: Locale) {

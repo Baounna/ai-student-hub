@@ -17,9 +17,9 @@ function providerIcon(provider: OAuthProviderView["id"]) {
 }
 
 function providerBadgeClass(provider: OAuthProviderView["id"]) {
-  if (provider === "google") return "text-rose-500 border-rose-300/40 bg-rose-500/10";
-  if (provider === "github") return "text-indigo-500 border-indigo-300/40 bg-indigo-500/10";
-  return "text-sky-500 border-sky-300/40 bg-sky-500/10";
+  if (provider === "google") return "text-rose-300 border-rose-300/30 bg-rose-500/10";
+  if (provider === "github") return "text-indigo-300 border-indigo-300/30 bg-indigo-500/10";
+  return "text-sky-300 border-sky-300/30 bg-sky-500/10";
 }
 
 export function SocialAuthButtons({ locale, mode, providers }: SocialAuthButtonsProps) {
@@ -28,27 +28,25 @@ export function SocialAuthButtons({ locale, mode, providers }: SocialAuthButtons
 
   return (
     <section className="glass rounded-2xl p-5 md:p-6">
-      <p className="do-kicker">{locale === "fr" ? "Connexion sociale" : "Social sign in"}</p>
+      <p className="do-kicker">{locale === "fr" ? "Connexion rapide" : "Quick sign in"}</p>
       <h2 className="font-display mt-2 text-xl font-semibold text-[color:var(--text-strong)]">
-        {locale === "fr"
-          ? "Continue avec Google, GitHub ou LinkedIn."
-          : "Continue with Google, GitHub, or LinkedIn."}
+        {locale === "fr" ? "Continue avec un fournisseur securise." : "Continue with a secure identity provider."}
       </h2>
       <p className="mt-1 text-xs text-[color:var(--muted)]">
         {mode === "login"
           ? locale === "fr"
-            ? "Connexion rapide"
-            : "Fast login"
+            ? "Connexion instantanee"
+            : "Instant login"
           : locale === "fr"
-            ? "Inscription rapide"
-            : "Fast signup"}
+            ? "Inscription instantanee"
+            : "Instant signup"}
       </p>
 
       <p className="mt-2 inline-flex rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-[11px] text-[color:var(--muted)]">
         {locale === "fr" ? "OAuth securise" : "Secure OAuth"}
       </p>
 
-      <div className="mt-4 grid gap-2">
+      <div className="mt-4 grid gap-2 sm:grid-cols-2">
         {configured.map((provider) => {
           const href = `/api/auth/oauth/${provider.id}?locale=${locale}&mode=${mode}&returnTo=/${locale}/account`;
           const badgeClass = providerBadgeClass(provider.id);
@@ -57,7 +55,7 @@ export function SocialAuthButtons({ locale, mode, providers }: SocialAuthButtons
             <a
               key={provider.id}
               href={href}
-              className="group inline-flex h-11 items-center justify-between rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-4 text-sm font-medium text-[color:var(--text)] hover:border-[color:var(--primary)]/35 hover:text-[color:var(--text-strong)]"
+              className="group inline-flex h-11 items-center justify-between rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-4 text-sm font-medium text-[color:var(--text)] hover:border-[color:var(--primary)]/35 hover:bg-[color:var(--bg-soft)]/45 hover:text-[color:var(--text-strong)]"
               onClick={() =>
                 trackEvent(mode === "login" ? "auth_login_attempt" : "auth_register_attempt", {
                   locale,
@@ -73,7 +71,7 @@ export function SocialAuthButtons({ locale, mode, providers }: SocialAuthButtons
                 >
                   {providerIcon(provider.id)}
                 </span>
-                {locale === "fr" ? `Continuer avec ${provider.label}` : `Continue with ${provider.label}`}
+                {locale === "fr" ? provider.label : provider.label}
               </span>
               <span className="text-xs text-[color:var(--muted)] group-hover:text-[color:var(--text-strong)]">
                 {mode === "login" ? "Login" : "Join"}
@@ -84,7 +82,7 @@ export function SocialAuthButtons({ locale, mode, providers }: SocialAuthButtons
       </div>
 
       <p className="mt-3 text-xs text-[color:var(--muted)]">
-        {locale === "fr" ? "Ou continue avec l'email ci-dessous." : "Or continue with email below."}
+        {locale === "fr" ? "Ou utilise la connexion email ci-dessous." : "Or continue with email below."}
       </p>
     </section>
   );

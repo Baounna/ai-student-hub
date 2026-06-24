@@ -1,5 +1,6 @@
 import type { Locale } from "@/i18n/config";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+import { csExpansionPosts } from "@/content/posts-cs";
 
 export type AffiliateLink = {
   label: Record<Locale, string>;
@@ -19,6 +20,8 @@ export type BlogPost = {
   title: string;
   excerpt: string;
   category: string;
+  intentKeyword?: string;
+  track?: EditorialTrack;
   tags: string[];
   cluster: string;
   publishedAt: string;
@@ -36,6 +39,19 @@ export type BlogPost = {
   content: string[];
 };
 
+export type EditorialTrack = "ai" | "cs" | "career";
+
+export const REQUIRED_CATEGORY_COVERAGE = [
+  "AI Fundamentals",
+  "ML Engineering",
+  "LLM Systems",
+  "CS Fundamentals",
+  "Systems & Backend",
+  "Cloud/DevOps",
+  "Security & Performance",
+  "Career/Interviews"
+] as const;
+
 export type RecommendedTool = {
   name: string;
   icon: string;
@@ -43,6 +59,17 @@ export type RecommendedTool = {
   summary: Record<Locale, string>;
   benefit: Record<Locale, string>;
   affiliateHref: string;
+};
+
+export type StudentStudyTool = {
+  name: string;
+  icon: string;
+  category: Record<Locale, string>;
+  summary: Record<Locale, string>;
+  bestFor: Record<Locale, string>;
+  keywords: string[];
+  href: string;
+  source: string;
 };
 
 export type ComparisonPage = {
@@ -76,51 +103,57 @@ function readAffiliate(index: number) {
 function placementCategory(placement: string): Record<Locale, string> {
   if (placement.includes("home")) return { en: "Home", fr: "Accueil" };
   if (placement.includes("blog")) return { en: "Blog", fr: "Blog" };
-  if (placement.includes("comparison")) return { en: "Comparison", fr: "Comparatif" };
+  if (placement.includes("comparison")) return { en: "Tools", fr: "Outils" };
   return { en: "Resources", fr: "Ressources" };
+}
+
+function placementLabel(placement: string): Record<Locale, string> {
+  const normalized = placement.replace(/[_-]/g, " ").replace(/\//g, ", ").replace(/\s+/g, " ").trim();
+  if (!normalized) return { en: "resources", fr: "ressources" };
+  return { en: normalized, fr: normalized };
 }
 
 const fallbackRecommendedTools: RecommendedTool[] = [
   {
     name: "Cloud Deploy Stack",
     icon: "/images/tool-cloud.svg",
-    category: { en: "Hosting", fr: "Hébergement" },
+    category: { en: "Cloud/DevOps", fr: "Cloud/DevOps" },
     summary: {
-      en: "Deploy your AI app quickly with free credits and low-friction scaling.",
-      fr: "Déploie rapidement ton app IA avec des crédits gratuits et une mise à l'échelle simple."
+      en: "Deploy AI and backend services quickly with free credits, managed databases, and simple scaling.",
+      fr: "Déploie rapidement des services IA et backend avec crédits gratuits, base managée et mise à l'échelle simple."
     },
     benefit: {
-      en: "Best for shipping demos and student portfolios fast.",
-      fr: "Idéal pour livrer rapidement des démos et portfolios étudiants."
+      en: "Best for student demos, API deployments, and portfolio-grade delivery.",
+      fr: "Idéal pour des démos étudiantes, déploiement d'API et livrables portfolio."
     },
     affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=resources&utm_campaign=hosting")
   },
   {
-    name: "AI Learning Platform",
+    name: "CS + ML Learning Platform",
     icon: "/images/tool-course.svg",
-    category: { en: "Courses", fr: "Formations" },
+    category: { en: "Career/Interviews", fr: "Carriere/Entretiens" },
     summary: {
-      en: "Structured pathways for LLM apps, MLOps, and interview preparation.",
-      fr: "Parcours structurés pour apps LLM, MLOps et préparation aux entretiens."
+      en: "Structured pathways for algorithms, backend engineering, MLOps, and interview preparation.",
+      fr: "Parcours structurés pour algorithmes, backend, MLOps, et préparation aux entretiens."
     },
     benefit: {
-      en: "Best for focused upskilling without wasting months.",
-      fr: "Idéal pour monter en compétence sans perdre des mois."
+      en: "Best for focused upskilling across AI and core cybersecurity.",
+      fr: "Idéal pour monter en compétence sur l'IA et l'informatique fondamentale."
     },
     affiliateHref:
       "https://www.coursera.org/?utm_source=ai_student_hub&utm_medium=resources&utm_campaign=courses"
   },
   {
-    name: "Student Productivity Workspace",
+    name: "Dev Workflow Workspace",
     icon: "/images/tool-productivity.svg",
-    category: { en: "Productivity", fr: "Productivité" },
+    category: { en: "Systems & Backend", fr: "Systemes & Backend" },
     summary: {
-      en: "Run project sprints, job applications, and study systems in one place.",
-      fr: "Gère sprints projets, candidatures et système d'apprentissage en un seul endroit."
+      en: "Run engineering sprints, API specs, architecture notes, and internship prep in one workspace.",
+      fr: "Gère sprints d'ingénierie, specs API, notes d'architecture, et préparation stage en un seul espace."
     },
     benefit: {
-      en: "Best for consistent weekly execution.",
-      fr: "Idéal pour une exécution hebdomadaire régulière."
+      en: "Best for consistent execution across AI and CS project tracks.",
+      fr: "Idéal pour une exécution régulière sur projets IA et informatique."
     },
     affiliateHref:
       "https://www.grammarly.com/affiliates?utm_source=ai_student_hub&utm_medium=resources&utm_campaign=productivity"
@@ -140,23 +173,276 @@ const envIcons = [
   "/images/tool-course.svg"
 ];
 
-const envRecommendedTools: RecommendedTool[] = envAffiliates.map((item, index) => ({
-  name: item.name,
-  icon: envIcons[index % envIcons.length],
-  category: placementCategory(item.placement),
-  summary: {
-    en: `Curated partner resource for ${item.placement} conversions and student execution.`,
-    fr: `Ressource partenaire choisie pour l'execution et la conversion etudiante (${item.placement}).`
-  },
-  benefit: {
-    en: "Selected for practical ROI and faster project shipping.",
-    fr: "Selectionnee pour un ROI pratique et un deploiement plus rapide."
-  },
-  affiliateHref: item.url
-}));
+const envRecommendedTools: RecommendedTool[] = envAffiliates.map((item, index) => {
+  const label = placementLabel(item.placement);
+  return {
+    name: item.name,
+    icon: envIcons[index % envIcons.length],
+    category: placementCategory(item.placement),
+    summary: {
+      en: `Curated partner resource for ${label.en} workflows across AI and cybersecurity execution.`,
+      fr: `Ressource partenaire choisie pour les workflows ${label.fr} en IA et informatique.`
+    },
+    benefit: {
+      en: "Selected for practical ROI, faster shipping, and budget-friendly viability.",
+      fr: "Selectionnee pour un ROI pratique, un shipping rapide, et une logique budget-friendly."
+    },
+    affiliateHref: item.url
+  };
+});
 
 export const recommendedTools: RecommendedTool[] =
   envRecommendedTools.length >= 3 ? envRecommendedTools : fallbackRecommendedTools;
+
+const antigravityUrlRaw = (process.env.NEXT_PUBLIC_ANTIGRAVITY_URL || "https://www.antigravity.ai/").trim();
+const antigravityUrl = isSafeHttpUrl(antigravityUrlRaw)
+  ? normalizeHttpUrl(antigravityUrlRaw)
+  : "https://www.antigravity.ai/";
+
+const fallbackStudentStudyTools: StudentStudyTool[] = [
+  {
+    name: "NotebookLM",
+    icon: "https://www.google.com/s2/favicons?domain=notebooklm.google&sz=256",
+    category: { en: "AI Study Assistant", fr: "Assistant d'etude IA" },
+    summary: {
+      en: "Upload lecture notes and PDFs, generate grounded summaries, and ask source-backed questions.",
+      fr: "Importe tes notes et PDF, genere des resumes fiables, et pose des questions avec citations."
+    },
+    bestFor: {
+      en: "Exam revision, course recap, and source-grounded understanding.",
+      fr: "Revision d'examens, recap des cours, et comprehension avec sources."
+    },
+    keywords: ["notes", "pdf", "summary", "revision", "research"],
+    href: "https://notebooklm.google/",
+    source: "Google"
+  },
+  {
+    name: "Antigravity",
+    icon: "https://www.google.com/s2/favicons?domain=antigravity.ai&sz=256",
+    category: { en: "Learning Workflow", fr: "Workflow d'apprentissage" },
+    summary: {
+      en: "Structured learning flows to keep study sessions focused and execution-oriented.",
+      fr: "Flux d'apprentissage structures pour garder des sessions de travail focalisees et actionnables."
+    },
+    bestFor: {
+      en: "Planning study blocks and keeping momentum between classes and projects.",
+      fr: "Planifier les blocs d'etude et garder la cadence entre cours et projets."
+    },
+    keywords: ["planning", "workflow", "focus", "productivity"],
+    href: antigravityUrl,
+    source: "Antigravity"
+  },
+  {
+    name: "Perplexity",
+    icon: "https://www.google.com/s2/favicons?domain=perplexity.ai&sz=256",
+    category: { en: "Research Assistant", fr: "Assistant de recherche" },
+    summary: {
+      en: "Fast web research with citations to verify claims before using them in reports or projects.",
+      fr: "Recherche web rapide avec citations pour verifier les infos avant de les utiliser en rapport ou projet."
+    },
+    bestFor: {
+      en: "Quick literature scans and source verification.",
+      fr: "Scan rapide de references et verification des sources."
+    },
+    keywords: ["research", "sources", "citation", "web search"],
+    href: "https://www.perplexity.ai/",
+    source: "Perplexity"
+  },
+  {
+    name: "Anki",
+    icon: "https://www.google.com/s2/favicons?domain=apps.ankiweb.net&sz=256",
+    category: { en: "Memory System", fr: "Systeme de memorisation" },
+    summary: {
+      en: "Spaced-repetition flashcards to retain algorithms, formulas, and AI + Cybersecurity concepts long term.",
+      fr: "Cartes a repetition espacee pour retenir durablement algorithmes, formules, et notions IA/CS."
+    },
+    bestFor: {
+      en: "Long-term retention and exam preparation.",
+      fr: "Retention long terme et preparation d'examens."
+    },
+    keywords: ["flashcards", "memory", "revision", "exam"],
+    href: "https://apps.ankiweb.net/",
+    source: "Anki"
+  },
+  {
+    name: "Wolfram|Alpha",
+    icon: "https://www.google.com/s2/favicons?domain=wolframalpha.com&sz=256",
+    category: { en: "Math + CS Problem Solving", fr: "Resolution maths + info" },
+    summary: {
+      en: "Step-by-step support for math, linear algebra, and technical problem solving.",
+      fr: "Support pas-a-pas pour maths, algebre lineaire, et resolution technique."
+    },
+    bestFor: {
+      en: "Math-heavy AI + Cybersecurity modules and verification of problem steps.",
+      fr: "Modules IA/CS charges en maths et verification des etapes."
+    },
+    keywords: ["math", "equations", "problem solving", "linear algebra"],
+    href: "https://www.wolframalpha.com/",
+    source: "Wolfram"
+  },
+  {
+    name: "ChatGPT",
+    icon: "https://www.google.com/s2/favicons?domain=chatgpt.com&sz=256",
+    category: { en: "AI Study Assistant", fr: "Assistant d'etude IA" },
+    summary: {
+      en: "Explain concepts, generate practice questions, and draft clearer study notes.",
+      fr: "Explique les concepts, genere des questions d'entrainement, et redige de meilleures notes."
+    },
+    bestFor: {
+      en: "Concept breakdowns and rapid first drafts.",
+      fr: "Decoupage de concepts et brouillons rapides."
+    },
+    keywords: ["ai tutor", "questions", "explanations", "notes"],
+    href: "https://chatgpt.com/",
+    source: "OpenAI"
+  },
+  {
+    name: "Claude",
+    icon: "https://www.google.com/s2/favicons?domain=claude.ai&sz=256",
+    category: { en: "Reading + Writing Assistant", fr: "Assistant lecture + ecriture" },
+    summary: {
+      en: "Summarize long technical documents and turn them into structured study plans.",
+      fr: "Resume des documents techniques longs et les transforme en plans d'etude structures."
+    },
+    bestFor: {
+      en: "Long reading sessions and writing cleaner reports.",
+      fr: "Sessions de lecture longues et redaction de rapports clairs."
+    },
+    keywords: ["long context", "summaries", "writing", "reports"],
+    href: "https://claude.ai/",
+    source: "Anthropic"
+  },
+  {
+    name: "Gemini",
+    icon: "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=256",
+    category: { en: "AI Learning Assistant", fr: "Assistant d'apprentissage IA" },
+    summary: {
+      en: "Use multimodal prompts for code, diagrams, and course materials in one workspace.",
+      fr: "Utilise des prompts multimodaux pour code, schemas, et supports de cours."
+    },
+    bestFor: {
+      en: "Mixed text + image learning sessions.",
+      fr: "Sessions d'apprentissage texte + image."
+    },
+    keywords: ["multimodal", "images", "code", "learning"],
+    href: "https://gemini.google.com/",
+    source: "Google"
+  },
+  {
+    name: "Notion",
+    icon: "https://www.google.com/s2/favicons?domain=notion.so&sz=256",
+    category: { en: "Study Workspace", fr: "Espace d'etude" },
+    summary: {
+      en: "Organize lecture notes, project tasks, and revision plans in one place.",
+      fr: "Organise notes de cours, taches projet, et plans de revision au meme endroit."
+    },
+    bestFor: {
+      en: "Planning weekly study goals and project execution.",
+      fr: "Planification hebdo des objectifs d'etude et execution projet."
+    },
+    keywords: ["notes", "planning", "workspace", "tasks"],
+    href: "https://www.notion.so/",
+    source: "Notion"
+  },
+  {
+    name: "Obsidian",
+    icon: "https://www.google.com/s2/favicons?domain=obsidian.md&sz=256",
+    category: { en: "Knowledge Base", fr: "Base de connaissances" },
+    summary: {
+      en: "Build linked knowledge graphs from class notes with local markdown files.",
+      fr: "Construit un graphe de connaissances relie a partir de notes markdown locales."
+    },
+    bestFor: {
+      en: "Deep understanding through connected notes.",
+      fr: "Comprendre en profondeur via notes reliees."
+    },
+    keywords: ["knowledge graph", "markdown", "notes", "offline"],
+    href: "https://obsidian.md/",
+    source: "Obsidian"
+  },
+  {
+    name: "Zotero",
+    icon: "https://www.google.com/s2/favicons?domain=zotero.org&sz=256",
+    category: { en: "Citation Manager", fr: "Gestion de citations" },
+    summary: {
+      en: "Collect, organize, and cite papers properly for assignments and reports.",
+      fr: "Collecte, organise et cite correctement les papiers pour devoirs et rapports."
+    },
+    bestFor: {
+      en: "Research writing and bibliography quality.",
+      fr: "Redaction de recherche et qualite bibliographique."
+    },
+    keywords: ["citations", "papers", "bibliography", "research"],
+    href: "https://www.zotero.org/",
+    source: "Zotero"
+  },
+  {
+    name: "Quizlet",
+    icon: "https://www.google.com/s2/favicons?domain=quizlet.com&sz=256",
+    category: { en: "Practice Drills", fr: "Entrainement" },
+    summary: {
+      en: "Create quizzes and flashcards to practice concepts before exams.",
+      fr: "Cree des quiz et flashcards pour pratiquer les notions avant examen."
+    },
+    bestFor: {
+      en: "Active recall and quick revision loops.",
+      fr: "Rappel actif et boucles de revision rapides."
+    },
+    keywords: ["quiz", "practice", "flashcards", "exam prep"],
+    href: "https://quizlet.com/",
+    source: "Quizlet"
+  },
+  {
+    name: "Khan Academy",
+    icon: "https://www.google.com/s2/favicons?domain=khanacademy.org&sz=256",
+    category: { en: "Course Support", fr: "Support de cours" },
+    summary: {
+      en: "Free structured lessons for math, computing, and foundational topics.",
+      fr: "Lecons structurees gratuites pour maths, informatique, et bases essentielles."
+    },
+    bestFor: {
+      en: "Strengthening fundamentals before advanced AI + Cybersecurity modules.",
+      fr: "Renforcer les fondamentaux avant modules IA/CS avances."
+    },
+    keywords: ["courses", "fundamentals", "math", "cybersecurity"],
+    href: "https://www.khanacademy.org/",
+    source: "Khan Academy"
+  },
+  {
+    name: "Coursera",
+    icon: "https://www.google.com/s2/favicons?domain=coursera.org&sz=256",
+    category: { en: "Course Platform", fr: "Plateforme de cours" },
+    summary: {
+      en: "Guided AI and CS courses with assignments and certification pathways.",
+      fr: "Cours guides en IA et informatique avec devoirs et parcours de certification."
+    },
+    bestFor: {
+      en: "Structured long-term upskilling and interview prep.",
+      fr: "Montée en competence structuree et preparation aux entretiens."
+    },
+    keywords: ["courses", "certification", "learning path", "ai cs"],
+    href: "https://www.coursera.org/",
+    source: "Coursera"
+  },
+  {
+    name: "Grammarly",
+    icon: "https://www.google.com/s2/favicons?domain=grammarly.com&sz=256",
+    category: { en: "Writing Assistant", fr: "Assistant d'ecriture" },
+    summary: {
+      en: "Improve assignment writing quality, internship emails, and project documentation.",
+      fr: "Ameliore la qualite des rapports, emails de stage, et documentation de projet."
+    },
+    bestFor: {
+      en: "Professional communication and cleaner documentation.",
+      fr: "Communication professionnelle et documentation plus claire."
+    },
+    keywords: ["writing", "grammar", "documentation", "emails"],
+    href: "https://www.grammarly.com/",
+    source: "Grammarly"
+  }
+];
+
+export const studentStudyTools: StudentStudyTool[] = fallbackStudentStudyTools.filter((tool) => isSafeHttpUrl(tool.href));
 
 export const comparisons: ComparisonPage[] = [
   {
@@ -190,16 +476,81 @@ export const comparisons: ComparisonPage[] = [
           "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_c"
       }
     ]
+  },
+  {
+    slug: "best-backend-stack-for-ml-student-apps",
+    title: "Best Backend Stack for ML Student Apps (FastAPI vs Node vs Go)",
+    intentKeyword: "best backend stack for ml student apps",
+    intro:
+      "Choose a backend stack based on API development speed, deployment reliability, and student-friendly maintenance.",
+    tools: [
+      {
+        name: "FastAPI",
+        price: "Open-source + hosting cost",
+        bestFor: "Python-first AI/ML teams",
+        summary: "Typed request validation and automatic OpenAPI docs for fast shipping.",
+        affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_fastapi")
+      },
+      {
+        name: "Node.js + NestJS",
+        price: "Open-source + hosting cost",
+        bestFor: "Fullstack JS teams",
+        summary: "Strong modular architecture and large ecosystem for production APIs.",
+        affiliateHref:
+          "https://render.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_node"
+      },
+      {
+        name: "Go + Fiber",
+        price: "Open-source + hosting cost",
+        bestFor: "Performance-focused services",
+        summary: "Low memory footprint and fast response times for API-heavy workloads.",
+        affiliateHref:
+          "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_go"
+      }
+    ]
+  },
+  {
+    slug: "best-devops-workflow-for-student-engineers",
+    title: "Best DevOps Workflow for Student Engineers (CI/CD + Monitoring)",
+    intentKeyword: "best devops workflow for student engineers",
+    intro:
+      "Compare practical DevOps workflows by release speed, rollback safety, and observability maturity for student teams.",
+    tools: [
+      {
+        name: "GitHub Actions + Docker",
+        price: "Free tier + hosting cost",
+        bestFor: "Most student teams",
+        summary: "Fast setup with broad documentation and simple CI/CD workflows.",
+        affiliateHref:
+          "https://www.coursera.org/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_actions"
+      },
+      {
+        name: "Render Blueprints",
+        price: "Usage-based",
+        bestFor: "Managed platform deployment",
+        summary: "Infrastructure templates with low ops overhead for student projects.",
+        affiliateHref:
+          "https://render.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_render"
+      },
+      {
+        name: "Railway Templates",
+        price: "Low-cost starter plans",
+        bestFor: "Rapid prototypes",
+        summary: "Quick environment bootstrapping and predictable early-stage workflows.",
+        affiliateHref:
+          "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_railway"
+      }
+    ]
   }
 ];
 
-export const posts: BlogPost[] = [
+const basePosts: BlogPost[] = [
   {
     slug: "ai-portfolio-project-recruiters-notice",
     coverImage: "/images/post-portfolio.svg",
     title: "How to Build an AI Portfolio Project Recruiters Actually Notice",
     excerpt: "A practical framework to scope, ship, and present one AI project that creates measurable internship signal.",
-    category: "AI Project Tutorials",
+    category: "Career/Interviews",
     tags: ["portfolio", "internships", "project-based-learning"],
     cluster: "AI Portfolio Projects",
     publishedAt: "2026-02-18",
@@ -271,7 +622,7 @@ export const posts: BlogPost[] = [
     coverImage: "/images/post-deploy.svg",
     title: "How to Deploy ML Models on a Student Budget Without Looking Amateur",
     excerpt: "A practical deployment blueprint with budget guardrails, reliability checks, and portfolio-ready architecture.",
-    category: "Tools and Systems",
+    category: "Cloud/DevOps",
     tags: ["deployment", "mlops", "cost-control"],
     cluster: "Tools, Deployment & Monetization",
     publishedAt: "2026-02-16",
@@ -347,7 +698,7 @@ export const posts: BlogPost[] = [
     coverImage: "/images/post-roadmap.svg",
     title: "Student AI Internship Roadmap: From Zero Signal to Interview-Ready in 90 Days",
     excerpt: "A 90-day execution plan to build authority, improve applications, and create interview conversion.",
-    category: "Career Growth",
+    category: "Career/Interviews",
     tags: ["internship", "career", "authority-building"],
     cluster: "Career & Internship Prep",
     publishedAt: "2026-02-14",
@@ -418,7 +769,7 @@ export const posts: BlogPost[] = [
     title: "AI Fundamentals Every Computer Science Student Should Master",
     excerpt:
       "A practical guide to core AI concepts that help students read papers faster, build better projects, and explain decisions in interviews.",
-    category: "AI Foundations",
+    category: "AI Fundamentals",
     tags: ["ai-basics", "machine-learning", "deep-learning"],
     cluster: "AI Fundamentals",
     publishedAt: "2026-02-10",
@@ -500,12 +851,12 @@ export const posts: BlogPost[] = [
     title: "Computer Science Roadmap for AI Builders: What Actually Matters",
     excerpt:
       "A focused CS roadmap for AI students who want better performance, cleaner systems, and stronger interview answers.",
-    category: "Computer Science Fundamentals",
+    category: "CS Fundamentals",
     tags: ["algorithms", "data-structures", "systems-design"],
     cluster: "CS Fundamentals for AI",
     publishedAt: "2026-02-09",
     readTime: "10 min read",
-    keywords: ["computer science roadmap for ai students", "cs fundamentals for ml engineers", "algorithms for ai"],
+    keywords: ["cybersecurity roadmap for ai students", "cs fundamentals for ml engineers", "algorithms for ai"],
     popularScore: 89,
     relatedSlugs: ["deploy-ml-model-student-budget", "ai-fundamentals-every-cs-student-should-know"],
     affiliateCallout: {
@@ -555,7 +906,7 @@ export const posts: BlogPost[] = [
         excerpt:
           "A focused CS roadmap for AI students who want better performance, cleaner systems, and stronger interview answers.",
         content: [
-          "AI students often ask if classic computer science still matters. The short answer is yes: CS fundamentals are the difference between a working demo and a reliable product.",
+          "AI students often ask if classic cybersecurity still matters. The short answer is yes: CS fundamentals are the difference between a working demo and a reliable product.",
           "Algorithms and data structures improve your model pipelines immediately. Better complexity decisions reduce preprocessing time, speed up retrieval, and lower cloud bills.",
           "Operating systems knowledge helps when you deploy. You understand processes, memory limits, file systems, and why your service crashes under load.",
           "Networking fundamentals matter for API design, latency debugging, and distributed AI systems. If you can read logs and reason about request flow, you diagnose issues much faster.",
@@ -587,7 +938,7 @@ export const posts: BlogPost[] = [
     title: "Transformers, RAG, and Agents: A Student-Friendly Systems Guide",
     excerpt:
       "Understand how modern LLM systems are built, when to use each pattern, and how to choose a portfolio architecture recruiters respect.",
-    category: "Applied AI Systems",
+    category: "LLM Systems",
     tags: ["transformers", "rag", "agents"],
     cluster: "Modern AI Systems",
     publishedAt: "2026-02-08",
@@ -611,14 +962,14 @@ export const posts: BlogPost[] = [
     },
     references: [
       {
-        source: "arXiv",
+        source: "Google Research",
         label: { en: "Attention Is All You Need", fr: "Attention Is All You Need" },
-        href: "https://arxiv.org/abs/1706.03762"
+        href: "https://research.google/pubs/attention-is-all-you-need/"
       },
       {
-        source: "arXiv",
+        source: "NeurIPS",
         label: { en: "Neural Machine Translation by Jointly Learning to Align and Translate", fr: "Neural Machine Translation by Jointly Learning to Align and Translate" },
-        href: "https://arxiv.org/abs/1409.0473"
+        href: "https://papers.nips.cc/paper/2014/hash/5a18e133cbf9f257297f410bb7eca942-Abstract.html"
       },
       {
         source: "Google AI",
@@ -670,6 +1021,8 @@ export const posts: BlogPost[] = [
   }
 ];
 
+export const posts: BlogPost[] = [...basePosts, ...csExpansionPosts];
+
 for (const post of posts) {
   post.content = post.locales.en.content;
 }
@@ -706,6 +1059,55 @@ export function getLocalizedPosts(locale: Locale) {
   });
 }
 
+const CATEGORY_TRACK_MAP: Record<string, EditorialTrack> = {
+  "ai fundamentals": "ai",
+  "ml engineering": "ai",
+  "llm systems": "ai",
+  "cs fundamentals": "cs",
+  "systems & backend": "cs",
+  "cloud/devops": "cs",
+  "security & performance": "cs",
+  "career/interviews": "career"
+};
+
+function normalizeCategoryKey(category: string) {
+  return category.trim().toLowerCase();
+}
+
+export function getCategoryTrack(category: string): EditorialTrack {
+  const normalized = normalizeCategoryKey(category);
+  return CATEGORY_TRACK_MAP[normalized] || "cs";
+}
+
+export function getPostTrack(post: Pick<BlogPost, "category" | "track">): EditorialTrack {
+  return post.track || getCategoryTrack(post.category);
+}
+
+export function getPostsByTrack(track: EditorialTrack, locale: Locale) {
+  return getLocalizedPosts(locale).filter((post) => getPostTrack(post) === track);
+}
+
+export function getTrackLabel(track: EditorialTrack, locale: Locale) {
+  if (track === "ai") return locale === "fr" ? "IA" : "AI";
+  if (track === "career") return locale === "fr" ? "Carriere" : "Career";
+  return "CS";
+}
+
+export function getCategoriesByTrack(track: EditorialTrack) {
+  return getAllCategories().filter((category) => getCategoryTrack(category) === track);
+}
+
+export function getTrackCounts(locale: Locale) {
+  const localized = getLocalizedPosts(locale);
+  return localized.reduce(
+    (acc, post) => {
+      acc[getPostTrack(post)] += 1;
+      return acc;
+    },
+    { ai: 0, cs: 0, career: 0 } as Record<EditorialTrack, number>
+  );
+}
+
 export function getPostsByCategory(categorySlug: string, locale: Locale) {
   return getLocalizedPosts(locale).filter((post) => slugify(post.category) === categorySlug);
 }
@@ -719,7 +1121,8 @@ export function getPopularPosts(locale: Locale, limit = 3) {
 }
 
 export function getAllCategories() {
-  return Array.from(new Set(posts.map((post) => post.category)));
+  const dynamicCategories = posts.map((post) => post.category);
+  return Array.from(new Set([...REQUIRED_CATEGORY_COVERAGE, ...dynamicCategories]));
 }
 
 export function getAllTags() {

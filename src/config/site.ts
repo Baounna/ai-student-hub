@@ -45,8 +45,8 @@ function readTestimonial(index: number): Testimonial | null {
   };
 }
 
-const contactEmail = envValue("NEXT_PUBLIC_CONTACT_EMAIL") || "hello@aistudenthub.ai";
-const legalName = envValue("NEXT_PUBLIC_LEGAL_NAME") || "AI Student Hub";
+const contactEmail = envValue("NEXT_PUBLIC_CONTACT_EMAIL") || "bna.mohamed.511@gmail.com";
+const legalName = envValue("NEXT_PUBLIC_LEGAL_NAME") || "AI and Cybersecurity News";
 const affiliatePartners = [1, 2, 3, 4, 5]
   .map((index) => readAffiliatePartner(index))
   .filter((partner): partner is AffiliatePartner => Boolean(partner));
@@ -55,7 +55,7 @@ const testimonials = [1, 2, 3]
   .filter((item): item is Testimonial => Boolean(item));
 
 export const siteConfig = {
-  brandName: "AI Student Hub",
+  brandName: "AI and Cybersecurity News",
   contactEmail,
   legalName,
   linkedinUrl: envValue("NEXT_PUBLIC_LINKEDIN_URL") || "https://www.linkedin.com",
@@ -98,40 +98,15 @@ export const siteConfig = {
     primaryUrl: envValue("NEXT_PUBLIC_DONATION_PRIMARY_URL"),
     stripeUrl: envValue("NEXT_PUBLIC_DONATION_STRIPE_URL"),
     paypalUrl: envValue("NEXT_PUBLIC_DONATION_PAYPAL_URL"),
+    cardUrl: envValue("NEXT_PUBLIC_DONATION_CARD_URL") || envValue("NEXT_PUBLIC_PRODUCT_CHECKOUT_URL"),
+    cardLabel: envValue("NEXT_PUBLIC_DONATION_CARD_LABEL") || "Card checkout",
     koFiUrl: envValue("NEXT_PUBLIC_DONATION_KOFI_URL"),
     githubSponsorsUrl: envValue("NEXT_PUBLIC_DONATION_GITHUB_SPONSORS_URL")
   },
   affiliateDisclosureText: envLocaleValue("AFFILIATE_DISCLOSURE_TEXT_EN", "AFFILIATE_DISCLOSURE_TEXT_FR", {
-    en: "Some links on AI Student Hub are affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you.",
-    fr: "Certains liens sur AI Student Hub sont des liens d'affiliation. Si vous achetez via ces liens, nous pouvons recevoir une commission sans cout supplementaire."
+    en: "Some links on AI and Cybersecurity News are affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you.",
+    fr: "Certains liens sur AI and Cybersecurity News sont des liens d'affiliation. Si vous achetez via ces liens, nous pouvons recevoir une commission sans cout supplementaire."
   }),
   affiliatePartners,
-  testimonials: (testimonials.length
-    ? testimonials
-    : [
-        {
-          quote: {
-            en: "AI Student Hub helped me turn random tutorials into one deployed project and stronger internship interviews.",
-            fr: "AI Student Hub m'a aide a transformer des tutoriels disperses en projet deploye et entretiens plus solides."
-          },
-          name: "AI Student",
-          role: { en: "Computer Science Student", fr: "Etudiant en informatique" }
-        },
-        {
-          quote: {
-            en: "The weekly execution system made my portfolio clearer and easier to explain to recruiters.",
-            fr: "Le systeme hebdomadaire a rendu mon portfolio plus clair et plus facile a expliquer aux recruteurs."
-          },
-          name: "Engineering Student",
-          role: { en: "AI Track Learner", fr: "Apprenant filiere IA" }
-        },
-        {
-          quote: {
-            en: "The resources and comparisons saved me budget and helped me ship faster.",
-            fr: "Les ressources et comparatifs m'ont fait economiser du budget et m'ont aide a livrer plus vite."
-          },
-          name: "ML Student",
-          role: { en: "Student Builder", fr: "Etudiant builder" }
-        }
-      ]) as Testimonial[]
+  testimonials
 };

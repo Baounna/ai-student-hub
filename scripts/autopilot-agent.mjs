@@ -2,9 +2,15 @@
 import { spawn } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { loadScriptEnv } from "./lib/load-env.mjs";
 
 const ROOT = process.cwd();
+loadScriptEnv(ROOT);
 const REPORT_FILE = path.join(ROOT, "docs/agent/autopilot-report.md");
+const PRESERVE_ON_FAILURE_FILES = [
+  path.join(ROOT, "src/content/auto-news.json"),
+  path.join(ROOT, "src/content/auto-tools.json")
+];
 
 function toBoolean(value, fallback) {
   if (value == null || value === "") return fallback;
@@ -37,7 +43,7 @@ function buildQualityEnv() {
   withDefault(env, "SITE_URL", env.NEXT_PUBLIC_SITE_URL);
   withDefault(env, "AUTH_SESSION_SECRET", "autopilot-session-secret-please-change-in-production-123456789");
   withDefault(env, "NEXT_PUBLIC_CONTACT_EMAIL", "hello@aistudenthub.ai");
-  withDefault(env, "NEXT_PUBLIC_LEGAL_NAME", "AI Student Hub");
+  withDefault(env, "NEXT_PUBLIC_LEGAL_NAME", "AI and Cybersecurity News");
   withDefault(env, "NEXT_PUBLIC_LINKEDIN_URL", "https://www.linkedin.com/company/ai-student-hub");
   withDefault(env, "NEXT_PUBLIC_LEAD_MAGNET_URL_EN", "https://aistudenthub.ai/en#newsletter");
   withDefault(env, "NEXT_PUBLIC_LEAD_MAGNET_URL_FR", "https://aistudenthub.ai/fr#newsletter");
@@ -137,9 +143,6 @@ async function runCommand(command, args, options = {}) {
 }
 
 async function readCurrentBranch() {
-  const result = await runCommand("git", ["rev-parse", "--abbrev-ref", "HEAD"]);
-  if (!result.ok) return "";
-
   try {
     const buffer = await fs.readFile(path.join(ROOT, ".git/HEAD"), "utf8");
     const ref = buffer.trim();
@@ -171,9 +174,13 @@ async function getChangedFiles() {
 
   return String(output)
     .split("\n")
-    .map((line) => line.trim())
+    .map((line) => line.replace(/\r/g, ""))
+    .map((line) => (line.length >= 4 ? line.slice(3).trim() : line.trim()))
     .filter(Boolean)
-    .map((line) => line.replace(/^[MADRCU?!\s]+/, "").trim())
+    .map((line) => {
+      const renameParts = line.split("->").map((part) => part.trim()).filter(Boolean);
+      return renameParts.length ? renameParts[renameParts.length - 1] : line;
+    })
     .filter(Boolean);
 }
 
@@ -204,20 +211,92 @@ function buildImpactNotes(changedFiles) {
   return notes;
 }
 
-function buildReport({ generatedAt, attemptsUsed, runResults, changedFiles, committed, pushed }) {
+async function readJsonSafe(filePath) {
+  try {
+    const raw = await fs.readFile(filePath, "utf8");
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+function topSources(items, limit = 5) {
+  const counts = new Map();
+  for (const item of items || []) {
+    const key = String(item?.source || "Unknown");
+    counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  return Array.from(counts.entries())
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, limit);
+}
+
+async function collectSourceCoverage() {
+  const [autoNews, autoTools] = await Promise.all([
+    readJsonSafe(path.join(ROOT, "src/content/auto-news.json")),
+    readJsonSafe(path.join(ROOT, "src/content/auto-tools.json"))
+  ]);
+
+  const newsItems = Array.isArray(autoNews?.items) ? autoNews.items : [];
+  const toolsItems = Array.isArray(autoTools?.items) ? autoTools.items : [];
+
+  return {
+    news: {
+      count: newsItems.length,
+      topSources: topSources(newsItems)
+    },
+    tools: {
+      count: toolsItems.length,
+      topSources: topSources(toolsItems)
+    }
+  };
+}
+
+async function captureFileSnapshots(files) {
+  const snapshots = new Map();
+  await Promise.all(
+    files.map(async (filePath) => {
+      try {
+        const value = await fs.readFile(filePath, "utf8");
+        snapshots.set(filePath, value);
+      } catch {
+        snapshots.set(filePath, null);
+      }
+    })
+  );
+  return snapshots;
+}
+
+async function restoreFileSnapshots(snapshots) {
+  for (const [filePath, value] of snapshots.entries()) {
+    if (typeof value === "string") {
+      await fs.mkdir(path.dirname(filePath), { recursive: true });
+      await fs.writeFile(filePath, value, "utf8");
+      continue;
+    }
+    try {
+      await fs.unlink(filePath);
+    } catch {
+      // no-op
+    }
+  }
+}
+
+function buildReport({ generatedAt, attemptsUsed, runResults, changedFiles, committed, pushed, rolledBack, sourceCoverage }) {
   const lines = [];
   const gateResults = runResults.filter((item) => item.type === "quality");
   const pipelineResults = runResults.filter((item) => item.type === "pipeline");
   const failed = runResults.filter((item) => !item.ok);
   const impactNotes = buildImpactNotes(changedFiles);
 
-  lines.push("# AI Student Hub Autopilot Report");
+  lines.push("# AI and Cybersecurity News Autopilot Report");
   lines.push("");
   lines.push(`Generated: ${generatedAt}`);
   lines.push(`Attempts used: ${attemptsUsed}`);
   lines.push(`Overall status: ${failed.length ? "FAILED" : "SUCCESS"}`);
   lines.push(`Committed: ${committed ? "YES" : "NO"}`);
   lines.push(`Pushed: ${pushed ? "YES" : "NO"}`);
+  lines.push(`Content rollback on failure: ${rolledBack ? "YES" : "NO"}`);
   lines.push("");
 
   lines.push("## What Changed");
@@ -252,6 +331,21 @@ function buildReport({ generatedAt, attemptsUsed, runResults, changedFiles, comm
   }
   lines.push("");
 
+  lines.push("## Source Coverage Summary");
+  lines.push(`- Auto news items: ${sourceCoverage.news.count}`);
+  if (sourceCoverage.news.topSources.length) {
+    sourceCoverage.news.topSources.forEach(([name, count]) => lines.push(`  - ${name}: ${count}`));
+  } else {
+    lines.push("  - No auto news items currently.");
+  }
+  lines.push(`- Auto tools items: ${sourceCoverage.tools.count}`);
+  if (sourceCoverage.tools.topSources.length) {
+    sourceCoverage.tools.topSources.forEach(([name, count]) => lines.push(`  - ${name}: ${count}`));
+  } else {
+    lines.push("  - No auto tools items currently.");
+  }
+  lines.push("");
+
   if (failed.length) {
     lines.push("## Failures");
     failed.forEach((item) => {
@@ -276,6 +370,8 @@ async function run() {
   const runResults = [];
   let attemptsUsed = 0;
   let success = false;
+  let rolledBack = false;
+  let baselineSnapshots = new Map();
 
   if (shouldPull) {
     const detachedHead = await isDetachedHead();
@@ -284,13 +380,16 @@ async function run() {
       : await runCommand("git", ["pull", "--ff-only", "origin", branch]);
     runResults.push({ ...syncResult, type: "pipeline" });
     if (!syncResult.ok) {
+      const sourceCoverage = await collectSourceCoverage();
       const report = buildReport({
         generatedAt,
         attemptsUsed,
         runResults,
         changedFiles: [],
         committed: false,
-        pushed: false
+        pushed: false,
+        rolledBack,
+        sourceCoverage
       });
       await fs.mkdir(path.dirname(REPORT_FILE), { recursive: true });
       await fs.writeFile(REPORT_FILE, report, "utf8");
@@ -298,6 +397,8 @@ async function run() {
       return;
     }
   }
+
+  baselineSnapshots = await captureFileSnapshots(PRESERVE_ON_FAILURE_FILES);
 
   for (let attempt = 1; attempt <= maxRetries; attempt += 1) {
     attemptsUsed = attempt;
@@ -311,7 +412,8 @@ async function run() {
       { args: ["run", "build"] },
       { args: ["run", "verify:production"], env: qualityEnv },
       { args: ["run", "verify:affiliates"], env: qualityEnv },
-      { args: ["run", "verify:public-content"] }
+      { args: ["run", "verify:public-content"] },
+      { args: ["run", "verify:agents"] }
     ];
 
     let attemptOk = true;
@@ -336,12 +438,13 @@ async function run() {
   if (success && shouldCommit) {
     const beforeCommitChanges = await getChangedFiles();
     if (beforeCommitChanges.length) {
-      const configName = await runCommand("git", ["config", "user.name", "AI Student Hub Bot"]);
+      const configName = await runCommand("git", ["config", "user.name", "AI and Cybersecurity News Bot"]);
       runResults.push({ ...configName, type: "pipeline" });
       const configEmail = await runCommand("git", ["config", "user.email", "ai-student-hub-bot@users.noreply.github.com"]);
       runResults.push({ ...configEmail, type: "pipeline" });
 
       if (!configName.ok || !configEmail.ok) {
+        const sourceCoverage = await collectSourceCoverage();
         const changedFiles = await getChangedFiles();
         const report = buildReport({
           generatedAt,
@@ -349,7 +452,9 @@ async function run() {
           runResults,
           changedFiles,
           committed: false,
-          pushed: false
+          pushed: false,
+          rolledBack,
+          sourceCoverage
         });
         await fs.mkdir(path.dirname(REPORT_FILE), { recursive: true });
         await fs.writeFile(REPORT_FILE, report, "utf8");
@@ -378,6 +483,12 @@ async function run() {
     }
   }
 
+  if (!success) {
+    await restoreFileSnapshots(baselineSnapshots);
+    rolledBack = true;
+  }
+
+  const sourceCoverage = await collectSourceCoverage();
   const changedFiles = await getChangedFiles();
   const report = buildReport({
     generatedAt,
@@ -385,7 +496,9 @@ async function run() {
     runResults,
     changedFiles,
     committed,
-    pushed
+    pushed,
+    rolledBack,
+    sourceCoverage
   });
   await fs.mkdir(path.dirname(REPORT_FILE), { recursive: true });
   await fs.writeFile(REPORT_FILE, report, "utf8");
@@ -395,11 +508,11 @@ async function run() {
     return;
   }
 
-  if (shouldCommit && shouldPush && changedFiles.length) {
-    const pushStep = runResults.find((item) => item.command.startsWith("git push"));
-    if (pushStep && !pushStep.ok) {
-      process.exitCode = 1;
-    }
+  // Fail the run if we committed but never pushed (e.g. rebase conflict or push
+  // rejection). Deriving this from `committed`/`pushed` covers the case where the
+  // rebase fails and no "git push" step is ever recorded.
+  if (shouldCommit && shouldPush && committed && !pushed) {
+    process.exitCode = 1;
   }
 }
 

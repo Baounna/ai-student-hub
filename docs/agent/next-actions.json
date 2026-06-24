@@ -1,25 +1,55 @@
 {
-  "generatedAt": "2026-02-20T07:32:27.112Z",
+  "generatedAt": "2026-03-04T16:48:26.477Z",
   "target": {
     "monthlyRevenueUsd": 10
   },
   "summary": {
-    "postsCount": 6,
-    "comparisonsCount": 1,
-    "newsCount": 7,
-    "autoNewsCount": 240
+    "postsCount": 18,
+    "comparisonsCount": 3,
+    "newsCount": 10,
+    "autoNewsCount": 8
+  },
+  "editorial": {
+    "postsCount": 18,
+    "newsCount": 10,
+    "categories": {
+      "total": 8,
+      "missingRequired": []
+    },
+    "tracks": {
+      "counts": {
+        "ai": 2,
+        "cs": 14,
+        "career": 2
+      },
+      "total": 18,
+      "aiShare": 0.1111111111111111,
+      "csShare": 0.7777777777777778,
+      "minCsShare": 0.35,
+      "maxAiShare": 0.6
+    },
+    "citations": {
+      "postsWithReferences": 18,
+      "uncitedPostsEstimate": 0,
+      "sourcedNewsCount": 10,
+      "uncitedNewsEstimate": 0
+    },
+    "splitCoverage": {
+      "blogSplit": false,
+      "newsSplit": false
+    }
   },
   "monetization": {
-    "validAffiliates": 0,
+    "validAffiliates": 5,
     "placementCoverage": {
-      "home": false,
-      "resources": false,
-      "blog": false,
-      "comparison": false
+      "home": true,
+      "resources": true,
+      "blog": true,
+      "comparison": true
     },
-    "hasCheckoutUrl": false,
-    "emailProvider": "none",
-    "hasLeadMagnet": false
+    "hasCheckoutUrl": true,
+    "emailProvider": "convertkit",
+    "hasLeadMagnet": true
   },
   "revenueModel": {
     "assumptions": {
@@ -32,90 +62,90 @@
       "emailOptin": 0.03,
       "emailToProduct": 0.02,
       "infraGates": {
-        "hasAffiliates": false,
-        "hasCheckoutUrl": false,
-        "hasEmailAutomation": false
+        "hasAffiliates": true,
+        "hasCheckoutUrl": true,
+        "hasEmailAutomation": true
       }
     },
     "estimate": {
-      "affiliateRevenue": 0,
-      "productRevenue": 0,
-      "emailRevenue": 0,
-      "totalRevenue": 0,
+      "affiliateRevenue": 9.6,
+      "productRevenue": 18,
+      "emailRevenue": 2.16,
+      "totalRevenue": 29.76,
       "targetUsd": 10,
-      "gapUsd": 10
+      "gapUsd": 0
     }
   },
   "opportunities": [
     {
-      "slug": "20260220-topoflow-physics-guided-neural-networks-for-high-resolution-air--b734674d",
-      "source": "arXiv cs.LG",
+      "slug": "20260304-w3c-official-blog-feed-3042c4aa",
+      "source": "W3C Blog",
       "topic": "Computer Science",
-      "publishedAt": "2026-02-20T05:00:00.000Z",
-      "href": "https://arxiv.org/abs/2602.16821",
-      "sourceTitle": "TopoFlow: Physics-guided Neural Networks for high-resolution air quality prediction",
-      "title": "TopoFlow: Physics-guided Neural Networks for high-resolution air quality prediction: What It Means for AI/CS Students",
-      "keyword": "ai cs update for students arxiv cs.lg",
-      "monetizationAngle": "student-focused practical summary",
-      "cta": "Roadmap + related blog guide"
+      "publishedAt": "2026-03-04T16:22:19.671Z",
+      "href": "https://www.w3.org/blog/",
+      "sourceTitle": "W3C official blog feed",
+      "title": "W3C official blog feed: What It Means for AI/CS Students",
+      "keyword": "computer science workflow for students w3c blog",
+      "monetizationAngle": "CS implementation and tooling decision for student budgets",
+      "cta": "Resources + compare pages"
     },
     {
-      "slug": "20260220-efficient-tail-aware-generative-optimization-via-flow-model-fine-4792cfde",
-      "source": "arXiv cs.LG",
-      "topic": "AI Systems",
-      "publishedAt": "2026-02-20T05:00:00.000Z",
-      "href": "https://arxiv.org/abs/2602.16796",
-      "sourceTitle": "Efficient Tail-Aware Generative Optimization via Flow Model Fine-Tuning",
-      "title": "Efficient Tail-Aware Generative Optimization via Flow Model Fine-Tuning: What It Means for AI/CS Students",
-      "keyword": "how to build arxiv cs.lg",
+      "slug": "20260304-nist-official-news-feed-5ab9607b",
+      "source": "NIST News",
+      "topic": "Security & Standards",
+      "publishedAt": "2026-03-04T16:22:19.671Z",
+      "href": "https://www.nist.gov/news-events/news",
+      "sourceTitle": "NIST official news feed",
+      "title": "NIST official news feed: What It Means for AI/CS Students",
+      "keyword": "api security for student projects nist news",
+      "monetizationAngle": "security checklist and reliability upgrade path for student apps",
+      "cta": "Security guide + resources"
+    },
+    {
+      "slug": "20260304-nvidia-developer-blog-official-feed-c52c714d",
+      "source": "NVIDIA Developer Blog",
+      "topic": "Computer Systems",
+      "publishedAt": "2026-03-04T16:22:19.671Z",
+      "href": "https://developer.nvidia.com/blog/",
+      "sourceTitle": "NVIDIA Developer Blog official feed",
+      "title": "NVIDIA Developer Blog official feed: What It Means for AI/CS Students",
+      "keyword": "how to build nvidia developer blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20260220-escaping-the-cognitive-well-efficient-competition-math-with-off--d4f46e75",
-      "source": "arXiv cs.LG",
-      "topic": "AI Systems",
-      "publishedAt": "2026-02-20T05:00:00.000Z",
-      "href": "https://arxiv.org/abs/2602.16793",
-      "sourceTitle": "Escaping the Cognitive Well: Efficient Competition Math with Off-the-Shelf Models",
-      "title": "Escaping the Cognitive Well: Efficient Competition Math with Off-the-Shelf Models: What It Means for AI/CS Students",
-      "keyword": "how to build arxiv cs.lg",
+      "slug": "20260304-cloudflare-official-blog-feed-b8964568",
+      "source": "Cloudflare Blog",
+      "topic": "Computer Systems",
+      "publishedAt": "2026-03-04T16:22:19.671Z",
+      "href": "https://blog.cloudflare.com/",
+      "sourceTitle": "Cloudflare official blog feed",
+      "title": "Cloudflare official blog feed: What It Means for AI/CS Students",
+      "keyword": "how to build cloudflare blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20260220-better-think-thrice-learning-to-reason-causally-with-double-coun-ed7bee4a",
-      "source": "arXiv cs.LG",
-      "topic": "AI Research",
-      "publishedAt": "2026-02-20T05:00:00.000Z",
-      "href": "https://arxiv.org/abs/2602.16787",
-      "sourceTitle": "Better Think Thrice: Learning to Reason Causally with Double Counterfactual Consistency",
-      "title": "Better Think Thrice: Learning to Reason Causally with Double Counterfactual Consistency: What It Means for AI/CS Students",
-      "keyword": "ai cs update for students arxiv cs.lg",
-      "monetizationAngle": "student-focused practical summary",
-      "cta": "Roadmap + related blog guide"
+      "slug": "20260304-github-blog-official-feed-de50eb10",
+      "source": "GitHub Blog",
+      "topic": "Computer Science",
+      "publishedAt": "2026-03-04T16:22:19.671Z",
+      "href": "https://github.blog/",
+      "sourceTitle": "GitHub Blog official feed",
+      "title": "GitHub Blog official feed: What It Means for AI/CS Students",
+      "keyword": "computer science workflow for students github blog",
+      "monetizationAngle": "CS implementation and tooling decision for student budgets",
+      "cta": "Resources + compare pages"
     },
     {
-      "slug": "20260220-omitted-variable-bias-in-language-models-under-distribution-shif-f3924c91",
-      "source": "arXiv cs.LG",
+      "slug": "20260304-google-ai-blog-official-feed-a7291165",
+      "source": "Google AI Blog",
       "topic": "AI Systems",
-      "publishedAt": "2026-02-20T05:00:00.000Z",
-      "href": "https://arxiv.org/abs/2602.16784",
-      "sourceTitle": "Omitted Variable Bias in Language Models Under Distribution Shift",
-      "title": "Omitted Variable Bias in Language Models Under Distribution Shift: What It Means for AI/CS Students",
-      "keyword": "how to build arxiv cs.lg",
-      "monetizationAngle": "how to build and ship this update as a student project",
-      "cta": "Resources stack + roadmap"
-    },
-    {
-      "slug": "20260220-machine-learning-argument-of-latitude-error-model-for-leo-satell-8e7fe7d8",
-      "source": "arXiv cs.LG",
-      "topic": "AI Systems",
-      "publishedAt": "2026-02-20T05:00:00.000Z",
-      "href": "https://arxiv.org/abs/2602.16764",
-      "sourceTitle": "Machine Learning Argument of Latitude Error Model for LEO Satellite Orbit and Covariance Correction",
-      "title": "Machine Learning Argument of Latitude Error Model for LEO Satellite Orbit and Covariance Correction: What It Means for AI/CS Students",
-      "keyword": "how to build arxiv cs.lg",
+      "publishedAt": "2026-03-04T16:22:19.671Z",
+      "href": "https://blog.google/technology/ai/",
+      "sourceTitle": "Google AI Blog official feed",
+      "title": "Google AI Blog official feed: What It Means for AI/CS Students",
+      "keyword": "how to build google ai blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     }
@@ -123,61 +153,26 @@
   "actions": [
     {
       "priority": "P1",
-      "action": "Add at least 3 valid affiliate links (name + final URL + placement).",
-      "why": "Without valid links, affiliate revenue path is blocked."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: home.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: resources.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: blog.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: comparison.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Set NEXT_PUBLIC_PRODUCT_CHECKOUT_URL (Gumroad/LemonSqueezy) and test buy CTA.",
-      "why": "Product revenue cannot convert without a live checkout URL."
-    },
-    {
-      "priority": "P1",
-      "action": "Enable ConvertKit and connect newsletter form ID/API key.",
-      "why": "Email capture without automation loses warm leads and repeat conversions."
-    },
-    {
-      "priority": "P1",
-      "action": "Set lead magnet URLs for EN/FR and ensure CTA appears on home/resources/posts.",
-      "why": "Lead magnet is the lowest-friction conversion path for student traffic."
-    },
-    {
-      "priority": "P2",
-      "action": "Add lead magnet CTA on blog.",
-      "why": "Increases opt-ins per 100 visitors."
+      "action": "Keep visible AI/CS split filters on both blog and news index pages.",
+      "why": "Split navigation helps users quickly enter the right track and increases session depth."
     },
     {
       "priority": "P2",
       "action": "Add lead magnet CTA on compare.",
       "why": "Increases opt-ins per 100 visitors."
+    },
+    {
+      "priority": "P3",
+      "action": "Review weekly: CS share, citation coverage, and CTA CTR. Update weakest section copy.",
+      "why": "Editorial quality and conversion copy iteration compound growth without extra acquisition cost."
     }
   ],
   "drafts": {
     "perRun": 2,
     "generatedCount": 2,
     "generatedFiles": [
-      "docs/agent/drafts/20260220--20260220-topoflow-physics-guided-neural-networks-for-high-resolution-air--b734674d.md",
-      "docs/agent/drafts/20260220--20260220-efficient-tail-aware-generative-optimization-via-flow-model-fine-4792cfde.md"
+      "docs/agent/drafts/20260304--20260304-github-blog-official-feed-de50eb10.md",
+      "docs/agent/drafts/20260304--20260304-google-ai-blog-official-feed-a7291165.md"
     ]
   }
 }

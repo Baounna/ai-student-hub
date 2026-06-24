@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-20T07:32:27.154Z",
-  "repository": "Baounna/ai-student-hub",
+  "generatedAt": "2026-03-04T16:48:26.484Z",
+  "repository": "",
   "mode": "dry-run",
   "maxPerRun": 3,
   "sources": [
@@ -9,18 +9,18 @@
       "label": "Operator",
       "queueFile": "docs/agent/next-actions.json",
       "enabled": true,
-      "queueGeneratedAt": "2026-02-20T07:32:27.112Z",
-      "totalActions": 10,
-      "selectedCount": 3
+      "queueGeneratedAt": "2026-03-04T16:24:14.967Z",
+      "totalActions": 3,
+      "selectedCount": 1
     },
     {
       "sourceId": "design",
       "label": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "enabled": false,
-      "queueGeneratedAt": "",
-      "totalActions": 0,
-      "selectedCount": 0
+      "enabled": true,
+      "queueGeneratedAt": "2026-03-04T16:24:15.042Z",
+      "totalActions": 4,
+      "selectedCount": 2
     }
   ],
   "summary": {
@@ -28,7 +28,7 @@
     "existing": 0,
     "dryRun": 3,
     "errors": 0,
-    "tracked": 6
+    "tracked": 14
   },
   "items": [
     {
@@ -46,7 +46,7 @@
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
       "lastSeenAt": "2026-02-20T07:32:27.154Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "a8f39a3cbc2c9fd0",
@@ -63,7 +63,7 @@
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
       "lastSeenAt": "2026-02-20T07:32:27.154Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "cb9aea0bb5576d89",
@@ -80,7 +80,7 @@
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
       "lastSeenAt": "2026-02-20T07:32:27.154Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "df74184273544a1a",
@@ -121,7 +121,7 @@
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-02-19T23:18:46.028Z",
+      "queueGeneratedAt": "2026-02-20T17:15:11.895Z",
       "priority": "P1",
       "action": "Enable ConvertKit and connect newsletter form ID/API key.",
       "why": "Email capture without automation loses warm leads and repeat conversions.",
@@ -130,7 +130,143 @@
       "title": "[Operator P1] Enable ConvertKit and connect newsletter form ID/API key.",
       "status": "dry-run",
       "createdAt": "2026-02-19T23:11:19.678Z",
-      "lastSeenAt": "2026-02-19T23:18:46.194Z",
+      "lastSeenAt": "2026-02-20T17:15:12.071Z",
+      "inQueue": false
+    },
+    {
+      "hash": "3ddc93b51f373fa2",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-03-04T16:24:14.967Z",
+      "priority": "P1",
+      "action": "Keep visible AI/CS split filters on both blog and news index pages.",
+      "why": "Split navigation helps users quickly enter the right track and increases session depth.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P1] Keep visible AI/CS split filters on both blog and news index pages.",
+      "status": "dry-run",
+      "createdAt": "2026-03-04T16:23:17.094Z",
+      "lastSeenAt": "2026-03-04T16:48:26.484Z",
+      "inQueue": true
+    },
+    {
+      "hash": "284d61272ba9505d",
+      "sourceId": "design",
+      "sourceLabel": "Design",
+      "queueFile": "docs/agent/design-actions.json",
+      "queueGeneratedAt": "2026-03-04T16:24:15.042Z",
+      "priority": "P1",
+      "action": "Keep CS-first value proposition cards visible on homepage.",
+      "why": "CS-first framing balances publication positioning beyond AI-only messaging.",
+      "file": "src/app/[lang]/page.tsx",
+      "checkId": "home-cs-first-block",
+      "title": "[Design P1] Keep CS-first value proposition cards visible on homepage.",
+      "status": "dry-run",
+      "createdAt": "2026-03-04T16:23:17.094Z",
+      "lastSeenAt": "2026-03-04T16:48:26.484Z",
+      "inQueue": true
+    },
+    {
+      "hash": "29e4e1db629195e3",
+      "sourceId": "design",
+      "sourceLabel": "Design",
+      "queueFile": "docs/agent/design-actions.json",
+      "queueGeneratedAt": "2026-03-04T16:24:15.042Z",
+      "priority": "P1",
+      "action": "Use clean field-input styling for search with clear visual hierarchy.",
+      "why": "Simple high-contrast search fields improve scan speed and reduce visual noise.",
+      "file": "src/components/ui/header-search-form.tsx",
+      "checkId": "header-search-premium-shell",
+      "title": "[Design P1] Use clean field-input styling for search with clear visual hierarchy.",
+      "status": "dry-run",
+      "createdAt": "2026-03-04T16:23:17.094Z",
+      "lastSeenAt": "2026-03-04T16:48:26.484Z",
+      "inQueue": true
+    },
+    {
+      "hash": "a43b57be5e63216d",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-02-20T17:15:11.895Z",
+      "priority": "P2",
+      "action": "Add lead magnet CTA on blog.",
+      "why": "Increases opt-ins per 100 visitors.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P2] Add lead magnet CTA on blog.",
+      "status": "dry-run",
+      "createdAt": "2026-02-20T17:15:12.071Z",
+      "lastSeenAt": "2026-02-20T17:15:12.071Z",
+      "inQueue": false
+    },
+    {
+      "hash": "47e47e1d8303a4d2",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-03-04T16:24:14.967Z",
+      "priority": "P2",
+      "action": "Add lead magnet CTA on compare.",
+      "why": "Increases opt-ins per 100 visitors.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P2] Add lead magnet CTA on compare.",
+      "status": "dry-run",
+      "createdAt": "2026-02-20T17:15:12.071Z",
+      "lastSeenAt": "2026-03-04T16:24:15.184Z",
+      "inQueue": false
+    },
+    {
+      "hash": "8a7997bd695b6700",
+      "sourceId": "design",
+      "sourceLabel": "Design",
+      "queueFile": "docs/agent/design-actions.json",
+      "queueGeneratedAt": "2026-03-04T16:24:15.042Z",
+      "priority": "P2",
+      "action": "Keep AI/CS split filters on news page with track chips.",
+      "why": "Split navigation improves topical relevance and retention.",
+      "file": "src/app/[lang]/news/page.tsx",
+      "checkId": "news-ai-cs-split",
+      "title": "[Design P2] Keep AI/CS split filters on news page with track chips.",
+      "status": "dry-run",
+      "createdAt": "2026-03-04T16:24:15.184Z",
+      "lastSeenAt": "2026-03-04T16:24:15.184Z",
+      "inQueue": false
+    },
+    {
+      "hash": "a9da1b62d9397f02",
+      "sourceId": "design",
+      "sourceLabel": "Design",
+      "queueFile": "docs/agent/design-actions.json",
+      "queueGeneratedAt": "2026-03-04T16:24:15.042Z",
+      "priority": "P2",
+      "action": "Keep visible AI/CS split filters near blog hero.",
+      "why": "Track split improves content discovery speed for mixed AI+CS audience.",
+      "file": "src/app/[lang]/blog/page.tsx",
+      "checkId": "index-ai-cs-split",
+      "title": "[Design P2] Keep visible AI/CS split filters near blog hero.",
+      "status": "dry-run",
+      "createdAt": "2026-03-04T16:24:15.184Z",
+      "lastSeenAt": "2026-03-04T16:24:15.184Z",
+      "inQueue": false
+    },
+    {
+      "hash": "248481031686fca1",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-02-27T13:15:06.195Z",
+      "priority": "P3",
+      "action": "Review weekly: CS share, citation coverage, and CTA CTR. Update weakest section copy.",
+      "why": "Editorial quality and conversion copy iteration compound growth without extra acquisition cost.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P3] Review weekly: CS share, citation coverage, and CTA CTR. Update weakest section cop…",
+      "status": "dry-run",
+      "createdAt": "2026-02-20T17:15:12.071Z",
+      "lastSeenAt": "2026-03-04T15:56:53.207Z",
       "inQueue": false
     }
   ]

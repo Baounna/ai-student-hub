@@ -57,7 +57,9 @@ function collectTrustedOrigins() {
 }
 
 function isPrivateNetworkHost(hostname: string) {
-  const host = hostname.toLowerCase();
+  // URL.hostname keeps the surrounding brackets for IPv6 literals (e.g. "[::1]"),
+  // which makes isIP() return 0 and skips the IPv6 checks entirely. Strip them.
+  const host = hostname.toLowerCase().replace(/^\[(.+)\]$/, "$1");
   if (LOCALHOST_HOSTS.has(host) || host.endsWith(".local")) return true;
 
   const ipVersion = isIP(host);
@@ -77,6 +79,11 @@ function isPrivateNetworkHost(hostname: string) {
     if (host === "::1") return true;
     if (host.startsWith("fe80:")) return true;
     if (host.startsWith("fc") || host.startsWith("fd")) return true;
+    // IPv4-mapped IPv6 (e.g. ::ffff:127.0.0.1) must be classified by its IPv4 part,
+    // otherwise loopback/link-local/private targets bypass the SSRF guard.
+    const v4Mapped = host.match(/^::ffff:(\d{1,3}(?:\.\d{1,3}){3})$/);
+    if (v4Mapped) return isPrivateNetworkHost(v4Mapped[1]);
+    if (host.startsWith("::ffff:")) return true;
     return false;
   }
 
@@ -109,7 +116,10 @@ export function isTrustedMutationRequest(request: Request) {
   const fetchSite = (request.headers.get("sec-fetch-site") || "").trim().toLowerCase();
   if (LOW_TRUST_FETCH_SITES.has(fetchSite)) return false;
 
-  // Non-browser/server requests may not send origin hints; allow them.
+  // In production, fail closed when no trustworthy browser origin hints are present.
+  if (process.env.NODE_ENV === "production") return false;
+
+  // In local/dev workflows, allow non-browser requests (scripts/tests).
   return true;
 }
 

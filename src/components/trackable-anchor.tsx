@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import { trackEvent } from "@/lib/track";
 import type { TrackEventName, TrackMeta } from "@/lib/tracking-schema";
+import { isSafeHttpUrl } from "@/lib/url";
 
 type TrackableAnchorProps = {
   href: string;
@@ -15,7 +16,16 @@ type TrackableAnchorProps = {
 };
 
 export function TrackableAnchor({ href, event, className, target, rel, meta, children }: TrackableAnchorProps) {
+  const isInternalHref = href.startsWith("/") && !href.startsWith("//");
+  const isSafeExternalHref = isSafeHttpUrl(href);
+  const canNavigate = isInternalHref || isSafeExternalHref;
+  const resolvedHref = canNavigate ? href : "#";
+
   const relTokens = new Set((rel || "").split(/\s+/).filter(Boolean));
+  if (target === "_blank") {
+    relTokens.add("noopener");
+    relTokens.add("noreferrer");
+  }
   if (event === "affiliate_click") {
     relTokens.add("noopener");
     relTokens.add("noreferrer");
@@ -25,11 +35,18 @@ export function TrackableAnchor({ href, event, className, target, rel, meta, chi
 
   return (
     <a
-      href={href}
+      href={resolvedHref}
       target={target}
       rel={resolvedRel}
       className={className}
-      onClick={() => trackEvent(event, { href, ...(meta || {}) })}
+      onClick={(eventObject) => {
+        if (!canNavigate) {
+          eventObject.preventDefault();
+          return;
+        }
+        trackEvent(event, { href, ...(meta || {}) });
+      }}
+      aria-disabled={!canNavigate}
     >
       {children}
     </a>

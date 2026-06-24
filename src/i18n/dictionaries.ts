@@ -79,8 +79,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
       roadmap: "Free Roadmap"
     },
     footer: {
-      title: "AI Student Hub",
-      description: "Practical AI execution for engineering students building careers.",
+      title: "AI and Cybersecurity News",
+      description: "Practical AI + cybersecurity execution for anyone who builds, learns, or works with AI. Students remain a key sub-audience.",
       resources: "Resources",
       tutorials: "Tutorials",
       tools: "Recommended Tools",
@@ -91,56 +91,56 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       badge: "Positioning Statement",
-      headline: "Build AI Projects That Turn Into Internships, Authority, and Income",
+      headline: "AI + Cybersecurity News and Execution Guides for Real Builders",
       subheadline:
-        "AI Student Hub is the execution platform for engineering students who want career outcomes, not passive learning.",
+        "Execution-first updates, tools, and guides for builders, learners, teams, and researchers. Students keep a dedicated path for roadmap, career, and budget-friendly workflows.",
       ctaPrimary: "Get Free AI Career Roadmap",
       ctaSecondary: "Explore Blog",
       trust: [
         "Project-first playbooks",
         "Practical deployment systems",
-        "Student budget focused",
+        "Budget-friendly workflows",
         "EN/FR content"
       ],
       popular: "Most Popular",
       socialProof: "Social Proof"
     },
     blog: {
-      title: "Build, Ship, and Grow as an AI Engineer",
-      subtitle: "Tactical tutorials and systems for stronger portfolios and internship conversion.",
+      title: "Build, Ship, and Grow as an AI + Cybersecurity Engineer",
+      subtitle: "Tactical tutorials and systems for stronger portfolios across AI, backend, cloud, and cybersecurity operations.",
       latest: "Latest Articles",
       readPost: "Read post",
       related: "Related Articles",
       inPostCallout: "Useful Tool Stack",
       inPostCalloutBody:
-        "Want to execute this faster? Check the resources stack for student-friendly tools and deployment options.",
+        "Want to execute this faster? Check the resources stack for practical, budget-friendly tools and deployment options.",
       openResources: "Open resources page"
     },
     about: {
-      title: "Building Career-Ready AI Engineers",
+      title: "Building Reliable AI + Cybersecurity Execution for Everyone",
       subtitle:
-        "I help students ship portfolio-grade projects and convert that execution into internship and early-career outcomes."
+        "I help people ship portfolio-grade projects and convert execution into measurable outcomes. Students remain a core sub-audience."
     },
     resources: {
-      title: "Recommended Tools for AI Students",
+      title: "Recommended Tools for AI + Cybersecurity Builders",
       subtitle:
-        "Tools selected for practical ROI: faster shipping, better learning loops, and conversion-focused execution."
+        "Tools selected for practical ROI: faster shipping, better learning loops, and execution-focused workflows across AI and cybersecurity."
     },
     news: {
-      title: "AI + CS News for Students",
+      title: "AI + Cybersecurity News for Everyone",
       subtitle:
-        "Weekly briefs that explain what changed, why it matters for students, and what to build next.",
+        "Weekly briefs that explain what changed, why it matters in practice, and what to build next.",
       latest: "Latest briefs",
-      impact: "Student impact",
+      impact: "Practical impact",
       actions: "Action steps",
       source: "Source context",
       readBrief: "Read brief",
-      weeklyDigestTitle: "Get the weekly AI + CS digest",
+      weeklyDigestTitle: "Get the weekly AI + Cybersecurity digest",
       weeklyDigestBody:
-        "Every week: top signals, practical action plan, and one high-ROI project idea for AI/engineering students.",
+        "Every week: top signals, practical action plan, and one high-ROI project idea for builders. Student-focused resources are included.",
       openBlog: "Open blog",
       openResources: "Open resources",
-      openCompare: "Open comparisons"
+      openCompare: "Open tools lab"
     },
     newsletter: {
       badge: "Free AI Career Roadmap",
@@ -159,8 +159,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
       roadmap: "Roadmap gratuite"
     },
     footer: {
-      title: "AI Student Hub",
-      description: "Exécution IA pratique pour les étudiants en ingénierie qui construisent leur carrière.",
+      title: "AI and Cybersecurity News",
+      description: "Execution IA + cybersecurite pratique pour toute personne qui construit, apprend, ou travaille avec l'IA. Les etudiants restent un public cle.",
       resources: "Ressources",
       tutorials: "Tutoriels",
       tools: "Outils recommandés",
@@ -171,23 +171,23 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       badge: "Positionnement",
-      headline: "Construis des projets IA qui deviennent stages, autorité et revenus",
+      headline: "Actualites et guides d'execution IA + cybersecurite pour tous",
       subheadline:
-        "AI Student Hub est la plateforme d'exécution pour les étudiants en ingénierie qui veulent des résultats carrière.",
+        "Updates, outils, et guides orientes execution pour builders, apprenants, equipes, et chercheurs. Les etudiants gardent un parcours dedie roadmap, carriere, et budget-friendly.",
       ctaPrimary: "Obtenir la roadmap IA",
       ctaSecondary: "Explorer le blog",
       trust: [
         "Playbooks orientes projet",
         "Systemes de deploiement pratiques",
-        "Optimise budget etudiant",
+        "Approche budget-friendly",
         "Contenu EN/FR"
       ],
       popular: "Les plus populaires",
       socialProof: "Preuves sociales"
     },
     blog: {
-      title: "Construire, livrer et progresser comme ingénieur IA",
-      subtitle: "Tutoriels tactiques et systèmes pour portfolio solide et conversion en stage.",
+      title: "Construire, livrer et progresser comme ingenieur IA + cybersecurite",
+      subtitle: "Tutoriels tactiques et systemes pour portfolio solide en IA, backend, cloud et cybersecurite.",
       latest: "Derniers articles",
       readPost: "Lire l'article",
       related: "Articles liés",
@@ -197,30 +197,30 @@ export const dictionaries: Record<Locale, Dictionary> = {
       openResources: "Voir les ressources"
     },
     about: {
-      title: "Former des ingénieurs IA prêts pour le marché",
+      title: "Construire une execution IA + cybersecurite fiable pour tous",
       subtitle:
-        "J'aide les étudiants à livrer des projets portfolio et à transformer cette exécution en stages et opportunités."
+        "J'aide les personnes a livrer des projets portfolio et a transformer l'execution en resultats mesurables. Les etudiants restent un sous-public prioritaire."
     },
     resources: {
-      title: "Outils recommandés pour étudiants IA",
+      title: "Outils recommandes pour builders IA + cybersecurite",
       subtitle:
-        "Des outils choisis pour un ROI concret : livrer plus vite, apprendre mieux et convertir l'audience."
+        "Des outils choisis pour un ROI concret : livrer plus vite, apprendre mieux et convertir l'audience sur l'IA et la cybersecurite."
     },
     news: {
-      title: "Actualites IA + Informatique pour etudiants",
+      title: "Actualites IA + Cybersecurite pour tous",
       subtitle:
-        "Des briefs hebdomadaires: ce qui change, pourquoi c'est important pour les etudiants, et quoi construire ensuite.",
+        "Des briefs hebdomadaires: ce qui change, pourquoi c'est important en pratique, et quoi construire ensuite.",
       latest: "Derniers briefs",
-      impact: "Impact etudiant",
+      impact: "Impact pratique",
       actions: "Actions recommandees",
       source: "Contexte source",
       readBrief: "Lire le brief",
-      weeklyDigestTitle: "Recevoir le digest IA + informatique",
+      weeklyDigestTitle: "Recevoir le digest IA + cybersecurite",
       weeklyDigestBody:
-        "Chaque semaine: signaux majeurs, plan d'action concret, et une idee de projet a fort ROI pour etudiants IA/ingenierie.",
+        "Chaque semaine: signaux majeurs, plan d'action concret, et une idee de projet a fort ROI pour builders. Les ressources etudiantes restent incluses.",
       openBlog: "Ouvrir le blog",
       openResources: "Voir les ressources",
-      openCompare: "Voir les comparatifs"
+      openCompare: "Ouvrir la section outils"
     },
     newsletter: {
       badge: "Roadmap carrière IA gratuite",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { ArticleToc } from "@/components/article-toc";
 import { BackToTop } from "@/components/back-to-top";
@@ -112,12 +113,12 @@ function getTopicBrief(topic: string, locale: Locale) {
         ? [
             "Resumer la nouveaute en langage simple.",
             "Montrer une application pratique immediate.",
-            "Ajouter 2 liens internes vers resources/compare."
+            "Ajouter 2 liens utiles vers resources/compare."
           ]
         : [
             "Summarize the update in simple terms.",
             "Show one immediate practical application.",
-            "Add 2 internal links to resources/compare."
+            "Add 2 useful links to resources/compare."
           ],
       nextStep: fr
         ? "Prochaine etape: relie ce brief a une ressource et a un guide pratique."
@@ -168,6 +169,7 @@ export default function AutoNewsDetailPage({ params }: { params: { lang: string;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
+  const nonce = headers().get("x-csp-nonce") || undefined;
   const fr = locale === "fr";
   const dict = getDictionary(locale);
   const item = getAutoNewsBySlug(params.slug, locale);
@@ -177,7 +179,7 @@ export default function AutoNewsDetailPage({ params }: { params: { lang: string;
   const recentSignals = getAutoNews(locale, 5).filter((entry) => entry.slug !== item.slug).slice(0, 3);
   const tocItems = [
     { id: "summary", label: fr ? "Resume" : "Summary" },
-    { id: "impact", label: fr ? "Impact etudiant" : "Student impact" },
+    { id: "impact", label: fr ? "Impact pratique" : "Practical impact" },
     { id: "actions", label: fr ? "Actions" : "Actions" },
     { id: "references", label: "References" },
     { id: "next", label: fr ? "Suite" : "Next steps" },
@@ -194,7 +196,7 @@ export default function AutoNewsDetailPage({ params }: { params: { lang: string;
     inLanguage: locale,
     publisher: {
       "@type": "Organization",
-      name: "AI Student Hub",
+      name: "AI and Cybersecurity News",
       logo: {
         "@type": "ImageObject",
         url: absoluteUrl("/icon.svg")
@@ -202,7 +204,7 @@ export default function AutoNewsDetailPage({ params }: { params: { lang: string;
     },
     author: {
       "@type": "Organization",
-      name: "AI Student Hub"
+      name: "AI and Cybersecurity News"
     },
     mainEntityOfPage: absoluteUrl(`/${locale}/news/auto/${item.slug}`),
     image: [absoluteUrl("/images/post-deploy.svg")],
@@ -213,10 +215,10 @@ export default function AutoNewsDetailPage({ params }: { params: { lang: string;
   return (
     <article className="page-shell max-w-6xl py-10 md:py-12">
       <ReadingProgress />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <Breadcrumbs
         items={[
-          { label: "AI Student Hub", href: `/${locale}` },
+          { label: "AI and Cybersecurity News", href: `/${locale}` },
           { label: dict.nav.news, href: `/${locale}/news` },
           { label: fr ? "Brief auto" : "Auto brief" }
         ]}

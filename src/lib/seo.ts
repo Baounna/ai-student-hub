@@ -14,86 +14,101 @@ type SeoSection =
 
 const BASE_KEYWORDS: Record<Locale, string[]> = {
   en: [
-    "ai student blog",
-    "ai engineering for students",
-    "computer science student resources",
-    "machine learning projects",
-    "ai internship roadmap"
+    "ai news",
+    "ai tools",
+    "ai updates",
+    "computer science news",
+    "machine learning releases",
+    "developer tools",
+    "ai and computer science guides",
+    "ai student hub",
+    "budget friendly ai tools for students"
   ],
   fr: [
-    "blog ia etudiant",
-    "ingenierie ia pour etudiants",
-    "ressources informatique etudiant",
-    "projets machine learning",
-    "roadmap stage ia"
+    "actualites ia",
+    "outils ia",
+    "mises a jour ia",
+    "actualites informatique",
+    "sorties machine learning",
+    "outils developpeur",
+    "guides ia et informatique",
+    "ai student hub",
+    "outils ia budget-friendly pour etudiants"
   ]
 };
 
 const SECTION_KEYWORDS: Record<SeoSection, Record<Locale, string[]>> = {
   home: {
     en: [
-      "ai and cs news for students",
-      "student ai roadmap",
-      "portfolio projects for ai students",
-      "ai student hub"
+      "ai + computer science news and execution guides",
+      "ai learning and building hub",
+      "for everyone ai updates",
+      "student ai roadmap"
     ],
     fr: [
-      "actualites ia et informatique",
-      "roadmap ia etudiant",
-      "projets portfolio ia",
-      "ai student hub"
+      "actualites ia + informatique et guides execution",
+      "hub apprentissage et production ia",
+      "mises a jour ia pour tous",
+      "roadmap ia etudiant"
     ]
   },
   blog: {
     en: [
-      "ai tutorials for students",
+      "ai tutorials",
+      "computer science tutorials",
       "ml engineering tutorials",
-      "ai portfolio guide",
-      "student ml blog"
+      "backend systems guides",
+      "career execution guides"
     ],
     fr: [
-      "tutoriels ia pour etudiants",
+      "tutoriels ia",
+      "tutoriels informatique",
       "tutoriels ml engineering",
-      "guide portfolio ia",
-      "blog ml etudiant"
+      "guides backend systemes",
+      "guides execution carriere"
     ]
   },
   blogPost: {
-    en: ["ai article with sources", "engineering career guide", "student project execution"],
-    fr: ["article ia avec sources", "guide carriere ingenierie", "execution projet etudiant"]
+    en: ["ai and cs article with sources", "practical engineering guide", "execution roadmap"],
+    fr: ["article ia et informatique avec sources", "guide ingenierie pratique", "roadmap execution"]
   },
   news: {
-    en: ["ai news for students", "computer science news", "weekly ai brief", "ai updates with sources"],
-    fr: [
-      "actualites ia pour etudiants",
-      "actualites informatique",
-      "brief ia hebdomadaire",
-      "mise a jour ia avec sources"
-    ]
+    en: ["ai releases", "ai product updates", "computer science updates", "weekly ai and cs brief"],
+    fr: ["sorties ia", "mises a jour produits ia", "mises a jour informatique", "brief hebdomadaire ia et informatique"]
   },
   newsPost: {
-    en: ["ai news analysis", "student impact of ai updates", "computer science trend brief"],
-    fr: ["analyse actualite ia", "impact etudiant des updates ia", "brief tendance informatique"]
+    en: ["ai and cs news analysis", "practical impact of ai updates", "computer science trend brief"],
+    fr: ["analyse actualite ia et informatique", "impact pratique des updates ia", "brief tendance informatique"]
   },
   resources: {
-    en: ["best ai tools for students", "student budget ai tools", "ai resource stack", "ml tools comparison"],
-    fr: ["meilleurs outils ia etudiant", "outils ia budget etudiant", "stack ressources ia", "comparatif outils ml"]
+    en: [
+      "best ai and cs tools",
+      "developer productivity tools",
+      "research tools",
+      "student budget ai tools"
+    ],
+    fr: ["meilleurs outils ia et informatique", "outils productivite developpeur", "outils recherche", "outils ia budget etudiant"]
   },
   compare: {
-    en: ["best ai tool comparison", "ai tools vs", "student cloud comparison", "ml platform comparison"],
-    fr: ["comparatif outils ia", "outils ia vs", "comparatif cloud etudiant", "comparatif plateforme ml"]
+    en: [
+      "ai tools comparison",
+      "developer tools comparison",
+      "cloud and backend tools comparison",
+      "ai tools vs"
+    ],
+    fr: ["comparatif outils ia", "comparatif outils developpeur", "comparatif outils cloud et backend", "outils ia vs"]
   },
   product: {
-    en: ["ai career guide", "student ai ebook", "internship preparation guide", "ai student digital product"],
-    fr: ["guide carriere ia", "ebook ia etudiant", "guide preparation stage", "produit digital ia etudiant"]
+    en: ["ai career guide", "execution roadmap", "internship preparation guide", "digital guide ai cs"],
+    fr: ["guide carriere ia", "roadmap execution", "guide preparation stage", "guide digital ia informatique"]
   },
   about: {
-    en: ["about ai student hub", "ai student founder", "ai education platform"],
-    fr: ["a propos ai student hub", "fondateur ia etudiant", "plateforme education ia"]
+    en: ["about ai student hub", "ai and cs publication", "founder ai cs"],
+    fr: ["a propos ai student hub", "publication ia et informatique", "fondateur ia informatique"]
   },
   growth: {
-    en: ["blog growth sprint", "student creator growth plan", "seo content sprint ai"],
-    fr: ["sprint croissance blog", "plan croissance createur etudiant", "sprint contenu seo ia"]
+    en: ["blog growth sprint", "content execution plan", "seo content sprint ai"],
+    fr: ["sprint croissance blog", "plan execution contenu", "sprint contenu seo ia"]
   }
 };
 

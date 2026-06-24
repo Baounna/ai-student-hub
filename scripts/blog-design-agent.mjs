@@ -1,11 +1,21 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
+import { loadScriptEnv } from "./lib/load-env.mjs";
 
 const ROOT = process.cwd();
+loadScriptEnv(ROOT);
 const FILES = {
+  layout: path.join(ROOT, "src/app/[lang]/layout.tsx"),
+  headerSearch: path.join(ROOT, "src/components/ui/header-search-form.tsx"),
+  home: path.join(ROOT, "src/app/[lang]/page.tsx"),
   blogIndex: path.join(ROOT, "src/app/[lang]/blog/page.tsx"),
   blogPost: path.join(ROOT, "src/app/[lang]/blog/[slug]/page.tsx"),
+  newsIndex: path.join(ROOT, "src/app/[lang]/news/page.tsx"),
+  compareIndex: path.join(ROOT, "src/app/[lang]/compare/page.tsx"),
+  compareDetail: path.join(ROOT, "src/app/[lang]/compare/[slug]/page.tsx"),
+  appearanceShell: path.join(ROOT, "src/components/ui/appearance-panel-shell.tsx"),
+  stickyToolsCta: path.join(ROOT, "src/components/sticky-tools-cta.tsx"),
   styles: path.join(ROOT, "src/app/globals.css")
 };
 
@@ -13,6 +23,42 @@ const REPORT_FILE = path.join(ROOT, "docs/agent/design-report.md");
 const ACTIONS_FILE = path.join(ROOT, "docs/agent/design-actions.json");
 
 const CHECKS = [
+  {
+    id: "layout-header-search-component",
+    label: "Header uses unified search component",
+    file: "layout",
+    test: /<HeaderSearchForm locale=\{locale\} \/>/,
+    weight: 7,
+    action: "Use the shared HeaderSearchForm component in localized layout.",
+    why: "A single search component keeps UX and conversion behavior consistent across pages."
+  },
+  {
+    id: "header-search-premium-shell",
+    label: "Header search clean field styling",
+    file: "headerSearch",
+    test: /field-input h-11.*btn-secondary h-11/s,
+    weight: 7,
+    action: "Use clean field-input styling for search with clear visual hierarchy.",
+    why: "Simple high-contrast search fields improve scan speed and reduce visual noise."
+  },
+  {
+    id: "header-search-clear-ux",
+    label: "Search clear/reset interaction",
+    file: "headerSearch",
+    test: /clearSearch\(\).*Escape/s,
+    weight: 6,
+    action: "Keep clear/reset behavior for query input including Escape handling.",
+    why: "Clear search controls reduce friction and improve repeated searches."
+  },
+  {
+    id: "header-search-shortcut-hint",
+    label: "Search shortcut hint on desktop",
+    file: "headerSearch",
+    test: /xl:inline-flex/,
+    weight: 5,
+    action: "Keep keyboard shortcut hint to reinforce fast search behavior.",
+    why: "Visible shortcuts improve repeated navigation speed for power users."
+  },
   {
     id: "index-hero",
     label: "Blog index hero section",
@@ -41,13 +87,76 @@ const CHECKS = [
     why: "Featured content guides attention toward best converting content."
   },
   {
-    id: "index-quick-filters",
-    label: "Quick category filters",
+    id: "index-ai-cs-split",
+    label: "Blog AI+CS split filters",
     file: "blogIndex",
-    test: /Quick filters|Filtres rapides/,
+    test: /AI \+ CS split|Split IA \+ informatique/,
     weight: 6,
-    action: "Add quick category chips near the hero section.",
-    why: "Filter chips increase exploration depth and pages per session."
+    action: "Keep visible AI/CS split filters near blog hero.",
+    why: "Track split improves content discovery speed for mixed AI+CS audience."
+  },
+  {
+    id: "home-track-entry",
+    label: "Homepage AI and CS entry cards",
+    file: "home",
+    test: /AI Track|Computer Science Track|Piste IA|Piste informatique/,
+    weight: 7,
+    action: "Preserve clear split entry cards for AI and CS tracks on homepage.",
+    why: "Dual entry points reduce confusion and improve route-to-value."
+  },
+  {
+    id: "home-cs-first-block",
+    label: "Homepage CS-first value block",
+    file: "home",
+    test: /CS-first value proposition|Proposition CS-first/,
+    weight: 7,
+    action: "Keep CS-first value proposition cards visible on homepage.",
+    why: "CS-first framing balances publication positioning beyond AI-only messaging."
+  },
+  {
+    id: "news-ai-cs-split",
+    label: "News AI+CS split filters",
+    file: "newsIndex",
+    test: /AI \+ CS split|Split IA \+ informatique/,
+    weight: 6,
+    action: "Keep AI/CS split filters on news page with track chips.",
+    why: "Split navigation improves topical relevance and retention."
+  },
+  {
+    id: "compare-index-premium-hero",
+    label: "Tools index premium hero sizing",
+    file: "compareIndex",
+    test: /tools-hero-title/,
+    weight: 6,
+    action: "Use tools-specific hero sizing for clearer hierarchy on tools page.",
+    why: "Large utility pages need controlled heading scale to preserve readability."
+  },
+  {
+    id: "compare-detail-premium-hero",
+    label: "Tools detail premium hero sizing",
+    file: "compareDetail",
+    test: /tools-hero-title/,
+    weight: 6,
+    action: "Use tools-specific hero sizing for comparison detail pages.",
+    why: "Balanced heading scale improves scanning for high-intent buying pages."
+  },
+  {
+    id: "compare-hide-appearance-panel",
+    label: "Appearance panel hidden on tools pages",
+    file: "appearanceShell",
+    test: /HIDDEN_ROOT_SEGMENTS[^]*compare/,
+    weight: 5,
+    action: "Hide appearance panel on tools routes to reduce visual clutter.",
+    why: "Removing side controls on conversion pages keeps focus on decisions and CTAs."
+  },
+  {
+    id: "sticky-tools-mobile-only",
+    label: "Tools sticky CTA mobile-only behavior",
+    file: "stickyToolsCta",
+    test: /mobile_sticky/s,
+    weight: 5,
+    action: "Keep sticky tools CTA focused on mobile while desktop uses in-flow side actions.",
+    why: "Avoiding desktop overlay prevents clutter and improves perceived quality."
   },
   {
     id: "index-social-proof-strip",
@@ -143,7 +252,7 @@ const CHECKS = [
     id: "post-tool-cards",
     label: "Recommended tools cards",
     file: "blogPost",
-    test: /Recommended tools to execute faster|Outils recommandés pour passer à l'action/,
+    test: /Recommended tools|Outils recommandes|Outils lies a ce sujet|Related tools for this topic/,
     weight: 6,
     action: "Keep recommended tools cards in article body with clear CTA hierarchy.",
     why: "Natural tool placement drives ethical affiliate clicks."
@@ -161,7 +270,7 @@ const CHECKS = [
     id: "styles-design-tokens",
     label: "Global design helper classes",
     file: "styles",
-    test: /\.blog-signal-card|\.post-signal-grid|\.reading-lead/,
+    test: /\.blog-signal-card|\.blog-stream-card|\.blog-aside-card|\.tools-hero-title|\.tools-metric-card|\.reading-lead/,
     weight: 7,
     action: "Define reusable CSS classes for blog signal cards and lead typography.",
     why: "Reusable tokens keep visual system consistent and scalable."
@@ -189,7 +298,7 @@ function actionPriority(weight) {
 
 function buildMarkdown({ generatedAt, targetScore, totalWeight, weightedScore, normalizedScore, checks, actions }) {
   const lines = [];
-  lines.push("# AI Student Hub Blog Design Agent Report");
+  lines.push("# AI and Cybersecurity News Blog Design Agent Report");
   lines.push("");
   lines.push(`Generated: ${generatedAt}`);
   lines.push(`Target score: ${targetScore}/100`);

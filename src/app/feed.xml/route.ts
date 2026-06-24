@@ -51,7 +51,7 @@ export async function GET() {
           <guid>${item.link}</guid>
           <description>${description}</description>
           <pubDate>${pubDate}</pubDate>
-          <category>${item.type === "news" ? "AI/CS News" : item.type === "auto-news" ? "Auto AI/CS News" : "Blog"}</category>
+          <category>${item.type === "news" ? "AI + Cybersecurity News" : item.type === "auto-news" ? "Auto AI + Cybersecurity News" : "Blog"}</category>
         </item>
       `;
     })
@@ -60,9 +60,9 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>AI Student Hub</title>
+    <title>AI and Cybersecurity News</title>
     <link>${absoluteUrl("/")}</link>
-    <description>Project-first AI tutorials and career systems for engineering students.</description>
+    <description>AI + Cybersecurity signals, practical guides, and tool updates for real builders.</description>
     <language>en-us</language>
     ${items}
   </channel>

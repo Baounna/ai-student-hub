@@ -101,7 +101,7 @@ function error(message) {
   printCheck("ERROR", message);
 }
 
-console.log("AI Student Hub production preflight");
+console.log("AI and Cybersecurity News production preflight");
 console.log("-----------------------------------");
 
 const nextPublicSiteUrl = (env.NEXT_PUBLIC_SITE_URL || "").trim();
@@ -192,6 +192,10 @@ if (enableOAuth !== null && (env.OAUTH_MODE || "").trim()) {
 }
 const oauthMode = enableOAuth === null ? oauthModeByLegacyEnv : enableOAuth ? "enable" : "disable";
 const emailAuthMode = ((env.EMAIL_AUTH_MODE || "oauth_only").trim().toLowerCase() || "oauth_only");
+const authFlowMode = ((env.AUTH_FLOW_MODE || "credentials").trim().toLowerCase() || "credentials");
+const credentialsBackendRaw = ((env.AUTH_CREDENTIALS_BACKEND || "").trim().toLowerCase() || "");
+const hasSupabaseCredentials = Boolean((env.SUPABASE_URL || "").trim() && (env.SUPABASE_SERVICE_ROLE_KEY || "").trim());
+const credentialsBackend = credentialsBackendRaw === "supabase" || (!credentialsBackendRaw && hasSupabaseCredentials) ? "supabase" : "file";
 if (oauthMode === "enable") {
   const providers = [
     ["GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET", "Google"],
@@ -205,11 +209,56 @@ if (oauthMode === "enable") {
     ok(`OAuth enabled with ${configuredCount} configured provider(s).`);
   }
 } else {
-  warn("OAuth is disabled. Only email/local access flow is available.");
+  ok("OAuth is disabled by config. Email/local access flow is active.");
 }
 
 if (emailAuthMode === "insecure_demo") {
   warn("EMAIL_AUTH_MODE=insecure_demo enables unverified email session login. Avoid this in production.");
+}
+
+if (authFlowMode === "credentials") {
+  ok("Credentials auth flow is enabled.");
+  if (credentialsBackendRaw && !["file", "supabase"].includes(credentialsBackendRaw)) {
+    warn("AUTH_CREDENTIALS_BACKEND is invalid. Use file or supabase.");
+  }
+
+  if (credentialsBackend === "supabase") {
+    ok("Credentials backend: supabase.");
+    const supabaseUrl = (env.SUPABASE_URL || "").trim();
+    if (!isUrlWithOptions(supabaseUrl, { requireHttps: true, disallowLocalhost: true })) {
+      error("SUPABASE_URL must be a valid HTTPS non-localhost URL.");
+    } else {
+      ok("SUPABASE_URL is valid.");
+    }
+
+    const serviceRoleKey = (env.SUPABASE_SERVICE_ROLE_KEY || "").trim();
+    if (!serviceRoleKey || serviceRoleKey.length < 20) {
+      error("SUPABASE_SERVICE_ROLE_KEY is missing or too short.");
+    } else {
+      ok("SUPABASE_SERVICE_ROLE_KEY is set.");
+    }
+
+    const usersTable = (env.SUPABASE_USERS_TABLE || "auth_users").trim();
+    if (!/^[a-z0-9_]+$/i.test(usersTable)) {
+      error("SUPABASE_USERS_TABLE is invalid. Use only letters, numbers, underscore.");
+    } else {
+      ok(`Credentials table: ${usersTable}`);
+    }
+  } else {
+    ok("Credentials backend: file storage.");
+    const usersStorePath = (env.AUTH_USERS_STORE_PATH || "").trim();
+    if (!usersStorePath) {
+      warn("AUTH_USERS_STORE_PATH is not set. Default local file storage will be used.");
+    } else {
+      ok("Credentials user store path is set.");
+    }
+
+    if (boolish(env.VERCEL) && !usersStorePath) {
+      warn("Vercel runtime + default local credential store can be ephemeral. Set Supabase backend for production.");
+    }
+  }
+} else {
+  ok("Passwordless auth flow is enabled.");
 }
 
 const emailProvider = ((env.EMAIL_PROVIDER || "none").trim().toLowerCase() || "none");
@@ -244,6 +293,39 @@ if (webhook && !isUrl(webhook)) {
   ok("Tracking webhook URL set.");
 }
 
+const upstashUrl = (env.UPSTASH_REDIS_REST_URL || "").trim();
+const upstashToken = (env.UPSTASH_REDIS_REST_TOKEN || "").trim();
+if ((upstashUrl && !upstashToken) || (!upstashUrl && upstashToken)) {
+  error("UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN must be set together.");
+} else if (upstashUrl && upstashToken) {
+  if (!isUrlWithOptions(upstashUrl, { requireHttps: true, disallowLocalhost: true })) {
+    error("UPSTASH_REDIS_REST_URL must be a valid HTTPS non-localhost URL.");
+  } else {
+    ok("Upstash distributed limiter config is set.");
+  }
+} else {
+  warn("Upstash is not configured. Rate limits/session revocation will use single-instance memory fallback.");
+}
+
+const botMode = ((env.BOT_PROTECTION_MODE || "none").trim().toLowerCase() || "none");
+const publicBotMode = ((env.NEXT_PUBLIC_BOT_PROTECTION_MODE || "none").trim().toLowerCase() || "none");
+const turnstileSecret = (env.TURNSTILE_SECRET_KEY || "").trim();
+const turnstileSiteKey = (env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "").trim();
+
+if (botMode === "turnstile") {
+  if (!turnstileSecret || !turnstileSiteKey) {
+    error("BOT_PROTECTION_MODE=turnstile requires TURNSTILE_SECRET_KEY and NEXT_PUBLIC_TURNSTILE_SITE_KEY.");
+  } else {
+    ok("Turnstile bot protection keys are set.");
+  }
+
+  if (publicBotMode !== "turnstile") {
+    warn("NEXT_PUBLIC_BOT_PROTECTION_MODE should be turnstile when BOT_PROTECTION_MODE=turnstile.");
+  }
+} else {
+  ok("Bot protection mode is none.");
+}
+
 const affiliateRows = [];
 for (let i = 1; i <= 5; i += 1) {
   affiliateRows.push({
@@ -273,6 +355,7 @@ for (const placement of ["home", "resources", "blog", "comparison"]) {
 const donationLinks = [
   env.NEXT_PUBLIC_DONATION_PRIMARY_URL,
   env.NEXT_PUBLIC_DONATION_PAYPAL_URL,
+  env.NEXT_PUBLIC_DONATION_CARD_URL,
   env.NEXT_PUBLIC_DONATION_KOFI_URL,
   env.NEXT_PUBLIC_DONATION_GITHUB_SPONSORS_URL
 ].filter((value) => isUrl(value || ""));

@@ -41,12 +41,12 @@ export default function LocalizedAboutPage({ params }: { params: { lang: string 
     siteConfig.socialProofStats.length > 0
       ? siteConfig.socialProofStats
       : locale === "fr"
-        ? ["Base de connaissance IA/CS orientee etudiants", "Mises a jour hebdomadaires IA + CS", "Ressources pratiques orientees resultats"]
-        : ["Student-first AI/CS knowledge base", "Weekly AI + CS updates", "Practical resources built for outcomes"];
+        ? ["Base de connaissance IA/CS pour builders et apprenants", "Mises a jour hebdomadaires IA + CS", "Ressources pratiques orientees resultats"]
+        : ["AI + Cybersecurity knowledge base for builders and learners", "Weekly AI + Cybersecurity updates", "Practical resources built for outcomes"];
   const principles = [
     locale === "fr" ? "Construire des projets utiles, pas seulement des notebooks." : "Ship useful projects, not only notebooks.",
     locale === "fr" ? "Mesurer les resultats: demos, candidatures, entretiens." : "Measure outcomes: demos, applications, interviews.",
-    locale === "fr" ? "Respecter le budget etudiant sans sacrifier la qualite." : "Respect student budgets without sacrificing quality."
+    locale === "fr" ? "Respecter les contraintes budget sans sacrifier la qualite." : "Respect budget constraints without sacrificing quality."
   ];
   const roadmap = [
     {
@@ -115,8 +115,8 @@ export default function LocalizedAboutPage({ params }: { params: { lang: string 
           </p>
           <p className="body-copy mt-4">
             {locale === "fr"
-              ? "La mission d'AI Student Hub: transformer l'apprentissage passif en exécution mesurable avec résultats carrière."
-              : "AI Student Hub exists to convert passive learning into measurable execution and career outcomes."}
+              ? "La mission d'AI and Cybersecurity News: transformer l'apprentissage passif en execution mesurable avec resultats concrets."
+              : "AI and Cybersecurity News exists to convert passive learning into measurable execution and practical outcomes."}
           </p>
           <p className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 text-sm text-[color:var(--text)]">
             {siteConfig.linkedinShortBio[locale]}
@@ -145,7 +145,7 @@ export default function LocalizedAboutPage({ params }: { params: { lang: string 
         <p className="mt-2 text-sm text-[color:var(--text)]">
           {locale === "fr"
             ? "Plan simple pour convertir apprentissage IA/CS en projets deployes et signal recruteur."
-            : "Simple plan to convert AI/CS learning into deployed projects and recruiter signal."}
+            : "Simple plan to convert AI + Cybersecurity learning into deployed projects and recruiter signal."}
         </p>
         <div className="mt-4 grid gap-3 md:grid-cols-3">
           {roadmap.map((step) => (
@@ -160,7 +160,7 @@ export default function LocalizedAboutPage({ params }: { params: { lang: string 
       {siteConfig.testimonials.length ? (
         <section className="mt-6 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
           <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-            {locale === "fr" ? "Avis etudiants" : "Student testimonials"}
+            {locale === "fr" ? "Retours de la communaute" : "Community feedback"}
           </h2>
           <div className="mt-4 grid gap-4 md:grid-cols-3">
             {siteConfig.testimonials.map((testimonial) => (

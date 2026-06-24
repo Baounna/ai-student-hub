@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { ArticleToc } from "@/components/article-toc";
 import { BackToTop } from "@/components/back-to-top";
@@ -8,7 +9,7 @@ import { LatestUpdatesBlock } from "@/components/latest-updates-block";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Newsletter } from "@/components/newsletter";
 import { ReadingProgress } from "@/components/reading-progress";
-import { getNewsBySlug, getLocalizedNews } from "@/content/news";
+import { getNewsBySlug, getLocalizedNews, getNewsTrack } from "@/content/news";
 import { getLocalizedPost, slugify } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
@@ -32,9 +33,9 @@ function getTopicReference(topic: string, locale: Locale) {
       source: "NIST"
     },
     "AI Research": {
-      label: locale === "fr" ? "arXiv (recherche IA)" : "arXiv (AI research)",
-      href: "https://arxiv.org/",
-      source: "arXiv"
+      label: locale === "fr" ? "Publications Google Research" : "Google Research publications",
+      href: "https://research.google/pubs/",
+      source: "Google Research"
     },
     "ML Engineering": {
       label: locale === "fr" ? "Guide MLOps Google Cloud" : "Google Cloud MLOps guide",
@@ -45,6 +46,21 @@ function getTopicReference(topic: string, locale: Locale) {
       label: locale === "fr" ? "NVIDIA Edge Computing" : "NVIDIA Edge Computing",
       href: "https://developer.nvidia.com/edge-computing",
       source: "NVIDIA"
+    },
+    "Cloud/DevOps": {
+      label: locale === "fr" ? "Documentation Kubernetes" : "Kubernetes documentation",
+      href: "https://kubernetes.io/docs/home/",
+      source: "Kubernetes"
+    },
+    "Systems & Backend": {
+      label: locale === "fr" ? "Documentation OpenTelemetry" : "OpenTelemetry documentation",
+      href: "https://opentelemetry.io/docs/",
+      source: "OpenTelemetry"
+    },
+    "Security & Performance": {
+      label: locale === "fr" ? "OWASP API Security Top 10" : "OWASP API Security Top 10",
+      href: "https://owasp.org/API-Security/",
+      source: "OWASP"
     },
     MLOps: {
       label: locale === "fr" ? "MLOps Community" : "MLOps Community",
@@ -108,6 +124,7 @@ export default function LocalizedNewsArticlePage({ params }: { params: { lang: s
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
+  const nonce = headers().get("x-csp-nonce") || undefined;
   const dict = getDictionary(locale);
   const brief = getNewsBySlug(params.slug, locale);
 
@@ -116,6 +133,19 @@ export default function LocalizedNewsArticlePage({ params }: { params: { lang: s
   const relatedPosts = brief.relatedPostSlugs
     .map((slug) => getLocalizedPost(slug, locale))
     .filter((post): post is NonNullable<typeof post> => Boolean(post));
+  const newsTrack = getNewsTrack(brief.topic);
+  const crossImpact =
+    newsTrack === "cs"
+      ? locale === "fr"
+        ? "Impact CS: architecture backend, fiabilite systeme, et performance deploiement."
+        : "CS impact: backend architecture, system reliability, and deployment performance."
+      : newsTrack === "ai"
+        ? locale === "fr"
+          ? "Impact IA: choix modele, evaluation, et workflow experimentation."
+          : "AI impact: model selection, evaluation quality, and experimentation workflow."
+        : locale === "fr"
+          ? "Impact carriere: portfolio, candidatures, et storytelling entretien."
+          : "Career impact: portfolio signal, applications, and interview storytelling.";
   const recentSignals = getLocalizedNews(locale).filter((item) => item.slug !== brief.slug).slice(0, 3);
   const topicReference = getTopicReference(brief.topic, locale);
   const references = [
@@ -150,7 +180,7 @@ export default function LocalizedNewsArticlePage({ params }: { params: { lang: s
     inLanguage: locale,
     publisher: {
       "@type": "Organization",
-      name: "AI Student Hub",
+      name: "AI and Cybersecurity News",
       logo: {
         "@type": "ImageObject",
         url: absoluteUrl("/icon.svg")
@@ -158,7 +188,7 @@ export default function LocalizedNewsArticlePage({ params }: { params: { lang: s
     },
     author: {
       "@type": "Organization",
-      name: "AI Student Hub"
+      name: "AI and Cybersecurity News"
     },
     mainEntityOfPage: absoluteUrl(`/${locale}/news/${brief.slug}`),
     image: [absoluteUrl("/images/post-deploy.svg")],
@@ -169,10 +199,10 @@ export default function LocalizedNewsArticlePage({ params }: { params: { lang: s
   return (
     <article className="page-shell max-w-6xl py-10 md:py-12">
       <ReadingProgress />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <Breadcrumbs
         items={[
-          { label: "AI Student Hub", href: `/${locale}` },
+          { label: "AI and Cybersecurity News", href: `/${locale}` },
           { label: dict.nav.news, href: `/${locale}/news` },
           { label: brief.title }
         ]}
@@ -252,6 +282,7 @@ export default function LocalizedNewsArticlePage({ params }: { params: { lang: s
                   [2]
                 </a>
               </p>
+              <p className="mt-2 text-sm text-[color:var(--muted)]">{crossImpact}</p>
             </div>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -369,6 +400,11 @@ export default function LocalizedNewsArticlePage({ params }: { params: { lang: s
                 ? "Passe de l'actualite a l'execution avec ces pages a fort ROI."
                 : "Move from news to execution with these high-ROI pages."}
             </p>
+            <p className="mt-2 text-xs text-[color:var(--muted)]">
+              {locale === "fr"
+                ? "Chemin recommande: News -> Blog -> Lab outils -> Roadmap execution."
+                : "Recommended path: News -> Blog -> Tools lab -> Execution roadmap."}
+            </p>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/resources`} className="btn-secondary">
                 {dict.news.openResources}
@@ -378,6 +414,9 @@ export default function LocalizedNewsArticlePage({ params }: { params: { lang: s
               </Link>
               <Link href={`/${locale}/blog`} className="btn-secondary">
                 {dict.news.openBlog}
+              </Link>
+              <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
+                {locale === "fr" ? "Roadmap execution" : "Execution roadmap"}
               </Link>
             </div>
           </section>

@@ -9,6 +9,11 @@ type HeaderSearchShortcutProps = {
 
 export function HeaderSearchShortcut({ locale }: HeaderSearchShortcutProps) {
   useEffect(() => {
+    function isVisible(element: HTMLElement | null) {
+      if (!element) return false;
+      return element.offsetParent !== null;
+    }
+
     function onKeyDown(event: KeyboardEvent) {
       if (event.key !== "/") return;
       if (event.metaKey || event.ctrlKey || event.altKey) return;
@@ -19,7 +24,9 @@ export function HeaderSearchShortcut({ locale }: HeaderSearchShortcutProps) {
         tagName === "input" || tagName === "textarea" || target?.isContentEditable;
       if (isTypingField) return;
 
-      const headerSearch = document.getElementById(`header-search-${locale}`) as HTMLInputElement | null;
+      const desktopSearch = document.getElementById(`header-search-${locale}`) as HTMLInputElement | null;
+      const mobileSearch = document.getElementById(`header-search-mobile-${locale}`) as HTMLInputElement | null;
+      const headerSearch = isVisible(desktopSearch) ? desktopSearch : mobileSearch;
 
       event.preventDefault();
       if (headerSearch) {

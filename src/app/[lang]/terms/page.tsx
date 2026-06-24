@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
   return {
     title: params.lang === "fr" ? "Conditions d'utilisation" : "Terms of Use",
-    description: params.lang === "fr" ? "Conditions d'utilisation d'AI Student Hub." : "AI Student Hub terms of use.",
+    description: params.lang === "fr" ? "Conditions d'utilisation d'AI and Cybersecurity News." : "AI and Cybersecurity News terms of use.",
     alternates: localizedAlternates("/terms", params.lang)
   };
 }
@@ -28,8 +28,8 @@ export default function TermsPage({ params }: { params: { lang: string } }) {
         </h1>
         <p className="mt-4 text-sm text-[color:var(--text)]">
           {fr
-            ? "Conditions encadrant l'utilisation de AI Student Hub."
-            : "Terms governing use of AI Student Hub."}
+            ? "Conditions encadrant l'utilisation de AI and Cybersecurity News."
+            : "Terms governing use of AI and Cybersecurity News."}
         </p>
       </header>
 
@@ -66,9 +66,10 @@ export default function TermsPage({ params }: { params: { lang: string } }) {
             {fr ? "Entite legale" : "Legal entity"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
-            {fr
-              ? `Operateur: ${siteConfig.termsLegalEntity}. Contact: ${siteConfig.contactEmail}`
-              : `Operator: ${siteConfig.termsLegalEntity}. Contact: ${siteConfig.contactEmail}`}
+            {fr ? `Operateur: ${siteConfig.termsLegalEntity}. Contact: ` : `Operator: ${siteConfig.termsLegalEntity}. Contact: `}
+            <a href={`mailto:${siteConfig.contactEmail}`} className="do-link">
+              {siteConfig.contactEmail}
+            </a>
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
             <Link href={`/${locale}/privacy`} className="btn-secondary">

@@ -1,55 +1,79 @@
 {
-  "generatedAt": "2026-02-19T23:18:45.836Z",
+  "generatedAt": "2026-03-04T16:24:14.538Z",
   "settings": {
+    "includeAutoTools": true,
     "includeAutoNews": true,
     "includeOperator": true,
     "includeDesign": true,
+    "includeDailyChecklist": true,
     "includeIssues": true,
     "includeVerify": true,
+    "includePublicContentVerify": true,
     "writeReports": true,
     "issuesMaxPerRun": 6
   },
   "summary": {
-    "total": 5,
-    "passed": 5,
+    "total": 8,
+    "passed": 8,
     "failed": 0,
     "success": true
   },
   "steps": [
     {
+      "id": "auto-tools",
+      "label": "Auto tools agent",
+      "ok": true,
+      "code": 0,
+      "durationMs": 187
+    },
+    {
       "id": "auto-news",
       "label": "Auto news agent",
       "ok": true,
       "code": 0,
-      "durationMs": 133
+      "durationMs": 180
     },
     {
       "id": "operator",
       "label": "Blog operator agent",
       "ok": true,
       "code": 0,
-      "durationMs": 80
+      "durationMs": 76
     },
     {
       "id": "design",
       "label": "Blog design agent",
       "ok": true,
       "code": 0,
-      "durationMs": 76
+      "durationMs": 71
+    },
+    {
+      "id": "daily-checklist",
+      "label": "Daily checklist generator",
+      "ok": true,
+      "code": 0,
+      "durationMs": 67
     },
     {
       "id": "issues",
       "label": "Issue sync",
       "ok": true,
       "code": 0,
-      "durationMs": 88
+      "durationMs": 81
     },
     {
       "id": "verify",
       "label": "Agent health verification",
       "ok": true,
       "code": 0,
-      "durationMs": 68
+      "durationMs": 70
+    },
+    {
+      "id": "verify-public-content",
+      "label": "Public content privacy check",
+      "ok": true,
+      "code": 0,
+      "durationMs": 92
     }
   ]
 }
