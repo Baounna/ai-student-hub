@@ -1,6 +1,6 @@
 # AI Student Hub Blog Operator Report
 
-Generated: 2026-06-24T09:59:31.534Z
+Generated: 2026-06-24T10:01:22.369Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -40,36 +40,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Breaking the Mirror: Activation-Based Mitigation of Self-Preference in LLM Evaluators: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
+1. NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. FALCON: Transforming Cyber Threat Intelligence into Deployable IDS Rules with Self-Reflection: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: ai cs update for students arxiv cs.ai
+2. AGORA: An Archive-Grounded Benchmark for Agentic Workplace Document Reasoning: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: best ai model benchmark for students arxiv cs.cl
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+3. UOL@IDEM at BEA 2026 Shared Task 1: Neural Fusion and Feature-Rich Modeling for L1-Aware Vocabulary Difficulty Prediction: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. Escaping the Self-Confirmation Trap: An Execute-Distill-Verify Paradigm for Agentic Experience Learning: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. Beyond Logprobs: A Multi-Signal Confidence Engine for LLM-Based Document Field Extraction: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: how to build arxiv cs.cl
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. AutoSpecNER: A Fine-Grained Named Entity Recognition Dataset for Vehicle Specification Extraction: What It Means for AI/CS Students
+   - Source: arXiv cs.CL
+   - Keyword: ai cs update for students arxiv cs.cl
    - Monetization angle: student-focused practical summary
    - CTA: Roadmap + related blog guide
-3. Rule2Text: A Framework for Generating and Evaluating Natural Language Explanations of Knowledge Graph Rules: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. FISHER: A Foundation Model for Multi-Modal Industrial Signal Comprehensive Representation: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Tuning without Peeking: Provable Generalization Bounds and Robust LLM Post-Training: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Render-FM: Feedforward Model for Real-time Photorealistic Volumetric Rendering: What It Means for AI/CS Students
-   - Source: arXiv cs.AI
-   - Keyword: how to build arxiv cs.ai
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -96,6 +96,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260624--20260624-breaking-the-mirror-activation-based-mitigation-of-self-preferen-b53520a9.md
-- docs/agent/drafts/20260624--20260624-falcon-transforming-cyber-threat-intelligence-into-deployable-id-cddb3a29.md
+- docs/agent/drafts/20260624--20260624-naturebench-can-coding-agents-match-the-published-sota-of-nature-25995496.md
+- docs/agent/drafts/20260624--20260624-agora-an-archive-grounded-benchmark-for-agentic-workplace-docume-7fc4bfeb.md
 
