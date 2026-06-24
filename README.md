@@ -1,5 +1,9 @@
 # AI and Cybersecurity News
 
+> 👋 **Reviewing this for hiring or as a portfolio piece?** Start with the
+> **[Engineering Case Study →](PORTFOLIO.md)** — architecture, key decisions, and
+> what I'd do differently. This README is the setup/operations manual.
+
 AI and Cybersecurity News is a production-ready, bilingual (EN/FR) publication for anyone who builds, learns, or works with AI and cybersecurity.
 It combines:
 - Weekly AI/CS news briefs
