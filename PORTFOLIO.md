@@ -6,7 +6,7 @@ custom **multi-agent content-automation pipeline** and a hardened security layer
 Built solo as a final-year AI student. This document is the engineering tour — for
 setup and operations, see [README.md](README.md).
 
-> **Live:** _add your deployed URL_ · **Stack:** Next.js 14 (App Router) · TypeScript (strict) · Tailwind · Node ESM tooling · Vitest · GitHub Actions
+> **Live:** https://ai-student-hub-navy.vercel.app · **Stack:** Next.js 14 (App Router) · TypeScript (strict) · Tailwind · Node ESM tooling · Vitest · GitHub Actions
 
 ---
 
