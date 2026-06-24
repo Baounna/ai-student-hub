@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { siteConfig } from "@/config/site";
+import { TrackableAnchor } from "@/components/trackable-anchor";
 
 export function ScrollCaptureCta({ locale }: { locale: Locale }) {
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
@@ -53,9 +54,14 @@ export function ScrollCaptureCta({ locale }: { locale: Locale }) {
             : "Get the 30-day plan to turn this content into internship outcomes."}
         </p>
         <div className="mt-3 flex gap-2">
-          <a href={leadMagnetHref} className="btn-primary flex-1 text-center text-xs">
+          <TrackableAnchor
+            href={leadMagnetHref}
+            event="lead_magnet_click"
+            meta={{ page: "scroll_capture_cta", locale }}
+            className="btn-primary flex-1 text-center text-xs"
+          >
             {locale === "fr" ? "Recevoir la roadmap" : "Get roadmap"}
-          </a>
+          </TrackableAnchor>
           <Link href={`/${locale}/resources`} className="btn-secondary flex-1 text-center text-xs">
             {locale === "fr" ? "Voir outils" : "See tools"}
           </Link>

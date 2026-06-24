@@ -34,7 +34,7 @@ export async function LatestUpdatesBlock({ locale, limit = 6, compact = false, c
   return (
     <section className={`${sectionClass} ${className}`.trim()}>
       <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-        {fr ? "Dernieres mises a jour IA/CS (avec source)" : "Latest AI/CS updates (with sources)"}
+        {fr ? "Dernieres mises a jour IA/CS (avec source)" : "Latest AI + Cybersecurity updates (with sources)"}
       </h2>
       <p className="mt-2 text-sm text-[color:var(--text)]">
         {fr

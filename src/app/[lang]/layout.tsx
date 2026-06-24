@@ -6,9 +6,11 @@ import { siteConfig } from "@/config/site";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { NavTabLink } from "@/components/ui/nav-tab-link";
 import { MobileQuickNav } from "@/components/mobile-quick-nav";
-import { AppearancePanel } from "@/components/ui/appearance-panel";
 import { AuthLinks } from "@/components/ui/auth-links";
+import { HeaderSettings } from "@/components/ui/header-settings";
+import { HeaderSearchForm } from "@/components/ui/header-search-form";
 import { HeaderSearchShortcut } from "@/components/ui/header-search-shortcut";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
@@ -25,8 +27,8 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
   return {
     title: {
-      default: `AI Student Hub (${params.lang.toUpperCase()})`,
-      template: `%s | AI Student Hub`
+      default: `AI and Cybersecurity News (${params.lang.toUpperCase()})`,
+      template: `%s | AI and Cybersecurity News`
     },
     description: dict.home.subheadline,
     keywords: getSeoKeywords(params.lang, "home"),
@@ -41,6 +43,7 @@ export default function LocalizedLayout({ children, params }: { children: React.
   const dict = getDictionary(locale);
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
   const donateHref = `/${locale}/donate`;
+  const toolsLabel = locale === "fr" ? "Outils" : "Tools";
   const desktopNavActive =
     "rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-3.5 py-2 text-[color:var(--text-strong)] shadow-sm";
   const desktopNavInactive =
@@ -53,6 +56,7 @@ export default function LocalizedLayout({ children, params }: { children: React.
   return (
     <>
       <HeaderSearchShortcut locale={locale} />
+      <ScrollReveal />
       <header className="sticky top-0 z-30 border-b border-[color:var(--border)] bg-[color:var(--surface-strong)]/86 backdrop-blur-2xl">
         <div className="mx-auto max-w-6xl px-4 py-3 md:px-6">
           <div className="mb-2 hidden items-center justify-end gap-1 text-sm md:flex">
@@ -60,51 +64,27 @@ export default function LocalizedLayout({ children, params }: { children: React.
               {locale === "fr" ? "Faire un don" : "Donate"}
             </Link>
             <AuthLinks locale={locale} />
+            <HeaderSettings locale={locale} compact />
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5 md:gap-3">
             <Link href={`/${locale}`} className="inline-flex shrink-0 items-center gap-3 rounded-xl border border-transparent px-1 py-1 hover:border-[color:var(--border)]">
-              <span className="inline-block h-3.5 w-3.5 rounded-full bg-[color:var(--primary)] shadow-[0_0_0_6px_color-mix(in_srgb,var(--primary),transparent_86%)]" />
+              <span className="brand-orb inline-block h-3.5 w-3.5 rounded-full bg-[color:var(--primary)] shadow-[0_0_0_6px_color-mix(in_srgb,var(--primary),transparent_86%)]" />
               <span className="leading-tight">
-                <span className="font-display block text-xl font-bold tracking-tight text-[color:var(--text-strong)]">
-                  AI Student Hub
+                <span className="font-display block text-base font-bold tracking-tight text-[color:var(--text-strong)] sm:text-lg xl:text-xl">
+                  AI Cybersecurity News
                 </span>
                 <span className="hidden text-[11px] text-[color:var(--muted)] xl:block">
-                  {locale === "fr" ? "Base de connaissances IA orientee execution" : "Execution-first AI knowledge base"}
+                  {locale === "fr"
+                    ? "Signaux IA + cybersecurite pour builders orientes execution"
+                    : "AI + Cybersecurity Signals for Real Builders"}
                 </span>
               </span>
             </Link>
 
-            <form action={`/${locale}/blog`} method="get" className="hidden min-w-0 flex-1 items-stretch lg:flex lg:max-w-2xl">
-              <label htmlFor={`header-search-${locale}`} className="sr-only">
-                {locale === "fr" ? "Rechercher" : "Search"}
-              </label>
-              <div className="relative min-w-0 flex-1">
-                <span className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-[color:var(--muted)]">
-                  <svg aria-hidden viewBox="0 0 20 20" className="h-4 w-4">
-                    <path
-                      d="M8.75 3.5a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5Zm-6.75 5.25a6.75 6.75 0 1 1 11.93 4.33l3.49 3.49a.75.75 0 1 1-1.06 1.06l-3.49-3.49A6.75 6.75 0 0 1 2 8.75Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </span>
-                <input
-                  id={`header-search-${locale}`}
-                  name="query"
-                  type="search"
-                  placeholder={locale === "fr" ? "Rechercher IA, MLOps, stages..." : "Search AI, MLOps, internships..."}
-                  className="h-11 w-full rounded-l-2xl border border-[color:var(--border)] bg-[color:var(--surface)] pl-10 pr-11 text-sm text-[color:var(--text)] outline-none placeholder:text-[color:var(--muted)] focus:border-[color:var(--primary)]/42"
-                />
-                <span className="pointer-events-none absolute right-3 top-1/2 hidden -translate-y-1/2 rounded border border-[color:var(--border)] px-1.5 py-0.5 text-[10px] text-[color:var(--muted)] xl:inline-flex">
-                  /
-                </span>
-              </div>
-              <button type="submit" className="btn-secondary h-11 rounded-r-2xl border-l-0 px-6 py-0">
-                {locale === "fr" ? "Rechercher" : "Search"}
-              </button>
-            </form>
+            <HeaderSearchForm locale={locale} />
 
-            <div className="ml-auto hidden shrink-0 items-center gap-2 md:flex">
+            <div className="ml-auto hidden shrink-0 items-center gap-2 lg:flex">
               <TrackableAnchor
                 href={leadMagnetHref}
                 event="lead_magnet_click"
@@ -139,7 +119,7 @@ export default function LocalizedLayout({ children, params }: { children: React.
                 />
                 <NavTabLink
                   href={`/${locale}/compare`}
-                  label={locale === "fr" ? "Comparer" : "Compare"}
+                  label={toolsLabel}
                   activeClassName={desktopNavActive}
                   inactiveClassName={desktopNavInactive}
                 />
@@ -151,10 +131,10 @@ export default function LocalizedLayout({ children, params }: { children: React.
                 />
               </nav>
 
-              <p className="ml-auto hidden text-xs text-[color:var(--muted)] lg:block">
+              <p className="ml-auto hidden max-w-[34rem] text-right text-xs text-[color:var(--muted)] lg:block">
                 {locale === "fr"
-                  ? "Actualites IA/CS + guides execution pour etudiants"
-                  : "AI/CS news and execution guides for students"}
+                  ? "Signaux IA + cybersecurite et guides d'execution pour toute personne qui construit, apprend, ou travaille avec l'IA"
+                  : "AI + Cybersecurity signals and execution guides for anyone who builds, learns, or works with AI"}
               </p>
             </div>
           </div>
@@ -186,7 +166,7 @@ export default function LocalizedLayout({ children, params }: { children: React.
               />
               <NavTabLink
                 href={`/${locale}/compare`}
-                label={locale === "fr" ? "Comparer" : "Compare"}
+                label={toolsLabel}
                 activeClassName={mobileNavActive}
                 inactiveClassName={mobileNavInactive}
                 className="snap-start"
@@ -199,7 +179,7 @@ export default function LocalizedLayout({ children, params }: { children: React.
                 className="snap-start"
               />
             </div>
-            <div className="mt-2 grid grid-cols-[1.5fr,1fr,1fr] gap-2">
+            <div className="mt-2 grid grid-cols-2 gap-2">
               <TrackableAnchor
                 href={leadMagnetHref}
                 event="lead_magnet_click"
@@ -214,25 +194,18 @@ export default function LocalizedLayout({ children, params }: { children: React.
               >
                 {locale === "fr" ? "Don" : "Donate"}
               </Link>
-              <Link
-                href={`/${locale}/account`}
-                className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)]/70 px-3 py-2 text-center text-xs text-[color:var(--text)]"
-              >
-                {locale === "fr" ? "Compte" : "Account"}
-              </Link>
             </div>
+            <div className="mt-2 flex justify-end">
+              <HeaderSettings locale={locale} compact />
+            </div>
+            <HeaderSearchForm locale={locale} mobile />
           </div>
         </div>
       </header>
-      <div className="xl:mx-auto xl:grid xl:max-w-[1600px] xl:grid-cols-[minmax(0,1fr)_14rem] xl:items-start xl:gap-6 xl:px-4">
-        <main id="main-content" lang={locale} className="pb-24 md:pb-0">
+      <div className="lg:mx-auto lg:flex lg:max-w-[1600px] lg:items-start lg:justify-center lg:px-4">
+        <main id="main-content" lang={locale} className="pb-24 md:pb-0 lg:min-w-0 lg:flex-1">
           {children}
         </main>
-        <aside className="hidden xl:block xl:self-start xl:pt-4">
-          <div className="sticky top-[160px] pb-10">
-            <AppearancePanel locale={locale} />
-          </div>
-        </aside>
       </div>
       <MobileQuickNav locale={locale} />
       <footer className="mt-24 border-t border-[color:var(--border)] bg-[color:var(--surface-strong)]">
@@ -271,7 +244,7 @@ export default function LocalizedLayout({ children, params }: { children: React.
                 {locale === "fr" ? "Briefs hebdomadaires" : "Weekly briefs"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] text-[color:var(--muted)]">
-                {locale === "fr" ? "Execution IA/CS" : "AI/CS execution"}
+                {locale === "fr" ? "Execution IA + cybersecurite" : "AI + cybersecurity execution"}
               </span>
             </div>
           </div>
@@ -295,7 +268,7 @@ export default function LocalizedLayout({ children, params }: { children: React.
               </li>
               <li>
                 <Link href={`/${locale}/compare`} className="transition hover:opacity-70">
-                  {locale === "fr" ? "Comparatifs" : "Compare"}
+                  {toolsLabel}
                 </Link>
               </li>
               <li>
@@ -362,9 +335,13 @@ export default function LocalizedLayout({ children, params }: { children: React.
         <div className="border-t border-[color:var(--border)]">
           <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-6 py-5 text-xs text-[color:var(--muted)]">
             <p>
-              Copyright {new Date().getFullYear()} AI Student Hub ({siteConfig.legalName}). {dict.footer.copyright}
+              Copyright {new Date().getFullYear()} {siteConfig.brandName} ({siteConfig.legalName}). {dict.footer.copyright}
             </p>
-            <p>{locale === "fr" ? "Construit pour etudiants IA/CS." : "Built for AI/CS students."}</p>
+            <p>
+              {locale === "fr"
+                ? "Construit pour toute personne qui apprend ou construit avec l'IA et la cybersecurite."
+                : "Built for anyone learning or building with AI and cybersecurity."}
+            </p>
           </div>
         </div>
       </footer>

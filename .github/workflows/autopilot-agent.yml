@@ -2,11 +2,9 @@ name: AI Student Hub Autopilot
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "45 6 * * *"
 
 concurrency:
-  group: ai-student-hub-autopilot
+  group: ai-student-hub-main-automation
   cancel-in-progress: false
 
 permissions:
@@ -40,4 +38,12 @@ jobs:
           AUTOPILOT_BRANCH: ${{ github.ref_name }}
           AUTOPILOT_COMMIT_MESSAGE: "chore(autopilot): continuous blog optimization"
           GITHUB_REF_NAME: ${{ github.ref_name }}
+          AGENT_PIPELINE_INCLUDE_AUTO_NEWS: "0"
+          AGENT_PIPELINE_INCLUDE_AUTO_TOOLS: "1"
+          AGENT_PIPELINE_INCLUDE_OPERATOR: "1"
+          AGENT_PIPELINE_INCLUDE_DESIGN: "1"
+          AGENT_PIPELINE_INCLUDE_DAILY_CHECKLIST: "1"
+          AGENT_PIPELINE_INCLUDE_ISSUES: "1"
+          AGENT_PIPELINE_INCLUDE_VERIFY: "1"
+          AGENT_PIPELINE_INCLUDE_PUBLIC_CONTENT_VERIFY: "1"
         run: npm run agent:autopilot

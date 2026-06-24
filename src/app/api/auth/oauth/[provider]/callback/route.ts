@@ -8,6 +8,8 @@ import {
   OAUTH_STATE_COOKIE
 } from "@/lib/oauth";
 import { isOAuthEnabled } from "@/lib/runtime-config";
+import { getClientIp } from "@/lib/request";
+import { enforceRateLimitRules, rateLimitIdentifier } from "@/lib/rate-limit";
 
 const SAFE_OAUTH_ERRORS = new Set([
   "oauth_disabled",
@@ -44,11 +46,63 @@ export async function GET(request: NextRequest, { params }: { params: { provider
     return NextResponse.json({ ok: false, error: "Unsupported provider" }, { status: 404 });
   }
 
-  const statePayload = request.cookies.get(OAUTH_STATE_COOKIE)?.value;
-  const context = decodeOAuthContext(statePayload);
   const stateFromProvider = request.nextUrl.searchParams.get("state");
   const code = request.nextUrl.searchParams.get("code");
   const oauthError = request.nextUrl.searchParams.get("error");
+  const ip = getClientIp(request);
+  const limiter = await enforceRateLimitRules([
+    {
+      key: "oauth-callback:endpoint",
+      limit: 1200,
+      windowMs: 60 * 1000
+    },
+    {
+      key: `oauth-callback:${providerRaw}:ip:${rateLimitIdentifier(ip)}`,
+      limit: 40,
+      windowMs: 10 * 60 * 1000
+    }
+  ]);
+  if (!limiter.allowed) {
+    return NextResponse.json(
+      { ok: false, error: "Too many requests" },
+      { status: 429, headers: { "Retry-After": String(limiter.retryAfter) } }
+    );
+  }
+
+  if (stateFromProvider) {
+    const stateLimiter = await enforceRateLimitRules([
+      {
+        key: `oauth-callback:${providerRaw}:state:${rateLimitIdentifier(stateFromProvider)}`,
+        limit: 8,
+        windowMs: 10 * 60 * 1000
+      }
+    ]);
+    if (!stateLimiter.allowed) {
+      return NextResponse.json(
+        { ok: false, error: "Too many requests" },
+        { status: 429, headers: { "Retry-After": String(stateLimiter.retryAfter) } }
+      );
+    }
+  }
+
+  if (code) {
+    const codeLimiter = await enforceRateLimitRules([
+      {
+        key: `oauth-callback:${providerRaw}:code:${rateLimitIdentifier(code)}`,
+        limit: 5,
+        windowMs: 10 * 60 * 1000
+      }
+    ]);
+    if (!codeLimiter.allowed) {
+      return NextResponse.json(
+        { ok: false, error: "Too many requests" },
+        { status: 429, headers: { "Retry-After": String(codeLimiter.retryAfter) } }
+      );
+    }
+  }
+
+  const statePayload = request.cookies.get(OAUTH_STATE_COOKIE)?.value;
+  const context = decodeOAuthContext(statePayload);
 
   const fallbackLocale = context?.locale || "en";
   const fallbackMode = context?.mode || "login";

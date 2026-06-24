@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { Locale } from "@/i18n/config";
 import { trackEvent } from "@/lib/track";
+import { TurnstileWidget } from "@/components/ui/turnstile-widget";
 
 type NewsletterFormProps = {
   compact?: boolean;
@@ -17,12 +18,41 @@ function normalizeSource(source: string | undefined, compact: boolean) {
   return candidate.replace(/[^a-z0-9_-]/g, "-") || fallback;
 }
 
+function getNextAction(source: string, locale: Locale) {
+  if (source.includes("product")) {
+    return {
+      href: `/${locale}/product/ai-career-guide`,
+      label: locale === "fr" ? "Voir la roadmap execution" : "Open execution roadmap"
+    };
+  }
+
+  if (source.includes("blog") || source.includes("post")) {
+    return {
+      href: `/${locale}/compare`,
+      label: locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"
+    };
+  }
+
+  if (source.includes("tools") || source.includes("compare")) {
+    return {
+      href: `/${locale}/resources`,
+      label: locale === "fr" ? "Voir les ressources" : "See resources"
+    };
+  }
+
+  return {
+    href: `/${locale}/blog`,
+    label: locale === "fr" ? "Lire les guides" : "Read guides"
+  };
+}
+
 export function NewsletterForm({ compact = false, locale, ctaLabel, source }: NewsletterFormProps) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [deliveryStatus, setDeliveryStatus] = useState<"sent" | "queued" | "failed" | null>(null);
   const sourceTag = normalizeSource(source, compact);
+  const nextAction = getNextAction(sourceTag, locale);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -31,6 +61,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
     try {
       const formData = new FormData(event.currentTarget);
       const company = String(formData.get("company") || "");
+      const botToken = String(formData.get("cf-turnstile-response") || "");
 
       const response = await fetch("/api/newsletter", {
         method: "POST",
@@ -39,6 +70,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
           email,
           name,
           company,
+          botToken,
           locale,
           source: sourceTag
         })
@@ -69,12 +101,10 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
   }
 
   const formClass = compact ? "mt-4 grid grid-cols-[1fr_auto] gap-2" : "mt-6 grid gap-3 sm:grid-cols-3";
-  const emailClass = compact
-    ? "h-11 w-full rounded-xl border border-[color:var(--border)] bg-[color:var(--bg-soft)] px-3 text-sm text-[color:var(--text)] outline-none ring-cyan-300/40 placeholder:text-[color:var(--muted)] focus:ring"
-    : "w-full rounded-lg border border-[color:var(--border)] bg-[color:var(--bg-soft)] px-3 py-2 text-sm text-[color:var(--text)] outline-none ring-cyan-300/40 placeholder:text-[color:var(--muted)] focus:ring";
+  const emailClass = compact ? "field-input px-3" : "field-input";
   const buttonClass = compact
     ? "btn-primary h-11 px-4 py-0 text-sm"
-    : "rounded-lg bg-[color:var(--primary)] px-4 py-3 text-sm font-semibold text-[color:var(--primary-foreground)] transition opacity-95 hover:opacity-100 disabled:cursor-not-allowed disabled:opacity-70";
+    : "btn-primary h-11 px-4 py-0 text-sm disabled:cursor-not-allowed disabled:opacity-70";
   const statusColumnClass = compact ? "col-span-2" : "sm:col-span-3";
 
   return (
@@ -88,7 +118,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
           placeholder={locale === "fr" ? "Prenom" : "First name"}
           autoComplete="given-name"
           maxLength={80}
-          className="rounded-lg border border-[color:var(--border)] bg-[color:var(--bg-soft)] px-4 py-3 text-sm text-[color:var(--text)] outline-none ring-cyan-300/40 placeholder:text-[color:var(--muted)] focus:ring"
+          className="field-input"
         />
       )}
       <input
@@ -99,6 +129,9 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         className="hidden"
         aria-hidden
       />
+      <div className={compact ? "col-span-2" : "sm:col-span-3"}>
+        <TurnstileWidget locale={locale} />
+      </div>
       <input
         type="email"
         name="email"
@@ -118,19 +151,24 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         {status === "loading" ? (locale === "fr" ? "Envoi..." : "Sending...") : ctaLabel}
       </button>
       {status === "success" && (
-        <p className={`status-success ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
-          {deliveryStatus === "sent"
-            ? locale === "fr"
-              ? "Parfait. Verifie ta boite mail."
-              : "Great. Check your inbox."
-            : deliveryStatus === "failed"
+        <div className={`status-success ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
+          <p>
+            {deliveryStatus === "sent"
               ? locale === "fr"
-                ? "Inscription enregistree. Reessaie plus tard pour recevoir l'email de confirmation."
-                : "Signup saved. Retry later to receive the confirmation email."
-            : locale === "fr"
-              ? "Inscription enregistree. Tu recevras les prochaines mises a jour."
-              : "Signup saved. You will receive upcoming updates."}
-        </p>
+                ? "Parfait. Verifie ta boite mail."
+                : "Great. Check your inbox."
+              : deliveryStatus === "failed"
+                ? locale === "fr"
+                  ? "Inscription enregistree. Reessaie plus tard pour recevoir l'email de confirmation."
+                  : "Signup saved. Retry later to receive the confirmation email."
+              : locale === "fr"
+                ? "Inscription enregistree. Tu recevras les prochaines mises a jour."
+                : "Signup saved. You will receive upcoming updates."}
+          </p>
+          <a href={nextAction.href} className="do-link mt-1 inline-block">
+            {locale === "fr" ? "Prochaine action:" : "Next action:"} {nextAction.label}
+          </a>
+        </div>
       )}
       {status === "error" && (
         <p className={`status-error ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">

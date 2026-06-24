@@ -27,7 +27,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
     description,
     keywords: getSeoKeywords(params.lang, "product", [
       fr ? "guide carriere ia etudiant pdf" : "ai student career guide pdf",
-      fr ? "roadmap stage ia" : "ai internship roadmap"
+      fr ? "roadmap stage ia" : "ai internship roadmap",
+      fr ? "guide execution ia informatique 30 jours" : "30 day ai and cs execution guide",
+      fr ? "plan portfolio etudiant" : "student portfolio action plan"
     ]),
     openGraph: {
       title,
@@ -64,15 +66,15 @@ export default function LocalizedProductPage({ params }: { params: { lang: strin
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr
-                ? "Un guide pratique pour livrer des projets portfolio, augmenter tes reponses de stage et mieux te preparer aux entretiens."
-                : "A practical guide to ship portfolio projects, increase internship responses, and improve interview preparation."}
+                ? "Un guide pratique pour livrer des projets portfolio, augmenter tes reponses de stage, et clarifier ton plan execution sur 14-30 jours."
+                : "A practical guide to ship portfolio projects, increase internship responses, and execute a clear 14-30 day plan."}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
                 PDF + templates
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Budget etudiant" : "Student budget"}
+                {fr ? "Budget-friendly" : "Budget-friendly"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
                 EN/FR
@@ -87,6 +89,11 @@ export default function LocalizedProductPage({ params }: { params: { lang: strin
               {fr
                 ? "Plan d'action concret pour passer de la theorie aux resultats."
                 : "Concrete action plan to turn learning into measurable outcomes."}
+            </p>
+            <p className="mt-2 text-xs text-[color:var(--muted)]">
+              {fr
+                ? "Ideal pour etudiants qui veulent un systeme simple sans coach payant."
+                : "Ideal for students who need a simple system without expensive coaching."}
             </p>
             {hasCheckoutUrl ? (
               <>
@@ -180,6 +187,66 @@ export default function LocalizedProductPage({ params }: { params: { lang: strin
             </ul>
           </section>
 
+          <section className="grid gap-4 md:grid-cols-3">
+            {[
+              {
+                title: fr ? "Jour 1-7" : "Day 1-7",
+                body: fr ? "Choix stack, plan sprint, et debut du projet portfolio." : "Pick stack, setup sprint plan, and start your portfolio project."
+              },
+              {
+                title: fr ? "Jour 8-14" : "Day 8-14",
+                body: fr ? "Livraison d'une version utilisable + documentation claire." : "Ship a usable version and document it with clear proof."
+              },
+              {
+                title: fr ? "Jour 15-30" : "Day 15-30",
+                body: fr ? "Optimisation candidatures, storytelling entretien, et iteration." : "Optimize applications, interview story, and iteration loop."
+              }
+            ].map((item) => (
+              <article key={item.title} className="glass rounded-xl p-4">
+                <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--primary)]">{item.title}</p>
+                <p className="mt-2 text-sm text-[color:var(--text)]">{item.body}</p>
+              </article>
+            ))}
+          </section>
+
+          <section className="surface rounded-2xl p-6">
+            <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
+              {fr ? "FAQ + objections" : "FAQ + objections"}
+            </h2>
+            <div className="mt-4 space-y-4 text-sm text-[color:var(--text)]">
+              <article>
+                <p className="font-semibold text-[color:var(--text-strong)]">
+                  {fr ? "Je suis debutant, ce guide est-il adapte ?" : "I am a beginner. Is this guide still useful?"}
+                </p>
+                <p className="mt-1">
+                  {fr
+                    ? "Oui. Le guide commence par un plan d'execution simple puis monte en niveau progressivement."
+                    : "Yes. It starts with a simple execution plan and increases difficulty progressively."}
+                </p>
+              </article>
+              <article>
+                <p className="font-semibold text-[color:var(--text-strong)]">
+                  {fr ? "Je n'ai pas un gros budget outil." : "I do not have a high tool budget."}
+                </p>
+                <p className="mt-1">
+                  {fr
+                    ? "La methode est construite pour un budget-friendly realiste avec priorite sur options low-cost."
+                    : "The framework is built for realistic, budget-friendly decisions with low-cost-first options."}
+                </p>
+              </article>
+              <article>
+                <p className="font-semibold text-[color:var(--text-strong)]">
+                  {fr ? "Et si je ne suis pas pret a acheter ?" : "What if I am not ready to buy yet?"}
+                </p>
+                <p className="mt-1">
+                  {fr
+                    ? "Commence par la roadmap gratuite puis reviens apres ton premier mini sprint."
+                    : "Start with the free roadmap, then return after your first mini sprint."}
+                </p>
+              </article>
+            </div>
+          </section>
+
           <Newsletter locale={locale} source="product_page" />
         </div>
 
@@ -193,7 +260,7 @@ export default function LocalizedProductPage({ params }: { params: { lang: strin
                 {fr ? "Lire le blog" : "Read blog"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-secondary text-center">
-                {fr ? "Comparer outils" : "Compare tools"}
+                {fr ? "Lab outils" : "Tools lab"}
               </Link>
               <Link href={`/${locale}/resources`} className="btn-primary text-center">
                 {fr ? "Outils recommandes" : "Recommended tools"}

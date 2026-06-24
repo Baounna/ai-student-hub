@@ -24,17 +24,17 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
-  const title = fr ? "Flux live AI/CS" : "Live AI/CS stream";
+  const title = fr ? "Flux live AI + Cybersecurity" : "Live AI + Cybersecurity stream";
   const description = fr
     ? "Mises a jour IA/CS automatiques avec liens source directs."
-    : "Automatic AI/CS updates with direct source links.";
+    : "Automatic AI + Cybersecurity updates with direct source links.";
 
   return {
     title,
     description,
     keywords: getSeoKeywords(params.lang, "news", [
       fr ? "flux actualites ia en direct" : "live ai news stream",
-      fr ? "veille informatique temps reel" : "real-time computer science updates"
+      fr ? "veille informatique temps reel" : "real-time cybersecurity updates"
     ]),
     openGraph: {
       title,
@@ -69,12 +69,12 @@ export default async function LocalizedLiveNewsPage({ params }: { params: { lang
           <div>
             <p className="do-kicker">{fr ? "Live stream" : "Live stream"}</p>
             <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
-              {fr ? "Nouveautes IA/CS automatiques" : "Automatic AI/CS latest updates"}
+              {fr ? "Nouveautes IA/CS automatiques" : "Automatic AI + Cybersecurity latest updates"}
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr
-                ? "Cette page agrege les dernieres publications AI/CS depuis des flux fiables, avec lien source direct pour chaque item."
-                : "This page aggregates the latest AI/CS publications from trusted feeds, with direct source links for every item."}
+                ? "Cette page agrege les dernieres publications AI + Cybersecurity depuis des flux fiables, avec lien source direct pour chaque item."
+                : "This page aggregates the latest AI + Cybersecurity publications from trusted feeds, with direct source links for every item."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/news`} className="btn-secondary">

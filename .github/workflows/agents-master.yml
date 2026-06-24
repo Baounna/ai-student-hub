@@ -13,10 +13,6 @@ on:
           - hourly
           - daily
           - weekly
-  schedule:
-    - cron: "15 * * * *"
-    - cron: "35 6 * * *"
-    - cron: "20 7 * * 1"
 
 concurrency:
   group: ai-student-hub-agents
@@ -46,57 +42,59 @@ jobs:
       - name: Resolve execution profile
         shell: bash
         run: |
-          MODE="full"
-
-          if [[ "${{ github.event_name }}" == "schedule" ]]; then
-            case "${{ github.event.schedule }}" in
-              "15 * * * *") MODE="hourly" ;;
-              "35 6 * * *") MODE="daily" ;;
-              "20 7 * * 1") MODE="weekly" ;;
-            esac
-          elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            MODE="${{ inputs.run_mode }}"
-          fi
+          MODE="${{ inputs.run_mode }}"
 
           echo "AGENT_RUN_MODE=$MODE" >> "$GITHUB_ENV"
           echo "AGENT_PIPELINE_WRITE_REPORTS=0" >> "$GITHUB_ENV"
 
           case "$MODE" in
             hourly)
+              echo "AGENT_PIPELINE_INCLUDE_AUTO_TOOLS=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_AUTO_NEWS=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_OPERATOR=0" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_DESIGN=0" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_DAILY_CHECKLIST=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_ISSUES=0" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_VERIFY=0" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_PUBLIC_CONTENT_VERIFY=0" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_ISSUES_MAX_PER_RUN=1" >> "$GITHUB_ENV"
-              echo "TARGET_PATHS=src/content/auto-news.json" >> "$GITHUB_ENV"
+              echo "TARGET_PATHS=src/content/auto-tools.json src/content/auto-news.json docs/agent/daily-checklist.md" >> "$GITHUB_ENV"
               ;;
             daily)
+              echo "AGENT_PIPELINE_INCLUDE_AUTO_TOOLS=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_AUTO_NEWS=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_OPERATOR=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_DESIGN=0" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_DAILY_CHECKLIST=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_ISSUES=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_VERIFY=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_PUBLIC_CONTENT_VERIFY=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_ISSUES_MAX_PER_RUN=3" >> "$GITHUB_ENV"
-              echo "TARGET_PATHS=src/content/auto-news.json docs/agent/latest-report.md docs/agent/next-actions.json docs/agent/issues-state.json docs/agent/issues-report.md docs/agent/drafts" >> "$GITHUB_ENV"
+              echo "TARGET_PATHS=src/content/auto-tools.json src/content/auto-news.json docs/agent/latest-report.md docs/agent/next-actions.json docs/agent/issues-state.json docs/agent/issues-report.md docs/agent/daily-checklist.md docs/agent/drafts" >> "$GITHUB_ENV"
               ;;
             weekly)
+              echo "AGENT_PIPELINE_INCLUDE_AUTO_TOOLS=0" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_AUTO_NEWS=0" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_OPERATOR=0" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_DESIGN=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_DAILY_CHECKLIST=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_ISSUES=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_VERIFY=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_PUBLIC_CONTENT_VERIFY=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_ISSUES_MAX_PER_RUN=3" >> "$GITHUB_ENV"
-              echo "TARGET_PATHS=docs/agent/design-report.md docs/agent/design-actions.json docs/agent/issues-state.json docs/agent/issues-report.md" >> "$GITHUB_ENV"
+              echo "TARGET_PATHS=docs/agent/design-report.md docs/agent/design-actions.json docs/agent/issues-state.json docs/agent/issues-report.md docs/agent/daily-checklist.md" >> "$GITHUB_ENV"
               ;;
             *)
+              echo "AGENT_PIPELINE_INCLUDE_AUTO_TOOLS=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_AUTO_NEWS=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_OPERATOR=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_DESIGN=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_DAILY_CHECKLIST=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_ISSUES=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_INCLUDE_VERIFY=1" >> "$GITHUB_ENV"
+              echo "AGENT_PIPELINE_INCLUDE_PUBLIC_CONTENT_VERIFY=1" >> "$GITHUB_ENV"
               echo "AGENT_PIPELINE_ISSUES_MAX_PER_RUN=6" >> "$GITHUB_ENV"
-              echo "TARGET_PATHS=src/content/auto-news.json docs/agent/latest-report.md docs/agent/next-actions.json docs/agent/design-report.md docs/agent/design-actions.json docs/agent/issues-state.json docs/agent/issues-report.md docs/agent/drafts" >> "$GITHUB_ENV"
+              echo "TARGET_PATHS=src/content/auto-tools.json src/content/auto-news.json docs/agent/latest-report.md docs/agent/next-actions.json docs/agent/design-report.md docs/agent/design-actions.json docs/agent/issues-state.json docs/agent/issues-report.md docs/agent/daily-checklist.md docs/agent/drafts" >> "$GITHUB_ENV"
               ;;
           esac
 

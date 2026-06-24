@@ -52,7 +52,7 @@ export async function subscribeConvertKit(options: SubscribeOptions) {
   const extraTags = (options.extraTags || []).map((tag) => sanitizeTagFragment(tag, "tag")).filter(Boolean);
 
   try {
-    const response = await fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
+    const response = await fetch(`https://api.convertkit.com/v3/forms/${encodeURIComponent(formId)}/subscribe`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       signal: AbortSignal.timeout(12_000),

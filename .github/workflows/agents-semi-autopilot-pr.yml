@@ -1,0 +1,81 @@
+name: AI Student Hub Semi-Autopilot (PR)
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ai-student-hub-semi-autopilot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  semi-autopilot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run semi-autopilot pipeline
+        env:
+          AGENT_PIPELINE_INCLUDE_AUTO_TOOLS: "1"
+          AGENT_PIPELINE_INCLUDE_AUTO_NEWS: "1"
+          AGENT_PIPELINE_INCLUDE_OPERATOR: "1"
+          AGENT_PIPELINE_INCLUDE_DESIGN: "1"
+          AGENT_PIPELINE_INCLUDE_DAILY_CHECKLIST: "1"
+          AGENT_PIPELINE_INCLUDE_ISSUES: "1"
+          AGENT_PIPELINE_INCLUDE_VERIFY: "1"
+          AGENT_PIPELINE_INCLUDE_PUBLIC_CONTENT_VERIFY: "1"
+          AGENT_PIPELINE_ISSUES_MAX_PER_RUN: "3"
+          AGENT_PIPELINE_WRITE_REPORTS: "1"
+        run: npm run agent:all
+
+      - name: Run baseline quality checks
+        run: |
+          npm run lint
+          npm run verify:public-content
+          npm run verify:affiliates
+          npm run verify:agents
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore(agent): semi-autopilot daily refresh"
+          title: "chore(agent): semi-autopilot daily refresh"
+          body: |
+            Automated semi-autopilot refresh:
+            - auto tools sync
+            - auto news sync
+            - operator action queue update
+            - design quality audit update
+            - daily checklist generation
+            - issue sync state refresh
+            - health/public-content checks
+          branch: bot/semi-autopilot
+          delete-branch: true
+          add-paths: |
+            src/content/auto-tools.json
+            src/content/auto-news.json
+            docs/agent/latest-report.md
+            docs/agent/next-actions.json
+            docs/agent/issues-state.json
+            docs/agent/issues-report.md
+            docs/agent/design-report.md
+            docs/agent/design-actions.json
+            docs/agent/daily-checklist.md
+            docs/agent/pipeline-report.md
+            docs/agent/pipeline-status.json
+            docs/agent/drafts

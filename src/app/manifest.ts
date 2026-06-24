@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "AI Student Hub",
-    short_name: "AI Student Hub",
-    description: "Execution-first AI + CS publication for students.",
+    name: "AI and Cybersecurity News",
+    short_name: "AI Cyber News",
+    description: "AI + Cybersecurity Signals for Real Builders.",
     start_url: "/en",
     scope: "/",
     display: "standalone",

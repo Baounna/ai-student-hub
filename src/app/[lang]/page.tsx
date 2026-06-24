@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { headers } from "next/headers";
 import { AffiliateDisclosureInline } from "@/components/affiliate-disclosure-inline";
 import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
@@ -8,7 +9,16 @@ import { TrackableAnchor } from "@/components/trackable-anchor";
 import { getAutoNews } from "@/content/auto-news";
 import { getLatestNews, getLocalizedNews } from "@/content/news";
 import { siteConfig } from "@/config/site";
-import { getAllCategories, getPopularPosts, recommendedTools, slugify } from "@/content/posts";
+import {
+  getAllCategories,
+  getCategoriesByTrack,
+  getPopularPosts,
+  getPostsByTrack,
+  getTrackCounts,
+  getTrackLabel,
+  recommendedTools,
+  slugify
+} from "@/content/posts";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
@@ -37,9 +47,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
       title: dict.home.headline,
       description: dict.home.subheadline,
       url: `/${params.lang}`,
-      siteName: "AI Student Hub",
+      siteName: "AI and Cybersecurity News",
       type: "website",
-      images: [{ url: "/images/post-portfolio.svg", width: 1200, height: 675, alt: "AI Student Hub" }]
+      images: [{ url: "/images/post-portfolio.svg", width: 1200, height: 675, alt: "AI and Cybersecurity News" }]
     },
     twitter: {
       card: "summary_large_image",
@@ -55,6 +65,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
+  const nonce = headers().get("x-csp-nonce") || undefined;
   const dict = getDictionary(locale);
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
 
@@ -62,6 +73,11 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
   const featuredPost = popularPosts[0];
   const sidePosts = popularPosts.slice(1);
   const categories = getAllCategories();
+  const trackCounts = getTrackCounts(locale);
+  const aiCategories = getCategoriesByTrack("ai");
+  const csCategories = getCategoriesByTrack("cs");
+  const aiFocusPosts = getPostsByTrack("ai", locale).slice(0, 3);
+  const csFocusPosts = getPostsByTrack("cs", locale).slice(0, 3);
   const latestNews = getLatestNews(locale, 4);
   const allNews = getLocalizedNews(locale);
   const autoUpdates = getAutoNews(locale, 6);
@@ -69,8 +85,8 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
     siteConfig.socialProofStats.length > 0
       ? siteConfig.socialProofStats
       : locale === "fr"
-        ? ["Base de connaissance orientee etudiants IA/CS", "Ressources pratiques mises a jour regulierement", "Mises a jour hebdomadaires IA + CS"]
-        : ["Student-first AI/CS knowledge base", "Practical resources updated regularly", "Weekly AI + CS updates"];
+        ? ["Base de connaissance IA/CS pour builders et apprenants", "Ressources pratiques mises a jour regulierement", "Mises a jour hebdomadaires IA + CS"]
+        : ["AI + Cybersecurity knowledge base for builders and learners", "Practical resources updated regularly", "Weekly AI + Cybersecurity updates"];
 
   const didYouKnowItems =
     locale === "fr"
@@ -106,44 +122,116 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
     locale === "fr"
       ? [
           {
-            title: "Commencer par l'actualite",
-            body: "Briefs rapides sur les signaux IA/CS de la semaine.",
-            href: `/${locale}/news`,
-            cta: "Voir les briefs"
-          },
-          {
-            title: "Passer a l'execution",
-            body: "Guides pratiques pour livrer des projets portfolio.",
+            title: "1) Apprendre",
+            body: "Lis des guides IA + cybersecurite axes projets, stage, et execution.",
             href: `/${locale}/blog`,
-            cta: "Lire le blog"
+            cta: "Ouvrir le blog"
           },
           {
-            title: "Choisir les bons outils",
-            body: "Comparatifs orientés budget etudiant et vitesse.",
+            title: "2) Choisir les outils",
+            body: "Choisis une stack avec comparatifs clairs, budget-friendly, et compromis reels.",
             href: `/${locale}/compare`,
-            cta: "Ouvrir comparatifs"
+            cta: "Ouvrir le lab outils"
+          },
+          {
+            title: "3) Executer la roadmap",
+            body: "Passe en mode action avec roadmap d'execution gratuite puis guide premium.",
+            href: `/${locale}/product/ai-career-guide`,
+            cta: "Lancer l'execution"
           }
         ]
       : [
           {
-            title: "Start with weekly signals",
-            body: "Fast AI/CS briefs focused on what changed this week.",
-            href: `/${locale}/news`,
-            cta: "Open briefs"
-          },
-          {
-            title: "Move into execution",
-            body: "Practical guides to ship portfolio-grade projects.",
+            title: "1) Learn",
+            body: "Read project-first AI + cybersecurity guides for internship outcomes.",
             href: `/${locale}/blog`,
-            cta: "Read the blog"
+            cta: "Open blog"
           },
           {
-            title: "Pick tools with confidence",
-            body: "Student-budget comparisons with clear tradeoffs.",
+            title: "2) Pick tools",
+            body: "Choose a stack with clear tradeoffs, budget-friendly fit, and speed-to-ship logic.",
             href: `/${locale}/compare`,
-            cta: "Open comparisons"
+            cta: "Open tools lab"
+          },
+          {
+            title: "3) Execute roadmap",
+            body: "Move from planning to shipping with a free execution roadmap and premium guide.",
+            href: `/${locale}/product/ai-career-guide`,
+            cta: "Start execution"
           }
         ];
+
+  const audiencePaths =
+    locale === "fr"
+      ? [
+          {
+            label: "Pour tous",
+            title: "News + outils + briefs",
+            body: "Suis les updates officielles IA/CS, ouvre les outils utiles, puis applique les briefs pratiques.",
+            links: [
+              { href: `/${locale}/news`, text: "Actualites" },
+              { href: `/${locale}/compare`, text: "Outils" },
+              { href: `/${locale}/blog`, text: "Briefs & guides" }
+            ]
+          },
+          {
+            label: "Pour etudiants",
+            title: "Roadmap + carriere + budget-friendly guides",
+            body: "Parcours dedie pour stages, portfolio, et execution avec contraintes budget.",
+            links: [
+              { href: leadMagnetHref, text: "Roadmap gratuite", external: true },
+              { href: `/${locale}/product/ai-career-guide`, text: "Guide carriere" },
+              { href: `/${locale}/resources`, text: "Guides budget-friendly" }
+            ]
+          }
+        ]
+      : [
+          {
+            label: "For Everyone",
+            title: "News + tools + practical briefs",
+            body: "Track official AI + Cybersecurity updates, open practical tools, and execute with concise briefs.",
+            links: [
+              { href: `/${locale}/news`, text: "News" },
+              { href: `/${locale}/compare`, text: "Tools" },
+              { href: `/${locale}/blog`, text: "Briefs & guides" }
+            ]
+          },
+          {
+            label: "For Students",
+            title: "Roadmap + career + budget-friendly guides",
+            body: "Dedicated path for internships, portfolio outcomes, and budget-aware execution.",
+            links: [
+              { href: leadMagnetHref, text: "Free roadmap", external: true },
+              { href: `/${locale}/product/ai-career-guide`, text: "Career guide" },
+              { href: `/${locale}/resources`, text: "Budget-friendly guides" }
+            ]
+          }
+        ];
+
+  const splitEntryCards = [
+    {
+      key: "ai",
+      title: locale === "fr" ? "Piste IA" : "AI Track",
+      summary:
+        locale === "fr"
+          ? "Modeles, ML engineering, LLM systems, et execution portfolio."
+          : "Models, ML engineering, LLM systems, and portfolio execution.",
+      count: trackCounts.ai,
+      categories: aiCategories.slice(0, 3),
+      href: `/${locale}/blog?track=ai`
+    },
+    {
+      key: "cs",
+      title: locale === "fr" ? "Piste informatique" : "Computer Science Track",
+      summary:
+        locale === "fr"
+          ? "Algorithmes, backend, cloud, securite, et performance pour projets reels."
+          : "Algorithms, backend, cloud, security, and performance for real projects.",
+      count: trackCounts.cs,
+      categories: csCategories.slice(0, 3),
+      href: `/${locale}/blog?track=cs`
+    }
+  ];
 
   const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
   const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
@@ -161,9 +249,9 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
       source: "ACM"
     },
     {
-      label: locale === "fr" ? "arXiv (recherche IA)" : "arXiv (AI research)",
-      href: "https://arxiv.org/",
-      source: "arXiv"
+      label: locale === "fr" ? "OpenAI Newsroom" : "OpenAI Newsroom",
+      href: "https://openai.com/news/",
+      source: "OpenAI"
     },
     {
       label: locale === "fr" ? "Guide MLOps Google Cloud" : "Google Cloud MLOps guide",
@@ -175,7 +263,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "AI Student Hub",
+    name: "AI and Cybersecurity News",
     url: absoluteUrl(`/${locale}`),
     inLanguage: locale,
     potentialAction: {
@@ -187,28 +275,48 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
 
   return (
     <div className="page-shell max-w-6xl py-8 md:py-10">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
 
       <section className="wiki-panel overflow-hidden rounded-md">
         <div className="wiki-head hero-title px-6 py-3 text-center font-bold">
-          {locale === "fr" ? "Bienvenue sur AI Student Hub" : "Welcome to AI Student Hub"}
+          {locale === "fr"
+            ? "Actualites IA + cybersecurite et guides d'execution pour tous"
+            : "AI + Cybersecurity news and execution guides for anyone who builds, learns, or works with AI"}
         </div>
         <div className="body-copy px-6 py-4 text-center text-[color:var(--text)]">
           <p>
             {locale === "fr"
-              ? "L'encyclopedie pratique de l'IA et de l'informatique orientee execution pour les etudiants."
-              : "The practical AI and computer science encyclopedia for execution-focused students."}
+              ? "Base de connaissance orientee resultats: suivre les updates, choisir les bons outils, puis livrer des projets concrets."
+              : "Execution-first knowledge base: follow updates, pick the right tools, and ship practical projects faster."}
+          </p>
+          <p className="mt-2 text-sm text-[color:var(--muted)]">
+            {locale === "fr"
+              ? "Objectif: convertir information IA + cybersecurite en execution mesurable. Parcours etudiant dedie disponible."
+              : "Goal: convert AI + Cybersecurity information into measurable execution. A dedicated student path stays available."}
           </p>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
             <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "home_header", locale }} className="btn-primary">
               {dict.home.ctaPrimary}
             </TrackableAnchor>
-            <Link href={`/${locale}/news`} className="btn-secondary">
-              {locale === "fr" ? "Actualites IA/CS" : "AI/CS news"}
-            </Link>
             <Link href={`/${locale}/compare`} className="btn-secondary">
-              {locale === "fr" ? "Comparer outils" : "Compare tools"}
+              {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
             </Link>
+            {hasCheckoutUrl ? (
+              <TrackableAnchor
+                href={checkoutUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                event="product_checkout_click"
+                meta={{ page: "home_header", locale, offer: "ai-career-guide" }}
+                className="btn-secondary"
+              >
+                {locale === "fr" ? "Acheter le guide execution" : "Buy execution guide"}
+              </TrackableAnchor>
+            ) : (
+              <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
+                {locale === "fr" ? "Voir la roadmap execution" : "Open execution roadmap"}
+              </Link>
+            )}
           </div>
           <p className="mt-2 text-sm text-[color:var(--muted)]">
             {allNews.length} {locale === "fr" ? "briefs d'actualite" : "news briefs"} • {popularPosts.length}{" "}
@@ -216,13 +324,17 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
             {locale === "fr" ? "domaines" : "domains"} • {recommendedTools.length}{" "}
             {locale === "fr" ? "outils recommandes" : "recommended tools"}
           </p>
+          <p className="mt-1 text-xs text-[color:var(--muted)]">
+            {getTrackLabel("ai", locale)}: {trackCounts.ai} • {getTrackLabel("cs", locale)}: {trackCounts.cs} •{" "}
+            {getTrackLabel("career", locale)}: {trackCounts.career}
+          </p>
         </div>
       </section>
 
       <section className="mt-4 grid gap-4 md:grid-cols-3">
         {quickStartCards.map((card) => (
           <article key={card.title} className="wiki-panel rounded-md p-4">
-            <p className="do-kicker">{locale === "fr" ? "Parcours rapide" : "Quick pathway"}</p>
+            <p className="do-kicker">{locale === "fr" ? "Start here" : "Start here"}</p>
             <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)] md:text-xl">{card.title}</h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">{card.body}</p>
             <Link href={card.href} className="do-link mt-3 inline-block text-sm">
@@ -230,6 +342,125 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
             </Link>
           </article>
         ))}
+      </section>
+
+      <section className="mt-4 grid gap-4 md:grid-cols-2">
+        {audiencePaths.map((path) => (
+          <article key={path.label} className="wiki-panel rounded-md p-5">
+            <p className="do-kicker">{path.label}</p>
+            <h2 className="font-display mt-2 text-xl font-semibold text-[color:var(--text-strong)]">{path.title}</h2>
+            <p className="mt-2 text-sm text-[color:var(--text)]">{path.body}</p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {path.links.map((link) =>
+                link.external ? (
+                  <TrackableAnchor
+                    key={`${path.label}-${link.text}`}
+                    href={link.href}
+                    event="lead_magnet_click"
+                    meta={{ page: "home_audience_paths", locale, audience: path.label }}
+                    className="btn-primary px-3 py-1.5 text-xs"
+                  >
+                    {link.text}
+                  </TrackableAnchor>
+                ) : (
+                  <Link key={`${path.label}-${link.text}`} href={link.href} className="btn-secondary px-3 py-1.5 text-xs">
+                    {link.text}
+                  </Link>
+                )
+              )}
+            </div>
+          </article>
+        ))}
+      </section>
+
+      <section className="mt-4 grid gap-4 md:grid-cols-3">
+        <article className="wiki-panel rounded-md p-4">
+          <p className="do-kicker">{locale === "fr" ? "Trust proof" : "Trust proof"}</p>
+          <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">
+            {locale === "fr" ? "Methodologie transparente" : "Transparent methodology"}
+          </h2>
+          <p className="mt-2 text-sm text-[color:var(--text)]">
+            {locale === "fr"
+              ? "Chaque article suit la meme structure: signal, impact pratique, action concrete, references."
+              : "Each article follows the same structure: signal, practical impact, concrete action, and references."}
+          </p>
+        </article>
+        <article className="wiki-panel rounded-md p-4">
+          <p className="do-kicker">{locale === "fr" ? "Sources" : "Sources"}</p>
+          <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">
+            {locale === "fr" ? "References officielles" : "Official references"}
+          </h2>
+          <p className="mt-2 text-sm text-[color:var(--text)]">
+            {locale === "fr"
+              ? "Nous utilisons prioritairement des sources institutionnelles, docs officielles, et pages prix editeur."
+              : "We prioritize institutional sources, official documentation, and first-party pricing pages."}
+          </p>
+        </article>
+        <article className="wiki-panel rounded-md p-4">
+          <p className="do-kicker">{locale === "fr" ? "Outcome" : "Outcome"}</p>
+          <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">
+            {locale === "fr" ? "Oriente resultats" : "Outcome-first"}
+          </h2>
+          <p className="mt-2 text-sm text-[color:var(--text)]">
+            {locale === "fr"
+              ? "Le contenu vise portfolio deploye, candidatures plus fortes, et execution hebdomadaire constante."
+              : "Content is optimized for shipped portfolio projects, stronger applications, and weekly execution consistency."}
+          </p>
+        </article>
+      </section>
+
+      <section className="mt-4 grid gap-4 md:grid-cols-2">
+        {splitEntryCards.map((card) => (
+          <article key={card.key} className="wiki-panel rounded-md p-5">
+            <p className="do-kicker">{locale === "fr" ? "Parcours editorial" : "Editorial split"}</p>
+            <h2 className="font-display mt-2 text-xl font-semibold text-[color:var(--text-strong)]">{card.title}</h2>
+            <p className="mt-2 text-sm text-[color:var(--text)]">{card.summary}</p>
+            <p className="mt-2 text-xs text-[color:var(--muted)]">
+              {card.count} {locale === "fr" ? "articles dans ce flux" : "posts in this stream"}
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {card.categories.map((category) => (
+                <Link
+                  key={`${card.key}-${category}`}
+                  href={`/${locale}/blog/category/${slugify(category)}`}
+                  className="rounded-full border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)] px-2.5 py-1 text-xs text-[color:var(--text)]"
+                >
+                  {category}
+                </Link>
+              ))}
+            </div>
+            <Link href={card.href} className="do-link mt-3 inline-block text-sm">
+              {locale === "fr" ? "Ouvrir ce flux" : "Open this stream"}
+            </Link>
+          </article>
+        ))}
+      </section>
+
+      <section className="mt-4 grid gap-4 md:grid-cols-2">
+        <article className="wiki-panel rounded-md p-5">
+          <p className="do-kicker">{locale === "fr" ? "Selection IA" : "AI Focus"}</p>
+          <div className="mt-2 space-y-2 text-sm text-[color:var(--text)]">
+            {aiFocusPosts.map((post) => (
+              <p key={post.slug}>
+                <Link href={`/${locale}/blog/${post.slug}`} className="do-link">
+                  {post.title}
+                </Link>
+              </p>
+            ))}
+          </div>
+        </article>
+        <article className="wiki-panel rounded-md p-5">
+          <p className="do-kicker">{locale === "fr" ? "Selection informatique" : "CS Focus"}</p>
+          <div className="mt-2 space-y-2 text-sm text-[color:var(--text)]">
+            {csFocusPosts.map((post) => (
+              <p key={post.slug}>
+                <Link href={`/${locale}/blog/${post.slug}`} className="do-link">
+                  {post.title}
+                </Link>
+              </p>
+            ))}
+          </div>
+        </article>
       </section>
 
       <div className="mt-4 grid gap-4 lg:grid-cols-[1.2fr,1fr]">
@@ -309,7 +540,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
               </Link>{" "}
               •{" "}
               <Link href={`/${locale}/compare`} className="do-link">
-                {locale === "fr" ? "Comparatifs techniques" : "Technical comparisons"}
+                {locale === "fr" ? "Lab outils technique" : "Technical tools lab"}
               </Link>
             </div>
           </div>
@@ -319,7 +550,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
       <div className="mt-4 grid gap-4 lg:grid-cols-[1.2fr,1fr]">
         <section className="wiki-panel overflow-hidden rounded-md">
           <div className="wiki-head wiki-head-blue px-4 py-2 text-xl md:text-2xl">
-            {locale === "fr" ? "Signaux web automatiques (AI/CS)" : "Automatic web signals (AI/CS)"}
+            {locale === "fr" ? "Signaux web automatiques (AI + Cybersecurity)" : "Automatic web signals (AI + Cybersecurity)"}
           </div>
           <div className="p-4">
             <p className="text-sm text-[color:var(--text)]">
@@ -381,7 +612,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
               <li>
                 {locale === "fr"
                   ? "1. Choisis un signal IA/CS important de la semaine."
-                  : "1. Pick one important AI/CS update from this week."}
+                  : "1. Pick one important AI + Cybersecurity update from this week."}
               </li>
               <li>
                 {locale === "fr"
@@ -404,7 +635,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
                 {locale === "fr" ? "Outils recommandes" : "Recommended tools"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-secondary">
-                {locale === "fr" ? "Comparatifs" : "Comparisons"}
+                {locale === "fr" ? "Lab outils" : "Tools lab"}
               </Link>
               {hasCheckoutUrl ? (
                 <TrackableAnchor
@@ -419,7 +650,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
                 </TrackableAnchor>
               ) : (
                 <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                  {locale === "fr" ? "Voir le guide" : "Open student guide"}
+                  {locale === "fr" ? "Voir la roadmap execution" : "Open execution roadmap"}
                 </Link>
               )}
             </div>
@@ -480,7 +711,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
 
         <section className="wiki-panel overflow-hidden rounded-md">
           <div className="wiki-head wiki-head-purple px-4 py-2 text-xl md:text-2xl">
-            {locale === "fr" ? "Boite a outils etudiante" : "Student toolbox"}
+            {locale === "fr" ? "Boite a outils pratique" : "Practical toolbox"}
           </div>
           <div className="space-y-3 p-4">
             {recommendedTools.map((tool, index) => (
@@ -489,7 +720,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
                   #{index + 1} • {tool.category[locale]}
                 </p>
                 <p className="text-sm font-semibold text-[color:var(--text-strong)]">{tool.name}</p>
-                <p className="mt-1 text-sm text-[color:var(--text)]">{tool.summary[locale]}</p>
+                <p className="mt-1 break-words text-sm text-[color:var(--text)]">{tool.summary[locale]}</p>
                 <p className="mt-1 text-xs text-[color:var(--muted)]">{tool.benefit[locale]}</p>
                 <TrackableAnchor
                   href={tool.affiliateHref}
@@ -521,7 +752,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
           </TrackableAnchor>
           <span>•</span>
           <Link href={`/${locale}/news`} className="do-link">
-            {locale === "fr" ? "Suivre les actualites IA/CS" : "Follow AI/CS news"}
+            {locale === "fr" ? "Suivre les actualites IA/CS" : "Follow AI + Cybersecurity news"}
           </Link>
           <span>•</span>
           <Link href={`/${locale}/blog`} className="do-link">
@@ -529,7 +760,7 @@ export default function LocalizedHomePage({ params }: { params: { lang: string }
           </Link>
           <span>•</span>
           <Link href={`/${locale}/compare`} className="do-link">
-            {locale === "fr" ? "Comparer les plateformes" : "Compare platforms"}
+            {locale === "fr" ? "Lab outils et plateformes" : "Tools and platform lab"}
           </Link>
         </div>
       </section>

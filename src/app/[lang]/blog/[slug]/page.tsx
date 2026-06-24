@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { AffiliateDisclosureInline } from "@/components/affiliate-disclosure-inline";
 import { ArticleToc } from "@/components/article-toc";
@@ -13,13 +14,15 @@ import { Newsletter } from "@/components/newsletter";
 import { PostArticleCta } from "@/components/post-article-cta";
 import { ReadingProgress } from "@/components/reading-progress";
 import { TrackableAnchor } from "@/components/trackable-anchor";
-import { recommendedTools, getLocalizedPost, posts, slugify } from "@/content/posts";
+import { siteConfig } from "@/config/site";
+import { getLocalizedPost, getPostTrack, getPostsByTrack, posts, recommendedTools, slugify } from "@/content/posts";
 import { StickyPostCta } from "@/components/sticky-post-cta";
 import { isLocale, type Locale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
+import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
 const ScrollCaptureCta = dynamic(() => import("@/components/scroll-capture-cta").then((mod) => mod.ScrollCaptureCta), {
   ssr: false
@@ -94,6 +97,7 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
 export default function LocalizedBlogPostPage({ params }: { params: { lang: string; slug: string } }) {
   if (!isLocale(params.lang)) return null;
   const locale: Locale = params.lang;
+  const nonce = headers().get("x-csp-nonce") || undefined;
   const dict = getDictionary(locale);
   const post = getLocalizedPost(params.slug, locale);
 
@@ -101,16 +105,28 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
   const relatedPosts = post.relatedSlugs
     .map((relatedSlug) => getLocalizedPost(relatedSlug, locale))
     .filter((related): related is NonNullable<typeof related> => Boolean(related));
+  const currentTrack = getPostTrack(post);
+  const bridgeTrack = currentTrack === "ai" ? "cs" : "ai";
+  const bridgePosts = getPostsByTrack(bridgeTrack, locale)
+    .filter((candidate) => candidate.slug !== post.slug && !relatedPosts.some((related) => related.slug === candidate.slug))
+    .slice(0, 3);
   const wordCount = post.content.reduce((sum, paragraph) => sum + paragraph.split(/\s+/).filter(Boolean).length, 0);
   const readingEffortMinutes = Math.max(1, Math.round(wordCount / 220));
   const executionAssets = post.affiliateCallout.links.length + Math.min(recommendedTools.length, 3);
   const sourceDensity = wordCount ? Math.max(1, Math.round((post.references.length / wordCount) * 1000)) : 0;
+  const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
+  const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
+  const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
+  const hasCheckoutUrl = Boolean(checkoutUrl);
+  const midIndex = Math.max(1, Math.floor(post.content.length * 0.45));
+  const relatedTools = recommendedTools.slice(0, 3);
   const tocItems = [
     { id: "summary", label: locale === "fr" ? "Synthese" : "Summary" },
     { id: "latest-updates", label: locale === "fr" ? "Dernieres actus" : "Latest updates" },
     ...(post.references.length ? [{ id: "references", label: "References" }] : []),
     { id: "resources", label: locale === "fr" ? "Ressources" : "Resources" },
     { id: "tools", label: locale === "fr" ? "Outils" : "Tools" },
+    ...(bridgePosts.length ? [{ id: "bridge", label: locale === "fr" ? "Pont IA/CS" : "AI + Cybersecurity bridge" }] : []),
     ...(relatedPosts.length ? [{ id: "related", label: locale === "fr" ? "Lectures" : "Related" }] : []),
     { id: "newsletter", label: "Newsletter" }
   ];
@@ -126,11 +142,11 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
     inLanguage: locale,
     author: {
       "@type": "Person",
-      name: "AI Student Hub"
+      name: "AI and Cybersecurity News"
     },
     publisher: {
       "@type": "Organization",
-      name: "AI Student Hub",
+      name: "AI and Cybersecurity News",
       logo: {
         "@type": "ImageObject",
         url: absoluteUrl("/icon.svg")
@@ -144,10 +160,10 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
   return (
     <article className="page-shell max-w-6xl py-10 md:py-12">
       <ReadingProgress />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <Breadcrumbs
         items={[
-          { label: "AI Student Hub", href: `/${locale}` },
+          { label: "AI and Cybersecurity News", href: `/${locale}` },
           { label: dict.nav.blog, href: `/${locale}/blog` },
           { label: post.title }
         ]}
@@ -167,7 +183,7 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
             <div className="mt-4 flex flex-wrap gap-2">
               <Link
                 href={`/${locale}/blog/category/${slugify(post.category)}`}
-                className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-xs text-[color:var(--primary)]"
+                className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--primary)]"
               >
                 {post.category}
               </Link>
@@ -175,7 +191,7 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
                 <Link
                   key={tag}
                   href={`/${locale}/blog/tag/${slugify(tag)}`}
-                  className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-xs text-[color:var(--text)]"
+                  className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--text)]"
                 >
                   #{tag}
                 </Link>
@@ -183,7 +199,7 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
             </div>
           </div>
 
-          <div className="surface rounded-2xl p-5">
+          <div className="blog-aside-card rounded-2xl p-5">
             <p className="do-kicker">{locale === "fr" ? "Article en bref" : "At a glance"}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
@@ -247,6 +263,47 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
         </article>
       </section>
 
+      <section className="blog-aside-card mt-5 rounded-2xl p-5">
+        <p className="do-kicker">{locale === "fr" ? "Start here" : "Start here"}</p>
+        <h2 className="font-display section-title mt-2 font-semibold text-[color:var(--text-strong)]">
+          {locale === "fr" ? "Passe de la lecture a l'action en 3 clics" : "Move from reading to execution in 3 clicks"}
+        </h2>
+        <p className="mt-2 text-sm text-[color:var(--text)]">
+          {locale === "fr"
+            ? "Choisis ton prochain pas: roadmap, outils, ou guide premium."
+            : "Pick your next action: roadmap, tools, or premium guide."}
+        </p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          <TrackableAnchor
+            href={leadMagnetHref}
+            event="lead_magnet_click"
+            meta={{ page: "blog_post_intro", slug: post.slug, locale }}
+            className="btn-primary"
+          >
+            {locale === "fr" ? "Roadmap gratuite" : "Free roadmap"}
+          </TrackableAnchor>
+          <Link href={`/${locale}/compare`} className="btn-secondary">
+            {locale === "fr" ? "Lab outils" : "Tools lab"}
+          </Link>
+          {hasCheckoutUrl ? (
+            <TrackableAnchor
+              href={checkoutUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              event="product_checkout_click"
+              meta={{ page: "blog_post_intro", slug: post.slug, locale, offer: "ai-career-guide" }}
+              className="btn-secondary"
+            >
+              {locale === "fr" ? "Acheter le guide" : "Buy guide"}
+            </TrackableAnchor>
+          ) : (
+            <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
+              {locale === "fr" ? "Voir le guide" : "Open guide"}
+            </Link>
+          )}
+        </div>
+      </section>
+
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
         <div className="space-y-8">
           <div className="media-frame group relative aspect-[16/10] rounded-2xl">
@@ -281,15 +338,35 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
                       </>
                     ) : null}
                   </p>
-                  {idx === 1 && (
+                  {idx === midIndex && (
                     <div className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--bg-soft)]/55 p-4">
                       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
-                        {dict.blog.inPostCallout}
+                        {locale === "fr" ? "Bloc outils partenaire" : "Partner tools block"}
                       </p>
-                      <p className="mt-2 text-sm text-[color:var(--text)]">{dict.blog.inPostCalloutBody}</p>
+                      <p className="mt-2 text-sm text-[color:var(--text)]">
+                        {locale === "fr"
+                          ? "Selection d'outils utiles pour appliquer ce chapitre sans perdre de temps."
+                          : "Curated tools that help you execute this chapter without friction."}
+                      </p>
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {relatedTools.slice(0, 2).map((tool) => (
+                          <TrackableAnchor
+                            key={`mid-${tool.name}`}
+                            href={tool.affiliateHref}
+                            target="_blank"
+                            rel="noopener noreferrer sponsored"
+                            event="affiliate_click"
+                            meta={{ page: "blog_post_mid_block", tool: tool.name, slug: post.slug, locale }}
+                            className="btn-secondary px-3 py-1.5 text-xs"
+                          >
+                            {locale === "fr" ? `Tester ${tool.name}` : `Try ${tool.name}`}
+                          </TrackableAnchor>
+                        ))}
+                      </div>
                       <Link href={`/${locale}/resources`} className="do-link mt-3 inline-block text-sm">
                         {dict.blog.openResources}
                       </Link>
+                      <AffiliateDisclosureInline locale={locale} className="mt-3 text-xs text-[color:var(--muted)]" />
                     </div>
                   )}
                 </div>
@@ -323,7 +400,7 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
             </section>
           )}
 
-          <section id="resources" className="anchor-offset surface rounded-2xl p-6">
+          <section id="resources" className="anchor-offset blog-aside-card rounded-2xl p-6">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">{dict.nav.resources}</p>
             <h2 className="font-display section-title mt-2 font-semibold text-[color:var(--text-strong)]">
               {post.affiliateCallout.headline[locale]}
@@ -345,11 +422,16 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
 
           <section id="tools" className="anchor-offset">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "Outils recommandés pour passer à l'action" : "Recommended tools to execute faster"}
+              {locale === "fr" ? "Outils lies a ce sujet" : "Related tools for this topic"}
             </h2>
+            <p className="mt-2 text-sm text-[color:var(--text)]">
+              {locale === "fr"
+                ? "Stack orientee etudiants pour accelerer implementation, test, et deployment de ce sujet."
+                : "Student-focused stack to speed up implementation, testing, and deployment for this topic."}
+            </p>
             <div className="mt-4 grid gap-3 md:grid-cols-3">
-              {recommendedTools.slice(0, 3).map((tool) => (
-                <article key={tool.name} className="glass rounded-xl p-4">
+              {relatedTools.map((tool) => (
+                <article key={tool.name} className="blog-aside-card rounded-xl p-4">
                   <Image src={tool.icon} alt="" width={30} height={30} loading="lazy" className="mb-2 rounded-md" />
                   <h3 className="text-sm font-semibold text-[color:var(--text-strong)]">{tool.name}</h3>
                   <p className="mt-1 text-xs text-[color:var(--text)]">{tool.summary[locale]}</p>
@@ -359,7 +441,7 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     event="affiliate_click"
-                    meta={{ page: "blog_post_tools", tool: tool.name, slug: post.slug, locale }}
+                    meta={{ page: "blog_post_related_tools", tool: tool.name, slug: post.slug, locale }}
                     className="btn-secondary mt-3 inline-flex px-3 py-1.5 text-xs"
                   >
                     {locale === "fr" ? "Ouvrir l'outil" : "Open tool"}
@@ -367,7 +449,75 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
                 </article>
               ))}
             </div>
+            <section className="mt-4 overflow-x-auto rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)]">
+              <table className="min-w-[640px] w-full text-left text-sm">
+                <thead className="bg-[color:var(--bg-soft)]/45 text-[color:var(--text)]">
+                  <tr>
+                    <th className="px-4 py-3">{locale === "fr" ? "Outil" : "Tool"}</th>
+                    <th className="px-4 py-3">{locale === "fr" ? "Ideal pour etudiants" : "Best for students"}</th>
+                    <th className="px-4 py-3">{locale === "fr" ? "Gain principal" : "Primary gain"}</th>
+                    <th className="px-4 py-3">{locale === "fr" ? "Action" : "Action"}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {relatedTools.map((tool, index) => (
+                    <tr key={`table-${tool.name}`} className="border-t border-[color:var(--border)]">
+                      <td className="px-4 py-3 font-semibold text-[color:var(--text-strong)]">{tool.name}</td>
+                      <td className="px-4 py-3 text-[color:var(--text)]">{tool.summary[locale]}</td>
+                      <td className="px-4 py-3 text-[color:var(--text)]">{tool.benefit[locale]}</td>
+                      <td className="px-4 py-3">
+                        <TrackableAnchor
+                          href={tool.affiliateHref}
+                          target="_blank"
+                          rel="noopener noreferrer sponsored"
+                          event="affiliate_click"
+                          meta={{ page: "blog_post_tools_table", tool: tool.name, slug: post.slug, locale, rank: index + 1 }}
+                          className="do-link text-sm"
+                        >
+                          {locale === "fr" ? "Essayer" : "Try"}
+                        </TrackableAnchor>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </section>
+            <AffiliateDisclosureInline locale={locale} className="mt-3 text-xs text-[color:var(--muted)]" />
           </section>
+
+          {bridgePosts.length ? (
+            <section id="bridge" className="anchor-offset reading-panel rounded-2xl p-6">
+              <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
+                {bridgeTrack === "cs"
+                  ? locale === "fr"
+                    ? "Pont vers l'informatique"
+                    : "Bridge into cybersecurity"
+                  : locale === "fr"
+                    ? "Pont vers l'IA"
+                    : "Bridge into AI systems"}
+              </h2>
+              <p className="mt-2 text-sm text-[color:var(--text)]">
+                {bridgeTrack === "cs"
+                  ? locale === "fr"
+                    ? "Connecte cet article IA avec des fondamentaux systeme/backend pour renforcer ta fiabilite produit."
+                    : "Connect this AI article with system/backend fundamentals to strengthen product reliability."
+                  : locale === "fr"
+                    ? "Connecte cet article CS avec des patterns IA/LLM pour transformer ton socle technique en projets differenciants."
+                    : "Connect this CS article with AI/LLM patterns to turn technical depth into differentiated projects."}
+              </p>
+              <div className="mt-4 grid gap-3 md:grid-cols-3">
+                {bridgePosts.map((candidate) => (
+                  <article key={candidate.slug} className="blog-chip rounded-xl p-4">
+                    <p className="text-xs text-[color:var(--muted)]">{candidate.category}</p>
+                    <h3 className="mt-1 text-sm font-semibold text-[color:var(--text-strong)]">{candidate.title}</h3>
+                    <Link href={`/${locale}/blog/${candidate.slug}`} className="do-link mt-2 inline-block text-sm">
+                      {locale === "fr" ? "Lire cet article" : "Read this article"}
+                    </Link>
+                  </article>
+                ))}
+              </div>
+            </section>
+          ) : null}
 
           <div>
             <PostArticleCta locale={locale} />
@@ -391,30 +541,30 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
           )}
 
           <div id="newsletter" className="anchor-offset">
-            <Newsletter locale={locale} source="post_main" />
+            <Newsletter locale={locale} source="blog_post" />
           </div>
         </div>
 
         <aside className="space-y-4 lg:sticky lg:top-32 lg:h-fit">
           <ArticleToc title={locale === "fr" ? "Dans cette page" : "On this page"} items={tocItems} className="mt-0" />
           <EditorialTrust locale={locale} compact />
-          <div className="surface rounded-2xl p-5">
+          <div className="blog-aside-card rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
               {locale === "fr" ? "Continuer apres lecture" : "Continue after reading"}
             </h3>
             <div className="mt-3 flex flex-col gap-2">
               <Link href={`/${locale}/news`} className="btn-secondary text-center">
-                {locale === "fr" ? "Actualites IA/CS" : "AI/CS news"}
+                {locale === "fr" ? "Actualites IA/CS" : "AI + Cybersecurity news"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-secondary text-center">
-                {locale === "fr" ? "Comparatifs" : "Comparisons"}
+                {locale === "fr" ? "Lab outils" : "Tools lab"}
               </Link>
               <Link href={`/${locale}/resources`} className="btn-primary text-center">
                 {locale === "fr" ? "Outils recommandes" : "Recommended tools"}
               </Link>
             </div>
           </div>
-          <Newsletter compact locale={locale} source="post_aside" />
+          <Newsletter compact locale={locale} source="blog_post_aside" />
         </aside>
       </div>
       <BackToTop />

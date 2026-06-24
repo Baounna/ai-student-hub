@@ -28,8 +28,8 @@ export default function AffiliateDisclosurePage({ params }: { params: { lang: st
         </h1>
         <p className="mt-4 text-sm text-[color:var(--text)]">
           {fr
-            ? "Transparence sur les liens partenaires utilises sur AI Student Hub."
-            : "Transparency about partner links used across AI Student Hub."}
+            ? "Transparence sur les liens partenaires utilises sur AI and Cybersecurity News."
+            : "Transparency about partner links used across AI and Cybersecurity News."}
         </p>
       </header>
 
@@ -51,9 +51,10 @@ export default function AffiliateDisclosurePage({ params }: { params: { lang: st
             {fr ? "Editeur" : "Publisher"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
-            {fr
-              ? `Editeur: ${siteConfig.legalName}. Contact: ${siteConfig.contactEmail}`
-              : `Publisher: ${siteConfig.legalName}. Contact: ${siteConfig.contactEmail}`}
+            {fr ? `Editeur: ${siteConfig.legalName}. Contact: ` : `Publisher: ${siteConfig.legalName}. Contact: `}
+            <a href={`mailto:${siteConfig.contactEmail}`} className="do-link">
+              {siteConfig.contactEmail}
+            </a>
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
             <Link href={`/${locale}/resources`} className="btn-secondary">

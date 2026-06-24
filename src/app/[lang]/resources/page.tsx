@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { headers } from "next/headers";
 import { AffiliateDisclosureInline } from "@/components/affiliate-disclosure-inline";
 import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
-import { recommendedTools } from "@/content/posts";
+import { ToolLogo } from "@/components/ui/tool-logo";
+import { recommendedTools, studentStudyTools } from "@/content/posts";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
@@ -42,6 +44,7 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
+  const nonce = headers().get("x-csp-nonce") || undefined;
   const dict = getDictionary(locale);
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
   const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
@@ -126,7 +129,7 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
 
   return (
     <div className="page-shell max-w-6xl py-10 md:py-16">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="do-hero rounded-3xl p-7 md:p-10">
         <div className="grid gap-6 lg:grid-cols-[1.35fr,1fr] lg:items-end">
           <div>
@@ -148,10 +151,10 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
             </div>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/compare`} className="btn-primary">
-                {locale === "fr" ? "Comparer les outils" : "Compare tools"}
+                {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide etudiant" : "Student guide"}
+                {locale === "fr" ? "Roadmap execution" : "Execution roadmap"}
               </Link>
             </div>
           </div>
@@ -166,8 +169,8 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
               </li>
               <li>
                 {locale === "fr"
-                  ? "2. Conserver un budget etudiant realiste."
-                  : "2. Keep spending within realistic student budgets."}
+                  ? "2. Conserver un budget realiste et budget-friendly."
+                  : "2. Keep spending within realistic, budget-friendly limits."}
               </li>
               <li>
                 {locale === "fr"
@@ -198,7 +201,7 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
                 body:
                   locale === "fr"
                     ? "Chaque recommandation est evaluee par rapport a un budget realiste."
-                    : "Every recommendation is reviewed against realistic student budgets."
+                    : "Every recommendation is reviewed against realistic, budget-friendly constraints."
               },
               {
                 title: locale === "fr" ? "Signal carrière" : "Career signal",
@@ -213,6 +216,45 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
                 <p className="card-copy mt-2 text-[color:var(--text)]">{item.body}</p>
               </article>
             ))}
+          </section>
+
+          <section className="surface rounded-2xl p-6">
+            <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <p className="do-kicker">{locale === "fr" ? "Outils revision" : "Study stack"}</p>
+                <h2 className="font-display section-title mt-1 font-semibold text-[color:var(--text-strong)]">
+                  {locale === "fr"
+                    ? "NotebookLM, Antigravity et outils utiles pour etudiants"
+                    : "NotebookLM, Antigravity, and high-utility student tools"}
+                </h2>
+              </div>
+              <Link href={`/${locale}/compare`} className="btn-secondary">
+                {locale === "fr" ? "Voir Tools" : "Open tools"}
+              </Link>
+            </div>
+
+            <div className="grid gap-3 md:grid-cols-2">
+              {studentStudyTools.slice(0, 4).map((tool) => (
+                <article key={tool.name} className="blog-chip rounded-xl p-4">
+                  <div className="flex items-start gap-3">
+                    <ToolLogo
+                      src={tool.icon}
+                      alt={`${tool.name} logo`}
+                      size={40}
+                      className="h-10 w-10 rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] p-1.5"
+                    />
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--primary)]">{tool.category[locale]}</p>
+                      <h3 className="mt-1 text-base font-semibold text-[color:var(--text-strong)]">{tool.name}</h3>
+                    </div>
+                  </div>
+                  <p className="mt-2 text-sm text-[color:var(--text)]">{tool.summary[locale]}</p>
+                  <a href={tool.href} target="_blank" rel="noopener noreferrer" className="do-link mt-2 inline-block text-sm">
+                    {locale === "fr" ? "Lien officiel" : "Official link"}
+                  </a>
+                </article>
+              ))}
+            </div>
           </section>
 
           <section className="surface rounded-2xl p-6">
@@ -251,7 +293,7 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
                 {locale === "fr" ? "Roadmap gratuite" : "Free roadmap"}
               </TrackableAnchor>
               <Link href={`/${locale}/compare`} className="btn-secondary">
-                {locale === "fr" ? "Ouvrir comparatifs" : "Open comparisons"}
+                {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
               </Link>
               {hasCheckoutUrl ? (
                 <TrackableAnchor
@@ -272,9 +314,9 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
             </div>
           </section>
 
-          <section className="grid gap-4 md:grid-cols-3">
+          <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {recommendedTools.map((tool) => (
-              <article key={tool.name} className="card-hover glass rounded-2xl p-6">
+              <article key={tool.name} className="card-hover glass flex min-h-[22rem] flex-col rounded-2xl p-6">
                 <Image src={tool.icon} alt="" width={36} height={36} loading="lazy" className="mb-3 rounded-md" />
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">{tool.category[locale]}</p>
                 <h2 className="font-display mt-2 text-xl font-semibold text-[color:var(--text-strong)]">{tool.name}</h2>
@@ -286,7 +328,7 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
                   rel="noopener noreferrer sponsored"
                   event="affiliate_click"
                   meta={{ page: "resources", tool: tool.name, locale }}
-                  className="btn-primary mt-5 inline-block"
+                  className="btn-primary mt-auto inline-block"
                 >
                   {locale === "fr" ? "Essayer" : "Try tool"}
                 </TrackableAnchor>
@@ -301,8 +343,8 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {locale === "fr"
-                  ? "Ressources partenaires utilisees dans le blog, les comparatifs et cette page."
-                  : "Partner resources referenced across the blog, comparisons, and this page."}
+                  ? "Ressources partenaires utilisees dans le blog, le lab outils et cette page."
+                  : "Partner resources referenced across the blog, tools lab, and this page."}
               </p>
               <div className="mt-4 grid gap-2 md:grid-cols-2">
                 {siteConfig.affiliatePartners.map((partner) => (
@@ -346,22 +388,22 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
 
           <section className="surface rounded-2xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "Comparer avant d'acheter" : "Compare before you buy"}
+              {locale === "fr" ? "Comparer avant d'acheter" : "Compare before buying"}
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Utilise le template de comparaison pour choisir la meilleure option selon ton budget étudiant."
-                : "Use the comparison template to choose the best option by student budget and deployment speed."}
+                ? "Utilise le template du lab outils pour choisir la meilleure option selon ton budget étudiant."
+                : "Use the tools-lab template to choose the best option by budget constraints and deployment speed."}
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <Link href={`/${locale}/news`} className="btn-secondary">
-                {locale === "fr" ? "Actualites IA/CS" : "AI/CS news"}
+                {locale === "fr" ? "Actualites IA/CS" : "AI + Cybersecurity news"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-primary">
-                {locale === "fr" ? "Voir comparatifs" : "Open comparisons"}
+                {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide étudiant ($9-$19)" : "Student guide ($9-$19)"}
+                {locale === "fr" ? "Roadmap execution ($9-$19)" : "Execution roadmap ($9-$19)"}
               </Link>
             </div>
           </section>
@@ -398,10 +440,10 @@ export default function LocalizedResourcesPage({ params }: { params: { lang: str
                 {locale === "fr" ? "Actualites" : "News"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-secondary text-center">
-                {locale === "fr" ? "Comparatifs" : "Comparisons"}
+                {locale === "fr" ? "Lab outils" : "Tools lab"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary text-center">
-                {locale === "fr" ? "Guide etudiant" : "Student guide"}
+                {locale === "fr" ? "Roadmap execution" : "Execution roadmap"}
               </Link>
             </div>
           </div>

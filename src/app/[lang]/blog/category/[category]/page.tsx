@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { getAllCategories, getPostsByCategory, slugify } from "@/content/posts";
+import { getAllCategories, getCategoriesByTrack, getCategoryTrack, getPostsByCategory, slugify } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
@@ -39,8 +39,8 @@ export async function generateMetadata({
     title: `${dict.blog.title} - ${categoryName}`,
     description:
       params.lang === "fr"
-        ? `Articles de la categorie ${categoryName} sur AI Student Hub.`
-        : `${categoryName} category articles on AI Student Hub.`,
+        ? `Articles de la categorie ${categoryName} sur AI and Cybersecurity News.`
+        : `${categoryName} category articles on AI and Cybersecurity News.`,
     keywords: getSeoKeywords(params.lang, "blog", [
       params.lang === "fr" ? `categorie ${categoryName} ia` : `${categoryName} ai category`,
       categoryName
@@ -55,6 +55,10 @@ export default function LocalizedCategoryPage({ params }: { params: { lang: stri
   const locale: Locale = params.lang;
   const dict = getDictionary(locale);
   const posts = getPostsByCategory(params.category, locale);
+  const currentCategoryLabel = posts[0]?.category || displayCategory(params.category);
+  const currentTrack = getCategoryTrack(currentCategoryLabel);
+  const bridgeTrack = currentTrack === "ai" ? "cs" : "ai";
+  const bridgeCategories = getCategoriesByTrack(bridgeTrack).slice(0, 4);
 
   if (!posts.length) notFound();
 
@@ -62,7 +66,7 @@ export default function LocalizedCategoryPage({ params }: { params: { lang: stri
     <section className="page-shell max-w-6xl py-10 md:py-16">
       <Breadcrumbs
         items={[
-          { label: "AI Student Hub", href: `/${locale}` },
+          { label: "AI and Cybersecurity News", href: `/${locale}` },
           { label: dict.nav.blog, href: `/${locale}/blog` },
           { label: displayCategory(params.category) }
         ]}
@@ -90,7 +94,7 @@ export default function LocalizedCategoryPage({ params }: { params: { lang: stri
 
       <div className="mt-8 space-y-4">
         {posts.map((post) => (
-          <article key={post.slug} className="card-hover glass overflow-hidden rounded-2xl p-4 md:p-5">
+          <article key={post.slug} className="blog-stream-card card-hover overflow-hidden rounded-2xl p-4 md:p-5">
             <div className="grid gap-4 md:grid-cols-[250px,1fr] md:items-start">
               <Link href={`/${locale}/blog/${post.slug}`} className="relative overflow-hidden rounded-xl border border-[color:var(--border)]">
                 <Image
@@ -105,7 +109,7 @@ export default function LocalizedCategoryPage({ params }: { params: { lang: stri
               </Link>
               <div>
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
+                  <span className="blog-chip rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
                     {post.category}
                   </span>
                   <span className="text-xs text-[color:var(--muted)]">{post.readTime}</span>
@@ -122,7 +126,7 @@ export default function LocalizedCategoryPage({ params }: { params: { lang: stri
                     <Link
                       key={tag}
                       href={`/${locale}/blog/tag/${slugify(tag)}`}
-                      className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-xs text-[color:var(--text)]"
+                      className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--text)]"
                     >
                       #{tag}
                     </Link>
@@ -136,6 +140,32 @@ export default function LocalizedCategoryPage({ params }: { params: { lang: stri
           </article>
         ))}
       </div>
+
+      {bridgeCategories.length ? (
+        <section className="blog-aside-card mt-6 rounded-2xl p-5">
+          <p className="do-kicker">{locale === "fr" ? "Pont editorial" : "Editorial bridge"}</p>
+          <h2 className="font-display mt-2 text-xl font-semibold text-[color:var(--text-strong)]">
+            {bridgeTrack === "cs"
+              ? locale === "fr"
+                ? "Relier vers les categories informatique"
+                : "Bridge into cybersecurity categories"
+              : locale === "fr"
+                ? "Relier vers les categories IA"
+                : "Bridge into AI categories"}
+          </h2>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {bridgeCategories.map((category) => (
+              <Link
+                key={category}
+                href={`/${locale}/blog/category/${slugify(category)}`}
+                className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--text)]"
+              >
+                {category}
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
     </section>
   );
 }

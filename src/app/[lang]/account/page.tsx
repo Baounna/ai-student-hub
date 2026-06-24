@@ -5,11 +5,13 @@ import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { getOAuthProviderViews } from "@/lib/oauth";
 import { AUTH_SESSION_COOKIE, parseSessionToken } from "@/lib/auth-session";
+import { isCredentialsAuthEnabled } from "@/lib/runtime-config";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 
 const providerLabel: Record<string, string> = {
   email: "Email",
+  credentials: "Email + Password",
   google: "Google",
   github: "GitHub",
   linkedin: "LinkedIn"
@@ -22,13 +24,13 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
   return {
     title: fr ? "Mon compte" : "My account",
-    description: fr ? "Espace compte AI Student Hub." : "AI Student Hub account area.",
+    description: fr ? "Espace compte AI and Cybersecurity News." : "AI and Cybersecurity News account area.",
     robots: { index: false, follow: false },
     alternates: localizedAlternates("/account", params.lang)
   };
 }
 
-export default function LocalizedAccountPage({
+export default async function LocalizedAccountPage({
   params,
   searchParams
 }: {
@@ -40,8 +42,9 @@ export default function LocalizedAccountPage({
   const locale: Locale = params.lang;
   const fr = locale === "fr";
   const token = cookies().get(AUTH_SESSION_COOKIE)?.value;
-  const session = parseSessionToken(token);
+  const session = await parseSessionToken(token);
   const hasSocialProviders = getOAuthProviderViews().some((provider) => provider.configured);
+  const credentialsAuthEnabled = isCredentialsAuthEnabled();
   const authSuccess = searchParams?.auth === "success";
   const sessionProviderLabel = session ? providerLabel[session.provider] || session.provider : "";
 
@@ -56,11 +59,19 @@ export default function LocalizedAccountPage({
           <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
             {fr
               ? hasSocialProviders
-                ? "Connecte-toi avec Google, GitHub, LinkedIn, ou email pour acceder a ton espace."
-                : "Connecte-toi par email pour acceder a ton espace."
+                ? credentialsAuthEnabled
+                  ? "Connecte-toi avec Google, GitHub, LinkedIn, ou email + mot de passe pour acceder a ton espace."
+                  : "Connecte-toi avec Google, GitHub, LinkedIn, ou email pour acceder a ton espace."
+                : credentialsAuthEnabled
+                  ? "Connecte-toi par email + mot de passe pour acceder a ton espace."
+                  : "Connecte-toi par email pour acceder a ton espace."
               : hasSocialProviders
-                ? "Sign in with Google, GitHub, LinkedIn, or email to access your account."
-                : "Sign in with email to access your account."}
+                ? credentialsAuthEnabled
+                  ? "Sign in with Google, GitHub, LinkedIn, or email + password to access your account."
+                  : "Sign in with Google, GitHub, LinkedIn, or email to access your account."
+                : credentialsAuthEnabled
+                  ? "Sign in with email + password to access your account."
+                  : "Sign in with email to access your account."}
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
             <Link href={`/${locale}/login`} className="btn-primary">
@@ -113,8 +124,8 @@ export default function LocalizedAccountPage({
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr
-                ? "Tu es connecte a AI Student Hub. Continue vers les news, ressources et comparatifs."
-                : "You are signed in to AI Student Hub. Continue with news, resources, and comparison guides."}
+                ? "Tu es connecte a AI and Cybersecurity News. Continue vers les news, ressources et comparatifs."
+                : "You are signed in to AI and Cybersecurity News. Continue with news, resources, and comparison guides."}
             </p>
           </div>
           <div className="surface rounded-2xl p-5">
@@ -174,7 +185,7 @@ export default function LocalizedAccountPage({
             </h2>
             <div className="mt-4 grid gap-2">
               <Link href={`/${locale}/news`} className="btn-secondary text-center">
-                {fr ? "Actualites IA/CS" : "AI/CS News"}
+                {fr ? "Actualites IA/CS" : "AI + Cybersecurity News"}
               </Link>
               <Link href={`/${locale}/resources`} className="btn-secondary text-center">
                 {fr ? "Ressources" : "Resources"}

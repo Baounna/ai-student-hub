@@ -2,8 +2,10 @@
 import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { loadScriptEnv } from "./lib/load-env.mjs";
 
 const ROOT = process.cwd();
+loadScriptEnv(ROOT);
 const STATE_FILE = path.join(ROOT, "docs/agent/issues-state.json");
 const REPORT_FILE = path.join(ROOT, "docs/agent/issues-report.md");
 
@@ -300,7 +302,7 @@ function normalizeStateItem(rawItem, generatedAt) {
 function buildReport({ generatedAt, mode, repository, maxPerRun, sources, created, existing, dryRun, errors, tracked }) {
   const lines = [];
 
-  lines.push("# AI Student Hub Agent Issue Sync");
+  lines.push("# AI and Cybersecurity News Agent Issue Sync");
   lines.push("");
   lines.push(`Generated: ${generatedAt}`);
   lines.push(`Mode: ${mode}`);

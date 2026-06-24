@@ -1,19 +1,20 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
+import { isSessionTokenRevoked } from "@/lib/session-revocation";
 
 export const AUTH_SESSION_COOKIE = "ash_session";
 const DEV_FALLBACK_SECRET = "dev-auth-session-secret-not-for-production";
 const MAX_TOKEN_LENGTH = 4096;
-const PROVIDERS = new Set(["google", "github", "linkedin", "email"]);
+const PROVIDERS = new Set(["google", "github", "linkedin", "email", "credentials"]);
 
 export type SessionUser = {
-  provider: "google" | "github" | "linkedin" | "email";
+  provider: "google" | "github" | "linkedin" | "email" | "credentials";
   providerUserId: string;
   email: string;
   name: string;
   avatarUrl?: string;
 };
 
-type SessionPayload = SessionUser & {
+export type SessionPayload = SessionUser & {
   iat: number;
   exp: number;
 };
@@ -73,7 +74,7 @@ export function createSessionToken(user: SessionUser, maxAgeSeconds = 60 * 60 * 
   return `${encodedPayload}.${signature}`;
 }
 
-export function parseSessionToken(token: string | undefined): SessionPayload | null {
+export function parseSessionTokenUnsafe(token: string | undefined): SessionPayload | null {
   if (!token) return null;
   if (token.length > MAX_TOKEN_LENGTH) return null;
 
@@ -104,4 +105,14 @@ export function parseSessionToken(token: string | undefined): SessionPayload | n
   } catch {
     return null;
   }
+}
+
+export async function parseSessionToken(token: string | undefined): Promise<SessionPayload | null> {
+  const payload = parseSessionTokenUnsafe(token);
+  if (!payload || !token) return null;
+
+  const revoked = await isSessionTokenRevoked(token);
+  if (revoked) return null;
+
+  return payload;
 }

@@ -11,7 +11,7 @@ import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
 function isInternalGrowthSprintEnabled() {
   const flag = (process.env.ENABLE_INTERNAL_GROWTH_SPRINT || "").trim().toLowerCase();
-  return process.env.NODE_ENV !== "production" || flag === "1" || flag === "true" || flag === "yes";
+  return flag === "1" || flag === "true" || flag === "yes";
 }
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   const fr = params.lang === "fr";
   const title = fr ? "Sprint croissance 14 jours" : "14-day growth sprint";
   const description = fr
-    ? "Plan d'execution concret pour rendre AI Student Hub plus attractif et plus utile aux etudiants."
-    : "Concrete execution plan to make AI Student Hub more attractive and more useful for students.";
+    ? "Plan d'execution concret pour rendre AI and Cybersecurity News plus attractif et plus utile aux etudiants."
+    : "Concrete execution plan to make AI and Cybersecurity News more attractive and more useful for students.";
 
   return {
     title,
@@ -67,8 +67,8 @@ const sprintDays: SprintDay[] = [
   {
     day: "Day 1",
     task: {
-      en: "Select 3 high-intent topics from the auto AI/CS feed (comparison, budget, tools).",
-      fr: "Selectionne 3 sujets a forte intention depuis le flux auto AI/CS (comparaison, budget, outils)."
+      en: "Select 3 high-intent topics from the auto AI + Cybersecurity feed (comparison, budget, tools).",
+      fr: "Selectionne 3 sujets a forte intention depuis le flux auto AI + Cybersecurity (comparaison, budget, outils)."
     },
     output: {
       en: "3 article titles + target keyword each.",
@@ -277,7 +277,7 @@ export default function GrowthSprintPage({ params }: { params: { lang: string } 
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           <Link href={`/${locale}/news`} className="btn-secondary">
-            {fr ? "Actualites AI/CS" : "AI/CS news"}
+            {fr ? "Actualites AI + Cybersecurity" : "AI + Cybersecurity news"}
           </Link>
           <Link href={`/${locale}/resources`} className="btn-secondary">
             {fr ? "Resources" : "Resources"}

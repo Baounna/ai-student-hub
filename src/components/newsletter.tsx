@@ -18,16 +18,21 @@ export function Newsletter({ compact = false, locale = "en", source }: Newslette
           "3. Workflow candidatures + preparation entretien"
         ]
       : [
-          "1. Weekly AI/CS signals translated into practical actions",
+          "1. Weekly AI + Cybersecurity signals translated into practical actions",
           "2. 30-day sprint plan with weekly milestones",
           "3. Application + interview prep workflow"
         ];
+  const cadenceLine =
+    locale === "fr"
+      ? "Frequence: 1 email principal par semaine + alertes importantes occasionnelles."
+      : "Cadence: 1 main email per week + occasional high-signal alerts.";
 
   if (compact) {
     return (
       <section className="surface rounded-2xl p-6">
         <p className="do-kicker">Newsletter</p>
         <h3 className="mt-2 text-lg font-semibold text-[color:var(--text-strong)]">{dict.title}</h3>
+        <p className="mt-2 text-xs text-[color:var(--muted)]">{cadenceLine}</p>
         <NewsletterForm compact locale={locale} source={source} ctaLabel={locale === "fr" ? "Rejoindre" : "Join"} />
       </section>
     );
@@ -45,12 +50,13 @@ export function Newsletter({ compact = false, locale = "en", source }: Newslette
           <li key={line}>{line}</li>
         ))}
       </ul>
+      <p className="mt-3 text-xs text-[color:var(--muted)]">{cadenceLine}</p>
 
       <NewsletterForm locale={locale} source={source} ctaLabel={dict.cta} />
       <p className="mt-3 text-xs text-[color:var(--muted)]">
         {locale === "fr"
           ? "Pas de spam. Briefs actualite + systemes actionnables pour etudiants IA/CS."
-          : "No spam. News briefs + actionable weekly systems for AI/CS students."}
+          : "No spam. News briefs + actionable weekly systems for AI + Cybersecurity students."}
       </p>
     </section>
   );

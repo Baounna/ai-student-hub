@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AccountAccessForm } from "@/components/account-access-form";
-import { EditorialTrust } from "@/components/editorial-trust";
-import { Newsletter } from "@/components/newsletter";
 import { SocialAuthButtons } from "@/components/social-auth-buttons";
+import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getOAuthErrorMessage } from "@/lib/auth-feedback";
 import { getOAuthProviderViews } from "@/lib/oauth";
+import { isCredentialsAuthEnabled } from "@/lib/runtime-config";
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
-  const title = fr ? "Creer un compte" : "Create account";
+  const title = fr ? "Inscription" : "Create account";
   const description = fr
-    ? "Creer un acces AI Student Hub pour recevoir les ressources et mises a jour."
-    : "Create your AI Student Hub account to get resources and updates.";
+    ? "Cree ton compte AI and Cybersecurity News en quelques secondes."
+    : "Create your AI and Cybersecurity News account in seconds.";
 
   return {
     title,
@@ -39,49 +39,16 @@ export default function LocalizedRegisterPage({
   const fr = locale === "fr";
   const providers = getOAuthProviderViews().filter((provider) => provider.configured);
   const hasSocialProviders = providers.length > 0;
+  const credentialsAuthEnabled = isCredentialsAuthEnabled();
   const oauthErrorRaw = searchParams?.oauth_error;
   const oauthError = typeof oauthErrorRaw === "string" ? oauthErrorRaw : null;
   const oauthErrorMessage = getOAuthErrorMessage(oauthError, locale);
 
   return (
-    <div className="page-shell max-w-6xl py-10 md:py-14">
-      <section className="do-hero rounded-3xl p-7 md:p-10">
-        <div className="grid gap-6 lg:grid-cols-[1.3fr,1fr] lg:items-end">
-          <div>
-            <p className="do-kicker">{fr ? "Compte" : "Account"}</p>
-            <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
-              {fr ? "Creer un compte AI Student Hub" : "Create your AI Student Hub account"}
-            </h1>
-            <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
-              {fr
-                ? "Acces gratuit pour suivre les news IA/CS, les guides deploiement et les ressources etudiantes."
-                : "Free access to AI/CS news, deployment guides, and student-focused resources."}
-            </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Acces gratuit" : "Free access"}
-              </span>
-              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "EN/FR" : "EN/FR"}
-              </span>
-              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Execution IA/CS" : "AI/CS execution"}
-              </span>
-            </div>
-          </div>
-          <div className="surface rounded-2xl p-5">
-            <p className="do-kicker">{fr ? "Demarrage en 30 secondes" : "Start in 30 seconds"}</p>
-            <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
-              <li>{fr ? "1. Cree ton acces gratuitement." : "1. Create your free access."}</li>
-              <li>{fr ? "2. Activation instantanee apres validation." : "2. Instant activation after submit."}</li>
-              <li>{fr ? "3. Lance ton parcours execution IA/CS." : "3. Start your AI/CS execution path."}</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
+    <div className="page-shell py-10 md:py-14">
+      <div className="mx-auto w-full max-w-4xl">
       {hasSocialProviders ? (
-        <div className="mt-6">
+        <div>
           <SocialAuthButtons locale={locale} mode="register" providers={providers} />
         </div>
       ) : null}
@@ -92,43 +59,62 @@ export default function LocalizedRegisterPage({
         </div>
       ) : null}
 
-      <div className="mt-6 grid gap-6 lg:grid-cols-[1.15fr,0.85fr]">
-        <AccountAccessForm locale={locale} mode="register" />
+      <div className="mx-auto w-full max-w-3xl space-y-4">
+        <AccountAccessForm
+          locale={locale}
+          mode="register"
+          authVariant={credentialsAuthEnabled ? "credentials" : "passwordless"}
+        />
 
-        <aside className="space-y-4 lg:sticky lg:top-32 lg:h-fit">
-          <section className="glass rounded-2xl p-5 md:p-6">
-            <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Ce que tu reçois" : "What you get"}
+        <section className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-4 py-3 text-xs text-[color:var(--muted)]">
+          {fr
+            ? "En continuant, tu acceptes les conditions d'utilisation et la politique de confidentialite."
+            : "By continuing, you agree to the terms of use and privacy policy."}{" "}
+          <Link href={`/${locale}/terms`} className="do-link">
+            {fr ? "Conditions" : "Terms"}
+          </Link>{" "}
+          •{" "}
+          <Link href={`/${locale}/privacy`} className="do-link">
+            {fr ? "Confidentialite" : "Privacy"}
+          </Link>
+        </section>
+
+        <div className="space-y-4">
+          <section className="surface rounded-2xl p-5 md:p-6">
+            <h2 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
+              {fr ? "Ce que tu obtiens" : "What you get"}
             </h2>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
-              <li>- {fr ? "Briefs IA/CS hebdomadaires avec actions concretes." : "Weekly AI/CS briefs with practical actions."}</li>
-              <li>- {fr ? "Acces rapide aux comparatifs et ressources." : "Fast access to tools, resources, and comparisons."}</li>
-              <li>- {fr ? "Roadmap etudiante pour passer de theorie a execution." : "Student roadmap to move from theory to execution."}</li>
+              <li>- {fr ? "Acces aux briefs IA + CS." : "Access to AI + Cybersecurity briefs."}</li>
+              <li>- {fr ? "Ressources et comparatifs etudiants." : "Student resources and comparisons."}</li>
             </ul>
           </section>
 
-          <EditorialTrust locale={locale} compact />
-
-          <section className="surface rounded-2xl p-5 md:p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--primary)]">
-              {fr ? "Comment ca marche" : "How it works"}
-            </p>
-            <ol className="mt-2 space-y-1 text-sm text-[color:var(--text)]">
-              <li>1. {fr ? "Soumets ton email." : "Submit your email."}</li>
-              <li>2. {fr ? "Session creee automatiquement." : "Session is created automatically."}</li>
-              <li>3. {fr ? "Commence avec News, Resources, Compare." : "Start with News, Resources, Compare."}</li>
-            </ol>
-          </section>
-
           <section className="glass rounded-2xl p-5 md:p-6">
-            <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--primary)]">{fr ? "Deja inscrit" : "Already registered?"}</p>
-            <Link href={`/${locale}/login`} className="do-link mt-2 inline-block text-sm">
+            <h2 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
+              {fr ? "Deja inscrit ?" : "Already registered?"}
+            </h2>
+            <p className="mt-2 text-sm text-[color:var(--text)]">
+              {fr ? "Connecte-toi directement." : "Sign in directly."}
+            </p>
+            <Link href={`/${locale}/login`} className="btn-primary mt-4 inline-flex">
               {fr ? "Se connecter" : "Go to login"}
             </Link>
           </section>
 
-          <Newsletter compact locale={locale} source="register_aside" />
-        </aside>
+          <section className="surface rounded-2xl p-5 md:p-6">
+            <h2 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
+              {fr ? "Besoin d'aide ?" : "Need help?"}
+            </h2>
+            <p className="mt-2 text-sm text-[color:var(--text)]">
+              {fr ? "Contact support:" : "Contact support:"}{" "}
+              <a href={`mailto:${siteConfig.contactEmail}`} className="do-link">
+                {siteConfig.contactEmail}
+              </a>
+            </p>
+          </section>
+        </div>
+      </div>
       </div>
     </div>
   );

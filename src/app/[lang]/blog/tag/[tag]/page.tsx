@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: { lang: string; tag
   return {
     title: `${dict.blog.title} - #${tagName}`,
     description:
-      params.lang === "fr" ? `Articles avec le tag #${tagName} sur AI Student Hub.` : `Articles tagged #${tagName} on AI Student Hub.`,
+      params.lang === "fr" ? `Articles avec le tag #${tagName} sur AI and Cybersecurity News.` : `Articles tagged #${tagName} on AI and Cybersecurity News.`,
     keywords: getSeoKeywords(params.lang, "blog", [
       params.lang === "fr" ? `tag ${tagName} ia` : `${tagName} ai tag`,
       tagName
@@ -56,7 +56,7 @@ export default function LocalizedTagPage({ params }: { params: { lang: string; t
     <section className="page-shell max-w-6xl py-10 md:py-16">
       <Breadcrumbs
         items={[
-          { label: "AI Student Hub", href: `/${locale}` },
+          { label: "AI and Cybersecurity News", href: `/${locale}` },
           { label: dict.nav.blog, href: `/${locale}/blog` },
           { label: `#${displayTag(params.tag)}` }
         ]}
@@ -84,7 +84,7 @@ export default function LocalizedTagPage({ params }: { params: { lang: string; t
 
       <div className="mt-8 space-y-4">
         {posts.map((post) => (
-          <article key={post.slug} className="card-hover glass overflow-hidden rounded-2xl p-4 md:p-5">
+          <article key={post.slug} className="blog-stream-card card-hover overflow-hidden rounded-2xl p-4 md:p-5">
             <div className="grid gap-4 md:grid-cols-[250px,1fr] md:items-start">
               <Link href={`/${locale}/blog/${post.slug}`} className="relative overflow-hidden rounded-xl border border-[color:var(--border)]">
                 <Image
@@ -99,7 +99,7 @@ export default function LocalizedTagPage({ params }: { params: { lang: string; t
               </Link>
               <div>
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
+                  <span className="blog-chip rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
                     {post.category}
                   </span>
                   <span className="text-xs text-[color:var(--muted)]">{post.readTime}</span>
@@ -116,7 +116,7 @@ export default function LocalizedTagPage({ params }: { params: { lang: string; t
                     <Link
                       key={tag}
                       href={`/${locale}/blog/tag/${slugify(tag)}`}
-                      className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-xs text-[color:var(--text)]"
+                      className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--text)]"
                     >
                       #{tag}
                     </Link>

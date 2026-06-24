@@ -2,6 +2,7 @@ type OAuthMode = "enable" | "disable";
 type EmailProvider = "none" | "convertkit";
 type AnalyticsMode = "none" | "ga4";
 type EmailAuthMode = "oauth_only" | "insecure_demo";
+type AuthFlowMode = "credentials" | "passwordless";
 
 function normalize(value: string | undefined) {
   return (value || "").trim().toLowerCase();
@@ -35,6 +36,15 @@ export function getEmailProvider(): EmailProvider {
 export function getEmailAuthMode(): EmailAuthMode {
   const value = normalize(process.env.EMAIL_AUTH_MODE);
   return value === "insecure_demo" ? "insecure_demo" : "oauth_only";
+}
+
+export function getAuthFlowMode(): AuthFlowMode {
+  const value = normalize(process.env.AUTH_FLOW_MODE);
+  return value === "passwordless" ? "passwordless" : "credentials";
+}
+
+export function isCredentialsAuthEnabled() {
+  return getAuthFlowMode() === "credentials";
 }
 
 export function isInsecureEmailAuthAllowed() {

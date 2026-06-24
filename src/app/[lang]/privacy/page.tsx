@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
   return {
     title: params.lang === "fr" ? "Politique de confidentialite" : "Privacy Policy",
-    description: params.lang === "fr" ? "Politique de confidentialite d'AI Student Hub." : "AI Student Hub privacy policy.",
+    description: params.lang === "fr" ? "Politique de confidentialite d'AI and Cybersecurity News." : "AI and Cybersecurity News privacy policy.",
     alternates: localizedAlternates("/privacy", params.lang)
   };
 }
@@ -28,8 +28,8 @@ export default function PrivacyPage({ params }: { params: { lang: string } }) {
         </h1>
         <p className="mt-4 text-sm text-[color:var(--text)]">
           {fr
-            ? "Comment AI Student Hub collecte, utilise, et protege les informations utilisateur."
-            : "How AI Student Hub collects, uses, and protects user information."}
+            ? "Comment AI and Cybersecurity News collecte, utilise, et protege les informations utilisateur."
+            : "How AI and Cybersecurity News collects, uses, and protects user information."}
         </p>
       </header>
 
@@ -61,7 +61,10 @@ export default function PrivacyPage({ params }: { params: { lang: string } }) {
             {fr ? "Contact et droits" : "Contact and rights"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
-            {fr ? `Pour toute demande: ${siteConfig.privacyContactEmail}` : `For any request: ${siteConfig.privacyContactEmail}`}
+            {fr ? "Pour toute demande: " : "For any request: "}
+            <a href={`mailto:${siteConfig.privacyContactEmail}`} className="do-link">
+              {siteConfig.privacyContactEmail}
+            </a>
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
             <Link href={`/${locale}/terms`} className="btn-secondary">

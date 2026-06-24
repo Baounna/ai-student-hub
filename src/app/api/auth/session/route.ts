@@ -3,7 +3,7 @@ import { AUTH_SESSION_COOKIE, parseSessionToken } from "@/lib/auth-session";
 
 export async function GET(request: NextRequest) {
   const token = request.cookies.get(AUTH_SESSION_COOKIE)?.value;
-  const session = parseSessionToken(token);
+  const session = await parseSessionToken(token);
 
   return NextResponse.json(
     {

@@ -54,7 +54,7 @@ export function MobileQuickNav({ locale }: { locale: Locale }) {
     },
     {
       href: `/${locale}/resources`,
-      label: locale === "fr" ? "Outils" : "Tools",
+      label: locale === "fr" ? "Ress." : "Res.",
       icon: (
         <svg viewBox="0 0 20 20" className={iconClass} aria-hidden>
           <path
@@ -66,7 +66,7 @@ export function MobileQuickNav({ locale }: { locale: Locale }) {
     },
     {
       href: `/${locale}/compare`,
-      label: locale === "fr" ? "Compare" : "Compare",
+      label: locale === "fr" ? "Outils" : "Tools",
       icon: (
         <svg viewBox="0 0 20 20" className={iconClass} aria-hidden>
           <path
