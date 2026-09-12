@@ -26,7 +26,8 @@ function formatPublishedDate(date: string, locale: Locale) {
   }).format(new Date(date));
 }
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const dict = getDictionary(params.lang);
@@ -62,13 +63,14 @@ type BlogSearchParams = {
   track?: string | string[];
 };
 
-export default function LocalizedBlogPage({
-  params,
-  searchParams
-}: {
-  params: { lang: string };
-  searchParams?: BlogSearchParams;
-}) {
+export default async function LocalizedBlogPage(
+  props: {
+    params: Promise<{ lang: string }>;
+    searchParams?: Promise<BlogSearchParams>;
+  }
+) {
+  const searchParams = await props.searchParams;
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;

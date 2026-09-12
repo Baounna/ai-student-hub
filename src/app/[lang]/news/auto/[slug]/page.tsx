@@ -133,7 +133,8 @@ export function generateStaticParams() {
   return locales.flatMap((lang) => slugs.map((slug) => ({ lang, slug })));
 }
 
-export async function generateMetadata({ params }: { params: { lang: string; slug: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const item = getAutoNewsBySlug(params.slug, params.lang);
@@ -165,11 +166,12 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
   };
 }
 
-export default function AutoNewsDetailPage({ params }: { params: { lang: string; slug: string } }) {
+export default async function AutoNewsDetailPage(props: { params: Promise<{ lang: string; slug: string }> }) {
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
-  const nonce = headers().get("x-csp-nonce") || undefined;
+  const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const fr = locale === "fr";
   const dict = getDictionary(locale);
   const item = getAutoNewsBySlug(params.slug, locale);

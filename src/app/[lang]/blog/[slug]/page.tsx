@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { headers } from "next/headers";
@@ -23,10 +22,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
-
-const ScrollCaptureCta = dynamic(() => import("@/components/scroll-capture-cta").then((mod) => mod.ScrollCaptureCta), {
-  ssr: false
-});
+import { ScrollCaptureCtaLazy } from "@/components/scroll-capture-cta-lazy";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => posts.map((post) => ({ lang, slug: post.slug })));
@@ -67,7 +63,8 @@ function getHostLabel(href: string) {
   }
 }
 
-export async function generateMetadata({ params }: { params: { lang: string; slug: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
   const post = getLocalizedPost(params.slug, params.lang);
   if (!post) return {};
@@ -94,10 +91,11 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
   };
 }
 
-export default function LocalizedBlogPostPage({ params }: { params: { lang: string; slug: string } }) {
+export default async function LocalizedBlogPostPage(props: { params: Promise<{ lang: string; slug: string }> }) {
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
   const locale: Locale = params.lang;
-  const nonce = headers().get("x-csp-nonce") || undefined;
+  const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const dict = getDictionary(locale);
   const post = getLocalizedPost(params.slug, locale);
 
@@ -569,7 +567,7 @@ export default function LocalizedBlogPostPage({ params }: { params: { lang: stri
       </div>
       <BackToTop />
       <StickyPostCta locale={locale} />
-      <ScrollCaptureCta locale={locale} />
+      <ScrollCaptureCtaLazy locale={locale} />
     </article>
   );
 }

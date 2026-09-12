@@ -27,7 +27,8 @@ export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
@@ -61,17 +62,18 @@ type CompareSearchParams = {
   tool?: string | string[];
 };
 
-export default function LocalizedCompareIndexPage({
-  params,
-  searchParams
-}: {
-  params: { lang: string };
-  searchParams?: CompareSearchParams;
-}) {
+export default async function LocalizedCompareIndexPage(
+  props: {
+    params: Promise<{ lang: string }>;
+    searchParams?: Promise<CompareSearchParams>;
+  }
+) {
+  const searchParams = await props.searchParams;
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
-  const nonce = headers().get("x-csp-nonce") || undefined;
+  const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const fr = locale === "fr";
   const playbookTitle = fr ? "Framework de selection" : "Selection framework";
   const toolParam = Array.isArray(searchParams?.tool) ? searchParams?.tool[0] : searchParams?.tool;

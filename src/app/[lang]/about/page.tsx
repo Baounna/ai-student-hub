@@ -7,7 +7,8 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords } from "@/lib/seo";
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
   const dict = getDictionary(params.lang);
 
@@ -32,7 +33,8 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   };
 }
 
-export default function LocalizedAboutPage({ params }: { params: { lang: string } }) {
+export default async function LocalizedAboutPage(props: { params: Promise<{ lang: string }> }) {
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;

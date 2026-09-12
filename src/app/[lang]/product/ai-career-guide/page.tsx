@@ -13,7 +13,8 @@ const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim
 const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
 const hasCheckoutUrl = Boolean(checkoutUrl);
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
@@ -48,7 +49,8 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   };
 }
 
-export default function LocalizedProductPage({ params }: { params: { lang: string } }) {
+export default async function LocalizedProductPage(props: { params: Promise<{ lang: string }> }) {
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;

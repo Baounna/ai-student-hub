@@ -8,7 +8,8 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
@@ -28,7 +29,8 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   };
 }
 
-export default function LocalizedDonatePage({ params }: { params: { lang: string } }) {
+export default async function LocalizedDonatePage(props: { params: Promise<{ lang: string }> }) {
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;

@@ -9,7 +9,8 @@ import { getOAuthErrorMessage } from "@/lib/auth-feedback";
 import { getOAuthProviderViews } from "@/lib/oauth";
 import { isCredentialsAuthEnabled } from "@/lib/runtime-config";
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
@@ -26,13 +27,14 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   };
 }
 
-export default function LocalizedLoginPage({
-  params,
-  searchParams
-}: {
-  params: { lang: string };
-  searchParams?: { oauth_error?: string | string[]; logged_out?: string | string[] };
-}) {
+export default async function LocalizedLoginPage(
+  props: {
+    params: Promise<{ lang: string }>;
+    searchParams?: Promise<{ oauth_error?: string | string[]; logged_out?: string | string[] }>;
+  }
+) {
+  const searchParams = await props.searchParams;
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;

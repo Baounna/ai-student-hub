@@ -15,7 +15,8 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords } from "@/lib/seo";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
   const dict = getDictionary(params.lang);
 
@@ -40,11 +41,12 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   };
 }
 
-export default function LocalizedResourcesPage({ params }: { params: { lang: string } }) {
+export default async function LocalizedResourcesPage(props: { params: Promise<{ lang: string }> }) {
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
-  const nonce = headers().get("x-csp-nonce") || undefined;
+  const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const dict = getDictionary(locale);
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
   const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
