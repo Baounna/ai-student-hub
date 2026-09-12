@@ -17,8 +17,8 @@ const MAX_PER_SOURCE = Math.max(1, Math.min(Number.parseInt(process.env.AUTO_TOO
 const FEED_SOURCES = [
   {
     name: "OpenAI News",
-    href: "https://openai.com/news/",
-    kind: "page",
+    // The /news/ HTML page is bot-protected (403), so use the official RSS feed.
+    href: "https://openai.com/news/rss.xml",
     allowedRoots: ["openai.com"],
     pathAllow: [/^\/index\/[a-z0-9-]/i, /^\/news\/[a-z0-9-]/i],
     maxItems: 16
@@ -90,7 +90,7 @@ const FEED_SOURCES = [
   { name: "Node.js Blog", href: "https://nodejs.org/en/feed/blog.xml" },
   { name: "Go Blog", href: "https://go.dev/blog/feed.atom" },
   { name: "Rust Blog", href: "https://blog.rust-lang.org/feed.xml" },
-  { name: "PostgreSQL News", href: "https://www.postgresql.org/list/pgsql-announce.rss" },
+  { name: "PostgreSQL News", href: "https://www.postgresql.org/news.rss" },
   { name: "V8 Blog", href: "https://v8.dev/blog.atom" },
   { name: "NIST News", href: "https://www.nist.gov/news-events/news/rss.xml" },
   { name: "W3C Blog", href: "https://www.w3.org/blog/feed/" }
@@ -343,6 +343,7 @@ function decodeEntities(value) {
 
 function stripTags(value) {
   return value
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
@@ -353,13 +354,15 @@ function cleanupText(value) {
 }
 
 function extractTag(block, tagName) {
-  const match = block.match(new RegExp(`<${tagName}>([\\s\\S]*?)</${tagName}>`, "i"));
+  const match = block.match(new RegExp(`<${tagName}(?:\\s[^>]*)?>([\\s\\S]*?)</${tagName}>`, "i"));
   if (!match) return "";
   return cleanupText(match[1] || "");
 }
 
 function extractCdataTag(block, tagName) {
-  const cdataMatch = block.match(new RegExp(`<${tagName}><!\\[CDATA\\[([\\s\\S]*?)\\]\\]></${tagName}>`, "i"));
+  const cdataMatch = block.match(
+    new RegExp(`<${tagName}(?:\\s[^>]*)?><!\\[CDATA\\[([\\s\\S]*?)\\]\\]></${tagName}>`, "i")
+  );
   if (cdataMatch) return cleanupText(cdataMatch[1] || "");
   return extractTag(block, tagName);
 }
@@ -546,11 +549,11 @@ function parseAtomItems(xml, source) {
 
   return entries
     .map((block) => {
-      const title = extractTag(block, "title");
+      const title = extractCdataTag(block, "title");
       const rawHref = extractAtomLink(block);
       const href = resolveHref(source.href, rawHref);
       const publishedAt = normalizeDate(extractTag(block, "updated") || extractTag(block, "published"));
-      const summary = extractTag(block, "summary") || extractTag(block, "content");
+      const summary = extractCdataTag(block, "summary") || extractCdataTag(block, "content");
 
       if (!title || !isHttpUrl(href)) return null;
       if (isBlockedSource(source.name, href)) return null;

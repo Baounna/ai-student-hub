@@ -4,6 +4,7 @@ import { execFile } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { promisify } from "node:util";
+import { fileURLToPath } from "node:url";
 import { loadScriptEnv } from "./lib/load-env.mjs";
 
 loadScriptEnv(process.cwd());
@@ -38,20 +39,20 @@ const FEED_SOURCES = [
   },
   {
     name: "OpenAI News",
-    href: "https://openai.com/news/",
-    kind: "page",
+    // The /news/ HTML page is bot-protected (403), so use the official RSS feed.
+    href: "https://openai.com/news/rss.xml",
     topicHint: "AI Systems",
     allowedRoots: ["openai.com"],
     pathAllow: [/^\/index\/[a-z0-9-]/i, /^\/news\/[a-z0-9-]/i],
     maxItems: 16
   },
   { name: "Google AI Blog", href: "https://blog.google/technology/ai/rss/", topicHint: "AI Systems" },
-  { name: "DeepMind Blog", href: "https://deepmind.google/discover/blog/rss.xml", topicHint: "AI Research" },
+  { name: "DeepMind Blog", href: "https://deepmind.google/blog/rss.xml", topicHint: "AI Research" },
   { name: "Hugging Face Blog", href: "https://huggingface.co/blog/feed.xml", topicHint: "AI Systems" },
   { name: "AWS ML Blog", href: "https://aws.amazon.com/blogs/machine-learning/feed/", topicHint: "AI Systems" },
   {
     name: "Azure AI Blog",
-    href: "https://azure.microsoft.com/en-us/blog/topics/ai-machine-learning/feed/",
+    href: "https://azure.microsoft.com/en-us/blog/feed/",
     topicHint: "AI Systems"
   },
   { name: "NVIDIA Developer Blog", href: "https://developer.nvidia.com/blog/feed/", topicHint: "Computer Systems" },
@@ -67,7 +68,7 @@ const FEED_SOURCES = [
     href: "https://pythoninsider.blogspot.com/feeds/posts/default?alt=rss",
     topicHint: "CS Fundamentals"
   },
-  { name: "PostgreSQL News", href: "https://www.postgresql.org/list/pgsql-announce.rss", topicHint: "Systems & Backend" },
+  { name: "PostgreSQL News", href: "https://www.postgresql.org/news.rss", topicHint: "Systems & Backend" },
   { name: "V8 Blog", href: "https://v8.dev/blog.atom", topicHint: "CS Fundamentals" },
   { name: "NIST News", href: "https://www.nist.gov/news-events/news/rss.xml", topicHint: "Security & Standards" },
   { name: "W3C Blog", href: "https://www.w3.org/blog/feed/", topicHint: "Computer Science" }
@@ -221,6 +222,7 @@ function decodeEntities(value) {
 
 function stripTags(value) {
   return value
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
@@ -231,13 +233,15 @@ function cleanupText(value) {
 }
 
 function extractTag(block, tagName) {
-  const match = block.match(new RegExp(`<${tagName}>([\\s\\S]*?)</${tagName}>`, "i"));
+  const match = block.match(new RegExp(`<${tagName}(?:\\s[^>]*)?>([\\s\\S]*?)</${tagName}>`, "i"));
   if (!match) return "";
   return cleanupText(match[1] || "");
 }
 
 function extractCdataTag(block, tagName) {
-  const cdataMatch = block.match(new RegExp(`<${tagName}><!\\[CDATA\\[([\\s\\S]*?)\\]\\]></${tagName}>`, "i"));
+  const cdataMatch = block.match(
+    new RegExp(`<${tagName}(?:\\s[^>]*)?><!\\[CDATA\\[([\\s\\S]*?)\\]\\]></${tagName}>`, "i")
+  );
   if (cdataMatch) return cleanupText(cdataMatch[1] || "");
   return extractTag(block, tagName);
 }
@@ -429,11 +433,11 @@ function parseAtomItems(xml, source) {
 
   return entries
     .map((block) => {
-      const title = extractTag(block, "title");
+      const title = extractCdataTag(block, "title");
       const rawHref = extractAtomLink(block);
       const href = resolveHref(source.href, rawHref);
       const publishedAt = normalizeDate(extractTag(block, "updated") || extractTag(block, "published"));
-      const summary = extractTag(block, "summary") || extractTag(block, "content");
+      const summary = extractCdataTag(block, "summary") || extractCdataTag(block, "content");
       if (!title || !isHttpUrl(href)) return null;
       if (isBlockedSource(source.name, href)) return null;
       if (!isFirstPartySourceLink(source, href)) return null;
@@ -867,7 +871,15 @@ async function run() {
   console.log(`Output: ${OUTPUT_FILE}`);
 }
 
-run().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+// Only auto-run when invoked as a CLI, so tests can import the parsers.
+const isDirectRun =
+  Boolean(process.argv[1]) && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
+if (isDirectRun) {
+  run().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
+
+export { parseRssItems, parseAtomItems, parseSourcePayload, isBlockedSource, FEED_SOURCES };
