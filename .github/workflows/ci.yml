@@ -36,3 +36,13 @@ jobs:
 
       - name: Build
         run: npm run build
+        # next build runs with NODE_ENV=production, which trips the production
+        # config validation in src/lib/env-validation.ts. These are throwaway
+        # placeholders so the build can be verified; the real values live in
+        # the deployment environment and are never needed to compile.
+        env:
+          SITE_URL: https://ci.invalid
+          NEXT_PUBLIC_SITE_URL: https://ci.invalid
+          NEXT_PUBLIC_CONTACT_EMAIL: ci@ci.invalid
+          NEXT_PUBLIC_LEGAL_NAME: CI Build
+          AUTH_SESSION_SECRET: ci-placeholder-session-secret-not-a-real-secret
