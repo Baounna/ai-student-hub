@@ -3,87 +3,92 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
   --page-shell-max: 76rem;
   --content-measure: 72ch;
   --control-height-sm: 2.4rem;
   --control-height-md: 2.75rem;
-  --font-manrope: "IBM Plex Sans", "Avenir Next", "Segoe UI", sans-serif;
-  --font-space: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  /* Loaded by next/font in layout.tsx. */
+  --font-manrope: var(--font-body), "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-space: var(--font-display), Newsreader, Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-meta), "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
   --motion-fast: 140ms;
   --motion-standard: 220ms;
   --motion-slow: 520ms;
   --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
-  --bg: #050a13;
-  --bg-soft: #12223a;
-  --surface: rgba(20, 31, 52, 0.8);
-  --surface-strong: rgba(12, 20, 35, 0.94);
-  --text: #e3eeff;
-  --text-strong: #ffffff;
-  --muted: #a8bce0;
-  --border: rgba(166, 188, 225, 0.29);
-  --primary: #4d8dff;
-  --primary-strong: #2e6df2;
+
+  /* Light is the reading default: news sites are read, not demoed. */
+  --bg: #ffffff;
+  --bg-soft: #f1f4f6;
+  --surface: #ffffff;
+  --surface-strong: #f1f4f6;
+  --text: #3c4750;
+  --text-strong: #0f1519;
+  --muted: #6b7883;
+  --border: #d8dfe4;
+  --primary: #1b4d3e;
+  --primary-strong: #123328;
   --primary-foreground: #ffffff;
-  --focus-ring: color-mix(in srgb, var(--primary), #ffffff 26%);
-  --hero-glow-a: rgba(77, 141, 255, 0.26);
-  --hero-glow-b: rgba(46, 109, 242, 0.2);
-  --page-glow-a: rgba(77, 141, 255, 0.22);
-  --page-glow-b: rgba(46, 109, 242, 0.16);
-  --elevated-shadow: 0 32px 70px -42px rgba(2, 9, 24, 0.9);
-  --wiki-panel-bg: rgba(12, 23, 39, 0.86);
-  --wiki-panel-border: rgba(128, 157, 198, 0.2);
-  --wiki-head-bg: linear-gradient(92deg, rgba(39, 72, 122, 0.56) 0%, rgba(29, 49, 82, 0.56) 100%);
-  --wiki-head-green: linear-gradient(90deg, rgba(20, 96, 78, 0.58) 0%, rgba(24, 67, 59, 0.58) 100%);
-  --wiki-head-blue: linear-gradient(90deg, rgba(26, 63, 127, 0.62) 0%, rgba(23, 42, 86, 0.58) 100%);
-  --wiki-head-purple: linear-gradient(90deg, rgba(71, 54, 129, 0.56) 0%, rgba(49, 39, 99, 0.56) 100%);
-  --wiki-link: #9fc4ff;
-  --success-bg: rgba(15, 138, 94, 0.14);
-  --success-border: rgba(45, 194, 134, 0.42);
-  --success-text: #92f5ca;
-  --danger-bg: rgba(179, 46, 84, 0.16);
-  --danger-border: rgba(247, 120, 156, 0.42);
-  --danger-text: #ffb7cd;
-  --warning-bg: rgba(178, 118, 17, 0.18);
-  --warning-border: rgba(255, 186, 79, 0.44);
-  --warning-text: #ffd58f;
+  --focus-ring: #1b4d3e;
+  /* Glow retired; kept transparent so any stray reference is inert. */
+  --hero-glow-a: transparent;
+  --hero-glow-b: transparent;
+  --page-glow-a: transparent;
+  --page-glow-b: transparent;
+  --elevated-shadow: none;
+  --wiki-panel-bg: #ffffff;
+  --wiki-panel-border: #d8dfe4;
+  --wiki-head-bg: #f1f4f6;
+  --wiki-head-green: #e4efea;
+  --wiki-head-blue: #e8eef4;
+  --wiki-head-purple: #eeebf4;
+  --wiki-link: #1b4d3e;
+  --signal: #a3431b;
+  --signal-bg: #f6e8e1;
+  --success-bg: #e4efea;
+  --success-border: #9dc4b4;
+  --success-text: #14503e;
+  --danger-bg: #f6e8e1;
+  --danger-border: #d8a68f;
+  --danger-text: #8b3116;
+  --warning-bg: #f7eedd;
+  --warning-border: #d9bd85;
+  --warning-text: #74510d;
 }
 
-html[data-theme="light"] {
-  color-scheme: light;
-  --bg: #f4f8ff;
-  --bg-soft: #e6f0ff;
-  --surface: rgba(255, 255, 255, 0.95);
-  --surface-strong: rgba(255, 255, 255, 0.99);
-  --text: #223f66;
-  --text-strong: #0c2142;
-  --muted: #5f7ea8;
-  --border: rgba(37, 79, 147, 0.21);
-  --primary: #2e6df2;
-  --primary-strong: #1f5bd6;
-  --primary-foreground: #f8fafc;
-  --focus-ring: color-mix(in srgb, var(--primary), #ffffff 30%);
-  --hero-glow-a: rgba(46, 109, 242, 0.2);
-  --hero-glow-b: rgba(31, 91, 214, 0.16);
-  --page-glow-a: rgba(46, 109, 242, 0.13);
-  --page-glow-b: rgba(31, 91, 214, 0.12);
-  --elevated-shadow: 0 30px 58px -38px rgba(16, 53, 113, 0.26);
-  --wiki-panel-bg: rgba(255, 255, 255, 0.95);
-  --wiki-panel-border: rgba(38, 70, 126, 0.15);
-  --wiki-head-bg: linear-gradient(92deg, rgba(219, 232, 255, 0.9) 0%, rgba(241, 246, 255, 0.95) 100%);
-  --wiki-head-green: linear-gradient(92deg, rgba(208, 237, 224, 0.95) 0%, rgba(231, 245, 239, 0.95) 100%);
-  --wiki-head-blue: linear-gradient(92deg, rgba(213, 228, 247, 0.95) 0%, rgba(234, 241, 255, 0.95) 100%);
-  --wiki-head-purple: linear-gradient(92deg, rgba(226, 221, 247, 0.96) 0%, rgba(240, 236, 255, 0.96) 100%);
-  --wiki-link: #215ac1;
-  --success-bg: rgba(20, 132, 83, 0.13);
-  --success-border: rgba(14, 122, 76, 0.28);
-  --success-text: #12653e;
-  --danger-bg: rgba(193, 47, 79, 0.12);
-  --danger-border: rgba(176, 34, 64, 0.24);
-  --danger-text: #8b1836;
-  --warning-bg: rgba(194, 123, 18, 0.14);
-  --warning-border: rgba(175, 104, 3, 0.24);
-  --warning-text: #7a4a00;
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0c1114;
+  --bg-soft: #161e23;
+  --surface: #141b20;
+  --surface-strong: #1b2429;
+  --text: #b6c2cb;
+  --text-strong: #e9eef2;
+  --muted: #8593a0;
+  --border: #27323a;
+  --primary: #63c09c;
+  --primary-strong: #8ad4b8;
+  --primary-foreground: #0c1114;
+  --focus-ring: #63c09c;
+  --elevated-shadow: none;
+  --wiki-panel-bg: #141b20;
+  --wiki-panel-border: #27323a;
+  --wiki-head-bg: #1b2429;
+  --wiki-head-green: #14251f;
+  --wiki-head-blue: #16222c;
+  --wiki-head-purple: #1f1d2b;
+  --wiki-link: #63c09c;
+  --signal: #e29267;
+  --signal-bg: #2a1b14;
+  --success-bg: #14251f;
+  --success-border: #2f6b55;
+  --success-text: #8ad4b8;
+  --danger-bg: #2a1b14;
+  --danger-border: #7a4229;
+  --danger-text: #e8a482;
+  --warning-bg: #2a2213;
+  --warning-border: #6f5a24;
+  --warning-text: #ddbe7a;
 }
 
 html[data-text-size="small"] {
@@ -149,12 +154,7 @@ html[data-content-width="wide"] {
     margin: 0;
     font-family: var(--font-manrope), sans-serif;
     min-height: 100vh;
-    background:
-      radial-gradient(60rem 60rem at 20% -20%, var(--page-glow-a), transparent 60%),
-      radial-gradient(55rem 55rem at 85% -30%, var(--page-glow-b), transparent 62%),
-      linear-gradient(color-mix(in srgb, var(--border), transparent 86%) 1px, transparent 1px) 0 0 / 34px 34px,
-      linear-gradient(90deg, color-mix(in srgb, var(--border), transparent 88%) 1px, transparent 1px) 0 0 / 34px 34px,
-      var(--bg);
+    background: var(--bg);
     color: var(--text);
     letter-spacing: -0.01em;
     line-height: 1.7;
@@ -190,8 +190,7 @@ html[data-content-width="wide"] {
     background: linear-gradient(135deg, var(--primary) 0%, color-mix(in srgb, var(--primary), #99bcff 22%) 100%);
     color: var(--primary-foreground);
     border: 1px solid color-mix(in srgb, var(--primary), #ffffff 14%);
-    box-shadow: inset 0 1px 0 color-mix(in srgb, #ffffff, transparent 58%),
-      0 18px 34px -20px color-mix(in srgb, var(--primary), transparent 32%);
+    box-shadow: 0 18px 34px -20px color-mix(in srgb, var(--primary), transparent 32%);
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
     transform: translateZ(0);
   }
@@ -199,10 +198,7 @@ html[data-content-width="wide"] {
   .btn-primary:focus-visible {
     outline: 2px solid var(--focus-ring);
     outline-offset: 2px;
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, #ffffff, transparent 58%),
-      0 18px 34px -20px color-mix(in srgb, var(--primary), transparent 32%),
-      0 0 0 4px color-mix(in srgb, var(--primary), transparent 80%);
+    box-shadow: 0 18px 34px -20px color-mix(in srgb, var(--primary), transparent 32%), 0 0 0 4px color-mix(in srgb, var(--primary), transparent 80%);
   }
 
   @media (hover: hover) and (pointer: fine) {
@@ -227,19 +223,14 @@ html[data-content-width="wide"] {
       color-mix(in srgb, var(--surface), #ffffff 10%) 0%,
       color-mix(in srgb, var(--surface), #ffffff 2%) 100%
     );
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 32%),
-      0 10px 28px -24px rgba(12, 34, 73, 0.56);
+    box-shadow: 0 10px 28px -24px rgba(12, 34, 73, 0.56);
     transform: translateZ(0);
   }
 
   .btn-secondary:focus-visible {
     outline: 2px solid var(--focus-ring);
     outline-offset: 2px;
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 32%),
-      0 10px 28px -24px rgba(12, 34, 73, 0.56),
-      0 0 0 4px color-mix(in srgb, var(--primary), transparent 86%);
+    box-shadow: 0 10px 28px -24px rgba(12, 34, 73, 0.56), 0 0 0 4px color-mix(in srgb, var(--primary), transparent 86%);
   }
 
   @media (hover: hover) and (pointer: fine) {
@@ -361,7 +352,7 @@ html[data-content-width="wide"] {
       color-mix(in srgb, var(--surface), #ffffff 0%) 100%
     );
     color: var(--text);
-    box-shadow: inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 18%), 0 8px 18px -18px rgba(6, 20, 43, 0.8);
+    box-shadow: 0 8px 18px -18px rgba(6, 20, 43, 0.8);
   }
 
   .field-input::placeholder {
@@ -370,22 +361,18 @@ html[data-content-width="wide"] {
 
   .field-input:focus {
     border-color: color-mix(in srgb, var(--primary), #ffffff 20%);
-    box-shadow: inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 20%),
-      0 0 0 4px color-mix(in srgb, var(--primary), transparent 84%);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary), transparent 84%);
   }
 
   .header-search-shell {
     border: 1px solid color-mix(in srgb, var(--border), var(--text) 5%);
     background: color-mix(in srgb, var(--surface), #ffffff 2%);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 24%),
-      0 8px 18px -18px rgba(6, 20, 43, 0.8);
+    box-shadow: 0 8px 18px -18px rgba(6, 20, 43, 0.8);
   }
 
   .header-search-shell:focus-within {
     border-color: color-mix(in srgb, var(--primary), #ffffff 20%);
-    box-shadow: inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 24%),
-      0 0 0 4px color-mix(in srgb, var(--primary), transparent 84%);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary), transparent 84%);
   }
 
   .search-input {
@@ -409,22 +396,14 @@ html[data-content-width="wide"] {
 
 @layer utilities {
   .glass {
-    background:
-      radial-gradient(90% 120% at 10% -10%, color-mix(in srgb, var(--primary), transparent 88%), transparent 55%),
-      linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 6%) 0%, var(--surface) 100%);
+    background: var(--surface);
     border: 1px solid var(--border);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 24%),
-      0 18px 34px -30px rgba(8, 25, 52, 0.68);
-    backdrop-filter: blur(14px);
   }
 
   .surface {
     background: var(--surface-strong);
     border: 1px solid var(--border);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 26%),
-      0 16px 30px -28px rgba(9, 26, 55, 0.62);
+    box-shadow: 0 16px 30px -28px rgba(9, 26, 55, 0.62);
   }
 
   .do-hero {
@@ -433,9 +412,7 @@ html[data-content-width="wide"] {
     overflow: hidden;
     border: 1px solid var(--border);
     background:
-      radial-gradient(120% 120% at 0% 0%, color-mix(in srgb, var(--primary), transparent 84%), transparent 50%),
-      radial-gradient(110% 100% at 100% -20%, color-mix(in srgb, var(--hero-glow-b), transparent 35%), transparent 60%),
-      linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 5%) 0%, var(--surface) 100%);
+      var(--surface);
     box-shadow: var(--elevated-shadow);
   }
 
@@ -443,7 +420,7 @@ html[data-content-width="wide"] {
     content: "";
     position: absolute;
     inset: -30% -10%;
-    background: radial-gradient(40% 45% at 20% 30%, color-mix(in srgb, var(--primary), transparent 90%), transparent 75%);
+    background: none;
     opacity: 0.5;
     pointer-events: none;
     animation: heroDrift 15s var(--ease-smooth) infinite alternate;
@@ -509,11 +486,8 @@ html[data-content-width="wide"] {
   .blog-signal-card {
     border: 1px solid color-mix(in srgb, var(--border), var(--primary) 14%);
     background:
-      radial-gradient(130% 180% at 0% -20%, color-mix(in srgb, var(--primary), transparent 88%), transparent 55%),
       linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 7%) 0%, color-mix(in srgb, var(--surface), #ffffff 2%) 100%);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 28%),
-      0 14px 26px -24px rgba(10, 31, 66, 0.82);
+    box-shadow: 0 14px 26px -24px rgba(10, 31, 66, 0.82);
   }
 
   .blog-signal-value {
@@ -529,11 +503,8 @@ html[data-content-width="wide"] {
   .blog-stream-card {
     border: 1px solid color-mix(in srgb, var(--border), #ffffff 7%);
     background:
-      radial-gradient(120% 170% at 0% -20%, color-mix(in srgb, var(--primary), transparent 92%), transparent 62%),
       linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 7%) 0%, color-mix(in srgb, var(--surface), #ffffff 2%) 100%);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 28%),
-      0 18px 30px -30px rgba(9, 27, 58, 0.84);
+    box-shadow: 0 18px 30px -30px rgba(9, 27, 58, 0.84);
   }
 
   .blog-stream-card .section-title {
@@ -549,21 +520,15 @@ html[data-content-width="wide"] {
   .news-related-card {
     border: 1px solid color-mix(in srgb, var(--border), #ffffff 8%);
     background:
-      radial-gradient(120% 150% at 100% -30%, color-mix(in srgb, var(--primary), transparent 93%), transparent 58%),
       linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 6%) 0%, color-mix(in srgb, var(--surface), #ffffff 2%) 100%);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 26%),
-      0 12px 20px -24px rgba(10, 27, 58, 0.82);
+    box-shadow: 0 12px 20px -24px rgba(10, 27, 58, 0.82);
   }
 
   .news-feature-card {
     border: 1px solid color-mix(in srgb, var(--border), #ffffff 10%);
     background:
-      radial-gradient(145% 130% at 0% -25%, color-mix(in srgb, var(--primary), transparent 89%), transparent 54%),
       linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 7%) 0%, color-mix(in srgb, var(--surface), #ffffff 2%) 100%);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 28%),
-      0 20px 34px -30px rgba(8, 24, 52, 0.9);
+    box-shadow: 0 20px 34px -30px rgba(8, 24, 52, 0.9);
   }
 
   .news-feature-media {
@@ -572,19 +537,14 @@ html[data-content-width="wide"] {
   }
 
   .blog-stream-card .media-frame {
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 26%),
-      0 14px 24px -24px rgba(9, 27, 58, 0.72);
+    box-shadow: 0 14px 24px -24px rgba(9, 27, 58, 0.72);
   }
 
   .blog-aside-card {
     border: 1px solid color-mix(in srgb, var(--border), #ffffff 8%);
     background:
-      radial-gradient(130% 170% at 100% -10%, color-mix(in srgb, var(--primary), transparent 92%), transparent 62%),
       linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 6%) 0%, color-mix(in srgb, var(--surface), #ffffff 2%) 100%);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 26%),
-      0 16px 28px -28px rgba(8, 24, 52, 0.76);
+    box-shadow: 0 16px 28px -28px rgba(8, 24, 52, 0.76);
   }
 
   .blog-chip {
@@ -604,21 +564,15 @@ html[data-content-width="wide"] {
   .tools-metric-card {
     border: 1px solid color-mix(in srgb, var(--border), var(--primary) 14%);
     background:
-      radial-gradient(120% 180% at 0% -10%, color-mix(in srgb, var(--primary), transparent 92%), transparent 58%),
       linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 6%) 0%, color-mix(in srgb, var(--surface), #ffffff 2%) 100%);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 25%),
-      0 16px 28px -30px rgba(8, 24, 52, 0.72);
+    box-shadow: 0 16px 28px -30px rgba(8, 24, 52, 0.72);
   }
 
   .tools-step-card {
     border: 1px solid color-mix(in srgb, var(--border), #ffffff 8%);
     background:
-      radial-gradient(120% 170% at 10% -20%, color-mix(in srgb, var(--primary), transparent 92%), transparent 60%),
       linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 7%) 0%, color-mix(in srgb, var(--surface), #ffffff 2%) 100%);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 24%),
-      0 16px 28px -30px rgba(8, 24, 52, 0.7);
+    box-shadow: 0 16px 28px -30px rgba(8, 24, 52, 0.7);
   }
 
   .reading-panel {
@@ -626,9 +580,7 @@ html[data-content-width="wide"] {
     background:
       linear-gradient(155deg, color-mix(in srgb, var(--primary), transparent 92%) 0%, transparent 38%),
       linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 4%) 0%, var(--surface-strong) 100%);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 24%),
-      0 24px 40px -34px rgba(7, 24, 54, 0.72);
+    box-shadow: 0 24px 40px -34px rgba(7, 24, 54, 0.72);
   }
 
   .media-frame {
@@ -636,9 +588,7 @@ html[data-content-width="wide"] {
     border-radius: 0.95rem;
     border: 1px solid var(--border);
     background: color-mix(in srgb, var(--surface), #ffffff 5%);
-    box-shadow:
-      inset 0 1px 0 color-mix(in srgb, var(--surface), #ffffff 24%),
-      0 16px 30px -28px rgba(9, 26, 55, 0.62);
+    box-shadow: 0 16px 30px -28px rgba(9, 26, 55, 0.62);
   }
 
   .reading-prose p {
@@ -941,5 +891,45 @@ html[data-content-width="wide"] {
 @media (max-width: 768px) {
   .anchor-offset {
     scroll-margin-top: 6.5rem;
+  }
+}
+
+/* ---------------------------------------------------------------
+   Provenance
+   The ingestion agent only accepts first-party official sources and
+   refuses aggregators and preprints. That guarantee is the product's
+   real differentiator, so it gets a fixed visual form: monospace,
+   because the metadata is machine-collected, and always in this order
+   — source, topic, timestamp.
+   --------------------------------------------------------------- */
+@layer components {
+  .provenance {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.65rem;
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .provenance-source {
+    color: var(--primary);
+    font-weight: 600;
+  }
+
+  .provenance-source::before {
+    content: "\25C6";
+    margin-right: 0.34em;
+    font-size: 0.85em;
+  }
+
+  .provenance-live {
+    color: var(--signal);
+    font-weight: 600;
   }
 }

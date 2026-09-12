@@ -43,9 +43,9 @@ export function AppearancePanel({ locale }: AppearancePanelProps) {
     const nextTheme: ThemePreference =
       storedThemePref === "auto" || storedThemePref === "light" || storedThemePref === "dark"
         ? storedThemePref
-        : storedTheme === "light"
-          ? "light"
-          : "dark";
+        : storedTheme === "dark"
+          ? "dark"
+          : "light";
     const nextTextSize: TextSize =
       storedTextSize === "small" || storedTextSize === "large" ? storedTextSize : "medium";
     const nextWidth: ContentWidth = storedWidth === "wide" ? "wide" : "standard";

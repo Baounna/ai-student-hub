@@ -1,11 +1,38 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Newsreader, Public_Sans, IBM_Plex_Mono } from "next/font/google";
 import { headers } from "next/headers";
 import { siteConfig } from "@/config/site";
 import { getGa4MeasurementId, isGa4Enabled } from "@/lib/runtime-config";
 import { absoluteUrl, getSiteUrl } from "@/lib/site-url";
 import { assertProductionRuntimeConfig } from "@/lib/env-validation";
 import "./globals.css";
+
+// Self-hosted by next/font so every visitor gets the same typography.
+// Previously the CSS named IBM Plex Sans and Sora but nothing loaded them,
+// so each OS silently substituted its own fallback.
+const display = Newsreader({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-display"
+});
+
+const body = Public_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body"
+});
+
+const mono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600"],
+  variable: "--font-meta"
+});
+
+const fontVariables = `${display.variable} ${body.variable} ${mono.variable}`;
 
 function getMetadataVerification(): Metadata["verification"] | undefined {
   const google = (process.env.GOOGLE_SITE_VERIFICATION || "").trim();
@@ -122,7 +149,8 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   return (
     <html
       lang="en"
-      data-theme="dark"
+      className={fontVariables}
+      data-theme="light"
       data-text-size="medium"
       data-content-width="standard"
       suppressHydrationWarning
@@ -142,15 +170,15 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
           {`(() => {
             try {
               const storedThemePreference = localStorage.getItem('appearance_theme_preference');
-              const resolvedAutoTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+              const resolvedAutoTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
               const storedTheme = localStorage.getItem('theme');
               const theme = storedThemePreference === 'auto'
                 ? resolvedAutoTheme
                 : storedThemePreference === 'light' || storedThemePreference === 'dark'
                   ? storedThemePreference
-                  : storedTheme === 'light'
-                    ? 'light'
-                    : 'dark';
+                  : storedTheme === 'dark'
+                    ? 'dark'
+                    : 'light';
               document.documentElement.setAttribute('data-theme', theme);
 
               const storedTextSize = localStorage.getItem('appearance_text_size');
@@ -161,7 +189,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
               const contentWidth = storedWidth === 'wide' ? 'wide' : 'standard';
               document.documentElement.setAttribute('data-content-width', contentWidth);
             } catch (_) {
-              document.documentElement.setAttribute('data-theme', 'dark');
+              document.documentElement.setAttribute('data-theme', 'light');
               document.documentElement.setAttribute('data-text-size', 'medium');
               document.documentElement.setAttribute('data-content-width', 'standard');
             }
