@@ -32,22 +32,6 @@ const FEED_SOURCES = [
     maxItems: 16
   },
   {
-    name: "Gamma Blog",
-    href: "https://gamma.app/blog",
-    kind: "page",
-    allowedRoots: ["gamma.app"],
-    pathAllow: [/^\/blog\/[a-z0-9-]/i],
-    maxItems: 14
-  },
-  {
-    name: "Perplexity Blog",
-    href: "https://www.perplexity.ai/hub/blog",
-    kind: "page",
-    allowedRoots: ["perplexity.ai"],
-    pathAllow: [/^\/hub\/blog\/[a-z0-9-]/i],
-    maxItems: 14
-  },
-  {
     name: "Notion Releases",
     href: "https://www.notion.so/releases",
     kind: "page",
@@ -166,8 +150,6 @@ const TOOL_HINTS = [
 const SOURCE_TOOL_FALLBACK = {
   "OpenAI News": { toolName: "OpenAI Platform", category: "AI Platform" },
   "Anthropic News": { toolName: "Anthropic Platform", category: "AI Platform" },
-  "Gamma Blog": { toolName: "Gamma", category: "AI Presentation Builder" },
-  "Perplexity Blog": { toolName: "Perplexity", category: "Research Assistant" },
   "Notion Releases": { toolName: "Notion", category: "Productivity Workspace" },
   "Cursor Changelog": { toolName: "Cursor", category: "Developer Assistant" },
   "Vercel Changelog": { toolName: "Vercel", category: "Cloud Platform" },
