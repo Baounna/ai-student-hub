@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-06-24T10:01:22.449Z",
-  "repository": "Baounna/ai-student-hub",
+  "generatedAt": "2026-09-12T13:25:18.069Z",
+  "repository": "",
   "mode": "dry-run",
-  "maxPerRun": 6,
+  "maxPerRun": 3,
   "sources": [
     {
       "sourceId": "operator",
       "label": "Operator",
       "queueFile": "docs/agent/next-actions.json",
       "enabled": true,
-      "queueGeneratedAt": "2026-06-24T10:01:22.369Z",
-      "totalActions": 10,
-      "selectedCount": 6
+      "queueGeneratedAt": "2026-09-12T13:25:14.960Z",
+      "totalActions": 3,
+      "selectedCount": 1
     },
     {
       "sourceId": "design",
       "label": "Design",
       "queueFile": "docs/agent/design-actions.json",
       "enabled": true,
-      "queueGeneratedAt": "2026-06-24T10:01:22.410Z",
-      "totalActions": 0,
-      "selectedCount": 0
+      "queueGeneratedAt": "2026-09-12T13:25:15.166Z",
+      "totalActions": 4,
+      "selectedCount": 2
     }
   ],
   "summary": {
     "created": 0,
     "existing": 0,
-    "dryRun": 6,
+    "dryRun": 3,
     "errors": 0,
-    "tracked": 6
+    "tracked": 9
   },
   "items": [
     {
@@ -46,7 +46,7 @@
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
       "lastSeenAt": "2026-06-24T10:01:22.449Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "a8f39a3cbc2c9fd0",
@@ -63,7 +63,7 @@
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
       "lastSeenAt": "2026-06-24T10:01:22.449Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "cb9aea0bb5576d89",
@@ -80,7 +80,7 @@
       "status": "dry-run",
       "createdAt": "2026-02-19T22:53:00.028Z",
       "lastSeenAt": "2026-06-24T10:01:22.449Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "df74184273544a1a",
@@ -97,7 +97,7 @@
       "status": "dry-run",
       "createdAt": "2026-02-19T23:11:19.678Z",
       "lastSeenAt": "2026-06-24T10:01:22.449Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "69ff75aa31341962",
@@ -114,7 +114,7 @@
       "status": "dry-run",
       "createdAt": "2026-02-19T23:11:19.678Z",
       "lastSeenAt": "2026-06-24T10:01:22.449Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "2474542d2e8e4d91",
@@ -131,6 +131,57 @@
       "status": "dry-run",
       "createdAt": "2026-02-19T23:11:19.678Z",
       "lastSeenAt": "2026-06-24T10:01:22.449Z",
+      "inQueue": false
+    },
+    {
+      "hash": "3ddc93b51f373fa2",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-09-12T13:25:14.960Z",
+      "priority": "P1",
+      "action": "Keep visible AI/CS split filters on both blog and news index pages.",
+      "why": "Split navigation helps users quickly enter the right track and increases session depth.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P1] Keep visible AI/CS split filters on both blog and news index pages.",
+      "status": "dry-run",
+      "createdAt": "2026-09-12T13:25:18.069Z",
+      "lastSeenAt": "2026-09-12T13:25:18.069Z",
+      "inQueue": true
+    },
+    {
+      "hash": "284d61272ba9505d",
+      "sourceId": "design",
+      "sourceLabel": "Design",
+      "queueFile": "docs/agent/design-actions.json",
+      "queueGeneratedAt": "2026-09-12T13:25:15.166Z",
+      "priority": "P1",
+      "action": "Keep CS-first value proposition cards visible on homepage.",
+      "why": "CS-first framing balances publication positioning beyond AI-only messaging.",
+      "file": "src/app/[lang]/page.tsx",
+      "checkId": "home-cs-first-block",
+      "title": "[Design P1] Keep CS-first value proposition cards visible on homepage.",
+      "status": "dry-run",
+      "createdAt": "2026-09-12T13:25:18.069Z",
+      "lastSeenAt": "2026-09-12T13:25:18.069Z",
+      "inQueue": true
+    },
+    {
+      "hash": "29e4e1db629195e3",
+      "sourceId": "design",
+      "sourceLabel": "Design",
+      "queueFile": "docs/agent/design-actions.json",
+      "queueGeneratedAt": "2026-09-12T13:25:15.166Z",
+      "priority": "P1",
+      "action": "Use clean field-input styling for search with clear visual hierarchy.",
+      "why": "Simple high-contrast search fields improve scan speed and reduce visual noise.",
+      "file": "src/components/ui/header-search-form.tsx",
+      "checkId": "header-search-premium-shell",
+      "title": "[Design P1] Use clean field-input styling for search with clear visual hierarchy.",
+      "status": "dry-run",
+      "createdAt": "2026-09-12T13:25:18.069Z",
+      "lastSeenAt": "2026-09-12T13:25:18.069Z",
       "inQueue": true
     }
   ]

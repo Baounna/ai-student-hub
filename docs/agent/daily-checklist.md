@@ -1,6 +1,6 @@
 # Daily Semi-Autopilot Checklist
 
-Generated: 2026-03-04T16:48:26.472Z
+Generated: 2026-09-12T13:25:18.281Z
 
 Use this file as your daily execution board. It is generated from agent outputs.
 
@@ -21,11 +21,11 @@ Use this file as your daily execution board. It is generated from agent outputs.
 - Review weekly: CS share, citation coverage, and CTA CTR. Update weakest section copy. — Why: Editorial quality and conversion copy iteration compound growth without extra acquisition cost.
 
 ## Content Briefs To Draft
-- [W3C Blog] W3C official blog feed: What It Means for AI/CS Students
-- [NIST News] NIST official news feed: What It Means for AI/CS Students
-- [NVIDIA Developer Blog] NVIDIA Developer Blog official feed: What It Means for AI/CS Students
-- [Cloudflare Blog] Cloudflare official blog feed: What It Means for AI/CS Students
-- [GitHub Blog] GitHub Blog official feed: What It Means for AI/CS Students
+- [OpenAI News] Perplexity trusts GPT-6 Astra with end-to-end systems: What It Means for AI/CS Students
+- [Anthropic Engineering] Featured How we contain Claude across products As agents grow more capable, so does their potential blast radius. The e…
+- [Anthropic News] Responsible Scaling Policy: What It Means for AI/CS Students
+- [NVIDIA Developer Blog] From Wafer-Out to First Token: Codifying Supply Chain Expertise with Nemotron and Palantir Foundry: What It Means for A…
+- [Kubernetes Blog] Kubernetes v1.37: Native Histograms Graduates to Beta: What It Means for AI/CS Students
 
 ## UI / Design Queue
 - Use clean field-input styling for search with clear visual hierarchy. (src/components/ui/header-search-form.tsx)
@@ -37,9 +37,6 @@ Use this file as your daily execution board. It is generated from agent outputs.
 - P1 — Keep visible AI/CS split filters on both blog and news index pages. (dry-run)
 - P1 — Keep CS-first value proposition cards visible on homepage. (dry-run)
 - P1 — Use clean field-input styling for search with clear visual hierarchy. (dry-run)
-- P2 — Add lead magnet CTA on compare. (dry-run)
-- P2 — Keep AI/CS split filters on news page with track chips. (dry-run)
-- P2 — Keep visible AI/CS split filters near blog hero. (dry-run)
 
 ## Daily Runbook
 - 1) Run `npm run agent:all`.

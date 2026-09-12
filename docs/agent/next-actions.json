@@ -1,25 +1,55 @@
 {
-  "generatedAt": "2026-06-24T10:01:22.369Z",
+  "generatedAt": "2026-09-12T13:25:14.960Z",
   "target": {
     "monthlyRevenueUsd": 10
   },
   "summary": {
-    "postsCount": 6,
-    "comparisonsCount": 1,
-    "newsCount": 7,
-    "autoNewsCount": 240
+    "postsCount": 18,
+    "comparisonsCount": 3,
+    "newsCount": 10,
+    "autoNewsCount": 239
+  },
+  "editorial": {
+    "postsCount": 18,
+    "newsCount": 10,
+    "categories": {
+      "total": 8,
+      "missingRequired": []
+    },
+    "tracks": {
+      "counts": {
+        "ai": 2,
+        "cs": 14,
+        "career": 2
+      },
+      "total": 18,
+      "aiShare": 0.1111111111111111,
+      "csShare": 0.7777777777777778,
+      "minCsShare": 0.35,
+      "maxAiShare": 0.6
+    },
+    "citations": {
+      "postsWithReferences": 18,
+      "uncitedPostsEstimate": 0,
+      "sourcedNewsCount": 10,
+      "uncitedNewsEstimate": 0
+    },
+    "splitCoverage": {
+      "blogSplit": false,
+      "newsSplit": false
+    }
   },
   "monetization": {
-    "validAffiliates": 0,
+    "validAffiliates": 5,
     "placementCoverage": {
-      "home": false,
-      "resources": false,
-      "blog": false,
-      "comparison": false
+      "home": true,
+      "resources": true,
+      "blog": true,
+      "comparison": true
     },
-    "hasCheckoutUrl": false,
-    "emailProvider": "none",
-    "hasLeadMagnet": false
+    "hasCheckoutUrl": true,
+    "emailProvider": "convertkit",
+    "hasLeadMagnet": true
   },
   "revenueModel": {
     "assumptions": {
@@ -32,152 +62,117 @@
       "emailOptin": 0.03,
       "emailToProduct": 0.02,
       "infraGates": {
-        "hasAffiliates": false,
-        "hasCheckoutUrl": false,
-        "hasEmailAutomation": false
+        "hasAffiliates": true,
+        "hasCheckoutUrl": true,
+        "hasEmailAutomation": true
       }
     },
     "estimate": {
-      "affiliateRevenue": 0,
-      "productRevenue": 0,
-      "emailRevenue": 0,
-      "totalRevenue": 0,
+      "affiliateRevenue": 9.6,
+      "productRevenue": 18,
+      "emailRevenue": 2.16,
+      "totalRevenue": 29.76,
       "targetUsd": 10,
-      "gapUsd": 10
+      "gapUsd": 0
     }
   },
   "opportunities": [
     {
-      "slug": "20260624-naturebench-can-coding-agents-match-the-published-sota-of-nature-25995496",
-      "source": "arXiv cs.CL",
+      "slug": "20260914-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-12e9dd68",
+      "source": "OpenAI News",
       "topic": "AI Systems",
-      "publishedAt": "2026-06-24T04:00:00.000Z",
-      "href": "https://arxiv.org/abs/2606.24530",
-      "sourceTitle": "NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?",
-      "title": "NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?: What It Means for AI/CS Students",
-      "keyword": "how to build arxiv cs.cl",
+      "publishedAt": "2026-09-14T00:00:00.000Z",
+      "href": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "sourceTitle": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems: What It Means for AI/CS Students",
+      "keyword": "how to build openai news",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20260624-agora-an-archive-grounded-benchmark-for-agentic-workplace-docume-7fc4bfeb",
-      "source": "arXiv cs.CL",
-      "topic": "AI Performance",
-      "publishedAt": "2026-06-24T04:00:00.000Z",
-      "href": "https://arxiv.org/abs/2606.24526",
-      "sourceTitle": "AGORA: An Archive-Grounded Benchmark for Agentic Workplace Document Reasoning",
-      "title": "AGORA: An Archive-Grounded Benchmark for Agentic Workplace Document Reasoning: What It Means for AI/CS Students",
-      "keyword": "best ai model benchmark for students arxiv cs.cl",
-      "monetizationAngle": "benchmark + budget-friendly model/tool choice",
-      "cta": "Compare tools + student guide"
-    },
-    {
-      "slug": "20260624-uolidem-at-bea-2026-shared-task-1-neural-fusion-and-feature-rich-8d41bb50",
-      "source": "arXiv cs.CL",
+      "slug": "20260912-featured-how-we-contain-claude-across-products-as-agents-grow-mo-97cd97d2",
+      "source": "Anthropic Engineering",
       "topic": "AI Systems",
-      "publishedAt": "2026-06-24T04:00:00.000Z",
-      "href": "https://arxiv.org/abs/2606.24501",
-      "sourceTitle": "UOL@IDEM at BEA 2026 Shared Task 1: Neural Fusion and Feature-Rich Modeling for L1-Aware Vocabulary Difficulty Prediction",
-      "title": "UOL@IDEM at BEA 2026 Shared Task 1: Neural Fusion and Feature-Rich Modeling for L1-Aware Vocabulary Difficulty Prediction: What It Means for AI/CS Students",
-      "keyword": "how to build arxiv cs.cl",
+      "publishedAt": "2026-09-12T13:22:21.927Z",
+      "href": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "sourceTitle": "Featured How we contain Claude across products As agents grow more capable, so does their potential blast radius. The engineering question is how to cap it. Here’s what we’ve learned building containment for claude.ai, Claude Code, and Cowork.",
+      "title": "Featured How we contain Claude across products As agents grow more capable, so does their potential blast radius. The engineering question is how to cap it. Here’s what we’ve learned building containment for claude.ai, Claude Code, and Cowork.: What It Means for AI/CS Students",
+      "keyword": "how to build anthropic engineering",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20260624-escaping-the-self-confirmation-trap-an-execute-distill-verify-pa-e3103923",
-      "source": "arXiv cs.CL",
-      "topic": "AI Systems",
-      "publishedAt": "2026-06-24T04:00:00.000Z",
-      "href": "https://arxiv.org/abs/2606.24428",
-      "sourceTitle": "Escaping the Self-Confirmation Trap: An Execute-Distill-Verify Paradigm for Agentic Experience Learning",
-      "title": "Escaping the Self-Confirmation Trap: An Execute-Distill-Verify Paradigm for Agentic Experience Learning: What It Means for AI/CS Students",
-      "keyword": "how to build arxiv cs.cl",
+      "slug": "20260912-responsible-scaling-policy-3a0b4572",
+      "source": "Anthropic News",
+      "topic": "Security & Standards",
+      "publishedAt": "2026-09-12T13:22:21.927Z",
+      "href": "https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy",
+      "sourceTitle": "Responsible Scaling Policy",
+      "title": "Responsible Scaling Policy: What It Means for AI/CS Students",
+      "keyword": "api security for student projects anthropic news",
+      "monetizationAngle": "security checklist and reliability upgrade path for student apps",
+      "cta": "Security guide + resources"
+    },
+    {
+      "slug": "20260911-from-wafer-out-to-first-token-codifying-supply-chain-expertise-w-d23b90bc",
+      "source": "NVIDIA Developer Blog",
+      "topic": "Computer Systems",
+      "publishedAt": "2026-09-11T23:57:34.000Z",
+      "href": "https://developer.nvidia.com/blog/from-wafer-out-to-first-token-codifying-supply-chain-expertise-with-nemotron-and-palantir-foundry/",
+      "sourceTitle": "From Wafer-Out to First Token: Codifying Supply Chain Expertise with Nemotron and Palantir Foundry",
+      "title": "From Wafer-Out to First Token: Codifying Supply Chain Expertise with Nemotron and Palantir Foundry: What It Means for AI/CS Students",
+      "keyword": "how to build nvidia developer blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20260624-beyond-logprobs-a-multi-signal-confidence-engine-for-llm-based-d-44c69f0c",
-      "source": "arXiv cs.CL",
-      "topic": "AI Systems",
-      "publishedAt": "2026-06-24T04:00:00.000Z",
-      "href": "https://arxiv.org/abs/2606.24420",
-      "sourceTitle": "Beyond Logprobs: A Multi-Signal Confidence Engine for LLM-Based Document Field Extraction",
-      "title": "Beyond Logprobs: A Multi-Signal Confidence Engine for LLM-Based Document Field Extraction: What It Means for AI/CS Students",
-      "keyword": "how to build arxiv cs.cl",
-      "monetizationAngle": "how to build and ship this update as a student project",
-      "cta": "Resources stack + roadmap"
+      "slug": "20260911-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
+      "source": "Kubernetes Blog",
+      "topic": "Computer Science",
+      "publishedAt": "2026-09-11T18:30:00.000Z",
+      "href": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
+      "sourceTitle": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+      "title": "Kubernetes v1.37: Native Histograms Graduates to Beta: What It Means for AI/CS Students",
+      "keyword": "computer science workflow for students kubernetes blog",
+      "monetizationAngle": "CS implementation and tooling decision for student budgets",
+      "cta": "Resources + compare pages"
     },
     {
-      "slug": "20260624-autospecner-a-fine-grained-named-entity-recognition-dataset-for--d69e1b88",
-      "source": "arXiv cs.CL",
-      "topic": "AI Research",
-      "publishedAt": "2026-06-24T04:00:00.000Z",
-      "href": "https://arxiv.org/abs/2606.24387",
-      "sourceTitle": "AutoSpecNER: A Fine-Grained Named Entity Recognition Dataset for Vehicle Specification Extraction",
-      "title": "AutoSpecNER: A Fine-Grained Named Entity Recognition Dataset for Vehicle Specification Extraction: What It Means for AI/CS Students",
-      "keyword": "ai cs update for students arxiv cs.cl",
-      "monetizationAngle": "student-focused practical summary",
-      "cta": "Roadmap + related blog guide"
+      "slug": "20260911-monitoring-production-agent-lifecycle-with-aws-devops-agent-and--173e727f",
+      "source": "AWS ML Blog",
+      "topic": "AI Systems",
+      "publishedAt": "2026-09-11T18:26:38.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations/",
+      "sourceTitle": "Monitoring production agent lifecycle with AWS DevOps Agent and AgentCore Evaluations",
+      "title": "Monitoring production agent lifecycle with AWS DevOps Agent and AgentCore Evaluations: What It Means for AI/CS Students",
+      "keyword": "how to build aws ml blog",
+      "monetizationAngle": "how to build and ship this update as a student project",
+      "cta": "Resources stack + roadmap"
     }
   ],
   "actions": [
     {
       "priority": "P1",
-      "action": "Add at least 3 valid affiliate links (name + final URL + placement).",
-      "why": "Without valid links, affiliate revenue path is blocked."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: home.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: resources.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: blog.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: comparison.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Set NEXT_PUBLIC_PRODUCT_CHECKOUT_URL (Gumroad/LemonSqueezy) and test buy CTA.",
-      "why": "Product revenue cannot convert without a live checkout URL."
-    },
-    {
-      "priority": "P1",
-      "action": "Enable ConvertKit and connect newsletter form ID/API key.",
-      "why": "Email capture without automation loses warm leads and repeat conversions."
-    },
-    {
-      "priority": "P1",
-      "action": "Set lead magnet URLs for EN/FR and ensure CTA appears on home/resources/posts.",
-      "why": "Lead magnet is the lowest-friction conversion path for student traffic."
-    },
-    {
-      "priority": "P2",
-      "action": "Add lead magnet CTA on blog.",
-      "why": "Increases opt-ins per 100 visitors."
+      "action": "Keep visible AI/CS split filters on both blog and news index pages.",
+      "why": "Split navigation helps users quickly enter the right track and increases session depth."
     },
     {
       "priority": "P2",
       "action": "Add lead magnet CTA on compare.",
       "why": "Increases opt-ins per 100 visitors."
+    },
+    {
+      "priority": "P3",
+      "action": "Review weekly: CS share, citation coverage, and CTA CTR. Update weakest section copy.",
+      "why": "Editorial quality and conversion copy iteration compound growth without extra acquisition cost."
     }
   ],
   "drafts": {
     "perRun": 2,
     "generatedCount": 2,
     "generatedFiles": [
-      "docs/agent/drafts/20260624--20260624-naturebench-can-coding-agents-match-the-published-sota-of-nature-25995496.md",
-      "docs/agent/drafts/20260624--20260624-agora-an-archive-grounded-benchmark-for-agentic-workplace-docume-7fc4bfeb.md"
+      "docs/agent/drafts/20260912--20260914-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-12e9dd68.md",
+      "docs/agent/drafts/20260912--20260912-featured-how-we-contain-claude-across-products-as-agents-grow-mo-97cd97d2.md"
     ]
   }
 }
