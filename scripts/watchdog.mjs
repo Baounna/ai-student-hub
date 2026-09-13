@@ -17,6 +17,11 @@ import { execFile } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { promisify } from "node:util";
+import { loadScriptEnv } from "./lib/load-env.mjs";
+
+// Same env loading the verify:* scripts use, so a check that depends on local
+// configuration behaves identically whether run here or on a runner.
+loadScriptEnv(process.cwd());
 
 const execFileAsync = promisify(execFile);
 
@@ -130,6 +135,17 @@ async function checkVulnerabilities() {
   }
 }
 
+/**
+ * Some verify:* scripts read configuration that only exists where the site is
+ * deployed — affiliate partners, for instance, live in the deployment
+ * environment and are absent on a CI runner by design. Reporting that absence
+ * as a fault is a false alarm, and a watchdog that cries wolf is precisely
+ * what teaches you to ignore it.
+ */
+function isConfiguredHere(envKey) {
+  return Boolean((process.env[envKey] || "").trim());
+}
+
 /** The verify:* scripts the project already had but never scheduled. */
 async function checkVerifyScript(label, script) {
   try {
@@ -186,7 +202,11 @@ async function run() {
   await checkVerifyScript("Agent health", "verify:agents");
   await checkVerifyScript("Security config", "verify:security");
   await checkVerifyScript("Public content", "verify:public-content");
-  await checkVerifyScript("Affiliate links", "verify:affiliates");
+  if (isConfiguredHere("AFFILIATE_1_URL")) {
+    await checkVerifyScript("Affiliate links", "verify:affiliates");
+  } else {
+    record("Affiliate links", true, "not configured in this environment — skipped");
+  }
 
   const failed = results.filter((r) => !r.ok);
   const report = buildReport();
