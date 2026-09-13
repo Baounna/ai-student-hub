@@ -83,8 +83,8 @@ export const metadata: Metadata = {
   verification: metadataVerification
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const nonce = headers().get("x-csp-nonce") || undefined;
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const ga4Enabled = isGa4Enabled();
   const ga4MeasurementId = getGa4MeasurementId();
   const organizationSchema = {

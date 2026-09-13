@@ -17,7 +17,8 @@ const providerLabel: Record<string, string> = {
   linkedin: "LinkedIn"
 };
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
@@ -30,18 +31,19 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   };
 }
 
-export default async function LocalizedAccountPage({
-  params,
-  searchParams
-}: {
-  params: { lang: string };
-  searchParams?: { auth?: string | string[] };
-}) {
+export default async function LocalizedAccountPage(
+  props: {
+    params: Promise<{ lang: string }>;
+    searchParams?: Promise<{ auth?: string | string[] }>;
+  }
+) {
+  const searchParams = await props.searchParams;
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
   const fr = locale === "fr";
-  const token = cookies().get(AUTH_SESSION_COOKIE)?.value;
+  const token = (await cookies()).get(AUTH_SESSION_COOKIE)?.value;
   const session = await parseSessionToken(token);
   const hasSocialProviders = getOAuthProviderViews().some((provider) => provider.configured);
   const credentialsAuthEnabled = isCredentialsAuthEnabled();

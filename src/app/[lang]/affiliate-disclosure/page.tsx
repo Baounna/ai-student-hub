@@ -4,7 +4,8 @@ import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   return {
@@ -14,7 +15,8 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   };
 }
 
-export default function AffiliateDisclosurePage({ params }: { params: { lang: string } }) {
+export default async function AffiliateDisclosurePage(props: { params: Promise<{ lang: string }> }) {
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
   const locale: Locale = params.lang;
   const fr = locale === "fr";

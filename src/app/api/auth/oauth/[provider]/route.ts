@@ -14,7 +14,8 @@ import { isOAuthEnabled } from "@/lib/runtime-config";
 import { getClientIp } from "@/lib/request";
 import { enforceRateLimitRules, rateLimitIdentifier } from "@/lib/rate-limit";
 
-export async function GET(request: NextRequest, { params }: { params: { provider: string } }) {
+export async function GET(request: NextRequest, props: { params: Promise<{ provider: string }> }) {
+  const params = await props.params;
   const providerRaw = params.provider;
   if (!isOAuthProvider(providerRaw)) {
     return NextResponse.json({ ok: false, error: "Unsupported provider" }, { status: 404 });

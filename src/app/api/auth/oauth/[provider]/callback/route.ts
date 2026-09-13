@@ -40,7 +40,8 @@ function withQuery(path: string, key: string, value: string) {
   return `${url.pathname}${url.search}`;
 }
 
-export async function GET(request: NextRequest, { params }: { params: { provider: string } }) {
+export async function GET(request: NextRequest, props: { params: Promise<{ provider: string }> }) {
+  const params = await props.params;
   const providerRaw = params.provider;
   if (!isOAuthProvider(providerRaw)) {
     return NextResponse.json({ ok: false, error: "Unsupported provider" }, { status: 404 });

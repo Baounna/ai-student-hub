@@ -39,7 +39,8 @@ export function generateStaticParams() {
   return locales.flatMap((lang) => comparisons.map((comparison) => ({ lang, slug: comparison.slug })));
 }
 
-export async function generateMetadata({ params }: { params: { lang: string; slug: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const comparison = getComparisonBySlug(params.slug);
@@ -76,7 +77,8 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
   };
 }
 
-export default function LocalizedComparisonPage({ params }: { params: { lang: string; slug: string } }) {
+export default async function LocalizedComparisonPage(props: { params: Promise<{ lang: string; slug: string }> }) {
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;

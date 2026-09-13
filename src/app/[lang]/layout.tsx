@@ -20,7 +20,8 @@ export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const dict = getDictionary(params.lang);
@@ -36,7 +37,13 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   };
 }
 
-export default function LocalizedLayout({ children, params }: { children: React.ReactNode; params: { lang: string } }) {
+export default async function LocalizedLayout(props: { children: React.ReactNode; params: Promise<{ lang: string }> }) {
+  const params = await props.params;
+
+  const {
+    children
+  } = props;
+
   if (!isLocale(params.lang)) notFound();
 
   const locale: Locale = params.lang;

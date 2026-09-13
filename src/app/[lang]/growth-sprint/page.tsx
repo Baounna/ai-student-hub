@@ -14,7 +14,8 @@ function isInternalGrowthSprintEnabled() {
   return flag === "1" || flag === "true" || flag === "yes";
 }
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
@@ -220,7 +221,8 @@ const sprintDays: SprintDay[] = [
   }
 ];
 
-export default function GrowthSprintPage({ params }: { params: { lang: string } }) {
+export default async function GrowthSprintPage(props: { params: Promise<{ lang: string }> }) {
+  const params = await props.params;
   if (!isInternalGrowthSprintEnabled()) notFound();
   if (!isLocale(params.lang)) return null;
 

@@ -92,7 +92,8 @@ export function generateStaticParams() {
   return locales.flatMap((lang) => getLocalizedNews(lang).map((brief) => ({ lang, slug: brief.slug })));
 }
 
-export async function generateMetadata({ params }: { params: { lang: string; slug: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const brief = getNewsBySlug(params.slug, params.lang);
@@ -120,11 +121,12 @@ export async function generateMetadata({ params }: { params: { lang: string; slu
   };
 }
 
-export default function LocalizedNewsArticlePage({ params }: { params: { lang: string; slug: string } }) {
+export default async function LocalizedNewsArticlePage(props: { params: Promise<{ lang: string; slug: string }> }) {
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
-  const nonce = headers().get("x-csp-nonce") || undefined;
+  const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const dict = getDictionary(locale);
   const brief = getNewsBySlug(params.slug, locale);
 

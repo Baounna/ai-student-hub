@@ -20,7 +20,8 @@ function formatPublishedDate(date: string, locale: Locale) {
   }).format(new Date(date));
 }
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
@@ -53,7 +54,8 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   };
 }
 
-export default async function LocalizedLiveNewsPage({ params }: { params: { lang: string } }) {
+export default async function LocalizedLiveNewsPage(props: { params: Promise<{ lang: string }> }) {
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;

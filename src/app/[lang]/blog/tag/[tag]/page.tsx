@@ -25,7 +25,8 @@ function formatPublishedDate(date: string, locale: Locale) {
   }).format(new Date(date));
 }
 
-export async function generateMetadata({ params }: { params: { lang: string; tag: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: string; tag: string }> }): Promise<Metadata> {
+  const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
   const dict = getDictionary(params.lang);
@@ -43,7 +44,8 @@ export async function generateMetadata({ params }: { params: { lang: string; tag
   };
 }
 
-export default function LocalizedTagPage({ params }: { params: { lang: string; tag: string } }) {
+export default async function LocalizedTagPage(props: { params: Promise<{ lang: string; tag: string }> }) {
+  const params = await props.params;
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
