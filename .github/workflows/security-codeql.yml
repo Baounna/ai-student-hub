@@ -1,13 +1,21 @@
 name: Security - CodeQL
 
+# DISABLED (manual runs only). CodeQL uploads its results to GitHub code
+# scanning, which on a PRIVATE repository requires GitHub Advanced Security.
+# Without it every run does the full analysis and then fails with "Code
+# scanning is not enabled for this repository" — a permanently red check that
+# trains you to ignore the Actions tab.
+#
+# To re-enable: make the repository public (code scanning is free there) or
+# enable Advanced Security, then uncomment the triggers below.
 on:
   workflow_dispatch:
-  pull_request:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: "0 4 * * 1"
+  # pull_request:
+  # push:
+  #   branches:
+  #     - main
+  # schedule:
+  #   - cron: "0 4 * * 1"
 
 permissions:
   actions: read

@@ -3,7 +3,9 @@ name: Auto News + Tools Agent
 on:
   workflow_dispatch:
   schedule:
-    - cron: "15 */2 * * *"
+    # Twice a day. Every 2 hours burned Actions minutes on a private repo and
+    # gave 12 chances a day to fail; readers cannot tell the difference.
+    - cron: "15 6,18 * * *"
 
 concurrency:
   group: ai-student-hub-main-automation
