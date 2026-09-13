@@ -234,9 +234,11 @@ export default async function LocalizedNewsPage(
                   <Link href={`/${locale}/news/${featuredBrief.slug}`} className="btn-primary">
                     {dict.news.readBrief}
                   </Link>
-                  <a href={featuredBrief.source.href} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                    {locale === "fr" ? "Source officielle" : "Official source"}
-                  </a>
+                  {featuredBrief.source.href ? (
+                    <a href={featuredBrief.source.href} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                      {locale === "fr" ? "Source officielle" : "Official source"}
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </article>
@@ -402,9 +404,11 @@ export default async function LocalizedNewsPage(
               <Link href={`/${locale}/news/${brief.slug}`} className="do-link mt-4 inline-block text-sm">
                 {dict.news.readBrief}
               </Link>
-              <a href={brief.source.href} target="_blank" rel="noopener noreferrer" className="do-link mt-4 ml-3 inline-block text-sm">
-                {locale === "fr" ? "Source officielle" : "Official source"}
-              </a>
+              {brief.source.href ? (
+                <a href={brief.source.href} target="_blank" rel="noopener noreferrer" className="do-link mt-4 ml-3 inline-block text-sm">
+                  {locale === "fr" ? "Source officielle" : "Official source"}
+                </a>
+              ) : null}
             </article>
           ))}
 
