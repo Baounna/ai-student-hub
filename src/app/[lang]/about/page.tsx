@@ -90,9 +90,16 @@ export default function LocalizedAboutPage({ params }: { params: { lang: string 
                 <li key={signal}>- {signal}</li>
               ))}
             </ul>
-            <a href={siteConfig.linkedinUrl} className="do-link mt-4 inline-block text-sm">
-              LinkedIn
-            </a>
+            {siteConfig.linkedinUrl ? (
+              <a
+                href={siteConfig.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="do-link mt-4 inline-block text-sm"
+              >
+                LinkedIn
+              </a>
+            ) : null}
           </div>
         </div>
       </div>
@@ -121,11 +128,13 @@ export default function LocalizedAboutPage({ params }: { params: { lang: string 
           <p className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 text-sm text-[color:var(--text)]">
             {siteConfig.linkedinShortBio[locale]}
           </p>
-          <p className="mt-4">
-            <a href={siteConfig.linkedinUrl} className="do-link">
-              LinkedIn
-            </a>
-          </p>
+          {siteConfig.linkedinUrl ? (
+            <p className="mt-4">
+              <a href={siteConfig.linkedinUrl} target="_blank" rel="noopener noreferrer" className="do-link">
+                LinkedIn
+              </a>
+            </p>
+          ) : null}
         </section>
 
         <section className="glass rounded-2xl p-6">

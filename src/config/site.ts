@@ -54,11 +54,39 @@ const testimonials = [1, 2, 3]
   .map((index) => readTestimonial(index))
   .filter((item): item is Testimonial => Boolean(item));
 
+/**
+ * Accepts a social URL only when it actually points at a profile: https, and a
+ * path beyond "/". A bare host is a placeholder, not an identity.
+ */
+function profileUrl(value: string) {
+  if (!value) return "";
+  try {
+    const url = new URL(value);
+    if (url.protocol !== "https:") return "";
+    if (url.pathname.replace(/\/+$/, "") === "") return "";
+    return url.toString();
+  } catch {
+    return "";
+  }
+}
+
 export const siteConfig = {
   brandName: "AI and Cybersecurity News",
   contactEmail,
   legalName,
-  linkedinUrl: envValue("NEXT_PUBLIC_LINKEDIN_URL") || "https://www.linkedin.com",
+  // A bare profile host is not a profile. Publishing "https://www.linkedin.com"
+  // as sameAs told search engines the publisher was linkedin.com itself, and
+  // sent every visitor who clicked "LinkedIn" to LinkedIn's front door.
+  // Empty when unset, so the links hide instead of shipping broken.
+  linkedinUrl: profileUrl(envValue("NEXT_PUBLIC_LINKEDIN_URL")),
+  // The named human behind the publication. Google's E-E-A-T weighs a real,
+  // verifiable author, and security writing without a byline reads as a
+  // content farm. Falls back to the brand so nothing renders empty.
+  authorName: envValue("NEXT_PUBLIC_AUTHOR_NAME"),
+  authorRole: envLocaleValue("AUTHOR_ROLE_EN", "AUTHOR_ROLE_FR", {
+    en: "Founder and editor",
+    fr: "Fondateur et redacteur"
+  }),
   privacyContactEmail: envValue("PRIVACY_CONTACT_EMAIL") || contactEmail,
   termsLegalEntity: envValue("TERMS_LEGAL_ENTITY") || legalName,
   founderBio: envLocaleValue("FOUNDER_BIO_EN", "FOUNDER_BIO_FR", {

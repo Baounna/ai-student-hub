@@ -296,6 +296,7 @@ export default function LocalizedLayout({ children, params }: { children: React.
                   {siteConfig.contactEmail}
                 </a>
               </li>
+              {siteConfig.linkedinUrl ? (
               <li>
                 <a
                   href={siteConfig.linkedinUrl}
@@ -306,6 +307,7 @@ export default function LocalizedLayout({ children, params }: { children: React.
                   LinkedIn
                 </a>
               </li>
+              ) : null}
               <li>
                 <Link href={`/${locale}/donate`} className="transition hover:opacity-70">
                   {locale === "fr" ? "Faire un don" : "Donate"}

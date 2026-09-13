@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   category: "education",
   creator: "AI and Cybersecurity News",
   publisher: "AI and Cybersecurity News",
-  authors: [{ name: "AI and Cybersecurity News", url: getSiteUrl() }],
+  authors: [{ name: siteConfig.authorName || "AI and Cybersecurity News", url: getSiteUrl() }],
   title: {
     default: "AI and Cybersecurity News | AI + Cybersecurity Signals for Real Builders",
     template: "%s | AI and Cybersecurity News"
@@ -100,7 +100,16 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         email: siteConfig.contactEmail
       }
     ],
-    sameAs: siteConfig.linkedinUrl ? [siteConfig.linkedinUrl] : undefined
+    // Only ever a real profile URL — profileUrl() rejects bare hosts, so this
+    // is omitted rather than claiming the publisher is linkedin.com.
+    sameAs: siteConfig.linkedinUrl ? [siteConfig.linkedinUrl] : undefined,
+    founder: siteConfig.authorName
+      ? {
+          "@type": "Person",
+          name: siteConfig.authorName,
+          ...(siteConfig.linkedinUrl ? { sameAs: [siteConfig.linkedinUrl] } : {})
+        }
+      : undefined
   };
   const websiteSchema = {
     "@context": "https://schema.org",
