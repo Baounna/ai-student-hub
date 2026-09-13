@@ -23,7 +23,8 @@
     "verify:affiliates": "node scripts/verify-affiliates.mjs",
     "verify:production": "node scripts/verify-production.mjs",
     "verify:public-content": "node scripts/verify-public-content.mjs",
-    "verify:security": "node scripts/verify-security.mjs"
+    "verify:security": "node scripts/verify-security.mjs",
+    "watchdog": "node scripts/watchdog.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.105.0",

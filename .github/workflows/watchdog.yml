@@ -1,0 +1,149 @@
+name: Watchdog
+
+# The check that runs when nobody is looking.
+#
+# Everything here exists because a broken lockfile took down every scheduled
+# workflow for eighty days without anyone noticing: the failures went to GitHub
+# notifications, which had long since become noise.
+#
+# So this does two things notifications do not. It repairs the one failure that
+# caused that outage, verifying the full build before it commits anything. And
+# it reports through a SINGLE issue that it updates and closes itself, rather
+# than a stream of alerts that trains you to ignore it.
+
+on:
+  schedule:
+    # Daily, an hour after the morning news run so it sees fresh content.
+    - cron: "15 7 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: ai-student-hub-watchdog
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+env:
+  # Placeholders: next build runs as production and validates this config.
+  # Real values live in the deployment environment.
+  SITE_URL: https://ci.invalid
+  NEXT_PUBLIC_SITE_URL: https://ci.invalid
+  NEXT_PUBLIC_CONTACT_EMAIL: ci@ci.invalid
+  NEXT_PUBLIC_LEGAL_NAME: CI Build
+  AUTH_SESSION_SECRET: ci-placeholder-session-secret-not-a-real-secret
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 20
+
+      # Deliberately not `npm ci`: the lockfile being broken is one of the
+      # things being checked, so the check must survive it.
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Run health checks
+        id: check
+        continue-on-error: true
+        run: node scripts/watchdog.mjs
+
+      # ---- self-healing ----------------------------------------------------
+      # Only the lockfile, and only when the whole suite passes afterwards.
+      # A repair that breaks the site is worse than the fault it replaced.
+      - name: Repair lockfile
+        id: repair
+        if: steps.check.outputs.needs_lockfile_repair == 'true'
+        continue-on-error: true
+        run: |
+          echo "Lockfile is out of sync — attempting repair."
+          npm install --package-lock-only
+
+          echo "Verifying the repair before trusting it."
+          npm ci
+          npm run lint
+          npm run typecheck
+          npm test
+          npm run build
+          echo "verified=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit the repair
+        if: steps.repair.outputs.verified == 'true'
+        run: |
+          if git diff --quiet -- package-lock.json; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "AI Student Hub Bot"
+          git config user.email "ai-student-hub-bot@users.noreply.github.com"
+          git add package-lock.json
+          git commit -m "fix(deps): watchdog repaired an out-of-sync lockfile
+
+          npm ci could not resolve package-lock.json against package.json,
+          which is the failure that takes every scheduled workflow down at
+          once. Repaired with npm install --package-lock-only and committed
+          only after lint, typecheck, tests and build all passed."
+          git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+          git push
+
+      - name: Re-check after repair
+        id: recheck
+        if: steps.repair.outputs.verified == 'true'
+        continue-on-error: true
+        run: node scripts/watchdog.mjs
+
+      # ---- reporting -------------------------------------------------------
+      - name: Open, update or close the health issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          if [ "${{ steps.recheck.outcome }}" = "success" ]; then
+            HEALTHY=true
+          elif [ "${{ steps.recheck.outcome }}" = "failure" ]; then
+            HEALTHY=false
+          elif [ "${{ steps.check.outcome }}" = "success" ]; then
+            HEALTHY=true
+          else
+            HEALTHY=false
+          fi
+
+          EXISTING=$(gh issue list --label watchdog --state open \
+            --json number --jq '.[0].number // empty')
+
+          if [ "$HEALTHY" = "true" ]; then
+            if [ -n "$EXISTING" ]; then
+              gh issue comment "$EXISTING" \
+                --body "✅ Everything is passing again. Closing automatically."
+              gh issue close "$EXISTING"
+              echo "Recovered — closed issue #$EXISTING."
+            else
+              echo "All checks passed. Nothing to report."
+            fi
+            exit 0
+          fi
+
+          # Ensure the label exists before the first use.
+          gh label create watchdog --color B60205 \
+            --description "Automated health check found a problem" 2>/dev/null || true
+
+          BODY=$(cat watchdog-report.md)
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+            echo "Still failing — commented on issue #$EXISTING."
+          else
+            gh issue create \
+              --title "🔴 Site health check failed" \
+              --label watchdog \
+              --body "$BODY"
+            echo "Opened a new health issue."
+          fi
