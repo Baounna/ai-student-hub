@@ -5,11 +5,11 @@ import { applyTheme, appearanceStorageKeys, type Theme } from "@/lib/appearance"
 
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
     const stored = localStorage.getItem(appearanceStorageKeys.theme);
-    const initial = stored === "light" ? "light" : "dark";
+    const initial = stored === "dark" ? "dark" : "light";
     setTheme(initial);
     applyTheme(initial);
     setMounted(true);

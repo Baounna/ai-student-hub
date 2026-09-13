@@ -10,6 +10,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getLiveAiCsUpdates } from "@/lib/live-news";
 import { getSeoKeywords } from "@/lib/seo";
+import { Provenance } from "@/components/provenance";
 
 export const revalidate = 1800;
 
@@ -176,12 +177,13 @@ export default async function LocalizedNewsPage(
             </p>
             {(relatedBriefs.length ? relatedBriefs : recentSignals).map((brief) => (
               <article key={brief.slug} className="news-related-card rounded-2xl p-4">
-                <div className="mb-2 flex flex-wrap items-center gap-2">
-                  <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--bg-soft)]/55 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
-                    {brief.topic}
-                  </span>
-                  <span className="text-[11px] text-[color:var(--muted)]">{formatPublishedDate(brief.publishedAt, locale)}</span>
-                </div>
+                <Provenance
+                  className="mb-2"
+                  source={brief.source}
+                  topic={brief.topic}
+                  publishedAt={brief.publishedAt}
+                  locale={locale}
+                />
                 <h2 className="line-clamp-2 text-sm font-semibold text-[color:var(--text-strong)] md:text-base">
                   <Link href={`/${locale}/news/${brief.slug}`} className="hover:opacity-85">
                     {brief.title}
@@ -232,9 +234,11 @@ export default async function LocalizedNewsPage(
                   <Link href={`/${locale}/news/${featuredBrief.slug}`} className="btn-primary">
                     {dict.news.readBrief}
                   </Link>
-                  <a href={featuredBrief.source.href} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                    {locale === "fr" ? "Source officielle" : "Official source"}
-                  </a>
+                  {featuredBrief.source.href ? (
+                    <a href={featuredBrief.source.href} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                      {locale === "fr" ? "Source officielle" : "Official source"}
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </article>
@@ -266,15 +270,13 @@ export default async function LocalizedNewsPage(
           <div className="mt-4 grid gap-3">
             {webUpdates.map((item) => (
               <article key={item.key} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--bg-soft)]/50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
-                    {item.topic}
-                  </span>
-                  <span className="text-xs text-[color:var(--muted)]">{item.source}</span>
-                  {item.publishedAt ? (
-                    <span className="text-xs text-[color:var(--muted)]">{formatPublishedDate(item.publishedAt, locale)}</span>
-                  ) : null}
-                </div>
+                <Provenance
+                  source={item.source}
+                  topic={item.topic}
+                  publishedAt={item.publishedAt}
+                  locale={locale}
+                  live
+                />
                 <h3 className="mt-2 text-base font-semibold text-[color:var(--text-strong)]">{item.title}</h3>
                 <p className="mt-2 text-sm text-[color:var(--text)]">{item.summary}</p>
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -402,9 +404,11 @@ export default async function LocalizedNewsPage(
               <Link href={`/${locale}/news/${brief.slug}`} className="do-link mt-4 inline-block text-sm">
                 {dict.news.readBrief}
               </Link>
-              <a href={brief.source.href} target="_blank" rel="noopener noreferrer" className="do-link mt-4 ml-3 inline-block text-sm">
-                {locale === "fr" ? "Source officielle" : "Official source"}
-              </a>
+              {brief.source.href ? (
+                <a href={brief.source.href} target="_blank" rel="noopener noreferrer" className="do-link mt-4 ml-3 inline-block text-sm">
+                  {locale === "fr" ? "Source officielle" : "Official source"}
+                </a>
+              ) : null}
             </article>
           ))}
 

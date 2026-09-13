@@ -384,9 +384,13 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
               {references.map((reference, index) => (
                 <li key={`${reference.href}-${index}`} id={`reference-${index + 1}`} className="leading-7">
                   <span className="mr-2 text-[color:var(--muted)]">[{index + 1}]</span>
-                  <a href={reference.href} target="_blank" rel="noopener noreferrer nofollow" className="do-link">
-                    {reference.label}
-                  </a>
+                  {reference.href ? (
+                    <a href={reference.href} target="_blank" rel="noopener noreferrer nofollow" className="do-link">
+                      {reference.label}
+                    </a>
+                  ) : (
+                    <span>{reference.label}</span>
+                  )}
                   <span className="ml-2 text-xs text-[color:var(--muted)]">({reference.source})</span>
                 </li>
               ))}

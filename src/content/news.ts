@@ -11,7 +11,13 @@ export type NewsBrief = {
   tags: string[];
   source: {
     name: string;
-    href: string;
+    /**
+     * Link to the primary source. Omitted when the brief is the publication's
+     * own analysis rather than a report of someone else's work — the editorial
+     * policy forbids citing a source that cannot be verified, and a link to a
+     * site's homepage is not a citation.
+     */
+    href?: string;
   };
   statsByTheme?: Array<{
     theme: Record<Locale, string>;
@@ -421,8 +427,7 @@ export const newsBriefs: NewsBrief[] = [
     ],
     tags: ["career", "internships", "portfolio"],
     source: {
-      name: "Recruiter and engineering hiring insights",
-      href: "https://www.linkedin.com"
+      name: "AI Student Hub editorial analysis"
     },
     relatedPostSlugs: ["student-ai-internship-roadmap", "ai-portfolio-project-recruiters-notice"],
     locales: {
