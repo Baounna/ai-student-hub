@@ -57,3 +57,11 @@ npm run watchdog             # live site, freshness, lockfile, advisories, confi
 Everything else — environment variables, deployment, the agent schedule, the
 editorial policy and the content workflow — is in the
 **[operations manual](docs/OPERATIONS.md)**.
+
+---
+
+© 2026 Baounna Mohamed. All rights reserved.
+
+This repository is public so the work can be read and reviewed. It is **not**
+open source — no licence is granted to copy, modify, redistribute or deploy it.
+If you would like to use something here, please ask.
