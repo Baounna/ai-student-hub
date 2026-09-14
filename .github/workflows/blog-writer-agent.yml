@@ -53,9 +53,18 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # The agent exits 0 without ANTHROPIC_API_KEY by design, and then never
+          # creates this directory. `git add` on a missing pathspec exits 128, so
+          # the workflow failed every week even though nothing was wrong — the
+          # agent failed open and the workflow failed closed.
+          if [ ! -d docs/agent/drafts/llm ] || [ -z "$(ls -A docs/agent/drafts/llm 2>/dev/null)" ]; then
+            echo "No drafts produced — the writer agent skipped (ANTHROPIC_API_KEY not set)."
+            exit 0
+          fi
+
           git add -A docs/agent/drafts/llm
           if git diff --cached --quiet -- docs/agent/drafts/llm; then
-            echo "No new drafts to propose (agent skipped or nothing fresh)."
+            echo "No new drafts to propose (nothing fresh this run)."
             exit 0
           fi
 
@@ -63,7 +72,8 @@ jobs:
           git config user.name "AI Student Hub Bot"
           git config user.email "ai-student-hub-bot@users.noreply.github.com"
           git checkout -b "$BRANCH"
-          git add -A docs/agent/drafts/llm docs/agent/writer-report.md
+          git add -A docs/agent/drafts/llm
+          [ -f docs/agent/writer-report.md ] && git add docs/agent/writer-report.md || true
           git commit -m "draft(writer): LLM-generated article drafts for review"
           git push origin "$BRANCH"
 

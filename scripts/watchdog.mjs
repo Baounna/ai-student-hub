@@ -159,6 +159,64 @@ async function checkVerifyScript(label, script) {
   }
 }
 
+/**
+ * The blind spot this check exists to cover: the watchdog verified the site and
+ * the repository but never the automation itself, so a workflow that failed
+ * every Monday for over a month went unnoticed — the exact class of silent
+ * failure the watchdog was built to catch.
+ *
+ * Reports the latest run of each workflow, so a job that is quietly broken on a
+ * schedule surfaces even when the site looks perfectly healthy.
+ *
+ * Knowingly-parked workflows are excluded: alarming about a failure you already
+ * decided to accept is how an alert channel becomes noise again.
+ */
+const PARKED_WORKFLOWS = new Set([
+  // Disabled in security-codeql.yml — code scanning needs GitHub Advanced
+  // Security on a private repo, so every run fails on upload. Its last
+  // pre-disable failure is expected and should not raise an alarm.
+  "Security - CodeQL"
+]);
+
+async function checkWorkflowHealth() {
+  try {
+    const { stdout } = await execFileAsync(
+      "gh",
+      ["run", "list", "--limit", "60", "--json", "workflowName,conclusion,status,createdAt"],
+      { maxBuffer: 8 * 1024 * 1024 }
+    );
+
+    const runs = JSON.parse(stdout);
+    if (!Array.isArray(runs) || runs.length === 0) {
+      record("Workflow health", true, "no recent runs to judge");
+      return;
+    }
+
+    // Latest run per workflow — an older failure that has since recovered is not news.
+    const latest = new Map();
+    for (const run of runs) {
+      if (run.status !== "completed") continue;
+      if (PARKED_WORKFLOWS.has(run.workflowName)) continue;
+      if (!latest.has(run.workflowName)) latest.set(run.workflowName, run);
+    }
+
+    const failing = [...latest.values()]
+      .filter((r) => r.conclusion === "failure")
+      .map((r) => r.workflowName);
+
+    record(
+      "Workflow health",
+      failing.length === 0,
+      failing.length === 0
+        ? `latest run of all ${latest.size} workflows passed`
+        : `last run failed: ${failing.join(", ")}`
+    );
+  } catch {
+    // No gh, or no token — not a fault in the project itself.
+    record("Workflow health", true, "gh CLI unavailable here — skipped");
+  }
+}
+
 function buildReport() {
   const failed = results.filter((r) => !r.ok);
   const lines = [];
@@ -199,6 +257,7 @@ async function run() {
   await checkContentFreshness();
   await checkLockfile();
   await checkVulnerabilities();
+  await checkWorkflowHealth();
   await checkVerifyScript("Agent health", "verify:agents");
   await checkVerifyScript("Security config", "verify:security");
   await checkVerifyScript("Public content", "verify:public-content");
