@@ -172,10 +172,10 @@ async function checkVerifyScript(label, script) {
  * decided to accept is how an alert channel becomes noise again.
  */
 const PARKED_WORKFLOWS = new Set([
-  // Disabled in security-codeql.yml — code scanning needs GitHub Advanced
-  // Security on a private repo, so every run fails on upload. Its last
-  // pre-disable failure is expected and should not raise an alarm.
-  "Security - CodeQL"
+  // Nothing parked. CodeQL was here while the repository was private, where
+  // code scanning needs Advanced Security; it runs for real now that the
+  // repository is public. Add a workflow here only when you have decided to
+  // accept its failure, so the alert channel keeps meaning something.
 ]);
 
 async function checkWorkflowHealth() {
