@@ -217,6 +217,15 @@ async function checkWorkflowHealth() {
   }
 }
 
+/**
+ * Escape a value for a Markdown table cell. Backslashes go first: escaping the
+ * pipes alone leaves a trailing backslash able to escape the delimiter we just
+ * added, which breaks the row.
+ */
+function escapeTableCell(value) {
+  return String(value).replace(/\\/g, "\\\\").replace(/\|/g, "\\|");
+}
+
 function buildReport() {
   const failed = results.filter((r) => !r.ok);
   const lines = [];
@@ -228,7 +237,7 @@ function buildReport() {
   lines.push("| Check | Result | Detail |");
   lines.push("| --- | --- | --- |");
   for (const r of results) {
-    lines.push(`| ${r.name} | ${r.ok ? "✅" : "❌"} | ${r.detail.replace(/\|/g, "\\|")} |`);
+    lines.push(`| ${r.name} | ${r.ok ? "✅" : "❌"} | ${escapeTableCell(r.detail)} |`);
   }
 
   if (failed.length) {
