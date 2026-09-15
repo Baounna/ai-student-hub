@@ -280,11 +280,13 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
 
       <section className="wiki-panel overflow-hidden rounded-md">
-        <div className="wiki-head hero-title px-6 py-3 text-center font-bold">
+        {/* The page's h1. It was a plain div, so the homepage — the page search
+            engines weigh most — shipped with no top-level heading at all. */}
+        <h1 className="wiki-head hero-title px-6 py-3 text-center font-bold">
           {locale === "fr"
             ? "Actualites IA + cybersecurite et guides d'execution pour tous"
             : "AI + Cybersecurity news and execution guides for anyone who builds, learns, or works with AI"}
-        </div>
+        </h1>
         <div className="body-copy px-6 py-4 text-center text-[color:var(--text)]">
           <p>
             {locale === "fr"

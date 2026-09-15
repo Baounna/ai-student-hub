@@ -7,7 +7,8 @@ const TRACKED_EVENTS = [
   "auth_login_attempt",
   "auth_register_attempt",
   "account_access_submit_success",
-  "account_access_submit_error"
+  "account_access_submit_error",
+  "article_share"
 ] as const;
 
 const trackedEventSet = new Set<string>(TRACKED_EVENTS);

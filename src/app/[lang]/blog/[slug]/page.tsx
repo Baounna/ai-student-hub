@@ -12,6 +12,7 @@ import { EditorialTrust } from "@/components/editorial-trust";
 import { LatestUpdatesBlock } from "@/components/latest-updates-block";
 import { Newsletter } from "@/components/newsletter";
 import { PostArticleCta } from "@/components/post-article-cta";
+import { ShareArticle } from "@/components/share-article";
 import { ReadingProgress } from "@/components/reading-progress";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { siteConfig } from "@/config/site";
@@ -376,6 +377,13 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
           <div id="latest-updates" className="anchor-offset">
             <LatestUpdatesBlock locale={locale} limit={8} />
           </div>
+
+          {/* Directly after the body, where a reader who finished it is. */}
+          <ShareArticle
+            url={absoluteUrl(`/${locale}/blog/${post.slug}`)}
+            title={post.title}
+            locale={locale}
+          />
 
           {!!post.references.length && (
             <section id="references" className="anchor-offset reading-panel rounded-3xl p-6">
