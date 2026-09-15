@@ -91,39 +91,99 @@ const linuxDevopsWorkflowContent = [
 ];
 
 const securityChecklistContent = [
-  "Security is one of the fastest ways to distinguish your project from tutorial clones. Even basic controls like input validation, role checks, and secret hygiene prevent common incidents.",
-  "Use a checklist before every release: auth checks, permission checks, rate limits, logging safety, dependency updates, and rollback readiness.",
-  "For AI endpoints, enforce strict payload size limits and sanitize user inputs before they reach prompt templates or tool-calling logic.",
-  "Store secrets in environment variables or managed secret stores. Never commit API keys or service tokens to version control.",
-  "Add one security regression test per critical endpoint. Track failed login attempts and suspicious request patterns.",
-  "Security maturity grows incrementally. A student team that applies consistent basic controls is already ahead of most public portfolio projects."
+  "Security is one of the fastest ways to separate your project from a tutorial clone, because almost no student project has any. The controls that matter most are not sophisticated — input validation, permission checks, secret hygiene — and their absence is what makes the difference between a portfolio piece and a liability you put on the public internet.",
+  "Start with secrets, because this is the mistake that cannot be undone. Keys belong in environment variables or a managed secret store, never in the repository. If one is committed, rotating it is mandatory and deleting the commit is not sufficient — the history is distributed the moment anyone clones, and public repositories are scanned continuously by people looking for exactly this.",
+  "Check authorisation on every route that touches data, not just authentication. Knowing who someone is does not tell you what they may see. The common failure is an endpoint that accepts an identifier and returns the record without confirming the requester owns it — which means anyone who can change a number in a URL can read someone else's data.",
+  "Validate input at the boundary, with explicit limits. Maximum payload size, expected types, allowed values. This is a reliability control as much as a security one: a request body with no size limit is a denial of service waiting to be discovered, and on an AI endpoint it is also an unbounded cost.",
+  "Treat any user text that reaches a prompt template as hostile. Cap its length, keep it clearly separated from your instructions, and never let it influence which tool runs or with what privileges. The authorisation decision belongs in your code, not in a sentence asking the model to be careful.",
+  "Rate limit everything public, per identity where you can and per address where you cannot. On an inference endpoint this is primarily a cost control, and the absence of it is how a free project becomes an unexpected invoice in an afternoon.",
+  "Be careful what your logs and error messages contain. A stack trace returned to the client tells an attacker about your internals; a log line containing a token moves that token somewhere with weaker access control than wherever it started. Decide once, centrally, what is safe to record and to return.",
+  "Keep dependencies updated and let an automated audit run on every build. Most real-world compromises of small projects arrive through a known vulnerability in something you installed and forgot, not through a novel attack on code you wrote.",
+  "Add one regression test per critical endpoint — one that asserts an unauthorised request is refused. A test is what keeps a control in place after the refactor that would otherwise remove it, and it is cheap to write while the behaviour is fresh.",
+  "None of this has to arrive at once. Security maturity is incremental, and a student team applying a consistent basic checklist before each release is already ahead of most projects on the public internet."
+];
+
+const securityChecklistContentFr = [
+  "La sécurité est l'un des moyens les plus rapides de distinguer votre projet d'un clone de tutoriel, parce que presque aucun projet étudiant n'en a. Les contrôles qui comptent le plus ne sont pas sophistiqués — validation des entrées, contrôles de permission, hygiène des secrets — et leur absence fait la différence entre une pièce de portfolio et un risque déposé sur l'internet public.",
+  "Commencez par les secrets, car c'est l'erreur irréversible. Les clés appartiennent aux variables d'environnement ou à un gestionnaire de secrets, jamais au dépôt. Si l'une est commitée, la faire tourner est obligatoire et supprimer le commit ne suffit pas : l'historique est distribué dès qu'une personne clone, et les dépôts publics sont scannés en continu par des gens qui cherchent exactement cela.",
+  "Vérifiez l'autorisation sur chaque route qui touche des données, pas seulement l'authentification. Savoir qui est quelqu'un ne dit pas ce qu'il a le droit de voir. L'erreur classique est un endpoint qui accepte un identifiant et renvoie l'enregistrement sans confirmer que le demandeur en est propriétaire — ce qui signifie que quiconque sait changer un chiffre dans une URL peut lire les données d'autrui.",
+  "Validez les entrées à la frontière, avec des limites explicites. Taille maximale de charge utile, types attendus, valeurs autorisées. C'est autant un contrôle de fiabilité que de sécurité : un corps de requête sans limite de taille est un déni de service en attente d'être découvert, et sur un endpoint d'IA c'est aussi un coût sans borne.",
+  "Considérez comme hostile tout texte utilisateur qui atteint un gabarit d'invite. Plafonnez sa longueur, gardez-le nettement séparé de vos instructions, et ne le laissez jamais influencer quel outil s'exécute ni avec quels privilèges. La décision d'autorisation appartient à votre code, pas à une phrase demandant au modèle d'être prudent.",
+  "Limitez le débit de tout ce qui est public, par identité quand c'est possible et par adresse sinon. Sur un endpoint d'inférence, c'est d'abord un contrôle de coût, et son absence est la façon dont un projet gratuit devient une facture inattendue en un après-midi.",
+  "Faites attention à ce que contiennent vos journaux et vos messages d'erreur. Une trace d'exécution renvoyée au client renseigne un attaquant sur vos entrailles ; une ligne de journal contenant un jeton déplace ce jeton vers un endroit moins bien protégé que son origine. Décidez une fois, de façon centralisée, ce qu'il est sûr d'enregistrer et de renvoyer.",
+  "Maintenez les dépendances à jour et laissez un audit automatique tourner à chaque build. La plupart des compromissions réelles de petits projets passent par une vulnérabilité connue dans quelque chose que vous avez installé puis oublié, pas par une attaque inédite sur votre code.",
+  "Ajoutez un test de régression par endpoint critique — un test qui vérifie qu'une requête non autorisée est refusée. C'est le test qui maintient un contrôle en place après le remaniement qui l'aurait supprimé, et il est peu coûteux à écrire tant que le comportement est frais.",
+  "Rien de tout cela n'a besoin d'arriver d'un coup. La maturité en sécurité est incrémentale, et une équipe étudiante qui applique une liste de base cohérente avant chaque livraison est déjà devant la plupart des projets publics."
 ];
 
 const databaseDesignContent = [
-  "Database design for AI products should separate transactional data, vector retrieval data, and telemetry. Mixing all workloads into one generic store causes scaling and debugging pain.",
-  "Model core entities first: users, projects, documents, jobs, and evaluations. Add clear primary keys, ownership fields, and timestamps.",
-  "Use indexes aligned with real query patterns. Verify with explain plans, not assumptions. Over-indexing can hurt writes and increase storage cost.",
-  "For RAG projects, define ingestion pipelines with idempotent updates and versioned embeddings to avoid stale retrieval outputs.",
-  "Keep logs append-first and apply retention windows. Operational logs should not compete with transactional workloads.",
-  "A clean schema with explicit ownership improves reliability, debugging speed, and interview credibility."
+  "An AI product has three workloads that want different things from a database: transactional data that needs consistency, vector data that needs similarity search, and telemetry that is written constantly and read rarely. Pushing all three through one generic store is the decision students regret, because the tuning that helps one actively hurts another.",
+  "Model the core entities before thinking about embeddings at all. Users, projects, documents, jobs, evaluations — each with a primary key, an explicit ownership field, and created and updated timestamps. Ownership in particular saves you later: a row that cannot say who it belongs to makes every permission check a join you did not plan for.",
+  "Index for the queries you actually run, and verify with a query plan rather than intuition. Indexes are not free — each one costs write throughput and storage, and a table with an index on every column is usually a sign that nobody measured. Look at what your slow queries are doing before adding anything.",
+  "For retrieval, store the chunk, its embedding, and a reference back to the source document with enough detail to cite it. Getting a relevant chunk back is only half the job; being able to tell the user where it came from is what makes the answer checkable, and it is why provenance belongs in the schema rather than being reconstructed later.",
+  "Version your embeddings, because you will change models. Store which model and which parameters produced each vector, so that when you upgrade you can re-embed incrementally and know exactly what is stale. Without this field, a model change means either re-embedding everything blindly or silently mixing incompatible vector spaces — and the second failure is invisible until retrieval quality quietly drops.",
+  "Make ingestion idempotent. Pipelines get re-run: a job fails halfway, someone triggers it twice, a retry fires. If reprocessing the same document creates a second copy of every chunk, your retrieval degrades with each accident. Key on a stable identifier and upsert rather than insert.",
+  "Keep operational logs append-first and separate, with a retention window decided in advance. Telemetry grows faster than everything else and it competes for exactly the resources your user-facing queries need. Deciding the retention policy before the table is large is considerably easier than deciding it afterwards.",
+  "Write down what the schema means. A short document explaining each table, what owns what, and which queries the indexes exist for is the difference between a schema someone can extend and one they will work around. This is also a reliable interview topic, because a candidate who can explain why a schema looks the way it does is demonstrating the thinking rather than the result."
+];
+
+const databaseDesignContentFr = [
+  "Un produit d'IA comporte trois charges de travail qui attendent des choses différentes d'une base : des données transactionnelles qui exigent de la cohérence, des données vectorielles qui exigent une recherche par similarité, et de la télémétrie écrite en permanence et lue rarement. Faire passer les trois par un seul magasin générique est la décision que les étudiants regrettent, car le réglage qui aide l'une pénalise activement l'autre.",
+  "Modélisez les entités principales avant même de penser aux embeddings. Utilisateurs, projets, documents, traitements, évaluations : chacun avec une clé primaire, un champ de propriété explicite, et des horodatages de création et de mise à jour. La propriété, surtout, vous sauve plus tard : une ligne incapable de dire à qui elle appartient transforme chaque contrôle de permission en jointure non prévue.",
+  "Indexez pour les requêtes que vous exécutez réellement, et vérifiez avec un plan d'exécution plutôt qu'à l'intuition. Les index ne sont pas gratuits : chacun coûte du débit en écriture et du stockage, et une table indexée sur chaque colonne est généralement le signe que personne n'a mesuré. Regardez ce que font vos requêtes lentes avant d'ajoter quoi que ce soit.",
+  "Pour la recherche, stockez le fragment, son embedding, et une référence vers le document source assez précise pour le citer. Retrouver un fragment pertinent n'est que la moitié du travail ; pouvoir dire à l'utilisateur d'où il vient est ce qui rend la réponse vérifiable, et c'est pourquoi la provenance appartient au schéma plutôt qu'à une reconstruction ultérieure.",
+  "Versionnez vos embeddings, car vous changerez de modèle. Stockez quel modèle et quels paramètres ont produit chaque vecteur, afin de pouvoir réencoder de façon incrémentale lors d'une montée de version et savoir exactement ce qui est périmé. Sans ce champ, changer de modèle signifie soit tout réencoder à l'aveugle, soit mélanger silencieusement des espaces vectoriels incompatibles — et cette seconde panne reste invisible jusqu'à ce que la qualité de recherche baisse discrètement.",
+  "Rendez l'ingestion idempotente. Les pipelines sont relancés : un traitement échoue à mi-parcours, quelqu'un le déclenche deux fois, une nouvelle tentative part. Si retraiter le même document crée une seconde copie de chaque fragment, votre recherche se dégrade à chaque accident. Appuyez-vous sur un identifiant stable et faites une mise à jour plutôt qu'une insertion.",
+  "Gardez les journaux d'exploitation en ajout seul et séparés, avec une durée de conservation décidée à l'avance. La télémétrie croît plus vite que tout le reste et concurrence exactement les ressources dont vos requêtes utilisateur ont besoin. Décider la politique de rétention avant que la table soit énorme est nettement plus facile qu'après.",
+  "Écrivez ce que le schéma signifie. Un court document expliquant chaque table, ce qui appartient à quoi, et pour quelles requêtes les index existent, fait la différence entre un schéma que l'on peut étendre et un schéma que l'on contourne. C'est aussi un sujet d'entretien fiable : un candidat capable d'expliquer pourquoi un schéma a cette forme démontre le raisonnement plutôt que le résultat."
 ];
 
 const cicdContent = [
-  "A CI/CD pipeline for student projects should focus on reliability, speed, and simplicity. Start with lint, type checks, tests, and build as mandatory gates.",
-  "Add branch protection and pull request checks so broken code cannot land in main by accident.",
-  "Use environment-specific deploy workflows. Keep staging close to production so bugs appear early.",
-  "Automate database migration checks and API smoke tests after deploy. Fail fast when critical routes are broken.",
-  "Add rollback instructions and keep one-click revert scripts documented.",
-  "Your pipeline is part of your product quality. A stable release process is a direct career signal for backend and platform roles."
+  "A release pipeline for a student project should optimise for three things: it catches real mistakes, it runs fast enough that you do not route around it, and it is simple enough that you can still fix it in six months. Most pipelines that fail do so on the second and third, not the first — an elaborate pipeline that takes twenty minutes gets bypassed, and a bypassed gate is no gate.",
+  "Start with four mandatory checks: lint, type check, tests, build. That sequence catches most of what actually breaks, in increasing order of cost, so the cheap checks fail first and you get feedback in seconds rather than minutes. Adding anything else before these four are reliable is premature.",
+  "Turn on branch protection, because a pipeline nobody has to pass is decoration. Requiring checks to be green before merge is what converts the pipeline from advice into a constraint, and it is the single setting that most distinguishes a repository that stays working from one that slowly rots.",
+  "Keep staging close to production, or do not have one. A staging environment that differs in runtime version, environment variables, or data shape produces confidence that does not transfer — bugs appear in production anyway, and you have paid for a second environment to learn nothing. Same container, same configuration mechanism, different values.",
+  "Run a smoke test after deploy rather than assuming a successful deploy means a working service. Hit the health endpoint and one real route, and check the response is what you expect. Deployments that succeed and produce a broken site are common; the platform only knows whether the process started.",
+  "Have a rollback path you have actually tested. Knowing the command in principle is not the same as having run it once, and the moment you need it is not the moment to discover that your last-known-good image was pruned. Practise it on a quiet afternoon so that using it under pressure is boring.",
+  "Treat database migrations as the dangerous part of the pipeline, because they are the part that is hard to reverse. Prefer changes that are compatible with both the old and new code, deploy the migration before the code that needs it, and avoid destructive changes in the same release as the feature that stops using a column.",
+  "Keep the whole thing fast. A pipeline under five minutes gets used on every commit; one over fifteen encourages batching changes, which makes each failure harder to attribute. Cache dependencies, run independent jobs in parallel, and be willing to move a slow check to a nightly run if it rarely catches anything.",
+  "None of this is specific to machine learning, which is the point. A stable release process is read as evidence of judgement, and for backend and platform roles it is often weighted more heavily than the feature it shipped."
+];
+
+const cicdContentFr = [
+  "Un pipeline de livraison pour un projet étudiant doit optimiser trois choses : il attrape de vraies erreurs, il tourne assez vite pour qu'on ne le contourne pas, et il reste assez simple pour être réparable dans six mois. La plupart des pipelines échouent sur les deux derniers points, pas sur le premier — un pipeline élaboré qui prend vingt minutes finit contourné, et une barrière contournée n'est plus une barrière.",
+  "Commencez par quatre vérifications obligatoires : lint, vérification de types, tests, build. Cette séquence attrape l'essentiel de ce qui casse réellement, par coût croissant, de sorte que les contrôles peu chers échouent en premier et que le retour arrive en secondes plutôt qu'en minutes. Ajouter autre chose avant que ces quatre-là soient fiables est prématuré.",
+  "Activez la protection de branche, car un pipeline que personne n'est obligé de passer n'est qu'une décoration. Exiger des contrôles au vert avant fusion transforme le pipeline d'un conseil en une contrainte, et c'est le réglage qui distingue le plus un dépôt qui reste fonctionnel d'un dépôt qui pourrit lentement.",
+  "Gardez la préproduction proche de la production, ou n'en ayez pas. Un environnement qui diffère par la version du runtime, les variables d'environnement ou la forme des données produit une confiance non transférable : les bugs apparaissent quand même en production, et vous avez payé un second environnement pour ne rien apprendre. Même conteneur, même mécanisme de configuration, valeurs différentes.",
+  "Lancez un test de fumée après déploiement plutôt que de supposer qu'un déploiement réussi signifie un service fonctionnel. Appelez l'endpoint de santé et une vraie route, et vérifiez que la réponse est bien celle attendue. Les déploiements qui réussissent en produisant un site cassé sont fréquents : la plateforme sait seulement que le processus a démarré.",
+  "Ayez un chemin de retour arrière que vous avez réellement testé. Connaître la commande en théorie n'équivaut pas à l'avoir exécutée une fois, et le moment où vous en avez besoin n'est pas celui pour découvrir que votre dernière image saine a été supprimée. Entraînez-vous un après-midi calme, pour que l'utiliser sous pression soit ennuyeux.",
+  "Traitez les migrations de base comme la partie dangereuse du pipeline, parce que c'est celle qu'on inverse mal. Préférez des changements compatibles avec l'ancien et le nouveau code, déployez la migration avant le code qui en dépend, et évitez les changements destructeurs dans la même version que la fonctionnalité qui cesse d'utiliser une colonne.",
+  "Gardez l'ensemble rapide. Un pipeline sous cinq minutes est utilisé à chaque commit ; au-delà de quinze, il encourage à regrouper les changements, ce qui rend chaque échec plus difficile à attribuer. Mettez les dépendances en cache, parallélisez les travaux indépendants, et acceptez de déplacer vers une exécution nocturne un contrôle lent qui n'attrape presque rien.",
+  "Rien de tout cela n'est spécifique au machine learning, et c'est justement le point. Un processus de livraison stable se lit comme une preuve de jugement, et pour des postes backend ou plateforme il pèse souvent plus lourd que la fonctionnalité livrée."
 ];
 
 const observabilityContent = [
-  "Observability helps you answer three questions quickly: what is broken, where is it broken, and why now. Without this, debugging becomes guesswork.",
-  "Track logs, metrics, and traces together. Logs give context, metrics show trends, traces show request path bottlenecks.",
-  "At minimum, monitor latency percentiles, error rate, throughput, queue depth, and dependency failures.",
-  "Use correlation IDs in every request so you can connect frontend events to backend operations.",
-  "Set actionable alerts, not noisy alerts. Alert only when a human should intervene.",
-  "A student project with clear observability dashboards looks closer to production than most portfolio demos."
+  "Observability exists to answer three questions quickly: what is broken, where is it broken, and why now. Without it, debugging is guesswork dressed up as investigation — you change something, redeploy, and see whether the complaints stop. That loop is slow enough that most student projects never get diagnosed at all; they just get abandoned.",
+  "The three signals do different jobs and none substitutes for the others. Logs give you context about a single event. Metrics show you trends and let you say whether this is unusual. Traces show the path of one request across components and where the time went. A service with only logs can tell you an error happened but not whether it is happening more often than yesterday.",
+  "At minimum, track latency percentiles, error rate, throughput, queue depth, and dependency failures. Use percentiles rather than averages, because an average hides exactly the problem you care about — if the median is fast and the ninety-ninth percentile is terrible, some users are having an awful time and the mean will never tell you.",
+  "Put a correlation ID on every request at the edge and pass it through everything downstream. This is a small amount of work that changes debugging completely: instead of guessing which backend log line corresponds to the frontend error a user reported, you search one identifier and get the whole story. Without it you are correlating by timestamp, which fails the moment you have any concurrency.",
+  "Log in a structured format rather than in prose. A line that is parseable lets you filter and count; a sentence does not. Include the fields you will want to group by — route, status, duration, model version, user or session where appropriate — and keep the shape consistent, because the value of structure comes from being able to rely on it.",
+  "Be deliberate about what never goes in a log. Credentials, tokens, full prompts containing personal data, and raw request bodies are all easy to log accidentally and difficult to remove afterwards, since logs get shipped and retained. Decide what is safe once, at the logging helper, rather than at every call site.",
+  "Alert only on conditions where a human should actually do something. An alert that fires and is routinely ignored is worse than no alert, because it trains you to ignore the next one — which will be the real incident. This is the same failure as a notification stream nobody reads: the mechanism exists, but it has stopped carrying information.",
+  "Keep a dashboard with the handful of signals that matter, and look at it when nothing is wrong. Knowing what normal looks like is what makes abnormal obvious, and it is the difference between noticing a slow degradation and discovering it from a user.",
+  "For a portfolio project, this is disproportionately visible. A student demo with correlation IDs, percentile latency, and a dashboard reads as production engineering, because that is what it is — and almost no competing project will have it."
+];
+
+const observabilityContentFr = [
+  "L'observabilité existe pour répondre vite à trois questions : qu'est-ce qui est cassé, où, et pourquoi maintenant. Sans elle, le débogage n'est qu'une supposition déguisée en enquête : on change quelque chose, on redéploie, et on regarde si les plaintes cessent. Cette boucle est si lente que la plupart des projets étudiants ne sont jamais diagnostiqués — ils sont simplement abandonnés.",
+  "Les trois signaux font des choses différentes et aucun ne remplace les autres. Les journaux donnent du contexte sur un événement précis. Les métriques montrent des tendances et permettent de dire si la situation est inhabituelle. Les traces montrent le trajet d'une requête entre composants et où le temps est passé. Un service qui n'a que des journaux sait qu'une erreur s'est produite, mais pas si elle survient plus souvent qu'hier.",
+  "Au minimum, suivez les percentiles de latence, le taux d'erreur, le débit, la profondeur de file et les échecs de dépendances. Utilisez des percentiles plutôt que des moyennes : une moyenne masque exactement le problème qui vous intéresse. Si la médiane est rapide et le quatre-vingt-dix-neuvième percentile catastrophique, certains utilisateurs vivent un enfer que la moyenne ne révélera jamais.",
+  "Posez un identifiant de corrélation sur chaque requête en entrée et propagez-le partout en aval. C'est peu de travail et cela change tout : au lieu de deviner quelle ligne de journal correspond à l'erreur signalée côté interface, vous cherchez un identifiant et obtenez toute l'histoire. Sans lui, vous corrélez par horodatage, ce qui échoue dès qu'il y a de la concurrence.",
+  "Journalisez dans un format structuré plutôt qu'en prose. Une ligne analysable permet de filtrer et de compter ; une phrase non. Incluez les champs sur lesquels vous voudrez regrouper — route, statut, durée, version du modèle, session le cas échéant — et gardez une forme constante, car toute la valeur de la structure vient du fait de pouvoir s'y fier.",
+  "Soyez délibéré sur ce qui ne doit jamais entrer dans un journal. Identifiants, jetons, invites complètes contenant des données personnelles, corps de requête bruts : tout cela se journalise par accident et se retire difficilement ensuite, puisque les journaux sont expédiés et conservés. Décidez une fois pour toutes, dans la fonction de journalisation, plutôt qu'à chaque appel.",
+  "N'alertez que sur des conditions où un humain doit réellement agir. Une alerte qui se déclenche et qu'on ignore par habitude est pire que pas d'alerte : elle vous entraîne à ignorer la suivante, qui sera le vrai incident. C'est le même échec qu'un flux de notifications que personne ne lit — le mécanisme existe, mais il ne transporte plus d'information.",
+  "Gardez un tableau de bord avec la poignée de signaux qui comptent, et regardez-le quand tout va bien. Savoir à quoi ressemble la normale est ce qui rend l'anormal évident, et c'est la différence entre remarquer une dégradation lente et l'apprendre par un utilisateur.",
+  "Pour un projet de portfolio, c'est étonnamment visible. Une démo étudiante avec identifiants de corrélation, latence en percentiles et tableau de bord se lit comme de l'ingénierie de production — parce que c'en est — et presque aucun projet concurrent n'en aura."
 ];
 
 const networkingBasicsContent = [
@@ -171,21 +231,51 @@ const operatingSystemsSkillsContentFr = [
 ];
 
 const mlTestingPlaybookContent = [
-  "ML engineering quality depends on testing strategy, not just model score. Define tests for data, features, model behavior, and serving endpoints.",
-  "Add data validation checks on schema, null distribution, and range drift before training jobs run.",
-  "Use evaluation suites that include both aggregate metrics and critical edge cases.",
-  "Track regressions across model versions and prompt versions with reproducible test datasets.",
-  "Combine offline evaluation with online signals to catch quality drops early.",
-  "A documented ML testing playbook increases trust in your project and reduces silent failures in production."
+  "Machine learning quality depends on testing strategy far more than on model score, because a score is a single number measured once on data you chose. Tests are what tell you whether the system still behaves tomorrow, on data you did not choose, after someone changes a preprocessing step they believed was unrelated.",
+  "There are four layers worth testing separately, and conflating them is why ML bugs are hard to find: the data, the feature transformations, the model behaviour, and the serving endpoint. A failure in each looks identical from the outside — bad predictions — so tests that cannot distinguish them leave you guessing.",
+  "Validate data before training runs rather than after they produce something strange. Check schema, null rates, value ranges, and category cardinality, and fail loudly when they move outside expected bounds. A training job that silently consumes a column which became null last Tuesday will produce a model that is confidently wrong, and the score will not necessarily look alarming.",
+  "Test feature transformations like ordinary code, because that is what they are. A normalisation step, a tokeniser, a date parser — each has edge cases, each can be unit tested with a handful of known inputs and expected outputs, and each is a common source of training-serving skew when the training path and the serving path drift apart.",
+  "Evaluate with aggregate metrics and named edge cases together. The aggregate tells you whether the system is broadly working; a fixed set of cases you care about tells you whether it still handles the situations that matter. Keep those cases in version control with the expected behaviour written down, so a regression is visible as a failing test rather than as a vague sense that quality slipped.",
+  "Track regressions across versions using a frozen dataset. The point is comparability: if the evaluation set changes at the same time as the model, you cannot attribute a difference to either. Freeze it, version it, and change it deliberately rather than incidentally.",
+  "Test the serving endpoint as its own layer. Shape of the response, behaviour on malformed input, latency under a realistic payload, and what happens when the model file is missing. Plenty of systems have a correct model behind an endpoint that returns a five-hundred on any input containing a newline.",
+  "Pair offline evaluation with an online signal, because offline agreement is not the same as being right. Even a crude production measurement — how often users retry, how often a result is abandoned — catches quality drops that your evaluation set was never designed to see.",
+  "Write the playbook down. Which layers are tested, what runs on every commit, what runs nightly, and what a failure in each means. The document is what makes the practice survivable by someone who is not you, which is also precisely what an interviewer is trying to determine."
+];
+
+const mlTestingPlaybookContentFr = [
+  "La qualité en machine learning dépend bien plus de la stratégie de test que du score du modèle, car un score est un chiffre unique mesuré une fois sur des données que vous avez choisies. Les tests, eux, disent si le système se comporte encore demain, sur des données non choisies, après que quelqu'un a modifié une étape de préparation qu'il croyait sans rapport.",
+  "Quatre couches méritent d'être testées séparément, et les confondre explique pourquoi les bugs en ML sont difficiles à trouver : les données, les transformations de variables, le comportement du modèle, et l'endpoint de service. Vu de l'extérieur, une panne dans chacune se ressemble — de mauvaises prédictions — donc des tests incapables de les distinguer vous laissent deviner.",
+  "Validez les données avant l'entraînement plutôt qu'après avoir obtenu un résultat étrange. Vérifiez le schéma, les taux de valeurs nulles, les plages de valeurs et le nombre de catégories, et échouez bruyamment quand ils sortent des bornes attendues. Un entraînement qui consomme silencieusement une colonne devenue nulle mardi dernier produira un modèle confiant et faux, sans que le score paraisse forcément alarmant.",
+  "Testez les transformations de variables comme du code ordinaire, parce que c'en est. Une normalisation, un tokeniseur, un analyseur de dates : chacun a des cas limites, chacun se teste unitairement avec quelques entrées connues et des sorties attendues, et chacun est une source classique d'écart entre entraînement et service quand les deux chemins divergent.",
+  "Évaluez avec des métriques agrégées et des cas nommés à la fois. L'agrégat dit si le système fonctionne globalement ; un ensemble fixe de cas qui vous tiennent à cœur dit s'il gère encore les situations qui comptent. Gardez ces cas sous gestion de version avec le comportement attendu écrit, pour qu'une régression apparaisse comme un test qui échoue plutôt que comme une vague impression de baisse.",
+  "Suivez les régressions entre versions avec un jeu de données figé. L'enjeu est la comparabilité : si le jeu d'évaluation change en même temps que le modèle, vous ne pouvez attribuer l'écart ni à l'un ni à l'autre. Figez-le, versionnez-le, et modifiez-le délibérément plutôt qu'accidentellement.",
+  "Testez l'endpoint de service comme une couche à part entière. Forme de la réponse, comportement sur entrée malformée, latence sur une charge réaliste, et ce qui se passe quand le fichier de modèle est absent. Beaucoup de systèmes ont un modèle correct derrière un endpoint qui renvoie une erreur cinq cents dès qu'une entrée contient un retour à la ligne.",
+  "Associez évaluation hors ligne et signal en ligne, car un accord hors ligne n'équivaut pas à avoir raison. Même une mesure de production grossière — fréquence des nouvelles tentatives, fréquence des résultats abandonnés — attrape des baisses de qualité que votre jeu d'évaluation n'a jamais été conçu pour voir.",
+  "Écrivez le manuel. Quelles couches sont testées, ce qui tourne à chaque commit, ce qui tourne la nuit, et ce que signifie un échec dans chacune. C'est ce document qui rend la pratique tenable par quelqu'un d'autre que vous — ce que l'intervieweur cherche précisément à déterminer."
 ];
 
 const llmGuardrailsContent = [
-  "LLM applications need guardrails across input, retrieval, generation, and tool execution. Treat guardrails as system architecture, not prompt decoration.",
-  "Use policy checks before and after model calls for unsafe content, prompt injection cues, and unsupported actions.",
-  "Ground responses with retrieval or explicit citations whenever the use case requires factual reliability.",
-  "Evaluate with scenario-based test sets, including adversarial prompts and edge workflows.",
-  "Log policy decisions and fallback paths so failures are auditable.",
-  "Students who implement basic guardrails and evaluation loops build safer, more credible AI systems."
+  "Guardrails in an LLM application are system architecture, not prompt decoration. An instruction in a system prompt is a request, and a sufficiently determined input will get around it. A check in code is a control. Treating the two as equivalent is the single most common design error in student LLM projects, and it is the one that produces incidents.",
+  "There are four places where things go wrong, and each needs its own handling: the input you receive, the context you retrieve, the text the model generates, and the actions it is allowed to take. A system that only validates the input has left three doors open.",
+  "Check inputs before they reach a prompt template. Enforce a maximum length, reject or strip control characters, and be suspicious of text that contains instruction-like phrasing when it arrives in a field meant to hold data. Length limits are not only a safety measure — an unbounded input is also an unbounded bill.",
+  "Treat retrieved context as untrusted, because it usually is. If your system ingests web pages, user uploads, or anything else you did not write, that content can contain instructions aimed at the model rather than at the reader. Keep retrieved material clearly delimited from your own instructions, and never let it reach a code path that can act.",
+  "Ground responses in retrieved sources whenever factual reliability matters, and make the citation part of the contract rather than a nicety. A system that returns an answer with the passage it came from can be audited by a user; one that returns a confident paragraph with no provenance cannot be checked at all, which is precisely the failure mode people mean when they complain about hallucination.",
+  "Constrain actions rather than trusting intentions. If the model can call tools, the authorisation belongs in the tool implementation, not in the instruction telling it which tools to use. Ask what damage the worst possible call could do, and make that call impossible rather than discouraged.",
+  "Evaluate with scenarios, not vibes. Build a small set of cases covering normal use, known edge cases, and deliberately adversarial prompts, with the expected behaviour written down. Twenty cases you actually run on every change are worth more than a comprehensive suite you assembled once and never repeated.",
+  "Log policy decisions as carefully as you log errors. When a request is blocked, record what triggered it and what the system did instead. Without that record you cannot tell whether your guardrails are working, too strict, or quietly failing open — and all three feel the same from the outside.",
+  "Decide what happens when a check fails, and make it a deliberate choice. Failing closed is usually right for anything with consequences; failing open is acceptable for non-critical enrichment. What is never acceptable is not having decided, which is how a disabled safety check survives a deploy unnoticed."
+];
+
+const llmGuardrailsContentFr = [
+  "Les garde-fous d'une application LLM relèvent de l'architecture, pas de la décoration d'invite. Une instruction dans une invite système est une demande, et une entrée suffisamment déterminée la contournera. Une vérification dans le code est un contrôle. Confondre les deux est l'erreur de conception la plus fréquente dans les projets étudiants, et c'est celle qui produit des incidents.",
+  "Quatre endroits posent problème, et chacun demande son propre traitement : l'entrée que vous recevez, le contexte que vous récupérez, le texte que le modèle génère, et les actions qu'il a le droit d'entreprendre. Un système qui ne valide que l'entrée a laissé trois portes ouvertes.",
+  "Contrôlez les entrées avant qu'elles n'atteignent un gabarit d'invite. Imposez une longueur maximale, rejetez ou nettoyez les caractères de contrôle, et méfiez-vous d'un texte formulé comme une instruction lorsqu'il arrive dans un champ censé contenir des données. Les limites de longueur ne sont pas qu'une mesure de sécurité : une entrée sans borne est aussi une facture sans borne.",
+  "Traitez le contexte récupéré comme non fiable, parce qu'il l'est généralement. Si votre système ingère des pages web, des fichiers déposés par des utilisateurs ou tout ce que vous n'avez pas écrit, ce contenu peut contenir des instructions destinées au modèle plutôt qu'au lecteur. Délimitez clairement la matière récupérée de vos propres instructions, et ne la laissez jamais atteindre un chemin de code capable d'agir.",
+  "Ancrez les réponses dans des sources récupérées dès que la fiabilité factuelle compte, et faites de la citation une partie du contrat plutôt qu'une politesse. Un système qui renvoie une réponse avec le passage dont elle provient peut être audité par l'utilisateur ; un système qui renvoie un paragraphe confiant sans provenance ne peut pas être vérifié du tout — exactement le défaut que les gens désignent quand ils parlent d'hallucination.",
+  "Contraignez les actions plutôt que de faire confiance aux intentions. Si le modèle peut appeler des outils, l'autorisation appartient à l'implémentation de l'outil, pas à l'instruction qui lui dit lesquels utiliser. Demandez-vous quels dégâts causerait le pire appel possible, et rendez cet appel impossible plutôt que déconseillé.",
+  "Évaluez avec des scénarios, pas à l'intuition. Constituez un petit ensemble de cas couvrant l'usage normal, les cas limites connus et des invites délibérément hostiles, avec le comportement attendu écrit. Vingt cas que vous exécutez réellement à chaque changement valent mieux qu'une suite exhaustive assemblée une fois et jamais rejouée.",
+  "Journalisez les décisions de politique aussi soigneusement que les erreurs. Quand une requête est bloquée, notez ce qui l'a déclenchée et ce que le système a fait à la place. Sans cette trace, impossible de savoir si vos garde-fous fonctionnent, sont trop stricts, ou échouent silencieusement en laissant passer — et ces trois cas se ressemblent vus de l'extérieur.",
+  "Décidez de ce qui se passe quand un contrôle échoue, et faites-en un choix délibéré. Échouer en bloquant est généralement correct dès qu'il y a des conséquences ; échouer en laissant passer est acceptable pour un enrichissement non critique. Ce qui n'est jamais acceptable, c'est de ne pas avoir décidé — c'est ainsi qu'un contrôle de sécurité désactivé survit à un déploiement sans que personne ne le remarque."
 ];
 
 export const csExpansionPosts: BlogPost[] = [
@@ -569,7 +659,7 @@ export const csExpansionPosts: BlogPost[] = [
       fr: {
         title: "Checklist securite pour projets IA et informatique",
         excerpt: "Une base securite pratique pour proteger les projets etudiants avant publication.",
-        content: securityChecklistContent
+        content: securityChecklistContentFr
       }
     },
     content: []
@@ -630,7 +720,7 @@ export const csExpansionPosts: BlogPost[] = [
       fr: {
         title: "Design de base de donnees pour apps RAG et ML",
         excerpt: "Comment modeliser les donnees pour retrieval, fiabilite, et performance.",
-        content: databaseDesignContent
+        content: databaseDesignContentFr
       }
     },
     content: []
@@ -691,7 +781,7 @@ export const csExpansionPosts: BlogPost[] = [
       fr: {
         title: "CI/CD pour projets ML et backend",
         excerpt: "Un pipeline release simple pour garder les projets etudiants stables et deployables.",
-        content: cicdContent
+        content: cicdContentFr
       }
     },
     content: []
@@ -752,7 +842,7 @@ export const csExpansionPosts: BlogPost[] = [
       fr: {
         title: "Observabilite pour etudiants ingenieurs",
         excerpt: "Une base observabilite pratique pour debugger plus vite et livrer des services fiables.",
-        content: observabilityContent
+        content: observabilityContentFr
       }
     },
     content: []
@@ -935,7 +1025,7 @@ export const csExpansionPosts: BlogPost[] = [
       fr: {
         title: "Playbook de tests ML engineering",
         excerpt: "Comment concevoir des couches de tests qui stabilisent la qualite ML jusqu'en production.",
-        content: mlTestingPlaybookContent
+        content: mlTestingPlaybookContentFr
       }
     },
     content: []
@@ -996,7 +1086,7 @@ export const csExpansionPosts: BlogPost[] = [
       fr: {
         title: "Bases guardrails et evaluation LLM",
         excerpt: "Un cadre pratique pour reduire comportements risqués et derive de qualite en applications LLM.",
-        content: llmGuardrailsContent
+        content: llmGuardrailsContentFr
       }
     },
     content: []
