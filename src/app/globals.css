@@ -170,6 +170,17 @@ html[data-content-width="wide"] {
     color: var(--text-strong);
   }
 
+  /* A source URL with no spaces cannot wrap at a space, so it was being
+     clipped mid-address in the news feed. break-word only splits a run that
+     would otherwise overflow, leaving ordinary prose untouched. */
+  p,
+  li,
+  td,
+  dd,
+  figcaption {
+    overflow-wrap: break-word;
+  }
+
   ::selection {
     background: color-mix(in srgb, var(--primary), transparent 72%);
     color: var(--text-strong);
