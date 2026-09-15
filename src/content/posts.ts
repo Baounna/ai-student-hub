@@ -851,13 +851,15 @@ const basePosts: BlogPost[] = [
         excerpt:
           "A practical guide to core AI concepts that help students read papers faster, build better projects, and explain decisions in interviews.",
         content: [
-          "Most AI confusion comes from skipping first principles. Students jump directly to frameworks and model APIs, then struggle when architecture choices break under real data.",
-          "Start with the core map: artificial intelligence is the broad field, machine learning is a subset, and deep learning is a subset of machine learning focused on multi-layer neural networks.",
-          "Supervised, unsupervised, and reinforcement learning are not only exam topics. They define how data is labeled, how feedback is collected, and how much deployment risk you carry.",
-          "Bias-variance tradeoff, overfitting, and generalization are still the most practical concepts for student projects. If you cannot explain these tradeoffs, your model choices look random.",
-          "Evaluation should be task-specific. Accuracy alone is weak for many AI products. In practice, you need precision/recall tradeoffs, latency targets, and user-facing error analysis.",
-          "A strong student workflow is simple: understand the concept, build one minimal implementation, then document what changed when you tuned data, model, or inference pipeline.",
-          "When you master these foundations, advanced topics become easier: transformers, retrieval systems, and agents are extensions of ideas you already understand."
+          "Most confusion about AI comes from skipping first principles. Students start with frameworks and model APIs, which work beautifully on tutorial data, and then hit real data where architecture choices start to matter and nothing in the tutorial explains why the results got worse.",
+          "Start with the map, because the vocabulary is used loosely and that causes real misunderstandings. Artificial intelligence is the broad field. Machine learning is the subset where behaviour is learned from data rather than specified. Deep learning is the subset of that using multi-layer neural networks. Knowing which one you are actually doing tells you which failure modes to expect.",
+          "Supervised, unsupervised, and reinforcement learning are not just exam categories. They describe where your feedback comes from, and therefore what you need before you can start: labelled examples, structure to discover, or an environment that returns a reward. Most student projects that stall do so because the chosen approach needed data the student did not have.",
+          "Overfitting, generalisation, and the bias-variance tradeoff remain the most practically useful concepts you will learn. A model that scores well on training data and badly on new data is the single most common outcome for a first project, and being able to name what is happening is what turns it from a mystery into a decision about capacity, regularisation, or data volume.",
+          "Split your data honestly and early. A test set you look at repeatedly stops being a test set, because you start fitting your own choices to it. Keep a portion you touch only at the end, and be suspicious of any result that improved immediately after you looked at the answers.",
+          "Make evaluation task-specific, because accuracy is a weak metric for most real products. A classifier that is ninety-nine percent accurate on data where one percent of cases are positive may have caught none of them. Precision and recall tell you which mistakes you are making, and which one matters more is a product decision, not a mathematical one.",
+          "Look at the errors themselves, not just the aggregate. Take thirty wrong predictions and read them. Almost always a pattern appears — one category, one input length, one kind of phrasing — and that pattern is more actionable than another round of hyperparameter tuning.",
+          "Build a minimal implementation of each concept once, by hand. Writing a simple gradient descent loop or a train-test split without a library takes an afternoon and permanently changes how you read documentation, because you know what the abstraction is hiding.",
+          "These foundations are what make the advanced topics tractable. Transformers, retrieval systems, and agents are extensions of ideas you already have — attention is a weighting scheme, retrieval is a lookup before generation, an agent is a loop with tools. They look unapproachable only from a starting point that skipped the basics."
         ]
       },
       fr: {
@@ -865,13 +867,15 @@ const basePosts: BlogPost[] = [
         excerpt:
           "Un guide pratique des concepts IA essentiels pour lire des papers, construire de meilleurs projets et reussir les entretiens.",
         content: [
-          "La confusion en IA vient souvent d'un manque de base. Beaucoup d'etudiants passent directement aux frameworks puis bloquent quand les choix techniques ne tiennent pas avec des donnees reelles.",
-          "Commence par la carte simple: l'IA est le champ global, le machine learning est un sous-ensemble, et le deep learning est un sous-ensemble du machine learning base sur des reseaux multicouches.",
-          "Supervised, unsupervised et reinforcement learning ne sont pas que des notions academiques. Ils definissent la qualite des donnees, le type de feedback, et le risque en production.",
-          "Bias-variance, overfitting et generalisation restent les notions les plus utiles pour des projets etudiants solides.",
-          "L'evaluation doit suivre le cas d'usage. L'accuracy seule est insuffisante pour beaucoup d'applications IA.",
-          "Workflow efficace: comprendre le concept, coder une version minimale, puis documenter les effets des changements data/modele/inference.",
-          "Avec ces bases, les sujets avances comme transformers, RAG et agents deviennent beaucoup plus faciles a appliquer."
+          "L'essentiel de la confusion autour de l'IA vient du fait de sauter les principes de base. Les étudiants commencent par les frameworks et les API de modèles, qui fonctionnent parfaitement sur des données de tutoriel, puis se heurtent à de vraies données où les choix d'architecture comptent — et rien dans le tutoriel n'explique pourquoi les résultats se sont dégradés.",
+          "Commencez par la carte, car le vocabulaire est employé de façon approximative et cela crée de vrais malentendus. L'intelligence artificielle est le domaine large. L'apprentissage automatique en est le sous-ensemble où le comportement s'apprend à partir de données plutôt qu'il ne se spécifie. L'apprentissage profond est le sous-ensemble utilisant des réseaux de neurones à plusieurs couches. Savoir lequel vous pratiquez indique quels modes de défaillance attendre.",
+          "Apprentissage supervisé, non supervisé et par renforcement ne sont pas que des catégories d'examen. Ils décrivent d'où vient votre signal de retour, donc ce qu'il vous faut avant de commencer : des exemples étiquetés, une structure à découvrir, ou un environnement qui renvoie une récompense. La plupart des projets étudiants qui s'enlisent le font parce que l'approche choisie exigeait des données que l'étudiant n'avait pas.",
+          "Le surapprentissage, la généralisation et le compromis biais-variance restent les notions les plus utiles en pratique. Un modèle qui obtient de bons scores à l'entraînement et de mauvais sur des données nouvelles est le résultat le plus fréquent d'un premier projet, et savoir nommer ce qui se passe transforme un mystère en décision sur la capacité, la régularisation ou le volume de données.",
+          "Séparez vos données honnêtement et tôt. Un jeu de test que l'on consulte à répétition cesse d'être un jeu de test, parce qu'on se met à y ajuster ses propres choix. Gardez une portion que vous ne touchez qu'à la fin, et méfiez-vous de tout résultat qui s'améliore juste après avoir regardé les réponses.",
+          "Rendez l'évaluation spécifique à la tâche, car la justesse est une métrique faible pour la plupart des produits réels. Un classifieur exact à quatre-vingt-dix-neuf pour cent sur des données où un pour cent des cas sont positifs peut n'en avoir attrapé aucun. La précision et le rappel disent quelles erreurs vous commettez, et laquelle compte le plus est une décision produit, pas une décision mathématique.",
+          "Regardez les erreurs elles-mêmes, pas seulement l'agrégat. Prenez trente prédictions fausses et lisez-les. Presque toujours un motif apparaît — une catégorie, une longueur d'entrée, une tournure — et ce motif est plus exploitable qu'un tour de plus de réglage d'hyperparamètres.",
+          "Implémentez une fois chaque concept de façon minimale, à la main. Écrire une descente de gradient simple ou une séparation entraînement-test sans bibliothèque prend un après-midi et change durablement votre lecture de la documentation, parce que vous savez ce que l'abstraction cache.",
+          "Ces fondations rendent les sujets avancés abordables. Transformeurs, systèmes de recherche et agents sont des extensions d'idées que vous avez déjà : l'attention est une pondération, la recherche est une consultation avant génération, un agent est une boucle avec des outils. Ils ne paraissent inaccessibles que depuis un point de départ qui a sauté les bases."
         ]
       }
     },
@@ -938,13 +942,15 @@ const basePosts: BlogPost[] = [
         excerpt:
           "A focused CS roadmap for AI students who want better performance, cleaner systems, and stronger interview answers.",
         content: [
-          "AI students often ask if classic cybersecurity still matters. The short answer is yes: CS fundamentals are the difference between a working demo and a reliable product.",
-          "Algorithms and data structures improve your model pipelines immediately. Better complexity decisions reduce preprocessing time, speed up retrieval, and lower cloud bills.",
-          "Operating systems knowledge helps when you deploy. You understand processes, memory limits, file systems, and why your service crashes under load.",
-          "Networking fundamentals matter for API design, latency debugging, and distributed AI systems. If you can read logs and reason about request flow, you diagnose issues much faster.",
-          "Databases are essential for modern AI apps. Embeddings, user context, evaluation logs, and experiment tracking all depend on good storage choices and clean schemas.",
-          "Software engineering discipline compounds everything: version control, testing, code review, and documentation make your AI work maintainable and team-ready.",
-          "A good weekly routine: two sessions for theory, two sessions for implementation, one session for project integration. This keeps CS learning tied to shipped outcomes."
+          "Students working in AI often ask whether classical computer science still matters. It does, and the reason is specific rather than sentimental: fundamentals are the difference between a demo that works once and a product that keeps working. Everything below shows up the first time your system meets real load or real data.",
+          "Algorithms and data structures pay off immediately, not eventually. A preprocessing step with the wrong complexity turns a five-minute job into an overnight one, and the same reasoning decides whether your retrieval is fast enough to sit in a request path. This is also the most direct link between your code and your cloud bill, because compute time is billed.",
+          "Operating systems knowledge is what you need the first time a deployment misbehaves. Processes, memory limits, file descriptors, signals — these explain why a service dies under load, why it drops requests on every deploy, and why the logs say nothing useful. Without them an outage is an unexplained event; with them it is a sequence of answerable questions.",
+          "Networking matters for every API you design and every latency problem you debug. Round trips, connection reuse, timeout budgets, and what is safe to retry account for far more real-world slowness than model size does, and they are invisible unless you know to look.",
+          "Databases underpin modern AI applications more than most students expect. Embeddings, user context, evaluation logs, and experiment tracking all need storage choices, and a clean schema with explicit ownership is what keeps permission checks and debugging tractable as the system grows.",
+          "Software engineering discipline compounds everything else. Version control, tests, code review, and documentation are what make work maintainable by someone who is not you — which is, precisely, what employment consists of. A brilliant system nobody else can modify is a liability rather than an asset.",
+          "Study in the order your project needs, not in curriculum order. Complexity when a pipeline is slow, operating systems when a deploy fails, networking when latency is unexplained. Concepts learned against a problem you currently have stick; concepts learned in the abstract usually do not.",
+          "A weekly rhythm that works: two sessions on theory, two on implementation, one integrating what you learned into the project you are already building. The integration session is the one people skip and the one that turns reading into ability.",
+          "The test of whether you have learned something is whether you can explain the tradeoff rather than recite the definition. Interviews are largely a check on that distinction, and so, in a slower way, is production."
         ]
       },
       fr: {
@@ -952,13 +958,15 @@ const basePosts: BlogPost[] = [
         excerpt:
           "Un plan CS cible pour etudiants IA qui veulent de meilleures performances, des systemes propres et de meilleures reponses en entretien.",
         content: [
-          "Beaucoup d'etudiants IA se demandent si les bases classiques d'informatique sont encore utiles. Oui: elles transforment une demo fragile en produit fiable.",
-          "Algorithmes et structures de donnees impactent directement les pipelines ML: preprocessing plus rapide, retrieval plus efficace, cout cloud mieux maitrise.",
-          "Les notions systeme (OS) sont cruciales en deploiement: processus, memoire, fichiers, diagnostics de crash.",
-          "Le reseau est essentiel pour comprendre APIs, latence et flux de requetes dans des applications IA distribuees.",
-          "Les bases de donnees sont partout en IA moderne: embeddings, contexte utilisateur, logs d'evaluation, suivi d'experiences.",
-          "La rigueur software (Git, tests, revue de code, documentation) rend ton travail maintenable et pro.",
-          "Routine efficace: deux sessions theorie, deux sessions implementation, une session integration projet chaque semaine."
+          "Les étudiants en IA demandent souvent si l'informatique classique compte encore. Oui, et pour une raison précise plutôt que sentimentale : les fondamentaux font la différence entre une démonstration qui marche une fois et un produit qui continue de fonctionner. Tout ce qui suit apparaît dès la première rencontre avec une vraie charge ou de vraies données.",
+          "Les algorithmes et structures de données rapportent immédiatement, pas à terme. Une étape de préparation avec la mauvaise complexité transforme un traitement de cinq minutes en travail nocturne, et le même raisonnement décide si votre recherche est assez rapide pour tenir dans un chemin de requête. C'est aussi le lien le plus direct entre votre code et votre facture cloud, puisque le temps de calcul se facture.",
+          "La connaissance des systèmes d'exploitation sert dès qu'un déploiement se comporte mal. Processus, limites mémoire, descripteurs de fichiers, signaux : ils expliquent pourquoi un service meurt sous charge, pourquoi il perd des requêtes à chaque mise en production, et pourquoi les journaux ne disent rien d'utile. Sans eux, une panne est un événement inexpliqué ; avec eux, c'est une suite de questions auxquelles on peut répondre.",
+          "Le réseau compte pour chaque API que vous concevez et chaque problème de latence que vous déboguez. Allers-retours, réutilisation de connexion, budgets de délai et ce qu'il est sûr de réessayer expliquent bien plus de lenteur réelle que la taille du modèle, et restent invisibles si l'on ne sait pas où regarder.",
+          "Les bases de données soutiennent les applications d'IA modernes plus que la plupart des étudiants ne l'imaginent. Embeddings, contexte utilisateur, journaux d'évaluation, suivi d'expériences : tout cela demande des choix de stockage, et un schéma propre avec une propriété explicite est ce qui garde les contrôles de permission et le débogage praticables à mesure que le système grandit.",
+          "La discipline du génie logiciel amplifie tout le reste. Gestion de version, tests, revue de code et documentation rendent le travail maintenable par quelqu'un d'autre que vous — ce qui est exactement en quoi consiste un emploi. Un système brillant que personne d'autre ne peut modifier est un passif, pas un actif.",
+          "Étudiez dans l'ordre dont votre projet a besoin, pas dans l'ordre du programme. La complexité quand un pipeline est lent, les systèmes quand un déploiement échoue, le réseau quand la latence est inexpliquée. Les notions apprises face à un problème que l'on a réellement restent ; les notions apprises dans l'abstrait, rarement.",
+          "Un rythme hebdomadaire qui fonctionne : deux séances de théorie, deux d'implémentation, une pour intégrer ce que vous avez appris au projet en cours. C'est la séance d'intégration que l'on saute, et c'est elle qui transforme la lecture en capacité.",
+          "Le test de ce que vous avez appris est de savoir expliquer le compromis plutôt que de réciter la définition. Les entretiens vérifient essentiellement cette distinction — et la production le fait aussi, plus lentement."
         ]
       }
     },
@@ -1025,13 +1033,15 @@ const basePosts: BlogPost[] = [
         excerpt:
           "Understand how modern LLM systems are built, when to use each pattern, and how to choose a portfolio architecture recruiters respect.",
         content: [
-          "Many students treat transformers, RAG, and agents like separate trends. In practice, they are layers of one system design stack.",
-          "Transformers are the model backbone. They generate and rank tokens using attention, making them strong for language generation and reasoning tasks.",
-          "RAG solves a key product problem: knowledge freshness and grounding. Instead of asking the model to memorize everything, you retrieve relevant context at runtime.",
-          "Agent workflows add decision loops. The model can select tools, call APIs, and execute multi-step plans, which is useful for complex tasks but increases failure surfaces.",
-          "For student projects, start simple: baseline transformer app, then add retrieval, then add agent actions only if the use case needs multi-step execution.",
-          "Your architecture choice should match constraints: latency, cost, reliability, and explainability. This is exactly what interviewers test in system design discussions.",
-          "The strongest portfolio signal is not complexity for its own sake. It is a clean architecture with measured tradeoffs, clear logs, and honest failure analysis."
+          "Transformers, retrieval-augmented generation, and agents are usually discussed as three separate trends. They are better understood as three layers of one stack, each added to solve a problem the layer below could not, and knowing which problem each solves is what stops you adding complexity you do not need.",
+          "The transformer is the model backbone. It predicts tokens using attention, which lets it weigh distant parts of the input when producing each piece of output. What matters practically is the consequence: it knows what was in its training data and what is in the current context window, and nothing else.",
+          "Retrieval exists because of that limitation. Rather than expecting the model to have memorised your documents, you fetch relevant passages at request time and place them in the context. This solves freshness and grounding at once, and it is why retrieval is the right first addition for almost any project involving a body of knowledge the model has not seen.",
+          "Retrieval quality is mostly a data problem rather than a model one. How you split documents into chunks, what metadata you keep, and whether you can trace a passage back to its source determine the answer quality far more than which embedding model you chose. Students usually tune the model first and the chunking last, which is the wrong order.",
+          "Agents add a decision loop: the model chooses tools, calls them, reads results, and decides what to do next. This genuinely unlocks multi-step tasks, and it genuinely multiplies the ways your system can fail — each step is a place to go wrong, and errors compound rather than cancel.",
+          "Add agent behaviour only when the task actually requires multiple dependent steps whose order cannot be known in advance. If you can write the sequence yourself, write it. A fixed pipeline you control is easier to test, cheaper to run, and far easier to debug than a loop that decided its own path.",
+          "Choose the layer by constraints rather than by novelty. Latency, cost, reliability, and explainability are the axes that matter, and each layer you add makes all four worse in exchange for capability. That trade is worth making when the capability is required and indefensible when it is not.",
+          "Evaluate each layer separately, because a bad answer has several possible causes. Was the right passage retrieved? Given that passage, was the generation faithful to it? Did the agent choose a sensible tool? A single end-to-end score cannot distinguish these, and without the distinction you are tuning blind.",
+          "The strongest portfolio signal is not architectural complexity. It is a clean architecture whose tradeoffs you measured, with honest failure analysis — and that is also what a system design interview is actually testing."
         ]
       },
       fr: {
@@ -1039,13 +1049,15 @@ const basePosts: BlogPost[] = [
         excerpt:
           "Comprendre comment les systemes LLM modernes sont construits, quand utiliser chaque pattern et comment choisir une architecture portfolio credible.",
         content: [
-          "Beaucoup d'etudiants voient transformers, RAG et agents comme trois tendances separees. En realite, ce sont des couches d'un meme systeme.",
-          "Les transformers forment le coeur du modele. Ils exploitent l'attention pour la generation et la comprehension du langage.",
-          "Le RAG repond a un besoin produit central: garder une connaissance fraiche et verifiable via retrieval dynamique.",
-          "Les agents ajoutent une boucle de decision: choix d'outils, appels API, execution multi-etapes. C'est puissant mais plus fragile.",
-          "Pour un projet etudiant: commence par une base simple, ajoute retrieval, puis agents seulement si le cas d'usage exige une orchestration multi-etapes.",
-          "Le bon choix depend des contraintes: latence, cout, fiabilite, explicabilite. C'est exactement ce que les recruteurs evalent.",
-          "Le meilleur signal portfolio n'est pas la complexite brute, mais une architecture claire avec compromis mesures et analyse d'erreurs honnete."
+          "Les transformeurs, la génération augmentée par recherche et les agents sont généralement présentés comme trois tendances distinctes. On les comprend mieux comme trois couches d'une même pile, chacune ajoutée pour résoudre un problème que la précédente ne pouvait pas traiter — et savoir quel problème chacune résout est ce qui vous évite d'ajouter une complexité inutile.",
+          "Le transformeur est la colonne vertébrale du modèle. Il prédit des jetons grâce à l'attention, ce qui lui permet de pondérer des parties éloignées de l'entrée au moment de produire chaque morceau de sortie. Ce qui compte en pratique est la conséquence : il connaît ses données d'entraînement et le contenu de sa fenêtre de contexte, et rien d'autre.",
+          "La recherche existe à cause de cette limite. Plutôt que d'attendre du modèle qu'il ait mémorisé vos documents, vous récupérez les passages pertinents au moment de la requête et les placez dans le contexte. Cela résout d'un coup la fraîcheur et l'ancrage, et c'est pourquoi la recherche est le bon premier ajout pour presque tout projet reposant sur un corpus que le modèle n'a pas vu.",
+          "La qualité de la recherche est surtout un problème de données, pas de modèle. La façon dont vous découpez les documents en fragments, les métadonnées conservées et la possibilité de remonter d'un passage à sa source déterminent la qualité des réponses bien plus que le choix du modèle d'embedding. Les étudiants règlent d'abord le modèle et le découpage en dernier : c'est l'ordre inverse.",
+          "Les agents ajoutent une boucle de décision : le modèle choisit des outils, les appelle, lit les résultats et décide de la suite. Cela débloque réellement les tâches en plusieurs étapes, et cela multiplie tout aussi réellement les façons d'échouer — chaque étape est un endroit où se tromper, et les erreurs se cumulent au lieu de s'annuler.",
+          "N'ajoutez un comportement d'agent que si la tâche exige vraiment plusieurs étapes dépendantes dont l'ordre ne peut être connu à l'avance. Si vous pouvez écrire la séquence vous-même, écrivez-la. Un pipeline fixe que vous contrôlez est plus facile à tester, moins cher à exécuter et bien plus simple à déboguer qu'une boucle qui a décidé son propre chemin.",
+          "Choisissez la couche selon les contraintes, pas selon la nouveauté. Latence, coût, fiabilité et explicabilité sont les axes qui comptent, et chaque couche ajoutée dégrade les quatre en échange de capacité. Ce compromis vaut la peine quand la capacité est nécessaire, et il est indéfendable sinon.",
+          "Évaluez chaque couche séparément, car une mauvaise réponse a plusieurs causes possibles. Le bon passage a-t-il été récupéré ? Compte tenu de ce passage, la génération lui est-elle fidèle ? L'agent a-t-il choisi un outil sensé ? Un score unique de bout en bout ne distingue pas ces cas, et sans cette distinction vous réglez à l'aveugle.",
+          "Le signal le plus fort dans un portfolio n'est pas la complexité architecturale. C'est une architecture propre dont vous avez mesuré les compromis, avec une analyse honnête des échecs — et c'est aussi ce qu'un entretien de conception système teste réellement."
         ]
       }
     },
