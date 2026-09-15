@@ -9,7 +9,7 @@ import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getLiveAiCsUpdates } from "@/lib/live-news";
-import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { Provenance } from "@/components/provenance";
 
 export const revalidate = 1800;
@@ -152,7 +152,15 @@ export default async function LocalizedNewsPage(
     return suffix ? `/${locale}/news?${suffix}` : `/${locale}/news`;
   };
 
-  const featuredVisuals = ["/images/post-roadmap.svg", "/images/post-portfolio.svg", "/images/post-deploy.svg"] as const;
+  // These three tiles are cropped to a third of their width, and the old SVGs
+  // carried headline text, so every one was sliced mid-word. The generated
+  // covers are geometric, so they crop cleanly at any aspect — and three
+  // different topics give the strip three distinct palettes.
+  const featuredVisuals = [
+    coverImageUrl("news-ai-systems", "none"),
+    coverImageUrl("news-security-standards", "none"),
+    coverImageUrl("news-computer-systems", "none")
+  ] as const;
 
   return (
     <section className="page-shell max-w-6xl py-10 md:py-16">

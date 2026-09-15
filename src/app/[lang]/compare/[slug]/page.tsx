@@ -13,7 +13,7 @@ import { TrackableAnchor } from "@/components/trackable-anchor";
 import { comparisons, getComparisonBySlug } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 
 function getEvidenceSource(toolName: string, locale: Locale) {
@@ -148,7 +148,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
         <div className="space-y-8">
           <div className="media-frame group relative aspect-[16/10] rounded-2xl">
             <Image
-              src="/images/post-deploy.svg"
+              src={coverImageUrl(params.slug, "Cloud/DevOps")}
               alt={comparison.title}
               width={1200}
               height={675}

@@ -153,6 +153,7 @@ export function ogImageUrl(title: string, kicker = "") {
  * one of three. The cover is composed from the slug, so each article keeps its
  * own and new articles need nobody to draw anything.
  */
+/** Pass "none" as the topic for decorative tiles that get cropped narrow. */
 export function coverImageUrl(slug: string, topic = "") {
   // Path segments, not a query string: next/image rejects a local source that
   // carries one, which would 400 every card on the page.

@@ -1021,7 +1021,31 @@ const basePosts: BlogPost[] = [
   }
 ];
 
-export const posts: BlogPost[] = [...basePosts, ...csExpansionPosts];
+/**
+ * Reading time, measured rather than declared.
+ *
+ * The hand-written readTime values claimed nine to eighteen minutes on posts
+ * whose bodies run to a hundred words — sixteen of eighteen overstated it by
+ * more than three times. A reader who clicks "12 min read" and gets 109 words
+ * does not come back, and search engines treat that gap as thin content, which
+ * works directly against the traffic this site needs.
+ *
+ * So the number is derived from the body at 220 words per minute. Where a post
+ * is short the label now says so. That is unflattering and correct, and it
+ * makes it obvious which posts still need writing.
+ */
+const WORDS_PER_MINUTE = 220;
+
+function measureReadTime(post: BlogPost): string {
+  const words = post.content.reduce((sum, paragraph) => sum + paragraph.split(/\s+/).filter(Boolean).length, 0);
+  const minutes = Math.max(1, Math.round(words / WORDS_PER_MINUTE));
+  return `${minutes} min read`;
+}
+
+export const posts: BlogPost[] = [...basePosts, ...csExpansionPosts].map((post) => ({
+  ...post,
+  readTime: measureReadTime(post)
+}));
 
 for (const post of posts) {
   post.content = post.locales.en.content;

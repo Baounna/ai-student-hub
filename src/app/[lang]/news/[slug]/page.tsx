@@ -193,7 +193,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
       name: "AI and Cybersecurity News"
     },
     mainEntityOfPage: absoluteUrl(`/${locale}/news/${brief.slug}`),
-    image: [absoluteUrl("/images/post-deploy.svg")],
+    image: [absoluteUrl(ogImageUrl(brief.title, brief.topic))],
     keywords: brief.keywords.join(", "),
     about: brief.topic
   };

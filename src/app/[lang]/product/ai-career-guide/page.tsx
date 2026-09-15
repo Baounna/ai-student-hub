@@ -6,7 +6,7 @@ import { Newsletter } from "@/components/newsletter";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
 const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
@@ -143,7 +143,7 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
         <div className="space-y-6">
           <div className="relative overflow-hidden rounded-2xl border border-[color:var(--border)]">
             <Image
-              src="/images/post-roadmap.svg"
+              src={coverImageUrl("ai-career-guide", "Career/Interviews")}
               alt={fr ? "Apercu du guide" : "Guide preview"}
               width={1200}
               height={675}

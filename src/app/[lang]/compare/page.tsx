@@ -12,7 +12,7 @@ import { comparisons, recommendedTools, studentStudyTools } from "@/content/post
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { sanitizeSearchQuery } from "@/lib/input";
-import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -402,7 +402,7 @@ export default async function LocalizedCompareIndexPage(
                   <div className="grid gap-4 md:grid-cols-[230px,1fr] md:items-start">
                     <div className="media-frame group relative aspect-[16/10]">
                       <Image
-                        src="/images/post-deploy.svg"
+                        src={coverImageUrl("compare-index", "Cloud/DevOps")}
                         alt={comparison.title}
                         width={1200}
                         height={675}

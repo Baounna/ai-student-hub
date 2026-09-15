@@ -73,11 +73,15 @@ export async function GET(
 ) {
   const resolved = await params;
   const slug = sanitizeTextInput(decodeURIComponent(resolved.slug || "cover"), { maxLength: 120 });
-  const topic = sanitizeTextInput(decodeURIComponent(resolved.topic || "").replace(/-/g, " "), {
-    maxLength: 48
-  });
+  const rawTopic = decodeURIComponent(resolved.topic || "");
+  // "none" is the explicit opt-out used by decorative tiles.
+  const topic =
+    rawTopic === "none" ? "" : sanitizeTextInput(rawTopic.replace(/-/g, " "), { maxLength: 48 });
 
-  const palette = paletteFor(topic);
+  // With the label suppressed there is no topic left to colour by, so fall back
+  // to the slug — decorative tiles name their subject there ("news-ai-systems"),
+  // which keeps a row of them visibly different rather than three of one colour.
+  const palette = paletteFor(topic || slug);
   const next = rng(seedFrom(slug));
 
   // Four broad bands, angled and offset by the seed. Large simple forms hold up
@@ -137,7 +141,10 @@ export async function GET(
           }}
         />
 
-        {/* The topic, small and low — the headline already sits beside the card. */}
+        {/* The topic, small and low — the headline already sits beside the card.
+            Omitted for decorative tiles, which get cropped to a fraction of
+            their width and would show a sliced fragment of the label. */}
+        {topic ? (
         <div
           style={{
             position: "absolute",
@@ -158,9 +165,10 @@ export async function GET(
               fontWeight: 600
             }}
           >
-            {topic || "AI + Cybersecurity"}
+            {topic}
           </div>
         </div>
+        ) : null}
       </div>
     ),
     { width: 1200, height: 675 }

@@ -209,7 +209,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
       name: "AI and Cybersecurity News"
     },
     mainEntityOfPage: absoluteUrl(`/${locale}/news/auto/${item.slug}`),
-    image: [absoluteUrl("/images/post-deploy.svg")],
+    image: [absoluteUrl(ogImageUrl(item.title, item.topic))],
     articleSection: item.topic,
     citation: [item.href, item.sourceFeed]
   };
