@@ -127,21 +127,47 @@ const observabilityContent = [
 ];
 
 const networkingBasicsContent = [
-  "Networking fundamentals directly impact API performance and reliability. Understand DNS resolution, TCP behavior, HTTP semantics, and TLS basics.",
-  "Latency issues often come from network round trips, payload size, and retry behavior, not model quality alone.",
-  "Use keep-alive connections, compression where appropriate, and explicit timeout budgets for external calls.",
-  "Design retries carefully: add exponential backoff and idempotency keys for write operations.",
-  "Instrument network timing in your logs so slow dependencies are visible.",
-  "Engineers who understand network behavior ship more stable AI and backend services."
+  "When an AI service feels slow, the model is the first thing blamed and usually the wrong one. A request that takes two seconds often spends a few hundred milliseconds in inference and the rest in DNS resolution, connection setup, TLS negotiation, payload serialisation, and waiting on a dependency that is itself waiting. Networking is where that time actually goes, and it is invisible until you measure it.",
+  "The four things worth understanding properly are DNS, TCP, HTTP semantics, and TLS. DNS because a cold lookup adds latency and a stale cache causes failures that look random. TCP because connection setup costs a round trip you can avoid. HTTP because its semantics govern what is safe to retry. TLS because the handshake is expensive and reusing it is most of the win.",
+  "Connection reuse is the cheapest improvement available to most services. Opening a new connection per request pays for the handshake every time; keeping connections alive amortises it across many. Most HTTP clients support this but not all enable it by default, and a client created inside a request handler starts from zero every single call — a mistake that is easy to make and invisible until you look at timings.",
+  "Payload size matters more than people expect, because it interacts with everything else. Compression is usually worth it for text-heavy responses and usually not for small ones, where the compression cost exceeds the transfer saving. The more useful discipline is simply not returning fields nobody reads.",
+  "Give every external call an explicit timeout budget, and make the budgets add up. A handler with a two-second target cannot make three sequential calls that each wait ten seconds. Without explicit deadlines the default is usually to wait far too long, which turns one slow dependency into a queue of stuck workers and then into an outage.",
+  "Retries are where well-meaning code causes incidents. Retrying immediately turns a struggling service into an overwhelmed one; exponential backoff with jitter spreads the load instead of synchronising it. Retry only what is safe to retry — a read is naturally safe, a write is not unless you have made it idempotent with a key the server uses to recognise a duplicate.",
+  "Instrument the timings you will need before you need them. Record DNS, connect, first byte, and total for outbound calls, and log the dependency name with each. The first time a dependency degrades, this turns a vague report of slowness into an obvious answer, and it costs almost nothing to add in advance.",
+  "None of this is exotic knowledge, which is exactly why it separates engineers. Model quality is where the attention goes; network behaviour is where the reliability actually lives."
+];
+
+const networkingBasicsContentFr = [
+  "Quand un service d'IA paraît lent, le modèle est la première chose accusée, et généralement la mauvaise. Une requête de deux secondes passe souvent quelques centaines de millisecondes en inférence et tout le reste en résolution DNS, établissement de connexion, négociation TLS, sérialisation, et attente d'une dépendance qui attend elle-même. C'est là que le temps part réellement, et c'est invisible tant qu'on ne le mesure pas.",
+  "Les quatre notions à maîtriser sont le DNS, TCP, la sémantique HTTP et TLS. Le DNS parce qu'une résolution à froid ajoute de la latence et qu'un cache périmé provoque des pannes qui semblent aléatoires. TCP parce que l'établissement d'une connexion coûte un aller-retour évitable. HTTP parce que sa sémantique détermine ce qu'il est sûr de réessayer. TLS parce que la poignée de main coûte cher et que la réutiliser constitue l'essentiel du gain.",
+  "La réutilisation des connexions est l'amélioration la moins chère disponible. Ouvrir une connexion par requête paie la poignée de main à chaque fois ; garder les connexions vivantes l'amortit sur plusieurs appels. La plupart des clients HTTP le permettent, tous ne l'activent pas par défaut, et un client créé à l'intérieur d'un gestionnaire de requête repart de zéro à chaque appel — une erreur facile à commettre et invisible sans mesure.",
+  "La taille des charges utiles compte plus qu'on ne le croit, car elle interagit avec tout le reste. La compression vaut généralement le coup pour des réponses riches en texte, rarement pour les petites, où son coût dépasse le gain de transfert. La discipline la plus utile reste simplement de ne pas renvoyer des champs que personne ne lit.",
+  "Donnez à chaque appel externe un budget de délai explicite, et faites en sorte que les budgets s'additionnent correctement. Un gestionnaire visant deux secondes ne peut pas enchaîner trois appels qui attendent chacun dix secondes. Sans échéance explicite, la valeur par défaut est presque toujours d'attendre beaucoup trop longtemps, ce qui transforme une dépendance lente en file de workers bloqués, puis en panne.",
+  "C'est sur les tentatives que du code bien intentionné provoque des incidents. Réessayer immédiatement transforme un service en difficulté en service submergé ; un délai exponentiel avec variation aléatoire répartit la charge au lieu de la synchroniser. Ne réessayez que ce qui peut l'être : une lecture l'est naturellement, une écriture ne l'est que si vous l'avez rendue idempotente avec une clé que le serveur utilise pour reconnaître un doublon.",
+  "Instrumentez les temps dont vous aurez besoin avant d'en avoir besoin. Enregistrez DNS, connexion, premier octet et durée totale pour les appels sortants, avec le nom de la dépendance. La première fois qu'une dépendance se dégrade, cela transforme un vague signalement de lenteur en réponse évidente, pour un coût quasi nul si c'est préparé.",
+  "Rien de tout cela n'est ésotérique, et c'est précisément pourquoi cela distingue les ingénieurs. La qualité du modèle attire l'attention ; le comportement réseau est là où réside la fiabilité."
 ];
 
 const operatingSystemsSkillsContent = [
-  "Operating systems knowledge explains many production failures: memory pressure, process limits, file descriptor exhaustion, and scheduling contention.",
-  "Learn process and signal management so you can diagnose stuck workers and graceful shutdown issues.",
-  "Understand virtual memory and page behavior when running model inference workloads with high RAM demand.",
-  "Use system tools to inspect CPU, memory, disk, and open sockets before blaming your framework.",
-  "Service management with systemd or containers improves startup reliability and restart behavior.",
-  "OS literacy turns incidents into solvable engineering tasks instead of random outages."
+  "A surprising number of production failures that get blamed on a framework are operating system problems wearing a disguise. Memory pressure, process limits, file descriptor exhaustion, and scheduling contention account for a large share of incidents in services that run models, and none of them are visible from inside the application code where people look first.",
+  "Start with processes and signals, because that is where deployment failures concentrate. Understanding what happens when a container receives a termination signal explains why your service drops in-flight requests on every deploy, and why adding a graceful shutdown handler that stops accepting new work and finishes what it has fixes it. A worker that does not handle signals gets killed mid-request, every single release.",
+  "Virtual memory is the concept that matters most for inference workloads, because model weights are large and memory behaviour is counterintuitive. The resident size of a process is not the same as what it allocated, shared pages between workers are counted in ways that mislead, and a process killed by the out-of-memory killer leaves almost nothing in your application logs to explain itself. Knowing where the kernel records that decision saves hours.",
+  "File descriptors run out quietly and then all at once. Every socket, every open file, every connection to a database consumes one, and the default limit is lower than most people assume. A leak that takes days to manifest presents as a service that works fine and then refuses all connections, with an error that names the limit rather than the cause.",
+  "Learn to inspect the machine before blaming the framework. Look at CPU, memory, disk, and open sockets first — whether your process is actually saturating a core, whether it is swapping, whether connections are piling up in a waiting state. This takes two minutes and frequently ends the investigation, because the answer is usually visible from outside the process.",
+  "Service management is the difference between a service that recovers and one that stays down. Whether you use systemd or a container platform, what matters is the same: restart policy, startup ordering, health checks, and resource limits declared explicitly. A container with no memory limit will happily consume the host; one with a limit fails predictably, which is far easier to operate.",
+  "Set resource limits even when you think you do not need them. Unbounded is not a safe default, it is an unexamined one — it means the first workload to misbehave takes down everything sharing the machine, rather than just itself.",
+  "The reason this literacy pays is that it changes the category of the problem. Without it, an outage is an unexplained event you wait out. With it, it is a sequence of specific questions with specific answers, which is the entire difference between an engineer who is unblocked and one who is stuck."
+];
+
+const operatingSystemsSkillsContentFr = [
+  "Un nombre surprenant de pannes en production imputées à un framework sont en réalité des problèmes de système d'exploitation déguisés. Pression mémoire, limites de processus, épuisement des descripteurs de fichiers, contention d'ordonnancement : ils représentent une large part des incidents sur les services qui exécutent des modèles, et aucun n'est visible depuis le code applicatif, là où l'on regarde d'abord.",
+  "Commencez par les processus et les signaux, car c'est là que se concentrent les pannes de déploiement. Comprendre ce qui se passe quand un conteneur reçoit un signal d'arrêt explique pourquoi votre service perd les requêtes en cours à chaque déploiement, et pourquoi un arrêt gracieux — cesser d'accepter du travail, terminer ce qui est en cours — le corrige. Un worker qui n'écoute pas les signaux est tué en pleine requête, à chaque mise en production.",
+  "La mémoire virtuelle est la notion la plus importante pour l'inférence, car les poids d'un modèle sont volumineux et le comportement mémoire est contre-intuitif. La taille résidente d'un processus n'est pas ce qu'il a alloué, les pages partagées entre workers sont comptées de façon trompeuse, et un processus tué par le mécanisme de manque de mémoire ne laisse presque rien dans vos journaux applicatifs. Savoir où le noyau consigne cette décision fait gagner des heures.",
+  "Les descripteurs de fichiers s'épuisent silencieusement, puis d'un coup. Chaque socket, chaque fichier ouvert, chaque connexion à une base en consomme un, et la limite par défaut est plus basse qu'on ne le croit. Une fuite qui met des jours à se manifester se présente comme un service qui fonctionne bien puis refuse toute connexion, avec une erreur qui nomme la limite plutôt que la cause.",
+  "Apprenez à inspecter la machine avant d'accuser le framework. Regardez d'abord le CPU, la mémoire, le disque et les sockets ouverts : votre processus sature-t-il réellement un cœur, y a-t-il du swap, les connexions s'accumulent-elles en attente. Cela prend deux minutes et clôt souvent l'enquête, parce que la réponse est généralement visible de l'extérieur du processus.",
+  "La gestion de service fait la différence entre un service qui se rétablit et un service qui reste à terre. Que vous utilisiez systemd ou une plateforme de conteneurs, l'essentiel est identique : politique de redémarrage, ordre de démarrage, vérifications de santé et limites de ressources déclarées explicitement. Un conteneur sans limite mémoire consommera volontiers tout l'hôte ; un conteneur avec limite échoue de façon prévisible, ce qui est bien plus facile à exploiter.",
+  "Fixez des limites de ressources même quand vous croyez ne pas en avoir besoin. L'absence de limite n'est pas un défaut sûr, c'est un défaut non examiné : elle signifie que la première charge qui dérape emporte tout ce qui partage la machine, et pas seulement elle-même.",
+  "Si cette culture paie, c'est qu'elle change la nature du problème. Sans elle, une panne est un événement inexpliqué que l'on subit. Avec elle, c'est une suite de questions précises ayant des réponses précises — toute la différence entre un ingénieur débloqué et un ingénieur bloqué."
 ];
 
 const mlTestingPlaybookContent = [
@@ -787,7 +813,7 @@ export const csExpansionPosts: BlogPost[] = [
       fr: {
         title: "Bases reseau pour ingenieurs IA et backend",
         excerpt: "Les concepts reseau qui impactent directement latence API et fiabilite.",
-        content: networkingBasicsContent
+        content: networkingBasicsContentFr
       }
     },
     content: []
@@ -848,7 +874,7 @@ export const csExpansionPosts: BlogPost[] = [
       fr: {
         title: "Competences systeme essentielles pour builders IA",
         excerpt: "Connaissances OS pratiques pour debug, performance, et deploiements plus fiables.",
-        content: operatingSystemsSkillsContent
+        content: operatingSystemsSkillsContentFr
       }
     },
     content: []
