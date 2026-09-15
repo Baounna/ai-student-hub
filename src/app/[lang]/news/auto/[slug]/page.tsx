@@ -12,7 +12,7 @@ import { getAutoNews, getAutoNewsBySlug } from "@/content/auto-news";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -154,13 +154,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
       url: `/${params.lang}/news/auto/${params.slug}`,
       type: "article",
       publishedTime: item.publishedAt,
-      images: [{ url: "/images/post-deploy.svg", width: 1200, height: 675, alt: item.title }]
+      images: [{ url: ogImageUrl(item.title), width: 1200, height: 630, alt: item.title }]
     },
     twitter: {
       card: "summary_large_image",
       title: item.title,
       description: item.summary,
-      images: ["/images/post-deploy.svg"]
+      images: [ogImageUrl(item.title)]
     },
     alternates: localizedAlternates(`/news/auto/${params.slug}`, params.lang)
   };

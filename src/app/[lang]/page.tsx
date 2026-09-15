@@ -22,7 +22,7 @@ import {
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
@@ -50,13 +50,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       url: `/${params.lang}`,
       siteName: "AI and Cybersecurity News",
       type: "website",
-      images: [{ url: "/images/post-portfolio.svg", width: 1200, height: 675, alt: "AI and Cybersecurity News" }]
+      images: [{ url: ogImageUrl("AI and Cybersecurity News"), width: 1200, height: 630, alt: "AI and Cybersecurity News" }]
     },
     twitter: {
       card: "summary_large_image",
       title: dict.home.headline,
       description: dict.home.subheadline,
-      images: ["/images/post-portfolio.svg"]
+      images: [ogImageUrl("AI and Cybersecurity News")]
     },
     alternates: localizedAlternates("", params.lang)
   };

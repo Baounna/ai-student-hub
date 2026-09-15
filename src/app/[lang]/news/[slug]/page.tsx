@@ -14,7 +14,7 @@ import { getLocalizedPost, slugify } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -109,13 +109,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
       url: `/${params.lang}/news/${params.slug}`,
       type: "article",
       publishedTime: brief.publishedAt,
-      images: [{ url: "/images/post-deploy.svg", width: 1200, height: 675, alt: brief.title }]
+      images: [{ url: ogImageUrl(brief.title), width: 1200, height: 630, alt: brief.title }]
     },
     twitter: {
       card: "summary_large_image",
       title: brief.title,
       description: brief.summary,
-      images: ["/images/post-deploy.svg"]
+      images: [ogImageUrl(brief.title)]
     },
     alternates: localizedAlternates(`/news/${params.slug}`, params.lang)
   };

@@ -5,7 +5,7 @@ import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const params = await props.params;
@@ -21,13 +21,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       description: dict.about.subtitle,
       url: `/${params.lang}/about`,
       type: "website",
-      images: [{ url: "/images/post-portfolio.svg", width: 1200, height: 675, alt: dict.about.title }]
+      images: [{ url: ogImageUrl(dict.about.title), width: 1200, height: 630, alt: dict.about.title }]
     },
     twitter: {
       card: "summary_large_image",
       title: dict.nav.about,
       description: dict.about.subtitle,
-      images: ["/images/post-portfolio.svg"]
+      images: [ogImageUrl(dict.about.title)]
     },
     alternates: localizedAlternates("/about", params.lang)
   };

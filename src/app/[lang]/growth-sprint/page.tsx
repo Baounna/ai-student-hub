@@ -6,7 +6,7 @@ import { TrackableAnchor } from "@/components/trackable-anchor";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
 function isInternalGrowthSprintEnabled() {
@@ -46,13 +46,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       description,
       url: `/${params.lang}/growth-sprint`,
       type: "website",
-      images: [{ url: "/images/post-roadmap.svg", width: 1200, height: 675, alt: title }]
+      images: [{ url: ogImageUrl(title), width: 1200, height: 630, alt: title }]
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/images/post-roadmap.svg"]
+      images: [ogImageUrl(title)]
     },
     alternates: localizedAlternates("/growth-sprint", params.lang)
   };

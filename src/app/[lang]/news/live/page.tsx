@@ -4,7 +4,7 @@ import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { getLiveAiCsUpdates, getLiveNewsSources } from "@/lib/live-news";
 
 export const dynamic = "force-dynamic";
@@ -42,13 +42,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       description,
       url: `/${params.lang}/news/live`,
       type: "website",
-      images: [{ url: "/images/post-deploy.svg", width: 1200, height: 675, alt: title }]
+      images: [{ url: ogImageUrl(title), width: 1200, height: 630, alt: title }]
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/images/post-deploy.svg"]
+      images: [ogImageUrl(title)]
     },
     alternates: localizedAlternates("/news/live", params.lang)
   };

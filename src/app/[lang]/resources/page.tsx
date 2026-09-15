@@ -12,7 +12,7 @@ import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
@@ -29,13 +29,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       description: dict.resources.subtitle,
       url: `/${params.lang}/resources`,
       type: "website",
-      images: [{ url: "/images/post-deploy.svg", width: 1200, height: 675, alt: dict.resources.title }]
+      images: [{ url: ogImageUrl(dict.resources.title), width: 1200, height: 630, alt: dict.resources.title }]
     },
     twitter: {
       card: "summary_large_image",
       title: dict.resources.title,
       description: dict.resources.subtitle,
-      images: ["/images/post-deploy.svg"]
+      images: [ogImageUrl(dict.resources.title)]
     },
     alternates: localizedAlternates("/resources", params.lang)
   };

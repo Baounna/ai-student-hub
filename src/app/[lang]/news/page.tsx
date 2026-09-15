@@ -9,7 +9,7 @@ import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getLiveAiCsUpdates } from "@/lib/live-news";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { Provenance } from "@/components/provenance";
 
 export const revalidate = 1800;
@@ -48,13 +48,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       description: dict.news.subtitle,
       url: `/${params.lang}/news`,
       type: "website",
-      images: [{ url: "/images/post-deploy.svg", width: 1200, height: 675, alt: dict.news.title }]
+      images: [{ url: ogImageUrl(dict.news.title), width: 1200, height: 630, alt: dict.news.title }]
     },
     twitter: {
       card: "summary_large_image",
       title: dict.news.title,
       description: dict.news.subtitle,
-      images: ["/images/post-deploy.svg"]
+      images: [ogImageUrl(dict.news.title)]
     },
     alternates: localizedAlternates("/news", params.lang)
   };

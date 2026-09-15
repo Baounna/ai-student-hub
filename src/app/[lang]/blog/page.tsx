@@ -15,7 +15,7 @@ import {
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { sanitizeSearchQuery } from "@/lib/input";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -45,13 +45,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       description: dict.blog.subtitle,
       url: `/${params.lang}/blog`,
       type: "website",
-      images: [{ url: "/images/post-roadmap.svg", width: 1200, height: 675, alt: dict.blog.title }]
+      images: [{ url: ogImageUrl(dict.blog.title), width: 1200, height: 630, alt: dict.blog.title }]
     },
     twitter: {
       card: "summary_large_image",
       title: dict.blog.title,
       description: dict.blog.subtitle,
-      images: ["/images/post-roadmap.svg"]
+      images: [ogImageUrl(dict.blog.title)]
     },
     alternates: localizedAlternates("/blog", params.lang)
   };

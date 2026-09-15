@@ -12,7 +12,7 @@ import { comparisons, recommendedTools, studentStudyTools } from "@/content/post
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { sanitizeSearchQuery } from "@/lib/input";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -46,13 +46,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       description,
       url: `/${params.lang}/compare`,
       type: "website",
-      images: [{ url: "/images/post-deploy.svg", width: 1200, height: 675, alt: title }]
+      images: [{ url: ogImageUrl(title), width: 1200, height: 630, alt: title }]
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/images/post-deploy.svg"]
+      images: [ogImageUrl(title)]
     },
     alternates: localizedAlternates("/compare", params.lang)
   };

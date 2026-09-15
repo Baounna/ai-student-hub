@@ -13,7 +13,7 @@ import { TrackableAnchor } from "@/components/trackable-anchor";
 import { comparisons, getComparisonBySlug } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 
 function getEvidenceSource(toolName: string, locale: Locale) {
@@ -65,13 +65,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
       description,
       url: `/${params.lang}/compare/${params.slug}`,
       type: "article",
-      images: [{ url: "/images/post-deploy.svg", width: 1200, height: 675, alt: comparison.title }]
+      images: [{ url: ogImageUrl(comparison.title), width: 1200, height: 630, alt: comparison.title }]
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/images/post-deploy.svg"]
+      images: [ogImageUrl(comparison.title)]
     },
     alternates: localizedAlternates(`/compare/${params.slug}`, params.lang)
   };

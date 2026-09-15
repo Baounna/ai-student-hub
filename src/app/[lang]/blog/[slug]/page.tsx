@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { headers } from "next/headers";
@@ -79,13 +80,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
       url: `/${params.lang}/blog/${params.slug}`,
       type: "article",
       publishedTime: post.publishedAt,
-      images: [{ url: post.coverImage, width: 1200, height: 675, alt: post.title }]
+      images: [{ url: ogImageUrl(post.title, post.category), width: 1200, height: 630, alt: post.title }]
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
-      images: [post.coverImage]
+      images: [ogImageUrl(post.title, post.category)]
     },
     alternates: localizedAlternates(`/blog/${params.slug}`, params.lang)
   };

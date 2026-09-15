@@ -131,3 +131,17 @@ function uniqueKeywords(values: string[]) {
 
   return cleaned.slice(0, 24);
 }
+
+/**
+ * URL of the generated PNG social preview for a page.
+ *
+ * og:image previously pointed at one of three static SVGs. No major platform
+ * renders SVG in a link preview, so every shared link appeared blank — and the
+ * three files meant every article would have looked identical anyway. This
+ * returns a per-page PNG carrying the page's own headline.
+ */
+export function ogImageUrl(title: string, kicker = "") {
+  const params = new URLSearchParams({ title });
+  if (kicker) params.set("kicker", kicker);
+  return `/api/og?${params.toString()}`;
+}
