@@ -1,61 +1,20 @@
-type OAuthMode = "enable" | "disable";
 type EmailProvider = "none" | "convertkit";
 type AnalyticsMode = "none" | "ga4";
-type EmailAuthMode = "oauth_only" | "insecure_demo";
-type AuthFlowMode = "credentials" | "passwordless";
+
+// The OAuth, credentials and email-auth switches that used to live here were
+// removed with the account system they configured. They were not harmless dead
+// code: they kept telling anyone reading the config to supply OAuth provider
+// keys and a Supabase service-role key, which is a high-privilege secret, for
+// routes that no longer exist. The safest secret is the one nobody was asked to
+// create.
 
 function normalize(value: string | undefined) {
   return (value || "").trim().toLowerCase();
 }
 
-function normalizeBoolean(value: string | undefined) {
-  const normalized = normalize(value);
-  if (!normalized) return null;
-  if (["1", "true", "yes", "on", "enable", "enabled"].includes(normalized)) return true;
-  if (["0", "false", "no", "off", "disable", "disabled"].includes(normalized)) return false;
-  return null;
-}
-
-export function getOAuthMode(): OAuthMode {
-  const toggle = normalizeBoolean(process.env.ENABLE_OAUTH);
-  if (toggle !== null) return toggle ? "enable" : "disable";
-
-  const value = normalize(process.env.OAUTH_MODE);
-  return value === "disable" ? "disable" : "enable";
-}
-
-export function isOAuthEnabled() {
-  return getOAuthMode() === "enable";
-}
-
 export function getEmailProvider(): EmailProvider {
   const value = normalize(process.env.EMAIL_PROVIDER);
   return value === "convertkit" ? "convertkit" : "none";
-}
-
-export function getEmailAuthMode(): EmailAuthMode {
-  const value = normalize(process.env.EMAIL_AUTH_MODE);
-  return value === "insecure_demo" ? "insecure_demo" : "oauth_only";
-}
-
-export function getAuthFlowMode(): AuthFlowMode {
-  const value = normalize(process.env.AUTH_FLOW_MODE);
-  return value === "passwordless" ? "passwordless" : "credentials";
-}
-
-export function isCredentialsAuthEnabled() {
-  return getAuthFlowMode() === "credentials";
-}
-
-export function isInsecureEmailAuthAllowed() {
-  // Never allow insecure email-auth sessions in production unless explicitly enabled.
-  if (process.env.NODE_ENV === "production") {
-    return getEmailAuthMode() === "insecure_demo";
-  }
-
-  // Local development can keep fast iteration by default.
-  if (!process.env.EMAIL_AUTH_MODE?.trim()) return true;
-  return getEmailAuthMode() === "insecure_demo";
 }
 
 export function getAnalyticsMode(): AnalyticsMode {

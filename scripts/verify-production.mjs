@@ -70,14 +70,6 @@ function boolish(value) {
   return ["1", "true", "yes"].includes((value || "").trim().toLowerCase());
 }
 
-function parseBoolean(value) {
-  const normalized = (value || "").trim().toLowerCase();
-  if (!normalized) return null;
-  if (["1", "true", "yes", "on", "enable", "enabled"].includes(normalized)) return true;
-  if (["0", "false", "no", "off", "disable", "disabled"].includes(normalized)) return false;
-  return null;
-}
-
 function printCheck(type, message) {
   const icon = type === "ERROR" ? "✖" : type === "WARN" ? "▲" : "✔";
   console.log(`${icon} [${type}] ${message}`);
@@ -171,88 +163,10 @@ if (!isUrl(checkout)) {
   ok("Product checkout URL set.");
 }
 
-const enableOAuth = parseBoolean(env.ENABLE_OAUTH);
-if ((env.ENABLE_OAUTH || "").trim() && enableOAuth === null) {
-  warn("ENABLE_OAUTH is set but invalid. Use true/false.");
-}
-
-const oauthModeByLegacyEnv = ((env.OAUTH_MODE || "disable").trim().toLowerCase() || "disable");
-if (enableOAuth !== null && (env.OAUTH_MODE || "").trim()) {
-  const toggleMode = enableOAuth ? "enable" : "disable";
-  if (toggleMode !== oauthModeByLegacyEnv) {
-    warn("ENABLE_OAUTH overrides OAUTH_MODE. Keep only one to avoid confusion.");
-  }
-}
-const oauthMode = enableOAuth === null ? oauthModeByLegacyEnv : enableOAuth ? "enable" : "disable";
-const emailAuthMode = ((env.EMAIL_AUTH_MODE || "oauth_only").trim().toLowerCase() || "oauth_only");
-const authFlowMode = ((env.AUTH_FLOW_MODE || "credentials").trim().toLowerCase() || "credentials");
-const credentialsBackendRaw = ((env.AUTH_CREDENTIALS_BACKEND || "").trim().toLowerCase() || "");
-const hasSupabaseCredentials = Boolean((env.SUPABASE_URL || "").trim() && (env.SUPABASE_SERVICE_ROLE_KEY || "").trim());
-const credentialsBackend = credentialsBackendRaw === "supabase" || (!credentialsBackendRaw && hasSupabaseCredentials) ? "supabase" : "file";
-if (oauthMode === "enable") {
-  const providers = [
-    ["GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET", "Google"],
-    ["GITHUB_CLIENT_ID", "GITHUB_CLIENT_SECRET", "GitHub"],
-    ["LINKEDIN_CLIENT_ID", "LINKEDIN_CLIENT_SECRET", "LinkedIn"]
-  ];
-  const configuredCount = providers.filter(([idKey, secretKey]) => (env[idKey] || "").trim() && (env[secretKey] || "").trim()).length;
-  if (!configuredCount) {
-    error("OAuth enabled but no provider keys are fully configured.");
-  } else {
-    ok(`OAuth enabled with ${configuredCount} configured provider(s).`);
-  }
-} else {
-  ok("OAuth is disabled by config. Email/local access flow is active.");
-}
-
-if (emailAuthMode === "insecure_demo") {
-  warn("EMAIL_AUTH_MODE=insecure_demo enables unverified email session login. Avoid this in production.");
-}
-
-if (authFlowMode === "credentials") {
-  ok("Credentials auth flow is enabled.");
-  if (credentialsBackendRaw && !["file", "supabase"].includes(credentialsBackendRaw)) {
-    warn("AUTH_CREDENTIALS_BACKEND is invalid. Use file or supabase.");
-  }
-
-  if (credentialsBackend === "supabase") {
-    ok("Credentials backend: supabase.");
-    const supabaseUrl = (env.SUPABASE_URL || "").trim();
-    if (!isUrlWithOptions(supabaseUrl, { requireHttps: true, disallowLocalhost: true })) {
-      error("SUPABASE_URL must be a valid HTTPS non-localhost URL.");
-    } else {
-      ok("SUPABASE_URL is valid.");
-    }
-
-    const serviceRoleKey = (env.SUPABASE_SERVICE_ROLE_KEY || "").trim();
-    if (!serviceRoleKey || serviceRoleKey.length < 20) {
-      error("SUPABASE_SERVICE_ROLE_KEY is missing or too short.");
-    } else {
-      ok("SUPABASE_SERVICE_ROLE_KEY is set.");
-    }
-
-    const usersTable = (env.SUPABASE_USERS_TABLE || "auth_users").trim();
-    if (!/^[a-z0-9_]+$/i.test(usersTable)) {
-      error("SUPABASE_USERS_TABLE is invalid. Use only letters, numbers, underscore.");
-    } else {
-      ok(`Credentials table: ${usersTable}`);
-    }
-  } else {
-    ok("Credentials backend: file storage.");
-    const usersStorePath = (env.AUTH_USERS_STORE_PATH || "").trim();
-    if (!usersStorePath) {
-      warn("AUTH_USERS_STORE_PATH is not set. Default local file storage will be used.");
-    } else {
-      ok("Credentials user store path is set.");
-    }
-
-    if (boolish(env.VERCEL) && !usersStorePath) {
-      warn("Vercel runtime + default local credential store can be ephemeral. Set Supabase backend for production.");
-    }
-  }
-} else {
-  ok("Passwordless auth flow is enabled.");
-}
+// The OAuth / credentials / Supabase checks that stood here validated an
+// account system that no longer exists. They also printed reassuring lines
+// ("Credentials auth flow is enabled") about routes that were deleted, which is
+// worse than printing nothing.
 
 const emailProvider = ((env.EMAIL_PROVIDER || "none").trim().toLowerCase() || "none");
 if (emailProvider === "convertkit") {
@@ -297,7 +211,7 @@ if ((upstashUrl && !upstashToken) || (!upstashUrl && upstashToken)) {
     ok("Upstash distributed limiter config is set.");
   }
 } else {
-  warn("Upstash is not configured. Rate limits/session revocation will use single-instance memory fallback.");
+  warn("Upstash is not configured. Rate limits fall back to single-instance memory, so a limit of N may allow more than N across instances.");
 }
 
 const botMode = ((env.BOT_PROTECTION_MODE || "none").trim().toLowerCase() || "none");

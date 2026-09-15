@@ -239,7 +239,6 @@ Environment is grouped by:
 1. Create `.env.local` and set at minimum:
    - `NEXT_PUBLIC_SITE_URL=https://your-domain.com`
    - `SITE_URL=https://your-domain.com`
-   - `AUTH_SESSION_SECRET` (long random string)
    - `NEXT_PUBLIC_CONTACT_EMAIL`
    - `NEXT_PUBLIC_LEGAL_NAME`
    - `GOOGLE_SITE_VERIFICATION` (recommended)
@@ -759,10 +758,6 @@ Production startup also enforces runtime config validation (fails fast if critic
 2. Set production environment variables in your hosting provider:
    - `NEXT_PUBLIC_SITE_URL=https://your-domain.com`
    - `SITE_URL=https://your-domain.com`
-   - `AUTH_SESSION_SECRET` (32+ chars)
-   - `AUTH_FLOW_MODE=credentials|passwordless`
-   - `AUTH_CREDENTIALS_BACKEND=supabase|file`
-   - if supabase: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, optional `SUPABASE_USERS_TABLE`
    - if file backend: optional `AUTH_USERS_STORE_PATH`
    - `ENABLE_OAUTH=true|false` (or legacy `OAUTH_MODE`)
    - `EMAIL_PROVIDER=convertkit` + `CONVERTKIT_FORM_ID` + `CONVERTKIT_API_KEY`
