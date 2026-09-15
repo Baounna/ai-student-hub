@@ -7,7 +7,7 @@ import { getAllTags, getPostsByTag, slugify } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, coverImageUrl } from "@/lib/seo";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => getAllTags().map((tag) => ({ lang, tag: slugify(tag) })));
@@ -90,7 +90,7 @@ export default async function LocalizedTagPage(props: { params: Promise<{ lang: 
             <div className="grid gap-4 md:grid-cols-[250px,1fr] md:items-start">
               <Link href={`/${locale}/blog/${post.slug}`} className="relative overflow-hidden rounded-xl border border-[color:var(--border)]">
                 <Image
-                  src={post.coverImage}
+                  src={coverImageUrl(post.slug, post.category)}
                   alt={post.title}
                   width={1200}
                   height={675}

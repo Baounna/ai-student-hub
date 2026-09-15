@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ogImageUrl } from "@/lib/seo";
+import { ogImageUrl, coverImageUrl } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { headers } from "next/headers";
@@ -135,7 +135,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    image: [absoluteUrl(post.coverImage)],
+    image: [absoluteUrl(coverImageUrl(post.slug, post.category))],
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
     inLanguage: locale,
@@ -307,7 +307,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
         <div className="space-y-8">
           <div className="media-frame group relative aspect-[16/10] rounded-2xl">
             <Image
-              src={post.coverImage}
+              src={coverImageUrl(post.slug, post.category)}
               alt={post.title}
               width={1200}
               height={675}

@@ -22,7 +22,7 @@ import {
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 
@@ -475,7 +475,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
               <div className="grid gap-4 md:grid-cols-[240px,1fr]">
                 <div className="media-frame card-hover group aspect-[4/3]">
                   <Image
-                    src={featuredPost.coverImage}
+                    src={coverImageUrl(featuredPost.slug, featuredPost.category)}
                     alt={featuredPost.title}
                     width={1200}
                     height={675}

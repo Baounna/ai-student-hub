@@ -15,7 +15,7 @@ import {
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { sanitizeSearchQuery } from "@/lib/input";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -331,7 +331,7 @@ export default async function LocalizedBlogPage(
             </div>
             <div className="media-frame group relative aspect-[16/10] rounded-2xl">
               <Image
-                src={featuredPost.coverImage}
+                src={coverImageUrl(featuredPost.slug, featuredPost.category)}
                 alt={featuredPost.title}
                 width={1200}
                 height={675}
@@ -377,7 +377,7 @@ export default async function LocalizedBlogPage(
               <div className="grid gap-4 md:grid-cols-[260px,1fr] md:items-start">
                 <Link href={`/${locale}/blog/${post.slug}`} className="media-frame group relative aspect-[16/10] rounded-xl">
                   <Image
-                    src={post.coverImage}
+                    src={coverImageUrl(post.slug, post.category)}
                     alt={post.title}
                     width={1200}
                     height={675}

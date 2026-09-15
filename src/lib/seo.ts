@@ -145,3 +145,20 @@ export function ogImageUrl(title: string, kicker = "") {
   if (kicker) params.set("kicker", kicker);
   return `/api/og?${params.toString()}`;
 }
+
+/**
+ * URL of the generated cover image for an article.
+ *
+ * Eighteen posts shared three SVG files before this, so every card looked like
+ * one of three. The cover is composed from the slug, so each article keeps its
+ * own and new articles need nobody to draw anything.
+ */
+export function coverImageUrl(slug: string, topic = "") {
+  // Path segments, not a query string: next/image rejects a local source that
+  // carries one, which would 400 every card on the page.
+  const topicSegment = encodeURIComponent(
+    (topic || "general").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "general"
+  );
+  const slugSegment = encodeURIComponent(slug || "cover");
+  return `/api/cover/${topicSegment}/${slugSegment}`;
+}
