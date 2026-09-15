@@ -135,13 +135,6 @@ if ((env.BING_SITE_VERIFICATION || "").trim()) {
   ok("Bing site verification token is set.");
 }
 
-const authSecret = (env.AUTH_SESSION_SECRET || "").trim();
-if (!authSecret || authSecret === "change-this-in-production" || authSecret.length < 32) {
-  error("AUTH_SESSION_SECRET must be set with at least 32 characters.");
-} else {
-  ok("AUTH_SESSION_SECRET looks strong.");
-}
-
 const contactEmail = (env.NEXT_PUBLIC_CONTACT_EMAIL || "").trim();
 if (!isEmail(contactEmail)) {
   error("NEXT_PUBLIC_CONTACT_EMAIL is missing or invalid.");

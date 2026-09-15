@@ -101,6 +101,18 @@ function diversifyBySource(items: AutoNewsItem[], limit: number, maxPerSource = 
   return selected;
 }
 
+/**
+ * Summaries come from feeds we do not control, and cleaning scraped markup out
+ * of one can legitimately leave nothing behind. An empty string would become an
+ * empty meta description, which reads to a search engine as a page with nothing
+ * to say — worse than saying where the item came from.
+ */
+function summaryOrFallback(summary: string, title: string, source: string, locale: Locale) {
+  const text = (summary || "").trim();
+  if (text) return text;
+  return locale === "fr" ? `${title} — via ${source}.` : `${title} — reported by ${source}.`;
+}
+
 export function getAutoNewsUpdatedAt() {
   return payload.updatedAt;
 }
@@ -112,7 +124,12 @@ export function getAutoNews(locale: Locale, limit = 24) {
     .map((item) => ({
       ...item,
       title: item.locales[locale].title,
-      summary: item.locales[locale].summary
+      summary: summaryOrFallback(
+        item.locales[locale].summary,
+        item.locales[locale].title,
+        item.source,
+        locale
+      )
     })) satisfies LocalizedAutoNewsItem[];
 }
 
@@ -123,7 +140,12 @@ export function getAutoNewsBySlug(slug: string, locale: Locale): LocalizedAutoNe
   return {
     ...item,
     title: item.locales[locale].title,
-    summary: item.locales[locale].summary
+    summary: summaryOrFallback(
+      item.locales[locale].summary,
+      item.locales[locale].title,
+      item.source,
+      locale
+    )
   };
 }
 

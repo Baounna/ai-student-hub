@@ -15,6 +15,19 @@ import { sanitizeTextInput } from "@/lib/input";
  */
 export const runtime = "nodejs";
 
+/**
+ * These images are pure functions of the URL - the same path always renders the
+ * same PNG - but the route was serving "max-age=0, must-revalidate", so every
+ * hit re-rendered one from scratch and the CDN never kept a copy. Each social
+ * crawler, each card on the index, each refresh paid full rendering cost, and
+ * anyone could turn that into a bill by looping requests.
+ *
+ * Cache immutably and let the edge answer instead. Covers change only when the
+ * slug changes, which changes the URL.
+ */
+const IMAGE_CACHE_CONTROL = "public, max-age=31536000, s-maxage=31536000, immutable";
+
+
 const MAX_TITLE = 110;
 
 export async function GET(request: Request) {
@@ -93,6 +106,10 @@ export async function GET(request: Request) {
         </div>
       </div>
     ),
-    { width: 1200, height: 630 }
+    {
+      width: 1200,
+      height: 630,
+      headers: { "Cache-Control": IMAGE_CACHE_CONTROL }
+    }
   );
 }

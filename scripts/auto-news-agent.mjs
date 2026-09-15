@@ -221,11 +221,25 @@ function decodeEntities(value) {
 }
 
 function stripTags(value) {
-  return value
-    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+  return (
+    value
+      .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
+      // Summaries are sometimes cut out of a page with html.slice(), which lands
+      // at an arbitrary offset — so the text can begin *inside* a tag and the
+      // leftover attribute debris is not markup any tag regex will match. It was
+      // reaching readers verbatim: 'ne">14 September', 'body-3">Announcements'.
+      // Anything up to a quote followed by '>' is the tail of an opening tag.
+      .replace(/^[^<>]{0,300}?["']\s*>/, "")
+      // Same problem, when the slice begins inside the tag name ('div> <img ...').
+      .replace(/^[^\s<>"']{0,60}>/, "")
+      // Requiring a letter, '/' or '!' after '<' removes real tags while leaving
+      // comparisons alone, so "latency dropped from 5 > 2" survives intact.
+      .replace(/<\/?[a-zA-Z!][^>]*>/g, " ")
+      // A slice can end mid-tag too, leaving an opening bracket with no close.
+      .replace(/<\/?[a-zA-Z!][^>]*$/, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+  );
 }
 
 function cleanupText(value) {
@@ -882,4 +896,4 @@ if (isDirectRun) {
   });
 }
 
-export { parseRssItems, parseAtomItems, parseSourcePayload, isBlockedSource, FEED_SOURCES };
+export { parseRssItems, parseAtomItems, parseSourcePayload, isBlockedSource, cleanupText, FEED_SOURCES };

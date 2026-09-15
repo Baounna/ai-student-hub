@@ -41,7 +41,6 @@ function buildQualityEnv() {
 
   withDefault(env, "NEXT_PUBLIC_SITE_URL", "https://ai-student-hub-navy.vercel.app");
   withDefault(env, "SITE_URL", env.NEXT_PUBLIC_SITE_URL);
-  withDefault(env, "AUTH_SESSION_SECRET", "autopilot-session-secret-please-change-in-production-123456789");
   withDefault(env, "NEXT_PUBLIC_CONTACT_EMAIL", "bna.mohamed.511@gmail.com");
   withDefault(env, "NEXT_PUBLIC_LEGAL_NAME", "AI and Cybersecurity News");
   withDefault(env, "NEXT_PUBLIC_LINKEDIN_URL", "https://www.linkedin.com/company/ai-student-hub");

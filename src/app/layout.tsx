@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { getGa4MeasurementId, isGa4Enabled } from "@/lib/runtime-config";
 import { absoluteUrl, getSiteUrl } from "@/lib/site-url";
 import { assertProductionRuntimeConfig } from "@/lib/env-validation";
+import { jsonLd } from "@/lib/json-ld";
 import "./globals.css";
 
 // Self-hosted by next/font so every visitor gets the same typography.
@@ -159,12 +160,12 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         <script
           type="application/ld+json"
           nonce={nonce}
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          dangerouslySetInnerHTML={{ __html: jsonLd(organizationSchema) }}
         />
         <script
           type="application/ld+json"
           nonce={nonce}
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+          dangerouslySetInnerHTML={{ __html: jsonLd(websiteSchema) }}
         />
         <Script id="theme-init" strategy="beforeInteractive" nonce={nonce}>
           {`(() => {

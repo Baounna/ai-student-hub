@@ -1,0 +1,31 @@
+# Dependency updates were entirely manual, which is how this project ended up
+# with a lockfile that drifted far enough to break `npm ci` on every workflow
+# for eighty days. Weekly PRs keep that from happening silently again, and they
+# are the only automated route to a security patch for a transitive dependency.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      # One PR for routine bumps keeps the noise down; security fixes still get
+      # their own so they are never buried in a batch.
+      dev-dependencies:
+        dependency-type: development
+      production-minor-patch:
+        dependency-type: production
+        update-types: ["minor", "patch"]
+    commit-message:
+      prefix: "chore(deps)"
+
+  # The actions themselves are a supply-chain surface: they run in CI with the
+  # repository checked out.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "chore(ci)"

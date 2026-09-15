@@ -25,6 +25,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+import { jsonLd } from "@/lib/json-ld";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -277,7 +278,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
 
   return (
     <div className="page-shell max-w-6xl py-8 md:py-10">
-      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(websiteSchema) }} />
 
       <section className="wiki-panel overflow-hidden rounded-md">
         {/* The page's h1. It was a plain div, so the homepage — the page search

@@ -7,6 +7,12 @@ on:
     branches: [main]
   workflow_dispatch: {}
 
+# CI only reads the repository. The org default is already read-only, but that
+# is a setting someone can change in the UI; stating it here means the job keeps
+# the narrow token even if the default is widened later.
+permissions:
+  contents: read
+
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true

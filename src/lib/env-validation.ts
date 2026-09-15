@@ -1,4 +1,4 @@
-import { getAnalyticsMode, getEmailProvider, isCredentialsAuthEnabled } from "@/lib/runtime-config";
+import { getAnalyticsMode, getEmailProvider } from "@/lib/runtime-config";
 import { isValidEmail } from "@/lib/input";
 import { parseHttpUrl } from "@/lib/url";
 
@@ -13,10 +13,12 @@ function isHttpsProductionOrigin(value: string) {
   return !LOCAL_HOSTS.has(host) && !host.endsWith(".local");
 }
 
-function hasStrongSecret(value: string) {
-  return Boolean(value) && value.length >= 32 && value !== "change-this-in-production";
-}
-
+// The account system this file used to guard (sessions, Supabase-backed
+// credentials) was removed. Its variables were still *required* here, so the
+// build refused to start without a session secret that nothing could read —
+// which meant keeping a live secret in Vercel for a feature that no longer
+// exists. Fewer secrets in the project is the security win; deleting the check
+// is what makes deleting the secret possible.
 export function assertProductionRuntimeConfig() {
   if (validated) return;
   validated = true;
@@ -26,7 +28,6 @@ export function assertProductionRuntimeConfig() {
   const errors: string[] = [];
   const publicUrl = (process.env.NEXT_PUBLIC_SITE_URL || "").trim();
   const siteUrl = (process.env.SITE_URL || "").trim();
-  const secret = (process.env.AUTH_SESSION_SECRET || "").trim();
   const contactEmail = (process.env.NEXT_PUBLIC_CONTACT_EMAIL || "").trim();
   const legalName = (process.env.NEXT_PUBLIC_LEGAL_NAME || "").trim();
   const analyticsMode = getAnalyticsMode();
@@ -38,16 +39,9 @@ export function assertProductionRuntimeConfig() {
   const publicBotMode = (process.env.NEXT_PUBLIC_BOT_PROTECTION_MODE || "").trim().toLowerCase();
   const turnstileSecret = (process.env.TURNSTILE_SECRET_KEY || "").trim();
   const turnstileSiteKey = (process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "").trim();
-  const authBackend = (process.env.AUTH_CREDENTIALS_BACKEND || "").trim().toLowerCase();
-  const supabaseUrl = (process.env.SUPABASE_URL || "").trim();
-  const supabaseServiceRoleKey = (process.env.SUPABASE_SERVICE_ROLE_KEY || "").trim();
 
   if (!isHttpsProductionOrigin(publicUrl) || !isHttpsProductionOrigin(siteUrl)) {
     errors.push("SITE_URL and NEXT_PUBLIC_SITE_URL must be HTTPS, non-localhost origins.");
-  }
-
-  if (!hasStrongSecret(secret)) {
-    errors.push("AUTH_SESSION_SECRET must be set to a strong 32+ character value.");
   }
 
   if (!isValidEmail(contactEmail)) {
@@ -75,17 +69,6 @@ export function assertProductionRuntimeConfig() {
     }
     if (publicBotMode !== "turnstile") {
       errors.push("NEXT_PUBLIC_BOT_PROTECTION_MODE must be set to turnstile when BOT_PROTECTION_MODE=turnstile.");
-    }
-  }
-
-  if (isCredentialsAuthEnabled()) {
-    if (authBackend === "supabase") {
-      if (!isHttpsProductionOrigin(supabaseUrl)) {
-        errors.push("SUPABASE_URL must be a valid HTTPS non-localhost URL when AUTH_CREDENTIALS_BACKEND=supabase.");
-      }
-      if (!supabaseServiceRoleKey) {
-        errors.push("SUPABASE_SERVICE_ROLE_KEY is required when AUTH_CREDENTIALS_BACKEND=supabase.");
-      }
     }
   }
 

@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 // @ts-expect-error - plain .mjs agent script without type declarations
-import { parseRssItems, parseAtomItems, parseSourcePayload, isBlockedSource } from "../scripts/auto-news-agent.mjs";
+import { parseRssItems, parseAtomItems, parseSourcePayload, isBlockedSource, cleanupText } from "../scripts/auto-news-agent.mjs";
 
 const source = {
   name: "NVIDIA Developer Blog",
@@ -97,5 +97,31 @@ describe("isBlockedSource", () => {
     expect(isBlockedSource("arXiv cs.AI", "https://arxiv.org/abs/2606.23927")).toBe(true);
     expect(isBlockedSource("Some Feed", "https://arxiv.org/abs/2606.23927")).toBe(true);
     expect(isBlockedSource("Kubernetes Blog", "https://kubernetes.io/blog/post/")).toBe(false);
+  });
+});
+
+describe("cleanupText", () => {
+  // Summaries are cut out of pages with html.slice(), so a fragment can start
+  // in the middle of a tag. The old tag regex needed a matching "<" and so left
+  // the debris in place, and readers saw CSS class names in the news list.
+  it("drops attribute debris left by a slice that began inside a tag", () => {
+    expect(cleanupText('_KxYrHG__subject body-3">Announcements Previewing the Standard'))
+      .toBe("Announcements Previewing the Standard");
+    expect(cleanupText('ne">14 September 14 Sep <div class="col-span-full">rest'))
+      .toBe("14 September 14 Sep rest");
+    expect(cleanupText("div> <img alt=\"An updat")).toBe("");
+  });
+
+  it("removes a tag left unclosed by a slice that ended inside one", () => {
+    expect(cleanupText('Ends mid tag here <div class="unclosed')).toBe("Ends mid tag here");
+  });
+
+  it("keeps comparisons, which are prose and not markup", () => {
+    expect(cleanupText("Latency dropped from 5 > 2 seconds.")).toBe("Latency dropped from 5 > 2 seconds.");
+    expect(cleanupText("The condition a < b held for all n.")).toBe("The condition a < b held for all n.");
+  });
+
+  it("still unwraps CDATA and strips ordinary tags", () => {
+    expect(cleanupText("<![CDATA[<p>Hello <b>world</b></p>]]>")).toBe("Hello world");
   });
 });

@@ -4,8 +4,31 @@ const FALLBACK_IP = "0.0.0.0";
 const IPV4_SEGMENT = "(?:25[0-5]|2[0-4]\\d|1?\\d?\\d)";
 const IPV4_REGEX = new RegExp(`^${IPV4_SEGMENT}(?:\\.${IPV4_SEGMENT}){3}$`);
 const MAX_HEADER_IP_LENGTH = 64;
-const TRUSTED_EDGE_IP_HEADERS = ["cf-connecting-ip", "x-vercel-forwarded-for", "x-real-ip"] as const;
+// Only headers the hosting edge sets ITSELF may be trusted. Vercel overwrites
+// x-vercel-forwarded-for and x-real-ip on every request, so a client cannot
+// forge them — verified against production by rotating the header and watching
+// the rate limiter still count the real caller.
+//
+// cf-connecting-ip used to lead this list, and that was a live rate-limit
+// bypass: this site is on Vercel, not behind Cloudflare, so nothing sets or
+// strips that header and the attacker's own value was passed straight through
+// to us. Sending a fresh cf-connecting-ip on each request reset every per-IP
+// counter to zero. Trust it again only when Cloudflare genuinely sits in front,
+// by setting TRUSTED_CLIENT_IP_HEADER=cf-connecting-ip.
+const PLATFORM_IP_HEADERS = ["x-vercel-forwarded-for", "x-real-ip"] as const;
 const DEV_ONLY_IP_HEADERS = ["x-forwarded-for"] as const;
+
+/**
+ * An extra header to trust ahead of the platform ones.
+ *
+ * Deliberately opt-in: a proxy header is only trustworthy when a proxy you
+ * control is guaranteed to overwrite it, which is a deployment fact the code
+ * cannot detect on its own.
+ */
+function configuredIpHeader() {
+  const name = (process.env.TRUSTED_CLIENT_IP_HEADER || "").trim().toLowerCase();
+  return /^[a-z0-9-]{1,64}$/.test(name) ? name : "";
+}
 
 function normalizeIpCandidate(value: string | null | undefined) {
   const raw = (value || "").split(",")[0]?.trim() || "";
@@ -18,10 +41,14 @@ function normalizeIpCandidate(value: string | null | undefined) {
 }
 
 export function getClientIp(request: Request) {
-  const headerNames =
-    process.env.NODE_ENV === "production"
-      ? TRUSTED_EDGE_IP_HEADERS
-      : [...TRUSTED_EDGE_IP_HEADERS, ...DEV_ONLY_IP_HEADERS];
+  const configured = configuredIpHeader();
+  const headerNames = [
+    ...(configured ? [configured] : []),
+    ...PLATFORM_IP_HEADERS,
+    // x-forwarded-for is client-settable, so it is a convenience for local
+    // testing only and must never be consulted in production.
+    ...(process.env.NODE_ENV === "production" ? [] : DEV_ONLY_IP_HEADERS)
+  ];
   const candidates = headerNames.map((headerName) => request.headers.get(headerName));
 
   for (const candidate of candidates) {

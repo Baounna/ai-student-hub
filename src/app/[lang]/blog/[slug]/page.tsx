@@ -24,6 +24,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+import { jsonLd } from "@/lib/json-ld";
 import { ScrollCaptureCtaLazy } from "@/components/scroll-capture-cta-lazy";
 
 export function generateStaticParams() {
@@ -160,7 +161,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
   return (
     <article className="page-shell max-w-6xl py-10 md:py-12">
       <ReadingProgress />
-      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(articleSchema) }} />
       <Breadcrumbs
         items={[
           { label: "AI and Cybersecurity News", href: `/${locale}` },

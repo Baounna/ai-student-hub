@@ -101,6 +101,14 @@ function diversifyBySource(items: AutoToolItem[], limit: number, maxPerSource = 
   return selected;
 }
 
+/** Same reason as the news loader: a cleaned-empty summary must not become an
+ * empty meta description. */
+function summaryOrFallback(summary: string, title: string, source: string, locale: Locale) {
+  const text = (summary || "").trim();
+  if (text) return text;
+  return locale === "fr" ? `${title} — via ${source}.` : `${title} — reported by ${source}.`;
+}
+
 export function getAutoToolsUpdatedAt() {
   return payload.updatedAt;
 }
@@ -111,7 +119,12 @@ export function getAutoTools(locale: Locale, limit = 10) {
   return picked.map((item) => ({
     ...item,
     title: item.locales[locale].title,
-    summary: item.locales[locale].summary
+    summary: summaryOrFallback(
+      item.locales[locale].summary,
+      item.locales[locale].title,
+      item.source,
+      locale
+    )
   })) satisfies LocalizedAutoToolItem[];
 }
 

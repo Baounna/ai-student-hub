@@ -16,6 +16,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
+import { jsonLd } from "@/lib/json-ld";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -201,7 +202,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
   return (
     <article className="page-shell max-w-6xl py-10 md:py-12">
       <ReadingProgress />
-      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(articleSchema) }} />
       <Breadcrumbs
         items={[
           { label: "AI and Cybersecurity News", href: `/${locale}` },
