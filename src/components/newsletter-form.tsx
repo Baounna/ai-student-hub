@@ -50,7 +50,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [deliveryStatus, setDeliveryStatus] = useState<"sent" | "queued" | "failed" | null>(null);
+  const [deliveryStatus, setDeliveryStatus] = useState<"sent" | "queued" | "failed" | "unavailable" | null>(null);
   const sourceTag = normalizeSource(source, compact);
   const nextAction = getNextAction(sourceTag, locale);
 
@@ -79,7 +79,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       if (!response.ok) throw new Error("failed");
       const data = (await response.json()) as {
         forwarded?: boolean;
-        deliveryStatus?: "sent" | "queued" | "failed";
+        deliveryStatus?: "sent" | "queued" | "failed" | "unavailable";
       };
 
       setStatus("success");
@@ -150,7 +150,19 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       >
         {status === "loading" ? (locale === "fr" ? "Envoi..." : "Sending...") : ctaLabel}
       </button>
-      {status === "success" && (
+      {status === "success" && deliveryStatus === "unavailable" && (
+        <div className={`status-warning ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
+          <p>
+            {locale === "fr"
+              ? "La newsletter n'est pas encore ouverte aux inscriptions. Ton adresse n'a pas ete enregistree."
+              : "The newsletter is not open for signups yet, so your address was not saved."}
+          </p>
+          <a href={nextAction.href} className="do-link mt-1 inline-block">
+            {locale === "fr" ? "En attendant:" : "In the meantime:"} {nextAction.label}
+          </a>
+        </div>
+      )}
+      {status === "success" && deliveryStatus !== "unavailable" && (
         <div className={`status-success ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
           <p>
             {deliveryStatus === "sent"

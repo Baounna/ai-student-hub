@@ -9,15 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: [
           "/api/",
-          "/account",
-          "/en/account",
-          "/fr/account",
-          "/login",
-          "/register",
-          "/en/login",
-          "/fr/login",
-          "/en/register",
-          "/fr/register",
           "/growth-sprint",
           "/en/growth-sprint",
           "/fr/growth-sprint"

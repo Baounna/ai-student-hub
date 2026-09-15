@@ -12,9 +12,6 @@ function readText(relativePath) {
   return fs.readFileSync(path.join(ROOT, relativePath), "utf8");
 }
 
-function hasAll(text, values) {
-  return values.every((value) => text.includes(value));
-}
 
 function isHttpsNonLocal(value) {
   const raw = String(value || "").trim();
@@ -105,41 +102,11 @@ for (const headerKey of requiredHeaderKeys) {
   }
 }
 
-const cookieRoutes = [
-  "src/app/api/auth/credentials/login/route.ts",
-  "src/app/api/auth/credentials/register/route.ts",
-  "src/app/api/account-access/route.ts",
-  "src/app/api/auth/oauth/[provider]/callback/route.ts",
-  "src/app/api/auth/logout/route.ts"
-];
+// Session cookies were part of the account system, which was removed: it could
+// never work on a read-only serverless filesystem and the site has no logged-in
+// features. Restore these checks alongside any future auth.
 
-for (const file of cookieRoutes) {
-  const text = readText(file);
-  const checks = [
-    ['httpOnly: true', "httpOnly flag"],
-    ['secure: process.env.NODE_ENV === "production"', "secure flag in production"],
-    ['sameSite: "lax"', "sameSite=lax"],
-    ["priority: \"high\"", "priority=high"]
-  ];
-
-  for (const [needle, label] of checks) {
-    if (text.includes(needle)) {
-      ok(`${path.basename(file)} has ${label}.`);
-    } else {
-      fail(`${file} is missing cookie ${label}.`);
-    }
-  }
-}
-
-const rateLimitedRoutes = [
-  "src/app/api/auth/credentials/login/route.ts",
-  "src/app/api/auth/credentials/register/route.ts",
-  "src/app/api/newsletter/route.ts",
-  "src/app/api/account-access/route.ts",
-  "src/app/api/track/route.ts",
-  "src/app/api/auth/oauth/[provider]/route.ts",
-  "src/app/api/auth/oauth/[provider]/callback/route.ts"
-];
+const rateLimitedRoutes = ["src/app/api/newsletter/route.ts", "src/app/api/track/route.ts"];
 
 for (const routePath of rateLimitedRoutes) {
   const text = readText(routePath);
@@ -150,20 +117,7 @@ for (const routePath of rateLimitedRoutes) {
   }
 }
 
-const loginRouteText = readText("src/app/api/auth/credentials/login/route.ts");
-if (hasAll(loginRouteText, ["getLoginLockStatus", "recordFailedLoginAttempt", "clearFailedLoginAttempts"])) {
-  ok("Login lockout + progressive backoff helpers are wired.");
-} else {
-  fail("Login lockout/backoff logic is incomplete in credentials login route.");
-}
-
-const jsonPostRoutes = [
-  "src/app/api/auth/credentials/login/route.ts",
-  "src/app/api/auth/credentials/register/route.ts",
-  "src/app/api/newsletter/route.ts",
-  "src/app/api/account-access/route.ts",
-  "src/app/api/track/route.ts"
-];
+const jsonPostRoutes = ["src/app/api/newsletter/route.ts", "src/app/api/track/route.ts"];
 for (const routePath of jsonPostRoutes) {
   const text = readText(routePath);
   if (!text.includes("parseJsonBody<")) {
@@ -188,19 +142,8 @@ if (rateLimitLib.includes("UPSTASH_REDIS_REST_URL") && rateLimitLib.includes("UP
   fail("Distributed rate limiting env wiring is missing in src/lib/rate-limit.ts.");
 }
 
-const revocationLib = readText("src/lib/session-revocation.ts");
-if (revocationLib.includes("revokeSessionToken") && revocationLib.includes("isSessionTokenRevoked")) {
-  ok("Session revocation denylist utilities are present.");
-} else {
-  fail("Session revocation utilities are missing.");
-}
-
-const parseSessionText = readText("src/lib/auth-session.ts");
-if (parseSessionText.includes("isSessionTokenRevoked")) {
-  ok("Session parse path checks revocation denylist.");
-} else {
-  fail("Session parser is not checking token revocation.");
-}
+// Session revocation went with the account system. Nothing issues a session
+// token now, so there is no denylist to verify.
 
 const siteUrl = (process.env.SITE_URL || "").trim();
 const publicSiteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "").trim();

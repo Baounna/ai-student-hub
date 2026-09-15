@@ -6,7 +6,6 @@ import { siteConfig } from "@/config/site";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { NavTabLink } from "@/components/ui/nav-tab-link";
 import { MobileQuickNav } from "@/components/mobile-quick-nav";
-import { AuthLinks } from "@/components/ui/auth-links";
 import { HeaderSettings } from "@/components/ui/header-settings";
 import { HeaderSearchForm } from "@/components/ui/header-search-form";
 import { HeaderSearchShortcut } from "@/components/ui/header-search-shortcut";
@@ -70,7 +69,6 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
             <Link href={donateHref} className="utility-link">
               {locale === "fr" ? "Faire un don" : "Donate"}
             </Link>
-            <AuthLinks locale={locale} />
             <HeaderSettings locale={locale} compact />
           </div>
 

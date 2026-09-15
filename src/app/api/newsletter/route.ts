@@ -80,13 +80,31 @@ export async function POST(request: Request) {
       source
     });
     const emailForwarded = subscribeResult.ok && !subscribeResult.skipped;
-    const deliveryStatus = emailForwarded ? "sent" : subscribeResult.ok ? "queued" : "failed";
+
+    // With no email provider configured, subscribeConvertKit discards the
+    // address and reports ok. Saying "Subscription received" in that case tells
+    // the reader something untrue and loses them: report it as unavailable so
+    // the form can say the list is not open yet.
+    const providerUnavailable = Boolean(subscribeResult.skipped);
+    const deliveryStatus = emailForwarded
+      ? "sent"
+      : providerUnavailable
+        ? "unavailable"
+        : subscribeResult.ok
+          ? "queued"
+          : "failed";
+
     return NextResponse.json({
       ok: true,
       forwarded: emailForwarded,
+      stored: !providerUnavailable,
       deliveryStatus,
       emailDeliveryFailed: !subscribeResult.ok,
-      message: emailForwarded ? "Subscription confirmed. Check your inbox." : "Subscription received."
+      message: emailForwarded
+        ? "Subscription confirmed. Check your inbox."
+        : providerUnavailable
+          ? "The newsletter is not open for signups yet. Nothing was stored."
+          : "Subscription received."
     });
   } catch {
     return NextResponse.json({ ok: false, error: "Unexpected error" }, { status: 500 });
