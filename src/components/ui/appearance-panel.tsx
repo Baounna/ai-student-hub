@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   applyAppearancePanel,
   applyContentWidth,
@@ -13,6 +13,7 @@ import {
   type ThemePreference
 } from "@/lib/appearance";
 import type { Locale } from "@/i18n/config";
+import { useHasMounted, useStoredValue } from "@/lib/use-stored-value";
 
 type AppearancePanelProps = {
   locale: Locale;
@@ -27,41 +28,35 @@ function optionButtonClass(active: boolean) {
 }
 
 export function AppearancePanel({ locale }: AppearancePanelProps) {
-  const [mounted, setMounted] = useState(false);
-  const [panelState, setPanelState] = useState<AppearancePanelState>("visible");
-  const [theme, setTheme] = useState<ThemePreference>("auto");
-  const [textSize, setTextSize] = useState<TextSize>("medium");
-  const [contentWidth, setContentWidth] = useState<ContentWidth>("standard");
+  const mounted = useHasMounted();
+  // Storage owns these; reading them during render keeps this panel and the
+  // header settings in step without either copying the other's value.
+  const panelState = useStoredValue<AppearancePanelState>(
+    appearanceStorageKeys.appearancePanel,
+    (raw) => (raw === "hidden" ? "hidden" : "visible"),
+    "visible"
+  );
+  const theme = useStoredValue<ThemePreference>(
+    appearanceStorageKeys.themePreference,
+    (raw) => (raw === "auto" || raw === "light" || raw === "dark" ? raw : "auto"),
+    "auto"
+  );
+  const textSize = useStoredValue<TextSize>(
+    appearanceStorageKeys.textSize,
+    (raw) => (raw === "small" || raw === "large" ? raw : "medium"),
+    "medium"
+  );
+  const contentWidth = useStoredValue<ContentWidth>(
+    appearanceStorageKeys.contentWidth,
+    (raw) => (raw === "wide" ? "wide" : "standard"),
+    "standard"
+  );
 
+  // The pre-hydration script in layout.tsx already applies theme, text size and
+  // width from storage. Only the panel's own visibility is not covered there.
   useEffect(() => {
-    const storedThemePref = localStorage.getItem(appearanceStorageKeys.themePreference);
-    const storedTheme = localStorage.getItem(appearanceStorageKeys.theme);
-    const storedTextSize = localStorage.getItem(appearanceStorageKeys.textSize);
-    const storedWidth = localStorage.getItem(appearanceStorageKeys.contentWidth);
-    const storedPanelState = localStorage.getItem(appearanceStorageKeys.appearancePanel);
-
-    const nextTheme: ThemePreference =
-      storedThemePref === "auto" || storedThemePref === "light" || storedThemePref === "dark"
-        ? storedThemePref
-        : storedTheme === "dark"
-          ? "dark"
-          : "light";
-    const nextTextSize: TextSize =
-      storedTextSize === "small" || storedTextSize === "large" ? storedTextSize : "medium";
-    const nextWidth: ContentWidth = storedWidth === "wide" ? "wide" : "standard";
-    const nextPanelState: AppearancePanelState = storedPanelState === "hidden" ? "hidden" : "visible";
-
-    setPanelState(nextPanelState);
-    setTheme(nextTheme);
-    setTextSize(nextTextSize);
-    setContentWidth(nextWidth);
-
-    applyAppearancePanel(nextPanelState);
-    applyThemePreference(nextTheme);
-    applyTextSize(nextTextSize);
-    applyContentWidth(nextWidth);
-    setMounted(true);
-  }, []);
+    applyAppearancePanel(panelState);
+  }, [panelState]);
 
   const copy = {
     title: locale === "fr" ? "Apparence" : "Appearance",
@@ -87,7 +82,6 @@ export function AppearancePanel({ locale }: AppearancePanelProps) {
       <button
         type="button"
         onClick={() => {
-          setPanelState("visible");
           applyAppearancePanel("visible");
         }}
         className="inline-flex items-center gap-2 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface-strong)] px-3 py-2 text-xs font-semibold text-[color:var(--text)] shadow-lg backdrop-blur-xl"
@@ -105,7 +99,6 @@ export function AppearancePanel({ locale }: AppearancePanelProps) {
         <button
           type="button"
           onClick={() => {
-            setPanelState("hidden");
             applyAppearancePanel("hidden");
           }}
           className="rounded bg-[color:var(--surface)] px-2 py-0.5 text-[10px] text-[color:var(--muted)] hover:text-[color:var(--text)]"
@@ -123,10 +116,7 @@ export function AppearancePanel({ locale }: AppearancePanelProps) {
                 key={size}
                 type="button"
                 disabled={!mounted}
-                onClick={() => {
-                  setTextSize(size);
-                  applyTextSize(size);
-                }}
+                onClick={() => applyTextSize(size)}
                 className={optionButtonClass(textSize === size)}
               >
                 {size === "small" ? copy.small : size === "medium" ? copy.medium : copy.large}
@@ -143,10 +133,7 @@ export function AppearancePanel({ locale }: AppearancePanelProps) {
                 key={width}
                 type="button"
                 disabled={!mounted}
-                onClick={() => {
-                  setContentWidth(width);
-                  applyContentWidth(width);
-                }}
+                onClick={() => applyContentWidth(width)}
                 className={optionButtonClass(contentWidth === width)}
               >
                 {width === "standard" ? copy.standard : copy.wide}
@@ -163,10 +150,7 @@ export function AppearancePanel({ locale }: AppearancePanelProps) {
                 key={mode}
                 type="button"
                 disabled={!mounted}
-                onClick={() => {
-                  setTheme(mode);
-                  applyThemePreference(mode);
-                }}
+                onClick={() => applyThemePreference(mode)}
                 className={optionButtonClass(theme === mode)}
               >
                 {mode === "auto" ? copy.auto : mode === "dark" ? copy.dark : copy.light}
