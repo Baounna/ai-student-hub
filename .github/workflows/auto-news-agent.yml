@@ -49,3 +49,11 @@ jobs:
           git commit -m "chore(content): auto-update AI/CS news + tools feeds"
           git pull --rebase origin "${GITHUB_REF_NAME:-main}"
           git push
+
+      # Announce the new URLs to Bing, Yandex, Seznam and Naver. Google is not
+      # part of IndexNow and needs Search Console; see docs/OPERATIONS.md.
+      - name: Announce new content to search engines
+        continue-on-error: true
+        env:
+          INDEXNOW_SITE_URL: https://ai-student-hub-navy.vercel.app
+        run: npm run seo:indexnow

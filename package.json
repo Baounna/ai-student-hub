@@ -24,7 +24,8 @@
     "verify:production": "node scripts/verify-production.mjs",
     "verify:public-content": "node scripts/verify-public-content.mjs",
     "verify:security": "node scripts/verify-security.mjs",
-    "watchdog": "node scripts/watchdog.mjs"
+    "watchdog": "node scripts/watchdog.mjs",
+    "seo:indexnow": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.105.0",

@@ -312,6 +312,32 @@ npm run lint && npm run build
 
 ## Google Indexing Checklist (Production)
 
+### Getting indexed — current status and the one manual step
+
+Search engines fall into two groups here.
+
+**Bing, Yandex, Seznam, Naver — automated, already done.** The site uses
+IndexNow: a key file in `public/` proves ownership, and `npm run seo:indexnow`
+posts every live sitemap URL. It runs after each news update, so new articles
+are announced without anyone doing anything. No account required.
+
+**Google — needs you to sign in once.** Google only accepts URLs through Search
+Console, and verifying a property requires a human. It takes about ten minutes
+and no domain purchase; the `vercel.app` address works as a property.
+
+1. Open <https://search.google.com/search-console> and add a **URL prefix**
+   property for the production site URL.
+2. Choose **HTML tag** verification and copy the `content` value.
+3. In Vercel, set `GOOGLE_SITE_VERIFICATION` to that value for Production, then
+   redeploy. The tag is already wired into the app's metadata — the variable is
+   all that is missing.
+4. Click **Verify**, then submit `/sitemap.xml` under Sitemaps.
+5. Use **URL Inspection → Request indexing** on the ten best written guides.
+   Aggregated news pages are not worth requesting; original writing is.
+
+Until step 3 is done the site has zero indexed pages in Google, and nothing
+else in this file changes that.
+
 1. In Google Search Console, add your property (`https://your-domain.com`).
 2. Use the meta verification token:
    - set `GOOGLE_SITE_VERIFICATION` in environment variables.
