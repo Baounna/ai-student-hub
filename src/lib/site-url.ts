@@ -1,4 +1,8 @@
-const FALLBACK_SITE_URL = "https://aistudenthub.ai";
+// Must be a host that actually resolves. This is what canonical URLs, the
+// sitemap and every og:image fall back to when the env var is missing, so a
+// domain nobody owns yet would quietly point search engines at NXDOMAIN.
+// Change this the day the real domain is bought, not before.
+const FALLBACK_SITE_URL = "https://ai-student-hub-navy.vercel.app";
 const LOCAL_HOSTS = new Set(["localhost", "127.0.0.1", "::1"]);
 
 function normalize(url: string) {

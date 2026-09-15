@@ -39,15 +39,15 @@ function withDefault(target, key, value) {
 function buildQualityEnv() {
   const env = { ...process.env };
 
-  withDefault(env, "NEXT_PUBLIC_SITE_URL", "https://aistudenthub.ai");
+  withDefault(env, "NEXT_PUBLIC_SITE_URL", "https://ai-student-hub-navy.vercel.app");
   withDefault(env, "SITE_URL", env.NEXT_PUBLIC_SITE_URL);
   withDefault(env, "AUTH_SESSION_SECRET", "autopilot-session-secret-please-change-in-production-123456789");
-  withDefault(env, "NEXT_PUBLIC_CONTACT_EMAIL", "hello@aistudenthub.ai");
+  withDefault(env, "NEXT_PUBLIC_CONTACT_EMAIL", "bna.mohamed.511@gmail.com");
   withDefault(env, "NEXT_PUBLIC_LEGAL_NAME", "AI and Cybersecurity News");
   withDefault(env, "NEXT_PUBLIC_LINKEDIN_URL", "https://www.linkedin.com/company/ai-student-hub");
-  withDefault(env, "NEXT_PUBLIC_LEAD_MAGNET_URL_EN", "https://aistudenthub.ai/en#newsletter");
-  withDefault(env, "NEXT_PUBLIC_LEAD_MAGNET_URL_FR", "https://aistudenthub.ai/fr#newsletter");
-  withDefault(env, "NEXT_PUBLIC_PRODUCT_CHECKOUT_URL", "https://aistudenthub.ai/en/product/ai-career-guide");
+  withDefault(env, "NEXT_PUBLIC_LEAD_MAGNET_URL_EN", "https://ai-student-hub-navy.vercel.app/en#newsletter");
+  withDefault(env, "NEXT_PUBLIC_LEAD_MAGNET_URL_FR", "https://ai-student-hub-navy.vercel.app/fr#newsletter");
+  withDefault(env, "NEXT_PUBLIC_PRODUCT_CHECKOUT_URL", "https://ai-student-hub-navy.vercel.app/en/product/ai-career-guide");
   withDefault(env, "AFFILIATE_DISCLOSURE_TEXT_EN", "Some links may be affiliate links at no extra cost to you.");
   withDefault(env, "AFFILIATE_DISCLOSURE_TEXT_FR", "Certains liens peuvent etre des liens d'affiliation sans cout supplementaire.");
   withDefault(env, "ENABLE_INTERNAL_GROWTH_SPRINT", "false");

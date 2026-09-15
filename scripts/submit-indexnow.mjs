@@ -98,24 +98,56 @@ async function run() {
   }
 
   const body = JSON.stringify({ host: new URL(SITE).host, key, keyLocation, urlList: urls });
-  const { stdout: status } = await execFileAsync("curl", [
-    "-s", "-o", "/dev/null", "-w", "%{http_code}",
-    "-X", "POST", "https://api.indexnow.org/indexnow",
-    "-H", "Content-Type: application/json; charset=utf-8",
-    "--max-time", "45",
-    "-d", body
-  ], { maxBuffer: 24 * 1024 * 1024 });
 
-  const code = status.trim();
+  // Submit to each engine directly rather than relying on the shared aggregator.
+  // api.indexnow.org is supposed to fan out to all participants, but it rate
+  // limits hard and answers 403 when it does — an identical payload that Bing
+  // accepted with 200 was refused by the aggregator minutes earlier. Posting to
+  // the engines as well means one endpoint having a bad day no longer means the
+  // batch went nowhere.
+  const endpoints = [
+    { name: "Bing", url: "https://www.bing.com/indexnow" },
+    { name: "Yandex", url: "https://yandex.com/indexnow" },
+    { name: "IndexNow (all engines)", url: "https://api.indexnow.org/indexnow" }
+  ];
+
+  console.log(`Submitting ${urls.length} URLs.`);
   console.log("--------------------------------");
-  // 200 accepted, 202 accepted pending key validation.
-  if (code === "200" || code === "202") {
-    console.log(`Submitted ${urls.length} URLs. HTTP ${code}.`);
+
+  let accepted = 0;
+  for (const endpoint of endpoints) {
+    let code = "000";
+    try {
+      const { stdout } = await execFileAsync("curl", [
+        "-s", "-o", "/dev/null", "-w", "%{http_code}",
+        "-X", "POST", endpoint.url,
+        "-H", "Content-Type: application/json; charset=utf-8",
+        "--max-time", "60",
+        "-d", body
+      ], { maxBuffer: 24 * 1024 * 1024 });
+      code = stdout.trim();
+    } catch {
+      code = "000";
+    }
+
+    // 200 accepted, 202 accepted pending key validation.
+    if (code === "200" || code === "202") {
+      accepted += 1;
+      console.log(`  ${endpoint.name}: accepted (HTTP ${code})`);
+    } else {
+      // 403 is usually throttling, 422 that the URLs do not match the key's host.
+      console.log(`  ${endpoint.name}: HTTP ${code}`);
+    }
+  }
+
+  console.log("--------------------------------");
+  if (accepted > 0) {
+    // One acceptance is enough: participating engines share submissions.
+    console.log(`Accepted by ${accepted} of ${endpoints.length} endpoints.`);
     return;
   }
 
-  // 422 usually means the URLs do not match the host that owns the key.
-  console.log(`Submission rejected with HTTP ${code}.`);
+  console.log("No endpoint accepted the submission.");
   process.exitCode = 1;
 }
 

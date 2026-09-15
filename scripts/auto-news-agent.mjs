@@ -573,7 +573,7 @@ async function fetchSource(source) {
     const response = await fetch(source.href, {
       signal: AbortSignal.timeout(TIMEOUT_MS),
       headers: {
-        "user-agent": "AICybersecurityNewsBot/1.0 (+https://aistudenthub.ai)"
+        "user-agent": "AICybersecurityNewsBot/1.0 (+https://ai-student-hub-navy.vercel.app)"
       }
     });
 

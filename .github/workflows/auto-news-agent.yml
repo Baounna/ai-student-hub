@@ -43,12 +43,20 @@ jobs:
             exit 0
           fi
 
-          git config user.name "NexaPulse Bot"
-          git config user.email "nexapulse-bot@users.noreply.github.com"
+          git config user.name "AI Student Hub Bot"
+          git config user.email "ai-student-hub-bot@users.noreply.github.com"
           git add src/content/auto-news.json src/content/auto-tools.json
           git commit -m "chore(content): auto-update AI/CS news + tools feeds"
           git pull --rebase origin "${GITHUB_REF_NAME:-main}"
           git push
+
+      # The submitter reads the sitemap from the live site, so it has to run
+      # after Vercel has built the commit we just pushed. Without this wait it
+      # reads the previous build and today's articles wait a day to be
+      # announced. Three minutes covers a normal build; the step is
+      # continue-on-error, so a slow deploy costs us nothing worse than that.
+      - name: Wait for the deploy to go live
+        run: sleep 180
 
       # Announce the new URLs to Bing, Yandex, Seznam and Naver. Google is not
       # part of IndexNow and needs Search Console; see docs/OPERATIONS.md.
