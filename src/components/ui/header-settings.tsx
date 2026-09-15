@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Locale } from "@/i18n/config";
+import { useStoredValue } from "@/lib/use-stored-value";
 import {
   applyContentWidth,
   applyTextSize,
@@ -41,9 +42,24 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
   const searchParams = useSearchParams();
   const rootRef = useRef<HTMLDivElement | null>(null);
   const [open, setOpen] = useState(false);
-  const [theme, setTheme] = useState<ThemePreference>("auto");
-  const [textSize, setTextSize] = useState<TextSize>("medium");
-  const [width, setWidth] = useState<ContentWidth>("standard");
+  // Read straight from storage instead of copying it into state on mount:
+  // one render instead of two, and the panel follows changes made anywhere
+  // else — including another tab.
+  const theme = useStoredValue<ThemePreference>(
+    appearanceStorageKeys.themePreference,
+    (raw) => (raw === "auto" || raw === "light" || raw === "dark" ? raw : "auto"),
+    "auto"
+  );
+  const textSize = useStoredValue<TextSize>(
+    appearanceStorageKeys.textSize,
+    (raw) => (raw === "small" || raw === "large" ? raw : "medium"),
+    "medium"
+  );
+  const width = useStoredValue<ContentWidth>(
+    appearanceStorageKeys.contentWidth,
+    (raw) => (raw === "wide" ? "wide" : "standard"),
+    "standard"
+  );
 
   const t = {
     title: locale === "fr" ? "Parametres" : "Settings",
@@ -59,22 +75,6 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
     large: locale === "fr" ? "Grand" : "Large",
     wide: locale === "fr" ? "Large" : "Wide"
   };
-
-  useEffect(() => {
-    const storedThemePref = localStorage.getItem(appearanceStorageKeys.themePreference);
-    const storedText = localStorage.getItem(appearanceStorageKeys.textSize);
-    const storedWidth = localStorage.getItem(appearanceStorageKeys.contentWidth);
-
-    if (storedThemePref === "auto" || storedThemePref === "light" || storedThemePref === "dark") {
-      setTheme(storedThemePref);
-    }
-    if (storedText === "small" || storedText === "medium" || storedText === "large") {
-      setTextSize(storedText);
-    }
-    if (storedWidth === "standard" || storedWidth === "wide") {
-      setWidth(storedWidth);
-    }
-  }, []);
 
   useEffect(() => {
     function onDown(event: PointerEvent) {
@@ -150,10 +150,7 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
                     key={mode}
                     type="button"
                     className={optionClass(theme === mode)}
-                    onClick={() => {
-                      setTheme(mode);
-                      applyThemePreference(mode);
-                    }}
+                    onClick={() => applyThemePreference(mode)}
                   >
                     {mode === "auto" ? t.auto : mode === "dark" ? t.dark : t.light}
                   </button>
@@ -169,10 +166,7 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
                     key={size}
                     type="button"
                     className={optionClass(textSize === size)}
-                    onClick={() => {
-                      setTextSize(size);
-                      applyTextSize(size);
-                    }}
+                    onClick={() => applyTextSize(size)}
                   >
                     {size === "small" ? t.small : size === "medium" ? t.standard : t.large}
                   </button>
@@ -188,10 +182,7 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
                     key={currentWidth}
                     type="button"
                     className={optionClass(width === currentWidth)}
-                    onClick={() => {
-                      setWidth(currentWidth);
-                      applyContentWidth(currentWidth);
-                    }}
+                    onClick={() => applyContentWidth(currentWidth)}
                   >
                     {currentWidth === "standard" ? t.standard : t.wide}
                   </button>
