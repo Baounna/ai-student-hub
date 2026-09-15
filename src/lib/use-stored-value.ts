@@ -67,3 +67,19 @@ export function useHasMounted(): boolean {
     () => false
   );
 }
+
+/**
+ * Write a localStorage value and tell subscribers in this tab about it.
+ *
+ * Pairs with useStoredValue. A bare localStorage.setItem is invisible to
+ * anything reading through useSyncExternalStore, because `storage` only fires
+ * in other tabs — so a dismissed banner would not disappear until reload.
+ */
+export function setStoredValue(key: string, value: string) {
+  try {
+    window.localStorage.setItem(key, value);
+    window.dispatchEvent(new Event(APPEARANCE_CHANGE_EVENT));
+  } catch {
+    // Storage blocked. The caller's own state still updates for this view.
+  }
+}

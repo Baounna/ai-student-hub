@@ -3,20 +3,19 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
+import { setStoredValue, useStoredValue } from "@/lib/use-stored-value";
 import { siteConfig } from "@/config/site";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 
 export function ScrollCaptureCta({ locale }: { locale: Locale }) {
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
   const [visible, setVisible] = useState(false);
-  const [dismissed, setDismissed] = useState(false);
+  // Read during render, so the banner is already gone on the first paint
+  // for someone who dismissed it earlier.
+  const dismissed = useStoredValue("scroll_capture_dismissed", (raw) => raw === "1", false);
 
   useEffect(() => {
-    const isDismissed = localStorage.getItem("scroll_capture_dismissed") === "1";
-    if (isDismissed) {
-      setDismissed(true);
-      return;
-    }
+    if (dismissed) return;
 
     const onScroll = () => {
       if (window.innerWidth < 768) return;
@@ -33,7 +32,7 @@ export function ScrollCaptureCta({ locale }: { locale: Locale }) {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
     };
-  }, []);
+  }, [dismissed]);
 
   if (dismissed) return null;
 
@@ -69,8 +68,7 @@ export function ScrollCaptureCta({ locale }: { locale: Locale }) {
         <button
           type="button"
           onClick={() => {
-            localStorage.setItem("scroll_capture_dismissed", "1");
-            setDismissed(true);
+            setStoredValue("scroll_capture_dismissed", "1");
           }}
           className="mt-2 text-xs text-[color:var(--muted)] underline"
         >

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
+import { setStoredValue, useStoredValue } from "@/lib/use-stored-value";
 import { siteConfig } from "@/config/site";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
@@ -18,16 +19,14 @@ export function StickyToolsCta({ locale, source }: StickyToolsCtaProps) {
   const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
   const hasCheckout = Boolean(checkoutUrl);
 
+  const storageKey = `sticky_tools_cta_dismissed_${source}_${locale}`;
   const [showMobile, setShowMobile] = useState(false);
-  const [dismissedMobile, setDismissedMobile] = useState(false);
+  // Read during render, so the banner is already gone on the first paint
+  // for someone who dismissed it earlier.
+  const dismissedMobile = useStoredValue(storageKey, (raw) => raw === "1", false);
 
   useEffect(() => {
-    const storageKey = `sticky_tools_cta_dismissed_${source}_${locale}`;
-    const dismissed = localStorage.getItem(storageKey) === "1";
-    if (dismissed) {
-      setDismissedMobile(true);
-      return;
-    }
+    if (dismissedMobile) return;
 
     const onScroll = () => {
       if (window.innerWidth >= 768) return;
@@ -41,7 +40,7 @@ export function StickyToolsCta({ locale, source }: StickyToolsCtaProps) {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
     };
-  }, [locale, source]);
+  }, [dismissedMobile]);
 
   return (
     <>
@@ -61,8 +60,7 @@ export function StickyToolsCta({ locale, source }: StickyToolsCtaProps) {
                 type="button"
                 onClick={() => {
                   const storageKey = `sticky_tools_cta_dismissed_${source}_${locale}`;
-                  localStorage.setItem(storageKey, "1");
-                  setDismissedMobile(true);
+                  setStoredValue(storageKey, "1");
                 }}
                 className="text-xs text-[color:var(--muted)] hover:text-[color:var(--text)]"
               >

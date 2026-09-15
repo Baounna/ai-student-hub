@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Locale } from "@/i18n/config";
+import { setStoredValue, useStoredValue } from "@/lib/use-stored-value";
 import { siteConfig } from "@/config/site";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 
@@ -11,15 +12,11 @@ export function StickyPostCta({ locale }: { locale: Locale }) {
   const storageKey = `sticky_post_cta_dismissed_${locale}`;
 
   const [visible, setVisible] = useState(false);
-  const [dismissed, setDismissed] = useState(false);
+  // Read during render, so the banner is already gone on the first paint
+  // for someone who dismissed it earlier.
+  const dismissed = useStoredValue(storageKey, (raw) => raw === "1", false);
 
   useEffect(() => {
-    const wasDismissed = localStorage.getItem(storageKey) === "1";
-    if (wasDismissed) {
-      setDismissed(true);
-      return;
-    }
-
     const onScroll = () => {
       if (window.innerWidth >= 768) return;
       setVisible(window.scrollY > 320);
@@ -32,7 +29,7 @@ export function StickyPostCta({ locale }: { locale: Locale }) {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
     };
-  }, [storageKey]);
+  }, [dismissed]);
 
   if (dismissed) return null;
 
@@ -51,8 +48,7 @@ export function StickyPostCta({ locale }: { locale: Locale }) {
           <button
             type="button"
             onClick={() => {
-              localStorage.setItem(storageKey, "1");
-              setDismissed(true);
+              setStoredValue(storageKey, "1");
             }}
             className="text-xs text-[color:var(--muted)] hover:text-[color:var(--text)]"
           >
