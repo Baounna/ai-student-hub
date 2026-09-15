@@ -42,6 +42,10 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|icon.svg|manifest.webmanifest|robots.txt|sitemap.xml|feed.xml).*)"]
+  // Skip anything that looks like a file. The previous list named each static
+  // asset individually, so a new one — the IndexNow key at /<key>.txt — fell
+  // through to the [lang] route and 404'd. Matching on "has an extension"
+  // covers every file in public/ without needing to be kept in step with it.
+  matcher: ["/((?!_next/static|_next/image|.*\\..*).*)"]
 };
 
