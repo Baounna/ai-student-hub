@@ -1037,7 +1037,14 @@ const basePosts: BlogPost[] = [
 const WORDS_PER_MINUTE = 220;
 
 function measureReadTime(post: BlogPost): string {
-  const words = post.content.reduce((sum, paragraph) => sum + paragraph.split(/\s+/).filter(Boolean).length, 0);
+  // Read from locales.en, not post.content: the top-level content field is
+  // still [] at this point and only gets filled from the locale block below.
+  // Measuring the empty array reported "1 min read" for every post, including
+  // the 1,200-word ones — an understatement replacing an overstatement.
+  const words = post.locales.en.content.reduce(
+    (sum, paragraph) => sum + paragraph.split(/\s+/).filter(Boolean).length,
+    0
+  );
   const minutes = Math.max(1, Math.round(words / WORDS_PER_MINUTE));
   return `${minutes} min read`;
 }
