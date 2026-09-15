@@ -1,24 +1,44 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T21:48:07.802Z",
+  "updatedAt": "2026-09-15T11:41:28.047Z",
   "items": [
     {
-      "slug": "20260914-cursor-build-with-openai-agents-api-on-vercel-build-and-deploy-a-93aab0be",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
+      "slug": "20260915-vercel-ai-sdk-harness-layer-now-supports-native-subscription-aut-478b2e53",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/build-with-openai-agents-api-on-vercel",
-      "publishedAt": "2026-09-14T21:48:07.802Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "href": "https://vercel.com/changelog/ai-sdk-harness-native-subscription-authentication",
+      "publishedAt": "2026-09-15T11:41:28.047Z",
+      "discoveredAt": "2026-09-15T11:41:28.047Z",
       "locales": {
         "en": {
-          "title": "Build with OpenAI Agents API on Vercel Build and deploy an OpenAI Agents API app on Vercel with Next.js, Functions, Queues, and Sandbox for isolated, persistent code execution. Anshuman Bhardwaj, Allen Zhou",
-          "summary": "rap items-center gap-x-2 gap-y-0\">Daniel Park Software Engineer <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6…"
+          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
+          "summary": "ne\">14 September 14 Sep <div class=\"col-span-full grid grid-cols-subgrid items-baseline gap-6 @lg:col-start-4 @lg:col-span-8 relative before:content-[\"\"] before:block before:h-[calc(100%+1px)] last-of-type:be"
         },
         "fr": {
-          "title": "Build with OpenAI Agents API on Vercel Build and deploy an OpenAI Agents API app on Vercel with Next.js, Functions, Queues, and Sandbox for isolated, persistent code execution. Anshuman Bhardwaj, Allen Zhou",
-          "summary": "rap items-center gap-x-2 gap-y-0\">Daniel Park Software Engineer <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6…"
+          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
+          "summary": "ne\">14 September 14 Sep <div class=\"col-span-full grid grid-cols-subgrid items-baseline gap-6 @lg:col-start-4 @lg:col-span-8 relative before:content-[\"\"] before:block before:h-[calc(100%+1px)] last-of-type:be"
+        }
+      }
+    },
+    {
+      "slug": "20260915-postgresql-logconnections-is-to-be-turned-off-by-default-for-new-34ce372d",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/47197-log-connections-is-to-be-turned-off-by-default-for-new-projects-and-existing-free-pro-projects",
+      "publishedAt": "2026-09-15T11:41:28.047Z",
+      "discoveredAt": "2026-09-15T11:41:28.047Z",
+      "locales": {
+        "en": {
+          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
+          "summary": "der-strong\">Improvement Postgres log_connections defaults to off for new projects and existin"
+        },
+        "fr": {
+          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
+          "summary": "der-strong\">Improvement Postgres log_connections defaults to off for new projects and existin"
         }
       }
     },
@@ -179,26 +199,6 @@
         "fr": {
           "title": "Skip to content",
           "summary": "left-0 z-50 w-full\"> <svg fill=\"none\" class=\"w-[95.37px] lg:w-[9"
-        }
-      }
-    },
-    {
-      "slug": "20260912-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "er-warning-500\">Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project. <div class=\"flex min-w-0 gap-2"
-        },
-        "fr": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "er-warning-500\">Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project. <div class=\"flex min-w-0 gap-2"
         }
       }
     },
@@ -383,22 +383,42 @@
       }
     },
     {
-      "slug": "20260914-cursor-tako-search-is-free-on-ai-gateway-through-september-30-ta-b3125c4e",
+      "slug": "20260915-cursor-fastapi-frontends-and-static-files-served-from-the-cdn-fa-9fcb8395",
       "toolName": "Cursor",
       "category": "Developer Assistant",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/tako-search-is-free-on-ai-gateway-through-september-30th",
-      "publishedAt": "2026-09-14T12:41:39.793Z",
-      "discoveredAt": "2026-09-14T12:41:39.793Z",
+      "href": "https://vercel.com/changelog/fastapi-frontends-and-static-files-served-from-the-cdn",
+      "publishedAt": "2026-09-15T11:41:28.047Z",
+      "discoveredAt": "2026-09-15T11:41:28.047Z",
       "locales": {
         "en": {
-          "title": "Tako Search is free on AI Gateway through September 30 Tako Search search tool is live on AI Gateway and provides live web search for any AI Gateway model. The tool is free through September 30th. Walter Korman, Zachary Chen, and 1 other",
-          "summary": "hou-128.jpg\"/> Anshuman Bhardwaj, Allen Zhou <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6 pr-0 rounded-sm ho…"
+          "title": "FastAPI frontends and static files served from the CDN FastAPI frontends and static files are now promoted to the Vercel CDN at build time and served without invoking your Vercel Function. Daniel Park Software Engineer",
+          "summary": "rap items-center gap-x-2 gap-y-0\">Felix Arntz Software Engineer <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6…"
         },
         "fr": {
-          "title": "Tako Search is free on AI Gateway through September 30 Tako Search search tool is live on AI Gateway and provides live web search for any AI Gateway model. The tool is free through September 30th. Walter Korman, Zachary Chen, and 1 other",
-          "summary": "hou-128.jpg\"/> Anshuman Bhardwaj, Allen Zhou <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6 pr-0 rounded-sm ho…"
+          "title": "FastAPI frontends and static files served from the CDN FastAPI frontends and static files are now promoted to the Vercel CDN at build time and served without invoking your Vercel Function. Daniel Park Software Engineer",
+          "summary": "rap items-center gap-x-2 gap-y-0\">Felix Arntz Software Engineer <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6…"
+        }
+      }
+    },
+    {
+      "slug": "20260912-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
+      "publishedAt": "2026-09-12T13:29:26.758Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "er-warning-500\">Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project. <div class=\"flex min-w-0 gap-2"
+        },
+        "fr": {
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "er-warning-500\">Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project. <div class=\"flex min-w-0 gap-2"
         }
       }
     },
@@ -463,22 +483,22 @@
       }
     },
     {
-      "slug": "20260911-github-copilot-add-vs-code-agents-to-copilot-usage-metrics-ed5843bd",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
+      "slug": "20260911-github-profiles-now-show-your-highest-achievement-badge-tier-cd6d3521",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics",
-      "publishedAt": "2026-09-11T21:30:30.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "href": "https://github.blog/changelog/2026-09-11-profiles-now-show-your-highest-achievement-badge-tier",
+      "publishedAt": "2026-09-11T22:39:50.000Z",
+      "discoveredAt": "2026-09-15T11:41:28.047Z",
       "locales": {
         "en": {
-          "title": "Add VS Code Agents to Copilot usage metrics",
-          "summary": "GitHub Copilot usage metrics reports now include generally available metrics for activity in the dedicated VS Code Agents window, helping you measure adoption and engagement across enterprises and organizations. What’s……"
+          "title": "Profiles now show your highest achievement badge tier",
+          "summary": "Your GitHub profile now displays the highest tier you’ve earned for achievements with multiple levels. Previously, profiles could display the first tier earned, even after you had progressed to a… The post Profiles now…"
         },
         "fr": {
-          "title": "Add VS Code Agents to Copilot usage metrics",
-          "summary": "GitHub Copilot usage metrics reports now include generally available metrics for activity in the dedicated VS Code Agents window, helping you measure adoption and engagement across enterprises and organizations. What’s……"
+          "title": "Profiles now show your highest achievement badge tier",
+          "summary": "Your GitHub profile now displays the highest tier you’ve earned for achievements with multiple levels. Previously, profiles could display the first tier earned, even after you had progressed to a… The post Profiles now…"
         }
       }
     },
@@ -559,26 +579,6 @@
         "fr": {
           "title": "Self-hosted machines",
           "summary": ":col-start-7 xl:col-end-19\"> Cursor supports self-hosted machines , which let you keep tool execution entirely in your own network. Your codebase, build outputs, and secrets all"
-        }
-      }
-    },
-    {
-      "slug": "20260912-supabase-migration-of-supabase-management-api-logsall-analytics--b021c0b5",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/48235-migration-of-supabase-management-api-logs-all-analytics-endpoint-to-logs-endpoint",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
-          "summary": "uctive\">Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
-        },
-        "fr": {
-          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
-          "summary": "uctive\">Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
         }
       }
     },
@@ -763,22 +763,42 @@
       }
     },
     {
-      "slug": "20260913-vercel-vercel-sandbox-is-now-available-in-all-regions-vercel-san-4913b2df",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
+      "slug": "20260914-cursor-build-with-openai-agents-api-on-vercel-build-and-deploy-a-93aab0be",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-sandbox-is-now-available-in-all-regions",
-      "publishedAt": "2026-09-13T20:47:49.849Z",
-      "discoveredAt": "2026-09-13T20:47:49.849Z",
+      "href": "https://vercel.com/changelog/build-with-openai-agents-api-on-vercel",
+      "publishedAt": "2026-09-14T21:48:07.802Z",
+      "discoveredAt": "2026-09-14T21:48:07.802Z",
       "locales": {
         "en": {
-          "title": "Vercel Sandbox is now available in all regions Vercel Sandbox now runs in all Vercel compute regions. Choose a region per sandbox, set a project default, and configure failover regions. Marc Codina Segura, Rob Herley",
-          "summary": "\"/> Walter Korman, Zachary Chen, and 1 other <div class=\"col-span-full grid grid-cols-subgrid items-baseline gap-6 @lg:col-start-4 @lg:col-span-8 relative before:content-[\"\"] before:block before:h-[calc(100%+1px)] last-…"
+          "title": "Build with OpenAI Agents API on Vercel Build and deploy an OpenAI Agents API app on Vercel with Next.js, Functions, Queues, and Sandbox for isolated, persistent code execution. Anshuman Bhardwaj, Allen Zhou",
+          "summary": "rap items-center gap-x-2 gap-y-0\">Daniel Park Software Engineer <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6…"
         },
         "fr": {
-          "title": "Vercel Sandbox is now available in all regions Vercel Sandbox now runs in all Vercel compute regions. Choose a region per sandbox, set a project default, and configure failover regions. Marc Codina Segura, Rob Herley",
-          "summary": "\"/> Walter Korman, Zachary Chen, and 1 other <div class=\"col-span-full grid grid-cols-subgrid items-baseline gap-6 @lg:col-start-4 @lg:col-span-8 relative before:content-[\"\"] before:block before:h-[calc(100%+1px)] last-…"
+          "title": "Build with OpenAI Agents API on Vercel Build and deploy an OpenAI Agents API app on Vercel with Next.js, Functions, Queues, and Sandbox for isolated, persistent code execution. Anshuman Bhardwaj, Allen Zhou",
+          "summary": "rap items-center gap-x-2 gap-y-0\">Daniel Park Software Engineer <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6…"
+        }
+      }
+    },
+    {
+      "slug": "20260912-supabase-migration-of-supabase-management-api-logsall-analytics--b021c0b5",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/48235-migration-of-supabase-management-api-logs-all-analytics-endpoint-to-logs-endpoint",
+      "publishedAt": "2026-09-12T13:29:26.758Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
+          "summary": "uctive\">Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
+        },
+        "fr": {
+          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
+          "summary": "uctive\">Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
         }
       }
     },
@@ -843,22 +863,22 @@
       }
     },
     {
-      "slug": "20260911-github-copilot-auto-resolution-and-analysis-updates-in-copilot-c-850b6df2",
+      "slug": "20260911-github-copilot-add-vs-code-agents-to-copilot-usage-metrics-ed5843bd",
       "toolName": "GitHub Copilot",
       "category": "Developer Assistant",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review",
-      "publishedAt": "2026-09-11T20:00:07.000Z",
+      "href": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics",
+      "publishedAt": "2026-09-11T21:30:30.000Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Auto-resolution and analysis updates in Copilot code review",
-          "summary": "Copilot code review now resolves its own comments once you address them and writes smart commit messages for you when you apply its code suggestions. Behind the scenes, Copilot now… The post Auto-resolution and analysis…"
+          "title": "Add VS Code Agents to Copilot usage metrics",
+          "summary": "GitHub Copilot usage metrics reports now include generally available metrics for activity in the dedicated VS Code Agents window, helping you measure adoption and engagement across enterprises and organizations. What’s……"
         },
         "fr": {
-          "title": "Auto-resolution and analysis updates in Copilot code review",
-          "summary": "Copilot code review now resolves its own comments once you address them and writes smart commit messages for you when you apply its code suggestions. Behind the scenes, Copilot now… The post Auto-resolution and analysis…"
+          "title": "Add VS Code Agents to Copilot usage metrics",
+          "summary": "GitHub Copilot usage metrics reports now include generally available metrics for activity in the dedicated VS Code Agents window, helping you measure adoption and engagement across enterprises and organizations. What’s……"
         }
       }
     },
@@ -939,26 +959,6 @@
         "fr": {
           "title": "Next → Older posts",
           "summary": "class=\"grid-cursor\"> <div class=\"gap-x-g1"
-        }
-      }
-    },
-    {
-      "slug": "20260912-supabase-public-alpha-supabase-pipelines-8df37aee",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/pipelines",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "[Public Alpha] Supabase Pipelines",
-          "summary": "-brand-500\">New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
-        },
-        "fr": {
-          "title": "[Public Alpha] Supabase Pipelines",
-          "summary": "-brand-500\">New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
         }
       }
     },
@@ -1143,22 +1143,42 @@
       }
     },
     {
-      "slug": "20260913-cursor-password-protection-is-now-available-per-project-on-pro-p-3f133ea2",
+      "slug": "20260914-cursor-tako-search-is-free-on-ai-gateway-through-september-30-ta-b3125c4e",
       "toolName": "Cursor",
       "category": "Developer Assistant",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/password-protection-now-costs-20-per-project-per-month-on-pro",
-      "publishedAt": "2026-09-13T11:46:30.772Z",
-      "discoveredAt": "2026-09-13T11:46:30.772Z",
+      "href": "https://vercel.com/changelog/tako-search-is-free-on-ai-gateway-through-september-30th",
+      "publishedAt": "2026-09-14T12:41:39.793Z",
+      "discoveredAt": "2026-09-14T12:41:39.793Z",
       "locales": {
         "en": {
-          "title": "Password Protection is now available per project on Pro Password Protection is now $20 per month per protected project on Pro. Enterprise includes it at the team level. +2 Kit Foster, Caleb Boyd, and 2 others",
-          "summary": "line\">9 September 9 Sep <a role=\"link\" type=\"submit\" tabindex=\"0\" data-react-aria-pressable=\"true\" data-zone=\"same\" class=\"outline-none m-0 p-0 border-0 align-baseline no-underline group/trigger relative cursor-p"
+          "title": "Tako Search is free on AI Gateway through September 30 Tako Search search tool is live on AI Gateway and provides live web search for any AI Gateway model. The tool is free through September 30th. Walter Korman, Zachary Chen, and 1 other",
+          "summary": "hou-128.jpg\"/> Anshuman Bhardwaj, Allen Zhou <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6 pr-0 rounded-sm ho…"
         },
         "fr": {
-          "title": "Password Protection is now available per project on Pro Password Protection is now $20 per month per protected project on Pro. Enterprise includes it at the team level. +2 Kit Foster, Caleb Boyd, and 2 others",
-          "summary": "line\">9 September 9 Sep <a role=\"link\" type=\"submit\" tabindex=\"0\" data-react-aria-pressable=\"true\" data-zone=\"same\" class=\"outline-none m-0 p-0 border-0 align-baseline no-underline group/trigger relative cursor-p"
+          "title": "Tako Search is free on AI Gateway through September 30 Tako Search search tool is live on AI Gateway and provides live web search for any AI Gateway model. The tool is free through September 30th. Walter Korman, Zachary Chen, and 1 other",
+          "summary": "hou-128.jpg\"/> Anshuman Bhardwaj, Allen Zhou <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6 pr-0 rounded-sm ho…"
+        }
+      }
+    },
+    {
+      "slug": "20260912-supabase-public-alpha-supabase-pipelines-8df37aee",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/pipelines",
+      "publishedAt": "2026-09-12T13:29:26.758Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "[Public Alpha] Supabase Pipelines",
+          "summary": "-brand-500\">New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+        },
+        "fr": {
+          "title": "[Public Alpha] Supabase Pipelines",
+          "summary": "-brand-500\">New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
         }
       }
     },
@@ -1223,22 +1243,22 @@
       }
     },
     {
-      "slug": "20260910-github-copilot-github-copilot-weekly-releases-september-7-6ecf9c52",
+      "slug": "20260911-github-copilot-auto-resolution-and-analysis-updates-in-copilot-c-850b6df2",
       "toolName": "GitHub Copilot",
       "category": "Developer Assistant",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7",
-      "publishedAt": "2026-09-10T22:55:07.000Z",
+      "href": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review",
+      "publishedAt": "2026-09-11T20:00:07.000Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "GitHub Copilot weekly releases — September 7",
-          "summary": "This week, GitHub Copilot introduces Jira integration in Copilot app and adaptive model orchestration with Project HydraFusion in Copilot CLI. We also introduced new agent automation in Visual Studio Code… The post GitH…"
+          "title": "Auto-resolution and analysis updates in Copilot code review",
+          "summary": "Copilot code review now resolves its own comments once you address them and writes smart commit messages for you when you apply its code suggestions. Behind the scenes, Copilot now… The post Auto-resolution and analysis…"
         },
         "fr": {
-          "title": "GitHub Copilot weekly releases — September 7",
-          "summary": "This week, GitHub Copilot introduces Jira integration in Copilot app and adaptive model orchestration with Project HydraFusion in Copilot CLI. We also introduced new agent automation in Visual Studio Code… The post GitH…"
+          "title": "Auto-resolution and analysis updates in Copilot code review",
+          "summary": "Copilot code review now resolves its own comments once you address them and writes smart commit messages for you when you apply its code suggestions. Behind the scenes, Copilot now… The post Auto-resolution and analysis…"
         }
       }
     },
@@ -1319,26 +1339,6 @@
         "fr": {
           "title": "Sep 10, 2026",
           "summary": "x-auto max-xl:w-full max-xl:max-w-[48rem] xl:col-end-7\"> · Changelog <di"
-        }
-      }
-    },
-    {
-      "slug": "20260912-supabase-realtime-schema-is-now-fully-locked-down-against-modifi-4d315f11",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/realtime-schema-locked-down-against-modification",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Realtime schema is now fully locked down against modifications",
-          "summary": "uctive\">Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
-        },
-        "fr": {
-          "title": "Realtime schema is now fully locked down against modifications",
-          "summary": "uctive\">Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
         }
       }
     },
@@ -1523,22 +1523,42 @@
       }
     },
     {
-      "slug": "20260913-cursor-vercel-sandbox-now-provides-64-gb-of-storage-vercel-sandb-a8941f9b",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
+      "slug": "20260913-vercel-vercel-sandbox-is-now-available-in-all-regions-vercel-san-4913b2df",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-sandbox-64-gb-storage",
-      "publishedAt": "2026-09-13T04:42:01.077Z",
-      "discoveredAt": "2026-09-13T04:42:01.077Z",
+      "href": "https://vercel.com/changelog/vercel-sandbox-is-now-available-in-all-regions",
+      "publishedAt": "2026-09-13T20:47:49.849Z",
+      "discoveredAt": "2026-09-13T20:47:49.849Z",
       "locales": {
         "en": {
-          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
-          "summary": "ne\">11 September 11 Sep <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6 pr-0 rounded-sm hover:bg-gray-100 tr"
+          "title": "Vercel Sandbox is now available in all regions Vercel Sandbox now runs in all Vercel compute regions. Choose a region per sandbox, set a project default, and configure failover regions. Marc Codina Segura, Rob Herley",
+          "summary": "\"/> Walter Korman, Zachary Chen, and 1 other <div class=\"col-span-full grid grid-cols-subgrid items-baseline gap-6 @lg:col-start-4 @lg:col-span-8 relative before:content-[\"\"] before:block before:h-[calc(100%+1px)] last-…"
         },
         "fr": {
-          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
-          "summary": "ne\">11 September 11 Sep <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6 pr-0 rounded-sm hover:bg-gray-100 tr"
+          "title": "Vercel Sandbox is now available in all regions Vercel Sandbox now runs in all Vercel compute regions. Choose a region per sandbox, set a project default, and configure failover regions. Marc Codina Segura, Rob Herley",
+          "summary": "\"/> Walter Korman, Zachary Chen, and 1 other <div class=\"col-span-full grid grid-cols-subgrid items-baseline gap-6 @lg:col-start-4 @lg:col-span-8 relative before:content-[\"\"] before:block before:h-[calc(100%+1px)] last-…"
+        }
+      }
+    },
+    {
+      "slug": "20260912-supabase-realtime-schema-is-now-fully-locked-down-against-modifi-4d315f11",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/realtime-schema-locked-down-against-modification",
+      "publishedAt": "2026-09-12T13:29:26.758Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Realtime schema is now fully locked down against modifications",
+          "summary": "uctive\">Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+        },
+        "fr": {
+          "title": "Realtime schema is now fully locked down against modifications",
+          "summary": "uctive\">Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
         }
       }
     },
@@ -1603,22 +1623,22 @@
       }
     },
     {
-      "slug": "20260910-github-refreshed-repository-pull-requests-page-in-public-preview-43745043",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
+      "slug": "20260910-github-copilot-github-copilot-weekly-releases-september-7-6ecf9c52",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-10-refreshed-repository-pull-requests-page-in-public-preview",
-      "publishedAt": "2026-09-10T21:27:17.000Z",
+      "href": "https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7",
+      "publishedAt": "2026-09-10T22:55:07.000Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Refreshed repository pull requests page in public preview",
-          "summary": "A refreshed repository-level pull request listing page is now in public preview for all GitHub users. It brings powerful filtering, compact presentation mode, and more. Highlights The new page makes… The post Refreshed…"
+          "title": "GitHub Copilot weekly releases — September 7",
+          "summary": "This week, GitHub Copilot introduces Jira integration in Copilot app and adaptive model orchestration with Project HydraFusion in Copilot CLI. We also introduced new agent automation in Visual Studio Code… The post GitH…"
         },
         "fr": {
-          "title": "Refreshed repository pull requests page in public preview",
-          "summary": "A refreshed repository-level pull request listing page is now in public preview for all GitHub users. It brings powerful filtering, compact presentation mode, and more. Highlights The new page makes… The post Refreshed…"
+          "title": "GitHub Copilot weekly releases — September 7",
+          "summary": "This week, GitHub Copilot introduces Jira integration in Copilot app and adaptive model orchestration with Project HydraFusion in Copilot CLI. We also introduced new agent automation in Visual Studio Code… The post GitH…"
         }
       }
     },
@@ -1699,26 +1719,6 @@
         "fr": {
           "title": "Aug 27, 2026",
           "summary": "x-auto max-xl:w-full max-xl:max-w-[48rem] xl:col-end-7\"> · Changelog <di"
-        }
-      }
-    },
-    {
-      "slug": "20260912-supabase-deprecation-notice-supabasesupabase-js-will-require-typ-31c8f33a",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/47812-deprecation-notice-supabase-supabase-js-will-require-typescript-5-0",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
-          "summary": "arning-500\">Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
-        },
-        "fr": {
-          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
-          "summary": "arning-500\">Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
         }
       }
     },
@@ -1883,22 +1883,42 @@
       }
     },
     {
-      "slug": "20260913-vercel-control-who-can-manage-connectors-in-vercel-connect-verce-3e6c19c6",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
+      "slug": "20260913-cursor-password-protection-is-now-available-per-project-on-pro-p-3f133ea2",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/control-who-can-manage-connectors-in-vercel-connect",
-      "publishedAt": "2026-09-13T00:00:31.084Z",
-      "discoveredAt": "2026-09-13T00:00:31.084Z",
+      "href": "https://vercel.com/changelog/password-protection-now-costs-20-per-project-per-month-on-pro",
+      "publishedAt": "2026-09-13T11:46:30.772Z",
+      "discoveredAt": "2026-09-13T11:46:30.772Z",
       "locales": {
         "en": {
-          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
-          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard <div class=\"col-span-full grid grid-cols-subgrid items-baseline gap-6 @lg:col-start-4 @lg:col-span-8 relative before:content-[\"\"] before:block before:h-[calc(100%+1px)] last-…"
+          "title": "Password Protection is now available per project on Pro Password Protection is now $20 per month per protected project on Pro. Enterprise includes it at the team level. +2 Kit Foster, Caleb Boyd, and 2 others",
+          "summary": "line\">9 September 9 Sep <a role=\"link\" type=\"submit\" tabindex=\"0\" data-react-aria-pressable=\"true\" data-zone=\"same\" class=\"outline-none m-0 p-0 border-0 align-baseline no-underline group/trigger relative cursor-p"
         },
         "fr": {
-          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
-          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard <div class=\"col-span-full grid grid-cols-subgrid items-baseline gap-6 @lg:col-start-4 @lg:col-span-8 relative before:content-[\"\"] before:block before:h-[calc(100%+1px)] last-…"
+          "title": "Password Protection is now available per project on Pro Password Protection is now $20 per month per protected project on Pro. Enterprise includes it at the team level. +2 Kit Foster, Caleb Boyd, and 2 others",
+          "summary": "line\">9 September 9 Sep <a role=\"link\" type=\"submit\" tabindex=\"0\" data-react-aria-pressable=\"true\" data-zone=\"same\" class=\"outline-none m-0 p-0 border-0 align-baseline no-underline group/trigger relative cursor-p"
+        }
+      }
+    },
+    {
+      "slug": "20260912-supabase-deprecation-notice-supabasesupabase-js-will-require-typ-31c8f33a",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/47812-deprecation-notice-supabase-supabase-js-will-require-typescript-5-0",
+      "publishedAt": "2026-09-12T13:29:26.758Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
+          "summary": "arning-500\">Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
+        },
+        "fr": {
+          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
+          "summary": "arning-500\">Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
         }
       }
     },
@@ -1963,22 +1983,22 @@
       }
     },
     {
-      "slug": "20260910-github-ai-scan-for-pull-request-apis-in-public-preview-4aaaad58",
+      "slug": "20260910-github-refreshed-repository-pull-requests-page-in-public-preview-43745043",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-10-ai-scan-for-pull-request-apis-in-public-preview",
-      "publishedAt": "2026-09-10T20:20:58.000Z",
+      "href": "https://github.blog/changelog/2026-09-10-refreshed-repository-pull-requests-page-in-public-preview",
+      "publishedAt": "2026-09-10T21:27:17.000Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "AI Scan for pull request APIs in public preview",
-          "summary": "You can now manage GitHub code scanning’s AI Scan for pull request enablement with REST API endpoints at the organization and repository levels. This public preview gives teams a programmatic… The post AI Scan for pull…"
+          "title": "Refreshed repository pull requests page in public preview",
+          "summary": "A refreshed repository-level pull request listing page is now in public preview for all GitHub users. It brings powerful filtering, compact presentation mode, and more. Highlights The new page makes… The post Refreshed…"
         },
         "fr": {
-          "title": "AI Scan for pull request APIs in public preview",
-          "summary": "You can now manage GitHub code scanning’s AI Scan for pull request enablement with REST API endpoints at the organization and repository levels. This public preview gives teams a programmatic… The post AI Scan for pull…"
+          "title": "Refreshed repository pull requests page in public preview",
+          "summary": "A refreshed repository-level pull request listing page is now in public preview for all GitHub users. It brings powerful filtering, compact presentation mode, and more. Highlights The new page makes… The post Refreshed…"
         }
       }
     },
@@ -2063,26 +2083,6 @@
       }
     },
     {
-      "slug": "20260912-supabase-developer-update---july-2026-14aef04c",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/47796-developer-update-july-2026",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Developer Update - July 2026",
-          "summary": "der-strong\">Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
-        },
-        "fr": {
-          "title": "Developer Update - July 2026",
-          "summary": "der-strong\">Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
-        }
-      }
-    },
-    {
       "slug": "20260901-cloudflare-how-we-could-save-petabytes-of-cache-storage-with-zst-0a4287f3",
       "toolName": "Cloudflare",
       "category": "Cloud Platform",
@@ -2143,22 +2143,22 @@
       }
     },
     {
-      "slug": "20260903-hugging-face-fine-tuning-a-350m-model-for-better-structured-outp-45020768",
+      "slug": "20260903-hugging-face-give-your-coding-agents-a-memory-you-own-86b47b47",
       "toolName": "Hugging Face",
       "category": "AI Platform",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+      "href": "https://huggingface.co/blog/funes",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "discoveredAt": "2026-09-15T11:41:28.047Z",
       "locales": {
         "en": {
-          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
-          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
+          "title": "Give Your Coding Agents a Memory You Own",
+          "summary": "Give Your Coding Agents a Memory You Own"
         },
         "fr": {
-          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
-          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
+          "title": "Give Your Coding Agents a Memory You Own",
+          "summary": "Give Your Coding Agents a Memory You Own"
         }
       }
     },
@@ -2223,42 +2223,62 @@
       }
     },
     {
-      "slug": "20260820-rust-supply-chain-attack-on-arrayref-14062eb1",
+      "slug": "20260820-rust-announcing-rust-1980-3f795da6",
       "toolName": "Rust",
       "category": "Systems & Backend",
       "source": "Rust Blog",
       "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
+      "href": "https://blog.rust-lang.org/2026/08/20/Rust-1.98.0/",
       "publishedAt": "2026-08-20T00:00:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "discoveredAt": "2026-09-15T11:41:28.047Z",
       "locales": {
         "en": {
-          "title": "Supply chain attack on arrayref",
-          "summary": "What happened On 2026-08-20 at 7:15 UTC we got a report that the proc-macro1 crate was malicious. The Rust Security Response Team verified this to be the case: the crate had a build script that was downloading a malicio…"
+          "title": "Announcing Rust 1.98.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.98.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
         },
         "fr": {
-          "title": "Supply chain attack on arrayref",
-          "summary": "What happened On 2026-08-20 at 7:15 UTC we got a report that the proc-macro1 crate was malicious. The Rust Security Response Team verified this to be the case: the crate had a build script that was downloading a malicio…"
+          "title": "Announcing Rust 1.98.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.98.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
         }
       }
     },
     {
-      "slug": "20260912-cursor-github-copilot-is-now-available-in-the-ai-sdk-harness-lay-6dde567f",
+      "slug": "20260913-cursor-vercel-sandbox-now-provides-64-gb-of-storage-vercel-sandb-a8941f9b",
       "toolName": "Cursor",
       "category": "Developer Assistant",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/github-copilot-ai-sdk-harness-adapter",
-      "publishedAt": "2026-09-12T22:14:38.980Z",
-      "discoveredAt": "2026-09-12T22:14:38.980Z",
+      "href": "https://vercel.com/changelog/vercel-sandbox-64-gb-storage",
+      "publishedAt": "2026-09-13T04:42:01.077Z",
+      "discoveredAt": "2026-09-13T04:42:01.077Z",
       "locales": {
         "en": {
-          "title": "GitHub Copilot is now available in the AI SDK harness layer GitHub Copilot now runs through the AI SDK harness layer via @ai-sdk/harness-github-copilot, using the same HarnessAgent interface as every other supported harness. Felix Arntz Software Engineer",
-          "summary": "ne\">10 September 10 Sep <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6 pr-0 rounded-sm hover:bg-gray-100 tr"
+          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
+          "summary": "ne\">11 September 11 Sep <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6 pr-0 rounded-sm hover:bg-gray-100 tr"
         },
         "fr": {
-          "title": "GitHub Copilot is now available in the AI SDK harness layer GitHub Copilot now runs through the AI SDK harness layer via @ai-sdk/harness-github-copilot, using the same HarnessAgent interface as every other supported harness. Felix Arntz Software Engineer",
-          "summary": "ne\">10 September 10 Sep <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6 pr-0 rounded-sm hover:bg-gray-100 tr"
+          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
+          "summary": "ne\">11 September 11 Sep <a data-zone=\"same\" class=\"cursor-pointer focus-visible:outline-2 outline-[var(--ds-focus-color)] outline-offset-4 flex flex-col gap-5 p-6 -ml-6 -mt-6 mb-6 pr-0 rounded-sm hover:bg-gray-100 tr"
+        }
+      }
+    },
+    {
+      "slug": "20260912-supabase-developer-update---july-2026-14aef04c",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/47796-developer-update-july-2026",
+      "publishedAt": "2026-09-12T13:29:26.758Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Developer Update - July 2026",
+          "summary": "der-strong\">Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
+        },
+        "fr": {
+          "title": "Developer Update - July 2026",
+          "summary": "der-strong\">Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
         }
       }
     },
@@ -2323,42 +2343,42 @@
       }
     },
     {
-      "slug": "20260910-github-control-github-actions-cache-access-with-cache-mode-4997b35d",
+      "slug": "20260910-github-ai-scan-for-pull-request-apis-in-public-preview-4aaaad58",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode",
-      "publishedAt": "2026-09-10T17:26:59.000Z",
+      "href": "https://github.blog/changelog/2026-09-10-ai-scan-for-pull-request-apis-in-public-preview",
+      "publishedAt": "2026-09-10T20:20:58.000Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Control GitHub Actions cache access with cache-mode",
-          "summary": "You can now use cache-mode to apply least-privilege access to the GitHub Actions cache at the workflow or job level. By granting each workflow or job only the cache access… The post Control GitHub Actions cache access w…"
+          "title": "AI Scan for pull request APIs in public preview",
+          "summary": "You can now manage GitHub code scanning’s AI Scan for pull request enablement with REST API endpoints at the organization and repository levels. This public preview gives teams a programmatic… The post AI Scan for pull…"
         },
         "fr": {
-          "title": "Control GitHub Actions cache access with cache-mode",
-          "summary": "You can now use cache-mode to apply least-privilege access to the GitHub Actions cache at the workflow or job level. By granting each workflow or job only the cache access… The post Control GitHub Actions cache access w…"
+          "title": "AI Scan for pull request APIs in public preview",
+          "summary": "You can now manage GitHub code scanning’s AI Scan for pull request enablement with REST API endpoints at the organization and repository levels. This public preview gives teams a programmatic… The post AI Scan for pull…"
         }
       }
     },
     {
-      "slug": "20260910-chatgpt-introducing-chatgpt-for-financial-services-016c3ec9",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
+      "slug": "20260910-openai-platform-expanding-ai-access-and-cyber-defense-for-federa-1ef5285e",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "href": "https://openai.com/index/expanding-ai-access-us-government",
       "publishedAt": "2026-09-10T07:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "discoveredAt": "2026-09-15T11:41:28.047Z",
       "locales": {
         "en": {
-          "title": "Introducing ChatGPT for Financial Services",
-          "summary": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials."
+          "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+          "summary": "OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support."
         },
         "fr": {
-          "title": "Introducing ChatGPT for Financial Services",
-          "summary": "Introducing ChatGPT for Financial Services, combining built-in financial data and GPT-6 Astra for research, modeling, and client-ready materials."
+          "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+          "summary": "OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support."
         }
       }
     },
@@ -2379,26 +2399,6 @@
         "fr": {
           "title": "Aug 14, 2026 Announcements How Claude’s text watermark works",
           "summary": "ts Funding better evaluations of AI’s impact on wellbeing <time class=\"PublicationList-modu"
-        }
-      }
-    },
-    {
-      "slug": "20260730-notion-ai-meeting-notes-can-now-trigger-custom-agents-1dfe1982",
-      "toolName": "Notion",
-      "category": "Productivity Workspace",
-      "source": "Notion Releases",
-      "sourceFeed": "https://www.notion.so/releases",
-      "href": "https://www.notion.so/releases/2026-07-31",
-      "publishedAt": "2026-07-30T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "AI Meeting Notes can now trigger Custom Agents",
-          "summary": "t_S5q__dateRow\"> July 31, 2026 <article class=\"contentfulRichText-module-scss-module__GleVCa__richText contentfulRichText-module-scss-module__GleVCa__sans\" style=\"--rich-text-font-config-font-size:var(--tatami-font-size…"
-        },
-        "fr": {
-          "title": "AI Meeting Notes can now trigger Custom Agents",
-          "summary": "t_S5q__dateRow\"> July 31, 2026 <article class=\"contentfulRichText-module-scss-module__GleVCa__richText contentfulRichText-module-scss-module__GleVCa__sans\" style=\"--rich-text-font-config-font-size:var(--tatami-font-size…"
         }
       }
     }
