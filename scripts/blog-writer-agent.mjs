@@ -18,7 +18,7 @@
 //
 // Env knobs:
 //   ANTHROPIC_API_KEY              required to do anything (else skip)
-//   ANTHROPIC_MODEL               default "claude-opus-4-8"
+//   ANTHROPIC_MODEL               default "claude-opus-5"
 //   AGENT_WRITER_DRAFTS_PER_RUN   default 2 (range 0-10)
 //   AGENT_WRITER_MAX_TOKENS       default 16000
 
@@ -34,7 +34,9 @@ const OPERATOR_QUEUE = path.join(ROOT, "docs/agent/next-actions.json");
 const AUTO_NEWS = path.join(ROOT, "src/content/auto-news.json");
 const REPORT_FILE = path.join(ROOT, "docs/agent/writer-report.md");
 
-const DEFAULT_MODEL = "claude-opus-4-8";
+// Opus 5 supersedes Opus 4.8 at the same price ($5/$25 per MTok), and runs
+// adaptive thinking by default. Override with ANTHROPIC_MODEL.
+const DEFAULT_MODEL = "claude-opus-5";
 
 function toInteger(value, fallback) {
   const parsed = Number.parseInt(String(value ?? "").trim(), 10);
