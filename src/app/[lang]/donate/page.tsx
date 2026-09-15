@@ -113,7 +113,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
       </section>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
-        <div className="space-y-6">
+        <div className="min-w-0 space-y-6">
           {uniquePrimaryMethods.length > 0 ? (
             <section className="grid gap-4 md:grid-cols-2">
               {uniquePrimaryMethods.map((method, index) => (

@@ -140,7 +140,7 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
       </section>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
-        <div className="space-y-6">
+        <div className="min-w-0 space-y-6">
           <div className="relative overflow-hidden rounded-2xl border border-[color:var(--border)]">
             <Image
               src={coverImageUrl("ai-career-guide", "Career/Interviews")}

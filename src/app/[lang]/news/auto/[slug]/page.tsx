@@ -260,7 +260,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
       </header>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
-        <div className="space-y-8">
+        <div className="min-w-0 space-y-8">
           <section id="summary" className="anchor-offset reading-panel rounded-3xl p-6 md:p-8">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
               {fr ? "Resume rapide" : "Fast summary"}

@@ -188,7 +188,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
       </div>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
-        <div className="space-y-8">
+        <div className="min-w-0 space-y-8">
           <section className="grid gap-4 md:grid-cols-3">
             {[
               {

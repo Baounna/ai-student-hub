@@ -305,7 +305,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
       </section>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
-        <div className="space-y-8">
+        <div className="min-w-0 space-y-8">
           <div className="media-frame group relative aspect-[16/10] rounded-2xl">
             <Image
               src={coverImageUrl(post.slug, post.category)}

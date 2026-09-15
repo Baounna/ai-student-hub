@@ -104,7 +104,7 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
       </header>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
-        <div className="space-y-4">
+        <div className="min-w-0 space-y-4">
           {updates.length ? (
             updates.map((item, index) => (
               <article key={`${item.href}-${index}`} className="card-hover glass rounded-2xl p-5">
