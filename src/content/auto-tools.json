@@ -1,7 +1,167 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T11:28:36.810Z",
+  "updatedAt": "2026-09-16T21:16:10.587Z",
   "items": [
+    {
+      "slug": "20260916-vercel-hobby-projects-now-retain-fewer-deployments-to-free-up-st-b795b016",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/hobby-projects-now-retain-fewer-deployments-to-free-up-storage",
+      "publishedAt": "2026-09-16T21:16:10.587Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Hobby projects now retain fewer deployments to free up storage We're changing the retention exceptions for Hobby plans so that it's easier to stay within the free usage limits. Accounts above the 10GB limit will have inactive deployments automatically deleted. Jay Gengelbach, Pranav Kanchi",
+          "summary": "16 September 16 Sep"
+        },
+        "fr": {
+          "title": "Hobby projects now retain fewer deployments to free up storage We're changing the retention exceptions for Hobby plans so that it's easier to stay within the free usage limits. Accounts above the 10GB limit will have inactive deployments automatically deleted. Jay Gengelbach, Pranav Kanchi",
+          "summary": "16 September 16 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260916-supabase-public-alpha-supabase-pipelines-8df37aee",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/pipelines",
+      "publishedAt": "2026-09-16T21:16:10.587Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "[Public Alpha] Supabase Pipelines",
+          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+        },
+        "fr": {
+          "title": "[Public Alpha] Supabase Pipelines",
+          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+        }
+      }
+    },
+    {
+      "slug": "20260916-nvidia-serve-qwen38-24t-a95b-a-24t-parameter-model-with-configur-06e533fd",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/",
+      "publishedAt": "2026-09-16T21:15:27.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
+          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
+        },
+        "fr": {
+          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
+          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
+        }
+      }
+    },
+    {
+      "slug": "20260916-github-scim-user-responses-now-include-a-profileurl-attribute-4df4917d",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute",
+      "publishedAt": "2026-09-16T20:19:58.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "SCIM user responses now include a profileUrl attribute",
+          "summary": "SCIM user responses from GitHub now include the standard profileUrl attribute defined by RFC 7643, containing the absolute URL of the GitHub account linked to the external identity. Previously, matching… The post SCIM u…"
+        },
+        "fr": {
+          "title": "SCIM user responses now include a profileUrl attribute",
+          "summary": "SCIM user responses from GitHub now include the standard profileUrl attribute defined by RFC 7643, containing the absolute URL of the GitHub account linked to the external identity. Previously, matching… The post SCIM u…"
+        }
+      }
+    },
+    {
+      "slug": "20260916-cloudflare-when-scanners-miss-the-attack-how-cloudflare-client-s-1575dde9",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
+      "publishedAt": "2026-09-16T20:06:17.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
+          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analys…"
+        },
+        "fr": {
+          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
+          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analys…"
+        }
+      }
+    },
+    {
+      "slug": "20260916-nodejs-nodejs-2690-current-077aebee",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.9.0",
+      "publishedAt": "2026-09-16T18:17:42.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.9.0 (Current)",
+          "summary": "Node.js 26.9.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.9.0 (Current)",
+          "summary": "Node.js 26.9.0 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260916-chatgpt-helping-older-adults-use-ai-in-everyday-life-027811ca",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+      "publishedAt": "2026-09-16T16:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Helping older adults use AI in everyday life",
+          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
+        },
+        "fr": {
+          "title": "Helping older adults use AI in everyday life",
+          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
+        }
+      }
+    },
+    {
+      "slug": "20260916-w3c-w3c-launches-first-pilot-of-program-to-support-open-source-p-daf0158b",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-launches-first-pilot-of-program-to-support-open-source-projects/",
+      "publishedAt": "2026-09-16T13:53:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
+        },
+        "fr": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
+        }
+      }
+    },
     {
       "slug": "20260916-notion-notion-37-agent-skills-for-your-whole-team-cd21ad33",
       "toolName": "Notion",
@@ -23,42 +183,22 @@
       }
     },
     {
-      "slug": "20260916-vercel-is-agentic-now-tailors-its-audit-by-site-type-is-agentic--2c9062d3",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/is-agentic-report-categories",
-      "publishedAt": "2026-09-16T11:28:36.810Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "slug": "20260916-go-size-specialized-memory-allocation-1f279c61",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/size-specialized-allocations",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Is Agentic now tailors its audit by site type Is Agentic reports now let you view checks through four site types, highlighting what matters for your site without changing your score. Andrew Qu, Rich Haines",
-          "summary": "16 September 16 Sep"
+          "title": "Size-Specialized Memory Allocation",
+          "summary": "Go 1.27 improves performance of small allocations using size-specialized allocation functions."
         },
         "fr": {
-          "title": "Is Agentic now tailors its audit by site type Is Agentic reports now let you view checks through four site types, highlighting what matters for your site without changing your score. Andrew Qu, Rich Haines",
-          "summary": "16 September 16 Sep"
-        }
-      }
-    },
-    {
-      "slug": "20260916-supabase-deprecation-notice-supabasesupabase-js-will-require-typ-31c8f33a",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/47812-deprecation-notice-supabase-supabase-js-will-require-typescript-5-0",
-      "publishedAt": "2026-09-16T11:28:36.810Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
-      "locales": {
-        "en": {
-          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
-          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
-        },
-        "fr": {
-          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
-          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
+          "title": "Size-Specialized Memory Allocation",
+          "summary": "Go 1.27 improves performance of small allocations using size-specialized allocation functions."
         }
       }
     },
@@ -83,26 +223,6 @@
       }
     },
     {
-      "slug": "20260915-github-enforce-github-advanced-security-configurations-12ae08f3",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-15-enforce-github-advanced-security-configurations",
-      "publishedAt": "2026-09-15T19:31:58.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "Enforce GitHub Advanced Security configurations",
-          "summary": "Enterprise administrators can now enforce GitHub Advanced Security configurations across their organizations. This prevents both organization and repository administrators from overriding settings defined at the enterpr…"
-        },
-        "fr": {
-          "title": "Enforce GitHub Advanced Security configurations",
-          "summary": "Enterprise administrators can now enforce GitHub Advanced Security configurations across their organizations. This prevents both organization and repository administrators from overriding settings defined at the enterpr…"
-        }
-      }
-    },
-    {
       "slug": "20260915-kubernetes-kubernetes-v137-pod-level-resource-managers-graduated-993e015b",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -119,26 +239,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
           "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
-        }
-      }
-    },
-    {
-      "slug": "20260915-nvidia-how-nvidia-groq-3-lpx-deterministic-execution-drives-powe-ce9893f8",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
-      "publishedAt": "2026-09-15T17:06:22.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
-        },
-        "fr": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
         }
       }
     },
@@ -183,26 +283,6 @@
       }
     },
     {
-      "slug": "20260915-cloudflare-have-it-both-ways-stay-discoverable-in-search-while-d-758d5608",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
-      "publishedAt": "2026-09-15T13:00:00.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
-          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
-        },
-        "fr": {
-          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
-          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
-        }
-      }
-    },
-    {
       "slug": "20260915-nist-nist-awards-more-than-30-million-for-mep-centers-in-11-stat-d9483720",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -219,26 +299,6 @@
         "fr": {
           "title": "NIST Awards More Than $30 Million for MEP Centers in 11 States and Puerto Rico",
           "summary": "The awards will help small and medium-sized manufacturers increase the adoption of advanced manufacturing technology."
-        }
-      }
-    },
-    {
-      "slug": "20260914-openai-platform-how-fyxer-built-an-ai-executive-assistant-people-296d33de",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/fyxer",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
-      "locales": {
-        "en": {
-          "title": "How Fyxer built an AI executive assistant people trust",
-          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
-        },
-        "fr": {
-          "title": "How Fyxer built an AI executive assistant people trust",
-          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
         }
       }
     },
@@ -283,46 +343,6 @@
       }
     },
     {
-      "slug": "20260909-w3c-a-compilation-of-w3c-in-japans-30th-anniversary-events-26d8dabd",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/",
-      "publishedAt": "2026-09-09T20:50:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "A compilation of W3C in Japan's 30th anniversary events",
-          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
-        },
-        "fr": {
-          "title": "A compilation of W3C in Japan's 30th anniversary events",
-          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-nodejs-nodejs-2682-current-dcb9ac31",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.2",
-      "publishedAt": "2026-09-09T16:09:17.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.2 (Current)",
-          "summary": "Node.js 26.8.2 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.2 (Current)",
-          "summary": "Node.js 26.8.2 (Current)"
-        }
-      }
-    },
-    {
       "slug": "20260908-docker-6-benefits-of-sandbox-environments-and-how-docker-sandbox-8f7b5812",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -363,22 +383,162 @@
       }
     },
     {
-      "slug": "20260902-go-goroutine-leak-profiles-e3884685",
-      "toolName": "Go",
+      "slug": "20260916-vercel-secure-compute-and-static-ip-builds-start-64-faster-prewa-ce7dce4b",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/secure-compute-and-static-ip-builds-start-64-faster",
+      "publishedAt": "2026-09-16T21:16:10.587Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Secure Compute and Static IP builds start 64% faster Prewarmed build containers cut the average time from deployment creation to build start from 6.7 seconds to 2.4 seconds. No configuration changes required. Ali Smesseim, Brandon Tuttle, and 1 other",
+          "summary": "pranav.jpeg\"/> Jay Gengelbach, Pranav Kanchi"
+        },
+        "fr": {
+          "title": "Secure Compute and Static IP builds start 64% faster Prewarmed build containers cut the average time from deployment creation to build start from 6.7 seconds to 2.4 seconds. No configuration changes required. Ali Smesseim, Brandon Tuttle, and 1 other",
+          "summary": "pranav.jpeg\"/> Jay Gengelbach, Pranav Kanchi"
+        }
+      }
+    },
+    {
+      "slug": "20260916-supabase-realtime-schema-is-now-fully-locked-down-against-modifi-4d315f11",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/realtime-schema-locked-down-against-modification",
+      "publishedAt": "2026-09-16T21:16:10.587Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Realtime schema is now fully locked down against modifications",
+          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+        },
+        "fr": {
+          "title": "Realtime schema is now fully locked down against modifications",
+          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+        }
+      }
+    },
+    {
+      "slug": "20260916-nvidia-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-bench-82b93583",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
+      "publishedAt": "2026-09-16T20:37:15.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+        },
+        "fr": {
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+        }
+      }
+    },
+    {
+      "slug": "20260916-github-copilot-copilot-budget-increase-requests-are-generally-av-aaa1a76c",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available",
+      "publishedAt": "2026-09-16T20:17:18.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Copilot budget increase requests are generally available",
+          "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests…"
+        },
+        "fr": {
+          "title": "Copilot budget increase requests are generally available",
+          "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests…"
+        }
+      }
+    },
+    {
+      "slug": "20260915-cloudflare-have-it-both-ways-stay-discoverable-in-search-while-d-758d5608",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+      "publishedAt": "2026-09-15T13:00:00.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
+          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
+        },
+        "fr": {
+          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
+          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
+        }
+      }
+    },
+    {
+      "slug": "20260909-nodejs-nodejs-2682-current-dcb9ac31",
+      "toolName": "Node.js",
       "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/goroutine-leak-profiles",
-      "publishedAt": "2026-09-02T00:00:00.000Z",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.2",
+      "publishedAt": "2026-09-09T16:09:17.000Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Goroutine Leak Profiles",
-          "summary": "Goroutine Leak Profiles"
+          "title": "Node.js 26.8.2 (Current)",
+          "summary": "Node.js 26.8.2 (Current)"
         },
         "fr": {
-          "title": "Goroutine Leak Profiles",
-          "summary": "Goroutine Leak Profiles"
+          "title": "Node.js 26.8.2 (Current)",
+          "summary": "Node.js 26.8.2 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260916-openai-platform-reimagining-advertising-with-ai-52752974",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/reimagining-advertising-with-ai",
+      "publishedAt": "2026-09-16T13:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Reimagining advertising with AI",
+          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
+        },
+        "fr": {
+          "title": "Reimagining advertising with AI",
+          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
+        }
+      }
+    },
+    {
+      "slug": "20260909-w3c-a-compilation-of-w3c-in-japans-30th-anniversary-events-26d8dabd",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/",
+      "publishedAt": "2026-09-09T20:50:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "A compilation of W3C in Japan's 30th anniversary events",
+          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
+        },
+        "fr": {
+          "title": "A compilation of W3C in Japan's 30th anniversary events",
+          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
         }
       }
     },
@@ -403,42 +563,22 @@
       }
     },
     {
-      "slug": "20260916-vercel-vercel-sandbox-now-provides-64-gb-of-storage-vercel-sandb-a8941f9b",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-sandbox-64-gb-storage",
-      "publishedAt": "2026-09-16T11:28:36.810Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "slug": "20260902-go-goroutine-leak-profiles-e3884685",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/goroutine-leak-profiles",
+      "publishedAt": "2026-09-02T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
-          "summary": "11 September 11 Sep"
+          "title": "Goroutine Leak Profiles",
+          "summary": "Goroutine Leak Profiles"
         },
         "fr": {
-          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
-          "summary": "11 September 11 Sep"
-        }
-      }
-    },
-    {
-      "slug": "20260916-supabase-developer-update---july-2026-14aef04c",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/47796-developer-update-july-2026",
-      "publishedAt": "2026-09-16T11:28:36.810Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
-      "locales": {
-        "en": {
-          "title": "Developer Update - July 2026",
-          "summary": "Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
-        },
-        "fr": {
-          "title": "Developer Update - July 2026",
-          "summary": "Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
+          "title": "Goroutine Leak Profiles",
+          "summary": "Goroutine Leak Profiles"
         }
       }
     },
@@ -463,26 +603,6 @@
       }
     },
     {
-      "slug": "20260915-github-copilot-github-copilot-suggests-custom-properties-definit-e594f69e",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
-      "publishedAt": "2026-09-15T19:07:47.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "GitHub Copilot suggests custom properties definitions",
-          "summary": "GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot s…"
-        },
-        "fr": {
-          "title": "GitHub Copilot suggests custom properties definitions",
-          "summary": "GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot s…"
-        }
-      }
-    },
-    {
       "slug": "20260914-kubernetes-kubernetes-changed-block-tracking-api---beta-differen-081539c8",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -499,26 +619,6 @@
         "fr": {
           "title": "Kubernetes Changed Block Tracking API - Beta Differences",
           "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
-        }
-      }
-    },
-    {
-      "slug": "20260915-nvidia-dense-vs-moe-models-active-parameters-throughput-and-when-3f75c866",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
-      "publishedAt": "2026-09-15T17:00:18.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
-        },
-        "fr": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
         }
       }
     },
@@ -563,26 +663,6 @@
       }
     },
     {
-      "slug": "20260915-cloudflare-give-every-teammate-and-agent-the-right-level-of-acce-5d707738",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-granular-authorization/",
-      "publishedAt": "2026-09-15T13:00:00.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "Give every teammate and agent the right level of access to your Workers",
-          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
-        },
-        "fr": {
-          "title": "Give every teammate and agent the right level of access to your Workers",
-          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
-        }
-      }
-    },
-    {
       "slug": "20260915-nist-nist-finalizes-guidelines-on-protecting-online-identity-and-fce54ff4",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -599,26 +679,6 @@
         "fr": {
           "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
           "summary": "The finalized publication is designed to help organizations take effective steps to avoid exposing tokens to attackers."
-        }
-      }
-    },
-    {
-      "slug": "20260914-perplexity-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-12e9dd68",
-      "toolName": "Perplexity",
-      "category": "Research Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-      "publishedAt": "2026-09-14T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-          "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
-        },
-        "fr": {
-          "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-          "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
         }
       }
     },
@@ -663,46 +723,6 @@
       }
     },
     {
-      "slug": "20260824-w3c-making-digital-identity-work-across-the-web-gdc-2026-f09de87c",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/a-global-digital-infrastructure-gdc-2026/",
-      "publishedAt": "2026-08-24T07:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Making digital identity work across the Web: GDC 2026",
-          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
-        },
-        "fr": {
-          "title": "Making digital identity work across the Web: GDC 2026",
-          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-nodejs-nodejs-24210-lts-48e7f627",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v24.21.0",
-      "publishedAt": "2026-09-09T11:55:20.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 24.21.0 (LTS)",
-          "summary": "Node.js 24.21.0 (LTS)"
-        },
-        "fr": {
-          "title": "Node.js 24.21.0 (LTS)",
-          "summary": "Node.js 24.21.0 (LTS)"
-        }
-      }
-    },
-    {
       "slug": "20260903-docker-yolo-mode-agent-autonomy-without-the-guardrails-07d6a8e1",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -743,22 +763,162 @@
       }
     },
     {
-      "slug": "20260826-go-generic-methods-daf7f81f",
-      "toolName": "Go",
+      "slug": "20260916-vercel-mem0-joins-the-vercel-marketplace-mem0-is-now-a-native-in-2f9440b3",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/mem0-joins-the-vercel-marketplace",
+      "publishedAt": "2026-09-16T21:16:10.587Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Mem0 joins the Vercel Marketplace Mem0 is now a native integration on the Vercel Marketplace, giving your AI agents and apps memory that persists across sessions. Hedi Zandi, Tony Pan",
+          "summary": "Ali Smesseim, Brandon Tuttle, and 1 other"
+        },
+        "fr": {
+          "title": "Mem0 joins the Vercel Marketplace Mem0 is now a native integration on the Vercel Marketplace, giving your AI agents and apps memory that persists across sessions. Hedi Zandi, Tony Pan",
+          "summary": "Ali Smesseim, Brandon Tuttle, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20260916-supabase-deprecation-notice-supabasesupabase-js-will-require-typ-31c8f33a",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/47812-deprecation-notice-supabase-supabase-js-will-require-typescript-5-0",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "locales": {
+        "en": {
+          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
+          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
+        },
+        "fr": {
+          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
+          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
+        }
+      }
+    },
+    {
+      "slug": "20260916-nvidia-translating-cuda-tile-operations-from-python-to-rust-usin-833138d5",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
+      "publishedAt": "2026-09-16T16:29:07.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+        },
+        "fr": {
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+        }
+      }
+    },
+    {
+      "slug": "20260916-github-code-scanning-ai-scan-no-longer-requires-codeql-default-s-892303a4",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup",
+      "publishedAt": "2026-09-16T13:26:06.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Code scanning AI Scan no longer requires CodeQL default setup",
+          "summary": "You can now use AI Scan for pull requests to find security vulnerabilities, even when CodeQL default setup isn’t enabled on a repository. Previously, AI Scan for pull requests only… The post Code scanning AI Scan no lon…"
+        },
+        "fr": {
+          "title": "Code scanning AI Scan no longer requires CodeQL default setup",
+          "summary": "You can now use AI Scan for pull requests to find security vulnerabilities, even when CodeQL default setup isn’t enabled on a repository. Previously, AI Scan for pull requests only… The post Code scanning AI Scan no lon…"
+        }
+      }
+    },
+    {
+      "slug": "20260915-cloudflare-give-every-teammate-and-agent-the-right-level-of-acce-5d707738",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/workers-granular-authorization/",
+      "publishedAt": "2026-09-15T13:00:00.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "Give every teammate and agent the right level of access to your Workers",
+          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
+        },
+        "fr": {
+          "title": "Give every teammate and agent the right level of access to your Workers",
+          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
+        }
+      }
+    },
+    {
+      "slug": "20260909-nodejs-nodejs-24210-lts-48e7f627",
+      "toolName": "Node.js",
       "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/generic-methods",
-      "publishedAt": "2026-08-26T00:00:00.000Z",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v24.21.0",
+      "publishedAt": "2026-09-09T11:55:20.000Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Generic Methods",
-          "summary": "Generic Methods"
+          "title": "Node.js 24.21.0 (LTS)",
+          "summary": "Node.js 24.21.0 (LTS)"
         },
         "fr": {
-          "title": "Generic Methods",
-          "summary": "Generic Methods"
+          "title": "Node.js 24.21.0 (LTS)",
+          "summary": "Node.js 24.21.0 (LTS)"
+        }
+      }
+    },
+    {
+      "slug": "20260916-chatgpt-how-to-connect-ai-usage-to-business-value-5f7e182a",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+      "publishedAt": "2026-09-16T12:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "How to connect AI usage to business value",
+          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
+        },
+        "fr": {
+          "title": "How to connect AI usage to business value",
+          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
+        }
+      }
+    },
+    {
+      "slug": "20260824-w3c-making-digital-identity-work-across-the-web-gdc-2026-f09de87c",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/a-global-digital-infrastructure-gdc-2026/",
+      "publishedAt": "2026-08-24T07:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Making digital identity work across the Web: GDC 2026",
+          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
+        },
+        "fr": {
+          "title": "Making digital identity work across the Web: GDC 2026",
+          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
         }
       }
     },
@@ -783,42 +943,22 @@
       }
     },
     {
-      "slug": "20260915-vercel-gemini-38-live-models-now-available-on-ai-gateway-gemini--f5b57b43",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/gemini-3-8-live-models-now-available-on-ai-gateway",
-      "publishedAt": "2026-09-15T21:18:38.937Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "slug": "20260826-go-generic-methods-daf7f81f",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/generic-methods",
+      "publishedAt": "2026-08-26T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Gemini 3.8 Live models now available on AI Gateway Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking from Google are now available on Vercel AI Gateway for real-time audio conversations. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "15 September 15 Sep"
+          "title": "Generic Methods",
+          "summary": "Generic Methods"
         },
         "fr": {
-          "title": "Gemini 3.8 Live models now available on AI Gateway Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking from Google are now available on Vercel AI Gateway for real-time audio conversations. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "15 September 15 Sep"
-        }
-      }
-    },
-    {
-      "slug": "20260915-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/restore-credential-resync",
-      "publishedAt": "2026-09-15T21:18:38.937Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
-        },
-        "fr": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+          "title": "Generic Methods",
+          "summary": "Generic Methods"
         }
       }
     },
@@ -843,26 +983,6 @@
       }
     },
     {
-      "slug": "20260915-github-sha-1-in-https-on-github-sunset-10a67c97",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-15-sha-1-in-https-on-github-sunset",
-      "publishedAt": "2026-09-15T16:47:20.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "SHA-1 in HTTPS on GitHub sunset",
-          "summary": "Previously we announced we would be disabling SHA-1 in HTTPS for GitHub on September 15th, 2026. Following the planned schedule, GitHub has disabled SHA-1 in HTTPS for github.com and partner… The post SHA-1 in HTTPS on…"
-        },
-        "fr": {
-          "title": "SHA-1 in HTTPS on GitHub sunset",
-          "summary": "Previously we announced we would be disabling SHA-1 in HTTPS for GitHub on September 15th, 2026. Following the planned schedule, GitHub has disabled SHA-1 in HTTPS for github.com and partner… The post SHA-1 in HTTPS on…"
-        }
-      }
-    },
-    {
       "slug": "20260914-kubernetes-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -879,26 +999,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
           "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
-        }
-      }
-    },
-    {
-      "slug": "20260915-nvidia-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-a-6510d815",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
-      "publishedAt": "2026-09-15T16:42:44.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
-        },
-        "fr": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
         }
       }
     },
@@ -943,26 +1043,6 @@
       }
     },
     {
-      "slug": "20260911-cloudflare-introducing-automatic-remediation-policies-with-cloud-2250069f",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/casb-policies/",
-      "publishedAt": "2026-09-11T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Introducing automatic remediation policies with Cloudflare CASB",
-          "summary": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky f…"
-        },
-        "fr": {
-          "title": "Introducing automatic remediation policies with Cloudflare CASB",
-          "summary": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky f…"
-        }
-      }
-    },
-    {
       "slug": "20260910-nist-nist-developed-quantum-sensors-improve-nuclear-monitoring-f07e8993",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -979,26 +1059,6 @@
         "fr": {
           "title": "NIST-Developed Quantum Sensors Improve Nuclear Monitoring",
           "summary": "New X-ray measurements will allow scientists to more accurately monitor nuclear material at power plants and weapons facilities."
-        }
-      }
-    },
-    {
-      "slug": "20260911-openai-platform-cognition-helps-devin-test-its-own-work-with-gpt-c3aa3382",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/cognition-devin-testing-with-astra",
-      "publishedAt": "2026-09-11T16:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
-          "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more."
-        },
-        "fr": {
-          "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
-          "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more."
         }
       }
     },
@@ -1043,46 +1103,6 @@
       }
     },
     {
-      "slug": "20260728-w3c-woff-10-a-milestone-on-w3cs-journey-of-fonts-on-the-web-c48b749f",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/woff-1-0-a-milestone-on-w3cs-journey-of-fonts-on-the-web/",
-      "publishedAt": "2026-07-28T14:40:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "WOFF 1.0: a milestone on W3C’s journey of fonts on the web",
-          "summary": "The anniversary of the first public release of Web Open Font Format (WOFF) is a very interesting historical milestone on the decades-long road of W3C’s work on fonts on the web."
-        },
-        "fr": {
-          "title": "WOFF 1.0: a milestone on W3C’s journey of fonts on the web",
-          "summary": "The anniversary of the first public release of Web Open Font Format (WOFF) is a very interesting historical milestone on the decades-long road of W3C’s work on fonts on the web."
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-nodejs-2681-current-c52a0716",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.1",
-      "publishedAt": "2026-08-26T22:11:36.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.1 (Current)",
-          "summary": "Node.js 26.8.1 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.1 (Current)",
-          "summary": "Node.js 26.8.1 (Current)"
-        }
-      }
-    },
-    {
       "slug": "20260902-docker-building-reproducible-ai-evaluation-workflows-with-docker-401ff3f4",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -1123,22 +1143,162 @@
       }
     },
     {
-      "slug": "20260819-go-go-127-is-released-79127fb5",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/go1.27",
-      "publishedAt": "2026-08-19T00:00:00.000Z",
+      "slug": "20260916-vercel-is-agentic-now-tailors-its-audit-by-site-type-is-agentic--2c9062d3",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/is-agentic-report-categories",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "locales": {
+        "en": {
+          "title": "Is Agentic now tailors its audit by site type Is Agentic reports now let you view checks through four site types, highlighting what matters for your site without changing your score. Andrew Qu, Rich Haines",
+          "summary": "16 September 16 Sep"
+        },
+        "fr": {
+          "title": "Is Agentic now tailors its audit by site type Is Agentic reports now let you view checks through four site types, highlighting what matters for your site without changing your score. Andrew Qu, Rich Haines",
+          "summary": "16 September 16 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260916-supabase-developer-update---july-2026-14aef04c",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/47796-developer-update-july-2026",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "locales": {
+        "en": {
+          "title": "Developer Update - July 2026",
+          "summary": "Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
+        },
+        "fr": {
+          "title": "Developer Update - July 2026",
+          "summary": "Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
+        }
+      }
+    },
+    {
+      "slug": "20260915-nvidia-how-nvidia-groq-3-lpx-deterministic-execution-drives-powe-ce9893f8",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
+      "publishedAt": "2026-09-15T17:06:22.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+        },
+        "fr": {
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+        }
+      }
+    },
+    {
+      "slug": "20260915-github-enforce-github-advanced-security-configurations-12ae08f3",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-15-enforce-github-advanced-security-configurations",
+      "publishedAt": "2026-09-15T19:31:58.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "Enforce GitHub Advanced Security configurations",
+          "summary": "Enterprise administrators can now enforce GitHub Advanced Security configurations across their organizations. This prevents both organization and repository administrators from overriding settings defined at the enterpr…"
+        },
+        "fr": {
+          "title": "Enforce GitHub Advanced Security configurations",
+          "summary": "Enterprise administrators can now enforce GitHub Advanced Security configurations across their organizations. This prevents both organization and repository administrators from overriding settings defined at the enterpr…"
+        }
+      }
+    },
+    {
+      "slug": "20260911-cloudflare-introducing-automatic-remediation-policies-with-cloud-2250069f",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/casb-policies/",
+      "publishedAt": "2026-09-11T13:00:00.000Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Go 1.27 is released",
-          "summary": "Go 1.27 is released"
+          "title": "Introducing automatic remediation policies with Cloudflare CASB",
+          "summary": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky f…"
         },
         "fr": {
-          "title": "Go 1.27 is released",
-          "summary": "Go 1.27 is released"
+          "title": "Introducing automatic remediation policies with Cloudflare CASB",
+          "summary": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky f…"
+        }
+      }
+    },
+    {
+      "slug": "20260826-nodejs-nodejs-2681-current-c52a0716",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.1",
+      "publishedAt": "2026-08-26T22:11:36.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.1 (Current)",
+          "summary": "Node.js 26.8.1 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.1 (Current)",
+          "summary": "Node.js 26.8.1 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260916-openai-platform-how-workers-are-unlocking-new-ways-of-working-71646fff",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/unlocking-new-ways-of-working",
+      "publishedAt": "2026-09-16T09:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "How workers are unlocking new ways of working",
+          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
+        },
+        "fr": {
+          "title": "How workers are unlocking new ways of working",
+          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
+        }
+      }
+    },
+    {
+      "slug": "20260728-w3c-woff-10-a-milestone-on-w3cs-journey-of-fonts-on-the-web-c48b749f",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/woff-1-0-a-milestone-on-w3cs-journey-of-fonts-on-the-web/",
+      "publishedAt": "2026-07-28T14:40:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "WOFF 1.0: a milestone on W3C’s journey of fonts on the web",
+          "summary": "The anniversary of the first public release of Web Open Font Format (WOFF) is a very interesting historical milestone on the decades-long road of W3C’s work on fonts on the web."
+        },
+        "fr": {
+          "title": "WOFF 1.0: a milestone on W3C’s journey of fonts on the web",
+          "summary": "The anniversary of the first public release of Web Open Font Format (WOFF) is a very interesting historical milestone on the decades-long road of W3C’s work on fonts on the web."
         }
       }
     },
@@ -1163,42 +1323,22 @@
       }
     },
     {
-      "slug": "20260915-vercel-control-who-can-manage-connectors-in-vercel-connect-verce-3e6c19c6",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/control-who-can-manage-connectors-in-vercel-connect",
-      "publishedAt": "2026-09-15T21:18:38.937Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
-          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard"
-        },
-        "fr": {
-          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
-          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard"
-        }
-      }
-    },
-    {
-      "slug": "20260915-postgresql-logconnections-is-to-be-turned-off-by-default-for-new-34ce372d",
-      "toolName": "PostgreSQL",
+      "slug": "20260819-go-go-127-is-released-79127fb5",
+      "toolName": "Go",
       "category": "Systems & Backend",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/47197-log-connections-is-to-be-turned-off-by-default-for-new-projects-and-existing-free-pro-projects",
-      "publishedAt": "2026-09-15T11:41:28.047Z",
-      "discoveredAt": "2026-09-15T11:41:28.047Z",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/go1.27",
+      "publishedAt": "2026-08-19T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
-          "summary": "Improvement Postgres log_connections defaults to off for new projects and existin"
+          "title": "Go 1.27 is released",
+          "summary": "Go 1.27 is released"
         },
         "fr": {
-          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
-          "summary": "Improvement Postgres log_connections defaults to off for new projects and existin"
+          "title": "Go 1.27 is released",
+          "summary": "Go 1.27 is released"
         }
       }
     },
@@ -1223,26 +1363,6 @@
       }
     },
     {
-      "slug": "20260914-github-copilot-configure-cost-and-quality-in-copilot-auto-model--91704e3c",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
-      "publishedAt": "2026-09-14T16:05:27.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
-      "locales": {
-        "en": {
-          "title": "Configure cost and quality in Copilot auto model selection",
-          "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for… The post Configure cost a…"
-        },
-        "fr": {
-          "title": "Configure cost and quality in Copilot auto model selection",
-          "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for… The post Configure cost a…"
-        }
-      }
-    },
-    {
       "slug": "20260911-github-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
       "toolName": "GitHub",
       "category": "Developer Platform",
@@ -1259,26 +1379,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
           "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 und…"
-        }
-      }
-    },
-    {
-      "slug": "20260915-docker-scaling-federated-learning-across-docker-kubernetes-and-s-c2ceacd6",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/scaling-federated-learning-across-docker-kubernetes-and-slurm-with-nvidia-flare/",
-      "publishedAt": "2026-09-15T02:49:31.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "Scaling Federated Learning Across Docker, Kubernetes, and Slurm with NVIDIA FLARE",
-          "summary": "Federated learning (FL) projects often begin with a straightforward setup: one server, a few clients, and one dataset at each site. As those projects grow, the..."
-        },
-        "fr": {
-          "title": "Scaling Federated Learning Across Docker, Kubernetes, and Slurm with NVIDIA FLARE",
-          "summary": "Federated learning (FL) projects often begin with a straightforward setup: one server, a few clients, and one dataset at each site. As those projects grow, the..."
         }
       }
     },
@@ -1323,26 +1423,6 @@
       }
     },
     {
-      "slug": "20260910-cloudflare-1111-now-supports-post-quantum-dnssec-all-2420-bytes--ed3eedaf",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
-      "publishedAt": "2026-09-10T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
-          "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale."
-        },
-        "fr": {
-          "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
-          "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale."
-        }
-      }
-    },
-    {
       "slug": "20260824-nist-nist-researchers-supersize-quantum-technology-to-help-detec-a6c33e64",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -1359,26 +1439,6 @@
         "fr": {
           "title": "NIST Researchers Supersize Quantum Technology to Help Detect Faint Photons",
           "summary": "Our everyday life is flooded with photons, the quantum building blocks of light. For cutting-edge technology, from quantum computing to deep-tissue imaging, detecting every single photon counts. “Photons carry informati…"
-        }
-      }
-    },
-    {
-      "slug": "20260911-chatgpt-rapidly-scaling-online-storage-to-serve-over-1-billion-c-c7d3c8ae",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-      "publishedAt": "2026-09-11T10:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-          "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second."
-        },
-        "fr": {
-          "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-          "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second."
         }
       }
     },
@@ -1423,46 +1483,6 @@
       }
     },
     {
-      "slug": "20260724-w3c-simplified-task-force-enrollment-and-participant-management-e7ce2f82",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/task-force-participation-management/",
-      "publishedAt": "2026-07-24T10:35:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Simplified task force enrollment and participant management",
-          "summary": "This blog post is about incremental improvements by W3C's IT/Systems Operations Team that puts task force participation management directly in the hands of participants and chairs."
-        },
-        "fr": {
-          "title": "Simplified task force enrollment and participant management",
-          "summary": "This blog post is about incremental improvements by W3C's IT/Systems Operations Team that puts task force participation management directly in the hands of participants and chairs."
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-nodejs-2680-current-1f44590f",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.0",
-      "publishedAt": "2026-08-26T14:29:48.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.0 (Current)",
-          "summary": "Node.js 26.8.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.0 (Current)",
-          "summary": "Node.js 26.8.0 (Current)"
-        }
-      }
-    },
-    {
       "slug": "20260902-docker-below-the-harness-governing-a-multi-model-multi-harness-w-68dc5609",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -1503,22 +1523,162 @@
       }
     },
     {
-      "slug": "20260521-go-introducing-the-pkggodev-api-ca05a4f1",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/pkgsite-api",
-      "publishedAt": "2026-05-21T00:00:00.000Z",
+      "slug": "20260916-vercel-vercel-sandbox-now-provides-64-gb-of-storage-vercel-sandb-a8941f9b",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/vercel-sandbox-64-gb-storage",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "locales": {
+        "en": {
+          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
+          "summary": "11 September 11 Sep"
+        },
+        "fr": {
+          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
+          "summary": "11 September 11 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260915-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/restore-credential-resync",
+      "publishedAt": "2026-09-15T21:18:38.937Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+        },
+        "fr": {
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+        }
+      }
+    },
+    {
+      "slug": "20260915-nvidia-dense-vs-moe-models-active-parameters-throughput-and-when-3f75c866",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
+      "publishedAt": "2026-09-15T17:00:18.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+        },
+        "fr": {
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+        }
+      }
+    },
+    {
+      "slug": "20260915-github-copilot-github-copilot-suggests-custom-properties-definit-e594f69e",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
+      "publishedAt": "2026-09-15T19:07:47.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Copilot suggests custom properties definitions",
+          "summary": "GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot s…"
+        },
+        "fr": {
+          "title": "GitHub Copilot suggests custom properties definitions",
+          "summary": "GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot s…"
+        }
+      }
+    },
+    {
+      "slug": "20260910-cloudflare-1111-now-supports-post-quantum-dnssec-all-2420-bytes--ed3eedaf",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
+      "publishedAt": "2026-09-10T13:00:00.000Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Introducing the pkg.go.dev API",
-          "summary": "Introducing the pkg.go.dev API"
+          "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
+          "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale."
         },
         "fr": {
-          "title": "Introducing the pkg.go.dev API",
-          "summary": "Introducing the pkg.go.dev API"
+          "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
+          "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale."
+        }
+      }
+    },
+    {
+      "slug": "20260826-nodejs-nodejs-2680-current-1f44590f",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.0",
+      "publishedAt": "2026-08-26T14:29:48.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.0 (Current)",
+          "summary": "Node.js 26.8.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.0 (Current)",
+          "summary": "Node.js 26.8.0 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260914-openai-platform-how-fyxer-built-an-ai-executive-assistant-people-296d33de",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/fyxer",
+      "publishedAt": "2026-09-14T12:00:00.000Z",
+      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "locales": {
+        "en": {
+          "title": "How Fyxer built an AI executive assistant people trust",
+          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
+        },
+        "fr": {
+          "title": "How Fyxer built an AI executive assistant people trust",
+          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
+        }
+      }
+    },
+    {
+      "slug": "20260724-w3c-simplified-task-force-enrollment-and-participant-management-e7ce2f82",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/task-force-participation-management/",
+      "publishedAt": "2026-07-24T10:35:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Simplified task force enrollment and participant management",
+          "summary": "This blog post is about incremental improvements by W3C's IT/Systems Operations Team that puts task force participation management directly in the hands of participants and chairs."
+        },
+        "fr": {
+          "title": "Simplified task force enrollment and participant management",
+          "summary": "This blog post is about incremental improvements by W3C's IT/Systems Operations Team that puts task force participation management directly in the hands of participants and chairs."
         }
       }
     },
@@ -1543,42 +1703,22 @@
       }
     },
     {
-      "slug": "20260915-github-copilot-github-copilot-is-now-available-in-the-ai-sdk-har-6dde567f",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/github-copilot-ai-sdk-harness-adapter",
-      "publishedAt": "2026-09-15T21:18:38.937Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "slug": "20260521-go-introducing-the-pkggodev-api-ca05a4f1",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/pkgsite-api",
+      "publishedAt": "2026-05-21T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "GitHub Copilot is now available in the AI SDK harness layer GitHub Copilot now runs through the AI SDK harness layer via @ai-sdk/harness-github-copilot, using the same HarnessAgent interface as every other supported harness. Felix Arntz Software Engineer",
-          "summary": "10 September 10 Sep"
+          "title": "Introducing the pkg.go.dev API",
+          "summary": "Introducing the pkg.go.dev API"
         },
         "fr": {
-          "title": "GitHub Copilot is now available in the AI SDK harness layer GitHub Copilot now runs through the AI SDK harness layer via @ai-sdk/harness-github-copilot, using the same HarnessAgent interface as every other supported harness. Felix Arntz Software Engineer",
-          "summary": "10 September 10 Sep"
-        }
-      }
-    },
-    {
-      "slug": "20260913-supabase-observability-on-auto-pilot-c67c31c0",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/observability-autopilot",
-      "publishedAt": "2026-09-13T00:00:00.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "Sep 13, 2026"
-        },
-        "fr": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "Sep 13, 2026"
+          "title": "Introducing the pkg.go.dev API",
+          "summary": "Introducing the pkg.go.dev API"
         }
       }
     },
@@ -1603,26 +1743,6 @@
       }
     },
     {
-      "slug": "20260911-github-profiles-now-show-your-highest-achievement-badge-tier-cd6d3521",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-11-profiles-now-show-your-highest-achievement-badge-tier",
-      "publishedAt": "2026-09-11T22:39:50.000Z",
-      "discoveredAt": "2026-09-15T11:41:28.047Z",
-      "locales": {
-        "en": {
-          "title": "Profiles now show your highest achievement badge tier",
-          "summary": "Your GitHub profile now displays the highest tier you’ve earned for achievements with multiple levels. Previously, profiles could display the first tier earned, even after you had progressed to a… The post Profiles now…"
-        },
-        "fr": {
-          "title": "Profiles now show your highest achievement badge tier",
-          "summary": "Your GitHub profile now displays the highest tier you’ve earned for achievements with multiple levels. Previously, profiles could display the first tier earned, even after you had progressed to a… The post Profiles now…"
-        }
-      }
-    },
-    {
       "slug": "20260910-kubernetes-kubernetes-v137-scheduler-preemption-for-in-place-pod-e2763381",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -1639,26 +1759,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
           "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.…"
-        }
-      }
-    },
-    {
-      "slug": "20260914-nvidia-accelerating-dropless-moe-training-in-jax-with-nvidia-tra-833c207b",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/",
-      "publishedAt": "2026-09-14T16:39:23.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
-      "locales": {
-        "en": {
-          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
-          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
-        },
-        "fr": {
-          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
-          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
         }
       }
     },
@@ -1703,26 +1803,6 @@
       }
     },
     {
-      "slug": "20260909-cloudflare-how-we-rebuilt-cloudflare-workers-module-registry-for-7eed123a",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
-      "publishedAt": "2026-09-09T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
-          "summary": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors."
-        },
-        "fr": {
-          "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
-          "summary": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors."
-        }
-      }
-    },
-    {
       "slug": "20260813-nist-nist-national-construction-safety-team-advisory-committee-m-7564f265",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -1739,26 +1819,6 @@
         "fr": {
           "title": "NIST National Construction Safety Team Advisory Committee Meeting Scheduled for Sept. 23 and 24, 2026",
           "summary": "Anyone wishing to attend the virtual meeting must register by 5 p.m. EDT on Wednesday, Sept. 16."
-        }
-      }
-    },
-    {
-      "slug": "20260910-chatgpt-how-a-researcher-uses-codex-and-chatgpt-to-search-for-ne-01415994",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
-      "publishedAt": "2026-09-10T16:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
-          "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections."
-        },
-        "fr": {
-          "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
-          "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections."
         }
       }
     },
@@ -1803,46 +1863,6 @@
       }
     },
     {
-      "slug": "20260720-w3c-threat-modeling-age-based-content-restrictions-what-we-learn-e65ac026",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/threat-modeling-age-based-content-restrictions-what-we-learned-at-eic-2026/",
-      "publishedAt": "2026-07-20T09:23:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Threat modeling age-based content restrictions: what we learned at EIC 2026",
-          "summary": "At the European Identity and Cloud Conference (EIC 2026) in Berlin, we explored how Threat Modeling with LEGO® SERIOUS PLAY® can help uncover security, privacy, and human-rights threats in age-based content restriction…"
-        },
-        "fr": {
-          "title": "Threat modeling age-based content restrictions: what we learned at EIC 2026",
-          "summary": "At the European Identity and Cloud Conference (EIC 2026) in Berlin, we explored how Threat Modeling with LEGO® SERIOUS PLAY® can help uncover security, privacy, and human-rights threats in age-based content restriction…"
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-nodejs-24200-lts-2b040562",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v24.20.0",
-      "publishedAt": "2026-08-26T14:29:42.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 24.20.0 (LTS)",
-          "summary": "Node.js 24.20.0 (LTS)"
-        },
-        "fr": {
-          "title": "Node.js 24.20.0 (LTS)",
-          "summary": "Node.js 24.20.0 (LTS)"
-        }
-      }
-    },
-    {
       "slug": "20260831-docker-secure-by-default-is-your-only-way-forward-a7538814",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -1883,6 +1903,166 @@
       }
     },
     {
+      "slug": "20260915-vercel-gemini-38-live-models-now-available-on-ai-gateway-gemini--f5b57b43",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/gemini-3-8-live-models-now-available-on-ai-gateway",
+      "publishedAt": "2026-09-15T21:18:38.937Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "Gemini 3.8 Live models now available on AI Gateway Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking from Google are now available on Vercel AI Gateway for real-time audio conversations. Kevin Dawkins, Zachary Chen, and 1 other",
+          "summary": "15 September 15 Sep"
+        },
+        "fr": {
+          "title": "Gemini 3.8 Live models now available on AI Gateway Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking from Google are now available on Vercel AI Gateway for real-time audio conversations. Kevin Dawkins, Zachary Chen, and 1 other",
+          "summary": "15 September 15 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260915-postgresql-logconnections-is-to-be-turned-off-by-default-for-new-34ce372d",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/47197-log-connections-is-to-be-turned-off-by-default-for-new-projects-and-existing-free-pro-projects",
+      "publishedAt": "2026-09-15T11:41:28.047Z",
+      "discoveredAt": "2026-09-15T11:41:28.047Z",
+      "locales": {
+        "en": {
+          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
+          "summary": "Improvement Postgres log_connections defaults to off for new projects and existin"
+        },
+        "fr": {
+          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
+          "summary": "Improvement Postgres log_connections defaults to off for new projects and existin"
+        }
+      }
+    },
+    {
+      "slug": "20260915-nvidia-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-a-6510d815",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
+      "publishedAt": "2026-09-15T16:42:44.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
+          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
+        },
+        "fr": {
+          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
+          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
+        }
+      }
+    },
+    {
+      "slug": "20260915-github-sha-1-in-https-on-github-sunset-10a67c97",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-15-sha-1-in-https-on-github-sunset",
+      "publishedAt": "2026-09-15T16:47:20.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "SHA-1 in HTTPS on GitHub sunset",
+          "summary": "Previously we announced we would be disabling SHA-1 in HTTPS for GitHub on September 15th, 2026. Following the planned schedule, GitHub has disabled SHA-1 in HTTPS for github.com and partner… The post SHA-1 in HTTPS on…"
+        },
+        "fr": {
+          "title": "SHA-1 in HTTPS on GitHub sunset",
+          "summary": "Previously we announced we would be disabling SHA-1 in HTTPS for GitHub on September 15th, 2026. Following the planned schedule, GitHub has disabled SHA-1 in HTTPS for github.com and partner… The post SHA-1 in HTTPS on…"
+        }
+      }
+    },
+    {
+      "slug": "20260909-cloudflare-how-we-rebuilt-cloudflare-workers-module-registry-for-7eed123a",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
+      "publishedAt": "2026-09-09T13:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
+          "summary": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors."
+        },
+        "fr": {
+          "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
+          "summary": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors."
+        }
+      }
+    },
+    {
+      "slug": "20260826-nodejs-nodejs-24200-lts-2b040562",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v24.20.0",
+      "publishedAt": "2026-08-26T14:29:42.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 24.20.0 (LTS)",
+          "summary": "Node.js 24.20.0 (LTS)"
+        },
+        "fr": {
+          "title": "Node.js 24.20.0 (LTS)",
+          "summary": "Node.js 24.20.0 (LTS)"
+        }
+      }
+    },
+    {
+      "slug": "20260914-perplexity-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-12e9dd68",
+      "toolName": "Perplexity",
+      "category": "Research Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "publishedAt": "2026-09-14T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "locales": {
+        "en": {
+          "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+          "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
+        },
+        "fr": {
+          "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+          "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
+        }
+      }
+    },
+    {
+      "slug": "20260720-w3c-threat-modeling-age-based-content-restrictions-what-we-learn-e65ac026",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/threat-modeling-age-based-content-restrictions-what-we-learned-at-eic-2026/",
+      "publishedAt": "2026-07-20T09:23:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Threat modeling age-based content restrictions: what we learned at EIC 2026",
+          "summary": "At the European Identity and Cloud Conference (EIC 2026) in Berlin, we explored how Threat Modeling with LEGO® SERIOUS PLAY® can help uncover security, privacy, and human-rights threats in age-based content restriction…"
+        },
+        "fr": {
+          "title": "Threat modeling age-based content restrictions: what we learned at EIC 2026",
+          "summary": "At the European Identity and Cloud Conference (EIC 2026) in Berlin, we explored how Threat Modeling with LEGO® SERIOUS PLAY® can help uncover security, privacy, and human-rights threats in age-based content restriction…"
+        }
+      }
+    },
+    {
       "slug": "20260813-notion-model-selection-simplified-c763aea8",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1899,46 +2079,6 @@
         "fr": {
           "title": "Model selection, simplified",
           "summary": "August 14, 2026"
-        }
-      }
-    },
-    {
-      "slug": "20260915-vercel-ai-sdk-harness-layer-now-supports-native-subscription-aut-478b2e53",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/ai-sdk-harness-native-subscription-authentication",
-      "publishedAt": "2026-09-15T11:41:28.047Z",
-      "discoveredAt": "2026-09-15T11:41:28.047Z",
-      "locales": {
-        "en": {
-          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
-          "summary": "14 September 14 Sep"
-        },
-        "fr": {
-          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
-          "summary": "14 September 14 Sep"
-        }
-      }
-    },
-    {
-      "slug": "20260912-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
-        },
-        "fr": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
         }
       }
     },
@@ -1963,26 +2103,6 @@
       }
     },
     {
-      "slug": "20260911-github-copilot-add-vs-code-agents-to-copilot-usage-metrics-ed5843bd",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics",
-      "publishedAt": "2026-09-11T21:30:30.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Add VS Code Agents to Copilot usage metrics",
-          "summary": "GitHub Copilot usage metrics reports now include generally available metrics for activity in the dedicated VS Code Agents window, helping you measure adoption and engagement across enterprises and organizations. What’s……"
-        },
-        "fr": {
-          "title": "Add VS Code Agents to Copilot usage metrics",
-          "summary": "GitHub Copilot usage metrics reports now include generally available metrics for activity in the dedicated VS Code Agents window, helping you measure adoption and engagement across enterprises and organizations. What’s……"
-        }
-      }
-    },
-    {
       "slug": "20260909-kubernetes-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -1999,26 +2119,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
           "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kuberne…"
-        }
-      }
-    },
-    {
-      "slug": "20260911-nvidia-from-wafer-out-to-first-token-codifying-supply-chain-expe-d23b90bc",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/from-wafer-out-to-first-token-codifying-supply-chain-expertise-with-nemotron-and-palantir-foundry/",
-      "publishedAt": "2026-09-11T23:57:34.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "From Wafer-Out to First Token: Codifying Supply Chain Expertise with Nemotron and Palantir Foundry",
-          "summary": "NVIDIA has one of the largest and most complex supply chains in the world, and its performance is measured from wafer-out to first token. The interval is in two..."
-        },
-        "fr": {
-          "title": "From Wafer-Out to First Token: Codifying Supply Chain Expertise with Nemotron and Palantir Foundry",
-          "summary": "NVIDIA has one of the largest and most complex supply chains in the world, and its performance is measured from wafer-out to first token. The interval is in two..."
         }
       }
     },
@@ -2063,26 +2163,6 @@
       }
     },
     {
-      "slug": "20260908-cloudflare-automatic-key-exchange-faster-post-quantum-secure-ori-de2784be",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
-      "publishedAt": "2026-09-08T13:10:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
-          "summary": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum con…"
-        },
-        "fr": {
-          "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
-          "summary": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum con…"
-        }
-      }
-    },
-    {
       "slug": "20260806-nist-nist-researchers-correct-common-error-confounding-nanotech--a0f88ab3",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -2099,26 +2179,6 @@
         "fr": {
           "title": "NIST Researchers Correct Common Error Confounding Nanotech Measurements",
           "summary": "The scientists offer a practical solution that relies on accounting for measurement errors before testing materials or developing products."
-        }
-      }
-    },
-    {
-      "slug": "20260910-chatgpt-now-everyone-can-put-data-to-work-4d4e7920",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/put-data-to-work",
-      "publishedAt": "2026-09-10T15:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "Now everyone can put data to work",
-          "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language."
-        },
-        "fr": {
-          "title": "Now everyone can put data to work",
-          "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language."
         }
       }
     },
@@ -2163,22 +2223,142 @@
       }
     },
     {
-      "slug": "20260715-w3c-css-animations-human-rights-and-big-accessibility-at-the-ab--16ec8247",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/css-animations-human-rights-and-big-accessibility-at-the-ab-web-meetup/",
-      "publishedAt": "2026-07-15T15:29:00.000Z",
+      "slug": "20260825-docker-moving-from-minimus-to-docker-hardened-images-7e216419",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/moving-from-minimus-to-docker-hardened-images/",
+      "publishedAt": "2026-08-25T22:27:06.000Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "CSS animations, human rights, and big accessibility at the AB Web Meetup",
-          "summary": "On 2 July 2026 , the W3C Advisory Board organised a meetup around the web and web standards. It featured three talks and had time to mingle."
+          "title": "Moving from Minimus to Docker Hardened Images",
+          "summary": "The Minimus registry goes offline on October 22. Here is the migration path, the free help Docker is offering, and where to start."
         },
         "fr": {
-          "title": "CSS animations, human rights, and big accessibility at the AB Web Meetup",
-          "summary": "On 2 July 2026 , the W3C Advisory Board organised a meetup around the web and web standards. It featured three talks and had time to mingle."
+          "title": "Moving from Minimus to Docker Hardened Images",
+          "summary": "The Minimus registry goes offline on October 22. Here is the migration path, the free help Docker is offering, and where to start."
+        }
+      }
+    },
+    {
+      "slug": "20260820-rust-supply-chain-attack-on-arrayref-14062eb1",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
+      "publishedAt": "2026-08-20T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Supply chain attack on arrayref",
+          "summary": "What happened On 2026-08-20 at 7:15 UTC we got a report that the proc-macro1 crate was malicious. The Rust Security Response Team verified this to be the case: the crate had a build script that was downloading a malicio…"
+        },
+        "fr": {
+          "title": "Supply chain attack on arrayref",
+          "summary": "What happened On 2026-08-20 at 7:15 UTC we got a report that the proc-macro1 crate was malicious. The Rust Security Response Team verified this to be the case: the crate had a build script that was downloading a malicio…"
+        }
+      }
+    },
+    {
+      "slug": "20260915-vercel-control-who-can-manage-connectors-in-vercel-connect-verce-3e6c19c6",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/control-who-can-manage-connectors-in-vercel-connect",
+      "publishedAt": "2026-09-15T21:18:38.937Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
+          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard"
+        },
+        "fr": {
+          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
+          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard"
+        }
+      }
+    },
+    {
+      "slug": "20260913-supabase-observability-on-auto-pilot-d72f6df8",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/50403-observability-autopilot",
+      "publishedAt": "2026-09-13T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Observability on Auto-Pilot",
+          "summary": "Sep 13, 2026"
+        },
+        "fr": {
+          "title": "Observability on Auto-Pilot",
+          "summary": "Sep 13, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20260915-docker-scaling-federated-learning-across-docker-kubernetes-and-s-c2ceacd6",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/scaling-federated-learning-across-docker-kubernetes-and-slurm-with-nvidia-flare/",
+      "publishedAt": "2026-09-15T02:49:31.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "Scaling Federated Learning Across Docker, Kubernetes, and Slurm with NVIDIA FLARE",
+          "summary": "Federated learning (FL) projects often begin with a straightforward setup: one server, a few clients, and one dataset at each site. As those projects grow, the..."
+        },
+        "fr": {
+          "title": "Scaling Federated Learning Across Docker, Kubernetes, and Slurm with NVIDIA FLARE",
+          "summary": "Federated learning (FL) projects often begin with a straightforward setup: one server, a few clients, and one dataset at each site. As those projects grow, the..."
+        }
+      }
+    },
+    {
+      "slug": "20260914-github-copilot-configure-cost-and-quality-in-copilot-auto-model--91704e3c",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
+      "publishedAt": "2026-09-14T16:05:27.000Z",
+      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "locales": {
+        "en": {
+          "title": "Configure cost and quality in Copilot auto model selection",
+          "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for… The post Configure cost a…"
+        },
+        "fr": {
+          "title": "Configure cost and quality in Copilot auto model selection",
+          "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for… The post Configure cost a…"
+        }
+      }
+    },
+    {
+      "slug": "20260908-cloudflare-automatic-key-exchange-faster-post-quantum-secure-ori-de2784be",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
+      "publishedAt": "2026-09-08T13:10:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
+          "summary": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum con…"
+        },
+        "fr": {
+          "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
+          "summary": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum con…"
         }
       }
     },
@@ -2203,202 +2383,22 @@
       }
     },
     {
-      "slug": "20260825-docker-moving-from-minimus-to-docker-hardened-images-7e216419",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/moving-from-minimus-to-docker-hardened-images/",
-      "publishedAt": "2026-08-25T22:27:06.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Moving from Minimus to Docker Hardened Images",
-          "summary": "The Minimus registry goes offline on October 22. Here is the migration path, the free help Docker is offering, and where to start."
-        },
-        "fr": {
-          "title": "Moving from Minimus to Docker Hardened Images",
-          "summary": "The Minimus registry goes offline on October 22. Here is the migration path, the free help Docker is offering, and where to start."
-        }
-      }
-    },
-    {
-      "slug": "20260820-rust-announcing-rust-1980-3f795da6",
-      "toolName": "Rust",
-      "category": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/08/20/Rust-1.98.0/",
-      "publishedAt": "2026-08-20T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
-      "locales": {
-        "en": {
-          "title": "Announcing Rust 1.98.0",
-          "summary": "The Rust team is happy to announce a new version of Rust, 1.98.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
-        },
-        "fr": {
-          "title": "Announcing Rust 1.98.0",
-          "summary": "The Rust team is happy to announce a new version of Rust, 1.98.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
-        }
-      }
-    },
-    {
-      "slug": "20260806-notion-share-context-with-custom-agents-from-the-share-menu-ef5ed809",
-      "toolName": "Notion",
-      "category": "Productivity Workspace",
-      "source": "Notion Releases",
-      "sourceFeed": "https://www.notion.so/releases",
-      "href": "https://www.notion.so/releases/2026-08-07",
-      "publishedAt": "2026-08-06T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Share context with Custom Agents from the Share menu",
-          "summary": "August 7, 2026"
-        },
-        "fr": {
-          "title": "Share context with Custom Agents from the Share menu",
-          "summary": "August 7, 2026"
-        }
-      }
-    },
-    {
-      "slug": "20260915-cursor-fastapi-frontends-and-static-files-served-from-the-cdn-fa-9fcb8395",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/fastapi-frontends-and-static-files-served-from-the-cdn",
-      "publishedAt": "2026-09-15T11:41:28.047Z",
-      "discoveredAt": "2026-09-15T11:41:28.047Z",
-      "locales": {
-        "en": {
-          "title": "FastAPI frontends and static files served from the CDN FastAPI frontends and static files are now promoted to the Vercel CDN at build time and served without invoking your Vercel Function. Daniel Park Software Engineer",
-          "summary": "Felix Arntz Software Engineer"
-        },
-        "fr": {
-          "title": "FastAPI frontends and static files served from the CDN FastAPI frontends and static files are now promoted to the Vercel CDN at build time and served without invoking your Vercel Function. Daniel Park Software Engineer",
-          "summary": "Felix Arntz Software Engineer"
-        }
-      }
-    },
-    {
-      "slug": "20260912-supabase-migration-of-supabase-management-api-logsall-analytics--b021c0b5",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/48235-migration-of-supabase-management-api-logs-all-analytics-endpoint-to-logs-endpoint",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
-          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
-        },
-        "fr": {
-          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
-          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
-        }
-      }
-    },
-    {
-      "slug": "20260905-postgresql-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
-      "publishedAt": "2026-09-05T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 20…"
-        },
-        "fr": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 20…"
-        }
-      }
-    },
-    {
-      "slug": "20260911-github-copilot-auto-resolution-and-analysis-updates-in-copilot-c-850b6df2",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review",
-      "publishedAt": "2026-09-11T20:00:07.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Auto-resolution and analysis updates in Copilot code review",
-          "summary": "Copilot code review now resolves its own comments once you address them and writes smart commit messages for you when you apply its code suggestions. Behind the scenes, Copilot now… The post Auto-resolution and analysis…"
-        },
-        "fr": {
-          "title": "Auto-resolution and analysis updates in Copilot code review",
-          "summary": "Copilot code review now resolves its own comments once you address them and writes smart commit messages for you when you apply its code suggestions. Behind the scenes, Copilot now… The post Auto-resolution and analysis…"
-        }
-      }
-    },
-    {
-      "slug": "20260908-kubernetes-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
-      "publishedAt": "2026-09-08T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next ma…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next ma…"
-        }
-      }
-    },
-    {
-      "slug": "20260910-nvidia-how-full-stack-nim-optimizations-deliver-25x-more-users-o-2abc4ceb",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-full-stack-nim-optimizations-deliver-2-5x-more-users-on-nemotron-3-ultra/",
-      "publishedAt": "2026-09-10T16:55:39.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "How Full-Stack NIM Optimizations Deliver 2.5x More Users on Nemotron 3 Ultra",
-          "summary": "Deploying a large language model is only the first step toward production-ready serving. Production teams also need to serve as many concurrent users as..."
-        },
-        "fr": {
-          "title": "How Full-Stack NIM Optimizations Deliver 2.5x More Users on Nemotron 3 Ultra",
-          "summary": "Deploying a large language model is only the first step toward production-ready serving. Production teams also need to serve as many concurrent users as..."
-        }
-      }
-    },
-    {
-      "slug": "20260903-hugging-face-give-your-coding-agents-a-memory-you-own-86b47b47",
-      "toolName": "Hugging Face",
+      "slug": "20260911-openai-platform-cognition-helps-devin-test-its-own-work-with-gpt-c3aa3382",
+      "toolName": "OpenAI Platform",
       "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/funes",
-      "publishedAt": "2026-09-03T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "publishedAt": "2026-09-11T16:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:51.384Z",
       "locales": {
         "en": {
-          "title": "Give Your Coding Agents a Memory You Own",
-          "summary": "Give Your Coding Agents a Memory You Own"
+          "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+          "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more."
         },
         "fr": {
-          "title": "Give Your Coding Agents a Memory You Own",
-          "summary": "Give Your Coding Agents a Memory You Own"
+          "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+          "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more."
         }
       }
     }
