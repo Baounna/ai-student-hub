@@ -1,44 +1,84 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T21:18:38.937Z",
+  "updatedAt": "2026-09-16T11:28:36.810Z",
   "items": [
     {
-      "slug": "20260915-vercel-gemini-38-live-models-now-available-on-ai-gateway-gemini--f5b57b43",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/gemini-3-8-live-models-now-available-on-ai-gateway",
-      "publishedAt": "2026-09-15T21:18:38.937Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "slug": "20260916-notion-notion-37-agent-skills-for-your-whole-team-cd21ad33",
+      "toolName": "Notion",
+      "category": "Productivity Workspace",
+      "source": "Notion Releases",
+      "sourceFeed": "https://www.notion.so/releases",
+      "href": "https://www.notion.so/releases/2026-09-15",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
       "locales": {
         "en": {
-          "title": "Gemini 3.8 Live models now available on AI Gateway Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking from Google are now available on Vercel AI Gateway for real-time audio conversations. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "15 September 15 Sep"
+          "title": "Notion 3.7: Agent skills for your whole team",
+          "summary": "3.7"
         },
         "fr": {
-          "title": "Gemini 3.8 Live models now available on AI Gateway Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking from Google are now available on Vercel AI Gateway for real-time audio conversations. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "15 September 15 Sep"
+          "title": "Notion 3.7: Agent skills for your whole team",
+          "summary": "3.7"
         }
       }
     },
     {
-      "slug": "20260915-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
+      "slug": "20260916-vercel-is-agentic-now-tailors-its-audit-by-site-type-is-agentic--2c9062d3",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/is-agentic-report-categories",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "locales": {
+        "en": {
+          "title": "Is Agentic now tailors its audit by site type Is Agentic reports now let you view checks through four site types, highlighting what matters for your site without changing your score. Andrew Qu, Rich Haines",
+          "summary": "16 September 16 Sep"
+        },
+        "fr": {
+          "title": "Is Agentic now tailors its audit by site type Is Agentic reports now let you view checks through four site types, highlighting what matters for your site without changing your score. Andrew Qu, Rich Haines",
+          "summary": "16 September 16 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260916-supabase-deprecation-notice-supabasesupabase-js-will-require-typ-31c8f33a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/restore-credential-resync",
-      "publishedAt": "2026-09-15T21:18:38.937Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "href": "https://supabase.com/changelog/47812-deprecation-notice-supabase-supabase-js-will-require-typescript-5-0",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
       "locales": {
         "en": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
+          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
         },
         "fr": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
+          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
+        }
+      }
+    },
+    {
+      "slug": "20260916-github-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "locales": {
+        "en": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Dia…"
+        },
+        "fr": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Dia…"
         }
       }
     },
@@ -59,6 +99,26 @@
         "fr": {
           "title": "Enforce GitHub Advanced Security configurations",
           "summary": "Enterprise administrators can now enforce GitHub Advanced Security configurations across their organizations. This prevents both organization and repository administrators from overriding settings defined at the enterpr…"
+        }
+      }
+    },
+    {
+      "slug": "20260915-kubernetes-kubernetes-v137-pod-level-resource-managers-graduated-993e015b",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
+      "publishedAt": "2026-09-15T18:30:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
         }
       }
     },
@@ -163,26 +223,6 @@
       }
     },
     {
-      "slug": "20260914-kubernetes-kubernetes-changed-block-tracking-api---beta-differen-081539c8",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
-      "publishedAt": "2026-09-14T18:30:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
-          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
-        },
-        "fr": {
-          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
-          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
-        }
-      }
-    },
-    {
       "slug": "20260914-openai-platform-how-fyxer-built-an-ai-executive-assistant-people-296d33de",
       "toolName": "OpenAI Platform",
       "category": "AI Platform",
@@ -223,26 +263,6 @@
       }
     },
     {
-      "slug": "20260912-notion-see-whats-new-feab92d9",
-      "toolName": "Notion",
-      "category": "Productivity Workspace",
-      "source": "Notion Releases",
-      "sourceFeed": "https://www.notion.so/releases",
-      "href": "https://www.notion.so/releases",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "See what’s new →",
-          "summary": "."
-        },
-        "fr": {
-          "title": "See what’s new →",
-          "summary": "."
-        }
-      }
-    },
-    {
       "slug": "20260912-cursor-skip-to-content-da250e67",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -259,26 +279,6 @@
         "fr": {
           "title": "Skip to content",
           "summary": ""
-        }
-      }
-    },
-    {
-      "slug": "20260911-postgresql-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
-      "publishedAt": "2026-09-11T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sess…"
-        },
-        "fr": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sess…"
         }
       }
     },
@@ -383,42 +383,82 @@
       }
     },
     {
-      "slug": "20260915-vercel-control-who-can-manage-connectors-in-vercel-connect-verce-3e6c19c6",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/control-who-can-manage-connectors-in-vercel-connect",
-      "publishedAt": "2026-09-15T21:18:38.937Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "slug": "20260912-notion-see-whats-new-feab92d9",
+      "toolName": "Notion",
+      "category": "Productivity Workspace",
+      "source": "Notion Releases",
+      "sourceFeed": "https://www.notion.so/releases",
+      "href": "https://www.notion.so/releases",
+      "publishedAt": "2026-09-12T13:29:26.758Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
-          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard"
+          "title": "See what’s new →",
+          "summary": "."
         },
         "fr": {
-          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
-          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard"
+          "title": "See what’s new →",
+          "summary": "."
         }
       }
     },
     {
-      "slug": "20260915-postgresql-logconnections-is-to-be-turned-off-by-default-for-new-34ce372d",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/47197-log-connections-is-to-be-turned-off-by-default-for-new-projects-and-existing-free-pro-projects",
-      "publishedAt": "2026-09-15T11:41:28.047Z",
-      "discoveredAt": "2026-09-15T11:41:28.047Z",
+      "slug": "20260916-vercel-vercel-sandbox-now-provides-64-gb-of-storage-vercel-sandb-a8941f9b",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/vercel-sandbox-64-gb-storage",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
       "locales": {
         "en": {
-          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
-          "summary": "Improvement Postgres log_connections defaults to off for new projects and existin"
+          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
+          "summary": "11 September 11 Sep"
         },
         "fr": {
-          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
-          "summary": "Improvement Postgres log_connections defaults to off for new projects and existin"
+          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
+          "summary": "11 September 11 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260916-supabase-developer-update---july-2026-14aef04c",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/47796-developer-update-july-2026",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "locales": {
+        "en": {
+          "title": "Developer Update - July 2026",
+          "summary": "Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
+        },
+        "fr": {
+          "title": "Developer Update - July 2026",
+          "summary": "Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
+        }
+      }
+    },
+    {
+      "slug": "20260911-postgresql-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "locales": {
+        "en": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sess…"
+        },
+        "fr": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sess…"
         }
       }
     },
@@ -439,6 +479,26 @@
         "fr": {
           "title": "GitHub Copilot suggests custom properties definitions",
           "summary": "GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot s…"
+        }
+      }
+    },
+    {
+      "slug": "20260914-kubernetes-kubernetes-changed-block-tracking-api---beta-differen-081539c8",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
+      "publishedAt": "2026-09-14T18:30:00.000Z",
+      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
+        },
+        "fr": {
+          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
         }
       }
     },
@@ -543,26 +603,6 @@
       }
     },
     {
-      "slug": "20260914-kubernetes-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
-      "publishedAt": "2026-09-14T18:30:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
-          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
-          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
-        }
-      }
-    },
-    {
       "slug": "20260914-perplexity-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-12e9dd68",
       "toolName": "Perplexity",
       "category": "Research Assistant",
@@ -603,26 +643,6 @@
       }
     },
     {
-      "slug": "20260908-notion-control-which-ai-models-your-agents-can-use-5768ae4c",
-      "toolName": "Notion",
-      "category": "Productivity Workspace",
-      "source": "Notion Releases",
-      "sourceFeed": "https://www.notion.so/releases",
-      "href": "https://www.notion.so/releases/2026-09-09",
-      "publishedAt": "2026-09-08T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Control which AI models your agents can use",
-          "summary": "September 9, 2026"
-        },
-        "fr": {
-          "title": "Control which AI models your agents can use",
-          "summary": "September 9, 2026"
-        }
-      }
-    },
-    {
       "slug": "20260912-cursor-self-hosted-machines-b1ecdbca",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -639,26 +659,6 @@
         "fr": {
           "title": "Self-hosted machines",
           "summary": "Cursor supports self-hosted machines , which let you keep tool execution entirely in your own network. Your codebase, build outputs, and secrets all"
-        }
-      }
-    },
-    {
-      "slug": "20260910-postgresql-postgresql-migrator-10-first-stable-release-6b667d27",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL…"
-        },
-        "fr": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL…"
         }
       }
     },
@@ -763,42 +763,82 @@
       }
     },
     {
-      "slug": "20260915-github-copilot-github-copilot-is-now-available-in-the-ai-sdk-har-6dde567f",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/github-copilot-ai-sdk-harness-adapter",
-      "publishedAt": "2026-09-15T21:18:38.937Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "slug": "20260908-notion-control-which-ai-models-your-agents-can-use-5768ae4c",
+      "toolName": "Notion",
+      "category": "Productivity Workspace",
+      "source": "Notion Releases",
+      "sourceFeed": "https://www.notion.so/releases",
+      "href": "https://www.notion.so/releases/2026-09-09",
+      "publishedAt": "2026-09-08T23:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "GitHub Copilot is now available in the AI SDK harness layer GitHub Copilot now runs through the AI SDK harness layer via @ai-sdk/harness-github-copilot, using the same HarnessAgent interface as every other supported harness. Felix Arntz Software Engineer",
-          "summary": "10 September 10 Sep"
+          "title": "Control which AI models your agents can use",
+          "summary": "September 9, 2026"
         },
         "fr": {
-          "title": "GitHub Copilot is now available in the AI SDK harness layer GitHub Copilot now runs through the AI SDK harness layer via @ai-sdk/harness-github-copilot, using the same HarnessAgent interface as every other supported harness. Felix Arntz Software Engineer",
-          "summary": "10 September 10 Sep"
+          "title": "Control which AI models your agents can use",
+          "summary": "September 9, 2026"
         }
       }
     },
     {
-      "slug": "20260913-supabase-observability-on-auto-pilot-c67c31c0",
+      "slug": "20260915-vercel-gemini-38-live-models-now-available-on-ai-gateway-gemini--f5b57b43",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/gemini-3-8-live-models-now-available-on-ai-gateway",
+      "publishedAt": "2026-09-15T21:18:38.937Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "Gemini 3.8 Live models now available on AI Gateway Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking from Google are now available on Vercel AI Gateway for real-time audio conversations. Kevin Dawkins, Zachary Chen, and 1 other",
+          "summary": "15 September 15 Sep"
+        },
+        "fr": {
+          "title": "Gemini 3.8 Live models now available on AI Gateway Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking from Google are now available on Vercel AI Gateway for real-time audio conversations. Kevin Dawkins, Zachary Chen, and 1 other",
+          "summary": "15 September 15 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260915-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/observability-autopilot",
-      "publishedAt": "2026-09-13T00:00:00.000Z",
+      "href": "https://supabase.com/changelog/restore-credential-resync",
+      "publishedAt": "2026-09-15T21:18:38.937Z",
       "discoveredAt": "2026-09-15T21:18:38.937Z",
       "locales": {
         "en": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "Sep 13, 2026"
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
         },
         "fr": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "Sep 13, 2026"
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+        }
+      }
+    },
+    {
+      "slug": "20260910-postgresql-postgresql-migrator-10-first-stable-release-6b667d27",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL…"
+        },
+        "fr": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL…"
         }
       }
     },
@@ -819,6 +859,26 @@
         "fr": {
           "title": "SHA-1 in HTTPS on GitHub sunset",
           "summary": "Previously we announced we would be disabling SHA-1 in HTTPS for GitHub on September 15th, 2026. Following the planned schedule, GitHub has disabled SHA-1 in HTTPS for github.com and partner… The post SHA-1 in HTTPS on…"
+        }
+      }
+    },
+    {
+      "slug": "20260914-kubernetes-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
+      "publishedAt": "2026-09-14T18:30:00.000Z",
+      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
+          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
+          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
         }
       }
     },
@@ -923,26 +983,6 @@
       }
     },
     {
-      "slug": "20260911-github-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
-      "publishedAt": "2026-09-11T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
-          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 und…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
-          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 und…"
-        }
-      }
-    },
-    {
       "slug": "20260911-openai-platform-cognition-helps-devin-test-its-own-work-with-gpt-c3aa3382",
       "toolName": "OpenAI Platform",
       "category": "AI Platform",
@@ -983,26 +1023,6 @@
       }
     },
     {
-      "slug": "20260827-notion-ask-your-agent-to-suggest-edits-3d228486",
-      "toolName": "Notion",
-      "category": "Productivity Workspace",
-      "source": "Notion Releases",
-      "sourceFeed": "https://www.notion.so/releases",
-      "href": "https://www.notion.so/releases/2026-08-28",
-      "publishedAt": "2026-08-27T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Ask your agent to suggest edits",
-          "summary": "August 28, 2026"
-        },
-        "fr": {
-          "title": "Ask your agent to suggest edits",
-          "summary": "August 28, 2026"
-        }
-      }
-    },
-    {
       "slug": "20260912-cursor-next-older-posts-26afffcc",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -1019,26 +1039,6 @@
         "fr": {
           "title": "Next → Older posts",
           "summary": ""
-        }
-      }
-    },
-    {
-      "slug": "20260910-github-pgvaulttde-v171-transparent-data-encryption-for-postgresq-8b0f1977",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it le…"
-        },
-        "fr": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it le…"
         }
       }
     },
@@ -1143,42 +1143,82 @@
       }
     },
     {
-      "slug": "20260915-vercel-ai-sdk-harness-layer-now-supports-native-subscription-aut-478b2e53",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/ai-sdk-harness-native-subscription-authentication",
-      "publishedAt": "2026-09-15T11:41:28.047Z",
-      "discoveredAt": "2026-09-15T11:41:28.047Z",
+      "slug": "20260827-notion-ask-your-agent-to-suggest-edits-3d228486",
+      "toolName": "Notion",
+      "category": "Productivity Workspace",
+      "source": "Notion Releases",
+      "sourceFeed": "https://www.notion.so/releases",
+      "href": "https://www.notion.so/releases/2026-08-28",
+      "publishedAt": "2026-08-27T23:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
-          "summary": "14 September 14 Sep"
+          "title": "Ask your agent to suggest edits",
+          "summary": "August 28, 2026"
         },
         "fr": {
-          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
-          "summary": "14 September 14 Sep"
+          "title": "Ask your agent to suggest edits",
+          "summary": "August 28, 2026"
         }
       }
     },
     {
-      "slug": "20260912-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "slug": "20260915-vercel-control-who-can-manage-connectors-in-vercel-connect-verce-3e6c19c6",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/control-who-can-manage-connectors-in-vercel-connect",
+      "publishedAt": "2026-09-15T21:18:38.937Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
       "locales": {
         "en": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
+          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
+          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard"
         },
         "fr": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
+          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
+          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard"
+        }
+      }
+    },
+    {
+      "slug": "20260915-postgresql-logconnections-is-to-be-turned-off-by-default-for-new-34ce372d",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/47197-log-connections-is-to-be-turned-off-by-default-for-new-projects-and-existing-free-pro-projects",
+      "publishedAt": "2026-09-15T11:41:28.047Z",
+      "discoveredAt": "2026-09-15T11:41:28.047Z",
+      "locales": {
+        "en": {
+          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
+          "summary": "Improvement Postgres log_connections defaults to off for new projects and existin"
+        },
+        "fr": {
+          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
+          "summary": "Improvement Postgres log_connections defaults to off for new projects and existin"
+        }
+      }
+    },
+    {
+      "slug": "20260910-github-pgvaulttde-v171-transparent-data-encryption-for-postgresq-8b0f1977",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "locales": {
+        "en": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it le…"
+        },
+        "fr": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it le…"
         }
       }
     },
@@ -1199,6 +1239,26 @@
         "fr": {
           "title": "Configure cost and quality in Copilot auto model selection",
           "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for… The post Configure cost a…"
+        }
+      }
+    },
+    {
+      "slug": "20260911-github-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
+      "publishedAt": "2026-09-11T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 und…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 und…"
         }
       }
     },
@@ -1303,26 +1363,6 @@
       }
     },
     {
-      "slug": "20260910-kubernetes-kubernetes-v137-scheduler-preemption-for-in-place-pod-e2763381",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
-      "publishedAt": "2026-09-10T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.…"
-        }
-      }
-    },
-    {
       "slug": "20260911-chatgpt-rapidly-scaling-online-storage-to-serve-over-1-billion-c-c7d3c8ae",
       "toolName": "ChatGPT",
       "category": "AI Assistant",
@@ -1363,26 +1403,6 @@
       }
     },
     {
-      "slug": "20260818-notion-your-developer-portal-now-in-the-sidebar-7b336ba1",
-      "toolName": "Notion",
-      "category": "Productivity Workspace",
-      "source": "Notion Releases",
-      "sourceFeed": "https://www.notion.so/releases",
-      "href": "https://www.notion.so/releases/2026-08-19",
-      "publishedAt": "2026-08-18T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Your Developer Portal, now in the sidebar",
-          "summary": "August 19, 2026"
-        },
-        "fr": {
-          "title": "Your Developer Portal, now in the sidebar",
-          "summary": "August 19, 2026"
-        }
-      }
-    },
-    {
       "slug": "20260909-cursor-sep-10-2026-e532be67",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -1399,26 +1419,6 @@
         "fr": {
           "title": "Sep 10, 2026",
           "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20260909-docker-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer i…"
-        },
-        "fr": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer i…"
         }
       }
     },
@@ -1523,42 +1523,82 @@
       }
     },
     {
-      "slug": "20260915-cursor-fastapi-frontends-and-static-files-served-from-the-cdn-fa-9fcb8395",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/fastapi-frontends-and-static-files-served-from-the-cdn",
-      "publishedAt": "2026-09-15T11:41:28.047Z",
-      "discoveredAt": "2026-09-15T11:41:28.047Z",
+      "slug": "20260818-notion-your-developer-portal-now-in-the-sidebar-7b336ba1",
+      "toolName": "Notion",
+      "category": "Productivity Workspace",
+      "source": "Notion Releases",
+      "sourceFeed": "https://www.notion.so/releases",
+      "href": "https://www.notion.so/releases/2026-08-19",
+      "publishedAt": "2026-08-18T23:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "FastAPI frontends and static files served from the CDN FastAPI frontends and static files are now promoted to the Vercel CDN at build time and served without invoking your Vercel Function. Daniel Park Software Engineer",
-          "summary": "Felix Arntz Software Engineer"
+          "title": "Your Developer Portal, now in the sidebar",
+          "summary": "August 19, 2026"
         },
         "fr": {
-          "title": "FastAPI frontends and static files served from the CDN FastAPI frontends and static files are now promoted to the Vercel CDN at build time and served without invoking your Vercel Function. Daniel Park Software Engineer",
-          "summary": "Felix Arntz Software Engineer"
+          "title": "Your Developer Portal, now in the sidebar",
+          "summary": "August 19, 2026"
         }
       }
     },
     {
-      "slug": "20260912-supabase-migration-of-supabase-management-api-logsall-analytics--b021c0b5",
+      "slug": "20260915-github-copilot-github-copilot-is-now-available-in-the-ai-sdk-har-6dde567f",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/github-copilot-ai-sdk-harness-adapter",
+      "publishedAt": "2026-09-15T21:18:38.937Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Copilot is now available in the AI SDK harness layer GitHub Copilot now runs through the AI SDK harness layer via @ai-sdk/harness-github-copilot, using the same HarnessAgent interface as every other supported harness. Felix Arntz Software Engineer",
+          "summary": "10 September 10 Sep"
+        },
+        "fr": {
+          "title": "GitHub Copilot is now available in the AI SDK harness layer GitHub Copilot now runs through the AI SDK harness layer via @ai-sdk/harness-github-copilot, using the same HarnessAgent interface as every other supported harness. Felix Arntz Software Engineer",
+          "summary": "10 September 10 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260913-supabase-observability-on-auto-pilot-c67c31c0",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/48235-migration-of-supabase-management-api-logs-all-analytics-endpoint-to-logs-endpoint",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "href": "https://supabase.com/changelog/observability-autopilot",
+      "publishedAt": "2026-09-13T00:00:00.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
       "locales": {
         "en": {
-          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
-          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
+          "title": "Observability on Auto-Pilot",
+          "summary": "Sep 13, 2026"
         },
         "fr": {
-          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
-          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
+          "title": "Observability on Auto-Pilot",
+          "summary": "Sep 13, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20260909-docker-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer i…"
+        },
+        "fr": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer i…"
         }
       }
     },
@@ -1579,6 +1619,26 @@
         "fr": {
           "title": "Profiles now show your highest achievement badge tier",
           "summary": "Your GitHub profile now displays the highest tier you’ve earned for achievements with multiple levels. Previously, profiles could display the first tier earned, even after you had progressed to a… The post Profiles now…"
+        }
+      }
+    },
+    {
+      "slug": "20260910-kubernetes-kubernetes-v137-scheduler-preemption-for-in-place-pod-e2763381",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
+      "publishedAt": "2026-09-10T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.…"
         }
       }
     },
@@ -1683,26 +1743,6 @@
       }
     },
     {
-      "slug": "20260909-kubernetes-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
-      "publishedAt": "2026-09-09T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
-          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kuberne…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
-          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kuberne…"
-        }
-      }
-    },
-    {
       "slug": "20260910-chatgpt-how-a-researcher-uses-codex-and-chatgpt-to-search-for-ne-01415994",
       "toolName": "ChatGPT",
       "category": "AI Assistant",
@@ -1743,26 +1783,6 @@
       }
     },
     {
-      "slug": "20260813-notion-model-selection-simplified-c763aea8",
-      "toolName": "Notion",
-      "category": "Productivity Workspace",
-      "source": "Notion Releases",
-      "sourceFeed": "https://www.notion.so/releases",
-      "href": "https://www.notion.so/releases/2026-08-14",
-      "publishedAt": "2026-08-13T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Model selection, simplified",
-          "summary": "August 14, 2026"
-        },
-        "fr": {
-          "title": "Model selection, simplified",
-          "summary": "August 14, 2026"
-        }
-      }
-    },
-    {
       "slug": "20260826-cursor-aug-27-2026-7e5a01bd",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -1779,26 +1799,6 @@
         "fr": {
           "title": "Aug 27, 2026",
           "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20260909-postgresql-autobase-211-released-991decc9",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the…"
-        },
-        "fr": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the…"
         }
       }
     },
@@ -1883,42 +1883,82 @@
       }
     },
     {
-      "slug": "20260914-cursor-build-with-openai-agents-api-on-vercel-build-and-deploy-a-93aab0be",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/build-with-openai-agents-api-on-vercel",
-      "publishedAt": "2026-09-14T21:48:07.802Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "slug": "20260813-notion-model-selection-simplified-c763aea8",
+      "toolName": "Notion",
+      "category": "Productivity Workspace",
+      "source": "Notion Releases",
+      "sourceFeed": "https://www.notion.so/releases",
+      "href": "https://www.notion.so/releases/2026-08-14",
+      "publishedAt": "2026-08-13T23:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Build with OpenAI Agents API on Vercel Build and deploy an OpenAI Agents API app on Vercel with Next.js, Functions, Queues, and Sandbox for isolated, persistent code execution. Anshuman Bhardwaj, Allen Zhou",
-          "summary": "Daniel Park Software Engineer"
+          "title": "Model selection, simplified",
+          "summary": "August 14, 2026"
         },
         "fr": {
-          "title": "Build with OpenAI Agents API on Vercel Build and deploy an OpenAI Agents API app on Vercel with Next.js, Functions, Queues, and Sandbox for isolated, persistent code execution. Anshuman Bhardwaj, Allen Zhou",
-          "summary": "Daniel Park Software Engineer"
+          "title": "Model selection, simplified",
+          "summary": "August 14, 2026"
         }
       }
     },
     {
-      "slug": "20260912-supabase-public-alpha-supabase-pipelines-8df37aee",
+      "slug": "20260915-vercel-ai-sdk-harness-layer-now-supports-native-subscription-aut-478b2e53",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/ai-sdk-harness-native-subscription-authentication",
+      "publishedAt": "2026-09-15T11:41:28.047Z",
+      "discoveredAt": "2026-09-15T11:41:28.047Z",
+      "locales": {
+        "en": {
+          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
+          "summary": "14 September 14 Sep"
+        },
+        "fr": {
+          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
+          "summary": "14 September 14 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260912-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/pipelines",
+      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
       "publishedAt": "2026-09-12T13:29:26.758Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "[Public Alpha] Supabase Pipelines",
-          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
         },
         "fr": {
-          "title": "[Public Alpha] Supabase Pipelines",
-          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
+        }
+      }
+    },
+    {
+      "slug": "20260909-postgresql-autobase-211-released-991decc9",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "locales": {
+        "en": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the…"
+        },
+        "fr": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the…"
         }
       }
     },
@@ -1939,6 +1979,26 @@
         "fr": {
           "title": "Add VS Code Agents to Copilot usage metrics",
           "summary": "GitHub Copilot usage metrics reports now include generally available metrics for activity in the dedicated VS Code Agents window, helping you measure adoption and engagement across enterprises and organizations. What’s……"
+        }
+      }
+    },
+    {
+      "slug": "20260909-kubernetes-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
+      "publishedAt": "2026-09-09T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kuberne…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kuberne…"
         }
       }
     },
@@ -2043,26 +2103,6 @@
       }
     },
     {
-      "slug": "20260908-kubernetes-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
-      "publishedAt": "2026-09-08T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next ma…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next ma…"
-        }
-      }
-    },
-    {
       "slug": "20260910-chatgpt-now-everyone-can-put-data-to-work-4d4e7920",
       "toolName": "ChatGPT",
       "category": "AI Assistant",
@@ -2103,26 +2143,6 @@
       }
     },
     {
-      "slug": "20260806-notion-share-context-with-custom-agents-from-the-share-menu-ef5ed809",
-      "toolName": "Notion",
-      "category": "Productivity Workspace",
-      "source": "Notion Releases",
-      "sourceFeed": "https://www.notion.so/releases",
-      "href": "https://www.notion.so/releases/2026-08-07",
-      "publishedAt": "2026-08-06T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Share context with Custom Agents from the Share menu",
-          "summary": "August 7, 2026"
-        },
-        "fr": {
-          "title": "Share context with Custom Agents from the Share menu",
-          "summary": "August 7, 2026"
-        }
-      }
-    },
-    {
       "slug": "20260818-cursor-aug-19-2026-5275ef6f",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -2139,26 +2159,6 @@
         "fr": {
           "title": "Aug 19, 2026",
           "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20260905-postgresql-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
-      "publishedAt": "2026-09-05T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 20…"
-        },
-        "fr": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 20…"
         }
       }
     },
@@ -2223,62 +2223,102 @@
       }
     },
     {
-      "slug": "20260820-rust-supply-chain-attack-on-arrayref-14062eb1",
+      "slug": "20260820-rust-announcing-rust-1980-3f795da6",
       "toolName": "Rust",
       "category": "Systems & Backend",
       "source": "Rust Blog",
       "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
+      "href": "https://blog.rust-lang.org/2026/08/20/Rust-1.98.0/",
       "publishedAt": "2026-08-20T00:00:00.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
       "locales": {
         "en": {
-          "title": "Supply chain attack on arrayref",
-          "summary": "What happened On 2026-08-20 at 7:15 UTC we got a report that the proc-macro1 crate was malicious. The Rust Security Response Team verified this to be the case: the crate had a build script that was downloading a malicio…"
+          "title": "Announcing Rust 1.98.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.98.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
         },
         "fr": {
-          "title": "Supply chain attack on arrayref",
-          "summary": "What happened On 2026-08-20 at 7:15 UTC we got a report that the proc-macro1 crate was malicious. The Rust Security Response Team verified this to be the case: the crate had a build script that was downloading a malicio…"
+          "title": "Announcing Rust 1.98.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.98.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
         }
       }
     },
     {
-      "slug": "20260914-cursor-tako-search-is-free-on-ai-gateway-through-september-30-ta-b3125c4e",
+      "slug": "20260806-notion-share-context-with-custom-agents-from-the-share-menu-ef5ed809",
+      "toolName": "Notion",
+      "category": "Productivity Workspace",
+      "source": "Notion Releases",
+      "sourceFeed": "https://www.notion.so/releases",
+      "href": "https://www.notion.so/releases/2026-08-07",
+      "publishedAt": "2026-08-06T23:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Share context with Custom Agents from the Share menu",
+          "summary": "August 7, 2026"
+        },
+        "fr": {
+          "title": "Share context with Custom Agents from the Share menu",
+          "summary": "August 7, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20260915-cursor-fastapi-frontends-and-static-files-served-from-the-cdn-fa-9fcb8395",
       "toolName": "Cursor",
       "category": "Developer Assistant",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/tako-search-is-free-on-ai-gateway-through-september-30th",
-      "publishedAt": "2026-09-14T12:41:39.793Z",
-      "discoveredAt": "2026-09-14T12:41:39.793Z",
+      "href": "https://vercel.com/changelog/fastapi-frontends-and-static-files-served-from-the-cdn",
+      "publishedAt": "2026-09-15T11:41:28.047Z",
+      "discoveredAt": "2026-09-15T11:41:28.047Z",
       "locales": {
         "en": {
-          "title": "Tako Search is free on AI Gateway through September 30 Tako Search search tool is live on AI Gateway and provides live web search for any AI Gateway model. The tool is free through September 30th. Walter Korman, Zachary Chen, and 1 other",
-          "summary": "hou-128.jpg\"/> Anshuman Bhardwaj, Allen Zhou"
+          "title": "FastAPI frontends and static files served from the CDN FastAPI frontends and static files are now promoted to the Vercel CDN at build time and served without invoking your Vercel Function. Daniel Park Software Engineer",
+          "summary": "Felix Arntz Software Engineer"
         },
         "fr": {
-          "title": "Tako Search is free on AI Gateway through September 30 Tako Search search tool is live on AI Gateway and provides live web search for any AI Gateway model. The tool is free through September 30th. Walter Korman, Zachary Chen, and 1 other",
-          "summary": "hou-128.jpg\"/> Anshuman Bhardwaj, Allen Zhou"
+          "title": "FastAPI frontends and static files served from the CDN FastAPI frontends and static files are now promoted to the Vercel CDN at build time and served without invoking your Vercel Function. Daniel Park Software Engineer",
+          "summary": "Felix Arntz Software Engineer"
         }
       }
     },
     {
-      "slug": "20260912-supabase-realtime-schema-is-now-fully-locked-down-against-modifi-4d315f11",
+      "slug": "20260912-supabase-migration-of-supabase-management-api-logsall-analytics--b021c0b5",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/realtime-schema-locked-down-against-modification",
+      "href": "https://supabase.com/changelog/48235-migration-of-supabase-management-api-logs-all-analytics-endpoint-to-logs-endpoint",
       "publishedAt": "2026-09-12T13:29:26.758Z",
       "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Realtime schema is now fully locked down against modifications",
-          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
+          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
         },
         "fr": {
-          "title": "Realtime schema is now fully locked down against modifications",
-          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
+          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
+        }
+      }
+    },
+    {
+      "slug": "20260905-postgresql-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
+      "publishedAt": "2026-09-05T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "locales": {
+        "en": {
+          "title": "PGConf India 2027 - Dates Announced and CFP Open",
+          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 20…"
+        },
+        "fr": {
+          "title": "PGConf India 2027 - Dates Announced and CFP Open",
+          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 20…"
         }
       }
     },
@@ -2303,6 +2343,26 @@
       }
     },
     {
+      "slug": "20260908-kubernetes-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
+      "publishedAt": "2026-09-08T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
+          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next ma…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
+          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next ma…"
+        }
+      }
+    },
+    {
       "slug": "20260910-nvidia-how-full-stack-nim-optimizations-deliver-25x-more-users-o-2abc4ceb",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -2323,82 +2383,22 @@
       }
     },
     {
-      "slug": "20260903-hugging-face-fine-tuning-a-350m-model-for-better-structured-outp-45020768",
+      "slug": "20260903-hugging-face-give-your-coding-agents-a-memory-you-own-86b47b47",
       "toolName": "Hugging Face",
       "category": "AI Platform",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+      "href": "https://huggingface.co/blog/funes",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
       "locales": {
         "en": {
-          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
-          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
+          "title": "Give Your Coding Agents a Memory You Own",
+          "summary": "Give Your Coding Agents a Memory You Own"
         },
         "fr": {
-          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
-          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
-        }
-      }
-    },
-    {
-      "slug": "20260910-google-ai-3-ways-to-prep-for-your-next-big-race-with-search-1852061b",
-      "toolName": "Google AI",
-      "category": "AI Platform",
-      "source": "Google AI Blog",
-      "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
-      "publishedAt": "2026-09-10T16:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "3 ways to prep for your next big race with Search",
-          "summary": "Search can help runners get race-day ready with registration alerts, tailored training plans, and more."
-        },
-        "fr": {
-          "title": "3 ways to prep for your next big race with Search",
-          "summary": "Search can help runners get race-day ready with registration alerts, tailored training plans, and more."
-        }
-      }
-    },
-    {
-      "slug": "20260903-cloudflare-introducing-context-aware-vulnerability-discovery-and-2992a92d",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/vulnerability-discovery-remediation/",
-      "publishedAt": "2026-09-03T21:03:02.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak models",
-          "summary": "Use production traffic and security signals to prioritize findings, prepare edge mitigations when safe, and propose code patches. By combining WAF data with OpenAI Daybreak models, Vulnerability Discovery and Remediatio…"
-        },
-        "fr": {
-          "title": "Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak models",
-          "summary": "Use production traffic and security signals to prioritize findings, prepare edge mitigations when safe, and propose code patches. By combining WAF data with OpenAI Daybreak models, Vulnerability Discovery and Remediatio…"
-        }
-      }
-    },
-    {
-      "slug": "20260805-nist-spooky-particles-transit-dc-suburbs-a-step-toward-a-quantum-920a5fe2",
-      "toolName": "NIST",
-      "category": "Security & Standards",
-      "source": "NIST News",
-      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/08/spooky-particles-transit-dc-suburbs-step-toward-quantum-network",
-      "publishedAt": "2026-08-05T12:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "‘Spooky’ Particles Transit DC Suburbs, a Step Toward a Quantum Network",
-          "summary": "The achievement shows that fragile quantum entanglement can survive even in tough, real-world conditions."
-        },
-        "fr": {
-          "title": "‘Spooky’ Particles Transit DC Suburbs, a Step Toward a Quantum Network",
-          "summary": "The achievement shows that fragile quantum entanglement can survive even in tough, real-world conditions."
+          "title": "Give Your Coding Agents a Memory You Own",
+          "summary": "Give Your Coding Agents a Memory You Own"
         }
       }
     }

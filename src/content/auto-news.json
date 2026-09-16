@@ -1,7 +1,45 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T21:18:37.392Z",
+  "updatedAt": "2026-09-16T11:28:35.562Z",
   "items": [
+    {
+      "slug": "20260916-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:35.562Z",
+      "locales": {
+        "en": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+        },
+        "fr": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+        }
+      }
+    },
+    {
+      "slug": "20260915-kubernetes-v137-pod-level-resource-managers-graduated-to-beta-993e015b",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
+      "publishedAt": "2026-09-15T18:30:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:35.562Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod-Level Res…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod-Level Res…"
+        }
+      }
+    },
     {
       "slug": "20260915-how-nvidia-groq-3-lpx-deterministic-execution-drives-power-effic-ce9893f8",
       "topic": "AI Systems",
@@ -136,25 +174,6 @@
       }
     },
     {
-      "slug": "20260914-kubernetes-changed-block-tracking-api---beta-differences-081539c8",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
-      "publishedAt": "2026-09-14T18:30:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:06.707Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
-          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet familiar with ch…"
-        },
-        "fr": {
-          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
-          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet familiar with ch…"
-        }
-      }
-    },
-    {
       "slug": "20260914-how-fyxer-built-an-ai-executive-assistant-people-trust-296d33de",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -227,25 +246,6 @@
         "fr": {
           "title": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
           "summary": "If you can write down how you do your work, you can automate it. Here's what I did to support GitHub's APAC marketing team. The post Marketing ops as code: Automating events from planning to follow-up on GitHub appeared first on…"
-        }
-      }
-    },
-    {
-      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
-      "publishedAt": "2026-09-11T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
-        },
-        "fr": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
         }
       }
     },
@@ -360,6 +360,44 @@
         "fr": {
           "title": "Goroutine Leak Profiles",
           "summary": "Goroutine Leak Profiles"
+        }
+      }
+    },
+    {
+      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+        },
+        "fr": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+        }
+      }
+    },
+    {
+      "slug": "20260914-kubernetes-changed-block-tracking-api---beta-differences-081539c8",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
+      "publishedAt": "2026-09-14T18:30:00.000Z",
+      "discoveredAt": "2026-09-14T21:48:06.707Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet familiar with ch…"
+        },
+        "fr": {
+          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet familiar with ch…"
         }
       }
     },
@@ -497,25 +535,6 @@
       }
     },
     {
-      "slug": "20260914-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
-      "publishedAt": "2026-09-14T18:30:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:06.707Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
-          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
-          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It…"
-        }
-      }
-    },
-    {
       "slug": "20260914-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-12e9dd68",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -569,25 +588,6 @@
         "fr": {
           "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
           "summary": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app. The post GitHub Copilot app for Beginners: Using the d…"
-        }
-      }
-    },
-    {
-      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
-        },
-        "fr": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
         }
       }
     },
@@ -702,6 +702,44 @@
         "fr": {
           "title": "Generic Methods",
           "summary": "Generic Methods"
+        }
+      }
+    },
+    {
+      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        },
+        "fr": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        }
+      }
+    },
+    {
+      "slug": "20260914-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
+      "publishedAt": "2026-09-14T18:30:00.000Z",
+      "discoveredAt": "2026-09-14T21:48:06.707Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
+          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
+          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It…"
         }
       }
     },
@@ -839,25 +877,6 @@
       }
     },
     {
-      "slug": "20260911-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
-      "publishedAt": "2026-09-11T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
-          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
-          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
-        }
-      }
-    },
-    {
       "slug": "20260911-cognition-helps-devin-test-its-own-work-with-gpt6-astra-c3aa3382",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -911,25 +930,6 @@
         "fr": {
           "title": "GitHub availability report: August 2026",
           "summary": "In August, we experienced five incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: August 2026 appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20260910-pgvaulttde-v171-transparent-data-encryption-for-postgresql-17-an-8b0f1977",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
-        },
-        "fr": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
         }
       }
     },
@@ -1025,6 +1025,44 @@
         "fr": {
           "title": "Go 1.27 is released",
           "summary": "Go 1.27 is released"
+        }
+      }
+    },
+    {
+      "slug": "20260910-pgvaulttde-v171-transparent-data-encryption-for-postgresql-17-an-8b0f1977",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+        },
+        "fr": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+        }
+      }
+    },
+    {
+      "slug": "20260911-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
+      "publishedAt": "2026-09-11T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
         }
       }
     },
@@ -1162,25 +1200,6 @@
       }
     },
     {
-      "slug": "20260910-kubernetes-v137-scheduler-preemption-for-in-place-pod-resize-alp-e2763381",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
-      "publishedAt": "2026-09-10T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
-        }
-      }
-    },
-    {
       "slug": "20260911-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-u-c7d3c8ae",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -1234,25 +1253,6 @@
         "fr": {
           "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
           "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
-        },
-        "fr": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
         }
       }
     },
@@ -1329,6 +1329,44 @@
         "fr": {
           "title": "Announcing our first Maintainers in Residence",
           "summary": "Announcing our first Maintainers in Residence"
+        }
+      }
+    },
+    {
+      "slug": "20260909-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+        },
+        "fr": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+        }
+      }
+    },
+    {
+      "slug": "20260910-kubernetes-v137-scheduler-preemption-for-in-place-pod-resize-alp-e2763381",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
+      "publishedAt": "2026-09-10T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
         }
       }
     },
@@ -1466,25 +1504,6 @@
       }
     },
     {
-      "slug": "20260909-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
-      "publishedAt": "2026-09-09T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
-          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
-          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
-        }
-      }
-    },
-    {
       "slug": "20260910-how-a-researcher-uses-codex-and-chatgpt-to-search-for-new-antimi-01415994",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -1538,25 +1557,6 @@
         "fr": {
           "title": "GitHub Copilot app for Beginners: Run several agents at once",
           "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful. The post GitHub Copilot app for Beginners: Run several agents at once appeared first on The…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-autobase-211-released-991decc9",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
-        },
-        "fr": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
         }
       }
     },
@@ -1633,6 +1633,44 @@
         "fr": {
           "title": "Enabling the next-generation trait solver on nightly",
           "summary": "Enabling the next-generation trait solver on nightly"
+        }
+      }
+    },
+    {
+      "slug": "20260909-autobase-211-released-991decc9",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+        },
+        "fr": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+        }
+      }
+    },
+    {
+      "slug": "20260909-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
+      "publishedAt": "2026-09-09T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
         }
       }
     },
@@ -1770,25 +1808,6 @@
       }
     },
     {
-      "slug": "20260908-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
-      "publishedAt": "2026-09-08T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
-        }
-      }
-    },
-    {
       "slug": "20260910-now-everyone-can-put-data-to-work-4d4e7920",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -1842,25 +1861,6 @@
         "fr": {
           "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
           "summary": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations. The post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!…"
-        }
-      }
-    },
-    {
-      "slug": "20260905-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
-      "publishedAt": "2026-09-05T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
-        },
-        "fr": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
         }
       }
     },
@@ -1937,6 +1937,44 @@
         "fr": {
           "title": "Supply chain attack on arrayref",
           "summary": "Supply chain attack on arrayref"
+        }
+      }
+    },
+    {
+      "slug": "20260905-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
+      "publishedAt": "2026-09-05T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PGConf India 2027 - Dates Announced and CFP Open",
+          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
+        },
+        "fr": {
+          "title": "PGConf India 2027 - Dates Announced and CFP Open",
+          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
+        }
+      }
+    },
+    {
+      "slug": "20260908-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
+      "publishedAt": "2026-09-08T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
+          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
+          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
         }
       }
     },
@@ -2074,25 +2112,6 @@
       }
     },
     {
-      "slug": "20260904-kubernetes-v137-kubeletinusernamespace-aka-rootless-mode-graduat-1560f468",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
-      "publishedAt": "2026-09-04T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
-          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
-          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
-        }
-      }
-    },
-    {
       "slug": "20260910-introducing-chatgpt-for-financial-services-016c3ec9",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2146,25 +2165,6 @@
         "fr": {
           "title": "How we make AI coding more cost efficient without sacrificing task quality",
           "summary": "Why shorter outputs can cost more, and how GitHub Copilot reduces wasted work across the complete coding task. The post How we make AI coding more cost efficient without sacrificing task quality appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20260825-pgstatviz-12-released-with-postgresql-19-support-and-new-feature-37633005",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_statviz-12-released-with-postgresql-19-support-and-new-features-3369/",
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
-          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
-        },
-        "fr": {
-          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
-          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
         }
       }
     },
@@ -2241,6 +2241,44 @@
         "fr": {
           "title": "Announcing Rust 1.98.0",
           "summary": "Announcing Rust 1.98.0"
+        }
+      }
+    },
+    {
+      "slug": "20260825-pgstatviz-12-released-with-postgresql-19-support-and-new-feature-37633005",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_statviz-12-released-with-postgresql-19-support-and-new-features-3369/",
+      "publishedAt": "2026-08-25T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
+          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
+        },
+        "fr": {
+          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
+          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
+        }
+      }
+    },
+    {
+      "slug": "20260904-kubernetes-v137-kubeletinusernamespace-aka-rootless-mode-graduat-1560f468",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
+      "publishedAt": "2026-09-04T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
+          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
+          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
         }
       }
     },
@@ -2378,25 +2416,6 @@
       }
     },
     {
-      "slug": "20260903-kubernetes-v137-dra-updates-90b5ee36",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
-      "publishedAt": "2026-09-03T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: DRA Updates",
-          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: DRA Updates",
-          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
-        }
-      }
-    },
-    {
       "slug": "20260910-expanding-ai-access-and-cyber-defense-for-federal-state-local-an-1ef5285e",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2450,25 +2469,6 @@
         "fr": {
           "title": "OpenClaw went viral. Meet the maintainers building and securing it.",
           "summary": "OpenClaw is the fastest-growing project in GitHub history. Peter Steinberger and several maintainers share what they learned in the project's first six months. The post OpenClaw went viral. Meet the maintainers building and secur…"
-        }
-      }
-    },
-    {
-      "slug": "20260820-libredb-studio-an-open-source-self-hosted-sql-ide-for-postgresql-271e1666",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/libredb-studio-an-open-source-self-hosted-sql-ide-for-postgresql-in-the-browser-3368/",
-      "publishedAt": "2026-08-20T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "LibreDB Studio: an open source, self-hosted SQL IDE for PostgreSQL in the browser",
-          "summary": "LibreDB Studio is an MIT-licensed, self-hosted SQL IDE for PostgreSQL that runs in the browser and deploys as a container or Helm chart. It is deployed next to the database it manages, as a container, a Helm chart or an npm packa…"
-        },
-        "fr": {
-          "title": "LibreDB Studio: an open source, self-hosted SQL IDE for PostgreSQL in the browser",
-          "summary": "LibreDB Studio is an MIT-licensed, self-hosted SQL IDE for PostgreSQL that runs in the browser and deploys as a container or Helm chart. It is deployed next to the database it manages, as a container, a Helm chart or an npm packa…"
         }
       }
     },
@@ -2545,6 +2545,44 @@
         "fr": {
           "title": "Enabling the next iteration of the borrow checker on nightly",
           "summary": "Enabling the next iteration of the borrow checker on nightly"
+        }
+      }
+    },
+    {
+      "slug": "20260820-libredb-studio-an-open-source-self-hosted-sql-ide-for-postgresql-271e1666",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/libredb-studio-an-open-source-self-hosted-sql-ide-for-postgresql-in-the-browser-3368/",
+      "publishedAt": "2026-08-20T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "LibreDB Studio: an open source, self-hosted SQL IDE for PostgreSQL in the browser",
+          "summary": "LibreDB Studio is an MIT-licensed, self-hosted SQL IDE for PostgreSQL that runs in the browser and deploys as a container or Helm chart. It is deployed next to the database it manages, as a container, a Helm chart or an npm packa…"
+        },
+        "fr": {
+          "title": "LibreDB Studio: an open source, self-hosted SQL IDE for PostgreSQL in the browser",
+          "summary": "LibreDB Studio is an MIT-licensed, self-hosted SQL IDE for PostgreSQL that runs in the browser and deploys as a container or Helm chart. It is deployed next to the database it manages, as a container, a Helm chart or an npm packa…"
+        }
+      }
+    },
+    {
+      "slug": "20260903-kubernetes-v137-dra-updates-90b5ee36",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
+      "publishedAt": "2026-09-03T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: DRA Updates",
+          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: DRA Updates",
+          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
         }
       }
     },
@@ -2663,25 +2701,6 @@
       }
     },
     {
-      "slug": "20260902-kubernetes-v137-scale-workloads-to-zero-with-horizontalpodautosc-d1c3bfab",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
-      "publishedAt": "2026-09-02T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
-          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
-          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
-        }
-      }
-    },
-    {
       "slug": "20260910-build-more-natural-voice-experiences-with-gptlive1-in-the-api-4e410dad",
       "topic": "Computer Science",
       "source": "OpenAI News",
@@ -2739,25 +2758,6 @@
       }
     },
     {
-      "slug": "20260819-loongson-loong64-packages-on-aptpostgresqlorg-4d32ff8b",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/loongson-loong64-packages-on-aptpostgresqlorg-3351/",
-      "publishedAt": "2026-08-19T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Loongson loong64 packages on apt.postgresql.org",
-          "summary": "We have a new architecture on apt.postgresql.org: Loongson loong64, a Chinese processor architecture. The build host for the architecture is running on a Loongson 3B6000 board provided by the loongfans.cn community. Bootstrapping…"
-        },
-        "fr": {
-          "title": "Loongson loong64 packages on apt.postgresql.org",
-          "summary": "We have a new architecture on apt.postgresql.org: Loongson loong64, a Chinese processor architecture. The build host for the architecture is running on a Loongson 3B6000 board provided by the loongfans.cn community. Bootstrapping…"
-        }
-      }
-    },
-    {
       "slug": "20260902-the-economics-of-agent-optimization-context-engineering-for-ente-c7b41545",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -2811,6 +2811,44 @@
         "fr": {
           "title": "Docker Verified Publisher Applications Are Now Self-Serve",
           "summary": "Apply to become a Docker Verified Publisher (DVP) now directly through Docker Hub. Get your verified content seen first by devs looking for trusted options."
+        }
+      }
+    },
+    {
+      "slug": "20260819-loongson-loong64-packages-on-aptpostgresqlorg-4d32ff8b",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/loongson-loong64-packages-on-aptpostgresqlorg-3351/",
+      "publishedAt": "2026-08-19T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "Loongson loong64 packages on apt.postgresql.org",
+          "summary": "We have a new architecture on apt.postgresql.org: Loongson loong64, a Chinese processor architecture. The build host for the architecture is running on a Loongson 3B6000 board provided by the loongfans.cn community. Bootstrapping…"
+        },
+        "fr": {
+          "title": "Loongson loong64 packages on apt.postgresql.org",
+          "summary": "We have a new architecture on apt.postgresql.org: Loongson loong64, a Chinese processor architecture. The build host for the architecture is running on a Loongson 3B6000 board provided by the loongfans.cn community. Bootstrapping…"
+        }
+      }
+    },
+    {
+      "slug": "20260902-kubernetes-v137-scale-workloads-to-zero-with-horizontalpodautosc-d1c3bfab",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
+      "publishedAt": "2026-09-02T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
+          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
+          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
         }
       }
     },
@@ -2929,25 +2967,6 @@
       }
     },
     {
-      "slug": "20260901-kubernetes-v137-etcd-rangestream-cuts-memory-use-on-large-list-r-b472f2bb",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/",
-      "publishedAt": "2026-09-01T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
-          "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
-          "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
-        }
-      }
-    },
-    {
       "slug": "20260910-introducing-the-agents-api-2b26a806",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2986,25 +3005,6 @@
       }
     },
     {
-      "slug": "20260817-powa-archivist-530-is-out-7a37c65f",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/powa-archivist-530-is-out-3366/",
-      "publishedAt": "2026-08-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "powa-archivist 5.3.0 is out!",
-          "summary": "Tainan, Taiwan - Sun 16 Aug 2026 powa-archivist 5.3.0 The PoWA team is pleased to announce the release of the version 5.3.0 of powa-archivist , the core extension of the PoWA project. PoWA (PostgreSQL Workload Analyzer) is a perf…"
-        },
-        "fr": {
-          "title": "powa-archivist 5.3.0 is out!",
-          "summary": "Tainan, Taiwan - Sun 16 Aug 2026 powa-archivist 5.3.0 The PoWA team is pleased to announce the release of the version 5.3.0 of powa-archivist , the core extension of the PoWA project. PoWA (PostgreSQL Workload Analyzer) is a perf…"
-        }
-      }
-    },
-    {
       "slug": "20260831-introducing-azure-multicloud-interconnect-for-aws-1621f670",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -3039,6 +3039,44 @@
         "fr": {
           "title": "17,600 Actions: Agent Security Is a Systems Problem",
           "summary": "The OpenAI/Hugging Face incident exposed a new challenge for AI agent security. 17,600 attacker actions show why AI agent security can’t rely on human review. Explore the controls needed to constrain, observe, and govern agents a…"
+        }
+      }
+    },
+    {
+      "slug": "20260817-powa-archivist-530-is-out-7a37c65f",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/powa-archivist-530-is-out-3366/",
+      "publishedAt": "2026-08-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "powa-archivist 5.3.0 is out!",
+          "summary": "Tainan, Taiwan - Sun 16 Aug 2026 powa-archivist 5.3.0 The PoWA team is pleased to announce the release of the version 5.3.0 of powa-archivist , the core extension of the PoWA project. PoWA (PostgreSQL Workload Analyzer) is a perf…"
+        },
+        "fr": {
+          "title": "powa-archivist 5.3.0 is out!",
+          "summary": "Tainan, Taiwan - Sun 16 Aug 2026 powa-archivist 5.3.0 The PoWA team is pleased to announce the release of the version 5.3.0 of powa-archivist , the core extension of the PoWA project. PoWA (PostgreSQL Workload Analyzer) is a perf…"
+        }
+      }
+    },
+    {
+      "slug": "20260901-kubernetes-v137-etcd-rangestream-cuts-memory-use-on-large-list-r-b472f2bb",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/",
+      "publishedAt": "2026-09-01T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
+          "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
+          "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
         }
       }
     },
@@ -3157,25 +3195,6 @@
       }
     },
     {
-      "slug": "20260831-kubernetes-v137-storage-version-migration-enabled-by-default-93963e42",
-      "topic": "AI Systems",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/",
-      "publishedAt": "2026-08-31T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
-          "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API ( storagemigration.k8s.io/…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
-          "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API ( storagemigration.k8s.io/…"
-        }
-      }
-    },
-    {
       "slug": "20260909-paul-christiano-joins-openai-foundation-board-534907e0",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3210,6 +3229,25 @@
         "fr": {
           "title": "Inside Microsoft’s marketing team: Scaling expertise with AI",
           "summary": "AI is helping organizations meet high expectations as markets change quickly and technology advances at a rapid pace. The post Inside Microsoft’s marketing team: Scaling expertise with AI appeared first on Microsoft Azure Blog ."
+        }
+      }
+    },
+    {
+      "slug": "20260831-kubernetes-v137-storage-version-migration-enabled-by-default-93963e42",
+      "topic": "AI Systems",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/",
+      "publishedAt": "2026-08-31T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
+          "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API ( storagemigration.k8s.io/…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
+          "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API ( storagemigration.k8s.io/…"
         }
       }
     },
@@ -3328,25 +3366,6 @@
       }
     },
     {
-      "slug": "20260828-kubernetes-v137-pod-certificates-and-cluster-trust-bundles-62fba438",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
-      "publishedAt": "2026-08-28T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
-          "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
-          "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
-        }
-      }
-    },
-    {
       "slug": "20260909-the-ai-policy-window-is-open-we-need-to-act-9786c92a",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3381,6 +3400,25 @@
         "fr": {
           "title": "Managed PostgreSQL vs. self-hosted PostgreSQL: Key benefits and trade-offs",
           "summary": "Compare managed PostgreSQL vs. self-hosted PostgreSQL across cost, control, security, resilience, scalability, and operational effort. The post Managed PostgreSQL vs. self-hosted PostgreSQL: Key benefits and trade-offs appeared f…"
+        }
+      }
+    },
+    {
+      "slug": "20260828-kubernetes-v137-pod-certificates-and-cluster-trust-bundles-62fba438",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
+      "publishedAt": "2026-08-28T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
+          "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
+          "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
         }
       }
     },
@@ -3499,25 +3537,6 @@
       }
     },
     {
-      "slug": "20260827-kubernetes-v137-metrics-api-graduates-to-stable-f1d9baa9",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/",
-      "publishedAt": "2026-08-27T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Metrics API graduates to stable",
-          "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable ( v1 ). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Metrics API graduates to stable",
-          "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable ( v1 ). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster…"
-        }
-      }
-    },
-    {
       "slug": "20260909-gpt-6-astra-the-next-generation-in-intelligence-for-work-587a7034",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3552,6 +3571,25 @@
         "fr": {
           "title": "The Economics of Agent Optimization: Four ways to lower the cost",
           "summary": "Microsoft Foundry gives you four levers that act on every request, before a single line of agent logic changes. The post The Economics of Agent Optimization: Four ways to lower the cost appeared first on Microsoft Azure Blog ."
+        }
+      }
+    },
+    {
+      "slug": "20260827-kubernetes-v137-metrics-api-graduates-to-stable-f1d9baa9",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/",
+      "publishedAt": "2026-08-27T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Metrics API graduates to stable",
+          "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable ( v1 ). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Metrics API graduates to stable",
+          "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable ( v1 ). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster…"
         }
       }
     },
@@ -3651,25 +3689,6 @@
       }
     },
     {
-      "slug": "20260826-kubernetes-v137-garhwal-506ba8d3",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
-      "publishedAt": "2026-08-26T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Garhwal",
-          "summary": "Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent deliver…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Garhwal",
-          "summary": "Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent deliver…"
-        }
-      }
-    },
-    {
       "slug": "20260908-how-gpt-56-sol-helps-run-quantum-computing-experiments-167bce5d",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3704,6 +3723,25 @@
         "fr": {
           "title": "The patch window is collapsing: Why security needs a new control plane",
           "summary": "Organizations need protection that operates in the gap between discovery and remediation. The post The patch window is collapsing: Why security needs a new control plane appeared first on Microsoft Azure Blog ."
+        }
+      }
+    },
+    {
+      "slug": "20260826-kubernetes-v137-garhwal-506ba8d3",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+      "publishedAt": "2026-08-26T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Garhwal",
+          "summary": "Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent deliver…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Garhwal",
+          "summary": "Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent deliver…"
         }
       }
     },
@@ -3803,25 +3841,6 @@
       }
     },
     {
-      "slug": "20260811-how-to-pretty-print-your-kubernetes-yaml-as-kyaml-and-why-youd-w-801f2827",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/11/how-to-pretty-print-kubernetes-yaml-as-kyaml/",
-      "publishedAt": "2026-08-11T18:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "How to Pretty-Print Your Kubernetes YAML as KYAML and Why You'd Want To",
-          "summary": "YAML has been the standard way to write Kubernetes manifests for years. Every example, tutorial, and configuration file you come across is written in it. The problem isn't that YAML is a bad format. It's that YAML gives you a lot…"
-        },
-        "fr": {
-          "title": "How to Pretty-Print Your Kubernetes YAML as KYAML and Why You'd Want To",
-          "summary": "YAML has been the standard way to write Kubernetes manifests for years. Every example, tutorial, and configuration file you come across is written in it. The problem isn't that YAML is a bad format. It's that YAML gives you a lot…"
-        }
-      }
-    },
-    {
       "slug": "20260908-the-work-now-within-reach-aaada63e",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3856,6 +3875,25 @@
         "fr": {
           "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud-Native Application Platforms",
           "summary": "Cloud-native platforms are becoming the foundation for AI transformation. Discover how Microsoft's Azure application platform helps organizations modernize, innovate, and operate AI-powered applications at scale. The post Microso…"
+        }
+      }
+    },
+    {
+      "slug": "20260811-how-to-pretty-print-your-kubernetes-yaml-as-kyaml-and-why-youd-w-801f2827",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/08/11/how-to-pretty-print-kubernetes-yaml-as-kyaml/",
+      "publishedAt": "2026-08-11T18:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "How to Pretty-Print Your Kubernetes YAML as KYAML and Why You'd Want To",
+          "summary": "YAML has been the standard way to write Kubernetes manifests for years. Every example, tutorial, and configuration file you come across is written in it. The problem isn't that YAML is a bad format. It's that YAML gives you a lot…"
+        },
+        "fr": {
+          "title": "How to Pretty-Print Your Kubernetes YAML as KYAML and Why You'd Want To",
+          "summary": "YAML has been the standard way to write Kubernetes manifests for years. Every example, tutorial, and configuration file you come across is written in it. The problem isn't that YAML is a bad format. It's that YAML gives you a lot…"
         }
       }
     },
@@ -3955,25 +3993,6 @@
       }
     },
     {
-      "slug": "20260803-gateway-api-v16-tcproute-and-udproute-graduate-to-standard-8df0ba72",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/",
-      "publishedAt": "2026-08-03T16:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard",
-          "summary": "The Kubernetes SIG Network community is thrilled to share the release of Gateway API v1.6.0 , which was released on June 30th of this year! Gateway API has become the standard for modern, role-oriented, and expressive service net…"
-        },
-        "fr": {
-          "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard",
-          "summary": "The Kubernetes SIG Network community is thrilled to share the release of Gateway API v1.6.0 , which was released on June 30th of this year! Gateway API has become the standard for modern, role-oriented, and expressive service net…"
-        }
-      }
-    },
-    {
       "slug": "20260908-introducing-chatgpt-images-25-305f03a4",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3989,6 +4008,25 @@
         "fr": {
           "title": "Introducing ChatGPT Images 2.5",
           "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas."
+        }
+      }
+    },
+    {
+      "slug": "20260803-gateway-api-v16-tcproute-and-udproute-graduate-to-standard-8df0ba72",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/",
+      "publishedAt": "2026-08-03T16:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard",
+          "summary": "The Kubernetes SIG Network community is thrilled to share the release of Gateway API v1.6.0 , which was released on June 30th of this year! Gateway API has become the standard for modern, role-oriented, and expressive service net…"
+        },
+        "fr": {
+          "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard",
+          "summary": "The Kubernetes SIG Network community is thrilled to share the release of Gateway API v1.6.0 , which was released on June 30th of this year! Gateway API has become the standard for modern, role-oriented, and expressive service net…"
         }
       }
     },
@@ -4521,44 +4559,6 @@
         "fr": {
           "title": "Inside our 353,000-person vibe coding course",
           "summary": "Kaggle’s AI Agents Intensive with Google brought learners together in a no-cost course to build and deploy the next frontier of AI."
-        }
-      }
-    },
-    {
-      "slug": "20260811-cloudflare-ddos-threat-report-h1-2026-1-tbps-attacks-soar-as-dns-10a9e309",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/ddos-threat-report-2026-h1/",
-      "publishedAt": "2026-08-11T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare DDoS Threat Report H1 2026: 1 Tbps attacks soar as DNS floods and geopolitical tensions drive a new wave",
-          "summary": "In the first half of 2026, Cloudflare detected a 519% surge in hyper-volumetric DDos attacks across its network. These attacks were driven heavily by DNS and CLDAP reflection vectors. This report breaks down how major geopolitica…"
-        },
-        "fr": {
-          "title": "Cloudflare DDoS Threat Report H1 2026: 1 Tbps attacks soar as DNS floods and geopolitical tensions drive a new wave",
-          "summary": "In the first half of 2026, Cloudflare detected a 519% surge in hyper-volumetric DDos attacks across its network. These attacks were driven heavily by DNS and CLDAP reflection vectors. This report breaks down how major geopolitica…"
-        }
-      }
-    },
-    {
-      "slug": "20260907-supporting-independent-journalism-in-ukraine-e02ae19d",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
-      "publishedAt": "2026-09-07T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:24:43.138Z",
-      "locales": {
-        "en": {
-          "title": "Supporting independent journalism in Ukraine",
-          "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism."
-        },
-        "fr": {
-          "title": "Supporting independent journalism in Ukraine",
-          "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism."
         }
       }
     }
