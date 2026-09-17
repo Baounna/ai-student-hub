@@ -1,84 +1,84 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T21:16:10.587Z",
+  "updatedAt": "2026-09-17T11:38:27.585Z",
   "items": [
     {
-      "slug": "20260916-vercel-hobby-projects-now-retain-fewer-deployments-to-free-up-st-b795b016",
+      "slug": "20260917-vercel-typesafe-ais-jev-now-available-on-ai-gateway-use-jev-from-19c86f9f",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/hobby-projects-now-retain-fewer-deployments-to-free-up-storage",
-      "publishedAt": "2026-09-16T21:16:10.587Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "href": "https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway",
+      "publishedAt": "2026-09-17T11:38:27.585Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
       "locales": {
         "en": {
-          "title": "Hobby projects now retain fewer deployments to free up storage We're changing the retention exceptions for Hobby plans so that it's easier to stay within the free usage limits. Accounts above the 10GB limit will have inactive deployments automatically deleted. Jay Gengelbach, Pranav Kanchi",
-          "summary": "16 September 16 Sep"
+          "title": "TypeSafe AI's Jev now available on AI Gateway Use Jev from TypeSafe AI on Vercel AI Gateway to classify, route, score, and automate workflows with typed outputs, probabilities, and confidence. Rohan Taneja, Zachary Chen, and 1 other",
+          "summary": "6a5/tony-pan-128.jpg\"/> Hedi Zandi, Tony Pan"
         },
         "fr": {
-          "title": "Hobby projects now retain fewer deployments to free up storage We're changing the retention exceptions for Hobby plans so that it's easier to stay within the free usage limits. Accounts above the 10GB limit will have inactive deployments automatically deleted. Jay Gengelbach, Pranav Kanchi",
-          "summary": "16 September 16 Sep"
+          "title": "TypeSafe AI's Jev now available on AI Gateway Use Jev from TypeSafe AI on Vercel AI Gateway to classify, route, score, and automate workflows with typed outputs, probabilities, and confidence. Rohan Taneja, Zachary Chen, and 1 other",
+          "summary": "6a5/tony-pan-128.jpg\"/> Hedi Zandi, Tony Pan"
         }
       }
     },
     {
-      "slug": "20260916-supabase-public-alpha-supabase-pipelines-8df37aee",
+      "slug": "20260917-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/pipelines",
-      "publishedAt": "2026-09-16T21:16:10.587Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
+      "publishedAt": "2026-09-17T11:38:27.585Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
       "locales": {
         "en": {
-          "title": "[Public Alpha] Supabase Pipelines",
-          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
         },
         "fr": {
-          "title": "[Public Alpha] Supabase Pipelines",
-          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
         }
       }
     },
     {
-      "slug": "20260916-nvidia-serve-qwen38-24t-a95b-a-24t-parameter-model-with-configur-06e533fd",
+      "slug": "20260916-nvidia-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/",
-      "publishedAt": "2026-09-16T21:15:27.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
+      "publishedAt": "2026-09-16T23:25:01.000Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
       "locales": {
         "en": {
-          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
-          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
         },
         "fr": {
-          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
-          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
         }
       }
     },
     {
-      "slug": "20260916-github-scim-user-responses-now-include-a-profileurl-attribute-4df4917d",
+      "slug": "20260916-github-automate-sso-authorization-for-classic-pats-and-ssh-keys-70ff7b63",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute",
-      "publishedAt": "2026-09-16T20:19:58.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "href": "https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys",
+      "publishedAt": "2026-09-16T20:20:16.000Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
       "locales": {
         "en": {
-          "title": "SCIM user responses now include a profileUrl attribute",
-          "summary": "SCIM user responses from GitHub now include the standard profileUrl attribute defined by RFC 7643, containing the absolute URL of the GitHub account linked to the external identity. Previously, matching… The post SCIM u…"
+          "title": "Automate SSO authorization for classic PATs and SSH keys",
+          "summary": "Enterprise admins can now automate SSO authorization for existing classic personal access tokens (PATs) and SSH keys for organizations in GitHub Enterprise Cloud, replacing manual per-organization authorization by your…"
         },
         "fr": {
-          "title": "SCIM user responses now include a profileUrl attribute",
-          "summary": "SCIM user responses from GitHub now include the standard profileUrl attribute defined by RFC 7643, containing the absolute URL of the GitHub account linked to the external identity. Previously, matching… The post SCIM u…"
+          "title": "Automate SSO authorization for classic PATs and SSH keys",
+          "summary": "Enterprise admins can now automate SSO authorization for existing classic personal access tokens (PATs) and SSH keys for organizations in GitHub Enterprise Cloud, replacing manual per-organization authorization by your…"
         }
       }
     },
@@ -103,6 +103,26 @@
       }
     },
     {
+      "slug": "20260916-kubernetes-kubernetes-v137-hardening-container-storage-with-bind-6cde82bb",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
+      "publishedAt": "2026-09-16T18:30:00.000Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
+          "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for examp…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
+          "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for examp…"
+        }
+      }
+    },
+    {
       "slug": "20260916-nodejs-nodejs-2690-current-077aebee",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -123,22 +143,22 @@
       }
     },
     {
-      "slug": "20260916-chatgpt-helping-older-adults-use-ai-in-everyday-life-027811ca",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
+      "slug": "20260916-openai-platform-our-framework-for-reporting-model-misalignment-bbe6c30a",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
-      "publishedAt": "2026-09-16T16:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "href": "https://openai.com/index/model-misalignment-reporting-framework",
+      "publishedAt": "2026-09-16T17:00:00.000Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
       "locales": {
         "en": {
-          "title": "Helping older adults use AI in everyday life",
-          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
+          "title": "Our framework for reporting model misalignment",
+          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
         },
         "fr": {
-          "title": "Helping older adults use AI in everyday life",
-          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
+          "title": "Our framework for reporting model misalignment",
+          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
         }
       }
     },
@@ -219,26 +239,6 @@
         "fr": {
           "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
           "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Dia…"
-        }
-      }
-    },
-    {
-      "slug": "20260915-kubernetes-kubernetes-v137-pod-level-resource-managers-graduated-993e015b",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
-      "publishedAt": "2026-09-15T18:30:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
-          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
-          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
         }
       }
     },
@@ -383,82 +383,82 @@
       }
     },
     {
-      "slug": "20260916-vercel-secure-compute-and-static-ip-builds-start-64-faster-prewa-ce7dce4b",
+      "slug": "20260917-vercel-ai-sdk-harness-layer-now-supports-native-subscription-aut-478b2e53",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/secure-compute-and-static-ip-builds-start-64-faster",
-      "publishedAt": "2026-09-16T21:16:10.587Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "href": "https://vercel.com/changelog/ai-sdk-harness-native-subscription-authentication",
+      "publishedAt": "2026-09-17T11:38:27.585Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
       "locales": {
         "en": {
-          "title": "Secure Compute and Static IP builds start 64% faster Prewarmed build containers cut the average time from deployment creation to build start from 6.7 seconds to 2.4 seconds. No configuration changes required. Ali Smesseim, Brandon Tuttle, and 1 other",
-          "summary": "pranav.jpeg\"/> Jay Gengelbach, Pranav Kanchi"
+          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
+          "summary": "14 September 14 Sep"
         },
         "fr": {
-          "title": "Secure Compute and Static IP builds start 64% faster Prewarmed build containers cut the average time from deployment creation to build start from 6.7 seconds to 2.4 seconds. No configuration changes required. Ali Smesseim, Brandon Tuttle, and 1 other",
-          "summary": "pranav.jpeg\"/> Jay Gengelbach, Pranav Kanchi"
+          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
+          "summary": "14 September 14 Sep"
         }
       }
     },
     {
-      "slug": "20260916-supabase-realtime-schema-is-now-fully-locked-down-against-modifi-4d315f11",
+      "slug": "20260917-supabase-migration-of-supabase-management-api-logsall-analytics--b021c0b5",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/realtime-schema-locked-down-against-modification",
-      "publishedAt": "2026-09-16T21:16:10.587Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "href": "https://supabase.com/changelog/48235-migration-of-supabase-management-api-logs-all-analytics-endpoint-to-logs-endpoint",
+      "publishedAt": "2026-09-17T11:38:27.585Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
       "locales": {
         "en": {
-          "title": "Realtime schema is now fully locked down against modifications",
-          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
+          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
         },
         "fr": {
-          "title": "Realtime schema is now fully locked down against modifications",
-          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
+          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
         }
       }
     },
     {
-      "slug": "20260916-nvidia-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-bench-82b93583",
+      "slug": "20260916-nvidia-experiment-with-qwen38-flash-next-on-nvidia-gb300-nvl72-f-65449754",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
-      "publishedAt": "2026-09-16T20:37:15.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "href": "https://developer.nvidia.com/blog/experiment-with-qwen3-8-flash-next-on-nvidia-gb300-nvl72-for-agentic-coding/",
+      "publishedAt": "2026-09-16T21:46:25.000Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
       "locales": {
         "en": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+          "title": "Experiment with Qwen3.8-Flash-Next on NVIDIA GB300 NVL72 for Agentic Coding",
+          "summary": "Alibaba released the model weights for Qwen3.8-Flash-Next as a preview of the upcoming Qwen4 architecture for developers to experiment with and evaluate. It’s..."
         },
         "fr": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+          "title": "Experiment with Qwen3.8-Flash-Next on NVIDIA GB300 NVL72 for Agentic Coding",
+          "summary": "Alibaba released the model weights for Qwen3.8-Flash-Next as a preview of the upcoming Qwen4 architecture for developers to experiment with and evaluate. It’s..."
         }
       }
     },
     {
-      "slug": "20260916-github-copilot-copilot-budget-increase-requests-are-generally-av-aaa1a76c",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
+      "slug": "20260916-github-scim-user-responses-now-include-a-profileurl-attribute-4df4917d",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available",
-      "publishedAt": "2026-09-16T20:17:18.000Z",
+      "href": "https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute",
+      "publishedAt": "2026-09-16T20:19:58.000Z",
       "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Copilot budget increase requests are generally available",
-          "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests…"
+          "title": "SCIM user responses now include a profileUrl attribute",
+          "summary": "SCIM user responses from GitHub now include the standard profileUrl attribute defined by RFC 7643, containing the absolute URL of the GitHub account linked to the external identity. Previously, matching… The post SCIM u…"
         },
         "fr": {
-          "title": "Copilot budget increase requests are generally available",
-          "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests…"
+          "title": "SCIM user responses now include a profileUrl attribute",
+          "summary": "SCIM user responses from GitHub now include the standard profileUrl attribute defined by RFC 7643, containing the absolute URL of the GitHub account linked to the external identity. Previously, matching… The post SCIM u…"
         }
       }
     },
@@ -483,6 +483,26 @@
       }
     },
     {
+      "slug": "20260915-kubernetes-kubernetes-v137-pod-level-resource-managers-graduated-993e015b",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
+      "publishedAt": "2026-09-15T18:30:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
+        }
+      }
+    },
+    {
       "slug": "20260909-nodejs-nodejs-2682-current-dcb9ac31",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -503,22 +523,22 @@
       }
     },
     {
-      "slug": "20260916-openai-platform-reimagining-advertising-with-ai-52752974",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
+      "slug": "20260916-chatgpt-helping-older-adults-use-ai-in-everyday-life-027811ca",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/reimagining-advertising-with-ai",
-      "publishedAt": "2026-09-16T13:00:00.000Z",
+      "href": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+      "publishedAt": "2026-09-16T16:00:00.000Z",
       "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Reimagining advertising with AI",
-          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
+          "title": "Helping older adults use AI in everyday life",
+          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
         },
         "fr": {
-          "title": "Reimagining advertising with AI",
-          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
+          "title": "Helping older adults use AI in everyday life",
+          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
         }
       }
     },
@@ -599,26 +619,6 @@
         "fr": {
           "title": "CERN PGDay 2027: Announcement and CfP",
           "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sess…"
-        }
-      }
-    },
-    {
-      "slug": "20260914-kubernetes-kubernetes-changed-block-tracking-api---beta-differen-081539c8",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
-      "publishedAt": "2026-09-14T18:30:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
-          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
-        },
-        "fr": {
-          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
-          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
         }
       }
     },
@@ -763,82 +763,82 @@
       }
     },
     {
-      "slug": "20260916-vercel-mem0-joins-the-vercel-marketplace-mem0-is-now-a-native-in-2f9440b3",
+      "slug": "20260916-vercel-hobby-projects-now-retain-fewer-deployments-to-free-up-st-b795b016",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/mem0-joins-the-vercel-marketplace",
+      "href": "https://vercel.com/changelog/hobby-projects-now-retain-fewer-deployments-to-free-up-storage",
       "publishedAt": "2026-09-16T21:16:10.587Z",
       "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Mem0 joins the Vercel Marketplace Mem0 is now a native integration on the Vercel Marketplace, giving your AI agents and apps memory that persists across sessions. Hedi Zandi, Tony Pan",
-          "summary": "Ali Smesseim, Brandon Tuttle, and 1 other"
+          "title": "Hobby projects now retain fewer deployments to free up storage We're changing the retention exceptions for Hobby plans so that it's easier to stay within the free usage limits. Accounts above the 10GB limit will have inactive deployments automatically deleted. Jay Gengelbach, Pranav Kanchi",
+          "summary": "16 September 16 Sep"
         },
         "fr": {
-          "title": "Mem0 joins the Vercel Marketplace Mem0 is now a native integration on the Vercel Marketplace, giving your AI agents and apps memory that persists across sessions. Hedi Zandi, Tony Pan",
-          "summary": "Ali Smesseim, Brandon Tuttle, and 1 other"
+          "title": "Hobby projects now retain fewer deployments to free up storage We're changing the retention exceptions for Hobby plans so that it's easier to stay within the free usage limits. Accounts above the 10GB limit will have inactive deployments automatically deleted. Jay Gengelbach, Pranav Kanchi",
+          "summary": "16 September 16 Sep"
         }
       }
     },
     {
-      "slug": "20260916-supabase-deprecation-notice-supabasesupabase-js-will-require-typ-31c8f33a",
+      "slug": "20260916-supabase-public-alpha-supabase-pipelines-8df37aee",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/47812-deprecation-notice-supabase-supabase-js-will-require-typescript-5-0",
-      "publishedAt": "2026-09-16T11:28:36.810Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "href": "https://supabase.com/changelog/pipelines",
+      "publishedAt": "2026-09-16T21:16:10.587Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
-          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
+          "title": "[Public Alpha] Supabase Pipelines",
+          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
         },
         "fr": {
-          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
-          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
+          "title": "[Public Alpha] Supabase Pipelines",
+          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
         }
       }
     },
     {
-      "slug": "20260916-nvidia-translating-cuda-tile-operations-from-python-to-rust-usin-833138d5",
+      "slug": "20260916-nvidia-serve-qwen38-24t-a95b-a-24t-parameter-model-with-configur-06e533fd",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
-      "publishedAt": "2026-09-16T16:29:07.000Z",
+      "href": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/",
+      "publishedAt": "2026-09-16T21:15:27.000Z",
       "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
+          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
         },
         "fr": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
+          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
         }
       }
     },
     {
-      "slug": "20260916-github-code-scanning-ai-scan-no-longer-requires-codeql-default-s-892303a4",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
+      "slug": "20260916-github-copilot-copilot-budget-increase-requests-are-generally-av-aaa1a76c",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup",
-      "publishedAt": "2026-09-16T13:26:06.000Z",
+      "href": "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available",
+      "publishedAt": "2026-09-16T20:17:18.000Z",
       "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Code scanning AI Scan no longer requires CodeQL default setup",
-          "summary": "You can now use AI Scan for pull requests to find security vulnerabilities, even when CodeQL default setup isn’t enabled on a repository. Previously, AI Scan for pull requests only… The post Code scanning AI Scan no lon…"
+          "title": "Copilot budget increase requests are generally available",
+          "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests…"
         },
         "fr": {
-          "title": "Code scanning AI Scan no longer requires CodeQL default setup",
-          "summary": "You can now use AI Scan for pull requests to find security vulnerabilities, even when CodeQL default setup isn’t enabled on a repository. Previously, AI Scan for pull requests only… The post Code scanning AI Scan no lon…"
+          "title": "Copilot budget increase requests are generally available",
+          "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests…"
         }
       }
     },
@@ -863,6 +863,26 @@
       }
     },
     {
+      "slug": "20260914-kubernetes-kubernetes-changed-block-tracking-api---beta-differen-081539c8",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
+      "publishedAt": "2026-09-14T18:30:00.000Z",
+      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
+        },
+        "fr": {
+          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
+        }
+      }
+    },
+    {
       "slug": "20260909-nodejs-nodejs-24210-lts-48e7f627",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -883,22 +903,22 @@
       }
     },
     {
-      "slug": "20260916-chatgpt-how-to-connect-ai-usage-to-business-value-5f7e182a",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
+      "slug": "20260916-openai-platform-reimagining-advertising-with-ai-52752974",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-      "publishedAt": "2026-09-16T12:00:00.000Z",
+      "href": "https://openai.com/index/reimagining-advertising-with-ai",
+      "publishedAt": "2026-09-16T13:00:00.000Z",
       "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "How to connect AI usage to business value",
-          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
+          "title": "Reimagining advertising with AI",
+          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
         },
         "fr": {
-          "title": "How to connect AI usage to business value",
-          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
+          "title": "Reimagining advertising with AI",
+          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
         }
       }
     },
@@ -979,26 +999,6 @@
         "fr": {
           "title": "PostgreSQL Migrator 1.0 : first stable release",
           "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL…"
-        }
-      }
-    },
-    {
-      "slug": "20260914-kubernetes-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
-      "publishedAt": "2026-09-14T18:30:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
-          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
-          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
         }
       }
     },
@@ -1143,82 +1143,82 @@
       }
     },
     {
-      "slug": "20260916-vercel-is-agentic-now-tailors-its-audit-by-site-type-is-agentic--2c9062d3",
+      "slug": "20260916-vercel-secure-compute-and-static-ip-builds-start-64-faster-prewa-ce7dce4b",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/is-agentic-report-categories",
-      "publishedAt": "2026-09-16T11:28:36.810Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "href": "https://vercel.com/changelog/secure-compute-and-static-ip-builds-start-64-faster",
+      "publishedAt": "2026-09-16T21:16:10.587Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Is Agentic now tailors its audit by site type Is Agentic reports now let you view checks through four site types, highlighting what matters for your site without changing your score. Andrew Qu, Rich Haines",
-          "summary": "16 September 16 Sep"
+          "title": "Secure Compute and Static IP builds start 64% faster Prewarmed build containers cut the average time from deployment creation to build start from 6.7 seconds to 2.4 seconds. No configuration changes required. Ali Smesseim, Brandon Tuttle, and 1 other",
+          "summary": "pranav.jpeg\"/> Jay Gengelbach, Pranav Kanchi"
         },
         "fr": {
-          "title": "Is Agentic now tailors its audit by site type Is Agentic reports now let you view checks through four site types, highlighting what matters for your site without changing your score. Andrew Qu, Rich Haines",
-          "summary": "16 September 16 Sep"
+          "title": "Secure Compute and Static IP builds start 64% faster Prewarmed build containers cut the average time from deployment creation to build start from 6.7 seconds to 2.4 seconds. No configuration changes required. Ali Smesseim, Brandon Tuttle, and 1 other",
+          "summary": "pranav.jpeg\"/> Jay Gengelbach, Pranav Kanchi"
         }
       }
     },
     {
-      "slug": "20260916-supabase-developer-update---july-2026-14aef04c",
+      "slug": "20260916-supabase-realtime-schema-is-now-fully-locked-down-against-modifi-4d315f11",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/47796-developer-update-july-2026",
-      "publishedAt": "2026-09-16T11:28:36.810Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "href": "https://supabase.com/changelog/realtime-schema-locked-down-against-modification",
+      "publishedAt": "2026-09-16T21:16:10.587Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Developer Update - July 2026",
-          "summary": "Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
+          "title": "Realtime schema is now fully locked down against modifications",
+          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
         },
         "fr": {
-          "title": "Developer Update - July 2026",
-          "summary": "Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
+          "title": "Realtime schema is now fully locked down against modifications",
+          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
         }
       }
     },
     {
-      "slug": "20260915-nvidia-how-nvidia-groq-3-lpx-deterministic-execution-drives-powe-ce9893f8",
+      "slug": "20260916-nvidia-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-bench-82b93583",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
-      "publishedAt": "2026-09-15T17:06:22.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
+      "publishedAt": "2026-09-16T20:37:15.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
         },
         "fr": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
         }
       }
     },
     {
-      "slug": "20260915-github-enforce-github-advanced-security-configurations-12ae08f3",
+      "slug": "20260916-github-code-scanning-ai-scan-no-longer-requires-codeql-default-s-892303a4",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-15-enforce-github-advanced-security-configurations",
-      "publishedAt": "2026-09-15T19:31:58.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "href": "https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup",
+      "publishedAt": "2026-09-16T13:26:06.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Enforce GitHub Advanced Security configurations",
-          "summary": "Enterprise administrators can now enforce GitHub Advanced Security configurations across their organizations. This prevents both organization and repository administrators from overriding settings defined at the enterpr…"
+          "title": "Code scanning AI Scan no longer requires CodeQL default setup",
+          "summary": "You can now use AI Scan for pull requests to find security vulnerabilities, even when CodeQL default setup isn’t enabled on a repository. Previously, AI Scan for pull requests only… The post Code scanning AI Scan no lon…"
         },
         "fr": {
-          "title": "Enforce GitHub Advanced Security configurations",
-          "summary": "Enterprise administrators can now enforce GitHub Advanced Security configurations across their organizations. This prevents both organization and repository administrators from overriding settings defined at the enterpr…"
+          "title": "Code scanning AI Scan no longer requires CodeQL default setup",
+          "summary": "You can now use AI Scan for pull requests to find security vulnerabilities, even when CodeQL default setup isn’t enabled on a repository. Previously, AI Scan for pull requests only… The post Code scanning AI Scan no lon…"
         }
       }
     },
@@ -1243,6 +1243,26 @@
       }
     },
     {
+      "slug": "20260914-kubernetes-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
+      "publishedAt": "2026-09-14T18:30:00.000Z",
+      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
+          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
+          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
+        }
+      }
+    },
+    {
       "slug": "20260826-nodejs-nodejs-2681-current-c52a0716",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -1263,22 +1283,22 @@
       }
     },
     {
-      "slug": "20260916-openai-platform-how-workers-are-unlocking-new-ways-of-working-71646fff",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
+      "slug": "20260916-chatgpt-how-to-connect-ai-usage-to-business-value-5f7e182a",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/unlocking-new-ways-of-working",
-      "publishedAt": "2026-09-16T09:00:00.000Z",
+      "href": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+      "publishedAt": "2026-09-16T12:00:00.000Z",
       "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "How workers are unlocking new ways of working",
-          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
+          "title": "How to connect AI usage to business value",
+          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
         },
         "fr": {
-          "title": "How workers are unlocking new ways of working",
-          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
+          "title": "How to connect AI usage to business value",
+          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
         }
       }
     },
@@ -1359,26 +1379,6 @@
         "fr": {
           "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
           "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it le…"
-        }
-      }
-    },
-    {
-      "slug": "20260911-github-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
-      "publishedAt": "2026-09-11T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
-          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 und…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
-          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 und…"
         }
       }
     },
@@ -1523,82 +1523,82 @@
       }
     },
     {
-      "slug": "20260916-vercel-vercel-sandbox-now-provides-64-gb-of-storage-vercel-sandb-a8941f9b",
+      "slug": "20260916-vercel-mem0-joins-the-vercel-marketplace-mem0-is-now-a-native-in-2f9440b3",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-sandbox-64-gb-storage",
-      "publishedAt": "2026-09-16T11:28:36.810Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "href": "https://vercel.com/changelog/mem0-joins-the-vercel-marketplace",
+      "publishedAt": "2026-09-16T21:16:10.587Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
-          "summary": "11 September 11 Sep"
+          "title": "Mem0 joins the Vercel Marketplace Mem0 is now a native integration on the Vercel Marketplace, giving your AI agents and apps memory that persists across sessions. Hedi Zandi, Tony Pan",
+          "summary": "Ali Smesseim, Brandon Tuttle, and 1 other"
         },
         "fr": {
-          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
-          "summary": "11 September 11 Sep"
+          "title": "Mem0 joins the Vercel Marketplace Mem0 is now a native integration on the Vercel Marketplace, giving your AI agents and apps memory that persists across sessions. Hedi Zandi, Tony Pan",
+          "summary": "Ali Smesseim, Brandon Tuttle, and 1 other"
         }
       }
     },
     {
-      "slug": "20260915-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
+      "slug": "20260916-supabase-deprecation-notice-supabasesupabase-js-will-require-typ-31c8f33a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/restore-credential-resync",
-      "publishedAt": "2026-09-15T21:18:38.937Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "href": "https://supabase.com/changelog/47812-deprecation-notice-supabase-supabase-js-will-require-typescript-5-0",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
       "locales": {
         "en": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
+          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
         },
         "fr": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
+          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
         }
       }
     },
     {
-      "slug": "20260915-nvidia-dense-vs-moe-models-active-parameters-throughput-and-when-3f75c866",
+      "slug": "20260916-nvidia-translating-cuda-tile-operations-from-python-to-rust-usin-833138d5",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
-      "publishedAt": "2026-09-15T17:00:18.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
+      "publishedAt": "2026-09-16T16:29:07.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
         },
         "fr": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
         }
       }
     },
     {
-      "slug": "20260915-github-copilot-github-copilot-suggests-custom-properties-definit-e594f69e",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
+      "slug": "20260915-github-enforce-github-advanced-security-configurations-12ae08f3",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
-      "publishedAt": "2026-09-15T19:07:47.000Z",
+      "href": "https://github.blog/changelog/2026-09-15-enforce-github-advanced-security-configurations",
+      "publishedAt": "2026-09-15T19:31:58.000Z",
       "discoveredAt": "2026-09-15T21:18:38.937Z",
       "locales": {
         "en": {
-          "title": "GitHub Copilot suggests custom properties definitions",
-          "summary": "GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot s…"
+          "title": "Enforce GitHub Advanced Security configurations",
+          "summary": "Enterprise administrators can now enforce GitHub Advanced Security configurations across their organizations. This prevents both organization and repository administrators from overriding settings defined at the enterpr…"
         },
         "fr": {
-          "title": "GitHub Copilot suggests custom properties definitions",
-          "summary": "GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot s…"
+          "title": "Enforce GitHub Advanced Security configurations",
+          "summary": "Enterprise administrators can now enforce GitHub Advanced Security configurations across their organizations. This prevents both organization and repository administrators from overriding settings defined at the enterpr…"
         }
       }
     },
@@ -1623,6 +1623,26 @@
       }
     },
     {
+      "slug": "20260911-github-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
+      "publishedAt": "2026-09-11T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 und…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 und…"
+        }
+      }
+    },
+    {
       "slug": "20260826-nodejs-nodejs-2680-current-1f44590f",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -1643,22 +1663,22 @@
       }
     },
     {
-      "slug": "20260914-openai-platform-how-fyxer-built-an-ai-executive-assistant-people-296d33de",
+      "slug": "20260916-openai-platform-how-workers-are-unlocking-new-ways-of-working-71646fff",
       "toolName": "OpenAI Platform",
       "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/fyxer",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "href": "https://openai.com/index/unlocking-new-ways-of-working",
+      "publishedAt": "2026-09-16T09:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "How Fyxer built an AI executive assistant people trust",
-          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
+          "title": "How workers are unlocking new ways of working",
+          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
         },
         "fr": {
-          "title": "How Fyxer built an AI executive assistant people trust",
-          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
+          "title": "How workers are unlocking new ways of working",
+          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
         }
       }
     },
@@ -1739,26 +1759,6 @@
         "fr": {
           "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
           "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer i…"
-        }
-      }
-    },
-    {
-      "slug": "20260910-kubernetes-kubernetes-v137-scheduler-preemption-for-in-place-pod-e2763381",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
-      "publishedAt": "2026-09-10T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.…"
         }
       }
     },
@@ -1903,82 +1903,82 @@
       }
     },
     {
-      "slug": "20260915-vercel-gemini-38-live-models-now-available-on-ai-gateway-gemini--f5b57b43",
+      "slug": "20260916-vercel-is-agentic-now-tailors-its-audit-by-site-type-is-agentic--2c9062d3",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/gemini-3-8-live-models-now-available-on-ai-gateway",
-      "publishedAt": "2026-09-15T21:18:38.937Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "href": "https://vercel.com/changelog/is-agentic-report-categories",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
       "locales": {
         "en": {
-          "title": "Gemini 3.8 Live models now available on AI Gateway Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking from Google are now available on Vercel AI Gateway for real-time audio conversations. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "15 September 15 Sep"
+          "title": "Is Agentic now tailors its audit by site type Is Agentic reports now let you view checks through four site types, highlighting what matters for your site without changing your score. Andrew Qu, Rich Haines",
+          "summary": "16 September 16 Sep"
         },
         "fr": {
-          "title": "Gemini 3.8 Live models now available on AI Gateway Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking from Google are now available on Vercel AI Gateway for real-time audio conversations. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "15 September 15 Sep"
+          "title": "Is Agentic now tailors its audit by site type Is Agentic reports now let you view checks through four site types, highlighting what matters for your site without changing your score. Andrew Qu, Rich Haines",
+          "summary": "16 September 16 Sep"
         }
       }
     },
     {
-      "slug": "20260915-postgresql-logconnections-is-to-be-turned-off-by-default-for-new-34ce372d",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20260916-supabase-developer-update---july-2026-14aef04c",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/47197-log-connections-is-to-be-turned-off-by-default-for-new-projects-and-existing-free-pro-projects",
-      "publishedAt": "2026-09-15T11:41:28.047Z",
-      "discoveredAt": "2026-09-15T11:41:28.047Z",
+      "href": "https://supabase.com/changelog/47796-developer-update-july-2026",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
       "locales": {
         "en": {
-          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
-          "summary": "Improvement Postgres log_connections defaults to off for new projects and existin"
+          "title": "Developer Update - July 2026",
+          "summary": "Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
         },
         "fr": {
-          "title": "log_connections is to be turned off by default for new projects and existing Free/Pro projects",
-          "summary": "Improvement Postgres log_connections defaults to off for new projects and existin"
+          "title": "Developer Update - July 2026",
+          "summary": "Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
         }
       }
     },
     {
-      "slug": "20260915-nvidia-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-a-6510d815",
+      "slug": "20260915-nvidia-how-nvidia-groq-3-lpx-deterministic-execution-drives-powe-ce9893f8",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
-      "publishedAt": "2026-09-15T16:42:44.000Z",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
+      "publishedAt": "2026-09-15T17:06:22.000Z",
       "discoveredAt": "2026-09-15T21:18:38.937Z",
       "locales": {
         "en": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
         },
         "fr": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
         }
       }
     },
     {
-      "slug": "20260915-github-sha-1-in-https-on-github-sunset-10a67c97",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
+      "slug": "20260915-github-copilot-github-copilot-suggests-custom-properties-definit-e594f69e",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-15-sha-1-in-https-on-github-sunset",
-      "publishedAt": "2026-09-15T16:47:20.000Z",
+      "href": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
+      "publishedAt": "2026-09-15T19:07:47.000Z",
       "discoveredAt": "2026-09-15T21:18:38.937Z",
       "locales": {
         "en": {
-          "title": "SHA-1 in HTTPS on GitHub sunset",
-          "summary": "Previously we announced we would be disabling SHA-1 in HTTPS for GitHub on September 15th, 2026. Following the planned schedule, GitHub has disabled SHA-1 in HTTPS for github.com and partner… The post SHA-1 in HTTPS on…"
+          "title": "GitHub Copilot suggests custom properties definitions",
+          "summary": "GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot s…"
         },
         "fr": {
-          "title": "SHA-1 in HTTPS on GitHub sunset",
-          "summary": "Previously we announced we would be disabling SHA-1 in HTTPS for GitHub on September 15th, 2026. Following the planned schedule, GitHub has disabled SHA-1 in HTTPS for github.com and partner… The post SHA-1 in HTTPS on…"
+          "title": "GitHub Copilot suggests custom properties definitions",
+          "summary": "GitHub Copilot can now suggest allowed values when you create a custom property for repositories in your organization. This feature is in public preview for GitHub Copilot Business and Copilot… The post GitHub Copilot s…"
         }
       }
     },
@@ -2003,6 +2003,26 @@
       }
     },
     {
+      "slug": "20260910-kubernetes-kubernetes-v137-scheduler-preemption-for-in-place-pod-e2763381",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
+      "publishedAt": "2026-09-10T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.…"
+        }
+      }
+    },
+    {
       "slug": "20260826-nodejs-nodejs-24200-lts-2b040562",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -2023,22 +2043,22 @@
       }
     },
     {
-      "slug": "20260914-perplexity-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-12e9dd68",
-      "toolName": "Perplexity",
-      "category": "Research Assistant",
+      "slug": "20260914-openai-platform-how-fyxer-built-an-ai-executive-assistant-people-296d33de",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-      "publishedAt": "2026-09-14T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "href": "https://openai.com/index/fyxer",
+      "publishedAt": "2026-09-14T12:00:00.000Z",
+      "discoveredAt": "2026-09-14T21:48:07.802Z",
       "locales": {
         "en": {
-          "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-          "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
+          "title": "How Fyxer built an AI executive assistant people trust",
+          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
         },
         "fr": {
-          "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-          "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
+          "title": "How Fyxer built an AI executive assistant people trust",
+          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
         }
       }
     },
@@ -2099,26 +2119,6 @@
         "fr": {
           "title": "Autobase 2.11 released",
           "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-kubernetes-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
-      "publishedAt": "2026-09-09T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
-          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kuberne…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
-          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kuberne…"
         }
       }
     },
@@ -2243,102 +2243,102 @@
       }
     },
     {
-      "slug": "20260820-rust-supply-chain-attack-on-arrayref-14062eb1",
+      "slug": "20260820-rust-announcing-rust-1980-3f795da6",
       "toolName": "Rust",
       "category": "Systems & Backend",
       "source": "Rust Blog",
       "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
+      "href": "https://blog.rust-lang.org/2026/08/20/Rust-1.98.0/",
       "publishedAt": "2026-08-20T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
       "locales": {
         "en": {
-          "title": "Supply chain attack on arrayref",
-          "summary": "What happened On 2026-08-20 at 7:15 UTC we got a report that the proc-macro1 crate was malicious. The Rust Security Response Team verified this to be the case: the crate had a build script that was downloading a malicio…"
+          "title": "Announcing Rust 1.98.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.98.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
         },
         "fr": {
-          "title": "Supply chain attack on arrayref",
-          "summary": "What happened On 2026-08-20 at 7:15 UTC we got a report that the proc-macro1 crate was malicious. The Rust Security Response Team verified this to be the case: the crate had a build script that was downloading a malicio…"
+          "title": "Announcing Rust 1.98.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.98.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
         }
       }
     },
     {
-      "slug": "20260915-vercel-control-who-can-manage-connectors-in-vercel-connect-verce-3e6c19c6",
+      "slug": "20260916-vercel-vercel-sandbox-now-provides-64-gb-of-storage-vercel-sandb-a8941f9b",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/control-who-can-manage-connectors-in-vercel-connect",
-      "publishedAt": "2026-09-15T21:18:38.937Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "href": "https://vercel.com/changelog/vercel-sandbox-64-gb-storage",
+      "publishedAt": "2026-09-16T11:28:36.810Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
       "locales": {
         "en": {
-          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
-          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard"
+          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
+          "summary": "11 September 11 Sep"
         },
         "fr": {
-          "title": "Control who can manage connectors in Vercel Connect Vercel Connect now lets teams on Pro and Enterprise plans restrict who can create and manage connectors. Mark Roberts, Allen Zhou",
-          "summary": "tar.png\"/> Andy Waller, Luke Phillips-Sheard"
+          "title": "Vercel Sandbox now provides 64 GB of storage Vercel Sandbox now provides 64 GB of storage per sandbox, up from 32 GB, by default on the latest SDK and CLI versions and when created with an image. Andy Waller, Luke Phillips-Sheard",
+          "summary": "11 September 11 Sep"
         }
       }
     },
     {
-      "slug": "20260913-supabase-observability-on-auto-pilot-d72f6df8",
+      "slug": "20260915-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/50403-observability-autopilot",
-      "publishedAt": "2026-09-13T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "Sep 13, 2026"
-        },
-        "fr": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "Sep 13, 2026"
-        }
-      }
-    },
-    {
-      "slug": "20260915-docker-scaling-federated-learning-across-docker-kubernetes-and-s-c2ceacd6",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/scaling-federated-learning-across-docker-kubernetes-and-slurm-with-nvidia-flare/",
-      "publishedAt": "2026-09-15T02:49:31.000Z",
+      "href": "https://supabase.com/changelog/restore-credential-resync",
+      "publishedAt": "2026-09-15T21:18:38.937Z",
       "discoveredAt": "2026-09-15T21:18:38.937Z",
       "locales": {
         "en": {
-          "title": "Scaling Federated Learning Across Docker, Kubernetes, and Slurm with NVIDIA FLARE",
-          "summary": "Federated learning (FL) projects often begin with a straightforward setup: one server, a few clients, and one dataset at each site. As those projects grow, the..."
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
         },
         "fr": {
-          "title": "Scaling Federated Learning Across Docker, Kubernetes, and Slurm with NVIDIA FLARE",
-          "summary": "Federated learning (FL) projects often begin with a straightforward setup: one server, a few clients, and one dataset at each site. As those projects grow, the..."
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
         }
       }
     },
     {
-      "slug": "20260914-github-copilot-configure-cost-and-quality-in-copilot-auto-model--91704e3c",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection",
-      "publishedAt": "2026-09-14T16:05:27.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
+      "slug": "20260915-nvidia-dense-vs-moe-models-active-parameters-throughput-and-when-3f75c866",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
+      "publishedAt": "2026-09-15T17:00:18.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
       "locales": {
         "en": {
-          "title": "Configure cost and quality in Copilot auto model selection",
-          "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for… The post Configure cost a…"
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
         },
         "fr": {
-          "title": "Configure cost and quality in Copilot auto model selection",
-          "summary": "GitHub Copilot auto model selection now offers three tiers: efficiency, balance, and intelligence. Choose the tier that reflects how you want auto to weigh cost, quality, and response time for… The post Configure cost a…"
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+        }
+      }
+    },
+    {
+      "slug": "20260915-github-sha-1-in-https-on-github-sunset-10a67c97",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-15-sha-1-in-https-on-github-sunset",
+      "publishedAt": "2026-09-15T16:47:20.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "SHA-1 in HTTPS on GitHub sunset",
+          "summary": "Previously we announced we would be disabling SHA-1 in HTTPS for GitHub on September 15th, 2026. Following the planned schedule, GitHub has disabled SHA-1 in HTTPS for github.com and partner… The post SHA-1 in HTTPS on…"
+        },
+        "fr": {
+          "title": "SHA-1 in HTTPS on GitHub sunset",
+          "summary": "Previously we announced we would be disabling SHA-1 in HTTPS for GitHub on September 15th, 2026. Following the planned schedule, GitHub has disabled SHA-1 in HTTPS for github.com and partner… The post SHA-1 in HTTPS on…"
         }
       }
     },
@@ -2363,6 +2363,26 @@
       }
     },
     {
+      "slug": "20260909-kubernetes-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
+      "publishedAt": "2026-09-09T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kuberne…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kuberne…"
+        }
+      }
+    },
+    {
       "slug": "20260814-nodejs-nodejs-interactive-2026-a-recap-a2a9f36f",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -2379,26 +2399,6 @@
         "fr": {
           "title": "Node.js Interactive 2026: A Recap",
           "summary": "Node.js Interactive 2026: A Recap"
-        }
-      }
-    },
-    {
-      "slug": "20260911-openai-platform-cognition-helps-devin-test-its-own-work-with-gpt-c3aa3382",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/cognition-devin-testing-with-astra",
-      "publishedAt": "2026-09-11T16:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
-          "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more."
-        },
-        "fr": {
-          "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
-          "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more."
         }
       }
     }
