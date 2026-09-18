@@ -1,24 +1,44 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T21:19:50.467Z",
+  "updatedAt": "2026-09-18T11:10:49.888Z",
   "items": [
     {
-      "slug": "20260917-vercel-sub-second-artifact-deployments-are-now-supported-in-verc-a3cc0aad",
+      "slug": "20260918-vercel-glm-53-flashx-now-available-on-ai-gateway-call-zais-glm-5-32372f02",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/sub-second-artifact-deployments-are-now-supported-in-vercel-cli",
-      "publishedAt": "2026-09-17T21:19:50.467Z",
-      "discoveredAt": "2026-09-17T21:19:50.467Z",
+      "href": "https://vercel.com/changelog/glm-5-3-flashx-now-available-on-ai-gateway",
+      "publishedAt": "2026-09-18T11:10:49.888Z",
+      "discoveredAt": "2026-09-18T11:10:49.888Z",
       "locales": {
         "en": {
-          "title": "Sub-second artifact deployments are now supported in Vercel CLI Use the Vercel CLI to deploy static artifacts to Vercel in less than one second. Melkey Moksyakov, Andrew Healey , and 1 other",
-          "summary": "17 September 17 Sep"
+          "title": "GLM 5.3 FlashX now available on AI Gateway Call Z.ai's GLM 5.3 FlashX through Vercel AI Gateway at 200 tokens per second, with one API key, automatic fallbacks, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "18 September 18 Sep"
         },
         "fr": {
-          "title": "Sub-second artifact deployments are now supported in Vercel CLI Use the Vercel CLI to deploy static artifacts to Vercel in less than one second. Melkey Moksyakov, Andrew Healey , and 1 other",
-          "summary": "17 September 17 Sep"
+          "title": "GLM 5.3 FlashX now available on AI Gateway Call Z.ai's GLM 5.3 FlashX through Vercel AI Gateway at 200 tokens per second, with one API key, automatic fallbacks, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "18 September 18 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260917-github-copilot-copilot-impact-dashboard-now-shows-feature-engage-cfbfb747",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement",
+      "publishedAt": "2026-09-17T21:47:27.000Z",
+      "discoveredAt": "2026-09-18T11:10:49.888Z",
+      "locales": {
+        "en": {
+          "title": "Copilot impact dashboard now shows feature engagement",
+          "summary": "The Copilot impact dashboard now shows how many active users regularly use key Copilot features. Enterprise administrators can quickly see which experiences are widely adopted and which may need more… The post Copilot i…"
+        },
+        "fr": {
+          "title": "Copilot impact dashboard now shows feature engagement",
+          "summary": "The Copilot impact dashboard now shows how many active users regularly use key Copilot features. Enterprise administrators can quickly see which experiences are widely adopted and which may need more… The post Copilot i…"
         }
       }
     },
@@ -63,22 +83,22 @@
       }
     },
     {
-      "slug": "20260917-github-ubuntu-26-generally-available-and-latest-migration-a4ef6146",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-17-ubuntu-26-generally-available-and-latest-migration",
-      "publishedAt": "2026-09-17T16:27:16.000Z",
-      "discoveredAt": "2026-09-17T21:19:50.467Z",
+      "slug": "20260917-chatgpt-how-cooley-is-accelerating-ipo-work-with-chatgpt-964ae1dd",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/cooley-gopublic",
+      "publishedAt": "2026-09-17T12:00:00.000Z",
+      "discoveredAt": "2026-09-18T11:10:49.888Z",
       "locales": {
         "en": {
-          "title": "Ubuntu 26 generally available and latest migration",
-          "summary": "The Ubuntu 26.04 runner image for GitHub Actions is now out of public preview and fully supported for production workflows on both x64 and arm64. As part of this release,… The post Ubuntu 26 generally available and late…"
+          "title": "How Cooley is accelerating IPO work with ChatGPT",
+          "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most."
         },
         "fr": {
-          "title": "Ubuntu 26 generally available and latest migration",
-          "summary": "The Ubuntu 26.04 runner image for GitHub Actions is now out of public preview and fully supported for production workflows on both x64 and arm64. As part of this release,… The post Ubuntu 26 generally available and late…"
+          "title": "How Cooley is accelerating IPO work with ChatGPT",
+          "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most."
         }
       }
     },
@@ -99,26 +119,6 @@
         "fr": {
           "title": "Fixed a panic in project metrics collection that could drop metrics",
           "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
-        }
-      }
-    },
-    {
-      "slug": "20260917-openai-platform-introducing-astra-for-law-363bbead",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/astra-for-law",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:50.467Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Astra for Law",
-          "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
-        },
-        "fr": {
-          "title": "Introducing Astra for Law",
-          "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
         }
       }
     },
@@ -383,22 +383,42 @@
       }
     },
     {
-      "slug": "20260917-vercel-turbo-build-machines-can-now-be-enabled-per-deployment-yo-7953d938",
+      "slug": "20260918-vercel-gpt-live-1-now-available-on-ai-gateway-call-openais-gpt-l-2c0cc68f",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/turbo-build-machines-can-now-be-enabled-per-deployment",
-      "publishedAt": "2026-09-17T21:19:50.467Z",
-      "discoveredAt": "2026-09-17T21:19:50.467Z",
+      "href": "https://vercel.com/changelog/gpt-live-1-now-available-on-ai-gateway",
+      "publishedAt": "2026-09-18T11:10:49.888Z",
+      "discoveredAt": "2026-09-18T11:10:49.888Z",
       "locales": {
         "en": {
-          "title": "Turbo build machines can now be enabled per deployment You can now opt into Turbo build machines on a per deployment basis. This keeps costs down for standard deployments and allows temporary upgrades when urgency is required Mehul Kar Software Engineer",
-          "summary": "Melkey Moksyakov, Andrew Healey , and 1 other"
+          "title": "GPT-Live 1 now available on AI Gateway Call OpenAI's GPT-Live 1 through Vercel AI Gateway for full-duplex voice conversations with client-controlled delegation and per-second billing. GPT-Live 1 now available on Vercel AI Gateway Kevin Dawkins, Gregor Martynus, and 1 other",
+          "summary": "g\"/> Andrew Qu, Jonathan Hefner, and 1 other"
         },
         "fr": {
-          "title": "Turbo build machines can now be enabled per deployment You can now opt into Turbo build machines on a per deployment basis. This keeps costs down for standard deployments and allows temporary upgrades when urgency is required Mehul Kar Software Engineer",
-          "summary": "Melkey Moksyakov, Andrew Healey , and 1 other"
+          "title": "GPT-Live 1 now available on AI Gateway Call OpenAI's GPT-Live 1 through Vercel AI Gateway for full-duplex voice conversations with client-controlled delegation and per-second billing. GPT-Live 1 now available on Vercel AI Gateway Kevin Dawkins, Gregor Martynus, and 1 other",
+          "summary": "g\"/> Andrew Qu, Jonathan Hefner, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20260917-github-copilot-agentic-cli-customizations-now-in-the-usage-metri-7fbb1d66",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api",
+      "publishedAt": "2026-09-17T21:08:50.000Z",
+      "discoveredAt": "2026-09-18T11:10:49.888Z",
+      "locales": {
+        "en": {
+          "title": "Agentic CLI customizations now in the usage metrics API",
+          "summary": "GitHub Copilot expands existing CLI report coverage with agentic activity metrics for skills, custom agents, Model Context Protocol (MCP) servers, slash commands, and plugins. What’s new The fields appear in… The post A…"
+        },
+        "fr": {
+          "title": "Agentic CLI customizations now in the usage metrics API",
+          "summary": "GitHub Copilot expands existing CLI report coverage with agentic activity metrics for skills, custom agents, Model Context Protocol (MCP) servers, slash commands, and plugins. What’s new The fields appear in… The post A…"
         }
       }
     },
@@ -443,22 +463,22 @@
       }
     },
     {
-      "slug": "20260917-github-workflow-execution-protections-in-github-actions-generall-ba788d57",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available",
-      "publishedAt": "2026-09-17T15:45:26.000Z",
+      "slug": "20260917-openai-platform-introducing-astra-for-law-363bbead",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/astra-for-law",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
       "discoveredAt": "2026-09-17T21:19:50.467Z",
       "locales": {
         "en": {
-          "title": "Workflow execution protections in GitHub Actions generally available",
-          "summary": "Workflow execution protections for GitHub Actions, previously in public preview, are now generally available for GitHub Enterprise, organizations, and repositories. Execution protections let you define an allowlist that…"
+          "title": "Introducing Astra for Law",
+          "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
         },
         "fr": {
-          "title": "Workflow execution protections in GitHub Actions generally available",
-          "summary": "Workflow execution protections for GitHub Actions, previously in public preview, are now generally available for GitHub Enterprise, organizations, and repositories. Execution protections let you define an allowlist that…"
+          "title": "Introducing Astra for Law",
+          "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
         }
       }
     },
@@ -479,26 +499,6 @@
         "fr": {
           "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
           "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
-        }
-      }
-    },
-    {
-      "slug": "20260916-openai-platform-our-framework-for-reporting-model-misalignment-bbe6c30a",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/model-misalignment-reporting-framework",
-      "publishedAt": "2026-09-16T17:00:00.000Z",
-      "discoveredAt": "2026-09-17T11:38:27.585Z",
-      "locales": {
-        "en": {
-          "title": "Our framework for reporting model misalignment",
-          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
-        },
-        "fr": {
-          "title": "Our framework for reporting model misalignment",
-          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
         }
       }
     },
@@ -763,22 +763,42 @@
       }
     },
     {
-      "slug": "20260917-vercel-run-terminal-bench-and-other-harbor-evals-on-vercel-sandb-82b0afd7",
+      "slug": "20260918-vercel-hobby-projects-now-retain-fewer-deployments-to-free-up-st-b795b016",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/run-terminal-bench-and-other-harbor-evals-on-vercel-sandbox",
-      "publishedAt": "2026-09-17T21:19:50.467Z",
+      "href": "https://vercel.com/changelog/hobby-projects-now-retain-fewer-deployments-to-free-up-storage",
+      "publishedAt": "2026-09-18T11:10:49.888Z",
+      "discoveredAt": "2026-09-18T11:10:49.888Z",
+      "locales": {
+        "en": {
+          "title": "Hobby projects now retain fewer deployments to free up storage We're changing the retention exceptions for Hobby plans so that it's easier to stay within the free usage limits. Accounts above the 10GB limit will have inactive deployments automatically deleted. Jay Gengelbach, Pranav Kanchi",
+          "summary": "16 September 16 Sep"
+        },
+        "fr": {
+          "title": "Hobby projects now retain fewer deployments to free up storage We're changing the retention exceptions for Hobby plans so that it's easier to stay within the free usage limits. Accounts above the 10GB limit will have inactive deployments automatically deleted. Jay Gengelbach, Pranav Kanchi",
+          "summary": "16 September 16 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260917-github-ubuntu-26-generally-available-and-latest-migration-a4ef6146",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-17-ubuntu-26-generally-available-and-latest-migration",
+      "publishedAt": "2026-09-17T16:27:16.000Z",
       "discoveredAt": "2026-09-17T21:19:50.467Z",
       "locales": {
         "en": {
-          "title": "Run Terminal-Bench and other Harbor evals on Vercel Sandbox Harbor 0.22.0 adds Vercel Sandbox as an eval environment. Pass --env vercel to run Terminal-Bench and other Harbor benchmarks with each trial in its own isolated microVM. Elisabeth Rülke, George Fahmy",
-          "summary": "Mehul Kar Software Engineer"
+          "title": "Ubuntu 26 generally available and latest migration",
+          "summary": "The Ubuntu 26.04 runner image for GitHub Actions is now out of public preview and fully supported for production workflows on both x64 and arm64. As part of this release,… The post Ubuntu 26 generally available and late…"
         },
         "fr": {
-          "title": "Run Terminal-Bench and other Harbor evals on Vercel Sandbox Harbor 0.22.0 adds Vercel Sandbox as an eval environment. Pass --env vercel to run Terminal-Bench and other Harbor benchmarks with each trial in its own isolated microVM. Elisabeth Rülke, George Fahmy",
-          "summary": "Mehul Kar Software Engineer"
+          "title": "Ubuntu 26 generally available and latest migration",
+          "summary": "The Ubuntu 26.04 runner image for GitHub Actions is now out of public preview and fully supported for production workflows on both x64 and arm64. As part of this release,… The post Ubuntu 26 generally available and late…"
         }
       }
     },
@@ -823,22 +843,22 @@
       }
     },
     {
-      "slug": "20260916-github-automate-sso-authorization-for-classic-pats-and-ssh-keys-70ff7b63",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys",
-      "publishedAt": "2026-09-16T20:20:16.000Z",
+      "slug": "20260916-openai-platform-our-framework-for-reporting-model-misalignment-bbe6c30a",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/model-misalignment-reporting-framework",
+      "publishedAt": "2026-09-16T17:00:00.000Z",
       "discoveredAt": "2026-09-17T11:38:27.585Z",
       "locales": {
         "en": {
-          "title": "Automate SSO authorization for classic PATs and SSH keys",
-          "summary": "Enterprise admins can now automate SSO authorization for existing classic personal access tokens (PATs) and SSH keys for organizations in GitHub Enterprise Cloud, replacing manual per-organization authorization by your…"
+          "title": "Our framework for reporting model misalignment",
+          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
         },
         "fr": {
-          "title": "Automate SSO authorization for classic PATs and SSH keys",
-          "summary": "Enterprise admins can now automate SSO authorization for existing classic personal access tokens (PATs) and SSH keys for organizations in GitHub Enterprise Cloud, replacing manual per-organization authorization by your…"
+          "title": "Our framework for reporting model misalignment",
+          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
         }
       }
     },
@@ -859,26 +879,6 @@
         "fr": {
           "title": "[Public Alpha] Supabase Pipelines",
           "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
-        }
-      }
-    },
-    {
-      "slug": "20260916-chatgpt-helping-older-adults-use-ai-in-everyday-life-027811ca",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
-      "publishedAt": "2026-09-16T16:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "Helping older adults use AI in everyday life",
-          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
-        },
-        "fr": {
-          "title": "Helping older adults use AI in everyday life",
-          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
         }
       }
     },
@@ -1143,22 +1143,42 @@
       }
     },
     {
-      "slug": "20260917-notion-the-skills-cli-now-supports-notion-hosted-skills-install--a80d1119",
-      "toolName": "Notion",
-      "category": "Productivity Workspace",
+      "slug": "20260917-vercel-sub-second-artifact-deployments-are-now-supported-in-verc-a3cc0aad",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/skills-cli-notion-skills",
+      "href": "https://vercel.com/changelog/sub-second-artifact-deployments-are-now-supported-in-vercel-cli",
       "publishedAt": "2026-09-17T21:19:50.467Z",
       "discoveredAt": "2026-09-17T21:19:50.467Z",
       "locales": {
         "en": {
-          "title": "The skills CLI now supports Notion hosted skills Install agent skills from a Notion skills database with the skills CLI, no Git repository required. Andrew Qu, Jonathan Hefner, and 1 other",
-          "summary": "c0e-512.jpg\"/> Elisabeth Rülke, George Fahmy"
+          "title": "Sub-second artifact deployments are now supported in Vercel CLI Use the Vercel CLI to deploy static artifacts to Vercel in less than one second. Melkey Moksyakov, Andrew Healey , and 1 other",
+          "summary": "17 September 17 Sep"
         },
         "fr": {
-          "title": "The skills CLI now supports Notion hosted skills Install agent skills from a Notion skills database with the skills CLI, no Git repository required. Andrew Qu, Jonathan Hefner, and 1 other",
-          "summary": "c0e-512.jpg\"/> Elisabeth Rülke, George Fahmy"
+          "title": "Sub-second artifact deployments are now supported in Vercel CLI Use the Vercel CLI to deploy static artifacts to Vercel in less than one second. Melkey Moksyakov, Andrew Healey , and 1 other",
+          "summary": "17 September 17 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260917-github-workflow-execution-protections-in-github-actions-generall-ba788d57",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available",
+      "publishedAt": "2026-09-17T15:45:26.000Z",
+      "discoveredAt": "2026-09-17T21:19:50.467Z",
+      "locales": {
+        "en": {
+          "title": "Workflow execution protections in GitHub Actions generally available",
+          "summary": "Workflow execution protections for GitHub Actions, previously in public preview, are now generally available for GitHub Enterprise, organizations, and repositories. Execution protections let you define an allowlist that…"
+        },
+        "fr": {
+          "title": "Workflow execution protections in GitHub Actions generally available",
+          "summary": "Workflow execution protections for GitHub Actions, previously in public preview, are now generally available for GitHub Enterprise, organizations, and repositories. Execution protections let you define an allowlist that…"
         }
       }
     },
@@ -1203,22 +1223,22 @@
       }
     },
     {
-      "slug": "20260916-github-scim-user-responses-now-include-a-profileurl-attribute-4df4917d",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute",
-      "publishedAt": "2026-09-16T20:19:58.000Z",
+      "slug": "20260916-chatgpt-helping-older-adults-use-ai-in-everyday-life-027811ca",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+      "publishedAt": "2026-09-16T16:00:00.000Z",
       "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "SCIM user responses now include a profileUrl attribute",
-          "summary": "SCIM user responses from GitHub now include the standard profileUrl attribute defined by RFC 7643, containing the absolute URL of the GitHub account linked to the external identity. Previously, matching… The post SCIM u…"
+          "title": "Helping older adults use AI in everyday life",
+          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
         },
         "fr": {
-          "title": "SCIM user responses now include a profileUrl attribute",
-          "summary": "SCIM user responses from GitHub now include the standard profileUrl attribute defined by RFC 7643, containing the absolute URL of the GitHub account linked to the external identity. Previously, matching… The post SCIM u…"
+          "title": "Helping older adults use AI in everyday life",
+          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
         }
       }
     },
@@ -1239,26 +1259,6 @@
         "fr": {
           "title": "Realtime schema is now fully locked down against modifications",
           "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
-        }
-      }
-    },
-    {
-      "slug": "20260916-openai-platform-reimagining-advertising-with-ai-52752974",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/reimagining-advertising-with-ai",
-      "publishedAt": "2026-09-16T13:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "Reimagining advertising with AI",
-          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
-        },
-        "fr": {
-          "title": "Reimagining advertising with AI",
-          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
         }
       }
     },
@@ -1523,22 +1523,42 @@
       }
     },
     {
-      "slug": "20260917-vercel-native-marketplace-integrations-now-support-custom-enviro-cda7ba88",
+      "slug": "20260917-vercel-turbo-build-machines-can-now-be-enabled-per-deployment-yo-7953d938",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/custom-environments-support-for-marketplace-integrations",
+      "href": "https://vercel.com/changelog/turbo-build-machines-can-now-be-enabled-per-deployment",
       "publishedAt": "2026-09-17T21:19:50.467Z",
       "discoveredAt": "2026-09-17T21:19:50.467Z",
       "locales": {
         "en": {
-          "title": "Native Marketplace integrations now support custom environments Native Marketplace resource connections now support custom environments, giving you more control over where your integration resources are available. Tony Pan",
-          "summary": "g\"/> Andrew Qu, Jonathan Hefner, and 1 other"
+          "title": "Turbo build machines can now be enabled per deployment You can now opt into Turbo build machines on a per deployment basis. This keeps costs down for standard deployments and allows temporary upgrades when urgency is required Mehul Kar Software Engineer",
+          "summary": "Melkey Moksyakov, Andrew Healey , and 1 other"
         },
         "fr": {
-          "title": "Native Marketplace integrations now support custom environments Native Marketplace resource connections now support custom environments, giving you more control over where your integration resources are available. Tony Pan",
-          "summary": "g\"/> Andrew Qu, Jonathan Hefner, and 1 other"
+          "title": "Turbo build machines can now be enabled per deployment You can now opt into Turbo build machines on a per deployment basis. This keeps costs down for standard deployments and allows temporary upgrades when urgency is required Mehul Kar Software Engineer",
+          "summary": "Melkey Moksyakov, Andrew Healey , and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20260916-github-automate-sso-authorization-for-classic-pats-and-ssh-keys-70ff7b63",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-16-automate-sso-authorization-for-classic-pats-and-ssh-keys",
+      "publishedAt": "2026-09-16T20:20:16.000Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
+      "locales": {
+        "en": {
+          "title": "Automate SSO authorization for classic PATs and SSH keys",
+          "summary": "Enterprise admins can now automate SSO authorization for existing classic personal access tokens (PATs) and SSH keys for organizations in GitHub Enterprise Cloud, replacing manual per-organization authorization by your…"
+        },
+        "fr": {
+          "title": "Automate SSO authorization for classic PATs and SSH keys",
+          "summary": "Enterprise admins can now automate SSO authorization for existing classic personal access tokens (PATs) and SSH keys for organizations in GitHub Enterprise Cloud, replacing manual per-organization authorization by your…"
         }
       }
     },
@@ -1583,22 +1603,22 @@
       }
     },
     {
-      "slug": "20260916-github-copilot-copilot-budget-increase-requests-are-generally-av-aaa1a76c",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available",
-      "publishedAt": "2026-09-16T20:17:18.000Z",
+      "slug": "20260916-openai-platform-reimagining-advertising-with-ai-52752974",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/reimagining-advertising-with-ai",
+      "publishedAt": "2026-09-16T13:00:00.000Z",
       "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Copilot budget increase requests are generally available",
-          "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests…"
+          "title": "Reimagining advertising with AI",
+          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
         },
         "fr": {
-          "title": "Copilot budget increase requests are generally available",
-          "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests…"
+          "title": "Reimagining advertising with AI",
+          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
         }
       }
     },
@@ -1619,26 +1639,6 @@
         "fr": {
           "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
           "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
-        }
-      }
-    },
-    {
-      "slug": "20260916-chatgpt-how-to-connect-ai-usage-to-business-value-5f7e182a",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-      "publishedAt": "2026-09-16T12:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "How to connect AI usage to business value",
-          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
-        },
-        "fr": {
-          "title": "How to connect AI usage to business value",
-          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
         }
       }
     },
@@ -1803,26 +1803,6 @@
       }
     },
     {
-      "slug": "20260521-go-introducing-the-pkggodev-api-ca05a4f1",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/pkgsite-api",
-      "publishedAt": "2026-05-21T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Introducing the pkg.go.dev API",
-          "summary": "Introducing the pkg.go.dev API"
-        },
-        "fr": {
-          "title": "Introducing the pkg.go.dev API",
-          "summary": "Introducing the pkg.go.dev API"
-        }
-      }
-    },
-    {
       "slug": "20260908-hugging-face-safety-for-whom-refusing-the-right-subset-of-a-topi-4f420d1c",
       "toolName": "Hugging Face",
       "category": "AI Platform",
@@ -1903,22 +1883,42 @@
       }
     },
     {
-      "slug": "20260917-vercel-typesafe-ais-jev-now-available-on-ai-gateway-use-jev-from-19c86f9f",
+      "slug": "20260917-vercel-run-terminal-bench-and-other-harbor-evals-on-vercel-sandb-82b0afd7",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway",
-      "publishedAt": "2026-09-17T11:38:27.585Z",
-      "discoveredAt": "2026-09-17T11:38:27.585Z",
+      "href": "https://vercel.com/changelog/run-terminal-bench-and-other-harbor-evals-on-vercel-sandbox",
+      "publishedAt": "2026-09-17T21:19:50.467Z",
+      "discoveredAt": "2026-09-17T21:19:50.467Z",
       "locales": {
         "en": {
-          "title": "TypeSafe AI's Jev now available on AI Gateway Use Jev from TypeSafe AI on Vercel AI Gateway to classify, route, score, and automate workflows with typed outputs, probabilities, and confidence. Rohan Taneja, Zachary Chen, and 1 other",
-          "summary": "6a5/tony-pan-128.jpg\"/> Hedi Zandi, Tony Pan"
+          "title": "Run Terminal-Bench and other Harbor evals on Vercel Sandbox Harbor 0.22.0 adds Vercel Sandbox as an eval environment. Pass --env vercel to run Terminal-Bench and other Harbor benchmarks with each trial in its own isolated microVM. Elisabeth Rülke, George Fahmy",
+          "summary": "Mehul Kar Software Engineer"
         },
         "fr": {
-          "title": "TypeSafe AI's Jev now available on AI Gateway Use Jev from TypeSafe AI on Vercel AI Gateway to classify, route, score, and automate workflows with typed outputs, probabilities, and confidence. Rohan Taneja, Zachary Chen, and 1 other",
-          "summary": "6a5/tony-pan-128.jpg\"/> Hedi Zandi, Tony Pan"
+          "title": "Run Terminal-Bench and other Harbor evals on Vercel Sandbox Harbor 0.22.0 adds Vercel Sandbox as an eval environment. Pass --env vercel to run Terminal-Bench and other Harbor benchmarks with each trial in its own isolated microVM. Elisabeth Rülke, George Fahmy",
+          "summary": "Mehul Kar Software Engineer"
+        }
+      }
+    },
+    {
+      "slug": "20260916-github-scim-user-responses-now-include-a-profileurl-attribute-4df4917d",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-16-scim-user-responses-now-include-a-profileurl-attribute",
+      "publishedAt": "2026-09-16T20:19:58.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "SCIM user responses now include a profileUrl attribute",
+          "summary": "SCIM user responses from GitHub now include the standard profileUrl attribute defined by RFC 7643, containing the absolute URL of the GitHub account linked to the external identity. Previously, matching… The post SCIM u…"
+        },
+        "fr": {
+          "title": "SCIM user responses now include a profileUrl attribute",
+          "summary": "SCIM user responses from GitHub now include the standard profileUrl attribute defined by RFC 7643, containing the absolute URL of the GitHub account linked to the external identity. Previously, matching… The post SCIM u…"
         }
       }
     },
@@ -1963,22 +1963,22 @@
       }
     },
     {
-      "slug": "20260916-github-code-scanning-ai-scan-no-longer-requires-codeql-default-s-892303a4",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup",
-      "publishedAt": "2026-09-16T13:26:06.000Z",
+      "slug": "20260916-chatgpt-how-to-connect-ai-usage-to-business-value-5f7e182a",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+      "publishedAt": "2026-09-16T12:00:00.000Z",
       "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Code scanning AI Scan no longer requires CodeQL default setup",
-          "summary": "You can now use AI Scan for pull requests to find security vulnerabilities, even when CodeQL default setup isn’t enabled on a repository. Previously, AI Scan for pull requests only… The post Code scanning AI Scan no lon…"
+          "title": "How to connect AI usage to business value",
+          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
         },
         "fr": {
-          "title": "Code scanning AI Scan no longer requires CodeQL default setup",
-          "summary": "You can now use AI Scan for pull requests to find security vulnerabilities, even when CodeQL default setup isn’t enabled on a repository. Previously, AI Scan for pull requests only… The post Code scanning AI Scan no lon…"
+          "title": "How to connect AI usage to business value",
+          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
         }
       }
     },
@@ -1999,26 +1999,6 @@
         "fr": {
           "title": "Developer Update - July 2026",
           "summary": "Improvement Supabase Developer Update for July 2026: Realtime Broadcast now supports binary payloads, Wrappers v0.6.2 adds a MongoDB foreign data wrapper, and OpenCode integrates with"
-        }
-      }
-    },
-    {
-      "slug": "20260916-openai-platform-how-workers-are-unlocking-new-ways-of-working-71646fff",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/unlocking-new-ways-of-working",
-      "publishedAt": "2026-09-16T09:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "How workers are unlocking new ways of working",
-          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
-        },
-        "fr": {
-          "title": "How workers are unlocking new ways of working",
-          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
         }
       }
     },
@@ -2063,22 +2043,22 @@
       }
     },
     {
-      "slug": "20260909-docker-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
-      "toolName": "Docker",
-      "category": "Developer Platform",
+      "slug": "20260909-postgresql-autobase-211-released-991decc9",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
+      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
       "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "discoveredAt": "2026-09-18T11:10:49.888Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer i…"
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the…"
         },
         "fr": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer i…"
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the…"
         }
       }
     },
@@ -2263,22 +2243,42 @@
       }
     },
     {
-      "slug": "20260917-vercel-ai-sdk-harness-layer-now-supports-native-subscription-aut-478b2e53",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
+      "slug": "20260917-notion-the-skills-cli-now-supports-notion-hosted-skills-install--a80d1119",
+      "toolName": "Notion",
+      "category": "Productivity Workspace",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/ai-sdk-harness-native-subscription-authentication",
-      "publishedAt": "2026-09-17T11:38:27.585Z",
-      "discoveredAt": "2026-09-17T11:38:27.585Z",
+      "href": "https://vercel.com/changelog/skills-cli-notion-skills",
+      "publishedAt": "2026-09-17T21:19:50.467Z",
+      "discoveredAt": "2026-09-17T21:19:50.467Z",
       "locales": {
         "en": {
-          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
-          "summary": "14 September 14 Sep"
+          "title": "The skills CLI now supports Notion hosted skills Install agent skills from a Notion skills database with the skills CLI, no Git repository required. Andrew Qu, Jonathan Hefner, and 1 other",
+          "summary": "c0e-512.jpg\"/> Elisabeth Rülke, George Fahmy"
         },
         "fr": {
-          "title": "AI SDK harness layer now supports native subscription authentication The AI SDK harness layer can now authenticate harnesses through their native subscriptions where supported, with credentials kept at the host boundary. Felix Arntz Software Engineer",
-          "summary": "14 September 14 Sep"
+          "title": "The skills CLI now supports Notion hosted skills Install agent skills from a Notion skills database with the skills CLI, no Git repository required. Andrew Qu, Jonathan Hefner, and 1 other",
+          "summary": "c0e-512.jpg\"/> Elisabeth Rülke, George Fahmy"
+        }
+      }
+    },
+    {
+      "slug": "20260916-github-copilot-copilot-budget-increase-requests-are-generally-av-aaa1a76c",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available",
+      "publishedAt": "2026-09-16T20:17:18.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Copilot budget increase requests are generally available",
+          "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests…"
+        },
+        "fr": {
+          "title": "Copilot budget increase requests are generally available",
+          "summary": "Previously, when a member used all the Copilot AI credits available to them, they were blocked from Copilot features that consume credits. This release adds a flow for them to… The post Copilot budget increase requests…"
         }
       }
     },
@@ -2323,22 +2323,22 @@
       }
     },
     {
-      "slug": "20260915-github-enforce-github-advanced-security-configurations-12ae08f3",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-15-enforce-github-advanced-security-configurations",
-      "publishedAt": "2026-09-15T19:31:58.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "slug": "20260916-openai-platform-how-workers-are-unlocking-new-ways-of-working-71646fff",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/unlocking-new-ways-of-working",
+      "publishedAt": "2026-09-16T09:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Enforce GitHub Advanced Security configurations",
-          "summary": "Enterprise administrators can now enforce GitHub Advanced Security configurations across their organizations. This prevents both organization and repository administrators from overriding settings defined at the enterpr…"
+          "title": "How workers are unlocking new ways of working",
+          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
         },
         "fr": {
-          "title": "Enforce GitHub Advanced Security configurations",
-          "summary": "Enterprise administrators can now enforce GitHub Advanced Security configurations across their organizations. This prevents both organization and repository administrators from overriding settings defined at the enterpr…"
+          "title": "How workers are unlocking new ways of working",
+          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
         }
       }
     },
@@ -2363,26 +2363,6 @@
       }
     },
     {
-      "slug": "20260914-openai-platform-how-fyxer-built-an-ai-executive-assistant-people-296d33de",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/fyxer",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
-      "locales": {
-        "en": {
-          "title": "How Fyxer built an AI executive assistant people trust",
-          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
-        },
-        "fr": {
-          "title": "How Fyxer built an AI executive assistant people trust",
-          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
-        }
-      }
-    },
-    {
       "slug": "20260826-anthropic-platform-aug-27-2026-announcements-expanding-our-suppo-d575f18c",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
@@ -2399,6 +2379,26 @@
         "fr": {
           "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
           "summary": "Announcements Previewing the Model Hardware Standard"
+        }
+      }
+    },
+    {
+      "slug": "20260820-rust-supply-chain-attack-on-arrayref-14062eb1",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
+      "publishedAt": "2026-08-20T00:00:00.000Z",
+      "discoveredAt": "2026-09-18T11:10:49.888Z",
+      "locales": {
+        "en": {
+          "title": "Supply chain attack on arrayref",
+          "summary": "What happened On 2026-08-20 at 7:15 UTC we got a report that the proc-macro1 crate was malicious. The Rust Security Response Team verified this to be the case: the crate had a build script that was downloading a malicio…"
+        },
+        "fr": {
+          "title": "Supply chain attack on arrayref",
+          "summary": "What happened On 2026-08-20 at 7:15 UTC we got a report that the proc-macro1 crate was malicious. The Rust Security Response Team verified this to be the case: the crate had a build script that was downloading a malicio…"
         }
       }
     }
