@@ -1,13 +1,13 @@
 # AI and Cybersecurity News Blog Operator Report
 
-Generated: 2026-09-12T13:25:14.960Z
+Generated: 2026-09-18T11:23:23.025Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
 - Blog posts: 18
 - Comparison pages: 3
 - Curated news briefs: 10
-- Auto web signals: 239
+- Auto web signals: 240
 
 ## AI + CS Editorial Audit
 - Track counts (AI/CS/Career): 2/14/2
@@ -20,8 +20,8 @@ Internal target: $10.00/month (private operator metric)
 ## Citation Coverage
 - Posts with references blocks: 18/18
 - Estimated uncited posts: 0
-- News entries with source href: 10/10
-- Estimated uncited news briefs: 0
+- News entries with source href: 9/10
+- Estimated uncited news briefs: 1
 
 ## Monetization Infrastructure
 - Valid affiliate links: 5/5
@@ -54,32 +54,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $0.00
 
 ## Top Auto-News Opportunities
-1. Perplexity trusts GPT-6 Astra with end-to-end systems: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
+1. Making global data easier to explore: What It Means for AI/CS Students
+   - Source: Google AI Blog
+   - Keyword: how to build google ai blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Featured How we contain Claude across products As agents grow more capable, so does their potential blast radius. The engineering question is how to cap it. Here’s what we’ve learned building containment for claude.ai, Claude Code, and Cowork.: What It Means for AI/CS Students
-   - Source: Anthropic Engineering
-   - Keyword: how to build anthropic engineering
+2. Reduce time-to-hire for quality candidates with AI-powered Amazon Connect Talent: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: how to build aws ml blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Responsible Scaling Policy: What It Means for AI/CS Students
-   - Source: Anthropic News
-   - Keyword: api security for student projects anthropic news
-   - Monetization angle: security checklist and reliability upgrade path for student apps
-   - CTA: Security guide + resources
-4. From Wafer-Out to First Token: Codifying Supply Chain Expertise with Nemotron and Palantir Foundry: What It Means for AI/CS Students
-   - Source: NVIDIA Developer Blog
-   - Keyword: how to build nvidia developer blog
+3. Selecting a vector store for Amazon Bedrock Knowledge Bases: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: how to build aws ml blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Kubernetes v1.37: Native Histograms Graduates to Beta: What It Means for AI/CS Students
-   - Source: Kubernetes Blog
-   - Keyword: computer science workflow for students kubernetes blog
-   - Monetization angle: CS implementation and tooling decision for student budgets
-   - CTA: Resources + compare pages
-6. Monitoring production agent lifecycle with AWS DevOps Agent and AgentCore Evaluations: What It Means for AI/CS Students
+4. A serverless, data-driven Git metrics dashboard using Amazon Quick Sight: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: how to build aws ml blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+5. A shared agentic platform for Wood Mackenzie, on Amazon Bedrock AgentCore: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: how to build aws ml blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. How MRH Trowe enabled secure self-service AI agents in financial services: What It Means for AI/CS Students
    - Source: AWS ML Blog
    - Keyword: how to build aws ml blog
    - Monetization angle: how to build and ship this update as a student project
@@ -88,14 +88,16 @@ Internal target: $10.00/month (private operator metric)
 ## Operator Action Queue
 1. [P1] Keep visible AI/CS split filters on both blog and news index pages.
    - Why: Split navigation helps users quickly enter the right track and increases session depth.
-2. [P2] Add lead magnet CTA on compare.
+2. [P1] Ensure every curated news brief has a valid source href.
+   - Why: Uncited news weakens trust and violates source integrity standards.
+3. [P2] Add lead magnet CTA on compare.
    - Why: Increases opt-ins per 100 visitors.
-3. [P3] Review weekly: CS share, citation coverage, and CTA CTR. Update weakest section copy.
+4. [P3] Review weekly: CS share, citation coverage, and CTA CTR. Update weakest section copy.
    - Why: Editorial quality and conversion copy iteration compound growth without extra acquisition cost.
 
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260912--20260914-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-12e9dd68.md
-- docs/agent/drafts/20260912--20260912-featured-how-we-contain-claude-across-products-as-agents-grow-mo-97cd97d2.md
+- docs/agent/drafts/20260918--20260917-making-global-data-easier-to-explore-e7b9d12d.md
+- docs/agent/drafts/20260918--20260917-reduce-time-to-hire-for-quality-candidates-with-ai-powered-amazo-48c62604.md
 

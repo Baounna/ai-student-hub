@@ -2,6 +2,12 @@ name: Blog Operator Agent
 
 on:
   workflow_dispatch:
+  schedule:
+    # Weekly. These agents are static analysis — no API key, no cost — but their
+    # queues drive a 96h freshness check that could never pass while they only
+    # ran on demand, and a warning that can never clear is the kind you learn to
+    # ignore. That habit is what let a broken lockfile sit for eighty days.
+    - cron: "40 7 * * 1"
 
 concurrency:
   group: ai-student-hub-agents
@@ -34,7 +40,11 @@ jobs:
 
       - name: Sync operator actions to GitHub Issues
         env:
-          AGENT_ISSUES_ENABLED: "1"
+          # Issues are created only when a human asks for the run. A weekly
+          # schedule that opens issues by itself turns into the notification
+          # flood that made this repo unreadable before; the scheduled pass just
+          # refreshes the reports.
+          AGENT_ISSUES_ENABLED: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
           AGENT_ISSUES_MAX_PER_RUN: "3"
           AGENT_ISSUES_INCLUDE_OPERATOR: "1"
           AGENT_ISSUES_INCLUDE_DESIGN: "0"

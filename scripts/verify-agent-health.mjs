@@ -67,7 +67,11 @@ function hasBlockedSourcePattern(item) {
 }
 
 async function run() {
-  const maxAgeHours = Math.max(1, Math.min(toInteger(process.env.AGENT_HEALTH_MAX_AGE_HOURS, 96), 24 * 30));
+  // The operator and design agents run weekly, so a 96h default flagged them as
+  // stale for three days out of every seven — a warning that fires on a healthy
+  // schedule teaches you to ignore warnings. 192h leaves a full day of slack
+  // past the weekly cadence, so it only fires when a run was genuinely missed.
+  const maxAgeHours = Math.max(1, Math.min(toInteger(process.env.AGENT_HEALTH_MAX_AGE_HOURS, 192), 24 * 30));
   let errors = 0;
   let warns = 0;
 

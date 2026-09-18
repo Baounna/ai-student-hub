@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T13:25:18.069Z",
+  "generatedAt": "2026-09-18T11:23:23.441Z",
   "repository": "",
   "mode": "dry-run",
   "maxPerRun": 3,
@@ -9,18 +9,18 @@
       "label": "Operator",
       "queueFile": "docs/agent/next-actions.json",
       "enabled": true,
-      "queueGeneratedAt": "2026-09-12T13:25:14.960Z",
-      "totalActions": 3,
-      "selectedCount": 1
+      "queueGeneratedAt": "2026-09-18T11:23:23.025Z",
+      "totalActions": 4,
+      "selectedCount": 2
     },
     {
       "sourceId": "design",
       "label": "Design",
       "queueFile": "docs/agent/design-actions.json",
       "enabled": true,
-      "queueGeneratedAt": "2026-09-12T13:25:15.166Z",
+      "queueGeneratedAt": "2026-09-18T11:23:23.234Z",
       "totalActions": 4,
-      "selectedCount": 2
+      "selectedCount": 1
     }
   ],
   "summary": {
@@ -28,7 +28,7 @@
     "existing": 0,
     "dryRun": 3,
     "errors": 0,
-    "tracked": 9
+    "tracked": 10
   },
   "items": [
     {
@@ -134,11 +134,28 @@
       "inQueue": false
     },
     {
+      "hash": "7f54a01c4a366222",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-09-18T11:23:23.025Z",
+      "priority": "P1",
+      "action": "Ensure every curated news brief has a valid source href.",
+      "why": "Uncited news weakens trust and violates source integrity standards.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P1] Ensure every curated news brief has a valid source href.",
+      "status": "dry-run",
+      "createdAt": "2026-09-18T11:23:23.441Z",
+      "lastSeenAt": "2026-09-18T11:23:23.441Z",
+      "inQueue": true
+    },
+    {
       "hash": "3ddc93b51f373fa2",
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-09-12T13:25:14.960Z",
+      "queueGeneratedAt": "2026-09-18T11:23:23.025Z",
       "priority": "P1",
       "action": "Keep visible AI/CS split filters on both blog and news index pages.",
       "why": "Split navigation helps users quickly enter the right track and increases session depth.",
@@ -147,7 +164,7 @@
       "title": "[Operator P1] Keep visible AI/CS split filters on both blog and news index pages.",
       "status": "dry-run",
       "createdAt": "2026-09-12T13:25:18.069Z",
-      "lastSeenAt": "2026-09-12T13:25:18.069Z",
+      "lastSeenAt": "2026-09-18T11:23:23.441Z",
       "inQueue": true
     },
     {
@@ -155,7 +172,7 @@
       "sourceId": "design",
       "sourceLabel": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "queueGeneratedAt": "2026-09-12T13:25:15.166Z",
+      "queueGeneratedAt": "2026-09-18T11:23:23.234Z",
       "priority": "P1",
       "action": "Keep CS-first value proposition cards visible on homepage.",
       "why": "CS-first framing balances publication positioning beyond AI-only messaging.",
@@ -164,7 +181,7 @@
       "title": "[Design P1] Keep CS-first value proposition cards visible on homepage.",
       "status": "dry-run",
       "createdAt": "2026-09-12T13:25:18.069Z",
-      "lastSeenAt": "2026-09-12T13:25:18.069Z",
+      "lastSeenAt": "2026-09-18T11:23:23.441Z",
       "inQueue": true
     },
     {
@@ -182,7 +199,7 @@
       "status": "dry-run",
       "createdAt": "2026-09-12T13:25:18.069Z",
       "lastSeenAt": "2026-09-12T13:25:18.069Z",
-      "inQueue": true
+      "inQueue": false
     }
   ]
 }
