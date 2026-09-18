@@ -72,12 +72,44 @@ async function checkLiveSite() {
   );
 }
 
+/** Fetch a JSON body from the live site, or null if it cannot be read. */
+async function curlJson(url) {
+  try {
+    const { stdout } = await execFileAsync("curl", [
+      "-sL", "--max-time", String(TIMEOUT_SECONDS), url
+    ], { maxBuffer: 4 * 1024 * 1024 });
+    return JSON.parse(String(stdout));
+  } catch {
+    return null;
+  }
+}
+
 /**
- * A publication that stops publishing looks abandoned. The news agent writes
- * updatedAt on every successful run, so a stale value means the agent has been
- * failing even if its workflow looked fine.
+ * A publication that stops publishing looks abandoned.
+ *
+ * Read the age from the DEPLOYED site, not from the working copy. Reading the
+ * local file answers a different question: a clone six commits behind reported
+ * three-day-old content while the site had updated that morning, and the same
+ * blind spot hides the failure that actually costs readers — the agent commits
+ * fine, the deploy never ships it, and a local check still looks green.
+ *
+ * Falls back to the local file when the site cannot be reached, and says which
+ * source it used so a stale answer is never mistaken for a fresh one.
  */
 async function checkContentFreshness() {
+  const health = await curlJson(`${SITE}/health`);
+  const liveUpdated = Date.parse(health?.content?.newsUpdatedAt ?? "");
+
+  if (Number.isFinite(liveUpdated)) {
+    const ageHours = (Date.now() - liveUpdated) / 3_600_000;
+    record(
+      "Content freshness",
+      ageHours <= MAX_CONTENT_AGE_HOURS,
+      `live site: ${health.content.newsItems ?? 0} items, updated ${ageHours.toFixed(1)}h ago (limit ${MAX_CONTENT_AGE_HOURS}h)`
+    );
+    return;
+  }
+
   try {
     const raw = await fs.readFile(path.join(process.cwd(), "src/content/auto-news.json"), "utf8");
     const data = JSON.parse(raw);
@@ -89,14 +121,13 @@ async function checkContentFreshness() {
     }
 
     const ageHours = (Date.now() - updated) / 3_600_000;
-    const ok = ageHours <= MAX_CONTENT_AGE_HOURS;
     record(
       "Content freshness",
-      ok,
-      `${data.items?.length ?? 0} items, last updated ${ageHours.toFixed(1)}h ago (limit ${MAX_CONTENT_AGE_HOURS}h)`
+      ageHours <= MAX_CONTENT_AGE_HOURS,
+      `local checkout (live /health unreadable): ${data.items?.length ?? 0} items, updated ${ageHours.toFixed(1)}h ago (limit ${MAX_CONTENT_AGE_HOURS}h)`
     );
   } catch (error) {
-    record("Content freshness", false, `cannot read auto-news.json — ${String(error?.message || error).slice(0, 80)}`);
+    record("Content freshness", false, `cannot read live /health or auto-news.json — ${String(error?.message || error).slice(0, 80)}`);
   }
 }
 
