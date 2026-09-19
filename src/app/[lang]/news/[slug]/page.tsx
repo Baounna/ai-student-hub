@@ -17,6 +17,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { jsonLd } from "@/lib/json-ld";
+import { formatReadTime, readMinutes } from "@/lib/read-time";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -227,7 +228,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-[color:var(--muted)]">
               <time dateTime={brief.publishedAt}>{formatPublishedDate(brief.publishedAt, locale)}</time>
               <span className="hidden h-1 w-1 rounded-full bg-[color:var(--muted)] sm:block" />
-              <span>{brief.readTime}</span>
+              <span>{formatReadTime(brief.readTime, locale)}</span>
             </div>
             <div className="mt-4 flex flex-wrap gap-2">
               {brief.tags.slice(0, 4).map((tag) => (
@@ -246,7 +247,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>{locale === "fr" ? `1. Theme: ${brief.topic}` : `1. Topic: ${brief.topic}`}</li>
               <li>{locale === "fr" ? "2. Sources: 2 references croisees." : "2. Sources: 2 cross-checked references."}</li>
-              <li>{locale === "fr" ? `3. Temps de lecture: ${brief.readTime}.` : `3. Reading time: ${brief.readTime}.`}</li>
+              <li>{locale === "fr" ? `3. Temps de lecture : ${readMinutes(brief.readTime)} min.` : `3. Reading time: ${readMinutes(brief.readTime)} min.`}</li>
               {brief.statsByTheme?.length ? (
                 <li>{`4. ${brief.statsByTheme.length} benchmark themes covered.`}</li>
               ) : null}

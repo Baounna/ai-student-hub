@@ -8,6 +8,7 @@ import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, coverImageUrl } from "@/lib/seo";
+import { formatReadTime, readMinutes } from "@/lib/read-time";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => getAllCategories().map((category) => ({ lang, category: slugify(category) })));
@@ -114,7 +115,7 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
                   <span className="blog-chip rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
                     {post.category}
                   </span>
-                  <span className="text-xs text-[color:var(--muted)]">{post.readTime}</span>
+                  <span className="text-xs text-[color:var(--muted)]">{formatReadTime(post.readTime, locale)}</span>
                   <span className="text-xs text-[color:var(--muted)]">{formatPublishedDate(post.publishedAt, locale)}</span>
                 </div>
                 <h2 className="font-display section-title mt-3 font-semibold text-[color:var(--text-strong)]">

@@ -25,6 +25,7 @@ import { getSeoKeywords } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 import { jsonLd } from "@/lib/json-ld";
+import { formatReadTime, readMinutes } from "@/lib/read-time";
 import { ScrollCaptureCtaLazy } from "@/components/scroll-capture-cta-lazy";
 
 export function generateStaticParams() {
@@ -179,7 +180,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
             <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-[color:var(--muted)]">
               <time dateTime={post.publishedAt}>{formatPublishedDate(post.publishedAt, locale)}</time>
               <span className="hidden h-1 w-1 rounded-full bg-[color:var(--muted)] sm:block" />
-              <span>{post.readTime}</span>
+              <span>{formatReadTime(post.readTime, locale)}</span>
             </div>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link
@@ -210,8 +211,8 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
               </li>
               <li>
                 {locale === "fr"
-                  ? `2. Lecture en ${post.readTime}.`
-                  : `2. ${post.readTime} reading time.`}
+                  ? `2. Lecture en ${readMinutes(post.readTime)} min.`
+                  : `2. ${readMinutes(post.readTime)} min reading time.`}
               </li>
               <li>
                 {locale === "fr"

@@ -26,6 +26,7 @@ import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
 import { jsonLd } from "@/lib/json-ld";
+import { formatReadTime } from "@/lib/read-time";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -491,7 +492,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                   <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">{featuredPost.title}</h2>
                   <p className="card-copy mt-3 text-[color:var(--text)]">{featuredPost.excerpt}</p>
                   <p className="mt-3 text-sm text-[color:var(--muted)]">
-                    {featuredPost.category} • {featuredPost.readTime}
+                    {featuredPost.category} • {formatReadTime(featuredPost.readTime, locale)}
                   </p>
                   <div className="mt-4">
                     <Link href={`/${locale}/blog/${featuredPost.slug}`} className="do-link text-lg">

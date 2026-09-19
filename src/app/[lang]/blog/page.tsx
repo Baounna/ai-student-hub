@@ -17,6 +17,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { sanitizeSearchQuery } from "@/lib/input";
+import { formatReadTime } from "@/lib/read-time";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -312,7 +313,7 @@ export default async function LocalizedBlogPage(
                 >
                   {featuredPost.category}
                 </Link>
-                <span className="text-xs text-[color:var(--muted)]">{featuredPost.readTime}</span>
+                <span className="text-xs text-[color:var(--muted)]">{formatReadTime(featuredPost.readTime, locale)}</span>
                 <span className="text-xs text-[color:var(--muted)]">
                   {formatPublishedDate(featuredPost.publishedAt, locale)}
                 </span>
@@ -395,7 +396,7 @@ export default async function LocalizedBlogPage(
                     >
                       {post.category}
                     </Link>
-                    <p className="text-xs text-[color:var(--muted)]">{post.readTime}</p>
+                    <p className="text-xs text-[color:var(--muted)]">{formatReadTime(post.readTime, locale)}</p>
                     <p className="text-xs text-[color:var(--muted)]">{formatPublishedDate(post.publishedAt, locale)}</p>
                     <span className="blog-chip rounded-full px-2 py-0.5 text-[11px] text-[color:var(--muted)]">
                       {post.references.length} {locale === "fr" ? "sources" : "sources"}
@@ -458,7 +459,7 @@ export default async function LocalizedBlogPage(
                       {post.title}
                     </Link>
                   </h4>
-                  <p className="mt-1 text-xs text-[color:var(--muted)]">{post.readTime}</p>
+                  <p className="mt-1 text-xs text-[color:var(--muted)]">{formatReadTime(post.readTime, locale)}</p>
                   <p className="mt-1 text-xs text-[color:var(--muted)]">
                     {post.references.length} {locale === "fr" ? "sources citees" : "cited sources"}
                   </p>

@@ -10,6 +10,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getLiveAiCsUpdates } from "@/lib/live-news";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
+import { formatReadTime } from "@/lib/read-time";
 import { Provenance } from "@/components/provenance";
 
 export const revalidate = 1800;
@@ -223,7 +224,7 @@ export default async function LocalizedNewsPage(
                   <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
                     {featuredBrief.topic}
                   </span>
-                  <span className="text-xs text-[color:var(--muted)]">{featuredBrief.readTime}</span>
+                  <span className="text-xs text-[color:var(--muted)]">{formatReadTime(featuredBrief.readTime, locale)}</span>
                   <time dateTime={featuredBrief.publishedAt} className="text-xs text-[color:var(--muted)]">
                     {formatPublishedDate(featuredBrief.publishedAt, locale)}
                   </time>
@@ -388,7 +389,7 @@ export default async function LocalizedNewsPage(
                 <time dateTime={brief.publishedAt} className="text-xs text-[color:var(--muted)]">
                   {formatPublishedDate(brief.publishedAt, locale)}
                 </time>
-                <span className="text-xs text-[color:var(--muted)]">{brief.readTime}</span>
+                <span className="text-xs text-[color:var(--muted)]">{formatReadTime(brief.readTime, locale)}</span>
               </div>
               <h2 className="font-display section-title mt-3 font-semibold text-[color:var(--text-strong)]">
                 <Link href={`/${locale}/news/${brief.slug}`} className="hover:opacity-85">
@@ -453,7 +454,7 @@ export default async function LocalizedNewsPage(
                       {signal.title}
                     </Link>
                   </h4>
-                  <p className="mt-1 text-xs text-[color:var(--muted)]">{signal.readTime}</p>
+                  <p className="mt-1 text-xs text-[color:var(--muted)]">{formatReadTime(signal.readTime, locale)}</p>
                 </article>
               ))}
             </div>
