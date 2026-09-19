@@ -549,6 +549,97 @@ export const comparisons: ComparisonPage[] = [
 
 const basePosts: BlogPost[] = [
   {
+    slug: "it-works-in-my-notebook",
+    title: "It Works in My Notebook",
+    excerpt: "Why your teammate gets a different number, why a seed does not fix it, and the difference between a result and an artifact of your session.",
+    category: "ML Engineering",
+    intentKeyword: "reproducible machine learning notebook",
+    track: "ai",
+    tags: ["ml", "reproducibility", "tooling"],
+    cluster: "ML Engineering",
+    publishedAt: "2026-09-19",
+    readTime: "",
+    keywords: ["reproducible machine learning", "different results every run", "random seed pytorch numpy", "restart and run all", "pip freeze requirements"],
+    popularScore: 61,
+    relatedSlugs: [
+      "your-model-is-not-that-good",
+      "ml-engineering-testing-playbook",
+      "cicd-for-ml-and-backend-projects"
+    ],
+    affiliateCallout: {
+      headline: {
+        en: "Restart and run all, right now",
+        fr: "Redémarrez et tout exécuter, maintenant"
+      },
+      description: {
+        en: "Open the notebook behind your best result and run it clean from the top. If the number changes, you just learned something important."
+        ,
+        fr: "Ouvrez le notebook derrière votre meilleur résultat et exécutez-le proprement depuis le début. Si le chiffre change, vous venez d'apprendre quelque chose d'important."
+      },
+      links: []
+    },
+    references: [
+      {
+        source: "PyTorch",
+        label: { en: "Reproducibility — nondeterministic operations and deterministic mode", fr: "Reproductibilité — opérations non déterministes et mode déterministe" },
+        href: "https://pytorch.org/docs/stable/notes/randomness.html"
+      },
+      {
+        source: "NumPy",
+        label: { en: "Random Generator — seeding and independent streams", fr: "Générateur aléatoire — graines et flux indépendants" },
+        href: "https://numpy.org/doc/stable/reference/random/generator.html"
+      },
+      {
+        source: "pip",
+        label: { en: "pip freeze — write the versions you actually have", fr: "pip freeze — écrire les versions réellement installées" },
+        href: "https://pip.pypa.io/en/stable/cli/pip_freeze/"
+      },
+      {
+        source: "Python",
+        label: { en: "venv — isolated environments", fr: "venv — environnements isolés" },
+        href: "https://docs.python.org/3/library/venv.html"
+      }
+    ],
+    locales: {
+      en: {
+        title: "It Works in My Notebook",
+        excerpt: "Why your teammate gets a different number, why a seed does not fix it, and the difference between a result and an artifact of your session.",
+        content: [
+          "A teammate runs your notebook and gets a different number. Or worse, you run it yourself six weeks later, on the same laptop, and cannot get back to the result you put in your report. Nothing was deliberately changed. The code is the code. And yet the figure you defended is not there any more.",
+          "Three things vary underneath a notebook, and they fail in that order of frequency: the environment, the execution, and the randomness. Most students go straight to the third, set a seed, and are surprised when it does not help.",
+          "Start with the environment, because it is the one that breaks across machines. A requirements.txt listing `pandas`, `scikit-learn`, `torch` with no versions does not describe an environment — it describes a wish. Whoever installs it in three months gets whatever was current that day, and a model trained under one minor version of scikit-learn can behave differently under the next. `pip freeze` writes the versions you actually have, and a virtual environment keeps them from mixing with everything else on the machine. Two commands, and the difference between \"it installed\" and \"the same thing installed\".",
+          "Then execution, which is the one nobody admits to. A notebook is not a program; it is a pile of cells with shared memory and no enforced order. You can run cell 12, edit cell 4, run cell 12 again and see a result that no top-to-bottom execution would ever produce. The worst version is the variable defined in a cell you have since deleted: the notebook works perfectly in your session and cannot work in anybody else's, including your own tomorrow.",
+          "The habit that fixes it takes ten seconds. Restart the kernel and run every cell from the top, then look at whether the number survives. If a result has never been produced by a clean run, it is not a result yet — it is an artifact of your session. Do this before you put a figure in a report, always.",
+          "Only then is randomness worth looking at, and it is more layered than a single seed. Python's `random`, NumPy's generator and PyTorch each carry their own state; seeding one leaves the others free. Shuffles, weight initialisation, dropout and augmentation all draw from these, so a model can be seeded and still move.",
+          "And seeding everything is still not a promise of identical numbers. On a GPU, some operations are nondeterministic by design — the order floating-point values get summed across threads varies between runs, and floating-point addition is not associative, so the totals differ in the last decimal places. Those differences compound through training. PyTorch documents which operations behave this way and offers a deterministic mode that trades speed for repeatability, which is a trade worth making while you are establishing a result and usually not worth making afterwards.",
+          "Which points at the honest position. Bit-identical reproducibility is often not achievable and is rarely what you actually need. What you need is for the conclusion to be stable: if two runs give 0.842 and 0.839, the finding holds. If they give 0.84 and 0.71, you never had a finding — you had one lucky draw, and reporting it as the result is closer to a mistake than a rounding difference. Running the thing three times with different seeds and reporting the spread is more informative than any single number, and it takes minutes.",
+          "There is a smaller habit that matters as much: record the configuration next to the result. Seed, data version, key hyperparameters, library versions, written down with the metric rather than remembered. Every number in a notebook came from a specific state, and if that state is not written next to it, the number is an anecdote.",
+          "None of this requires tooling. Pin your versions, work in a virtual environment, restart-and-run-all before you believe anything, seed all three generators, run it more than once, and write down the settings beside the score. That is an afternoon of habits, not a platform.",
+          "The payoff shows up in the place students care about. \"I got 0.94\" invites one question: can you show me? \"I got 0.94 plus or minus 0.01 across three seeds, on this data version, with these pinned dependencies, and here is the clean run\" ends that conversation and starts a better one. The second answer is not more work. It is the same work, written down while you were doing it."
+        ]
+      },
+      fr: {
+        title: "Ça marche dans mon notebook",
+        excerpt: "Pourquoi votre camarade obtient un autre chiffre, pourquoi une graine n'y suffit pas, et la différence entre un résultat et un artefact de votre session.",
+        content: [
+          "Un camarade exécute votre notebook et obtient un chiffre différent. Pire : vous l'exécutez vous-même six semaines plus tard, sur le même ordinateur, et vous n'arrivez plus au résultat que vous aviez mis dans votre rapport. Rien n'a été changé volontairement. Le code est le code. Et pourtant le chiffre que vous avez défendu n'est plus là.",
+          "Trois choses varient sous un notebook, et elles échouent dans cet ordre de fréquence : l'environnement, l'exécution, puis l'aléatoire. La plupart des étudiants vont droit au troisième, fixent une graine, et s'étonnent que cela ne suffise pas.",
+          "Commencez par l'environnement, car c'est lui qui casse d'une machine à l'autre. Un requirements.txt listant `pandas`, `scikit-learn`, `torch` sans versions ne décrit pas un environnement : il décrit un souhait. Celui qui l'installe dans trois mois obtient ce qui était courant ce jour-là, et un modèle entraîné sous une version mineure de scikit-learn peut se comporter différemment sous la suivante. `pip freeze` écrit les versions que vous avez réellement, et un environnement virtuel les empêche de se mélanger au reste de la machine. Deux commandes, et toute la différence entre « ça s'est installé » et « la même chose s'est installée ».",
+          "Vient ensuite l'exécution, celle que personne n'avoue. Un notebook n'est pas un programme : c'est un tas de cellules partageant une mémoire, sans ordre imposé. Vous pouvez exécuter la cellule 12, modifier la cellule 4, réexécuter la 12 et voir un résultat qu'aucune exécution de haut en bas ne produirait jamais. La pire variante est la variable définie dans une cellule que vous avez depuis supprimée : le notebook fonctionne parfaitement dans votre session et ne peut fonctionner dans aucune autre, y compris la vôtre demain.",
+          "L'habitude qui corrige cela prend dix secondes. Redémarrez le noyau, exécutez toutes les cellules depuis le début, puis regardez si le chiffre survit. Si un résultat n'a jamais été produit par une exécution propre, ce n'est pas encore un résultat : c'est un artefact de votre session. Faites-le avant de mettre un chiffre dans un rapport, toujours.",
+          "Alors seulement l'aléatoire mérite examen, et il comporte plus de couches qu'une seule graine. Le module `random` de Python, le générateur de NumPy et PyTorch portent chacun leur propre état ; en fixer un laisse les autres libres. Les mélanges, l'initialisation des poids, le dropout et l'augmentation y puisent tous, si bien qu'un modèle peut être « graine fixée » et bouger encore.",
+          "Et tout fixer ne garantit toujours pas des chiffres identiques. Sur GPU, certaines opérations sont non déterministes par conception : l'ordre dans lequel les valeurs flottantes sont additionnées entre threads varie d'une exécution à l'autre, et l'addition flottante n'est pas associative, donc les totaux diffèrent sur les dernières décimales. Ces écarts se composent au fil de l'entraînement. PyTorch documente quelles opérations se comportent ainsi et propose un mode déterministe qui échange de la vitesse contre de la répétabilité — un échange qui vaut la peine tant que vous établissez un résultat, et rarement après.",
+          "Ce qui mène à la position honnête. Une reproductibilité au bit près est souvent inatteignable et rarement ce dont vous avez besoin. Ce qu'il vous faut, c'est que la conclusion soit stable : si deux exécutions donnent 0,842 et 0,839, le constat tient. Si elles donnent 0,84 et 0,71, vous n'aviez pas de constat — vous aviez un tirage chanceux, et le présenter comme le résultat tient plus de l'erreur que de l'arrondi. Lancer trois fois avec des graines différentes et rapporter l'écart est plus informatif que n'importe quel chiffre unique, et cela prend quelques minutes.",
+          "Une habitude plus modeste compte tout autant : consignez la configuration à côté du résultat. Graine, version des données, hyperparamètres clés, versions des bibliothèques — écrits avec la métrique plutôt que mémorisés. Chaque chiffre d'un notebook provient d'un état précis, et si cet état n'est pas noté à côté, le chiffre n'est qu'une anecdote.",
+          "Rien de tout cela n'exige d'outillage. Épinglez vos versions, travaillez dans un environnement virtuel, faites un redémarrage-et-tout-exécuter avant de croire quoi que ce soit, fixez les trois générateurs, exécutez plus d'une fois, et notez les réglages à côté du score. C'est un après-midi d'habitudes, pas une plateforme.",
+          "Le bénéfice apparaît là où les étudiants y tiennent. « J'ai obtenu 0,94 » appelle une seule question : peux-tu me le montrer ? « J'ai obtenu 0,94 plus ou moins 0,01 sur trois graines, avec cette version des données, ces dépendances épinglées, et voici l'exécution propre » clôt cette conversation et en ouvre une meilleure. La seconde réponse ne demande pas plus de travail. C'est le même travail, noté pendant qu'on le faisait."
+        ]
+      }
+    },
+    content: []
+  },
+
+  {
     slug: "your-model-is-not-that-good",
     title: "Your Model Is Not That Good",
     excerpt: "A validation score of 0.99 is a warning, not a win. The five ways data leaks into a student project, and why none of them raise an error.",
