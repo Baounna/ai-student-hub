@@ -14,9 +14,12 @@ export type SourceReference = {
   href: string;
 };
 
+// No coverImage field: covers are generated per post from the slug and
+// category by coverImageUrl(), which every page calls directly. The field
+// survived as required data that nothing read, still pointing at three SVGs
+// shared between twenty-one posts from before the generator existed.
 export type BlogPost = {
   slug: string;
-  coverImage: string;
   title: string;
   excerpt: string;
   category: string;
@@ -546,8 +549,100 @@ export const comparisons: ComparisonPage[] = [
 
 const basePosts: BlogPost[] = [
   {
+    slug: "how-to-read-a-cve-without-panicking",
+    title: "How to Read a CVE Without Panicking",
+    excerpt: "A triage order for security advisories: what the severity score measures, what it leaves out, and the two free signals that tell you whether to act today.",
+    category: "Security & Performance",
+    intentKeyword: "how to read a cve",
+    track: "cs",
+    tags: ["security", "vulnerabilities", "dependencies"],
+    cluster: "Security & Performance",
+    publishedAt: "2026-09-19",
+    readTime: "",
+    keywords: ["how to read a cve", "cvss score meaning", "cisa kev", "epss", "npm audit triage"],
+    popularScore: 62,
+    relatedSlugs: [],
+    affiliateCallout: {
+      headline: {
+        en: "Check your own project tonight",
+        fr: "Auditez votre projet ce soir"
+      },
+      description: {
+        en: "Run the audit, take the top finding, and work the triage order until you can say out loud whether it matters.",
+        fr: "Lancez l'audit, prenez le résultat principal, et déroulez l'ordre de tri jusqu'à pouvoir dire s'il compte."
+      },
+      links: []
+    },
+    references: [
+      {
+        source: "CVE Program",
+        label: { en: "What is a CVE Record?", fr: "Qu'est-ce qu'un enregistrement CVE ?" },
+        href: "https://www.cve.org/About/Overview"
+      },
+      {
+        source: "FIRST",
+        label: { en: "CVSS specification", fr: "Spécification CVSS" },
+        href: "https://www.first.org/cvss/"
+      },
+      {
+        source: "CISA",
+        label: { en: "Known Exploited Vulnerabilities catalogue", fr: "Catalogue des vulnérabilités exploitées connues" },
+        href: "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      },
+      {
+        source: "FIRST",
+        label: { en: "EPSS: Exploit Prediction Scoring System", fr: "EPSS : système de score de prédiction d'exploitation" },
+        href: "https://www.first.org/epss/"
+      },
+      {
+        source: "NIST",
+        label: { en: "National Vulnerability Database", fr: "Base nationale des vulnérabilités" },
+        href: "https://nvd.nist.gov/"
+      }
+    ],
+    locales: {
+      en: {
+        title: "How to Read a CVE Without Panicking",
+        excerpt: "A triage order for security advisories: what the severity score measures, what it leaves out, and the two free signals that tell you whether to act today.",
+        content: [
+          "The first time `npm audit` reports forty-seven vulnerabilities in a student project, there are two instincts. One is to fix everything before shipping anything. The other is to close the terminal and never run it again. The second is far more common, and it is how a portfolio project ends up with a genuinely exploitable dependency sitting next to forty-six that were never a threat. What follows is the order a working engineer reads an advisory in.",
+          "Start with what a CVE actually is, because the name does more work than people expect. CVE-2026-1234 is an identifier, issued by the CVE Program so that a researcher in Berlin, a vendor in Seattle and your build log are all describing the same flaw. It records that a vulnerability was reported and catalogued. It does not say the flaw affects you, that anyone has ever exploited it, or that there is a path from the internet to the vulnerable line in your deployment. Treating the existence of a CVE as the problem is the first mistake, and the most expensive one in time.",
+          "The severity score is the second trap, because it answers a question you did not ask. The number attached to most advisories is a CVSS base score, from 0 to 10, defined by FIRST. It describes the vulnerability in the abstract: how bad it could be, under the most favourable conditions for an attacker, on a system where the vulnerable code is reachable and the attacker can get to it. Your project is not that abstract system. The base score deliberately excludes everything specific to you, which is exactly the part that determines whether you should care.",
+          "Put concretely: a 9.8 marked critical in a package your test runner imports, in a code path that never executes in production, is less urgent than a 6.5 in the middleware that checks your session cookies. The scores say the opposite. The scores are not wrong; they are answering a different question. Yours is whether an attacker can reach the vulnerable code in the thing you actually deployed.",
+          "Two signals get you closer to that than severity does, and both are free.",
+          "The first is CISA's Known Exploited Vulnerabilities catalogue. A vulnerability lands on the KEV list when there is reliable evidence it is being exploited in the wild — not theorised about, exploited. If your advisory is on KEV, the debate is over. Patch it, and patch it before you finish reading this article.",
+          "The second is EPSS, also from FIRST, which estimates the probability that a given vulnerability will be exploited in the next thirty days. It is a score between 0 and 1, and the distribution is instructive: the overwhelming majority of catalogued vulnerabilities sit below 0.01, meaning under a one percent chance. A 9.8 with an EPSS of 0.0004 and a 6.1 with an EPSS of 0.7 are not the same situation, however the severity labels are coloured.",
+          "That gives a triage order you can run in a few minutes. Is it on KEV? If yes, stop and patch. If no, is the vulnerable package something that reaches production, or is it a build or test dependency that never ships? If it never ships, it is not urgent and may not be relevant at all. If it does ship, is the vulnerable function actually called by your code, directly or through a dependency? Tools will tell you a package is vulnerable; they rarely tell you whether you use the vulnerable part. Then, and only then, look at severity and EPSS together to decide whether this is today or this month.",
+          "When the answer really is your problem, the fix is usually dull. Update the dependency to a patched version and run your tests. Most advisories in a JavaScript project resolve this way, and a lockfile that has not been updated in months turns a one-line fix into an afternoon of version conflicts — which is its own argument for updating dependencies while nothing is on fire.",
+          "When there is no patch, you have three honest options: pin to an older version that predates the flaw, replace the dependency, or accept the risk and write down why. The third is a legitimate engineering decision, not a cop-out, but it only counts if it is written down. An accepted risk that lives in your head is indistinguishable from one you never noticed.",
+          "This matters more than the security itself for a student, and it is worth saying plainly. Anyone can run an audit tool and paste the output. What an interviewer is listening for is whether you can look at forty-seven findings and explain, in a sentence each, why forty-four of them did not need your afternoon. That judgement is the skill. The scanner is just a list.",
+          "One last thing about the forty-seven. Run the audit on your own project tonight, take the highest-severity finding, and work through the order above until you can say out loud whether it matters. Whatever the answer turns out to be, you will have done the part most people skip."
+        ]
+      },
+      fr: {
+        title: "Lire un CVE sans paniquer",
+        excerpt: "Un ordre de tri pour les avis de sécurité : ce que mesure le score de sévérité, ce qu'il omet, et les deux signaux gratuits qui disent s'il faut agir aujourd'hui.",
+        content: [
+          "La première fois que `npm audit` annonce quarante-sept vulnérabilités dans un projet étudiant, deux réflexes apparaissent. Le premier : tout corriger avant de livrer quoi que ce soit. Le second : fermer le terminal et ne plus jamais relancer la commande. Le second est de loin le plus fréquent, et c'est ainsi qu'un projet de portfolio se retrouve avec une dépendance réellement exploitable posée à côté de quarante-six qui n'ont jamais constitué une menace. Voici l'ordre dans lequel un ingénieur en poste lit un avis de sécurité.",
+          "Commencez par ce qu'est réellement un CVE, car l'identifiant fait plus de travail qu'on ne le croit. CVE-2026-1234 est un identifiant, attribué par le CVE Program pour qu'un chercheur à Berlin, un éditeur à Seattle et votre log de build décrivent tous la même faille. Il indique qu'une vulnérabilité a été signalée et cataloguée. Il ne dit pas que la faille vous concerne, que quelqu'un l'a déjà exploitée, ni qu'il existe un chemin entre Internet et la ligne vulnérable dans votre déploiement. Confondre l'existence d'un CVE avec le problème lui-même est la première erreur, et la plus coûteuse en temps.",
+          "Le score de sévérité est le deuxième piège, parce qu'il répond à une question que vous n'avez pas posée. Le chiffre attaché à la plupart des avis est un score de base CVSS, de 0 à 10, défini par le FIRST. Il décrit la vulnérabilité dans l'abstrait : sa gravité potentielle, dans les conditions les plus favorables à un attaquant, sur un système où le code vulnérable est atteignable et où l'attaquant peut l'atteindre. Votre projet n'est pas ce système abstrait. Le score de base exclut délibérément tout ce qui vous est spécifique, c'est-à-dire précisément la partie qui détermine si vous devez vous en préoccuper.",
+          "Concrètement : un 9.8 étiqueté critique dans un paquet importé par votre lanceur de tests, sur un chemin de code qui ne s'exécute jamais en production, est moins urgent qu'un 6.5 dans le middleware qui vérifie vos cookies de session. Les scores disent l'inverse. Ils n'ont pas tort ; ils répondent à une autre question. La vôtre est de savoir si un attaquant peut atteindre le code vulnérable dans ce que vous avez réellement déployé.",
+          "Deux signaux vous en rapprochent bien mieux que la sévérité, et les deux sont gratuits.",
+          "Le premier est le catalogue Known Exploited Vulnerabilities de la CISA. Une vulnérabilité entre dans la liste KEV lorsqu'il existe des preuves fiables qu'elle est exploitée dans la nature — pas envisagée en théorie, exploitée. Si votre avis figure sur KEV, le débat est clos. Corrigez, et corrigez avant d'avoir fini de lire cet article.",
+          "Le second est l'EPSS, également issu du FIRST, qui estime la probabilité qu'une vulnérabilité donnée soit exploitée dans les trente prochains jours. C'est un score entre 0 et 1, et sa distribution est instructive : l'immense majorité des vulnérabilités cataloguées se situe sous 0,01, soit moins d'une chance sur cent. Un 9.8 avec un EPSS de 0,0004 et un 6.1 avec un EPSS de 0,7 ne décrivent pas la même situation, quelle que soit la couleur de l'étiquette de sévérité.",
+          "Cela donne un ordre de tri que vous pouvez dérouler en quelques minutes. Est-ce sur KEV ? Si oui, arrêtez tout et corrigez. Sinon, le paquet vulnérable atteint-il la production, ou s'agit-il d'une dépendance de build ou de test qui n'est jamais livrée ? Si elle n'est jamais livrée, ce n'est pas urgent et ce n'est peut-être pas pertinent du tout. Si elle est livrée, la fonction vulnérable est-elle réellement appelée par votre code, directement ou via une dépendance ? Les outils vous disent qu'un paquet est vulnérable ; ils vous disent rarement si vous utilisez la partie vulnérable. Alors seulement, regardez ensemble la sévérité et l'EPSS pour décider si c'est aujourd'hui ou ce mois-ci.",
+          "Quand le problème est bien le vôtre, le correctif est généralement ennuyeux. Mettez la dépendance à jour vers une version corrigée et lancez vos tests. La plupart des avis dans un projet JavaScript se résolvent ainsi, et un lockfile laissé sans mise à jour pendant des mois transforme un correctif d'une ligne en après-midi de conflits de versions — ce qui est un argument de plus pour mettre à jour ses dépendances tant que rien ne brûle.",
+          "Quand aucun correctif n'existe, il reste trois options honnêtes : figer une version antérieure à la faille, remplacer la dépendance, ou accepter le risque et écrire pourquoi. La troisième est une décision d'ingénierie légitime, pas une dérobade, mais elle ne compte que si elle est écrite. Un risque accepté qui ne vit que dans votre tête est indiscernable d'un risque que vous n'avez jamais vu.",
+          "Pour un étudiant, cela compte davantage que la sécurité elle-même, et autant le dire clairement. N'importe qui peut lancer un outil d'audit et coller le résultat. Ce qu'un recruteur écoute, c'est votre capacité à regarder quarante-sept résultats et à expliquer, en une phrase chacun, pourquoi quarante-quatre ne méritaient pas votre après-midi. Ce jugement est la compétence. Le scanner n'est qu'une liste.",
+          "Un dernier mot sur ces quarante-sept. Lancez l'audit sur votre propre projet ce soir, prenez le résultat le plus sévère, et déroulez l'ordre ci-dessus jusqu'à pouvoir dire à voix haute s'il compte ou non. Quelle que soit la réponse, vous aurez fait la partie que presque tout le monde saute."
+        ]
+      }
+    },
+    content: []
+  },
+
+  {
     slug: "ai-portfolio-project-recruiters-notice",
-    coverImage: "/images/post-portfolio.svg",
     title: "How to Build an AI Portfolio Project Recruiters Actually Notice",
     excerpt: "A practical framework to scope, ship, and present one AI project that creates measurable internship signal.",
     category: "Career/Interviews",
@@ -627,7 +722,6 @@ const basePosts: BlogPost[] = [
   },
   {
     slug: "deploy-ml-model-student-budget",
-    coverImage: "/images/post-deploy.svg",
     title: "How to Deploy ML Models on a Student Budget Without Looking Amateur",
     excerpt: "A practical deployment blueprint with budget guardrails, reliability checks, and portfolio-ready architecture.",
     category: "Cloud/DevOps",
@@ -717,7 +811,6 @@ const basePosts: BlogPost[] = [
   },
   {
     slug: "student-ai-internship-roadmap",
-    coverImage: "/images/post-roadmap.svg",
     title: "Student AI Internship Roadmap: From Zero Signal to Interview-Ready in 90 Days",
     excerpt: "A 90-day execution plan to build authority, improve applications, and create interview conversion.",
     category: "Career/Interviews",
@@ -797,7 +890,6 @@ const basePosts: BlogPost[] = [
   },
   {
     slug: "ai-fundamentals-every-cs-student-should-know",
-    coverImage: "/images/post-portfolio.svg",
     title: "AI Fundamentals Every Computer Science Student Should Master",
     excerpt:
       "A practical guide to core AI concepts that help students read papers faster, build better projects, and explain decisions in interviews.",
@@ -883,7 +975,6 @@ const basePosts: BlogPost[] = [
   },
   {
     slug: "computer-science-roadmap-for-ai-builders",
-    coverImage: "/images/post-deploy.svg",
     title: "Computer Science Roadmap for AI Builders: What Actually Matters",
     excerpt:
       "A focused CS roadmap for AI students who want better performance, cleaner systems, and stronger interview answers.",
@@ -974,7 +1065,6 @@ const basePosts: BlogPost[] = [
   },
   {
     slug: "transformers-rag-and-agents-for-students",
-    coverImage: "/images/post-roadmap.svg",
     title: "Transformers, RAG, and Agents: A Student-Friendly Systems Guide",
     excerpt:
       "Understand how modern LLM systems are built, when to use each pattern, and how to choose a portfolio architecture recruiters respect.",

@@ -371,7 +371,6 @@ const llmGuardrailsContentFr = [
 export const csExpansionPosts: BlogPost[] = [
   {
     slug: "data-structures-and-algorithms-for-ai-engineers",
-    coverImage: "/images/post-deploy.svg",
     title: "Data Structures and Algorithms for AI Engineers: What Matters in Production",
     excerpt:
       "A production-first guide to the CS fundamentals that directly improve model serving speed, retrieval quality, and backend reliability.",
@@ -452,7 +451,6 @@ export const csExpansionPosts: BlogPost[] = [
   },
   {
     slug: "system-design-for-student-ai-projects",
-    coverImage: "/images/post-roadmap.svg",
     title: "System Design for Student AI Projects: From Demo to Reliable Product",
     excerpt:
       "A practical architecture playbook to design student projects that survive real users, not just classroom demos.",
@@ -533,7 +531,6 @@ export const csExpansionPosts: BlogPost[] = [
   },
   {
     slug: "backend-apis-for-ml-apps",
-    coverImage: "/images/post-portfolio.svg",
     title: "Backend APIs for ML Apps: Contracts, Reliability, and Security",
     excerpt:
       "How to build production-grade APIs for ML features with clear schemas, robust error handling, and deployable quality gates.",
@@ -614,7 +611,6 @@ export const csExpansionPosts: BlogPost[] = [
   },
   {
     slug: "linux-devops-workflow-for-students",
-    coverImage: "/images/post-deploy.svg",
     title: "Linux and DevOps Workflow for Students: Ship Faster, Break Less",
     excerpt:
       "A practical Linux + DevOps operating system for engineering students who want reliable releases and cleaner project delivery.",
@@ -695,7 +691,6 @@ export const csExpansionPosts: BlogPost[] = [
   },
   {
     slug: "security-checklist-for-student-ai-and-cs-projects",
-    coverImage: "/images/post-roadmap.svg",
     title: "Security Checklist for Student AI and CS Projects",
     excerpt: "A practical security baseline to protect student projects before public launch.",
     category: "Security & Performance",
@@ -756,7 +751,6 @@ export const csExpansionPosts: BlogPost[] = [
   },
   {
     slug: "database-design-for-rag-and-ml-apps",
-    coverImage: "/images/post-deploy.svg",
     title: "Database Design for RAG and ML Apps",
     excerpt: "How to model data for retrieval, reliability, and performance in student AI systems.",
     category: "Systems & Backend",
@@ -817,7 +811,6 @@ export const csExpansionPosts: BlogPost[] = [
   },
   {
     slug: "cicd-for-ml-and-backend-projects",
-    coverImage: "/images/post-roadmap.svg",
     title: "CI/CD for ML and Backend Projects",
     excerpt: "A lightweight release pipeline that keeps student projects stable and deployable.",
     category: "Cloud/DevOps",
@@ -878,7 +871,6 @@ export const csExpansionPosts: BlogPost[] = [
   },
   {
     slug: "observability-for-student-engineers",
-    coverImage: "/images/post-portfolio.svg",
     title: "Observability for Student Engineers: Logs, Metrics, Traces",
     excerpt: "A practical observability baseline to debug faster and ship more reliable AI + Cybersecurity services.",
     category: "Security & Performance",
@@ -939,7 +931,6 @@ export const csExpansionPosts: BlogPost[] = [
   },
   {
     slug: "networking-basics-for-ai-backend-engineers",
-    coverImage: "/images/post-deploy.svg",
     title: "Networking Basics for AI and Backend Engineers",
     excerpt: "The networking concepts that directly impact API latency, retries, and reliability.",
     category: "CS Fundamentals",
@@ -1000,7 +991,6 @@ export const csExpansionPosts: BlogPost[] = [
   },
   {
     slug: "operating-systems-skills-for-ai-builders",
-    coverImage: "/images/post-roadmap.svg",
     title: "Operating Systems Skills Every AI Builder Uses in Production",
     excerpt: "Practical OS knowledge for debugging, performance tuning, and safer deployments.",
     category: "CS Fundamentals",
@@ -1061,7 +1051,6 @@ export const csExpansionPosts: BlogPost[] = [
   },
   {
     slug: "ml-engineering-testing-playbook",
-    coverImage: "/images/post-portfolio.svg",
     title: "ML Engineering Testing Playbook for Student Teams",
     excerpt: "How to design test layers that keep ML quality stable from notebook to production.",
     category: "ML Engineering",
@@ -1122,7 +1111,6 @@ export const csExpansionPosts: BlogPost[] = [
   },
   {
     slug: "llm-guardrails-and-evaluation-basics",
-    coverImage: "/images/post-roadmap.svg",
     title: "LLM Guardrails and Evaluation Basics for Student Products",
     excerpt: "A practical framework to reduce unsafe behavior and quality drift in LLM applications.",
     category: "LLM Systems",
