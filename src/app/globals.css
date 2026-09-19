@@ -949,3 +949,13 @@ html[data-content-width="wide"] {
     font-weight: 600;
   }
 }
+
+/* The mobile quick-nav floats at bottom-3 and nothing reserved room for it, so
+   the closing lines of every page sat behind it — the last paragraph of an
+   article, the final card on the homepage. Reserve its height plus the home
+   indicator, below md only, where the bar exists. */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(5.25rem + env(safe-area-inset-bottom));
+  }
+}

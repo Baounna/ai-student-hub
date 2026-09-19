@@ -63,7 +63,14 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
     <>
       <HeaderSearchShortcut locale={locale} />
       <ScrollReveal />
-      <header className="sticky top-0 z-30 border-b border-[color:var(--border)] bg-[color:var(--surface-strong)]/86 backdrop-blur-2xl">
+      {/* Sticky from md up only. On a phone this header is five stacked rows —
+          logo, scrolling nav pills, two CTAs, the theme control and the search
+          field — roughly 500px, well over half of a 844px screen. Pinning that
+          meant the reader scrolled content underneath it and saw a sliver of
+          page between the header and the floating bottom nav. Mobile already
+          has persistent navigation down there, so the top block has no reason
+          to follow you; it scrolls away and gives the article the screen. */}
+      <header className="md:sticky md:top-0 z-30 border-b border-[color:var(--border)] bg-[color:var(--surface-strong)]/86 backdrop-blur-2xl">
         <div className="mx-auto max-w-6xl px-4 py-3 md:px-6">
           <div className="mb-2 hidden items-center justify-end gap-1 text-sm md:flex">
             <Link href={donateHref} className="utility-link">
