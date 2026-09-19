@@ -7,6 +7,7 @@ import { getGa4MeasurementId, isGa4Enabled } from "@/lib/runtime-config";
 import { absoluteUrl, getSiteUrl } from "@/lib/site-url";
 import { assertProductionRuntimeConfig } from "@/lib/env-validation";
 import { jsonLd } from "@/lib/json-ld";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 // Self-hosted by next/font so every visitor gets the same typography.
@@ -220,6 +221,11 @@ gtag('config', '${ga4MeasurementId}', { anonymize_ip: true });`}
           Skip to content
         </a>
         {children}
+        {/* Until now nothing measured whether any of this was read. The script
+            and its beacons are same-origin (/_vercel/insights/*), so the
+            nonce-based CSP already allows them under 'self' — no policy change,
+            and nothing to silently fail. */}
+        <Analytics />
       </body>
     </html>
   );
