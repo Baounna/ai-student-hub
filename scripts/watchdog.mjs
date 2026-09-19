@@ -211,9 +211,20 @@ const PARKED_WORKFLOWS = new Set([
 
 async function checkWorkflowHealth() {
   try {
+    // Default branch only. Without --branch this counted runs from every branch,
+    // so a failing Dependabot PR reported the live site as unhealthy — and since
+    // Dependabot now opens a separate PR per major upgrade, the ones that
+    // genuinely break (TypeScript 7 against typescript-eslint, Tailwind 4
+    // against a v3 config) fail on purpose and would raise a nightly alarm
+    // forever. A PR failing is the review system working; it is not an outage.
     const { stdout } = await execFileAsync(
       "gh",
-      ["run", "list", "--limit", "60", "--json", "workflowName,conclusion,status,createdAt"],
+      [
+        "run", "list",
+        "--branch", process.env.WATCHDOG_BRANCH || "main",
+        "--limit", "60",
+        "--json", "workflowName,conclusion,status,createdAt"
+      ],
       { maxBuffer: 8 * 1024 * 1024 }
     );
 
@@ -239,8 +250,8 @@ async function checkWorkflowHealth() {
       "Workflow health",
       failing.length === 0,
       failing.length === 0
-        ? `latest run of all ${latest.size} workflows passed`
-        : `last run failed: ${failing.join(", ")}`
+        ? `latest run of all ${latest.size} workflows on main passed`
+        : `last run on main failed: ${failing.join(", ")}`
     );
   } catch {
     // No gh, or no token — not a fault in the project itself.
