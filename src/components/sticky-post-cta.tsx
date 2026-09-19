@@ -39,6 +39,12 @@ export function StickyPostCta({ locale }: { locale: Locale }) {
         visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
       }`}
       aria-hidden={!visible}
+      // aria-hidden alone hides it from a screen reader while leaving its
+      // buttons in the tab order, so a keyboard user could tab into a panel
+      // nobody can see. pointer-events-none stops the mouse, not the keyboard.
+      // inert takes the whole subtree out of focus and the accessibility tree
+      // together, which is the thing that was actually meant here.
+      inert={!visible}
     >
       <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface-strong)] p-3 shadow-lg backdrop-blur">
         <div className="mb-2 flex items-center justify-between">

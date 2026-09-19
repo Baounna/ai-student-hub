@@ -24,7 +24,12 @@
   --surface-strong: #f1f4f6;
   --text: #3c4750;
   --text-strong: #0f1519;
-  --muted: #6b7883;
+  /* 4.81:1 on --bg-soft and 5.31:1 on white. The previous #6b7883 measured
+     4.09:1 against --bg-soft, under the 4.5 minimum, and an audit found it on
+     23 elements across every page — timestamps, captions, source lines, the
+     provenance rail. Small grey text on a tinted panel is where this always
+     fails, and it is exactly the text a reader squints at. */
+  --muted: #606d78;
   --border: #d8dfe4;
   --primary: #1b4d3e;
   --primary-strong: #123328;

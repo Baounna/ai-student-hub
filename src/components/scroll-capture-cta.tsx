@@ -42,6 +42,12 @@ export function ScrollCaptureCta({ locale }: { locale: Locale }) {
         visible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
       }`}
       aria-hidden={!visible}
+      // aria-hidden alone hides it from a screen reader while leaving its
+      // buttons in the tab order, so a keyboard user could tab into a panel
+      // nobody can see. pointer-events-none stops the mouse, not the keyboard.
+      // inert takes the whole subtree out of focus and the accessibility tree
+      // together, which is the thing that was actually meant here.
+      inert={!visible}
     >
       <div className="pointer-events-auto rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface-strong)] p-4 shadow-2xl">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
