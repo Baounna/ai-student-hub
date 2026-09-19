@@ -1,5 +1,4 @@
 import type { MetadataRoute } from "next";
-import { getAutoNewsRaw } from "@/content/auto-news";
 import { comparisons, getAllCategories, getAllTags, posts, slugify } from "@/content/posts";
 import { newsBriefs } from "@/content/news";
 import { locales } from "@/i18n/config";
@@ -7,7 +6,6 @@ import { absoluteUrl } from "@/lib/site-url";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const autoNews = getAutoNewsRaw();
 
   const rootEntry: MetadataRoute.Sitemap = [
     {
@@ -53,14 +51,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.87
     }))
   );
-  const autoNewsPages = locales.flatMap((locale) =>
-    autoNews.map((item) => ({
-      url: absoluteUrl(`/${locale}/news/auto/${item.slug}`),
-      lastModified: new Date(item.publishedAt || item.discoveredAt || Date.now()),
-      changeFrequency: "daily" as const,
-      priority: 0.8
-    }))
-  );
+  // The auto briefs are deliberately absent. They carry robots noindex, and
+  // listing a page in the sitemap is a request to index it — asking for the
+  // opposite of what the page itself says wastes crawl budget on 480 URLs and
+  // sends a contradictory signal. The pages are still reachable and useful:
+  // /news links to every one of them.
 
   const localizedComparisonPages = locales.flatMap((locale) =>
     comparisons.map((comparison) => ({
@@ -94,7 +89,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...localizedStaticPages,
     ...blogPages,
     ...newsPages,
-    ...autoNewsPages,
     ...localizedComparisonPages,
     ...categoryPages,
     ...tagPages

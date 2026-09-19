@@ -143,6 +143,23 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
 
   return {
     title: item.title,
+    // Kept out of the index on purpose.
+    //
+    // These briefs are 480 of the site's 687 URLs, and each carries roughly
+    // fifty words of summary quoted from the original source plus a
+    // "why this matters" paragraph drawn from a handful of per-topic
+    // templates — sample five pages and three are word-for-word identical.
+    // That is scraped, near-duplicate content by Google's own description,
+    // and a site that is seventy percent of it risks having the whole domain
+    // judged on that, which would bury the long-form posts that took real
+    // work. A page reprinting AWS's own summary was never going to outrank
+    // AWS anyway.
+    //
+    // follow stays on: the links out to sources and back into the site are
+    // genuine and should still count. The /news index remains indexable —
+    // the curation there is ours. Undo by deleting this block the day these
+    // pages carry original writing.
+    robots: { index: false, follow: true },
     description: item.summary,
     keywords: getSeoKeywords(params.lang, "newsPost", [
       item.topic,
