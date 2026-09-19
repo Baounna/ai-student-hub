@@ -101,7 +101,36 @@ for (const row of rows) {
 }
 
 console.log("--------------------------------");
-console.log(`Valid links: ${validRows.length}/5`);
+console.log(`Well-formed links: ${validRows.length}/5`);
+
+// "Valid" used to mean only "parses as an https URL", and the script then
+// printed "Affiliate configuration looks good" over five links that could never
+// pay a penny: they were plain homepage URLs carrying utm_* analytics tags and
+// no referral ID of ours. A check that reports success for something that
+// cannot work is worse than no check, because it stops anyone looking.
+//
+// A real affiliate link carries an identifier issued to the publisher, so look
+// for one. utm_* deliberately does not count: it is the destination's own
+// analytics label and attributes nothing to us.
+const REFERRAL_HINTS = ["ref", "refcode", "aff", "affiliate", "aff_id", "partner", "pid", "irclickid", "tag", "utm_referrer"];
+
+function hasReferralId(url) {
+  try {
+    const parsed = new URL(url);
+    for (const [key] of parsed.searchParams) {
+      const k = key.toLowerCase();
+      if (k.startsWith("utm_") && k !== "utm_referrer") continue;
+      if (REFERRAL_HINTS.includes(k)) return true;
+    }
+    // Some networks encode the ID in the path instead of the query.
+    return /\/(?:aff|ref|r|go|partner)\/[A-Za-z0-9_-]{4,}/i.test(parsed.pathname);
+  } catch {
+    return false;
+  }
+}
+
+const earning = validRows.filter((row) => hasReferralId(row.url));
+console.log(`Links that can actually earn: ${earning.length}/${validRows.length}`);
 
 let hasError = false;
 if (!validRows.length) {
@@ -119,6 +148,14 @@ for (const target of REQUIRED_PLACEMENTS) {
 
 if (hasError) {
   process.exitCode = 1;
+} else if (!earning.length) {
+  // Not an error: running no affiliate programme is a legitimate state, and the
+  // site now says so. It is only a problem when the site claims otherwise.
+  console.log("Links are well-formed, but none carry a referral ID, so none can earn.");
+  console.log("That is fine while the site says it earns nothing. Check src/config/site.ts");
+  console.log("still says so before adding any commission wording back.");
+} else if (earning.length < validRows.length) {
+  console.log(`${validRows.length - earning.length} link(s) carry no referral ID and cannot earn.`);
 } else {
   console.log("Affiliate configuration looks good.");
 }

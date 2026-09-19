@@ -320,7 +320,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
               </li>
               <li>
                 <Link href={`/${locale}/affiliate-disclosure`} className="transition hover:opacity-70">
-                  {locale === "fr" ? "Divulgation d'affiliation" : "Affiliate Disclosure"}
+                  {locale === "fr" ? "Politique de liens" : "Link policy"}
                 </Link>
               </li>
               <li>

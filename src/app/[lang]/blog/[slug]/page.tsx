@@ -355,7 +355,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                             key={`mid-${tool.name}`}
                             href={tool.affiliateHref}
                             target="_blank"
-                            rel="noopener noreferrer sponsored"
+                            rel="noopener noreferrer"
                             event="affiliate_click"
                             meta={{ page: "blog_post_mid_block", tool: tool.name, slug: post.slug, locale }}
                             className="btn-secondary px-3 py-1.5 text-xs"
@@ -447,7 +447,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                   <TrackableAnchor
                     href={tool.affiliateHref}
                     target="_blank"
-                    rel="noopener noreferrer sponsored"
+                    rel="noopener noreferrer"
                     event="affiliate_click"
                     meta={{ page: "blog_post_related_tools", tool: tool.name, slug: post.slug, locale }}
                     className="btn-secondary mt-3 inline-flex px-3 py-1.5 text-xs"
@@ -477,7 +477,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                         <TrackableAnchor
                           href={tool.affiliateHref}
                           target="_blank"
-                          rel="noopener noreferrer sponsored"
+                          rel="noopener noreferrer"
                           event="affiliate_click"
                           meta={{ page: "blog_post_tools_table", tool: tool.name, slug: post.slug, locale, rank: index + 1 }}
                           className="do-link text-sm"

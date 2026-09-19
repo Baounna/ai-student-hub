@@ -21,7 +21,7 @@ export function EditorialTrust({ locale, compact = false }: EditorialTrustProps)
       </ul>
       <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-[color:var(--muted)]">
         <Link href={`/${locale}/affiliate-disclosure`} className="do-link">
-          {fr ? "Disclosure" : "Disclosure"}
+          {fr ? "Liens" : "Links"}
         </Link>
         <span>•</span>
         <Link href={`/${locale}/privacy`} className="do-link">

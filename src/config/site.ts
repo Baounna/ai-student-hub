@@ -131,9 +131,14 @@ export const siteConfig = {
     koFiUrl: envValue("NEXT_PUBLIC_DONATION_KOFI_URL"),
     githubSponsorsUrl: envValue("NEXT_PUBLIC_DONATION_GITHUB_SPONSORS_URL")
   },
+  // This said "we may earn a commission" while every outbound link was a plain
+  // homepage URL carrying only UTM analytics tags and no referral ID of ours.
+  // No commission could ever have been attributed, so the site was promising
+  // readers something it could not deliver. Restore the commission wording only
+  // once real affiliate IDs are actually in the links.
   affiliateDisclosureText: envLocaleValue("AFFILIATE_DISCLOSURE_TEXT_EN", "AFFILIATE_DISCLOSURE_TEXT_FR", {
-    en: "Some links on AI and Cybersecurity News are affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you.",
-    fr: "Certains liens sur AI and Cybersecurity News sont des liens d'affiliation. Si vous achetez via ces liens, nous pouvons recevoir une commission sans cout supplementaire."
+    en: "Some pages link to tools we use or recommend. These are ordinary links: we are not in any affiliate programme and earn nothing when you follow them.",
+    fr: "Certaines pages renvoient vers des outils que nous utilisons ou recommandons. Ce sont de simples liens : nous ne participons a aucun programme d'affiliation et ne recevons aucune commission."
   }),
   affiliatePartners,
   testimonials

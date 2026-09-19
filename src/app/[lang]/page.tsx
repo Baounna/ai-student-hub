@@ -730,7 +730,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                 <TrackableAnchor
                   href={tool.affiliateHref}
                   target="_blank"
-                  rel="noopener noreferrer sponsored"
+                  rel="noopener noreferrer"
                   event="affiliate_click"
                   meta={{ page: "home_wiki", tool: tool.name, locale }}
                   className="btn-secondary mt-3 inline-flex px-3 py-1.5 text-xs"

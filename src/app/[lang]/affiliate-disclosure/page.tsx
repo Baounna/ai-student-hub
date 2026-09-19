@@ -9,8 +9,11 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   if (!isLocale(params.lang)) return {};
 
   return {
-    title: params.lang === "fr" ? "Divulgation d'affiliation" : "Affiliate Disclosure",
-    description: params.lang === "fr" ? "Informations sur les liens d'affiliation." : "Information about affiliate links.",
+    title: params.lang === "fr" ? "Politique de liens" : "Link Policy",
+    description:
+      params.lang === "fr"
+        ? "Comment nous utilisons les liens sortants, et ce que nous gagnons (rien)."
+        : "How we use outbound links, and what we earn from them (nothing).",
     alternates: localizedAlternates("/affiliate-disclosure", params.lang)
   };
 }
@@ -26,25 +29,25 @@ export default async function AffiliateDisclosurePage(props: { params: Promise<{
       <header className="do-hero rounded-3xl p-7 md:p-10">
         <p className="do-kicker">{fr ? "Legal" : "Legal"}</p>
         <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
-          {fr ? "Divulgation d'affiliation" : "Affiliate Disclosure"}
+          {fr ? "Politique de liens" : "Link policy"}
         </h1>
         <p className="mt-4 text-sm text-[color:var(--text)]">
           {fr
-            ? "Transparence sur les liens partenaires utilises sur AI and Cybersecurity News."
-            : "Transparency about partner links used across AI and Cybersecurity News."}
+            ? "Ce que sont les liens sortants sur AI and Cybersecurity News, et ce qu'ils nous rapportent."
+            : "What the outbound links on AI and Cybersecurity News are, and what they earn us."}
         </p>
       </header>
 
       <div className="mt-6 space-y-4">
         <section className="surface rounded-2xl p-6">
           <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-            {fr ? "Politique d'affiliation" : "Affiliate policy"}
+            {fr ? "Ce que nous gagnons" : "What we earn"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">{siteConfig.affiliateDisclosureText[locale]}</p>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
             {fr
-              ? "Nous recommandons uniquement des outils pertinents pour les etudiants."
-              : "We only recommend tools relevant to student outcomes."}
+              ? "Nous recommandons uniquement des outils pertinents pour les etudiants. Si cela change un jour et que nous rejoignons un programme d'affiliation, cette page le dira avant que le premier lien ne change."
+              : "We only recommend tools relevant to student outcomes. If that ever changes and we join an affiliate programme, this page will say so before the first link does."}
           </p>
         </section>
 

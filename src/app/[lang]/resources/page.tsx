@@ -149,7 +149,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 {locale === "fr" ? "Budget etudiant" : "Student-budget first"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {locale === "fr" ? "Divulgation claire" : "Affiliate transparency"}
+                {locale === "fr" ? "Aucun lien remunere" : "No paid links"}
               </span>
             </div>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -328,7 +328,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 <TrackableAnchor
                   href={tool.affiliateHref}
                   target="_blank"
-                  rel="noopener noreferrer sponsored"
+                  rel="noopener noreferrer"
                   event="affiliate_click"
                   meta={{ page: "resources", tool: tool.name, locale }}
                   className="btn-primary mt-auto inline-block"
@@ -355,7 +355,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                     key={partner.url}
                     href={partner.url}
                     target="_blank"
-                    rel="noopener noreferrer sponsored"
+                    rel="noopener noreferrer"
                     event="affiliate_click"
                     meta={{ page: "resources_partners", partner: partner.name, placement: partner.placement, locale }}
                     className="inline-flex items-center justify-between rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-4 py-3 text-sm text-[color:var(--text)] hover:border-[color:var(--primary)]/35"

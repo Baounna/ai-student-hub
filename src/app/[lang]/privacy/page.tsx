@@ -73,7 +73,7 @@ export default async function PrivacyPage(props: { params: Promise<{ lang: strin
               {fr ? "Conditions" : "Terms"}
             </Link>
             <Link href={`/${locale}/affiliate-disclosure`} className="btn-secondary">
-              {fr ? "Affiliation" : "Disclosure"}
+              {fr ? "Liens" : "Links"}
             </Link>
           </div>
         </section>

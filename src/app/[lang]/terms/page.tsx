@@ -78,7 +78,7 @@ export default async function TermsPage(props: { params: Promise<{ lang: string 
               {fr ? "Confidentialite" : "Privacy"}
             </Link>
             <Link href={`/${locale}/affiliate-disclosure`} className="btn-secondary">
-              {fr ? "Affiliation" : "Disclosure"}
+              {fr ? "Liens" : "Links"}
             </Link>
           </div>
         </section>

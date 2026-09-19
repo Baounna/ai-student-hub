@@ -128,7 +128,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
               <TrackableAnchor
                 href={recommendedTool.affiliateHref}
                 target="_blank"
-                rel="noopener noreferrer sponsored"
+                rel="noopener noreferrer"
                 event="affiliate_click"
                 meta={{ page: "comparison_hero", tool: recommendedTool.name, slug: comparison.slug, locale }}
                 className="btn-primary mt-4 inline-block"
@@ -228,7 +228,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
                         <TrackableAnchor
                           href={tool.affiliateHref}
                           target="_blank"
-                          rel="noopener noreferrer sponsored"
+                          rel="noopener noreferrer"
                           event="affiliate_click"
                           meta={{ page: "comparison", tool: tool.name, slug: comparison.slug, locale }}
                           className="btn-primary px-3 py-2 text-xs"
@@ -290,7 +290,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
                       <TrackableAnchor
                         href={evidenceHref}
                         target="_blank"
-                        rel="noopener noreferrer sponsored"
+                        rel="noopener noreferrer"
                         event="affiliate_click"
                         meta={{ page: "comparison_references", tool: tool.name, slug: comparison.slug, locale, slot: "evidence" }}
                         className="do-link"
@@ -306,7 +306,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
                     <TrackableAnchor
                       href={tool.affiliateHref}
                       target="_blank"
-                      rel="noopener noreferrer sponsored"
+                      rel="noopener noreferrer"
                       event="affiliate_click"
                       meta={{ page: "comparison_references", tool: tool.name, slug: comparison.slug, locale }}
                       className="do-link"

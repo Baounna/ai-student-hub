@@ -26,10 +26,14 @@ export function TrackableAnchor({ href, event, className, target, rel, meta, chi
     relTokens.add("noopener");
     relTokens.add("noreferrer");
   }
+  // rel="sponsored" declares to Google that a link was paid for. None of these
+  // are: they are ordinary recommendations, and the site earns nothing from
+  // them. Declaring them sponsored both stated something untrue and told Google
+  // to discount a link we actually stand behind. Add it back the day real
+  // affiliate IDs go into the links, because then it will be required.
   if (event === "affiliate_click") {
     relTokens.add("noopener");
     relTokens.add("noreferrer");
-    relTokens.add("sponsored");
   }
   const resolvedRel = relTokens.size ? Array.from(relTokens).join(" ") : undefined;
 

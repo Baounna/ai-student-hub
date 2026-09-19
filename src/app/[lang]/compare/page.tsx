@@ -175,7 +175,7 @@ export default async function LocalizedCompareIndexPage(
                 {fr ? "Filtre budget-friendly" : "Budget-friendly filter"}
               </span>
               <span className="blog-chip rounded-full px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Disclosure partenaire" : "Affiliate transparency"}
+                {fr ? "Aucun lien remunere" : "No paid links"}
               </span>
               {audienceSegments.map((segment) => (
                 <span key={segment} className="blog-chip rounded-full px-3 py-1 text-xs text-[color:var(--muted)]">
@@ -208,7 +208,7 @@ export default async function LocalizedCompareIndexPage(
                 <TrackableAnchor
                   href={defaultTool.affiliateHref}
                   target="_blank"
-                  rel="noopener noreferrer sponsored"
+                  rel="noopener noreferrer"
                   event="affiliate_click"
                   meta={{ page: "compare_index_hero", tool: defaultTool.name, locale }}
                   className="btn-secondary"
