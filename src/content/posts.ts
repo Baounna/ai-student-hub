@@ -646,7 +646,11 @@ const basePosts: BlogPost[] = [
     readTime: "",
     keywords: ["how to read a cve", "cvss score meaning", "cisa kev", "epss", "npm audit triage"],
     popularScore: 62,
-    relatedSlugs: [],
+    relatedSlugs: [
+      "security-checklist-for-student-ai-and-cs-projects",
+      "why-your-side-project-breaks-quietly",
+      "observability-for-student-engineers"
+    ],
     affiliateCallout: {
       headline: {
         en: "Check your own project tonight",
