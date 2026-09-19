@@ -25,6 +25,25 @@ updates:
       production-minor-patch:
         dependency-type: production
         update-types: ["minor", "patch"]
+    ignore:
+      # Each of these fails CI by design, and reopening them weekly means a
+      # failed-build email every Monday for something nobody intends to merge.
+      # A notification you learn to delete unread is worse than no notification,
+      # and this repo has been there before. Delete the relevant entry when the
+      # migration is actually wanted — that is the signal to do the work.
+      #
+      # typescript 7: typescript-eslint does not support it yet, so lint exits
+      # with "typescript-eslint does not support TS 7.0" before checking a file.
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+      # tailwindcss 4: a migration, not an upgrade. The config format and the
+      # @tailwind directives both change, so this needs deliberate work.
+      - dependency-name: "tailwindcss"
+        update-types: ["version-update:semver-major"]
+      # vitest 5: fails against the current test setup.
+      - dependency-name: "vitest"
+        update-types: ["version-update:semver-major"]
+
     commit-message:
       prefix: "chore(deps)"
 
