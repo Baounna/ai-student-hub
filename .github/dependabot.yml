@@ -13,8 +13,15 @@ updates:
     groups:
       # One PR for routine bumps keeps the noise down; security fixes still get
       # their own so they are never buried in a batch.
+      # Minor and patch only. Grouping majors here produced one PR that bundled
+      # TypeScript 7, Tailwind 4, ESLint 10, Vitest 5 and @types/node 26 —
+      # unmergeable as a unit, because Tailwind 3 to 4 is a rewrite of the CSS
+      # setup and TypeScript 7 is not yet supported by typescript-eslint. A PR
+      # that cannot be merged and cannot be split just sits there. Majors now
+      # arrive one per PR, each reviewable and revertable on its own.
       dev-dependencies:
         dependency-type: development
+        update-types: ["minor", "patch"]
       production-minor-patch:
         dependency-type: production
         update-types: ["minor", "patch"]
