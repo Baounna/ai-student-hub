@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { NewsletterForm } from "@/components/newsletter-form";
-import { getEmailProvider } from "@/lib/runtime-config";
+import { canAcceptSignups } from "@/lib/convertkit";
 
 type NewsletterProps = {
   compact?: boolean;
@@ -45,7 +45,13 @@ function ClosedNotice({ locale }: { locale: Locale }) {
 
 export function Newsletter({ compact = false, locale = "en", source }: NewsletterProps) {
   const dict = getDictionary(locale).newsletter;
-  const listIsOpen = getEmailProvider() !== "none";
+  // Not just "is a provider named", but "can this actually accept an address".
+  // EMAIL_PROVIDER=convertkit with no form id makes subscribeConvertKit return
+  // provider_not_ready and drop the address — so checking the provider alone
+  // would put the promises back while signups still went nowhere. Configuration
+  // arrives one variable at a time, and the gap between the first and the last
+  // is exactly when a half-open form does the damage.
+  const listIsOpen = canAcceptSignups();
   const bullets =
     locale === "fr"
       ? [

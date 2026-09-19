@@ -33,6 +33,20 @@ export function isConvertKitConfigured() {
   return Boolean(formId && apiKey);
 }
 
+/**
+ * Can the site actually accept an email address right now?
+ *
+ * Three variables have to line up, and they get set one at a time. Checking
+ * only the provider flag lets a form render while the form id is still
+ * missing; checking only the credentials lets it render while the provider is
+ * still "none". Either gap puts the weekly-email promise back on the homepage
+ * while subscribeConvertKit quietly drops the address — the exact failure this
+ * was just fixed for. One check, both conditions, used everywhere.
+ */
+export function canAcceptSignups() {
+  return getEmailProvider() === "convertkit" && isConvertKitConfigured();
+}
+
 export async function subscribeConvertKit(options: SubscribeOptions) {
   const isDev = process.env.NODE_ENV !== "production";
 
