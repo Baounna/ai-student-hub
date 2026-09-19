@@ -8,7 +8,7 @@ import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, coverImageUrl } from "@/lib/seo";
-import { formatReadTime, readMinutes } from "@/lib/read-time";
+import { formatReadTime } from "@/lib/read-time";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => getAllTags().map((tag) => ({ lang, tag: slugify(tag) })));
