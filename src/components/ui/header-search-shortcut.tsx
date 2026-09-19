@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import type { Locale } from "@/i18n/config";
 
 type HeaderSearchShortcutProps = {
@@ -8,6 +9,8 @@ type HeaderSearchShortcutProps = {
 };
 
 export function HeaderSearchShortcut({ locale }: HeaderSearchShortcutProps) {
+  const router = useRouter();
+
   useEffect(() => {
     function isVisible(element: HTMLElement | null) {
       if (!element) return false;
@@ -35,14 +38,18 @@ export function HeaderSearchShortcut({ locale }: HeaderSearchShortcutProps) {
         return;
       }
 
-      window.location.assign(`/${locale}/blog`);
+      // router.push keeps the client-side navigation: location.assign threw
+      // away the whole document, so pressing "/" on a page without a search
+      // box reloaded the app, refetched every chunk, and lost scroll position
+      // — a full page load to reach a page Next already had.
+      router.push(`/${locale}/blog`);
     }
 
     window.addEventListener("keydown", onKeyDown);
     return () => {
       window.removeEventListener("keydown", onKeyDown);
     };
-  }, [locale]);
+  }, [locale, router]);
 
   return null;
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useRef, useState, useSyncExternalStore } from "react";
 import { usePathname } from "next/navigation";
 import type { Locale } from "@/i18n/config";
 import { sanitizeSearchQuery } from "@/lib/input";
@@ -20,11 +20,34 @@ function extractQueryFromLocation() {
 export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormProps) {
   const pathname = usePathname();
   const inputRef = useRef<HTMLInputElement | null>(null);
-  const [query, setQuery] = useState("");
 
-  useEffect(() => {
-    setQuery(extractQueryFromLocation());
-  }, [pathname]);
+  // What the reader has typed, or null when the box should simply mirror the
+  // URL. Two sources of truth for one input, so keep them apart rather than
+  // copying one into the other.
+  const [typed, setTyped] = useState<string | null>(null);
+
+  // The query in the address bar is browser state. It used to be copied into
+  // React state from an effect, which re-rendered the header on every single
+  // navigation and briefly showed the previous page's search term. Reading it
+  // during render removes both; the server snapshot is empty so hydration
+  // still matches.
+  const subscribeToUrl = useCallback((onChange: () => void) => {
+    window.addEventListener("popstate", onChange);
+    return () => window.removeEventListener("popstate", onChange);
+  }, []);
+
+  const urlQuery = useSyncExternalStore(subscribeToUrl, extractQueryFromLocation, () => "");
+
+  // Adjusting state during render when a prop changes is the documented React
+  // pattern for exactly this, and it costs one render rather than two.
+  const [lastPath, setLastPath] = useState(pathname);
+  if (pathname !== lastPath) {
+    setLastPath(pathname);
+    setTyped(null);
+  }
+
+  const query = typed ?? urlQuery;
+  const setQuery = setTyped;
 
   const fr = locale === "fr";
   const inputId = mobile ? `header-search-mobile-${locale}` : `header-search-${locale}`;

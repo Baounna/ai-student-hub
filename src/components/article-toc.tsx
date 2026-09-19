@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
 
 type TocItem = {
   id: string;
@@ -14,17 +14,33 @@ type ArticleTocProps = {
 };
 
 export function ArticleToc({ title, items, className = "" }: ArticleTocProps) {
-  const [activeId, setActiveId] = useState(items[0]?.id || "");
+  // The heading the reader scrolled to, set by the observer. Empty until one
+  // is seen, so the hash (or the first item) decides what is highlighted first.
+  const [observedId, setObservedId] = useState("");
 
   const itemIds = useMemo(() => items.map((item) => item.id), [items]);
 
+  // The location hash is browser state, not React state. Reading it inside the
+  // effect and calling setState meant an extra render on every article load,
+  // and a flash of the wrong heading highlighted in between. useSyncExternalStore
+  // reads it during render instead, and the server snapshot is empty so the
+  // markup still matches on hydration.
+  const subscribeToHash = useCallback((onChange: () => void) => {
+    window.addEventListener("hashchange", onChange);
+    return () => window.removeEventListener("hashchange", onChange);
+  }, []);
+
+  const hashId = useSyncExternalStore(
+    subscribeToHash,
+    () => window.location.hash.replace("#", ""),
+    () => ""
+  );
+
+  const activeId =
+    observedId || (hashId && itemIds.includes(hashId) ? hashId : items[0]?.id || "");
+
   useEffect(() => {
     if (!itemIds.length) return;
-
-    const fromHash = window.location.hash.replace("#", "");
-    if (fromHash && itemIds.includes(fromHash)) {
-      setActiveId(fromHash);
-    }
 
     const sections = itemIds
       .map((id) => document.getElementById(id))
@@ -39,7 +55,7 @@ export function ArticleToc({ title, items, className = "" }: ArticleTocProps) {
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
         if (visible[0]?.target?.id) {
-          setActiveId(visible[0].target.id);
+          setObservedId(visible[0].target.id);
         }
       },
       {
@@ -50,13 +66,10 @@ export function ArticleToc({ title, items, className = "" }: ArticleTocProps) {
 
     sections.forEach((section) => observer.observe(section));
 
-    const onHashChange = () => {
-      const hashId = window.location.hash.replace("#", "");
-      if (hashId && itemIds.includes(hashId)) {
-        setActiveId(hashId);
-      }
-    };
-
+    // Clicking a link in this list jumps to the heading, which the observer
+    // then reports. Clearing the observed id lets the new hash take over
+    // immediately rather than waiting for the scroll to settle.
+    const onHashChange = () => setObservedId("");
     window.addEventListener("hashchange", onHashChange);
 
     return () => {
