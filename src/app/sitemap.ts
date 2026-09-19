@@ -54,8 +54,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // The auto briefs are deliberately absent. They carry robots noindex, and
   // listing a page in the sitemap is a request to index it — asking for the
   // opposite of what the page itself says wastes crawl budget on 480 URLs and
-  // sends a contradictory signal. The pages are still reachable and useful:
-  // /news links to every one of them.
+  // sends a contradictory signal.
+  //
+  // Worth knowing before changing this back: almost nothing links to those
+  // detail pages. /news renders the live feed when it has one and links each
+  // item straight to its original source; the "Read auto brief" link only
+  // appears in the fallback branch, when the live fetch comes back empty. So
+  // the sitemap was effectively their only route in, for crawlers and readers
+  // alike. Whether 480 near-orphaned pages should exist at all is a separate
+  // question from whether they belong in the index.
 
   const localizedComparisonPages = locales.flatMap((locale) =>
     comparisons.map((comparison) => ({
