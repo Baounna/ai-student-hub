@@ -549,6 +549,89 @@ export const comparisons: ComparisonPage[] = [
 
 const basePosts: BlogPost[] = [
   {
+    slug: "how-to-read-an-ai-paper",
+    title: "How to Read an AI Paper",
+    excerpt: "Almost nobody reads a paper the way it is printed. A reading order for empirical ML work, and what to be suspicious of in the tables.",
+    category: "AI Fundamentals",
+    intentKeyword: "how to read an ai research paper",
+    track: "ai",
+    tags: ["research", "learning", "ai"],
+    cluster: "AI Fundamentals",
+    publishedAt: "2026-09-19",
+    readTime: "",
+    keywords: ["how to read an ai paper", "three pass method", "arxiv not peer reviewed", "reading machine learning papers", "research paper for students"],
+    popularScore: 59,
+    relatedSlugs: [
+      "ai-fundamentals-every-cs-student-should-know",
+      "transformers-rag-and-agents-for-students",
+      "your-model-is-not-that-good"
+    ],
+    affiliateCallout: {
+      headline: {
+        en: "Three sentences, twenty minutes",
+        fr: "Trois phrases, vingt minutes"
+      },
+      description: {
+        en: "Pick the paper behind a tool you already use. Write what it claims, what it was compared against, and what you still do not understand.",
+        fr: "Prenez l'article derrière un outil que vous utilisez. Écrivez ce qu'il affirme, à quoi il a été comparé, et ce que vous ne comprenez pas encore."
+      },
+      links: []
+    },
+    references: [
+      {
+        source: "arXiv",
+        label: { en: "What arXiv is — a preprint server, not peer review", fr: "Ce qu'est arXiv — un serveur de préprints, pas une relecture par les pairs" },
+        href: "https://info.arxiv.org/about/index.html"
+      },
+      {
+        source: "NeurIPS",
+        label: { en: "Paper Checklist — what authors are asked to disclose", fr: "Checklist des articles — ce que les auteurs doivent déclarer" },
+        href: "https://neurips.cc/public/guides/PaperChecklist"
+      },
+      {
+        source: "arXiv",
+        label: { en: "Attention Is All You Need — a good paper to practise on", fr: "Attention Is All You Need — un bon article pour s'exercer" },
+        href: "https://arxiv.org/abs/1706.03762"
+      }
+    ],
+    locales: {
+      en: {
+        title: "How to Read an AI Paper",
+        excerpt: "Almost nobody reads a paper the way it is printed. A reading order for empirical ML work, and what to be suspicious of in the tables.",
+        content: [
+          "You open an arXiv PDF because someone said it mattered, read the abstract twice, get four pages into notation you do not recognise, and quietly close the tab. The conclusion most students draw is that they are not ready yet. The more useful conclusion is that you were reading it wrong, because almost nobody reads a paper the way it is printed.",
+          "A paper is not written to teach you. It is written to defend a claim to reviewers who already work in the area, under a page limit, in a format that rewards precision over explanation. The notation is dense because the reviewers already know it. The related-work section exists partly to show the authors did their homework. Reading it front to back as a newcomer means paying the full cost of a document optimised for a different reader.",
+          "The standard alternative is the three-pass method, described by S. Keshav in 2007 and still the best advice available. The first pass is five minutes: title, abstract, section headings, conclusion — enough to decide whether to continue. The second is an hour: figures, tables, and the shape of the argument, ignoring proofs and derivations. The third, only for papers you need deeply, is the one where you attempt to reconstruct the work. Most papers deserve pass one. A few deserve pass two. You will do pass three perhaps twice a year, and that is the correct ratio.",
+          "For machine learning specifically, there is a reading order that gets you to the point faster than the printed one. Read the abstract. Then go straight to the figures and tables, because in an empirical paper that is where the actual claim lives. Then the conclusion, which usually states the contribution more plainly than the introduction did. Only then, if you still care, the method.",
+          "Reading the tables first also changes what you notice, and this is the part worth practising. Look at what the new method is being compared against, and whether those baselines were given the same budget of tuning. Look for error bars or multiple seeds; a table of single runs with three-decimal precision is reporting noise as if it were signal. Look at which benchmark the headline number comes from and how many others appear in the appendix. A method that wins everywhere is rare; a method that wins on the one benchmark in the abstract is common.",
+          "It helps to know what arXiv is and is not. It is a preprint server: papers are posted there without peer review, which is exactly why it is fast and useful, and exactly why a link to it is not a certificate. Many arXiv papers are later published at a venue; many are never reviewed by anyone. That is not a reason to distrust them, but it is a reason to read the evidence rather than the logo.",
+          "The strongest thing you can do is read with a question. \"I want to understand transformers\" is not a question and it will not survive contact with the notation. \"Why does this need positional encoding at all?\" is a question — it tells you which section to read, when you are done, and whether the paper answered it. Attention Is All You Need is a fine paper to practise on precisely because that question has a clean answer inside it.",
+          "Expect to read the same paper more than once, months apart. Understanding arrives in layers, and a paper that was opaque in October is often straightforward in February because of unrelated things you learned in between. That is not a sign the first attempt was wasted. It is how the first attempt works.",
+          "For a student project, one well-read paper is worth more than a dozen skimmed ones, and it shows. Being able to say what a method does, what it was compared against, and where you think it would break is a different conversation from citing a title. It is also the shortest route to a project idea, because the limitations section of a paper you understood is a list of things nobody has done yet.",
+          "Pick one paper behind a tool you already use. Read the abstract, the figures and the conclusion, and write three sentences: what it claims, what it was compared against, and what you still do not understand. Twenty minutes. The third sentence is the useful one."
+        ]
+      },
+      fr: {
+        title: "Comment lire un article de recherche en IA",
+        excerpt: "Presque personne ne lit un article dans l'ordre imprimé. Un ordre de lecture pour les travaux empiriques en ML, et ce dont il faut se méfier dans les tableaux.",
+        content: [
+          "Vous ouvrez un PDF arXiv parce qu'on vous a dit qu'il comptait, vous lisez le résumé deux fois, vous avancez de quatre pages dans une notation inconnue, puis vous fermez discrètement l'onglet. La conclusion que tirent la plupart des étudiants : ils ne sont pas encore prêts. La conclusion plus utile : vous le lisiez mal, car presque personne ne lit un article dans l'ordre où il est imprimé.",
+          "Un article n'est pas écrit pour vous enseigner. Il est écrit pour défendre une affirmation devant des relecteurs qui travaillent déjà dans le domaine, sous contrainte de pages, dans un format qui récompense la précision plutôt que l'explication. La notation est dense parce que les relecteurs la connaissent déjà. La section « travaux connexes » existe en partie pour montrer que les auteurs ont fait leurs devoirs. Le lire de bout en bout en débutant revient à payer le plein tarif d'un document optimisé pour un autre lecteur.",
+          "L'alternative classique est la méthode en trois passes, décrite par S. Keshav en 2007 et toujours le meilleur conseil disponible. La première passe dure cinq minutes : titre, résumé, titres de sections, conclusion — de quoi décider si l'on continue. La deuxième dure une heure : figures, tableaux et forme de l'argument, en ignorant preuves et dérivations. La troisième, réservée aux articles dont vous avez besoin en profondeur, est celle où vous tentez de reconstruire le travail. La plupart des articles méritent la première passe. Quelques-uns méritent la deuxième. Vous ferez la troisième peut-être deux fois par an, et c'est le bon ratio.",
+          "Pour l'apprentissage automatique en particulier, un ordre de lecture vous mène au cœur du sujet plus vite que l'ordre imprimé. Lisez le résumé. Allez ensuite directement aux figures et aux tableaux : dans un article empirique, c'est là que vit l'affirmation réelle. Puis la conclusion, qui énonce en général la contribution plus simplement que l'introduction. Et seulement ensuite, si vous y tenez encore, la méthode.",
+          "Lire les tableaux d'abord change aussi ce que vous remarquez, et c'est la partie à travailler. Regardez à quoi la nouvelle méthode est comparée, et si ces références ont bénéficié du même budget de réglage. Cherchez des barres d'erreur ou plusieurs graines : un tableau d'exécutions uniques affiché à trois décimales présente du bruit comme s'il s'agissait de signal. Regardez de quel jeu de test vient le chiffre mis en avant, et combien d'autres figurent en annexe. Une méthode qui gagne partout est rare ; une méthode qui gagne sur l'unique test cité dans le résumé est courante.",
+          "Il est utile de savoir ce qu'arXiv est et n'est pas. C'est un serveur de préprints : les articles y sont déposés sans relecture par les pairs, ce qui explique sa rapidité et son utilité, et explique aussi qu'un lien vers arXiv ne soit pas un certificat. Beaucoup de ces articles sont ensuite publiés dans une conférence ; beaucoup ne sont jamais relus par personne. Ce n'est pas une raison de s'en méfier, mais c'est une raison de lire les preuves plutôt que le logo.",
+          "Le plus efficace reste de lire avec une question. « Je veux comprendre les transformers » n'est pas une question et ne survivra pas au contact de la notation. « Pourquoi faut-il un encodage positionnel ? » en est une : elle vous dit quelle section lire, quand vous avez fini, et si l'article y a répondu. Attention Is All You Need est un bon article pour s'exercer, justement parce que cette question y trouve une réponse nette.",
+          "Attendez-vous à relire le même article plusieurs fois, à des mois d'intervalle. La compréhension arrive par couches, et un article opaque en octobre devient souvent limpide en février grâce à des choses sans rapport apprises entre-temps. Ce n'est pas le signe que la première tentative a été perdue. C'est ainsi que fonctionne la première tentative.",
+          "Pour un projet étudiant, un article bien lu vaut mieux qu'une douzaine survolés, et cela se voit. Pouvoir dire ce que fait une méthode, à quoi elle a été comparée et où vous pensez qu'elle casserait, c'est une tout autre conversation que citer un titre. C'est aussi le chemin le plus court vers une idée de projet, car la section « limites » d'un article que vous avez compris est une liste de choses que personne n'a encore faites.",
+          "Choisissez un article derrière un outil que vous utilisez déjà. Lisez le résumé, les figures et la conclusion, puis écrivez trois phrases : ce qu'il affirme, à quoi il a été comparé, et ce que vous ne comprenez toujours pas. Vingt minutes. C'est la troisième phrase qui est utile."
+        ]
+      }
+    },
+    content: []
+  },
+
+  {
     slug: "it-works-in-my-notebook",
     title: "It Works in My Notebook",
     excerpt: "Why your teammate gets a different number, why a seed does not fix it, and the difference between a result and an artifact of your session.",
