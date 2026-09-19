@@ -549,6 +549,91 @@ export const comparisons: ComparisonPage[] = [
 
 const basePosts: BlogPost[] = [
   {
+    slug: "why-your-side-project-breaks-quietly",
+    title: "Why Your Side Project Breaks Quietly",
+    excerpt: "Eleven workflows failed every night for eighty days and nobody noticed. The cause was a lockfile; the reason it lasted was alert fatigue.",
+    category: "Cloud/DevOps",
+    intentKeyword: "why ci fails silently",
+    track: "cs",
+    tags: ["ci", "automation", "monitoring"],
+    cluster: "Cloud/DevOps",
+    publishedAt: "2026-09-19",
+    readTime: "",
+    keywords: ["npm ci lockfile error", "ci fails silently", "alert fatigue", "scheduled workflow disabled", "side project monitoring"],
+    popularScore: 58,
+    relatedSlugs: ["cicd-for-ml-and-backend-projects", "observability-for-student-engineers"],
+    affiliateCallout: {
+      headline: {
+        en: "Check one scheduled job you forgot about",
+        fr: "Vérifiez une tâche planifiée que vous avez oubliée"
+      },
+      description: {
+        en: "Open the Actions tab of an old project. If the last green run is months old, you already have the problem.",
+        fr: "Ouvrez l'onglet Actions d'un ancien projet. Si le dernier run vert date de plusieurs mois, vous avez déjà le problème."
+      },
+      links: []
+    },
+    references: [
+      {
+        source: "npm",
+        label: { en: "npm ci — installs from the lockfile, and fails on mismatch", fr: "npm ci — installe depuis le lockfile et échoue en cas d'écart" },
+        href: "https://docs.npmjs.com/cli/v10/commands/npm-ci"
+      },
+      {
+        source: "GitHub Docs",
+        label: { en: "Disabling and enabling workflows", fr: "Désactiver et réactiver des workflows" },
+        href: "https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows"
+      },
+      {
+        source: "GitHub Docs",
+        label: { en: "Events that trigger workflows (schedule)", fr: "Événements qui déclenchent les workflows (schedule)" },
+        href: "https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows"
+      }
+    ],
+    locales: {
+      en: {
+        title: "Why Your Side Project Breaks Quietly",
+        excerpt: "Eleven workflows failed every night for eighty days and nobody noticed. The cause was a lockfile; the reason it lasted was alert fatigue.",
+        content: [
+          "This site's scheduled jobs failed every night for eighty days. Eleven workflows, sixteen seconds each, a red cross every time. Nothing alerted anyone, because everything alerted everyone: the notification count had passed six hundred, and a number that large is not information, it is wallpaper.",
+          "The cause was almost insultingly small. `package.json` and `package-lock.json` had drifted apart. That single fact is enough to take down every job in a repository, and it is worth understanding exactly why, because the behaviour is deliberate.",
+          "`npm install` and `npm ci` do not do the same thing. `npm install` treats the lockfile as a starting point: if it disagrees with `package.json`, it resolves the difference and rewrites the lock. `npm ci` treats the lockfile as a contract. If the two disagree, it does not reconcile them — it exits with an error and installs nothing. That is the entire point of the command: continuous integration should build exactly what was committed, not something adjacent to it.",
+          "So the failure was correct. `npm ci` did its job. A dependency had been added locally with the lockfile out of sync, the mismatch was committed, and from that commit on every workflow refused to install and died before running a single test. The site kept serving whatever had been built last, which is why nothing looked wrong from outside.",
+          "The interesting failure is not the lockfile. It is the eighty days.",
+          "Scheduled jobs are the ones that rot, because nobody is watching when they run. A push you make yourself has your attention for the next ten minutes. A cron job at 06:15 has nobody's. And GitHub will disable a scheduled workflow entirely after sixty days without repository activity — a quiet safeguard that also means a dormant project can stop running without any moment where something breaks.",
+          "But the real mechanism was alert fatigue. Every run failed, so failure carried no information. When a dashboard is always red, red means \"normal\". The same thing happens with a warning that can never be resolved, a test suite with three known-failing tests, a linter with forty accepted warnings. Each one teaches you, correctly, that this signal can be ignored — and the lesson generalises to the signal that mattered.",
+          "The fix is not more alerts. It is fewer, and each one able to reach zero.",
+          "Three things actually help. First, a single check that means \"something is wrong\", not \"something ran\". One daily job that either passes or names what failed, rather than eleven independent red crosses you learn to scroll past.",
+          "Second, measure the thing you care about, not a proxy for it. A build passing tells you the code compiled on a runner. It does not tell you the site is up, that the content updated, or that the deploy shipped. Those are different questions, and the honest version of the check asks them directly — fetch the live page, read the timestamp the deployment is actually serving.",
+          "Third, treat an unclearable warning as a bug in the warning. If a check cannot go green, either fix the thing or stop reporting it. A permanent warning is worse than no warning, because it trains the habit that ends with eighty days.",
+          "For a student project specifically, this matters more than it sounds. Your side project is the thing a recruiter will open, and it will be months old by then. Nobody expects you to have monitored it daily. What distinguishes a portfolio project from an abandoned repository is whether it notices its own failures — and that is one scheduled job and a handful of honest checks, not an operations team.",
+          "The test is not whether you get alerts. It is whether you would notice if the alert stopped arriving."
+        ]
+      },
+      fr: {
+        title: "Pourquoi votre projet personnel casse en silence",
+        excerpt: "Onze workflows ont échoué chaque nuit pendant quatre-vingts jours sans que personne le remarque. La cause tenait à un lockfile ; la durée, à la fatigue d'alerte.",
+        content: [
+          "Les tâches planifiées de ce site ont échoué chaque nuit pendant quatre-vingts jours. Onze workflows, seize secondes chacun, une croix rouge à chaque fois. Personne n'a été alerté, parce que tout alertait tout le monde : le compteur de notifications avait dépassé six cents, et un nombre pareil n'est plus une information, c'est du papier peint.",
+          "La cause était presque vexante de petitesse. `package.json` et `package-lock.json` avaient divergé. Ce seul fait suffit à faire tomber tous les jobs d'un dépôt, et il vaut la peine de comprendre pourquoi, car ce comportement est délibéré.",
+          "`npm install` et `npm ci` ne font pas la même chose. `npm install` considère le lockfile comme un point de départ : s'il diverge de `package.json`, il résout la différence et réécrit le lock. `npm ci` considère le lockfile comme un contrat. Si les deux divergent, il ne les réconcilie pas — il sort en erreur et n'installe rien. C'est précisément l'objet de la commande : l'intégration continue doit construire exactement ce qui a été commité, pas quelque chose d'approchant.",
+          "L'échec était donc correct. `npm ci` a fait son travail. Une dépendance avait été ajoutée localement avec un lockfile désynchronisé, l'écart a été commité, et à partir de ce commit chaque workflow a refusé d'installer et est mort avant d'exécuter le moindre test. Le site continuait à servir la dernière version construite, ce qui explique que rien ne paraissait cassé de l'extérieur.",
+          "L'échec intéressant n'est pas le lockfile. Ce sont les quatre-vingts jours.",
+          "Les tâches planifiées sont celles qui pourrissent, parce que personne ne regarde au moment où elles tournent. Un push que vous faites vous-même a votre attention pendant les dix minutes qui suivent. Un cron de 06h15 n'a celle de personne. Et GitHub désactive complètement un workflow planifié après soixante jours sans activité sur le dépôt — un garde-fou discret qui signifie aussi qu'un projet en sommeil peut cesser de tourner sans qu'il y ait un instant où quelque chose casse.",
+          "Mais le vrai mécanisme, c'est la fatigue d'alerte. Tous les runs échouaient, donc l'échec ne portait plus d'information. Quand un tableau de bord est toujours rouge, rouge veut dire « normal ». Il se passe la même chose avec un avertissement impossible à résoudre, une suite de tests avec trois échecs connus, un linter avec quarante avertissements acceptés. Chacun vous apprend, à juste titre, que ce signal peut être ignoré — et la leçon se généralise au signal qui comptait.",
+          "La solution n'est pas plus d'alertes. C'est moins, et chacune capable de revenir à zéro.",
+          "Trois choses aident réellement. D'abord, une seule vérification qui signifie « quelque chose ne va pas », et non « quelque chose a tourné ». Un job quotidien qui passe ou nomme ce qui a échoué, plutôt que onze croix rouges indépendantes que vous apprenez à faire défiler.",
+          "Ensuite, mesurez ce qui vous importe, pas un intermédiaire. Un build qui passe vous dit que le code a compilé sur un runner. Il ne vous dit pas que le site est en ligne, que le contenu s'est mis à jour, ni que le déploiement est parti. Ce sont des questions différentes, et la version honnête de la vérification les pose directement : aller chercher la page en production, lire l'horodatage que le déploiement sert réellement.",
+          "Enfin, traitez un avertissement impossible à effacer comme un bug de l'avertissement. Si une vérification ne peut pas passer au vert, soit vous corrigez la cause, soit vous cessez de la signaler. Un avertissement permanent est pire qu'aucun avertissement, parce qu'il installe l'habitude qui finit en quatre-vingts jours.",
+          "Pour un projet étudiant, cela compte plus qu'il n'y paraît. Votre projet personnel est ce qu'un recruteur va ouvrir, et il aura des mois au moment où il le fera. Personne n'attend de vous une surveillance quotidienne. Ce qui distingue un projet de portfolio d'un dépôt abandonné, c'est sa capacité à remarquer ses propres pannes — et cela tient en une tâche planifiée et quelques vérifications honnêtes, pas en une équipe d'exploitation.",
+          "Le test n'est pas de savoir si vous recevez des alertes. C'est de savoir si vous remarqueriez que l'alerte a cessé d'arriver."
+        ]
+      }
+    },
+    content: []
+  },
+
+  {
     slug: "how-to-read-a-cve-without-panicking",
     title: "How to Read a CVE Without Panicking",
     excerpt: "A triage order for security advisories: what the severity score measures, what it leaves out, and the two free signals that tell you whether to act today.",
