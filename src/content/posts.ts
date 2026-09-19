@@ -549,6 +549,91 @@ export const comparisons: ComparisonPage[] = [
 
 const basePosts: BlogPost[] = [
   {
+    slug: "your-model-is-not-that-good",
+    title: "Your Model Is Not That Good",
+    excerpt: "A validation score of 0.99 is a warning, not a win. The five ways data leaks into a student project, and why none of them raise an error.",
+    category: "ML Engineering",
+    intentKeyword: "data leakage machine learning",
+    track: "ai",
+    tags: ["ml", "evaluation", "data"],
+    cluster: "ML Engineering",
+    publishedAt: "2026-09-19",
+    readTime: "",
+    keywords: ["data leakage machine learning", "why is my accuracy so high", "train test split leakage", "scikit-learn pipeline leakage", "group split"],
+    popularScore: 64,
+    relatedSlugs: [
+      "ml-engineering-testing-playbook",
+      "llm-guardrails-and-evaluation-basics",
+      "ai-portfolio-project-recruiters-notice"
+    ],
+    affiliateCallout: {
+      headline: {
+        en: "Re-check your best score",
+        fr: "Revérifiez votre meilleur score"
+      },
+      description: {
+        en: "Take the project you are proudest of and run the five checks. Fifteen minutes, and you will know whether the number was real.",
+        fr: "Reprenez le projet dont vous êtes le plus fier et passez les cinq contrôles. Un quart d'heure, et vous saurez si le chiffre était réel."
+      },
+      links: []
+    },
+    references: [
+      {
+        source: "scikit-learn",
+        label: { en: "Common pitfalls and recommended practices (data leakage)", fr: "Pièges courants et bonnes pratiques (fuite de données)" },
+        href: "https://scikit-learn.org/stable/common_pitfalls.html"
+      },
+      {
+        source: "scikit-learn",
+        label: { en: "Pipeline — fit transformations inside each fold", fr: "Pipeline — ajuster les transformations dans chaque pli" },
+        href: "https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html"
+      },
+      {
+        source: "scikit-learn",
+        label: { en: "Cross-validation: grouped and time-series splitters", fr: "Validation croisée : séparations groupées et temporelles" },
+        href: "https://scikit-learn.org/stable/modules/cross_validation.html"
+      }
+    ],
+    locales: {
+      en: {
+        title: "Your Model Is Not That Good",
+        excerpt: "A validation score of 0.99 is a warning, not a win. The five ways data leaks into a student project, and why none of them raise an error.",
+        content: [
+          "The first time a model returns 0.99 on your validation set, it feels like the project worked. It is usually the opposite. High accuracy that arrives early and without a fight is the most reliable signal in applied machine learning that something has leaked, and the reason it takes people so long to find is that nothing anywhere throws an error. The code runs. The metric goes up. Every part of the pipeline reports success.",
+          "Data leakage is information reaching the model during training that would not be available at the moment it has to make a real prediction. That is the whole definition, and it is worth holding onto, because the forms it takes look nothing alike and that sentence is what they have in common.",
+          "The most common version in a student project is preprocessing before splitting. You load the dataset, scale the features, impute the missing values, then call train_test_split. It reads naturally — clean the data, then divide it. But the scaler computed its mean and standard deviation over every row, including the ones about to become your test set, so the test rows were normalised using knowledge of themselves. The leak is small and the score inflation is real.",
+          "The fix is mechanical: split first, then fit every transformation on the training half only. In scikit-learn this is exactly what Pipeline is for — it binds the transformations to the estimator so that cross-validation refits them inside each fold instead of once over everything. It is not a style preference. It is the difference between a number that means something and one that does not.",
+          "The second form is a random split on data that has an order. Financial series, sensor readings, anything with a timestamp: shuffling means your model trains on Thursday to predict Wednesday. It will do well, because predicting the past from the future is easy and completely useless. Any dataset with time in it needs a split that respects time.",
+          "The third is duplicates, and it is the one that quietly ruins scraped datasets. If the same row — or a near-identical one — exists on both sides of the split, your test set is partly a copy of your training set and your score is partly a measure of memorisation. Student projects built from scraped pages, augmented images or merged exports are full of these, and a plain train_test_split will not notice.",
+          "The fourth is grouping, and it is the subtlest. Ten X-rays from the same patient, forty reviews from the same user, a hundred frames from the same video: split those at random and the model learns the patient rather than the condition. It scores well on unseen rows and collapses on unseen people, which is what production actually asks of it. Grouped data needs a grouped split.",
+          "The fifth is the feature that quietly contains the answer. A column derived from the target, a field only populated after the outcome is known, an identifier that correlates with the label because of how the export was ordered. This one is not a coding mistake; it is a misunderstanding of the data, which is why it survives code review and shows up as an oddly perfect model.",
+          "What ties all five together is that none of them announce themselves. That is the actual lesson. A crash gets fixed in ten minutes because the computer tells you. A leak can survive an entire project, and it fails at exactly the wrong moment — on real data, in front of someone, after you have already claimed the number.",
+          "So build one habit: be suspicious of good news. When a score jumps, do not celebrate it and move on. Ask what the model could be seeing that it will not have later. Check whether anything was fitted before the split, whether the data has an order you ignored, whether rows repeat, whether rows share an owner, and whether any feature is downstream of the thing you are predicting. That check takes fifteen minutes and it is the difference between a portfolio project that survives a question and one that does not.",
+          "And when you write the project up, write down the number you did not trust and why. Anyone can report 0.99. Explaining why your honest figure is 0.82, and what you found when you went looking, is a much stronger signal about how you work — which is the thing an interviewer is actually trying to measure."
+        ]
+      },
+      fr: {
+        title: "Votre modèle n'est pas si bon",
+        excerpt: "Un score de validation de 0,99 est un avertissement, pas une victoire. Les cinq façons dont les données fuient dans un projet étudiant, et pourquoi aucune ne lève d'erreur.",
+        content: [
+          "La première fois qu'un modèle renvoie 0,99 sur votre jeu de validation, on a le sentiment que le projet a réussi. C'est en général l'inverse. Une précision élevée qui arrive tôt et sans effort est le signal le plus fiable, en apprentissage automatique appliqué, que quelque chose a fui — et si c'est si long à repérer, c'est que rien ne déclenche la moindre erreur. Le code s'exécute. La métrique monte. Chaque étape du pipeline annonce un succès.",
+          "Une fuite de données, c'est une information qui parvient au modèle pendant l'entraînement alors qu'elle ne sera pas disponible au moment de la vraie prédiction. C'est toute la définition, et il vaut la peine de la retenir, car les formes qu'elle prend n'ont rien en commun sinon cette phrase.",
+          "La version la plus fréquente dans un projet étudiant : le prétraitement avant la séparation. Vous chargez le jeu de données, vous normalisez les variables, vous imputez les valeurs manquantes, puis vous appelez train_test_split. Cela se lit naturellement — nettoyer, puis diviser. Mais le scaler a calculé sa moyenne et son écart-type sur toutes les lignes, y compris celles qui vont devenir votre jeu de test : ces lignes ont donc été normalisées à partir d'une connaissance d'elles-mêmes. La fuite est petite et l'inflation du score est bien réelle.",
+          "Le correctif est mécanique : séparez d'abord, puis ajustez chaque transformation sur la seule moitié d'entraînement. Dans scikit-learn, c'est précisément l'objet de Pipeline, qui lie les transformations à l'estimateur pour que la validation croisée les réajuste dans chaque pli au lieu d'une seule fois sur l'ensemble. Ce n'est pas une préférence de style. C'est la différence entre un chiffre qui veut dire quelque chose et un chiffre qui n'en veut pas.",
+          "Deuxième forme : une séparation aléatoire sur des données qui ont un ordre. Séries financières, relevés de capteurs, tout ce qui porte un horodatage : mélanger revient à entraîner le modèle sur jeudi pour prédire mercredi. Il obtiendra de bons résultats, car prédire le passé à partir du futur est facile et parfaitement inutile. Tout jeu de données contenant du temps exige une séparation qui respecte le temps.",
+          "Troisième forme : les doublons, celle qui ruine discrètement les jeux de données collectés. Si la même ligne — ou une ligne quasi identique — existe des deux côtés de la séparation, votre jeu de test est en partie une copie de votre jeu d'entraînement et votre score mesure en partie de la mémorisation. Les projets étudiants bâtis sur des pages collectées, des images augmentées ou des exports fusionnés en regorgent, et un simple train_test_split n'y verra rien.",
+          "Quatrième forme : le regroupement, la plus subtile. Dix radiographies du même patient, quarante avis du même utilisateur, cent images de la même vidéo : séparez au hasard et le modèle apprend le patient plutôt que la pathologie. Il obtient de bons résultats sur des lignes inédites et s'effondre sur des personnes inédites, ce qui est précisément ce que la production lui demande. Des données groupées exigent une séparation groupée.",
+          "Cinquième forme : la variable qui contient discrètement la réponse. Une colonne dérivée de la cible, un champ renseigné seulement une fois le résultat connu, un identifiant corrélé à l'étiquette à cause de l'ordre de l'export. Celle-là n'est pas une erreur de code mais une incompréhension des données, ce qui explique qu'elle survive à une relecture et se manifeste sous la forme d'un modèle étrangement parfait.",
+          "Ce qui relie ces cinq formes, c'est qu'aucune ne s'annonce. Voilà la vraie leçon. Un plantage se corrige en dix minutes parce que la machine vous prévient. Une fuite peut traverser un projet entier et se manifester au pire moment : sur des données réelles, devant quelqu'un, après que vous avez annoncé le chiffre.",
+          "Prenez donc une habitude : méfiez-vous des bonnes nouvelles. Quand un score bondit, ne le célébrez pas pour passer à la suite. Demandez-vous ce que le modèle pourrait voir et qu'il n'aura plus ensuite. Vérifiez si quelque chose a été ajusté avant la séparation, si les données ont un ordre que vous avez ignoré, si des lignes se répètent, si des lignes partagent un propriétaire, et si une variable se situe en aval de ce que vous cherchez à prédire. Ce contrôle prend un quart d'heure et fait la différence entre un projet de portfolio qui résiste à une question et un projet qui n'y résiste pas.",
+          "Et lorsque vous rédigez le projet, notez le chiffre auquel vous n'avez pas fait confiance, et pourquoi. N'importe qui peut annoncer 0,99. Expliquer pourquoi votre chiffre honnête est 0,82, et ce que vous avez trouvé en cherchant, en dit bien plus long sur votre façon de travailler — c'est-à-dire exactement ce qu'un recruteur essaie de mesurer."
+        ]
+      }
+    },
+    content: []
+  },
+
+  {
     slug: "prompt-injection-is-not-a-bug-you-can-patch",
     title: "Prompt Injection Is Not a Bug You Can Patch",
     excerpt: "Why a system prompt is not a security control, why the SQL injection analogy breaks down, and what to do instead when the hole cannot be closed.",
