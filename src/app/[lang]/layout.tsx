@@ -74,8 +74,14 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
           text underneath stayed legible through them — a heading and a nav
           label occupying the same pixels, which reads as a broken layout
           rather than a translucent one. backdrop-blur stays for the edge
-          treatment; the background no longer lets the page show through. */}
-      <header className="md:sticky md:top-0 z-30 border-b border-[color:var(--border)] bg-[color:var(--surface-strong)] backdrop-blur-2xl">
+          treatment; the background no longer lets the page show through.
+
+          relative matters: dropping sticky on phones left the header
+          position: static, and a static element ignores z-index, so z-30 did
+          nothing and the settings dropdown inside it lost to the hero h1 in
+          paint order. relative restores the stacking context without pinning
+          anything — the header still scrolls away. */}
+      <header className="relative md:sticky md:top-0 z-30 border-b border-[color:var(--border)] bg-[color:var(--surface-strong)] backdrop-blur-2xl">
         <div className="mx-auto max-w-6xl px-4 py-3 md:px-6">
           <div className="mb-2 hidden items-center justify-end gap-1 text-sm md:flex">
             <Link href={donateHref} className="utility-link">
