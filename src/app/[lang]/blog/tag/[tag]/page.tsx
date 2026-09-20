@@ -30,7 +30,6 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
   const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
-  const dict = getDictionary(params.lang);
   const tagName = displayTag(params.tag);
 
   return {

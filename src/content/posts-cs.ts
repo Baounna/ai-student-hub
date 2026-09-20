@@ -436,12 +436,14 @@ export const csExpansionPosts: BlogPost[] = [
     locales: {
       en: {
         title: "Data Structures and Algorithms for AI Engineers: What Matters in Production",
+        seoTitle: "Data Structures and Algorithms for AI Engineers",
         excerpt:
           "A production-first guide to the CS fundamentals that directly improve model serving speed, retrieval quality, and backend reliability.",
         content: dsaForAiEngineersContent
       },
       fr: {
         title: "Structures de données et algorithmes pour ingenieurs IA",
+        seoTitle: "Structures de données et algorithmes pour l'IA",
         excerpt:
           "Guide pratique des fondamentaux CS qui ameliorent directement la vitesse, la fiabilite, et la qualite des systèmes IA.",
         content: dsaForAiEngineersContentFr
@@ -516,6 +518,7 @@ export const csExpansionPosts: BlogPost[] = [
     locales: {
       en: {
         title: "System Design for Student AI Projects: From Demo to Reliable Product",
+        seoTitle: "System Design for Student AI Projects",
         excerpt:
           "A practical architecture playbook to design student projects that survive real users, not just classroom demos.",
         content: systemDesignForStudentsContent
@@ -596,6 +599,7 @@ export const csExpansionPosts: BlogPost[] = [
     locales: {
       en: {
         title: "Backend APIs for ML Apps: Contracts, Reliability, and Security",
+        seoTitle: "Backend APIs for ML Apps: Reliability, Security",
         excerpt:
           "How to build production-grade APIs for ML features with clear schemas, robust error handling, and deployable quality gates.",
         content: backendApisForMlAppsContent
@@ -676,6 +680,7 @@ export const csExpansionPosts: BlogPost[] = [
     locales: {
       en: {
         title: "Linux and DevOps Workflow for Students: Ship Faster, Break Less",
+        seoTitle: "Linux and DevOps Workflow for Students",
         excerpt:
           "A practical Linux + DevOps operating system for engineering students who want reliable releases and cleaner project delivery.",
         content: linuxDevopsWorkflowContent
@@ -918,6 +923,7 @@ export const csExpansionPosts: BlogPost[] = [
     locales: {
       en: {
         title: "Observability for Student Engineers: Logs, Metrics, Traces",
+        seoTitle: "Observability for Students: Logs, Metrics, Traces",
         excerpt: "A practical observability baseline to debug faster and ship more reliable AI + Cybersecurity services.",
         content: observabilityContent
       },
@@ -1038,6 +1044,7 @@ export const csExpansionPosts: BlogPost[] = [
     locales: {
       en: {
         title: "Operating Systems Skills Every AI Builder Uses in Production",
+        seoTitle: "Operating Systems Skills Every AI Builder Uses",
         excerpt: "Practical OS knowledge for debugging, performance tuning, and safer deployments.",
         content: operatingSystemsSkillsContent
       },
@@ -1158,6 +1165,7 @@ export const csExpansionPosts: BlogPost[] = [
     locales: {
       en: {
         title: "LLM Guardrails and Evaluation Basics for Student Products",
+        seoTitle: "LLM Guardrails and Evaluation Basics",
         excerpt: "A practical framework to reduce unsafe behavior and quality drift in LLM applications.",
         content: llmGuardrailsContent
       },

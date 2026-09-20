@@ -50,11 +50,15 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
   }
 
   const fr = params.lang === "fr";
-  const title = fr ? `${comparison.title} | Guide outils` : `${comparison.title} | Tools Guide`;
+  const title = comparison.title;
+  // seoTitle replaces the whole <title>, section suffix included, because the
+  // suffix is 14 characters of the same budget. comparison.title still drives
+  // the H1, the OG card title and the OG image text below.
+  const metadataTitle = comparison.seoTitle || title;
   const description = fr ? `Guide outils etudiant: ${comparison.intro}` : comparison.intro;
 
   return {
-    title,
+    title: metadataTitle,
     description,
     keywords: getSeoKeywords(params.lang, "compare", [
       comparison.intentKeyword,

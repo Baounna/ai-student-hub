@@ -33,6 +33,12 @@ export type NewsBrief = {
     Locale,
     {
       title: string;
+      /**
+       * <title> tag override. `title` is also the H1, the JSON-LD headline,
+       * the breadcrumb label and the OG image text, so shortening it for a
+       * search result would change the visible page.
+       */
+      seoTitle?: string;
       summary: string;
       studentImpact: string;
       takeaways: string[];
@@ -186,6 +192,7 @@ export const newsBriefs: NewsBrief[] = [
       },
       fr: {
         title: "Les workflows agentiques arrivent dans les projets IA étudiants",
+        seoTitle: "Workflows agentiques dans les projets IA étudiants",
         summary:
           "Les étudiants passent des demos mono-prompt vers des workflows multi-etapes avec planification, retrieval et appels d'outils.",
         studentImpact:
@@ -222,6 +229,7 @@ export const newsBriefs: NewsBrief[] = [
     locales: {
       en: {
         title: "Multimodal models are changing AI and CS coursework",
+        seoTitle: "Multimodal models are changing CS coursework",
         summary:
           "Course projects increasingly combine text, image, and audio tasks, pushing students to design richer evaluation pipelines.",
         studentImpact:
@@ -239,6 +247,7 @@ export const newsBriefs: NewsBrief[] = [
       },
       fr: {
         title: "Les modèles multimodaux changent les projets IA et informatique",
+        seoTitle: "Les modèles multimodaux changent les projets IA",
         summary:
           "Les projets de cours melangent de plus en plus texte, image et audio, avec des pipelines d'evaluation plus complets.",
         studentImpact:
@@ -292,6 +301,7 @@ export const newsBriefs: NewsBrief[] = [
       },
       fr: {
         title: "L'evaluation open-source des LLM devient beaucoup plus mature",
+        seoTitle: "L'évaluation open-source des LLM gagne en maturité",
         summary:
           "Les equipes etudiantes disposent de meilleurs outils open-source pour tests de regression, controles de prompts et quality gates.",
         studentImpact:
@@ -450,6 +460,7 @@ export const newsBriefs: NewsBrief[] = [
       },
       fr: {
         title: "Les signaux recrutement CS basculent vers des produits livres",
+        seoTitle: "Le recrutement CS bascule vers les produits livrés",
         summary:
           "Les recruteurs valorisent davantage les demos en ligne, les metriques claires et une communication ecrite solide.",
         studentImpact:
@@ -486,6 +497,7 @@ export const newsBriefs: NewsBrief[] = [
     locales: {
       en: {
         title: "API security checklists are becoming standard in student projects",
+        seoTitle: "API security checklists become a student standard",
         summary:
           "More student teams are adding API security baselines before launch, including auth scope checks, input validation, and rate controls.",
         studentImpact:
@@ -503,6 +515,7 @@ export const newsBriefs: NewsBrief[] = [
       },
       fr: {
         title: "Les checklists sécurité API deviennent standard dans les projets étudiants",
+        seoTitle: "Les checklists sécurité API deviennent la norme",
         summary:
           "De plus en plus d'equipes etudiantes appliquent une base sécurité API avant lancement: scopes auth, validation d'entrees, et controle de debit.",
         studentImpact:
@@ -539,6 +552,7 @@ export const newsBriefs: NewsBrief[] = [
     locales: {
       en: {
         title: "Kubernetes and lightweight DevOps patterns are entering student workflows",
+        seoTitle: "Kubernetes and lightweight DevOps for students",
         summary:
           "Student teams are combining simple CI/CD pipelines with container-based deployments to reduce release friction across AI and backend projects.",
         studentImpact:
@@ -556,6 +570,7 @@ export const newsBriefs: NewsBrief[] = [
       },
       fr: {
         title: "Kubernetes et patterns DevOps legers entrent dans les workflows étudiants",
+        seoTitle: "Kubernetes et DevOps léger pour les étudiants",
         summary:
           "Les equipes etudiantes combinent pipelines CI/CD simples et déploiements conteneurises pour reduire la friction release.",
         studentImpact:
@@ -592,6 +607,7 @@ export const newsBriefs: NewsBrief[] = [
     locales: {
       en: {
         title: "Backend observability is becoming a core skill for AI + Cybersecurity students",
+        seoTitle: "Backend observability becomes a core student skill",
         summary:
           "Logs, metrics, and traces are now expected in serious student projects, especially when demos involve APIs, queues, and model inference.",
         studentImpact:
@@ -609,6 +625,7 @@ export const newsBriefs: NewsBrief[] = [
       },
       fr: {
         title: "L'observabilite backend devient une competence centrale pour étudiants IA/CS",
+        seoTitle: "L'observabilité backend devient une compétence clé",
         summary:
           "Logs, metriques, et traces sont maintenant attendus dans les projets étudiants serieux avec APIs, files, et inference modèle.",
         studentImpact:
@@ -633,6 +650,7 @@ function localizeNewsBrief(brief: NewsBrief, locale: Locale): LocalizedNewsBrief
   return {
     ...brief,
     title: localized.title,
+    seoTitle: localized.seoTitle,
     summary: localized.summary,
     studentImpact: localized.studentImpact,
     takeaways: localized.takeaways,

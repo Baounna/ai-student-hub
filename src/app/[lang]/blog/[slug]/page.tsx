@@ -74,7 +74,10 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
   if (!post) return {};
 
   return {
-    title: post.title,
+    // seoTitle only overrides the <title> tag. Everything else on this page
+    // -- H1, JSON-LD headline, breadcrumb, OG image, share text -- keeps
+    // post.title, so a shorter search result never changes the page.
+    title: post.seoTitle || post.title,
     description: post.excerpt,
     keywords: getSeoKeywords(params.lang, "blogPost", post.keywords),
     openGraph: {

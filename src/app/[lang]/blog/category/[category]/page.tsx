@@ -34,7 +34,6 @@ export async function generateMetadata(
   const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
-  const dict = getDictionary(params.lang);
   const categoryName = displayCategory(params.category);
 
   return {
