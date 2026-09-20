@@ -81,7 +81,7 @@ export function MobileQuickNav({ locale }: { locale: Locale }) {
   return (
     <nav
       aria-label="Mobile quick navigation"
-      className="fixed inset-x-3 bottom-3 z-40 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface-strong)]/95 p-1.5 shadow-[0_24px_40px_-24px_rgba(7,19,42,0.8)] backdrop-blur-xl transition-transform duration-300 md:hidden"
+      className="fixed inset-x-3 bottom-3 z-40 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface-strong)] p-1.5 shadow-[0_24px_40px_-24px_rgba(7,19,42,0.8)] backdrop-blur-xl transition-transform duration-300 md:hidden"
       style={{ paddingBottom: "calc(0.375rem + env(safe-area-inset-bottom) * 0.4)" }}
     >
       <ul className="grid grid-cols-4 gap-1">

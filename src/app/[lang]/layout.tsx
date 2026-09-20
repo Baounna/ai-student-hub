@@ -70,7 +70,12 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
           page between the header and the floating bottom nav. Mobile already
           has persistent navigation down there, so the top block has no reason
           to follow you; it scrolls away and gives the article the screen. */}
-      <header className="md:sticky md:top-0 z-30 border-b border-[color:var(--border)] bg-[color:var(--surface-strong)]/86 backdrop-blur-2xl">
+      {/* Opaque on purpose. These panels sit over the page, and at 86% the
+          text underneath stayed legible through them — a heading and a nav
+          label occupying the same pixels, which reads as a broken layout
+          rather than a translucent one. backdrop-blur stays for the edge
+          treatment; the background no longer lets the page show through. */}
+      <header className="md:sticky md:top-0 z-30 border-b border-[color:var(--border)] bg-[color:var(--surface-strong)] backdrop-blur-2xl">
         <div className="mx-auto max-w-6xl px-4 py-3 md:px-6">
           <div className="mb-2 hidden items-center justify-end gap-1 text-sm md:flex">
             <Link href={donateHref} className="utility-link">
