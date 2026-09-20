@@ -33,9 +33,9 @@ function getTopicBrief(topic: string, locale: Locale) {
         : "Benchmarks directly influence model selection for student projects.",
       actions: fr
         ? [
-            "Choisis un benchmark qui correspond a ton cas d'usage reel.",
-            "Ajoute un tableau cout vs qualite dans ton README.",
-            "Mets a jour ton stack si une option apporte un meilleur ratio performance/prix."
+            "Choisissez un benchmark qui correspond a votre cas d'usage reel.",
+            "Ajoutez un tableau cout vs qualite dans votre README.",
+            "Mettez a jour votre stack si une option apporte un meilleur ratio performance/prix."
           ]
         : [
             "Choose a benchmark aligned with your real use case.",
@@ -43,7 +43,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Update your stack when a better performance/price option appears."
           ],
       nextStep: fr
-        ? "Prochaine etape: ecris une comparaison claire avec un tableau cout/qualite."
+        ? "Prochaine etape: ecrivez une comparaison claire avec un tableau cout/qualite."
         : "Next step: write a clear comparison with a cost/quality table."
     },
     "AI Systems": {
@@ -52,9 +52,9 @@ function getTopicBrief(topic: string, locale: Locale) {
         : "LLM/agent updates change how portfolio apps should be built.",
       actions: fr
         ? [
-            "Transforme la nouveaute en mini demo deployable.",
-            "Ajoute une section architecture claire dans ton article.",
-            "Mesure latence, cout et qualite pour rester credible."
+            "Transformez la nouveaute en mini demo deployable.",
+            "Ajoutez une section architecture claire dans votre article.",
+            "Mesurez latence, cout et qualite pour rester credible."
           ]
         : [
             "Turn the update into a small deployable demo.",
@@ -62,7 +62,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Measure latency, cost, and quality for credibility."
           ],
       nextStep: fr
-        ? "Prochaine etape: publie un mini tutoriel avec architecture + mesure de latence."
+        ? "Prochaine etape: publiez un mini tutoriel avec architecture + mesure de latence."
         : "Next step: publish a mini tutorial with architecture and latency checks."
     },
     "Computer Systems": {
@@ -71,9 +71,9 @@ function getTopicBrief(topic: string, locale: Locale) {
         : "Infra/system updates impact deployment and cost decisions.",
       actions: fr
         ? [
-            "Compare les options par vitesse de livraison et budget.",
-            "Mets en avant les compromis dans un tableau simple.",
-            "Lie vers ta page compare pour capter l'intention forte."
+            "Comparez les options par vitesse de livraison et budget.",
+            "Mettez en avant les compromis dans un tableau simple.",
+            "Liez vers votre page compare pour capter l'intention forte."
           ]
         : [
             "Compare options by shipping speed and budget.",
@@ -81,7 +81,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Link to your compare page to capture high intent."
           ],
       nextStep: fr
-        ? "Prochaine etape: cree un guide 'quelle option choisir selon ton budget'."
+        ? "Prochaine etape: creez un guide 'quelle option choisir selon votre budget'."
         : "Next step: create a 'which option fits your budget' guide."
     },
     "Computer Science": {
@@ -90,9 +90,9 @@ function getTopicBrief(topic: string, locale: Locale) {
         : "CS updates help students produce more robust, differentiated projects.",
       actions: fr
         ? [
-            "Ajoute une section 'ce que ca change pour ton projet'.",
-            "Relie le sujet a un exemple concret deploye.",
-            "Publie un recap court sur LinkedIn avec lien vers ton article."
+            "Ajoutez une section 'ce que ca change pour votre projet'.",
+            "Reliez le sujet a un exemple concret deploye.",
+            "Publiez un recap court sur LinkedIn avec lien vers votre article."
           ]
         : [
             "Add a 'what this changes for your project' section.",
@@ -100,7 +100,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Publish a short LinkedIn recap linking back to your article."
           ],
       nextStep: fr
-        ? "Prochaine etape: transforme ce sujet en article pedagogique base sur un exemple concret."
+        ? "Prochaine etape: transformez ce sujet en article pedagogique base sur un exemple concret."
         : "Next step: turn this into a teaching article backed by one concrete example."
     }
   };
@@ -122,7 +122,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Add 2 useful links to resources/compare."
           ],
       nextStep: fr
-        ? "Prochaine etape: relie ce brief a une ressource et a un guide pratique."
+        ? "Prochaine etape: reliez ce brief a une ressource et a un guide pratique."
         : "Next step: connect this brief to one resource and one practical guide."
     }
   );

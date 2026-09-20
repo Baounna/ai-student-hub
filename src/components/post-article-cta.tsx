@@ -18,12 +18,12 @@ export function PostArticleCta({
   const resolvedTitle =
     title ||
     (locale === "fr"
-      ? "Pret a accelerer ton execution IA + cybersecurite ?"
+      ? "Pret a accelerer votre execution IA + cybersecurite ?"
       : "Ready to accelerate your AI + cybersecurity execution?");
   const resolvedDescription =
     description ||
     (locale === "fr"
-      ? "Ouvre la liste des stages ouverts, puis le lab outils pour choisir ta stack."
+      ? "Ouvrez la liste des stages ouverts, puis le lab outils pour choisir votre stack."
       : "Open the current list of internships, then the tools lab to pick your stack.");
   const ctaPrimary = locale === "fr" ? siteConfig.leadMagnet.frLabel : siteConfig.leadMagnet.enLabel;
   const ctaSecondary = locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab";

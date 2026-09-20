@@ -69,7 +69,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 1",
     task: {
       en: "Select 3 high-intent topics from the auto AI + Cybersecurity feed (comparison, budget, tools).",
-      fr: "Selectionne 3 sujets a forte intention depuis le flux auto AI + Cybersecurity (comparaison, budget, outils)."
+      fr: "Selectionnez 3 sujets a forte intention depuis le flux auto AI + Cybersecurity (comparaison, budget, outils)."
     },
     output: {
       en: "3 article titles + target keyword each.",
@@ -80,7 +80,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 2",
     task: {
       en: "Publish article #1 with 2 affiliate CTAs and 1 lead magnet CTA.",
-      fr: "Publie l'article #1 avec 2 CTA affiliation et 1 CTA lead magnet."
+      fr: "Publiez l'article #1 avec 2 CTA affiliation et 1 CTA lead magnet."
     },
     output: {
       en: "1 live article with source references.",
@@ -91,7 +91,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 3",
     task: {
       en: "Repurpose article #1 into LinkedIn post + short summary thread.",
-      fr: "Reconvertis l'article #1 en post LinkedIn + thread resume."
+      fr: "Reconvertissez l'article #1 en post LinkedIn + thread resume."
     },
     output: {
       en: "1 social post driving traffic to blog.",
@@ -102,7 +102,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 4",
     task: {
       en: "Publish article #2 (comparison angle) and link to resources + compare page.",
-      fr: "Publie l'article #2 (angle comparatif) et lie vers resources + compare."
+      fr: "Publiez l'article #2 (angle comparatif) et liez vers resources + compare."
     },
     output: {
       en: "1 comparison-style article.",
@@ -113,7 +113,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 5",
     task: {
       en: "Send weekly email digest with 2 articles + 1 product CTA.",
-      fr: "Envoie digest email hebdo avec 2 articles + 1 CTA produit."
+      fr: "Envoyez le digest email hebdo avec 2 articles + 1 CTA produit."
     },
     output: {
       en: "1 email campaign sent.",
@@ -124,7 +124,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 6",
     task: {
       en: "Update resources page with one new partner tool and fresh value note.",
-      fr: "Mets a jour resources avec un nouvel outil partenaire + note de valeur."
+      fr: "Mettez a jour resources avec un nouvel outil partenaire + note de valeur."
     },
     output: {
       en: "Resources freshness signal improved.",
@@ -135,7 +135,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 7",
     task: {
       en: "Review CTR on affiliate links and optimize weakest CTA copy.",
-      fr: "Analyse CTR des liens affilies et optimise le CTA le plus faible."
+      fr: "Analysez le CTR des liens affilies et optimisez le CTA le plus faible."
     },
     output: {
       en: "Improved CTA copy v2.",
@@ -146,7 +146,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 8",
     task: {
       en: "Publish article #3 from latest auto signals with strict source citations.",
-      fr: "Publie l'article #3 depuis les derniers signaux auto avec citations strictes."
+      fr: "Publiez l'article #3 depuis les derniers signaux auto avec citations strictes."
     },
     output: {
       en: "1 source-backed trend article.",
@@ -157,7 +157,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 9",
     task: {
       en: "Add internal links between all 3 new articles and the product page.",
-      fr: "Ajoute des liens internes entre les 3 nouveaux articles et la page produit."
+      fr: "Ajoutez des liens internes entre les 3 nouveaux articles et la page produit."
     },
     output: {
       en: "Stronger internal funnel.",
@@ -168,7 +168,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 10",
     task: {
       en: "Publish one short “best free tools” post for low-friction clicks.",
-      fr: "Publie un post court “best free tools” pour clics faciles."
+      fr: "Publiez un post court “best free tools” pour clics faciles."
     },
     output: {
       en: "1 additional affiliate entry point.",
@@ -179,7 +179,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 11",
     task: {
       en: "Create one FAQ block in top-performing article to improve SEO snippet chances.",
-      fr: "Ajoute un bloc FAQ dans l'article le plus performant pour ameliorer le SEO snippet."
+      fr: "Ajoutez un bloc FAQ dans l'article le plus performant pour ameliorer le SEO snippet."
     },
     output: {
       en: "Improved search relevance.",
@@ -190,7 +190,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 12",
     task: {
       en: "Re-share best article on LinkedIn with updated hook and direct CTA.",
-      fr: "Repartage le meilleur article sur LinkedIn avec nouveau hook + CTA direct."
+      fr: "Repartagez le meilleur article sur LinkedIn avec nouveau hook + CTA direct."
     },
     output: {
       en: "Second social traffic wave.",
@@ -250,11 +250,11 @@ export default async function GrowthSprintPage(props: { params: Promise<{ lang: 
   const templates = fr
     ? {
         intro:
-          "Si tu construis un projet IA cette semaine, commence par cette comparaison et choisis un stack adapte a ton budget.",
+          "Si vous construisez un projet IA cette semaine, commencez par cette comparaison et choisissez un stack adapte a votre budget.",
         mid:
-          "Pour aller plus vite, ouvre notre page resources et prends un outil deploy + un outil productivity.",
+          "Pour aller plus vite, ouvrez notre page resources et prenez un outil deploy + un outil productivity.",
         end:
-          "Tu veux un systeme complet? Vois les stages ouverts puis passe au guide etudiant."
+          "Vous voulez un systeme complet? Voyez les stages ouverts puis passez au guide etudiant."
       }
     : {
         intro:

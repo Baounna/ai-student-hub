@@ -68,9 +68,9 @@ export const newsBriefs: NewsBrief[] = [
     },
     statsByTheme: [
       {
-        theme: { en: "General reasoning", fr: "Raisonnement general" },
+        theme: { en: "General reasoning", fr: "Raisonnement général" },
         benchmark: "Humanity's Last Exam (No tools)",
-        snapshot: { en: "February 2026 snapshot", fr: "Snapshot fevrier 2026" },
+        snapshot: { en: "February 2026 snapshot", fr: "Snapshot février 2026" },
         stats: [
           { model: "Gemini 3 Pro Thinking", value: "Official source table" },
           { model: "GPT-5.1", value: "Official source table" },
@@ -80,7 +80,7 @@ export const newsBriefs: NewsBrief[] = [
       {
         theme: { en: "Science QA", fr: "Questions scientifiques" },
         benchmark: "GPQA Diamond (No tools)",
-        snapshot: { en: "February 2026 snapshot", fr: "Snapshot fevrier 2026" },
+        snapshot: { en: "February 2026 snapshot", fr: "Snapshot février 2026" },
         stats: [
           { model: "Gemini 3 Pro Thinking", value: "Official source table" },
           { model: "GPT-5.1", value: "Official source table" },
@@ -88,9 +88,9 @@ export const newsBriefs: NewsBrief[] = [
         ]
       },
       {
-        theme: { en: "Math reasoning", fr: "Raisonnement mathematique" },
+        theme: { en: "Math reasoning", fr: "Raisonnement mathématique" },
         benchmark: "AIME 2025 (No tools)",
-        snapshot: { en: "February 2026 snapshot", fr: "Snapshot fevrier 2026" },
+        snapshot: { en: "February 2026 snapshot", fr: "Snapshot février 2026" },
         stats: [
           { model: "Gemini 3 Pro Thinking", value: "Official source table" },
           { model: "GPT-5.1", value: "Official source table" },
@@ -100,7 +100,7 @@ export const newsBriefs: NewsBrief[] = [
       {
         theme: { en: "Multimodal understanding", fr: "Compréhension multimodale" },
         benchmark: "MMMU-Pro",
-        snapshot: { en: "February 2026 snapshot", fr: "Snapshot fevrier 2026" },
+        snapshot: { en: "February 2026 snapshot", fr: "Snapshot février 2026" },
         stats: [
           { model: "Gemini 3 Pro Thinking", value: "Official source table" },
           { model: "GPT-5.1", value: "Official source table" },
@@ -108,9 +108,9 @@ export const newsBriefs: NewsBrief[] = [
         ]
       },
       {
-        theme: { en: "UI/screen execution", fr: "Execution sur interface ecran" },
+        theme: { en: "UI/screen execution", fr: "Exécution sur interface écran" },
         benchmark: "ScreenSpot-Pro",
-        snapshot: { en: "February 2026 snapshot", fr: "Snapshot fevrier 2026" },
+        snapshot: { en: "February 2026 snapshot", fr: "Snapshot février 2026" },
         stats: [
           { model: "Gemini 3 Pro Thinking", value: "Official source table" },
           { model: "Claude Sonnet 4.5 Thinking", value: "Official source table" },
@@ -138,20 +138,20 @@ export const newsBriefs: NewsBrief[] = [
         ]
       },
       fr: {
-        title: "Dernieres performances IA par theme (snapshot fevrier 2026)",
+        title: "Dernières performances IA par thème (snapshot février 2026)",
         summary:
-          "Un nouveau tableau benchmark publie en fevrier 2026 compare les modèles frontier sur raisonnement, QA scientifique, mathematiques, multimodal et taches UI/ecran.",
+          "Un nouveau tableau benchmark publié en février 2026 compare les modèles frontier sur raisonnement, QA scientifique, mathématiques, multimodal et tâches UI/écran.",
         studentImpact:
-          "Les étudiants peuvent choisir un modèle par type de tache reelle plutot que par hype: un modèle pour math/science, un autre pour multimodal ou execution UI.",
+          "Les étudiants peuvent choisir un modèle par type de tâche réelle plutôt que par hype: un modèle pour math/science, un autre pour multimodal ou exécution UI.",
         takeaways: [
-          "Raisonnement: Gemini 3 Pro mene sur HLE (37.5%) dans ce snapshot.",
+          "Raisonnement: Gemini 3 Pro mène sur HLE (37.5%) dans ce snapshot.",
           "Science + maths: Gemini 3 Pro et GPT-5.1 restent proches sur GPQA et AIME.",
-          "Multimodal/UI: Gemini 3 Pro mene MMMU-Pro et ScreenSpot-Pro dans ce tableau."
+          "Multimodal/UI: Gemini 3 Pro mène MMMU-Pro et ScreenSpot-Pro dans ce tableau."
         ],
         actionSteps: [
-          "Relie ton projet a un theme benchmark avant de choisir ton modèle.",
-          "Suis une metrique qualite et une metrique cout a chaque release.",
-          "Justifie ton choix modèle avec preuves benchmark dans README et portfolio."
+          "Reliez votre projet à un thème benchmark avant de choisir votre modèle.",
+          "Suivez une métrique qualité et une métrique coût à chaque release.",
+          "Justifiez votre choix modèle avec preuves benchmark dans README et portfolio."
         ]
       }
     }
@@ -194,18 +194,18 @@ export const newsBriefs: NewsBrief[] = [
         title: "Les workflows agentiques arrivent dans les projets IA étudiants",
         seoTitle: "Workflows agentiques dans les projets IA étudiants",
         summary:
-          "Les étudiants passent des demos mono-prompt vers des workflows multi-etapes avec planification, retrieval et appels d'outils.",
+          "Les étudiants passent des démos mono-prompt vers des workflows multi-étapes avec planification, retrieval et appels d'outils.",
         studentImpact:
           "Le niveau attendu monte: les recruteurs veulent voir une logique système, pas seulement de bons prompts.",
         takeaways: [
-          "Decoupe le flux en etats explicites au lieu d'un prompt geant.",
-          "Trace chaque etape agent pour debugger les echecs.",
-          "Montre les compromis cout/latence dans le README."
+          "Découpez le flux en états explicites au lieu d'un prompt géant.",
+          "Tracez chaque étape agent pour debugger les échecs.",
+          "Montrez les compromis coût/latence dans le README."
         ],
         actionSteps: [
-          "Refactorise un projet portfolio en etapes planner + executor.",
-          "Ajoute tracing et fallback pour les tool calls qui echouent.",
-          "Publie une note architecture courte sur LinkedIn avec schema."
+          "Refactorisez un projet portfolio en étapes planner + executor.",
+          "Ajoutez tracing et fallback pour les tool calls qui échouent.",
+          "Publiez une note architecture courte sur LinkedIn avec schéma."
         ]
       }
     }
@@ -249,18 +249,18 @@ export const newsBriefs: NewsBrief[] = [
         title: "Les modèles multimodaux changent les projets IA et informatique",
         seoTitle: "Les modèles multimodaux changent les projets IA",
         summary:
-          "Les projets de cours melangent de plus en plus texte, image et audio, avec des pipelines d'evaluation plus complets.",
+          "Les projets de cours mélangent de plus en plus texte, image et audio, avec des pipelines d'évaluation plus complets.",
         studentImpact:
-          "Un projet multimodal bien deploye differencie fortement un profil étudiant.",
+          "Un projet multimodal bien déployé différencie fortement un profil étudiant.",
         takeaways: [
-          "Mesure avec des metriques liees au cas d'usage, pas seulement un score global.",
-          "Garde une baseline propre avant fusion des modalites.",
-          "Documente licence dataset et qualite d'annotation."
+          "Mesurez avec des métriques liées au cas d'usage, pas seulement un score global.",
+          "Gardez une baseline propre avant fusion des modalités.",
+          "Documentez licence dataset et qualité d'annotation."
         ],
         actionSteps: [
-          "Ajoute une capacite image ou audio a ton app NLP actuelle.",
-          "Cree un mini tableau d'evaluation par modalite.",
-          "Ajoute une section sur erreurs et cas limites."
+          "Ajoutez une capacité image ou audio à votre app NLP actuelle.",
+          "Créez un mini tableau d'évaluation par modalité.",
+          "Ajoutez une section sur erreurs et cas limites."
         ]
       }
     }
@@ -300,21 +300,21 @@ export const newsBriefs: NewsBrief[] = [
         ]
       },
       fr: {
-        title: "L'evaluation open-source des LLM devient beaucoup plus mature",
+        title: "L'évaluation open-source des LLM devient beaucoup plus mature",
         seoTitle: "L'évaluation open-source des LLM gagne en maturité",
         summary:
-          "Les equipes etudiantes disposent de meilleurs outils open-source pour tests de regression, controles de prompts et quality gates.",
+          "Les équipes étudiantes disposent de meilleurs outils open-source pour tests de régression, contrôles de prompts et quality gates.",
         studentImpact:
-          "La fiabilite est devenue un signal fort pour les stages IA orientes produit.",
+          "La fiabilité est devenue un signal fort pour les stages IA orientés produit.",
         takeaways: [
-          "Ajoute une suite de regression sur les intents critiques.",
-          "Separe risque d'hallucination et fluidite de reponse.",
-          "Versionne prompts et jeu d'evaluation dans Git."
+          "Ajoutez une suite de régression sur les intents critiques.",
+          "Séparez risque d'hallucination et fluidité de réponse.",
+          "Versionnez prompts et jeu d'évaluation dans Git."
         ],
         actionSteps: [
-          "Definis 20 cas de test fixes pour ton application.",
-          "Automatise un check pass/fail avant chaque release.",
-          "Affiche une capture dashboard eval dans ton README."
+          "Définissez 20 cas de test fixes pour votre application.",
+          "Automatisez un check pass/fail avant chaque release.",
+          "Affichez une capture dashboard eval dans votre README."
         ]
       }
     }
@@ -354,20 +354,20 @@ export const newsBriefs: NewsBrief[] = [
         ]
       },
       fr: {
-        title: "Les outils Edge AI ameliorent les apps campus",
+        title: "Les outils Edge AI améliorent les apps campus",
         summary:
-          "De plus en plus de projets étudiants utilisent l'inference locale ou edge pour reduire la latence et proteger les données.",
+          "De plus en plus de projets étudiants utilisent l'inférence locale ou edge pour réduire la latence et protéger les données.",
         studentImpact:
-          "Excellent signal pour les roles systèmes, robotique ou infrastructure.",
+          "Excellent signal pour les rôles systèmes, robotique ou infrastructure.",
         takeaways: [
-          "Choisis edge quand la latence impacte directement l'experience utilisateur.",
-          "Mesure la performance offline avant fallback cloud.",
-          "Valorise l'avantage vie privee dans ton pitch produit."
+          "Choisissez edge quand la latence impacte directement l'expérience utilisateur.",
+          "Mesurez la performance offline avant fallback cloud.",
+          "Valorisez l'avantage vie privée dans votre pitch produit."
         ],
         actionSteps: [
-          "Compare local vs cloud sur une tache reelle.",
-          "Mesure latence et memoire dans un tableau simple.",
-          "Documente la regle de bascule vers cloud."
+          "Comparez local vs cloud sur une tâche réelle.",
+          "Mesurez latence et mémoire dans un tableau simple.",
+          "Documentez la règle de bascule vers cloud."
         ]
       }
     }
@@ -407,20 +407,20 @@ export const newsBriefs: NewsBrief[] = [
         ]
       },
       fr: {
-        title: "Le MLOps étudiant se deplace vers l'amont",
+        title: "Le MLOps étudiant se déplace vers l'amont",
         summary:
-          "Les meilleurs projets étudiants integrent monitoring, controle des couts et plan de rollback avant lancement public.",
+          "Les meilleurs projets étudiants intègrent monitoring, contrôle des coûts et plan de rollback avant lancement public.",
         studentImpact:
-          "Ce niveau de preparation donne un signal pro fort meme pour un profil junior.",
+          "Ce niveau de préparation donne un signal pro fort même pour un profil junior.",
         takeaways: [
-          "Prepare l'observabilite avant le déploiement.",
-          "Definis des limites budgetaires et alertes des le debut.",
-          "Garde un script rollback simple et teste."
+          "Préparez l'observabilité avant le déploiement.",
+          "Définissez des limites budgétaires et alertes dès le début.",
+          "Gardez un script rollback simple et testé."
         ],
         actionSteps: [
-          "Ajoute un uptime check et une alerte cout cette semaine.",
-          "Cree un script de rollback en une commande.",
-          "Documente ton plan incident de facon claire."
+          "Ajoutez un uptime check et une alerte coût cette semaine.",
+          "Créez un script de rollback en une commande.",
+          "Documentez votre plan incident de façon claire."
         ]
       }
     }
@@ -459,21 +459,21 @@ export const newsBriefs: NewsBrief[] = [
         ]
       },
       fr: {
-        title: "Les signaux recrutement CS basculent vers des produits livres",
+        title: "Les signaux recrutement CS basculent vers des produits livrés",
         seoTitle: "Le recrutement CS bascule vers les produits livrés",
         summary:
-          "Les recruteurs valorisent davantage les demos en ligne, les metriques claires et une communication ecrite solide.",
+          "Les recruteurs valorisent davantage les démos en ligne, les métriques claires et une communication écrite solide.",
         studentImpact:
-          "Un produit deploye avec resultats mesurables depasse souvent les certificats generiques.",
+          "Un produit déployé avec résultats mesurables dépasse souvent les certificats génériques.",
         takeaways: [
-          "Une demo publique cree plus de confiance qu'un repo seul.",
-          "Les metriques rendent le CV credibile.",
+          "Une démo publique crée plus de confiance qu'un repo seul.",
+          "Les métriques rendent le CV crédible.",
           "Une écriture claire augmente l'impact en entretien."
         ],
         actionSteps: [
-          "Ajoute une URL live et une metrique par projet cle.",
-          "Reecris tes bullets CV en langage resultat.",
-          "Publie un build log hebdo sur LinkedIn."
+          "Ajoutez une URL live et une métrique par projet clé.",
+          "Réécrivez vos bullets CV en langage résultat.",
+          "Publiez un build log hebdo sur LinkedIn."
         ]
       }
     }
@@ -517,18 +517,18 @@ export const newsBriefs: NewsBrief[] = [
         title: "Les checklists sécurité API deviennent standard dans les projets étudiants",
         seoTitle: "Les checklists sécurité API deviennent la norme",
         summary:
-          "De plus en plus d'equipes etudiantes appliquent une base sécurité API avant lancement: scopes auth, validation d'entrees, et controle de debit.",
+          "De plus en plus d'équipes étudiantes appliquent une base sécurité API avant lancement: scopes auth, validation d'entrées, et contrôle de débit.",
         studentImpact:
           "La sécurité est devenue un signal visible pour les stages backend, platform, et ML engineering.",
         takeaways: [
-          "Traite la sécurité API comme prerequis release.",
-          "Ajoute rate limiting et verification ownership sur les endpoints publics.",
-          "Documente les controles sécurité dans le README."
+          "Traitez la sécurité API comme prérequis release.",
+          "Ajoutez rate limiting et vérification ownership sur les endpoints publics.",
+          "Documentez les contrôles sécurité dans le README."
         ],
         actionSteps: [
-          "Execute une checklist sécurité avant ton prochain deploy.",
-          "Ajoute des tests auth endpoint dans CI.",
-          "Publie une section sécurité dans la doc architecture."
+          "Exécutez une checklist sécurité avant votre prochain deploy.",
+          "Ajoutez des tests auth endpoint dans CI.",
+          "Publiez une section sécurité dans la doc architecture."
         ]
       }
     }
@@ -572,18 +572,18 @@ export const newsBriefs: NewsBrief[] = [
         title: "Kubernetes et patterns DevOps legers entrent dans les workflows étudiants",
         seoTitle: "Kubernetes et DevOps léger pour les étudiants",
         summary:
-          "Les equipes etudiantes combinent pipelines CI/CD simples et déploiements conteneurises pour reduire la friction release.",
+          "Les équipes étudiantes combinent pipelines CI/CD simples et déploiements conteneurisés pour réduire la friction release.",
         studentImpact:
           "Savoir expliquer workflow déploiement et rollback devient un avantage fort en entretien technique.",
         takeaways: [
-          "Commence par des patterns simples avant orchestration complexe.",
-          "Suis une metrique rollback et une metrique incident.",
-          "Documente le flow deploy pour que l'equipe shippe en sécurité."
+          "Commencez par des patterns simples avant orchestration complexe.",
+          "Suivez une métrique rollback et une métrique incident.",
+          "Documentez le flow deploy pour que l'équipe shippe en sécurité."
         ],
         actionSteps: [
-          "Mets en place staging + production.",
-          "Ajoute un smoke test apres chaque déploiement.",
-          "Ecris un runbook rollback dans le repo."
+          "Mettez en place staging + production.",
+          "Ajoutez un smoke test après chaque déploiement.",
+          "Écrivez un runbook rollback dans le repo."
         ]
       }
     }
@@ -624,21 +624,21 @@ export const newsBriefs: NewsBrief[] = [
         ]
       },
       fr: {
-        title: "L'observabilite backend devient une competence centrale pour étudiants IA/CS",
+        title: "L'observabilité backend devient une compétence centrale pour étudiants IA/CS",
         seoTitle: "L'observabilité backend devient une compétence clé",
         summary:
-          "Logs, metriques, et traces sont maintenant attendus dans les projets étudiants serieux avec APIs, files, et inference modèle.",
+          "Logs, métriques, et traces sont maintenant attendus dans les projets étudiants sérieux avec APIs, files, et inférence modèle.",
         studentImpact:
-          "L'observabilite reduit le temps de debug et renforce la credibilite des projets en review recruteur.",
+          "L'observabilité réduit le temps de debug et renforce la crédibilité des projets en review recruteur.",
         takeaways: [
-          "Instrumente les endpoints critiques avant de scaler.",
-          "Utilise des request IDs pour relier erreurs front et traces backend.",
-          "Suis p95 latence et taux d'erreur comme KPIs par defaut."
+          "Instrumentez les endpoints critiques avant de scaler.",
+          "Utilisez des request IDs pour relier erreurs front et traces backend.",
+          "Suivez p95 latence et taux d'erreur comme KPIs par défaut."
         ],
         actionSteps: [
-          "Ajoute des logs structures sur une route critique cette semaine.",
-          "Expose un dashboard latence + erreurs.",
-          "Ecris une note incident apres chaque bug majeur."
+          "Ajoutez des logs structurés sur une route critique cette semaine.",
+          "Exposez un dashboard latence + erreurs.",
+          "Écrivez une note incident après chaque bug majeur."
         ]
       }
     }

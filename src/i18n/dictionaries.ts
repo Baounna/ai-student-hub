@@ -158,7 +158,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
   },
   fr: {
     nav: {
-      news: "Actualites",
+      news: "Actualités",
       blog: "Blog",
       resources: "Ressources",
       about: "À propos",
@@ -166,7 +166,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     footer: {
       title: "AI and Cybersecurity News",
-      description: "Execution IA + cybersecurite pratique pour toute personne qui construit, apprend, ou travaille avec l'IA. Les etudiants restent un public cle.",
+      description: "Exécution IA + cybersécurité pratique pour toute personne qui construit, apprend, ou travaille avec l'IA. Les étudiants restent un public clé.",
       resources: "Ressources",
       tutorials: "Tutoriels",
       tools: "Outils recommandés",
@@ -177,14 +177,14 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       badge: "Positionnement",
-      headline: "Guides IA + cybersecurite pour builders",
+      headline: "Guides IA + cybersécurité pour builders",
       subheadline:
-        "Updates, outils, et guides orientes execution pour builders, apprenants, equipes, et chercheurs. Les etudiants gardent un parcours dedie stages, carriere, et budget-friendly.",
+        "Updates, outils, et guides orientés exécution pour builders, apprenants, équipes, et chercheurs. Les étudiants gardent un parcours dédié stages, carrière, et budget-friendly.",
       ctaPrimary: "Voir les stages ouverts",
       ctaSecondary: "Explorer le blog",
       trust: [
-        "Playbooks orientes projet",
-        "Systemes de deploiement pratiques",
+        "Playbooks orientés projet",
+        "Systèmes de déploiement pratiques",
         "Approche budget-friendly",
         "Contenu EN/FR"
       ],
@@ -192,40 +192,40 @@ export const dictionaries: Record<Locale, Dictionary> = {
       socialProof: "Preuves sociales"
     },
     blog: {
-      title: "Construire, livrer et progresser comme ingenieur IA + cybersecurite",
-      seoTitle: "Guides IA + cybersecurite",
-      subtitle: "Tutoriels tactiques et systemes pour portfolio solide en IA, backend, cloud et cybersecurite.",
+      title: "Construire, livrer et progresser comme ingénieur IA + cybersécurité",
+      seoTitle: "Guides IA + cybersécurité",
+      subtitle: "Tutoriels tactiques et systèmes pour portfolio solide en IA, backend, cloud et cybersécurité.",
       latest: "Derniers articles",
       readPost: "Lire l'article",
       related: "Articles liés",
       inPostCallout: "Stack d'outils utile",
       inPostCalloutBody:
-        "Tu veux aller plus vite ? Consulte la stack de ressources pour des outils étudiants et déploiement.",
+        "Vous voulez aller plus vite ? Consultez la stack de ressources pour des outils étudiants et déploiement.",
       openResources: "Voir les ressources"
     },
     about: {
-      title: "Construire une execution IA + cybersecurite fiable pour tous",
+      title: "Construire une exécution IA + cybersécurité fiable pour tous",
       subtitle:
-        "J'aide les personnes a livrer des projets portfolio et a transformer l'execution en resultats mesurables. Les etudiants restent un sous-public prioritaire."
+        "J'aide les personnes à livrer des projets portfolio et à transformer l'exécution en résultats mesurables. Les étudiants restent un sous-public prioritaire."
     },
     resources: {
-      seoTitle: "Outils IA + cybersecurite",
-      title: "Outils recommandes pour builders IA + cybersecurite",
+      seoTitle: "Outils IA + cybersécurité",
+      title: "Outils recommandés pour builders IA + cybersécurité",
       subtitle:
-        "Des outils choisis pour un ROI concret : livrer plus vite, apprendre mieux et convertir l'audience sur l'IA et la cybersecurite."
+        "Des outils choisis pour un ROI concret : livrer plus vite, apprendre mieux et convertir l'audience sur l'IA et la cybersécurité."
     },
     news: {
-      title: "Actualites IA + Cybersecurite pour tous",
+      title: "Actualités IA + Cybersécurité pour tous",
       subtitle:
         "Des briefs hebdomadaires: ce qui change, pourquoi c'est important en pratique, et quoi construire ensuite.",
       latest: "Derniers briefs",
       impact: "Impact pratique",
-      actions: "Actions recommandees",
+      actions: "Actions recommandées",
       source: "Contexte source",
       readBrief: "Lire le brief",
-      weeklyDigestTitle: "Recevoir le digest IA + cybersecurite",
+      weeklyDigestTitle: "Recevoir le digest IA + cybersécurité",
       weeklyDigestBody:
-        "Chaque semaine: signaux majeurs, plan d'action concret, et une idee de projet a fort ROI pour builders. Les ressources etudiantes restent incluses.",
+        "Chaque semaine: signaux majeurs, plan d'action concret, et une idée de projet à fort ROI pour builders. Les ressources étudiantes restent incluses.",
       openBlog: "Ouvrir le blog",
       openResources: "Voir les ressources",
       openCompare: "Ouvrir la section outils"

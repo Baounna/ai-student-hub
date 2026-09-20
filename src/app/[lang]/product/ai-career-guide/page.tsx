@@ -68,7 +68,7 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr
-                ? "Un guide pratique pour livrer des projets portfolio, augmenter tes reponses de stage, et clarifier ton plan execution sur 14-30 jours."
+                ? "Un guide pratique pour livrer des projets portfolio, augmenter vos reponses de stage, et clarifier votre plan execution sur 14-30 jours."
                 : "A practical guide to ship portfolio projects, increase internship responses, and execute a clear 14-30 day plan."}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -130,7 +130,7 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
                 </Link>
                 <p className="w-full text-xs text-[color:var(--muted)]">
                   {fr
-                    ? "Checkout non disponible pour l'instant. Utilise la liste des stages et les ressources."
+                    ? "Checkout non disponible pour l'instant. Utilisez la liste des stages et les ressources."
                     : "Checkout is not live yet. Use the internship list and curated resources first."}
                 </p>
               </div>
@@ -180,10 +180,10 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
 
           <section className="surface rounded-2xl p-6">
             <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Ce que tu obtiens en plus" : "Included extras"}
+              {fr ? "Ce que vous obtenez en plus" : "Included extras"}
             </h2>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
-              <li>- {fr ? "Support email pour clarifier ton plan." : "Email support for clarifying your execution plan."}</li>
+              <li>- {fr ? "Support email pour clarifier votre plan." : "Email support for clarifying your execution plan."}</li>
               <li>- {fr ? "Mise a jour du guide pendant 60 jours." : "Guide updates for 60 days."}</li>
               <li>- {fr ? "Structure orientee stage et debut de carriere." : "Structure focused on internship and early career outcomes."}</li>
             </ul>
@@ -242,7 +242,7 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Commence par la liste des stages puis reviens apres ton premier mini sprint."
+                    ? "Commencez par la liste des stages puis revenez apres votre premier mini sprint."
                     : "Start with the internship list, then return after your first mini sprint."}
                 </p>
               </article>

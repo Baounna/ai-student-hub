@@ -193,7 +193,7 @@ const envRecommendedTools: RecommendedTool[] = envAffiliates.map((item, index) =
     },
     benefit: {
       en: "Selected for practical ROI, faster shipping, and budget-friendly viability.",
-      fr: "Selectionnee pour un ROI pratique, un shipping rapide, et une logique budget-friendly."
+      fr: "Sélectionnée pour un ROI pratique, un shipping rapide, et une logique budget-friendly."
     },
     affiliateHref: item.url
   };
@@ -211,14 +211,14 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
   {
     name: "NotebookLM",
     icon: "https://www.google.com/s2/favicons?domain=notebooklm.google&sz=256",
-    category: { en: "AI Study Assistant", fr: "Assistant d'etude IA" },
+    category: { en: "AI Study Assistant", fr: "Assistant d'étude IA" },
     summary: {
       en: "Upload lecture notes and PDFs, generate grounded summaries, and ask source-backed questions.",
-      fr: "Importe tes notes et PDF, genere des resumes fiables, et pose des questions avec citations."
+      fr: "Importez vos notes et PDF, générez des résumés fiables, et posez des questions avec citations."
     },
     bestFor: {
       en: "Exam revision, course recap, and source-grounded understanding.",
-      fr: "Revision d'examens, recap des cours, et comprehension avec sources."
+      fr: "Révision d'examens, récap des cours, et compréhension avec sources."
     },
     keywords: ["notes", "pdf", "summary", "revision", "research"],
     href: "https://notebooklm.google/",
@@ -230,11 +230,11 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     category: { en: "Learning Workflow", fr: "Workflow d'apprentissage" },
     summary: {
       en: "Structured learning flows to keep study sessions focused and execution-oriented.",
-      fr: "Flux d'apprentissage structures pour garder des sessions de travail focalisees et actionnables."
+      fr: "Flux d'apprentissage structurés pour garder des sessions de travail focalisées et actionnables."
     },
     bestFor: {
       en: "Planning study blocks and keeping momentum between classes and projects.",
-      fr: "Planifier les blocs d'etude et garder la cadence entre cours et projets."
+      fr: "Planifier les blocs d'étude et garder la cadence entre cours et projets."
     },
     keywords: ["planning", "workflow", "focus", "productivity"],
     href: antigravityUrl,
@@ -246,11 +246,11 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     category: { en: "Research Assistant", fr: "Assistant de recherche" },
     summary: {
       en: "Fast web research with citations to verify claims before using them in reports or projects.",
-      fr: "Recherche web rapide avec citations pour verifier les infos avant de les utiliser en rapport ou projet."
+      fr: "Recherche web rapide avec citations pour vérifier les infos avant de les utiliser en rapport ou projet."
     },
     bestFor: {
       en: "Quick literature scans and source verification.",
-      fr: "Scan rapide de references et verification des sources."
+      fr: "Scan rapide de références et vérification des sources."
     },
     keywords: ["research", "sources", "citation", "web search"],
     href: "https://www.perplexity.ai/",
@@ -262,11 +262,11 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     category: { en: "Memory System", fr: "Système de mémorisation" },
     summary: {
       en: "Spaced-repetition flashcards to retain algorithms, formulas, and AI + Cybersecurity concepts long term.",
-      fr: "Cartes a repetition espacee pour retenir durablement algorithmes, formules, et notions IA/CS."
+      fr: "Cartes à répétition espacée pour retenir durablement algorithmes, formules, et notions IA/CS."
     },
     bestFor: {
       en: "Long-term retention and exam preparation.",
-      fr: "Retention long terme et preparation d'examens."
+      fr: "Rétention long terme et préparation d'examens."
     },
     keywords: ["flashcards", "memory", "revision", "exam"],
     href: "https://apps.ankiweb.net/",
@@ -275,14 +275,14 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
   {
     name: "Wolfram|Alpha",
     icon: "https://www.google.com/s2/favicons?domain=wolframalpha.com&sz=256",
-    category: { en: "Math + CS Problem Solving", fr: "Resolution maths + info" },
+    category: { en: "Math + CS Problem Solving", fr: "Résolution maths + info" },
     summary: {
       en: "Step-by-step support for math, linear algebra, and technical problem solving.",
-      fr: "Support pas-a-pas pour maths, algebre lineaire, et resolution technique."
+      fr: "Support pas-à-pas pour maths, algèbre linéaire, et résolution technique."
     },
     bestFor: {
       en: "Math-heavy AI + Cybersecurity modules and verification of problem steps.",
-      fr: "Modules IA/CS charges en maths et verification des etapes."
+      fr: "Modules IA/CS chargés en maths et vérification des étapes."
     },
     keywords: ["math", "equations", "problem solving", "linear algebra"],
     href: "https://www.wolframalpha.com/",
@@ -291,14 +291,14 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
   {
     name: "ChatGPT",
     icon: "https://www.google.com/s2/favicons?domain=chatgpt.com&sz=256",
-    category: { en: "AI Study Assistant", fr: "Assistant d'etude IA" },
+    category: { en: "AI Study Assistant", fr: "Assistant d'étude IA" },
     summary: {
       en: "Explain concepts, generate practice questions, and draft clearer study notes.",
-      fr: "Explique les concepts, genere des questions d'entrainement, et redige de meilleures notes."
+      fr: "Expliquez les concepts, générez des questions d'entraînement, et rédigez de meilleures notes."
     },
     bestFor: {
       en: "Concept breakdowns and rapid first drafts.",
-      fr: "Decoupage de concepts et brouillons rapides."
+      fr: "Découpage de concepts et brouillons rapides."
     },
     keywords: ["ai tutor", "questions", "explanations", "notes"],
     href: "https://chatgpt.com/",
@@ -310,11 +310,11 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     category: { en: "Reading + Writing Assistant", fr: "Assistant lecture + écriture" },
     summary: {
       en: "Summarize long technical documents and turn them into structured study plans.",
-      fr: "Resume des documents techniques longs et les transforme en plans d'etude structures."
+      fr: "Résumez des documents techniques longs et transformez-les en plans d'étude structurés."
     },
     bestFor: {
       en: "Long reading sessions and writing cleaner reports.",
-      fr: "Sessions de lecture longues et redaction de rapports clairs."
+      fr: "Sessions de lecture longues et rédaction de rapports clairs."
     },
     keywords: ["long context", "summaries", "writing", "reports"],
     href: "https://claude.ai/",
@@ -326,7 +326,7 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     category: { en: "AI Learning Assistant", fr: "Assistant d'apprentissage IA" },
     summary: {
       en: "Use multimodal prompts for code, diagrams, and course materials in one workspace.",
-      fr: "Utilise des prompts multimodaux pour code, schemas, et supports de cours."
+      fr: "Utilisez des prompts multimodaux pour code, schémas, et supports de cours."
     },
     bestFor: {
       en: "Mixed text + image learning sessions.",
@@ -339,14 +339,14 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
   {
     name: "Notion",
     icon: "https://www.google.com/s2/favicons?domain=notion.so&sz=256",
-    category: { en: "Study Workspace", fr: "Espace d'etude" },
+    category: { en: "Study Workspace", fr: "Espace d'étude" },
     summary: {
       en: "Organize lecture notes, project tasks, and revision plans in one place.",
-      fr: "Organise notes de cours, taches projet, et plans de revision au meme endroit."
+      fr: "Organisez notes de cours, tâches projet, et plans de révision au même endroit."
     },
     bestFor: {
       en: "Planning weekly study goals and project execution.",
-      fr: "Planification hebdo des objectifs d'etude et execution projet."
+      fr: "Planification hebdo des objectifs d'étude et exécution projet."
     },
     keywords: ["notes", "planning", "workspace", "tasks"],
     href: "https://www.notion.so/",
@@ -358,11 +358,11 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     category: { en: "Knowledge Base", fr: "Base de connaissances" },
     summary: {
       en: "Build linked knowledge graphs from class notes with local markdown files.",
-      fr: "Construit un graphe de connaissances relie a partir de notes markdown locales."
+      fr: "Construisez un graphe de connaissances relié à partir de notes markdown locales."
     },
     bestFor: {
       en: "Deep understanding through connected notes.",
-      fr: "Comprendre en profondeur via notes reliees."
+      fr: "Comprendre en profondeur via notes reliées."
     },
     keywords: ["knowledge graph", "markdown", "notes", "offline"],
     href: "https://obsidian.md/",
@@ -374,11 +374,11 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     category: { en: "Citation Manager", fr: "Gestion de citations" },
     summary: {
       en: "Collect, organize, and cite papers properly for assignments and reports.",
-      fr: "Collecte, organise et cite correctement les papiers pour devoirs et rapports."
+      fr: "Collectez, organisez et citez correctement les articles pour devoirs et rapports."
     },
     bestFor: {
       en: "Research writing and bibliography quality.",
-      fr: "Redaction de recherche et qualite bibliographique."
+      fr: "Rédaction de recherche et qualité bibliographique."
     },
     keywords: ["citations", "papers", "bibliography", "research"],
     href: "https://www.zotero.org/",
@@ -387,14 +387,14 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
   {
     name: "Quizlet",
     icon: "https://www.google.com/s2/favicons?domain=quizlet.com&sz=256",
-    category: { en: "Practice Drills", fr: "Entrainement" },
+    category: { en: "Practice Drills", fr: "Entraînement" },
     summary: {
       en: "Create quizzes and flashcards to practice concepts before exams.",
-      fr: "Cree des quiz et flashcards pour pratiquer les notions avant examen."
+      fr: "Créez des quiz et flashcards pour pratiquer les notions avant examen."
     },
     bestFor: {
       en: "Active recall and quick revision loops.",
-      fr: "Rappel actif et boucles de revision rapides."
+      fr: "Rappel actif et boucles de révision rapides."
     },
     keywords: ["quiz", "practice", "flashcards", "exam prep"],
     href: "https://quizlet.com/",
@@ -406,11 +406,11 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     category: { en: "Course Support", fr: "Support de cours" },
     summary: {
       en: "Free structured lessons for math, computing, and foundational topics.",
-      fr: "Lecons structurees gratuites pour maths, informatique, et bases essentielles."
+      fr: "Leçons structurées gratuites pour maths, informatique, et bases essentielles."
     },
     bestFor: {
       en: "Strengthening fundamentals before advanced AI + Cybersecurity modules.",
-      fr: "Renforcer les fondamentaux avant modules IA/CS avances."
+      fr: "Renforcer les fondamentaux avant modules IA/CS avancés."
     },
     keywords: ["courses", "fundamentals", "math", "cybersecurity"],
     href: "https://www.khanacademy.org/",
@@ -422,11 +422,11 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     category: { en: "Course Platform", fr: "Plateforme de cours" },
     summary: {
       en: "Guided AI and CS courses with assignments and certification pathways.",
-      fr: "Cours guides en IA et informatique avec devoirs et parcours de certification."
+      fr: "Cours guidés en IA et informatique avec devoirs et parcours de certification."
     },
     bestFor: {
       en: "Structured long-term upskilling and interview prep.",
-      fr: "Montée en competence structuree et preparation aux entretiens."
+      fr: "Montée en compétence structurée et préparation aux entretiens."
     },
     keywords: ["courses", "certification", "learning path", "ai cs"],
     href: "https://www.coursera.org/",
@@ -438,7 +438,7 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     category: { en: "Writing Assistant", fr: "Assistant d'écriture" },
     summary: {
       en: "Improve assignment writing quality, internship emails, and project documentation.",
-      fr: "Ameliore la qualite des rapports, emails de stage, et documentation de projet."
+      fr: "Améliorez la qualité des rapports, emails de stage, et documentation de projet."
     },
     bestFor: {
       en: "Professional communication and cleaner documentation.",
@@ -720,7 +720,7 @@ const basePosts: BlogPost[] = [
           "Ce qui mène à la position honnête. Une reproductibilité au bit près est souvent inatteignable et rarement ce dont vous avez besoin. Ce qu'il vous faut, c'est que la conclusion soit stable : si deux exécutions donnent 0,842 et 0,839, le constat tient. Si elles donnent 0,84 et 0,71, vous n'aviez pas de constat — vous aviez un tirage chanceux, et le présenter comme le résultat tient plus de l'erreur que de l'arrondi. Lancer trois fois avec des graines différentes et rapporter l'écart est plus informatif que n'importe quel chiffre unique, et cela prend quelques minutes.",
           "Une habitude plus modeste compte tout autant : consignez la configuration à côté du résultat. Graine, version des données, hyperparamètres clés, versions des bibliothèques — écrits avec la métrique plutôt que mémorisés. Chaque chiffre d'un notebook provient d'un état précis, et si cet état n'est pas noté à côté, le chiffre n'est qu'une anecdote.",
           "Rien de tout cela n'exige d'outillage. Épinglez vos versions, travaillez dans un environnement virtuel, faites un redémarrage-et-tout-exécuter avant de croire quoi que ce soit, fixez les trois générateurs, exécutez plus d'une fois, et notez les réglages à côté du score. C'est un après-midi d'habitudes, pas une plateforme.",
-          "Le bénéfice apparaît là où les étudiants y tiennent. « J'ai obtenu 0,94 » appelle une seule question : peux-tu me le montrer ? « J'ai obtenu 0,94 plus ou moins 0,01 sur trois graines, avec cette version des données, ces dépendances épinglées, et voici l'exécution propre » clôt cette conversation et en ouvre une meilleure. La seconde réponse ne demande pas plus de travail. C'est le même travail, noté pendant qu'on le faisait."
+          "Le bénéfice apparaît là où les étudiants y tiennent. « J'ai obtenu 0,94 » appelle une seule question : pouvez-vous me le montrer ? « J'ai obtenu 0,94 plus ou moins 0,01 sur trois graines, avec cette version des données, ces dépendances épinglées, et voici l'exécution propre » clôt cette conversation et en ouvre une meilleure. La seconde réponse ne demande pas plus de travail. C'est le même travail, noté pendant qu'on le faisait."
         ]
       }
     },
@@ -1104,11 +1104,11 @@ const basePosts: BlogPost[] = [
     affiliateCallout: {
       headline: {
         en: "Build this faster with a student-friendly cloud stack",
-        fr: "Construis plus vite avec une stack cloud adaptée aux étudiants"
+        fr: "Construisez plus vite avec une stack cloud adaptée aux étudiants"
       },
       description: {
         en: "If you want to ship your project in days instead of weeks, use a managed deployment platform with free credits.",
-        fr: "Pour livrer en quelques jours au lieu de semaines, utilise une plateforme de déploiement managée avec crédits gratuits."
+        fr: "Pour livrer en quelques jours au lieu de semaines, utilisez une plateforme de déploiement managée avec crédits gratuits."
       },
       links: [
         { label: { en: "Compare cloud options", fr: "Comparer les options cloud" }, href: "/resources", note: "Affiliate comparison" },
@@ -1154,7 +1154,7 @@ const basePosts: BlogPost[] = [
         title: "Construire un projet IA de portfolio que les recruteurs remarquent",
         seoTitle: "Projet IA de portfolio remarqué par les recruteurs",
         excerpt:
-          "Un cadre pratique pour cadrer, livrer et présenter un projet IA qui augmente réellement ton signal de stage.",
+          "Un cadre pratique pour cadrer, livrer et présenter un projet IA qui augmente réellement votre signal de stage.",
         content: [
           "La plupart des étudiants ne sont pas bloqués par leurs compétences, mais par leur positionnement. Un modèle dans un notebook peut être parfaitement correct et ne produire aucun signal de recrutement, parce que la justesse ne dit rien de la réflexion produit, du déploiement, ni de votre capacité à expliquer une décision à quelqu'un qui n'était pas là. L'écart entre un bon modèle et un bon projet de portfolio est presque entièrement fait de ces trois choses.",
           "Partez d'un vrai point de douleur, de préférence un que vous avez ressenti. Faire correspondre un CV à une offre, répondre à des questions sur vos notes de cours, trier des candidatures de stage : c'est étroit, lisible, et immédiatement compréhensible pour un relecteur. Un problème étroit que l'on reconnaît vaut mieux qu'un problème large dont il faut convaincre.",
@@ -1189,7 +1189,7 @@ const basePosts: BlogPost[] = [
       },
       description: {
         en: "Use the recommended hosting stack and credits-first tools to keep your monthly cost predictable.",
-        fr: "Utilise la stack recommandée et des outils à crédits pour garder un coût mensuel prévisible."
+        fr: "Utilisez la stack recommandée et des outils à crédits pour garder un coût mensuel prévisible."
       },
       links: [
         { label: { en: "View recommended tools", fr: "Voir les outils recommandés" }, href: "/resources", note: "Affiliate links" },
@@ -1276,11 +1276,11 @@ const basePosts: BlogPost[] = [
     affiliateCallout: {
       headline: {
         en: "Get the full sprint system",
-        fr: "Obtiens le système sprint complet"
+        fr: "Obtenez le système sprint complet"
       },
       description: {
         en: "Use the weekly internship list and productivity templates to execute this 90-day plan consistently.",
-        fr: "Utilise la liste hebdomadaire de stages et les templates de productivité pour exécuter ce plan 90 jours avec constance."
+        fr: "Utilisez la liste hebdomadaire de stages et les templates de productivité pour exécuter ce plan 90 jours avec constance."
       },
       links: [
         { label: { en: "Open internships", fr: "Stages ouverts" }, href: "/stages", note: "Weekly list" },
@@ -1295,7 +1295,7 @@ const basePosts: BlogPost[] = [
       },
       {
         source: "Harvard Career Services",
-        label: { en: "Create a strong resume", fr: "Creer un CV solide" },
+        label: { en: "Create a strong resume", fr: "Créer un CV solide" },
         href: "https://careerservices.fas.harvard.edu/resources/create-a-strong-resume/"
       },
       {
@@ -1356,11 +1356,11 @@ const basePosts: BlogPost[] = [
     affiliateCallout: {
       headline: {
         en: "Want a faster learning path?",
-        fr: "Tu veux accélérer ta progression ?"
+        fr: "Vous voulez accélérer votre progression ?"
       },
       description: {
         en: "Use the internship list + curated resources to turn these fundamentals into one portfolio project this month.",
-        fr: "Utilise la liste de stages + ressources pour transformer ces fondamentaux en un projet portfolio ce mois-ci."
+        fr: "Utilisez la liste de stages + ressources pour transformer ces fondamentaux en un projet portfolio ce mois-ci."
       },
       links: [
         { label: { en: "Open resources", fr: "Voir les ressources" }, href: "/resources", note: "Curated stack" },
@@ -1385,7 +1385,7 @@ const basePosts: BlogPost[] = [
       },
       {
         source: "Google Developers",
-        label: { en: "Neural network glossary entry", fr: "Definition des reseaux de neurones" },
+        label: { en: "Neural network glossary entry", fr: "Définition des réseaux de neurones" },
         href: "https://developers.google.com/machine-learning/glossary#neural_network"
       }
     ],
@@ -1411,7 +1411,7 @@ const basePosts: BlogPost[] = [
         title: "Fondamentaux IA que chaque étudiant en informatique doit maîtriser",
         seoTitle: "Fondamentaux IA pour étudiants en informatique",
         excerpt:
-          "Un guide pratique des concepts IA essentiels pour lire des papers, construire de meilleurs projets et reussir les entretiens.",
+          "Un guide pratique des concepts IA essentiels pour lire des articles de recherche, construire de meilleurs projets et réussir les entretiens.",
         content: [
           "L'essentiel de la confusion autour de l'IA vient du fait de sauter les principes de base. Les étudiants commencent par les frameworks et les API de modèles, qui fonctionnent parfaitement sur des données de tutoriel, puis se heurtent à de vraies données où les choix d'architecture comptent — et rien dans le tutoriel n'explique pourquoi les résultats se sont dégradés.",
           "Commencez par la carte, car le vocabulaire est employé de façon approximative et cela crée de vrais malentendus. L'intelligence artificielle est le domaine large. L'apprentissage automatique en est le sous-ensemble où le comportement s'apprend à partir de données plutôt qu'il ne se spécifie. L'apprentissage profond est le sous-ensemble utilisant des réseaux de neurones à plusieurs couches. Savoir lequel vous pratiquez indique quels modes de défaillance attendre.",
@@ -1443,14 +1443,14 @@ const basePosts: BlogPost[] = [
     affiliateCallout: {
       headline: {
         en: "Need a practical study stack?",
-        fr: "Besoin d'une stack d'etude pratique ?"
+        fr: "Besoin d'une stack d'étude pratique ?"
       },
       description: {
         en: "Use the student productivity workspace and weekly roadmap to execute this CS plan without burnout.",
-        fr: "Utilise l'espace productivité et la roadmap hebdomadaire pour executer ce plan CS sans burnout."
+        fr: "Utilisez l'espace productivité et la roadmap hebdomadaire pour exécuter ce plan CS sans burnout."
       },
       links: [
-        { label: { en: "Open student tools", fr: "Outils etudiants" }, href: "/resources", note: "Execution stack" },
+        { label: { en: "Open student tools", fr: "Outils étudiants" }, href: "/resources", note: "Execution stack" },
         { label: { en: "See internship roadmap", fr: "Voir la roadmap stage" }, href: "/blog/student-ai-internship-roadmap", note: "Career path" }
       ]
     },
@@ -1467,7 +1467,7 @@ const basePosts: BlogPost[] = [
       },
       {
         source: "Princeton",
-        label: { en: "Algorithms, 4th edition site", fr: "Site Algorithms, 4e edition" },
+        label: { en: "Algorithms, 4th edition site", fr: "Site Algorithms, 4e édition" },
         href: "https://algs4.cs.princeton.edu/home/"
       },
       {
@@ -1503,7 +1503,7 @@ const basePosts: BlogPost[] = [
         title: "Roadmap informatique pour builders IA: ce qui compte vraiment",
         seoTitle: "Roadmap informatique pour builders IA",
         excerpt:
-          "Un plan CS cible pour étudiants IA qui veulent de meilleures performances, des systèmes propres et de meilleures reponses en entretien.",
+          "Un plan CS ciblé pour étudiants IA qui veulent de meilleures performances, des systèmes propres et de meilleures réponses en entretien.",
         content: [
           "Les étudiants en IA demandent souvent si l'informatique classique compte encore. Oui, et pour une raison précise plutôt que sentimentale : les fondamentaux font la différence entre une démonstration qui marche une fois et un produit qui continue de fonctionner. Tout ce qui suit apparaît dès la première rencontre avec une vraie charge ou de vraies données.",
           "Les algorithmes et structures de données rapportent immédiatement, pas à terme. Une étape de préparation avec la mauvaise complexité transforme un traitement de cinq minutes en travail nocturne, et le même raisonnement décide si votre recherche est assez rapide pour tenir dans un chemin de requête. C'est aussi le lien le plus direct entre votre code et votre facture cloud, puisque le temps de calcul se facture.",
@@ -1535,15 +1535,15 @@ const basePosts: BlogPost[] = [
     affiliateCallout: {
       headline: {
         en: "Ship this architecture as a real project",
-        fr: "Livre cette architecture comme vrai projet"
+        fr: "Livrez cette architecture comme vrai projet"
       },
       description: {
         en: "Use the deployment stack and comparison guides to turn this system design into a live, interview-ready demo.",
-        fr: "Utilise la stack de déploiement et les comparatifs pour transformer ce design en demo live prete entretien."
+        fr: "Utilisez la stack de déploiement et les comparatifs pour transformer ce design en démo live prête pour l'entretien."
       },
       links: [
         { label: { en: "Compare cloud platforms", fr: "Comparer les plateformes cloud" }, href: "/compare", note: "High intent" },
-        { label: { en: "Open deployment resources", fr: "Ressources de deploiement" }, href: "/resources", note: "Tool stack" }
+        { label: { en: "Open deployment resources", fr: "Ressources de déploiement" }, href: "/resources", note: "Tool stack" }
       ]
     },
     references: [
@@ -1564,7 +1564,7 @@ const basePosts: BlogPost[] = [
       },
       {
         source: "Stanford NLP",
-        label: { en: "Introduction to Information Retrieval", fr: "Introduction a la recherche d'information" },
+        label: { en: "Introduction to Information Retrieval", fr: "Introduction à la recherche d'information" },
         href: "https://nlp.stanford.edu/IR-book/information-retrieval-book.html"
       },
       {
@@ -1595,10 +1595,10 @@ const basePosts: BlogPost[] = [
         title: "Transformers, RAG et agents: guide système pour étudiants",
         seoTitle: "Transformers, RAG et agents: guide pour étudiants",
         excerpt:
-          "Comprendre comment les systèmes LLM modernes sont construits, quand utiliser chaque pattern et comment choisir une architecture portfolio credible.",
+          "Comprendre comment les systèmes LLM modernes sont construits, quand utiliser chaque pattern et comment choisir une architecture portfolio crédible.",
         content: [
           "Les transformeurs, la génération augmentée par recherche et les agents sont généralement présentés comme trois tendances distinctes. On les comprend mieux comme trois couches d'une même pile, chacune ajoutée pour résoudre un problème que la précédente ne pouvait pas traiter — et savoir quel problème chacune résout est ce qui vous évite d'ajouter une complexité inutile.",
-          "Le transformeur est la colonne vertébrale du modèle. Il prédit des jetons grâce à l'attention, ce qui lui permet de pondérer des parties éloignées de l'entrée au moment de produire chaque morceau de sortie. Ce qui compte en pratique est la conséquence : il connaît ses données d'entraînement et le contenu de sa fenêtre de contexte, et rien d'autre.",
+          "Le transformeur est la colonne vertébrale du modèle. Il prédit des tokens grâce à l'attention, ce qui lui permet de pondérer des parties éloignées de l'entrée au moment de produire chaque morceau de sortie. Ce qui compte en pratique est la conséquence : il connaît ses données d'entraînement et le contenu de sa fenêtre de contexte, et rien d'autre.",
           "La recherche existe à cause de cette limite. Plutôt que d'attendre du modèle qu'il ait mémorisé vos documents, vous récupérez les passages pertinents au moment de la requête et les placez dans le contexte. Cela résout d'un coup la fraîcheur et l'ancrage, et c'est pourquoi la recherche est le bon premier ajout pour presque tout projet reposant sur un corpus que le modèle n'a pas vu.",
           "La qualité de la recherche est surtout un problème de données, pas de modèle. La façon dont vous découpez les documents en fragments, les métadonnées conservées et la possibilité de remonter d'un passage à sa source déterminent la qualité des réponses bien plus que le choix du modèle d'embedding. Les étudiants règlent d'abord le modèle et le découpage en dernier : c'est l'ordre inverse.",
           "Les agents ajoutent une boucle de décision : le modèle choisit des outils, les appelle, lit les résultats et décide de la suite. Cela débloque réellement les tâches en plusieurs étapes, et cela multiplie tout aussi réellement les façons d'échouer — chaque étape est un endroit où se tromper, et les erreurs se cumulent au lieu de s'annuler.",

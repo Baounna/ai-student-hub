@@ -177,10 +177,10 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
           <p>
             {deliveryStatus === "sent"
               ? locale === "fr"
-                ? "Parfait. Verifie ta boite mail."
+                ? "Parfait. Verifiez votre boite mail."
                 : "Great. Check your inbox."
               : locale === "fr"
-                ? "Inscription enregistree. Tu recevras les prochaines mises a jour."
+                ? "Inscription enregistree. Vous recevrez les prochaines mises a jour."
                 : "Signup saved. You will receive upcoming updates."}
           </p>
           <a href={nextAction.href} className="do-link mt-1 inline-block">

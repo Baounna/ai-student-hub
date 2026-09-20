@@ -184,7 +184,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {fr
-                ? "Choisis un niveau de soutien selon ton budget."
+                ? "Choisissez un niveau de soutien selon votre budget."
                 : "Choose a support tier based on your budget."}
             </p>
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
@@ -217,7 +217,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
 
           <section className="surface rounded-2xl p-6">
             <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Ou va ton soutien" : "Where your support goes"}
+              {fr ? "Ou va votre soutien" : "Where your support goes"}
             </h2>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>- {fr ? "Production de contenu EN/FR a haute valeur pratique." : "EN/FR content production with practical value."}</li>
@@ -238,7 +238,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {fr
-                  ? "Tu peux soutenir le projet via le guide etudiant ou en partageant AI and Cybersecurity News."
+                  ? "Vous pouvez soutenir le projet via le guide etudiant ou en partageant AI and Cybersecurity News."
                   : "You can support the project via the student guide or by sharing AI and Cybersecurity News."}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
@@ -263,7 +263,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Non. Tu peux soutenir ponctuellement ou mensuellement selon ton budget."
+                    ? "Non. Vous pouvez soutenir ponctuellement ou mensuellement selon votre budget."
                     : "No. You can support once or monthly based on your budget."}
                 </p>
               </div>
@@ -273,7 +273,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Cela depend du mode choisi et de tes parametres de confidentialite."
+                    ? "Cela depend du mode choisi et de vos parametres de confidentialite."
                     : "It depends on your selected payment method and privacy settings."}
                 </p>
               </div>
@@ -283,7 +283,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Oui: partage les articles, rejoins la newsletter et recommande le site a d'autres etudiants."
+                    ? "Oui: partagez les articles, rejoignez la newsletter et recommandez le site a d'autres etudiants."
                     : "Yes: share articles, join the newsletter, and recommend the site to other students."}
                 </p>
               </div>

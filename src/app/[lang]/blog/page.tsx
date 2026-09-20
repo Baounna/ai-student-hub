@@ -368,7 +368,7 @@ export default async function LocalizedBlogPage(
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {locale === "fr"
-                  ? "Essaie un autre mot-cle, ou explore les categories."
+                  ? "Essayez un autre mot-cle, ou explorez les categories."
                   : "Try another keyword, or explore categories below."}
               </p>
             </article>
@@ -436,7 +436,7 @@ export default async function LocalizedBlogPage(
           {!streamPosts.length && featuredPost ? (
             <article className="blog-aside-card rounded-2xl p-5 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Tu as atteint la fin du flux actuel. Reviens bientot pour les prochains guides."
+                ? "Vous avez atteint la fin du flux actuel. Revenez bientot pour les prochains guides."
                 : "You reached the end of the current stream. Check back soon for new guides."}
             </article>
           ) : null}

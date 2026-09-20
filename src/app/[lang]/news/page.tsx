@@ -310,7 +310,7 @@ export default async function LocalizedNewsPage(
           <article className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
             <p className="text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Aucun nouvel item pour le moment. Reviens plus tard pour les prochaines mises a jour."
+                ? "Aucun nouvel item pour le moment. Revenez plus tard pour les prochaines mises a jour."
                 : "No new items yet. Check back soon for fresh updates."}
             </p>
           </article>
@@ -428,7 +428,7 @@ export default async function LocalizedNewsPage(
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {locale === "fr"
-                  ? "Essaie un autre theme, ou reviens au flux principal."
+                  ? "Essayez un autre theme, ou revenez au flux principal."
                   : "Try another topic, or go back to the full stream."}
               </p>
               <Link href={`/${locale}/news`} className="btn-secondary mt-4 inline-block">

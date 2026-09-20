@@ -64,7 +64,7 @@ export async function LatestUpdatesBlock({ locale, limit = 6, compact = false, c
         <div className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
           <p className="text-sm text-[color:var(--text)]">
             {fr
-              ? "Les flux externes sont temporairement indisponibles. Reessaie plus tard."
+              ? "Les flux externes sont temporairement indisponibles. Reessayez plus tard."
               : "External feeds are temporarily unavailable. Please retry shortly."}
           </p>
         </div>

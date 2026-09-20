@@ -271,11 +271,11 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
       <section className="blog-aside-card mt-5 rounded-2xl p-5">
         <p className="do-kicker">{locale === "fr" ? "Start here" : "Start here"}</p>
         <h2 className="font-display section-title mt-2 font-semibold text-[color:var(--text-strong)]">
-          {locale === "fr" ? "Passe de la lecture a l'action en 3 clics" : "Move from reading to execution in 3 clicks"}
+          {locale === "fr" ? "Passez de la lecture a l'action en 3 clics" : "Move from reading to execution in 3 clicks"}
         </h2>
         <p className="mt-2 text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? "Choisis ton prochain pas: stages, outils, ou guide carriere."
+            ? "Choisissez votre prochain pas: stages, outils, ou guide carriere."
             : "Pick your next action: internships, tools, or the career guide."}
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
@@ -511,10 +511,10 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {bridgeTrack === "cs"
                   ? locale === "fr"
-                    ? "Connecte cet article IA avec des fondamentaux systeme/backend pour renforcer ta fiabilite produit."
+                    ? "Connectez cet article IA avec des fondamentaux systeme/backend pour renforcer votre fiabilite produit."
                     : "Connect this AI article with system/backend fundamentals to strengthen product reliability."
                   : locale === "fr"
-                    ? "Connecte cet article CS avec des patterns IA/LLM pour transformer ton socle technique en projets differenciants."
+                    ? "Connectez cet article CS avec des patterns IA/LLM pour transformer votre socle technique en projets differenciants."
                     : "Connect this CS article with AI/LLM patterns to turn technical depth into differentiated projects."}
               </p>
               <div className="mt-4 grid gap-3 md:grid-cols-3">

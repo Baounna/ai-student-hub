@@ -407,7 +407,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Passe de l'actualite a l'execution avec ces pages a fort ROI."
+                ? "Passez de l'actualite a l'execution avec ces pages a fort ROI."
                 : "Move from news to execution with these high-ROI pages."}
             </p>
             <p className="mt-2 text-xs text-[color:var(--muted)]">

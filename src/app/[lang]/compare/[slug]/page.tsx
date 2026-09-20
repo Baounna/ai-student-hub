@@ -252,7 +252,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
             >
               <p className="text-sm text-[color:var(--text)]">
                 {fr
-                  ? "Aucun lien outil actif pour ce guide. Utilise la page resources pour les options disponibles."
+                  ? "Aucun lien outil actif pour ce guide. Utilisez la page resources pour les options disponibles."
                   : "No active tool links are available for this guide. Use the resources page for available options."}
               </p>
             </section>
@@ -263,9 +263,9 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
               {fr ? "Cadre de decision" : "Decision framework"}
             </h2>
             <ul className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
-              <li>1. {fr ? "Priorise la vitesse de mise en ligne, pas la liste de features." : "Prioritize time-to-deploy over feature lists."}</li>
-              <li>2. {fr ? "Fixe une limite de depense mensuelle claire." : "Set a strict monthly spending cap."}</li>
-              <li>3. {fr ? "Choisis l'option qui facilite le shipping portfolio." : "Pick the option that removes shipping friction."}</li>
+              <li>1. {fr ? "Priorisez la vitesse de mise en ligne, pas la liste de features." : "Prioritize time-to-deploy over feature lists."}</li>
+              <li>2. {fr ? "Fixez une limite de depense mensuelle claire." : "Set a strict monthly spending cap."}</li>
+              <li>3. {fr ? "Choisissez l'option qui facilite le shipping portfolio." : "Pick the option that removes shipping friction."}</li>
             </ul>
             <AffiliateDisclosureInline locale={locale} className="mt-4 text-xs text-[color:var(--muted)]" />
           </section>
@@ -347,7 +347,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
             </h3>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {fr
-                ? "Commence par l'option recommandee puis optimise apres 7 jours de retour terrain."
+                ? "Commencez par l'option recommandee puis optimisez apres 7 jours de retour terrain."
                 : "Start with the recommended option, then optimize after 7 days of real usage."}
             </p>
             <div className="mt-3 flex flex-col gap-2">

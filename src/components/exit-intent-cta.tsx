@@ -8,7 +8,7 @@ export function ExitIntentCta({ locale = "en" }: { locale?: Locale }) {
     locale === "fr"
       ? {
           badge: "Avant de partir",
-          title: "Vois les stages ouverts avant de partir",
+          title: "Voyez les stages ouverts avant de partir",
           body: "Stages et alternances IA et cybersecurite au Maroc et en France. Nouvelle liste chaque semaine.",
           cta1: "Voir les stages",
           cta2: "Voir les ressources"

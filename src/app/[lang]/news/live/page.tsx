@@ -135,7 +135,7 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {fr
-                  ? "Les flux externes n'ont pas repondu pour le moment. Reessaie plus tard."
+                  ? "Les flux externes n'ont pas repondu pour le moment. Reessayez plus tard."
                   : "External feeds did not respond yet. Please retry later."}
               </p>
             </article>

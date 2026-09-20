@@ -133,13 +133,13 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           },
           {
             title: "2) Choisir les outils",
-            body: "Choisis une stack avec comparatifs clairs, budget-friendly, et compromis reels.",
+            body: "Choisissez une stack avec comparatifs clairs, budget-friendly, et compromis reels.",
             href: `/${locale}/compare`,
             cta: "Ouvrir le lab outils"
           },
           {
             title: "3) Passer a l'action",
-            body: "Ouvre la liste des stages ouverts, puis le guide carriere.",
+            body: "Ouvrez la liste des stages ouverts, puis le guide carriere.",
             href: `/${locale}/product/ai-career-guide`,
             cta: "Lancer l'execution"
           }
@@ -171,7 +171,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           {
             label: "Pour tous",
             title: "News + outils + briefs",
-            body: "Suis les updates officielles IA/CS, ouvre les outils utiles, puis applique les briefs pratiques.",
+            body: "Suivez les updates officielles IA/CS, ouvrez les outils utiles, puis appliquez les briefs pratiques.",
             links: [
               { href: `/${locale}/news`, text: "Actualites" },
               { href: `/${locale}/compare`, text: "Outils" },
@@ -561,7 +561,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           <div className="p-4">
             <p className="text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Selection automatique depuis des sources fiables. Utilise ces signaux pour choisir ton prochain article."
+                ? "Selection automatique depuis des sources fiables. Utilisez ces signaux pour choisir votre prochain article."
                 : "Auto-selected from trusted sources. Use these signals to choose your next article."}
             </p>
             {autoUpdates.length ? (
@@ -617,23 +617,23 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             <ul className="space-y-2">
               <li>
                 {locale === "fr"
-                  ? "1. Choisis un signal IA/CS important de la semaine."
+                  ? "1. Choisissez un signal IA/CS important de la semaine."
                   : "1. Pick one important AI + Cybersecurity update from this week."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "2. Construis une mini demo ou un mini exercice pratique."
+                  ? "2. Construisez une mini demo ou un mini exercice pratique."
                   : "2. Build a mini demo or practical exercise from it."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "3. Documente ce que tu as appris et partage les references."
+                  ? "3. Documentez ce que vous avez appris et partagez les references."
                   : "3. Document what you learned and share references."}
               </li>
             </ul>
             <div className="rounded border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Repere: suis ton nombre de projets finalises, la qualite de documentation, et la constance."
+                ? "Repere: suivez votre nombre de projets finalises, la qualite de documentation, et la constance."
                 : "Reference: track completed projects, documentation quality, and consistency."}
             </div>
             <div className="flex flex-wrap gap-2">

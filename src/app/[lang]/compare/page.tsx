@@ -109,7 +109,7 @@ export default async function LocalizedCompareIndexPage(
     ? [
         {
           q: "Quel guide ouvrir en premier ?",
-          a: "Commence par le guide cloud. C'est souvent le blocage principal quand on veut livrer vite un projet concret."
+          a: "Commencez par le guide cloud. C'est souvent le blocage principal quand on veut livrer vite un projet concret."
         },
         {
           q: "Combien de temps pour choisir une stack ?",
@@ -117,7 +117,7 @@ export default async function LocalizedCompareIndexPage(
         },
         {
           q: "Comment eviter d'acheter des outils inutiles ?",
-          a: "Fixe une limite budget mensuelle, compare les compromis, puis valide avec un sprint reel de 7 jours."
+          a: "Fixez une limite budget mensuelle, comparez les compromis, puis validez avec un sprint reel de 7 jours."
         }
       ]
     : [
@@ -268,7 +268,7 @@ export default async function LocalizedCompareIndexPage(
               {
                 title: fr ? "Etape 1: Contraintes" : "Step 1: Constraints",
                 body: fr
-                  ? "Definis ton plafond budget, la vitesse de livraison cible, et les exigences minimum."
+                  ? "Definissez votre plafond budget, la vitesse de livraison cible, et les exigences minimum."
                   : "Set your budget cap, target shipping speed, and minimum requirements."
               },
               {
@@ -280,7 +280,7 @@ export default async function LocalizedCompareIndexPage(
               {
                 title: fr ? "Etape 3: Execution" : "Step 3: Execution",
                 body: fr
-                  ? "Choisis une option, livre en 7 jours, puis optimise selon tes retours terrain."
+                  ? "Choisissez une option, livrez en 7 jours, puis optimisez selon vos retours terrain."
                   : "Pick one option, ship in 7 days, then optimize from real usage feedback."
               }
             ].map((step) => (
@@ -378,7 +378,7 @@ export default async function LocalizedCompareIndexPage(
             ) : (
               <div className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 text-sm text-[color:var(--text)]">
                 {fr
-                  ? "Aucun outil ne correspond a ta recherche. Essaie NotebookLM, Antigravity, Anki, Notion, ou Quizlet."
+                  ? "Aucun outil ne correspond a votre recherche. Essayez NotebookLM, Antigravity, Anki, Notion, ou Quizlet."
                   : "No tools match your search. Try NotebookLM, Antigravity, Anki, Notion, or Quizlet."}
               </div>
             )}

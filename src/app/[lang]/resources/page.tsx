@@ -60,7 +60,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
       title: locale === "fr" ? "Stack Starter" : "Starter Stack",
       summary:
         locale === "fr"
-          ? "Minimum viable stack pour lancer ton premier projet deploye."
+          ? "Minimum viable stack pour lancer votre premier projet deploye."
           : "Minimum viable stack to ship your first deployed AI project.",
       items: [
         recommendedTools[0]?.name ?? "Cloud Deploy Stack",
@@ -92,7 +92,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
       ? [
           {
             q: "Comment choisir un outil quand mon budget est limite ?",
-            a: "Commence par l'option qui te permet de deployer vite avec un cout previsible. Priorise vitesse + fiabilite avant les fonctionnalites avancees."
+            a: "Commencez par l'option qui vous permet de deployer vite avec un cout previsible. Priorisez vitesse + fiabilite avant les fonctionnalites avancees."
           },
           {
             q: "Combien d'outils dois-je utiliser au debut ?",
@@ -100,7 +100,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
           },
           {
             q: "Comment savoir si un outil ameliore vraiment mon profil ?",
-            a: "Mesure le resultat: demo en ligne, documentation claire, et meilleure qualite de candidature apres 30 jours."
+            a: "Mesurez le resultat: demo en ligne, documentation claire, et meilleure qualite de candidature apres 30 jours."
           }
         ]
       : [
@@ -267,29 +267,29 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Plan simple pour structurer ton apprentissage, tes mini-projets et ta documentation."
+                ? "Plan simple pour structurer votre apprentissage, vos mini-projets et votre documentation."
                 : "Simple plan to structure your learning, mini projects, and documentation."}
             </p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
                 {locale === "fr"
-                  ? "1. Choisis un sujet utile par semaine et publie un recap clair."
+                  ? "1. Choisissez un sujet utile par semaine et publiez un recap clair."
                   : "1. Pick one useful topic each week and publish a clear recap."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "2. Ajoute un exemple pratique ou une mini-demo pour chaque sujet."
+                  ? "2. Ajoutez un exemple pratique ou une mini-demo pour chaque sujet."
                   : "2. Add one practical example or mini demo for each topic."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "3. Mets a jour tes notes et references pour consolider tes acquis."
+                  ? "3. Mettez a jour vos notes et references pour consolider vos acquis."
                   : "3. Update your notes and references to consolidate your progress."}
               </li>
             </ul>
             <p className="mt-3 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Repere: suis le nombre de projets finalises, la clarte de ton portfolio, et ta regularite."
+                ? "Repere: suivez le nombre de projets finalises, la clarte de votre portfolio, et votre regularite."
                 : "Reference: track completed projects, portfolio clarity, and weekly consistency."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -396,7 +396,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Utilise le template du lab outils pour choisir la meilleure option selon ton budget étudiant."
+                ? "Utilisez le template du lab outils pour choisir la meilleure option selon votre budget étudiant."
                 : "Use the tools-lab template to choose the best option by budget constraints and deployment speed."}
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
