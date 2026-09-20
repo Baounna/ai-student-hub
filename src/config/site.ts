@@ -122,14 +122,15 @@ export const siteConfig = {
     enUrl: envValue("NEXT_PUBLIC_LEAD_MAGNET_URL_EN") || "/en#newsletter",
     frUrl: envValue("NEXT_PUBLIC_LEAD_MAGNET_URL_FR") || "/fr#newsletter"
   },
+  // Only what the donate page reads. primaryUrl, stripeUrl, koFiUrl and
+  // githubSponsorsUrl were all defined here and consumed nowhere — config that
+  // invites someone to go and create a Ko-fi account for a field no page would
+  // render. The Buy Me a Coffee and Ko-fi handles this pointed at never
+  // existed: buymeacoffee.com/aistudenthub returns 404.
   donation: {
-    primaryUrl: envValue("NEXT_PUBLIC_DONATION_PRIMARY_URL"),
-    stripeUrl: envValue("NEXT_PUBLIC_DONATION_STRIPE_URL"),
     paypalUrl: envValue("NEXT_PUBLIC_DONATION_PAYPAL_URL"),
     cardUrl: envValue("NEXT_PUBLIC_DONATION_CARD_URL") || envValue("NEXT_PUBLIC_PRODUCT_CHECKOUT_URL"),
-    cardLabel: envValue("NEXT_PUBLIC_DONATION_CARD_LABEL") || "Card checkout",
-    koFiUrl: envValue("NEXT_PUBLIC_DONATION_KOFI_URL"),
-    githubSponsorsUrl: envValue("NEXT_PUBLIC_DONATION_GITHUB_SPONSORS_URL")
+    cardLabel: envValue("NEXT_PUBLIC_DONATION_CARD_LABEL") || "Card checkout"
   },
   // This said "we may earn a commission" while every outbound link was a plain
   // homepage URL carrying only UTM analytics tags and no referral ID of ours.

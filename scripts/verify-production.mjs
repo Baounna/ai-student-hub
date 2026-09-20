@@ -259,12 +259,12 @@ for (const placement of ["home", "resources", "blog", "comparison"]) {
   if (!covered) warn(`No affiliate placement covering "${placement}".`);
 }
 
+// Only the two the donate page renders. Counting variables no page reads
+// meant this could report "donation links configured" while the page showed
+// none, which it did until today.
 const donationLinks = [
-  env.NEXT_PUBLIC_DONATION_PRIMARY_URL,
   env.NEXT_PUBLIC_DONATION_PAYPAL_URL,
-  env.NEXT_PUBLIC_DONATION_CARD_URL,
-  env.NEXT_PUBLIC_DONATION_KOFI_URL,
-  env.NEXT_PUBLIC_DONATION_GITHUB_SPONSORS_URL
+  env.NEXT_PUBLIC_DONATION_CARD_URL
 ].filter((value) => isUrl(value || ""));
 
 if (!donationLinks.length) {
