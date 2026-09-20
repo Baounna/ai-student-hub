@@ -23,6 +23,8 @@ const COPY = {
     empty: "No openings listed yet. The first entries go up this week.",
     closed: "Closed",
     deadline: "Apply by",
+    rolling: "Open until filled - no closing date given",
+    checked: "link checked",
     apply: "View the offer",
     source: "via",
     updated: "Last checked",
@@ -39,6 +41,8 @@ const COPY = {
     empty: "Aucune offre pour le moment. Les premières arrivent cette semaine.",
     closed: "Clôturée",
     deadline: "Candidater avant le",
+    rolling: "Ouverte jusqu'à pourvoi - aucune date limite annoncée",
+    checked: "lien vérifié le",
     apply: "Voir l'offre",
     source: "via",
     updated: "Dernière vérification",
@@ -141,9 +145,15 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
                 </p>
 
                 <div className="mt-3 flex flex-wrap items-center gap-3">
-                  <span className="text-sm text-[color:var(--text)]">
-                    {copy.deadline} {dateFmt.format(new Date(`${stage.deadline}T12:00:00Z`))}
-                  </span>
+                  {/* An entry with no published closing date says so plainly.
+                      Showing a date we made up would be worse than showing none. */}
+                  {stage.deadline ? (
+                    <span className="text-sm text-[color:var(--text)]">
+                      {copy.deadline} {dateFmt.format(new Date(`${stage.deadline}T12:00:00Z`))}
+                    </span>
+                  ) : (
+                    <span className="text-sm text-[color:var(--muted)]">{copy.rolling}</span>
+                  )}
                   {!closed ? (
                     <a href={stage.href} target="_blank" rel="noopener noreferrer" className="btn-secondary px-3 py-1.5 text-xs">
                       {copy.apply}
@@ -152,6 +162,11 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
                   {stage.source ? (
                     <span className="text-xs text-[color:var(--muted)]">
                       {copy.source} {stage.source}
+                    </span>
+                  ) : null}
+                  {stage.checkedAt ? (
+                    <span className="text-xs text-[color:var(--muted)]">
+                      {copy.checked} {dateFmt.format(new Date(`${stage.checkedAt}T12:00:00Z`))}
                     </span>
                   ) : null}
                 </div>

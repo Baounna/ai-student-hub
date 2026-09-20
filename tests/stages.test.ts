@@ -11,17 +11,35 @@ describe("stages data", () => {
 
   it("every entry has the fields the page renders", () => {
     for (const item of raw.items) {
-      for (const field of ["id", "role", "company", "city", "country", "kind", "deadline", "href"]) {
+      for (const field of ["id", "role", "company", "city", "country", "kind", "href"]) {
         expect(item[field], `${String(item.id)} is missing ${field}`).toBeTruthy();
       }
     }
   });
 
-  it("deadlines are real dates in YYYY-MM-DD", () => {
+  // A deadline is optional because most postings publish none. When one is
+  // present it has to be a real date; when absent the field must be absent
+  // rather than an empty string or a placeholder standing in for a fact.
+  it("deadlines, where present, are real dates in YYYY-MM-DD", () => {
     for (const item of raw.items) {
+      if (item.deadline === undefined) continue;
       const d = String(item.deadline);
       expect(d, `${String(item.id)} has a malformed deadline`).toMatch(/^\d{4}-\d{2}-\d{2}$/);
       expect(Number.isFinite(Date.parse(`${d}T12:00:00Z`))).toBe(true);
+    }
+  });
+
+  it("never stores an empty deadline instead of omitting it", () => {
+    for (const item of raw.items) {
+      expect(item.deadline, `${String(item.id)} has a blank deadline`).not.toBe("");
+      expect(item.deadline).not.toBeNull();
+    }
+  });
+
+  it("records when each link was last checked", () => {
+    for (const item of raw.items) {
+      const checked = String(item.checkedAt ?? "");
+      expect(checked, `${String(item.id)} has no checkedAt`).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     }
   });
 
@@ -78,5 +96,22 @@ describe("ordering", () => {
     const stage = { deadline: "2026-11-15" } as Parameters<typeof isClosed>[0];
     expect(isClosed(stage, Date.parse("2026-11-15T09:00:00Z"))).toBe(false);
     expect(isClosed(stage, Date.parse("2026-11-16T00:00:01Z"))).toBe(true);
+  });
+
+  // Marking a rolling posting "Closed" costs a student the application they
+  // would have sent. Not knowing the cutoff is not the same as knowing it passed.
+  it("never calls a posting with no stated deadline closed", () => {
+    const rolling = {} as Parameters<typeof isClosed>[0];
+    expect(isClosed(rolling, Date.parse("2030-01-01T00:00:00Z"))).toBe(false);
+  });
+
+  it("shows dated openings before rolling ones", () => {
+    const now = Date.parse("2026-10-01T00:00:00Z");
+    const sample = getStages(now).filter((s) => !isClosed(s, now));
+    let seenRolling = false;
+    for (const stage of sample) {
+      if (!stage.deadline) seenRolling = true;
+      else expect(seenRolling, `${stage.id} is dated but follows a rolling entry`).toBe(false);
+    }
   });
 });

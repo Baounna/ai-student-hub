@@ -15,8 +15,18 @@ export type Stage = {
   duration?: string;
   level?: string;
   remote?: StageRemote;
-  /** YYYY-MM-DD. The date applications close. */
-  deadline: string;
+  /**
+   * YYYY-MM-DD, and genuinely optional: most postings are open until filled
+   * and publish no closing date at all. Inventing a plausible one would put a
+   * fabricated date in front of a student deciding when to apply, which is the
+   * same untruth this site spent a fortnight removing. Absent means absent.
+   */
+  deadline?: string;
+  /**
+   * YYYY-MM-DD. When the link was last confirmed to be live. For an entry with
+   * no closing date this is the only honest freshness signal available.
+   */
+  checkedAt?: string;
   postedAt?: string;
   href: string;
   source?: string;
@@ -54,6 +64,10 @@ export function isStagesListStale(now = Date.now()) {
 
 /** A deadline that has passed. Kept visible: hiding it hides the maintenance. */
 export function isClosed(stage: Stage, now = Date.now()) {
+  // No stated closing date is not the same as closed. We do not know, and
+  // saying "Closed" on a position still taking applications costs a student
+  // the application they did not send.
+  if (!stage.deadline) return false;
   const end = Date.parse(`${stage.deadline}T23:59:59Z`);
   return Number.isFinite(end) ? end < now : false;
 }
@@ -64,7 +78,13 @@ export function getStages(now = Date.now()) {
     const bClosed = isClosed(b, now);
     // Open first, then soonest deadline — the order someone applying needs.
     if (aClosed !== bClosed) return aClosed ? 1 : -1;
-    return a.deadline.localeCompare(b.deadline);
+    // Among open entries, a stated cutoff is the urgent one, so dated entries
+    // come first and rolling ones follow in a stable alphabetical order.
+    const aDated = Boolean(a.deadline);
+    const bDated = Boolean(b.deadline);
+    if (aDated !== bDated) return aDated ? -1 : 1;
+    if (a.deadline && b.deadline) return a.deadline.localeCompare(b.deadline);
+    return a.company.localeCompare(b.company) || a.role.localeCompare(b.role);
   });
 }
 
