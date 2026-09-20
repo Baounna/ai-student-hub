@@ -163,6 +163,12 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                   inactiveClassName={desktopNavInactive}
                 />
                 <NavTabLink
+                  href={`/${locale}/stages`}
+                  label={locale === "fr" ? "Stages" : "Internships"}
+                  activeClassName={desktopNavActive}
+                  inactiveClassName={desktopNavInactive}
+                />
+                <NavTabLink
                   href={`/${locale}/compare`}
                   label={toolsLabel}
                   activeClassName={desktopNavActive}
@@ -205,6 +211,13 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
               <NavTabLink
                 href={`/${locale}/resources`}
                 label={dict.nav.resources}
+                activeClassName={mobileNavActive}
+                inactiveClassName={mobileNavInactive}
+                className="snap-start"
+              />
+              <NavTabLink
+                href={`/${locale}/stages`}
+                label={locale === "fr" ? "Stages" : "Internships"}
                 activeClassName={mobileNavActive}
                 inactiveClassName={mobileNavInactive}
                 className="snap-start"

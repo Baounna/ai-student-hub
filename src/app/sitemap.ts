@@ -3,6 +3,7 @@ import { comparisons, getAllCategories, getAllTags, posts, slugify } from "@/con
 import { newsBriefs } from "@/content/news";
 import { locales } from "@/i18n/config";
 import { absoluteUrl } from "@/lib/site-url";
+import { getStagesUpdatedAt } from "@/content/stages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -25,11 +26,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { route: "/about", priority: 0.68, changeFrequency: "monthly" as const },
       { route: "/resources", priority: 0.9, changeFrequency: "weekly" as const },
       { route: "/compare", priority: 0.9, changeFrequency: "weekly" as const },
+      { route: "/stages", priority: 0.93, changeFrequency: "weekly" as const },
       { route: "/donate", priority: 0.52, changeFrequency: "monthly" as const },
       { route: "/product/ai-career-guide", priority: 0.86, changeFrequency: "weekly" as const }
     ].map((item) => ({
       url: absoluteUrl(`/${locale}${item.route}`),
-      lastModified: now,
+      // The stages list changes when the data changes, not when the site
+      // deploys. A lastmod that never advances teaches a crawler to stop
+      // looking, which is the opposite of what a weekly list needs.
+      lastModified: item.route === "/stages" ? new Date(getStagesUpdatedAt()) : now,
       changeFrequency: item.changeFrequency,
       priority: item.priority
     }))

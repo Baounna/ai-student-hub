@@ -131,6 +131,53 @@ async function checkContentFreshness() {
   }
 }
 
+
+/**
+ * The stages list is the one thing here that rots by standing still: a page of
+ * deadlines looks maintained while every date on it passes. The page admits its
+ * own age to readers; this tells the publisher before it gets that far.
+ *
+ * Deliberately more patient than the page. Readers see a notice at 14 days;
+ * this only raises an issue at 21, so a single busy fortnight is not an alarm.
+ */
+const STAGES_STALE_AFTER_DAYS = Number.parseInt(process.env.WATCHDOG_STAGES_MAX_AGE_DAYS || "21", 10);
+
+async function checkStagesFreshness() {
+  try {
+    const raw = await fs.readFile(path.join(process.cwd(), "src/content/stages.json"), "utf8");
+    const data = JSON.parse(raw);
+    const items = Array.isArray(data.items) ? data.items : [];
+
+    if (items.length === 0) {
+      record("Stages list", true, "no entries yet — nothing to go stale");
+      return;
+    }
+
+    const updated = Date.parse(data.updatedAt);
+    if (!Number.isFinite(updated)) {
+      record("Stages list", false, "stages.json has no readable updatedAt");
+      return;
+    }
+
+    const ageDays = Math.floor((Date.now() - updated) / 86_400_000);
+    const now = Date.now();
+    const open = items.filter((i) => Date.parse(`${i.deadline}T23:59:59Z`) >= now).length;
+
+    if (ageDays > STAGES_STALE_AFTER_DAYS) {
+      record("Stages list", false,
+        `not updated for ${ageDays} days (limit ${STAGES_STALE_AFTER_DAYS}) — ${open} of ${items.length} still open`);
+      return;
+    }
+    if (open === 0) {
+      record("Stages list", false, `all ${items.length} entries have closed — the page has nothing to offer`);
+      return;
+    }
+    record("Stages list", true, `${open} open of ${items.length}, updated ${ageDays}d ago`);
+  } catch (error) {
+    record("Stages list", false, `cannot read stages.json — ${String(error?.message || error).slice(0, 70)}`);
+  }
+}
+
 /**
  * The exact failure that caused the outage. `npm ci` refuses to install when
  * package-lock.json has drifted from package.json, which takes down every
@@ -306,6 +353,7 @@ async function run() {
 
   await checkLiveSite();
   await checkContentFreshness();
+  await checkStagesFreshness();
   await checkLockfile();
   await checkVulnerabilities();
   await checkWorkflowHealth();
