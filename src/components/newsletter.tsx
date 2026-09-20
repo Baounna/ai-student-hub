@@ -106,10 +106,15 @@ export function Newsletter({ compact = false, locale = "en", source }: Newslette
         <>
           <p className="mt-3 text-xs text-[color:var(--muted)]">{cadenceLine}</p>
           <NewsletterForm locale={locale} source={source} ctaLabel={dict.cta} />
+          {/* This line survived the rewrite and still described the old
+              newsletter: "news briefs + actionable weekly systems". The three
+              bullets directly above it now promise internships, and the
+              cadence line promises one email. Two different offers in one box
+              is how a reader decides you do not know what you send. */}
           <p className="mt-3 text-xs text-[color:var(--muted)]">
             {locale === "fr"
-              ? "Pas de spam. Briefs actualite + systemes actionnables pour etudiants IA/CS."
-              : "No spam. News briefs + actionable weekly systems for AI + Cybersecurity students."}
+              ? "Pas de spam. Desinscription en un clic."
+              : "No spam. One click to unsubscribe."}
           </p>
         </>
       ) : (
