@@ -76,7 +76,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       blog: "Blog",
       resources: "Resources",
       about: "About",
-      roadmap: "Free Roadmap"
+      roadmap: "Internships"
     },
     footer: {
       title: "AI and Cybersecurity News",
@@ -84,7 +84,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       resources: "Resources",
       tutorials: "Tutorials",
       tools: "Recommended Tools",
-      roadmap: "Free Roadmap",
+      roadmap: "Internships",
       contact: "Contact",
       newsletter: "Newsletter",
       copyright: "All rights reserved."
@@ -94,7 +94,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       headline: "AI + Cybersecurity News and Execution Guides for Real Builders",
       subheadline:
         "Execution-first updates, tools, and guides for builders, learners, teams, and researchers. Students keep a dedicated path for roadmap, career, and budget-friendly workflows.",
-      ctaPrimary: "Get Free AI Career Roadmap",
+      ctaPrimary: "See open internships",
       ctaSecondary: "Explore Blog",
       trust: [
         "Project-first playbooks",
@@ -156,7 +156,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       blog: "Blog",
       resources: "Ressources",
       about: "À propos",
-      roadmap: "Roadmap gratuite"
+      roadmap: "Stages"
     },
     footer: {
       title: "AI and Cybersecurity News",
@@ -164,7 +164,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       resources: "Ressources",
       tutorials: "Tutoriels",
       tools: "Outils recommandés",
-      roadmap: "Roadmap gratuite",
+      roadmap: "Stages",
       contact: "Contact",
       newsletter: "Newsletter",
       copyright: "Tous droits réservés."
@@ -174,7 +174,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       headline: "Actualites et guides d'execution IA + cybersecurite pour tous",
       subheadline:
         "Updates, outils, et guides orientes execution pour builders, apprenants, equipes, et chercheurs. Les etudiants gardent un parcours dedie roadmap, carriere, et budget-friendly.",
-      ctaPrimary: "Obtenir la roadmap IA",
+      ctaPrimary: "Voir les stages ouverts",
       ctaSecondary: "Explorer le blog",
       trust: [
         "Playbooks orientes projet",
