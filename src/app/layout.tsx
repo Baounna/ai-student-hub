@@ -65,9 +65,13 @@ export const metadata: Metadata = {
   creator: "AI and Cybersecurity News",
   publisher: "AI and Cybersecurity News",
   authors: [{ name: siteConfig.authorName || "AI and Cybersecurity News", url: getSiteUrl() }],
+  // The suffix used to be " | AI and Cybersecurity News" — 28 characters on
+  // every one of 245 pages, against a budget Google truncates at roughly 60.
+  // On the home page it named the brand twice. A short mark keeps the
+  // attribution a reader wants without spending half the title on it.
   title: {
-    default: "AI and Cybersecurity News | AI + Cybersecurity Signals for Real Builders",
-    template: "%s | AI and Cybersecurity News"
+    default: "AI + Cybersecurity Signals for Real Builders",
+    template: "%s | AICyber"
   },
   description:
     "AI + Cybersecurity Signals for Real Builders. Trusted updates, practical tools, and execution guides for anyone who builds, learns, or works with AI.",

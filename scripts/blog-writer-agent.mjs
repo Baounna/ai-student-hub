@@ -79,7 +79,7 @@ const DRAFT_SCHEMA = {
   type: "object",
   additionalProperties: false,
   properties: {
-    titleEn: { type: "string", description: "SEO title in English, <= 70 chars, no clickbait." },
+    titleEn: { type: "string", description: "SEO title in English, <= 60 chars, no clickbait." },
     titleFr: { type: "string", description: "French translation of the title." },
     excerptEn: { type: "string", description: "1-2 sentence English meta description / excerpt." },
     excerptFr: { type: "string", description: "French translation of the excerpt." },

@@ -38,7 +38,7 @@ export async function generateMetadata(
   const categoryName = displayCategory(params.category);
 
   return {
-    title: `${dict.blog.title} - ${categoryName}`,
+    title: params.lang === "fr" ? `Articles ${categoryName}` : `${categoryName} articles`,
     description:
       params.lang === "fr"
         ? `Articles de la categorie ${categoryName} sur AI and Cybersecurity News.`

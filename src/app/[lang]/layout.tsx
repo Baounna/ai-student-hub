@@ -27,9 +27,11 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const dict = getDictionary(params.lang);
 
   return {
+    // See the note in src/app/layout.tsx: the long brand suffix cost 28
+    // characters on every page and pushed the median title to 97.
     title: {
       default: `AI and Cybersecurity News (${params.lang.toUpperCase()})`,
-      template: `%s | AI and Cybersecurity News`
+      template: `%s | AICyber`
     },
     description: dict.home.subheadline,
     keywords: getSeoKeywords(params.lang, "home"),

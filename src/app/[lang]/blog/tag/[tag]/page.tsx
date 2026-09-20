@@ -34,7 +34,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
   const tagName = displayTag(params.tag);
 
   return {
-    title: `${dict.blog.title} - #${tagName}`,
+    title: params.lang === "fr" ? `Articles #${tagName}` : `#${tagName} articles`,
     description:
       params.lang === "fr" ? `Articles avec le tag #${tagName} sur AI and Cybersecurity News.` : `Articles tagged #${tagName} on AI and Cybersecurity News.`,
     keywords: getSeoKeywords(params.lang, "blog", [
