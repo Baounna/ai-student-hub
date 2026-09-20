@@ -143,11 +143,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
       openCompare: "Open tools lab"
     },
     newsletter: {
-      badge: "Free AI Career Roadmap",
-      title: "Turn your next 30 days into portfolio and interview wins",
+      badge: "Stages and alternances, weekly",
+      title: "Open tech internships in Morocco and France",
       description:
-        "Get the exact weekly system to ship one AI project, publish authority content, and increase internship conversion.",
-      cta: "Get Free Roadmap"
+        "One email a week with new internships, alternances and PFE positions, each with its deadline and a direct link.",
+      cta: "See the list"
     }
   },
   fr: {
@@ -223,11 +223,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
       openCompare: "Ouvrir la section outils"
     },
     newsletter: {
-      badge: "Roadmap carrière IA gratuite",
-      title: "Transforme les 30 prochains jours en résultats concrets",
+      badge: "Stages et alternances, chaque semaine",
+      title: "Les stages tech ouverts au Maroc et en France",
       description:
-        "Reçois le système hebdomadaire pour livrer un projet IA, publier du contenu d'autorité et améliorer tes candidatures.",
-      cta: "Recevoir la roadmap"
+        "Un email par semaine avec les nouveaux stages, alternances et PFE, chacun avec sa date limite et un lien direct.",
+      cta: "Voir la liste"
     }
   }
 };

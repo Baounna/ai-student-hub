@@ -55,19 +55,22 @@ export function Newsletter({ compact = false, locale = "en", source }: Newslette
   const bullets =
     locale === "fr"
       ? [
-          "1. Top signaux IA/CS de la semaine en version actionnable",
-          "2. Plan sprint 30 jours avec jalons hebdomadaires",
-          "3. Workflow candidatures + preparation entretien"
+          "1. Les nouveaux stages, alternances et PFE de la semaine",
+          "2. Date limite et lien direct pour chaque offre",
+          "3. Maroc et France, filtrés pour les profils tech"
         ]
       : [
-          "1. Weekly AI + Cybersecurity signals translated into practical actions",
-          "2. 30-day sprint plan with weekly milestones",
-          "3. Application + interview prep workflow"
+          "1. New internships, apprenticeships and final-year projects each week",
+          "2. A deadline and a direct link for every listing",
+          "3. Morocco and France, filtered for technical roles"
         ];
+  // Promise only the cadence that is actually planned. The previous line also
+  // offered "occasional high-signal alerts", which is a second commitment
+  // nobody has made.
   const cadenceLine =
     locale === "fr"
-      ? "Frequence: 1 email principal par semaine + alertes importantes occasionnelles."
-      : "Cadence: 1 main email per week + occasional high-signal alerts.";
+      ? "Un email par semaine. Rien d'autre."
+      : "One email a week. Nothing else.";
 
   if (compact) {
     return (
