@@ -29,6 +29,32 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   };
 }
 
+
+/**
+ * A tier that does not pre-fill its amount is a label, not a choice.
+ *
+ * All three tiers pointed at the same URL, so picking $3 and picking $25 were
+ * the same click and the reader had to type the amount anyway — the tier UI
+ * implied a decision it never passed on. PayPal.me takes the amount as a path
+ * segment (paypal.me/name/10), verified against the live handle.
+ *
+ * Only PayPal is handled: other providers encode amounts differently, and a
+ * guessed format would silently drop the number. Anything else returns the
+ * plain link, which is what the tiers already did.
+ */
+function tierHref(baseHref: string | undefined, amount: string) {
+  if (!baseHref) return baseHref;
+  try {
+    const url = new URL(baseHref);
+    if (url.hostname !== "paypal.me" && url.hostname !== "www.paypal.me") return baseHref;
+    const value = amount.replace(/[^0-9.]/g, "");
+    if (!value) return baseHref;
+    return `${url.origin}${url.pathname.replace(/\/+$/, "")}/${value}`;
+  } catch {
+    return baseHref;
+  }
+}
+
 export default async function LocalizedDonatePage(props: { params: Promise<{ lang: string }> }) {
   const params = await props.params;
   if (!isLocale(params.lang)) return null;
@@ -172,7 +198,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                   <p className="mt-1 text-sm text-[color:var(--text)]">{tier.label}</p>
                   {hasLiveDonationLinks ? (
                     <a
-                      href={uniquePrimaryMethods[0]?.href}
+                      href={tierHref(uniquePrimaryMethods[0]?.href, tier.amount)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-primary mt-3 inline-flex"
