@@ -10,6 +10,7 @@ import { HeaderSettings } from "@/components/ui/header-settings";
 import { HeaderSearchForm } from "@/components/ui/header-search-form";
 import { HeaderSearchShortcut } from "@/components/ui/header-search-shortcut";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
+import { headers } from "next/headers";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
@@ -48,6 +49,14 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
   const locale: Locale = params.lang;
   const dict = getDictionary(locale);
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
+  // Switch language without losing the page. Falls back to the other home page
+  // when the path is unavailable, which is better than a dead link.
+  const otherLocale: Locale = locale === "fr" ? "en" : "fr";
+  const currentPath = (await headers()).get("x-pathname") || `/${locale}`;
+  const otherLocaleHref = currentPath.startsWith(`/${locale}`)
+    ? `/${otherLocale}${currentPath.slice(locale.length + 1)}` || `/${otherLocale}`
+    : `/${otherLocale}`;
+
   const donateHref = `/${locale}/donate`;
   const toolsLabel = locale === "fr" ? "Outils" : "Tools";
   const desktopNavActive =
@@ -84,6 +93,19 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
       <header className="relative md:sticky md:top-0 z-30 border-b border-[color:var(--border)] bg-[color:var(--surface-strong)] backdrop-blur-2xl">
         <div className="mx-auto max-w-6xl px-4 py-3 md:px-6">
           <div className="mb-2 hidden items-center justify-end gap-1 text-sm md:flex">
+            {/* A visible language switch. This lived only inside the settings
+                panel, so the French edition — every article, translated, for an
+                audience of French-speaking students — was reachable only by
+                someone who thought to open a gear icon. The differentiator was
+                hidden behind a preference. */}
+            <Link
+              href={otherLocaleHref}
+              hrefLang={otherLocale}
+              className="utility-link font-semibold"
+              aria-label={locale === "fr" ? "Read in English" : "Lire en francais"}
+            >
+              {otherLocale.toUpperCase()}
+            </Link>
             <Link href={donateHref} className="utility-link">
               {locale === "fr" ? "Faire un don" : "Donate"}
             </Link>
@@ -218,7 +240,15 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                 {locale === "fr" ? "Don" : "Donate"}
               </Link>
             </div>
-            <div className="mt-2 flex justify-end">
+            <div className="mt-2 flex items-center justify-end gap-2">
+              <Link
+                href={otherLocaleHref}
+                hrefLang={otherLocale}
+                className="rounded-lg border border-[color:var(--border)] px-2.5 py-1 text-xs font-semibold text-[color:var(--text)]"
+                aria-label={locale === "fr" ? "Read in English" : "Lire en francais"}
+              >
+                {otherLocale.toUpperCase()}
+              </Link>
               <HeaderSettings locale={locale} compact />
             </div>
             <HeaderSearchForm locale={locale} mobile />

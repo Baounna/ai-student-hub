@@ -91,11 +91,11 @@ export const siteConfig = {
   termsLegalEntity: envValue("TERMS_LEGAL_ENTITY") || legalName,
   founderBio: envLocaleValue("FOUNDER_BIO_EN", "FOUNDER_BIO_FR", {
     en: "Final-year AI student building production-style ML projects and helping engineering students convert projects into internships and early income.",
-    fr: "Etudiant en derniere annee d'IA, je construis des projets ML concrets et j'aide les etudiants a transformer leurs projets en stages et premiers revenus."
+    fr: "Étudiant en derniere annee d'IA, je construis des projets ML concrets et j'aide les étudiants a transformer leurs projets en stages et premiers revenus."
   }),
   linkedinShortBio: envLocaleValue("LINKEDIN_SHORT_BIO_EN", "LINKEDIN_SHORT_BIO_FR", {
     en: "Final-year AI student sharing project-first AI engineering systems for internships and early-career outcomes.",
-    fr: "Etudiant en derniere annee d'IA, je partage des systemes d'execution IA orientes projets pour stages et debut de carriere."
+    fr: "Étudiant en derniere annee d'IA, je partage des systèmes d'execution IA orientes projets pour stages et debut de carrière."
   }),
   authoritySignals: {
     en: [
@@ -105,9 +105,9 @@ export const siteConfig = {
       "EN/FR practical learning paths"
     ],
     fr: [
-      "Systemes IA orientes projet",
+      "Systèmes IA orientes projet",
       "Execution portfolio plutot que theorie passive",
-      "Concu pour stages et resultats carriere",
+      "Concu pour stages et resultats carrière",
       "Parcours pratiques EN/FR"
     ]
   },

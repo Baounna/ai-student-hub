@@ -134,7 +134,7 @@ const fallbackRecommendedTools: RecommendedTool[] = [
   {
     name: "CS + ML Learning Platform",
     icon: "/images/tool-course.svg",
-    category: { en: "Career/Interviews", fr: "Carriere/Entretiens" },
+    category: { en: "Career/Interviews", fr: "Carrière/Entretiens" },
     summary: {
       en: "Structured pathways for algorithms, backend engineering, MLOps, and interview preparation.",
       fr: "Parcours structurés pour algorithmes, backend, MLOps, et préparation aux entretiens."
@@ -149,7 +149,7 @@ const fallbackRecommendedTools: RecommendedTool[] = [
   {
     name: "Dev Workflow Workspace",
     icon: "/images/tool-productivity.svg",
-    category: { en: "Systems & Backend", fr: "Systemes & Backend" },
+    category: { en: "Systems & Backend", fr: "Systèmes & Backend" },
     summary: {
       en: "Run engineering sprints, API specs, architecture notes, and internship prep in one workspace.",
       fr: "Gère sprints d'ingénierie, specs API, notes d'architecture, et préparation stage en un seul espace."
@@ -254,7 +254,7 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
   {
     name: "Anki",
     icon: "https://www.google.com/s2/favicons?domain=apps.ankiweb.net&sz=256",
-    category: { en: "Memory System", fr: "Systeme de memorisation" },
+    category: { en: "Memory System", fr: "Système de mémorisation" },
     summary: {
       en: "Spaced-repetition flashcards to retain algorithms, formulas, and AI + Cybersecurity concepts long term.",
       fr: "Cartes a repetition espacee pour retenir durablement algorithmes, formules, et notions IA/CS."
@@ -302,7 +302,7 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
   {
     name: "Claude",
     icon: "https://www.google.com/s2/favicons?domain=claude.ai&sz=256",
-    category: { en: "Reading + Writing Assistant", fr: "Assistant lecture + ecriture" },
+    category: { en: "Reading + Writing Assistant", fr: "Assistant lecture + écriture" },
     summary: {
       en: "Summarize long technical documents and turn them into structured study plans.",
       fr: "Resume des documents techniques longs et les transforme en plans d'etude structures."
@@ -430,7 +430,7 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
   {
     name: "Grammarly",
     icon: "https://www.google.com/s2/favicons?domain=grammarly.com&sz=256",
-    category: { en: "Writing Assistant", fr: "Assistant d'ecriture" },
+    category: { en: "Writing Assistant", fr: "Assistant d'écriture" },
     summary: {
       en: "Improve assignment writing quality, internship emails, and project documentation.",
       fr: "Ameliore la qualite des rapports, emails de stage, et documentation de projet."
@@ -778,7 +778,7 @@ const basePosts: BlogPost[] = [
           "The most common version in a student project is preprocessing before splitting. You load the dataset, scale the features, impute the missing values, then call train_test_split. It reads naturally — clean the data, then divide it. But the scaler computed its mean and standard deviation over every row, including the ones about to become your test set, so the test rows were normalised using knowledge of themselves. The leak is small and the score inflation is real.",
           "The fix is mechanical: split first, then fit every transformation on the training half only. In scikit-learn this is exactly what Pipeline is for — it binds the transformations to the estimator so that cross-validation refits them inside each fold instead of once over everything. It is not a style preference. It is the difference between a number that means something and one that does not.",
           "The second form is a random split on data that has an order. Financial series, sensor readings, anything with a timestamp: shuffling means your model trains on Thursday to predict Wednesday. It will do well, because predicting the past from the future is easy and completely useless. Any dataset with time in it needs a split that respects time.",
-          "The third is duplicates, and it is the one that quietly ruins scraped datasets. If the same row — or a near-identical one — exists on both sides of the split, your test set is partly a copy of your training set and your score is partly a measure of memorisation. Student projects built from scraped pages, augmented images or merged exports are full of these, and a plain train_test_split will not notice.",
+          "The third is duplicates, and it is the one that quietly ruins scraped datasets. If the same row — or a near-identical one — exists on both sides of the split, your test set is partly a copy of your training set and your score is partly a measure of mémorisation. Student projects built from scraped pages, augmented images or merged exports are full of these, and a plain train_test_split will not notice.",
           "The fourth is grouping, and it is the subtlest. Ten X-rays from the same patient, forty reviews from the same user, a hundred frames from the same video: split those at random and the model learns the patient rather than the condition. It scores well on unseen rows and collapses on unseen people, which is what production actually asks of it. Grouped data needs a grouped split.",
           "The fifth is the feature that quietly contains the answer. A column derived from the target, a field only populated after the outcome is known, an identifier that correlates with the label because of how the export was ordered. This one is not a coding mistake; it is a misunderstanding of the data, which is why it survives code review and shows up as an oddly perfect model.",
           "What ties all five together is that none of them announce themselves. That is the actual lesson. A crash gets fixed in ten minutes because the computer tells you. A leak can survive an entire project, and it fails at exactly the wrong moment — on real data, in front of someone, after you have already claimed the number.",
@@ -1200,7 +1200,7 @@ const basePosts: BlogPost[] = [
       },
       {
         source: "Atlassian",
-        label: { en: "What is continuous deployment?", fr: "Qu'est-ce que le deploiement continu ?" },
+        label: { en: "What is continuous deployment?", fr: "Qu'est-ce que le déploiement continu ?" },
         href: "https://www.atlassian.com/continuous-delivery/principles/continuous-deployment"
       },
       {
@@ -1346,7 +1346,7 @@ const basePosts: BlogPost[] = [
     affiliateCallout: {
       headline: {
         en: "Want a faster learning path?",
-        fr: "Tu veux accelerer ta progression ?"
+        fr: "Tu veux accélérer ta progression ?"
       },
       description: {
         en: "Use the roadmap + curated resources to turn these fundamentals into one portfolio project this month.",
@@ -1397,7 +1397,7 @@ const basePosts: BlogPost[] = [
         ]
       },
       fr: {
-        title: "Fondamentaux IA que chaque etudiant en informatique doit maitriser",
+        title: "Fondamentaux IA que chaque étudiant en informatique doit maîtriser",
         excerpt:
           "Un guide pratique des concepts IA essentiels pour lire des papers, construire de meilleurs projets et reussir les entretiens.",
         content: [
@@ -1435,7 +1435,7 @@ const basePosts: BlogPost[] = [
       },
       description: {
         en: "Use the student productivity workspace and weekly roadmap to execute this CS plan without burnout.",
-        fr: "Utilise l'espace productivite et la roadmap hebdomadaire pour executer ce plan CS sans burnout."
+        fr: "Utilise l'espace productivité et la roadmap hebdomadaire pour executer ce plan CS sans burnout."
       },
       links: [
         { label: { en: "Open student tools", fr: "Outils etudiants" }, href: "/resources", note: "Execution stack" },
@@ -1489,7 +1489,7 @@ const basePosts: BlogPost[] = [
       fr: {
         title: "Roadmap informatique pour builders IA: ce qui compte vraiment",
         excerpt:
-          "Un plan CS cible pour etudiants IA qui veulent de meilleures performances, des systemes propres et de meilleures reponses en entretien.",
+          "Un plan CS cible pour étudiants IA qui veulent de meilleures performances, des systèmes propres et de meilleures reponses en entretien.",
         content: [
           "Les étudiants en IA demandent souvent si l'informatique classique compte encore. Oui, et pour une raison précise plutôt que sentimentale : les fondamentaux font la différence entre une démonstration qui marche une fois et un produit qui continue de fonctionner. Tout ce qui suit apparaît dès la première rencontre avec une vraie charge ou de vraies données.",
           "Les algorithmes et structures de données rapportent immédiatement, pas à terme. Une étape de préparation avec la mauvaise complexité transforme un traitement de cinq minutes en travail nocturne, et le même raisonnement décide si votre recherche est assez rapide pour tenir dans un chemin de requête. C'est aussi le lien le plus direct entre votre code et votre facture cloud, puisque le temps de calcul se facture.",
@@ -1525,7 +1525,7 @@ const basePosts: BlogPost[] = [
       },
       description: {
         en: "Use the deployment stack and comparison guides to turn this system design into a live, interview-ready demo.",
-        fr: "Utilise la stack de deploiement et les comparatifs pour transformer ce design en demo live prete entretien."
+        fr: "Utilise la stack de déploiement et les comparatifs pour transformer ce design en demo live prete entretien."
       },
       links: [
         { label: { en: "Compare cloud platforms", fr: "Comparer les plateformes cloud" }, href: "/compare", note: "High intent" },
@@ -1545,7 +1545,7 @@ const basePosts: BlogPost[] = [
       },
       {
         source: "Google AI",
-        label: { en: "Large language models overview", fr: "Vue d'ensemble des grands modeles de langage" },
+        label: { en: "Large language models overview", fr: "Vue d'ensemble des grands modèles de langage" },
         href: "https://ai.google/discover/large-language-models/"
       },
       {
@@ -1577,9 +1577,9 @@ const basePosts: BlogPost[] = [
         ]
       },
       fr: {
-        title: "Transformers, RAG et agents: guide systeme pour etudiants",
+        title: "Transformers, RAG et agents: guide système pour étudiants",
         excerpt:
-          "Comprendre comment les systemes LLM modernes sont construits, quand utiliser chaque pattern et comment choisir une architecture portfolio credible.",
+          "Comprendre comment les systèmes LLM modernes sont construits, quand utiliser chaque pattern et comment choisir une architecture portfolio credible.",
         content: [
           "Les transformeurs, la génération augmentée par recherche et les agents sont généralement présentés comme trois tendances distinctes. On les comprend mieux comme trois couches d'une même pile, chacune ajoutée pour résoudre un problème que la précédente ne pouvait pas traiter — et savoir quel problème chacune résout est ce qui vous évite d'ajouter une complexité inutile.",
           "Le transformeur est la colonne vertébrale du modèle. Il prédit des jetons grâce à l'attention, ce qui lui permet de pondérer des parties éloignées de l'entrée au moment de produire chaque morceau de sortie. Ce qui compte en pratique est la conséquence : il connaît ses données d'entraînement et le contenu de sa fenêtre de contexte, et rien d'autre.",
@@ -1696,7 +1696,7 @@ export function getPostsByTrack(track: EditorialTrack, locale: Locale) {
 
 export function getTrackLabel(track: EditorialTrack, locale: Locale) {
   if (track === "ai") return locale === "fr" ? "IA" : "AI";
-  if (track === "career") return locale === "fr" ? "Carriere" : "Career";
+  if (track === "career") return locale === "fr" ? "Carrière" : "Career";
   return "CS";
 }
 

@@ -441,9 +441,9 @@ export const csExpansionPosts: BlogPost[] = [
         content: dsaForAiEngineersContent
       },
       fr: {
-        title: "Structures de donnees et algorithmes pour ingenieurs IA",
+        title: "Structures de données et algorithmes pour ingenieurs IA",
         excerpt:
-          "Guide pratique des fondamentaux CS qui ameliorent directement la vitesse, la fiabilite, et la qualite des systemes IA.",
+          "Guide pratique des fondamentaux CS qui ameliorent directement la vitesse, la fiabilite, et la qualite des systèmes IA.",
         content: dsaForAiEngineersContentFr
       }
     },
@@ -475,7 +475,7 @@ export const csExpansionPosts: BlogPost[] = [
     affiliateCallout: {
       headline: {
         en: "Ship this architecture with student-friendly infra",
-        fr: "Deploie cette architecture avec une infra adaptee etudiant"
+        fr: "Deploie cette architecture avec une infra adaptee étudiant"
       },
       description: {
         en: "Use comparison templates and hosting resources to implement this design with measurable reliability.",
@@ -521,7 +521,7 @@ export const csExpansionPosts: BlogPost[] = [
         content: systemDesignForStudentsContent
       },
       fr: {
-        title: "System design pour projets IA etudiants",
+        title: "System design pour projets IA étudiants",
         excerpt:
           "Un playbook d'architecture pour passer de la demo au produit fiable et explicable en entretien.",
         content: systemDesignForStudentsContentFr
@@ -555,7 +555,7 @@ export const csExpansionPosts: BlogPost[] = [
     affiliateCallout: {
       headline: {
         en: "Need low-friction backend deployment?",
-        fr: "Besoin d'un deploiement backend sans friction ?"
+        fr: "Besoin d'un déploiement backend sans friction ?"
       },
       description: {
         en: "Use the resource stack to deploy your API, monitor latency, and keep costs predictable during student projects.",
@@ -603,7 +603,7 @@ export const csExpansionPosts: BlogPost[] = [
       fr: {
         title: "APIs backend pour apps ML",
         excerpt:
-          "Comment construire des APIs ML fiables avec schemas clairs, securite, et qualite deploiement.",
+          "Comment construire des APIs ML fiables avec schemas clairs, sécurité, et qualite déploiement.",
         content: backendApisForMlAppsContentFr
       }
     },
@@ -681,9 +681,9 @@ export const csExpansionPosts: BlogPost[] = [
         content: linuxDevopsWorkflowContent
       },
       fr: {
-        title: "Workflow Linux et DevOps pour etudiants",
+        title: "Workflow Linux et DevOps pour étudiants",
         excerpt:
-          "Un systeme Linux + DevOps pratique pour livrer plus vite avec moins de regressions.",
+          "Un système Linux + DevOps pratique pour livrer plus vite avec moins de regressions.",
         content: linuxDevopsWorkflowContentFr
       }
     },
@@ -711,7 +711,7 @@ export const csExpansionPosts: BlogPost[] = [
       headline: { en: "Apply this checklist with deployment-ready tooling", fr: "Applique cette checklist avec des outils deployment-ready" },
       description: {
         en: "Use the resources stack for hosting, logging, and deployment controls with student-friendly setup.",
-        fr: "Utilise la stack ressources pour hebergement, logs, et controles deploiement avec setup etudiant."
+        fr: "Utilise la stack ressources pour hebergement, logs, et controles déploiement avec setup étudiant."
       },
       links: [
         { label: { en: "Open security resources", fr: "Ressources securite" }, href: "/resources", note: "Tools" },
@@ -742,8 +742,8 @@ export const csExpansionPosts: BlogPost[] = [
         content: securityChecklistContent
       },
       fr: {
-        title: "Checklist securite pour projets IA et informatique",
-        excerpt: "Une base securite pratique pour proteger les projets etudiants avant publication.",
+        title: "Checklist sécurité pour projets IA et informatique",
+        excerpt: "Une base sécurité pratique pour proteger les projets étudiants avant publication.",
         content: securityChecklistContentFr
       }
     },
@@ -771,7 +771,7 @@ export const csExpansionPosts: BlogPost[] = [
       headline: { en: "Deploy your data layer with student-friendly infra", fr: "Deploie ta couche data avec une infra adaptee" },
       description: {
         en: "Use cloud resources and comparison templates to choose a database stack that matches your workload.",
-        fr: "Utilise ressources cloud et comparatifs pour choisir une stack base de donnees adaptee a ta charge."
+        fr: "Utilise ressources cloud et comparatifs pour choisir une stack base de données adaptee a ta charge."
       },
       links: [
         { label: { en: "Open data resources", fr: "Ressources data" }, href: "/resources", note: "Execution" },
@@ -802,8 +802,8 @@ export const csExpansionPosts: BlogPost[] = [
         content: databaseDesignContent
       },
       fr: {
-        title: "Design de base de donnees pour apps RAG et ML",
-        excerpt: "Comment modeliser les donnees pour retrieval, fiabilite, et performance.",
+        title: "Design de base de données pour apps RAG et ML",
+        excerpt: "Comment modeliser les données pour retrieval, fiabilite, et performance.",
         content: databaseDesignContentFr
       }
     },
@@ -831,7 +831,7 @@ export const csExpansionPosts: BlogPost[] = [
       headline: { en: "Use this CI/CD flow with practical cloud options", fr: "Utilise ce flow CI/CD avec des options cloud pratiques" },
       description: {
         en: "Pair this pipeline with hosting comparisons to keep deployments predictable and low-cost.",
-        fr: "Associe ce pipeline aux comparatifs cloud pour des deploiements previsibles et low-cost."
+        fr: "Associe ce pipeline aux comparatifs cloud pour des déploiements previsibles et low-cost."
       },
       links: [
         { label: { en: "Open deployment resources", fr: "Ressources deploiement" }, href: "/resources", note: "Tools" },
@@ -863,7 +863,7 @@ export const csExpansionPosts: BlogPost[] = [
       },
       fr: {
         title: "CI/CD pour projets ML et backend",
-        excerpt: "Un pipeline release simple pour garder les projets etudiants stables et deployables.",
+        excerpt: "Un pipeline release simple pour garder les projets étudiants stables et deployables.",
         content: cicdContentFr
       }
     },
@@ -922,7 +922,7 @@ export const csExpansionPosts: BlogPost[] = [
         content: observabilityContent
       },
       fr: {
-        title: "Observabilite pour etudiants ingenieurs",
+        title: "Observabilite pour étudiants ingenieurs",
         excerpt: "Une base observabilite pratique pour debugger plus vite et livrer des services fiables.",
         content: observabilityContentFr
       }
@@ -951,7 +951,7 @@ export const csExpansionPosts: BlogPost[] = [
       headline: { en: "Turn networking concepts into deployable projects", fr: "Transforme les concepts reseau en projets deployables" },
       description: {
         en: "Use cloud resources and comparison guides to test latency and reliability patterns in real deployments.",
-        fr: "Utilise ressources cloud et comparatifs pour tester latence et fiabilite sur de vrais deploiements."
+        fr: "Utilise ressources cloud et comparatifs pour tester latence et fiabilite sur de vrais déploiements."
       },
       links: [
         { label: { en: "Open resources", fr: "Ouvrir ressources" }, href: "/resources", note: "Execution" },
@@ -1008,10 +1008,10 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 80,
     relatedSlugs: ["linux-devops-workflow-for-students", "data-structures-and-algorithms-for-ai-engineers"],
     affiliateCallout: {
-      headline: { en: "Pair OS skills with deployment practice", fr: "Combine skills systeme et pratique deploiement" },
+      headline: { en: "Pair OS skills with deployment practice", fr: "Combine skills système et pratique déploiement" },
       description: {
         en: "Use curated resources and cloud comparisons to apply OS concepts in real backend and AI services.",
-        fr: "Utilise ressources et comparatifs cloud pour appliquer les concepts systeme sur des services reels."
+        fr: "Utilise ressources et comparatifs cloud pour appliquer les concepts système sur des services reels."
       },
       links: [
         { label: { en: "Open resources", fr: "Ressources" }, href: "/resources", note: "Tool stack" },
@@ -1042,8 +1042,8 @@ export const csExpansionPosts: BlogPost[] = [
         content: operatingSystemsSkillsContent
       },
       fr: {
-        title: "Competences systeme essentielles pour builders IA",
-        excerpt: "Connaissances OS pratiques pour debug, performance, et deploiements plus fiables.",
+        title: "Competences système essentielles pour builders IA",
+        excerpt: "Connaissances OS pratiques pour debug, performance, et déploiements plus fiables.",
         content: operatingSystemsSkillsContentFr
       }
     },
@@ -1071,7 +1071,7 @@ export const csExpansionPosts: BlogPost[] = [
       headline: { en: "Build a test-first ML workflow", fr: "Construis un workflow ML test-first" },
       description: {
         en: "Use resources and product templates to build repeatable testing loops across data, model, and deployment.",
-        fr: "Utilise ressources et templates pour des boucles de test repetables sur data, modele, et deploiement."
+        fr: "Utilise ressources et templates pour des boucles de test repetables sur data, modèle, et déploiement."
       },
       links: [
         { label: { en: "Open ML resources", fr: "Ressources ML" }, href: "/resources", note: "Tools" },
@@ -1086,7 +1086,7 @@ export const csExpansionPosts: BlogPost[] = [
       },
       {
         source: "scikit-learn",
-        label: { en: "Model evaluation", fr: "Evaluation de modele" },
+        label: { en: "Model evaluation", fr: "Evaluation de modèle" },
         href: "https://scikit-learn.org/stable/model_selection.html"
       },
       {
@@ -1128,10 +1128,10 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 84,
     relatedSlugs: ["transformers-rag-and-agents-for-students", "security-checklist-for-student-ai-and-cs-projects"],
     affiliateCallout: {
-      headline: { en: "Deploy safer LLM systems with practical tooling", fr: "Deploie des systemes LLM plus fiables avec des outils pratiques" },
+      headline: { en: "Deploy safer LLM systems with practical tooling", fr: "Deploie des systèmes LLM plus fiables avec des outils pratiques" },
       description: {
         en: "Use resource and comparison pages to pick infra and workflow tools for guardrailed LLM deployments.",
-        fr: "Utilise ressources et comparatifs pour choisir infra et workflow deploiement LLM avec guardrails."
+        fr: "Utilise ressources et comparatifs pour choisir infra et workflow déploiement LLM avec guardrails."
       },
       links: [
         { label: { en: "Open LLM resources", fr: "Ressources LLM" }, href: "/resources", note: "Tools" },

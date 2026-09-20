@@ -30,6 +30,11 @@ export function middleware(request: NextRequest) {
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set("x-csp-nonce", nonce);
   requestHeaders.set("x-nonce", nonce);
+  // The layout needs the current path to build the other language's URL for the
+  // same page. A server component cannot read the pathname on its own, and
+  // sending a reader who switches language back to the homepage loses whatever
+  // they were reading.
+  requestHeaders.set("x-pathname", request.nextUrl.pathname);
 
   const response = NextResponse.next({
     request: {
