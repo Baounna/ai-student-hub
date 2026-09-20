@@ -130,6 +130,33 @@ function documentLanguage(pathname: string | null) {
   return segment === "fr" ? "fr" : "en";
 }
 
+/**
+ * This await makes every page dynamic, and that is deliberate. It looks like
+ * the obvious thing to delete for cacheability, so here is why it has to stay.
+ *
+ * Next injects the CSP nonce into its own inline scripts by reading the
+ * Content-Security-Policy out of the *request* headers, which only exists at
+ * request time. Three inline scripts ship on every page and all three are
+ * executable JavaScript, not data: the theme-init beforeInteractive script,
+ * the Next bootstrap, and the 81 KB RSC flight payload. Under our
+ * script-src 'self' 'nonce-...' — no unsafe-inline, enforced by
+ * scripts/verify-security.mjs — an inline script without a matching nonce is
+ * blocked outright.
+ *
+ * So if these pages were allowed to prerender, Next would emit those three
+ * scripts with no nonce while middleware still stamped a fresh nonce into the
+ * response CSP, and nothing would hydrate. Static rendering and a nonce CSP
+ * are mutually exclusive here by construction. The nonce is what makes the
+ * pages uncacheable; headers() is only how it arrives.
+ *
+ * The ways out were all measured and rejected: 'unsafe-inline' is a real
+ * weakening and the security check fails the build on it; hash-based CSP
+ * cannot work because the flight payload differs per page and per build;
+ * PPR does not help, since the prerendered shell carries the same bootstrap;
+ * and caching one response reuses its nonce, which defeats the point of
+ * having one. If render cost ever becomes the actual problem, reduce
+ * per-request work rather than chasing cache hits.
+ */
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const requestHeaders = await headers();
   const nonce = requestHeaders.get("x-csp-nonce") || undefined;
