@@ -33,9 +33,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
-  const title = fr ? "Outils IA + cybersecurite pratiques pour le travail reel" : "Practical AI + Cybersecurity Tools for Real Work";
+  const title = fr ? "Outils IA + cybersécurité pratiques pour le travail réel" : "Practical AI + Cybersecurity Tools for Real Work";
   const description = fr
-    ? "Guides d'outils et comparatifs IA + cybersecurite: budget-friendly, vitesse de deploiement, et impact execution."
+    ? "Guides d'outils et comparatifs IA + cybersécurité: budget-friendly, vitesse de déploiement, et impact exécution."
     : "Tool guides and comparisons for AI + Cybersecurity projects: budget-friendly options, deployment speed, and execution impact.";
 
   return {
@@ -76,7 +76,7 @@ export default async function LocalizedCompareIndexPage(
   const locale: Locale = params.lang;
   const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const fr = locale === "fr";
-  const playbookTitle = fr ? "Framework de selection" : "Selection framework";
+  const playbookTitle = fr ? "Framework de sélection" : "Selection framework";
   const toolParam = Array.isArray(searchParams?.tool) ? searchParams?.tool[0] : searchParams?.tool;
   const toolQueryRaw = sanitizeSearchQuery(typeof toolParam === "string" ? toolParam : "", 80);
   const toolQuery = toolQueryRaw.toLowerCase();
@@ -93,7 +93,7 @@ export default async function LocalizedCompareIndexPage(
   const autoTools = getAutoTools(locale, 8).filter((item) => isSafeHttpUrl(item.href));
   const autoToolsUpdatedAt = getAutoToolsUpdatedAt();
   const studyTools = studentStudyTools.filter((tool) => isSafeHttpUrl(tool.href));
-  const audienceSegments = fr ? ["Equipes", "Fondateurs", "Chercheurs", "Developpeurs"] : ["Teams", "Founders", "Researchers", "Developers"];
+  const audienceSegments = fr ? ["Équipes", "Fondateurs", "Chercheurs", "Développeurs"] : ["Teams", "Founders", "Researchers", "Developers"];
   const filteredStudyTools = toolQuery
     ? studyTools.filter((tool) =>
         [tool.name, tool.category[locale], tool.summary[locale], tool.bestFor[locale], tool.source, ...tool.keywords]
@@ -113,11 +113,11 @@ export default async function LocalizedCompareIndexPage(
         },
         {
           q: "Combien de temps pour choisir une stack ?",
-          a: "Avec ce framework, 20-30 minutes suffisent pour choisir une option puis lancer l'execution."
+          a: "Avec ce framework, 20-30 minutes suffisent pour choisir une option puis lancer l'exécution."
         },
         {
-          q: "Comment eviter d'acheter des outils inutiles ?",
-          a: "Fixez une limite budget mensuelle, comparez les compromis, puis validez avec un sprint reel de 7 jours."
+          q: "Comment éviter d'acheter des outils inutiles ?",
+          a: "Fixez une limite budget mensuelle, comparez les compromis, puis validez avec un sprint réel de 7 jours."
         }
       ]
     : [
@@ -159,12 +159,12 @@ export default async function LocalizedCompareIndexPage(
             <p className="do-kicker">{fr ? "Tools Lab" : "Tools Lab"}</p>
             <h1 className="font-display tools-hero-title mt-3 font-bold text-[color:var(--text-strong)]">
                 {fr
-                ? "Outils IA + cybersecurite pratiques pour le travail reel"
+                ? "Outils IA + cybersécurité pratiques pour le travail réel"
                 : "Practical AI + Cybersecurity Tools for Real Work"}
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr
-                ? "Un hub d'outils orienté execution: pages a forte intention, grille de decision claire, et liens officiels pour avancer vite avec budget controle."
+                ? "Un hub d'outils orienté exécution: pages à forte intention, grille de décision claire, et liens officiels pour avancer vite avec budget contrôlé."
                 : "An execution-first tools hub with high-intent pages, a clear decision model, and official references so you can ship faster without budget drift."}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -175,7 +175,7 @@ export default async function LocalizedCompareIndexPage(
                 {fr ? "Filtre budget-friendly" : "Budget-friendly filter"}
               </span>
               <span className="blog-chip rounded-full px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Aucun lien remunere" : "No paid links"}
+                {fr ? "Aucun lien rémunéré" : "No paid links"}
               </span>
               {audienceSegments.map((segment) => (
                 <span key={segment} className="blog-chip rounded-full px-3 py-1 text-xs text-[color:var(--muted)]">
@@ -196,13 +196,13 @@ export default async function LocalizedCompareIndexPage(
           <div className="blog-aside-card rounded-2xl p-5">
             <p className="do-kicker">{playbookTitle}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
-              <li>{fr ? "1. Definir le resultat cible (demo, API, portfolio)." : "1. Define your target outcome (demo, API, portfolio)."}</li>
-              <li>{fr ? "2. Comparer cout, vitesse, et maintenance." : "2. Compare cost, speed, and maintenance."}</li>
-              <li>{fr ? "3. Lancer une execution de 7 jours puis iterer." : "3. Run a 7-day sprint, then iterate."}</li>
+              <li>{fr ? "1. Définir le résultat cible (démo, API, portfolio)." : "1. Define your target outcome (demo, API, portfolio)."}</li>
+              <li>{fr ? "2. Comparer coût, vitesse, et maintenance." : "2. Compare cost, speed, and maintenance."}</li>
+              <li>{fr ? "3. Lancer une exécution de 7 jours puis itérer." : "3. Run a 7-day sprint, then iterate."}</li>
             </ul>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                {fr ? "Guide carriere" : "Career guide"}
+                {fr ? "Guide carrière" : "Career guide"}
               </Link>
               {defaultTool ? (
                 <TrackableAnchor
@@ -227,7 +227,7 @@ export default async function LocalizedCompareIndexPage(
           <p className="mt-2 text-2xl font-semibold text-[color:var(--text-strong)]">{availableComparisons.length}</p>
         </article>
         <article className="tools-metric-card rounded-2xl p-4">
-          <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--primary)]">{fr ? "Options evaluees" : "Scored options"}</p>
+          <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--primary)]">{fr ? "Options évaluées" : "Scored options"}</p>
           <p className="mt-2 text-2xl font-semibold text-[color:var(--text-strong)]">{totalScoredOptions}</p>
         </article>
         <article className="tools-metric-card rounded-2xl p-4">
@@ -235,7 +235,7 @@ export default async function LocalizedCompareIndexPage(
           <p className="mt-2 text-2xl font-semibold text-[color:var(--text-strong)]">{uniqueToolCount}</p>
         </article>
         <article className="tools-metric-card rounded-2xl p-4">
-          <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--primary)]">{fr ? "Ressources recommandees" : "Recommended tools"}</p>
+          <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--primary)]">{fr ? "Ressources recommandées" : "Recommended tools"}</p>
           <p className="mt-2 text-2xl font-semibold text-[color:var(--text-strong)]">{recommendedTools.length}</p>
         </article>
       </section>
@@ -251,7 +251,7 @@ export default async function LocalizedCompareIndexPage(
               <p className="mt-2 text-sm text-[color:var(--text)]">{starterComparison.intro}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <span className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--muted)]">
-                  {starterComparison.tools.length} {fr ? "options notees" : "options scored"}
+                  {starterComparison.tools.length} {fr ? "options notées" : "options scored"}
                 </span>
                 <span className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--muted)]">
                   {fr ? "Intent SEO fort" : "High-intent keyword"}
@@ -266,19 +266,19 @@ export default async function LocalizedCompareIndexPage(
           <section className="grid gap-4 md:grid-cols-3">
             {[
               {
-                title: fr ? "Etape 1: Contraintes" : "Step 1: Constraints",
+                title: fr ? "Étape 1: Contraintes" : "Step 1: Constraints",
                 body: fr
-                  ? "Definissez votre plafond budget, la vitesse de livraison cible, et les exigences minimum."
+                  ? "Définissez votre plafond budget, la vitesse de livraison cible, et les exigences minimum."
                   : "Set your budget cap, target shipping speed, and minimum requirements."
               },
               {
-                title: fr ? "Etape 2: Evaluation" : "Step 2: Evaluation",
+                title: fr ? "Étape 2: Évaluation" : "Step 2: Evaluation",
                 body: fr
-                  ? "Lis les compromis reels par outil: cout, usage ideal, et dette de maintenance."
+                  ? "Lis les compromis réels par outil: coût, usage idéal, et dette de maintenance."
                   : "Review practical tradeoffs per tool: cost, ideal use case, and maintenance debt."
               },
               {
-                title: fr ? "Etape 3: Execution" : "Step 3: Execution",
+                title: fr ? "Étape 3: Exécution" : "Step 3: Execution",
                 body: fr
                   ? "Choisissez une option, livrez en 7 jours, puis optimisez selon vos retours terrain."
                   : "Pick one option, ship in 7 days, then optimize from real usage feedback."
@@ -294,15 +294,15 @@ export default async function LocalizedCompareIndexPage(
           <section className="surface rounded-2xl p-6">
             <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
               <div>
-                <p className="do-kicker">{fr ? "Tools etude" : "Study tools"}</p>
+                <p className="do-kicker">{fr ? "Tools étude" : "Study tools"}</p>
                 <h2 className="font-display section-title mt-1 font-semibold text-[color:var(--text-strong)]">
                   {fr
-                    ? "Tous les outils utiles pour apprendre, produire, et executer des projets"
+                    ? "Tous les outils utiles pour apprendre, produire, et exécuter des projets"
                     : "All high-utility tools for learning, projects, and real execution"}
                 </h2>
               </div>
               <span className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--muted)]">
-                {filteredStudyTools.length}/{studyTools.length} {fr ? "outils affiches" : "tools shown"}
+                {filteredStudyTools.length}/{studyTools.length} {fr ? "outils affichés" : "tools shown"}
               </span>
             </div>
 
@@ -378,7 +378,7 @@ export default async function LocalizedCompareIndexPage(
             ) : (
               <div className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 text-sm text-[color:var(--text)]">
                 {fr
-                  ? "Aucun outil ne correspond a votre recherche. Essayez NotebookLM, Antigravity, Anki, Notion, ou Quizlet."
+                  ? "Aucun outil ne correspond à votre recherche. Essayez NotebookLM, Antigravity, Anki, Notion, ou Quizlet."
                   : "No tools match your search. Try NotebookLM, Antigravity, Anki, Notion, or Quizlet."}
               </div>
             )}
@@ -389,7 +389,7 @@ export default async function LocalizedCompareIndexPage(
               <div>
                 <p className="do-kicker">{fr ? "Guides disponibles" : "Available guides"}</p>
                 <h2 className="font-display section-title mt-1 font-semibold text-[color:var(--text-strong)]">
-                  {fr ? "Parcours outils IA + cybersecurite" : "AI + Cybersecurity tools decision guides"}
+                  {fr ? "Parcours outils IA + cybersécurité" : "AI + Cybersecurity tools decision guides"}
                 </h2>
               </div>
               <Link href={`/${locale}/resources`} className="btn-secondary">
@@ -415,12 +415,12 @@ export default async function LocalizedCompareIndexPage(
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--primary)]">
-                        #{index + 1} • {fr ? "Mot-cle" : "Keyword"}: {comparison.intentKeyword}
+                        #{index + 1} • {fr ? "Mot-clé" : "Keyword"}: {comparison.intentKeyword}
                       </p>
                       <h3 className="font-display section-title mt-2 font-semibold text-[color:var(--text-strong)]">{comparison.title}</h3>
                       <p className="card-copy mt-3 text-[color:var(--text)]">{comparison.intro}</p>
                       <p className="mt-2 text-xs text-[color:var(--muted)]">
-                        {comparison.tools.length} {fr ? "outils evalues" : "tools scored in this guide"}
+                        {comparison.tools.length} {fr ? "outils évalués" : "tools scored in this guide"}
                       </p>
                       <div className="mt-3 flex flex-wrap gap-2">
                         {comparison.tools.slice(0, 3).map((tool) => (
@@ -447,18 +447,18 @@ export default async function LocalizedCompareIndexPage(
               <div>
                 <p className="do-kicker">{fr ? "Automation outils" : "Tools automation"}</p>
                 <h2 className="font-display section-title mt-1 font-semibold text-[color:var(--text-strong)]">
-                  {fr ? "Nouveautes outils depuis les sources officielles" : "New tools from official release channels"}
+                  {fr ? "Nouveautés outils depuis les sources officielles" : "New tools from official release channels"}
                 </h2>
               </div>
               {autoToolsUpdatedAt ? (
                 <p className="text-xs text-[color:var(--muted)]">
-                  {fr ? "Derniere synchro" : "Last sync"}: {formatPublishedDate(autoToolsUpdatedAt, locale)}
+                  {fr ? "Dernière synchro" : "Last sync"}: {formatPublishedDate(autoToolsUpdatedAt, locale)}
                 </p>
               ) : null}
             </div>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {fr
-                ? "NotebookLM, plateformes cloud, outils dev et updates CS: le flux agent ajoute les nouveautes automatiquement."
+                ? "NotebookLM, plateformes cloud, outils dev et updates CS: le flux agent ajoute les nouveautés automatiquement."
                 : "NotebookLM, cloud platforms, dev tooling, and CS updates: the agent adds new releases automatically."}
             </p>
 
@@ -497,7 +497,7 @@ export default async function LocalizedCompareIndexPage(
               <div className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
                 <p className="text-sm text-[color:var(--text)]">
                   {fr
-                    ? "Aucune nouveaute captee pour le moment. L'agent continue la veille et publie automatiquement quand une release officielle apparait."
+                    ? "Aucune nouveauté captée pour le moment. L'agent continue la veille et publie automatiquement quand une release officielle apparaît."
                     : "No new tools captured yet. The agent keeps monitoring and auto-publishes when an official release appears."}
                 </p>
               </div>
@@ -506,11 +506,11 @@ export default async function LocalizedCompareIndexPage(
 
           <section className="blog-aside-card rounded-2xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Modele d'evaluation" : "Evaluation model"}
+              {fr ? "Modèle d'évaluation" : "Evaluation model"}
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {fr
-                ? "Chaque guide suit le meme cadre: vitesse de mise en ligne, predictibilite budgetaire, valeur portfolio, et courbe d'apprentissage."
+                ? "Chaque guide suit le même cadre: vitesse de mise en ligne, prédictibilité budgétaire, valeur portfolio, et courbe d'apprentissage."
                 : "Each guide follows the same model: time-to-deploy, budget predictability, portfolio value, and learning curve."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -518,7 +518,7 @@ export default async function LocalizedCompareIndexPage(
                 {fr ? "Voir ressources" : "See recommended tools"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                {fr ? "Guide carriere" : "Open the career guide"}
+                {fr ? "Guide carrière" : "Open the career guide"}
               </Link>
             </div>
             <AffiliateDisclosureInline locale={locale} className="mt-4 text-xs text-[color:var(--muted)]" />
@@ -553,7 +553,7 @@ export default async function LocalizedCompareIndexPage(
                 {fr ? "Guides blog" : "Blog guides"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary text-center">
-                {fr ? "Guide carriere" : "Career guide"}
+                {fr ? "Guide carrière" : "Career guide"}
               </Link>
             </div>
           </div>

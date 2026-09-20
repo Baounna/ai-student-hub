@@ -71,7 +71,7 @@ export default async function LocalizedTagPage(props: { params: Promise<{ lang: 
         </h1>
         <p className="mt-4 max-w-2xl text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? `${posts.length} articles relies a ce sujet pour t'aider a progresser vite.`
+            ? `${posts.length} articles reliés à ce sujet pour t'aider à progresser vite.`
             : `${posts.length} posts connected to this topic to help you execute faster.`}
         </p>
         <div className="mt-5 flex flex-wrap gap-2">

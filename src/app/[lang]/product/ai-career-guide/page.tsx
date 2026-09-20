@@ -18,9 +18,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
-  const title = fr ? "Guide Carriere IA" : "AI Career Guide";
+  const title = fr ? "Guide Carrière IA" : "AI Career Guide";
   const description = fr
-    ? "Guide pratique pour etudiants IA afin d'ameliorer portfolio, candidatures et entretiens."
+    ? "Guide pratique pour étudiants IA afin d'améliorer portfolio, candidatures et entretiens."
     : "Practical student guide to improve portfolio, internship conversion, and weekly execution.";
 
   return {
@@ -64,11 +64,11 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
           <div>
             <p className="do-kicker">{fr ? "Produit digital" : "Digital Product"}</p>
             <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
-              {fr ? "Guide d'execution carriere IA pour etudiants" : "AI Career Execution Guide for Students"}
+              {fr ? "Guide d'exécution carrière IA pour étudiants" : "AI Career Execution Guide for Students"}
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr
-                ? "Un guide pratique pour livrer des projets portfolio, augmenter vos reponses de stage, et clarifier votre plan execution sur 14-30 jours."
+                ? "Un guide pratique pour livrer des projets portfolio, augmenter vos réponses de stage, et clarifier votre plan exécution sur 14-30 jours."
                 : "A practical guide to ship portfolio projects, increase internship responses, and execute a clear 14-30 day plan."}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -89,12 +89,12 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
             <p className="mt-2 text-4xl font-bold text-[color:var(--text-strong)]">$9 - $19</p>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {fr
-                ? "Plan d'action concret pour passer de la theorie aux resultats."
+                ? "Plan d'action concret pour passer de la théorie aux résultats."
                 : "Concrete action plan to turn learning into measurable outcomes."}
             </p>
             <p className="mt-2 text-xs text-[color:var(--muted)]">
               {fr
-                ? "Ideal pour etudiants qui veulent un systeme simple sans coach payant."
+                ? "Idéal pour étudiants qui veulent un système simple sans coach payant."
                 : "Ideal for students who need a simple system without expensive coaching."}
             </p>
             {hasCheckoutUrl ? (
@@ -111,7 +111,7 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
                 </TrackableAnchor>
                 <p className="mt-2 text-xs text-[color:var(--muted)]">
                   {fr
-                    ? "Paiement externe securise. Acces instantane apres achat."
+                    ? "Paiement externe sécurisé. Accès instantané après achat."
                     : "Secure external checkout. Instant access after purchase."}
                 </p>
               </>
@@ -144,7 +144,7 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
           <div className="relative overflow-hidden rounded-2xl border border-[color:var(--border)]">
             <Image
               src={coverImageUrl("ai-career-guide", "Career/Interviews")}
-              alt={fr ? "Apercu du guide" : "Guide preview"}
+              alt={fr ? "Aperçu du guide" : "Guide preview"}
               width={1200}
               height={675}
               priority
@@ -171,9 +171,9 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
                 {fr ? "Pour qui" : "Who this is for"}
               </h2>
               <ul className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
-                <li>1. {fr ? "Etudiants avec portfolio incomplet" : "Students with incomplete portfolios"}</li>
+                <li>1. {fr ? "Étudiants avec portfolio incomplet" : "Students with incomplete portfolios"}</li>
                 <li>2. {fr ? "Candidatures de stage peu performantes" : "Internship applications with low response rates"}</li>
-                <li>3. {fr ? "Builders qui veulent un systeme clair" : "Builders who want a clear execution system"}</li>
+                <li>3. {fr ? "Builders qui veulent un système clair" : "Builders who want a clear execution system"}</li>
               </ul>
             </div>
           </section>
@@ -184,8 +184,8 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
             </h2>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>- {fr ? "Support email pour clarifier votre plan." : "Email support for clarifying your execution plan."}</li>
-              <li>- {fr ? "Mise a jour du guide pendant 60 jours." : "Guide updates for 60 days."}</li>
-              <li>- {fr ? "Structure orientee stage et debut de carriere." : "Structure focused on internship and early career outcomes."}</li>
+              <li>- {fr ? "Mise à jour du guide pendant 60 jours." : "Guide updates for 60 days."}</li>
+              <li>- {fr ? "Structure orientée stage et début de carrière." : "Structure focused on internship and early career outcomes."}</li>
             </ul>
           </section>
 
@@ -193,7 +193,7 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
             {[
               {
                 title: fr ? "Jour 1-7" : "Day 1-7",
-                body: fr ? "Choix stack, plan sprint, et debut du projet portfolio." : "Pick stack, setup sprint plan, and start your portfolio project."
+                body: fr ? "Choix stack, plan sprint, et début du projet portfolio." : "Pick stack, setup sprint plan, and start your portfolio project."
               },
               {
                 title: fr ? "Jour 8-14" : "Day 8-14",
@@ -201,7 +201,7 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
               },
               {
                 title: fr ? "Jour 15-30" : "Day 15-30",
-                body: fr ? "Optimisation candidatures, storytelling entretien, et iteration." : "Optimize applications, interview story, and iteration loop."
+                body: fr ? "Optimisation candidatures, storytelling entretien, et itération." : "Optimize applications, interview story, and iteration loop."
               }
             ].map((item) => (
               <article key={item.title} className="glass rounded-xl p-4">
@@ -218,11 +218,11 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
             <div className="mt-4 space-y-4 text-sm text-[color:var(--text)]">
               <article>
                 <p className="font-semibold text-[color:var(--text-strong)]">
-                  {fr ? "Je suis debutant, ce guide est-il adapte ?" : "I am a beginner. Is this guide still useful?"}
+                  {fr ? "Je suis débutant, ce guide est-il adapté ?" : "I am a beginner. Is this guide still useful?"}
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Oui. Le guide commence par un plan d'execution simple puis monte en niveau progressivement."
+                    ? "Oui. Le guide commence par un plan d'exécution simple puis monte en niveau progressivement."
                     : "Yes. It starts with a simple execution plan and increases difficulty progressively."}
                 </p>
               </article>
@@ -232,17 +232,17 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "La methode est construite pour un budget-friendly realiste avec priorite sur options low-cost."
+                    ? "La méthode est construite pour un budget-friendly réaliste avec priorité sur options low-cost."
                     : "The framework is built for realistic, budget-friendly decisions with low-cost-first options."}
                 </p>
               </article>
               <article>
                 <p className="font-semibold text-[color:var(--text-strong)]">
-                  {fr ? "Et si je ne suis pas pret a acheter ?" : "What if I am not ready to buy yet?"}
+                  {fr ? "Et si je ne suis pas prêt à acheter ?" : "What if I am not ready to buy yet?"}
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Commencez par la liste des stages puis revenez apres votre premier mini sprint."
+                    ? "Commencez par la liste des stages puis revenez après votre premier mini sprint."
                     : "Start with the internship list, then return after your first mini sprint."}
                 </p>
               </article>
@@ -265,7 +265,7 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
                 {fr ? "Lab outils" : "Tools lab"}
               </Link>
               <Link href={`/${locale}/resources`} className="btn-primary text-center">
-                {fr ? "Outils recommandes" : "Recommended tools"}
+                {fr ? "Outils recommandés" : "Recommended tools"}
               </Link>
             </div>
           </section>

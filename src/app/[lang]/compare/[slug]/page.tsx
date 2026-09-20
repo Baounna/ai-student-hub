@@ -55,7 +55,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
   // suffix is 14 characters of the same budget. comparison.title still drives
   // the H1, the OG card title and the OG image text below.
   const metadataTitle = comparison.seoTitle || title;
-  const description = fr ? `Guide outils etudiant: ${comparison.intro}` : comparison.intro;
+  const description = fr ? `Guide outils étudiant: ${comparison.intro}` : comparison.intro;
 
   return {
     title: metadataTitle,
@@ -115,17 +115,17 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">{comparison.intro}</p>
             <p className="mt-4 text-sm text-[color:var(--muted)]">
               {fr
-                ? `${safeTools.length} options comparees selon budget, vitesse de shipping, et valeur portfolio.`
+                ? `${safeTools.length} options comparées selon budget, vitesse de shipping, et valeur portfolio.`
                 : `${safeTools.length} options scored by budget, shipping speed, and portfolio signal.`}
             </p>
           </div>
 
           <div className="blog-aside-card rounded-2xl p-5">
-            <p className="do-kicker">{fr ? "Choix par defaut" : "Default choice"}</p>
+            <p className="do-kicker">{fr ? "Choix par défaut" : "Default choice"}</p>
             <p className="mt-2 text-lg font-semibold text-[color:var(--text-strong)]">{recommendedLabel}</p>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {fr
-                ? "Option conseillee pour livrer vite sans surprise budgetaire majeure."
+                ? "Option conseillée pour livrer vite sans surprise budgétaire majeure."
                 : "Recommended when you need speed-to-ship with predictable monthly spend."}
             </p>
             {recommendedTool ? (
@@ -166,11 +166,11 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
           <section id="verdict" className="anchor-offset blog-aside-card rounded-2xl p-6">
             <p className="do-kicker">{fr ? "Verdict rapide" : "Quick verdict"}</p>
             <h2 className="font-display section-title mt-2 font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Option recommandee" : "Recommended default"}: {recommendedLabel}
+              {fr ? "Option recommandée" : "Recommended default"}: {recommendedLabel}
             </h2>
             <p className="card-copy mt-2 text-[color:var(--text)]">
               {fr
-                ? `${recommendedLabel} ressort en tete selon le meilleur compromis entre vitesse de delivery, maitrise budget, et valeur portfolio.`
+                ? `${recommendedLabel} ressort en tête selon le meilleur compromis entre vitesse de delivery, maîtrise budget, et valeur portfolio.`
                 : `${recommendedLabel} ranks first based on practical balance across delivery speed, budget control, and portfolio value.`}
             </p>
             <div className="mt-4 grid gap-3 md:grid-cols-3">
@@ -182,7 +182,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
               </article>
               <article className="tools-metric-card rounded-xl p-4">
                 <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-                  {fr ? "Controle budget" : "Budget control"}
+                  {fr ? "Contrôle budget" : "Budget control"}
                 </p>
                 <p className="mt-2 text-sm font-semibold text-[color:var(--text-strong)]">35%</p>
               </article>
@@ -205,7 +205,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
                   <tr>
                     <th className="px-4 py-3">{fr ? "Outil" : "Tool"}</th>
                     <th className="px-4 py-3">{fr ? "Prix" : "Price"}</th>
-                    <th className="px-4 py-3">{fr ? "Ideal pour" : "Best for"}</th>
+                    <th className="px-4 py-3">{fr ? "Idéal pour" : "Best for"}</th>
                     <th className="px-4 py-3">{fr ? "Action" : "Action"}</th>
                   </tr>
                 </thead>
@@ -220,7 +220,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
                           <p className="font-semibold text-[color:var(--text-strong)]">{tool.name}</p>
                           {index === 0 ? (
                             <span className="rounded-full border border-[color:var(--primary)]/45 bg-[color:var(--bg-soft)]/60 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-[color:var(--text-strong)]">
-                              {fr ? "Recommande" : "Recommended"}
+                              {fr ? "Recommandé" : "Recommended"}
                             </span>
                           ) : null}
                         </div>
@@ -260,11 +260,11 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
 
           <section id="framework" className="anchor-offset blog-aside-card rounded-2xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Cadre de decision" : "Decision framework"}
+              {fr ? "Cadre de décision" : "Decision framework"}
             </h2>
             <ul className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
               <li>1. {fr ? "Priorisez la vitesse de mise en ligne, pas la liste de features." : "Prioritize time-to-deploy over feature lists."}</li>
-              <li>2. {fr ? "Fixez une limite de depense mensuelle claire." : "Set a strict monthly spending cap."}</li>
+              <li>2. {fr ? "Fixez une limite de dépense mensuelle claire." : "Set a strict monthly spending cap."}</li>
               <li>3. {fr ? "Choisissez l'option qui facilite le shipping portfolio." : "Pick the option that removes shipping friction."}</li>
             </ul>
             <AffiliateDisclosureInline locale={locale} className="mt-4 text-xs text-[color:var(--muted)]" />
@@ -272,11 +272,11 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
 
           <section id="references" className="anchor-offset reading-panel rounded-2xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {fr ? "References et transparence" : "References and transparency"}
+              {fr ? "Références et transparence" : "References and transparency"}
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {fr
-                ? "Les recommandations s'appuient sur les pages officielles de documentation/prix et l'usage pratique etudiant."
+                ? "Les recommandations s'appuient sur les pages officielles de documentation/prix et l'usage pratique étudiant."
                 : "Recommendations are based on official pricing/docs pages plus practical student usage."}
             </p>
             <ol className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
@@ -331,7 +331,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
               {fr ? "Autres guides outils" : "More tools guides"}
             </Link>
             <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary text-center">
-              {fr ? "Guide etudiant" : "Open student guide"}
+              {fr ? "Guide étudiant" : "Open student guide"}
             </Link>
           </section>
 
@@ -343,16 +343,16 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
           <EditorialTrust locale={locale} compact />
           <div className="blog-aside-card rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Besoin d'un point de depart ?" : "Need a starting point?"}
+              {fr ? "Besoin d'un point de départ ?" : "Need a starting point?"}
             </h3>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {fr
-                ? "Commencez par l'option recommandee puis optimisez apres 7 jours de retour terrain."
+                ? "Commencez par l'option recommandée puis optimisez après 7 jours de retour terrain."
                 : "Start with the recommended option, then optimize after 7 days of real usage."}
             </p>
             <div className="mt-3 flex flex-col gap-2">
               <Link href={`/${locale}/resources`} className="btn-secondary text-center">
-                {fr ? "Stacks recommandees" : "Recommended stacks"}
+                {fr ? "Stacks recommandées" : "Recommended stacks"}
               </Link>
               <Link href={`/${locale}/blog`} className="btn-secondary text-center">
                 {fr ? "Guides blog" : "Blog guides"}

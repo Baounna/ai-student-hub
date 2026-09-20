@@ -43,33 +43,33 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
     siteConfig.socialProofStats.length > 0
       ? siteConfig.socialProofStats
       : locale === "fr"
-        ? ["Base de connaissance IA/CS pour builders et apprenants", "Mises a jour hebdomadaires IA + CS", "Ressources pratiques orientees resultats"]
+        ? ["Base de connaissance IA/CS pour builders et apprenants", "Mises à jour hebdomadaires IA + CS", "Ressources pratiques orientées résultats"]
         : ["AI + Cybersecurity knowledge base for builders and learners", "Weekly AI + Cybersecurity updates", "Practical resources built for outcomes"];
   const principles = [
     locale === "fr" ? "Construire des projets utiles, pas seulement des notebooks." : "Ship useful projects, not only notebooks.",
-    locale === "fr" ? "Mesurer les resultats: demos, candidatures, entretiens." : "Measure outcomes: demos, applications, interviews.",
-    locale === "fr" ? "Respecter les contraintes budget sans sacrifier la qualite." : "Respect budget constraints without sacrificing quality."
+    locale === "fr" ? "Mesurer les résultats: démos, candidatures, entretiens." : "Measure outcomes: demos, applications, interviews.",
+    locale === "fr" ? "Respecter les contraintes budget sans sacrifier la qualité." : "Respect budget constraints without sacrificing quality."
   ];
   const roadmap = [
     {
       phase: "30 days",
       body:
         locale === "fr"
-          ? "Construire un premier projet deploye avec documentation claire."
+          ? "Construire un premier projet déployé avec documentation claire."
           : "Ship one deployed project with clear documentation."
     },
     {
       phase: "60 days",
       body:
         locale === "fr"
-          ? "Publier contenu d'autorite + optimiser ressources et comparatifs."
+          ? "Publier contenu d'autorité + optimiser ressources et comparatifs."
           : "Publish authority content and optimize resources/comparisons."
     },
     {
       phase: "90 days",
       body:
         locale === "fr"
-          ? "Transformer execution en stages, projets collaboratifs, et opportunites concretes."
+          ? "Transformer exécution en stages, projets collaboratifs, et opportunités concrètes."
           : "Convert execution into internships, collaborative projects, and concrete opportunities."
     }
   ];
@@ -124,7 +124,7 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
           </p>
           <p className="body-copy mt-4">
             {locale === "fr"
-              ? "La mission d'AI and Cybersecurity News: transformer l'apprentissage passif en execution mesurable avec resultats concrets."
+              ? "La mission d'AI and Cybersecurity News: transformer l'apprentissage passif en exécution mesurable avec résultats concrets."
               : "AI and Cybersecurity News exists to convert passive learning into measurable execution and practical outcomes."}
           </p>
           <p className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 text-sm text-[color:var(--text)]">
@@ -151,11 +151,11 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
 
       <section className="mt-6 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
         <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-          {locale === "fr" ? "Plan d'execution" : "Execution plan"}
+          {locale === "fr" ? "Plan d'exécution" : "Execution plan"}
         </h2>
         <p className="mt-2 text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? "Plan simple pour convertir apprentissage IA/CS en projets deployes et signal recruteur."
+            ? "Plan simple pour convertir apprentissage IA/CS en projets déployés et signal recruteur."
             : "Simple plan to convert AI + Cybersecurity learning into deployed projects and recruiter signal."}
         </p>
         <div className="mt-4 grid gap-3 md:grid-cols-3">
@@ -171,7 +171,7 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
       {siteConfig.testimonials.length ? (
         <section className="mt-6 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
           <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-            {locale === "fr" ? "Retours de la communaute" : "Community feedback"}
+            {locale === "fr" ? "Retours de la communauté" : "Community feedback"}
           </h2>
           <div className="mt-4 grid gap-4 md:grid-cols-3">
             {siteConfig.testimonials.map((testimonial) => (
@@ -191,12 +191,12 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
         </h2>
         <p className="mt-2 text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? "Commencez par les actualites, puis ressources, comparatifs, et enfin le blog pour l'execution."
+            ? "Commencez par les actualités, puis ressources, comparatifs, et enfin le blog pour l'exécution."
             : "Start with news, then resources, comparisons, and the blog for weekly execution."}
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <Link href={`/${locale}/news`} className="btn-secondary">
-            {locale === "fr" ? "Actualites" : "News"}
+            {locale === "fr" ? "Actualités" : "News"}
           </Link>
           <Link href={`/${locale}/resources`} className="btn-primary">
             {locale === "fr" ? "Ressources" : "Resources"}

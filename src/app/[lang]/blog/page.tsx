@@ -102,7 +102,7 @@ export default async function LocalizedBlogPage(
   const totalReadMinutes = allPosts.reduce((sum, post) => sum + (Number.parseInt(post.readTime, 10) || 0), 0);
   const averageReadMinutes = allPosts.length ? Math.max(1, Math.round(totalReadMinutes / allPosts.length)) : 0;
   const totalReferences = allPosts.reduce((sum, post) => sum + post.references.length, 0);
-  const sourceLabel = locale === "fr" ? "sources citees" : "cited sources";
+  const sourceLabel = locale === "fr" ? "sources citées" : "cited sources";
   const streamHeading =
     trackFilter === "ai"
       ? locale === "fr"
@@ -114,13 +114,13 @@ export default async function LocalizedBlogPage(
           : "Computer science articles"
         : trackFilter === "career"
           ? locale === "fr"
-            ? "Articles carriere"
+            ? "Articles carrière"
             : "Career articles"
           : locale === "fr"
-            ? "Articles recents IA + cybersecurite"
+            ? "Articles récents IA + cybersécurité"
             : "Latest AI + Cybersecurity articles";
   const weekSnapshotTitle = locale === "fr" ? "Cette semaine sur AI and Cybersecurity News" : "This week on AI and Cybersecurity News";
-  const searchPlaceholder = locale === "fr" ? "Rechercher par mot-cle..." : "Search by keyword...";
+  const searchPlaceholder = locale === "fr" ? "Rechercher par mot-clé..." : "Search by keyword...";
   const trackFilterOptions: Array<{ key: EditorialTrack | "all"; label: string; count: number }> = [
     {
       key: "all",
@@ -139,7 +139,7 @@ export default async function LocalizedBlogPage(
     },
     {
       key: "career",
-      label: locale === "fr" ? "Carriere" : "Career",
+      label: locale === "fr" ? "Carrière" : "Career",
       count: trackCounts.career
     }
   ];
@@ -170,16 +170,16 @@ export default async function LocalizedBlogPage(
                 {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide carriere" : "Career guide"}
+                {locale === "fr" ? "Guide carrière" : "Career guide"}
               </Link>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2">
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {allPosts.length}+ {locale === "fr" ? "guides publies" : "published guides"}
+                {allPosts.length}+ {locale === "fr" ? "guides publiés" : "published guides"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {locale === "fr" ? "Mise a jour hebdomadaire" : "Weekly updates"}
+                {locale === "fr" ? "Mise à jour hebdomadaire" : "Weekly updates"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
                 {locale === "fr" ? "Pratique + actionnable" : "Practical and actionable"}
@@ -197,7 +197,7 @@ export default async function LocalizedBlogPage(
               </article>
               <article className="blog-signal-card rounded-xl p-3">
                 <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-                  {locale === "fr" ? "Fiabilite" : "Evidence"}
+                  {locale === "fr" ? "Fiabilité" : "Evidence"}
                 </p>
                 <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
                   {totalReferences}+ {sourceLabel}
@@ -215,11 +215,11 @@ export default async function LocalizedBlogPage(
 
             <div className="mt-5">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[color:var(--primary)]">
-                {locale === "fr" ? "Split IA + cybersecurite" : "AI + Cybersecurity split"}
+                {locale === "fr" ? "Split IA + cybersécurité" : "AI + Cybersecurity split"}
               </p>
               <p className="mt-1 text-xs text-[color:var(--muted)]">
                 AI: {trackCounts.ai} • {locale === "fr" ? "Informatique" : "Computer Science"}: {trackCounts.cs} •{" "}
-                {locale === "fr" ? "Carriere" : "Career"}: {trackCounts.career}
+                {locale === "fr" ? "Carrière" : "Career"}: {trackCounts.career}
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 {trackFilterOptions.map((option) => {
@@ -258,7 +258,7 @@ export default async function LocalizedBlogPage(
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
                 {locale === "fr"
-                  ? "1. Flux separes IA et informatique pour lecture plus rapide."
+                  ? "1. Flux séparés IA et informatique pour lecture plus rapide."
                   : "1. Split AI and CS streams for faster navigation."}
               </li>
               <li>
@@ -353,7 +353,7 @@ export default async function LocalizedBlogPage(
 
           {queryRaw && (
             <div className="blog-aside-card rounded-xl p-4 text-sm text-[color:var(--text)]">
-              {locale === "fr" ? "Resultats pour: " : "Results for: "}
+              {locale === "fr" ? "Résultats pour: " : "Results for: "}
               <strong className="text-[color:var(--text-strong)]">{queryRaw}</strong>
               <Link href={`/${locale}/blog`} className="do-link ml-2 text-sm">
                 {locale === "fr" ? "Effacer" : "Clear"}
@@ -364,11 +364,11 @@ export default async function LocalizedBlogPage(
           {posts.length === 0 && (
             <article className="blog-aside-card rounded-2xl p-6">
               <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-                {locale === "fr" ? "Aucun article trouve" : "No posts found"}
+                {locale === "fr" ? "Aucun article trouvé" : "No posts found"}
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {locale === "fr"
-                  ? "Essayez un autre mot-cle, ou explorez les categories."
+                  ? "Essayez un autre mot-clé, ou explorez les catégories."
                   : "Try another keyword, or explore categories below."}
               </p>
             </article>
@@ -436,7 +436,7 @@ export default async function LocalizedBlogPage(
           {!streamPosts.length && featuredPost ? (
             <article className="blog-aside-card rounded-2xl p-5 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Vous avez atteint la fin du flux actuel. Revenez bientot pour les prochains guides."
+                ? "Vous avez atteint la fin du flux actuel. Revenez bientôt pour les prochains guides."
                 : "You reached the end of the current stream. Check back soon for new guides."}
             </article>
           ) : null}
@@ -462,7 +462,7 @@ export default async function LocalizedBlogPage(
                   </h4>
                   <p className="mt-1 text-xs text-[color:var(--muted)]">{formatReadTime(post.readTime, locale)}</p>
                   <p className="mt-1 text-xs text-[color:var(--muted)]">
-                    {post.references.length} {locale === "fr" ? "sources citees" : "cited sources"}
+                    {post.references.length} {locale === "fr" ? "sources citées" : "cited sources"}
                   </p>
                 </article>
               ))}
@@ -507,12 +507,12 @@ export default async function LocalizedBlogPage(
             </h3>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Nouveau ici ? Commence par les actualites, puis resources et comparatifs."
+                ? "Nouveau ici ? Commence par les actualités, puis resources et comparatifs."
                 : "New here? Start with news, then resources and comparison guides."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/news`} className="btn-secondary">
-                {locale === "fr" ? "Actualites" : "News"}
+                {locale === "fr" ? "Actualités" : "News"}
               </Link>
               <Link href={`/${locale}/resources`} className="btn-secondary">
                 {locale === "fr" ? "Ressources" : "Resources"}

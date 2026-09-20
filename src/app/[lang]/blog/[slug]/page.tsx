@@ -126,8 +126,8 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
   const midIndex = Math.max(1, Math.floor(post.content.length * 0.45));
   const relatedTools = recommendedTools.slice(0, 3);
   const tocItems = [
-    { id: "summary", label: locale === "fr" ? "Synthese" : "Summary" },
-    { id: "latest-updates", label: locale === "fr" ? "Dernieres actus" : "Latest updates" },
+    { id: "summary", label: locale === "fr" ? "Synthèse" : "Summary" },
+    { id: "latest-updates", label: locale === "fr" ? "Dernières actus" : "Latest updates" },
     ...(post.references.length ? [{ id: "references", label: "References" }] : []),
     { id: "resources", label: locale === "fr" ? "Ressources" : "Resources" },
     { id: "tools", label: locale === "fr" ? "Outils" : "Tools" },
@@ -219,7 +219,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
               </li>
               <li>
                 {locale === "fr"
-                  ? `3. ${relatedPosts.length} lecture${relatedPosts.length > 1 ? "s" : ""} liee${relatedPosts.length > 1 ? "s" : ""} pour continuer.`
+                  ? `3. ${relatedPosts.length} lecture${relatedPosts.length > 1 ? "s" : ""} liée${relatedPosts.length > 1 ? "s" : ""} pour continuer.`
                   : `3. ${relatedPosts.length} related deep-dive${relatedPosts.length > 1 ? "s" : ""} to continue.`}
               </li>
             </ul>
@@ -241,12 +241,12 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
             {locale === "fr" ? "Sources" : "Sources"}
           </p>
           <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
-            {post.references.length} {locale === "fr" ? "references" : "references"}
+            {post.references.length} {locale === "fr" ? "références" : "references"}
           </p>
         </article>
         <article className="blog-signal-card rounded-xl p-3">
           <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-            {locale === "fr" ? "Effort reel" : "Read effort"}
+            {locale === "fr" ? "Effort réel" : "Read effort"}
           </p>
           <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">~{readingEffortMinutes} min</p>
         </article>
@@ -260,7 +260,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
         </article>
         <article className="blog-signal-card rounded-xl p-3">
           <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-            {locale === "fr" ? "Densite source" : "Source density"}
+            {locale === "fr" ? "Densité source" : "Source density"}
           </p>
           <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
             {sourceDensity}/1k {locale === "fr" ? "mots" : "words"}
@@ -271,11 +271,11 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
       <section className="blog-aside-card mt-5 rounded-2xl p-5">
         <p className="do-kicker">{locale === "fr" ? "Start here" : "Start here"}</p>
         <h2 className="font-display section-title mt-2 font-semibold text-[color:var(--text-strong)]">
-          {locale === "fr" ? "Passez de la lecture a l'action en 3 clics" : "Move from reading to execution in 3 clicks"}
+          {locale === "fr" ? "Passez de la lecture à l'action en 3 clics" : "Move from reading to execution in 3 clicks"}
         </h2>
         <p className="mt-2 text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? "Choisissez votre prochain pas: stages, outils, ou guide carriere."
+            ? "Choisissez votre prochain pas: stages, outils, ou guide carrière."
             : "Pick your next action: internships, tools, or the career guide."}
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
@@ -350,7 +350,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                       </p>
                       <p className="mt-2 text-sm text-[color:var(--text)]">
                         {locale === "fr"
-                          ? "Selection d'outils utiles pour appliquer ce chapitre sans perdre de temps."
+                          ? "Sélection d'outils utiles pour appliquer ce chapitre sans perdre de temps."
                           : "Curated tools that help you execute this chapter without friction."}
                       </p>
                       <div className="mt-3 flex flex-wrap gap-2">
@@ -393,7 +393,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
           {!!post.references.length && (
             <section id="references" className="anchor-offset reading-panel rounded-3xl p-6">
               <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-                {locale === "fr" ? "References et sources" : "References and sources"}
+                {locale === "fr" ? "Références et sources" : "References and sources"}
               </h2>
               <ol className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
                 {post.references.map((reference, index) => (
@@ -434,11 +434,11 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
 
           <section id="tools" className="anchor-offset">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "Outils lies a ce sujet" : "Related tools for this topic"}
+              {locale === "fr" ? "Outils liés à ce sujet" : "Related tools for this topic"}
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Stack orientee etudiants pour accelerer implementation, test, et deployment de ce sujet."
+                ? "Stack orientée étudiants pour accélérer implémentation, test, et deployment de ce sujet."
                 : "Student-focused stack to speed up implementation, testing, and deployment for this topic."}
             </p>
             <div className="mt-4 grid gap-3 md:grid-cols-3">
@@ -466,7 +466,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                 <thead className="bg-[color:var(--bg-soft)]/45 text-[color:var(--text)]">
                   <tr>
                     <th className="px-4 py-3">{locale === "fr" ? "Outil" : "Tool"}</th>
-                    <th className="px-4 py-3">{locale === "fr" ? "Ideal pour etudiants" : "Best for students"}</th>
+                    <th className="px-4 py-3">{locale === "fr" ? "Idéal pour étudiants" : "Best for students"}</th>
                     <th className="px-4 py-3">{locale === "fr" ? "Gain principal" : "Primary gain"}</th>
                     <th className="px-4 py-3">{locale === "fr" ? "Action" : "Action"}</th>
                   </tr>
@@ -511,10 +511,10 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {bridgeTrack === "cs"
                   ? locale === "fr"
-                    ? "Connectez cet article IA avec des fondamentaux systeme/backend pour renforcer votre fiabilite produit."
+                    ? "Connectez cet article IA avec des fondamentaux système/backend pour renforcer votre fiabilité produit."
                     : "Connect this AI article with system/backend fundamentals to strengthen product reliability."
                   : locale === "fr"
-                    ? "Connectez cet article CS avec des patterns IA/LLM pour transformer votre socle technique en projets differenciants."
+                    ? "Connectez cet article CS avec des patterns IA/LLM pour transformer votre socle technique en projets différenciants."
                     : "Connect this CS article with AI/LLM patterns to turn technical depth into differentiated projects."}
               </p>
               <div className="mt-4 grid gap-3 md:grid-cols-3">
@@ -562,17 +562,17 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
           <EditorialTrust locale={locale} compact />
           <div className="blog-aside-card rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "Continuer apres lecture" : "Continue after reading"}
+              {locale === "fr" ? "Continuer après lecture" : "Continue after reading"}
             </h3>
             <div className="mt-3 flex flex-col gap-2">
               <Link href={`/${locale}/news`} className="btn-secondary text-center">
-                {locale === "fr" ? "Actualites IA/CS" : "AI + Cybersecurity news"}
+                {locale === "fr" ? "Actualités IA/CS" : "AI + Cybersecurity news"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-secondary text-center">
                 {locale === "fr" ? "Lab outils" : "Tools lab"}
               </Link>
               <Link href={`/${locale}/resources`} className="btn-primary text-center">
-                {locale === "fr" ? "Outils recommandes" : "Recommended tools"}
+                {locale === "fr" ? "Outils recommandés" : "Recommended tools"}
               </Link>
             </div>
           </div>

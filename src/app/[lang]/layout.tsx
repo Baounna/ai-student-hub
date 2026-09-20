@@ -104,7 +104,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
               href={otherLocaleHref}
               hrefLang={otherLocale}
               className="utility-link font-semibold"
-              aria-label={locale === "fr" ? "Read in English" : "Lire en francais"}
+              aria-label={locale === "fr" ? "Read in English" : "Lire en français"}
             >
               {otherLocale.toUpperCase()}
             </Link>
@@ -123,7 +123,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                 </span>
                 <span className="hidden text-[11px] text-[color:var(--muted)] xl:block">
                   {locale === "fr"
-                    ? "Signaux IA + cybersecurite pour builders orientes execution"
+                    ? "Signaux IA + cybersécurité pour builders orientés exécution"
                     : "AI + Cybersecurity Signals for Real Builders"}
                 </span>
               </span>
@@ -186,7 +186,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
 
               <p className="ml-auto hidden max-w-[34rem] text-right text-xs text-[color:var(--muted)] lg:block">
                 {locale === "fr"
-                  ? "Signaux IA + cybersecurite et guides d'execution pour toute personne qui construit, apprend, ou travaille avec l'IA"
+                  ? "Signaux IA + cybersécurité et guides d'exécution pour toute personne qui construit, apprend, ou travaille avec l'IA"
                   : "AI + Cybersecurity signals and execution guides for anyone who builds, learns, or works with AI"}
               </p>
             </div>
@@ -260,7 +260,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                 href={otherLocaleHref}
                 hrefLang={otherLocale}
                 className="rounded-lg border border-[color:var(--border)] px-2.5 py-1 text-xs font-semibold text-[color:var(--text)]"
-                aria-label={locale === "fr" ? "Read in English" : "Lire en francais"}
+                aria-label={locale === "fr" ? "Read in English" : "Lire en français"}
               >
                 {otherLocale.toUpperCase()}
               </Link>
@@ -281,9 +281,9 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
           <section className="do-hero rounded-2xl p-5 md:p-6">
             <div className="grid gap-4 md:grid-cols-[1fr,auto] md:items-center">
               <div>
-                <p className="do-kicker">{locale === "fr" ? "Passage a l'action" : "Next step"}</p>
+                <p className="do-kicker">{locale === "fr" ? "Passage à l'action" : "Next step"}</p>
                 <h2 className="font-display mt-1 text-2xl font-semibold text-[color:var(--text-strong)]">
-                  {locale === "fr" ? "Transformez votre veille en execution concrete" : "Turn your weekly learning into execution"}
+                  {locale === "fr" ? "Transformez votre veille en exécution concrète" : "Turn your weekly learning into execution"}
                 </h2>
                 <p className="mt-2 text-sm text-[color:var(--text)]">
                   {locale === "fr"
@@ -312,7 +312,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                 {locale === "fr" ? "Briefs hebdomadaires" : "Weekly briefs"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] text-[color:var(--muted)]">
-                {locale === "fr" ? "Execution IA + cybersecurite" : "AI + cybersecurity execution"}
+                {locale === "fr" ? "Exécution IA + cybersécurité" : "AI + cybersecurity execution"}
               </span>
             </div>
           </div>
@@ -388,7 +388,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
               </li>
               <li>
                 <Link href={`/${locale}/privacy`} className="transition hover:opacity-70">
-                  {locale === "fr" ? "Confidentialite" : "Privacy"}
+                  {locale === "fr" ? "Confidentialité" : "Privacy"}
                 </Link>
               </li>
               <li>
@@ -409,7 +409,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
             </p>
             <p>
               {locale === "fr"
-                ? "Construit pour toute personne qui apprend ou construit avec l'IA et la cybersecurite."
+                ? "Construit pour toute personne qui apprend ou construit avec l'IA et la cybersécurité."
                 : "Built for anyone learning or building with AI and cybersecurity."}
             </p>
           </div>

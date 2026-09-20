@@ -21,7 +21,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const fr = params.lang === "fr";
   const title = fr ? "Sprint croissance 14 jours" : "14-day growth sprint";
   const description = fr
-    ? "Plan d'execution concret pour rendre AI and Cybersecurity News plus attractif et plus utile aux etudiants."
+    ? "Plan d'exécution concret pour rendre AI and Cybersecurity News plus attractif et plus utile aux étudiants."
     : "Concrete execution plan to make AI and Cybersecurity News more attractive and more useful for students.";
 
   return {
@@ -69,7 +69,7 @@ const sprintDays: SprintDay[] = [
     day: "Day 1",
     task: {
       en: "Select 3 high-intent topics from the auto AI + Cybersecurity feed (comparison, budget, tools).",
-      fr: "Selectionnez 3 sujets a forte intention depuis le flux auto AI + Cybersecurity (comparaison, budget, outils)."
+      fr: "Sélectionnez 3 sujets à forte intention depuis le flux auto AI + Cybersecurity (comparaison, budget, outils)."
     },
     output: {
       en: "3 article titles + target keyword each.",
@@ -84,14 +84,14 @@ const sprintDays: SprintDay[] = [
     },
     output: {
       en: "1 live article with source references.",
-      fr: "1 article en ligne avec references source."
+      fr: "1 article en ligne avec références source."
     }
   },
   {
     day: "Day 3",
     task: {
       en: "Repurpose article #1 into LinkedIn post + short summary thread.",
-      fr: "Reconvertissez l'article #1 en post LinkedIn + thread resume."
+      fr: "Reconvertissez l'article #1 en post LinkedIn + thread résumé."
     },
     output: {
       en: "1 social post driving traffic to blog.",
@@ -117,29 +117,29 @@ const sprintDays: SprintDay[] = [
     },
     output: {
       en: "1 email campaign sent.",
-      fr: "1 campagne email envoyee."
+      fr: "1 campagne email envoyée."
     }
   },
   {
     day: "Day 6",
     task: {
       en: "Update resources page with one new partner tool and fresh value note.",
-      fr: "Mettez a jour resources avec un nouvel outil partenaire + note de valeur."
+      fr: "Mettez à jour resources avec un nouvel outil partenaire + note de valeur."
     },
     output: {
       en: "Resources freshness signal improved.",
-      fr: "Signal de fraicheur resources renforce."
+      fr: "Signal de fraîcheur resources renforcé."
     }
   },
   {
     day: "Day 7",
     task: {
       en: "Review CTR on affiliate links and optimize weakest CTA copy.",
-      fr: "Analysez le CTR des liens affilies et optimisez le CTA le plus faible."
+      fr: "Analysez le CTR des liens affiliés et optimisez le CTA le plus faible."
     },
     output: {
       en: "Improved CTA copy v2.",
-      fr: "Copy CTA v2 amelioree."
+      fr: "Copy CTA v2 améliorée."
     }
   },
   {
@@ -172,18 +172,18 @@ const sprintDays: SprintDay[] = [
     },
     output: {
       en: "1 additional affiliate entry point.",
-      fr: "1 point d'entree affiliation supplementaire."
+      fr: "1 point d'entrée affiliation supplémentaire."
     }
   },
   {
     day: "Day 11",
     task: {
       en: "Create one FAQ block in top-performing article to improve SEO snippet chances.",
-      fr: "Ajoutez un bloc FAQ dans l'article le plus performant pour ameliorer le SEO snippet."
+      fr: "Ajoutez un bloc FAQ dans l'article le plus performant pour améliorer le SEO snippet."
     },
     output: {
       en: "Improved search relevance.",
-      fr: "Pertinence recherche amelioree."
+      fr: "Pertinence recherche améliorée."
     }
   },
   {
@@ -194,18 +194,18 @@ const sprintDays: SprintDay[] = [
     },
     output: {
       en: "Second social traffic wave.",
-      fr: "Deuxieme vague de trafic social."
+      fr: "Deuxième vague de trafic social."
     }
   },
   {
     day: "Day 13",
     task: {
       en: "Review product page copy and improve trust note + urgency sentence.",
-      fr: "Revois le copy de la page produit et ameliore trust note + phrase d'urgence."
+      fr: "Revois le copy de la page produit et améliore trust note + phrase d'urgence."
     },
     output: {
       en: "Higher product conversion readiness.",
-      fr: "Conversion produit mieux preparee."
+      fr: "Conversion produit mieux préparée."
     }
   },
   {
@@ -216,7 +216,7 @@ const sprintDays: SprintDay[] = [
     },
     output: {
       en: "Next sprint queue ready.",
-      fr: "Queue du prochain sprint prete."
+      fr: "Queue du prochain sprint prête."
     }
   }
 ];
@@ -250,11 +250,11 @@ export default async function GrowthSprintPage(props: { params: Promise<{ lang: 
   const templates = fr
     ? {
         intro:
-          "Si vous construisez un projet IA cette semaine, commencez par cette comparaison et choisissez un stack adapte a votre budget.",
+          "Si vous construisez un projet IA cette semaine, commencez par cette comparaison et choisissez un stack adapté à votre budget.",
         mid:
           "Pour aller plus vite, ouvrez notre page resources et prenez un outil deploy + un outil productivity.",
         end:
-          "Vous voulez un systeme complet? Voyez les stages ouverts puis passez au guide etudiant."
+          "Vous voulez un système complet? Voyez les stages ouverts puis passez au guide étudiant."
       }
     : {
         intro:
@@ -274,12 +274,12 @@ export default async function GrowthSprintPage(props: { params: Promise<{ lang: 
         </h1>
         <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
           {fr
-            ? "Playbook concret pour ameliorer contenu, SEO et conversion avec un systeme simple."
+            ? "Playbook concret pour améliorer contenu, SEO et conversion avec un système simple."
             : "Concrete playbook to improve content, SEO, and conversion with a simple system."}
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           <Link href={`/${locale}/news`} className="btn-secondary">
-            {fr ? "Actualites AI + Cybersecurity" : "AI + Cybersecurity news"}
+            {fr ? "Actualités AI + Cybersecurity" : "AI + Cybersecurity news"}
           </Link>
           <Link href={`/${locale}/resources`} className="btn-secondary">
             {fr ? "Resources" : "Resources"}
@@ -308,7 +308,7 @@ export default async function GrowthSprintPage(props: { params: Promise<{ lang: 
       <section className="mt-6 grid gap-4 lg:grid-cols-[1.15fr,1fr]">
         <article className="surface rounded-2xl p-6">
           <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-            {fr ? "Templates CTA prets a copier" : "Copy-ready CTA templates"}
+            {fr ? "Templates CTA prêts à copier" : "Copy-ready CTA templates"}
           </h2>
           <div className="mt-4 space-y-3">
             <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
@@ -328,7 +328,7 @@ export default async function GrowthSprintPage(props: { params: Promise<{ lang: 
 
         <article className="surface rounded-2xl p-6">
           <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-            {fr ? "KPI a suivre chaque semaine" : "Weekly KPI checkpoints"}
+            {fr ? "KPI à suivre chaque semaine" : "Weekly KPI checkpoints"}
           </h2>
           <div className="mt-4 overflow-x-auto">
             <table className="w-full min-w-[22rem] border-collapse text-sm">

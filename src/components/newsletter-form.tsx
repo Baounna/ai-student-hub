@@ -22,7 +22,7 @@ function getNextAction(source: string, locale: Locale) {
   if (source.includes("product")) {
     return {
       href: `/${locale}/product/ai-career-guide`,
-      label: locale === "fr" ? "Voir le guide carriere" : "Open the career guide"
+      label: locale === "fr" ? "Voir le guide carrière" : "Open the career guide"
     };
   }
 
@@ -115,7 +115,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
           name="name"
           value={name}
           onChange={(event) => setName(event.target.value)}
-          placeholder={locale === "fr" ? "Prenom" : "First name"}
+          placeholder={locale === "fr" ? "Prénom" : "First name"}
           autoComplete="given-name"
           maxLength={80}
           className="field-input"
@@ -177,10 +177,10 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
           <p>
             {deliveryStatus === "sent"
               ? locale === "fr"
-                ? "Parfait. Verifiez votre boite mail."
+                ? "Parfait. Vérifiez votre boîte mail."
                 : "Great. Check your inbox."
               : locale === "fr"
-                ? "Inscription enregistree. Vous recevrez les prochaines mises a jour."
+                ? "Inscription enregistrée. Vous recevrez les prochaines mises à jour."
                 : "Signup saved. You will receive upcoming updates."}
           </p>
           <a href={nextAction.href} className="do-link mt-1 inline-block">
@@ -190,7 +190,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       )}
       {status === "error" && (
         <p className={`status-error ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
-          {locale === "fr" ? "Erreur. Reessaie dans un instant." : "Something went wrong. Try again."}
+          {locale === "fr" ? "Erreur. Réessaie dans un instant." : "Something went wrong. Try again."}
         </p>
       )}
     </form>

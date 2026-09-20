@@ -18,7 +18,7 @@ export function PostArticleCta({
   const resolvedTitle =
     title ||
     (locale === "fr"
-      ? "Pret a accelerer votre execution IA + cybersecurite ?"
+      ? "Prêt à accélérer votre exécution IA + cybersécurité ?"
       : "Ready to accelerate your AI + cybersecurity execution?");
   const resolvedDescription =
     description ||
@@ -27,13 +27,13 @@ export function PostArticleCta({
       : "Open the current list of internships, then the tools lab to pick your stack.");
   const ctaPrimary = locale === "fr" ? siteConfig.leadMagnet.frLabel : siteConfig.leadMagnet.enLabel;
   const ctaSecondary = locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab";
-  const ctaTertiary = locale === "fr" ? "Acheter le guide etudiant" : "Buy student guide";
+  const ctaTertiary = locale === "fr" ? "Acheter le guide étudiant" : "Buy student guide";
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
   const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
   const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
   const proofLines =
     locale === "fr"
-      ? ["Format actionable en 10 min", "Systeme hebdomadaire orientee execution", "Concu pour un budget-friendly reel"]
+      ? ["Format actionable en 10 min", "Système hebdomadaire orienté exécution", "Conçu pour un budget-friendly réel"]
       : ["Actionable in under 10 minutes", "Weekly execution-first system", "Built for realistic budget constraints"];
 
   return (

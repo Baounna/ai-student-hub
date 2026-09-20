@@ -29,7 +29,7 @@ function ClosedNotice({ locale }: { locale: Locale }) {
     <div className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
       <p className="text-sm text-[color:var(--text)]">
         {locale === "fr"
-          ? "Les inscriptions ne sont pas encore ouvertes. Rien n'est collecte pour l'instant."
+          ? "Les inscriptions ne sont pas encore ouvertes. Rien n'est collecté pour l'instant."
           : "Signups are not open yet. Nothing is being collected for now."}
       </p>
       <p className="mt-2 text-xs text-[color:var(--muted)]">
@@ -113,7 +113,7 @@ export function Newsletter({ compact = false, locale = "en", source }: Newslette
               is how a reader decides you do not know what you send. */}
           <p className="mt-3 text-xs text-[color:var(--muted)]">
             {locale === "fr"
-              ? "Pas de spam. Desinscription en un clic."
+              ? "Pas de spam. Désinscription en un clic."
               : "No spam. One click to unsubscribe."}
           </p>
         </>

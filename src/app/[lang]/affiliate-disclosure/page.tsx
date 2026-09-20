@@ -46,17 +46,17 @@ export default async function AffiliateDisclosurePage(props: { params: Promise<{
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">{siteConfig.affiliateDisclosureText[locale]}</p>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
             {fr
-              ? "Nous recommandons uniquement des outils pertinents pour les etudiants. Si cela change un jour et que nous rejoignons un programme d'affiliation, cette page le dira avant que le premier lien ne change."
+              ? "Nous recommandons uniquement des outils pertinents pour les étudiants. Si cela change un jour et que nous rejoignons un programme d'affiliation, cette page le dira avant que le premier lien ne change."
               : "We only recommend tools relevant to student outcomes. If that ever changes and we join an affiliate programme, this page will say so before the first link does."}
           </p>
         </section>
 
         <section className="glass rounded-2xl p-6">
           <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-            {fr ? "Editeur" : "Publisher"}
+            {fr ? "Éditeur" : "Publisher"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
-            {fr ? `Editeur: ${siteConfig.legalName}. Contact: ` : `Publisher: ${siteConfig.legalName}. Contact: `}
+            {fr ? `Éditeur: ${siteConfig.legalName}. Contact: ` : `Publisher: ${siteConfig.legalName}. Contact: `}
             <a href={`mailto:${siteConfig.contactEmail}`} className="do-link">
               {siteConfig.contactEmail}
             </a>
@@ -69,7 +69,7 @@ export default async function AffiliateDisclosurePage(props: { params: Promise<{
               {fr ? "Conditions" : "Terms"}
             </Link>
             <Link href={`/${locale}/privacy`} className="btn-secondary">
-              {fr ? "Confidentialite" : "Privacy"}
+              {fr ? "Confidentialité" : "Privacy"}
             </Link>
           </div>
         </section>

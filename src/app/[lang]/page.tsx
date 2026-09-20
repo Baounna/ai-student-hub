@@ -89,16 +89,16 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
     siteConfig.socialProofStats.length > 0
       ? siteConfig.socialProofStats
       : locale === "fr"
-        ? ["Base de connaissance IA/CS pour builders et apprenants", "Ressources pratiques mises a jour regulierement", "Mises a jour hebdomadaires IA + CS"]
+        ? ["Base de connaissance IA/CS pour builders et apprenants", "Ressources pratiques mises à jour régulièrement", "Mises à jour hebdomadaires IA + CS"]
         : ["AI + Cybersecurity knowledge base for builders and learners", "Practical resources updated regularly", "Weekly AI + Cybersecurity updates"];
 
   const didYouKnowItems =
     locale === "fr"
       ? [
-          "Le Web a ete propose en 1989 par Tim Berners-Lee pour partager la recherche scientifique.",
+          "Le Web a été proposé en 1989 par Tim Berners-Lee pour partager la recherche scientifique.",
           "Le langage C, créé dans les années 1970, influence encore la plupart des langages modernes.",
-          "Git (2005) est devenu l'outil standard pour la collaboration en ingenierie logicielle.",
-          "Un portfolio deploye augmente souvent plus le signal carrière qu'un grand nombre de certificats."
+          "Git (2005) est devenu l'outil standard pour la collaboration en ingénierie logicielle.",
+          "Un portfolio déployé augmente souvent plus le signal carrière qu'un grand nombre de certificats."
         ]
       : [
           "The Web was proposed in 1989 by Tim Berners-Lee to share scientific research.",
@@ -127,21 +127,21 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       ? [
           {
             title: "1) Apprendre",
-            body: "Lis des guides IA + cybersecurite axes projets, stage, et execution.",
+            body: "Lis des guides IA + cybersécurité axés projets, stage, et exécution.",
             href: `/${locale}/blog`,
             cta: "Ouvrir le blog"
           },
           {
             title: "2) Choisir les outils",
-            body: "Choisissez une stack avec comparatifs clairs, budget-friendly, et compromis reels.",
+            body: "Choisissez une stack avec comparatifs clairs, budget-friendly, et compromis réels.",
             href: `/${locale}/compare`,
             cta: "Ouvrir le lab outils"
           },
           {
-            title: "3) Passer a l'action",
-            body: "Ouvrez la liste des stages ouverts, puis le guide carriere.",
+            title: "3) Passer à l'action",
+            body: "Ouvrez la liste des stages ouverts, puis le guide carrière.",
             href: `/${locale}/product/ai-career-guide`,
-            cta: "Lancer l'execution"
+            cta: "Lancer l'exécution"
           }
         ]
       : [
@@ -173,18 +173,18 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             title: "News + outils + briefs",
             body: "Suivez les updates officielles IA/CS, ouvrez les outils utiles, puis appliquez les briefs pratiques.",
             links: [
-              { href: `/${locale}/news`, text: "Actualites" },
+              { href: `/${locale}/news`, text: "Actualités" },
               { href: `/${locale}/compare`, text: "Outils" },
               { href: `/${locale}/blog`, text: "Briefs & guides" }
             ]
           },
           {
-            label: "Pour etudiants",
-            title: "Stages + carriere + guides budget-friendly",
-            body: "Parcours dedie pour stages, portfolio, et execution avec contraintes budget.",
+            label: "Pour étudiants",
+            title: "Stages + carrière + guides budget-friendly",
+            body: "Parcours dédié pour stages, portfolio, et exécution avec contraintes budget.",
             links: [
               { href: leadMagnetHref, text: "Stages ouverts", external: true },
-              { href: `/${locale}/product/ai-career-guide`, text: "Guide carriere" },
+              { href: `/${locale}/product/ai-career-guide`, text: "Guide carrière" },
               { href: `/${locale}/resources`, text: "Guides budget-friendly" }
             ]
           }
@@ -218,7 +218,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       title: locale === "fr" ? "Piste IA" : "AI Track",
       summary:
         locale === "fr"
-          ? "Modeles, ML engineering, LLM systems, et execution portfolio."
+          ? "Modèles, ML engineering, LLM systems, et exécution portfolio."
           : "Models, ML engineering, LLM systems, and portfolio execution.",
       count: trackCounts.ai,
       categories: aiCategories.slice(0, 3),
@@ -229,7 +229,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       title: locale === "fr" ? "Piste informatique" : "Computer Science Track",
       summary:
         locale === "fr"
-          ? "Algorithmes, backend, cloud, securite, et performance pour projets reels."
+          ? "Algorithmes, backend, cloud, sécurité, et performance pour projets réels."
           : "Algorithms, backend, cloud, security, and performance for real projects.",
       count: trackCounts.cs,
       categories: csCategories.slice(0, 3),
@@ -286,18 +286,18 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             engines weigh most — shipped with no top-level heading at all. */}
         <h1 className="wiki-head hero-title px-6 py-3 text-center font-bold">
           {locale === "fr"
-            ? "Actualites IA + cybersecurite et guides d'execution pour tous"
+            ? "Actualités IA + cybersécurité et guides d'exécution pour tous"
             : "AI + Cybersecurity news and execution guides for anyone who builds, learns, or works with AI"}
         </h1>
         <div className="body-copy px-6 py-4 text-center text-[color:var(--text)]">
           <p>
             {locale === "fr"
-              ? "Base de connaissance orientee resultats: suivre les updates, choisir les bons outils, puis livrer des projets concrets."
+              ? "Base de connaissance orientée résultats: suivre les updates, choisir les bons outils, puis livrer des projets concrets."
               : "Execution-first knowledge base: follow updates, pick the right tools, and ship practical projects faster."}
           </p>
           <p className="mt-2 text-sm text-[color:var(--muted)]">
             {locale === "fr"
-              ? "Objectif: convertir information IA + cybersecurite en execution mesurable. Parcours etudiant dedie disponible."
+              ? "Objectif: convertir information IA + cybersécurité en exécution mesurable. Parcours étudiant dédié disponible."
               : "Goal: convert AI + Cybersecurity information into measurable execution. A dedicated student path stays available."}
           </p>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
@@ -316,19 +316,19 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                 meta={{ page: "home_header", locale, offer: "ai-career-guide" }}
                 className="btn-secondary"
               >
-                {locale === "fr" ? "Acheter le guide execution" : "Buy execution guide"}
+                {locale === "fr" ? "Acheter le guide exécution" : "Buy execution guide"}
               </TrackableAnchor>
             ) : (
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Voir le guide carriere" : "Open the career guide"}
+                {locale === "fr" ? "Voir le guide carrière" : "Open the career guide"}
               </Link>
             )}
           </div>
           <p className="mt-2 text-sm text-[color:var(--muted)]">
-            {allNews.length} {locale === "fr" ? "briefs d'actualite" : "news briefs"} • {popularPosts.length}{" "}
+            {allNews.length} {locale === "fr" ? "briefs d'actualité" : "news briefs"} • {popularPosts.length}{" "}
             {locale === "fr" ? "articles principaux" : "core articles"} • {categories.length}{" "}
             {locale === "fr" ? "domaines" : "domains"} • {recommendedTools.length}{" "}
-            {locale === "fr" ? "outils recommandes" : "recommended tools"}
+            {locale === "fr" ? "outils recommandés" : "recommended tools"}
           </p>
           <p className="mt-1 text-xs text-[color:var(--muted)]">
             {getTrackLabel("ai", locale)}: {trackCounts.ai} • {getTrackLabel("cs", locale)}: {trackCounts.cs} •{" "}
@@ -383,33 +383,33 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
         <article className="wiki-panel rounded-md p-4">
           <p className="do-kicker">{locale === "fr" ? "Trust proof" : "Trust proof"}</p>
           <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">
-            {locale === "fr" ? "Methodologie transparente" : "Transparent methodology"}
+            {locale === "fr" ? "Méthodologie transparente" : "Transparent methodology"}
           </h2>
           <p className="mt-2 text-sm text-[color:var(--text)]">
             {locale === "fr"
-              ? "Chaque article suit la meme structure: signal, impact pratique, action concrete, references."
+              ? "Chaque article suit la même structure: signal, impact pratique, action concrète, références."
               : "Each article follows the same structure: signal, practical impact, concrete action, and references."}
           </p>
         </article>
         <article className="wiki-panel rounded-md p-4">
           <p className="do-kicker">{locale === "fr" ? "Sources" : "Sources"}</p>
           <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">
-            {locale === "fr" ? "References officielles" : "Official references"}
+            {locale === "fr" ? "Références officielles" : "Official references"}
           </h2>
           <p className="mt-2 text-sm text-[color:var(--text)]">
             {locale === "fr"
-              ? "Nous utilisons prioritairement des sources institutionnelles, docs officielles, et pages prix editeur."
+              ? "Nous utilisons prioritairement des sources institutionnelles, docs officielles, et pages prix éditeur."
               : "We prioritize institutional sources, official documentation, and first-party pricing pages."}
           </p>
         </article>
         <article className="wiki-panel rounded-md p-4">
           <p className="do-kicker">{locale === "fr" ? "Outcome" : "Outcome"}</p>
           <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">
-            {locale === "fr" ? "Oriente resultats" : "Outcome-first"}
+            {locale === "fr" ? "Orienté résultats" : "Outcome-first"}
           </h2>
           <p className="mt-2 text-sm text-[color:var(--text)]">
             {locale === "fr"
-              ? "Le contenu vise portfolio deploye, candidatures plus fortes, et execution hebdomadaire constante."
+              ? "Le contenu vise portfolio déployé, candidatures plus fortes, et exécution hebdomadaire constante."
               : "Content is optimized for shipped portfolio projects, stronger applications, and weekly execution consistency."}
           </p>
         </article>
@@ -418,7 +418,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       <section className="mt-4 grid gap-4 md:grid-cols-2">
         {splitEntryCards.map((card) => (
           <article key={card.key} className="wiki-panel rounded-md p-5">
-            <p className="do-kicker">{locale === "fr" ? "Parcours editorial" : "Editorial split"}</p>
+            <p className="do-kicker">{locale === "fr" ? "Parcours éditorial" : "Editorial split"}</p>
             <h2 className="font-display mt-2 text-xl font-semibold text-[color:var(--text-strong)]">{card.title}</h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">{card.summary}</p>
             <p className="mt-2 text-xs text-[color:var(--muted)]">
@@ -444,7 +444,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
 
       <section className="mt-4 grid gap-4 md:grid-cols-2">
         <article className="wiki-panel rounded-md p-5">
-          <p className="do-kicker">{locale === "fr" ? "Selection IA" : "AI Focus"}</p>
+          <p className="do-kicker">{locale === "fr" ? "Sélection IA" : "AI Focus"}</p>
           <div className="mt-2 space-y-2 text-sm text-[color:var(--text)]">
             {aiFocusPosts.map((post) => (
               <p key={post.slug}>
@@ -456,7 +456,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           </div>
         </article>
         <article className="wiki-panel rounded-md p-5">
-          <p className="do-kicker">{locale === "fr" ? "Selection informatique" : "CS Focus"}</p>
+          <p className="do-kicker">{locale === "fr" ? "Sélection informatique" : "CS Focus"}</p>
           <div className="mt-2 space-y-2 text-sm text-[color:var(--text)]">
             {csFocusPosts.map((post) => (
               <p key={post.slug}>
@@ -503,7 +503,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
               </div>
               <div className="mt-4 border-t border-[color:var(--wiki-panel-border)] pt-3 text-sm">
                 <span className="font-semibold text-[color:var(--text-strong)]">
-                  {locale === "fr" ? "Recemment en vedette:" : "Recently featured:"}
+                  {locale === "fr" ? "Récemment en vedette:" : "Recently featured:"}
                 </span>{" "}
                 <span className="text-[color:var(--text)]">
                   {sidePosts.map((post, idx) => (
@@ -538,7 +538,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             <div className="mt-4 border-t border-[color:var(--wiki-panel-border)] pt-3 text-sm">
               <span className="font-semibold text-[color:var(--text-strong)]">{locale === "fr" ? "Voir aussi:" : "See also:"}</span>{" "}
               <Link href={`/${locale}/news`} className="do-link">
-                {locale === "fr" ? "Toutes les actualites" : "All news"}
+                {locale === "fr" ? "Toutes les actualités" : "All news"}
               </Link>{" "}
               •{" "}
               <Link href={`/${locale}/blog`} className="do-link">
@@ -561,7 +561,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           <div className="p-4">
             <p className="text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Selection automatique depuis des sources fiables. Utilisez ces signaux pour choisir votre prochain article."
+                ? "Sélection automatique depuis des sources fiables. Utilisez ces signaux pour choisir votre prochain article."
                 : "Auto-selected from trusted sources. Use these signals to choose your next article."}
             </p>
             {autoUpdates.length ? (
@@ -606,7 +606,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
 
         <section className="wiki-panel overflow-hidden rounded-md">
           <div className="wiki-head wiki-head-purple px-4 py-2 text-xl md:text-2xl">
-            {locale === "fr" ? "Plan d'etude hebdomadaire" : "Weekly learning plan"}
+            {locale === "fr" ? "Plan d'étude hebdomadaire" : "Weekly learning plan"}
           </div>
           <div className="space-y-3 p-4 text-sm text-[color:var(--text)]">
             <p>
@@ -622,23 +622,23 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
               </li>
               <li>
                 {locale === "fr"
-                  ? "2. Construisez une mini demo ou un mini exercice pratique."
+                  ? "2. Construisez une mini démo ou un mini exercice pratique."
                   : "2. Build a mini demo or practical exercise from it."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "3. Documentez ce que vous avez appris et partagez les references."
+                  ? "3. Documentez ce que vous avez appris et partagez les références."
                   : "3. Document what you learned and share references."}
               </li>
             </ul>
             <div className="rounded border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Repere: suivez votre nombre de projets finalises, la qualite de documentation, et la constance."
+                ? "Repère: suivez votre nombre de projets finalisés, la qualité de documentation, et la constance."
                 : "Reference: track completed projects, documentation quality, and consistency."}
             </div>
             <div className="flex flex-wrap gap-2">
               <Link href={`/${locale}/resources`} className="btn-secondary">
-                {locale === "fr" ? "Outils recommandes" : "Recommended tools"}
+                {locale === "fr" ? "Outils recommandés" : "Recommended tools"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-secondary">
                 {locale === "fr" ? "Lab outils" : "Tools lab"}
@@ -656,7 +656,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                 </TrackableAnchor>
               ) : (
                 <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                  {locale === "fr" ? "Voir le guide carriere" : "Open the career guide"}
+                  {locale === "fr" ? "Voir le guide carrière" : "Open the career guide"}
                 </Link>
               )}
             </div>
@@ -717,7 +717,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
 
         <section className="wiki-panel overflow-hidden rounded-md">
           <div className="wiki-head wiki-head-purple px-4 py-2 text-xl md:text-2xl">
-            {locale === "fr" ? "Boite a outils pratique" : "Practical toolbox"}
+            {locale === "fr" ? "Boîte à outils pratique" : "Practical toolbox"}
           </div>
           <div className="space-y-3 p-4">
             {recommendedTools.map((tool, index) => (
@@ -758,7 +758,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           </TrackableAnchor>
           <span>•</span>
           <Link href={`/${locale}/news`} className="do-link">
-            {locale === "fr" ? "Suivre les actualites IA/CS" : "Follow AI + Cybersecurity news"}
+            {locale === "fr" ? "Suivre les actualités IA/CS" : "Follow AI + Cybersecurity news"}
           </Link>
           <span>•</span>
           <Link href={`/${locale}/blog`} className="do-link">
@@ -797,7 +797,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
 
       <section className="wiki-panel mt-4 overflow-hidden rounded-md">
         <div className="wiki-head px-4 py-2 text-xl">
-          {locale === "fr" ? "References de connaissance" : "Knowledge references"}
+          {locale === "fr" ? "Références de connaissance" : "Knowledge references"}
         </div>
         <ol className="space-y-2 p-4 text-sm text-[color:var(--text)]">
           {knowledgeReferences.map((reference, index) => (

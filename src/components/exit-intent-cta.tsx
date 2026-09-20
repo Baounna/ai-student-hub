@@ -9,7 +9,7 @@ export function ExitIntentCta({ locale = "en" }: { locale?: Locale }) {
       ? {
           badge: "Avant de partir",
           title: "Voyez les stages ouverts avant de partir",
-          body: "Stages et alternances IA et cybersecurite au Maroc et en France. Nouvelle liste chaque semaine.",
+          body: "Stages et alternances IA et cybersécurité au Maroc et en France. Nouvelle liste chaque semaine.",
           cta1: "Voir les stages",
           cta2: "Voir les ressources"
         }

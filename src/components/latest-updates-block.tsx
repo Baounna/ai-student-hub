@@ -34,11 +34,11 @@ export async function LatestUpdatesBlock({ locale, limit = 6, compact = false, c
   return (
     <section className={`${sectionClass} ${className}`.trim()}>
       <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-        {fr ? "Dernieres mises a jour IA/CS (avec source)" : "Latest AI + Cybersecurity updates (with sources)"}
+        {fr ? "Dernières mises à jour IA/CS (avec source)" : "Latest AI + Cybersecurity updates (with sources)"}
       </h2>
       <p className="mt-2 text-sm text-[color:var(--text)]">
         {fr
-          ? "Flux automatise depuis les briefs verifies. Chaque lien pointe vers la publication originale."
+          ? "Flux automatisé depuis les briefs vérifiés. Chaque lien pointe vers la publication originale."
           : "Automated stream from verified briefs. Every link points to the original publication."}
       </p>
 
@@ -64,7 +64,7 @@ export async function LatestUpdatesBlock({ locale, limit = 6, compact = false, c
         <div className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
           <p className="text-sm text-[color:var(--text)]">
             {fr
-              ? "Les flux externes sont temporairement indisponibles. Reessayez plus tard."
+              ? "Les flux externes sont temporairement indisponibles. Réessayez plus tard."
               : "External feeds are temporarily unavailable. Please retry shortly."}
           </p>
         </div>

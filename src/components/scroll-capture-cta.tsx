@@ -55,7 +55,7 @@ export function ScrollCaptureCta({ locale }: { locale: Locale }) {
         </p>
         <p className="mt-1 text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? "Stages et alternances IA et cybersecurite. Nouvelle liste chaque semaine."
+            ? "Stages et alternances IA et cybersécurité. Nouvelle liste chaque semaine."
             : "AI and cybersecurity internships. A new list every week."}
         </p>
         <div className="mt-3 flex gap-2">

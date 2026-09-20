@@ -15,7 +15,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const fr = params.lang === "fr";
   const title = fr ? "Faire un don" : "Donate";
   const description = fr
-    ? "Soutiens AI and Cybersecurity News pour financer du contenu pratique IA/CS pour etudiants."
+    ? "Soutiens AI and Cybersecurity News pour financer du contenu pratique IA/CS pour étudiants."
     : "Support AI and Cybersecurity News and fund practical AI + Cybersecurity education content for students.";
 
   return {
@@ -71,7 +71,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
     {
       name: siteConfig.donation.cardLabel,
       href: siteConfig.donation.cardUrl,
-      detail: fr ? "Paiement carte bancaire securise." : "Secure card payment checkout.",
+      detail: fr ? "Paiement carte bancaire sécurisé." : "Secure card payment checkout.",
       badges: ["Mastercard", "Visa"]
     }
   ];
@@ -90,9 +90,9 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
     ? siteConfig.socialProofStats.slice(0, 3)
     : fr
       ? [
-          "Contenu pratique publie regulierement pour etudiants IA/CS.",
-          "Sources explicites et references visibles.",
-          "Approche execution-first adaptee aux budgets etudiants."
+          "Contenu pratique publié régulièrement pour étudiants IA/CS.",
+          "Sources explicites et références visibles.",
+          "Approche execution-first adaptée aux budgets étudiants."
         ]
       : [
           "Practical content published consistently for AI + Cybersecurity students.",
@@ -111,18 +111,18 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr
-                ? "Chaque don finance la recherche, la production d'articles de qualite, et des ressources accessibles pour etudiants IA/CS."
+                ? "Chaque don finance la recherche, la production d'articles de qualité, et des ressources accessibles pour étudiants IA/CS."
                 : "Every donation funds research, high-quality articles, and accessible resources for AI + Cybersecurity students."}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "100% education etudiante" : "100% student education"}
+                {fr ? "100% éducation étudiante" : "100% student education"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Mises a jour mensuelles" : "Monthly updates"}
+                {fr ? "Mises à jour mensuelles" : "Monthly updates"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Execution IA/CS" : "AI + Cybersecurity execution"}
+                {fr ? "Exécution IA/CS" : "AI + Cybersecurity execution"}
               </span>
             </div>
           </div>
@@ -131,8 +131,8 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
             <p className="do-kicker">{fr ? "Pourquoi contribuer" : "Why contribute"}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>{fr ? "1. Plus de guides pratiques EN/FR." : "1. More practical EN/FR guides."}</li>
-              <li>{fr ? "2. Comparatifs outils mis a jour regulierement." : "2. Regularly updated tool comparisons."}</li>
-              <li>{fr ? "3. Experience etudiante orientee execution." : "3. Execution-first student experience."}</li>
+              <li>{fr ? "2. Comparatifs outils mis à jour régulièrement." : "2. Regularly updated tool comparisons."}</li>
+              <li>{fr ? "3. Expérience étudiante orientée exécution." : "3. Execution-first student experience."}</li>
             </ul>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
               {uniquePrimaryMethods.map((method, index) => (
                 <article key={method.name} className="card-hover glass rounded-2xl p-5">
                   <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-                    {fr ? `Methode ${index + 1}` : `Method ${index + 1}`}
+                    {fr ? `Méthode ${index + 1}` : `Method ${index + 1}`}
                   </p>
                   <h2 className="font-display mt-1 text-xl font-semibold text-[color:var(--text-strong)]">{method.name}</h2>
                   <p className="mt-2 text-sm text-[color:var(--text)]">{method.detail}</p>
@@ -189,9 +189,9 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
             </p>
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
               {[
-                { amount: "$3", label: fr ? "Cafe support" : "Coffee support" },
+                { amount: "$3", label: fr ? "Café support" : "Coffee support" },
                 { amount: "$10", label: fr ? "Soutien mensuel" : "Monthly support" },
-                { amount: "$25", label: fr ? "Sponsor etudiant" : "Student sponsor" }
+                { amount: "$25", label: fr ? "Sponsor étudiant" : "Student sponsor" }
               ].map((tier) => (
                 <article key={tier.amount} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
                   <p className="text-2xl font-bold text-[color:var(--text-strong)]">{tier.amount}</p>
@@ -217,16 +217,16 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
 
           <section className="surface rounded-2xl p-6">
             <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Ou va votre soutien" : "Where your support goes"}
+              {fr ? "Où va votre soutien" : "Where your support goes"}
             </h2>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
-              <li>- {fr ? "Production de contenu EN/FR a haute valeur pratique." : "EN/FR content production with practical value."}</li>
-              <li>- {fr ? "Mises a jour tools/comparatifs pour budgets etudiants." : "Frequent tools/comparison updates for student budgets."}</li>
-              <li>- {fr ? "Amelioration continue du site et de l'experience learning." : "Continuous site and learning experience improvements."}</li>
+              <li>- {fr ? "Production de contenu EN/FR à haute valeur pratique." : "EN/FR content production with practical value."}</li>
+              <li>- {fr ? "Mises à jour tools/comparatifs pour budgets étudiants." : "Frequent tools/comparison updates for student budgets."}</li>
+              <li>- {fr ? "Amélioration continue du site et de l'expérience learning." : "Continuous site and learning experience improvements."}</li>
             </ul>
             <div className="mt-4">
               <Link href={`/${locale}/resources`} className="do-link text-sm">
-                {fr ? "Voir les ressources recommandees" : "See recommended resources"}
+                {fr ? "Voir les ressources recommandées" : "See recommended resources"}
               </Link>
             </div>
           </section>
@@ -238,12 +238,12 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {fr
-                  ? "Vous pouvez soutenir le projet via le guide etudiant ou en partageant AI and Cybersecurity News."
+                  ? "Vous pouvez soutenir le projet via le guide étudiant ou en partageant AI and Cybersecurity News."
                   : "You can support the project via the student guide or by sharing AI and Cybersecurity News."}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                  {fr ? "Voir le guide etudiant" : "Open student guide"}
+                  {fr ? "Voir le guide étudiant" : "Open student guide"}
                 </Link>
                 <Link href={`/${locale}/resources`} className="btn-secondary">
                   {fr ? "Voir les ressources" : "Open resources"}
@@ -273,7 +273,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Cela depend du mode choisi et de vos parametres de confidentialite."
+                    ? "Cela dépend du mode choisi et de vos paramètres de confidentialité."
                     : "It depends on your selected payment method and privacy settings."}
                 </p>
               </div>
@@ -283,7 +283,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Oui: partagez les articles, rejoignez la newsletter et recommandez le site a d'autres etudiants."
+                    ? "Oui: partagez les articles, rejoignez la newsletter et recommandez le site à d'autres étudiants."
                     : "Yes: share articles, join the newsletter, and recommend the site to other students."}
                 </p>
               </div>
@@ -305,7 +305,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                 {fr ? "Blog" : "Blog"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary text-center">
-                {fr ? "Guide etudiant" : "Student guide"}
+                {fr ? "Guide étudiant" : "Student guide"}
               </Link>
             </div>
           </div>

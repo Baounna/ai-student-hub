@@ -42,18 +42,18 @@ export default async function TermsPage(props: { params: Promise<{ lang: string 
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
             {fr
-              ? "Le contenu est fourni a des fins educatives et informationnelles."
+              ? "Le contenu est fourni à des fins éducatives et informationnelles."
               : "Content is provided for educational and informational purposes."}
           </p>
         </section>
 
         <section className="surface rounded-2xl p-6">
           <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-            {fr ? "Responsabilite" : "Responsibility"}
+            {fr ? "Responsabilité" : "Responsibility"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
             {fr
-              ? "Vous etes responsable de vos decisions techniques, financieres et professionnelles."
+              ? "Vous êtes responsable de vos décisions techniques, financières et professionnelles."
               : "You are responsible for your own technical, financial, and career decisions."}
           </p>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
@@ -65,17 +65,17 @@ export default async function TermsPage(props: { params: Promise<{ lang: string 
 
         <section className="glass rounded-2xl p-6">
           <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-            {fr ? "Entite legale" : "Legal entity"}
+            {fr ? "Entité légale" : "Legal entity"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
-            {fr ? `Operateur: ${siteConfig.termsLegalEntity}. Contact: ` : `Operator: ${siteConfig.termsLegalEntity}. Contact: `}
+            {fr ? `Opérateur: ${siteConfig.termsLegalEntity}. Contact: ` : `Operator: ${siteConfig.termsLegalEntity}. Contact: `}
             <a href={`mailto:${siteConfig.contactEmail}`} className="do-link">
               {siteConfig.contactEmail}
             </a>
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
             <Link href={`/${locale}/privacy`} className="btn-secondary">
-              {fr ? "Confidentialite" : "Privacy"}
+              {fr ? "Confidentialité" : "Privacy"}
             </Link>
             <Link href={`/${locale}/affiliate-disclosure`} className="btn-secondary">
               {fr ? "Liens" : "Links"}

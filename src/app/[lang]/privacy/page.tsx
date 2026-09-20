@@ -9,8 +9,8 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   if (!isLocale(params.lang)) return {};
 
   return {
-    title: params.lang === "fr" ? "Politique de confidentialite" : "Privacy Policy",
-    description: params.lang === "fr" ? "Politique de confidentialite d'AI and Cybersecurity News." : "AI and Cybersecurity News privacy policy.",
+    title: params.lang === "fr" ? "Politique de confidentialité" : "Privacy Policy",
+    description: params.lang === "fr" ? "Politique de confidentialité d'AI and Cybersecurity News." : "AI and Cybersecurity News privacy policy.",
     alternates: localizedAlternates("/privacy", params.lang)
   };
 }
@@ -26,11 +26,11 @@ export default async function PrivacyPage(props: { params: Promise<{ lang: strin
       <header className="do-hero rounded-3xl p-7 md:p-10">
         <p className="do-kicker">{fr ? "Legal" : "Legal"}</p>
         <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
-          {fr ? "Politique de confidentialite" : "Privacy Policy"}
+          {fr ? "Politique de confidentialité" : "Privacy Policy"}
         </h1>
         <p className="mt-4 text-sm text-[color:var(--text)]">
           {fr
-            ? "Comment AI and Cybersecurity News collecte, utilise, et protege les informations utilisateur."
+            ? "Comment AI and Cybersecurity News collecte, utilise, et protège les informations utilisateur."
             : "How AI and Cybersecurity News collects, uses, and protects user information."}
         </p>
       </header>
@@ -38,22 +38,22 @@ export default async function PrivacyPage(props: { params: Promise<{ lang: strin
       <div className="mt-6 space-y-4">
         <section className="surface rounded-2xl p-6">
           <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-            {fr ? "Donnees collectees" : "Data collected"}
+            {fr ? "Données collectées" : "Data collected"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
             {fr
-              ? "Nous collectons uniquement les donnees necessaires (email, prenom) pour envoyer la newsletter et des ressources."
+              ? "Nous collectons uniquement les données nécessaires (email, prénom) pour envoyer la newsletter et des ressources."
               : "We only collect data needed to deliver the newsletter and resources (email, first name)."}
           </p>
         </section>
 
         <section className="surface rounded-2xl p-6">
           <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-            {fr ? "Utilisation des donnees" : "How data is used"}
+            {fr ? "Utilisation des données" : "How data is used"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
             {fr
-              ? "Nous n'utilisons pas vos donnees pour des ventes externes. Vous pouvez vous desabonner a tout moment."
+              ? "Nous n'utilisons pas vos données pour des ventes externes. Vous pouvez vous désabonner à tout moment."
               : "We do not sell your personal data. You can unsubscribe at any time."}
           </p>
         </section>

@@ -87,7 +87,7 @@ export default async function LocalizedNewsPage(
         title: item.title,
         summary:
           locale === "fr"
-            ? "Mise a jour source officielle capturee en direct."
+            ? "Mise à jour source officielle capturée en direct."
             : "Official source update captured from live feed.",
         href: item.href,
         briefHref: ""
@@ -124,25 +124,25 @@ export default async function LocalizedNewsPage(
   const streamHeading =
     trackFilter === "ai"
       ? locale === "fr"
-        ? "Flux actualite IA"
+        ? "Flux actualité IA"
         : "AI signal stream"
       : trackFilter === "cs"
         ? locale === "fr"
-          ? "Flux actualite informatique"
+          ? "Flux actualité informatique"
           : "Computer science signal stream"
         : trackFilter === "career"
           ? locale === "fr"
-            ? "Flux actualite carriere"
+            ? "Flux actualité carrière"
             : "Career signal stream"
           : locale === "fr"
-            ? "Flux actualite IA/CS"
+            ? "Flux actualité IA/CS"
             : "AI + Cybersecurity signal stream";
 
   const trackOptions: Array<{ key: NewsTrack | "all"; label: string; count: number }> = [
     { key: "all", label: locale === "fr" ? "Tout IA + CS" : "All AI + Cybersecurity", count: allBriefs.length },
     { key: "ai", label: "AI", count: trackCounts.ai },
     { key: "cs", label: locale === "fr" ? "Informatique" : "Computer Science", count: trackCounts.cs },
-    { key: "career", label: locale === "fr" ? "Carriere" : "Career", count: trackCounts.career }
+    { key: "career", label: locale === "fr" ? "Carrière" : "Career", count: trackCounts.career }
   ];
 
   const buildNewsFilterHref = (nextTrack: NewsTrack | "all", nextTopic = topicFilter) => {
@@ -170,7 +170,7 @@ export default async function LocalizedNewsPage(
           <div>
             <p className="do-kicker">{dict.nav.news}</p>
             <h1 className="font-display mt-2 text-4xl font-bold leading-[1.08] text-[color:var(--text-strong)] md:text-5xl">
-              {locale === "fr" ? "News IA + Cybersecurite" : "AI + Cybersecurity News"}
+              {locale === "fr" ? "News IA + Cybersécurité" : "AI + Cybersecurity News"}
             </h1>
             <p className="mt-3 max-w-3xl text-sm text-[color:var(--text)] md:text-base">{dict.news.subtitle}</p>
           </div>
@@ -182,7 +182,7 @@ export default async function LocalizedNewsPage(
         <div className="grid gap-4 xl:grid-cols-[0.92fr,1.45fr]">
           <aside className="space-y-3">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[color:var(--primary)]">
-              {locale === "fr" ? "News liees" : "Related updates"}
+              {locale === "fr" ? "News liées" : "Related updates"}
             </p>
             {(relatedBriefs.length ? relatedBriefs : recentSignals).map((brief) => (
               <article key={brief.slug} className="news-related-card rounded-2xl p-4">
@@ -258,7 +258,7 @@ export default async function LocalizedNewsPage(
       <section className="mt-6 surface rounded-2xl p-6">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-            {locale === "fr" ? "Nouveautes AI + Cybersecurity depuis le web" : "Latest AI + Cybersecurity from the web"}
+            {locale === "fr" ? "Nouveautés AI + Cybersecurity depuis le web" : "Latest AI + Cybersecurity from the web"}
           </h2>
           <Link href={`/${locale}/news/live`} className="btn-secondary">
             {locale === "fr" ? "Flux live complet" : "Open full live stream"}
@@ -266,12 +266,12 @@ export default async function LocalizedNewsPage(
         </div>
         <p className="mt-2 text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? "Ces updates viennent de sources officielles et passent en priorite en haut de la page."
+            ? "Ces updates viennent de sources officielles et passent en priorité en haut de la page."
             : "These updates come from official sources and stay prioritized at the top of this page."}
         </p>
         {webUpdatedAt ? (
           <p className="mt-1 text-xs text-[color:var(--muted)]">
-            {locale === "fr" ? "Derniere synchronisation" : "Last sync"}: {formatPublishedDate(webUpdatedAt, locale)}
+            {locale === "fr" ? "Dernière synchronisation" : "Last sync"}: {formatPublishedDate(webUpdatedAt, locale)}
           </p>
         ) : null}
 
@@ -310,7 +310,7 @@ export default async function LocalizedNewsPage(
           <article className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
             <p className="text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Aucun nouvel item pour le moment. Revenez plus tard pour les prochaines mises a jour."
+                ? "Aucun nouvel item pour le moment. Revenez plus tard pour les prochaines mises à jour."
                 : "No new items yet. Check back soon for fresh updates."}
             </p>
           </article>
@@ -319,7 +319,7 @@ export default async function LocalizedNewsPage(
 
       <div className="mt-6 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
-          {locale === "fr" ? "Split IA + cybersecurite" : "AI + Cybersecurity split"}
+          {locale === "fr" ? "Split IA + cybersécurité" : "AI + Cybersecurity split"}
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
           {trackOptions.map((option) => {
@@ -341,7 +341,7 @@ export default async function LocalizedNewsPage(
         </div>
 
         <p className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
-          {locale === "fr" ? "Filtrer par theme" : "Filter by topic"}
+          {locale === "fr" ? "Filtrer par thème" : "Filter by topic"}
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
           <Link
@@ -424,11 +424,11 @@ export default async function LocalizedNewsPage(
           {!streamBriefs.length && (
             <article className="glass rounded-2xl p-6">
               <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-                {locale === "fr" ? "Aucun brief trouve" : "No briefs found"}
+                {locale === "fr" ? "Aucun brief trouvé" : "No briefs found"}
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {locale === "fr"
-                  ? "Essayez un autre theme, ou revenez au flux principal."
+                  ? "Essayez un autre thème, ou revenez au flux principal."
                   : "Try another topic, or go back to the full stream."}
               </p>
               <Link href={`/${locale}/news`} className="btn-secondary mt-4 inline-block">
@@ -441,7 +441,7 @@ export default async function LocalizedNewsPage(
         <aside className="space-y-4 md:sticky md:top-36 md:h-fit">
           <div className="surface rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "Signaux recents" : "Recent signals"}
+              {locale === "fr" ? "Signaux récents" : "Recent signals"}
             </h3>
             <div className="mt-3 space-y-3">
               {recentSignals.map((signal, index) => (
@@ -484,7 +484,7 @@ export default async function LocalizedNewsPage(
                 {dict.news.openCompare}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide carriere" : "Career guide"}
+                {locale === "fr" ? "Guide carrière" : "Career guide"}
               </Link>
             </div>
           </div>

@@ -60,7 +60,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
       title: locale === "fr" ? "Stack Starter" : "Starter Stack",
       summary:
         locale === "fr"
-          ? "Minimum viable stack pour lancer votre premier projet deploye."
+          ? "Minimum viable stack pour lancer votre premier projet déployé."
           : "Minimum viable stack to ship your first deployed AI project.",
       items: [
         recommendedTools[0]?.name ?? "Cloud Deploy Stack",
@@ -71,7 +71,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
       title: locale === "fr" ? "Stack Portfolio" : "Portfolio Stack",
       summary:
         locale === "fr"
-          ? "Concue pour livrer vite, documenter proprement et candidater."
+          ? "Conçue pour livrer vite, documenter proprement et candidater."
           : "Designed for faster shipping, clean docs, and better applications.",
       items: [
         recommendedTools[0]?.name ?? "Cloud Deploy Stack",
@@ -82,7 +82,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
       title: locale === "fr" ? "Stack Interview-Ready" : "Interview-Ready Stack",
       summary:
         locale === "fr"
-          ? "Equilibre entre execution technique et signal carrière."
+          ? "Équilibre entre exécution technique et signal carrière."
           : "Balanced for technical execution and stronger career signal.",
       items: recommendedTools.map((tool) => tool.name)
     }
@@ -91,16 +91,16 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
     locale === "fr"
       ? [
           {
-            q: "Comment choisir un outil quand mon budget est limite ?",
-            a: "Commencez par l'option qui vous permet de deployer vite avec un cout previsible. Priorisez vitesse + fiabilite avant les fonctionnalites avancees."
+            q: "Comment choisir un outil quand mon budget est limité ?",
+            a: "Commencez par l'option qui vous permet de déployer vite avec un coût prévisible. Priorisez vitesse + fiabilité avant les fonctionnalités avancées."
           },
           {
-            q: "Combien d'outils dois-je utiliser au debut ?",
-            a: "Deux ou trois maximum. Un outil de deploiement, un outil d'apprentissage, et un outil d'organisation suffisent pour un premier sprint."
+            q: "Combien d'outils dois-je utiliser au début ?",
+            a: "Deux ou trois maximum. Un outil de déploiement, un outil d'apprentissage, et un outil d'organisation suffisent pour un premier sprint."
           },
           {
-            q: "Comment savoir si un outil ameliore vraiment mon profil ?",
-            a: "Mesurez le resultat: demo en ligne, documentation claire, et meilleure qualite de candidature apres 30 jours."
+            q: "Comment savoir si un outil améliore vraiment mon profil ?",
+            a: "Mesurez le résultat: démo en ligne, documentation claire, et meilleure qualité de candidature après 30 jours."
           }
         ]
       : [
@@ -144,13 +144,13 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">{dict.resources.subtitle}</p>
             <div className="mt-5 flex flex-wrap gap-2">
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {locale === "fr" ? "Mise a jour mensuelle" : "Updated monthly"}
+                {locale === "fr" ? "Mise à jour mensuelle" : "Updated monthly"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {locale === "fr" ? "Budget etudiant" : "Student-budget first"}
+                {locale === "fr" ? "Budget étudiant" : "Student-budget first"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {locale === "fr" ? "Aucun lien remunere" : "No paid links"}
+                {locale === "fr" ? "Aucun lien rémunéré" : "No paid links"}
               </span>
             </div>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -158,22 +158,22 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide carriere" : "Career guide"}
+                {locale === "fr" ? "Guide carrière" : "Career guide"}
               </Link>
             </div>
           </div>
 
           <div className="surface rounded-2xl p-5">
-            <p className="do-kicker">{locale === "fr" ? "Selection des outils" : "Tool selection method"}</p>
+            <p className="do-kicker">{locale === "fr" ? "Sélection des outils" : "Tool selection method"}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
                 {locale === "fr"
-                  ? "1. Priorite aux outils qui reduisent temps de delivery."
+                  ? "1. Priorité aux outils qui réduisent temps de delivery."
                   : "1. Prioritize tools that reduce shipping time."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "2. Conserver un budget realiste et budget-friendly."
+                  ? "2. Conserver un budget réaliste et budget-friendly."
                   : "2. Keep spending within realistic, budget-friendly limits."}
               </li>
               <li>
@@ -194,24 +194,24 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
           <section className="grid gap-4 md:grid-cols-3">
             {[
               {
-                title: locale === "fr" ? "Temps de deploiement" : "Time-to-deploy",
+                title: locale === "fr" ? "Temps de déploiement" : "Time-to-deploy",
                 body:
                   locale === "fr"
-                    ? "On privilegie les outils qui reduisent le temps entre idee et demo en ligne."
+                    ? "On privilégie les outils qui réduisent le temps entre idée et démo en ligne."
                     : "We prioritize tools that shorten the path from idea to live demo."
               },
               {
-                title: locale === "fr" ? "Cout etudiant" : "Student cost control",
+                title: locale === "fr" ? "Coût étudiant" : "Student cost control",
                 body:
                   locale === "fr"
-                    ? "Chaque recommandation est evaluee par rapport a un budget realiste."
+                    ? "Chaque recommandation est évaluée par rapport à un budget réaliste."
                     : "Every recommendation is reviewed against realistic, budget-friendly constraints."
               },
               {
                 title: locale === "fr" ? "Signal carrière" : "Career signal",
                 body:
                   locale === "fr"
-                    ? "Les outils doivent aider a produire un portfolio lisible par les recruteurs."
+                    ? "Les outils doivent aider à produire un portfolio lisible par les recruteurs."
                     : "Tools must improve your portfolio quality and interview leverage."
               }
             ].map((item) => (
@@ -225,10 +225,10 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
           <section className="surface rounded-2xl p-6">
             <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
               <div>
-                <p className="do-kicker">{locale === "fr" ? "Outils revision" : "Study stack"}</p>
+                <p className="do-kicker">{locale === "fr" ? "Outils révision" : "Study stack"}</p>
                 <h2 className="font-display section-title mt-1 font-semibold text-[color:var(--text-strong)]">
                   {locale === "fr"
-                    ? "NotebookLM, Antigravity et outils utiles pour etudiants"
+                    ? "NotebookLM, Antigravity et outils utiles pour étudiants"
                     : "NotebookLM, Antigravity, and high-utility student tools"}
                 </h2>
               </div>
@@ -273,23 +273,23 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
                 {locale === "fr"
-                  ? "1. Choisissez un sujet utile par semaine et publiez un recap clair."
+                  ? "1. Choisissez un sujet utile par semaine et publiez un récap clair."
                   : "1. Pick one useful topic each week and publish a clear recap."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "2. Ajoutez un exemple pratique ou une mini-demo pour chaque sujet."
+                  ? "2. Ajoutez un exemple pratique ou une mini-démo pour chaque sujet."
                   : "2. Add one practical example or mini demo for each topic."}
               </li>
               <li>
                 {locale === "fr"
-                  ? "3. Mettez a jour vos notes et references pour consolider vos acquis."
+                  ? "3. Mettez à jour vos notes et références pour consolider vos acquis."
                   : "3. Update your notes and references to consolidate your progress."}
               </li>
             </ul>
             <p className="mt-3 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Repere: suivez le nombre de projets finalises, la clarte de votre portfolio, et votre regularite."
+                ? "Repère: suivez le nombre de projets finalisés, la clarté de votre portfolio, et votre régularité."
                 : "Reference: track completed projects, portfolio clarity, and weekly consistency."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -347,7 +347,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {locale === "fr"
-                  ? "Ressources partenaires utilisees dans le blog, le lab outils et cette page."
+                  ? "Ressources partenaires utilisées dans le blog, le lab outils et cette page."
                   : "Partner resources referenced across the blog, tools lab, and this page."}
               </p>
               <div className="mt-4 grid gap-2 md:grid-cols-2">
@@ -372,7 +372,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
           <section>
             <div className="mb-4 flex items-end justify-between">
               <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-                {locale === "fr" ? "Stacks recommandees" : "Recommended stacks"}
+                {locale === "fr" ? "Stacks recommandées" : "Recommended stacks"}
               </h2>
             </div>
             <div className="grid gap-4 md:grid-cols-3">
@@ -401,20 +401,20 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <Link href={`/${locale}/news`} className="btn-secondary">
-                {locale === "fr" ? "Actualites IA/CS" : "AI + Cybersecurity news"}
+                {locale === "fr" ? "Actualités IA/CS" : "AI + Cybersecurity news"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-primary">
                 {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide carriere ($9-$19)" : "Career guide ($9-$19)"}
+                {locale === "fr" ? "Guide carrière ($9-$19)" : "Career guide ($9-$19)"}
               </Link>
             </div>
           </section>
 
           <section className="reading-panel rounded-2xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "FAQ etudiant" : "Student FAQ"}
+              {locale === "fr" ? "FAQ étudiant" : "Student FAQ"}
             </h2>
             <div className="mt-4 space-y-3">
               {faqItems.map((item) => (
@@ -441,13 +441,13 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             </h3>
             <div className="mt-3 flex flex-col gap-2">
               <Link href={`/${locale}/news`} className="btn-secondary text-center">
-                {locale === "fr" ? "Actualites" : "News"}
+                {locale === "fr" ? "Actualités" : "News"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-secondary text-center">
                 {locale === "fr" ? "Lab outils" : "Tools lab"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary text-center">
-                {locale === "fr" ? "Guide carriere" : "Career guide"}
+                {locale === "fr" ? "Guide carrière" : "Career guide"}
               </Link>
             </div>
           </div>

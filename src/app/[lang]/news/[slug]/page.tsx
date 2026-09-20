@@ -143,14 +143,14 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
   const crossImpact =
     newsTrack === "cs"
       ? locale === "fr"
-        ? "Impact CS: architecture backend, fiabilite systeme, et performance deploiement."
+        ? "Impact CS: architecture backend, fiabilité système, et performance déploiement."
         : "CS impact: backend architecture, system reliability, and deployment performance."
       : newsTrack === "ai"
         ? locale === "fr"
-          ? "Impact IA: choix modele, evaluation, et workflow experimentation."
+          ? "Impact IA: choix modèle, évaluation, et workflow expérimentation."
           : "AI impact: model selection, evaluation quality, and experimentation workflow."
         : locale === "fr"
-          ? "Impact carriere: portfolio, candidatures, et storytelling entretien."
+          ? "Impact carrière: portfolio, candidatures, et storytelling entretien."
           : "Career impact: portfolio signal, applications, and interview storytelling.";
   const recentSignals = getLocalizedNews(locale).filter((item) => item.slug !== brief.slug).slice(0, 3);
   const topicReference = getTopicReference(brief.topic, locale);
@@ -167,9 +167,9 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
     }
   ];
   const tocItems = [
-    { id: "summary", label: locale === "fr" ? "Resume" : "Summary" },
-    { id: "latest-updates", label: locale === "fr" ? "Dernieres actus" : "Latest updates" },
-    ...(brief.statsByTheme?.length ? [{ id: "performance", label: locale === "fr" ? "Stats par theme" : "Theme stats" }] : []),
+    { id: "summary", label: locale === "fr" ? "Résumé" : "Summary" },
+    { id: "latest-updates", label: locale === "fr" ? "Dernières actus" : "Latest updates" },
+    ...(brief.statsByTheme?.length ? [{ id: "performance", label: locale === "fr" ? "Stats par thème" : "Theme stats" }] : []),
     { id: "references", label: "References" },
     { id: "resources", label: locale === "fr" ? "Ressources" : "Resources" },
     ...(relatedPosts.length ? [{ id: "related", label: locale === "fr" ? "Lectures" : "Deep dives" }] : []),
@@ -216,7 +216,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
 
       <div className="mb-5">
         <Link href={`/${locale}/news`} className="btn-secondary">
-          {locale === "fr" ? "← Retour aux actualites" : "← Back to news"}
+          {locale === "fr" ? "← Retour aux actualités" : "← Back to news"}
         </Link>
       </div>
 
@@ -247,8 +247,8 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
           <div className="surface rounded-2xl p-5">
             <p className="do-kicker">{locale === "fr" ? "Brief en bref" : "Brief at a glance"}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
-              <li>{locale === "fr" ? `1. Theme: ${brief.topic}` : `1. Topic: ${brief.topic}`}</li>
-              <li>{locale === "fr" ? "2. Sources: 2 references croisees." : "2. Sources: 2 cross-checked references."}</li>
+              <li>{locale === "fr" ? `1. Thème: ${brief.topic}` : `1. Topic: ${brief.topic}`}</li>
+              <li>{locale === "fr" ? "2. Sources: 2 références croisées." : "2. Sources: 2 cross-checked references."}</li>
               <li>{locale === "fr" ? `3. Temps de lecture : ${readMinutes(brief.readTime)} min.` : `3. Reading time: ${readMinutes(brief.readTime)} min.`}</li>
               {brief.statsByTheme?.length ? (
                 <li>{`4. ${brief.statsByTheme.length} benchmark themes covered.`}</li>
@@ -333,11 +333,11 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
           {brief.statsByTheme?.length ? (
             <section id="performance" className="anchor-offset reading-panel rounded-3xl p-6">
               <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-                {locale === "fr" ? "Performance IA par theme" : "AI performance by theme"}
+                {locale === "fr" ? "Performance IA par thème" : "AI performance by theme"}
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {locale === "fr"
-                  ? "Snapshot base sur des tableaux benchmarks officiels publies en fevrier 2026."
+                  ? "Snapshot basé sur des tableaux benchmarks officiels publiés en février 2026."
                   : "Snapshot based on official benchmark tables published in February 2026."}{" "}
                 <a href="#reference-1" className="inline-citation">
                   [1]
@@ -377,11 +377,11 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
 
           <section id="references" className="anchor-offset reading-panel rounded-3xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "References et sources" : "References and sources"}
+              {locale === "fr" ? "Références et sources" : "References and sources"}
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Chaque brief s'appuie sur une source principale + une reference technique complementaire."
+                ? "Chaque brief s'appuie sur une source principale + une référence technique complémentaire."
                 : "Each brief is grounded in a primary source plus one supporting technical reference."}
             </p>
             <ol className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
@@ -403,16 +403,16 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
 
           <section id="resources" className="anchor-offset surface rounded-2xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "Ressources liees" : "Related resources"}
+              {locale === "fr" ? "Ressources liées" : "Related resources"}
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Passez de l'actualite a l'execution avec ces pages a fort ROI."
+                ? "Passez de l'actualité à l'exécution avec ces pages à fort ROI."
                 : "Move from news to execution with these high-ROI pages."}
             </p>
             <p className="mt-2 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Chemin recommande: News -> Blog -> Lab outils -> Guide carriere."
+                ? "Chemin recommandé: News -> Blog -> Lab outils -> Guide carrière."
                 : "Recommended path: News -> Blog -> Tools lab -> Career guide."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -426,7 +426,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
                 {dict.news.openBlog}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide carriere" : "Career guide"}
+                {locale === "fr" ? "Guide carrière" : "Career guide"}
               </Link>
             </div>
           </section>

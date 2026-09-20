@@ -40,7 +40,7 @@ export async function generateMetadata(
     title: params.lang === "fr" ? `Articles ${categoryName}` : `${categoryName} articles`,
     description:
       params.lang === "fr"
-        ? `Articles de la categorie ${categoryName} sur AI and Cybersecurity News.`
+        ? `Articles de la catégorie ${categoryName} sur AI and Cybersecurity News.`
         : `${categoryName} category articles on AI and Cybersecurity News.`,
     keywords: getSeoKeywords(params.lang, "blog", [
       params.lang === "fr" ? `categorie ${categoryName} ia` : `${categoryName} ai category`,
@@ -75,13 +75,13 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
       />
 
       <div className="do-hero rounded-3xl p-7 md:p-10">
-        <p className="do-kicker">{locale === "fr" ? "Categorie" : "Category"}</p>
+        <p className="do-kicker">{locale === "fr" ? "Catégorie" : "Category"}</p>
         <h1 className="font-display hero-title mt-3 font-bold capitalize text-[color:var(--text-strong)]">
           {displayCategory(params.category)}
         </h1>
         <p className="mt-4 max-w-2xl text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? `${posts.length} articles pour t'aider a passer de la theorie a des resultats visibles.`
+            ? `${posts.length} articles pour t'aider à passer de la théorie à des résultats visibles.`
             : `${posts.length} posts focused on turning theory into visible execution outcomes.`}
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
@@ -89,7 +89,7 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
             {locale === "fr" ? "Retour au blog" : "Back to blog"}
           </Link>
           <Link href={`/${locale}/resources`} className="btn-primary">
-            {locale === "fr" ? "Outils recommandes" : "Recommended tools"}
+            {locale === "fr" ? "Outils recommandés" : "Recommended tools"}
           </Link>
         </div>
       </div>
@@ -145,14 +145,14 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
 
       {bridgeCategories.length ? (
         <section className="blog-aside-card mt-6 rounded-2xl p-5">
-          <p className="do-kicker">{locale === "fr" ? "Pont editorial" : "Editorial bridge"}</p>
+          <p className="do-kicker">{locale === "fr" ? "Pont éditorial" : "Editorial bridge"}</p>
           <h2 className="font-display mt-2 text-xl font-semibold text-[color:var(--text-strong)]">
             {bridgeTrack === "cs"
               ? locale === "fr"
-                ? "Relier vers les categories informatique"
+                ? "Relier vers les catégories informatique"
                 : "Bridge into cybersecurity categories"
               : locale === "fr"
-                ? "Relier vers les categories IA"
+                ? "Relier vers les catégories IA"
                 : "Bridge into AI categories"}
           </h2>
           <div className="mt-3 flex flex-wrap gap-2">

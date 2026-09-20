@@ -27,7 +27,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const fr = params.lang === "fr";
   const title = fr ? "Flux live AI + Cybersecurity" : "Live AI + Cybersecurity stream";
   const description = fr
-    ? "Mises a jour IA/CS automatiques avec liens source directs."
+    ? "Mises à jour IA/CS automatiques avec liens source directs."
     : "Automatic AI + Cybersecurity updates with direct source links.";
 
   return {
@@ -71,11 +71,11 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
           <div>
             <p className="do-kicker">{fr ? "Live stream" : "Live stream"}</p>
             <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
-              {fr ? "Nouveautes IA/CS automatiques" : "Automatic AI + Cybersecurity latest updates"}
+              {fr ? "Nouveautés IA/CS automatiques" : "Automatic AI + Cybersecurity latest updates"}
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr
-                ? "Cette page agrege les dernieres publications AI + Cybersecurity depuis des flux fiables, avec lien source direct pour chaque item."
+                ? "Cette page agrège les dernières publications AI + Cybersecurity depuis des flux fiables, avec lien source direct pour chaque item."
                 : "This page aggregates the latest AI + Cybersecurity publications from trusted feeds, with direct source links for every item."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -93,10 +93,10 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>{fr ? "1. Revalidation automatique toutes les 30 minutes." : "1. Auto revalidation every 30 minutes."}</li>
               <li>{fr ? "2. Chaque item pointe vers la source originale." : "2. Every item links to the original source."}</li>
-              <li>{fr ? "3. Utilisable pour idees d'articles avec citation." : "3. Ready for source-backed article ideas."}</li>
+              <li>{fr ? "3. Utilisable pour idées d'articles avec citation." : "3. Ready for source-backed article ideas."}</li>
             </ul>
             <p className="mt-3 text-xs text-[color:var(--muted)]">
-              {fr ? "Derniere generation: " : "Generated at: "}
+              {fr ? "Dernière génération: " : "Generated at: "}
               {formatPublishedDate(refreshedAt, locale)}
             </p>
           </div>
@@ -131,11 +131,11 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
           ) : (
             <article className="glass rounded-2xl p-6">
               <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-                {fr ? "Aucune mise a jour disponible" : "No updates available right now"}
+                {fr ? "Aucune mise à jour disponible" : "No updates available right now"}
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {fr
-                  ? "Les flux externes n'ont pas repondu pour le moment. Reessayez plus tard."
+                  ? "Les flux externes n'ont pas répondu pour le moment. Réessayez plus tard."
                   : "External feeds did not respond yet. Please retry later."}
               </p>
             </article>
@@ -145,7 +145,7 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
         <aside className="space-y-4 lg:sticky lg:top-32 lg:h-fit">
           <div className="surface rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Sources trackees" : "Tracked sources"}
+              {fr ? "Sources trackées" : "Tracked sources"}
             </h3>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               {sources.map((source) => (

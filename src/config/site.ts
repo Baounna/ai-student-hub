@@ -85,17 +85,17 @@ export const siteConfig = {
   authorName: envValue("NEXT_PUBLIC_AUTHOR_NAME"),
   authorRole: envLocaleValue("AUTHOR_ROLE_EN", "AUTHOR_ROLE_FR", {
     en: "Founder and editor",
-    fr: "Fondateur et redacteur"
+    fr: "Fondateur et rédacteur"
   }),
   privacyContactEmail: envValue("PRIVACY_CONTACT_EMAIL") || contactEmail,
   termsLegalEntity: envValue("TERMS_LEGAL_ENTITY") || legalName,
   founderBio: envLocaleValue("FOUNDER_BIO_EN", "FOUNDER_BIO_FR", {
     en: "Final-year AI student building production-style ML projects and helping engineering students convert projects into internships and early income.",
-    fr: "Étudiant en derniere annee d'IA, je construis des projets ML concrets et j'aide les étudiants a transformer leurs projets en stages et premiers revenus."
+    fr: "Étudiant en dernière année d'IA, je construis des projets ML concrets et j'aide les étudiants à transformer leurs projets en stages et premiers revenus."
   }),
   linkedinShortBio: envLocaleValue("LINKEDIN_SHORT_BIO_EN", "LINKEDIN_SHORT_BIO_FR", {
     en: "Final-year AI student sharing project-first AI engineering systems for internships and early-career outcomes.",
-    fr: "Étudiant en derniere annee d'IA, je partage des systèmes d'execution IA orientes projets pour stages et debut de carrière."
+    fr: "Étudiant en dernière année d'IA, je partage des systèmes d'exécution IA orientés projets pour stages et début de carrière."
   }),
   authoritySignals: {
     en: [
@@ -105,9 +105,9 @@ export const siteConfig = {
       "EN/FR practical learning paths"
     ],
     fr: [
-      "Systèmes IA orientes projet",
-      "Execution portfolio plutot que theorie passive",
-      "Concu pour stages et resultats carrière",
+      "Systèmes IA orientés projet",
+      "Exécution portfolio plutôt que théorie passive",
+      "Conçu pour stages et résultats carrière",
       "Parcours pratiques EN/FR"
     ]
   },
@@ -143,7 +143,7 @@ export const siteConfig = {
   // once real affiliate IDs are actually in the links.
   affiliateDisclosureText: envLocaleValue("AFFILIATE_DISCLOSURE_TEXT_EN", "AFFILIATE_DISCLOSURE_TEXT_FR", {
     en: "Some pages link to tools we use or recommend. These are ordinary links: we are not in any affiliate programme and earn nothing when you follow them.",
-    fr: "Certaines pages renvoient vers des outils que nous utilisons ou recommandons. Ce sont de simples liens : nous ne participons a aucun programme d'affiliation et ne recevons aucune commission."
+    fr: "Certaines pages renvoient vers des outils que nous utilisons ou recommandons. Ce sont de simples liens : nous ne participons à aucun programme d'affiliation et ne recevons aucune commission."
   }),
   affiliatePartners,
   testimonials

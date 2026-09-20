@@ -62,8 +62,8 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
   );
 
   const t = {
-    title: locale === "fr" ? "Parametres" : "Settings",
-    theme: locale === "fr" ? "Theme" : "Theme",
+    title: locale === "fr" ? "Paramètres" : "Settings",
+    theme: locale === "fr" ? "Thème" : "Theme",
     text: locale === "fr" ? "Texte" : "Text",
     width: locale === "fr" ? "Largeur" : "Width",
     language: locale === "fr" ? "Langue" : "Language",

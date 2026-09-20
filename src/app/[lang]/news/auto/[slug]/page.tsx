@@ -29,13 +29,13 @@ function getTopicBrief(topic: string, locale: Locale) {
   const map: Record<string, { why: string; actions: string[]; nextStep: string }> = {
     "AI Performance": {
       why: fr
-        ? "Les benchmarks influencent directement le choix de modele pour les projets etudiants."
+        ? "Les benchmarks influencent directement le choix de modèle pour les projets étudiants."
         : "Benchmarks directly influence model selection for student projects.",
       actions: fr
         ? [
-            "Choisissez un benchmark qui correspond a votre cas d'usage reel.",
-            "Ajoutez un tableau cout vs qualite dans votre README.",
-            "Mettez a jour votre stack si une option apporte un meilleur ratio performance/prix."
+            "Choisissez un benchmark qui correspond à votre cas d'usage réel.",
+            "Ajoutez un tableau coût vs qualité dans votre README.",
+            "Mettez à jour votre stack si une option apporte un meilleur ratio performance/prix."
           ]
         : [
             "Choose a benchmark aligned with your real use case.",
@@ -43,18 +43,18 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Update your stack when a better performance/price option appears."
           ],
       nextStep: fr
-        ? "Prochaine etape: ecrivez une comparaison claire avec un tableau cout/qualite."
+        ? "Prochaine étape: écrivez une comparaison claire avec un tableau coût/qualité."
         : "Next step: write a clear comparison with a cost/quality table."
     },
     "AI Systems": {
       why: fr
-        ? "Les nouveautes LLM/agents changent la maniere de construire des apps portfolio."
+        ? "Les nouveautés LLM/agents changent la manière de construire des apps portfolio."
         : "LLM/agent updates change how portfolio apps should be built.",
       actions: fr
         ? [
-            "Transformez la nouveaute en mini demo deployable.",
+            "Transformez la nouveauté en mini démo déployable.",
             "Ajoutez une section architecture claire dans votre article.",
-            "Mesurez latence, cout et qualite pour rester credible."
+            "Mesurez latence, coût et qualité pour rester crédible."
           ]
         : [
             "Turn the update into a small deployable demo.",
@@ -62,12 +62,12 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Measure latency, cost, and quality for credibility."
           ],
       nextStep: fr
-        ? "Prochaine etape: publiez un mini tutoriel avec architecture + mesure de latence."
+        ? "Prochaine étape: publiez un mini tutoriel avec architecture + mesure de latence."
         : "Next step: publish a mini tutorial with architecture and latency checks."
     },
     "Computer Systems": {
       why: fr
-        ? "Les updates infra/systemes impactent les decisions de deploiement et de cout."
+        ? "Les updates infra/systèmes impactent les décisions de déploiement et de coût."
         : "Infra/system updates impact deployment and cost decisions.",
       actions: fr
         ? [
@@ -81,18 +81,18 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Link to your compare page to capture high intent."
           ],
       nextStep: fr
-        ? "Prochaine etape: creez un guide 'quelle option choisir selon votre budget'."
+        ? "Prochaine étape: créez un guide 'quelle option choisir selon votre budget'."
         : "Next step: create a 'which option fits your budget' guide."
     },
     "Computer Science": {
       why: fr
-        ? "Les evolutions CS aident a produire des projets plus robustes et differenciants."
+        ? "Les évolutions CS aident à produire des projets plus robustes et différenciants."
         : "CS updates help students produce more robust, differentiated projects.",
       actions: fr
         ? [
-            "Ajoutez une section 'ce que ca change pour votre projet'.",
-            "Reliez le sujet a un exemple concret deploye.",
-            "Publiez un recap court sur LinkedIn avec lien vers votre article."
+            "Ajoutez une section 'ce que ça change pour votre projet'.",
+            "Reliez le sujet à un exemple concret déployé.",
+            "Publiez un récap court sur LinkedIn avec lien vers votre article."
           ]
         : [
             "Add a 'what this changes for your project' section.",
@@ -100,7 +100,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Publish a short LinkedIn recap linking back to your article."
           ],
       nextStep: fr
-        ? "Prochaine etape: transformez ce sujet en article pedagogique base sur un exemple concret."
+        ? "Prochaine étape: transformez ce sujet en article pédagogique basé sur un exemple concret."
         : "Next step: turn this into a teaching article backed by one concrete example."
     }
   };
@@ -108,12 +108,12 @@ function getTopicBrief(topic: string, locale: Locale) {
   return (
     map[topic] ?? {
       why: fr
-        ? "Ce signal peut etre transforme en contenu actionnable pour etudiants."
+        ? "Ce signal peut être transformé en contenu actionnable pour étudiants."
         : "This signal can be turned into actionable student content.",
       actions: fr
         ? [
-            "Resumer la nouveaute en langage simple.",
-            "Montrer une application pratique immediate.",
+            "Résumer la nouveauté en langage simple.",
+            "Montrer une application pratique immédiate.",
             "Ajouter 2 liens utiles vers resources/compare."
           ]
         : [
@@ -122,7 +122,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Add 2 useful links to resources/compare."
           ],
       nextStep: fr
-        ? "Prochaine etape: reliez ce brief a une ressource et a un guide pratique."
+        ? "Prochaine étape: reliez ce brief à une ressource et à un guide pratique."
         : "Next step: connect this brief to one resource and one practical guide."
     }
   );
@@ -198,7 +198,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
   const topicBrief = getTopicBrief(item.topic, locale);
   const recentSignals = getAutoNews(locale, 5).filter((entry) => entry.slug !== item.slug).slice(0, 3);
   const tocItems = [
-    { id: "summary", label: fr ? "Resume" : "Summary" },
+    { id: "summary", label: fr ? "Résumé" : "Summary" },
     { id: "impact", label: fr ? "Impact pratique" : "Practical impact" },
     { id: "actions", label: fr ? "Actions" : "Actions" },
     { id: "references", label: "References" },
@@ -246,7 +246,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
 
       <div className="mb-5">
         <Link href={`/${locale}/news`} className="btn-secondary">
-          {fr ? "← Retour aux actualites" : "← Back to news"}
+          {fr ? "← Retour aux actualités" : "← Back to news"}
         </Link>
       </div>
 
@@ -270,7 +270,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
             </a>
             <p className="mt-2 text-xs text-[color:var(--muted)]">
               {fr
-                ? "Ce brief est genere automatiquement depuis une source officielle."
+                ? "Ce brief est généré automatiquement depuis une source officielle."
                 : "This brief is automatically generated from an official source."}
             </p>
           </div>
@@ -281,21 +281,21 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
         <div className="min-w-0 space-y-8">
           <section id="summary" className="anchor-offset reading-panel rounded-3xl p-6 md:p-8">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Resume rapide" : "Fast summary"}
+              {fr ? "Résumé rapide" : "Fast summary"}
             </h2>
             <p className="mt-3 text-[16px] leading-8 text-[color:var(--text)]">{item.summary}</p>
           </section>
 
           <section id="impact" className="anchor-offset reading-panel rounded-3xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Pourquoi ca compte pour etudiants" : "Why this matters for students"}
+              {fr ? "Pourquoi ça compte pour étudiants" : "Why this matters for students"}
             </h2>
             <p className="mt-3 text-sm text-[color:var(--text)]">{topicBrief.why}</p>
           </section>
 
           <section id="actions" className="anchor-offset reading-panel rounded-3xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Actions recommandees" : "Recommended actions"}
+              {fr ? "Actions recommandées" : "Recommended actions"}
             </h2>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               {topicBrief.actions.map((step) => (
@@ -328,7 +328,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
 
           <section id="next" className="anchor-offset surface rounded-2xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Passer a l'execution" : "Move to execution"}
+              {fr ? "Passer à l'exécution" : "Move to execution"}
             </h2>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/resources`} className="btn-secondary">
