@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { headers } from "next/headers";
 import { Newsletter } from "@/components/newsletter";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
+import { jsonLd } from "@/lib/json-ld";
 import { ogImageUrl } from "@/lib/seo";
+import { absoluteUrl } from "@/lib/site-url";
 import {
   countryLabel,
+  getOpenStages,
   getStages,
   getStagesAgeDays,
   isClosed,
@@ -80,10 +84,60 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
   const locale: Locale = params.lang;
   const copy = COPY[locale];
 
+  const nonce = (await headers()).get("x-csp-nonce") || undefined;
+
   const stages = getStages();
-  const openCount = stages.filter((stage) => !isClosed(stage)).length;
+  const openStages = getOpenStages();
+  const openCount = openStages.length;
   const stale = isStagesListStale();
   const ageDays = getStagesAgeDays();
+
+  // One array feeds both the visible trail and the schema, so the markup and
+  // the structured data cannot drift apart - a BreadcrumbList that disagrees
+  // with the breadcrumbs on the page is exactly what Search Console flags.
+  const breadcrumbs = [{ label: "AI and Cybersecurity News", href: `/${locale}` }, { label: copy.title }];
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbs.map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.label,
+      // The last crumb renders as plain text rather than a link, so it has no
+      // href of its own; it still identifies this page.
+      item: absoluteUrl(crumb.href ?? `/${locale}/stages`)
+    }))
+  };
+
+  /**
+   * ItemList, deliberately not JobPosting.
+   *
+   * JobPosting tells Google this site is where the position is published and
+   * where applications are taken. It is not: every entry here links out to the
+   * employer's own posting, which they own and can close without telling us.
+   * Claiming otherwise invites a manual action and, worse, would be a claim
+   * about someone else's hiring that we are in no position to make.
+   *
+   * ItemList describes what this page honestly is - an ordered set of links -
+   * and closed entries are left out because a list that advertises expired
+   * deadlines to a crawler is the same untruth the page works to avoid.
+   */
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: copy.title,
+    description: copy.subtitle,
+    inLanguage: locale,
+    url: absoluteUrl(`/${locale}/stages`),
+    numberOfItems: openStages.length,
+    itemListElement: openStages.map((stage, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: `${stage.role} - ${stage.company}`,
+      url: stage.href
+    }))
+  };
 
   const dateFmt = new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-GB", {
     day: "numeric",
@@ -93,7 +147,12 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
 
   return (
     <section className="page-shell max-w-5xl py-10 md:py-12">
-      <Breadcrumbs items={[{ label: "AI and Cybersecurity News", href: `/${locale}` }, { label: copy.title }]} />
+      {/* jsonLd(), never bare JSON.stringify: a role or company name carrying
+          "<" would otherwise close the script block and turn data into markup. */}
+      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(itemListSchema) }} />
+
+      <Breadcrumbs items={breadcrumbs} />
 
       <header className="mt-4">
         <h1 className="font-display hero-title font-bold text-[color:var(--text-strong)]">{copy.title}</h1>
