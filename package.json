@@ -27,7 +27,8 @@
     "watchdog": "node scripts/watchdog.mjs",
     "seo:indexnow": "node scripts/submit-indexnow.mjs",
     "new:post": "node scripts/new-post.mjs",
-    "add:stage": "node scripts/add-stage.mjs"
+    "add:stage": "node scripts/add-stage.mjs",
+    "check:stages": "node scripts/check-stages.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.126.0",

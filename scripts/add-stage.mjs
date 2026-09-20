@@ -119,7 +119,10 @@ if (!/^https?:\/\//.test(href)) fail("Link must be an http(s) URL.");
 
 const file = JSON.parse(await fs.readFile(FILE, "utf8"));
 const today = new Date().toISOString().slice(0, 10);
-const id = `${slugify(company)}-${slugify(role)}-${deadline ? deadline.slice(0, 7) : "rolling"}`;
+// City belongs in the id: the same role really does run in several places at
+// once (one MDR analyst stage in Rennes, Toulouse and Ile-de-France), and
+// without it the second and third are rejected as duplicates of the first.
+const id = `${slugify(company)}-${slugify(role)}-${slugify(city)}-${deadline ? deadline.slice(0, 7) : "rolling"}`;
 if (file.items.some((item) => item.id === id)) fail(`Already listed: ${id}`);
 if (file.items.some((item) => item.href === href)) fail(`That link is already in the list.`);
 
