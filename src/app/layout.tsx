@@ -112,8 +112,23 @@ export const metadata: Metadata = {
   verification: metadataVerification
 };
 
+/**
+ * The document language, read from the path.
+ *
+ * This was hardcoded to "en", so all 122 French pages announced themselves as
+ * English. A screen reader then pronounces French with English phonetics, and
+ * the declaration contradicts the hreflang set on the very same page. The root
+ * layout cannot see route params — [lang] is nested below it — so it reads the
+ * pathname middleware already passes through.
+ */
+function documentLanguage(pathname: string | null) {
+  const segment = (pathname || "").split("/").filter(Boolean)[0];
+  return segment === "fr" ? "fr" : "en";
+}
+
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const nonce = (await headers()).get("x-csp-nonce") || undefined;
+  const requestHeaders = await headers();
+  const nonce = requestHeaders.get("x-csp-nonce") || undefined;
   const ga4Enabled = isGa4Enabled();
   const ga4MeasurementId = getGa4MeasurementId();
   const organizationSchema = {
@@ -150,7 +165,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
 
   return (
     <html
-      lang="en"
+      lang={documentLanguage(requestHeaders.get("x-pathname"))}
       className={fontVariables}
       data-theme="light"
       data-text-size="medium"

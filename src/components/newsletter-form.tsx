@@ -150,29 +150,35 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       >
         {status === "loading" ? (locale === "fr" ? "Envoi..." : "Sending...") : ctaLabel}
       </button>
-      {status === "success" && deliveryStatus === "unavailable" && (
+      {/* "failed" joins "unavailable" here rather than in the success box below.
+          It used to render green, saying "Signup saved. Retry later to receive
+          the confirmation email." Nothing was saved — there is no queue and no
+          fallback store, so the address was gone. Telling someone their signup
+          worked when it did not is worse than an error, because they have no
+          reason to try again. */}
+      {status === "success" && (deliveryStatus === "unavailable" || deliveryStatus === "failed") && (
         <div className={`status-warning ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
           <p>
-            {locale === "fr"
-              ? "La newsletter n'est pas encore ouverte aux inscriptions. Ton adresse n'a pas ete enregistree."
-              : "The newsletter is not open for signups yet, so your address was not saved."}
+            {deliveryStatus === "failed"
+              ? locale === "fr"
+                ? "L'inscription n'a pas abouti et votre adresse n'a pas ete enregistree. Reessayez dans un instant."
+                : "The signup did not go through and your address was not saved. Please try again in a moment."
+              : locale === "fr"
+                ? "La newsletter n'est pas encore ouverte aux inscriptions. Votre adresse n'a pas ete enregistree."
+                : "The newsletter is not open for signups yet, so your address was not saved."}
           </p>
           <a href={nextAction.href} className="do-link mt-1 inline-block">
             {locale === "fr" ? "En attendant:" : "In the meantime:"} {nextAction.label}
           </a>
         </div>
       )}
-      {status === "success" && deliveryStatus !== "unavailable" && (
+      {status === "success" && deliveryStatus !== "unavailable" && deliveryStatus !== "failed" && (
         <div className={`status-success ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
           <p>
             {deliveryStatus === "sent"
               ? locale === "fr"
                 ? "Parfait. Verifie ta boite mail."
                 : "Great. Check your inbox."
-              : deliveryStatus === "failed"
-                ? locale === "fr"
-                  ? "Inscription enregistree. Reessaie plus tard pour recevoir l'email de confirmation."
-                  : "Signup saved. Retry later to receive the confirmation email."
               : locale === "fr"
                 ? "Inscription enregistree. Tu recevras les prochaines mises a jour."
                 : "Signup saved. You will receive upcoming updates."}

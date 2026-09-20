@@ -94,17 +94,25 @@ export async function POST(request: Request) {
           ? "queued"
           : "failed";
 
+    // stored must mean stored. It was `!providerUnavailable`, so a genuine
+    // ConvertKit failure — an outage, a timeout, a rejected key — reported
+    // stored: true and told the reader "Subscription received." Nothing was
+    // received: there is no queue and no fallback store anywhere, so the
+    // address was gone. A signup form that claims success on failure is the
+    // worst version of this, because the reader has no reason to try again.
+    const stored = emailForwarded;
+
     return NextResponse.json({
       ok: true,
       forwarded: emailForwarded,
-      stored: !providerUnavailable,
+      stored,
       deliveryStatus,
       emailDeliveryFailed: !subscribeResult.ok,
       message: emailForwarded
         ? "Subscription confirmed. Check your inbox."
         : providerUnavailable
           ? "The newsletter is not open for signups yet. Nothing was stored."
-          : "Subscription received."
+          : "Signup could not be completed. Please try again in a moment."
     });
   } catch {
     return NextResponse.json({ ok: false, error: "Unexpected error" }, { status: 500 });
