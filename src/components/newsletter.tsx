@@ -56,12 +56,12 @@ export function Newsletter({ compact = false, locale = "en", source }: Newslette
     locale === "fr"
       ? [
           "1. Les nouveaux stages, alternances et PFE de la semaine",
-          "2. Date limite et lien direct pour chaque offre",
+          "2. Un lien direct vers l'offre, et la date limite quand elle existe",
           "3. Maroc et France, filtrés pour les profils tech"
         ]
       : [
           "1. New internships, apprenticeships and final-year projects each week",
-          "2. A deadline and a direct link for every listing",
+          "2. A direct link to the posting, and the closing date when there is one",
           "3. Morocco and France, filtered for technical roles"
         ];
   // Promise only the cadence that is actually planned. The previous line also

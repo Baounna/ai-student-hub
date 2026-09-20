@@ -146,7 +146,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       badge: "Stages and alternances, weekly",
       title: "Open tech internships in Morocco and France",
       description:
-        "One email a week with new internships, alternances and PFE positions, each with its deadline and a direct link.",
+        "One email a week with new internships, alternances and PFE positions, each with a direct link and its closing date where the employer publishes one.",
       cta: "See the list"
     }
   },
@@ -226,7 +226,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       badge: "Stages et alternances, chaque semaine",
       title: "Les stages tech ouverts au Maroc et en France",
       description:
-        "Un email par semaine avec les nouveaux stages, alternances et PFE, chacun avec sa date limite et un lien direct.",
+        "Un email par semaine avec les nouveaux stages, alternances et PFE, chacun avec un lien direct et sa date limite quand l'employeur en annonce une.",
       cta: "Voir la liste"
     }
   }
