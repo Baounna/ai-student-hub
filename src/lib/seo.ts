@@ -43,13 +43,13 @@ const SECTION_KEYWORDS: Record<SeoSection, Record<Locale, string[]>> = {
       "ai + computer science news and execution guides",
       "ai learning and building hub",
       "for everyone ai updates",
-      "student ai roadmap"
+      "student internships in ai and cybersecurity"
     ],
     fr: [
       "actualites ia + informatique et guides execution",
       "hub apprentissage et production ia",
       "mises a jour ia pour tous",
-      "roadmap ia etudiant"
+      "stages ia et cybersecurite pour etudiants"
     ]
   },
   blog: {
@@ -69,8 +69,8 @@ const SECTION_KEYWORDS: Record<SeoSection, Record<Locale, string[]>> = {
     ]
   },
   blogPost: {
-    en: ["ai and cs article with sources", "practical engineering guide", "execution roadmap"],
-    fr: ["article ia et informatique avec sources", "guide ingenierie pratique", "roadmap execution"]
+    en: ["ai and cs article with sources", "practical engineering guide", "internship preparation"],
+    fr: ["article ia et informatique avec sources", "guide ingenierie pratique", "preparation stage"]
   },
   news: {
     en: ["ai releases", "ai product updates", "computer science updates", "weekly ai and cs brief"],
@@ -99,8 +99,8 @@ const SECTION_KEYWORDS: Record<SeoSection, Record<Locale, string[]>> = {
     fr: ["comparatif outils ia", "comparatif outils developpeur", "comparatif outils cloud et backend", "outils ia vs"]
   },
   product: {
-    en: ["ai career guide", "execution roadmap", "internship preparation guide", "digital guide ai cs"],
-    fr: ["guide carriere ia", "roadmap execution", "guide preparation stage", "guide digital ia informatique"]
+    en: ["ai career guide", "student career guide", "internship preparation guide", "digital guide ai cs"],
+    fr: ["guide carriere ia", "guide carriere etudiant", "guide preparation stage", "guide digital ia informatique"]
   },
   about: {
     en: ["about ai student hub", "ai and cs publication", "founder ai cs"],

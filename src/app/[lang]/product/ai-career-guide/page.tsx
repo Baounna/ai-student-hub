@@ -28,7 +28,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     description,
     keywords: getSeoKeywords(params.lang, "product", [
       fr ? "guide carriere ia etudiant pdf" : "ai student career guide pdf",
-      fr ? "roadmap stage ia" : "ai internship roadmap",
+      fr ? "preparation stage ia" : "ai internship preparation",
       fr ? "guide execution ia informatique 30 jours" : "30 day ai and cs execution guide",
       fr ? "plan portfolio etudiant" : "student portfolio action plan"
     ]),

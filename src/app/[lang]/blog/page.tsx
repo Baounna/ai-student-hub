@@ -39,7 +39,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     keywords: getSeoKeywords(params.lang, "blog", [
       params.lang === "fr" ? "outils ia et informatique etudiant" : "best ai and cs tools for students",
       params.lang === "fr" ? "guide execution portfolio etudiant" : "student portfolio execution guide",
-      params.lang === "fr" ? "roadmap stage ia informatique" : "ai and cs internship roadmap"
+      params.lang === "fr" ? "stages ia et informatique" : "ai and cs internships for students"
     ]),
     openGraph: {
       title: dict.blog.title,

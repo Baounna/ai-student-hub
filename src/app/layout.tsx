@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     "developer tools",
     "AI + Cybersecurity execution guides",
     "budget-friendly AI tools",
-    "student AI roadmap",
+    "student AI and cybersecurity internships",
     "AI and cybersecurity news",
     "AI tools comparison"
   ],
