@@ -116,11 +116,15 @@ export const siteConfig = {
     envValue("REAL_STATS_LINE_2"),
     envValue("REAL_STATS_LINE_3")
   ].filter(Boolean) as string[],
+  // Every call site used to hard-code its own wording for this offer, which is
+  // how "Free AI Career Roadmap" outlived the roadmap itself in twenty places.
+  // The label lives here now, so what we promise can only be said in one voice
+  // and changing what we actually give people is a single edit.
   leadMagnet: {
-    enLabel: "Get Free AI Career Roadmap",
-    frLabel: "Obtenir la roadmap IA gratuite",
-    enUrl: envValue("NEXT_PUBLIC_LEAD_MAGNET_URL_EN") || "/en#newsletter",
-    frUrl: envValue("NEXT_PUBLIC_LEAD_MAGNET_URL_FR") || "/fr#newsletter"
+    enLabel: "See open internships",
+    frLabel: "Voir les stages ouverts",
+    enUrl: envValue("NEXT_PUBLIC_LEAD_MAGNET_URL_EN") || "/en/stages",
+    frUrl: envValue("NEXT_PUBLIC_LEAD_MAGNET_URL_FR") || "/fr/stages"
   },
   // Only what the donate page reads. primaryUrl, stripeUrl, koFiUrl and
   // githubSponsorsUrl were all defined here and consumed nowhere — config that

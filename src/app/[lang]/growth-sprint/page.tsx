@@ -254,7 +254,7 @@ export default async function GrowthSprintPage(props: { params: Promise<{ lang: 
         mid:
           "Pour aller plus vite, ouvre notre page resources et prends un outil deploy + un outil productivity.",
         end:
-          "Tu veux un systeme complet? Recupere la roadmap gratuite puis passe au guide etudiant."
+          "Tu veux un systeme complet? Vois les stages ouverts puis passe au guide etudiant."
       }
     : {
         intro:
@@ -262,7 +262,7 @@ export default async function GrowthSprintPage(props: { params: Promise<{ lang: 
         mid:
           "To ship faster, open our resources page and choose one deploy tool plus one productivity tool.",
         end:
-          "Want the full system? Get the free roadmap, then move to the student guide."
+          "Want the full system? See the open internships, then move to the student guide."
       };
 
   return (
@@ -288,7 +288,7 @@ export default async function GrowthSprintPage(props: { params: Promise<{ lang: 
             {fr ? "Compare" : "Compare"}
           </Link>
           <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "growth_sprint_hero", locale }} className="btn-primary">
-            {fr ? "Roadmap gratuite" : "Free roadmap"}
+            {fr ? "Stages ouverts" : "Open internships"}
           </TrackableAnchor>
         </div>
       </header>

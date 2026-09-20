@@ -68,7 +68,7 @@ export function StickyPostCta({ locale }: { locale: Locale }) {
             meta={{ page: "sticky_post_cta", locale }}
             className="btn-primary flex-1 text-center text-xs"
           >
-            {locale === "fr" ? "Roadmap gratuite" : "Free Roadmap"}
+            {locale === "fr" ? "Stages ouverts" : "Open internships"}
           </TrackableAnchor>
           <Link href={`/${locale}/resources`} className="btn-secondary flex-1 text-center text-xs">
             {locale === "fr" ? "Ressources" : "Resources"}

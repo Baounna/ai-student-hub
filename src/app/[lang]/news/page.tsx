@@ -484,7 +484,7 @@ export default async function LocalizedNewsPage(
                 {dict.news.openCompare}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Roadmap execution" : "Execution roadmap"}
+                {locale === "fr" ? "Guide carriere" : "Career guide"}
               </Link>
             </div>
           </div>

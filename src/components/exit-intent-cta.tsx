@@ -8,16 +8,16 @@ export function ExitIntentCta({ locale = "en" }: { locale?: Locale }) {
     locale === "fr"
       ? {
           badge: "Avant de partir",
-          title: "Prends la roadmap carrière IA gratuite",
-          body: "Si tu ne fais qu'une seule chose cette semaine, utilise cette roadmap pour planifier ton prochain sprint.",
-          cta1: "Envoyer la roadmap",
+          title: "Vois les stages ouverts avant de partir",
+          body: "Stages et alternances IA et cybersecurite au Maroc et en France. Nouvelle liste chaque semaine.",
+          cta1: "Voir les stages",
           cta2: "Voir les ressources"
         }
       : {
           badge: "Before You Leave",
-          title: "Take the Free AI Career Roadmap",
-          body: "If you only do one thing this week, use this roadmap to plan your next project and application sprint.",
-          cta1: "Send me the roadmap",
+          title: "See the internships that are open now",
+          body: "AI and cybersecurity internships in Morocco and France. A new list every week.",
+          cta1: "See the internships",
           cta2: "See tools and resources"
         };
 

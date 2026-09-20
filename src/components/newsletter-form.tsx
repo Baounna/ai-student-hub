@@ -22,7 +22,7 @@ function getNextAction(source: string, locale: Locale) {
   if (source.includes("product")) {
     return {
       href: `/${locale}/product/ai-career-guide`,
-      label: locale === "fr" ? "Voir la roadmap execution" : "Open execution roadmap"
+      label: locale === "fr" ? "Voir le guide carriere" : "Open the career guide"
     };
   }
 

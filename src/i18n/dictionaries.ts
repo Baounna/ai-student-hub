@@ -6,7 +6,7 @@ export type Dictionary = {
     blog: string;
     resources: string;
     about: string;
-    roadmap: string;
+    stages: string;
   };
   footer: {
     title: string;
@@ -14,7 +14,7 @@ export type Dictionary = {
     resources: string;
     tutorials: string;
     tools: string;
-    roadmap: string;
+    stages: string;
     contact: string;
     newsletter: string;
     copyright: string;
@@ -76,7 +76,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       blog: "Blog",
       resources: "Resources",
       about: "About",
-      roadmap: "Internships"
+      stages: "Internships"
     },
     footer: {
       title: "AI and Cybersecurity News",
@@ -84,7 +84,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       resources: "Resources",
       tutorials: "Tutorials",
       tools: "Recommended Tools",
-      roadmap: "Internships",
+      stages: "Internships",
       contact: "Contact",
       newsletter: "Newsletter",
       copyright: "All rights reserved."
@@ -93,7 +93,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       badge: "Positioning Statement",
       headline: "AI + Cybersecurity News and Execution Guides for Real Builders",
       subheadline:
-        "Execution-first updates, tools, and guides for builders, learners, teams, and researchers. Students keep a dedicated path for roadmap, career, and budget-friendly workflows.",
+        "Execution-first updates, tools, and guides for builders, learners, teams, and researchers. Students keep a dedicated path for internships, career, and budget-friendly workflows.",
       ctaPrimary: "See open internships",
       ctaSecondary: "Explore Blog",
       trust: [
@@ -156,7 +156,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       blog: "Blog",
       resources: "Ressources",
       about: "À propos",
-      roadmap: "Stages"
+      stages: "Stages"
     },
     footer: {
       title: "AI and Cybersecurity News",
@@ -164,7 +164,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       resources: "Ressources",
       tutorials: "Tutoriels",
       tools: "Outils recommandés",
-      roadmap: "Stages",
+      stages: "Stages",
       contact: "Contact",
       newsletter: "Newsletter",
       copyright: "Tous droits réservés."
@@ -173,7 +173,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       badge: "Positionnement",
       headline: "Actualites et guides d'execution IA + cybersecurite pour tous",
       subheadline:
-        "Updates, outils, et guides orientes execution pour builders, apprenants, equipes, et chercheurs. Les etudiants gardent un parcours dedie roadmap, carriere, et budget-friendly.",
+        "Updates, outils, et guides orientes execution pour builders, apprenants, equipes, et chercheurs. Les etudiants gardent un parcours dedie stages, carriere, et budget-friendly.",
       ctaPrimary: "Voir les stages ouverts",
       ctaSecondary: "Explorer le blog",
       trust: [

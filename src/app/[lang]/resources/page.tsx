@@ -157,7 +157,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Roadmap execution" : "Execution roadmap"}
+                {locale === "fr" ? "Guide carriere" : "Career guide"}
               </Link>
             </div>
           </div>
@@ -293,7 +293,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "resources_execution_sprint", locale }} className="btn-secondary">
-                {locale === "fr" ? "Roadmap gratuite" : "Free roadmap"}
+                {locale === "fr" ? "Stages ouverts" : "Open internships"}
               </TrackableAnchor>
               <Link href={`/${locale}/compare`} className="btn-secondary">
                 {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
@@ -406,7 +406,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Roadmap execution ($9-$19)" : "Execution roadmap ($9-$19)"}
+                {locale === "fr" ? "Guide carriere ($9-$19)" : "Career guide ($9-$19)"}
               </Link>
             </div>
           </section>
@@ -446,7 +446,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 {locale === "fr" ? "Lab outils" : "Tools lab"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary text-center">
-                {locale === "fr" ? "Roadmap execution" : "Execution roadmap"}
+                {locale === "fr" ? "Guide carriere" : "Career guide"}
               </Link>
             </div>
           </div>

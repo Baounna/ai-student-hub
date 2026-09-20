@@ -123,15 +123,15 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
                   meta={{ page: "localized_product", locale, source: "product_fallback" }}
                   className="btn-primary"
                 >
-                  {fr ? "Obtenir la roadmap gratuite" : "Get free roadmap"}
+                  {fr ? "Voir les stages ouverts" : "See open internships"}
                 </TrackableAnchor>
                 <Link href={`/${locale}/resources`} className="btn-secondary">
                   {fr ? "Voir ressources" : "See resources"}
                 </Link>
                 <p className="w-full text-xs text-[color:var(--muted)]">
                   {fr
-                    ? "Checkout non disponible pour l'instant. Utilise la roadmap gratuite et les ressources."
-                    : "Checkout is not live yet. Use the free roadmap and curated resources first."}
+                    ? "Checkout non disponible pour l'instant. Utilise la liste des stages et les ressources."
+                    : "Checkout is not live yet. Use the internship list and curated resources first."}
                 </p>
               </div>
             )}
@@ -242,8 +242,8 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Commence par la roadmap gratuite puis reviens apres ton premier mini sprint."
-                    : "Start with the free roadmap, then return after your first mini sprint."}
+                    ? "Commence par la liste des stages puis reviens apres ton premier mini sprint."
+                    : "Start with the internship list, then return after your first mini sprint."}
                 </p>
               </article>
             </div>

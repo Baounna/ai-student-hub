@@ -136,7 +136,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                 meta={{ page: "header_cta", locale }}
                 className="inline-flex h-11 items-center rounded-2xl border border-[color:var(--primary)] bg-[color:var(--primary)] px-5 text-sm font-semibold text-[color:var(--primary-foreground)] shadow-[0_20px_36px_-24px_color-mix(in_srgb,var(--primary),transparent_30%)] hover:bg-[color:var(--primary-strong)]"
               >
-                {dict.nav.roadmap}
+                {dict.nav.stages}
               </TrackableAnchor>
             </div>
           </div>
@@ -244,7 +244,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                 meta={{ page: "mobile_nav_cta", locale }}
                 className="rounded-xl bg-[color:var(--primary)] px-3 py-2 text-center text-xs font-semibold text-[color:var(--primary-foreground)]"
               >
-                {dict.nav.roadmap}
+                {dict.nav.stages}
               </TrackableAnchor>
               <Link
                 href={donateHref}
@@ -285,13 +285,13 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                 </h2>
                 <p className="mt-2 text-sm text-[color:var(--text)]">
                   {locale === "fr"
-                    ? "Recois la roadmap gratuite et utilise les resources pour shipper plus vite."
-                    : "Get the free roadmap and use curated resources to ship faster."}
+                    ? "Vois les stages ouverts et utilise les ressources pour shipper plus vite."
+                    : "See the open internships and use curated resources to ship faster."}
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
                 <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "footer_cta", locale }} className="btn-primary">
-                  {dict.nav.roadmap}
+                  {dict.nav.stages}
                 </TrackableAnchor>
                 <Link href={`/${locale}/resources`} className="btn-secondary">
                   {dict.nav.resources}
@@ -344,7 +344,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                   meta={{ page: "footer_links", locale }}
                   className="transition hover:opacity-70"
                 >
-                  {dict.footer.roadmap}
+                  {dict.footer.stages}
                 </TrackableAnchor>
               </li>
               <li>

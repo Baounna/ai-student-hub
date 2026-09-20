@@ -272,8 +272,8 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
         </h2>
         <p className="mt-2 text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? "Choisis ton prochain pas: roadmap, outils, ou guide premium."
-            : "Pick your next action: roadmap, tools, or premium guide."}
+            ? "Choisis ton prochain pas: stages, outils, ou guide carriere."
+            : "Pick your next action: internships, tools, or the career guide."}
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <TrackableAnchor
@@ -282,7 +282,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
             meta={{ page: "blog_post_intro", slug: post.slug, locale }}
             className="btn-primary"
           >
-            {locale === "fr" ? "Roadmap gratuite" : "Free roadmap"}
+            {locale === "fr" ? "Stages ouverts" : "Open internships"}
           </TrackableAnchor>
           <Link href={`/${locale}/compare`} className="btn-secondary">
             {locale === "fr" ? "Lab outils" : "Tools lab"}

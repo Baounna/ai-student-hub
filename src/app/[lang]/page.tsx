@@ -138,8 +138,8 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             cta: "Ouvrir le lab outils"
           },
           {
-            title: "3) Executer la roadmap",
-            body: "Passe en mode action avec roadmap d'execution gratuite puis guide premium.",
+            title: "3) Passer a l'action",
+            body: "Ouvre la liste des stages ouverts, puis le guide carriere.",
             href: `/${locale}/product/ai-career-guide`,
             cta: "Lancer l'execution"
           }
@@ -158,8 +158,8 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             cta: "Open tools lab"
           },
           {
-            title: "3) Execute roadmap",
-            body: "Move from planning to shipping with a free execution roadmap and premium guide.",
+            title: "3) Execute",
+            body: "Move from planning to applying with the open internship list and the career guide.",
             href: `/${locale}/product/ai-career-guide`,
             cta: "Start execution"
           }
@@ -180,10 +180,10 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           },
           {
             label: "Pour etudiants",
-            title: "Roadmap + carriere + budget-friendly guides",
+            title: "Stages + carriere + guides budget-friendly",
             body: "Parcours dedie pour stages, portfolio, et execution avec contraintes budget.",
             links: [
-              { href: leadMagnetHref, text: "Roadmap gratuite", external: true },
+              { href: leadMagnetHref, text: "Stages ouverts", external: true },
               { href: `/${locale}/product/ai-career-guide`, text: "Guide carriere" },
               { href: `/${locale}/resources`, text: "Guides budget-friendly" }
             ]
@@ -202,10 +202,10 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           },
           {
             label: "For Students",
-            title: "Roadmap + career + budget-friendly guides",
+            title: "Internships + career + budget-friendly guides",
             body: "Dedicated path for internships, portfolio outcomes, and budget-aware execution.",
             links: [
-              { href: leadMagnetHref, text: "Free roadmap", external: true },
+              { href: leadMagnetHref, text: "Open internships", external: true },
               { href: `/${locale}/product/ai-career-guide`, text: "Career guide" },
               { href: `/${locale}/resources`, text: "Budget-friendly guides" }
             ]
@@ -320,7 +320,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
               </TrackableAnchor>
             ) : (
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Voir la roadmap execution" : "Open execution roadmap"}
+                {locale === "fr" ? "Voir le guide carriere" : "Open the career guide"}
               </Link>
             )}
           </div>
@@ -656,12 +656,12 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                 </TrackableAnchor>
               ) : (
                 <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                  {locale === "fr" ? "Voir la roadmap execution" : "Open execution roadmap"}
+                  {locale === "fr" ? "Voir le guide carriere" : "Open the career guide"}
                 </Link>
               )}
             </div>
             <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "home_execution_plan", locale }} className="do-link">
-              {locale === "fr" ? "Recuperer la roadmap gratuite" : "Get the free roadmap"}
+              {locale === "fr" ? siteConfig.leadMagnet.frLabel : siteConfig.leadMagnet.enLabel}
             </TrackableAnchor>
           </div>
         </section>

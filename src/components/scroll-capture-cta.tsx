@@ -51,12 +51,12 @@ export function ScrollCaptureCta({ locale }: { locale: Locale }) {
     >
       <div className="pointer-events-auto rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface-strong)] p-4 shadow-2xl">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
-          {locale === "fr" ? "Roadmap gratuite" : "Free roadmap"}
+          {locale === "fr" ? "Stages ouverts" : "Open internships"}
         </p>
         <p className="mt-1 text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? "Reçois le plan 30 jours pour transformer ce contenu en résultats carrière."
-            : "Get the 30-day plan to turn this content into internship outcomes."}
+            ? "Stages et alternances IA et cybersecurite. Nouvelle liste chaque semaine."
+            : "AI and cybersecurity internships. A new list every week."}
         </p>
         <div className="mt-3 flex gap-2">
           <TrackableAnchor
@@ -65,7 +65,7 @@ export function ScrollCaptureCta({ locale }: { locale: Locale }) {
             meta={{ page: "scroll_capture_cta", locale }}
             className="btn-primary flex-1 text-center text-xs"
           >
-            {locale === "fr" ? "Recevoir la roadmap" : "Get roadmap"}
+            {locale === "fr" ? "Voir les stages" : "See internships"}
           </TrackableAnchor>
           <Link href={`/${locale}/resources`} className="btn-secondary flex-1 text-center text-xs">
             {locale === "fr" ? "Voir outils" : "See tools"}

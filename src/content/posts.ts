@@ -1269,11 +1269,11 @@ const basePosts: BlogPost[] = [
         fr: "Obtiens le système sprint complet"
       },
       description: {
-        en: "Use the AI Career Roadmap and productivity templates to execute this 90-day plan consistently.",
-        fr: "Utilise la roadmap carrière IA et les templates de productivité pour exécuter ce plan 90 jours avec constance."
+        en: "Use the weekly internship list and productivity templates to execute this 90-day plan consistently.",
+        fr: "Utilise la liste hebdomadaire de stages et les templates de productivité pour exécuter ce plan 90 jours avec constance."
       },
       links: [
-        { label: { en: "Free AI Career Roadmap", fr: "Roadmap carrière IA gratuite" }, href: "#newsletter", note: "Lead magnet" },
+        { label: { en: "Open internships", fr: "Stages ouverts" }, href: "/stages", note: "Weekly list" },
         { label: { en: "Student guide product", fr: "Guide étudiant" }, href: "/product/ai-career-guide", note: "$9-$19 offer" }
       ]
     },
@@ -1349,12 +1349,12 @@ const basePosts: BlogPost[] = [
         fr: "Tu veux accélérer ta progression ?"
       },
       description: {
-        en: "Use the roadmap + curated resources to turn these fundamentals into one portfolio project this month.",
-        fr: "Utilise la roadmap + ressources pour transformer ces fondamentaux en un projet portfolio ce mois-ci."
+        en: "Use the internship list + curated resources to turn these fundamentals into one portfolio project this month.",
+        fr: "Utilise la liste de stages + ressources pour transformer ces fondamentaux en un projet portfolio ce mois-ci."
       },
       links: [
         { label: { en: "Open resources", fr: "Voir les ressources" }, href: "/resources", note: "Curated stack" },
-        { label: { en: "Get free roadmap", fr: "Recevoir la roadmap" }, href: "#newsletter", note: "Lead magnet" }
+        { label: { en: "Open internships", fr: "Stages ouverts" }, href: "/stages", note: "Weekly list" }
       ]
     },
     references: [

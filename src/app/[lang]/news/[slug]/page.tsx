@@ -410,8 +410,8 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             </p>
             <p className="mt-2 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Chemin recommande: News -> Blog -> Lab outils -> Roadmap execution."
-                : "Recommended path: News -> Blog -> Tools lab -> Execution roadmap."}
+                ? "Chemin recommande: News -> Blog -> Lab outils -> Guide carriere."
+                : "Recommended path: News -> Blog -> Tools lab -> Career guide."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/resources`} className="btn-secondary">
@@ -424,7 +424,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
                 {dict.news.openBlog}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Roadmap execution" : "Execution roadmap"}
+                {locale === "fr" ? "Guide carriere" : "Career guide"}
               </Link>
             </div>
           </section>

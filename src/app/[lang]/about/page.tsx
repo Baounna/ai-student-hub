@@ -151,7 +151,7 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
 
       <section className="mt-6 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
         <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-          {locale === "fr" ? "Roadmap execution" : "Execution roadmap"}
+          {locale === "fr" ? "Plan d'execution" : "Execution plan"}
         </h2>
         <p className="mt-2 text-sm text-[color:var(--text)]">
           {locale === "fr"

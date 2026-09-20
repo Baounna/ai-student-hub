@@ -202,7 +202,7 @@ export default async function LocalizedCompareIndexPage(
             </ul>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                {fr ? "Roadmap execution" : "Execution roadmap"}
+                {fr ? "Guide carriere" : "Career guide"}
               </Link>
               {defaultTool ? (
                 <TrackableAnchor
@@ -518,7 +518,7 @@ export default async function LocalizedCompareIndexPage(
                 {fr ? "Voir ressources" : "See recommended tools"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                {fr ? "Roadmap execution" : "Open execution roadmap"}
+                {fr ? "Guide carriere" : "Open the career guide"}
               </Link>
             </div>
             <AffiliateDisclosureInline locale={locale} className="mt-4 text-xs text-[color:var(--muted)]" />
@@ -553,7 +553,7 @@ export default async function LocalizedCompareIndexPage(
                 {fr ? "Guides blog" : "Blog guides"}
               </Link>
               <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary text-center">
-                {fr ? "Roadmap execution" : "Execution roadmap"}
+                {fr ? "Guide carriere" : "Career guide"}
               </Link>
             </div>
           </div>

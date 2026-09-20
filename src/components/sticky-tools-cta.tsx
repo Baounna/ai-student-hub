@@ -75,7 +75,7 @@ export function StickyToolsCta({ locale, source }: StickyToolsCtaProps) {
                 meta={{ page: source, locale, slot: "mobile_sticky" }}
                 className="btn-primary text-center text-xs"
               >
-                {locale === "fr" ? "Roadmap" : "Roadmap"}
+                {locale === "fr" ? "Stages" : "Internships"}
               </TrackableAnchor>
               {hasCheckout ? (
                 <TrackableAnchor

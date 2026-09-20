@@ -23,9 +23,9 @@ export function PostArticleCta({
   const resolvedDescription =
     description ||
     (locale === "fr"
-      ? "Recupere la roadmap gratuite puis passe au lab outils et au guide premium pour convertir tes apprentissages en resultats."
-      : "Get the free roadmap, then move into the tools lab and premium guide to convert learning into outcomes.");
-  const ctaPrimary = locale === "fr" ? "Obtenir la roadmap IA gratuite" : "Get Free AI Career Roadmap";
+      ? "Ouvre la liste des stages ouverts, puis le lab outils pour choisir ta stack."
+      : "Open the current list of internships, then the tools lab to pick your stack.");
+  const ctaPrimary = locale === "fr" ? siteConfig.leadMagnet.frLabel : siteConfig.leadMagnet.enLabel;
   const ctaSecondary = locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab";
   const ctaTertiary = locale === "fr" ? "Acheter le guide etudiant" : "Buy student guide";
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
