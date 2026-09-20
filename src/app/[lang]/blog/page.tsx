@@ -34,7 +34,8 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const dict = getDictionary(params.lang);
 
   return {
-    title: dict.blog.title,
+    // seoTitle for the search result; dict.blog.title stays the H1.
+    title: dict.blog.seoTitle,
     description: dict.blog.subtitle,
     keywords: getSeoKeywords(params.lang, "blog", [
       params.lang === "fr" ? "outils ia et informatique etudiant" : "best ai and cs tools for students",

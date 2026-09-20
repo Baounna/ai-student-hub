@@ -22,7 +22,8 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const dict = getDictionary(params.lang);
 
   return {
-    title: dict.resources.title,
+    // seoTitle for the search result; dict.resources.title stays the H1.
+    title: dict.resources.seoTitle,
     description: dict.resources.subtitle,
     keywords: getSeoKeywords(params.lang, "resources"),
     openGraph: {

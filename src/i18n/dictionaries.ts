@@ -31,6 +31,8 @@ export type Dictionary = {
   };
   blog: {
     title: string;
+    /** <title> only. `title` is the H1 and must stay readable. */
+    seoTitle: string;
     subtitle: string;
     latest: string;
     readPost: string;
@@ -44,6 +46,8 @@ export type Dictionary = {
     subtitle: string;
   };
   resources: {
+    /** <title> only. `title` is the H1 and must stay readable. */
+    seoTitle: string;
     title: string;
     subtitle: string;
   };
@@ -91,7 +95,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       badge: "Positioning Statement",
-      headline: "AI + Cybersecurity News and Execution Guides for Real Builders",
+      headline: "AI + Cybersecurity Guides for Builders",
       subheadline:
         "Execution-first updates, tools, and guides for builders, learners, teams, and researchers. Students keep a dedicated path for internships, career, and budget-friendly workflows.",
       ctaPrimary: "See open internships",
@@ -107,6 +111,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     blog: {
       title: "Build, Ship, and Grow as an AI + Cybersecurity Engineer",
+      seoTitle: "AI + Cybersecurity Guides",
       subtitle: "Tactical tutorials and systems for stronger portfolios across AI, backend, cloud, and cybersecurity operations.",
       latest: "Latest Articles",
       readPost: "Read post",
@@ -122,6 +127,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         "I help people ship portfolio-grade projects and convert execution into measurable outcomes. Students remain a core sub-audience."
     },
     resources: {
+      seoTitle: "Recommended AI + Security Tools",
       title: "Recommended Tools for AI + Cybersecurity Builders",
       subtitle:
         "Tools selected for practical ROI: faster shipping, better learning loops, and execution-focused workflows across AI and cybersecurity."
@@ -171,7 +177,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       badge: "Positionnement",
-      headline: "Actualites et guides d'execution IA + cybersecurite pour tous",
+      headline: "Guides IA + cybersecurite pour builders",
       subheadline:
         "Updates, outils, et guides orientes execution pour builders, apprenants, equipes, et chercheurs. Les etudiants gardent un parcours dedie stages, carriere, et budget-friendly.",
       ctaPrimary: "Voir les stages ouverts",
@@ -187,6 +193,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     blog: {
       title: "Construire, livrer et progresser comme ingenieur IA + cybersecurite",
+      seoTitle: "Guides IA + cybersecurite",
       subtitle: "Tutoriels tactiques et systemes pour portfolio solide en IA, backend, cloud et cybersecurite.",
       latest: "Derniers articles",
       readPost: "Lire l'article",
@@ -202,6 +209,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         "J'aide les personnes a livrer des projets portfolio et a transformer l'execution en resultats mesurables. Les etudiants restent un sous-public prioritaire."
     },
     resources: {
+      seoTitle: "Outils IA + cybersecurite",
       title: "Outils recommandes pour builders IA + cybersecurite",
       subtitle:
         "Des outils choisis pour un ROI concret : livrer plus vite, apprendre mieux et convertir l'audience sur l'IA et la cybersecurite."
