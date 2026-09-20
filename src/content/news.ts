@@ -322,7 +322,7 @@ export const newsBriefs: NewsBrief[] = [
     tags: ["edge", "systems", "latency"],
     source: {
       name: "Platform engineering docs",
-      href: "https://developer.nvidia.com/edge-computing"
+      href: "https://developer.nvidia.com/embedded-computing"
     },
     relatedPostSlugs: ["deploy-ml-model-student-budget"],
     locales: {

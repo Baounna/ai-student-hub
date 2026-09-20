@@ -45,8 +45,8 @@ function getTopicReference(topic: string, locale: Locale) {
       source: "Google Cloud"
     },
     "Computer Systems": {
-      label: locale === "fr" ? "NVIDIA Edge Computing" : "NVIDIA Edge Computing",
-      href: "https://developer.nvidia.com/edge-computing",
+      label: "NVIDIA Embedded Computing",
+      href: "https://developer.nvidia.com/embedded-computing",
       source: "NVIDIA"
     },
     "Cloud/DevOps": {
