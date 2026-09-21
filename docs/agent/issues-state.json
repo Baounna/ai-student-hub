@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T14:30:29.451Z",
+  "generatedAt": "2026-09-21T15:19:19.296Z",
   "repository": "Baounna/ai-student-hub",
   "mode": "disabled",
   "maxPerRun": 3,
@@ -8,19 +8,19 @@
       "sourceId": "operator",
       "label": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "enabled": true,
-      "queueGeneratedAt": "2026-09-21T14:30:29.256Z",
-      "totalActions": 13,
-      "selectedCount": 3
+      "enabled": false,
+      "queueGeneratedAt": "",
+      "totalActions": 0,
+      "selectedCount": 0
     },
     {
       "sourceId": "design",
       "label": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "enabled": false,
-      "queueGeneratedAt": "",
-      "totalActions": 0,
-      "selectedCount": 0
+      "enabled": true,
+      "queueGeneratedAt": "2026-09-21T15:19:19.117Z",
+      "totalActions": 4,
+      "selectedCount": 3
     }
   ],
   "summary": {
@@ -28,7 +28,7 @@
     "existing": 0,
     "dryRun": 3,
     "errors": 0,
-    "tracked": 10
+    "tracked": 11
   },
   "items": [
     {
@@ -46,7 +46,7 @@
       "status": "disabled",
       "createdAt": "2026-02-19T22:53:00.028Z",
       "lastSeenAt": "2026-09-21T14:30:29.451Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "a8f39a3cbc2c9fd0",
@@ -63,7 +63,7 @@
       "status": "disabled",
       "createdAt": "2026-02-19T22:53:00.028Z",
       "lastSeenAt": "2026-09-21T14:30:29.451Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "cb9aea0bb5576d89",
@@ -80,7 +80,7 @@
       "status": "disabled",
       "createdAt": "2026-02-19T22:53:00.028Z",
       "lastSeenAt": "2026-09-21T14:30:29.451Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "df74184273544a1a",
@@ -172,34 +172,51 @@
       "sourceId": "design",
       "sourceLabel": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "queueGeneratedAt": "2026-09-18T11:23:23.234Z",
+      "queueGeneratedAt": "2026-09-21T15:19:19.117Z",
       "priority": "P1",
       "action": "Keep CS-first value proposition cards visible on homepage.",
       "why": "CS-first framing balances publication positioning beyond AI-only messaging.",
       "file": "src/app/[lang]/page.tsx",
       "checkId": "home-cs-first-block",
       "title": "[Design P1] Keep CS-first value proposition cards visible on homepage.",
-      "status": "dry-run",
+      "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
-      "lastSeenAt": "2026-09-18T11:23:23.441Z",
-      "inQueue": false
+      "lastSeenAt": "2026-09-21T15:19:19.296Z",
+      "inQueue": true
     },
     {
       "hash": "29e4e1db629195e3",
       "sourceId": "design",
       "sourceLabel": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "queueGeneratedAt": "2026-09-12T13:25:15.166Z",
+      "queueGeneratedAt": "2026-09-21T15:19:19.117Z",
       "priority": "P1",
       "action": "Use clean field-input styling for search with clear visual hierarchy.",
       "why": "Simple high-contrast search fields improve scan speed and reduce visual noise.",
       "file": "src/components/ui/header-search-form.tsx",
       "checkId": "header-search-premium-shell",
       "title": "[Design P1] Use clean field-input styling for search with clear visual hierarchy.",
-      "status": "dry-run",
+      "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
-      "lastSeenAt": "2026-09-12T13:25:18.069Z",
-      "inQueue": false
+      "lastSeenAt": "2026-09-21T15:19:19.296Z",
+      "inQueue": true
+    },
+    {
+      "hash": "8a7997bd695b6700",
+      "sourceId": "design",
+      "sourceLabel": "Design",
+      "queueFile": "docs/agent/design-actions.json",
+      "queueGeneratedAt": "2026-09-21T15:19:19.117Z",
+      "priority": "P2",
+      "action": "Keep AI/CS split filters on news page with track chips.",
+      "why": "Split navigation improves topical relevance and retention.",
+      "file": "src/app/[lang]/news/page.tsx",
+      "checkId": "news-ai-cs-split",
+      "title": "[Design P2] Keep AI/CS split filters on news page with track chips.",
+      "status": "disabled",
+      "createdAt": "2026-09-21T15:19:19.296Z",
+      "lastSeenAt": "2026-09-21T15:19:19.296Z",
+      "inQueue": true
     }
   ]
 }
