@@ -325,6 +325,9 @@ export default async function LocalizedCompareIndexPage(
                 <input
                   id="study-tool-search"
                   type="search"
+                  autoCorrect="off"
+                  autoCapitalize="none"
+                  spellCheck={false}
                   name="tool"
                   defaultValue={toolQueryRaw}
                   placeholder={

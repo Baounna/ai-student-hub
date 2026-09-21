@@ -304,6 +304,10 @@ export default async function LocalizedBlogPage(
               <input
                 id={`blog-search-${locale}`}
                 name="query"
+                type="search"
+                autoCorrect="off"
+                autoCapitalize="none"
+                spellCheck={false}
                 defaultValue={queryRaw}
                 placeholder={searchPlaceholder}
                 maxLength={120}

@@ -91,6 +91,9 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
             id={inputId}
             name={hasQuery ? "query" : undefined}
             type="search"
+            autoCorrect="off"
+            autoCapitalize="none"
+            spellCheck={false}
             enterKeyHint="search"
             value={query}
             onChange={(event) => setQuery(sanitizeSearchInputLive(event.target.value))}
@@ -138,6 +141,9 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
           id={inputId}
           name={hasQuery ? "query" : undefined}
           type="search"
+          autoCorrect="off"
+          autoCapitalize="none"
+          spellCheck={false}
           enterKeyHint="search"
           value={query}
           onChange={(event) => setQuery(sanitizeSearchInputLive(event.target.value))}
