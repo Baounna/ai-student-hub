@@ -26,6 +26,18 @@ export function getGa4MeasurementId() {
   return (process.env.GA4_MEASUREMENT_ID || "").trim();
 }
 
+/**
+ * A GA4 id looks like G-XXXXXXXXXX. Any non-empty string used to satisfy this,
+ * so the placeholder shipped in .env.example — G-REPLACE1234 — was enough to
+ * load 148 KB of gtag that could never report anywhere. A performance pass
+ * measured it: 70 KB unused, 110 ms of bootup, in front of every render, for a
+ * property that does not exist. Production has no analytics configured at all,
+ * so this only ever burned a developer's local page loads, which is exactly the
+ * kind of cost nobody goes looking for.
+ */
 export function isGa4Enabled() {
-  return getAnalyticsMode() === "ga4" && Boolean(getGa4MeasurementId());
+  const id = getGa4MeasurementId();
+  if (getAnalyticsMode() !== "ga4") return false;
+  if (!/^G-[A-Z0-9]{6,}$/i.test(id)) return false;
+  return !/replace|placeholder|example|xxxx|1234567890/i.test(id);
 }
