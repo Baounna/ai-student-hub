@@ -34,12 +34,15 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
 
   const fr = params.lang === "fr";
   const title = fr ? "Outils IA + cybersécurité pratiques pour le travail réel" : "Practical AI + Cybersecurity Tools for Real Work";
+  // The <title> only. `title` still feeds the OG card, the share text and the
+  // generated image, so the page itself keeps the full phrase.
+  const metadataTitle = fr ? "Outils IA + cybersécurité" : "Practical AI + Cybersecurity Tools";
   const description = fr
     ? "Guides d'outils et comparatifs IA + cybersécurité: budget-friendly, vitesse de déploiement, et impact exécution."
     : "Tool guides and comparisons for AI + Cybersecurity projects: budget-friendly options, deployment speed, and execution impact.";
 
   return {
-    title,
+    title: metadataTitle,
     description,
     keywords: getSeoKeywords(params.lang, "compare"),
     openGraph: {

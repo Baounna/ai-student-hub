@@ -473,11 +473,13 @@ export const comparisons: ComparisonPage[] = [
     locales: {
       en: {
         title: "Best Cloud Platform for Student AI Projects (2026 Comparison)",
+        seoTitle: "Best Cloud for Student AI Projects (2026)",
         intro:
           "This comparison helps AI students choose a practical cloud stack based on budget, deployment speed, and portfolio quality signal."
       },
       fr: {
         title: "Meilleure plateforme cloud pour les projets IA étudiants (comparatif 2026)",
+        seoTitle: "Cloud pour projets IA étudiants (comparatif 2026)",
         intro:
           "Ce comparatif aide les étudiants en IA à choisir une stack cloud exploitable, selon le budget, la vitesse de déploiement et le signal qualité envoyé dans un portfolio."
       }
@@ -541,11 +543,13 @@ export const comparisons: ComparisonPage[] = [
     locales: {
       en: {
         title: "Best Backend Stack for ML Student Apps (FastAPI vs Node vs Go)",
+        seoTitle: "Best Backend Stack: FastAPI vs Node vs Go",
         intro:
           "Choose a backend stack based on API development speed, deployment reliability, and student-friendly maintenance."
       },
       fr: {
         title: "Meilleure stack backend pour les applications ML étudiantes (FastAPI vs Node vs Go)",
+        seoTitle: "Stack backend ML : FastAPI vs Node vs Go",
         intro:
           "Choisissez une stack backend selon la vitesse de développement des API, la fiabilité des déploiements et la facilité de maintenance pour un étudiant."
       }
@@ -609,11 +613,13 @@ export const comparisons: ComparisonPage[] = [
     locales: {
       en: {
         title: "Best DevOps Workflow for Student Engineers (CI/CD + Monitoring)",
+        seoTitle: "Best DevOps Workflow for Students: CI/CD",
         intro:
           "Compare practical DevOps workflows by release speed, rollback safety, and observability maturity for student teams."
       },
       fr: {
         title: "Meilleur workflow DevOps pour les étudiants ingénieurs (CI/CD + monitoring)",
+        seoTitle: "Workflow DevOps étudiant : CI/CD + monitoring",
         intro:
           "Comparez des workflows DevOps concrets selon la vitesse de mise en production, la sûreté des rollbacks et la maturité de l'observabilité, pour des équipes étudiantes."
       }
@@ -1429,6 +1435,7 @@ const basePosts: BlogPost[] = [
     locales: {
       en: {
         title: "Student AI Internship Roadmap: From Zero Signal to Interview-Ready in 90 Days",
+        seoTitle: "AI Internship Roadmap: Interview-Ready in 90 Days",
         excerpt: "A 90-day execution plan to build authority, improve applications, and create interview conversion.",
         content: [
           "Most students who fail internship applications are not failing on ability. They are failing on legibility. A reviewer spends well under a minute deciding whether to keep reading, and in that time a list of coursework and a repository of unfinished tutorials communicates almost nothing about what you can actually do. Ninety days is enough to change that, but only if the work is aimed at being understood rather than at being impressive.",
@@ -1445,6 +1452,7 @@ const basePosts: BlogPost[] = [
       },
       fr: {
         title: "Roadmap stage IA: de zéro signal à prêt pour l'entretien en 90 jours",
+        seoTitle: "Roadmap stage IA : entretien en 90 jours",
         excerpt: "Un plan d'exécution sur 90 jours pour construire autorité, améliorer candidatures et obtenir des entretiens.",
         content: [
           "La plupart des étudiants qui échouent à décrocher un stage n'échouent pas sur la compétence, mais sur la lisibilité. Un recruteur consacre bien moins d'une minute à décider s'il continue, et pendant ce temps une liste de cours suivis et un dépôt de tutoriels inachevés ne communiquent presque rien de ce que vous savez faire. Quatre-vingt-dix jours suffisent à changer cela, mais seulement si le travail vise à être compris plutôt qu'à impressionner.",

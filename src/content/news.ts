@@ -139,6 +139,7 @@ export const newsBriefs: NewsBrief[] = [
       },
       fr: {
         title: "Dernières performances IA par thème (snapshot février 2026)",
+        seoTitle: "Performances IA par thème (février 2026)",
         summary:
           "Un nouveau tableau benchmark publié en février 2026 compare les modèles frontier sur raisonnement, QA scientifique, mathématiques, multimodal et tâches UI/écran.",
         studentImpact:
