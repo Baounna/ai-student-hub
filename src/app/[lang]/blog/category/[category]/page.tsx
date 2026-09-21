@@ -115,17 +115,23 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
       </div>
 
       <div className="mt-8 space-y-4">
-        {posts.map((post) => (
+        {posts.map((post, index) => (
           <article key={post.slug} className="blog-stream-card card-hover overflow-hidden rounded-2xl p-4 md:p-5">
             <div className="grid gap-4 md:grid-cols-[250px,1fr] md:items-start">
               <Link href={`/${locale}/blog/${post.slug}`} className="relative overflow-hidden rounded-xl border border-[color:var(--border)]">
+                {/* The first card's cover is this page's LCP element on both
+                    phone and desktop — there is no hero image above it, only
+                    text. It was lazy-loaded, so the browser deliberately
+                    deferred the one image the score is measured on and waited
+                    for layout before even requesting it. Everything below it
+                    stays lazy. */}
                 <Image
                   src={coverImageUrl(post.slug, post.category)}
                   alt={post.title}
                   width={1200}
                   height={675}
                   sizes="(max-width: 768px) 100vw, 250px"
-                  loading="lazy"
+                  {...(index === 0 ? { priority: true } : { loading: "lazy" as const })}
                   className="h-auto w-full transition duration-500 ease-out hover:scale-[1.02]"
                 />
               </Link>

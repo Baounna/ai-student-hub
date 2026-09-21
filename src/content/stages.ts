@@ -59,7 +59,15 @@ export function getStagesUpdatedAt() {
  * oldest per-entry check: every link has been verified at least that recently.
  */
 export function getStagesCheckedAgeDays(now = Date.now()) {
-  const checked = Date.parse(`${getStagesLastCheckedAt()}T12:00:00Z`);
+  const lastChecked = getStagesLastCheckedAt();
+  // Per-entry checkedAt is a bare YYYY-MM-DD and gets anchored at noon, but the
+  // fallback below it returns updatedAt, which is already a full ISO timestamp.
+  // Appending a time to that produced "...499950ZT12:00:00Z", which parses to
+  // NaN, so an entry set with no checkedAt at all reported an age of Infinity
+  // instead of the file's real age.
+  const checked = Date.parse(
+    /^\d{4}-\d{2}-\d{2}$/.test(lastChecked) ? `${lastChecked}T12:00:00Z` : lastChecked
+  );
   if (!Number.isFinite(checked)) return Number.POSITIVE_INFINITY;
   return Math.max(0, Math.floor((now - checked) / 86_400_000));
 }
@@ -76,8 +84,20 @@ export function getStagesAgeDays(now = Date.now()) {
   return Math.max(0, Math.floor((now - updated) / 86_400_000));
 }
 
+/**
+ * Measured against the oldest per-entry check, not against the file's own
+ * updatedAt.
+ *
+ * updatedAt moves whenever anything writes the file — `npm run add:stage` alone
+ * re-stamps it — so keying the banner on it meant a maintainer who added one
+ * entry a week kept the file permanently "fresh" while not a single link had
+ * been re-verified for months. The page then printed "Last checked: 112 days
+ * ago" (that headline already reads the per-entry dates) directly above no
+ * warning at all, and the watchdog, which also measures checkedAt, raised an
+ * issue nobody reading the page could see the reason for. One clock.
+ */
 export function isStagesListStale(now = Date.now()) {
-  return getStagesAgeDays(now) > STALE_AFTER_DAYS;
+  return getStagesCheckedAgeDays(now) > STALE_AFTER_DAYS;
 }
 
 /** A deadline that has passed. Kept visible: hiding it hides the maintenance. */

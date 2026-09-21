@@ -31,10 +31,19 @@ const body = Public_Sans({
   variable: "--font-body"
 });
 
+// Not preloaded, unlike the other two. next/font preloads by default, which
+// put a 10 KB High-priority font request in front of the render on all 430
+// pages — but the only rule that asks for this family is `.provenance`, the
+// small uppercase metadata line, which exists on news, stages and article
+// pages and nowhere else. Home, blog, compare and resources were each paying
+// for a download that had nothing to render. The file set is unchanged: it
+// still loads, on the pages that use it, and font-display: swap means the
+// metadata line shows in the fallback until it arrives.
 const mono = IBM_Plex_Mono({
   subsets: ["latin"],
   display: "swap",
   weight: ["400"],
+  preload: false,
   variable: "--font-meta"
 });
 

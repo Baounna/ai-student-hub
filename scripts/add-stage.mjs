@@ -29,6 +29,16 @@ const execFileAsync = promisify(execFile);
 const FILE = path.join(process.cwd(), "src/content/stages.json");
 const KINDS = ["stage", "alternance", "pfe"];
 const REMOTES = ["onsite", "hybrid", "remote"];
+/**
+ * Statuses that mean "we were refused", never "the page is gone".
+ *
+ * Same list as BLOCKED_STATUSES in check-stages.mjs, and it has to be: the two
+ * scripts look at the same links. This one only knew about 403, 405 and 999, so
+ * a board that answered 429 because we had just hit it, or 503 during a
+ * deployment, or 401 behind a login wall, got "Not adding a dead link" and a
+ * live posting was thrown away. Rate limiting is not death.
+ */
+const BLOCKED_STATUSES = [401, 403, 405, 429, 503, 999];
 
 function parseArgs(argv) {
   const out = {};
@@ -60,8 +70,7 @@ async function linkResolves(url) {
       "-A", "Mozilla/5.0", url
     ]);
     const status = Number.parseInt(code.trim(), 10);
-    // 403 and 999 are bot blocks, not dead pages — job boards do this constantly.
-    return [200, 201, 301, 302, 303, 307, 308, 403, 405, 999].includes(status) ? status : status;
+    return Number.isFinite(status) ? status : 0;
   } catch {
     return 0;
   }
@@ -128,7 +137,7 @@ if (file.items.some((item) => item.href === href)) fail(`That link is already in
 
 const status = await linkResolves(href);
 if (status === 0) fail(`Could not reach ${href}. Check the link before adding it.`);
-if (status >= 400 && ![403, 405, 999].includes(status)) {
+if (status >= 400 && !BLOCKED_STATUSES.includes(status)) {
   fail(`${href} returned HTTP ${status}. Not adding a dead link.`);
 }
 

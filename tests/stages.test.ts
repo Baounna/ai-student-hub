@@ -80,8 +80,13 @@ describe("staleness", () => {
     expect(getStagesAgeDays(Date.parse(raw.updatedAt) + 3 * 86_400_000)).toBe(3);
   });
 
+  // Measured from the oldest per-entry check, not from updatedAt. This used to
+  // count from the file's own timestamp, which `npm run add:stage` re-stamps on
+  // every entry added — so a maintainer adding one listing a week kept the
+  // banner suppressed forever while no link was ever re-verified. See
+  // tests/stages-staleness.test.ts.
   it("is not stale on the threshold and is stale after it", () => {
-    const base = Date.parse(raw.updatedAt);
+    const base = Date.parse(`${getStagesLastCheckedAt()}T12:00:00Z`);
     expect(isStagesListStale(base + STALE_AFTER_DAYS * 86_400_000)).toBe(false);
     expect(isStagesListStale(base + (STALE_AFTER_DAYS + 1) * 86_400_000)).toBe(true);
   });

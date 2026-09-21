@@ -543,13 +543,21 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             <div className="p-4">
               <div className="grid gap-4 md:grid-cols-[240px,1fr]">
                 <div className="media-frame card-hover group aspect-[4/3]">
+                  {/* Not priority. Measured at 3699px down the phone layout —
+                      four and a half screens below the fold — and the LCP
+                      element on this page is the hero h1, never this image.
+                      `priority` was emitting a <link rel=preload as=image>
+                      with an eight-entry srcset into <head>, so the browser
+                      spent its opening bandwidth on a picture nobody had
+                      scrolled to yet, alongside the fonts that do gate the
+                      headline's paint. */}
                   <Image
                     src={coverImageUrl(featuredPost.slug, featuredPost.category)}
                     alt={featuredPost.title}
                     width={1200}
                     height={675}
                     sizes="(max-width: 768px) 100vw, 220px"
-                    priority
+                    loading="lazy"
                     className="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-[1.03]"
                   />
                 </div>

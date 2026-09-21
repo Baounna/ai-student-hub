@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 // @ts-expect-error - plain .mjs script, no types
-import { gonePhrase, redirectedAway } from "../scripts/check-stages.mjs";
+import { expiredValidThrough, gonePhrase, redirectedAway } from "../scripts/check-stages.mjs";
 
 // Both of these rules exist because the checker passed a known-dead listing as
 // healthy. They are the two ways a posting dies while still answering HTTP 200.
@@ -59,5 +59,39 @@ describe("redirected off the posting", () => {
 
   it("treats a missing final URL as inconclusive, not gone", () => {
     expect(redirectedAway("https://example.com/jobs/12345", "")).toBe(false);
+  });
+});
+
+// This rule is the reason six long-dead internships were caught, and it spent
+// its whole life unable to fire: it ran against the tag-stripped text, while
+// the date only ever appears inside a <script type="application/ld+json">
+// block, which fetchText() deletes before anything greps it.
+describe("expired schema.org validThrough", () => {
+  const JSON_LD_PAGE = `<!doctype html><html><head>
+<script type="application/ld+json">
+{"@context":"https://schema.org/","@type":"JobPosting","title":"Stage Cyber",
+"datePosted":"2025-01-10","validThrough":"2025-03-01T23:59"}
+</script>
+</head><body><h1>Stage Cyber</h1><p>Rejoignez notre equipe.</p></body></html>`;
+
+  const now = Date.parse("2026-09-21T00:00:00Z");
+
+  it("finds a past date published as JSON-LD", () => {
+    expect(expiredValidThrough(JSON_LD_PAGE, "example.com", now)).toBe("2025-03-01");
+  });
+
+  it("says nothing about a date still in the future", () => {
+    const live = JSON_LD_PAGE.replace("2025-03-01", "2027-03-01");
+    expect(expiredValidThrough(live, "example.com", now)).toBe("");
+  });
+
+  it("says nothing when the page publishes no validThrough", () => {
+    expect(expiredValidThrough("<html><body>Stage Cyber</body></html>", "example.com", now)).toBe("");
+  });
+
+  // HelloWork stamps every listing datePosted + 30 days regardless of the
+  // employer's own timetable, so trusting it there retires live jobs.
+  it("ignores boards whose validThrough is their own listing TTL", () => {
+    expect(expiredValidThrough(JSON_LD_PAGE, "hellowork.com", now)).toBe("");
   });
 });

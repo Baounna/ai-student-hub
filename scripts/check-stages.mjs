@@ -105,6 +105,30 @@ export function redirectedAway(href, finalUrl) {
   return from > 0 && to >= 0 && to < from;
 }
 
+/**
+ * A schema.org validThrough that has already passed, read from the RAW body.
+ *
+ * This used to run against the tag-stripped text, which is the one place the
+ * date can never be. Employers publish validThrough inside a
+ * <script type="application/ld+json"> block or as a <meta itemprop> attribute,
+ * and fetchText() deletes every <script> block and then every tag before the
+ * grep ran — so the rule that "exposed six long-dead cyber internships still
+ * serving HTTP 200" could not match anything on any page, ever. A posting whose
+ * employer closed it six months ago still reported "ok".
+ *
+ * Returns the offending date, or "" when there is nothing to report.
+ */
+export function expiredValidThrough(raw, host, now = Date.now()) {
+  // On most sites a past validThrough means the posting is over. On some
+  // aggregators it means nothing of the kind: HelloWork stamps every listing
+  // datePosted + 30 days regardless of the employer's own timetable, so
+  // trusting it there would retire live jobs a month after we found them.
+  if (LISTING_TTL_HOSTS.has(host)) return "";
+  const match = String(raw || "").match(/validThrough["':\s]+(\d{4}-\d{2}-\d{2})/i);
+  if (!match) return "";
+  return Date.parse(`${match[1]}T23:59:59Z`) < now ? match[1] : "";
+}
+
 async function fetchText(url) {
   await waitForHost(url);
   try {
@@ -162,7 +186,7 @@ async function checkOne(stage) {
     }
   }
 
-  const { status, text, finalUrl } = await fetchText(stage.href);
+  const { status, text, raw, finalUrl } = await fetchText(stage.href);
   if (status === 0) return { verdict: "CHECK", detail: "no response" };
   if (status >= 400 && !BLOCKED_STATUSES.has(status)) {
     return { verdict: "GONE", detail: `HTTP ${status}` };
@@ -179,15 +203,13 @@ async function checkOne(stage) {
     return { verdict: "GONE", detail: `redirected off the posting to ${String(finalUrl).slice(0, 80)}` };
   }
 
-  // On most sites a past validThrough means the posting is over — that is what
-  // exposed six long-dead cyber internships still serving HTTP 200. On some
-  // aggregators it means nothing of the kind: HelloWork stamps every listing
-  // datePosted + 30 days regardless of the employer's own timetable, so
-  // trusting it there would retire live jobs a month after we found them.
+  // A past schema.org validThrough — read from the raw body, because the date
+  // only ever lives in markup that the text pipeline strips. See
+  // expiredValidThrough.
   const host = (() => { try { return new URL(stage.href).hostname.replace(/^www\./, ""); } catch { return ""; } })();
-  const valid = text.match(/validThrough["':\s]+(\d{4}-\d{2}-\d{2})/i);
-  if (valid && !LISTING_TTL_HOSTS.has(host) && Date.parse(`${valid[1]}T23:59:59Z`) < Date.now()) {
-    return { verdict: "GONE", detail: `validThrough ${valid[1]} has passed` };
+  const expired = expiredValidThrough(raw, host);
+  if (expired) {
+    return { verdict: "GONE", detail: `validThrough ${expired} has passed` };
   }
 
   if (BLOCKED_STATUSES.has(status)) {

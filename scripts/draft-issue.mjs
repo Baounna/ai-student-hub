@@ -35,7 +35,20 @@ const today = new Date().toISOString().slice(0, 10);
 const file = JSON.parse(await fs.readFile(STAGES, "utf8"));
 const open = file.items.filter((s) => !s.deadline || Date.parse(`${s.deadline}T23:59:59Z`) >= Date.now());
 
-let since = arg("since");
+/**
+ * --since is a manual override for one run: "only entries found on or after
+ * this day". It is read from the command line and nowhere else. It used to
+ * default to the previous issue's sentAt, which is the single-date watermark
+ * the comment below exists to warn about — reviving it through this flag would
+ * reintroduce the same bug. It was also never applied to anything: the variable
+ * was assigned and then unread, so the documented flag silently did nothing.
+ */
+const since = arg("since");
+if (since && !/^\d{4}-\d{2}-\d{2}$/.test(since)) {
+  console.error(`\n  --since must look like 2026-09-01, got "${since}".\n`);
+  process.exit(1);
+}
+
 /**
  * Entries already carried in a previous issue, by id. The watermark used to be
  * a single date, which did not survive the digest cap landing later: one run
@@ -43,19 +56,24 @@ let since = arg("since");
  * "posted after today" and reported nothing new. The other eighty-four could
  * never appear again. Tracking what was actually sent is the only version of
  * this that composes with a cap.
+ *
+ * Read on every run, --all included. --all changes what *this* issue covers;
+ * it says nothing about what previous issues covered. Skipping the read left
+ * this set empty, and the write at the end is `[...alreadySent, ...picked]` —
+ * so a single --all run rebuilt the record from nothing and threw away every
+ * id ever sent. The next ordinary run then re-sent listings subscribers had
+ * already received, which is the one thing this file exists to prevent.
  */
 let alreadySent = new Set();
-if (!ALL) {
-  try {
-    const state = JSON.parse(await fs.readFile(STATE, "utf8"));
-    if (!since) since = state.sentAt || "";
-    if (Array.isArray(state.coveredIds)) alreadySent = new Set(state.coveredIds);
-  } catch {
-    since = since || "";
-  }
+try {
+  const state = JSON.parse(await fs.readFile(STATE, "utf8"));
+  if (Array.isArray(state.coveredIds)) alreadySent = new Set(state.coveredIds);
+} catch {
+  // No state file yet: the first issue covers whatever is open.
 }
 
-const fresh = ALL ? open : open.filter((s) => !alreadySent.has(s.id));
+const unsent = ALL ? open : open.filter((s) => !alreadySent.has(s.id));
+const fresh = since ? unsent.filter((s) => (s.postedAt || "") >= since) : unsent;
 
 /**
  * An email carrying ninety-six outbound links is a spam signal before it is
@@ -64,7 +82,11 @@ const fresh = ALL ? open : open.filter((s) => !alreadySent.has(s.id));
  * ones you can miss, then the most recently found. The rest stay one click
  * away on a page built to hold them.
  */
-const LIMIT = Number.parseInt(arg("limit") || "12", 10);
+// A bare `--limit` with no value makes arg() return "true", and
+// Number.parseInt("true") is NaN — slice(0, NaN) returns an empty array, so the
+// run reported "everything has already been sent" and wrote no issue at all.
+const parsedLimit = Number.parseInt(arg("limit") || "12", 10);
+const LIMIT = Number.isFinite(parsedLimit) && parsedLimit > 0 ? parsedLimit : 12;
 const ranked = [...fresh].sort((a, b) => {
   if (Boolean(a.deadline) !== Boolean(b.deadline)) return a.deadline ? -1 : 1;
   if (a.deadline && b.deadline) return a.deadline.localeCompare(b.deadline);
