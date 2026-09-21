@@ -3,7 +3,7 @@
 import { useCallback, useRef, useState, useSyncExternalStore } from "react";
 import { usePathname } from "next/navigation";
 import type { Locale } from "@/i18n/config";
-import { sanitizeSearchQuery } from "@/lib/input";
+import { sanitizeSearchInputLive, sanitizeSearchQuery } from "@/lib/input";
 
 type HeaderSearchFormProps = {
   locale: Locale;
@@ -90,7 +90,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
             type="search"
             enterKeyHint="search"
             value={query}
-            onChange={(event) => setQuery(sanitizeSearchQuery(event.target.value))}
+            onChange={(event) => setQuery(sanitizeSearchInputLive(event.target.value))}
             onKeyDown={(event) => {
               if (event.key === "Escape" && hasQuery) clearSearch();
             }}
@@ -137,7 +137,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
           type="search"
           enterKeyHint="search"
           value={query}
-          onChange={(event) => setQuery(sanitizeSearchQuery(event.target.value))}
+          onChange={(event) => setQuery(sanitizeSearchInputLive(event.target.value))}
           onKeyDown={(event) => {
             if (event.key === "Escape" && hasQuery) clearSearch();
           }}

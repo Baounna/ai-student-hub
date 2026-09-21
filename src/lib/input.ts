@@ -32,3 +32,22 @@ export function sanitizeSourceInput(value: unknown, fallback: string, maxLength 
 export function sanitizeSearchQuery(value: unknown, maxLength = 120) {
   return sanitizeTextInput(value, { maxLength, collapseWhitespace: true });
 }
+
+/**
+ * The same cleaning, minus the trim, for a value that is still being typed.
+ *
+ * sanitizeSearchQuery ends in .trim(), and it was wired to the search box's
+ * onChange. A space is trailing whitespace at the instant you type it, so every
+ * space was deleted before it reached the input: "claude ai and openai" arrived
+ * as "claudeaiandopenai" and no multi-word search was possible from the header
+ * at all. Trimming belongs at submit, where the string is finished — and the
+ * server sanitizes the query again when it reads the parameter, so nothing is
+ * lost by leaving it alone here.
+ */
+export function sanitizeSearchInputLive(value: unknown, maxLength = 120) {
+  const raw = typeof value === "string" ? value : "";
+  return raw
+    .replace(CONTROL_CHAR_REGEX, " ")
+    .replace(/ {2,}/g, " ")
+    .slice(0, Math.max(1, maxLength));
+}

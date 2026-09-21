@@ -56,3 +56,43 @@ describe("search", () => {
     expect(searchTerms("  prompt    injection ")).toEqual(["prompt", "injection"]);
   });
 });
+
+
+import { sanitizeSearchInputLive, sanitizeSearchQuery } from "@/lib/input";
+
+// The reported bug: typing "claude ai and openai" into the header search box
+// produced "claudeaiandopenai". sanitizeSearchQuery ends in .trim(), it ran on
+// every keystroke, and a space is trailing whitespace at the instant you type
+// it, so every space was deleted before it reached the input.
+describe("typing a space in the search box", () => {
+  it("keeps a space the moment it is typed", () => {
+    expect(sanitizeSearchInputLive("claude ")).toBe("claude ");
+  });
+
+  it("survives typing a whole phrase one character at a time", () => {
+    const target = "claude ai and openai";
+    let value = "";
+    for (const ch of target) value = sanitizeSearchInputLive(value + ch);
+    expect(value).toBe(target);
+  });
+
+  it("is exactly what the old sanitiser got wrong", () => {
+    expect(sanitizeSearchQuery("claude ")).toBe("claude");
+    let value = "";
+    for (const ch of "claude ai") value = sanitizeSearchQuery(value + ch);
+    expect(value).toBe("claudeai");
+  });
+
+  it("still collapses an accidental double space", () => {
+    expect(sanitizeSearchInputLive("claude  ai")).toBe("claude ai");
+  });
+
+  it("still strips control characters and caps the length", () => {
+    expect(sanitizeSearchInputLive("a" + String.fromCharCode(0) + "b")).toBe("a b");
+    expect(sanitizeSearchInputLive("x".repeat(200)).length).toBe(120);
+  });
+
+  it("still trims once the query is finished", () => {
+    expect(sanitizeSearchQuery(" claude ai ")).toBe("claude ai");
+  });
+});
