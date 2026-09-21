@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-18T11:23:23.025Z",
+  "generatedAt": "2026-09-21T14:30:29.256Z",
   "target": {
     "monthlyRevenueUsd": 10
   },
   "summary": {
-    "postsCount": 18,
+    "postsCount": 24,
     "comparisonsCount": 3,
     "newsCount": 10,
     "autoNewsCount": 240
   },
   "editorial": {
-    "postsCount": 18,
+    "postsCount": 24,
     "newsCount": 10,
     "categories": {
       "total": 8,
@@ -18,18 +18,18 @@
     },
     "tracks": {
       "counts": {
-        "ai": 2,
-        "cs": 14,
+        "ai": 6,
+        "cs": 16,
         "career": 2
       },
-      "total": 18,
-      "aiShare": 0.1111111111111111,
-      "csShare": 0.7777777777777778,
+      "total": 24,
+      "aiShare": 0.25,
+      "csShare": 0.6666666666666666,
       "minCsShare": 0.35,
       "maxAiShare": 0.6
     },
     "citations": {
-      "postsWithReferences": 18,
+      "postsWithReferences": 24,
       "uncitedPostsEstimate": 0,
       "sourcedNewsCount": 9,
       "uncitedNewsEstimate": 1
@@ -40,16 +40,16 @@
     }
   },
   "monetization": {
-    "validAffiliates": 5,
+    "validAffiliates": 0,
     "placementCoverage": {
-      "home": true,
-      "resources": true,
-      "blog": true,
-      "comparison": true
+      "home": false,
+      "resources": false,
+      "blog": false,
+      "comparison": false
     },
-    "hasCheckoutUrl": true,
-    "emailProvider": "convertkit",
-    "hasLeadMagnet": true
+    "hasCheckoutUrl": false,
+    "emailProvider": "none",
+    "hasLeadMagnet": false
   },
   "revenueModel": {
     "assumptions": {
@@ -62,89 +62,89 @@
       "emailOptin": 0.03,
       "emailToProduct": 0.02,
       "infraGates": {
-        "hasAffiliates": true,
-        "hasCheckoutUrl": true,
-        "hasEmailAutomation": true
+        "hasAffiliates": false,
+        "hasCheckoutUrl": false,
+        "hasEmailAutomation": false
       }
     },
     "estimate": {
-      "affiliateRevenue": 9.6,
-      "productRevenue": 18,
-      "emailRevenue": 2.16,
-      "totalRevenue": 29.76,
+      "affiliateRevenue": 0,
+      "productRevenue": 0,
+      "emailRevenue": 0,
+      "totalRevenue": 0,
       "targetUsd": 10,
-      "gapUsd": 0
+      "gapUsd": 10
     }
   },
   "opportunities": [
     {
-      "slug": "20260917-making-global-data-easier-to-explore-e7b9d12d",
-      "source": "Google AI Blog",
+      "slug": "20260921-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimiza-c701b570",
+      "source": "Hugging Face Blog",
       "topic": "AI Systems",
-      "publishedAt": "2026-09-17T20:00:00.000Z",
-      "href": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
-      "sourceTitle": "Making global data easier to explore",
-      "title": "Making global data easier to explore: What It Means for AI/CS Students",
-      "keyword": "how to build google ai blog",
+      "publishedAt": "2026-09-21T13:44:34.000Z",
+      "href": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "sourceTitle": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+      "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem: What It Means for AI/CS Students",
+      "keyword": "how to build hugging face blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20260917-reduce-time-to-hire-for-quality-candidates-with-ai-powered-amazo-48c62604",
-      "source": "AWS ML Blog",
-      "topic": "AI Systems",
-      "publishedAt": "2026-09-17T17:55:20.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/reduce-time-to-hire-for-quality-candidates-with-ai-powered-amazon-connect-talent/",
-      "sourceTitle": "Reduce time-to-hire for quality candidates with AI-powered Amazon Connect Talent",
-      "title": "Reduce time-to-hire for quality candidates with AI-powered Amazon Connect Talent: What It Means for AI/CS Students",
-      "keyword": "how to build aws ml blog",
-      "monetizationAngle": "how to build and ship this update as a student project",
-      "cta": "Resources stack + roadmap"
-    },
-    {
-      "slug": "20260917-selecting-a-vector-store-for-amazon-bedrock-knowledge-bases-95c4dde5",
-      "source": "AWS ML Blog",
+      "slug": "20260921-python-workers-are-now-generally-available-5a3a5fde",
+      "source": "Cloudflare Blog",
       "topic": "Computer Systems",
-      "publishedAt": "2026-09-17T15:53:13.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/selecting-a-vector-store-for-amazon-bedrock-knowledge-bases/",
-      "sourceTitle": "Selecting a vector store for Amazon Bedrock Knowledge Bases",
-      "title": "Selecting a vector store for Amazon Bedrock Knowledge Bases: What It Means for AI/CS Students",
-      "keyword": "how to build aws ml blog",
+      "publishedAt": "2026-09-21T13:00:00.000Z",
+      "href": "https://blog.cloudflare.com/python-workers-ga/",
+      "sourceTitle": "Python Workers are now generally available",
+      "title": "Python Workers are now generally available: What It Means for AI/CS Students",
+      "keyword": "how to build cloudflare blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20260917-a-serverless-data-driven-git-metrics-dashboard-using-amazon-quic-d303871b",
-      "source": "AWS ML Blog",
+      "slug": "20260921-w3c-irc-bots-now-open-source-28d6f244",
+      "source": "W3C Blog",
+      "topic": "Computer Science",
+      "publishedAt": "2026-09-21T11:13:00.000Z",
+      "href": "https://www.w3.org/blog/2026/w3c-irc-bots-now-open-source/",
+      "sourceTitle": "W3C IRC bots now open source",
+      "title": "W3C IRC bots now open source: What It Means for AI/CS Students",
+      "keyword": "computer science workflow for students w3c blog",
+      "monetizationAngle": "CS implementation and tooling decision for student budgets",
+      "cta": "Resources + compare pages"
+    },
+    {
+      "slug": "20260921-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
+      "source": "Hugging Face Blog",
       "topic": "AI Systems",
-      "publishedAt": "2026-09-17T15:42:31.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/a-serverless-data-driven-git-metrics-dashboard-using-amazon-quick-sight/",
-      "sourceTitle": "A serverless, data-driven Git metrics dashboard using Amazon Quick Sight",
-      "title": "A serverless, data-driven Git metrics dashboard using Amazon Quick Sight: What It Means for AI/CS Students",
-      "keyword": "how to build aws ml blog",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "href": "https://huggingface.co/blog/tokenizers-v1",
+      "sourceTitle": "tokenizers v1: encode, decode and scaling, measured",
+      "title": "tokenizers v1: encode, decode and scaling, measured: What It Means for AI/CS Students",
+      "keyword": "how to build hugging face blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20260917-a-shared-agentic-platform-for-wood-mackenzie-on-amazon-bedrock-a-ad319c77",
-      "source": "AWS ML Blog",
+      "slug": "20260921-how-v7-gives-ai-agents-institutional-memory-d1749ba7",
+      "source": "OpenAI News",
       "topic": "AI Systems",
-      "publishedAt": "2026-09-17T15:41:03.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/a-shared-agentic-platform-for-wood-mackenzie-on-amazon-bedrock-agentcore/",
-      "sourceTitle": "A shared agentic platform for Wood Mackenzie, on Amazon Bedrock AgentCore",
-      "title": "A shared agentic platform for Wood Mackenzie, on Amazon Bedrock AgentCore: What It Means for AI/CS Students",
-      "keyword": "how to build aws ml blog",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "href": "https://openai.com/index/v7",
+      "sourceTitle": "How V7 gives AI agents institutional memory",
+      "title": "How V7 gives AI agents institutional memory: What It Means for AI/CS Students",
+      "keyword": "how to build openai news",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20260917-how-mrh-trowe-enabled-secure-self-service-ai-agents-in-financial-f5f1f275",
+      "slug": "20260918-amazon-sagemaker-inference-2026-year-to-date-launches-in-review-b66c7581",
       "source": "AWS ML Blog",
       "topic": "AI Systems",
-      "publishedAt": "2026-09-17T15:36:42.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-mrh-trowe-enabled-secure-self-service-ai-agents-in-financial-services/",
-      "sourceTitle": "How MRH Trowe enabled secure self-service AI agents in financial services",
-      "title": "How MRH Trowe enabled secure self-service AI agents in financial services: What It Means for AI/CS Students",
+      "publishedAt": "2026-09-18T20:52:14.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review/",
+      "sourceTitle": "Amazon SageMaker Inference: 2026 year-to-date launches in review",
+      "title": "Amazon SageMaker Inference: 2026 year-to-date launches in review: What It Means for AI/CS Students",
       "keyword": "how to build aws ml blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
@@ -162,9 +162,54 @@
       "why": "Uncited news weakens trust and violates source integrity standards."
     },
     {
+      "priority": "P1",
+      "action": "Add at least 3 valid affiliate links (name + final URL + placement).",
+      "why": "Without valid links, affiliate revenue path is blocked."
+    },
+    {
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: home.",
+      "why": "Missing placement means lost monetization intent on that traffic surface."
+    },
+    {
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: resources.",
+      "why": "Missing placement means lost monetization intent on that traffic surface."
+    },
+    {
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: blog.",
+      "why": "Missing placement means lost monetization intent on that traffic surface."
+    },
+    {
+      "priority": "P1",
+      "action": "Cover missing affiliate placement: comparison.",
+      "why": "Missing placement means lost monetization intent on that traffic surface."
+    },
+    {
+      "priority": "P1",
+      "action": "Set NEXT_PUBLIC_PRODUCT_CHECKOUT_URL (Gumroad/LemonSqueezy) and test buy CTA.",
+      "why": "Product revenue cannot convert without a live checkout URL."
+    },
+    {
+      "priority": "P1",
+      "action": "Enable ConvertKit and connect newsletter form ID/API key.",
+      "why": "Email capture without automation loses warm leads and repeat conversions."
+    },
+    {
+      "priority": "P1",
+      "action": "Set lead magnet URLs for EN/FR and ensure CTA appears on home/resources/posts.",
+      "why": "Lead magnet is the lowest-friction conversion path for student traffic."
+    },
+    {
       "priority": "P2",
       "action": "Add lead magnet CTA on compare.",
       "why": "Increases opt-ins per 100 visitors."
+    },
+    {
+      "priority": "P2",
+      "action": "Publish 1 comparison-intent post/week from auto-news opportunities.",
+      "why": "High-intent SEO posts improve both affiliate CTR and product click-through."
     },
     {
       "priority": "P3",
@@ -176,8 +221,8 @@
     "perRun": 2,
     "generatedCount": 2,
     "generatedFiles": [
-      "docs/agent/drafts/20260918--20260917-making-global-data-easier-to-explore-e7b9d12d.md",
-      "docs/agent/drafts/20260918--20260917-reduce-time-to-hire-for-quality-candidates-with-ai-powered-amazo-48c62604.md"
+      "docs/agent/drafts/20260921--20260921-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimiza-c701b570.md",
+      "docs/agent/drafts/20260921--20260921-python-workers-are-now-generally-available-5a3a5fde.md"
     ]
   }
 }

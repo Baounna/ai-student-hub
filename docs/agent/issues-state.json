@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-18T11:23:23.441Z",
-  "repository": "",
-  "mode": "dry-run",
+  "generatedAt": "2026-09-21T14:30:29.451Z",
+  "repository": "Baounna/ai-student-hub",
+  "mode": "disabled",
   "maxPerRun": 3,
   "sources": [
     {
@@ -9,18 +9,18 @@
       "label": "Operator",
       "queueFile": "docs/agent/next-actions.json",
       "enabled": true,
-      "queueGeneratedAt": "2026-09-18T11:23:23.025Z",
-      "totalActions": 4,
-      "selectedCount": 2
+      "queueGeneratedAt": "2026-09-21T14:30:29.256Z",
+      "totalActions": 13,
+      "selectedCount": 3
     },
     {
       "sourceId": "design",
       "label": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "enabled": true,
-      "queueGeneratedAt": "2026-09-18T11:23:23.234Z",
-      "totalActions": 4,
-      "selectedCount": 1
+      "enabled": false,
+      "queueGeneratedAt": "",
+      "totalActions": 0,
+      "selectedCount": 0
     }
   ],
   "summary": {
@@ -36,51 +36,51 @@
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-06-24T10:01:22.369Z",
+      "queueGeneratedAt": "2026-09-21T14:30:29.256Z",
       "priority": "P1",
       "action": "Add at least 3 valid affiliate links (name + final URL + placement).",
       "why": "Without valid links, affiliate revenue path is blocked.",
       "file": "",
       "checkId": "",
       "title": "[Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).",
-      "status": "dry-run",
+      "status": "disabled",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-06-24T10:01:22.449Z",
-      "inQueue": false
+      "lastSeenAt": "2026-09-21T14:30:29.451Z",
+      "inQueue": true
     },
     {
       "hash": "a8f39a3cbc2c9fd0",
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-06-24T10:01:22.369Z",
+      "queueGeneratedAt": "2026-09-21T14:30:29.256Z",
       "priority": "P1",
       "action": "Cover missing affiliate placement: blog.",
       "why": "Missing placement means lost monetization intent on that traffic surface.",
       "file": "",
       "checkId": "",
       "title": "[Operator P1] Cover missing affiliate placement: blog.",
-      "status": "dry-run",
+      "status": "disabled",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-06-24T10:01:22.449Z",
-      "inQueue": false
+      "lastSeenAt": "2026-09-21T14:30:29.451Z",
+      "inQueue": true
     },
     {
       "hash": "cb9aea0bb5576d89",
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-06-24T10:01:22.369Z",
+      "queueGeneratedAt": "2026-09-21T14:30:29.256Z",
       "priority": "P1",
       "action": "Cover missing affiliate placement: comparison.",
       "why": "Missing placement means lost monetization intent on that traffic surface.",
       "file": "",
       "checkId": "",
       "title": "[Operator P1] Cover missing affiliate placement: comparison.",
-      "status": "dry-run",
+      "status": "disabled",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-06-24T10:01:22.449Z",
-      "inQueue": false
+      "lastSeenAt": "2026-09-21T14:30:29.451Z",
+      "inQueue": true
     },
     {
       "hash": "df74184273544a1a",
@@ -148,7 +148,7 @@
       "status": "dry-run",
       "createdAt": "2026-09-18T11:23:23.441Z",
       "lastSeenAt": "2026-09-18T11:23:23.441Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "3ddc93b51f373fa2",
@@ -165,7 +165,7 @@
       "status": "dry-run",
       "createdAt": "2026-09-12T13:25:18.069Z",
       "lastSeenAt": "2026-09-18T11:23:23.441Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "284d61272ba9505d",
@@ -182,7 +182,7 @@
       "status": "dry-run",
       "createdAt": "2026-09-12T13:25:18.069Z",
       "lastSeenAt": "2026-09-18T11:23:23.441Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "29e4e1db629195e3",
