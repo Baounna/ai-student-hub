@@ -5,7 +5,7 @@ import { Newsletter } from "@/components/newsletter";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords } from "@/lib/seo";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
@@ -25,6 +25,22 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       fr ? "don education ia" : "donate ai education",
       fr ? "soutenir blog ia etudiant" : "support student ai blog"
     ]),
+    // Tag, category and donate pages were the only routes with no
+    // og:image, so every share of one rendered as a bare link. The same
+    // generated card every other page already uses.
+    openGraph: {
+      title: title,
+      description: description,
+      url: `/${params.lang}/donate`,
+      type: "website",
+      images: [{ url: ogImageUrl(title), width: 1200, height: 630, alt: title }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: title,
+      description: description,
+      images: [ogImageUrl(title)]
+    },
     alternates: localizedAlternates("/donate", params.lang)
   };
 }
@@ -291,7 +307,10 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
           </section>
         </div>
 
-        <aside className="space-y-4 lg:sticky lg:top-32 lg:h-fit">
+        <aside
+          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
+        >
           <EditorialTrust locale={locale} compact />
           <div className="surface rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">

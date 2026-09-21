@@ -142,7 +142,10 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
           )}
         </div>
 
-        <aside className="space-y-4 lg:sticky lg:top-32 lg:h-fit">
+        <aside
+          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
+        >
           <div className="surface rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
               {fr ? "Sources trackées" : "Tracked sources"}

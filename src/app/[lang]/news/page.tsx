@@ -180,7 +180,10 @@ export default async function LocalizedNewsPage(
         </div>
 
         <div className="grid gap-4 xl:grid-cols-[0.92fr,1.45fr]">
-          <aside className="space-y-3">
+          <aside
+            className="space-y-3"
+            aria-label={locale === "fr" ? "News liées" : "Related updates"}
+          >
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[color:var(--primary)]">
               {locale === "fr" ? "News liées" : "Related updates"}
             </p>
@@ -438,7 +441,10 @@ export default async function LocalizedNewsPage(
           )}
         </div>
 
-        <aside className="space-y-4 md:sticky md:top-36 md:h-fit">
+        <aside
+          className="space-y-4 md:sticky md:top-36 md:h-fit"
+          aria-label={locale === "fr" ? "Signaux récents" : "Recent signals"}
+        >
           <div className="surface rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
               {locale === "fr" ? "Signaux récents" : "Recent signals"}

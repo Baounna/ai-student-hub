@@ -1337,7 +1337,7 @@ const basePosts: BlogPost[] = [
       {
         source: "Atlassian",
         label: { en: "What is continuous deployment?", fr: "Qu'est-ce que le déploiement continu ?" },
-        href: "https://www.atlassian.com/continuous-delivery/principles/continuous-deployment"
+        href: "https://www.atlassian.com/continuous-delivery/continuous-deployment"
       },
       {
         source: "Docker",
@@ -1688,9 +1688,9 @@ const basePosts: BlogPost[] = [
         href: "https://papers.nips.cc/paper/2014/hash/5a18e133cbf9f257297f410bb7eca942-Abstract.html"
       },
       {
-        source: "Google AI",
+        source: "Google Cloud",
         label: { en: "Large language models overview", fr: "Vue d'ensemble des grands modèles de langage" },
-        href: "https://ai.google/discover/large-language-models/"
+        href: "https://cloud.google.com/ai/llms"
       },
       {
         source: "Stanford NLP",

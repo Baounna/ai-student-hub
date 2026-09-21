@@ -557,7 +557,15 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
           </div>
         </div>
 
-        <aside className="space-y-4 lg:sticky lg:top-32 lg:h-fit">
+        {/* Named, because an <aside> is a complementary landmark whether or not
+            anyone labelled it. Unnamed, every sidebar on the site announced
+            itself as just "complementary" in a screen reader's landmark list —
+            present, jumpable, and giving no clue what it holds. Same label on
+            every page's rail, so the list reads consistently. */}
+        <aside
+          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
+        >
           <ArticleToc title={locale === "fr" ? "Dans cette page" : "On this page"} items={tocItems} className="mt-0" />
           <EditorialTrust locale={locale} compact />
           <div className="blog-aside-card rounded-2xl p-5">

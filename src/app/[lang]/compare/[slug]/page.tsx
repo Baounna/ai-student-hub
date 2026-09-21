@@ -325,7 +325,10 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
           <Newsletter locale={locale} source="tools_page_detail" />
         </div>
 
-        <aside className="space-y-4 lg:sticky lg:top-32 lg:h-fit">
+        <aside
+          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
+        >
           <ArticleToc title={fr ? "Dans cette page" : "On this page"} items={tocItems} className="mt-0" />
           <EditorialTrust locale={locale} compact />
           <div className="blog-aside-card rounded-2xl p-5">

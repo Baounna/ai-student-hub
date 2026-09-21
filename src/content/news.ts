@@ -707,6 +707,20 @@ export function getNewsTrackCounts() {
   );
 }
 
+/**
+ * News briefs carry tags and render them as links to /{lang}/blog/tag/<tag>,
+ * but the tag page only ever looked at blog posts. Twelve tags exist on news
+ * and nowhere else, so twenty-four pages — twelve tags across two locales —
+ * were live links to a hard 404. These two let the tag page see them.
+ */
+export function getAllNewsTags() {
+  return Array.from(new Set(newsBriefs.flatMap((brief) => brief.tags)));
+}
+
+export function getNewsByTag(tagSlug: string, locale: Locale) {
+  return getLocalizedNews(locale).filter((brief) => brief.tags.some((tag) => slugifyTopic(tag) === tagSlug));
+}
+
 export function getNewsByTopic(topic: string, locale: Locale) {
   return getLocalizedNews(locale).filter((brief) => slugifyTopic(brief.topic) === slugifyTopic(topic));
 }

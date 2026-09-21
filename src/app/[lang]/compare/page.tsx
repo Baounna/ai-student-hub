@@ -553,7 +553,10 @@ export default async function LocalizedCompareIndexPage(
           </section>
         </div>
 
-        <aside className="space-y-4 lg:sticky lg:top-32 lg:h-fit">
+        <aside
+          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
+        >
           <EditorialTrust locale={locale} compact />
           <div className="blog-aside-card rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">

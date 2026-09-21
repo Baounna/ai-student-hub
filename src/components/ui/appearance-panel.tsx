@@ -19,6 +19,9 @@ type AppearancePanelProps = {
   locale: Locale;
 };
 
+// Selected state is a border and a background tint, which a screen reader
+// cannot see and a reader who cannot distinguish the two colours cannot either.
+// The buttons below carry aria-pressed so the state is in the accessible name.
 function optionButtonClass(active: boolean) {
   return `rounded-full border px-3 py-1 text-xs font-medium ${
     active
@@ -116,6 +119,7 @@ export function AppearancePanel({ locale }: AppearancePanelProps) {
                 key={size}
                 type="button"
                 disabled={!mounted}
+                aria-pressed={textSize === size}
                 onClick={() => applyTextSize(size)}
                 className={optionButtonClass(textSize === size)}
               >
@@ -133,6 +137,7 @@ export function AppearancePanel({ locale }: AppearancePanelProps) {
                 key={width}
                 type="button"
                 disabled={!mounted}
+                aria-pressed={contentWidth === width}
                 onClick={() => applyContentWidth(width)}
                 className={optionButtonClass(contentWidth === width)}
               >
@@ -150,6 +155,7 @@ export function AppearancePanel({ locale }: AppearancePanelProps) {
                 key={mode}
                 type="button"
                 disabled={!mounted}
+                aria-pressed={theme === mode}
                 onClick={() => applyThemePreference(mode)}
                 className={optionButtonClass(theme === mode)}
               >

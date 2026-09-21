@@ -48,7 +48,7 @@ const FEED_SOURCES: FeedSource[] = [
     allowedRoots: ["openai.com"],
     pathAllow: [/^\/index\/[a-z0-9-]/i, /^\/news\/[a-z0-9-]/i]
   },
-  { name: "DeepMind Blog", href: "https://deepmind.google/discover/blog/rss.xml" },
+  { name: "DeepMind Blog", href: "https://deepmind.google/blog/rss.xml" },
   { name: "Hugging Face Blog", href: "https://huggingface.co/blog/feed.xml" },
   { name: "Google AI Blog", href: "https://blog.google/technology/ai/rss/" },
   { name: "NVIDIA Developer Blog", href: "https://developer.nvidia.com/blog/feed/" },
@@ -56,11 +56,11 @@ const FEED_SOURCES: FeedSource[] = [
   { name: "Cloudflare Blog", href: "https://blog.cloudflare.com/rss/" },
   { name: "Kubernetes Blog", href: "https://kubernetes.io/feed.xml" },
   { name: "Docker Blog", href: "https://www.docker.com/blog/feed/" },
-  { name: "Python Insider", href: "https://feeds.feedburner.com/PythonInsider" },
+  { name: "Python Insider", href: "https://blog.python.org/feeds/posts/default?alt=rss" },
   { name: "Node.js Blog", href: "https://nodejs.org/en/feed/blog.xml" },
   { name: "Go Blog", href: "https://go.dev/blog/feed.atom" },
   { name: "Rust Blog", href: "https://blog.rust-lang.org/feed.xml" },
-  { name: "PostgreSQL News", href: "https://www.postgresql.org/list/pgsql-announce.rss" },
+  { name: "PostgreSQL News", href: "https://www.postgresql.org/news.rss" },
   { name: "V8 Blog", href: "https://v8.dev/blog.atom" }
 ];
 

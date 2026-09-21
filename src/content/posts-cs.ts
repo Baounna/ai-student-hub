@@ -667,7 +667,7 @@ export const csExpansionPosts: BlogPost[] = [
       {
         source: "OWASP",
         label: { en: "OWASP ASVS", fr: "OWASP ASVS" },
-        href: "https://owasp.org/www-project-application-security-verification-standard/"
+        href: "https://owasp.org/ASVS/"
       },
       {
         source: "OWASP",

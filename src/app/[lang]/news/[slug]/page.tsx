@@ -468,7 +468,10 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
           </div>
         </div>
 
-        <aside className="space-y-4 lg:sticky lg:top-32 lg:h-fit">
+        <aside
+          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
+        >
           <ArticleToc title={locale === "fr" ? "Dans cette page" : "On this page"} items={tocItems} className="mt-0" />
           <EditorialTrust locale={locale} compact />
           <div className="surface rounded-2xl p-5">

@@ -7,7 +7,7 @@ import { getAllCategories, getCategoriesByTrack, getCategoryTrack, getPostsByCat
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords, coverImageUrl } from "@/lib/seo";
+import { getSeoKeywords, coverImageUrl, ogImageUrl } from "@/lib/seo";
 import { formatReadTime } from "@/lib/read-time";
 
 export function generateStaticParams() {
@@ -36,16 +36,35 @@ export async function generateMetadata(
 
   const categoryName = displayCategory(params.category);
 
+  const categoryTitle = params.lang === "fr" ? `Articles ${categoryName}` : `${categoryName} articles`;
+  const categoryDescription =
+    params.lang === "fr"
+      ? `Articles de la catégorie ${categoryName} sur AI and Cybersecurity News.`
+      : `${categoryName} category articles on AI and Cybersecurity News.`;
+
   return {
-    title: params.lang === "fr" ? `Articles ${categoryName}` : `${categoryName} articles`,
-    description:
-      params.lang === "fr"
-        ? `Articles de la catégorie ${categoryName} sur AI and Cybersecurity News.`
-        : `${categoryName} category articles on AI and Cybersecurity News.`,
+    title: categoryTitle,
+    description: categoryDescription,
     keywords: getSeoKeywords(params.lang, "blog", [
       params.lang === "fr" ? `categorie ${categoryName} ia` : `${categoryName} ai category`,
       categoryName
     ]),
+    // Tag, category and donate pages were the only routes with no
+    // og:image, so every share of one rendered as a bare link. The same
+    // generated card every other page already uses.
+    openGraph: {
+      title: categoryTitle,
+      description: categoryDescription,
+      url: `/${params.lang}/blog/category/${params.category}`,
+      type: "website",
+      images: [{ url: ogImageUrl(categoryTitle), width: 1200, height: 630, alt: categoryTitle }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: categoryTitle,
+      description: categoryDescription,
+      images: [ogImageUrl(categoryTitle)]
+    },
     alternates: localizedAlternates(`/blog/category/${params.category}`, params.lang)
   };
 }
