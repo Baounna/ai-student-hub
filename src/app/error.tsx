@@ -1,8 +1,18 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 
-export default function Error({ reset }: { error: Error & { digest?: string }; reset: () => void }) {
+export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
+  // The error arrived here and went nowhere: it was destructured away unused,
+  // so a failure that happened during a client render — which never touches
+  // the server and so is never in a server log — left no record at all. One
+  // line, and it matches what [lang]/error.tsx does, so both boundaries report
+  // the same way rather than each having its own idea.
+  useEffect(() => {
+    console.error(error);
+  }, [error]);
+
   return (
     <main className="mx-auto flex min-h-[70vh] max-w-3xl flex-col items-center justify-center px-6 text-center">
       <p className="do-kicker">Application Error</p>
