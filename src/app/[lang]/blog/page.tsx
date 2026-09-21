@@ -17,6 +17,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { sanitizeSearchQuery } from "@/lib/input";
+import { matchesAllTerms, searchTerms } from "@/lib/search";
 import { formatReadTime } from "@/lib/read-time";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -87,9 +88,13 @@ export default async function LocalizedBlogPage(
     parsedTrack === "ai" || parsedTrack === "cs" || parsedTrack === "career" ? parsedTrack : "all";
   const allPosts = getLocalizedPosts(locale);
   const trackScopedPosts = trackFilter === "all" ? allPosts : allPosts.filter((post) => getPostTrack(post) === trackFilter);
-  const posts = query
+  // Search the body too. Three posts discuss Claude and not one says so in a
+  // title, an excerpt or a tag, so searching for it returned nothing while the
+  // answer sat in the article.
+  const terms = searchTerms(query);
+  const posts = terms.length
     ? trackScopedPosts.filter((post) =>
-        [post.title, post.excerpt, post.category, ...post.tags].join(" ").toLowerCase().includes(query)
+        matchesAllTerms(terms, [post.title, post.excerpt, post.category, ...post.tags, ...post.content])
       )
     : trackScopedPosts;
   const featuredPost = posts[0];
@@ -297,6 +302,30 @@ export default async function LocalizedBlogPage(
           </div>
         </div>
       </div>
+
+      {/* A search that matched nothing used to render nothing: featuredPost was
+          undefined, the stream was empty, and the page simply had a gap where
+          the results belonged. A reader cannot tell that from a broken page. */}
+      {terms.length && !posts.length ? (
+        <section className="mt-8 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
+          <h2 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
+            {locale === "fr" ? `Aucun article pour « ${queryRaw} »` : `No articles match “${queryRaw}”`}
+          </h2>
+          <p className="mt-2 text-sm text-[color:var(--text)]">
+            {locale === "fr"
+              ? "La recherche couvre les titres, les resumes, les categories, les tags et le texte des articles."
+              : "The search covers titles, summaries, categories, tags and the text of the articles themselves."}
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Link href={`/${locale}/blog`} className="btn-secondary text-sm">
+              {locale === "fr" ? "Voir tous les articles" : "See every article"}
+            </Link>
+            <Link href={`/${locale}/stages`} className="btn-secondary text-sm">
+              {locale === "fr" ? "Voir les stages ouverts" : "See open internships"}
+            </Link>
+          </div>
+        </section>
+      ) : null}
 
       {featuredPost && (
         <article className="blog-stream-card card-hover mt-8 overflow-hidden rounded-3xl p-6 md:p-8">

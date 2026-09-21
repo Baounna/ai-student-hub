@@ -12,6 +12,7 @@ import { getLocalizedComparisons, recommendedTools, studentStudyTools } from "@/
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { sanitizeSearchQuery } from "@/lib/input";
+import { matchesAllTerms, searchTerms } from "@/lib/search";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 import { jsonLd } from "@/lib/json-ld";
@@ -97,12 +98,19 @@ export default async function LocalizedCompareIndexPage(
   const autoToolsUpdatedAt = getAutoToolsUpdatedAt();
   const studyTools = studentStudyTools.filter((tool) => isSafeHttpUrl(tool.href));
   const audienceSegments = fr ? ["Équipes", "Fondateurs", "Chercheurs", "Développeurs"] : ["Teams", "Founders", "Researchers", "Developers"];
-  const filteredStudyTools = toolQuery
+  // Same three faults as the blog search had: one contiguous substring, no
+  // accent folding, and "rag" matching "storage".
+  const toolTerms = searchTerms(toolQuery);
+  const filteredStudyTools = toolTerms.length
     ? studyTools.filter((tool) =>
-        [tool.name, tool.category[locale], tool.summary[locale], tool.bestFor[locale], tool.source, ...tool.keywords]
-          .join(" ")
-          .toLowerCase()
-          .includes(toolQuery)
+        matchesAllTerms(toolTerms, [
+          tool.name,
+          tool.category[locale],
+          tool.summary[locale],
+          tool.bestFor[locale],
+          tool.source,
+          ...tool.keywords
+        ])
       )
     : studyTools;
   const totalScoredOptions = availableComparisons.reduce((count, comparison) => count + comparison.tools.length, 0);
