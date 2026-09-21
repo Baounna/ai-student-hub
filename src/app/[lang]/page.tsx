@@ -403,7 +403,6 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       <section className="mt-4 grid gap-4 md:grid-cols-3">
         {quickStartCards.map((card) => (
           <article key={card.title} className="wiki-panel rounded-md p-4">
-            <p className="do-kicker">{locale === "fr" ? "Start here" : "Start here"}</p>
             <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)] md:text-xl">{card.title}</h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">{card.body}</p>
             <Link href={card.href} className="do-link mt-3 inline-block text-sm">
@@ -442,39 +441,44 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
         ))}
       </section>
 
-      <section className="mt-4 grid gap-4 md:grid-cols-3">
-        <article className="wiki-panel rounded-md p-4">
-                    <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">
-            {locale === "fr" ? "Méthodologie transparente" : "Transparent methodology"}
-          </h2>
-          <p className="mt-2 text-sm text-[color:var(--text)]">
-            {locale === "fr"
-              ? "Chaque article suit la même structure: signal, impact pratique, action concrète, références."
-              : "Each article follows the same structure: signal, practical impact, concrete action, and references."}
-          </p>
-        </article>
-        <article className="wiki-panel rounded-md p-4">
-          <p className="do-kicker">{locale === "fr" ? "Sources" : "Sources"}</p>
-          <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">
-            {locale === "fr" ? "Références officielles" : "Official references"}
-          </h2>
-          <p className="mt-2 text-sm text-[color:var(--text)]">
-            {locale === "fr"
-              ? "Nous utilisons prioritairement des sources institutionnelles, docs officielles, et pages prix éditeur."
-              : "We prioritize institutional sources, official documentation, and first-party pricing pages."}
-          </p>
-        </article>
-        <article className="wiki-panel rounded-md p-4">
-          <p className="do-kicker">{locale === "fr" ? "Outcome" : "Outcome"}</p>
-          <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">
-            {locale === "fr" ? "Orienté résultats" : "Outcome-first"}
-          </h2>
-          <p className="mt-2 text-sm text-[color:var(--text)]">
-            {locale === "fr"
-              ? "Le contenu vise portfolio déployé, candidatures plus fortes, et exécution hebdomadaire constante."
-              : "Content is optimized for shipped portfolio projects, stronger applications, and weekly execution consistency."}
-          </p>
-        </article>
+      {/* These three were bordered cards carrying the same weight as the
+          navigation cards above them, so the page showed six identical boxes
+          and left the reader to work out which were routes and which were
+          claims about how the site works. Claims are prose: one row on the
+          page background, no border competing for attention. */}
+      <section className="mt-6 border-t border-[color:var(--border)] pt-5">
+        <dl className="grid gap-x-8 gap-y-4 text-sm md:grid-cols-3">
+          <div>
+            <dt className="font-semibold text-[color:var(--text-strong)]">
+              {locale === "fr" ? "Méthodologie transparente" : "Transparent methodology"}
+            </dt>
+            <dd className="mt-1 text-[color:var(--muted)]">
+              {locale === "fr"
+                ? "Chaque article suit la même structure: signal, impact pratique, action concrète, références."
+                : "Each article follows the same structure: signal, practical impact, concrete action, and references."}
+            </dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-[color:var(--text-strong)]">
+              {locale === "fr" ? "Références officielles" : "Official references"}
+            </dt>
+            <dd className="mt-1 text-[color:var(--muted)]">
+              {locale === "fr"
+                ? "Nous utilisons prioritairement des sources institutionnelles, docs officielles, et pages prix éditeur."
+                : "We prioritize institutional sources, official documentation, and first-party pricing pages."}
+            </dd>
+          </div>
+          <div>
+            <dt className="font-semibold text-[color:var(--text-strong)]">
+              {locale === "fr" ? "Orienté résultats" : "Outcome-first"}
+            </dt>
+            <dd className="mt-1 text-[color:var(--muted)]">
+              {locale === "fr"
+                ? "Le contenu vise portfolio déployé, candidatures plus fortes, et exécution hebdomadaire constante."
+                : "Content is optimized for shipped portfolio projects, stronger applications, and weekly execution consistency."}
+            </dd>
+          </div>
+        </dl>
       </section>
 
       <section className="mt-4 grid gap-4 md:grid-cols-2">
