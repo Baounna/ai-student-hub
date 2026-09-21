@@ -34,7 +34,7 @@ const COPY = {
     // list was 96 identical "View the offer" entries with nothing to tell them
     // apart. The visible text stays short; the accessible name carries the
     // role and the company that the link actually leads to.
-    applyLabel: (role: string, company: string) => `View the offer: ${role} at ${company}`,
+    applyLabel: (role: string, company: string, city: string) => `View the offer: ${role} at ${company}, ${city}`,
     source: "via",
     updated: "Last checked",
     staleTitle: "This list has not been checked recently",
@@ -53,7 +53,7 @@ const COPY = {
     rolling: "Ouverte jusqu'à pourvoi - aucune date limite annoncée",
     checked: "lien vérifié le",
     apply: "Voir l'offre",
-    applyLabel: (role: string, company: string) => `Voir l'offre : ${role} chez ${company}`,
+    applyLabel: (role: string, company: string, city: string) => `Voir l'offre : ${role} chez ${company}, ${city}`,
     source: "via",
     updated: "Dernière vérification",
     staleTitle: "Cette liste n'a pas été vérifiée récemment",
@@ -227,7 +227,7 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
                       href={stage.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={copy.applyLabel(stage.role, stage.company)}
+                      aria-label={copy.applyLabel(stage.role, stage.company, stage.city)}
                       className="btn-secondary px-3 py-1.5 text-xs"
                     >
                       {copy.apply}
