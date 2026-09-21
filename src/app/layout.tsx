@@ -13,24 +13,28 @@ import "./globals.css";
 // Self-hosted by next/font so every visitor gets the same typography.
 // Previously the CSS named IBM Plex Sans and Sora but nothing loaded them,
 // so each OS silently substituted its own fallback.
+// Newsreader and Public Sans are variable fonts. Naming four static weights
+// each shipped four separate files per unicode range; omitting weight ships one
+// file that covers the whole axis, so the browser stops fetching a new download
+// every time a heading changes weight. IBM Plex Mono has no variable cut on
+// Google Fonts, so it stays static — trimmed to the one weight anything asks
+// for, since the extra two were downloads nothing on the site could render.
 const display = Newsreader({
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700"],
   variable: "--font-display"
 });
 
 const body = Public_Sans({
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700"],
   variable: "--font-body"
 });
 
 const mono = IBM_Plex_Mono({
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600"],
+  weight: ["400"],
   variable: "--font-meta"
 });
 
