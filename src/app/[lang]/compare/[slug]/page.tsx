@@ -10,29 +10,39 @@ import { Newsletter } from "@/components/newsletter";
 import { ReadingProgress } from "@/components/reading-progress";
 import { StickyToolsCta } from "@/components/sticky-tools-cta";
 import { TrackableAnchor } from "@/components/trackable-anchor";
-import { comparisons, getComparisonBySlug } from "@/content/posts";
+import { comparisons, getLocalizedComparison } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 
-function getEvidenceSource(toolName: string, locale: Locale) {
-  const sources: Record<string, { label: string; href: string }> = {
-    DigitalOcean: {
-      label: locale === "fr" ? "Documentation + prix DigitalOcean" : "DigitalOcean docs + pricing",
-      href: "https://www.digitalocean.com/pricing"
-    },
-    Render: {
-      label: locale === "fr" ? "Documentation + prix Render" : "Render docs + pricing",
-      href: "https://render.com/pricing"
-    },
-    Railway: {
-      label: locale === "fr" ? "Documentation + prix Railway" : "Railway docs + pricing",
-      href: "https://railway.com/pricing"
-    }
-  };
+/**
+ * Only three of the nine tools had an entry here, so the other six fell through
+ * to the affiliate URL — and that URL is not always the tool's own site. The
+ * "GitHub Actions + Docker" row points at coursera.org, "Node.js + NestJS" at
+ * render.com and "Go + Fiber" at railway.com. With the fallback labelled
+ * "Official site", the page was telling a reader that Coursera is the official
+ * home of GitHub Actions.
+ *
+ * Every tool now has its real documentation or pricing page, each one checked
+ * for a 200 before being written down.
+ */
+const EVIDENCE_SOURCES: Record<string, { en: string; fr: string; href: string }> = {
+  DigitalOcean: { en: "DigitalOcean docs + pricing", fr: "Documentation + prix DigitalOcean", href: "https://www.digitalocean.com/pricing" },
+  Render: { en: "Render docs + pricing", fr: "Documentation + prix Render", href: "https://render.com/pricing" },
+  Railway: { en: "Railway docs + pricing", fr: "Documentation + prix Railway", href: "https://railway.com/pricing" },
+  FastAPI: { en: "FastAPI documentation", fr: "Documentation FastAPI", href: "https://fastapi.tiangolo.com/" },
+  "Node.js + NestJS": { en: "NestJS documentation", fr: "Documentation NestJS", href: "https://docs.nestjs.com/" },
+  "Go + Fiber": { en: "Fiber documentation", fr: "Documentation Fiber", href: "https://docs.gofiber.io/" },
+  "GitHub Actions + Docker": { en: "GitHub Actions documentation", fr: "Documentation GitHub Actions", href: "https://docs.github.com/en/actions" },
+  "Render Blueprints": { en: "Render infrastructure-as-code docs", fr: "Documentation infrastructure-as-code Render", href: "https://render.com/docs/infrastructure-as-code" },
+  "Railway Templates": { en: "Railway templates documentation", fr: "Documentation templates Railway", href: "https://docs.railway.com/reference/templates" }
+};
 
-  return sources[toolName] || null;
+function getEvidenceSource(toolName: string, locale: Locale) {
+  const source = EVIDENCE_SOURCES[toolName];
+  if (!source) return null;
+  return { label: locale === "fr" ? source.fr : source.en, href: source.href };
 }
 
 export function generateStaticParams() {
@@ -43,7 +53,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
   const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
-  const comparison = getComparisonBySlug(params.slug);
+  const comparison = getLocalizedComparison(params.slug, params.lang);
 
   if (!comparison) {
     return { title: "Tools Guide Not Found" };
@@ -87,7 +97,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
 
   const locale: Locale = params.lang;
   const fr = locale === "fr";
-  const comparison = getComparisonBySlug(params.slug);
+  const comparison = getLocalizedComparison(params.slug, locale);
 
   if (!comparison) notFound();
 
@@ -281,42 +291,19 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
             </p>
             <ol className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
               {safeTools.map((tool, index) => {
+                // Every tool has a real source now, so nothing falls through
+                // to an affiliate URL wearing the word "official".
                 const evidence = getEvidenceSource(tool.name, locale);
-                const evidenceHref = evidence?.href || tool.affiliateHref;
-                const evidenceIsAffiliate = !evidence;
-                const evidenceLabel =
-                  evidence?.label || (fr ? `Page officielle ${tool.name}` : `${tool.name} official page`);
 
                 return (
                   <li key={`${tool.name}-${index}`} className="leading-7">
                     <span className="mr-2 text-[color:var(--muted)]">[{index + 1}]</span>
-                    {evidenceIsAffiliate ? (
-                      <TrackableAnchor
-                        href={evidenceHref}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        event="affiliate_click"
-                        meta={{ page: "comparison_references", tool: tool.name, slug: comparison.slug, locale, slot: "evidence" }}
-                        className="do-link"
-                      >
-                        {evidenceLabel}
-                      </TrackableAnchor>
-                    ) : (
-                      <a href={evidenceHref} target="_blank" rel="noopener noreferrer nofollow" className="do-link">
-                        {evidenceLabel}
+                    <span className="mr-2 font-medium text-[color:var(--text-strong)]">{tool.name}</span>
+                    {evidence ? (
+                      <a href={evidence.href} target="_blank" rel="noopener noreferrer nofollow" className="do-link">
+                        {evidence.label}
                       </a>
-                    )}
-                    <span className="mx-2 text-[color:var(--muted)]">•</span>
-                    <TrackableAnchor
-                      href={tool.affiliateHref}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      event="affiliate_click"
-                      meta={{ page: "comparison_references", tool: tool.name, slug: comparison.slug, locale }}
-                      className="do-link"
-                    >
-                      {fr ? "Site officiel" : "Official site"}
-                    </TrackableAnchor>
+                    ) : null}
                   </li>
                 );
               })}

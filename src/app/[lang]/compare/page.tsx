@@ -8,7 +8,7 @@ import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { ToolLogo } from "@/components/ui/tool-logo";
 import { getAutoTools, getAutoToolsUpdatedAt } from "@/content/auto-tools";
-import { comparisons, recommendedTools, studentStudyTools } from "@/content/posts";
+import { getLocalizedComparisons, recommendedTools, studentStudyTools } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { sanitizeSearchQuery } from "@/lib/input";
@@ -81,7 +81,7 @@ export default async function LocalizedCompareIndexPage(
   const toolQueryRaw = sanitizeSearchQuery(typeof toolParam === "string" ? toolParam : "", 80);
   const toolQuery = toolQueryRaw.toLowerCase();
 
-  const availableComparisons = comparisons
+  const availableComparisons = getLocalizedComparisons(locale)
     .map((comparison) => ({
       ...comparison,
       tools: comparison.tools.filter((tool) => isSafeHttpUrl(tool.affiliateHref))

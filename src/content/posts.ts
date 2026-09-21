@@ -78,21 +78,35 @@ export type StudentStudyTool = {
   source: string;
 };
 
+// price lives inside the per-locale block with bestFor and summary because
+// every value in this array is prose ("Free tier + usage-based", "Low-cost
+// app hosting"), not a figure. A bare "$9/mo" would be the same string in
+// both locales and can simply be repeated; prose cannot.
+export type ComparisonTool = {
+  name: string;
+  affiliateHref: string;
+  locales: Record<Locale, { price: string; bestFor: string; summary: string }>;
+};
+
 export type ComparisonPage = {
   slug: string;
-  title: string;
-  /** <title> tag override. `title` stays the H1 and the OG image text. */
-  seoTitle?: string;
   intentKeyword: string;
-  intro: string;
-  tools: Array<{
-    name: string;
-    price: string;
-    bestFor: string;
-    summary: string;
-    affiliateHref: string;
-  }>;
+  tools: ComparisonTool[];
+  locales: Record<
+    Locale,
+    {
+      title: string;
+      /** <title> tag override. `title` stays the H1 and the OG image text. */
+      seoTitle?: string;
+      intro: string;
+    }
+  >;
 };
+
+export type LocalizedComparisonTool = Omit<ComparisonTool, "locales"> & ComparisonTool["locales"][Locale];
+
+export type LocalizedComparisonPage = Omit<ComparisonPage, "locales" | "tools"> &
+  ComparisonPage["locales"][Locale] & { tools: LocalizedComparisonTool[] };
 
 const digitalOceanRef = process.env.NEXT_PUBLIC_DIGITALOCEAN_REF?.trim();
 const digitalOceanBase = digitalOceanRef
@@ -455,98 +469,206 @@ export const studentStudyTools: StudentStudyTool[] = fallbackStudentStudyTools.f
 export const comparisons: ComparisonPage[] = [
   {
     slug: "best-cloud-platform-for-student-ai-projects",
-    title: "Best Cloud Platform for Student AI Projects (2026 Comparison)",
     intentKeyword: "best cloud platform for student ai projects",
-    intro:
-      "This comparison helps AI students choose a practical cloud stack based on budget, deployment speed, and portfolio quality signal.",
+    locales: {
+      en: {
+        title: "Best Cloud Platform for Student AI Projects (2026 Comparison)",
+        intro:
+          "This comparison helps AI students choose a practical cloud stack based on budget, deployment speed, and portfolio quality signal."
+      },
+      fr: {
+        title: "Meilleure plateforme cloud pour les projets IA étudiants (comparatif 2026)",
+        intro:
+          "Ce comparatif aide les étudiants en IA à choisir une stack cloud exploitable, selon le budget, la vitesse de déploiement et le signal qualité envoyé dans un portfolio."
+      }
+    },
     tools: [
       {
         name: "DigitalOcean",
-        price: "Free tier + usage-based",
-        bestFor: "Beginner to intermediate students",
-        summary: "Fast setup, simple UI, and strong documentation for first shipped projects.",
-        affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_a")
+        affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_a"),
+        locales: {
+          en: {
+            price: "Free tier + usage-based",
+            bestFor: "Beginner to intermediate students",
+            summary: "Fast setup, simple UI, and strong documentation for first shipped projects."
+          },
+          fr: {
+            price: "Offre gratuite + facturation à l'usage",
+            bestFor: "Étudiants débutants à intermédiaires",
+            summary: "Mise en route rapide, interface simple et documentation solide pour vos premiers projets mis en ligne."
+          }
+        }
       },
       {
         name: "Render",
-        price: "Credit-based starter plan",
-        bestFor: "Students needing backend flexibility",
-        summary: "More control for API-heavy projects and scaling custom workflows.",
         affiliateHref:
-          "https://render.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_b"
+          "https://render.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_b",
+        locales: {
+          en: {
+            price: "Credit-based starter plan",
+            bestFor: "Students needing backend flexibility",
+            summary: "More control for API-heavy projects and scaling custom workflows."
+          },
+          fr: {
+            price: "Formule de démarrage à crédits",
+            bestFor: "Étudiants qui ont besoin de souplesse côté backend",
+            summary: "Plus de contrôle pour les projets riches en API et pour la montée en charge de workflows sur mesure."
+          }
+        }
       },
       {
         name: "Railway",
-        price: "Low-cost app hosting",
-        bestFor: "Portfolio demos and prototypes",
-        summary: "Clean developer experience and predictable costs for student use.",
         affiliateHref:
-          "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_c"
+          "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_c",
+        locales: {
+          en: {
+            price: "Low-cost app hosting",
+            bestFor: "Portfolio demos and prototypes",
+            summary: "Clean developer experience and predictable costs for student use."
+          },
+          fr: {
+            price: "Hébergement d'applications à faible coût",
+            bestFor: "Démos de portfolio et prototypes",
+            summary: "Expérience développeur soignée et coûts prévisibles pour un usage étudiant."
+          }
+        }
       }
     ]
   },
   {
     slug: "best-backend-stack-for-ml-student-apps",
-    title: "Best Backend Stack for ML Student Apps (FastAPI vs Node vs Go)",
     intentKeyword: "best backend stack for ml student apps",
-    intro:
-      "Choose a backend stack based on API development speed, deployment reliability, and student-friendly maintenance.",
+    locales: {
+      en: {
+        title: "Best Backend Stack for ML Student Apps (FastAPI vs Node vs Go)",
+        intro:
+          "Choose a backend stack based on API development speed, deployment reliability, and student-friendly maintenance."
+      },
+      fr: {
+        title: "Meilleure stack backend pour les applications ML étudiantes (FastAPI vs Node vs Go)",
+        intro:
+          "Choisissez une stack backend selon la vitesse de développement des API, la fiabilité des déploiements et la facilité de maintenance pour un étudiant."
+      }
+    },
     tools: [
       {
         name: "FastAPI",
-        price: "Open-source + hosting cost",
-        bestFor: "Python-first AI/ML teams",
-        summary: "Typed request validation and automatic OpenAPI docs for fast shipping.",
-        affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_fastapi")
+        affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_fastapi"),
+        locales: {
+          en: {
+            price: "Open-source + hosting cost",
+            bestFor: "Python-first AI/ML teams",
+            summary: "Typed request validation and automatic OpenAPI docs for fast shipping."
+          },
+          fr: {
+            price: "Open source + coût d'hébergement",
+            bestFor: "Équipes IA/ML qui travaillent d'abord en Python",
+            summary: "Validation typée des requêtes et documentation OpenAPI automatique pour livrer vite."
+          }
+        }
       },
       {
         name: "Node.js + NestJS",
-        price: "Open-source + hosting cost",
-        bestFor: "Fullstack JS teams",
-        summary: "Strong modular architecture and large ecosystem for production APIs.",
         affiliateHref:
-          "https://render.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_node"
+          "https://nestjs.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_node",
+        locales: {
+          en: {
+            price: "Open-source + hosting cost",
+            bestFor: "Fullstack JS teams",
+            summary: "Strong modular architecture and large ecosystem for production APIs."
+          },
+          fr: {
+            price: "Open source + coût d'hébergement",
+            bestFor: "Équipes fullstack JS",
+            summary: "Architecture modulaire solide et large écosystème pour des API en production."
+          }
+        }
       },
       {
         name: "Go + Fiber",
-        price: "Open-source + hosting cost",
-        bestFor: "Performance-focused services",
-        summary: "Low memory footprint and fast response times for API-heavy workloads.",
         affiliateHref:
-          "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_go"
+          "https://gofiber.io/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_go",
+        locales: {
+          en: {
+            price: "Open-source + hosting cost",
+            bestFor: "Performance-focused services",
+            summary: "Low memory footprint and fast response times for API-heavy workloads."
+          },
+          fr: {
+            price: "Open source + coût d'hébergement",
+            bestFor: "Services orientés performance",
+            summary: "Faible empreinte mémoire et temps de réponse courts pour les charges riches en API."
+          }
+        }
       }
     ]
   },
   {
     slug: "best-devops-workflow-for-student-engineers",
-    title: "Best DevOps Workflow for Student Engineers (CI/CD + Monitoring)",
     intentKeyword: "best devops workflow for student engineers",
-    intro:
-      "Compare practical DevOps workflows by release speed, rollback safety, and observability maturity for student teams.",
+    locales: {
+      en: {
+        title: "Best DevOps Workflow for Student Engineers (CI/CD + Monitoring)",
+        intro:
+          "Compare practical DevOps workflows by release speed, rollback safety, and observability maturity for student teams."
+      },
+      fr: {
+        title: "Meilleur workflow DevOps pour les étudiants ingénieurs (CI/CD + monitoring)",
+        intro:
+          "Comparez des workflows DevOps concrets selon la vitesse de mise en production, la sûreté des rollbacks et la maturité de l'observabilité, pour des équipes étudiantes."
+      }
+    },
     tools: [
       {
         name: "GitHub Actions + Docker",
-        price: "Free tier + hosting cost",
-        bestFor: "Most student teams",
-        summary: "Fast setup with broad documentation and simple CI/CD workflows.",
         affiliateHref:
-          "https://www.coursera.org/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_actions"
+          "https://github.com/features/actions?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_actions",
+        locales: {
+          en: {
+            price: "Free tier + hosting cost",
+            bestFor: "Most student teams",
+            summary: "Fast setup with broad documentation and simple CI/CD workflows."
+          },
+          fr: {
+            price: "Offre gratuite + coût d'hébergement",
+            bestFor: "La plupart des équipes étudiantes",
+            summary: "Mise en route rapide, documentation abondante et workflows CI/CD simples."
+          }
+        }
       },
       {
         name: "Render Blueprints",
-        price: "Usage-based",
-        bestFor: "Managed platform deployment",
-        summary: "Infrastructure templates with low ops overhead for student projects.",
         affiliateHref:
-          "https://render.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_render"
+          "https://render.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_render",
+        locales: {
+          en: {
+            price: "Usage-based",
+            bestFor: "Managed platform deployment",
+            summary: "Infrastructure templates with low ops overhead for student projects."
+          },
+          fr: {
+            price: "Facturation à l'usage",
+            bestFor: "Déploiement sur plateforme managée",
+            summary: "Des templates d'infrastructure avec peu de charge ops pour les projets étudiants."
+          }
+        }
       },
       {
         name: "Railway Templates",
-        price: "Low-cost starter plans",
-        bestFor: "Rapid prototypes",
-        summary: "Quick environment bootstrapping and predictable early-stage workflows.",
         affiliateHref:
-          "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_railway"
+          "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_railway",
+        locales: {
+          en: {
+            price: "Low-cost starter plans",
+            bestFor: "Rapid prototypes",
+            summary: "Quick environment bootstrapping and predictable early-stage workflows."
+          },
+          fr: {
+            price: "Formules de démarrage à faible coût",
+            bestFor: "Prototypes rapides",
+            summary: "Initialisation rapide des environnements et workflows prévisibles en phase de démarrage."
+          }
+        }
       }
     ]
   }
@@ -1764,4 +1886,37 @@ export function slugify(input: string) {
 
 export function getComparisonBySlug(slug: string) {
   return comparisons.find((comparison) => comparison.slug === slug);
+}
+
+function localizeComparison(comparison: ComparisonPage, locale: Locale): LocalizedComparisonPage {
+  const localized = comparison.locales[locale];
+
+  return {
+    ...comparison,
+    title: localized.title,
+    seoTitle: localized.seoTitle,
+    intro: localized.intro,
+    tools: comparison.tools.map((tool) => {
+      const localizedTool = tool.locales[locale];
+
+      return {
+        ...tool,
+        price: localizedTool.price,
+        bestFor: localizedTool.bestFor,
+        summary: localizedTool.summary
+      };
+    })
+  };
+}
+
+export function getLocalizedComparisons(locale: Locale) {
+  return comparisons.map((comparison) => localizeComparison(comparison, locale));
+}
+
+export function getLocalizedComparison(slug: string, locale: Locale) {
+  const comparison = getComparisonBySlug(slug);
+
+  if (!comparison) return undefined;
+
+  return localizeComparison(comparison, locale);
 }
