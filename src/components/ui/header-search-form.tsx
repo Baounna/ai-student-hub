@@ -55,13 +55,16 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
 
   const clearLabel = fr ? "Effacer la recherche" : "Clear search";
   const inputLabel = fr ? "Rechercher dans le blog" : "Search blog";
+  // The trailing "..." read as a stray full stop sitting in an empty field,
+  // which is exactly what a placeholder should not do: it is a hint, and a hint
+  // that looks like content is worse than no hint.
   const placeholder = mobile
     ? fr
-      ? "Rechercher dans le blog..."
-      : "Search in blog..."
+      ? "Rechercher dans le blog"
+      : "Search the blog"
     : fr
-      ? "Rechercher IA, backend, cloud, algorithmes..."
-      : "Search AI, backend, cloud, algorithms...";
+      ? "Rechercher IA, backend, cloud, algorithmes"
+      : "Search AI, backend, cloud, algorithms";
 
   function clearSearch() {
     setQuery("");

@@ -83,8 +83,18 @@ describe("typing a space in the search box", () => {
     expect(value).toBe("claudeai");
   });
 
-  it("still collapses an accidental double space", () => {
-    expect(sanitizeSearchInputLive("claude  ai")).toBe("claude ai");
+  it("shows exactly what was typed, including repeated spaces", () => {
+    // The second attempt at this collapsed runs of spaces on every keystroke,
+    // so pressing space more than once did nothing. A field that edits your
+    // keystrokes while you type is the same bug in a smaller coat.
+    expect(sanitizeSearchInputLive("claude  ai")).toBe("claude  ai");
+    let value = "";
+    for (let i = 0; i < 5; i += 1) value = sanitizeSearchInputLive(value + " ");
+    expect(value).toBe("     ");
+  });
+
+  it("collapses those spaces at submit instead", () => {
+    expect(sanitizeSearchQuery("claude  ai")).toBe("claude ai");
   });
 
   it("still strips control characters and caps the length", () => {

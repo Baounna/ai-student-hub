@@ -34,20 +34,25 @@ export function sanitizeSearchQuery(value: unknown, maxLength = 120) {
 }
 
 /**
- * The same cleaning, minus the trim, for a value that is still being typed.
+ * What the search box may do to a value that is still being typed: strip
+ * control characters, and nothing else.
  *
- * sanitizeSearchQuery ends in .trim(), and it was wired to the search box's
- * onChange. A space is trailing whitespace at the instant you type it, so every
- * space was deleted before it reached the input: "claude ai and openai" arrived
- * as "claudeaiandopenai" and no multi-word search was possible from the header
- * at all. Trimming belongs at submit, where the string is finished — and the
- * server sanitizes the query again when it reads the parameter, so nothing is
- * lost by leaving it alone here.
+ * The first version of this ran sanitizeSearchQuery on every keystroke. That
+ * ends in .trim(), and a space is trailing whitespace at the instant you type
+ * it, so every space was deleted before it reached the input — "claude ai and
+ * openai" arrived as "claudeaiandopenai".
+ *
+ * The second version kept a single trailing space but still collapsed runs of
+ * two or more, so pressing space repeatedly did nothing after the first press.
+ * Which is the same bug wearing a smaller coat: the field was still editing the
+ * user's keystrokes underneath them.
+ *
+ * A text field should show what was typed. Collapsing and trimming happen at
+ * submit, and the server sanitizes the parameter again when it reads it, so
+ * nothing downstream depends on this doing any of it. maxLength on the input
+ * already caps the length; the slice here is belt and braces.
  */
 export function sanitizeSearchInputLive(value: unknown, maxLength = 120) {
   const raw = typeof value === "string" ? value : "";
-  return raw
-    .replace(CONTROL_CHAR_REGEX, " ")
-    .replace(/ {2,}/g, " ")
-    .slice(0, Math.max(1, maxLength));
+  return raw.replace(CONTROL_CHAR_REGEX, " ").slice(0, Math.max(1, maxLength));
 }
