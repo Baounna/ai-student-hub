@@ -168,6 +168,69 @@ if (publicSiteUrl) {
   warn("NEXT_PUBLIC_SITE_URL is not set in local env.");
 }
 
+// The workflows are part of the attack surface, not just the build. They hold
+// write tokens, and a push to main deploys — so an action reference that can be
+// repointed by its author is a deploy someone else controls. A version tag is a
+// mutable pointer; only a commit SHA names fixed code. Dependabot still updates
+// these, it just does it through a reviewable pull request.
+const WORKFLOW_DIR = ".github/workflows";
+const SHA_PINNED = /^[0-9a-f]{40}$/;
+// Triggers that run with repository secrets and a write token against code the
+// event's author controls. None are used here; the check is what keeps it true.
+const FORK_WRITABLE_TRIGGERS = ["pull_request_target", "workflow_run", "issue_comment"];
+
+const workflowFiles = fs.existsSync(path.join(ROOT, WORKFLOW_DIR))
+  ? fs.readdirSync(path.join(ROOT, WORKFLOW_DIR)).filter((name) => /\.ya?ml$/.test(name)).sort()
+  : [];
+
+if (!workflowFiles.length) {
+  warn("No workflow files found to verify.");
+} else {
+  const unpinned = [];
+  const unscoped = [];
+  const risky = [];
+
+  for (const fileName of workflowFiles) {
+    const text = readText(path.join(WORKFLOW_DIR, fileName));
+
+    for (const match of text.matchAll(/^\s*(?:-\s*)?uses:\s*(\S+)/gm)) {
+      const reference = match[1];
+      // A local action (./path) is this repository's own code, already reviewed.
+      if (reference.startsWith("./")) continue;
+      const ref = reference.split("@")[1] || "";
+      if (!SHA_PINNED.test(ref)) unpinned.push(`${fileName}: ${reference}`);
+    }
+
+    // Without a permissions block the job inherits the repository default,
+    // which is a setting in the web UI rather than something review can see.
+    if (!/^permissions:/m.test(text) && !/^\s{4,}permissions:/m.test(text)) {
+      unscoped.push(fileName);
+    }
+
+    for (const trigger of FORK_WRITABLE_TRIGGERS) {
+      if (new RegExp(`^\\s{2}${trigger}:`, "m").test(text)) risky.push(`${fileName}: ${trigger}`);
+    }
+  }
+
+  if (unpinned.length) {
+    fail(`Workflow actions not pinned to a commit SHA: ${unpinned.join(", ")}`);
+  } else {
+    ok(`All workflow actions are pinned to a commit SHA (${workflowFiles.length} workflows).`);
+  }
+
+  if (unscoped.length) {
+    fail(`Workflows without an explicit permissions block: ${unscoped.join(", ")}`);
+  } else {
+    ok("Every workflow declares its own permissions.");
+  }
+
+  if (risky.length) {
+    fail(`Workflow uses a fork-writable trigger — review before keeping: ${risky.join(", ")}`);
+  } else {
+    ok("No workflow runs on pull_request_target, workflow_run or issue_comment.");
+  }
+}
+
 const siteUrlLib = readText("src/lib/site-url.ts");
 if (siteUrlLib.includes("http://localhost")) {
   fail("src/lib/site-url.ts contains localhost production fallback.");
