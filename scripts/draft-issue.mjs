@@ -9,7 +9,9 @@
  * the weekly job becomes: run this, read it, send it.
  *
  *   npm run draft:issue              what is new since the last issue
- *   npm run draft:issue -- --all     every open listing (use for issue #1)
+ *   npm run draft:issue -- --all     every open listing, not just what is new
+ *   npm run draft:issue -- --full    no digest cap (long, and looks like spam)
+ *   npm run draft:issue -- --limit 20
  *   npm run draft:issue -- --since 2026-09-01
  *
  * Writes drafts/issue-<date>.{txt,html} and records what it covered, so the
@@ -38,7 +40,23 @@ if (!since && !ALL) {
   try { since = JSON.parse(await fs.readFile(STATE, "utf8")).sentAt || ""; } catch { since = ""; }
 }
 
-const picked = ALL || !since ? open : open.filter((s) => (s.postedAt || "") > since);
+const fresh = ALL || !since ? open : open.filter((s) => (s.postedAt || "") > since);
+
+/**
+ * An email carrying ninety-six outbound links is a spam signal before it is
+ * anything else, and nobody scrolls ninety-six jobs in an inbox. So the issue
+ * is a digest: the ones with a real closing date first, because those are the
+ * ones you can miss, then the most recently found. The rest stay one click
+ * away on a page built to hold them.
+ */
+const LIMIT = Number.parseInt(arg("limit") || "12", 10);
+const ranked = [...fresh].sort((a, b) => {
+  if (Boolean(a.deadline) !== Boolean(b.deadline)) return a.deadline ? -1 : 1;
+  if (a.deadline && b.deadline) return a.deadline.localeCompare(b.deadline);
+  return (b.postedAt || "").localeCompare(a.postedAt || "");
+});
+const picked = argv.includes("--full") ? ranked : ranked.slice(0, LIMIT);
+const remaining = ranked.length - picked.length;
 
 if (!picked.length) {
   console.log(`\n  Nothing new since ${since}. Skip this week rather than send an empty email.\n`);
@@ -62,15 +80,17 @@ const sections = [["Morocco", byCountry("MA")], ["France", byCountry("FR")]].fil
 
 const dated = picked.filter((s) => s.deadline).length;
 const intro =
-  `${picked.length} ${picked.length === 1 ? "opening" : "openings"} this week` +
-  (dated ? `, ${dated} with a published closing date.` : ". None of them publishes a closing date, so they run until filled.");
+  `${picked.length} ${picked.length === 1 ? "opening" : "openings"} below` +
+  (dated ? `, ${dated} with a published closing date.` : ", none with a published closing date, so they run until filled.") +
+  (remaining > 0 ? ` ${remaining} more are on the site.` : "");
 
 let txt = `Tech internships - ${today}\n\n${intro}\n`;
 for (const [name, list] of sections) {
   txt += `\n\n${name.toUpperCase()} (${list.length})\n${"-".repeat(name.length + 6)}\n`;
   for (const s of list) { const l = line(s); txt += `\n${l.head}\n  ${l.meta}\n  ${l.href}\n`; }
 }
-txt += `\n\nEvery link was opened and checked on ${today}. Full list: ${SITE}/en/stages\n`;
+txt += remaining > 0 ? `\n\nThe other ${remaining} openings: ${SITE}/en/stages\n` : "\n";
+txt += `\nEvery link above was opened and checked on ${today}.\n`;
 txt += `\nYou are getting this because you signed up at ${SITE}. Unsubscribe any time.\n`;
 
 let html = `<div style="font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;color:#1a1a1a;max-width:640px">
@@ -83,15 +103,19 @@ for (const [name, list] of sections) {
 <span style="color:#666;font-size:14px">${esc(l.meta)}</span></p>`;
   }
 }
-html += `<p style="margin:28px 0 0;color:#666;font-size:14px">Every link was opened and checked on ${esc(today)}.
-<a href="${esc(SITE)}/en/stages" style="color:#0b5cd5">See the full list</a>.</p></div>`;
+html += remaining > 0
+  ? `<p style="margin:28px 0 0"><a href="${esc(SITE)}/en/stages" style="color:#0b5cd5;font-weight:600">See the other ${remaining} openings</a></p>`
+  : "";
+html += `<p style="margin:16px 0 0;color:#666;font-size:14px">Every link above was opened and checked on ${esc(today)}.</p></div>`;
 
 await fs.mkdir(OUT, { recursive: true });
 await fs.writeFile(path.join(OUT, `issue-${today}.txt`), txt);
 await fs.writeFile(path.join(OUT, `issue-${today}.html`), html);
 await fs.writeFile(STATE, `${JSON.stringify({ sentAt: today, covered: picked.length }, null, 2)}\n`);
 
-const subject = `${picked.length} tech internship${picked.length === 1 ? "" : "s"} - Morocco and France`;
+const subject = remaining > 0
+  ? `${picked.length} internships closing soonest - Morocco and France`
+  : `${picked.length} tech internship${picked.length === 1 ? "" : "s"} - Morocco and France`;
 console.log(`
   Subject: ${subject}
 
