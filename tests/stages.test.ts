@@ -1,6 +1,14 @@
 import { describe, it, expect } from "vitest";
 import rawFile from "@/content/stages.json";
-import { getStages, isClosed, isStagesListStale, getStagesAgeDays, STALE_AFTER_DAYS } from "@/content/stages";
+import {
+  getStages,
+  isClosed,
+  isStagesListStale,
+  getStagesAgeDays,
+  getStagesCheckedAgeDays,
+  getStagesLastCheckedAt,
+  STALE_AFTER_DAYS
+} from "@/content/stages";
 
 const raw = rawFile as { version: number; updatedAt: string; items: Array<Record<string, unknown>> };
 
@@ -76,6 +84,34 @@ describe("staleness", () => {
     const base = Date.parse(raw.updatedAt);
     expect(isStagesListStale(base + STALE_AFTER_DAYS * 86_400_000)).toBe(false);
     expect(isStagesListStale(base + (STALE_AFTER_DAYS + 1) * 86_400_000)).toBe(true);
+  });
+});
+
+// The page used to headline updatedAt, which moves whenever anything writes the
+// file, so it announced "last checked: today" above rows that each said they
+// were checked the day before. The headline has to be something every row can
+// support, which is the oldest per-entry check.
+describe("freshness headline", () => {
+  it("reports the oldest per-entry check, not the file's own timestamp", () => {
+    const oldest = raw.items
+      .map((i) => String(i.checkedAt))
+      .reduce((a, b) => (b < a ? b : a));
+    expect(getStagesLastCheckedAt()).toBe(oldest);
+  });
+
+  it("never claims to be fresher than its stalest entry", () => {
+    const checkedMs = Date.parse(`${getStagesLastCheckedAt()}T12:00:00Z`);
+    const updatedMs = Date.parse(raw.updatedAt);
+    const now = updatedMs + 5 * 86_400_000;
+    expect(getStagesCheckedAgeDays(now)).toBeGreaterThanOrEqual(
+      Math.floor((now - Math.max(checkedMs, updatedMs)) / 86_400_000)
+    );
+  });
+
+  it("counts the check age in whole days from a supplied clock", () => {
+    const base = Date.parse(`${getStagesLastCheckedAt()}T12:00:00Z`);
+    expect(getStagesCheckedAgeDays(base)).toBe(0);
+    expect(getStagesCheckedAgeDays(base + 3 * 86_400_000)).toBe(3);
   });
 });
 

@@ -507,7 +507,7 @@ export default async function LocalizedBlogPage(
             </h3>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Nouveau ici ? Commence par les actualités, puis resources et comparatifs."
+                ? "Nouveau ici ? Commencez par les actualités, puis resources et comparatifs."
                 : "New here? Start with news, then resources and comparison guides."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">

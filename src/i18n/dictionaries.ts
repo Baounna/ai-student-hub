@@ -149,11 +149,18 @@ export const dictionaries: Record<Locale, Dictionary> = {
       openCompare: "Open tools lab"
     },
     newsletter: {
-      badge: "Stages and alternances, weekly",
+      // "Stages", "alternances" and "PFE" are French. The English labels for
+      // the same three things already exist in src/content/stages.ts
+      // (KIND_LABELS) and are what the list itself renders, so the newsletter
+      // block uses them rather than inventing a second English vocabulary.
+      badge: "Internships and apprenticeships, weekly",
       title: "Open tech internships in Morocco and France",
       description:
-        "One email a week with new internships, alternances and PFE positions, each with a direct link and its closing date where the employer publishes one.",
-      cta: "See the list"
+        "One email a week with new internships, apprenticeships and final-year projects, each with a direct link and its closing date where the employer publishes one.",
+      // This is the submit button of the email form, not a link. "See the
+      // list" sitting next to an email field reads as navigation, so someone
+      // who only wants to browse clicks it and is subscribed instead.
+      cta: "Subscribe"
     }
   },
   fr: {
@@ -235,7 +242,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
       title: "Les stages tech ouverts au Maroc et en France",
       description:
         "Un email par semaine avec les nouveaux stages, alternances et PFE, chacun avec un lien direct et sa date limite quand l'employeur en annonce une.",
-      cta: "Voir la liste"
+      // Bouton d'envoi du formulaire, pas un lien: voir le commentaire côté EN.
+      cta: "S'inscrire"
     }
   }
 };

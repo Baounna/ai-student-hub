@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 import type { Locale } from "@/i18n/config";
 import { trackEvent } from "@/lib/track";
 import { TurnstileWidget } from "@/components/ui/turnstile-widget";
@@ -47,6 +47,14 @@ function getNextAction(source: string, locale: Locale) {
 }
 
 export function NewsletterForm({ compact = false, locale, ctaLabel, source }: NewsletterFormProps) {
+  // Both fields used to carry only a placeholder. A placeholder is not an
+  // accessible name: it disappears on the first keystroke and screen readers
+  // may not announce it at all, so the field is read as "edit text" (WCAG
+  // 1.3.1 and 3.3.2). The rest of the site pairs an input with an sr-only
+  // <label htmlFor>, so this form does the same rather than inventing a
+  // second pattern.
+  const nameId = useId();
+  const emailId = useId();
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -110,16 +118,24 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
   return (
     <form className={formClass} onSubmit={onSubmit}>
       {!compact && (
-        <input
-          type="text"
-          name="name"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-          placeholder={locale === "fr" ? "Prénom" : "First name"}
-          autoComplete="given-name"
-          maxLength={80}
-          className="field-input"
-        />
+        <>
+          {/* sr-only is position:absolute, so the label is out of flow and is
+              not placed as a grid cell - the column layout is unchanged. */}
+          <label htmlFor={nameId} className="sr-only">
+            {locale === "fr" ? "Prénom" : "First name"}
+          </label>
+          <input
+            id={nameId}
+            type="text"
+            name="name"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            placeholder={locale === "fr" ? "Prénom" : "First name"}
+            autoComplete="given-name"
+            maxLength={80}
+            className="field-input"
+          />
+        </>
       )}
       <input
         type="text"
@@ -132,7 +148,11 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       <div className={compact ? "col-span-2" : "sm:col-span-3"}>
         <TurnstileWidget locale={locale} />
       </div>
+      <label htmlFor={emailId} className="sr-only">
+        {locale === "fr" ? "Adresse email" : "Email address"}
+      </label>
       <input
+        id={emailId}
         type="email"
         name="email"
         value={email}
@@ -161,10 +181,10 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
           <p>
             {deliveryStatus === "failed"
               ? locale === "fr"
-                ? "L'inscription n'a pas abouti et votre adresse n'a pas ete enregistree. Reessayez dans un instant."
+                ? "L'inscription n'a pas abouti et votre adresse n'a pas été enregistrée. Réessayez dans un instant."
                 : "The signup did not go through and your address was not saved. Please try again in a moment."
               : locale === "fr"
-                ? "La newsletter n'est pas encore ouverte aux inscriptions. Votre adresse n'a pas ete enregistree."
+                ? "La newsletter n'est pas encore ouverte aux inscriptions. Votre adresse n'a pas été enregistrée."
                 : "The newsletter is not open for signups yet, so your address was not saved."}
           </p>
           <a href={nextAction.href} className="do-link mt-1 inline-block">
@@ -190,7 +210,8 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       )}
       {status === "error" && (
         <p className={`status-error ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
-          {locale === "fr" ? "Erreur. Réessaie dans un instant." : "Something went wrong. Try again."}
+          {/* vous, like every other French string in this form. */}
+          {locale === "fr" ? "Erreur. Réessayez dans un instant." : "Something went wrong. Try again."}
         </p>
       )}
     </form>

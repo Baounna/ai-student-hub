@@ -12,7 +12,7 @@ import {
   countryLabel,
   getOpenStages,
   getStages,
-  getStagesAgeDays,
+  getStagesCheckedAgeDays,
   isClosed,
   isStagesListStale,
   kindLabel,
@@ -30,6 +30,11 @@ const COPY = {
     rolling: "Open until filled - no closing date given",
     checked: "link checked",
     apply: "View the offer",
+    // Every card renders the same visible link text, so a screen reader's link
+    // list was 96 identical "View the offer" entries with nothing to tell them
+    // apart. The visible text stays short; the accessible name carries the
+    // role and the company that the link actually leads to.
+    applyLabel: (role: string, company: string) => `View the offer: ${role} at ${company}`,
     source: "via",
     updated: "Last checked",
     staleTitle: "This list has not been checked recently",
@@ -48,6 +53,7 @@ const COPY = {
     rolling: "Ouverte jusqu'à pourvoi - aucune date limite annoncée",
     checked: "lien vérifié le",
     apply: "Voir l'offre",
+    applyLabel: (role: string, company: string) => `Voir l'offre : ${role} chez ${company}`,
     source: "via",
     updated: "Dernière vérification",
     staleTitle: "Cette liste n'a pas été vérifiée récemment",
@@ -90,7 +96,10 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
   const openStages = getOpenStages();
   const openCount = openStages.length;
   const stale = isStagesListStale();
-  const ageDays = getStagesAgeDays();
+  // Derived from the entries, not from the file's mtime: see
+  // getStagesLastCheckedAt. The two disagreed by a day and the page showed the
+  // flattering one.
+  const ageDays = getStagesCheckedAgeDays();
 
   // One array feeds both the visible trail and the schema, so the markup and
   // the structured data cannot drift apart - a BreadcrumbList that disagrees
@@ -214,7 +223,13 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
                     <span className="text-sm text-[color:var(--muted)]">{copy.rolling}</span>
                   )}
                   {!closed ? (
-                    <a href={stage.href} target="_blank" rel="noopener noreferrer" className="btn-secondary px-3 py-1.5 text-xs">
+                    <a
+                      href={stage.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={copy.applyLabel(stage.role, stage.company)}
+                      className="btn-secondary px-3 py-1.5 text-xs"
+                    >
                       {copy.apply}
                     </a>
                   ) : null}

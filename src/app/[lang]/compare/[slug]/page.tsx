@@ -99,7 +99,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
     { id: "verdict", label: fr ? "Verdict" : "Verdict" },
     { id: "comparison-table", label: fr ? "Matrice outils" : "Tools matrix" },
     { id: "framework", label: fr ? "Cadre" : "Framework" },
-    { id: "references", label: "References" },
+    { id: "references", label: fr ? "Références" : "References" },
     { id: "next-steps", label: fr ? "Actions" : "Next steps" }
   ];
 
@@ -315,7 +315,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
                       meta={{ page: "comparison_references", tool: tool.name, slug: comparison.slug, locale }}
                       className="do-link"
                     >
-                      {fr ? "Lien partenaire" : "Partner link"}
+                      {fr ? "Site officiel" : "Official site"}
                     </TrackableAnchor>
                   </li>
                 );

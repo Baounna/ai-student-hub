@@ -52,21 +52,24 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
   ];
   const roadmap = [
     {
-      phase: "30 days",
+      // The phase label sits in the same card as the French body below it, so
+      // it has to be localised too - "30 days" beside French prose is the one
+      // part of the roadmap a French reader notices first.
+      phase: locale === "fr" ? "30 jours" : "30 days",
       body:
         locale === "fr"
           ? "Construire un premier projet déployé avec documentation claire."
           : "Ship one deployed project with clear documentation."
     },
     {
-      phase: "60 days",
+      phase: locale === "fr" ? "60 jours" : "60 days",
       body:
         locale === "fr"
           ? "Publier contenu d'autorité + optimiser ressources et comparatifs."
           : "Publish authority content and optimize resources/comparisons."
     },
     {
-      phase: "90 days",
+      phase: locale === "fr" ? "90 jours" : "90 days",
       body:
         locale === "fr"
           ? "Transformer exécution en stages, projets collaboratifs, et opportunités concrètes."

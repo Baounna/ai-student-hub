@@ -58,6 +58,12 @@ export function getStagesUpdatedAt() {
  * that each said they were checked yesterday. The honest headline figure is the
  * oldest per-entry check: every link has been verified at least that recently.
  */
+export function getStagesCheckedAgeDays(now = Date.now()) {
+  const checked = Date.parse(`${getStagesLastCheckedAt()}T12:00:00Z`);
+  if (!Number.isFinite(checked)) return Number.POSITIVE_INFINITY;
+  return Math.max(0, Math.floor((now - checked) / 86_400_000));
+}
+
 export function getStagesLastCheckedAt() {
   const dates = payload.items.map((item) => item.checkedAt).filter(Boolean) as string[];
   if (!dates.length) return payload.updatedAt;
