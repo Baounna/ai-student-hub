@@ -30,6 +30,9 @@ const WRITE = process.argv.includes("--write");
 /** Boards whose validThrough is a listing expiry of their own, not the employer's. */
 const LISTING_TTL_HOSTS = new Set(["hellowork.com"]);
 
+/** Statuses that mean "we were refused", never "the posting is gone". */
+const BLOCKED_STATUSES = new Set([401, 403, 405, 429, 503, 999]);
+
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36";
 
 /**
@@ -118,6 +121,13 @@ async function checkOne(stage) {
   const api = workdayApi(stage.href);
   if (api) {
     const { status, raw } = await fetchText(api);
+    // A block is not a death. Airbus's tenant started answering 403 the day
+    // after we read it, while Thales's identical endpoint kept returning 200 —
+    // bot protection, not four vanished internships. Treating every non-200 as
+    // gone would have deleted live postings on the strength of a rate limit.
+    if (BLOCKED_STATUSES.has(status)) {
+      return { verdict: "CHECK", detail: `Workday API HTTP ${status} (blocked, not proof either way)` };
+    }
     if (status !== 200) return { verdict: "GONE", detail: `Workday API HTTP ${status}` };
     try {
       const info = JSON.parse(raw).jobPostingInfo || {};
@@ -130,7 +140,7 @@ async function checkOne(stage) {
 
   const { status, text, finalUrl } = await fetchText(stage.href);
   if (status === 0) return { verdict: "CHECK", detail: "no response" };
-  if (status >= 400 && ![403, 405, 999].includes(status)) {
+  if (status >= 400 && !BLOCKED_STATUSES.has(status)) {
     return { verdict: "GONE", detail: `HTTP ${status}` };
   }
 
@@ -156,8 +166,8 @@ async function checkOne(stage) {
     return { verdict: "GONE", detail: `validThrough ${valid[1]} has passed` };
   }
 
-  if ([403, 405, 999].includes(status)) {
-    return { verdict: "CHECK", detail: `HTTP ${status} (bot block, not proof either way)` };
+  if (BLOCKED_STATUSES.has(status)) {
+    return { verdict: "CHECK", detail: `HTTP ${status} (blocked, not proof either way)` };
   }
   return { verdict: "OK", detail: `HTTP ${status}` };
 }
