@@ -33,6 +33,29 @@ const LISTING_TTL_HOSTS = new Set(["hellowork.com"]);
 /** Statuses that mean "we were refused", never "the posting is gone". */
 const BLOCKED_STATUSES = new Set([401, 403, 405, 429, 503, 999]);
 
+/**
+ * Sixteen requests to LinkedIn and eleven to Capgemini, fired back to back, is
+ * how you get told to go away. Airbus started returning 403 to the Workday API
+ * the day after a full run, having answered 200 throughout the run itself. So
+ * we wait between hits on the same host — the whole sweep is a background job
+ * nobody is watching, and being a good citizen costs it nothing but seconds.
+ */
+const PER_HOST_DELAY_MS = 1_500;
+const lastHitAt = new Map();
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function waitForHost(url) {
+  let host = "";
+  try { host = new URL(url).hostname; } catch { return; }
+  const previous = lastHitAt.get(host) || 0;
+  const wait = previous + PER_HOST_DELAY_MS - Date.now();
+  if (wait > 0) await sleep(wait);
+  lastHitAt.set(host, Date.now());
+}
+
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36";
 
 /**
@@ -83,6 +106,7 @@ export function redirectedAway(href, finalUrl) {
 }
 
 async function fetchText(url) {
+  await waitForHost(url);
   try {
     const { stdout } = await execFileAsync("curl", [
       "-s", "-L", "--max-time", "25", "-A", UA,

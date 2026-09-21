@@ -1,18 +1,29 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { TrackableAnchor } from "@/components/trackable-anchor";
 import { Newsletter } from "@/components/newsletter";
-import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
-import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
-import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 
-const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
-const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
-const hasCheckoutUrl = Boolean(checkoutUrl);
-
+/**
+ * This page used to sell a guide nobody has written.
+ *
+ * It carried a "Launch offer" of $9-$19, a "What you get" list of four
+ * deliverables, "Included extras" promising email support and sixty days of
+ * updates, a day-by-day breakdown of its contents, and an FAQ answering "I am
+ * a beginner, is this guide still useful?" in the present tense. The only
+ * caveat was "Checkout is not live yet", which a reader takes to mean the
+ * product exists and the payment link is pending.
+ *
+ * The rest of this site spent a long day removing a free roadmap that had
+ * never been written. This was the same untruth with a price on it, and it
+ * survived that cleanup because nothing here says the word "roadmap".
+ *
+ * The route stays because twenty-eight internal links point at it and because
+ * the guide may genuinely get written. What it says now is what is true: it
+ * does not exist, nothing is for sale, no date is promised, and here is the
+ * work that does exist and is free.
+ */
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const params = await props.params;
   if (!isLocale(params.lang)) return {};
@@ -20,16 +31,14 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const fr = params.lang === "fr";
   const title = fr ? "Guide Carrière IA" : "AI Career Guide";
   const description = fr
-    ? "Guide pratique pour étudiants IA afin d'améliorer portfolio, candidatures et entretiens."
-    : "Practical student guide to improve portfolio, internship conversion, and weekly execution.";
+    ? "Ce guide n'est pas encore écrit. Voici ce qui existe déjà, et gratuitement."
+    : "This guide is not written yet. Here is what already exists, free.";
 
   return {
     title,
     description,
     keywords: getSeoKeywords(params.lang, "product", [
-      fr ? "guide carriere ia etudiant pdf" : "ai student career guide pdf",
       fr ? "preparation stage ia" : "ai internship preparation",
-      fr ? "guide execution ia informatique 30 jours" : "30 day ai and cs execution guide",
       fr ? "plan portfolio etudiant" : "student portfolio action plan"
     ]),
     openGraph: {
@@ -55,221 +64,54 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
 
   const locale: Locale = params.lang;
   const fr = locale === "fr";
-  const leadMagnetHref = fr ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
+
+  const alternatives = fr
+    ? [
+        { href: `/${locale}/stages`, label: "Les stages ouverts", body: "Stages, alternances et PFE vérifiés un par un, remis à jour chaque semaine." },
+        { href: `/${locale}/blog`, label: "Les guides", body: "Articles techniques sur l'IA et la cybersécurité, avec des exemples exécutables." },
+        { href: `/${locale}/compare`, label: "Le lab outils", body: "Comparatifs d'outils avec leurs vrais compromis, pensés pour un budget étudiant." }
+      ]
+    : [
+        { href: `/${locale}/stages`, label: "Open internships", body: "Internships, apprenticeships and final-year projects, each link checked by hand, updated weekly." },
+        { href: `/${locale}/blog`, label: "The guides", body: "Technical articles on AI and cybersecurity, with examples you can actually run." },
+        { href: `/${locale}/compare`, label: "The tools lab", body: "Tool comparisons with their real trade-offs, written for a student budget." }
+      ];
 
   return (
-    <div className="page-shell max-w-6xl py-10 md:py-16">
+    <div className="page-shell max-w-4xl py-10 md:py-16">
       <section className="do-hero rounded-3xl p-7 md:p-10">
-        <div className="grid gap-6 lg:grid-cols-[1.35fr,1fr] lg:items-end">
-          <div>
-            <p className="do-kicker">{fr ? "Produit digital" : "Digital Product"}</p>
-            <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
-              {fr ? "Guide d'exécution carrière IA pour étudiants" : "AI Career Execution Guide for Students"}
-            </h1>
-            <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
-              {fr
-                ? "Un guide pratique pour livrer des projets portfolio, augmenter vos réponses de stage, et clarifier votre plan exécution sur 14-30 jours."
-                : "A practical guide to ship portfolio projects, increase internship responses, and execute a clear 14-30 day plan."}
-            </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                PDF + templates
-              </span>
-              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Budget-friendly" : "Budget-friendly"}
-              </span>
-              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                EN/FR
-              </span>
-            </div>
-          </div>
+        <p className="do-kicker">{fr ? "Pas encore écrit" : "Not written yet"}</p>
+        <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
+          {fr ? "Guide d'exécution carrière IA" : "AI Career Execution Guide"}
+        </h1>
+        <p className="body-copy mt-4 max-w-2xl text-[color:var(--text)]">
+          {fr
+            ? "Ce guide n'existe pas. Il n'y a rien à acheter, aucun prix, et aucune date annoncée. Cette page portait une offre de lancement et une liste de son contenu pour un document que personne n'a écrit : c'était faux, et c'est retiré."
+            : "This guide does not exist. There is nothing to buy, no price, and no date promised. This page used to carry a launch offer and a list of its contents for a document nobody had written. That was untrue, and it is gone."}
+        </p>
+        <p className="mt-4 max-w-2xl text-sm text-[color:var(--muted)]">
+          {fr
+            ? "Si elle est écrite un jour, elle sera annoncée dans la lettre hebdomadaire. En attendant, tout le travail publié ici est gratuit."
+            : "If it ever gets written, the weekly email is where that would be announced. Everything published here is free in the meantime."}
+        </p>
+      </section>
 
-          <div className="surface rounded-2xl p-5">
-            <p className="do-kicker">{fr ? "Offre lancement" : "Launch offer"}</p>
-            <p className="mt-2 text-4xl font-bold text-[color:var(--text-strong)]">$9 - $19</p>
-            <p className="mt-2 text-sm text-[color:var(--text)]">
-              {fr
-                ? "Plan d'action concret pour passer de la théorie aux résultats."
-                : "Concrete action plan to turn learning into measurable outcomes."}
-            </p>
-            <p className="mt-2 text-xs text-[color:var(--muted)]">
-              {fr
-                ? "Idéal pour étudiants qui veulent un système simple sans coach payant."
-                : "Ideal for students who need a simple system without expensive coaching."}
-            </p>
-            {hasCheckoutUrl ? (
-              <>
-                <TrackableAnchor
-                  href={checkoutUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  event="product_checkout_click"
-                  meta={{ page: "localized_product", locale }}
-                  className="btn-primary mt-4 inline-flex"
-                >
-                  {fr ? "Passer au paiement" : "Proceed to checkout"}
-                </TrackableAnchor>
-                <p className="mt-2 text-xs text-[color:var(--muted)]">
-                  {fr
-                    ? "Paiement externe sécurisé. Accès instantané après achat."
-                    : "Secure external checkout. Instant access after purchase."}
-                </p>
-              </>
-            ) : (
-              <div className="mt-4 flex flex-wrap gap-2">
-                <TrackableAnchor
-                  href={leadMagnetHref}
-                  event="lead_magnet_click"
-                  meta={{ page: "localized_product", locale, source: "product_fallback" }}
-                  className="btn-primary"
-                >
-                  {fr ? "Voir les stages ouverts" : "See open internships"}
-                </TrackableAnchor>
-                <Link href={`/${locale}/resources`} className="btn-secondary">
-                  {fr ? "Voir ressources" : "See resources"}
-                </Link>
-                <p className="w-full text-xs text-[color:var(--muted)]">
-                  {fr
-                    ? "Checkout non disponible pour l'instant. Utilisez la liste des stages et les ressources."
-                    : "Checkout is not live yet. Use the internship list and curated resources first."}
-                </p>
-              </div>
-            )}
-          </div>
+      <section className="mt-8">
+        <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
+          {fr ? "Ce qui existe vraiment" : "What actually exists"}
+        </h2>
+        <div className="mt-4 grid gap-4 md:grid-cols-3">
+          {alternatives.map((item) => (
+            <Link key={item.href} href={item.href} className="surface rounded-2xl p-5 transition hover:border-[color:var(--primary)]">
+              <p className="font-semibold text-[color:var(--text-strong)]">{item.label}</p>
+              <p className="mt-2 text-sm text-[color:var(--text)]">{item.body}</p>
+            </Link>
+          ))}
         </div>
       </section>
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
-        <div className="min-w-0 space-y-6">
-          <div className="relative overflow-hidden rounded-2xl border border-[color:var(--border)]">
-            <Image
-              src={coverImageUrl("ai-career-guide", "Career/Interviews")}
-              alt={fr ? "Aperçu du guide" : "Guide preview"}
-              width={1200}
-              height={675}
-              priority
-              sizes="(max-width: 1024px) 100vw, 900px"
-              className="h-auto w-full"
-            />
-          </div>
-
-          <section className="grid gap-5 md:grid-cols-2">
-            <div className="glass rounded-2xl p-6">
-              <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-                {fr ? "Contenu" : "What you get"}
-              </h2>
-              <ul className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
-                <li>1. {fr ? "Plan sprint 30 jours" : "30-day project sprint planner"}</li>
-                <li>2. {fr ? "Templates portfolio + case study" : "Portfolio and case-study templates"}</li>
-                <li>3. {fr ? "Checklist conversion candidatures" : "Internship application conversion checklist"}</li>
-                <li>4. {fr ? "Tracker hebdomadaire" : "Weekly accountability tracker"}</li>
-              </ul>
-            </div>
-
-            <div className="surface rounded-2xl p-6">
-              <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-                {fr ? "Pour qui" : "Who this is for"}
-              </h2>
-              <ul className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
-                <li>1. {fr ? "Étudiants avec portfolio incomplet" : "Students with incomplete portfolios"}</li>
-                <li>2. {fr ? "Candidatures de stage peu performantes" : "Internship applications with low response rates"}</li>
-                <li>3. {fr ? "Builders qui veulent un système clair" : "Builders who want a clear execution system"}</li>
-              </ul>
-            </div>
-          </section>
-
-          <section className="surface rounded-2xl p-6">
-            <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Ce que vous obtenez en plus" : "Included extras"}
-            </h2>
-            <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
-              <li>- {fr ? "Support email pour clarifier votre plan." : "Email support for clarifying your execution plan."}</li>
-              <li>- {fr ? "Mise à jour du guide pendant 60 jours." : "Guide updates for 60 days."}</li>
-              <li>- {fr ? "Structure orientée stage et début de carrière." : "Structure focused on internship and early career outcomes."}</li>
-            </ul>
-          </section>
-
-          <section className="grid gap-4 md:grid-cols-3">
-            {[
-              {
-                title: fr ? "Jour 1-7" : "Day 1-7",
-                body: fr ? "Choix stack, plan sprint, et début du projet portfolio." : "Pick stack, setup sprint plan, and start your portfolio project."
-              },
-              {
-                title: fr ? "Jour 8-14" : "Day 8-14",
-                body: fr ? "Livraison d'une version utilisable + documentation claire." : "Ship a usable version and document it with clear proof."
-              },
-              {
-                title: fr ? "Jour 15-30" : "Day 15-30",
-                body: fr ? "Optimisation candidatures, storytelling entretien, et itération." : "Optimize applications, interview story, and iteration loop."
-              }
-            ].map((item) => (
-              <article key={item.title} className="glass rounded-xl p-4">
-                <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--primary)]">{item.title}</p>
-                <p className="mt-2 text-sm text-[color:var(--text)]">{item.body}</p>
-              </article>
-            ))}
-          </section>
-
-          <section className="surface rounded-2xl p-6">
-            <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
-              {fr ? "FAQ + objections" : "FAQ + objections"}
-            </h2>
-            <div className="mt-4 space-y-4 text-sm text-[color:var(--text)]">
-              <article>
-                <p className="font-semibold text-[color:var(--text-strong)]">
-                  {fr ? "Je suis débutant, ce guide est-il adapté ?" : "I am a beginner. Is this guide still useful?"}
-                </p>
-                <p className="mt-1">
-                  {fr
-                    ? "Oui. Le guide commence par un plan d'exécution simple puis monte en niveau progressivement."
-                    : "Yes. It starts with a simple execution plan and increases difficulty progressively."}
-                </p>
-              </article>
-              <article>
-                <p className="font-semibold text-[color:var(--text-strong)]">
-                  {fr ? "Je n'ai pas un gros budget outil." : "I do not have a high tool budget."}
-                </p>
-                <p className="mt-1">
-                  {fr
-                    ? "La méthode est construite pour un budget-friendly réaliste avec priorité sur options low-cost."
-                    : "The framework is built for realistic, budget-friendly decisions with low-cost-first options."}
-                </p>
-              </article>
-              <article>
-                <p className="font-semibold text-[color:var(--text-strong)]">
-                  {fr ? "Et si je ne suis pas prêt à acheter ?" : "What if I am not ready to buy yet?"}
-                </p>
-                <p className="mt-1">
-                  {fr
-                    ? "Commencez par la liste des stages puis revenez après votre premier mini sprint."
-                    : "Start with the internship list, then return after your first mini sprint."}
-                </p>
-              </article>
-            </div>
-          </section>
-
-          <Newsletter locale={locale} source="product_page" />
-        </div>
-
-        <aside className="space-y-4 lg:sticky lg:top-32 lg:h-fit">
-          <section className="surface rounded-2xl p-5">
-            <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Actions rapides" : "Quick actions"}
-            </h3>
-            <div className="mt-3 flex flex-col gap-2">
-              <Link href={`/${locale}/blog`} className="btn-secondary text-center">
-                {fr ? "Lire le blog" : "Read blog"}
-              </Link>
-              <Link href={`/${locale}/compare`} className="btn-secondary text-center">
-                {fr ? "Lab outils" : "Tools lab"}
-              </Link>
-              <Link href={`/${locale}/resources`} className="btn-primary text-center">
-                {fr ? "Outils recommandés" : "Recommended tools"}
-              </Link>
-            </div>
-          </section>
-        </aside>
+      <div className="mt-10">
+        <Newsletter locale={locale} source="product_page" />
       </div>
     </div>
   );

@@ -343,12 +343,12 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
           {siteConfig.affiliatePartners.length ? (
             <section className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
               <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-                {locale === "fr" ? "Liens partenaires" : "Partner links"}
+                {locale === "fr" ? "Outils cités" : "Tools referenced here"}
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {locale === "fr"
-                  ? "Ressources partenaires utilisées dans le blog, le lab outils et cette page."
-                  : "Partner resources referenced across the blog, tools lab, and this page."}
+                  ? "Les outils cités dans le blog, le lab outils et cette page. Aucun partenariat, aucune commission."
+                  : "The tools referenced across the blog, tools lab, and this page. No partnership, no commission."}
               </p>
               <div className="mt-4 grid gap-2 md:grid-cols-2">
                 {siteConfig.affiliatePartners.map((partner) => (

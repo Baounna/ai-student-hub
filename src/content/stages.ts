@@ -52,6 +52,18 @@ export function getStagesUpdatedAt() {
   return payload.updatedAt;
 }
 
+/**
+ * updatedAt moves whenever anything writes the file, including adding a single
+ * entry, so the page was announcing "last checked: today" above ninety-six rows
+ * that each said they were checked yesterday. The honest headline figure is the
+ * oldest per-entry check: every link has been verified at least that recently.
+ */
+export function getStagesLastCheckedAt() {
+  const dates = payload.items.map((item) => item.checkedAt).filter(Boolean) as string[];
+  if (!dates.length) return payload.updatedAt;
+  return dates.reduce((oldest, value) => (value < oldest ? value : oldest));
+}
+
 export function getStagesAgeDays(now = Date.now()) {
   const updated = Date.parse(payload.updatedAt);
   if (!Number.isFinite(updated)) return Number.POSITIVE_INFINITY;

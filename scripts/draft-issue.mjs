@@ -36,11 +36,26 @@ const file = JSON.parse(await fs.readFile(STAGES, "utf8"));
 const open = file.items.filter((s) => !s.deadline || Date.parse(`${s.deadline}T23:59:59Z`) >= Date.now());
 
 let since = arg("since");
-if (!since && !ALL) {
-  try { since = JSON.parse(await fs.readFile(STATE, "utf8")).sentAt || ""; } catch { since = ""; }
+/**
+ * Entries already carried in a previous issue, by id. The watermark used to be
+ * a single date, which did not survive the digest cap landing later: one run
+ * stamped today, covered twelve, and every future run then filtered on
+ * "posted after today" and reported nothing new. The other eighty-four could
+ * never appear again. Tracking what was actually sent is the only version of
+ * this that composes with a cap.
+ */
+let alreadySent = new Set();
+if (!ALL) {
+  try {
+    const state = JSON.parse(await fs.readFile(STATE, "utf8"));
+    if (!since) since = state.sentAt || "";
+    if (Array.isArray(state.coveredIds)) alreadySent = new Set(state.coveredIds);
+  } catch {
+    since = since || "";
+  }
 }
 
-const fresh = ALL || !since ? open : open.filter((s) => (s.postedAt || "") > since);
+const fresh = ALL ? open : open.filter((s) => !alreadySent.has(s.id));
 
 /**
  * An email carrying ninety-six outbound links is a spam signal before it is
@@ -59,7 +74,7 @@ const picked = argv.includes("--full") ? ranked : ranked.slice(0, LIMIT);
 const remaining = ranked.length - picked.length;
 
 if (!picked.length) {
-  console.log(`\n  Nothing new since ${since}. Skip this week rather than send an empty email.\n`);
+  console.log(`\n  Every open listing has already been sent. Skip this week rather than repeat one.\n`);
   process.exit(0);
 }
 
@@ -78,6 +93,13 @@ const esc = (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 
 const sections = [["Morocco", byCountry("MA")], ["France", byCountry("FR")]].filter(([, v]) => v.length);
 
+// The oldest per-entry check, so the email never claims a link was verified
+// more recently than it actually was.
+const checkedOn = picked
+  .map((s) => s.checkedAt)
+  .filter(Boolean)
+  .reduce((oldest, value) => (value < oldest ? value : oldest), today);
+
 const dated = picked.filter((s) => s.deadline).length;
 const intro =
   `${picked.length} ${picked.length === 1 ? "opening" : "openings"} below` +
@@ -90,7 +112,7 @@ for (const [name, list] of sections) {
   for (const s of list) { const l = line(s); txt += `\n${l.head}\n  ${l.meta}\n  ${l.href}\n`; }
 }
 txt += remaining > 0 ? `\n\nThe other ${remaining} openings: ${SITE}/en/stages\n` : "\n";
-txt += `\nEvery link above was opened and checked on ${today}.\n`;
+txt += `\nEvery link above was opened and checked on ${checkedOn}.\n`;
 txt += `\nYou are getting this because you signed up at ${SITE}. Unsubscribe any time.\n`;
 
 let html = `<div style="font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;color:#1a1a1a;max-width:640px">
@@ -106,12 +128,16 @@ for (const [name, list] of sections) {
 html += remaining > 0
   ? `<p style="margin:28px 0 0"><a href="${esc(SITE)}/en/stages" style="color:#0b5cd5;font-weight:600">See the other ${remaining} openings</a></p>`
   : "";
-html += `<p style="margin:16px 0 0;color:#666;font-size:14px">Every link above was opened and checked on ${esc(today)}.</p></div>`;
+html += `<p style="margin:16px 0 0;color:#666;font-size:14px">Every link above was opened and checked on ${esc(checkedOn)}.</p></div>`;
 
 await fs.mkdir(OUT, { recursive: true });
 await fs.writeFile(path.join(OUT, `issue-${today}.txt`), txt);
 await fs.writeFile(path.join(OUT, `issue-${today}.html`), html);
-await fs.writeFile(STATE, `${JSON.stringify({ sentAt: today, covered: picked.length }, null, 2)}\n`);
+const covered = [...alreadySent, ...picked.map((s) => s.id)];
+await fs.writeFile(
+  STATE,
+  `${JSON.stringify({ sentAt: today, covered: covered.length, coveredIds: covered }, null, 2)}\n`
+);
 
 const subject = remaining > 0
   ? `${picked.length} internships closing soonest - Morocco and France`
