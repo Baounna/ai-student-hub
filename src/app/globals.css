@@ -146,6 +146,16 @@ html[data-content-width="wide"] {
     scrollbar-gutter: stable;
   }
 
+  /* <main tabindex="-1"> is the skip link's target, not a control anyone can
+     tab to. Giving it a negative tabindex is what makes the skip link move
+     focus at all, but it also made the browser draw its default ring around
+     the entire page content the moment the link was used. The jump to the
+     region is the feedback here; the ring belongs on the controls below. */
+  main[tabindex="-1"]:focus,
+  main[tabindex="-1"]:focus-visible {
+    outline: none;
+  }
+
   a:focus-visible,
   button:focus-visible,
   input:focus-visible,
