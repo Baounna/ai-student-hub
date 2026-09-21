@@ -2,7 +2,6 @@ export type Theme = "dark" | "light";
 export type ThemePreference = Theme | "auto";
 export type TextSize = "small" | "medium" | "large";
 export type ContentWidth = "standard" | "wide";
-export type AppearancePanelState = "visible" | "hidden";
 
 export const appearanceStorageKeys = {
   theme: "theme",
@@ -60,9 +59,3 @@ export function applyContentWidth(width: ContentWidth) {
   announce();
 }
 
-export function applyAppearancePanel(state: AppearancePanelState) {
-  if (typeof document === "undefined") return;
-  document.documentElement.setAttribute("data-appearance-panel", state);
-  localStorage.setItem(appearanceStorageKeys.appearancePanel, state);
-  announce();
-}
