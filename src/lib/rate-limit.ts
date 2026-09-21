@@ -22,26 +22,58 @@ type MemoryBucket = {
 };
 
 const counterBuckets = new Map<string, MemoryBucket>();
-const ttlFlags = new Map<string, number>();
 const MAX_MEMORY_KEYS = 10_000;
-const LOGIN_FAILURE_WINDOW_MS = 60 * 60 * 1000;
+/** Sweeps evict down to here, so the next sweep is thousands of requests away. */
+const TARGET_MEMORY_KEYS = 8_000;
 
 function nowMs() {
   return Date.now();
 }
 
-function trimExpiredMaps(now: number) {
-  if (counterBuckets.size > MAX_MEMORY_KEYS) {
-    counterBuckets.forEach((bucket, key) => {
-      if (bucket.resetAt <= now) counterBuckets.delete(key);
-    });
-  }
+/**
+ * MAX_MEMORY_KEYS used to be a threshold for sweeping expired entries, not a
+ * cap. If every key was still inside its window nothing was deleted and the map
+ * grew without limit, which is the opposite of what the name promised. Worse,
+ * once past the threshold every single request walked the whole map, so the
+ * more distinct keys an attacker created the more work each later request did.
+ *
+ * Now it evicts down to a low-water mark, so a sweep buys headroom for the next
+ * few thousand inserts instead of running again on the very next request.
+ *
+ * Evicting a live counter does reset someone's limit, so the order matters:
+ * soonest-to-expire goes first, since those were about to reset anyway. This is
+ * still a best-effort fallback. A serverless instance holds its own map, so a
+ * limit of N allows up to N per instance. Upstash is the real answer, and the
+ * code already prefers it whenever the environment supplies it.
+ */
+export function evictToBound(
+  buckets: Map<string, { resetAt: number }>,
+  now: number,
+  max: number,
+  target: number
+) {
+  if (buckets.size <= max) return;
 
-  if (ttlFlags.size > MAX_MEMORY_KEYS) {
-    ttlFlags.forEach((expiresAt, key) => {
-      if (expiresAt <= now) ttlFlags.delete(key);
-    });
+  // forEach rather than for..of: the TS target here predates Map iteration.
+  buckets.forEach((bucket, key) => {
+    if (bucket.resetAt <= now) buckets.delete(key);
+  });
+
+  if (buckets.size <= target) return;
+
+  const byExpiry: Array<{ key: string; resetAt: number }> = [];
+  buckets.forEach((bucket, key) => {
+    byExpiry.push({ key, resetAt: bucket.resetAt });
+  });
+  byExpiry.sort((a, b) => a.resetAt - b.resetAt);
+
+  for (let i = 0; i < byExpiry.length && buckets.size > target; i += 1) {
+    buckets.delete(byExpiry[i].key);
   }
+}
+
+function trimExpiredMaps(now: number) {
+  evictToBound(counterBuckets, now, MAX_MEMORY_KEYS, TARGET_MEMORY_KEYS);
 }
 
 function safeInt(value: unknown, fallback: number) {
@@ -109,21 +141,8 @@ async function upstashIncrWithWindow(key: string, windowMs: number): Promise<Cou
   return { count, ttlMs };
 }
 
-async function upstashSetFlagTtl(key: string, ttlMs: number) {
-  const ttl = Math.max(1, Math.trunc(ttlMs));
-  await upstashPipeline([["SET", key, "1", "PX", ttl]]);
-}
 
-async function upstashGetFlagTtl(key: string) {
-  const data = await upstashPipeline([["PTTL", key]]);
-  if (!data || !data.length) return null;
-  return Math.max(0, safeInt(data[0]?.result, 0));
-}
 
-async function upstashDeleteKeys(keys: string[]) {
-  if (!keys.length) return;
-  await upstashPipeline([["DEL", ...keys]]);
-}
 
 function memoryIncrWithWindow(key: string, windowMs: number): CounterState {
   const now = nowMs();
@@ -141,29 +160,8 @@ function memoryIncrWithWindow(key: string, windowMs: number): CounterState {
   return { count: existing.count, ttlMs: Math.max(1, existing.resetAt - now) };
 }
 
-function memorySetFlagTtl(key: string, ttlMs: number) {
-  const now = nowMs();
-  trimExpiredMaps(now);
-  ttlFlags.set(key, now + Math.max(1, Math.trunc(ttlMs)));
-}
 
-function memoryGetFlagTtl(key: string) {
-  const now = nowMs();
-  const expiresAt = ttlFlags.get(key);
-  if (!expiresAt) return 0;
-  if (expiresAt <= now) {
-    ttlFlags.delete(key);
-    return 0;
-  }
-  return Math.max(1, expiresAt - now);
-}
 
-function memoryDeleteKeys(keys: string[]) {
-  for (const key of keys) {
-    counterBuckets.delete(key);
-    ttlFlags.delete(key);
-  }
-}
 
 async function bumpCounter(key: string, windowMs: number): Promise<CounterState> {
   const scoped = ns(key);
@@ -176,39 +174,14 @@ async function bumpCounter(key: string, windowMs: number): Promise<CounterState>
   return memoryIncrWithWindow(scoped, windowMs);
 }
 
-async function setFlagTtl(key: string, ttlMs: number) {
-  const scoped = ns(key);
-  if (hasUpstash()) {
-    await upstashSetFlagTtl(scoped, ttlMs);
-    return;
-  }
-  memorySetFlagTtl(scoped, ttlMs);
-}
 
-async function getFlagTtl(key: string) {
-  const scoped = ns(key);
-  if (hasUpstash()) {
-    const ttl = await upstashGetFlagTtl(scoped);
-    if (ttl !== null) return ttl;
-  }
-  return memoryGetFlagTtl(scoped);
-}
 
-async function deleteKeys(keys: string[]) {
-  const scoped = keys.map((key) => ns(key));
-  if (!scoped.length) return;
-  if (hasUpstash()) {
-    await upstashDeleteKeys(scoped);
-    return;
-  }
-  memoryDeleteKeys(scoped);
-}
 
 export function rateLimitIdentifier(value: string) {
   return createHash("sha256").update(String(value || "").trim().toLowerCase()).digest("hex").slice(0, 24);
 }
 
-export async function rateLimit(key: string, limit: number, windowMs: number): Promise<RateLimitResult> {
+async function rateLimit(key: string, limit: number, windowMs: number): Promise<RateLimitResult> {
   const safeLimit = Math.max(1, Math.trunc(limit));
   const safeWindow = Math.max(500, Math.trunc(windowMs));
   const state = await bumpCounter(`rate:${key}`, safeWindow);
@@ -235,70 +208,8 @@ export async function enforceRateLimitRules(rules: RateLimitRule[]): Promise<Rat
   return { allowed: true, retryAfter: 0 };
 }
 
-function lockDurationSecondsFromFailures(failures: number) {
-  if (failures >= 12) return 30 * 60;
-  if (failures >= 10) return 10 * 60;
-  if (failures >= 8) return 5 * 60;
-  if (failures >= 6) return 60;
-  if (failures >= 5) return 15;
-  return 0;
-}
 
-function lockKeys(emailHash: string, ipHash: string) {
-  return {
-    email: `auth_lock:email:${emailHash}`,
-    combo: `auth_lock:combo:${emailHash}:${ipHash}`
-  };
-}
 
-function failKeys(emailHash: string, ipHash: string) {
-  return {
-    email: `auth_fail:email:${emailHash}`,
-    combo: `auth_fail:combo:${emailHash}:${ipHash}`
-  };
-}
 
-export async function getLoginLockStatus(email: string, ip: string): Promise<{ locked: boolean; retryAfter: number }> {
-  const emailHash = rateLimitIdentifier(email);
-  const ipHash = rateLimitIdentifier(ip);
-  const keys = lockKeys(emailHash, ipHash);
 
-  const [emailTtl, comboTtl] = await Promise.all([getFlagTtl(keys.email), getFlagTtl(keys.combo)]);
-  const ttlMs = Math.max(emailTtl, comboTtl);
-  if (ttlMs <= 0) return { locked: false, retryAfter: 0 };
 
-  return { locked: true, retryAfter: toRetrySeconds(ttlMs) };
-}
-
-export async function recordFailedLoginAttempt(email: string, ip: string) {
-  const emailHash = rateLimitIdentifier(email);
-  const ipHash = rateLimitIdentifier(ip);
-  const fail = failKeys(emailHash, ipHash);
-  const lock = lockKeys(emailHash, ipHash);
-
-  const [emailFailState, comboFailState] = await Promise.all([
-    bumpCounter(fail.email, LOGIN_FAILURE_WINDOW_MS),
-    bumpCounter(fail.combo, LOGIN_FAILURE_WINDOW_MS)
-  ]);
-
-  const failures = Math.max(emailFailState.count, comboFailState.count);
-  const lockSeconds = lockDurationSecondsFromFailures(failures);
-
-  if (lockSeconds > 0) {
-    const lockMs = lockSeconds * 1000;
-    await Promise.all([setFlagTtl(lock.email, lockMs), setFlagTtl(lock.combo, lockMs)]);
-  }
-
-  return {
-    failures,
-    lockSeconds
-  };
-}
-
-export async function clearFailedLoginAttempts(email: string, ip: string) {
-  const emailHash = rateLimitIdentifier(email);
-  const ipHash = rateLimitIdentifier(ip);
-  const fail = failKeys(emailHash, ipHash);
-  const lock = lockKeys(emailHash, ipHash);
-  await deleteKeys([fail.email, fail.combo, lock.email, lock.combo]);
-}
