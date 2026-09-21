@@ -161,7 +161,7 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
       <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
       <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(itemListSchema) }} />
 
-      <Breadcrumbs items={breadcrumbs} />
+      <Breadcrumbs items={breadcrumbs} locale={locale} />
 
       <header className="mt-4">
         <h1 className="font-display hero-title font-bold text-[color:var(--text-strong)]">{copy.title}</h1>

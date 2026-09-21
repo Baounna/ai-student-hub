@@ -67,6 +67,7 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
   return (
     <section className="page-shell max-w-6xl py-10 md:py-16">
       <Breadcrumbs
+        locale={locale}
         items={[
           { label: "AI and Cybersecurity News", href: `/${locale}` },
           { label: dict.nav.blog, href: `/${locale}/blog` },

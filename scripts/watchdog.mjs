@@ -137,10 +137,20 @@ async function checkContentFreshness() {
  * deadlines looks maintained while every date on it passes. The page admits its
  * own age to readers; this tells the publisher before it gets that far.
  *
- * Deliberately more patient than the page. Readers see a notice at 14 days;
- * this only raises an issue at 21, so a single busy fortnight is not an alarm.
+ * It used to be deliberately more patient than the page: readers saw a notice
+ * at 14 days, this raised an issue at 21. That meant a week in which the public
+ * banner was up and nothing told the person who could take it down. A watchdog
+ * that fires at the same moment as the banner is not a warning either, so this
+ * now reads the page's own threshold and warns a few days ahead of it.
  */
-const STAGES_STALE_AFTER_DAYS = Number.parseInt(process.env.WATCHDOG_STAGES_MAX_AGE_DAYS || "21", 10);
+const STAGES_WARN_LEAD_DAYS = Number.parseInt(process.env.WATCHDOG_STAGES_LEAD_DAYS || "3", 10);
+
+/** Read from the source of truth so the two numbers cannot drift apart again. */
+async function pageStaleThreshold() {
+  const source = await fs.readFile(path.join(process.cwd(), "src/content/stages.ts"), "utf8");
+  const match = source.match(/STALE_AFTER_DAYS\s*=\s*(\d+)/);
+  return match ? Number.parseInt(match[1], 10) : null;
+}
 
 async function checkStagesFreshness() {
   try {
@@ -153,26 +163,42 @@ async function checkStagesFreshness() {
       return;
     }
 
-    const updated = Date.parse(data.updatedAt);
-    if (!Number.isFinite(updated)) {
-      record("Stages list", false, "stages.json has no readable updatedAt");
+    const pageThreshold = await pageStaleThreshold();
+    if (pageThreshold === null) {
+      record("Stages list", false, "cannot read STALE_AFTER_DAYS from stages.ts — thresholds may have drifted");
+      return;
+    }
+    const limit = Math.max(1, pageThreshold - STAGES_WARN_LEAD_DAYS);
+
+    // The page headlines the oldest per-entry check, because writing the file
+    // is not the same as checking the links. Measure what the reader is shown.
+    const checked = items.map((i) => i.checkedAt).filter(Boolean).sort();
+    const oldest = checked.length ? Date.parse(`${checked[0]}T12:00:00Z`) : Date.parse(data.updatedAt);
+    if (!Number.isFinite(oldest)) {
+      record("Stages list", false, "stages.json has no readable checkedAt or updatedAt");
       return;
     }
 
-    const ageDays = Math.floor((Date.now() - updated) / 86_400_000);
+    const ageDays = Math.floor((Date.now() - oldest) / 86_400_000);
     const now = Date.now();
-    const open = items.filter((i) => Date.parse(`${i.deadline}T23:59:59Z`) >= now).length;
+    // A listing with no published closing date is open until someone says
+    // otherwise. Parsing an absent deadline gives NaN and NaN >= now is false,
+    // so this counted all ninety-two rolling entries as closed and could report
+    // "all entries have closed" about a perfectly healthy list.
+    const open = items.filter(
+      (i) => !i.deadline || Date.parse(`${i.deadline}T23:59:59Z`) >= now
+    ).length;
 
-    if (ageDays > STAGES_STALE_AFTER_DAYS) {
+    if (ageDays > limit) {
       record("Stages list", false,
-        `not updated for ${ageDays} days (limit ${STAGES_STALE_AFTER_DAYS}) — ${open} of ${items.length} still open`);
+        `links unchecked for ${ageDays} days (warn at ${limit}, page says stale at ${pageThreshold}) — ${open} of ${items.length} still open`);
       return;
     }
     if (open === 0) {
       record("Stages list", false, `all ${items.length} entries have closed — the page has nothing to offer`);
       return;
     }
-    record("Stages list", true, `${open} open of ${items.length}, updated ${ageDays}d ago`);
+    record("Stages list", true, `${open} open of ${items.length}, links checked ${ageDays}d ago`);
   } catch (error) {
     record("Stages list", false, `cannot read stages.json — ${String(error?.message || error).slice(0, 70)}`);
   }

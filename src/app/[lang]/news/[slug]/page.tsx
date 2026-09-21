@@ -207,6 +207,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
       <ReadingProgress />
       <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(articleSchema) }} />
       <Breadcrumbs
+        locale={locale}
         items={[
           { label: "AI and Cybersecurity News", href: `/${locale}` },
           { label: dict.nav.news, href: `/${locale}/news` },
