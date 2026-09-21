@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-20T20:47:00.713Z",
+  "updatedAt": "2026-09-21T12:44:08.101Z",
   "items": [
+    {
+      "slug": "20260921-w3c-irc-bots-now-open-source-28d6f244",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-irc-bots-now-open-source/",
+      "publishedAt": "2026-09-21T11:13:00.000Z",
+      "discoveredAt": "2026-09-21T12:44:08.101Z",
+      "locales": {
+        "en": {
+          "title": "W3C IRC bots now open source",
+          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
+        },
+        "fr": {
+          "title": "W3C IRC bots now open source",
+          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
+        }
+      }
+    },
     {
       "slug": "20260918-amazon-sagemaker-inference-2026-year-to-date-launches-in-review-b66c7581",
       "topic": "AI Systems",
@@ -56,25 +75,6 @@
         "fr": {
           "title": "Saving another 100TB of RAM with math (and Rust)",
           "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RA…"
-        }
-      }
-    },
-    {
-      "slug": "20260918-w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026-266b9a5f",
-      "topic": "AI Systems",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026/",
-      "publishedAt": "2026-09-18T16:49:00.000Z",
-      "discoveredAt": "2026-09-18T20:52:50.113Z",
-      "locales": {
-        "en": {
-          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
-          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber Resilience…"
-        },
-        "fr": {
-          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
-          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber Resilience…"
         }
       }
     },
@@ -364,6 +364,25 @@
       }
     },
     {
+      "slug": "20260918-w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026-266b9a5f",
+      "topic": "AI Systems",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026/",
+      "publishedAt": "2026-09-18T16:49:00.000Z",
+      "discoveredAt": "2026-09-18T20:52:50.113Z",
+      "locales": {
+        "en": {
+          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
+          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber Resilience…"
+        },
+        "fr": {
+          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
+          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber Resilience…"
+        }
+      }
+    },
+    {
       "slug": "20260918-introducing-kimi-k3-on-amazon-bedrock-02df25c9",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -417,25 +436,6 @@
         "fr": {
           "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
           "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investig…"
-        }
-      }
-    },
-    {
-      "slug": "20260916-w3c-launches-first-pilot-of-program-to-support-open-source-proje-daf0158b",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-launches-first-pilot-of-program-to-support-open-source-projects/",
-      "publishedAt": "2026-09-16T13:53:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
-      "locales": {
-        "en": {
-          "title": "W3C launches first pilot of program to support Open Source projects",
-          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR policies design…"
-        },
-        "fr": {
-          "title": "W3C launches first pilot of program to support Open Source projects",
-          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR policies design…"
         }
       }
     },
@@ -706,6 +706,25 @@
       }
     },
     {
+      "slug": "20260916-w3c-launches-first-pilot-of-program-to-support-open-source-proje-daf0158b",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-launches-first-pilot-of-program-to-support-open-source-projects/",
+      "publishedAt": "2026-09-16T13:53:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "locales": {
+        "en": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR policies design…"
+        },
+        "fr": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR policies design…"
+        }
+      }
+    },
+    {
       "slug": "20260918-migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runt-bddee9dd",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -759,25 +778,6 @@
         "fr": {
           "title": "Have it both ways: stay discoverable in search while disallowing AI training",
           "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
-        }
-      }
-    },
-    {
-      "slug": "20260909-a-compilation-of-w3c-in-japans-30th-anniversary-events-26d8dabd",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/",
-      "publishedAt": "2026-09-09T20:50:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "A compilation of W3C in Japan's 30th anniversary events",
-          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event early Sept…"
-        },
-        "fr": {
-          "title": "A compilation of W3C in Japan's 30th anniversary events",
-          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event early Sept…"
         }
       }
     },
@@ -1048,6 +1048,25 @@
       }
     },
     {
+      "slug": "20260909-a-compilation-of-w3c-in-japans-30th-anniversary-events-26d8dabd",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/",
+      "publishedAt": "2026-09-09T20:50:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "A compilation of W3C in Japan's 30th anniversary events",
+          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event early Sept…"
+        },
+        "fr": {
+          "title": "A compilation of W3C in Japan's 30th anniversary events",
+          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event early Sept…"
+        }
+      }
+    },
+    {
       "slug": "20260918-the-new-agentcore-runtime-elastic-optimized-and-consistently-fas-f3de0e1a",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -1101,25 +1120,6 @@
         "fr": {
           "title": "Give every teammate and agent the right level of access to your Workers",
           "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
-        }
-      }
-    },
-    {
-      "slug": "20260824-making-digital-identity-work-across-the-web-gdc-2026-f09de87c",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/a-global-digital-infrastructure-gdc-2026/",
-      "publishedAt": "2026-08-24T07:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Making digital identity work across the Web: GDC 2026",
-          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a focus on…"
-        },
-        "fr": {
-          "title": "Making digital identity work across the Web: GDC 2026",
-          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a focus on…"
         }
       }
     },
@@ -1386,6 +1386,25 @@
         "fr": {
           "title": "Below the Harness: Governing a Multi-Model, Multi-Harness World",
           "summary": "We believe the future is a multi-model, multi-harness world. And we think it needs a new trust model. In 1988, Norm Hardy described a problem that had been quietly breaking systems for years: the confused deputy. A program that t…"
+        }
+      }
+    },
+    {
+      "slug": "20260824-making-digital-identity-work-across-the-web-gdc-2026-f09de87c",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/a-global-digital-infrastructure-gdc-2026/",
+      "publishedAt": "2026-08-24T07:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Making digital identity work across the Web: GDC 2026",
+          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a focus on…"
+        },
+        "fr": {
+          "title": "Making digital identity work across the Web: GDC 2026",
+          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a focus on…"
         }
       }
     },
@@ -3153,25 +3172,6 @@
         "fr": {
           "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
           "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
-        }
-      }
-    },
-    {
-      "slug": "20260806-aug-7-2026-product-improving-fable-5s-biology-safeguards-7fee6508",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "publishedAt": "2026-08-06T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Aug 7, 2026 Product Improving Fable 5's biology safeguards",
-          "summary": "Announcements How Claude’s text watermark works Aug 4, 2026"
-        },
-        "fr": {
-          "title": "Aug 7, 2026 Product Improving Fable 5's biology safeguards",
-          "summary": "Announcements How Claude’s text watermark works Aug 4, 2026"
         }
       }
     },

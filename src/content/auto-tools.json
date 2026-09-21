@@ -1,44 +1,64 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-20T20:47:02.390Z",
+  "updatedAt": "2026-09-21T12:44:09.835Z",
   "items": [
     {
-      "slug": "20260920-vercel-v0-now-reads-npm-credentials-from-shared-environment-vari-dde4a480",
+      "slug": "20260921-vercel-webmcp-support-now-available-in-mcp-handler-mcp-handler-a-32ae7a20",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/v0-now-reads-npm-credentials-from-shared-environment-variables",
-      "publishedAt": "2026-09-20T20:47:02.390Z",
-      "discoveredAt": "2026-09-20T20:47:02.390Z",
+      "href": "https://vercel.com/changelog/webmcp-mcp-handler",
+      "publishedAt": "2026-09-21T12:44:09.835Z",
+      "discoveredAt": "2026-09-21T12:44:09.835Z",
       "locales": {
         "en": {
-          "title": "v0 now reads npm credentials from shared environment variables v0 can now install private packages from npm and custom registries. Add an NPM_TOKEN or NPM_RC environment variable to build with your team's internal packages, design systems, and component libraries in v0. Vishal Yathish, Sahaj Jain",
-          "summary": "-besemer-128.jpg\"/> Andrew Qu, Boris Besemer"
+          "title": "WebMCP support now available in mcp-handler mcp-handler adds experimental WebMCP support. Expose your MCP tools to in-browser agents with a single script tag, no separate OAuth flow required. Andrew Qu, Boris Besemer",
+          "summary": "8.jpg\"/> Lakshmi Subbramanian, Bryan Mishkin"
         },
         "fr": {
-          "title": "v0 now reads npm credentials from shared environment variables v0 can now install private packages from npm and custom registries. Add an NPM_TOKEN or NPM_RC environment variable to build with your team's internal packages, design systems, and component libraries in v0. Vishal Yathish, Sahaj Jain",
-          "summary": "-besemer-128.jpg\"/> Andrew Qu, Boris Besemer"
+          "title": "WebMCP support now available in mcp-handler mcp-handler adds experimental WebMCP support. Expose your MCP tools to in-browser agents with a single script tag, no separate OAuth flow required. Andrew Qu, Boris Besemer",
+          "summary": "8.jpg\"/> Lakshmi Subbramanian, Bryan Mishkin"
         }
       }
     },
     {
-      "slug": "20260920-supabase-public-alpha-supabase-pipelines-8df37aee",
+      "slug": "20260921-supabase-migration-of-supabase-management-api-logsall-analytics--b021c0b5",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/pipelines",
-      "publishedAt": "2026-09-20T20:47:02.390Z",
-      "discoveredAt": "2026-09-20T20:47:02.390Z",
+      "href": "https://supabase.com/changelog/48235-migration-of-supabase-management-api-logs-all-analytics-endpoint-to-logs-endpoint",
+      "publishedAt": "2026-09-21T12:44:09.835Z",
+      "discoveredAt": "2026-09-21T12:44:09.835Z",
       "locales": {
         "en": {
-          "title": "[Public Alpha] Supabase Pipelines",
-          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
+          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
         },
         "fr": {
-          "title": "[Public Alpha] Supabase Pipelines",
-          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
+          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
+        }
+      }
+    },
+    {
+      "slug": "20260921-w3c-w3c-irc-bots-now-open-source-28d6f244",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-irc-bots-now-open-source/",
+      "publishedAt": "2026-09-21T11:13:00.000Z",
+      "discoveredAt": "2026-09-21T12:44:09.835Z",
+      "locales": {
+        "en": {
+          "title": "W3C IRC bots now open source",
+          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
+        },
+        "fr": {
+          "title": "W3C IRC bots now open source",
+          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
         }
       }
     },
@@ -99,26 +119,6 @@
         "fr": {
           "title": "Saving another 100TB of RAM with math (and Rust)",
           "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based se…"
-        }
-      }
-    },
-    {
-      "slug": "20260918-w3c-w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026-266b9a5f",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026/",
-      "publishedAt": "2026-09-18T16:49:00.000Z",
-      "discoveredAt": "2026-09-18T20:52:51.777Z",
-      "locales": {
-        "en": {
-          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
-          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
-        },
-        "fr": {
-          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
-          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
         }
       }
     },
@@ -383,42 +383,62 @@
       }
     },
     {
-      "slug": "20260920-vercel-glm-53-flashx-now-available-on-ai-gateway-call-zais-glm-5-32372f02",
+      "slug": "20260920-vercel-v0-now-reads-npm-credentials-from-shared-environment-vari-dde4a480",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/glm-5-3-flashx-now-available-on-ai-gateway",
-      "publishedAt": "2026-09-20T11:19:33.192Z",
-      "discoveredAt": "2026-09-20T11:19:33.192Z",
+      "href": "https://vercel.com/changelog/v0-now-reads-npm-credentials-from-shared-environment-variables",
+      "publishedAt": "2026-09-20T20:47:02.390Z",
+      "discoveredAt": "2026-09-20T20:47:02.390Z",
       "locales": {
         "en": {
-          "title": "GLM 5.3 FlashX now available on AI Gateway Call Z.ai's GLM 5.3 FlashX through Vercel AI Gateway at 200 tokens per second, with one API key, automatic fallbacks, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "8c6c/image.png\"/> Vishal Yathish, Sahaj Jain"
+          "title": "v0 now reads npm credentials from shared environment variables v0 can now install private packages from npm and custom registries. Add an NPM_TOKEN or NPM_RC environment variable to build with your team's internal packages, design systems, and component libraries in v0. Vishal Yathish, Sahaj Jain",
+          "summary": "-besemer-128.jpg\"/> Andrew Qu, Boris Besemer"
         },
         "fr": {
-          "title": "GLM 5.3 FlashX now available on AI Gateway Call Z.ai's GLM 5.3 FlashX through Vercel AI Gateway at 200 tokens per second, with one API key, automatic fallbacks, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "8c6c/image.png\"/> Vishal Yathish, Sahaj Jain"
+          "title": "v0 now reads npm credentials from shared environment variables v0 can now install private packages from npm and custom registries. Add an NPM_TOKEN or NPM_RC environment variable to build with your team's internal packages, design systems, and component libraries in v0. Vishal Yathish, Sahaj Jain",
+          "summary": "-besemer-128.jpg\"/> Andrew Qu, Boris Besemer"
         }
       }
     },
     {
-      "slug": "20260920-supabase-realtime-schema-is-now-fully-locked-down-against-modifi-4d315f11",
+      "slug": "20260920-supabase-public-alpha-supabase-pipelines-8df37aee",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/realtime-schema-locked-down-against-modification",
-      "publishedAt": "2026-09-20T11:19:33.192Z",
-      "discoveredAt": "2026-09-20T11:19:33.192Z",
+      "href": "https://supabase.com/changelog/pipelines",
+      "publishedAt": "2026-09-20T20:47:02.390Z",
+      "discoveredAt": "2026-09-20T20:47:02.390Z",
       "locales": {
         "en": {
-          "title": "Realtime schema is now fully locked down against modifications",
-          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+          "title": "[Public Alpha] Supabase Pipelines",
+          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
         },
         "fr": {
-          "title": "Realtime schema is now fully locked down against modifications",
-          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+          "title": "[Public Alpha] Supabase Pipelines",
+          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+        }
+      }
+    },
+    {
+      "slug": "20260918-w3c-w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026-266b9a5f",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026/",
+      "publishedAt": "2026-09-18T16:49:00.000Z",
+      "discoveredAt": "2026-09-18T20:52:51.777Z",
+      "locales": {
+        "en": {
+          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
+          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
+        },
+        "fr": {
+          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
+          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
         }
       }
     },
@@ -479,26 +499,6 @@
         "fr": {
           "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
           "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analys…"
-        }
-      }
-    },
-    {
-      "slug": "20260916-w3c-w3c-launches-first-pilot-of-program-to-support-open-source-p-daf0158b",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-launches-first-pilot-of-program-to-support-open-source-projects/",
-      "publishedAt": "2026-09-16T13:53:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "W3C launches first pilot of program to support Open Source projects",
-          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
-        },
-        "fr": {
-          "title": "W3C launches first pilot of program to support Open Source projects",
-          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
         }
       }
     },
@@ -763,42 +763,62 @@
       }
     },
     {
-      "slug": "20260919-vercel-sub-second-artifact-deployments-are-now-supported-in-verc-a3cc0aad",
+      "slug": "20260920-vercel-glm-53-flashx-now-available-on-ai-gateway-call-zais-glm-5-32372f02",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/sub-second-artifact-deployments-are-now-supported-in-vercel-cli",
-      "publishedAt": "2026-09-19T20:37:22.689Z",
-      "discoveredAt": "2026-09-19T20:37:22.689Z",
+      "href": "https://vercel.com/changelog/glm-5-3-flashx-now-available-on-ai-gateway",
+      "publishedAt": "2026-09-20T11:19:33.192Z",
+      "discoveredAt": "2026-09-20T11:19:33.192Z",
       "locales": {
         "en": {
-          "title": "Sub-second artifact deployments are now supported in Vercel CLI Use the Vercel CLI to deploy static artifacts to Vercel in less than one second. Melkey Moksyakov, Andrew Healey , and 1 other",
-          "summary": "17 September 17 Sep"
+          "title": "GLM 5.3 FlashX now available on AI Gateway Call Z.ai's GLM 5.3 FlashX through Vercel AI Gateway at 200 tokens per second, with one API key, automatic fallbacks, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "8c6c/image.png\"/> Vishal Yathish, Sahaj Jain"
         },
         "fr": {
-          "title": "Sub-second artifact deployments are now supported in Vercel CLI Use the Vercel CLI to deploy static artifacts to Vercel in less than one second. Melkey Moksyakov, Andrew Healey , and 1 other",
-          "summary": "17 September 17 Sep"
+          "title": "GLM 5.3 FlashX now available on AI Gateway Call Z.ai's GLM 5.3 FlashX through Vercel AI Gateway at 200 tokens per second, with one API key, automatic fallbacks, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "8c6c/image.png\"/> Vishal Yathish, Sahaj Jain"
         }
       }
     },
     {
-      "slug": "20260919-supabase-deprecation-notice-supabasesupabase-js-will-require-typ-31c8f33a",
+      "slug": "20260920-supabase-realtime-schema-is-now-fully-locked-down-against-modifi-4d315f11",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/47812-deprecation-notice-supabase-supabase-js-will-require-typescript-5-0",
-      "publishedAt": "2026-09-19T20:37:22.689Z",
-      "discoveredAt": "2026-09-19T20:37:22.689Z",
+      "href": "https://supabase.com/changelog/realtime-schema-locked-down-against-modification",
+      "publishedAt": "2026-09-20T11:19:33.192Z",
+      "discoveredAt": "2026-09-20T11:19:33.192Z",
       "locales": {
         "en": {
-          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
-          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
+          "title": "Realtime schema is now fully locked down against modifications",
+          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
         },
         "fr": {
-          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
-          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
+          "title": "Realtime schema is now fully locked down against modifications",
+          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+        }
+      }
+    },
+    {
+      "slug": "20260916-w3c-w3c-launches-first-pilot-of-program-to-support-open-source-p-daf0158b",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-launches-first-pilot-of-program-to-support-open-source-projects/",
+      "publishedAt": "2026-09-16T13:53:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
+        },
+        "fr": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
         }
       }
     },
@@ -859,26 +879,6 @@
         "fr": {
           "title": "Have it both ways: stay discoverable in search while disallowing AI training",
           "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
-        }
-      }
-    },
-    {
-      "slug": "20260909-w3c-a-compilation-of-w3c-in-japans-30th-anniversary-events-26d8dabd",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/",
-      "publishedAt": "2026-09-09T20:50:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "A compilation of W3C in Japan's 30th anniversary events",
-          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
-        },
-        "fr": {
-          "title": "A compilation of W3C in Japan's 30th anniversary events",
-          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
         }
       }
     },
@@ -1143,42 +1143,62 @@
       }
     },
     {
-      "slug": "20260919-vercel-turbo-build-machines-can-now-be-enabled-per-deployment-yo-7953d938",
+      "slug": "20260919-vercel-sub-second-artifact-deployments-are-now-supported-in-verc-a3cc0aad",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/turbo-build-machines-can-now-be-enabled-per-deployment",
-      "publishedAt": "2026-09-19T10:55:48.910Z",
-      "discoveredAt": "2026-09-19T10:55:48.910Z",
+      "href": "https://vercel.com/changelog/sub-second-artifact-deployments-are-now-supported-in-vercel-cli",
+      "publishedAt": "2026-09-19T20:37:22.689Z",
+      "discoveredAt": "2026-09-19T20:37:22.689Z",
       "locales": {
         "en": {
-          "title": "Turbo build machines can now be enabled per deployment You can now opt into Turbo build machines on a per deployment basis. This keeps costs down for standard deployments and allows temporary upgrades when urgency is required Mehul Kar Software Engineer",
-          "summary": "Melkey Moksyakov, Andrew Healey , and 1 other"
+          "title": "Sub-second artifact deployments are now supported in Vercel CLI Use the Vercel CLI to deploy static artifacts to Vercel in less than one second. Melkey Moksyakov, Andrew Healey , and 1 other",
+          "summary": "17 September 17 Sep"
         },
         "fr": {
-          "title": "Turbo build machines can now be enabled per deployment You can now opt into Turbo build machines on a per deployment basis. This keeps costs down for standard deployments and allows temporary upgrades when urgency is required Mehul Kar Software Engineer",
-          "summary": "Melkey Moksyakov, Andrew Healey , and 1 other"
+          "title": "Sub-second artifact deployments are now supported in Vercel CLI Use the Vercel CLI to deploy static artifacts to Vercel in less than one second. Melkey Moksyakov, Andrew Healey , and 1 other",
+          "summary": "17 September 17 Sep"
         }
       }
     },
     {
-      "slug": "20260919-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
+      "slug": "20260919-supabase-deprecation-notice-supabasesupabase-js-will-require-typ-31c8f33a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/restore-credential-resync",
-      "publishedAt": "2026-09-19T10:55:48.910Z",
-      "discoveredAt": "2026-09-19T10:55:48.910Z",
+      "href": "https://supabase.com/changelog/47812-deprecation-notice-supabase-supabase-js-will-require-typescript-5-0",
+      "publishedAt": "2026-09-19T20:37:22.689Z",
+      "discoveredAt": "2026-09-19T20:37:22.689Z",
       "locales": {
         "en": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
+          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
         },
         "fr": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+          "title": "Deprecation notice: @supabase/supabase-js will require TypeScript 5.0+",
+          "summary": "Deprecation @supabase/supabase-js will require TypeScript 5.0 starting January 31"
+        }
+      }
+    },
+    {
+      "slug": "20260909-w3c-a-compilation-of-w3c-in-japans-30th-anniversary-events-26d8dabd",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/",
+      "publishedAt": "2026-09-09T20:50:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "A compilation of W3C in Japan's 30th anniversary events",
+          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
+        },
+        "fr": {
+          "title": "A compilation of W3C in Japan's 30th anniversary events",
+          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
         }
       }
     },
@@ -1239,26 +1259,6 @@
         "fr": {
           "title": "Give every teammate and agent the right level of access to your Workers",
           "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
-        }
-      }
-    },
-    {
-      "slug": "20260824-w3c-making-digital-identity-work-across-the-web-gdc-2026-f09de87c",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/a-global-digital-infrastructure-gdc-2026/",
-      "publishedAt": "2026-08-24T07:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Making digital identity work across the Web: GDC 2026",
-          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
-        },
-        "fr": {
-          "title": "Making digital identity work across the Web: GDC 2026",
-          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
         }
       }
     },
@@ -1523,42 +1523,62 @@
       }
     },
     {
-      "slug": "20260919-vercel-run-terminal-bench-and-other-harbor-evals-on-vercel-sandb-82b0afd7",
+      "slug": "20260919-vercel-turbo-build-machines-can-now-be-enabled-per-deployment-yo-7953d938",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/run-terminal-bench-and-other-harbor-evals-on-vercel-sandbox",
+      "href": "https://vercel.com/changelog/turbo-build-machines-can-now-be-enabled-per-deployment",
       "publishedAt": "2026-09-19T10:55:48.910Z",
       "discoveredAt": "2026-09-19T10:55:48.910Z",
       "locales": {
         "en": {
-          "title": "Run Terminal-Bench and other Harbor evals on Vercel Sandbox Harbor 0.22.0 adds Vercel Sandbox as an eval environment. Pass --env vercel to run Terminal-Bench and other Harbor benchmarks with each trial in its own isolated microVM. Elisabeth Rülke, George Fahmy",
-          "summary": "Mehul Kar Software Engineer"
+          "title": "Turbo build machines can now be enabled per deployment You can now opt into Turbo build machines on a per deployment basis. This keeps costs down for standard deployments and allows temporary upgrades when urgency is required Mehul Kar Software Engineer",
+          "summary": "Melkey Moksyakov, Andrew Healey , and 1 other"
         },
         "fr": {
-          "title": "Run Terminal-Bench and other Harbor evals on Vercel Sandbox Harbor 0.22.0 adds Vercel Sandbox as an eval environment. Pass --env vercel to run Terminal-Bench and other Harbor benchmarks with each trial in its own isolated microVM. Elisabeth Rülke, George Fahmy",
-          "summary": "Mehul Kar Software Engineer"
+          "title": "Turbo build machines can now be enabled per deployment You can now opt into Turbo build machines on a per deployment basis. This keeps costs down for standard deployments and allows temporary upgrades when urgency is required Mehul Kar Software Engineer",
+          "summary": "Melkey Moksyakov, Andrew Healey , and 1 other"
         }
       }
     },
     {
-      "slug": "20260918-supabase-fixed-daily-backups-occasionally-skipped-due-to-a-sched-b529818e",
+      "slug": "20260919-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/bulk-prepare-retry-on-transient-failure",
-      "publishedAt": "2026-09-18T20:52:51.777Z",
-      "discoveredAt": "2026-09-18T20:52:51.777Z",
+      "href": "https://supabase.com/changelog/restore-credential-resync",
+      "publishedAt": "2026-09-19T10:55:48.910Z",
+      "discoveredAt": "2026-09-19T10:55:48.910Z",
       "locales": {
         "en": {
-          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
-          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
         },
         "fr": {
-          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
-          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+        }
+      }
+    },
+    {
+      "slug": "20260824-w3c-making-digital-identity-work-across-the-web-gdc-2026-f09de87c",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/a-global-digital-infrastructure-gdc-2026/",
+      "publishedAt": "2026-08-24T07:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Making digital identity work across the Web: GDC 2026",
+          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
+        },
+        "fr": {
+          "title": "Making digital identity work across the Web: GDC 2026",
+          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
         }
       }
     },
@@ -1619,26 +1639,6 @@
         "fr": {
           "title": "Introducing automatic remediation policies with Cloudflare CASB",
           "summary": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky f…"
-        }
-      }
-    },
-    {
-      "slug": "20260728-w3c-woff-10-a-milestone-on-w3cs-journey-of-fonts-on-the-web-c48b749f",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/woff-1-0-a-milestone-on-w3cs-journey-of-fonts-on-the-web/",
-      "publishedAt": "2026-07-28T14:40:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "WOFF 1.0: a milestone on W3C’s journey of fonts on the web",
-          "summary": "The anniversary of the first public release of Web Open Font Format (WOFF) is a very interesting historical milestone on the decades-long road of W3C’s work on fonts on the web."
-        },
-        "fr": {
-          "title": "WOFF 1.0: a milestone on W3C’s journey of fonts on the web",
-          "summary": "The anniversary of the first public release of Web Open Font Format (WOFF) is a very interesting historical milestone on the decades-long road of W3C’s work on fonts on the web."
         }
       }
     },
@@ -1883,42 +1883,62 @@
       }
     },
     {
-      "slug": "20260919-notion-the-skills-cli-now-supports-notion-hosted-skills-install--a80d1119",
-      "toolName": "Notion",
-      "category": "Productivity Workspace",
+      "slug": "20260919-vercel-run-terminal-bench-and-other-harbor-evals-on-vercel-sandb-82b0afd7",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/skills-cli-notion-skills",
+      "href": "https://vercel.com/changelog/run-terminal-bench-and-other-harbor-evals-on-vercel-sandbox",
       "publishedAt": "2026-09-19T10:55:48.910Z",
       "discoveredAt": "2026-09-19T10:55:48.910Z",
       "locales": {
         "en": {
-          "title": "The skills CLI now supports Notion hosted skills Install agent skills from a Notion skills database with the skills CLI, no Git repository required. Andrew Qu, Jonathan Hefner, and 1 other",
-          "summary": "c0e-512.jpg\"/> Elisabeth Rülke, George Fahmy"
+          "title": "Run Terminal-Bench and other Harbor evals on Vercel Sandbox Harbor 0.22.0 adds Vercel Sandbox as an eval environment. Pass --env vercel to run Terminal-Bench and other Harbor benchmarks with each trial in its own isolated microVM. Elisabeth Rülke, George Fahmy",
+          "summary": "Mehul Kar Software Engineer"
         },
         "fr": {
-          "title": "The skills CLI now supports Notion hosted skills Install agent skills from a Notion skills database with the skills CLI, no Git repository required. Andrew Qu, Jonathan Hefner, and 1 other",
-          "summary": "c0e-512.jpg\"/> Elisabeth Rülke, George Fahmy"
+          "title": "Run Terminal-Bench and other Harbor evals on Vercel Sandbox Harbor 0.22.0 adds Vercel Sandbox as an eval environment. Pass --env vercel to run Terminal-Bench and other Harbor benchmarks with each trial in its own isolated microVM. Elisabeth Rülke, George Fahmy",
+          "summary": "Mehul Kar Software Engineer"
         }
       }
     },
     {
-      "slug": "20260918-supabase-health-check-advisors-ff04ed6f",
+      "slug": "20260918-supabase-fixed-daily-backups-occasionally-skipped-due-to-a-sched-b529818e",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/50577-health-check-advisors",
-      "publishedAt": "2026-09-18T00:00:00.000Z",
+      "href": "https://supabase.com/changelog/bulk-prepare-retry-on-transient-failure",
+      "publishedAt": "2026-09-18T20:52:51.777Z",
       "discoveredAt": "2026-09-18T20:52:51.777Z",
       "locales": {
         "en": {
-          "title": "Health Check Advisors",
-          "summary": "Sep 18, 2026"
+          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
+          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
         },
         "fr": {
-          "title": "Health Check Advisors",
-          "summary": "Sep 18, 2026"
+          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
+          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
+        }
+      }
+    },
+    {
+      "slug": "20260728-w3c-woff-10-a-milestone-on-w3cs-journey-of-fonts-on-the-web-c48b749f",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/woff-1-0-a-milestone-on-w3cs-journey-of-fonts-on-the-web/",
+      "publishedAt": "2026-07-28T14:40:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "WOFF 1.0: a milestone on W3C’s journey of fonts on the web",
+          "summary": "The anniversary of the first public release of Web Open Font Format (WOFF) is a very interesting historical milestone on the decades-long road of W3C’s work on fonts on the web."
+        },
+        "fr": {
+          "title": "WOFF 1.0: a milestone on W3C’s journey of fonts on the web",
+          "summary": "The anniversary of the first public release of Web Open Font Format (WOFF) is a very interesting historical milestone on the decades-long road of W3C’s work on fonts on the web."
         }
       }
     },
@@ -1983,26 +2003,6 @@
       }
     },
     {
-      "slug": "20260724-w3c-simplified-task-force-enrollment-and-participant-management-e7ce2f82",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/task-force-participation-management/",
-      "publishedAt": "2026-07-24T10:35:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Simplified task force enrollment and participant management",
-          "summary": "This blog post is about incremental improvements by W3C's IT/Systems Operations Team that puts task force participation management directly in the hands of participants and chairs."
-        },
-        "fr": {
-          "title": "Simplified task force enrollment and participant management",
-          "summary": "This blog post is about incremental improvements by W3C's IT/Systems Operations Team that puts task force participation management directly in the hands of participants and chairs."
-        }
-      }
-    },
-    {
       "slug": "20260915-google-ai-ai-for-everyone-in-every-language-a243976a",
       "toolName": "Google AI",
       "category": "AI Platform",
@@ -2063,22 +2063,22 @@
       }
     },
     {
-      "slug": "20260827-anthropic-platform-aug-27-2026-announcements-previewing-the-mode-e8e7441a",
+      "slug": "20260827-anthropic-platform-aug-27-2026-announcements-expanding-our-suppo-d575f18c",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "href": "https://www.anthropic.com/news/expanding-support-for-scientists",
       "publishedAt": "2026-08-27T00:00:00.000Z",
-      "discoveredAt": "2026-09-20T20:47:02.390Z",
+      "discoveredAt": "2026-09-21T12:44:09.835Z",
       "locales": {
         "en": {
-          "title": "Aug 27, 2026 Announcements Previewing the Model Hardware Standard",
-          "summary": "nnouncements Improving our alignment and security efforts"
+          "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
+          "summary": "Announcements Previewing the Model Hardware Standard"
         },
         "fr": {
-          "title": "Aug 27, 2026 Announcements Previewing the Model Hardware Standard",
-          "summary": "nnouncements Improving our alignment and security efforts"
+          "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
+          "summary": "Announcements Previewing the Model Hardware Standard"
         }
       }
     },
@@ -2103,22 +2103,22 @@
       }
     },
     {
-      "slug": "20260909-docker-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
-      "toolName": "Docker",
-      "category": "Developer Platform",
+      "slug": "20260909-postgresql-autobase-211-released-991decc9",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
+      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
       "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-20T20:47:02.390Z",
+      "discoveredAt": "2026-09-21T12:44:09.835Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer i…"
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the…"
         },
         "fr": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer i…"
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the…"
         }
       }
     },
@@ -2243,42 +2243,62 @@
       }
     },
     {
-      "slug": "20260918-vercel-spend-management-expands-to-enterprise-flexible-commitmen-2c23f7d1",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
+      "slug": "20260919-notion-the-skills-cli-now-supports-notion-hosted-skills-install--a80d1119",
+      "toolName": "Notion",
+      "category": "Productivity Workspace",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/spend-management-enterprise-flex",
-      "publishedAt": "2026-09-18T20:52:51.777Z",
-      "discoveredAt": "2026-09-18T20:52:51.777Z",
+      "href": "https://vercel.com/changelog/skills-cli-notion-skills",
+      "publishedAt": "2026-09-19T10:55:48.910Z",
+      "discoveredAt": "2026-09-19T10:55:48.910Z",
       "locales": {
         "en": {
-          "title": "Spend Management expands to Enterprise Flexible Commitment plans Enterprise teams on Flexible Commitment plans can now set a Spend Management budget, with email alerts, webhooks, and optional pausing of production deployments. Lakshmi Subbramanian, Bryan Mishkin",
-          "summary": "18 September 18 Sep"
+          "title": "The skills CLI now supports Notion hosted skills Install agent skills from a Notion skills database with the skills CLI, no Git repository required. Andrew Qu, Jonathan Hefner, and 1 other",
+          "summary": "c0e-512.jpg\"/> Elisabeth Rülke, George Fahmy"
         },
         "fr": {
-          "title": "Spend Management expands to Enterprise Flexible Commitment plans Enterprise teams on Flexible Commitment plans can now set a Spend Management budget, with email alerts, webhooks, and optional pausing of production deployments. Lakshmi Subbramanian, Bryan Mishkin",
-          "summary": "18 September 18 Sep"
+          "title": "The skills CLI now supports Notion hosted skills Install agent skills from a Notion skills database with the skills CLI, no Git repository required. Andrew Qu, Jonathan Hefner, and 1 other",
+          "summary": "c0e-512.jpg\"/> Elisabeth Rülke, George Fahmy"
         }
       }
     },
     {
-      "slug": "20260917-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
+      "slug": "20260918-supabase-health-check-advisors-ff04ed6f",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
-      "publishedAt": "2026-09-17T11:38:27.585Z",
-      "discoveredAt": "2026-09-17T11:38:27.585Z",
+      "href": "https://supabase.com/changelog/50577-health-check-advisors",
+      "publishedAt": "2026-09-18T00:00:00.000Z",
+      "discoveredAt": "2026-09-18T20:52:51.777Z",
       "locales": {
         "en": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
+          "title": "Health Check Advisors",
+          "summary": "Sep 18, 2026"
         },
         "fr": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
+          "title": "Health Check Advisors",
+          "summary": "Sep 18, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20260724-w3c-simplified-task-force-enrollment-and-participant-management-e7ce2f82",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/task-force-participation-management/",
+      "publishedAt": "2026-07-24T10:35:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Simplified task force enrollment and participant management",
+          "summary": "This blog post is about incremental improvements by W3C's IT/Systems Operations Team that puts task force participation management directly in the hands of participants and chairs."
+        },
+        "fr": {
+          "title": "Simplified task force enrollment and participant management",
+          "summary": "This blog post is about incremental improvements by W3C's IT/Systems Operations Team that puts task force participation management directly in the hands of participants and chairs."
         }
       }
     },
@@ -2343,26 +2363,6 @@
       }
     },
     {
-      "slug": "20260720-w3c-threat-modeling-age-based-content-restrictions-what-we-learn-e65ac026",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/threat-modeling-age-based-content-restrictions-what-we-learned-at-eic-2026/",
-      "publishedAt": "2026-07-20T09:23:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Threat modeling age-based content restrictions: what we learned at EIC 2026",
-          "summary": "At the European Identity and Cloud Conference (EIC 2026) in Berlin, we explored how Threat Modeling with LEGO® SERIOUS PLAY® can help uncover security, privacy, and human-rights threats in age-based content restriction…"
-        },
-        "fr": {
-          "title": "Threat modeling age-based content restrictions: what we learned at EIC 2026",
-          "summary": "At the European Identity and Cloud Conference (EIC 2026) in Berlin, we explored how Threat Modeling with LEGO® SERIOUS PLAY® can help uncover security, privacy, and human-rights threats in age-based content restriction…"
-        }
-      }
-    },
-    {
       "slug": "20260915-google-ai-new-insights-from-googles-ai-economy-atlas-00e29a68",
       "toolName": "Google AI",
       "category": "AI Platform",
@@ -2383,22 +2383,22 @@
       }
     },
     {
-      "slug": "20260916-chatgpt-how-to-connect-ai-usage-to-business-value-5f7e182a",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
+      "slug": "20260916-openai-platform-hex-turns-complex-analysis-into-visual-reports-w-973a9114",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+      "href": "https://openai.com/index/hex-gpt-6-astra",
       "publishedAt": "2026-09-16T12:00:00.000Z",
-      "discoveredAt": "2026-09-20T20:47:02.390Z",
+      "discoveredAt": "2026-09-21T12:44:09.835Z",
       "locales": {
         "en": {
-          "title": "How to connect AI usage to business value",
-          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
+          "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
+          "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share."
         },
         "fr": {
-          "title": "How to connect AI usage to business value",
-          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
+          "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
+          "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share."
         }
       }
     }
