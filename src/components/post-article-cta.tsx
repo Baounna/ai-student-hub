@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { siteConfig } from "@/config/site";
 import { TrackableAnchor } from "@/components/trackable-anchor";
-import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+import { getProductCheckoutUrl } from "@/lib/product";
 
 type PostArticleCtaProps = {
   locale?: Locale;
@@ -29,8 +29,7 @@ export function PostArticleCta({
   const ctaSecondary = locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab";
   const ctaTertiary = locale === "fr" ? "Acheter le guide étudiant" : "Buy student guide";
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
-  const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
-  const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
+  const checkoutUrl = getProductCheckoutUrl();
   const proofLines =
     locale === "fr"
       ? ["Format actionable en 10 min", "Système hebdomadaire orienté exécution", "Conçu pour un budget-friendly réel"]

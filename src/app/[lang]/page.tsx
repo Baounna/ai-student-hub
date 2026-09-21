@@ -8,6 +8,7 @@ import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { getAutoNews } from "@/content/auto-news";
 import { getLatestNews, getLocalizedNews } from "@/content/news";
+import { countryLabel, getOpenStages, kindLabel } from "@/content/stages";
 import { siteConfig } from "@/config/site";
 import {
   getAllCategories,
@@ -24,7 +25,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
-import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 import { jsonLd } from "@/lib/json-ld";
 import { formatReadTime } from "@/lib/read-time";
 
@@ -165,6 +166,12 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           }
         ];
 
+  // Dated entries first (getOpenStages already orders them that way), so the
+  // five shown are the ones with a real cutoff rather than an arbitrary slice.
+  const openStages = getOpenStages();
+  const openStagesCount = openStages.length;
+  const featuredStages = openStages.slice(0, 5);
+
   const audiencePaths =
     locale === "fr"
       ? [
@@ -236,10 +243,8 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       href: `/${locale}/blog?track=cs`
     }
   ];
-
-  const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
-  const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
-  const hasCheckoutUrl = Boolean(checkoutUrl);
+  const checkoutUrl = getProductCheckoutUrl();
+  const hasCheckoutUrl = canSellProduct();
 
   const knowledgeReferences = [
     {
@@ -337,6 +342,64 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
         </div>
       </section>
 
+      {/* The homepage linked to the internship list ten times and showed none
+          of it. Everything above this point is a claim about what the site
+          does; this is the only thing that is what the site does, so it comes
+          before the positioning rather than after it. Five entries, because the
+          point is to be concrete, not to reproduce the page. */}
+      {featuredStages.length ? (
+        <section className="mt-4 rounded-md border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)]">
+          <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-[color:var(--border)] px-4 py-3">
+            <h2 className="font-display text-lg font-semibold text-[color:var(--text-strong)] md:text-xl">
+              {locale === "fr" ? "Stages ouverts en ce moment" : "Internships open right now"}
+            </h2>
+            <span className="text-xs text-[color:var(--muted)]">
+              {locale === "fr"
+                ? `${openStagesCount} offres verifiees une par une`
+                : `${openStagesCount} openings, each link checked by hand`}
+            </span>
+          </div>
+          <ul className="divide-y divide-[color:var(--border)]">
+            {featuredStages.map((stage) => (
+              <li key={stage.id} className="flex flex-wrap items-baseline gap-x-2 gap-y-1 px-4 py-3">
+                <a
+                  href={stage.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="do-link text-sm font-semibold"
+                  aria-label={
+                    locale === "fr"
+                      ? `Voir l'offre : ${stage.role} chez ${stage.company}, ${stage.city}`
+                      : `View the offer: ${stage.role} at ${stage.company}, ${stage.city}`
+                  }
+                >
+                  {stage.role}
+                </a>
+                <span className="text-sm text-[color:var(--muted)]">
+                  — {stage.company} · {stage.city}, {countryLabel(stage.country, locale)} · {kindLabel(stage.kind, locale)}
+                </span>
+                {/* The rust accent existed in the palette and was used once in
+                    the whole codebase. A published closing date is the one thing
+                    on this page that is actually urgent, so it earns it. */}
+                {stage.deadline ? (
+                  <span className="text-xs font-semibold text-[color:var(--signal)]">
+                    {locale === "fr" ? "avant le " : "by "}
+                    {stage.deadline}
+                  </span>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+          <div className="px-4 py-3">
+            <Link href={`/${locale}/stages`} className="do-link text-sm">
+              {locale === "fr"
+                ? `Voir les ${openStagesCount} offres`
+                : `See all ${openStagesCount} openings`}
+            </Link>
+          </div>
+        </section>
+      ) : null}
+
       <section className="mt-4 grid gap-4 md:grid-cols-3">
         {quickStartCards.map((card) => (
           <article key={card.title} className="wiki-panel rounded-md p-4">
@@ -381,8 +444,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
 
       <section className="mt-4 grid gap-4 md:grid-cols-3">
         <article className="wiki-panel rounded-md p-4">
-          <p className="do-kicker">{locale === "fr" ? "Trust proof" : "Trust proof"}</p>
-          <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">
+                    <h2 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">
             {locale === "fr" ? "Méthodologie transparente" : "Transparent methodology"}
           </h2>
           <p className="mt-2 text-sm text-[color:var(--text)]">
@@ -418,8 +480,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       <section className="mt-4 grid gap-4 md:grid-cols-2">
         {splitEntryCards.map((card) => (
           <article key={card.key} className="wiki-panel rounded-md p-5">
-            <p className="do-kicker">{locale === "fr" ? "Parcours éditorial" : "Editorial split"}</p>
-            <h2 className="font-display mt-2 text-xl font-semibold text-[color:var(--text-strong)]">{card.title}</h2>
+                        <h2 className="font-display mt-2 text-xl font-semibold text-[color:var(--text-strong)]">{card.title}</h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">{card.summary}</p>
             <p className="mt-2 text-xs text-[color:var(--muted)]">
               {card.count} {locale === "fr" ? "articles dans ce flux" : "posts in this stream"}

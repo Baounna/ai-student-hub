@@ -13,7 +13,7 @@ import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
-import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 import { jsonLd } from "@/lib/json-ld";
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
@@ -51,9 +51,8 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
   const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const dict = getDictionary(locale);
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
-  const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
-  const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
-  const hasCheckoutUrl = Boolean(checkoutUrl);
+  const checkoutUrl = getProductCheckoutUrl();
+  const hasCheckoutUrl = canSellProduct();
   const toolsCount = recommendedTools.length;
   const stackCards = [
     {

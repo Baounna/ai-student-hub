@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
-import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 
 function isInternalGrowthSprintEnabled() {
   const flag = (process.env.ENABLE_INTERNAL_GROWTH_SPRINT || "").trim().toLowerCase();
@@ -229,9 +229,8 @@ export default async function GrowthSprintPage(props: { params: Promise<{ lang: 
   const locale: Locale = params.lang;
   const fr = locale === "fr";
   const leadMagnetHref = fr ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
-  const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
-  const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
-  const hasCheckoutUrl = Boolean(checkoutUrl);
+  const checkoutUrl = getProductCheckoutUrl();
+  const hasCheckoutUrl = canSellProduct();
 
   const kpis = fr
     ? [

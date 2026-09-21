@@ -6,7 +6,7 @@ import type { Locale } from "@/i18n/config";
 import { setStoredValue, useStoredValue } from "@/lib/use-stored-value";
 import { siteConfig } from "@/config/site";
 import { TrackableAnchor } from "@/components/trackable-anchor";
-import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 
 type StickyToolsCtaProps = {
   locale: Locale;
@@ -15,9 +15,8 @@ type StickyToolsCtaProps = {
 
 export function StickyToolsCta({ locale, source }: StickyToolsCtaProps) {
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
-  const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
-  const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
-  const hasCheckout = Boolean(checkoutUrl);
+  const checkoutUrl = getProductCheckoutUrl();
+  const hasCheckout = canSellProduct();
 
   const storageKey = `sticky_tools_cta_dismissed_${source}_${locale}`;
   const [showMobile, setShowMobile] = useState(false);

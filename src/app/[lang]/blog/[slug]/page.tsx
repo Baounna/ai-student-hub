@@ -23,7 +23,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
-import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 import { jsonLd } from "@/lib/json-ld";
 import { formatReadTime, readMinutes } from "@/lib/read-time";
 import { ScrollCaptureCtaLazy } from "@/components/scroll-capture-cta-lazy";
@@ -120,9 +120,8 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
   const executionAssets = post.affiliateCallout.links.length + Math.min(recommendedTools.length, 3);
   const sourceDensity = wordCount ? Math.max(1, Math.round((post.references.length / wordCount) * 1000)) : 0;
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
-  const checkoutUrlRaw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
-  const checkoutUrl = isSafeHttpUrl(checkoutUrlRaw) ? normalizeHttpUrl(checkoutUrlRaw) : "";
-  const hasCheckoutUrl = Boolean(checkoutUrl);
+  const checkoutUrl = getProductCheckoutUrl();
+  const hasCheckoutUrl = canSellProduct();
   const midIndex = Math.max(1, Math.floor(post.content.length * 0.45));
   const relatedTools = recommendedTools.slice(0, 3);
   const tocItems = [
