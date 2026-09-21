@@ -14,8 +14,16 @@ export function generateStaticParams() {
   return locales.flatMap((lang) => getAllCategories().map((category) => ({ lang, category: slugify(category) })));
 }
 
+/**
+ * The slug is a lossy encoding of the real name — "AI Fundamentals" becomes
+ * "ai-fundamentals", and title-casing that back gives "Ai Fundamentals", which
+ * is what the page showed as its H1. Look the real name up instead, and only
+ * fall back to prettifying the slug for a category with no posts yet.
+ */
 function displayCategory(slug: string) {
-  return slug.replace(/-/g, " ");
+  const match = getAllCategories().find((category) => slugify(category) === slug);
+  if (match) return match;
+  return slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 function formatPublishedDate(date: string, locale: Locale) {

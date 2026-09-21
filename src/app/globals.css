@@ -743,9 +743,25 @@ html[data-content-width="wide"] {
     will-change: opacity, transform;
   }
 
+  /*
+   * transform: none, not translateY(0) — and will-change back to auto.
+   *
+   * Any transform other than none makes an element the containing block for
+   * every position:fixed descendant, and will-change: transform does the same.
+   * The article wrapper carries both, so the back-to-top button and the sticky
+   * post CTA inside it were never fixed to the viewport: they were anchored to
+   * the article. Measured on a real article at 390px, both became visible at
+   * scrollY 2000 with a viewport top of 10513 — off-screen for most of the
+   * read, and when they did arrive they sat on top of the newsletter form,
+   * covering its heading, its email field and its button.
+   *
+   * An identity transform is not free. Interpolating to none is well defined,
+   * none being treated as the identity, so the animation is unchanged.
+   */
   .js-reveal-in {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: none;
+    will-change: auto;
   }
 
   .wiki-panel {

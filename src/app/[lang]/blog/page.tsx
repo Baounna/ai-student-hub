@@ -297,7 +297,7 @@ export default async function LocalizedBlogPage(
                   : "3. Resource and product CTA callouts inside long-form guides."}
               </li>
             </ul>
-            <form action={`/${locale}/blog`} method="get" className="mt-4 flex items-center gap-2">
+            <form action={`/${locale}/blog`} method="get" className="mt-4 flex flex-wrap items-center gap-2">
               <label htmlFor={`blog-search-${locale}`} className="sr-only">
                 {locale === "fr" ? "Recherche blog" : "Blog search"}
               </label>
@@ -311,7 +311,7 @@ export default async function LocalizedBlogPage(
                 defaultValue={queryRaw}
                 placeholder={searchPlaceholder}
                 maxLength={120}
-                className="field-input h-10 min-w-0 flex-1 px-3"
+                className="field-input h-10 w-full min-w-0 flex-1 basis-full px-3 sm:basis-auto"
               />
               {trackFilter !== "all" ? <input type="hidden" name="track" value={trackFilter} /> : null}
               <button type="submit" className="btn-secondary h-10 shrink-0 px-4 py-0">

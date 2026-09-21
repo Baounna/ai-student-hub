@@ -58,6 +58,11 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  // The route distinguishes 400, 403, 429 and 503, and every one of them
+  // arrived here as the same sentence because the fetch threw away the status.
+  // "Too many requests" in particular told the reader to try again, which is
+  // the one thing that cannot work — the limit counts the retries too.
+  const [errorKind, setErrorKind] = useState<"rate_limit" | "generic">("generic");
   const [deliveryStatus, setDeliveryStatus] = useState<"sent" | "queued" | "failed" | "unavailable" | null>(null);
   const sourceTag = normalizeSource(source, compact);
   const nextAction = getNextAction(sourceTag, locale);
@@ -65,6 +70,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus("loading");
+    setErrorKind("generic");
 
     try {
       const formData = new FormData(event.currentTarget);
@@ -84,7 +90,10 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         })
       });
 
-      if (!response.ok) throw new Error("failed");
+      if (!response.ok) {
+        setErrorKind(response.status === 429 ? "rate_limit" : "generic");
+        throw new Error("failed");
+      }
       const data = (await response.json()) as {
         forwarded?: boolean;
         deliveryStatus?: "sent" | "queued" | "failed" | "unavailable";
@@ -137,7 +146,14 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         : "Signup saved. You will receive upcoming updates.";
 
   // vous, like every other French string in this form.
-  const errorText = locale === "fr" ? "Erreur. Réessayez dans un instant." : "Something went wrong. Try again.";
+  const errorText =
+    errorKind === "rate_limit"
+      ? locale === "fr"
+        ? "Trop de tentatives. Attendez une dizaine de minutes avant de réessayer."
+        : "Too many attempts. Wait about ten minutes before trying again."
+      : locale === "fr"
+        ? "Erreur. Réessayez dans un instant."
+        : "Something went wrong. Try again.";
 
   const liveMessage = showWarning ? warningText : showSuccess ? successText : status === "error" ? errorText : "";
 
