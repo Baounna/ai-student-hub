@@ -59,6 +59,49 @@ export function getClientIp(request: Request) {
   return FALLBACK_IP;
 }
 
+/**
+ * The bucket a per-IP rate limit should actually count against.
+ *
+ * Spoofing is already closed off above — only headers the platform overwrites
+ * are read — but an honest, unspoofed address is not the same thing as one
+ * caller. An IPv6 client is normally handed a whole /64: a residential router
+ * delegates one to the LAN, a VPS gets one per instance, and privacy extensions
+ * rotate through it by design. So counting the full 128-bit address gives a
+ * single machine 2^64 free buckets, and the newsletter's 8-per-10-minutes
+ * becomes unlimited for anyone on IPv6 — no forged header needed, just a new
+ * source address per request.
+ *
+ * Collapsing to the /64 is the smallest unit an operator cannot subdivide for
+ * free, and it is what every serious limiter keys on. IPv4 is returned whole:
+ * addresses there are scarce enough to be meaningful on their own, and
+ * truncating would sweep up unrelated customers behind one NAT.
+ *
+ * Only for rate-limit keys. getClientIp() stays exact, because Turnstile's
+ * remoteip check and anything else that wants the caller wants the real one.
+ */
+export function rateLimitClientKey(ip: string) {
+  const value = String(ip || "").trim().toLowerCase();
+  if (!value || !value.includes(":") || isIP(value) !== 6) return value || FALLBACK_IP;
+  // IPv4-mapped form (::ffff:1.2.3.4) carries its identity in the low 32 bits,
+  // so a /64 of it is the same prefix for every address on the internet. Leave
+  // it whole. getClientIp never emits this shape today; the guard is here so the
+  // helper stays correct for any caller that does.
+  if (value.includes(".")) return value;
+
+  // Expand the "::" run so the first four groups are the real high 64 bits.
+  const [head, tail] = value.split("::", 2);
+  const headGroups = head ? head.split(":") : [];
+  const tailGroups = tail === undefined ? [] : tail ? tail.split(":") : [];
+  const groups =
+    tail === undefined
+      ? headGroups
+      : [...headGroups, ...Array(Math.max(0, 8 - headGroups.length - tailGroups.length)).fill("0"), ...tailGroups];
+
+  const prefix = groups.slice(0, 4).map((group) => (group || "0").padStart(4, "0"));
+  while (prefix.length < 4) prefix.push("0000");
+  return `${prefix.join(":")}::/64`;
+}
+
 export type JsonBodyParseResult<T> =
   | { ok: true; data: T }
   | { ok: false; error: "invalid_json" | "payload_too_large" };

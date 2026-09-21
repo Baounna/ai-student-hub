@@ -115,6 +115,32 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
     : "btn-primary h-11 px-4 py-0 text-sm disabled:cursor-not-allowed disabled:opacity-70";
   const statusColumnClass = compact ? "col-span-2" : "sm:col-span-3";
 
+  const showWarning = status === "success" && (deliveryStatus === "unavailable" || deliveryStatus === "failed");
+  const showSuccess = status === "success" && !showWarning;
+
+  const warningText =
+    deliveryStatus === "failed"
+      ? locale === "fr"
+        ? "L'inscription n'a pas abouti et votre adresse n'a pas été enregistrée. Réessayez dans un instant."
+        : "The signup did not go through and your address was not saved. Please try again in a moment."
+      : locale === "fr"
+        ? "La newsletter n'est pas encore ouverte aux inscriptions. Votre adresse n'a pas été enregistrée."
+        : "The newsletter is not open for signups yet, so your address was not saved.";
+
+  const successText =
+    deliveryStatus === "sent"
+      ? locale === "fr"
+        ? "Parfait. Vérifiez votre boîte mail."
+        : "Great. Check your inbox."
+      : locale === "fr"
+        ? "Inscription enregistrée. Vous recevrez les prochaines mises à jour."
+        : "Signup saved. You will receive upcoming updates.";
+
+  // vous, like every other French string in this form.
+  const errorText = locale === "fr" ? "Erreur. Réessayez dans un instant." : "Something went wrong. Try again.";
+
+  const liveMessage = showWarning ? warningText : showSuccess ? successText : status === "error" ? errorText : "";
+
   return (
     <form className={formClass} onSubmit={onSubmit}>
       {!compact && (
@@ -170,49 +196,42 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       >
         {status === "loading" ? (locale === "fr" ? "Envoi..." : "Sending...") : ctaLabel}
       </button>
+      {/* The one live region, always in the DOM. Each status box below used to
+          carry aria-live itself, but a live region that is inserted at the same
+          moment as its text is not reliably announced: the screen reader has to
+          be observing the region before the change happens, and these did not
+          exist until the moment they had something to say. So the submit result
+          — including "your address was not saved" — was silently dropped for
+          anyone not watching the screen. This node ships empty on first render
+          and only its text changes. sr-only is position:absolute, so it claims
+          no grid cell and the layout is untouched. */}
+      <p className="sr-only" role="status" aria-live="polite">
+        {liveMessage}
+      </p>
       {/* "failed" joins "unavailable" here rather than in the success box below.
           It used to render green, saying "Signup saved. Retry later to receive
           the confirmation email." Nothing was saved — there is no queue and no
           fallback store, so the address was gone. Telling someone their signup
           worked when it did not is worse than an error, because they have no
           reason to try again. */}
-      {status === "success" && (deliveryStatus === "unavailable" || deliveryStatus === "failed") && (
-        <div className={`status-warning ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
-          <p>
-            {deliveryStatus === "failed"
-              ? locale === "fr"
-                ? "L'inscription n'a pas abouti et votre adresse n'a pas été enregistrée. Réessayez dans un instant."
-                : "The signup did not go through and your address was not saved. Please try again in a moment."
-              : locale === "fr"
-                ? "La newsletter n'est pas encore ouverte aux inscriptions. Votre adresse n'a pas été enregistrée."
-                : "The newsletter is not open for signups yet, so your address was not saved."}
-          </p>
+      {showWarning && (
+        <div className={`status-warning ${statusColumnClass} rounded-lg px-3 py-2 text-xs`}>
+          <p>{warningText}</p>
           <a href={nextAction.href} className="do-link mt-1 inline-block">
             {locale === "fr" ? "En attendant:" : "In the meantime:"} {nextAction.label}
           </a>
         </div>
       )}
-      {status === "success" && deliveryStatus !== "unavailable" && deliveryStatus !== "failed" && (
-        <div className={`status-success ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
-          <p>
-            {deliveryStatus === "sent"
-              ? locale === "fr"
-                ? "Parfait. Vérifiez votre boîte mail."
-                : "Great. Check your inbox."
-              : locale === "fr"
-                ? "Inscription enregistrée. Vous recevrez les prochaines mises à jour."
-                : "Signup saved. You will receive upcoming updates."}
-          </p>
+      {showSuccess && (
+        <div className={`status-success ${statusColumnClass} rounded-lg px-3 py-2 text-xs`}>
+          <p>{successText}</p>
           <a href={nextAction.href} className="do-link mt-1 inline-block">
             {locale === "fr" ? "Prochaine action:" : "Next action:"} {nextAction.label}
           </a>
         </div>
       )}
       {status === "error" && (
-        <p className={`status-error ${statusColumnClass} rounded-lg px-3 py-2 text-xs`} aria-live="polite">
-          {/* vous, like every other French string in this form. */}
-          {locale === "fr" ? "Erreur. Réessayez dans un instant." : "Something went wrong. Try again."}
-        </p>
+        <p className={`status-error ${statusColumnClass} rounded-lg px-3 py-2 text-xs`}>{errorText}</p>
       )}
     </form>
   );

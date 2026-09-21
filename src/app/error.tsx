@@ -14,7 +14,13 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
   }, [error]);
 
   return (
-    <main className="mx-auto flex min-h-[70vh] max-w-3xl flex-col items-center justify-center px-6 text-center">
+    // Same reason as not-found.tsx: this renders inside the root layout, whose
+    // skip link targets #main-content, and without the id that link was inert.
+    <main
+      id="main-content"
+      tabIndex={-1}
+      className="mx-auto flex min-h-[70vh] max-w-3xl flex-col items-center justify-center px-6 text-center"
+    >
       <p className="do-kicker">Application Error</p>
       <h1 className="font-display mt-3 text-4xl font-bold text-[color:var(--text-strong)] md:text-5xl">
         Something went wrong

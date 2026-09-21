@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach } from "vitest";
-import { getClientIp, parseJsonBody } from "@/lib/request";
+import { getClientIp, parseJsonBody, rateLimitClientKey } from "@/lib/request";
 
 const originalEnv = process.env.NODE_ENV;
 afterEach(() => {
@@ -53,6 +53,44 @@ describe("getClientIp", () => {
 
   it("falls back when no trusted header is present", () => {
     expect(getClientIp(req({}))).toBe("0.0.0.0");
+  });
+});
+
+describe("rateLimitClientKey", () => {
+  // The bug: per-IP limits counted the full 128-bit IPv6 address. One machine
+  // is normally handed a whole /64 and can pick any address in it, so the
+  // newsletter's 8-per-10-minutes was 8 per address — effectively unlimited,
+  // with no header forgery involved at all.
+  it("collapses an IPv6 address to its /64", () => {
+    const first = rateLimitClientKey("2001:db8:1:2:3:4:5:6");
+    const second = rateLimitClientKey("2001:db8:1:2:dead:beef:cafe:1");
+    expect(first).toBe(second);
+    expect(first).toBe("2001:0db8:0001:0002::/64");
+  });
+
+  it("keeps different /64s apart", () => {
+    expect(rateLimitClientKey("2001:db8:1:2::1")).not.toBe(rateLimitClientKey("2001:db8:1:3::1"));
+  });
+
+  it("expands a compressed run before taking the prefix", () => {
+    // "2001:db8::1" is 2001:0db8:0000:0000:...; naively splitting on ":" would
+    // read the trailing "1" as the fourth group and bucket it with unrelated
+    // addresses.
+    expect(rateLimitClientKey("2001:db8::1")).toBe("2001:0db8:0000:0000::/64");
+    expect(rateLimitClientKey("::1")).toBe("0000:0000:0000:0000::/64");
+  });
+
+  it("leaves IPv4 whole", () => {
+    expect(rateLimitClientKey("203.0.113.7")).toBe("203.0.113.7");
+    expect(rateLimitClientKey("0.0.0.0")).toBe("0.0.0.0");
+  });
+
+  it("leaves an IPv4-mapped address whole rather than bucketing the world together", () => {
+    expect(rateLimitClientKey("::ffff:203.0.113.7")).toBe("::ffff:203.0.113.7");
+  });
+
+  it("falls back rather than returning an empty bucket key", () => {
+    expect(rateLimitClientKey("")).toBe("0.0.0.0");
   });
 });
 

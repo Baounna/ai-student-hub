@@ -20,7 +20,36 @@ const nextConfig = {
       { key: "X-Content-Type-Options", value: "nosniff" },
       { key: "X-Permitted-Cross-Domain-Policies", value: "none" },
       { key: "X-DNS-Prefetch-Control", value: "on" },
-      { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), browsing-topics=()" },
+      // Deny-list rather than a shortlist. The site has no <video>, <audio>,
+      // <iframe> or any device API anywhere in src/, so every one of these is a
+      // capability nothing here will ever ask for — and an unasked-for
+      // capability is exactly what injected or embedded code goes looking for.
+      // Naming them costs nothing and removes the question.
+      {
+        key: "Permissions-Policy",
+        value: [
+          "accelerometer=()",
+          "autoplay=()",
+          "bluetooth=()",
+          "browsing-topics=()",
+          "camera=()",
+          "display-capture=()",
+          "encrypted-media=()",
+          "fullscreen=()",
+          "geolocation=()",
+          "gyroscope=()",
+          "magnetometer=()",
+          "microphone=()",
+          "midi=()",
+          "payment=()",
+          "picture-in-picture=()",
+          "publickey-credentials-get=()",
+          "screen-wake-lock=()",
+          "serial=()",
+          "usb=()",
+          "xr-spatial-tracking=()"
+        ].join(", ")
+      },
       { key: "Origin-Agent-Cluster", value: "?1" },
       { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
       { key: "Cross-Origin-Resource-Policy", value: "same-origin" }
@@ -45,6 +74,21 @@ const nextConfig = {
       {
         source: "/api/:path*",
         headers: apiHeaders
+      },
+      // The two routes that take a body. Next's default for a route handler is
+      // "public, max-age=0, must-revalidate", measured on production — and
+      // "public" is a claim about a shared cache, not about freshness. A 429
+      // carrying someone's Retry-After, or a signup reply that says whether an
+      // address reached the provider, is not something a CDN should be told it
+      // may hold. The image routes are deliberately excluded: they set their own
+      // long immutable cache, and that was a fix for a real rendering bill.
+      {
+        source: "/api/newsletter",
+        headers: [...apiHeaders, { key: "Cache-Control", value: "no-store" }]
+      },
+      {
+        source: "/api/track",
+        headers: [...apiHeaders, { key: "Cache-Control", value: "no-store" }]
       },
       {
         source: "/(.*)",

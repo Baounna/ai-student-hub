@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { Locale } from "@/i18n/config";
 import { useStoredValue } from "@/lib/use-stored-value";
 import {
@@ -41,6 +41,8 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const rootRef = useRef<HTMLDivElement | null>(null);
+  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const panelId = useId();
   const [open, setOpen] = useState(false);
   // Read straight from storage instead of copying it into state on mount:
   // one render instead of two, and the panel follows changes made anywhere
@@ -85,7 +87,15 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
     }
 
     function onEsc(event: KeyboardEvent) {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key !== "Escape" || !open) return;
+      setOpen(false);
+      // Closing unmounts whatever was focused inside the panel, and the browser
+      // then drops focus to <body> — a keyboard reader who opened the panel,
+      // changed nothing and pressed Escape was returned to the top of the
+      // document and had to tab through the whole header again. Dismissal by
+      // keyboard puts focus back where it came from; a pointer dismissal does
+      // not, because the reader is already somewhere else.
+      triggerRef.current?.focus();
     }
 
     window.addEventListener("pointerdown", onDown);
@@ -112,8 +122,14 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
     <div ref={rootRef} className="relative">
       <button
         type="button"
+        ref={triggerRef}
         aria-expanded={open}
-        aria-haspopup="dialog"
+        // Not a dialog: the panel has no dialog role, no name, is not modal and
+        // does not trap focus — tabbing past it walks straight on into the page.
+        // Announcing "dialog" promised a modal that never arrives. It is a
+        // disclosure, and aria-controls ties it to the thing it discloses.
+        aria-haspopup="true"
+        aria-controls={open ? panelId : undefined}
         onClick={() => setOpen((value) => !value)}
         aria-label={t.title}
         title={t.title}
@@ -140,15 +156,36 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
       </button>
 
       {open ? (
-        <div className="absolute right-0 z-50 mt-2 w-[min(18rem,calc(100vw-1rem))] rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface-strong)] p-4 shadow-[0_24px_56px_-36px_rgba(5,14,32,0.92)] backdrop-blur-xl">
+        <div
+          id={panelId}
+          className="absolute right-0 z-50 mt-2 w-[min(18rem,calc(100vw-1rem))] rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface-strong)] p-4 shadow-[0_24px_56px_-36px_rgba(5,14,32,0.92)] backdrop-blur-xl"
+        >
+          {/* Every option below marked its selected state with a border and a
+              background tint and nothing else. To a screen reader all three
+              theme buttons were identical — "Auto, button. Dark, button. Light,
+              button." — with no way to tell which one is in effect, and the
+              same for text size and width. aria-pressed puts the state in the
+              accessible name, which also settles the colour-alone problem
+              (WCAG 1.4.1) without touching the visual design.
+
+              Each group's caption labels it via aria-labelledby, so the state
+              is announced with the thing it applies to. role="group" rather
+              than a named <section>, which would add four region landmarks to
+              a header dropdown. */}
           <div className="space-y-4">
             <section>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--muted)]">{t.theme}</p>
-              <div className="flex flex-wrap gap-2">
+              <p
+                id={`${panelId}-theme`}
+                className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--muted)]"
+              >
+                {t.theme}
+              </p>
+              <div role="group" aria-labelledby={`${panelId}-theme`} className="flex flex-wrap gap-2">
                 {(["auto", "dark", "light"] as const).map((mode) => (
                   <button
                     key={mode}
                     type="button"
+                    aria-pressed={theme === mode}
                     className={optionClass(theme === mode)}
                     onClick={() => applyThemePreference(mode)}
                   >
@@ -159,12 +196,18 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
             </section>
 
             <section>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--muted)]">{t.text}</p>
-              <div className="flex flex-wrap gap-2">
+              <p
+                id={`${panelId}-text`}
+                className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--muted)]"
+              >
+                {t.text}
+              </p>
+              <div role="group" aria-labelledby={`${panelId}-text`} className="flex flex-wrap gap-2">
                 {(["small", "medium", "large"] as const).map((size) => (
                   <button
                     key={size}
                     type="button"
+                    aria-pressed={textSize === size}
                     className={optionClass(textSize === size)}
                     onClick={() => applyTextSize(size)}
                   >
@@ -175,12 +218,18 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
             </section>
 
             <section>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--muted)]">{t.width}</p>
-              <div className="flex flex-wrap gap-2">
+              <p
+                id={`${panelId}-width`}
+                className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--muted)]"
+              >
+                {t.width}
+              </p>
+              <div role="group" aria-labelledby={`${panelId}-width`} className="flex flex-wrap gap-2">
                 {(["standard", "wide"] as const).map((currentWidth) => (
                   <button
                     key={currentWidth}
                     type="button"
+                    aria-pressed={width === currentWidth}
                     className={optionClass(width === currentWidth)}
                     onClick={() => applyContentWidth(currentWidth)}
                   >
@@ -191,12 +240,19 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
             </section>
 
             <section>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--muted)]">{t.language}</p>
-              <div className="flex flex-wrap gap-2">
-                <Link href={enHref} className={optionClass(locale === "en")}>
+              <p
+                id={`${panelId}-language`}
+                className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--muted)]"
+              >
+                {t.language}
+              </p>
+              {/* Links, not buttons, so the current one is aria-current rather
+                  than aria-pressed — same problem, the state was colour only. */}
+              <div role="group" aria-labelledby={`${panelId}-language`} className="flex flex-wrap gap-2">
+                <Link href={enHref} hrefLang="en" aria-current={locale === "en" ? "page" : undefined} className={optionClass(locale === "en")}>
                   EN
                 </Link>
-                <Link href={frHref} className={optionClass(locale === "fr")}>
+                <Link href={frHref} hrefLang="fr" aria-current={locale === "fr" ? "page" : undefined} className={optionClass(locale === "fr")}>
                   FR
                 </Link>
               </div>

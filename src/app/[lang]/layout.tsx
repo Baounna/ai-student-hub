@@ -271,7 +271,13 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
         </div>
       </header>
       <div className="lg:mx-auto lg:flex lg:max-w-[1600px] lg:items-start lg:justify-center lg:px-4">
-        <main id="main-content" lang={locale} className="pb-24 md:pb-0 lg:min-w-0 lg:flex-1">
+        {/* tabIndex={-1} is what makes "Skip to content" actually skip. Without
+            it, activating the link only moves the browser's sequential-focus
+            starting point: document.activeElement stayed on <body>, so a screen
+            reader's focus never left the header and the reader had to walk the
+            whole nav again. A negative tabindex makes <main> a valid focus
+            target without adding a tab stop. */}
+        <main id="main-content" tabIndex={-1} lang={locale} className="pb-24 md:pb-0 lg:min-w-0 lg:flex-1">
           {children}
         </main>
       </div>

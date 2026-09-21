@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getClientIp, parseJsonBody } from "@/lib/request";
+import { getClientIp, parseJsonBody, rateLimitClientKey } from "@/lib/request";
 import { enforceRateLimitRules, rateLimitIdentifier } from "@/lib/rate-limit";
 import { isSafeWebhookTarget, isTrustedMutationRequest } from "@/lib/security";
 import { sanitizeTrackPayload } from "@/lib/tracking-schema";
@@ -21,9 +21,10 @@ export async function POST(request: Request) {
     }
 
     const ip = getClientIp(request);
+    // Keyed on the /64 for IPv6, not the exact address: see rateLimitClientKey.
     const limiter = await enforceRateLimitRules([
       { key: "track:endpoint", limit: 15000, windowMs: 60 * 1000 },
-      { key: `track:ip:${rateLimitIdentifier(ip)}`, limit: 240, windowMs: 60 * 1000 }
+      { key: `track:ip:${rateLimitIdentifier(rateLimitClientKey(ip))}`, limit: 240, windowMs: 60 * 1000 }
     ]);
     if (!limiter.allowed) {
       return NextResponse.json(

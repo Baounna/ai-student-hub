@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getClientIp, parseJsonBody } from "@/lib/request";
+import { getClientIp, parseJsonBody, rateLimitClientKey } from "@/lib/request";
 import { enforceRateLimitRules, rateLimitIdentifier } from "@/lib/rate-limit";
 import { normalizeLocale, normalizeSource, subscribeConvertKit } from "@/lib/convertkit";
 import { isTrustedMutationRequest } from "@/lib/security";
@@ -22,9 +22,11 @@ export async function POST(request: Request) {
     }
 
     const ip = getClientIp(request);
+    // Keyed on the /64 for IPv6, not the exact address: see rateLimitClientKey.
+    const ipBucket = rateLimitClientKey(ip);
     const ipRateGate = await enforceRateLimitRules([
       { key: "newsletter:endpoint", limit: 1200, windowMs: 60 * 1000 },
-      { key: `newsletter:ip:${rateLimitIdentifier(ip)}`, limit: 8, windowMs: 10 * 60 * 1000 }
+      { key: `newsletter:ip:${rateLimitIdentifier(ipBucket)}`, limit: 8, windowMs: 10 * 60 * 1000 }
     ]);
     if (!ipRateGate.allowed) {
       return NextResponse.json(
@@ -55,7 +57,7 @@ export async function POST(request: Request) {
 
     const principalRateGate = await enforceRateLimitRules([
       { key: `newsletter:email:${rateLimitIdentifier(email)}`, limit: 6, windowMs: 30 * 60 * 1000 },
-      { key: `newsletter:combo:${rateLimitIdentifier(`${email}:${ip}`)}`, limit: 4, windowMs: 30 * 60 * 1000 }
+      { key: `newsletter:combo:${rateLimitIdentifier(`${email}:${ipBucket}`)}`, limit: 4, windowMs: 30 * 60 * 1000 }
     ]);
     if (!principalRateGate.allowed) {
       return NextResponse.json(
