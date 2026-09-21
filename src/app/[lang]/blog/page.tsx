@@ -18,6 +18,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { sanitizeSearchQuery } from "@/lib/input";
 import { matchesAllTerms, searchTerms } from "@/lib/search";
+import { studentStudyTools } from "@/content/posts";
 import { formatReadTime } from "@/lib/read-time";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -97,6 +98,25 @@ export default async function LocalizedBlogPage(
         matchesAllTerms(terms, [post.title, post.excerpt, post.category, ...post.tags, ...post.content])
       )
     : trackScopedPosts;
+  // The header search box says "Search AI, backend, cloud, algorithms" and
+  // posts to this page, so it only ever searches articles. But the site also
+  // lists tools, and "claude" is one of them — a reader typing it got "nothing
+  // found" while the thing they wanted sat two pages away. When no article
+  // matches, look there before giving up.
+  const matchingTools = terms.length && !posts.length
+    ? studentStudyTools
+        .filter((tool) =>
+          matchesAllTerms(terms, [
+            tool.name,
+            tool.category[locale],
+            tool.summary[locale],
+            tool.bestFor[locale],
+            tool.source,
+            ...tool.keywords
+          ])
+        )
+        .slice(0, 4)
+    : [];
   const featuredPost = posts[0];
   const streamPosts = posts.slice(1);
   const topPosts = [...allPosts].sort((a, b) => b.popularScore - a.popularScore).slice(0, 3);
@@ -316,6 +336,25 @@ export default async function LocalizedBlogPage(
               ? "La recherche couvre les titres, les resumes, les categories, les tags et le texte des articles."
               : "The search covers titles, summaries, categories, tags and the text of the articles themselves."}
           </p>
+          {matchingTools.length ? (
+            <div className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--bg-soft)] p-4">
+              <p className="text-sm text-[color:var(--text-strong)]">
+                {locale === "fr"
+                  ? "Mais cela correspond a un outil que nous referencons :"
+                  : "It does match a tool we list:"}
+              </p>
+              <ul className="mt-2 space-y-1 text-sm">
+                {matchingTools.map((tool) => (
+                  <li key={tool.name}>
+                    <Link href={`/${locale}/compare?tool=${encodeURIComponent(queryRaw)}`} className="do-link font-semibold">
+                      {tool.name}
+                    </Link>
+                    <span className="text-[color:var(--muted)]"> — {tool.summary[locale]}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
           <div className="mt-4 flex flex-wrap gap-2">
             <Link href={`/${locale}/blog`} className="btn-secondary text-sm">
               {locale === "fr" ? "Voir tous les articles" : "See every article"}
