@@ -1,24 +1,104 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T21:57:14.113Z",
+  "updatedAt": "2026-09-22T11:34:36.830Z",
   "items": [
     {
-      "slug": "20260921-vercel-vercel-connect-now-supports-microsoft-teams-agents-can-no-844d3484",
+      "slug": "20260922-vercel-mimo-v26-models-now-available-on-ai-gateway-mimo-v26-pro--314b8607",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-connect-microsoft-teams",
-      "publishedAt": "2026-09-21T21:57:14.113Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
+      "href": "https://vercel.com/changelog/mimo-v2-6-models-now-available-on-ai-gateway",
+      "publishedAt": "2026-09-22T11:34:36.830Z",
+      "discoveredAt": "2026-09-22T11:34:36.830Z",
       "locales": {
         "en": {
-          "title": "Vercel Connect now supports Microsoft Teams Agents can now receive and reply to Microsoft Teams messages through Vercel Connect, with tokens managed for you across the Connect SDK, eve, and Chat SDK. Bhrigu Srivastava, Owen Kephart, and 1 other",
-          "summary": "21 September 21 Sep"
+          "title": "MiMo V2.6 models now available on AI Gateway MiMo V2.6 Pro, Flash, and Pro UltraSpeed from Xiaomi are now available on Vercel AI Gateway with 1M context, multimodal input, reasoning, and tool calling. Zachary Chen, Jerilyn Zheng",
+          "summary": "liam-bout-128.jpg\"/> Mehul Kar, William Bout"
         },
         "fr": {
-          "title": "Vercel Connect now supports Microsoft Teams Agents can now receive and reply to Microsoft Teams messages through Vercel Connect, with tokens managed for you across the Connect SDK, eve, and Chat SDK. Bhrigu Srivastava, Owen Kephart, and 1 other",
-          "summary": "21 September 21 Sep"
+          "title": "MiMo V2.6 models now available on AI Gateway MiMo V2.6 Pro, Flash, and Pro UltraSpeed from Xiaomi are now available on Vercel AI Gateway with 1M context, multimodal input, reasoning, and tool calling. Zachary Chen, Jerilyn Zheng",
+          "summary": "liam-bout-128.jpg\"/> Mehul Kar, William Bout"
+        }
+      }
+    },
+    {
+      "slug": "20260922-github-deprecation-notice-all-platform-codeql-bundle-578c4003",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-22-deprecation-notice-all-platform-codeql-bundle",
+      "publishedAt": "2026-09-22T09:21:03.000Z",
+      "discoveredAt": "2026-09-22T11:34:36.830Z",
+      "locales": {
+        "en": {
+          "title": "Deprecation notice: All-platform CodeQL bundle",
+          "summary": "Starting with CodeQL CLI 2.27.0, the all-platform CodeQL bundle (i.e., codeql-bundle.tar.gz and codeql-bundle.tar.zst), which includes the binaries for all supported platforms up to this release, is marked as deprecated…"
+        },
+        "fr": {
+          "title": "Deprecation notice: All-platform CodeQL bundle",
+          "summary": "Starting with CodeQL CLI 2.27.0, the all-platform CodeQL bundle (i.e., codeql-bundle.tar.gz and codeql-bundle.tar.zst), which includes the binaries for all supported platforms up to this release, is marked as deprecated…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-nodejs-nodejs-26100-current-7d6e3532",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.10.0",
+      "publishedAt": "2026-09-22T09:03:49.000Z",
+      "discoveredAt": "2026-09-22T11:34:36.830Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.10.0 (Current)",
+          "summary": "Node.js 26.10.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.10.0 (Current)",
+          "summary": "Node.js 26.10.0 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260922-hugging-face-transformers-now-runs-llamacpp-quants-98acfe91",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:36.830Z",
+      "locales": {
+        "en": {
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
+        },
+        "fr": {
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
+        }
+      }
+    },
+    {
+      "slug": "20260922-supabase-pgsql-test-real-postgres-testing-for-faster-development-212e48db",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgsql-test-real-postgres-testing-for-faster-development-loops-3380/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:36.830Z",
+      "locales": {
+        "en": {
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to…"
+        },
+        "fr": {
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to…"
         }
       }
     },
@@ -63,26 +143,6 @@
       }
     },
     {
-      "slug": "20260921-github-github-enterprise-adds-credential-inventory-exports-bdad4d18",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-21-github-enterprise-adds-credential-inventory-exports",
-      "publishedAt": "2026-09-21T21:13:18.000Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
-      "locales": {
-        "en": {
-          "title": "GitHub Enterprise adds credential inventory exports",
-          "summary": "Enterprise owners can now export a complete inventory of every credential that can access their enterprise (e.g., SSH keys, classic and fine-grained personal access tokens, OAuth App access tokens, and… The post GitHub…"
-        },
-        "fr": {
-          "title": "GitHub Enterprise adds credential inventory exports",
-          "summary": "Enterprise owners can now export a complete inventory of every credential that can access their enterprise (e.g., SSH keys, classic and fine-grained personal access tokens, OAuth App access tokens, and… The post GitHub…"
-        }
-      }
-    },
-    {
       "slug": "20260921-kubernetes-kubernetes-v137-tracking-when-a-persistentvolumeclaim-a668dc12",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -99,26 +159,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
           "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-hugging-face-pruning-llms-like-a-physicist-block-removal-as-an-i-c701b570",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-      "publishedAt": "2026-09-21T13:44:34.000Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
-      "locales": {
-        "en": {
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
-        },
-        "fr": {
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
         }
       }
     },
@@ -263,46 +303,6 @@
       }
     },
     {
-      "slug": "20260917-docker-pgadmin-4-v918-released-413bcda5",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:50.467Z",
-      "locales": {
-        "en": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86…"
-        },
-        "fr": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86…"
-        }
-      }
-    },
-    {
-      "slug": "20260916-nodejs-nodejs-2690-current-077aebee",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.9.0",
-      "publishedAt": "2026-09-16T18:17:42.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.9.0 (Current)",
-          "summary": "Node.js 26.9.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.9.0 (Current)",
-          "summary": "Node.js 26.9.0 (Current)"
-        }
-      }
-    },
-    {
       "slug": "20260916-notion-notion-37-agent-skills-for-your-whole-team-cd21ad33",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -383,22 +383,102 @@
       }
     },
     {
-      "slug": "20260921-vercel-deployments-now-show-billable-duration-and-cpu-minutes-de-029191da",
+      "slug": "20260922-vercel-ai-gateway-now-supports-typesafe-clients-and-an-http-api--65b6a9f6",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/deployments-now-show-billable-duration-and-cpu-minutes",
-      "publishedAt": "2026-09-21T21:57:14.113Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
+      "href": "https://vercel.com/changelog/ai-gateway-now-supports-typesafe-clients-and-http-api-for-jev",
+      "publishedAt": "2026-09-22T11:34:36.830Z",
+      "discoveredAt": "2026-09-22T11:34:36.830Z",
       "locales": {
         "en": {
-          "title": "Deployments now show billable duration and CPU minutes Deployments now show their billable duration and CPU minutes in the dashboard, vc inspect, and the REST API. Mehul Kar, William Bout",
-          "summary": "Bhrigu Srivastava, Owen Kephart, and 1 other"
+          "title": "AI Gateway now supports TypeSafe clients and an HTTP API for Jev Call Jev on Vercel AI Gateway through the TypeSafe-compatible API, native HTTP API, or AI SDK to make typed decisions in agents and workflows. Rohan Taneja, Jerilyn Zheng",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         },
         "fr": {
-          "title": "Deployments now show billable duration and CPU minutes Deployments now show their billable duration and CPU minutes in the dashboard, vc inspect, and the REST API. Mehul Kar, William Bout",
-          "summary": "Bhrigu Srivastava, Owen Kephart, and 1 other"
+          "title": "AI Gateway now supports TypeSafe clients and an HTTP API for Jev Call Jev on Vercel AI Gateway through the TypeSafe-compatible API, native HTTP API, or AI SDK to make typed decisions in agents and workflows. Rohan Taneja, Jerilyn Zheng",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+        }
+      }
+    },
+    {
+      "slug": "20260922-github-refreshed-repository-pull-requests-page-generally-availab-f3440464",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-21-refreshed-repository-pull-requests-page-generally-available",
+      "publishedAt": "2026-09-22T01:25:53.000Z",
+      "discoveredAt": "2026-09-22T11:34:36.830Z",
+      "locales": {
+        "en": {
+          "title": "Refreshed repository pull requests page generally available",
+          "summary": "The new repository pull requests page is now generally available to all GitHub users. Highlights The new page makes it easier to find and act on pull requests in a… The post Refreshed repository pull requests page gener…"
+        },
+        "fr": {
+          "title": "Refreshed repository pull requests page generally available",
+          "summary": "The new repository pull requests page is now generally available to all GitHub users. Highlights The new page makes it easier to find and act on pull requests in a… The post Refreshed repository pull requests page gener…"
+        }
+      }
+    },
+    {
+      "slug": "20260916-nodejs-nodejs-2690-current-077aebee",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.9.0",
+      "publishedAt": "2026-09-16T18:17:42.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.9.0 (Current)",
+          "summary": "Node.js 26.9.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.9.0 (Current)",
+          "summary": "Node.js 26.9.0 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260922-hugging-face-jun-kim-omlx-creator-and-maintainer-joins-hugging-f-fb8ad85c",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/omlx",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:36.830Z",
+      "locales": {
+        "en": {
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
+        },
+        "fr": {
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
+        }
+      }
+    },
+    {
+      "slug": "20260922-cursor-postgrescompare-220-released-ffbdcf1e",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgrescompare-220-released-3382/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:36.830Z",
+      "locales": {
+        "en": {
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.…"
+        },
+        "fr": {
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.…"
         }
       }
     },
@@ -443,26 +523,6 @@
       }
     },
     {
-      "slug": "20260921-github-copilot-grok-47-is-now-available-in-github-copilot-2761dd45",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot",
-      "publishedAt": "2026-09-21T14:54:12.000Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
-      "locales": {
-        "en": {
-          "title": "Grok 4.7 is now available in GitHub Copilot",
-          "summary": "Grok 4.7, xAI’s latest reasoning model, is now rolling out in GitHub Copilot. Building on Grok 4.6, it is designed for agentic coding and complex, multistep workflows. This model is… The post Grok 4.7 is now available i…"
-        },
-        "fr": {
-          "title": "Grok 4.7 is now available in GitHub Copilot",
-          "summary": "Grok 4.7, xAI’s latest reasoning model, is now rolling out in GitHub Copilot. Building on Grok 4.6, it is designed for agentic coding and complex, multistep workflows. This model is… The post Grok 4.7 is now available i…"
-        }
-      }
-    },
-    {
       "slug": "20260916-kubernetes-kubernetes-v137-hardening-container-storage-with-bind-6cde82bb",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -479,26 +539,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
           "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for examp…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-hugging-face-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/tokenizers-v1",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
-      "locales": {
-        "en": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
-        },
-        "fr": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
         }
       }
     },
@@ -643,46 +683,6 @@
       }
     },
     {
-      "slug": "20260916-github-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
-      "publishedAt": "2026-09-16T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
-      "locales": {
-        "en": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Dia…"
-        },
-        "fr": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Dia…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-nodejs-nodejs-2682-current-dcb9ac31",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.2",
-      "publishedAt": "2026-09-09T16:09:17.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.2 (Current)",
-          "summary": "Node.js 26.8.2 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.2 (Current)",
-          "summary": "Node.js 26.8.2 (Current)"
-        }
-      }
-    },
-    {
       "slug": "20260912-notion-see-whats-new-feab92d9",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -763,22 +763,102 @@
       }
     },
     {
-      "slug": "20260921-vercel-grok-47-now-available-and-40-off-on-ai-gateway-fx-and-eve-f1e59e24",
+      "slug": "20260921-vercel-vercel-connect-now-supports-microsoft-teams-agents-can-no-844d3484",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/grok-4-7-now-available-and-40-off-on-ai-gateway-fx-eve",
+      "href": "https://vercel.com/changelog/vercel-connect-microsoft-teams",
       "publishedAt": "2026-09-21T21:57:14.113Z",
       "discoveredAt": "2026-09-21T21:57:14.113Z",
       "locales": {
         "en": {
-          "title": "Grok 4.7 now available and 40% off on AI Gateway, fx, and eve Grok 4.7 from xAI is now available on Vercel AI Gateway, eve, and fx, and 40% off for a week starting September 21. Zachary Chen, Jerilyn Zheng",
-          "summary": "liam-bout-128.jpg\"/> Mehul Kar, William Bout"
+          "title": "Vercel Connect now supports Microsoft Teams Agents can now receive and reply to Microsoft Teams messages through Vercel Connect, with tokens managed for you across the Connect SDK, eve, and Chat SDK. Bhrigu Srivastava, Owen Kephart, and 1 other",
+          "summary": "21 September 21 Sep"
         },
         "fr": {
-          "title": "Grok 4.7 now available and 40% off on AI Gateway, fx, and eve Grok 4.7 from xAI is now available on Vercel AI Gateway, eve, and fx, and 40% off for a week starting September 21. Zachary Chen, Jerilyn Zheng",
-          "summary": "liam-bout-128.jpg\"/> Mehul Kar, William Bout"
+          "title": "Vercel Connect now supports Microsoft Teams Agents can now receive and reply to Microsoft Teams messages through Vercel Connect, with tokens managed for you across the Connect SDK, eve, and Chat SDK. Bhrigu Srivastava, Owen Kephart, and 1 other",
+          "summary": "21 September 21 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260921-github-github-enterprise-adds-credential-inventory-exports-bdad4d18",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-21-github-enterprise-adds-credential-inventory-exports",
+      "publishedAt": "2026-09-21T21:13:18.000Z",
+      "discoveredAt": "2026-09-21T21:57:14.113Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Enterprise adds credential inventory exports",
+          "summary": "Enterprise owners can now export a complete inventory of every credential that can access their enterprise (e.g., SSH keys, classic and fine-grained personal access tokens, OAuth App access tokens, and… The post GitHub…"
+        },
+        "fr": {
+          "title": "GitHub Enterprise adds credential inventory exports",
+          "summary": "Enterprise owners can now export a complete inventory of every credential that can access their enterprise (e.g., SSH keys, classic and fine-grained personal access tokens, OAuth App access tokens, and… The post GitHub…"
+        }
+      }
+    },
+    {
+      "slug": "20260909-nodejs-nodejs-2682-current-dcb9ac31",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.2",
+      "publishedAt": "2026-09-09T16:09:17.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.2 (Current)",
+          "summary": "Node.js 26.8.2 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.2 (Current)",
+          "summary": "Node.js 26.8.2 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260921-hugging-face-pruning-llms-like-a-physicist-block-removal-as-an-i-c701b570",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "publishedAt": "2026-09-21T13:44:34.000Z",
+      "discoveredAt": "2026-09-21T21:57:14.113Z",
+      "locales": {
+        "en": {
+          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
+        },
+        "fr": {
+          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
+        }
+      }
+    },
+    {
+      "slug": "20260917-docker-pgadmin-4-v918-released-413bcda5",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-17T21:19:50.467Z",
+      "locales": {
+        "en": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86…"
+        },
+        "fr": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86…"
         }
       }
     },
@@ -823,26 +903,6 @@
       }
     },
     {
-      "slug": "20260918-github-copilot-copilot-code-review-an-improved-review-experience-cbde4620",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience",
-      "publishedAt": "2026-09-18T20:17:22.000Z",
-      "discoveredAt": "2026-09-19T10:55:48.910Z",
-      "locales": {
-        "en": {
-          "title": "Copilot code review: An improved review experience",
-          "summary": "Copilot code review now gives you a clearer view of how a review changes over time, more intelligently auto-resolves its own suggestions, and generates useful commit messages when you accept… The post Copilot code revie…"
-        },
-        "fr": {
-          "title": "Copilot code review: An improved review experience",
-          "summary": "Copilot code review now gives you a clearer view of how a review changes over time, more intelligently auto-resolves its own suggestions, and generates useful commit messages when you accept… The post Copilot code revie…"
-        }
-      }
-    },
-    {
       "slug": "20260915-kubernetes-kubernetes-v137-pod-level-resource-managers-graduated-993e015b",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -859,26 +919,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
           "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
-        }
-      }
-    },
-    {
-      "slug": "20260915-hugging-face-your-agent-aced-the-task-will-it-do-it-again-16a7b27e",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-      "publishedAt": "2026-09-15T16:00:44.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
-      "locales": {
-        "en": {
-          "title": "Your Agent Aced the Task. Will It Do It Again?",
-          "summary": "Your Agent Aced the Task. Will It Do It Again?"
-        },
-        "fr": {
-          "title": "Your Agent Aced the Task. Will It Do It Again?",
-          "summary": "Your Agent Aced the Task. Will It Do It Again?"
         }
       }
     },
@@ -1023,46 +1063,6 @@
       }
     },
     {
-      "slug": "20260911-postgresql-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
-      "publishedAt": "2026-09-11T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sess…"
-        },
-        "fr": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sess…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-nodejs-nodejs-24210-lts-48e7f627",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v24.21.0",
-      "publishedAt": "2026-09-09T11:55:20.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 24.21.0 (LTS)",
-          "summary": "Node.js 24.21.0 (LTS)"
-        },
-        "fr": {
-          "title": "Node.js 24.21.0 (LTS)",
-          "summary": "Node.js 24.21.0 (LTS)"
-        }
-      }
-    },
-    {
       "slug": "20260908-notion-control-which-ai-models-your-agents-can-use-5768ae4c",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1143,22 +1143,102 @@
       }
     },
     {
-      "slug": "20260921-vercel-spend-management-expands-to-enterprise-flexible-commitmen-2c23f7d1",
+      "slug": "20260921-vercel-deployments-now-show-billable-duration-and-cpu-minutes-de-029191da",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/spend-management-enterprise-flex",
+      "href": "https://vercel.com/changelog/deployments-now-show-billable-duration-and-cpu-minutes",
       "publishedAt": "2026-09-21T21:57:14.113Z",
       "discoveredAt": "2026-09-21T21:57:14.113Z",
       "locales": {
         "en": {
-          "title": "Spend Management expands to Enterprise Flexible Commitment plans Enterprise teams on Flexible Commitment plans can now set a Spend Management budget, with email alerts, webhooks, and optional pausing of production deployments. Lakshmi Subbramanian, Bryan Mishkin",
-          "summary": "18 September 18 Sep"
+          "title": "Deployments now show billable duration and CPU minutes Deployments now show their billable duration and CPU minutes in the dashboard, vc inspect, and the REST API. Mehul Kar, William Bout",
+          "summary": "Bhrigu Srivastava, Owen Kephart, and 1 other"
         },
         "fr": {
-          "title": "Spend Management expands to Enterprise Flexible Commitment plans Enterprise teams on Flexible Commitment plans can now set a Spend Management budget, with email alerts, webhooks, and optional pausing of production deployments. Lakshmi Subbramanian, Bryan Mishkin",
-          "summary": "18 September 18 Sep"
+          "title": "Deployments now show billable duration and CPU minutes Deployments now show their billable duration and CPU minutes in the dashboard, vc inspect, and the REST API. Mehul Kar, William Bout",
+          "summary": "Bhrigu Srivastava, Owen Kephart, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20260921-github-copilot-grok-47-is-now-available-in-github-copilot-2761dd45",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot",
+      "publishedAt": "2026-09-21T14:54:12.000Z",
+      "discoveredAt": "2026-09-21T21:57:14.113Z",
+      "locales": {
+        "en": {
+          "title": "Grok 4.7 is now available in GitHub Copilot",
+          "summary": "Grok 4.7, xAI’s latest reasoning model, is now rolling out in GitHub Copilot. Building on Grok 4.6, it is designed for agentic coding and complex, multistep workflows. This model is… The post Grok 4.7 is now available i…"
+        },
+        "fr": {
+          "title": "Grok 4.7 is now available in GitHub Copilot",
+          "summary": "Grok 4.7, xAI’s latest reasoning model, is now rolling out in GitHub Copilot. Building on Grok 4.6, it is designed for agentic coding and complex, multistep workflows. This model is… The post Grok 4.7 is now available i…"
+        }
+      }
+    },
+    {
+      "slug": "20260909-nodejs-nodejs-24210-lts-48e7f627",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v24.21.0",
+      "publishedAt": "2026-09-09T11:55:20.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 24.21.0 (LTS)",
+          "summary": "Node.js 24.21.0 (LTS)"
+        },
+        "fr": {
+          "title": "Node.js 24.21.0 (LTS)",
+          "summary": "Node.js 24.21.0 (LTS)"
+        }
+      }
+    },
+    {
+      "slug": "20260921-hugging-face-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/tokenizers-v1",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "discoveredAt": "2026-09-21T21:57:14.113Z",
+      "locales": {
+        "en": {
+          "title": "tokenizers v1: encode, decode and scaling, measured",
+          "summary": "tokenizers v1: encode, decode and scaling, measured"
+        },
+        "fr": {
+          "title": "tokenizers v1: encode, decode and scaling, measured",
+          "summary": "tokenizers v1: encode, decode and scaling, measured"
+        }
+      }
+    },
+    {
+      "slug": "20260916-github-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "locales": {
+        "en": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Dia…"
+        },
+        "fr": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Dia…"
         }
       }
     },
@@ -1203,26 +1283,6 @@
       }
     },
     {
-      "slug": "20260918-github-manage-the-code-coverage-ruleset-condition-with-the-rest--9a3d27b1",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-18-manage-the-code-coverage-ruleset-condition-with-the-rest-api",
-      "publishedAt": "2026-09-18T19:23:49.000Z",
-      "discoveredAt": "2026-09-18T20:52:51.777Z",
-      "locales": {
-        "en": {
-          "title": "Manage the code coverage ruleset condition with the REST API",
-          "summary": "You can now use the generally available REST API to manage the Restrict code coverage repository ruleset option, in addition to the existing UI support. This ruleset lets you enforce… The post Manage the code coverage r…"
-        },
-        "fr": {
-          "title": "Manage the code coverage ruleset condition with the REST API",
-          "summary": "You can now use the generally available REST API to manage the Restrict code coverage repository ruleset option, in addition to the existing UI support. This ruleset lets you enforce… The post Manage the code coverage r…"
-        }
-      }
-    },
-    {
       "slug": "20260914-kubernetes-kubernetes-changed-block-tracking-api---beta-differen-081539c8",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -1239,26 +1299,6 @@
         "fr": {
           "title": "Kubernetes Changed Block Tracking API - Beta Differences",
           "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
-        }
-      }
-    },
-    {
-      "slug": "20260910-hugging-face-async-grpo-with-lora-across-hf-jobs-a-bucket-a-prox-d4e55a91",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-14T12:41:39.793Z",
-      "locales": {
-        "en": {
-          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
-          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
-        },
-        "fr": {
-          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
-          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
         }
       }
     },
@@ -1403,46 +1443,6 @@
       }
     },
     {
-      "slug": "20260910-postgresql-postgresql-migrator-10-first-stable-release-6b667d27",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL…"
-        },
-        "fr": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL…"
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-nodejs-2681-current-c52a0716",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.1",
-      "publishedAt": "2026-08-26T22:11:36.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.1 (Current)",
-          "summary": "Node.js 26.8.1 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.1 (Current)",
-          "summary": "Node.js 26.8.1 (Current)"
-        }
-      }
-    },
-    {
       "slug": "20260827-notion-ask-your-agent-to-suggest-edits-3d228486",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1523,22 +1523,102 @@
       }
     },
     {
-      "slug": "20260921-vercel-webmcp-support-now-available-in-mcp-handler-mcp-handler-a-32ae7a20",
+      "slug": "20260921-vercel-grok-47-now-available-and-40-off-on-ai-gateway-fx-and-eve-f1e59e24",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/webmcp-mcp-handler",
-      "publishedAt": "2026-09-21T12:44:09.835Z",
-      "discoveredAt": "2026-09-21T12:44:09.835Z",
+      "href": "https://vercel.com/changelog/grok-4-7-now-available-and-40-off-on-ai-gateway-fx-eve",
+      "publishedAt": "2026-09-21T21:57:14.113Z",
+      "discoveredAt": "2026-09-21T21:57:14.113Z",
       "locales": {
         "en": {
-          "title": "WebMCP support now available in mcp-handler mcp-handler adds experimental WebMCP support. Expose your MCP tools to in-browser agents with a single script tag, no separate OAuth flow required. Andrew Qu, Boris Besemer",
-          "summary": "8.jpg\"/> Lakshmi Subbramanian, Bryan Mishkin"
+          "title": "Grok 4.7 now available and 40% off on AI Gateway, fx, and eve Grok 4.7 from xAI is now available on Vercel AI Gateway, eve, and fx, and 40% off for a week starting September 21. Zachary Chen, Jerilyn Zheng",
+          "summary": "liam-bout-128.jpg\"/> Mehul Kar, William Bout"
         },
         "fr": {
-          "title": "WebMCP support now available in mcp-handler mcp-handler adds experimental WebMCP support. Expose your MCP tools to in-browser agents with a single script tag, no separate OAuth flow required. Andrew Qu, Boris Besemer",
-          "summary": "8.jpg\"/> Lakshmi Subbramanian, Bryan Mishkin"
+          "title": "Grok 4.7 now available and 40% off on AI Gateway, fx, and eve Grok 4.7 from xAI is now available on Vercel AI Gateway, eve, and fx, and 40% off for a week starting September 21. Zachary Chen, Jerilyn Zheng",
+          "summary": "liam-bout-128.jpg\"/> Mehul Kar, William Bout"
+        }
+      }
+    },
+    {
+      "slug": "20260918-github-copilot-copilot-code-review-an-improved-review-experience-cbde4620",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience",
+      "publishedAt": "2026-09-18T20:17:22.000Z",
+      "discoveredAt": "2026-09-19T10:55:48.910Z",
+      "locales": {
+        "en": {
+          "title": "Copilot code review: An improved review experience",
+          "summary": "Copilot code review now gives you a clearer view of how a review changes over time, more intelligently auto-resolves its own suggestions, and generates useful commit messages when you accept… The post Copilot code revie…"
+        },
+        "fr": {
+          "title": "Copilot code review: An improved review experience",
+          "summary": "Copilot code review now gives you a clearer view of how a review changes over time, more intelligently auto-resolves its own suggestions, and generates useful commit messages when you accept… The post Copilot code revie…"
+        }
+      }
+    },
+    {
+      "slug": "20260826-nodejs-nodejs-2681-current-c52a0716",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.1",
+      "publishedAt": "2026-08-26T22:11:36.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.1 (Current)",
+          "summary": "Node.js 26.8.1 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.1 (Current)",
+          "summary": "Node.js 26.8.1 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260915-hugging-face-your-agent-aced-the-task-will-it-do-it-again-16a7b27e",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "publishedAt": "2026-09-15T16:00:44.000Z",
+      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "locales": {
+        "en": {
+          "title": "Your Agent Aced the Task. Will It Do It Again?",
+          "summary": "Your Agent Aced the Task. Will It Do It Again?"
+        },
+        "fr": {
+          "title": "Your Agent Aced the Task. Will It Do It Again?",
+          "summary": "Your Agent Aced the Task. Will It Do It Again?"
+        }
+      }
+    },
+    {
+      "slug": "20260911-postgresql-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "locales": {
+        "en": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sess…"
+        },
+        "fr": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sess…"
         }
       }
     },
@@ -1583,26 +1663,6 @@
       }
     },
     {
-      "slug": "20260918-github-copilot-github-copilot-weekly-releases-september-14-587e82fd",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-18-github-copilot-weekly-releases-september-14",
-      "publishedAt": "2026-09-18T19:21:22.000Z",
-      "discoveredAt": "2026-09-18T20:52:51.777Z",
-      "locales": {
-        "en": {
-          "title": "GitHub Copilot weekly releases — September 14",
-          "summary": "This week, GitHub Copilot adds new model selection options, code review updates, and Sentry integration in the Copilot app. There are also updates for admins, plus new agent features in… The post GitHub Copilot weekly r…"
-        },
-        "fr": {
-          "title": "GitHub Copilot weekly releases — September 14",
-          "summary": "This week, GitHub Copilot adds new model selection options, code review updates, and Sentry integration in the Copilot app. There are also updates for admins, plus new agent features in… The post GitHub Copilot weekly r…"
-        }
-      }
-    },
-    {
       "slug": "20260914-kubernetes-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -1619,26 +1679,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
           "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
-        }
-      }
-    },
-    {
-      "slug": "20260910-hugging-face-rebuilding-automatic1111-with-gradio-workflow-cb50b0c3",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/gradio-workflow-1111",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "summary": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
-        },
-        "fr": {
-          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "summary": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
         }
       }
     },
@@ -1783,46 +1823,6 @@
       }
     },
     {
-      "slug": "20260910-github-pgvaulttde-v171-transparent-data-encryption-for-postgresq-8b0f1977",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:51.384Z",
-      "locales": {
-        "en": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it le…"
-        },
-        "fr": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it le…"
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-nodejs-2680-current-1f44590f",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.0",
-      "publishedAt": "2026-08-26T14:29:48.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.0 (Current)",
-          "summary": "Node.js 26.8.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.0 (Current)",
-          "summary": "Node.js 26.8.0 (Current)"
-        }
-      }
-    },
-    {
       "slug": "20260818-notion-your-developer-portal-now-in-the-sidebar-7b336ba1",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1883,22 +1883,102 @@
       }
     },
     {
-      "slug": "20260920-vercel-v0-now-reads-npm-credentials-from-shared-environment-vari-dde4a480",
+      "slug": "20260921-vercel-spend-management-expands-to-enterprise-flexible-commitmen-2c23f7d1",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/v0-now-reads-npm-credentials-from-shared-environment-variables",
-      "publishedAt": "2026-09-20T20:47:02.390Z",
-      "discoveredAt": "2026-09-20T20:47:02.390Z",
+      "href": "https://vercel.com/changelog/spend-management-enterprise-flex",
+      "publishedAt": "2026-09-21T21:57:14.113Z",
+      "discoveredAt": "2026-09-21T21:57:14.113Z",
       "locales": {
         "en": {
-          "title": "v0 now reads npm credentials from shared environment variables v0 can now install private packages from npm and custom registries. Add an NPM_TOKEN or NPM_RC environment variable to build with your team's internal packages, design systems, and component libraries in v0. Vishal Yathish, Sahaj Jain",
-          "summary": "-besemer-128.jpg\"/> Andrew Qu, Boris Besemer"
+          "title": "Spend Management expands to Enterprise Flexible Commitment plans Enterprise teams on Flexible Commitment plans can now set a Spend Management budget, with email alerts, webhooks, and optional pausing of production deployments. Lakshmi Subbramanian, Bryan Mishkin",
+          "summary": "18 September 18 Sep"
         },
         "fr": {
-          "title": "v0 now reads npm credentials from shared environment variables v0 can now install private packages from npm and custom registries. Add an NPM_TOKEN or NPM_RC environment variable to build with your team's internal packages, design systems, and component libraries in v0. Vishal Yathish, Sahaj Jain",
-          "summary": "-besemer-128.jpg\"/> Andrew Qu, Boris Besemer"
+          "title": "Spend Management expands to Enterprise Flexible Commitment plans Enterprise teams on Flexible Commitment plans can now set a Spend Management budget, with email alerts, webhooks, and optional pausing of production deployments. Lakshmi Subbramanian, Bryan Mishkin",
+          "summary": "18 September 18 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260918-github-manage-the-code-coverage-ruleset-condition-with-the-rest--9a3d27b1",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-18-manage-the-code-coverage-ruleset-condition-with-the-rest-api",
+      "publishedAt": "2026-09-18T19:23:49.000Z",
+      "discoveredAt": "2026-09-18T20:52:51.777Z",
+      "locales": {
+        "en": {
+          "title": "Manage the code coverage ruleset condition with the REST API",
+          "summary": "You can now use the generally available REST API to manage the Restrict code coverage repository ruleset option, in addition to the existing UI support. This ruleset lets you enforce… The post Manage the code coverage r…"
+        },
+        "fr": {
+          "title": "Manage the code coverage ruleset condition with the REST API",
+          "summary": "You can now use the generally available REST API to manage the Restrict code coverage repository ruleset option, in addition to the existing UI support. This ruleset lets you enforce… The post Manage the code coverage r…"
+        }
+      }
+    },
+    {
+      "slug": "20260826-nodejs-nodejs-2680-current-1f44590f",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.0",
+      "publishedAt": "2026-08-26T14:29:48.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.0 (Current)",
+          "summary": "Node.js 26.8.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.0 (Current)",
+          "summary": "Node.js 26.8.0 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260910-hugging-face-async-grpo-with-lora-across-hf-jobs-a-bucket-a-prox-d4e55a91",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-14T12:41:39.793Z",
+      "locales": {
+        "en": {
+          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
+        },
+        "fr": {
+          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
+        }
+      }
+    },
+    {
+      "slug": "20260910-postgresql-postgresql-migrator-10-first-stable-release-6b667d27",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL…"
+        },
+        "fr": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL…"
         }
       }
     },
@@ -1943,26 +2023,6 @@
       }
     },
     {
-      "slug": "20260918-github-copilot-upcoming-deprecation-of-selected-github-copilot-m-7019e34a",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october",
-      "publishedAt": "2026-09-18T19:00:00.000Z",
-      "discoveredAt": "2026-09-18T20:52:51.777Z",
-      "locales": {
-        "en": {
-          "title": "Upcoming deprecation of selected GitHub Copilot models in mid-October",
-          "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on October 19th, 2026: Model Deprecation date… The post Upco…"
-        },
-        "fr": {
-          "title": "Upcoming deprecation of selected GitHub Copilot models in mid-October",
-          "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on October 19th, 2026: Model Deprecation date… The post Upco…"
-        }
-      }
-    },
-    {
       "slug": "20260911-github-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
       "toolName": "GitHub",
       "category": "Developer Platform",
@@ -1979,26 +2039,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
           "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 und…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-hugging-face-ibm-releases-sota-granite-time-series-patchtst-fm-r-e8608e40",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "publishedAt": "2026-09-09T15:36:24.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "summary": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license"
-        },
-        "fr": {
-          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "summary": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license"
         }
       }
     },
@@ -2123,62 +2163,22 @@
       }
     },
     {
-      "slug": "20260827-anthropic-platform-aug-27-2026-announcements-previewing-the-mode-e8e7441a",
+      "slug": "20260827-anthropic-platform-aug-27-2026-announcements-expanding-our-suppo-d575f18c",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "href": "https://www.anthropic.com/news/expanding-support-for-scientists",
       "publishedAt": "2026-08-27T00:00:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
+      "discoveredAt": "2026-09-22T11:34:36.830Z",
       "locales": {
         "en": {
-          "title": "Aug 27, 2026 Announcements Previewing the Model Hardware Standard",
-          "summary": "nnouncements Improving our alignment and security efforts"
+          "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
+          "summary": "Announcements Previewing the Model Hardware Standard"
         },
         "fr": {
-          "title": "Aug 27, 2026 Announcements Previewing the Model Hardware Standard",
-          "summary": "nnouncements Improving our alignment and security efforts"
-        }
-      }
-    },
-    {
-      "slug": "20260909-docker-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer i…"
-        },
-        "fr": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer i…"
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-nodejs-24200-lts-2b040562",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v24.20.0",
-      "publishedAt": "2026-08-26T14:29:42.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 24.20.0 (LTS)",
-          "summary": "Node.js 24.20.0 (LTS)"
-        },
-        "fr": {
-          "title": "Node.js 24.20.0 (LTS)",
-          "summary": "Node.js 24.20.0 (LTS)"
+          "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
+          "summary": "Announcements Previewing the Model Hardware Standard"
         }
       }
     },
@@ -2243,22 +2243,102 @@
       }
     },
     {
-      "slug": "20260920-vercel-glm-53-flashx-now-available-on-ai-gateway-call-zais-glm-5-32372f02",
+      "slug": "20260921-vercel-webmcp-support-now-available-in-mcp-handler-mcp-handler-a-32ae7a20",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/glm-5-3-flashx-now-available-on-ai-gateway",
-      "publishedAt": "2026-09-20T11:19:33.192Z",
-      "discoveredAt": "2026-09-20T11:19:33.192Z",
+      "href": "https://vercel.com/changelog/webmcp-mcp-handler",
+      "publishedAt": "2026-09-21T12:44:09.835Z",
+      "discoveredAt": "2026-09-21T12:44:09.835Z",
       "locales": {
         "en": {
-          "title": "GLM 5.3 FlashX now available on AI Gateway Call Z.ai's GLM 5.3 FlashX through Vercel AI Gateway at 200 tokens per second, with one API key, automatic fallbacks, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "8c6c/image.png\"/> Vishal Yathish, Sahaj Jain"
+          "title": "WebMCP support now available in mcp-handler mcp-handler adds experimental WebMCP support. Expose your MCP tools to in-browser agents with a single script tag, no separate OAuth flow required. Andrew Qu, Boris Besemer",
+          "summary": "8.jpg\"/> Lakshmi Subbramanian, Bryan Mishkin"
         },
         "fr": {
-          "title": "GLM 5.3 FlashX now available on AI Gateway Call Z.ai's GLM 5.3 FlashX through Vercel AI Gateway at 200 tokens per second, with one API key, automatic fallbacks, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "8c6c/image.png\"/> Vishal Yathish, Sahaj Jain"
+          "title": "WebMCP support now available in mcp-handler mcp-handler adds experimental WebMCP support. Expose your MCP tools to in-browser agents with a single script tag, no separate OAuth flow required. Andrew Qu, Boris Besemer",
+          "summary": "8.jpg\"/> Lakshmi Subbramanian, Bryan Mishkin"
+        }
+      }
+    },
+    {
+      "slug": "20260918-github-copilot-github-copilot-weekly-releases-september-14-587e82fd",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-18-github-copilot-weekly-releases-september-14",
+      "publishedAt": "2026-09-18T19:21:22.000Z",
+      "discoveredAt": "2026-09-18T20:52:51.777Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Copilot weekly releases — September 14",
+          "summary": "This week, GitHub Copilot adds new model selection options, code review updates, and Sentry integration in the Copilot app. There are also updates for admins, plus new agent features in… The post GitHub Copilot weekly r…"
+        },
+        "fr": {
+          "title": "GitHub Copilot weekly releases — September 14",
+          "summary": "This week, GitHub Copilot adds new model selection options, code review updates, and Sentry integration in the Copilot app. There are also updates for admins, plus new agent features in… The post GitHub Copilot weekly r…"
+        }
+      }
+    },
+    {
+      "slug": "20260826-nodejs-nodejs-24200-lts-2b040562",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v24.20.0",
+      "publishedAt": "2026-08-26T14:29:42.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 24.20.0 (LTS)",
+          "summary": "Node.js 24.20.0 (LTS)"
+        },
+        "fr": {
+          "title": "Node.js 24.20.0 (LTS)",
+          "summary": "Node.js 24.20.0 (LTS)"
+        }
+      }
+    },
+    {
+      "slug": "20260910-hugging-face-rebuilding-automatic1111-with-gradio-workflow-cb50b0c3",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/gradio-workflow-1111",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "summary": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
+        },
+        "fr": {
+          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "summary": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
+        }
+      }
+    },
+    {
+      "slug": "20260910-github-pgvaulttde-v171-transparent-data-encryption-for-postgresq-8b0f1977",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:51.384Z",
+      "locales": {
+        "en": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it le…"
+        },
+        "fr": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it le…"
         }
       }
     },
@@ -2303,26 +2383,6 @@
       }
     },
     {
-      "slug": "20260918-github-stage-only-npm-tokens-for-safer-automation-6f7db5bc",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-18-stage-only-npm-tokens-for-safer-automation",
-      "publishedAt": "2026-09-18T16:37:50.000Z",
-      "discoveredAt": "2026-09-18T20:52:51.777Z",
-      "locales": {
-        "en": {
-          "title": "Stage-only npm tokens for safer automation",
-          "summary": "You can now select Read and write (stage only) when creating an npm granular access token. This lets your automated workflows stage package versions for review without giving the token… The post Stage-only npm tokens fo…"
-        },
-        "fr": {
-          "title": "Stage-only npm tokens for safer automation",
-          "summary": "You can now select Read and write (stage only) when creating an npm granular access token. This lets your automated workflows stage package versions for review without giving the token… The post Stage-only npm tokens fo…"
-        }
-      }
-    },
-    {
       "slug": "20260910-kubernetes-kubernetes-v137-scheduler-preemption-for-in-place-pod-e2763381",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -2339,66 +2399,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
           "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.…"
-        }
-      }
-    },
-    {
-      "slug": "20260908-hugging-face-safety-for-whom-refusing-the-right-subset-of-a-topi-4f420d1c",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
-      "publishedAt": "2026-09-08T14:23:07.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
-          "summary": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic"
-        },
-        "fr": {
-          "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
-          "summary": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic"
-        }
-      }
-    },
-    {
-      "slug": "20260910-cloudflare-1111-now-supports-post-quantum-dnssec-all-2420-bytes--ed3eedaf",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
-      "publishedAt": "2026-09-10T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
-          "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale."
-        },
-        "fr": {
-          "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
-          "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale."
-        }
-      }
-    },
-    {
-      "slug": "20260917-chatgpt-how-cooley-is-accelerating-ipo-work-with-chatgpt-964ae1dd",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/cooley-gopublic",
-      "publishedAt": "2026-09-17T12:00:00.000Z",
-      "discoveredAt": "2026-09-18T11:10:49.888Z",
-      "locales": {
-        "en": {
-          "title": "How Cooley is accelerating IPO work with ChatGPT",
-          "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most."
-        },
-        "fr": {
-          "title": "How Cooley is accelerating IPO work with ChatGPT",
-          "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most."
         }
       }
     }

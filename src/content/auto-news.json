@@ -1,7 +1,64 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T21:57:13.092Z",
+  "updatedAt": "2026-09-22T11:34:35.588Z",
   "items": [
+    {
+      "slug": "20260922-nodejs-26100-current-7d6e3532",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.10.0",
+      "publishedAt": "2026-09-22T09:03:49.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.10.0 (Current)",
+          "summary": "Node.js 26.10.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.10.0 (Current)",
+          "summary": "Node.js 26.10.0 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260922-transformers-now-runs-llamacpp-quants-98acfe91",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
+        },
+        "fr": {
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
+        }
+      }
+    },
+    {
+      "slug": "20260922-pgsql-test-real-postgres-testing-for-faster-development-loops-212e48db",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgsql-test-real-postgres-testing-for-faster-development-loops-3380/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+        },
+        "fr": {
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+        }
+      }
+    },
     {
       "slug": "20260921-simplifying-model-serving-across-multiple-gpus-with-nvidia-tenso-21a9c69c",
       "topic": "AI Systems",
@@ -56,25 +113,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
           "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC, telling…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimiza-c701b570",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-      "publishedAt": "2026-09-21T13:44:34.000Z",
-      "discoveredAt": "2026-09-21T14:30:28.060Z",
-      "locales": {
-        "en": {
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
-        },
-        "fr": {
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
         }
       }
     },
@@ -231,44 +269,6 @@
       }
     },
     {
-      "slug": "20260917-pgadmin-4-v918-released-413bcda5",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:49.442Z",
-      "locales": {
-        "en": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
-        },
-        "fr": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
-        }
-      }
-    },
-    {
-      "slug": "20260916-nodejs-2690-current-077aebee",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.9.0",
-      "publishedAt": "2026-09-16T18:17:42.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.9.0 (Current)",
-          "summary": "Node.js 26.9.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.9.0 (Current)",
-          "summary": "Node.js 26.9.0 (Current)"
-        }
-      }
-    },
-    {
       "slug": "20260916-microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadr-7164ca73",
       "topic": "Computer Science",
       "source": "Azure AI Blog",
@@ -364,6 +364,63 @@
       }
     },
     {
+      "slug": "20260916-nodejs-2690-current-077aebee",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.9.0",
+      "publishedAt": "2026-09-16T18:17:42.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.9.0 (Current)",
+          "summary": "Node.js 26.9.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.9.0 (Current)",
+          "summary": "Node.js 26.9.0 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260922-jun-kim-omlx-creator-and-maintainer-joins-hugging-face-to-suppor-fb8ad85c",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/omlx",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
+        },
+        "fr": {
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
+        }
+      }
+    },
+    {
+      "slug": "20260922-postgrescompare-220-released-ffbdcf1e",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgrescompare-220-released-3382/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
+        },
+        "fr": {
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
+        }
+      }
+    },
+    {
       "slug": "20260921-how-to-evaluate-ai-agents-from-tool-calls-to-task-completion-f6a9f53b",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -417,25 +474,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
           "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for example, prohib…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/tokenizers-v1",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
-      "discoveredAt": "2026-09-21T14:30:28.060Z",
-      "locales": {
-        "en": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
-        },
-        "fr": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
         }
       }
     },
@@ -592,44 +630,6 @@
       }
     },
     {
-      "slug": "20260916-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
-      "publishedAt": "2026-09-16T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:35.562Z",
-      "locales": {
-        "en": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
-        },
-        "fr": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-nodejs-2682-current-dcb9ac31",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.2",
-      "publishedAt": "2026-09-09T16:09:17.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.2 (Current)",
-          "summary": "Node.js 26.8.2 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.2 (Current)",
-          "summary": "Node.js 26.8.2 (Current)"
-        }
-      }
-    },
-    {
       "slug": "20260910-microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for--6542ac34",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -706,6 +706,63 @@
       }
     },
     {
+      "slug": "20260909-nodejs-2682-current-dcb9ac31",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.2",
+      "publishedAt": "2026-09-09T16:09:17.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.2 (Current)",
+          "summary": "Node.js 26.8.2 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.2 (Current)",
+          "summary": "Node.js 26.8.2 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260921-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimiza-c701b570",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "publishedAt": "2026-09-21T13:44:34.000Z",
+      "discoveredAt": "2026-09-21T14:30:28.060Z",
+      "locales": {
+        "en": {
+          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
+        },
+        "fr": {
+          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
+        }
+      }
+    },
+    {
+      "slug": "20260917-pgadmin-4-v918-released-413bcda5",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-17T21:19:49.442Z",
+      "locales": {
+        "en": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+        },
+        "fr": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+        }
+      }
+    },
+    {
       "slug": "20260918-benchmarking-llm-inference-at-scale-with-aiperf-88c32b0b",
       "topic": "AI Performance",
       "source": "NVIDIA Developer Blog",
@@ -759,25 +816,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
           "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod-Level Res…"
-        }
-      }
-    },
-    {
-      "slug": "20260915-your-agent-aced-the-task-will-it-do-it-again-16a7b27e",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-      "publishedAt": "2026-09-15T16:00:44.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
-      "locales": {
-        "en": {
-          "title": "Your Agent Aced the Task. Will It Do It Again?",
-          "summary": "Your Agent Aced the Task. Will It Do It Again?"
-        },
-        "fr": {
-          "title": "Your Agent Aced the Task. Will It Do It Again?",
-          "summary": "Your Agent Aced the Task. Will It Do It Again?"
         }
       }
     },
@@ -934,44 +972,6 @@
       }
     },
     {
-      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
-      "publishedAt": "2026-09-11T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
-        },
-        "fr": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-nodejs-24210-lts-48e7f627",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v24.21.0",
-      "publishedAt": "2026-09-09T11:55:20.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 24.21.0 (LTS)",
-          "summary": "Node.js 24.21.0 (LTS)"
-        },
-        "fr": {
-          "title": "Node.js 24.21.0 (LTS)",
-          "summary": "Node.js 24.21.0 (LTS)"
-        }
-      }
-    },
-    {
       "slug": "20260910-the-economics-of-agent-optimization-how-ai-agent-governance-cont-d6870c93",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -1048,6 +1048,63 @@
       }
     },
     {
+      "slug": "20260909-nodejs-24210-lts-48e7f627",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v24.21.0",
+      "publishedAt": "2026-09-09T11:55:20.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 24.21.0 (LTS)",
+          "summary": "Node.js 24.21.0 (LTS)"
+        },
+        "fr": {
+          "title": "Node.js 24.21.0 (LTS)",
+          "summary": "Node.js 24.21.0 (LTS)"
+        }
+      }
+    },
+    {
+      "slug": "20260921-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/tokenizers-v1",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "discoveredAt": "2026-09-21T14:30:28.060Z",
+      "locales": {
+        "en": {
+          "title": "tokenizers v1: encode, decode and scaling, measured",
+          "summary": "tokenizers v1: encode, decode and scaling, measured"
+        },
+        "fr": {
+          "title": "tokenizers v1: encode, decode and scaling, measured",
+          "summary": "tokenizers v1: encode, decode and scaling, measured"
+        }
+      }
+    },
+    {
+      "slug": "20260916-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:35.562Z",
+      "locales": {
+        "en": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+        },
+        "fr": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+        }
+      }
+    },
+    {
       "slug": "20260916-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -1101,25 +1158,6 @@
         "fr": {
           "title": "Kubernetes Changed Block Tracking API - Beta Differences",
           "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet familiar with ch…"
-        }
-      }
-    },
-    {
-      "slug": "20260910-async-grpo-with-lora-across-hf-jobs-a-bucket-a-proxy-and-no-nccl-d4e55a91",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-14T12:41:38.132Z",
-      "locales": {
-        "en": {
-          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
-          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
-        },
-        "fr": {
-          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
-          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
         }
       }
     },
@@ -1276,44 +1314,6 @@
       }
     },
     {
-      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
-        },
-        "fr": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-2681-current-c52a0716",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.1",
-      "publishedAt": "2026-08-26T22:11:36.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.1 (Current)",
-          "summary": "Node.js 26.8.1 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.1 (Current)",
-          "summary": "Node.js 26.8.1 (Current)"
-        }
-      }
-    },
-    {
       "slug": "20260910-the-future-of-infrastructure-resiliency-starts-with-modernizatio-5b295c3c",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -1390,6 +1390,63 @@
       }
     },
     {
+      "slug": "20260826-nodejs-2681-current-c52a0716",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.1",
+      "publishedAt": "2026-08-26T22:11:36.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.1 (Current)",
+          "summary": "Node.js 26.8.1 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.1 (Current)",
+          "summary": "Node.js 26.8.1 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260915-your-agent-aced-the-task-will-it-do-it-again-16a7b27e",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "publishedAt": "2026-09-15T16:00:44.000Z",
+      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "locales": {
+        "en": {
+          "title": "Your Agent Aced the Task. Will It Do It Again?",
+          "summary": "Your Agent Aced the Task. Will It Do It Again?"
+        },
+        "fr": {
+          "title": "Your Agent Aced the Task. Will It Do It Again?",
+          "summary": "Your Agent Aced the Task. Will It Do It Again?"
+        }
+      }
+    },
+    {
+      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+        },
+        "fr": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+        }
+      }
+    },
+    {
       "slug": "20260916-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-64-82b93583",
       "topic": "AI Performance",
       "source": "NVIDIA Developer Blog",
@@ -1443,25 +1500,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
           "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It…"
-        }
-      }
-    },
-    {
-      "slug": "20260910-rebuilding-automatic1111-with-gradio-workflow-cb50b0c3",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/gradio-workflow-1111",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "summary": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
-        },
-        "fr": {
-          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "summary": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
         }
       }
     },
@@ -1618,44 +1656,6 @@
       }
     },
     {
-      "slug": "20260910-pgvaulttde-v171-transparent-data-encryption-for-postgresql-17-an-8b0f1977",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
-        },
-        "fr": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-2680-current-1f44590f",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.0",
-      "publishedAt": "2026-08-26T14:29:48.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.0 (Current)",
-          "summary": "Node.js 26.8.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.0 (Current)",
-          "summary": "Node.js 26.8.0 (Current)"
-        }
-      }
-    },
-    {
       "slug": "20260909-two-zones-or-three-a-design-framework-for-zone-resilient-azure-w-d4c3e65e",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -1713,6 +1713,63 @@
       }
     },
     {
+      "slug": "20260826-nodejs-2680-current-1f44590f",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.0",
+      "publishedAt": "2026-08-26T14:29:48.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.0 (Current)",
+          "summary": "Node.js 26.8.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.0 (Current)",
+          "summary": "Node.js 26.8.0 (Current)"
+        }
+      }
+    },
+    {
+      "slug": "20260910-async-grpo-with-lora-across-hf-jobs-a-bucket-a-proxy-and-no-nccl-d4e55a91",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-14T12:41:38.132Z",
+      "locales": {
+        "en": {
+          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
+        },
+        "fr": {
+          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
+        }
+      }
+    },
+    {
+      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        },
+        "fr": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        }
+      }
+    },
+    {
       "slug": "20260916-translating-cuda-tile-operations-from-python-to-rust-using-agent-833138d5",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -1766,25 +1823,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
           "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-ibm-releases-sota-granite-time-series-patchtst-fm-r2-model-with--e8608e40",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "publishedAt": "2026-09-09T15:36:24.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "summary": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license"
-        },
-        "fr": {
-          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "summary": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license"
         }
       }
     },
@@ -1922,44 +1960,6 @@
       }
     },
     {
-      "slug": "20260909-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
-        },
-        "fr": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-24200-lts-2b040562",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v24.20.0",
-      "publishedAt": "2026-08-26T14:29:42.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 24.20.0 (LTS)",
-          "summary": "Node.js 24.20.0 (LTS)"
-        },
-        "fr": {
-          "title": "Node.js 24.20.0 (LTS)",
-          "summary": "Node.js 24.20.0 (LTS)"
-        }
-      }
-    },
-    {
       "slug": "20260908-beyond-the-benchmark-how-an-adaptive-approach-drives-scientific--c3e4a63e",
       "topic": "AI Performance",
       "source": "Azure AI Blog",
@@ -2017,6 +2017,63 @@
       }
     },
     {
+      "slug": "20260826-nodejs-24200-lts-2b040562",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v24.20.0",
+      "publishedAt": "2026-08-26T14:29:42.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 24.20.0 (LTS)",
+          "summary": "Node.js 24.20.0 (LTS)"
+        },
+        "fr": {
+          "title": "Node.js 24.20.0 (LTS)",
+          "summary": "Node.js 24.20.0 (LTS)"
+        }
+      }
+    },
+    {
+      "slug": "20260910-rebuilding-automatic1111-with-gradio-workflow-cb50b0c3",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/gradio-workflow-1111",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "summary": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
+        },
+        "fr": {
+          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "summary": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
+        }
+      }
+    },
+    {
+      "slug": "20260910-pgvaulttde-v171-transparent-data-encryption-for-postgresql-17-an-8b0f1977",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+        },
+        "fr": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+        }
+      }
+    },
+    {
       "slug": "20260915-turn-your-latest-observations-into-timely-weather-decisions-with-e61094f2",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
@@ -2070,25 +2127,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
           "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
-        }
-      }
-    },
-    {
-      "slug": "20260908-safety-for-whom-refusing-the-right-subset-of-a-topic-not-the-who-4f420d1c",
-      "topic": "Security & Standards",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
-      "publishedAt": "2026-09-08T14:23:07.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
-          "summary": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic"
-        },
-        "fr": {
-          "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
-          "summary": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic"
         }
       }
     },
@@ -2207,44 +2245,6 @@
       }
     },
     {
-      "slug": "20260909-autobase-211-released-991decc9",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
-        },
-        "fr": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
-        }
-      }
-    },
-    {
-      "slug": "20260814-nodejs-interactive-2026-a-recap-a2a9f36f",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/events/nodejs-interactive-2026",
-      "publishedAt": "2026-08-14T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Node.js Interactive 2026: A Recap",
-          "summary": "Node.js Interactive 2026: A Recap"
-        },
-        "fr": {
-          "title": "Node.js Interactive 2026: A Recap",
-          "summary": "Node.js Interactive 2026: A Recap"
-        }
-      }
-    },
-    {
       "slug": "20260903-enterprise-ai-transformation-relies-on-the-end-to-end-platform-a-ee3a6ee1",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -2302,6 +2302,63 @@
       }
     },
     {
+      "slug": "20260814-nodejs-interactive-2026-a-recap-a2a9f36f",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/events/nodejs-interactive-2026",
+      "publishedAt": "2026-08-14T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Node.js Interactive 2026: A Recap",
+          "summary": "Node.js Interactive 2026: A Recap"
+        },
+        "fr": {
+          "title": "Node.js Interactive 2026: A Recap",
+          "summary": "Node.js Interactive 2026: A Recap"
+        }
+      }
+    },
+    {
+      "slug": "20260909-ibm-releases-sota-granite-time-series-patchtst-fm-r2-model-with--e8608e40",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "publishedAt": "2026-09-09T15:36:24.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
+          "summary": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license"
+        },
+        "fr": {
+          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
+          "summary": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license"
+        }
+      }
+    },
+    {
+      "slug": "20260909-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+        },
+        "fr": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+        }
+      }
+    },
+    {
       "slug": "20260915-how-nvidia-groq-3-lpx-deterministic-execution-drives-power-effic-ce9893f8",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -2355,25 +2412,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
           "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
-        }
-      }
-    },
-    {
-      "slug": "20260903-neomme-an-efficient-multimodal-native-and-multilingual-encoder-96a3500c",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/Hcompany/neomme",
-      "publishedAt": "2026-09-03T13:13:48.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
-          "summary": "NeoMME: an efficient Multimodal-native and Multilingual Encoder"
-        },
-        "fr": {
-          "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
-          "summary": "NeoMME: an efficient Multimodal-native and Multilingual Encoder"
         }
       }
     },
@@ -2492,25 +2530,6 @@
       }
     },
     {
-      "slug": "20260905-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
-      "publishedAt": "2026-09-05T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
-        },
-        "fr": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
-        }
-      }
-    },
-    {
       "slug": "20260903-gpt-6-astra-frontier-intelligence-for-work-now-generally-availab-50fd8613",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -2568,6 +2587,44 @@
       }
     },
     {
+      "slug": "20260908-safety-for-whom-refusing-the-right-subset-of-a-topic-not-the-who-4f420d1c",
+      "topic": "Security & Standards",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+      "publishedAt": "2026-09-08T14:23:07.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+          "summary": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic"
+        },
+        "fr": {
+          "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+          "summary": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic"
+        }
+      }
+    },
+    {
+      "slug": "20260909-autobase-211-released-991decc9",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+        },
+        "fr": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+        }
+      }
+    },
+    {
       "slug": "20260915-dense-vs-moe-models-active-parameters-throughput-and-when-to-cho-3f75c866",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -2621,25 +2678,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
           "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
-        }
-      }
-    },
-    {
-      "slug": "20260903-fine-tuning-a-350m-model-for-better-structured-outputs-in-100-gr-45020768",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
-      "publishedAt": "2026-09-03T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
-          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
-        },
-        "fr": {
-          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
-          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
         }
       }
     },
@@ -2758,25 +2796,6 @@
       }
     },
     {
-      "slug": "20260825-pgstatviz-12-released-with-postgresql-19-support-and-new-feature-37633005",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_statviz-12-released-with-postgresql-19-support-and-new-features-3369/",
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
-          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
-        },
-        "fr": {
-          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
-          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
-        }
-      }
-    },
-    {
       "slug": "20260903-how-microsofts-physical-security-engineering-team-scaled-hybrid--ca0a43f6",
       "topic": "Security & Standards",
       "source": "Azure AI Blog",
@@ -2834,6 +2853,44 @@
       }
     },
     {
+      "slug": "20260903-neomme-an-efficient-multimodal-native-and-multilingual-encoder-96a3500c",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/Hcompany/neomme",
+      "publishedAt": "2026-09-03T13:13:48.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+          "summary": "NeoMME: an efficient Multimodal-native and Multilingual Encoder"
+        },
+        "fr": {
+          "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+          "summary": "NeoMME: an efficient Multimodal-native and Multilingual Encoder"
+        }
+      }
+    },
+    {
+      "slug": "20260905-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
+      "publishedAt": "2026-09-05T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PGConf India 2027 - Dates Announced and CFP Open",
+          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
+        },
+        "fr": {
+          "title": "PGConf India 2027 - Dates Announced and CFP Open",
+          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
+        }
+      }
+    },
+    {
       "slug": "20260915-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-facto-6510d815",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
@@ -2887,25 +2944,6 @@
         "fr": {
           "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
           "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
-        }
-      }
-    },
-    {
-      "slug": "20260903-give-your-coding-agents-a-memory-you-own-86b47b47",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/funes",
-      "publishedAt": "2026-09-03T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Give Your Coding Agents a Memory You Own",
-          "summary": "Give Your Coding Agents a Memory You Own"
-        },
-        "fr": {
-          "title": "Give Your Coding Agents a Memory You Own",
-          "summary": "Give Your Coding Agents a Memory You Own"
         }
       }
     },
@@ -3005,25 +3043,6 @@
       }
     },
     {
-      "slug": "20260820-libredb-studio-an-open-source-self-hosted-sql-ide-for-postgresql-271e1666",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/libredb-studio-an-open-source-self-hosted-sql-ide-for-postgresql-in-the-browser-3368/",
-      "publishedAt": "2026-08-20T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "LibreDB Studio: an open source, self-hosted SQL IDE for PostgreSQL in the browser",
-          "summary": "LibreDB Studio is an MIT-licensed, self-hosted SQL IDE for PostgreSQL that runs in the browser and deploys as a container or Helm chart. It is deployed next to the database it manages, as a container, a Helm chart or an npm packa…"
-        },
-        "fr": {
-          "title": "LibreDB Studio: an open source, self-hosted SQL IDE for PostgreSQL in the browser",
-          "summary": "LibreDB Studio is an MIT-licensed, self-hosted SQL IDE for PostgreSQL that runs in the browser and deploys as a container or Helm chart. It is deployed next to the database it manages, as a container, a Helm chart or an npm packa…"
-        }
-      }
-    },
-    {
       "slug": "20260902-the-economics-of-agent-optimization-context-engineering-for-ente-c7b41545",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -3081,6 +3100,44 @@
       }
     },
     {
+      "slug": "20260903-fine-tuning-a-350m-model-for-better-structured-outputs-in-100-gr-45020768",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
+        },
+        "fr": {
+          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
+        }
+      }
+    },
+    {
+      "slug": "20260825-pgstatviz-12-released-with-postgresql-19-support-and-new-feature-37633005",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_statviz-12-released-with-postgresql-19-support-and-new-features-3369/",
+      "publishedAt": "2026-08-25T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
+          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
+        },
+        "fr": {
+          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
+          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
+        }
+      }
+    },
+    {
       "slug": "20260915-scaling-federated-learning-across-docker-kubernetes-and-slurm-wi-c2ceacd6",
       "topic": "Computer Science",
       "source": "NVIDIA Developer Blog",
@@ -3134,25 +3191,6 @@
         "fr": {
           "title": "Kubernetes v1.37: DRA Updates",
           "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
-        }
-      }
-    },
-    {
-      "slug": "20260903-training-a-coding-model-to-paint-watercolours-with-trl-and-opene-b844bdee",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/train-to-paint-with-code",
-      "publishedAt": "2026-09-03T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
-          "summary": "Training a coding model to paint watercolours with TRL and OpenEnv"
-        },
-        "fr": {
-          "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
-          "summary": "Training a coding model to paint watercolours with TRL and OpenEnv"
         }
       }
     },
@@ -3233,25 +3271,6 @@
       }
     },
     {
-      "slug": "20260819-loongson-loong64-packages-on-aptpostgresqlorg-4d32ff8b",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/loongson-loong64-packages-on-aptpostgresqlorg-3351/",
-      "publishedAt": "2026-08-19T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Loongson loong64 packages on apt.postgresql.org",
-          "summary": "We have a new architecture on apt.postgresql.org: Loongson loong64, a Chinese processor architecture. The build host for the architecture is running on a Loongson 3B6000 board provided by the loongfans.cn community. Bootstrapping…"
-        },
-        "fr": {
-          "title": "Loongson loong64 packages on apt.postgresql.org",
-          "summary": "We have a new architecture on apt.postgresql.org: Loongson loong64, a Chinese processor architecture. The build host for the architecture is running on a Loongson 3B6000 board provided by the loongfans.cn community. Bootstrapping…"
-        }
-      }
-    },
-    {
       "slug": "20260831-introducing-azure-multicloud-interconnect-for-aws-1621f670",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -3286,6 +3305,44 @@
         "fr": {
           "title": "Introducing Gemini 3.7 Flash",
           "summary": "Introducing Gemini 3.7 Flash"
+        }
+      }
+    },
+    {
+      "slug": "20260903-give-your-coding-agents-a-memory-you-own-86b47b47",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/funes",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Give Your Coding Agents a Memory You Own",
+          "summary": "Give Your Coding Agents a Memory You Own"
+        },
+        "fr": {
+          "title": "Give Your Coding Agents a Memory You Own",
+          "summary": "Give Your Coding Agents a Memory You Own"
+        }
+      }
+    },
+    {
+      "slug": "20260820-libredb-studio-an-open-source-self-hosted-sql-ide-for-postgresql-271e1666",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/libredb-studio-an-open-source-self-hosted-sql-ide-for-postgresql-in-the-browser-3368/",
+      "publishedAt": "2026-08-20T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "LibreDB Studio: an open source, self-hosted SQL IDE for PostgreSQL in the browser",
+          "summary": "LibreDB Studio is an MIT-licensed, self-hosted SQL IDE for PostgreSQL that runs in the browser and deploys as a container or Helm chart. It is deployed next to the database it manages, as a container, a Helm chart or an npm packa…"
+        },
+        "fr": {
+          "title": "LibreDB Studio: an open source, self-hosted SQL IDE for PostgreSQL in the browser",
+          "summary": "LibreDB Studio is an MIT-licensed, self-hosted SQL IDE for PostgreSQL that runs in the browser and deploys as a container or Helm chart. It is deployed next to the database it manages, as a container, a Helm chart or an npm packa…"
         }
       }
     },
@@ -3343,25 +3400,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
           "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
-        }
-      }
-    },
-    {
-      "slug": "20260901-benchmirt-what-are-llm-benchmarks-actually-measuring-23bdbfdb",
-      "topic": "AI Performance",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/benchmirt",
-      "publishedAt": "2026-09-01T21:39:07.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
-          "summary": "BenchMIRT: What are LLM benchmarks actually measuring?"
-        },
-        "fr": {
-          "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
-          "summary": "BenchMIRT: What are LLM benchmarks actually measuring?"
         }
       }
     },
@@ -3442,25 +3480,6 @@
       }
     },
     {
-      "slug": "20260817-powa-archivist-530-is-out-7a37c65f",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/powa-archivist-530-is-out-3366/",
-      "publishedAt": "2026-08-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "powa-archivist 5.3.0 is out!",
-          "summary": "Tainan, Taiwan - Sun 16 Aug 2026 powa-archivist 5.3.0 The PoWA team is pleased to announce the release of the version 5.3.0 of powa-archivist , the core extension of the PoWA project. PoWA (PostgreSQL Workload Analyzer) is a perf…"
-        },
-        "fr": {
-          "title": "powa-archivist 5.3.0 is out!",
-          "summary": "Tainan, Taiwan - Sun 16 Aug 2026 powa-archivist 5.3.0 The PoWA team is pleased to announce the release of the version 5.3.0 of powa-archivist , the core extension of the PoWA project. PoWA (PostgreSQL Workload Analyzer) is a perf…"
-        }
-      }
-    },
-    {
       "slug": "20260831-inside-microsofts-marketing-team-scaling-expertise-with-ai-d29291ea",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -3495,6 +3514,44 @@
         "fr": {
           "title": "Putting sign language AI into users’ hands",
           "summary": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users."
+        }
+      }
+    },
+    {
+      "slug": "20260903-training-a-coding-model-to-paint-watercolours-with-trl-and-opene-b844bdee",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/train-to-paint-with-code",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+          "summary": "Training a coding model to paint watercolours with TRL and OpenEnv"
+        },
+        "fr": {
+          "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+          "summary": "Training a coding model to paint watercolours with TRL and OpenEnv"
+        }
+      }
+    },
+    {
+      "slug": "20260819-loongson-loong64-packages-on-aptpostgresqlorg-4d32ff8b",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/loongson-loong64-packages-on-aptpostgresqlorg-3351/",
+      "publishedAt": "2026-08-19T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "Loongson loong64 packages on apt.postgresql.org",
+          "summary": "We have a new architecture on apt.postgresql.org: Loongson loong64, a Chinese processor architecture. The build host for the architecture is running on a Loongson 3B6000 board provided by the loongfans.cn community. Bootstrapping…"
+        },
+        "fr": {
+          "title": "Loongson loong64 packages on apt.postgresql.org",
+          "summary": "We have a new architecture on apt.postgresql.org: Loongson loong64, a Chinese processor architecture. The build host for the architecture is running on a Loongson 3B6000 board provided by the loongfans.cn community. Bootstrapping…"
         }
       }
     },
@@ -3552,25 +3609,6 @@
         "fr": {
           "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
           "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
-        }
-      }
-    },
-    {
-      "slug": "20260901-introducing-huggingfacekernels-200-webgpu-kernels-for-local-ai-85562dc1",
-      "topic": "Computer Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/webgpu-kernels",
-      "publishedAt": "2026-09-01T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
-          "summary": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI"
-        },
-        "fr": {
-          "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
-          "summary": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI"
         }
       }
     },
@@ -3651,6 +3689,44 @@
       }
     },
     {
+      "slug": "20260901-benchmirt-what-are-llm-benchmarks-actually-measuring-23bdbfdb",
+      "topic": "AI Performance",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/benchmirt",
+      "publishedAt": "2026-09-01T21:39:07.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+          "summary": "BenchMIRT: What are LLM benchmarks actually measuring?"
+        },
+        "fr": {
+          "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+          "summary": "BenchMIRT: What are LLM benchmarks actually measuring?"
+        }
+      }
+    },
+    {
+      "slug": "20260817-powa-archivist-530-is-out-7a37c65f",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/powa-archivist-530-is-out-3366/",
+      "publishedAt": "2026-08-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "powa-archivist 5.3.0 is out!",
+          "summary": "Tainan, Taiwan - Sun 16 Aug 2026 powa-archivist 5.3.0 The PoWA team is pleased to announce the release of the version 5.3.0 of powa-archivist , the core extension of the PoWA project. PoWA (PostgreSQL Workload Analyzer) is a perf…"
+        },
+        "fr": {
+          "title": "powa-archivist 5.3.0 is out!",
+          "summary": "Tainan, Taiwan - Sun 16 Aug 2026 powa-archivist 5.3.0 The PoWA team is pleased to announce the release of the version 5.3.0 of powa-archivist , the core extension of the PoWA project. PoWA (PostgreSQL Workload Analyzer) is a perf…"
+        }
+      }
+    },
+    {
       "slug": "20260910-how-full-stack-nim-optimizations-deliver-25x-more-users-on-nemot-2abc4ceb",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
@@ -3704,25 +3780,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
           "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API ( storagemigration.k8s.io/…"
-        }
-      }
-    },
-    {
-      "slug": "20260828-the-open-asr-leaderboard-adds-its-first-global-south-language-b0b2c2da",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
-      "publishedAt": "2026-08-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "The Open ASR Leaderboard Adds Its First Global South Language",
-          "summary": "The Open ASR Leaderboard Adds Its First Global South Language"
-        },
-        "fr": {
-          "title": "The Open ASR Leaderboard Adds Its First Global South Language",
-          "summary": "The Open ASR Leaderboard Adds Its First Global South Language"
         }
       }
     },
@@ -3803,6 +3860,25 @@
       }
     },
     {
+      "slug": "20260901-introducing-huggingfacekernels-200-webgpu-kernels-for-local-ai-85562dc1",
+      "topic": "Computer Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/webgpu-kernels",
+      "publishedAt": "2026-09-01T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+          "summary": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI"
+        },
+        "fr": {
+          "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+          "summary": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI"
+        }
+      }
+    },
+    {
       "slug": "20260909-high-throughput-structure-prediction-with-bionemo-inference-runt-bf13fbf2",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -3856,25 +3932,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
           "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
-        }
-      }
-    },
-    {
-      "slug": "20260826-training-and-finetuning-multi-vector-embedding-models-with-sente-5309d965",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/train-multi-vector-encoder",
-      "publishedAt": "2026-08-26T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
-          "summary": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers"
-        },
-        "fr": {
-          "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
-          "summary": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers"
         }
       }
     },
@@ -3955,6 +4012,25 @@
       }
     },
     {
+      "slug": "20260828-the-open-asr-leaderboard-adds-its-first-global-south-language-b0b2c2da",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+      "publishedAt": "2026-08-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+          "summary": "The Open ASR Leaderboard Adds Its First Global South Language"
+        },
+        "fr": {
+          "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+          "summary": "The Open ASR Leaderboard Adds Its First Global South Language"
+        }
+      }
+    },
+    {
       "slug": "20260909-experiment-with-qwen38-flash-next-on-nvidia-gb300-nvl72-for-agen-65449754",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -4008,25 +4084,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Metrics API graduates to stable",
           "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable ( v1 ). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster…"
-        }
-      }
-    },
-    {
-      "slug": "20260825-granite-42-llms-how-theyaposre-built-74043a2c",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-      "publishedAt": "2026-08-25T15:14:14.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Granite 4.2 LLMs: How They&apos;re Built",
-          "summary": "Granite 4.2 LLMs: How They&apos;re Built"
-        },
-        "fr": {
-          "title": "Granite 4.2 LLMs: How They&apos;re Built",
-          "summary": "Granite 4.2 LLMs: How They&apos;re Built"
         }
       }
     },
@@ -4107,6 +4164,25 @@
       }
     },
     {
+      "slug": "20260826-training-and-finetuning-multi-vector-embedding-models-with-sente-5309d965",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/train-multi-vector-encoder",
+      "publishedAt": "2026-08-26T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+          "summary": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers"
+        },
+        "fr": {
+          "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+          "summary": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers"
+        }
+      }
+    },
+    {
       "slug": "20260909-when-to-use-encode-prefill-decode-disaggregation-to-accelerate-m-51e6e5a8",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -4160,25 +4236,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Garhwal",
           "summary": "Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent deliver…"
-        }
-      }
-    },
-    {
-      "slug": "20260825-quantization-aware-healing-a-compressed-4-bit-model-that-outperf-f6b26e55",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-      "publishedAt": "2026-08-25T11:39:24.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-          "summary": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original"
-        },
-        "fr": {
-          "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-          "summary": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original"
         }
       }
     },
@@ -4240,6 +4297,25 @@
       }
     },
     {
+      "slug": "20260825-granite-42-llms-how-theyaposre-built-74043a2c",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "publishedAt": "2026-08-25T15:14:14.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Granite 4.2 LLMs: How They&apos;re Built",
+          "summary": "Granite 4.2 LLMs: How They&apos;re Built"
+        },
+        "fr": {
+          "title": "Granite 4.2 LLMs: How They&apos;re Built",
+          "summary": "Granite 4.2 LLMs: How They&apos;re Built"
+        }
+      }
+    },
+    {
       "slug": "20260909-serve-qwen38-24t-a95b-a-24t-parameter-model-with-configurable-re-06e533fd",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -4293,25 +4369,6 @@
         "fr": {
           "title": "How to Pretty-Print Your Kubernetes YAML as KYAML and Why You'd Want To",
           "summary": "YAML has been the standard way to write Kubernetes manifests for years. Every example, tutorial, and configuration file you come across is written in it. The problem isn't that YAML is a bad format. It's that YAML gives you a lot…"
-        }
-      }
-    },
-    {
-      "slug": "20260825-wire-it-run-it-deploy-it-ai-workflows-in-gradio-2983dbf7",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/gradio-workflow-guide",
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
-          "summary": "Wire It, Run It, Deploy It: AI Workflows in Gradio"
-        },
-        "fr": {
-          "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
-          "summary": "Wire It, Run It, Deploy It: AI Workflows in Gradio"
         }
       }
     },
@@ -4373,6 +4430,25 @@
       }
     },
     {
+      "slug": "20260825-quantization-aware-healing-a-compressed-4-bit-model-that-outperf-f6b26e55",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+      "publishedAt": "2026-08-25T11:39:24.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+          "summary": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original"
+        },
+        "fr": {
+          "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+          "summary": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original"
+        }
+      }
+    },
+    {
       "slug": "20260909-cuda-toolkit-134-adds-windows-on-arm-support-and-greater-control-7816c3b3",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
@@ -4407,25 +4483,6 @@
         "fr": {
           "title": "Improving HCLS AI reasoning with open-source agent skills",
           "summary": "AI agents on foundation models often misapply healthcare and life sciences decision frameworks, citing the right guideline but applying it incorrectly. This post shares 38 open-source agent skills across 11 HCLS domains that clos…"
-        }
-      }
-    },
-    {
-      "slug": "20260821-how-hugging-face-inference-endpoints-jobs-and-buckets-power-sear-bcd3314d",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/pwc-search",
-      "publishedAt": "2026-08-21T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code",
-          "summary": "How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code"
-        },
-        "fr": {
-          "title": "How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code",
-          "summary": "How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code"
         }
       }
     },
@@ -4487,78 +4544,21 @@
       }
     },
     {
-      "slug": "20260904-introducing-cuda-rust-two-tracks-for-writing-gpu-kernels-dbb60a81",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
-      "publishedAt": "2026-09-04T23:07:14.000Z",
-      "discoveredAt": "2026-09-12T13:24:21.343Z",
-      "locales": {
-        "en": {
-          "title": "Introducing CUDA Rust: Two Tracks for Writing GPU Kernels",
-          "summary": "In September 2026, NVIDIA announced it is leaning into native GPU programming in Rust. CUDA C++ and CUDA Python are mature, enterprise-grade toolchains, and..."
-        },
-        "fr": {
-          "title": "Introducing CUDA Rust: Two Tracks for Writing GPU Kernels",
-          "summary": "In September 2026, NVIDIA announced it is leaning into native GPU programming in Rust. CUDA C++ and CUDA Python are mature, enterprise-grade toolchains, and..."
-        }
-      }
-    },
-    {
-      "slug": "20260916-fault-tolerant-distributed-training-on-amazon-eks-using-nvrx-0b6aac12",
-      "topic": "Computer Science",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/fault-tolerant-distributed-training-on-amazon-eks-using-nvrx/",
-      "publishedAt": "2026-09-16T18:59:25.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
-      "locales": {
-        "en": {
-          "title": "Fault tolerant distributed training on Amazon EKS using NVRx",
-          "summary": "Integrate NVIDIA Resiliency Extension (NVRx) into PyTorch FSDP training on Amazon EKS to overlap checkpoint I/O with training and recover from GPU faults in seconds. This post covers async checkpointing, in-process restart, and f…"
-        },
-        "fr": {
-          "title": "Fault tolerant distributed training on Amazon EKS using NVRx",
-          "summary": "Integrate NVIDIA Resiliency Extension (NVRx) into PyTorch FSDP training on Amazon EKS to overlap checkpoint I/O with training and recover from GPU faults in seconds. This post covers async checkpointing, in-process restart, and f…"
-        }
-      }
-    },
-    {
-      "slug": "20260821-measuring-benchmark-optimization-in-speech-recognition-68e9fb17",
-      "topic": "AI Performance",
+      "slug": "20260825-wire-it-run-it-deploy-it-ai-workflows-in-gradio-2983dbf7",
+      "topic": "AI Systems",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/asr-benchmark-optimization",
-      "publishedAt": "2026-08-21T00:00:00.000Z",
+      "href": "https://huggingface.co/blog/gradio-workflow-guide",
+      "publishedAt": "2026-08-25T00:00:00.000Z",
       "discoveredAt": "2026-09-12T13:22:21.927Z",
       "locales": {
         "en": {
-          "title": "Measuring benchmark optimization in speech recognition",
-          "summary": "Measuring benchmark optimization in speech recognition"
+          "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
+          "summary": "Wire It, Run It, Deploy It: AI Workflows in Gradio"
         },
         "fr": {
-          "title": "Measuring benchmark optimization in speech recognition",
-          "summary": "Measuring benchmark optimization in speech recognition"
-        }
-      }
-    },
-    {
-      "slug": "20260814-how-cloudflare-detects-mcp-traffic-and-helps-secure-it-7dd5d84b",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/mcp-security-updates/",
-      "publishedAt": "2026-08-14T13:12:12.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "How Cloudflare detects MCP traffic and helps secure it",
-          "summary": "Cloudflare Gateway identifies MCP requests using protocol-level heuristics. Security teams can use that signal to find shadow MCP traffic, enforce Portal-only access for approved servers, and block direct connections on managed n…"
-        },
-        "fr": {
-          "title": "How Cloudflare detects MCP traffic and helps secure it",
-          "summary": "Cloudflare Gateway identifies MCP requests using protocol-level heuristics. Security teams can use that signal to find shadow MCP traffic, enforce Portal-only access for approved servers, and block direct connections on managed n…"
+          "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
+          "summary": "Wire It, Run It, Deploy It: AI Workflows in Gradio"
         }
       }
     }
