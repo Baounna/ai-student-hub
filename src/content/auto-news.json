@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T21:16:21.379Z",
+  "updatedAt": "2026-09-23T11:31:42.873Z",
   "items": [
     {
-      "slug": "20260922-better-prompt-caching-for-gpt-6-b6b1e411",
+      "slug": "20260923-grab-and-openai-bring-practical-ai-skills-to-southeast-asia-09a0c6db",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-      "publishedAt": "2026-09-22T21:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "href": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
       "locales": {
         "en": {
-          "title": "Better prompt caching for GPT-6",
-          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
+          "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+          "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia."
         },
         "fr": {
-          "title": "Better prompt caching for GPT-6",
-          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
+          "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+          "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia."
         }
       }
     },
@@ -56,6 +56,25 @@
         "fr": {
           "title": "Bring more intelligence to everyday work with GPT-6 Sol and GPT-6 Luna on Amazon Bedrock",
           "summary": "GPT-6 Sol and GPT-6 Luna are now generally available on Amazon Bedrock, giving you more options to match intelligence and efficiency to each workload."
+        }
+      }
+    },
+    {
+      "slug": "20260922-spotlight-on-sig-apps-bdc88dc4",
+      "topic": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
+      "publishedAt": "2026-09-22T18:00:00.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
+      "locales": {
+        "en": {
+          "title": "Spotlight on SIG Apps",
+          "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batch processi…"
+        },
+        "fr": {
+          "title": "Spotlight on SIG Apps",
+          "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batch processi…"
         }
       }
     },
@@ -189,25 +208,6 @@
         "fr": {
           "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
           "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-kubernetes-v137-tracking-when-a-persistentvolumeclaim-was-last-u-a668dc12",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
-      "publishedAt": "2026-09-21T18:30:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:13.092Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
-          "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC, telling…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
-          "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC, telling…"
         }
       }
     },
@@ -364,21 +364,21 @@
       }
     },
     {
-      "slug": "20260922-introducing-gpt-6-sol-and-luna-3d48e529",
+      "slug": "20260922-better-prompt-caching-for-gpt-6-b6b1e411",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-      "publishedAt": "2026-09-22T18:00:00.000Z",
+      "href": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "publishedAt": "2026-09-22T21:00:00.000Z",
       "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Introducing GPT-6 Sol and Luna",
-          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
+          "title": "Better prompt caching for GPT-6",
+          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
         },
         "fr": {
-          "title": "Introducing GPT-6 Sol and Luna",
-          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
+          "title": "Better prompt caching for GPT-6",
+          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
         }
       }
     },
@@ -417,6 +417,25 @@
         "fr": {
           "title": "Claude Opus 5.5 is now available on AWS",
           "summary": "Claude Opus 5.5, Anthropic's most capable Opus model for agentic coding, knowledge work, and long-running tasks, is now available on Amazon Bedrock and Claude Platform on AWS. This post covers what's new in Opus 5.5, practical gu…"
+        }
+      }
+    },
+    {
+      "slug": "20260921-kubernetes-v137-tracking-when-a-persistentvolumeclaim-was-last-u-a668dc12",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
+      "publishedAt": "2026-09-21T18:30:00.000Z",
+      "discoveredAt": "2026-09-21T21:57:13.092Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
+          "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC, telling…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
+          "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC, telling…"
         }
       }
     },
@@ -554,25 +573,6 @@
       }
     },
     {
-      "slug": "20260916-kubernetes-v137-hardening-container-storage-with-bind-mount-opti-6cde82bb",
-      "topic": "AI Systems",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
-      "publishedAt": "2026-09-16T18:30:00.000Z",
-      "discoveredAt": "2026-09-17T11:38:26.762Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
-          "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for example, prohib…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
-          "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for example, prohib…"
-        }
-      }
-    },
-    {
       "slug": "20260917-migrating-the-github-copilot-runtime-to-rust-using-copilot-6e4c7787",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -706,21 +706,21 @@
       }
     },
     {
-      "slug": "20260922-priorities-and-principles-for-effective-third-party-assessments-b4fb82cc",
+      "slug": "20260922-introducing-gpt-6-sol-and-luna-3d48e529",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/priorities-principles-third-party-assessments",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "href": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "publishedAt": "2026-09-22T18:00:00.000Z",
       "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Priorities and principles for effective third party assessments",
-          "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards."
+          "title": "Introducing GPT-6 Sol and Luna",
+          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
         },
         "fr": {
-          "title": "Priorities and principles for effective third party assessments",
-          "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards."
+          "title": "Introducing GPT-6 Sol and Luna",
+          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
         }
       }
     },
@@ -759,6 +759,25 @@
         "fr": {
           "title": "Evaluate skill-equipped agents with Strands Evals and Amazon Bedrock AgentCore",
           "summary": "Skills let you encode domain-specific procedures as reusable, portable instructions for agents, but a fluent answer doesn't prove the agent picked the right skill or followed it. Learn how to measure skill selection and instructi…"
+        }
+      }
+    },
+    {
+      "slug": "20260916-kubernetes-v137-hardening-container-storage-with-bind-mount-opti-6cde82bb",
+      "topic": "AI Systems",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
+      "publishedAt": "2026-09-16T18:30:00.000Z",
+      "discoveredAt": "2026-09-17T11:38:26.762Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
+          "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for example, prohib…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
+          "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for example, prohib…"
         }
       }
     },
@@ -896,25 +915,6 @@
       }
     },
     {
-      "slug": "20260915-kubernetes-v137-pod-level-resource-managers-graduated-to-beta-993e015b",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
-      "publishedAt": "2026-09-15T18:30:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:35.562Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
-          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod-Level Res…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
-          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod-Level Res…"
-        }
-      }
-    },
-    {
       "slug": "20260911-marketing-ops-as-code-automating-events-from-planning-to-follow--c44b2451",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -1048,21 +1048,21 @@
       }
     },
     {
-      "slug": "20260921-advisory-group-on-mathematics-and-artificial-intelligence-a7ca5984",
+      "slug": "20260922-parallel-cut-research-time-and-cost-in-half-with-gpt6-astra-ce45d8dc",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-      "publishedAt": "2026-09-21T12:00:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:13.092Z",
+      "href": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "publishedAt": "2026-09-22T12:00:00.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
       "locales": {
         "en": {
-          "title": "Advisory Group on Mathematics and Artificial Intelligence",
-          "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results."
+          "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+          "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models."
         },
         "fr": {
-          "title": "Advisory Group on Mathematics and Artificial Intelligence",
-          "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results."
+          "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+          "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models."
         }
       }
     },
@@ -1101,6 +1101,25 @@
         "fr": {
           "title": "How Reactiv automates mobile commerce 80% faster with Amazon Bedrock AgentCore",
           "summary": "Reactiv used Amazon Bedrock AgentCore to build a multi-agent AI Scheduler that autonomously refreshes Shopify merchants' mobile apps on a schedule, reducing merchant configuration time by 80% and getting to production 33% faster."
+        }
+      }
+    },
+    {
+      "slug": "20260915-kubernetes-v137-pod-level-resource-managers-graduated-to-beta-993e015b",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
+      "publishedAt": "2026-09-15T18:30:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:35.562Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod-Level Res…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod-Level Res…"
         }
       }
     },
@@ -1238,25 +1257,6 @@
       }
     },
     {
-      "slug": "20260914-kubernetes-changed-block-tracking-api---beta-differences-081539c8",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
-      "publishedAt": "2026-09-14T18:30:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:06.707Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
-          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet familiar with ch…"
-        },
-        "fr": {
-          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
-          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet familiar with ch…"
-        }
-      }
-    },
-    {
       "slug": "20260910-github-copilot-app-for-beginners-using-the-diff-terminal-and-bro-aa97fe2c",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -1390,21 +1390,21 @@
       }
     },
     {
-      "slug": "20260921-higgsfield-ai-ships-new-video-features-in-a-day-with-gpt-6-astra-d37f5b2c",
+      "slug": "20260922-priorities-and-principles-for-effective-third-party-assessments-b4fb82cc",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
-      "publishedAt": "2026-09-21T12:00:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:13.092Z",
+      "href": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
+          "title": "Priorities and principles for effective third party assessments",
+          "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards."
         },
         "fr": {
-          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
+          "title": "Priorities and principles for effective third party assessments",
+          "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards."
         }
       }
     },
@@ -1443,6 +1443,25 @@
         "fr": {
           "title": "Right-size generative AI endpoints with concurrency sweeps on Amazon SageMaker AI",
           "summary": "Concurrency sweeps help you right-size a generative AI endpoint on Amazon SageMaker AI by systematically benchmarking it at increasing load levels. This post walks through deploying a model, running automated concurrency sweeps w…"
+        }
+      }
+    },
+    {
+      "slug": "20260914-kubernetes-changed-block-tracking-api---beta-differences-081539c8",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
+      "publishedAt": "2026-09-14T18:30:00.000Z",
+      "discoveredAt": "2026-09-14T21:48:06.707Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet familiar with ch…"
+        },
+        "fr": {
+          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet familiar with ch…"
         }
       }
     },
@@ -1580,25 +1599,6 @@
       }
     },
     {
-      "slug": "20260914-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
-      "publishedAt": "2026-09-14T18:30:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:06.707Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
-          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
-          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It…"
-        }
-      }
-    },
-    {
       "slug": "20260910-github-availability-report-august-2026-a105b3ce",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -1713,21 +1713,21 @@
       }
     },
     {
-      "slug": "20260921-building-standards-for-the-next-phase-of-ai-2c9792fb",
+      "slug": "20260921-advisory-group-on-mathematics-and-artificial-intelligence-a7ca5984",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/building-standards-next-phase-ai",
-      "publishedAt": "2026-09-21T10:00:00.000Z",
+      "href": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "publishedAt": "2026-09-21T12:00:00.000Z",
       "discoveredAt": "2026-09-21T21:57:13.092Z",
       "locales": {
         "en": {
-          "title": "Building standards for the next phase of AI",
-          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety."
+          "title": "Advisory Group on Mathematics and Artificial Intelligence",
+          "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results."
         },
         "fr": {
-          "title": "Building standards for the next phase of AI",
-          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety."
+          "title": "Advisory Group on Mathematics and Artificial Intelligence",
+          "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results."
         }
       }
     },
@@ -1766,6 +1766,25 @@
         "fr": {
           "title": "How Trane gets building insights 60x faster with Amazon Bedrock AgentCore",
           "summary": "In about four weeks, Trane Technologies built an AI-powered agentic solution on Amazon Bedrock AgentCore that reduced a 20-minute, multi-screen building diagnostic workflow to a 20-second natural language interaction, a 60x impro…"
+        }
+      }
+    },
+    {
+      "slug": "20260914-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
+      "publishedAt": "2026-09-14T18:30:00.000Z",
+      "discoveredAt": "2026-09-14T21:48:06.707Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
+          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
+          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It…"
         }
       }
     },
@@ -1903,25 +1922,6 @@
       }
     },
     {
-      "slug": "20260911-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
-      "publishedAt": "2026-09-11T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
-          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
-          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
-        }
-      }
-    },
-    {
       "slug": "20260904-project-hydrafusion-frontier-quality-via-multi-model-orchestrati-87ef5c15",
       "topic": "AI Systems",
       "source": "GitHub Blog",
@@ -2036,21 +2036,21 @@
       }
     },
     {
-      "slug": "20260921-expanding-openai-academy-with-new-learning-paths-530db518",
+      "slug": "20260921-higgsfield-ai-ships-new-video-features-in-a-day-with-gpt-6-astra-d37f5b2c",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-      "publishedAt": "2026-09-21T07:00:00.000Z",
+      "href": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "publishedAt": "2026-09-21T12:00:00.000Z",
       "discoveredAt": "2026-09-21T21:57:13.092Z",
       "locales": {
         "en": {
-          "title": "Expanding OpenAI Academy with new learning paths",
-          "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills."
+          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
         },
         "fr": {
-          "title": "Expanding OpenAI Academy with new learning paths",
-          "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills."
+          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
         }
       }
     },
@@ -2089,6 +2089,25 @@
         "fr": {
           "title": "How Tata Elxsi detects industrial safety risks in seconds on AWS",
           "summary": "Learn how Tata Elxsi built IRIS, a real-time industrial safety platform on AWS. IRIS filters camera video at the edge, streams metadata through Amazon Kinesis, runs computer vision on Amazon SageMaker AI, and correlates detection…"
+        }
+      }
+    },
+    {
+      "slug": "20260911-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
+      "publishedAt": "2026-09-11T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
         }
       }
     },
@@ -2207,25 +2226,6 @@
       }
     },
     {
-      "slug": "20260910-kubernetes-v137-scheduler-preemption-for-in-place-pod-resize-alp-e2763381",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
-      "publishedAt": "2026-09-10T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
-        }
-      }
-    },
-    {
       "slug": "20260903-github-copilot-app-for-beginners-run-several-agents-at-once-c18b3bb2",
       "topic": "AI Systems",
       "source": "GitHub Blog",
@@ -2321,40 +2321,40 @@
       }
     },
     {
-      "slug": "20260921-how-v7-gives-ai-agents-institutional-memory-d1749ba7",
+      "slug": "20260921-building-standards-for-the-next-phase-of-ai-2c9792fb",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/v7",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
-      "discoveredAt": "2026-09-21T14:30:28.060Z",
+      "href": "https://openai.com/index/building-standards-next-phase-ai",
+      "publishedAt": "2026-09-21T10:00:00.000Z",
+      "discoveredAt": "2026-09-21T21:57:13.092Z",
       "locales": {
         "en": {
-          "title": "How V7 gives AI agents institutional memory",
-          "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work."
+          "title": "Building standards for the next phase of AI",
+          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety."
         },
         "fr": {
-          "title": "How V7 gives AI agents institutional memory",
-          "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work."
+          "title": "Building standards for the next phase of AI",
+          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety."
         }
       }
     },
     {
-      "slug": "20260916-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
-      "topic": "AI Systems",
+      "slug": "20260917-cuda-toolkit-134-adds-windows-on-arm-support-and-greater-control-7816c3b3",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
-      "publishedAt": "2026-09-16T23:25:01.000Z",
-      "discoveredAt": "2026-09-17T11:38:26.762Z",
+      "href": "https://developer.nvidia.com/blog/cuda-toolkit-13-4-adds-windows-on-arm-support-and-greater-control-over-shared-gpus/",
+      "publishedAt": "2026-09-17T20:20:33.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
       "locales": {
         "en": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+          "title": "CUDA Toolkit 13.4 Adds Windows on Arm Support and Greater Control over Shared GPUs",
+          "summary": "Every NVIDIA CUDA Toolkit release adds functionality and performance improvements that help developers get more from NVIDIA GPUs and the broader NVIDIA software..."
         },
         "fr": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+          "title": "CUDA Toolkit 13.4 Adds Windows on Arm Support and Greater Control over Shared GPUs",
+          "summary": "Every NVIDIA CUDA Toolkit release adds functionality and performance improvements that help developers get more from NVIDIA GPUs and the broader NVIDIA software..."
         }
       }
     },
@@ -2374,6 +2374,25 @@
         "fr": {
           "title": "Extending public sector intelligence with Agentforce and AWS",
           "summary": "Public sector agencies process large volumes of unstructured evidence, such as body camera footage and scanned documents. This post shows how to combine Amazon Bedrock Data Automation with the Model Context Protocol (MCP) to turn…"
+        }
+      }
+    },
+    {
+      "slug": "20260910-kubernetes-v137-scheduler-preemption-for-in-place-pod-resize-alp-e2763381",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
+      "publishedAt": "2026-09-10T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
         }
       }
     },
@@ -2492,25 +2511,6 @@
       }
     },
     {
-      "slug": "20260909-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
-      "publishedAt": "2026-09-09T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
-          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
-          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
-        }
-      }
-    },
-    {
       "slug": "20260902-decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-o-271f803a",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -2606,40 +2606,40 @@
       }
     },
     {
-      "slug": "20260918-introducing-the-australian-youth-safety-blueprint-559b0cf1",
-      "topic": "Security & Standards",
+      "slug": "20260921-expanding-openai-academy-with-new-learning-paths-530db518",
+      "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/australian-youth-safety-blueprint",
-      "publishedAt": "2026-09-18T12:00:00.000Z",
-      "discoveredAt": "2026-09-19T10:55:47.711Z",
+      "href": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+      "publishedAt": "2026-09-21T07:00:00.000Z",
+      "discoveredAt": "2026-09-21T21:57:13.092Z",
       "locales": {
         "en": {
-          "title": "Introducing the Australian Youth Safety Blueprint",
-          "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people."
+          "title": "Expanding OpenAI Academy with new learning paths",
+          "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills."
         },
         "fr": {
-          "title": "Introducing the Australian Youth Safety Blueprint",
-          "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people."
+          "title": "Expanding OpenAI Academy with new learning paths",
+          "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills."
         }
       }
     },
     {
-      "slug": "20260916-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-64-82b93583",
-      "topic": "AI Performance",
+      "slug": "20260916-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
+      "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
-      "publishedAt": "2026-09-16T20:37:15.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
+      "publishedAt": "2026-09-16T23:25:01.000Z",
+      "discoveredAt": "2026-09-17T11:38:26.762Z",
       "locales": {
         "en": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
         },
         "fr": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
         }
       }
     },
@@ -2659,6 +2659,25 @@
         "fr": {
           "title": "xAI’s Grok 4.6 is now available in Amazon Bedrock",
           "summary": "xAI's Grok 4.6 is now available in Amazon Bedrock: a frontier model for long-running agents, coding, and knowledge work, with a 500K token context window and four reasoning effort levels. It runs on both the bedrock-mantle and be…"
+        }
+      }
+    },
+    {
+      "slug": "20260909-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
+      "publishedAt": "2026-09-09T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
         }
       }
     },
@@ -2758,25 +2777,6 @@
       }
     },
     {
-      "slug": "20260908-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
-      "publishedAt": "2026-09-08T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
-        }
-      }
-    },
-    {
       "slug": "20260902-how-we-make-ai-coding-more-cost-efficient-without-sacrificing-ta-0461be44",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -2872,40 +2872,40 @@
       }
     },
     {
-      "slug": "20260917-how-cooley-is-accelerating-ipo-work-with-chatgpt-964ae1dd",
+      "slug": "20260921-how-v7-gives-ai-agents-institutional-memory-d1749ba7",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/cooley-gopublic",
-      "publishedAt": "2026-09-17T12:00:00.000Z",
-      "discoveredAt": "2026-09-18T11:10:48.341Z",
+      "href": "https://openai.com/index/v7",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "discoveredAt": "2026-09-21T14:30:28.060Z",
       "locales": {
         "en": {
-          "title": "How Cooley is accelerating IPO work with ChatGPT",
-          "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most."
+          "title": "How V7 gives AI agents institutional memory",
+          "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work."
         },
         "fr": {
-          "title": "How Cooley is accelerating IPO work with ChatGPT",
-          "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most."
+          "title": "How V7 gives AI agents institutional memory",
+          "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work."
         }
       }
     },
     {
-      "slug": "20260916-translating-cuda-tile-operations-from-python-to-rust-using-agent-833138d5",
+      "slug": "20260916-experiment-with-qwen38-flash-next-on-nvidia-gb300-nvl72-for-agen-65449754",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
-      "publishedAt": "2026-09-16T16:29:07.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "href": "https://developer.nvidia.com/blog/experiment-with-qwen3-8-flash-next-on-nvidia-gb300-nvl72-for-agentic-coding/",
+      "publishedAt": "2026-09-16T21:46:25.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
       "locales": {
         "en": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+          "title": "Experiment with Qwen3.8-Flash-Next on NVIDIA GB300 NVL72 for Agentic Coding",
+          "summary": "Alibaba released the model weights for Qwen3.8-Flash-Next as a preview of the upcoming Qwen4 architecture for developers to experiment with and evaluate. It’s..."
         },
         "fr": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+          "title": "Experiment with Qwen3.8-Flash-Next on NVIDIA GB300 NVL72 for Agentic Coding",
+          "summary": "Alibaba released the model weights for Qwen3.8-Flash-Next as a preview of the upcoming Qwen4 architecture for developers to experiment with and evaluate. It’s..."
         }
       }
     },
@@ -2925,6 +2925,25 @@
         "fr": {
           "title": "How BMW Group detects cost anomalies across 14,000 cloud accounts",
           "summary": "BMW Group operates CLEA, a FinOps platform monitoring more than 14,000 cloud accounts. This post shows how BMW added automated daily cost anomaly detection, moving from reactive dashboards to proactive alerts using Prophet foreca…"
+        }
+      }
+    },
+    {
+      "slug": "20260908-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
+      "publishedAt": "2026-09-08T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
+          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
+          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
         }
       }
     },
@@ -3024,25 +3043,6 @@
       }
     },
     {
-      "slug": "20260904-kubernetes-v137-kubeletinusernamespace-aka-rootless-mode-graduat-1560f468",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
-      "publishedAt": "2026-09-04T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
-          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
-          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
-        }
-      }
-    },
-    {
       "slug": "20260827-openclaw-went-viral-meet-the-maintainers-building-and-securing-i-471ea8bf",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -3138,40 +3138,40 @@
       }
     },
     {
-      "slug": "20260917-introducing-astra-for-law-363bbead",
-      "topic": "AI Systems",
+      "slug": "20260918-introducing-the-australian-youth-safety-blueprint-559b0cf1",
+      "topic": "Security & Standards",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/astra-for-law",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:49.442Z",
+      "href": "https://openai.com/index/australian-youth-safety-blueprint",
+      "publishedAt": "2026-09-18T12:00:00.000Z",
+      "discoveredAt": "2026-09-19T10:55:47.711Z",
       "locales": {
         "en": {
-          "title": "Introducing Astra for Law",
-          "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
+          "title": "Introducing the Australian Youth Safety Blueprint",
+          "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people."
         },
         "fr": {
-          "title": "Introducing Astra for Law",
-          "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
+          "title": "Introducing the Australian Youth Safety Blueprint",
+          "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people."
         }
       }
     },
     {
-      "slug": "20260915-turn-your-latest-observations-into-timely-weather-decisions-with-e61094f2",
-      "topic": "Computer Systems",
+      "slug": "20260916-serve-qwen38-24t-a95b-a-24t-parameter-model-with-configurable-re-06e533fd",
+      "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/turn-your-latest-observations-into-timely-weather-decisions-with-nvidia-earth-2/",
-      "publishedAt": "2026-09-15T21:44:59.000Z",
-      "discoveredAt": "2026-09-21T21:57:13.092Z",
+      "href": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/",
+      "publishedAt": "2026-09-16T21:39:25.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
       "locales": {
         "en": {
-          "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
-          "summary": "Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect..."
+          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
+          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
         },
         "fr": {
-          "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
-          "summary": "Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect..."
+          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
+          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
         }
       }
     },
@@ -3191,6 +3191,25 @@
         "fr": {
           "title": "Run Positron on Amazon SageMaker AI for data science workflows",
           "summary": "Positron, Posit's IDE for data science, now runs on Amazon SageMaker AI. This post shows how a data scientist explores an Amazon Athena table, validates features in R, trains an XGBoost model in Python, deploys a real-time SageMa…"
+        }
+      }
+    },
+    {
+      "slug": "20260904-kubernetes-v137-kubeletinusernamespace-aka-rootless-mode-graduat-1560f468",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
+      "publishedAt": "2026-09-04T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
+          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
+          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
         }
       }
     },
@@ -3271,25 +3290,6 @@
       }
     },
     {
-      "slug": "20260903-kubernetes-v137-dra-updates-90b5ee36",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
-      "publishedAt": "2026-09-03T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: DRA Updates",
-          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: DRA Updates",
-          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
-        }
-      }
-    },
-    {
       "slug": "20260826-github-copilot-app-for-beginners-automate-dependabot-pull-reques-7cef2b0b",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -3366,40 +3366,40 @@
       }
     },
     {
-      "slug": "20260916-our-framework-for-reporting-model-misalignment-bbe6c30a",
+      "slug": "20260917-how-cooley-is-accelerating-ipo-work-with-chatgpt-964ae1dd",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/model-misalignment-reporting-framework",
-      "publishedAt": "2026-09-16T17:00:00.000Z",
-      "discoveredAt": "2026-09-17T11:38:26.762Z",
+      "href": "https://openai.com/index/cooley-gopublic",
+      "publishedAt": "2026-09-17T12:00:00.000Z",
+      "discoveredAt": "2026-09-18T11:10:48.341Z",
       "locales": {
         "en": {
-          "title": "Our framework for reporting model misalignment",
-          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
+          "title": "How Cooley is accelerating IPO work with ChatGPT",
+          "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most."
         },
         "fr": {
-          "title": "Our framework for reporting model misalignment",
-          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
+          "title": "How Cooley is accelerating IPO work with ChatGPT",
+          "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most."
         }
       }
     },
     {
-      "slug": "20260915-how-nvidia-groq-3-lpx-deterministic-execution-drives-power-effic-ce9893f8",
-      "topic": "AI Systems",
+      "slug": "20260916-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-64-82b93583",
+      "topic": "AI Performance",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
-      "publishedAt": "2026-09-15T17:06:22.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
+      "publishedAt": "2026-09-16T20:37:15.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
       "locales": {
         "en": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
         },
         "fr": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
         }
       }
     },
@@ -3419,6 +3419,25 @@
         "fr": {
           "title": "How Benchling secured multi-tenant AI agents with Amazon Bedrock AgentCore",
           "summary": "Learn how Benchling built a defense-in-depth security architecture to run untrusted, AI agent-generated scientific code across thousands of life sciences tenants using Amazon Bedrock AgentCore Code Interpreter in VPC mode, combin…"
+        }
+      }
+    },
+    {
+      "slug": "20260903-kubernetes-v137-dra-updates-90b5ee36",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
+      "publishedAt": "2026-09-03T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: DRA Updates",
+          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: DRA Updates",
+          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
         }
       }
     },
@@ -3476,25 +3495,6 @@
         "fr": {
           "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
           "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
-        }
-      }
-    },
-    {
-      "slug": "20260902-kubernetes-v137-scale-workloads-to-zero-with-horizontalpodautosc-d1c3bfab",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
-      "publishedAt": "2026-09-02T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
-          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
-          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
         }
       }
     },
@@ -3575,40 +3575,40 @@
       }
     },
     {
-      "slug": "20260916-helping-older-adults-use-ai-in-everyday-life-027811ca",
+      "slug": "20260917-introducing-astra-for-law-363bbead",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
-      "publishedAt": "2026-09-16T16:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "href": "https://openai.com/index/astra-for-law",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-17T21:19:49.442Z",
       "locales": {
         "en": {
-          "title": "Helping older adults use AI in everyday life",
-          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
+          "title": "Introducing Astra for Law",
+          "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
         },
         "fr": {
-          "title": "Helping older adults use AI in everyday life",
-          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
+          "title": "Introducing Astra for Law",
+          "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
         }
       }
     },
     {
-      "slug": "20260915-dense-vs-moe-models-active-parameters-throughput-and-when-to-cho-3f75c866",
+      "slug": "20260916-translating-cuda-tile-operations-from-python-to-rust-using-agent-833138d5",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
-      "publishedAt": "2026-09-15T17:00:18.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
+      "publishedAt": "2026-09-16T16:29:07.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
       "locales": {
         "en": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
         },
         "fr": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
         }
       }
     },
@@ -3628,6 +3628,25 @@
         "fr": {
           "title": "Reducing medical claims review time with AI on AWS: The EXL Medical IDP solution",
           "summary": "EXL built an AI-powered Medical intelligent document processing (IDP) solution on AWS, combining IDP with domain-specific large language models on Amazon SageMaker and Amazon Bedrock to extract, summarize, and query medical recor…"
+        }
+      }
+    },
+    {
+      "slug": "20260902-kubernetes-v137-scale-workloads-to-zero-with-horizontalpodautosc-d1c3bfab",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
+      "publishedAt": "2026-09-02T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
+          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
+          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
         }
       }
     },
@@ -3689,25 +3708,6 @@
       }
     },
     {
-      "slug": "20260901-kubernetes-v137-etcd-rangestream-cuts-memory-use-on-large-list-r-b472f2bb",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/",
-      "publishedAt": "2026-09-01T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
-          "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
-          "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
-        }
-      }
-    },
-    {
       "slug": "20260902-proactive-cyber-defense-for-governments-and-enterprises-28b149c7",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3746,40 +3746,40 @@
       }
     },
     {
-      "slug": "20260916-reimagining-advertising-with-ai-52752974",
+      "slug": "20260916-our-framework-for-reporting-model-misalignment-bbe6c30a",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/reimagining-advertising-with-ai",
-      "publishedAt": "2026-09-16T13:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "href": "https://openai.com/index/model-misalignment-reporting-framework",
+      "publishedAt": "2026-09-16T17:00:00.000Z",
+      "discoveredAt": "2026-09-17T11:38:26.762Z",
       "locales": {
         "en": {
-          "title": "Reimagining advertising with AI",
-          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
+          "title": "Our framework for reporting model misalignment",
+          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
         },
         "fr": {
-          "title": "Reimagining advertising with AI",
-          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
+          "title": "Our framework for reporting model misalignment",
+          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
         }
       }
     },
     {
-      "slug": "20260915-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-facto-6510d815",
+      "slug": "20260915-turn-your-latest-observations-into-timely-weather-decisions-with-e61094f2",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
-      "publishedAt": "2026-09-15T16:42:44.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "href": "https://developer.nvidia.com/blog/turn-your-latest-observations-into-timely-weather-decisions-with-nvidia-earth-2/",
+      "publishedAt": "2026-09-15T21:44:59.000Z",
+      "discoveredAt": "2026-09-21T21:57:13.092Z",
       "locales": {
         "en": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
+          "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
+          "summary": "Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect..."
         },
         "fr": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
+          "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
+          "summary": "Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect..."
         }
       }
     },
@@ -3799,6 +3799,25 @@
         "fr": {
           "title": "Amazon SageMaker Inference: 2026 year-to-date launches in review",
           "summary": "Amazon SageMaker AI shipped 13 inference launches in year-to-date across two deployment paths: fully managed endpoints and Amazon SageMaker HyperPod Inference. This post reviews each launch, from inference recommendations and cap…"
+        }
+      }
+    },
+    {
+      "slug": "20260901-kubernetes-v137-etcd-rangestream-cuts-memory-use-on-large-list-r-b472f2bb",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/",
+      "publishedAt": "2026-09-01T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
+          "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
+          "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
         }
       }
     },
@@ -3860,25 +3879,6 @@
       }
     },
     {
-      "slug": "20260831-kubernetes-v137-storage-version-migration-enabled-by-default-93963e42",
-      "topic": "AI Systems",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/",
-      "publishedAt": "2026-08-31T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
-          "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API ( storagemigration.k8s.io/…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
-          "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API ( storagemigration.k8s.io/…"
-        }
-      }
-    },
-    {
       "slug": "20260901-the-latest-ai-news-we-announced-in-august-2026-66eabab6",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3917,40 +3917,40 @@
       }
     },
     {
-      "slug": "20260916-hex-turns-complex-analysis-into-visual-reports-with-gpt6-astra-973a9114",
+      "slug": "20260916-helping-older-adults-use-ai-in-everyday-life-027811ca",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/hex-gpt-6-astra",
-      "publishedAt": "2026-09-16T12:00:00.000Z",
-      "discoveredAt": "2026-09-19T10:55:47.711Z",
+      "href": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+      "publishedAt": "2026-09-16T16:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
       "locales": {
         "en": {
-          "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
-          "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share."
+          "title": "Helping older adults use AI in everyday life",
+          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
         },
         "fr": {
-          "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
-          "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share."
+          "title": "Helping older adults use AI in everyday life",
+          "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
         }
       }
     },
     {
-      "slug": "20260915-scaling-federated-learning-across-docker-kubernetes-and-slurm-wi-c2ceacd6",
-      "topic": "Computer Science",
+      "slug": "20260915-how-nvidia-groq-3-lpx-deterministic-execution-drives-power-effic-ce9893f8",
+      "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/scaling-federated-learning-across-docker-kubernetes-and-slurm-with-nvidia-flare/",
-      "publishedAt": "2026-09-15T02:49:31.000Z",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
+      "publishedAt": "2026-09-15T17:06:22.000Z",
       "discoveredAt": "2026-09-15T21:18:37.392Z",
       "locales": {
         "en": {
-          "title": "Scaling Federated Learning Across Docker, Kubernetes, and Slurm with NVIDIA FLARE",
-          "summary": "Federated learning (FL) projects often begin with a straightforward setup: one server, a few clients, and one dataset at each site. As those projects grow, the..."
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
         },
         "fr": {
-          "title": "Scaling Federated Learning Across Docker, Kubernetes, and Slurm with NVIDIA FLARE",
-          "summary": "Federated learning (FL) projects often begin with a straightforward setup: one server, a few clients, and one dataset at each site. As those projects grow, the..."
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
         }
       }
     },
@@ -3970,6 +3970,25 @@
         "fr": {
           "title": "Introducing Kimi K3 on Amazon Bedrock",
           "summary": "Kimi K3 from Moonshot AI is now available on Amazon Bedrock, giving you a powerful new open-weight option for coding and knowledge work. It offers native vision, a 1-million-token context window, and explicit prompt caching to re…"
+        }
+      }
+    },
+    {
+      "slug": "20260831-kubernetes-v137-storage-version-migration-enabled-by-default-93963e42",
+      "topic": "AI Systems",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/",
+      "publishedAt": "2026-08-31T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
+          "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API ( storagemigration.k8s.io/…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
+          "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API ( storagemigration.k8s.io/…"
         }
       }
     },
@@ -4031,25 +4050,6 @@
       }
     },
     {
-      "slug": "20260828-kubernetes-v137-pod-certificates-and-cluster-trust-bundles-62fba438",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
-      "publishedAt": "2026-08-28T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
-          "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
-          "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
-        }
-      }
-    },
-    {
       "slug": "20260901-try-google-pics-easy-image-creation-and-editing-in-google-worksp-77cd2a6a",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -4088,40 +4088,40 @@
       }
     },
     {
-      "slug": "20260916-how-to-connect-ai-usage-to-business-value-5f7e182a",
+      "slug": "20260916-reimagining-advertising-with-ai-52752974",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-      "publishedAt": "2026-09-16T12:00:00.000Z",
+      "href": "https://openai.com/index/reimagining-advertising-with-ai",
+      "publishedAt": "2026-09-16T13:00:00.000Z",
       "discoveredAt": "2026-09-16T21:16:09.580Z",
       "locales": {
         "en": {
-          "title": "How to connect AI usage to business value",
-          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
+          "title": "Reimagining advertising with AI",
+          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
         },
         "fr": {
-          "title": "How to connect AI usage to business value",
-          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
+          "title": "Reimagining advertising with AI",
+          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify."
         }
       }
     },
     {
-      "slug": "20260914-accelerating-dropless-moe-training-in-jax-with-nvidia-transforme-833c207b",
-      "topic": "Computer Systems",
+      "slug": "20260915-dense-vs-moe-models-active-parameters-throughput-and-when-to-cho-3f75c866",
+      "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/",
-      "publishedAt": "2026-09-14T16:39:23.000Z",
-      "discoveredAt": "2026-09-14T21:48:06.707Z",
+      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
+      "publishedAt": "2026-09-15T17:00:18.000Z",
+      "discoveredAt": "2026-09-15T21:18:37.392Z",
       "locales": {
         "en": {
-          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
-          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
         },
         "fr": {
-          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
-          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
         }
       }
     },
@@ -4141,6 +4141,25 @@
         "fr": {
           "title": "Migrating multi-model AI agents to Amazon Bedrock AgentCore runtime",
           "summary": "Migrate a multi-model healthcare AI agent from self-managed Amazon ECS with AWS Fargate to Amazon Bedrock AgentCore runtime, preserving triple-model orchestration and vector-enhanced knowledge retrieval while reducing infrastruct…"
+        }
+      }
+    },
+    {
+      "slug": "20260828-kubernetes-v137-pod-certificates-and-cluster-trust-bundles-62fba438",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
+      "publishedAt": "2026-08-28T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
+          "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
+          "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
         }
       }
     },
@@ -4183,25 +4202,6 @@
       }
     },
     {
-      "slug": "20260827-kubernetes-v137-metrics-api-graduates-to-stable-f1d9baa9",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/",
-      "publishedAt": "2026-08-27T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Metrics API graduates to stable",
-          "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable ( v1 ). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Metrics API graduates to stable",
-          "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable ( v1 ). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster…"
-        }
-      }
-    },
-    {
       "slug": "20260827-3-new-ways-to-plan-and-book-travel-in-search-5a6b8552",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -4240,40 +4240,40 @@
       }
     },
     {
-      "slug": "20260916-how-workers-are-unlocking-new-ways-of-working-71646fff",
+      "slug": "20260916-hex-turns-complex-analysis-into-visual-reports-with-gpt6-astra-973a9114",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/unlocking-new-ways-of-working",
-      "publishedAt": "2026-09-16T09:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "href": "https://openai.com/index/hex-gpt-6-astra",
+      "publishedAt": "2026-09-16T12:00:00.000Z",
+      "discoveredAt": "2026-09-19T10:55:47.711Z",
       "locales": {
         "en": {
-          "title": "How workers are unlocking new ways of working",
-          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
+          "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
+          "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share."
         },
         "fr": {
-          "title": "How workers are unlocking new ways of working",
-          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
+          "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
+          "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share."
         }
       }
     },
     {
-      "slug": "20260911-from-wafer-out-to-first-token-codifying-supply-chain-expertise-w-d23b90bc",
+      "slug": "20260915-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-facto-6510d815",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/from-wafer-out-to-first-token-codifying-supply-chain-expertise-with-nemotron-and-palantir-foundry/",
-      "publishedAt": "2026-09-11T23:57:34.000Z",
-      "discoveredAt": "2026-09-12T13:24:21.343Z",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
+      "publishedAt": "2026-09-15T16:42:44.000Z",
+      "discoveredAt": "2026-09-15T21:18:37.392Z",
       "locales": {
         "en": {
-          "title": "From Wafer-Out to First Token: Codifying Supply Chain Expertise with Nemotron and Palantir Foundry",
-          "summary": "NVIDIA has one of the largest and most complex supply chains in the world, and its performance is measured from wafer-out to first token. The interval is in two..."
+          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
+          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
         },
         "fr": {
-          "title": "From Wafer-Out to First Token: Codifying Supply Chain Expertise with Nemotron and Palantir Foundry",
-          "summary": "NVIDIA has one of the largest and most complex supply chains in the world, and its performance is measured from wafer-out to first token. The interval is in two..."
+          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
+          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
         }
       }
     },
@@ -4293,6 +4293,25 @@
         "fr": {
           "title": "The new AgentCore runtime: Elastic, optimized, and consistently fast starts",
           "summary": "Today we are announcing the new AgentCore runtime, a capability of Amazon Bedrock AgentCore built for the speed, flexibility, and cost efficiency that production agents demand. It reclaims memory as sessions release it and delive…"
+        }
+      }
+    },
+    {
+      "slug": "20260827-kubernetes-v137-metrics-api-graduates-to-stable-f1d9baa9",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/",
+      "publishedAt": "2026-08-27T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Metrics API graduates to stable",
+          "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable ( v1 ). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Metrics API graduates to stable",
+          "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable ( v1 ). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster…"
         }
       }
     },
@@ -4335,25 +4354,6 @@
       }
     },
     {
-      "slug": "20260826-kubernetes-v137-garhwal-506ba8d3",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
-      "publishedAt": "2026-08-26T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Garhwal",
-          "summary": "Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent deliver…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Garhwal",
-          "summary": "Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent deliver…"
-        }
-      }
-    },
-    {
       "slug": "20260825-5-ways-to-upgrade-your-home-decor-with-google-search-5f0b0316",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -4373,40 +4373,40 @@
       }
     },
     {
-      "slug": "20260914-how-fyxer-built-an-ai-executive-assistant-people-trust-296d33de",
+      "slug": "20260916-how-to-connect-ai-usage-to-business-value-5f7e182a",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/fyxer",
-      "publishedAt": "2026-09-14T12:00:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:06.707Z",
+      "href": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+      "publishedAt": "2026-09-16T12:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
       "locales": {
         "en": {
-          "title": "How Fyxer built an AI executive assistant people trust",
-          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
+          "title": "How to connect AI usage to business value",
+          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
         },
         "fr": {
-          "title": "How Fyxer built an AI executive assistant people trust",
-          "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
+          "title": "How to connect AI usage to business value",
+          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes."
         }
       }
     },
     {
-      "slug": "20260910-how-full-stack-nim-optimizations-deliver-25x-more-users-on-nemot-2abc4ceb",
-      "topic": "Computer Systems",
+      "slug": "20260915-scaling-federated-learning-across-docker-kubernetes-and-slurm-wi-c2ceacd6",
+      "topic": "Computer Science",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-full-stack-nim-optimizations-deliver-2-5x-more-users-on-nemotron-3-ultra/",
-      "publishedAt": "2026-09-10T16:55:39.000Z",
-      "discoveredAt": "2026-09-12T13:24:21.343Z",
+      "href": "https://developer.nvidia.com/blog/scaling-federated-learning-across-docker-kubernetes-and-slurm-with-nvidia-flare/",
+      "publishedAt": "2026-09-15T02:49:31.000Z",
+      "discoveredAt": "2026-09-15T21:18:37.392Z",
       "locales": {
         "en": {
-          "title": "How Full-Stack NIM Optimizations Deliver 2.5x More Users on Nemotron 3 Ultra",
-          "summary": "Deploying a large language model is only the first step toward production-ready serving. Production teams also need to serve as many concurrent users as..."
+          "title": "Scaling Federated Learning Across Docker, Kubernetes, and Slurm with NVIDIA FLARE",
+          "summary": "Federated learning (FL) projects often begin with a straightforward setup: one server, a few clients, and one dataset at each site. As those projects grow, the..."
         },
         "fr": {
-          "title": "How Full-Stack NIM Optimizations Deliver 2.5x More Users on Nemotron 3 Ultra",
-          "summary": "Deploying a large language model is only the first step toward production-ready serving. Production teams also need to serve as many concurrent users as..."
+          "title": "Scaling Federated Learning Across Docker, Kubernetes, and Slurm with NVIDIA FLARE",
+          "summary": "Federated learning (FL) projects often begin with a straightforward setup: one server, a few clients, and one dataset at each site. As those projects grow, the..."
         }
       }
     },
@@ -4426,6 +4426,25 @@
         "fr": {
           "title": "Deploy Hugging Face models on Amazon SageMaker AI with coding agents",
           "summary": "Deploy production-ready Hugging Face models on Amazon SageMaker AI using six open-source agent skills. Point a coding agent at a model and get back a real-time endpoint with the right serving container, autoscaling, Amazon CloudW…"
+        }
+      }
+    },
+    {
+      "slug": "20260826-kubernetes-v137-garhwal-506ba8d3",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+      "publishedAt": "2026-08-26T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Garhwal",
+          "summary": "Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent deliver…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Garhwal",
+          "summary": "Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent deliver…"
         }
       }
     },
@@ -4468,25 +4487,6 @@
       }
     },
     {
-      "slug": "20260811-how-to-pretty-print-your-kubernetes-yaml-as-kyaml-and-why-youd-w-801f2827",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/11/how-to-pretty-print-kubernetes-yaml-as-kyaml/",
-      "publishedAt": "2026-08-11T18:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "How to Pretty-Print Your Kubernetes YAML as KYAML and Why You'd Want To",
-          "summary": "YAML has been the standard way to write Kubernetes manifests for years. Every example, tutorial, and configuration file you come across is written in it. The problem isn't that YAML is a bad format. It's that YAML gives you a lot…"
-        },
-        "fr": {
-          "title": "How to Pretty-Print Your Kubernetes YAML as KYAML and Why You'd Want To",
-          "summary": "YAML has been the standard way to write Kubernetes manifests for years. Every example, tutorial, and configuration file you come across is written in it. The problem isn't that YAML is a bad format. It's that YAML gives you a lot…"
-        }
-      }
-    },
-    {
       "slug": "20260819-5-new-ways-to-level-up-your-learning-with-search-a8741492",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -4506,40 +4506,40 @@
       }
     },
     {
-      "slug": "20260914-perplexity-trusts-gpt-6-astra-with-end-to-end-systems-12e9dd68",
+      "slug": "20260916-how-workers-are-unlocking-new-ways-of-working-71646fff",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-      "publishedAt": "2026-09-14T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:24:43.138Z",
+      "href": "https://openai.com/index/unlocking-new-ways-of-working",
+      "publishedAt": "2026-09-16T09:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
       "locales": {
         "en": {
-          "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-          "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
+          "title": "How workers are unlocking new ways of working",
+          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
         },
         "fr": {
-          "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-          "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
+          "title": "How workers are unlocking new ways of working",
+          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work."
         }
       }
     },
     {
-      "slug": "20260909-high-throughput-structure-prediction-with-bionemo-inference-runt-bf13fbf2",
-      "topic": "AI Systems",
+      "slug": "20260914-accelerating-dropless-moe-training-in-jax-with-nvidia-transforme-833c207b",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/high-throughput-structure-prediction-with-bionemo-inference-runtime/",
-      "publishedAt": "2026-09-09T23:45:42.000Z",
-      "discoveredAt": "2026-09-12T13:24:21.343Z",
+      "href": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/",
+      "publishedAt": "2026-09-14T16:39:23.000Z",
+      "discoveredAt": "2026-09-14T21:48:06.707Z",
       "locales": {
         "en": {
-          "title": "High-Throughput Structure Prediction with BioNeMo Inference Runtime",
-          "summary": "Biomolecular structure prediction is now often run at proteome scale, where the goal is to move an entire worklist through the pipeline efficiently. NVIDIA..."
+          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
+          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
         },
         "fr": {
-          "title": "High-Throughput Structure Prediction with BioNeMo Inference Runtime",
-          "summary": "Biomolecular structure prediction is now often run at proteome scale, where the goal is to move an entire worklist through the pipeline efficiently. NVIDIA..."
+          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
+          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
         }
       }
     },
