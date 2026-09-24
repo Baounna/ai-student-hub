@@ -490,14 +490,14 @@ export const comparisons: ComparisonPage[] = [
         affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_a"),
         locales: {
           en: {
-            price: "Free tier + usage-based",
-            bestFor: "Beginner to intermediate students",
-            summary: "Fast setup, simple UI, and strong documentation for first shipped projects."
+            price: "$0/mo static sites (3 apps); containers from $5/mo",
+            bestFor: "Students who want one vendor for app, database and storage",
+            summary: "App Platform's free tier covers three static-site apps with 1 GiB transfer each and no containers; the cheapest container plan is 1 shared vCPU / 512 MiB at $5/mo. Checked on the App Platform pricing page."
           },
           fr: {
-            price: "Offre gratuite + facturation à l'usage",
-            bestFor: "Étudiants débutants à intermédiaires",
-            summary: "Mise en route rapide, interface simple et documentation solide pour vos premiers projets mis en ligne."
+            price: "0 $/mois pour les sites statiques (3 apps) ; conteneurs à partir de 5 $/mois",
+            bestFor: "Étudiants qui veulent un seul fournisseur pour l'app, la base et le stockage",
+            summary: "L'offre gratuite d'App Platform couvre trois applications de sites statiques avec 1 Gio de transfert chacune et aucun conteneur ; le plan conteneur le moins cher est 1 vCPU partagé / 512 Mio à 5 $/mois. Vérifié sur la page tarifaire d'App Platform."
           }
         }
       },
@@ -507,14 +507,14 @@ export const comparisons: ComparisonPage[] = [
           "https://render.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_b",
         locales: {
           en: {
-            price: "Credit-based starter plan",
-            bestFor: "Students needing backend flexibility",
-            summary: "More control for API-heavy projects and scaling custom workflows."
+            price: "Free instance $0/mo; Starter $7/mo",
+            bestFor: "Students who want a real free web service and can accept a cold start",
+            summary: "The Free instance is 0.1 CPU / 512 MB and 750 instance hours a month, but it spins down after 15 minutes without traffic and takes about a minute to wake. Free Postgres expires 30 days after creation. Checked on render.com/pricing and render.com/docs/free."
           },
           fr: {
-            price: "Formule de démarrage à crédits",
-            bestFor: "Étudiants qui ont besoin de souplesse côté backend",
-            summary: "Plus de contrôle pour les projets riches en API et pour la montée en charge de workflows sur mesure."
+            price: "Instance Free 0 $/mois ; Starter 7 $/mois",
+            bestFor: "Étudiants qui veulent un vrai service web gratuit et acceptent un démarrage à froid",
+            summary: "L'instance Free offre 0,1 CPU / 512 Mo et 750 heures d'instance par mois, mais elle se met en veille après 15 minutes sans trafic et met environ une minute à se réveiller. La base Postgres gratuite expire 30 jours après sa création. Vérifié sur render.com/pricing et render.com/docs/free."
           }
         }
       },
@@ -524,14 +524,14 @@ export const comparisons: ComparisonPage[] = [
           "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_c",
         locales: {
           en: {
-            price: "Low-cost app hosting",
-            bestFor: "Portfolio demos and prototypes",
-            summary: "Clean developer experience and predictable costs for student use."
+            price: "Free $0/mo ($1 usage credit); Hobby $5/mo ($5 credit)",
+            bestFor: "Prototypes that must stay awake",
+            summary: "Usage is billed against a monthly credit rather than a fixed instance price, so nothing sleeps, but a busy demo can exhaust $5 before month end. A one-time $5 trial credit lasts 30 days. Checked on the Railway pricing plans reference."
           },
           fr: {
-            price: "Hébergement d'applications à faible coût",
-            bestFor: "Démos de portfolio et prototypes",
-            summary: "Expérience développeur soignée et coûts prévisibles pour un usage étudiant."
+            price: "Free 0 $/mois (1 $ de crédit d'usage) ; Hobby 5 $/mois (5 $ de crédit)",
+            bestFor: "Prototypes qui doivent rester actifs",
+            summary: "L'usage est décompté d'un crédit mensuel plutôt que facturé à l'instance, donc rien ne se met en veille, mais une démo très sollicitée peut épuiser 5 $ avant la fin du mois. Un crédit d'essai unique de 5 $ dure 30 jours. Vérifié sur la référence des offres tarifaires de Railway."
           }
         }
       }
@@ -560,14 +560,14 @@ export const comparisons: ComparisonPage[] = [
         affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_fastapi"),
         locales: {
           en: {
-            price: "Open-source + hosting cost",
+            price: "MIT-licensed; you pay only for hosting",
             bestFor: "Python-first AI/ML teams",
-            summary: "Typed request validation and automatic OpenAPI docs for fast shipping."
+            summary: "Typed request validation and automatic OpenAPI docs, and the model code and the API speak the same language. Note that Starlette sets no request body size limit by default, so add that middleware yourself."
           },
           fr: {
-            price: "Open source + coût d'hébergement",
+            price: "Licence MIT ; vous ne payez que l'hébergement",
             bestFor: "Équipes IA/ML qui travaillent d'abord en Python",
-            summary: "Validation typée des requêtes et documentation OpenAPI automatique pour livrer vite."
+            summary: "Validation typée des requêtes et documentation OpenAPI automatique, et le code du modèle et l'API parlent la même langue. Notez que Starlette n'impose aucune limite de taille de corps de requête par défaut : ajoutez ce middleware vous-même."
           }
         }
       },
@@ -577,14 +577,14 @@ export const comparisons: ComparisonPage[] = [
           "https://nestjs.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_node",
         locales: {
           en: {
-            price: "Open-source + hosting cost",
-            bestFor: "Fullstack JS teams",
-            summary: "Strong modular architecture and large ecosystem for production APIs."
+            price: "MIT-licensed; you pay only for hosting",
+            bestFor: "Fullstack JS teams already writing the frontend",
+            summary: "Strong modular architecture and a large ecosystem, at the cost of calling Python over HTTP for anything the model does. express.json() caps bodies at 100kb by default, which is stricter than most people expect."
           },
           fr: {
-            price: "Open source + coût d'hébergement",
-            bestFor: "Équipes fullstack JS",
-            summary: "Architecture modulaire solide et large écosystème pour des API en production."
+            price: "Licence MIT ; vous ne payez que l'hébergement",
+            bestFor: "Équipes fullstack JS qui écrivent déjà le frontend",
+            summary: "Architecture modulaire solide et large écosystème, au prix d'un appel HTTP vers Python pour tout ce que fait le modèle. express.json() plafonne les corps de requête à 100 ko par défaut, ce qui est plus strict qu'on ne l'imagine."
           }
         }
       },
@@ -594,14 +594,14 @@ export const comparisons: ComparisonPage[] = [
           "https://gofiber.io/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_go",
         locales: {
           en: {
-            price: "Open-source + hosting cost",
-            bestFor: "Performance-focused services",
-            summary: "Low memory footprint and fast response times for API-heavy workloads."
+            price: "MIT-licensed; you pay only for hosting",
+            bestFor: "Services where the model lives elsewhere",
+            summary: "Low memory footprint and fast response times for API-heavy workloads, but Go is the wrong place to put the model itself, so this is a gateway in front of a Python service rather than a replacement for one."
           },
           fr: {
-            price: "Open source + coût d'hébergement",
-            bestFor: "Services orientés performance",
-            summary: "Faible empreinte mémoire et temps de réponse courts pour les charges riches en API."
+            price: "Licence MIT ; vous ne payez que l'hébergement",
+            bestFor: "Services où le modèle vit ailleurs",
+            summary: "Faible empreinte mémoire et temps de réponse courts pour les charges riches en API, mais Go est le mauvais endroit pour héberger le modèle lui-même : c'est donc une passerelle devant un service Python, pas un remplaçant."
           }
         }
       }
@@ -631,14 +631,14 @@ export const comparisons: ComparisonPage[] = [
           "https://github.com/features/actions?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_actions",
         locales: {
           en: {
-            price: "Free tier + hosting cost",
+            price: "Free on public repos; 2,000 min/mo on Free for private repos",
             bestFor: "Most student teams",
-            summary: "Fast setup with broad documentation and simple CI/CD workflows."
+            summary: "GitHub's billing docs state Actions is free for public repositories on standard runners, so an open-source project pays nothing. A private repo on the Free plan gets 2,000 standard-runner minutes and 500 MB of artifact storage per month."
           },
           fr: {
-            price: "Offre gratuite + coût d'hébergement",
+            price: "Gratuit sur les dépôts publics ; 2 000 min/mois sur l'offre Free pour les dépôts privés",
             bestFor: "La plupart des équipes étudiantes",
-            summary: "Mise en route rapide, documentation abondante et workflows CI/CD simples."
+            summary: "La documentation de facturation de GitHub indique qu'Actions est gratuit pour les dépôts publics sur runners standard : un projet open source ne paie donc rien. Un dépôt privé sur l'offre Free dispose de 2 000 minutes de runner standard et de 500 Mo de stockage d'artefacts par mois."
           }
         }
       },
@@ -648,14 +648,14 @@ export const comparisons: ComparisonPage[] = [
           "https://render.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_render",
         locales: {
           en: {
-            price: "Usage-based",
-            bestFor: "Managed platform deployment",
-            summary: "Infrastructure templates with low ops overhead for student projects."
+            price: "Free instance $0/mo; Starter $7/mo",
+            bestFor: "Teams who want deploys described in a file, not a dashboard",
+            summary: "One render.yaml declares the services, so the environment is reviewable in a pull request. The Free instance spins down after 15 minutes idle, which makes it fine for a demo and wrong for a cron target."
           },
           fr: {
-            price: "Facturation à l'usage",
-            bestFor: "Déploiement sur plateforme managée",
-            summary: "Des templates d'infrastructure avec peu de charge ops pour les projets étudiants."
+            price: "Instance Free 0 $/mois ; Starter 7 $/mois",
+            bestFor: "Équipes qui veulent des déploiements décrits dans un fichier, pas dans un tableau de bord",
+            summary: "Un seul render.yaml déclare les services, donc l'environnement est relisible dans une pull request. L'instance Free se met en veille après 15 minutes d'inactivité, ce qui convient à une démo et pas à une tâche planifiée."
           }
         }
       },
@@ -665,14 +665,14 @@ export const comparisons: ComparisonPage[] = [
           "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_railway",
         locales: {
           en: {
-            price: "Low-cost starter plans",
-            bestFor: "Rapid prototypes",
-            summary: "Quick environment bootstrapping and predictable early-stage workflows."
+            price: "Free $0/mo ($1 usage credit); Hobby $5/mo ($5 credit)",
+            bestFor: "Rapid prototypes that need several services at once",
+            summary: "Railway describes templates as packaging \"a service or set of services into a reusable, distributable format\", so a whole project arrives in a few clicks and nothing sleeps. Because billing is credit-based, an idle service still consumes credit, so delete what you are no longer demoing."
           },
           fr: {
-            price: "Formules de démarrage à faible coût",
-            bestFor: "Prototypes rapides",
-            summary: "Initialisation rapide des environnements et workflows prévisibles en phase de démarrage."
+            price: "Free 0 $/mois (1 $ de crédit d'usage) ; Hobby 5 $/mois (5 $ de crédit)",
+            bestFor: "Prototypes rapides qui ont besoin de plusieurs services d'un coup",
+            summary: "Railway décrit les templates comme l'empaquetage d'« un service ou d'un ensemble de services dans un format réutilisable et distribuable » : un projet entier arrive donc en quelques clics, et rien ne se met en veille. La facturation étant au crédit, un service inactif en consomme quand même : supprimez ce que vous ne présentez plus."
           }
         }
       }
