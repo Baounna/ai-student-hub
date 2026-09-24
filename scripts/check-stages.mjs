@@ -66,6 +66,11 @@ const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
  */
 const GONE = [
   "n'est plus d'actualit",
+  // hellowork writes the plain French of "no longer available". The English
+  // form was on this list from the start; its literal translation was not, so
+  // five dead postings sailed through every weekly run answering a clean 200.
+  "n'est plus disponible",
+  "n'est plus en ligne",
   "no longer accepting applications",
   "no longer available",
   "cette offre est pourvue",
@@ -80,7 +85,15 @@ const GONE = [
  * dead listing we know of pass this check as perfectly healthy.
  */
 export function gonePhrase(text) {
-  const normalized = String(text).toLowerCase().replace(/[\u2018\u2019\u02bc\u00b4`]/g, "'");
+  const normalized = String(text)
+    .toLowerCase()
+    // The caller strips tags but never decodes entities, so a page that writes
+    // &#039; or &rsquo; arrives here with the apostrophe still encoded and every
+    // phrase below misses by one character.
+    .replace(/&(?:#0*39|#x0*27|apos|lsquo|rsquo|#0*8217|#x0*2019);/gi, "'")
+    .replace(/&nbsp;|&#0*160;/gi, " ")
+    .replace(/[\u2018\u2019\u02bc\u00b4`]/g, "'")
+    .replace(/\s+/g, " ");
   return GONE.find((phrase) => normalized.includes(phrase)) || "";
 }
 

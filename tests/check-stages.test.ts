@@ -17,6 +17,25 @@ describe("expired-posting phrases", () => {
     expect(gonePhrase("This job is no longer accepting applications")).toBeTruthy();
   });
 
+  // Five live-looking hellowork postings sat in stages.json for weeks with a
+  // fresh checkedAt stamp. The list carried the English "no longer available"
+  // but not its plain French translation, which is the exact wording the board
+  // uses. Every one of them answered HTTP 200, so nothing else could catch it.
+  it("catches the French wording hellowork actually ships", () => {
+    expect(gonePhrase("L'offre de Swile n'est plus disponible")).toBeTruthy();
+  });
+
+  it("catches an apostrophe that is still HTML-encoded", () => {
+    // The fetcher strips tags but never decodes entities, so this is the exact
+    // string the matcher receives from a page written with &#039;.
+    expect(gonePhrase("L&#039;offre de Ipsos n&#039;est plus disponible")).toBeTruthy();
+  });
+
+  it("survives a non-breaking space between the words", () => {
+    expect(gonePhrase("Cette offre n&nbsp;est plus en ligne")).toBe("");
+    expect(gonePhrase("Cette offre&nbsp;n'est plus en ligne")).toBeTruthy();
+  });
+
   it("does not fire on an ordinary live posting", () => {
     expect(gonePhrase("Stage PFE - nous recherchons un etudiant en derniere annee")).toBe("");
   });
