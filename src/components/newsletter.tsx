@@ -57,13 +57,23 @@ export function Newsletter({ compact = false, locale = "en", source }: Newslette
       ? [
           "1. Les nouveaux stages, alternances et PFE de la semaine",
           "2. Un lien direct vers l'offre, et la date limite quand elle existe",
-          "3. Maroc et France, filtrés pour les profils tech"
+          "3. Uniquement le Maroc et la France, filtrés pour les profils tech"
         ]
       : [
           "1. New internships, apprenticeships and final-year projects each week",
           "2. A direct link to the posting, and the closing date when there is one",
-          "3. Morocco and France, filtered for technical roles"
+          "3. Morocco and France only, filtered for technical roles"
         ];
+
+  // This box sits in the footer of all 245 pages, most of which are guides that
+  // work anywhere. Read by someone in Lagos or Jakarta, three bullets about
+  // French internships say "this site is not for you" — which is false, and it
+  // is the kind of false that loses a reader who came for the guides. Say what
+  // the email is, then say plainly that the rest needs no email at all.
+  const openToAllLine =
+    locale === "fr"
+      ? "Les stages sont régionaux. Les guides, les outils et la veille ne le sont pas — et se lisent sans inscription."
+      : "The internships are regional. The guides, tools and news are not, and need no signup to read.";
   // Promise only the cadence that is actually planned. The previous line also
   // offered "occasional high-signal alerts", which is a second commitment
   // nobody has made.
@@ -101,6 +111,7 @@ export function Newsletter({ compact = false, locale = "en", source }: Newslette
           <li key={line}>{line}</li>
         ))}
       </ul>
+      <p className="mt-3 max-w-2xl text-xs text-[color:var(--muted)]">{openToAllLine}</p>
 
       {listIsOpen ? (
         <>

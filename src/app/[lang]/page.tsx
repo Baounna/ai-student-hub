@@ -355,8 +355,8 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             </h2>
             <span className="text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? `${openStagesCount} offres verifiees une par une`
-                : `${openStagesCount} openings, each link checked by hand`}
+                ? `${openStagesCount} offres au Maroc et en France, verifiees une par une`
+                : `${openStagesCount} openings in Morocco and France, each link checked by hand`}
             </span>
           </div>
           <ul className="divide-y divide-[color:var(--border)]">
