@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T21:28:35.112Z",
+  "updatedAt": "2026-09-24T11:41:43.564Z",
   "items": [
     {
-      "slug": "20260923-validate-gpu-cluster-readiness-before-ai-workloads-land-a69161c4",
+      "slug": "20260923-introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-152ae0a4",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land/",
-      "publishedAt": "2026-09-23T19:45:27.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "href": "https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning/",
+      "publishedAt": "2026-09-23T22:55:03.000Z",
+      "discoveredAt": "2026-09-24T11:41:43.564Z",
       "locales": {
         "en": {
-          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
-          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
+          "title": "Introducing NV-Reason-CT Open 3D CT VLM for Radiologist Chain-of-Thought Reasoning",
+          "summary": "Radiology AI has made remarkable strides in detecting abnormalities across chest X-rays, pathology slides, and 2D scans. Yet one of the most clinically rich and..."
         },
         "fr": {
-          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
-          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
+          "title": "Introducing NV-Reason-CT Open 3D CT VLM for Radiologist Chain-of-Thought Reasoning",
+          "summary": "Radiology AI has made remarkable strides in detecting abnormalities across chest X-rays, pathology slides, and 2D scans. Yet one of the most clinically rich and..."
         }
       }
     },
@@ -364,21 +364,21 @@
       }
     },
     {
-      "slug": "20260923-manage-kubernetes-node-fleets-with-nodewright-6b35eb72",
-      "topic": "Computer Science",
+      "slug": "20260923-accelerating-dropless-moe-training-in-jax-with-nvidia-transforme-833c207b",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
-      "publishedAt": "2026-09-23T18:25:56.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "href": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/",
+      "publishedAt": "2026-09-23T21:34:20.000Z",
+      "discoveredAt": "2026-09-24T11:41:43.564Z",
       "locales": {
         "en": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
+          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
+          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
         },
         "fr": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
+          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
+          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
         }
       }
     },
@@ -706,21 +706,21 @@
       }
     },
     {
-      "slug": "20260923-how-swe-serve-exposes-the-gap-between-local-tests-and-live-servi-9e926410",
+      "slug": "20260923-validate-gpu-cluster-readiness-before-ai-workloads-land-a69161c4",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/",
-      "publishedAt": "2026-09-23T16:05:30.000Z",
+      "href": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land/",
+      "publishedAt": "2026-09-23T19:45:27.000Z",
       "discoveredAt": "2026-09-23T21:28:35.112Z",
       "locales": {
         "en": {
-          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
-          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
+          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
         },
         "fr": {
-          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
-          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
+          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
         }
       }
     },
@@ -1048,21 +1048,21 @@
       }
     },
     {
-      "slug": "20260922-whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rende-60dd7f94",
-      "topic": "Computer Systems",
+      "slug": "20260923-manage-kubernetes-node-fleets-with-nodewright-6b35eb72",
+      "topic": "Computer Science",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities/",
-      "publishedAt": "2026-09-22T20:48:36.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "href": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
+      "publishedAt": "2026-09-23T18:25:56.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
       "locales": {
         "en": {
-          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
-          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
+          "title": "Manage Kubernetes Node Fleets with NodeWright",
+          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
         },
         "fr": {
-          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
-          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
+          "title": "Manage Kubernetes Node Fleets with NodeWright",
+          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
         }
       }
     },
@@ -1390,21 +1390,21 @@
       }
     },
     {
-      "slug": "20260922-enabling-private-high-performance-production-ai-inference-with-n-5a508d73",
-      "topic": "AI Performance",
+      "slug": "20260923-how-swe-serve-exposes-the-gap-between-local-tests-and-live-servi-9e926410",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/",
-      "publishedAt": "2026-09-22T17:27:48.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "href": "https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/",
+      "publishedAt": "2026-09-23T16:05:30.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
       "locales": {
         "en": {
-          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
-          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
+          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
+          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
         },
         "fr": {
-          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
-          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
+          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
+          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
         }
       }
     },
@@ -1713,21 +1713,21 @@
       }
     },
     {
-      "slug": "20260922-topology-aware-workload-scheduling-with-nvidia-topograph-05cef1f3",
+      "slug": "20260922-whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rende-60dd7f94",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/topology-aware-workload-scheduling-with-nvidia-topograph/",
-      "publishedAt": "2026-09-22T17:16:36.000Z",
+      "href": "https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities/",
+      "publishedAt": "2026-09-22T20:48:36.000Z",
       "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Topology-Aware Workload Scheduling with NVIDIA Topograph",
-          "summary": "AI factories are power-limited systems that deliver maximum value when fully optimized. GPU workload placement is a key optimization. Poor workload placement..."
+          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
+          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
         },
         "fr": {
-          "title": "Topology-Aware Workload Scheduling with NVIDIA Topograph",
-          "summary": "AI factories are power-limited systems that deliver maximum value when fully optimized. GPU workload placement is a key optimization. Poor workload placement..."
+          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
+          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
         }
       }
     },
@@ -2036,21 +2036,21 @@
       }
     },
     {
-      "slug": "20260921-simplifying-model-serving-across-multiple-gpus-with-nvidia-tenso-21a9c69c",
-      "topic": "AI Systems",
+      "slug": "20260922-enabling-private-high-performance-production-ai-inference-with-n-5a508d73",
+      "topic": "AI Performance",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/simplifying-model-serving-across-multiple-gpus-with-nvidia-tensorrt-multi-device-integration-in-nvidia-dynamo-triton/",
-      "publishedAt": "2026-09-21T21:51:14.000Z",
-      "discoveredAt": "2026-09-21T21:57:13.092Z",
+      "href": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/",
+      "publishedAt": "2026-09-22T17:27:48.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Simplifying Model Serving Across Multiple GPUs with NVIDIA TensorRT Multi-Device Integration in NVIDIA Dynamo-Triton",
-          "summary": "The compute and memory demands of generative AI increasingly exceed what a single GPU can provide. NVIDIA TensorRT multi-device inference is a new capability..."
+          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
+          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
         },
         "fr": {
-          "title": "Simplifying Model Serving Across Multiple GPUs with NVIDIA TensorRT Multi-Device Integration in NVIDIA Dynamo-Triton",
-          "summary": "The compute and memory demands of generative AI increasingly exceed what a single GPU can provide. NVIDIA TensorRT multi-device inference is a new capability..."
+          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
+          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
         }
       }
     },
@@ -2321,21 +2321,21 @@
       }
     },
     {
-      "slug": "20260921-how-to-evaluate-ai-agents-from-tool-calls-to-task-completion-f6a9f53b",
-      "topic": "AI Systems",
+      "slug": "20260922-topology-aware-workload-scheduling-with-nvidia-topograph-05cef1f3",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-evaluate-ai-agents-from-tool-calls-to-task-completion/",
-      "publishedAt": "2026-09-21T21:05:37.000Z",
-      "discoveredAt": "2026-09-21T21:57:13.092Z",
+      "href": "https://developer.nvidia.com/blog/topology-aware-workload-scheduling-with-nvidia-topograph/",
+      "publishedAt": "2026-09-22T17:16:36.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
-          "summary": "When you ship an AI agent, the key question is whether it can execute a chain of work across dozens of sequential tool calls against a live environment, and..."
+          "title": "Topology-Aware Workload Scheduling with NVIDIA Topograph",
+          "summary": "AI factories are power-limited systems that deliver maximum value when fully optimized. GPU workload placement is a key optimization. Poor workload placement..."
         },
         "fr": {
-          "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
-          "summary": "When you ship an AI agent, the key question is whether it can execute a chain of work across dozens of sequential tool calls against a live environment, and..."
+          "title": "Topology-Aware Workload Scheduling with NVIDIA Topograph",
+          "summary": "AI factories are power-limited systems that deliver maximum value when fully optimized. GPU workload placement is a key optimization. Poor workload placement..."
         }
       }
     },
@@ -2454,21 +2454,21 @@
       }
     },
     {
-      "slug": "20260923-airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models-73fafdf6",
+      "slug": "20260923-chatgpt-ads-expands-to-southeast-asia-and-taiwan-1dd9ce12",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/airbnb-gpt-6-astra",
-      "publishedAt": "2026-09-23T01:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "href": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+      "publishedAt": "2026-09-23T02:00:00.000Z",
+      "discoveredAt": "2026-09-24T11:41:43.564Z",
       "locales": {
         "en": {
-          "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
-          "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster."
+          "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+          "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries."
         },
         "fr": {
-          "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
-          "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster."
+          "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+          "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries."
         }
       }
     },
@@ -2606,21 +2606,21 @@
       }
     },
     {
-      "slug": "20260921-accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros-930fe613",
+      "slug": "20260921-simplifying-model-serving-across-multiple-gpus-with-nvidia-tenso-21a9c69c",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros/",
-      "publishedAt": "2026-09-21T19:07:33.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "href": "https://developer.nvidia.com/blog/simplifying-model-serving-across-multiple-gpus-with-nvidia-tensorrt-multi-device-integration-in-nvidia-dynamo-triton/",
+      "publishedAt": "2026-09-21T21:51:14.000Z",
+      "discoveredAt": "2026-09-21T21:57:13.092Z",
       "locales": {
         "en": {
-          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
-          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
+          "title": "Simplifying Model Serving Across Multiple GPUs with NVIDIA TensorRT Multi-Device Integration in NVIDIA Dynamo-Triton",
+          "summary": "The compute and memory demands of generative AI increasingly exceed what a single GPU can provide. NVIDIA TensorRT multi-device inference is a new capability..."
         },
         "fr": {
-          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
-          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
+          "title": "Simplifying Model Serving Across Multiple GPUs with NVIDIA TensorRT Multi-Device Integration in NVIDIA Dynamo-Triton",
+          "summary": "The compute and memory demands of generative AI increasingly exceed what a single GPU can provide. NVIDIA TensorRT multi-device inference is a new capability..."
         }
       }
     },
@@ -2739,21 +2739,21 @@
       }
     },
     {
-      "slug": "20260923-grab-and-openai-bring-practical-ai-skills-to-southeast-asia-09a0c6db",
+      "slug": "20260923-airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models-73fafdf6",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
-      "publishedAt": "2026-09-23T00:00:00.000Z",
-      "discoveredAt": "2026-09-23T11:31:42.873Z",
+      "href": "https://openai.com/index/airbnb-gpt-6-astra",
+      "publishedAt": "2026-09-23T01:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
       "locales": {
         "en": {
-          "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
-          "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia."
+          "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+          "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster."
         },
         "fr": {
-          "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
-          "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia."
+          "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+          "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster."
         }
       }
     },
@@ -2891,21 +2891,21 @@
       }
     },
     {
-      "slug": "20260918-benchmarking-llm-inference-at-scale-with-aiperf-88c32b0b",
-      "topic": "AI Performance",
+      "slug": "20260921-how-to-evaluate-ai-agents-from-tool-calls-to-task-completion-f6a9f53b",
+      "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
-      "publishedAt": "2026-09-18T19:04:50.000Z",
-      "discoveredAt": "2026-09-18T20:52:50.113Z",
+      "href": "https://developer.nvidia.com/blog/how-to-evaluate-ai-agents-from-tool-calls-to-task-completion/",
+      "publishedAt": "2026-09-21T21:05:37.000Z",
+      "discoveredAt": "2026-09-21T21:57:13.092Z",
       "locales": {
         "en": {
-          "title": "Benchmarking LLM Inference at Scale with AIPerf",
-          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
+          "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
+          "summary": "When you ship an AI agent, the key question is whether it can execute a chain of work across dozens of sequential tool calls against a live environment, and..."
         },
         "fr": {
-          "title": "Benchmarking LLM Inference at Scale with AIPerf",
-          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
+          "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
+          "summary": "When you ship an AI agent, the key question is whether it can execute a chain of work across dozens of sequential tool calls against a live environment, and..."
         }
       }
     },
@@ -3005,21 +3005,21 @@
       }
     },
     {
-      "slug": "20260922-better-prompt-caching-for-gpt-6-b6b1e411",
+      "slug": "20260923-grab-and-openai-bring-practical-ai-skills-to-southeast-asia-09a0c6db",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-      "publishedAt": "2026-09-22T21:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "href": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
       "locales": {
         "en": {
-          "title": "Better prompt caching for GPT-6",
-          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
+          "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+          "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia."
         },
         "fr": {
-          "title": "Better prompt caching for GPT-6",
-          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
+          "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+          "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia."
         }
       }
     },
@@ -3157,21 +3157,21 @@
       }
     },
     {
-      "slug": "20260917-cuda-toolkit-134-adds-windows-on-arm-support-and-greater-control-7816c3b3",
-      "topic": "Computer Systems",
+      "slug": "20260921-accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros-930fe613",
+      "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/cuda-toolkit-13-4-adds-windows-on-arm-support-and-greater-control-over-shared-gpus/",
-      "publishedAt": "2026-09-17T20:20:33.000Z",
-      "discoveredAt": "2026-09-23T11:31:42.873Z",
+      "href": "https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros/",
+      "publishedAt": "2026-09-21T19:07:33.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "CUDA Toolkit 13.4 Adds Windows on Arm Support and Greater Control over Shared GPUs",
-          "summary": "Every NVIDIA CUDA Toolkit release adds functionality and performance improvements that help developers get more from NVIDIA GPUs and the broader NVIDIA software..."
+          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
+          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
         },
         "fr": {
-          "title": "CUDA Toolkit 13.4 Adds Windows on Arm Support and Greater Control over Shared GPUs",
-          "summary": "Every NVIDIA CUDA Toolkit release adds functionality and performance improvements that help developers get more from NVIDIA GPUs and the broader NVIDIA software..."
+          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
+          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
         }
       }
     },
@@ -3271,21 +3271,21 @@
       }
     },
     {
-      "slug": "20260922-introducing-gpt-6-sol-and-luna-3d48e529",
+      "slug": "20260922-better-prompt-caching-for-gpt-6-b6b1e411",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-      "publishedAt": "2026-09-22T18:00:00.000Z",
+      "href": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "publishedAt": "2026-09-22T21:00:00.000Z",
       "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Introducing GPT-6 Sol and Luna",
-          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
+          "title": "Better prompt caching for GPT-6",
+          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
         },
         "fr": {
-          "title": "Introducing GPT-6 Sol and Luna",
-          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
+          "title": "Better prompt caching for GPT-6",
+          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
         }
       }
     },
@@ -3404,21 +3404,21 @@
       }
     },
     {
-      "slug": "20260916-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
-      "topic": "AI Systems",
+      "slug": "20260918-benchmarking-llm-inference-at-scale-with-aiperf-88c32b0b",
+      "topic": "AI Performance",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
-      "publishedAt": "2026-09-16T23:25:01.000Z",
-      "discoveredAt": "2026-09-17T11:38:26.762Z",
+      "href": "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
+      "publishedAt": "2026-09-18T19:04:50.000Z",
+      "discoveredAt": "2026-09-18T20:52:50.113Z",
       "locales": {
         "en": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+          "title": "Benchmarking LLM Inference at Scale with AIPerf",
+          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
         },
         "fr": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+          "title": "Benchmarking LLM Inference at Scale with AIPerf",
+          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
         }
       }
     },
@@ -3518,21 +3518,21 @@
       }
     },
     {
-      "slug": "20260922-parallel-cut-research-time-and-cost-in-half-with-gpt6-astra-ce45d8dc",
+      "slug": "20260922-introducing-gpt-6-sol-and-luna-3d48e529",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-      "publishedAt": "2026-09-22T12:00:00.000Z",
-      "discoveredAt": "2026-09-23T11:31:42.873Z",
+      "href": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "publishedAt": "2026-09-22T18:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-          "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models."
+          "title": "Introducing GPT-6 Sol and Luna",
+          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
         },
         "fr": {
-          "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-          "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models."
+          "title": "Introducing GPT-6 Sol and Luna",
+          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
         }
       }
     },
@@ -3632,21 +3632,21 @@
       }
     },
     {
-      "slug": "20260916-experiment-with-qwen38-flash-next-on-nvidia-gb300-nvl72-for-agen-65449754",
-      "topic": "AI Systems",
+      "slug": "20260917-cuda-toolkit-134-adds-windows-on-arm-support-and-greater-control-7816c3b3",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/experiment-with-qwen3-8-flash-next-on-nvidia-gb300-nvl72-for-agentic-coding/",
-      "publishedAt": "2026-09-16T21:46:25.000Z",
+      "href": "https://developer.nvidia.com/blog/cuda-toolkit-13-4-adds-windows-on-arm-support-and-greater-control-over-shared-gpus/",
+      "publishedAt": "2026-09-17T20:20:33.000Z",
       "discoveredAt": "2026-09-23T11:31:42.873Z",
       "locales": {
         "en": {
-          "title": "Experiment with Qwen3.8-Flash-Next on NVIDIA GB300 NVL72 for Agentic Coding",
-          "summary": "Alibaba released the model weights for Qwen3.8-Flash-Next as a preview of the upcoming Qwen4 architecture for developers to experiment with and evaluate. It’s..."
+          "title": "CUDA Toolkit 13.4 Adds Windows on Arm Support and Greater Control over Shared GPUs",
+          "summary": "Every NVIDIA CUDA Toolkit release adds functionality and performance improvements that help developers get more from NVIDIA GPUs and the broader NVIDIA software..."
         },
         "fr": {
-          "title": "Experiment with Qwen3.8-Flash-Next on NVIDIA GB300 NVL72 for Agentic Coding",
-          "summary": "Alibaba released the model weights for Qwen3.8-Flash-Next as a preview of the upcoming Qwen4 architecture for developers to experiment with and evaluate. It’s..."
+          "title": "CUDA Toolkit 13.4 Adds Windows on Arm Support and Greater Control over Shared GPUs",
+          "summary": "Every NVIDIA CUDA Toolkit release adds functionality and performance improvements that help developers get more from NVIDIA GPUs and the broader NVIDIA software..."
         }
       }
     },
@@ -3746,21 +3746,21 @@
       }
     },
     {
-      "slug": "20260922-priorities-and-principles-for-effective-third-party-assessments-b4fb82cc",
+      "slug": "20260922-parallel-cut-research-time-and-cost-in-half-with-gpt6-astra-ce45d8dc",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/priorities-principles-third-party-assessments",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "href": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "publishedAt": "2026-09-22T12:00:00.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
       "locales": {
         "en": {
-          "title": "Priorities and principles for effective third party assessments",
-          "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards."
+          "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+          "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models."
         },
         "fr": {
-          "title": "Priorities and principles for effective third party assessments",
-          "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards."
+          "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+          "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models."
         }
       }
     },
@@ -3841,21 +3841,21 @@
       }
     },
     {
-      "slug": "20260916-serve-qwen38-24t-a95b-a-24t-parameter-model-with-configurable-re-06e533fd",
+      "slug": "20260916-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/",
-      "publishedAt": "2026-09-16T21:39:25.000Z",
-      "discoveredAt": "2026-09-23T11:31:42.873Z",
+      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
+      "publishedAt": "2026-09-16T23:25:01.000Z",
+      "discoveredAt": "2026-09-17T11:38:26.762Z",
       "locales": {
         "en": {
-          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
-          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
         },
         "fr": {
-          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
-          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
         }
       }
     },
@@ -3955,21 +3955,21 @@
       }
     },
     {
-      "slug": "20260921-advisory-group-on-mathematics-and-artificial-intelligence-a7ca5984",
+      "slug": "20260922-priorities-and-principles-for-effective-third-party-assessments-b4fb82cc",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-      "publishedAt": "2026-09-21T12:00:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:13.092Z",
+      "href": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Advisory Group on Mathematics and Artificial Intelligence",
-          "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results."
+          "title": "Priorities and principles for effective third party assessments",
+          "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards."
         },
         "fr": {
-          "title": "Advisory Group on Mathematics and Artificial Intelligence",
-          "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results."
+          "title": "Priorities and principles for effective third party assessments",
+          "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards."
         }
       }
     },
@@ -4050,21 +4050,21 @@
       }
     },
     {
-      "slug": "20260916-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-64-82b93583",
-      "topic": "AI Performance",
+      "slug": "20260916-experiment-with-qwen38-flash-next-on-nvidia-gb300-nvl72-for-agen-65449754",
+      "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
-      "publishedAt": "2026-09-16T20:37:15.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "href": "https://developer.nvidia.com/blog/experiment-with-qwen3-8-flash-next-on-nvidia-gb300-nvl72-for-agentic-coding/",
+      "publishedAt": "2026-09-16T21:46:25.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
       "locales": {
         "en": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+          "title": "Experiment with Qwen3.8-Flash-Next on NVIDIA GB300 NVL72 for Agentic Coding",
+          "summary": "Alibaba released the model weights for Qwen3.8-Flash-Next as a preview of the upcoming Qwen4 architecture for developers to experiment with and evaluate. It’s..."
         },
         "fr": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+          "title": "Experiment with Qwen3.8-Flash-Next on NVIDIA GB300 NVL72 for Agentic Coding",
+          "summary": "Alibaba released the model weights for Qwen3.8-Flash-Next as a preview of the upcoming Qwen4 architecture for developers to experiment with and evaluate. It’s..."
         }
       }
     },
@@ -4126,21 +4126,21 @@
       }
     },
     {
-      "slug": "20260921-higgsfield-ai-ships-new-video-features-in-a-day-with-gpt-6-astra-d37f5b2c",
+      "slug": "20260921-advisory-group-on-mathematics-and-artificial-intelligence-a7ca5984",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "href": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
       "publishedAt": "2026-09-21T12:00:00.000Z",
       "discoveredAt": "2026-09-21T21:57:13.092Z",
       "locales": {
         "en": {
-          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
+          "title": "Advisory Group on Mathematics and Artificial Intelligence",
+          "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results."
         },
         "fr": {
-          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
+          "title": "Advisory Group on Mathematics and Artificial Intelligence",
+          "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results."
         }
       }
     },
@@ -4221,21 +4221,21 @@
       }
     },
     {
-      "slug": "20260916-translating-cuda-tile-operations-from-python-to-rust-using-agent-833138d5",
+      "slug": "20260916-serve-qwen38-24t-a95b-a-24t-parameter-model-with-configurable-re-06e533fd",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
-      "publishedAt": "2026-09-16T16:29:07.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "href": "https://developer.nvidia.com/blog/serve-qwen3-8-2-4t-a95b-a-2-4t-parameter-model-with-configurable-reasoning-on-nvidia-gb300-nvl72/",
+      "publishedAt": "2026-09-16T21:39:25.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
       "locales": {
         "en": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
+          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
         },
         "fr": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+          "title": "Serve Qwen3.8-2.4T-A95B, a 2.4T-Parameter Model, with Configurable Reasoning on NVIDIA GB300 NVL72",
+          "summary": "Alibaba released the open weights for Qwen3.8-2.4T-A95B (Qwen3.8-Max), its largest open-weight model, bringing near-frontier capabilities to the open..."
         }
       }
     },
@@ -4297,21 +4297,21 @@
       }
     },
     {
-      "slug": "20260921-building-standards-for-the-next-phase-of-ai-2c9792fb",
+      "slug": "20260921-higgsfield-ai-ships-new-video-features-in-a-day-with-gpt-6-astra-d37f5b2c",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/building-standards-next-phase-ai",
-      "publishedAt": "2026-09-21T10:00:00.000Z",
+      "href": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "publishedAt": "2026-09-21T12:00:00.000Z",
       "discoveredAt": "2026-09-21T21:57:13.092Z",
       "locales": {
         "en": {
-          "title": "Building standards for the next phase of AI",
-          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety."
+          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
         },
         "fr": {
-          "title": "Building standards for the next phase of AI",
-          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety."
+          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
         }
       }
     },
@@ -4392,21 +4392,21 @@
       }
     },
     {
-      "slug": "20260915-turn-your-latest-observations-into-timely-weather-decisions-with-e61094f2",
-      "topic": "Computer Systems",
+      "slug": "20260916-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-64-82b93583",
+      "topic": "AI Performance",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/turn-your-latest-observations-into-timely-weather-decisions-with-nvidia-earth-2/",
-      "publishedAt": "2026-09-15T21:44:59.000Z",
-      "discoveredAt": "2026-09-21T21:57:13.092Z",
+      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
+      "publishedAt": "2026-09-16T20:37:15.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
       "locales": {
         "en": {
-          "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
-          "summary": "Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect..."
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
         },
         "fr": {
-          "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
-          "summary": "Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect..."
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
         }
       }
     },
@@ -4468,21 +4468,21 @@
       }
     },
     {
-      "slug": "20260921-expanding-openai-academy-with-new-learning-paths-530db518",
+      "slug": "20260921-building-standards-for-the-next-phase-of-ai-2c9792fb",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-      "publishedAt": "2026-09-21T07:00:00.000Z",
+      "href": "https://openai.com/index/building-standards-next-phase-ai",
+      "publishedAt": "2026-09-21T10:00:00.000Z",
       "discoveredAt": "2026-09-21T21:57:13.092Z",
       "locales": {
         "en": {
-          "title": "Expanding OpenAI Academy with new learning paths",
-          "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills."
+          "title": "Building standards for the next phase of AI",
+          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety."
         },
         "fr": {
-          "title": "Expanding OpenAI Academy with new learning paths",
-          "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills."
+          "title": "Building standards for the next phase of AI",
+          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety."
         }
       }
     },
@@ -4525,21 +4525,21 @@
       }
     },
     {
-      "slug": "20260915-how-nvidia-groq-3-lpx-deterministic-execution-drives-power-effic-ce9893f8",
+      "slug": "20260916-translating-cuda-tile-operations-from-python-to-rust-using-agent-833138d5",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
-      "publishedAt": "2026-09-15T17:06:22.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
+      "publishedAt": "2026-09-16T16:29:07.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
       "locales": {
         "en": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
         },
         "fr": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
         }
       }
     },
