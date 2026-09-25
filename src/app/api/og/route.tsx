@@ -1,5 +1,7 @@
 import { ImageResponse } from "next/og";
 import { sanitizeTextInput } from "@/lib/input";
+import { siteConfig } from "@/config/site";
+import { imageFonts } from "@/assets/fonts";
 
 /**
  * Social link previews, rendered as PNG.
@@ -55,7 +57,7 @@ export async function GET(request: Request) {
           justifyContent: "space-between",
           background: "#ffffff",
           padding: "72px 80px",
-          fontFamily: "sans-serif"
+          fontFamily: "Public Sans"
         }}
       >
         {/* Provenance rail — the same idea the site leads with. */}
@@ -67,7 +69,8 @@ export async function GET(request: Request) {
               letterSpacing: "0.14em",
               textTransform: "uppercase",
               color: "#1b4d3e",
-              fontWeight: 600
+              fontWeight: 700,
+              fontFamily: "Public Sans"
             }}
           >
             {kicker || "AI + Cybersecurity"}
@@ -78,10 +81,13 @@ export async function GET(request: Request) {
           style={{
             display: "flex",
             fontSize: `${titleSize}px`,
-            lineHeight: 1.14,
-            letterSpacing: "-0.02em",
+            lineHeight: 1.18,
+            letterSpacing: "-0.01em",
             color: "#0f1519",
             fontWeight: 700,
+            // The serif the site sets its headings in. A shared link should look
+            // like it came from the page it points at.
+            fontFamily: "Newsreader",
             maxWidth: "980px"
           }}
         >
@@ -97,8 +103,12 @@ export async function GET(request: Request) {
             paddingTop: "26px"
           }}
         >
-          <div style={{ fontSize: "30px", color: "#0f1519", fontWeight: 700 }}>
-            AI Student Hub
+          {/* The site calls itself "AI and Cybersecurity News" everywhere except
+              here, where the social card said "AI Student Hub" — a name that
+              appears nowhere on the site a reader lands on. Read it from config
+              so the two cannot drift again. */}
+          <div style={{ fontSize: "30px", color: "#0f1519", fontWeight: 700, fontFamily: "Newsreader" }}>
+            {siteConfig.brandName}
           </div>
           <div style={{ fontSize: "22px", color: "#6b7883", letterSpacing: "0.04em" }}>
             First-party sources only
@@ -109,6 +119,7 @@ export async function GET(request: Request) {
     {
       width: 1200,
       height: 630,
+      fonts: imageFonts,
       headers: { "Cache-Control": IMAGE_CACHE_CONTROL }
     }
   );

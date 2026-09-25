@@ -4,6 +4,15 @@ const isDevelopment = process.env.NODE_ENV !== "production";
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // The cover and OG routes read these TTFs from disk at request time so the
+  // generated images use the site's own Newsreader and Public Sans rather than
+  // whatever "sans-serif" resolves to on the server. Nothing imports them, so
+  // file tracing would not otherwise ship them and the routes would fall back
+  // to a system font in production while looking correct locally.
+  outputFileTracingIncludes: {
+    "/api/cover/[topic]/[locale]/[slug]": ["./src/assets/fonts/**"],
+    "/api/og": ["./src/assets/fonts/**"]
+  },
   images: {
     remotePatterns: [
       {

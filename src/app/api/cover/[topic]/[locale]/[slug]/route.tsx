@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { sanitizeTextInput } from "@/lib/input";
 import { posts } from "@/content/posts";
 import { isLocale } from "@/i18n/config";
+import { imageFonts } from "@/assets/fonts";
 
 /**
  * Article cover images, generated per article.
@@ -149,7 +150,7 @@ export async function GET(
           alignItems: "center",
           justifyContent: "center",
           background: palette.ground,
-          fontFamily: "sans-serif"
+          fontFamily: "Public Sans"
         }}
       >
         {/* 620px, centred: the widest column that survives a centre crop down
@@ -175,6 +176,7 @@ export async function GET(
                 textTransform: "uppercase",
                 color: palette.a,
                 fontWeight: 700,
+                fontFamily: "Public Sans",
                 display: "flex"
               }}
             >
@@ -185,10 +187,13 @@ export async function GET(
           <div
             style={{
               fontSize: `${titleSize(title)}px`,
-              lineHeight: 1.18,
+              lineHeight: 1.22,
               color: palette.ink,
               fontWeight: 700,
-              letterSpacing: "-0.02em",
+              // Newsreader: the same serif the site sets its headings in, so a
+              // cover beside an article looks like it belongs to it.
+              fontFamily: "Newsreader",
+              letterSpacing: "-0.01em",
               display: "flex",
               textAlign: "center"
             }}
@@ -205,6 +210,7 @@ export async function GET(
     {
       width: 1200,
       height: 675,
+      fonts: imageFonts,
       headers: { "Cache-Control": IMAGE_CACHE_CONTROL }
     }
   );
