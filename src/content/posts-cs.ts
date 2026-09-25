@@ -449,6 +449,8 @@ export const csExpansionPosts: BlogPost[] = [
         { label: { en: "Open comparisons", fr: "Ouvrir comparatifs" }, href: "/compare", note: "High intent" }
       ]
     },
+    // All three from RFC 9110, quoted or defined there: 202 Accepted being intentionally noncommittal (P3), the rule that a client should not auto-retry a non-idempotent method (P4), and 503 with Retry-After (P7). Note RFC 9110 does not define 429 -- that is RFC 6585 -- so the 429 half of P4 is not covered by this marker. Refs 1, 2 and 3 are a factor list, a table of contents and an introduction; ref 5 is behind a Cloudflare interstitial. None is cited.
+    paragraphCitations: { 3: [4], 4: [4], 7: [4] },
     references: [
       {
         source: "12-Factor",
@@ -530,6 +532,8 @@ export const csExpansionPosts: BlogPost[] = [
         { label: { en: "Compare platforms", fr: "Comparer plateformes" }, href: "/compare", note: "Cloud options" }
       ]
     },
+    // P3: FastAPI's root page does show Pydantic request models and the generated /docs, and MDN defines 422 Unprocessable Content. P6: MDN states outright that a server may send 404 instead of 403 to hide a resource's existence, and defines 503 against a generic 500. The lifespan, threadpool and response_model claims live on FastAPI subpages, not the root URL cited here, so they stay uncited.
+    paragraphCitations: { 3: [1, 3], 6: [3] },
     references: [
       {
         source: "FastAPI",
@@ -684,6 +688,8 @@ export const csExpansionPosts: BlogPost[] = [
         { label: { en: "Compare secure hosts", fr: "Comparer hébergeurs" }, href: "/compare", note: "Security tradeoffs" }
       ]
     },
+    // P2 and P3 quote OWASP API1:2023 verbatim, including its closing instruction to write authorization tests. P4 pairs nginx's client_max_body_size 1m default and its 413 with body-parser's 100kb default. P5 cites the OWASP LLM01:2025 entry it quotes, which was missing from this list entirely. P8's npm audit-level quote is real but this article's npm reference is cited by it; ref 2 (ASVS landing page) carries no requirement text and is cited by nothing.
+    paragraphCitations: { 2: [1], 3: [1], 4: [3, 4], 5: [6] },
     references: [
       {
         source: "OWASP",
@@ -709,6 +715,14 @@ export const csExpansionPosts: BlogPost[] = [
         source: "npm",
         label: { en: "npm audit and --audit-level", fr: "npm audit et --audit-level" },
         href: "https://docs.npmjs.com/cli/v11/commands/npm-audit"
+      },
+      {
+        // The prompt-injection paragraph names this entry and quotes it
+        // directly, and it was not in this article's reference list at all -- a
+        // verbatim quotation with no source beside it.
+        source: "OWASP",
+        label: { en: "OWASP LLM01:2025 Prompt Injection", fr: "OWASP LLM01:2025 Injection de prompt" },
+        href: "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
       }
     ],
     locales: {
@@ -754,6 +768,8 @@ export const csExpansionPosts: BlogPost[] = [
         { label: { en: "Compare platforms", fr: "Comparer plateformes" }, href: "/compare", note: "Decision" }
       ]
     },
+    // P2: the PostgreSQL manual both states that ANALYZE actually executes the statement and gives the BEGIN/ROLLBACK workaround the paragraph recommends. P4: pgvector documents the cosine operator, the vector_cosine_ops index, and both dimension ceilings -- 2,000 indexed, 16,000 unindexed. P6: SQLite's UPSERT page carries ON CONFLICT DO UPDATE, the excluded. qualifier, and its own sentence that UPSERT follows PostgreSQL's syntax.
+    paragraphCitations: { 2: [1], 4: [2], 6: [3] },
     references: [
       {
         source: "PostgreSQL",
@@ -814,6 +830,8 @@ export const csExpansionPosts: BlogPost[] = [
         { label: { en: "Cloud comparisons", fr: "Comparatifs cloud" }, href: "/compare", note: "Budget" }
       ]
     },
+    // Four from the workflow syntax reference, which defines each key the paragraphs name: permissions and contents: read (P0), concurrency group with cancel-in-progress (P3), the documented 360-minute job default (P4), and fail-fast defaulting to true (P7). P6 quotes the billing page on Actions being free for public repositories, with the GitHub Free row of 2,000 minutes and 500 MB. P2's action versions stay uncited on purpose: they are correct -- checkout v7.0.1, setup-node v7.0.0, setup-python v7.0.0, cache v6.1.0 per each action's releases API -- but a workflow syntax page is not where a version is verified, so no marker there would mean anything.
+    paragraphCitations: { 0: [1], 3: [1], 4: [1], 6: [2], 7: [1] },
     references: [
       {
         source: "GitHub",
