@@ -872,6 +872,8 @@ export const csExpansionPosts: BlogPost[] = [
         { label: { en: "Compare infra", fr: "Comparer infra" }, href: "/compare", note: "Cloud" }
       ]
     },
+    // Verified against each page's visible text. P0 names the statistics module and cites it for the method (quantiles n=100); the numbers are the author's dataset, reproduced independently. P1 quotes the histogram_quantile example verbatim from the Prometheus function docs. P3 matches the traceparent ABNF in the W3C spec. Ref 4 (OpenTelemetry docs root) supports no claim and is cited by nothing.
+    paragraphCitations: { 0: [3], 1: [1], 3: [2] },
     references: [
       {
         source: "Prometheus",
@@ -938,6 +940,8 @@ export const csExpansionPosts: BlogPost[] = [
         { label: { en: "Open comparisons", fr: "Ouvrir comparatifs" }, href: "/compare", note: "Infrastructure" }
       ]
     },
+    // P0 and P7: every --write-out variable named is documented on the curl manpage. P3: the TCP round-trip clause only, from MDN plus RFC 9293's three-way handshake. P4: three verbatim quotes from the requests quickstart. P2's Session connection-reuse claim stays uncited -- the quickstart page never mentions sessions.
+    paragraphCitations: { 0: [1], 3: [3, 4], 4: [2], 7: [1] },
     references: [
       {
         source: "curl",
@@ -1003,6 +1007,8 @@ export const csExpansionPosts: BlogPost[] = [
         { label: { en: "Compare hosts", fr: "Comparer hébergeurs" }, href: "/compare", note: "Deployment" }
       ]
     },
+    // P1: docker stop's SIGTERM default and 10s grace, plus systemd TimeoutStopSec. P2: Python signal docs, which state SIGINT becomes KeyboardInterrupt while SIGTERM gets no installed handler. P4: cgroup v2 memory.max, memory.events and oom_kill, all verbatim. P6: systemd Restart= values. P5 stays uncited -- --memory is on docker run, not the docker stop page cited here.
+    paragraphCitations: { 1: [1, 3], 2: [4], 4: [2], 6: [3] },
     references: [
       {
         source: "Docker",
@@ -1074,6 +1080,8 @@ export const csExpansionPosts: BlogPost[] = [
         { label: { en: "Student guide", fr: "Guide étudiant" }, href: "/product/ai-career-guide", note: "Workflow" }
       ]
     },
+    // P2: sklearn's own leakage rationale for make_pipeline, plus Rules of ML #32 on reusing code between training and serving. P4 and P7: Rules of ML #5, on gating data into the algorithm and testing infrastructure independently of the learning. Ref 2 is a section index with no prose and is cited by nothing.
+    paragraphCitations: { 2: [1, 3], 4: [3], 7: [3] },
     references: [
       {
         source: "scikit-learn",
@@ -1134,6 +1142,8 @@ export const csExpansionPosts: BlogPost[] = [
         { label: { en: "Compare deployment options", fr: "Comparer options déploiement" }, href: "/compare", note: "Cloud" }
       ]
     },
+    // All four from OWASP LLM01:2025, quoted verbatim: no fool-proof prevention (P0), segregate untrusted content (P5), request source citations and assess groundedness (P6), least privilege and human-in-the-loop (P7). The Unicode normalisation paragraph stays uncited: the page covers base64 and emoji evasion, which is a different claim.
+    paragraphCitations: { 0: [1], 5: [1], 6: [1], 7: [1] },
     references: [
       {
         source: "OWASP",
