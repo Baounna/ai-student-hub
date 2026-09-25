@@ -164,7 +164,16 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
   };
 
   return (
-    <article className="page-shell max-w-6xl py-10 md:py-12">
+    // pb-* reserves room for the two fixed CTAs mounted at the end of this
+    // component. They sit at the bottom of the viewport, so mid-page content can
+    // be scrolled out from under them -- but content at the very END of the page
+    // cannot, and a browser pass measured the desktop bar covering 436x146px of
+    // a code block and hiding a whole news item on mobile. Six lines of Python
+    // behind an overlay are simply gone: unlike prose, you cannot infer them
+    // from the lines around them. The padding is per-breakpoint because the
+    // mobile bar (z-30, md:hidden) and the desktop one (z-40, hidden md:block)
+    // are different heights.
+    <article className="page-shell max-w-6xl py-10 pb-36 md:py-12 md:pb-32">
       <ReadingProgress />
       <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(articleSchema) }} />
       <Breadcrumbs
