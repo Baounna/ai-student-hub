@@ -1378,6 +1378,8 @@ const basePosts: BlogPost[] = [
         }
       ]
     },
+    // P3: DistilBERT's abstract gives 40 percent smaller, 60 percent faster, 97 percent retained, and ONNX Runtime's own FAQ says the gain depends on model and hardware and can be worse on old devices. P4: Docker's definition of a container as code plus dependencies that runs the same elsewhere. P5: the Google Cloud budgets caution, quoted verbatim in the paragraph. Refs 1 and 2 describe their pages accurately but the article makes no claim either page supports, so nothing cites them.
+    paragraphCitations: { 3: [4, 5], 4: [3], 5: [6] },
     references: [
       {
         source: "Google Cloud",
@@ -1480,6 +1482,8 @@ const basePosts: BlogPost[] = [
         { label: { en: "Student guide product", fr: "Guide étudiant" }, href: "/product/ai-career-guide", note: "$9-$19 offer" }
       ]
     },
+    // One marker is the honest ceiling for an advice piece. P6's outcomes-over-activity claim is supported: the Harvard guide lists 'Not demonstrating results' among its top five resume mistakes and requires language that is 'fact-based (quantify and qualify)'. It says nothing about de-emphasising technologies, so the marker covers the first half of the sentence only. Refs 1 and 3 (dol.gov, pmi.org) both return 403 and cannot be verified, so nothing cites them.
+    paragraphCitations: { 6: [2] },
     references: [
       {
         source: "U.S. Department of Labor",
@@ -1562,6 +1566,8 @@ const basePosts: BlogPost[] = [
         { label: { en: "Open internships", fr: "Stages ouverts" }, href: "/stages", note: "Weekly list" }
       ]
     },
+    // P1: IBM's nested-concepts framing, plus Google's glossary defining a deep neural network as one with more than one hidden layer. P2: IBM on labelled data for supervised, feature extraction for unsupervised, and trial-and-error with reward functions for reinforcement. Ref 2 is a module index and ref 3 is a book landing page; neither carries an assertion this article makes, so neither is cited.
+    paragraphCitations: { 1: [1, 4], 2: [1] },
     references: [
       {
         source: "IBM",
@@ -1581,7 +1587,7 @@ const basePosts: BlogPost[] = [
       {
         source: "Google Developers",
         label: { en: "Neural network glossary entry", fr: "Définition des réseaux de neurones" },
-        href: "https://developers.google.com/machine-learning/glossary#neural_network"
+        href: "https://developers.google.com/machine-learning/glossary#neural-network"
       }
     ],
     locales: {
@@ -1741,6 +1747,8 @@ const basePosts: BlogPost[] = [
         { label: { en: "Open deployment resources", fr: "Ressources de déploiement" }, href: "/resources", note: "Tool stack" }
       ]
     },
+    // P1's attention and token-prediction sentence only: the Transformer paper's abstract for the architecture, and Google's LLM module for self-attention weighing importance across the input. The same paragraph's context-window clause is NOT covered -- 'context window' appears nowhere on either page. Refs 4 and 5 are book companion pages with no retrieval or agent content, so the RAG and agent paragraphs stay uncited.
+    paragraphCitations: { 1: [1, 3] },
     references: [
       {
         source: "Google Research",
