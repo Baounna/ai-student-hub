@@ -1,24 +1,44 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-24T21:29:30.940Z",
+  "updatedAt": "2026-09-25T11:47:51.359Z",
   "items": [
     {
-      "slug": "20260924-vercel-drives-for-vercel-sandbox-are-now-in-public-beta-vercel-s-88dfdf44",
+      "slug": "20260925-vercel-gpt-6-sol-and-luna-now-available-on-ai-gateway-gpt-6-sol--c332c2ae",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/drives-for-vercel-sandbox-are-now-in-public-beta",
-      "publishedAt": "2026-09-24T21:29:30.940Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
+      "href": "https://vercel.com/changelog/gpt-6-sol-and-luna-now-available-on-ai-gateway",
+      "publishedAt": "2026-09-25T11:47:51.359Z",
+      "discoveredAt": "2026-09-25T11:47:51.359Z",
       "locales": {
         "en": {
-          "title": "Drives for Vercel Sandbox are now in public beta Vercel Sandbox Drives, persistent storage you mount into a sandbox, is now in public beta with drives up to 16 TiB and usage-based pricing. +2 Tom Lienard, Joe Haddad, and 2 others",
-          "summary": "\"/> Zachary Chen, Kevin Dawkins, and 1 other"
+          "title": "GPT-6 Sol and Luna now available on AI Gateway GPT-6 Sol and GPT-6 Luna from OpenAI are now available on Vercel AI Gateway for coding, professional workflows, computer use, and agentic applications. Zachary Chen, Jerilyn Zheng",
+          "summary": "22 September 22 Sep"
         },
         "fr": {
-          "title": "Drives for Vercel Sandbox are now in public beta Vercel Sandbox Drives, persistent storage you mount into a sandbox, is now in public beta with drives up to 16 TiB and usage-based pricing. +2 Tom Lienard, Joe Haddad, and 2 others",
-          "summary": "\"/> Zachary Chen, Kevin Dawkins, and 1 other"
+          "title": "GPT-6 Sol and Luna now available on AI Gateway GPT-6 Sol and GPT-6 Luna from OpenAI are now available on Vercel AI Gateway for coding, professional workflows, computer use, and agentic applications. Zachary Chen, Jerilyn Zheng",
+          "summary": "22 September 22 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260925-github-codeql-2271-adds-c-and-c-query-and-kotlin-2420-support-21fb0730",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-25-codeql-2-27-1-adds-c-and-c-query-and-kotlin-2-4-20-support",
+      "publishedAt": "2026-09-25T09:55:23.000Z",
+      "discoveredAt": "2026-09-25T11:47:51.359Z",
+      "locales": {
+        "en": {
+          "title": "CodeQL 2.27.1 adds C and C++ query and Kotlin 2.4.20 support",
+          "summary": "CodeQL 2.27.1 adds new queries for C/C++ and C#, support for Kotlin 2.4.20, and query-accuracy improvements. CodeQL is the static analysis engine behind GitHub code scanning, which helps you find… The post CodeQL 2.27.1…"
+        },
+        "fr": {
+          "title": "CodeQL 2.27.1 adds C and C++ query and Kotlin 2.4.20 support",
+          "summary": "CodeQL 2.27.1 adds new queries for C/C++ and C#, support for Kotlin 2.4.20, and query-accuracy improvements. CodeQL is the static analysis engine behind GitHub code scanning, which helps you find… The post CodeQL 2.27.1…"
         }
       }
     },
@@ -39,26 +59,6 @@
         "fr": {
           "title": "[Public Alpha] Supabase Pipelines",
           "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
-        }
-      }
-    },
-    {
-      "slug": "20260924-github-require-proof-of-presence-for-high-impact-actions-453a5329",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
-      "publishedAt": "2026-09-24T20:28:33.000Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
-      "locales": {
-        "en": {
-          "title": "Require proof of presence for high-impact actions",
-          "summary": "You can now require an interactive re-authentication or a multi-factor challenge before members take high-impact actions on GitHub Enterprise Cloud accounts. Proof of presence is an expansion of GitHub’s sudo… The post…"
-        },
-        "fr": {
-          "title": "Require proof of presence for high-impact actions",
-          "summary": "You can now require an interactive re-authentication or a multi-factor challenge before members take high-impact actions on GitHub Enterprise Cloud accounts. Proof of presence is an expansion of GitHub’s sudo… The post…"
         }
       }
     },
@@ -383,22 +383,42 @@
       }
     },
     {
-      "slug": "20260924-vercel-claude-opus-55-now-available-on-ai-gateway-claude-opus-55-7d11b8cd",
+      "slug": "20260924-vercel-drives-for-vercel-sandbox-are-now-in-public-beta-vercel-s-88dfdf44",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/claude-opus-5-5-now-available-on-ai-gateway",
+      "href": "https://vercel.com/changelog/drives-for-vercel-sandbox-are-now-in-public-beta",
       "publishedAt": "2026-09-24T21:29:30.940Z",
       "discoveredAt": "2026-09-24T21:29:30.940Z",
       "locales": {
         "en": {
-          "title": "Claude Opus 5.5 now available on AI Gateway Claude Opus 5.5 from Anthropic is now available on Vercel AI Gateway with adaptive thinking, fast mode, regional inference, a 1M context window, and up to max effort. Rohan Taneja, Zachary Chen, and 1 other",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Drives for Vercel Sandbox are now in public beta Vercel Sandbox Drives, persistent storage you mount into a sandbox, is now in public beta with drives up to 16 TiB and usage-based pricing. +2 Tom Lienard, Joe Haddad, and 2 others",
+          "summary": "\"/> Zachary Chen, Kevin Dawkins, and 1 other"
         },
         "fr": {
-          "title": "Claude Opus 5.5 now available on AI Gateway Claude Opus 5.5 from Anthropic is now available on Vercel AI Gateway with adaptive thinking, fast mode, regional inference, a 1M context window, and up to max effort. Rohan Taneja, Zachary Chen, and 1 other",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Drives for Vercel Sandbox are now in public beta Vercel Sandbox Drives, persistent storage you mount into a sandbox, is now in public beta with drives up to 16 TiB and usage-based pricing. +2 Tom Lienard, Joe Haddad, and 2 others",
+          "summary": "\"/> Zachary Chen, Kevin Dawkins, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20260925-github-copilot-default-enablement-of-copilot-features-for-copilo-648837e3",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
+      "publishedAt": "2026-09-25T03:13:23.000Z",
+      "discoveredAt": "2026-09-25T11:47:51.359Z",
+      "locales": {
+        "en": {
+          "title": "Default Enablement of Copilot Features for Copilot Business and Enterprise",
+          "summary": "We’re introducing a new global default policy for generally available GitHub Copilot features and supported client capabilities in enterprise and organization Copilot settings. For the next 28 days, you can… The post De…"
+        },
+        "fr": {
+          "title": "Default Enablement of Copilot Features for Copilot Business and Enterprise",
+          "summary": "We’re introducing a new global default policy for generally available GitHub Copilot features and supported client capabilities in enterprise and organization Copilot settings. For the next 28 days, you can… The post De…"
         }
       }
     },
@@ -419,26 +439,6 @@
         "fr": {
           "title": "Realtime schema is now fully locked down against modifications",
           "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
-        }
-      }
-    },
-    {
-      "slug": "20260923-github-copilot-more-ways-to-request-and-configure-copilot-code-r-095547e3",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews",
-      "publishedAt": "2026-09-23T21:25:58.000Z",
-      "discoveredAt": "2026-09-24T11:41:44.645Z",
-      "locales": {
-        "en": {
-          "title": "More ways to request and configure Copilot code reviews",
-          "summary": "GitHub Copilot code review now offers additional personal configurations to an expanded set of Copilot plans and an enterprise-level default setting. These improvements are now generally available: A dedicated personal……"
-        },
-        "fr": {
-          "title": "More ways to request and configure Copilot code reviews",
-          "summary": "GitHub Copilot code review now offers additional personal configurations to an expanded set of Copilot plans and an enterprise-level default setting. These improvements are now generally available: A dedicated personal……"
         }
       }
     },
@@ -763,22 +763,42 @@
       }
     },
     {
-      "slug": "20260924-vercel-vercel-connect-now-supports-tanstack-ai-authenticate-tans-87a5f976",
+      "slug": "20260924-vercel-claude-opus-55-now-available-on-ai-gateway-claude-opus-55-7d11b8cd",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-connect-tanstack-ai",
-      "publishedAt": "2026-09-24T11:41:44.645Z",
-      "discoveredAt": "2026-09-24T11:41:44.645Z",
+      "href": "https://vercel.com/changelog/claude-opus-5-5-now-available-on-ai-gateway",
+      "publishedAt": "2026-09-24T21:29:30.940Z",
+      "discoveredAt": "2026-09-24T21:29:30.940Z",
       "locales": {
         "en": {
-          "title": "Vercel Connect now supports TanStack AI Authenticate TanStack AI MCP clients with Vercel Connect. Tokens are issued at runtime and consent is handled at the route boundary, so nothing is stored in your environment. Ben Sabic Content Engineer",
-          "summary": "24 September 24 Sep"
+          "title": "Claude Opus 5.5 now available on AI Gateway Claude Opus 5.5 from Anthropic is now available on Vercel AI Gateway with adaptive thinking, fast mode, regional inference, a 1M context window, and up to max effort. Rohan Taneja, Zachary Chen, and 1 other",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         },
         "fr": {
-          "title": "Vercel Connect now supports TanStack AI Authenticate TanStack AI MCP clients with Vercel Connect. Tokens are issued at runtime and consent is handled at the route boundary, so nothing is stored in your environment. Ben Sabic Content Engineer",
-          "summary": "24 September 24 Sep"
+          "title": "Claude Opus 5.5 now available on AI Gateway Claude Opus 5.5 from Anthropic is now available on Vercel AI Gateway with adaptive thinking, fast mode, regional inference, a 1M context window, and up to max effort. Rohan Taneja, Zachary Chen, and 1 other",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+        }
+      }
+    },
+    {
+      "slug": "20260924-github-require-proof-of-presence-for-high-impact-actions-453a5329",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
+      "publishedAt": "2026-09-24T20:28:33.000Z",
+      "discoveredAt": "2026-09-24T21:29:30.940Z",
+      "locales": {
+        "en": {
+          "title": "Require proof of presence for high-impact actions",
+          "summary": "You can now require an interactive re-authentication or a multi-factor challenge before members take high-impact actions on GitHub Enterprise Cloud accounts. Proof of presence is an expansion of GitHub’s sudo… The post…"
+        },
+        "fr": {
+          "title": "Require proof of presence for high-impact actions",
+          "summary": "You can now require an interactive re-authentication or a multi-factor challenge before members take high-impact actions on GitHub Enterprise Cloud accounts. Proof of presence is an expansion of GitHub’s sudo… The post…"
         }
       }
     },
@@ -799,26 +819,6 @@
         "fr": {
           "title": "Fixed stale database credentials left behind after a restore",
           "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
-        }
-      }
-    },
-    {
-      "slug": "20260923-github-node-20-is-no-longer-available-in-github-actions-47d21100",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions",
-      "publishedAt": "2026-09-23T20:46:07.000Z",
-      "discoveredAt": "2026-09-24T11:41:44.645Z",
-      "locales": {
-        "en": {
-          "title": "Node 20 is no longer available in GitHub Actions",
-          "summary": "This is the final notification that Node 20 is no longer available on GitHub Actions runners. Runners now use Node 24 for JavaScript actions. The temporary ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION opt-out is no… The post…"
-        },
-        "fr": {
-          "title": "Node 20 is no longer available in GitHub Actions",
-          "summary": "This is the final notification that Node 20 is no longer available on GitHub Actions runners. Runners now use Node 24 for JavaScript actions. The temporary ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION opt-out is no… The post…"
         }
       }
     },
@@ -1143,22 +1143,42 @@
       }
     },
     {
-      "slug": "20260924-vercel-gemini-38-text-to-speech-models-now-available-on-ai-gatew-8326b405",
+      "slug": "20260924-vercel-vercel-connect-now-supports-tanstack-ai-authenticate-tans-87a5f976",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/gemini-3-8-text-to-speech-models-now-available-on-ai-gateway",
+      "href": "https://vercel.com/changelog/vercel-connect-tanstack-ai",
       "publishedAt": "2026-09-24T11:41:44.645Z",
       "discoveredAt": "2026-09-24T11:41:44.645Z",
       "locales": {
         "en": {
-          "title": "Gemini 3.8 text-to-speech models now available on AI Gateway Generate speech in more than 100 languages with Google's Gemini 3.8 Flash-Lite TTS and Flash TTS on Vercel AI Gateway. Zachary Chen, Kevin Dawkins, and 1 other",
-          "summary": "Agustin Falco Software Engineer"
+          "title": "Vercel Connect now supports TanStack AI Authenticate TanStack AI MCP clients with Vercel Connect. Tokens are issued at runtime and consent is handled at the route boundary, so nothing is stored in your environment. Ben Sabic Content Engineer",
+          "summary": "24 September 24 Sep"
         },
         "fr": {
-          "title": "Gemini 3.8 text-to-speech models now available on AI Gateway Generate speech in more than 100 languages with Google's Gemini 3.8 Flash-Lite TTS and Flash TTS on Vercel AI Gateway. Zachary Chen, Kevin Dawkins, and 1 other",
-          "summary": "Agustin Falco Software Engineer"
+          "title": "Vercel Connect now supports TanStack AI Authenticate TanStack AI MCP clients with Vercel Connect. Tokens are issued at runtime and consent is handled at the route boundary, so nothing is stored in your environment. Ben Sabic Content Engineer",
+          "summary": "24 September 24 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260923-github-copilot-more-ways-to-request-and-configure-copilot-code-r-095547e3",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews",
+      "publishedAt": "2026-09-23T21:25:58.000Z",
+      "discoveredAt": "2026-09-24T11:41:44.645Z",
+      "locales": {
+        "en": {
+          "title": "More ways to request and configure Copilot code reviews",
+          "summary": "GitHub Copilot code review now offers additional personal configurations to an expanded set of Copilot plans and an enterprise-level default setting. These improvements are now generally available: A dedicated personal……"
+        },
+        "fr": {
+          "title": "More ways to request and configure Copilot code reviews",
+          "summary": "GitHub Copilot code review now offers additional personal configurations to an expanded set of Copilot plans and an enterprise-level default setting. These improvements are now generally available: A dedicated personal……"
         }
       }
     },
@@ -1179,26 +1199,6 @@
         "fr": {
           "title": "Read replicas moved to Project Settings → Infrastructure",
           "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
-        }
-      }
-    },
-    {
-      "slug": "20260923-github-copilot-local-sandboxing-in-the-github-copilot-app-59f94707",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app",
-      "publishedAt": "2026-09-23T15:00:57.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
-      "locales": {
-        "en": {
-          "title": "Local sandboxing in the GitHub Copilot app",
-          "summary": "Local sandboxing helps reduce the potential impact of unintended commands by limiting access to files, network resources, and credentials on your machine. In the GitHub Copilot app, you configure it… The post Local sand…"
-        },
-        "fr": {
-          "title": "Local sandboxing in the GitHub Copilot app",
-          "summary": "Local sandboxing helps reduce the potential impact of unintended commands by limiting access to files, network resources, and credentials on your machine. In the GitHub Copilot app, you configure it… The post Local sand…"
         }
       }
     },
@@ -1523,22 +1523,42 @@
       }
     },
     {
-      "slug": "20260924-vercel-vercel-connect-now-supports-microsoft-teams-agents-can-no-844d3484",
+      "slug": "20260924-vercel-gemini-38-text-to-speech-models-now-available-on-ai-gatew-8326b405",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-connect-microsoft-teams",
+      "href": "https://vercel.com/changelog/gemini-3-8-text-to-speech-models-now-available-on-ai-gateway",
       "publishedAt": "2026-09-24T11:41:44.645Z",
       "discoveredAt": "2026-09-24T11:41:44.645Z",
       "locales": {
         "en": {
-          "title": "Vercel Connect now supports Microsoft Teams Agents can now receive and reply to Microsoft Teams messages through Vercel Connect, with tokens managed for you across the Connect SDK, eve, and Chat SDK. Bhrigu Srivastava, Owen Kephart, and 1 other",
-          "summary": "21 September 21 Sep"
+          "title": "Gemini 3.8 text-to-speech models now available on AI Gateway Generate speech in more than 100 languages with Google's Gemini 3.8 Flash-Lite TTS and Flash TTS on Vercel AI Gateway. Zachary Chen, Kevin Dawkins, and 1 other",
+          "summary": "Agustin Falco Software Engineer"
         },
         "fr": {
-          "title": "Vercel Connect now supports Microsoft Teams Agents can now receive and reply to Microsoft Teams messages through Vercel Connect, with tokens managed for you across the Connect SDK, eve, and Chat SDK. Bhrigu Srivastava, Owen Kephart, and 1 other",
-          "summary": "21 September 21 Sep"
+          "title": "Gemini 3.8 text-to-speech models now available on AI Gateway Generate speech in more than 100 languages with Google's Gemini 3.8 Flash-Lite TTS and Flash TTS on Vercel AI Gateway. Zachary Chen, Kevin Dawkins, and 1 other",
+          "summary": "Agustin Falco Software Engineer"
+        }
+      }
+    },
+    {
+      "slug": "20260923-github-node-20-is-no-longer-available-in-github-actions-47d21100",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions",
+      "publishedAt": "2026-09-23T20:46:07.000Z",
+      "discoveredAt": "2026-09-24T11:41:44.645Z",
+      "locales": {
+        "en": {
+          "title": "Node 20 is no longer available in GitHub Actions",
+          "summary": "This is the final notification that Node 20 is no longer available on GitHub Actions runners. Runners now use Node 24 for JavaScript actions. The temporary ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION opt-out is no… The post…"
+        },
+        "fr": {
+          "title": "Node 20 is no longer available in GitHub Actions",
+          "summary": "This is the final notification that Node 20 is no longer available on GitHub Actions runners. Runners now use Node 24 for JavaScript actions. The temporary ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION opt-out is no… The post…"
         }
       }
     },
@@ -1559,26 +1579,6 @@
         "fr": {
           "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
           "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
-        }
-      }
-    },
-    {
-      "slug": "20260923-github-copilot-opentelemetry-in-the-github-copilot-app-0ad4c8ab",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app",
-      "publishedAt": "2026-09-23T02:14:54.000Z",
-      "discoveredAt": "2026-09-23T11:31:44.061Z",
-      "locales": {
-        "en": {
-          "title": "OpenTelemetry in the GitHub Copilot app",
-          "summary": "Understand how Copilot agents perform and interact with models and tools. The GitHub Copilot app now supports OpenTelemetry (OTel) configuration through enterprise-managed settings. OTel is an open source observability…"
-        },
-        "fr": {
-          "title": "OpenTelemetry in the GitHub Copilot app",
-          "summary": "Understand how Copilot agents perform and interact with models and tools. The GitHub Copilot app now supports OpenTelemetry (OTel) configuration through enterprise-managed settings. OTel is an open source observability…"
         }
       }
     },
@@ -1723,22 +1723,22 @@
       }
     },
     {
-      "slug": "20260915-google-ai-ai-for-societal-impact-18592959",
+      "slug": "20260915-google-ai-ai-for-everyone-in-every-language-a243976a",
       "toolName": "Google AI",
       "category": "AI Platform",
       "source": "Google AI Blog",
       "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+      "href": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
       "publishedAt": "2026-09-15T16:00:00.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "discoveredAt": "2026-09-25T11:47:51.359Z",
       "locales": {
         "en": {
-          "title": "AI for Societal Impact",
-          "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
+          "title": "AI for everyone in every language",
+          "summary": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed."
         },
         "fr": {
-          "title": "AI for Societal Impact",
-          "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
+          "title": "AI for everyone in every language",
+          "summary": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed."
         }
       }
     },
@@ -1903,22 +1903,42 @@
       }
     },
     {
-      "slug": "20260923-vercel-unlimited-vercel-blob-stores-on-every-plan-vercel-blob-no-dc1e5597",
+      "slug": "20260924-vercel-vercel-connect-now-supports-microsoft-teams-agents-can-no-844d3484",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/unlimited-vercel-blob-stores-on-every-plan",
-      "publishedAt": "2026-09-23T21:28:36.478Z",
+      "href": "https://vercel.com/changelog/vercel-connect-microsoft-teams",
+      "publishedAt": "2026-09-24T11:41:44.645Z",
+      "discoveredAt": "2026-09-24T11:41:44.645Z",
+      "locales": {
+        "en": {
+          "title": "Vercel Connect now supports Microsoft Teams Agents can now receive and reply to Microsoft Teams messages through Vercel Connect, with tokens managed for you across the Connect SDK, eve, and Chat SDK. Bhrigu Srivastava, Owen Kephart, and 1 other",
+          "summary": "21 September 21 Sep"
+        },
+        "fr": {
+          "title": "Vercel Connect now supports Microsoft Teams Agents can now receive and reply to Microsoft Teams messages through Vercel Connect, with tokens managed for you across the Connect SDK, eve, and Chat SDK. Bhrigu Srivastava, Owen Kephart, and 1 other",
+          "summary": "21 September 21 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260923-github-copilot-local-sandboxing-in-the-github-copilot-app-59f94707",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app",
+      "publishedAt": "2026-09-23T15:00:57.000Z",
       "discoveredAt": "2026-09-23T21:28:36.478Z",
       "locales": {
         "en": {
-          "title": "Unlimited Vercel Blob stores on every plan Vercel Blob no longer caps how many stores you can create on any plan. Store creation is billed as one Blob Advanced Operation, and deleting a store is free. Agustin Falco Software Engineer",
-          "summary": "23 September 23 Sep"
+          "title": "Local sandboxing in the GitHub Copilot app",
+          "summary": "Local sandboxing helps reduce the potential impact of unintended commands by limiting access to files, network resources, and credentials on your machine. In the GitHub Copilot app, you configure it… The post Local sand…"
         },
         "fr": {
-          "title": "Unlimited Vercel Blob stores on every plan Vercel Blob no longer caps how many stores you can create on any plan. Store creation is billed as one Blob Advanced Operation, and deleting a store is free. Agustin Falco Software Engineer",
-          "summary": "23 September 23 Sep"
+          "title": "Local sandboxing in the GitHub Copilot app",
+          "summary": "Local sandboxing helps reduce the potential impact of unintended commands by limiting access to files, network resources, and credentials on your machine. In the GitHub Copilot app, you configure it… The post Local sand…"
         }
       }
     },
@@ -1939,26 +1959,6 @@
         "fr": {
           "title": "Fixed a panic in project metrics collection that could drop metrics",
           "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
-        }
-      }
-    },
-    {
-      "slug": "20260923-github-copilot-new-features-and-improvements-in-copilot-for-jetb-907491f6",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains",
-      "publishedAt": "2026-09-23T00:34:18.000Z",
-      "discoveredAt": "2026-09-23T11:31:44.061Z",
-      "locales": {
-        "en": {
-          "title": "New features and improvements in Copilot for JetBrains",
-          "summary": "GitHub Copilot for JetBrains 1.18.0 brings AI-assisted tool approvals, more control over agent conversations, and shared skills and instructions for your organization. You can also review plans with the Codex… The post…"
-        },
-        "fr": {
-          "title": "New features and improvements in Copilot for JetBrains",
-          "summary": "GitHub Copilot for JetBrains 1.18.0 brings AI-assisted tool approvals, more control over agent conversations, and shared skills and instructions for your organization. You can also review plans with the Codex… The post…"
         }
       }
     },
@@ -2043,22 +2043,22 @@
       }
     },
     {
-      "slug": "20260923-nvidia-how-swe-serve-exposes-the-gap-between-local-tests-and-liv-9e926410",
+      "slug": "20260923-nvidia-enabling-private-high-performance-production-ai-inference-5a508d73",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/",
-      "publishedAt": "2026-09-23T16:05:30.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
+      "href": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/",
+      "publishedAt": "2026-09-23T16:26:24.000Z",
+      "discoveredAt": "2026-09-25T11:47:51.359Z",
       "locales": {
         "en": {
-          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
-          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
+          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
+          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
         },
         "fr": {
-          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
-          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
+          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
+          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
         }
       }
     },
@@ -2083,22 +2083,22 @@
       }
     },
     {
-      "slug": "20260915-google-ai-building-ai-to-accelerate-science-and-improve-lives-b86d9a76",
+      "slug": "20260915-google-ai-ai-for-societal-impact-18592959",
       "toolName": "Google AI",
       "category": "AI Platform",
       "source": "Google AI Blog",
       "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "href": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
       "publishedAt": "2026-09-15T16:00:00.000Z",
       "discoveredAt": "2026-09-15T21:18:38.937Z",
       "locales": {
         "en": {
-          "title": "Building AI to accelerate science and improve lives",
-          "summary": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …"
+          "title": "AI for Societal Impact",
+          "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
         },
         "fr": {
-          "title": "Building AI to accelerate science and improve lives",
-          "summary": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …"
+          "title": "AI for Societal Impact",
+          "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
         }
       }
     },
@@ -2263,22 +2263,42 @@
       }
     },
     {
-      "slug": "20260923-vercel-deployments-now-show-billable-duration-and-cpu-minutes-de-029191da",
+      "slug": "20260923-vercel-unlimited-vercel-blob-stores-on-every-plan-vercel-blob-no-dc1e5597",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/deployments-now-show-billable-duration-and-cpu-minutes",
+      "href": "https://vercel.com/changelog/unlimited-vercel-blob-stores-on-every-plan",
       "publishedAt": "2026-09-23T21:28:36.478Z",
       "discoveredAt": "2026-09-23T21:28:36.478Z",
       "locales": {
         "en": {
-          "title": "Deployments now show billable duration and CPU minutes Deployments now show their billable duration and CPU minutes in the dashboard, vc inspect, and the REST API. Mehul Kar, William Bout",
-          "summary": "Bhrigu Srivastava, Owen Kephart, and 1 other"
+          "title": "Unlimited Vercel Blob stores on every plan Vercel Blob no longer caps how many stores you can create on any plan. Store creation is billed as one Blob Advanced Operation, and deleting a store is free. Agustin Falco Software Engineer",
+          "summary": "23 September 23 Sep"
         },
         "fr": {
-          "title": "Deployments now show billable duration and CPU minutes Deployments now show their billable duration and CPU minutes in the dashboard, vc inspect, and the REST API. Mehul Kar, William Bout",
-          "summary": "Bhrigu Srivastava, Owen Kephart, and 1 other"
+          "title": "Unlimited Vercel Blob stores on every plan Vercel Blob no longer caps how many stores you can create on any plan. Store creation is billed as one Blob Advanced Operation, and deleting a store is free. Agustin Falco Software Engineer",
+          "summary": "23 September 23 Sep"
+        }
+      }
+    },
+    {
+      "slug": "20260923-github-copilot-opentelemetry-in-the-github-copilot-app-0ad4c8ab",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app",
+      "publishedAt": "2026-09-23T02:14:54.000Z",
+      "discoveredAt": "2026-09-23T11:31:44.061Z",
+      "locales": {
+        "en": {
+          "title": "OpenTelemetry in the GitHub Copilot app",
+          "summary": "Understand how Copilot agents perform and interact with models and tools. The GitHub Copilot app now supports OpenTelemetry (OTel) configuration through enterprise-managed settings. OTel is an open source observability…"
+        },
+        "fr": {
+          "title": "OpenTelemetry in the GitHub Copilot app",
+          "summary": "Understand how Copilot agents perform and interact with models and tools. The GitHub Copilot app now supports OpenTelemetry (OTel) configuration through enterprise-managed settings. OTel is an open source observability…"
         }
       }
     },
@@ -2303,26 +2323,6 @@
       }
     },
     {
-      "slug": "20260922-github-copilot-faster-c-code-intelligence-with-whole-codebase-in-39381ffc",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-22-faster-c-code-intelligence-with-whole-codebase-indexing",
-      "publishedAt": "2026-09-22T22:24:48.000Z",
-      "discoveredAt": "2026-09-23T11:31:44.061Z",
-      "locales": {
-        "en": {
-          "title": "Faster C++ code intelligence with whole codebase indexing",
-          "summary": "C++ code intelligence in GitHub Copilot CLI is now faster with support for whole codebase indexing. C++ repositories can contain millions of lines of code across deeply connected source files… The post Faster C++ code i…"
-        },
-        "fr": {
-          "title": "Faster C++ code intelligence with whole codebase indexing",
-          "summary": "C++ code intelligence in GitHub Copilot CLI is now faster with support for whole codebase indexing. C++ repositories can contain millions of lines of code across deeply connected source files… The post Faster C++ code i…"
-        }
-      }
-    },
-    {
       "slug": "20260903-docker-yolo-mode-agent-autonomy-without-the-guardrails-07d6a8e1",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -2343,22 +2343,22 @@
       }
     },
     {
-      "slug": "20260915-cloudflare-have-it-both-ways-stay-discoverable-in-search-while-d-758d5608",
+      "slug": "20260915-cloudflare-give-every-teammate-and-agent-the-right-level-of-acce-5d707738",
       "toolName": "Cloudflare",
       "category": "Cloud Platform",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+      "href": "https://blog.cloudflare.com/workers-granular-authorization/",
       "publishedAt": "2026-09-15T13:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
+      "discoveredAt": "2026-09-25T11:47:51.359Z",
       "locales": {
         "en": {
-          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
-          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
+          "title": "Give every teammate and agent the right level of access to your Workers",
+          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
         },
         "fr": {
-          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
-          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
+          "title": "Give every teammate and agent the right level of access to your Workers",
+          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
         }
       }
     },
