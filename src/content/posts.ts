@@ -1,5 +1,6 @@
 import type { Locale } from "@/i18n/config";
 import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
+import { proseOnly } from "@/lib/content-block";
 import { csExpansionPosts } from "@/content/posts-cs";
 
 export type AffiliateLink = {
@@ -950,6 +951,9 @@ const basePosts: BlogPost[] = [
           "What ties all five together is that none of them announce themselves. That is the actual lesson. A crash gets fixed in ten minutes because the computer tells you. A leak can survive an entire project, and it fails at exactly the wrong moment — on real data, in front of someone, after you have already claimed the number.",
           "So build one habit: be suspicious of good news. When a score jumps, do not celebrate it and move on. Ask what the model could be seeing that it will not have later. Check whether anything was fitted before the split, whether the data has an order you ignored, whether rows repeat, whether rows share an owner, and whether any feature is downstream of the thing you are predicting. That check takes fifteen minutes and it is the difference between a portfolio project that survives a question and one that does not.",
           "And when you write the project up, write down the number you did not trust and why. Anyone can report 0.99. Explaining why your honest figure is 0.82, and what you found when you went looking, is a much stronger signal about how you work — which is the thing an interviewer is actually trying to measure."
+        ,
+          "Every figure above came from this script. It needs scikit-learn and nothing else. Run it and you get 0.901, then 0.493, then 0.901 — the correct path, the broken one, and the pipeline that makes the correct path the default.",
+          "```python\nimport numpy as np\nfrom sklearn.datasets import make_classification\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.pipeline import make_pipeline\n\nX, y = make_classification(n_samples=4000, n_features=20,\n                           n_informative=8, random_state=0)\nXtr, Xte, ytr, yte = train_test_split(X, y, random_state=0)\n\n# Correct: the scaler learns its mean and scale on training data\n# only, and serving reuses them.\nsc = StandardScaler().fit(Xtr)\nclf = LogisticRegression(max_iter=1000).fit(sc.transform(Xtr), ytr)\nprint(\"fitted scaler reused at serving : %.3f\" % clf.score(sc.transform(Xte), yte))\n\n# Broken: a new scaler per request. One row has no variance, so\n# fit_transform returns zeros and every row scores identically.\npreds = [clf.predict(StandardScaler().fit_transform(r.reshape(1, -1)))[0]\n         for r in Xte]\nprint(\"new scaler per request          : %.3f\" % np.mean(np.array(preds) == yte))\n\n# Pipeline: the correct numbers, without the bookkeeping.\npipe = make_pipeline(StandardScaler(), LogisticRegression(max_iter=1000)).fit(Xtr, ytr)\nprint(\"make_pipeline                   : %.3f\" % pipe.score(Xte, yte))\n```"
         ]
       },
       fr: {
@@ -967,6 +971,9 @@ const basePosts: BlogPost[] = [
           "Ce qui relie ces cinq formes, c'est qu'aucune ne s'annonce. Voilà la vraie leçon. Un plantage se corrige en dix minutes parce que la machine vous prévient. Une fuite peut traverser un projet entier et se manifester au pire moment : sur des données réelles, devant quelqu'un, après que vous avez annoncé le chiffre.",
           "Prenez donc une habitude : méfiez-vous des bonnes nouvelles. Quand un score bondit, ne le célébrez pas pour passer à la suite. Demandez-vous ce que le modèle pourrait voir et qu'il n'aura plus ensuite. Vérifiez si quelque chose a été ajusté avant la séparation, si les données ont un ordre que vous avez ignoré, si des lignes se répètent, si des lignes partagent un propriétaire, et si une variable se situe en aval de ce que vous cherchez à prédire. Ce contrôle prend un quart d'heure et fait la différence entre un projet de portfolio qui résiste à une question et un projet qui n'y résiste pas.",
           "Et lorsque vous rédigez le projet, notez le chiffre auquel vous n'avez pas fait confiance, et pourquoi. N'importe qui peut annoncer 0,99. Expliquer pourquoi votre chiffre honnête est 0,82, et ce que vous avez trouvé en cherchant, en dit bien plus long sur votre façon de travailler — c'est-à-dire exactement ce qu'un recruteur essaie de mesurer."
+        ,
+          "Tous les chiffres ci-dessus viennent de ce script. Il ne demande que scikit-learn. Exécutez-le et vous obtenez 0,901, puis 0,493, puis 0,901 — la version correcte, la version cassée, et le pipeline qui rend la version correcte automatique.",
+          "```python\nimport numpy as np\nfrom sklearn.datasets import make_classification\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.pipeline import make_pipeline\n\nX, y = make_classification(n_samples=4000, n_features=20,\n                           n_informative=8, random_state=0)\nXtr, Xte, ytr, yte = train_test_split(X, y, random_state=0)\n\n# Correct: the scaler learns its mean and scale on training data\n# only, and serving reuses them.\nsc = StandardScaler().fit(Xtr)\nclf = LogisticRegression(max_iter=1000).fit(sc.transform(Xtr), ytr)\nprint(\"fitted scaler reused at serving : %.3f\" % clf.score(sc.transform(Xte), yte))\n\n# Broken: a new scaler per request. One row has no variance, so\n# fit_transform returns zeros and every row scores identically.\npreds = [clf.predict(StandardScaler().fit_transform(r.reshape(1, -1)))[0]\n         for r in Xte]\nprint(\"new scaler per request          : %.3f\" % np.mean(np.array(preds) == yte))\n\n# Pipeline: the correct numbers, without the bookkeeping.\npipe = make_pipeline(StandardScaler(), LogisticRegression(max_iter=1000)).fit(Xtr, ytr)\nprint(\"make_pipeline                   : %.3f\" % pipe.score(Xte, yte))\n```"
         ]
       }
     },
@@ -1821,7 +1828,10 @@ function measureReadTime(post: BlogPost): string {
   // still [] at this point and only gets filled from the locale block below.
   // Measuring the empty array reported "1 min read" for every post, including
   // the 1,200-word ones — an understatement replacing an overstatement.
-  const words = post.locales.en.content.reduce(
+  // Prose only. A forty-line script is not read at 220 words per minute, and
+  // counting one as prose inflates the estimate for exactly the articles that
+  // ship something runnable -- which is a reason not to ship it.
+  const words = proseOnly(post.locales.en.content).reduce(
     (sum, paragraph) => sum + paragraph.split(/\s+/).filter(Boolean).length,
     0
   );

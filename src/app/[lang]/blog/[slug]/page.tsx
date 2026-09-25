@@ -6,6 +6,7 @@ import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
 import { citationsForParagraph } from "@/lib/citations";
+import { parseContentBlock } from "@/lib/content-block";
 import { AffiliateDisclosureInline } from "@/components/affiliate-disclosure-inline";
 import { ArticleToc } from "@/components/article-toc";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -324,10 +325,19 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
 
           <div id="summary" className="anchor-offset reading-panel rounded-3xl p-6 md:p-10">
             <div className="reading-prose space-y-6">
-              {post.content.map((paragraph, idx) => (
+              {post.content.map((entry, idx) => {
+                const block = parseContentBlock(entry);
+                return (
                 <div key={idx}>
+                  {block.kind === "code" ? (
+                    // A command a reader can run is the only version of "we
+                    // measured this" that survives contact with a sceptic.
+                    <pre>
+                      <code className={block.lang ? `language-${block.lang}` : undefined}>{block.code}</code>
+                    </pre>
+                  ) : (
                   <p className={idx === 0 ? "reading-lead text-[color:var(--text-strong)]" : undefined}>
-                    {paragraph}
+                    {block.text}
                     {citationsForParagraph(post, idx).map((n) => (
                       <Fragment key={`cite-${idx}-${n}`}>
                         {" "}
@@ -341,6 +351,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                       </Fragment>
                     ))}
                   </p>
+                  )}
                   {idx === midIndex && (
                     <div className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--bg-soft)]/55 p-4">
                       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
@@ -373,7 +384,8 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                     </div>
                   )}
                 </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
