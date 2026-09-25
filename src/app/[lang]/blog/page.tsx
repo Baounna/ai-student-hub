@@ -18,6 +18,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { sanitizeSearchQuery } from "@/lib/input";
 import { matchesAllTerms, searchTerms } from "@/lib/search";
+import { searchableContent } from "@/lib/content-block";
 import { studentStudyTools } from "@/content/posts";
 import { formatReadTime } from "@/lib/read-time";
 
@@ -95,7 +96,7 @@ export default async function LocalizedBlogPage(
   const terms = searchTerms(query);
   const posts = terms.length
     ? trackScopedPosts.filter((post) =>
-        matchesAllTerms(terms, [post.title, post.excerpt, post.category, ...post.tags, ...post.content])
+        matchesAllTerms(terms, [post.title, post.excerpt, post.category, ...post.tags, ...searchableContent(post.content)])
       )
     : trackScopedPosts;
   // The header search box says "Search AI, backend, cloud, algorithms" and

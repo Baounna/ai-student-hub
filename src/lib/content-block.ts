@@ -58,3 +58,37 @@ export function parseContentBlock(entry: string): ContentBlock {
 export function proseOnly(content: string[]): string[] {
   return content.filter((entry) => parseContentBlock(entry).kind === "text");
 }
+
+/**
+ * The text a search query should match against.
+ *
+ * Code belongs in the index -- someone looking for make_pipeline should find
+ * the article that uses it -- but the fence line does not. Indexing the raw
+ * entry means the literal "```python" is searchable, so a query for "python"
+ * matches the tag rather than anything the article says.
+ */
+export function searchableContent(content: string[]): string[] {
+  return content.map((entry) => {
+    const block = parseContentBlock(entry);
+    return block.kind === "code" ? block.code : block.text;
+  });
+}
+
+/**
+ * The index of a prose paragraph at or after `preferred`, falling back to
+ * searching backwards.
+ *
+ * The mid-article block is positioned by a fraction of the paragraph count. Land
+ * that on a code block and the callout interrupts a script someone is trying to
+ * read, which is the one place in the article where breaking the flow actually
+ * costs the reader something.
+ */
+export function nearestProseIndex(content: string[], preferred: number): number {
+  const isProse = (i: number) => content[i] !== undefined && parseContentBlock(content[i]).kind === "text";
+  if (isProse(preferred)) return preferred;
+  for (let step = 1; step < content.length; step += 1) {
+    if (isProse(preferred + step)) return preferred + step;
+    if (isProse(preferred - step)) return preferred - step;
+  }
+  return preferred;
+}

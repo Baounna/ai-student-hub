@@ -5,8 +5,8 @@ import Link from "next/link";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { Fragment } from "react";
-import { citationsForParagraph } from "@/lib/citations";
-import { parseContentBlock } from "@/lib/content-block";
+import { citationsForParagraph, hasParagraphCitations } from "@/lib/citations";
+import { nearestProseIndex, parseContentBlock, proseOnly } from "@/lib/content-block";
 import { AffiliateDisclosureInline } from "@/components/affiliate-disclosure-inline";
 import { ArticleToc } from "@/components/article-toc";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -114,14 +114,17 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
   const bridgePosts = getPostsByTrack(bridgeTrack, locale)
     .filter((candidate) => candidate.slug !== post.slug && !relatedPosts.some((related) => related.slug === candidate.slug))
     .slice(0, 3);
-  const wordCount = post.content.reduce((sum, paragraph) => sum + paragraph.split(/\s+/).filter(Boolean).length, 0);
+  // Prose only. The panel below reports this as "sources per 1k words" and as a
+  // reading estimate, and a 26-line script is neither words nor read at prose
+  // speed -- counting it moved the displayed figures by 17 percent.
+  const wordCount = proseOnly(post.content).reduce((sum, paragraph) => sum + paragraph.split(/\s+/).filter(Boolean).length, 0);
   const readingEffortMinutes = Math.max(1, Math.round(wordCount / 220));
   const executionAssets = post.affiliateCallout.links.length + Math.min(recommendedTools.length, 3);
   const sourceDensity = wordCount ? Math.max(1, Math.round((post.references.length / wordCount) * 1000)) : 0;
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
   const checkoutUrl = getProductCheckoutUrl();
   const hasCheckoutUrl = canSellProduct();
-  const midIndex = Math.max(1, Math.floor(post.content.length * 0.45));
+  const midIndex = nearestProseIndex(post.content, Math.max(1, Math.floor(post.content.length * 0.45)));
   const relatedTools = recommendedTools.slice(0, 3);
   const tocItems = [
     { id: "summary", label: locale === "fr" ? "Synthèse" : "Summary" },
@@ -332,7 +335,17 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                   {block.kind === "code" ? (
                     // A command a reader can run is the only version of "we
                     // measured this" that survives contact with a sceptic.
-                    <pre>
+                    // The block scrolls sideways on a narrow screen, and a
+                    // scrollable region that only a mouse can reach fails
+                    // WCAG 2.1.1. tabIndex makes it focusable so arrow keys
+                    // scroll it; the group role and label tell a screen reader
+                    // what it just landed on instead of announcing a bare
+                    // scrollable box.
+                    <pre
+                      tabIndex={0}
+                      role="group"
+                      aria-label={locale === "fr" ? "Bloc de code" : "Code block"}
+                    >
                       <code className={block.lang ? `language-${block.lang}` : undefined}>{block.code}</code>
                     </pre>
                   ) : (
@@ -410,9 +423,17 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                   the article; a paragraph shows a number only where that
                   paragraph was actually checked against that source. */}
               <p className="mt-2 text-sm text-[color:var(--muted)]">
-                {locale === "fr"
-                  ? "Sources consultées pour cet article. Un numéro apparaît dans le texte uniquement là où le passage a été vérifié contre la source citée."
-                  : "Sources consulted for this article. A number appears in the text only where that passage was checked against the source it names."}
+                {/* Three articles cite nothing inline, because their sources are
+                    landing pages that support no specific claim. Telling those
+                    readers a number appears "only where the passage was checked"
+                    promises a marker the page does not contain. */}
+                {hasParagraphCitations(post)
+                  ? locale === "fr"
+                    ? "Sources consultées pour cet article. Un numéro apparaît dans le texte uniquement là où le passage a été vérifié contre la source citée."
+                    : "Sources consulted for this article. A number appears in the text only where that passage was checked against the source it names."
+                  : locale === "fr"
+                    ? "Sources consultées pour cet article. Aucun passage n'est cité individuellement : ces pages étayent le sujet, pas une affirmation précise."
+                    : "Sources consulted for this article. No passage is cited individually: these pages support the subject rather than a specific claim."}
               </p>
               <ol className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
                 {post.references.map((reference, index) => (

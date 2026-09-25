@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { parseContentBlock, proseOnly } from "@/lib/content-block";
+import { nearestProseIndex, parseContentBlock, proseOnly, searchableContent } from "@/lib/content-block";
 import { posts } from "@/content/posts";
 
 describe("content blocks", () => {
@@ -69,5 +69,40 @@ describe("content blocks", () => {
         });
       }
     }
+  });
+});
+
+describe("downstream consumers of content", () => {
+  it("indexes the code for search but not the fence line", () => {
+    const indexed = searchableContent(["prose here", "```python\nmake_pipeline(x)\n```"]);
+    expect(indexed).toEqual(["prose here", "make_pipeline(x)"]);
+    expect(indexed.join(" ")).not.toContain("```");
+  });
+
+  // The mid-article callout is placed by a fraction of the paragraph count.
+  // Landing it inside a script interrupts the one thing a reader is following
+  // line by line.
+  it("moves the mid-article block off a code paragraph", () => {
+    const content = ["a", "```sh\nls\n```", "c"];
+    expect(nearestProseIndex(content, 1)).toBe(2);
+    expect(nearestProseIndex(content, 0)).toBe(0);
+  });
+
+  it("searches backwards when everything after is code", () => {
+    expect(nearestProseIndex(["a", "```sh\nls\n```", "```sh\npwd\n```"], 2)).toBe(0);
+  });
+
+  it("gives back the preferred index when there is no prose at all", () => {
+    expect(nearestProseIndex(["```sh\nls\n```"], 0)).toBe(0);
+  });
+
+  /**
+   * wordCount drives a visible "sources per 1k words" figure and a reading
+   * estimate. Counting a script as words moved both.
+   */
+  it("excludes code from a word count", () => {
+    const content = ["one two three", "```py\nimport numpy as np\nx = 1\n```"];
+    const words = proseOnly(content).reduce((n, p) => n + p.split(/\s+/).filter(Boolean).length, 0);
+    expect(words).toBe(3);
   });
 });

@@ -160,7 +160,12 @@ html[data-content-width="wide"] {
   button:focus-visible,
   input:focus-visible,
   textarea:focus-visible,
-  select:focus-visible {
+  select:focus-visible,
+  /* A code block scrolls sideways, so it carries tabindex to let arrow keys
+     reach it. Without it listed here it would take the browser default ring,
+     which is the one outline on the page nobody chose and which disappears
+     against some themes. */
+  .reading-prose pre:focus-visible {
     outline: 2px solid var(--focus-ring);
     outline-offset: 2px;
   }
@@ -669,7 +674,11 @@ html[data-content-width="wide"] {
   }
 
   .reading-prose :where(pre, code) {
-    font-family: "JetBrains Mono", "SFMono-Regular", ui-monospace, Menlo, monospace;
+    /* Was "JetBrains Mono", which this site loads nowhere -- the name appeared
+       exactly once in the codebase, so every code block silently fell back to
+       whatever the OS had while the IBM Plex Mono that next/font already ships
+       went unused here. --font-mono is that loaded face. */
+    font-family: var(--font-mono), ui-monospace, monospace;
   }
 
   .reading-prose code {

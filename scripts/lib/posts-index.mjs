@@ -58,5 +58,3 @@ export async function readPostIndex(cwd = process.cwd()) {
   }
   return out;
 }
-
-export { parse as parsePostsSource };
