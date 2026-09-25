@@ -905,6 +905,18 @@ const basePosts: BlogPost[] = [
       },
       links: []
     },
+    // Verified paragraph by paragraph against the three sources below, by
+    // fetching each page and confirming the claim is on it. Paragraphs 0, 5 and
+    // 7-10 carry no marker: they are the argument of the article, or (duplicates,
+    // target-derived features) points these three pages do not actually make.
+    // Five markers on eleven paragraphs is what real attribution looks like --
+    // the cycle this replaced marked all eleven.
+    //   1 -> data leakage defined            common_pitfalls  "data leakage" x12
+    //   2 -> preprocessing before splitting  common_pitfalls  "train_test_split" x8
+    //   3 -> Pipeline binds the transforms   Pipeline docs    "Pipeline" x73
+    //   4 -> ordered data, time series       cross_validation "TimeSeriesSplit" x5
+    //   6 -> grouped rows                    cross_validation "GroupKFold" x16
+    paragraphCitations: { 1: [1], 2: [1], 3: [2], 4: [3], 6: [3] },
     references: [
       {
         source: "scikit-learn",
