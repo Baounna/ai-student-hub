@@ -1305,11 +1305,6 @@ const basePosts: BlogPost[] = [
     },
     references: [
       {
-        source: "NIST",
-        label: { en: "AI Risk Management Framework", fr: "Cadre de gestion du risque IA" },
-        href: "https://www.nist.gov/itl/ai-risk-management-framework"
-      },
-      {
         source: "Google Developers",
         label: { en: "Machine Learning Crash Course", fr: "Cours rapide de machine learning" },
         href: "https://developers.google.com/machine-learning/crash-course"

@@ -416,7 +416,12 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
           {!!post.references.length && (
             <section id="references" className="anchor-offset reading-panel rounded-3xl p-6">
               <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-                {locale === "fr" ? "Références et sources" : "References and sources"}
+                {/* An article with no inline markers has a reading list, not a
+                    set of citations. Calling it "References and sources" claims
+                    a precision the page does not have. */}
+                {hasParagraphCitations(post)
+                  ? locale === "fr" ? "Références et sources" : "References and sources"
+                  : locale === "fr" ? "Pour aller plus loin" : "Further reading"}
               </h2>
               {/* Said plainly, because the alternative is a reader assuming each
                   number maps to a sentence. These are the sources consulted for

@@ -615,33 +615,48 @@ export const csExpansionPosts: BlogPost[] = [
         { label: { en: "Open cloud comparison", fr: "Comparatif cloud" }, href: "/compare", note: "Decision" }
       ]
     },
+    // Every reference here used to be a landing page: kernel.org/doc/man-pages,
+    // docs.docker.com, systemd.io, docs.github.com/en/actions (for an article
+    // that never mentions Actions), and git-scm.com/doc -- a 69-byte redirect
+    // stub. Between them they contained none of this article's commands, so the
+    // guide could cite nothing. Each entry below was fetched and checked for the
+    // specific flag or option the paragraph names.
     references: [
       {
-        source: "Linux man pages",
-        label: { en: "Linux man-pages project", fr: "Projet Linux man-pages" },
-        href: "https://www.kernel.org/doc/man-pages/"
+        source: "man7.org",
+        label: { en: "journalctl(1): -u and --no-pager", fr: "journalctl(1) : -u et --no-pager" },
+        href: "https://man7.org/linux/man-pages/man1/journalctl.1.html"
       },
       {
         source: "Docker",
-        label: { en: "Docker documentation", fr: "Documentation Docker" },
-        href: "https://docs.docker.com/"
+        label: { en: "docker system prune: what -a removes", fr: "docker system prune : ce que -a supprime" },
+        href: "https://docs.docker.com/reference/cli/docker/system/prune/"
       },
       {
-        source: "Git",
-        label: { en: "Git documentation", fr: "Documentation Git" },
-        href: "https://git-scm.com/doc"
+        source: "man7.org",
+        label: { en: "ss(8): -l, -t, -n, -p", fr: "ss(8) : -l, -t, -n, -p" },
+        href: "https://man7.org/linux/man-pages/man8/ss.8.html"
       },
       {
-        source: "GitHub",
-        label: { en: "GitHub Actions documentation", fr: "Documentation GitHub Actions" },
-        href: "https://docs.github.com/en/actions"
+        source: "npm",
+        label: { en: "npm ci: requires a lockfile, never writes one", fr: "npm ci : exige un lockfile, n'en ecrit jamais" },
+        href: "https://docs.npmjs.com/cli/v11/commands/npm-ci/"
       },
       {
-        source: "systemd",
-        label: { en: "systemd documentation", fr: "Documentation systemd" },
-        href: "https://systemd.io/"
+        source: "man7.org",
+        label: { en: "bash(1): errexit, nounset, pipefail", fr: "bash(1) : errexit, nounset, pipefail" },
+        href: "https://man7.org/linux/man-pages/man1/bash.1.html"
+      },
+      {
+        source: "man7.org",
+        label: { en: "systemd.service(5): Restart= and RestartSec=", fr: "systemd.service(5) : Restart= et RestartSec=" },
+        href: "https://man7.org/linux/man-pages/man5/systemd.service.5.html"
       }
     ],
+    // journalctl -u/--no-pager (P1), docker system prune -a and dangling images
+    // (P2), ss -ltnp listing sockets with the holding process (P4), npm ci's
+    // lockfile contract (P5), set -euo pipefail (P7), Restart=/RestartSec= (P8).
+    paragraphCitations: { 1: [1], 2: [2], 4: [3], 5: [4], 7: [5], 8: [6] },
     locales: {
       en: {
         title: "Linux and DevOps Workflow for Students: Ship Faster, Break Less",
