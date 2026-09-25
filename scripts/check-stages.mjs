@@ -178,6 +178,68 @@ function workdayApi(href) {
   return `https://${tenant}.${wd}.myworkdayjobs.com/wday/cxs/${tenant}/${site}/job/${jobPath}`;
 }
 
+/**
+ * The tenant's public job-search endpoint, and the requisition token to ask it
+ * about.
+ *
+ * Airbus answers 403 on three requisitions and 200 on a fourth, to the same
+ * client, with the same headers, in the same second. That is not a rate limit —
+ * a blocked client gets blocked for everything. Workday returns 403 for a
+ * requisition that is no longer public, so a 403 here is a fact about the job,
+ * not about us. The search endpoint is what proves which: if it answers 200 we
+ * are demonstrably not blocked at this tenant, and a requisition missing from
+ * its own site's search is gone.
+ */
+function workdaySearchUrl(href) {
+  const match = href.match(/^https:\/\/([a-z0-9-]+)\.(wd\d)\.myworkdayjobs\.com\/[^/]+\/([^/]+)\/job\/(.+)$/i);
+  if (!match) return null;
+  const [, tenant, wd, site, jobPath] = match;
+  const last = jobPath.split("/").pop() || "";
+  const token = last.includes("_") ? last.slice(last.lastIndexOf("_") + 1) : last;
+  if (!token) return null;
+  return { url: `https://${tenant}.${wd}.myworkdayjobs.com/wday/cxs/${tenant}/${site}/jobs`, token };
+}
+
+async function fetchJsonPost(url, payload) {
+  await waitForHost(url);
+  try {
+    const { stdout } = await execFileAsync("curl", [
+      "-s", "-L", "--max-time", "25", "-A", UA,
+      "-X", "POST", "-H", "Content-Type: application/json", "-H", "Accept: application/json",
+      "--data", JSON.stringify(payload),
+      "-w", "\n__CODE__%{http_code}", url
+    ], { maxBuffer: 12 * 1024 * 1024 });
+    const marker = stdout.lastIndexOf("__CODE__");
+    const status = Number.parseInt(stdout.slice(marker + 8).trim(), 10) || 0;
+    return { status, raw: stdout.slice(0, marker) };
+  } catch {
+    return { status: 0, raw: "" };
+  }
+}
+
+/**
+ * Does the tenant's own search still list this requisition? Returns null when
+ * the search itself could not be trusted, so the caller keeps saying "a human
+ * should look" rather than inventing a verdict from a failed lookup.
+ */
+export function requisitionInSearchResults(raw, token) {
+  let parsed;
+  try { parsed = JSON.parse(raw); } catch { return null; }
+  const postings = Array.isArray(parsed.jobPostings) ? parsed.jobPostings : null;
+  if (!postings) return null;
+  return postings.some((p) => String(p?.externalPath || "").includes(token));
+}
+
+async function workdayStillListed(href) {
+  const search = workdaySearchUrl(href);
+  if (!search) return null;
+  const { status, raw } = await fetchJsonPost(search.url, {
+    appliedFacets: {}, limit: 20, offset: 0, searchText: search.token
+  });
+  if (status !== 200) return null;
+  return requisitionInSearchResults(raw, search.token);
+}
+
 async function checkOne(stage) {
   const api = workdayApi(stage.href);
   if (api) {
@@ -187,7 +249,17 @@ async function checkOne(stage) {
     // bot protection, not four vanished internships. Treating every non-200 as
     // gone would have deleted live postings on the strength of a rate limit.
     if (BLOCKED_STATUSES.has(status)) {
-      return { verdict: "CHECK", detail: `Workday API HTTP ${status} (blocked, not proof either way)` };
+      // Ask the same tenant's search before giving up. A 200 from search proves
+      // this client is not blocked here, which turns the 403 above from "no
+      // information" into "this requisition is not public any more".
+      const listed = await workdayStillListed(stage.href);
+      if (listed === false) {
+        return { verdict: "GONE", detail: `Workday API HTTP ${status} and the requisition is absent from the tenant's own search` };
+      }
+      if (listed === true) {
+        return { verdict: "OK", detail: `Workday API HTTP ${status}, but the tenant's search still lists the requisition` };
+      }
+      return { verdict: "CHECK", detail: `Workday API HTTP ${status} (blocked, and search could not confirm either way)` };
     }
     if (status !== 200) return { verdict: "GONE", detail: `Workday API HTTP ${status}` };
     try {

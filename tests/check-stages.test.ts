@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 // @ts-expect-error - plain .mjs script, no types
-import { expiredValidThrough, gonePhrase, redirectedAway } from "../scripts/check-stages.mjs";
+import { expiredValidThrough, gonePhrase, redirectedAway, requisitionInSearchResults } from "../scripts/check-stages.mjs";
 
 // Both of these rules exist because the checker passed a known-dead listing as
 // healthy. They are the two ways a posting dies while still answering HTTP 200.
@@ -112,5 +112,41 @@ describe("expired schema.org validThrough", () => {
   // employer's own timetable, so trusting it there retires live jobs.
   it("ignores boards whose validThrough is their own listing TTL", () => {
     expect(expiredValidThrough(JSON_LD_PAGE, "hellowork.com", now)).toBe("");
+  });
+});
+
+/**
+ * Airbus answered 403 on three requisitions and 200 on a fourth, to the same
+ * client, in the same second. A blocked client is blocked for everything, so
+ * that 403 was a fact about the job, not about us -- but the checker could not
+ * tell the two apart and parked all three at "a human should look", where they
+ * sat for days. The tenant's own search settles it, and "the search failed"
+ * must stay distinct from "the search says no".
+ */
+describe("Workday requisition still listed by its tenant", () => {
+  const results = (paths: string[]) =>
+    JSON.stringify({ total: paths.length, jobPostings: paths.map((externalPath) => ({ externalPath })) });
+
+  it("finds a requisition that is still listed", () => {
+    expect(
+      requisitionInSearchResults(results(["/job/Toulouse-Area/Something_JR10440087"]), "JR10440087")
+    ).toBe(true);
+  });
+
+  it("reports a requisition the tenant no longer lists", () => {
+    expect(requisitionInSearchResults(results(["/job/Toulouse-Area/Other_JR99999999"]), "JR10440087")).toBe(false);
+  });
+
+  it("treats an empty result set as not listed", () => {
+    expect(requisitionInSearchResults(results([]), "JR10440087")).toBe(false);
+  });
+
+  // null means "no usable answer", which the caller must keep reporting as
+  // CHECK. Returning false here would delete live listings whenever Workday
+  // changed its response shape or answered with an error page.
+  it("returns null when the response is not usable, rather than guessing", () => {
+    expect(requisitionInSearchResults("<html>Access Denied</html>", "JR1")).toBeNull();
+    expect(requisitionInSearchResults("{}", "JR1")).toBeNull();
+    expect(requisitionInSearchResults(JSON.stringify({ jobPostings: "nope" }), "JR1")).toBeNull();
   });
 });

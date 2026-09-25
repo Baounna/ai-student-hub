@@ -15,6 +15,11 @@ concurrency:
 
 permissions:
   contents: write
+  # This workflow sets AGENT_ISSUES_ENABLED on workflow_dispatch and passes
+  # GITHUB_TOKEN to the issue sync, but the job token is scoped by this block
+  # -- so every create came back 403 and the queue reported nothing wrong.
+  # Configured to file issues and unable to file issues is the worst of both.
+  issues: write
 
 jobs:
   operator-run:

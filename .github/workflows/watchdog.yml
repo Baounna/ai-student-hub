@@ -64,7 +64,18 @@ jobs:
         continue-on-error: true
         run: |
           echo "Lockfile is out of sync — attempting repair."
+          cp package-lock.json "$RUNNER_TEMP/lock-before.json"
           npm install --package-lock-only
+
+          # A green suite proves the repair did not break the site. It does not
+          # prove the repair only repaired: npm install is free to move any
+          # dependency to a newer version inside its semver range, and this step
+          # pushes straight to main. Every workflow action in this repo is
+          # pinned to a SHA so nothing third-party changes without review; an
+          # unattended dependency bump on the same branch undoes that.
+          echo "Confirming the repair changed structure, not versions."
+          node scripts/lockfile-versions.mjs --diff \
+            "$RUNNER_TEMP/lock-before.json" package-lock.json
 
           echo "Verifying the repair before trusting it."
           npm ci
