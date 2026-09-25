@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 import { sanitizeTextInput } from "@/lib/input";
-import { posts } from "@/content/posts";
+import { comparisons, posts } from "@/content/posts";
 import { isLocale } from "@/i18n/config";
 import { imageFonts } from "@/assets/fonts";
 
@@ -89,9 +89,33 @@ function titleFromSlug(slug: string) {
 
 function titleFor(slug: string, locale: string) {
   const post = posts.find((candidate) => candidate.slug === slug);
-  if (!post) return titleFromSlug(slug);
-  const localized = isLocale(locale) ? post.locales[locale] : undefined;
-  return localized?.title || post.title;
+  if (post) {
+    const localized = isLocale(locale) ? post.locales[locale] : undefined;
+    return localized?.title || post.title;
+  }
+  // Comparison pages are not posts. Without this they fell through to the slug,
+  // so the hub's own hero read "Compare Index" and every French comparison
+  // carried a Title-Cased English slug.
+  const comparison = comparisons.find((candidate) => candidate.slug === slug);
+  if (comparison && isLocale(locale)) return comparison.locales[locale].title;
+  return titleFromSlug(slug);
+}
+
+/**
+ * The label above the title.
+ *
+ * The topic arrives here slugified, because it is a path segment -- which
+ * silently ate the separators the site's own category names use:
+ * "Career/Interviews" reached the image as "CAREER INTERVIEWS" and
+ * "Cloud/DevOps" as "CLOUD DEVOPS". The post knows its real category, so read
+ * it from there and keep the slug only as a fallback for pages that are not
+ * posts.
+ */
+function labelFor(slug: string, topicSegment: string) {
+  const post = posts.find((candidate) => candidate.slug === slug);
+  if (post?.category) return post.category;
+  if (comparisons.some((candidate) => candidate.slug === slug)) return "Comparison";
+  return topicSegment;
 }
 
 /**
@@ -99,9 +123,14 @@ function titleFor(slug: string, locale: string) {
  * The thresholds are the character counts at which three lines stop fitting the
  * box at the next size up.
  */
-function titleSize(title: string) {
-  // Tuned for the 620px column, not the full 1200px width: these are the sizes
-  // at which each length still fits three lines inside it.
+function titleSize(title: string, narrow = false) {
+  // The narrow ramp is for the news tiles, whose column is 340px rather than
+  // 560 because their crop is portrait.
+  if (narrow) {
+    if (title.length <= 16) return 34;
+    if (title.length <= 28) return 28;
+    return 24;
+  }
   if (title.length <= 30) return 54;
   if (title.length <= 50) return 46;
   if (title.length <= 70) return 40;
@@ -134,7 +163,7 @@ export async function GET(
   const isTile = slug.startsWith("news-");
   // Decorative tiles pass topic "none"; they get their subject from the slug
   // instead, so the strip still says what each third of it covers.
-  const label = topic || (isTile ? "News" : "");
+  const label = isTile ? "News" : labelFor(slug, topic);
   const fullTitle = isTile ? titleFromSlug(slug.replace(/^news-/, "")) : titleFor(slug, locale);
   // 96 characters is what fits three lines at the smallest size the ramp uses.
   const title = fullTitle.length > 96 ? `${fullTitle.slice(0, 95).trimEnd()}\u2026` : fullTitle;
@@ -157,10 +186,16 @@ export async function GET(
             to square. Nothing sits near an edge, so nothing gets sliced. */}
         <div
           style={{
-            // 560, not the full 620 the crop allows: at 620 the longest titles
-            // ran to within ~35px of the crop edge, which reads as nearly-cut
-            // rather than as a margin.
-            width: "560px",
+            // Two widths, because two very different crops read this image.
+            //
+            // Article cards are landscape or square; the tightest is 1:1, which
+            // shows 675px of source, and 560 sits inside that with margin.
+            //
+            // The three news tiles are NOT square. They are h-[22rem] in a
+            // three-column grid, about 226x352 -- an aspect of 0.64, portrait --
+            // so only 433px of source survives. 560 was sliced there: the live
+            // tile read "ecurity Standard". 340 fits with room on both sides.
+            width: isTile ? "340px" : "560px",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -186,7 +221,7 @@ export async function GET(
 
           <div
             style={{
-              fontSize: `${titleSize(title)}px`,
+              fontSize: `${titleSize(title, isTile)}px`,
               lineHeight: 1.22,
               color: palette.ink,
               fontWeight: 700,
