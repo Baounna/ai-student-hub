@@ -727,6 +727,8 @@ const basePosts: BlogPost[] = [
       },
       links: []
     },
+    // P2: Keshav's three-pass method, five-to-ten-minute first pass and up-to-an-hour second pass, all on the PDF. P4: Keshav on error bars separating shoddy work from excellent, and the NeurIPS checklist on reporting statistical significance and sources of variability. P5: arXiv's own statement that material is not peer-reviewed and that it conveys no implied approval. P6: the Transformer paper for positional encodings. Not covered and left out of the marker: whether baselines got equal tuning budget.
+    paragraphCitations: { 2: [3], 4: [2, 3], 5: [1], 6: [4] },
     references: [
       {
         source: "arXiv",
@@ -756,7 +758,7 @@ const basePosts: BlogPost[] = [
         content: [
           "You open an arXiv PDF because someone said it mattered, read the abstract twice, get four pages into notation you do not recognise, and quietly close the tab. The conclusion most students draw is that they are not ready yet. The more useful conclusion is that you were reading it wrong, because almost nobody reads a paper the way it is printed.",
           "A paper is not written to teach you. It is written to defend a claim to reviewers who already work in the area, under a page limit, in a format that rewards precision over explanation. The notation is dense because the reviewers already know it. The related-work section exists partly to show the authors did their homework. Reading it front to back as a newcomer means paying the full cost of a document optimised for a different reader.",
-          "The standard alternative is the three-pass method, described by S. Keshav in 2007 and still the best advice available. The first pass is five to ten minutes: title, abstract, section headings, conclusion — enough to decide whether to continue. The second takes up to an hour for a practised reader: figures, tables, and the shape of the argument, ignoring proofs and derivations. The third, only for papers you need deeply, is the one where you attempt to reconstruct the work. Most papers deserve pass one. A few deserve pass two. You will do pass three perhaps twice a year, and that is the correct ratio.",
+          "The standard alternative is the three-pass method, described by S. Keshav in 2007 and still the best advice available. The first pass is five to ten minutes: title, abstract, section headings, conclusion — enough to decide whether to continue. The second takes up to an hour: figures, tables, and the shape of the argument, ignoring proofs and derivations. The third, only for papers you need deeply, is the one where you attempt to reconstruct the work. Most papers deserve pass one. A few deserve pass two. You will do pass three perhaps twice a year, and that is the correct ratio.",
           "For machine learning specifically, there is a reading order that gets you to the point faster than the printed one. Read the abstract. Then go straight to the figures and tables, because in an empirical paper that is where the actual claim lives. Then the conclusion, which usually states the contribution more plainly than the introduction did. Only then, if you still care, the method.",
           "Reading the tables first also changes what you notice, and this is the part worth practising. Look at what the new method is being compared against, and whether those baselines were given the same budget of tuning. Look for error bars or multiple seeds; a table of single runs with three-decimal precision is reporting noise as if it were signal. Look at which benchmark the headline number comes from and how many others appear in the appendix. A method that wins everywhere is rare; a method that wins on the one benchmark in the abstract is common.",
           "It helps to know what arXiv is and is not. It is a preprint server: papers are posted there without peer review, which is exactly why it is fast and useful, and exactly why a link to it is not a certificate. Many arXiv papers are later published at a venue; many are never reviewed by anyone. That is not a reason to distrust them, but it is a reason to read the evidence rather than the logo.",
@@ -772,7 +774,7 @@ const basePosts: BlogPost[] = [
         content: [
           "Vous ouvrez un PDF arXiv parce qu'on vous a dit qu'il comptait, vous lisez le résumé deux fois, vous avancez de quatre pages dans une notation inconnue, puis vous fermez discrètement l'onglet. La conclusion que tirent la plupart des étudiants : ils ne sont pas encore prêts. La conclusion plus utile : vous le lisiez mal, car presque personne ne lit un article dans l'ordre où il est imprimé.",
           "Un article n'est pas écrit pour vous enseigner. Il est écrit pour défendre une affirmation devant des relecteurs qui travaillent déjà dans le domaine, sous contrainte de pages, dans un format qui récompense la précision plutôt que l'explication. La notation est dense parce que les relecteurs la connaissent déjà. La section « travaux connexes » existe en partie pour montrer que les auteurs ont fait leurs devoirs. Le lire de bout en bout en débutant revient à payer le plein tarif d'un document optimisé pour un autre lecteur.",
-          "L'alternative classique est la méthode en trois passes, décrite par S. Keshav en 2007 et toujours le meilleur conseil disponible. La première passe dure cinq à dix minutes : titre, résumé, titres de sections, conclusion — de quoi décider si l'on continue. La deuxième prend jusqu'à une heure pour un lecteur entraîné : figures, tableaux et forme de l'argument, en ignorant preuves et dérivations. La troisième, réservée aux articles dont vous avez besoin en profondeur, est celle où vous tentez de reconstruire le travail. La plupart des articles méritent la première passe. Quelques-uns méritent la deuxième. Vous ferez la troisième peut-être deux fois par an, et c'est le bon ratio.",
+          "L'alternative classique est la méthode en trois passes, décrite par S. Keshav en 2007 et toujours le meilleur conseil disponible. La première passe dure cinq à dix minutes : titre, résumé, titres de sections, conclusion — de quoi décider si l'on continue. La deuxième prend jusqu'à une heure : figures, tableaux et forme de l'argument, en ignorant preuves et dérivations. La troisième, réservée aux articles dont vous avez besoin en profondeur, est celle où vous tentez de reconstruire le travail. La plupart des articles méritent la première passe. Quelques-uns méritent la deuxième. Vous ferez la troisième peut-être deux fois par an, et c'est le bon ratio.",
           "Pour l'apprentissage automatique en particulier, un ordre de lecture vous mène au cœur du sujet plus vite que l'ordre imprimé. Lisez le résumé. Allez ensuite directement aux figures et aux tableaux : dans un article empirique, c'est là que vit l'affirmation réelle. Puis la conclusion, qui énonce en général la contribution plus simplement que l'introduction. Et seulement ensuite, si vous y tenez encore, la méthode.",
           "Lire les tableaux d'abord change aussi ce que vous remarquez, et c'est la partie à travailler. Regardez à quoi la nouvelle méthode est comparée, et si ces références ont bénéficié du même budget de réglage. Cherchez des barres d'erreur ou plusieurs graines : un tableau d'exécutions uniques affiché à trois décimales présente du bruit comme s'il s'agissait de signal. Regardez de quel jeu de test vient le chiffre mis en avant, et combien d'autres figurent en annexe. Une méthode qui gagne partout est rare ; une méthode qui gagne sur l'unique test cité dans le résumé est courante.",
           "Il est utile de savoir ce qu'arXiv est et n'est pas. C'est un serveur de préprints : les articles y sont déposés sans relecture par les pairs, ce qui explique sa rapidité et son utilité, et explique aussi qu'un lien vers arXiv ne soit pas un certificat. Beaucoup de ces articles sont ensuite publiés dans une conférence ; beaucoup ne sont jamais relus par personne. Ce n'est pas une raison de s'en méfier, mais c'est une raison de lire les preuves plutôt que le logo.",
@@ -816,6 +818,8 @@ const basePosts: BlogPost[] = [
       },
       links: []
     },
+    // P2: pip freeze's documented output format, and venv's isolated per-environment site directories. P5: PyTorch's page seeds Python, NumPy and torch separately and warns that NumPy Generator objects need seeding too, plus NumPy's own note that default_rng does not manage a global instance. P6 is the strongest: PyTorch states outright that completely reproducible results are not guaranteed across releases or between CPU and GPU, that floating-point addition is not associative, and that deterministic operations are often slower.
+    paragraphCitations: { 2: [3, 4], 5: [1, 2], 6: [1] },
     references: [
       {
         source: "PyTorch",
@@ -1009,6 +1013,8 @@ const basePosts: BlogPost[] = [
       },
       links: []
     },
+    // P2 and P3: Willison's post carries the parameterised-query comparison, the proposal of the name, the 12 September 2022 date and the Goodside attribution; his series index carries the delimiters-will-not-save-you entry. P6: OWASP LLM01 on indirect injection via retrieved documents, and the Greshake paper's abstract on injecting prompts into data likely to be retrieved, without a direct interface. P8 and P9: OWASP's mitigations on validating output with deterministic code and on least privilege.
+    paragraphCitations: { 2: [4], 3: [3, 4], 6: [1, 5], 8: [1], 9: [1] },
     references: [
       {
         source: "OWASP",
@@ -1018,7 +1024,7 @@ const basePosts: BlogPost[] = [
       {
         source: "OWASP",
         label: { en: "Top 10 for Large Language Model Applications", fr: "Top 10 pour les applications à base de LLM" },
-        href: "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+        href: "https://genai.owasp.org/llm-top-10/"
       },
       {
         source: "Simon Willison",
@@ -1105,11 +1111,13 @@ const basePosts: BlogPost[] = [
       },
       links: []
     },
+    // P2: all three npm ci claims verbatim -- exits with an error on a mismatched lock, never writes to package.json, and is meant for CI. P5: both GitHub pages carry the identical sentence that scheduled workflows in a public repository are disabled automatically after 60 days of inactivity.
+    paragraphCitations: { 2: [1], 5: [2, 3] },
     references: [
       {
         source: "npm",
         label: { en: "npm ci — installs from the lockfile, and fails on mismatch", fr: "npm ci — installe depuis le lockfile et échoue en cas d'écart" },
-        href: "https://docs.npmjs.com/cli/v10/commands/npm-ci"
+        href: "https://docs.npmjs.com/cli/v11/commands/npm-ci/"
       },
       {
         source: "GitHub Docs",
@@ -1194,6 +1202,8 @@ const basePosts: BlogPost[] = [
       },
       links: []
     },
+    // P2 now points at the CVSS v4.0 specification rather than the SIG landing page, because that is where the 0-to-10 range and the base-versus-environmental split are actually stated. P5: CISA's KEV page on vulnerabilities exploited in the wild and using the catalogue as a prioritisation input. P6 is the best-evidenced mapping in the batch: FIRST's EPSS page for the thirty-day probability, and the API itself, re-queried to reproduce the article's four figures.
+    paragraphCitations: { 2: [2], 5: [3], 6: [4, 5] },
     references: [
       {
         source: "CVE Program",
@@ -1202,8 +1212,8 @@ const basePosts: BlogPost[] = [
       },
       {
         source: "FIRST",
-        label: { en: "CVSS specification", fr: "Spécification CVSS" },
-        href: "https://www.first.org/cvss/"
+        label: { en: "CVSS v4.0 specification", fr: "Spécification CVSS v4.0" },
+        href: "https://www.first.org/cvss/v4.0/specification-document"
       },
       {
         source: "CISA",
