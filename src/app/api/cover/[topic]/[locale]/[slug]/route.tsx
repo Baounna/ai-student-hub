@@ -141,7 +141,10 @@ export async function GET(
   // which keeps a row of them visibly different rather than three of one colour.
   const palette = paletteFor(topic || slug);
   const next = rng(seedFrom(slug));
-  const fullTitle = titleFor(slug, locale);
+  // The news strip's three tiles. They pass topic "none" because they must not
+  // render a corner label, but they still need to say something.
+  const isTile = slug.startsWith("news-");
+  const fullTitle = isTile ? titleFromSlug(slug.replace(/^news-/, "")) : titleFor(slug, locale);
   // 96 characters is what fits three lines at the smallest size the ramp uses.
   const title = fullTitle.length > 96 ? `${fullTitle.slice(0, 95).trimEnd()}\u2026` : fullTitle;
 
@@ -204,10 +207,48 @@ export async function GET(
           }}
         />
 
-        {/* The title, which is the whole point. Omitted for decorative tiles
-            (topic "none"), which are cropped to a fraction of their width on the
-            news page and would show a few sliced letters rather than a phrase. */}
-        {topic ? (
+        {/* The news strip renders three of these cropped to roughly a third of
+            their width with object-center, so a bottom-left block would be
+            sliced -- which is why those tiles used to carry nothing at all and
+            the most prominent image on that page said nothing. Centred text
+            survives a centre crop, so they get a centred label instead of
+            staying blank. */}
+        {isTile ? (
+          <div
+            style={{
+              position: "absolute",
+              // Explicit offsets and an explicit size: Satori, which renders
+              // this image, does not honour the `inset` shorthand, and with it
+              // the block collapsed to the top-left corner instead of centring.
+              top: 0,
+              left: 0,
+              width: "1200px",
+              height: "675px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "18px",
+              padding: "0 40px",
+              textAlign: "center"
+            }}
+          >
+            <div style={{ width: "14px", height: "14px", background: palette.a }} />
+            <div
+              style={{
+                fontSize: "52px",
+                lineHeight: 1.15,
+                color: palette.ink,
+                fontWeight: 700,
+                letterSpacing: "-0.01em",
+                display: "flex",
+                textAlign: "center"
+              }}
+            >
+              {title}
+            </div>
+          </div>
+        ) : topic ? (
           <div
             style={{
               position: "absolute",
