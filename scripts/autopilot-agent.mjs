@@ -3,6 +3,7 @@ import { spawn } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { loadScriptEnv } from "./lib/load-env.mjs";
+import { AUTOPILOT_COMMIT_PATHS, partitionByCommitPaths } from "./lib/autopilot-paths.mjs";
 
 const ROOT = process.cwd();
 loadScriptEnv(ROOT);
@@ -461,7 +462,30 @@ async function run() {
         return;
       }
 
-      const add = await runCommand("git", ["add", "-A"]);
+      // Explicit paths, never `git add -A`. This commit is unattended and
+      // pushes itself to main, so it must stage what the pipeline produces and
+      // not whatever else is sitting in the tree. `git add` exits 128 on a
+      // pathspec that does not exist, so only existing ones are passed.
+      const { skipped } = partitionByCommitPaths(beforeCommitChanges, AUTOPILOT_COMMIT_PATHS);
+      const present = [];
+      for (const target of AUTOPILOT_COMMIT_PATHS) {
+        try {
+          await fs.stat(path.join(ROOT, target));
+          present.push(target);
+        } catch {
+          // Not produced on this run; nothing to stage for it.
+        }
+      }
+
+      if (skipped.length) {
+        console.warn(
+          `autopilot: leaving ${skipped.length} changed path(s) unstaged, outside its commit scope:\n  ${skipped.join("\n  ")}`
+        );
+      }
+
+      const add = present.length
+        ? await runCommand("git", ["add", "--", ...present])
+        : { ok: false, type: "pipeline", command: "git add", stdout: "", stderr: "no autopilot output paths exist to stage" };
       runResults.push({ ...add, type: "pipeline" });
 
       if (add.ok) {
