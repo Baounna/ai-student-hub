@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
+import { Fragment } from "react";
+import { citationsForParagraph } from "@/lib/citations";
 import { AffiliateDisclosureInline } from "@/components/affiliate-disclosure-inline";
 import { ArticleToc } from "@/components/article-toc";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -53,10 +55,6 @@ function formatPublishedDate(date: string, locale: Locale) {
   }).format(new Date(date));
 }
 
-function getCitationIndex(paragraphIndex: number, totalReferences: number) {
-  if (!totalReferences) return undefined;
-  return (paragraphIndex % totalReferences) + 1;
-}
 
 function getHostLabel(href: string) {
   try {
@@ -330,18 +328,18 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                 <div key={idx}>
                   <p className={idx === 0 ? "reading-lead text-[color:var(--text-strong)]" : undefined}>
                     {paragraph}
-                    {post.references.length ? (
-                      <>
+                    {citationsForParagraph(post, idx).map((n) => (
+                      <Fragment key={`cite-${idx}-${n}`}>
                         {" "}
                         <a
-                          href={`#reference-${getCitationIndex(idx, post.references.length)}`}
+                          href={`#reference-${n}`}
                           className="inline-citation"
-                          aria-label={`Reference ${getCitationIndex(idx, post.references.length)}`}
+                          aria-label={`Reference ${n}`}
                         >
-                          [{getCitationIndex(idx, post.references.length)}]
+                          [{n}]
                         </a>
-                      </>
-                    ) : null}
+                      </Fragment>
+                    ))}
                   </p>
                   {idx === midIndex && (
                     <div className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--bg-soft)]/55 p-4">
@@ -395,6 +393,15 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
               <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
                 {locale === "fr" ? "Références et sources" : "References and sources"}
               </h2>
+              {/* Said plainly, because the alternative is a reader assuming each
+                  number maps to a sentence. These are the sources consulted for
+                  the article; a paragraph shows a number only where that
+                  paragraph was actually checked against that source. */}
+              <p className="mt-2 text-sm text-[color:var(--muted)]">
+                {locale === "fr"
+                  ? "Sources consultées pour cet article. Un numéro apparaît dans le texte uniquement là où le passage a été vérifié contre la source citée."
+                  : "Sources consulted for this article. A number appears in the text only where that passage was checked against the source it names."}
+              </p>
               <ol className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
                 {post.references.map((reference, index) => (
                   <li key={`${reference.href}-${index}`} id={`reference-${index + 1}`} className="leading-7">
