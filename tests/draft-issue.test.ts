@@ -40,6 +40,26 @@ function makeWorkspace() {
     path.join(dir, "src/content/stages.json"),
     JSON.stringify({ version: 1, updatedAt: "2026-09-21T12:00:00.000Z", items }, null, 2)
   );
+
+  // The issue also carries guides, which the script reads out of the content
+  // source because it cannot resolve the "@/" alias those modules import
+  // through. Synthetic stand-ins keep this workspace hermetic; that the parser
+  // agrees with the real modules is tests/posts-index.test.ts's job, not this
+  // file's. A comparison page is included deliberately: it has a slug at the
+  // same indentation and no publishedAt, and must never be sent as a guide.
+  const guide = (n: number) => `  {
+    slug: "guide-${n}",
+    title: "Guide ${n}",
+    publishedAt: "2026-09-${String(10 + n).padStart(2, "0")}",
+  },`;
+  fs.writeFileSync(
+    path.join(dir, "src/content/posts.ts"),
+    `export const basePosts = [\n${guide(1)}\n${guide(2)}\n  {\n    slug: "a-comparison-page",\n    title: "Not A Guide",\n  },\n];\n`
+  );
+  fs.writeFileSync(
+    path.join(dir, "src/content/posts-cs.ts"),
+    `export const csExpansionPosts = [\n${guide(3)}\n];\n`
+  );
   return dir;
 }
 
@@ -54,6 +74,99 @@ function covered(dir: string): string[] {
 
 afterAll(() => {
   for (const dir of workspaces) fs.rmSync(dir, { recursive: true, force: true });
+});
+
+function issueText(dir: string): string {
+  const file = fs.readdirSync(path.join(dir, "drafts")).find((f) => f.endsWith(".txt"));
+  return fs.readFileSync(path.join(dir, "drafts", file!), "utf8");
+}
+
+function coveredSlugs(dir: string): string[] {
+  const state = JSON.parse(fs.readFileSync(path.join(dir, "drafts/.last-issue.json"), "utf8"));
+  return state.coveredSlugs || [];
+}
+
+/**
+ * Every listing in this email is Morocco or France. The guides are the half a
+ * subscriber in any other country can use, which is the entire reason they are
+ * in here — so "the guides section exists and is not a repeat" is a promise to
+ * those readers, not a formatting detail.
+ */
+describe("the guides half of the issue", () => {
+  let dir: string;
+
+  beforeEach(() => {
+    dir = makeWorkspace();
+  });
+
+  it("carries guides alongside the regional listings", async () => {
+    await draft(dir);
+    const txt = issueText(dir);
+    expect(txt).toContain("GUIDES");
+    expect(txt).toContain("Guide 3");
+    expect(txt).toContain("Not region-specific");
+  });
+
+  it("never sends a comparison page as a guide", async () => {
+    await draft(dir);
+    expect(issueText(dir)).not.toContain("Not A Guide");
+    expect(coveredSlugs(dir)).not.toContain("a-comparison-page");
+  });
+
+  it("does not repeat a guide it has already sent", async () => {
+    await draft(dir);
+    const first = coveredSlugs(dir);
+    expect(first.length).toBeGreaterThan(0);
+
+    await draft(dir);
+    const second = issueText(dir);
+    for (const slug of first) {
+      const n = Number(slug.replace("guide-", ""));
+      expect(second, `re-sent Guide ${n}`).not.toContain(`Guide ${n}\n`);
+    }
+  });
+
+  // Before the guides existed, no unsent listings meant no issue at all. A
+  // week with a new guide and no new listing is still worth an email, and a
+  // reader outside the two countries would rather have that one than nothing.
+  it("still writes an issue when only a guide is new", async () => {
+    fs.writeFileSync(
+      path.join(dir, "drafts/.last-issue.json"),
+      JSON.stringify({
+        sentAt: "2026-09-20",
+        coveredIds: JSON.parse(fs.readFileSync(path.join(dir, "src/content/stages.json"), "utf8")).items.map(
+          (i: { id: string }) => i.id
+        ),
+        coveredSlugs: ["guide-3", "guide-2"]
+      })
+    );
+
+    const { stdout } = await draft(dir);
+    const txt = issueText(dir);
+    expect(txt).toContain("New guides -");
+    expect(txt).toContain("Guide 1");
+    expect(txt).toContain("No new openings since the last issue");
+    // Nothing was re-checked, so the issue must not claim a check date.
+    expect(txt).not.toContain("opened and checked on");
+    expect(stdout).toContain("1 guides");
+  });
+
+  it("exits without an issue when neither half has anything new", async () => {
+    fs.writeFileSync(
+      path.join(dir, "drafts/.last-issue.json"),
+      JSON.stringify({
+        sentAt: "2026-09-20",
+        coveredIds: JSON.parse(fs.readFileSync(path.join(dir, "src/content/stages.json"), "utf8")).items.map(
+          (i: { id: string }) => i.id
+        ),
+        coveredSlugs: ["guide-1", "guide-2", "guide-3"]
+      })
+    );
+
+    const { stdout } = await draft(dir);
+    expect(stdout).toContain("Nothing new since the last issue");
+    expect(fs.readdirSync(path.join(dir, "drafts")).some((f) => f.endsWith(".txt"))).toBe(false);
+  });
 });
 
 describe("the record of what has already been sent", () => {

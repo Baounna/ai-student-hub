@@ -55,8 +55,8 @@ export function ScrollCaptureCta({ locale }: { locale: Locale }) {
         </p>
         <p className="mt-1 text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? "Stages et alternances IA et cybersécurité. Nouvelle liste chaque semaine."
-            : "AI and cybersecurity internships. A new list every week."}
+            ? "Stages et alternances IA et cybersécurité au Maroc et en France. Nouvelle liste chaque semaine."
+            : "AI and cybersecurity internships in Morocco and France. A new list every week."}
         </p>
         <div className="mt-3 flex gap-2">
           <TrackableAnchor
