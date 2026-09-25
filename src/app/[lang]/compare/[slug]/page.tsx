@@ -162,7 +162,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
         <div className="space-y-8">
           <div className="media-frame group relative aspect-[16/10] rounded-2xl">
             <Image
-              src={coverImageUrl(params.slug, "Cloud/DevOps")}
+              src={coverImageUrl(params.slug, "Cloud/DevOps", params.lang)}
               alt={comparison.title}
               width={1200}
               height={675}

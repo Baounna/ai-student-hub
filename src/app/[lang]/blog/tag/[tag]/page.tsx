@@ -121,7 +121,7 @@ export default async function LocalizedTagPage(props: { params: Promise<{ lang: 
                     element here, and lazy-loading it deferred the one image
                     the page is judged on. The rest stay lazy. */}
                 <Image
-                  src={coverImageUrl(post.slug, post.category)}
+                  src={coverImageUrl(post.slug, post.category, locale)}
                   alt={post.title}
                   width={1200}
                   height={675}

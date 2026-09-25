@@ -154,12 +154,17 @@ export function ogImageUrl(title: string, kicker = "") {
  * own and new articles need nobody to draw anything.
  */
 /** Pass "none" as the topic for decorative tiles that get cropped narrow. */
-export function coverImageUrl(slug: string, topic = "") {
+export function coverImageUrl(slug: string, topic = "", locale = "en") {
   // Path segments, not a query string: next/image rejects a local source that
   // carries one, which would 400 every card on the page.
   const topicSegment = encodeURIComponent(
     (topic || "general").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "general"
   );
   const slugSegment = encodeURIComponent(slug || "cover");
-  return `/api/cover/${topicSegment}/${slugSegment}`;
+  // Locale is in the path because the cover carries the article's title, and a
+  // French reader should not be handed an English one. It is a segment rather
+  // than a query string for the same reason topic and slug are: next/image
+  // refuses to optimise a local source that carries a query.
+  const localeSegment = locale === "fr" ? "fr" : "en";
+  return `/api/cover/${topicSegment}/${localeSegment}/${slugSegment}`;
 }

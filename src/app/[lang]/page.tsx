@@ -552,7 +552,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                       scrolled to yet, alongside the fonts that do gate the
                       headline's paint. */}
                   <Image
-                    src={coverImageUrl(featuredPost.slug, featuredPost.category)}
+                    src={coverImageUrl(featuredPost.slug, featuredPost.category, locale)}
                     alt={featuredPost.title}
                     width={1200}
                     height={675}

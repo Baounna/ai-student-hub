@@ -406,7 +406,7 @@ export default async function LocalizedBlogPage(
             </div>
             <div className="media-frame group relative aspect-[16/10] rounded-2xl">
               <Image
-                src={coverImageUrl(featuredPost.slug, featuredPost.category)}
+                src={coverImageUrl(featuredPost.slug, featuredPost.category, locale)}
                 alt={featuredPost.title}
                 width={1200}
                 height={675}
@@ -452,7 +452,7 @@ export default async function LocalizedBlogPage(
               <div className="grid gap-4 md:grid-cols-[260px,1fr] md:items-start">
                 <Link href={`/${locale}/blog/${post.slug}`} className="media-frame group relative aspect-[16/10] rounded-xl">
                   <Image
-                    src={coverImageUrl(post.slug, post.category)}
+                    src={coverImageUrl(post.slug, post.category, locale)}
                     alt={post.title}
                     width={1200}
                     height={675}

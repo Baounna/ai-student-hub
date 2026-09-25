@@ -417,7 +417,7 @@ export default async function LocalizedCompareIndexPage(
                   <div className="grid gap-4 md:grid-cols-[230px,1fr] md:items-start">
                     <div className="media-frame group relative aspect-[16/10]">
                       <Image
-                        src={coverImageUrl("compare-index", "Cloud/DevOps")}
+                        src={coverImageUrl("compare-index", "Cloud/DevOps", locale)}
                         alt={comparison.title}
                         width={1200}
                         height={675}

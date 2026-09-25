@@ -142,7 +142,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    image: [absoluteUrl(coverImageUrl(post.slug, post.category))],
+    image: [absoluteUrl(coverImageUrl(post.slug, post.category, locale))],
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
     inLanguage: locale,
@@ -324,7 +324,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
         <div className="min-w-0 space-y-8">
           <div className="media-frame group relative aspect-[16/10] rounded-2xl">
             <Image
-              src={coverImageUrl(post.slug, post.category)}
+              src={coverImageUrl(post.slug, post.category, locale)}
               alt={post.title}
               width={1200}
               height={675}

@@ -134,7 +134,7 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
                     for layout before even requesting it. Everything below it
                     stays lazy. */}
                 <Image
-                  src={coverImageUrl(post.slug, post.category)}
+                  src={coverImageUrl(post.slug, post.category, locale)}
                   alt={post.title}
                   width={1200}
                   height={675}
