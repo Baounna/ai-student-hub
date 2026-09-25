@@ -6,20 +6,28 @@ import { isLocale } from "@/i18n/config";
 /**
  * Article cover images, generated per article.
  *
- * Eighteen posts once shared three SVG files, so every card looked like one of
- * three. That was replaced by a composition seeded from the slug — which fixed
- * the repetition and nothing else. The covers were still abstract bands and a
- * ring: distinct from each other, but silent about the article. A reader
- * scanning the index, or seeing a link shared, learned nothing from the image,
- * and the old note here even argued against stock photography on the grounds
- * that it "would date badly and say nothing about the subject". The generated
- * version said nothing either.
+ * This has now failed twice for opposite reasons, and both are worth keeping
+ * written down.
  *
- * So the cover now leads with the thing that actually identifies an article:
- * its title, in the reader's language, at a size that survives a card. The
- * seeded geometry stays as texture behind it, which keeps the set one family
- * and keeps every article's cover its own. The palette still comes from the
- * topic.
+ * First it was eighteen posts sharing three SVGs, which made every card look
+ * interchangeable. That was replaced by a composition seeded from the slug:
+ * four angled bands and a ring, coloured by topic. It fixed the repetition and
+ * nothing else -- the covers were distinct from each other and silent about the
+ * articles, and because the motif was identical everywhere, a page of them read
+ * as generated wallpaper rather than a designed publication.
+ *
+ * Then the title was added on top of that motif, anchored bottom-left. That
+ * broke it differently: these images are 1200x675 and the cards that show them
+ * are nearly square, so `object-cover` crops the sides. The featured card was
+ * rendering "EER INTERVIEWS" and "w to Build an AI Portfolio Project". Text
+ * sliced mid-word looks broken in a way plain decoration never did.
+ *
+ * So: no motif, and nothing near an edge. A solid ground from the topic, and
+ * one centred column 620px wide -- which is what survives a centre crop all the
+ * way down to 1:1 (visible width 675px, x 262 to 938). The variation between
+ * covers is the title and the colour, which is the variation that means
+ * something. A consistent frame is what makes a set look designed; a different
+ * random pattern on each one is what makes it look automatic.
  */
 export const runtime = "nodejs";
 
@@ -35,28 +43,6 @@ export const runtime = "nodejs";
  */
 const IMAGE_CACHE_CONTROL = "public, max-age=31536000, s-maxage=31536000, immutable";
 
-
-/** Small deterministic hash — same slug in, same composition out, forever. */
-function seedFrom(value: string) {
-  let h = 2166136261;
-  for (let i = 0; i < value.length; i += 1) {
-    h ^= value.charCodeAt(i);
-    h = Math.imul(h, 16777619);
-  }
-  return h >>> 0;
-}
-
-/** Mulberry32: tiny seeded PRNG, so the layout varies without being random. */
-function rng(seed: number) {
-  let a = seed;
-  return () => {
-    a |= 0;
-    a = (a + 0x6d2b79f5) | 0;
-    let t = Math.imul(a ^ (a >>> 15), 1 | a);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
 
 /**
  * One palette per editorial track, all sharing the site's ink and paper so the
@@ -113,10 +99,12 @@ function titleFor(slug: string, locale: string) {
  * box at the next size up.
  */
 function titleSize(title: string) {
-  if (title.length <= 28) return 92;
-  if (title.length <= 44) return 76;
-  if (title.length <= 62) return 64;
-  return 54;
+  // Tuned for the 620px column, not the full 1200px width: these are the sizes
+  // at which each length still fits three lines inside it.
+  if (title.length <= 30) return 54;
+  if (title.length <= 50) return 46;
+  if (title.length <= 70) return 40;
+  return 34;
 }
 
 /**
@@ -140,158 +128,78 @@ export async function GET(
   // to the slug — decorative tiles name their subject there ("news-ai-systems"),
   // which keeps a row of them visibly different rather than three of one colour.
   const palette = paletteFor(topic || slug);
-  const next = rng(seedFrom(slug));
   // The news strip's three tiles. They pass topic "none" because they must not
   // render a corner label, but they still need to say something.
   const isTile = slug.startsWith("news-");
+  // Decorative tiles pass topic "none"; they get their subject from the slug
+  // instead, so the strip still says what each third of it covers.
+  const label = topic || (isTile ? "News" : "");
   const fullTitle = isTile ? titleFromSlug(slug.replace(/^news-/, "")) : titleFor(slug, locale);
   // 96 characters is what fits three lines at the smallest size the ramp uses.
   const title = fullTitle.length > 96 ? `${fullTitle.slice(0, 95).trimEnd()}\u2026` : fullTitle;
-
-  // Four broad bands, angled and offset by the seed. Large simple forms hold up
-  // at card size, where fine detail would turn to mud.
-  const bands = Array.from({ length: 4 }, (_, i) => ({
-    top: Math.round(next() * 420) - 120,
-    left: Math.round(next() * 520) - 180,
-    width: Math.round(560 + next() * 620),
-    height: Math.round(70 + next() * 130),
-    rotate: Math.round(next() * 44) - 22,
-    color: i % 2 === 0 ? palette.a : palette.b,
-    // Dimmer than before: these sit behind the title now, and at the old
-    // opacity they competed with it instead of supporting it.
-    opacity: 0.12 + next() * 0.24
-  }));
-
-  const ringSize = Math.round(300 + next() * 260);
 
   return new ImageResponse(
     (
       <div
         style={{
-          width: "100%",
-          height: "100%",
+          width: "1200px",
+          height: "675px",
           display: "flex",
-          position: "relative",
-          overflow: "hidden",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
           background: palette.ground,
           fontFamily: "sans-serif"
         }}
       >
-        {bands.map((b, i) => (
-          <div
-            key={i}
-            style={{
-              position: "absolute",
-              top: `${b.top}px`,
-              left: `${b.left}px`,
-              width: `${b.width}px`,
-              height: `${b.height}px`,
-              background: b.color,
-              opacity: b.opacity,
-              transform: `rotate(${b.rotate}deg)`
-            }}
-          />
-        ))}
-
-        {/* One open ring: a steady mark across the set, placed by the seed. */}
+        {/* 620px, centred: the widest column that survives a centre crop down
+            to square. Nothing sits near an edge, so nothing gets sliced. */}
         <div
           style={{
-            position: "absolute",
-            top: `${Math.round(next() * 160) + 40}px`,
-            right: `${Math.round(next() * 180) + 40}px`,
-            width: `${ringSize}px`,
-            height: `${ringSize}px`,
-            borderRadius: `${ringSize}px`,
-            border: `2px solid ${palette.a}`,
-            opacity: 0.28
+            // 560, not the full 620 the crop allows: at 620 the longest titles
+            // ran to within ~35px of the crop edge, which reads as nearly-cut
+            // rather than as a margin.
+            width: "560px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            textAlign: "center",
+            gap: "26px"
           }}
-        />
-
-        {/* The news strip renders three of these cropped to roughly a third of
-            their width with object-center, so a bottom-left block would be
-            sliced -- which is why those tiles used to carry nothing at all and
-            the most prominent image on that page said nothing. Centred text
-            survives a centre crop, so they get a centred label instead of
-            staying blank. */}
-        {isTile ? (
-          <div
-            style={{
-              position: "absolute",
-              // Explicit offsets and an explicit size: Satori, which renders
-              // this image, does not honour the `inset` shorthand, and with it
-              // the block collapsed to the top-left corner instead of centring.
-              top: 0,
-              left: 0,
-              width: "1200px",
-              height: "675px",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "18px",
-              padding: "0 40px",
-              textAlign: "center"
-            }}
-          >
-            <div style={{ width: "14px", height: "14px", background: palette.a }} />
+        >
+          {label ? (
             <div
               style={{
-                fontSize: "52px",
-                lineHeight: 1.15,
-                color: palette.ink,
+                fontSize: "22px",
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                color: palette.a,
                 fontWeight: 700,
-                letterSpacing: "-0.01em",
-                display: "flex",
-                textAlign: "center"
-              }}
-            >
-              {title}
-            </div>
-          </div>
-        ) : topic ? (
-          <div
-            style={{
-              position: "absolute",
-              left: "64px",
-              right: "64px",
-              // 72, not 56: at 56 a descender in the last line sat a few pixels
-            // off the image edge, which reads as a crop rather than a margin.
-            bottom: "72px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "22px"
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
-              <div style={{ width: "12px", height: "12px", background: palette.a }} />
-              <div
-                style={{
-                  fontSize: "24px",
-                  letterSpacing: "0.16em",
-                  textTransform: "uppercase",
-                  color: palette.a,
-                  fontWeight: 700
-                }}
-              >
-                {topic}
-              </div>
-            </div>
-            <div
-              style={{
-                fontSize: `${titleSize(title)}px`,
-                lineHeight: 1.12,
-                color: palette.ink,
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
-                // next/og has no ellipsis support, so the title is cut to a
-                // length the box can hold rather than overflowing the image.
                 display: "flex"
               }}
             >
-              {title}
+              {label}
             </div>
+          ) : null}
+
+          <div
+            style={{
+              fontSize: `${titleSize(title)}px`,
+              lineHeight: 1.18,
+              color: palette.ink,
+              fontWeight: 700,
+              letterSpacing: "-0.02em",
+              display: "flex",
+              textAlign: "center"
+            }}
+          >
+            {title}
           </div>
-        ) : null}
+
+          {/* A short rule instead of a mark: it reads as an editorial device at
+              any size, where a small square disappeared on a card. */}
+          <div style={{ width: "72px", height: "3px", background: palette.a, display: "flex" }} />
+        </div>
       </div>
     ),
     {
