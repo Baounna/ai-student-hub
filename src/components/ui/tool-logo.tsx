@@ -13,6 +13,20 @@ type ToolLogoProps = {
 
 const DEFAULT_FALLBACK = "/images/tool-cloud.svg";
 
+/**
+ * A note for whoever styles the tile around this.
+ *
+ * These logos are third-party favicons, and favicons ship with their own
+ * background baked into the pixels: six of the fifteen carry an opaque white
+ * plate and two an opaque black one. Put them on a themed surface and the row
+ * breaks in both directions -- white squares punching out of dark cards, black
+ * squares out of light ones, corners overhanging the rounded tile.
+ *
+ * So both call sites give the tile a constant white plate rather than
+ * var(--surface). A logo plate that stays white on a dark page reads as
+ * deliberate; a grid of mismatched squares does not.
+ */
+
 function normalizeSrc(value: string) {
   const src = value.trim();
   if (!src) return DEFAULT_FALLBACK;
