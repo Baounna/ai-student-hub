@@ -146,10 +146,23 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
     inLanguage: locale,
-    author: {
-      "@type": "Person",
-      name: "AI and Cybersecurity News"
-    },
+    // A Person named with the publication's brand string, which is neither a
+    // person nor what the rest of the page says. The Organization node in the
+    // root layout already names the real human as founder, and the 20
+    // NewsArticle pages type this same string as an Organization -- so the
+    // markup contradicted itself twice over, on the property Google reads for
+    // authorship. Use the configured author when there is one, and fall back to
+    // the publication as an Organization rather than inventing a person.
+    author: siteConfig.authorName
+      ? {
+          "@type": "Person",
+          name: siteConfig.authorName,
+          ...(siteConfig.linkedinUrl ? { sameAs: [siteConfig.linkedinUrl] } : {})
+        }
+      : {
+          "@type": "Organization",
+          name: siteConfig.brandName
+        },
     publisher: {
       "@type": "Organization",
       name: "AI and Cybersecurity News",

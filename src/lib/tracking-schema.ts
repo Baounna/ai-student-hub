@@ -95,6 +95,3 @@ export function sanitizeTrackPayload(input: unknown): { ok: true; data: Sanitize
   };
 }
 
-export function getTrackedEvents() {
-  return TRACKED_EVENTS;
-}

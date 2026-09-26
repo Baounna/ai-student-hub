@@ -721,9 +721,6 @@ export function getNewsByTag(tagSlug: string, locale: Locale) {
   return getLocalizedNews(locale).filter((brief) => brief.tags.some((tag) => slugifyTopic(tag) === tagSlug));
 }
 
-export function getNewsByTopic(topic: string, locale: Locale) {
-  return getLocalizedNews(locale).filter((brief) => slugifyTopic(brief.topic) === slugifyTopic(topic));
-}
 
 export function slugifyTopic(input: string) {
   return input

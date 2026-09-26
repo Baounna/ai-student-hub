@@ -54,19 +54,6 @@ export function useStoredValue<T extends string | number | boolean>(
   return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
 
-/**
- * True once the client has taken over rendering.
- *
- * Several components render a placeholder until mounted, to avoid showing a
- * control whose state depends on storage the server cannot read.
- */
-export function useHasMounted(): boolean {
-  return useSyncExternalStore(
-    () => () => {},
-    () => true,
-    () => false
-  );
-}
 
 /**
  * Write a localStorage value and tell subscribers in this tab about it.

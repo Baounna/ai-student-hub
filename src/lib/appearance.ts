@@ -28,13 +28,6 @@ function getSystemTheme(): Theme {
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
-export function applyTheme(theme: Theme) {
-  if (typeof document === "undefined") return;
-  document.documentElement.setAttribute("data-theme", theme);
-  localStorage.setItem(appearanceStorageKeys.theme, theme);
-  localStorage.setItem(appearanceStorageKeys.themePreference, theme);
-  announce();
-}
 
 export function applyThemePreference(preference: ThemePreference) {
   if (typeof document === "undefined") return;

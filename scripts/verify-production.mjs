@@ -181,10 +181,20 @@ if (emailProvider === "convertkit") {
 
 const analyticsMode = ((env.ANALYTICS_MODE || "none").trim().toLowerCase() || "none");
 if (analyticsMode === "ga4") {
-  if (!(env.GA4_MEASUREMENT_ID || "").trim()) {
+  const measurementId = (env.GA4_MEASUREMENT_ID || "").trim();
+  if (!measurementId) {
     error("ANALYTICS_MODE=ga4 requires GA4_MEASUREMENT_ID.");
+  } else if (!/^G-[A-Z0-9]{6,}$/i.test(measurementId)) {
+    // This used to accept any non-empty string and report success, while
+    // isGa4Enabled() in src/lib/runtime-config.ts applies exactly these two
+    // rules -- so the preflight could certify analytics the site would then
+    // refuse to load. A green check for something that is not running is worse
+    // than no check.
+    error(`GA4_MEASUREMENT_ID "${measurementId}" is not a G-XXXXXXXXXX id, so analytics will not load.`);
+  } else if (/replace|placeholder|example|xxxx|1234567890/i.test(measurementId)) {
+    error(`GA4_MEASUREMENT_ID "${measurementId}" looks like a placeholder, so analytics will not load.`);
   } else {
-    ok("GA4 measurement id set.");
+    ok("GA4 measurement id set and valid.");
   }
 } else {
   warn("Analytics mode is none. No GA4 traffic insights.");

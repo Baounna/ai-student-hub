@@ -17,20 +17,8 @@ function getTurnstileSecret() {
   return (process.env.TURNSTILE_SECRET_KEY || "").trim();
 }
 
-export function getClientBotProtectionMode() {
-  return normalizeMode(process.env.NEXT_PUBLIC_BOT_PROTECTION_MODE);
-}
 
-export function getTurnstileSiteKey() {
-  return (process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "").trim();
-}
 
-export function isBotProtectionEnabled() {
-  const mode = getBotMode();
-  if (mode === "none") return false;
-  if (mode === "turnstile") return Boolean(getTurnstileSecret());
-  return false;
-}
 
 export async function verifyBotChallenge(
   rawToken: string | undefined,

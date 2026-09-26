@@ -37,7 +37,10 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const title = fr ? "Outils IA + cybersécurité pratiques pour le travail réel" : "Practical AI + Cybersecurity Tools for Real Work";
   // The <title> only. `title` still feeds the OG card, the share text and the
   // generated image, so the page itself keeps the full phrase.
-  const metadataTitle = fr ? "Outils IA + cybersécurité" : "Practical AI + Cybersecurity Tools";
+  // "Outils IA + cybersécurité" was also /fr/resources' seoTitle, making these
+  // the only two pages out of 244 to share a <title>. Two different pages under
+  // one title is a page a search engine cannot tell apart from another.
+  const metadataTitle = fr ? "Comparatifs d'outils IA + cybersécurité" : "Practical AI + Cybersecurity Tools";
   const description = fr
     ? "Guides d'outils et comparatifs IA + cybersécurité: budget-friendly, vitesse de déploiement, et impact exécution."
     : "Tool guides and comparisons for AI + Cybersecurity projects: budget-friendly options, deployment speed, and execution impact.";

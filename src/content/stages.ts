@@ -130,9 +130,6 @@ export function getOpenStages(now = Date.now()) {
   return getStages(now).filter((stage) => !isClosed(stage, now));
 }
 
-export function getStagesCount() {
-  return payload.items.length;
-}
 
 const KIND_LABELS: Record<StageKind, Record<Locale, string>> = {
   stage: { en: "Internship", fr: "Stage" },

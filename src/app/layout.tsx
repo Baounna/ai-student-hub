@@ -204,9 +204,11 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
     inLanguage: ["en", "fr"]
   };
 
+  const lang = documentLanguage(requestHeaders.get("x-pathname"));
+
   return (
     <html
-      lang={documentLanguage(requestHeaders.get("x-pathname"))}
+      lang={lang}
       className={fontVariables}
       data-theme="light"
       data-text-size="medium"
@@ -274,7 +276,12 @@ gtag('config', '${ga4MeasurementId}', { anonymize_ip: true });`}
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-[color:var(--surface-strong)] focus:px-3 focus:py-2 focus:text-sm focus:font-semibold focus:text-[color:var(--text-strong)]"
         >
-          Skip to content
+          {/* The root layout is locale-agnostic, so this was hardcoded English
+              and the very first tab stop on every /fr page was untranslated --
+              WCAG 3.1.2, on the one control a keyboard user meets first. The
+              document language is already derived from the path a few lines up
+              for the html lang attribute; reuse it. */}
+          {lang === "fr" ? "Aller au contenu" : "Skip to content"}
         </a>
         {children}
         {/* Until now nothing measured whether any of this was read. The script

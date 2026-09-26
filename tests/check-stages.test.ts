@@ -36,6 +36,14 @@ describe("expired-posting phrases", () => {
     expect(gonePhrase("Cette offre&nbsp;n'est plus en ligne")).toBeTruthy();
   });
 
+  // SmartRecruiters puts the auxiliary between the noun and the participle, so
+  // "offre expir" -- which catches "offre expiree" -- missed it, and a Wavestone
+  // listing sat on the board as open with a dead destination.
+  it("catches the verb form with an auxiliary in between", () => {
+    expect(gonePhrase("Ce poste a expiré")).toBeTruthy();
+    expect(gonePhrase("Désolé, cette offre a expiré")).toBeTruthy();
+  });
+
   it("does not fire on an ordinary live posting", () => {
     expect(gonePhrase("Stage PFE - nous recherchons un etudiant en derniere annee")).toBe("");
   });

@@ -733,7 +733,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                 </Link>
               )}
             </div>
-            <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "home_execution_plan", locale }} className="do-link">
+            <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "home_execution_plan", locale }} className="do-link inline-block py-1.5">
               {locale === "fr" ? siteConfig.leadMagnet.frLabel : siteConfig.leadMagnet.enLabel}
             </TrackableAnchor>
           </div>
@@ -826,19 +826,19 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           {locale === "fr" ? "Contribuer et progresser" : "Contribute and progress"}
         </div>
         <div className="flex flex-wrap items-center gap-3 p-4 text-sm text-[color:var(--text)]">
-          <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "home_wiki", locale }} className="do-link">
+          <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "home_wiki", locale }} className="do-link inline-block py-1.5">
             {dict.home.ctaPrimary}
           </TrackableAnchor>
           <span>•</span>
-          <Link href={`/${locale}/news`} className="do-link">
+          <Link href={`/${locale}/news`} className="do-link inline-block py-1.5">
             {locale === "fr" ? "Suivre les actualités IA/CS" : "Follow AI + Cybersecurity news"}
           </Link>
           <span>•</span>
-          <Link href={`/${locale}/blog`} className="do-link">
+          <Link href={`/${locale}/blog`} className="do-link inline-block py-1.5">
             {locale === "fr" ? "Explorer les articles" : "Explore articles"}
           </Link>
           <span>•</span>
-          <Link href={`/${locale}/compare`} className="do-link">
+          <Link href={`/${locale}/compare`} className="do-link inline-block py-1.5">
             {locale === "fr" ? "Lab outils et plateformes" : "Tools and platform lab"}
           </Link>
         </div>

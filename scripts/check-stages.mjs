@@ -71,6 +71,12 @@ const GONE = [
   // five dead postings sailed through every weekly run answering a clean 200.
   "n'est plus disponible",
   "n'est plus en ligne",
+  // SmartRecruiters' wording, found on a Wavestone listing that answered 200
+  // with no deadline and so rendered as open: "Ce poste a expire / Desole,
+  // cette offre a expire". The list already had "offre expir", which catches
+  // "offre expiree" but not the verb form with the auxiliary between.
+  "poste a expir",
+  "offre a expir",
   "no longer accepting applications",
   "no longer available",
   "cette offre est pourvue",
