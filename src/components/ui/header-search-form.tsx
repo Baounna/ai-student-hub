@@ -157,6 +157,10 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
   }
 
   function onInputKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
+    // An IME candidate window uses the same arrow keys and Enter. Acting on
+    // them mid-composition moves the suggestion highlight and navigates away
+    // instead of committing the character the reader was choosing.
+    if (event.nativeEvent.isComposing) return;
     if (event.key === "Escape") {
       // First Escape dismisses the list; a second clears the field. Closing and
       // clearing on the same press loses work the reader may still want.
@@ -169,6 +173,17 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
       return;
     }
     if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      // Escape used to be a one-way door: with the list closed there was no key
+      // that reopened it, so a keyboard user had to edit the text to get
+      // suggestions back. The same trap caught anyone arriving at
+      // /blog?query=ai, where the box is pre-filled but closed. APG requires
+      // Down Arrow to open the popup.
+      if (!open && hasQuery) {
+        event.preventDefault();
+        setOpen(true);
+        void primeIndex();
+        return;
+      }
       if (!suggestions.length) return;
       event.preventDefault();
       const delta = event.key === "ArrowDown" ? 1 : -1;
@@ -176,6 +191,13 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
       const next = raw < -1 ? suggestions.length - 1 : raw >= suggestions.length ? -1 : raw;
       activeRef.current = next;
       setActiveIndex(next);
+      // The list scrolls now, so moving the highlight past the fold has to
+      // bring the row with it.
+      if (next >= 0) {
+        requestAnimationFrame(() => {
+          document.getElementById(optionId(next))?.scrollIntoView({ block: "nearest" });
+        });
+      }
       return;
     }
     const chosen = activeRef.current >= 0 && activeRef.current < suggestions.length ? activeRef.current : activeClamped;
@@ -186,6 +208,13 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
       setOpen(false);
       router.push(suggestions[chosen].h);
     }
+  }
+
+  function onShellBlur(event: React.FocusEvent<HTMLElement>) {
+    // Only when focus has left the whole shell: moving between the input and a
+    // suggestion must not close it. A document mousedown handler alone left the
+    // list open, and aria-expanded true, after tabbing away.
+    if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setOpen(false);
   }
 
   const comboProps = {
@@ -199,8 +228,24 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
     onKeyDown: onInputKeyDown
   };
 
+  // A screen reader was told only that the popup expanded, never what landed
+  // in it. WCAG 4.1.3 asks for the count as a status message.
+  const announcement = !open || !hasQuery
+    ? ""
+    : suggestions.length === 0
+      ? fr
+        ? "Aucune suggestion. Appuyez sur Entree pour lancer la recherche."
+        : "No suggestions. Press Enter to search."
+      : fr
+        ? `${suggestions.length} suggestion${suggestions.length > 1 ? "s" : ""}`
+        : `${suggestions.length} suggestion${suggestions.length > 1 ? "s" : ""}`;
+
   const dropdown = (
-    <SearchSuggestions
+    <>
+      <p role="status" aria-live="polite" className="sr-only">
+        {announcement}
+      </p>
+      <SearchSuggestions
       query={query}
       entries={suggestions}
       activeIndex={activeClamped}
@@ -212,7 +257,12 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
         activeRef.current = index;
         setActiveIndex(index);
       }}
-    />
+      emptyLabel={
+        fr ? "Appuyer sur Entree pour rechercher" : "Press Enter to search"
+      }
+      showEmpty={open && hasQuery}
+      />
+    </>
   );
 
   if (mobile) {
@@ -221,7 +271,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
         <label htmlFor={inputId} className="sr-only">
           {inputLabel}
         </label>
-        <div ref={shellRef} className="header-search-shell group relative min-w-0 flex-1 rounded-xl">
+        <div ref={shellRef} onBlur={onShellBlur} className="header-search-shell group relative min-w-0 flex-1 rounded-xl">
           <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[color:var(--muted)] transition group-focus-within:text-[color:var(--primary)]">
             <svg aria-hidden viewBox="0 0 20 20" className="h-4 w-4">
               <path
@@ -269,7 +319,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
       <label htmlFor={inputId} className="sr-only">
         {fr ? "Rechercher" : "Search"}
       </label>
-      <div ref={shellRef} className="header-search-shell group relative min-w-0 flex-1 rounded-2xl">
+      <div ref={shellRef} onBlur={onShellBlur} className="header-search-shell group relative min-w-0 flex-1 rounded-2xl">
         <span className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-[color:var(--muted)] transition group-focus-within:text-[color:var(--primary)]">
           <svg aria-hidden viewBox="0 0 20 20" className="h-4 w-4">
             <path

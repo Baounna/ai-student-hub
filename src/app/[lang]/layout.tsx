@@ -92,7 +92,13 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
           nothing and the settings dropdown inside it lost to the hero h1 in
           paint order. relative restores the stacking context without pinning
           anything — the header still scrolls away. */}
-      <header className="relative md:sticky md:top-0 z-30 border-b border-[color:var(--border)] bg-[color:var(--surface-strong)] backdrop-blur-2xl">
+      {/* z-50, not z-30. `relative` makes this a stacking context, so every
+          descendant is capped at the header's own layer -- and MobileQuickNav
+          is a SIBLING at z-40. The search dropdown asks for z-50 and was still
+          painted underneath it, so on a phone a reader tapped a suggestion they
+          could see and landed on whichever nav tab was beneath. A wrong
+          destination, not just a cosmetic overlap. */}
+      <header className="relative md:sticky md:top-0 z-50 border-b border-[color:var(--border)] bg-[color:var(--surface-strong)] backdrop-blur-2xl">
         <div className="mx-auto max-w-6xl px-4 py-3 md:px-6">
           <div className="mb-2 hidden items-center justify-end gap-1 text-sm md:flex">
             {/* A visible language switch. This lived only inside the settings

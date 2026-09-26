@@ -673,6 +673,16 @@ html[data-content-width="wide"] {
     color: color-mix(in srgb, var(--text), #ffffff 6%);
   }
 
+  /* type="search" draws a native clear button in Chrome and Safari, which sat
+     immediately beside the custom one -- two clear affordances in the same
+     field, and the native one has no accessible name. The custom button is
+     kept because it is the labelled one. */
+  .header-search-shell input[type="search"]::-webkit-search-cancel-button,
+  .header-search-shell input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
   .reading-prose :where(pre, code) {
     /* Was "JetBrains Mono", which this site loads nowhere -- the name appeared
        exactly once in the codebase, so every code block silently fell back to

@@ -138,3 +138,35 @@ describe("repeated entries", () => {
     expect(rankSuggestions("ai", [...distinct, ...repeated], 8)).toHaveLength(8);
   });
 });
+
+describe("hidden match text and kind weighting", () => {
+  const withMatchText: Suggestion[] = [
+    { t: "How to Read an AI Paper", h: "/en/blog/p", k: "guide", s: "AI Fundamentals", m: "arxiv three pass method preprint" },
+    { t: "Airbus Internship", h: "/en/stages", k: "internship", s: "Airbus, Toulouse" }
+  ];
+
+  // Tags and keywords are searched but never displayed: "arxiv" is nowhere in
+  // the title, and it is exactly what someone looks for.
+  it("matches on hidden keywords the label does not contain", () => {
+    expect(rankSuggestions("arxiv", withMatchText).map((s) => s.t)).toEqual(["How to Read an AI Paper"]);
+    expect(rankSuggestions("three pass", withMatchText).map((s) => s.t)).toEqual(["How to Read an AI Paper"]);
+  });
+
+  /**
+   * The weights are a tiebreaker, not an override. A prefix match is worth
+   * +100, so an internship whose title starts with the query still wins -- and
+   * should, because a reader typing "ai" wants the thing called "AI…" first.
+   */
+  it("lets a prefix match outrank the kind weight", () => {
+    const out = rankSuggestions("airbus", withMatchText);
+    expect(out[0].k).toBe("internship");
+  });
+
+  it("prefers a guide over an internship when both match the same way", () => {
+    const sameClass: Suggestion[] = [
+      { t: "Zeta internship role", h: "/en/stages", k: "internship" },
+      { t: "Zeta guide topic", h: "/en/blog/z", k: "guide" }
+    ];
+    expect(rankSuggestions("zeta", sameClass)[0].k).toBe("guide");
+  });
+});

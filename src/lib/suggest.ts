@@ -27,20 +27,27 @@ export type Suggestion = {
   k: SuggestKind;
   /** optional sub-label: a company and city, a tool's category */
   s?: string;
+  /** optional hidden match text: tags and keywords, searched but never shown */
+  m?: string;
 };
 
 /**
- * Guides first, then comparisons, then tools, then internships.
+ * A tiebreaker between entries that match equally well -- not an override.
  *
- * Not arbitrary: a reader typing into a box labelled "Search AI, backend,
- * cloud, algorithms" is looking for something to read. Internships rank last
- * despite being the largest group precisely because there are 85 of them —
- * without this they would crowd out every guide on any broad term.
+ * The earlier comment here claimed internships "rank last ... without this they
+ * would crowd out every guide", which overstated what these numbers do: the
+ * prefix bonus below is +100 and the word-boundary bonus +50, so a kind weight
+ * of 0-6 can only order entries inside the same match class. An internship
+ * whose title STARTS with the query still outranks a guide that merely contains
+ * it, and that is correct for a typeahead -- a reader typing "ai" wants the
+ * thing called "AI…" first, whatever it is. Within one class, though, the guide
+ * should win, and 0/2/4/6 makes that unambiguous where 0/1/2/3 left it to the
+ * length tiebreak.
  */
 const KIND_WEIGHT: Record<SuggestKind, number> = {
-  guide: 3,
-  compare: 2,
-  tool: 1,
+  guide: 6,
+  compare: 4,
+  tool: 2,
   internship: 0
 };
 
@@ -70,7 +77,7 @@ export function rankSuggestions(query: string, entries: Suggestion[], limit = 8)
   const terms = searchTerms(query);
   if (!terms.length) return [];
   const ranked = entries
-    .filter((entry) => matchesAllTerms(terms, [entry.t, entry.s]))
+    .filter((entry) => matchesAllTerms(terms, [entry.t, entry.s, entry.m]))
     .map((entry) => ({ entry, s: score(entry, query, terms) }))
     .sort((a, b) => b.s - a.s || a.entry.t.length - b.entry.t.length || a.entry.t.localeCompare(b.entry.t));
 
