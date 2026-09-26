@@ -1,5 +1,10 @@
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
+import { preferredLocale } from "@/lib/preferred-locale";
 
-export default function ProductRedirectPage() {
-  redirect("/en/product/ai-career-guide");
+// Was a hardcoded /en, so a French reader following an old link landed in the
+// wrong edition of a bilingual site. See src/lib/preferred-locale.ts.
+export default async function ProductRedirect() {
+  const header = (await headers()).get("accept-language");
+  redirect(`/${preferredLocale(header)}/product/ai-career-guide`);
 }
