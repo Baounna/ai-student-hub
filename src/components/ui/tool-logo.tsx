@@ -14,17 +14,26 @@ type ToolLogoProps = {
 const DEFAULT_FALLBACK = "/images/tool-cloud.svg";
 
 /**
- * A note for whoever styles the tile around this.
+ * Why this renders a wrapper instead of a bare image.
  *
- * These logos are third-party favicons, and favicons ship with their own
- * background baked into the pixels: six of the fifteen carry an opaque white
- * plate and two an opaque black one. Put them on a themed surface and the row
- * breaks in both directions -- white squares punching out of dark cards, black
- * squares out of light ones, corners overhanging the rounded tile.
+ * These logos are third-party favicons, and favicons carry their own
+ * background baked into the pixels. Measured across the fifteen the site uses:
+ * seven arrive on an opaque white plate, six are transparent, and
+ * antigravity.ai is an opaque near-black tile, rgba(17,17,17,255) in every
+ * corner.
  *
- * So both call sites give the tile a constant white plate rather than
- * var(--surface). A logo plate that stays white on a dark page reads as
- * deliberate; a grid of mismatched squares does not.
+ * Two consequences, and the second is the reason for the extra element.
+ *
+ * On a themed surface the row broke in both directions -- white plates
+ * punching squares out of dark cards. Hence the constant white plate on the
+ * tile: a logo plate that stays white on a dark page reads as deliberate.
+ *
+ * That still left the black-plated one as a hard-cornered square sitting
+ * inside a rounded white tile. border-radius on the image cannot fix it while
+ * the image carries padding: the radius follows the border box, and padding
+ * insets the content away from that curve, so the corners stay square. Putting
+ * the padding on a wrapper and leaving the image itself unpadded lets the
+ * image's own radius clip the plate it ships with.
  */
 
 function normalizeSrc(value: string) {
@@ -38,19 +47,23 @@ export function ToolLogo({ src, alt, size = 40, className, fallbackSrc = DEFAULT
   const [currentSrc, setCurrentSrc] = useState(() => normalizeSrc(src));
 
   return (
-    <Image
-      src={currentSrc}
-      alt={alt}
-      width={size}
-      height={size}
-      loading="lazy"
-      onError={() => {
-        if (currentSrc !== safeFallback) {
-          setCurrentSrc(safeFallback);
-        }
-      }}
-      className={className}
-    />
+    <span className={`inline-flex items-center justify-center ${className ?? ""}`}>
+      <Image
+        src={currentSrc}
+        alt={alt}
+        width={size}
+        height={size}
+        loading="lazy"
+        onError={() => {
+          if (currentSrc !== safeFallback) {
+            setCurrentSrc(safeFallback);
+          }
+        }}
+        // object-contain so a non-square favicon is letterboxed rather than
+        // stretched: Google returns 55x56 for Anki and 96x97 for Quizlet.
+        className="h-full w-full rounded-md object-contain"
+      />
+    </span>
   );
 }
 
