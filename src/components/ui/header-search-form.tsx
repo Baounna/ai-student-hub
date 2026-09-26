@@ -1,9 +1,44 @@
 "use client";
 
-import { useCallback, useRef, useState, useSyncExternalStore } from "react";
-import { usePathname } from "next/navigation";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import type { Locale } from "@/i18n/config";
 import { sanitizeSearchInputLive, sanitizeSearchQuery } from "@/lib/input";
+import type { Suggestion } from "@/lib/suggest";
+import { SearchSuggestions, suggestionsFor } from "@/components/ui/search-suggestions";
+
+/**
+ * The typeahead index is fetched once per page, on the first focus of either
+ * search box, and shared between them. Module scope rather than component
+ * state because the header renders two of these -- desktop and mobile -- and
+ * they should not each pull their own copy.
+ */
+const indexCache: Record<string, Suggestion[] | undefined> = {};
+const indexInFlight: Record<string, Promise<Suggestion[]> | undefined> = {};
+
+async function loadSuggestIndex(locale: string): Promise<Suggestion[]> {
+  const cached = indexCache[locale];
+  if (cached) return cached;
+  const existing = indexInFlight[locale];
+  if (existing) return existing;
+  const request = fetch(`/api/search-suggest/${locale}`)
+    .then((response) => (response.ok ? response.json() : []))
+    .then((data: Suggestion[]) => {
+      indexCache[locale] = Array.isArray(data) ? data : [];
+      return indexCache[locale] as Suggestion[];
+    })
+    // A failed fetch must leave the box working as a plain search field, not
+    // broken: suggestions are an enhancement, never a dependency.
+    .catch(() => {
+      indexCache[locale] = [];
+      return [] as Suggestion[];
+    })
+    .finally(() => {
+      indexInFlight[locale] = undefined;
+    });
+  indexInFlight[locale] = request;
+  return request;
+}
 
 type HeaderSearchFormProps = {
   locale: Locale;
@@ -68,8 +103,117 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
 
   function clearSearch() {
     setQuery("");
+    setOpen(false);
+    activeRef.current = -1;
+    setActiveIndex(-1);
     inputRef.current?.focus();
   }
+
+  const router = useRouter();
+  const shellRef = useRef<HTMLDivElement | null>(null);
+  const [entries, setEntries] = useState<Suggestion[]>(() => indexCache[locale] ?? []);
+  const [open, setOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
+  // React batches the state update from ArrowDown, so a fast
+  // ArrowDown-then-Enter can reach the Enter handler before the new index has
+  // committed and land on nothing. The ref is written synchronously in the
+  // same handler, so Enter always reads the row the reader just moved to.
+  const activeRef = useRef(-1);
+
+  const suggestions = open ? suggestionsFor(query, entries) : [];
+  const listboxId = `${inputId}-listbox`;
+  const optionId = (index: number) => `${inputId}-option-${index}`;
+
+  // The active row can go out of range when the query narrows the list under
+  // the cursor. Clamping during render keeps aria-activedescendant pointing at
+  // an element that exists.
+  const activeClamped = activeIndex >= suggestions.length ? -1 : activeIndex;
+
+  useEffect(() => {
+    if (!open) return;
+    function onPointerDown(event: MouseEvent | TouchEvent) {
+      if (!shellRef.current?.contains(event.target as Node)) setOpen(false);
+    }
+    document.addEventListener("mousedown", onPointerDown);
+    document.addEventListener("touchstart", onPointerDown);
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("touchstart", onPointerDown);
+    };
+  }, [open]);
+
+  async function primeIndex() {
+    if (entries.length) return;
+    const loaded = await loadSuggestIndex(locale);
+    setEntries(loaded);
+  }
+
+  function onInputChange(value: string) {
+    setQuery(sanitizeSearchInputLive(value));
+    activeRef.current = -1;
+    setActiveIndex(-1);
+    setOpen(true);
+    void primeIndex();
+  }
+
+  function onInputKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
+    if (event.key === "Escape") {
+      // First Escape dismisses the list; a second clears the field. Closing and
+      // clearing on the same press loses work the reader may still want.
+      if (open && suggestions.length) {
+        event.preventDefault();
+        setOpen(false);
+        return;
+      }
+      if (hasQuery) clearSearch();
+      return;
+    }
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      if (!suggestions.length) return;
+      event.preventDefault();
+      const delta = event.key === "ArrowDown" ? 1 : -1;
+      const raw = activeClamped + delta;
+      const next = raw < -1 ? suggestions.length - 1 : raw >= suggestions.length ? -1 : raw;
+      activeRef.current = next;
+      setActiveIndex(next);
+      return;
+    }
+    const chosen = activeRef.current >= 0 && activeRef.current < suggestions.length ? activeRef.current : activeClamped;
+    if (event.key === "Enter" && chosen >= 0 && suggestions[chosen]) {
+      // Go where the reader pointed, rather than submitting the raw text to
+      // the results page and making them pick the same item again.
+      event.preventDefault();
+      setOpen(false);
+      router.push(suggestions[chosen].h);
+    }
+  }
+
+  const comboProps = {
+    role: "combobox" as const,
+    "aria-expanded": open && suggestions.length > 0,
+    "aria-controls": listboxId,
+    "aria-autocomplete": "list" as const,
+    "aria-activedescendant": activeClamped >= 0 ? optionId(activeClamped) : undefined,
+    onFocus: () => void primeIndex(),
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => onInputChange(event.target.value),
+    onKeyDown: onInputKeyDown
+  };
+
+  const dropdown = (
+    <SearchSuggestions
+      query={query}
+      entries={suggestions}
+      activeIndex={activeClamped}
+      listboxId={listboxId}
+      optionId={optionId}
+      locale={locale}
+      onPick={() => setOpen(false)}
+      onHover={(index) => {
+        activeRef.current = index;
+        setActiveIndex(index);
+      }}
+    />
+  );
 
   if (mobile) {
     return (
@@ -77,7 +221,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
         <label htmlFor={inputId} className="sr-only">
           {inputLabel}
         </label>
-        <div className="header-search-shell group relative min-w-0 flex-1 rounded-xl">
+        <div ref={shellRef} className="header-search-shell group relative min-w-0 flex-1 rounded-xl">
           <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[color:var(--muted)] transition group-focus-within:text-[color:var(--primary)]">
             <svg aria-hidden viewBox="0 0 20 20" className="h-4 w-4">
               <path
@@ -96,10 +240,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
             spellCheck={false}
             enterKeyHint="search"
             value={query}
-            onChange={(event) => setQuery(sanitizeSearchInputLive(event.target.value))}
-            onKeyDown={(event) => {
-              if (event.key === "Escape" && hasQuery) clearSearch();
-            }}
+            {...comboProps}
             placeholder={placeholder}
             maxLength={120}
             className="h-10 min-w-0 w-full rounded-xl border-0 bg-transparent pl-9 pr-9 text-sm text-[color:var(--text)] placeholder:text-[color:var(--muted)] outline-none"
@@ -114,6 +255,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
               ×
             </button>
           ) : null}
+          {dropdown}
         </div>
         <button type="submit" className="btn-secondary h-10 shrink-0 rounded-xl px-4 py-0 text-xs">
           {fr ? "Chercher" : "Search"}
@@ -127,7 +269,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
       <label htmlFor={inputId} className="sr-only">
         {fr ? "Rechercher" : "Search"}
       </label>
-      <div className="header-search-shell group relative min-w-0 flex-1 rounded-2xl">
+      <div ref={shellRef} className="header-search-shell group relative min-w-0 flex-1 rounded-2xl">
         <span className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-[color:var(--muted)] transition group-focus-within:text-[color:var(--primary)]">
           <svg aria-hidden viewBox="0 0 20 20" className="h-4 w-4">
             <path
@@ -146,10 +288,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
           spellCheck={false}
           enterKeyHint="search"
           value={query}
-          onChange={(event) => setQuery(sanitizeSearchInputLive(event.target.value))}
-          onKeyDown={(event) => {
-            if (event.key === "Escape" && hasQuery) clearSearch();
-          }}
+          {...comboProps}
           placeholder={placeholder}
           maxLength={120}
           className="h-11 w-full rounded-2xl border-0 bg-transparent pl-10 pr-14 text-[15px] text-[color:var(--text)] placeholder:text-[color:var(--muted)] outline-none"
@@ -168,6 +307,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
             /
           </span>
         )}
+        {dropdown}
       </div>
       <button type="submit" className="btn-secondary h-11 min-w-[7.4rem] shrink-0 rounded-2xl px-6 py-0">
         {fr ? "Rechercher" : "Search"}
