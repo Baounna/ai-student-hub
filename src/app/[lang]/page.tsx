@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { headers } from "next/headers";
 import { AffiliateDisclosureInline } from "@/components/affiliate-disclosure-inline";
 import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
@@ -24,9 +23,7 @@ import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
-import { absoluteUrl } from "@/lib/site-url";
 import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
-import { jsonLd } from "@/lib/json-ld";
 import { formatReadTime } from "@/lib/read-time";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -70,7 +67,6 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
-  const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const dict = getDictionary(locale);
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
 
@@ -269,22 +265,8 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
     }
   ];
 
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "AI and Cybersecurity News",
-    url: absoluteUrl(`/${locale}`),
-    inLanguage: locale,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: absoluteUrl(`/${locale}/blog?query={search_term_string}`),
-      "query-input": "required name=search_term_string"
-    }
-  };
-
   return (
     <div className="page-shell max-w-6xl py-8 md:py-10">
-      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(websiteSchema) }} />
 
       <section className="wiki-panel overflow-hidden rounded-md">
         {/* The page's h1. It was a plain div, so the homepage — the page search

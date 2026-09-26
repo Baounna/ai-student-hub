@@ -170,6 +170,7 @@ function documentLanguage(pathname: string | null) {
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const requestHeaders = await headers();
   const nonce = requestHeaders.get("x-csp-nonce") || undefined;
+  const lang = documentLanguage(requestHeaders.get("x-pathname"));
   const ga4Enabled = isGa4Enabled();
   const ga4MeasurementId = getGa4MeasurementId();
   const organizationSchema = {
@@ -196,15 +197,30 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         }
       : undefined
   };
+  /**
+   * One WebSite node for the whole site.
+   *
+   * The home page declared a second one -- same name, url of /en rather than
+   * the origin, no @id on either -- so /en and /fr each shipped two WebSite
+   * entities that nothing tied together. That is a duplicate-entity smell and
+   * it is the kind of thing that costs a sitelinks searchbox. The SearchAction
+   * it carried was the only part the layout lacked, and it is site-wide, so it
+   * lives here now with a target in the reader's own language.
+   */
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${getSiteUrl()}/#website`,
     name: "AI and Cybersecurity News",
     url: getSiteUrl(),
-    inLanguage: ["en", "fr"]
+    inLanguage: ["en", "fr"],
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${getSiteUrl()}/${lang}/blog?query={search_term_string}`,
+      "query-input": "required name=search_term_string"
+    }
   };
 
-  const lang = documentLanguage(requestHeaders.get("x-pathname"));
 
   return (
     <html
