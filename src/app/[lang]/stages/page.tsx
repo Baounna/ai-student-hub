@@ -106,19 +106,6 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
   // with the breadcrumbs on the page is exactly what Search Console flags.
   const breadcrumbs = [{ label: "AI and Cybersecurity News", href: `/${locale}` }, { label: copy.title }];
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: breadcrumbs.map((crumb, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: crumb.label,
-      // The last crumb renders as plain text rather than a link, so it has no
-      // href of its own; it still identifies this page.
-      item: absoluteUrl(crumb.href ?? `/${locale}/stages`)
-    }))
-  };
-
   /**
    * ItemList, deliberately not JobPosting.
    *
@@ -158,7 +145,6 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
     <section className="page-shell max-w-5xl py-10 md:py-12">
       {/* jsonLd(), never bare JSON.stringify: a role or company name carrying
           "<" would otherwise close the script block and turn data into markup. */}
-      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
       <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(itemListSchema) }} />
 
       <Breadcrumbs items={breadcrumbs} locale={locale} />
