@@ -158,7 +158,15 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
         </div>
       </div>
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
+      {/* grid-cols-[minmax(0,1fr)] on the base track, not just at lg.
+          Without it the implicit mobile track is auto-sized, so the tools
+          matrix inside pushed it to 762px in a 390px viewport. The matrix has
+          its own overflow-x-auto, but that scroller never engaged because its
+          wrapper had been sized to the blown-out track -- and body has
+          overflow-x: hidden, so the excess was not scrollable but silently
+          clipped. Verdict cards ran off-screen and the price column showed as
+          "$", "si", "co" with no way for a reader to reach the rest. */}
+      <div className="mt-8 grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
         <div className="space-y-8">
           <div className="media-frame group relative aspect-[16/10] rounded-2xl">
             <Image

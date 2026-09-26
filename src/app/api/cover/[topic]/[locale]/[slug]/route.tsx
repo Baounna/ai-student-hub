@@ -127,9 +127,11 @@ function titleSize(title: string, narrow = false) {
   // The narrow ramp is for the news tiles, whose column is 340px rather than
   // 560 because their crop is portrait.
   if (narrow) {
-    if (title.length <= 16) return 34;
-    if (title.length <= 28) return 28;
-    return 24;
+    // Small, because the column is 170px: these wrap to two or three short
+    // lines rather than running past the crop.
+    if (title.length <= 14) return 24;
+    if (title.length <= 24) return 20;
+    return 18;
   }
   if (title.length <= 30) return 54;
   if (title.length <= 50) return 46;
@@ -188,14 +190,21 @@ export async function GET(
           style={{
             // Two widths, because two very different crops read this image.
             //
-            // Article cards are landscape or square; the tightest is 1:1, which
-            // shows 675px of source, and 560 sits inside that with margin.
+            // Article cards are landscape or square; the tightest measured is
+            // 4:3, showing 902px of source, and 560 clears every one of them by
+            // at least 190px.
             //
-            // The three news tiles are NOT square. They are h-[22rem] in a
-            // three-column grid, about 226x352 -- an aspect of 0.64, portrait --
-            // so only 433px of source survives. 560 was sliced there: the live
-            // tile read "ecurity Standard". 340 fits with room on both sides.
-            width: isTile ? "340px" : "560px",
+            // The news tiles are the hard case and I have now got them wrong
+            // twice by assuming an aspect instead of measuring the element.
+            // .news-feature-media is grid-cols-3 at EVERY breakpoint -- it never
+            // stacks -- so each tile is a sliver whose aspect changes with the
+            // viewport: measured 202x352 (0.575) at 1280 and 98x256 (0.383) at
+            // 390, and about 80x256 (0.31) at 320. The narrowest of those shows
+            // roughly 211px of a 1200px source.
+            //
+            // 170 is sized to that worst case, not to a typical one. At 340 the
+            // live tile rendered "Computer System" with the C cut in half.
+            width: isTile ? "170px" : "560px",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
