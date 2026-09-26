@@ -8,14 +8,17 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: "/en",
     scope: "/",
     display: "standalone",
-    background_color: "#020617",
-    theme_color: "#0b1220",
+    // Was #020617 / #0b1220 -- navy, from an older identity. The site's own
+    // grounds are #ffffff on light and #0c1114 on dark, so the install splash
+    // and Android's chrome matched neither.
+    background_color: "#ffffff",
+    theme_color: "#0c1114",
     icons: [
-      {
-        src: "/icon.svg",
-        sizes: "any",
-        type: "image/svg+xml"
-      }
+      { src: "/icon.svg", sizes: "any", type: "image/svg+xml" },
+      // Android's installer ignores SVG and wants raster at these sizes.
+      { src: "/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
+      { src: "/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any" },
+      { src: "/icon-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" }
     ]
   };
 }

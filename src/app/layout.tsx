@@ -107,8 +107,14 @@ export const metadata: Metadata = {
       "AI + Cybersecurity Signals for Real Builders. Trusted updates, practical tools, and execution guides for anyone who builds, learns, or works with AI."
   },
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    shortcut: "/icon.svg"
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" }
+    ],
+    shortcut: "/icon.svg",
+    // Both of these 404'd. iOS uses apple-touch-icon when a reader adds the
+    // site to a home screen, and with none it screenshots the page instead.
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }]
   },
   manifest: "/manifest.webmanifest",
   alternates: {

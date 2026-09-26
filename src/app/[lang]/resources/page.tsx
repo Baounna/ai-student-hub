@@ -244,7 +244,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                       src={tool.icon}
                       alt={`${tool.name} logo`}
                       size={40}
-                      className="h-10 w-10 rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] p-1.5"
+                      className="h-10 w-10 rounded-lg border border-[color:var(--border)] bg-white p-1.5"
                     />
                     <div>
                       <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--primary)]">{tool.category[locale]}</p>

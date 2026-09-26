@@ -357,7 +357,7 @@ export default async function LocalizedCompareIndexPage(
                         src={tool.icon}
                         alt={`${tool.name} logo`}
                         size={44}
-                        className="h-11 w-11 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-1.5"
+                        className="h-11 w-11 rounded-xl border border-[color:var(--border)] bg-white p-1.5"
                       />
                       <div className="min-w-0 flex-1">
                         <div className="flex flex-wrap items-center gap-2">

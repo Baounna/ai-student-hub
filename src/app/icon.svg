@@ -1,25 +1,17 @@
-<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="72" y1="56" x2="448" y2="456" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1220" />
-      <stop offset="0.55" stop-color="#102A5E" />
-      <stop offset="1" stop-color="#2F7CFF" />
-    </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(368 124) rotate(130) scale(220)">
-      <stop stop-color="#6EB7FF" stop-opacity="0.42" />
-      <stop offset="1" stop-color="#6EB7FF" stop-opacity="0" />
-    </radialGradient>
-  </defs>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI and Cybersecurity News">
+  <!--
+    The site's mark is the small pine dot with a soft halo that sits before the
+    wordmark in the header (layout.tsx, .brand-orb). This is that mark, inverted
+    so it survives a 16px browser tab: a solid pine field with a paper dot and
+    ring, rather than a pale field with a small dark dot that would vanish.
 
-  <rect x="36" y="36" width="440" height="440" rx="110" fill="url(#bg)" />
-  <rect x="36" y="36" width="440" height="440" rx="110" fill="url(#glow)" />
-  <rect x="36" y="36" width="440" height="440" rx="110" fill="none" stroke="#7EAFFF" stroke-opacity="0.3" stroke-width="8" />
-
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M166 352L256 160L346 352" stroke="#F2F7FF" stroke-width="40" />
-    <path d="M206 286H306" stroke="#9ED5FF" stroke-width="34" />
-  </g>
-
-  <circle cx="372" cy="176" r="28" fill="#74D8FF" />
-  <circle cx="372" cy="176" r="11" fill="#0B1C3D" />
+    It replaces a navy to #2F7CFF gradient tile with a cyan accent dot, an older
+    blue identity that appears nowhere on the site any more. This file is not
+    only the tab icon: it is also the manifest icon and the publisher.logo in
+    every article's JSON-LD, so that blue tile was what Google's rich results
+    showed for a site that is pine and paper throughout.
+  -->
+  <rect width="512" height="512" rx="112" fill="#1b4d3e" />
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="16" />
+  <circle cx="256" cy="256" r="84" fill="#ffffff" />
 </svg>
