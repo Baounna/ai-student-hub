@@ -325,7 +325,10 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
           <div className="media-frame group relative aspect-[16/10] rounded-2xl">
             <Image
               src={coverImageUrl(post.slug, post.category, locale)}
-              alt={post.title}
+              // Decorative: the cover renders this article's own title, and the
+              // h1 saying the same words sits directly beneath it. A non-empty
+              // alt here makes a screen reader announce the headline twice.
+              alt=""
               width={1200}
               height={675}
               priority

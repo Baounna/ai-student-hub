@@ -20,8 +20,16 @@ function load(file: string) {
   return fs.readFileSync(path.join(dir, file));
 }
 
-/** Newsreader for titles, Public Sans for labels — the same pairing as the site. */
+/**
+ * Newsreader for titles, Public Sans for labels — the same pairing as the site.
+ *
+ * Public Sans ships at two weights because the social card asks for both: the
+ * kicker and wordmark are 700, and the footer note is regular. With only 700
+ * loaded, Satori fell back to it for everything, so a line meant to sit quietly
+ * under a rule rendered as bold as the wordmark beside it.
+ */
 export const imageFonts = [
   { name: "Newsreader", data: load("newsreader-700.ttf"), weight: 700 as const, style: "normal" as const },
+  { name: "Public Sans", data: load("public-sans-400.ttf"), weight: 400 as const, style: "normal" as const },
   { name: "Public Sans", data: load("public-sans-700.ttf"), weight: 700 as const, style: "normal" as const }
 ];

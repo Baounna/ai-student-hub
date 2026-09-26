@@ -110,7 +110,7 @@ export async function GET(request: Request) {
           <div style={{ fontSize: "30px", color: "#0f1519", fontWeight: 700, fontFamily: "Newsreader" }}>
             {siteConfig.brandName}
           </div>
-          <div style={{ fontSize: "22px", color: "#6b7883", letterSpacing: "0.04em" }}>
+          <div style={{ fontSize: "22px", color: "#6b7883", letterSpacing: "0.04em", fontWeight: 400 }}>
             First-party sources only
           </div>
         </div>
