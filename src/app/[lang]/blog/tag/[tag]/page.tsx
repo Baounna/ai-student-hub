@@ -10,6 +10,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, coverImageUrl, ogImageUrl } from "@/lib/seo";
 import { formatReadTime } from "@/lib/read-time";
+import { siteConfig } from "@/config/site";
 
 export function generateStaticParams() {
   // Both sources: a tag that exists only on a news brief still needs a page,
@@ -86,7 +87,7 @@ export default async function LocalizedTagPage(props: { params: Promise<{ lang: 
       <Breadcrumbs
         locale={locale}
         items={[
-          { label: "AI and Cybersecurity News", href: `/${locale}` },
+          { label: siteConfig.brandName, href: `/${locale}` },
           { label: dict.nav.blog, href: `/${locale}/blog` },
           { label: `#${displayTag(params.tag)}` }
         ]}

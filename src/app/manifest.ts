@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
+import { siteConfig } from "@/config/site";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "AI and Cybersecurity News",
+    name: siteConfig.brandName,
     short_name: "AI Cyber News",
     description: "AI + Cybersecurity Signals for Real Builders.",
     start_url: "/en",

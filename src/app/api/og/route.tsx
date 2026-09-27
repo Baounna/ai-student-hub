@@ -35,12 +35,12 @@ const MAX_TITLE = 110;
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
 
-  const rawTitle = searchParams.get("title") || "AI and Cybersecurity News";
+  const rawTitle = searchParams.get("title") || siteConfig.brandName;
   const rawKicker = searchParams.get("kicker") || "";
 
   // The text is drawn into an image rather than into markup, but it still comes
   // from a query string: keep it to plain characters and a sane length.
-  const title = sanitizeTextInput(rawTitle, { maxLength: MAX_TITLE }) || "AI and Cybersecurity News";
+  const title = sanitizeTextInput(rawTitle, { maxLength: MAX_TITLE }) || siteConfig.brandName;
   const kicker = sanitizeTextInput(rawKicker, { maxLength: 48 });
 
   // Long headlines get a smaller size rather than overflowing the canvas.
@@ -103,7 +103,7 @@ export async function GET(request: Request) {
             paddingTop: "26px"
           }}
         >
-          {/* The site calls itself "AI and Cybersecurity News" everywhere except
+          {/* The site calls itself siteConfig.brandName everywhere except
               here, where the social card said "AI Student Hub" — a name that
               appears nowhere on the site a reader lands on. Read it from config
               so the two cannot drift again. */}

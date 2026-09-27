@@ -10,6 +10,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, coverImageUrl, ogImageUrl } from "@/lib/seo";
 import { formatReadTime } from "@/lib/read-time";
 import { categoryName } from "@/lib/categories";
+import { siteConfig } from "@/config/site";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => getAllCategories().map((category) => ({ lang, category: slugify(category) })));
@@ -105,7 +106,7 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
       <Breadcrumbs
         locale={locale}
         items={[
-          { label: "AI and Cybersecurity News", href: `/${locale}` },
+          { label: siteConfig.brandName, href: `/${locale}` },
           { label: dict.nav.blog, href: `/${locale}/blog` },
           { label: displayCategory(params.category, params.lang) }
         ]}

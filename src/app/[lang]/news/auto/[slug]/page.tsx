@@ -15,6 +15,8 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { jsonLd } from "@/lib/json-ld";
+import { mainEntityOfPage, organizationAuthorNode, publisherNode } from "@/lib/schema";
+import { siteConfig } from "@/config/site";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -214,19 +216,9 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
     datePublished: item.publishedAt,
     dateModified: item.discoveredAt,
     inLanguage: locale,
-    publisher: {
-      "@type": "Organization",
-      name: "AI and Cybersecurity News",
-      logo: {
-        "@type": "ImageObject",
-        url: absoluteUrl("/icon.svg")
-      }
-    },
-    author: {
-      "@type": "Organization",
-      name: "AI and Cybersecurity News"
-    },
-    mainEntityOfPage: absoluteUrl(`/${locale}/news/auto/${item.slug}`),
+    publisher: publisherNode(),
+    author: organizationAuthorNode(),
+    mainEntityOfPage: mainEntityOfPage(`/${locale}/news/auto/${item.slug}`),
     image: [absoluteUrl(ogImageUrl(item.title, item.topic))],
     articleSection: item.topic,
     citation: [item.href, item.sourceFeed]
@@ -239,7 +231,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
       <Breadcrumbs
         locale={locale}
         items={[
-          { label: "AI and Cybersecurity News", href: `/${locale}` },
+          { label: siteConfig.brandName, href: `/${locale}` },
           { label: dict.nav.news, href: `/${locale}/news` },
           { label: fr ? "Brief auto" : "Auto brief" }
         ]}

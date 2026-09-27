@@ -30,6 +30,7 @@ import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 import { jsonLd } from "@/lib/json-ld";
 import { formatReadTime, readMinutes } from "@/lib/read-time";
 import { ScrollCaptureCtaLazy } from "@/components/scroll-capture-cta-lazy";
+import { authorNode, mainEntityOfPage, publisherNode } from "@/lib/schema";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => posts.map((post) => ({ lang, slug: post.slug })));
@@ -155,25 +156,9 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
     // markup contradicted itself twice over, on the property Google reads for
     // authorship. Use the configured author when there is one, and fall back to
     // the publication as an Organization rather than inventing a person.
-    author: siteConfig.authorName
-      ? {
-          "@type": "Person",
-          name: siteConfig.authorName,
-          ...(siteConfig.linkedinUrl ? { sameAs: [siteConfig.linkedinUrl] } : {})
-        }
-      : {
-          "@type": "Organization",
-          name: siteConfig.brandName
-        },
-    publisher: {
-      "@type": "Organization",
-      name: "AI and Cybersecurity News",
-      logo: {
-        "@type": "ImageObject",
-        url: absoluteUrl("/icon.svg")
-      }
-    },
-    mainEntityOfPage: absoluteUrl(`/${locale}/blog/${post.slug}`),
+    author: authorNode(),
+    publisher: publisherNode(),
+    mainEntityOfPage: mainEntityOfPage(`/${locale}/blog/${post.slug}`),
     keywords: post.keywords.join(", "),
     citation: post.references.map((reference) => reference.href)
   };
@@ -194,7 +179,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
       <Breadcrumbs
         locale={locale}
         items={[
-          { label: "AI and Cybersecurity News", href: `/${locale}` },
+          { label: siteConfig.brandName, href: `/${locale}` },
           { label: dict.nav.blog, href: `/${locale}/blog` },
           { label: post.title }
         ]}

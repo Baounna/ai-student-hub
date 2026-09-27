@@ -8,6 +8,7 @@ import { absoluteUrl, getSiteUrl } from "@/lib/site-url";
 import { assertProductionRuntimeConfig } from "@/lib/env-validation";
 import { AppearanceSync } from "@/components/appearance-sync";
 import { jsonLd } from "@/lib/json-ld";
+import { schemaIds } from "@/lib/schema";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -65,11 +66,11 @@ assertProductionRuntimeConfig();
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  applicationName: "AI and Cybersecurity News",
+  applicationName: siteConfig.brandName,
   category: "education",
-  creator: "AI and Cybersecurity News",
-  publisher: "AI and Cybersecurity News",
-  authors: [{ name: siteConfig.authorName || "AI and Cybersecurity News", url: getSiteUrl() }],
+  creator: siteConfig.brandName,
+  publisher: siteConfig.brandName,
+  authors: [{ name: siteConfig.authorName || siteConfig.brandName, url: getSiteUrl() }],
   // The suffix used to be " | AI and Cybersecurity News" — 28 characters on
   // every one of 245 pages, against a budget Google truncates at roughly 60.
   // On the home page it named the brand twice. A short mark keeps the
@@ -99,7 +100,7 @@ export const metadata: Metadata = {
       "AI + Cybersecurity Signals for Real Builders. Trusted updates, practical tools, and execution guides for anyone who builds, learns, or works with AI.",
     type: "website",
     url: "/",
-    siteName: "AI and Cybersecurity News"
+    siteName: siteConfig.brandName
   },
   twitter: {
     card: "summary_large_image",
@@ -177,6 +178,10 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    // The one @id every article's publisher and author point at. Without it each
+    // page described this organization twice with nothing tying the two
+    // descriptions together.
+    "@id": schemaIds.organization(),
     name: siteConfig.brandName,
     url: getSiteUrl(),
     logo: absoluteUrl("/icon.svg"),
@@ -211,10 +216,11 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": `${getSiteUrl()}/#website`,
-    name: "AI and Cybersecurity News",
+    "@id": schemaIds.website(),
+    name: siteConfig.brandName,
     url: getSiteUrl(),
     inLanguage: ["en", "fr"],
+    publisher: { "@id": schemaIds.organization() },
     potentialAction: {
       "@type": "SearchAction",
       target: `${getSiteUrl()}/${lang}/blog?query={search_term_string}`,

@@ -8,6 +8,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { jsonLd } from "@/lib/json-ld";
 import { ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
+import { siteConfig } from "@/config/site";
 import {
   countryLabel,
   getOpenStages,
@@ -104,7 +105,7 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
   // One array feeds both the visible trail and the schema, so the markup and
   // the structured data cannot drift apart - a BreadcrumbList that disagrees
   // with the breadcrumbs on the page is exactly what Search Console flags.
-  const breadcrumbs = [{ label: "AI and Cybersecurity News", href: `/${locale}` }, { label: copy.title }];
+  const breadcrumbs = [{ label: siteConfig.brandName, href: `/${locale}` }, { label: copy.title }];
 
   /**
    * ItemList, deliberately not JobPosting.
