@@ -37,6 +37,24 @@ const CATEGORIES = [
 ];
 const TRACKS = ["ai", "cs", "career"];
 
+/**
+ * A string, safely embedded in the TypeScript this script writes.
+ *
+ * The title was escaped with .replace(/"/g, '\\"'), which handles the quote and
+ * nothing else. A title ending in a backslash produced "…\\" -- the backslash
+ * escapes the quote that was meant to close the string, so the generated file
+ * does not parse and every following property is swallowed. Newlines and
+ * control characters break it the same way.
+ *
+ * JSON.stringify emits a correctly quoted and escaped JS string literal, which
+ * is exactly the job. It is used for every interpolated value here rather than
+ * only the ones that looked risky, because "which inputs need escaping" is the
+ * question that produced the bug.
+ */
+function js(value) {
+  return JSON.stringify(String(value ?? ""));
+}
+
 function parseArgs(argv) {
   const args = {};
   for (let i = 0; i < argv.length; i += 1) {
@@ -115,21 +133,21 @@ const TODO_FR = "TODO: ecrire ce paragraphe en francais.";
 // readTime is measured from the body at build time, so it is deliberately not
 // a field you fill in — an invented reading time was a real bug here once.
 const entry = `  {
-    slug: "${slug}",
+    slug: ${js(slug)},
     // Unused: every page calls coverImageUrl(slug, category) and generates the
     // cover from those two values. The field is still required by the type, so
     // it is left empty rather than given a path to an image that does not exist.
     coverImage: "",
-    title: "${title.replace(/"/g, '\\"')}",
+    title: ${js(title)},
     excerpt: "TODO: one sentence on what the reader gets.",
-    category: "${category}",
-    intentKeyword: "${slug.replace(/-/g, " ")}",
-    track: "${track}",
+    category: ${js(category)},
+    intentKeyword: ${js(slug.replace(/-/g, " "))},
+    track: ${js(track)},
     tags: ["TODO-tag"],
-    cluster: "${category}",
-    publishedAt: "${publishedAt}",
+    cluster: ${js(category)},
+    publishedAt: ${js(publishedAt)},
     readTime: "",
-    keywords: ["${slug.replace(/-/g, " ")}"],
+    keywords: [${js(slug.replace(/-/g, " "))}],
     popularScore: 50,
     relatedSlugs: [],
     affiliateCallout: {
@@ -140,7 +158,7 @@ const entry = `  {
     references: [],
     locales: {
       en: {
-        title: "${title.replace(/"/g, '\\"')}",
+        title: ${js(title)},
         excerpt: "TODO: one sentence on what the reader gets.",
         content: [
           "${TODO_EN}",

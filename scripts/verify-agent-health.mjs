@@ -62,8 +62,20 @@ function log(type, message) {
 }
 
 function hasBlockedSourcePattern(item) {
-  const values = [item?.source, item?.sourceFeed, item?.href].join(" ").toLowerCase();
-  return values.includes("arxiv.org") || /\barxiv\b/.test(values);
+  // Match the host, not a substring of the URL. `includes("arxiv.org")` is true
+  // for https://arxiv.org.example.com/ and for a path like /citing-arxiv.org,
+  // so a blocklist built on it blocks by coincidence rather than by origin. The
+  // free-text fields keep the word check, because a source NAME is prose.
+  const host = (() => {
+    try {
+      return new URL(String(item?.href || "")).hostname.toLowerCase();
+    } catch {
+      return "";
+    }
+  })();
+  const isArxivHost = host === "arxiv.org" || host.endsWith(".arxiv.org");
+  const labels = [item?.source, item?.sourceFeed].join(" ").toLowerCase();
+  return isArxivHost || /\barxiv\b/.test(labels);
 }
 
 async function run() {

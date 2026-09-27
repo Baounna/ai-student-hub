@@ -161,10 +161,18 @@ async function fetchText(url) {
     const status = Number.parseInt(tail.slice(0, split === -1 ? undefined : split).trim(), 10) || 0;
     const finalUrl = split === -1 ? url : tail.slice(split + 7).trim();
     const body = stdout.slice(0, marker);
+    // Comments before tags, and quoted attributes before the closing bracket.
+    // `<[^>]+>` alone stops at the first ">" it sees, so a comment containing
+    // one -- `<!-- a > b -->` -- left "b -->" sitting in the text, and an
+    // attribute containing one -- title="a > b" -- swallowed the rest of the
+    // element. This text is the only thing that decides whether a posting is
+    // dead, and three separate wordings have already slipped past this check,
+    // so getting the extraction right is not cosmetic.
     const text = body
       .replace(/<script[\s\S]*?<\/script>/gi, " ")
       .replace(/<style[\s\S]*?<\/style>/gi, " ")
-      .replace(/<[^>]+>/g, " ")
+      .replace(/<!--[\s\S]*?-->/g, " ")
+      .replace(/<[a-zA-Z/!?][^>"']*(?:"[^"]*"[^>"']*|'[^']*'[^>"']*)*>/g, " ")
       .replace(/\s+/g, " ");
     return { status, text, raw: body, finalUrl };
   } catch {
