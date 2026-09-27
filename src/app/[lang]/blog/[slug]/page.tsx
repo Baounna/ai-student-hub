@@ -77,7 +77,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
     // -- H1, JSON-LD headline, breadcrumb, OG image, share text -- keeps
     // post.title, so a shorter search result never changes the page.
     title: post.seoTitle || post.title,
-    description: post.excerpt,
+    // Same rule for the description: this is the meta tag only. The excerpt
+    // below feeds the OG card, the share text and every post card on the site.
+    description: post.seoDescription || post.excerpt,
     keywords: getSeoKeywords(params.lang, "blogPost", post.keywords),
     openGraph: {
       title: post.title,

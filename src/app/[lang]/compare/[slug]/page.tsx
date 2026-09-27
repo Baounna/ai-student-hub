@@ -59,13 +59,18 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
     return { title: "Tools Guide Not Found" };
   }
 
-  const fr = params.lang === "fr";
   const title = comparison.title;
   // seoTitle replaces the whole <title>, section suffix included, because the
   // suffix is 14 characters of the same budget. comparison.title still drives
   // the H1, the OG card title and the OG image text below.
   const metadataTitle = comparison.seoTitle || title;
-  const description = fr ? `Guide outils étudiant: ${comparison.intro}` : comparison.intro;
+  // The French description used to be prefixed with "Guide outils étudiant: ".
+  // Twenty-three characters of keywords the English version did without, in
+  // front of a lede that was already long: two of these pages came out at 189
+  // and 190 characters, so what a French reader actually saw in the results was
+  // the prefix and a truncated sentence. Where the lede itself is still too
+  // long, seoDescription carries a shorter one written for the snippet.
+  const description = comparison.seoDescription || comparison.intro;
 
   return {
     title: metadataTitle,

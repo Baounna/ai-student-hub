@@ -105,7 +105,8 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
     // <title> only. brief.title stays the H1, the JSON-LD headline, the
     // breadcrumb label and the OG image text.
     title: brief.seoTitle || brief.title,
-    description: brief.summary,
+    // Meta tag only. brief.summary stays the visible lede and the OG card text.
+    description: brief.seoDescription || brief.summary,
     keywords: getSeoKeywords(params.lang, "newsPost", brief.keywords),
     openGraph: {
       title: brief.title,

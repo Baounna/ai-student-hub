@@ -39,6 +39,11 @@ export type NewsBrief = {
        * search result would change the visible page.
        */
       seoTitle?: string;
+      /**
+       * Meta description override. `summary` is the visible lede on the brief
+       * and on every card linking to it, so it cannot be cut to fit a snippet.
+       */
+      seoDescription?: string;
       summary: string;
       studentImpact: string;
       takeaways: string[];
@@ -124,6 +129,8 @@ export const newsBriefs: NewsBrief[] = [
         title: "Latest AI performance by theme (Feb 2026 snapshot)",
         summary:
           "A new benchmark table published in February 2026 compares current frontier models across reasoning, science QA, math, multimodal understanding, and UI/screen tasks.",
+        seoDescription:
+          "A February 2026 benchmark table compares frontier models across reasoning, science QA, math, multimodal understanding, and UI/screen tasks.",
         studentImpact:
           "Students can now choose models by use case theme instead of hype: one model for math-heavy tasks, another for multimodal or UI-heavy execution.",
         takeaways: [
@@ -142,6 +149,8 @@ export const newsBriefs: NewsBrief[] = [
         seoTitle: "Performances IA par thème (février 2026)",
         summary:
           "Un nouveau tableau benchmark publié en février 2026 compare les modèles frontier sur raisonnement, QA scientifique, mathématiques, multimodal et tâches UI/écran.",
+        seoDescription:
+          "Un tableau benchmark de février 2026 compare les modèles frontier sur raisonnement, QA scientifique, mathématiques, multimodal et tâches UI/écran.",
         studentImpact:
           "Les étudiants peuvent choisir un modèle par type de tâche réelle plutôt que par hype: un modèle pour math/science, un autre pour multimodal ou exécution UI.",
         takeaways: [
@@ -652,6 +661,7 @@ function localizeNewsBrief(brief: NewsBrief, locale: Locale): LocalizedNewsBrief
     ...brief,
     title: localized.title,
     seoTitle: localized.seoTitle,
+    seoDescription: localized.seoDescription,
     summary: localized.summary,
     studentImpact: localized.studentImpact,
     takeaways: localized.takeaways,

@@ -23,6 +23,13 @@ export type Dictionary = {
     badge: string;
     headline: string;
     subheadline: string;
+    /**
+     * Meta description only. `subheadline` is the hero paragraph a reader sees
+     * first, and at 177 characters it was well past the point Google truncates
+     * a snippet -- but shortening the hero to fix a search result is fixing the
+     * wrong thing.
+     */
+    metaDescription: string;
     ctaPrimary: string;
     ctaSecondary: string;
     trust: string[];
@@ -98,6 +105,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
       headline: "AI + Cybersecurity Guides for Builders",
       subheadline:
         "Execution-first updates, tools, and guides for builders, learners, teams, and researchers. Students keep a dedicated path for internships, career, and budget-friendly workflows.",
+      metaDescription:
+        "Execution-first AI and cybersecurity guides, tools, and news for builders, learners, and teams worldwide, plus a dedicated path for students.",
       ctaPrimary: "See open internships",
       ctaSecondary: "Explore Blog",
       trust: [
@@ -186,7 +195,9 @@ export const dictionaries: Record<Locale, Dictionary> = {
       badge: "Positionnement",
       headline: "Guides IA + cybersécurité pour builders",
       subheadline:
-        "Updates, outils, et guides orientés exécution pour builders, apprenants, équipes, et chercheurs. Les étudiants gardent un parcours dédié stages, carrière, et budget-friendly.",
+        "Actualités, outils et guides orientés exécution pour builders, apprenants, équipes et chercheurs. Les étudiants gardent un parcours dédié stages, carrière et petits budgets.",
+      metaDescription:
+        "Guides, outils et actualités IA et cybersécurité orientés exécution, pour builders, apprenants et équipes partout, avec un parcours dédié aux étudiants.",
       ctaPrimary: "Voir les stages ouverts",
       ctaSecondary: "Explorer le blog",
       trust: [

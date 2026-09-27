@@ -30,7 +30,15 @@ export async function GET() {
     },
     {
       headers: {
-        "Cache-Control": "no-store, max-age=0"
+        "Cache-Control": "no-store, max-age=0",
+        // Keeps a machine endpoint out of search results. robots.txt only
+        // disallows /api/, so this route was crawlable, and a JSON blob of
+        // timestamps indexed under the site's name is noise in the one place
+        // readers judge it from. A meta tag is not an option in a JSON
+        // response, so the header carries it -- and unlike a robots.txt
+        // Disallow, it also covers the case where someone links to /health,
+        // which can otherwise put a URL-only entry in the index.
+        "X-Robots-Tag": "noindex"
       }
     }
   );

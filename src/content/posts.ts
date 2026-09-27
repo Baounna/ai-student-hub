@@ -58,7 +58,15 @@ export type BlogPost = {
   // seoTitle is the <title> tag only. `title` is the H1, the JSON-LD
   // headline, the breadcrumb label and the OG image text, so it cannot be
   // trimmed to fit a search result without changing the visible page.
-  locales: Record<Locale, { title: string; seoTitle?: string; excerpt: string; content: string[] }>;
+  //
+  // seoDescription is the same idea for the meta description. `excerpt` shows
+  // on every card that links to the post, so shortening it to fit a snippet
+  // shortens the copy readers actually read; Google cuts the snippet near 160
+  // characters and the longest excerpt here ran to 172.
+  locales: Record<
+    Locale,
+    { title: string; seoTitle?: string; excerpt: string; seoDescription?: string; content: string[] }
+  >;
   content: string[];
 };
 
@@ -116,6 +124,8 @@ export type ComparisonPage = {
       /** <title> tag override. `title` stays the H1 and the OG image text. */
       seoTitle?: string;
       intro: string;
+      /** Meta description override. `intro` stays the visible lede. */
+      seoDescription?: string;
     }
   >;
 };
@@ -498,7 +508,9 @@ export const comparisons: ComparisonPage[] = [
         title: "Meilleure plateforme cloud pour les projets IA étudiants (comparatif 2026)",
         seoTitle: "Cloud pour projets IA étudiants (comparatif 2026)",
         intro:
-          "Ce comparatif aide les étudiants en IA à choisir une stack cloud exploitable, selon le budget, la vitesse de déploiement et le signal qualité envoyé dans un portfolio."
+          "Ce comparatif aide les étudiants en IA à choisir une stack cloud exploitable, selon le budget, la vitesse de déploiement et le signal qualité envoyé dans un portfolio.",
+        seoDescription:
+          "Comment choisir une stack cloud exploitable selon le budget, la vitesse de déploiement et le signal qualité envoyé dans un portfolio."
       }
     },
     tools: [
@@ -638,7 +650,9 @@ export const comparisons: ComparisonPage[] = [
         title: "Meilleur workflow DevOps pour les étudiants ingénieurs (CI/CD + monitoring)",
         seoTitle: "Workflow DevOps étudiant : CI/CD + monitoring",
         intro:
-          "Comparez des workflows DevOps concrets selon la vitesse de mise en production, la sûreté des rollbacks et la maturité de l'observabilité, pour des équipes étudiantes."
+          "Comparez des workflows DevOps concrets selon la vitesse de mise en production, la sûreté des rollbacks et la maturité de l'observabilité, pour des équipes étudiantes.",
+        seoDescription:
+          "Des workflows DevOps concrets comparés sur la vitesse de mise en production, la sûreté des rollbacks et la maturité de l'observabilité."
       }
     },
     tools: [
@@ -963,6 +977,8 @@ const basePosts: BlogPost[] = [
       fr: {
         title: "Votre modèle n'est pas si bon",
         excerpt: "Un score de validation de 0,99 est un avertissement, pas une victoire. Les cinq façons dont les données fuient dans un projet étudiant, et pourquoi aucune ne lève d'erreur.",
+        seoDescription:
+          "Un score de validation de 0,99 est un avertissement, pas une victoire. Les cinq façons dont les données fuient dans un projet étudiant.",
         content: [
           "La première fois qu'un modèle renvoie 0,99 sur votre jeu de validation, on a le sentiment que le projet a réussi. C'est en général l'inverse. Une précision élevée qui arrive tôt et sans effort est le signal le plus fiable, en apprentissage automatique appliqué, que quelque chose a fui — et si c'est si long à repérer, c'est que rien ne déclenche la moindre erreur. Le code s'exécute. La métrique monte. Chaque étape du pipeline annonce un succès.",
           "Une fuite de données, c'est une information qui parvient au modèle pendant l'entraînement alors qu'elle ne sera pas disponible au moment de la vraie prédiction. C'est toute la définition, et il vaut la peine de la retenir, car les formes qu'elle prend n'ont rien en commun sinon cette phrase.",
@@ -1153,6 +1169,8 @@ const basePosts: BlogPost[] = [
       fr: {
         title: "Pourquoi votre projet personnel casse en silence",
         excerpt: "Tous les workflows de ce dépôt ont échoué pendant quatre-vingts jours sans que personne le remarque. La cause tenait à un lockfile ; la durée, à la fatigue d'alerte.",
+        seoDescription:
+          "Tous les workflows de ce dépôt ont échoué pendant quatre-vingts jours sans que personne le remarque. La cause : un lockfile ; la durée : la fatigue d'alerte.",
         content: [
           "Les tâches de ce site ont échoué pendant quatre-vingts jours. L'écart est entré le 24 juin 2026 et a été réparé le 12 septembre — vous pouvez compter les jours vous-même dans le journal git. Entre les deux, les onze workflows du dépôt mouraient à chaque déclencheur, et les trois qui tournent sur une planification ont continué d'échouer sur leurs propres minuteries. Personne n'a été alerté, parce que tout alertait tout le monde : le compteur de notifications avait dépassé six cents, et un nombre pareil n'est plus une information, c'est du papier peint.",
           "La cause était presque vexante de petitesse. `package.json` et `package-lock.json` avaient divergé. Ce seul fait suffit à faire tomber tous les jobs d'un dépôt, et il vaut la peine de comprendre pourquoi, car ce comportement est délibéré.",
@@ -1261,6 +1279,8 @@ const basePosts: BlogPost[] = [
       fr: {
         title: "Lire un CVE sans paniquer",
         excerpt: "Un ordre de tri pour les avis de sécurité : ce que mesure le score de sévérité, ce qu'il omet, et les deux signaux gratuits qui disent s'il faut agir aujourd'hui.",
+        seoDescription:
+          "Un ordre de tri pour les avis de sécurité : ce que mesure le score de sévérité, ce qu'il omet, et les deux signaux gratuits qui disent s'il faut agir.",
         content: [
           "La première fois que `npm audit` annonce quarante-sept vulnérabilités dans un projet étudiant, deux réflexes apparaissent. Le premier : tout corriger avant de livrer quoi que ce soit. Le second : fermer le terminal et ne plus jamais relancer la commande. Le second est de loin le plus fréquent, et c'est ainsi qu'un projet de portfolio se retrouve avec une dépendance réellement exploitable posée à côté de quarante-six qui n'ont jamais constitué une menace. Voici l'ordre dans lequel un ingénieur en poste lit un avis de sécurité.",
           "Commencez par ce qu'est réellement un CVE, car l'identifiant fait plus de travail qu'on ne le croit. CVE-2026-1234 est un identifiant, attribué par le CVE Program pour qu'un chercheur à Berlin, un éditeur à Seattle et votre log de build décrivent tous la même faille. Il indique qu'une vulnérabilité a été signalée et cataloguée. Il ne dit pas que la faille vous concerne, que quelqu'un l'a déjà exploitée, ni qu'il existe un chemin entre Internet et la ligne vulnérable dans votre déploiement. Confondre l'existence d'un CVE avec le problème lui-même est la première erreur, et la plus coûteuse en temps.",
@@ -1883,6 +1903,7 @@ export function getLocalizedPost(slug: string, locale: Locale) {
     title: localized.title,
     seoTitle: localized.seoTitle,
     excerpt: localized.excerpt,
+    seoDescription: localized.seoDescription,
     content: localized.content
   };
 }
@@ -1896,6 +1917,7 @@ export function getLocalizedPosts(locale: Locale) {
       title: localized.title,
       seoTitle: localized.seoTitle,
       excerpt: localized.excerpt,
+      seoDescription: localized.seoDescription,
       content: localized.content
     };
   });
@@ -1991,6 +2013,7 @@ function localizeComparison(comparison: ComparisonPage, locale: Locale): Localiz
     title: localized.title,
     seoTitle: localized.seoTitle,
     intro: localized.intro,
+    seoDescription: localized.seoDescription,
     tools: comparison.tools.map((tool) => {
       const localizedTool = tool.locales[locale];
 

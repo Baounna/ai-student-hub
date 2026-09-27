@@ -42,7 +42,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
 
   return {
     title: dict.home.headline,
-    description: dict.home.subheadline,
+    description: dict.home.metaDescription,
     keywords: getSeoKeywords(params.lang, "home"),
     openGraph: {
       title: dict.home.headline,

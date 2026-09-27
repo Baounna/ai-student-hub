@@ -14,6 +14,7 @@ import { headers } from "next/headers";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
+import { feedPath } from "@/lib/feed-paths";
 import { getSeoKeywords } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -33,7 +34,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       default: `AI and Cybersecurity News (${params.lang.toUpperCase()})`,
       template: `%s | AICyber`
     },
-    description: dict.home.subheadline,
+    description: dict.home.metaDescription,
     keywords: getSeoKeywords(params.lang, "home"),
     alternates: localizedAlternates("", params.lang)
   };
@@ -362,8 +363,8 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                 </TrackableAnchor>
               </li>
               <li>
-                <a href="/feed.xml" className="transition hover:opacity-70">
-                  RSS Feed
+                <a href={feedPath[locale]} className="transition hover:opacity-70">
+                  RSS
                 </a>
               </li>
             </ul>
