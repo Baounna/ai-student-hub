@@ -1,64 +1,124 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T11:47:51.359Z",
+  "updatedAt": "2026-09-27T14:03:18.424Z",
   "items": [
     {
-      "slug": "20260925-vercel-gpt-6-sol-and-luna-now-available-on-ai-gateway-gpt-6-sol--c332c2ae",
+      "slug": "20260927-vercel-push-images-to-vercel-container-registry-from-github-acti-475c6f6c",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/gpt-6-sol-and-luna-now-available-on-ai-gateway",
-      "publishedAt": "2026-09-25T11:47:51.359Z",
-      "discoveredAt": "2026-09-25T11:47:51.359Z",
+      "href": "https://vercel.com/changelog/vcr-login-github-action",
+      "publishedAt": "2026-09-27T14:03:18.424Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
       "locales": {
         "en": {
-          "title": "GPT-6 Sol and Luna now available on AI Gateway GPT-6 Sol and GPT-6 Luna from OpenAI are now available on Vercel AI Gateway for coding, professional workflows, computer use, and agentic applications. Zachary Chen, Jerilyn Zheng",
-          "summary": "22 September 22 Sep"
+          "title": "Push images to Vercel Container Registry from GitHub Actions The vercel/vcr-action/login GitHub Action logs workflows in to Vercel Container Registry with GitHub OIDC, removing long-lived registry credentials from secrets. Andy Waller, Mark Roberts",
+          "summary": "25 September 25 Sep"
         },
         "fr": {
-          "title": "GPT-6 Sol and Luna now available on AI Gateway GPT-6 Sol and GPT-6 Luna from OpenAI are now available on Vercel AI Gateway for coding, professional workflows, computer use, and agentic applications. Zachary Chen, Jerilyn Zheng",
-          "summary": "22 September 22 Sep"
+          "title": "Push images to Vercel Container Registry from GitHub Actions The vercel/vcr-action/login GitHub Action logs workflows in to Vercel Container Registry with GitHub OIDC, removing long-lived registry credentials from secrets. Andy Waller, Mark Roberts",
+          "summary": "25 September 25 Sep"
         }
       }
     },
     {
-      "slug": "20260925-github-codeql-2271-adds-c-and-c-query-and-kotlin-2420-support-21fb0730",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-25-codeql-2-27-1-adds-c-and-c-query-and-kotlin-2-4-20-support",
-      "publishedAt": "2026-09-25T09:55:23.000Z",
-      "discoveredAt": "2026-09-25T11:47:51.359Z",
-      "locales": {
-        "en": {
-          "title": "CodeQL 2.27.1 adds C and C++ query and Kotlin 2.4.20 support",
-          "summary": "CodeQL 2.27.1 adds new queries for C/C++ and C#, support for Kotlin 2.4.20, and query-accuracy improvements. CodeQL is the static analysis engine behind GitHub code scanning, which helps you find… The post CodeQL 2.27.1…"
-        },
-        "fr": {
-          "title": "CodeQL 2.27.1 adds C and C++ query and Kotlin 2.4.20 support",
-          "summary": "CodeQL 2.27.1 adds new queries for C/C++ and C#, support for Kotlin 2.4.20, and query-accuracy improvements. CodeQL is the static analysis engine behind GitHub code scanning, which helps you find… The post CodeQL 2.27.1…"
-        }
-      }
-    },
-    {
-      "slug": "20260924-supabase-public-alpha-supabase-pipelines-8df37aee",
+      "slug": "20260927-supabase-observability-auto-pilot-d72f6df8",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/pipelines",
-      "publishedAt": "2026-09-24T21:29:30.940Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
+      "href": "https://supabase.com/changelog/50403-observability-autopilot",
+      "publishedAt": "2026-09-27T14:03:18.424Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
       "locales": {
         "en": {
-          "title": "[Public Alpha] Supabase Pipelines",
-          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+          "title": "Observability Auto-Pilot",
+          "summary": "client trace integration , Log Drains , , and Health Check Advisors , among other things. We'll keep going — more ways to surface logs meaningfully, more tools to help you monitor and"
         },
         "fr": {
-          "title": "[Public Alpha] Supabase Pipelines",
-          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+          "title": "Observability Auto-Pilot",
+          "summary": "client trace integration , Log Drains , , and Health Check Advisors , among other things. We'll keep going — more ways to surface logs meaningfully, more tools to help you monitor and"
+        }
+      }
+    },
+    {
+      "slug": "20260925-github-copilot-enterprise-managed-settings-in-product-validator-123d8dce",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator",
+      "publishedAt": "2026-09-25T23:24:57.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "Enterprise managed settings in-product validator",
+          "summary": "You can now use an in-product validator for enterprise managed settings for GitHub Copilot. The validator detects malformed JSON, unsupported configurations, invalid team mappings, and other errors that can prevent… The…"
+        },
+        "fr": {
+          "title": "Enterprise managed settings in-product validator",
+          "summary": "You can now use an in-product validator for enterprise managed settings for GitHub Copilot. The validator detects malformed JSON, unsupported configurations, invalid team mappings, and other errors that can prevent… The…"
+        }
+      }
+    },
+    {
+      "slug": "20260925-openai-platform-proaction-boosts-sales-60-and-saves-75-hours-wit-d2d497e5",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/proaction",
+      "publishedAt": "2026-09-25T19:00:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
+        },
+        "fr": {
+          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
+        }
+      }
+    },
+    {
+      "slug": "20260925-cloudflare-agents-can-now-set-up-your-websites-security-with-tur-f8742313",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/turnstile-spin/",
+      "publishedAt": "2026-09-25T13:00:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "Agents can now set up your website’s security with Turnstile Spin",
+          "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification."
+        },
+        "fr": {
+          "title": "Agents can now set up your website’s security with Turnstile Spin",
+          "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification."
+        }
+      }
+    },
+    {
+      "slug": "20260925-w3c-crafting-wcag-3-for-more-accessible-user-experiences-90f5f71d",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/crafting-wcag-3-for-more-accessible-user-experiences/",
+      "publishedAt": "2026-09-25T12:50:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "Crafting WCAG 3 for more accessible user experiences",
+          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
+        },
+        "fr": {
+          "title": "Crafting WCAG 3 for more accessible user experiences",
+          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
         }
       }
     },
@@ -79,26 +139,6 @@
         "fr": {
           "title": "Manufacturing Trust for AI Agents | Docker’s WeAreDevelopers Keynote",
           "summary": "Docker's WeAreDevelopers keynote shows how Sandboxes, Kits, and Cloud Sandboxes give AI agents strong isolation and reproducible authority."
-        }
-      }
-    },
-    {
-      "slug": "20260924-cloudflare-how-cloudflare-addressed-a-cross-tenant-data-exposure-4224c10f",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
-      "publishedAt": "2026-09-24T15:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
-      "locales": {
-        "en": {
-          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
-          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and…"
-        },
-        "fr": {
-          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
-          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and…"
         }
       }
     },
@@ -223,26 +263,6 @@
       }
     },
     {
-      "slug": "20260923-openai-platform-two-years-of-openai-academy-9d02eeb8",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/two-years-of-openai-academy",
-      "publishedAt": "2026-09-23T16:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
-      "locales": {
-        "en": {
-          "title": "Two years of OpenAI Academy",
-          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
-        },
-        "fr": {
-          "title": "Two years of OpenAI Academy",
-          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
-        }
-      }
-    },
-    {
       "slug": "20260923-claude-sep-23-2026-science-claude-discovers-a-novel-enzyme-syste-f82afb64",
       "toolName": "Claude",
       "category": "AI Assistant",
@@ -299,26 +319,6 @@
         "fr": {
           "title": "Spotlight on SIG Apps",
           "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batc…"
-        }
-      }
-    },
-    {
-      "slug": "20260922-w3c-2026-climate-weeks-w3c-and-web-sustainability-050fad0e",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/2026-climate-weeks-w3c-and-web-sustainability/",
-      "publishedAt": "2026-09-22T12:40:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:24.364Z",
-      "locales": {
-        "en": {
-          "title": "2026 Climate Weeks: W3C and Web Sustainability",
-          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
-        },
-        "fr": {
-          "title": "2026 Climate Weeks: W3C and Web Sustainability",
-          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
         }
       }
     },
@@ -383,62 +383,122 @@
       }
     },
     {
-      "slug": "20260924-vercel-drives-for-vercel-sandbox-are-now-in-public-beta-vercel-s-88dfdf44",
+      "slug": "20260927-vercel-pixel-canary-is-now-available-in-stealth-for-free-on-ai-g-759cd609",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/drives-for-vercel-sandbox-are-now-in-public-beta",
-      "publishedAt": "2026-09-24T21:29:30.940Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
+      "href": "https://vercel.com/changelog/pixel-canary-is-now-available-in-stealth-for-free-on-ai-gateway",
+      "publishedAt": "2026-09-27T14:03:18.424Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
       "locales": {
         "en": {
-          "title": "Drives for Vercel Sandbox are now in public beta Vercel Sandbox Drives, persistent storage you mount into a sandbox, is now in public beta with drives up to 16 TiB and usage-based pricing. +2 Tom Lienard, Joe Haddad, and 2 others",
-          "summary": "\"/> Zachary Chen, Kevin Dawkins, and 1 other"
+          "title": "Pixel Canary is now available in stealth for free on AI Gateway Pixel Canary is now available on Vercel AI Gateway, with strengths in coding, frontend development, and mobile app design. +2 Zachary Chen, Rohan Taneja, and 2 others",
+          "summary": "roberts-128.jpg\"/> Andy Waller, Mark Roberts"
         },
         "fr": {
-          "title": "Drives for Vercel Sandbox are now in public beta Vercel Sandbox Drives, persistent storage you mount into a sandbox, is now in public beta with drives up to 16 TiB and usage-based pricing. +2 Tom Lienard, Joe Haddad, and 2 others",
-          "summary": "\"/> Zachary Chen, Kevin Dawkins, and 1 other"
+          "title": "Pixel Canary is now available in stealth for free on AI Gateway Pixel Canary is now available on Vercel AI Gateway, with strengths in coding, frontend development, and mobile app design. +2 Zachary Chen, Rohan Taneja, and 2 others",
+          "summary": "roberts-128.jpg\"/> Andy Waller, Mark Roberts"
         }
       }
     },
     {
-      "slug": "20260925-github-copilot-default-enablement-of-copilot-features-for-copilo-648837e3",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise",
-      "publishedAt": "2026-09-25T03:13:23.000Z",
-      "discoveredAt": "2026-09-25T11:47:51.359Z",
-      "locales": {
-        "en": {
-          "title": "Default Enablement of Copilot Features for Copilot Business and Enterprise",
-          "summary": "We’re introducing a new global default policy for generally available GitHub Copilot features and supported client capabilities in enterprise and organization Copilot settings. For the next 28 days, you can… The post De…"
-        },
-        "fr": {
-          "title": "Default Enablement of Copilot Features for Copilot Business and Enterprise",
-          "summary": "We’re introducing a new global default policy for generally available GitHub Copilot features and supported client capabilities in enterprise and organization Copilot settings. For the next 28 days, you can… The post De…"
-        }
-      }
-    },
-    {
-      "slug": "20260924-supabase-realtime-schema-is-now-fully-locked-down-against-modifi-4d315f11",
+      "slug": "20260927-supabase-health-check-advisors-ff04ed6f",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/realtime-schema-locked-down-against-modification",
-      "publishedAt": "2026-09-24T11:41:44.645Z",
-      "discoveredAt": "2026-09-24T11:41:44.645Z",
+      "href": "https://supabase.com/changelog/50577-health-check-advisors",
+      "publishedAt": "2026-09-27T14:03:18.424Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
       "locales": {
         "en": {
-          "title": "Realtime schema is now fully locked down against modifications",
-          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+          "title": "Health Check Advisors",
+          "summary": "Log Drains , Observability Auto-Pilot , and , among other things. We'll keep going — more ways to surface logs meaningfully, more tools to help you monitor and debug, with or without an agent in the loop. But as we've s…"
         },
         "fr": {
-          "title": "Realtime schema is now fully locked down against modifications",
-          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+          "title": "Health Check Advisors",
+          "summary": "Log Drains , Observability Auto-Pilot , and , among other things. We'll keep going — more ways to surface logs meaningfully, more tools to help you monitor and debug, with or without an agent in the loop. But as we've s…"
+        }
+      }
+    },
+    {
+      "slug": "20260925-github-copilot-usage-metrics-api-adds-pull-request-review-stages-0447a624",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages",
+      "publishedAt": "2026-09-25T21:09:40.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "Usage metrics API adds pull request review stages",
+          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now break down how long pull requests spend in each stage of review. A new pull_request_review_times array on each repos-1-day row… The post…"
+        },
+        "fr": {
+          "title": "Usage metrics API adds pull request review stages",
+          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now break down how long pull requests spend in each stage of review. A new pull_request_review_times array on each repos-1-day row… The post…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-openai-platform-two-years-of-openai-academy-9d02eeb8",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/two-years-of-openai-academy",
+      "publishedAt": "2026-09-23T16:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:36.478Z",
+      "locales": {
+        "en": {
+          "title": "Two years of OpenAI Academy",
+          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
+        },
+        "fr": {
+          "title": "Two years of OpenAI Academy",
+          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
+        }
+      }
+    },
+    {
+      "slug": "20260924-cloudflare-how-cloudflare-addressed-a-cross-tenant-data-exposure-4224c10f",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
+      "publishedAt": "2026-09-24T15:00:00.000Z",
+      "discoveredAt": "2026-09-24T21:29:30.940Z",
+      "locales": {
+        "en": {
+          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
+          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and…"
+        },
+        "fr": {
+          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
+          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-w3c-2026-climate-weeks-w3c-and-web-sustainability-050fad0e",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/2026-climate-weeks-w3c-and-web-sustainability/",
+      "publishedAt": "2026-09-22T12:40:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:24.364Z",
+      "locales": {
+        "en": {
+          "title": "2026 Climate Weeks: W3C and Web Sustainability",
+          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
+        },
+        "fr": {
+          "title": "2026 Climate Weeks: W3C and Web Sustainability",
+          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
         }
       }
     },
@@ -459,26 +519,6 @@
         "fr": {
           "title": "From Dockerfile to Kit: the Docker Sandboxes Kit Specification",
           "summary": "Docker's Sandbox Kit Specification v3 packages an AI agent's network rules, credentials, and volumes as an ordinary, pinnable OCI image."
-        }
-      }
-    },
-    {
-      "slug": "20260922-cloudflare-we-just-shipped-support-for-the-ugliest-part-of-http--f665e9d5",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/vary-support/",
-      "publishedAt": "2026-09-22T14:04:31.000Z",
-      "discoveredAt": "2026-09-22T21:16:24.364Z",
-      "locales": {
-        "en": {
-          "title": "We just shipped support for the ugliest part of HTTP: Vary",
-          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is…"
-        },
-        "fr": {
-          "title": "We just shipped support for the ugliest part of HTTP: Vary",
-          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is…"
         }
       }
     },
@@ -603,26 +643,6 @@
       }
     },
     {
-      "slug": "20260923-openai-platform-openai-extends-cyber-access-to-ukraine-for-civil-1d77064c",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-      "publishedAt": "2026-09-23T13:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
-      "locales": {
-        "en": {
-          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
-        },
-        "fr": {
-          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
-        }
-      }
-    },
-    {
       "slug": "20260918-anthropic-platform-sep-18-2026-announcements-partnering-with-acc-47b87cc2",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
@@ -679,26 +699,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
           "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-w3c-w3c-irc-bots-now-open-source-28d6f244",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-irc-bots-now-open-source/",
-      "publishedAt": "2026-09-21T11:13:00.000Z",
-      "discoveredAt": "2026-09-21T12:44:09.835Z",
-      "locales": {
-        "en": {
-          "title": "W3C IRC bots now open source",
-          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
-        },
-        "fr": {
-          "title": "W3C IRC bots now open source",
-          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
         }
       }
     },
@@ -763,62 +763,122 @@
       }
     },
     {
-      "slug": "20260924-vercel-claude-opus-55-now-available-on-ai-gateway-claude-opus-55-7d11b8cd",
+      "slug": "20260927-vercel-vercel-sandbox-now-supports-memory-observability-vercel-s-4b18a154",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/claude-opus-5-5-now-available-on-ai-gateway",
-      "publishedAt": "2026-09-24T21:29:30.940Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
+      "href": "https://vercel.com/changelog/vercel-sandbox-now-supports-memory-observability",
+      "publishedAt": "2026-09-27T14:03:18.424Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
       "locales": {
         "en": {
-          "title": "Claude Opus 5.5 now available on AI Gateway Claude Opus 5.5 from Anthropic is now available on Vercel AI Gateway with adaptive thinking, fast mode, regional inference, a 1M context window, and up to max effort. Rohan Taneja, Zachary Chen, and 1 other",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Vercel Sandbox now supports memory observability Vercel sandbox memory usage data can now be accessed in the dashboard and CLI. Tom Lienard, Eric Dodds",
+          "summary": "+2 Zachary Chen, Rohan Taneja, and 2 others"
         },
         "fr": {
-          "title": "Claude Opus 5.5 now available on AI Gateway Claude Opus 5.5 from Anthropic is now available on Vercel AI Gateway with adaptive thinking, fast mode, regional inference, a 1M context window, and up to max effort. Rohan Taneja, Zachary Chen, and 1 other",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Vercel Sandbox now supports memory observability Vercel sandbox memory usage data can now be accessed in the dashboard and CLI. Tom Lienard, Eric Dodds",
+          "summary": "+2 Zachary Chen, Rohan Taneja, and 2 others"
         }
       }
     },
     {
-      "slug": "20260924-github-require-proof-of-presence-for-high-impact-actions-453a5329",
+      "slug": "20260925-postgresql-postgresql-1519-1711-minor-release-action-may-be-requ-00cf1171",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/postgres-15-19-17-11-breaking-changes",
+      "publishedAt": "2026-09-25T00:00:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
+          "summary": "Sep 25, 2026"
+        },
+        "fr": {
+          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
+          "summary": "Sep 25, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20260925-github-private-saved-views-for-repository-issues-and-relates-to--27d48753",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
-      "publishedAt": "2026-09-24T20:28:33.000Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
+      "href": "https://github.blog/changelog/2026-09-25-personal-saved-views-for-repository-issues-and-more",
+      "publishedAt": "2026-09-25T19:05:03.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
       "locales": {
         "en": {
-          "title": "Require proof of presence for high-impact actions",
-          "summary": "You can now require an interactive re-authentication or a multi-factor challenge before members take high-impact actions on GitHub Enterprise Cloud accounts. Proof of presence is an expansion of GitHub’s sudo… The post…"
+          "title": "Private saved views for repository issues and “Relates to” issue relationship is generally available",
+          "summary": "Private saved views for repository issues Repository issues pages now support private saved views, making it easier to create and save personalized views of your issues. “Relates to” issue relationship… The post Private…"
         },
         "fr": {
-          "title": "Require proof of presence for high-impact actions",
-          "summary": "You can now require an interactive re-authentication or a multi-factor challenge before members take high-impact actions on GitHub Enterprise Cloud accounts. Proof of presence is an expansion of GitHub’s sudo… The post…"
+          "title": "Private saved views for repository issues and “Relates to” issue relationship is generally available",
+          "summary": "Private saved views for repository issues Repository issues pages now support private saved views, making it easier to create and save personalized views of your issues. “Relates to” issue relationship… The post Private…"
         }
       }
     },
     {
-      "slug": "20260923-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/restore-credential-resync",
-      "publishedAt": "2026-09-23T21:28:36.478Z",
+      "slug": "20260923-openai-platform-openai-extends-cyber-access-to-ukraine-for-civil-1d77064c",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "publishedAt": "2026-09-23T13:00:00.000Z",
       "discoveredAt": "2026-09-23T21:28:36.478Z",
       "locales": {
         "en": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
         },
         "fr": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
+        }
+      }
+    },
+    {
+      "slug": "20260922-cloudflare-we-just-shipped-support-for-the-ugliest-part-of-http--f665e9d5",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/vary-support/",
+      "publishedAt": "2026-09-22T14:04:31.000Z",
+      "discoveredAt": "2026-09-22T21:16:24.364Z",
+      "locales": {
+        "en": {
+          "title": "We just shipped support for the ugliest part of HTTP: Vary",
+          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is…"
+        },
+        "fr": {
+          "title": "We just shipped support for the ugliest part of HTTP: Vary",
+          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is…"
+        }
+      }
+    },
+    {
+      "slug": "20260921-w3c-w3c-irc-bots-now-open-source-28d6f244",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-irc-bots-now-open-source/",
+      "publishedAt": "2026-09-21T11:13:00.000Z",
+      "discoveredAt": "2026-09-21T12:44:09.835Z",
+      "locales": {
+        "en": {
+          "title": "W3C IRC bots now open source",
+          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
+        },
+        "fr": {
+          "title": "W3C IRC bots now open source",
+          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
         }
       }
     },
@@ -839,26 +899,6 @@
         "fr": {
           "title": "Docker and CNCF partner on an open spec for agent permissions",
           "summary": "Docker is bringing the open source Sandbox Kit Spec to the CNCF, so AI agent permissions become a neutral, vendor independent standard built on OCI."
-        }
-      }
-    },
-    {
-      "slug": "20260922-cloudflare-introducing-worker-previews-isolated-preview-environm-55b3c858",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/worker-previews/",
-      "publishedAt": "2026-09-22T13:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:24.364Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
-          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
-        },
-        "fr": {
-          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
-          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
         }
       }
     },
@@ -983,26 +1023,6 @@
       }
     },
     {
-      "slug": "20260923-openai-platform-sam-altmans-remarks-at-the-united-nations-securi-01d4e543",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/sam-altman-un-security-council-remarks",
-      "publishedAt": "2026-09-23T12:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
-      "locales": {
-        "en": {
-          "title": "Sam Altman’s remarks at the United Nations Security Council",
-          "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council."
-        },
-        "fr": {
-          "title": "Sam Altman’s remarks at the United Nations Security Council",
-          "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council."
-        }
-      }
-    },
-    {
       "slug": "20260917-anthropic-platform-sep-17-2026-announcements-introducing-the-lif-a29db010",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
@@ -1059,26 +1079,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
           "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for examp…"
-        }
-      }
-    },
-    {
-      "slug": "20260918-w3c-w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026-266b9a5f",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026/",
-      "publishedAt": "2026-09-18T16:49:00.000Z",
-      "discoveredAt": "2026-09-18T20:52:51.777Z",
-      "locales": {
-        "en": {
-          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
-          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
-        },
-        "fr": {
-          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
-          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
         }
       }
     },
@@ -1143,62 +1143,122 @@
       }
     },
     {
-      "slug": "20260924-vercel-vercel-connect-now-supports-tanstack-ai-authenticate-tans-87a5f976",
+      "slug": "20260925-vercel-gpt-6-sol-and-luna-now-available-on-ai-gateway-gpt-6-sol--c332c2ae",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-connect-tanstack-ai",
-      "publishedAt": "2026-09-24T11:41:44.645Z",
-      "discoveredAt": "2026-09-24T11:41:44.645Z",
+      "href": "https://vercel.com/changelog/gpt-6-sol-and-luna-now-available-on-ai-gateway",
+      "publishedAt": "2026-09-25T11:47:51.359Z",
+      "discoveredAt": "2026-09-25T11:47:51.359Z",
       "locales": {
         "en": {
-          "title": "Vercel Connect now supports TanStack AI Authenticate TanStack AI MCP clients with Vercel Connect. Tokens are issued at runtime and consent is handled at the route boundary, so nothing is stored in your environment. Ben Sabic Content Engineer",
-          "summary": "24 September 24 Sep"
+          "title": "GPT-6 Sol and Luna now available on AI Gateway GPT-6 Sol and GPT-6 Luna from OpenAI are now available on Vercel AI Gateway for coding, professional workflows, computer use, and agentic applications. Zachary Chen, Jerilyn Zheng",
+          "summary": "22 September 22 Sep"
         },
         "fr": {
-          "title": "Vercel Connect now supports TanStack AI Authenticate TanStack AI MCP clients with Vercel Connect. Tokens are issued at runtime and consent is handled at the route boundary, so nothing is stored in your environment. Ben Sabic Content Engineer",
-          "summary": "24 September 24 Sep"
+          "title": "GPT-6 Sol and Luna now available on AI Gateway GPT-6 Sol and GPT-6 Luna from OpenAI are now available on Vercel AI Gateway for coding, professional workflows, computer use, and agentic applications. Zachary Chen, Jerilyn Zheng",
+          "summary": "22 September 22 Sep"
         }
       }
     },
     {
-      "slug": "20260923-github-copilot-more-ways-to-request-and-configure-copilot-code-r-095547e3",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews",
-      "publishedAt": "2026-09-23T21:25:58.000Z",
-      "discoveredAt": "2026-09-24T11:41:44.645Z",
-      "locales": {
-        "en": {
-          "title": "More ways to request and configure Copilot code reviews",
-          "summary": "GitHub Copilot code review now offers additional personal configurations to an expanded set of Copilot plans and an enterprise-level default setting. These improvements are now generally available: A dedicated personal……"
-        },
-        "fr": {
-          "title": "More ways to request and configure Copilot code reviews",
-          "summary": "GitHub Copilot code review now offers additional personal configurations to an expanded set of Copilot plans and an enterprise-level default setting. These improvements are now generally available: A dedicated personal……"
-        }
-      }
-    },
-    {
-      "slug": "20260923-supabase-read-replicas-moved-to-project-settings-infrastructure-c2cab453",
+      "slug": "20260925-supabase-logs-usage-based-pricing-f9fe585d",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/read-replicas-moved-to-infrastructure",
-      "publishedAt": "2026-09-23T11:31:44.061Z",
-      "discoveredAt": "2026-09-23T11:31:44.061Z",
+      "href": "https://supabase.com/changelog/logs-usage-based-pricing",
+      "publishedAt": "2026-09-25T00:00:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
       "locales": {
         "en": {
-          "title": "Read replicas moved to Project Settings → Infrastructure",
-          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
+          "title": "Logs usage-based pricing",
+          "summary": "Sep 25, 2026"
         },
         "fr": {
-          "title": "Read replicas moved to Project Settings → Infrastructure",
-          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
+          "title": "Logs usage-based pricing",
+          "summary": "Sep 25, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20260925-github-changes-to-query-results-in-the-github-actions-api-and-ui-e3b548de",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-25-changes-to-query-results-in-the-github-actions-api-and-ui",
+      "publishedAt": "2026-09-25T18:17:06.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "Changes to query results in the GitHub Actions API and UI",
+          "summary": "Queries for workflow runs in the GitHub Actions API and UI now return a less precise but more accurate count of records when you search by workflow, event, status, branch,… The post Changes to query results in the GitHu…"
+        },
+        "fr": {
+          "title": "Changes to query results in the GitHub Actions API and UI",
+          "summary": "Queries for workflow runs in the GitHub Actions API and UI now return a less precise but more accurate count of records when you search by workflow, event, status, branch,… The post Changes to query results in the GitHu…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-openai-platform-sam-altmans-remarks-at-the-united-nations-securi-01d4e543",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:36.478Z",
+      "locales": {
+        "en": {
+          "title": "Sam Altman’s remarks at the United Nations Security Council",
+          "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council."
+        },
+        "fr": {
+          "title": "Sam Altman’s remarks at the United Nations Security Council",
+          "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council."
+        }
+      }
+    },
+    {
+      "slug": "20260922-cloudflare-introducing-worker-previews-isolated-preview-environm-55b3c858",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/worker-previews/",
+      "publishedAt": "2026-09-22T13:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:24.364Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
+          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
+        },
+        "fr": {
+          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
+          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
+        }
+      }
+    },
+    {
+      "slug": "20260918-w3c-w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026-266b9a5f",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026/",
+      "publishedAt": "2026-09-18T16:49:00.000Z",
+      "discoveredAt": "2026-09-18T20:52:51.777Z",
+      "locales": {
+        "en": {
+          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
+          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
+        },
+        "fr": {
+          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
+          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
         }
       }
     },
@@ -1219,26 +1279,6 @@
         "fr": {
           "title": "Introducing Cloud Sandboxes: Start on Your Laptop, Finish in the Cloud",
           "summary": "Run agents on your laptop, in the cloud, and move between them with one command, all safely. Earlier this year we launched Docker Sandboxes: microVM environments where coding agents can work autonomously in a safe way."
-        }
-      }
-    },
-    {
-      "slug": "20260921-cloudflare-python-workers-are-now-generally-available-5a3a5fde",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/python-workers-ga/",
-      "publishedAt": "2026-09-21T13:00:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
-      "locales": {
-        "en": {
-          "title": "Python Workers are now generally available",
-          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Work…"
-        },
-        "fr": {
-          "title": "Python Workers are now generally available",
-          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Work…"
         }
       }
     },
@@ -1363,26 +1403,6 @@
       }
     },
     {
-      "slug": "20260923-openai-platform-harvey-turns-legal-context-into-stronger-drafts--f7558dc5",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
-      "publishedAt": "2026-09-23T12:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
-      "locales": {
-        "en": {
-          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-          "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
-        },
-        "fr": {
-          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-          "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
-        }
-      }
-    },
-    {
       "slug": "20260912-anthropic-platform-responsible-scaling-policy-3a0b4572",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
@@ -1439,26 +1459,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
           "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
-        }
-      }
-    },
-    {
-      "slug": "20260916-w3c-w3c-launches-first-pilot-of-program-to-support-open-source-p-daf0158b",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-launches-first-pilot-of-program-to-support-open-source-projects/",
-      "publishedAt": "2026-09-16T13:53:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "W3C launches first pilot of program to support Open Source projects",
-          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
-        },
-        "fr": {
-          "title": "W3C launches first pilot of program to support Open Source projects",
-          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
         }
       }
     },
@@ -1523,62 +1523,122 @@
       }
     },
     {
-      "slug": "20260924-vercel-gemini-38-text-to-speech-models-now-available-on-ai-gatew-8326b405",
+      "slug": "20260924-vercel-drives-for-vercel-sandbox-are-now-in-public-beta-vercel-s-88dfdf44",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/gemini-3-8-text-to-speech-models-now-available-on-ai-gateway",
-      "publishedAt": "2026-09-24T11:41:44.645Z",
-      "discoveredAt": "2026-09-24T11:41:44.645Z",
+      "href": "https://vercel.com/changelog/drives-for-vercel-sandbox-are-now-in-public-beta",
+      "publishedAt": "2026-09-24T21:29:30.940Z",
+      "discoveredAt": "2026-09-24T21:29:30.940Z",
       "locales": {
         "en": {
-          "title": "Gemini 3.8 text-to-speech models now available on AI Gateway Generate speech in more than 100 languages with Google's Gemini 3.8 Flash-Lite TTS and Flash TTS on Vercel AI Gateway. Zachary Chen, Kevin Dawkins, and 1 other",
-          "summary": "Agustin Falco Software Engineer"
+          "title": "Drives for Vercel Sandbox are now in public beta Vercel Sandbox Drives, persistent storage you mount into a sandbox, is now in public beta with drives up to 16 TiB and usage-based pricing. +2 Tom Lienard, Joe Haddad, and 2 others",
+          "summary": "\"/> Zachary Chen, Kevin Dawkins, and 1 other"
         },
         "fr": {
-          "title": "Gemini 3.8 text-to-speech models now available on AI Gateway Generate speech in more than 100 languages with Google's Gemini 3.8 Flash-Lite TTS and Flash TTS on Vercel AI Gateway. Zachary Chen, Kevin Dawkins, and 1 other",
-          "summary": "Agustin Falco Software Engineer"
+          "title": "Drives for Vercel Sandbox are now in public beta Vercel Sandbox Drives, persistent storage you mount into a sandbox, is now in public beta with drives up to 16 TiB and usage-based pricing. +2 Tom Lienard, Joe Haddad, and 2 others",
+          "summary": "\"/> Zachary Chen, Kevin Dawkins, and 1 other"
         }
       }
     },
     {
-      "slug": "20260923-github-node-20-is-no-longer-available-in-github-actions-47d21100",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions",
-      "publishedAt": "2026-09-23T20:46:07.000Z",
-      "discoveredAt": "2026-09-24T11:41:44.645Z",
-      "locales": {
-        "en": {
-          "title": "Node 20 is no longer available in GitHub Actions",
-          "summary": "This is the final notification that Node 20 is no longer available on GitHub Actions runners. Runners now use Node 24 for JavaScript actions. The temporary ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION opt-out is no… The post…"
-        },
-        "fr": {
-          "title": "Node 20 is no longer available in GitHub Actions",
-          "summary": "This is the final notification that Node 20 is no longer available on GitHub Actions runners. Runners now use Node 24 for JavaScript actions. The temporary ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION opt-out is no… The post…"
-        }
-      }
-    },
-    {
-      "slug": "20260923-supabase-fixed-daily-backups-occasionally-skipped-due-to-a-sched-b529818e",
+      "slug": "20260924-supabase-public-alpha-supabase-pipelines-8df37aee",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/bulk-prepare-retry-on-transient-failure",
-      "publishedAt": "2026-09-23T11:31:44.061Z",
-      "discoveredAt": "2026-09-23T11:31:44.061Z",
+      "href": "https://supabase.com/changelog/pipelines",
+      "publishedAt": "2026-09-24T21:29:30.940Z",
+      "discoveredAt": "2026-09-24T21:29:30.940Z",
       "locales": {
         "en": {
-          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
-          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
+          "title": "[Public Alpha] Supabase Pipelines",
+          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
         },
         "fr": {
-          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
-          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
+          "title": "[Public Alpha] Supabase Pipelines",
+          "summary": "New Feature Stream Postgres changes to BigQuery in near real time with Supabase Pipelines, a managed CDC service configured right in the Dashboard. Now in public alpha on all paid pla"
+        }
+      }
+    },
+    {
+      "slug": "20260925-github-copilot-agentic-autofix-now-uses-copilot-memory-925b830b",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
+      "publishedAt": "2026-09-25T17:25:50.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "Agentic autofix now uses Copilot Memory",
+          "summary": "Agentic autofix now uses Copilot Memory for customers who’ve enabled it. When you use agentic autofix, it reviews existing memories for context that can help resolve security alerts. When it… The post Agentic autofix no…"
+        },
+        "fr": {
+          "title": "Agentic autofix now uses Copilot Memory",
+          "summary": "Agentic autofix now uses Copilot Memory for customers who’ve enabled it. When you use agentic autofix, it reviews existing memories for context that can help resolve security alerts. When it… The post Agentic autofix no…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-openai-platform-harvey-turns-legal-context-into-stronger-drafts--f7558dc5",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:36.478Z",
+      "locales": {
+        "en": {
+          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+          "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
+        },
+        "fr": {
+          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+          "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
+        }
+      }
+    },
+    {
+      "slug": "20260921-cloudflare-python-workers-are-now-generally-available-5a3a5fde",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/python-workers-ga/",
+      "publishedAt": "2026-09-21T13:00:00.000Z",
+      "discoveredAt": "2026-09-21T21:57:14.113Z",
+      "locales": {
+        "en": {
+          "title": "Python Workers are now generally available",
+          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Work…"
+        },
+        "fr": {
+          "title": "Python Workers are now generally available",
+          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Work…"
+        }
+      }
+    },
+    {
+      "slug": "20260916-w3c-w3c-launches-first-pilot-of-program-to-support-open-source-p-daf0158b",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-launches-first-pilot-of-program-to-support-open-source-projects/",
+      "publishedAt": "2026-09-16T13:53:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
+        },
+        "fr": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
         }
       }
     },
@@ -1599,26 +1659,6 @@
         "fr": {
           "title": "Meet the Ecosystem: Partners and Customers at WeAreDevelopers with Docker",
           "summary": "Meet the partners and customers bringing practical AI, security, and development sessions to the Docker Pavilion at WeAreDevelopers. The post explains why a strong ecosystem matters to developers, announces the sessions…"
-        }
-      }
-    },
-    {
-      "slug": "20260918-cloudflare-saving-another-100tb-of-ram-with-math-and-rust-2f284f65",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
-      "publishedAt": "2026-09-18T17:23:58.000Z",
-      "discoveredAt": "2026-09-18T20:52:51.777Z",
-      "locales": {
-        "en": {
-          "title": "Saving another 100TB of RAM with math (and Rust)",
-          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based se…"
-        },
-        "fr": {
-          "title": "Saving another 100TB of RAM with math (and Rust)",
-          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based se…"
         }
       }
     },
@@ -1723,42 +1763,22 @@
       }
     },
     {
-      "slug": "20260915-google-ai-ai-for-everyone-in-every-language-a243976a",
+      "slug": "20260915-google-ai-building-ai-to-accelerate-science-and-improve-lives-b86d9a76",
       "toolName": "Google AI",
       "category": "AI Platform",
       "source": "Google AI Blog",
       "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+      "href": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
       "publishedAt": "2026-09-15T16:00:00.000Z",
-      "discoveredAt": "2026-09-25T11:47:51.359Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
       "locales": {
         "en": {
-          "title": "AI for everyone in every language",
-          "summary": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed."
+          "title": "Building AI to accelerate science and improve lives",
+          "summary": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …"
         },
         "fr": {
-          "title": "AI for everyone in every language",
-          "summary": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed."
-        }
-      }
-    },
-    {
-      "slug": "20260923-openai-platform-how-invideo-improves-color-grading-3x-with-gpt6--7357353a",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
-      "publishedAt": "2026-09-23T12:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
-      "locales": {
-        "en": {
-          "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-          "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day."
-        },
-        "fr": {
-          "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-          "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day."
+          "title": "Building AI to accelerate science and improve lives",
+          "summary": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …"
         }
       }
     },
@@ -1823,26 +1843,6 @@
       }
     },
     {
-      "slug": "20260909-w3c-a-compilation-of-w3c-in-japans-30th-anniversary-events-26d8dabd",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/",
-      "publishedAt": "2026-09-09T20:50:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "A compilation of W3C in Japan's 30th anniversary events",
-          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
-        },
-        "fr": {
-          "title": "A compilation of W3C in Japan's 30th anniversary events",
-          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
-        }
-      }
-    },
-    {
       "slug": "20260903-rust-announcing-rust-1981-c3f5c215",
       "toolName": "Rust",
       "category": "Systems & Backend",
@@ -1903,62 +1903,122 @@
       }
     },
     {
-      "slug": "20260924-vercel-vercel-connect-now-supports-microsoft-teams-agents-can-no-844d3484",
+      "slug": "20260924-vercel-claude-opus-55-now-available-on-ai-gateway-claude-opus-55-7d11b8cd",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-connect-microsoft-teams",
-      "publishedAt": "2026-09-24T11:41:44.645Z",
-      "discoveredAt": "2026-09-24T11:41:44.645Z",
+      "href": "https://vercel.com/changelog/claude-opus-5-5-now-available-on-ai-gateway",
+      "publishedAt": "2026-09-24T21:29:30.940Z",
+      "discoveredAt": "2026-09-24T21:29:30.940Z",
       "locales": {
         "en": {
-          "title": "Vercel Connect now supports Microsoft Teams Agents can now receive and reply to Microsoft Teams messages through Vercel Connect, with tokens managed for you across the Connect SDK, eve, and Chat SDK. Bhrigu Srivastava, Owen Kephart, and 1 other",
-          "summary": "21 September 21 Sep"
+          "title": "Claude Opus 5.5 now available on AI Gateway Claude Opus 5.5 from Anthropic is now available on Vercel AI Gateway with adaptive thinking, fast mode, regional inference, a 1M context window, and up to max effort. Rohan Taneja, Zachary Chen, and 1 other",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         },
         "fr": {
-          "title": "Vercel Connect now supports Microsoft Teams Agents can now receive and reply to Microsoft Teams messages through Vercel Connect, with tokens managed for you across the Connect SDK, eve, and Chat SDK. Bhrigu Srivastava, Owen Kephart, and 1 other",
-          "summary": "21 September 21 Sep"
+          "title": "Claude Opus 5.5 now available on AI Gateway Claude Opus 5.5 from Anthropic is now available on Vercel AI Gateway with adaptive thinking, fast mode, regional inference, a 1M context window, and up to max effort. Rohan Taneja, Zachary Chen, and 1 other",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         }
       }
     },
     {
-      "slug": "20260923-github-copilot-local-sandboxing-in-the-github-copilot-app-59f94707",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app",
-      "publishedAt": "2026-09-23T15:00:57.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
-      "locales": {
-        "en": {
-          "title": "Local sandboxing in the GitHub Copilot app",
-          "summary": "Local sandboxing helps reduce the potential impact of unintended commands by limiting access to files, network resources, and credentials on your machine. In the GitHub Copilot app, you configure it… The post Local sand…"
-        },
-        "fr": {
-          "title": "Local sandboxing in the GitHub Copilot app",
-          "summary": "Local sandboxing helps reduce the potential impact of unintended commands by limiting access to files, network resources, and credentials on your machine. In the GitHub Copilot app, you configure it… The post Local sand…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
+      "slug": "20260924-supabase-realtime-schema-is-now-fully-locked-down-against-modifi-4d315f11",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
-      "publishedAt": "2026-09-21T21:57:14.113Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
+      "href": "https://supabase.com/changelog/realtime-schema-locked-down-against-modification",
+      "publishedAt": "2026-09-24T11:41:44.645Z",
+      "discoveredAt": "2026-09-24T11:41:44.645Z",
       "locales": {
         "en": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
+          "title": "Realtime schema is now fully locked down against modifications",
+          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
         },
         "fr": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
+          "title": "Realtime schema is now fully locked down against modifications",
+          "summary": "Breaking Change Supabase now blocks all changes to the realtime schema: creating, alt"
+        }
+      }
+    },
+    {
+      "slug": "20260925-claude-github-copilot-weekly-releases-september-21-6edfaac7",
+      "toolName": "Claude",
+      "category": "AI Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
+      "publishedAt": "2026-09-25T16:42:48.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Copilot weekly releases — September 21",
+          "summary": "This week’s releases add new models to Copilot, local sandboxing in the Copilot app, and updates to Copilot in Slack, Microsoft Teams, JetBrains, and VS Code. GitHub Copilot Claude Opus… The post GitHub Copilot weekly r…"
+        },
+        "fr": {
+          "title": "GitHub Copilot weekly releases — September 21",
+          "summary": "This week’s releases add new models to Copilot, local sandboxing in the Copilot app, and updates to Copilot in Slack, Microsoft Teams, JetBrains, and VS Code. GitHub Copilot Claude Opus… The post GitHub Copilot weekly r…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-openai-platform-how-invideo-improves-color-grading-3x-with-gpt6--7357353a",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:36.478Z",
+      "locales": {
+        "en": {
+          "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+          "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day."
+        },
+        "fr": {
+          "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+          "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day."
+        }
+      }
+    },
+    {
+      "slug": "20260918-cloudflare-saving-another-100tb-of-ram-with-math-and-rust-2f284f65",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+      "publishedAt": "2026-09-18T17:23:58.000Z",
+      "discoveredAt": "2026-09-18T20:52:51.777Z",
+      "locales": {
+        "en": {
+          "title": "Saving another 100TB of RAM with math (and Rust)",
+          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based se…"
+        },
+        "fr": {
+          "title": "Saving another 100TB of RAM with math (and Rust)",
+          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based se…"
+        }
+      }
+    },
+    {
+      "slug": "20260909-w3c-a-compilation-of-w3c-in-japans-30th-anniversary-events-26d8dabd",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/",
+      "publishedAt": "2026-09-09T20:50:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "A compilation of W3C in Japan's 30th anniversary events",
+          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
+        },
+        "fr": {
+          "title": "A compilation of W3C in Japan's 30th anniversary events",
+          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event…"
         }
       }
     },
@@ -1979,26 +2039,6 @@
         "fr": {
           "title": "6 Benefits of Sandbox Environments (and How Docker Sandboxes Delivers Them)",
           "summary": "Learn about the key benefits of sandbox environments with Docker including isolation, definable controls, secrets credential handling, and more."
-        }
-      }
-    },
-    {
-      "slug": "20260916-cloudflare-when-scanners-miss-the-attack-how-cloudflare-client-s-1575dde9",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
-      "publishedAt": "2026-09-16T20:06:17.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
-          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analys…"
-        },
-        "fr": {
-          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
-          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analys…"
         }
       }
     },
@@ -2083,42 +2123,22 @@
       }
     },
     {
-      "slug": "20260915-google-ai-ai-for-societal-impact-18592959",
+      "slug": "20260915-google-ai-ai-for-everyone-in-every-language-a243976a",
       "toolName": "Google AI",
       "category": "AI Platform",
       "source": "Google AI Blog",
       "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+      "href": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
       "publishedAt": "2026-09-15T16:00:00.000Z",
-      "discoveredAt": "2026-09-15T21:18:38.937Z",
+      "discoveredAt": "2026-09-25T11:47:51.359Z",
       "locales": {
         "en": {
-          "title": "AI for Societal Impact",
-          "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
+          "title": "AI for everyone in every language",
+          "summary": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed."
         },
         "fr": {
-          "title": "AI for Societal Impact",
-          "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
-        }
-      }
-    },
-    {
-      "slug": "20260923-openai-platform-ringgs-ai-agents-resolve-up-to-65-of-customer-ca-7cff1964",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/ringg",
-      "publishedAt": "2026-09-23T12:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
-      "locales": {
-        "en": {
-          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
-        },
-        "fr": {
-          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
+          "title": "AI for everyone in every language",
+          "summary": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed."
         }
       }
     },
@@ -2183,26 +2203,6 @@
       }
     },
     {
-      "slug": "20260824-w3c-making-digital-identity-work-across-the-web-gdc-2026-f09de87c",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/a-global-digital-infrastructure-gdc-2026/",
-      "publishedAt": "2026-08-24T07:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Making digital identity work across the Web: GDC 2026",
-          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
-        },
-        "fr": {
-          "title": "Making digital identity work across the Web: GDC 2026",
-          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
-        }
-      }
-    },
-    {
       "slug": "20260901-rust-announcing-rustup-1291-c952d2ba",
       "toolName": "Rust",
       "category": "Systems & Backend",
@@ -2263,62 +2263,122 @@
       }
     },
     {
-      "slug": "20260923-vercel-unlimited-vercel-blob-stores-on-every-plan-vercel-blob-no-dc1e5597",
+      "slug": "20260924-vercel-vercel-connect-now-supports-tanstack-ai-authenticate-tans-87a5f976",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/unlimited-vercel-blob-stores-on-every-plan",
-      "publishedAt": "2026-09-23T21:28:36.478Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
+      "href": "https://vercel.com/changelog/vercel-connect-tanstack-ai",
+      "publishedAt": "2026-09-24T11:41:44.645Z",
+      "discoveredAt": "2026-09-24T11:41:44.645Z",
       "locales": {
         "en": {
-          "title": "Unlimited Vercel Blob stores on every plan Vercel Blob no longer caps how many stores you can create on any plan. Store creation is billed as one Blob Advanced Operation, and deleting a store is free. Agustin Falco Software Engineer",
-          "summary": "23 September 23 Sep"
+          "title": "Vercel Connect now supports TanStack AI Authenticate TanStack AI MCP clients with Vercel Connect. Tokens are issued at runtime and consent is handled at the route boundary, so nothing is stored in your environment. Ben Sabic Content Engineer",
+          "summary": "24 September 24 Sep"
         },
         "fr": {
-          "title": "Unlimited Vercel Blob stores on every plan Vercel Blob no longer caps how many stores you can create on any plan. Store creation is billed as one Blob Advanced Operation, and deleting a store is free. Agustin Falco Software Engineer",
-          "summary": "23 September 23 Sep"
+          "title": "Vercel Connect now supports TanStack AI Authenticate TanStack AI MCP clients with Vercel Connect. Tokens are issued at runtime and consent is handled at the route boundary, so nothing is stored in your environment. Ben Sabic Content Engineer",
+          "summary": "24 September 24 Sep"
         }
       }
     },
     {
-      "slug": "20260923-github-copilot-opentelemetry-in-the-github-copilot-app-0ad4c8ab",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app",
-      "publishedAt": "2026-09-23T02:14:54.000Z",
-      "discoveredAt": "2026-09-23T11:31:44.061Z",
-      "locales": {
-        "en": {
-          "title": "OpenTelemetry in the GitHub Copilot app",
-          "summary": "Understand how Copilot agents perform and interact with models and tools. The GitHub Copilot app now supports OpenTelemetry (OTel) configuration through enterprise-managed settings. OTel is an open source observability…"
-        },
-        "fr": {
-          "title": "OpenTelemetry in the GitHub Copilot app",
-          "summary": "Understand how Copilot agents perform and interact with models and tools. The GitHub Copilot app now supports OpenTelemetry (OTel) configuration through enterprise-managed settings. OTel is an open source observability…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-supabase-migration-of-supabase-management-api-logsall-analytics--b021c0b5",
+      "slug": "20260923-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/48235-migration-of-supabase-management-api-logs-all-analytics-endpoint-to-logs-endpoint",
-      "publishedAt": "2026-09-21T12:44:09.835Z",
-      "discoveredAt": "2026-09-21T12:44:09.835Z",
+      "href": "https://supabase.com/changelog/restore-credential-resync",
+      "publishedAt": "2026-09-23T21:28:36.478Z",
+      "discoveredAt": "2026-09-23T21:28:36.478Z",
       "locales": {
         "en": {
-          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
-          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
         },
         "fr": {
-          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
-          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+        }
+      }
+    },
+    {
+      "slug": "20260925-github-copilot-updates-to-github-copilot-for-slack-and-microsoft-e15c9f98",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams",
+      "publishedAt": "2026-09-25T16:33:42.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "Updates to GitHub Copilot for Slack and Microsoft Teams",
+          "summary": "GitHub Copilot in Slack and Microsoft Teams now gives you more context, more control, and a clearer path from conversation to GitHub work. Whether you’re sharing files in Slack or… The post Updates to GitHub Copilot for…"
+        },
+        "fr": {
+          "title": "Updates to GitHub Copilot for Slack and Microsoft Teams",
+          "summary": "GitHub Copilot in Slack and Microsoft Teams now gives you more context, more control, and a clearer path from conversation to GitHub work. Whether you’re sharing files in Slack or… The post Updates to GitHub Copilot for…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-openai-platform-ringgs-ai-agents-resolve-up-to-65-of-customer-ca-7cff1964",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/ringg",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:36.478Z",
+      "locales": {
+        "en": {
+          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
+        },
+        "fr": {
+          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
+        }
+      }
+    },
+    {
+      "slug": "20260916-cloudflare-when-scanners-miss-the-attack-how-cloudflare-client-s-1575dde9",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
+      "publishedAt": "2026-09-16T20:06:17.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
+          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analys…"
+        },
+        "fr": {
+          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
+          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analys…"
+        }
+      }
+    },
+    {
+      "slug": "20260824-w3c-making-digital-identity-work-across-the-web-gdc-2026-f09de87c",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/a-global-digital-infrastructure-gdc-2026/",
+      "publishedAt": "2026-08-24T07:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Making digital identity work across the Web: GDC 2026",
+          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
+        },
+        "fr": {
+          "title": "Making digital identity work across the Web: GDC 2026",
+          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a…"
         }
       }
     },
@@ -2339,66 +2399,6 @@
         "fr": {
           "title": "YOLO Mode: Agent Autonomy Without the Guardrails",
           "summary": "YOLO mode lets an AI agent run without asking permission. Learn what it is, why it's risky, and how to run it safely."
-        }
-      }
-    },
-    {
-      "slug": "20260915-cloudflare-give-every-teammate-and-agent-the-right-level-of-acce-5d707738",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-granular-authorization/",
-      "publishedAt": "2026-09-15T13:00:00.000Z",
-      "discoveredAt": "2026-09-25T11:47:51.359Z",
-      "locales": {
-        "en": {
-          "title": "Give every teammate and agent the right level of access to your Workers",
-          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
-        },
-        "fr": {
-          "title": "Give every teammate and agent the right level of access to your Workers",
-          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
-        }
-      }
-    },
-    {
-      "slug": "20260921-hugging-face-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/tokenizers-v1",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
-      "locales": {
-        "en": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
-        },
-        "fr": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
-        }
-      }
-    },
-    {
-      "slug": "20260916-github-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
-      "publishedAt": "2026-09-16T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
-      "locales": {
-        "en": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Dia…"
-        },
-        "fr": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Dia…"
         }
       }
     }
