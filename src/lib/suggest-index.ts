@@ -2,6 +2,7 @@ import { comparisons, posts, recommendedTools, studentStudyTools } from "@/conte
 import { getOpenStages } from "@/content/stages";
 import type { Locale } from "@/i18n/config";
 import type { Suggestion } from "@/lib/suggest";
+import { categoryName } from "@/lib/categories";
 
 /**
  * Everything on this site a reader could reasonably be searching for, in one
@@ -17,22 +18,11 @@ import type { Suggestion } from "@/lib/suggest";
  * reader saw "Career/Interviews" under a French title and could not find those
  * guides by typing "carriere".
  */
-const CATEGORY_FR: Record<string, string> = {
-  "AI Fundamentals": "Fondamentaux IA",
-  "ML Engineering": "Ingenierie ML",
-  "LLM Systems": "Systemes LLM",
-  "Cloud/DevOps": "Cloud/DevOps",
-  "Security & Performance": "Securite & Performance",
-  "Career/Interviews": "Carriere/Entretiens",
-  "CS Fundamentals": "Fondamentaux informatique",
-  "Systems & Backend": "Systemes & Backend"
-};
-
 export function buildSuggestIndex(locale: Locale): Suggestion[] {
   const out: Suggestion[] = [];
 
   for (const post of posts) {
-    const category = locale === "fr" ? CATEGORY_FR[post.category] || post.category : post.category;
+    const category = categoryName(post.category, locale);
     out.push({
       t: post.locales[locale]?.title || post.title,
       h: `/${locale}/blog/${post.slug}`,

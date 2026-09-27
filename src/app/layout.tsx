@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { getGa4MeasurementId, isGa4Enabled } from "@/lib/runtime-config";
 import { absoluteUrl, getSiteUrl } from "@/lib/site-url";
 import { assertProductionRuntimeConfig } from "@/lib/env-validation";
+import { AppearanceSync } from "@/components/appearance-sync";
 import { jsonLd } from "@/lib/json-ld";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -299,6 +300,10 @@ gtag('config', '${ga4MeasurementId}', { anonymize_ip: true });`}
               for the html lang attribute; reuse it. */}
           {lang === "fr" ? "Aller au contenu" : "Skip to content"}
         </a>
+        {/* Applies the stored theme on responses where the beforeInteractive
+            script above is never served -- a 404 is one. See
+            applyStoredAppearance. A no-op on every other page. */}
+        <AppearanceSync />
         {children}
         {/* Until now nothing measured whether any of this was read. The script
             and its beacons are same-origin (/_vercel/insights/*), so the

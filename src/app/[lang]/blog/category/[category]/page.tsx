@@ -9,6 +9,7 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, coverImageUrl, ogImageUrl } from "@/lib/seo";
 import { formatReadTime } from "@/lib/read-time";
+import { categoryName } from "@/lib/categories";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => getAllCategories().map((category) => ({ lang, category: slugify(category) })));
@@ -20,9 +21,17 @@ export function generateStaticParams() {
  * is what the page showed as its H1. Look the real name up instead, and only
  * fall back to prettifying the slug for a category with no posts yet.
  */
-function displayCategory(slug: string) {
+/**
+ * The name to show for a category slug, in the reader's language.
+ *
+ * This returned the English name in both locales, so every French category page
+ * put "Career/Interviews" in its H1, breadcrumb, title and description while the
+ * typeahead offered "Carrière/Entretiens" for the same page. The slug stays
+ * English either way, so the two locales remain a translation pair.
+ */
+function displayCategory(slug: string, locale: Locale) {
   const match = getAllCategories().find((category) => slugify(category) === slug);
-  if (match) return match;
+  if (match) return categoryName(match, locale);
   return slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
@@ -42,20 +51,20 @@ export async function generateMetadata(
   const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
-  const categoryName = displayCategory(params.category);
+  const categoryLabel = displayCategory(params.category, params.lang);
 
-  const categoryTitle = params.lang === "fr" ? `Articles ${categoryName}` : `${categoryName} articles`;
+  const categoryTitle = params.lang === "fr" ? `Articles ${categoryLabel}` : `${categoryLabel} articles`;
   const categoryDescription =
     params.lang === "fr"
-      ? `Articles de la catégorie ${categoryName} sur AI and Cybersecurity News.`
-      : `${categoryName} category articles on AI and Cybersecurity News.`;
+      ? `Articles de la catégorie ${categoryLabel} sur AI and Cybersecurity News.`
+      : `${categoryLabel} category articles on AI and Cybersecurity News.`;
 
   return {
     title: categoryTitle,
     description: categoryDescription,
     keywords: getSeoKeywords(params.lang, "blog", [
-      params.lang === "fr" ? `categorie ${categoryName} ia` : `${categoryName} ai category`,
-      categoryName
+      params.lang === "fr" ? `categorie ${categoryLabel} ia` : `${categoryLabel} ai category`,
+      categoryLabel
     ]),
     // Tag, category and donate pages were the only routes with no
     // og:image, so every share of one rendered as a bare link. The same
@@ -84,7 +93,7 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
   const locale: Locale = params.lang;
   const dict = getDictionary(locale);
   const posts = getPostsByCategory(params.category, locale);
-  const currentCategoryLabel = posts[0]?.category || displayCategory(params.category);
+  const currentCategoryLabel = posts[0]?.category || displayCategory(params.category, params.lang);
   const currentTrack = getCategoryTrack(currentCategoryLabel);
   const bridgeTrack = currentTrack === "ai" ? "cs" : "ai";
   const bridgeCategories = getCategoriesByTrack(bridgeTrack).slice(0, 4);
@@ -98,14 +107,14 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
         items={[
           { label: "AI and Cybersecurity News", href: `/${locale}` },
           { label: dict.nav.blog, href: `/${locale}/blog` },
-          { label: displayCategory(params.category) }
+          { label: displayCategory(params.category, params.lang) }
         ]}
       />
 
       <div className="do-hero rounded-3xl p-7 md:p-10">
         <p className="do-kicker">{locale === "fr" ? "Catégorie" : "Category"}</p>
         <h1 className="font-display hero-title mt-3 font-bold capitalize text-[color:var(--text-strong)]">
-          {displayCategory(params.category)}
+          {displayCategory(params.category, params.lang)}
         </h1>
         <p className="mt-4 max-w-2xl text-sm text-[color:var(--text)]">
           {locale === "fr"

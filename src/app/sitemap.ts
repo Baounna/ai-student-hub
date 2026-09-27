@@ -156,6 +156,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: EDITORIAL_PAGES_UPDATED_AT,
         priority: 0.86,
         changeFrequency: "weekly" as const
+      },
+      // The three policy pages were the only indexable pages the sitemap left
+      // out. Each returns 200, carries a correct canonical and no noindex, and
+      // the affiliate disclosure in particular is the page a reader looks for to
+      // decide whether to trust a recommendation -- it should be findable.
+      // Low priority because they are not what anyone arrives for.
+      { route: "/privacy", lastModified: EDITORIAL_PAGES_UPDATED_AT, priority: 0.2, changeFrequency: "yearly" as const },
+      { route: "/terms", lastModified: EDITORIAL_PAGES_UPDATED_AT, priority: 0.2, changeFrequency: "yearly" as const },
+      {
+        route: "/affiliate-disclosure",
+        lastModified: EDITORIAL_PAGES_UPDATED_AT,
+        priority: 0.3,
+        changeFrequency: "yearly" as const
       }
     ].map((item) => ({
       url: absoluteUrl(`/${locale}${item.route}`),
