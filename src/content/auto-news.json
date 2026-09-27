@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-27T14:03:17.268Z",
+  "updatedAt": "2026-09-27T21:18:59.924Z",
   "items": [
+    {
+      "slug": "20260927-cloudflares-2026-annual-founders-letter-55521e37",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/",
+      "publishedAt": "2026-09-27T17:00:00.000Z",
+      "discoveredAt": "2026-09-27T21:18:59.924Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare’s 2026 Annual Founders’ Letter",
+          "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help bui…"
+        },
+        "fr": {
+          "title": "Cloudflare’s 2026 Annual Founders’ Letter",
+          "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help bui…"
+        }
+      }
+    },
     {
       "slug": "20260925-proaction-boosts-sales-60-and-saves-75-hours-with-codex-d2d497e5",
       "topic": "AI Systems",
@@ -56,25 +75,6 @@
         "fr": {
           "title": "Scaling MoE reinforcement learning on Amazon EKS with EFA and DeepEP with 40% more throughput",
           "summary": "Learn how to scale Mixture-of-Experts (MoE) reinforcement learning on Amazon EKS using Elastic Fabric Adapter (EFA) and DeepEP. This post presents an architecture that combines Amazon EKS, EFA, and Amazon S3 and increased aggrega…"
-        }
-      }
-    },
-    {
-      "slug": "20260925-agents-can-now-set-up-your-websites-security-with-turnstile-spin-f8742313",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/turnstile-spin/",
-      "publishedAt": "2026-09-25T13:00:00.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
-      "locales": {
-        "en": {
-          "title": "Agents can now set up your website’s security with Turnstile Spin",
-          "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification."
-        },
-        "fr": {
-          "title": "Agents can now set up your website’s security with Turnstile Spin",
-          "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification."
         }
       }
     },
@@ -364,6 +364,25 @@
       }
     },
     {
+      "slug": "20260925-agents-can-now-set-up-your-websites-security-with-turnstile-spin-f8742313",
+      "topic": "Security & Standards",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/turnstile-spin/",
+      "publishedAt": "2026-09-25T13:00:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:17.268Z",
+      "locales": {
+        "en": {
+          "title": "Agents can now set up your website’s security with Turnstile Spin",
+          "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification."
+        },
+        "fr": {
+          "title": "Agents can now set up your website’s security with Turnstile Spin",
+          "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification."
+        }
+      }
+    },
+    {
       "slug": "20260923-two-years-of-openai-academy-9d02eeb8",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -417,25 +436,6 @@
         "fr": {
           "title": "Accelerate multimodal RL training with SkyRL on Amazon SageMaker HyperPod",
           "summary": "Learn how to run SkyRL, an open-source reinforcement learning framework, on Amazon SageMaker HyperPod to post-train a Qwen3-VL-8B vision-language model with GRPO. This walkthrough covers building the container image, launching a…"
-        }
-      }
-    },
-    {
-      "slug": "20260924-how-cloudflare-addressed-a-cross-tenant-data-exposure-vulnerabil-4224c10f",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
-      "publishedAt": "2026-09-24T15:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
-          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps…"
-        },
-        "fr": {
-          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
-          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps…"
         }
       }
     },
@@ -706,6 +706,25 @@
       }
     },
     {
+      "slug": "20260924-how-cloudflare-addressed-a-cross-tenant-data-exposure-vulnerabil-4224c10f",
+      "topic": "Security & Standards",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
+      "publishedAt": "2026-09-24T15:00:00.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
+          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps…"
+        },
+        "fr": {
+          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
+          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps…"
+        }
+      }
+    },
+    {
       "slug": "20260923-openai-extends-cyber-access-to-ukraine-for-civilian-defense-1d77064c",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -759,25 +778,6 @@
         "fr": {
           "title": "NarrateAI: production-ready LLM quality assurance on Amazon Bedrock",
           "summary": "NarrateAI delivers production-ready LLM quality assurance on Amazon Bedrock. This post details five techniques—adaptive pipeline orchestration, cross-account multi-model failover, real-time streaming evaluation, composite evaluat…"
-        }
-      }
-    },
-    {
-      "slug": "20260922-we-just-shipped-support-for-the-ugliest-part-of-http-vary-f665e9d5",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/vary-support/",
-      "publishedAt": "2026-09-22T14:04:31.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "We just shipped support for the ugliest part of HTTP: Vary",
-          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpre…"
-        },
-        "fr": {
-          "title": "We just shipped support for the ugliest part of HTTP: Vary",
-          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpre…"
         }
       }
     },
@@ -1048,6 +1048,25 @@
       }
     },
     {
+      "slug": "20260922-we-just-shipped-support-for-the-ugliest-part-of-http-vary-f665e9d5",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/vary-support/",
+      "publishedAt": "2026-09-22T14:04:31.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "We just shipped support for the ugliest part of HTTP: Vary",
+          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpre…"
+        },
+        "fr": {
+          "title": "We just shipped support for the ugliest part of HTTP: Vary",
+          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpre…"
+        }
+      }
+    },
+    {
       "slug": "20260923-sam-altmans-remarks-at-the-united-nations-security-council-01d4e543",
       "topic": "Security & Standards",
       "source": "OpenAI News",
@@ -1101,25 +1120,6 @@
         "fr": {
           "title": "Deploying real-time personalized speech with Qwen3-TTS on Amazon SageMaker AI",
           "summary": "Deploy the publicly available Qwen3-TTS-12Hz-1.7B-Base text-to-speech model from Amazon SageMaker JumpStart to a fully managed, real-time endpoint, and clone a voice from a short reference clip. Cross-lingual cloning preserves th…"
-        }
-      }
-    },
-    {
-      "slug": "20260922-introducing-worker-previews-isolated-preview-environments-for-ev-55b3c858",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/worker-previews/",
-      "publishedAt": "2026-09-22T13:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
-          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
-        },
-        "fr": {
-          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
-          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
         }
       }
     },
@@ -1390,6 +1390,25 @@
       }
     },
     {
+      "slug": "20260922-introducing-worker-previews-isolated-preview-environments-for-ev-55b3c858",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/worker-previews/",
+      "publishedAt": "2026-09-22T13:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
+          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
+        },
+        "fr": {
+          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
+          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
+        }
+      }
+    },
+    {
       "slug": "20260923-harvey-turns-legal-context-into-stronger-drafts-with-gpt-6-astra-f7558dc5",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -1443,25 +1462,6 @@
         "fr": {
           "title": "How Datacor built self-service rental analytics with Amazon Quick Sight",
           "summary": "Learn how Datacor built a self-service rental analytics experience for gas and welding distributors by embedding Amazon Quick Sight dashboards and natural language querying into its TrackAbout platform, powered by an automated cr…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-python-workers-are-now-generally-available-5a3a5fde",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/python-workers-ga/",
-      "publishedAt": "2026-09-21T13:00:00.000Z",
-      "discoveredAt": "2026-09-21T14:30:28.060Z",
-      "locales": {
-        "en": {
-          "title": "Python Workers are now generally available",
-          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI wit…"
-        },
-        "fr": {
-          "title": "Python Workers are now generally available",
-          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI wit…"
         }
       }
     },
@@ -1732,6 +1732,25 @@
       }
     },
     {
+      "slug": "20260921-python-workers-are-now-generally-available-5a3a5fde",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/python-workers-ga/",
+      "publishedAt": "2026-09-21T13:00:00.000Z",
+      "discoveredAt": "2026-09-21T14:30:28.060Z",
+      "locales": {
+        "en": {
+          "title": "Python Workers are now generally available",
+          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI wit…"
+        },
+        "fr": {
+          "title": "Python Workers are now generally available",
+          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI wit…"
+        }
+      }
+    },
+    {
       "slug": "20260923-how-invideo-improves-color-grading-3x-with-gpt6-astra-7357353a",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -1785,25 +1804,6 @@
         "fr": {
           "title": "Multi-Region training with Amazon SageMaker HyperPod and Qumulo",
           "summary": "Amazon SageMaker HyperPod and Cloud Native Qumulo let you place training compute in one AWS Region while keeping your dataset in another. This post shares the architecture and validation results from a cross-Region training run,…"
-        }
-      }
-    },
-    {
-      "slug": "20260918-saving-another-100tb-of-ram-with-math-and-rust-2f284f65",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
-      "publishedAt": "2026-09-18T17:23:58.000Z",
-      "discoveredAt": "2026-09-18T20:52:50.113Z",
-      "locales": {
-        "en": {
-          "title": "Saving another 100TB of RAM with math (and Rust)",
-          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RA…"
-        },
-        "fr": {
-          "title": "Saving another 100TB of RAM with math (and Rust)",
-          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RA…"
         }
       }
     },
@@ -2036,6 +2036,25 @@
       }
     },
     {
+      "slug": "20260918-saving-another-100tb-of-ram-with-math-and-rust-2f284f65",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+      "publishedAt": "2026-09-18T17:23:58.000Z",
+      "discoveredAt": "2026-09-18T20:52:50.113Z",
+      "locales": {
+        "en": {
+          "title": "Saving another 100TB of RAM with math (and Rust)",
+          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RA…"
+        },
+        "fr": {
+          "title": "Saving another 100TB of RAM with math (and Rust)",
+          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RA…"
+        }
+      }
+    },
+    {
       "slug": "20260923-ringgs-ai-agents-resolve-up-to-65-of-customer-calls-with-openai-7cff1964",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2089,25 +2108,6 @@
         "fr": {
           "title": "Speaker-labeled transcription with WhisperX on SageMaker AI",
           "summary": "The AWS WhisperX Deep Learning Container packages Whisper, wav2vec2 forced alignment, and speaker diarization into a GPU-ready image. Learn how to deploy it to Amazon SageMaker AI real-time and asynchronous endpoints for word-lev…"
-        }
-      }
-    },
-    {
-      "slug": "20260916-when-scanners-miss-the-attack-how-cloudflare-client-side-securit-1575dde9",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
-      "publishedAt": "2026-09-16T20:06:17.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
-      "locales": {
-        "en": {
-          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
-          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investig…"
-        },
-        "fr": {
-          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
-          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investig…"
         }
       }
     },
@@ -2340,6 +2340,25 @@
       }
     },
     {
+      "slug": "20260916-when-scanners-miss-the-attack-how-cloudflare-client-side-securit-1575dde9",
+      "topic": "Security & Standards",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
+      "publishedAt": "2026-09-16T20:06:17.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "locales": {
+        "en": {
+          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
+          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investig…"
+        },
+        "fr": {
+          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
+          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investig…"
+        }
+      }
+    },
+    {
       "slug": "20260923-introducing-mentalhealthbench-1d5a9cc2",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2393,25 +2412,6 @@
         "fr": {
           "title": "Build a multi-account AI agent with AgentCore Gateway and MCP",
           "summary": "Build a multi-account architecture that keeps each team's data in its own AWS account while giving AI agents a unified way to query across them. A central platform account runs the agent using Amazon Bedrock AgentCore Gateway and…"
-        }
-      }
-    },
-    {
-      "slug": "20260915-have-it-both-ways-stay-discoverable-in-search-while-disallowing--758d5608",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
-      "publishedAt": "2026-09-15T13:00:00.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
-      "locales": {
-        "en": {
-          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
-          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
-        },
-        "fr": {
-          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
-          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
         }
       }
     },
@@ -2625,6 +2625,25 @@
       }
     },
     {
+      "slug": "20260915-have-it-both-ways-stay-discoverable-in-search-while-disallowing--758d5608",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+      "publishedAt": "2026-09-15T13:00:00.000Z",
+      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "locales": {
+        "en": {
+          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
+          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
+        },
+        "fr": {
+          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
+          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
+        }
+      }
+    },
+    {
       "slug": "20260923-chatgpt-ads-expands-to-southeast-asia-and-taiwan-1dd9ce12",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2678,25 +2697,6 @@
         "fr": {
           "title": "Aderant builds intelligent ticket triage with Amazon Nova",
           "summary": "Learn how Aderant built an intelligent ticket triage system on Amazon Nova Lite through Amazon Bedrock, automating context gathering, classification, routing, and knowledge enrichment for its cloud operations team."
-        }
-      }
-    },
-    {
-      "slug": "20260915-give-every-teammate-and-agent-the-right-level-of-access-to-your--5d707738",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-granular-authorization/",
-      "publishedAt": "2026-09-15T13:00:00.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
-      "locales": {
-        "en": {
-          "title": "Give every teammate and agent the right level of access to your Workers",
-          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
-        },
-        "fr": {
-          "title": "Give every teammate and agent the right level of access to your Workers",
-          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
         }
       }
     },
@@ -2910,6 +2910,25 @@
       }
     },
     {
+      "slug": "20260915-give-every-teammate-and-agent-the-right-level-of-access-to-your--5d707738",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/workers-granular-authorization/",
+      "publishedAt": "2026-09-15T13:00:00.000Z",
+      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "locales": {
+        "en": {
+          "title": "Give every teammate and agent the right level of access to your Workers",
+          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
+        },
+        "fr": {
+          "title": "Give every teammate and agent the right level of access to your Workers",
+          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
+        }
+      }
+    },
+    {
       "slug": "20260923-airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models-73fafdf6",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2963,25 +2982,6 @@
         "fr": {
           "title": "From portal-hopping to instant answers: HEMA’s journey with MCP and Amazon Bedrock",
           "summary": "HEMA, a 100-year-old Dutch retailer, turned developer portal-hopping into instant answers by building HAL, an internal AI assistant on Amazon Bedrock AgentCore. Using Model Context Protocol (MCP), HAL delivers governed knowledge…"
-        }
-      }
-    },
-    {
-      "slug": "20260911-introducing-automatic-remediation-policies-with-cloudflare-casb-2250069f",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/casb-policies/",
-      "publishedAt": "2026-09-11T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Introducing automatic remediation policies with Cloudflare CASB",
-          "summary": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky file shares…"
-        },
-        "fr": {
-          "title": "Introducing automatic remediation policies with Cloudflare CASB",
-          "summary": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky file shares…"
         }
       }
     },
@@ -3176,6 +3176,25 @@
       }
     },
     {
+      "slug": "20260911-introducing-automatic-remediation-policies-with-cloudflare-casb-2250069f",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/casb-policies/",
+      "publishedAt": "2026-09-11T13:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Introducing automatic remediation policies with Cloudflare CASB",
+          "summary": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky file shares…"
+        },
+        "fr": {
+          "title": "Introducing automatic remediation policies with Cloudflare CASB",
+          "summary": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky file shares…"
+        }
+      }
+    },
+    {
       "slug": "20260923-grab-and-openai-bring-practical-ai-skills-to-southeast-asia-09a0c6db",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3229,25 +3248,6 @@
         "fr": {
           "title": "Agentic conversational video intelligence built on AWS",
           "summary": "Learn how to build a conversational video intelligence solution on AWS using an agentic architecture. A single Strands Agents SDK agent orchestrates Amazon Bedrock, Amazon Rekognition, and Amazon Transcribe at runtime, deciding w…"
-        }
-      }
-    },
-    {
-      "slug": "20260910-1111-now-supports-post-quantum-dnssec-all-2420-bytes-of-it-ed3eedaf",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
-      "publishedAt": "2026-09-10T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
-          "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale."
-        },
-        "fr": {
-          "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
-          "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale."
         }
       }
     },
@@ -3423,6 +3423,25 @@
       }
     },
     {
+      "slug": "20260910-1111-now-supports-post-quantum-dnssec-all-2420-bytes-of-it-ed3eedaf",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/post-quantum-dnssec-1111/",
+      "publishedAt": "2026-09-10T13:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
+          "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale."
+        },
+        "fr": {
+          "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
+          "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale."
+        }
+      }
+    },
+    {
       "slug": "20260922-better-prompt-caching-for-gpt-6-b6b1e411",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3476,25 +3495,6 @@
         "fr": {
           "title": "Use open weight models as your AI coding agent with Amazon Bedrock",
           "summary": "Pair OpenCode, an open-source terminal-native AI coding agent, with open weight models on Amazon Bedrock to get a secure, flexible, pay-per-use coding assistant. Learn how to configure multi-model workflows, match the right model…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-how-we-rebuilt-cloudflare-workers-module-registry-for-nodejs-com-7eed123a",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
-      "publishedAt": "2026-09-09T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
-          "summary": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors."
-        },
-        "fr": {
-          "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
-          "summary": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors."
         }
       }
     },
@@ -3670,6 +3670,25 @@
       }
     },
     {
+      "slug": "20260909-how-we-rebuilt-cloudflare-workers-module-registry-for-nodejs-com-7eed123a",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
+      "publishedAt": "2026-09-09T13:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
+          "summary": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors."
+        },
+        "fr": {
+          "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
+          "summary": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors."
+        }
+      }
+    },
+    {
       "slug": "20260922-introducing-gpt-6-sol-and-luna-3d48e529",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3723,25 +3742,6 @@
         "fr": {
           "title": "Bring more intelligence to everyday work with GPT-6 Sol and GPT-6 Luna on Amazon Bedrock",
           "summary": "GPT-6 Sol and GPT-6 Luna are now generally available on Amazon Bedrock, giving you more options to match intelligence and efficiency to each workload."
-        }
-      }
-    },
-    {
-      "slug": "20260908-automatic-key-exchange-faster-post-quantum-secure-origin-handsha-de2784be",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
-      "publishedAt": "2026-09-08T13:10:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
-          "summary": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum connections w…"
-        },
-        "fr": {
-          "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
-          "summary": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum connections w…"
         }
       }
     },
@@ -3898,6 +3898,25 @@
       }
     },
     {
+      "slug": "20260908-automatic-key-exchange-faster-post-quantum-secure-origin-handsha-de2784be",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
+      "publishedAt": "2026-09-08T13:10:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
+          "summary": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum connections w…"
+        },
+        "fr": {
+          "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
+          "summary": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum connections w…"
+        }
+      }
+    },
+    {
       "slug": "20260922-parallel-cut-research-time-and-cost-in-half-with-gpt6-astra-ce45d8dc",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3955,25 +3974,6 @@
       }
     },
     {
-      "slug": "20260903-introducing-context-aware-vulnerability-discovery-and-remediatio-2992a92d",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/vulnerability-discovery-remediation/",
-      "publishedAt": "2026-09-03T21:03:02.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak models",
-          "summary": "Use production traffic and security signals to prioritize findings, prepare edge mitigations when safe, and propose code patches. By combining WAF data with OpenAI Daybreak models, Vulnerability Discovery and Remediation helps te…"
-        },
-        "fr": {
-          "title": "Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak models",
-          "summary": "Use production traffic and security signals to prioritize findings, prepare edge mitigations when safe, and propose code patches. By combining WAF data with OpenAI Daybreak models, Vulnerability Discovery and Remediation helps te…"
-        }
-      }
-    },
-    {
       "slug": "20260820-docker-verified-publisher-applications-are-now-self-serve-9a19e39b",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -3989,25 +3989,6 @@
         "fr": {
           "title": "Docker Verified Publisher Applications Are Now Self-Serve",
           "summary": "Apply to become a Docker Verified Publisher (DVP) now directly through Docker Hub. Get your verified content seen first by devs looking for trusted options."
-        }
-      }
-    },
-    {
-      "slug": "20260813-introducing-gemini-37-flash-068e562e",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
-      "publishedAt": "2026-08-13T17:04:18.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Gemini 3.7 Flash",
-          "summary": "Introducing Gemini 3.7 Flash"
-        },
-        "fr": {
-          "title": "Introducing Gemini 3.7 Flash",
-          "summary": "Introducing Gemini 3.7 Flash"
         }
       }
     },
@@ -4126,6 +4107,25 @@
       }
     },
     {
+      "slug": "20260903-introducing-context-aware-vulnerability-discovery-and-remediatio-2992a92d",
+      "topic": "Security & Standards",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/vulnerability-discovery-remediation/",
+      "publishedAt": "2026-09-03T21:03:02.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak models",
+          "summary": "Use production traffic and security signals to prioritize findings, prepare edge mitigations when safe, and propose code patches. By combining WAF data with OpenAI Daybreak models, Vulnerability Discovery and Remediation helps te…"
+        },
+        "fr": {
+          "title": "Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak models",
+          "summary": "Use production traffic and security signals to prioritize findings, prepare edge mitigations when safe, and propose code patches. By combining WAF data with OpenAI Daybreak models, Vulnerability Discovery and Remediation helps te…"
+        }
+      }
+    },
+    {
       "slug": "20260922-priorities-and-principles-for-effective-third-party-assessments-b4fb82cc",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -4179,25 +4179,6 @@
         "fr": {
           "title": "Evaluate skill-equipped agents with Strands Evals and Amazon Bedrock AgentCore",
           "summary": "Skills let you encode domain-specific procedures as reusable, portable instructions for agents, but a fluent answer doesn't prove the agent picked the right skill or followed it. Learn how to measure skill selection and instructi…"
-        }
-      }
-    },
-    {
-      "slug": "20260901-how-we-could-save-petabytes-of-cache-storage-with-zstandard-and--0a4287f3",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cache-transcoding/",
-      "publishedAt": "2026-09-01T12:59:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "How we could save petabytes of cache storage with Zstandard and Pingora",
-          "summary": "Could we get more cache space with the same hardware? We prototyped compression inside Cloudflare's cache to find out."
-        },
-        "fr": {
-          "title": "How we could save petabytes of cache storage with Zstandard and Pingora",
-          "summary": "Could we get more cache space with the same hardware? We prototyped compression inside Cloudflare's cache to find out."
         }
       }
     },
@@ -4335,6 +4316,25 @@
       }
     },
     {
+      "slug": "20260901-how-we-could-save-petabytes-of-cache-storage-with-zstandard-and--0a4287f3",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/cache-transcoding/",
+      "publishedAt": "2026-09-01T12:59:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "How we could save petabytes of cache storage with Zstandard and Pingora",
+          "summary": "Could we get more cache space with the same hardware? We prototyped compression inside Cloudflare's cache to find out."
+        },
+        "fr": {
+          "title": "How we could save petabytes of cache storage with Zstandard and Pingora",
+          "summary": "Could we get more cache space with the same hardware? We prototyped compression inside Cloudflare's cache to find out."
+        }
+      }
+    },
+    {
       "slug": "20260921-advisory-group-on-mathematics-and-artificial-intelligence-a7ca5984",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -4388,25 +4388,6 @@
         "fr": {
           "title": "How Reactiv automates mobile commerce 80% faster with Amazon Bedrock AgentCore",
           "summary": "Reactiv used Amazon Bedrock AgentCore to build a multi-agent AI Scheduler that autonomously refreshes Shopify merchants' mobile apps on a schedule, reducing merchant configuration time by 80% and getting to production 33% faster."
-        }
-      }
-    },
-    {
-      "slug": "20260831-introducing-adaptive-intelligence-undermining-the-economics-of-e-26ace185",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/introducing-adaptive-intelligence/",
-      "publishedAt": "2026-08-31T12:59:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Adaptive Intelligence: Undermining the economics of every bot attack",
-          "summary": "Bot operators have historically had the economic advantage, bypassing static, deterministic detection rules with cheap proxies and retooling. Cloudflare's new Adaptive Intelligence engine flips this dynamic by autonomously learni…"
-        },
-        "fr": {
-          "title": "Introducing Adaptive Intelligence: Undermining the economics of every bot attack",
-          "summary": "Bot operators have historically had the economic advantage, bypassing static, deterministic detection rules with cheap proxies and retooling. Cloudflare's new Adaptive Intelligence engine flips this dynamic by autonomously learni…"
         }
       }
     },
@@ -4521,6 +4502,25 @@
         "fr": {
           "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
           "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
+        }
+      }
+    },
+    {
+      "slug": "20260831-introducing-adaptive-intelligence-undermining-the-economics-of-e-26ace185",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/introducing-adaptive-intelligence/",
+      "publishedAt": "2026-08-31T12:59:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Adaptive Intelligence: Undermining the economics of every bot attack",
+          "summary": "Bot operators have historically had the economic advantage, bypassing static, deterministic detection rules with cheap proxies and retooling. Cloudflare's new Adaptive Intelligence engine flips this dynamic by autonomously learni…"
+        },
+        "fr": {
+          "title": "Introducing Adaptive Intelligence: Undermining the economics of every bot attack",
+          "summary": "Bot operators have historically had the economic advantage, bypassing static, deterministic detection rules with cheap proxies and retooling. Cloudflare's new Adaptive Intelligence engine flips this dynamic by autonomously learni…"
         }
       }
     },
