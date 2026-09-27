@@ -52,7 +52,16 @@ const TRACKS = ["ai", "cs", "career"];
  * question that produced the bug.
  */
 function js(value) {
-  return JSON.stringify(String(value ?? ""));
+  // U+2028 and U+2029 are the two characters JSON.stringify leaves raw, and
+  // they are line terminators. TypeScript accepts them inside a string literal,
+  // so the generated file compiles -- but scripts/lib/posts-index.mjs reads
+  // these files line by line with a "." pattern, and "." does not match either
+  // one. A title containing one silently fails that match, loses its title, and
+  // is dropped from the weekly newsletter with no error anywhere.
+  // src/lib/json-ld.ts escapes the same pair for the same kind of reason.
+  return JSON.stringify(String(value ?? ""))
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
 }
 
 function parseArgs(argv) {

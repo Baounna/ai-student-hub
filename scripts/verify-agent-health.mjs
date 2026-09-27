@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
+import { isBlockedSource } from "./lib/blocked-source.mjs";
 import { loadScriptEnv } from "./lib/load-env.mjs";
 
 const ROOT = process.cwd();
@@ -61,22 +62,6 @@ function log(type, message) {
   console.log(`${icon} [${type}] ${message}`);
 }
 
-function hasBlockedSourcePattern(item) {
-  // Match the host, not a substring of the URL. `includes("arxiv.org")` is true
-  // for https://arxiv.org.example.com/ and for a path like /citing-arxiv.org,
-  // so a blocklist built on it blocks by coincidence rather than by origin. The
-  // free-text fields keep the word check, because a source NAME is prose.
-  const host = (() => {
-    try {
-      return new URL(String(item?.href || "")).hostname.toLowerCase();
-    } catch {
-      return "";
-    }
-  })();
-  const isArxivHost = host === "arxiv.org" || host.endsWith(".arxiv.org");
-  const labels = [item?.source, item?.sourceFeed].join(" ").toLowerCase();
-  return isArxivHost || /\barxiv\b/.test(labels);
-}
 
 async function run() {
   // The operator and design agents run weekly, so a 96h default flagged them as
@@ -123,7 +108,7 @@ async function run() {
     fail("auto-tools.json is missing an items array.");
   } else {
     ok(`Auto tools items: ${autoTools.items.length}`);
-    const blocked = autoTools.items.filter((item) => hasBlockedSourcePattern(item));
+    const blocked = autoTools.items.filter((item) => isBlockedSource(item));
     if (blocked.length) {
       fail(`auto-tools.json contains blocked source patterns (e.g. arXiv): ${blocked.length} item(s).`);
     } else {
@@ -160,7 +145,7 @@ async function run() {
     fail("auto-news.json is missing an items array.");
   } else {
     ok(`Auto news items: ${autoNews.items.length}`);
-    const blocked = autoNews.items.filter((item) => hasBlockedSourcePattern(item));
+    const blocked = autoNews.items.filter((item) => isBlockedSource(item));
     if (blocked.length) {
       fail(`auto-news.json contains blocked source patterns (e.g. arXiv): ${blocked.length} item(s).`);
     } else {

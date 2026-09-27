@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
+import { isBlockedSource } from "./lib/blocked-source.mjs";
 
 const ROOT = process.cwd();
 const NEXT_ACTIONS_PATH = path.join(ROOT, "docs/agent/next-actions.json");
@@ -60,11 +61,7 @@ async function run() {
   const p3 = operatorActions.filter((item) => item.priority === "P3").slice(0, 4);
 
   const rawOpportunities = Array.isArray(nextActions.opportunities) ? nextActions.opportunities : [];
-  const nonArxivOpportunities = rawOpportunities.filter((item) => {
-    const source = String(item?.source || "").toLowerCase();
-    const href = String(item?.href || "").toLowerCase();
-    return !source.includes("arxiv") && !href.includes("arxiv.org");
-  });
+  const nonArxivOpportunities = rawOpportunities.filter((item) => !isBlockedSource(item));
   const opportunities = nonArxivOpportunities.slice(0, 5);
 
   const designQueue = Array.isArray(designActions.actions) ? designActions.actions.slice(0, 5) : [];

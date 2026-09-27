@@ -1,5 +1,6 @@
 import type { Locale } from "@/i18n/config";
 import autoNewsData from "@/content/auto-news.json";
+import { isBlockedSource } from "@/lib/blocked-source";
 
 export type AutoNewsItem = {
   slug: string;
@@ -34,10 +35,6 @@ type AutoNewsPayload = {
 
 const payload = autoNewsData as AutoNewsPayload;
 
-function isBlockedSource(item: AutoNewsItem) {
-  const values = [item.source, item.sourceFeed, item.href].join(" ").toLowerCase();
-  return values.includes("arxiv.org") || /\barxiv\b/.test(values);
-}
 
 const curatedItems = payload.items.filter((item) => !isBlockedSource(item));
 

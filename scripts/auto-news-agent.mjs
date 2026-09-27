@@ -6,6 +6,8 @@ import path from "node:path";
 import { promisify } from "node:util";
 import { fileURLToPath } from "node:url";
 import { loadScriptEnv } from "./lib/load-env.mjs";
+import { isBlockedSource as isBlockedEditorialSource } from "./lib/blocked-source.mjs";
+import { visibleText } from "./lib/visible-text.mjs";
 
 loadScriptEnv(process.cwd());
 const OUTPUT_FILE = path.join(process.cwd(), "src/content/auto-news.json");
@@ -94,9 +96,19 @@ const TRUSTED_ROOTS = new Set([
   "v8.dev",
   "nist.gov",
   "w3.org",
-  "blogspot.com",
+  // Not "blogspot.com". hostRoot() keeps the last two labels, so trusting the
+  // root trusted every *.blogspot.com -- free shared hosting anyone can register
+  // a subdomain on. Only the official Python Insider blog is wanted, so it is
+  // named in full and SHARED_HOSTS below stops hostRoot from shortening it.
+  "pythoninsider.blogspot.com",
   "docker.com"
 ]);
+
+/**
+ * Hosts where the registrable domain is shared by unrelated publishers, so trust
+ * has to be granted to a full hostname and never to the domain itself.
+ */
+const SHARED_HOSTS = ["blogspot.com", "github.io", "medium.com", "substack.com", "wordpress.com"];
 
 const BLOCKED_URL_PATTERNS = [
   /arxiv\.org/i,
@@ -221,7 +233,7 @@ function decodeEntities(value) {
 }
 
 function stripTags(value) {
-  return (
+  return visibleText(
     value
       .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
       // Summaries are sometimes cut out of a page with html.slice(), which lands
@@ -232,12 +244,12 @@ function stripTags(value) {
       .replace(/^[^<>]{0,300}?["']\s*>/, "")
       // Same problem, when the slice begins inside the tag name ('div> <img ...').
       .replace(/^[^\s<>"']{0,60}>/, "")
-      // Requiring a letter, '/' or '!' after '<' removes real tags while leaving
-      // comparisons alone, so "latency dropped from 5 > 2" survives intact.
-      .replace(/<\/?[a-zA-Z!][^>]*>/g, " ")
-      // A slice can end mid-tag too, leaving an opening bracket with no close.
-      .replace(/<\/?[a-zA-Z!][^>]*$/, " ")
-      .replace(/\s+/g, " ")
+      // Tags come off with the scanner in scripts/lib/visible-text.mjs, not a
+      // regex. `[^>]*>` stopped at the first ">", so an attribute containing one
+      // -- title="faster > ever" -- put the rest of the tag in front of readers,
+      // which is the same debris the two rules above exist to clean up. The
+      // scanner also keeps a lone "<" that starts no tag, so "5 > 2" and "a < b"
+      // still read as comparisons, and it consumes a tag the slice cut in half.
       .trim()
   );
 }
@@ -342,10 +354,13 @@ function getHost(value) {
 }
 
 function hostRoot(hostname) {
-  const host = String(hostname || "").toLowerCase().trim();
+  const host = String(hostname || "").toLowerCase().trim().replace(/\.$/, "");
   if (!host) return "";
   const parts = host.split(".").filter(Boolean);
   if (parts.length <= 2) return host;
+  // On shared hosting the last two labels identify the platform, not the
+  // publisher, so shortening to them would put every tenant behind one name.
+  if (SHARED_HOSTS.some((shared) => host === shared || host.endsWith(`.${shared}`))) return host;
   return parts.slice(-2).join(".");
 }
 
@@ -359,10 +374,12 @@ function resolveHref(base, href) {
 }
 
 function isBlockedSource(sourceName, href) {
-  const source = String(sourceName || "").toLowerCase();
-  const url = String(href || "").toLowerCase();
-  if (source.includes("arxiv") || url.includes("arxiv.org")) return true;
-  return BLOCKED_URL_PATTERNS.some((pattern) => pattern.test(url));
+  // The editorial denylist lives in one place now. This gate used to match
+  // "arxiv.org" as a substring while the health verifier matched an exact
+  // hostname, so the verifier could certify items this gate was written to
+  // drop; see scripts/lib/blocked-source.mjs.
+  if (isBlockedEditorialSource({ href, source: sourceName })) return true;
+  return BLOCKED_URL_PATTERNS.some((pattern) => pattern.test(String(href || "").toLowerCase()));
 }
 
 function isTrustedRoot(root) {

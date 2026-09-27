@@ -1,6 +1,12 @@
 import { describe, it, expect } from "vitest";
-// @ts-expect-error - plain .mjs script, no types
-import { expiredValidThrough, gonePhrase, redirectedAway, requisitionInSearchResults } from "../scripts/check-stages.mjs";
+import {
+  expiredValidThrough,
+  gonePhrase,
+  listingHost,
+  redirectedAway,
+  requisitionInSearchResults
+  // @ts-expect-error - plain .mjs script, no types
+} from "../scripts/check-stages.mjs";
 
 // Both of these rules exist because the checker passed a known-dead listing as
 // healthy. They are the two ways a posting dies while still answering HTTP 200.
@@ -120,6 +126,68 @@ describe("expired schema.org validThrough", () => {
   // employer's own timetable, so trusting it there retires live jobs.
   it("ignores boards whose validThrough is their own listing TTL", () => {
     expect(expiredValidThrough(JSON_LD_PAGE, "hellowork.com", now)).toBe("");
+  });
+
+  // Reading the first date on the page answers a different question. Both of
+  // these retired a live internship whose own page said it was open.
+  it("ignores an expired job in the related-jobs carousel", () => {
+    const page = `<!doctype html><html><head>
+<script type="application/ld+json">
+{"@type":"JobPosting","title":"Stage archive","validThrough":"2025-03-01"}
+</script>
+<script type="application/ld+json">
+{"@type":"JobPosting","title":"Stage Cyber","validThrough":"2027-06-30"}
+</script>
+</head><body><h1>Stage Cyber</h1></body></html>`;
+
+    expect(expiredValidThrough(page, "example.com", now)).toBe("");
+  });
+
+  it("ignores a validThrough left behind in an HTML comment", () => {
+    const page = JSON_LD_PAGE.replace(
+      "<script type=",
+      '<!-- old: {"validThrough":"2025-01-01"} --><script type='
+    ).replace("2025-03-01T23:59", "2027-06-30");
+
+    expect(expiredValidThrough(page, "example.com", now)).toBe("");
+  });
+
+  it("reads a posting nested under @graph", () => {
+    const page = `<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebPage"},
+{"@type":["JobPosting"],"validThrough":"2025-03-01"}]}
+</script>`;
+
+    expect(expiredValidThrough(page, "example.com", now)).toBe("2025-03-01");
+  });
+
+  it("says nothing when the JSON-LD will not parse", () => {
+    const page = `<script type="application/ld+json">{"validThrough": broken</script>`;
+
+    expect(expiredValidThrough(page, "example.com", now)).toBe("");
+  });
+
+  it("says nothing about a date that belongs to something other than a job", () => {
+    const page = `<script type="application/ld+json">
+{"@type":"Event","name":"Portes ouvertes","validThrough":"2025-03-01"}
+</script>`;
+
+    expect(expiredValidThrough(page, "example.com", now)).toBe("");
+  });
+});
+
+describe("listingHost", () => {
+  it.each([
+    ["https://www.hellowork.com/x", "hellowork.com"],
+    // Each of these lost the TTL exemption when only "www." was stripped, and a
+    // live listing was retired a month early because of it.
+    ["https://m.hellowork.com/x", "hellowork.com"],
+    ["https://www2.hellowork.com/x", "hellowork.com"],
+    ["https://hellowork.com/x", "hellowork.com"],
+    ["https://HelloWork.com./x", "hellowork.com"],
+    ["not a url", ""]
+  ])("%s -> %s", (href, expected) => {
+    expect(listingHost(href)).toBe(expected);
   });
 });
 

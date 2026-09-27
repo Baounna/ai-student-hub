@@ -124,4 +124,16 @@ describe("cleanupText", () => {
   it("still unwraps CDATA and strips ordinary tags", () => {
     expect(cleanupText("<![CDATA[<p>Hello <b>world</b></p>]]>")).toBe("Hello world");
   });
+
+  // The tag regex stopped at the first ">", so a ">" inside an attribute or a
+  // comment put the rest of the markup in front of readers -- the same debris
+  // the slice rules above exist to clean up, arriving by a different route.
+  it("drops a tag whose attribute contains a closing bracket", () => {
+    expect(cleanupText('Model ships <a title="faster > ever" href="/x">today</a>'))
+      .toBe("Model ships today");
+  });
+
+  it("drops a comment containing a closing bracket", () => {
+    expect(cleanupText("<!-- rev: a > b -->Anthropic ships Claude")).toBe("Anthropic ships Claude");
+  });
 });

@@ -1,5 +1,6 @@
 import type { Locale } from "@/i18n/config";
 import autoToolsData from "@/content/auto-tools.json";
+import { isBlockedSource } from "@/lib/blocked-source";
 
 export type AutoToolItem = {
   slug: string;
@@ -35,10 +36,6 @@ type AutoToolsPayload = {
 
 const payload = autoToolsData as AutoToolsPayload;
 
-function isBlockedSource(item: AutoToolItem) {
-  const values = [item.source, item.sourceFeed, item.href].join(" ").toLowerCase();
-  return values.includes("arxiv.org") || /\barxiv\b/.test(values);
-}
 
 const curatedItems = payload.items.filter((item) => !isBlockedSource(item));
 

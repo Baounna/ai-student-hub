@@ -19,8 +19,22 @@ import path from "node:path";
 
 const FILES = ["src/content/posts.ts", "src/content/posts-cs.ts"];
 
+/**
+ * The text of a string literal, decoded.
+ *
+ * This unescaped only \" and \\, which is every escape the content files
+ * happened to contain. A title written by scripts/new-post.mjs goes through
+ * JSON.stringify, so a newline arrives here as the two characters \n -- and
+ * shipped to readers that way, in an email subject line. JSON.parse decodes the
+ * whole set, which is what the writer emits; the fallback covers a literal
+ * hand-written in TypeScript syntax JSON does not share.
+ */
 function unquote(raw) {
-  return raw.replace(/\\(["\\])/g, "$1");
+  try {
+    return JSON.parse(`"${raw}"`);
+  } catch {
+    return raw.replace(/\\(["\\])/g, "$1");
+  }
 }
 
 /**

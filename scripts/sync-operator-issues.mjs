@@ -108,9 +108,14 @@ function normalizeQueueFile(value, sourceId) {
   const fallback = path.relative(ROOT, SOURCE_CONFIG[sourceId].queueFile);
   if (!raw) return fallback;
 
+  // startsWith on a path is the same mistake as startsWith on a URL: the sibling
+  // directory "<ROOT>-evil" passes a prefix test while being nowhere inside
+  // ROOT. Only "is this path under ROOT" answers the question, and
+  // path.relative says so without a prefix comparison.
   const absolute = path.isAbsolute(raw) ? raw : path.join(ROOT, raw);
-  if (absolute.startsWith(ROOT)) return path.relative(ROOT, absolute);
-  return raw;
+  const relative = path.relative(ROOT, absolute);
+  const inside = relative !== "" && !relative.startsWith("..") && !path.isAbsolute(relative);
+  return inside ? relative : raw;
 }
 
 function parseTime(value) {
@@ -248,7 +253,11 @@ function buildIssueBody({ item, generatedAt }) {
 }
 
 async function githubRequest({ repository, token, method, apiPath, body }) {
-  const url = `https://api.github.com/repos/${repository}${apiPath}`;
+  // The repository slug comes from the environment, so it is encoded rather than
+  // pasted: a value carrying "../" or a query string would otherwise address a
+  // different endpoint than the one this function names.
+  const [owner, repo] = String(repository).split("/");
+  const url = `https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}${apiPath}`;
   const response = await fetch(url, {
     method,
     headers: {

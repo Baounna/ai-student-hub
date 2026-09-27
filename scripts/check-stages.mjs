@@ -18,6 +18,7 @@ import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { pathToFileURL } from "node:url";
+import { visibleText } from "./lib/visible-text.mjs";
 
 const execFileAsync = promisify(execFile);
 const fileArg = process.argv.indexOf("--file");
@@ -29,6 +30,23 @@ const FILE = fileArg !== -1 && process.argv[fileArg + 1]
 const WRITE = process.argv.includes("--write");
 /** Boards whose validThrough is a listing expiry of their own, not the employer's. */
 const LISTING_TTL_HOSTS = new Set(["hellowork.com"]);
+
+/**
+ * The registrable part of a listing's host, for matching against the sets above.
+ *
+ * Stripping only a leading "www." meant m.hellowork.com and www2.hellowork.com
+ * missed the TTL exemption and got retired a month early -- the exact failure
+ * the exemption exists to prevent, reintroduced by the normalisation.
+ */
+export function listingHost(href) {
+  try {
+    const hostname = new URL(String(href)).hostname.toLowerCase().replace(/\.$/, "");
+    const labels = hostname.split(".");
+    return labels.length > 2 ? labels.slice(-2).join(".") : hostname;
+  } catch {
+    return "";
+  }
+}
 
 /** Statuses that mean "we were refused", never "the posting is gone". */
 const BLOCKED_STATUSES = new Set([401, 403, 405, 429, 503, 999]);
@@ -143,17 +161,94 @@ export function expiredValidThrough(raw, host, now = Date.now()) {
   // datePosted + 30 days regardless of the employer's own timetable, so
   // trusting it there would retire live jobs a month after we found them.
   if (LISTING_TTL_HOSTS.has(host)) return "";
-  const match = String(raw || "").match(/validThrough["':\s]+(\d{4}-\d{2}-\d{2})/i);
-  if (!match) return "";
-  return Date.parse(`${match[1]}T23:59:59Z`) < now ? match[1] : "";
+
+  // Read the JobPosting entities, do not grep the page.
+  //
+  // A bare search for the first `validThrough` anywhere in the body answers a
+  // different question than the one asked. Job boards put a related-jobs
+  // carousel beside the posting, each entry with its own JSON-LD, so the first
+  // date on the page routinely belongs to a different -- and often expired --
+  // job; a date left behind in an HTML comment counts the same way. Either one
+  // retires a live listing, which is how a real internship disappears from the
+  // site while its page still says it is open.
+  const dates = jobPostingValidThrough(raw);
+  if (!dates.length) return "";
+
+  // The latest of them. Where the page describes several postings and we cannot
+  // tell which is this one, the only date that proves anything is the last: if
+  // even that has passed, nothing on the page is still open.
+  const latest = dates.slice().sort().at(-1);
+  return Date.parse(`${latest}T23:59:59Z`) < now ? latest : "";
+}
+
+/** Every validThrough date on a schema.org JobPosting in the page, as YYYY-MM-DD. */
+function jobPostingValidThrough(raw) {
+  const source = String(raw || "");
+  const dates = [];
+
+  for (const [, block] of source.matchAll(
+    /<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi
+  )) {
+    let parsed;
+    try {
+      parsed = JSON.parse(block);
+    } catch {
+      // Malformed JSON-LD is common enough that failing here would be louder
+      // than useful. A posting with no readable date is simply no signal.
+      continue;
+    }
+
+    const queue = [parsed];
+    while (queue.length) {
+      const node = queue.pop();
+      if (Array.isArray(node)) {
+        queue.push(...node);
+        continue;
+      }
+      if (!node || typeof node !== "object") continue;
+
+      const types = [].concat(node["@type"] ?? []).map((value) => String(value).toLowerCase());
+      if (types.includes("jobposting")) {
+        const date = String(node.validThrough ?? "").match(/^(\d{4}-\d{2}-\d{2})/);
+        if (date) dates.push(date[1]);
+      }
+
+      for (const value of Object.values(node)) {
+        if (value && typeof value === "object") queue.push(value);
+      }
+    }
+  }
+
+  return dates;
+}
+
+/**
+ * A URL safe to hand to curl as an argument.
+ *
+ * execFile takes an argument array, so there is no shell and no shell
+ * injection. curl still reads its own options from argv though: a listing whose
+ * href began with "-K" would make curl treat the rest as a config file path and
+ * honour whatever that file said, including writing output to disk. "--" ends
+ * option parsing, and this rejects anything that is not http(s) before dialling
+ * -- add-stage.mjs already validated the scheme at the only place listings are
+ * written, so this closes the gap for entries added by hand.
+ */
+function isHttpUrl(value) {
+  try {
+    const { protocol } = new URL(String(value));
+    return protocol === "http:" || protocol === "https:";
+  } catch {
+    return false;
+  }
 }
 
 async function fetchText(url) {
+  if (!isHttpUrl(url)) return { status: 0, text: "", raw: "", finalUrl: url };
   await waitForHost(url);
   try {
     const { stdout } = await execFileAsync("curl", [
       "-s", "-L", "--max-time", "25", "-A", UA,
-      "-w", "\n__CODE__%{http_code}__URL__%{url_effective}", url
+      "-w", "\n__CODE__%{http_code}__URL__%{url_effective}", "--", url
     ], { maxBuffer: 12 * 1024 * 1024 });
     const marker = stdout.lastIndexOf("__CODE__");
     const tail = stdout.slice(marker + 8);
@@ -162,19 +257,12 @@ async function fetchText(url) {
     const finalUrl = split === -1 ? url : tail.slice(split + 7).trim();
     const body = stdout.slice(0, marker);
     // Comments before tags, and quoted attributes before the closing bracket.
-    // `<[^>]+>` alone stops at the first ">" it sees, so a comment containing
-    // one -- `<!-- a > b -->` -- left "b -->" sitting in the text, and an
-    // attribute containing one -- title="a > b" -- swallowed the rest of the
-    // element. This text is the only thing that decides whether a posting is
-    // dead, and three separate wordings have already slipped past this check,
-    // so getting the extraction right is not cosmetic.
-    const text = body
-      .replace(/<script[\s\S]*?<\/script>/gi, " ")
-      .replace(/<style[\s\S]*?<\/style>/gi, " ")
-      .replace(/<!--[\s\S]*?-->/g, " ")
-      .replace(/<[a-zA-Z/!?][^>"']*(?:"[^"]*"[^>"']*|'[^']*'[^>"']*)*>/g, " ")
-      .replace(/\s+/g, " ");
-    return { status, text, raw: body, finalUrl };
+    // This text is the only thing that decides whether a posting is dead, and
+    // three separate wordings have already slipped past the check, so the
+    // extraction is not cosmetic. Two regexes got it wrong in opposite
+    // directions before it moved into scripts/lib/visible-text.mjs, which
+    // explains both and is tested against them.
+    return { status, text: visibleText(body), raw: body, finalUrl };
   } catch {
     return { status: 0, text: "", raw: "", finalUrl: url };
   }
@@ -221,7 +309,7 @@ async function fetchJsonPost(url, payload) {
       "-s", "-L", "--max-time", "25", "-A", UA,
       "-X", "POST", "-H", "Content-Type: application/json", "-H", "Accept: application/json",
       "--data", JSON.stringify(payload),
-      "-w", "\n__CODE__%{http_code}", url
+      "-w", "\n__CODE__%{http_code}", "--", url
     ], { maxBuffer: 12 * 1024 * 1024 });
     const marker = stdout.lastIndexOf("__CODE__");
     const status = Number.parseInt(stdout.slice(marker + 8).trim(), 10) || 0;
@@ -305,7 +393,7 @@ async function checkOne(stage) {
   // A past schema.org validThrough — read from the raw body, because the date
   // only ever lives in markup that the text pipeline strips. See
   // expiredValidThrough.
-  const host = (() => { try { return new URL(stage.href).hostname.replace(/^www\./, ""); } catch { return ""; } })();
+  const host = listingHost(stage.href);
   const expired = expiredValidThrough(raw, host);
   if (expired) {
     return { verdict: "GONE", detail: `validThrough ${expired} has passed` };

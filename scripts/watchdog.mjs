@@ -338,7 +338,15 @@ async function checkWorkflowHealth() {
  * added, which breaks the row.
  */
 function escapeTableCell(value) {
-  return String(value).replace(/\\/g, "\\\\").replace(/\|/g, "\\|");
+  // A newline ends the row, not the cell: one detail containing one would turn
+  // the rest of the report into text outside the table. Details are built here
+  // today, so this is the case that has not happened yet rather than one that
+  // has -- but a cell escaper that lets through the character that breaks rows
+  // is not doing the job it is named for.
+  return String(value)
+    .replace(/\\/g, "\\\\")
+    .replace(/\|/g, "\\|")
+    .replace(/\r\n|[\r\n]/g, " ");
 }
 
 function buildReport() {
