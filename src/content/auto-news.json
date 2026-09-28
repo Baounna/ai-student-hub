@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T15:26:42.759Z",
+  "updatedAt": "2026-09-28T15:51:30.407Z",
   "items": [
+    {
+      "slug": "20260928-automating-amazon-textract-adapter-lifecycle-management-across-a-456549d7",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/automating-amazon-textract-adapter-lifecycle-management-across-accounts/",
+      "publishedAt": "2026-09-28T15:49:04.000Z",
+      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "locales": {
+        "en": {
+          "title": "Automating Amazon Textract adapter lifecycle management across accounts",
+          "summary": "Learn how to operationalize Amazon Textract Custom Queries adapters for production: infrastructure as code with AWS CloudFormation and Terraform, a cross-account adapter promotion process, a pre-classification routing pattern for…"
+        },
+        "fr": {
+          "title": "Automating Amazon Textract adapter lifecycle management across accounts",
+          "summary": "Learn how to operationalize Amazon Textract Custom Queries adapters for production: infrastructure as code with AWS CloudFormation and Terraform, a cross-account adapter promotion process, a pre-classification routing pattern for…"
+        }
+      }
+    },
     {
       "slug": "20260928-nextjs-applications-powered-by-vite-introducing-vinext-10-d4dd483c",
       "topic": "Computer Systems",
@@ -79,6 +98,25 @@
       }
     },
     {
+      "slug": "20260928-plhaskell-v60-released-22b5aed3",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/plhaskell-v60-released-3388/",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "locales": {
+        "en": {
+          "title": "PL/Haskell v6.0 Released",
+          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+        },
+        "fr": {
+          "title": "PL/Haskell v6.0 Released",
+          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+        }
+      }
+    },
+    {
       "slug": "20260925-proaction-boosts-sales-60-and-saves-75-hours-with-codex-d2d497e5",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -113,25 +151,6 @@
         "fr": {
           "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
           "summary": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done. The post GitHub Copilot app for Begin…"
-        }
-      }
-    },
-    {
-      "slug": "20260925-scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-de-44d856e7",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughput/",
-      "publishedAt": "2026-09-25T16:29:50.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
-      "locales": {
-        "en": {
-          "title": "Scaling MoE reinforcement learning on Amazon EKS with EFA and DeepEP with 40% more throughput",
-          "summary": "Learn how to scale Mixture-of-Experts (MoE) reinforcement learning on Amazon EKS using Elastic Fabric Adapter (EFA) and DeepEP. This post presents an architecture that combines Amazon EKS, EFA, and Amazon S3 and increased aggrega…"
-        },
-        "fr": {
-          "title": "Scaling MoE reinforcement learning on Amazon EKS with EFA and DeepEP with 40% more throughput",
-          "summary": "Learn how to scale Mixture-of-Experts (MoE) reinforcement learning on Amazon EKS using Elastic Fabric Adapter (EFA) and DeepEP. This post presents an architecture that combines Amazon EKS, EFA, and Amazon S3 and increased aggrega…"
         }
       }
     },
@@ -208,25 +227,6 @@
         "fr": {
           "title": "Platform-independent SIMD in Go",
           "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
-        }
-      }
-    },
-    {
-      "slug": "20260924-postgresql-19-beta-4-released-a454f777",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-19-beta-4-released-3386/",
-      "publishedAt": "2026-09-24T00:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL 19 Beta 4 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
-        },
-        "fr": {
-          "title": "PostgreSQL 19 Beta 4 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
         }
       }
     },
@@ -364,6 +364,25 @@
       }
     },
     {
+      "slug": "20260925-scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-de-44d856e7",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughput/",
+      "publishedAt": "2026-09-25T16:29:50.000Z",
+      "discoveredAt": "2026-09-27T14:03:17.268Z",
+      "locales": {
+        "en": {
+          "title": "Scaling MoE reinforcement learning on Amazon EKS with EFA and DeepEP with 40% more throughput",
+          "summary": "Learn how to scale Mixture-of-Experts (MoE) reinforcement learning on Amazon EKS using Elastic Fabric Adapter (EFA) and DeepEP. This post presents an architecture that combines Amazon EKS, EFA, and Amazon S3 and increased aggrega…"
+        },
+        "fr": {
+          "title": "Scaling MoE reinforcement learning on Amazon EKS with EFA and DeepEP with 40% more throughput",
+          "summary": "Learn how to scale Mixture-of-Experts (MoE) reinforcement learning on Amazon EKS using Elastic Fabric Adapter (EFA) and DeepEP. This post presents an architecture that combines Amazon EKS, EFA, and Amazon S3 and increased aggrega…"
+        }
+      }
+    },
+    {
       "slug": "20260928-introducing-cf-the-agentic-cli-for-the-entire-cloudflare-api-2ee63841",
       "topic": "AI Systems",
       "source": "Cloudflare Blog",
@@ -440,6 +459,25 @@
       }
     },
     {
+      "slug": "20260928-pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform--1249398e",
+      "topic": "Computer Systems",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform-to-bridge-the-ai-prototype-to-production-chasm-3389/",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "locales": {
+        "en": {
+          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
+          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+        },
+        "fr": {
+          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
+          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+        }
+      }
+    },
+    {
       "slug": "20260923-two-years-of-openai-academy-9d02eeb8",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -474,25 +512,6 @@
         "fr": {
           "title": "Improving site performance by shipping more CSS",
           "summary": "How we fully migrated github.com away from CSS-in-JS. The post Improving site performance by shipping more CSS appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20260925-accelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-6c9acf94",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/accelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-hyperpod/",
-      "publishedAt": "2026-09-25T16:18:07.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
-      "locales": {
-        "en": {
-          "title": "Accelerate multimodal RL training with SkyRL on Amazon SageMaker HyperPod",
-          "summary": "Learn how to run SkyRL, an open-source reinforcement learning framework, on Amazon SageMaker HyperPod to post-train a Qwen3-VL-8B vision-language model with GRPO. This walkthrough covers building the container image, launching a…"
-        },
-        "fr": {
-          "title": "Accelerate multimodal RL training with SkyRL on Amazon SageMaker HyperPod",
-          "summary": "Learn how to run SkyRL, an open-source reinforcement learning framework, on Amazon SageMaker HyperPod to post-train a Qwen3-VL-8B vision-language model with GRPO. This walkthrough covers building the container image, launching a…"
         }
       }
     },
@@ -569,25 +588,6 @@
         "fr": {
           "title": "Size-Specialized Memory Allocation",
           "summary": "Go 1.27 improves performance of small allocations using size-specialized allocation functions."
-        }
-      }
-    },
-    {
-      "slug": "20260923-pgbouncer-1260-released---fixes-three-cves-10080888",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgbouncer-1260-released-fixes-three-cves-3385/",
-      "publishedAt": "2026-09-23T00:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
-        },
-        "fr": {
-          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
         }
       }
     },
@@ -706,6 +706,25 @@
       }
     },
     {
+      "slug": "20260925-accelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-6c9acf94",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/accelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-hyperpod/",
+      "publishedAt": "2026-09-25T16:18:07.000Z",
+      "discoveredAt": "2026-09-27T14:03:17.268Z",
+      "locales": {
+        "en": {
+          "title": "Accelerate multimodal RL training with SkyRL on Amazon SageMaker HyperPod",
+          "summary": "Learn how to run SkyRL, an open-source reinforcement learning framework, on Amazon SageMaker HyperPod to post-train a Qwen3-VL-8B vision-language model with GRPO. This walkthrough covers building the container image, launching a…"
+        },
+        "fr": {
+          "title": "Accelerate multimodal RL training with SkyRL on Amazon SageMaker HyperPod",
+          "summary": "Learn how to run SkyRL, an open-source reinforcement learning framework, on Amazon SageMaker HyperPod to post-train a Qwen3-VL-8B vision-language model with GRPO. This walkthrough covers building the container image, launching a…"
+        }
+      }
+    },
+    {
       "slug": "20260928-how-fast-is-the-web-explore-billions-of-real-user-measurements-w-3ebbe252",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
@@ -782,6 +801,25 @@
       }
     },
     {
+      "slug": "20260924-postgresql-19-beta-4-released-a454f777",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-19-beta-4-released-3386/",
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL 19 Beta 4 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+        },
+        "fr": {
+          "title": "PostgreSQL 19 Beta 4 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+        }
+      }
+    },
+    {
       "slug": "20260923-openai-extends-cyber-access-to-ukraine-for-civilian-defense-1d77064c",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -816,25 +854,6 @@
         "fr": {
           "title": "When chat is the wrong UI",
           "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases. The post When chat is the wrong UI appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20260925-narrateai-production-ready-llm-quality-assurance-on-amazon-bedro-cf46b237",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/narrateai-production-ready-llm-quality-assurance-on-amazon-bedrock/",
-      "publishedAt": "2026-09-25T16:15:22.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
-      "locales": {
-        "en": {
-          "title": "NarrateAI: production-ready LLM quality assurance on Amazon Bedrock",
-          "summary": "NarrateAI delivers production-ready LLM quality assurance on Amazon Bedrock. This post details five techniques—adaptive pipeline orchestration, cross-account multi-model failover, real-time streaming evaluation, composite evaluat…"
-        },
-        "fr": {
-          "title": "NarrateAI: production-ready LLM quality assurance on Amazon Bedrock",
-          "summary": "NarrateAI delivers production-ready LLM quality assurance on Amazon Bedrock. This post details five techniques—adaptive pipeline orchestration, cross-account multi-model failover, real-time streaming evaluation, composite evaluat…"
         }
       }
     },
@@ -911,25 +930,6 @@
         "fr": {
           "title": "Goroutine Leak Profiles",
           "summary": "Goroutine Leak Profiles"
-        }
-      }
-    },
-    {
-      "slug": "20260922-sql-manager-for-postgresql-70-meet-the-ai-assistant-2ae8d80a",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/sql-manager-for-postgresql-70-meet-the-ai-assistant-3379/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
-          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
-        },
-        "fr": {
-          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
-          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
         }
       }
     },
@@ -1048,6 +1048,25 @@
       }
     },
     {
+      "slug": "20260925-narrateai-production-ready-llm-quality-assurance-on-amazon-bedro-cf46b237",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/narrateai-production-ready-llm-quality-assurance-on-amazon-bedrock/",
+      "publishedAt": "2026-09-25T16:15:22.000Z",
+      "discoveredAt": "2026-09-27T14:03:17.268Z",
+      "locales": {
+        "en": {
+          "title": "NarrateAI: production-ready LLM quality assurance on Amazon Bedrock",
+          "summary": "NarrateAI delivers production-ready LLM quality assurance on Amazon Bedrock. This post details five techniques—adaptive pipeline orchestration, cross-account multi-model failover, real-time streaming evaluation, composite evaluat…"
+        },
+        "fr": {
+          "title": "NarrateAI: production-ready LLM quality assurance on Amazon Bedrock",
+          "summary": "NarrateAI delivers production-ready LLM quality assurance on Amazon Bedrock. This post details five techniques—adaptive pipeline orchestration, cross-account multi-model failover, real-time streaming evaluation, composite evaluat…"
+        }
+      }
+    },
+    {
       "slug": "20260928-four-months-of-voidzero-at-cloudflare-making-the-open-source-jav-eb611a2a",
       "topic": "AI Systems",
       "source": "Cloudflare Blog",
@@ -1124,6 +1143,25 @@
       }
     },
     {
+      "slug": "20260923-pgbouncer-1260-released---fixes-three-cves-10080888",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgbouncer-1260-released-fixes-three-cves-3385/",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+        },
+        "fr": {
+          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+        }
+      }
+    },
+    {
       "slug": "20260923-sam-altmans-remarks-at-the-united-nations-security-council-01d4e543",
       "topic": "Security & Standards",
       "source": "OpenAI News",
@@ -1158,25 +1196,6 @@
         "fr": {
           "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
           "summary": "In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework. The post AI-powered fuzzing with the GitHub Security Lab Taskflow Agent appeared first on The GitHub B…"
-        }
-      }
-    },
-    {
-      "slug": "20260925-deploying-real-time-personalized-speech-with-qwen3-tts-on-amazon-f34eefd4",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/deploying-real-time-personalized-speech-with-qwen3-tts-on-amazon-sagemaker-ai/",
-      "publishedAt": "2026-09-25T16:09:46.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
-      "locales": {
-        "en": {
-          "title": "Deploying real-time personalized speech with Qwen3-TTS on Amazon SageMaker AI",
-          "summary": "Deploy the publicly available Qwen3-TTS-12Hz-1.7B-Base text-to-speech model from Amazon SageMaker JumpStart to a fully managed, real-time endpoint, and clone a voice from a short reference clip. Cross-lingual cloning preserves th…"
-        },
-        "fr": {
-          "title": "Deploying real-time personalized speech with Qwen3-TTS on Amazon SageMaker AI",
-          "summary": "Deploy the publicly available Qwen3-TTS-12Hz-1.7B-Base text-to-speech model from Amazon SageMaker JumpStart to a fully managed, real-time endpoint, and clone a voice from a short reference clip. Cross-lingual cloning preserves th…"
         }
       }
     },
@@ -1253,25 +1272,6 @@
         "fr": {
           "title": "Generic Methods",
           "summary": "Generic Methods"
-        }
-      }
-    },
-    {
-      "slug": "20260922-pgsql-test-real-postgres-testing-for-faster-development-loops-212e48db",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgsql-test-real-postgres-testing-for-faster-development-loops-3380/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
-          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
-        },
-        "fr": {
-          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
-          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
         }
       }
     },
@@ -1390,6 +1390,25 @@
       }
     },
     {
+      "slug": "20260925-deploying-real-time-personalized-speech-with-qwen3-tts-on-amazon-f34eefd4",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/deploying-real-time-personalized-speech-with-qwen3-tts-on-amazon-sagemaker-ai/",
+      "publishedAt": "2026-09-25T16:09:46.000Z",
+      "discoveredAt": "2026-09-27T14:03:17.268Z",
+      "locales": {
+        "en": {
+          "title": "Deploying real-time personalized speech with Qwen3-TTS on Amazon SageMaker AI",
+          "summary": "Deploy the publicly available Qwen3-TTS-12Hz-1.7B-Base text-to-speech model from Amazon SageMaker JumpStart to a fully managed, real-time endpoint, and clone a voice from a short reference clip. Cross-lingual cloning preserves th…"
+        },
+        "fr": {
+          "title": "Deploying real-time personalized speech with Qwen3-TTS on Amazon SageMaker AI",
+          "summary": "Deploy the publicly available Qwen3-TTS-12Hz-1.7B-Base text-to-speech model from Amazon SageMaker JumpStart to a fully managed, real-time endpoint, and clone a voice from a short reference clip. Cross-lingual cloning preserves th…"
+        }
+      }
+    },
+    {
       "slug": "20260928-introducing-forge-the-open-source-pipeline-for-generating-sdks-c-f359e0d9",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
@@ -1466,6 +1485,25 @@
       }
     },
     {
+      "slug": "20260922-sql-manager-for-postgresql-70-meet-the-ai-assistant-2ae8d80a",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/sql-manager-for-postgresql-70-meet-the-ai-assistant-3379/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
+          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
+        },
+        "fr": {
+          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
+          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
+        }
+      }
+    },
+    {
       "slug": "20260923-harvey-turns-legal-context-into-stronger-drafts-with-gpt-6-astra-f7558dc5",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -1500,25 +1538,6 @@
         "fr": {
           "title": "Rendering huge pull requests in the GitHub Copilot app",
           "summary": "How we rebuilt the diff surface in the GitHub Copilot app to open a million-line pull request with hundreds of inline review comments. The post Rendering huge pull requests in the GitHub Copilot app appeared first on The GitHub B…"
-        }
-      }
-    },
-    {
-      "slug": "20260925-how-datacor-built-self-service-rental-analytics-with-amazon-quic-500c1bdb",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-datacor-built-self-service-rental-analytics-with-amazon-quick-sight/",
-      "publishedAt": "2026-09-25T15:54:42.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
-      "locales": {
-        "en": {
-          "title": "How Datacor built self-service rental analytics with Amazon Quick Sight",
-          "summary": "Learn how Datacor built a self-service rental analytics experience for gas and welding distributors by embedding Amazon Quick Sight dashboards and natural language querying into its TrackAbout platform, powered by an automated cr…"
-        },
-        "fr": {
-          "title": "How Datacor built self-service rental analytics with Amazon Quick Sight",
-          "summary": "Learn how Datacor built a self-service rental analytics experience for gas and welding distributors by embedding Amazon Quick Sight dashboards and natural language querying into its TrackAbout platform, powered by an automated cr…"
         }
       }
     },
@@ -1595,25 +1614,6 @@
         "fr": {
           "title": "Go 1.27 is released",
           "summary": "Go 1.27 is released"
-        }
-      }
-    },
-    {
-      "slug": "20260922-postgrescompare-220-released-ffbdcf1e",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgrescompare-220-released-3382/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "PostgresCompare 2.2.0 Released",
-          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
-        },
-        "fr": {
-          "title": "PostgresCompare 2.2.0 Released",
-          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
         }
       }
     },
@@ -1732,6 +1732,25 @@
       }
     },
     {
+      "slug": "20260925-how-datacor-built-self-service-rental-analytics-with-amazon-quic-500c1bdb",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-datacor-built-self-service-rental-analytics-with-amazon-quick-sight/",
+      "publishedAt": "2026-09-25T15:54:42.000Z",
+      "discoveredAt": "2026-09-27T14:03:17.268Z",
+      "locales": {
+        "en": {
+          "title": "How Datacor built self-service rental analytics with Amazon Quick Sight",
+          "summary": "Learn how Datacor built a self-service rental analytics experience for gas and welding distributors by embedding Amazon Quick Sight dashboards and natural language querying into its TrackAbout platform, powered by an automated cr…"
+        },
+        "fr": {
+          "title": "How Datacor built self-service rental analytics with Amazon Quick Sight",
+          "summary": "Learn how Datacor built a self-service rental analytics experience for gas and welding distributors by embedding Amazon Quick Sight dashboards and natural language querying into its TrackAbout platform, powered by an automated cr…"
+        }
+      }
+    },
+    {
       "slug": "20260928-the-road-to-the-agentic-browser-a-kitesurf-update-d0b06df4",
       "topic": "AI Systems",
       "source": "Cloudflare Blog",
@@ -1808,6 +1827,25 @@
       }
     },
     {
+      "slug": "20260922-pgsql-test-real-postgres-testing-for-faster-development-loops-212e48db",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgsql-test-real-postgres-testing-for-faster-development-loops-3380/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+        },
+        "fr": {
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+        }
+      }
+    },
+    {
       "slug": "20260923-how-invideo-improves-color-grading-3x-with-gpt6-astra-7357353a",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -1842,25 +1880,6 @@
         "fr": {
           "title": "Developers want more efficient software. Here’s what over 1,000 GitHub users told us they need.",
           "summary": "New research from GitHub and Yale Program on Climate Change Communication finds strong demand for tools, measurement, and practical guidance that can help developers reduce wasted compute. The post Developers want more efficient…"
-        }
-      }
-    },
-    {
-      "slug": "20260925-multi-region-training-with-amazon-sagemaker-hyperpod-and-qumulo-5d43ff83",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/multi-region-training-with-amazon-sagemaker-hyperpod-and-qumulo/",
-      "publishedAt": "2026-09-25T15:49:44.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
-      "locales": {
-        "en": {
-          "title": "Multi-Region training with Amazon SageMaker HyperPod and Qumulo",
-          "summary": "Amazon SageMaker HyperPod and Cloud Native Qumulo let you place training compute in one AWS Region while keeping your dataset in another. This post shares the architecture and validation results from a cross-Region training run,…"
-        },
-        "fr": {
-          "title": "Multi-Region training with Amazon SageMaker HyperPod and Qumulo",
-          "summary": "Amazon SageMaker HyperPod and Cloud Native Qumulo let you place training compute in one AWS Region while keeping your dataset in another. This post shares the architecture and validation results from a cross-Region training run,…"
         }
       }
     },
@@ -1918,25 +1937,6 @@
         "fr": {
           "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
           "summary": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model"
-        }
-      }
-    },
-    {
-      "slug": "20260917-pgadmin-4-v918-released-413bcda5",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:49.442Z",
-      "locales": {
-        "en": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
-        },
-        "fr": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
         }
       }
     },
@@ -2036,6 +2036,25 @@
       }
     },
     {
+      "slug": "20260925-multi-region-training-with-amazon-sagemaker-hyperpod-and-qumulo-5d43ff83",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/multi-region-training-with-amazon-sagemaker-hyperpod-and-qumulo/",
+      "publishedAt": "2026-09-25T15:49:44.000Z",
+      "discoveredAt": "2026-09-27T14:03:17.268Z",
+      "locales": {
+        "en": {
+          "title": "Multi-Region training with Amazon SageMaker HyperPod and Qumulo",
+          "summary": "Amazon SageMaker HyperPod and Cloud Native Qumulo let you place training compute in one AWS Region while keeping your dataset in another. This post shares the architecture and validation results from a cross-Region training run,…"
+        },
+        "fr": {
+          "title": "Multi-Region training with Amazon SageMaker HyperPod and Qumulo",
+          "summary": "Amazon SageMaker HyperPod and Cloud Native Qumulo let you place training compute in one AWS Region while keeping your dataset in another. This post shares the architecture and validation results from a cross-Region training run,…"
+        }
+      }
+    },
+    {
       "slug": "20260928-introducing-the-cold-start-pitch-your-startup-live-at-cloudflare-78255174",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
@@ -2112,6 +2131,25 @@
       }
     },
     {
+      "slug": "20260922-postgrescompare-220-released-ffbdcf1e",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgrescompare-220-released-3382/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
+        },
+        "fr": {
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
+        }
+      }
+    },
+    {
       "slug": "20260923-ringgs-ai-agents-resolve-up-to-65-of-customer-calls-with-openai-7cff1964",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2146,25 +2184,6 @@
         "fr": {
           "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
           "summary": "New research from GitHub and Yale Program on Climate Change Communication finds strong demand for tools, measurement, and practical guidance that can help developers reduce wasted compute. The post Developers want more efficient…"
-        }
-      }
-    },
-    {
-      "slug": "20260924-speaker-labeled-transcription-with-whisperx-on-sagemaker-ai-e655f5f2",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/speaker-labeled-transcription-with-whisperx-on-sagemaker-ai/",
-      "publishedAt": "2026-09-24T16:20:12.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "Speaker-labeled transcription with WhisperX on SageMaker AI",
-          "summary": "The AWS WhisperX Deep Learning Container packages Whisper, wav2vec2 forced alignment, and speaker diarization into a GPU-ready image. Learn how to deploy it to Amazon SageMaker AI real-time and asynchronous endpoints for word-lev…"
-        },
-        "fr": {
-          "title": "Speaker-labeled transcription with WhisperX on SageMaker AI",
-          "summary": "The AWS WhisperX Deep Learning Container packages Whisper, wav2vec2 forced alignment, and speaker diarization into a GPU-ready image. Learn how to deploy it to Amazon SageMaker AI real-time and asynchronous endpoints for word-lev…"
         }
       }
     },
@@ -2222,25 +2241,6 @@
         "fr": {
           "title": "Proactive cyber defense for governments and enterprises",
           "summary": "Proactive cyber defense for governments and enterprises"
-        }
-      }
-    },
-    {
-      "slug": "20260916-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
-      "publishedAt": "2026-09-16T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:35.562Z",
-      "locales": {
-        "en": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
-        },
-        "fr": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
         }
       }
     },
@@ -2340,6 +2340,25 @@
       }
     },
     {
+      "slug": "20260924-speaker-labeled-transcription-with-whisperx-on-sagemaker-ai-e655f5f2",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/speaker-labeled-transcription-with-whisperx-on-sagemaker-ai/",
+      "publishedAt": "2026-09-24T16:20:12.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "Speaker-labeled transcription with WhisperX on SageMaker AI",
+          "summary": "The AWS WhisperX Deep Learning Container packages Whisper, wav2vec2 forced alignment, and speaker diarization into a GPU-ready image. Learn how to deploy it to Amazon SageMaker AI real-time and asynchronous endpoints for word-lev…"
+        },
+        "fr": {
+          "title": "Speaker-labeled transcription with WhisperX on SageMaker AI",
+          "summary": "The AWS WhisperX Deep Learning Container packages Whisper, wav2vec2 forced alignment, and speaker diarization into a GPU-ready image. Learn how to deploy it to Amazon SageMaker AI real-time and asynchronous endpoints for word-lev…"
+        }
+      }
+    },
+    {
       "slug": "20260928-emdash-10-the-stable-cms-with-a-secure-plugin-registry-e3c78699",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
@@ -2416,6 +2435,25 @@
       }
     },
     {
+      "slug": "20260917-pgadmin-4-v918-released-413bcda5",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-17T21:19:49.442Z",
+      "locales": {
+        "en": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+        },
+        "fr": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+        }
+      }
+    },
+    {
       "slug": "20260923-introducing-mentalhealthbench-1d5a9cc2",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2450,25 +2488,6 @@
         "fr": {
           "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
           "summary": "We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast. The post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20260924-build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp-2e76615d",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp/",
-      "publishedAt": "2026-09-24T16:12:47.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "Build a multi-account AI agent with AgentCore Gateway and MCP",
-          "summary": "Build a multi-account architecture that keeps each team's data in its own AWS account while giving AI agents a unified way to query across them. A central platform account runs the agent using Amazon Bedrock AgentCore Gateway and…"
-        },
-        "fr": {
-          "title": "Build a multi-account AI agent with AgentCore Gateway and MCP",
-          "summary": "Build a multi-account architecture that keeps each team's data in its own AWS account while giving AI agents a unified way to query across them. A central platform account runs the agent using Amazon Bedrock AgentCore Gateway and…"
         }
       }
     },
@@ -2526,25 +2545,6 @@
         "fr": {
           "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
           "summary": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
-        }
-      }
-    },
-    {
-      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
-      "publishedAt": "2026-09-11T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
-        },
-        "fr": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
         }
       }
     },
@@ -2644,6 +2644,25 @@
       }
     },
     {
+      "slug": "20260924-build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp-2e76615d",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp/",
+      "publishedAt": "2026-09-24T16:12:47.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "Build a multi-account AI agent with AgentCore Gateway and MCP",
+          "summary": "Build a multi-account architecture that keeps each team's data in its own AWS account while giving AI agents a unified way to query across them. A central platform account runs the agent using Amazon Bedrock AgentCore Gateway and…"
+        },
+        "fr": {
+          "title": "Build a multi-account AI agent with AgentCore Gateway and MCP",
+          "summary": "Build a multi-account architecture that keeps each team's data in its own AWS account while giving AI agents a unified way to query across them. A central platform account runs the agent using Amazon Bedrock AgentCore Gateway and…"
+        }
+      }
+    },
+    {
       "slug": "20260928-supporting-native-rust-in-workers-with-the-new-emscripten-target-30c18d3f",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
@@ -2701,6 +2720,25 @@
       }
     },
     {
+      "slug": "20260916-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:35.562Z",
+      "locales": {
+        "en": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+        },
+        "fr": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+        }
+      }
+    },
+    {
       "slug": "20260923-chatgpt-ads-expands-to-southeast-asia-and-taiwan-1dd9ce12",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2735,25 +2773,6 @@
         "fr": {
           "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
           "summary": "A rewrite this size wasn't affordable before agents. Here's what porting the Copilot agent runtime to 800,000 lines of production Rust actually took. The post Migrating the GitHub Copilot runtime to Rust, using Copilot appeared f…"
-        }
-      }
-    },
-    {
-      "slug": "20260924-aderant-builds-intelligent-ticket-triage-with-amazon-nova-cd39d99e",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/aderant-builds-intelligent-ticket-triage-with-amazon-nova/",
-      "publishedAt": "2026-09-24T16:06:46.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "Aderant builds intelligent ticket triage with Amazon Nova",
-          "summary": "Learn how Aderant built an intelligent ticket triage system on Amazon Nova Lite through Amazon Bedrock, automating context gathering, classification, routing, and knowledge enrichment for its cloud operations team."
-        },
-        "fr": {
-          "title": "Aderant builds intelligent ticket triage with Amazon Nova",
-          "summary": "Learn how Aderant built an intelligent ticket triage system on Amazon Nova Lite through Amazon Bedrock, automating context gathering, classification, routing, and knowledge enrichment for its cloud operations team."
         }
       }
     },
@@ -2811,25 +2830,6 @@
         "fr": {
           "title": "Introducing agentic video understanding with Gemini",
           "summary": "Introducing agentic video understanding with Gemini"
-        }
-      }
-    },
-    {
-      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
-        },
-        "fr": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
         }
       }
     },
@@ -2910,6 +2910,25 @@
       }
     },
     {
+      "slug": "20260924-aderant-builds-intelligent-ticket-triage-with-amazon-nova-cd39d99e",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/aderant-builds-intelligent-ticket-triage-with-amazon-nova/",
+      "publishedAt": "2026-09-24T16:06:46.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "Aderant builds intelligent ticket triage with Amazon Nova",
+          "summary": "Learn how Aderant built an intelligent ticket triage system on Amazon Nova Lite through Amazon Bedrock, automating context gathering, classification, routing, and knowledge enrichment for its cloud operations team."
+        },
+        "fr": {
+          "title": "Aderant builds intelligent ticket triage with Amazon Nova",
+          "summary": "Learn how Aderant built an intelligent ticket triage system on Amazon Nova Lite through Amazon Bedrock, automating context gathering, classification, routing, and knowledge enrichment for its cloud operations team."
+        }
+      }
+    },
+    {
       "slug": "20260927-cloudflares-2026-annual-founders-letter-55521e37",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
@@ -2967,6 +2986,25 @@
       }
     },
     {
+      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+        },
+        "fr": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+        }
+      }
+    },
+    {
       "slug": "20260923-airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models-73fafdf6",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3001,25 +3039,6 @@
         "fr": {
           "title": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
           "summary": "If you can write down how you do your work, you can automate it. Here's what I did to support GitHub's APAC marketing team. The post Marketing ops as code: Automating events from planning to follow-up on GitHub appeared first on…"
-        }
-      }
-    },
-    {
-      "slug": "20260923-from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-an-d3e104b6",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock/",
-      "publishedAt": "2026-09-23T18:41:09.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "From portal-hopping to instant answers: HEMA’s journey with MCP and Amazon Bedrock",
-          "summary": "HEMA, a 100-year-old Dutch retailer, turned developer portal-hopping into instant answers by building HAL, an internal AI assistant on Amazon Bedrock AgentCore. Using Model Context Protocol (MCP), HAL delivers governed knowledge…"
-        },
-        "fr": {
-          "title": "From portal-hopping to instant answers: HEMA’s journey with MCP and Amazon Bedrock",
-          "summary": "HEMA, a 100-year-old Dutch retailer, turned developer portal-hopping into instant answers by building HAL, an internal AI assistant on Amazon Bedrock AgentCore. Using Model Context Protocol (MCP), HAL delivers governed knowledge…"
         }
       }
     },
@@ -3077,25 +3096,6 @@
         "fr": {
           "title": "Gemini Omni 1.1 Flash lets you build with more control",
           "summary": "Gemini Omni 1.1 Flash lets you build with more control"
-        }
-      }
-    },
-    {
-      "slug": "20260910-pgvaulttde-v171-transparent-data-encryption-for-postgresql-17-an-8b0f1977",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
-        },
-        "fr": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
         }
       }
     },
@@ -3176,6 +3176,25 @@
       }
     },
     {
+      "slug": "20260923-from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-an-d3e104b6",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock/",
+      "publishedAt": "2026-09-23T18:41:09.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "From portal-hopping to instant answers: HEMA’s journey with MCP and Amazon Bedrock",
+          "summary": "HEMA, a 100-year-old Dutch retailer, turned developer portal-hopping into instant answers by building HAL, an internal AI assistant on Amazon Bedrock AgentCore. Using Model Context Protocol (MCP), HAL delivers governed knowledge…"
+        },
+        "fr": {
+          "title": "From portal-hopping to instant answers: HEMA’s journey with MCP and Amazon Bedrock",
+          "summary": "HEMA, a 100-year-old Dutch retailer, turned developer portal-hopping into instant answers by building HAL, an internal AI assistant on Amazon Bedrock AgentCore. Using Model Context Protocol (MCP), HAL delivers governed knowledge…"
+        }
+      }
+    },
+    {
       "slug": "20260925-agents-can-now-set-up-your-websites-security-with-turnstile-spin-f8742313",
       "topic": "Security & Standards",
       "source": "Cloudflare Blog",
@@ -3233,6 +3252,25 @@
       }
     },
     {
+      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        },
+        "fr": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        }
+      }
+    },
+    {
       "slug": "20260923-grab-and-openai-bring-practical-ai-skills-to-southeast-asia-09a0c6db",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3267,25 +3305,6 @@
         "fr": {
           "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
           "summary": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app. The post GitHub Copilot app for Beginners: Using the d…"
-        }
-      }
-    },
-    {
-      "slug": "20260923-agentic-conversational-video-intelligence-built-on-aws-03479d38",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/agentic-conversational-video-intelligence-built-on-aws/",
-      "publishedAt": "2026-09-23T18:21:54.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Agentic conversational video intelligence built on AWS",
-          "summary": "Learn how to build a conversational video intelligence solution on AWS using an agentic architecture. A single Strands Agents SDK agent orchestrates Amazon Bedrock, Amazon Rekognition, and Amazon Transcribe at runtime, deciding w…"
-        },
-        "fr": {
-          "title": "Agentic conversational video intelligence built on AWS",
-          "summary": "Learn how to build a conversational video intelligence solution on AWS using an agentic architecture. A single Strands Agents SDK agent orchestrates Amazon Bedrock, Amazon Rekognition, and Amazon Transcribe at runtime, deciding w…"
         }
       }
     },
@@ -3347,25 +3366,6 @@
       }
     },
     {
-      "slug": "20260909-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
-        },
-        "fr": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
-        }
-      }
-    },
-    {
       "slug": "20260910-3-ways-to-prep-for-your-next-big-race-with-search-1852061b",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3419,6 +3419,25 @@
         "fr": {
           "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
           "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-agentic-conversational-video-intelligence-built-on-aws-03479d38",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/agentic-conversational-video-intelligence-built-on-aws/",
+      "publishedAt": "2026-09-23T18:21:54.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Agentic conversational video intelligence built on AWS",
+          "summary": "Learn how to build a conversational video intelligence solution on AWS using an agentic architecture. A single Strands Agents SDK agent orchestrates Amazon Bedrock, Amazon Rekognition, and Amazon Transcribe at runtime, deciding w…"
+        },
+        "fr": {
+          "title": "Agentic conversational video intelligence built on AWS",
+          "summary": "Learn how to build a conversational video intelligence solution on AWS using an agentic architecture. A single Strands Agents SDK agent orchestrates Amazon Bedrock, Amazon Rekognition, and Amazon Transcribe at runtime, deciding w…"
         }
       }
     },
@@ -3480,6 +3499,25 @@
       }
     },
     {
+      "slug": "20260910-pgvaulttde-v171-transparent-data-encryption-for-postgresql-17-an-8b0f1977",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+        },
+        "fr": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+        }
+      }
+    },
+    {
       "slug": "20260922-better-prompt-caching-for-gpt-6-b6b1e411",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3514,25 +3552,6 @@
         "fr": {
           "title": "GitHub availability report: August 2026",
           "summary": "In August, we experienced five incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: August 2026 appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20260923-use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedro-2f44fa8d",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/",
-      "publishedAt": "2026-09-23T18:17:44.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Use open weight models as your AI coding agent with Amazon Bedrock",
-          "summary": "Pair OpenCode, an open-source terminal-native AI coding agent, with open weight models on Amazon Bedrock to get a secure, flexible, pay-per-use coding assistant. Learn how to configure multi-model workflows, match the right model…"
-        },
-        "fr": {
-          "title": "Use open weight models as your AI coding agent with Amazon Bedrock",
-          "summary": "Pair OpenCode, an open-source terminal-native AI coding agent, with open weight models on Amazon Bedrock to get a secure, flexible, pay-per-use coding assistant. Learn how to configure multi-model workflows, match the right model…"
         }
       }
     },
@@ -3594,25 +3613,6 @@
       }
     },
     {
-      "slug": "20260909-autobase-211-released-991decc9",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
-        },
-        "fr": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
-        }
-      }
-    },
-    {
       "slug": "20260909-get-ready-for-the-game-with-new-football-features-in-search-b0dd0e34",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3647,6 +3647,25 @@
         "fr": {
           "title": "Kubernetes v1.37: DRA Updates",
           "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedro-2f44fa8d",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/",
+      "publishedAt": "2026-09-23T18:17:44.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Use open weight models as your AI coding agent with Amazon Bedrock",
+          "summary": "Pair OpenCode, an open-source terminal-native AI coding agent, with open weight models on Amazon Bedrock to get a secure, flexible, pay-per-use coding assistant. Learn how to configure multi-model workflows, match the right model…"
+        },
+        "fr": {
+          "title": "Use open weight models as your AI coding agent with Amazon Bedrock",
+          "summary": "Pair OpenCode, an open-source terminal-native AI coding agent, with open weight models on Amazon Bedrock to get a secure, flexible, pay-per-use coding assistant. Learn how to configure multi-model workflows, match the right model…"
         }
       }
     },
@@ -3708,6 +3727,25 @@
       }
     },
     {
+      "slug": "20260909-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+        },
+        "fr": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+        }
+      }
+    },
+    {
       "slug": "20260922-introducing-gpt-6-sol-and-luna-3d48e529",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3742,25 +3780,6 @@
         "fr": {
           "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
           "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post…"
-        }
-      }
-    },
-    {
-      "slug": "20260922-bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt--1921ddb1",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock/",
-      "publishedAt": "2026-09-22T18:10:22.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "Bring more intelligence to everyday work with GPT-6 Sol and GPT-6 Luna on Amazon Bedrock",
-          "summary": "GPT-6 Sol and GPT-6 Luna are now generally available on Amazon Bedrock, giving you more options to match intelligence and efficiency to each workload."
-        },
-        "fr": {
-          "title": "Bring more intelligence to everyday work with GPT-6 Sol and GPT-6 Luna on Amazon Bedrock",
-          "summary": "GPT-6 Sol and GPT-6 Luna are now generally available on Amazon Bedrock, giving you more options to match intelligence and efficiency to each workload."
         }
       }
     },
@@ -3822,25 +3841,6 @@
       }
     },
     {
-      "slug": "20260905-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
-      "publishedAt": "2026-09-05T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
-        },
-        "fr": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
-        }
-      }
-    },
-    {
       "slug": "20260909-recreating-a-70-year-love-story-frame-by-frame-e8269fc9",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3875,6 +3875,25 @@
         "fr": {
           "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
           "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt--1921ddb1",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock/",
+      "publishedAt": "2026-09-22T18:10:22.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "Bring more intelligence to everyday work with GPT-6 Sol and GPT-6 Luna on Amazon Bedrock",
+          "summary": "GPT-6 Sol and GPT-6 Luna are now generally available on Amazon Bedrock, giving you more options to match intelligence and efficiency to each workload."
+        },
+        "fr": {
+          "title": "Bring more intelligence to everyday work with GPT-6 Sol and GPT-6 Luna on Amazon Bedrock",
+          "summary": "GPT-6 Sol and GPT-6 Luna are now generally available on Amazon Bedrock, giving you more options to match intelligence and efficiency to each workload."
         }
       }
     },
@@ -3936,6 +3955,25 @@
       }
     },
     {
+      "slug": "20260909-autobase-211-released-991decc9",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+        },
+        "fr": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+        }
+      }
+    },
+    {
       "slug": "20260922-parallel-cut-research-time-and-cost-in-half-with-gpt6-astra-ce45d8dc",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3970,25 +4008,6 @@
         "fr": {
           "title": "GitHub Copilot app for Beginners: Run several agents at once",
           "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful. The post GitHub Copilot app for Beginners: Run several agents at once appeared first on The…"
-        }
-      }
-    },
-    {
-      "slug": "20260922-claude-opus-55-is-now-available-on-aws-11bd1be7",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws/",
-      "publishedAt": "2026-09-22T17:28:01.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "Claude Opus 5.5 is now available on AWS",
-          "summary": "Claude Opus 5.5, Anthropic's most capable Opus model for agentic coding, knowledge work, and long-running tasks, is now available on Amazon Bedrock and Claude Platform on AWS. This post covers what's new in Opus 5.5, practical gu…"
-        },
-        "fr": {
-          "title": "Claude Opus 5.5 is now available on AWS",
-          "summary": "Claude Opus 5.5, Anthropic's most capable Opus model for agentic coding, knowledge work, and long-running tasks, is now available on Amazon Bedrock and Claude Platform on AWS. This post covers what's new in Opus 5.5, practical gu…"
         }
       }
     },
@@ -4031,25 +4050,6 @@
       }
     },
     {
-      "slug": "20260825-pgstatviz-12-released-with-postgresql-19-support-and-new-feature-37633005",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_statviz-12-released-with-postgresql-19-support-and-new-features-3369/",
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
-          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
-        },
-        "fr": {
-          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
-          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
-        }
-      }
-    },
-    {
       "slug": "20260902-proactive-cyber-defense-for-governments-and-enterprises-28b149c7",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -4084,6 +4084,25 @@
         "fr": {
           "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
           "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-claude-opus-55-is-now-available-on-aws-11bd1be7",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws/",
+      "publishedAt": "2026-09-22T17:28:01.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "Claude Opus 5.5 is now available on AWS",
+          "summary": "Claude Opus 5.5, Anthropic's most capable Opus model for agentic coding, knowledge work, and long-running tasks, is now available on Amazon Bedrock and Claude Platform on AWS. This post covers what's new in Opus 5.5, practical gu…"
+        },
+        "fr": {
+          "title": "Claude Opus 5.5 is now available on AWS",
+          "summary": "Claude Opus 5.5, Anthropic's most capable Opus model for agentic coding, knowledge work, and long-running tasks, is now available on Amazon Bedrock and Claude Platform on AWS. This post covers what's new in Opus 5.5, practical gu…"
         }
       }
     },
@@ -4145,6 +4164,25 @@
       }
     },
     {
+      "slug": "20260905-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
+      "publishedAt": "2026-09-05T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PGConf India 2027 - Dates Announced and CFP Open",
+          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
+        },
+        "fr": {
+          "title": "PGConf India 2027 - Dates Announced and CFP Open",
+          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
+        }
+      }
+    },
+    {
       "slug": "20260922-priorities-and-principles-for-effective-third-party-assessments-b4fb82cc",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -4179,25 +4217,6 @@
         "fr": {
           "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
           "summary": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations. The post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!…"
-        }
-      }
-    },
-    {
-      "slug": "20260922-evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bed-5387aa5d",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-09-22T17:18:13.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "Evaluate skill-equipped agents with Strands Evals and Amazon Bedrock AgentCore",
-          "summary": "Skills let you encode domain-specific procedures as reusable, portable instructions for agents, but a fluent answer doesn't prove the agent picked the right skill or followed it. Learn how to measure skill selection and instructi…"
-        },
-        "fr": {
-          "title": "Evaluate skill-equipped agents with Strands Evals and Amazon Bedrock AgentCore",
-          "summary": "Skills let you encode domain-specific procedures as reusable, portable instructions for agents, but a fluent answer doesn't prove the agent picked the right skill or followed it. Learn how to measure skill selection and instructi…"
         }
       }
     },
@@ -4240,25 +4259,6 @@
       }
     },
     {
-      "slug": "20260820-libredb-studio-an-open-source-self-hosted-sql-ide-for-postgresql-271e1666",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/libredb-studio-an-open-source-self-hosted-sql-ide-for-postgresql-in-the-browser-3368/",
-      "publishedAt": "2026-08-20T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "LibreDB Studio: an open source, self-hosted SQL IDE for PostgreSQL in the browser",
-          "summary": "LibreDB Studio is an MIT-licensed, self-hosted SQL IDE for PostgreSQL that runs in the browser and deploys as a container or Helm chart. It is deployed next to the database it manages, as a container, a Helm chart or an npm packa…"
-        },
-        "fr": {
-          "title": "LibreDB Studio: an open source, self-hosted SQL IDE for PostgreSQL in the browser",
-          "summary": "LibreDB Studio is an MIT-licensed, self-hosted SQL IDE for PostgreSQL that runs in the browser and deploys as a container or Helm chart. It is deployed next to the database it manages, as a container, a Helm chart or an npm packa…"
-        }
-      }
-    },
-    {
       "slug": "20260901-the-latest-ai-news-we-announced-in-august-2026-66eabab6",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -4293,6 +4293,25 @@
         "fr": {
           "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
           "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API ( storagemigration.k8s.io/…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bed-5387aa5d",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-09-22T17:18:13.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "Evaluate skill-equipped agents with Strands Evals and Amazon Bedrock AgentCore",
+          "summary": "Skills let you encode domain-specific procedures as reusable, portable instructions for agents, but a fluent answer doesn't prove the agent picked the right skill or followed it. Learn how to measure skill selection and instructi…"
+        },
+        "fr": {
+          "title": "Evaluate skill-equipped agents with Strands Evals and Amazon Bedrock AgentCore",
+          "summary": "Skills let you encode domain-specific procedures as reusable, portable instructions for agents, but a fluent answer doesn't prove the agent picked the right skill or followed it. Learn how to measure skill selection and instructi…"
         }
       }
     },
@@ -4354,6 +4373,25 @@
       }
     },
     {
+      "slug": "20260825-pgstatviz-12-released-with-postgresql-19-support-and-new-feature-37633005",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_statviz-12-released-with-postgresql-19-support-and-new-features-3369/",
+      "publishedAt": "2026-08-25T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
+          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
+        },
+        "fr": {
+          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
+          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
+        }
+      }
+    },
+    {
       "slug": "20260921-advisory-group-on-mathematics-and-artificial-intelligence-a7ca5984",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -4392,25 +4430,6 @@
       }
     },
     {
-      "slug": "20260922-how-reactiv-automates-mobile-commerce-80-faster-with-amazon-bedr-1002ed17",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-reactiv-automates-mobile-commerce-80-faster-with-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-09-22T15:46:07.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "How Reactiv automates mobile commerce 80% faster with Amazon Bedrock AgentCore",
-          "summary": "Reactiv used Amazon Bedrock AgentCore to build a multi-agent AI Scheduler that autonomously refreshes Shopify merchants' mobile apps on a schedule, reducing merchant configuration time by 80% and getting to production 33% faster."
-        },
-        "fr": {
-          "title": "How Reactiv automates mobile commerce 80% faster with Amazon Bedrock AgentCore",
-          "summary": "Reactiv used Amazon Bedrock AgentCore to build a multi-agent AI Scheduler that autonomously refreshes Shopify merchants' mobile apps on a schedule, reducing merchant configuration time by 80% and getting to production 33% faster."
-        }
-      }
-    },
-    {
       "slug": "20260831-introducing-azure-multicloud-interconnect-for-aws-1621f670",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -4426,25 +4445,6 @@
         "fr": {
           "title": "Introducing Azure Multicloud Interconnect for AWS",
           "summary": "Azure Multicloud Interconnect helps simplify private connectivity between Microsoft Azure and AWS, enabling organizations to support multicloud and AI workloads with a more streamlined, cloud-native networking experience. Built o…"
-        }
-      }
-    },
-    {
-      "slug": "20260819-loongson-loong64-packages-on-aptpostgresqlorg-4d32ff8b",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/loongson-loong64-packages-on-aptpostgresqlorg-3351/",
-      "publishedAt": "2026-08-19T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Loongson loong64 packages on apt.postgresql.org",
-          "summary": "We have a new architecture on apt.postgresql.org: Loongson loong64, a Chinese processor architecture. The build host for the architecture is running on a Loongson 3B6000 board provided by the loongfans.cn community. Bootstrapping…"
-        },
-        "fr": {
-          "title": "Loongson loong64 packages on apt.postgresql.org",
-          "summary": "We have a new architecture on apt.postgresql.org: Loongson loong64, a Chinese processor architecture. The build host for the architecture is running on a Loongson 3B6000 board provided by the loongfans.cn community. Bootstrapping…"
         }
       }
     },
@@ -4483,6 +4483,25 @@
         "fr": {
           "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
           "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-how-reactiv-automates-mobile-commerce-80-faster-with-amazon-bedr-1002ed17",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-reactiv-automates-mobile-commerce-80-faster-with-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-09-22T15:46:07.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "How Reactiv automates mobile commerce 80% faster with Amazon Bedrock AgentCore",
+          "summary": "Reactiv used Amazon Bedrock AgentCore to build a multi-agent AI Scheduler that autonomously refreshes Shopify merchants' mobile apps on a schedule, reducing merchant configuration time by 80% and getting to production 33% faster."
+        },
+        "fr": {
+          "title": "How Reactiv automates mobile commerce 80% faster with Amazon Bedrock AgentCore",
+          "summary": "Reactiv used Amazon Bedrock AgentCore to build a multi-agent AI Scheduler that autonomously refreshes Shopify merchants' mobile apps on a schedule, reducing merchant configuration time by 80% and getting to production 33% faster."
         }
       }
     },
@@ -4540,25 +4559,6 @@
         "fr": {
           "title": "CUDA Toolkit 13.4 Adds Windows on Arm Support and Greater Control over Shared GPUs",
           "summary": "Every NVIDIA CUDA Toolkit release adds functionality and performance improvements that help developers get more from NVIDIA GPUs and the broader NVIDIA software..."
-        }
-      }
-    },
-    {
-      "slug": "20260921-higgsfield-ai-ships-new-video-features-in-a-day-with-gpt-6-astra-d37f5b2c",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
-      "publishedAt": "2026-09-21T12:00:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:13.092Z",
-      "locales": {
-        "en": {
-          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
-        },
-        "fr": {
-          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
         }
       }
     }

@@ -1,6 +1,6 @@
 # AI and Cybersecurity News Blog Operator Report
 
-Generated: 2026-09-21T14:30:29.256Z
+Generated: 2026-09-28T15:51:31.663Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -54,34 +54,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
+1. Automating Amazon Textract adapter lifecycle management across accounts: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: how to build aws ml blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Python Workers are now generally available: What It Means for AI/CS Students
+2. Next.js applications, powered by Vite: introducing Vinext 1.0: What It Means for AI/CS Students
    - Source: Cloudflare Blog
    - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. W3C IRC bots now open source: What It Means for AI/CS Students
-   - Source: W3C Blog
-   - Keyword: computer science workflow for students w3c blog
-   - Monetization angle: CS implementation and tooling decision for student budgets
-   - CTA: Resources + compare pages
-4. tokenizers v1: encode, decode and scaling, measured: What It Means for AI/CS Students
-   - Source: Hugging Face Blog
-   - Keyword: how to build hugging face blog
+3. Introducing cf: the agentic CLI for the entire Cloudflare API: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. How V7 gives AI agents institutional memory: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
+4. How fast is the web? Explore billions of real-user measurements with BEACON: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Amazon SageMaker Inference: 2026 year-to-date launches in review: What It Means for AI/CS Students
-   - Source: AWS ML Blog
-   - Keyword: how to build aws ml blog
+5. Supporting native Rust in Workers with the new Emscripten target for wasm-bindgen: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. EmDash 1.0: the stable CMS with a secure plugin registry: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -116,6 +116,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260921--20260921-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimiza-c701b570.md
-- docs/agent/drafts/20260921--20260921-python-workers-are-now-generally-available-5a3a5fde.md
+- docs/agent/drafts/20260928--20260928-automating-amazon-textract-adapter-lifecycle-management-across-a-456549d7.md
+- docs/agent/drafts/20260928--20260928-nextjs-applications-powered-by-vite-introducing-vinext-10-d4dd483c.md
 
