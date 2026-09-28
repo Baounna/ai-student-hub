@@ -175,6 +175,21 @@ function safeDecode(value: string) {
  * The limit is deliberately loose. A reader who opens a page pulls one cover,
  * and a crawler fetching every card on a long index legitimately pulls dozens,
  * so this has to sit well above real traffic and only catch a loop.
+ *
+ * What this does NOT do, measured on production rather than assumed: it does
+ * not stop a concurrent caller. The counters live in a Map inside one serverless
+ * instance, so the cap is per instance and multiplies by however many the
+ * platform has warm -- 527 renders went through in twenty seconds from a single
+ * address against a nominal 120 a minute, roughly thirteen times the intended
+ * rate. A sequential loop is capped; a parallel one is throttled and not
+ * stopped. src/lib/rate-limit.ts says the same thing about every limit in this
+ * codebase, and the answer it names is a shared store: UPSTASH_REDIS_REST_URL
+ * and UPSTASH_REDIS_REST_TOKEN are read automatically if they ever exist.
+ *
+ * Worth keeping in proportion. This project has no payment method on file, so
+ * the exposure is not a bill -- it is the Hobby plan pausing the site. Denial
+ * of wallet turning into denial of service is still the failure to avoid, but
+ * it is a different one from the one this comment used to imply was closed.
  */
 async function imageRenderAllowed(request: Request) {
   const ip = getClientIp(request);
