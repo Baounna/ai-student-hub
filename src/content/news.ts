@@ -71,58 +71,6 @@ export const newsBriefs: NewsBrief[] = [
       name: "Google DeepMind Gemini benchmark table (February 2026)",
       href: "https://deepmind.google/models/gemini/"
     },
-    statsByTheme: [
-      {
-        theme: { en: "General reasoning", fr: "Raisonnement général" },
-        benchmark: "Humanity's Last Exam (No tools)",
-        snapshot: { en: "February 2026 snapshot", fr: "Snapshot février 2026" },
-        stats: [
-          { model: "Gemini 3 Pro Thinking", value: "Official source table" },
-          { model: "GPT-5.1", value: "Official source table" },
-          { model: "Claude Sonnet 4.5 Thinking", value: "Official source table" }
-        ]
-      },
-      {
-        theme: { en: "Science QA", fr: "Questions scientifiques" },
-        benchmark: "GPQA Diamond (No tools)",
-        snapshot: { en: "February 2026 snapshot", fr: "Snapshot février 2026" },
-        stats: [
-          { model: "Gemini 3 Pro Thinking", value: "Official source table" },
-          { model: "GPT-5.1", value: "Official source table" },
-          { model: "Claude Sonnet 4.5 Thinking", value: "Official source table" }
-        ]
-      },
-      {
-        theme: { en: "Math reasoning", fr: "Raisonnement mathématique" },
-        benchmark: "AIME 2025 (No tools)",
-        snapshot: { en: "February 2026 snapshot", fr: "Snapshot février 2026" },
-        stats: [
-          { model: "Gemini 3 Pro Thinking", value: "Official source table" },
-          { model: "GPT-5.1", value: "Official source table" },
-          { model: "Claude Sonnet 4.5 Thinking", value: "Official source table" }
-        ]
-      },
-      {
-        theme: { en: "Multimodal understanding", fr: "Compréhension multimodale" },
-        benchmark: "MMMU-Pro",
-        snapshot: { en: "February 2026 snapshot", fr: "Snapshot février 2026" },
-        stats: [
-          { model: "Gemini 3 Pro Thinking", value: "Official source table" },
-          { model: "GPT-5.1", value: "Official source table" },
-          { model: "Claude Sonnet 4.5 Thinking", value: "Official source table" }
-        ]
-      },
-      {
-        theme: { en: "UI/screen execution", fr: "Exécution sur interface écran" },
-        benchmark: "ScreenSpot-Pro",
-        snapshot: { en: "February 2026 snapshot", fr: "Snapshot février 2026" },
-        stats: [
-          { model: "Gemini 3 Pro Thinking", value: "Official source table" },
-          { model: "Claude Sonnet 4.5 Thinking", value: "Official source table" },
-          { model: "GPT-5.1", value: "Official source table" }
-        ]
-      }
-    ],
     relatedPostSlugs: ["transformers-rag-and-agents-for-students", "deploy-ml-model-student-budget"],
     locales: {
       en: {
@@ -134,7 +82,7 @@ export const newsBriefs: NewsBrief[] = [
         studentImpact:
           "Students can now choose models by use case theme instead of hype: one model for math-heavy tasks, another for multimodal or UI-heavy execution.",
         takeaways: [
-          "Reasoning: Gemini 3 Pro leads HLE (37.5%) in this snapshot.",
+          "Reasoning: the frontier models trade places by benchmark rather than one leading everywhere.",
           "Science + math: Gemini 3 Pro and GPT-5.1 are close on GPQA and AIME.",
           "Multimodal/UI: Gemini 3 Pro leads MMMU-Pro and ScreenSpot-Pro in this table."
         ],
@@ -154,7 +102,7 @@ export const newsBriefs: NewsBrief[] = [
         studentImpact:
           "Les étudiants peuvent choisir un modèle par type de tâche réelle plutôt que par hype: un modèle pour math/science, un autre pour multimodal ou exécution UI.",
         takeaways: [
-          "Raisonnement: Gemini 3 Pro mène sur HLE (37.5%) dans ce snapshot.",
+          "Raisonnement: les modèles frontier se départagent par benchmark, aucun ne domine partout.",
           "Science + maths: Gemini 3 Pro et GPT-5.1 restent proches sur GPQA et AIME.",
           "Multimodal/UI: Gemini 3 Pro mène MMMU-Pro et ScreenSpot-Pro dans ce tableau."
         ],

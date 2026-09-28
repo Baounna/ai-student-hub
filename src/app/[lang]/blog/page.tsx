@@ -120,6 +120,10 @@ export default async function LocalizedBlogPage(
     : [];
   const featuredPost = posts[0];
   const streamPosts = posts.slice(1);
+  // Ordered by popularScore, which is a number typed by hand in posts.ts. No
+  // analytics feeds it, so the heading below says "Editor's picks" rather than
+  // "Most popular" -- the French said "Les plus lus", literally "the most
+  // read", which is a claim about reader behaviour this site cannot make.
   const topPosts = [...allPosts].sort((a, b) => b.popularScore - a.popularScore).slice(0, 3);
   const trackCounts = getTrackCounts(locale);
   const categories = getAllCategories();
@@ -523,7 +527,7 @@ export default async function LocalizedBlogPage(
 
           <div className="blog-aside-card rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "Les plus lus" : "Most popular"}
+              {locale === "fr" ? "Notre sélection" : "Editor\u2019s picks"}
             </h3>
             <div className="mt-3 space-y-3">
               {topPosts.map((post, index) => (

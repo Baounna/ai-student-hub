@@ -115,7 +115,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         "Budget-friendly workflows",
         "EN/FR content"
       ],
-      popular: "Most Popular",
+      popular: "Editor\u2019s picks",
       socialProof: "Social Proof"
     },
     blog: {
@@ -206,7 +206,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         "Approche budget-friendly",
         "Contenu EN/FR"
       ],
-      popular: "Les plus populaires",
+      popular: "Notre s\u00e9lection",
       socialProof: "Preuves sociales"
     },
     blog: {
