@@ -234,7 +234,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
     ? ""
     : suggestions.length === 0
       ? fr
-        ? "Aucune suggestion. Appuyez sur Entree pour lancer la recherche."
+        ? "Aucune suggestion. Appuyez sur Entrée pour lancer la recherche."
         : "No suggestions. Press Enter to search."
       : fr
         ? `${suggestions.length} suggestion${suggestions.length > 1 ? "s" : ""}`
@@ -258,7 +258,7 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
         setActiveIndex(index);
       }}
       emptyLabel={
-        fr ? "Appuyer sur Entree pour rechercher" : "Press Enter to search"
+        fr ? "Appuyer sur Entrée pour rechercher" : "Press Enter to search"
       }
       showEmpty={open && hasQuery}
       />

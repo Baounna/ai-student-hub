@@ -342,7 +342,7 @@ export default async function LocalizedBlogPage(
           </h2>
           <p className="mt-2 text-sm text-[color:var(--text)]">
             {locale === "fr"
-              ? "La recherche couvre les titres, les resumes, les categories, les tags et le texte des articles."
+              ? "La recherche couvre les titres, les résumés, les catégories, les tags et le texte des articles."
               : "The search covers titles, summaries, categories, tags and the text of the articles themselves."}
           </p>
           {matchingTools.length ? (
