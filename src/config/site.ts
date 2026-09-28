@@ -50,9 +50,26 @@ const legalName = envValue("NEXT_PUBLIC_LEGAL_NAME") || "AI and Cybersecurity Ne
 const affiliatePartners = [1, 2, 3, 4, 5]
   .map((index) => readAffiliatePartner(index))
   .filter((partner): partner is AffiliatePartner => Boolean(partner));
-const testimonials = [1, 2, 3]
-  .map((index) => readTestimonial(index))
-  .filter((item): item is Testimonial => Boolean(item));
+/**
+ * The same gate as GUIDE_EXISTS in src/lib/product.ts, for the same reason.
+ *
+ * TESTIMONIAL_1..3 are read from the environment and rendered verbatim under a
+ * "Social proof" heading with a name and a role attached. The values sitting in
+ * .env.local are invented -- "Sara K", "Youssef A", "Nora B" -- and one of them
+ * credits a roadmap that was deleted for never having existed. They do not
+ * reach production today only because Vercel happens not to set those
+ * variables: one dashboard click away from publishing fabricated endorsements
+ * on a site whose entire pitch is verified sourcing and honest checking.
+ *
+ * That is luck, not design, so the gate is in code where flipping it is a
+ * deliberate act next to this comment. Set it true on the day there are real
+ * quotes from real people who agreed to be named.
+ */
+const TESTIMONIALS_ARE_REAL = false;
+
+const testimonials = TESTIMONIALS_ARE_REAL
+  ? [1, 2, 3].map((index) => readTestimonial(index)).filter((item): item is Testimonial => Boolean(item))
+  : [];
 
 /**
  * Accepts a social URL only when it actually points at a profile: https, and a

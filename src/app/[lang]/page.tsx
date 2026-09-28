@@ -12,6 +12,7 @@ import { siteConfig } from "@/config/site";
 import {
   getAllCategories,
   getCategoriesByTrack,
+  getLocalizedPosts,
   getPopularPosts,
   getPostsByTrack,
   getTrackCounts,
@@ -74,6 +75,8 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
   const featuredPost = popularPosts[0];
   const sidePosts = popularPosts.slice(1);
   const categories = getAllCategories();
+  // The whole library, not the three cards rendered below it.
+  const allPosts = getLocalizedPosts(locale);
   const trackCounts = getTrackCounts(locale);
   const aiCategories = getCategoriesByTrack("ai");
   const csCategories = getCategoriesByTrack("cs");
@@ -311,11 +314,18 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
               </Link>
             )}
           </div>
+          {/* These were an inventory line built out of display slices.
+              popularPosts is getPopularPosts(locale, 3) -- three is the number
+              of cards shown below, not the number of guides that exist -- so
+              the site advertised "3 core articles" while publishing 27, and
+              omitted the 82 verified listings entirely. It understated its own
+              work by an order of magnitude, thirty pixels above a panel that
+              correctly says "82 openings". Count the library, not the shelf. */}
           <p className="mt-2 text-sm text-[color:var(--muted)]">
-            {allNews.length} {locale === "fr" ? "briefs d'actualité" : "news briefs"} • {popularPosts.length}{" "}
-            {locale === "fr" ? "articles principaux" : "core articles"} • {categories.length}{" "}
-            {locale === "fr" ? "domaines" : "domains"} • {recommendedTools.length}{" "}
-            {locale === "fr" ? "outils recommandés" : "recommended tools"}
+            {openStages.length} {locale === "fr" ? "stages vérifiés" : "verified internships"} • {allPosts.length}{" "}
+            {locale === "fr" ? "guides" : "guides"} • {allNews.length}{" "}
+            {locale === "fr" ? "briefs d'actualité" : "news briefs"} • {categories.length}{" "}
+            {locale === "fr" ? "domaines" : "domains"}
           </p>
           <p className="mt-1 text-xs text-[color:var(--muted)]">
             {getTrackLabel("ai", locale)}: {trackCounts.ai} • {getTrackLabel("cs", locale)}: {trackCounts.cs} •{" "}

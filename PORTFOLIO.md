@@ -25,7 +25,7 @@ content sites never build.
 ```
 ┌────────────────────────── Next.js 16 App Router ──────────────────────────┐
 │  /[lang]/…  localized pages (EN/FR)      /api/…  route handlers            │
-│  ISR + static generation (406 pages)     auth · newsletter · track         │
+│  ISR + static generation (119 sitemap URLs)     auth · newsletter · track  │
 │  middleware.ts → per-request nonce CSP                                      │
 └───────────────┬───────────────────────────────────────┬───────────────────┘
                 │ reads                                   │ writes/guards
@@ -62,7 +62,7 @@ JSON state and a markdown report:
   and commits/pushes only when they pass, with rollback on failure.
 
 ### 2. LLM integration done safely
-A Claude-powered writer (`claude-opus-4-8`, structured output) drafts full **EN/FR**
+A Claude-powered writer (`claude-opus-5`, structured output) drafts full **EN/FR**
 articles from the operator's ranked opportunities. Design constraints that matter:
 - **Never auto-publishes** — output is review-gated and surfaced as a **pull request**.
 - **Fails open, not closed** — skips gracefully without an API key so the pipeline
@@ -83,7 +83,7 @@ Full EN/FR parity via a dictionary system; canonical + hreflang alternates, JSON
 sitemap, RSS, and per-route metadata.
 
 ### 5. Reliability
-Vitest unit tests over the security-sensitive lib layer (URL safety, the SSRF guard,
+300 Vitest tests across 30 files, over the security-sensitive lib layer (URL safety, the SSRF guard,
 client-IP parsing, the tracking allowlist) and a CI workflow running
 lint → typecheck → test → build on every push/PR — plus a scheduled watchdog that
 verifies the deployed site and self-heals dependency drift (see below).

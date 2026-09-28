@@ -31,4 +31,15 @@ next-env.d.ts
 watchdog-report.md
 
 # Generated newsletter drafts: reviewed and sent by hand, not source.
-drafts/
+# Anchored: a bare "drafts/" matches any directory of that name at any depth,
+# which silently covered docs/agent/drafts too -- and made it impossible to
+# keep a tracked examples/ folder underneath it.
+/drafts/
+
+# Generated article drafts. Same rule as /drafts at the root: these are the
+# pipeline's output, reviewed by hand, not source. 498 of the 743 tracked files
+# were these -- two thirds of the repository was machine-written markdown, and
+# 427 of them cited arXiv, which the editorial policy excludes. Three are kept
+# under examples/ so the pipeline's output shape is still visible.
+docs/agent/drafts/*.md
+!docs/agent/drafts/examples/
