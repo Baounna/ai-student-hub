@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { evictToBound } from "@/lib/rate-limit";
+import { enforceRateLimitRules, evictToBound } from "@/lib/rate-limit";
 
 // The TS target here predates Map iteration, so keys are collected the long way.
 function keysOf(m: Map<string, { resetAt: number }>) {
@@ -63,5 +63,77 @@ describe("memory bucket eviction", () => {
       evictToBound(m, NOW, 100, 80);
       expect(m.size).toBeLessThanOrEqual(80);
     }
+  });
+});
+
+
+/**
+ * The bug this covers: every rule increments its own counter as it is checked,
+ * so checking a wide shared rule before a narrow per-client one let a client
+ * that was about to be rejected spend the shared budget first. Measured against
+ * the real endpoint: one client sending 1300 newsletter requests in two seconds
+ * got 1296 of its own rejected and still exhausted the shared bucket, so an
+ * unrelated visitor got 429 for the rest of the minute. After the fix that
+ * visitor gets 200.
+ *
+ * These drive the exported function rather than re-deriving the ordering, so
+ * they fail if the sort is removed.
+ */
+describe("enforceRateLimitRules ordering", () => {
+  const unique = () => Math.random().toString(36).slice(2);
+
+  it("does not let a throttled client drain the shared budget", async () => {
+    const shared = `shared:${unique()}`;
+    const attacker = `ip:${unique()}`;
+    const bystander = `ip:${unique()}`;
+    const wide = { key: shared, limit: 5, windowMs: 60_000 };
+
+    // Deliberately wide-first: this is the order the newsletter route used.
+    let attackerAllowed = 0;
+    for (let i = 0; i < 20; i += 1) {
+      const result = await enforceRateLimitRules([wide, { key: attacker, limit: 2, windowMs: 60_000 }]);
+      if (result.allowed) attackerAllowed += 1;
+    }
+    expect(attackerAllowed).toBe(2);
+
+    // The shared bucket should have taken 2 hits, not 20, so someone else can
+    // still get through. Before the fix this was false and they were locked out.
+    let bystanderAllowed = 0;
+    for (let i = 0; i < 3; i += 1) {
+      const result = await enforceRateLimitRules([wide, { key: bystander, limit: 2, windowMs: 60_000 }]);
+      if (result.allowed) bystanderAllowed += 1;
+    }
+    expect(bystanderAllowed).toBeGreaterThan(0);
+  });
+
+  it("still enforces the shared rule once genuine traffic reaches it", async () => {
+    const shared = `shared:${unique()}`;
+    const wide = { key: shared, limit: 3, windowMs: 60_000 };
+
+    let allowed = 0;
+    for (let i = 0; i < 6; i += 1) {
+      // A fresh per-client key each time: nothing is throttled per client, so
+      // the shared limit is the only thing that can stop this.
+      const result = await enforceRateLimitRules([wide, { key: `ip:${unique()}`, limit: 50, windowMs: 60_000 }]);
+      if (result.allowed) allowed += 1;
+    }
+
+    expect(allowed).toBe(3);
+  });
+
+  it("reports the retry window of the rule that actually rejected", async () => {
+    const client = `ip:${unique()}`;
+    const rules = [
+      { key: `shared:${unique()}`, limit: 100, windowMs: 60_000 },
+      { key: client, limit: 1, windowMs: 600_000 }
+    ];
+
+    await enforceRateLimitRules(rules);
+    const rejected = await enforceRateLimitRules(rules);
+
+    expect(rejected.allowed).toBe(false);
+    // The old order answered with the 60s shared window while the client was
+    // actually blocked for ten minutes.
+    expect(rejected.retryAfter).toBeGreaterThan(60);
   });
 });

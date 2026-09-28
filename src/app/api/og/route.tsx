@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { sanitizeTextInput } from "@/lib/input";
 import { siteConfig } from "@/config/site";
 import { imageFonts } from "@/assets/fonts";
+import { renderImage } from "@/lib/image-response";
 
 /**
  * Social link previews, rendered as PNG.
@@ -46,8 +47,9 @@ export async function GET(request: Request) {
   // Long headlines get a smaller size rather than overflowing the canvas.
   const titleSize = title.length > 78 ? 54 : title.length > 46 ? 64 : 76;
 
-  return new ImageResponse(
-    (
+  const card = (cardTitle: string) =>
+    new ImageResponse(
+      (
       <div
         style={{
           width: "100%",
@@ -91,7 +93,7 @@ export async function GET(request: Request) {
             maxWidth: "980px"
           }}
         >
-          {title}
+          {cardTitle}
         </div>
 
         <div
@@ -115,12 +117,15 @@ export async function GET(request: Request) {
           </div>
         </div>
       </div>
-    ),
-    {
-      width: 1200,
-      height: 630,
-      fonts: imageFonts,
-      headers: { "Cache-Control": IMAGE_CACHE_CONTROL }
-    }
-  );
+      ),
+      {
+        width: 1200,
+        height: 630,
+        fonts: imageFonts
+      }
+    );
+
+  // Same buffering as the cover route: an Arabic title aborted this response
+  // mid-stream, with no status code for the caller to act on. See renderImage.
+  return renderImage(card, title, { "Cache-Control": IMAGE_CACHE_CONTROL });
 }

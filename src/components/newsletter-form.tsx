@@ -99,13 +99,25 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         deliveryStatus?: "sent" | "queued" | "failed" | "unavailable";
       };
 
+      // The HTTP request succeeding and the reader being subscribed are two
+      // different things: the provider can refuse the address after we have
+      // already got a 200 back. The warning below reads deliveryStatus and says
+      // so, but this event did not, so every rejected signup was counted as a
+      // successful one. With an invalid API key that is 100% of them -- and the
+      // one dashboard that would show the key was broken reported the opposite.
+      const delivery = data.deliveryStatus || (data.forwarded ? "sent" : "queued");
+      const subscribed = delivery === "sent" || delivery === "queued";
+
       setStatus("success");
-      setDeliveryStatus(data.deliveryStatus || (data.forwarded ? "sent" : "queued"));
-      setEmail("");
-      setName("");
-      trackEvent("newsletter_submit_success", {
+      setDeliveryStatus(delivery);
+      if (subscribed) {
+        setEmail("");
+        setName("");
+      }
+      trackEvent(subscribed ? "newsletter_submit_success" : "newsletter_submit_error", {
         locale,
-        source: sourceTag
+        source: sourceTag,
+        delivery
       });
     } catch {
       setStatus("error");

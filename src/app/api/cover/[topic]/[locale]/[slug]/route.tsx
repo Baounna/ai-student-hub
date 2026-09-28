@@ -3,6 +3,7 @@ import { sanitizeTextInput } from "@/lib/input";
 import { comparisons, posts } from "@/content/posts";
 import { isLocale } from "@/i18n/config";
 import { imageFonts } from "@/assets/fonts";
+import { renderImage } from "@/lib/image-response";
 
 /**
  * Article cover images, generated per article.
@@ -144,14 +145,29 @@ function titleSize(title: string, narrow = false) {
  * refuses to optimise a local source that carries one ("url parameter is not
  * allowed"), so a query-based route would have 400'd for every card.
  */
+/**
+ * decodeURIComponent throws a URIError on malformed input, and a path segment is
+ * whatever the caller typed: "/api/cover/ai/en/%zz" and "/api/cover/ai/en/100%"
+ * each returned a 500 and logged an exception. Next has already decoded these
+ * params, so the extra decode only ever helps a double-encoded slug -- leaving
+ * the raw value alone is the right answer when it cannot be decoded.
+ */
+function safeDecode(value: string) {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
+}
+
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ topic: string; locale: string; slug: string }> }
 ) {
   const resolved = await params;
-  const slug = sanitizeTextInput(decodeURIComponent(resolved.slug || "cover"), { maxLength: 120 });
+  const slug = sanitizeTextInput(safeDecode(resolved.slug || "cover"), { maxLength: 120 });
   const locale = resolved.locale === "fr" ? "fr" : "en";
-  const rawTopic = decodeURIComponent(resolved.topic || "");
+  const rawTopic = safeDecode(resolved.topic || "");
   // "none" is the explicit opt-out used by decorative tiles.
   const topic =
     rawTopic === "none" ? "" : sanitizeTextInput(rawTopic.replace(/-/g, " "), { maxLength: 48 });
@@ -170,8 +186,9 @@ export async function GET(
   // 96 characters is what fits three lines at the smallest size the ramp uses.
   const title = fullTitle.length > 96 ? `${fullTitle.slice(0, 95).trimEnd()}\u2026` : fullTitle;
 
-  return new ImageResponse(
-    (
+  const card = (cardTitle: string) =>
+    new ImageResponse(
+      (
       <div
         style={{
           width: "1200px",
@@ -242,7 +259,7 @@ export async function GET(
               textAlign: "center"
             }}
           >
-            {title}
+            {cardTitle}
           </div>
 
           {/* A short rule instead of a mark: it reads as an editorial device at
@@ -250,12 +267,13 @@ export async function GET(
           <div style={{ width: "72px", height: "3px", background: palette.a, display: "flex" }} />
         </div>
       </div>
-    ),
-    {
-      width: 1200,
-      height: 675,
-      fonts: imageFonts,
-      headers: { "Cache-Control": IMAGE_CACHE_CONTROL }
-    }
-  );
+      ),
+      {
+        width: 1200,
+        height: 675,
+        fonts: imageFonts
+      }
+    );
+
+  return renderImage(card, title, { "Cache-Control": IMAGE_CACHE_CONTROL });
 }

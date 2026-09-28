@@ -42,7 +42,37 @@ export function buildContentSecurityPolicy(nonce: string) {
   return directives.join("; ");
 }
 
+/**
+ * A path Next can decode.
+ *
+ * Next decodes dynamic route segments itself, and a malformed percent-escape
+ * makes that throw before any handler runs: "/%zz", "/en/blog/100%" and
+ * "/api/search-suggest/%zz" each answered 500 with an empty body and nothing in
+ * the application log -- so the failure was invisible from inside the app while
+ * still costing a billed invocation and an error-rate alarm per request. Anyone
+ * could generate them in a loop.
+ *
+ * Catching it here answers every matched route at once, and 400 is the honest
+ * status: the request never named a resource, so it is malformed rather than
+ * missing.
+ */
+function hasDecodablePath(pathname: string) {
+  try {
+    decodeURIComponent(pathname);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 export function middleware(request: NextRequest) {
+  if (!hasDecodablePath(request.nextUrl.pathname)) {
+    return new NextResponse("Bad Request", {
+      status: 400,
+      headers: { "Content-Type": "text/plain", "Cache-Control": "no-store" }
+    });
+  }
+
   const nonce = crypto.randomUUID().replace(/-/g, "");
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set("x-csp-nonce", nonce);

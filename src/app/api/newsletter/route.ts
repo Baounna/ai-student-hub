@@ -104,8 +104,18 @@ export async function POST(request: Request) {
     // worst version of this, because the reader has no reason to try again.
     const stored = emailForwarded;
 
+    // ok must mean the same thing as stored, for the same reason stored had to
+    // be fixed above: this returned ok: true on a rejected key, an outage or a
+    // timeout. Our own form escapes that only because it ignores this field and
+    // re-reads deliveryStatus; anything written against the obvious contract --
+    // "ok means it worked" -- would report success on every failed signup.
+    //
+    // The HTTP status stays 200 on purpose. It says the request was processed,
+    // and the body says what the outcome was. Returning 502 would send the form
+    // down its network-error branch and replace "your address was not saved"
+    // with a generic failure, which tells the reader less.
     return NextResponse.json({
-      ok: true,
+      ok: emailForwarded,
       forwarded: emailForwarded,
       stored,
       deliveryStatus,

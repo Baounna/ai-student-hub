@@ -199,8 +199,33 @@ async function rateLimit(key: string, limit: number, windowMs: number): Promise<
   };
 }
 
+/**
+ * Narrowest rule first, whatever order the caller wrote them in.
+ *
+ * Each rule increments its own counter as it is checked, so evaluating a wide
+ * shared rule before a narrow per-client one means a request that is about to
+ * be rejected has already spent the shared budget. The newsletter listed
+ * `newsletter:endpoint` (1200/min, shared by everyone) ahead of the per-IP rule
+ * (8/10min), so one client sending 1300 requests in two seconds got 1296 of its
+ * own requests rejected -- and burned the endpoint budget doing it, which then
+ * returned 429 to every other visitor for the rest of the minute. Twenty
+ * requests a second was enough to keep the signup form closed indefinitely.
+ *
+ * Sorting by requests-per-millisecond puts the tightest rule first, so a client
+ * over its own limit is turned away before it can touch anything shared. It
+ * also makes Retry-After honest: the old order reported the 60s endpoint window
+ * to a client that was actually blocked for ten minutes.
+ *
+ * The alternative -- check every rule without incrementing, then commit -- costs
+ * a second Upstash round trip per rule and opens a race between the two phases.
+ * Ordering gets the same protection with neither.
+ */
 export async function enforceRateLimitRules(rules: RateLimitRule[]): Promise<RateLimitResult> {
-  for (const rule of rules) {
+  const narrowestFirst = [...rules].sort(
+    (a, b) => a.limit / Math.max(1, a.windowMs) - b.limit / Math.max(1, b.windowMs)
+  );
+
+  for (const rule of narrowestFirst) {
     const result = await rateLimit(rule.key, rule.limit, rule.windowMs);
     if (!result.allowed) return result;
   }
