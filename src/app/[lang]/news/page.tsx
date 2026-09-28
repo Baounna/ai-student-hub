@@ -217,7 +217,15 @@ export default async function LocalizedNewsPage(
                       fill
                       sizes="(max-width: 1280px) 33vw, 24vw"
                       className="object-cover object-center opacity-90"
-                      priority={index === 0}
+                      // All three, not just the first. This row is grid-cols-3
+                      // at every breakpoint -- it never stacks -- so all three
+                      // tiles are above the fold, the same size, and equally
+                      // likely to be the LCP element. On desktop it was tile 1,
+                      // which was lazy: Lighthouse failed lcp-lazy-loaded on
+                      // /en/news and the LCP phase showed 67-81ms of load time
+                      // for an image the browser had been told not to hurry.
+                      // The three together are 3.7 kB, so eager costs nothing.
+                      priority
                     />
                   </div>
                 ))}

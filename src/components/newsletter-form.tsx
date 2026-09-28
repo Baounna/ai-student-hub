@@ -58,6 +58,19 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  /**
+   * Clear a finished result as soon as the reader types again.
+   *
+   * status only reset inside onSubmit, which the browser never reaches when
+   * native validation blocks the submit. So after one successful signup, typing
+   * a second, malformed address and pressing Join left "Great. Check your inbox."
+   * on screen with the invalid address still in the field and no request sent --
+   * readable as confirmation of an address that was never submitted.
+   */
+  function clearStaleResult() {
+    setStatus((current) => (current === "success" || current === "error" ? "idle" : current));
+  }
   // The route distinguishes 400, 403, 429 and 503, and every one of them
   // arrived here as the same sentence because the fetch threw away the status.
   // "Too many requests" in particular told the reader to try again, which is
@@ -74,7 +87,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
 
     try {
       const formData = new FormData(event.currentTarget);
-      const company = String(formData.get("company") || "");
+      const referralNote = String(formData.get("referral_note") || "");
       const botToken = String(formData.get("cf-turnstile-response") || "");
 
       const response = await fetch("/api/newsletter", {
@@ -83,7 +96,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         body: JSON.stringify({
           email,
           name,
-          company,
+          company: referralNote,
           botToken,
           locale,
           source: sourceTag
@@ -183,7 +196,10 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
             type="text"
             name="name"
             value={name}
-            onChange={(event) => setName(event.target.value)}
+            onChange={(event) => {
+              setName(event.target.value);
+              clearStaleResult();
+            }}
             placeholder={locale === "fr" ? "Prénom" : "First name"}
             autoComplete="given-name"
             maxLength={80}
@@ -191,11 +207,25 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
           />
         </>
       )}
+      {/* A honeypot, and it must keep answering a bot with a plain success --
+          telling one it was caught just teaches it to stop filling the field.
+          The cost of that is that a human who trips it is told they subscribed
+          when the address was discarded, so the field has to be one a human
+          never fills.
+
+          It was named "company", which is an autofill category: browsers and
+          password managers fill organization fields on sight, autoComplete="off"
+          is widely ignored by managers, and display:none does not stop them. So
+          a reader with a password manager could be silently dropped. The name is
+          now one no autofill heuristic recognises, and the two documented
+          manager opt-outs are set. A bot filling every input still trips it. */}
       <input
         type="text"
-        name="company"
+        name="referral_note"
         tabIndex={-1}
         autoComplete="off"
+        data-lpignore="true"
+        data-1p-ignore=""
         className="hidden"
         aria-hidden
       />
@@ -210,7 +240,10 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         type="email"
         name="email"
         value={email}
-        onChange={(event) => setEmail(event.target.value)}
+        onChange={(event) => {
+          setEmail(event.target.value);
+          clearStaleResult();
+        }}
         placeholder={compact ? "you@school.edu" : "Email address"}
         autoComplete="email"
         maxLength={254}
