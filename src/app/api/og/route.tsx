@@ -3,6 +3,8 @@ import { sanitizeTextInput } from "@/lib/input";
 import { siteConfig } from "@/config/site";
 import { imageFonts } from "@/assets/fonts";
 import { renderImage } from "@/lib/image-response";
+import { enforceRateLimitRules, rateLimitIdentifier } from "@/lib/rate-limit";
+import { getClientIp, rateLimitClientKey } from "@/lib/request";
 
 /**
  * Social link previews, rendered as PNG.
@@ -33,7 +35,38 @@ const IMAGE_CACHE_CONTROL = "public, max-age=31536000, s-maxage=31536000, immuta
 
 const MAX_TITLE = 110;
 
+
+/**
+ * A ceiling on renders, because every distinct URL is a cache miss.
+ *
+ * The immutable cache only helps a URL that repeats. A caller looping
+ * "?title=1", "?title=2" ... never repeats one, so nothing is cached and every
+ * request is a billed render -- measured at ~36 a second, roughly 20-25ms each.
+ * Neither image route was metered at all, which made a bill the cheapest thing
+ * an unfriendly visitor could produce.
+ *
+ * The limit is deliberately loose. A reader who opens a page pulls one cover,
+ * and a crawler fetching every card on a long index legitimately pulls dozens,
+ * so this has to sit well above real traffic and only catch a loop.
+ */
+async function imageRenderAllowed(request: Request) {
+  const ip = getClientIp(request);
+  return enforceRateLimitRules([
+    { key: "image:endpoint", limit: 6000, windowMs: 60 * 1000 },
+    { key: `image:ip:${rateLimitIdentifier(rateLimitClientKey(ip))}`, limit: 120, windowMs: 60 * 1000 }
+  ]);
+}
+
+const TOO_MANY = (retryAfter: number) =>
+  new Response("Too many requests", {
+    status: 429,
+    headers: { "Retry-After": String(retryAfter), "Cache-Control": "no-store" }
+  });
+
 export async function GET(request: Request) {
+  const gate = await imageRenderAllowed(request);
+  if (!gate.allowed) return TOO_MANY(gate.retryAfter);
+
   const { searchParams } = new URL(request.url);
 
   const rawTitle = searchParams.get("title") || siteConfig.brandName;

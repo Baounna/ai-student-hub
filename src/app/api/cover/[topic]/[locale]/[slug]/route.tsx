@@ -4,6 +4,8 @@ import { comparisons, posts } from "@/content/posts";
 import { isLocale } from "@/i18n/config";
 import { imageFonts } from "@/assets/fonts";
 import { renderImage } from "@/lib/image-response";
+import { enforceRateLimitRules, rateLimitIdentifier } from "@/lib/rate-limit";
+import { getClientIp, rateLimitClientKey } from "@/lib/request";
 
 /**
  * Article cover images, generated per article.
@@ -160,10 +162,41 @@ function safeDecode(value: string) {
   }
 }
 
+
+/**
+ * A ceiling on renders, because every distinct URL is a cache miss.
+ *
+ * The immutable cache only helps a URL that repeats. A caller looping
+ * "?title=1", "?title=2" ... never repeats one, so nothing is cached and every
+ * request is a billed render -- measured at ~36 a second, roughly 20-25ms each.
+ * Neither image route was metered at all, which made a bill the cheapest thing
+ * an unfriendly visitor could produce.
+ *
+ * The limit is deliberately loose. A reader who opens a page pulls one cover,
+ * and a crawler fetching every card on a long index legitimately pulls dozens,
+ * so this has to sit well above real traffic and only catch a loop.
+ */
+async function imageRenderAllowed(request: Request) {
+  const ip = getClientIp(request);
+  return enforceRateLimitRules([
+    { key: "image:endpoint", limit: 6000, windowMs: 60 * 1000 },
+    { key: `image:ip:${rateLimitIdentifier(rateLimitClientKey(ip))}`, limit: 120, windowMs: 60 * 1000 }
+  ]);
+}
+
+const TOO_MANY = (retryAfter: number) =>
+  new Response("Too many requests", {
+    status: 429,
+    headers: { "Retry-After": String(retryAfter), "Cache-Control": "no-store" }
+  });
+
 export async function GET(
-  _request: Request,
+  request: Request,
   { params }: { params: Promise<{ topic: string; locale: string; slug: string }> }
 ) {
+  const gate = await imageRenderAllowed(request);
+  if (!gate.allowed) return TOO_MANY(gate.retryAfter);
+
   const resolved = await params;
   const slug = sanitizeTextInput(safeDecode(resolved.slug || "cover"), { maxLength: 120 });
   const locale = resolved.locale === "fr" ? "fr" : "en";

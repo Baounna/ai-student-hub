@@ -93,10 +93,18 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Skip anything that looks like a file. The previous list named each static
-  // asset individually, so a new one — the IndexNow key at /<key>.txt — fell
-  // through to the [lang] route and 404'd. Matching on "has an extension"
-  // covers every file in public/ without needing to be kept in step with it.
-  matcher: ["/((?!_next/static|_next/image|.*\\..*).*)"]
+  // Skip Next's own build output and anything under public/. The previous list
+  // named each static asset individually, so a new one -- the IndexNow key at
+  // /<key>.txt -- fell through to the [lang] route and 404'd.
+  //
+  // "Has a dot" was the shortcut for "is a file", and it cost the CSP: no
+  // Content-Security-Policy header was sent for any URL containing one, so
+  // /en/blog/no-such.page came back with no policy at all. Harmless while no
+  // real page has a dot in its path, and a hole the day one does -- a post slug
+  // with a version number is all it takes. Only extensions that actually exist
+  // in public/ are skipped now, so every HTML route keeps its policy.
+  matcher: [
+    "/((?!_next/static|_next/image|.*\\.(?:ico|png|jpg|jpeg|gif|svg|webp|avif|txt|xml|json|webmanifest|woff|woff2|ttf|otf|eot|pdf|css|js|map|mp4|webm)$).*)"
+  ]
 };
 
