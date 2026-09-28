@@ -1,8 +1,8 @@
 # AI and Cybersecurity News Blog Design Agent Report
 
-Generated: 2026-09-21T15:19:19.117Z
+Generated: 2026-09-28T16:59:56.323Z
 Target score: 88/100
-Score: 85/100 (144/170 weighted points)
+Score: 82/100 (139/170 weighted points)
 
 ## Scorecard
 - [PASS] Header uses unified search component (7)
@@ -18,7 +18,7 @@ Score: 85/100 (144/170 weighted points)
 - [MISS] News AI+CS split filters (6)
 - [PASS] Tools index premium hero sizing (6)
 - [PASS] Tools detail premium hero sizing (6)
-- [PASS] Appearance panel hidden on tools pages (5)
+- [MISS] Appearance panel hidden on tools pages (5)
 - [PASS] Tools sticky CTA mobile-only behavior (5)
 - [PASS] Blog quality signal strip (7)
 - [PASS] Most popular sidebar (5)
@@ -47,6 +47,9 @@ Score: 85/100 (144/170 weighted points)
 4. [P2] Keep AI/CS split filters on news page with track chips.
    - Why: Split navigation improves topical relevance and retention.
    - File: src/app/[lang]/news/page.tsx
+5. [P2] Hide appearance panel on tools routes to reduce visual clutter.
+   - Why: Removing side controls on conversion pages keeps focus on decisions and CTAs.
+   - File: src/components/ui/appearance-panel-shell.tsx
 
 Status: below target. Prioritize P1 design gaps before next content sprint.
 

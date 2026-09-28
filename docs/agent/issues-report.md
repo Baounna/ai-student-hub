@@ -1,28 +1,28 @@
 # AI and Cybersecurity News Agent Issue Sync
 
-Generated: 2026-09-28T15:51:31.806Z
+Generated: 2026-09-28T16:59:56.494Z
 Mode: disabled
 Repository: Baounna/ai-student-hub
 Max issues per run: 3
 
 ## Queue Sources
-- Operator: enabled=YES | actions=13 | queue=docs/agent/next-actions.json
-  - Queue generated at: 2026-09-28T15:51:31.663Z
-  - Selected this run: 3
-- Design: enabled=NO | actions=0 | queue=docs/agent/design-actions.json
+- Operator: enabled=NO | actions=0 | queue=docs/agent/next-actions.json
   - Selected this run: 0
+- Design: enabled=YES | actions=5 | queue=docs/agent/design-actions.json
+  - Queue generated at: 2026-09-28T16:59:56.323Z
+  - Selected this run: 3
 
 ## Run Summary
 - Created: 0
 - Already open/tracked: 0
 - Dry-run candidates: 3
 - Errors: 0
-- Tracked total: 11
+- Tracked total: 12
 
 ## Dry-run
-- [Operator] [Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).
-- [Operator] [Operator P1] Cover missing affiliate placement: blog.
-- [Operator] [Operator P1] Cover missing affiliate placement: comparison.
+- [Design] [Design P1] Keep CS-first value proposition cards visible on homepage.
+- [Design] [Design P1] Use clean field-input styling for search with clear visual hierarchy.
+- [Design] [Design P2] Hide appearance panel on tools routes to reduce visual clutter.
 
 ## Tracked Actions
 - [Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -51,10 +51,13 @@ Max issues per run: 3
   - Last seen: 2026-09-18T11:23:23.441Z
 - [Design P1] Keep CS-first value proposition cards visible on homepage.
   - Status: disabled
-  - Last seen: 2026-09-21T15:19:19.296Z
+  - Last seen: 2026-09-28T16:59:56.494Z
 - [Design P1] Use clean field-input styling for search with clear visual hierarchy.
   - Status: disabled
-  - Last seen: 2026-09-21T15:19:19.296Z
+  - Last seen: 2026-09-28T16:59:56.494Z
+- [Design P2] Hide appearance panel on tools routes to reduce visual clutter.
+  - Status: disabled
+  - Last seen: 2026-09-28T16:59:56.494Z
 - [Design P2] Keep AI/CS split filters on news page with track chips.
   - Status: disabled
   - Last seen: 2026-09-21T15:19:19.296Z

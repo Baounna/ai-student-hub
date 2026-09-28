@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-21T15:19:19.117Z",
+  "generatedAt": "2026-09-28T16:59:56.323Z",
   "targetScore": 88,
-  "score": 85,
-  "weightedScore": 144,
+  "score": 82,
+  "weightedScore": 139,
   "totalWeight": 170,
-  "ratio": 0.847,
+  "ratio": 0.818,
   "summary": {
     "checks": 28,
-    "passed": 24,
-    "failed": 4,
+    "passed": 23,
+    "failed": 5,
     "onTarget": false
   },
   "checks": [
@@ -134,7 +134,7 @@
       "label": "Appearance panel hidden on tools pages",
       "file": "src/components/ui/appearance-panel-shell.tsx",
       "weight": 5,
-      "passed": true,
+      "passed": false,
       "action": "Hide appearance panel on tools routes to reduce visual clutter.",
       "why": "Removing side controls on conversion pages keeps focus on decisions and CTAs."
     },
@@ -297,6 +297,14 @@
       "file": "src/app/[lang]/news/page.tsx",
       "checkId": "news-ai-cs-split",
       "weight": 6
+    },
+    {
+      "priority": "P2",
+      "action": "Hide appearance panel on tools routes to reduce visual clutter.",
+      "why": "Removing side controls on conversion pages keeps focus on decisions and CTAs.",
+      "file": "src/components/ui/appearance-panel-shell.tsx",
+      "checkId": "compare-hide-appearance-panel",
+      "weight": 5
     }
   ]
 }
