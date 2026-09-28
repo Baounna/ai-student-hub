@@ -251,6 +251,139 @@ function isConfiguredHere(envKey) {
 }
 
 /** The verify:* scripts the project already had but never scheduled. */
+
+/**
+ * Whether each scheduled workflow is still firing at all.
+ *
+ * The check above cannot answer this, and the difference is the whole reason
+ * this file exists. It builds its list of workflows out of the runs it just
+ * fetched, so a workflow that has stopped running is absent from that list, is
+ * never compared against anything, and the report says "latest run of all N
+ * workflows on main passed" -- where N silently excludes it. Silence reads as
+ * health.
+ *
+ * The window makes it worse. Sixty runs on main is about thirty-one hours when
+ * four workflows fire on every push and the day has eight commits in it, so the
+ * four weekly agents sit outside it six days out of seven. On Mondays the
+ * watchdog runs before them, so Monday's watchdog cannot see Monday's agents
+ * and Tuesday's may already have lost them.
+ *
+ * That is precisely the failure this project has already had: the writer agent
+ * failed eleven consecutive Mondays and nothing said so. Asking each scheduled
+ * workflow about its own last run, by name, is the only version of this check
+ * that can notice an absence.
+ */
+/**
+ * Which scheduled workflows have gone quiet.
+ *
+ * Kept as a pure function, separately from the fetching, because the value of
+ * this check is entirely in its judgement and that judgement is otherwise
+ * impossible to test: you cannot make a workflow stop firing to see whether the
+ * alarm works, and an alarm nobody has heard ring is the thing this project
+ * already got wrong once.
+ *
+ * `lastRuns` maps a workflow filename to the ISO date of its most recent run,
+ * null when it has never run, or undefined when GitHub could not be asked --
+ * which is not the same thing and must not be reported as an absence.
+ */
+export function scheduledWorkflowProblems(expected, lastRuns, now = Date.now()) {
+  const problems = [];
+  let checked = 0;
+  let unknown = 0;
+
+  for (const { file, hours } of expected) {
+    const last = lastRuns.get(file);
+
+    if (last === undefined) {
+      unknown += 1;
+      continue;
+    }
+
+    checked += 1;
+
+    if (last === null) {
+      problems.push(`${file} (never run)`);
+      continue;
+    }
+
+    // A full extra day on top of the cadence. GitHub's scheduler runs late --
+    // five to eight hours is normal on this repository -- so a tighter
+    // allowance would cry wolf, and an alarm nobody believes is exactly the
+    // failure being guarded against.
+    const ageHours = (now - Date.parse(last)) / 3_600_000;
+    if (!Number.isFinite(ageHours)) {
+      problems.push(`${file} (unreadable run date)`);
+      continue;
+    }
+    if (ageHours > hours + 24) {
+      problems.push(`${file} (${Math.round(ageHours)}h since last run, expected every ~${hours}h)`);
+    }
+  }
+
+  return { problems, checked, unknown };
+}
+
+/**
+ * Whether each scheduled workflow is still firing at all.
+ *
+ * checkWorkflowHealth cannot answer this, and the difference is the whole
+ * reason this exists. It builds its list of workflows out of the runs it just
+ * fetched, so a workflow that has stopped running is absent from that list,
+ * is never compared against anything, and the report says "latest run of all N
+ * workflows on main passed" -- where N silently excludes it. Silence reads as
+ * health.
+ *
+ * The window makes it worse. Sixty runs on main is about thirty-one hours when
+ * four workflows fire on every push and the day has eight commits in it, so the
+ * weekly agents sit outside it six days out of seven, and on Mondays this runs
+ * before them. The writer agent failed eleven consecutive Mondays and nothing
+ * said so. Asking each scheduled workflow about its own last run, by name, is
+ * the only version of this check that can notice an absence.
+ */
+async function checkScheduledWorkflowsStillFiring() {
+  let expected;
+  try {
+    expected = (await scheduledWorkflows()).filter((w) => !PARKED_WORKFLOWS.has(w.file));
+  } catch {
+    record("Scheduled workflows", true, "could not read .github/workflows — skipped");
+    return;
+  }
+
+  if (!expected.length) {
+    record("Scheduled workflows", true, "no workflow declares a schedule");
+    return;
+  }
+
+  const lastRuns = new Map();
+  for (const { file } of expected) {
+    try {
+      const { stdout } = await execFileAsync(
+        "gh",
+        ["run", "list", "--workflow", file, "--limit", "1", "--json", "createdAt"],
+        { maxBuffer: 2 * 1024 * 1024 }
+      );
+      const runs = JSON.parse(stdout);
+      lastRuns.set(file, Array.isArray(runs) && runs.length ? runs[0].createdAt : null);
+    } catch {
+      // Left undefined on purpose: "GitHub would not answer" is not "this
+      // workflow has stopped", and reporting the first as the second is how a
+      // check starts lying.
+    }
+  }
+
+  const { problems, checked, unknown } = scheduledWorkflowProblems(expected, lastRuns);
+  const caveat = unknown ? ` (${unknown} could not be checked)` : "";
+
+  record(
+    "Scheduled workflows",
+    problems.length === 0,
+    problems.length === 0
+      ? `all ${checked} scheduled workflows fired within their cadence${caveat}`
+      : `not firing: ${problems.join(", ")}${caveat}`
+  );
+}
+
+
 async function checkVerifyScript(label, script) {
   try {
     const { stdout } = await execFileAsync("npm", ["run", script], { maxBuffer: 12 * 1024 * 1024 });
@@ -281,6 +414,44 @@ const PARKED_WORKFLOWS = new Set([
   // repository is public. Add a workflow here only when you have decided to
   // accept its failure, so the alert channel keeps meaning something.
 ]);
+
+/**
+ * The workflows that are supposed to run on a timer, and how often.
+ *
+ * Read from the workflow files rather than from a list kept here, so a new
+ * scheduled agent is covered the day it is added and a decommissioned one stops
+ * being expected the day its schedule block is removed. A workflow with only
+ * workflow_dispatch is deliberately manual and is not judged on staleness.
+ */
+async function scheduledWorkflows() {
+  const dir = path.join(process.cwd(), ".github/workflows");
+  const files = (await fs.readdir(dir)).filter((name) => name.endsWith(".yml") || name.endsWith(".yaml"));
+  const out = [];
+
+  for (const file of files) {
+    const text = await fs.readFile(path.join(dir, file), "utf8");
+    const crons = [...text.matchAll(/^\s*-?\s*cron:\s*["']([^"']+)["']/gm)].map((m) => m[1]);
+    if (!crons.length) continue;
+    out.push({ file, hours: Math.min(...crons.map(cadenceHours)) });
+  }
+
+  return out;
+}
+
+/**
+ * How many hours a cron expression leaves between firings, near enough.
+ *
+ * Only two answers matter here -- "about daily" and "about weekly" -- so this
+ * reads the day-of-week field and, failing that, counts the hours listed. It
+ * does not need to be a cron engine; it needs to know whether twelve hours of
+ * silence is normal or alarming.
+ */
+function cadenceHours(cron) {
+  const [, hour = "*", , , dow = "*"] = cron.trim().split(/\s+/);
+  if (dow !== "*") return 24 * 7;
+  const slots = hour === "*" ? 24 : hour.split(",").length;
+  return Math.max(1, Math.round(24 / slots));
+}
 
 async function checkWorkflowHealth() {
   try {
@@ -326,6 +497,8 @@ async function checkWorkflowHealth() {
         ? `latest run of all ${latest.size} workflows on main passed`
         : `last run on main failed: ${failing.join(", ")}`
     );
+
+    await checkScheduledWorkflowsStillFiring();
   } catch {
     // No gh, or no token — not a fault in the project itself.
     record("Workflow health", true, "gh CLI unavailable here — skipped");
