@@ -67,16 +67,21 @@ export async function POST(request: Request) {
     const shouldSendWebhook = isSafeWebhookTarget(webhook);
 
     if (shouldSendWebhook) {
-      try {
-        await fetch(webhook, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          signal: AbortSignal.timeout(8_000),
-          body: JSON.stringify(event)
-        });
-      } catch {
+      // Not awaited. This held the reader's request open for however long the
+      // collector took -- measured at the full 8s bound against a dead one --
+      // to deliver an analytics event whose outcome the reader neither sees nor
+      // depends on. Nothing downstream reads the result, so the response goes
+      // out immediately and the POST finishes on its own. The catch stays: an
+      // unhandled rejection from a detached promise would take the process
+      // down, which is a far worse failure than a lost analytics event.
+      void fetch(webhook, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        signal: AbortSignal.timeout(8_000),
+        body: JSON.stringify(event)
+      }).catch(() => {
         debugLog({ webhook: "failed", event: event.event });
-      }
+      });
     }
 
     debugLog(event);

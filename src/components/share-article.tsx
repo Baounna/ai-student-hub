@@ -11,9 +11,9 @@ type ShareArticleProps = {
   locale: Locale;
 };
 
-const COPY: Record<Locale, { label: string; copy: string; copied: string; share: string }> = {
-  en: { label: "Share", copy: "Copy link", copied: "Link copied", share: "Share" },
-  fr: { label: "Partager", copy: "Copier le lien", copied: "Lien copie", share: "Partager" }
+const COPY: Record<Locale, { label: string; copy: string; copied: string; share: string; failed: string }> = {
+  en: { label: "Share", copy: "Copy link", copied: "Link copied", share: "Share", failed: "Press Ctrl+C to copy" },
+  fr: { label: "Partager", copy: "Copier le lien", copied: "Lien copie", share: "Partager", failed: "Appuyez sur Ctrl+C pour copier" }
 };
 
 /**
@@ -31,6 +31,7 @@ const COPY: Record<Locale, { label: string; copy: string; copied: string; share:
 export function ShareArticle({ url, title, locale }: ShareArticleProps) {
   const copy = COPY[locale] ?? COPY.en;
   const [copied, setCopied] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
 
   // navigator.share exists only in the browser, and only in some of them.
   // Read through useSyncExternalStore rather than syncing it into state from an
@@ -69,10 +70,17 @@ export function ShareArticle({ url, title, locale }: ShareArticleProps) {
   async function handleCopy() {
     try {
       await navigator.clipboard.writeText(url);
+      setCopyFailed(false);
       setCopied(true);
       trackEvent("article_share", { channel: "copy", locale });
     } catch {
-      // Clipboard can be blocked by permissions; the explicit targets still work.
+      // The clipboard API is refused outright in some browsers and whenever the
+      // page is not trusted, and this swallowed that silently: the button did
+      // nothing at all, with no message, so the reader could only conclude the
+      // site was broken. Say what to do instead -- the URL is already selected
+      // in the address bar, so Ctrl+C is a real answer rather than an apology.
+      setCopied(false);
+      setCopyFailed(true);
     }
   }
 
@@ -100,7 +108,7 @@ export function ShareArticle({ url, title, locale }: ShareArticleProps) {
       ))}
 
       <button type="button" onClick={handleCopy} className="btn-secondary px-3 py-1.5 text-xs">
-        {copied ? copy.copied : copy.copy}
+        {copied ? copy.copied : copyFailed ? copy.failed : copy.copy}
       </button>
     </div>
   );
