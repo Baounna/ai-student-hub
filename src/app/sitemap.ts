@@ -6,6 +6,7 @@ import { getAutoToolsUpdatedAt } from "@/content/auto-tools";
 import { locales } from "@/i18n/config";
 import { absoluteUrl } from "@/lib/site-url";
 import { getStagesUpdatedAt } from "@/content/stages";
+import { isIndexableTaxonomy, postsInCategory, postsWithTag } from "@/lib/taxonomy";
 
 /**
  * lastmod is a claim about the content, not about the deploy.
@@ -219,8 +220,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
+  // Only taxonomy pages that are worth landing on. A sitemap is a statement
+  // about what matters on a site, and 134 of the 251 entries here were tag
+  // pages listing a single post -- so the file spent 53% of its budget
+  // pointing crawlers at links to articles it was also listing directly. See
+  // src/lib/taxonomy.ts for where the threshold comes from.
   const categoryPages = locales.flatMap((locale) =>
-    getAllCategories().map((category) => ({
+    getAllCategories()
+      .filter((category) => isIndexableTaxonomy(postsInCategory(slugify(category))))
+      .map((category) => ({
       url: absoluteUrl(`/${locale}/blog/category/${slugify(category)}`),
       // A category page changes when its newest post does. getAllCategories()
       // also returns the REQUIRED_CATEGORY_COVERAGE entries that no post fills
@@ -233,7 +241,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   const tagPages = locales.flatMap((locale) =>
-    getAllTags().map((tag) => ({
+    getAllTags()
+      .filter((tag) => isIndexableTaxonomy(postsWithTag(slugify(tag))))
+      .map((tag) => ({
       url: absoluteUrl(`/${locale}/blog/tag/${slugify(tag)}`),
       // Same rule as categories, matched the way the tag page itself filters.
       lastModified: asDate(newestPostIn((post) => post.tags.some((postTag) => slugify(postTag) === slugify(tag)))),

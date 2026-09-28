@@ -11,6 +11,7 @@ import { getSeoKeywords, coverImageUrl, ogImageUrl } from "@/lib/seo";
 import { formatReadTime } from "@/lib/read-time";
 import { categoryName } from "@/lib/categories";
 import { siteConfig } from "@/config/site";
+import { isIndexableTaxonomy, postsInCategory } from "@/lib/taxonomy";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => getAllCategories().map((category) => ({ lang, category: slugify(category) })));
@@ -62,6 +63,10 @@ export async function generateMetadata(
 
   return {
     title: categoryTitle,
+    // Same rule as tags, by count rather than by type: a category page earns a
+    // place in the index once it lists enough posts to be worth landing on, and
+    // gets there on its own as the site grows. See src/lib/taxonomy.ts.
+    robots: isIndexableTaxonomy(postsInCategory(params.category)) ? undefined : { index: false, follow: true },
     description: categoryDescription,
     keywords: getSeoKeywords(params.lang, "blog", [
       params.lang === "fr" ? `categorie ${categoryLabel} ia` : `${categoryLabel} ai category`,

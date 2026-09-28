@@ -11,6 +11,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, coverImageUrl, ogImageUrl } from "@/lib/seo";
 import { formatReadTime } from "@/lib/read-time";
 import { siteConfig } from "@/config/site";
+import { isIndexableTaxonomy, postsWithTag } from "@/lib/taxonomy";
 
 export function generateStaticParams() {
   // Both sources: a tag that exists only on a news brief still needs a page,
@@ -45,6 +46,11 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
 
   return {
     title: tagTitle,
+    // A tag matching one or two posts is a link to an article that is already
+    // indexed on its own; 53 of 67 tags here matched exactly one. follow stays
+    // on, so the page still works as navigation and its links still count.
+    // See src/lib/taxonomy.ts.
+    robots: isIndexableTaxonomy(postsWithTag(params.tag)) ? undefined : { index: false, follow: true },
     description: tagDescription,
     keywords: getSeoKeywords(params.lang, "blog", [
       params.lang === "fr" ? `tag ${tagName} ia` : `${tagName} ai tag`,
