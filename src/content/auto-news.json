@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T13:49:24.390Z",
+  "updatedAt": "2026-09-28T15:26:42.759Z",
   "items": [
     {
-      "slug": "20260928-four-months-of-voidzero-at-cloudflare-making-the-open-source-jav-eb611a2a",
-      "topic": "AI Systems",
+      "slug": "20260928-nextjs-applications-powered-by-vite-introducing-vinext-10-d4dd483c",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/voidzero-update/",
-      "publishedAt": "2026-09-28T13:00:00.000Z",
-      "discoveredAt": "2026-09-28T13:49:24.390Z",
+      "href": "https://blog.cloudflare.com/vinext-nextjs-on-vite/",
+      "publishedAt": "2026-09-28T14:51:57.000Z",
+      "discoveredAt": "2026-09-28T15:26:42.759Z",
       "locales": {
         "en": {
-          "title": "Four months of VoidZero at Cloudflare: making the open-source JavaScript toolchain faster for all humans and agents",
-          "summary": "Since joining Cloudflare, VoidZero has delivered more than 80 releases that drastically speed up JavaScript compilation, linting, and testing. From a 10x faster React compiler to Vite+ 1.0, here’s how we are building faster tools…"
+          "title": "Next.js applications, powered by Vite: introducing Vinext 1.0",
+          "summary": "Vinext 1.0 graduates from an AI experiment to a production-ready framework, letting developers run Next.js apps on Vite. This release brings advanced cache warming, broader compatibility, and an automated testing pipeline."
         },
         "fr": {
-          "title": "Four months of VoidZero at Cloudflare: making the open-source JavaScript toolchain faster for all humans and agents",
-          "summary": "Since joining Cloudflare, VoidZero has delivered more than 80 releases that drastically speed up JavaScript compilation, linting, and testing. From a 10x faster React compiler to Vite+ 1.0, here’s how we are building faster tools…"
+          "title": "Next.js applications, powered by Vite: introducing Vinext 1.0",
+          "summary": "Vinext 1.0 graduates from an AI experiment to a production-ready framework, letting developers run Next.js apps on Vite. This release brings advanced cache warming, broader compatibility, and an automated testing pipeline."
         }
       }
     },
@@ -364,21 +364,21 @@
       }
     },
     {
-      "slug": "20260928-introducing-forge-the-open-source-pipeline-for-generating-sdks-c-f359e0d9",
-      "topic": "Computer Systems",
+      "slug": "20260928-introducing-cf-the-agentic-cli-for-the-entire-cloudflare-api-2ee63841",
+      "topic": "AI Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/forge-open-source-generation-pipeline/",
-      "publishedAt": "2026-09-28T13:00:00.000Z",
-      "discoveredAt": "2026-09-28T13:49:24.390Z",
+      "href": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
+      "publishedAt": "2026-09-28T14:50:37.000Z",
+      "discoveredAt": "2026-09-28T15:26:42.759Z",
       "locales": {
         "en": {
-          "title": "Introducing Forge: the open source pipeline for generating SDKs, CLIs, docs, and more",
-          "summary": "Forge is a pluggable, open-source pipeline that runs in CI to generate SDKs, CLIs, and documentation directly from API definitions. By shifting generation upstream into individual team repositories, Forge keeps developer tools co…"
+          "title": "Introducing cf: the agentic CLI for the entire Cloudflare API",
+          "summary": "We are releasing cf, our new command-line tool that mirrors the entire Cloudflare API and supports programmatic TypeScript configuration. We are also open-sourcing Forge, our internal SDK generator."
         },
         "fr": {
-          "title": "Introducing Forge: the open source pipeline for generating SDKs, CLIs, docs, and more",
-          "summary": "Forge is a pluggable, open-source pipeline that runs in CI to generate SDKs, CLIs, and documentation directly from API definitions. By shifting generation upstream into individual team repositories, Forge keeps developer tools co…"
+          "title": "Introducing cf: the agentic CLI for the entire Cloudflare API",
+          "summary": "We are releasing cf, our new command-line tool that mirrors the entire Cloudflare API and supports programmatic TypeScript configuration. We are also open-sourcing Forge, our internal SDK generator."
         }
       }
     },
@@ -706,21 +706,21 @@
       }
     },
     {
-      "slug": "20260928-the-road-to-the-agentic-browser-a-kitesurf-update-d0b06df4",
-      "topic": "AI Systems",
+      "slug": "20260928-how-fast-is-the-web-explore-billions-of-real-user-measurements-w-3ebbe252",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/kitesurf-update/",
-      "publishedAt": "2026-09-28T13:00:00.000Z",
-      "discoveredAt": "2026-09-28T13:49:24.390Z",
+      "href": "https://blog.cloudflare.com/how-fast-is-the-web/",
+      "publishedAt": "2026-09-28T14:43:05.000Z",
+      "discoveredAt": "2026-09-28T15:26:42.759Z",
       "locales": {
         "en": {
-          "title": "The road to the agentic browser: A Kitesurf update",
-          "summary": "We’ve updated Kitesurf, our Workers-based browser for AI agents, with WebMCP support, improved DOM performance, and terminal-based rendering. With over 730,000 Web Platform subtests passing, agents can now navigate complex sites…"
+          "title": "How fast is the web? Explore billions of real-user measurements with BEACON",
+          "summary": "Cloudflare is open-sourcing the BEACON dataset, making billions of anonymized Real User Monitoring (RUM) performance records publicly available on Google BigQuery. Explore real-world Core Web Vitals, soft navigation metrics, and…"
         },
         "fr": {
-          "title": "The road to the agentic browser: A Kitesurf update",
-          "summary": "We’ve updated Kitesurf, our Workers-based browser for AI agents, with WebMCP support, improved DOM performance, and terminal-based rendering. With over 730,000 Web Platform subtests passing, agents can now navigate complex sites…"
+          "title": "How fast is the web? Explore billions of real-user measurements with BEACON",
+          "summary": "Cloudflare is open-sourcing the BEACON dataset, making billions of anonymized Real User Monitoring (RUM) performance records publicly available on Google BigQuery. Explore real-world Core Web Vitals, soft navigation metrics, and…"
         }
       }
     },
@@ -1048,21 +1048,21 @@
       }
     },
     {
-      "slug": "20260928-introducing-the-cold-start-pitch-your-startup-live-at-cloudflare-78255174",
-      "topic": "Computer Systems",
+      "slug": "20260928-four-months-of-voidzero-at-cloudflare-making-the-open-source-jav-eb611a2a",
+      "topic": "AI Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/introducing-the-cold-start/",
+      "href": "https://blog.cloudflare.com/voidzero-update/",
       "publishedAt": "2026-09-28T13:00:00.000Z",
       "discoveredAt": "2026-09-28T13:49:24.390Z",
       "locales": {
         "en": {
-          "title": "Introducing The Cold Start: pitch your startup live at Cloudflare Connect",
-          "summary": "Cloudflare is launching The Cold Start, a startup competition giving five early-stage companies five minutes on stage at Cloudflare Connect. Grand Prize winner receives $500,000 in credits, a San Francisco billboard, and an invit…"
+          "title": "Four months of VoidZero at Cloudflare: making the open-source JavaScript toolchain faster for all humans and agents",
+          "summary": "Since joining Cloudflare, VoidZero has delivered more than 80 releases that drastically speed up JavaScript compilation, linting, and testing. From a 10x faster React compiler to Vite+ 1.0, here’s how we are building faster tools…"
         },
         "fr": {
-          "title": "Introducing The Cold Start: pitch your startup live at Cloudflare Connect",
-          "summary": "Cloudflare is launching The Cold Start, a startup competition giving five early-stage companies five minutes on stage at Cloudflare Connect. Grand Prize winner receives $500,000 in credits, a San Francisco billboard, and an invit…"
+          "title": "Four months of VoidZero at Cloudflare: making the open-source JavaScript toolchain faster for all humans and agents",
+          "summary": "Since joining Cloudflare, VoidZero has delivered more than 80 releases that drastically speed up JavaScript compilation, linting, and testing. From a 10x faster React compiler to Vite+ 1.0, here’s how we are building faster tools…"
         }
       }
     },
@@ -1390,21 +1390,21 @@
       }
     },
     {
-      "slug": "20260928-emdash-10-the-stable-cms-with-a-secure-plugin-registry-e3c78699",
+      "slug": "20260928-introducing-forge-the-open-source-pipeline-for-generating-sdks-c-f359e0d9",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/emdash-cms-plugin-registry/",
+      "href": "https://blog.cloudflare.com/forge-open-source-generation-pipeline/",
       "publishedAt": "2026-09-28T13:00:00.000Z",
       "discoveredAt": "2026-09-28T13:49:24.390Z",
       "locales": {
         "en": {
-          "title": "EmDash 1.0: the stable CMS with a secure plugin registry",
-          "summary": "EmDash 1.0 is a stable, open source CMS built for Astro, with agent-friendly workflows, secure sandboxed plugins, and a decentralized registry that keeps publishers in control."
+          "title": "Introducing Forge: the open source pipeline for generating SDKs, CLIs, docs, and more",
+          "summary": "Forge is a pluggable, open-source pipeline that runs in CI to generate SDKs, CLIs, and documentation directly from API definitions. By shifting generation upstream into individual team repositories, Forge keeps developer tools co…"
         },
         "fr": {
-          "title": "EmDash 1.0: the stable CMS with a secure plugin registry",
-          "summary": "EmDash 1.0 is a stable, open source CMS built for Astro, with agent-friendly workflows, secure sandboxed plugins, and a decentralized registry that keeps publishers in control."
+          "title": "Introducing Forge: the open source pipeline for generating SDKs, CLIs, docs, and more",
+          "summary": "Forge is a pluggable, open-source pipeline that runs in CI to generate SDKs, CLIs, and documentation directly from API definitions. By shifting generation upstream into individual team repositories, Forge keeps developer tools co…"
         }
       }
     },
@@ -1732,21 +1732,21 @@
       }
     },
     {
-      "slug": "20260928-supporting-native-rust-in-workers-with-the-new-emscripten-target-30c18d3f",
-      "topic": "Computer Systems",
+      "slug": "20260928-the-road-to-the-agentic-browser-a-kitesurf-update-d0b06df4",
+      "topic": "AI Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/rust-workers-emscripten-target/",
+      "href": "https://blog.cloudflare.com/kitesurf-update/",
       "publishedAt": "2026-09-28T13:00:00.000Z",
       "discoveredAt": "2026-09-28T13:49:24.390Z",
       "locales": {
         "en": {
-          "title": "Supporting native Rust in Workers with the new Emscripten target for wasm-bindgen",
-          "summary": "With the new experimental support for the Emscripten target in Rust Workers, many previously unsupported Rust libraries and applications can now be built and deployed directly to Cloudflare’s global Workers platform, including up…"
+          "title": "The road to the agentic browser: A Kitesurf update",
+          "summary": "We’ve updated Kitesurf, our Workers-based browser for AI agents, with WebMCP support, improved DOM performance, and terminal-based rendering. With over 730,000 Web Platform subtests passing, agents can now navigate complex sites…"
         },
         "fr": {
-          "title": "Supporting native Rust in Workers with the new Emscripten target for wasm-bindgen",
-          "summary": "With the new experimental support for the Emscripten target in Rust Workers, many previously unsupported Rust libraries and applications can now be built and deployed directly to Cloudflare’s global Workers platform, including up…"
+          "title": "The road to the agentic browser: A Kitesurf update",
+          "summary": "We’ve updated Kitesurf, our Workers-based browser for AI agents, with WebMCP support, improved DOM performance, and terminal-based rendering. With over 730,000 Web Platform subtests passing, agents can now navigate complex sites…"
         }
       }
     },
@@ -2036,21 +2036,21 @@
       }
     },
     {
-      "slug": "20260927-cloudflares-2026-annual-founders-letter-55521e37",
+      "slug": "20260928-introducing-the-cold-start-pitch-your-startup-live-at-cloudflare-78255174",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/",
-      "publishedAt": "2026-09-27T17:00:00.000Z",
-      "discoveredAt": "2026-09-27T21:18:59.924Z",
+      "href": "https://blog.cloudflare.com/introducing-the-cold-start/",
+      "publishedAt": "2026-09-28T13:00:00.000Z",
+      "discoveredAt": "2026-09-28T13:49:24.390Z",
       "locales": {
         "en": {
-          "title": "Cloudflare’s 2026 Annual Founders’ Letter",
-          "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help bui…"
+          "title": "Introducing The Cold Start: pitch your startup live at Cloudflare Connect",
+          "summary": "Cloudflare is launching The Cold Start, a startup competition giving five early-stage companies five minutes on stage at Cloudflare Connect. Grand Prize winner receives $500,000 in credits, a San Francisco billboard, and an invit…"
         },
         "fr": {
-          "title": "Cloudflare’s 2026 Annual Founders’ Letter",
-          "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help bui…"
+          "title": "Introducing The Cold Start: pitch your startup live at Cloudflare Connect",
+          "summary": "Cloudflare is launching The Cold Start, a startup competition giving five early-stage companies five minutes on stage at Cloudflare Connect. Grand Prize winner receives $500,000 in credits, a San Francisco billboard, and an invit…"
         }
       }
     },
@@ -2340,21 +2340,21 @@
       }
     },
     {
-      "slug": "20260925-agents-can-now-set-up-your-websites-security-with-turnstile-spin-f8742313",
-      "topic": "Security & Standards",
+      "slug": "20260928-emdash-10-the-stable-cms-with-a-secure-plugin-registry-e3c78699",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/turnstile-spin/",
-      "publishedAt": "2026-09-25T13:00:00.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
+      "href": "https://blog.cloudflare.com/emdash-cms-plugin-registry/",
+      "publishedAt": "2026-09-28T13:00:00.000Z",
+      "discoveredAt": "2026-09-28T13:49:24.390Z",
       "locales": {
         "en": {
-          "title": "Agents can now set up your website’s security with Turnstile Spin",
-          "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification."
+          "title": "EmDash 1.0: the stable CMS with a secure plugin registry",
+          "summary": "EmDash 1.0 is a stable, open source CMS built for Astro, with agent-friendly workflows, secure sandboxed plugins, and a decentralized registry that keeps publishers in control."
         },
         "fr": {
-          "title": "Agents can now set up your website’s security with Turnstile Spin",
-          "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification."
+          "title": "EmDash 1.0: the stable CMS with a secure plugin registry",
+          "summary": "EmDash 1.0 is a stable, open source CMS built for Astro, with agent-friendly workflows, secure sandboxed plugins, and a decentralized registry that keeps publishers in control."
         }
       }
     },
@@ -2644,21 +2644,21 @@
       }
     },
     {
-      "slug": "20260924-how-cloudflare-addressed-a-cross-tenant-data-exposure-vulnerabil-4224c10f",
-      "topic": "Security & Standards",
+      "slug": "20260928-supporting-native-rust-in-workers-with-the-new-emscripten-target-30c18d3f",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
-      "publishedAt": "2026-09-24T15:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "href": "https://blog.cloudflare.com/rust-workers-emscripten-target/",
+      "publishedAt": "2026-09-28T13:00:00.000Z",
+      "discoveredAt": "2026-09-28T13:49:24.390Z",
       "locales": {
         "en": {
-          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
-          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps…"
+          "title": "Supporting native Rust in Workers with the new Emscripten target for wasm-bindgen",
+          "summary": "With the new experimental support for the Emscripten target in Rust Workers, many previously unsupported Rust libraries and applications can now be built and deployed directly to Cloudflare’s global Workers platform, including up…"
         },
         "fr": {
-          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
-          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps…"
+          "title": "Supporting native Rust in Workers with the new Emscripten target for wasm-bindgen",
+          "summary": "With the new experimental support for the Emscripten target in Rust Workers, many previously unsupported Rust libraries and applications can now be built and deployed directly to Cloudflare’s global Workers platform, including up…"
         }
       }
     },
@@ -2910,21 +2910,21 @@
       }
     },
     {
-      "slug": "20260922-we-just-shipped-support-for-the-ugliest-part-of-http-vary-f665e9d5",
+      "slug": "20260927-cloudflares-2026-annual-founders-letter-55521e37",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/vary-support/",
-      "publishedAt": "2026-09-22T14:04:31.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "href": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/",
+      "publishedAt": "2026-09-27T17:00:00.000Z",
+      "discoveredAt": "2026-09-27T21:18:59.924Z",
       "locales": {
         "en": {
-          "title": "We just shipped support for the ugliest part of HTTP: Vary",
-          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpre…"
+          "title": "Cloudflare’s 2026 Annual Founders’ Letter",
+          "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help bui…"
         },
         "fr": {
-          "title": "We just shipped support for the ugliest part of HTTP: Vary",
-          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpre…"
+          "title": "Cloudflare’s 2026 Annual Founders’ Letter",
+          "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help bui…"
         }
       }
     },
@@ -3176,21 +3176,21 @@
       }
     },
     {
-      "slug": "20260922-introducing-worker-previews-isolated-preview-environments-for-ev-55b3c858",
-      "topic": "AI Systems",
+      "slug": "20260925-agents-can-now-set-up-your-websites-security-with-turnstile-spin-f8742313",
+      "topic": "Security & Standards",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/worker-previews/",
-      "publishedAt": "2026-09-22T13:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "href": "https://blog.cloudflare.com/turnstile-spin/",
+      "publishedAt": "2026-09-25T13:00:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:17.268Z",
       "locales": {
         "en": {
-          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
-          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
+          "title": "Agents can now set up your website’s security with Turnstile Spin",
+          "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification."
         },
         "fr": {
-          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
-          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
+          "title": "Agents can now set up your website’s security with Turnstile Spin",
+          "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification."
         }
       }
     },
@@ -3423,21 +3423,21 @@
       }
     },
     {
-      "slug": "20260921-python-workers-are-now-generally-available-5a3a5fde",
-      "topic": "Computer Systems",
+      "slug": "20260924-how-cloudflare-addressed-a-cross-tenant-data-exposure-vulnerabil-4224c10f",
+      "topic": "Security & Standards",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/python-workers-ga/",
-      "publishedAt": "2026-09-21T13:00:00.000Z",
-      "discoveredAt": "2026-09-21T14:30:28.060Z",
+      "href": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
+      "publishedAt": "2026-09-24T15:00:00.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
       "locales": {
         "en": {
-          "title": "Python Workers are now generally available",
-          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI wit…"
+          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
+          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps…"
         },
         "fr": {
-          "title": "Python Workers are now generally available",
-          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI wit…"
+          "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
+          "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps…"
         }
       }
     },
@@ -3651,21 +3651,21 @@
       }
     },
     {
-      "slug": "20260918-saving-another-100tb-of-ram-with-math-and-rust-2f284f65",
+      "slug": "20260922-we-just-shipped-support-for-the-ugliest-part-of-http-vary-f665e9d5",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
-      "publishedAt": "2026-09-18T17:23:58.000Z",
-      "discoveredAt": "2026-09-18T20:52:50.113Z",
+      "href": "https://blog.cloudflare.com/vary-support/",
+      "publishedAt": "2026-09-22T14:04:31.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Saving another 100TB of RAM with math (and Rust)",
-          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RA…"
+          "title": "We just shipped support for the ugliest part of HTTP: Vary",
+          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpre…"
         },
         "fr": {
-          "title": "Saving another 100TB of RAM with math (and Rust)",
-          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RA…"
+          "title": "We just shipped support for the ugliest part of HTTP: Vary",
+          "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpre…"
         }
       }
     },
@@ -3879,21 +3879,21 @@
       }
     },
     {
-      "slug": "20260916-when-scanners-miss-the-attack-how-cloudflare-client-side-securit-1575dde9",
-      "topic": "Security & Standards",
+      "slug": "20260922-introducing-worker-previews-isolated-preview-environments-for-ev-55b3c858",
+      "topic": "AI Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
-      "publishedAt": "2026-09-16T20:06:17.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "href": "https://blog.cloudflare.com/worker-previews/",
+      "publishedAt": "2026-09-22T13:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
-          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investig…"
+          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
+          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
         },
         "fr": {
-          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
-          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investig…"
+          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
+          "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production."
         }
       }
     },
@@ -4088,21 +4088,21 @@
       }
     },
     {
-      "slug": "20260915-have-it-both-ways-stay-discoverable-in-search-while-disallowing--758d5608",
+      "slug": "20260921-python-workers-are-now-generally-available-5a3a5fde",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
-      "publishedAt": "2026-09-15T13:00:00.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "href": "https://blog.cloudflare.com/python-workers-ga/",
+      "publishedAt": "2026-09-21T13:00:00.000Z",
+      "discoveredAt": "2026-09-21T14:30:28.060Z",
       "locales": {
         "en": {
-          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
-          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
+          "title": "Python Workers are now generally available",
+          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI wit…"
         },
         "fr": {
-          "title": "Have it both ways: stay discoverable in search while disallowing AI training",
-          "summary": "Cloudflare is giving site owners a way to stay discoverable while disallowing AI training. New controls and an Accountable designation establish a shared model with Apple, Google, and Microsoft."
+          "title": "Python Workers are now generally available",
+          "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI wit…"
         }
       }
     },
@@ -4297,21 +4297,21 @@
       }
     },
     {
-      "slug": "20260915-give-every-teammate-and-agent-the-right-level-of-access-to-your--5d707738",
-      "topic": "AI Systems",
+      "slug": "20260918-saving-another-100tb-of-ram-with-math-and-rust-2f284f65",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-granular-authorization/",
-      "publishedAt": "2026-09-15T13:00:00.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "href": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+      "publishedAt": "2026-09-18T17:23:58.000Z",
+      "discoveredAt": "2026-09-18T20:52:50.113Z",
       "locales": {
         "en": {
-          "title": "Give every teammate and agent the right level of access to your Workers",
-          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
+          "title": "Saving another 100TB of RAM with math (and Rust)",
+          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RA…"
         },
         "fr": {
-          "title": "Give every teammate and agent the right level of access to your Workers",
-          "summary": "You can now scope access to individual Workers and assign narrower Developer Platform roles, so teammates, CI tokens, and agents get only the access they need to debug, deploy, or monitor safely."
+          "title": "Saving another 100TB of RAM with math (and Rust)",
+          "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RA…"
         }
       }
     },
@@ -4487,21 +4487,21 @@
       }
     },
     {
-      "slug": "20260911-introducing-automatic-remediation-policies-with-cloudflare-casb-2250069f",
-      "topic": "Computer Systems",
+      "slug": "20260916-when-scanners-miss-the-attack-how-cloudflare-client-side-securit-1575dde9",
+      "topic": "Security & Standards",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/casb-policies/",
-      "publishedAt": "2026-09-11T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "href": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
+      "publishedAt": "2026-09-16T20:06:17.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
       "locales": {
         "en": {
-          "title": "Introducing automatic remediation policies with Cloudflare CASB",
-          "summary": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky file shares…"
+          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
+          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investig…"
         },
         "fr": {
-          "title": "Introducing automatic remediation policies with Cloudflare CASB",
-          "summary": "Cloudflare CASB policies introduce a native automation engine built directly on the Cloudflare developer platform to remediate SaaS risks automatically. Security teams can now design event-driven logic to revoke risky file shares…"
+          "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
+          "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investig…"
         }
       }
     },
