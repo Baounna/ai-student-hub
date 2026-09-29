@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T23:14:35.810Z",
+  "updatedAt": "2026-09-29T12:48:58.498Z",
   "items": [
+    {
+      "slug": "20260929-dasha-18-index-recommendations-io-analysis-schema-checks-and-log-e42d6b25",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/dasha-18-index-recommendations-io-analysis-schema-checks-and-log-insights-3387/",
+      "publishedAt": "2026-09-29T00:00:00.000Z",
+      "discoveredAt": "2026-09-29T12:48:58.498Z",
+      "locales": {
+        "en": {
+          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
+          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
+        },
+        "fr": {
+          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
+          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
+        }
+      }
+    },
     {
       "slug": "20260928-grok-47-is-now-available-on-amazon-bedrock-60a3597f",
       "topic": "AI Systems",
@@ -18,6 +37,25 @@
         "fr": {
           "title": "Grok 4.7 is now available on Amazon Bedrock",
           "summary": "xAI's Grok 4.7 is now available on Amazon Bedrock: a frontier model for coding, long-running agents, and knowledge work. It offers a 500K token context window and four configurable reasoning effort levels, reachable through the R…"
+        }
+      }
+    },
+    {
+      "slug": "20260928-how-we-will-do-better-for-australia-cfe8e900",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "publishedAt": "2026-09-28T19:00:00.000Z",
+      "discoveredAt": "2026-09-29T12:48:58.498Z",
+      "locales": {
+        "en": {
+          "title": "How we will do better for Australia",
+          "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences."
+        },
+        "fr": {
+          "title": "How we will do better for Australia",
+          "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences."
         }
       }
     },
@@ -151,44 +189,6 @@
         "fr": {
           "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
           "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges related to ge…"
-        }
-      }
-    },
-    {
-      "slug": "20260928-the-lenfest-institute-grows-landmark-program-with-expanded-opena-216d56bb",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-      "publishedAt": "2026-09-28T07:00:00.000Z",
-      "discoveredAt": "2026-09-28T23:14:35.810Z",
-      "locales": {
-        "en": {
-          "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-          "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support."
-        },
-        "fr": {
-          "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-          "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support."
-        }
-      }
-    },
-    {
-      "slug": "20260928-plhaskell-v60-released-22b5aed3",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/plhaskell-v60-released-3388/",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-28T15:51:30.407Z",
-      "locales": {
-        "en": {
-          "title": "PL/Haskell v6.0 Released",
-          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
-        },
-        "fr": {
-          "title": "PL/Haskell v6.0 Released",
-          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
         }
       }
     },
@@ -364,6 +364,25 @@
       }
     },
     {
+      "slug": "20260928-plhaskell-v60-released-22b5aed3",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/plhaskell-v60-released-3388/",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "locales": {
+        "en": {
+          "title": "PL/Haskell v6.0 Released",
+          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+        },
+        "fr": {
+          "title": "PL/Haskell v6.0 Released",
+          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+        }
+      }
+    },
+    {
       "slug": "20260928-introducing-claude-sonnet-55-on-aws-89a36e77",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -379,6 +398,25 @@
         "fr": {
           "title": "Introducing Claude Sonnet 5.5 on AWS",
           "summary": "Claude Sonnet 5.5 is now available on Amazon Bedrock and Claude Platform on AWS. It's a smarter, more efficient Sonnet model for focused coding and knowledge work, with a lower cost per task at faster speed. This post covers what…"
+        }
+      }
+    },
+    {
+      "slug": "20260928-towards-safety-cases-for-frontier-ai-training-cf468ec3",
+      "topic": "Security & Standards",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "publishedAt": "2026-09-28T19:00:00.000Z",
+      "discoveredAt": "2026-09-29T12:48:58.498Z",
+      "locales": {
+        "en": {
+          "title": "Towards safety cases for frontier AI training",
+          "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents"
+        },
+        "fr": {
+          "title": "Towards safety cases for frontier AI training",
+          "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents"
         }
       }
     },
@@ -512,44 +550,6 @@
         "fr": {
           "title": "Crafting WCAG 3 for more accessible user experiences",
           "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
-        }
-      }
-    },
-    {
-      "slug": "20260928-basis-completes-a-tax-workbook-2x-faster-with-gpt-6-astra-bf0fe8cc",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/basis-tax-workbook-with-astra",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-28T23:14:35.810Z",
-      "locales": {
-        "en": {
-          "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-          "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
-        },
-        "fr": {
-          "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-          "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
-        }
-      }
-    },
-    {
-      "slug": "20260928-pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform--1249398e",
-      "topic": "Computer Systems",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform-to-bridge-the-ai-prototype-to-production-chasm-3389/",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-28T15:51:30.407Z",
-      "locales": {
-        "en": {
-          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
-          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
-        },
-        "fr": {
-          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
-          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
         }
       }
     },
@@ -706,6 +706,25 @@
       }
     },
     {
+      "slug": "20260928-pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform--1249398e",
+      "topic": "Computer Systems",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform-to-bridge-the-ai-prototype-to-production-chasm-3389/",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "locales": {
+        "en": {
+          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
+          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+        },
+        "fr": {
+          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
+          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+        }
+      }
+    },
+    {
       "slug": "20260928-build-real-time-voice-applications-with-vllm-omni-on-sagemaker-a-e3520bb6",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -721,6 +740,25 @@
         "fr": {
           "title": "Build real-time voice applications with vLLM-Omni on SageMaker AI – Part 1",
           "summary": "Deploy a text-to-speech model on Amazon SageMaker AI with the AWS vLLM-Omni Deep Learning Container and stream generated speech over a persistent bidirectional connection. This Part 1 tutorial deploys Qwen3-TTS and streams speech…"
+        }
+      }
+    },
+    {
+      "slug": "20260928-the-lenfest-institute-grows-landmark-program-with-expanded-opena-216d56bb",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "publishedAt": "2026-09-28T07:00:00.000Z",
+      "discoveredAt": "2026-09-28T23:14:35.810Z",
+      "locales": {
+        "en": {
+          "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+          "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support."
+        },
+        "fr": {
+          "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+          "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support."
         }
       }
     },
@@ -854,44 +892,6 @@
         "fr": {
           "title": "2026 Climate Weeks: W3C and Web Sustainability",
           "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3C’s horizo…"
-        }
-      }
-    },
-    {
-      "slug": "20260925-proaction-boosts-sales-60-and-saves-75-hours-with-codex-d2d497e5",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/proaction",
-      "publishedAt": "2026-09-25T19:00:00.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
-      "locales": {
-        "en": {
-          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
-        },
-        "fr": {
-          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
-        }
-      }
-    },
-    {
-      "slug": "20260924-postgresql-19-beta-4-released-a454f777",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-19-beta-4-released-3386/",
-      "publishedAt": "2026-09-24T00:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL 19 Beta 4 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
-        },
-        "fr": {
-          "title": "PostgreSQL 19 Beta 4 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
         }
       }
     },
@@ -1048,6 +1048,25 @@
       }
     },
     {
+      "slug": "20260924-postgresql-19-beta-4-released-a454f777",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-19-beta-4-released-3386/",
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL 19 Beta 4 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+        },
+        "fr": {
+          "title": "PostgreSQL 19 Beta 4 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+        }
+      }
+    },
+    {
       "slug": "20260928-generate-images-and-video-with-vllm-omni-on-sagemaker-ai-part-2-30c97320",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -1063,6 +1082,25 @@
         "fr": {
           "title": "Generate images and video with vLLM-Omni on SageMaker AI – Part 2",
           "summary": "Deploy two generative media models from one AWS vLLM-Omni Deep Learning Container on Amazon SageMaker AI. Generate an image with FLUX.2-klein through real-time inference, then animate it into video with Wan2.1-VACE through asynch…"
+        }
+      }
+    },
+    {
+      "slug": "20260928-basis-completes-a-tax-workbook-2x-faster-with-gpt-6-astra-bf0fe8cc",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/basis-tax-workbook-with-astra",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T23:14:35.810Z",
+      "locales": {
+        "en": {
+          "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+          "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
+        },
+        "fr": {
+          "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+          "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
         }
       }
     },
@@ -1196,44 +1234,6 @@
         "fr": {
           "title": "W3C IRC bots now open source",
           "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
-        }
-      }
-    },
-    {
-      "slug": "20260923-two-years-of-openai-academy-9d02eeb8",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/two-years-of-openai-academy",
-      "publishedAt": "2026-09-23T16:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Two years of OpenAI Academy",
-          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
-        },
-        "fr": {
-          "title": "Two years of OpenAI Academy",
-          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
-        }
-      }
-    },
-    {
-      "slug": "20260923-pgbouncer-1260-released---fixes-three-cves-10080888",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgbouncer-1260-released-fixes-three-cves-3385/",
-      "publishedAt": "2026-09-23T00:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
-        },
-        "fr": {
-          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
         }
       }
     },
@@ -1390,6 +1390,25 @@
       }
     },
     {
+      "slug": "20260923-pgbouncer-1260-released---fixes-three-cves-10080888",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgbouncer-1260-released-fixes-three-cves-3385/",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+        },
+        "fr": {
+          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+        }
+      }
+    },
+    {
       "slug": "20260928-implementing-synthetic-monitoring-using-amazon-nova-act-5b4f6fe7",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -1405,6 +1424,25 @@
         "fr": {
           "title": "Implementing synthetic monitoring using Amazon Nova Act",
           "summary": "Learn an agent-driven approach to synthetic monitoring using Amazon Nova Act and Amazon Bedrock AgentCore. The post covers the architecture and patterns for resilient, managed user-journey validation that moves beyond brittle UI…"
+        }
+      }
+    },
+    {
+      "slug": "20260925-proaction-boosts-sales-60-and-saves-75-hours-with-codex-d2d497e5",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/proaction",
+      "publishedAt": "2026-09-25T19:00:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:17.268Z",
+      "locales": {
+        "en": {
+          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
+        },
+        "fr": {
+          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
         }
       }
     },
@@ -1538,44 +1576,6 @@
         "fr": {
           "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
           "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber Resilience…"
-        }
-      }
-    },
-    {
-      "slug": "20260923-openai-extends-cyber-access-to-ukraine-for-civilian-defense-1d77064c",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-      "publishedAt": "2026-09-23T13:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
-        },
-        "fr": {
-          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
-        }
-      }
-    },
-    {
-      "slug": "20260922-sql-manager-for-postgresql-70-meet-the-ai-assistant-2ae8d80a",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/sql-manager-for-postgresql-70-meet-the-ai-assistant-3379/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
-          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
-        },
-        "fr": {
-          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
-          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
         }
       }
     },
@@ -1732,6 +1732,25 @@
       }
     },
     {
+      "slug": "20260922-sql-manager-for-postgresql-70-meet-the-ai-assistant-2ae8d80a",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/sql-manager-for-postgresql-70-meet-the-ai-assistant-3379/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
+          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
+        },
+        "fr": {
+          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
+          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
+        }
+      }
+    },
+    {
       "slug": "20260928-automating-amazon-textract-adapter-lifecycle-management-across-a-456549d7",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -1747,6 +1766,25 @@
         "fr": {
           "title": "Automating Amazon Textract adapter lifecycle management across accounts",
           "summary": "Learn how to operationalize Amazon Textract Custom Queries adapters for production: infrastructure as code with AWS CloudFormation and Terraform, a cross-account adapter promotion process, a pre-classification routing pattern for…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-two-years-of-openai-academy-9d02eeb8",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/two-years-of-openai-academy",
+      "publishedAt": "2026-09-23T16:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Two years of OpenAI Academy",
+          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
+        },
+        "fr": {
+          "title": "Two years of OpenAI Academy",
+          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
         }
       }
     },
@@ -1884,44 +1922,6 @@
       }
     },
     {
-      "slug": "20260923-sam-altmans-remarks-at-the-united-nations-security-council-01d4e543",
-      "topic": "Security & Standards",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/sam-altman-un-security-council-remarks",
-      "publishedAt": "2026-09-23T12:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Sam Altman’s remarks at the United Nations Security Council",
-          "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council."
-        },
-        "fr": {
-          "title": "Sam Altman’s remarks at the United Nations Security Council",
-          "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council."
-        }
-      }
-    },
-    {
-      "slug": "20260922-pgsql-test-real-postgres-testing-for-faster-development-loops-212e48db",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgsql-test-real-postgres-testing-for-faster-development-loops-3380/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
-          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
-        },
-        "fr": {
-          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
-          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
-        }
-      }
-    },
-    {
       "slug": "20260916-microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadr-7164ca73",
       "topic": "Computer Science",
       "source": "Azure AI Blog",
@@ -2055,6 +2055,25 @@
       }
     },
     {
+      "slug": "20260922-pgsql-test-real-postgres-testing-for-faster-development-loops-212e48db",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgsql-test-real-postgres-testing-for-faster-development-loops-3380/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+        },
+        "fr": {
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+        }
+      }
+    },
+    {
       "slug": "20260925-scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-de-44d856e7",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2070,6 +2089,25 @@
         "fr": {
           "title": "Scaling MoE reinforcement learning on Amazon EKS with EFA and DeepEP with 40% more throughput",
           "summary": "Learn how to scale Mixture-of-Experts (MoE) reinforcement learning on Amazon EKS using Elastic Fabric Adapter (EFA) and DeepEP. This post presents an architecture that combines Amazon EKS, EFA, and Amazon S3 and increased aggrega…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-openai-extends-cyber-access-to-ukraine-for-civilian-defense-1d77064c",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "publishedAt": "2026-09-23T13:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
+        },
+        "fr": {
+          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
         }
       }
     },
@@ -2184,44 +2222,6 @@
         "fr": {
           "title": "A compilation of W3C in Japan's 30th anniversary events",
           "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event early Sept…"
-        }
-      }
-    },
-    {
-      "slug": "20260923-harvey-turns-legal-context-into-stronger-drafts-with-gpt-6-astra-f7558dc5",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
-      "publishedAt": "2026-09-23T12:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-          "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
-        },
-        "fr": {
-          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-          "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
-        }
-      }
-    },
-    {
-      "slug": "20260922-postgrescompare-220-released-ffbdcf1e",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgrescompare-220-released-3382/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "PostgresCompare 2.2.0 Released",
-          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
-        },
-        "fr": {
-          "title": "PostgresCompare 2.2.0 Released",
-          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
         }
       }
     },
@@ -2359,6 +2359,25 @@
       }
     },
     {
+      "slug": "20260922-postgrescompare-220-released-ffbdcf1e",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgrescompare-220-released-3382/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
+        },
+        "fr": {
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
+        }
+      }
+    },
+    {
       "slug": "20260925-accelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-6c9acf94",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2374,6 +2393,25 @@
         "fr": {
           "title": "Accelerate multimodal RL training with SkyRL on Amazon SageMaker HyperPod",
           "summary": "Learn how to run SkyRL, an open-source reinforcement learning framework, on Amazon SageMaker HyperPod to post-train a Qwen3-VL-8B vision-language model with GRPO. This walkthrough covers building the container image, launching a…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-sam-altmans-remarks-at-the-united-nations-security-council-01d4e543",
+      "topic": "Security & Standards",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Sam Altman’s remarks at the United Nations Security Council",
+          "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council."
+        },
+        "fr": {
+          "title": "Sam Altman’s remarks at the United Nations Security Council",
+          "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council."
         }
       }
     },
@@ -2488,44 +2526,6 @@
         "fr": {
           "title": "Making digital identity work across the Web: GDC 2026",
           "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a focus on…"
-        }
-      }
-    },
-    {
-      "slug": "20260923-how-invideo-improves-color-grading-3x-with-gpt6-astra-7357353a",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
-      "publishedAt": "2026-09-23T12:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-          "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day."
-        },
-        "fr": {
-          "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-          "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day."
-        }
-      }
-    },
-    {
-      "slug": "20260917-pgadmin-4-v918-released-413bcda5",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:49.442Z",
-      "locales": {
-        "en": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
-        },
-        "fr": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
         }
       }
     },
@@ -2663,6 +2663,25 @@
       }
     },
     {
+      "slug": "20260917-pgadmin-4-v918-released-413bcda5",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-17T21:19:49.442Z",
+      "locales": {
+        "en": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+        },
+        "fr": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+        }
+      }
+    },
+    {
       "slug": "20260925-narrateai-production-ready-llm-quality-assurance-on-amazon-bedro-cf46b237",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2678,6 +2697,25 @@
         "fr": {
           "title": "NarrateAI: production-ready LLM quality assurance on Amazon Bedrock",
           "summary": "NarrateAI delivers production-ready LLM quality assurance on Amazon Bedrock. This post details five techniques—adaptive pipeline orchestration, cross-account multi-model failover, real-time streaming evaluation, composite evaluat…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-harvey-turns-legal-context-into-stronger-drafts-with-gpt-6-astra-f7558dc5",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+          "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
+        },
+        "fr": {
+          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+          "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy."
         }
       }
     },
@@ -2773,44 +2811,6 @@
         "fr": {
           "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
           "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
-        }
-      }
-    },
-    {
-      "slug": "20260923-ringgs-ai-agents-resolve-up-to-65-of-customer-calls-with-openai-7cff1964",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/ringg",
-      "publishedAt": "2026-09-23T12:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
-        },
-        "fr": {
-          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
-        }
-      }
-    },
-    {
-      "slug": "20260916-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
-      "publishedAt": "2026-09-16T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:35.562Z",
-      "locales": {
-        "en": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
-        },
-        "fr": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
         }
       }
     },
@@ -2929,6 +2929,25 @@
       }
     },
     {
+      "slug": "20260916-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:35.562Z",
+      "locales": {
+        "en": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+        },
+        "fr": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+        }
+      }
+    },
+    {
       "slug": "20260925-deploying-real-time-personalized-speech-with-qwen3-tts-on-amazon-f34eefd4",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2944,6 +2963,25 @@
         "fr": {
           "title": "Deploying real-time personalized speech with Qwen3-TTS on Amazon SageMaker AI",
           "summary": "Deploy the publicly available Qwen3-TTS-12Hz-1.7B-Base text-to-speech model from Amazon SageMaker JumpStart to a fully managed, real-time endpoint, and clone a voice from a short reference clip. Cross-lingual cloning preserves th…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-how-invideo-improves-color-grading-3x-with-gpt6-astra-7357353a",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+          "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day."
+        },
+        "fr": {
+          "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+          "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day."
         }
       }
     },
@@ -3039,44 +3077,6 @@
         "fr": {
           "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
           "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
-        }
-      }
-    },
-    {
-      "slug": "20260923-introducing-mentalhealthbench-1d5a9cc2",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/introducing-mentalhealthbench",
-      "publishedAt": "2026-09-23T10:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Introducing MentalHealthBench",
-          "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations."
-        },
-        "fr": {
-          "title": "Introducing MentalHealthBench",
-          "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations."
-        }
-      }
-    },
-    {
-      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
-      "publishedAt": "2026-09-11T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
-        },
-        "fr": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
         }
       }
     },
@@ -3195,6 +3195,25 @@
       }
     },
     {
+      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+        },
+        "fr": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+        }
+      }
+    },
+    {
       "slug": "20260925-how-datacor-built-self-service-rental-analytics-with-amazon-quic-500c1bdb",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3210,6 +3229,25 @@
         "fr": {
           "title": "How Datacor built self-service rental analytics with Amazon Quick Sight",
           "summary": "Learn how Datacor built a self-service rental analytics experience for gas and welding distributors by embedding Amazon Quick Sight dashboards and natural language querying into its TrackAbout platform, powered by an automated cr…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-ringgs-ai-agents-resolve-up-to-65-of-customer-calls-with-openai-7cff1964",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/ringg",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
+        },
+        "fr": {
+          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
         }
       }
     },
@@ -3309,44 +3347,6 @@
       }
     },
     {
-      "slug": "20260923-chatgpt-ads-expands-to-southeast-asia-and-taiwan-1dd9ce12",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
-      "publishedAt": "2026-09-23T02:00:00.000Z",
-      "discoveredAt": "2026-09-24T11:41:43.564Z",
-      "locales": {
-        "en": {
-          "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-          "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries."
-        },
-        "fr": {
-          "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-          "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries."
-        }
-      }
-    },
-    {
-      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
-        },
-        "fr": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
-        }
-      }
-    },
-    {
       "slug": "20260908-beyond-the-benchmark-how-an-adaptive-approach-drives-scientific--c3e4a63e",
       "topic": "AI Performance",
       "source": "Azure AI Blog",
@@ -3442,6 +3442,25 @@
       }
     },
     {
+      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        },
+        "fr": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        }
+      }
+    },
+    {
       "slug": "20260925-multi-region-training-with-amazon-sagemaker-hyperpod-and-qumulo-5d43ff83",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3457,6 +3476,25 @@
         "fr": {
           "title": "Multi-Region training with Amazon SageMaker HyperPod and Qumulo",
           "summary": "Amazon SageMaker HyperPod and Cloud Native Qumulo let you place training compute in one AWS Region while keeping your dataset in another. This post shares the architecture and validation results from a cross-Region training run,…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-introducing-mentalhealthbench-1d5a9cc2",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/introducing-mentalhealthbench",
+      "publishedAt": "2026-09-23T10:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Introducing MentalHealthBench",
+          "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations."
+        },
+        "fr": {
+          "title": "Introducing MentalHealthBench",
+          "summary": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations."
         }
       }
     },
@@ -3556,44 +3594,6 @@
       }
     },
     {
-      "slug": "20260923-airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models-73fafdf6",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/airbnb-gpt-6-astra",
-      "publishedAt": "2026-09-23T01:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
-          "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster."
-        },
-        "fr": {
-          "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
-          "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster."
-        }
-      }
-    },
-    {
-      "slug": "20260910-pgvaulttde-v171-transparent-data-encryption-for-postgresql-17-an-8b0f1977",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
-        },
-        "fr": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
-        }
-      }
-    },
-    {
       "slug": "20260903-enterprise-ai-transformation-relies-on-the-end-to-end-platform-a-ee3a6ee1",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -3670,6 +3670,25 @@
       }
     },
     {
+      "slug": "20260910-pgvaulttde-v171-transparent-data-encryption-for-postgresql-17-an-8b0f1977",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+        },
+        "fr": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+        }
+      }
+    },
+    {
       "slug": "20260924-speaker-labeled-transcription-with-whisperx-on-sagemaker-ai-e655f5f2",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3685,6 +3704,25 @@
         "fr": {
           "title": "Speaker-labeled transcription with WhisperX on SageMaker AI",
           "summary": "The AWS WhisperX Deep Learning Container packages Whisper, wav2vec2 forced alignment, and speaker diarization into a GPU-ready image. Learn how to deploy it to Amazon SageMaker AI real-time and asynchronous endpoints for word-lev…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-chatgpt-ads-expands-to-southeast-asia-and-taiwan-1dd9ce12",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+      "publishedAt": "2026-09-23T02:00:00.000Z",
+      "discoveredAt": "2026-09-24T11:41:43.564Z",
+      "locales": {
+        "en": {
+          "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+          "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries."
+        },
+        "fr": {
+          "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+          "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries."
         }
       }
     },
@@ -3784,44 +3822,6 @@
       }
     },
     {
-      "slug": "20260923-grab-and-openai-bring-practical-ai-skills-to-southeast-asia-09a0c6db",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
-      "publishedAt": "2026-09-23T00:00:00.000Z",
-      "discoveredAt": "2026-09-23T11:31:42.873Z",
-      "locales": {
-        "en": {
-          "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
-          "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia."
-        },
-        "fr": {
-          "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
-          "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia."
-        }
-      }
-    },
-    {
-      "slug": "20260909-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
-        },
-        "fr": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
-        }
-      }
-    },
-    {
       "slug": "20260903-gpt-6-astra-frontier-intelligence-for-work-now-generally-availab-50fd8613",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -3898,6 +3898,25 @@
       }
     },
     {
+      "slug": "20260909-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+        },
+        "fr": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+        }
+      }
+    },
+    {
       "slug": "20260924-build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp-2e76615d",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3913,6 +3932,25 @@
         "fr": {
           "title": "Build a multi-account AI agent with AgentCore Gateway and MCP",
           "summary": "Build a multi-account architecture that keeps each team's data in its own AWS account while giving AI agents a unified way to query across them. A central platform account runs the agent using Amazon Bedrock AgentCore Gateway and…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models-73fafdf6",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/airbnb-gpt-6-astra",
+      "publishedAt": "2026-09-23T01:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+          "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster."
+        },
+        "fr": {
+          "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+          "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster."
         }
       }
     },
@@ -4012,44 +4050,6 @@
       }
     },
     {
-      "slug": "20260922-better-prompt-caching-for-gpt-6-b6b1e411",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-      "publishedAt": "2026-09-22T21:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "Better prompt caching for GPT-6",
-          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
-        },
-        "fr": {
-          "title": "Better prompt caching for GPT-6",
-          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
-        }
-      }
-    },
-    {
-      "slug": "20260909-autobase-211-released-991decc9",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
-        },
-        "fr": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
-        }
-      }
-    },
-    {
       "slug": "20260903-how-microsofts-physical-security-engineering-team-scaled-hybrid--ca0a43f6",
       "topic": "Security & Standards",
       "source": "Azure AI Blog",
@@ -4107,6 +4107,25 @@
       }
     },
     {
+      "slug": "20260909-autobase-211-released-991decc9",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+        },
+        "fr": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+        }
+      }
+    },
+    {
       "slug": "20260924-aderant-builds-intelligent-ticket-triage-with-amazon-nova-cd39d99e",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -4122,6 +4141,25 @@
         "fr": {
           "title": "Aderant builds intelligent ticket triage with Amazon Nova",
           "summary": "Learn how Aderant built an intelligent ticket triage system on Amazon Nova Lite through Amazon Bedrock, automating context gathering, classification, routing, and knowledge enrichment for its cloud operations team."
+        }
+      }
+    },
+    {
+      "slug": "20260923-grab-and-openai-bring-practical-ai-skills-to-southeast-asia-09a0c6db",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
+      "locales": {
+        "en": {
+          "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+          "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia."
+        },
+        "fr": {
+          "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+          "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia."
         }
       }
     },
@@ -4183,21 +4221,21 @@
       }
     },
     {
-      "slug": "20260903-fine-tuning-a-350m-model-for-better-structured-outputs-in-100-gr-45020768",
+      "slug": "20260903-training-a-coding-model-to-paint-watercolours-with-trl-and-opene-b844bdee",
       "topic": "AI Systems",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+      "href": "https://huggingface.co/blog/train-to-paint-with-code",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "discoveredAt": "2026-09-29T12:48:58.498Z",
       "locales": {
         "en": {
-          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
-          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
+          "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+          "summary": "Training a coding model to paint watercolours with TRL and OpenEnv"
         },
         "fr": {
-          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
-          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
+          "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+          "summary": "Training a coding model to paint watercolours with TRL and OpenEnv"
         }
       }
     },
@@ -4217,44 +4255,6 @@
         "fr": {
           "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
           "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
-        }
-      }
-    },
-    {
-      "slug": "20260922-introducing-gpt-6-sol-and-luna-3d48e529",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-      "publishedAt": "2026-09-22T18:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "Introducing GPT-6 Sol and Luna",
-          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
-        },
-        "fr": {
-          "title": "Introducing GPT-6 Sol and Luna",
-          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
-        }
-      }
-    },
-    {
-      "slug": "20260905-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
-      "publishedAt": "2026-09-05T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
-        },
-        "fr": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
         }
       }
     },
@@ -4316,6 +4316,25 @@
       }
     },
     {
+      "slug": "20260905-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
+      "publishedAt": "2026-09-05T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PGConf India 2027 - Dates Announced and CFP Open",
+          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
+        },
+        "fr": {
+          "title": "PGConf India 2027 - Dates Announced and CFP Open",
+          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
+        }
+      }
+    },
+    {
       "slug": "20260923-from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-an-d3e104b6",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -4331,6 +4350,25 @@
         "fr": {
           "title": "From portal-hopping to instant answers: HEMA’s journey with MCP and Amazon Bedrock",
           "summary": "HEMA, a 100-year-old Dutch retailer, turned developer portal-hopping into instant answers by building HAL, an internal AI assistant on Amazon Bedrock AgentCore. Using Model Context Protocol (MCP), HAL delivers governed knowledge…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-better-prompt-caching-for-gpt-6-b6b1e411",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "publishedAt": "2026-09-22T21:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "Better prompt caching for GPT-6",
+          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
+        },
+        "fr": {
+          "title": "Better prompt caching for GPT-6",
+          "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs."
         }
       }
     },
@@ -4392,21 +4430,21 @@
       }
     },
     {
-      "slug": "20260903-give-your-coding-agents-a-memory-you-own-86b47b47",
+      "slug": "20260903-fine-tuning-a-350m-model-for-better-structured-outputs-in-100-gr-45020768",
       "topic": "AI Systems",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/funes",
+      "href": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
       "publishedAt": "2026-09-03T00:00:00.000Z",
       "discoveredAt": "2026-09-12T13:22:21.927Z",
       "locales": {
         "en": {
-          "title": "Give Your Coding Agents a Memory You Own",
-          "summary": "Give Your Coding Agents a Memory You Own"
+          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
         },
         "fr": {
-          "title": "Give Your Coding Agents a Memory You Own",
-          "summary": "Give Your Coding Agents a Memory You Own"
+          "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+          "summary": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps"
         }
       }
     },
@@ -4426,44 +4464,6 @@
         "fr": {
           "title": "Benchmarking LLM Inference at Scale with AIPerf",
           "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
-        }
-      }
-    },
-    {
-      "slug": "20260922-parallel-cut-research-time-and-cost-in-half-with-gpt6-astra-ce45d8dc",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-      "publishedAt": "2026-09-22T12:00:00.000Z",
-      "discoveredAt": "2026-09-23T11:31:42.873Z",
-      "locales": {
-        "en": {
-          "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-          "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models."
-        },
-        "fr": {
-          "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-          "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models."
-        }
-      }
-    },
-    {
-      "slug": "20260825-pgstatviz-12-released-with-postgresql-19-support-and-new-feature-37633005",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_statviz-12-released-with-postgresql-19-support-and-new-features-3369/",
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
-          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
-        },
-        "fr": {
-          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
-          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
         }
       }
     },
@@ -4506,6 +4506,25 @@
       }
     },
     {
+      "slug": "20260825-pgstatviz-12-released-with-postgresql-19-support-and-new-feature-37633005",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_statviz-12-released-with-postgresql-19-support-and-new-features-3369/",
+      "publishedAt": "2026-08-25T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
+          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
+        },
+        "fr": {
+          "title": "pg_statviz 1.2 released with PostgreSQL 19 support and new features",
+          "summary": "Just in time for the PostgreSQL 19 betas, I'm excited to announce release 1.2 of pg_statviz , the minimalist extension and utility pair for time series analysis and visualization of PostgreSQL internal statistics. This release ad…"
+        }
+      }
+    },
+    {
       "slug": "20260923-agentic-conversational-video-intelligence-built-on-aws-03479d38",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -4525,40 +4544,21 @@
       }
     },
     {
-      "slug": "20260901-try-google-pics-easy-image-creation-and-editing-in-google-worksp-77cd2a6a",
+      "slug": "20260922-introducing-gpt-6-sol-and-luna-3d48e529",
       "topic": "AI Systems",
-      "source": "Google AI Blog",
-      "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
-      "publishedAt": "2026-09-01T16:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "publishedAt": "2026-09-22T18:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
-          "summary": "Built on our latest Nano Banana model, Google Pics — our image creation and editing tool — is now available."
+          "title": "Introducing GPT-6 Sol and Luna",
+          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
         },
         "fr": {
-          "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
-          "summary": "Built on our latest Nano Banana model, Google Pics — our image creation and editing tool — is now available."
-        }
-      }
-    },
-    {
-      "slug": "20260902-decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-o-271f803a",
-      "topic": "Computer Science",
-      "source": "GitHub Blog",
-      "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
-      "publishedAt": "2026-09-02T21:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
-          "summary": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations. The post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!…"
-        },
-        "fr": {
-          "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
-          "summary": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations. The post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!…"
+          "title": "Introducing GPT-6 Sol and Luna",
+          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost."
         }
       }
     }
