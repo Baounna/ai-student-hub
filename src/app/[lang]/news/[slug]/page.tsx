@@ -20,6 +20,7 @@ import { jsonLd } from "@/lib/json-ld";
 import { formatReadTime, readMinutes } from "@/lib/read-time";
 import { mainEntityOfPage, organizationAuthorNode, publisherNode } from "@/lib/schema";
 import { siteConfig } from "@/config/site";
+import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -419,8 +420,8 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
               <Link href={`/${locale}/blog`} className="btn-secondary">
                 {dict.news.openBlog}
               </Link>
-              <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide carrière" : "Career guide"}
+              <Link href={getGuideCtaHref(locale)} className="btn-secondary">
+                {getGuideCtaLabel(locale)}
               </Link>
             </div>
           </section>

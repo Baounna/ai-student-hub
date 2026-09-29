@@ -7,6 +7,7 @@ import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
+import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const params = await props.params;
@@ -222,7 +223,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                       {fr ? "Choisir" : "Select"}
                     </a>
                   ) : (
-                    <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary mt-3 inline-flex">
+                    <Link href={getGuideCtaHref(locale)} className="btn-secondary mt-3 inline-flex">
                       {fr ? "Acheter le guide" : "Buy student guide"}
                     </Link>
                   )}
@@ -258,8 +259,8 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                   : "You can support the project via the student guide or by sharing AI and Cybersecurity News."}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
-                <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                  {fr ? "Voir le guide étudiant" : "Open student guide"}
+                <Link href={getGuideCtaHref(locale)} className="btn-primary">
+                  {getGuideCtaLabel(fr ? "fr" : "en")}
                 </Link>
                 <Link href={`/${locale}/resources`} className="btn-secondary">
                   {fr ? "Voir les ressources" : "Open resources"}
@@ -323,7 +324,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
               <Link href={`/${locale}/blog`} className="btn-secondary text-center">
                 {fr ? "Blog" : "Blog"}
               </Link>
-              <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary text-center">
+              <Link href={getGuideCtaHref(locale)} className="btn-primary text-center">
                 {fr ? "Guide étudiant" : "Student guide"}
               </Link>
             </div>

@@ -3,6 +3,7 @@ import type { Locale } from "@/i18n/config";
 import { siteConfig } from "@/config/site";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { getProductCheckoutUrl } from "@/lib/product";
+import { getGuideCtaHref } from "@/lib/product";
 
 type PostArticleCtaProps = {
   locale?: Locale;
@@ -79,7 +80,7 @@ export function PostArticleCta({
             {ctaTertiary}
           </TrackableAnchor>
         ) : (
-          <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
+          <Link href={getGuideCtaHref(locale)} className="btn-secondary">
             {ctaTertiary}
           </Link>
         )}

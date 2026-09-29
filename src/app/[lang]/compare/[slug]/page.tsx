@@ -15,6 +15,7 @@ import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
+import { getGuideCtaHref } from "@/lib/product";
 
 /**
  * Only three of the nine tools had an entry here, so the other six fell through
@@ -330,7 +331,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
             <Link href={`/${locale}/compare`} className="btn-secondary text-center">
               {fr ? "Autres guides outils" : "More tools guides"}
             </Link>
-            <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary text-center">
+            <Link href={getGuideCtaHref(locale)} className="btn-primary text-center">
               {fr ? "Guide étudiant" : "Open student guide"}
             </Link>
           </section>

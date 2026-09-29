@@ -21,6 +21,7 @@ import { matchesAllTerms, searchTerms } from "@/lib/search";
 import { searchableContent } from "@/lib/content-block";
 import { studentStudyTools } from "@/content/posts";
 import { formatReadTime } from "@/lib/read-time";
+import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -199,8 +200,8 @@ export default async function LocalizedBlogPage(
               <Link href={`/${locale}/compare`} className="btn-secondary">
                 {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
               </Link>
-              <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide carrière" : "Career guide"}
+              <Link href={getGuideCtaHref(locale)} className="btn-secondary">
+                {getGuideCtaLabel(locale)}
               </Link>
             </div>
 

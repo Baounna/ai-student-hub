@@ -31,6 +31,7 @@ import { jsonLd } from "@/lib/json-ld";
 import { formatReadTime, readMinutes } from "@/lib/read-time";
 import { ScrollCaptureCtaLazy } from "@/components/scroll-capture-cta-lazy";
 import { authorNode, mainEntityOfPage, publisherNode } from "@/lib/schema";
+import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => posts.map((post) => ({ lang, slug: post.slug })));
@@ -313,8 +314,8 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
               {locale === "fr" ? "Acheter le guide" : "Buy guide"}
             </TrackableAnchor>
           ) : (
-            <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-              {locale === "fr" ? "Voir le guide" : "Open guide"}
+            <Link href={getGuideCtaHref(locale)} className="btn-secondary">
+              {getGuideCtaLabel(locale)}
             </Link>
           )}
         </div>

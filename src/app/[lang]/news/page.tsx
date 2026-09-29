@@ -12,6 +12,7 @@ import { getLiveAiCsUpdates } from "@/lib/live-news";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { formatReadTime } from "@/lib/read-time";
 import { Provenance } from "@/components/provenance";
+import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
 export const revalidate = 1800;
 
@@ -497,8 +498,8 @@ export default async function LocalizedNewsPage(
               <Link href={`/${locale}/compare`} className="btn-primary">
                 {dict.news.openCompare}
               </Link>
-              <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide carrière" : "Career guide"}
+              <Link href={getGuideCtaHref(locale)} className="btn-secondary">
+                {getGuideCtaLabel(locale)}
               </Link>
             </div>
           </div>

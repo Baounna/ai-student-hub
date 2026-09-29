@@ -26,6 +26,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 import { formatReadTime } from "@/lib/read-time";
+import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -140,7 +141,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           {
             title: "3) Passer à l'action",
             body: "Ouvrez la liste des stages ouverts, puis le guide carrière.",
-            href: `/${locale}/product/ai-career-guide`,
+            href: getGuideCtaHref(locale),
             cta: "Lancer l'exécution"
           }
         ]
@@ -160,7 +161,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           {
             title: "3) Execute",
             body: "Move from planning to applying with the open internship list and the career guide.",
-            href: `/${locale}/product/ai-career-guide`,
+            href: getGuideCtaHref(locale),
             cta: "Start execution"
           }
         ];
@@ -190,7 +191,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             body: "Parcours dédié pour stages, portfolio, et exécution avec contraintes budget.",
             links: [
               { href: leadMagnetHref, text: "Stages ouverts", external: true },
-              { href: `/${locale}/product/ai-career-guide`, text: "Guide carrière" },
+              { href: getGuideCtaHref(locale), text: getGuideCtaLabel(locale) },
               { href: `/${locale}/resources`, text: "Guides budget-friendly" }
             ]
           }
@@ -212,7 +213,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             body: "Dedicated path for internships, portfolio outcomes, and budget-aware execution.",
             links: [
               { href: leadMagnetHref, text: "Open internships", external: true },
-              { href: `/${locale}/product/ai-career-guide`, text: "Career guide" },
+              { href: getGuideCtaHref(locale), text: getGuideCtaLabel(locale) },
               { href: `/${locale}/resources`, text: "Budget-friendly guides" }
             ]
           }
@@ -309,8 +310,8 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                 {locale === "fr" ? "Acheter le guide exécution" : "Buy execution guide"}
               </TrackableAnchor>
             ) : (
-              <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Voir le guide carrière" : "Open the career guide"}
+              <Link href={getGuideCtaHref(locale)} className="btn-secondary">
+                {getGuideCtaLabel(locale)}
               </Link>
             )}
           </div>
@@ -720,8 +721,8 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                   {locale === "fr" ? "Acheter le guide" : "Buy the guide"}
                 </TrackableAnchor>
               ) : (
-                <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                  {locale === "fr" ? "Voir le guide carrière" : "Open the career guide"}
+                <Link href={getGuideCtaHref(locale)} className="btn-primary">
+                  {getGuideCtaLabel(locale)}
                 </Link>
               )}
             </div>

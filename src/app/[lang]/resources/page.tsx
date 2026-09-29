@@ -15,6 +15,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 import { jsonLd } from "@/lib/json-ld";
+import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const params = await props.params;
@@ -156,8 +157,8 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
               <Link href={`/${locale}/compare`} className="btn-primary">
                 {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
               </Link>
-              <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide carrière" : "Career guide"}
+              <Link href={getGuideCtaHref(locale)} className="btn-secondary">
+                {getGuideCtaLabel(locale)}
               </Link>
             </div>
           </div>
@@ -310,8 +311,8 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                   {locale === "fr" ? "Acheter le guide" : "Buy student guide"}
                 </TrackableAnchor>
               ) : (
-                <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                  {locale === "fr" ? "Voir le guide" : "Open student guide"}
+                <Link href={getGuideCtaHref(locale)} className="btn-primary">
+                  {getGuideCtaLabel(locale)}
                 </Link>
               )}
             </div>
@@ -405,8 +406,8 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
               <Link href={`/${locale}/compare`} className="btn-primary">
                 {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
               </Link>
-              <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary">
-                {locale === "fr" ? "Guide carrière ($9-$19)" : "Career guide ($9-$19)"}
+              <Link href={getGuideCtaHref(locale)} className="btn-secondary">
+                {getGuideCtaLabel(locale)}
               </Link>
             </div>
           </section>
@@ -448,8 +449,8 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
               <Link href={`/${locale}/compare`} className="btn-secondary text-center">
                 {locale === "fr" ? "Lab outils" : "Tools lab"}
               </Link>
-              <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary text-center">
-                {locale === "fr" ? "Guide carrière" : "Career guide"}
+              <Link href={getGuideCtaHref(locale)} className="btn-primary text-center">
+                {getGuideCtaLabel(locale)}
               </Link>
             </div>
           </div>

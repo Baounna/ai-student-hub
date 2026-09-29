@@ -7,6 +7,7 @@ import { setStoredValue, useStoredValue } from "@/lib/use-stored-value";
 import { siteConfig } from "@/config/site";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
+import { getGuideCtaHref } from "@/lib/product";
 
 type StickyToolsCtaProps = {
   locale: Locale;
@@ -88,7 +89,7 @@ export function StickyToolsCta({ locale, source }: StickyToolsCtaProps) {
                   {locale === "fr" ? "Guide" : "Guide"}
                 </TrackableAnchor>
               ) : (
-                <Link href={`/${locale}/product/ai-career-guide`} className="btn-secondary text-center text-xs">
+                <Link href={getGuideCtaHref(locale)} className="btn-secondary text-center text-xs">
                   {locale === "fr" ? "Guide" : "Guide"}
                 </Link>
               )}

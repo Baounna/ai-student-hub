@@ -16,6 +16,7 @@ import { matchesAllTerms, searchTerms } from "@/lib/search";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 import { jsonLd } from "@/lib/json-ld";
+import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -215,8 +216,8 @@ export default async function LocalizedCompareIndexPage(
               <li>{fr ? "3. Lancer une exécution de 7 jours puis itérer." : "3. Run a 7-day sprint, then iterate."}</li>
             </ul>
             <div className="mt-4 flex flex-wrap gap-2">
-              <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                {fr ? "Guide carrière" : "Career guide"}
+              <Link href={getGuideCtaHref(locale)} className="btn-primary">
+                {getGuideCtaLabel(fr ? "fr" : "en")}
               </Link>
               {defaultTool ? (
                 <TrackableAnchor
@@ -534,8 +535,8 @@ export default async function LocalizedCompareIndexPage(
               <Link href={`/${locale}/resources`} className="btn-secondary">
                 {fr ? "Voir ressources" : "See recommended tools"}
               </Link>
-              <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary">
-                {fr ? "Guide carrière" : "Open the career guide"}
+              <Link href={getGuideCtaHref(locale)} className="btn-primary">
+                {getGuideCtaLabel(fr ? "fr" : "en")}
               </Link>
             </div>
             <AffiliateDisclosureInline locale={locale} className="mt-4 text-xs text-[color:var(--muted)]" />
@@ -572,8 +573,8 @@ export default async function LocalizedCompareIndexPage(
               <Link href={`/${locale}/blog`} className="btn-secondary text-center">
                 {fr ? "Guides blog" : "Blog guides"}
               </Link>
-              <Link href={`/${locale}/product/ai-career-guide`} className="btn-primary text-center">
-                {fr ? "Guide carrière" : "Career guide"}
+              <Link href={getGuideCtaHref(locale)} className="btn-primary text-center">
+                {getGuideCtaLabel(fr ? "fr" : "en")}
               </Link>
             </div>
           </div>

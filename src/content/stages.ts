@@ -23,11 +23,21 @@ export type Stage = {
    */
   deadline?: string;
   /**
+   * When this listing was added here, not when the employer published it --
+   * add-stage.mjs stamps the day it runs. Every current entry reads 2026-09-20
+   * because they were imported in one pass, which looks like a placeholder and
+   * is not one.
+   *
+   * Nothing on the site renders it. scripts/draft-issue.mjs does: it selects
+   * the listings added since the last newsletter and orders them newest first,
+   * so removing this field silently empties the weekly issue.
+   */
+  postedAt?: string;
+  /**
    * YYYY-MM-DD. When the link was last confirmed to be live. For an entry with
    * no closing date this is the only honest freshness signal available.
    */
   checkedAt?: string;
-  postedAt?: string;
   href: string;
   source?: string;
 };
@@ -110,20 +120,65 @@ export function isClosed(stage: Stage, now = Date.now()) {
   return Number.isFinite(end) ? end < now : false;
 }
 
+/**
+ * One employer at a time, so no single one owns the first screen.
+ *
+ * Only four of the eighty-two listings carry a deadline, so the other
+ * seventy-eight fell through every other rule to the alphabetical tiebreak and
+ * came out grouped by employer: four consecutive Armee de l'Air rows inside the
+ * first six, Capgemini's ten together further down. A reader scanning for a
+ * city or a kind of role saw one company repeated instead of the range the list
+ * actually covers, and the Moroccan listings -- nine of eighty-two -- sat
+ * wherever their employer's initial put them.
+ *
+ * Round-robin instead: one role per employer, then the next from each, in a
+ * fixed order. It is deterministic, so the page does not reshuffle between
+ * builds, and it needs no data the listings do not already have. postedAt would
+ * have been the natural key, but it records when a listing was added here and
+ * all eighty-two were imported on one day, so it separates nothing yet.
+ */
+function oneEmployerAtATime(items: Stage[]) {
+  const byCompany = new Map<string, Stage[]>();
+  for (const item of items) {
+    const bucket = byCompany.get(item.company);
+    if (bucket) bucket.push(item);
+    else byCompany.set(item.company, [item]);
+  }
+
+  const queues = [...byCompany.keys()].sort((a, b) => a.localeCompare(b)).map((key) => byCompany.get(key)!);
+  const out: Stage[] = [];
+  for (let round = 0; out.length < items.length; round += 1) {
+    for (const queue of queues) {
+      if (round < queue.length) out.push(queue[round]);
+    }
+  }
+
+  return out;
+}
+
 export function getStages(now = Date.now()) {
-  return [...payload.items].sort((a, b) => {
+  const sorted = [...payload.items].sort((a, b) => {
     const aClosed = isClosed(a, now);
     const bClosed = isClosed(b, now);
     // Open first, then soonest deadline — the order someone applying needs.
     if (aClosed !== bClosed) return aClosed ? 1 : -1;
     // Among open entries, a stated cutoff is the urgent one, so dated entries
-    // come first and rolling ones follow in a stable alphabetical order.
+    // come first and rolling ones follow.
     const aDated = Boolean(a.deadline);
     const bDated = Boolean(b.deadline);
     if (aDated !== bDated) return aDated ? -1 : 1;
     if (a.deadline && b.deadline) return a.deadline.localeCompare(b.deadline);
     return a.company.localeCompare(b.company) || a.role.localeCompare(b.role);
   });
+
+  // Only the open, undated middle is rearranged. Dated entries are already in
+  // deadline order, which is the one thing more urgent than variety, and closed
+  // entries stay at the bottom where they belong.
+  const dated = sorted.filter((s) => !isClosed(s, now) && s.deadline);
+  const rolling = sorted.filter((s) => !isClosed(s, now) && !s.deadline);
+  const closed = sorted.filter((s) => isClosed(s, now));
+
+  return [...dated, ...oneEmployerAtATime(rolling), ...closed];
 }
 
 export function getOpenStages(now = Date.now()) {

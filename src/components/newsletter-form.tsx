@@ -4,6 +4,7 @@ import { useId, useState } from "react";
 import type { Locale } from "@/i18n/config";
 import { trackEvent } from "@/lib/track";
 import { TurnstileWidget } from "@/components/ui/turnstile-widget";
+import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
 type NewsletterFormProps = {
   compact?: boolean;
@@ -20,10 +21,10 @@ function normalizeSource(source: string | undefined, compact: boolean) {
 
 function getNextAction(source: string, locale: Locale) {
   if (source.includes("product")) {
-    return {
-      href: `/${locale}/product/ai-career-guide`,
-      label: locale === "fr" ? "Voir le guide carrière" : "Open the career guide"
-    };
+    // Subscribing on the product page used to send the reader back to the
+    // product page -- and that page says the guide does not exist, so the
+    // next action after signing up was to revisit the thing that has nothing.
+    return { href: getGuideCtaHref(locale), label: getGuideCtaLabel(locale) };
   }
 
   if (source.includes("blog") || source.includes("post")) {
