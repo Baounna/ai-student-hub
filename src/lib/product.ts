@@ -44,7 +44,16 @@ export function canSellProduct() {
  * not twenty-eight edits.
  */
 export function getGuideCtaHref(locale: string) {
-  return GUIDE_EXISTS ? `/${locale}/product/ai-career-guide` : `/${locale}/stages`;
+  // Not /stages. Sending these there was the quick fix, and it produced a hero
+  // with "See open internships" twice in one row -- the same label and the same
+  // href either side of "Open tools lab" -- because the page already had that
+  // button. The same doubling appeared on /resources. A reader reads that as a
+  // mistake, which it was.
+  //
+  // The career track is the honest substitute: it is what someone clicking
+  // "career guide" is looking for, it holds two real articles, and it is not
+  // already linked from the same row.
+  return GUIDE_EXISTS ? `/${locale}/product/ai-career-guide` : `/${locale}/blog?track=career`;
 }
 
 /**
@@ -62,5 +71,5 @@ export function getGuideCtaLabel(locale: string) {
   if (GUIDE_EXISTS) {
     return locale === "fr" ? "Voir le guide carrière" : "Open the career guide";
   }
-  return locale === "fr" ? "Voir les stages ouverts" : "See open internships";
+  return locale === "fr" ? "Lire les guides carrière" : "Read the career guides";
 }

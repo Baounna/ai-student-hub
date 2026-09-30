@@ -145,15 +145,28 @@ function oneEmployerAtATime(items: Stage[]) {
     else byCompany.set(item.company, [item]);
   }
 
-  const queues = [...byCompany.keys()].sort((a, b) => a.localeCompare(b)).map((key) => byCompany.get(key)!);
-  const out: Stage[] = [];
-  for (let round = 0; out.length < items.length; round += 1) {
-    for (const queue of queues) {
-      if (round < queue.length) out.push(queue[round]);
-    }
-  }
+  // Spread each employer evenly across the whole list, rather than dealing one
+  // card per employer per round.
+  //
+  // Round-robin spreads the opening rows well and strands the tail: employers
+  // with a single posting drop out after round one, so once only the biggest is
+  // left its remainder lands consecutively. Capgemini has 10 of the 81 and the
+  // next deepest has 6, so the last four rows were Capgemini four times -- the
+  // clustering this exists to prevent, moved to the bottom rather than removed.
+  // Ordering the queues by depth first does not help, because the arithmetic is
+  // the same.
+  //
+  // Giving each posting a fractional position within its own employer's run and
+  // sorting on that interleaves every employer across the full length at once.
+  // An employer with ten postings lands one every eighth row; one with a single
+  // posting lands in the middle of the list rather than at the front of it.
+  const spread = [...byCompany.entries()].flatMap(([company, list]) =>
+    list.map((stage, index) => ({ stage, company, at: (index + 0.5) / list.length }))
+  );
 
-  return out;
+  return spread
+    .sort((a, b) => a.at - b.at || a.company.localeCompare(b.company))
+    .map((entry) => entry.stage);
 }
 
 export function getStages(now = Date.now()) {

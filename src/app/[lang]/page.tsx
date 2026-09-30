@@ -169,6 +169,14 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
   // Dated entries first (getOpenStages already orders them that way), so the
   // five shown are the ones with a real cutoff rather than an arbitrary slice.
   const openStages = getOpenStages();
+  // The homepage printed the raw ISO string -- "by 2026-10-28" -- while /stages
+  // rendered the same field as "28 October 2026". The machine format was on the
+  // page most readers land on first.
+  const homeDateFmt = new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  });
   const openStagesCount = openStages.length;
   const featuredStages = openStages.slice(0, 5);
 
@@ -348,8 +356,8 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             </h2>
             <span className="text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? `${openStagesCount} offres au Maroc et en France, verifiees une par une`
-                : `${openStagesCount} openings in Morocco and France, each link checked by hand`}
+                ? `${openStagesCount} offres en France et au Maroc, chaque lien vérifié`
+                : `${openStagesCount} openings in France and Morocco, every link checked`}
             </span>
           </div>
           <ul className="divide-y divide-[color:var(--border)]">
@@ -377,7 +385,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                 {stage.deadline ? (
                   <span className="text-xs font-semibold text-[color:var(--signal)]">
                     {locale === "fr" ? "avant le " : "by "}
-                    {stage.deadline}
+                    {homeDateFmt.format(new Date(`${stage.deadline}T12:00:00Z`))}
                   </span>
                 ) : null}
               </li>

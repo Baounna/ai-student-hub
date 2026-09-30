@@ -28,9 +28,26 @@ describe("internship ordering", () => {
 
   it("does not let one employer own the opening rows", () => {
     const companies = stages.slice(0, 12).map((s) => s.company);
+    const worst = Math.max(...[...new Set(companies)].map((c) => companies.filter((x) => x === c).length));
 
-    // The failure looked like four identical names in a row.
-    expect(new Set(companies).size).toBe(companies.length);
+    // Not "all twelve distinct": the largest employer holds 10 of the 81
+    // listings, so appearing twice in twelve rows is its share and demanding
+    // fewer would be demanding it appear less often than it exists. What the
+    // failure actually looked like was one name repeated back to back.
+    expect(worst).toBeLessThanOrEqual(2);
+    expect(new Set(companies).size).toBeGreaterThanOrEqual(9);
+  });
+
+  it("never puts the same employer in two consecutive rows", () => {
+    // Round-robin fixed the opening rows and stranded the tail: Capgemini has
+    // 10 of the 81 listings and the next deepest employer has 6, so once the
+    // others ran out its remainder landed consecutively -- the last four rows
+    // were the same employer. Spreading each employer across the full length
+    // instead removes it everywhere, not just at the top.
+    const companies = stages.map((s) => s.company);
+    const repeats = companies.filter((c, i) => i > 0 && c === companies[i - 1]);
+
+    expect(repeats).toEqual([]);
   });
 
   it("shows a range of cities early, not one employer's offices", () => {
