@@ -1,0 +1,110 @@
+name: Internship Link Check
+
+# The page says "checked and updated weekly". Until now nothing made that true.
+#
+# scripts/check-stages.mjs existed and was good, but it ran only when somebody
+# remembered to type `npm run check:stages`. On 2026-09-30 an audit found the
+# FIRST listing on the page was dead -- it redirected to "Offre d'emploi
+# indisponible" while the page advertised "Apply by 7 October" -- and the
+# checker caught it immediately when finally run. A student could have applied
+# to it. A promise that depends on someone remembering is not a promise.
+#
+# Two things run here, and the split matters. Re-stamping checkedAt on listings
+# that verified is safe and automatic. Removing a listing is NOT: the script
+# refuses to delete, because a 403 is a fact about us rather than about the job,
+# and the only way to tell the difference is for a person to look. So a suspect
+# listing opens an issue and waits.
+
+on:
+  schedule:
+    # Mondays, early. Ahead of the weekly content agents so the list a reader
+    # sees on Monday has been checked that morning, not the previous week.
+    - cron: "30 5 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: ai-student-hub-check-stages
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+env:
+  SITE_URL: https://ci.invalid
+  NEXT_PUBLIC_SITE_URL: https://ci.invalid
+  NEXT_PUBLIC_CONTACT_EMAIL: ci@ci.invalid
+  NEXT_PUBLIC_LEGAL_NAME: CI Build
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "24"
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      # --write re-stamps checkedAt on everything that verified and leaves the
+      # suspect ones alone, so the page's "last checked" date becomes true
+      # without anything being deleted unattended.
+      - name: Check every listing and re-stamp what passed
+        id: check
+        run: |
+          set -o pipefail
+          node scripts/check-stages.mjs --write 2>&1 | tee "$RUNNER_TEMP/stages.log"
+          {
+            echo "summary<<EOF"
+            grep -E "still open .* need a human .* look gone" "$RUNNER_TEMP/stages.log" || echo "no summary line"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+          if grep -qE "^  Probably gone|needs a human" "$RUNNER_TEMP/stages.log"; then
+            echo "needs_review=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Verify the site still builds with the re-stamped data
+        run: |
+          npm run typecheck
+          npm test
+          npm run build
+
+      - name: Commit the re-stamp
+        run: |
+          if git diff --quiet -- src/content/stages.json; then
+            echo "No listing changed state."
+            exit 0
+          fi
+          git config user.name "AI Student Hub Bot"
+          git config user.email "ai-student-hub-bot@users.noreply.github.com"
+          git add src/content/stages.json
+          git commit -m "chore(stages): weekly link check
+
+          Every listing fetched and its page read, not just pinged. checkedAt
+          re-stamped on the ones that verified; anything suspect is left in
+          place for a person to judge, because a refusal to serve us is a fact
+          about us and not about the job."
+          git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+          git push
+
+      # A single issue, reopened and updated rather than a new one each week --
+      # the same reason the watchdog works that way. A stream of alerts is how
+      # the last outage stayed invisible for eighty days.
+      - name: Open or update the review issue
+        if: steps.check.outputs.needs_review == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="Internship listings need a human look"
+          BODY=$(printf 'The weekly check found listings it will not remove on its own.\n\n```\n%s\n```\n\nOpen each link. If the posting is genuinely gone, delete its entry from `src/content/stages.json`. If the employer simply refused to serve us, leave it: that is a fact about us, not about the job.\n\nRun: `%s`\n' "$(tail -n 25 "$RUNNER_TEMP/stages.log")" "npm run check:stages")
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
+          fi

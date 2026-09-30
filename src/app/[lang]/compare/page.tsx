@@ -336,8 +336,8 @@ export default async function LocalizedCompareIndexPage(
                   defaultValue={toolQueryRaw}
                   placeholder={
                     fr
-                      ? "Rechercher NotebookLM, Antigravity, Anki, Quizlet..."
-                      : "Search NotebookLM, Antigravity, Anki, Quizlet..."
+                      ? "Rechercher NotebookLM, Anki, Notion, Quizlet..."
+                      : "Search NotebookLM, Anki, Notion, Quizlet..."
                   }
                   className="search-input w-full"
                 />
@@ -396,8 +396,8 @@ export default async function LocalizedCompareIndexPage(
             ) : (
               <div className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 text-sm text-[color:var(--text)]">
                 {fr
-                  ? "Aucun outil ne correspond à votre recherche. Essayez NotebookLM, Antigravity, Anki, Notion, ou Quizlet."
-                  : "No tools match your search. Try NotebookLM, Antigravity, Anki, Notion, or Quizlet."}
+                  ? "Aucun outil ne correspond à votre recherche. Essayez NotebookLM, Anki, Notion, ou Quizlet."
+                  : "No tools match your search. Try NotebookLM, Anki, Notion, or Quizlet."}
               </div>
             )}
           </section>

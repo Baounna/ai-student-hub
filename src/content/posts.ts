@@ -176,9 +176,25 @@ function placementLabel(placement: string): Record<Locale, string> {
   return { en: normalized, fr: normalized };
 }
 
+/**
+ * Named for the vendor, because the reader is going to the vendor.
+ *
+ * These were "Cloud Deploy Stack", "CS + ML Learning Platform" and "Dev
+ * Workflow Workspace" -- invented product names that told a reader nothing
+ * about where a click would land. The third was the clearest problem: it
+ * described "engineering sprints, API specs, architecture notes" and pointed
+ * at grammarly.com/affiliates, which is neither a workspace nor a product
+ * page. It is where Grammarly recruits affiliates -- "Become an affiliate
+ * today and earn a commission" -- on a site whose disclosure says it earns
+ * nothing from these links.
+ *
+ * A recommendation a reader cannot evaluate before clicking is not a
+ * recommendation. Each card now says which tool it is and what that tool
+ * actually does, and links to the product rather than a signup funnel.
+ */
 const fallbackRecommendedTools: RecommendedTool[] = [
   {
-    name: "Cloud Deploy Stack",
+    name: "DigitalOcean",
     icon: "/images/tool-cloud.svg",
     category: { en: "Cloud/DevOps", fr: "Cloud/DevOps" },
     summary: {
@@ -192,7 +208,7 @@ const fallbackRecommendedTools: RecommendedTool[] = [
     affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=resources&utm_campaign=hosting")
   },
   {
-    name: "CS + ML Learning Platform",
+    name: "Coursera",
     icon: "/images/tool-course.svg",
     category: { en: "Career/Interviews", fr: "Carrière/Entretiens" },
     summary: {
@@ -207,19 +223,19 @@ const fallbackRecommendedTools: RecommendedTool[] = [
       "https://www.coursera.org/?utm_source=ai_student_hub&utm_medium=resources&utm_campaign=courses"
   },
   {
-    name: "Dev Workflow Workspace",
+    name: "Grammarly",
     icon: "/images/tool-productivity.svg",
     category: { en: "Systems & Backend", fr: "Systèmes & Backend" },
     summary: {
-      en: "Run engineering sprints, API specs, architecture notes, and internship prep in one workspace.",
-      fr: "Gère sprints d'ingénierie, specs API, notes d'architecture, et préparation stage en un seul espace."
+      en: "Catches grammar and clarity problems in English writing: reports, documentation, applications.",
+      fr: "Corrige grammaire et clarté en anglais : rapports, documentation et candidatures."
     },
     benefit: {
-      en: "Best for consistent execution across AI and CS project tracks.",
-      fr: "Idéal pour une exécution régulière sur projets IA et informatique."
+      en: "Useful when you write technical English as a second language.",
+      fr: "Utile quand on rédige en anglais technique sans être anglophone."
     },
     affiliateHref:
-      "https://www.grammarly.com/affiliates?utm_source=ai_student_hub&utm_medium=resources&utm_campaign=productivity"
+      "https://www.grammarly.com/?utm_source=ai_student_hub&utm_medium=resources&utm_campaign=writing"
   }
 ];
 
@@ -257,11 +273,6 @@ const envRecommendedTools: RecommendedTool[] = envAffiliates.map((item, index) =
 export const recommendedTools: RecommendedTool[] =
   envRecommendedTools.length >= 3 ? envRecommendedTools : fallbackRecommendedTools;
 
-const antigravityUrlRaw = (process.env.NEXT_PUBLIC_ANTIGRAVITY_URL || "https://www.antigravity.ai/").trim();
-const antigravityUrl = isSafeHttpUrl(antigravityUrlRaw)
-  ? normalizeHttpUrl(antigravityUrlRaw)
-  : "https://www.antigravity.ai/";
-
 const fallbackStudentStudyTools: StudentStudyTool[] = [
   {
     name: "NotebookLM",
@@ -278,22 +289,6 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     keywords: ["notes", "pdf", "summary", "revision", "research"],
     href: "https://notebooklm.google/",
     source: "Google"
-  },
-  {
-    name: "Antigravity",
-    icon: "https://www.google.com/s2/favicons?domain=antigravity.ai&sz=256",
-    category: { en: "Learning Workflow", fr: "Workflow d'apprentissage" },
-    summary: {
-      en: "Structured learning flows to keep study sessions focused and execution-oriented.",
-      fr: "Flux d'apprentissage structurés pour garder des sessions de travail focalisées et actionnables."
-    },
-    bestFor: {
-      en: "Planning study blocks and keeping momentum between classes and projects.",
-      fr: "Planifier les blocs d'étude et garder la cadence entre cours et projets."
-    },
-    keywords: ["planning", "workflow", "focus", "productivity"],
-    href: antigravityUrl,
-    source: "Antigravity"
   },
   {
     name: "Perplexity",
