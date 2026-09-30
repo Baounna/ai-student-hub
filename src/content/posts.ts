@@ -1322,6 +1322,10 @@ const basePosts: BlogPost[] = [
     title: "How to Build an AI Portfolio Project Recruiters Actually Notice",
     excerpt: "A practical framework to scope, ship, and present one AI project that creates measurable internship signal.",
     category: "Career/Interviews",
+    // Declared, not inferred. The blog renders a Career filter chip whose
+    // contents came only from the category fallback, so the site advertised a
+    // third track that no article actually claimed.
+    track: "career",
     tags: ["portfolio", "internships", "project-based-learning"],
     cluster: "AI Portfolio Projects",
     publishedAt: "2026-02-18",
@@ -1506,6 +1510,10 @@ const basePosts: BlogPost[] = [
     title: "Student AI Internship Roadmap: From Zero Signal to Interview-Ready in 90 Days",
     excerpt: "A 90-day execution plan to build authority, improve applications, and create interview conversion.",
     category: "Career/Interviews",
+    // Declared, not inferred. The blog renders a Career filter chip whose
+    // contents came only from the category fallback, so the site advertised a
+    // third track that no article actually claimed.
+    track: "career",
     tags: ["internship", "career", "authority-building"],
     cluster: "Career & Internship Prep",
     publishedAt: "2026-02-14",
