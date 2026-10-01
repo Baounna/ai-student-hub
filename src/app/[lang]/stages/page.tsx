@@ -6,6 +6,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { jsonLd } from "@/lib/json-ld";
+import { formatDuration, formatLevel } from "@/lib/stage-format";
 import { ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { siteConfig } from "@/config/site";
@@ -385,6 +386,12 @@ export default async function StagesPage(props: {
         <ul className="mt-6 space-y-3">
           {filtered.map((stage) => {
             const closed = isClosed(stage);
+            // Listings arrive in whatever language the employer posted in, so
+            // half the board showed "3 MOIS MINIMUM" and "BAC+3" beside a
+            // translated "UNITED KINGDOM". Formatting at render time fixes the
+            // rows that exist and every row added later.
+            const durationText = formatDuration(stage.duration, locale);
+            const levelText = formatLevel(stage.level, locale);
             return (
               <li
                 key={stage.id}
@@ -403,8 +410,8 @@ export default async function StagesPage(props: {
                 <p className="provenance mt-2">
                   {kindLabel(stage.kind, locale)} · {stage.city}, {countryLabel(stage.country, locale)}
                   {stage.remote ? ` · ${remoteLabel(stage.remote, locale)}` : ""}
-                  {stage.duration ? ` · ${stage.duration}` : ""}
-                  {stage.level ? ` · ${stage.level}` : ""}
+                  {durationText ? ` · ${durationText}` : ""}
+                  {levelText ? ` · ${levelText}` : ""}
                 </p>
 
                 <div className="mt-3 flex flex-wrap items-center gap-3">
