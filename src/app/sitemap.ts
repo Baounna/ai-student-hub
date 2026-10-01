@@ -73,14 +73,21 @@ function newestPostIn(match: (post: (typeof posts)[number]) => boolean): string 
  * costs a re-crawl; the build clock overstated every page every day and cost
  * the file its credibility, which is the more expensive of the two.
  */
-const EDITORIAL_PAGES_UPDATED_AT = "2026-09-20T16:32:30.000Z";
+// Moved: /donate lost its "100% student education" chip and /about had its
+// "What you will find here" lines rewritten (3d76dbd, 26255c8), read off
+// `git log -1 -- "src/app/[lang]/donate/page.tsx"`.
+const EDITORIAL_PAGES_UPDATED_AT = "2026-10-01T21:38:18.000Z";
 
 /**
  * The comparison tables are a const array in src/content/posts.ts with no date
  * field of its own. This is when that array last changed (9f570db). Same rule:
  * edit the tables, move the date.
  */
-const COMPARISONS_UPDATED_AT = "2026-06-24T13:08:02.000Z";
+// Moved: the verdict copy on every comparison page changed when the invented
+// 40/35/25 weighting came out (3d76dbd). The comment above tracked only the
+// array, which is why a copy rewrite on these routes could go unrecorded; the
+// date covers whichever of the two changed last.
+const COMPARISONS_UPDATED_AT = "2026-10-01T21:38:18.000Z";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const newestPostAt = newestOf(posts.map((post) => post.publishedAt));
