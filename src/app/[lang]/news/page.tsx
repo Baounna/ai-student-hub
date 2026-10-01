@@ -340,7 +340,7 @@ export default async function LocalizedNewsPage(
               <Link
                 key={option.key}
                 href={buildNewsFilterHref(option.key)}
-                className={`rounded-full border px-3 py-1 text-xs ${
+                className={`tap-target rounded-full border px-3 py-1 text-xs ${
                   isActive
                     ? "border-[color:var(--primary)] bg-[color:var(--bg-soft)]/60 text-[color:var(--text-strong)]"
                     : "border-[color:var(--border)] bg-[color:var(--surface)] text-[color:var(--text)]"
@@ -358,7 +358,7 @@ export default async function LocalizedNewsPage(
         <div className="mt-3 flex flex-wrap gap-2">
           <Link
             href={buildNewsFilterHref(trackFilter, "")}
-            className={`rounded-full border px-3 py-1 text-xs ${
+            className={`tap-target rounded-full border px-3 py-1 text-xs ${
               !topicFilter
                 ? "border-[color:var(--primary)] bg-[color:var(--bg-soft)]/60 text-[color:var(--text-strong)]"
                 : "border-[color:var(--border)] bg-[color:var(--surface)] text-[color:var(--text)]"
@@ -374,7 +374,7 @@ export default async function LocalizedNewsPage(
               <Link
                 key={topic}
                 href={buildNewsFilterHref(trackFilter, slug)}
-                className={`rounded-full border px-3 py-1 text-xs ${
+                className={`tap-target rounded-full border px-3 py-1 text-xs ${
                   active
                     ? "border-[color:var(--primary)] bg-[color:var(--bg-soft)]/60 text-[color:var(--text-strong)]"
                     : "border-[color:var(--border)] bg-[color:var(--surface)] text-[color:var(--text)]"

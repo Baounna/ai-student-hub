@@ -66,10 +66,12 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
     "rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-3.5 py-2 text-[color:var(--text-strong)] shadow-sm";
   const desktopNavInactive =
     "rounded-xl border border-transparent px-3.5 py-2 text-[color:var(--muted)] hover:border-[color:var(--border)] hover:bg-[color:var(--surface)]/65 hover:text-[color:var(--text-strong)]";
+  // tap-target: the tab strip measured 34px tall, on the nav a phone reader
+  // uses most.
   const mobileNavActive =
-    "rounded-xl border border-[color:var(--primary)]/35 bg-[color:var(--surface)] px-3 py-2 text-xs font-semibold whitespace-nowrap text-[color:var(--text-strong)] shadow-sm";
+    "tap-target rounded-xl border border-[color:var(--primary)]/35 bg-[color:var(--surface)] px-3 py-2 text-xs font-semibold whitespace-nowrap text-[color:var(--text-strong)] shadow-sm";
   const mobileNavInactive =
-    "rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)]/55 px-3 py-2 text-xs whitespace-nowrap text-[color:var(--text)]";
+    "tap-target rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)]/55 px-3 py-2 text-xs whitespace-nowrap text-[color:var(--text)]";
 
   return (
     <>
@@ -266,7 +268,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
               <Link
                 href={otherLocaleHref}
                 hrefLang={otherLocale}
-                className="rounded-lg border border-[color:var(--border)] px-2.5 py-1 text-xs font-semibold text-[color:var(--text)]"
+                className="tap-target rounded-lg border border-[color:var(--border)] px-2.5 py-1 text-xs font-semibold text-[color:var(--text)]"
                 aria-label={locale === "fr" ? "Read in English" : "Lire en français"}
               >
                 {otherLocale.toUpperCase()}

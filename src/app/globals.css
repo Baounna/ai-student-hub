@@ -329,7 +329,9 @@ html[data-content-width="wide"] {
   }
 
   .utility-link {
-    @apply inline-flex items-center rounded-lg px-3 py-1.5 text-xs font-medium;
+    /* min-h-11: these measured 26px to 37px tall on a phone -- the language
+       toggle, Donate, and the header's other small links. */
+    @apply inline-flex min-h-11 items-center rounded-lg px-3 py-1.5 text-xs font-medium;
     color: var(--text);
     border: 1px solid transparent;
   }
@@ -343,7 +345,7 @@ html[data-content-width="wide"] {
   }
 
   .utility-link-primary {
-    @apply inline-flex items-center rounded-lg px-3 py-1.5 text-xs font-semibold;
+    @apply inline-flex min-h-11 items-center rounded-lg px-3 py-1.5 text-xs font-semibold;
     color: var(--wiki-link);
     border: 1px solid color-mix(in srgb, var(--wiki-link), transparent 75%);
     background: color-mix(in srgb, var(--wiki-link), transparent 92%);
@@ -912,11 +914,33 @@ html[data-content-width="wide"] {
     border-radius: 0.9rem;
   }
 
+  /* This set phone buttons to --control-height-sm, 2.4rem / 38.4px, against
+     2.75rem / 44px on desktop -- a deliberate downgrade of 490 controls in the
+     one place a finger is doing the pointing instead of a cursor. Measured at
+     390px before and after. The height is the same everywhere now; keeping the
+     block documents that the small value was a choice someone made, not a
+     default. */
   .btn-primary,
   .btn-secondary,
   .btn-ghost,
   .btn-danger {
-    min-height: var(--control-height-sm);
+    min-height: var(--control-height-md);
+  }
+
+  /* A focused control must not land under the floating quick-nav.
+     Tab scrolls a control to just inside the bottom of the viewport, which is
+     exactly where that bar sits, so 7 of the 115 tab stops on the home page
+     were completely covered -- focus visible nowhere, WCAG 2.4.11. The
+     body's padding-bottom only reserves room at the end of the document, which
+     is a different problem. */
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  summary,
+  [tabindex]:not([tabindex="-1"]) {
+    scroll-margin-bottom: 6.5rem;
   }
 
   .reading-prose p {
@@ -970,7 +994,11 @@ html[data-content-width="wide"] {
     align-items: center;
     gap: 0.5rem 0.65rem;
     font-family: var(--font-mono), ui-monospace, monospace;
-    font-size: 0.66rem;
+    /* Was 0.66rem: 10.56px of uppercase monospace with letter-spacing, and the
+       smallest text on the site. It carries the freshness stamp, the country
+       breakdown and every listing's location and duration -- the trust signals,
+       in other words, set smaller than anything else on the page. */
+    font-size: 0.75rem;
     letter-spacing: 0.05em;
     line-height: 1.5;
     text-transform: uppercase;
@@ -1031,4 +1059,74 @@ html[data-sticky-cta="1"] .back-to-top {
     opacity: 1;
     pointer-events: auto;
   }
+}
+
+/*
+ * A 44px touch target for controls that are styled small on purpose.
+ *
+ * Filter chips measured 19.9px to 26px tall at 390px -- below even the 24px
+ * WCAG 2.5.8 minimum, on rows of up to 396 of them. The visible pill keeps its
+ * size; this grows the area a thumb has to hit.
+ */
+.tap-target {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+}
+
+/*
+ * Only the chips you can press. A .blog-chip <span> is a label -- a category
+ * name, a read time -- and growing those would add height for nothing. The ones
+ * rendered as a link or a button are filters and tags a thumb has to hit.
+ */
+a.blog-chip,
+button.blog-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+/*
+ * Standalone links are controls, and need a control's hit area.
+ *
+ * WCAG 2.5.8 exempts a link inside a sentence, because its height is set by the
+ * line box around it. These are not that: "Read brief", "Official source",
+ * "Open this guide", and every link in the footer, each sitting on its own line
+ * as the only thing in its container, and each measuring 16px to 21px tall at
+ * 390px -- under the 24px minimum, on a phone. Twelve of them are the footer
+ * nav, present on all 245 pages.
+ *
+ * Keyed on the display utility rather than added at ~60 call sites: a link
+ * Tailwind has made inline-block, block or inline-flex has been taken out of the
+ * text flow deliberately, which is exactly the distinction the exemption draws.
+ */
+a.do-link.inline-block,
+a.do-link.block,
+a.do-link.inline-flex,
+footer a.transition,
+a.inline-flex.items-center.text-sm.font-semibold {
+  min-height: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+/*
+ * A link that is the whole of its heading, list item or wrapper is the control
+ * for that card, and these measured 14px to 21px tall at 390px: every article
+ * title on /news, every listing title in the home page's internship panel,
+ * "See all 109 openings", "Full article", "Official release", and the footer's
+ * "Links / Privacy" row.
+ *
+ * padding-block rather than min-height, because several of these titles sit
+ * inside a line-clamp and turning the link into a flex box breaks the clamp.
+ * Padding still counts toward the hit area a thumb gets, which is the point.
+ */
+h1 > a:only-child,
+h2 > a:only-child,
+h3 > a:only-child,
+h4 > a:only-child,
+li > a.do-link:only-child,
+div > a.do-link:only-child {
+  padding-block: 0.35rem;
 }

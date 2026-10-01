@@ -317,7 +317,7 @@ export default async function StagesPage(props: {
             <Link
               href={filterHref({ country: "" })}
               aria-current={countryFilter ? undefined : "true"}
-              className={`rounded-full border px-3 py-1 text-xs transition ${
+              className={`tap-target rounded-full border px-3 py-1 text-xs transition ${
                 countryFilter
                   ? "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
                   : "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
@@ -330,7 +330,7 @@ export default async function StagesPage(props: {
                 key={code}
                 href={filterHref({ country: code })}
                 aria-current={countryFilter === code ? "true" : undefined}
-                className={`rounded-full border px-3 py-1 text-xs transition ${
+                className={`tap-target rounded-full border px-3 py-1 text-xs transition ${
                   countryFilter === code
                     ? "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
                     : "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
@@ -345,7 +345,7 @@ export default async function StagesPage(props: {
             <Link
               href={filterHref({ kind: "" })}
               aria-current={kindFilter ? undefined : "true"}
-              className={`rounded-full border px-3 py-1 text-xs transition ${
+              className={`tap-target rounded-full border px-3 py-1 text-xs transition ${
                 kindFilter
                   ? "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
                   : "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
@@ -358,7 +358,7 @@ export default async function StagesPage(props: {
                 key={kind}
                 href={filterHref({ kind })}
                 aria-current={kindFilter === kind ? "true" : undefined}
-                className={`rounded-full border px-3 py-1 text-xs transition ${
+                className={`tap-target rounded-full border px-3 py-1 text-xs transition ${
                   kindFilter === kind
                     ? "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
                     : "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
@@ -371,7 +371,7 @@ export default async function StagesPage(props: {
           {isFiltered ? (
             <p className="provenance">
               {copy.filterShowing(filtered.length, stages.length)} ·{" "}
-              <Link href={`/${locale}/stages`} className="do-link">
+              <Link href={`/${locale}/stages`} className="do-link py-1.5">
                 {copy.filterClear}
               </Link>
             </p>
@@ -386,7 +386,7 @@ export default async function StagesPage(props: {
       ) : filtered.length === 0 ? (
         <p className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6 text-[color:var(--text)]">
           {copy.filterNone(stages.length)}{" "}
-          <Link href={`/${locale}/stages`} className="do-link">
+          <Link href={`/${locale}/stages`} className="do-link py-1.5">
             {copy.filterClear}
           </Link>
         </p>
@@ -471,7 +471,7 @@ export default async function StagesPage(props: {
       </div>
 
       <p className="mt-6 text-sm text-[color:var(--muted)]">
-        <Link href={`/${locale}/blog`} className="do-link">
+        <Link href={`/${locale}/blog`} className="do-link py-1.5">
           {locale === "fr" ? "Lire les articles" : "Read the articles"}
         </Link>
       </p>

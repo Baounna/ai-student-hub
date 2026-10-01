@@ -20,10 +20,19 @@ type HeaderSettingsProps = {
   compact?: boolean;
 };
 
+/**
+ * Ten controls in this panel measured exactly 26px tall on a phone -- Auto /
+ * Dark / Light, the three text sizes, the two widths, and EN / FR -- from
+ * px-3 py-1 at text-xs. That is below the 24px WCAG 2.5.8 minimum once the
+ * border is excluded, in a panel whose entire purpose is letting someone adjust
+ * the page to suit them. The pill keeps its look; py-2.5 and the shared
+ * .tap-target floor give it a 44px area to hit.
+ */
 function optionClass(active: boolean) {
+  const base = "tap-target rounded-full border px-3 py-2.5 text-xs";
   return active
-    ? "rounded-full border border-[color:var(--primary)] bg-[color:var(--bg-soft)]/60 px-3 py-1 text-xs font-semibold text-[color:var(--text-strong)]"
-    : "rounded-full border border-[color:var(--border)] px-3 py-1 text-xs font-medium text-[color:var(--text)] hover:border-[color:var(--primary)]/40";
+    ? `${base} border-[color:var(--primary)] bg-[color:var(--bg-soft)]/60 font-semibold text-[color:var(--text-strong)]`
+    : `${base} border-[color:var(--border)] font-medium text-[color:var(--text)] hover:border-[color:var(--primary)]/40`;
 }
 
 function withLocale(pathname: string, targetLocale: Locale) {
@@ -113,7 +122,8 @@ export function HeaderSettings({ locale, compact = false }: HeaderSettingsProps)
 
   const triggerClass = useMemo(() => {
     if (compact) {
-      return "inline-flex h-8 w-8 items-center justify-center rounded-full border border-[color:var(--border)] bg-[color:var(--surface)]/78 p-0 text-[color:var(--text)] shadow-[inset_0_1px_0_color-mix(in_srgb,var(--surface),#ffffff_22%)]";
+      // h-8 w-8 was a 32x32 trigger -- the control that opens the panel above.
+      return "inline-flex h-11 w-11 items-center justify-center rounded-full border border-[color:var(--border)] bg-[color:var(--surface)]/78 p-0 text-[color:var(--text)] shadow-[inset_0_1px_0_color-mix(in_srgb,var(--surface),#ffffff_22%)]";
     }
     return "inline-flex h-10 w-10 items-center justify-center rounded-full border border-[color:var(--border)] bg-[color:var(--surface)]/78 p-0 text-[color:var(--text)] shadow-[inset_0_1px_0_color-mix(in_srgb,var(--surface),#ffffff_22%)]";
   }, [compact]);

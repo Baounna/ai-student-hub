@@ -507,7 +507,7 @@ export default async function LocalizedCompareIndexPage(
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="do-link text-sm font-semibold"
+                        className="do-link py-1.5 text-sm font-semibold"
                       >
                         {fr ? "Lien officiel" : "Official release"}
                       </a>

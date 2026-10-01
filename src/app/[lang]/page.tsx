@@ -363,7 +363,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                   href={stage.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="do-link text-sm font-semibold"
+                  className="do-link py-1.5 text-sm font-semibold"
                   aria-label={
                     locale === "fr"
                       ? `Voir l'offre : ${stage.role} chez ${stage.company}, ${stage.city}`
@@ -510,7 +510,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           <div className="mt-2 space-y-2 text-sm text-[color:var(--text)]">
             {aiFocusPosts.map((post) => (
               <p key={post.slug}>
-                <Link href={`/${locale}/blog/${post.slug}`} className="do-link">
+                <Link href={`/${locale}/blog/${post.slug}`} className="do-link py-1.5">
                   {post.title}
                 </Link>
               </p>
@@ -522,7 +522,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           <div className="mt-2 space-y-2 text-sm text-[color:var(--text)]">
             {csFocusPosts.map((post) => (
               <p key={post.slug}>
-                <Link href={`/${locale}/blog/${post.slug}`} className="do-link">
+                <Link href={`/${locale}/blog/${post.slug}`} className="do-link py-1.5">
                   {post.title}
                 </Link>
               </p>
@@ -578,7 +578,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                 <span className="text-[color:var(--text)]">
                   {sidePosts.map((post, idx) => (
                     <span key={post.slug}>
-                      <Link href={`/${locale}/blog/${post.slug}`} className="do-link">
+                      <Link href={`/${locale}/blog/${post.slug}`} className="do-link py-1.5">
                         {post.title}
                       </Link>
                       {idx < sidePosts.length - 1 ? " • " : ""}
@@ -598,7 +598,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             <ul className="list-disc space-y-2 pl-5 card-copy text-[color:var(--text)]">
               {latestNews.map((item) => (
                 <li key={item.slug}>
-                  <Link href={`/${locale}/news/${item.slug}`} className="do-link">
+                  <Link href={`/${locale}/news/${item.slug}`} className="do-link py-1.5">
                     {item.title}
                   </Link>{" "}
                   - {item.summary}
@@ -607,15 +607,15 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             </ul>
             <div className="mt-4 border-t border-[color:var(--wiki-panel-border)] pt-3 text-sm">
               <span className="font-semibold text-[color:var(--text-strong)]">{locale === "fr" ? "Voir aussi:" : "See also:"}</span>{" "}
-              <Link href={`/${locale}/news`} className="do-link">
+              <Link href={`/${locale}/news`} className="do-link py-1.5">
                 {locale === "fr" ? "Toutes les actualités" : "All news"}
               </Link>{" "}
               •{" "}
-              <Link href={`/${locale}/blog`} className="do-link">
+              <Link href={`/${locale}/blog`} className="do-link py-1.5">
                 {locale === "fr" ? "Toutes les analyses" : "All analysis posts"}
               </Link>{" "}
               •{" "}
-              <Link href={`/${locale}/compare`} className="do-link">
+              <Link href={`/${locale}/compare`} className="do-link py-1.5">
                 {locale === "fr" ? "Lab outils technique" : "Technical tools lab"}
               </Link>
             </div>
@@ -883,7 +883,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           {knowledgeReferences.map((reference) => (
             <li key={reference.href} className="leading-7">
               <span className="mr-2 text-[color:var(--muted)]">&middot;</span>
-              <a href={reference.href} target="_blank" rel="noopener noreferrer nofollow" className="do-link">
+              <a href={reference.href} target="_blank" rel="noopener noreferrer nofollow" className="do-link py-1.5">
                 {reference.label}
               </a>
               <span className="ml-2 text-xs text-[color:var(--muted)]">({reference.source})</span>

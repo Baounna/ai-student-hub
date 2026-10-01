@@ -64,7 +64,7 @@ export async function Breadcrumbs({ items, locale = "en" }: { items: Crumb[]; lo
           return (
             <li key={`${item.label}-${index}`} className="inline-flex items-center gap-1.5">
               {item.href && !isLast ? (
-                <Link href={item.href} className="hover:text-[color:var(--text)]">
+                <Link href={item.href} className="inline-block py-1.5 hover:text-[color:var(--text)]">
                   {item.label}
                 </Link>
               ) : (

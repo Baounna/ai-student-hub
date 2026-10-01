@@ -32,11 +32,11 @@ export function EditorialTrust({ locale, compact = false }: EditorialTrustProps)
         <li>3. {fr ? "Recommandations orientées exécution et budget-friendly." : "Execution-first recommendations with budget-friendly constraints."}</li>
       </ul>
       <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-[color:var(--muted)]">
-        <Link href={`/${locale}/affiliate-disclosure`} className="do-link">
+        <Link href={`/${locale}/affiliate-disclosure`} className="do-link py-1.5">
           {fr ? "Liens" : "Links"}
         </Link>
         <span>•</span>
-        <Link href={`/${locale}/privacy`} className="do-link">
+        <Link href={`/${locale}/privacy`} className="do-link py-1.5">
           {fr ? "Confidentialité" : "Privacy"}
         </Link>
       </div>

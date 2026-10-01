@@ -58,7 +58,7 @@ export async function LatestUpdatesBlock({ locale, limit = 6, compact = false, c
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="mt-1 block text-sm font-semibold text-[color:var(--text-strong)] transition hover:opacity-80"
+                className="mt-1 block py-1.5 text-sm font-semibold text-[color:var(--text-strong)] transition hover:opacity-80"
               >
                 {item.title}
               </a>

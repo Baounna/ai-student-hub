@@ -295,9 +295,15 @@ gtag('config', '${ga4MeasurementId}', { anonymize_ip: true });`}
         ) : null}
       </head>
       <body className="antialiased">
+        {/* z-[60], not z-50. The header is `relative z-50` by design (its own
+            comment explains why), and an equal z-index is settled by DOM order,
+            so the header painted over the focused skip link: tabbing once
+            showed nothing at all, and elementsFromPoint at the link's centre
+            returned four header nodes. The first control a keyboard user meets,
+            invisible on every page. */}
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-[color:var(--surface-strong)] focus:px-3 focus:py-2 focus:text-sm focus:font-semibold focus:text-[color:var(--text-strong)]"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-[color:var(--surface-strong)] focus:px-3 focus:py-2 focus:text-sm focus:font-semibold focus:text-[color:var(--text-strong)]"
         >
           {/* The root layout is locale-agnostic, so this was hardcoded English
               and the very first tab stop on every /fr page was untranslated --

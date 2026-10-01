@@ -461,7 +461,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                 {post.references.map((reference, index) => (
                   <li key={`${reference.href}-${index}`} id={`reference-${index + 1}`} className="leading-7">
                     <span className="mr-2 text-[color:var(--muted)]">[{index + 1}]</span>
-                    <a href={reference.href} target="_blank" rel="noopener noreferrer nofollow" className="do-link">
+                    <a href={reference.href} target="_blank" rel="noopener noreferrer nofollow" className="do-link py-1.5">
                       {reference.label[locale]}
                     </a>
                     {getHostLabel(reference.href) ? (
@@ -546,7 +546,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                           rel="noopener noreferrer"
                           event="affiliate_click"
                           meta={{ page: "blog_post_tools_table", tool: tool.name, slug: post.slug, locale, rank: index + 1 }}
-                          className="do-link text-sm"
+                          className="do-link inline-block py-1.5 text-sm"
                         >
                           {locale === "fr" ? "Essayer" : "Try"}
                         </TrackableAnchor>

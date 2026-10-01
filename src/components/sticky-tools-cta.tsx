@@ -63,7 +63,9 @@ export function StickyToolsCta({ locale, source }: StickyToolsCtaProps) {
                   const storageKey = `sticky_tools_cta_dismissed_${source}_${locale}`;
                   setStoredValue(storageKey, "1");
                 }}
-                className="text-xs text-[color:var(--muted)] hover:text-[color:var(--text)]"
+                // Measured 30.4x16: the smallest control on the site, and the one
+                // a reader presses to get a floating card out of the way.
+                className="tap-target -mr-2 px-2 text-xs text-[color:var(--muted)] hover:text-[color:var(--text)]"
               >
                 {locale === "fr" ? "Fermer" : "Close"}
               </button>
