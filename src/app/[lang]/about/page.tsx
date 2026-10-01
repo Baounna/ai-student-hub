@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { siteHighlights } from "@/lib/site-highlights";
 import Link from "next/link";
 import { Newsletter } from "@/components/newsletter";
 import { siteConfig } from "@/config/site";
@@ -39,12 +40,7 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
 
   const locale: Locale = params.lang;
   const dict = getDictionary(locale);
-  const socialStats =
-    siteConfig.socialProofStats.length > 0
-      ? siteConfig.socialProofStats
-      : locale === "fr"
-        ? ["Base de connaissance IA/CS pour builders et apprenants", "Mises à jour hebdomadaires IA + CS", "Ressources pratiques orientées résultats"]
-        : ["AI + Cybersecurity knowledge base for builders and learners", "Weekly AI + Cybersecurity updates", "Practical resources built for outcomes"];
+  const socialStats = siteHighlights(locale);
   const principles = [
     locale === "fr" ? "Construire des projets utiles, pas seulement des notebooks." : "Ship useful projects, not only notebooks.",
     locale === "fr" ? "Mesurer les résultats: démos, candidatures, entretiens." : "Measure outcomes: demos, applications, interviews.",

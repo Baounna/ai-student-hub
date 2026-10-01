@@ -19,9 +19,25 @@ describe("stages data", () => {
 
   it("every entry has the fields the page renders", () => {
     for (const item of raw.items) {
-      for (const field of ["id", "role", "company", "city", "country", "kind", "href"]) {
+      for (const field of ["id", "role", "company", "country", "kind", "href"]) {
         expect(item[field], `${String(item.id)} is missing ${field}`).toBeTruthy();
       }
+    }
+  });
+
+  // A city is optional because not every employer publishes one: Cohere lists
+  // its two internships as "Canada", remote, with no city at all. The field
+  // used to be required, so those rows carried the placeholder "Remote" and
+  // rendered "Remote, Canada - Remote". Same rule as deadline: absent rather
+  // than a placeholder standing in for a fact.
+  it("a city, where present, is a real place name and not a placeholder", () => {
+    for (const item of raw.items) {
+      if (item.city === undefined) continue;
+      const city = String(item.city);
+      expect(city.trim(), `${String(item.id)} has an empty city`).not.toBe("");
+      expect(city, `${String(item.id)} uses a placeholder city`).not.toMatch(
+        /^(remote|n\/a|tbd|various|unknown|télétravail)$/i
+      );
     }
   });
 

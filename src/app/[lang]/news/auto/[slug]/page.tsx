@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { topicLabel } from "@/content/news";
 import Link from "next/link";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
@@ -249,7 +250,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
             <p className="do-kicker">{fr ? "Auto web brief" : "Auto web brief"}</p>
             <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">{item.title}</h1>
             <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-[color:var(--muted)]">
-              <span>{item.topic}</span>
+              <span>{topicLabel(item.topic, locale)}</span>
               <span className="hidden h-1 w-1 rounded-full bg-[color:var(--muted)] sm:block" />
               <time dateTime={item.publishedAt}>{formatPublishedDate(item.publishedAt, locale)}</time>
             </div>
@@ -351,7 +352,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
             <div className="mt-3 space-y-3">
               {recentSignals.map((signal) => (
                 <article key={signal.slug} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3">
-                  <p className="text-xs text-[color:var(--muted)]">{signal.topic}</p>
+                  <p className="text-xs text-[color:var(--muted)]">{topicLabel(signal.topic, locale)}</p>
                   <h4 className="mt-1 text-sm font-semibold text-[color:var(--text-strong)]">
                     <Link href={`/${locale}/news/auto/${signal.slug}`} className="hover:opacity-85">
                       {signal.title}

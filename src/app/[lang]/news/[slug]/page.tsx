@@ -9,7 +9,7 @@ import { LatestUpdatesBlock } from "@/components/latest-updates-block";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { Newsletter } from "@/components/newsletter";
 import { ReadingProgress } from "@/components/reading-progress";
-import { getNewsBySlug, getLocalizedNews, getNewsTrack } from "@/content/news";
+import { getLocalizedNews, getNewsBySlug, getNewsTrack, topicLabel } from "@/content/news";
 import { getLocalizedPost, slugify } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
@@ -231,7 +231,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
       <header className="do-hero rounded-3xl p-7 md:p-10">
         <div className="grid gap-6 lg:grid-cols-[1.3fr,1fr] lg:items-end">
           <div>
-            <p className="do-kicker">{brief.topic}</p>
+            <p className="do-kicker">{topicLabel(brief.topic, locale)}</p>
             <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
               {brief.title}
             </h1>
@@ -255,7 +255,11 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
           <div className="surface rounded-2xl p-5">
             <p className="do-kicker">{locale === "fr" ? "Brief en bref" : "Brief at a glance"}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
-              <li>{locale === "fr" ? `1. Thème: ${brief.topic}` : `1. Topic: ${brief.topic}`}</li>
+              <li>
+                {locale === "fr"
+                  ? `1. Thème: ${topicLabel(brief.topic, locale)}`
+                  : `1. Topic: ${topicLabel(brief.topic, locale)}`}
+              </li>
               <li>
                 {locale === "fr"
                   ? `2. ${sources.length === 1 ? "1 source citée" : "Analyse maison, sans source externe"}.`
@@ -492,7 +496,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             <div className="mt-3 space-y-3">
               {recentSignals.map((signal) => (
                 <article key={signal.slug} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3">
-                  <p className="text-xs text-[color:var(--muted)]">{signal.topic}</p>
+                  <p className="text-xs text-[color:var(--muted)]">{topicLabel(signal.topic, locale)}</p>
                   <h4 className="mt-1 text-sm font-semibold text-[color:var(--text-strong)]">
                     <Link href={`/${locale}/news/${signal.slug}`} className="hover:opacity-85">
                       {signal.title}

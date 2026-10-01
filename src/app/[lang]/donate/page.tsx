@@ -103,8 +103,8 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
     return true;
   });
   const hasLiveDonationLinks = uniquePrimaryMethods.length > 0;
-  const donationSignals = siteConfig.socialProofStats.length
-    ? siteConfig.socialProofStats.slice(0, 3)
+  const donationSignals = siteConfig.socialProofStats[locale].length
+    ? siteConfig.socialProofStats[locale].slice(0, 3)
     : fr
       ? [
           "Contenu pratique publié régulièrement pour étudiants IA/CS.",

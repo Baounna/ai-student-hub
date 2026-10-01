@@ -13,6 +13,7 @@ import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { sanitizeSearchQuery } from "@/lib/input";
 import { matchesAllTerms, searchTerms } from "@/lib/search";
+import { hasPaidLinks } from "@/config/site";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 import { jsonLd } from "@/lib/json-ld";
@@ -189,9 +190,11 @@ export default async function LocalizedCompareIndexPage(
               <span className="blog-chip rounded-full px-3 py-1 text-xs text-[color:var(--muted)]">
                 {fr ? "Filtre budget-friendly" : "Budget-friendly filter"}
               </span>
-              <span className="blog-chip rounded-full px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Aucun lien rémunéré" : "No paid links"}
-              </span>
+              {hasPaidLinks ? null : (
+                <span className="blog-chip rounded-full px-3 py-1 text-xs text-[color:var(--muted)]">
+                  {fr ? "Aucun lien rémunéré" : "No paid links"}
+                </span>
+              )}
               {audienceSegments.map((segment) => (
                 <span key={segment} className="blog-chip rounded-full px-3 py-1 text-xs text-[color:var(--muted)]">
                   {segment}
@@ -268,9 +271,6 @@ export default async function LocalizedCompareIndexPage(
                 <span className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--muted)]">
                   {starterComparison.tools.length} {fr ? "options notées" : "options scored"}
                 </span>
-                <span className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--muted)]">
-                  {fr ? "Intent SEO fort" : "High-intent keyword"}
-                </span>
               </div>
               <Link href={`/${locale}/compare/${starterComparison.slug}`} className="btn-primary mt-4 inline-flex">
                 {fr ? "Ouvrir ce guide" : "Open this guide"}
@@ -309,7 +309,7 @@ export default async function LocalizedCompareIndexPage(
           <section className="surface rounded-2xl p-6">
             <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
               <div>
-                <p className="do-kicker">{fr ? "Tools étude" : "Study tools"}</p>
+                <p className="do-kicker">{fr ? "Outils d'étude" : "Study tools"}</p>
                 <h2 className="font-display section-title mt-1 font-semibold text-[color:var(--text-strong)]">
                   {fr
                     ? "Tous les outils utiles pour apprendre, produire, et exécuter des projets"
@@ -433,7 +433,11 @@ export default async function LocalizedCompareIndexPage(
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--primary)]">
-                        #{index + 1} • {fr ? "Mot-clé" : "Keyword"}: {comparison.intentKeyword}
+                        {/* This printed our own target search term, e.g.
+                            "Keyword: best cloud platform for student ai
+                            projects". The number alone is what the reader was
+                            using it for. */}
+                        #{index + 1} • {fr ? "Comparatif" : "Comparison"}
                       </p>
                       <h3 className="font-display section-title mt-2 font-semibold text-[color:var(--text-strong)]">{comparison.title}</h3>
                       <p className="card-copy mt-3 text-[color:var(--text)]">{comparison.intro}</p>
@@ -463,7 +467,7 @@ export default async function LocalizedCompareIndexPage(
           <section className="surface rounded-2xl p-6">
             <div className="flex flex-wrap items-end justify-between gap-3">
               <div>
-                <p className="do-kicker">{fr ? "Automation outils" : "Tools automation"}</p>
+                <p className="do-kicker">{fr ? "Veille outils automatisée" : "Tools automation"}</p>
                 <h2 className="font-display section-title mt-1 font-semibold text-[color:var(--text-strong)]">
                   {fr ? "Nouveautés outils depuis les sources officielles" : "New tools from official release channels"}
                 </h2>

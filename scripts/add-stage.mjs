@@ -113,8 +113,15 @@ const rawDeadline = (answers.deadline || "").trim();
 const deadline = /^(rolling|none|n\/a)$/i.test(rawDeadline) ? "" : rawDeadline;
 const href = (answers.link || answers.href || "").trim();
 
-if (!role || !company || !city || !href) {
-  fail("role, company, city and link are all required.");
+if (!role || !company || !href) {
+  fail("role, company and link are all required.");
+}
+// A city is optional because not every employer publishes one -- Cohere lists
+// its internships as "Canada", remote. What is not allowed is a placeholder in
+// the city field: "Remote" there made the page render "Remote, Canada - Remote",
+// and the remote flag already says it. Leave the city out and pass --remote.
+if (/^(remote|n\/a|tbd|various|unknown|t[eé]l[eé]travail)$/i.test(city)) {
+  fail(`"${city}" is not a city. Leave --city out and pass --remote remote instead.`);
 }
 if (!KINDS.includes(kind)) fail(`Kind must be one of: ${KINDS.join(", ")}`);
 if (deadline) {
@@ -131,7 +138,8 @@ const today = new Date().toISOString().slice(0, 10);
 // City belongs in the id: the same role really does run in several places at
 // once (one MDR analyst stage in Rennes, Toulouse and Ile-de-France), and
 // without it the second and third are rejected as duplicates of the first.
-const id = `${slugify(company)}-${slugify(role)}-${slugify(city)}-${deadline ? deadline.slice(0, 7) : "rolling"}`;
+// With no city, the country keeps the id unique and still readable.
+const id = `${slugify(company)}-${slugify(role)}-${slugify(city || country)}-${deadline ? deadline.slice(0, 7) : "rolling"}`;
 if (file.items.some((item) => item.id === id)) fail(`Already listed: ${id}`);
 if (file.items.some((item) => item.href === href)) fail(`That link is already in the list.`);
 
@@ -142,7 +150,9 @@ if (status >= 400 && !BLOCKED_STATUSES.includes(status)) {
 }
 
 const entry = {
-  id, role, company, city, country, kind,
+  id, role, company,
+  ...(city ? { city } : {}),
+  country, kind,
   ...(answers.duration ? { duration: answers.duration.trim() } : {}),
   ...(answers.level ? { level: answers.level.trim() } : {}),
   ...(REMOTES.includes((answers.remote || "").trim()) ? { remote: answers.remote.trim() } : {}),

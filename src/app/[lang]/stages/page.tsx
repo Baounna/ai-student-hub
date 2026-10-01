@@ -45,7 +45,7 @@ const COPY = {
     // list was 96 identical "View the offer" entries with nothing to tell them
     // apart. The visible text stays short; the accessible name carries the
     // role and the company that the link actually leads to.
-    applyLabel: (role: string, company: string, city: string) => `View the offer: ${role} at ${company}, ${city}`,
+    applyLabel: (role: string, company: string, place: string) => `View the offer: ${role} at ${company}, ${place}`,
     source: "via",
     updated: "Last checked",
     staleTitle: "This list has not been checked recently",
@@ -64,7 +64,11 @@ const COPY = {
     filterAll: "All",
     filterShowing: (shown: number, total: number) => `Showing ${shown} of ${total}`,
     filterClear: "Clear filters",
-    filterNone: "No openings match that filter yet. The others are below.",
+    // "The others are below" was printed in place of the list, with nothing
+    // below it -- the sentence described the layout of a page that renders when
+    // there ARE matches. Say the count and give the reader the way out.
+    filterNone: (total: number) =>
+      `No openings match that combination. All ${total} are one click away.`,
     methodTitle: "What \u201cchecked\u201d means here",
     methodBody:
       "Every link is opened and its page read, not just pinged for a status code \u2014 three postings have answered HTTP 200 while saying, in the body, that they had closed. A listing is removed only after a person confirms it is gone; a refusal to serve us is treated as a fact about us, not about the job. Deadlines are shown only where the employer published one."
@@ -80,7 +84,7 @@ const COPY = {
     rolling: "Ouverte jusqu'à pourvoi - aucune date limite annoncée",
     checked: "lien vérifié le",
     apply: "Voir l'offre",
-    applyLabel: (role: string, company: string, city: string) => `Voir l'offre : ${role} chez ${company}, ${city}`,
+    applyLabel: (role: string, company: string, place: string) => `Voir l'offre : ${role} chez ${company}, ${place}`,
     source: "via",
     updated: "Dernière vérification",
     staleTitle: "Cette liste n'a pas été vérifiée récemment",
@@ -95,7 +99,8 @@ const COPY = {
     filterAll: "Tous",
     filterShowing: (shown: number, total: number) => `${shown} sur ${total} affichées`,
     filterClear: "Effacer les filtres",
-    filterNone: "Aucune offre ne correspond à ce filtre pour l'instant. Les autres sont ci-dessous.",
+    filterNone: (total: number) =>
+      `Aucune offre ne correspond à cette combinaison. Les ${total} autres sont à un clic.`,
     methodTitle: "Ce que « vérifié » veut dire ici",
     methodBody:
       "Chaque lien est ouvert et sa page lue, pas seulement testée par code HTTP : trois offres ont répondu 200 tout en indiquant, dans le corps de la page, qu'elles étaient closes. Une offre n'est retirée qu'après vérification humaine ; un refus de nous répondre est traité comme un fait nous concernant, pas comme une fermeture. Les dates limites ne sont affichées que lorsque l'employeur en publie une."
@@ -380,7 +385,10 @@ export default async function StagesPage(props: {
         </p>
       ) : filtered.length === 0 ? (
         <p className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6 text-[color:var(--text)]">
-          {copy.filterNone}
+          {copy.filterNone(stages.length)}{" "}
+          <Link href={`/${locale}/stages`} className="do-link">
+            {copy.filterClear}
+          </Link>
         </p>
       ) : (
         <ul className="mt-6 space-y-3">
@@ -390,6 +398,12 @@ export default async function StagesPage(props: {
             // half the board showed "3 MOIS MINIMUM" and "BAC+3" beside a
             // translated "UNITED KINGDOM". Formatting at render time fixes the
             // rows that exist and every row added later.
+            // Not every employer publishes a city -- Cohere lists these two
+            // roles as "Canada", remote. The city field held the placeholder
+            // "Remote", so the row read "Remote, Canada · Remote".
+            const place = stage.city
+              ? `${stage.city}, ${countryLabel(stage.country, locale)}`
+              : countryLabel(stage.country, locale);
             const durationText = formatDuration(stage.duration, locale);
             const levelText = formatLevel(stage.level, locale);
             return (
@@ -408,7 +422,7 @@ export default async function StagesPage(props: {
                 </div>
 
                 <p className="provenance mt-2">
-                  {kindLabel(stage.kind, locale)} · {stage.city}, {countryLabel(stage.country, locale)}
+                  {kindLabel(stage.kind, locale)} · {place}
                   {stage.remote ? ` · ${remoteLabel(stage.remote, locale)}` : ""}
                   {durationText ? ` · ${durationText}` : ""}
                   {levelText ? ` · ${levelText}` : ""}
@@ -429,7 +443,7 @@ export default async function StagesPage(props: {
                       href={stage.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={copy.applyLabel(stage.role, stage.company, stage.city)}
+                      aria-label={copy.applyLabel(stage.role, stage.company, place)}
                       className="btn-secondary px-3 py-1.5 text-xs"
                     >
                       {copy.apply}

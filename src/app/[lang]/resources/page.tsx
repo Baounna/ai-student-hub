@@ -8,7 +8,7 @@ import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { ToolLogo } from "@/components/ui/tool-logo";
 import { recommendedTools, studentStudyTools } from "@/content/posts";
-import { siteConfig } from "@/config/site";
+import { hasPaidLinks, siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
@@ -149,9 +149,13 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
                 {locale === "fr" ? "Budget étudiant" : "Student-budget first"}
               </span>
-              <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {locale === "fr" ? "Aucun lien rémunéré" : "No paid links"}
-              </span>
+              {/* True today, and the chip disappears rather than contradicts
+                  the disclosure if a referral link is ever configured. */}
+              {hasPaidLinks ? null : (
+                <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
+                  {locale === "fr" ? "Aucun lien rémunéré" : "No paid links"}
+                </span>
+              )}
             </div>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/compare`} className="btn-primary">

@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/config";
+import { topicLabel } from "@/content/news";
 
 function formatPublishedDate(date: string, locale: Locale) {
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -33,7 +34,10 @@ export function Provenance({ source, topic, publishedAt, locale, live = false, c
   return (
     <div className={className ? `provenance ${className}` : "provenance"}>
       {sourceName ? <span className="provenance-source">{sourceName}</span> : null}
-      {topic ? <span>{topic}</span> : null}
+      {/* The topic doubles as a filter key, so it is stored in English. Every
+          call site passed it straight through, which printed "Computer
+          Systems" and "Security & Performance" on the French pages. */}
+      {topic ? <span>{topicLabel(topic, locale)}</span> : null}
       {published ? <time dateTime={publishedAt}>{published}</time> : null}
       {live ? (
         <span className="provenance-live">{locale === "fr" ? "Source officielle" : "First-party source"}</span>

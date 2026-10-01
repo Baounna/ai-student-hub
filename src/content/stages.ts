@@ -8,8 +8,14 @@ export type Stage = {
   id: string;
   role: string;
   company: string;
-  city: string;
-  /** ISO 3166-1 alpha-2. MA and FR today; the shape allows more. */
+  /**
+   * Optional: not every employer publishes one. Cohere lists its two
+   * internships as "Canada", remote, with no city. The field was required, so
+   * those rows carried the placeholder "Remote" and the page rendered
+   * "Remote, Canada - Remote". A missing city is absent, never a placeholder.
+   */
+  city?: string;
+  /** ISO 3166-1 alpha-2. Ten countries today; the shape allows more. */
   country: string;
   kind: StageKind;
   duration?: string;

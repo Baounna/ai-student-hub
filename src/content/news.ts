@@ -687,3 +687,35 @@ export function slugifyTopic(input: string) {
     .trim()
     .replace(/\s+/g, "-");
 }
+
+/**
+ * A topic in the reader's language.
+ *
+ * `topic` doubles as a key: it slugifies into the ?topic= filter, maps to a
+ * track in NEWS_TRACKS, and goes into the cover image URL and the JSON-LD
+ * articleSection. So it stays English in the data and is translated only where
+ * a reader sees it. Before this, /fr/news printed "Computer Systems",
+ * "Career" and "Security & Performance" in its theme filter and on every card,
+ * on a page whose headings, dates and summaries were all French.
+ *
+ * Terms that are the same in French -- MLOps, DevOps, backend -- are listed
+ * anyway, so the map is the full set rather than the exceptions, and an unknown
+ * topic (the automated feed invents its own) passes through unchanged.
+ */
+const TOPIC_LABELS: Record<string, Record<Locale, string>> = {
+  "AI Performance": { en: "AI Performance", fr: "Performance IA" },
+  "AI Research": { en: "AI Research", fr: "Recherche IA" },
+  "AI Systems": { en: "AI Systems", fr: "Systèmes IA" },
+  Career: { en: "Career", fr: "Carrière" },
+  "Cloud/DevOps": { en: "Cloud/DevOps", fr: "Cloud/DevOps" },
+  "Computer Systems": { en: "Computer Systems", fr: "Systèmes informatiques" },
+  "ML Engineering": { en: "ML Engineering", fr: "Ingénierie ML" },
+  MLOps: { en: "MLOps", fr: "MLOps" },
+  "Security & Performance": { en: "Security & Performance", fr: "Sécurité et performance" },
+  "Systems & Backend": { en: "Systems & Backend", fr: "Systèmes et backend" },
+  "AI/CS Updates": { en: "AI/CS Updates", fr: "Actus IA/CS" }
+};
+
+export function topicLabel(topic: string, locale: Locale): string {
+  return TOPIC_LABELS[topic]?.[locale] ?? topic;
+}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { topicLabel } from "@/content/news";
 import Link from "next/link";
 import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
@@ -110,7 +111,7 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
               <article key={`${item.href}-${index}`} className="card-hover glass rounded-2xl p-5">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
-                    {item.topic}
+                    {topicLabel(item.topic, locale)}
                   </span>
                   <span className="text-xs text-[color:var(--muted)]">{item.source}</span>
                   <span className="text-xs text-[color:var(--muted)]">{formatPublishedDate(item.publishedAt, locale)}</span>

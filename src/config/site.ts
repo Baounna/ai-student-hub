@@ -50,6 +50,27 @@ const legalName = envValue("NEXT_PUBLIC_LEGAL_NAME") || "AI and Cybersecurity Ne
 const affiliatePartners = [1, 2, 3, 4, 5]
   .map((index) => readAffiliatePartner(index))
   .filter((partner): partner is AffiliatePartner => Boolean(partner));
+
+/**
+ * Whether anything on this site carries a referral or affiliate link.
+ *
+ * Three places tell the reader there are none: a "No paid links" chip on
+ * /resources and /compare, and the disclosure paragraph, which states flatly
+ * that "we are not in any affiliate programme and earn nothing when you follow
+ * them". Production serves no referral code today, so all three are true --
+ * but they were true by luck, not by construction. Setting
+ * NEXT_PUBLIC_DIGITALOCEAN_REF appends a refcode to every DigitalOcean link on
+ * the site, and AFFILIATE_1_URL publishes a partner card, and neither touches
+ * the sentence that denies both. One variable in a dashboard and the site
+ * states the opposite of what it does, in the place a reader goes to check.
+ *
+ * Derived rather than hand-set, unlike TESTIMONIALS_ARE_REAL above, because
+ * here the truth is readable from the environment: a gate someone must
+ * remember to flip is the same hazard one step further along.
+ */
+export const hasPaidLinks =
+  Boolean(envValue("NEXT_PUBLIC_DIGITALOCEAN_REF")) ||
+  [1, 2, 3, 4, 5].some((index) => Boolean(envValue(`AFFILIATE_${index}_URL`)));
 /**
  * The same gate as GUIDE_EXISTS in src/lib/product.ts, for the same reason.
  *
@@ -128,11 +149,25 @@ export const siteConfig = {
       "Parcours pratiques EN/FR"
     ]
   },
-  socialProofStats: [
-    envValue("REAL_STATS_LINE_1"),
-    envValue("REAL_STATS_LINE_2"),
-    envValue("REAL_STATS_LINE_3")
-  ].filter(Boolean) as string[],
+  /**
+   * Operator-supplied replacements for the three "What you will find here"
+   * lines, per locale.
+   *
+   * REAL_STATS_LINE_1..3 was one value used for both languages, so setting it
+   * printed English on /fr -- which is what .env.local does today, with
+   * "Weekly AI and CS updates with practical next steps" among the three. It
+   * reaches no reader because Vercel sets none of them, which is luck again.
+   * An override now applies to a locale only when that locale has a value, so a
+   * single-language override leaves the other language on its own copy instead
+   * of silently replacing it with the wrong one. The unsuffixed name still
+   * works, as English.
+   */
+  socialProofStats: {
+    en: [1, 2, 3]
+      .map((i) => envValue(`REAL_STATS_LINE_${i}_EN`) || envValue(`REAL_STATS_LINE_${i}`))
+      .filter(Boolean) as string[],
+    fr: [1, 2, 3].map((i) => envValue(`REAL_STATS_LINE_${i}_FR`)).filter(Boolean) as string[]
+  } as Record<Locale, string[]>,
   // Every call site used to hard-code its own wording for this offer, which is
   // how "Free AI Career Roadmap" outlived the roadmap itself in twenty places.
   // The label lives here now, so what we promise can only be said in one voice
@@ -158,10 +193,22 @@ export const siteConfig = {
   // No commission could ever have been attributed, so the site was promising
   // readers something it could not deliver. Restore the commission wording only
   // once real affiliate IDs are actually in the links.
-  affiliateDisclosureText: envLocaleValue("AFFILIATE_DISCLOSURE_TEXT_EN", "AFFILIATE_DISCLOSURE_TEXT_FR", {
-    en: "Some pages link to tools we use or recommend. These are ordinary links: we are not in any affiliate programme and earn nothing when you follow them.",
-    fr: "Certaines pages renvoient vers des outils que nous utilisons ou recommandons. Ce sont de simples liens : nous ne participons à aucun programme d'affiliation et ne recevons aucune commission."
-  }),
+  // The default denies any affiliate relationship, which is only safe to print
+  // while there is none. With one configured, the fallback discloses instead,
+  // and an explicit AFFILIATE_DISCLOSURE_TEXT_* still overrides both.
+  affiliateDisclosureText: envLocaleValue(
+    "AFFILIATE_DISCLOSURE_TEXT_EN",
+    "AFFILIATE_DISCLOSURE_TEXT_FR",
+    hasPaidLinks
+      ? {
+          en: "Some pages link to tools we use or recommend, and some of those links are referral links that may earn us a commission at no extra cost to you. It never changes which tools we recommend.",
+          fr: "Certaines pages renvoient vers des outils que nous utilisons ou recommandons, et certains de ces liens sont des liens de parrainage pouvant nous rapporter une commission, sans surcoût pour vous. Cela ne change jamais les outils que nous recommandons."
+        }
+      : {
+          en: "Some pages link to tools we use or recommend. These are ordinary links: we are not in any affiliate programme and earn nothing when you follow them.",
+          fr: "Certaines pages renvoient vers des outils que nous utilisons ou recommandons. Ce sont de simples liens : nous ne participons à aucun programme d'affiliation et ne recevons aucune commission."
+        }
+  ),
   affiliatePartners,
   testimonials
 };

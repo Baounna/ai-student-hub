@@ -561,7 +561,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                 {bridgeTrack === "cs"
                   ? locale === "fr"
                     ? "Pont vers l'informatique"
-                    : "Bridge into cybersecurity"
+                    : "Bridge into computer science"
                   : locale === "fr"
                     ? "Pont vers l'IA"
                     : "Bridge into AI systems"}

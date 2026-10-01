@@ -15,7 +15,19 @@ export function EditorialTrust({ locale, compact = false }: EditorialTrustProps)
         {fr ? "Charte éditoriale" : "Editorial integrity"}
       </h2>
       <ul className={`mt-3 text-sm text-[color:var(--text)] ${compact ? "space-y-1.5" : "space-y-2"}`}>
-        <li>1. {fr ? "Mises à jour hebdomadaires IA + CS." : "Weekly AI + Cybersecurity updates."}</li>
+        {/* This read "Weekly AI + Cybersecurity updates", word for word the
+            same line the home page prints a few hundred pixels above, and it
+            was a promise rather than a record: the newest hand-written piece is
+            24 September 2026 and there are two publishing dates in seven
+            months. The weekly thing that does happen is the scheduled job that
+            re-checks the internship list every Monday, which every entry
+            timestamps and the page says out loud. Claim that instead. */}
+        <li>
+          1.{" "}
+          {fr
+            ? "La liste des stages est revérifiée chaque semaine, et chaque offre indique quand."
+            : "The internship list is re-checked every week, and every entry says when."}
+        </li>
         <li>2. {fr ? "Sources explicites et références visibles." : "Explicit sources and visible references."}</li>
         <li>3. {fr ? "Recommandations orientées exécution et budget-friendly." : "Execution-first recommendations with budget-friendly constraints."}</li>
       </ul>

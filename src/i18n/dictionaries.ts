@@ -66,8 +66,6 @@ export type Dictionary = {
     actions: string;
     source: string;
     readBrief: string;
-    weeklyDigestTitle: string;
-    weeklyDigestBody: string;
     openBlog: string;
     openResources: string;
     openCompare: string;
@@ -150,9 +148,6 @@ export const dictionaries: Record<Locale, Dictionary> = {
       actions: "Action steps",
       source: "Source context",
       readBrief: "Read brief",
-      weeklyDigestTitle: "Get the weekly AI + Cybersecurity digest",
-      weeklyDigestBody:
-        "Every week: top signals, practical action plan, and one high-ROI project idea for builders. Student-focused resources are included.",
       openBlog: "Open blog",
       openResources: "Open resources",
       openCompare: "Open tools lab"
@@ -246,9 +241,6 @@ export const dictionaries: Record<Locale, Dictionary> = {
       actions: "Actions recommandées",
       source: "Contexte source",
       readBrief: "Lire le brief",
-      weeklyDigestTitle: "Recevoir le digest IA + cybersécurité",
-      weeklyDigestBody:
-        "Chaque semaine: signaux majeurs, plan d'action concret, et une idée de projet à fort ROI pour builders. Les ressources étudiantes restent incluses.",
       openBlog: "Ouvrir le blog",
       openResources: "Voir les ressources",
       openCompare: "Ouvrir la section outils"

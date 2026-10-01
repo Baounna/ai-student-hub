@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AffiliateDisclosureInline } from "@/components/affiliate-disclosure-inline";
 import { EditorialTrust } from "@/components/editorial-trust";
+import { siteHighlights } from "@/lib/site-highlights";
 import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { getAutoNews } from "@/content/auto-news";
@@ -86,12 +87,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
   const latestNews = getLatestNews(locale, 4);
   const allNews = getLocalizedNews(locale);
   const autoUpdates = getAutoNews(locale, 6);
-  const socialStats =
-    siteConfig.socialProofStats.length > 0
-      ? siteConfig.socialProofStats
-      : locale === "fr"
-        ? ["Base de connaissance IA/CS pour builders et apprenants", "Ressources pratiques mises à jour régulièrement", "Mises à jour hebdomadaires IA + CS"]
-        : ["AI + Cybersecurity knowledge base for builders and learners", "Practical resources updated regularly", "Weekly AI + Cybersecurity updates"];
+  const socialStats = siteHighlights(locale);
 
   const didYouKnowItems =
     locale === "fr"

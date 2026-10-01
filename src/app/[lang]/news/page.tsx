@@ -4,7 +4,7 @@ import Link from "next/link";
 import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { getAutoNews, getAutoNewsUpdatedAt } from "@/content/auto-news";
-import { getLocalizedNews, getNewsTopics, getNewsTrack, getNewsTrackCounts, slugifyTopic, type NewsTrack } from "@/content/news";
+import { getLocalizedNews, getNewsTopics, getNewsTrack, getNewsTrackCounts, slugifyTopic, topicLabel, type NewsTrack } from "@/content/news";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
@@ -234,7 +234,7 @@ export default async function LocalizedNewsPage(
               <div className="px-5 pb-5 pt-4 md:px-7 md:pb-7">
                 <div className="mb-2 flex flex-wrap items-center gap-2">
                   <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
-                    {featuredBrief.topic}
+                    {topicLabel(featuredBrief.topic, locale)}
                   </span>
                   <span className="text-xs text-[color:var(--muted)]">{formatReadTime(featuredBrief.readTime, locale)}</span>
                   <time dateTime={featuredBrief.publishedAt} className="text-xs text-[color:var(--muted)]">
@@ -380,7 +380,7 @@ export default async function LocalizedNewsPage(
                     : "border-[color:var(--border)] bg-[color:var(--surface)] text-[color:var(--text)]"
                 }`}
               >
-                {topic}
+                {topicLabel(topic, locale)}
               </Link>
             );
           })}
@@ -395,7 +395,7 @@ export default async function LocalizedNewsPage(
             <article key={brief.slug} className="card-hover glass rounded-2xl p-6">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
-                  {brief.topic}
+                  {topicLabel(brief.topic, locale)}
                 </span>
                 <span className="text-xs text-[color:var(--muted)]">{brief.source.name}</span>
                 <time dateTime={brief.publishedAt} className="text-xs text-[color:var(--muted)]">
@@ -462,7 +462,7 @@ export default async function LocalizedNewsPage(
               {recentSignals.map((signal, index) => (
                 <article key={signal.slug} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3">
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[color:var(--muted)]">
-                    #{index + 1} • {signal.topic}
+                    #{index + 1} • {topicLabel(signal.topic, locale)}
                   </p>
                   <h4 className="mt-1 text-sm font-semibold text-[color:var(--text-strong)]">
                     <Link href={`/${locale}/news/${signal.slug}`} className="hover:opacity-85">
@@ -475,11 +475,14 @@ export default async function LocalizedNewsPage(
             </div>
           </div>
 
-          <div className="surface rounded-2xl p-5">
-            <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">{dict.news.weeklyDigestTitle}</h3>
-            <p className="mt-2 text-sm text-[color:var(--text)]">{dict.news.weeklyDigestBody}</p>
-          </div>
-
+          {/* A second newsletter pitch used to sit here, directly above the
+              real one, promising a different email: "top signals, practical
+              action plan, and one high-ROI project idea" every week, where the
+              block below promises verified internships and at most one email.
+              Two offers for one list is how a reader concludes we do not know
+              what we send -- and the digest was the one nothing was built to
+              deliver. The Newsletter component is the only thing that
+              describes the email now. */}
           <Newsletter compact locale={locale} source="news_aside" />
 
           <EditorialTrust locale={locale} />

@@ -199,7 +199,7 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
             {bridgeTrack === "cs"
               ? locale === "fr"
                 ? "Relier vers les catégories informatique"
-                : "Bridge into cybersecurity categories"
+                : "Bridge into computer science categories"
               : locale === "fr"
                 ? "Relier vers les catégories IA"
                 : "Bridge into AI categories"}
