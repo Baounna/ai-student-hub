@@ -22,7 +22,16 @@ import {
 
 const COPY = {
   en: {
-    title: "Tech internships in France and Morocco",
+    // Regions, not a country list. The exact breakdown is on the next line and
+    // is counted from the data; naming countries here meant editing the title
+    // every time the board grew, which is how it came to say "Morocco and
+    // France" for a list that was 73 French and 9 Moroccan.
+    title: "AI and cybersecurity internships in Europe, North America and Morocco",
+    // <title> only, the same split the posts and news briefs use: the heading
+    // above stays readable while the search result fits. The regional title
+    // runs to 79 characters with the brand suffix, against a site where every
+    // other page sits at 60 or under.
+    seoTitle: "AI and cyber internships: Europe, US, Morocco",
     subtitle:
       "Open internships, apprenticeships and final-year projects for students in tech. Checked and updated weekly.",
     empty: "No openings listed yet. The first entries go up this week.",
@@ -54,7 +63,8 @@ const COPY = {
       "Every link is opened and its page read, not just pinged for a status code \u2014 three postings have answered HTTP 200 while saying, in the body, that they had closed. A listing is removed only after a person confirms it is gone; a refusal to serve us is treated as a fact about us, not about the job. Deadlines are shown only where the employer published one."
   },
   fr: {
-    title: "Stages et alternances tech en France et au Maroc",
+    title: "Stages IA et cybersécurité en Europe, Amérique du Nord et au Maroc",
+    seoTitle: "Stages IA et cyber : Europe, USA, Maroc",
     subtitle:
       "Stages, alternances et PFE ouverts aux étudiants en informatique. Vérifiés et mis à jour chaque semaine.",
     empty: "Aucune offre pour le moment. Les premières arrivent cette semaine.",
@@ -85,7 +95,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const copy = COPY[params.lang];
 
   return {
-    title: copy.title,
+    title: copy.seoTitle,
     description: copy.subtitle,
     openGraph: {
       title: copy.title,
