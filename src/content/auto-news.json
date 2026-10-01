@@ -1,23 +1,99 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T22:13:14.519Z",
+  "updatedAt": "2026-10-01T13:08:39.943Z",
   "items": [
     {
-      "slug": "20260930-deploying-an-hstu-generative-recommender-with-nvidia-dynamo-trit-96188735",
+      "slug": "20261001-one-year-later-sovereign-ai-and-the-fight-for-choice-aff28bc6",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
+      "publishedAt": "2026-10-01T13:04:19.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "One year later: Sovereign AI and the fight for choice",
+          "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice."
+        },
+        "fr": {
+          "title": "One year later: Sovereign AI and the fight for choice",
+          "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice."
+        }
+      }
+    },
+    {
+      "slug": "20261001-oct-1-2026-announcements-barclays-scales-claude-to-upgrade-opera-91b1f786",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/barclays-scales-claude",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
+          "summary": "Category Title Sep 2"
+        },
+        "fr": {
+          "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
+          "summary": "Category Title Sep 2"
+        }
+      }
+    },
+    {
+      "slug": "20261001-announcing-rust-1990-7d7cbf9b",
+      "topic": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/10/01/Rust-1.99.0/",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "Announcing Rust 1.99.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.99.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup , you can…"
+        },
+        "fr": {
+          "title": "Announcing Rust 1.99.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.99.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup , you can…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-pgpool-ii-473-468-4513-4418-and-4321-released-b4eb1817",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgpool-ii-473-468-4513-4418-and-4321-released-3390/",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
+          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
+        },
+        "fr": {
+          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
+          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
+        }
+      }
+    },
+    {
+      "slug": "20260930-fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-pat-b2513dc0",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/deploying-an-hstu-generative-recommender-with-nvidia-dynamo-triton/",
-      "publishedAt": "2026-09-30T21:19:27.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "href": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages/",
+      "publishedAt": "2026-09-30T21:26:04.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
       "locales": {
         "en": {
-          "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
-          "summary": "Generative recommender (GR) systems are emerging as a powerful new approach for large-scale personalization. Instead of treating recommendation as a set of..."
+          "title": "Fine-Tuning NVIDIA Nemotron for Saudi Arabic Dialects, with a Path to Other Languages",
+          "summary": "Automatic speech recognition must handle how people actually speak, not only the languages and styles that dominate pretraining data. Regional dialects and..."
         },
         "fr": {
-          "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
-          "summary": "Generative recommender (GR) systems are emerging as a powerful new approach for large-scale personalization. Instead of treating recommendation as a set of..."
+          "title": "Fine-Tuning NVIDIA Nemotron for Saudi Arabic Dialects, with a Path to Other Languages",
+          "summary": "Automatic speech recognition must handle how people actually speak, not only the languages and styles that dominate pretraining data. Regional dialects and..."
         }
       }
     },
@@ -56,25 +132,6 @@
         "fr": {
           "title": "Query claims in natural language with Amazon Bedrock Knowledge Bases",
           "summary": "This technical how-to builds a conversational claims assistant on Amazon Bedrock Knowledge Bases that answers natural-language questions with citations. It covers ingesting claim documents from Amazon S3, querying with the Agenti…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-cloudflare-impact-reaches-100-million-in-donations-32b86ef1",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/100-million-donations/",
-      "publishedAt": "2026-09-30T13:01:55.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare Impact reaches $100 million in donations",
-          "summary": "This week, Cloudflare's Impact programs will reach $100 million in donated services. This milestone means that thousands of entities including journalists, civil society, state and local governments, election management bodies, a…"
-        },
-        "fr": {
-          "title": "Cloudflare Impact reaches $100 million in donations",
-          "summary": "This week, Cloudflare's Impact programs will reach $100 million in donated services. This milestone means that thousands of entities including journalists, civil society, state and local governments, election management bodies, a…"
         }
       }
     },
@@ -136,21 +193,21 @@
       }
     },
     {
-      "slug": "20260929-dasha-18-index-recommendations-io-analysis-schema-checks-and-log-e42d6b25",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/dasha-18-index-recommendations-io-analysis-schema-checks-and-log-insights-3387/",
-      "publishedAt": "2026-09-29T00:00:00.000Z",
-      "discoveredAt": "2026-09-29T12:48:58.498Z",
+      "slug": "20260929-fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-6cf86665",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-for-microsoft-copilot-and-agents/",
+      "publishedAt": "2026-09-29T06:30:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
       "locales": {
         "en": {
-          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
-          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
+          "title": "FabCon and SQLCon 2026 in Barcelona: Building the data foundation for Microsoft Copilot and agents",
+          "summary": "Microsoft Fabric and SQL innovations announced at FabCon and SQLCon Barcelona 2026 help organizations build trusted data foundations for AI. The post FabCon and SQLCon 2026 in Barcelona: Building the data foundation for Microsoft…"
         },
         "fr": {
-          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
-          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
+          "title": "FabCon and SQLCon 2026 in Barcelona: Building the data foundation for Microsoft Copilot and agents",
+          "summary": "Microsoft Fabric and SQL innovations announced at FabCon and SQLCon Barcelona 2026 help organizations build trusted data foundations for AI. The post FabCon and SQLCon 2026 in Barcelona: Building the data foundation for Microsoft…"
         }
       }
     },
@@ -170,25 +227,6 @@
         "fr": {
           "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
           "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted."
-        }
-      }
-    },
-    {
-      "slug": "20260928-enhancing-microsoft-azure-virtual-machine-lifecycle-9da1e117",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/enhancing-microsoft-azure-virtual-machine-lifecycle/",
-      "publishedAt": "2026-09-28T15:00:00.000Z",
-      "discoveredAt": "2026-09-30T12:30:54.114Z",
-      "locales": {
-        "en": {
-          "title": "Enhancing Microsoft Azure Virtual Machine lifecycle",
-          "summary": "Our Virtual Machine Lifecycle policy guides how we manage these transitions, giving Azure customers transparency, predictability, and guidance. The post Enhancing Microsoft Azure Virtual Machine lifecycle appeared first on Micros…"
-        },
-        "fr": {
-          "title": "Enhancing Microsoft Azure Virtual Machine lifecycle",
-          "summary": "Our Virtual Machine Lifecycle policy guides how we manage these transitions, giving Azure customers transparency, predictability, and guidance. The post Enhancing Microsoft Azure Virtual Machine lifecycle appeared first on Micros…"
         }
       }
     },
@@ -288,25 +326,6 @@
       }
     },
     {
-      "slug": "20260923-sep-23-2026-science-claude-discovers-a-novel-enzyme-system-with--f82afb64",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "publishedAt": "2026-09-23T00:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
-          "summary": "Category Title Sep 18, 2026"
-        },
-        "fr": {
-          "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
-          "summary": "Category Title Sep 18, 2026"
-        }
-      }
-    },
-    {
       "slug": "20260922-spotlight-on-sig-apps-bdc88dc4",
       "topic": "Cloud/DevOps",
       "source": "Kubernetes Blog",
@@ -322,25 +341,6 @@
         "fr": {
           "title": "Spotlight on SIG Apps",
           "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batch processi…"
-        }
-      }
-    },
-    {
-      "slug": "20260922-announcing-a-maintainer-in-residence-scott-schafer-for-the-cargo-cab455e8",
-      "topic": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/09/22/announcing-a-maintainer-in-residence-scott-schafer-for-the-cargo-team/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "Announcing a Maintainer in Residence: Scott Schafer for the Cargo team",
-          "summary": "At the end of August, we announced our first Maintainers in Residence, Rust Project contributors who are funded for their upstream contributions and maintenance work from the Rust Foundation Maintainers Fund (RFMF). Since then, t…"
-        },
-        "fr": {
-          "title": "Announcing a Maintainer in Residence: Scott Schafer for the Cargo team",
-          "summary": "At the end of August, we announced our first Maintainers in Residence, Rust Project contributors who are funded for their upstream contributions and maintenance work from the Rust Foundation Maintainers Fund (RFMF). Since then, t…"
         }
       }
     },
@@ -364,21 +364,97 @@
       }
     },
     {
-      "slug": "20260930-expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia--581ab947",
+      "slug": "20261001-introducing-workers-kv-instant-powered-by-quicksilver-2124bce0",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/workers-kv-instant/",
+      "publishedAt": "2026-10-01T13:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Workers KV Instant — powered by Quicksilver",
+          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
+        },
+        "fr": {
+          "title": "Introducing Workers KV Instant — powered by Quicksilver",
+          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
+        }
+      }
+    },
+    {
+      "slug": "20260923-sep-23-2026-science-claude-discovers-a-novel-enzyme-system-with--f82afb64",
       "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "summary": "Category Title Sep 18, 2026"
+        },
+        "fr": {
+          "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "summary": "Category Title Sep 18, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20260922-announcing-a-maintainer-in-residence-scott-schafer-for-the-cargo-cab455e8",
+      "topic": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/09/22/announcing-a-maintainer-in-residence-scott-schafer-for-the-cargo-team/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "Announcing a Maintainer in Residence: Scott Schafer for the Cargo team",
+          "summary": "At the end of August, we announced our first Maintainers in Residence, Rust Project contributors who are funded for their upstream contributions and maintenance work from the Rust Foundation Maintainers Fund (RFMF). Since then, t…"
+        },
+        "fr": {
+          "title": "Announcing a Maintainer in Residence: Scott Schafer for the Cargo team",
+          "summary": "At the end of August, we announced our first Maintainers in Residence, Rust Project contributors who are funded for their upstream contributions and maintenance work from the Rust Foundation Maintainers Fund (RFMF). Since then, t…"
+        }
+      }
+    },
+    {
+      "slug": "20260929-dasha-18-index-recommendations-io-analysis-schema-checks-and-log-e42d6b25",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/dasha-18-index-recommendations-io-analysis-schema-checks-and-log-insights-3387/",
+      "publishedAt": "2026-09-29T00:00:00.000Z",
+      "discoveredAt": "2026-09-29T12:48:58.498Z",
+      "locales": {
+        "en": {
+          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
+          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
+        },
+        "fr": {
+          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
+          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
+        }
+      }
+    },
+    {
+      "slug": "20260930-deploying-an-hstu-generative-recommender-with-nvidia-dynamo-trit-96188735",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia-scada-server-sdk/",
-      "publishedAt": "2026-09-30T19:13:08.000Z",
+      "href": "https://developer.nvidia.com/blog/deploying-an-hstu-generative-recommender-with-nvidia-dynamo-triton/",
+      "publishedAt": "2026-09-30T21:19:27.000Z",
       "discoveredAt": "2026-09-30T22:13:14.519Z",
       "locales": {
         "en": {
-          "title": "Expanding AI Storage Access with NVIDIA cuObject and the NVIDIA SCADA Server SDK",
-          "summary": "AI infrastructure engineers, storage developers, and cloud service providers need fast and secure access to high-capacity file and object storage to support AI..."
+          "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
+          "summary": "Generative recommender (GR) systems are emerging as a powerful new approach for large-scale personalization. Instead of treating recommendation as a set of..."
         },
         "fr": {
-          "title": "Expanding AI Storage Access with NVIDIA cuObject and the NVIDIA SCADA Server SDK",
-          "summary": "AI infrastructure engineers, storage developers, and cloud service providers need fast and secure access to high-capacity file and object storage to support AI..."
+          "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
+          "summary": "Generative recommender (GR) systems are emerging as a powerful new approach for large-scale personalization. Instead of treating recommendation as a set of..."
         }
       }
     },
@@ -417,25 +493,6 @@
         "fr": {
           "title": "Build a multi-agent music production pipeline on Amazon Bedrock AgentCore Runtime Instances",
           "summary": "Amazon Bedrock AgentCore Runtime Instances gives multi-agent workflows AWS managed EC2 infrastructure with GPUs, persistent volumes, and multi-day sessions. In this post, we deploy a three-agent music production pipeline where th…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-cut-your-ai-spend-with-ai-gateways-auto-router-ac0f8886",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/auto-router/",
-      "publishedAt": "2026-09-30T13:00:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Cut your AI spend with AI Gateway's Auto Router",
-          "summary": "Cloudflare AI Gateway now features a model router that evaluates request complexity using an edge-deployed classifier to select the optimal model. By balancing expected output quality against token costs, organizations can dramat…"
-        },
-        "fr": {
-          "title": "Cut your AI spend with AI Gateway's Auto Router",
-          "summary": "Cloudflare AI Gateway now features a model router that evaluates request complexity using an edge-deployed classifier to select the optimal model. By balancing expected output quality against token costs, organizations can dramat…"
         }
       }
     },
@@ -497,21 +554,21 @@
       }
     },
     {
-      "slug": "20260928-plhaskell-v60-released-22b5aed3",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/plhaskell-v60-released-3388/",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "slug": "20260928-enhancing-microsoft-azure-virtual-machine-lifecycle-9da1e117",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/enhancing-microsoft-azure-virtual-machine-lifecycle/",
+      "publishedAt": "2026-09-28T15:00:00.000Z",
+      "discoveredAt": "2026-09-30T12:30:54.114Z",
       "locales": {
         "en": {
-          "title": "PL/Haskell v6.0 Released",
-          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+          "title": "Enhancing Microsoft Azure Virtual Machine lifecycle",
+          "summary": "Our Virtual Machine Lifecycle policy guides how we manage these transitions, giving Azure customers transparency, predictability, and guidance. The post Enhancing Microsoft Azure Virtual Machine lifecycle appeared first on Micros…"
         },
         "fr": {
-          "title": "PL/Haskell v6.0 Released",
-          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+          "title": "Enhancing Microsoft Azure Virtual Machine lifecycle",
+          "summary": "Our Virtual Machine Lifecycle policy guides how we manage these transitions, giving Azure customers transparency, predictability, and guidance. The post Enhancing Microsoft Azure Virtual Machine lifecycle appeared first on Micros…"
         }
       }
     },
@@ -531,25 +588,6 @@
         "fr": {
           "title": "Google Beam expands with new regions, partners, and customers",
           "summary": "We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network."
-        }
-      }
-    },
-    {
-      "slug": "20260924-ship-agents-faster-with-expanded-model-choice-voice-agents-and-c-a291ddaa",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimization/",
-      "publishedAt": "2026-09-24T18:00:00.000Z",
-      "discoveredAt": "2026-09-28T13:49:24.390Z",
-      "locales": {
-        "en": {
-          "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
-          "summary": "The best model for your business will keep changing. Adopting it should move your business forward, not send your team back to rebuild the architecture around it. The post Ship agents faster with expanded model choice, voice agen…"
-        },
-        "fr": {
-          "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
-          "summary": "The best model for your business will keep changing. Adopting it should move your business forward, not send your team back to rebuild the architecture around it. The post Ship agents faster with expanded model choice, voice agen…"
         }
       }
     },
@@ -649,25 +687,6 @@
       }
     },
     {
-      "slug": "20260918-sep-18-2026-announcements-partnering-with-accenture-on-embedded--47b87cc2",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-      "publishedAt": "2026-09-18T00:00:00.000Z",
-      "discoveredAt": "2026-09-18T20:52:50.113Z",
-      "locales": {
-        "en": {
-          "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
-          "summary": "Category Title Sep 17,"
-        },
-        "fr": {
-          "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
-          "summary": "Category Title Sep 17,"
-        }
-      }
-    },
-    {
       "slug": "20260921-kubernetes-v137-tracking-when-a-persistentvolumeclaim-was-last-u-a668dc12",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -683,6 +702,44 @@
         "fr": {
           "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
           "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC, telling…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-cloudflare-os-your-companys-agent-workspace-managed-for-you-8b10a1bc",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/managed-cloudflare-os/",
+      "publishedAt": "2026-10-01T13:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
+          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch i…"
+        },
+        "fr": {
+          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
+          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch i…"
+        }
+      }
+    },
+    {
+      "slug": "20260918-sep-18-2026-announcements-partnering-with-accenture-on-embedded--47b87cc2",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "publishedAt": "2026-09-18T00:00:00.000Z",
+      "discoveredAt": "2026-09-18T20:52:50.113Z",
+      "locales": {
+        "en": {
+          "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
+          "summary": "Category Title Sep 17,"
+        },
+        "fr": {
+          "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
+          "summary": "Category Title Sep 17,"
         }
       }
     },
@@ -706,21 +763,40 @@
       }
     },
     {
-      "slug": "20260929-tracing-agent-harness-behavior-with-nvidia-nemo-relay-82767a63",
+      "slug": "20260928-plhaskell-v60-released-22b5aed3",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/plhaskell-v60-released-3388/",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "locales": {
+        "en": {
+          "title": "PL/Haskell v6.0 Released",
+          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+        },
+        "fr": {
+          "title": "PL/Haskell v6.0 Released",
+          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+        }
+      }
+    },
+    {
+      "slug": "20260930-expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia--581ab947",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/tracing-agent-harness-behavior-with-nvidia-nemo-relay/",
-      "publishedAt": "2026-09-29T21:06:38.000Z",
+      "href": "https://developer.nvidia.com/blog/expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia-scada-server-sdk/",
+      "publishedAt": "2026-09-30T19:13:08.000Z",
       "discoveredAt": "2026-09-30T22:13:14.519Z",
       "locales": {
         "en": {
-          "title": "Tracing Agent Harness Behavior with NVIDIA NeMo Relay",
-          "summary": "An agent can finish a task and still take an inefficient path. A failed search can trigger another search. A truncated file read can lead to a command fetching..."
+          "title": "Expanding AI Storage Access with NVIDIA cuObject and the NVIDIA SCADA Server SDK",
+          "summary": "AI infrastructure engineers, storage developers, and cloud service providers need fast and secure access to high-capacity file and object storage to support AI..."
         },
         "fr": {
-          "title": "Tracing Agent Harness Behavior with NVIDIA NeMo Relay",
-          "summary": "An agent can finish a task and still take an inefficient path. A failed search can trigger another search. A truncated file read can lead to a command fetching..."
+          "title": "Expanding AI Storage Access with NVIDIA cuObject and the NVIDIA SCADA Server SDK",
+          "summary": "AI infrastructure engineers, storage developers, and cloud service providers need fast and secure access to high-capacity file and object storage to support AI..."
         }
       }
     },
@@ -759,25 +835,6 @@
         "fr": {
           "title": "Amazon Bedrock expands Claude model availability to in-country inferencing in India",
           "summary": "Anthropic's Claude Opus 5, Claude Sonnet 5, and Claude Haiku 4.5 are now available in India through Amazon Bedrock geographic cross-Region inference. You can access these models while processing data within the India Regions, and…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-detect-and-send-production-issues-straight-to-your-agent-7fbfd064",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/real-time-issue-detection/",
-      "publishedAt": "2026-09-30T13:00:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Detect and send production issues straight to your agent",
-          "summary": "You can now use built-in error monitoring in Cloudflare Workers to group production failures and send stack traces, logs, traces, and application context directly to a coding agent to investigate further and open a pull request."
-        },
-        "fr": {
-          "title": "Detect and send production issues straight to your agent",
-          "summary": "You can now use built-in error monitoring in Cloudflare Workers to group production failures and send stack traces, logs, traces, and application context directly to a coding agent to investigate further and open a pull request."
         }
       }
     },
@@ -839,21 +896,21 @@
       }
     },
     {
-      "slug": "20260928-pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform--1249398e",
-      "topic": "Computer Systems",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform-to-bridge-the-ai-prototype-to-production-chasm-3389/",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "slug": "20260924-ship-agents-faster-with-expanded-model-choice-voice-agents-and-c-a291ddaa",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimization/",
+      "publishedAt": "2026-09-24T18:00:00.000Z",
+      "discoveredAt": "2026-09-28T13:49:24.390Z",
       "locales": {
         "en": {
-          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
-          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+          "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
+          "summary": "The best model for your business will keep changing. Adopting it should move your business forward, not send your team back to rebuild the architecture around it. The post Ship agents faster with expanded model choice, voice agen…"
         },
         "fr": {
-          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
-          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+          "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
+          "summary": "The best model for your business will keep changing. Adopting it should move your business forward, not send your team back to rebuild the architecture around it. The post Ship agents faster with expanded model choice, voice agen…"
         }
       }
     },
@@ -873,25 +930,6 @@
         "fr": {
           "title": "New experts join Google’s AI & Economy team",
           "summary": "We are expanding our AI & Economy team with world-class academic advisors, fellows, and core internal researchers."
-        }
-      }
-    },
-    {
-      "slug": "20260923-your-architecture-diagram-is-not-your-resilience-3d9d2fea",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/your-architecture-diagram-is-not-your-resilience/",
-      "publishedAt": "2026-09-23T16:00:00.000Z",
-      "discoveredAt": "2026-09-25T11:47:50.156Z",
-      "locales": {
-        "en": {
-          "title": "Your architecture diagram is not your resilience",
-          "summary": "For years, resilience was something you set up once. That kept the lights on, but it treated resilience as a project with an end date rather than a property you maintain. The post Your architecture diagram is not your resilience…"
-        },
-        "fr": {
-          "title": "Your architecture diagram is not your resilience",
-          "summary": "For years, resilience was something you set up once. That kept the lights on, but it treated resilience as a project with an end date rather than a property you maintain. The post Your architecture diagram is not your resilience…"
         }
       }
     },
@@ -991,25 +1029,6 @@
       }
     },
     {
-      "slug": "20260917-sep-17-2026-announcements-introducing-the-life-sciences-verifica-a29db010",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/life-sciences-verification-program",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:49.442Z",
-      "locales": {
-        "en": {
-          "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
-          "summary": "Category Title Sep 1, 2026"
-        },
-        "fr": {
-          "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
-          "summary": "Category Title Sep 1, 2026"
-        }
-      }
-    },
-    {
       "slug": "20260916-kubernetes-v137-hardening-container-storage-with-bind-mount-opti-6cde82bb",
       "topic": "AI Systems",
       "source": "Kubernetes Blog",
@@ -1025,6 +1044,44 @@
         "fr": {
           "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
           "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for example, prohib…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-announcing-cloudflare-k2-serverless-event-streams-d7084788",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+      "publishedAt": "2026-10-01T13:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "Announcing Cloudflare K2: serverless event streams",
+          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered…"
+        },
+        "fr": {
+          "title": "Announcing Cloudflare K2: serverless event streams",
+          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered…"
+        }
+      }
+    },
+    {
+      "slug": "20260917-sep-17-2026-announcements-introducing-the-life-sciences-verifica-a29db010",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-17T21:19:49.442Z",
+      "locales": {
+        "en": {
+          "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
+          "summary": "Category Title Sep 1, 2026"
+        },
+        "fr": {
+          "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
+          "summary": "Category Title Sep 1, 2026"
         }
       }
     },
@@ -1048,21 +1105,40 @@
       }
     },
     {
-      "slug": "20260929-ai-native-by-design-lessons-learned-from-building-nvidia-tensorr-6ad13f9c",
+      "slug": "20260928-pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform--1249398e",
+      "topic": "Computer Systems",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform-to-bridge-the-ai-prototype-to-production-chasm-3389/",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "locales": {
+        "en": {
+          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
+          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+        },
+        "fr": {
+          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
+          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+        }
+      }
+    },
+    {
+      "slug": "20260929-tracing-agent-harness-behavior-with-nvidia-nemo-relay-82767a63",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/ai-native-by-design-lessons-learned-from-building-nvidia-tensorrt-model-connect/",
-      "publishedAt": "2026-09-29T19:10:59.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
+      "href": "https://developer.nvidia.com/blog/tracing-agent-harness-behavior-with-nvidia-nemo-relay/",
+      "publishedAt": "2026-09-29T21:06:38.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
       "locales": {
         "en": {
-          "title": "AI Native by Design: Lessons Learned from Building NVIDIA TensorRT Model Connect",
-          "summary": "Parallel work, model-family isolation, reversible changes, and GPU-backed validation shaped an open source project designed around coding agents NVIDIA TensorRT..."
+          "title": "Tracing Agent Harness Behavior with NVIDIA NeMo Relay",
+          "summary": "An agent can finish a task and still take an inefficient path. A failed search can trigger another search. A truncated file read can lead to a command fetching..."
         },
         "fr": {
-          "title": "AI Native by Design: Lessons Learned from Building NVIDIA TensorRT Model Connect",
-          "summary": "Parallel work, model-family isolation, reversible changes, and GPU-backed validation shaped an open source project designed around coding agents NVIDIA TensorRT..."
+          "title": "Tracing Agent Harness Behavior with NVIDIA NeMo Relay",
+          "summary": "An agent can finish a task and still take an inefficient path. A failed search can trigger another search. A truncated file read can lead to a command fetching..."
         }
       }
     },
@@ -1101,25 +1177,6 @@
         "fr": {
           "title": "Introducing Anthropic models on Amazon Bedrock for in-region inference in Seoul and Singapore",
           "summary": "Amazon Bedrock now supports Anthropic's Claude Opus 5 and Claude Sonnet 5 with in-region inference in Seoul, and Claude Sonnet 5 in Singapore. If you have local data processing requirements in South Korea or Singapore, you can no…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-simplifying-domains-for-people-and-agents-a9659704",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/simplifying-domains/",
-      "publishedAt": "2026-09-30T13:00:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Simplifying domains for people and agents",
-          "summary": "Cloudflare Registrar’s new search delivers fast, transparent results across 420+ extensions using Workers, Durable Objects, and WebSockets. Its expanded API and cf CLI also let agents search, register, and transfer domains."
-        },
-        "fr": {
-          "title": "Simplifying domains for people and agents",
-          "summary": "Cloudflare Registrar’s new search delivers fast, transparent results across 420+ extensions using Workers, Durable Objects, and WebSockets. Its expanded API and cf CLI also let agents search, register, and transfer domains."
         }
       }
     },
@@ -1181,21 +1238,21 @@
       }
     },
     {
-      "slug": "20260924-postgresql-19-beta-4-released-a454f777",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-19-beta-4-released-3386/",
-      "publishedAt": "2026-09-24T00:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "slug": "20260923-your-architecture-diagram-is-not-your-resilience-3d9d2fea",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/your-architecture-diagram-is-not-your-resilience/",
+      "publishedAt": "2026-09-23T16:00:00.000Z",
+      "discoveredAt": "2026-09-25T11:47:50.156Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL 19 Beta 4 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+          "title": "Your architecture diagram is not your resilience",
+          "summary": "For years, resilience was something you set up once. That kept the lights on, but it treated resilience as a project with an end date rather than a property you maintain. The post Your architecture diagram is not your resilience…"
         },
         "fr": {
-          "title": "PostgreSQL 19 Beta 4 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+          "title": "Your architecture diagram is not your resilience",
+          "summary": "For years, resilience was something you set up once. That kept the lights on, but it treated resilience as a project with an end date rather than a property you maintain. The post Your architecture diagram is not your resilience…"
         }
       }
     },
@@ -1215,25 +1272,6 @@
         "fr": {
           "title": "Co-creating the future of fashion with Google",
           "summary": "Google worked side-by-side with designers Jane Wade and Sergio Hudson to custom-design Google Flow tools to prep for NYFW."
-        }
-      }
-    },
-    {
-      "slug": "20260923-designing-agent-first-platforms-what-changes-when-agents-do-the--396802b1",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/designing-agent-first-platforms-what-changes-when-agents-do-the-work/",
-      "publishedAt": "2026-09-23T15:00:00.000Z",
-      "discoveredAt": "2026-09-25T11:47:50.156Z",
-      "locales": {
-        "en": {
-          "title": "Designing agent-first platforms: What changes when agents do the work",
-          "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software. The post Designing agent-first platforms: What changes when agents do the work appeared firs…"
-        },
-        "fr": {
-          "title": "Designing agent-first platforms: What changes when agents do the work",
-          "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software. The post Designing agent-first platforms: What changes when agents do the work appeared firs…"
         }
       }
     },
@@ -1333,25 +1371,6 @@
       }
     },
     {
-      "slug": "20260912-responsible-scaling-policy-3a0b4572",
-      "topic": "Security & Standards",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy",
-      "publishedAt": "2026-09-12T13:22:21.927Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Responsible Scaling Policy",
-          "summary": "Keep thinking Policy on the AI Exponential Security and compliance Transparency"
-        },
-        "fr": {
-          "title": "Responsible Scaling Policy",
-          "summary": "Keep thinking Policy on the AI Exponential Security and compliance Transparency"
-        }
-      }
-    },
-    {
       "slug": "20260915-kubernetes-v137-pod-level-resource-managers-graduated-to-beta-993e015b",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -1367,6 +1386,44 @@
         "fr": {
           "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
           "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod-Level Res…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-we-want-you-to-build-the-next-git-platform-on-cloudflare-7b804092",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
+      "publishedAt": "2026-10-01T13:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "We want you to build the next Git platform on Cloudflare",
+          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes."
+        },
+        "fr": {
+          "title": "We want you to build the next Git platform on Cloudflare",
+          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes."
+        }
+      }
+    },
+    {
+      "slug": "20260912-responsible-scaling-policy-3a0b4572",
+      "topic": "Security & Standards",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy",
+      "publishedAt": "2026-09-12T13:22:21.927Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Responsible Scaling Policy",
+          "summary": "Keep thinking Policy on the AI Exponential Security and compliance Transparency"
+        },
+        "fr": {
+          "title": "Responsible Scaling Policy",
+          "summary": "Keep thinking Policy on the AI Exponential Security and compliance Transparency"
         }
       }
     },
@@ -1390,21 +1447,40 @@
       }
     },
     {
-      "slug": "20260929-lower-the-cost-of-building-and-running-visual-ai-agents-with-nvi-1d571796",
+      "slug": "20260924-postgresql-19-beta-4-released-a454f777",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-19-beta-4-released-3386/",
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL 19 Beta 4 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+        },
+        "fr": {
+          "title": "PostgreSQL 19 Beta 4 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+        }
+      }
+    },
+    {
+      "slug": "20260929-ai-native-by-design-lessons-learned-from-building-nvidia-tensorr-6ad13f9c",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/lower-the-cost-of-building-and-running-visual-ai-agents-with-nvidia-vss-blueprint-3-3/",
-      "publishedAt": "2026-09-29T18:56:05.000Z",
+      "href": "https://developer.nvidia.com/blog/ai-native-by-design-lessons-learned-from-building-nvidia-tensorrt-model-connect/",
+      "publishedAt": "2026-09-29T19:10:59.000Z",
       "discoveredAt": "2026-09-29T22:13:00.950Z",
       "locales": {
         "en": {
-          "title": "Lower the Cost of Building and Running Visual AI Agents with NVIDIA VSS Blueprint 3.3",
-          "summary": "Vision-language models have made it possible to build visual AI agents that understand video at production scale. The harder problem is turning that capability..."
+          "title": "AI Native by Design: Lessons Learned from Building NVIDIA TensorRT Model Connect",
+          "summary": "Parallel work, model-family isolation, reversible changes, and GPU-backed validation shaped an open source project designed around coding agents NVIDIA TensorRT..."
         },
         "fr": {
-          "title": "Lower the Cost of Building and Running Visual AI Agents with NVIDIA VSS Blueprint 3.3",
-          "summary": "Vision-language models have made it possible to build visual AI agents that understand video at production scale. The harder problem is turning that capability..."
+          "title": "AI Native by Design: Lessons Learned from Building NVIDIA TensorRT Model Connect",
+          "summary": "Parallel work, model-family isolation, reversible changes, and GPU-backed validation shaped an open source project designed around coding agents NVIDIA TensorRT..."
         }
       }
     },
@@ -1443,25 +1519,6 @@
         "fr": {
           "title": "Bring near-Astra intelligence to everyday work with GPT-6.1 Sol on Amazon Bedrock",
           "summary": "GPT-6.1 Sol is now generally available on Amazon Bedrock, bringing stronger reasoning to coding, computer use, and professional workloads that run frequently."
-        }
-      }
-    },
-    {
-      "slug": "20260930-monetization-gateway-beta-charge-ai-agents-for-consumption-with--054701a3",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/monetization-gateway-beta/",
-      "publishedAt": "2026-09-30T13:00:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Monetization Gateway beta: charge AI agents for consumption with HTTP 402",
-          "summary": "Cloudflare’s AI Gateway, Ceramic.ai, Stocktwits, and more are using the Cloudflare Monetization Gateway today to charge agents for access to tokens, APIs, and MCP tools. U.S.-based sellers can now apply for access to the closed b…"
-        },
-        "fr": {
-          "title": "Monetization Gateway beta: charge AI agents for consumption with HTTP 402",
-          "summary": "Cloudflare’s AI Gateway, Ceramic.ai, Stocktwits, and more are using the Cloudflare Monetization Gateway today to charge agents for access to tokens, APIs, and MCP tools. U.S.-based sellers can now apply for access to the closed b…"
         }
       }
     },
@@ -1523,21 +1580,21 @@
       }
     },
     {
-      "slug": "20260923-pgbouncer-1260-released---fixes-three-cves-10080888",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgbouncer-1260-released-fixes-three-cves-3385/",
-      "publishedAt": "2026-09-23T00:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "slug": "20260923-designing-agent-first-platforms-what-changes-when-agents-do-the--396802b1",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/designing-agent-first-platforms-what-changes-when-agents-do-the-work/",
+      "publishedAt": "2026-09-23T15:00:00.000Z",
+      "discoveredAt": "2026-09-25T11:47:50.156Z",
       "locales": {
         "en": {
-          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+          "title": "Designing agent-first platforms: What changes when agents do the work",
+          "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software. The post Designing agent-first platforms: What changes when agents do the work appeared firs…"
         },
         "fr": {
-          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+          "title": "Designing agent-first platforms: What changes when agents do the work",
+          "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software. The post Designing agent-first platforms: What changes when agents do the work appeared firs…"
         }
       }
     },
@@ -1557,25 +1614,6 @@
         "fr": {
           "title": "Making global data easier to explore",
           "summary": "Google and the UN system have launched the UN System Data Commons, a new open platform making global statistics accessible and easy to search."
-        }
-      }
-    },
-    {
-      "slug": "20260922-gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foun-bcb27d91",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
-      "publishedAt": "2026-09-22T18:30:00.000Z",
-      "discoveredAt": "2026-09-25T11:47:50.156Z",
-      "locales": {
-        "en": {
-          "title": "GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry",
-          "summary": "Explore GPT-6 Astra, Sol, and GPT-6 Luna in Microsoft Foundry, with scalable model options for production AI agents, complex workflows, and high-volume tasks. The post GPT-6 Astra, Sol, and Luna: For production agents in Microsof…"
-        },
-        "fr": {
-          "title": "GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry",
-          "summary": "Explore GPT-6 Astra, Sol, and GPT-6 Luna in Microsoft Foundry, with scalable model options for production AI agents, complex workflows, and high-volume tasks. The post GPT-6 Astra, Sol, and Luna: For production agents in Microsof…"
         }
       }
     },
@@ -1675,25 +1713,6 @@
       }
     },
     {
-      "slug": "20260831-sep-1-2026-announcements-developing-enterprise-frontier-safeguar-07a03b3c",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
-      "publishedAt": "2026-08-31T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Sep 1, 2026 Announcements Developing Enterprise Frontier Safeguards with our customers",
-          "summary": "Category Title Aug 3"
-        },
-        "fr": {
-          "title": "Sep 1, 2026 Announcements Developing Enterprise Frontier Safeguards with our customers",
-          "summary": "Category Title Aug 3"
-        }
-      }
-    },
-    {
       "slug": "20260914-kubernetes-changed-block-tracking-api---beta-differences-081539c8",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -1709,6 +1728,44 @@
         "fr": {
           "title": "Kubernetes Changed Block Tracking API - Beta Differences",
           "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet familiar with ch…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-ai-search-is-now-generally-available-1309166d",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/ai-search-ga/",
+      "publishedAt": "2026-10-01T13:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "AI Search is now generally available",
+          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pri…"
+        },
+        "fr": {
+          "title": "AI Search is now generally available",
+          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pri…"
+        }
+      }
+    },
+    {
+      "slug": "20260831-sep-1-2026-announcements-developing-enterprise-frontier-safeguar-07a03b3c",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+      "publishedAt": "2026-08-31T23:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Sep 1, 2026 Announcements Developing Enterprise Frontier Safeguards with our customers",
+          "summary": "Category Title Aug 3"
+        },
+        "fr": {
+          "title": "Sep 1, 2026 Announcements Developing Enterprise Frontier Safeguards with our customers",
+          "summary": "Category Title Aug 3"
         }
       }
     },
@@ -1732,21 +1789,40 @@
       }
     },
     {
-      "slug": "20260928-nvidia-open-agent-safety-platform-a-reference-for-continuous-in--cceb2d50",
+      "slug": "20260923-pgbouncer-1260-released---fixes-three-cves-10080888",
       "topic": "Security & Standards",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-open-agent-safety-platform-a-reference-for-continuous-in-silicon-agent-monitoring/",
-      "publishedAt": "2026-09-28T09:36:02.000Z",
-      "discoveredAt": "2026-09-28T13:49:24.390Z",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgbouncer-1260-released-fixes-three-cves-3385/",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
       "locales": {
         "en": {
-          "title": "NVIDIA Open Agent Safety Platform: A Reference for Continuous In-Silicon Agent Monitoring",
-          "summary": "To understand where agentic AI stands today, consider the last seismic shift in technology: the rise of the internet in the 90s. It was new and full of..."
+          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
         },
         "fr": {
-          "title": "NVIDIA Open Agent Safety Platform: A Reference for Continuous In-Silicon Agent Monitoring",
-          "summary": "To understand where agentic AI stands today, consider the last seismic shift in technology: the rise of the internet in the 90s. It was new and full of..."
+          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+        }
+      }
+    },
+    {
+      "slug": "20260929-lower-the-cost-of-building-and-running-visual-ai-agents-with-nvi-1d571796",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/lower-the-cost-of-building-and-running-visual-ai-agents-with-nvidia-vss-blueprint-3-3/",
+      "publishedAt": "2026-09-29T18:56:05.000Z",
+      "discoveredAt": "2026-09-29T22:13:00.950Z",
+      "locales": {
+        "en": {
+          "title": "Lower the Cost of Building and Running Visual AI Agents with NVIDIA VSS Blueprint 3.3",
+          "summary": "Vision-language models have made it possible to build visual AI agents that understand video at production scale. The harder problem is turning that capability..."
+        },
+        "fr": {
+          "title": "Lower the Cost of Building and Running Visual AI Agents with NVIDIA VSS Blueprint 3.3",
+          "summary": "Vision-language models have made it possible to build visual AI agents that understand video at production scale. The harder problem is turning that capability..."
         }
       }
     },
@@ -1785,25 +1861,6 @@
         "fr": {
           "title": "Prompt engineering fundamentals for Amazon Quick",
           "summary": "Prompt engineering in Amazon Quick shapes how accurately its AI-powered features respond to your requests. Part 1 of a two-part series covers the foundational principles and reusable frameworks (specificity, context-setting, few-…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-pay-per-use-when-ai-uses-your-work-you-should-get-paid-bb78f7e3",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/pay-per-use/",
-      "publishedAt": "2026-09-30T13:00:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Pay Per Use: when AI uses your work, you should get paid",
-          "summary": "Pay Per Use is now in beta. AI companies report when they use publishers’ content, and Cloudflare handles billing, payouts, and reporting, so our customers are paid according to use."
-        },
-        "fr": {
-          "title": "Pay Per Use: when AI uses your work, you should get paid",
-          "summary": "Pay Per Use is now in beta. AI companies report when they use publishers’ content, and Cloudflare handles billing, payouts, and reporting, so our customers are paid according to use."
         }
       }
     },
@@ -1865,21 +1922,21 @@
       }
     },
     {
-      "slug": "20260922-sql-manager-for-postgresql-70-meet-the-ai-assistant-2ae8d80a",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/sql-manager-for-postgresql-70-meet-the-ai-assistant-3379/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "slug": "20260922-gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foun-bcb27d91",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+      "publishedAt": "2026-09-22T18:30:00.000Z",
+      "discoveredAt": "2026-09-25T11:47:50.156Z",
       "locales": {
         "en": {
-          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
-          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
+          "title": "GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry",
+          "summary": "Explore GPT-6 Astra, Sol, and GPT-6 Luna in Microsoft Foundry, with scalable model options for production AI agents, complex workflows, and high-volume tasks. The post GPT-6 Astra, Sol, and Luna: For production agents in Microsof…"
         },
         "fr": {
-          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
-          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
+          "title": "GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry",
+          "summary": "Explore GPT-6 Astra, Sol, and GPT-6 Luna in Microsoft Foundry, with scalable model options for production AI agents, complex workflows, and high-volume tasks. The post GPT-6 Astra, Sol, and Luna: For production agents in Microsof…"
         }
       }
     },
@@ -1899,25 +1956,6 @@
         "fr": {
           "title": "AI for Societal Impact",
           "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
-        }
-      }
-    },
-    {
-      "slug": "20260922-claude-opus-55-comes-to-microsoft-foundry-for-long-running-codin-42305587",
-      "topic": "Computer Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-5-5-comes-to-microsoft-foundry-for-long-running-coding-and-knowledge/4558051",
-      "publishedAt": "2026-09-22T17:00:25.000Z",
-      "discoveredAt": "2026-09-25T11:47:50.156Z",
-      "locales": {
-        "en": {
-          "title": "Claude Opus 5.5 comes to Microsoft Foundry for long-running coding and knowledge work",
-          "summary": "AI models are increasingly taking on work that extends far beyond a single prompt: building a feature across a codebase, investigating a complex issue, synthesizing hundreds of pages of information, or working through a multi-ste…"
-        },
-        "fr": {
-          "title": "Claude Opus 5.5 comes to Microsoft Foundry for long-running coding and knowledge work",
-          "summary": "AI models are increasingly taking on work that extends far beyond a single prompt: building a feature across a codebase, investigating a complex issue, synthesizing hundreds of pages of information, or working through a multi-ste…"
         }
       }
     },
@@ -1998,25 +2036,6 @@
       }
     },
     {
-      "slug": "20260831-aug-31-2026-announcements-improving-our-alignment-and-security-e-e83ff5fa",
-      "topic": "Security & Standards",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/improving-alignment-security-efforts",
-      "publishedAt": "2026-08-31T00:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Aug 31, 2026 Announcements Improving our alignment and security efforts",
-          "summary": "Announcements Developing Enterprise Frontier Safeguards with our customers A"
-        },
-        "fr": {
-          "title": "Aug 31, 2026 Announcements Improving our alignment and security efforts",
-          "summary": "Announcements Developing Enterprise Frontier Safeguards with our customers A"
-        }
-      }
-    },
-    {
       "slug": "20260914-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -2032,6 +2051,44 @@
         "fr": {
           "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
           "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-support-for-modern-cryptographic-algorithms-in-workers-d7ce28a3",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
+      "publishedAt": "2026-10-01T13:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "Support for modern cryptographic algorithms in Workers",
+          "summary": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today."
+        },
+        "fr": {
+          "title": "Support for modern cryptographic algorithms in Workers",
+          "summary": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today."
+        }
+      }
+    },
+    {
+      "slug": "20260831-aug-31-2026-announcements-improving-our-alignment-and-security-e-e83ff5fa",
+      "topic": "Security & Standards",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "publishedAt": "2026-08-31T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Aug 31, 2026 Announcements Improving our alignment and security efforts",
+          "summary": "Announcements Developing Enterprise Frontier Safeguards with our customers A"
+        },
+        "fr": {
+          "title": "Aug 31, 2026 Announcements Improving our alignment and security efforts",
+          "summary": "Announcements Developing Enterprise Frontier Safeguards with our customers A"
         }
       }
     },
@@ -2055,21 +2112,40 @@
       }
     },
     {
-      "slug": "20260928-add-runtime-controls-to-ai-agents-with-nvidia-openshell-723ddaed",
-      "topic": "AI Systems",
+      "slug": "20260922-sql-manager-for-postgresql-70-meet-the-ai-assistant-2ae8d80a",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/sql-manager-for-postgresql-70-meet-the-ai-assistant-3379/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
+          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
+        },
+        "fr": {
+          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
+          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
+        }
+      }
+    },
+    {
+      "slug": "20260928-nvidia-open-agent-safety-platform-a-reference-for-continuous-in--cceb2d50",
+      "topic": "Security & Standards",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell/",
-      "publishedAt": "2026-09-28T08:40:06.000Z",
+      "href": "https://developer.nvidia.com/blog/nvidia-open-agent-safety-platform-a-reference-for-continuous-in-silicon-agent-monitoring/",
+      "publishedAt": "2026-09-28T09:36:02.000Z",
       "discoveredAt": "2026-09-28T13:49:24.390Z",
       "locales": {
         "en": {
-          "title": "Add Runtime Controls to AI Agents with NVIDIA OpenShell",
-          "summary": "AI agents can be given a goal, write code, use tools, and keep working as new information becomes available. This opens the door to applications that..."
+          "title": "NVIDIA Open Agent Safety Platform: A Reference for Continuous In-Silicon Agent Monitoring",
+          "summary": "To understand where agentic AI stands today, consider the last seismic shift in technology: the rise of the internet in the 90s. It was new and full of..."
         },
         "fr": {
-          "title": "Add Runtime Controls to AI Agents with NVIDIA OpenShell",
-          "summary": "AI agents can be given a goal, write code, use tools, and keep working as new information becomes available. This opens the door to applications that..."
+          "title": "NVIDIA Open Agent Safety Platform: A Reference for Continuous In-Silicon Agent Monitoring",
+          "summary": "To understand where agentic AI stands today, consider the last seismic shift in technology: the rise of the internet in the 90s. It was new and full of..."
         }
       }
     },
@@ -2108,25 +2184,6 @@
         "fr": {
           "title": "Prompt engineering by Quick component: Patterns and pitfalls",
           "summary": "Part 2 of our Amazon Quick prompt engineering series goes component by component. Learn the prompt patterns that get the best results from Amazon Quick Research, Quick Flows, Quick Sight, chat agents, and action integrations, plu…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-identify-ai-model-overuse-with-user-insights-9063144a",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
-      "publishedAt": "2026-09-30T13:00:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Identify AI model overuse with User Insights",
-          "summary": "AI Gateway User Insights now adds task, model, turn, and user categories to help teams understand AI adoption and make better model decisions. This is available free to AI Gateway users."
-        },
-        "fr": {
-          "title": "Identify AI model overuse with User Insights",
-          "summary": "AI Gateway User Insights now adds task, model, turn, and user categories to help teams understand AI adoption and make better model decisions. This is available free to AI Gateway users."
         }
       }
     },
@@ -2188,21 +2245,21 @@
       }
     },
     {
-      "slug": "20260922-pgsql-test-real-postgres-testing-for-faster-development-loops-212e48db",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgsql-test-real-postgres-testing-for-faster-development-loops-3380/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "slug": "20260922-claude-opus-55-comes-to-microsoft-foundry-for-long-running-codin-42305587",
+      "topic": "Computer Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-5-5-comes-to-microsoft-foundry-for-long-running-coding-and-knowledge/4558051",
+      "publishedAt": "2026-09-22T17:00:25.000Z",
+      "discoveredAt": "2026-09-25T11:47:50.156Z",
       "locales": {
         "en": {
-          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
-          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+          "title": "Claude Opus 5.5 comes to Microsoft Foundry for long-running coding and knowledge work",
+          "summary": "AI models are increasingly taking on work that extends far beyond a single prompt: building a feature across a codebase, investigating a complex issue, synthesizing hundreds of pages of information, or working through a multi-ste…"
         },
         "fr": {
-          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
-          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+          "title": "Claude Opus 5.5 comes to Microsoft Foundry for long-running coding and knowledge work",
+          "summary": "AI models are increasingly taking on work that extends far beyond a single prompt: building a feature across a codebase, investigating a complex issue, synthesizing hundreds of pages of information, or working through a multi-ste…"
         }
       }
     },
@@ -2222,25 +2279,6 @@
         "fr": {
           "title": "Building AI to accelerate science and improve lives",
           "summary": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …"
-        }
-      }
-    },
-    {
-      "slug": "20260916-microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadr-7164ca73",
-      "topic": "Computer Science",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distributed-hybrid-infrastructure/",
-      "publishedAt": "2026-09-16T16:00:00.000Z",
-      "discoveredAt": "2026-09-18T11:10:48.341Z",
-      "locales": {
-        "en": {
-          "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
-          "summary": "Gartner highlighted Microsoft’s unified single-product architecture, flexibility across hyperconverged and disaggregated architectures, and more. The post Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for…"
-        },
-        "fr": {
-          "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
-          "summary": "Gartner highlighted Microsoft’s unified single-product architecture, flexibility across hyperconverged and disaggregated architectures, and more. The post Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for…"
         }
       }
     },
@@ -2302,25 +2340,6 @@
       }
     },
     {
-      "slug": "20260830-announcements-aug-31-2026-improving-our-alignment-and-security-e-e83ff5fa",
-      "topic": "Security & Standards",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/improving-alignment-security-efforts",
-      "publishedAt": "2026-08-30T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Announcements Aug 31, 2026 Improving our alignment and security efforts On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.",
-          "summary": "icious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threat reports in 2025. Announcem"
-        },
-        "fr": {
-          "title": "Announcements Aug 31, 2026 Improving our alignment and security efforts On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.",
-          "summary": "icious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threat reports in 2025. Announcem"
-        }
-      }
-    },
-    {
       "slug": "20260911-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -2336,6 +2355,44 @@
         "fr": {
           "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
           "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-introducing-cloudflare-basin-an-open-serverless-data-platform-no-9ee6a049",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/cloudflare-basin/",
+      "publishedAt": "2026-10-01T12:58:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Cloudflare Basin: an open, serverless data platform, now generally available",
+          "summary": "Cloudflare Basin is built on Apache Iceberg and R2 Object Storage. With general availability, developers can ingest, manage, and query large datasets at scale without paying data egress fees."
+        },
+        "fr": {
+          "title": "Introducing Cloudflare Basin: an open, serverless data platform, now generally available",
+          "summary": "Cloudflare Basin is built on Apache Iceberg and R2 Object Storage. With general availability, developers can ingest, manage, and query large datasets at scale without paying data egress fees."
+        }
+      }
+    },
+    {
+      "slug": "20260830-announcements-aug-31-2026-improving-our-alignment-and-security-e-e83ff5fa",
+      "topic": "Security & Standards",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "publishedAt": "2026-08-30T23:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Announcements Aug 31, 2026 Improving our alignment and security efforts On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.",
+          "summary": "icious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threat reports in 2025. Announcem"
+        },
+        "fr": {
+          "title": "Announcements Aug 31, 2026 Improving our alignment and security efforts On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.",
+          "summary": "icious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threat reports in 2025. Announcem"
         }
       }
     },
@@ -2359,21 +2416,40 @@
       }
     },
     {
-      "slug": "20260927-how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-effici-874cfb41",
-      "topic": "Computer Systems",
+      "slug": "20260922-pgsql-test-real-postgres-testing-for-faster-development-loops-212e48db",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgsql-test-real-postgres-testing-for-faster-development-loops-3380/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+        },
+        "fr": {
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+        }
+      }
+    },
+    {
+      "slug": "20260928-add-runtime-controls-to-ai-agents-with-nvidia-openshell-723ddaed",
+      "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency/",
-      "publishedAt": "2026-09-27T19:16:41.000Z",
+      "href": "https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell/",
+      "publishedAt": "2026-09-28T08:40:06.000Z",
       "discoveredAt": "2026-09-28T13:49:24.390Z",
       "locales": {
         "en": {
-          "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
-          "summary": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a..."
+          "title": "Add Runtime Controls to AI Agents with NVIDIA OpenShell",
+          "summary": "AI agents can be given a goal, write code, use tools, and keep working as new information becomes available. This opens the door to applications that..."
         },
         "fr": {
-          "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
-          "summary": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a..."
+          "title": "Add Runtime Controls to AI Agents with NVIDIA OpenShell",
+          "summary": "AI agents can be given a goal, write code, use tools, and keep working as new information becomes available. This opens the door to applications that..."
         }
       }
     },
@@ -2412,25 +2488,6 @@
         "fr": {
           "title": "Building an AI-powered contract intelligence platform with Amazon Quick and Amazon Bedrock AgentCore",
           "summary": "Manually extracting data from hundreds of vendor contracts doesn't scale, and RAG chat tools fall short on portfolio-wide questions. This post shares a contract intelligence platform on AWS that uses AI agents to extract and veri…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-cloudflare-containers-rebuilt-to-scale-agent-sandboxes-bde6015f",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/faster-agent-sandboxes/",
-      "publishedAt": "2026-09-30T12:58:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare Containers, rebuilt to scale agent sandboxes",
-          "summary": "Cloudflare Containers now start 6x faster, let your agent choose each sandbox's image and instance type at runtime, and support filesystem snapshots in public beta, all controlled from a Durable Object."
-        },
-        "fr": {
-          "title": "Cloudflare Containers, rebuilt to scale agent sandboxes",
-          "summary": "Cloudflare Containers now start 6x faster, let your agent choose each sandbox's image and instance type at runtime, and support filesystem snapshots in public beta, all controlled from a Durable Object."
         }
       }
     },
@@ -2492,21 +2549,21 @@
       }
     },
     {
-      "slug": "20260922-postgrescompare-220-released-ffbdcf1e",
+      "slug": "20260916-microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadr-7164ca73",
       "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgrescompare-220-released-3382/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distributed-hybrid-infrastructure/",
+      "publishedAt": "2026-09-16T16:00:00.000Z",
+      "discoveredAt": "2026-09-18T11:10:48.341Z",
       "locales": {
         "en": {
-          "title": "PostgresCompare 2.2.0 Released",
-          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
+          "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
+          "summary": "Gartner highlighted Microsoft’s unified single-product architecture, flexibility across hyperconverged and disaggregated architectures, and more. The post Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for…"
         },
         "fr": {
-          "title": "PostgresCompare 2.2.0 Released",
-          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
+          "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
+          "summary": "Gartner highlighted Microsoft’s unified single-product architecture, flexibility across hyperconverged and disaggregated architectures, and more. The post Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for…"
         }
       }
     },
@@ -2526,25 +2583,6 @@
         "fr": {
           "title": "AI for everyone in every language",
           "summary": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed."
-        }
-      }
-    },
-    {
-      "slug": "20260910-microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for--6542ac34",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management/",
-      "publishedAt": "2026-09-10T21:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management",
-          "summary": "Microsoft was named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management. Discover how AKS, Azure Arc, and Azure Container Apps help organizations run AI and hybrid workloads at scale. The post Microsoft named a…"
-        },
-        "fr": {
-          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management",
-          "summary": "Microsoft was named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management. Discover how AKS, Azure Arc, and Azure Container Apps help organizations run AI and hybrid workloads at scale. The post Microsoft named a…"
         }
       }
     },
@@ -2606,25 +2644,6 @@
       }
     },
     {
-      "slug": "20260827-aug-27-2026-announcements-previewing-the-model-hardware-standard-e8e7441a",
-      "topic": "Security & Standards",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-      "publishedAt": "2026-08-27T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:49.442Z",
-      "locales": {
-        "en": {
-          "title": "Aug 27, 2026 Announcements Previewing the Model Hardware Standard",
-          "summary": "Announcements Improving our alignment and security efforts Aug 27, 2"
-        },
-        "fr": {
-          "title": "Aug 27, 2026 Announcements Previewing the Model Hardware Standard",
-          "summary": "Announcements Improving our alignment and security efforts Aug 27, 2"
-        }
-      }
-    },
-    {
       "slug": "20260910-kubernetes-v137-scheduler-preemption-for-in-place-pod-resize-alp-e2763381",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -2640,6 +2659,44 @@
         "fr": {
           "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
           "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
+        }
+      }
+    },
+    {
+      "slug": "20260930-cloudflare-impact-reaches-100-million-in-donations-32b86ef1",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/100-million-donations/",
+      "publishedAt": "2026-09-30T13:01:55.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare Impact reaches $100 million in donations",
+          "summary": "This week, Cloudflare's Impact programs will reach $100 million in donated services. This milestone means that thousands of entities including journalists, civil society, state and local governments, election management bodies, a…"
+        },
+        "fr": {
+          "title": "Cloudflare Impact reaches $100 million in donations",
+          "summary": "This week, Cloudflare's Impact programs will reach $100 million in donated services. This milestone means that thousands of entities including journalists, civil society, state and local governments, election management bodies, a…"
+        }
+      }
+    },
+    {
+      "slug": "20260827-aug-27-2026-announcements-previewing-the-model-hardware-standard-e8e7441a",
+      "topic": "Security & Standards",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "publishedAt": "2026-08-27T00:00:00.000Z",
+      "discoveredAt": "2026-09-17T21:19:49.442Z",
+      "locales": {
+        "en": {
+          "title": "Aug 27, 2026 Announcements Previewing the Model Hardware Standard",
+          "summary": "Announcements Improving our alignment and security efforts Aug 27, 2"
+        },
+        "fr": {
+          "title": "Aug 27, 2026 Announcements Previewing the Model Hardware Standard",
+          "summary": "Announcements Improving our alignment and security efforts Aug 27, 2"
         }
       }
     },
@@ -2663,21 +2720,40 @@
       }
     },
     {
-      "slug": "20260923-introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-152ae0a4",
+      "slug": "20260922-postgrescompare-220-released-ffbdcf1e",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgrescompare-220-released-3382/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
+        },
+        "fr": {
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
+        }
+      }
+    },
+    {
+      "slug": "20260927-how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-effici-874cfb41",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning/",
-      "publishedAt": "2026-09-23T22:55:03.000Z",
-      "discoveredAt": "2026-09-24T11:41:43.564Z",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency/",
+      "publishedAt": "2026-09-27T19:16:41.000Z",
+      "discoveredAt": "2026-09-28T13:49:24.390Z",
       "locales": {
         "en": {
-          "title": "Introducing NV-Reason-CT Open 3D CT VLM for Radiologist Chain-of-Thought Reasoning",
-          "summary": "Radiology AI has made remarkable strides in detecting abnormalities across chest X-rays, pathology slides, and 2D scans. Yet one of the most clinically rich and..."
+          "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
+          "summary": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a..."
         },
         "fr": {
-          "title": "Introducing NV-Reason-CT Open 3D CT VLM for Radiologist Chain-of-Thought Reasoning",
-          "summary": "Radiology AI has made remarkable strides in detecting abnormalities across chest X-rays, pathology slides, and 2D scans. Yet one of the most clinically rich and..."
+          "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
+          "summary": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a..."
         }
       }
     },
@@ -2716,25 +2792,6 @@
         "fr": {
           "title": "How Condé Nast built multimodal video discovery with Amazon Bedrock",
           "summary": "Condé Nast's editorial teams spent an average of 250 minutes per task searching a library of more than 140,000 videos using only titles and descriptions. Working with the AWS Generative AI Innovation Center, they built a multimod…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-the-internet-has-a-second-audience-992490a7",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/agentic-web/",
-      "publishedAt": "2026-09-30T12:58:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "The Internet has a second audience",
-          "summary": "More than half the traffic reaching sites on Cloudflare is now automated, and AI agents are the fastest-growing part of it. We're giving site owners the tools to see who's visiting, decide who gets in, and charge for access."
-        },
-        "fr": {
-          "title": "The Internet has a second audience",
-          "summary": "More than half the traffic reaching sites on Cloudflare is now automated, and AI agents are the fastest-growing part of it. We're giving site owners the tools to see who's visiting, decide who gets in, and charge for access."
         }
       }
     },
@@ -2796,21 +2853,21 @@
       }
     },
     {
-      "slug": "20260917-pgadmin-4-v918-released-413bcda5",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:49.442Z",
+      "slug": "20260910-microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for--6542ac34",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management/",
+      "publishedAt": "2026-09-10T21:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
       "locales": {
         "en": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management",
+          "summary": "Microsoft was named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management. Discover how AKS, Azure Arc, and Azure Container Apps help organizations run AI and hybrid workloads at scale. The post Microsoft named a…"
         },
         "fr": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management",
+          "summary": "Microsoft was named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management. Discover how AKS, Azure Arc, and Azure Container Apps help organizations run AI and hybrid workloads at scale. The post Microsoft named a…"
         }
       }
     },
@@ -2834,25 +2891,6 @@
       }
     },
     {
-      "slug": "20260910-the-economics-of-agent-optimization-how-ai-agent-governance-cont-d6870c93",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-how-ai-agent-governance-controls-cost-and-proves-roi/",
-      "publishedAt": "2026-09-10T17:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "The Economics of Agent Optimization: How AI agent governance controls cost and proves ROI",
-          "summary": "This blog post is the fourth and final installment of The Economics of Agent Optimization, which shares the strategies, capabilities, and proof points that can help you optimize agent costs and run AI as a managed investment syst…"
-        },
-        "fr": {
-          "title": "The Economics of Agent Optimization: How AI agent governance controls cost and proves ROI",
-          "summary": "This blog post is the fourth and final installment of The Economics of Agent Optimization, which shares the strategies, capabilities, and proof points that can help you optimize agent costs and run AI as a managed investment syst…"
-        }
-      }
-    },
-    {
       "slug": "20260902-below-the-harness-governing-a-multi-model-multi-harness-world-68dc5609",
       "topic": "AI Systems",
       "source": "Docker Blog",
@@ -2868,25 +2906,6 @@
         "fr": {
           "title": "Below the Harness: Governing a Multi-Model, Multi-Harness World",
           "summary": "We believe the future is a multi-model, multi-harness world. And we think it needs a new trust model. In 1988, Norm Hardy described a problem that had been quietly breaking systems for years: the confused deputy. A program that t…"
-        }
-      }
-    },
-    {
-      "slug": "20260826-announcements-aug-27-2026-previewing-the-model-hardware-standard-e8e7441a",
-      "topic": "Security & Standards",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-      "publishedAt": "2026-08-26T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Announcements Aug 27, 2026 Previewing the Model Hardware Standard We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
-          "summary": "pth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month. Product"
-        },
-        "fr": {
-          "title": "Announcements Aug 27, 2026 Previewing the Model Hardware Standard We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
-          "summary": "pth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month. Product"
         }
       }
     },
@@ -2910,6 +2929,44 @@
       }
     },
     {
+      "slug": "20260930-cut-your-ai-spend-with-ai-gateways-auto-router-ac0f8886",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/auto-router/",
+      "publishedAt": "2026-09-30T13:00:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Cut your AI spend with AI Gateway's Auto Router",
+          "summary": "Cloudflare AI Gateway now features a model router that evaluates request complexity using an edge-deployed classifier to select the optimal model. By balancing expected output quality against token costs, organizations can dramat…"
+        },
+        "fr": {
+          "title": "Cut your AI spend with AI Gateway's Auto Router",
+          "summary": "Cloudflare AI Gateway now features a model router that evaluates request complexity using an edge-deployed classifier to select the optimal model. By balancing expected output quality against token costs, organizations can dramat…"
+        }
+      }
+    },
+    {
+      "slug": "20260826-announcements-aug-27-2026-previewing-the-model-hardware-standard-e8e7441a",
+      "topic": "Security & Standards",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "publishedAt": "2026-08-26T23:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Announcements Aug 27, 2026 Previewing the Model Hardware Standard We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
+          "summary": "pth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month. Product"
+        },
+        "fr": {
+          "title": "Announcements Aug 27, 2026 Previewing the Model Hardware Standard We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
+          "summary": "pth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month. Product"
+        }
+      }
+    },
+    {
       "slug": "20260820-supply-chain-attack-on-arrayref-14062eb1",
       "topic": "Systems & Backend",
       "source": "Rust Blog",
@@ -2929,21 +2986,40 @@
       }
     },
     {
-      "slug": "20260923-accelerating-dropless-moe-training-in-jax-with-nvidia-transforme-833c207b",
+      "slug": "20260917-pgadmin-4-v918-released-413bcda5",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-17T21:19:49.442Z",
+      "locales": {
+        "en": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+        },
+        "fr": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-152ae0a4",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/",
-      "publishedAt": "2026-09-23T21:34:20.000Z",
+      "href": "https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning/",
+      "publishedAt": "2026-09-23T22:55:03.000Z",
       "discoveredAt": "2026-09-24T11:41:43.564Z",
       "locales": {
         "en": {
-          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
-          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
+          "title": "Introducing NV-Reason-CT Open 3D CT VLM for Radiologist Chain-of-Thought Reasoning",
+          "summary": "Radiology AI has made remarkable strides in detecting abnormalities across chest X-rays, pathology slides, and 2D scans. Yet one of the most clinically rich and..."
         },
         "fr": {
-          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
-          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
+          "title": "Introducing NV-Reason-CT Open 3D CT VLM for Radiologist Chain-of-Thought Reasoning",
+          "summary": "Radiology AI has made remarkable strides in detecting abnormalities across chest X-rays, pathology slides, and 2D scans. Yet one of the most clinically rich and..."
         }
       }
     },
@@ -2982,25 +3058,6 @@
         "fr": {
           "title": "Grok 4.7 is now available on Amazon Bedrock",
           "summary": "xAI's Grok 4.7 is now available on Amazon Bedrock: a frontier model for coding, long-running agents, and knowledge work. It offers a 500K token context window and four configurable reasoning effort levels, reachable through the R…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-using-ai-to-chart-a-course-for-our-post-quantum-migration-a9490e2c",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/ai-driven-cryptography-discovery/",
-      "publishedAt": "2026-09-29T13:00:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "Using AI to chart a course for our post-quantum migration",
-          "summary": "We’re building CryptoLabe, an internal AI-powered tool that discovers cryptography across our codebase, surfaces dependencies, and helps us progress toward a full post-quantum migration by 2029. Here’s what we’ve learned so far."
-        },
-        "fr": {
-          "title": "Using AI to chart a course for our post-quantum migration",
-          "summary": "We’re building CryptoLabe, an internal AI-powered tool that discovers cryptography across our codebase, surfaces dependencies, and helps us progress toward a full post-quantum migration by 2029. Here’s what we’ve learned so far."
         }
       }
     },
@@ -3062,21 +3119,21 @@
       }
     },
     {
-      "slug": "20260916-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
-      "publishedAt": "2026-09-16T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:35.562Z",
+      "slug": "20260910-the-economics-of-agent-optimization-how-ai-agent-governance-cont-d6870c93",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-how-ai-agent-governance-controls-cost-and-proves-roi/",
+      "publishedAt": "2026-09-10T17:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
       "locales": {
         "en": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+          "title": "The Economics of Agent Optimization: How AI agent governance controls cost and proves ROI",
+          "summary": "This blog post is the fourth and final installment of The Economics of Agent Optimization, which shares the strategies, capabilities, and proof points that can help you optimize agent costs and run AI as a managed investment syst…"
         },
         "fr": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+          "title": "The Economics of Agent Optimization: How AI agent governance controls cost and proves ROI",
+          "summary": "This blog post is the fourth and final installment of The Economics of Agent Optimization, which shares the strategies, capabilities, and proof points that can help you optimize agent costs and run AI as a managed investment syst…"
         }
       }
     },
@@ -3100,25 +3157,6 @@
       }
     },
     {
-      "slug": "20260910-the-future-of-infrastructure-resiliency-starts-with-modernizatio-5b295c3c",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/the-future-of-infrastructure-resiliency-starts-with-modernization/",
-      "publishedAt": "2026-09-10T16:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "The future of infrastructure resiliency starts with modernization",
-          "summary": "Modernization only succeeds when organizations have confidence that their infrastructure can withstand disruption and continue supporting critical operations. The post The future of infrastructure resiliency starts with moderniza…"
-        },
-        "fr": {
-          "title": "The future of infrastructure resiliency starts with modernization",
-          "summary": "Modernization only succeeds when organizations have confidence that their infrastructure can withstand disruption and continue supporting critical operations. The post The future of infrastructure resiliency starts with moderniza…"
-        }
-      }
-    },
-    {
       "slug": "20260831-secure-by-default-is-your-only-way-forward-a7538814",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -3134,25 +3172,6 @@
         "fr": {
           "title": "Secure by default is your only way forward",
           "summary": "The newest worker on your team builds with whatever it finds and never asks what deserves your trust. Our answer is a hardened foundation and a boundary built for agents."
-        }
-      }
-    },
-    {
-      "slug": "20260826-aug-27-2026-announcements-expanding-our-support-for-scientists-d575f18c",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/expanding-support-for-scientists",
-      "publishedAt": "2026-08-26T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
-          "summary": "Announcements Previewing the Model Hardware Standard Aug 25, 2026"
-        },
-        "fr": {
-          "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
-          "summary": "Announcements Previewing the Model Hardware Standard Aug 25, 2026"
         }
       }
     },
@@ -3176,6 +3195,44 @@
       }
     },
     {
+      "slug": "20260930-detect-and-send-production-issues-straight-to-your-agent-7fbfd064",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/real-time-issue-detection/",
+      "publishedAt": "2026-09-30T13:00:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Detect and send production issues straight to your agent",
+          "summary": "You can now use built-in error monitoring in Cloudflare Workers to group production failures and send stack traces, logs, traces, and application context directly to a coding agent to investigate further and open a pull request."
+        },
+        "fr": {
+          "title": "Detect and send production issues straight to your agent",
+          "summary": "You can now use built-in error monitoring in Cloudflare Workers to group production failures and send stack traces, logs, traces, and application context directly to a coding agent to investigate further and open a pull request."
+        }
+      }
+    },
+    {
+      "slug": "20260826-aug-27-2026-announcements-expanding-our-support-for-scientists-d575f18c",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/expanding-support-for-scientists",
+      "publishedAt": "2026-08-26T23:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
+          "summary": "Announcements Previewing the Model Hardware Standard Aug 25, 2026"
+        },
+        "fr": {
+          "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
+          "summary": "Announcements Previewing the Model Hardware Standard Aug 25, 2026"
+        }
+      }
+    },
+    {
       "slug": "20260820-announcing-rust-1980-3f795da6",
       "topic": "Systems & Backend",
       "source": "Rust Blog",
@@ -3195,21 +3252,40 @@
       }
     },
     {
-      "slug": "20260923-efficient-moe-training-for-biological-foundation-models-dbf88787",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/efficient-moe-training-for-biological-foundation-models/",
-      "publishedAt": "2026-09-23T20:10:55.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "slug": "20260916-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:35.562Z",
       "locales": {
         "en": {
-          "title": "Efficient MoE Training for Biological Foundation Models",
-          "summary": "As language models grow, scaling dense architectures becomes increasingly expensive. In a dense transformer, every token passes through every layer, so adding..."
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
         },
         "fr": {
-          "title": "Efficient MoE Training for Biological Foundation Models",
-          "summary": "As language models grow, scaling dense architectures becomes increasingly expensive. In a dense transformer, every token passes through every layer, so adding..."
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-accelerating-dropless-moe-training-in-jax-with-nvidia-transforme-833c207b",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/",
+      "publishedAt": "2026-09-23T21:34:20.000Z",
+      "discoveredAt": "2026-09-24T11:41:43.564Z",
+      "locales": {
+        "en": {
+          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
+          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
+        },
+        "fr": {
+          "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
+          "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE..."
         }
       }
     },
@@ -3248,25 +3324,6 @@
         "fr": {
           "title": "Introducing Claude Sonnet 5.5 on AWS",
           "summary": "Claude Sonnet 5.5 is now available on Amazon Bedrock and Claude Platform on AWS. It's a smarter, more efficient Sonnet model for focused coding and knowledge work, with a lower cost per task at faster speed. This post covers what…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-building-a-certificate-authority-for-the-whole-internet-b368433c",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflare-certificate-authority/",
-      "publishedAt": "2026-09-29T13:00:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "Building a certificate authority for the whole Internet",
-          "summary": "Twelve years after launching Universal SSL, Cloudflare is applying to become a certificate authority. By combining an established root, an ACME-first approach, and Merkle Tree Certificates, we are building a post-quantum CA for t…"
-        },
-        "fr": {
-          "title": "Building a certificate authority for the whole Internet",
-          "summary": "Twelve years after launching Universal SSL, Cloudflare is applying to become a certificate authority. By combining an established root, an ACME-first approach, and Merkle Tree Certificates, we are building a post-quantum CA for t…"
         }
       }
     },
@@ -3328,21 +3385,21 @@
       }
     },
     {
-      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
-      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "slug": "20260910-the-future-of-infrastructure-resiliency-starts-with-modernizatio-5b295c3c",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/the-future-of-infrastructure-resiliency-starts-with-modernization/",
+      "publishedAt": "2026-09-10T16:00:00.000Z",
       "discoveredAt": "2026-09-12T13:23:24.384Z",
       "locales": {
         "en": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+          "title": "The future of infrastructure resiliency starts with modernization",
+          "summary": "Modernization only succeeds when organizations have confidence that their infrastructure can withstand disruption and continue supporting critical operations. The post The future of infrastructure resiliency starts with moderniza…"
         },
         "fr": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+          "title": "The future of infrastructure resiliency starts with modernization",
+          "summary": "Modernization only succeeds when organizations have confidence that their infrastructure can withstand disruption and continue supporting critical operations. The post The future of infrastructure resiliency starts with moderniza…"
         }
       }
     },
@@ -3366,25 +3423,6 @@
       }
     },
     {
-      "slug": "20260909-two-zones-or-three-a-design-framework-for-zone-resilient-azure-w-d4c3e65e",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/two-zones-or-three-a-design-framework-for-zone-resilient-azure-workloads/",
-      "publishedAt": "2026-09-09T18:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Two zones or three? A design framework for zone-resilient Azure workloads",
-          "summary": "Zone resiliency isn't a single number you apply to a whole workload. The useful question isn't “how many zones?” but “how many zones does each component need to survive the loss of one?” Decide zone patterns component by componen…"
-        },
-        "fr": {
-          "title": "Two zones or three? A design framework for zone-resilient Azure workloads",
-          "summary": "Zone resiliency isn't a single number you apply to a whole workload. The useful question isn't “how many zones?” but “how many zones does each component need to survive the loss of one?” Decide zone patterns component by componen…"
-        }
-      }
-    },
-    {
       "slug": "20260825-moving-from-minimus-to-docker-hardened-images-7e216419",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -3400,25 +3438,6 @@
         "fr": {
           "title": "Moving from Minimus to Docker Hardened Images",
           "summary": "The Minimus registry goes offline on October 22. Here is the migration path, the free help Docker is offering, and where to start."
-        }
-      }
-    },
-    {
-      "slug": "20260824-aug-25-2026-announcements-funding-better-evaluations-of-ais-impa-0c54f135",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/wellbeing-research-grants",
-      "publishedAt": "2026-08-24T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Aug 25, 2026 Announcements Funding better evaluations of AI’s impact on wellbeing",
-          "summary": "Announcements Expanding our support for scientists Aug 14, 2026 <"
-        },
-        "fr": {
-          "title": "Aug 25, 2026 Announcements Funding better evaluations of AI’s impact on wellbeing",
-          "summary": "Announcements Expanding our support for scientists Aug 14, 2026 <"
         }
       }
     },
@@ -3442,21 +3461,78 @@
       }
     },
     {
-      "slug": "20260923-validate-gpu-cluster-readiness-before-ai-workloads-land-a69161c4",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land/",
-      "publishedAt": "2026-09-23T19:45:27.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "slug": "20260930-simplifying-domains-for-people-and-agents-a9659704",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/simplifying-domains/",
+      "publishedAt": "2026-09-30T13:00:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
       "locales": {
         "en": {
-          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
-          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
+          "title": "Simplifying domains for people and agents",
+          "summary": "Cloudflare Registrar’s new search delivers fast, transparent results across 420+ extensions using Workers, Durable Objects, and WebSockets. Its expanded API and cf CLI also let agents search, register, and transfer domains."
         },
         "fr": {
-          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
-          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
+          "title": "Simplifying domains for people and agents",
+          "summary": "Cloudflare Registrar’s new search delivers fast, transparent results across 420+ extensions using Workers, Durable Objects, and WebSockets. Its expanded API and cf CLI also let agents search, register, and transfer domains."
+        }
+      }
+    },
+    {
+      "slug": "20260824-aug-25-2026-announcements-funding-better-evaluations-of-ais-impa-0c54f135",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "publishedAt": "2026-08-24T23:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Aug 25, 2026 Announcements Funding better evaluations of AI’s impact on wellbeing",
+          "summary": "Announcements Expanding our support for scientists Aug 14, 2026 <"
+        },
+        "fr": {
+          "title": "Aug 25, 2026 Announcements Funding better evaluations of AI’s impact on wellbeing",
+          "summary": "Announcements Expanding our support for scientists Aug 14, 2026 <"
+        }
+      }
+    },
+    {
+      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+        },
+        "fr": {
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-efficient-moe-training-for-biological-foundation-models-dbf88787",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/efficient-moe-training-for-biological-foundation-models/",
+      "publishedAt": "2026-09-23T20:10:55.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "Efficient MoE Training for Biological Foundation Models",
+          "summary": "As language models grow, scaling dense architectures becomes increasingly expensive. In a dense transformer, every token passes through every layer, so adding..."
+        },
+        "fr": {
+          "title": "Efficient MoE Training for Biological Foundation Models",
+          "summary": "As language models grow, scaling dense architectures becomes increasingly expensive. In a dense transformer, every token passes through every layer, so adding..."
         }
       }
     },
@@ -3495,25 +3571,6 @@
         "fr": {
           "title": "Build real-time voice applications with vLLM-Omni on SageMaker AI – Part 1",
           "summary": "Deploy a text-to-speech model on Amazon SageMaker AI with the AWS vLLM-Omni Deep Learning Container and stream generated speech over a persistent bidirectional connection. This Part 1 tutorial deploys Qwen3-TTS and streams speech…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-adaptive-application-security-for-the-ai-era-how-cloudflare-conn-fae6e561",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/ai-era-framework/",
-      "publishedAt": "2026-09-29T13:00:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "Adaptive application security for the AI era: how Cloudflare connects code, traffic, and intelligence to stop attacks",
-          "summary": "Cloudflare introduces an adaptive security framework connecting risk discovery, agent governance, runtime protection, and AI-powered response in a continuous learning loop."
-        },
-        "fr": {
-          "title": "Adaptive application security for the AI era: how Cloudflare connects code, traffic, and intelligence to stop attacks",
-          "summary": "Cloudflare introduces an adaptive security framework connecting risk discovery, agent governance, runtime protection, and AI-powered response in a continuous learning loop."
         }
       }
     },
@@ -3575,21 +3632,21 @@
       }
     },
     {
-      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "slug": "20260909-two-zones-or-three-a-design-framework-for-zone-resilient-azure-w-d4c3e65e",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/two-zones-or-three-a-design-framework-for-zone-resilient-azure-workloads/",
+      "publishedAt": "2026-09-09T18:00:00.000Z",
       "discoveredAt": "2026-09-12T13:23:24.384Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+          "title": "Two zones or three? A design framework for zone-resilient Azure workloads",
+          "summary": "Zone resiliency isn't a single number you apply to a whole workload. The useful question isn't “how many zones?” but “how many zones does each component need to survive the loss of one?” Decide zone patterns component by componen…"
         },
         "fr": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+          "title": "Two zones or three? A design framework for zone-resilient Azure workloads",
+          "summary": "Zone resiliency isn't a single number you apply to a whole workload. The useful question isn't “how many zones?” but “how many zones does each component need to survive the loss of one?” Decide zone patterns component by componen…"
         }
       }
     },
@@ -3609,25 +3666,6 @@
         "fr": {
           "title": "3 ways to prep for your next big race with Search",
           "summary": "Search can help runners get race-day ready with registration alerts, tailored training plans, and more."
-        }
-      }
-    },
-    {
-      "slug": "20260908-beyond-the-benchmark-how-an-adaptive-approach-drives-scientific--c3e4a63e",
-      "topic": "AI Performance",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/beyond-the-benchmark-how-an-adaptive-approach-drives-scientific-discovery/",
-      "publishedAt": "2026-09-08T20:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Beyond the benchmark: How an adaptive approach drives scientific discovery",
-          "summary": "For research and development (R&D) organizations, the promise of agentic AI is not a better one-time answer. It is a new way to explore complex scientific and engineering problems: pursuing multiple hypotheses, validating them ag…"
-        },
-        "fr": {
-          "title": "Beyond the benchmark: How an adaptive approach drives scientific discovery",
-          "summary": "For research and development (R&D) organizations, the promise of agentic AI is not a better one-time answer. It is a new way to explore complex scientific and engineering problems: pursuing multiple hypotheses, validating them ag…"
         }
       }
     },
@@ -3670,21 +3708,59 @@
       }
     },
     {
-      "slug": "20260923-manage-kubernetes-node-fleets-with-nodewright-6b35eb72",
+      "slug": "20260930-monetization-gateway-beta-charge-ai-agents-for-consumption-with--054701a3",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/monetization-gateway-beta/",
+      "publishedAt": "2026-09-30T13:00:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Monetization Gateway beta: charge AI agents for consumption with HTTP 402",
+          "summary": "Cloudflare’s AI Gateway, Ceramic.ai, Stocktwits, and more are using the Cloudflare Monetization Gateway today to charge agents for access to tokens, APIs, and MCP tools. U.S.-based sellers can now apply for access to the closed b…"
+        },
+        "fr": {
+          "title": "Monetization Gateway beta: charge AI agents for consumption with HTTP 402",
+          "summary": "Cloudflare’s AI Gateway, Ceramic.ai, Stocktwits, and more are using the Cloudflare Monetization Gateway today to charge agents for access to tokens, APIs, and MCP tools. U.S.-based sellers can now apply for access to the closed b…"
+        }
+      }
+    },
+    {
+      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
       "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        },
+        "fr": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-validate-gpu-cluster-readiness-before-ai-workloads-land-a69161c4",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
-      "publishedAt": "2026-09-23T18:25:56.000Z",
+      "href": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land/",
+      "publishedAt": "2026-09-23T19:45:27.000Z",
       "discoveredAt": "2026-09-23T21:28:35.112Z",
       "locales": {
         "en": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
+          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
         },
         "fr": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
+          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
         }
       }
     },
@@ -3723,25 +3799,6 @@
         "fr": {
           "title": "Generate images and video with vLLM-Omni on SageMaker AI – Part 2",
           "summary": "Deploy two generative media models from one AWS vLLM-Omni Deep Learning Container on Amazon SageMaker AI. Generate an image with FLUX.2-klein through real-time inference, then animate it into video with Wan2.1-VACE through asynch…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-building-a-post-quantum-certificate-authority-with-merkle-tree-c-5035106f",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/pq-ca-with-mtcs/",
-      "publishedAt": "2026-09-29T13:00:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "Building a post-quantum certificate authority with Merkle Tree Certificates",
-          "summary": "As post-quantum signatures threaten to inflate TLS handshakes and certificate transparency logs, Merkle Tree Certificates offer a path to compact, auditable authentication. Cloudflare’s new certificate authority will support MTC…"
-        },
-        "fr": {
-          "title": "Building a post-quantum certificate authority with Merkle Tree Certificates",
-          "summary": "As post-quantum signatures threaten to inflate TLS handshakes and certificate transparency logs, Merkle Tree Certificates offer a path to compact, auditable authentication. Cloudflare’s new certificate authority will support MTC…"
         }
       }
     },
@@ -3803,21 +3860,21 @@
       }
     },
     {
-      "slug": "20260910-pgvaulttde-v171-transparent-data-encryption-for-postgresql-17-an-8b0f1977",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "slug": "20260908-beyond-the-benchmark-how-an-adaptive-approach-drives-scientific--c3e4a63e",
+      "topic": "AI Performance",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/beyond-the-benchmark-how-an-adaptive-approach-drives-scientific-discovery/",
+      "publishedAt": "2026-09-08T20:00:00.000Z",
       "discoveredAt": "2026-09-12T13:23:24.384Z",
       "locales": {
         "en": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+          "title": "Beyond the benchmark: How an adaptive approach drives scientific discovery",
+          "summary": "For research and development (R&D) organizations, the promise of agentic AI is not a better one-time answer. It is a new way to explore complex scientific and engineering problems: pursuing multiple hypotheses, validating them ag…"
         },
         "fr": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+          "title": "Beyond the benchmark: How an adaptive approach drives scientific discovery",
+          "summary": "For research and development (R&D) organizations, the promise of agentic AI is not a better one-time answer. It is a new way to explore complex scientific and engineering problems: pursuing multiple hypotheses, validating them ag…"
         }
       }
     },
@@ -3837,25 +3894,6 @@
         "fr": {
           "title": "Get ready for the game with new football features in Search",
           "summary": "Track live game feeds, explore detailed stats, and get custom fantasy recommendations directly in Search this season."
-        }
-      }
-    },
-    {
-      "slug": "20260903-enterprise-ai-transformation-relies-on-the-end-to-end-platform-a-ee3a6ee1",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/enterprise-ai-transformation-relies-on-the-end-to-end-platform-azure-was-built-for-this-moment/",
-      "publishedAt": "2026-09-03T19:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment",
-          "summary": "The recognition for Microsoft over the past couple of weeks comes down to models, infrastructure, data, applications, and developer tools working as one system when AI moves into production. The post Enterprise AI transformation…"
-        },
-        "fr": {
-          "title": "Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment",
-          "summary": "The recognition for Microsoft over the past couple of weeks comes down to models, infrastructure, data, applications, and developer tools working as one system when AI moves into production. The post Enterprise AI transformation…"
         }
       }
     },
@@ -3898,21 +3936,59 @@
       }
     },
     {
-      "slug": "20260923-how-swe-serve-exposes-the-gap-between-local-tests-and-live-servi-9e926410",
+      "slug": "20260930-pay-per-use-when-ai-uses-your-work-you-should-get-paid-bb78f7e3",
       "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/pay-per-use/",
+      "publishedAt": "2026-09-30T13:00:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Pay Per Use: when AI uses your work, you should get paid",
+          "summary": "Pay Per Use is now in beta. AI companies report when they use publishers’ content, and Cloudflare handles billing, payouts, and reporting, so our customers are paid according to use."
+        },
+        "fr": {
+          "title": "Pay Per Use: when AI uses your work, you should get paid",
+          "summary": "Pay Per Use is now in beta. AI companies report when they use publishers’ content, and Cloudflare handles billing, payouts, and reporting, so our customers are paid according to use."
+        }
+      }
+    },
+    {
+      "slug": "20260910-pgvaulttde-v171-transparent-data-encryption-for-postgresql-17-an-8b0f1977",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+        },
+        "fr": {
+          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
+          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-manage-kubernetes-node-fleets-with-nodewright-6b35eb72",
+      "topic": "Computer Science",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/",
-      "publishedAt": "2026-09-23T16:05:30.000Z",
+      "href": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
+      "publishedAt": "2026-09-23T18:25:56.000Z",
       "discoveredAt": "2026-09-23T21:28:35.112Z",
       "locales": {
         "en": {
-          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
-          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
+          "title": "Manage Kubernetes Node Fleets with NodeWright",
+          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
         },
         "fr": {
-          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
-          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
+          "title": "Manage Kubernetes Node Fleets with NodeWright",
+          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
         }
       }
     },
@@ -3951,25 +4027,6 @@
         "fr": {
           "title": "Implementing synthetic monitoring using Amazon Nova Act",
           "summary": "Learn an agent-driven approach to synthetic monitoring using Amazon Nova Act and Amazon Bedrock AgentCore. The post covers the architecture and patterns for resilient, managed user-journey validation that moves beyond brittle UI…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-we-tested-our-own-waf-with-frontier-ai-models-heres-what-we-foun-dba931a4",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/adaptive-ai-waf-testing/",
-      "publishedAt": "2026-09-29T13:00:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "We tested our own WAF with frontier AI models. Here’s what we found",
-          "summary": "We built a WAF tester that adapted each request based on what the WAF blocked or passed. This helped us explore variations that a fixed test might miss. We ran it across six attack categories on an authorized staging environment…"
-        },
-        "fr": {
-          "title": "We tested our own WAF with frontier AI models. Here’s what we found",
-          "summary": "We built a WAF tester that adapted each request based on what the WAF blocked or passed. This helped us explore variations that a fixed test might miss. We ran it across six attack categories on an authorized staging environment…"
         }
       }
     },
@@ -4031,21 +4088,21 @@
       }
     },
     {
-      "slug": "20260909-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "slug": "20260903-enterprise-ai-transformation-relies-on-the-end-to-end-platform-a-ee3a6ee1",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/enterprise-ai-transformation-relies-on-the-end-to-end-platform-azure-was-built-for-this-moment/",
+      "publishedAt": "2026-09-03T19:00:00.000Z",
       "discoveredAt": "2026-09-12T13:23:24.384Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+          "title": "Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment",
+          "summary": "The recognition for Microsoft over the past couple of weeks comes down to models, infrastructure, data, applications, and developer tools working as one system when AI moves into production. The post Enterprise AI transformation…"
         },
         "fr": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+          "title": "Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment",
+          "summary": "The recognition for Microsoft over the past couple of weeks comes down to models, infrastructure, data, applications, and developer tools working as one system when AI moves into production. The post Enterprise AI transformation…"
         }
       }
     },
@@ -4065,25 +4122,6 @@
         "fr": {
           "title": "Recreating a 70-year love story frame by frame",
           "summary": "Discover how filmmakers and Google DeepMind used AI to recreate a couple's unrecorded past in the short film \"Love, Rendered.\""
-        }
-      }
-    },
-    {
-      "slug": "20260903-gpt-6-astra-frontier-intelligence-for-work-now-generally-availab-50fd8613",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft-foundry/",
-      "publishedAt": "2026-09-03T18:15:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
-          "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days. The post GPT-6 Astra: Fronti…"
-        },
-        "fr": {
-          "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
-          "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days. The post GPT-6 Astra: Fronti…"
         }
       }
     },
@@ -4126,21 +4164,59 @@
       }
     },
     {
-      "slug": "20260922-whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rende-60dd7f94",
+      "slug": "20260930-identify-ai-model-overuse-with-user-insights-9063144a",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
+      "publishedAt": "2026-09-30T13:00:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Identify AI model overuse with User Insights",
+          "summary": "AI Gateway User Insights now adds task, model, turn, and user categories to help teams understand AI adoption and make better model decisions. This is available free to AI Gateway users."
+        },
+        "fr": {
+          "title": "Identify AI model overuse with User Insights",
+          "summary": "AI Gateway User Insights now adds task, model, turn, and user categories to help teams understand AI adoption and make better model decisions. This is available free to AI Gateway users."
+        }
+      }
+    },
+    {
+      "slug": "20260909-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+        },
+        "fr": {
+          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
+          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-how-swe-serve-exposes-the-gap-between-local-tests-and-live-servi-9e926410",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities/",
-      "publishedAt": "2026-09-22T20:48:36.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "href": "https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/",
+      "publishedAt": "2026-09-23T16:05:30.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
       "locales": {
         "en": {
-          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
-          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
+          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
+          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
         },
         "fr": {
-          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
-          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
+          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
+          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
         }
       }
     },
@@ -4179,25 +4255,6 @@
         "fr": {
           "title": "Automating Amazon Textract adapter lifecycle management across accounts",
           "summary": "Learn how to operationalize Amazon Textract Custom Queries adapters for production: infrastructure as code with AWS CloudFormation and Terraform, a cross-account adapter promotion process, a pre-classification routing pattern for…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-introducing-threat-signals-agentic-skills-for-open-source-threat-67d3a128",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/threat-signals/",
-      "publishedAt": "2026-09-29T13:00:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Threat Signals: agentic skills for open-source threat intelligence, free for every Cloudflare account",
-          "summary": "We are expanding access to Cloudforce One's Threat Events Platform to every Cloudflare account and introducing Threat Signals. Threat Signals automatically parses open-source threat reporting, extracts structured indicators, and…"
-        },
-        "fr": {
-          "title": "Introducing Threat Signals: agentic skills for open-source threat intelligence, free for every Cloudflare account",
-          "summary": "We are expanding access to Cloudforce One's Threat Events Platform to every Cloudflare account and introducing Threat Signals. Threat Signals automatically parses open-source threat reporting, extracts structured indicators, and…"
         }
       }
     },
@@ -4259,21 +4316,21 @@
       }
     },
     {
-      "slug": "20260909-autobase-211-released-991decc9",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "slug": "20260903-gpt-6-astra-frontier-intelligence-for-work-now-generally-availab-50fd8613",
+      "topic": "AI Systems",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft-foundry/",
+      "publishedAt": "2026-09-03T18:15:00.000Z",
       "discoveredAt": "2026-09-12T13:23:24.384Z",
       "locales": {
         "en": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+          "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
+          "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days. The post GPT-6 Astra: Fronti…"
         },
         "fr": {
-          "title": "Autobase 2.11 released",
-          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+          "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
+          "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days. The post GPT-6 Astra: Fronti…"
         }
       }
     },
@@ -4293,25 +4350,6 @@
         "fr": {
           "title": "Proactive cyber defense for governments and enterprises",
           "summary": "The Fairwind Program is a limited access program for governments and trusted partners to use our cyber defense tools."
-        }
-      }
-    },
-    {
-      "slug": "20260903-how-microsofts-physical-security-engineering-team-scaled-hybrid--ca0a43f6",
-      "topic": "Security & Standards",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/how-microsofts-physical-security-engineering-team-scaled-hybrid-operations-with-azure-arc-and-azure-virtual-desktop/",
-      "publishedAt": "2026-09-03T15:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "How Microsoft’s Physical Security Engineering Team scaled hybrid operations with Azure Arc and Azure Virtual Desktop",
-          "summary": "Learn how Microsoft used Azure Arc and Azure Virtual Desktop to simplify hybrid security operations, improve visibility, and scale globally. The post How Microsoft’s Physical Security Engineering Team scaled hybrid operations wit…"
-        },
-        "fr": {
-          "title": "How Microsoft’s Physical Security Engineering Team scaled hybrid operations with Azure Arc and Azure Virtual Desktop",
-          "summary": "Learn how Microsoft used Azure Arc and Azure Virtual Desktop to simplify hybrid security operations, improve visibility, and scale globally. The post How Microsoft’s Physical Security Engineering Team scaled hybrid operations wit…"
         }
       }
     },
@@ -4354,21 +4392,59 @@
       }
     },
     {
-      "slug": "20260922-enabling-private-high-performance-production-ai-inference-with-n-5a508d73",
-      "topic": "AI Performance",
+      "slug": "20260930-cloudflare-containers-rebuilt-to-scale-agent-sandboxes-bde6015f",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/faster-agent-sandboxes/",
+      "publishedAt": "2026-09-30T12:58:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare Containers, rebuilt to scale agent sandboxes",
+          "summary": "Cloudflare Containers now start 6x faster, let your agent choose each sandbox's image and instance type at runtime, and support filesystem snapshots in public beta, all controlled from a Durable Object."
+        },
+        "fr": {
+          "title": "Cloudflare Containers, rebuilt to scale agent sandboxes",
+          "summary": "Cloudflare Containers now start 6x faster, let your agent choose each sandbox's image and instance type at runtime, and support filesystem snapshots in public beta, all controlled from a Durable Object."
+        }
+      }
+    },
+    {
+      "slug": "20260909-autobase-211-released-991decc9",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/autobase-211-released-3374/",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+        },
+        "fr": {
+          "title": "Autobase 2.11 released",
+          "summary": "Autobase 2.11 is an important milestone in the evolution of the platform. Two years ago, we started working on a broader goal: evolve the Autobase Console from a PostgreSQL deployment UI into a platform for managing the complete…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rende-60dd7f94",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/",
-      "publishedAt": "2026-09-22T17:27:48.000Z",
+      "href": "https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities/",
+      "publishedAt": "2026-09-22T20:48:36.000Z",
       "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
-          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
+          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
+          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
         },
         "fr": {
-          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
-          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
+          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
+          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
         }
       }
     },
@@ -4388,25 +4464,6 @@
         "fr": {
           "title": "Scaling MoE reinforcement learning on Amazon EKS with EFA and DeepEP with 40% more throughput",
           "summary": "Learn how to scale Mixture-of-Experts (MoE) reinforcement learning on Amazon EKS using Elastic Fabric Adapter (EFA) and DeepEP. This post presents an architecture that combines Amazon EKS, EFA, and Amazon S3 and increased aggrega…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-is-your-domain-using-post-quantum-encryption-now-you-can-see-for-2c015076",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/post-quantum-visibility/",
-      "publishedAt": "2026-09-29T13:00:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "Is your domain using post-quantum encryption? Now you can see for yourself",
-          "summary": "Cloudflare has added visibility into post-quantum (PQ) encryption in TLS 1.3 directly into HTTP Analytics, Log Explorer, and Logpush. Learn how to make sure your domain is protected with PQ encryption."
-        },
-        "fr": {
-          "title": "Is your domain using post-quantum encryption? Now you can see for yourself",
-          "summary": "Cloudflare has added visibility into post-quantum (PQ) encryption in TLS 1.3 directly into HTTP Analytics, Log Explorer, and Logpush. Learn how to make sure your domain is protected with PQ encryption."
         }
       }
     },
@@ -4468,21 +4525,21 @@
       }
     },
     {
-      "slug": "20260905-pgconf-india-2027---dates-announced-and-cfp-open-0e2e5a3f",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgconf-india-2027-dates-announced-and-cfp-open-3370/",
-      "publishedAt": "2026-09-05T00:00:00.000Z",
+      "slug": "20260903-how-microsofts-physical-security-engineering-team-scaled-hybrid--ca0a43f6",
+      "topic": "Security & Standards",
+      "source": "Azure AI Blog",
+      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
+      "href": "https://azure.microsoft.com/en-us/blog/how-microsofts-physical-security-engineering-team-scaled-hybrid-operations-with-azure-arc-and-azure-virtual-desktop/",
+      "publishedAt": "2026-09-03T15:00:00.000Z",
       "discoveredAt": "2026-09-12T13:23:24.384Z",
       "locales": {
         "en": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
+          "title": "How Microsoft’s Physical Security Engineering Team scaled hybrid operations with Azure Arc and Azure Virtual Desktop",
+          "summary": "Learn how Microsoft used Azure Arc and Azure Virtual Desktop to simplify hybrid security operations, improve visibility, and scale globally. The post How Microsoft’s Physical Security Engineering Team scaled hybrid operations wit…"
         },
         "fr": {
-          "title": "PGConf India 2027 - Dates Announced and CFP Open",
-          "summary": "Hey there, Mark your calendars: PGConf India 2027 is set for March 2–5, 2027 at the Sheraton Grand Hotel at Brigade Gateway, Bengaluru . The Call for Papers is open right now. Important dates CFP closes — October 15, 2026 We tell…"
+          "title": "How Microsoft’s Physical Security Engineering Team scaled hybrid operations with Azure Arc and Azure Virtual Desktop",
+          "summary": "Learn how Microsoft used Azure Arc and Azure Virtual Desktop to simplify hybrid security operations, improve visibility, and scale globally. The post How Microsoft’s Physical Security Engineering Team scaled hybrid operations wit…"
         }
       }
     },
@@ -4502,63 +4559,6 @@
         "fr": {
           "title": "The latest AI news we announced in August 2026",
           "summary": "Here are Google’s latest AI updates from August 2026"
-        }
-      }
-    },
-    {
-      "slug": "20260902-the-economics-of-agent-optimization-context-engineering-for-ente-c7b41545",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents/",
-      "publishedAt": "2026-09-02T16:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "The Economics of Agent Optimization: Context engineering for enterprise AI agents",
-          "summary": "AI cost optimization goes beyond model selection. Discover how context engineering in Microsoft Foundry helps lower AI costs by improving knowledge retrieval, tool selection, memory, and agent performance at scale. The post The E…"
-        },
-        "fr": {
-          "title": "The Economics of Agent Optimization: Context engineering for enterprise AI agents",
-          "summary": "AI cost optimization goes beyond model selection. Discover how context engineering in Microsoft Foundry helps lower AI costs by improving knowledge retrieval, tool selection, memory, and agent performance at scale. The post The E…"
-        }
-      }
-    },
-    {
-      "slug": "20260828-kubernetes-v137-pod-certificates-and-cluster-trust-bundles-62fba438",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
-      "publishedAt": "2026-08-28T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
-          "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
-          "summary": "Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits a…"
-        }
-      }
-    },
-    {
-      "slug": "20260922-topology-aware-workload-scheduling-with-nvidia-topograph-05cef1f3",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/topology-aware-workload-scheduling-with-nvidia-topograph/",
-      "publishedAt": "2026-09-22T17:16:36.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "Topology-Aware Workload Scheduling with NVIDIA Topograph",
-          "summary": "AI factories are power-limited systems that deliver maximum value when fully optimized. GPU workload placement is a key optimization. Poor workload placement..."
-        },
-        "fr": {
-          "title": "Topology-Aware Workload Scheduling with NVIDIA Topograph",
-          "summary": "AI factories are power-limited systems that deliver maximum value when fully optimized. GPU workload placement is a key optimization. Poor workload placement..."
         }
       }
     }
