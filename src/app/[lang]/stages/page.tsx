@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { stagesPageTitle } from "@/lib/page-titles";
 import Link from "next/link";
 import { headers } from "next/headers";
 import { Newsletter } from "@/components/newsletter";
@@ -27,7 +28,7 @@ const COPY = {
     // is counted from the data; naming countries here meant editing the title
     // every time the board grew, which is how it came to say "Morocco and
     // France" for a list that was 73 French and 9 Moroccan.
-    title: "AI and cybersecurity internships in Europe, North America and Morocco",
+    title: stagesPageTitle("en"),
     // <title> only, the same split the posts and news briefs use: the heading
     // above stays readable while the search result fits. The regional title
     // runs to 79 characters with the brand suffix, against a site where every
@@ -74,7 +75,7 @@ const COPY = {
       "Every link is opened and its page read, not just pinged for a status code \u2014 three postings have answered HTTP 200 while saying, in the body, that they had closed. A listing is removed only after a person confirms it is gone; a refusal to serve us is treated as a fact about us, not about the job. Deadlines are shown only where the employer published one."
   },
   fr: {
-    title: "Stages IA et cybersécurité en Europe, Amérique du Nord et au Maroc",
+    title: stagesPageTitle("fr"),
     seoTitle: "Stages IA et cyber : Europe, USA, Maroc",
     subtitle:
       "Stages, alternances et PFE ouverts aux étudiants en informatique. Vérifiés et mis à jour chaque semaine.",

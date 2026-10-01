@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { isKnownCoverSlug } from "@/lib/og-titles";
 import { sanitizeTextInput } from "@/lib/input";
 import { comparisons, posts } from "@/content/posts";
 import { isLocale } from "@/i18n/config";
@@ -219,6 +220,27 @@ export async function GET(
   // "none" is the explicit opt-out used by decorative tiles.
   const topic =
     rawTopic === "none" ? "" : sanitizeTextInput(rawTopic.replace(/-/g, " "), { maxLength: 48 });
+
+  /**
+   * A slug this site does not publish gets no render.
+   *
+   * An unknown slug used to fall through titleFor() to titleFromSlug() and
+   * paletteFor() to the default palette, so every made-up path returned a 200
+   * PNG -- measured, ten invented slugs, ten renders. Each is a distinct
+   * immutable CDN object, and the rate limiter in front of it lives in one
+   * instance's memory, so it multiplies by whatever is warm.
+   *
+   * 404 rather than the redirect /api/og uses, because this path is only ever
+   * built by coverImageUrl() from a real post, brief, comparison or tile: an
+   * unknown slug here is a bug or an attack, not a page whose title drifted.
+   * Cached so a crawler that found a stale URL does not re-ask every time.
+   */
+  if (!isKnownCoverSlug(slug)) {
+    return new Response("Not found", {
+      status: 404,
+      headers: { "Cache-Control": "public, max-age=3600" }
+    });
+  }
 
   // With the label suppressed there is no topic left to colour by, so fall back
   // to the slug — decorative tiles name their subject there ("news-ai-systems"),

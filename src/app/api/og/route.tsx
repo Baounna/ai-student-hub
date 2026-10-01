@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { sanitizeTextInput } from "@/lib/input";
+import { isKnownOgTitle } from "@/lib/og-titles";
 import { siteConfig } from "@/config/site";
 import { imageFonts } from "@/assets/fonts";
 import { renderImage } from "@/lib/image-response";
@@ -89,7 +90,34 @@ export async function GET(request: Request) {
 
   // The text is drawn into an image rather than into markup, but it still comes
   // from a query string: keep it to plain characters and a sane length.
-  const title = sanitizeTextInput(rawTitle, { maxLength: MAX_TITLE }) || siteConfig.brandName;
+  const requested = sanitizeTextInput(rawTitle, { maxLength: MAX_TITLE }) || siteConfig.brandName;
+
+  /**
+   * A headline this site does not publish gets the brand card, not a render.
+   *
+   * The limiter above bounds how fast one address can ask; it does not bound
+   * how many DIFFERENT things can be asked for, and that is the expensive axis,
+   * because every distinct ?title= is its own Satori render and its own
+   * immutable CDN object. Forty invented titles produced forty renders on a
+   * production build before this.
+   *
+   * A redirect rather than a 404: a title that is real but missing from the set
+   * -- a page added in a shape src/lib/og-titles.ts does not yet read -- then
+   * degrades to a generic branded preview instead of a broken image. And a
+   * redirect costs no render, so an attacker's unique URLs all collapse onto
+   * one cached image.
+   */
+  if (!isKnownOgTitle(requested)) {
+    return new Response(null, {
+      status: 308,
+      headers: {
+        Location: "/api/og",
+        "Cache-Control": "public, max-age=86400"
+      }
+    });
+  }
+
+  const title = requested;
   const kicker = sanitizeTextInput(rawKicker, { maxLength: 48 });
 
   // Long headlines get a smaller size rather than overflowing the canvas.

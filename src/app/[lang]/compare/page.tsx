@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { comparePageTitle } from "@/lib/page-titles";
 import Image from "next/image";
 import Link from "next/link";
 import { headers } from "next/headers";
@@ -36,7 +37,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
-  const title = fr ? "Outils IA + cybersécurité pratiques pour le travail réel" : "Practical AI + Cybersecurity Tools for Real Work";
+  const title = comparePageTitle(fr ? "fr" : "en");
   // The <title> only. `title` still feeds the OG card, the share text and the
   // generated image, so the page itself keeps the full phrase.
   // "Outils IA + cybersécurité" was also /fr/resources' seoTitle, making these
