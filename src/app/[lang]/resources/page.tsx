@@ -233,7 +233,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 </h2>
               </div>
               <Link href={`/${locale}/compare`} className="btn-secondary">
-                {locale === "fr" ? "Voir Tools" : "Open tools"}
+                {locale === "fr" ? "Voir les outils" : "Open tools"}
               </Link>
             </div>
 

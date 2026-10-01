@@ -1004,3 +1004,31 @@ html[data-content-width="wide"] {
     padding-bottom: calc(5.25rem + env(safe-area-inset-bottom));
   }
 }
+
+/*
+ * One floating control at a time on a phone.
+ *
+ * The back-to-top pill is fixed bottom-right; the sticky post CTA is fixed
+ * across the bottom on phones only. They overlapped by 42x34px -- 23% of the
+ * card's "Resources" button -- and the pill has the higher z-index, so
+ * elementFromPoint returned the pill and it took the tap meant for the button
+ * beneath it. A control that silently eats another control's taps is worse
+ * than either one missing.
+ *
+ * The card sets data-sticky-cta on <html> while it is on screen, the same way
+ * theme and text size are published. The pill stands down while that is set,
+ * and only below md, which is the only width where the card exists. The card
+ * carries its own navigation, so nothing is lost: at that point the reader has
+ * two buttons and a close control rather than a scroll shortcut.
+ */
+html[data-sticky-cta="1"] .back-to-top {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  html[data-sticky-cta="1"] .back-to-top {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

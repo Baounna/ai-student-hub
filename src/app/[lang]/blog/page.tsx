@@ -439,15 +439,21 @@ export default async function LocalizedBlogPage(
             </div>
           )}
 
-          {posts.length === 0 && (
+          {/* Only when nothing was searched for. A query that matches nothing
+              already gets its own panel above, naming the term and offering a
+              way out, so this rendered underneath it as a second, larger empty
+              state saying the same thing in weaker words -- and then sent the
+              reader to "categories below", which are six hundred pixels above.
+              Two empty states for one empty result reads as unfinished. */}
+          {posts.length === 0 && terms.length === 0 && (
             <article className="blog-aside-card rounded-2xl p-6">
               <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
                 {locale === "fr" ? "Aucun article trouvé" : "No posts found"}
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {locale === "fr"
-                  ? "Essayez un autre mot-clé, ou explorez les catégories."
-                  : "Try another keyword, or explore categories below."}
+                  ? "Choisissez une catégorie ou un tag ci-dessus."
+                  : "Pick a category or tag above."}
               </p>
             </article>
           )}

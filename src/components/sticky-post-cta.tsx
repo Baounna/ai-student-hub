@@ -31,6 +31,29 @@ export function StickyPostCta({ locale }: { locale: Locale }) {
     };
   }, [dismissed]);
 
+  /**
+   * Tell the page this card is on screen.
+   *
+   * On a phone this sits at the bottom across the full width, and the
+   * back-to-top pill sat on top of it: 42x34px of overlap, 23% of the
+   * "Resources" button, and elementFromPoint returned the pill -- so the pill
+   * took the tap meant for the button underneath it. Two floating controls
+   * fighting over the same corner of a small screen.
+   *
+   * A data attribute on <html> is how this codebase already passes state
+   * nothing else can see -- it is what theme, text size and content width use.
+   * The pill hides itself in CSS while this is set, and only on phones, where
+   * the card exists at all.
+   */
+  useEffect(() => {
+    const root = document.documentElement;
+    if (visible && !dismissed) root.dataset.stickyCta = "1";
+    else delete root.dataset.stickyCta;
+    return () => {
+      delete root.dataset.stickyCta;
+    };
+  }, [visible, dismissed]);
+
   if (dismissed) return null;
 
   return (

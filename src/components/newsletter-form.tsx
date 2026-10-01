@@ -245,7 +245,9 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
           setEmail(event.target.value);
           clearStaleResult();
         }}
-        placeholder={compact ? "you@school.edu" : "Email address"}
+        placeholder={
+          compact ? "you@school.edu" : locale === "fr" ? "Adresse email" : "Email address"
+        }
         autoComplete="email"
         maxLength={254}
         className={emailClass}
