@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { getStages, getOpenStages } from "@/content/stages";
+import { countryLabel, getStages, getOpenStages } from "@/content/stages";
 
 /**
  * Only four of the eighty-two listings carry a deadline, so the other
@@ -54,6 +54,19 @@ describe("internship ordering", () => {
     const cities = new Set(stages.slice(0, 20).map((s) => s.city));
 
     expect(cities.size).toBeGreaterThanOrEqual(10);
+  });
+
+  it("renders every country as a name, never a bare code", () => {
+    // countryLabel falls back to the raw code so an unlabelled country degrades
+    // rather than breaking -- which means a listing added before its label ships
+    // "DE" to a reader instead of "Germany", and nothing fails. This is the
+    // thing that notices. It has to be a test, not a review habit, because the
+    // board is meant to keep growing.
+    const codes = [...new Set(stages.map((s) => s.country))];
+    const unlabelled = codes.filter((c) => countryLabel(c, "en") === c || countryLabel(c, "fr") === c);
+
+    expect(unlabelled).toEqual([]);
+    expect(codes.length).toBeGreaterThan(1);
   });
 
   it("is deterministic, so the page does not reshuffle between builds", () => {
