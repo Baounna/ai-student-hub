@@ -57,12 +57,12 @@ export function Newsletter({ compact = false, locale = "en", source }: Newslette
       ? [
           "1. Les nouveaux stages, alternances et PFE depuis le dernier envoi",
           "2. Un lien direct vers l'offre, et la date limite quand elle existe",
-          "3. Uniquement la France et le Maroc, filtrés pour les profils tech"
+          "3. Postes tech uniquement, filtrés à la main"
         ]
       : [
           "1. New internships, apprenticeships and final-year projects since the last send",
           "2. A direct link to the posting, and the closing date when there is one",
-          "3. France and Morocco only, filtered for technical roles"
+          "3. Technical roles only, filtered by hand"
         ];
 
   // This box sits in the footer of all 245 pages, most of which are guides that

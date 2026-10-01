@@ -7,7 +7,7 @@ import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { getAutoNews } from "@/content/auto-news";
 import { getLatestNews, getLocalizedNews } from "@/content/news";
-import { countryLabel, getOpenStages, kindLabel } from "@/content/stages";
+import { countryLabel, getOpenStages, kindLabel, stageCountrySummary } from "@/content/stages";
 import { siteConfig } from "@/config/site";
 import {
   getAllCategories,
@@ -356,8 +356,8 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             </h2>
             <span className="text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? `${openStagesCount} offres en France et au Maroc, chaque lien vérifié`
-                : `${openStagesCount} openings in France and Morocco, every link checked`}
+                ? `${openStagesCount} offres · ${stageCountrySummary(locale)} · chaque lien vérifié`
+                : `${openStagesCount} openings · ${stageCountrySummary(locale)} · every link checked`}
             </span>
           </div>
           <ul className="divide-y divide-[color:var(--border)]">

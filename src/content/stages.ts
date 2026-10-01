@@ -211,9 +211,29 @@ const REMOTE_LABELS: Record<StageRemote, Record<Locale, string>> = {
   remote: { en: "Remote", fr: "À distance" }
 };
 
+/**
+ * ISO 3166-1 alpha-2, and only countries the list actually covers or is being
+ * extended to. countryLabel falls back to the raw code, so an unlisted country
+ * renders as "DE" rather than breaking -- but a reader seeing a bare code is a
+ * sign a listing was added before its label.
+ */
 const COUNTRY_LABELS: Record<string, Record<Locale, string>> = {
   MA: { en: "Morocco", fr: "Maroc" },
-  FR: { en: "France", fr: "France" }
+  FR: { en: "France", fr: "France" },
+  BE: { en: "Belgium", fr: "Belgique" },
+  CH: { en: "Switzerland", fr: "Suisse" },
+  DE: { en: "Germany", fr: "Allemagne" },
+  ES: { en: "Spain", fr: "Espagne" },
+  IE: { en: "Ireland", fr: "Irlande" },
+  IT: { en: "Italy", fr: "Italie" },
+  LU: { en: "Luxembourg", fr: "Luxembourg" },
+  NL: { en: "Netherlands", fr: "Pays-Bas" },
+  PL: { en: "Poland", fr: "Pologne" },
+  PT: { en: "Portugal", fr: "Portugal" },
+  SE: { en: "Sweden", fr: "Suède" },
+  GB: { en: "United Kingdom", fr: "Royaume-Uni" },
+  US: { en: "United States", fr: "États-Unis" },
+  CA: { en: "Canada", fr: "Canada" }
 };
 
 export function kindLabel(kind: StageKind, locale: Locale) {
@@ -222,6 +242,44 @@ export function kindLabel(kind: StageKind, locale: Locale) {
 
 export function remoteLabel(remote: StageRemote | undefined, locale: Locale) {
   return remote ? REMOTE_LABELS[remote]?.[locale] ?? remote : "";
+}
+
+/**
+ * The countries the list actually covers, most-represented first.
+ *
+ * Six places told a reader "Morocco and France" as a fixed string, so the day a
+ * seventh country was added the site would have been describing a list it no
+ * longer had -- and the ordering was already wrong, leading with the nine
+ * Moroccan listings ahead of seventy-two French ones. Deriving it means the
+ * claim cannot drift from the data and nobody has to remember to update it.
+ */
+export function stageCountries(now = Date.now()) {
+  const counts = new Map<string, number>();
+  for (const stage of getOpenStages(now)) {
+    counts.set(stage.country, (counts.get(stage.country) ?? 0) + 1);
+  }
+  return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([code]) => code);
+}
+
+/**
+ * Those countries as a phrase. Names them while the list is short enough to
+ * read, counts them once it is not -- "France, Morocco and 5 more" says more to
+ * a reader than seven country names in a row, and stays true either way.
+ */
+export function stageCountrySummary(locale: Locale, now = Date.now()) {
+  const codes = stageCountries(now);
+  const names = codes.map((code) => countryLabel(code, locale));
+  if (names.length === 0) return "";
+  if (names.length === 1) return names[0];
+  if (names.length <= 3) {
+    const last = names[names.length - 1];
+    const rest = names.slice(0, -1).join(", ");
+    return locale === "fr" ? `${rest} et ${last}` : `${rest} and ${last}`;
+  }
+  const extra = names.length - 2;
+  return locale === "fr"
+    ? `${names[0]}, ${names[1]} et ${extra} autres pays`
+    : `${names[0]}, ${names[1]} and ${extra} more`;
 }
 
 export function countryLabel(country: string, locale: Locale) {

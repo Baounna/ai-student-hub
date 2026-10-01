@@ -47,8 +47,8 @@ const COPY = {
     // it describes. The page was titled "Morocco and France" for a list that is
     // 73 French and 9 Moroccan, which is a real thing to offer and not the
     // thing the title promised a Moroccan reader.
-    scope: (fr: number, ma: number, security: number, total: number) =>
-      `${fr} in France, ${ma} in Morocco. ${security} of ${total} are security or cyber roles.`,
+    scope: (breakdown: string, security: number, total: number) =>
+      `${breakdown}. ${security} of ${total} are security or cyber roles.`,
     methodTitle: "What \u201cchecked\u201d means here",
     methodBody:
       "Every link is opened and its page read, not just pinged for a status code \u2014 three postings have answered HTTP 200 while saying, in the body, that they had closed. A listing is removed only after a person confirms it is gone; a refusal to serve us is treated as a fact about us, not about the job. Deadlines are shown only where the employer published one."
@@ -71,8 +71,8 @@ const COPY = {
       "Les dates ci-dessous sont peut-être dépassées. Elle est affichée telle quelle plutôt que masquée, pour que vous puissiez en juger.",
     daysAgo: (n: number) => (n === 0 ? "aujourd'hui" : n === 1 ? "hier" : `il y a ${n} jours`),
     openCount: (open: number, total: number) => `${open} ouverte(s) sur ${total} référencée(s)`,
-    scope: (fr: number, ma: number, security: number, total: number) =>
-      `${fr} en France, ${ma} au Maroc. ${security} sur ${total} sont des postes sécurité ou cyber.`,
+    scope: (breakdown: string, security: number, total: number) =>
+      `${breakdown}. ${security} sur ${total} sont des postes sécurité ou cyber.`,
     methodTitle: "Ce que « vérifié » veut dire ici",
     methodBody:
       "Chaque lien est ouvert et sa page lue, pas seulement testée par code HTTP : trois offres ont répondu 200 tout en indiquant, dans le corps de la page, qu'elles étaient closes. Une offre n'est retirée qu'après vérification humaine ; un refus de nous répondre est traité comme un fait nous concernant, pas comme une fermeture. Les dates limites ne sont affichées que lorsque l'employeur en publie une."
@@ -110,8 +110,14 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
   const stages = getStages();
   const openStages = getOpenStages();
   const openCount = openStages.length;
-  const franceCount = stages.filter((stage) => stage.country === "FR").length;
-  const moroccoCount = stages.filter((stage) => stage.country === "MA").length;
+  // Counted per country rather than naming two, so the line stays true as the
+  // list grows past the two it started with.
+  const byCountry = new Map<string, number>();
+  for (const stage of stages) byCountry.set(stage.country, (byCountry.get(stage.country) ?? 0) + 1);
+  const countryBreakdown = [...byCountry.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([code, n]) => `${n} ${countryLabel(code, locale)}`)
+    .join(" · ");
   // Matched on the role text because the data has no field for it. Deliberately
   // broad: the claim is "security or cyber", and over-counting a borderline
   // role is a smaller error than telling a reader the list is general tech.
@@ -186,7 +192,7 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
             render time rather than written down, so it stays true as the list
             changes and nobody has to remember to update it. */}
         {stages.length > 0 ? (
-          <p className="provenance mt-1">{copy.scope(franceCount, moroccoCount, securityCount, stages.length)}</p>
+          <p className="provenance mt-1">{copy.scope(countryBreakdown, securityCount, stages.length)}</p>
         ) : null}
       </header>
 

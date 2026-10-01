@@ -24,8 +24,8 @@ export function PostArticleCta({
   const resolvedDescription =
     description ||
     (locale === "fr"
-      ? "Ouvrez la liste des stages ouverts au Maroc et en France, puis le lab outils - lui n'est pas régional."
-      : "Open the current list of internships in Morocco and France, then the tools lab, which is not regional.");
+      ? "Ouvrez la liste des stages ouverts, puis le lab outils."
+      : "Open the current list of open internships, then the tools lab.");
   const ctaPrimary = locale === "fr" ? siteConfig.leadMagnet.frLabel : siteConfig.leadMagnet.enLabel;
   const ctaSecondary = locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab";
   const ctaTertiary = locale === "fr" ? "Acheter le guide étudiant" : "Buy student guide";
