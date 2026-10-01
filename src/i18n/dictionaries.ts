@@ -162,10 +162,15 @@ export const dictionaries: Record<Locale, Dictionary> = {
       // the same three things already exist in src/content/stages.ts
       // (KIND_LABELS) and are what the list itself renders, so the newsletter
       // block uses them rather than inventing a second English vocabulary.
-      badge: "Internships and apprenticeships, weekly",
-      title: "Open tech internships in Morocco and France",
+      // "One email a week" is a floor, and nothing sends one -- the drafting
+      // script exists, the sending does not. A ceiling is the version that can
+      // be kept: it still answers "will you spam me", without promising an
+      // email that may not arrive. Restore the cadence the week something
+      // actually sends on a schedule.
+      badge: "Internships and apprenticeships",
+      title: "Open tech internships in France and Morocco",
       description:
-        "One email a week with new internships, apprenticeships and final-year projects, each with a direct link and its closing date where the employer publishes one.",
+        "New internships, apprenticeships and final-year projects, each with a direct link and its closing date where the employer publishes one. Never more than one email a week.",
       // This is the submit button of the email form, not a link. "See the
       // list" sitting next to an email field reads as navigation, so someone
       // who only wants to browse clicks it and is subscribed instead.
@@ -249,10 +254,10 @@ export const dictionaries: Record<Locale, Dictionary> = {
       openCompare: "Ouvrir la section outils"
     },
     newsletter: {
-      badge: "Stages et alternances, chaque semaine",
-      title: "Les stages tech ouverts au Maroc et en France",
+      badge: "Stages et alternances",
+      title: "Les stages tech ouverts en France et au Maroc",
       description:
-        "Un email par semaine avec les nouveaux stages, alternances et PFE, chacun avec un lien direct et sa date limite quand l'employeur en annonce une.",
+        "Les nouveaux stages, alternances et PFE, chacun avec un lien direct et sa date limite quand l'employeur en annonce une. Jamais plus d'un email par semaine.",
       // Bouton d'envoi du formulaire, pas un lien: voir le commentaire côté EN.
       cta: "S'inscrire"
     }

@@ -55,14 +55,14 @@ export function Newsletter({ compact = false, locale = "en", source }: Newslette
   const bullets =
     locale === "fr"
       ? [
-          "1. Les nouveaux stages, alternances et PFE de la semaine",
+          "1. Les nouveaux stages, alternances et PFE depuis le dernier envoi",
           "2. Un lien direct vers l'offre, et la date limite quand elle existe",
-          "3. Uniquement le Maroc et la France, filtrés pour les profils tech"
+          "3. Uniquement la France et le Maroc, filtrés pour les profils tech"
         ]
       : [
-          "1. New internships, apprenticeships and final-year projects each week",
+          "1. New internships, apprenticeships and final-year projects since the last send",
           "2. A direct link to the posting, and the closing date when there is one",
-          "3. Morocco and France only, filtered for technical roles"
+          "3. France and Morocco only, filtered for technical roles"
         ];
 
   // This box sits in the footer of all 245 pages, most of which are guides that
@@ -79,8 +79,8 @@ export function Newsletter({ compact = false, locale = "en", source }: Newslette
   // nobody has made.
   const cadenceLine =
     locale === "fr"
-      ? "Un email par semaine. Rien d'autre."
-      : "One email a week. Nothing else.";
+      ? "Au plus un email par semaine. Rien d'autre."
+      : "At most one email a week. Nothing else.";
 
   if (compact) {
     return (

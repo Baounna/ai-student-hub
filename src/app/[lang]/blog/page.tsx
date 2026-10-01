@@ -210,7 +210,7 @@ export default async function LocalizedBlogPage(
                 {allPosts.length}+ {locale === "fr" ? "guides publiés" : "published guides"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {locale === "fr" ? "Mise à jour hebdomadaire" : "Weekly updates"}
+                {locale === "fr" ? "Sources citées" : "Sources cited"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
                 {locale === "fr" ? "Pratique + actionnable" : "Practical and actionable"}

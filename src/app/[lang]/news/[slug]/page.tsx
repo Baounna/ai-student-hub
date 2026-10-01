@@ -158,16 +158,29 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
           : "Career impact: portfolio signal, applications, and interview storytelling.";
   const recentSignals = getLocalizedNews(locale).filter((item) => item.slug !== brief.slug).slice(0, 3);
   const topicReference = getTopicReference(brief.topic, locale);
+  /**
+   * Two entries, and only the first is a source.
+   *
+   * The second is topicReference: a fixed link chosen by the brief's topic, the
+   * same one on every brief in that topic. It is background reading, not a
+   * check of anything this brief says -- and the page called the pair "2
+   * cross-checked references", which is a claim about verification that nothing
+   * performed. On the career brief it resolved to the site citing itself plus a
+   * US Department of Labor fact sheet about whether interns must be paid,
+   * against a brief about what recruiters look for.
+   *
+   * So: sources are counted, not asserted, and a brief with no source link says
+   * so rather than being padded to two.
+   */
+  const sources = brief.source.href
+    ? [{ label: brief.source.name, href: brief.source.href, source: locale === "fr" ? "Source" : "Source" }]
+    : [];
   const references = [
-    {
-      label: brief.source.name,
-      href: brief.source.href,
-      source: locale === "fr" ? "Source principale" : "Primary source"
-    },
+    ...sources,
     {
       label: topicReference.label,
       href: topicReference.href,
-      source: topicReference.source
+      source: locale === "fr" ? "Pour aller plus loin" : "Further reading"
     }
   ];
   const tocItems = [
@@ -243,7 +256,11 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             <p className="do-kicker">{locale === "fr" ? "Brief en bref" : "Brief at a glance"}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>{locale === "fr" ? `1. Thème: ${brief.topic}` : `1. Topic: ${brief.topic}`}</li>
-              <li>{locale === "fr" ? "2. Sources: 2 références croisées." : "2. Sources: 2 cross-checked references."}</li>
+              <li>
+                {locale === "fr"
+                  ? `2. ${sources.length === 1 ? "1 source citée" : "Analyse maison, sans source externe"}.`
+                  : `2. ${sources.length === 1 ? "1 cited source" : "Own analysis, no external source"}.`}
+              </li>
               <li>{locale === "fr" ? `3. Temps de lecture : ${readMinutes(brief.readTime)} min.` : `3. Reading time: ${readMinutes(brief.readTime)} min.`}</li>
               {brief.statsByTheme?.length ? (
                 <li>{`4. ${brief.statsByTheme.length} benchmark themes covered.`}</li>
@@ -376,8 +393,8 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Chaque brief s'appuie sur une source principale + une référence technique complémentaire."
-                : "Each brief is grounded in a primary source plus one supporting technical reference."}
+                ? "La source du brief, puis une référence générale sur le thème — utile pour aller plus loin, pas une vérification du brief."
+                : "The brief's source, then a general reference for the topic — useful background, not a check on the brief."}
             </p>
             <ol className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
               {references.map((reference, index) => (

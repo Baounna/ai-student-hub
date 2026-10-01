@@ -91,7 +91,7 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
         </p>
         <p className="mt-4 max-w-2xl text-sm text-[color:var(--muted)]">
           {fr
-            ? "Si elle est écrite un jour, elle sera annoncée dans la lettre hebdomadaire. En attendant, tout le travail publié ici est gratuit."
+            ? "Si elle est écrite un jour, elle sera annoncée dans la newsletter. En attendant, tout le travail publié ici est gratuit."
             : "If it ever gets written, the weekly email is where that would be announced. Everything published here is free in the meantime."}
         </p>
       </section>

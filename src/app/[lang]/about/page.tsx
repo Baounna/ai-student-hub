@@ -174,7 +174,9 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
       {siteConfig.testimonials.length ? (
         <section className="mt-6 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6">
           <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-            {locale === "fr" ? "Retours de la communauté" : "Community feedback"}
+            {/* Same reason as the homepage: this renders self-written lines,
+                not feedback from anyone. */}
+            {locale === "fr" ? "Ce que vous trouverez ici" : "What you will find here"}
           </h2>
           <div className="mt-4 grid gap-4 md:grid-cols-3">
             {siteConfig.testimonials.map((testimonial) => (

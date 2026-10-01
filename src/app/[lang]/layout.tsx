@@ -322,7 +322,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
             <p className="mt-3 text-sm text-[color:var(--muted)]">{dict.footer.description}</p>
             <div className="mt-4 flex flex-wrap gap-2">
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] text-[color:var(--muted)]">
-                {locale === "fr" ? "Briefs hebdomadaires" : "Weekly briefs"}
+                {locale === "fr" ? "Stages vérifiés chaque semaine" : "Internships checked weekly"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-[11px] text-[color:var(--muted)]">
                 {locale === "fr" ? "Exécution IA + cybersécurité" : "AI + cybersecurity execution"}

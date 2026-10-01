@@ -847,7 +847,12 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
 
       <section className="wiki-panel mt-4 overflow-hidden rounded-md">
         <div className="wiki-head wiki-head-purple px-4 py-2 text-xl">
-          {locale === "fr" ? "Preuves sociales" : "Social proof"}
+          {/* Not "Social proof". Underneath are three lines the publisher wrote
+              about itself -- no third party, no reader, no number. The heading
+              survived the removal of the invented testimonials that were the
+              only thing that would have justified it, and a claim of proof over
+              self-description is a small untruth in a prominent place. */}
+          {locale === "fr" ? "Ce que vous trouverez ici" : "What you will find here"}
         </div>
         <div className="grid gap-3 p-4 md:grid-cols-3">
           {socialStats.map((line) => (
