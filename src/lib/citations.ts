@@ -35,3 +35,33 @@ export function hasParagraphCitations(post: Pick<BlogPost, "references" | "parag
   if (!map) return false;
   return Object.keys(map).some((key) => citationsForParagraph(post, Number(key)).length > 0);
 }
+
+/**
+ * How many of a post's references a paragraph actually points at.
+ *
+ * The blog index showed `{totalReferences}+ cited sources`, which was wrong
+ * twice. The "+" was a literal typed into the JSX next to an exact sum, so
+ * "105+" told the reader there were more than 105 when there were exactly 105.
+ * And 38 of those 105 are pointed at by no paragraph in any article -- entire
+ * reference lists on two posts -- so "cited" described a third of the figure
+ * inaccurately. The article page is already careful here: a post with no inline
+ * markers gets the heading "Further reading" and says plainly that "no passage
+ * is cited individually". The index called the same two posts' references
+ * "cited sources" on the card right next to that article's title.
+ */
+export function citedReferenceCount(post: Pick<BlogPost, "references" | "paragraphCitations">): number {
+  const used = new Set<number>();
+  for (const key of Object.keys(post.paragraphCitations ?? {})) {
+    for (const value of citationsForParagraph(post, Number(key))) used.add(value);
+  }
+  return used.size;
+}
+
+/**
+ * The label that matches the number: a reference a paragraph points at is a
+ * citation, one that is only listed is a reading list.
+ */
+export function referenceCountLabel(cited: number, locale: "en" | "fr"): string {
+  if (cited > 0) return locale === "fr" ? "sources citées" : "cited sources";
+  return locale === "fr" ? "sources consultées" : "sources consulted";
+}

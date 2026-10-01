@@ -22,7 +22,19 @@ This policy defines how AI and Cybersecurity News publishes content for anyone w
 ## 2) Source Integrity
 
 - Do not publish uncited claims.
-- Every news brief must include a direct source link.
+- A brief that reports someone else's work links the document it reports, and
+  that link carries the citation marker.
+- A brief that is this publication's own reading of a trend says so, and cites
+  nothing. Where a newsroom, blog index or product landing page is still worth
+  reading, it is listed as background (`direct: false`) and carries no marker.
+  Seven of the ten briefs were citing a directory under a name that promised a
+  document: "DevOps and MLOps community reports" over the ml-ops.org homepage,
+  "Open-source maintainer updates" over a GitHub topic listing of 146,000
+  repositories. The rule that produced that was "every brief must have a direct
+  source link", which is a requirement no honest brief can always meet, so it
+  was met dishonestly.
+- A source name says what is at the other end of the link, not what category of
+  thing it belongs to.
 - Long-form posts must include credible references (official docs, standards, research, or trusted technical publishers).
 - Auto-news feeds must prioritize official engineering/vendor blogs and documentation portals (not raw arXiv feed ingestion).
 - Auto-tools feeds must prioritize official release/changelog channels and first-party product announcements.

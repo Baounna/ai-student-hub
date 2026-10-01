@@ -141,8 +141,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     news: {
       title: "AI + Cybersecurity News for Everyone",
+      // "Weekly" was a cadence claim nothing keeps: ten briefs, all published
+      // inside an eleven-day window in February 2026, and nothing writes this
+      // file on a schedule -- the twice-daily agent writes auto-news.json, the
+      // separate feed further down the page. The page's value does not depend on
+      // the cadence, so the word goes rather than the promise being renewed.
       subtitle:
-        "Weekly briefs that explain what changed, why it matters in practice, and what to build next.",
+        "Briefs that explain what changed, why it matters in practice, and what to build next.",
       latest: "Latest briefs",
       impact: "Practical impact",
       actions: "Action steps",
@@ -235,7 +240,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     news: {
       title: "Actualités IA + Cybersécurité pour tous",
       subtitle:
-        "Des briefs hebdomadaires: ce qui change, pourquoi c'est important en pratique, et quoi construire ensuite.",
+        "Des briefs qui expliquent ce qui change, pourquoi c'est important en pratique, et quoi construire ensuite.",
       latest: "Derniers briefs",
       impact: "Impact pratique",
       actions: "Actions recommandées",

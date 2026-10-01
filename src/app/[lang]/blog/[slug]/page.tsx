@@ -220,9 +220,13 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
             <p className="do-kicker">{locale === "fr" ? "Article en bref" : "At a glance"}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
+                {/* "reliable" / "fiable" is a verdict nothing here reaches: the
+                    count is real, the adjective was asserted. "Listed" is what
+                    the page can show, and the reference list a few sections down
+                    is where a reader judges them. */}
                 {locale === "fr"
-                  ? `1. ${post.references.length} source${post.references.length > 1 ? "s" : ""} fiable${post.references.length > 1 ? "s" : ""}.`
-                  : `1. ${post.references.length} reliable source${post.references.length > 1 ? "s" : ""}.`}
+                  ? `1. ${post.references.length} source${post.references.length > 1 ? "s" : ""} listée${post.references.length > 1 ? "s" : ""}.`
+                  : `1. ${post.references.length} source${post.references.length > 1 ? "s" : ""} listed.`}
               </li>
               <li>
                 {locale === "fr"
@@ -441,7 +445,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                   the article; a paragraph shows a number only where that
                   paragraph was actually checked against that source. */}
               <p className="mt-2 text-sm text-[color:var(--muted)]">
-                {/* Three articles cite nothing inline, because their sources are
+                {/* Two articles cite nothing inline, because their sources are
                     landing pages that support no specific claim. Telling those
                     readers a number appears "only where the passage was checked"
                     promises a marker the page does not contain. */}

@@ -15,6 +15,7 @@ import {
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
+import { citedReferenceCount, referenceCountLabel } from "@/lib/citations";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { sanitizeSearchQuery } from "@/lib/input";
 import { matchesAllTerms, searchTerms } from "@/lib/search";
@@ -132,7 +133,12 @@ export default async function LocalizedBlogPage(
   const highlightCategories = categories.slice(0, 5);
   const totalReadMinutes = allPosts.reduce((sum, post) => sum + (Number.parseInt(post.readTime, 10) || 0), 0);
   const averageReadMinutes = allPosts.length ? Math.max(1, Math.round(totalReadMinutes / allPosts.length)) : 0;
-  const totalReferences = allPosts.reduce((sum, post) => sum + post.references.length, 0);
+  // 105 entries are listed across the 24 posts; 67 of them are pointed at by a
+  // paragraph. The card is headed "Evidence", and a source a paragraph checks
+  // itself against is evidence while one that is merely listed is a reading
+  // list, so the card shows the figure that matches its own heading. Every
+  // article still lists all of its own references.
+  const totalCitedReferences = allPosts.reduce((sum, post) => sum + citedReferenceCount(post), 0);
   const sourceLabel = locale === "fr" ? "sources citées" : "cited sources";
   const streamHeading =
     trackFilter === "ai"
@@ -231,7 +237,9 @@ export default async function LocalizedBlogPage(
                   {locale === "fr" ? "Fiabilité" : "Evidence"}
                 </p>
                 <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
-                  {totalReferences}+ {sourceLabel}
+                  {/* The "+" was a literal beside an exact sum, so "105+"
+                      claimed more than 105 where there are exactly 105. */}
+                  {totalCitedReferences} {sourceLabel}
                 </p>
               </article>
               <article className="blog-signal-card rounded-xl p-3">
@@ -549,7 +557,12 @@ export default async function LocalizedBlogPage(
                   </h4>
                   <p className="mt-1 text-xs text-[color:var(--muted)]">{formatReadTime(post.readTime, locale)}</p>
                   <p className="mt-1 text-xs text-[color:var(--muted)]">
-                    {post.references.length} {locale === "fr" ? "sources citées" : "cited sources"}
+                    {/* This said "2 cited sources" for a post whose own page
+                        says "No passage is cited individually". The count and
+                        the word now come from the same place the article page
+                        uses. */}
+                    {citedReferenceCount(post) || post.references.length}{" "}
+                    {referenceCountLabel(citedReferenceCount(post), locale)}
                   </p>
                 </article>
               ))}

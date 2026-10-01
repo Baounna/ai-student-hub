@@ -192,31 +192,41 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
             <h2 className="font-display section-title mt-2 font-semibold text-[color:var(--text-strong)]">
               {fr ? "Option recommandée" : "Recommended default"}: {recommendedLabel}
             </h2>
+            {/* "ranks first" described a computation that does not exist: the
+                recommendation is safeTools[0], the first entry of a hand-written
+                array. Below it sat 40% / 35% / 25% against three criteria -- JSX
+                literals that nothing reads, scores nothing, and weights nothing.
+                A rubric is a strong claim, and inventing one to dress up an
+                editorial choice is worse than owning the choice. */}
             <p className="card-copy mt-2 text-[color:var(--text)]">
               {fr
-                ? `${recommendedLabel} ressort en tête selon le meilleur compromis entre vitesse de delivery, maîtrise budget, et valeur portfolio.`
-                : `${recommendedLabel} ranks first based on practical balance across delivery speed, budget control, and portfolio value.`}
+                ? `${recommendedLabel} est l'option par laquelle nous commencerions, au vu de la vitesse de mise en ligne, du coût et de ce que le projet montre dans un portfolio. C'est un choix éditorial, pas un score : les trois options sont comparées ci-dessous, décidez avec vos propres contraintes.`
+                : `${recommendedLabel} is the option we would start with, weighing how fast it deploys, what it costs, and what the finished project shows in a portfolio. That is an editorial call, not a score: all ${safeTools.length} options are compared below, so decide against your own constraints.`}
             </p>
-            <div className="mt-4 grid gap-3 md:grid-cols-3">
-              <article className="tools-metric-card rounded-xl p-4">
-                <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-                  {fr ? "Vitesse de delivery" : "Time-to-deploy"}
-                </p>
-                <p className="mt-2 text-sm font-semibold text-[color:var(--text-strong)]">40%</p>
-              </article>
-              <article className="tools-metric-card rounded-xl p-4">
-                <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-                  {fr ? "Contrôle budget" : "Budget control"}
-                </p>
-                <p className="mt-2 text-sm font-semibold text-[color:var(--text-strong)]">35%</p>
-              </article>
-              <article className="tools-metric-card rounded-xl p-4">
-                <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-                  {fr ? "Signal portfolio" : "Portfolio signal"}
-                </p>
-                <p className="mt-2 text-sm font-semibold text-[color:var(--text-strong)]">25%</p>
-              </article>
-            </div>
+            {/* The recommended tool's own figures, which are real, in place of
+                the weights, which were not. */}
+            {recommendedTool ? (
+              <div className="mt-4 grid gap-3 md:grid-cols-3">
+                <article className="tools-metric-card rounded-xl p-4">
+                  <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+                    {fr ? "Prix de départ" : "Starting price"}
+                  </p>
+                  <p className="mt-2 text-sm font-semibold text-[color:var(--text-strong)]">{recommendedTool.price}</p>
+                </article>
+                <article className="tools-metric-card rounded-xl p-4">
+                  <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+                    {fr ? "Idéal pour" : "Best for"}
+                  </p>
+                  <p className="mt-2 text-sm font-semibold text-[color:var(--text-strong)]">{recommendedTool.bestFor}</p>
+                </article>
+                <article className="tools-metric-card rounded-xl p-4">
+                  <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
+                    {fr ? "Options comparées" : "Options compared"}
+                  </p>
+                  <p className="mt-2 text-sm font-semibold text-[color:var(--text-strong)]">{safeTools.length}</p>
+                </article>
+              </div>
+            ) : null}
           </section>
 
           {safeTools.length ? (

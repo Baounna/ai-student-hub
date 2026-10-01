@@ -37,9 +37,14 @@ export async function LatestUpdatesBlock({ locale, limit = 6, compact = false, c
         {fr ? "Dernières mises à jour IA/CS (avec source)" : "Latest AI + Cybersecurity updates (with sources)"}
       </h2>
       <p className="mt-2 text-sm text-[color:var(--text)]">
+        {/* "verified" / "vérifiés": nothing verifies them. This list is
+            auto-news.json, written twice a day by scripts/auto-news-agent.mjs
+            and committed straight to the branch with no review step. The second
+            sentence is true and is the part worth saying -- the agent only
+            accepts first-party feeds, and every link goes to the publisher. */}
         {fr
-          ? "Flux automatisé depuis les briefs vérifiés. Chaque lien pointe vers la publication originale."
-          : "Automated stream from verified briefs. Every link points to the original publication."}
+          ? "Flux automatisé de sources officielles. Chaque lien pointe vers la publication d'origine."
+          : "Automated stream of first-party sources. Every link points to the original publication."}
       </p>
 
       {updates.length ? (

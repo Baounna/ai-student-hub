@@ -872,19 +872,24 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
 
       <section className="wiki-panel mt-4 overflow-hidden rounded-md">
         <div className="wiki-head px-4 py-2 text-xl">
-          {locale === "fr" ? "Références de connaissance" : "Knowledge references"}
+          {/* Numbered [1]-[4] under a heading reading "Knowledge references",
+              on a page containing zero inline markers -- a citation apparatus
+              attached to nothing, which tells the reader some sentence above was
+              sourced from these. Two of the four are index pages. It is a good
+              reading list; it is now presented as one. */}
+          {locale === "fr" ? "Lectures de référence" : "Reference reading"}
         </div>
-        <ol className="space-y-2 p-4 text-sm text-[color:var(--text)]">
-          {knowledgeReferences.map((reference, index) => (
+        <ul className="space-y-2 p-4 text-sm text-[color:var(--text)]">
+          {knowledgeReferences.map((reference) => (
             <li key={reference.href} className="leading-7">
-              <span className="mr-2 text-[color:var(--muted)]">[{index + 1}]</span>
+              <span className="mr-2 text-[color:var(--muted)]">&middot;</span>
               <a href={reference.href} target="_blank" rel="noopener noreferrer nofollow" className="do-link">
                 {reference.label}
               </a>
               <span className="ml-2 text-xs text-[color:var(--muted)]">({reference.source})</span>
             </li>
           ))}
-        </ol>
+        </ul>
       </section>
 
       <div className="mt-4">

@@ -18,16 +18,24 @@ export type NewsBrief = {
      * site's homepage is not a citation.
      */
     href?: string;
+    /**
+     * False when href is a newsroom, blog index or product landing page rather
+     * than the document the claim comes from.
+     *
+     * Seven of these ten briefs were in that state, and each one named a
+     * document that the link does not contain: "DevOps and MLOps community
+     * reports" pointed at the ml-ops.org homepage, "Open-source maintainer
+     * updates" at a GitHub topic listing of 146,000 repositories, "Industry
+     * product updates and engineering blogs" at anthropic.com/news. The reader
+     * was told the sentence above had a source and handed a directory.
+     *
+     * These briefs are this publication's own reading of a trend, so the link is
+     * useful background and nothing more. Marked so, it is listed as background
+     * and cites no sentence, rather than being deleted and losing the reader a
+     * worthwhile page.
+     */
+    direct?: boolean;
   };
-  statsByTheme?: Array<{
-    theme: Record<Locale, string>;
-    benchmark: string;
-    snapshot: Record<Locale, string>;
-    stats: Array<{
-      model: string;
-      value: string;
-    }>;
-  }>;
   relatedPostSlugs: string[];
   locales: Record<
     Locale,
@@ -64,7 +72,7 @@ export const newsBriefs: NewsBrief[] = [
     keywords: [
       "latest ai benchmark performance",
       "ai model performance by theme",
-      "aime gpqa mmmu screenspot 2026"
+      "choosing an ai model by task type"
     ],
     tags: ["benchmarks", "reasoning", "math", "multimodal", "coding"],
     source: {
@@ -74,17 +82,19 @@ export const newsBriefs: NewsBrief[] = [
     relatedPostSlugs: ["transformers-rag-and-agents-for-students", "deploy-ml-model-student-budget"],
     locales: {
       en: {
-        title: "Latest AI performance by theme (Feb 2026 snapshot)",
+        // "Latest" on an eight-month-old snapshot was a claim about recency the
+        // brief's own parenthesis contradicted.
+        title: "AI performance by theme (February 2026 snapshot)",
         summary:
-          "A new benchmark table published in February 2026 compares current frontier models across reasoning, science QA, math, multimodal understanding, and UI/screen tasks.",
+          "In February 2026, Google DeepMind's Gemini page carried a benchmark table comparing frontier models across reasoning, science QA, math, multimodal understanding, and UI/screen tasks. That page is updated in place: it now lists a later generation of models against different benchmarks, so the February table is no longer there to check.",
         seoDescription:
-          "A February 2026 benchmark table compares frontier models across reasoning, science QA, math, multimodal understanding, and UI/screen tasks.",
+          "What a February 2026 benchmark table showed across reasoning, science QA, math, multimodal understanding and UI/screen tasks -- and why the page it came from no longer proves it.",
         studentImpact:
           "Students can now choose models by use case theme instead of hype: one model for math-heavy tasks, another for multimodal or UI-heavy execution.",
         takeaways: [
-          "Reasoning: the frontier models trade places by benchmark rather than one leading everywhere.",
-          "Science + math: Gemini 3 Pro and GPT-5.1 are close on GPQA and AIME.",
-          "Multimodal/UI: Gemini 3 Pro leads MMMU-Pro and ScreenSpot-Pro in this table."
+          "Match the model to the task type: the ranking changes with the benchmark.",
+          "Benchmark pages are updated in place. Record the date and the figures you relied on, or your evidence disappears.",
+          "Treat any single leaderboard as one data point, not a verdict."
         ],
         actionSteps: [
           "Map your project type to one benchmark theme before picking a model.",
@@ -93,18 +103,18 @@ export const newsBriefs: NewsBrief[] = [
         ]
       },
       fr: {
-        title: "Dernières performances IA par thème (snapshot février 2026)",
+        title: "Performances IA par thème (snapshot février 2026)",
         seoTitle: "Performances IA par thème (février 2026)",
         summary:
-          "Un nouveau tableau benchmark publié en février 2026 compare les modèles frontier sur raisonnement, QA scientifique, mathématiques, multimodal et tâches UI/écran.",
+          "En février 2026, la page Gemini de Google DeepMind présentait un tableau benchmark comparant les modèles frontier sur raisonnement, QA scientifique, mathématiques, multimodal et tâches UI/écran. Cette page est mise à jour sur place : elle liste aujourd'hui une génération de modèles plus récente sur d'autres benchmarks, et le tableau de février n'y est plus vérifiable.",
         seoDescription:
-          "Un tableau benchmark de février 2026 compare les modèles frontier sur raisonnement, QA scientifique, mathématiques, multimodal et tâches UI/écran.",
+          "Ce que montrait un tableau benchmark de février 2026 sur raisonnement, QA scientifique, maths, multimodal et UI/écran -- et pourquoi la page d'origine ne le prouve plus.",
         studentImpact:
           "Les étudiants peuvent choisir un modèle par type de tâche réelle plutôt que par hype: un modèle pour math/science, un autre pour multimodal ou exécution UI.",
         takeaways: [
-          "Raisonnement: les modèles frontier se départagent par benchmark, aucun ne domine partout.",
-          "Science + maths: Gemini 3 Pro et GPT-5.1 restent proches sur GPQA et AIME.",
-          "Multimodal/UI: Gemini 3 Pro mène MMMU-Pro et ScreenSpot-Pro dans ce tableau."
+          "Choisissez le modèle selon le type de tâche : le classement change avec le benchmark.",
+          "Les pages de benchmarks sont mises à jour sur place. Notez la date et les chiffres utilisés, sinon la preuve disparaît.",
+          "Un classement isolé est une donnée, pas un verdict."
         ],
         actionSteps: [
           "Reliez votre projet à un thème benchmark avant de choisir votre modèle.",
@@ -126,8 +136,9 @@ export const newsBriefs: NewsBrief[] = [
     ],
     tags: ["agents", "workflow", "project-architecture"],
     source: {
-      name: "Industry product updates and engineering blogs",
-      href: "https://www.anthropic.com/news"
+      name: "Anthropic Newsroom",
+      href: "https://www.anthropic.com/news",
+      direct: false
     },
     relatedPostSlugs: ["ai-portfolio-project-recruiters-notice", "deploy-ml-model-student-budget"],
     locales: {
@@ -180,8 +191,9 @@ export const newsBriefs: NewsBrief[] = [
     ],
     tags: ["multimodal", "vision", "research"],
     source: {
-      name: "Google DeepMind and OpenAI release notes",
-      href: "https://deepmind.google/discover/blog/"
+      name: "Google DeepMind blog",
+      href: "https://deepmind.google/discover/blog/",
+      direct: false
     },
     relatedPostSlugs: ["ai-portfolio-project-recruiters-notice"],
     locales: {
@@ -235,8 +247,9 @@ export const newsBriefs: NewsBrief[] = [
     ],
     tags: ["evaluation", "open-source", "llm"],
     source: {
-      name: "Open-source maintainer updates",
-      href: "https://github.com/topics/llm"
+      name: "GitHub: repositories tagged llm",
+      href: "https://github.com/topics/llm",
+      direct: false
     },
     relatedPostSlugs: ["deploy-ml-model-student-budget"],
     locales: {
@@ -289,8 +302,9 @@ export const newsBriefs: NewsBrief[] = [
     ],
     tags: ["edge", "systems", "latency"],
     source: {
-      name: "Platform engineering docs",
-      href: "https://developer.nvidia.com/embedded-computing"
+      name: "NVIDIA Embedded Computing",
+      href: "https://developer.nvidia.com/embedded-computing",
+      direct: false
     },
     relatedPostSlugs: ["deploy-ml-model-student-budget"],
     locales: {
@@ -342,8 +356,9 @@ export const newsBriefs: NewsBrief[] = [
     ],
     tags: ["mlops", "quality", "deployment"],
     source: {
-      name: "DevOps and MLOps community reports",
-      href: "https://ml-ops.org"
+      name: "ml-ops.org",
+      href: "https://ml-ops.org",
+      direct: false
     },
     relatedPostSlugs: ["deploy-ml-model-student-budget", "student-ai-internship-roadmap"],
     locales: {
@@ -503,8 +518,9 @@ export const newsBriefs: NewsBrief[] = [
     ],
     tags: ["devops", "kubernetes", "deployment"],
     source: {
-      name: "Kubernetes blog and ecosystem updates",
-      href: "https://kubernetes.io/blog/"
+      name: "Kubernetes blog",
+      href: "https://kubernetes.io/blog/",
+      direct: false
     },
     relatedPostSlugs: ["linux-devops-workflow-for-students", "cicd-for-ml-and-backend-projects"],
     locales: {

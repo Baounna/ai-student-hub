@@ -132,11 +132,16 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                 : "Every donation funds research, high-quality articles, and accessible resources for AI + Cybersecurity students."}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
+              {/* "100% student education" is an accounting claim, and nothing in
+                  this repository accounts for a single euro -- siteConfig.donation
+                  holds two payment links and a label. "Regular updates" was the
+                  same kind of claim one notch softer. Both replaced with things a
+                  reader can check for themselves on this page and on GitHub. */}
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "100% éducation étudiante" : "100% student education"}
+                {fr ? "Lecture libre, sans publicité" : "Free to read, no ads"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Mises à jour régulières" : "Regular updates"}
+                {fr ? "Code du site public" : "Site code is public"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
                 {fr ? "Exécution IA/CS" : "AI + Cybersecurity execution"}

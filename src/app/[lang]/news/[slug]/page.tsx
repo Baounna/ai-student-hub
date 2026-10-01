@@ -14,6 +14,7 @@ import { getLocalizedPost, slugify } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
+import { briefReferences } from "@/lib/news-references";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { jsonLd } from "@/lib/json-ld";
@@ -172,21 +173,10 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
    * So: sources are counted, not asserted, and a brief with no source link says
    * so rather than being padded to two.
    */
-  const sources = brief.source.href
-    ? [{ label: brief.source.name, href: brief.source.href, source: locale === "fr" ? "Source" : "Source" }]
-    : [];
-  const references = [
-    ...sources,
-    {
-      label: topicReference.label,
-      href: topicReference.href,
-      source: locale === "fr" ? "Pour aller plus loin" : "Further reading"
-    }
-  ];
+  const { references, summaryCitation } = briefReferences(brief, topicReference, locale);
   const tocItems = [
     { id: "summary", label: locale === "fr" ? "Résumé" : "Summary" },
     { id: "latest-updates", label: locale === "fr" ? "Dernières actus" : "Latest updates" },
-    ...(brief.statsByTheme?.length ? [{ id: "performance", label: locale === "fr" ? "Stats par thème" : "Theme stats" }] : []),
     { id: "references", label: "References" },
     { id: "resources", label: locale === "fr" ? "Ressources" : "Resources" },
     ...(relatedPosts.length ? [{ id: "related", label: locale === "fr" ? "Lectures" : "Deep dives" }] : []),
@@ -262,13 +252,10 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
               </li>
               <li>
                 {locale === "fr"
-                  ? `2. ${sources.length === 1 ? "1 source citée" : "Analyse maison, sans source externe"}.`
-                  : `2. ${sources.length === 1 ? "1 cited source" : "Own analysis, no external source"}.`}
+                  ? `2. ${summaryCitation ? "1 source citée" : "Analyse maison, sans source directe"}.`
+                  : `2. ${summaryCitation ? "1 cited source" : "Own analysis, no direct source"}.`}
               </li>
               <li>{locale === "fr" ? `3. Temps de lecture : ${readMinutes(brief.readTime)} min.` : `3. Reading time: ${readMinutes(brief.readTime)} min.`}</li>
-              {brief.statsByTheme?.length ? (
-                <li>{`4. ${brief.statsByTheme.length} benchmark themes covered.`}</li>
-              ) : null}
             </ul>
             <p className="mt-3 text-sm text-[color:var(--text)]">{brief.studentImpact}</p>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -290,19 +277,21 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
               {locale === "fr" ? "Ce qui change" : "What changed"}
             </h2>
             <p className="mt-3 text-[16px] leading-8 text-[color:var(--text)]">
-              {brief.summary}{" "}
-              <a href="#reference-1" className="inline-citation">
-                [1]
-              </a>
+              {brief.summary}
+              {summaryCitation ? (
+                <>
+                  {" "}
+                  <a href={`#reference-${summaryCitation}`} className="inline-citation">
+                    [{summaryCitation}]
+                  </a>
+                </>
+              ) : null}
             </p>
 
             <div className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--bg-soft)]/45 p-5">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">{dict.news.impact}</p>
               <p className="card-copy mt-2 text-[color:var(--text)]">
-                {brief.studentImpact}{" "}
-                <a href="#reference-2" className="inline-citation">
-                  [2]
-                </a>
+                {brief.studentImpact}
               </p>
               <p className="mt-2 text-sm text-[color:var(--muted)]">{crossImpact}</p>
             </div>
@@ -330,15 +319,32 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             </div>
 
             <div className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">{dict.news.source}</p>
-              <a
-                href={brief.source.href}
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="do-link mt-2 inline-block text-sm"
-              >
-                {brief.source.name}
-              </a>
+              {/* "Source context" over a newsroom index told the reader the
+                  brief was reporting that page. Background gets its own
+                  heading. */}
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
+                {brief.source.href && brief.source.direct === false
+                  ? locale === "fr"
+                    ? "Contexte"
+                    : "Background"
+                  : dict.news.source}
+              </p>
+              {/* With no href this rendered <a class="do-link"> with no
+                  destination: a styled link a reader can click and nothing
+                  happens. The one brief in that state is the publication's own
+                  analysis, which is a name, not a link. */}
+              {brief.source.href ? (
+                <a
+                  href={brief.source.href}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="do-link mt-2 inline-block text-sm"
+                >
+                  {brief.source.name}
+                </a>
+              ) : (
+                <p className="mt-2 text-sm text-[color:var(--text)]">{brief.source.name}</p>
+              )}
             </div>
           </section>
 
@@ -346,50 +352,6 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             <LatestUpdatesBlock locale={locale} limit={6} />
           </div>
 
-          {brief.statsByTheme?.length ? (
-            <section id="performance" className="anchor-offset reading-panel rounded-3xl p-6">
-              <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-                {locale === "fr" ? "Performance IA par thème" : "AI performance by theme"}
-              </h2>
-              <p className="mt-2 text-sm text-[color:var(--text)]">
-                {locale === "fr"
-                  ? "Snapshot basé sur des tableaux benchmarks officiels publiés en février 2026."
-                  : "Snapshot based on official benchmark tables published in February 2026."}{" "}
-                <a href="#reference-1" className="inline-citation">
-                  [1]
-                </a>{" "}
-                <a href="#reference-2" className="inline-citation">
-                  [2]
-                </a>
-              </p>
-              <div className="mt-4 space-y-4">
-                {brief.statsByTheme.map((row) => (
-                  <article key={row.benchmark} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
-                    <div className="flex flex-wrap items-center justify-between gap-2">
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[color:var(--primary)]">
-                          {row.theme[locale]}
-                        </p>
-                        <h3 className="mt-1 text-sm font-semibold text-[color:var(--text-strong)]">{row.benchmark}</h3>
-                      </div>
-                      <p className="text-xs text-[color:var(--muted)]">{row.snapshot[locale]}</p>
-                    </div>
-                    <div className="mt-3 grid gap-2 md:grid-cols-3">
-                      {row.stats.map((stat) => (
-                        <div
-                          key={`${row.benchmark}-${stat.model}`}
-                          className="rounded-lg border border-[color:var(--border)] bg-[color:var(--bg-soft)]/40 p-3"
-                        >
-                          <p className="text-xs text-[color:var(--muted)]">{stat.model}</p>
-                          <p className="mt-1 text-base font-semibold text-[color:var(--text-strong)]">{stat.value}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </section>
-          ) : null}
 
           <section id="references" className="anchor-offset reading-panel rounded-3xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">

@@ -72,7 +72,11 @@ export default async function LocalizedProductPage(props: { params: Promise<{ la
         { href: `/${locale}/compare`, label: "Le lab outils", body: "Comparatifs d'outils avec leurs vrais compromis, pensés pour un budget étudiant." }
       ]
     : [
-        { href: `/${locale}/stages`, label: "Open internships", body: "Internships, apprenticeships and final-year projects, each link checked by hand, updated weekly." },
+        // "checked by hand" was EN-only drift: the weekly check is
+        // scripts/check-stages.mjs on a Monday cron -- an automated HTTP and
+        // page-text sweep. Only removing an entry needs a person. The French
+        // line next to it already said the accurate "vérifiés un par un".
+        { href: `/${locale}/stages`, label: "Open internships", body: "Internships, apprenticeships and final-year projects, each link re-checked weekly and timestamped." },
         { href: `/${locale}/blog`, label: "The guides", body: "Technical articles on AI and cybersecurity, with examples you can actually run." },
         { href: `/${locale}/compare`, label: "The tools lab", body: "Tool comparisons with their real trade-offs, written for a student budget." }
       ];
