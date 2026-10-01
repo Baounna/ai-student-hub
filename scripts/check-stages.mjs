@@ -342,6 +342,55 @@ async function workdayStillListed(href) {
   return requisitionInSearchResults(raw, search.token);
 }
 
+/**
+ * A Greenhouse-hosted posting, asked of Greenhouse rather than of the website.
+ *
+ * Several employers put a Cloudflare or Vercel challenge in front of their
+ * careers page, so the posting answers 403 or 429 forever and parks in "needs a
+ * human" every single week. A recurring alert that is never actionable is how
+ * the last outage stayed invisible for eighty days -- the notifications had
+ * become wallpaper. The board API answers cleanly and is authoritative: a job
+ * is served there only while it is published, so a 404 is real evidence of
+ * removal in a way a bot block never is.
+ *
+ * Returns true (still published), false (unpublished), or null (no opinion).
+ */
+function greenhouseApiUrl(href) {
+  const direct = String(href).match(/^https?:\/\/(?:job-boards|boards)\.greenhouse\.io\/([^/]+)\/jobs\/(\d+)/i);
+  if (direct) return `https://boards-api.greenhouse.io/v1/boards/${direct[1]}/jobs/${direct[2]}`;
+
+  // Employers who front Greenhouse with their own domain -- helsing.ai/jobs/N,
+  // coinbase.com/careers/positions/N -- are exactly the ones putting a
+  // challenge page in the way, so they are the ones worth resolving. The board
+  // slug is conventionally the brand, which the hostname already carries. A
+  // wrong guess costs one 404 and returns "no opinion", which is where we
+  // already were.
+  try {
+    const url = new URL(String(href));
+    const id = url.pathname.match(/\/(\d{4,})(?:\/|$)/);
+    if (!id) return null;
+    const labels = url.hostname.toLowerCase().replace(/^www\./, "").split(".");
+    const slug = labels.length > 1 ? labels[labels.length - 2] : labels[0];
+    if (!slug) return null;
+    return `https://boards-api.greenhouse.io/v1/boards/${slug}/jobs/${id[1]}`;
+  } catch {
+    return null;
+  }
+}
+
+async function greenhouseStillListed(href) {
+  const url = greenhouseApiUrl(href);
+  if (!url) return null;
+  const { status, text } = await fetchText(url);
+  if (status === 404) return false;
+  if (status !== 200) return null;
+  try {
+    return Boolean(JSON.parse(text).id);
+  } catch {
+    return null;
+  }
+}
+
 async function checkOne(stage) {
   const api = workdayApi(stage.href);
   if (api) {
@@ -375,6 +424,17 @@ async function checkOne(stage) {
 
   const { status, text, raw, finalUrl } = await fetchText(stage.href);
   if (status === 0) return { verdict: "CHECK", detail: "no response" };
+  // Same move as the Workday branch above, for the other board this list uses:
+  // when the website refuses us, ask the system of record.
+  if (BLOCKED_STATUSES.has(status)) {
+    const listed = await greenhouseStillListed(stage.href);
+    if (listed === true) {
+      return { verdict: "OK", detail: `HTTP ${status} from the site, but Greenhouse still publishes the posting` };
+    }
+    if (listed === false) {
+      return { verdict: "GONE", detail: `HTTP ${status} from the site and Greenhouse no longer publishes the posting` };
+    }
+  }
   if (status >= 400 && !BLOCKED_STATUSES.has(status)) {
     return { verdict: "GONE", detail: `HTTP ${status}` };
   }
