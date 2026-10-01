@@ -144,7 +144,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">{dict.resources.subtitle}</p>
             <div className="mt-5 flex flex-wrap gap-2">
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {locale === "fr" ? "Mise à jour mensuelle" : "Updated monthly"}
+                {locale === "fr" ? "Liens vérifiés" : "Links checked"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
                 {locale === "fr" ? "Budget étudiant" : "Student-budget first"}

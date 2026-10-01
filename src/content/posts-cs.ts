@@ -1137,7 +1137,7 @@ export const csExpansionPosts: BlogPost[] = [
       },
       links: [
         { label: { en: "Open ML resources", fr: "Ressources ML" }, href: "/resources", note: "Tools" },
-        { label: { en: "Student guide", fr: "Guide étudiant" }, href: "/product/ai-career-guide", note: "Workflow" }
+        { label: { en: "Career guides", fr: "Guides carrière" }, href: "/blog?track=career", note: "Workflow" }
       ]
     },
     // P2: sklearn's own leakage rationale for make_pipeline, plus Rules of ML #32 on reusing code between training and serving. P4 and P7: Rules of ML #5, on gating data into the algorithm and testing infrastructure independently of the learning. Ref 2 is a section index with no prose and is cited by nothing.

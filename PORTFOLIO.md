@@ -83,7 +83,7 @@ Full EN/FR parity via a dictionary system; canonical + hreflang alternates, JSON
 sitemap, RSS, and per-route metadata.
 
 ### 5. Reliability
-300 Vitest tests across 30 files, over the security-sensitive lib layer (URL safety, the SSRF guard,
+320 Vitest tests across 32 files, over the security-sensitive lib layer (URL safety, the SSRF guard,
 client-IP parsing, the tracking allowlist) and a CI workflow running
 lint → typecheck → test → build on every push/PR — plus a scheduled watchdog that
 verifies the deployed site and self-heals dependency drift (see below).

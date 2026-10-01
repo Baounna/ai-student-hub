@@ -168,7 +168,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       // email that may not arrive. Restore the cadence the week something
       // actually sends on a schedule.
       badge: "Internships and apprenticeships",
-      title: "Open tech internships in France and Morocco",
+      title: "Open tech internships, verified weekly",
       description:
         "New internships, apprenticeships and final-year projects, each with a direct link and its closing date where the employer publishes one. Never more than one email a week.",
       // This is the submit button of the email form, not a link. "See the
@@ -255,7 +255,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     newsletter: {
       badge: "Stages et alternances",
-      title: "Les stages tech ouverts en France et au Maroc",
+      title: "Les stages tech ouverts, vérifiés chaque semaine",
       description:
         "Les nouveaux stages, alternances et PFE, chacun avec un lien direct et sa date limite quand l'employeur en annonce une. Jamais plus d'un email par semaine.",
       // Bouton d'envoi du formulaire, pas un lien: voir le commentaire côté EN.

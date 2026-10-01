@@ -174,6 +174,25 @@ export default async function StagesPage(props: {
       (!countryFilter || stage.country === countryFilter) && (!kindFilter || stage.kind === kindFilter)
   );
   const isFiltered = Boolean(countryFilter || kindFilter);
+  /**
+   * Chip counts within the other active filter, not across the whole board.
+   *
+   * They counted the full list, so with ?country=MA the Type row still read
+   * "Apprenticeship (8)" and clicking it delivered nothing: Morocco has no
+   * apprenticeships. Sixteen of the thirty country-kind pairs are empty, which
+   * made thirty-two chip states advertise a number and hand back an empty page.
+   *
+   * That is the exact failure these chips were added to avoid -- a count a
+   * reader trusts, leading somewhere that does not exist -- and it bit hardest
+   * on the Morocco view, which is what they were built for.
+   *
+   * A chip reading (0) is honest and still clickable; what it must never do is
+   * promise eight and deliver none.
+   */
+  const countInCountry = (code: string) =>
+    stages.filter((stage) => stage.country === code && (!kindFilter || stage.kind === kindFilter)).length;
+  const countInKind = (kind: string) =>
+    stages.filter((stage) => stage.kind === kind && (!countryFilter || stage.country === countryFilter)).length;
   const filterHref = (next: { country?: string; kind?: string }) => {
     const country = next.country ?? countryFilter;
     const kind = next.kind ?? kindFilter;
@@ -298,7 +317,7 @@ export default async function StagesPage(props: {
                   : "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
               }`}
             >
-              {copy.filterAll} ({stages.length})
+              {copy.filterAll} ({kindFilter ? countInKind(kindFilter) : stages.length})
             </Link>
             {availableCountries.map((code) => (
               <Link
@@ -311,7 +330,7 @@ export default async function StagesPage(props: {
                     : "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
                 }`}
               >
-                {countryLabel(code, locale)} ({byCountry.get(code) ?? 0})
+                {countryLabel(code, locale)} ({countInCountry(code)})
               </Link>
             ))}
           </div>
@@ -339,7 +358,7 @@ export default async function StagesPage(props: {
                     : "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
                 }`}
               >
-                {kindLabel(kind, locale)} ({stages.filter((stage) => stage.kind === kind).length})
+                {kindLabel(kind, locale)} ({countInKind(kind)})
               </Link>
             ))}
           </div>

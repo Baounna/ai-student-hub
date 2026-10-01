@@ -136,7 +136,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                 {fr ? "100% éducation étudiante" : "100% student education"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Mises à jour mensuelles" : "Monthly updates"}
+                {fr ? "Mises à jour régulières" : "Regular updates"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
                 {fr ? "Exécution IA/CS" : "AI + Cybersecurity execution"}
@@ -207,7 +207,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
               {[
                 { amount: "$3", label: fr ? "Café support" : "Coffee support" },
-                { amount: "$10", label: fr ? "Soutien mensuel" : "Monthly support" },
+                { amount: "$10", label: fr ? "Soutien standard" : "Standard support" },
                 { amount: "$25", label: fr ? "Sponsor étudiant" : "Student sponsor" }
               ].map((tier) => (
                 <article key={tier.amount} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
@@ -280,8 +280,8 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Non. Vous pouvez soutenir ponctuellement ou mensuellement selon votre budget."
-                    : "No. You can support once or monthly based on your budget."}
+                    ? "Non. Chaque don est ponctuel : PayPal.me ne gère pas les paiements récurrents."
+                    : "No. Every donation is one-off: PayPal.me does not handle recurring payments."}
                 </p>
               </div>
               <div>

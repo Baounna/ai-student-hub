@@ -225,7 +225,10 @@ const fallbackRecommendedTools: RecommendedTool[] = [
   {
     name: "Grammarly",
     icon: "/images/tool-productivity.svg",
-    category: { en: "Systems & Backend", fr: "Systèmes & Backend" },
+    // The category belonged to "Dev Workflow Workspace", the invented name this
+    // card used to carry. A writing assistant filed under Systems & Backend
+    // contradicts its own description two lines down.
+    category: { en: "Writing", fr: "Rédaction" },
     summary: {
       en: "Catches grammar and clarity problems in English writing: reports, documentation, applications.",
       fr: "Corrige grammaire et clarté en anglais : rapports, documentation et candidatures."
@@ -595,7 +598,11 @@ export const comparisons: ComparisonPage[] = [
     tools: [
       {
         name: "FastAPI",
-        affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_fastapi"),
+        // Was digitalOceanBase: a card named FastAPI, with a button reading
+        // "Try this tool", that took a reader to a cloud host. Its two siblings
+        // point at nestjs.com and gofiber.io, and this page's own reference list
+        // links FastAPI correctly -- the card was the only thing disagreeing.
+        affiliateHref: "https://fastapi.tiangolo.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_fastapi",
         locales: {
           en: {
             price: "MIT-licensed; you pay only for hosting",
@@ -1527,7 +1534,7 @@ const basePosts: BlogPost[] = [
       },
       links: [
         { label: { en: "Open internships", fr: "Stages ouverts" }, href: "/stages", note: "Weekly list" },
-        { label: { en: "Student guide product", fr: "Guide étudiant" }, href: "/product/ai-career-guide", note: "$9-$19 offer" }
+        { label: { en: "Open internships", fr: "Stages ouverts" }, href: "/stages", note: "Verified weekly" }
       ]
     },
     // One marker is the honest ceiling for an advice piece. P6's outcomes-over-activity claim is supported: the Harvard guide lists 'Not demonstrating results' among its top five resume mistakes and requires language that is 'fact-based (quantify and qualify)'. It says nothing about de-emphasising technologies, so the marker covers the first half of the sentence only. Refs 1 and 3 (dol.gov, pmi.org) both return 403 and cannot be verified, so nothing cites them.

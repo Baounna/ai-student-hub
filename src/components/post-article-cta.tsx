@@ -2,8 +2,7 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/config";
 import { siteConfig } from "@/config/site";
 import { TrackableAnchor } from "@/components/trackable-anchor";
-import { getProductCheckoutUrl } from "@/lib/product";
-import { getGuideCtaHref } from "@/lib/product";
+import { getGuideCtaHref, getGuideCtaLabel, getProductCheckoutUrl } from "@/lib/product";
 
 type PostArticleCtaProps = {
   locale?: Locale;
@@ -28,7 +27,13 @@ export function PostArticleCta({
       : "Open the current list of open internships, then the tools lab.");
   const ctaPrimary = locale === "fr" ? siteConfig.leadMagnet.frLabel : siteConfig.leadMagnet.enLabel;
   const ctaSecondary = locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab";
-  const ctaTertiary = locale === "fr" ? "Acheter le guide étudiant" : "Buy student guide";
+  // Was hardcoded to "Buy student guide" / "Acheter le guide étudiant", and
+  // rendered at the foot of all 48 article pages -- for a product whose own
+  // page says "This guide does not exist. There is nothing to buy, no price,
+  // and no date promised." Every other call site was moved onto the gate in
+  // src/lib/product.ts; this one was missed, which made it the single place
+  // the site still offered to sell something that is not written.
+  const ctaTertiary = getGuideCtaLabel(locale);
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
   const checkoutUrl = getProductCheckoutUrl();
   const proofLines =
@@ -77,7 +82,10 @@ export function PostArticleCta({
             meta={{ page: "post_article_cta", locale, offer: "ai-career-guide" }}
             className="btn-secondary"
           >
-            {ctaTertiary}
+            {/* Only reachable once GUIDE_EXISTS is true and a checkout URL is
+                set, i.e. once there is something to buy. Until then the branch
+                below runs and says what the site actually has. */}
+            {locale === "fr" ? "Acheter le guide étudiant" : "Buy student guide"}
           </TrackableAnchor>
         ) : (
           <Link href={getGuideCtaHref(locale)} className="btn-secondary">

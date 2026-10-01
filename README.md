@@ -1,6 +1,6 @@
 # AI and Cybersecurity News
 
-81 AI and cybersecurity internships in France and Morocco, every link verified
+109 AI and cybersecurity internships across ten countries, every link verified
 weekly by a checker that reads the page body — because three postings answered
 HTTP 200 while saying, in the body, that they had closed.
 
@@ -15,7 +15,7 @@ AI and cybersecurity, with an autonomous back office that runs it.
 
 ## What's actually interesting here
 
-**A verifier for someone else's data.** `scripts/check-stages.mjs` opens all 81
+**A verifier for someone else's data.** `scripts/check-stages.mjs` opens all 109
 internship listings weekly and reads each page, because a status code does not
 tell you a job has closed: three separate wordings — "no longer available",
 "n'est plus disponible", "a expiré" — were each invisible to HTTP status,
@@ -32,7 +32,7 @@ pull requests. Nothing publishes without review.
 **A security layer well past what a blog needs.** Per-request nonce CSP, session
 revocation, SSRF/CSRF guards, and rate limiting that prefers a shared Redis store
 and falls back to memory — which, with no Redis configured, is what actually runs,
-so the limits are per instance. 314 tests across 32 files, because that's where
+so the limits are per instance. 320 tests across 32 files, because that's where
 the bugs hide.
 
 **A watchdog that heals the site while nobody is watching.** It checks the live
