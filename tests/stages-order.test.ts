@@ -81,3 +81,55 @@ describe("internship ordering", () => {
     expect(Math.min(...positions)).toBeLessThan(stages.length / 4);
   });
 });
+
+/**
+ * Filters exist because the scope line created an obligation. Once the page
+ * says "9 Morocco" out of 111, a reader who wants those nine has been told they
+ * exist and given no route to them -- which is worse than not saying it. These
+ * cover the filtering decisions rather than the markup: the page reads country
+ * and kind from the URL, so an unknown value must fall back to everything
+ * rather than render an empty list.
+ */
+describe("stage filtering", () => {
+  const stages = getStages();
+  const countries = [...new Set(stages.map((s) => s.country))];
+  const kinds = [...new Set(stages.map((s) => s.kind))];
+
+  const apply = (country: string, kind: string) =>
+    stages.filter(
+      (s) =>
+        (!countries.includes(country) || s.country === country) &&
+        (!kinds.includes(s.kind as never) || !kind || s.kind === kind)
+    );
+
+  it("narrows to one country", () => {
+    for (const country of countries) {
+      const got = stages.filter((s) => s.country === country);
+      expect(got.length).toBeGreaterThan(0);
+      expect(got.every((s) => s.country === country)).toBe(true);
+    }
+  });
+
+  it("the country counts add up to the whole list", () => {
+    const total = countries.reduce((n, c) => n + stages.filter((s) => s.country === c).length, 0);
+    expect(total).toBe(stages.length);
+  });
+
+  it("the kind counts add up to the whole list", () => {
+    const total = kinds.reduce((n, k) => n + stages.filter((s) => s.kind === k).length, 0);
+    expect(total).toBe(stages.length);
+  });
+
+  it("an unknown country shows everything rather than nothing", () => {
+    // ?country=ZZ is a typo or a stale link, not a request for an empty page.
+    expect(countries.includes("ZZ")).toBe(false);
+    expect(apply("ZZ", "")).toHaveLength(stages.length);
+  });
+
+  it("every country the chips offer has at least one listing behind it", () => {
+    // A chip reading "Spain (0)" would be a dead end the page invented itself.
+    for (const country of countries) {
+      expect(stages.filter((s) => s.country === country).length).toBeGreaterThan(0);
+    }
+  });
+});

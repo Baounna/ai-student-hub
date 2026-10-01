@@ -58,6 +58,12 @@ const COPY = {
     // thing the title promised a Moroccan reader.
     scope: (breakdown: string, security: number, total: number) =>
       `${breakdown}. ${security} of ${total} are security or cyber roles.`,
+    filterCountry: "Country",
+    filterKind: "Type",
+    filterAll: "All",
+    filterShowing: (shown: number, total: number) => `Showing ${shown} of ${total}`,
+    filterClear: "Clear filters",
+    filterNone: "No openings match that filter yet. The others are below.",
     methodTitle: "What \u201cchecked\u201d means here",
     methodBody:
       "Every link is opened and its page read, not just pinged for a status code \u2014 three postings have answered HTTP 200 while saying, in the body, that they had closed. A listing is removed only after a person confirms it is gone; a refusal to serve us is treated as a fact about us, not about the job. Deadlines are shown only where the employer published one."
@@ -83,6 +89,12 @@ const COPY = {
     openCount: (open: number, total: number) => `${open} ouverte(s) sur ${total} référencée(s)`,
     scope: (breakdown: string, security: number, total: number) =>
       `${breakdown}. ${security} sur ${total} sont des postes sécurité ou cyber.`,
+    filterCountry: "Pays",
+    filterKind: "Type",
+    filterAll: "Tous",
+    filterShowing: (shown: number, total: number) => `${shown} sur ${total} affichées`,
+    filterClear: "Effacer les filtres",
+    filterNone: "Aucune offre ne correspond à ce filtre pour l'instant. Les autres sont ci-dessous.",
     methodTitle: "Ce que « vérifié » veut dire ici",
     methodBody:
       "Chaque lien est ouvert et sa page lue, pas seulement testée par code HTTP : trois offres ont répondu 200 tout en indiquant, dans le corps de la page, qu'elles étaient closes. Une offre n'est retirée qu'après vérification humaine ; un refus de nous répondre est traité comme un fait nous concernant, pas comme une fermeture. Les dates limites ne sont affichées que lorsque l'employeur en publie une."
@@ -109,7 +121,11 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   };
 }
 
-export default async function StagesPage(props: { params: Promise<{ lang: string }> }) {
+export default async function StagesPage(props: {
+  params: Promise<{ lang: string }>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const searchParams = await props.searchParams;
   const params = await props.params;
   if (!isLocale(params.lang)) return null;
   const locale: Locale = params.lang;
@@ -128,6 +144,45 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     .map(([code, n]) => `${n} ${countryLabel(code, locale)}`)
     .join(" · ");
+
+  /**
+   * Country and kind, read from the URL.
+   *
+   * Eleven countries and 111 rows in one flat list means a student in
+   * Casablanca scrolls past a hundred French listings to find nine, and the
+   * scope line above now tells them those nine exist -- which made the absence
+   * of a way to reach them worse, not better. Naming a subset you give nobody a
+   * route to is its own small cruelty.
+   *
+   * Links rather than a client component: the filtered view gets a real URL a
+   * reader can share or bookmark, it works with JavaScript off, and the page
+   * stays a server component. The blog index already filters this way.
+   *
+   * Validated against what is actually in the data, so a hand-typed ?country=ZZ
+   * falls back to everything rather than rendering an empty page.
+   */
+  const rawCountry = typeof searchParams?.country === "string" ? searchParams.country.toUpperCase() : "";
+  const rawKind = typeof searchParams?.kind === "string" ? searchParams.kind.toLowerCase() : "";
+  const availableCountries = [...byCountry.keys()].sort(
+    (a, b) => (byCountry.get(b) ?? 0) - (byCountry.get(a) ?? 0) || a.localeCompare(b)
+  );
+  const availableKinds = [...new Set(stages.map((stage) => stage.kind))];
+  const countryFilter = availableCountries.includes(rawCountry) ? rawCountry : "";
+  const kindFilter = (availableKinds as string[]).includes(rawKind) ? rawKind : "";
+  const filtered = stages.filter(
+    (stage) =>
+      (!countryFilter || stage.country === countryFilter) && (!kindFilter || stage.kind === kindFilter)
+  );
+  const isFiltered = Boolean(countryFilter || kindFilter);
+  const filterHref = (next: { country?: string; kind?: string }) => {
+    const country = next.country ?? countryFilter;
+    const kind = next.kind ?? kindFilter;
+    const qs = new URLSearchParams();
+    if (country) qs.set("country", country);
+    if (kind) qs.set("kind", kind);
+    const query = qs.toString();
+    return query ? `/${locale}/stages?${query}` : `/${locale}/stages`;
+  };
   // Matched on the role text because the data has no field for it. Deliberately
   // broad: the claim is "security or cyber", and over-counting a borderline
   // role is a smaller error than telling a reader the list is general tech.
@@ -226,13 +281,90 @@ export default async function StagesPage(props: { params: Promise<{ lang: string
         </div>
       ) : null}
 
+      {/* Links, not a client component: each filtered view gets a URL a reader
+          can share, it works without JavaScript, and the page stays a server
+          component. Counts sit on the chips because "9 Morocco" is the fact
+          that decides whether the click is worth it. */}
+      {stages.length > 0 ? (
+        <nav className="mt-6 space-y-2" aria-label={copy.filterCountry}>
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="provenance mr-1">{copy.filterCountry}</span>
+            <Link
+              href={filterHref({ country: "" })}
+              aria-current={countryFilter ? undefined : "true"}
+              className={`rounded-full border px-3 py-1 text-xs transition ${
+                countryFilter
+                  ? "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
+                  : "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
+              }`}
+            >
+              {copy.filterAll} ({stages.length})
+            </Link>
+            {availableCountries.map((code) => (
+              <Link
+                key={code}
+                href={filterHref({ country: code })}
+                aria-current={countryFilter === code ? "true" : undefined}
+                className={`rounded-full border px-3 py-1 text-xs transition ${
+                  countryFilter === code
+                    ? "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
+                    : "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
+                }`}
+              >
+                {countryLabel(code, locale)} ({byCountry.get(code) ?? 0})
+              </Link>
+            ))}
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="provenance mr-1">{copy.filterKind}</span>
+            <Link
+              href={filterHref({ kind: "" })}
+              aria-current={kindFilter ? undefined : "true"}
+              className={`rounded-full border px-3 py-1 text-xs transition ${
+                kindFilter
+                  ? "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
+                  : "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
+              }`}
+            >
+              {copy.filterAll}
+            </Link>
+            {availableKinds.map((kind) => (
+              <Link
+                key={kind}
+                href={filterHref({ kind })}
+                aria-current={kindFilter === kind ? "true" : undefined}
+                className={`rounded-full border px-3 py-1 text-xs transition ${
+                  kindFilter === kind
+                    ? "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
+                    : "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
+                }`}
+              >
+                {kindLabel(kind, locale)} ({stages.filter((stage) => stage.kind === kind).length})
+              </Link>
+            ))}
+          </div>
+          {isFiltered ? (
+            <p className="provenance">
+              {copy.filterShowing(filtered.length, stages.length)} ·{" "}
+              <Link href={`/${locale}/stages`} className="do-link">
+                {copy.filterClear}
+              </Link>
+            </p>
+          ) : null}
+        </nav>
+      ) : null}
+
       {stages.length === 0 ? (
         <p className="mt-8 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6 text-[color:var(--text)]">
           {copy.empty}
         </p>
+      ) : filtered.length === 0 ? (
+        <p className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6 text-[color:var(--text)]">
+          {copy.filterNone}
+        </p>
       ) : (
         <ul className="mt-6 space-y-3">
-          {stages.map((stage) => {
+          {filtered.map((stage) => {
             const closed = isClosed(stage);
             return (
               <li
