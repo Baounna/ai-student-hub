@@ -123,7 +123,6 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
   // reading estimate, and a 26-line script is neither words nor read at prose
   // speed -- counting it moved the displayed figures by 17 percent.
   const wordCount = proseOnly(post.content).reduce((sum, paragraph) => sum + paragraph.split(/\s+/).filter(Boolean).length, 0);
-  const readingEffortMinutes = Math.max(1, Math.round(wordCount / 220));
   const executionAssets = post.affiliateCallout.links.length + Math.min(recommendedTools.length, 3);
   const sourceDensity = wordCount ? Math.max(1, Math.round((post.references.length / wordCount) * 1000)) : 0;
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
@@ -262,10 +261,19 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
           </p>
         </article>
         <article className="blog-signal-card rounded-xl p-3">
+          {/* Was "Read effort ~N min", a second reading time computed from a
+              different word set than the "N min read" in the header two inches
+              above, so the page showed a reader two numbers for one thing and
+              explained neither. The word count is a fact the other cards do not
+              already state, and the one the source-density figure below is
+              measured against. */}
           <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-            {locale === "fr" ? "Effort réel" : "Read effort"}
+            {locale === "fr" ? "Longueur" : "Length"}
           </p>
-          <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">~{readingEffortMinutes} min</p>
+          <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
+            {wordCount.toLocaleString(locale === "fr" ? "fr-FR" : "en-US")}{" "}
+            {locale === "fr" ? "mots" : "words"}
+          </p>
         </article>
         <article className="blog-signal-card rounded-xl p-3">
           <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">

@@ -116,7 +116,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TITLE="Internship listings need a human look"
-          BODY=$(printf 'The weekly check found listings it will not remove on its own.\n\n```\n%s\n```\n\nOpen each link. If the posting is genuinely gone, delete its entry from `src/content/stages.json`. If the employer simply refused to serve us, leave it: that is a fact about us, not about the job.\n\nRun: `%s`\n' "$(tail -n 25 "$RUNNER_TEMP/stages.log")" "npm run check:stages")
+          BODY=$(printf 'The weekly check found listings it will not remove on its own.\n\n```\n%s\n```\n\nOpen each link. If the posting is genuinely gone, delete its entry from `src/content/stages.json`. If the employer simply refused to serve us, leave it: that is a fact about us, not about the job.\n\nRun: `%s`\n' "$(tail -n 25 "$RUNNER_TEMP/stages.log" | tr -d '`')" "npm run check:stages")
           EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
           if [ -n "$EXISTING" ]; then
             gh issue comment "$EXISTING" --body "$BODY"

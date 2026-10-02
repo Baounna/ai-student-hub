@@ -4,10 +4,6 @@ const TRACKED_EVENTS = [
   "newsletter_submit_error",
   "affiliate_click",
   "product_checkout_click",
-  "auth_login_attempt",
-  "auth_register_attempt",
-  "account_access_submit_success",
-  "account_access_submit_error",
   "article_share"
 ] as const;
 

@@ -4,9 +4,13 @@ import { sanitizeTrackPayload, isTrackEventName } from "@/lib/tracking-schema";
 describe("isTrackEventName", () => {
   it("accepts allowlisted events only", () => {
     expect(isTrackEventName("affiliate_click")).toBe(true);
-    expect(isTrackEventName("auth_login_attempt")).toBe(true);
+    expect(isTrackEventName("article_share")).toBe(true);
     expect(isTrackEventName("not_a_real_event")).toBe(false);
     expect(isTrackEventName("")).toBe(false);
+    // The account system was removed; these four stayed in the allowlist as
+    // names nothing could legitimately send.
+    expect(isTrackEventName("auth_login_attempt")).toBe(false);
+    expect(isTrackEventName("account_access_submit_success")).toBe(false);
   });
 });
 

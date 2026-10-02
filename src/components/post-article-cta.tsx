@@ -36,10 +36,24 @@ export function PostArticleCta({
   const ctaTertiary = getGuideCtaLabel(locale);
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
   const checkoutUrl = getProductCheckoutUrl();
+  /**
+   * These three described the career guide, which does not exist.
+   *
+   * They outlived it: the heading above them now reads "Open the current list of
+   * open internships, then the tools lab", and underneath it the chips still
+   * promised a "weekly execution-first system" and something "actionable in
+   * under 10 minutes" -- a cadence nothing keeps and a format nothing has. The
+   * French third chip, "Conçu pour un budget-friendly réel", was not a noun
+   * phrase in either language.
+   *
+   * What replaces them is true of the two pages this CTA actually links to: the
+   * internship board, whose links a Monday job re-checks and whose every row
+   * carries its own date, and the tools lab, which needs no signup.
+   */
   const proofLines =
     locale === "fr"
-      ? ["Format actionable en 10 min", "Système hebdomadaire orienté exécution", "Conçu pour un budget-friendly réel"]
-      : ["Actionable in under 10 minutes", "Weekly execution-first system", "Built for realistic budget constraints"];
+      ? ["Liens de stage vérifiés un par un", "Revérifiés chaque semaine", "Lecture libre, sans inscription"]
+      : ["Internship links checked one by one", "Re-checked weekly", "Free to read, no signup"];
 
   return (
     <section className="do-hero rounded-2xl p-6">

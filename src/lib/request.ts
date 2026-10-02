@@ -115,6 +115,20 @@ export async function parseJsonBody<T>(
   options: ParseJsonBodyOptions = {}
 ): Promise<JsonBodyParseResult<T>> {
   const maxBytes = Number.isFinite(options.maxBytes) ? Math.max(256, Number(options.maxBytes)) : 24 * 1024;
+  /**
+   * Refuse on the declared length before reading anything.
+   *
+   * The size check below runs after `await request.text()`, so a 2MB POST to a
+   * route declaring a 10KB limit was buffered in full and then rejected --
+   * correctly 413, but 200 times the stated limit already resident, times
+   * however many requests arrive at once. Content-Length is attacker-controlled
+   * and absent on a chunked body, so the post-read check stays as the backstop;
+   * this just means the honest-but-oversized case costs nothing.
+   */
+  const declared = Number(request.headers.get("content-length"));
+  if (Number.isFinite(declared) && declared > maxBytes) {
+    return { ok: false, error: "payload_too_large" };
+  }
   try {
     const raw = await request.text();
     if (Buffer.byteLength(raw, "utf8") > maxBytes) {
