@@ -58,7 +58,21 @@ jobs:
           # the workflow failed every week even though nothing was wrong — the
           # agent failed open and the workflow failed closed.
           if [ ! -d docs/agent/drafts/llm ] || [ -z "$(ls -A docs/agent/drafts/llm 2>/dev/null)" ]; then
-            echo "No drafts produced — the writer agent skipped (ANTHROPIC_API_KEY not set)."
+            # A green check that says only "success" is how this ran every
+            # Monday for months while producing nothing: the repository has no
+            # Actions secrets, so ANTHROPIC_API_KEY is empty, the agent exits 0
+            # by design, and no draft and no pull request has ever appeared.
+            # Failing would recreate the weekly red X the comment above was
+            # written to stop. Saying so out loud does not.
+            echo "::warning title=Writer agent produced nothing::ANTHROPIC_API_KEY is not set, so no drafts were generated. This run succeeded without doing anything."
+            {
+              echo "### Writer agent produced no drafts"
+              echo ""
+              echo "\`ANTHROPIC_API_KEY\` is not set in this repository's Actions secrets, so"
+              echo "the agent skipped by design and no pull request was opened."
+              echo ""
+              echo "This job is green because nothing failed, not because anything was written."
+            } >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
 
