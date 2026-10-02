@@ -29,7 +29,16 @@ const FILE = fileArg !== -1 && process.argv[fileArg + 1]
   : path.join(process.cwd(), "src/content/stages.json");
 const WRITE = process.argv.includes("--write");
 /** Boards whose validThrough is a listing expiry of their own, not the employer's. */
-const LISTING_TTL_HOSTS = new Set(["hellowork.com"]);
+/**
+ * Hosts whose validThrough is their own listing lifetime, not the employer's
+ * deadline, so a lapsed one means the advert rotated and not that the job is
+ * gone.
+ *
+ * linkedin.com sets it to exactly datePosted + 30 days -- verified on six
+ * listings on this board. Without it here, the first of those to reach day
+ * thirty would have been reported GONE while still perfectly open.
+ */
+const LISTING_TTL_HOSTS = new Set(["hellowork.com", "linkedin.com"]);
 
 /**
  * The registrable part of a listing's host, for matching against the sets above.
@@ -95,6 +104,11 @@ const GONE = [
   // "offre expiree" but not the verb form with the auxiliary between.
   "poste a expir",
   "offre a expir",
+  // ENGIE answers 200 with the whole page intact and this one sentence where
+  // the posting used to be. Nothing else on the page says it is closed, and no
+  // phrase on this list matched, so it was reported open for weeks.
+  "not available at this time",
+  "can't view this job",
   "no longer accepting applications",
   "no longer available",
   "cette offre est pourvue",
@@ -274,7 +288,13 @@ async function fetchText(url) {
  * behind it is the only thing that actually knows, so ask that instead.
  */
 function workdayApi(href) {
-  const match = href.match(/^https:\/\/([a-z0-9-]+)\.(wd\d)\.myworkdayjobs\.com\/[^/]+\/([^/]+)\/job\/(.+)$/i);
+  // Two bugs lived in this pattern, and between them they sent three listings
+  // down the HTML path where Workday serves an empty JavaScript shell:
+  //   wd\d matched a single digit, so bdf.wd103 never reached the API at all;
+  //   and the locale segment was required, so Renault's
+  //   /renault-group-careers/job/... did not match either. Both tenants were
+  //   then judged on a page containing no text, and reported OK.
+  const match = href.match(/^https:\/\/([a-z0-9-]+)\.(wd\d+)\.myworkdayjobs\.com\/(?:[^/]+\/)?([^/]+)\/job\/(.+)$/i);
   if (!match) return "";
   const [, tenant, wd, site, jobPath] = match;
   return `https://${tenant}.${wd}.myworkdayjobs.com/wday/cxs/${tenant}/${site}/job/${jobPath}`;
@@ -293,7 +313,7 @@ function workdayApi(href) {
  * its own site's search is gone.
  */
 function workdaySearchUrl(href) {
-  const match = href.match(/^https:\/\/([a-z0-9-]+)\.(wd\d)\.myworkdayjobs\.com\/[^/]+\/([^/]+)\/job\/(.+)$/i);
+  const match = href.match(/^https:\/\/([a-z0-9-]+)\.(wd\d+)\.myworkdayjobs\.com\/(?:[^/]+\/)?([^/]+)\/job\/(.+)$/i);
   if (!match) return null;
   const [, tenant, wd, site, jobPath] = match;
   const last = jobPath.split("/").pop() || "";
@@ -378,6 +398,35 @@ function greenhouseApiUrl(href) {
   }
 }
 
+/**
+ * Ashby's public board, for the same reason as Greenhouse and Workday.
+ *
+ * jobs.ashbyhq.com serves a 78-126 character JavaScript shell to a plain fetch,
+ * so all five Ashby listings on this board were judged on a page with no words
+ * in it and reported OK. One of them -- Qonto's ML internship -- had been
+ * delisted: absent from the 43 jobs the board API publishes, and its own
+ * embedded state says isListed: false. Ashby deliberately keeps a direct link
+ * working after delisting so in-flight candidates can finish, and shows no
+ * closure banner, so there is nothing on the page to read even once it loads.
+ *
+ * Returns true if the board still publishes it, false if it does not, and null
+ * when the question could not be asked.
+ */
+async function ashbyStillListed(href) {
+  const match = href.match(/^https:\/\/jobs\.ashbyhq\.com\/([^/]+)\/([0-9a-f-]{36})/i);
+  if (!match) return null;
+  const [, board, id] = match;
+  const { status, raw } = await fetchText(`https://api.ashbyhq.com/posting-api/job-board/${board}`);
+  if (status !== 200) return null;
+  try {
+    const jobs = JSON.parse(raw).jobs;
+    if (!Array.isArray(jobs)) return null;
+    return jobs.some((job) => String(job.id).toLowerCase() === id.toLowerCase());
+  } catch {
+    return null;
+  }
+}
+
 async function greenhouseStillListed(href) {
   const url = greenhouseApiUrl(href);
   if (!url) return null;
@@ -422,6 +471,15 @@ async function checkOne(stage) {
     }
   }
 
+  // Ashby's own board, before the HTML -- which is a script shell either way.
+  if (/^https:\/\/jobs\.ashbyhq\.com\//i.test(stage.href)) {
+    const listed = await ashbyStillListed(stage.href);
+    if (listed === true) return { verdict: "OK", detail: "Ashby board still publishes the posting" };
+    if (listed === false) {
+      return { verdict: "CHECK", detail: "Ashby board no longer publishes this posting (the direct link still works, which is how Ashby handles a delisted job)" };
+    }
+  }
+
   const { status, text, raw, finalUrl } = await fetchText(stage.href);
   if (status === 0) return { verdict: "CHECK", detail: "no response" };
   // Same move as the Workday branch above, for the other board this list uses:
@@ -462,6 +520,28 @@ async function checkOne(stage) {
   if (BLOCKED_STATUSES.has(status)) {
     return { verdict: "CHECK", detail: `HTTP ${status} (blocked, not proof either way)` };
   }
+
+  /**
+   * A page with no words in it proves nothing, and used to pass.
+   *
+   * Workday, Ashby and BPCE all serve a JavaScript shell to a plain fetch: 0 to
+   * 126 characters of text, no status error, no closure phrase, no
+   * validThrough. Every check above finds nothing, so control reached the line
+   * below and returned OK on the strength of a 200 and an empty body. That is
+   * how two dead postings survived -- and the page tells readers "Every link is
+   * opened and its page read", which cannot be true of a page that has nothing
+   * to read.
+   *
+   * 400 characters is comfortably below any real posting and well above an
+   * empty shell.
+   */
+  if (text.trim().length < 400) {
+    return {
+      verdict: "CHECK",
+      detail: `HTTP ${status} but only ${text.trim().length} characters of text — the page is a script shell, so nothing was verified`
+    };
+  }
+
   return { verdict: "OK", detail: `HTTP ${status}` };
 }
 
