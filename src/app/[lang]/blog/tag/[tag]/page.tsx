@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { categoryName } from "@/lib/categories";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -140,7 +141,7 @@ export default async function LocalizedTagPage(props: { params: Promise<{ lang: 
               <div>
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="blog-chip rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
-                    {post.category}
+                    {categoryName(post.category, locale)}
                   </span>
                   <span className="text-xs text-[color:var(--muted)]">{formatReadTime(post.readTime, locale)}</span>
                   <span className="text-xs text-[color:var(--muted)]">{formatPublishedDate(post.publishedAt, locale)}</span>

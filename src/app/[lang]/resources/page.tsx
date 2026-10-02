@@ -373,8 +373,11 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                     meta={{ page: "resources_partners", partner: partner.name, placement: partner.placement, locale }}
                     className="inline-flex items-center justify-between rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-4 py-3 text-sm text-[color:var(--text)] hover:border-[color:var(--primary)]/35"
                   >
+                    {/* The second span printed the raw AFFILIATE_n_PLACEMENT
+                        value, so each partner read "DigitalOcean
+                        home/resources" -- our own configuration, telling the
+                        reader which slots we put the link in. */}
                     <span>{partner.name}</span>
-                    <span className="text-xs text-[color:var(--muted)]">{partner.placement}</span>
                   </TrackableAnchor>
                 ))}
               </div>

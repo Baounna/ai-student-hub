@@ -170,10 +170,37 @@ function placementCategory(placement: string): Record<Locale, string> {
   return { en: "Resources", fr: "Ressources" };
 }
 
+/**
+ * Where a partner card appears, named in the reader's language.
+ *
+ * This returned the raw AFFILIATE_n_PLACEMENT slug for both locales, and the
+ * slug is interpolated straight into a French sentence -- so /fr/resources and
+ * every French article read "Ressource partenaire choisie pour les workflows
+ * home, resources en IA et informatique." Five cards, five pages, one English
+ * configuration value showing through the prose.
+ */
+const PLACEMENT_WORDS: Record<string, Record<Locale, string>> = {
+  home: { en: "home", fr: "accueil" },
+  blog: { en: "blog", fr: "blog" },
+  resources: { en: "resources", fr: "ressources" },
+  comparison: { en: "comparison", fr: "comparatifs" },
+  comparisons: { en: "comparison", fr: "comparatifs" },
+  tools: { en: "tools", fr: "outils" },
+  news: { en: "news", fr: "actualités" }
+};
+
 function placementLabel(placement: string): Record<Locale, string> {
-  const normalized = placement.replace(/[_-]/g, " ").replace(/\//g, ", ").replace(/\s+/g, " ").trim();
-  if (!normalized) return { en: "resources", fr: "ressources" };
-  return { en: normalized, fr: normalized };
+  const parts = placement
+    .split(/[\/,]/)
+    .map((part) => part.replace(/[_-]/g, " ").trim().toLowerCase())
+    .filter(Boolean);
+  if (!parts.length) return { en: "resources", fr: "ressources" };
+
+  const words = parts.map((part) => PLACEMENT_WORDS[part] ?? { en: part, fr: part });
+  return {
+    en: words.map((word) => word.en).join(", "),
+    fr: words.map((word) => word.fr).join(", ")
+  };
 }
 
 /**
@@ -267,7 +294,7 @@ const envRecommendedTools: RecommendedTool[] = envAffiliates.map((item, index) =
     },
     benefit: {
       en: "Selected for practical ROI, faster shipping, and budget-friendly viability.",
-      fr: "Sélectionnée pour un ROI pratique, un shipping rapide, et une logique budget-friendly."
+      fr: "Sélectionnée pour un ROI concret, une mise en production rapide, et un coût abordable."
     },
     affiliateHref: item.url
   };

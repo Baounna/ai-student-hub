@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { headers } from "next/headers";
 import { localeFromPathname, type Locale } from "@/i18n/config";
@@ -30,6 +31,26 @@ const COPY: Record<Locale, { title: string; body: string; home: string; blog: st
     blog: "Parcourir le blog"
   }
 };
+
+/**
+ * The tab title too, not just the body.
+ *
+ * The body of this page reads the locale from x-pathname and answers in the
+ * reader's language, but the document title and description were inherited from
+ * the root layout's English metadata, so a French reader's browser tab read "AI
+ * + Cybersecurity Signals for Real Builders" over a page saying "Page
+ * introuvable".
+ */
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = localeFromPathname((await headers()).get("x-pathname"));
+
+  return {
+    title: COPY[locale].title,
+    description: COPY[locale].body,
+    // A 404 is not a page to index, whichever language it answers in.
+    robots: { index: false, follow: true }
+  };
+}
 
 export default async function NotFound() {
   const locale = localeFromPathname((await headers()).get("x-pathname"));

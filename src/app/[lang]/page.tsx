@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { categoryName } from "@/lib/categories";
 import Image from "next/image";
 import Link from "next/link";
 import { AffiliateDisclosureInline } from "@/components/affiliate-disclosure-inline";
@@ -493,7 +494,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                   href={`/${locale}/blog/category/${slugify(category)}`}
                   className="rounded-full border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)] px-2.5 py-1 text-xs text-[color:var(--text)]"
                 >
-                  {category}
+                  {categoryName(category, locale)}
                 </Link>
               ))}
             </div>
@@ -562,7 +563,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                   <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">{featuredPost.title}</h2>
                   <p className="card-copy mt-3 text-[color:var(--text)]">{featuredPost.excerpt}</p>
                   <p className="mt-3 text-sm text-[color:var(--muted)]">
-                    {featuredPost.category} • {formatReadTime(featuredPost.readTime, locale)}
+                    {categoryName(featuredPost.category, locale)} • {formatReadTime(featuredPost.readTime, locale)}
                   </p>
                   <div className="mt-4">
                     <Link href={`/${locale}/blog/${featuredPost.slug}`} className="do-link text-lg">
@@ -779,7 +780,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                 href={`/${locale}/blog/category/${slugify(category)}`}
                 className="rounded border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)] px-3 py-2 text-sm text-[color:var(--text)] hover:border-[color:var(--primary)]/40 hover:text-[color:var(--text-strong)]"
               >
-                {category}
+                {categoryName(category, locale)}
               </Link>
             ))}
           </div>

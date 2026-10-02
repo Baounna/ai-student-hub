@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { categoryName } from "@/lib/categories";
 import { ogImageUrl, coverImageUrl } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
@@ -189,7 +190,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
       <header className="do-hero rounded-3xl p-7 md:p-10">
         <div className="grid gap-6 lg:grid-cols-[1.3fr,1fr] lg:items-end">
           <div>
-            <p className="do-kicker">{post.category}</p>
+            <p className="do-kicker">{categoryName(post.category, locale)}</p>
             <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">{post.title}</h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">{post.excerpt}</p>
             <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-[color:var(--muted)]">
@@ -202,7 +203,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                 href={`/${locale}/blog/category/${slugify(post.category)}`}
                 className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--primary)]"
               >
-                {post.category}
+                {categoryName(post.category, locale)}
               </Link>
               {post.tags.map((tag) => (
                 <Link
@@ -582,7 +583,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
               <div className="mt-4 grid gap-3 md:grid-cols-3">
                 {bridgePosts.map((candidate) => (
                   <article key={candidate.slug} className="blog-chip rounded-xl p-4">
-                    <p className="text-xs text-[color:var(--muted)]">{candidate.category}</p>
+                    <p className="text-xs text-[color:var(--muted)]">{categoryName(candidate.category, locale)}</p>
                     <h3 className="mt-1 text-sm font-semibold text-[color:var(--text-strong)]">{candidate.title}</h3>
                     <Link href={`/${locale}/blog/${candidate.slug}`} className="do-link mt-2 inline-block text-sm">
                       {locale === "fr" ? "Lire cet article" : "Read this article"}

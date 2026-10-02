@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { categoryName } from "@/lib/categories";
 import Link from "next/link";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
@@ -417,7 +418,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 {relatedPosts.map((post) => (
                   <article key={post.slug} className="card-hover glass rounded-2xl p-5">
-                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[color:var(--primary)]">{post.category}</p>
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[color:var(--primary)]">{categoryName(post.category, locale)}</p>
                     <h3 className="font-display mt-2 text-lg font-semibold text-[color:var(--text-strong)]">{post.title}</h3>
                     <p className="mt-2 text-sm text-[color:var(--text)]">{post.excerpt}</p>
                     <div className="mt-3 flex flex-wrap gap-2">

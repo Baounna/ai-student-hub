@@ -161,7 +161,7 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
               <div>
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="blog-chip rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]">
-                    {post.category}
+                    {categoryName(post.category, locale)}
                   </span>
                   <span className="text-xs text-[color:var(--muted)]">{formatReadTime(post.readTime, locale)}</span>
                   <span className="text-xs text-[color:var(--muted)]">{formatPublishedDate(post.publishedAt, locale)}</span>
@@ -211,7 +211,7 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
                 href={`/${locale}/blog/category/${slugify(category)}`}
                 className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--text)]"
               >
-                {category}
+                {categoryName(category, locale)}
               </Link>
             ))}
           </div>

@@ -67,7 +67,9 @@ export default async function AffiliateDisclosurePage(props: { params: Promise<{
             {fr ? "Éditeur" : "Publisher"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
-            {fr ? `Éditeur: ${siteConfig.legalName}. Contact: ` : `Publisher: ${siteConfig.legalName}. Contact: `}
+            {/* The heading directly above already says "Éditeur", so this read
+                "Éditeur Éditeur: AI Student Hub". */}
+            {fr ? `${siteConfig.legalName}. Contact : ` : `${siteConfig.legalName}. Contact: `}
             <a href={`mailto:${siteConfig.contactEmail}`} className="do-link">
               {siteConfig.contactEmail}
             </a>

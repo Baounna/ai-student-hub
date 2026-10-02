@@ -25,6 +25,15 @@ import { getLiveAiCsUpdates, getLiveNewsSources } from "@/lib/live-news";
  */
 export const revalidate = 1800;
 
+/** "https://www.postgresql.org/about/news/..." -> "postgresql.org". */
+function hostOf(href: string) {
+  try {
+    return new URL(href).host.replace(/^www\./, "");
+  } catch {
+    return href;
+  }
+}
+
 function formatPublishedDate(date: string, locale: Locale) {
   if (!date) return locale === "fr" ? "Date indisponible" : "Date unavailable";
   return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
@@ -141,8 +150,11 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
                 </h2>
                 <p className="mt-3 text-sm text-[color:var(--muted)]">
                   {fr ? "Source officielle" : "Official source"}:{" "}
+                  {/* The full href was printed as visible text, so a card could
+                      carry 90 characters of URL and overflow on a phone. The
+                      host is what tells a reader where they are going. */}
                   <a href={item.href} target="_blank" rel="noopener noreferrer nofollow" className="do-link">
-                    {item.href}
+                    {hostOf(item.href)}
                   </a>
                 </p>
               </article>

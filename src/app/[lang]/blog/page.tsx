@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { categoryName } from "@/lib/categories";
 import Image from "next/image";
 import Link from "next/link";
 import { EditorialTrust } from "@/components/editorial-trust";
@@ -285,7 +286,7 @@ export default async function LocalizedBlogPage(
                     href={`/${locale}/blog/category/${slugify(category)}`}
                     className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--text)] hover:border-[color:var(--primary)]/35"
                   >
-                    {category}
+                    {categoryName(category, locale)}
                   </Link>
                 ))}
               </div>
@@ -398,7 +399,7 @@ export default async function LocalizedBlogPage(
                   href={`/${locale}/blog/category/${slugify(featuredPost.category)}`}
                   className="blog-chip rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]"
                 >
-                  {featuredPost.category}
+                  {categoryName(featuredPost.category, locale)}
                 </Link>
                 <span className="text-xs text-[color:var(--muted)]">{formatReadTime(featuredPost.readTime, locale)}</span>
                 <span className="text-xs text-[color:var(--muted)]">
@@ -487,7 +488,7 @@ export default async function LocalizedBlogPage(
                       href={`/${locale}/blog/category/${slugify(post.category)}`}
                       className="blog-chip rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-[color:var(--primary)]"
                     >
-                      {post.category}
+                      {categoryName(post.category, locale)}
                     </Link>
                     <p className="text-xs text-[color:var(--muted)]">{formatReadTime(post.readTime, locale)}</p>
                     <p className="text-xs text-[color:var(--muted)]">{formatPublishedDate(post.publishedAt, locale)}</p>
@@ -578,7 +579,7 @@ export default async function LocalizedBlogPage(
                   href={`/${locale}/blog/category/${slugify(category)}`}
                   className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--text)]"
                 >
-                  {category}
+                  {categoryName(category, locale)}
                 </Link>
               ))}
             </div>
