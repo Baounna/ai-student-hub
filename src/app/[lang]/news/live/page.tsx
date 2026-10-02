@@ -8,7 +8,22 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { getLiveAiCsUpdates, getLiveNewsSources } from "@/lib/live-news";
 
-export const dynamic = "force-dynamic";
+/**
+ * Thirty minutes, which is what the page has always told the reader.
+ *
+ * This was `export const dynamic = "force-dynamic"`, and the only 30-minute
+ * setting in the path is the `next: { revalidate: 60 * 30 }` on each feed fetch
+ * in src/lib/live-news.ts. force-dynamic overrides exactly that -- Next's own
+ * docs describe it as setting every fetch in the segment to `no-store`,
+ * `revalidate: 0` -- so the number was dead config and the sentence "Auto
+ * revalidation every 30 minutes" described a mechanism that had been switched
+ * off above it. The page refetched all 23 feeds on every single request.
+ *
+ * Fixing the claim and the cost are the same change: every request was also an
+ * uncached function invocation on the one page that cannot be served from the
+ * edge, on a plan whose failure mode is the site pausing.
+ */
+export const revalidate = 1800;
 
 function formatPublishedDate(date: string, locale: Locale) {
   if (!date) return locale === "fr" ? "Date indisponible" : "Date unavailable";
@@ -63,6 +78,9 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
   const fr = locale === "fr";
   const updates = await getLiveAiCsUpdates(24);
   const sources = getLiveNewsSources();
+  // Under force-dynamic this was genuinely "now" for the reader. Under ISR it
+  // is when the snapshot they are reading was built, which is a different fact
+  // and needs a different word -- see the label below.
   const refreshedAt = new Date().toISOString();
 
   return (
@@ -97,7 +115,7 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
               <li>{fr ? "3. Utilisable pour idées d'articles avec citation." : "3. Ready for source-backed article ideas."}</li>
             </ul>
             <p className="mt-3 text-xs text-[color:var(--muted)]">
-              {fr ? "Dernière génération: " : "Generated at: "}
+              {fr ? "Instantané du: " : "Snapshot taken: "}
               {formatPublishedDate(refreshedAt, locale)}
             </p>
           </div>

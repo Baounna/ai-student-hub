@@ -494,6 +494,27 @@ console.log(`
   ${results.OK.length} still open · ${results.CHECK.length} need a human · ${results.GONE.length} look gone`);
 if (expired.length) console.log(`  ${expired.length} past their stated deadline`);
 
+/**
+ * One stable token for the workflow to look for.
+ *
+ * .github/workflows/check-stages.yml used to grep this log for the prose
+ * "needs a human". The line below says "need a human", singular, so the match
+ * never fired -- and the only other branch, "^  Probably gone", is printed only
+ * when something is GONE, which is also the path that makes this script exit 1
+ * and abort the step before it can write any output at all. The review issue
+ * was therefore unreachable in both directions. It had already swallowed two
+ * suspect listings, Coinbase and Helsing, on the first and only run.
+ *
+ * A marker rather than prose, because prose gets reworded and a grep does not
+ * follow it. tests/check-stages-review-signal.test.ts holds the two together.
+ */
+const REVIEW_MARKER = "REVIEW REQUIRED";
+if (results.CHECK.length || results.GONE.length) {
+  console.log(
+    `\n  ${REVIEW_MARKER} — ${results.CHECK.length} need a human, ${results.GONE.length} look gone`
+  );
+}
+
 if (results.GONE.length) {
   console.log("\n  Probably gone — open each, then remove it from stages.json by hand:");
   for (const { stage, detail } of results.GONE) console.log(`    ${stage.id}\n      ${detail}\n      ${stage.href}`);

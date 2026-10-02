@@ -24,6 +24,10 @@ concurrency:
 permissions:
   contents: write
   issues: write
+  # Read-only, and required: naming any permission sets every unnamed one to
+  # none, so `gh run list` would 403 even with a token. This is what lets the
+  # watchdog see whether the scheduled workflows are still firing.
+  actions: read
 
 env:
   # Placeholders: next build runs as production and validates this config.
@@ -53,6 +57,13 @@ jobs:
       - name: Run health checks
         id: check
         continue-on-error: true
+        # Without a token, every `gh` call in watchdog.mjs throws, and the
+        # scheduled-workflow check -- the one that exists to notice a cron that
+        # has gone quiet -- was skipped and reported as a pass on every run
+        # since it was written. The reporting step below already sets this; the
+        # step that does the actual checking did not.
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: node scripts/watchdog.mjs
 
       # ---- self-healing ----------------------------------------------------

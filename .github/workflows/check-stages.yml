@@ -58,15 +58,27 @@ jobs:
         id: check
         run: |
           set -o pipefail
-          node scripts/check-stages.mjs --write 2>&1 | tee "$RUNNER_TEMP/stages.log"
+          # The script exits 1 when a listing looks gone. Under `bash -e` that
+          # aborted this step on the spot -- before the outputs below were
+          # written, so needs_review was never set, the re-stamp of the hundred
+          # listings that DID verify was never committed, and the review issue
+          # was never opened. Exactly the week the workflow exists for. The code
+          # is kept and re-raised at the end of the job instead, after the
+          # reporting has happened.
+          status=0
+          node scripts/check-stages.mjs --write 2>&1 | tee "$RUNNER_TEMP/stages.log" || status=$?
           {
             echo "summary<<EOF"
             grep -E "still open .* need a human .* look gone" "$RUNNER_TEMP/stages.log" || echo "no summary line"
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
-          if grep -qE "^  Probably gone|needs a human" "$RUNNER_TEMP/stages.log"; then
+          # One token the script prints on purpose. Grepping its prose is what
+          # broke before: the workflow looked for "needs a human" and the script
+          # says "need a human".
+          if grep -q "REVIEW REQUIRED" "$RUNNER_TEMP/stages.log"; then
             echo "needs_review=true" >> "$GITHUB_OUTPUT"
           fi
+          echo "check_status=$status" >> "$GITHUB_OUTPUT"
 
       - name: Verify the site still builds with the re-stamped data
         run: |
@@ -95,8 +107,11 @@ jobs:
       # A single issue, reopened and updated rather than a new one each week --
       # the same reason the watchdog works that way. A stream of alerts is how
       # the last outage stayed invisible for eighty days.
+      # always(), so a listing that looks gone still raises the issue rather than
+      # only a red X in a tab nobody opens -- the notification channel this
+      # project already found does not work.
       - name: Open or update the review issue
-        if: steps.check.outputs.needs_review == 'true'
+        if: always() && steps.check.outputs.needs_review == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -108,3 +123,12 @@ jobs:
           else
             gh issue create --title "$TITLE" --body "$BODY"
           fi
+
+      # Last, so everything above has already reported. A listing that looks
+      # gone still turns the job red; it just no longer does so by silencing
+      # the re-stamp and the issue on its way out.
+      - name: Fail the job if a listing looks gone
+        if: always() && steps.check.outputs.check_status != '0' && steps.check.outputs.check_status != ''
+        run: |
+          echo "check-stages.mjs exited ${{ steps.check.outputs.check_status }} — see the review issue."
+          exit 1

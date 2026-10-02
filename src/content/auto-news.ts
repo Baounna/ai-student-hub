@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/config";
+import { usableSummary, usableTitle } from "@/lib/auto-summary";
 import autoNewsData from "@/content/auto-news.json";
 import { isBlockedSource } from "@/lib/blocked-source";
 
@@ -98,17 +99,13 @@ function diversifyBySource(items: AutoNewsItem[], limit: number, maxPerSource = 
   return selected;
 }
 
-/**
- * Summaries come from feeds we do not control, and cleaning scraped markup out
- * of one can legitimately leave nothing behind. An empty string would become an
- * empty meta description, which reads to a search engine as a page with nothing
- * to say — worse than saying where the item came from.
+/*
+ * The empty-summary guard that used to live here only caught an empty string,
+ * and the agent that writes this file produces much worse than empty: see
+ * src/lib/auto-summary.ts for what is actually in the JSON, counted. The gate
+ * moved there so the news and tools loaders cannot drift apart, and so a test
+ * can run it over the real files.
  */
-function summaryOrFallback(summary: string, title: string, source: string, locale: Locale) {
-  const text = (summary || "").trim();
-  if (text) return text;
-  return locale === "fr" ? `${title} — via ${source}.` : `${title} — reported by ${source}.`;
-}
 
 export function getAutoNewsUpdatedAt() {
   return payload.updatedAt;
@@ -120,8 +117,8 @@ export function getAutoNews(locale: Locale, limit = 24) {
   return picked
     .map((item) => ({
       ...item,
-      title: item.locales[locale].title,
-      summary: summaryOrFallback(
+      title: usableTitle(item.locales[locale].title),
+      summary: usableSummary(
         item.locales[locale].summary,
         item.locales[locale].title,
         item.source,
@@ -136,10 +133,10 @@ export function getAutoNewsBySlug(slug: string, locale: Locale): LocalizedAutoNe
 
   return {
     ...item,
-    title: item.locales[locale].title,
-    summary: summaryOrFallback(
+    title: usableTitle(item.locales[locale].title),
+    summary: usableSummary(
       item.locales[locale].summary,
-      item.locales[locale].title,
+      usableTitle(item.locales[locale].title),
       item.source,
       locale
     )

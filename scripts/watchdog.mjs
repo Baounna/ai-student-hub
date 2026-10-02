@@ -371,16 +371,45 @@ async function checkScheduledWorkflowsStillFiring() {
     }
   }
 
-  const { problems, checked, unknown } = scheduledWorkflowProblems(expected, lastRuns);
+  const verdict = scheduledWorkflowVerdict(expected, lastRuns);
+  record("Scheduled workflows", verdict.ok, verdict.detail);
+}
+
+/**
+ * Turn the three states into one pass-or-fail line.
+ *
+ * Nothing verified is not the same as nothing wrong. With GitHub unreachable
+ * for every workflow, lastRuns is empty, every entry counts as unknown,
+ * problems is empty, and this reported "all 0 scheduled workflows fired within
+ * their cadence (9 could not be checked)" as a PASS. A check whose total
+ * failure reads as health is worse than no check, because it occupies the slot
+ * where someone would otherwise have looked.
+ *
+ * The undefined-versus-null distinction inside scheduledWorkflowProblems is
+ * right and stays: one workflow GitHub would not answer for is still not a
+ * stopped workflow. It is the aggregate that has to say so out loud.
+ *
+ * Exported because the bug that made this necessary was never in the pure
+ * function -- it was in how its result was reported, and in the fact that the
+ * whole thing sat inside a try block that swallowed it. Logic nobody can hold
+ * in a test is where that hides.
+ */
+export function scheduledWorkflowVerdict(expected, lastRuns, now = Date.now()) {
+  const { problems, checked, unknown } = scheduledWorkflowProblems(expected, lastRuns, now);
   const caveat = unknown ? ` (${unknown} could not be checked)` : "";
 
-  record(
-    "Scheduled workflows",
-    problems.length === 0,
-    problems.length === 0
-      ? `all ${checked} scheduled workflows fired within their cadence${caveat}`
-      : `not firing: ${problems.join(", ")}${caveat}`
-  );
+  if (checked === 0 && unknown > 0) {
+    return {
+      ok: false,
+      detail: `could not verify any of the ${unknown} scheduled workflows — GitHub did not answer`
+    };
+  }
+
+  if (problems.length) {
+    return { ok: false, detail: `not firing: ${problems.join(", ")}${caveat}` };
+  }
+
+  return { ok: true, detail: `all ${checked} scheduled workflows fired within their cadence${caveat}` };
 }
 
 
@@ -498,7 +527,6 @@ async function checkWorkflowHealth() {
         : `last run on main failed: ${failing.join(", ")}`
     );
 
-    await checkScheduledWorkflowsStillFiring();
   } catch {
     // No gh, or no token — not a fault in the project itself.
     record("Workflow health", true, "gh CLI unavailable here — skipped");
@@ -564,6 +592,16 @@ async function run() {
   await checkLockfile();
   await checkVulnerabilities();
   await checkWorkflowHealth();
+  // Its own step, not a line inside checkWorkflowHealth's try block.
+  //
+  // It used to run after a `gh run list` in that try. That call throws whenever
+  // gh has no token -- which is every run, because the workflow step never set
+  // one -- so execution jumped to the catch and recorded "gh CLI unavailable
+  // here - skipped" as a PASS. The check built specifically to notice a cron
+  // that has gone quiet has therefore never executed once, and said so in
+  // green: verified against the live run of 2026-10-01, whose output has no
+  // "Scheduled workflows" line at all.
+  await checkScheduledWorkflowsStillFiring();
   await checkVerifyScript("Agent health", "verify:agents");
   await checkVerifyScript("Security config", "verify:security");
   await checkVerifyScript("Public content", "verify:public-content");

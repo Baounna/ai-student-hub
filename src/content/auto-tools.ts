@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/config";
+import { usableSummary, usableTitle } from "@/lib/auto-summary";
 import autoToolsData from "@/content/auto-tools.json";
 import { isBlockedSource } from "@/lib/blocked-source";
 
@@ -98,13 +99,13 @@ function diversifyBySource(items: AutoToolItem[], limit: number, maxPerSource = 
   return selected;
 }
 
-/** Same reason as the news loader: a cleaned-empty summary must not become an
- * empty meta description. */
-function summaryOrFallback(summary: string, title: string, source: string, locale: Locale) {
-  const text = (summary || "").trim();
-  if (text) return text;
-  return locale === "fr" ? `${title} — via ${source}.` : `${title} — reported by ${source}.`;
-}
+/*
+ * The empty-summary guard that used to live here only caught an empty string,
+ * and the agent that writes this file produces much worse than empty: see
+ * src/lib/auto-summary.ts for what is actually in the JSON, counted. The gate
+ * moved there so the news and tools loaders cannot drift apart, and so a test
+ * can run it over the real files.
+ */
 
 export function getAutoToolsUpdatedAt() {
   return payload.updatedAt;
@@ -115,10 +116,10 @@ export function getAutoTools(locale: Locale, limit = 10) {
   const picked = diversifyBySource(sorted, limit);
   return picked.map((item) => ({
     ...item,
-    title: item.locales[locale].title,
-    summary: summaryOrFallback(
+    title: usableTitle(item.locales[locale].title),
+    summary: usableSummary(
       item.locales[locale].summary,
-      item.locales[locale].title,
+      usableTitle(item.locales[locale].title),
       item.source,
       locale
     )

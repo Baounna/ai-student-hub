@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 // @ts-expect-error - plain .mjs script, no types
-import { scheduledWorkflowProblems } from "../scripts/watchdog.mjs";
+import { scheduledWorkflowProblems, scheduledWorkflowVerdict } from "../scripts/watchdog.mjs";
 
 /**
  * The failure this covers is the one the project already had: the writer agent
@@ -87,5 +87,81 @@ describe("scheduledWorkflowProblems", () => {
     );
 
     expect(result.problems).toHaveLength(2);
+  });
+});
+
+/**
+ * The pure function above was right the whole time. The bug was in what the
+ * watchdog did with its answer, and in where the call sat.
+ *
+ * checkScheduledWorkflowsStillFiring() was the last line inside
+ * checkWorkflowHealth()'s try block, after a `gh run list` that throws whenever
+ * gh has no token -- which was every single run, because the workflow step set
+ * none. Execution jumped to the catch, which recorded "gh CLI unavailable here
+ * - skipped" with ok=true. Verified against the live run of 2026-10-01: its
+ * output has no "Scheduled workflows" line at all. The alarm written after an
+ * eleven-Monday silent outage had never once armed, and reported green.
+ *
+ * And had it run with GitHub unreachable, it would still have passed: every
+ * workflow counted as unknown, no problems found, "all 0 scheduled workflows
+ * fired within their cadence" printed as a pass.
+ */
+describe("scheduledWorkflowVerdict", () => {
+  const NOW = Date.parse("2026-10-01T12:00:00.000Z");
+  const expected = [
+    { file: "check-stages.yml", hours: 168 },
+    { file: "watchdog.yml", hours: 24 }
+  ];
+
+  it("fails when GitHub answered for nothing at all", () => {
+    // Every file absent from the map: gh threw for each one.
+    const verdict = scheduledWorkflowVerdict(expected, new Map(), NOW);
+
+    expect(verdict.ok).toBe(false);
+    expect(verdict.detail).toMatch(/could not verify any of the 2/);
+  });
+
+  it("passes when every workflow fired recently", () => {
+    const lastRuns = new Map([
+      ["check-stages.yml", "2026-09-29T05:30:00.000Z"],
+      ["watchdog.yml", "2026-10-01T07:15:00.000Z"]
+    ]);
+    const verdict = scheduledWorkflowVerdict(expected, lastRuns, NOW);
+
+    expect(verdict.ok).toBe(true);
+    expect(verdict.detail).toMatch(/all 2 scheduled workflows/);
+  });
+
+  it("fails when one has gone quiet, and names it", () => {
+    const lastRuns = new Map([
+      ["check-stages.yml", "2026-08-01T05:30:00.000Z"],
+      ["watchdog.yml", "2026-10-01T07:15:00.000Z"]
+    ]);
+    const verdict = scheduledWorkflowVerdict(expected, lastRuns, NOW);
+
+    expect(verdict.ok).toBe(false);
+    expect(verdict.detail).toContain("check-stages.yml");
+  });
+
+  it("still passes on a partial outage, and says how much it could not see", () => {
+    // One answered and is healthy; the other GitHub would not answer for. That
+    // is not evidence the second has stopped, so it is a pass with a caveat --
+    // the distinction this whole check exists to preserve.
+    const lastRuns = new Map([["watchdog.yml", "2026-10-01T07:15:00.000Z"]]);
+    const verdict = scheduledWorkflowVerdict(expected, lastRuns, NOW);
+
+    expect(verdict.ok).toBe(true);
+    expect(verdict.detail).toMatch(/1 could not be checked/);
+  });
+
+  it("reports a workflow that has never run as a failure, not as unknown", () => {
+    const lastRuns = new Map([
+      ["check-stages.yml", null],
+      ["watchdog.yml", "2026-10-01T07:15:00.000Z"]
+    ]);
+    const verdict = scheduledWorkflowVerdict(expected, lastRuns, NOW);
+
+    expect(verdict.ok).toBe(false);
+    expect(verdict.detail).toMatch(/never run/);
   });
 });
