@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01T22:39:35.689Z",
+  "updatedAt": "2026-10-02T12:29:56.036Z",
   "items": [
     {
       "slug": "20261031-vercel-laya-decision-model-now-available-on-ai-gateway-free-thro-e15fec79",
@@ -23,22 +23,82 @@
       }
     },
     {
-      "slug": "20261001-supabase-fixed-daily-backups-occasionally-skipped-due-to-a-sched-b529818e",
+      "slug": "20261002-supabase-database-replication-is-now-pipelines-43d4a2f0",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/bulk-prepare-retry-on-transient-failure",
-      "publishedAt": "2026-10-01T22:39:35.689Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "href": "https://supabase.com/changelog/database-replication-renamed-pipelines",
+      "publishedAt": "2026-10-02T12:29:56.036Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
       "locales": {
         "en": {
-          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
-          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
+          "title": "Database Replication is now Pipelines",
+          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
         },
         "fr": {
-          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
-          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
+          "title": "Database Replication is now Pipelines",
+          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
+        }
+      }
+    },
+    {
+      "slug": "20261002-w3c-w3c-newsletter---september-2026-033e226a",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-newsletter-september-2026/",
+      "publishedAt": "2026-10-02T10:01:00.000Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
+      "locales": {
+        "en": {
+          "title": "W3C Newsletter - September 2026",
+          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
+        },
+        "fr": {
+          "title": "W3C Newsletter - September 2026",
+          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
+        }
+      }
+    },
+    {
+      "slug": "20261002-hugging-face-autosynthdata-generating-training-data-for-enterpri-a885ed61",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "publishedAt": "2026-10-02T04:01:31.000Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
+      "locales": {
+        "en": {
+          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
+        },
+        "fr": {
+          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
+        }
+      }
+    },
+    {
+      "slug": "20261002-rust-demoting-i686-windows-targets-to-std-only-1c2cb744",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/10/02/demoting-i686-windows-targets-to-std-only/",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
+      "locales": {
+        "en": {
+          "title": "Demoting i686 Windows targets to std-only",
+          "summary": "With Rust 1.100.0, the following changes to 32-bit Windows targets will happen: i686-pc-windows-msvc Tier 1 with host tools target will be demoted to Tier 1 without host tools. i686-pc-windows-gnu Tier 2 with host tools…"
+        },
+        "fr": {
+          "title": "Demoting i686 Windows targets to std-only",
+          "summary": "With Rust 1.100.0, the following changes to 32-bit Windows targets will happen: i686-pc-windows-msvc Tier 1 with host tools target will be demoted to Tier 1 without host tools. i686-pc-windows-gnu Tier 2 with host tools…"
         }
       }
     },
@@ -143,26 +203,6 @@
       }
     },
     {
-      "slug": "20261001-hugging-face-introducing-olmo-core-3-open-scalable-training-infr-0bf00b70",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/olmocore3",
-      "publishedAt": "2026-10-01T15:01:43.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
-        },
-        "fr": {
-          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
-        }
-      }
-    },
-    {
       "slug": "20261001-claude-oct-1-2026-announcements-barclays-scales-claude-to-upgrad-91b1f786",
       "toolName": "Claude",
       "category": "AI Assistant",
@@ -179,26 +219,6 @@
         "fr": {
           "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
           "summary": "Title"
-        }
-      }
-    },
-    {
-      "slug": "20261001-rust-announcing-rust-1990-7d7cbf9b",
-      "toolName": "Rust",
-      "category": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/10/01/Rust-1.99.0/",
-      "publishedAt": "2026-10-01T00:00:00.000Z",
-      "discoveredAt": "2026-10-01T13:08:41.196Z",
-      "locales": {
-        "en": {
-          "title": "Announcing Rust 1.99.0",
-          "summary": "The Rust team is happy to announce a new version of Rust, 1.99.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
-        },
-        "fr": {
-          "title": "Announcing Rust 1.99.0",
-          "summary": "The Rust team is happy to announce a new version of Rust, 1.99.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
         }
       }
     },
@@ -259,26 +279,6 @@
         "fr": {
           "title": "NIST Provides Updates on National Construction Safety Team Activities",
           "summary": "The presentations highlighted the importance of NIST applying its own expertise and the expertise of others through collaborations and contracts."
-        }
-      }
-    },
-    {
-      "slug": "20260928-w3c-recap-of-the-web-ai-international-standards-seminar-generati-3bf72b81",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/recap-of-the-web-ai-international-standards-seminar-generative-ui-and-webskill/",
-      "publishedAt": "2026-09-28T08:17:00.000Z",
-      "discoveredAt": "2026-09-28T13:49:25.565Z",
-      "locales": {
-        "en": {
-          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
-          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
-        },
-        "fr": {
-          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
-          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
         }
       }
     },
@@ -383,42 +383,102 @@
       }
     },
     {
-      "slug": "20261001-vercel-microsoft-ai-models-are-now-available-on-ai-gateway-micro-a616128c",
+      "slug": "20261002-vercel-ling-31-flash-is-now-available-on-ai-gateway-call-ling-31-d24dd6cc",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/microsoft-ai-models-are-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-01T22:39:35.689Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "href": "https://vercel.com/changelog/ling-3-1-flash-is-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-02T12:29:56.036Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
       "locales": {
         "en": {
-          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Ling 3.1 Flash is now available on AI Gateway Call Ling 3.1 Flash through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "Karim Hasebou, Brandon Tuttle, and 2 others"
         },
         "fr": {
-          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Ling 3.1 Flash is now available on AI Gateway Call Ling 3.1 Flash through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "Karim Hasebou, Brandon Tuttle, and 2 others"
         }
       }
     },
     {
-      "slug": "20261001-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
+      "slug": "20261002-supabase-read-replicas-moved-to-project-settings-infrastructure-c2cab453",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
-      "publishedAt": "2026-10-01T22:39:35.689Z",
+      "href": "https://supabase.com/changelog/read-replicas-moved-to-infrastructure",
+      "publishedAt": "2026-10-02T12:29:56.036Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
+      "locales": {
+        "en": {
+          "title": "Read replicas moved to Project Settings → Infrastructure",
+          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
+        },
+        "fr": {
+          "title": "Read replicas moved to Project Settings → Infrastructure",
+          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
+        }
+      }
+    },
+    {
+      "slug": "20260928-w3c-recap-of-the-web-ai-international-standards-seminar-generati-3bf72b81",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/recap-of-the-web-ai-international-standards-seminar-generative-ui-and-webskill/",
+      "publishedAt": "2026-09-28T08:17:00.000Z",
+      "discoveredAt": "2026-09-28T13:49:25.565Z",
+      "locales": {
+        "en": {
+          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
+          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
+        },
+        "fr": {
+          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
+          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-hugging-face-introducing-olmo-core-3-open-scalable-training-infr-0bf00b70",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/olmocore3",
+      "publishedAt": "2026-10-01T15:01:43.000Z",
       "discoveredAt": "2026-10-01T22:39:35.689Z",
       "locales": {
         "en": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
+          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
         },
         "fr": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
+          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
+        }
+      }
+    },
+    {
+      "slug": "20261001-rust-announcing-rust-1990-7d7cbf9b",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/10/01/Rust-1.99.0/",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:41.196Z",
+      "locales": {
+        "en": {
+          "title": "Announcing Rust 1.99.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.99.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
+        },
+        "fr": {
+          "title": "Announcing Rust 1.99.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.99.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
         }
       }
     },
@@ -523,26 +583,6 @@
       }
     },
     {
-      "slug": "20260930-hugging-face-open-tts-leaderboard-scalable-evaluation-for-multil-581ab311",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/open-tts-leaderboard",
-      "publishedAt": "2026-09-30T00:00:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:15.583Z",
-      "locales": {
-        "en": {
-          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
-        },
-        "fr": {
-          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
-        }
-      }
-    },
-    {
       "slug": "20260923-claude-sep-23-2026-science-claude-discovers-a-novel-enzyme-syste-f82afb64",
       "toolName": "Claude",
       "category": "AI Assistant",
@@ -559,26 +599,6 @@
         "fr": {
           "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
           "summary": "Title"
-        }
-      }
-    },
-    {
-      "slug": "20260922-docker-announcing-a-maintainer-in-residence-scott-schafer-for-th-cab455e8",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/09/22/announcing-a-maintainer-in-residence-scott-schafer-for-the-cargo-team/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:24.364Z",
-      "locales": {
-        "en": {
-          "title": "Announcing a Maintainer in Residence: Scott Schafer for the Cargo team",
-          "summary": "At the end of August, we announced our first Maintainers in Residence, Rust Project contributors who are funded for their upstream contributions and maintenance work from the Rust Foundation Maintainers Fund (RFMF). Sin…"
-        },
-        "fr": {
-          "title": "Announcing a Maintainer in Residence: Scott Schafer for the Cargo team",
-          "summary": "At the end of August, we announced our first Maintainers in Residence, Rust Project contributors who are funded for their upstream contributions and maintenance work from the Rust Foundation Maintainers Fund (RFMF). Sin…"
         }
       }
     },
@@ -639,26 +659,6 @@
         "fr": {
           "title": "NIST Awards More Than $1.7 Million to Support Cybersecurity Workforce Development Across 8 States",
           "summary": "Projects will address local cybersecurity workforce needs and will offer practical learning opportunities including internships, apprenticeships and hands-on projects."
-        }
-      }
-    },
-    {
-      "slug": "20260925-w3c-crafting-wcag-3-for-more-accessible-user-experiences-90f5f71d",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/crafting-wcag-3-for-more-accessible-user-experiences/",
-      "publishedAt": "2026-09-25T12:50:00.000Z",
-      "discoveredAt": "2026-09-27T14:03:18.424Z",
-      "locales": {
-        "en": {
-          "title": "Crafting WCAG 3 for more accessible user experiences",
-          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
-        },
-        "fr": {
-          "title": "Crafting WCAG 3 for more accessible user experiences",
-          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
         }
       }
     },
@@ -763,42 +763,102 @@
       }
     },
     {
-      "slug": "20261001-vercel-vercel-agent-now-installs-private-packages-from-npm-and-c-1a03c303",
+      "slug": "20261002-vercel-vercel-cdn-no-longer-caches-responses-with-vary-cookie-ve-592ec2d8",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-agent-now-installs-private-packages-from-npm-and-custom-registries",
-      "publishedAt": "2026-10-01T13:08:41.196Z",
-      "discoveredAt": "2026-10-01T13:08:41.196Z",
+      "href": "https://vercel.com/changelog/vary-cookie-responses-no-longer-cached",
+      "publishedAt": "2026-10-02T12:29:56.036Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
       "locales": {
         "en": {
-          "title": "Vercel Agent now installs private packages from npm and custom registries Vercel Agent installs private npm packages using your team's shared environment variables. Add NPM_TOKEN or NPM_RC to authenticate with private and custom registries. Matan Kushner, Tom Dale, and 1 other",
-          "summary": "30 September 30 Sep"
+          "title": "Vercel CDN no longer caches responses with Vary: Cookie Vercel's CDN no longer stores responses whose Vary header includes Cookie. They are still served normally, but no cache entry is written. Affected requests return x-vercel-cache: MISS with the reason vary_key_denied:cookie in runtime logs. Shina Patel, Kelly Davis",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         },
         "fr": {
-          "title": "Vercel Agent now installs private packages from npm and custom registries Vercel Agent installs private npm packages using your team's shared environment variables. Add NPM_TOKEN or NPM_RC to authenticate with private and custom registries. Matan Kushner, Tom Dale, and 1 other",
-          "summary": "30 September 30 Sep"
+          "title": "Vercel CDN no longer caches responses with Vary: Cookie Vercel's CDN no longer stores responses whose Vary header includes Cookie. They are still served normally, but no cache entry is written. Affected requests return x-vercel-cache: MISS with the reason vary_key_denied:cookie in runtime logs. Shina Patel, Kelly Davis",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         }
       }
     },
     {
-      "slug": "20261001-supabase-migration-of-supabase-management-api-logsall-analytics--b021c0b5",
+      "slug": "20261002-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/48235-migration-of-supabase-management-api-logs-all-analytics-endpoint-to-logs-endpoint",
-      "publishedAt": "2026-10-01T22:39:35.689Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "href": "https://supabase.com/changelog/restore-credential-resync",
+      "publishedAt": "2026-10-02T12:29:56.036Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
       "locales": {
         "en": {
-          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
-          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
         },
         "fr": {
-          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
-          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
+          "title": "Fixed stale database credentials left behind after a restore",
+          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+        }
+      }
+    },
+    {
+      "slug": "20260925-w3c-crafting-wcag-3-for-more-accessible-user-experiences-90f5f71d",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/crafting-wcag-3-for-more-accessible-user-experiences/",
+      "publishedAt": "2026-09-25T12:50:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "Crafting WCAG 3 for more accessible user experiences",
+          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
+        },
+        "fr": {
+          "title": "Crafting WCAG 3 for more accessible user experiences",
+          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
+        }
+      }
+    },
+    {
+      "slug": "20260930-hugging-face-open-tts-leaderboard-scalable-evaluation-for-multil-581ab311",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/open-tts-leaderboard",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:15.583Z",
+      "locales": {
+        "en": {
+          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
+        },
+        "fr": {
+          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
+        }
+      }
+    },
+    {
+      "slug": "20260922-docker-announcing-a-maintainer-in-residence-scott-schafer-for-th-cab455e8",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/09/22/announcing-a-maintainer-in-residence-scott-schafer-for-the-cargo-team/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:24.364Z",
+      "locales": {
+        "en": {
+          "title": "Announcing a Maintainer in Residence: Scott Schafer for the Cargo team",
+          "summary": "At the end of August, we announced our first Maintainers in Residence, Rust Project contributors who are funded for their upstream contributions and maintenance work from the Rust Foundation Maintainers Fund (RFMF). Sin…"
+        },
+        "fr": {
+          "title": "Announcing a Maintainer in Residence: Scott Schafer for the Cargo team",
+          "summary": "At the end of August, we announced our first Maintainers in Residence, Rust Project contributors who are funded for their upstream contributions and maintenance work from the Rust Foundation Maintainers Fund (RFMF). Sin…"
         }
       }
     },
@@ -883,42 +943,22 @@
       }
     },
     {
-      "slug": "20261001-cloudflare-introducing-workers-kv-instant-powered-by-quicksilver-2124bce0",
+      "slug": "20261001-cloudflare-support-for-modern-cryptographic-algorithms-in-worker-d7ce28a3",
       "toolName": "Cloudflare",
       "category": "Cloud Platform",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-kv-instant/",
+      "href": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-01T13:08:41.196Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
       "locales": {
         "en": {
-          "title": "Introducing Workers KV Instant — powered by Quicksilver",
-          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
+          "title": "Support for modern cryptographic algorithms in Workers",
+          "summary": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today."
         },
         "fr": {
-          "title": "Introducing Workers KV Instant — powered by Quicksilver",
-          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
-        }
-      }
-    },
-    {
-      "slug": "20260929-hugging-face-nvidia-kumo-tabular-sets-a-new-accuracy-efficiency--493cf3fc",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "publishedAt": "2026-09-29T15:30:38.000Z",
-      "discoveredAt": "2026-09-29T22:13:02.378Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
-        },
-        "fr": {
-          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
+          "title": "Support for modern cryptographic algorithms in Workers",
+          "summary": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today."
         }
       }
     },
@@ -939,26 +979,6 @@
         "fr": {
           "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
           "summary": "Title"
-        }
-      }
-    },
-    {
-      "slug": "20260921-github-github-actions-leaking-secrets-when-miri-output-is-cached-8695479b",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/09/21/github-actions-leaking-secrets-when-miri-output-is-cached/",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
-      "locales": {
-        "en": {
-          "title": "GitHub Actions leaking secrets when Miri output is cached",
-          "summary": "The Rust Security Response Team was notified that Miri stores all environment variables to target/ , allowing secrets to persist in caches. While not necessary a vulnerability in and of itself, when paired with GitHub A…"
-        },
-        "fr": {
-          "title": "GitHub Actions leaking secrets when Miri output is cached",
-          "summary": "The Rust Security Response Team was notified that Miri stores all environment variables to target/ , allowing secrets to persist in caches. While not necessary a vulnerability in and of itself, when paired with GitHub A…"
         }
       }
     },
@@ -1019,26 +1039,6 @@
         "fr": {
           "title": "NIST Awards More Than $30 Million for MEP Centers in 11 States and Puerto Rico",
           "summary": "The awards will help small and medium-sized manufacturers increase the adoption of advanced manufacturing technology."
-        }
-      }
-    },
-    {
-      "slug": "20260922-w3c-2026-climate-weeks-w3c-and-web-sustainability-050fad0e",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/2026-climate-weeks-w3c-and-web-sustainability/",
-      "publishedAt": "2026-09-22T12:40:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:24.364Z",
-      "locales": {
-        "en": {
-          "title": "2026 Climate Weeks: W3C and Web Sustainability",
-          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
-        },
-        "fr": {
-          "title": "2026 Climate Weeks: W3C and Web Sustainability",
-          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
         }
       }
     },
@@ -1143,62 +1143,122 @@
       }
     },
     {
-      "slug": "20261001-vercel-ai-gateway-adds-browserbase-search-and-fetch-tools-ai-gat-66909907",
+      "slug": "20261001-vercel-microsoft-ai-models-are-now-available-on-ai-gateway-micro-a616128c",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/ai-gateway-adds-browserbase-search-and-fetch-tools",
-      "publishedAt": "2026-10-01T13:08:41.196Z",
-      "discoveredAt": "2026-10-01T13:08:41.196Z",
+      "href": "https://vercel.com/changelog/microsoft-ai-models-are-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-01T22:39:35.689Z",
+      "discoveredAt": "2026-10-01T22:39:35.689Z",
       "locales": {
         "en": {
-          "title": "AI Gateway adds Browserbase Search and Fetch tools AI Gateway now supports Browserbase Search and Fetch, giving models web discovery and page retrieval alongside AI SDK and Marketplace integrations. +2 Josh Lipman, Jerilyn Zheng, and 2 others",
-          "summary": ".jpg\"/> Matan Kushner, Tom Dale, and 1 other"
+          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         },
         "fr": {
-          "title": "AI Gateway adds Browserbase Search and Fetch tools AI Gateway now supports Browserbase Search and Fetch, giving models web discovery and page retrieval alongside AI SDK and Marketplace integrations. +2 Josh Lipman, Jerilyn Zheng, and 2 others",
-          "summary": ".jpg\"/> Matan Kushner, Tom Dale, and 1 other"
+          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         }
       }
     },
     {
-      "slug": "20261001-supabase-logs-usage-based-pricing-f9fe585d",
+      "slug": "20261001-supabase-fixed-daily-backups-occasionally-skipped-due-to-a-sched-b529818e",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/logs-usage-based-pricing",
-      "publishedAt": "2026-10-01T13:08:41.196Z",
-      "discoveredAt": "2026-10-01T13:08:41.196Z",
+      "href": "https://supabase.com/changelog/bulk-prepare-retry-on-transient-failure",
+      "publishedAt": "2026-10-01T22:39:35.689Z",
+      "discoveredAt": "2026-10-01T22:39:35.689Z",
       "locales": {
         "en": {
-          "title": "Logs usage-based pricing",
-          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
+          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
+          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
         },
         "fr": {
-          "title": "Logs usage-based pricing",
-          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
+          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
+          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
         }
       }
     },
     {
-      "slug": "20261001-github-copilot-github-copilot-in-vs-code-september-2026-releases-b33dfcad",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases",
-      "publishedAt": "2026-10-01T19:09:10.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "slug": "20260922-w3c-2026-climate-weeks-w3c-and-web-sustainability-050fad0e",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/2026-climate-weeks-w3c-and-web-sustainability/",
+      "publishedAt": "2026-09-22T12:40:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:24.364Z",
       "locales": {
         "en": {
-          "title": "GitHub Copilot in VS Code, September 2026 releases",
-          "summary": "This changelog covers VS Code v1.136 through v1.140, shipped throughout September 2026. September’s releases streamline agent-driven development from implementation through pull request merge. Automations handle repeata…"
+          "title": "2026 Climate Weeks: W3C and Web Sustainability",
+          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
         },
         "fr": {
-          "title": "GitHub Copilot in VS Code, September 2026 releases",
-          "summary": "This changelog covers VS Code v1.136 through v1.140, shipped throughout September 2026. September’s releases streamline agent-driven development from implementation through pull request merge. Automations handle repeata…"
+          "title": "2026 Climate Weeks: W3C and Web Sustainability",
+          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
+        }
+      }
+    },
+    {
+      "slug": "20260929-hugging-face-nvidia-kumo-tabular-sets-a-new-accuracy-efficiency--493cf3fc",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "publishedAt": "2026-09-29T15:30:38.000Z",
+      "discoveredAt": "2026-09-29T22:13:02.378Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
+        },
+        "fr": {
+          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
+        }
+      }
+    },
+    {
+      "slug": "20260921-github-github-actions-leaking-secrets-when-miri-output-is-cached-8695479b",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/09/21/github-actions-leaking-secrets-when-miri-output-is-cached/",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "discoveredAt": "2026-09-21T21:57:14.113Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Actions leaking secrets when Miri output is cached",
+          "summary": "The Rust Security Response Team was notified that Miri stores all environment variables to target/ , allowing secrets to persist in caches. While not necessary a vulnerability in and of itself, when paired with GitHub A…"
+        },
+        "fr": {
+          "title": "GitHub Actions leaking secrets when Miri output is cached",
+          "summary": "The Rust Security Response Team was notified that Miri stores all environment variables to target/ , allowing secrets to persist in caches. While not necessary a vulnerability in and of itself, when paired with GitHub A…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-github-github-actions-macos-14-runner-image-retirement-c0216d33",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-01-github-actions-macos-14-runner-image-retirement",
+      "publishedAt": "2026-10-01T19:11:23.000Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Actions: macOS 14 runner image retirement",
+          "summary": "The macOS 14 runner image will be retired on November 2, 2026. To raise awareness of the upcoming removal, jobs using macOS 14 will temporarily fail during the following scheduled… The post GitHub Actions: macOS 14 runn…"
+        },
+        "fr": {
+          "title": "GitHub Actions: macOS 14 runner image retirement",
+          "summary": "The macOS 14 runner image will be retired on November 2, 2026. To raise awareness of the upcoming removal, jobs using macOS 14 will temporarily fail during the following scheduled… The post GitHub Actions: macOS 14 runn…"
         }
       }
     },
@@ -1263,42 +1323,22 @@
       }
     },
     {
-      "slug": "20261001-cloudflare-cloudflare-os-your-companys-agent-workspace-managed-f-8b10a1bc",
+      "slug": "20261001-cloudflare-introducing-workers-kv-instant-powered-by-quicksilver-2124bce0",
       "toolName": "Cloudflare",
       "category": "Cloud Platform",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/managed-cloudflare-os/",
+      "href": "https://blog.cloudflare.com/workers-kv-instant/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
       "discoveredAt": "2026-10-01T13:08:41.196Z",
       "locales": {
         "en": {
-          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
-          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able t…"
+          "title": "Introducing Workers KV Instant — powered by Quicksilver",
+          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
         },
         "fr": {
-          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
-          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able t…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-hugging-face-getting-the-source-right-not-just-the-fact-source-a-984223f1",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-      "publishedAt": "2026-09-29T13:07:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:02.378Z",
-      "locales": {
-        "en": {
-          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
-        },
-        "fr": {
-          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
+          "title": "Introducing Workers KV Instant — powered by Quicksilver",
+          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
         }
       }
     },
@@ -1319,26 +1359,6 @@
         "fr": {
           "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
           "summary": "Title"
-        }
-      }
-    },
-    {
-      "slug": "20260917-rust-be-alert-targeted-attacks-on-prominent-rustaceans-a593bae2",
-      "toolName": "Rust",
-      "category": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/09/17/targeted-attacks/",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:50.467Z",
-      "locales": {
-        "en": {
-          "title": "Be alert: targeted attacks on prominent Rustaceans",
-          "summary": "We believe that there is an ongoing campaign targeting rust-lang members and owners of popular crates that is attempting to compromise devices and accounts in order to use them to publish malware. What we've seen A vide…"
-        },
-        "fr": {
-          "title": "Be alert: targeted attacks on prominent Rustaceans",
-          "summary": "We believe that there is an ongoing campaign targeting rust-lang members and owners of popular crates that is attempting to compromise devices and accounts in order to use them to publish malware. What we've seen A vide…"
         }
       }
     },
@@ -1399,26 +1419,6 @@
         "fr": {
           "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
           "summary": "The finalized publication is designed to help organizations take effective steps to avoid exposing tokens to attackers."
-        }
-      }
-    },
-    {
-      "slug": "20260921-w3c-w3c-irc-bots-now-open-source-28d6f244",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-irc-bots-now-open-source/",
-      "publishedAt": "2026-09-21T11:13:00.000Z",
-      "discoveredAt": "2026-09-21T12:44:09.835Z",
-      "locales": {
-        "en": {
-          "title": "W3C IRC bots now open source",
-          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
-        },
-        "fr": {
-          "title": "W3C IRC bots now open source",
-          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
         }
       }
     },
@@ -1523,62 +1523,122 @@
       }
     },
     {
-      "slug": "20261001-vercel-search-trace-spans-from-the-vercel-cli-search-and-filter--14353aeb",
+      "slug": "20261001-vercel-vercel-agent-now-installs-private-packages-from-npm-and-c-1a03c303",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/search-trace-spans-from-the-vercel-cli",
+      "href": "https://vercel.com/changelog/vercel-agent-now-installs-private-packages-from-npm-and-custom-registries",
       "publishedAt": "2026-10-01T13:08:41.196Z",
       "discoveredAt": "2026-10-01T13:08:41.196Z",
       "locales": {
         "en": {
-          "title": "Search trace spans from the Vercel CLI Search and filter trace spans directly from your terminal with the Vercel CLI. Darpan Kakadia Software Engineer",
-          "summary": "Bhrigu Srivastava Software Engineer"
+          "title": "Vercel Agent now installs private packages from npm and custom registries Vercel Agent installs private npm packages using your team's shared environment variables. Add NPM_TOKEN or NPM_RC to authenticate with private and custom registries. Matan Kushner, Tom Dale, and 1 other",
+          "summary": "30 September 30 Sep"
         },
         "fr": {
-          "title": "Search trace spans from the Vercel CLI Search and filter trace spans directly from your terminal with the Vercel CLI. Darpan Kakadia Software Engineer",
-          "summary": "Bhrigu Srivastava Software Engineer"
+          "title": "Vercel Agent now installs private packages from npm and custom registries Vercel Agent installs private npm packages using your team's shared environment variables. Add NPM_TOKEN or NPM_RC to authenticate with private and custom registries. Matan Kushner, Tom Dale, and 1 other",
+          "summary": "30 September 30 Sep"
         }
       }
     },
     {
-      "slug": "20261001-supabase-health-check-advisors-ff04ed6f",
+      "slug": "20261001-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/50577-health-check-advisors",
-      "publishedAt": "2026-10-01T13:08:41.196Z",
-      "discoveredAt": "2026-10-01T13:08:41.196Z",
+      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
+      "publishedAt": "2026-10-01T22:39:35.689Z",
+      "discoveredAt": "2026-10-01T22:39:35.689Z",
       "locales": {
         "en": {
-          "title": "Health Check Advisors",
-          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
         },
         "fr": {
-          "title": "Health Check Advisors",
-          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
         }
       }
     },
     {
-      "slug": "20261001-github-accessibility-statements-highlighted-on-repository-overvi-1d7c1228",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
+      "slug": "20260921-w3c-w3c-irc-bots-now-open-source-28d6f244",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-irc-bots-now-open-source/",
+      "publishedAt": "2026-09-21T11:13:00.000Z",
+      "discoveredAt": "2026-09-21T12:44:09.835Z",
+      "locales": {
+        "en": {
+          "title": "W3C IRC bots now open source",
+          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
+        },
+        "fr": {
+          "title": "W3C IRC bots now open source",
+          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
+        }
+      }
+    },
+    {
+      "slug": "20260929-hugging-face-getting-the-source-right-not-just-the-fact-source-a-984223f1",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "publishedAt": "2026-09-29T13:07:00.000Z",
+      "discoveredAt": "2026-09-29T22:13:02.378Z",
+      "locales": {
+        "en": {
+          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
+        },
+        "fr": {
+          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
+        }
+      }
+    },
+    {
+      "slug": "20260917-rust-be-alert-targeted-attacks-on-prominent-rustaceans-a593bae2",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/09/17/targeted-attacks/",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-17T21:19:50.467Z",
+      "locales": {
+        "en": {
+          "title": "Be alert: targeted attacks on prominent Rustaceans",
+          "summary": "We believe that there is an ongoing campaign targeting rust-lang members and owners of popular crates that is attempting to compromise devices and accounts in order to use them to publish malware. What we've seen A vide…"
+        },
+        "fr": {
+          "title": "Be alert: targeted attacks on prominent Rustaceans",
+          "summary": "We believe that there is an ongoing campaign targeting rust-lang members and owners of popular crates that is attempting to compromise devices and accounts in order to use them to publish malware. What we've seen A vide…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-github-copilot-github-copilot-in-vs-code-september-2026-releases-b33dfcad",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-01-accessibility-statements-highlighted-on-repository-overview",
-      "publishedAt": "2026-10-01T19:04:32.000Z",
+      "href": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases",
+      "publishedAt": "2026-10-01T19:09:10.000Z",
       "discoveredAt": "2026-10-01T22:39:35.689Z",
       "locales": {
         "en": {
-          "title": "Accessibility statements highlighted on repository overview",
-          "summary": "You can now find an ACCESSIBILITY.md file in your repository’s root, the .github/ directory, or the docs/ directory highlighted on the repository overview. You can also add or propose an… The post Accessibility statemen…"
+          "title": "GitHub Copilot in VS Code, September 2026 releases",
+          "summary": "This changelog covers VS Code v1.136 through v1.140, shipped throughout September 2026. September’s releases streamline agent-driven development from implementation through pull request merge. Automations handle repeata…"
         },
         "fr": {
-          "title": "Accessibility statements highlighted on repository overview",
-          "summary": "You can now find an ACCESSIBILITY.md file in your repository’s root, the .github/ directory, or the docs/ directory highlighted on the repository overview. You can also add or propose an… The post Accessibility statemen…"
+          "title": "GitHub Copilot in VS Code, September 2026 releases",
+          "summary": "This changelog covers VS Code v1.136 through v1.140, shipped throughout September 2026. September’s releases streamline agent-driven development from implementation through pull request merge. Automations handle repeata…"
         }
       }
     },
@@ -1643,42 +1703,22 @@
       }
     },
     {
-      "slug": "20261001-cloudflare-announcing-cloudflare-k2-serverless-event-streams-d7084788",
+      "slug": "20261001-cloudflare-cloudflare-os-your-companys-agent-workspace-managed-f-8b10a1bc",
       "toolName": "Cloudflare",
       "category": "Cloud Platform",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+      "href": "https://blog.cloudflare.com/managed-cloudflare-os/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
       "discoveredAt": "2026-10-01T13:08:41.196Z",
       "locales": {
         "en": {
-          "title": "Announcing Cloudflare K2: serverless event streams",
-          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durabl…"
+          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
+          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able t…"
         },
         "fr": {
-          "title": "Announcing Cloudflare K2: serverless event streams",
-          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durabl…"
-        }
-      }
-    },
-    {
-      "slug": "20260928-hugging-face-holo4-powering-generalist-computer-use-agents-9552195c",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/Hcompany/holo4",
-      "publishedAt": "2026-09-28T09:44:05.000Z",
-      "discoveredAt": "2026-09-28T13:49:25.565Z",
-      "locales": {
-        "en": {
-          "title": "Holo4: powering generalist computer-use agents",
-          "summary": "Holo4: powering generalist computer-use agents"
-        },
-        "fr": {
-          "title": "Holo4: powering generalist computer-use agents",
-          "summary": "Holo4: powering generalist computer-use agents"
+          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
+          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able t…"
         }
       }
     },
@@ -1699,26 +1739,6 @@
         "fr": {
           "title": "Responsible Scaling Policy",
           "summary": "ing Policy on the AI Exponential Security and compliance"
-        }
-      }
-    },
-    {
-      "slug": "20260907-rust-rust-debugging-survey-2026-results-fc731571",
-      "toolName": "Rust",
-      "category": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/09/07/rust-debugging-survey-2026-results/",
-      "publishedAt": "2026-09-07T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Rust debugging survey 2026 results",
-          "summary": "Rust debugging survey 2026 results"
-        },
-        "fr": {
-          "title": "Rust debugging survey 2026 results",
-          "summary": "Rust debugging survey 2026 results"
         }
       }
     },
@@ -1779,26 +1799,6 @@
         "fr": {
           "title": "NIST-Developed Quantum Sensors Improve Nuclear Monitoring",
           "summary": "New X-ray measurements will allow scientists to more accurately monitor nuclear material at power plants and weapons facilities."
-        }
-      }
-    },
-    {
-      "slug": "20260918-w3c-w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026-266b9a5f",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026/",
-      "publishedAt": "2026-09-18T16:49:00.000Z",
-      "discoveredAt": "2026-09-18T20:52:51.777Z",
-      "locales": {
-        "en": {
-          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
-          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
-        },
-        "fr": {
-          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
-          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
         }
       }
     },
@@ -1903,62 +1903,122 @@
       }
     },
     {
-      "slug": "20260930-vercel-edge-requests-are-now-called-cdn-requests-cdn-requests-is-1f5e0e81",
+      "slug": "20261001-vercel-ai-gateway-adds-browserbase-search-and-fetch-tools-ai-gat-66909907",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/edge-requests-are-now-called-cdn-requests",
-      "publishedAt": "2026-09-30T22:13:15.583Z",
-      "discoveredAt": "2026-09-30T22:13:15.583Z",
-      "locales": {
-        "en": {
-          "title": "Edge Requests are now called CDN Requests CDN Requests is the new name for the usage metric previously called Edge Requests. Pricing, limits, and how usage is measured are unchanged. Steren Member of the Technical Staff",
-          "summary": "30 September 30 Sep"
-        },
-        "fr": {
-          "title": "Edge Requests are now called CDN Requests CDN Requests is the new name for the usage metric previously called Edge Requests. Pricing, limits, and how usage is measured are unchanged. Steren Member of the Technical Staff",
-          "summary": "30 September 30 Sep"
-        }
-      }
-    },
-    {
-      "slug": "20261001-cursor-observability-on-auto-pilot-d72f6df8",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/50403-observability-autopilot",
+      "href": "https://vercel.com/changelog/ai-gateway-adds-browserbase-search-and-fetch-tools",
       "publishedAt": "2026-10-01T13:08:41.196Z",
       "discoveredAt": "2026-10-01T13:08:41.196Z",
       "locales": {
         "en": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
+          "title": "AI Gateway adds Browserbase Search and Fetch tools AI Gateway now supports Browserbase Search and Fetch, giving models web discovery and page retrieval alongside AI SDK and Marketplace integrations. +2 Josh Lipman, Jerilyn Zheng, and 2 others",
+          "summary": ".jpg\"/> Matan Kushner, Tom Dale, and 1 other"
         },
         "fr": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
+          "title": "AI Gateway adds Browserbase Search and Fetch tools AI Gateway now supports Browserbase Search and Fetch, giving models web discovery and page retrieval alongside AI SDK and Marketplace integrations. +2 Josh Lipman, Jerilyn Zheng, and 2 others",
+          "summary": ".jpg\"/> Matan Kushner, Tom Dale, and 1 other"
         }
       }
     },
     {
-      "slug": "20261001-github-actions-retention-now-covers-checks-runs-and-statuses-11541a89",
+      "slug": "20261001-supabase-migration-of-supabase-management-api-logsall-analytics--b021c0b5",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/48235-migration-of-supabase-management-api-logs-all-analytics-endpoint-to-logs-endpoint",
+      "publishedAt": "2026-10-01T22:39:35.689Z",
+      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "locales": {
+        "en": {
+          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
+          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
+        },
+        "fr": {
+          "title": "Migration of Supabase Management API logs.all analytics endpoint to logs endpoint",
+          "summary": "Breaking Change The Supabase Management API logs.all endpoint is removed on 2026-09-2"
+        }
+      }
+    },
+    {
+      "slug": "20260918-w3c-w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026-266b9a5f",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026/",
+      "publishedAt": "2026-09-18T16:49:00.000Z",
+      "discoveredAt": "2026-09-18T20:52:51.777Z",
+      "locales": {
+        "en": {
+          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
+          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
+        },
+        "fr": {
+          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
+          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
+        }
+      }
+    },
+    {
+      "slug": "20260928-hugging-face-holo4-powering-generalist-computer-use-agents-9552195c",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/Hcompany/holo4",
+      "publishedAt": "2026-09-28T09:44:05.000Z",
+      "discoveredAt": "2026-09-28T13:49:25.565Z",
+      "locales": {
+        "en": {
+          "title": "Holo4: powering generalist computer-use agents",
+          "summary": "Holo4: powering generalist computer-use agents"
+        },
+        "fr": {
+          "title": "Holo4: powering generalist computer-use agents",
+          "summary": "Holo4: powering generalist computer-use agents"
+        }
+      }
+    },
+    {
+      "slug": "20260907-rust-rust-debugging-survey-2026-results-fc731571",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/09/07/rust-debugging-survey-2026-results/",
+      "publishedAt": "2026-09-07T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Rust debugging survey 2026 results",
+          "summary": "Rust debugging survey 2026 results"
+        },
+        "fr": {
+          "title": "Rust debugging survey 2026 results",
+          "summary": "Rust debugging survey 2026 results"
+        }
+      }
+    },
+    {
+      "slug": "20261001-github-accessibility-statements-highlighted-on-repository-overvi-1d7c1228",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-01-actions-retention-now-covers-checks-runs-and-statuses",
-      "publishedAt": "2026-10-01T17:59:54.000Z",
+      "href": "https://github.blog/changelog/2026-10-01-accessibility-statements-highlighted-on-repository-overview",
+      "publishedAt": "2026-10-01T19:04:32.000Z",
       "discoveredAt": "2026-10-01T22:39:35.689Z",
       "locales": {
         "en": {
-          "title": "Actions retention now covers checks, runs, and statuses",
-          "summary": "As previously announced, checks, workflow runs, and statuses are now governed by the same GitHub Actions retention setting that controls how long artifacts and logs are kept. These records are… The post Actions retentio…"
+          "title": "Accessibility statements highlighted on repository overview",
+          "summary": "You can now find an ACCESSIBILITY.md file in your repository’s root, the .github/ directory, or the docs/ directory highlighted on the repository overview. You can also add or propose an… The post Accessibility statemen…"
         },
         "fr": {
-          "title": "Actions retention now covers checks, runs, and statuses",
-          "summary": "As previously announced, checks, workflow runs, and statuses are now governed by the same GitHub Actions retention setting that controls how long artifacts and logs are kept. These records are… The post Actions retentio…"
+          "title": "Accessibility statements highlighted on repository overview",
+          "summary": "You can now find an ACCESSIBILITY.md file in your repository’s root, the .github/ directory, or the docs/ directory highlighted on the repository overview. You can also add or propose an… The post Accessibility statemen…"
         }
       }
     },
@@ -2023,42 +2083,22 @@
       }
     },
     {
-      "slug": "20261001-cloudflare-we-want-you-to-build-the-next-git-platform-on-cloudfl-7b804092",
+      "slug": "20261001-cloudflare-announcing-cloudflare-k2-serverless-event-streams-d7084788",
       "toolName": "Cloudflare",
       "category": "Cloud Platform",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
+      "href": "https://blog.cloudflare.com/cloudflare-k2-streams/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
       "discoveredAt": "2026-10-01T13:08:41.196Z",
       "locales": {
         "en": {
-          "title": "We want you to build the next Git platform on Cloudflare",
-          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for reposito…"
+          "title": "Announcing Cloudflare K2: serverless event streams",
+          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durabl…"
         },
         "fr": {
-          "title": "We want you to build the next Git platform on Cloudflare",
-          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for reposito…"
-        }
-      }
-    },
-    {
-      "slug": "20260924-hugging-face-accelerating-vision-language-models-with-lfm25-vl-d-c2a53f23",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-      "publishedAt": "2026-09-24T14:08:57.000Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
-      "locales": {
-        "en": {
-          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
-        },
-        "fr": {
-          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
+          "title": "Announcing Cloudflare K2: serverless event streams",
+          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durabl…"
         }
       }
     },
@@ -2083,26 +2123,6 @@
       }
     },
     {
-      "slug": "20260903-rust-announcing-rust-1981-c3f5c215",
-      "toolName": "Rust",
-      "category": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/09/03/Rust-1.98.1/",
-      "publishedAt": "2026-09-03T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Announcing Rust 1.98.1",
-          "summary": "Announcing Rust 1.98.1"
-        },
-        "fr": {
-          "title": "Announcing Rust 1.98.1",
-          "summary": "Announcing Rust 1.98.1"
-        }
-      }
-    },
-    {
       "slug": "20260923-postgresql-pgbouncer-1260-released---fixes-three-cves-10080888",
       "toolName": "PostgreSQL",
       "category": "Systems & Backend",
@@ -2123,22 +2143,22 @@
       }
     },
     {
-      "slug": "20260915-google-ai-building-ai-to-accelerate-science-and-improve-lives-b86d9a76",
+      "slug": "20260915-google-ai-ai-for-societal-impact-18592959",
       "toolName": "Google AI",
       "category": "AI Platform",
       "source": "Google AI Blog",
       "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+      "href": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
       "publishedAt": "2026-09-15T16:00:00.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
       "locales": {
         "en": {
-          "title": "Building AI to accelerate science and improve lives",
-          "summary": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …"
+          "title": "AI for Societal Impact",
+          "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
         },
         "fr": {
-          "title": "Building AI to accelerate science and improve lives",
-          "summary": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …"
+          "title": "AI for Societal Impact",
+          "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
         }
       }
     },
@@ -2159,26 +2179,6 @@
         "fr": {
           "title": "NIST Researchers Supersize Quantum Technology to Help Detect Faint Photons",
           "summary": "Our everyday life is flooded with photons, the quantum building blocks of light. For cutting-edge technology, from quantum computing to deep-tissue imaging, detecting every single photon counts. “Photons carry informati…"
-        }
-      }
-    },
-    {
-      "slug": "20260916-w3c-w3c-launches-first-pilot-of-program-to-support-open-source-p-daf0158b",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-launches-first-pilot-of-program-to-support-open-source-projects/",
-      "publishedAt": "2026-09-16T13:53:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "W3C launches first pilot of program to support Open Source projects",
-          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
-        },
-        "fr": {
-          "title": "W3C launches first pilot of program to support Open Source projects",
-          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
         }
       }
     },
@@ -2263,62 +2263,122 @@
       }
     },
     {
-      "slug": "20260930-vercel-vercel-sandbox-now-supports-secure-compute-connect-vercel-130e86a3",
+      "slug": "20261001-vercel-search-trace-spans-from-the-vercel-cli-search-and-filter--14353aeb",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-sandbox-now-supports-secure-compute",
-      "publishedAt": "2026-09-30T22:13:15.583Z",
-      "discoveredAt": "2026-09-30T22:13:15.583Z",
+      "href": "https://vercel.com/changelog/search-trace-spans-from-the-vercel-cli",
+      "publishedAt": "2026-10-01T13:08:41.196Z",
+      "discoveredAt": "2026-10-01T13:08:41.196Z",
       "locales": {
         "en": {
-          "title": "Vercel Sandbox now supports Secure Compute Connect Vercel Sandboxes to a dedicated Secure Compute network. +2 Karim Hasebou, Brandon Tuttle, and 2 others",
-          "summary": "Steren Member of the Technical Staff"
+          "title": "Search trace spans from the Vercel CLI Search and filter trace spans directly from your terminal with the Vercel CLI. Darpan Kakadia Software Engineer",
+          "summary": "Bhrigu Srivastava Software Engineer"
         },
         "fr": {
-          "title": "Vercel Sandbox now supports Secure Compute Connect Vercel Sandboxes to a dedicated Secure Compute network. +2 Karim Hasebou, Brandon Tuttle, and 2 others",
-          "summary": "Steren Member of the Technical Staff"
+          "title": "Search trace spans from the Vercel CLI Search and filter trace spans directly from your terminal with the Vercel CLI. Darpan Kakadia Software Engineer",
+          "summary": "Bhrigu Srivastava Software Engineer"
         }
       }
     },
     {
-      "slug": "20261001-supabase-orioledb-is-now-in-public-beta-with-paid-plans-and-paid-e567e00d",
+      "slug": "20261001-supabase-logs-usage-based-pricing-f9fe585d",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/orioledb-public-beta",
-      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "href": "https://supabase.com/changelog/logs-usage-based-pricing",
+      "publishedAt": "2026-10-01T13:08:41.196Z",
       "discoveredAt": "2026-10-01T13:08:41.196Z",
       "locales": {
         "en": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Oct 1, 2026"
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
         },
         "fr": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Oct 1, 2026"
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
         }
       }
     },
     {
-      "slug": "20261001-github-scheduled-code-scanning-skips-inactive-repositories-baa9bc56",
+      "slug": "20260916-w3c-w3c-launches-first-pilot-of-program-to-support-open-source-p-daf0158b",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-launches-first-pilot-of-program-to-support-open-source-projects/",
+      "publishedAt": "2026-09-16T13:53:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
+        },
+        "fr": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR polic…"
+        }
+      }
+    },
+    {
+      "slug": "20260924-hugging-face-accelerating-vision-language-models-with-lfm25-vl-d-c2a53f23",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "publishedAt": "2026-09-24T14:08:57.000Z",
+      "discoveredAt": "2026-09-24T21:29:30.940Z",
+      "locales": {
+        "en": {
+          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
+        },
+        "fr": {
+          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
+        }
+      }
+    },
+    {
+      "slug": "20260903-rust-announcing-rust-1981-c3f5c215",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/09/03/Rust-1.98.1/",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Announcing Rust 1.98.1",
+          "summary": "Announcing Rust 1.98.1"
+        },
+        "fr": {
+          "title": "Announcing Rust 1.98.1",
+          "summary": "Announcing Rust 1.98.1"
+        }
+      }
+    },
+    {
+      "slug": "20261001-github-actions-retention-now-covers-checks-runs-and-statuses-11541a89",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-01-scheduled-code-scanning-skips-inactive-repositories",
-      "publishedAt": "2026-10-01T16:49:15.000Z",
+      "href": "https://github.blog/changelog/2026-10-01-actions-retention-now-covers-checks-runs-and-statuses",
+      "publishedAt": "2026-10-01T17:59:54.000Z",
       "discoveredAt": "2026-10-01T22:39:35.689Z",
       "locales": {
         "en": {
-          "title": "Scheduled code scanning skips inactive repositories",
-          "summary": "Weekly scheduled scans for code scanning default setup and GitHub Code Quality now start only after a push or pull request triggers an analysis, rather than counting every kind of… The post Scheduled code scanning skips…"
+          "title": "Actions retention now covers checks, runs, and statuses",
+          "summary": "As previously announced, checks, workflow runs, and statuses are now governed by the same GitHub Actions retention setting that controls how long artifacts and logs are kept. These records are… The post Actions retentio…"
         },
         "fr": {
-          "title": "Scheduled code scanning skips inactive repositories",
-          "summary": "Weekly scheduled scans for code scanning default setup and GitHub Code Quality now start only after a push or pull request triggers an analysis, rather than counting every kind of… The post Scheduled code scanning skips…"
+          "title": "Actions retention now covers checks, runs, and statuses",
+          "summary": "As previously announced, checks, workflow runs, and statuses are now governed by the same GitHub Actions retention setting that controls how long artifacts and logs are kept. These records are… The post Actions retentio…"
         }
       }
     },
@@ -2339,66 +2399,6 @@
         "fr": {
           "title": "Benchmarking LLM Inference at Scale with AIPerf",
           "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
-        }
-      }
-    },
-    {
-      "slug": "20260908-docker-6-benefits-of-sandbox-environments-and-how-docker-sandbox-8f7b5812",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/benefits-of-sandbox-environments/",
-      "publishedAt": "2026-09-08T23:05:55.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "6 Benefits of Sandbox Environments (and How Docker Sandboxes Delivers Them)",
-          "summary": "Learn about the key benefits of sandbox environments with Docker including isolation, definable controls, secrets credential handling, and more."
-        },
-        "fr": {
-          "title": "6 Benefits of Sandbox Environments (and How Docker Sandboxes Delivers Them)",
-          "summary": "Learn about the key benefits of sandbox environments with Docker including isolation, definable controls, secrets credential handling, and more."
-        }
-      }
-    },
-    {
-      "slug": "20260929-chatgpt-devday-2026-recap-19db7cc5",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/devday-2026-recap",
-      "publishedAt": "2026-09-29T10:00:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:02.378Z",
-      "locales": {
-        "en": {
-          "title": "DevDay 2026 Recap",
-          "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders."
-        },
-        "fr": {
-          "title": "DevDay 2026 Recap",
-          "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders."
-        }
-      }
-    },
-    {
-      "slug": "20261001-cloudflare-ai-search-is-now-generally-available-1309166d",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/ai-search-ga/",
-      "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-01T13:08:41.196Z",
-      "locales": {
-        "en": {
-          "title": "AI Search is now generally available",
-          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new a…"
-        },
-        "fr": {
-          "title": "AI Search is now generally available",
-          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new a…"
         }
       }
     }
