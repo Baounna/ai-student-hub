@@ -29,7 +29,7 @@ export function EditorialTrust({ locale, compact = false }: EditorialTrustProps)
             : "The internship list is re-checked every week, and every entry says when."}
         </li>
         <li>2. {fr ? "Sources explicites et références visibles." : "Explicit sources and visible references."}</li>
-        <li>3. {fr ? "Recommandations orientées exécution et budget-friendly." : "Execution-first recommendations with budget-friendly constraints."}</li>
+        <li>3. {fr ? "Recommandations orientées exécution et petit budget." : "Execution-first recommendations with budget-friendly constraints."}</li>
       </ul>
       <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-[color:var(--muted)]">
         <Link href={`/${locale}/affiliate-disclosure`} className="do-link py-1.5">

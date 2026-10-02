@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { tagLabel } from "@/lib/tags";
 import { categoryName } from "@/lib/categories";
 import { ogImageUrl, coverImageUrl } from "@/lib/seo";
 import Image from "next/image";
@@ -210,7 +211,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                   href={`/${locale}/blog/tag/${slugify(tag)}`}
                   className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--text)]"
                 >
-                  #{tag}
+                  #{tagLabel(tag, locale)}
                 </Link>
               ))}
             </div>

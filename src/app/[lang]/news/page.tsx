@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { tagLabel } from "@/lib/tags";
 import Image from "next/image";
 import Link from "next/link";
 import { EditorialTrust } from "@/components/editorial-trust";
@@ -418,7 +419,7 @@ export default async function LocalizedNewsPage(
                     key={tag}
                     className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-xs text-[color:var(--text)]"
                   >
-                    #{tag}
+                    #{tagLabel(tag, locale)}
                   </span>
                 ))}
               </div>

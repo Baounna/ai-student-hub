@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { tagLabel } from "@/lib/tags";
 import { comparePageTitle } from "@/lib/page-titles";
 import Image from "next/image";
 import Link from "next/link";
@@ -45,7 +46,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   // one title is a page a search engine cannot tell apart from another.
   const metadataTitle = fr ? "Comparatifs d'outils IA + cybersécurité" : "Practical AI + Cybersecurity Tools";
   const description = fr
-    ? "Guides d'outils et comparatifs IA + cybersécurité: budget-friendly, vitesse de déploiement, et impact exécution."
+    ? "Guides d'outils et comparatifs IA + cybersécurité : coût abordable, vitesse de déploiement, et impact concret."
     : "Tool guides and comparisons for AI + Cybersecurity projects: budget-friendly options, deployment speed, and execution impact.";
 
   return {
@@ -181,7 +182,7 @@ export default async function LocalizedCompareIndexPage(
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr
-                ? "Un hub d'outils orienté exécution: pages à forte intention, grille de décision claire, et liens officiels pour avancer vite avec budget contrôlé."
+                ? "Un espace d'outils orienté exécution : pages à forte intention, grille de décision claire, et liens officiels pour avancer vite avec budget contrôlé."
                 : "An execution-first tools hub with high-intent pages, a clear decision model, and official references so you can ship faster without budget drift."}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -189,7 +190,7 @@ export default async function LocalizedCompareIndexPage(
                 {fr ? "Sources officielles" : "Official sources"}
               </span>
               <span className="blog-chip rounded-full px-3 py-1 text-xs text-[color:var(--muted)]">
-                {fr ? "Filtre budget-friendly" : "Budget-friendly filter"}
+                {fr ? "Filtre petit budget" : "Budget-friendly filter"}
               </span>
               {hasPaidLinks ? null : (
                 <span className="blog-chip rounded-full px-3 py-1 text-xs text-[color:var(--muted)]">
@@ -282,19 +283,19 @@ export default async function LocalizedCompareIndexPage(
           <section className="grid gap-4 md:grid-cols-3">
             {[
               {
-                title: fr ? "Étape 1: Contraintes" : "Step 1: Constraints",
+                title: fr ? "Étape 1 : Contraintes" : "Step 1: Constraints",
                 body: fr
                   ? "Définissez votre plafond budget, la vitesse de livraison cible, et les exigences minimum."
                   : "Set your budget cap, target shipping speed, and minimum requirements."
               },
               {
-                title: fr ? "Étape 2: Évaluation" : "Step 2: Evaluation",
+                title: fr ? "Étape 2 : Évaluation" : "Step 2: Evaluation",
                 body: fr
                   ? "Lisez les compromis réels par outil : coût, usage idéal, et dette de maintenance."
                   : "Review practical tradeoffs per tool: cost, ideal use case, and maintenance debt."
               },
               {
-                title: fr ? "Étape 3: Exécution" : "Step 3: Execution",
+                title: fr ? "Étape 3 : Exécution" : "Step 3: Execution",
                 body: fr
                   ? "Choisissez une option, livrez en 7 jours, puis optimisez selon vos retours terrain."
                   : "Pick one option, ship in 7 days, then optimize from real usage feedback."
@@ -379,7 +380,7 @@ export default async function LocalizedCompareIndexPage(
                     <div className="mt-3 flex flex-wrap gap-1.5">
                       {tool.keywords.slice(0, 4).map((keyword) => (
                         <span key={`${tool.name}-${keyword}`} className="blog-chip rounded-full px-2 py-0.5 text-[11px] text-[color:var(--muted)]">
-                          #{keyword}
+                          #{tagLabel(keyword, locale)}
                         </span>
                       ))}
                     </div>
@@ -481,7 +482,7 @@ export default async function LocalizedCompareIndexPage(
             </div>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {fr
-                ? "NotebookLM, plateformes cloud, outils dev et updates CS: le flux agent ajoute les nouveautés automatiquement."
+                ? "NotebookLM, plateformes cloud, outils dev et updates CS : le flux agent ajoute les nouveautés automatiquement."
                 : "NotebookLM, cloud platforms, dev tooling, and CS updates: the agent adds new releases automatically."}
             </p>
 
@@ -533,7 +534,7 @@ export default async function LocalizedCompareIndexPage(
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {fr
-                ? "Chaque guide suit le même cadre: vitesse de mise en ligne, prédictibilité budgétaire, valeur portfolio, et courbe d'apprentissage."
+                ? "Chaque guide suit le même cadre : vitesse de mise en ligne, prédictibilité budgétaire, valeur portfolio, et courbe d'apprentissage."
                 : "Each guide follows the same model: time-to-deploy, budget predictability, portfolio value, and learning curve."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">

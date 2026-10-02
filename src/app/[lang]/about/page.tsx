@@ -43,7 +43,7 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
   const socialStats = siteHighlights(locale);
   const principles = [
     locale === "fr" ? "Construire des projets utiles, pas seulement des notebooks." : "Ship useful projects, not only notebooks.",
-    locale === "fr" ? "Mesurer les résultats: démos, candidatures, entretiens." : "Measure outcomes: demos, applications, interviews.",
+    locale === "fr" ? "Mesurer les résultats : démos, candidatures, entretiens." : "Measure outcomes: demos, applications, interviews.",
     locale === "fr" ? "Respecter les contraintes budget sans sacrifier la qualité." : "Respect budget constraints without sacrificing quality."
   ];
   const roadmap = [

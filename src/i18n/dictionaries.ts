@@ -208,7 +208,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       trust: [
         "Playbooks orientés projet",
         "Systèmes de déploiement pratiques",
-        "Approche budget-friendly",
+        "Approche petit budget",
         "Contenu EN/FR"
       ],
       popular: "Notre s\u00e9lection",

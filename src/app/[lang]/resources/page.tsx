@@ -60,7 +60,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
       title: locale === "fr" ? "Stack Starter" : "Starter Stack",
       summary:
         locale === "fr"
-          ? "Minimum viable stack pour lancer votre premier projet déployé."
+          ? "Configuration minimale viable pour lancer votre premier projet déployé."
           : "Minimum viable stack to ship your first deployed AI project.",
       items: [
         recommendedTools[0]?.name ?? "Cloud Deploy Stack",
@@ -159,7 +159,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             </div>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/compare`} className="btn-primary">
-                {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
+                {locale === "fr" ? "Ouvrir le labo outils" : "Open tools lab"}
               </Link>
               <Link href={getGuideCtaHref(locale)} className="btn-secondary">
                 {getGuideCtaLabel(locale)}
@@ -177,7 +177,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
               </li>
               <li>
                 {locale === "fr"
-                  ? "2. Conserver un budget réaliste et budget-friendly."
+                  ? "2. Conserver un budget réaliste et maîtrisé."
                   : "2. Keep spending within realistic, budget-friendly limits."}
               </li>
               <li>
@@ -187,7 +187,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
               </li>
             </ul>
             <p className="mt-4 text-xs text-[color:var(--muted)]">
-              {toolsCount} {locale === "fr" ? "outils actifs dans la shortlist" : "active tools in the shortlist"}
+              {toolsCount} {locale === "fr" ? "outils actifs dans la sélection" : "active tools in the shortlist"}
             </p>
           </div>
         </div>
@@ -301,7 +301,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 {locale === "fr" ? "Stages ouverts" : "Open internships"}
               </TrackableAnchor>
               <Link href={`/${locale}/compare`} className="btn-secondary">
-                {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
+                {locale === "fr" ? "Ouvrir le labo outils" : "Open tools lab"}
               </Link>
               {hasCheckoutUrl ? (
                 <TrackableAnchor
@@ -355,7 +355,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                     lines above a disclosure that says the opposite. Whichever
                     is true, the page cannot say both. */}
                 {locale === "fr"
-                  ? `Les outils cités dans le blog, le lab outils et cette page.${
+                  ? `Les outils cités dans le blog, le labo outils et cette page.${
                       hasPaidLinks ? "" : " Aucun partenariat, aucune commission."
                     }`
                   : `The tools referenced across the blog, tools lab, and this page.${
@@ -419,7 +419,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 {locale === "fr" ? "Actualités IA/CS" : "AI + Cybersecurity news"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-primary">
-                {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
+                {locale === "fr" ? "Ouvrir le labo outils" : "Open tools lab"}
               </Link>
               <Link href={getGuideCtaHref(locale)} className="btn-secondary">
                 {getGuideCtaLabel(locale)}

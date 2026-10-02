@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { tagLabel } from "@/lib/tags";
 import { categoryName } from "@/lib/categories";
 import Image from "next/image";
 import Link from "next/link";
@@ -205,7 +206,7 @@ export default async function LocalizedBlogPage(
                 {locale === "fr" ? "Voir les ressources" : "Open resources"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-secondary">
-                {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
+                {locale === "fr" ? "Ouvrir le labo outils" : "Open tools lab"}
               </Link>
               <Link href={getGuideCtaHref(locale)} className="btn-secondary">
                 {getGuideCtaLabel(locale)}
@@ -303,7 +304,7 @@ export default async function LocalizedBlogPage(
               </li>
               <li>
                 {locale === "fr"
-                  ? "2. Comparatifs outils avec angle budget-friendly."
+                  ? "2. Comparatifs d'outils avec un angle petit budget."
                   : "2. Tool comparisons with a budget-friendly positioning."}
               </li>
               <li>
@@ -414,7 +415,7 @@ export default async function LocalizedBlogPage(
                   {locale === "fr" ? "Lire l'article principal" : "Read featured post"}
                 </Link>
                 <Link href={`/${locale}/blog/tag/${slugify(featuredPost.tags[0])}`} className="btn-secondary inline-block">
-                  #{featuredPost.tags[0]}
+                  #{tagLabel(featuredPost.tags[0], locale)}
                 </Link>
               </div>
             </div>
@@ -509,7 +510,7 @@ export default async function LocalizedBlogPage(
                         href={`/${locale}/blog/tag/${slugify(tag)}`}
                         className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--text)]"
                       >
-                        #{tag}
+                        #{tagLabel(tag, locale)}
                       </Link>
                     ))}
                   </div>
@@ -594,7 +595,7 @@ export default async function LocalizedBlogPage(
                   href={`/${locale}/blog/tag/${slugify(tag)}`}
                   className="blog-chip rounded-full px-2.5 py-1 text-xs text-[color:var(--text)]"
                 >
-                  #{tag}
+                  #{tagLabel(tag, locale)}
                 </Link>
               ))}
             </div>

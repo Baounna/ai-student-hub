@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { tagLabel } from "@/lib/tags";
 import { categoryName } from "@/lib/categories";
 import Link from "next/link";
 import { headers } from "next/headers";
@@ -238,7 +239,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
                   href={`/${locale}/blog/tag/${slugify(tag)}`}
                   className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-xs text-[color:var(--text)]"
                 >
-                  #{tag}
+                  #{tagLabel(tag, locale)}
                 </Link>
               ))}
             </div>
@@ -428,7 +429,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
                           href={`/${locale}/blog/tag/${slugify(tag)}`}
                           className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-2.5 py-1 text-xs text-[color:var(--text)]"
                         >
-                          #{tag}
+                          #{tagLabel(tag, locale)}
                         </Link>
                       ))}
                     </div>

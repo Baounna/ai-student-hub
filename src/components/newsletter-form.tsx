@@ -30,7 +30,7 @@ function getNextAction(source: string, locale: Locale) {
   if (source.includes("blog") || source.includes("post")) {
     return {
       href: `/${locale}/compare`,
-      label: locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"
+      label: locale === "fr" ? "Ouvrir le labo outils" : "Open tools lab"
     };
   }
 

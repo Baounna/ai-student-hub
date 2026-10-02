@@ -131,7 +131,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">{comparison.intro}</p>
             <p className="mt-4 text-sm text-[color:var(--muted)]">
               {fr
-                ? `${safeTools.length} options comparées selon budget, vitesse de shipping, et valeur portfolio.`
+                ? `${safeTools.length} options comparées selon le budget, la vitesse de mise en ligne, et la valeur portfolio.`
                 : `${safeTools.length} options scored by budget, shipping speed, and portfolio signal.`}
             </p>
           </div>
@@ -299,7 +299,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
             <ul className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
               <li>1. {fr ? "Priorisez la vitesse de mise en ligne, pas la liste de features." : "Prioritize time-to-deploy over feature lists."}</li>
               <li>2. {fr ? "Fixez une limite de dépense mensuelle claire." : "Set a strict monthly spending cap."}</li>
-              <li>3. {fr ? "Choisissez l'option qui facilite le shipping portfolio." : "Pick the option that removes shipping friction."}</li>
+              <li>3. {fr ? "Choisissez l'option qui facilite la mise en ligne de votre portfolio." : "Pick the option that removes shipping friction."}</li>
             </ul>
             <AffiliateDisclosureInline locale={locale} className="mt-4 text-xs text-[color:var(--muted)]" />
           </section>

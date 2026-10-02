@@ -131,9 +131,9 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           },
           {
             title: "2) Choisir les outils",
-            body: "Choisissez une stack avec comparatifs clairs, budget-friendly, et compromis réels.",
+            body: "Choisissez une stack avec des comparatifs clairs, un coût abordable, et des compromis réels.",
             href: `/${locale}/compare`,
-            cta: "Ouvrir le lab outils"
+            cta: "Ouvrir le labo outils"
           },
           {
             title: "3) Passer à l'action",
@@ -192,12 +192,12 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           },
           {
             label: "Pour étudiants",
-            title: "Stages + carrière + guides budget-friendly",
+            title: "Stages + carrière + guides petit budget",
             body: "Parcours dédié pour stages, portfolio, et exécution avec contraintes budget.",
             links: [
               { href: leadMagnetHref, text: "Stages ouverts", external: true },
               { href: getGuideCtaHref(locale), text: getGuideCtaLabel(locale) },
-              { href: `/${locale}/resources`, text: "Guides budget-friendly" }
+              { href: `/${locale}/resources`, text: locale === "fr" ? "Guides petit budget" : "Budget-friendly guides" }
             ]
           }
         ]
@@ -301,7 +301,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
               {dict.home.ctaPrimary}
             </TrackableAnchor>
             <Link href={`/${locale}/compare`} className="btn-secondary">
-              {locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab"}
+              {locale === "fr" ? "Ouvrir le labo outils" : "Open tools lab"}
             </Link>
             {hasCheckoutUrl ? (
               <TrackableAnchor
@@ -617,7 +617,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
               </Link>{" "}
               •{" "}
               <Link href={`/${locale}/compare`} className="do-link py-1.5">
-                {locale === "fr" ? "Lab outils technique" : "Technical tools lab"}
+                {locale === "fr" ? "Labo outils technique" : "Technical tools lab"}
               </Link>
             </div>
           </div>

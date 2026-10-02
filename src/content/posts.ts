@@ -1877,8 +1877,8 @@ const basePosts: BlogPost[] = [
         ]
       },
       fr: {
-        title: "Transformers, RAG et agents: guide système pour étudiants",
-        seoTitle: "Transformers, RAG et agents: guide pour étudiants",
+        title: "Transformers, RAG et agents : guide système pour étudiants",
+        seoTitle: "Transformers, RAG et agents : guide pour étudiants",
         excerpt:
           "Comprendre comment les systèmes LLM modernes sont construits, quand utiliser chaque pattern et comment choisir une architecture portfolio crédible.",
         content: [

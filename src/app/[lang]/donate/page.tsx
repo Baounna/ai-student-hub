@@ -243,8 +243,8 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
             </h2>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>- {fr ? "Production de contenu EN/FR à haute valeur pratique." : "EN/FR content production with practical value."}</li>
-              <li>- {fr ? "Mises à jour tools/comparatifs pour budgets étudiants." : "Frequent tools/comparison updates for student budgets."}</li>
-              <li>- {fr ? "Amélioration continue du site et de l'expérience learning." : "Continuous site and learning experience improvements."}</li>
+              <li>- {fr ? "Mises à jour outils et comparatifs pour budgets étudiants." : "Frequent tools/comparison updates for student budgets."}</li>
+              <li>- {fr ? "Amélioration continue du site et de l'expérience d'apprentissage." : "Continuous site and learning experience improvements."}</li>
             </ul>
             <div className="mt-4">
               <Link href={`/${locale}/resources`} className="do-link text-sm">
@@ -305,7 +305,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                 </p>
                 <p className="mt-1">
                   {fr
-                    ? "Oui: partagez les articles, rejoignez la newsletter et recommandez le site à d'autres étudiants."
+                    ? "Oui : partagez les articles, rejoignez la newsletter et recommandez le site à d'autres étudiants."
                     : "Yes: share articles, join the newsletter, and recommend the site to other students."}
                 </p>
               </div>

@@ -165,7 +165,7 @@ export const newsBriefs: NewsBrief[] = [
         summary:
           "Les étudiants passent des démos mono-prompt vers des workflows multi-étapes avec planification, retrieval et appels d'outils.",
         studentImpact:
-          "Le niveau attendu monte: les recruteurs veulent voir une logique système, pas seulement de bons prompts.",
+          "Le niveau attendu monte : les recruteurs veulent voir une logique système, pas seulement de bons prompts.",
         takeaways: [
           "Découpez le flux en états explicites au lieu d'un prompt géant.",
           "Tracez chaque étape agent pour debugger les échecs.",
@@ -490,7 +490,7 @@ export const newsBriefs: NewsBrief[] = [
         title: "Les checklists sécurité API deviennent standard dans les projets étudiants",
         seoTitle: "Les checklists sécurité API deviennent la norme",
         summary:
-          "De plus en plus d'équipes étudiantes appliquent une base sécurité API avant lancement: scopes auth, validation d'entrées, et contrôle de débit.",
+          "De plus en plus d'équipes étudiantes appliquent une base sécurité API avant lancement : scopes auth, validation d'entrées, et contrôle de débit.",
         studentImpact:
           "La sécurité est devenue un signal visible pour les stages backend, platform, et ML engineering.",
         takeaways: [

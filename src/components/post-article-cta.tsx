@@ -23,10 +23,10 @@ export function PostArticleCta({
   const resolvedDescription =
     description ||
     (locale === "fr"
-      ? "Ouvrez la liste des stages ouverts, puis le lab outils."
+      ? "Ouvrez la liste des stages ouverts, puis le labo outils."
       : "Open the current list of open internships, then the tools lab.");
   const ctaPrimary = locale === "fr" ? siteConfig.leadMagnet.frLabel : siteConfig.leadMagnet.enLabel;
-  const ctaSecondary = locale === "fr" ? "Ouvrir le lab outils" : "Open tools lab";
+  const ctaSecondary = locale === "fr" ? "Ouvrir le labo outils" : "Open tools lab";
   // Was hardcoded to "Buy student guide" / "Acheter le guide étudiant", and
   // rendered at the foot of all 48 article pages -- for a product whose own
   // page says "This guide does not exist. There is nothing to buy, no price,

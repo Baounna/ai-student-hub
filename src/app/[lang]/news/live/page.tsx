@@ -103,7 +103,7 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr
-                ? "Cette page agrège les dernières publications AI + Cybersecurity depuis des flux fiables, avec lien source direct pour chaque item."
+                ? "Cette page agrège les dernières publications AI + Cybersecurity depuis des flux fiables, avec lien source direct pour chaque élément."
                 : "This page aggregates the latest AI + Cybersecurity publications from trusted feeds, with direct source links for every item."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -120,7 +120,7 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
             <p className="do-kicker">{fr ? "Actualisation" : "Refresh"}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>{fr ? "1. Revalidation automatique toutes les 30 minutes." : "1. Auto revalidation every 30 minutes."}</li>
-              <li>{fr ? "2. Chaque item pointe vers la source originale." : "2. Every item links to the original source."}</li>
+              <li>{fr ? "2. Chaque élément pointe vers la source originale." : "2. Every item links to the original source."}</li>
               <li>{fr ? "3. Utilisable pour idées d'articles avec citation." : "3. Ready for source-backed article ideas."}</li>
             </ul>
             <p className="mt-3 text-xs text-[color:var(--muted)]">
@@ -179,7 +179,7 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
         >
           <div className="surface rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Sources trackées" : "Tracked sources"}
+              {fr ? "Sources suivies" : "Tracked sources"}
             </h3>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               {sources.map((source) => (
