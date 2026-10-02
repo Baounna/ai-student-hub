@@ -127,8 +127,13 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
             <Link href={`/${locale}`} className="inline-flex shrink-0 items-center gap-3 rounded-xl border border-transparent px-1 py-1 hover:border-[color:var(--border)]">
               <span className="brand-orb inline-block h-3.5 w-3.5 rounded-full bg-[color:var(--primary)] shadow-[0_0_0_6px_color-mix(in_srgb,var(--primary),transparent_86%)]" />
               <span className="leading-tight">
+                {/* Was the string "AI Cybersecurity News", hardcoded, while
+                    the footer printed siteConfig.brandName ("AI and
+                    Cybersecurity News") and the browser tab said "AICyber" --
+                    three names for one site, none of which agreed. The wordmark
+                    reads the brand like everything else now. */}
                 <span className="font-display block text-base font-bold tracking-tight text-[color:var(--text-strong)] sm:text-lg xl:text-xl">
-                  AI Cybersecurity News
+                  {siteConfig.brandName}
                 </span>
                 <span className="hidden text-[11px] text-[color:var(--muted)] xl:block">
                   {locale === "fr"

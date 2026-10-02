@@ -155,12 +155,27 @@ const digitalOceanBase = digitalOceanRef
   : "https://www.digitalocean.com/";
 const withUtm = (base: string, utm: string) => `${base}${base.includes("?") ? "&" : "?"}${utm}`;
 
+/**
+ * A partner card needs a description someone actually wrote.
+ *
+ * The environment supplies a name, a URL and a placement, and nothing else --
+ * so the card built from it said "Curated partner resource for home, resources
+ * workflows across AI and cybersecurity execution", five times over, differing
+ * only by a slug. That sentence describes no tool; it is filler in the shape of
+ * a description.
+ *
+ * AFFILIATE_n_SUMMARY_EN / _FR are read now, and a partner without them is not
+ * published. An operator who wants a card writes one sentence about the tool;
+ * one who does not gets no card, rather than five identical ones.
+ */
 function readAffiliate(index: number) {
   const name = (process.env[`AFFILIATE_${index}_NAME`] || "").trim();
   const url = (process.env[`AFFILIATE_${index}_URL`] || "").trim();
   const placement = (process.env[`AFFILIATE_${index}_PLACEMENT`] || "resources").trim().toLowerCase();
+  const summaryEn = (process.env[`AFFILIATE_${index}_SUMMARY_EN`] || "").trim();
+  const summaryFr = (process.env[`AFFILIATE_${index}_SUMMARY_FR`] || "").trim();
   if (!name || !isSafeHttpUrl(url)) return null;
-  return { name, url: normalizeHttpUrl(url), placement };
+  return { name, url: normalizeHttpUrl(url), placement, summaryEn, summaryFr };
 }
 
 function placementCategory(placement: string): Record<Locale, string> {
@@ -170,38 +185,6 @@ function placementCategory(placement: string): Record<Locale, string> {
   return { en: "Resources", fr: "Ressources" };
 }
 
-/**
- * Where a partner card appears, named in the reader's language.
- *
- * This returned the raw AFFILIATE_n_PLACEMENT slug for both locales, and the
- * slug is interpolated straight into a French sentence -- so /fr/resources and
- * every French article read "Ressource partenaire choisie pour les workflows
- * home, resources en IA et informatique." Five cards, five pages, one English
- * configuration value showing through the prose.
- */
-const PLACEMENT_WORDS: Record<string, Record<Locale, string>> = {
-  home: { en: "home", fr: "accueil" },
-  blog: { en: "blog", fr: "blog" },
-  resources: { en: "resources", fr: "ressources" },
-  comparison: { en: "comparison", fr: "comparatifs" },
-  comparisons: { en: "comparison", fr: "comparatifs" },
-  tools: { en: "tools", fr: "outils" },
-  news: { en: "news", fr: "actualités" }
-};
-
-function placementLabel(placement: string): Record<Locale, string> {
-  const parts = placement
-    .split(/[\/,]/)
-    .map((part) => part.replace(/[_-]/g, " ").trim().toLowerCase())
-    .filter(Boolean);
-  if (!parts.length) return { en: "resources", fr: "ressources" };
-
-  const words = parts.map((part) => PLACEMENT_WORDS[part] ?? { en: part, fr: part });
-  return {
-    en: words.map((word) => word.en).join(", "),
-    fr: words.map((word) => word.fr).join(", ")
-  };
-}
 
 /**
  * Named for the vendor, because the reader is going to the vendor.
@@ -273,6 +256,8 @@ const envAffiliates = [1, 2, 3, 4, 5].map((index) => readAffiliate(index)).filte
   name: string;
   url: string;
   placement: string;
+  summaryEn: string;
+  summaryFr: string;
 }>;
 const envIcons = [
   "/images/tool-cloud.svg",
@@ -282,26 +267,35 @@ const envIcons = [
   "/images/tool-course.svg"
 ];
 
-const envRecommendedTools: RecommendedTool[] = envAffiliates.map((item, index) => {
-  const label = placementLabel(item.placement);
-  return {
+const envRecommendedTools: RecommendedTool[] = envAffiliates
+  .filter((item) => item.summaryEn && item.summaryFr)
+  .map((item, index) => ({
     name: item.name,
     icon: envIcons[index % envIcons.length],
     category: placementCategory(item.placement),
-    summary: {
-      en: `Curated partner resource for ${label.en} workflows across AI and cybersecurity execution.`,
-      fr: `Ressource partenaire choisie pour les workflows ${label.fr} en IA et informatique.`
-    },
-    benefit: {
-      en: "Selected for practical ROI, faster shipping, and budget-friendly viability.",
-      fr: "Sélectionnée pour un ROI concret, une mise en production rapide, et un coût abordable."
-    },
+    summary: { en: item.summaryEn, fr: item.summaryFr },
+    // Not a second invented sentence. The description is the description.
+    benefit: { en: item.summaryEn, fr: item.summaryFr },
     affiliateHref: item.url
-  };
-});
+  }));
 
-export const recommendedTools: RecommendedTool[] =
-  envRecommendedTools.length >= 3 ? envRecommendedTools : fallbackRecommendedTools;
+/**
+ * Added to the curated list, not swapped for it.
+ *
+ * This read `envRecommendedTools.length >= 3 ? envRecommendedTools :
+ * fallbackRecommendedTools`, so configuring three partners in a dashboard
+ * silently deleted five hand-written descriptions -- including Grammarly's
+ * "Catches grammar and clarity problems in English writing: reports,
+ * documentation, applications." -- and replaced every one of them with the same
+ * template sentence. Nothing warned, and the accurate copy stayed in the
+ * repository looking live.
+ */
+export const recommendedTools: RecommendedTool[] = [
+  ...fallbackRecommendedTools,
+  ...envRecommendedTools.filter(
+    (tool) => !fallbackRecommendedTools.some((existing) => existing.name.toLowerCase() === tool.name.toLowerCase())
+  )
+];
 
 const fallbackStudentStudyTools: StudentStudyTool[] = [
   {
