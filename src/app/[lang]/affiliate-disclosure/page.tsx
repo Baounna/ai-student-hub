@@ -8,13 +8,33 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
+  const title = params.lang === "fr" ? "Politique de liens" : "Link Policy";
+  // "(nothing)" is only true while nothing earns. It is the meta description of
+  // the page a reader opens precisely to check that claim, so it follows the
+  // same gate as the page's own text rather than asserting independently.
+  const description = hasPaidLinks
+    ? params.lang === "fr"
+      ? "Comment nous utilisons les liens sortants, et ce que nous gagnons."
+      : "How we use outbound links, and what we earn from them."
+    : params.lang === "fr"
+      ? "Comment nous utilisons les liens sortants, et ce que nous gagnons (rien)."
+      : "How we use outbound links, and what we earn from them (nothing).";
+
   return {
-    title: params.lang === "fr" ? "Politique de liens" : "Link Policy",
-    description:
-      params.lang === "fr"
-        ? "Comment nous utilisons les liens sortants, et ce que nous gagnons (rien)."
-        : "How we use outbound links, and what we earn from them (nothing).",
-    alternates: localizedAlternates("/affiliate-disclosure", params.lang)
+    title,
+    description,
+    alternates: localizedAlternates("/affiliate-disclosure", params.lang),
+    // Without its own openGraph, this page inherited the root layout's -- url
+    // included -- so sharing it produced a preview claiming to be the site's
+    // home page. Next merges metadata per top-level field, so the whole object
+    // comes from the parent or none of it does.
+    openGraph: {
+      title,
+      description,
+      url: `/${params.lang}/affiliate-disclosure`,
+      type: "article"
+    },
+    twitter: { card: "summary", title, description }
   };
 }
 

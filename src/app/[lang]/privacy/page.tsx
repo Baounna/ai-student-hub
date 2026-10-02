@@ -8,10 +8,24 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const params = await props.params;
   if (!isLocale(params.lang)) return {};
 
+  const title = params.lang === "fr" ? "Politique de confidentialité" : "Privacy Policy";
+  const description = params.lang === "fr" ? "Politique de confidentialité d'AI and Cybersecurity News." : "AI and Cybersecurity News privacy policy.";
+
   return {
-    title: params.lang === "fr" ? "Politique de confidentialité" : "Privacy Policy",
-    description: params.lang === "fr" ? "Politique de confidentialité d'AI and Cybersecurity News." : "AI and Cybersecurity News privacy policy.",
-    alternates: localizedAlternates("/privacy", params.lang)
+    title,
+    description,
+    alternates: localizedAlternates("/privacy", params.lang),
+    // Without its own openGraph, this page inherited the root layout's -- url
+    // included -- so sharing it produced a preview claiming to be the site's
+    // home page. Next merges metadata per top-level field, so the whole object
+    // comes from the parent or none of it does.
+    openGraph: {
+      title,
+      description,
+      url: `/${params.lang}/privacy`,
+      type: "article"
+    },
+    twitter: { card: "summary", title, description }
   };
 }
 
