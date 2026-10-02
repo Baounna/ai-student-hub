@@ -3,7 +3,7 @@
 import { useId, useState } from "react";
 import type { Locale } from "@/i18n/config";
 import { trackEvent } from "@/lib/track";
-import { TurnstileWidget } from "@/components/ui/turnstile-widget";
+import { TurnstileWidget, botProtectionEnabled } from "@/components/ui/turnstile-widget";
 import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
 type NewsletterFormProps = {
@@ -76,7 +76,29 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
   // arrived here as the same sentence because the fetch threw away the status.
   // "Too many requests" in particular told the reader to try again, which is
   // the one thing that cannot work — the limit counts the retries too.
-  const [errorKind, setErrorKind] = useState<"rate_limit" | "generic">("generic");
+  const [errorKind, setErrorKind] = useState<"rate_limit" | "generic" | "needs_verification">("generic");
+  /**
+   * The challenge token, held here rather than read from FormData.
+   *
+   * FormData only carries cf-turnstile-response once the reader has passed the
+   * challenge, and the submit button was never gated on it -- so pressing
+   * Subscribe before ticking the box sent an empty token, got 403, and printed
+   * "Something went wrong. Try again." Retrying without ticking the box fails
+   * every single time, so the one instruction the reader was given could not
+   * work. Measured on the live site: the hidden input was still empty 25
+   * seconds after load.
+   */
+  const [botToken, setBotToken] = useState("");
+  /**
+   * True when the challenge could not be shown at all.
+   *
+   * Gating the button on a token is right only while the challenge can appear.
+   * Blocked by an extension, or refused for the hostname, no token ever comes
+   * and the reader is left with a dead button and no explanation. Submitting
+   * would fail at the server anyway, so the button stays disabled -- but it now
+   * says why, which is the difference between a broken form and a closed one.
+   */
+  const [verificationUnavailable, setVerificationUnavailable] = useState(false);
   const [deliveryStatus, setDeliveryStatus] = useState<"sent" | "queued" | "failed" | "unavailable" | null>(null);
   const sourceTag = normalizeSource(source, compact);
   const nextAction = getNextAction(sourceTag, locale);
@@ -89,7 +111,6 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
     try {
       const formData = new FormData(event.currentTarget);
       const referralNote = String(formData.get("referral_note") || "");
-      const botToken = String(formData.get("cf-turnstile-response") || "");
 
       const response = await fetch("/api/newsletter", {
         method: "POST",
@@ -105,7 +126,11 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       });
 
       if (!response.ok) {
-        setErrorKind(response.status === 429 ? "rate_limit" : "generic");
+        // 403 here is almost always a missing or expired challenge token, and
+        // "try again" is the wrong thing to tell someone in that state.
+        setErrorKind(
+          response.status === 429 ? "rate_limit" : response.status === 403 ? "needs_verification" : "generic"
+        );
         throw new Error("failed");
       }
       const data = (await response.json()) as {
@@ -143,6 +168,10 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
     }
   }
 
+  // Nothing to gate on when bot protection is off, which is how the form
+  // behaves everywhere it is not configured.
+  const canSubmit = !botProtectionEnabled || Boolean(botToken);
+
   const formClass = compact ? "mt-4 grid grid-cols-[1fr_auto] gap-2" : "mt-6 grid gap-3 sm:grid-cols-3";
   const emailClass = compact ? "field-input px-3" : "field-input";
   const buttonClass = compact
@@ -177,9 +206,15 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       ? locale === "fr"
         ? "Trop de tentatives. Attendez une dizaine de minutes avant de réessayer."
         : "Too many attempts. Wait about ten minutes before trying again."
-      : locale === "fr"
-        ? "Erreur. Réessayez dans un instant."
-        : "Something went wrong. Try again.";
+      : // A 403 means the challenge was not passed or has expired. Telling that
+        // reader to "try again" sends them round a loop that cannot end.
+        errorKind === "needs_verification"
+        ? locale === "fr"
+          ? "Vérification incomplète. Cochez la case « Je ne suis pas un robot », puis renvoyez."
+          : "Verification incomplete. Tick the human-verification box, then send again."
+        : locale === "fr"
+          ? "Erreur. Réessayez dans un instant."
+          : "Something went wrong. Try again.";
 
   const liveMessage = showWarning ? warningText : showSuccess ? successText : status === "error" ? errorText : "";
 
@@ -230,9 +265,6 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         className="hidden"
         aria-hidden
       />
-      <div className={compact ? "col-span-2" : "sm:col-span-3"}>
-        <TurnstileWidget locale={locale} />
-      </div>
       <label htmlFor={emailId} className="sr-only">
         {locale === "fr" ? "Adresse email" : "Email address"}
       </label>
@@ -255,11 +287,40 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       />
       <button
         type="submit"
-        disabled={status === "loading"}
+        disabled={status === "loading" || !canSubmit}
         className={buttonClass}
       >
         {status === "loading" ? (locale === "fr" ? "Envoi..." : "Sending...") : ctaLabel}
       </button>
+      {/* Below the email field and above the button, which is the order the
+          reader moves in. It used to render first, so on the full-width form
+          the checkbox sat off-screen behind someone who had scrolled to the
+          email box. */}
+      {botProtectionEnabled ? (
+        <div className={compact ? "col-span-2" : "sm:col-span-3"}>
+          <TurnstileWidget
+            locale={locale}
+            onToken={(token) => {
+              setBotToken(token);
+              if (token) setVerificationUnavailable(false);
+            }}
+            onUnavailable={() => setVerificationUnavailable(true)}
+          />
+          {verificationUnavailable ? (
+            <p className="mt-1 text-xs text-[color:var(--muted)]">
+              {locale === "fr"
+                ? "La vérification anti-robot n'a pas pu se charger. Désactivez votre bloqueur de publicités pour ce site, ou essayez un autre navigateur."
+                : "The human-verification step could not load. Disable your ad blocker for this site, or try another browser."}
+            </p>
+          ) : !botToken ? (
+            <p className="mt-1 text-xs text-[color:var(--muted)]">
+              {locale === "fr"
+                ? "Cochez la case ci-dessus pour activer le bouton."
+                : "Tick the box above to enable the button."}
+            </p>
+          ) : null}
+        </div>
+      ) : null}
       {/* The one live region, always in the DOM. Each status box below used to
           carry aria-live itself, but a live region that is inserted at the same
           moment as its text is not reliably announced: the screen reader has to
