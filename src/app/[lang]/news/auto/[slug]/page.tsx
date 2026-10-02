@@ -204,7 +204,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
     { id: "summary", label: fr ? "Résumé" : "Summary" },
     { id: "impact", label: fr ? "Impact pratique" : "Practical impact" },
     { id: "actions", label: fr ? "Actions" : "Actions" },
-    { id: "references", label: "References" },
+    { id: "references", label: locale === "fr" ? "Références" : "References" },
     { id: "next", label: fr ? "Suite" : "Next steps" },
     { id: "newsletter", label: "Newsletter" }
   ];
@@ -247,7 +247,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
       <header className="do-hero rounded-3xl p-7 md:p-10">
         <div className="grid gap-6 lg:grid-cols-[1.3fr,1fr] lg:items-end">
           <div>
-            <p className="do-kicker">{fr ? "Auto web brief" : "Auto web brief"}</p>
+            <p className="do-kicker">{fr ? "Brief web automatique" : "Auto web brief"}</p>
             <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">{item.title}</h1>
             <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-[color:var(--muted)]">
               <span>{topicLabel(item.topic, locale)}</span>
@@ -326,10 +326,10 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
             </h2>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/resources`} className="btn-secondary">
-                {fr ? "Resources" : "Resources"}
+                {fr ? "Ressources" : "Resources"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-primary">
-                {fr ? "Compare" : "Compare"}
+                {fr ? "Comparatifs" : "Compare"}
               </Link>
             </div>
           </section>
@@ -365,7 +365,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
           <Newsletter compact locale={locale} source="auto_news_brief_aside" />
         </aside>
       </div>
-      <BackToTop />
+      <BackToTop locale={locale} />
     </article>
   );
 }

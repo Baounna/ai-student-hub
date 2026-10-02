@@ -24,7 +24,7 @@ export default async function TermsPage(props: { params: Promise<{ lang: string 
   return (
     <section className="page-shell max-w-5xl py-10 md:py-14">
       <header className="do-hero rounded-3xl p-7 md:p-10">
-        <p className="do-kicker">{fr ? "Legal" : "Legal"}</p>
+        <p className="do-kicker">{fr ? "Mentions légales" : "Legal"}</p>
         <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
           {fr ? "Conditions d'utilisation" : "Terms of Use"}
         </h1>

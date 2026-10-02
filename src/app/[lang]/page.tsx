@@ -124,7 +124,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       ? [
           {
             title: "1) Apprendre",
-            body: "Lis des guides IA + cybersécurité axés projets, stage, et exécution.",
+            body: "Lisez des guides IA + cybersécurité axés projets, stage, et exécution.",
             href: `/${locale}/blog`,
             cta: "Ouvrir le blog"
           },
@@ -770,7 +770,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       <div className="mt-4 grid gap-4 lg:grid-cols-2">
         <section className="wiki-panel overflow-hidden rounded-md">
           <div className="wiki-head wiki-head-purple px-4 py-2 text-xl md:text-2xl">
-            {locale === "fr" ? "Portails informatique" : "Computer science portals"}
+            {locale === "fr" ? "Portails informatiques" : "Computer science portals"}
           </div>
           <div className="grid gap-3 p-4 sm:grid-cols-2">
             {categories.map((category) => (

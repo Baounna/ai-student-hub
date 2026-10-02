@@ -21,7 +21,7 @@ export function siteHighlights(locale: Locale): string[] {
 
   return locale === "fr"
     ? [
-        "Base de connaissance IA/CS pour builders et apprenants",
+        "Base de connaissances IA/CS pour builders et apprenants",
         "Guides pratiques, outils, et un tableau de stages revérifié chaque semaine",
         "Lecture libre, sans inscription"
       ]

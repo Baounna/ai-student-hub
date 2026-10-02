@@ -141,7 +141,7 @@ export default async function LocalizedNewsPage(
 
   const trackOptions: Array<{ key: NewsTrack | "all"; label: string; count: number }> = [
     { key: "all", label: locale === "fr" ? "Tout IA + CS" : "All AI + Cybersecurity", count: allBriefs.length },
-    { key: "ai", label: "AI", count: trackCounts.ai },
+    { key: "ai", label: locale === "fr" ? "IA" : "AI", count: trackCounts.ai },
     { key: "cs", label: locale === "fr" ? "Informatique" : "Computer Science", count: trackCounts.cs },
     { key: "career", label: locale === "fr" ? "Carrière" : "Career", count: trackCounts.career }
   ];
@@ -171,7 +171,7 @@ export default async function LocalizedNewsPage(
           <div>
             <p className="do-kicker">{dict.nav.news}</p>
             <h1 className="font-display mt-2 text-4xl font-bold leading-[1.08] text-[color:var(--text-strong)] md:text-5xl">
-              {locale === "fr" ? "News IA + Cybersécurité" : "AI + Cybersecurity News"}
+              {locale === "fr" ? "Actualités IA + cybersécurité" : "AI + Cybersecurity News"}
             </h1>
             <p className="mt-3 max-w-3xl text-sm text-[color:var(--text)] md:text-base">{dict.news.subtitle}</p>
           </div>
@@ -183,10 +183,10 @@ export default async function LocalizedNewsPage(
         <div className="grid gap-4 xl:grid-cols-[0.92fr,1.45fr]">
           <aside
             className="space-y-3"
-            aria-label={locale === "fr" ? "News liées" : "Related updates"}
+            aria-label={locale === "fr" ? "Actualités liées" : "Related updates"}
           >
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[color:var(--primary)]">
-              {locale === "fr" ? "News liées" : "Related updates"}
+              {locale === "fr" ? "Actualités liées" : "Related updates"}
             </p>
             {(relatedBriefs.length ? relatedBriefs : recentSignals).map((brief) => (
               <article key={brief.slug} className="news-related-card rounded-2xl p-4">
@@ -331,7 +331,7 @@ export default async function LocalizedNewsPage(
 
       <div className="mt-6 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
-          {locale === "fr" ? "Split IA + cybersécurité" : "AI + Cybersecurity split"}
+          {locale === "fr" ? "Répartition IA + cybersécurité" : "AI + Cybersecurity split"}
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
           {trackOptions.map((option) => {

@@ -92,7 +92,10 @@ const COPY = {
     staleBody:
       "Les dates ci-dessous sont peut-être dépassées. Elle est affichée telle quelle plutôt que masquée, pour que vous puissiez en juger.",
     daysAgo: (n: number) => (n === 0 ? "aujourd'hui" : n === 1 ? "hier" : `il y a ${n} jours`),
-    openCount: (open: number, total: number) => `${open} ouverte(s) sur ${total} référencée(s)`,
+    // "(s)" on a line that always knows its own count reads as an untranslated
+    // template. The numbers are in hand, so agree properly.
+    openCount: (open: number, total: number) =>
+      `${open} ${open === 1 ? "ouverte" : "ouvertes"} sur ${total} ${total === 1 ? "référencée" : "référencées"}`,
     scope: (breakdown: string, security: number, total: number) =>
       `${breakdown}. ${security} sur ${total} sont des postes sécurité ou cyber.`,
     filterCountry: "Pays",

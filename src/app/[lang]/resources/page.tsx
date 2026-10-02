@@ -229,7 +229,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
           <section className="surface rounded-2xl p-6">
             <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
               <div>
-                <p className="do-kicker">{locale === "fr" ? "Outils révision" : "Study stack"}</p>
+                <p className="do-kicker">{locale === "fr" ? "Outils de révision" : "Study stack"}</p>
                 <h2 className="font-display section-title mt-1 font-semibold text-[color:var(--text-strong)]">
                   {locale === "fr"
                     ? "NotebookLM, Anki et outils utiles pour étudiants"
@@ -350,9 +350,17 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 {locale === "fr" ? "Outils cités" : "Tools referenced here"}
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
+                {/* "No partnership, no commission" rendered inside a block
+                    whose own condition is that partners are configured, forty
+                    lines above a disclosure that says the opposite. Whichever
+                    is true, the page cannot say both. */}
                 {locale === "fr"
-                  ? "Les outils cités dans le blog, le lab outils et cette page. Aucun partenariat, aucune commission."
-                  : "The tools referenced across the blog, tools lab, and this page. No partnership, no commission."}
+                  ? `Les outils cités dans le blog, le lab outils et cette page.${
+                      hasPaidLinks ? "" : " Aucun partenariat, aucune commission."
+                    }`
+                  : `The tools referenced across the blog, tools lab, and this page.${
+                      hasPaidLinks ? "" : " No partnership, no commission."
+                    }`}
               </p>
               <div className="mt-4 grid gap-2 md:grid-cols-2">
                 {siteConfig.affiliatePartners.map((partner) => (

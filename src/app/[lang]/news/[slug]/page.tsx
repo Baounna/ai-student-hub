@@ -79,7 +79,7 @@ function getTopicReference(topic: string, locale: Locale) {
       source: "U.S. Department of Labor"
     },
     "AI Performance": {
-      label: locale === "fr" ? "Table benchmarks GPT-5 (OpenAI, aout 2025)" : "OpenAI GPT-5 benchmark table (August 2025)",
+      label: locale === "fr" ? "Tableau de benchmarks GPT-5 (OpenAI, août 2025)" : "OpenAI GPT-5 benchmark table (August 2025)",
       href: "https://openai.com/index/introducing-gpt-5-for-developers/",
       source: "OpenAI"
     }
@@ -177,7 +177,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
   const tocItems = [
     { id: "summary", label: locale === "fr" ? "Résumé" : "Summary" },
     { id: "latest-updates", label: locale === "fr" ? "Dernières actus" : "Latest updates" },
-    { id: "references", label: "References" },
+    { id: "references", label: locale === "fr" ? "Références" : "References" },
     { id: "resources", label: locale === "fr" ? "Ressources" : "Resources" },
     ...(relatedPosts.length ? [{ id: "related", label: locale === "fr" ? "Lectures" : "Deep dives" }] : []),
     { id: "newsletter", label: "Newsletter" }
@@ -299,7 +299,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             <div className="mt-6 grid gap-4 md:grid-cols-2">
               <section className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-5">
                 <h3 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-                  {locale === "fr" ? "Takeaways cles" : "Key takeaways"}
+                  {locale === "fr" ? "Points clés" : "Key takeaways"}
                 </h3>
                 <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
                   {brief.takeaways.map((takeaway) => (
@@ -453,7 +453,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
           <EditorialTrust locale={locale} compact />
           <div className="surface rounded-2xl p-5">
             <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "Signaux recents" : "Recent signals"}
+              {locale === "fr" ? "Signaux récents" : "Recent signals"}
             </h3>
             <div className="mt-3 space-y-3">
               {recentSignals.map((signal) => (
@@ -471,7 +471,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
           <Newsletter compact locale={locale} source="news_article_aside" />
         </aside>
       </div>
-      <BackToTop />
+      <BackToTop locale={locale} />
     </article>
   );
 }

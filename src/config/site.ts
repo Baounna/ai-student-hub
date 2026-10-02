@@ -18,10 +18,33 @@ function envValue(key: string) {
   return (process.env[key] || "").trim();
 }
 
+/**
+ * French elision always carries an apostrophe.
+ *
+ * "d IA", "j aide", "l article" are not spellings; they are what is left after
+ * text has been run through something that stripped its accents and
+ * apostrophes. FOUNDER_BIO_FR and LINKEDIN_SHORT_BIO_FR in .env.local are in
+ * exactly that state, so /fr/about introduced the author with "Etudiant en
+ * derniere annee d IA, ... j aide les etudiants a transformer" -- under the
+ * heading "Fondateur", on a site whose whole pitch is care. The built-in
+ * fallbacks a few lines down are correct, and production happens not to set
+ * these, which is the only reason a reader never saw it.
+ *
+ * So an override that cannot be French is not used. Falling back to correct
+ * copy is always better than publishing broken copy, and this is the kind of
+ * damage nobody notices in a dashboard field.
+ */
+const BROKEN_ELISION = /\b[cdjlmnst] [aeiouyéèêàâîôûAEIOUYÉÈÊÀÂÎÔÛ]/;
+
+function usableLocaleOverride(value: string, locale: Locale): string {
+  if (locale !== "fr") return value;
+  return BROKEN_ELISION.test(value) ? "" : value;
+}
+
 function envLocaleValue(enKey: string, frKey: string, fallback: Record<Locale, string>) {
   return {
     en: envValue(enKey) || fallback.en,
-    fr: envValue(frKey) || fallback.fr
+    fr: usableLocaleOverride(envValue(frKey), "fr") || fallback.fr
   } as const;
 }
 
@@ -68,9 +91,27 @@ const affiliatePartners = [1, 2, 3, 4, 5]
  * here the truth is readable from the environment: a gate someone must
  * remember to flip is the same hazard one step further along.
  */
+/**
+ * A referral code, not merely a partner card.
+ *
+ * The first version of this counted any AFFILIATE_n_URL as a paid link, which
+ * was too broad in the direction that produces a lie: every partner URL on the
+ * page today is a bare homepage -- digitalocean.com, coursera.org, notion.so --
+ * with no referral parameter, so no commission can be attributed to any of
+ * them, and the disclosure would have claimed one. Production sets none of
+ * these, so the claim stayed true there; it was wrong wherever a partner was
+ * configured without a code.
+ *
+ * A link only earns when it carries something identifying the referrer, so that
+ * is what is checked. Unrecognised schemes fall to the safe side: if a real
+ * programme ever uses a parameter not in this list, the disclosure understates
+ * rather than invents, and the comment below says to set the text explicitly.
+ */
+const REFERRAL_PARAM = /[?&](ref|refcode|aff|affiliate|affid|partner|tag|via|irclickid|utm_medium=affiliate)=/i;
+
 export const hasPaidLinks =
   Boolean(envValue("NEXT_PUBLIC_DIGITALOCEAN_REF")) ||
-  [1, 2, 3, 4, 5].some((index) => Boolean(envValue(`AFFILIATE_${index}_URL`)));
+  [1, 2, 3, 4, 5].some((index) => REFERRAL_PARAM.test(envValue(`AFFILIATE_${index}_URL`) || ""));
 /**
  * The same gate as GUIDE_EXISTS in src/lib/product.ts, for the same reason.
  *

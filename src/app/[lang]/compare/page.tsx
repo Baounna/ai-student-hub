@@ -86,7 +86,7 @@ export default async function LocalizedCompareIndexPage(
   const locale: Locale = params.lang;
   const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const fr = locale === "fr";
-  const playbookTitle = fr ? "Framework de sélection" : "Selection framework";
+  const playbookTitle = fr ? "Méthode de sélection" : "Selection framework";
   const toolParam = Array.isArray(searchParams?.tool) ? searchParams?.tool[0] : searchParams?.tool;
   const toolQueryRaw = sanitizeSearchQuery(typeof toolParam === "string" ? toolParam : "", 80);
   const toolQuery = toolQueryRaw.toLowerCase();
@@ -173,7 +173,7 @@ export default async function LocalizedCompareIndexPage(
       <section className="do-hero rounded-3xl p-7 md:p-10">
         <div className="grid gap-6 lg:grid-cols-[1.3fr,1fr] lg:items-end">
           <div>
-            <p className="do-kicker">{fr ? "Tools Lab" : "Tools Lab"}</p>
+            <p className="do-kicker">{fr ? "Labo outils" : "Tools Lab"}</p>
             <h1 className="font-display tools-hero-title mt-3 font-bold text-[color:var(--text-strong)]">
                 {fr
                 ? "Outils IA + cybersécurité pratiques pour le travail réel"
@@ -290,7 +290,7 @@ export default async function LocalizedCompareIndexPage(
               {
                 title: fr ? "Étape 2: Évaluation" : "Step 2: Evaluation",
                 body: fr
-                  ? "Lis les compromis réels par outil: coût, usage idéal, et dette de maintenance."
+                  ? "Lisez les compromis réels par outil : coût, usage idéal, et dette de maintenance."
                   : "Review practical tradeoffs per tool: cost, ideal use case, and maintenance debt."
               },
               {

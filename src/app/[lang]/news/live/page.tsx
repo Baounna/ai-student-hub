@@ -88,7 +88,7 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
       <header className="do-hero rounded-3xl p-7 md:p-10">
         <div className="grid gap-6 lg:grid-cols-[1.35fr,1fr] lg:items-end">
           <div>
-            <p className="do-kicker">{fr ? "Live stream" : "Live stream"}</p>
+            <p className="do-kicker">{fr ? "Flux en direct" : "Live stream"}</p>
             <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
               {fr ? "Nouveautés IA/CS automatiques" : "Automatic AI + Cybersecurity latest updates"}
             </h1>
@@ -108,7 +108,7 @@ export default async function LocalizedLiveNewsPage(props: { params: Promise<{ l
           </div>
 
           <div className="surface rounded-2xl p-5">
-            <p className="do-kicker">{fr ? "Refresh" : "Refresh"}</p>
+            <p className="do-kicker">{fr ? "Actualisation" : "Refresh"}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>{fr ? "1. Revalidation automatique toutes les 30 minutes." : "1. Auto revalidation every 30 minutes."}</li>
               <li>{fr ? "2. Chaque item pointe vers la source originale." : "2. Every item links to the original source."}</li>

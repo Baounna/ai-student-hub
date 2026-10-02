@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { siteConfig } from "@/config/site";
+import { hasPaidLinks, siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 
@@ -27,7 +27,7 @@ export default async function AffiliateDisclosurePage(props: { params: Promise<{
   return (
     <section className="page-shell max-w-5xl py-10 md:py-14">
       <header className="do-hero rounded-3xl p-7 md:p-10">
-        <p className="do-kicker">{fr ? "Legal" : "Legal"}</p>
+        <p className="do-kicker">{fr ? "Mentions légales" : "Legal"}</p>
         <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
           {fr ? "Politique de liens" : "Link policy"}
         </h1>
@@ -44,10 +44,21 @@ export default async function AffiliateDisclosurePage(props: { params: Promise<{
             {fr ? "Ce que nous gagnons" : "What we earn"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">{siteConfig.affiliateDisclosureText[locale]}</p>
+          {/* The second sentence only makes sense while there is no programme
+              to join. Printed under the commission wording it promised a
+              warning about something that had already happened. */}
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
             {fr
-              ? "Nous recommandons uniquement des outils pertinents pour les étudiants. Si cela change un jour et que nous rejoignons un programme d'affiliation, cette page le dira avant que le premier lien ne change."
-              : "We only recommend tools relevant to student outcomes. If that ever changes and we join an affiliate programme, this page will say so before the first link does."}
+              ? `Nous recommandons uniquement des outils pertinents pour les étudiants.${
+                  hasPaidLinks
+                    ? ""
+                    : " Si cela change un jour et que nous rejoignons un programme d'affiliation, cette page le dira avant que le premier lien ne change."
+                }`
+              : `We only recommend tools relevant to student outcomes.${
+                  hasPaidLinks
+                    ? ""
+                    : " If that ever changes and we join an affiliate programme, this page will say so before the first link does."
+                }`}
           </p>
         </section>
 

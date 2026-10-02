@@ -24,7 +24,7 @@ export default async function PrivacyPage(props: { params: Promise<{ lang: strin
   return (
     <section className="page-shell max-w-5xl py-10 md:py-14">
       <header className="do-hero rounded-3xl p-7 md:p-10">
-        <p className="do-kicker">{fr ? "Legal" : "Legal"}</p>
+        <p className="do-kicker">{fr ? "Mentions légales" : "Legal"}</p>
         <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
           {fr ? "Politique de confidentialité" : "Privacy Policy"}
         </h1>
@@ -53,7 +53,7 @@ export default async function PrivacyPage(props: { params: Promise<{ lang: strin
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
             {fr
-              ? "Nous n'utilisons pas vos données pour des ventes externes. Vous pouvez vous désabonner à tout moment."
+              ? "Nous ne vendons pas vos données personnelles. Vous pouvez vous désabonner à tout moment."
               : "We do not sell your personal data. You can unsubscribe at any time."}
           </p>
         </section>

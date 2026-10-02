@@ -124,7 +124,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
           <div>
             <p className="do-kicker">{fr ? "Soutien" : "Support"}</p>
             <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">
-              {fr ? "Soutiens AI and Cybersecurity News" : "Support AI and Cybersecurity News"}
+              {fr ? "Soutenez AI and Cybersecurity News" : "Support AI and Cybersecurity News"}
             </h1>
             <p className="body-copy mt-4 max-w-3xl text-[color:var(--text)]">
               {fr

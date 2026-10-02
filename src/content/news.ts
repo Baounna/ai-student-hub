@@ -110,7 +110,7 @@ export const newsBriefs: NewsBrief[] = [
         seoDescription:
           "Ce que montrait un tableau benchmark de février 2026 sur raisonnement, QA scientifique, maths, multimodal et UI/écran -- et pourquoi la page d'origine ne le prouve plus.",
         studentImpact:
-          "Les étudiants peuvent choisir un modèle par type de tâche réelle plutôt que par hype: un modèle pour math/science, un autre pour multimodal ou exécution UI.",
+          "Les étudiants peuvent choisir un modèle par type de tâche réelle plutôt que par effet de mode: un modèle pour math/science, un autre pour multimodal ou exécution UI.",
         takeaways: [
           "Choisissez le modèle selon le type de tâche : le classement change avec le benchmark.",
           "Les pages de benchmarks sont mises à jour sur place. Notez la date et les chiffres utilisés, sinon la preuve disparaît.",
@@ -543,7 +543,7 @@ export const newsBriefs: NewsBrief[] = [
         ]
       },
       fr: {
-        title: "Kubernetes et patterns DevOps legers entrent dans les workflows étudiants",
+        title: "Kubernetes et patterns DevOps légers entrent dans les workflows étudiants",
         seoTitle: "Kubernetes et DevOps léger pour les étudiants",
         summary:
           "Les équipes étudiantes combinent pipelines CI/CD simples et déploiements conteneurisés pour réduire la friction release.",
@@ -552,7 +552,7 @@ export const newsBriefs: NewsBrief[] = [
         takeaways: [
           "Commencez par des patterns simples avant orchestration complexe.",
           "Suivez une métrique rollback et une métrique incident.",
-          "Documentez le flow deploy pour que l'équipe shippe en sécurité."
+          "Documentez votre procédure de déploiement pour que l'équipe puisse livrer sans risque."
         ],
         actionSteps: [
           "Mettez en place staging + production.",

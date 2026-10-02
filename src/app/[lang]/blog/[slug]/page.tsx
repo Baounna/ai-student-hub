@@ -133,7 +133,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
   const tocItems = [
     { id: "summary", label: locale === "fr" ? "Synthèse" : "Summary" },
     { id: "latest-updates", label: locale === "fr" ? "Dernières actus" : "Latest updates" },
-    ...(post.references.length ? [{ id: "references", label: "References" }] : []),
+    ...(post.references.length ? [{ id: "references", label: locale === "fr" ? "Références" : "References" }] : []),
     { id: "resources", label: locale === "fr" ? "Ressources" : "Resources" },
     { id: "tools", label: locale === "fr" ? "Outils" : "Tools" },
     ...(bridgePosts.length ? [{ id: "bridge", label: locale === "fr" ? "Pont IA/CS" : "AI + Cybersecurity bridge" }] : []),
@@ -241,7 +241,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
             </ul>
             <div className="mt-4 flex flex-wrap gap-2">
               <Link href={`/${locale}/blog`} className="btn-secondary">
-                {locale === "fr" ? "Retour blog" : "Back to blog"}
+                {locale === "fr" ? "Retour au blog" : "Back to blog"}
               </Link>
               <Link href={`/${locale}/resources`} className="btn-primary">
                 {locale === "fr" ? "Ressources" : "Resources"}
@@ -276,7 +276,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
         </article>
         <article className="blog-signal-card rounded-xl p-3">
           <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-            {locale === "fr" ? "Densité source" : "Source density"}
+            {locale === "fr" ? "Densité des sources" : "Source density"}
           </p>
           <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
             {sourceDensity}/1k {locale === "fr" ? "mots" : "words"}
@@ -285,7 +285,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
       </section>
 
       <section className="blog-aside-card mt-5 rounded-2xl p-5">
-        <p className="do-kicker">{locale === "fr" ? "Start here" : "Start here"}</p>
+        <p className="do-kicker">{locale === "fr" ? "Commencez ici" : "Start here"}</p>
         <h2 className="font-display section-title mt-2 font-semibold text-[color:var(--text-strong)]">
           {locale === "fr" ? "Passez de la lecture à l'action en 3 clics" : "Move from reading to execution in 3 clicks"}
         </h2>
@@ -385,11 +385,11 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                   {idx === midIndex && (
                     <div className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--bg-soft)]/55 p-4">
                       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">
-                        {locale === "fr" ? "Bloc outils partenaire" : "Partner tools block"}
+                        {locale === "fr" ? "Outils utiles pour ce sujet" : "Tools that help with this"}
                       </p>
                       <p className="mt-2 text-sm text-[color:var(--text)]">
                         {locale === "fr"
-                          ? "Sélection d'outils utiles pour appliquer ce chapitre sans perdre de temps."
+                          ? "Sélection d'outils utiles pour appliquer cet article sans perdre de temps."
                           : "Curated tools that help you execute this chapter without friction."}
                       </p>
                       <div className="mt-3 flex flex-wrap gap-2">
@@ -649,7 +649,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
           <Newsletter compact locale={locale} source="blog_post_aside" />
         </aside>
       </div>
-      <BackToTop />
+      <BackToTop locale={locale} />
       <StickyPostCta locale={locale} />
       <ScrollCaptureCtaLazy locale={locale} />
     </article>

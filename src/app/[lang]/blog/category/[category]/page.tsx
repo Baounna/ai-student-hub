@@ -124,7 +124,7 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
         </h1>
         <p className="mt-4 max-w-2xl text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? `${posts.length} articles pour t'aider à passer de la théorie à des résultats visibles.`
+            ? `${posts.length} articles pour vous aider à passer de la théorie à des résultats visibles.`
             : `${posts.length} posts focused on turning theory into visible execution outcomes.`}
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
@@ -198,10 +198,10 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
           <h2 className="font-display mt-2 text-xl font-semibold text-[color:var(--text-strong)]">
             {bridgeTrack === "cs"
               ? locale === "fr"
-                ? "Relier vers les catégories informatique"
+                ? "Vers les catégories informatiques"
                 : "Bridge into computer science categories"
               : locale === "fr"
-                ? "Relier vers les catégories IA"
+                ? "Vers les catégories IA"
                 : "Bridge into AI categories"}
           </h2>
           <div className="mt-3 flex flex-wrap gap-2">

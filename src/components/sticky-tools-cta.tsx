@@ -55,7 +55,7 @@ export function StickyToolsCta({ locale, source }: StickyToolsCtaProps) {
           <div className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface-strong)] p-3 shadow-lg backdrop-blur">
             <div className="mb-2 flex items-center justify-between">
               <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[color:var(--muted)]">
-                {locale === "fr" ? "Outils -> action" : "Tools -> action"}
+                {locale === "fr" ? "Outils → action" : "Tools -> action"}
               </p>
               <button
                 type="button"

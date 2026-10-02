@@ -166,7 +166,7 @@ export default async function LocalizedBlogPage(
     },
     {
       key: "ai",
-      label: "AI",
+      label: locale === "fr" ? "IA" : "AI",
       count: trackCounts.ai
     },
     {
@@ -226,7 +226,7 @@ export default async function LocalizedBlogPage(
             <div className="mt-5 grid gap-3 sm:grid-cols-3">
               <article className="blog-signal-card rounded-xl p-3">
                 <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-                  {locale === "fr" ? "Confort lecture" : "Read comfort"}
+                  {locale === "fr" ? "Confort de lecture" : "Read comfort"}
                 </p>
                 <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
                   ~{averageReadMinutes} min
@@ -254,7 +254,7 @@ export default async function LocalizedBlogPage(
 
             <div className="mt-5">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[color:var(--primary)]">
-                {locale === "fr" ? "Split IA + cybersécurité" : "AI + Cybersecurity split"}
+                {locale === "fr" ? "Répartition IA + cybersécurité" : "AI + Cybersecurity split"}
               </p>
               <p className="mt-1 text-xs text-[color:var(--muted)]">
                 AI: {trackCounts.ai} • {locale === "fr" ? "Informatique" : "Computer Science"}: {trackCounts.cs} •{" "}
@@ -570,7 +570,7 @@ export default async function LocalizedBlogPage(
           </div>
 
           <div className="blog-aside-card rounded-2xl p-5">
-            <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">Categories</h3>
+            <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">{locale === "fr" ? "Catégories" : "Categories"}</h3>
             <div className="mt-3 flex flex-wrap gap-2">
               {categories.map((category) => (
                 <Link
@@ -585,7 +585,7 @@ export default async function LocalizedBlogPage(
           </div>
 
           <div className="blog-aside-card rounded-2xl p-5">
-            <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">Tags</h3>
+            <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">{locale === "fr" ? "Mots-clés" : "Tags"}</h3>
             <div className="mt-3 flex flex-wrap gap-2">
               {tags.map((tag) => (
                 <Link

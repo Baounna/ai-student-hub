@@ -375,7 +375,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
           </div>
         </aside>
       </div>
-      <BackToTop />
+      <BackToTop locale={locale} />
       <StickyToolsCta locale={locale} source="tools_detail" />
     </article>
   );

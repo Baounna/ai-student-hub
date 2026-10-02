@@ -302,7 +302,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                 </h2>
                 <p className="mt-2 text-sm text-[color:var(--text)]">
                   {locale === "fr"
-                    ? "Voyez les stages ouverts et utilisez les ressources pour shipper plus vite."
+                    ? "Voyez les stages ouverts et utilisez les ressources pour livrer plus vite."
                     : "See the open internships and use curated resources to ship faster."}
                 </p>
               </div>

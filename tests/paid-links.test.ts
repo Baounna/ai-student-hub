@@ -56,13 +56,26 @@ describe("paid-link disclosure", () => {
     expect(siteConfig.affiliateDisclosureText.fr).toMatch(/liens de parrainage/i);
   });
 
-  it("stops denying affiliation when a partner link is configured", async () => {
+  it("stops denying affiliation when a partner link carries a referral code", async () => {
     vi.stubEnv("AFFILIATE_1_NAME", "Some Host");
-    vi.stubEnv("AFFILIATE_1_URL", "https://example.com/signup");
+    vi.stubEnv("AFFILIATE_1_URL", "https://example.com/signup?ref=ai-student-hub");
     const { hasPaidLinks, siteConfig } = await loadConfig();
 
     expect(hasPaidLinks).toBe(true);
     expect(siteConfig.affiliateDisclosureText.en).not.toMatch(DENIES_AFFILIATION.en);
+  });
+
+  it("keeps denying affiliation for a partner link that earns nothing", async () => {
+    // The first version of the gate counted any configured partner as a paid
+    // link, which is the wrong direction to be wrong in: every partner URL on
+    // the site is a bare homepage with no referral parameter, so claiming a
+    // commission would have been the untruth. A card is not a commission.
+    vi.stubEnv("AFFILIATE_1_NAME", "Some Host");
+    vi.stubEnv("AFFILIATE_1_URL", "https://www.digitalocean.com/");
+    const { hasPaidLinks, siteConfig } = await loadConfig();
+
+    expect(hasPaidLinks).toBe(false);
+    expect(siteConfig.affiliateDisclosureText.en).toMatch(DENIES_AFFILIATION.en);
   });
 
   it("still lets an explicit disclosure text override both", async () => {
