@@ -338,8 +338,8 @@ export default async function LocalizedCompareIndexPage(
                   defaultValue={toolQueryRaw}
                   placeholder={
                     fr
-                      ? "Rechercher NotebookLM, Anki, Notion, Quizlet..."
-                      : "Search NotebookLM, Anki, Notion, Quizlet..."
+                      ? "Rechercher Gemini Notebook, Anki, Notion, Quizlet..."
+                      : "Search Gemini Notebook, Anki, Notion, Quizlet..."
                   }
                   className="search-input w-full"
                 />
@@ -398,8 +398,8 @@ export default async function LocalizedCompareIndexPage(
             ) : (
               <div className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 text-sm text-[color:var(--text)]">
                 {fr
-                  ? "Aucun outil ne correspond à votre recherche. Essayez NotebookLM, Anki, Notion, ou Quizlet."
-                  : "No tools match your search. Try NotebookLM, Anki, Notion, or Quizlet."}
+                  ? "Aucun outil ne correspond à votre recherche. Essayez Gemini Notebook, Anki, Notion, ou Quizlet."
+                  : "No tools match your search. Try Gemini Notebook, Anki, Notion, or Quizlet."}
               </div>
             )}
           </section>
@@ -482,8 +482,8 @@ export default async function LocalizedCompareIndexPage(
             </div>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {fr
-                ? "NotebookLM, plateformes cloud, outils dev et updates CS : le flux agent ajoute les nouveautés automatiquement."
-                : "NotebookLM, cloud platforms, dev tooling, and CS updates: the agent adds new releases automatically."}
+                ? "Gemini Notebook, plateformes cloud, outils dev et updates CS : le flux agent ajoute les nouveautés automatiquement."
+                : "Gemini Notebook, cloud platforms, dev tooling, and CS updates: the agent adds new releases automatically."}
             </p>
 
             {autoTools.length ? (

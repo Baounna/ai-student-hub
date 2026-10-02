@@ -299,8 +299,12 @@ export const recommendedTools: RecommendedTool[] = [
 
 const fallbackStudentStudyTools: StudentStudyTool[] = [
   {
-    name: "NotebookLM",
-    icon: "https://www.google.com/s2/favicons?domain=notebooklm.google&sz=256",
+    // Google renamed this. notebooklm.google now redirects to notebook.google,
+    // whose page is titled "Gemini Notebook" and does not contain the string
+    // "NotebookLM" anywhere -- so a reader clicking a card labelled NotebookLM
+    // landed somewhere that never says the word.
+    name: "Gemini Notebook",
+    icon: "https://www.google.com/s2/favicons?domain=notebook.google&sz=256",
     category: { en: "AI Study Assistant", fr: "Assistant d'étude IA" },
     summary: {
       en: "Upload lecture notes and PDFs, generate grounded summaries, and ask source-backed questions.",
@@ -311,7 +315,7 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
       fr: "Révision d'examens, récap des cours, et compréhension avec sources."
     },
     keywords: ["notes", "pdf", "summary", "revision", "research"],
-    href: "https://notebooklm.google/",
+    href: "https://notebook.google/",
     source: "Google"
   },
   {

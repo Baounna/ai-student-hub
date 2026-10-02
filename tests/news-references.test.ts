@@ -119,11 +119,23 @@ describe("the briefs actually in the repository", () => {
       .filter((brief) => brief.source.direct !== false)
       .map((brief) => `${brief.slug}: ${brief.source.name}`);
 
-    // The two remaining direct sources are named "OWASP API Security
-    // documentation" and "OpenTelemetry documentation and ecosystem guides",
-    // and each links that documentation's canonical root -- a name that
-    // describes what is at the other end.
+    // No brief claims a direct source any more. The last three to lose that
+    // status were the OWASP, OpenTelemetry and DeepMind links: each points at a
+    // real and relevant page, which is why they survived the first pass, but
+    // none of them says what the sentence its marker sat on claimed. "Does this
+    // link support THIS sentence" is the test, not "is this a good page".
     expect(vague).toEqual([]);
+  });
+
+  it("claims a direct source only where one was deliberately asserted", () => {
+    // Every brief currently links background rather than a document that
+    // sources its claims. That is not a rule -- a brief reporting a specific
+    // paper or release SHOULD cite it directly -- but it is the current state,
+    // and this records it so turning one back on is a decision somebody made
+    // rather than a default nobody noticed.
+    const direct = briefs.filter((brief) => brief.source.href && brief.source.direct !== false);
+
+    expect(direct.map((brief) => brief.slug)).toEqual([]);
   });
 
   it("never numbers a marker past the end of a real brief's reference list", () => {

@@ -77,7 +77,14 @@ export const newsBriefs: NewsBrief[] = [
     tags: ["benchmarks", "reasoning", "math", "multimodal", "coding"],
     source: {
       name: "Google DeepMind Gemini benchmark table (February 2026)",
-      href: "https://deepmind.google/models/gemini/"
+      href: "https://deepmind.google/models/gemini/",
+      // The brief's own summary says that page "is updated in place: it now
+      // lists a later generation of models against different benchmarks, so the
+      // February table is no longer there to check" -- and the page still
+      // rendered "1 cited source" with marker [1] on that very sentence. A
+      // publication cannot cite, as its direct source, a page it states in the
+      // same breath does not hold the thing.
+      direct: false
     },
     relatedPostSlugs: ["transformers-rag-and-agents-for-students", "deploy-ml-model-student-budget"],
     locales: {
@@ -464,7 +471,12 @@ export const newsBriefs: NewsBrief[] = [
     tags: ["security", "api", "backend"],
     source: {
       name: "OWASP API Security documentation",
-      href: "https://owasp.org/API-Security/"
+      href: "https://owasp.org/API-Security/",
+      // "More student teams are adding API security baselines before launch" is
+      // this publication's reading of a trend. OWASP's documentation is the
+      // right background for the subject and says nothing about what student
+      // teams are doing.
+      direct: false
     },
     relatedPostSlugs: ["security-checklist-for-student-ai-and-cs-projects", "backend-apis-for-ml-apps"],
     locales: {
@@ -575,7 +587,11 @@ export const newsBriefs: NewsBrief[] = [
     tags: ["observability", "backend", "performance"],
     source: {
       name: "OpenTelemetry documentation and ecosystem guides",
-      href: "https://opentelemetry.io/docs/"
+      href: "https://opentelemetry.io/docs/",
+      // Same shape: "Logs, metrics, and traces are now expected in serious
+      // student projects" is an observation about students, not something the
+      // OpenTelemetry docs assert.
+      direct: false
     },
     relatedPostSlugs: ["observability-for-student-engineers", "system-design-for-student-ai-projects"],
     locales: {

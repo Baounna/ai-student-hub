@@ -232,8 +232,8 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 <p className="do-kicker">{locale === "fr" ? "Outils de révision" : "Study stack"}</p>
                 <h2 className="font-display section-title mt-1 font-semibold text-[color:var(--text-strong)]">
                   {locale === "fr"
-                    ? "NotebookLM, Anki et outils utiles pour étudiants"
-                    : "NotebookLM, Anki, and high-utility student tools"}
+                    ? "Gemini Notebook, Anki et outils utiles pour étudiants"
+                    : "Gemini Notebook, Anki, and high-utility student tools"}
                 </h2>
               </div>
               <Link href={`/${locale}/compare`} className="btn-secondary">
