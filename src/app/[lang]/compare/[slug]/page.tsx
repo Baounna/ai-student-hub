@@ -57,6 +57,29 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
   const comparison = getLocalizedComparison(params.slug, params.lang);
 
   if (!comparison) {
+    /**
+     * This title never reaches a reader, and the same is true of any title set
+     * here.
+     *
+     * generateMetadata runs before the page calls notFound(), but Next discards
+     * what it returned once that throws, and the boundary takes its metadata
+     * from the layout instead. Measured on a production build:
+     * /en/compare/not-a-tool serves <title>AI and Cybersecurity News (EN) |
+     * AICyber</title> -- the site default -- not the string on this line.
+     *
+     * So every /blog/<bad-slug> and /news/<bad-slug> announces itself in the
+     * browser tab as the home page, and that cannot be fixed from here. The one
+     * supported mechanism is global-not-found.js, which is experimental, needs a
+     * config flag, and bypasses the layout entirely -- which would cost the
+     * locale-aware 404 body, the header and the footer. Not worth a tab title.
+     *
+     * The root boundary is different and does work: an unmatched URL renders
+     * src/app/not-found.tsx, whose generateMetadata is honoured, so /fr/nope
+     * correctly reads "Page introuvable".
+     *
+     * Left in place so the next person to notice finds this note instead of
+     * writing the same dead fix again. I wrote it once already.
+     */
     return { title: "Tools Guide Not Found" };
   }
 
