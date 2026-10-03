@@ -300,6 +300,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         <div className={compact ? "col-span-2" : "sm:col-span-3"}>
           <TurnstileWidget
             locale={locale}
+            compact={compact}
             onToken={(token) => {
               setBotToken(token);
               if (token) setVerificationUnavailable(false);

@@ -25,6 +25,15 @@ declare global {
 
 type TurnstileWidgetProps = {
   locale: Locale;
+  /**
+   * The footer and sidebar forms sit in a narrow card.
+   *
+   * Turnstile's default widget is a fixed ~300px box. In the compact newsletter
+   * card that is wider than its own container, so the Cloudflare panel hung out
+   * past the card's right edge -- visible on the live site. "compact" is 150px
+   * wide and fits; the full-width form keeps the normal one.
+   */
+  compact?: boolean;
   /** Called with the token when the challenge passes, and with "" when it expires or fails. */
   onToken: (token: string) => void;
   /**
@@ -56,7 +65,7 @@ type TurnstileWidgetProps = {
  *
  * Explicit render, so the callbacks exist and the form can gate on them.
  */
-export function TurnstileWidget({ locale, onToken, onUnavailable }: TurnstileWidgetProps) {
+export function TurnstileWidget({ locale, compact = false, onToken, onUnavailable }: TurnstileWidgetProps) {
   const holder = useRef<HTMLDivElement | null>(null);
   const widgetId = useRef<string | undefined>(undefined);
   // Kept in a ref so the render effect below does not re-run (and re-create the
@@ -91,6 +100,7 @@ export function TurnstileWidget({ locale, onToken, onUnavailable }: TurnstileWid
           sitekey: turnstileSiteKey,
           theme: "auto",
           language: locale,
+          size: compact ? "compact" : "flexible",
           callback: (token: string) => report.current(token),
           // A token is good for 300 seconds. Someone who fills the form slowly
           // must not be left holding an expired one and told to try again.
@@ -126,14 +136,17 @@ export function TurnstileWidget({ locale, onToken, onUnavailable }: TurnstileWid
         widgetId.current = undefined;
       }
     };
-  }, [locale]);
+  }, [locale, compact]);
 
   if (!botProtectionEnabled) return null;
 
   return (
-    <div className="mt-2">
+    // max-w-full and the overflow guard are deliberate: the widget's size is
+    // decided by Cloudflare's own iframe, so the container has to be the thing
+    // that refuses to be pushed wider than the card it sits in.
+    <div className="mt-2 max-w-full overflow-hidden">
       <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" strategy="afterInteractive" />
-      <div ref={holder} />
+      <div ref={holder} className="max-w-full" />
     </div>
   );
 }
