@@ -42,6 +42,26 @@ export function StickyToolsCta({ locale, source }: StickyToolsCtaProps) {
     };
   }, [dismissedMobile]);
 
+  /**
+   * Publish the same state the article CTA publishes.
+   *
+   * globals.css carries a documented rule -- "one floating control at a time on
+   * a phone" -- that stands the back-to-top pill down while a sticky card is on
+   * screen. The article card sets data-sticky-cta and the rule works there.
+   * This card never set it, so on every comparison guide both floated at once
+   * and overlapped by 42x33px. Lowering this card's z-index stopped it
+   * swallowing the pill's taps; it did not stop them sharing the corner. Now
+   * the rule applies here too, which is what it was written for.
+   */
+  useEffect(() => {
+    const root = document.documentElement;
+    if (showMobile && !dismissedMobile) root.dataset.stickyCta = "1";
+    else delete root.dataset.stickyCta;
+    return () => {
+      delete root.dataset.stickyCta;
+    };
+  }, [showMobile, dismissedMobile]);
+
   return (
     <>
       {!dismissedMobile ? (

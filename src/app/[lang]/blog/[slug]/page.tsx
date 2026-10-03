@@ -533,7 +533,11 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                 </article>
               ))}
             </div>
-            <section className="mt-4 overflow-x-auto rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)]">
+            {/* edge-fade-x: the table is 640px wide inside a 375px viewport, so
+                265px of it -- including the whole "Try" column -- sits past the
+                right edge, and the scroller's edge is flush with the card border
+                so nothing suggests it moves. */}
+            <section className="edge-fade-x mt-4 overflow-x-auto rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)]">
               <table className="min-w-[640px] w-full text-left text-sm">
                 <thead className="bg-[color:var(--bg-soft)]/45 text-[color:var(--text)]">
                   <tr>

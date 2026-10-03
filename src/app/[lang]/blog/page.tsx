@@ -470,7 +470,14 @@ export default async function LocalizedBlogPage(
 
           {streamPosts.map((post) => (
             <article key={post.slug} className="blog-stream-card card-hover group overflow-hidden rounded-2xl p-4 md:p-5">
-              <div className="grid gap-4 md:grid-cols-[260px,1fr] md:items-start">
+              {/* Side-by-side only once the text column has room.
+                  md: is 768px, where the page grid already takes its share and
+                  this card resolved to 260px of image beside 193px of text: 23
+                  of 24 titles wrapped to seven or eight lines, one or two words
+                  each in a display serif, with 527px of blank space down the
+                  side. The French category pill wrapped inside its own pill.
+                  Stacked below lg, side by side above it. */}
+              <div className="grid gap-4 lg:grid-cols-[260px,1fr] lg:items-start">
                 <Link href={`/${locale}/blog/${post.slug}`} className="media-frame group relative aspect-[16/10] rounded-xl">
                   <Image
                     src={coverImageUrl(post.slug, post.category, locale)}

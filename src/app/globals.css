@@ -727,6 +727,14 @@ html[data-content-width="wide"] {
     font-weight: 700;
     color: var(--primary);
     text-decoration: none;
+    /*
+     * A 12x14px target, five per article, and the thing a reader taps to check
+     * a claim -- which is the whole promise of the page. The padding widens the
+     * tap area without moving the glyph, and the negative margin keeps it from
+     * pushing the surrounding words apart.
+     */
+    padding: 0.5rem 0.35rem;
+    margin: -0.5rem -0.1rem;
   }
 
   .reference-host-pill {
@@ -1139,4 +1147,44 @@ h4 > a:only-child,
 li > a.do-link:only-child,
 div > a.do-link:only-child {
   padding-block: 0.35rem;
+}
+
+/*
+ * A fade on the right edge of a horizontal scroller, so the chips past the
+ * edge look like chips past the edge.
+ *
+ * The mobile nav strip scrolls 103px further than it shows in English and 130px
+ * in French, so "Tools" and "About" are simply absent from the screen with
+ * nothing to suggest otherwise. A snap scroller with a clean cut at the
+ * viewport edge reads as the end of the list.
+ *
+ * mask-image rather than an overlay element: it fades the content itself, so it
+ * cannot sit on top of a chip and swallow a tap, and it costs no DOM. The fade
+ * is removed once the scroller is at its end, via the scroll-driven animation
+ * below, so the last chip is never dimmed. Browsers without animation-timeline
+ * keep a static fade, which is the right fallback: a hint that is always on is
+ * better than none.
+ */
+.edge-fade-x {
+  mask-image: linear-gradient(to right, #000 85%, transparent 100%);
+}
+
+@supports (animation-timeline: scroll(x)) {
+  .edge-fade-x {
+    animation: edgeFadeOut linear both;
+    animation-timeline: scroll(x);
+    animation-range: calc(100% - 60px) 100%;
+  }
+
+  @keyframes edgeFadeOut {
+    to {
+      mask-image: linear-gradient(to right, #000 100%, transparent 100%);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .edge-fade-x {
+    animation: none;
+  }
 }

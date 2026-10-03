@@ -209,7 +209,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
 
         <div className="border-t border-[color:var(--border)] bg-[color:var(--surface)]/35 md:hidden">
           <div className="mx-auto max-w-6xl px-4 py-2">
-            <div className="flex snap-x snap-mandatory items-center gap-2 overflow-x-auto scroll-smooth pb-1">
+            <div className="edge-fade-x flex snap-x snap-mandatory items-center gap-2 overflow-x-auto scroll-smooth pb-1">
               <NavTabLink
                 href={`/${locale}/news`}
                 label={dict.nav.news}
@@ -253,27 +253,31 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                 className="snap-start"
               />
             </div>
-            <div className="mt-2 grid grid-cols-2 gap-2">
+            {/* One row, not two.
+                The language toggle and the settings button had a 44px row to
+                themselves, right-aligned, with roughly 230px of empty space
+                beside them -- on a header already taking 270px, a third of a
+                360px screen, before the reader sees a single word of the page.
+                They sit beside the two actions now. */}
+            <div className="mt-2 flex items-center gap-2">
               <TrackableAnchor
                 href={leadMagnetHref}
                 event="lead_magnet_click"
                 meta={{ page: "mobile_nav_cta", locale }}
-                className="rounded-xl bg-[color:var(--primary)] px-3 py-2 text-center text-xs font-semibold text-[color:var(--primary-foreground)]"
+                className="flex-1 rounded-xl bg-[color:var(--primary)] px-3 py-2 text-center text-xs font-semibold text-[color:var(--primary-foreground)]"
               >
                 {dict.nav.stages}
               </TrackableAnchor>
               <Link
                 href={donateHref}
-                className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)]/70 px-3 py-2 text-center text-xs text-[color:var(--text)]"
+                className="flex-1 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)]/70 px-3 py-2 text-center text-xs text-[color:var(--text)]"
               >
                 {locale === "fr" ? "Don" : "Donate"}
               </Link>
-            </div>
-            <div className="mt-2 flex items-center justify-end gap-2">
               <Link
                 href={otherLocaleHref}
                 hrefLang={otherLocale}
-                className="tap-target rounded-lg border border-[color:var(--border)] px-2.5 py-1 text-xs font-semibold text-[color:var(--text)]"
+                className="tap-target shrink-0 rounded-lg border border-[color:var(--border)] px-2.5 py-1 text-xs font-semibold text-[color:var(--text)]"
                 aria-label={locale === "fr" ? "Read in English" : "Lire en français"}
               >
                 {otherLocale.toUpperCase()}
