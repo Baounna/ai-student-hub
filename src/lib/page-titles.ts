@@ -21,3 +21,23 @@ export function comparePageTitle(locale: Locale): string {
     ? "Outils IA + cybersécurité pratiques pour le travail réel"
     : "Practical AI + Cybersecurity Tools for Real Work";
 }
+
+/**
+ * Three more pages that hold their title as a local constant.
+ *
+ * Same problem as /stages and /compare, found the same way: their social
+ * previews were silently falling back to the generic brand card, because
+ * src/lib/og-titles.ts could not see a title that lives inside a page module.
+ * Six pages across the two locales, each sharing as an untitled card.
+ */
+export function liveNewsPageTitle(locale: Locale): string {
+  return locale === "fr" ? "Flux live AI + Cybersecurity" : "Live AI + Cybersecurity stream";
+}
+
+export function donatePageTitle(locale: Locale): string {
+  return locale === "fr" ? "Faire un don" : "Donate";
+}
+
+export function careerGuidePageTitle(locale: Locale): string {
+  return locale === "fr" ? "Guide Carrière IA" : "AI Career Guide";
+}

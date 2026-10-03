@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { donatePageTitle } from "@/lib/page-titles";
 import Link from "next/link";
 import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
@@ -14,7 +15,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
-  const title = fr ? "Faire un don" : "Donate";
+  const title = donatePageTitle(fr ? "fr" : "en");
   const description = fr
     ? "Soutiens AI and Cybersecurity News pour financer du contenu pratique IA/CS pour étudiants."
     : "Support AI and Cybersecurity News and fund practical AI + Cybersecurity education content for students.";

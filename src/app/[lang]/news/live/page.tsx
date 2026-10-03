@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { liveNewsPageTitle } from "@/lib/page-titles";
 import { topicLabel } from "@/content/news";
 import Link from "next/link";
 import { EditorialTrust } from "@/components/editorial-trust";
@@ -50,7 +51,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
-  const title = fr ? "Flux live AI + Cybersecurity" : "Live AI + Cybersecurity stream";
+  const title = liveNewsPageTitle(fr ? "fr" : "en");
   const description = fr
     ? "Mises à jour IA/CS automatiques avec liens source directs."
     : "Automatic AI + Cybersecurity updates with direct source links.";

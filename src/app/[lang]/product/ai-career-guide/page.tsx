@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { careerGuidePageTitle } from "@/lib/page-titles";
 import Link from "next/link";
 import { Newsletter } from "@/components/newsletter";
 import { isLocale, type Locale } from "@/i18n/config";
@@ -29,7 +30,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   if (!isLocale(params.lang)) return {};
 
   const fr = params.lang === "fr";
-  const title = fr ? "Guide Carrière IA" : "AI Career Guide";
+  const title = careerGuidePageTitle(fr ? "fr" : "en");
   const description = fr
     ? "Ce guide n'est pas encore écrit. Voici ce qui existe déjà, et gratuitement."
     : "This guide is not written yet. Here is what already exists, free.";

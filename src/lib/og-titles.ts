@@ -7,7 +7,13 @@ import { categoryName } from "@/lib/categories";
 import { getAllCategories, getAllTags } from "@/content/posts";
 import { sanitizeTextInput } from "@/lib/input";
 import { siteConfig } from "@/config/site";
-import { comparePageTitle, stagesPageTitle } from "@/lib/page-titles";
+import {
+  careerGuidePageTitle,
+  comparePageTitle,
+  donatePageTitle,
+  liveNewsPageTitle,
+  stagesPageTitle
+} from "@/lib/page-titles";
 
 /**
  * Every headline this site can legitimately ask /api/og to draw.
@@ -76,6 +82,18 @@ function buildKnownTitles(): Set<string> {
     }
     add(stagesPageTitle(locale));
     add(comparePageTitle(locale));
+    add(liveNewsPageTitle(locale));
+    add(donatePageTitle(locale));
+    add(careerGuidePageTitle(locale));
+    // The three legal pages. Their titles are plain strings in their own
+    // modules; listed here rather than exported, because unlike the pages above
+    // nothing else needs to know them.
+    add(locale === "fr" ? "Politique de confidentialité" : "Privacy Policy");
+    add(locale === "fr" ? "Conditions d'utilisation" : "Terms of Use");
+    add(locale === "fr" ? "Politique de liens" : "Link Policy");
+    // Feature-flagged off and noindex today, so nobody shares it -- but it is
+    // one line, and it is correct the day the flag goes on.
+    add(locale === "fr" ? "Sprint croissance 14 jours" : "14-day growth sprint");
   }
 
   return titles;

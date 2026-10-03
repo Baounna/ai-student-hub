@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/lib/seo";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
@@ -23,9 +24,13 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       title,
       description,
       url: `/${params.lang}/privacy`,
-      type: "article"
+      type: "article",
+      // Without these, sharing the privacy policy or the link policy produced a
+      // blank card. The og:url on these three was fixed two commits ago and the
+      // image was missed.
+      images: [{ url: ogImageUrl(title), width: 1200, height: 630, alt: title }]
     },
-    twitter: { card: "summary", title, description }
+    twitter: { card: "summary_large_image", title, description, images: [ogImageUrl(title)] }
   };
 }
 
