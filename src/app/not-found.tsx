@@ -64,7 +64,7 @@ export default async function NotFound() {
     <main
       id="main-content"
       tabIndex={-1}
-      className="mx-auto flex min-h-[70vh] max-w-3xl flex-col items-center justify-center px-6 text-center"
+      className="anchor-offset mx-auto flex min-h-[70vh] max-w-3xl flex-col items-center justify-center px-6 text-center"
     >
       <p className="do-kicker">404</p>
       <h1 className="font-display mt-3 text-4xl font-bold text-[color:var(--text-strong)] md:text-5xl">

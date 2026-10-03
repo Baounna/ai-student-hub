@@ -297,7 +297,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
           the checkbox sat off-screen behind someone who had scrolled to the
           email box. */}
       {botProtectionEnabled ? (
-        <div className={compact ? "col-span-2" : "sm:col-span-3"}>
+        <div className={`min-w-0 ${compact ? "col-span-2" : "sm:col-span-3"}`}>
           <TurnstileWidget
             locale={locale}
             compact={compact}

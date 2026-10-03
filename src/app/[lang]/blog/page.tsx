@@ -537,7 +537,7 @@ export default async function LocalizedBlogPage(
         </div>
 
         <aside
-          className="space-y-4 md:sticky md:top-36 md:h-fit"
+          className="space-y-4 md:sticky md:top-52 md:h-fit"
           aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
         >
           <EditorialTrust locale={locale} />

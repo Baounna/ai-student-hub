@@ -449,7 +449,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
         </div>
 
         <aside
-          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          className="space-y-4 lg:sticky lg:top-52 lg:h-fit"
           aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
         >
           <EditorialTrust locale={locale} compact />

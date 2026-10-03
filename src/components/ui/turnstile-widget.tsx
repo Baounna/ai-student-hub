@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Script from "next/script";
 import type { Locale } from "@/i18n/config";
 
@@ -66,6 +66,26 @@ type TurnstileWidgetProps = {
  * Explicit render, so the callbacks exist and the form can gate on them.
  */
 export function TurnstileWidget({ locale, compact = false, onToken, onUnavailable }: TurnstileWidgetProps) {
+  /**
+   * Tracks the reader's theme so the widget can be rebuilt when they switch.
+   *
+   * Reading data-theme once at render fixes the first paint and leaves a white
+   * panel behind the moment someone uses the theme toggle -- the same bug, one
+   * interaction later. Cloudflare gives no way to recolour a live widget, so it
+   * is removed and rendered again, which is cheap and happens only on an
+   * explicit toggle.
+   */
+  const [siteTheme, setSiteTheme] = useState<"light" | "dark">("light");
+
+  useEffect(() => {
+    const read = () =>
+      setSiteTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light");
+    read();
+    const observer = new MutationObserver(read);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+    return () => observer.disconnect();
+  }, []);
+
   const holder = useRef<HTMLDivElement | null>(null);
   const widgetId = useRef<string | undefined>(undefined);
   // Kept in a ref so the render effect below does not re-run (and re-create the
@@ -80,6 +100,9 @@ export function TurnstileWidget({ locale, compact = false, onToken, onUnavailabl
   useEffect(() => {
     if (!botProtectionEnabled) return;
     let cancelled = false;
+    // A theme change re-runs this effect; the cleanup below removes the old
+    // widget, and widgetId must be clear so a new one is created.
+    widgetId.current = undefined;
 
     // The script tag below is async, so poll briefly for the global rather than
     // racing it. Cloudflare's api.js defines window.turnstile on load.
@@ -98,7 +121,18 @@ export function TurnstileWidget({ locale, compact = false, onToken, onUnavailabl
       try {
         widgetId.current = window.turnstile.render(holder.current, {
           sitekey: turnstileSiteKey,
-          theme: "auto",
+          /*
+           * The site's theme, not the operating system's.
+           *
+           * "auto" makes Cloudflare resolve the theme from
+           * prefers-color-scheme, and this site's theme is a data-theme
+           * attribute the reader chooses. So a reader on the dark site with a
+           * light OS got a bright white Cloudflare panel inside a dark footer
+           * card, on every page. Verified by A/B on one URL with data-theme
+           * fixed to dark and only the OS setting changed: white in one arm,
+           * dark in the other.
+           */
+          theme: siteTheme,
           language: locale,
           size: compact ? "compact" : "flexible",
           callback: (token: string) => report.current(token),
@@ -136,17 +170,29 @@ export function TurnstileWidget({ locale, compact = false, onToken, onUnavailabl
         widgetId.current = undefined;
       }
     };
-  }, [locale, compact]);
+  }, [locale, compact, siteTheme]);
 
   if (!botProtectionEnabled) return null;
 
   return (
-    // max-w-full and the overflow guard are deliberate: the widget's size is
-    // decided by Cloudflare's own iframe, so the container has to be the thing
-    // that refuses to be pushed wider than the card it sits in.
-    <div className="mt-2 max-w-full overflow-hidden">
+    /*
+     * min-w-0 is the load-bearing class here, not overflow-hidden.
+     *
+     * Turnstile's widget has an intrinsic minimum width -- 300px for the normal
+     * size, 150px compact -- and a grid item defaults to min-width:auto, so that
+     * floor propagates outward and makes the whole column at least that wide.
+     * overflow-hidden clipped the paint and left the measurement, so the form
+     * stayed 34px wider than its card at 360 and 390: the email field, the
+     * Subscribe button and the widget were all sliced by the card's rounded
+     * edge, and every news brief gained 20px of horizontal page overflow that
+     * body{overflow-x:hidden} then made unreachable rather than scrollable.
+     *
+     * min-w-0 lets the cell be narrower than its content, so the grid sizes to
+     * the card and the clip applies only to the widget itself.
+     */
+    <div className="mt-2 min-w-0 max-w-full overflow-hidden">
       <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" strategy="afterInteractive" />
-      <div ref={holder} className="max-w-full" />
+      <div ref={holder} className="min-w-0 max-w-full" />
     </div>
   );
 }

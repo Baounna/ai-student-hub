@@ -273,7 +273,10 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
       </header>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
-        <div className="space-y-8">
+        {/* min-w-0, like blog/[slug], resources and news/auto already had. Without
+            it this column sized to its widest child and pushed every section
+            20px past the viewport at 360. */}
+        <div className="min-w-0 space-y-8">
           <section id="summary" className="anchor-offset reading-panel rounded-3xl p-6 md:p-8">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
               {locale === "fr" ? "Ce qui change" : "What changed"}
@@ -366,7 +369,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             </p>
             <ol className="mt-4 space-y-2 text-sm text-[color:var(--text)]">
               {references.map((reference, index) => (
-                <li key={`${reference.href}-${index}`} id={`reference-${index + 1}`} className="leading-7">
+                <li key={`${reference.href}-${index}`} id={`reference-${index + 1}`} className="anchor-offset leading-7">
                   <span className="mr-2 text-[color:var(--muted)]">[{index + 1}]</span>
                   {reference.href ? (
                     <a href={reference.href} target="_blank" rel="noopener noreferrer nofollow" className="do-link">
@@ -448,7 +451,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
         </div>
 
         <aside
-          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          className="space-y-4 lg:sticky lg:top-52 lg:h-fit"
           aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
         >
           <ArticleToc title={locale === "fr" ? "Dans cette page" : "On this page"} items={tocItems} className="mt-0" />

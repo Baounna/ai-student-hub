@@ -340,7 +340,7 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
         </div>
 
         <aside
-          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          className="space-y-4 lg:sticky lg:top-52 lg:h-fit"
           aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
         >
           <ArticleToc title={fr ? "Dans cette page" : "On this page"} items={tocItems} className="mt-0" />

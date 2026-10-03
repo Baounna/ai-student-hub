@@ -35,7 +35,15 @@ export function ReadingProgress() {
   }, []);
 
   return (
-    <div className="pointer-events-none fixed inset-x-0 top-0 z-40 h-0.5 bg-transparent">
+    /* z-[60], above the header.
+     *
+     * This was z-40 and the header is z-50 with an opaque background, so the
+     * 2px bar was painted underneath it and has been invisible at every desktop
+     * width since the header was raised from z-30 to z-50 to fix a search
+     * dropdown. Proved by forcing the z-index in a live frame: the green bar
+     * appears. The skip link is also z-[60] and they never coexist, since the
+     * skip link only has a box while focused. */
+    <div className="pointer-events-none fixed inset-x-0 top-0 z-[60] h-0.5 bg-transparent">
       <div
         className="h-full bg-[color:var(--primary)] transition-[width] duration-150"
         style={{ width: `${progress}%` }}

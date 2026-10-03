@@ -196,7 +196,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
           clipped. Verdict cards ran off-screen and the price column showed as
           "$", "si", "co" with no way for a reader to reach the rest. */}
       <div className="mt-8 grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
-        <div className="space-y-8">
+        <div className="min-w-0 space-y-8">
           <div className="media-frame group relative aspect-[16/10] rounded-2xl">
             <Image
               src={coverImageUrl(params.slug, "Cloud/DevOps", params.lang)}
@@ -373,7 +373,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
         </div>
 
         <aside
-          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          className="space-y-4 lg:sticky lg:top-52 lg:h-fit"
           aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
         >
           <ArticleToc title={fr ? "Dans cette page" : "On this page"} items={tocItems} className="mt-0" />

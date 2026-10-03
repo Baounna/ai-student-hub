@@ -449,16 +449,12 @@ html[data-content-width="wide"] {
     box-shadow: var(--elevated-shadow);
   }
 
-  .do-hero::after {
-    content: "";
-    position: absolute;
-    inset: -30% -10%;
-    background: none;
-    opacity: 0.5;
-    pointer-events: none;
-    animation: heroDrift 15s var(--ease-smooth) infinite alternate;
-    z-index: 0;
-  }
+  /*
+   * The decorative hero layer was removed, and this is what was left: a
+   * pseudo-element with background:none that painted nothing and ran a 15s
+   * infinite animation on every hero and the footer CTA block, on every page.
+   * Invisible, and still work for the compositor on each one.
+   */
 
   .do-hero > * {
     position: relative;
@@ -969,8 +965,22 @@ html[data-content-width="wide"] {
   }
 }
 
+/*
+ * Clearance for the sticky header, measured rather than guessed.
+ *
+ * This reserved 7.5rem (120px) against a header whose bottom edge is 187.75px
+ * on desktop, so every in-page anchor landed with 68px of its own target
+ * underneath the header. Measured across six anchors on an article and three on
+ * a guide: between 34 and 66px of the heading text itself was hidden, and with
+ * a line-height around 27px several headings were invisible entirely -- "Bridge
+ * into computer science" among them, with the reader dropped mid-paragraph.
+ *
+ * 12.5rem is 200px, the header's 187.75px plus a little air. Below 768px the
+ * header is not sticky, so the phone value only needs to clear the content that
+ * is actually fixed there.
+ */
 .anchor-offset {
-  scroll-margin-top: 7.5rem;
+  scroll-margin-top: 12.5rem;
 }
 
 @media (max-width: 768px) {

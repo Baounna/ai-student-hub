@@ -291,7 +291,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
             reader's focus never left the header and the reader had to walk the
             whole nav again. A negative tabindex makes <main> a valid focus
             target without adding a tab stop. */}
-        <main id="main-content" tabIndex={-1} lang={locale} className="pb-24 md:pb-0 lg:min-w-0 lg:flex-1">
+        <main id="main-content" tabIndex={-1} lang={locale} className="anchor-offset pb-24 md:pb-0 lg:min-w-0 lg:flex-1">
           {children}
         </main>
       </div>
@@ -323,7 +323,19 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
           </section>
         </div>
 
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 md:grid-cols-4">
+        {/*
+          * Two columns at tablet width, four only once there is room.
+          *
+          * md: is 768px, and four columns there left 150px each after the
+          * padding and gaps -- which broke four things at once on all 278
+          * pages: the contact address is 190px wide and ran flush into the
+          * newsletter card beside it, the footer email input shrank to 33px so
+          * its placeholder rendered as the single letter "y" (and to nothing at
+          * all in French), the compact Turnstile had 50px of the Cloudflare
+          * panel cut off, and the French newsletter heading wrapped to six
+          * lines.
+          */}
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="font-display text-xl font-semibold text-[color:var(--text-strong)]">{dict.footer.title}</p>
             <p className="mt-3 text-sm text-[color:var(--muted)]">{dict.footer.description}</p>
@@ -380,7 +392,9 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">{dict.footer.contact}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
-                <a href={`mailto:${siteConfig.contactEmail}`} className="transition hover:opacity-70">
+                {/* break-all: the address is one unbreakable 190px token, so
+                    in a narrow column it overran rather than wrapped. */}
+                <a href={`mailto:${siteConfig.contactEmail}`} className="break-all transition hover:opacity-70">
                   {siteConfig.contactEmail}
                 </a>
               </li>

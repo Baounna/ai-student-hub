@@ -261,7 +261,7 @@ export default async function LocalizedCompareIndexPage(
       </section>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
-        <div className="space-y-8">
+        <div className="min-w-0 space-y-8">
           {starterComparison ? (
             <section className="blog-aside-card rounded-2xl p-6">
               <p className="do-kicker">{fr ? "Guide prioritaire" : "Priority guide"}</p>
@@ -564,7 +564,7 @@ export default async function LocalizedCompareIndexPage(
         </div>
 
         <aside
-          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          className="space-y-4 lg:sticky lg:top-52 lg:h-fit"
           aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
         >
           <EditorialTrust locale={locale} compact />

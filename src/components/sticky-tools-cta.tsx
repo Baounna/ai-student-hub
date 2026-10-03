@@ -46,7 +46,13 @@ export function StickyToolsCta({ locale, source }: StickyToolsCtaProps) {
     <>
       {!dismissedMobile ? (
         <div
-          className={`fixed inset-x-4 bottom-[calc(4.8rem+env(safe-area-inset-bottom))] z-40 transition duration-300 md:hidden ${
+          // z-30, matching sticky-post-cta. At z-40 this sat at the same
+          // stacking level as the back-to-top button and later in the DOM, so
+          // it covered 100% of it on every comparison guide at every phone
+          // width -- elementsFromPoint on the button returned this card's
+          // "Guide" link instead. The article variant was already z-30, which
+          // is why /blog/[slug] never showed the fault.
+          className={`fixed inset-x-4 bottom-[calc(4.8rem+env(safe-area-inset-bottom))] z-30 transition duration-300 md:hidden ${
             showMobile ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
           }`}
           aria-hidden={!showMobile}

@@ -163,12 +163,23 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
         <div className="min-w-0 space-y-6">
+          {/* Two columns only when there are two things to put in them. With one
+              payment method configured -- which is the live state -- a fixed
+              two-column grid left a 388px empty column beside a card labelled
+              "Method 1" with no method 2, reading as unfinished rather than
+              deliberate. */}
           {uniquePrimaryMethods.length > 0 ? (
-            <section className="grid gap-4 md:grid-cols-2">
+            <section className={`grid gap-4 ${uniquePrimaryMethods.length > 1 ? "md:grid-cols-2" : ""}`}>
               {uniquePrimaryMethods.map((method, index) => (
                 <article key={method.name} className="card-hover glass rounded-2xl p-5">
                   <p className="text-xs uppercase tracking-[0.16em] text-[color:var(--muted)]">
-                    {fr ? `Méthode ${index + 1}` : `Method ${index + 1}`}
+                    {uniquePrimaryMethods.length > 1
+                      ? fr
+                        ? `Méthode ${index + 1}`
+                        : `Method ${index + 1}`
+                      : fr
+                        ? "Comment soutenir"
+                        : "How to support"}
                   </p>
                   <h2 className="font-display mt-1 text-xl font-semibold text-[color:var(--text-strong)]">{method.name}</h2>
                   <p className="mt-2 text-sm text-[color:var(--text)]">{method.detail}</p>
@@ -315,7 +326,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
         </div>
 
         <aside
-          className="space-y-4 lg:sticky lg:top-32 lg:h-fit"
+          className="space-y-4 lg:sticky lg:top-52 lg:h-fit"
           aria-label={locale === "fr" ? "Contenu complémentaire" : "Related content"}
         >
           <EditorialTrust locale={locale} compact />
