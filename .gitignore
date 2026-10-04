@@ -43,7 +43,3 @@ watchdog-report.md
 # under examples/ so the pipeline's output shape is still visible.
 docs/agent/drafts/*.md
 !docs/agent/drafts/examples/
-
-# Written by the repair agent inside a workflow run; never part of the project.
-repair-diagnosis.md
-repair-outcome.txt

@@ -508,9 +508,6 @@ function cadenceHours(cron) {
   return Math.max(1, Math.round(24 / slots));
 }
 
-/** The newest failed run, for the repair step to read logs from. */
-let firstFailedRun = null;
-
 async function checkWorkflowHealth() {
   try {
     // Default branch only. Without --branch this counted runs from every branch,
@@ -545,7 +542,7 @@ async function checkWorkflowHealth() {
             "--workflow", file,
             "--branch", process.env.WATCHDOG_BRANCH || "main",
             "--limit", "1",
-            "--json", "workflowName,conclusion,status,createdAt,databaseId"
+            "--json", "workflowName,conclusion,status,createdAt"
           ],
           { maxBuffer: 2 * 1024 * 1024 }
         );
@@ -564,14 +561,9 @@ async function checkWorkflowHealth() {
       return;
     }
 
-    const failingRuns = [...latest.values()].filter((r) => r.conclusion === "failure");
-    const failing = failingRuns.map((r) => r.workflowName);
-    // Kept so the repair step can fetch that run's logs. The newest failure is
-    // the one worth diagnosing; older ones are usually the same cause.
-    if (failingRuns.length) {
-      failingRuns.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
-      firstFailedRun = failingRuns[0];
-    }
+    const failing = [...latest.values()]
+      .filter((r) => r.conclusion === "failure")
+      .map((r) => r.workflowName);
 
     record(
       "Workflow health",
@@ -673,16 +665,6 @@ async function run() {
     await fs.appendFile(
       process.env.GITHUB_OUTPUT,
       `needs_lockfile_repair=${failed.some((r) => r.fixable) ? "true" : "false"}\n`
-    );
-    // The repair agent runs only when a workflow is actually failing, so a
-    // healthy day costs nothing.
-    await fs.appendFile(
-      process.env.GITHUB_OUTPUT,
-      `failed_workflow=${firstFailedRun ? firstFailedRun.workflowName : ""}\n`
-    );
-    await fs.appendFile(
-      process.env.GITHUB_OUTPUT,
-      `failed_run_id=${firstFailedRun ? firstFailedRun.databaseId || "" : ""}\n`
     );
   }
   await fs.writeFile(path.join(process.cwd(), "watchdog-report.md"), `${report}\n`, "utf8");
