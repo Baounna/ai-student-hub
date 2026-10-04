@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-03T11:36:50.878Z",
+  "updatedAt": "2026-10-04T21:21:28.129Z",
   "items": [
+    {
+      "slug": "20261003-the-agent-said-it-was-done-the-database-disagreed-89764eae",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "publishedAt": "2026-10-03T22:56:48.000Z",
+      "discoveredAt": "2026-10-04T21:21:28.129Z",
+      "locales": {
+        "en": {
+          "title": "The Agent Said It Was Done. The Database Disagreed.",
+          "summary": "The Agent Said It Was Done. The Database Disagreed."
+        },
+        "fr": {
+          "title": "The Agent Said It Was Done. The Database Disagreed.",
+          "summary": "The Agent Said It Was Done. The Database Disagreed."
+        }
+      }
+    },
     {
       "slug": "20261002-a-model-guide-for-the-gpt-6-family-8e206c4d",
       "topic": "AI Systems",
@@ -56,25 +75,6 @@
         "fr": {
           "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
           "summary": "The Adjudicated Query pattern pairs the Amazon Quick chat agent with a bounded MCP server over a deterministic rules engine to deliver provably complete, defensible compliance answers. This post walks through the reference archit…"
-        }
-      }
-    },
-    {
-      "slug": "20261002-open-sourcing-astabrief-the-fast-report-generation-model-in-asta-d599f0a2",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/astabrief",
-      "publishedAt": "2026-10-02T15:19:50.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
-        },
-        "fr": {
-          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
         }
       }
     },
@@ -364,6 +364,25 @@
       }
     },
     {
+      "slug": "20261002-open-sourcing-astabrief-the-fast-report-generation-model-in-asta-d599f0a2",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/astabrief",
+      "publishedAt": "2026-10-02T15:19:50.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
+        },
+        "fr": {
+          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
+        }
+      }
+    },
+    {
       "slug": "20261002-chatham-scales-its-capital-markets-expertise-with-openai-a97398f7",
       "topic": "Computer Science",
       "source": "OpenAI News",
@@ -417,25 +436,6 @@
         "fr": {
           "title": "Add secure Web Search to Claude Desktop with Amazon Bedrock AgentCore",
           "summary": "Claude Desktop on Amazon Bedrock is limited to the model's knowledge cutoff without web search. In this post, we walk through connecting Claude Desktop to Web Search using Amazon Bedrock AgentCore Gateway, with JWT-based inbound…"
-        }
-      }
-    },
-    {
-      "slug": "20261002-autosynthdata-generating-training-data-for-enterprise-agents-a885ed61",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-      "publishedAt": "2026-10-02T04:01:31.000Z",
-      "discoveredAt": "2026-10-02T12:29:54.806Z",
-      "locales": {
-        "en": {
-          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
-        },
-        "fr": {
-          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
         }
       }
     },
@@ -706,6 +706,25 @@
       }
     },
     {
+      "slug": "20261002-autosynthdata-generating-training-data-for-enterprise-agents-a885ed61",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "publishedAt": "2026-10-02T04:01:31.000Z",
+      "discoveredAt": "2026-10-02T12:29:54.806Z",
+      "locales": {
+        "en": {
+          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
+        },
+        "fr": {
+          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
+        }
+      }
+    },
+    {
       "slug": "20261001-the-eternal-complement-7e67b43c",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -759,25 +778,6 @@
         "fr": {
           "title": "Fine-tune a search agent with multi-turn RL on Amazon SageMaker AI",
           "summary": "Fine-tuning teaches a small search agent your tools and environment, giving it the reliability of a frontier model at lower latency and cost. In this post, we fine-tune an LLM-powered search agent with multi-turn reinforcement le…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-introducing-olmo-core-3-open-scalable-training-infrastructure-fo-0bf00b70",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/olmocore3",
-      "publishedAt": "2026-10-01T15:01:43.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
-        },
-        "fr": {
-          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
         }
       }
     },
@@ -1048,6 +1048,25 @@
       }
     },
     {
+      "slug": "20261001-introducing-olmo-core-3-open-scalable-training-infrastructure-fo-0bf00b70",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/olmocore3",
+      "publishedAt": "2026-10-01T15:01:43.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
+        },
+        "fr": {
+          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
+        }
+      }
+    },
+    {
       "slug": "20261001-how-albertsons-companies-is-reimagining-retail-from-the-inside-o-a80484c2",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -1101,25 +1120,6 @@
         "fr": {
           "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
           "summary": "Learn how AWS Professional Services uses a multi-agent framework built on Amazon Bedrock AgentCore to automate enterprise cloud migrations end to end. Purpose-built AI agents handle discovery, infrastructure as code generation, p…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-open-tts-leaderboard-scalable-evaluation-for-multilingual-text-t-581ab311",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/open-tts-leaderboard",
-      "publishedAt": "2026-09-30T00:00:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
-        },
-        "fr": {
-          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
         }
       }
     },
@@ -1390,6 +1390,25 @@
       }
     },
     {
+      "slug": "20260930-open-tts-leaderboard-scalable-evaluation-for-multilingual-text-t-581ab311",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/open-tts-leaderboard",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
+        },
+        "fr": {
+          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
+        }
+      }
+    },
+    {
       "slug": "20261001-the-den-frees-up-10-15-hours-a-week-to-grow-with-chatgpt-work-3bba5275",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -1443,25 +1462,6 @@
         "fr": {
           "title": "Serve live, governed data in AI-built apps with Amazon Quick",
           "summary": "With Live Data in Apps in Amazon Quick, AI-built apps query your governed Quick Sight datasets in real time instead of static, build-time snapshots. Each query runs as the person viewing the app, so row-level and column-level sec…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-nvidia-kumo-tabular-sets-a-new-accuracy-efficiency-frontier-for--493cf3fc",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "publishedAt": "2026-09-29T15:30:38.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
-        },
-        "fr": {
-          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
         }
       }
     },
@@ -1732,6 +1732,25 @@
       }
     },
     {
+      "slug": "20260929-nvidia-kumo-tabular-sets-a-new-accuracy-efficiency-frontier-for--493cf3fc",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "publishedAt": "2026-09-29T15:30:38.000Z",
+      "discoveredAt": "2026-09-29T22:13:00.950Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
+        },
+        "fr": {
+          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
+        }
+      }
+    },
+    {
       "slug": "20260930-disrupting-a-coordinated-model-distillation-campaign-6a91381a",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -1785,25 +1804,6 @@
         "fr": {
           "title": "Build agent memory with NVIDIA NeMo Agent Toolkit and Amazon S3 Vectors",
           "summary": "Learn how to use Amazon S3 Vectors as the persistent memory layer within the NVIDIA NeMo Agent Toolkit (NAT), deployed on Amazon Elastic Kubernetes Service (Amazon EKS). This post shows how NAT's memory subsystem works and how to…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-getting-the-source-right-not-just-the-fact-source-aware-verifica-984223f1",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-      "publishedAt": "2026-09-29T13:07:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
-        },
-        "fr": {
-          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
         }
       }
     },
@@ -2055,6 +2055,25 @@
       }
     },
     {
+      "slug": "20260929-getting-the-source-right-not-just-the-fact-source-aware-verifica-984223f1",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "publishedAt": "2026-09-29T13:07:00.000Z",
+      "discoveredAt": "2026-09-29T22:13:00.950Z",
+      "locales": {
+        "en": {
+          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
+        },
+        "fr": {
+          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
+        }
+      }
+    },
+    {
       "slug": "20260930-helping-small-businesses-put-ai-to-work-b5e5e434",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2108,25 +2127,6 @@
         "fr": {
           "title": "Uplifting conversion across the acquisition funnel with personalization using contextual bandits on AWS",
           "summary": "Generative AI makes it cheap to produce personalized content at scale, but which variation do you show each customer? Amazon Payments used a multi-objective contextual bandit on Amazon SageMaker AI to personalize an acquisition f…"
-        }
-      }
-    },
-    {
-      "slug": "20260928-holo4-powering-generalist-computer-use-agents-9552195c",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/Hcompany/holo4",
-      "publishedAt": "2026-09-28T09:44:05.000Z",
-      "discoveredAt": "2026-09-28T13:49:24.390Z",
-      "locales": {
-        "en": {
-          "title": "Holo4: powering generalist computer-use agents",
-          "summary": "Holo4: powering generalist computer-use agents"
-        },
-        "fr": {
-          "title": "Holo4: powering generalist computer-use agents",
-          "summary": "Holo4: powering generalist computer-use agents"
         }
       }
     },
@@ -2359,6 +2359,25 @@
       }
     },
     {
+      "slug": "20260928-holo4-powering-generalist-computer-use-agents-9552195c",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/Hcompany/holo4",
+      "publishedAt": "2026-09-28T09:44:05.000Z",
+      "discoveredAt": "2026-09-28T13:49:24.390Z",
+      "locales": {
+        "en": {
+          "title": "Holo4: powering generalist computer-use agents",
+          "summary": "Holo4: powering generalist computer-use agents"
+        },
+        "fr": {
+          "title": "Holo4: powering generalist computer-use agents",
+          "summary": "Holo4: powering generalist computer-use agents"
+        }
+      }
+    },
+    {
       "slug": "20260929-introducing-gpt-61-sol-dd66acae",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2412,25 +2431,6 @@
         "fr": {
           "title": "Building ambient agents with Amazon Bedrock AgentCore: From event-driven signals to human-in-the-loop workflows",
           "summary": "Ambient agents respond to events such as an Amazon S3 upload, a schedule, or an alert instead of waiting for a chat prompt. This post walks through building framework-agnostic ambient agents on Amazon Bedrock AgentCore using Amaz…"
-        }
-      }
-    },
-    {
-      "slug": "20260924-accelerating-vision-language-models-with-lfm25-vl-dspark-c2a53f23",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-      "publishedAt": "2026-09-24T14:08:57.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
-        },
-        "fr": {
-          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
         }
       }
     },
@@ -2663,6 +2663,25 @@
       }
     },
     {
+      "slug": "20260924-accelerating-vision-language-models-with-lfm25-vl-dspark-c2a53f23",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "publishedAt": "2026-09-24T14:08:57.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
+        },
+        "fr": {
+          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
+        }
+      }
+    },
+    {
       "slug": "20260929-devday-2026-recap-19db7cc5",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -2716,25 +2735,6 @@
         "fr": {
           "title": "Implementing Multi-Environment Access for Claude Platform on AWS",
           "summary": "Learn how to configure secure, multi-environment access to Claude Platform on AWS from a single subscription: cross-account SigV4 for AWS workloads, workspace-scoped API keys for developers, and OIDC federation for external envir…"
-        }
-      }
-    },
-    {
-      "slug": "20260923-how-to-use-nvidia-warp-and-mjwarp-to-accelerate-robotics-simulat-a70f8ac6",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
-      "publishedAt": "2026-09-23T18:41:40.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
-          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
-        },
-        "fr": {
-          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
-          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
         }
       }
     },
@@ -2948,6 +2948,25 @@
       }
     },
     {
+      "slug": "20260923-how-to-use-nvidia-warp-and-mjwarp-to-accelerate-robotics-simulat-a70f8ac6",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+      "publishedAt": "2026-09-23T18:41:40.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
+        },
+        "fr": {
+          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
+        }
+      }
+    },
+    {
       "slug": "20260929-introducing-dots-884977ec",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3001,25 +3020,6 @@
         "fr": {
           "title": "Simplify dashboard drill-down with the Amazon Quick Sight hierarchy filter",
           "summary": "Amazon Quick Sight is a fully managed, cloud-native business intelligence (BI) capability for building and publishing interactive dashboards. The new hierarchy filter gives dashboard authors rich, multi-level filtering in a singl…"
-        }
-      }
-    },
-    {
-      "slug": "20260922-how-uk-aisi-and-evaleval-are-making-benchmark-results-reproducib-2960c64a",
-      "topic": "AI Performance",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/evaleval-aisi",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
-        },
-        "fr": {
-          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
         }
       }
     },
@@ -3214,6 +3214,25 @@
       }
     },
     {
+      "slug": "20260922-how-uk-aisi-and-evaleval-are-making-benchmark-results-reproducib-2960c64a",
+      "topic": "AI Performance",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/evaleval-aisi",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
+        },
+        "fr": {
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
+        }
+      }
+    },
+    {
       "slug": "20260928-how-we-will-do-better-for-australia-cfe8e900",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3271,25 +3290,6 @@
       }
     },
     {
-      "slug": "20260922-transformers-now-runs-llamacpp-quants-98acfe91",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/transformers-llama-cpp-quants",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "Transformers now runs llama.cpp quants",
-          "summary": "Transformers now runs llama.cpp quants"
-        },
-        "fr": {
-          "title": "Transformers now runs llama.cpp quants",
-          "summary": "Transformers now runs llama.cpp quants"
-        }
-      }
-    },
-    {
       "slug": "20260914-watch-astronaut-christina-koch-and-googles-james-manyika-discuss-b49b47db",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3343,25 +3343,6 @@
         "fr": {
           "title": "Announcements Aug 27, 2026 Previewing the Model Hardware Standard We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.",
           "summary": "pth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month. Product"
-        }
-      }
-    },
-    {
-      "slug": "20260820-supply-chain-attack-on-arrayref-14062eb1",
-      "topic": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
-      "publishedAt": "2026-08-20T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Supply chain attack on arrayref",
-          "summary": "Supply chain attack on arrayref"
-        },
-        "fr": {
-          "title": "Supply chain attack on arrayref",
-          "summary": "Supply chain attack on arrayref"
         }
       }
     },
@@ -3480,6 +3461,25 @@
       }
     },
     {
+      "slug": "20260922-transformers-now-runs-llamacpp-quants-98acfe91",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
+        },
+        "fr": {
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
+        }
+      }
+    },
+    {
       "slug": "20260928-towards-safety-cases-for-frontier-ai-training-cf468ec3",
       "topic": "Security & Standards",
       "source": "OpenAI News",
@@ -3537,25 +3537,6 @@
       }
     },
     {
-      "slug": "20260922-jun-kim-omlx-creator-and-maintainer-joins-hugging-face-to-suppor-fb8ad85c",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/omlx",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
-        },
-        "fr": {
-          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
-        }
-      }
-    },
-    {
       "slug": "20260914-devfest-is-back-bf70dc82",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3609,25 +3590,6 @@
         "fr": {
           "title": "Aug 27, 2026 Announcements Expanding our support for scientists",
           "summary": "Announcements Previewing the Model Hardware Standard Aug 25, 2026"
-        }
-      }
-    },
-    {
-      "slug": "20260820-announcing-rust-1980-3f795da6",
-      "topic": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/08/20/Rust-1.98.0/",
-      "publishedAt": "2026-08-20T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Announcing Rust 1.98.0",
-          "summary": "Announcing Rust 1.98.0"
-        },
-        "fr": {
-          "title": "Announcing Rust 1.98.0",
-          "summary": "Announcing Rust 1.98.0"
         }
       }
     },
@@ -3746,6 +3708,25 @@
       }
     },
     {
+      "slug": "20260922-jun-kim-omlx-creator-and-maintainer-joins-hugging-face-to-suppor-fb8ad85c",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/omlx",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
+        },
+        "fr": {
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
+        }
+      }
+    },
+    {
       "slug": "20260928-the-lenfest-institute-grows-landmark-program-with-expanded-opena-216d56bb",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -3765,21 +3746,21 @@
       }
     },
     {
-      "slug": "20261001-ai-search-is-now-generally-available-1309166d",
+      "slug": "20261001-announcing-cloudflare-k2-serverless-event-streams-d7084788",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/ai-search-ga/",
+      "href": "https://blog.cloudflare.com/cloudflare-k2-streams/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-03T11:36:50.878Z",
+      "discoveredAt": "2026-10-04T21:21:28.129Z",
       "locales": {
         "en": {
-          "title": "AI Search is now generally available",
-          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pri…"
+          "title": "Announcing Cloudflare K2: serverless event streams",
+          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered…"
         },
         "fr": {
-          "title": "AI Search is now generally available",
-          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pri…"
+          "title": "Announcing Cloudflare K2: serverless event streams",
+          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered…"
         }
       }
     },
@@ -3799,25 +3780,6 @@
         "fr": {
           "title": "Build a multi-agent music production pipeline on Amazon Bedrock AgentCore Runtime Instances",
           "summary": "Amazon Bedrock AgentCore Runtime Instances gives multi-agent workflows AWS managed EC2 infrastructure with GPUs, persistent volumes, and multi-day sessions. In this post, we deploy a three-agent music production pipeline where th…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimiza-c701b570",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-      "publishedAt": "2026-09-21T13:44:34.000Z",
-      "discoveredAt": "2026-09-21T14:30:28.060Z",
-      "locales": {
-        "en": {
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
-        },
-        "fr": {
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
         }
       }
     },
@@ -3993,6 +3955,25 @@
       }
     },
     {
+      "slug": "20260921-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimiza-c701b570",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "publishedAt": "2026-09-21T13:44:34.000Z",
+      "discoveredAt": "2026-09-21T14:30:28.060Z",
+      "locales": {
+        "en": {
+          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
+        },
+        "fr": {
+          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
+        }
+      }
+    },
+    {
       "slug": "20260928-basis-completes-a-tax-workbook-2x-faster-with-gpt-6-astra-bf0fe8cc",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -4012,21 +3993,21 @@
       }
     },
     {
-      "slug": "20261001-support-for-modern-cryptographic-algorithms-in-workers-d7ce28a3",
+      "slug": "20261001-we-want-you-to-build-the-next-git-platform-on-cloudflare-7b804092",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
+      "href": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-03T11:36:50.878Z",
+      "discoveredAt": "2026-10-04T21:21:28.129Z",
       "locales": {
         "en": {
-          "title": "Support for modern cryptographic algorithms in Workers",
-          "summary": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today."
+          "title": "We want you to build the next Git platform on Cloudflare",
+          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes."
         },
         "fr": {
-          "title": "Support for modern cryptographic algorithms in Workers",
-          "summary": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today."
+          "title": "We want you to build the next Git platform on Cloudflare",
+          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes."
         }
       }
     },
@@ -4046,25 +4027,6 @@
         "fr": {
           "title": "Amazon Bedrock expands Claude model availability to in-country inferencing in India",
           "summary": "Anthropic's Claude Opus 5, Claude Sonnet 5, and Claude Haiku 4.5 are now available in India through Amazon Bedrock geographic cross-Region inference. You can access these models while processing data within the India Regions, and…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/tokenizers-v1",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
-      "discoveredAt": "2026-09-21T14:30:28.060Z",
-      "locales": {
-        "en": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
-        },
-        "fr": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
         }
       }
     },
@@ -4221,6 +4183,25 @@
       }
     },
     {
+      "slug": "20260921-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/tokenizers-v1",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "discoveredAt": "2026-09-21T14:30:28.060Z",
+      "locales": {
+        "en": {
+          "title": "tokenizers v1: encode, decode and scaling, measured",
+          "summary": "tokenizers v1: encode, decode and scaling, measured"
+        },
+        "fr": {
+          "title": "tokenizers v1: encode, decode and scaling, measured",
+          "summary": "tokenizers v1: encode, decode and scaling, measured"
+        }
+      }
+    },
+    {
       "slug": "20260925-proaction-boosts-sales-60-and-saves-75-hours-with-codex-d2d497e5",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -4240,21 +4221,21 @@
       }
     },
     {
-      "slug": "20261001-introducing-workers-kv-instant-powered-by-quicksilver-2124bce0",
+      "slug": "20261001-ai-search-is-now-generally-available-1309166d",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-kv-instant/",
+      "href": "https://blog.cloudflare.com/ai-search-ga/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "discoveredAt": "2026-10-03T11:36:50.878Z",
       "locales": {
         "en": {
-          "title": "Introducing Workers KV Instant — powered by Quicksilver",
-          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
+          "title": "AI Search is now generally available",
+          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pri…"
         },
         "fr": {
-          "title": "Introducing Workers KV Instant — powered by Quicksilver",
-          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
+          "title": "AI Search is now generally available",
+          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pri…"
         }
       }
     },
@@ -4274,25 +4255,6 @@
         "fr": {
           "title": "Introducing Anthropic models on Amazon Bedrock for in-region inference in Seoul and Singapore",
           "summary": "Amazon Bedrock now supports Anthropic's Claude Opus 5 and Claude Sonnet 5 with in-region inference in Seoul, and Claude Sonnet 5 in Singapore. If you have local data processing requirements in South Korea or Singapore, you can no…"
-        }
-      }
-    },
-    {
-      "slug": "20260915-your-agent-aced-the-task-will-it-do-it-again-16a7b27e",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-      "publishedAt": "2026-09-15T16:00:44.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
-      "locales": {
-        "en": {
-          "title": "Your Agent Aced the Task. Will It Do It Again?",
-          "summary": "Your Agent Aced the Task. Will It Do It Again?"
-        },
-        "fr": {
-          "title": "Your Agent Aced the Task. Will It Do It Again?",
-          "summary": "Your Agent Aced the Task. Will It Do It Again?"
         }
       }
     },
@@ -4350,25 +4312,6 @@
         "fr": {
           "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
           "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
-        }
-      }
-    },
-    {
-      "slug": "20260820-docker-verified-publisher-applications-are-now-self-serve-9a19e39b",
-      "topic": "Computer Science",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-verified-publisher-applications-are-now-self-serve/",
-      "publishedAt": "2026-08-20T17:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Docker Verified Publisher Applications Are Now Self-Serve",
-          "summary": "Apply to become a Docker Verified Publisher (DVP) now directly through Docker Hub. Get your verified content seen first by devs looking for trusted options."
-        },
-        "fr": {
-          "title": "Docker Verified Publisher Applications Are Now Self-Serve",
-          "summary": "Apply to become a Docker Verified Publisher (DVP) now directly through Docker Hub. Get your verified content seen first by devs looking for trusted options."
         }
       }
     },
@@ -4449,6 +4392,25 @@
       }
     },
     {
+      "slug": "20260915-your-agent-aced-the-task-will-it-do-it-again-16a7b27e",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "publishedAt": "2026-09-15T16:00:44.000Z",
+      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "locales": {
+        "en": {
+          "title": "Your Agent Aced the Task. Will It Do It Again?",
+          "summary": "Your Agent Aced the Task. Will It Do It Again?"
+        },
+        "fr": {
+          "title": "Your Agent Aced the Task. Will It Do It Again?",
+          "summary": "Your Agent Aced the Task. Will It Do It Again?"
+        }
+      }
+    },
+    {
       "slug": "20260923-two-years-of-openai-academy-9d02eeb8",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -4468,21 +4430,21 @@
       }
     },
     {
-      "slug": "20261001-cloudflare-os-your-companys-agent-workspace-managed-for-you-8b10a1bc",
-      "topic": "AI Systems",
+      "slug": "20261001-support-for-modern-cryptographic-algorithms-in-workers-d7ce28a3",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/managed-cloudflare-os/",
+      "href": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "discoveredAt": "2026-10-03T11:36:50.878Z",
       "locales": {
         "en": {
-          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
-          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch i…"
+          "title": "Support for modern cryptographic algorithms in Workers",
+          "summary": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today."
         },
         "fr": {
-          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
-          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch i…"
+          "title": "Support for modern cryptographic algorithms in Workers",
+          "summary": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today."
         }
       }
     },
@@ -4506,25 +4468,6 @@
       }
     },
     {
-      "slug": "20260910-rebuilding-automatic1111-with-gradio-workflow-cb50b0c3",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/gradio-workflow-1111",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-10-03T11:36:50.878Z",
-      "locales": {
-        "en": {
-          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "summary": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
-        },
-        "fr": {
-          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "summary": "Rebuilding AUTOMATIC1111 with Gradio Workflow"
-        }
-      }
-    },
-    {
       "slug": "20260902-proactive-cyber-defense-for-governments-and-enterprises-28b149c7",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -4544,21 +4487,78 @@
       }
     },
     {
-      "slug": "20261001-validate-gpu-cluster-readiness-before-ai-workloads-land-a69161c4",
-      "topic": "Computer Systems",
+      "slug": "20261001-manage-kubernetes-node-fleets-with-nodewright-6b35eb72",
+      "topic": "Computer Science",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land/",
+      "href": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
       "publishedAt": "2026-10-01T18:31:20.000Z",
-      "discoveredAt": "2026-10-03T11:36:50.878Z",
+      "discoveredAt": "2026-10-04T21:21:28.129Z",
       "locales": {
         "en": {
-          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
-          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
+          "title": "Manage Kubernetes Node Fleets with NodeWright",
+          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
         },
         "fr": {
-          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
-          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
+          "title": "Manage Kubernetes Node Fleets with NodeWright",
+          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
+        }
+      }
+    },
+    {
+      "slug": "20260828-kubernetes-v137-pod-certificates-and-cluster-trust-bundles-62fba438",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
+      "publishedAt": "2026-08-28T18:30:00.000Z",
+      "discoveredAt": "2026-10-04T21:21:28.129Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
+          "summary": "Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits are probably at the front of your mind, one other i…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
+          "summary": "Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits are probably at the front of your mind, one other i…"
+        }
+      }
+    },
+    {
+      "slug": "20260910-async-grpo-with-lora-across-hf-jobs-a-bucket-a-proxy-and-no-nccl-d4e55a91",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-10-04T21:21:28.129Z",
+      "locales": {
+        "en": {
+          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
+        },
+        "fr": {
+          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
+        }
+      }
+    },
+    {
+      "slug": "20260923-openai-extends-cyber-access-to-ukraine-for-civilian-defense-1d77064c",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "publishedAt": "2026-09-23T13:00:00.000Z",
+      "discoveredAt": "2026-10-04T21:21:28.129Z",
+      "locales": {
+        "en": {
+          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
+        },
+        "fr": {
+          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
         }
       }
     }
