@@ -228,14 +228,34 @@ async function checkLockfile() {
 }
 
 /** A new advisory can land on an untouched dependency at any time. */
+/**
+ * Two questions, as in .github/workflows/security-npm-audit.yml.
+ *
+ * Shipped dependencies decide the verdict, because they are the ones a reader
+ * downloads. Build tooling is counted and named in the detail, but does not
+ * fail the check: today that is seven advisories, all braces, reached through
+ * Next's own ESLint config, and braces@3.0.3 is both the newest release and the
+ * version the advisory names -- there is nothing to upgrade to. Failing on it
+ * would put this line permanently in the red and send a nightly issue nobody
+ * can act on, which is how an alert channel stops being read.
+ */
 async function checkVulnerabilities() {
+  let toolingNote = "";
   try {
     await execFileAsync("npm", ["audit", "--audit-level=high"], { maxBuffer: 12 * 1024 * 1024 });
-    record("Vulnerabilities", true, "no high or critical advisories");
   } catch (error) {
     const output = `${error?.stdout || ""}`;
-    const summary = output.match(/(\d+ vulnerabilit\w+.*)/)?.[1] || "high or critical advisories present";
-    record("Vulnerabilities", false, summary.trim().slice(0, 120));
+    const count = output.match(/(\d+) (?:high|critical) severity/)?.[1];
+    toolingNote = count ? `; ${count} in build tooling, not shipped` : "; build tooling has advisories";
+  }
+
+  try {
+    await execFileAsync("npm", ["audit", "--omit=dev", "--audit-level=high"], { maxBuffer: 12 * 1024 * 1024 });
+    record("Vulnerabilities", true, `nothing shipped to readers is flagged${toolingNote}`);
+  } catch (error) {
+    const output = `${error?.stdout || ""}`;
+    const summary = output.match(/(\d+ vulnerabilit\w+.*)/)?.[1] || "high or critical advisories in shipped code";
+    record("Vulnerabilities", false, `SHIPPED CODE: ${summary.trim()}`.slice(0, 160));
   }
 }
 
@@ -452,6 +472,12 @@ const PARKED_WORKFLOWS = new Set([
  * being expected the day its schedule block is removed. A workflow with only
  * workflow_dispatch is deliberately manual and is not judged on staleness.
  */
+/** Every workflow file, whatever triggers it. */
+async function allWorkflowFiles() {
+  const dir = path.join(process.cwd(), ".github/workflows");
+  return (await fs.readdir(dir)).filter((name) => name.endsWith(".yml") || name.endsWith(".yaml"));
+}
+
 async function scheduledWorkflows() {
   const dir = path.join(process.cwd(), ".github/workflows");
   const files = (await fs.readdir(dir)).filter((name) => name.endsWith(".yml") || name.endsWith(".yaml"));
@@ -490,29 +516,49 @@ async function checkWorkflowHealth() {
     // genuinely break (TypeScript 7 against typescript-eslint, Tailwind 4
     // against a v3 config) fail on purpose and would raise a nightly alarm
     // forever. A PR failing is the review system working; it is not an outage.
-    const { stdout } = await execFileAsync(
-      "gh",
-      [
-        "run", "list",
-        "--branch", process.env.WATCHDOG_BRANCH || "main",
-        "--limit", "60",
-        "--json", "workflowName,conclusion,status,createdAt"
-      ],
-      { maxBuffer: 8 * 1024 * 1024 }
-    );
-
-    const runs = JSON.parse(stdout);
-    if (!Array.isArray(runs) || runs.length === 0) {
-      record("Workflow health", true, "no recent runs to judge");
-      return;
+    /*
+     * One query per workflow, not one shared window.
+     *
+     * This asked for the last 60 runs on main and took the newest entry per
+     * workflow. Four jobs fire on every push -- CI, CodeQL, secret scan, npm
+     * audit -- so sixty runs reaches back about two days on an active week.
+     * The four weekly workflows (the writer, operator and design agents, and
+     * the internship check) are usually not in that window at all, which makes
+     * this check blind to exactly the jobs most likely to break unnoticed, and
+     * able to report a stale failure on the rare day one lands inside it.
+     * Measured: a sixty-run window on 4 October covered 2 to 4 October, while
+     * the writer agent last ran on 28 September.
+     *
+     * Asking each workflow for its own latest run costs a dozen calls on a
+     * daily job and is correct whatever the push rate.
+     */
+    const latest = new Map();
+    for (const file of await allWorkflowFiles()) {
+      try {
+        const { stdout } = await execFileAsync(
+          "gh",
+          [
+            "run", "list",
+            "--workflow", file,
+            "--branch", process.env.WATCHDOG_BRANCH || "main",
+            "--limit", "1",
+            "--json", "workflowName,conclusion,status,createdAt"
+          ],
+          { maxBuffer: 2 * 1024 * 1024 }
+        );
+        const runs = JSON.parse(stdout);
+        const run = Array.isArray(runs) ? runs[0] : null;
+        if (!run || run.status !== "completed") continue;
+        if (PARKED_WORKFLOWS.has(run.workflowName)) continue;
+        latest.set(run.workflowName, run);
+      } catch {
+        // One workflow GitHub would not answer for is not a failing workflow.
+      }
     }
 
-    // Latest run per workflow — an older failure that has since recovered is not news.
-    const latest = new Map();
-    for (const run of runs) {
-      if (run.status !== "completed") continue;
-      if (PARKED_WORKFLOWS.has(run.workflowName)) continue;
-      if (!latest.has(run.workflowName)) latest.set(run.workflowName, run);
+    if (latest.size === 0) {
+      record("Workflow health", true, "no completed runs to judge");
+      return;
     }
 
     const failing = [...latest.values()]
