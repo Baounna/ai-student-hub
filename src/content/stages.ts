@@ -291,3 +291,24 @@ export function stageCountrySummary(locale: Locale, now = Date.now()) {
 export function countryLabel(country: string, locale: Locale) {
   return COUNTRY_LABELS[country]?.[locale] ?? country;
 }
+
+/**
+ * How long a listing counts as newly added.
+ *
+ * Seven days, matching the weekly check that adds them, so "recent" means "since
+ * the last sweep" rather than an arbitrary window. It reads postedAt, which
+ * records when the listing was added HERE and not when the employer published
+ * it -- so anything rendered from this has to say "added", never "posted".
+ * Calling our own import date a publication date would be a small lie in front
+ * of a student deciding whether a role is still fresh.
+ */
+export const RECENTLY_ADDED_DAYS = 7;
+
+export function isRecentlyAdded(stage: Stage, now: Date = new Date()): boolean {
+  if (!stage.postedAt) return false;
+  const added = Date.parse(`${stage.postedAt.slice(0, 10)}T12:00:00Z`);
+  if (!Number.isFinite(added)) return false;
+  const days = (now.getTime() - added) / 86_400_000;
+  // A future date is a data error, not a new listing.
+  return days >= 0 && days <= RECENTLY_ADDED_DAYS;
+}

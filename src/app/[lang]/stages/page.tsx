@@ -13,6 +13,9 @@ import { absoluteUrl } from "@/lib/site-url";
 import { siteConfig } from "@/config/site";
 import {
   countryLabel,
+  isRecentlyAdded,
+  RECENTLY_ADDED_DAYS,
+  type Stage,
   getOpenStages,
   getStages,
   getStagesCheckedAgeDays,
@@ -62,6 +65,12 @@ const COPY = {
       `${breakdown}. ${security} of ${total} are security or cyber roles.`,
     filterCountry: "Country",
     filterKind: "Type",
+    // "Added", not "Posted". postedAt is the day this board imported the
+    // listing, which is a date we can stand behind; the employer's own
+    // publication date is not in the data and must not be implied.
+    filterAdded: "Added",
+    filterRecent: (days: number) => `Last ${days} days`,
+    recentBadge: "Recently added",
     filterAll: "All",
     filterShowing: (shown: number, total: number) => `Showing ${shown} of ${total}`,
     filterClear: "Clear filters",
@@ -100,6 +109,9 @@ const COPY = {
       `${breakdown}. ${security} sur ${total} sont des postes sécurité ou cyber.`,
     filterCountry: "Pays",
     filterKind: "Type",
+    filterAdded: "Ajoutées",
+    filterRecent: (days: number) => `${days} derniers jours`,
+    recentBadge: "Ajoutée récemment",
     filterAll: "Tous",
     filterShowing: (shown: number, total: number) => `${shown} sur ${total} affichées`,
     filterClear: "Effacer les filtres",
@@ -179,11 +191,33 @@ export default async function StagesPage(props: {
   const availableKinds = [...new Set(stages.map((stage) => stage.kind))];
   const countryFilter = availableCountries.includes(rawCountry) ? rawCountry : "";
   const kindFilter = (availableKinds as string[]).includes(rawKind) ? rawKind : "";
-  const filtered = stages.filter(
+  /**
+   * A returning reader wants the difference, not the list.
+   *
+   * Somebody who looked last week has no way to tell what changed without
+   * re-reading a hundred rows, so most of them do not come back. postedAt
+   * records when a listing was added HERE -- the field says so itself -- which
+   * is why every label below says "added" and none of them says "posted".
+   * Calling an import date a publication date would tell a student a role is
+   * fresher than we know it to be.
+   */
+  const recentOnly = searchParams?.added === "recent";
+  const matchesFilters = (stage: Stage) =>
+    (!countryFilter || stage.country === countryFilter) &&
+    (!kindFilter || stage.kind === kindFilter) &&
+    (!recentOnly || isRecentlyAdded(stage));
+  const filtered = stages.filter(matchesFilters);
+  const isFiltered = Boolean(countryFilter || kindFilter || recentOnly);
+  const hasRecent = stages.some((stage) => isRecentlyAdded(stage));
+  const countAcrossCountries = stages.filter(
+    (stage) => (!kindFilter || stage.kind === kindFilter) && (!recentOnly || isRecentlyAdded(stage))
+  ).length;
+  const recentCount = stages.filter(
     (stage) =>
-      (!countryFilter || stage.country === countryFilter) && (!kindFilter || stage.kind === kindFilter)
-  );
-  const isFiltered = Boolean(countryFilter || kindFilter);
+      isRecentlyAdded(stage) &&
+      (!countryFilter || stage.country === countryFilter) &&
+      (!kindFilter || stage.kind === kindFilter)
+  ).length;
   /**
    * Chip counts within the other active filter, not across the whole board.
    *
@@ -200,15 +234,27 @@ export default async function StagesPage(props: {
    * promise eight and deliver none.
    */
   const countInCountry = (code: string) =>
-    stages.filter((stage) => stage.country === code && (!kindFilter || stage.kind === kindFilter)).length;
+    stages.filter(
+      (stage) =>
+        stage.country === code &&
+        (!kindFilter || stage.kind === kindFilter) &&
+        (!recentOnly || isRecentlyAdded(stage))
+    ).length;
   const countInKind = (kind: string) =>
-    stages.filter((stage) => stage.kind === kind && (!countryFilter || stage.country === countryFilter)).length;
-  const filterHref = (next: { country?: string; kind?: string }) => {
+    stages.filter(
+      (stage) =>
+        stage.kind === kind &&
+        (!countryFilter || stage.country === countryFilter) &&
+        (!recentOnly || isRecentlyAdded(stage))
+    ).length;
+  const filterHref = (next: { country?: string; kind?: string; recent?: boolean }) => {
     const country = next.country ?? countryFilter;
     const kind = next.kind ?? kindFilter;
+    const recent = next.recent ?? recentOnly;
     const qs = new URLSearchParams();
     if (country) qs.set("country", country);
     if (kind) qs.set("kind", kind);
+    if (recent) qs.set("added", "recent");
     const query = qs.toString();
     return query ? `/${locale}/stages?${query}` : `/${locale}/stages`;
   };
@@ -327,7 +373,12 @@ export default async function StagesPage(props: {
                   : "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
               }`}
             >
-              {copy.filterAll} ({kindFilter ? countInKind(kindFilter) : stages.length})
+              {/* Counted under whatever else is active, like every other chip
+                  here. Printing the board's full total while a filter narrows
+                  the page is the bug this convention exists to prevent: a
+                  number on a chip has to be the number of rows the click
+                  produces. */}
+              {copy.filterAll} ({countAcrossCountries})
             </Link>
             {availableCountries.map((code) => (
               <Link
@@ -372,6 +423,37 @@ export default async function StagesPage(props: {
               </Link>
             ))}
           </div>
+          {/* Only when there is something to show. A chip offering "the last
+              seven days" on a board where nothing was added in seven days
+              sends the reader to an empty page and makes the site look
+              abandoned, which is the opposite of what the chip is for. */}
+          {hasRecent ? (
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="provenance mr-1">{copy.filterAdded}</span>
+              <Link
+                href={filterHref({ recent: false })}
+                aria-current={recentOnly ? undefined : "true"}
+                className={`tap-target rounded-full border px-3 py-1 text-xs transition ${
+                  recentOnly
+                    ? "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
+                    : "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
+                }`}
+              >
+                {copy.filterAll}
+              </Link>
+              <Link
+                href={filterHref({ recent: true })}
+                aria-current={recentOnly ? "true" : undefined}
+                className={`tap-target rounded-full border px-3 py-1 text-xs transition ${
+                  recentOnly
+                    ? "border-[color:var(--primary)] bg-[color:var(--primary)] text-[color:var(--primary-foreground)]"
+                    : "border-[color:var(--border)] text-[color:var(--muted)] hover:text-[color:var(--text)]"
+                }`}
+              >
+                {copy.filterRecent(RECENTLY_ADDED_DAYS)} ({recentCount})
+              </Link>
+            </div>
+          ) : null}
           {isFiltered ? (
             <p className="provenance">
               {copy.filterShowing(filtered.length, stages.length)} ·{" "}
@@ -421,6 +503,16 @@ export default async function StagesPage(props: {
                   {closed ? (
                     <span className="rounded-full border border-[color:var(--border)] px-2 py-0.5 text-[11px] uppercase tracking-wide text-[color:var(--muted)]">
                       {copy.closed}
+                    </span>
+                  ) : null}
+                  {/* "Recently added", not "New": the role may have been
+                      advertised for months before this board picked it up, and
+                      a student reading "new" would reasonably hear "just
+                      opened". Not shown on a closed row, where a badge drawing
+                      the eye to a dead listing would only sting. */}
+                  {!closed && isRecentlyAdded(stage) ? (
+                    <span className="rounded-full border border-[color:var(--primary)] px-2 py-0.5 text-[11px] uppercase tracking-wide text-[color:var(--primary)]">
+                      {copy.recentBadge}
                     </span>
                   ) : null}
                 </div>
