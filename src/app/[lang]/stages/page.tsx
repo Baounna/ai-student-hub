@@ -11,6 +11,7 @@ import { formatDuration, formatLevel } from "@/lib/stage-format";
 import { ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { siteConfig } from "@/config/site";
+import { matchesAllTerms, searchTerms } from "@/lib/search";
 import {
   countryLabel,
   isRecentlyAdded,
@@ -72,7 +73,20 @@ const COPY = {
     filterRecent: (days: number) => `Last ${days} days`,
     recentBadge: "Recently added",
     filterAll: "All",
+    filtersLabel: "Filter openings",
+    searchLabel: "Keyword",
+    searchHint: "Role, company or city",
+    // Every example is checked against the board. "NLP" and "Python" were
+    // here first and both return nothing, which would have made the
+    // reader's very first query look like a broken filter.
+    searchPlaceholder: "cyber, data, Casablanca\u2026",
+    searchAction: "Filter",
     filterShowing: (shown: number, total: number) => `Showing ${shown} of ${total}`,
+    // Naming the words back is the difference between "nothing here" and
+    // "nothing here for that": a reader can see at a glance whether they
+    // mistyped, and the total tells them the board is not empty.
+    filterNoneQuery: (term: string, total: number) =>
+      `Nothing matches \u201c${term}\u201d. All ${total} openings are one click away.`,
     filterClear: "Clear filters",
     // "The others are below" was printed in place of the list, with nothing
     // below it -- the sentence described the layout of a page that renders when
@@ -113,7 +127,14 @@ const COPY = {
     filterRecent: (days: number) => `${days} derniers jours`,
     recentBadge: "Ajoutée récemment",
     filterAll: "Tous",
+    filtersLabel: "Filtrer les offres",
+    searchLabel: "Mot-cl\u00e9",
+    searchHint: "Poste, entreprise ou ville",
+    searchPlaceholder: "cyber, ing\u00e9nieur, Casablanca\u2026",
+    searchAction: "Filtrer",
     filterShowing: (shown: number, total: number) => `${shown} sur ${total} affichées`,
+    filterNoneQuery: (term: string, total: number) =>
+      `Aucun r\u00e9sultat pour \u00ab\u00a0${term}\u00a0\u00bb. Les ${total} offres sont \u00e0 un clic.`,
     filterClear: "Effacer les filtres",
     filterNone: (total: number) =>
       `Aucune offre ne correspond à cette combinaison. Les ${total} autres sont à un clic.`,
@@ -202,24 +223,64 @@ export default async function StagesPage(props: {
    * fresher than we know it to be.
    */
   const recentOnly = searchParams?.added === "recent";
-  const matchesFilters = (stage: Stage) =>
-    (!countryFilter || stage.country === countryFilter) &&
-    (!kindFilter || stage.kind === kindFilter) &&
-    (!recentOnly || isRecentlyAdded(stage));
-  const filtered = stages.filter(matchesFilters);
-  const isFiltered = Boolean(countryFilter || kindFilter || recentOnly);
+
+  /**
+   * Eleven countries and three types do not reach "a pentest internship".
+   *
+   * The data has no skills field, so the only route to a topic is the words the
+   * employer already wrote: a reader after NLP, Kubernetes or Casablanca has to
+   * read all 104 rows to find the four.
+   *
+   * The blog's matcher, not a second one. It already folds accents -- half
+   * these roles are French and nobody types "Sécurité" with the accent on a
+   * phone -- requires every term, and anchors each at a word boundary, which is
+   * what stops "rag" matching "storage". A private copy here would have had to
+   * learn all three of those again.
+   *
+   * Searchable text is what the row actually shows, including the localised
+   * country and type, so "maroc" works on the French page and "morocco" on the
+   * English one. A reader should not have to guess at a hidden index.
+   *
+   * A GET form, not a client component: the result has a URL a reader can
+   * share, it works with JavaScript off, and the page stays a server component
+   * like every other filter here.
+   */
+  const rawQuery = typeof searchParams?.q === "string" ? searchParams.q.trim().slice(0, 64) : "";
+  const terms = searchTerms(rawQuery);
+  const matchesQuery = (stage: Stage) =>
+    matchesAllTerms(terms, [
+      stage.role,
+      stage.company,
+      stage.city,
+      countryLabel(stage.country, locale),
+      kindLabel(stage.kind, locale)
+    ]);
+
+  /**
+   * One predicate for the list and for every count on the page.
+   *
+   * Each filter used to re-state the others inline, so a fourth dimension meant
+   * editing five copies of the same condition and any miss produced the one
+   * failure these chips exist to prevent: a number a reader trusts, leading to
+   * a page that does not have it. `ignore` drops exactly the dimension whose
+   * chip is being counted, which is what "how many would this click give me"
+   * means.
+   */
+  const matches = (stage: Stage, ignore?: "country" | "kind" | "recent") =>
+    (ignore === "country" || !countryFilter || stage.country === countryFilter) &&
+    (ignore === "kind" || !kindFilter || stage.kind === kindFilter) &&
+    (ignore === "recent" || !recentOnly || isRecentlyAdded(stage)) &&
+    matchesQuery(stage);
+
+  const filtered = stages.filter((stage) => matches(stage));
+  const isFiltered = Boolean(countryFilter || kindFilter || recentOnly || terms.length);
   const hasRecent = stages.some((stage) => isRecentlyAdded(stage));
-  const countAcrossCountries = stages.filter(
-    (stage) => (!kindFilter || stage.kind === kindFilter) && (!recentOnly || isRecentlyAdded(stage))
-  ).length;
+  const countAcrossCountries = stages.filter((stage) => matches(stage, "country")).length;
   const recentCount = stages.filter(
-    (stage) =>
-      isRecentlyAdded(stage) &&
-      (!countryFilter || stage.country === countryFilter) &&
-      (!kindFilter || stage.kind === kindFilter)
+    (stage) => isRecentlyAdded(stage) && matches(stage, "recent")
   ).length;
   /**
-   * Chip counts within the other active filter, not across the whole board.
+   * Chip counts within the other active filters, not across the whole board.
    *
    * They counted the full list, so with ?country=MA the Type row still read
    * "Apprenticeship (8)" and clicking it delivered nothing: Morocco has no
@@ -234,19 +295,9 @@ export default async function StagesPage(props: {
    * promise eight and deliver none.
    */
   const countInCountry = (code: string) =>
-    stages.filter(
-      (stage) =>
-        stage.country === code &&
-        (!kindFilter || stage.kind === kindFilter) &&
-        (!recentOnly || isRecentlyAdded(stage))
-    ).length;
+    stages.filter((stage) => stage.country === code && matches(stage, "country")).length;
   const countInKind = (kind: string) =>
-    stages.filter(
-      (stage) =>
-        stage.kind === kind &&
-        (!countryFilter || stage.country === countryFilter) &&
-        (!recentOnly || isRecentlyAdded(stage))
-    ).length;
+    stages.filter((stage) => stage.kind === kind && matches(stage, "kind")).length;
   const filterHref = (next: { country?: string; kind?: string; recent?: boolean }) => {
     const country = next.country ?? countryFilter;
     const kind = next.kind ?? kindFilter;
@@ -255,6 +306,9 @@ export default async function StagesPage(props: {
     if (country) qs.set("country", country);
     if (kind) qs.set("kind", kind);
     if (recent) qs.set("added", "recent");
+    // Kept on every chip, or narrowing a search by country would silently
+    // throw the search away and hand back the whole country.
+    if (rawQuery) qs.set("q", rawQuery);
     const query = qs.toString();
     return query ? `/${locale}/stages?${query}` : `/${locale}/stages`;
   };
@@ -361,7 +415,7 @@ export default async function StagesPage(props: {
           component. Counts sit on the chips because "9 Morocco" is the fact
           that decides whether the click is worth it. */}
       {stages.length > 0 ? (
-        <nav className="mt-6 space-y-2" aria-label={copy.filterCountry}>
+        <nav className="mt-6 space-y-2" aria-label={copy.filtersLabel}>
           <div className="flex flex-wrap items-center gap-2">
             <span className="provenance mr-1">{copy.filterCountry}</span>
             <Link
@@ -454,6 +508,50 @@ export default async function StagesPage(props: {
               </Link>
             </div>
           ) : null}
+          {/* "Keyword", not "Search", and last in the group rather than first.
+              The header already carries a site-wide search box with typeahead
+              that indexes these internships among the guides and tools; a
+              second input labelled "Search" at the top of the same page reads
+              as a duplicate and leaves the reader guessing which one they are
+              in. This one does a different job -- it narrows the 104 rows in
+              place and the result keeps its URL -- so it is named for the
+              dimension it filters on, beside Country, Type and Added.
+
+              A plain GET form. method defaults to get, so with JavaScript off
+              this still works, and the result is a shareable URL rather than
+              client state.
+
+              The active chips ride along as hidden inputs: a form submit
+              replaces the whole query string, so without these, searching
+              inside ?country=MA would quietly drop the reader back to all
+              eleven countries -- a filter undoing itself is worse than no
+              search at all.
+
+              min-w-0 on the input, for the reason written on the Turnstile
+              widget: a flex child keeps its intrinsic minimum width and pushes
+              the row wider than the card, and the overflow is then clipped
+              rather than scrollable. basis-48 lets it shrink on a phone. */}
+          <form action={`/${locale}/stages`} method="get" className="flex flex-wrap items-center gap-2">
+            {countryFilter ? <input type="hidden" name="country" value={countryFilter} /> : null}
+            {kindFilter ? <input type="hidden" name="kind" value={kindFilter} /> : null}
+            {recentOnly ? <input type="hidden" name="added" value="recent" /> : null}
+            <label htmlFor="stages-q" className="provenance mr-1">
+              {copy.searchLabel}
+            </label>
+            <input
+              id="stages-q"
+              type="search"
+              name="q"
+              defaultValue={rawQuery}
+              maxLength={64}
+              placeholder={copy.searchPlaceholder}
+              aria-label={copy.searchHint}
+              className="tap-target min-w-0 flex-1 basis-48 rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--text)] placeholder:text-[color:var(--muted)]"
+            />
+            <button type="submit" className="btn-secondary px-3 py-1.5 text-xs">
+              {copy.searchAction}
+            </button>
+          </form>
           {isFiltered ? (
             <p className="provenance">
               {copy.filterShowing(filtered.length, stages.length)} ·{" "}
@@ -471,7 +569,7 @@ export default async function StagesPage(props: {
         </p>
       ) : filtered.length === 0 ? (
         <p className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6 text-[color:var(--text)]">
-          {copy.filterNone(stages.length)}{" "}
+          {rawQuery ? copy.filterNoneQuery(rawQuery, stages.length) : copy.filterNone(stages.length)}{" "}
           <Link href={`/${locale}/stages`} className="do-link py-1.5">
             {copy.filterClear}
           </Link>

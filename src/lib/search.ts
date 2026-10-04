@@ -24,7 +24,23 @@ function escapeRegExp(value: string) {
 }
 
 export function searchTerms(query: string) {
-  return fold(query).split(/\s+/).filter(Boolean);
+  return (
+    fold(query)
+      .split(/\s+/)
+      /*
+       * A term with no letter or digit cannot anchor at a word boundary.
+       *
+       * "-" escapes to /\b-/, which matches the hyphen in every hyphenated
+       * title on the page, so ?q=- handed back 21 of the 104 internships as
+       * though they were search results -- a subset with nothing in common,
+       * presented as an answer. "***" and "..." do the same thing.
+       *
+       * Dropping those leaves an empty term list, which every caller already
+       * treats as "no query", so the reader gets the full list back instead of
+       * a random-looking slice of it.
+       */
+      .filter((term) => /[\p{L}\p{N}]/u.test(term))
+  );
 }
 
 /**

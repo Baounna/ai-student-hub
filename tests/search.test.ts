@@ -49,7 +49,26 @@ describe("search", () => {
 
   it("does not let a query break the regex", () => {
     expect(() => matchesAllTerms(searchTerms("c++ (test) [a]"), post)).not.toThrow();
-    expect(matchesAllTerms(searchTerms("*"), post)).toBe(false);
+  });
+
+  /**
+   * This used to assert that "*" matched nothing, which recorded what the
+   * function did rather than what it should do, and the same code path had a
+   * real fault beside it: "-" escaped to /\b-/ and matched the hyphen in every
+   * hyphenated title, so ?q=- returned 21 of the 104 internships as if they
+   * were results -- an arbitrary slice presented as an answer.
+   *
+   * A term with no letter or digit is now dropped, which makes a
+   * punctuation-only query an empty one. "Everything", like a blank box, rather
+   * than "nothing" or, worse, "these 21".
+   */
+  it("treats a punctuation-only query as no query at all", () => {
+    for (const q of ["*", "-", "***", "...", "- -"]) {
+      expect(searchTerms(q)).toEqual([]);
+      expect(matchesAllTerms(searchTerms(q), post)).toBe(true);
+    }
+    // A term that merely contains punctuation still searches.
+    expect(searchTerms("c++")).toEqual(["c++"]);
   });
 
   it("collapses whitespace between terms", () => {

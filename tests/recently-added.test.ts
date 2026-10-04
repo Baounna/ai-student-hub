@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { describe, it, expect } from "vitest";
 import { isRecentlyAdded, RECENTLY_ADDED_DAYS, getStages } from "@/content/stages";
+import { matchesAllTerms, searchTerms } from "@/lib/search";
 
 /**
  * postedAt records when a listing was added to this board, not when the
@@ -66,5 +67,73 @@ describe("the wording on /stages", () => {
 
   it("keeps the badge off closed rows", () => {
     expect(source).toContain("!closed && isRecentlyAdded(stage)");
+  });
+});
+
+describe("the keyword filter on /stages", () => {
+  const stages = getStages();
+  const hay = (s: (typeof stages)[number]) => [s.role, s.company, s.city];
+
+  it("folds accents, so a reader without a French keyboard finds French roles", () => {
+    const accented = stages.filter((s) => /[éèêëàâçùûôîï]/i.test(`${s.role} ${s.city ?? ""}`));
+    expect(accented.length).toBeGreaterThan(0);
+    // Every accented listing is reachable by its unaccented spelling.
+    for (const s of accented.slice(0, 12)) {
+      const plain = `${s.role}`.normalize("NFD").replace(/[̀-ͯ]/g, "");
+      const first = plain.split(/\s+/).filter((w) => w.length > 3)[0];
+      if (!first) continue;
+      expect(matchesAllTerms(searchTerms(first), hay(s))).toBe(true);
+    }
+  });
+
+  it("requires every term, so two words narrow rather than widen", () => {
+    const one = stages.filter((s) => matchesAllTerms(searchTerms("stage"), hay(s))).length;
+    const two = stages.filter((s) => matchesAllTerms(searchTerms("stage zzzznope"), hay(s))).length;
+    expect(two).toBeLessThanOrEqual(one);
+    expect(two).toBe(0);
+  });
+
+  it("anchors at a word boundary, so a short term is not a substring hunt", () => {
+    // The bug this inherited matcher exists to prevent: "rag" inside "storage".
+    expect(matchesAllTerms(searchTerms("rag"), ["Storage Engineer"])).toBe(false);
+    expect(matchesAllTerms(searchTerms("rag"), ["RAG Research Intern"])).toBe(true);
+  });
+
+  it("returns the whole board for an empty or punctuation-only query", () => {
+    for (const q of ["", "   ", "-", "***"]) {
+      const n = stages.filter((s) => matchesAllTerms(searchTerms(q), hay(s))).length;
+      expect(n).toBe(stages.length);
+    }
+  });
+});
+
+describe("the keyword examples in the placeholder", () => {
+  /**
+   * A placeholder is an example, and the reader's first query is usually one of
+   * them. "NLP" and "Python" were in this list and both return nothing on this
+   * board, so the first thing a reader tried would have answered "Nothing
+   * matches" and looked like a filter that does not work.
+   */
+  it("every suggested term actually returns listings", () => {
+    const source = readFileSync(new URL("../src/app/[lang]/stages/page.tsx", import.meta.url), "utf8");
+    const placeholders = [...source.matchAll(/searchPlaceholder:\s*"([^"]+)"/g)].map((m) => m[1]);
+    expect(placeholders.length).toBe(2);
+    const stages = getStages();
+    for (const line of placeholders) {
+      const examples = line
+        // Read from source, so the \uXXXX escapes are still literal text.
+        .replace(/\\u([0-9a-fA-F]{4})/g, (_, code) => String.fromCharCode(parseInt(code, 16)))
+        .replace(/\u2026/g, "")
+        .split(",")
+        .map((part) => part.trim())
+        .filter(Boolean);
+      expect(examples.length).toBeGreaterThan(0);
+      for (const example of examples) {
+        const hits = stages.filter((s) =>
+          matchesAllTerms(searchTerms(example), [s.role, s.company, s.city])
+        ).length;
+        expect(hits, `placeholder example "${example}" matches nothing`).toBeGreaterThan(0);
+      }
+    }
   });
 });
