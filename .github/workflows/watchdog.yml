@@ -66,6 +66,64 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: node scripts/watchdog.mjs
 
+      # ---- repair agent ----------------------------------------------------
+      # Runs only when a workflow is actually failing, so a healthy day costs
+      # nothing. It lives here rather than on a workflow_run trigger because
+      # scripts/verify-security.mjs rejects workflow_run as fork-writable, and
+      # that refusal is correct -- a trigger with write access to main, fired by
+      # events a fork can influence, is exactly the shape worth refusing. The
+      # watchdog already knows which run failed and already has a token.
+      #
+      # It opens a pull request. It never pushes to main. An unattended agent
+      # merging its own guesses into a live site is a worse failure than the bug
+      # it is chasing, and a green suite does not catch a confidently wrong fix.
+      - name: Stop if a repair is already waiting
+        id: repair_guard
+        if: steps.check.outputs.failed_run_id != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open=$(gh pr list --state open --label repair-agent --json number --jq 'length')
+          echo "open=$open" >> "$GITHUB_OUTPUT"
+          [ "$open" = "0" ] || echo "::notice title=Repair agent stood down::$open repair PR(s) already open."
+
+      - name: Diagnose the failure, and try a fix
+        id: repair_agent
+        if: steps.check.outputs.failed_run_id != '' && steps.repair_guard.outputs.open == '0'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          FAILED_RUN_ID: ${{ steps.check.outputs.failed_run_id }}
+          FAILED_WORKFLOW: ${{ steps.check.outputs.failed_workflow }}
+        run: node scripts/repair-agent.mjs
+
+      - name: Open a pull request with the verified fix
+        if: steps.check.outputs.failed_run_id != '' && steps.repair_guard.outputs.open == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FAILED_WORKFLOW: ${{ steps.check.outputs.failed_workflow }}
+          FAILED_RUN_ID: ${{ steps.check.outputs.failed_run_id }}
+        run: |
+          outcome=$(cat repair-outcome.txt 2>/dev/null || echo none)
+          [ "$outcome" = "patch-verified" ] || { echo "No verified patch to propose."; exit 0; }
+
+          git add -A -- . ':!repair-diagnosis.md' ':!repair-outcome.txt' ':!watchdog-report.md'
+          git diff --cached --quiet && { echo "Nothing changed."; exit 0; }
+
+          BRANCH="repair/${FAILED_RUN_ID}"
+          git config user.name "AI Student Hub Bot"
+          git config user.email "ai-student-hub-bot@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git commit -m "fix: proposed repair for a failed ${FAILED_WORKFLOW} run
+
+          Applied only because lint, typecheck, the test suite and a production
+          build all passed with it in place. Not merged: a person decides."
+          git push origin "$BRANCH"
+          gh pr create --title "Proposed repair: ${FAILED_WORKFLOW}" --label repair-agent \
+            --body "$(printf 'A run of **%s** failed on main. This is a proposed fix.\n\n%s\n\nIt survived `npm run lint`, `npm run typecheck`, `npm test` and `npm run build`. A patch that failed any of those is discarded and never reaches a pull request.\n\nRead it before merging: it was written by a model from failure logs, which can be confidently wrong in a way a green suite does not catch.\n' "$FAILED_WORKFLOW" "$(cat repair-diagnosis.md 2>/dev/null || echo '_No diagnosis produced._')")"
+
       # ---- self-healing ----------------------------------------------------
       # Only the lockfile, and only when the whole suite passes afterwards.
       # A repair that breaks the site is worse than the fault it replaced.
