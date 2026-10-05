@@ -1,6 +1,6 @@
 # AI and Cybersecurity News Blog Operator Report
 
-Generated: 2026-09-28T15:51:31.663Z
+Generated: 2026-10-05T16:20:43.002Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -54,34 +54,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Automating Amazon Textract adapter lifecycle management across accounts: What It Means for AI/CS Students
+1. ReviewBench: An open benchmark for AI code review: What It Means for AI/CS Students
+   - Source: GitHub Blog
+   - Keyword: best ai model benchmark for students github blog
+   - Monetization angle: benchmark + budget-friendly model/tool choice
+   - CTA: Compare tools + student guide
+2. Making Amazon Quick enterprise-ready: Automated, auditable cross-account resource promotion: What It Means for AI/CS Students
    - Source: AWS ML Blog
    - Keyword: how to build aws ml blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Next.js applications, powered by Vite: introducing Vinext 1.0: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
+3. Agentic retrieval with LangChain and Amazon Bedrock Knowledge Bases: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: how to build aws ml blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Introducing cf: the agentic CLI for the entire Cloudflare API: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
+4. Downgrading user roles in Amazon Quick: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: how to build aws ml blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. How fast is the web? Explore billions of real-user measurements with BEACON: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
+5. Evaluating multi-agent systems for explainability and helpfulness with Amazon Bedrock AgentCore: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: how to build aws ml blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Supporting native Rust in Workers with the new Emscripten target for wasm-bindgen: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. EmDash 1.0: the stable CMS with a secure plugin registry: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
+6. Our approach to EU text provenance rules: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -116,6 +116,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20260928--20260928-automating-amazon-textract-adapter-lifecycle-management-across-a-456549d7.md
-- docs/agent/drafts/20260928--20260928-nextjs-applications-powered-by-vite-introducing-vinext-10-d4dd483c.md
+- docs/agent/drafts/20261005--20261005-reviewbench-an-open-benchmark-for-ai-code-review-4b0c57f2.md
+- docs/agent/drafts/20261005--20261005-making-amazon-quick-enterprise-ready-automated-auditable-cross-a-b9ec7ad0.md
 

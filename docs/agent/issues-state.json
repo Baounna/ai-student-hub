@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T16:59:56.494Z",
+  "generatedAt": "2026-10-05T16:20:43.580Z",
   "repository": "Baounna/ai-student-hub",
   "mode": "disabled",
   "maxPerRun": 3,
@@ -8,19 +8,19 @@
       "sourceId": "operator",
       "label": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "enabled": false,
-      "queueGeneratedAt": "",
-      "totalActions": 0,
-      "selectedCount": 0
+      "enabled": true,
+      "queueGeneratedAt": "2026-10-05T16:20:43.002Z",
+      "totalActions": 13,
+      "selectedCount": 3
     },
     {
       "sourceId": "design",
       "label": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "enabled": true,
-      "queueGeneratedAt": "2026-09-28T16:59:56.323Z",
-      "totalActions": 5,
-      "selectedCount": 3
+      "enabled": false,
+      "queueGeneratedAt": "",
+      "totalActions": 0,
+      "selectedCount": 0
     }
   ],
   "summary": {
@@ -36,7 +36,7 @@
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-09-28T15:51:31.663Z",
+      "queueGeneratedAt": "2026-10-05T16:20:43.002Z",
       "priority": "P1",
       "action": "Add at least 3 valid affiliate links (name + final URL + placement).",
       "why": "Without valid links, affiliate revenue path is blocked.",
@@ -45,15 +45,15 @@
       "title": "[Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).",
       "status": "disabled",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-09-28T15:51:31.806Z",
-      "inQueue": false
+      "lastSeenAt": "2026-10-05T16:20:43.580Z",
+      "inQueue": true
     },
     {
       "hash": "a8f39a3cbc2c9fd0",
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-09-28T15:51:31.663Z",
+      "queueGeneratedAt": "2026-10-05T16:20:43.002Z",
       "priority": "P1",
       "action": "Cover missing affiliate placement: blog.",
       "why": "Missing placement means lost monetization intent on that traffic surface.",
@@ -62,15 +62,15 @@
       "title": "[Operator P1] Cover missing affiliate placement: blog.",
       "status": "disabled",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-09-28T15:51:31.806Z",
-      "inQueue": false
+      "lastSeenAt": "2026-10-05T16:20:43.580Z",
+      "inQueue": true
     },
     {
       "hash": "cb9aea0bb5576d89",
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-09-28T15:51:31.663Z",
+      "queueGeneratedAt": "2026-10-05T16:20:43.002Z",
       "priority": "P1",
       "action": "Cover missing affiliate placement: comparison.",
       "why": "Missing placement means lost monetization intent on that traffic surface.",
@@ -79,8 +79,8 @@
       "title": "[Operator P1] Cover missing affiliate placement: comparison.",
       "status": "disabled",
       "createdAt": "2026-02-19T22:53:00.028Z",
-      "lastSeenAt": "2026-09-28T15:51:31.806Z",
-      "inQueue": false
+      "lastSeenAt": "2026-10-05T16:20:43.580Z",
+      "inQueue": true
     },
     {
       "hash": "df74184273544a1a",
@@ -182,7 +182,7 @@
       "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
       "lastSeenAt": "2026-09-28T16:59:56.494Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "29e4e1db629195e3",
@@ -199,7 +199,7 @@
       "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
       "lastSeenAt": "2026-09-28T16:59:56.494Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "450ace15b309218f",
@@ -216,7 +216,7 @@
       "status": "disabled",
       "createdAt": "2026-09-28T16:59:56.494Z",
       "lastSeenAt": "2026-09-28T16:59:56.494Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "8a7997bd695b6700",
