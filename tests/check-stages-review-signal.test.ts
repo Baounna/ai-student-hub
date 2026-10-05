@@ -43,6 +43,29 @@ describe("the weekly check's review signal", () => {
     expect(WORKFLOW).toMatch(/if: always\(\) && steps\.check\.outputs\.needs_review == 'true'/);
   });
 
+  /**
+   * A count is not a task.
+   *
+   * The issue body is a tail of the script's log, so only what prints near the
+   * end reaches it. "Probably gone" had a block down there and arrived; the
+   * suspect listings had only their inline line among a hundred others and were
+   * cut, so run 37309467443 told a reader "2 need a human" and named neither.
+   * Both blocks must exist, and the tail must be long enough to hold them.
+   */
+  it("names the listings that need a human, not just how many", () => {
+    expect(SCRIPT).toContain("Needs a human");
+    // Each entry carries the three things needed to judge it.
+    const block = SCRIPT.slice(SCRIPT.indexOf("Needs a human"));
+    expect(block).toMatch(/results\.CHECK\b/);
+    expect(block).toMatch(/\$\{stage\.id\}[\s\S]{0,80}\$\{detail\}[\s\S]{0,80}\$\{stage\.href\}/);
+  });
+
+  it("keeps the log tail long enough for both blocks to survive", () => {
+    const tail = Number(WORKFLOW.match(/tail -n (\d+) "\$RUNNER_TEMP\/stages\.log"/)?.[1]);
+    // Three lines per entry, two blocks, plus the summary, marker and footer.
+    expect(tail).toBeGreaterThanOrEqual(60);
+  });
+
   it("still fails the job when a listing looks gone", () => {
     // Reporting more must not mean signalling less.
     expect(WORKFLOW).toMatch(/steps\.check\.outputs\.check_status != '0'/);

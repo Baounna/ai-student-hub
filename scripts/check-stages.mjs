@@ -595,6 +595,24 @@ if (results.CHECK.length || results.GONE.length) {
   );
 }
 
+/*
+ * Both blocks print near the end, and that position is load-bearing.
+ *
+ * The workflow puts `tail -n 80` of this log into the review issue, so anything
+ * printed inside the per-entry loop above is 100-odd lines up and gets cut.
+ * GONE already had a block down here and survived; CHECK had only its inline
+ * line, so the issue said "2 need a human" and never said WHICH two -- a
+ * summary with no way to act on it, which is the same failure as a review
+ * signal that cannot fire. Measured on run 37309467443: the issue named both
+ * dead EDF listings and neither of the two suspect ones.
+ */
+if (results.CHECK.length) {
+  console.log("\n  Needs a human — open each and judge it; leave it listed if the employer merely refused us:");
+  for (const { stage, detail } of results.CHECK) {
+    console.log(`    ${stage.id}\n      ${detail}\n      ${stage.href}`);
+  }
+}
+
 if (results.GONE.length) {
   console.log("\n  Probably gone — open each, then remove it from stages.json by hand:");
   for (const { stage, detail } of results.GONE) console.log(`    ${stage.id}\n      ${detail}\n      ${stage.href}`);

@@ -110,13 +110,17 @@ jobs:
       # always(), so a listing that looks gone still raises the issue rather than
       # only a red X in a tab nobody opens -- the notification channel this
       # project already found does not work.
+      # tail -n 80, not 25. The script prints its two actionable blocks at the
+      # end for this reason, and 25 lines held the "probably gone" block plus
+      # the summary but cut the "needs a human" one, so the issue reported a
+      # count of suspect listings without naming them.
       - name: Open or update the review issue
         if: always() && steps.check.outputs.needs_review == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TITLE="Internship listings need a human look"
-          BODY=$(printf 'The weekly check found listings it will not remove on its own.\n\n```\n%s\n```\n\nOpen each link. If the posting is genuinely gone, delete its entry from `src/content/stages.json`. If the employer simply refused to serve us, leave it: that is a fact about us, not about the job.\n\nRun: `%s`\n' "$(tail -n 25 "$RUNNER_TEMP/stages.log" | tr -d '`')" "npm run check:stages")
+          BODY=$(printf 'The weekly check found listings it will not remove on its own.\n\n```\n%s\n```\n\nOpen each link. If the posting is genuinely gone, delete its entry from `src/content/stages.json`. If the employer simply refused to serve us, leave it: that is a fact about us, not about the job.\n\nRun: `%s`\n' "$(tail -n 80 "$RUNNER_TEMP/stages.log" | tr -d '`')" "npm run check:stages")
           EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
           if [ -n "$EXISTING" ]; then
             gh issue comment "$EXISTING" --body "$BODY"
