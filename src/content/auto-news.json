@@ -1,7 +1,64 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-04T21:21:28.129Z",
+  "updatedAt": "2026-10-05T14:32:15.255Z",
   "items": [
+    {
+      "slug": "20261005-everything-we-launched-during-birthday-week-2026-0536bfa8",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+        },
+        "fr": {
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+        }
+      }
+    },
+    {
+      "slug": "20261005-building-advertising-for-the-way-people-use-ai-3cbec84d",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "publishedAt": "2026-10-05T10:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "Building advertising for the way people use AI",
+          "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
+        },
+        "fr": {
+          "title": "Building advertising for the way people use AI",
+          "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
+        }
+      }
+    },
+    {
+      "slug": "20261005-pgivm-116-released-9d0d6d1e",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_ivm-116-released-3391/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "pg_ivm 1.16 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault when an IMMV…"
+        },
+        "fr": {
+          "title": "pg_ivm 1.16 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault when an IMMV…"
+        }
+      }
+    },
     {
       "slug": "20261003-the-agent-said-it-was-done-the-database-disagreed-89764eae",
       "topic": "AI Systems",
@@ -18,44 +75,6 @@
         "fr": {
           "title": "The Agent Said It Was Done. The Database Disagreed.",
           "summary": "The Agent Said It Was Done. The Database Disagreed."
-        }
-      }
-    },
-    {
-      "slug": "20261002-a-model-guide-for-the-gpt-6-family-8e206c4d",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/practical-guide-building-gpt-6",
-      "publishedAt": "2026-10-02T16:15:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "A model guide for the GPT-6 family",
-          "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
-        },
-        "fr": {
-          "title": "A model guide for the GPT-6 family",
-          "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
-        }
-      }
-    },
-    {
-      "slug": "20261002-streamline-custom-video-pipelines-with-cloudflare-stream-and-wor-2464ff1b",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/streamline/",
-      "publishedAt": "2026-10-02T16:13:45.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
-          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
-        },
-        "fr": {
-          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
-          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
         }
       }
     },
@@ -231,25 +250,6 @@
       }
     },
     {
-      "slug": "20261001-pgpool-ii-473-468-4513-4418-and-4321-released-b4eb1817",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgpool-ii-473-468-4513-4418-and-4321-released-3390/",
-      "publishedAt": "2026-10-01T00:00:00.000Z",
-      "discoveredAt": "2026-10-01T13:08:39.943Z",
-      "locales": {
-        "en": {
-          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
-          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
-        },
-        "fr": {
-          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
-          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
-        }
-      }
-    },
-    {
       "slug": "20260930-gemini-4-argon-our-next-era-of-frontier-intelligence-15e70ee5",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -364,6 +364,63 @@
       }
     },
     {
+      "slug": "20261005-one-year-later-the-power-of-1111-interns-523bb8b1",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/one-year-later-1111-interns/",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
+        },
+        "fr": {
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
+        }
+      }
+    },
+    {
+      "slug": "20261002-a-model-guide-for-the-gpt-6-family-8e206c4d",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/practical-guide-building-gpt-6",
+      "publishedAt": "2026-10-02T16:15:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "A model guide for the GPT-6 family",
+          "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
+        },
+        "fr": {
+          "title": "A model guide for the GPT-6 family",
+          "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
+        }
+      }
+    },
+    {
+      "slug": "20261005-pgvaulttde-v172-critical-crash-fixes-new-on-disk-format-and-stab-35290beb",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v172-critical-crash-fixes-new-on-disk-format-and-stability-improvements-3393/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
+          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuses on criti…"
+        },
+        "fr": {
+          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
+          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuses on criti…"
+        }
+      }
+    },
+    {
       "slug": "20261002-open-sourcing-astabrief-the-fast-report-generation-model-in-asta-d599f0a2",
       "topic": "AI Systems",
       "source": "Hugging Face Blog",
@@ -379,44 +436,6 @@
         "fr": {
           "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
           "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
-        }
-      }
-    },
-    {
-      "slug": "20261002-chatham-scales-its-capital-markets-expertise-with-openai-a97398f7",
-      "topic": "Computer Science",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/chatham-financial",
-      "publishedAt": "2026-10-02T00:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Chatham scales its capital markets expertise with OpenAI",
-          "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
-        },
-        "fr": {
-          "title": "Chatham scales its capital markets expertise with OpenAI",
-          "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
-        }
-      }
-    },
-    {
-      "slug": "20261002-introducing-web-search-api-via-ai-gateway-dcd0ac26",
-      "topic": "Computer Science",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/introducing-web-search-api/",
-      "publishedAt": "2026-10-02T13:28:10.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Web Search API via AI Gateway",
-          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
-        },
-        "fr": {
-          "title": "Introducing Web Search API via AI Gateway",
-          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
         }
       }
     },
@@ -592,25 +611,6 @@
       }
     },
     {
-      "slug": "20260929-dasha-18-index-recommendations-io-analysis-schema-checks-and-log-e42d6b25",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/dasha-18-index-recommendations-io-analysis-schema-checks-and-log-insights-3387/",
-      "publishedAt": "2026-09-29T00:00:00.000Z",
-      "discoveredAt": "2026-09-29T12:48:58.498Z",
-      "locales": {
-        "en": {
-          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
-          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
-        },
-        "fr": {
-          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
-          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
-        }
-      }
-    },
-    {
       "slug": "20260930-introducing-synthid-bio-0a622a33",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -706,6 +706,63 @@
       }
     },
     {
+      "slug": "20261002-streamline-custom-video-pipelines-with-cloudflare-stream-and-wor-2464ff1b",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/streamline/",
+      "publishedAt": "2026-10-02T16:13:45.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
+        },
+        "fr": {
+          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
+        }
+      }
+    },
+    {
+      "slug": "20261002-chatham-scales-its-capital-markets-expertise-with-openai-a97398f7",
+      "topic": "Computer Science",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/chatham-financial",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Chatham scales its capital markets expertise with OpenAI",
+          "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
+        },
+        "fr": {
+          "title": "Chatham scales its capital markets expertise with OpenAI",
+          "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
+        }
+      }
+    },
+    {
+      "slug": "20261005-dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-a-4dad8a1f",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-and-broader-context-for-dbforge-ai-assistant-3394/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
+          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database management softwar…"
+        },
+        "fr": {
+          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
+          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database management softwar…"
+        }
+      }
+    },
+    {
       "slug": "20261002-autosynthdata-generating-training-data-for-enterprise-agents-a885ed61",
       "topic": "AI Systems",
       "source": "Hugging Face Blog",
@@ -721,44 +778,6 @@
         "fr": {
           "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
           "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
-        }
-      }
-    },
-    {
-      "slug": "20261001-the-eternal-complement-7e67b43c",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/the-eternal-complement",
-      "publishedAt": "2026-10-01T17:00:00.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "The eternal complement",
-          "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress."
-        },
-        "fr": {
-          "title": "The eternal complement",
-          "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress."
-        }
-      }
-    },
-    {
-      "slug": "20261002-8-major-updates-to-cloudflare-observability-423bae1f",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/one-observability-platform/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "8 major updates to Cloudflare Observability",
-          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
-        },
-        "fr": {
-          "title": "8 major updates to Cloudflare Observability",
-          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
         }
       }
     },
@@ -934,25 +953,6 @@
       }
     },
     {
-      "slug": "20260928-plhaskell-v60-released-22b5aed3",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/plhaskell-v60-released-3388/",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-28T15:51:30.407Z",
-      "locales": {
-        "en": {
-          "title": "PL/Haskell v6.0 Released",
-          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
-        },
-        "fr": {
-          "title": "PL/Haskell v6.0 Released",
-          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
-        }
-      }
-    },
-    {
       "slug": "20260924-introducing-gemini-38-live-with-live-avatar-e7107d9a",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -1048,6 +1048,63 @@
       }
     },
     {
+      "slug": "20261002-introducing-web-search-api-via-ai-gateway-dcd0ac26",
+      "topic": "Computer Science",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/introducing-web-search-api/",
+      "publishedAt": "2026-10-02T13:28:10.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Web Search API via AI Gateway",
+          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
+        },
+        "fr": {
+          "title": "Introducing Web Search API via AI Gateway",
+          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-the-eternal-complement-7e67b43c",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/the-eternal-complement",
+      "publishedAt": "2026-10-01T17:00:00.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "The eternal complement",
+          "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress."
+        },
+        "fr": {
+          "title": "The eternal complement",
+          "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress."
+        }
+      }
+    },
+    {
+      "slug": "20261005-pgvector-087-released-9f7f16c5",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgvector-087-released-3392/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details: https://g…"
+        },
+        "fr": {
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details: https://g…"
+        }
+      }
+    },
+    {
       "slug": "20261001-introducing-olmo-core-3-open-scalable-training-infrastructure-fo-0bf00b70",
       "topic": "AI Systems",
       "source": "Hugging Face Blog",
@@ -1063,44 +1120,6 @@
         "fr": {
           "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
           "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
-        }
-      }
-    },
-    {
-      "slug": "20261001-how-albertsons-companies-is-reimagining-retail-from-the-inside-o-a80484c2",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/albertsons-reimagining-retail",
-      "publishedAt": "2026-10-01T16:00:00.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "How Albertsons Companies is reimagining retail from the inside out",
-          "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
-        },
-        "fr": {
-          "title": "How Albertsons Companies is reimagining retail from the inside out",
-          "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
-        }
-      }
-    },
-    {
-      "slug": "20261002-introducing-cloudflare-traces-follow-requests-through-our-entire-9c3a3363",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflare-tracing/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
-          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
-        },
-        "fr": {
-          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
-          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
         }
       }
     },
@@ -1276,25 +1295,6 @@
       }
     },
     {
-      "slug": "20260928-pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform--1249398e",
-      "topic": "Computer Systems",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform-to-bridge-the-ai-prototype-to-production-chasm-3389/",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-28T15:51:30.407Z",
-      "locales": {
-        "en": {
-          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
-          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
-        },
-        "fr": {
-          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
-          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
-        }
-      }
-    },
-    {
       "slug": "20260923-advancing-private-ai-compute-with-secure-server-side-memory-4c4abcff",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -1390,6 +1390,63 @@
       }
     },
     {
+      "slug": "20261002-8-major-updates-to-cloudflare-observability-423bae1f",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/one-observability-platform/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "8 major updates to Cloudflare Observability",
+          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
+        },
+        "fr": {
+          "title": "8 major updates to Cloudflare Observability",
+          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
+        }
+      }
+    },
+    {
+      "slug": "20261001-how-albertsons-companies-is-reimagining-retail-from-the-inside-o-a80484c2",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/albertsons-reimagining-retail",
+      "publishedAt": "2026-10-01T16:00:00.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "How Albertsons Companies is reimagining retail from the inside out",
+          "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
+        },
+        "fr": {
+          "title": "How Albertsons Companies is reimagining retail from the inside out",
+          "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
+        }
+      }
+    },
+    {
+      "slug": "20261001-pgpool-ii-473-468-4513-4418-and-4321-released-b4eb1817",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgpool-ii-473-468-4513-4418-and-4321-released-3390/",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
+          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
+        },
+        "fr": {
+          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
+          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
+        }
+      }
+    },
+    {
       "slug": "20260930-open-tts-leaderboard-scalable-evaluation-for-multilingual-text-t-581ab311",
       "topic": "AI Systems",
       "source": "Hugging Face Blog",
@@ -1405,44 +1462,6 @@
         "fr": {
           "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
           "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
-        }
-      }
-    },
-    {
-      "slug": "20261001-the-den-frees-up-10-15-hours-a-week-to-grow-with-chatgpt-work-3bba5275",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/the-den-family-social",
-      "publishedAt": "2026-10-01T00:00:00.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
-          "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days."
-        },
-        "fr": {
-          "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
-          "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days."
-        }
-      }
-    },
-    {
-      "slug": "20261002-updates-on-our-pledge-to-make-cloudflare-features-accessible-to--a7fc3ad4",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/enterprise-for-all-update/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
-          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
-        },
-        "fr": {
-          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
-          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
         }
       }
     },
@@ -1618,25 +1637,6 @@
       }
     },
     {
-      "slug": "20260924-postgresql-19-beta-4-released-a454f777",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-19-beta-4-released-3386/",
-      "publishedAt": "2026-09-24T00:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL 19 Beta 4 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
-        },
-        "fr": {
-          "title": "PostgreSQL 19 Beta 4 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
-        }
-      }
-    },
-    {
       "slug": "20260923-gemini-38-text-to-speech-says-hello-be2314c6",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -1732,6 +1732,63 @@
       }
     },
     {
+      "slug": "20261002-introducing-cloudflare-traces-follow-requests-through-our-entire-9c3a3363",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/cloudflare-tracing/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
+        },
+        "fr": {
+          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
+        }
+      }
+    },
+    {
+      "slug": "20261001-the-den-frees-up-10-15-hours-a-week-to-grow-with-chatgpt-work-3bba5275",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/the-den-family-social",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+          "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days."
+        },
+        "fr": {
+          "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+          "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days."
+        }
+      }
+    },
+    {
+      "slug": "20260929-dasha-18-index-recommendations-io-analysis-schema-checks-and-log-e42d6b25",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/dasha-18-index-recommendations-io-analysis-schema-checks-and-log-insights-3387/",
+      "publishedAt": "2026-09-29T00:00:00.000Z",
+      "discoveredAt": "2026-09-29T12:48:58.498Z",
+      "locales": {
+        "en": {
+          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
+          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
+        },
+        "fr": {
+          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
+          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
+        }
+      }
+    },
+    {
       "slug": "20260929-nvidia-kumo-tabular-sets-a-new-accuracy-efficiency-frontier-for--493cf3fc",
       "topic": "AI Systems",
       "source": "Hugging Face Blog",
@@ -1747,44 +1804,6 @@
         "fr": {
           "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
           "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
-        }
-      }
-    },
-    {
-      "slug": "20260930-disrupting-a-coordinated-model-distillation-campaign-6a91381a",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-      "publishedAt": "2026-09-30T10:30:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Disrupting a coordinated model-distillation campaign",
-          "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation."
-        },
-        "fr": {
-          "title": "Disrupting a coordinated model-distillation campaign",
-          "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation."
-        }
-      }
-    },
-    {
-      "slug": "20261002-announcing-cloudflare-ohttp-gateway-expanding-access-to-cloudfla-ddac069f",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
-          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
-        },
-        "fr": {
-          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
-          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
         }
       }
     },
@@ -1941,25 +1960,6 @@
       }
     },
     {
-      "slug": "20260923-pgbouncer-1260-released---fixes-three-cves-10080888",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgbouncer-1260-released-fixes-three-cves-3385/",
-      "publishedAt": "2026-09-23T00:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
-        },
-        "fr": {
-          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
-        }
-      }
-    },
-    {
       "slug": "20260915-introducing-gemini-38-live-and-38-live-extended-thinking-f4c3141c",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -2055,6 +2055,63 @@
       }
     },
     {
+      "slug": "20261002-updates-on-our-pledge-to-make-cloudflare-features-accessible-to--a7fc3ad4",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/enterprise-for-all-update/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
+        },
+        "fr": {
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
+        }
+      }
+    },
+    {
+      "slug": "20260930-disrupting-a-coordinated-model-distillation-campaign-6a91381a",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "publishedAt": "2026-09-30T10:30:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Disrupting a coordinated model-distillation campaign",
+          "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation."
+        },
+        "fr": {
+          "title": "Disrupting a coordinated model-distillation campaign",
+          "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation."
+        }
+      }
+    },
+    {
+      "slug": "20260928-plhaskell-v60-released-22b5aed3",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/plhaskell-v60-released-3388/",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "locales": {
+        "en": {
+          "title": "PL/Haskell v6.0 Released",
+          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+        },
+        "fr": {
+          "title": "PL/Haskell v6.0 Released",
+          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+        }
+      }
+    },
+    {
       "slug": "20260929-getting-the-source-right-not-just-the-fact-source-aware-verifica-984223f1",
       "topic": "AI Systems",
       "source": "Hugging Face Blog",
@@ -2070,44 +2127,6 @@
         "fr": {
           "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
           "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
-        }
-      }
-    },
-    {
-      "slug": "20260930-helping-small-businesses-put-ai-to-work-b5e5e434",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
-      "publishedAt": "2026-09-30T10:00:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Helping small businesses put AI to work",
-          "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI."
-        },
-        "fr": {
-          "title": "Helping small businesses put AI to work",
-          "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI."
-        }
-      }
-    },
-    {
-      "slug": "20261002-follow-the-thread-a-new-dashboard-to-investigate-account-abuse-e58ff1b2",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Follow the thread: a new dashboard to investigate account abuse",
-          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
-        },
-        "fr": {
-          "title": "Follow the thread: a new dashboard to investigate account abuse",
-          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
         }
       }
     },
@@ -2264,25 +2283,6 @@
       }
     },
     {
-      "slug": "20260922-sql-manager-for-postgresql-70-meet-the-ai-assistant-2ae8d80a",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/sql-manager-for-postgresql-70-meet-the-ai-assistant-3379/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
-          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
-        },
-        "fr": {
-          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
-          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
-        }
-      }
-    },
-    {
       "slug": "20260908-alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter--80d284f5",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -2359,6 +2359,63 @@
       }
     },
     {
+      "slug": "20261002-announcing-cloudflare-ohttp-gateway-expanding-access-to-cloudfla-ddac069f",
+      "topic": "Security & Standards",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
+        },
+        "fr": {
+          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
+        }
+      }
+    },
+    {
+      "slug": "20260930-helping-small-businesses-put-ai-to-work-b5e5e434",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+      "publishedAt": "2026-09-30T10:00:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Helping small businesses put AI to work",
+          "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI."
+        },
+        "fr": {
+          "title": "Helping small businesses put AI to work",
+          "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI."
+        }
+      }
+    },
+    {
+      "slug": "20260928-pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform--1249398e",
+      "topic": "Computer Systems",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform-to-bridge-the-ai-prototype-to-production-chasm-3389/",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "locales": {
+        "en": {
+          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
+          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+        },
+        "fr": {
+          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
+          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+        }
+      }
+    },
+    {
       "slug": "20260928-holo4-powering-generalist-computer-use-agents-9552195c",
       "topic": "AI Systems",
       "source": "Hugging Face Blog",
@@ -2374,44 +2431,6 @@
         "fr": {
           "title": "Holo4: powering generalist computer-use agents",
           "summary": "Holo4: powering generalist computer-use agents"
-        }
-      }
-    },
-    {
-      "slug": "20260929-introducing-gpt-61-sol-dd66acae",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/introducing-gpt-6-1-sol",
-      "publishedAt": "2026-09-29T10:00:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "Introducing GPT-6.1 Sol",
-          "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices."
-        },
-        "fr": {
-          "title": "Introducing GPT-6.1 Sol",
-          "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices."
-        }
-      }
-    },
-    {
-      "slug": "20261002-protected-quick-tunnels-simple-accountless-authentication-for-yo-c76f1b29",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/protected-quick-tunnels/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
-          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
-        },
-        "fr": {
-          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
-          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
         }
       }
     },
@@ -2568,25 +2587,6 @@
       }
     },
     {
-      "slug": "20260922-pgsql-test-real-postgres-testing-for-faster-development-loops-212e48db",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgsql-test-real-postgres-testing-for-faster-development-loops-3380/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
-          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
-        },
-        "fr": {
-          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
-          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
-        }
-      }
-    },
-    {
       "slug": "20260903-introducing-weathernext-3-our-most-advanced-and-accurate-global--56da2c8e",
       "topic": "AI Systems",
       "source": "DeepMind Blog",
@@ -2663,59 +2663,78 @@
       }
     },
     {
-      "slug": "20260924-accelerating-vision-language-models-with-lfm25-vl-dspark-c2a53f23",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-      "publishedAt": "2026-09-24T14:08:57.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
-        },
-        "fr": {
-          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
-        }
-      }
-    },
-    {
-      "slug": "20260929-devday-2026-recap-19db7cc5",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/devday-2026-recap",
-      "publishedAt": "2026-09-29T10:00:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "DevDay 2026 Recap",
-          "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders."
-        },
-        "fr": {
-          "title": "DevDay 2026 Recap",
-          "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders."
-        }
-      }
-    },
-    {
-      "slug": "20261002-building-for-good-how-civil-society-organizations-are-automating-823db2de",
-      "topic": "Computer Systems",
+      "slug": "20261002-follow-the-thread-a-new-dashboard-to-investigate-account-abuse-e58ff1b2",
+      "topic": "Security & Standards",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/civil-society-automation/",
+      "href": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
       "discoveredAt": "2026-10-02T22:11:35.130Z",
       "locales": {
         "en": {
-          "title": "Building for good: How civil society organizations are automating on Cloudflare",
-          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
+          "title": "Follow the thread: a new dashboard to investigate account abuse",
+          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
         },
         "fr": {
-          "title": "Building for good: How civil society organizations are automating on Cloudflare",
-          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
+          "title": "Follow the thread: a new dashboard to investigate account abuse",
+          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
+        }
+      }
+    },
+    {
+      "slug": "20260929-introducing-gpt-61-sol-dd66acae",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "publishedAt": "2026-09-29T10:00:00.000Z",
+      "discoveredAt": "2026-09-29T22:13:00.950Z",
+      "locales": {
+        "en": {
+          "title": "Introducing GPT-6.1 Sol",
+          "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices."
+        },
+        "fr": {
+          "title": "Introducing GPT-6.1 Sol",
+          "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices."
+        }
+      }
+    },
+    {
+      "slug": "20260924-postgresql-19-beta-4-released-a454f777",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-19-beta-4-released-3386/",
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL 19 Beta 4 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+        },
+        "fr": {
+          "title": "PostgreSQL 19 Beta 4 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+        }
+      }
+    },
+    {
+      "slug": "20260928-welcome-rl-environments-to-the-hub-a30a6af0",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/rl-environments",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "Welcome RL Environments to the hub",
+          "summary": "Welcome RL Environments to the hub"
+        },
+        "fr": {
+          "title": "Welcome RL Environments to the hub",
+          "summary": "Welcome RL Environments to the hub"
         }
       }
     },
@@ -2872,25 +2891,6 @@
       }
     },
     {
-      "slug": "20260922-postgrescompare-220-released-ffbdcf1e",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgrescompare-220-released-3382/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "PostgresCompare 2.2.0 Released",
-          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
-        },
-        "fr": {
-          "title": "PostgresCompare 2.2.0 Released",
-          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
-        }
-      }
-    },
-    {
       "slug": "20260902-proactive-cyber-defense-for-governments-and-enterprises-383dbcd7",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -2948,59 +2948,78 @@
       }
     },
     {
-      "slug": "20260923-how-to-use-nvidia-warp-and-mjwarp-to-accelerate-robotics-simulat-a70f8ac6",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
-      "publishedAt": "2026-09-23T18:41:40.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
-          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
-        },
-        "fr": {
-          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
-          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
-        }
-      }
-    },
-    {
-      "slug": "20260929-introducing-dots-884977ec",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/introducing-dots",
-      "publishedAt": "2026-09-29T00:00:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "Introducing dots",
-          "summary": "Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward."
-        },
-        "fr": {
-          "title": "Introducing dots",
-          "summary": "Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward."
-        }
-      }
-    },
-    {
-      "slug": "20261002-2026-birthday-week-network-performance-update-d7660457",
-      "topic": "AI Performance",
+      "slug": "20261002-protected-quick-tunnels-simple-accountless-authentication-for-yo-c76f1b29",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
+      "href": "https://blog.cloudflare.com/protected-quick-tunnels/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
       "discoveredAt": "2026-10-02T22:11:35.130Z",
       "locales": {
         "en": {
-          "title": "2026 Birthday week: network performance update",
-          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
+          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
+          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
         },
         "fr": {
-          "title": "2026 Birthday week: network performance update",
-          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
+          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
+          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
+        }
+      }
+    },
+    {
+      "slug": "20260929-devday-2026-recap-19db7cc5",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/devday-2026-recap",
+      "publishedAt": "2026-09-29T10:00:00.000Z",
+      "discoveredAt": "2026-09-29T22:13:00.950Z",
+      "locales": {
+        "en": {
+          "title": "DevDay 2026 Recap",
+          "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders."
+        },
+        "fr": {
+          "title": "DevDay 2026 Recap",
+          "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders."
+        }
+      }
+    },
+    {
+      "slug": "20260923-pgbouncer-1260-released---fixes-three-cves-10080888",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgbouncer-1260-released-fixes-three-cves-3385/",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+        },
+        "fr": {
+          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+        }
+      }
+    },
+    {
+      "slug": "20260924-accelerating-vision-language-models-with-lfm25-vl-dspark-c2a53f23",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "publishedAt": "2026-09-24T14:08:57.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
+        },
+        "fr": {
+          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
         }
       }
     },
@@ -3081,25 +3100,6 @@
       }
     },
     {
-      "slug": "20260821-enabling-the-next-generation-trait-solver-on-nightly-2af193cf",
-      "topic": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/08/21/enabling-next-solver-on-nightly/",
-      "publishedAt": "2026-08-21T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Enabling the next-generation trait solver on nightly",
-          "summary": "Enabling the next-generation trait solver on nightly"
-        },
-        "fr": {
-          "title": "Enabling the next-generation trait solver on nightly",
-          "summary": "Enabling the next-generation trait solver on nightly"
-        }
-      }
-    },
-    {
       "slug": "20261001-accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros-930fe613",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -3134,25 +3134,6 @@
         "fr": {
           "title": "Below the Harness: Governing a Multi-Model, Multi-Harness World",
           "summary": "We believe the future is a multi-model, multi-harness world. And we think it needs a new trust model. In 1988, Norm Hardy described a problem that had been quietly breaking systems for years: the confused deputy. A program that t…"
-        }
-      }
-    },
-    {
-      "slug": "20260917-pgadmin-4-v918-released-413bcda5",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:49.442Z",
-      "locales": {
-        "en": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
-        },
-        "fr": {
-          "title": "pgAdmin 4 v9.18 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
         }
       }
     },
@@ -3214,59 +3195,78 @@
       }
     },
     {
-      "slug": "20260922-how-uk-aisi-and-evaleval-are-making-benchmark-results-reproducib-2960c64a",
-      "topic": "AI Performance",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/evaleval-aisi",
+      "slug": "20261002-building-for-good-how-civil-society-organizations-are-automating-823db2de",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/civil-society-automation/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Building for good: How civil society organizations are automating on Cloudflare",
+          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
+        },
+        "fr": {
+          "title": "Building for good: How civil society organizations are automating on Cloudflare",
+          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
+        }
+      }
+    },
+    {
+      "slug": "20260929-introducing-dots-884977ec",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/introducing-dots",
+      "publishedAt": "2026-09-29T00:00:00.000Z",
+      "discoveredAt": "2026-09-29T22:13:00.950Z",
+      "locales": {
+        "en": {
+          "title": "Introducing dots",
+          "summary": "Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward."
+        },
+        "fr": {
+          "title": "Introducing dots",
+          "summary": "Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward."
+        }
+      }
+    },
+    {
+      "slug": "20260922-sql-manager-for-postgresql-70-meet-the-ai-assistant-2ae8d80a",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/sql-manager-for-postgresql-70-meet-the-ai-assistant-3379/",
       "publishedAt": "2026-09-22T00:00:00.000Z",
       "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
+          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
+          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
         },
         "fr": {
-          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
+          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
+          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
         }
       }
     },
     {
-      "slug": "20260928-how-we-will-do-better-for-australia-cfe8e900",
+      "slug": "20260923-how-to-use-nvidia-warp-and-mjwarp-to-accelerate-robotics-simulat-a70f8ac6",
       "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/how-we-will-do-better-for-australia",
-      "publishedAt": "2026-09-28T19:00:00.000Z",
-      "discoveredAt": "2026-09-29T12:48:58.498Z",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+      "publishedAt": "2026-09-23T18:41:40.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
       "locales": {
         "en": {
-          "title": "How we will do better for Australia",
-          "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences."
+          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
         },
         "fr": {
-          "title": "How we will do better for Australia",
-          "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences."
-        }
-      }
-    },
-    {
-      "slug": "20261001-introducing-clef-our-open-source-decision-models-and-new-rl-fine-ebb2d785",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/clef-decision-models/",
-      "publishedAt": "2026-10-01T15:34:02.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
-          "summary": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tu…"
-        },
-        "fr": {
-          "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
-          "summary": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tu…"
+          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
         }
       }
     },
@@ -3385,25 +3385,6 @@
       }
     },
     {
-      "slug": "20260916-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
-      "publishedAt": "2026-09-16T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:35.562Z",
-      "locales": {
-        "en": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
-        },
-        "fr": {
-          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
-          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
-        }
-      }
-    },
-    {
       "slug": "20260901-introducing-agentic-video-understanding-with-gemini-dfd1ea2e",
       "topic": "AI Systems",
       "source": "DeepMind Blog",
@@ -3461,59 +3442,78 @@
       }
     },
     {
-      "slug": "20260922-transformers-now-runs-llamacpp-quants-98acfe91",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/transformers-llama-cpp-quants",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "slug": "20261002-2026-birthday-week-network-performance-update-d7660457",
+      "topic": "AI Performance",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
       "locales": {
         "en": {
-          "title": "Transformers now runs llama.cpp quants",
-          "summary": "Transformers now runs llama.cpp quants"
+          "title": "2026 Birthday week: network performance update",
+          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
         },
         "fr": {
-          "title": "Transformers now runs llama.cpp quants",
-          "summary": "Transformers now runs llama.cpp quants"
+          "title": "2026 Birthday week: network performance update",
+          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
         }
       }
     },
     {
-      "slug": "20260928-towards-safety-cases-for-frontier-ai-training-cf468ec3",
-      "topic": "Security & Standards",
+      "slug": "20260928-how-we-will-do-better-for-australia-cfe8e900",
+      "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "href": "https://openai.com/index/how-we-will-do-better-for-australia",
       "publishedAt": "2026-09-28T19:00:00.000Z",
       "discoveredAt": "2026-09-29T12:48:58.498Z",
       "locales": {
         "en": {
-          "title": "Towards safety cases for frontier AI training",
-          "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents"
+          "title": "How we will do better for Australia",
+          "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences."
         },
         "fr": {
-          "title": "Towards safety cases for frontier AI training",
-          "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents"
+          "title": "How we will do better for Australia",
+          "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences."
         }
       }
     },
     {
-      "slug": "20261001-one-year-later-sovereign-ai-and-the-fight-for-choice-aff28bc6",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
-      "publishedAt": "2026-10-01T13:04:19.000Z",
-      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "slug": "20260922-pgsql-test-real-postgres-testing-for-faster-development-loops-212e48db",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgsql-test-real-postgres-testing-for-faster-development-loops-3380/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
       "locales": {
         "en": {
-          "title": "One year later: Sovereign AI and the fight for choice",
-          "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice."
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
         },
         "fr": {
-          "title": "One year later: Sovereign AI and the fight for choice",
-          "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice."
+          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
+          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-how-uk-aisi-and-evaleval-are-making-benchmark-results-reproducib-2960c64a",
+      "topic": "AI Performance",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/evaleval-aisi",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
+        },
+        "fr": {
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
         }
       }
     },
@@ -3632,25 +3632,6 @@
       }
     },
     {
-      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
-      "publishedAt": "2026-09-11T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
-        },
-        "fr": {
-          "title": "CERN PGDay 2027: Announcement and CfP",
-          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
-        }
-      }
-    },
-    {
       "slug": "20260827-gemini-omni-11-flash-lets-you-build-with-more-control-a13e39d4",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -3708,59 +3689,78 @@
       }
     },
     {
-      "slug": "20260922-jun-kim-omlx-creator-and-maintainer-joins-hugging-face-to-suppor-fb8ad85c",
+      "slug": "20261001-introducing-clef-our-open-source-decision-models-and-new-rl-fine-ebb2d785",
       "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/omlx",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/clef-decision-models/",
+      "publishedAt": "2026-10-01T15:34:02.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+          "summary": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tu…"
+        },
+        "fr": {
+          "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+          "summary": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tu…"
+        }
+      }
+    },
+    {
+      "slug": "20260928-towards-safety-cases-for-frontier-ai-training-cf468ec3",
+      "topic": "Security & Standards",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "publishedAt": "2026-09-28T19:00:00.000Z",
+      "discoveredAt": "2026-09-29T12:48:58.498Z",
+      "locales": {
+        "en": {
+          "title": "Towards safety cases for frontier AI training",
+          "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents"
+        },
+        "fr": {
+          "title": "Towards safety cases for frontier AI training",
+          "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents"
+        }
+      }
+    },
+    {
+      "slug": "20260922-postgrescompare-220-released-ffbdcf1e",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgrescompare-220-released-3382/",
       "publishedAt": "2026-09-22T00:00:00.000Z",
       "discoveredAt": "2026-09-22T11:34:35.588Z",
       "locales": {
         "en": {
-          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
         },
         "fr": {
-          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
+          "title": "PostgresCompare 2.2.0 Released",
+          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
         }
       }
     },
     {
-      "slug": "20260928-the-lenfest-institute-grows-landmark-program-with-expanded-opena-216d56bb",
+      "slug": "20260922-transformers-now-runs-llamacpp-quants-98acfe91",
       "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-      "publishedAt": "2026-09-28T07:00:00.000Z",
-      "discoveredAt": "2026-09-28T23:14:35.810Z",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
       "locales": {
         "en": {
-          "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-          "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support."
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
         },
         "fr": {
-          "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-          "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support."
-        }
-      }
-    },
-    {
-      "slug": "20261001-announcing-cloudflare-k2-serverless-event-streams-d7084788",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflare-k2-streams/",
-      "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-04T21:21:28.129Z",
-      "locales": {
-        "en": {
-          "title": "Announcing Cloudflare K2: serverless event streams",
-          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered…"
-        },
-        "fr": {
-          "title": "Announcing Cloudflare K2: serverless event streams",
-          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered…"
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
         }
       }
     },
@@ -3879,25 +3879,6 @@
       }
     },
     {
-      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
-        },
-        "fr": {
-          "title": "PostgreSQL Migrator 1.0 : first stable release",
-          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
-        }
-      }
-    },
-    {
       "slug": "20260827-piloting-the-worlds-first-double-blind-ai-evaluations-d9b2bc36",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -3955,59 +3936,78 @@
       }
     },
     {
-      "slug": "20260921-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimiza-c701b570",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-      "publishedAt": "2026-09-21T13:44:34.000Z",
-      "discoveredAt": "2026-09-21T14:30:28.060Z",
-      "locales": {
-        "en": {
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
-        },
-        "fr": {
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
-        }
-      }
-    },
-    {
-      "slug": "20260928-basis-completes-a-tax-workbook-2x-faster-with-gpt-6-astra-bf0fe8cc",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/basis-tax-workbook-with-astra",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-28T23:14:35.810Z",
-      "locales": {
-        "en": {
-          "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-          "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
-        },
-        "fr": {
-          "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-          "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
-        }
-      }
-    },
-    {
-      "slug": "20261001-we-want-you-to-build-the-next-git-platform-on-cloudflare-7b804092",
+      "slug": "20261001-one-year-later-sovereign-ai-and-the-fight-for-choice-aff28bc6",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
-      "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-04T21:21:28.129Z",
+      "href": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
+      "publishedAt": "2026-10-01T13:04:19.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
       "locales": {
         "en": {
-          "title": "We want you to build the next Git platform on Cloudflare",
-          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes."
+          "title": "One year later: Sovereign AI and the fight for choice",
+          "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice."
         },
         "fr": {
-          "title": "We want you to build the next Git platform on Cloudflare",
-          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes."
+          "title": "One year later: Sovereign AI and the fight for choice",
+          "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice."
+        }
+      }
+    },
+    {
+      "slug": "20260928-the-lenfest-institute-grows-landmark-program-with-expanded-opena-216d56bb",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "publishedAt": "2026-09-28T07:00:00.000Z",
+      "discoveredAt": "2026-09-28T23:14:35.810Z",
+      "locales": {
+        "en": {
+          "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+          "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support."
+        },
+        "fr": {
+          "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+          "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support."
+        }
+      }
+    },
+    {
+      "slug": "20260917-pgadmin-4-v918-released-413bcda5",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgadmin-4-v918-released-3381/",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-17T21:19:49.442Z",
+      "locales": {
+        "en": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+        },
+        "fr": {
+          "title": "pgAdmin 4 v9.18 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce the release of pgAdmin 4 version 9.18. This release of pgAdmin 4 includes 29 bug fixes and new features, including fixes for four security vulnerabilities (CVE-2026-86861 throug…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-jun-kim-omlx-creator-and-maintainer-joins-hugging-face-to-suppor-fb8ad85c",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/omlx",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
+        },
+        "fr": {
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
         }
       }
     },
@@ -4088,44 +4088,6 @@
       }
     },
     {
-      "slug": "20260821-running-ai-agents-in-github-actions-with-docker-sandboxes-bb2305d2",
-      "topic": "AI Systems",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/running-ai-agents-in-github-actions-with-docker-sandboxes/",
-      "publishedAt": "2026-08-21T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Running AI agents in GitHub Actions with Docker Sandboxes",
-          "summary": "Run AI agents in GitHub Actions with Docker Sandboxes. See how isolated agents can run Testcontainers tests, fix code, and open draft pull requests."
-        },
-        "fr": {
-          "title": "Running AI agents in GitHub Actions with Docker Sandboxes",
-          "summary": "Run AI agents in GitHub Actions with Docker Sandboxes. See how isolated agents can run Testcontainers tests, fix code, and open draft pull requests."
-        }
-      }
-    },
-    {
-      "slug": "20260910-pgvaulttde-v171-transparent-data-encryption-for-postgresql-17-an-8b0f1977",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v171-transparent-data-encryption-for-postgresql-17-and-18-3376/",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
-        },
-        "fr": {
-          "title": "pg_vault_tde v1.7.1 : Transparent Data Encryption for PostgreSQL 17 and 18",
-          "summary": "pg_vault_tde provides Transparent Data Encryption for PostgreSQL 17 and 18. A table access method, encrypted_heap , encrypts every tuple with AES-256-GCM before it reaches the storage manager and decrypts it after it leaves, so a…"
-        }
-      }
-    },
-    {
       "slug": "20260826-intelligent-transcription-with-gemini-35-transcribe-83abfc08",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -4183,59 +4145,78 @@
       }
     },
     {
-      "slug": "20260921-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/tokenizers-v1",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
-      "discoveredAt": "2026-09-21T14:30:28.060Z",
-      "locales": {
-        "en": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
-        },
-        "fr": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
-        }
-      }
-    },
-    {
-      "slug": "20260925-proaction-boosts-sales-60-and-saves-75-hours-with-codex-d2d497e5",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/proaction",
-      "publishedAt": "2026-09-25T19:00:00.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
-      "locales": {
-        "en": {
-          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
-        },
-        "fr": {
-          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
-        }
-      }
-    },
-    {
-      "slug": "20261001-ai-search-is-now-generally-available-1309166d",
+      "slug": "20261001-introducing-workers-kv-instant-powered-by-quicksilver-2124bce0",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/ai-search-ga/",
+      "href": "https://blog.cloudflare.com/workers-kv-instant/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-03T11:36:50.878Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
       "locales": {
         "en": {
-          "title": "AI Search is now generally available",
-          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pri…"
+          "title": "Introducing Workers KV Instant — powered by Quicksilver",
+          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
         },
         "fr": {
-          "title": "AI Search is now generally available",
-          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pri…"
+          "title": "Introducing Workers KV Instant — powered by Quicksilver",
+          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
+        }
+      }
+    },
+    {
+      "slug": "20260928-basis-completes-a-tax-workbook-2x-faster-with-gpt-6-astra-bf0fe8cc",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/basis-tax-workbook-with-astra",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T23:14:35.810Z",
+      "locales": {
+        "en": {
+          "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+          "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
+        },
+        "fr": {
+          "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+          "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
+        }
+      }
+    },
+    {
+      "slug": "20260916-pgassistant-380-continuous-improvement-loop-for-postgres-801aedac",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgassistant-380-continuous-improvement-loop-for-postgres-3378/",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:35.562Z",
+      "locales": {
+        "en": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+        },
+        "fr": {
+          "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
+          "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
+        }
+      }
+    },
+    {
+      "slug": "20260921-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimiza-c701b570",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "publishedAt": "2026-09-21T13:44:34.000Z",
+      "discoveredAt": "2026-09-21T14:30:28.060Z",
+      "locales": {
+        "en": {
+          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
+        },
+        "fr": {
+          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
         }
       }
     },
@@ -4316,44 +4297,6 @@
       }
     },
     {
-      "slug": "20260909-postgresql-anonymizer-32-faster-pseudonymization-b2f57d1d",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-32-faster-pseudonymization-3373/",
-      "publishedAt": "2026-09-09T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
-        },
-        "fr": {
-          "title": "PostgreSQL Anonymizer 3.2 : Faster Pseudonymization",
-          "summary": "Eymoutiers, France, Septembre 4th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.2 introducing a new panel of fast pseudonymization filters. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an exten…"
-        }
-      }
-    },
-    {
-      "slug": "20260821-from-atari-to-eve-online-building-on-15-years-of-ai-research-in--06daba08",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
-      "publishedAt": "2026-08-21T11:59:48.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-          "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay."
-        },
-        "fr": {
-          "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-          "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay."
-        }
-      }
-    },
-    {
       "slug": "20260908-beyond-the-benchmark-how-an-adaptive-approach-drives-scientific--c3e4a63e",
       "topic": "AI Performance",
       "source": "Azure AI Blog",
@@ -4392,59 +4335,78 @@
       }
     },
     {
-      "slug": "20260915-your-agent-aced-the-task-will-it-do-it-again-16a7b27e",
+      "slug": "20261001-cloudflare-os-your-companys-agent-workspace-managed-for-you-8b10a1bc",
       "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-      "publishedAt": "2026-09-15T16:00:44.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/managed-cloudflare-os/",
+      "publishedAt": "2026-10-01T13:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
       "locales": {
         "en": {
-          "title": "Your Agent Aced the Task. Will It Do It Again?",
-          "summary": "Your Agent Aced the Task. Will It Do It Again?"
+          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
+          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch i…"
         },
         "fr": {
-          "title": "Your Agent Aced the Task. Will It Do It Again?",
-          "summary": "Your Agent Aced the Task. Will It Do It Again?"
+          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
+          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch i…"
         }
       }
     },
     {
-      "slug": "20260923-two-years-of-openai-academy-9d02eeb8",
+      "slug": "20260925-proaction-boosts-sales-60-and-saves-75-hours-with-codex-d2d497e5",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/two-years-of-openai-academy",
-      "publishedAt": "2026-09-23T16:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "href": "https://openai.com/index/proaction",
+      "publishedAt": "2026-09-25T19:00:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:17.268Z",
       "locales": {
         "en": {
-          "title": "Two years of OpenAI Academy",
-          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
+          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
         },
         "fr": {
-          "title": "Two years of OpenAI Academy",
-          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
+          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
         }
       }
     },
     {
-      "slug": "20261001-support-for-modern-cryptographic-algorithms-in-workers-d7ce28a3",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-ml-kem-ml-dsa-support/",
-      "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-03T11:36:50.878Z",
+      "slug": "20260911-cern-pgday-2027-announcement-and-cfp-d9e61fbd",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/cern-pgday-2027-announcement-and-cfp-3375/",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
       "locales": {
         "en": {
-          "title": "Support for modern cryptographic algorithms in Workers",
-          "summary": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today."
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
         },
         "fr": {
-          "title": "Support for modern cryptographic algorithms in Workers",
-          "summary": "Cloudflare Workers is adding opt-in support for post-quantum-resistant algorithms ML-KEM and ML-DSA. You can try it today."
+          "title": "CERN PGDay 2027: Announcement and CfP",
+          "summary": "CERN PGDay 2027 Date: Friday, February 12, 2027 Location: CERN Campus, Geneva, Switzerland / Suisse Romande Language: English Organizers: Swiss PostgreSQL Users Group (SwissPUG) &amp; CERN Format: Single-track (6–7 sessions) foll…"
+        }
+      }
+    },
+    {
+      "slug": "20260921-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/tokenizers-v1",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "discoveredAt": "2026-09-21T14:30:28.060Z",
+      "locales": {
+        "en": {
+          "title": "tokenizers v1: encode, decode and scaling, measured",
+          "summary": "tokenizers v1: encode, decode and scaling, measured"
+        },
+        "fr": {
+          "title": "tokenizers v1: encode, decode and scaling, measured",
+          "summary": "tokenizers v1: encode, decode and scaling, measured"
         }
       }
     },
@@ -4487,21 +4449,21 @@
       }
     },
     {
-      "slug": "20261001-manage-kubernetes-node-fleets-with-nodewright-6b35eb72",
-      "topic": "Computer Science",
+      "slug": "20261001-validate-gpu-cluster-readiness-before-ai-workloads-land-a69161c4",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
+      "href": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land/",
       "publishedAt": "2026-10-01T18:31:20.000Z",
-      "discoveredAt": "2026-10-04T21:21:28.129Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
       "locales": {
         "en": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
+          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
         },
         "fr": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
+          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
         }
       }
     },
@@ -4525,40 +4487,78 @@
       }
     },
     {
-      "slug": "20260910-async-grpo-with-lora-across-hf-jobs-a-bucket-a-proxy-and-no-nccl-d4e55a91",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
-      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "slug": "20261001-announcing-cloudflare-k2-serverless-event-streams-d7084788",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/cloudflare-k2-streams/",
+      "publishedAt": "2026-10-01T13:00:00.000Z",
       "discoveredAt": "2026-10-04T21:21:28.129Z",
       "locales": {
         "en": {
-          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
-          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
+          "title": "Announcing Cloudflare K2: serverless event streams",
+          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered…"
         },
         "fr": {
-          "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
-          "summary": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL"
+          "title": "Announcing Cloudflare K2: serverless event streams",
+          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered…"
         }
       }
     },
     {
-      "slug": "20260923-openai-extends-cyber-access-to-ukraine-for-civilian-defense-1d77064c",
+      "slug": "20260923-two-years-of-openai-academy-9d02eeb8",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-      "publishedAt": "2026-09-23T13:00:00.000Z",
-      "discoveredAt": "2026-10-04T21:21:28.129Z",
+      "href": "https://openai.com/index/two-years-of-openai-academy",
+      "publishedAt": "2026-09-23T16:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
       "locales": {
         "en": {
-          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
+          "title": "Two years of OpenAI Academy",
+          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
         },
         "fr": {
-          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-          "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure."
+          "title": "Two years of OpenAI Academy",
+          "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
+        }
+      }
+    },
+    {
+      "slug": "20260910-postgresql-migrator-10-first-stable-release-6b667d27",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-migrator-10-first-stable-release-3377/",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        },
+        "fr": {
+          "title": "PostgreSQL Migrator 1.0 : first stable release",
+          "summary": "Paris, 7th september 2026. The Dalibo team is pleased to announce the release of PostgreSQL Migrator 1.0 stable, a free and open-source tool designed to help migrate databases from Oracle and MySQL/MariaDB to PostgreSQL. Key feat…"
+        }
+      }
+    },
+    {
+      "slug": "20260915-your-agent-aced-the-task-will-it-do-it-again-16a7b27e",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "publishedAt": "2026-09-15T16:00:44.000Z",
+      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "locales": {
+        "en": {
+          "title": "Your Agent Aced the Task. Will It Do It Again?",
+          "summary": "Your Agent Aced the Task. Will It Do It Again?"
+        },
+        "fr": {
+          "title": "Your Agent Aced the Task. Will It Do It Again?",
+          "summary": "Your Agent Aced the Task. Will It Do It Again?"
         }
       }
     }
