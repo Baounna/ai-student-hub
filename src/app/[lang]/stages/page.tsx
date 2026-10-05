@@ -16,7 +16,6 @@ import {
   countryLabel,
   isRecentlyAdded,
   RECENTLY_ADDED_DAYS,
-  unverifiableJudgmentIsCurrent,
   type Stage,
   getOpenStages,
   getStages,
@@ -655,7 +654,7 @@ export default async function StagesPage(props: {
                       {copy.source} {stage.source}
                     </span>
                   ) : null}
-                  {unverifiableJudgmentIsCurrent(stage) ? (
+                  {stage.unverifiable ? (
                     <span className="text-xs text-[color:var(--muted)]">{copy.notVerified}</span>
                   ) : stage.checkedAt ? (
                     <span className="text-xs text-[color:var(--muted)]">

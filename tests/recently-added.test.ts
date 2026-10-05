@@ -4,6 +4,10 @@ import {
   isRecentlyAdded,
   RECENTLY_ADDED_DAYS,
   getStages,
+  getStagesLastCheckedAt,
+  getStagesCheckedAgeDays,
+  isStagesListStale,
+  STALE_AFTER_DAYS,
   unverifiableJudgmentIsCurrent,
   UNVERIFIABLE_RECHECK_DAYS
 } from "@/content/stages";
@@ -193,11 +197,54 @@ describe("a listing nobody could verify", () => {
 
   it("shows the reader that the link was not verified, not a frozen date", () => {
     const source = readFileSync(new URL("../src/app/[lang]/stages/page.tsx", import.meta.url), "utf8");
-    expect(source).toMatch(/unverifiableJudgmentIsCurrent\(stage\) \?/);
+    // The field itself, not the 90-day clock: whether a human owes a second
+    // look does not change whether the link could be read.
+    expect(source).toMatch(/\{stage\.unverifiable \? \(/);
     expect(source).toContain("notVerified");
     // The two branches are exclusive: never "link checked" and "could not
     // verify" on the same row.
-    const block = source.slice(source.indexOf("unverifiableJudgmentIsCurrent(stage) ?"));
+    const block = source.slice(source.indexOf("{stage.unverifiable ? ("));
     expect(block.slice(0, 420)).toMatch(/\) : stage\.checkedAt \?/);
+  });
+});
+
+describe("the list's freshness claim", () => {
+  /**
+   * getStagesLastCheckedAt takes the OLDEST check, which is the honest reading:
+   * the list is confirmed only as far back as its weakest entry.
+   *
+   * That broke the moment two entries became permanently unverifiable. Their
+   * checkedAt can never advance, so the date pinned to 2026-10-01 and, with
+   * STALE_AFTER_DAYS at 14, the page would have shown "this list has not been
+   * checked recently" from 2026-10-15 onward, forever, over two rows out of
+   * 102. A warning that is always on is not a warning.
+   */
+  it("ignores entries whose check date can never advance", () => {
+    const stages = getStages();
+    const judged = stages.filter((s) => s.unverifiable);
+    expect(judged.length).toBeGreaterThan(0);
+    const floor = getStagesLastCheckedAt();
+    for (const s of judged) {
+      expect(s.checkedAt, `${s.id} is older than the floor it no longer sets`).not.toBe(floor);
+      if (s.checkedAt) expect(s.checkedAt < floor).toBe(true);
+    }
+  });
+
+  it("does not report the list as stale while the checkable links are fresh", () => {
+    expect(getStagesCheckedAgeDays()).toBeLessThanOrEqual(STALE_AFTER_DAYS);
+    expect(isStagesListStale()).toBe(false);
+  });
+
+  it("still takes the oldest of the checkable entries, not the newest", () => {
+    const stages = getStages().filter((s) => !s.unverifiable);
+    const dates = stages.map((s) => s.checkedAt).filter(Boolean) as string[];
+    const oldest = dates.reduce((a, b) => (b < a ? b : a));
+    expect(getStagesLastCheckedAt()).toBe(oldest);
+  });
+
+  it("keeps the script's re-ask window and the exported constant in step", () => {
+    const script = readFileSync(new URL("../scripts/check-stages.mjs", import.meta.url), "utf8");
+    const inScript = Number(script.match(/const UNVERIFIABLE_RECHECK_DAYS = (\d+)/)?.[1]);
+    expect(inScript).toBe(UNVERIFIABLE_RECHECK_DAYS);
   });
 });

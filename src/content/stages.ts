@@ -107,8 +107,29 @@ export function getStagesCheckedAgeDays(now = Date.now()) {
   return Math.max(0, Math.floor((now - checked) / 86_400_000));
 }
 
+/**
+ * The oldest check among the links that CAN be checked.
+ *
+ * Oldest, not newest, is the conservative reading and the right one: the list
+ * is only confirmed as far back as its weakest entry, and taking the newest
+ * would let one fresh row speak for a hundred stale ones.
+ *
+ * Entries carrying an `unverifiable` judgment are left out, because their
+ * checkedAt cannot advance -- no amount of fetching will ever confirm a page
+ * that renders only with JavaScript. Including them pinned this date to
+ * 2026-10-01 permanently, which meant that on 2026-10-15 the page would have
+ * begun showing "this list has not been checked recently" forever, over two
+ * rows, while the other hundred were being verified every week. A freshness
+ * warning that is always on is no warning.
+ *
+ * This is not a way of hiding them: each of those rows says on its face that
+ * the link could not be verified, which is more than a date would tell a
+ * reader. If every entry were unverifiable there would be no claim left to
+ * make, so the file's own date stands instead.
+ */
 export function getStagesLastCheckedAt() {
-  const dates = payload.items.map((item) => item.checkedAt).filter(Boolean) as string[];
+  const checkable = payload.items.filter((item) => !item.unverifiable);
+  const dates = checkable.map((item) => item.checkedAt).filter(Boolean) as string[];
   if (!dates.length) return payload.updatedAt;
   return dates.reduce((oldest, value) => (value < oldest ? value : oldest));
 }

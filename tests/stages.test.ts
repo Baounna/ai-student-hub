@@ -113,11 +113,35 @@ describe("staleness", () => {
 // were checked the day before. The headline has to be something every row can
 // support, which is the oldest per-entry check.
 describe("freshness headline", () => {
-  it("reports the oldest per-entry check, not the file's own timestamp", () => {
-    const oldest = raw.items
-      .map((i) => String(i.checkedAt))
-      .reduce((a, b) => (b < a ? b : a));
+  /**
+   * Oldest of the rows that make a freshness claim at all.
+   *
+   * This asserted the oldest across every entry, which was the same thing until
+   * two listings became permanently unverifiable: a host that serves one
+   * JavaScript shell for every path, a slug that cannot exist included. Their
+   * checkedAt can never advance, so including them pinned the headline to
+   * 2026-10-01 and, at STALE_AFTER_DAYS of 14, would have put "this list has
+   * not been checked recently" on the page from 2026-10-15 onward, forever,
+   * over two rows out of 102.
+   *
+   * The rule in the comment above still holds -- the headline must be something
+   * every row can support -- because those two rows support no date. Each says
+   * on its face that the link could not be verified, which tells a reader more
+   * than a date would.
+   */
+  it("reports the oldest check among the rows that claim one", () => {
+    const claiming = raw.items.filter((i) => !i.unverifiable);
+    expect(claiming.length).toBeLessThan(raw.items.length);
+    const oldest = claiming.map((i) => String(i.checkedAt)).reduce((a, b) => (b < a ? b : a));
     expect(getStagesLastCheckedAt()).toBe(oldest);
+  });
+
+  it("leaves no unverifiable row claiming to have been checked", () => {
+    // The page shows "we could not verify this link" on these instead of a
+    // date, so the data must not also carry a fresh one.
+    for (const item of raw.items.filter((i) => i.unverifiable)) {
+      expect(String(item.checkedAt) < getStagesLastCheckedAt()).toBe(true);
+    }
   });
 
   it("never claims to be fresher than its stalest entry", () => {
