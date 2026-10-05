@@ -16,6 +16,7 @@ import {
   countryLabel,
   isRecentlyAdded,
   RECENTLY_ADDED_DAYS,
+  unverifiableJudgmentIsCurrent,
   type Stage,
   getOpenStages,
   getStages,
@@ -45,6 +46,11 @@ const COPY = {
     deadline: "Apply by",
     rolling: "Open until filled - no closing date given",
     checked: "link checked",
+    // Shown instead of a date, never beside one. "link checked 1 October" on a
+    // row nobody could read is the kind of small untruth this page exists not
+    // to tell, and the date would sit there unchanged for as long as the
+    // listing stands.
+    notVerified: "we could not verify this link",
     apply: "View the offer",
     // Every card renders the same visible link text, so a screen reader's link
     // list was 96 identical "View the offer" entries with nothing to tell them
@@ -107,6 +113,7 @@ const COPY = {
     deadline: "Candidater avant le",
     rolling: "Ouverte jusqu'à pourvoi - aucune date limite annoncée",
     checked: "lien vérifié le",
+    notVerified: "nous n'avons pas pu vérifier ce lien",
     apply: "Voir l'offre",
     applyLabel: (role: string, company: string, place: string) => `Voir l'offre : ${role} chez ${company}, ${place}`,
     source: "via",
@@ -648,7 +655,9 @@ export default async function StagesPage(props: {
                       {copy.source} {stage.source}
                     </span>
                   ) : null}
-                  {stage.checkedAt ? (
+                  {unverifiableJudgmentIsCurrent(stage) ? (
+                    <span className="text-xs text-[color:var(--muted)]">{copy.notVerified}</span>
+                  ) : stage.checkedAt ? (
                     <span className="text-xs text-[color:var(--muted)]">
                       {copy.checked} {dateFmt.format(new Date(`${stage.checkedAt}T12:00:00Z`))}
                     </span>

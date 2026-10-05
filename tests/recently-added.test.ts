@@ -1,6 +1,12 @@
 import { readFileSync } from "node:fs";
 import { describe, it, expect } from "vitest";
-import { isRecentlyAdded, RECENTLY_ADDED_DAYS, getStages } from "@/content/stages";
+import {
+  isRecentlyAdded,
+  RECENTLY_ADDED_DAYS,
+  getStages,
+  unverifiableJudgmentIsCurrent,
+  UNVERIFIABLE_RECHECK_DAYS
+} from "@/content/stages";
 import { matchesAllTerms, searchTerms } from "@/lib/search";
 
 /**
@@ -135,5 +141,63 @@ describe("the keyword examples in the placeholder", () => {
         expect(hits, `placeholder example "${example}" matches nothing`).toBeGreaterThan(0);
       }
     }
+  });
+});
+
+describe("a listing nobody could verify", () => {
+  /**
+   * The weekly check cannot read the two BPCE postings: their server returns
+   * the same JavaScript shell for every path, a slug that cannot exist
+   * included, so a 200 from that host carries no information. Left as a plain
+   * "needs a human" they would raise the review issue every week with
+   * identical contents, and the week something real changed would look like the
+   * fifty notifications before it.
+   */
+  it("records the judgment on the entries that cannot be verified", () => {
+    const stages = getStages();
+    const judged = stages.filter((s) => s.unverifiable);
+    expect(judged.length).toBeGreaterThan(0);
+    for (const s of judged) {
+      expect(s.unverifiable).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      // A judgment with no stated reason cannot be reviewed by the next person.
+      expect(s.unverifiableReason, `${s.id} needs a reason`).toBeTruthy();
+      // It must not also claim a fresh check: the two statements contradict.
+      expect(s.checkedAt).not.toBe(s.unverifiable);
+    }
+  });
+
+  it("lets the judgment expire rather than standing forever", () => {
+    const judged = { unverifiable: "2026-10-05" } as never;
+    expect(unverifiableJudgmentIsCurrent(judged, new Date("2026-11-01T12:00:00Z"))).toBe(true);
+    const past = new Date(Date.parse("2026-10-05T12:00:00Z") + (UNVERIFIABLE_RECHECK_DAYS + 1) * 86_400_000);
+    expect(unverifiableJudgmentIsCurrent(judged, past)).toBe(false);
+  });
+
+  it("refuses a future or malformed judgment date", () => {
+    const now = new Date("2026-10-05T12:00:00Z");
+    expect(unverifiableJudgmentIsCurrent({ unverifiable: "2027-01-01" } as never, now)).toBe(false);
+    expect(unverifiableJudgmentIsCurrent({ unverifiable: "nope" } as never, now)).toBe(false);
+    expect(unverifiableJudgmentIsCurrent({} as never, now)).toBe(false);
+  });
+
+  it("stops the weekly check asking for a judgment it already has", () => {
+    const script = readFileSync(new URL("../scripts/check-stages.mjs", import.meta.url), "utf8");
+    // Judged entries go to their own list, so they cannot reach the marker that
+    // raises the review issue.
+    expect(script).toMatch(/const settled = verdict === "CHECK" && judgmentIsCurrent\(stage\)/);
+    expect(script).toMatch(/if \(settled\) known\.push/);
+    expect(script).toMatch(/if \(results\.CHECK\.length \|\| results\.GONE\.length\)/);
+    // And are still printed, so suppressing the ask never means hiding them.
+    expect(script).toContain("Already judged");
+  });
+
+  it("shows the reader that the link was not verified, not a frozen date", () => {
+    const source = readFileSync(new URL("../src/app/[lang]/stages/page.tsx", import.meta.url), "utf8");
+    expect(source).toMatch(/unverifiableJudgmentIsCurrent\(stage\) \?/);
+    expect(source).toContain("notVerified");
+    // The two branches are exclusive: never "link checked" and "could not
+    // verify" on the same row.
+    const block = source.slice(source.indexOf("unverifiableJudgmentIsCurrent(stage) ?"));
+    expect(block.slice(0, 420)).toMatch(/\) : stage\.checkedAt \?/);
   });
 });

@@ -554,15 +554,45 @@ if (invokedDirectly) {
 const file = JSON.parse(await fs.readFile(FILE, "utf8"));
 const today = new Date().toISOString().slice(0, 10);
 const results = { OK: [], CHECK: [], GONE: [] };
+/**
+ * CHECK entries a person has already judged, split out from the ones that are
+ * new.
+ *
+ * Two BPCE postings cannot be verified by any amount of fetching -- their
+ * server returns one JavaScript shell for every path, a slug that cannot exist
+ * included. Left as plain CHECK they would raise the review issue every week
+ * with identical contents, and the week something genuinely changed it would
+ * look like the same notification as the fifty before it. That is how this
+ * repository already lost eighty days to an alert nobody read.
+ *
+ * So a recorded judgment suppresses the ask, and only until it goes stale:
+ * UNVERIFIABLE_RECHECK_DAYS later the entry moves back into the list that
+ * raises the issue. Still reported in the log every run, never hidden.
+ */
+const known = [];
+
+const UNVERIFIABLE_RECHECK_DAYS = 90;
+function judgmentIsCurrent(stage) {
+  if (!stage.unverifiable) return false;
+  const judged = Date.parse(`${String(stage.unverifiable).slice(0, 10)}T12:00:00Z`);
+  if (!Number.isFinite(judged)) return false;
+  const days = (Date.now() - judged) / 86_400_000;
+  return days >= 0 && days <= UNVERIFIABLE_RECHECK_DAYS;
+}
 
 console.log(`\n  Re-checking ${file.items.length} entries.\n`);
 
 for (const stage of file.items) {
   const { verdict, detail } = await checkOne(stage);
-  results[verdict].push({ stage, detail });
-  const mark = verdict === "OK" ? "ok   " : verdict === "GONE" ? "GONE " : "check";
+  const settled = verdict === "CHECK" && judgmentIsCurrent(stage);
+  if (settled) known.push({ stage, detail });
+  else results[verdict].push({ stage, detail });
+  const mark = verdict === "OK" ? "ok   " : verdict === "GONE" ? "GONE " : settled ? "known" : "check";
   console.log(`  ${mark} ${stage.company} — ${stage.role.slice(0, 44)}`);
   if (verdict !== "OK") console.log(`        ${detail}`);
+  // Only a listing that actually verified gets a fresh date. A judged-but-
+  // unverifiable one keeps its old checkedAt, so the page never claims we
+  // confirmed something we could not read.
   if (verdict === "OK" && WRITE) stage.checkedAt = today;
 }
 
@@ -571,7 +601,9 @@ const expired = file.items.filter(
 );
 
 console.log(`
-  ${results.OK.length} still open · ${results.CHECK.length} need a human · ${results.GONE.length} look gone`);
+  ${results.OK.length} still open · ${results.CHECK.length} need a human · ${results.GONE.length} look gone${
+    known.length ? ` · ${known.length} already judged, cannot be verified` : ""
+  }`);
 if (expired.length) console.log(`  ${expired.length} past their stated deadline`);
 
 /**
@@ -606,6 +638,13 @@ if (results.CHECK.length || results.GONE.length) {
  * signal that cannot fire. Measured on run 37309467443: the issue named both
  * dead EDF listings and neither of the two suspect ones.
  */
+if (known.length) {
+  console.log("\n  Already judged — a person kept these listed knowing they cannot be verified; no action:");
+  for (const { stage, detail } of known) {
+    console.log(`    ${stage.id}\n      judged ${stage.unverifiable} — ${detail}`);
+  }
+}
+
 if (results.CHECK.length) {
   console.log("\n  Needs a human — open each and judge it; leave it listed if the employer merely refused us:");
   for (const { stage, detail } of results.CHECK) {

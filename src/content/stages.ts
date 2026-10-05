@@ -44,6 +44,25 @@ export type Stage = {
    * no closing date this is the only honest freshness signal available.
    */
   checkedAt?: string;
+  /**
+   * YYYY-MM-DD. A person looked at this one, could not verify it either way,
+   * and chose to leave it listed.
+   *
+   * Two BPCE postings render only with JavaScript: the server returns the same
+   * 3077-byte shell for every path, including a slug that cannot exist, so a
+   * 200 from that host says nothing about whether the job is open. The weekly
+   * check will flag them for a human every single week, forever, and an alert
+   * that always fires is one nobody reads -- this repository has already lost
+   * eighty days to exactly that.
+   *
+   * So this date records the judgment, and the check stops asking for the same
+   * one. It is not permission to forget: past UNVERIFIABLE_RECHECK_DAYS the
+   * entry is raised again, because "we could not tell in October" is not a
+   * reason to still be showing it in March.
+   */
+  unverifiable?: string;
+  /** Why it could not be verified, in words a reader could be shown. */
+  unverifiableReason?: string;
   href: string;
   source?: string;
 };
@@ -303,6 +322,22 @@ export function countryLabel(country: string, locale: Locale) {
  * of a student deciding whether a role is still fresh.
  */
 export const RECENTLY_ADDED_DAYS = 7;
+
+/**
+ * How long a "could not verify this one" judgment stands before a person is
+ * asked again. A quarter: long enough that the weekly check stops repeating
+ * itself, short enough that a posting cannot sit unverified for a year.
+ */
+export const UNVERIFIABLE_RECHECK_DAYS = 90;
+
+export function unverifiableJudgmentIsCurrent(stage: Stage, now: Date = new Date()): boolean {
+  if (!stage.unverifiable) return false;
+  const judged = Date.parse(`${stage.unverifiable.slice(0, 10)}T12:00:00Z`);
+  if (!Number.isFinite(judged)) return false;
+  const days = (now.getTime() - judged) / 86_400_000;
+  // A future date is a data error, not a judgment.
+  return days >= 0 && days <= UNVERIFIABLE_RECHECK_DAYS;
+}
 
 export function isRecentlyAdded(stage: Stage, now: Date = new Date()): boolean {
   if (!stage.postedAt) return false;
