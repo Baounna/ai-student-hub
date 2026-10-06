@@ -148,18 +148,76 @@ function countTrackEntriesInBlock(block) {
     .filter(Boolean);
 }
 
+/**
+ * A brief is sourced if it cites someone, or if it says the analysis is ours.
+ *
+ * This counted only source blocks carrying an href, so the one brief whose
+ * source reads { name: "AI Student Hub editorial analysis" } was reported as
+ * uncited, every week, at P1. There is no href to give: nobody else published
+ * it, and the page already tells the reader so -- it renders "Source context:
+ * AI Student Hub editorial analysis" under the piece.
+ *
+ * Demanding a link there would push toward attaching an unrelated one, which is
+ * the exact fault this repository has already fixed once: a footnote citing US
+ * minimum-wage law to support a claim about recruiters. A citation that does
+ * not support the sentence is worse than an honest "this is our own reading".
+ *
+ * What stays a defect is a brief that attributes a claim to somebody else and
+ * gives no way to check it. That is counted and reported separately below.
+ */
+const OWN_ANALYSIS = /AI Student Hub|editorial analysis|analyse éditoriale/i;
+
 function countSourceBlocksWithHref(block) {
-  const items = block.match(/source:\s*\{[\s\S]*?href:\s*"https?:\/\/[^"]+"[\s\S]*?\}/g);
-  return items ? items.length : 0;
+  const sources = block.match(/source:\s*\{[\s\S]*?\}/g) || [];
+  return sources.filter(
+    (source) => /href:\s*"https?:\/\/[^"]+"/.test(source) || OWN_ANALYSIS.test(source)
+  ).length;
 }
 
+/**
+ * Briefs that name a third party and give no link. The real failure the check
+ * above was reaching for.
+ */
+function countUnverifiableAttributions(block) {
+  const sources = block.match(/source:\s*\{[\s\S]*?\}/g) || [];
+  return sources.filter(
+    (source) => !/href:\s*"https?:\/\/[^"]+"/.test(source) && !OWN_ANALYSIS.test(source)
+  ).length;
+}
+
+/**
+ * Detect the feature, not one phrasing of its heading.
+ *
+ * This required the literal strings "AI + CS split" or "Split IA +
+ * informatique" in the index source, plus a chip shape named
+ * trackFilterOptions. Both index pages have had working track filters the whole
+ * time -- /en/blog?track=ai, ?track=cs, ?track=career and the same three on
+ * /en/news, verified against the live site -- but the headings were reworded
+ * and the variable is called trackFilter, so the match failed and the agent
+ * filed a P1 against a feature that was shipped and serving readers.
+ *
+ * A check pinned to copy fails the first time anybody edits the copy, and then
+ * it is the check that is wrong rather than the page. So this looks for the
+ * mechanism: a parsed track filter, the ai and cs values it accepts, and a
+ * track query parameter in the links it builds.
+ */
 function detectEditorialSplitCoverage(blogIndexSource, newsIndexSource) {
-  const splitLabelPattern = /AI \+ CS split|Split IA \+ informatique/;
-  const splitChipPattern = /key:\s*"ai"[\s\S]*key:\s*"cs"|trackFilterOptions|trackOptions/;
+  /*
+   * The parse site, not the link shape. My first attempt required a literal
+   * "track=" and still failed on the news index, which builds the same links
+   * through URLSearchParams.set("track", ...) so the string never appears. Both
+   * pages do read searchParams.track and both accept "ai" and "cs", and that is
+   * the filter actually existing.
+   */
+  const hasTrackFilter = (source) =>
+    /searchParams\?\.track/.test(source) &&
+    /trackFilter/.test(source) &&
+    /"ai"/.test(source) &&
+    /"cs"/.test(source);
 
   return {
-    blogSplit: splitLabelPattern.test(blogIndexSource) && splitChipPattern.test(blogIndexSource),
-    newsSplit: splitLabelPattern.test(newsIndexSource) && splitChipPattern.test(newsIndexSource)
+    blogSplit: hasTrackFilter(blogIndexSource),
+    newsSplit: hasTrackFilter(newsIndexSource)
   };
 }
 
@@ -199,6 +257,7 @@ function buildEditorialAudit({ basePostsBlock, csPostsBlock, newsBlock, blogInde
   const uncitedPostsEstimate = Math.max(postsCount - referencesInPosts, 0);
   const sourcedNewsCount = countSourceBlocksWithHref(newsBlock);
   const uncitedNewsEstimate = Math.max(newsCount - sourcedNewsCount, 0);
+  const unverifiableAttributions = countUnverifiableAttributions(newsBlock);
 
   return {
     postsCount,
@@ -219,7 +278,8 @@ function buildEditorialAudit({ basePostsBlock, csPostsBlock, newsBlock, blogInde
       postsWithReferences: referencesInPosts,
       uncitedPostsEstimate,
       sourcedNewsCount,
-      uncitedNewsEstimate
+      uncitedNewsEstimate,
+      unverifiableAttributions
     },
     splitCoverage
   };
@@ -525,7 +585,8 @@ function buildActionQueue({
   hasCheckoutUrl,
   emailProvider,
   hasLeadMagnet,
-  editorialAudit
+  editorialAudit,
+  deployConfigVisible
 }) {
   const actions = [];
   const validAffiliates = affiliateRows.filter((row) => row.valid).length;
@@ -572,54 +633,74 @@ function buildActionQueue({
     });
   }
 
-  if (editorialAudit.citations.uncitedNewsEstimate > 0) {
+  if (editorialAudit.citations.unverifiableAttributions > 0) {
     actions.push({
       priority: "P1",
-      action: "Ensure every curated news brief has a valid source href.",
-      why: "Uncited news weakens trust and violates source integrity standards."
+      action: `${editorialAudit.citations.unverifiableAttributions} news brief(s) attribute a claim to someone else with no link to check it. Add the source href, or mark it as our own analysis.`,
+      why: "A claim credited to a third party with no way to verify it is the one citation failure a reader cannot catch."
     });
   }
 
-  if (validAffiliates < 3) {
+  if (!deployConfigVisible) {
+    /*
+     * One line saying what was not looked at, instead of five saying it is
+     * broken. These four facts are not in the repository, so a run that cannot
+     * read the deployment has nothing to report about them -- and claiming
+     * otherwise is what made this queue untrue.
+     */
     actions.push({
-      priority: "P1",
-      action: "Add at least 3 valid affiliate links (name + final URL + placement).",
-      why: "Without valid links, affiliate revenue path is blocked."
+      priority: "P3",
+      action:
+        "Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows. These live in the Vercel environment; check them there or run this agent with those variables set.",
+      why: "This run could see none of them, and an unchecked setting is not a broken one."
     });
-  }
-
-  for (const required of ["home", "resources", "blog", "comparison"]) {
-    if (!placementCoverage[required]) {
+  } else {
+    /*
+     * Affiliates are one decision, not five.
+     *
+     * This emitted a P1 for "fewer than three links" and then a further P1 per
+     * uncovered surface -- home, resources, blog, comparison -- so an owner who
+     * has joined no affiliate programme saw five P1s for the same choice, every
+     * week. Joining one is a business decision, and the site is honest without
+     * it: the affiliate gate elsewhere in this repository was narrowed on
+     * purpose so a link cannot claim a commission that is not earned.
+     */
+    const uncovered = ["home", "resources", "blog", "comparison"].filter(
+      (surface) => !placementCoverage[surface]
+    );
+    if (validAffiliates < 3 || uncovered.length) {
       actions.push({
-        priority: "P1",
-        action: `Cover missing affiliate placement: ${required}.`,
-        why: "Missing placement means lost monetization intent on that traffic surface."
+        priority: "P2",
+        action: `Affiliate revenue is not set up: ${validAffiliates} valid link(s)${
+          uncovered.length ? `, no placement on ${uncovered.join(", ")}` : ""
+        }. Only worth doing after joining a programme that pays.`,
+        why: "A link that cannot earn is not worth adding, and a fabricated one would misstate a commission."
       });
     }
-  }
 
-  if (!hasCheckoutUrl) {
-    actions.push({
-      priority: "P1",
-      action: "Set NEXT_PUBLIC_PRODUCT_CHECKOUT_URL (Gumroad/LemonSqueezy) and test buy CTA.",
-      why: "Product revenue cannot convert without a live checkout URL."
-    });
-  }
+    if (!hasCheckoutUrl) {
+      actions.push({
+        priority: "P2",
+        action: "No product checkout URL set (Gumroad/LemonSqueezy). Only relevant once there is something to sell.",
+        why: "Product revenue cannot convert without a live checkout URL."
+      });
+    }
 
-  if (emailProvider !== "convertkit") {
-    actions.push({
-      priority: "P1",
-      action: "Enable ConvertKit and connect newsletter form ID/API key.",
-      why: "Email capture without automation loses warm leads and repeat conversions."
-    });
-  }
+    if (emailProvider !== "convertkit") {
+      actions.push({
+        priority: "P1",
+        action: "Enable ConvertKit and connect newsletter form ID/API key.",
+        why: "Email capture without automation loses warm leads and repeat conversions."
+      });
+    }
 
-  if (!hasLeadMagnet) {
-    actions.push({
-      priority: "P1",
-      action: "Set lead magnet URLs for EN/FR and ensure CTA appears on home/resources/posts.",
-      why: "Lead magnet is the lowest-friction conversion path for student traffic."
-    });
+    if (!hasLeadMagnet) {
+      actions.push({
+        priority: "P1",
+        action: "Set lead magnet URLs for EN/FR and ensure CTA appears on home/resources/posts.",
+        why: "Lead magnet is the lowest-friction conversion path for student traffic."
+      });
+    }
   }
 
   for (const [surface, checks] of Object.entries(ctaCoverage)) {
@@ -822,6 +903,34 @@ async function run() {
   };
 
   const ctaCoverage = await detectCtaCoverage();
+  /**
+   * Whether this run can see deployment configuration at all.
+   *
+   * The lead magnet URLs, the checkout URL, the email provider and the
+   * affiliate rows all live in Vercel's environment, not in the repository, and
+   * this agent runs in GitHub Actions where none of them is set. So reading
+   * process.env here answers "is it configured in CI", which is always no.
+   *
+   * Reported as P1 defects, that produced a backlog that was simply untrue. The
+   * newsletter form, its Turnstile challenge and /api/subscribe have all been
+   * live -- the endpoint answers 200 -- while this file said "Enable
+   * ConvertKit" every week, and the lead magnet CTA renders on the very home
+   * page it called uncovered. Nine of thirteen actions were P1 and at least two
+   * were false. A backlog that is mostly wrong is one its owner stops opening,
+   * which is the same failure as a review issue that cries wolf.
+   *
+   * If any one of these is set, this run is somewhere that carries deployment
+   * config and an absence means something. If none is, the honest output is
+   * "not checked from here", not an accusation.
+   */
+  const deployConfigVisible = [
+    process.env.EMAIL_PROVIDER,
+    process.env.NEXT_PUBLIC_LEAD_MAGNET_URL_EN,
+    process.env.NEXT_PUBLIC_LEAD_MAGNET_URL_FR,
+    process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL,
+    process.env.AFFILIATE_1_URL
+  ].some((value) => (value || "").trim());
+
   const hasCheckoutUrl = Boolean(sanitizeUrl(process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || ""));
   const hasLeadMagnet = Boolean((process.env.NEXT_PUBLIC_LEAD_MAGNET_URL_EN || "").trim() && (process.env.NEXT_PUBLIC_LEAD_MAGNET_URL_FR || "").trim());
   const emailProvider = (process.env.EMAIL_PROVIDER || "none").trim().toLowerCase();
@@ -840,7 +949,8 @@ async function run() {
     hasCheckoutUrl,
     emailProvider,
     hasLeadMagnet,
-    editorialAudit
+    editorialAudit,
+    deployConfigVisible
   });
   const draftInfo = await generateDrafts(opportunities, generatedAt);
 
