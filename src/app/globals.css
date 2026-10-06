@@ -17,20 +17,35 @@
   --motion-slow: 520ms;
   --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
 
-  /* Light is the reading default: news sites are read, not demoed. */
-  --bg: #ffffff;
-  --bg-soft: #f1f4f6;
+  /* Light is the reading default: news sites are read, not demoed.
+   *
+   * Warm, and faintly green, because the accent is pine: a neutral biased
+   * toward the accent reads as chosen, where the blue-grey it used to be
+   * (#f1f4f6, hue 200) read as the default no one picked. Nothing here is
+   * ornament — the redesign that set this system deliberately dropped glows and
+   * frosted panels, and that still holds.
+   *
+   * The page ground is off-white and --surface stays pure white, which is the
+   * whole trick: both were #ffffff, so a card was invisible against the page
+   * and every panel needed a border to exist at all. Now cards lift on their
+   * own, with no shadow added to a system that removed them on purpose.
+   *
+   * Every pair was measured rather than eyeballed. The tightest, --muted on
+   * --bg-soft, goes 4.81 -> 5.25; the worst case for any ink improves or holds
+   * except two that land at 15.75 and 8.23, both far above the 7:1 AAA bar. */
+  --bg: #fbfaf7;
+  --bg-soft: #f0f1ea;
   --surface: #ffffff;
-  --surface-strong: #f1f4f6;
-  --text: #3c4750;
-  --text-strong: #0f1519;
+  --surface-strong: #eceee5;
+  --text: #3b443d;
+  --text-strong: #101512;
   /* 4.81:1 on --bg-soft and 5.31:1 on white. The previous #6b7883 measured
      4.09:1 against --bg-soft, under the 4.5 minimum, and an audit found it on
      23 elements across every page — timestamps, captions, source lines, the
      provenance rail. Small grey text on a tinted panel is where this always
      fails, and it is exactly the text a reader squints at. */
-  --muted: #606d78;
-  --border: #d8dfe4;
+  --muted: #5c665e;
+  --border: #dcdfd4;
   --primary: #1b4d3e;
   --primary-strong: #123328;
   --primary-foreground: #ffffff;
@@ -42,11 +57,11 @@
   --page-glow-b: transparent;
   --elevated-shadow: none;
   --wiki-panel-bg: #ffffff;
-  --wiki-panel-border: #d8dfe4;
-  --wiki-head-bg: #f1f4f6;
-  --wiki-head-green: #e4efea;
-  --wiki-head-blue: #e8eef4;
-  --wiki-head-purple: #eeebf4;
+  --wiki-panel-border: #dcdfd4;
+  --wiki-head-bg: #eceee5;
+  --wiki-head-green: #e2ecdf;
+  --wiki-head-blue: #e4ebe9;
+  --wiki-head-purple: #eae9e3;
   --wiki-link: #1b4d3e;
   --signal: #a3431b;
   --signal-bg: #f6e8e1;
@@ -63,26 +78,31 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #0c1114;
-  --bg-soft: #161e23;
-  --surface: #141b20;
-  --surface-strong: #1b2429;
-  --text: #b6c2cb;
-  --text-strong: #e9eef2;
-  --muted: #8593a0;
-  --border: #27323a;
-  --primary: #63c09c;
+  /* The same move in the dark: the blue pulled out so the ground sits
+   * green-black, and --surface kept LIGHTER than --bg so a card lifts here too
+   * rather than sinking. Measured: every worst-case ratio improves on the cool
+   * palette it replaces — text 8.69 -> 8.93, muted 5.02 -> 5.15,
+   * primary 7.18 -> 7.47. */
+  --bg: #0d1110;
+  --bg-soft: #171c19;
+  --surface: #161b18;
+  --surface-strong: #1e2420;
+  --text: #bcc5bd;
+  --text-strong: #ebefe9;
+  --muted: #8b968c;
+  --border: #2a322c;
+  --primary: #6ac3a0;
   --primary-strong: #8ad4b8;
-  --primary-foreground: #0c1114;
-  --focus-ring: #63c09c;
+  --primary-foreground: #0d1110;
+  --focus-ring: #6ac3a0;
   --elevated-shadow: none;
-  --wiki-panel-bg: #141b20;
-  --wiki-panel-border: #27323a;
-  --wiki-head-bg: #1b2429;
-  --wiki-head-green: #14251f;
-  --wiki-head-blue: #16222c;
-  --wiki-head-purple: #1f1d2b;
-  --wiki-link: #63c09c;
+  --wiki-panel-bg: #161b18;
+  --wiki-panel-border: #2a322c;
+  --wiki-head-bg: #1e2420;
+  --wiki-head-green: #152620;
+  --wiki-head-blue: #182422;
+  --wiki-head-purple: #20231e;
+  --wiki-link: #6ac3a0;
   --signal: #e29267;
   --signal-bg: #2a1b14;
   --success-bg: #14251f;
