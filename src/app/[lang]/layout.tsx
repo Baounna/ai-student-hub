@@ -125,7 +125,24 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
 
           <div className="flex items-center gap-2.5 md:gap-3">
             <Link href={`/${locale}`} className="inline-flex shrink-0 items-center gap-3 rounded-xl border border-transparent px-1 py-1 hover:border-[color:var(--border)]">
-              <span className="brand-orb inline-block h-3.5 w-3.5 rounded-full bg-[color:var(--primary)] shadow-[0_0_0_6px_color-mix(in_srgb,var(--primary),transparent_86%)]" />
+              {/* The mark, bare. The favicon keeps its pine tile because a tab
+                  strip can be any colour; here the page ground is known, so the
+                  petals stand on their own and the square would only add a box.
+                  aria-hidden because the wordmark beside it already names the
+                  site -- two accessible names for one link is noise. */}
+              <svg
+                className="brand-orb h-6 w-6 shrink-0 md:h-7 md:w-7"
+                viewBox="0 0 512 512"
+                aria-hidden="true"
+                focusable="false"
+                fill="currentColor"
+                style={{ color: "var(--primary)" }}
+              >
+                <path d="M256 256 Q178 202 256 96 Q334 202 256 256 Z" />
+                <path d="M256 256 Q310 178 416 256 Q310 334 256 256 Z" />
+                <path d="M256 256 Q334 310 256 416 Q178 310 256 256 Z" />
+                <path d="M256 256 Q202 334 96 256 Q202 178 256 256 Z" />
+              </svg>
               <span className="leading-tight">
                 {/* Was the string "AI Cybersecurity News", hardcoded, while
                     the footer printed siteConfig.brandName ("AI and
