@@ -165,27 +165,28 @@ export function StageRow({
   // board showed "3 MOIS MINIMUM" beside a translated "UNITED KINGDOM".
   const durationText = formatDuration(stage.duration, locale);
   const levelText = formatLevel(stage.level, locale);
+  /*
+   * A row, not a card.
+   *
+   * This was rounded-xl + border + bg-surface + p-4 on every one of 102
+   * listings. A card is padding on four sides plus a border plus a radius --
+   * roughly 48px of vertical cost per row, about 4,900px of scroll across
+   * the board, buying nothing a rule does not. Every text-only board
+   * measured for this does it with a hairline or a tint instead: LinkedIn
+   * uses `border-bottom: 1px solid #e6e9ec` and no card at all, Platformer a
+   * 1px rule at 8% black, hnhiring plain zebra stripes, and freeCodeCamp
+   * ships zero shadows and zero rounded corners across its whole page. The
+   * home page here already listed internships this way with divide-y; the
+   * board, which has forty times as many, did not.
+   */
   return (
-    <li
-      key={stage.id}
-      className={`rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 ${closed ? "opacity-60" : ""}`}
-    >
+    <li key={stage.id} className={`py-4 ${closed ? "opacity-60" : ""}`}>
       <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
         <h2 className="text-base font-semibold text-[color:var(--text-strong)]">{stage.role}</h2>
         <span className="text-sm text-[color:var(--muted)]">— {stage.company}</span>
         {closed ? (
           <span className="rounded-full border border-[color:var(--border)] px-2 py-0.5 text-[11px] uppercase tracking-wide text-[color:var(--muted)]">
             {copy.closed}
-          </span>
-        ) : null}
-        {/* "Recently added", not "New": the role may have been
-            advertised for months before this board picked it up, and
-            a student reading "new" would reasonably hear "just
-            opened". Not shown on a closed row, where a badge drawing
-            the eye to a dead listing would only sting. */}
-        {!closed && isRecentlyAdded(stage) ? (
-          <span className="rounded-full border border-[color:var(--primary)] px-2 py-0.5 text-[11px] uppercase tracking-wide text-[color:var(--primary)]">
-            {copy.recentBadge}
           </span>
         ) : null}
       </div>
@@ -223,8 +224,26 @@ export function StageRow({
             {copy.source} {stage.source}
           </span>
         ) : null}
+        {/*
+          * The freshness signal is the line that was already here, weighted --
+          * not a pill beside the title.
+          *
+          * "Recently added" used to be a bordered accent pill up by the role.
+          * LinkedIn marks a fresh posting by recolouring and bolding the
+          * timestamp it already renders -- same element, same slot, same text
+          * -- which is why its rows stay exactly the same height whether a job
+          * is new or not. A pill adds a box, competes with the title, and spends
+          * the accent on a third thing. This says the same fact in the place a
+          * reader already looks for dates.
+          *
+          * Still "added", never "posted": postedAt is the day this board
+          * imported the listing, and the employer's own publication date is not
+          * in the data.
+          */}
         {stage.unverifiable ? (
           <span className="text-xs text-[color:var(--muted)]">{copy.notVerified}</span>
+        ) : !closed && isRecentlyAdded(stage) ? (
+          <span className="text-xs font-semibold text-[color:var(--primary)]">{copy.recentBadge}</span>
         ) : stage.checkedAt ? (
           <span className="text-xs text-[color:var(--muted)]">
             {copy.checked} {dateFmt.format(new Date(`${stage.checkedAt}T12:00:00Z`))}

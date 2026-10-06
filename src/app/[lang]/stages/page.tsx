@@ -481,7 +481,7 @@ export default async function StagesPage(props: {
           </Link>
         </p>
       ) : (
-        <ul className="mt-6 space-y-3">
+        <ul className="mt-6 divide-y divide-[color:var(--border)] border-t border-[color:var(--border)]">
           {filtered.map((stage) => (
               <StageRow key={stage.id} stage={stage} locale={locale} copy={copy} dateFmt={dateFmt} />
           ))}

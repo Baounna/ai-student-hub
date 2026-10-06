@@ -115,7 +115,7 @@ export default async function StagesByCountryPage(props: {
         </Link>
       </p>
 
-      <ul className="mt-6 space-y-3">
+      <ul className="mt-6 divide-y divide-[color:var(--border)] border-t border-[color:var(--border)]">
         {listings.map((stage) => (
           <StageRow key={stage.id} stage={stage} locale={locale} copy={copy} dateFmt={dateFmt} />
         ))}
