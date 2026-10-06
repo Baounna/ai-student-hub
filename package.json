@@ -29,7 +29,8 @@
     "new:post": "node scripts/new-post.mjs",
     "add:stage": "node scripts/add-stage.mjs",
     "check:stages": "node scripts/check-stages.mjs",
-    "draft:issue": "node scripts/draft-issue.mjs"
+    "draft:issue": "node scripts/draft-issue.mjs",
+    "draft:sent": "node scripts/mark-issue-sent.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

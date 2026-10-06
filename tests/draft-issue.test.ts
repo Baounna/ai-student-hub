@@ -7,6 +7,7 @@ import { promisify } from "node:util";
 
 const execFileAsync = promisify(execFile);
 const SCRIPT = path.join(process.cwd(), "scripts/draft-issue.mjs");
+const SENT_SCRIPT = path.join(process.cwd(), "scripts/mark-issue-sent.mjs");
 
 /**
  * The issue drafter is the only thing that knows what subscribers have already
@@ -67,9 +68,42 @@ async function draft(dir: string, args: string[] = []) {
   return execFileAsync(process.execPath, [SCRIPT, ...args], { cwd: dir });
 }
 
+/**
+ * Writing a draft stopped being the same act as sending it.
+ *
+ * draft-issue.mjs wrote the sent-ledger on every run, under its own line
+ * reading "Nothing was sent" — and the send is manual, a person pasting the
+ * HTML into Kit. So three September drafts that were never sent had retired 48
+ * of 102 listings, and the first real issue would have skipped them. The ids
+ * now wait in a pending file until this runs.
+ *
+ * Every assertion below is the one it always made. What changed is that the
+ * tests now have to say a send happened, because the script no longer assumes
+ * it.
+ */
+async function send(dir: string) {
+  return execFileAsync(process.execPath, [SENT_SCRIPT], { cwd: dir });
+}
+
+// No ledger means nothing has been sent, which is now a state the script can
+// legitimately be in: a draft written and not yet sent writes no ledger at all.
+function readState(dir: string): { coveredIds?: string[]; coveredSlugs?: string[] } {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(dir, "drafts/.last-issue.json"), "utf8"));
+  } catch {
+    return {};
+  }
+}
+
 function covered(dir: string): string[] {
-  const state = JSON.parse(fs.readFileSync(path.join(dir, "drafts/.last-issue.json"), "utf8"));
-  return state.coveredIds;
+  return readState(dir).coveredIds ?? [];
+}
+
+/** The ids a written-but-unsent draft is holding. */
+function pending(dir: string): string[] {
+  const file = fs.readdirSync(path.join(dir, "drafts")).find((f) => f.endsWith(".pending.json"));
+  if (!file) return [];
+  return JSON.parse(fs.readFileSync(path.join(dir, "drafts", file), "utf8")).ids ?? [];
 }
 
 afterAll(() => {
@@ -82,8 +116,7 @@ function issueText(dir: string): string {
 }
 
 function coveredSlugs(dir: string): string[] {
-  const state = JSON.parse(fs.readFileSync(path.join(dir, "drafts/.last-issue.json"), "utf8"));
-  return state.coveredSlugs || [];
+  return readState(dir).coveredSlugs ?? [];
 }
 
 /**
@@ -109,12 +142,14 @@ describe("the guides half of the issue", () => {
 
   it("never sends a comparison page as a guide", async () => {
     await draft(dir);
+    await send(dir);
     expect(issueText(dir)).not.toContain("Not A Guide");
     expect(coveredSlugs(dir)).not.toContain("a-comparison-page");
   });
 
   it("does not repeat a guide it has already sent", async () => {
     await draft(dir);
+    await send(dir);
     const first = coveredSlugs(dir);
     expect(first.length).toBeGreaterThan(0);
 
@@ -176,11 +211,23 @@ describe("the record of what has already been sent", () => {
     dir = makeWorkspace();
   });
 
-  it("grows across ordinary runs", async () => {
+  it("grows across issues that were actually sent", async () => {
     await draft(dir);
+    await send(dir);
     expect(covered(dir)).toHaveLength(12);
     await draft(dir);
+    await send(dir);
     expect(covered(dir)).toHaveLength(24);
+  });
+
+  it("records nothing while a draft is only written", async () => {
+    // The fault this split exists for: a draft reviewed and not sent must
+    // leave its listings available to the next one.
+    await draft(dir);
+    expect(covered(dir)).toHaveLength(0);
+    const first = issueText(dir);
+    await draft(dir);
+    expect(issueText(dir)).toBe(first);
   });
 
   // --all means "put every open listing in this issue". It does not mean
@@ -190,11 +237,14 @@ describe("the record of what has already been sent", () => {
   // ordinary run re-sent listings subscribers already had.
   it("survives an --all run", async () => {
     await draft(dir);
+    await send(dir);
     await draft(dir);
+    await send(dir);
     const before = covered(dir);
     expect(before).toHaveLength(24);
 
     await draft(dir, ["--all"]);
+    await send(dir);
     const after = covered(dir);
 
     for (const id of before) {
@@ -204,10 +254,13 @@ describe("the record of what has already been sent", () => {
 
   it("does not re-send an already-sent listing after an --all run", async () => {
     await draft(dir);
+    await send(dir);
     await draft(dir);
+    await send(dir);
     const before = new Set(covered(dir));
 
     await draft(dir, ["--all"]);
+    await send(dir);
     await draft(dir);
 
     // Ids do not appear in the email, so look for the links themselves.
@@ -228,7 +281,9 @@ describe("--since", () => {
     const dir = makeWorkspace();
     const { stdout } = await draft(dir, ["--since", "2026-09-10", "--full"]);
     expect(stdout).toMatch(/20 listings/);
-    expect(covered(dir)).toHaveLength(20);
+    // The draft holds them; the ledger stays empty until the issue is sent.
+    expect(pending(dir)).toHaveLength(20);
+    expect(covered(dir)).toHaveLength(0);
   });
 
   it("covers everything when it is not passed", async () => {

@@ -97,13 +97,19 @@ const ranked = [...fresh].sort((a, b) => {
 });
 const picked = argv.includes("--full") ? ranked : ranked.slice(0, LIMIT);
 const remaining = ranked.length - picked.length;
+// What the reader will find if they click, which is every open listing except
+// the ones already in this email. `remaining` counts only what has not been
+// emailed before, so using it here said "80 more are on the site" about a page
+// showing 102 -- true of our sending history, not of the page.
+const onSiteOther = Math.max(open.length - picked.length, 0);
 
 /**
  * The guides, which are the part of this email that is not regional.
  *
- * Every listing above is Morocco or France. A subscriber anywhere else opened
- * an email with nothing in it for them, which is a strange thing to send from a
- * site whose twenty-four guides work the same in any country. So the issue also
+ * Listings are regional -- ten countries now, not the two this started with --
+ * so a subscriber in a country with nothing new this week opens an email with
+ * no listing for them, which is a strange thing to send from a site whose
+ * twenty-four guides work the same in any country. So the issue also
  * carries the guides it has not sent before, tracked by slug the same way
  * listings are tracked by id — never a rotation of old ones dressed up as new.
  */
@@ -125,8 +131,28 @@ if (!picked.length && !newGuides.length) {
 const byCountry = (code) => picked.filter((s) => s.country === code);
 const KIND = { stage: "Internship", alternance: "Apprenticeship", pfe: "Final-year project" };
 
+/**
+ * Duration and level are printed as the employer wrote them -- "6 mois",
+ * "Bac+5" -- where the site translates them.
+ *
+ * src/lib/stage-format.ts does that properly, and it is 117 lines of parsing,
+ * not a lookup table. This file is plain .mjs run by node, so reaching it would
+ * mean either adding tsx as a dependency -- regenerating package-lock.json,
+ * which on macOS is the mistake that kept CI red for four commits -- or
+ * copying the parser here, which is the duplicated-rule fault this repository
+ * has now hit three times. Neither is worth it: these subscribers are mostly
+ * French-speaking students for whom "Bac+5" is the clearer term, and the words
+ * are the employer's own rather than anything invented. Revisit if the list
+ * stops being mostly francophone.
+ */
 function line(s) {
-  const bits = [KIND[s.kind] || s.kind, `${s.city}`];
+  // Not every employer publishes a city. Cohere lists its two Canadian roles
+  // with none, and `${s.city}` rendered the string "undefined" into the email:
+  // "Internship | undefined | 3-6 months". The page fixed this by falling back
+  // to the country; so does this, because a reader deciding whether to apply
+  // needs to know where, and "undefined" is worse than no answer at all.
+  const where = s.city || countryName(s.country);
+  const bits = [KIND[s.kind] || s.kind, where];
   if (s.duration) bits.push(s.duration);
   if (s.level) bits.push(s.level);
   const when = s.deadline ? `Apply by ${s.deadline}` : "Open until filled";
@@ -135,7 +161,30 @@ function line(s) {
 
 const esc = (v) => String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-const sections = [["Morocco", byCountry("MA")], ["France", byCountry("FR")]].filter(([, v]) => v.length);
+/**
+ * Every country in the issue, not the two this board started with.
+ *
+ * This read [["Morocco", MA], ["France", FR]] and nothing else. The board now
+ * spans ten countries, so the week its twelve picks came from the United
+ * States, Canada, Germany and the Netherlands, both sections were empty and
+ * the email printed no listings at all -- under an opening line promising
+ * "12 openings below". The subject said "Morocco and France" over an issue
+ * containing none of either. Same stale assumption the /stages title carried
+ * until it was counted from the data instead.
+ *
+ * Read from the listings, largest first, so the issue describes itself.
+ */
+const COUNTRY_NAMES = {
+  MA: "Morocco", FR: "France", BE: "Belgium", CH: "Switzerland", DE: "Germany",
+  ES: "Spain", IE: "Ireland", IT: "Italy", LU: "Luxembourg", NL: "Netherlands",
+  PL: "Poland", PT: "Portugal", SE: "Sweden", GB: "United Kingdom",
+  US: "United States", CA: "Canada"
+};
+const countryName = (code) => COUNTRY_NAMES[code] || code;
+
+const sections = [...new Set(picked.map((s) => s.country))]
+  .map((code) => [countryName(code), byCountry(code), code])
+  .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
 
 // The oldest per-entry check, so the email never claims a link was verified
 // more recently than it actually was.
@@ -149,7 +198,7 @@ const intro = !picked.length
   ? `No new openings since the last issue. ${open.length} are still open on the site, and the guides below are new.`
   : `${picked.length} ${picked.length === 1 ? "opening" : "openings"} below` +
     (dated ? `, ${dated} with a published closing date.` : ", none with a published closing date, so they run until filled.") +
-    (remaining > 0 ? ` ${remaining} more are on the site.` : "");
+    (onSiteOther > 0 ? ` ${onSiteOther} more are on the site.` : "");
 
 // A guides-only issue headed "Tech internships" contradicts its own contents
 // in the first line a reader sees.
@@ -159,7 +208,7 @@ for (const [name, list] of sections) {
   txt += `\n\n${name.toUpperCase()} (${list.length})\n${"-".repeat(name.length + 6)}\n`;
   for (const s of list) { const l = line(s); txt += `\n${l.head}\n  ${l.meta}\n  ${l.href}\n`; }
 }
-txt += remaining > 0 ? `\n\nThe other ${remaining} openings: ${SITE}/en/stages\n` : "\n";
+txt += onSiteOther > 0 ? `\n\nThe other ${onSiteOther} openings: ${SITE}/en/stages\n` : "\n";
 if (newGuides.length) {
   txt += `\n\nGUIDES (${newGuides.length})\n${"-".repeat(12)}\n`;
   txt += `\nNot region-specific. These work wherever you are.\n`;
@@ -198,27 +247,56 @@ html += `</div>`;
 await fs.mkdir(OUT, { recursive: true });
 await fs.writeFile(path.join(OUT, `issue-${today}.txt`), txt);
 await fs.writeFile(path.join(OUT, `issue-${today}.html`), html);
-const covered = [...alreadySent, ...picked.map((s) => s.id)];
-const coveredSlugs = [...new Set([...guidesSent, ...newGuides.map((g) => g.slug)])];
+/**
+ * Writing a draft is not sending it.
+ *
+ * This wrote the sent-ledger on every run, directly under a line reading
+ * "Nothing was sent" -- and sending really is a separate manual step: the
+ * script produces HTML a person then pastes into Kit. So every draft that was
+ * generated and not sent silently retired its listings. Three drafts exist in
+ * this folder from September, no issue has ever gone out, and the ledger
+ * claimed 48 of 102 listings covered: the first real issue would have skipped
+ * nearly half the board, and nobody would have seen that happen.
+ *
+ * The ids go into a pending file beside the draft instead. `npm run
+ * draft:sent` promotes the pending file once the issue is actually sent, which
+ * is the only moment the claim becomes true.
+ */
 await fs.writeFile(
-  STATE,
-  `${JSON.stringify({ sentAt: today, covered: covered.length, coveredIds: covered, coveredSlugs }, null, 2)}\n`
+  path.join(OUT, `issue-${today}.pending.json`),
+  `${JSON.stringify({ draftedAt: today, ids: picked.map((s) => s.id), slugs: newGuides.map((g) => g.slug) }, null, 2)}\n`
 );
+
+/**
+ * The countries this issue actually contains, named in the subject.
+ *
+ * It said "Morocco and France" every week whatever was inside, which this week
+ * would have been a subject line naming two countries the email did not
+ * mention once. Two names and a count, because a subject listing six is not
+ * read.
+ */
+const subjectWhere = sections.length
+  ? sections.length <= 2
+    ? sections.map(([name]) => name).join(" and ")
+    : `${sections[0][0]}, ${sections[1][0]} and ${sections.length - 2} more`
+  : "";
 
 // A subject line reading "0 internships" is the kind of detail that decides
 // whether an email gets opened, so a guides-only issue says what it is.
 const subject = !picked.length
   ? `${newGuides.length} new guide${newGuides.length === 1 ? "" : "s"} - and ${open.length} internships still open`
   : remaining > 0
-    ? `${picked.length} internships closing soonest - Morocco and France`
-    : `${picked.length} tech internship${picked.length === 1 ? "" : "s"} - Morocco and France`;
+    ? `${picked.length} internships closing soonest - ${subjectWhere}`
+    : `${picked.length} tech internship${picked.length === 1 ? "" : "s"} - ${subjectWhere}`;
 console.log(`
   Subject: ${subject}
 
-  ${picked.length} listings  (${byCountry("MA").length} Morocco, ${byCountry("FR").length} France)
+  ${picked.length} listings  (${sections.map(([name, list]) => `${list.length} ${name}`).join(", ") || "none"})
   ${newGuides.length} guides   (not region-specific)
   drafts/issue-${today}.txt
   drafts/issue-${today}.html
 
   Read it, then paste the HTML into Kit as a broadcast. Nothing was sent.
+  Once it IS sent, run: npm run draft:sent
+  Until then these listings stay unsent, so the next draft still offers them.
 `);
