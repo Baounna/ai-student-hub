@@ -18,7 +18,6 @@ import {
   getPopularPosts,
   getPostsByTrack,
   getTrackCounts,
-  getTrackLabel,
   recommendedTools,
   slugify
 } from "@/content/posts";
@@ -277,66 +276,85 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
   return (
     <div className="page-shell max-w-6xl py-8 md:py-10">
 
-      <section className="wiki-panel overflow-hidden rounded-md">
+      {/*
+        * The opening, rebuilt against what comparable publications actually do.
+        *
+        * This was a wiki-panel with a wiki-head: the site's opening statement
+        * rendered as a Wikipedia infobox, which is why it read as two stacked
+        * boxes with a seam between the headline and the copy. Measured on the
+        * live site it cost about 780px before the first listing.
+        *
+        * Seven publications were measured in a headless browser for this.
+        * Content starts at 159px on freeCodeCamp News, 228px on 404 Media,
+        * 251px on Stratechery, 321px on The Hacker News -- and those four are
+        * exactly the four whose main asset is a frequently-updated list, the
+        * same shape as this board. The two that spend 780-810px, Platformer and
+        * The Batch, are newsletter-first businesses where the signup IS the
+        * product. This page was built like The Batch while its product is the
+        * list.
+        *
+        * So: left-aligned rather than centred (all seven are), one primary call
+        * to action rather than three (median above the fold across the seven is
+        * one; The Batch's eleven is the outlier), and the positioning sentence
+        * demoted under the headline instead of occupying its own panel. 404
+        * Media puts its mission line at y=1147, below the first story.
+        */}
+      <section className="pb-6">
+        <p className="font-meta text-[11px] uppercase tracking-[0.14em] text-[color:var(--muted)]">
+          {locale === "fr" ? "IA + cybersécurité · vérifié chaque semaine" : "AI + cybersecurity · checked weekly"}
+        </p>
         {/* The page's h1. It was a plain div, so the homepage — the page search
-            engines weigh most — shipped with no top-level heading at all. */}
-        <h1 className="wiki-head hero-title px-6 py-3 text-center font-bold">
+            engines weigh most — shipped with no top-level heading at all.
+            The English ran to fourteen words and said "AI" three times while
+            the French said the same thing in eight; the long clause is a dek,
+            not a headline, so it now sits where a dek goes. */}
+        <h1 className="font-display mt-2 max-w-3xl text-4xl font-bold leading-[1.08] tracking-tight text-[color:var(--text-strong)] md:text-5xl">
           {locale === "fr"
-            ? "Actualités IA + cybersécurité et guides d'exécution pour tous"
-            : "AI + Cybersecurity news and execution guides for anyone who builds, learns, or works with AI"}
+            ? "Actualités IA + cybersécurité et guides d'exécution"
+            : "AI + cybersecurity news and execution guides"}
         </h1>
-        <div className="body-copy px-6 py-4 text-center text-[color:var(--text)]">
-          <p>
-            {locale === "fr"
-              ? "Base de connaissance orientée résultats: suivre les updates, choisir les bons outils, puis livrer des projets concrets."
-              : "Execution-first knowledge base: follow updates, pick the right tools, and ship practical projects faster."}
-          </p>
-          <p className="mt-2 text-sm text-[color:var(--muted)]">
-            {locale === "fr"
-              ? "Objectif: convertir information IA + cybersécurité en exécution mesurable. Parcours étudiant dédié disponible."
-              : "Goal: convert AI + Cybersecurity information into measurable execution. A dedicated student path stays available."}
-          </p>
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-            <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "home_header", locale }} className="btn-primary">
-              {dict.home.ctaPrimary}
+        <p className="body-copy mt-4 max-w-2xl text-[color:var(--text)]">
+          {locale === "fr"
+            ? "Pour celles et ceux qui construisent, apprennent ou travaillent avec l'IA. Suivre les updates, choisir les bons outils, puis livrer des projets concrets."
+            : "For anyone who builds, learns, or works with AI. Follow updates, pick the right tools, and ship practical projects faster."}
+        </p>
+        {/* The inventory line, directly under the claim it supports. These were
+            display slices -- popularPosts is three, the number of cards below,
+            so the site advertised "3 core articles" while publishing 27 and
+            omitted the verified listings entirely. Count the library, not the
+            shelf. */}
+        <p className="mt-4 text-sm text-[color:var(--muted)]">
+          {openStages.length} {locale === "fr" ? "stages vérifiés" : "verified internships"} • {allPosts.length}{" "}
+          {locale === "fr" ? "guides" : "guides"} • {allNews.length}{" "}
+          {locale === "fr" ? "briefs d'actualité" : "news briefs"} • {categories.length}{" "}
+          {locale === "fr" ? "domaines" : "domains"}
+        </p>
+        <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <TrackableAnchor href={leadMagnetHref} event="lead_magnet_click" meta={{ page: "home_header", locale }} className="btn-primary">
+            {dict.home.ctaPrimary}
+          </TrackableAnchor>
+          {/* Demoted to text, following Stratechery: it ships four calls to
+              action above the fold and none of them competes, because none is
+              taller than 33px. These were three filled buttons side by side. */}
+          <Link href={`/${locale}/compare`} className="do-link py-1.5 text-sm">
+            {locale === "fr" ? "Labo outils" : "Tools lab"}
+          </Link>
+          {hasCheckoutUrl ? (
+            <TrackableAnchor
+              href={checkoutUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              event="product_checkout_click"
+              meta={{ page: "home_header", locale, offer: "ai-career-guide" }}
+              className="do-link py-1.5 text-sm"
+            >
+              {locale === "fr" ? "Guide exécution" : "Execution guide"}
             </TrackableAnchor>
-            <Link href={`/${locale}/compare`} className="btn-secondary">
-              {locale === "fr" ? "Ouvrir le labo outils" : "Open tools lab"}
+          ) : (
+            <Link href={getGuideCtaHref(locale)} className="do-link py-1.5 text-sm">
+              {getGuideCtaLabel(locale)}
             </Link>
-            {hasCheckoutUrl ? (
-              <TrackableAnchor
-                href={checkoutUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                event="product_checkout_click"
-                meta={{ page: "home_header", locale, offer: "ai-career-guide" }}
-                className="btn-secondary"
-              >
-                {locale === "fr" ? "Acheter le guide exécution" : "Buy execution guide"}
-              </TrackableAnchor>
-            ) : (
-              <Link href={getGuideCtaHref(locale)} className="btn-secondary">
-                {getGuideCtaLabel(locale)}
-              </Link>
-            )}
-          </div>
-          {/* These were an inventory line built out of display slices.
-              popularPosts is getPopularPosts(locale, 3) -- three is the number
-              of cards shown below, not the number of guides that exist -- so
-              the site advertised "3 core articles" while publishing 27, and
-              omitted the 82 verified listings entirely. It understated its own
-              work by an order of magnitude, thirty pixels above a panel that
-              correctly says "82 openings". Count the library, not the shelf. */}
-          <p className="mt-2 text-sm text-[color:var(--muted)]">
-            {openStages.length} {locale === "fr" ? "stages vérifiés" : "verified internships"} • {allPosts.length}{" "}
-            {locale === "fr" ? "guides" : "guides"} • {allNews.length}{" "}
-            {locale === "fr" ? "briefs d'actualité" : "news briefs"} • {categories.length}{" "}
-            {locale === "fr" ? "domaines" : "domains"}
-          </p>
-          <p className="mt-1 text-xs text-[color:var(--muted)]">
-            {getTrackLabel("ai", locale)}: {trackCounts.ai} • {getTrackLabel("cs", locale)}: {trackCounts.cs} •{" "}
-            {getTrackLabel("career", locale)}: {trackCounts.career}
-          </p>
+          )}
         </div>
       </section>
 
