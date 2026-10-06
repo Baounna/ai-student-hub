@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-06T00:01:44.852Z",
+  "updatedAt": "2026-10-06T13:15:57.097Z",
   "items": [
     {
       "slug": "20261031-vercel-laya-decision-model-now-available-on-ai-gateway-free-thro-e15fec79",
@@ -23,42 +23,62 @@
       }
     },
     {
-      "slug": "20261006-postgresql-postgresql-1519-1711-minor-release-action-may-be-requ-00cf1171",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261006-supabase-logs-usage-based-pricing-f9fe585d",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/postgres-15-19-17-11-breaking-changes",
-      "publishedAt": "2026-10-06T00:01:44.852Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://supabase.com/changelog/logs-usage-based-pricing",
+      "publishedAt": "2026-10-06T13:15:57.097Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
-          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
         },
         "fr": {
-          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
-          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
         }
       }
     },
     {
-      "slug": "20261005-supabase-secret-scanning-adds-detectors-for-lovable-supabase-and-33658ec8",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
+      "slug": "20261006-github-code-scanning-ai-scan-enablement-status-in-security-overv-eb3084bd",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-05-secret-scanning-adds-detectors-for-lovable-supabase-and-more",
-      "publishedAt": "2026-10-05T22:42:14.000Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://github.blog/changelog/2026-10-06-code-scanning-ai-scan-enablement-status-in-security-overview",
+      "publishedAt": "2026-10-06T10:23:38.000Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
       "locales": {
         "en": {
-          "title": "Secret scanning adds detectors for Lovable, Supabase, and more",
-          "summary": "Secret scanning now detects new secret types from Lovable Labs, Pydantic Services Inc., and Supabase. New secret scanning partner The following provider joined the secret scanning partnership program. When one… The post…"
+          "title": "Code scanning AI Scan enablement status in security overview",
+          "summary": "Organization and enterprise administrators can now see AI Scan for pull requests enablement status in the security overview coverage view. The code scanning summary shows enabled and not enabled repository… The post Cod…"
         },
         "fr": {
-          "title": "Secret scanning adds detectors for Lovable, Supabase, and more",
-          "summary": "Secret scanning now detects new secret types from Lovable Labs, Pydantic Services Inc., and Supabase. New secret scanning partner The following provider joined the secret scanning partnership program. When one… The post…"
+          "title": "Code scanning AI Scan enablement status in security overview",
+          "summary": "Organization and enterprise administrators can now see AI Scan for pull requests enablement status in the security overview coverage view. The code scanning summary shows enabled and not enabled repository… The post Cod…"
+        }
+      }
+    },
+    {
+      "slug": "20261006-hugging-face-falcon-emirati-when-an-llm-learns-the-dialect-the-c-085f7195",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+      "publishedAt": "2026-10-06T06:44:39.000Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
+      "locales": {
+        "en": {
+          "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+          "summary": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance"
+        },
+        "fr": {
+          "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+          "summary": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance"
         }
       }
     },
@@ -179,26 +199,6 @@
         "fr": {
           "title": "pg_ivm 1.16 released",
           "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault whe…"
-        }
-      }
-    },
-    {
-      "slug": "20261003-hugging-face-the-agent-said-it-was-done-the-database-disagreed-89764eae",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/microsoft/thinkingbox",
-      "publishedAt": "2026-10-03T22:56:48.000Z",
-      "discoveredAt": "2026-10-04T21:21:29.249Z",
-      "locales": {
-        "en": {
-          "title": "The Agent Said It Was Done. The Database Disagreed.",
-          "summary": "The Agent Said It Was Done. The Database Disagreed."
-        },
-        "fr": {
-          "title": "The Agent Said It Was Done. The Database Disagreed.",
-          "summary": "The Agent Said It Was Done. The Database Disagreed."
         }
       }
     },
@@ -383,62 +383,82 @@
       }
     },
     {
-      "slug": "20261006-vercel-voyage-rerank-3-and-rerank-3-lite-are-now-available-on-ai-52b4873f",
+      "slug": "20261006-vercel-speed-insights-deprecates-first-input-delay-on-november-1-8a252a6f",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/voyage-rerank-3-and-rerank-3-lite-are-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-06T00:01:44.852Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://vercel.com/changelog/speed-insights-deprecates-first-input-delay-on-november-first",
+      "publishedAt": "2026-10-06T13:15:57.097Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
       "locales": {
         "en": {
-          "title": "Voyage Rerank 3 and Rerank 3 Lite are now available on AI Gateway Use Voyage AI by MongoDB's Rerank 3 and Rerank 3 Lite through Vercel AI Gateway with one API key, unified billing, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "Steren Member of the Technical Staff"
+          "title": "Speed Insights deprecates First Input Delay on November 1st Speed Insights is deprecating First Input Delay on November 1, with no action required. Damien Simonin Feugas, Vincent Derks, and 1 other",
+          "summary": "1 October 1 Oct"
         },
         "fr": {
-          "title": "Voyage Rerank 3 and Rerank 3 Lite are now available on AI Gateway Use Voyage AI by MongoDB's Rerank 3 and Rerank 3 Lite through Vercel AI Gateway with one API key, unified billing, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "Steren Member of the Technical Staff"
+          "title": "Speed Insights deprecates First Input Delay on November 1st Speed Insights is deprecating First Input Delay on November 1, with no action required. Damien Simonin Feugas, Vincent Derks, and 1 other",
+          "summary": "1 October 1 Oct"
         }
       }
     },
     {
-      "slug": "20261006-supabase-database-replication-is-now-pipelines-43d4a2f0",
+      "slug": "20261006-supabase-health-check-advisors-ff04ed6f",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/database-replication-renamed-pipelines",
-      "publishedAt": "2026-10-06T00:01:44.852Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://supabase.com/changelog/50577-health-check-advisors",
+      "publishedAt": "2026-10-06T13:15:57.097Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
       "locales": {
         "en": {
-          "title": "Database Replication is now Pipelines",
-          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
+          "title": "Health Check Advisors",
+          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
         },
         "fr": {
-          "title": "Database Replication is now Pipelines",
-          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
+          "title": "Health Check Advisors",
+          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
         }
       }
     },
     {
-      "slug": "20261002-github-stateless-github-app-installation-tokens-rolled-out-33bc6bdb",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
+      "slug": "20261005-supabase-secret-scanning-adds-detectors-for-lovable-supabase-and-33658ec8",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
-      "publishedAt": "2026-10-02T22:18:23.000Z",
-      "discoveredAt": "2026-10-03T11:36:52.424Z",
+      "href": "https://github.blog/changelog/2026-10-05-secret-scanning-adds-detectors-for-lovable-supabase-and-more",
+      "publishedAt": "2026-10-05T22:42:14.000Z",
+      "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "Stateless GitHub App installation tokens rolled out",
-          "summary": "The staged rollout of the stateless GitHub App installation token format, which began on April 27, 2026, is complete. By default, all newly minted GitHub App installation tokens will be… The post Stateless GitHub App in…"
+          "title": "Secret scanning adds detectors for Lovable, Supabase, and more",
+          "summary": "Secret scanning now detects new secret types from Lovable Labs, Pydantic Services Inc., and Supabase. New secret scanning partner The following provider joined the secret scanning partnership program. When one… The post…"
         },
         "fr": {
-          "title": "Stateless GitHub App installation tokens rolled out",
-          "summary": "The staged rollout of the stateless GitHub App installation token format, which began on April 27, 2026, is complete. By default, all newly minted GitHub App installation tokens will be… The post Stateless GitHub App in…"
+          "title": "Secret scanning adds detectors for Lovable, Supabase, and more",
+          "summary": "Secret scanning now detects new secret types from Lovable Labs, Pydantic Services Inc., and Supabase. New secret scanning partner The following provider joined the secret scanning partnership program. When one… The post…"
+        }
+      }
+    },
+    {
+      "slug": "20261003-hugging-face-the-agent-said-it-was-done-the-database-disagreed-89764eae",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "publishedAt": "2026-10-03T22:56:48.000Z",
+      "discoveredAt": "2026-10-04T21:21:29.249Z",
+      "locales": {
+        "en": {
+          "title": "The Agent Said It Was Done. The Database Disagreed.",
+          "summary": "The Agent Said It Was Done. The Database Disagreed."
+        },
+        "fr": {
+          "title": "The Agent Said It Was Done. The Database Disagreed.",
+          "summary": "The Agent Said It Was Done. The Database Disagreed."
         }
       }
     },
@@ -559,26 +579,6 @@
         "fr": {
           "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
           "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuse…"
-        }
-      }
-    },
-    {
-      "slug": "20261002-hugging-face-open-sourcing-astabrief-the-fast-report-generation--d599f0a2",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/astabrief",
-      "publishedAt": "2026-10-02T15:19:50.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
-      "locales": {
-        "en": {
-          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
-        },
-        "fr": {
-          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
         }
       }
     },
@@ -763,62 +763,82 @@
       }
     },
     {
-      "slug": "20261006-vercel-vercel-sandbox-now-supports-secure-compute-connect-vercel-130e86a3",
+      "slug": "20261006-vercel-edge-requests-are-now-called-cdn-requests-cdn-requests-is-1f5e0e81",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-sandbox-now-supports-secure-compute",
-      "publishedAt": "2026-10-06T00:01:44.852Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://vercel.com/changelog/edge-requests-are-now-called-cdn-requests",
+      "publishedAt": "2026-10-06T13:15:57.097Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
       "locales": {
         "en": {
-          "title": "Vercel Sandbox now supports Secure Compute Connect Vercel Sandboxes to a dedicated Secure Compute network. +2 Karim Hasebou, Brandon Tuttle, and 2 others",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Edge Requests are now called CDN Requests CDN Requests is the new name for the usage metric previously called Edge Requests. Pricing, limits, and how usage is measured are unchanged. Steren Member of the Technical Staff",
+          "summary": "+2 Josh Lipman, Jerilyn Zheng, and 2 others"
         },
         "fr": {
-          "title": "Vercel Sandbox now supports Secure Compute Connect Vercel Sandboxes to a dedicated Secure Compute network. +2 Karim Hasebou, Brandon Tuttle, and 2 others",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Edge Requests are now called CDN Requests CDN Requests is the new name for the usage metric previously called Edge Requests. Pricing, limits, and how usage is measured are unchanged. Steren Member of the Technical Staff",
+          "summary": "+2 Josh Lipman, Jerilyn Zheng, and 2 others"
         }
       }
     },
     {
-      "slug": "20261006-cursor-observability-on-auto-pilot-d72f6df8",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
+      "slug": "20261006-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/50403-observability-autopilot",
-      "publishedAt": "2026-10-06T00:01:44.852Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
+      "publishedAt": "2026-10-06T13:15:57.097Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
       "locales": {
         "en": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
         },
         "fr": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
         }
       }
     },
     {
-      "slug": "20261002-github-copilot-copilot-code-review-api-support-and-new-default-e-c50f0986",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
+      "slug": "20261002-github-stateless-github-app-installation-tokens-rolled-out-33bc6bdb",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
-      "publishedAt": "2026-10-02T19:13:50.000Z",
+      "href": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
+      "publishedAt": "2026-10-02T22:18:23.000Z",
+      "discoveredAt": "2026-10-03T11:36:52.424Z",
+      "locales": {
+        "en": {
+          "title": "Stateless GitHub App installation tokens rolled out",
+          "summary": "The staged rollout of the stateless GitHub App installation token format, which began on April 27, 2026, is complete. By default, all newly minted GitHub App installation tokens will be… The post Stateless GitHub App in…"
+        },
+        "fr": {
+          "title": "Stateless GitHub App installation tokens rolled out",
+          "summary": "The staged rollout of the stateless GitHub App installation token format, which began on April 27, 2026, is complete. By default, all newly minted GitHub App installation tokens will be… The post Stateless GitHub App in…"
+        }
+      }
+    },
+    {
+      "slug": "20261002-hugging-face-open-sourcing-astabrief-the-fast-report-generation--d599f0a2",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/astabrief",
+      "publishedAt": "2026-10-02T15:19:50.000Z",
       "discoveredAt": "2026-10-02T22:11:36.141Z",
       "locales": {
         "en": {
-          "title": "Copilot code review: API support and new default effort level",
-          "summary": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default… The post Copilot code review: API support and new de…"
+          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
         },
         "fr": {
-          "title": "Copilot code review: API support and new default effort level",
-          "summary": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default… The post Copilot code review: API support and new de…"
+          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
         }
       }
     },
@@ -939,26 +959,6 @@
         "fr": {
           "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
           "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database manageme…"
-        }
-      }
-    },
-    {
-      "slug": "20261002-hugging-face-autosynthdata-generating-training-data-for-enterpri-a885ed61",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-      "publishedAt": "2026-10-02T04:01:31.000Z",
-      "discoveredAt": "2026-10-02T12:29:56.036Z",
-      "locales": {
-        "en": {
-          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
-        },
-        "fr": {
-          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
         }
       }
     },
@@ -1143,62 +1143,82 @@
       }
     },
     {
-      "slug": "20261005-vercel-ling-31-flash-is-now-available-on-ai-gateway-call-ling-31-d24dd6cc",
+      "slug": "20261006-vercel-voyage-rerank-3-and-rerank-3-lite-are-now-available-on-ai-52b4873f",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/ling-3-1-flash-is-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-05T14:32:16.644Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
-      "locales": {
-        "en": {
-          "title": "Ling 3.1 Flash is now available on AI Gateway Call Ling 3.1 Flash through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "Karim Hasebou, Brandon Tuttle, and 2 others"
-        },
-        "fr": {
-          "title": "Ling 3.1 Flash is now available on AI Gateway Call Ling 3.1 Flash through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "Karim Hasebou, Brandon Tuttle, and 2 others"
-        }
-      }
-    },
-    {
-      "slug": "20261005-supabase-read-replicas-moved-to-project-settings-infrastructure-c2cab453",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/read-replicas-moved-to-infrastructure",
-      "publishedAt": "2026-10-05T14:32:16.644Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
-      "locales": {
-        "en": {
-          "title": "Read replicas moved to Project Settings → Infrastructure",
-          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
-        },
-        "fr": {
-          "title": "Read replicas moved to Project Settings → Infrastructure",
-          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
-        }
-      }
-    },
-    {
-      "slug": "20261002-github-unvalidated-npm-trusted-publishing-configurations-now-exp-4a76c0c8",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-02-unvalidated-npm-trusted-publishing-configurations-now-expire",
-      "publishedAt": "2026-10-02T19:07:04.000Z",
+      "href": "https://vercel.com/changelog/voyage-rerank-3-and-rerank-3-lite-are-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-06T00:01:44.852Z",
       "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "Unvalidated npm trusted publishing configurations now expire",
-          "summary": "Unvalidated npm trusted publishing configurations now expire 48 hours after creation and can no longer authorize publishing. This limits the risk of trusting a repository or project name that changes… The post Unvalidat…"
+          "title": "Voyage Rerank 3 and Rerank 3 Lite are now available on AI Gateway Use Voyage AI by MongoDB's Rerank 3 and Rerank 3 Lite through Vercel AI Gateway with one API key, unified billing, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "Steren Member of the Technical Staff"
         },
         "fr": {
-          "title": "Unvalidated npm trusted publishing configurations now expire",
-          "summary": "Unvalidated npm trusted publishing configurations now expire 48 hours after creation and can no longer authorize publishing. This limits the risk of trusting a repository or project name that changes… The post Unvalidat…"
+          "title": "Voyage Rerank 3 and Rerank 3 Lite are now available on AI Gateway Use Voyage AI by MongoDB's Rerank 3 and Rerank 3 Lite through Vercel AI Gateway with one API key, unified billing, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "Steren Member of the Technical Staff"
+        }
+      }
+    },
+    {
+      "slug": "20261006-postgresql-postgresql-1519-1711-minor-release-action-may-be-requ-00cf1171",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/postgres-15-19-17-11-breaking-changes",
+      "publishedAt": "2026-10-06T00:01:44.852Z",
+      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
+          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+        },
+        "fr": {
+          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
+          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+        }
+      }
+    },
+    {
+      "slug": "20261002-github-copilot-copilot-code-review-api-support-and-new-default-e-c50f0986",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+      "publishedAt": "2026-10-02T19:13:50.000Z",
+      "discoveredAt": "2026-10-02T22:11:36.141Z",
+      "locales": {
+        "en": {
+          "title": "Copilot code review: API support and new default effort level",
+          "summary": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default… The post Copilot code review: API support and new de…"
+        },
+        "fr": {
+          "title": "Copilot code review: API support and new default effort level",
+          "summary": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default… The post Copilot code review: API support and new de…"
+        }
+      }
+    },
+    {
+      "slug": "20261002-hugging-face-autosynthdata-generating-training-data-for-enterpri-a885ed61",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "publishedAt": "2026-10-02T04:01:31.000Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
+      "locales": {
+        "en": {
+          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
+        },
+        "fr": {
+          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
         }
       }
     },
@@ -1319,26 +1339,6 @@
         "fr": {
           "title": "pgvector 0.8.7 Released",
           "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details:…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-hugging-face-introducing-olmo-core-3-open-scalable-training-infr-0bf00b70",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/olmocore3",
-      "publishedAt": "2026-10-01T15:01:43.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
-        },
-        "fr": {
-          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
         }
       }
     },
@@ -1523,62 +1523,82 @@
       }
     },
     {
-      "slug": "20261004-vercel-microsoft-ai-models-are-now-available-on-ai-gateway-micro-a616128c",
+      "slug": "20261006-vercel-vercel-sandbox-now-supports-secure-compute-connect-vercel-130e86a3",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/microsoft-ai-models-are-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-04T21:21:29.249Z",
-      "discoveredAt": "2026-10-04T21:21:29.249Z",
+      "href": "https://vercel.com/changelog/vercel-sandbox-now-supports-secure-compute",
+      "publishedAt": "2026-10-06T00:01:44.852Z",
+      "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
+          "title": "Vercel Sandbox now supports Secure Compute Connect Vercel Sandboxes to a dedicated Secure Compute network. +2 Karim Hasebou, Brandon Tuttle, and 2 others",
           "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         },
         "fr": {
-          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
+          "title": "Vercel Sandbox now supports Secure Compute Connect Vercel Sandboxes to a dedicated Secure Compute network. +2 Karim Hasebou, Brandon Tuttle, and 2 others",
           "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         }
       }
     },
     {
-      "slug": "20261005-supabase-fixed-stale-database-credentials-left-behind-after-a-re-458593fe",
+      "slug": "20261006-supabase-database-replication-is-now-pipelines-43d4a2f0",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/restore-credential-resync",
-      "publishedAt": "2026-10-05T14:32:16.644Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
+      "href": "https://supabase.com/changelog/database-replication-renamed-pipelines",
+      "publishedAt": "2026-10-06T00:01:44.852Z",
+      "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+          "title": "Database Replication is now Pipelines",
+          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
         },
         "fr": {
-          "title": "Fixed stale database credentials left behind after a restore",
-          "summary": "Bug Fix A physical restore could leave a project with stale database credentials, causing authentication failures. Restores now reapply current credentials afterward."
+          "title": "Database Replication is now Pipelines",
+          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
         }
       }
     },
     {
-      "slug": "20261002-github-npm-staged-publishing-now-supports-creating-new-packages-5ef20db1",
+      "slug": "20261002-github-unvalidated-npm-trusted-publishing-configurations-now-exp-4a76c0c8",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-02-npm-staged-publishing-now-supports-creating-new-packages",
-      "publishedAt": "2026-10-02T19:05:17.000Z",
+      "href": "https://github.blog/changelog/2026-10-02-unvalidated-npm-trusted-publishing-configurations-now-expire",
+      "publishedAt": "2026-10-02T19:07:04.000Z",
       "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "npm staged publishing now supports creating new packages",
-          "summary": "You can now create a new npm package with npm stage publish, using a local session or a granular access token, including a stage-only token. This lets you create packages… The post npm staged publishing now supports cre…"
+          "title": "Unvalidated npm trusted publishing configurations now expire",
+          "summary": "Unvalidated npm trusted publishing configurations now expire 48 hours after creation and can no longer authorize publishing. This limits the risk of trusting a repository or project name that changes… The post Unvalidat…"
         },
         "fr": {
-          "title": "npm staged publishing now supports creating new packages",
-          "summary": "You can now create a new npm package with npm stage publish, using a local session or a granular access token, including a stage-only token. This lets you create packages… The post npm staged publishing now supports cre…"
+          "title": "Unvalidated npm trusted publishing configurations now expire",
+          "summary": "Unvalidated npm trusted publishing configurations now expire 48 hours after creation and can no longer authorize publishing. This limits the risk of trusting a repository or project name that changes… The post Unvalidat…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-hugging-face-introducing-olmo-core-3-open-scalable-training-infr-0bf00b70",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/olmocore3",
+      "publishedAt": "2026-10-01T15:01:43.000Z",
+      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
+        },
+        "fr": {
+          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
         }
       }
     },
@@ -1699,26 +1719,6 @@
         "fr": {
           "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
           "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announ…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-hugging-face-open-tts-leaderboard-scalable-evaluation-for-multil-581ab311",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/open-tts-leaderboard",
-      "publishedAt": "2026-09-30T00:00:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:15.583Z",
-      "locales": {
-        "en": {
-          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
-        },
-        "fr": {
-          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
         }
       }
     },
@@ -1903,62 +1903,82 @@
       }
     },
     {
-      "slug": "20261003-vercel-vercel-agent-now-installs-private-packages-from-npm-and-c-1a03c303",
+      "slug": "20261005-vercel-ling-31-flash-is-now-available-on-ai-gateway-call-ling-31-d24dd6cc",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-agent-now-installs-private-packages-from-npm-and-custom-registries",
-      "publishedAt": "2026-10-03T11:36:52.424Z",
-      "discoveredAt": "2026-10-03T11:36:52.424Z",
+      "href": "https://vercel.com/changelog/ling-3-1-flash-is-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-05T14:32:16.644Z",
+      "discoveredAt": "2026-10-05T14:32:16.644Z",
       "locales": {
         "en": {
-          "title": "Vercel Agent now installs private packages from npm and custom registries Vercel Agent installs private npm packages using your team's shared environment variables. Add NPM_TOKEN or NPM_RC to authenticate with private and custom registries. Matan Kushner, Tom Dale, and 1 other",
-          "summary": "30 September 30 Sep"
+          "title": "Ling 3.1 Flash is now available on AI Gateway Call Ling 3.1 Flash through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "Karim Hasebou, Brandon Tuttle, and 2 others"
         },
         "fr": {
-          "title": "Vercel Agent now installs private packages from npm and custom registries Vercel Agent installs private npm packages using your team's shared environment variables. Add NPM_TOKEN or NPM_RC to authenticate with private and custom registries. Matan Kushner, Tom Dale, and 1 other",
-          "summary": "30 September 30 Sep"
+          "title": "Ling 3.1 Flash is now available on AI Gateway Call Ling 3.1 Flash through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "Karim Hasebou, Brandon Tuttle, and 2 others"
         }
       }
     },
     {
-      "slug": "20261005-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
+      "slug": "20261006-cursor-observability-on-auto-pilot-d72f6df8",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-server-adapters-deprecated",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "href": "https://supabase.com/changelog/50403-observability-autopilot",
+      "publishedAt": "2026-10-06T00:01:44.852Z",
       "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "Framework adapters in @supabase/server are deprecated",
-          "summary": "Oct 5, 2026"
+          "title": "Observability on Auto-Pilot",
+          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
         },
         "fr": {
-          "title": "Framework adapters in @supabase/server are deprecated",
-          "summary": "Oct 5, 2026"
+          "title": "Observability on Auto-Pilot",
+          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
         }
       }
     },
     {
-      "slug": "20261002-github-copilot-selected-models-in-github-copilot-deprecated-d3c3f699",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
+      "slug": "20261002-github-npm-staged-publishing-now-supports-creating-new-packages-5ef20db1",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
-      "publishedAt": "2026-10-02T18:24:19.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
+      "href": "https://github.blog/changelog/2026-10-02-npm-staged-publishing-now-supports-creating-new-packages",
+      "publishedAt": "2026-10-02T19:05:17.000Z",
+      "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "Selected models in GitHub Copilot deprecated",
-          "summary": "As of today, October 2, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model… The post Selected mod…"
+          "title": "npm staged publishing now supports creating new packages",
+          "summary": "You can now create a new npm package with npm stage publish, using a local session or a granular access token, including a stage-only token. This lets you create packages… The post npm staged publishing now supports cre…"
         },
         "fr": {
-          "title": "Selected models in GitHub Copilot deprecated",
-          "summary": "As of today, October 2, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model… The post Selected mod…"
+          "title": "npm staged publishing now supports creating new packages",
+          "summary": "You can now create a new npm package with npm stage publish, using a local session or a granular access token, including a stage-only token. This lets you create packages… The post npm staged publishing now supports cre…"
+        }
+      }
+    },
+    {
+      "slug": "20260930-hugging-face-open-tts-leaderboard-scalable-evaluation-for-multil-581ab311",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/open-tts-leaderboard",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:15.583Z",
+      "locales": {
+        "en": {
+          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
+        },
+        "fr": {
+          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
         }
       }
     },
@@ -2023,22 +2043,22 @@
       }
     },
     {
-      "slug": "20261002-cloudflare-updates-on-our-pledge-to-make-cloudflare-features-acc-a7fc3ad4",
+      "slug": "20261002-cloudflare-introducing-cloudflare-traces-follow-requests-through-9c3a3363",
       "toolName": "Cloudflare",
       "category": "Cloud Platform",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/enterprise-for-all-update/",
+      "href": "https://blog.cloudflare.com/cloudflare-tracing/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
       "locales": {
         "en": {
-          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
-          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these…"
+          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
         },
         "fr": {
-          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
-          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these…"
+          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
         }
       }
     },
@@ -2079,26 +2099,6 @@
         "fr": {
           "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
           "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is install…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-hugging-face-nvidia-kumo-tabular-sets-a-new-accuracy-efficiency--493cf3fc",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "publishedAt": "2026-09-29T15:30:38.000Z",
-      "discoveredAt": "2026-09-29T22:13:02.378Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
-        },
-        "fr": {
-          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
         }
       }
     },
@@ -2283,62 +2283,82 @@
       }
     },
     {
-      "slug": "20261003-vercel-ai-gateway-adds-browserbase-search-and-fetch-tools-ai-gat-66909907",
+      "slug": "20261004-vercel-microsoft-ai-models-are-now-available-on-ai-gateway-micro-a616128c",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/ai-gateway-adds-browserbase-search-and-fetch-tools",
-      "publishedAt": "2026-10-03T11:36:52.424Z",
-      "discoveredAt": "2026-10-03T11:36:52.424Z",
-      "locales": {
-        "en": {
-          "title": "AI Gateway adds Browserbase Search and Fetch tools AI Gateway now supports Browserbase Search and Fetch, giving models web discovery and page retrieval alongside AI SDK and Marketplace integrations. +2 Josh Lipman, Jerilyn Zheng, and 2 others",
-          "summary": ".jpg\"/> Matan Kushner, Tom Dale, and 1 other"
-        },
-        "fr": {
-          "title": "AI Gateway adds Browserbase Search and Fetch tools AI Gateway now supports Browserbase Search and Fetch, giving models web discovery and page retrieval alongside AI SDK and Marketplace integrations. +2 Josh Lipman, Jerilyn Zheng, and 2 others",
-          "summary": ".jpg\"/> Matan Kushner, Tom Dale, and 1 other"
-        }
-      }
-    },
-    {
-      "slug": "20261004-supabase-fixed-daily-backups-occasionally-skipped-due-to-a-sched-b529818e",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/bulk-prepare-retry-on-transient-failure",
+      "href": "https://vercel.com/changelog/microsoft-ai-models-are-now-available-on-ai-gateway",
       "publishedAt": "2026-10-04T21:21:29.249Z",
       "discoveredAt": "2026-10-04T21:21:29.249Z",
       "locales": {
         "en": {
-          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
-          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
+          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         },
         "fr": {
-          "title": "Fixed daily backups occasionally skipped due to a scheduling timeout",
-          "summary": "Bug Fix A timing issue could cause daily backups to be silently skipped for every project due in a 10-minute scheduling window. Backup scheduling now retries and recovers automati"
+          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         }
       }
     },
     {
-      "slug": "20261002-github-new-fields-for-securityadvisory-graphql-api-6389d30d",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
+      "slug": "20261005-supabase-read-replicas-moved-to-project-settings-infrastructure-c2cab453",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/read-replicas-moved-to-infrastructure",
+      "publishedAt": "2026-10-05T14:32:16.644Z",
+      "discoveredAt": "2026-10-05T14:32:16.644Z",
+      "locales": {
+        "en": {
+          "title": "Read replicas moved to Project Settings → Infrastructure",
+          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
+        },
+        "fr": {
+          "title": "Read replicas moved to Project Settings → Infrastructure",
+          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
+        }
+      }
+    },
+    {
+      "slug": "20261002-github-copilot-selected-models-in-github-copilot-deprecated-d3c3f699",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-02-new-fields-for-securityadvisory-graphql-api",
-      "publishedAt": "2026-10-02T13:18:00.000Z",
+      "href": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+      "publishedAt": "2026-10-02T18:24:19.000Z",
       "discoveredAt": "2026-10-02T22:11:36.141Z",
       "locales": {
         "en": {
-          "title": "New fields for SecurityAdvisory GraphQL API",
-          "summary": "You can now read more of the GitHub Advisory Database directly from the GraphQL API without falling back to the REST API. The SecurityAdvisory object gained five new fields: cveId:… The post New fields for SecurityAdvis…"
+          "title": "Selected models in GitHub Copilot deprecated",
+          "summary": "As of today, October 2, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model… The post Selected mod…"
         },
         "fr": {
-          "title": "New fields for SecurityAdvisory GraphQL API",
-          "summary": "You can now read more of the GitHub Advisory Database directly from the GraphQL API without falling back to the REST API. The SecurityAdvisory object gained five new fields: cveId:… The post New fields for SecurityAdvis…"
+          "title": "Selected models in GitHub Copilot deprecated",
+          "summary": "As of today, October 2, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model… The post Selected mod…"
+        }
+      }
+    },
+    {
+      "slug": "20260929-hugging-face-nvidia-kumo-tabular-sets-a-new-accuracy-efficiency--493cf3fc",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "publishedAt": "2026-09-29T15:30:38.000Z",
+      "discoveredAt": "2026-09-29T22:13:02.378Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
+        },
+        "fr": {
+          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
         }
       }
     },
@@ -2379,26 +2399,6 @@
         "fr": {
           "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
           "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-chatgpt-the-den-frees-up-10-15-hours-a-week-to-grow-with-chatgpt-3bba5275",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/the-den-family-social",
-      "publishedAt": "2026-10-01T00:00:00.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
-      "locales": {
-        "en": {
-          "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
-          "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days."
-        },
-        "fr": {
-          "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
-          "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days."
         }
       }
     }

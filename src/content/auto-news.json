@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-06T00:01:43.409Z",
+  "updatedAt": "2026-10-06T13:15:55.933Z",
   "items": [
+    {
+      "slug": "20261006-falcon-emirati-when-an-llm-learns-the-dialect-the-culture-and-th-085f7195",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+      "publishedAt": "2026-10-06T06:44:39.000Z",
+      "discoveredAt": "2026-10-06T13:15:55.933Z",
+      "locales": {
+        "en": {
+          "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+          "summary": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance"
+        },
+        "fr": {
+          "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+          "summary": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance"
+        }
+      }
+    },
     {
       "slug": "20261005-introducing-glm-53-on-amazon-bedrock-cc694830",
       "topic": "AI Systems",
@@ -151,25 +170,6 @@
         "fr": {
           "title": "pg_ivm 1.16 released",
           "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault when an IMMV…"
-        }
-      }
-    },
-    {
-      "slug": "20261003-the-agent-said-it-was-done-the-database-disagreed-89764eae",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/microsoft/thinkingbox",
-      "publishedAt": "2026-10-03T22:56:48.000Z",
-      "discoveredAt": "2026-10-04T21:21:28.129Z",
-      "locales": {
-        "en": {
-          "title": "The Agent Said It Was Done. The Database Disagreed.",
-          "summary": "The Agent Said It Was Done. The Database Disagreed."
-        },
-        "fr": {
-          "title": "The Agent Said It Was Done. The Database Disagreed.",
-          "summary": "The Agent Said It Was Done. The Database Disagreed."
         }
       }
     },
@@ -364,6 +364,25 @@
       }
     },
     {
+      "slug": "20261003-the-agent-said-it-was-done-the-database-disagreed-89764eae",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "publishedAt": "2026-10-03T22:56:48.000Z",
+      "discoveredAt": "2026-10-04T21:21:28.129Z",
+      "locales": {
+        "en": {
+          "title": "The Agent Said It Was Done. The Database Disagreed.",
+          "summary": "The Agent Said It Was Done. The Database Disagreed."
+        },
+        "fr": {
+          "title": "The Agent Said It Was Done. The Database Disagreed.",
+          "summary": "The Agent Said It Was Done. The Database Disagreed."
+        }
+      }
+    },
+    {
       "slug": "20261005-supercharge-regulated-workloads-with-claude-code-and-amazon-bedr-17a8be94",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -512,25 +531,6 @@
         "fr": {
           "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
           "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuses on criti…"
-        }
-      }
-    },
-    {
-      "slug": "20261002-open-sourcing-astabrief-the-fast-report-generation-model-in-asta-d599f0a2",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/astabrief",
-      "publishedAt": "2026-10-02T15:19:50.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
-        },
-        "fr": {
-          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
         }
       }
     },
@@ -706,6 +706,25 @@
       }
     },
     {
+      "slug": "20261002-open-sourcing-astabrief-the-fast-report-generation-model-in-asta-d599f0a2",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/astabrief",
+      "publishedAt": "2026-10-02T15:19:50.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
+        },
+        "fr": {
+          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+          "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
+        }
+      }
+    },
+    {
       "slug": "20261005-new-agent-skill-amazon-sagemaker-optimized-generative-ai-inferen-875cbdf4",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -854,25 +873,6 @@
         "fr": {
           "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
           "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database management softwar…"
-        }
-      }
-    },
-    {
-      "slug": "20261002-autosynthdata-generating-training-data-for-enterprise-agents-a885ed61",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-      "publishedAt": "2026-10-02T04:01:31.000Z",
-      "discoveredAt": "2026-10-02T12:29:54.806Z",
-      "locales": {
-        "en": {
-          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
-        },
-        "fr": {
-          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
         }
       }
     },
@@ -1048,6 +1048,25 @@
       }
     },
     {
+      "slug": "20261002-autosynthdata-generating-training-data-for-enterprise-agents-a885ed61",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "publishedAt": "2026-10-02T04:01:31.000Z",
+      "discoveredAt": "2026-10-02T12:29:54.806Z",
+      "locales": {
+        "en": {
+          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
+        },
+        "fr": {
+          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+          "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
+        }
+      }
+    },
+    {
       "slug": "20261005-making-amazon-quick-enterprise-ready-automated-auditable-cross-a-b9ec7ad0",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -1196,25 +1215,6 @@
         "fr": {
           "title": "pgvector 0.8.7 Released",
           "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details: https://g…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-introducing-olmo-core-3-open-scalable-training-infrastructure-fo-0bf00b70",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/olmocore3",
-      "publishedAt": "2026-10-01T15:01:43.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
-        },
-        "fr": {
-          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
         }
       }
     },
@@ -1390,6 +1390,25 @@
       }
     },
     {
+      "slug": "20261001-introducing-olmo-core-3-open-scalable-training-infrastructure-fo-0bf00b70",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/olmocore3",
+      "publishedAt": "2026-10-01T15:01:43.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
+        },
+        "fr": {
+          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
+        }
+      }
+    },
+    {
       "slug": "20261005-agentic-retrieval-with-langchain-and-amazon-bedrock-knowledge-ba-a764a26c",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -1538,25 +1557,6 @@
         "fr": {
           "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
           "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-open-tts-leaderboard-scalable-evaluation-for-multilingual-text-t-581ab311",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/open-tts-leaderboard",
-      "publishedAt": "2026-09-30T00:00:00.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
-        },
-        "fr": {
-          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
         }
       }
     },
@@ -1732,6 +1732,25 @@
       }
     },
     {
+      "slug": "20260930-open-tts-leaderboard-scalable-evaluation-for-multilingual-text-t-581ab311",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/open-tts-leaderboard",
+      "publishedAt": "2026-09-30T00:00:00.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
+        },
+        "fr": {
+          "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+          "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
+        }
+      }
+    },
+    {
       "slug": "20261005-downgrading-user-roles-in-amazon-quick-e80698f3",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -1880,25 +1899,6 @@
         "fr": {
           "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
           "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-nvidia-kumo-tabular-sets-a-new-accuracy-efficiency-frontier-for--493cf3fc",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "publishedAt": "2026-09-29T15:30:38.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
-        },
-        "fr": {
-          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
         }
       }
     },
@@ -2055,6 +2055,25 @@
       }
     },
     {
+      "slug": "20260929-nvidia-kumo-tabular-sets-a-new-accuracy-efficiency-frontier-for--493cf3fc",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "publishedAt": "2026-09-29T15:30:38.000Z",
+      "discoveredAt": "2026-09-29T22:13:00.950Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
+        },
+        "fr": {
+          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
+        }
+      }
+    },
+    {
       "slug": "20261005-evaluating-multi-agent-systems-for-explainability-and-helpfulnes-e07a3dc2",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2203,25 +2222,6 @@
         "fr": {
           "title": "PL/Haskell v6.0 Released",
           "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
-        }
-      }
-    },
-    {
-      "slug": "20260929-getting-the-source-right-not-just-the-fact-source-aware-verifica-984223f1",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-      "publishedAt": "2026-09-29T13:07:00.000Z",
-      "discoveredAt": "2026-09-29T22:13:00.950Z",
-      "locales": {
-        "en": {
-          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
-        },
-        "fr": {
-          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
         }
       }
     },
@@ -2378,6 +2378,25 @@
       }
     },
     {
+      "slug": "20260929-getting-the-source-right-not-just-the-fact-source-aware-verifica-984223f1",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "publishedAt": "2026-09-29T13:07:00.000Z",
+      "discoveredAt": "2026-09-29T22:13:00.950Z",
+      "locales": {
+        "en": {
+          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
+        },
+        "fr": {
+          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
+        }
+      }
+    },
+    {
       "slug": "20261002-sweep-thousands-of-leases-for-compliance-using-amazon-quick-and--0c1753c3",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2507,25 +2526,6 @@
         "fr": {
           "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
           "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
-        }
-      }
-    },
-    {
-      "slug": "20260928-holo4-powering-generalist-computer-use-agents-9552195c",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/Hcompany/holo4",
-      "publishedAt": "2026-09-28T09:44:05.000Z",
-      "discoveredAt": "2026-09-28T13:49:24.390Z",
-      "locales": {
-        "en": {
-          "title": "Holo4: powering generalist computer-use agents",
-          "summary": "Holo4: powering generalist computer-use agents"
-        },
-        "fr": {
-          "title": "Holo4: powering generalist computer-use agents",
-          "summary": "Holo4: powering generalist computer-use agents"
         }
       }
     },
@@ -2682,6 +2682,25 @@
       }
     },
     {
+      "slug": "20260928-holo4-powering-generalist-computer-use-agents-9552195c",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/Hcompany/holo4",
+      "publishedAt": "2026-09-28T09:44:05.000Z",
+      "discoveredAt": "2026-09-28T13:49:24.390Z",
+      "locales": {
+        "en": {
+          "title": "Holo4: powering generalist computer-use agents",
+          "summary": "Holo4: powering generalist computer-use agents"
+        },
+        "fr": {
+          "title": "Holo4: powering generalist computer-use agents",
+          "summary": "Holo4: powering generalist computer-use agents"
+        }
+      }
+    },
+    {
       "slug": "20261002-add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agen-60dd8950",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2811,25 +2830,6 @@
         "fr": {
           "title": "PostgreSQL 19 Beta 4 Released!",
           "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
-        }
-      }
-    },
-    {
-      "slug": "20260928-welcome-rl-environments-to-the-hub-a30a6af0",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/rl-environments",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "Welcome RL Environments to the hub",
-          "summary": "Welcome RL Environments to the hub"
-        },
-        "fr": {
-          "title": "Welcome RL Environments to the hub",
-          "summary": "Welcome RL Environments to the hub"
         }
       }
     },
@@ -2967,6 +2967,25 @@
       }
     },
     {
+      "slug": "20260928-welcome-rl-environments-to-the-hub-a30a6af0",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/rl-environments",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "Welcome RL Environments to the hub",
+          "summary": "Welcome RL Environments to the hub"
+        },
+        "fr": {
+          "title": "Welcome RL Environments to the hub",
+          "summary": "Welcome RL Environments to the hub"
+        }
+      }
+    },
+    {
       "slug": "20261002-fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker--08d5df1e",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3100,25 +3119,6 @@
       }
     },
     {
-      "slug": "20260924-accelerating-vision-language-models-with-lfm25-vl-dspark-c2a53f23",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-      "publishedAt": "2026-09-24T14:08:57.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
-        },
-        "fr": {
-          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
-        }
-      }
-    },
-    {
       "slug": "20260915-new-insights-from-googles-ai-economy-atlas-00e29a68",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3210,6 +3210,25 @@
         "fr": {
           "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
           "summary": "Gartner highlighted Microsoft’s unified single-product architecture, flexibility across hyperconverged and disaggregated architectures, and more. The post Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for…"
+        }
+      }
+    },
+    {
+      "slug": "20260924-accelerating-vision-language-models-with-lfm25-vl-dspark-c2a53f23",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "publishedAt": "2026-09-24T14:08:57.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
+        },
+        "fr": {
+          "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+          "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
         }
       }
     },
@@ -3347,25 +3366,6 @@
       }
     },
     {
-      "slug": "20260923-how-to-use-nvidia-warp-and-mjwarp-to-accelerate-robotics-simulat-a70f8ac6",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
-      "publishedAt": "2026-09-23T18:41:40.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
-          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
-        },
-        "fr": {
-          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
-          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
-        }
-      }
-    },
-    {
       "slug": "20260914-watch-astronaut-christina-koch-and-googles-james-manyika-discuss-b49b47db",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3457,6 +3457,25 @@
         "fr": {
           "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management",
           "summary": "Microsoft was named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management. Discover how AKS, Azure Arc, and Azure Container Apps help organizations run AI and hybrid workloads at scale. The post Microsoft named a…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-how-to-use-nvidia-warp-and-mjwarp-to-accelerate-robotics-simulat-a70f8ac6",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+      "publishedAt": "2026-09-23T18:41:40.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
+        },
+        "fr": {
+          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
         }
       }
     },
@@ -3594,25 +3613,6 @@
       }
     },
     {
-      "slug": "20260922-how-uk-aisi-and-evaleval-are-making-benchmark-results-reproducib-2960c64a",
-      "topic": "AI Performance",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/evaleval-aisi",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
-        },
-        "fr": {
-          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
-        }
-      }
-    },
-    {
       "slug": "20260914-devfest-is-back-bf70dc82",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3704,6 +3704,25 @@
         "fr": {
           "title": "The Economics of Agent Optimization: How AI agent governance controls cost and proves ROI",
           "summary": "This blog post is the fourth and final installment of The Economics of Agent Optimization, which shares the strategies, capabilities, and proof points that can help you optimize agent costs and run AI as a managed investment syst…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-how-uk-aisi-and-evaleval-are-making-benchmark-results-reproducib-2960c64a",
+      "topic": "AI Performance",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/evaleval-aisi",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
+        },
+        "fr": {
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
         }
       }
     },
@@ -3841,25 +3860,6 @@
       }
     },
     {
-      "slug": "20260922-transformers-now-runs-llamacpp-quants-98acfe91",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/transformers-llama-cpp-quants",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "Transformers now runs llama.cpp quants",
-          "summary": "Transformers now runs llama.cpp quants"
-        },
-        "fr": {
-          "title": "Transformers now runs llama.cpp quants",
-          "summary": "Transformers now runs llama.cpp quants"
-        }
-      }
-    },
-    {
       "slug": "20260910-3-ways-to-prep-for-your-next-big-race-with-search-1852061b",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3951,6 +3951,25 @@
         "fr": {
           "title": "The future of infrastructure resiliency starts with modernization",
           "summary": "Modernization only succeeds when organizations have confidence that their infrastructure can withstand disruption and continue supporting critical operations. The post The future of infrastructure resiliency starts with moderniza…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-transformers-now-runs-llamacpp-quants-98acfe91",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
+        },
+        "fr": {
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
         }
       }
     },
@@ -4088,25 +4107,6 @@
       }
     },
     {
-      "slug": "20260922-jun-kim-omlx-creator-and-maintainer-joins-hugging-face-to-suppor-fb8ad85c",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/omlx",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
-        },
-        "fr": {
-          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
-        }
-      }
-    },
-    {
       "slug": "20260909-get-ready-for-the-game-with-new-football-features-in-search-b0dd0e34",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -4160,6 +4160,25 @@
         "fr": {
           "title": "Two zones or three? A design framework for zone-resilient Azure workloads",
           "summary": "Zone resiliency isn't a single number you apply to a whole workload. The useful question isn't “how many zones?” but “how many zones does each component need to survive the loss of one?” Decide zone patterns component by componen…"
+        }
+      }
+    },
+    {
+      "slug": "20260922-jun-kim-omlx-creator-and-maintainer-joins-hugging-face-to-suppor-fb8ad85c",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/omlx",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
+        },
+        "fr": {
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
         }
       }
     },
@@ -4259,21 +4278,21 @@
       }
     },
     {
-      "slug": "20261001-introducing-workers-kv-instant-powered-by-quicksilver-2124bce0",
+      "slug": "20261001-announcing-cloudflare-k2-serverless-event-streams-d7084788",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-kv-instant/",
+      "href": "https://blog.cloudflare.com/cloudflare-k2-streams/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-06T00:01:43.409Z",
+      "discoveredAt": "2026-10-06T13:15:55.933Z",
       "locales": {
         "en": {
-          "title": "Introducing Workers KV Instant — powered by Quicksilver",
-          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
+          "title": "Announcing Cloudflare K2: serverless event streams",
+          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered…"
         },
         "fr": {
-          "title": "Introducing Workers KV Instant — powered by Quicksilver",
-          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
+          "title": "Announcing Cloudflare K2: serverless event streams",
+          "summary": "Cloudflare K2 is a serverless event streaming service built directly on top of R2 object storage for high-scale data movement and long-term retention. By decoupling producers and consumers at the edge, K2 enables durable, ordered…"
         }
       }
     },
@@ -4293,25 +4312,6 @@
         "fr": {
           "title": "pgAssistant 3.8.0 : continuous improvement loop for Postgres",
           "summary": "With this release, pgAssistant is evolving beyond PostgreSQL analysis and tuning to become a continuous PostgreSQL improvement platform . The new positioning is built around a continuous improvement loop : Observe → Diagnose → Pr…"
-        }
-      }
-    },
-    {
-      "slug": "20260921-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimiza-c701b570",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-      "publishedAt": "2026-09-21T13:44:34.000Z",
-      "discoveredAt": "2026-09-21T14:30:28.060Z",
-      "locales": {
-        "en": {
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
-        },
-        "fr": {
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
         }
       }
     },
@@ -4350,6 +4350,25 @@
         "fr": {
           "title": "Beyond the benchmark: How an adaptive approach drives scientific discovery",
           "summary": "For research and development (R&D) organizations, the promise of agentic AI is not a better one-time answer. It is a new way to explore complex scientific and engineering problems: pursuing multiple hypotheses, validating them ag…"
+        }
+      }
+    },
+    {
+      "slug": "20260921-pruning-llms-like-a-physicist-block-removal-as-an-ising-optimiza-c701b570",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "publishedAt": "2026-09-21T13:44:34.000Z",
+      "discoveredAt": "2026-09-21T14:30:28.060Z",
+      "locales": {
+        "en": {
+          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
+        },
+        "fr": {
+          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem"
         }
       }
     },
@@ -4449,21 +4468,21 @@
       }
     },
     {
-      "slug": "20261001-cloudflare-os-your-companys-agent-workspace-managed-for-you-8b10a1bc",
-      "topic": "AI Systems",
+      "slug": "20261001-we-want-you-to-build-the-next-git-platform-on-cloudflare-7b804092",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/managed-cloudflare-os/",
+      "href": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-06T00:01:43.409Z",
+      "discoveredAt": "2026-10-06T13:15:55.933Z",
       "locales": {
         "en": {
-          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
-          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch i…"
+          "title": "We want you to build the next Git platform on Cloudflare",
+          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes."
         },
         "fr": {
-          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
-          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch i…"
+          "title": "We want you to build the next Git platform on Cloudflare",
+          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes."
         }
       }
     },
@@ -4487,25 +4506,6 @@
       }
     },
     {
-      "slug": "20260921-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/tokenizers-v1",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
-      "discoveredAt": "2026-09-21T14:30:28.060Z",
-      "locales": {
-        "en": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
-        },
-        "fr": {
-          "title": "tokenizers v1: encode, decode and scaling, measured",
-          "summary": "tokenizers v1: encode, decode and scaling, measured"
-        }
-      }
-    },
-    {
       "slug": "20260902-proactive-cyber-defense-for-governments-and-enterprises-28b149c7",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -4525,6 +4525,25 @@
       }
     },
     {
+      "slug": "20260921-tokenizers-v1-encode-decode-and-scaling-measured-eb792e0f",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/tokenizers-v1",
+      "publishedAt": "2026-09-21T00:00:00.000Z",
+      "discoveredAt": "2026-09-21T14:30:28.060Z",
+      "locales": {
+        "en": {
+          "title": "tokenizers v1: encode, decode and scaling, measured",
+          "summary": "tokenizers v1: encode, decode and scaling, measured"
+        },
+        "fr": {
+          "title": "tokenizers v1: encode, decode and scaling, measured",
+          "summary": "tokenizers v1: encode, decode and scaling, measured"
+        }
+      }
+    },
+    {
       "slug": "20261001-simplify-dashboard-drill-down-with-the-amazon-quick-sight-hierar-e7bc0f51",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -4540,25 +4559,6 @@
         "fr": {
           "title": "Simplify dashboard drill-down with the Amazon Quick Sight hierarchy filter",
           "summary": "Amazon Quick Sight is a fully managed, cloud-native business intelligence (BI) capability for building and publishing interactive dashboards. The new hierarchy filter gives dashboard authors rich, multi-level filtering in a singl…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-validate-gpu-cluster-readiness-before-ai-workloads-land-a69161c4",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land/",
-      "publishedAt": "2026-10-01T18:31:20.000Z",
-      "discoveredAt": "2026-10-06T00:01:43.409Z",
-      "locales": {
-        "en": {
-          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
-          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
-        },
-        "fr": {
-          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
-          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
         }
       }
     }
