@@ -182,7 +182,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           {
             label: "Pour tous",
             title: "News + outils + briefs",
-            body: "Suivez les updates officielles IA/CS, ouvrez les outils utiles, puis appliquez les briefs pratiques.",
+            body: "Suivez les actualités officielles IA/CS, ouvrez les outils utiles, puis appliquez les briefs pratiques.",
             links: [
               { href: `/${locale}/news`, text: "Actualités" },
               { href: `/${locale}/compare`, text: "Outils" },
@@ -315,7 +315,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
         </h1>
         <p className="body-copy mt-4 max-w-2xl text-[color:var(--text)]">
           {locale === "fr"
-            ? "Pour celles et ceux qui construisent, apprennent ou travaillent avec l'IA. Suivre les updates, choisir les bons outils, puis livrer des projets concrets."
+            ? "Pour celles et ceux qui construisent, apprennent ou travaillent avec l'IA. Suivre l'actualité, choisir les bons outils, puis livrer des projets concrets."
             : "For anyone who builds, learns, or works with AI. Follow updates, pick the right tools, and ship practical projects faster."}
         </p>
         {/* The inventory line, directly under the claim it supports. These were

@@ -273,16 +273,6 @@ export default async function StagesPage(props: {
         ) : null}
       </header>
 
-      {/* What the weekly check actually does. All of this was written down in
-          code comments and commit messages, where a student deciding whether to
-          trust the list cannot read it. */}
-      {stages.length > 0 ? (
-        <section className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
-          <h2 className="text-sm font-semibold text-[color:var(--text-strong)]">{copy.methodTitle}</h2>
-          <p className="mt-1 text-sm text-[color:var(--muted)]">{copy.methodBody}</p>
-        </section>
-      ) : null}
-
       {/* The page states its own age. A list of deadlines that quietly goes out
           of date is worse than one that admits it, and this is the failure this
           format is most likely to have. */}
@@ -489,6 +479,25 @@ export default async function StagesPage(props: {
       )}
 
       <div className="mt-10">
+      {/* What the weekly check actually does. All of this was written down in
+          code comments and commit messages, where a student deciding whether to
+          trust the list cannot read it.
+
+          Below the listings, not above them. It sat between the subtitle and
+          the filters: five lines about HTTP 200 responses and human
+          verification standing between a student arriving from a search and
+          the jobs they came for. The claim is worth making and worth keeping
+          in full -- it is the one thing this board has that a scraper does not
+          -- but a reader earns the explanation after seeing what it describes.
+          404 Media puts its mission statement below the first story for the
+          same reason. */}
+      {stages.length > 0 ? (
+        <section className="mt-10 border-t border-[color:var(--border)] pt-6">
+          <h2 className="text-sm font-semibold text-[color:var(--text-strong)]">{copy.methodTitle}</h2>
+          <p className="mt-1 max-w-[70ch] text-sm text-[color:var(--muted)]">{copy.methodBody}</p>
+        </section>
+      ) : null}
+
         <Newsletter locale={locale} source="stages" />
       </div>
 
