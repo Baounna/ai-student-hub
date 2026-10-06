@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { jsonLd } from "@/lib/json-ld";
+import { absoluteUrl } from "@/lib/site-url";
 import { Newsletter } from "@/components/newsletter";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
@@ -80,6 +83,7 @@ export default async function StagesByCountryPage(props: {
   if (!code) notFound();
 
   const locale: Locale = params.lang;
+  const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const copy = stagesCopy[locale];
   const dateFmt = new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-GB", {
     day: "numeric",
@@ -88,13 +92,49 @@ export default async function StagesByCountryPage(props: {
   });
 
   const listings: Stage[] = listingsByCountry().get(code) ?? [];
-  const open = listings.filter((stage) => !isClosed(stage)).length;
+  const openListings = listings.filter((stage) => !isClosed(stage));
+  const open = openListings.length;
+
+  /**
+   * The same ItemList /stages carries, scoped to this country.
+   *
+   * These pages shipped without it, so the twelve URLs built to be found in a
+   * search described themselves to a crawler less well than the page they were
+   * split out of. A crawler reading /fr/stages/ma could see breadcrumbs and a
+   * title and nothing about the nine listings that are the reason the page
+   * exists.
+   *
+   * ItemList, deliberately not JobPosting, for the reason written on /stages:
+   * JobPosting tells Google this site is where the position is published and
+   * where applications are taken, and it is not — every entry links out to the
+   * employer's own posting, which they own and can close without telling us.
+   * Closed entries are left out, because advertising an expired deadline to a
+   * crawler is the same untruth the page works to avoid.
+   */
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: countryPageTitle(code, locale),
+    description: describe(code, listings.length, locale),
+    inLanguage: locale,
+    url: absoluteUrl(countryPagePath(code, locale)),
+    numberOfItems: openListings.length,
+    itemListElement: openListings.map((stage, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: `${stage.role} - ${stage.company}`,
+      url: stage.href
+    }))
+  };
   const name = countryLabel(code, locale);
   const title = countryPageTitle(code, locale);
   const others = countriesWithPages().filter((other) => other !== code);
 
   return (
     <div className="page-shell py-10">
+      {/* jsonLd(), never bare JSON.stringify: a role or company name carrying
+          a "</script>" would otherwise close the tag early. */}
+      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(itemListSchema) }} />
       <Breadcrumbs
         locale={locale}
         items={[
