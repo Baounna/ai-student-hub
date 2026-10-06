@@ -6,6 +6,7 @@ import { getAutoToolsUpdatedAt } from "@/content/auto-tools";
 import { locales } from "@/i18n/config";
 import { absoluteUrl } from "@/lib/site-url";
 import { getStagesUpdatedAt } from "@/content/stages";
+import { countriesWithPages, countryPagePath } from "@/content/stage-countries";
 import { isIndexableTaxonomy, postsInCategory, postsWithTag } from "@/lib/taxonomy";
 
 /**
@@ -186,6 +187,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
+  /*
+   * The country boards.
+   *
+   * Without these the whole 102-listing list was two URLs, and its country
+   * views were query parameters that /stages canonicalises back to itself -- so
+   * nothing a student searching "stage IA Maroc" could land on existed. Only
+   * countries above COUNTRY_PAGE_MIN_LISTINGS have a page, so this never emits
+   * a URL that 404s.
+   */
+  const countryStagePages = locales.flatMap((locale) =>
+    countriesWithPages().map((code) => ({
+      url: absoluteUrl(countryPagePath(code, locale)),
+      lastModified: asDate(getStagesUpdatedAt()),
+      changeFrequency: "weekly" as const,
+      priority: 0.7
+    }))
+  );
+
   const blogPages = locales.flatMap((locale) =>
     posts.map((post) => ({
       url: absoluteUrl(`/${locale}/blog/${post.slug}`),
@@ -262,6 +281,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...rootEntry,
     ...localizedStaticPages,
+    ...countryStagePages,
     ...blogPages,
     ...newsPages,
     ...localizedComparisonPages,

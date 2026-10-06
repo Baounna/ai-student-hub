@@ -59,7 +59,12 @@ describe("isRecentlyAdded", () => {
 });
 
 describe("the wording on /stages", () => {
-  const source = readFileSync(new URL("../src/app/[lang]/stages/page.tsx", import.meta.url), "utf8");
+  // The copy and the row moved to shared.tsx when /stages/[country] began
+  // rendering the same listing; these assertions are about the words a reader
+  // sees, so they follow the words rather than the file.
+  const source =
+    readFileSync(new URL("../src/app/[lang]/stages/page.tsx", import.meta.url), "utf8") +
+    readFileSync(new URL("../src/app/[lang]/stages/shared.tsx", import.meta.url), "utf8");
   // Comments discuss the words we chose not to use, so they have to come out
   // before asking whether the page says them. Without this the file's own
   // explanation of why it avoids "Posted" fails the test that enforces it.
@@ -125,7 +130,12 @@ describe("the keyword examples in the placeholder", () => {
    * matches" and looked like a filter that does not work.
    */
   it("every suggested term actually returns listings", () => {
-    const source = readFileSync(new URL("../src/app/[lang]/stages/page.tsx", import.meta.url), "utf8");
+    // The copy and the row moved to shared.tsx when /stages/[country] began
+  // rendering the same listing; these assertions are about the words a reader
+  // sees, so they follow the words rather than the file.
+  const source =
+    readFileSync(new URL("../src/app/[lang]/stages/page.tsx", import.meta.url), "utf8") +
+    readFileSync(new URL("../src/app/[lang]/stages/shared.tsx", import.meta.url), "utf8");
     const placeholders = [...source.matchAll(/searchPlaceholder:\s*"([^"]+)"/g)].map((m) => m[1]);
     expect(placeholders.length).toBe(2);
     const stages = getStages();
@@ -196,7 +206,12 @@ describe("a listing nobody could verify", () => {
   });
 
   it("shows the reader that the link was not verified, not a frozen date", () => {
-    const source = readFileSync(new URL("../src/app/[lang]/stages/page.tsx", import.meta.url), "utf8");
+    // The copy and the row moved to shared.tsx when /stages/[country] began
+  // rendering the same listing; these assertions are about the words a reader
+  // sees, so they follow the words rather than the file.
+  const source =
+    readFileSync(new URL("../src/app/[lang]/stages/page.tsx", import.meta.url), "utf8") +
+    readFileSync(new URL("../src/app/[lang]/stages/shared.tsx", import.meta.url), "utf8");
     // The field itself, not the 90-day clock: whether a human owes a second
     // look does not change whether the link could be read.
     expect(source).toMatch(/\{stage\.unverifiable \? \(/);
