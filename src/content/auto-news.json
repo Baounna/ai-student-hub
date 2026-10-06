@@ -1,7 +1,64 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05T16:20:42.066Z",
+  "updatedAt": "2026-10-06T00:01:43.409Z",
   "items": [
+    {
+      "slug": "20261005-introducing-glm-53-on-amazon-bedrock-cc694830",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/introducing-glm-5-3-on-amazon-bedrock/",
+      "publishedAt": "2026-10-05T23:25:17.000Z",
+      "discoveredAt": "2026-10-06T00:01:43.409Z",
+      "locales": {
+        "en": {
+          "title": "Introducing GLM 5.3 on Amazon Bedrock",
+          "summary": "GLM 5.3 from Z.ai is now available on Amazon Bedrock: a 753B-parameter mixture-of-experts model built for coding and long-horizon agentic tasks. Learn how to invoke it with the OpenAI-compatible APIs, cut cost and latency with pr…"
+        },
+        "fr": {
+          "title": "Introducing GLM 5.3 on Amazon Bedrock",
+          "summary": "GLM 5.3 from Z.ai is now available on Amazon Bedrock: a 753B-parameter mixture-of-experts model built for coding and long-horizon agentic tasks. Learn how to invoke it with the OpenAI-compatible APIs, cut cost and latency with pr…"
+        }
+      }
+    },
+    {
+      "slug": "20261005-nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-lev-3ef1c6a0",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/",
+      "publishedAt": "2026-10-05T21:10:42.000Z",
+      "discoveredAt": "2026-10-06T00:01:43.409Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents",
+          "summary": "A frontier language model is only one component of an AI agent. The surrounding agent system—often called a harness—determines how the model receives..."
+        },
+        "fr": {
+          "title": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents",
+          "summary": "A frontier language model is only one component of an AI agent. The surrounding agent system—often called a harness—determines how the model receives..."
+        }
+      }
+    },
+    {
+      "slug": "20261005-scaling-kubernetes-workloads-with-node-swap-5af07d1e",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/",
+      "publishedAt": "2026-10-05T18:00:00.000Z",
+      "discoveredAt": "2026-10-06T00:01:43.409Z",
+      "locales": {
+        "en": {
+          "title": "Scaling Kubernetes Workloads with Node Swap",
+          "summary": "Memory is often the first hard limit a Kubernetes cluster hits. Nodes run out of RAM long before they run out of CPU, and the new wave of agentic AI workloads makes this worse. These workloads demand large memory footprints to st…"
+        },
+        "fr": {
+          "title": "Scaling Kubernetes Workloads with Node Swap",
+          "summary": "Memory is often the first hard limit a Kubernetes cluster hits. Nodes run out of RAM long before they run out of CPU, and the new wave of agentic AI workloads makes this worse. These workloads demand large memory footprints to st…"
+        }
+      }
+    },
     {
       "slug": "20261005-reviewbench-an-open-benchmark-for-ai-code-review-4b0c57f2",
       "topic": "AI Performance",
@@ -18,25 +75,6 @@
         "fr": {
           "title": "ReviewBench: An open benchmark for AI code review",
           "summary": "We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics. The post ReviewBench: An open benchma…"
-        }
-      }
-    },
-    {
-      "slug": "20261005-making-amazon-quick-enterprise-ready-automated-auditable-cross-a-b9ec7ad0",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion/",
-      "publishedAt": "2026-10-05T15:56:28.000Z",
-      "discoveredAt": "2026-10-05T16:20:42.066Z",
-      "locales": {
-        "en": {
-          "title": "Making Amazon Quick enterprise-ready: Automated, auditable cross-account resource promotion",
-          "summary": "Promoting Amazon Quick resources (agents, action connectors, knowledge bases, flows, and spaces) from a development to a production AWS account has been a manual, error-prone chore. This post shows how to automate cross-account p…"
-        },
-        "fr": {
-          "title": "Making Amazon Quick enterprise-ready: Automated, auditable cross-account resource promotion",
-          "summary": "Promoting Amazon Quick resources (agents, action connectors, knowledge bases, flows, and spaces) from a development to a production AWS account has been a manual, error-prone chore. This post shows how to automate cross-account p…"
         }
       }
     },
@@ -231,25 +269,6 @@
       }
     },
     {
-      "slug": "20261001-how-nvidia-groq-3-lpx-deterministic-execution-drives-power-effic-ce9893f8",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
-      "publishedAt": "2026-10-01T18:31:30.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
-        },
-        "fr": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
-        }
-      }
-    },
-    {
       "slug": "20261001-trust-docker-for-the-agents-you-dont-f08e107a",
       "topic": "AI Systems",
       "source": "Docker Blog",
@@ -326,25 +345,6 @@
       }
     },
     {
-      "slug": "20260922-spotlight-on-sig-apps-bdc88dc4",
-      "topic": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
-      "publishedAt": "2026-09-22T18:00:00.000Z",
-      "discoveredAt": "2026-09-23T11:31:42.873Z",
-      "locales": {
-        "en": {
-          "title": "Spotlight on SIG Apps",
-          "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batch processi…"
-        },
-        "fr": {
-          "title": "Spotlight on SIG Apps",
-          "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batch processi…"
-        }
-      }
-    },
-    {
       "slug": "20260912-featured-how-we-contain-claude-across-products-as-agents-grow-mo-97cd97d2",
       "topic": "AI Systems",
       "source": "Anthropic Engineering",
@@ -364,6 +364,63 @@
       }
     },
     {
+      "slug": "20261005-supercharge-regulated-workloads-with-claude-code-and-amazon-bedr-17a8be94",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/supercharge-regulated-workloads-with-claude-code-and-amazon-bedrock/",
+      "publishedAt": "2026-10-05T17:25:20.000Z",
+      "discoveredAt": "2026-10-06T00:01:43.409Z",
+      "locales": {
+        "en": {
+          "title": "Supercharge regulated workloads with Claude Code and Amazon Bedrock",
+          "summary": "Anthropic Claude Opus 5.5 and Claude Sonnet 5.5 are available on Amazon Bedrock in the AWS GovCloud (US) Regions. Learn how to use them with Claude Code, Anthropic's agentic coding tool, for compliance-aligned, AI-assisted develo…"
+        },
+        "fr": {
+          "title": "Supercharge regulated workloads with Claude Code and Amazon Bedrock",
+          "summary": "Anthropic Claude Opus 5.5 and Claude Sonnet 5.5 are available on Amazon Bedrock in the AWS GovCloud (US) Regions. Learn how to use them with Claude Code, Anthropic's agentic coding tool, for compliance-aligned, AI-assisted develo…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-how-nvidia-groq-3-lpx-deterministic-execution-drives-power-effic-ce9893f8",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
+      "publishedAt": "2026-10-01T18:31:30.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+        },
+        "fr": {
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+        }
+      }
+    },
+    {
+      "slug": "20260922-spotlight-on-sig-apps-bdc88dc4",
+      "topic": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
+      "publishedAt": "2026-09-22T18:00:00.000Z",
+      "discoveredAt": "2026-09-23T11:31:42.873Z",
+      "locales": {
+        "en": {
+          "title": "Spotlight on SIG Apps",
+          "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batch processi…"
+        },
+        "fr": {
+          "title": "Spotlight on SIG Apps",
+          "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batch processi…"
+        }
+      }
+    },
+    {
       "slug": "20261002-ai-is-changing-developer-work-here-are-three-skills-to-strengthe-5afa66c1",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -379,25 +436,6 @@
         "fr": {
           "title": "AI is changing developer work. Here are three skills to strengthen.",
           "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog…"
-        }
-      }
-    },
-    {
-      "slug": "20261005-agentic-retrieval-with-langchain-and-amazon-bedrock-knowledge-ba-a764a26c",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/agentic-retrieval-with-langchain-and-amazon-bedrock-knowledge-bases/",
-      "publishedAt": "2026-10-05T15:53:56.000Z",
-      "discoveredAt": "2026-10-05T16:20:42.066Z",
-      "locales": {
-        "en": {
-          "title": "Agentic retrieval with LangChain and Amazon Bedrock Knowledge Bases",
-          "summary": "Build a Retrieval Augmented Generation (RAG) application on Amazon Bedrock Managed Knowledge Base with LangChain, and see how agentic retrieval handles the multi-part questions that single-shot retrieval answers poorly. Run the s…"
-        },
-        "fr": {
-          "title": "Agentic retrieval with LangChain and Amazon Bedrock Knowledge Bases",
-          "summary": "Build a Retrieval Augmented Generation (RAG) application on Amazon Bedrock Managed Knowledge Base with LangChain, and see how agentic retrieval handles the multi-part questions that single-shot retrieval answers poorly. Run the s…"
         }
       }
     },
@@ -592,25 +630,6 @@
       }
     },
     {
-      "slug": "20261001-dense-vs-moe-models-active-parameters-throughput-and-when-to-cho-3f75c866",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
-      "publishedAt": "2026-10-01T18:31:29.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
-        },
-        "fr": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
-        }
-      }
-    },
-    {
       "slug": "20260924-manufacturing-trust-for-ai-agents-dockers-wearedevelopers-keynot-65334462",
       "topic": "AI Systems",
       "source": "Docker Blog",
@@ -687,6 +706,44 @@
       }
     },
     {
+      "slug": "20261005-new-agent-skill-amazon-sagemaker-optimized-generative-ai-inferen-875cbdf4",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/new-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent/",
+      "publishedAt": "2026-10-05T17:23:19.000Z",
+      "discoveredAt": "2026-10-06T00:01:43.409Z",
+      "locales": {
+        "en": {
+          "title": "New agent skill: Amazon SageMaker optimized generative AI inference for your coding agent",
+          "summary": "Amazon SageMaker optimized generative AI inference introduces the aws-ai-ml skill through the Agent Toolkit for AWS, giving coding agents like Kiro, Claude Code, and Codex deep expertise in inference optimization and benchmarking…"
+        },
+        "fr": {
+          "title": "New agent skill: Amazon SageMaker optimized generative AI inference for your coding agent",
+          "summary": "Amazon SageMaker optimized generative AI inference introduces the aws-ai-ml skill through the Agent Toolkit for AWS, giving coding agents like Kiro, Claude Code, and Codex deep expertise in inference optimization and benchmarking…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-dense-vs-moe-models-active-parameters-throughput-and-when-to-cho-3f75c866",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
+      "publishedAt": "2026-10-01T18:31:29.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+        },
+        "fr": {
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+        }
+      }
+    },
+    {
       "slug": "20260921-kubernetes-v137-tracking-when-a-persistentvolumeclaim-was-last-u-a668dc12",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -721,25 +778,6 @@
         "fr": {
           "title": "10 technical talks I’m excited about at GitHub Universe 2026",
           "summary": "From verifying AI-written code to securing npm dependencies, these are the sessions I’m building my Universe agenda around. The post 10 technical talks I’m excited about at GitHub Universe 2026 appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20261005-downgrading-user-roles-in-amazon-quick-e80698f3",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/downgrading-user-roles-in-amazon-quick/",
-      "publishedAt": "2026-10-05T15:51:38.000Z",
-      "discoveredAt": "2026-10-05T16:20:42.066Z",
-      "locales": {
-        "en": {
-          "title": "Downgrading user roles in Amazon Quick",
-          "summary": "Amazon Quick doesn't offer a direct console path to downgrade a user from Admin or Author to Reader. This post walks through two reliable methods: a manual delete-and-recreate approach and an AWS CLI step-down sequence that downg…"
-        },
-        "fr": {
-          "title": "Downgrading user roles in Amazon Quick",
-          "summary": "Amazon Quick doesn't offer a direct console path to downgrade a user from Admin or Author to Reader. This post walks through two reliable methods: a manual delete-and-recreate approach and an AWS CLI step-down sequence that downg…"
         }
       }
     },
@@ -934,25 +972,6 @@
       }
     },
     {
-      "slug": "20261001-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-facto-6510d815",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
-      "publishedAt": "2026-10-01T18:31:29.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
-        },
-        "fr": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
-        }
-      }
-    },
-    {
       "slug": "20260924-from-dockerfile-to-kit-the-docker-sandboxes-kit-specification-d28cb3fe",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -1029,6 +1048,44 @@
       }
     },
     {
+      "slug": "20261005-making-amazon-quick-enterprise-ready-automated-auditable-cross-a-b9ec7ad0",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion/",
+      "publishedAt": "2026-10-05T15:56:28.000Z",
+      "discoveredAt": "2026-10-05T16:20:42.066Z",
+      "locales": {
+        "en": {
+          "title": "Making Amazon Quick enterprise-ready: Automated, auditable cross-account resource promotion",
+          "summary": "Promoting Amazon Quick resources (agents, action connectors, knowledge bases, flows, and spaces) from a development to a production AWS account has been a manual, error-prone chore. This post shows how to automate cross-account p…"
+        },
+        "fr": {
+          "title": "Making Amazon Quick enterprise-ready: Automated, auditable cross-account resource promotion",
+          "summary": "Promoting Amazon Quick resources (agents, action connectors, knowledge bases, flows, and spaces) from a development to a production AWS account has been a manual, error-prone chore. This post shows how to automate cross-account p…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-facto-6510d815",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
+      "publishedAt": "2026-10-01T18:31:29.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
+          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
+        },
+        "fr": {
+          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
+          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
+        }
+      }
+    },
+    {
       "slug": "20260916-kubernetes-v137-hardening-container-storage-with-bind-mount-opti-6cde82bb",
       "topic": "AI Systems",
       "source": "Kubernetes Blog",
@@ -1063,25 +1120,6 @@
         "fr": {
           "title": "Developer policy update: Transparency, state policy, and what’s ahead",
           "summary": "Explore GitHub’s latest transparency data and learn more about policy updates affecting developers and open source. The post Developer policy update: Transparency, state policy, and what’s ahead appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20261005-evaluating-multi-agent-systems-for-explainability-and-helpfulnes-e07a3dc2",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/evaluating-multi-agent-systems-for-explainability-and-helpfulness-with-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-10-05T15:50:01.000Z",
-      "discoveredAt": "2026-10-05T16:20:42.066Z",
-      "locales": {
-        "en": {
-          "title": "Evaluating multi-agent systems for explainability and helpfulness with Amazon Bedrock AgentCore",
-          "summary": "Multi-agent systems need deeper guarantees than fluent responses: they must select the right tools, respect constraints, and explain their decisions. Learn how to build a Strands-based multi-agent supply chain decisioning system…"
-        },
-        "fr": {
-          "title": "Evaluating multi-agent systems for explainability and helpfulness with Amazon Bedrock AgentCore",
-          "summary": "Multi-agent systems need deeper guarantees than fluent responses: they must select the right tools, respect constraints, and explain their decisions. Learn how to build a Strands-based multi-agent supply chain decisioning system…"
         }
       }
     },
@@ -1276,25 +1314,6 @@
       }
     },
     {
-      "slug": "20261001-translating-cuda-tile-operations-from-python-to-rust-using-agent-833138d5",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
-      "publishedAt": "2026-10-01T18:31:28.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
-        },
-        "fr": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
-        }
-      }
-    },
-    {
       "slug": "20260924-docker-and-cncf-partner-on-an-open-spec-for-agent-permissions-bfc64acb",
       "topic": "AI Systems",
       "source": "Docker Blog",
@@ -1371,6 +1390,44 @@
       }
     },
     {
+      "slug": "20261005-agentic-retrieval-with-langchain-and-amazon-bedrock-knowledge-ba-a764a26c",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/agentic-retrieval-with-langchain-and-amazon-bedrock-knowledge-bases/",
+      "publishedAt": "2026-10-05T15:53:56.000Z",
+      "discoveredAt": "2026-10-05T16:20:42.066Z",
+      "locales": {
+        "en": {
+          "title": "Agentic retrieval with LangChain and Amazon Bedrock Knowledge Bases",
+          "summary": "Build a Retrieval Augmented Generation (RAG) application on Amazon Bedrock Managed Knowledge Base with LangChain, and see how agentic retrieval handles the multi-part questions that single-shot retrieval answers poorly. Run the s…"
+        },
+        "fr": {
+          "title": "Agentic retrieval with LangChain and Amazon Bedrock Knowledge Bases",
+          "summary": "Build a Retrieval Augmented Generation (RAG) application on Amazon Bedrock Managed Knowledge Base with LangChain, and see how agentic retrieval handles the multi-part questions that single-shot retrieval answers poorly. Run the s…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-translating-cuda-tile-operations-from-python-to-rust-using-agent-833138d5",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
+      "publishedAt": "2026-10-01T18:31:28.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+        },
+        "fr": {
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+        }
+      }
+    },
+    {
       "slug": "20260915-kubernetes-v137-pod-level-resource-managers-graduated-to-beta-993e015b",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -1405,25 +1462,6 @@
         "fr": {
           "title": "How we found 24 Android vulnerabilities using our open source AI security agent",
           "summary": "A look at the targeted AI taskflows behind these findings, the critical Android bugs they uncovered, and how to run the same open-source agent on your own app. The post How we found 24 Android vulnerabilities using our open sourc…"
-        }
-      }
-    },
-    {
-      "slug": "20261002-sweep-thousands-of-leases-for-compliance-using-amazon-quick-and--0c1753c3",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern/",
-      "publishedAt": "2026-10-02T15:48:26.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
-          "summary": "The Adjudicated Query pattern pairs the Amazon Quick chat agent with a bounded MCP server over a deterministic rules engine to deliver provably complete, defensible compliance answers. This post walks through the reference archit…"
-        },
-        "fr": {
-          "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
-          "summary": "The Adjudicated Query pattern pairs the Amazon Quick chat agent with a bounded MCP server over a deterministic rules engine to deliver provably complete, defensible compliance answers. This post walks through the reference archit…"
         }
       }
     },
@@ -1618,25 +1656,6 @@
       }
     },
     {
-      "slug": "20261001-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
-      "publishedAt": "2026-10-01T18:31:27.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
-        },
-        "fr": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
-        }
-      }
-    },
-    {
       "slug": "20260924-introducing-cloud-sandboxes-start-on-your-laptop-finish-in-the-c-cd2149d6",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -1713,6 +1732,44 @@
       }
     },
     {
+      "slug": "20261005-downgrading-user-roles-in-amazon-quick-e80698f3",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/downgrading-user-roles-in-amazon-quick/",
+      "publishedAt": "2026-10-05T15:51:38.000Z",
+      "discoveredAt": "2026-10-05T16:20:42.066Z",
+      "locales": {
+        "en": {
+          "title": "Downgrading user roles in Amazon Quick",
+          "summary": "Amazon Quick doesn't offer a direct console path to downgrade a user from Admin or Author to Reader. This post walks through two reliable methods: a manual delete-and-recreate approach and an AWS CLI step-down sequence that downg…"
+        },
+        "fr": {
+          "title": "Downgrading user roles in Amazon Quick",
+          "summary": "Amazon Quick doesn't offer a direct console path to downgrade a user from Admin or Author to Reader. This post walks through two reliable methods: a manual delete-and-recreate approach and an AWS CLI step-down sequence that downg…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
+      "publishedAt": "2026-10-01T18:31:27.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+        },
+        "fr": {
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+        }
+      }
+    },
+    {
       "slug": "20260914-kubernetes-changed-block-tracking-api---beta-differences-081539c8",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -1747,25 +1804,6 @@
         "fr": {
           "title": "Highlights from Git 2.56",
           "summary": "The open source Git project just released Git 2.56. Here is GitHub's look at some of the most interesting features and changes introduced since last time. The post Highlights from Git 2.56 appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20261002-add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agen-60dd8950",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-10-02T15:46:05.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Add secure Web Search to Claude Desktop with Amazon Bedrock AgentCore",
-          "summary": "Claude Desktop on Amazon Bedrock is limited to the model's knowledge cutoff without web search. In this post, we walk through connecting Claude Desktop to Web Search using Amazon Bedrock AgentCore Gateway, with JWT-based inbound…"
-        },
-        "fr": {
-          "title": "Add secure Web Search to Claude Desktop with Amazon Bedrock AgentCore",
-          "summary": "Claude Desktop on Amazon Bedrock is limited to the model's knowledge cutoff without web search. In this post, we walk through connecting Claude Desktop to Web Search using Amazon Bedrock AgentCore Gateway, with JWT-based inbound…"
         }
       }
     },
@@ -1941,25 +1979,6 @@
       }
     },
     {
-      "slug": "20261001-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-64-82b93583",
-      "topic": "AI Performance",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
-      "publishedAt": "2026-10-01T18:31:27.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
-        },
-        "fr": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
-        }
-      }
-    },
-    {
       "slug": "20260922-meet-the-ecosystem-partners-and-customers-at-wearedevelopers-wit-14a094f0",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -2036,6 +2055,44 @@
       }
     },
     {
+      "slug": "20261005-evaluating-multi-agent-systems-for-explainability-and-helpfulnes-e07a3dc2",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/evaluating-multi-agent-systems-for-explainability-and-helpfulness-with-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-10-05T15:50:01.000Z",
+      "discoveredAt": "2026-10-05T16:20:42.066Z",
+      "locales": {
+        "en": {
+          "title": "Evaluating multi-agent systems for explainability and helpfulness with Amazon Bedrock AgentCore",
+          "summary": "Multi-agent systems need deeper guarantees than fluent responses: they must select the right tools, respect constraints, and explain their decisions. Learn how to build a Strands-based multi-agent supply chain decisioning system…"
+        },
+        "fr": {
+          "title": "Evaluating multi-agent systems for explainability and helpfulness with Amazon Bedrock AgentCore",
+          "summary": "Multi-agent systems need deeper guarantees than fluent responses: they must select the right tools, respect constraints, and explain their decisions. Learn how to build a Strands-based multi-agent supply chain decisioning system…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-64-82b93583",
+      "topic": "AI Performance",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
+      "publishedAt": "2026-10-01T18:31:27.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+        },
+        "fr": {
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+        }
+      }
+    },
+    {
       "slug": "20260914-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -2070,25 +2127,6 @@
         "fr": {
           "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
           "summary": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done. The post GitHub Copilot app for Begin…"
-        }
-      }
-    },
-    {
-      "slug": "20261002-fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker--08d5df1e",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker-ai/",
-      "publishedAt": "2026-10-02T15:44:20.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Fine-tune a search agent with multi-turn RL on Amazon SageMaker AI",
-          "summary": "Fine-tuning teaches a small search agent your tools and environment, giving it the reliability of a frontier model at lower latency and cost. In this post, we fine-tune an LLM-powered search agent with multi-turn reinforcement le…"
-        },
-        "fr": {
-          "title": "Fine-tune a search agent with multi-turn RL on Amazon SageMaker AI",
-          "summary": "Fine-tuning teaches a small search agent your tools and environment, giving it the reliability of a frontier model at lower latency and cost. In this post, we fine-tune an LLM-powered search agent with multi-turn reinforcement le…"
         }
       }
     },
@@ -2264,25 +2302,6 @@
       }
     },
     {
-      "slug": "20261001-benchmarking-llm-inference-at-scale-with-aiperf-88c32b0b",
-      "topic": "AI Performance",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
-      "publishedAt": "2026-10-01T18:31:26.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Benchmarking LLM Inference at Scale with AIPerf",
-          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
-        },
-        "fr": {
-          "title": "Benchmarking LLM Inference at Scale with AIPerf",
-          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
-        }
-      }
-    },
-    {
       "slug": "20260908-6-benefits-of-sandbox-environments-and-how-docker-sandboxes-deli-8f7b5812",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -2359,6 +2378,44 @@
       }
     },
     {
+      "slug": "20261002-sweep-thousands-of-leases-for-compliance-using-amazon-quick-and--0c1753c3",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern/",
+      "publishedAt": "2026-10-02T15:48:26.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
+          "summary": "The Adjudicated Query pattern pairs the Amazon Quick chat agent with a bounded MCP server over a deterministic rules engine to deliver provably complete, defensible compliance answers. This post walks through the reference archit…"
+        },
+        "fr": {
+          "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
+          "summary": "The Adjudicated Query pattern pairs the Amazon Quick chat agent with a bounded MCP server over a deterministic rules engine to deliver provably complete, defensible compliance answers. This post walks through the reference archit…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-benchmarking-llm-inference-at-scale-with-aiperf-88c32b0b",
+      "topic": "AI Performance",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
+      "publishedAt": "2026-10-01T18:31:26.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Benchmarking LLM Inference at Scale with AIPerf",
+          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
+        },
+        "fr": {
+          "title": "Benchmarking LLM Inference at Scale with AIPerf",
+          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
+        }
+      }
+    },
+    {
       "slug": "20260911-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -2393,25 +2450,6 @@
         "fr": {
           "title": "Improving site performance by shipping more CSS",
           "summary": "How we fully migrated github.com away from CSS-in-JS. The post Improving site performance by shipping more CSS appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20261001-scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agent-b9de1bc8",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-10-01T22:06:14.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
-          "summary": "Learn how AWS Professional Services uses a multi-agent framework built on Amazon Bedrock AgentCore to automate enterprise cloud migrations end to end. Purpose-built AI agents handle discovery, infrastructure as code generation, p…"
-        },
-        "fr": {
-          "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
-          "summary": "Learn how AWS Professional Services uses a multi-agent framework built on Amazon Bedrock AgentCore to automate enterprise cloud migrations end to end. Purpose-built AI agents handle discovery, infrastructure as code generation, p…"
         }
       }
     },
@@ -2568,25 +2606,6 @@
       }
     },
     {
-      "slug": "20261001-how-to-evaluate-ai-agents-from-tool-calls-to-task-completion-f6a9f53b",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-evaluate-ai-agents-from-tool-calls-to-task-completion/",
-      "publishedAt": "2026-10-01T18:31:25.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
-          "summary": "When you ship an AI agent, the key question is whether it can execute a chain of work across dozens of sequential tool calls against a live environment, and..."
-        },
-        "fr": {
-          "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
-          "summary": "When you ship an AI agent, the key question is whether it can execute a chain of work across dozens of sequential tool calls against a live environment, and..."
-        }
-      }
-    },
-    {
       "slug": "20260903-yolo-mode-agent-autonomy-without-the-guardrails-07d6a8e1",
       "topic": "AI Systems",
       "source": "Docker Blog",
@@ -2663,6 +2682,44 @@
       }
     },
     {
+      "slug": "20261002-add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agen-60dd8950",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-10-02T15:46:05.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Add secure Web Search to Claude Desktop with Amazon Bedrock AgentCore",
+          "summary": "Claude Desktop on Amazon Bedrock is limited to the model's knowledge cutoff without web search. In this post, we walk through connecting Claude Desktop to Web Search using Amazon Bedrock AgentCore Gateway, with JWT-based inbound…"
+        },
+        "fr": {
+          "title": "Add secure Web Search to Claude Desktop with Amazon Bedrock AgentCore",
+          "summary": "Claude Desktop on Amazon Bedrock is limited to the model's knowledge cutoff without web search. In this post, we walk through connecting Claude Desktop to Web Search using Amazon Bedrock AgentCore Gateway, with JWT-based inbound…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-how-to-evaluate-ai-agents-from-tool-calls-to-task-completion-f6a9f53b",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-to-evaluate-ai-agents-from-tool-calls-to-task-completion/",
+      "publishedAt": "2026-10-01T18:31:25.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
+          "summary": "When you ship an AI agent, the key question is whether it can execute a chain of work across dozens of sequential tool calls against a live environment, and..."
+        },
+        "fr": {
+          "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
+          "summary": "When you ship an AI agent, the key question is whether it can execute a chain of work across dozens of sequential tool calls against a live environment, and..."
+        }
+      }
+    },
+    {
       "slug": "20260910-kubernetes-v137-scheduler-preemption-for-in-place-pod-resize-alp-e2763381",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -2697,25 +2754,6 @@
         "fr": {
           "title": "When chat is the wrong UI",
           "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases. The post When chat is the wrong UI appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20261001-serve-live-governed-data-in-ai-built-apps-with-amazon-quick-8d3f838f",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/serve-live-governed-data-in-ai-built-apps-with-amazon-quick/",
-      "publishedAt": "2026-10-01T19:49:06.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Serve live, governed data in AI-built apps with Amazon Quick",
-          "summary": "With Live Data in Apps in Amazon Quick, AI-built apps query your governed Quick Sight datasets in real time instead of static, build-time snapshots. Each query runs as the person viewing the app, so row-level and column-level sec…"
-        },
-        "fr": {
-          "title": "Serve live, governed data in AI-built apps with Amazon Quick",
-          "summary": "With Live Data in Apps in Amazon Quick, AI-built apps query your governed Quick Sight datasets in real time instead of static, build-time snapshots. Each query runs as the person viewing the app, so row-level and column-level sec…"
         }
       }
     },
@@ -2872,25 +2910,6 @@
       }
     },
     {
-      "slug": "20261001-turn-your-latest-observations-into-timely-weather-decisions-with-e61094f2",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/turn-your-latest-observations-into-timely-weather-decisions-with-nvidia-earth-2/",
-      "publishedAt": "2026-10-01T18:31:25.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
-          "summary": "Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect..."
-        },
-        "fr": {
-          "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
-          "summary": "Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect..."
-        }
-      }
-    },
-    {
       "slug": "20260902-building-reproducible-ai-evaluation-workflows-with-docker-sandbo-401ff3f4",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -2948,6 +2967,44 @@
       }
     },
     {
+      "slug": "20261002-fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker--08d5df1e",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker-ai/",
+      "publishedAt": "2026-10-02T15:44:20.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Fine-tune a search agent with multi-turn RL on Amazon SageMaker AI",
+          "summary": "Fine-tuning teaches a small search agent your tools and environment, giving it the reliability of a frontier model at lower latency and cost. In this post, we fine-tune an LLM-powered search agent with multi-turn reinforcement le…"
+        },
+        "fr": {
+          "title": "Fine-tune a search agent with multi-turn RL on Amazon SageMaker AI",
+          "summary": "Fine-tuning teaches a small search agent your tools and environment, giving it the reliability of a frontier model at lower latency and cost. In this post, we fine-tune an LLM-powered search agent with multi-turn reinforcement le…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-turn-your-latest-observations-into-timely-weather-decisions-with-e61094f2",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/turn-your-latest-observations-into-timely-weather-decisions-with-nvidia-earth-2/",
+      "publishedAt": "2026-10-01T18:31:25.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
+          "summary": "Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect..."
+        },
+        "fr": {
+          "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
+          "summary": "Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect..."
+        }
+      }
+    },
+    {
       "slug": "20260909-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -2982,25 +3039,6 @@
         "fr": {
           "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
           "summary": "In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework. The post AI-powered fuzzing with the GitHub Security Lab Taskflow Agent appeared first on The GitHub B…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3--443df385",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors/",
-      "publishedAt": "2026-10-01T17:34:56.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Build agent memory with NVIDIA NeMo Agent Toolkit and Amazon S3 Vectors",
-          "summary": "Learn how to use Amazon S3 Vectors as the persistent memory layer within the NVIDIA NeMo Agent Toolkit (NAT), deployed on Amazon Elastic Kubernetes Service (Amazon EKS). This post shows how NAT's memory subsystem works and how to…"
-        },
-        "fr": {
-          "title": "Build agent memory with NVIDIA NeMo Agent Toolkit and Amazon S3 Vectors",
-          "summary": "Learn how to use Amazon S3 Vectors as the persistent memory layer within the NVIDIA NeMo Agent Toolkit (NAT), deployed on Amazon Elastic Kubernetes Service (Amazon EKS). This post shows how NAT's memory subsystem works and how to…"
         }
       }
     },
@@ -3119,25 +3157,6 @@
       }
     },
     {
-      "slug": "20261001-accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros-930fe613",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros/",
-      "publishedAt": "2026-10-01T18:31:24.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
-          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
-        },
-        "fr": {
-          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
-          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
-        }
-      }
-    },
-    {
       "slug": "20260902-below-the-harness-governing-a-multi-model-multi-harness-world-68dc5609",
       "topic": "AI Systems",
       "source": "Docker Blog",
@@ -3195,6 +3214,44 @@
       }
     },
     {
+      "slug": "20261001-scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agent-b9de1bc8",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-10-01T22:06:14.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
+          "summary": "Learn how AWS Professional Services uses a multi-agent framework built on Amazon Bedrock AgentCore to automate enterprise cloud migrations end to end. Purpose-built AI agents handle discovery, infrastructure as code generation, p…"
+        },
+        "fr": {
+          "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
+          "summary": "Learn how AWS Professional Services uses a multi-agent framework built on Amazon Bedrock AgentCore to automate enterprise cloud migrations end to end. Purpose-built AI agents handle discovery, infrastructure as code generation, p…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros-930fe613",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros/",
+      "publishedAt": "2026-10-01T18:31:24.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
+          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
+        },
+        "fr": {
+          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
+          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
+        }
+      }
+    },
+    {
       "slug": "20260908-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -3229,25 +3286,6 @@
         "fr": {
           "title": "Rendering huge pull requests in the GitHub Copilot app",
           "summary": "How we rebuilt the diff surface in the GitHub Copilot app to open a million-line pull request with hundreds of inline review comments. The post Rendering huge pull requests in the GitHub Copilot app appeared first on The GitHub B…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-uplifting-conversion-across-the-acquisition-funnel-with-personal-763452b3",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/uplifting-conversion-across-the-acquisition-funnel-with-personalization-using-contextual-bandits-on-aws/",
-      "publishedAt": "2026-10-01T16:51:04.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Uplifting conversion across the acquisition funnel with personalization using contextual bandits on AWS",
-          "summary": "Generative AI makes it cheap to produce personalized content at scale, but which variation do you show each customer? Amazon Payments used a multi-objective contextual bandit on Amazon SageMaker AI to personalize an acquisition f…"
-        },
-        "fr": {
-          "title": "Uplifting conversion across the acquisition funnel with personalization using contextual bandits on AWS",
-          "summary": "Generative AI makes it cheap to produce personalized content at scale, but which variation do you show each customer? Amazon Payments used a multi-objective contextual bandit on Amazon SageMaker AI to personalize an acquisition f…"
         }
       }
     },
@@ -3366,25 +3404,6 @@
       }
     },
     {
-      "slug": "20261001-simplifying-model-serving-across-multiple-gpus-with-nvidia-tenso-21a9c69c",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/simplifying-model-serving-across-multiple-gpus-with-nvidia-tensorrt-multi-device-integration-in-nvidia-dynamo-triton/",
-      "publishedAt": "2026-10-01T18:31:24.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Simplifying Model Serving Across Multiple GPUs with NVIDIA TensorRT Multi-Device Integration in NVIDIA Dynamo-Triton",
-          "summary": "The compute and memory demands of generative AI increasingly exceed what a single GPU can provide. NVIDIA TensorRT multi-device inference is a new capability..."
-        },
-        "fr": {
-          "title": "Simplifying Model Serving Across Multiple GPUs with NVIDIA TensorRT Multi-Device Integration in NVIDIA Dynamo-Triton",
-          "summary": "The compute and memory demands of generative AI increasingly exceed what a single GPU can provide. NVIDIA TensorRT multi-device inference is a new capability..."
-        }
-      }
-    },
-    {
       "slug": "20260831-secure-by-default-is-your-only-way-forward-a7538814",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -3442,6 +3461,44 @@
       }
     },
     {
+      "slug": "20261001-serve-live-governed-data-in-ai-built-apps-with-amazon-quick-8d3f838f",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/serve-live-governed-data-in-ai-built-apps-with-amazon-quick/",
+      "publishedAt": "2026-10-01T19:49:06.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Serve live, governed data in AI-built apps with Amazon Quick",
+          "summary": "With Live Data in Apps in Amazon Quick, AI-built apps query your governed Quick Sight datasets in real time instead of static, build-time snapshots. Each query runs as the person viewing the app, so row-level and column-level sec…"
+        },
+        "fr": {
+          "title": "Serve live, governed data in AI-built apps with Amazon Quick",
+          "summary": "With Live Data in Apps in Amazon Quick, AI-built apps query your governed Quick Sight datasets in real time instead of static, build-time snapshots. Each query runs as the person viewing the app, so row-level and column-level sec…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-simplifying-model-serving-across-multiple-gpus-with-nvidia-tenso-21a9c69c",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/simplifying-model-serving-across-multiple-gpus-with-nvidia-tensorrt-multi-device-integration-in-nvidia-dynamo-triton/",
+      "publishedAt": "2026-10-01T18:31:24.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Simplifying Model Serving Across Multiple GPUs with NVIDIA TensorRT Multi-Device Integration in NVIDIA Dynamo-Triton",
+          "summary": "The compute and memory demands of generative AI increasingly exceed what a single GPU can provide. NVIDIA TensorRT multi-device inference is a new capability..."
+        },
+        "fr": {
+          "title": "Simplifying Model Serving Across Multiple GPUs with NVIDIA TensorRT Multi-Device Integration in NVIDIA Dynamo-Triton",
+          "summary": "The compute and memory demands of generative AI increasingly exceed what a single GPU can provide. NVIDIA TensorRT multi-device inference is a new capability..."
+        }
+      }
+    },
+    {
       "slug": "20260904-kubernetes-v137-kubeletinusernamespace-aka-rootless-mode-graduat-1560f468",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -3476,25 +3533,6 @@
         "fr": {
           "title": "Developers want more efficient software. Here’s what over 1,000 GitHub users told us they need.",
           "summary": "New research from GitHub and Yale Program on Climate Change Communication finds strong demand for tools, measurement, and practical guidance that can help developers reduce wasted compute. The post Developers want more efficient…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-building-ambient-agents-with-amazon-bedrock-agentcore-from-event-a4df635e",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/building-ambient-agents-with-amazon-bedrock-agentcore-from-event-driven-signals-to-human-in-the-loop-workflows/",
-      "publishedAt": "2026-10-01T16:40:24.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Building ambient agents with Amazon Bedrock AgentCore: From event-driven signals to human-in-the-loop workflows",
-          "summary": "Ambient agents respond to events such as an Amazon S3 upload, a schedule, or an alert instead of waiting for a chat prompt. This post walks through building framework-agnostic ambient agents on Amazon Bedrock AgentCore using Amaz…"
-        },
-        "fr": {
-          "title": "Building ambient agents with Amazon Bedrock AgentCore: From event-driven signals to human-in-the-loop workflows",
-          "summary": "Ambient agents respond to events such as an Amazon S3 upload, a schedule, or an alert instead of waiting for a chat prompt. This post walks through building framework-agnostic ambient agents on Amazon Bedrock AgentCore using Amaz…"
         }
       }
     },
@@ -3613,25 +3651,6 @@
       }
     },
     {
-      "slug": "20261001-whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rende-60dd7f94",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities/",
-      "publishedAt": "2026-10-01T18:31:23.000Z",
-      "discoveredAt": "2026-10-02T12:29:54.806Z",
-      "locales": {
-        "en": {
-          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
-          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
-        },
-        "fr": {
-          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
-          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
-        }
-      }
-    },
-    {
       "slug": "20260825-moving-from-minimus-to-docker-hardened-images-7e216419",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -3689,6 +3708,44 @@
       }
     },
     {
+      "slug": "20261001-build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3--443df385",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors/",
+      "publishedAt": "2026-10-01T17:34:56.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Build agent memory with NVIDIA NeMo Agent Toolkit and Amazon S3 Vectors",
+          "summary": "Learn how to use Amazon S3 Vectors as the persistent memory layer within the NVIDIA NeMo Agent Toolkit (NAT), deployed on Amazon Elastic Kubernetes Service (Amazon EKS). This post shows how NAT's memory subsystem works and how to…"
+        },
+        "fr": {
+          "title": "Build agent memory with NVIDIA NeMo Agent Toolkit and Amazon S3 Vectors",
+          "summary": "Learn how to use Amazon S3 Vectors as the persistent memory layer within the NVIDIA NeMo Agent Toolkit (NAT), deployed on Amazon Elastic Kubernetes Service (Amazon EKS). This post shows how NAT's memory subsystem works and how to…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rende-60dd7f94",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities/",
+      "publishedAt": "2026-10-01T18:31:23.000Z",
+      "discoveredAt": "2026-10-02T12:29:54.806Z",
+      "locales": {
+        "en": {
+          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
+          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
+        },
+        "fr": {
+          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
+          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
+        }
+      }
+    },
+    {
       "slug": "20260903-kubernetes-v137-dra-updates-90b5ee36",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -3723,25 +3780,6 @@
         "fr": {
           "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
           "summary": "New research from GitHub and Yale Program on Climate Change Communication finds strong demand for tools, measurement, and practical guidance that can help developers reduce wasted compute. The post Developers want more efficient…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-implementing-multi-environment-access-for-claude-platform-on-aws-957c29ef",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/implementing-multi-environment-access-for-claude-platform-on-aws/",
-      "publishedAt": "2026-10-01T16:32:23.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Implementing Multi-Environment Access for Claude Platform on AWS",
-          "summary": "Learn how to configure secure, multi-environment access to Claude Platform on AWS from a single subscription: cross-account SigV4 for AWS workloads, workspace-scoped API keys for developers, and OIDC federation for external envir…"
-        },
-        "fr": {
-          "title": "Implementing Multi-Environment Access for Claude Platform on AWS",
-          "summary": "Learn how to configure secure, multi-environment access to Claude Platform on AWS from a single subscription: cross-account SigV4 for AWS workloads, workspace-scoped API keys for developers, and OIDC federation for external envir…"
         }
       }
     },
@@ -3860,25 +3898,6 @@
       }
     },
     {
-      "slug": "20261001-topology-aware-workload-scheduling-with-nvidia-topograph-05cef1f3",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/topology-aware-workload-scheduling-with-nvidia-topograph/",
-      "publishedAt": "2026-10-01T18:31:22.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Topology-Aware Workload Scheduling with NVIDIA Topograph",
-          "summary": "AI factories are power-limited systems that deliver maximum value when fully optimized. GPU workload placement is a key optimization. Poor workload placement..."
-        },
-        "fr": {
-          "title": "Topology-Aware Workload Scheduling with NVIDIA Topograph",
-          "summary": "AI factories are power-limited systems that deliver maximum value when fully optimized. GPU workload placement is a key optimization. Poor workload placement..."
-        }
-      }
-    },
-    {
       "slug": "20260824-minio-end-of-life-how-to-stay-patched-and-audit-ready-with-docke-52462813",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -3936,6 +3955,44 @@
       }
     },
     {
+      "slug": "20261001-uplifting-conversion-across-the-acquisition-funnel-with-personal-763452b3",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/uplifting-conversion-across-the-acquisition-funnel-with-personalization-using-contextual-bandits-on-aws/",
+      "publishedAt": "2026-10-01T16:51:04.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Uplifting conversion across the acquisition funnel with personalization using contextual bandits on AWS",
+          "summary": "Generative AI makes it cheap to produce personalized content at scale, but which variation do you show each customer? Amazon Payments used a multi-objective contextual bandit on Amazon SageMaker AI to personalize an acquisition f…"
+        },
+        "fr": {
+          "title": "Uplifting conversion across the acquisition funnel with personalization using contextual bandits on AWS",
+          "summary": "Generative AI makes it cheap to produce personalized content at scale, but which variation do you show each customer? Amazon Payments used a multi-objective contextual bandit on Amazon SageMaker AI to personalize an acquisition f…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-topology-aware-workload-scheduling-with-nvidia-topograph-05cef1f3",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/topology-aware-workload-scheduling-with-nvidia-topograph/",
+      "publishedAt": "2026-10-01T18:31:22.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Topology-Aware Workload Scheduling with NVIDIA Topograph",
+          "summary": "AI factories are power-limited systems that deliver maximum value when fully optimized. GPU workload placement is a key optimization. Poor workload placement..."
+        },
+        "fr": {
+          "title": "Topology-Aware Workload Scheduling with NVIDIA Topograph",
+          "summary": "AI factories are power-limited systems that deliver maximum value when fully optimized. GPU workload placement is a key optimization. Poor workload placement..."
+        }
+      }
+    },
+    {
       "slug": "20260902-kubernetes-v137-scale-workloads-to-zero-with-horizontalpodautosc-d1c3bfab",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -3970,25 +4027,6 @@
         "fr": {
           "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
           "summary": "We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast. The post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20261001-simplify-dashboard-drill-down-with-the-amazon-quick-sight-hierar-e7bc0f51",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/simplify-dashboard-drill-down-with-the-amazon-quick-sight-hierarchy-filter/",
-      "publishedAt": "2026-10-01T16:28:14.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Simplify dashboard drill-down with the Amazon Quick Sight hierarchy filter",
-          "summary": "Amazon Quick Sight is a fully managed, cloud-native business intelligence (BI) capability for building and publishing interactive dashboards. The new hierarchy filter gives dashboard authors rich, multi-level filtering in a singl…"
-        },
-        "fr": {
-          "title": "Simplify dashboard drill-down with the Amazon Quick Sight hierarchy filter",
-          "summary": "Amazon Quick Sight is a fully managed, cloud-native business intelligence (BI) capability for building and publishing interactive dashboards. The new hierarchy filter gives dashboard authors rich, multi-level filtering in a singl…"
         }
       }
     },
@@ -4088,25 +4126,6 @@
       }
     },
     {
-      "slug": "20261001-how-swe-serve-exposes-the-gap-between-local-tests-and-live-servi-9e926410",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/",
-      "publishedAt": "2026-10-01T18:31:21.000Z",
-      "discoveredAt": "2026-10-02T12:29:54.806Z",
-      "locales": {
-        "en": {
-          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
-          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
-        },
-        "fr": {
-          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
-          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
-        }
-      }
-    },
-    {
       "slug": "20260826-intelligent-transcription-with-gemini-35-transcribe-83abfc08",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -4141,6 +4160,44 @@
         "fr": {
           "title": "Two zones or three? A design framework for zone-resilient Azure workloads",
           "summary": "Zone resiliency isn't a single number you apply to a whole workload. The useful question isn't “how many zones?” but “how many zones does each component need to survive the loss of one?” Decide zone patterns component by componen…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-building-ambient-agents-with-amazon-bedrock-agentcore-from-event-a4df635e",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/building-ambient-agents-with-amazon-bedrock-agentcore-from-event-driven-signals-to-human-in-the-loop-workflows/",
+      "publishedAt": "2026-10-01T16:40:24.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Building ambient agents with Amazon Bedrock AgentCore: From event-driven signals to human-in-the-loop workflows",
+          "summary": "Ambient agents respond to events such as an Amazon S3 upload, a schedule, or an alert instead of waiting for a chat prompt. This post walks through building framework-agnostic ambient agents on Amazon Bedrock AgentCore using Amaz…"
+        },
+        "fr": {
+          "title": "Building ambient agents with Amazon Bedrock AgentCore: From event-driven signals to human-in-the-loop workflows",
+          "summary": "Ambient agents respond to events such as an Amazon S3 upload, a schedule, or an alert instead of waiting for a chat prompt. This post walks through building framework-agnostic ambient agents on Amazon Bedrock AgentCore using Amaz…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-how-swe-serve-exposes-the-gap-between-local-tests-and-live-servi-9e926410",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/",
+      "publishedAt": "2026-10-01T18:31:21.000Z",
+      "discoveredAt": "2026-10-02T12:29:54.806Z",
+      "locales": {
+        "en": {
+          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
+          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
+        },
+        "fr": {
+          "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
+          "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software..."
         }
       }
     },
@@ -4183,25 +4240,6 @@
       }
     },
     {
-      "slug": "20261001-how-uniopen-customized-amazon-nova-to-their-retail-moderation-po-c2ac20a5",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-uniopen-customized-amazon-nova-to-their-retail-moderation-policies-for-production-deployment/",
-      "publishedAt": "2026-10-01T15:33:01.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "How uniopen customized Amazon Nova to their retail moderation policies for production deployment",
-          "summary": "See how uniopen, a retail platform from Taiwan's Uni-President Enterprises Group, adapted Amazon Nova 2 Lite to its content-moderation policies using supervised fine-tuning in Amazon SageMaker AI and prompt optimization. Business…"
-        },
-        "fr": {
-          "title": "How uniopen customized Amazon Nova to their retail moderation policies for production deployment",
-          "summary": "See how uniopen, a retail platform from Taiwan's Uni-President Enterprises Group, adapted Amazon Nova 2 Lite to its content-moderation policies using supervised fine-tuning in Amazon SageMaker AI and prompt optimization. Business…"
-        }
-      }
-    },
-    {
       "slug": "20260928-the-lenfest-institute-grows-landmark-program-with-expanded-opena-216d56bb",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -4221,21 +4259,21 @@
       }
     },
     {
-      "slug": "20261001-we-want-you-to-build-the-next-git-platform-on-cloudflare-7b804092",
+      "slug": "20261001-introducing-workers-kv-instant-powered-by-quicksilver-2124bce0",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/next-git-platform-on-cloudflare/",
+      "href": "https://blog.cloudflare.com/workers-kv-instant/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-05T16:20:42.066Z",
+      "discoveredAt": "2026-10-06T00:01:43.409Z",
       "locales": {
         "en": {
-          "title": "We want you to build the next Git platform on Cloudflare",
-          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes."
+          "title": "Introducing Workers KV Instant — powered by Quicksilver",
+          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
         },
         "fr": {
-          "title": "We want you to build the next Git platform on Cloudflare",
-          "summary": "Cloudflare is hosting a competition to see who will build the next Git platform for an era of AI agents. Artifacts is in open beta, with Workers bindings, data jurisdiction controls, and event subscriptions for repository changes."
+          "title": "Introducing Workers KV Instant — powered by Quicksilver",
+          "summary": "Workers KV Instant delivers sub-2ms p99 read latencies and 250ms global replication across Cloudflare’s 300+ edge locations. KV Instant eliminates cold-read penalties and uses the familiar Workers KV API."
         }
       }
     },
@@ -4297,25 +4335,6 @@
       }
     },
     {
-      "slug": "20261001-enabling-private-high-performance-production-ai-inference-with-n-5a508d73",
-      "topic": "AI Performance",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/",
-      "publishedAt": "2026-10-01T18:31:21.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
-          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
-        },
-        "fr": {
-          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
-          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
-        }
-      }
-    },
-    {
       "slug": "20260908-beyond-the-benchmark-how-an-adaptive-approach-drives-scientific--c3e4a63e",
       "topic": "AI Performance",
       "source": "Azure AI Blog",
@@ -4331,6 +4350,44 @@
         "fr": {
           "title": "Beyond the benchmark: How an adaptive approach drives scientific discovery",
           "summary": "For research and development (R&D) organizations, the promise of agentic AI is not a better one-time answer. It is a new way to explore complex scientific and engineering problems: pursuing multiple hypotheses, validating them ag…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-implementing-multi-environment-access-for-claude-platform-on-aws-957c29ef",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/implementing-multi-environment-access-for-claude-platform-on-aws/",
+      "publishedAt": "2026-10-01T16:32:23.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Implementing Multi-Environment Access for Claude Platform on AWS",
+          "summary": "Learn how to configure secure, multi-environment access to Claude Platform on AWS from a single subscription: cross-account SigV4 for AWS workloads, workspace-scoped API keys for developers, and OIDC federation for external envir…"
+        },
+        "fr": {
+          "title": "Implementing Multi-Environment Access for Claude Platform on AWS",
+          "summary": "Learn how to configure secure, multi-environment access to Claude Platform on AWS from a single subscription: cross-account SigV4 for AWS workloads, workspace-scoped API keys for developers, and OIDC federation for external envir…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-enabling-private-high-performance-production-ai-inference-with-n-5a508d73",
+      "topic": "AI Performance",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/",
+      "publishedAt": "2026-10-01T18:31:21.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
+          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
+        },
+        "fr": {
+          "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
+          "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated..."
         }
       }
     },
@@ -4373,25 +4430,6 @@
       }
     },
     {
-      "slug": "20260930-query-claims-in-natural-language-with-amazon-bedrock-knowledge-b-8be48fae",
-      "topic": "Computer Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/query-claims-in-natural-language-with-amazon-bedrock-knowledge-bases/",
-      "publishedAt": "2026-09-30T15:37:15.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Query claims in natural language with Amazon Bedrock Knowledge Bases",
-          "summary": "This technical how-to builds a conversational claims assistant on Amazon Bedrock Knowledge Bases that answers natural-language questions with citations. It covers ingesting claim documents from Amazon S3, querying with the Agenti…"
-        },
-        "fr": {
-          "title": "Query claims in natural language with Amazon Bedrock Knowledge Bases",
-          "summary": "This technical how-to builds a conversational claims assistant on Amazon Bedrock Knowledge Bases that answers natural-language questions with citations. It covers ingesting claim documents from Amazon S3, querying with the Agenti…"
-        }
-      }
-    },
-    {
       "slug": "20260928-basis-completes-a-tax-workbook-2x-faster-with-gpt-6-astra-bf0fe8cc",
       "topic": "AI Systems",
       "source": "OpenAI News",
@@ -4411,21 +4449,21 @@
       }
     },
     {
-      "slug": "20261001-ai-search-is-now-generally-available-1309166d",
-      "topic": "Computer Systems",
+      "slug": "20261001-cloudflare-os-your-companys-agent-workspace-managed-for-you-8b10a1bc",
+      "topic": "AI Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/ai-search-ga/",
+      "href": "https://blog.cloudflare.com/managed-cloudflare-os/",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "discoveredAt": "2026-10-05T16:20:42.066Z",
+      "discoveredAt": "2026-10-06T00:01:43.409Z",
       "locales": {
         "en": {
-          "title": "AI Search is now generally available",
-          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pri…"
+          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
+          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch i…"
         },
         "fr": {
-          "title": "AI Search is now generally available",
-          "summary": "AI Search is now generally available. It embeds image pixels directly for visual search, runs optical character recognition on scanned PDFs, accepts files up to 10 MiB, and works with any chat model. Here's what's new and how pri…"
+          "title": "Cloudflare OS: your company’s agent workspace, managed for you",
+          "summary": "Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. We’re opening the waitlist for fully managed deployments that you’ll be able to launch i…"
         }
       }
     },
@@ -4487,78 +4525,40 @@
       }
     },
     {
-      "slug": "20261001-manage-kubernetes-node-fleets-with-nodewright-6b35eb72",
-      "topic": "Computer Science",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
-      "publishedAt": "2026-10-01T18:31:20.000Z",
-      "discoveredAt": "2026-10-05T16:20:42.066Z",
-      "locales": {
-        "en": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
-        },
-        "fr": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
-        }
-      }
-    },
-    {
-      "slug": "20260828-kubernetes-v137-pod-certificates-and-cluster-trust-bundles-62fba438",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
-      "publishedAt": "2026-08-28T18:30:00.000Z",
-      "discoveredAt": "2026-10-04T21:21:28.129Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
-          "summary": "Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits are probably at the front of your mind, one other i…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
-          "summary": "Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits are probably at the front of your mind, one other i…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-build-a-multi-agent-music-production-pipeline-on-amazon-bedrock--5d4893f2",
+      "slug": "20261001-simplify-dashboard-drill-down-with-the-amazon-quick-sight-hierar-e7bc0f51",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/build-a-multi-agent-music-production-pipeline-on-amazon-bedrock-agentcore-runtime-instances/",
-      "publishedAt": "2026-09-30T15:21:57.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/simplify-dashboard-drill-down-with-the-amazon-quick-sight-hierarchy-filter/",
+      "publishedAt": "2026-10-01T16:28:14.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
       "locales": {
         "en": {
-          "title": "Build a multi-agent music production pipeline on Amazon Bedrock AgentCore Runtime Instances",
-          "summary": "Amazon Bedrock AgentCore Runtime Instances gives multi-agent workflows AWS managed EC2 infrastructure with GPUs, persistent volumes, and multi-day sessions. In this post, we deploy a three-agent music production pipeline where th…"
+          "title": "Simplify dashboard drill-down with the Amazon Quick Sight hierarchy filter",
+          "summary": "Amazon Quick Sight is a fully managed, cloud-native business intelligence (BI) capability for building and publishing interactive dashboards. The new hierarchy filter gives dashboard authors rich, multi-level filtering in a singl…"
         },
         "fr": {
-          "title": "Build a multi-agent music production pipeline on Amazon Bedrock AgentCore Runtime Instances",
-          "summary": "Amazon Bedrock AgentCore Runtime Instances gives multi-agent workflows AWS managed EC2 infrastructure with GPUs, persistent volumes, and multi-day sessions. In this post, we deploy a three-agent music production pipeline where th…"
+          "title": "Simplify dashboard drill-down with the Amazon Quick Sight hierarchy filter",
+          "summary": "Amazon Quick Sight is a fully managed, cloud-native business intelligence (BI) capability for building and publishing interactive dashboards. The new hierarchy filter gives dashboard authors rich, multi-level filtering in a singl…"
         }
       }
     },
     {
-      "slug": "20260925-proaction-boosts-sales-60-and-saves-75-hours-with-codex-d2d497e5",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/proaction",
-      "publishedAt": "2026-09-25T19:00:00.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
+      "slug": "20261001-validate-gpu-cluster-readiness-before-ai-workloads-land-a69161c4",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land/",
+      "publishedAt": "2026-10-01T18:31:20.000Z",
+      "discoveredAt": "2026-10-06T00:01:43.409Z",
       "locales": {
         "en": {
-          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
+          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
         },
         "fr": {
-          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
+          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
         }
       }
     }
