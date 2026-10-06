@@ -46,6 +46,23 @@
      fails, and it is exactly the text a reader squints at. */
   --muted: #5c665e;
   --border: #dcdfd4;
+  /*
+   * The boundary of a control you are meant to find and click.
+   *
+   * --border is a divider colour: 1.35:1 against --surface, which is right for
+   * a hairline between two listings and wrong for the edge of a text field.
+   * Every input on the site was drawn with it, so the newsletter box, the
+   * header search and the keyword filter were marked by a line at 1.4:1 --
+   * invisible on a bright phone screen, and the input's own fill is 1.01:1
+   * against the page, so the border was the only thing saying where to type.
+   * WCAG 1.4.11 asks 3:1 for exactly this, and it exempts only inactive or
+   * browser-default controls, neither of which these are.
+   *
+   * 3.51:1 on white, 3.36:1 on the page ground. Separate from --border on
+   * purpose: darkening every divider to clear a rule written for controls
+   * would make a 94-row list look like a spreadsheet.
+   */
+  --control-border: #848c75;
   --primary: #1b4d3e;
   --primary-strong: #123328;
   --primary-foreground: #ffffff;
@@ -91,6 +108,8 @@ html[data-theme="dark"] {
   --text-strong: #ebefe9;
   --muted: #8b968c;
   --border: #2a322c;
+  /* 3.87:1 against the input fill, 4.66:1 against the page. */
+  --control-border: #73826f;
   --primary: #6ac3a0;
   --primary-strong: #8ad4b8;
   --primary-foreground: #0d1110;
@@ -398,7 +417,7 @@ html[data-content-width="wide"] {
   .field-input {
     @apply w-full rounded-xl border px-4 text-sm outline-none;
     min-height: var(--control-height-md);
-    border-color: color-mix(in srgb, var(--border), var(--text) 5%);
+    border-color: var(--control-border);
     background: linear-gradient(
       180deg,
       color-mix(in srgb, var(--surface), #ffffff 4%) 0%,
@@ -418,7 +437,7 @@ html[data-content-width="wide"] {
   }
 
   .header-search-shell {
-    border: 1px solid color-mix(in srgb, var(--border), var(--text) 5%);
+    border: 1px solid var(--control-border);
     background: color-mix(in srgb, var(--surface), #ffffff 2%);
     box-shadow: 0 8px 18px -18px rgba(6, 20, 43, 0.8);
   }
@@ -431,7 +450,7 @@ html[data-content-width="wide"] {
   .search-input {
     @apply w-full rounded-xl border px-4 text-sm outline-none;
     min-height: var(--control-height-md);
-    border-color: color-mix(in srgb, var(--border), var(--text) 6%);
+    border-color: var(--control-border);
     background: color-mix(in srgb, var(--surface), #ffffff 2%);
     color: var(--text);
   }
@@ -550,7 +569,7 @@ html[data-content-width="wide"] {
   }
 
   .blog-stream-card {
-    border: 1px solid color-mix(in srgb, var(--border), #ffffff 7%);
+    border: 1px solid var(--control-border);
     background:
       linear-gradient(180deg, color-mix(in srgb, var(--surface), #ffffff 7%) 0%, color-mix(in srgb, var(--surface), #ffffff 2%) 100%);
     box-shadow: 0 18px 30px -30px rgba(9, 27, 58, 0.84);
@@ -597,7 +616,7 @@ html[data-content-width="wide"] {
   }
 
   .blog-chip {
-    border: 1px solid color-mix(in srgb, var(--border), #ffffff 7%);
+    border: 1px solid var(--control-border);
     background: color-mix(in srgb, var(--surface), #ffffff 4%);
     color: color-mix(in srgb, var(--text), #ffffff 5%);
     font-weight: 500;

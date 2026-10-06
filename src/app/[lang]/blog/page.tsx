@@ -16,7 +16,7 @@ import {
 } from "@/content/posts";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { citedReferenceCount, referenceCountLabel } from "@/lib/citations";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { sanitizeSearchQuery } from "@/lib/input";
@@ -50,6 +50,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       params.lang === "fr" ? "stages ia et informatique" : "ai and cs internships for students"
     ]),
     openGraph: {
+      ...openGraphDefaults(params.lang),
       title: dict.blog.title,
       description: dict.blog.subtitle,
       url: `/${params.lang}/blog`,
@@ -249,7 +250,7 @@ export default async function LocalizedBlogPage(
                   {locale === "fr" ? "Intentions" : "User intent"}
                 </p>
                 <p className="blog-signal-value mt-1 text-[color:var(--text-strong)]">
-                  {locale === "fr" ? "News, outils, comparatifs" : "News, tools, comparisons"}
+                  {locale === "fr" ? "Actualités, outils, comparatifs" : "News, tools, comparisons"}
                 </p>
               </article>
             </div>
@@ -524,6 +525,7 @@ export default async function LocalizedBlogPage(
                   <div className="mt-4">
                     <Link
                       href={`/${locale}/blog/${post.slug}`}
+                      aria-label={`${dict.blog.readPost}: ${post.title}`}
                       className="inline-flex items-center text-sm font-semibold text-[color:var(--primary)] hover:opacity-80"
                     >
                       {dict.blog.readPost}

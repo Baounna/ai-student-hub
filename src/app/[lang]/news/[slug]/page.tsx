@@ -15,7 +15,7 @@ import { getLocalizedNews, getNewsBySlug, getNewsTrack, topicLabel } from "@/con
 import { getLocalizedPost, slugify } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { briefReferences } from "@/lib/news-references";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
@@ -115,6 +115,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
     description: brief.seoDescription || brief.summary,
     keywords: getSeoKeywords(params.lang, "newsPost", brief.keywords),
     openGraph: {
+      ...openGraphDefaults(params.lang),
       title: brief.title,
       description: brief.summary,
       url: `/${params.lang}/news/${params.slug}`,
@@ -395,7 +396,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             </p>
             <p className="mt-2 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Chemin recommandé: News -> Blog -> Lab outils -> Guide carrière."
+                ? "Chemin recommandé : Actualités -> Blog -> Labo outils -> Guide carrière."
                 : "Recommended path: News -> Blog -> Tools lab -> Career guide."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">

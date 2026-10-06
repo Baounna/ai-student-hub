@@ -25,7 +25,7 @@ import { getLocalizedPost, getPostTrack, getPostsByTrack, posts, recommendedTool
 import { StickyPostCta } from "@/components/sticky-post-cta";
 import { isLocale, type Locale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
 import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
@@ -86,6 +86,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
     description: post.seoDescription || post.excerpt,
     keywords: getSeoKeywords(params.lang, "blogPost", post.keywords),
     openGraph: {
+      ...openGraphDefaults(params.lang),
       title: post.title,
       description: post.excerpt,
       url: `/${params.lang}/blog/${params.slug}`,
@@ -314,7 +315,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
             {locale === "fr" ? "Stages ouverts" : "Open internships"}
           </TrackableAnchor>
           <Link href={`/${locale}/compare`} className="btn-secondary">
-            {locale === "fr" ? "Lab outils" : "Tools lab"}
+            {locale === "fr" ? "Labo outils" : "Tools lab"}
           </Link>
           {hasCheckoutUrl ? (
             <TrackableAnchor
@@ -628,7 +629,11 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                   <article key={relatedPost.slug} className="card-hover glass rounded-2xl p-5">
                     <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">{relatedPost.title}</h3>
                     <p className="mt-2 text-sm text-[color:var(--text)]">{relatedPost.excerpt}</p>
-                    <Link href={`/${locale}/blog/${relatedPost.slug}`} className="do-link mt-3 inline-block text-sm">
+                    <Link
+                      href={`/${locale}/blog/${relatedPost.slug}`}
+                      aria-label={`${dict.blog.readPost}: ${relatedPost.title}`}
+                      className="do-link mt-3 inline-block text-sm"
+                    >
                       {dict.blog.readPost}
                     </Link>
                   </article>
@@ -662,7 +667,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                 {locale === "fr" ? "Actualités IA/CS" : "AI + Cybersecurity news"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-secondary text-center">
-                {locale === "fr" ? "Lab outils" : "Tools lab"}
+                {locale === "fr" ? "Labo outils" : "Tools lab"}
               </Link>
               <Link href={`/${locale}/resources`} className="btn-primary text-center">
                 {locale === "fr" ? "Outils recommandés" : "Recommended tools"}

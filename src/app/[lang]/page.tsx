@@ -23,7 +23,7 @@ import {
 } from "@/content/posts";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 import { formatReadTime } from "@/lib/read-time";
@@ -48,6 +48,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     description: dict.home.metaDescription,
     keywords: getSeoKeywords(params.lang, "home"),
     openGraph: {
+      ...openGraphDefaults(params.lang),
       title: dict.home.headline,
       description: dict.home.subheadline,
       url: `/${params.lang}`,
@@ -184,7 +185,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       ? [
           {
             label: "Pour tous",
-            title: "News + outils + briefs",
+            title: "Actualités + outils + briefs",
             body: "Suivez les actualités officielles IA/CS, ouvrez les outils utiles, puis appliquez les briefs pratiques.",
             links: [
               { href: `/${locale}/news`, text: "Actualités" },
@@ -232,7 +233,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       title: locale === "fr" ? "Piste IA" : "AI Track",
       summary:
         locale === "fr"
-          ? "Modèles, ML engineering, LLM systems, et exécution portfolio."
+          ? "Modèles, ingénierie ML, systèmes LLM et exécution de portfolio."
           : "Models, ML engineering, LLM systems, and portfolio execution.",
       count: trackCounts.ai,
       categories: aiCategories.slice(0, 3),
@@ -648,7 +649,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
       <div className="mt-4 grid gap-4 lg:grid-cols-[1.2fr,1fr]">
         <section className="wiki-panel overflow-hidden rounded-md">
           <div className="wiki-head wiki-head-blue px-4 py-2 text-xl md:text-2xl">
-            {locale === "fr" ? "Signaux web automatiques (AI + Cybersecurity)" : "Automatic web signals (AI + Cybersecurity)"}
+            {locale === "fr" ? "Signaux web automatiques (IA + cybersécurité)" : "Automatic web signals (AI + Cybersecurity)"}
           </div>
           <div className="p-4">
             <p className="text-sm text-[color:var(--text)]">
@@ -665,10 +666,21 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                     </p>
                     <h3 className="mt-1 text-sm font-semibold text-[color:var(--text-strong)]">{item.title}</h3>
                     <p className="mt-1 text-sm text-[color:var(--text)]">{item.summary}</p>
+                    {/* Six links reading "Official source" in a row told a
+                        screen-reader user navigating by links nothing about
+                        which source. The visible text stays short; the name
+                        carries the headline it belongs to, and says the link
+                        leaves the site — the stages board already works this
+                        way. */}
                     <a
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer nofollow"
+                      aria-label={
+                        locale === "fr"
+                          ? `Source officielle : ${item.title} (nouvel onglet)`
+                          : `Official source: ${item.title} (opens in a new tab)`
+                      }
                       className="do-link mt-2 inline-block text-sm"
                     >
                       {locale === "fr" ? "Source officielle" : "Official source"}
@@ -733,7 +745,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                 {locale === "fr" ? "Outils recommandés" : "Recommended tools"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-secondary">
-                {locale === "fr" ? "Lab outils" : "Tools lab"}
+                {locale === "fr" ? "Labo outils" : "Tools lab"}
               </Link>
               {hasCheckoutUrl ? (
                 <TrackableAnchor
@@ -858,7 +870,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           </Link>
           <span>•</span>
           <Link href={`/${locale}/compare`} className="do-link inline-block py-1.5">
-            {locale === "fr" ? "Lab outils et plateformes" : "Tools and platform lab"}
+            {locale === "fr" ? "Labo outils et plateformes" : "Tools and platform lab"}
           </Link>
         </div>
       </section>

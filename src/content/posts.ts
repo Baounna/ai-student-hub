@@ -356,7 +356,7 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
     category: { en: "Math + CS Problem Solving", fr: "Résolution maths + info" },
     summary: {
       en: "Step-by-step support for math, linear algebra, and technical problem solving.",
-      fr: "Support pas-à-pas pour maths, algèbre linéaire, et résolution technique."
+      fr: "Aide pas-à-pas pour les maths, algèbre linéaire, et résolution technique."
     },
     bestFor: {
       en: "Math-heavy AI + Cybersecurity modules and verification of problem steps.",
@@ -1728,7 +1728,7 @@ const basePosts: BlogPost[] = [
       },
       description: {
         en: "Use the student productivity workspace and weekly roadmap to execute this CS plan without burnout.",
-        fr: "Utilisez l'espace productivité et la roadmap hebdomadaire pour exécuter ce plan CS sans burnout."
+        fr: "Utilisez l'espace productivité et la roadmap hebdomadaire pour exécuter ce plan CS sans épuisement."
       },
       links: [
         { label: { en: "Open student tools", fr: "Outils étudiants" }, href: "/resources", note: "Execution stack" },

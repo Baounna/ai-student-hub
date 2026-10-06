@@ -6,7 +6,7 @@ import { headers } from "next/headers";
 import { Newsletter } from "@/components/newsletter";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { isLocale, type Locale } from "@/i18n/config";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { jsonLd } from "@/lib/json-ld";
 import { ogImageUrl } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site-url";
@@ -35,6 +35,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     title: copy.seoTitle,
     description: copy.subtitle,
     openGraph: {
+      ...openGraphDefaults(params.lang),
       title: copy.title,
       description: copy.subtitle,
       url: `/${params.lang}/stages`,

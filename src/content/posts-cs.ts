@@ -713,10 +713,10 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 86,
     relatedSlugs: ["backend-apis-for-ml-apps", "llm-guardrails-and-evaluation-basics"],
     affiliateCallout: {
-      headline: { en: "Apply this checklist with deployment-ready tooling", fr: "Appliquez cette checklist avec des outils deployment-ready" },
+      headline: { en: "Apply this checklist with deployment-ready tooling", fr: "Appliquez cette checklist avec des outils prêts à déployer" },
       description: {
         en: "Use the resources stack for hosting, logging, and deployment controls with student-friendly setup.",
-        fr: "Utilisez la stack ressources pour hébergement, logs, et contrôles déploiement avec setup étudiant."
+        fr: "Utilisez la stack ressources pour hébergement, logs, et contrôles de déploiement avec une configuration étudiante."
       },
       links: [
         { label: { en: "Open security resources", fr: "Ressources sécurité" }, href: "/resources", note: "Tools" },
@@ -922,7 +922,7 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 82,
     relatedSlugs: ["linux-devops-workflow-for-students", "system-design-for-student-ai-projects"],
     affiliateCallout: {
-      headline: { en: "Need a stack to ship and observe faster?", fr: "Besoin d'une stack pour shipper et observer plus vite ?" },
+      headline: { en: "Need a stack to ship and observe faster?", fr: "Besoin d'une stack pour livrer et observer plus vite ?" },
       description: {
         en: "Use the recommended resources to deploy monitoring-ready services and compare hosting tradeoffs.",
         fr: "Utilisez les ressources recommandées pour déployer des services observables et comparer les compromis cloud."

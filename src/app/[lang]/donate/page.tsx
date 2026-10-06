@@ -110,7 +110,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
       ? [
           "Contenu pratique publié régulièrement pour étudiants IA/CS.",
           "Sources explicites et références visibles.",
-          "Approche execution-first adaptée aux budgets étudiants."
+          "Approche orientée exécution, adaptée aux budgets étudiants."
         ]
       : [
           "Practical content published consistently for AI + Cybersecurity students.",
@@ -223,7 +223,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
             </p>
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
               {[
-                { amount: "$3", label: fr ? "Café support" : "Coffee support" },
+                { amount: "$3", label: fr ? "Un café" : "Coffee support" },
                 { amount: "$10", label: fr ? "Soutien standard" : "Standard support" },
                 { amount: "$25", label: fr ? "Sponsor étudiant" : "Student sponsor" }
               ].map((tier) => (

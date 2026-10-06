@@ -184,7 +184,11 @@ export default async function LocalizedCategoryPage(props: { params: Promise<{ l
                     </Link>
                   ))}
                 </div>
-                <Link href={`/${locale}/blog/${post.slug}`} className="do-link mt-4 inline-block text-sm">
+                <Link
+                  href={`/${locale}/blog/${post.slug}`}
+                  aria-label={`${dict.blog.readPost}: ${post.title}`}
+                  className="do-link mt-4 inline-block text-sm"
+                >
                   {dict.blog.readPost}
                 </Link>
               </div>

@@ -462,7 +462,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 {locale === "fr" ? "Actualités" : "News"}
               </Link>
               <Link href={`/${locale}/compare`} className="btn-secondary text-center">
-                {locale === "fr" ? "Lab outils" : "Tools lab"}
+                {locale === "fr" ? "Labo outils" : "Tools lab"}
               </Link>
               <Link href={getGuideCtaHref(locale)} className="btn-primary text-center">
                 {getGuideCtaLabel(locale)}

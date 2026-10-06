@@ -110,7 +110,7 @@ export const newsBriefs: NewsBrief[] = [
         ]
       },
       fr: {
-        title: "Performances IA par thème (snapshot février 2026)",
+        title: "Performances IA par thème (instantané février 2026)",
         seoTitle: "Performances IA par thème (février 2026)",
         summary:
           "En février 2026, la page Gemini de Google DeepMind présentait un tableau benchmark comparant les modèles frontier sur raisonnement, QA scientifique, mathématiques, multimodal et tâches UI/écran. Cette page est mise à jour sur place : elle liste aujourd'hui une génération de modèles plus récente sur d'autres benchmarks, et le tableau de février n'y est plus vérifiable.",
@@ -170,7 +170,7 @@ export const newsBriefs: NewsBrief[] = [
         title: "Les workflows agentiques arrivent dans les projets IA étudiants",
         seoTitle: "Workflows agentiques dans les projets IA étudiants",
         summary:
-          "Les étudiants passent des démos mono-prompt vers des workflows multi-étapes avec planification, retrieval et appels d'outils.",
+          "Les étudiants passent des démos mono-prompt vers des workflows multi-étapes avec planification, recherche documentaire et appels d'outils.",
         studentImpact:
           "Le niveau attendu monte : les recruteurs veulent voir une logique système, pas seulement de bons prompts.",
         takeaways: [
@@ -281,7 +281,7 @@ export const newsBriefs: NewsBrief[] = [
         title: "L'évaluation open-source des LLM devient beaucoup plus mature",
         seoTitle: "L'évaluation open-source des LLM gagne en maturité",
         summary:
-          "Les équipes étudiantes disposent de meilleurs outils open-source pour tests de régression, contrôles de prompts et quality gates.",
+          "Les équipes étudiantes disposent de meilleurs outils open-source pour tests de régression, contrôles de prompts et points de validation.",
         studentImpact:
           "La fiabilité est devenue un signal fort pour les stages IA orientés produit.",
         takeaways: [

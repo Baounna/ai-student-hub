@@ -7,7 +7,7 @@ import { jsonLd } from "@/lib/json-ld";
 import { absoluteUrl } from "@/lib/site-url";
 import { Newsletter } from "@/components/newsletter";
 import { isLocale, locales, type Locale } from "@/i18n/config";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { ogImageUrl } from "@/lib/seo";
 import { countryLabel, isClosed, type Stage } from "@/content/stages";
 import {
@@ -61,6 +61,7 @@ export async function generateMetadata(props: {
     title,
     description,
     openGraph: {
+      ...openGraphDefaults(locale),
       title,
       description,
       url: `/${locale}${path}`,

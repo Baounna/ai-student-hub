@@ -12,7 +12,7 @@ import { ToolLogo } from "@/components/ui/tool-logo";
 import { getAutoTools, getAutoToolsUpdatedAt } from "@/content/auto-tools";
 import { getLocalizedComparisons, recommendedTools, studentStudyTools } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { sanitizeSearchQuery } from "@/lib/input";
 import { matchesAllTerms, searchTerms } from "@/lib/search";
 import { hasPaidLinks } from "@/config/site";
@@ -54,6 +54,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     description,
     keywords: getSeoKeywords(params.lang, "compare"),
     openGraph: {
+      ...openGraphDefaults(params.lang),
       title,
       description,
       url: `/${params.lang}/compare`,
