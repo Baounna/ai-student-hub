@@ -174,6 +174,9 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
     year: "numeric"
   });
   const openStagesCount = openStages.length;
+  // Counted, because two listings say on their own rows that they could not be
+  // verified -- "every link checked" was contradicted by the board below it.
+  const verifiedCount = openStages.filter((stage) => !stage.unverifiable).length;
   const featuredStages = openStages.slice(0, 5);
 
   const audiencePaths =
@@ -371,8 +374,8 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             </h2>
             <span className="text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? `${openStagesCount} offres · ${stageCountrySummary(locale)} · chaque lien vérifié`
-                : `${openStagesCount} openings · ${stageCountrySummary(locale)} · every link checked`}
+                ? `${openStagesCount} offres · ${stageCountrySummary(locale)} · ${verifiedCount} liens vérifiés`
+                : `${openStagesCount} openings · ${stageCountrySummary(locale)} · ${verifiedCount} links verified`}
             </span>
           </div>
           <ul className="divide-y divide-[color:var(--border)]">

@@ -215,7 +215,7 @@ export default async function LocalizedBlogPage(
 
             <div className="mt-6 flex flex-wrap gap-2">
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
-                {allPosts.length}+ {locale === "fr" ? "guides publiés" : "published guides"}
+                {allPosts.length} {locale === "fr" ? "guides publiés" : "published guides"}
               </span>
               <span className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--muted)]">
                 {locale === "fr" ? "Sources citées" : "Sources cited"}

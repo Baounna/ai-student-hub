@@ -7,6 +7,7 @@ import { categoryName } from "@/lib/categories";
 import { getAllCategories, getAllTags } from "@/content/posts";
 import { sanitizeTextInput } from "@/lib/input";
 import { siteConfig } from "@/config/site";
+import { countriesWithPages, countryPageTitle } from "@/content/stage-countries";
 import {
   careerGuidePageTitle,
   comparePageTitle,
@@ -81,6 +82,22 @@ function buildKnownTitles(): Set<string> {
       add(locale === "fr" ? `Articles #${tag}` : `#${tag} articles`);
     }
     add(stagesPageTitle(locale));
+    /*
+     * The country boards, derived rather than listed.
+     *
+     * Their twelve pages shipped with an og:image that 308s to the untitled
+     * brand card, because this allowlist knew the /stages hub title and not
+     * countryPageTitle(). That is the third time this file has been the reason
+     * a real page shared as a generic card -- page-titles.ts records the first
+     * two -- and the pattern is always the same: a route is added and its title
+     * is not.
+     *
+     * Derived from countriesWithPages(), never a list of twelve strings,
+     * because that set follows live listing counts: a country crossing
+     * COUNTRY_PAGE_MIN_LISTINGS gains a page, and a hardcoded list would start
+     * rotting the same day.
+     */
+    for (const code of countriesWithPages()) add(countryPageTitle(code, locale));
     add(comparePageTitle(locale));
     add(liveNewsPageTitle(locale));
     add(donatePageTitle(locale));

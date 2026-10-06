@@ -100,16 +100,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // briefs, and the auto-news feed it renders inline.
   const homeAt = newestOf([newestPostAt, newestBriefAt, autoNewsAt]);
 
-  const rootEntry: MetadataRoute.Sitemap = [
-    {
-      // "/" redirects by Accept-Language to /en or /fr, so it is the home page
-      // under another name and shares its date.
-      url: absoluteUrl("/"),
-      lastModified: asDate(homeAt),
-      changeFrequency: "daily",
-      priority: 1
-    }
-  ];
+  /*
+   * "/" is not listed, deliberately.
+   *
+   * It 307s to /en or /fr by Accept-Language, and a sitemap is a list of
+   * canonical 200 URLs. Both destinations are already in this file, so the
+   * entry added nothing and spent crawl budget arriving at a redirect -- it was
+   * the only non-200 of the 131. The earlier reasoning here, that "/" is the
+   * home page under another name, is true for a reader and not for a crawler.
+   */
+  const rootEntry: MetadataRoute.Sitemap = [];
 
   const localizedStaticPages = locales.flatMap((locale) =>
     [

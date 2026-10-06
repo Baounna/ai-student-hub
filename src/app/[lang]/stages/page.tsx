@@ -411,6 +411,10 @@ export default async function StagesPage(props: {
             <label htmlFor="stages-q" className="provenance mr-1">
               {copy.searchLabel}
             </label>
+            {/* The visible label must be contained in the accessible name, or
+                somebody using voice control cannot say the word they can see.
+                aria-label used to REPLACE the visible "Keyword" with "Role,
+                company or city", so "click Keyword" matched nothing. */}
             <input
               id="stages-q"
               type="search"
@@ -418,7 +422,7 @@ export default async function StagesPage(props: {
               defaultValue={rawQuery}
               maxLength={64}
               placeholder={copy.searchPlaceholder}
-              aria-label={copy.searchHint}
+              aria-label={`${copy.searchLabel} — ${copy.searchHint}`}
               className="tap-target min-w-0 flex-1 basis-48 rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1 text-xs text-[color:var(--text)] placeholder:text-[color:var(--muted)]"
             />
             <button type="submit" className="btn-secondary px-3 py-1.5 text-xs">

@@ -537,7 +537,16 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                 265px of it -- including the whole "Try" column -- sits past the
                 right edge, and the scroller's edge is flush with the card border
                 so nothing suggests it moves. */}
-            <section className="edge-fade-x mt-4 overflow-x-auto rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)]">
+            <section
+              // The table is min-w-[640px] inside a scroller. On a phone its
+              // first columns -- the tool name and what it is best for -- are
+              // off-screen and, without this, unreachable by keyboard: there
+              // is nothing focusable in them to tab to.
+              tabIndex={0}
+              role="group"
+              aria-label={locale === "fr" ? "Tableau comparatif, défilement horizontal" : "Comparison table, scrolls horizontally"}
+              className="edge-fade-x mt-4 overflow-x-auto rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)]"
+            >
               <table className="min-w-[640px] w-full text-left text-sm">
                 <thead className="bg-[color:var(--bg-soft)]/45 text-[color:var(--text)]">
                   <tr>

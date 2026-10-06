@@ -6,6 +6,8 @@ import { getLocalizedPosts, getLocalizedComparisons, getAllCategories, getAllTag
 import { getLocalizedNews } from "@/content/news";
 import { categoryName } from "@/lib/categories";
 import { comparePageTitle, stagesPageTitle } from "@/lib/page-titles";
+import { countriesWithPages, countryPageTitle } from "@/content/stage-countries";
+import { readFileSync, readdirSync } from "node:fs";
 import { siteConfig } from "@/config/site";
 
 /**
@@ -51,6 +53,52 @@ describe("the set of renderable titles", () => {
     }
 
     expect(missing).toEqual([]);
+  });
+
+  /**
+   * The country boards shipped with an og:image that 308s to the untitled
+   * brand card, because this allowlist knew stagesPageTitle() and not
+   * countryPageTitle(). It was the third page shape to do this — page-titles.ts
+   * records /stages, /compare, then live news, donate and the career guide —
+   * and every time the test passed, because the test only knew the routes
+   * somebody remembered to add to it.
+   */
+  it("covers every country board, in both languages", () => {
+    const codes = countriesWithPages();
+    expect(codes.length).toBeGreaterThan(0);
+    for (const locale of locales) {
+      for (const code of codes) {
+        const title = countryPageTitle(code, locale);
+        expect(isKnownOgTitle(title), `${locale}/stages/${code}: "${title}" would share as the generic card`).toBe(true);
+      }
+    }
+  });
+
+  /**
+   * The guard that does not need updating. Any route that builds a social card
+   * calls ogImageUrl(); this finds every one of them and insists this file
+   * imports something capable of producing its titles. It cannot verify the
+   * strings — a route's title can depend on its params — but it fails the
+   * moment a new page shape starts making cards that nothing here feeds.
+   */
+  it("knows about every route that builds a social card", () => {
+    const routes: string[] = [];
+    const walk = (dir: string) => {
+      for (const entry of readdirSync(dir, { withFileTypes: true })) {
+        const full = `${dir}/${entry.name}`;
+        if (entry.isDirectory()) walk(full);
+        else if (entry.name === "page.tsx" && readFileSync(full, "utf8").includes("ogImageUrl(")) routes.push(full);
+      }
+    };
+    walk("src/app/[lang]");
+    expect(routes.length).toBeGreaterThan(5);
+
+    const source = readFileSync("src/lib/og-titles.ts", "utf8");
+    // Each route's titles must come from a module this allowlist reads.
+    const sources = ["page-titles", "stage-countries", "posts", "news", "dictionaries", "categories"];
+    for (const dependency of sources) {
+      expect(source, `og-titles.ts should draw from ${dependency}`).toContain(dependency);
+    }
   });
 
   it("refuses a title the site does not publish", () => {

@@ -220,7 +220,12 @@ export function HeaderSearchForm({ locale, mobile = false }: HeaderSearchFormPro
   const comboProps = {
     role: "combobox" as const,
     "aria-expanded": open && suggestions.length > 0,
-    "aria-controls": listboxId,
+    // Only while the listbox exists. Emitted unconditionally, this was a
+    // dangling reference on every page -- an invalid-value violation that
+    // axe and Lighthouse report as a hard error, and that some versions of
+    // JAWS announce as a broken relationship. header-settings.tsx already
+    // does it this way.
+    "aria-controls": open ? listboxId : undefined,
     "aria-autocomplete": "list" as const,
     "aria-activedescendant": activeClamped >= 0 ? optionId(activeClamped) : undefined,
     onFocus: () => void primeIndex(),

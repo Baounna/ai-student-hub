@@ -6,7 +6,21 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
+        /*
+         * The two image routes are allowed back, ahead of the /api/ block.
+         *
+         * Every og:image on the site is /api/og and every Article image is
+         * /api/cover, so "Disallow: /api/" told Googlebot-Image, LinkedInBot,
+         * Twitterbot and facebookexternalhit not to fetch a single social or
+         * schema image on 131 pages. The images were fine; the rule forbade
+         * reading them. It also made the x-robots-tag those routes send
+         * unreadable, since a blocked URL is never requested.
+         *
+         * A longer Allow wins over a shorter Disallow for Google and Bing, so
+         * these two lines reopen exactly the image routes and leave the rest of
+         * /api/ -- the newsletter and tracking endpoints -- blocked.
+         */
+        allow: ["/", "/api/og", "/api/cover"],
         disallow: [
           "/api/",
           "/growth-sprint",

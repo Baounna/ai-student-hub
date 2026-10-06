@@ -209,7 +209,17 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
 
         <div className="border-t border-[color:var(--border)] bg-[color:var(--surface)]/35 md:hidden">
           <div className="mx-auto max-w-6xl px-4 py-2">
-            <div className="edge-fade-x flex snap-x snap-mandatory items-center gap-2 overflow-x-auto scroll-smooth pb-1">
+            <div
+            // tabindex + a name, because this strip scrolls further than it
+            // shows -- 103px in English, 130px in French, per the measured
+            // note in globals.css -- so "Tools" and "About" sit off-screen.
+            // A mouse user drags it; without this a keyboard or switch user
+            // has no way to scroll the region at all. The same treatment the
+            // .reading-prose pre blocks already have.
+            tabIndex={0}
+            role="group"
+            aria-label={locale === "fr" ? "Navigation du site" : "Site navigation"}
+            className="edge-fade-x flex snap-x snap-mandatory items-center gap-2 overflow-x-auto scroll-smooth pb-1">
               <NavTabLink
                 href={`/${locale}/news`}
                 label={dict.nav.news}
@@ -356,22 +366,22 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">{dict.footer.resources}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
-                <Link href={`/${locale}/news`} className="transition hover:opacity-70">
+                <Link href={`/${locale}/news`} className="transition hover:text-[color:var(--text-strong)]">
                   {dict.nav.news}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/blog`} className="transition hover:opacity-70">
+                <Link href={`/${locale}/blog`} className="transition hover:text-[color:var(--text-strong)]">
                   {dict.footer.tutorials}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/resources`} className="transition hover:opacity-70">
+                <Link href={`/${locale}/resources`} className="transition hover:text-[color:var(--text-strong)]">
                   {dict.footer.tools}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/compare`} className="transition hover:opacity-70">
+                <Link href={`/${locale}/compare`} className="transition hover:text-[color:var(--text-strong)]">
                   {toolsLabel}
                 </Link>
               </li>
@@ -380,13 +390,13 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                   href={leadMagnetHref}
                   event="lead_magnet_click"
                   meta={{ page: "footer_links", locale }}
-                  className="transition hover:opacity-70"
+                  className="transition hover:text-[color:var(--text-strong)]"
                 >
                   {dict.footer.stages}
                 </TrackableAnchor>
               </li>
               <li>
-                <a href={feedPath[locale]} className="transition hover:opacity-70">
+                <a href={feedPath[locale]} className="transition hover:text-[color:var(--text-strong)]">
                   RSS
                 </a>
               </li>
@@ -398,7 +408,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
               <li>
                 {/* break-all: the address is one unbreakable 190px token, so
                     in a narrow column it overran rather than wrapped. */}
-                <a href={`mailto:${siteConfig.contactEmail}`} className="break-all transition hover:opacity-70">
+                <a href={`mailto:${siteConfig.contactEmail}`} className="break-all transition hover:text-[color:var(--text-strong)]">
                   {siteConfig.contactEmail}
                 </a>
               </li>
@@ -408,29 +418,29 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                   href={siteConfig.linkedinUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition hover:opacity-70"
+                  className="transition hover:text-[color:var(--text-strong)]"
                 >
                   LinkedIn
                 </a>
               </li>
               ) : null}
               <li>
-                <Link href={`/${locale}/donate`} className="transition hover:opacity-70">
+                <Link href={`/${locale}/donate`} className="transition hover:text-[color:var(--text-strong)]">
                   {locale === "fr" ? "Faire un don" : "Donate"}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/affiliate-disclosure`} className="transition hover:opacity-70">
+                <Link href={`/${locale}/affiliate-disclosure`} className="transition hover:text-[color:var(--text-strong)]">
                   {locale === "fr" ? "Politique de liens" : "Link policy"}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/privacy`} className="transition hover:opacity-70">
+                <Link href={`/${locale}/privacy`} className="transition hover:text-[color:var(--text-strong)]">
                   {locale === "fr" ? "Confidentialité" : "Privacy"}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/terms`} className="transition hover:opacity-70">
+                <Link href={`/${locale}/terms`} className="transition hover:text-[color:var(--text-strong)]">
                   {locale === "fr" ? "Conditions" : "Terms"}
                 </Link>
               </li>

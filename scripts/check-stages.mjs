@@ -114,7 +114,27 @@ const GONE = [
   "cette offre est pourvue",
   "offre expir",
   "position has been filled",
-  "this job is no longer"
+  "this job is no longer",
+  /*
+   * The English auxiliary form, which this list never had.
+   *
+   * It carried the French verb forms ("poste a expir", "offre a expir") and the
+   * English noun form ("offre expir"), but nothing matching "<something> has
+   * expired" -- so Sopra Steria's "This vacancy has now expired" and
+   * SmartRecruiters' "This job has expired" both answered 200, matched nothing,
+   * and were re-stamped as healthy on 2026-10-05. Six listings, five of them
+   * French cybersecurity internships, were shown to students as verified and
+   * open while the employer's page said the vacancy was over.
+   *
+   * That is the third variant this list has missed, and the pattern each time
+   * is the same: a wording that exists in one language and not the mirrored
+   * form in the other. "has expired" is deliberately broad enough to cover both
+   * boards' phrasing and any "this role has expired" a third writes next.
+   */
+  "has expired",
+  "has now expired",
+  "vacancy has closed",
+  "this vacancy is closed"
 ];
 
 /**

@@ -1,6 +1,7 @@
 import { stagesPageTitle } from "@/lib/page-titles";
 import type { Locale } from "@/i18n/config";
 import { formatDuration, formatLevel } from "@/lib/stage-format";
+import { titleLanguage } from "@/lib/title-lang";
 import { countryLabel, isClosed, isRecentlyAdded, kindLabel, remoteLabel, type Stage } from "@/content/stages";
 
 /**
@@ -89,7 +90,7 @@ const COPY = {
       `No openings match that combination. All ${total} are one click away.`,
     methodTitle: "What \u201cchecked\u201d means here",
     methodBody:
-      "Every link is opened and its page read, not just pinged for a status code \u2014 three postings have answered HTTP 200 while saying, in the body, that they had closed. A listing is removed only after a person confirms it is gone; a refusal to serve us is treated as a fact about us, not about the job. Deadlines are shown only where the employer published one."
+      "Every link is opened and its page read, not just pinged for a status code. Postings regularly answer HTTP 200 while saying, in the body, that they have closed \u2014 eight did on the most recent run, and they were removed. A listing is removed only after a person confirms it is gone; a refusal to serve us is treated as a fact about us, not about the job. Deadlines are shown only where the employer published one."
   },
   fr: {
     title: stagesPageTitle("fr"),
@@ -136,7 +137,7 @@ const COPY = {
       `Aucune offre ne correspond à cette combinaison. Les ${total} autres sont à un clic.`,
     methodTitle: "Ce que « vérifié » veut dire ici",
     methodBody:
-      "Chaque lien est ouvert et sa page lue, pas seulement testée par code HTTP : trois offres ont répondu 200 tout en indiquant, dans le corps de la page, qu'elles étaient closes. Une offre n'est retirée qu'après vérification humaine ; un refus de nous répondre est traité comme un fait nous concernant, pas comme une fermeture. Les dates limites ne sont affichées que lorsque l'employeur en publie une."
+      "Chaque lien est ouvert et sa page lue, pas seulement testée par code HTTP : des offres répondent régulièrement 200 tout en indiquant, dans le corps de la page, qu'elles sont closes \u2014 huit lors de la dernière vérification, et elles ont été retirées. Une offre n'est retirée qu'après vérification humaine ; un refus de nous répondre est traité comme un fait nous concernant, pas comme une fermeture. Les dates limites ne sont affichées que lorsque l'employeur en publie une."
   }
 } as const;
 
@@ -165,6 +166,7 @@ export function StageRow({
   // board showed "3 MOIS MINIMUM" beside a translated "UNITED KINGDOM".
   const durationText = formatDuration(stage.duration, locale);
   const levelText = formatLevel(stage.level, locale);
+  const roleLang = titleLanguage(stage.role, locale);
   /*
    * A row, not a card.
    *
@@ -182,7 +184,27 @@ export function StageRow({
   return (
     <li key={stage.id} className={`py-4 ${closed ? "opacity-60" : ""}`}>
       <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-        <h2 className="text-base font-semibold text-[color:var(--text-strong)]">{stage.role}</h2>
+        {/*
+          * The title's own language, when it can be told.
+          *
+          * /en/stages serves <html lang="en"> over 62 French headings, so a
+          * screen reader voices "Stage - Administrateur sécurité systèmes
+          * d'information" through an English synthesiser -- phoneme soup, on
+          * more than half the rows of the page this site is built around --
+          * and a braille display picks the wrong contraction table. One
+          * attribute fixes it.
+          *
+          * titleLanguage() says nothing when a title is mixed or unclear,
+          * because a French voice reading English is worse than no marking at
+          * all. The aria-label on the apply link below still splices the
+          * foreign title into an English frame and cannot carry lang; it is
+          * left as it is because each one is unique, which is what makes a
+          * list of 102 links navigable. The heading is the one a reader
+          * actually browses by.
+          */}
+        <h2 className="text-base font-semibold text-[color:var(--text-strong)]" lang={roleLang}>
+          {stage.role}
+        </h2>
         <span className="text-sm text-[color:var(--muted)]">— {stage.company}</span>
         {closed ? (
           <span className="rounded-full border border-[color:var(--border)] px-2 py-0.5 text-[11px] uppercase tracking-wide text-[color:var(--muted)]">
@@ -240,10 +262,21 @@ export function StageRow({
           * imported the listing, and the employer's own publication date is not
           * in the data.
           */}
+        {/*
+          * Added AND checked, not one or the other.
+          *
+          * The recency signal replaced the verification date instead of sitting
+          * beside it, so the 31 newest rows showed no check date at all -- and
+          * the site promises on four pages that "every entry says when". The
+          * freshest third of the board was the part that did not, which is also
+          * where a dead Bosch listing sat reading "Recently added" with no date
+          * to question.
+          */}
+        {!closed && isRecentlyAdded(stage) ? (
+          <span className="text-xs font-semibold text-[color:var(--primary)]">{copy.recentBadge}</span>
+        ) : null}
         {stage.unverifiable ? (
           <span className="text-xs text-[color:var(--muted)]">{copy.notVerified}</span>
-        ) : !closed && isRecentlyAdded(stage) ? (
-          <span className="text-xs font-semibold text-[color:var(--primary)]">{copy.recentBadge}</span>
         ) : stage.checkedAt ? (
           <span className="text-xs text-[color:var(--muted)]">
             {copy.checked} {dateFmt.format(new Date(`${stage.checkedAt}T12:00:00Z`))}
