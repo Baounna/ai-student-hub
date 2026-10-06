@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-06T13:15:57.097Z",
+  "updatedAt": "2026-10-06T22:38:45.590Z",
   "items": [
     {
       "slug": "20261031-vercel-laya-decision-model-now-available-on-ai-gateway-free-thro-e15fec79",
@@ -23,42 +23,122 @@
       }
     },
     {
-      "slug": "20261006-supabase-logs-usage-based-pricing-f9fe585d",
+      "slug": "20261006-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/logs-usage-based-pricing",
-      "publishedAt": "2026-10-06T13:15:57.097Z",
-      "discoveredAt": "2026-10-06T13:15:57.097Z",
+      "href": "https://supabase.com/changelog/multigres-private-alpha",
+      "publishedAt": "2026-10-06T22:38:45.590Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
       "locales": {
         "en": {
-          "title": "Logs usage-based pricing",
-          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         },
         "fr": {
-          "title": "Logs usage-based pricing",
-          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         }
       }
     },
     {
-      "slug": "20261006-github-code-scanning-ai-scan-enablement-status-in-security-overv-eb3084bd",
+      "slug": "20261006-github-stacked-pull-requests-generally-available-9e014a3c",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-06-code-scanning-ai-scan-enablement-status-in-security-overview",
-      "publishedAt": "2026-10-06T10:23:38.000Z",
-      "discoveredAt": "2026-10-06T13:15:57.097Z",
+      "href": "https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available",
+      "publishedAt": "2026-10-06T20:16:41.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
       "locales": {
         "en": {
-          "title": "Code scanning AI Scan enablement status in security overview",
-          "summary": "Organization and enterprise administrators can now see AI Scan for pull requests enablement status in the security overview coverage view. The code scanning summary shows enabled and not enabled repository… The post Cod…"
+          "title": "Stacked pull requests generally available",
+          "summary": "GitHub stacked pull requests are now generally available. Break large changes into smaller, focused pull requests that you can review independently and merge together. Since the feature went into public… The post Stacke…"
         },
         "fr": {
-          "title": "Code scanning AI Scan enablement status in security overview",
-          "summary": "Organization and enterprise administrators can now see AI Scan for pull requests enablement status in the security overview coverage view. The code scanning summary shows enabled and not enabled repository… The post Cod…"
+          "title": "Stacked pull requests generally available",
+          "summary": "GitHub stacked pull requests are now generally available. Break large changes into smaller, focused pull requests that you can review independently and merge together. Since the feature went into public… The post Stacke…"
+        }
+      }
+    },
+    {
+      "slug": "20261006-nvidia-how-doca-gpunetio-unifies-gpu-initiated-networking-across-11769ab4",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/doca-gpunetio-gda-ki-unified-gpu-networking/",
+      "publishedAt": "2026-10-06T19:07:06.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "locales": {
+        "en": {
+          "title": "How DOCA GPUNetIO Unifies GPU-Initiated Networking Across the NVIDIA Software Stack",
+          "summary": "GPU applications increasingly need networking and data movement to behave like first-class GPU-controlled operations rather than host-driven services. When the..."
+        },
+        "fr": {
+          "title": "How DOCA GPUNetIO Unifies GPU-Initiated Networking Across the NVIDIA Software Stack",
+          "summary": "GPU applications increasingly need networking and data movement to behave like first-class GPU-controlled operations rather than host-driven services. When the..."
+        }
+      }
+    },
+    {
+      "slug": "20261006-kubernetes-the-shift-to-cgroup-v2-in-kubernetes-what-you-need-to-fc4272a4",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/",
+      "publishedAt": "2026-10-06T18:00:00.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "locales": {
+        "en": {
+          "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know",
+          "summary": "In Linux, cgroups (control groups) are a kernel feature used for managing system resources. Kubernetes uses cgroups to allocate resources like CPU and memory to containers, ensuring that applications run smoothly withou…"
+        },
+        "fr": {
+          "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know",
+          "summary": "In Linux, cgroups (control groups) are a kernel feature used for managing system resources. Kubernetes uses cgroups to allocate resources like CPU and memory to containers, ensuring that applications run smoothly withou…"
+        }
+      }
+    },
+    {
+      "slug": "20261006-cloudflare-the-keys-to-the-internet-change-on-october-11-are-you-1424f8a7",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+      "publishedAt": "2026-10-06T17:50:11.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "locales": {
+        "en": {
+          "title": "The keys to the Internet change on October 11. Are you ready?",
+          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollove…"
+        },
+        "fr": {
+          "title": "The keys to the Internet change on October 11. Are you ready?",
+          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollove…"
+        }
+      }
+    },
+    {
+      "slug": "20261006-openai-platform-atlassian-and-openai-expand-partnership-to-turn--60ef2af3",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/atlassian-partnership",
+      "publishedAt": "2026-10-06T16:00:00.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "locales": {
+        "en": {
+          "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+          "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work."
+        },
+        "fr": {
+          "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+          "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work."
         }
       }
     },
@@ -83,82 +163,22 @@
       }
     },
     {
-      "slug": "20261005-nvidia-nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-front-3ef1c6a0",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/",
-      "publishedAt": "2026-10-05T21:10:42.000Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents",
-          "summary": "A frontier language model is only one component of an AI agent. The surrounding agent system—often called a harness—determines how the model receives..."
-        },
-        "fr": {
-          "title": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents",
-          "summary": "A frontier language model is only one component of an AI agent. The surrounding agent system—often called a harness—determines how the model receives..."
-        }
-      }
-    },
-    {
-      "slug": "20261005-kubernetes-scaling-kubernetes-workloads-with-node-swap-5af07d1e",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/",
-      "publishedAt": "2026-10-05T18:00:00.000Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
-      "locales": {
-        "en": {
-          "title": "Scaling Kubernetes Workloads with Node Swap",
-          "summary": "Memory is often the first hard limit a Kubernetes cluster hits. Nodes run out of RAM long before they run out of CPU, and the new wave of agentic AI workloads makes this worse. These workloads demand large memory footpr…"
-        },
-        "fr": {
-          "title": "Scaling Kubernetes Workloads with Node Swap",
-          "summary": "Memory is often the first hard limit a Kubernetes cluster hits. Nodes run out of RAM long before they run out of CPU, and the new wave of agentic AI workloads makes this worse. These workloads demand large memory footpr…"
-        }
-      }
-    },
-    {
-      "slug": "20261005-openai-platform-our-approach-to-eu-text-provenance-rules-78ad5381",
-      "toolName": "OpenAI Platform",
+      "slug": "20261006-anthropic-platform-oct-6-2026-announcements-expanding-the-cyber--a22a6ca9",
+      "toolName": "Anthropic Platform",
       "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/eu-text-provenance",
-      "publishedAt": "2026-10-05T15:00:00.000Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/cyber-verification-program",
+      "publishedAt": "2026-10-06T00:00:00.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
       "locales": {
         "en": {
-          "title": "Our approach to EU text provenance rules",
-          "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
+          "title": "Oct 6, 2026 Announcements Expanding the Cyber Verification Program",
+          "summary": "Title"
         },
         "fr": {
-          "title": "Our approach to EU text provenance rules",
-          "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
-        }
-      }
-    },
-    {
-      "slug": "20261005-cloudflare-everything-we-launched-during-birthday-week-2026-0536bfa8",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
-      "publishedAt": "2026-10-05T13:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
-      "locales": {
-        "en": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
-        },
-        "fr": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+          "title": "Oct 6, 2026 Announcements Expanding the Cyber Verification Program",
+          "summary": "Title"
         }
       }
     },
@@ -239,26 +259,6 @@
         "fr": {
           "title": "W3C Newsletter - September 2026",
           "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
-        }
-      }
-    },
-    {
-      "slug": "20261002-anthropic-platform-oct-2-2026-announcements-anthropic-invests-10-9f2dde65",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/claude-frontier-academy",
-      "publishedAt": "2026-10-02T00:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
-      "locales": {
-        "en": {
-          "title": "Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
-          "summary": "Title"
-        },
-        "fr": {
-          "title": "Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
-          "summary": "Title"
         }
       }
     },
@@ -383,62 +383,142 @@
       }
     },
     {
-      "slug": "20261006-vercel-speed-insights-deprecates-first-input-delay-on-november-1-8a252a6f",
+      "slug": "20261006-vercel-ai-gateway-adds-confidence-based-decision-fallbacks-ai-ga-61b4e138",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/speed-insights-deprecates-first-input-delay-on-november-first",
-      "publishedAt": "2026-10-06T13:15:57.097Z",
-      "discoveredAt": "2026-10-06T13:15:57.097Z",
+      "href": "https://vercel.com/changelog/confidence-based-decision-fallbacks",
+      "publishedAt": "2026-10-06T22:38:45.590Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
       "locales": {
         "en": {
-          "title": "Speed Insights deprecates First Input Delay on November 1st Speed Insights is deprecating First Input Delay on November 1, with no action required. Damien Simonin Feugas, Vincent Derks, and 1 other",
-          "summary": "1 October 1 Oct"
+          "title": "AI Gateway adds confidence-based decision fallbacks AI Gateway can now escalate a decision to a fallback model when the primary model's answer trips a confidence condition you set. Rohan Taneja Software Engineer, AI Gateway",
+          "summary": "6 October 6 Oct"
         },
         "fr": {
-          "title": "Speed Insights deprecates First Input Delay on November 1st Speed Insights is deprecating First Input Delay on November 1, with no action required. Damien Simonin Feugas, Vincent Derks, and 1 other",
-          "summary": "1 October 1 Oct"
+          "title": "AI Gateway adds confidence-based decision fallbacks AI Gateway can now escalate a decision to a fallback model when the primary model's answer trips a confidence condition you set. Rohan Taneja Software Engineer, AI Gateway",
+          "summary": "6 October 6 Oct"
         }
       }
     },
     {
-      "slug": "20261006-supabase-health-check-advisors-ff04ed6f",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
+      "slug": "20261006-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/50577-health-check-advisors",
-      "publishedAt": "2026-10-06T13:15:57.097Z",
-      "discoveredAt": "2026-10-06T13:15:57.097Z",
+      "href": "https://supabase.com/changelog/orioledb-public-beta",
+      "publishedAt": "2026-10-06T22:38:45.590Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
       "locales": {
         "en": {
-          "title": "Health Check Advisors",
-          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
+          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
+          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
         },
         "fr": {
-          "title": "Health Check Advisors",
-          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
+          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
+          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
         }
       }
     },
     {
-      "slug": "20261005-supabase-secret-scanning-adds-detectors-for-lovable-supabase-and-33658ec8",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
+      "slug": "20261006-github-code-scanning-ai-scan-enablement-status-in-security-overv-eb3084bd",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-05-secret-scanning-adds-detectors-for-lovable-supabase-and-more",
-      "publishedAt": "2026-10-05T22:42:14.000Z",
+      "href": "https://github.blog/changelog/2026-10-06-code-scanning-ai-scan-enablement-status-in-security-overview",
+      "publishedAt": "2026-10-06T10:23:38.000Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
+      "locales": {
+        "en": {
+          "title": "Code scanning AI Scan enablement status in security overview",
+          "summary": "Organization and enterprise administrators can now see AI Scan for pull requests enablement status in the security overview coverage view. The code scanning summary shows enabled and not enabled repository… The post Cod…"
+        },
+        "fr": {
+          "title": "Code scanning AI Scan enablement status in security overview",
+          "summary": "Organization and enterprise administrators can now see AI Scan for pull requests enablement status in the security overview coverage view. The code scanning summary shows enabled and not enabled repository… The post Cod…"
+        }
+      }
+    },
+    {
+      "slug": "20261006-kubernetes-aicr-v10-open-stable-and-verifiable-gpu-cluster-confi-d5ad2c1a",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/aicr-v1-0-open-stable-and-verifiable-gpu-cluster-configuration/",
+      "publishedAt": "2026-10-06T16:13:50.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "locales": {
+        "en": {
+          "title": "AICR v1.0: Open, stable, and verifiable GPU cluster configuration",
+          "summary": "GPU-accelerated Kubernetes clusters depend on compatible versions across dozens of components, each on its own release cycle: host kernels, GPU drivers,..."
+        },
+        "fr": {
+          "title": "AICR v1.0: Open, stable, and verifiable GPU cluster configuration",
+          "summary": "GPU-accelerated Kubernetes clusters depend on compatible versions across dozens of components, each on its own release cycle: host kernels, GPU drivers,..."
+        }
+      }
+    },
+    {
+      "slug": "20261005-kubernetes-scaling-kubernetes-workloads-with-node-swap-5af07d1e",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/",
+      "publishedAt": "2026-10-05T18:00:00.000Z",
       "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "Secret scanning adds detectors for Lovable, Supabase, and more",
-          "summary": "Secret scanning now detects new secret types from Lovable Labs, Pydantic Services Inc., and Supabase. New secret scanning partner The following provider joined the secret scanning partnership program. When one… The post…"
+          "title": "Scaling Kubernetes Workloads with Node Swap",
+          "summary": "Memory is often the first hard limit a Kubernetes cluster hits. Nodes run out of RAM long before they run out of CPU, and the new wave of agentic AI workloads makes this worse. These workloads demand large memory footpr…"
         },
         "fr": {
-          "title": "Secret scanning adds detectors for Lovable, Supabase, and more",
-          "summary": "Secret scanning now detects new secret types from Lovable Labs, Pydantic Services Inc., and Supabase. New secret scanning partner The following provider joined the secret scanning partnership program. When one… The post…"
+          "title": "Scaling Kubernetes Workloads with Node Swap",
+          "summary": "Memory is often the first hard limit a Kubernetes cluster hits. Nodes run out of RAM long before they run out of CPU, and the new wave of agentic AI workloads makes this worse. These workloads demand large memory footpr…"
+        }
+      }
+    },
+    {
+      "slug": "20261005-cloudflare-everything-we-launched-during-birthday-week-2026-0536bfa8",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:16.644Z",
+      "locales": {
+        "en": {
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+        },
+        "fr": {
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+        }
+      }
+    },
+    {
+      "slug": "20261006-openai-platform-advancing-computer-use-with-ironclad-9964af80",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "publishedAt": "2026-10-06T10:00:00.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "locales": {
+        "en": {
+          "title": "Advancing computer use with Ironclad",
+          "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work."
+        },
+        "fr": {
+          "title": "Advancing computer use with Ironclad",
+          "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work."
         }
       }
     },
@@ -463,82 +543,22 @@
       }
     },
     {
-      "slug": "20261001-nvidia-how-nvidia-groq-3-lpx-deterministic-execution-drives-powe-ce9893f8",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
-      "publishedAt": "2026-10-01T18:31:30.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "slug": "20261002-anthropic-platform-oct-2-2026-announcements-anthropic-invests-10-9f2dde65",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/claude-frontier-academy",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:36.141Z",
       "locales": {
         "en": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+          "title": "Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+          "summary": "Title"
         },
         "fr": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
-        }
-      }
-    },
-    {
-      "slug": "20260922-kubernetes-spotlight-on-sig-apps-bdc88dc4",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
-      "publishedAt": "2026-09-22T18:00:00.000Z",
-      "discoveredAt": "2026-09-23T11:31:44.061Z",
-      "locales": {
-        "en": {
-          "title": "Spotlight on SIG Apps",
-          "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batc…"
-        },
-        "fr": {
-          "title": "Spotlight on SIG Apps",
-          "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batc…"
-        }
-      }
-    },
-    {
-      "slug": "20261005-chatgpt-building-advertising-for-the-way-people-use-ai-3cbec84d",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
-      "publishedAt": "2026-10-05T10:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
-      "locales": {
-        "en": {
-          "title": "Building advertising for the way people use AI",
-          "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
-        },
-        "fr": {
-          "title": "Building advertising for the way people use AI",
-          "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
-        }
-      }
-    },
-    {
-      "slug": "20261005-cloudflare-one-year-later-the-power-of-1111-interns-523bb8b1",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/one-year-later-1111-interns/",
-      "publishedAt": "2026-10-05T13:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
-      "locales": {
-        "en": {
-          "title": "One year later: the power of 1.1.1.1 interns",
-          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns pro…"
-        },
-        "fr": {
-          "title": "One year later: the power of 1.1.1.1 interns",
-          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns pro…"
+          "title": "Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+          "summary": "Title"
         }
       }
     },
@@ -619,26 +639,6 @@
         "fr": {
           "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
           "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-claude-oct-1-2026-announcements-barclays-scales-claude-to-upgrad-91b1f786",
-      "toolName": "Claude",
-      "category": "AI Assistant",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/barclays-scales-claude",
-      "publishedAt": "2026-10-01T00:00:00.000Z",
-      "discoveredAt": "2026-10-01T13:08:41.196Z",
-      "locales": {
-        "en": {
-          "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
-          "summary": "Title"
-        },
-        "fr": {
-          "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
-          "summary": "Title"
         }
       }
     },
@@ -763,62 +763,142 @@
       }
     },
     {
-      "slug": "20261006-vercel-edge-requests-are-now-called-cdn-requests-cdn-requests-is-1f5e0e81",
+      "slug": "20261006-vercel-nano-banana-21-now-available-on-ai-gateway-generate-and-e-8b62db98",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/edge-requests-are-now-called-cdn-requests",
-      "publishedAt": "2026-10-06T13:15:57.097Z",
-      "discoveredAt": "2026-10-06T13:15:57.097Z",
+      "href": "https://vercel.com/changelog/nano-banana-2-1-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-06T22:38:45.590Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
       "locales": {
         "en": {
-          "title": "Edge Requests are now called CDN Requests CDN Requests is the new name for the usage metric previously called Edge Requests. Pricing, limits, and how usage is measured are unchanged. Steren Member of the Technical Staff",
-          "summary": "+2 Josh Lipman, Jerilyn Zheng, and 2 others"
+          "title": "Nano Banana 2.1 now available on AI Gateway Generate and edit images with Nano Banana 2.1 through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "Rohan Taneja Software Engineer, AI Gateway"
         },
         "fr": {
-          "title": "Edge Requests are now called CDN Requests CDN Requests is the new name for the usage metric previously called Edge Requests. Pricing, limits, and how usage is measured are unchanged. Steren Member of the Technical Staff",
-          "summary": "+2 Josh Lipman, Jerilyn Zheng, and 2 others"
+          "title": "Nano Banana 2.1 now available on AI Gateway Generate and edit images with Nano Banana 2.1 through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "Rohan Taneja Software Engineer, AI Gateway"
         }
       }
     },
     {
-      "slug": "20261006-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
+      "slug": "20261006-supabase-supabase-middleware-10-c639ad09",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
-      "publishedAt": "2026-10-06T13:15:57.097Z",
-      "discoveredAt": "2026-10-06T13:15:57.097Z",
+      "href": "https://supabase.com/changelog/supabase-middleware-1-0",
+      "publishedAt": "2026-10-06T22:38:45.590Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
       "locales": {
         "en": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
         },
         "fr": {
-          "title": "Fixed a panic in project metrics collection that could drop metrics",
-          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
         }
       }
     },
     {
-      "slug": "20261002-github-stateless-github-app-installation-tokens-rolled-out-33bc6bdb",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
+      "slug": "20261005-supabase-secret-scanning-adds-detectors-for-lovable-supabase-and-33658ec8",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
-      "publishedAt": "2026-10-02T22:18:23.000Z",
-      "discoveredAt": "2026-10-03T11:36:52.424Z",
+      "href": "https://github.blog/changelog/2026-10-05-secret-scanning-adds-detectors-for-lovable-supabase-and-more",
+      "publishedAt": "2026-10-05T22:42:14.000Z",
+      "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "Stateless GitHub App installation tokens rolled out",
-          "summary": "The staged rollout of the stateless GitHub App installation token format, which began on April 27, 2026, is complete. By default, all newly minted GitHub App installation tokens will be… The post Stateless GitHub App in…"
+          "title": "Secret scanning adds detectors for Lovable, Supabase, and more",
+          "summary": "Secret scanning now detects new secret types from Lovable Labs, Pydantic Services Inc., and Supabase. New secret scanning partner The following provider joined the secret scanning partnership program. When one… The post…"
         },
         "fr": {
-          "title": "Stateless GitHub App installation tokens rolled out",
-          "summary": "The staged rollout of the stateless GitHub App installation token format, which began on April 27, 2026, is complete. By default, all newly minted GitHub App installation tokens will be… The post Stateless GitHub App in…"
+          "title": "Secret scanning adds detectors for Lovable, Supabase, and more",
+          "summary": "Secret scanning now detects new secret types from Lovable Labs, Pydantic Services Inc., and Supabase. New secret scanning partner The following provider joined the secret scanning partnership program. When one… The post…"
+        }
+      }
+    },
+    {
+      "slug": "20261005-nvidia-control-how-your-gpu-shares-work-with-green-contexts-d42af1fe",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/control-how-your-gpu-shares-work-with-green-contexts/",
+      "publishedAt": "2026-10-05T21:44:07.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "locales": {
+        "en": {
+          "title": "Control How Your GPU Shares Work with Green Contexts",
+          "summary": "GPU applications increasingly consist of multiple independent components running at the same time within a single process: a latency-sensitive operator..."
+        },
+        "fr": {
+          "title": "Control How Your GPU Shares Work with Green Contexts",
+          "summary": "GPU applications increasingly consist of multiple independent components running at the same time within a single process: a latency-sensitive operator..."
+        }
+      }
+    },
+    {
+      "slug": "20260922-kubernetes-spotlight-on-sig-apps-bdc88dc4",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
+      "publishedAt": "2026-09-22T18:00:00.000Z",
+      "discoveredAt": "2026-09-23T11:31:44.061Z",
+      "locales": {
+        "en": {
+          "title": "Spotlight on SIG Apps",
+          "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batc…"
+        },
+        "fr": {
+          "title": "Spotlight on SIG Apps",
+          "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batc…"
+        }
+      }
+    },
+    {
+      "slug": "20261005-cloudflare-one-year-later-the-power-of-1111-interns-523bb8b1",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/one-year-later-1111-interns/",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:16.644Z",
+      "locales": {
+        "en": {
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns pro…"
+        },
+        "fr": {
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns pro…"
+        }
+      }
+    },
+    {
+      "slug": "20261005-openai-platform-our-approach-to-eu-text-provenance-rules-78ad5381",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/eu-text-provenance",
+      "publishedAt": "2026-10-05T15:00:00.000Z",
+      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "locales": {
+        "en": {
+          "title": "Our approach to EU text provenance rules",
+          "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
+        },
+        "fr": {
+          "title": "Our approach to EU text provenance rules",
+          "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
         }
       }
     },
@@ -843,82 +923,22 @@
       }
     },
     {
-      "slug": "20261001-nvidia-dense-vs-moe-models-active-parameters-throughput-and-when-3f75c866",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
-      "publishedAt": "2026-10-01T18:31:29.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "slug": "20261001-claude-oct-1-2026-announcements-barclays-scales-claude-to-upgrad-91b1f786",
+      "toolName": "Claude",
+      "category": "AI Assistant",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/barclays-scales-claude",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:41.196Z",
       "locales": {
         "en": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+          "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
+          "summary": "Title"
         },
         "fr": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
-        }
-      }
-    },
-    {
-      "slug": "20260921-kubernetes-kubernetes-v137-tracking-when-a-persistentvolumeclaim-a668dc12",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
-      "publishedAt": "2026-09-21T18:30:00.000Z",
-      "discoveredAt": "2026-09-21T21:57:14.113Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
-          "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
-          "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC…"
-        }
-      }
-    },
-    {
-      "slug": "20261002-openai-platform-a-model-guide-for-the-gpt-6-family-8e206c4d",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/practical-guide-building-gpt-6",
-      "publishedAt": "2026-10-02T16:15:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
-      "locales": {
-        "en": {
-          "title": "A model guide for the GPT-6 family",
-          "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
-        },
-        "fr": {
-          "title": "A model guide for the GPT-6 family",
-          "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
-        }
-      }
-    },
-    {
-      "slug": "20261002-cloudflare-8-major-updates-to-cloudflare-observability-423bae1f",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/one-observability-platform/",
-      "publishedAt": "2026-10-02T18:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
-      "locales": {
-        "en": {
-          "title": "8 major updates to Cloudflare Observability",
-          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
-        },
-        "fr": {
-          "title": "8 major updates to Cloudflare Observability",
-          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
+          "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
+          "summary": "Title"
         }
       }
     },
@@ -999,26 +1019,6 @@
         "fr": {
           "title": "Crafting WCAG 3 for more accessible user experiences",
           "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
-        }
-      }
-    },
-    {
-      "slug": "20260923-claude-sep-23-2026-science-claude-discovers-a-novel-enzyme-syste-f82afb64",
-      "toolName": "Claude",
-      "category": "AI Assistant",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "publishedAt": "2026-09-23T00:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
-      "locales": {
-        "en": {
-          "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
-          "summary": "Title"
-        },
-        "fr": {
-          "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
-          "summary": "Title"
         }
       }
     },
@@ -1143,62 +1143,142 @@
       }
     },
     {
-      "slug": "20261006-vercel-voyage-rerank-3-and-rerank-3-lite-are-now-available-on-ai-52b4873f",
+      "slug": "20261006-vercel-mistral-large-4-now-available-on-ai-gateway-call-mistral--e262ace0",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/voyage-rerank-3-and-rerank-3-lite-are-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-06T00:01:44.852Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://vercel.com/changelog/mistral-large-4-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-06T22:38:45.590Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
       "locales": {
         "en": {
-          "title": "Voyage Rerank 3 and Rerank 3 Lite are now available on AI Gateway Use Voyage AI by MongoDB's Rerank 3 and Rerank 3 Lite through Vercel AI Gateway with one API key, unified billing, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "Steren Member of the Technical Staff"
+          "title": "Mistral Large 4 now available on AI Gateway Call Mistral Large 4 through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         },
         "fr": {
-          "title": "Voyage Rerank 3 and Rerank 3 Lite are now available on AI Gateway Use Voyage AI by MongoDB's Rerank 3 and Rerank 3 Lite through Vercel AI Gateway with one API key, unified billing, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "Steren Member of the Technical Staff"
+          "title": "Mistral Large 4 now available on AI Gateway Call Mistral Large 4 through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         }
       }
     },
     {
-      "slug": "20261006-postgresql-postgresql-1519-1711-minor-release-action-may-be-requ-00cf1171",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261006-supabase-logs-usage-based-pricing-f9fe585d",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/postgres-15-19-17-11-breaking-changes",
-      "publishedAt": "2026-10-06T00:01:44.852Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://supabase.com/changelog/logs-usage-based-pricing",
+      "publishedAt": "2026-10-06T13:15:57.097Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
-          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
         },
         "fr": {
-          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
-          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
         }
       }
     },
     {
-      "slug": "20261002-github-copilot-copilot-code-review-api-support-and-new-default-e-c50f0986",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
+      "slug": "20261002-github-stateless-github-app-installation-tokens-rolled-out-33bc6bdb",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
-      "publishedAt": "2026-10-02T19:13:50.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
+      "href": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out",
+      "publishedAt": "2026-10-02T22:18:23.000Z",
+      "discoveredAt": "2026-10-03T11:36:52.424Z",
       "locales": {
         "en": {
-          "title": "Copilot code review: API support and new default effort level",
-          "summary": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default… The post Copilot code review: API support and new de…"
+          "title": "Stateless GitHub App installation tokens rolled out",
+          "summary": "The staged rollout of the stateless GitHub App installation token format, which began on April 27, 2026, is complete. By default, all newly minted GitHub App installation tokens will be… The post Stateless GitHub App in…"
         },
         "fr": {
-          "title": "Copilot code review: API support and new default effort level",
-          "summary": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default… The post Copilot code review: API support and new de…"
+          "title": "Stateless GitHub App installation tokens rolled out",
+          "summary": "The staged rollout of the stateless GitHub App installation token format, which began on April 27, 2026, is complete. By default, all newly minted GitHub App installation tokens will be… The post Stateless GitHub App in…"
+        }
+      }
+    },
+    {
+      "slug": "20261005-nvidia-nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-front-3ef1c6a0",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/",
+      "publishedAt": "2026-10-05T21:10:42.000Z",
+      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents",
+          "summary": "A frontier language model is only one component of an AI agent. The surrounding agent system—often called a harness—determines how the model receives..."
+        },
+        "fr": {
+          "title": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents",
+          "summary": "A frontier language model is only one component of an AI agent. The surrounding agent system—often called a harness—determines how the model receives..."
+        }
+      }
+    },
+    {
+      "slug": "20260921-kubernetes-kubernetes-v137-tracking-when-a-persistentvolumeclaim-a668dc12",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
+      "publishedAt": "2026-09-21T18:30:00.000Z",
+      "discoveredAt": "2026-09-21T21:57:14.113Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
+          "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
+          "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC…"
+        }
+      }
+    },
+    {
+      "slug": "20261002-cloudflare-8-major-updates-to-cloudflare-observability-423bae1f",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/one-observability-platform/",
+      "publishedAt": "2026-10-02T18:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:16.644Z",
+      "locales": {
+        "en": {
+          "title": "8 major updates to Cloudflare Observability",
+          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
+        },
+        "fr": {
+          "title": "8 major updates to Cloudflare Observability",
+          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
+        }
+      }
+    },
+    {
+      "slug": "20261005-chatgpt-building-advertising-for-the-way-people-use-ai-3cbec84d",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "publishedAt": "2026-10-05T10:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:16.644Z",
+      "locales": {
+        "en": {
+          "title": "Building advertising for the way people use AI",
+          "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
+        },
+        "fr": {
+          "title": "Building advertising for the way people use AI",
+          "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
         }
       }
     },
@@ -1223,82 +1303,22 @@
       }
     },
     {
-      "slug": "20261001-nvidia-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-a-6510d815",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
-      "publishedAt": "2026-10-01T18:31:29.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "slug": "20260923-claude-sep-23-2026-science-claude-discovers-a-novel-enzyme-syste-f82afb64",
+      "toolName": "Claude",
+      "category": "AI Assistant",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:36.478Z",
       "locales": {
         "en": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
+          "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "summary": "Title"
         },
         "fr": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
-        }
-      }
-    },
-    {
-      "slug": "20260916-kubernetes-kubernetes-v137-hardening-container-storage-with-bind-6cde82bb",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
-      "publishedAt": "2026-09-16T18:30:00.000Z",
-      "discoveredAt": "2026-09-17T11:38:27.585Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
-          "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for examp…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
-          "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for examp…"
-        }
-      }
-    },
-    {
-      "slug": "20261002-openai-platform-chatham-scales-its-capital-markets-expertise-wit-a97398f7",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/chatham-financial",
-      "publishedAt": "2026-10-02T00:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
-      "locales": {
-        "en": {
-          "title": "Chatham scales its capital markets expertise with OpenAI",
-          "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
-        },
-        "fr": {
-          "title": "Chatham scales its capital markets expertise with OpenAI",
-          "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
-        }
-      }
-    },
-    {
-      "slug": "20261002-cloudflare-streamline-custom-video-pipelines-with-cloudflare-str-2464ff1b",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/streamline/",
-      "publishedAt": "2026-10-02T16:13:45.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
-      "locales": {
-        "en": {
-          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
-          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
-        },
-        "fr": {
-          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
-          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
+          "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "summary": "Title"
         }
       }
     },
@@ -1379,26 +1399,6 @@
         "fr": {
           "title": "2026 Climate Weeks: W3C and Web Sustainability",
           "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
-        }
-      }
-    },
-    {
-      "slug": "20260918-anthropic-platform-sep-18-2026-announcements-partnering-with-acc-47b87cc2",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-      "publishedAt": "2026-09-18T00:00:00.000Z",
-      "discoveredAt": "2026-09-18T20:52:51.777Z",
-      "locales": {
-        "en": {
-          "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
-          "summary": "Title"
-        },
-        "fr": {
-          "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
-          "summary": "Title"
         }
       }
     },
@@ -1523,62 +1523,142 @@
       }
     },
     {
-      "slug": "20261006-vercel-vercel-sandbox-now-supports-secure-compute-connect-vercel-130e86a3",
+      "slug": "20261006-vercel-vercel-agent-now-installs-private-packages-from-npm-and-c-1a03c303",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-sandbox-now-supports-secure-compute",
-      "publishedAt": "2026-10-06T00:01:44.852Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://vercel.com/changelog/vercel-agent-now-installs-private-packages-from-npm-and-custom-registries",
+      "publishedAt": "2026-10-06T22:38:45.590Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
       "locales": {
         "en": {
-          "title": "Vercel Sandbox now supports Secure Compute Connect Vercel Sandboxes to a dedicated Secure Compute network. +2 Karim Hasebou, Brandon Tuttle, and 2 others",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Vercel Agent now installs private packages from npm and custom registries Vercel Agent installs private npm packages using your team's shared environment variables. Add NPM_TOKEN or NPM_RC to authenticate with private and custom registries. Matan Kushner, Tom Dale, and 1 other",
+          "summary": "30 September 30 Sep"
         },
         "fr": {
-          "title": "Vercel Sandbox now supports Secure Compute Connect Vercel Sandboxes to a dedicated Secure Compute network. +2 Karim Hasebou, Brandon Tuttle, and 2 others",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Vercel Agent now installs private packages from npm and custom registries Vercel Agent installs private npm packages using your team's shared environment variables. Add NPM_TOKEN or NPM_RC to authenticate with private and custom registries. Matan Kushner, Tom Dale, and 1 other",
+          "summary": "30 September 30 Sep"
         }
       }
     },
     {
-      "slug": "20261006-supabase-database-replication-is-now-pipelines-43d4a2f0",
+      "slug": "20261006-supabase-health-check-advisors-ff04ed6f",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/database-replication-renamed-pipelines",
-      "publishedAt": "2026-10-06T00:01:44.852Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://supabase.com/changelog/50577-health-check-advisors",
+      "publishedAt": "2026-10-06T13:15:57.097Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
       "locales": {
         "en": {
-          "title": "Database Replication is now Pipelines",
-          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
+          "title": "Health Check Advisors",
+          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
         },
         "fr": {
-          "title": "Database Replication is now Pipelines",
-          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
+          "title": "Health Check Advisors",
+          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
         }
       }
     },
     {
-      "slug": "20261002-github-unvalidated-npm-trusted-publishing-configurations-now-exp-4a76c0c8",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
+      "slug": "20261002-github-copilot-copilot-code-review-api-support-and-new-default-e-c50f0986",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-02-unvalidated-npm-trusted-publishing-configurations-now-expire",
-      "publishedAt": "2026-10-02T19:07:04.000Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+      "publishedAt": "2026-10-02T19:13:50.000Z",
+      "discoveredAt": "2026-10-02T22:11:36.141Z",
       "locales": {
         "en": {
-          "title": "Unvalidated npm trusted publishing configurations now expire",
-          "summary": "Unvalidated npm trusted publishing configurations now expire 48 hours after creation and can no longer authorize publishing. This limits the risk of trusting a repository or project name that changes… The post Unvalidat…"
+          "title": "Copilot code review: API support and new default effort level",
+          "summary": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default… The post Copilot code review: API support and new de…"
         },
         "fr": {
-          "title": "Unvalidated npm trusted publishing configurations now expire",
-          "summary": "Unvalidated npm trusted publishing configurations now expire 48 hours after creation and can no longer authorize publishing. This limits the risk of trusting a repository or project name that changes… The post Unvalidat…"
+          "title": "Copilot code review: API support and new default effort level",
+          "summary": "You can now request a GitHub Copilot code review through the REST and GraphQL APIs and set the review effort level for each request. Balanced is also now the default… The post Copilot code review: API support and new de…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-nvidia-how-nvidia-groq-3-lpx-deterministic-execution-drives-powe-ce9893f8",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
+      "publishedAt": "2026-10-01T18:31:30.000Z",
+      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "locales": {
+        "en": {
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+        },
+        "fr": {
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+        }
+      }
+    },
+    {
+      "slug": "20260916-kubernetes-kubernetes-v137-hardening-container-storage-with-bind-6cde82bb",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
+      "publishedAt": "2026-09-16T18:30:00.000Z",
+      "discoveredAt": "2026-09-17T11:38:27.585Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
+          "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for examp…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
+          "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for examp…"
+        }
+      }
+    },
+    {
+      "slug": "20261002-cloudflare-streamline-custom-video-pipelines-with-cloudflare-str-2464ff1b",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/streamline/",
+      "publishedAt": "2026-10-02T16:13:45.000Z",
+      "discoveredAt": "2026-10-02T22:11:36.141Z",
+      "locales": {
+        "en": {
+          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
+        },
+        "fr": {
+          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
+        }
+      }
+    },
+    {
+      "slug": "20261002-openai-platform-a-model-guide-for-the-gpt-6-family-8e206c4d",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/practical-guide-building-gpt-6",
+      "publishedAt": "2026-10-02T16:15:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:36.141Z",
+      "locales": {
+        "en": {
+          "title": "A model guide for the GPT-6 family",
+          "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
+        },
+        "fr": {
+          "title": "A model guide for the GPT-6 family",
+          "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
         }
       }
     },
@@ -1603,82 +1683,22 @@
       }
     },
     {
-      "slug": "20261001-nvidia-translating-cuda-tile-operations-from-python-to-rust-usin-833138d5",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
-      "publishedAt": "2026-10-01T18:31:28.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
-      "locales": {
-        "en": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
-        },
-        "fr": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
-        }
-      }
-    },
-    {
-      "slug": "20260915-kubernetes-kubernetes-v137-pod-level-resource-managers-graduated-993e015b",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
-      "publishedAt": "2026-09-15T18:30:00.000Z",
-      "discoveredAt": "2026-09-16T11:28:36.810Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
-          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
-          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-openai-platform-the-eternal-complement-7e67b43c",
-      "toolName": "OpenAI Platform",
+      "slug": "20260918-anthropic-platform-sep-18-2026-announcements-partnering-with-acc-47b87cc2",
+      "toolName": "Anthropic Platform",
       "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/the-eternal-complement",
-      "publishedAt": "2026-10-01T17:00:00.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "publishedAt": "2026-09-18T00:00:00.000Z",
+      "discoveredAt": "2026-09-18T20:52:51.777Z",
       "locales": {
         "en": {
-          "title": "The eternal complement",
-          "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress."
+          "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
+          "summary": "Title"
         },
         "fr": {
-          "title": "The eternal complement",
-          "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress."
-        }
-      }
-    },
-    {
-      "slug": "20261002-cloudflare-introducing-web-search-api-via-ai-gateway-dcd0ac26",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/introducing-web-search-api/",
-      "publishedAt": "2026-10-02T13:28:10.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Web Search API via AI Gateway",
-          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs,…"
-        },
-        "fr": {
-          "title": "Introducing Web Search API via AI Gateway",
-          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs,…"
+          "title": "Sep 18, 2026 Announcements Partnering with Accenture on embedded evaluation",
+          "summary": "Title"
         }
       }
     },
@@ -1759,26 +1779,6 @@
         "fr": {
           "title": "W3C IRC bots now open source",
           "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
-        }
-      }
-    },
-    {
-      "slug": "20260917-anthropic-platform-sep-17-2026-announcements-introducing-the-lif-a29db010",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/life-sciences-verification-program",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "discoveredAt": "2026-09-17T21:19:50.467Z",
-      "locales": {
-        "en": {
-          "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
-          "summary": "Title"
-        },
-        "fr": {
-          "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
-          "summary": "Title"
         }
       }
     },
@@ -1903,62 +1903,142 @@
       }
     },
     {
-      "slug": "20261005-vercel-ling-31-flash-is-now-available-on-ai-gateway-call-ling-31-d24dd6cc",
+      "slug": "20261006-vercel-ai-gateway-adds-browserbase-search-and-fetch-tools-ai-gat-66909907",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/ling-3-1-flash-is-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-05T14:32:16.644Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
+      "href": "https://vercel.com/changelog/ai-gateway-adds-browserbase-search-and-fetch-tools",
+      "publishedAt": "2026-10-06T22:38:45.590Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
       "locales": {
         "en": {
-          "title": "Ling 3.1 Flash is now available on AI Gateway Call Ling 3.1 Flash through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "Karim Hasebou, Brandon Tuttle, and 2 others"
+          "title": "AI Gateway adds Browserbase Search and Fetch tools AI Gateway now supports Browserbase Search and Fetch, giving models web discovery and page retrieval alongside AI SDK and Marketplace integrations. +2 Josh Lipman, Jerilyn Zheng, and 2 others",
+          "summary": ".jpg\"/> Matan Kushner, Tom Dale, and 1 other"
         },
         "fr": {
-          "title": "Ling 3.1 Flash is now available on AI Gateway Call Ling 3.1 Flash through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "Karim Hasebou, Brandon Tuttle, and 2 others"
+          "title": "AI Gateway adds Browserbase Search and Fetch tools AI Gateway now supports Browserbase Search and Fetch, giving models web discovery and page retrieval alongside AI SDK and Marketplace integrations. +2 Josh Lipman, Jerilyn Zheng, and 2 others",
+          "summary": ".jpg\"/> Matan Kushner, Tom Dale, and 1 other"
         }
       }
     },
     {
-      "slug": "20261006-cursor-observability-on-auto-pilot-d72f6df8",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
+      "slug": "20261006-supabase-fixed-a-panic-in-project-metrics-collection-that-could--b9368e6e",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/50403-observability-autopilot",
-      "publishedAt": "2026-10-06T00:01:44.852Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "href": "https://supabase.com/changelog/admin-api-metrics-panic-fix",
+      "publishedAt": "2026-10-06T13:15:57.097Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
       "locales": {
         "en": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
         },
         "fr": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
+          "title": "Fixed a panic in project metrics collection that could drop metrics",
+          "summary": "Bug Fix A metrics endpoint could panic under concurrent requests, intermittently stopping metrics from being collected and pushed for a project."
         }
       }
     },
     {
-      "slug": "20261002-github-npm-staged-publishing-now-supports-creating-new-packages-5ef20db1",
+      "slug": "20261002-github-unvalidated-npm-trusted-publishing-configurations-now-exp-4a76c0c8",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-02-npm-staged-publishing-now-supports-creating-new-packages",
-      "publishedAt": "2026-10-02T19:05:17.000Z",
+      "href": "https://github.blog/changelog/2026-10-02-unvalidated-npm-trusted-publishing-configurations-now-expire",
+      "publishedAt": "2026-10-02T19:07:04.000Z",
       "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "npm staged publishing now supports creating new packages",
-          "summary": "You can now create a new npm package with npm stage publish, using a local session or a granular access token, including a stage-only token. This lets you create packages… The post npm staged publishing now supports cre…"
+          "title": "Unvalidated npm trusted publishing configurations now expire",
+          "summary": "Unvalidated npm trusted publishing configurations now expire 48 hours after creation and can no longer authorize publishing. This limits the risk of trusting a repository or project name that changes… The post Unvalidat…"
         },
         "fr": {
-          "title": "npm staged publishing now supports creating new packages",
-          "summary": "You can now create a new npm package with npm stage publish, using a local session or a granular access token, including a stage-only token. This lets you create packages… The post npm staged publishing now supports cre…"
+          "title": "Unvalidated npm trusted publishing configurations now expire",
+          "summary": "Unvalidated npm trusted publishing configurations now expire 48 hours after creation and can no longer authorize publishing. This limits the risk of trusting a repository or project name that changes… The post Unvalidat…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-nvidia-dense-vs-moe-models-active-parameters-throughput-and-when-3f75c866",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
+      "publishedAt": "2026-10-01T18:31:29.000Z",
+      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "locales": {
+        "en": {
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+        },
+        "fr": {
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+        }
+      }
+    },
+    {
+      "slug": "20260915-kubernetes-kubernetes-v137-pod-level-resource-managers-graduated-993e015b",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
+      "publishedAt": "2026-09-15T18:30:00.000Z",
+      "discoveredAt": "2026-09-16T11:28:36.810Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+          "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36 , this enhancement builds on Pod…"
+        }
+      }
+    },
+    {
+      "slug": "20261002-cloudflare-introducing-web-search-api-via-ai-gateway-dcd0ac26",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/introducing-web-search-api/",
+      "publishedAt": "2026-10-02T13:28:10.000Z",
+      "discoveredAt": "2026-10-02T22:11:36.141Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Web Search API via AI Gateway",
+          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs,…"
+        },
+        "fr": {
+          "title": "Introducing Web Search API via AI Gateway",
+          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs,…"
+        }
+      }
+    },
+    {
+      "slug": "20261002-openai-platform-chatham-scales-its-capital-markets-expertise-wit-a97398f7",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/chatham-financial",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:36.141Z",
+      "locales": {
+        "en": {
+          "title": "Chatham scales its capital markets expertise with OpenAI",
+          "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
+        },
+        "fr": {
+          "title": "Chatham scales its capital markets expertise with OpenAI",
+          "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
         }
       }
     },
@@ -1983,82 +2063,22 @@
       }
     },
     {
-      "slug": "20261001-nvidia-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
-      "publishedAt": "2026-10-01T18:31:27.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "slug": "20260917-anthropic-platform-sep-17-2026-announcements-introducing-the-lif-a29db010",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "publishedAt": "2026-09-17T00:00:00.000Z",
+      "discoveredAt": "2026-09-17T21:19:50.467Z",
       "locales": {
         "en": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+          "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
+          "summary": "Title"
         },
         "fr": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
-        }
-      }
-    },
-    {
-      "slug": "20260914-kubernetes-kubernetes-changed-block-tracking-api---beta-differen-081539c8",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
-      "publishedAt": "2026-09-14T18:30:00.000Z",
-      "discoveredAt": "2026-09-14T21:48:07.802Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
-          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
-        },
-        "fr": {
-          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
-          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-chatgpt-how-albertsons-companies-is-reimagining-retail-from-the--a80484c2",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/albertsons-reimagining-retail",
-      "publishedAt": "2026-10-01T16:00:00.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
-      "locales": {
-        "en": {
-          "title": "How Albertsons Companies is reimagining retail from the inside out",
-          "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
-        },
-        "fr": {
-          "title": "How Albertsons Companies is reimagining retail from the inside out",
-          "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
-        }
-      }
-    },
-    {
-      "slug": "20261002-cloudflare-introducing-cloudflare-traces-follow-requests-through-9c3a3363",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflare-tracing/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-06T13:15:57.097Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
-          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
-        },
-        "fr": {
-          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
-          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
+          "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
+          "summary": "Title"
         }
       }
     },
@@ -2139,26 +2159,6 @@
         "fr": {
           "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
           "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber R…"
-        }
-      }
-    },
-    {
-      "slug": "20260912-anthropic-platform-responsible-scaling-policy-3a0b4572",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Responsible Scaling Policy",
-          "summary": "ing Policy on the AI Exponential Security and compliance"
-        },
-        "fr": {
-          "title": "Responsible Scaling Policy",
-          "summary": "ing Policy on the AI Exponential Security and compliance"
         }
       }
     },
@@ -2283,122 +2283,122 @@
       }
     },
     {
-      "slug": "20261004-vercel-microsoft-ai-models-are-now-available-on-ai-gateway-micro-a616128c",
+      "slug": "20261006-vercel-speed-insights-deprecates-first-input-delay-on-november-1-8a252a6f",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/microsoft-ai-models-are-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-04T21:21:29.249Z",
-      "discoveredAt": "2026-10-04T21:21:29.249Z",
+      "href": "https://vercel.com/changelog/speed-insights-deprecates-first-input-delay-on-november-first",
+      "publishedAt": "2026-10-06T13:15:57.097Z",
+      "discoveredAt": "2026-10-06T13:15:57.097Z",
       "locales": {
         "en": {
-          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Speed Insights deprecates First Input Delay on November 1st Speed Insights is deprecating First Input Delay on November 1, with no action required. Damien Simonin Feugas, Vincent Derks, and 1 other",
+          "summary": "1 October 1 Oct"
         },
         "fr": {
-          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Speed Insights deprecates First Input Delay on November 1st Speed Insights is deprecating First Input Delay on November 1, with no action required. Damien Simonin Feugas, Vincent Derks, and 1 other",
+          "summary": "1 October 1 Oct"
         }
       }
     },
     {
-      "slug": "20261005-supabase-read-replicas-moved-to-project-settings-infrastructure-c2cab453",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
+      "slug": "20261006-postgresql-postgresql-1519-1711-minor-release-action-may-be-requ-00cf1171",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/read-replicas-moved-to-infrastructure",
-      "publishedAt": "2026-10-05T14:32:16.644Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
+      "href": "https://supabase.com/changelog/postgres-15-19-17-11-breaking-changes",
+      "publishedAt": "2026-10-06T00:01:44.852Z",
+      "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "Read replicas moved to Project Settings → Infrastructure",
-          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
+          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
+          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
         },
         "fr": {
-          "title": "Read replicas moved to Project Settings → Infrastructure",
-          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
+          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
+          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
         }
       }
     },
     {
-      "slug": "20261002-github-copilot-selected-models-in-github-copilot-deprecated-d3c3f699",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
+      "slug": "20261002-github-npm-staged-publishing-now-supports-creating-new-packages-5ef20db1",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
-      "publishedAt": "2026-10-02T18:24:19.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
+      "href": "https://github.blog/changelog/2026-10-02-npm-staged-publishing-now-supports-creating-new-packages",
+      "publishedAt": "2026-10-02T19:05:17.000Z",
+      "discoveredAt": "2026-10-06T00:01:44.852Z",
       "locales": {
         "en": {
-          "title": "Selected models in GitHub Copilot deprecated",
-          "summary": "As of today, October 2, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model… The post Selected mod…"
+          "title": "npm staged publishing now supports creating new packages",
+          "summary": "You can now create a new npm package with npm stage publish, using a local session or a granular access token, including a stage-only token. This lets you create packages… The post npm staged publishing now supports cre…"
         },
         "fr": {
-          "title": "Selected models in GitHub Copilot deprecated",
-          "summary": "As of today, October 2, 2026, we have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions). Model… The post Selected mod…"
+          "title": "npm staged publishing now supports creating new packages",
+          "summary": "You can now create a new npm package with npm stage publish, using a local session or a granular access token, including a stage-only token. This lets you create packages… The post npm staged publishing now supports cre…"
         }
       }
     },
     {
-      "slug": "20260929-hugging-face-nvidia-kumo-tabular-sets-a-new-accuracy-efficiency--493cf3fc",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "publishedAt": "2026-09-29T15:30:38.000Z",
-      "discoveredAt": "2026-09-29T22:13:02.378Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
-        },
-        "fr": {
-          "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-          "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
-        }
-      }
-    },
-    {
-      "slug": "20261001-nvidia-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-bench-82b93583",
+      "slug": "20261001-nvidia-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-a-6510d815",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
-      "publishedAt": "2026-10-01T18:31:27.000Z",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
+      "publishedAt": "2026-10-01T18:31:29.000Z",
       "discoveredAt": "2026-10-01T22:39:35.689Z",
       "locales": {
         "en": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
+          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
         },
         "fr": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
+          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
         }
       }
     },
     {
-      "slug": "20260914-kubernetes-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
+      "slug": "20260914-kubernetes-kubernetes-changed-block-tracking-api---beta-differen-081539c8",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
       "source": "Kubernetes Blog",
       "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
+      "href": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
       "publishedAt": "2026-09-14T18:30:00.000Z",
       "discoveredAt": "2026-09-14T21:48:07.802Z",
       "locales": {
         "en": {
-          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
-          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
+          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
         },
         "fr": {
-          "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
-          "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container m…"
+          "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+          "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta . If you aren't yet famili…"
+        }
+      }
+    },
+    {
+      "slug": "20261002-cloudflare-updates-on-our-pledge-to-make-cloudflare-features-acc-a7fc3ad4",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/enterprise-for-all-update/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "locales": {
+        "en": {
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these…"
+        },
+        "fr": {
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these…"
         }
       }
     }
