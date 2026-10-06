@@ -172,7 +172,21 @@ async function checkStagesFreshness() {
 
     // The page headlines the oldest per-entry check, because writing the file
     // is not the same as checking the links. Measure what the reader is shown.
-    const checked = items.map((i) => i.checkedAt).filter(Boolean).sort();
+    //
+    // Which now means skipping entries a person judged unverifiable. Their
+    // checkedAt can never advance -- two BPCE postings render only with
+    // JavaScript, and that host answers 200 for a slug that cannot exist -- so
+    // counting them pinned this age to their date and grew it by a day, every
+    // day, forever. getStagesLastCheckedAt was fixed for exactly that; this is
+    // the same rule kept in a second place, and it had drifted: the page said
+    // "Last checked: today" while this line said "4d ago" about the same data.
+    // Since it warns BEFORE the page shows its banner, the drift was going to
+    // surface as a red check about a list that was fresh.
+    const checked = items
+      .filter((i) => !i.unverifiable)
+      .map((i) => i.checkedAt)
+      .filter(Boolean)
+      .sort();
     const oldest = checked.length ? Date.parse(`${checked[0]}T12:00:00Z`) : Date.parse(data.updatedAt);
     if (!Number.isFinite(oldest)) {
       record("Stages list", false, "stages.json has no readable checkedAt or updatedAt");

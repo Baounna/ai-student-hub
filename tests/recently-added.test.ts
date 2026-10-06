@@ -248,3 +248,30 @@ describe("the list's freshness claim", () => {
     expect(inScript).toBe(UNVERIFIABLE_RECHECK_DAYS);
   });
 });
+
+describe("the freshness rule, kept in two places", () => {
+  /**
+   * getStagesLastCheckedAt decides what the page shows; the watchdog recomputes
+   * the same thing from stages.json to warn a few days BEFORE the page would.
+   * Two copies of one rule, and they drifted the moment unverifiable entries
+   * existed: the page said "Last checked: today" while the watchdog said "4d
+   * ago" about identical data, and because the watchdog warns first, the drift
+   * was going to show up as a red check about a list that was fresh.
+   */
+  it("the watchdog excludes the same entries the page does", () => {
+    const watchdog = readFileSync(new URL("../scripts/watchdog.mjs", import.meta.url), "utf8");
+    expect(watchdog).toMatch(/\.filter\(\(i\) => !i\.unverifiable\)/);
+    const source = readFileSync(new URL("../src/content/stages.ts", import.meta.url), "utf8");
+    expect(source).toMatch(/filter\(\(item\) => !item\.unverifiable\)/);
+  });
+
+  it("both agree on the date for the data as it stands", () => {
+    const stages = getStages();
+    const watchdogFloor = stages
+      .filter((s) => !s.unverifiable)
+      .map((s) => s.checkedAt)
+      .filter(Boolean)
+      .sort()[0];
+    expect(getStagesLastCheckedAt()).toBe(watchdogFloor);
+  });
+});
