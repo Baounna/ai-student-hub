@@ -216,7 +216,8 @@ function oneEmployerAtATime(items: Stage[]) {
 }
 
 export function getStages(now = Date.now()) {
-  const sorted = [...payload.items].sort((a, b) => {
+  // A listing closed more than a month ago has said what it had to say.
+  const sorted = payload.items.filter((item) => !isLongClosed(item, now)).sort((a, b) => {
     const aClosed = isClosed(a, now);
     const bClosed = isClosed(b, now);
     // Open first, then soonest deadline — the order someone applying needs.
@@ -350,6 +351,28 @@ export const RECENTLY_ADDED_DAYS = 7;
  * itself, short enough that a posting cannot sit unverified for a year.
  */
 export const UNVERIFIABLE_RECHECK_DAYS = 90;
+
+/**
+ * How long a closed listing stays on the board after its deadline.
+ *
+ * Removing it the moment the date passes is the wrong move: a student who
+ * bookmarked the row, or saw it last week, comes back and finds a hole rather
+ * than an answer. For a month it stays and says "Clôturée", with the apply link
+ * gone so nobody sends an application into a dead posting, sorted to the bottom
+ * and excluded from the open count.
+ *
+ * After that it has told everyone who needed to know, and leaving it is just a
+ * board filling up with dead rows. It stays in stages.json either way -- this
+ * decides what the page shows, not what the data remembers.
+ */
+export const CLOSED_VISIBLE_DAYS = 30;
+
+export function isLongClosed(stage: Stage, now = Date.now()): boolean {
+  if (!stage.deadline) return false;
+  const end = Date.parse(`${stage.deadline}T23:59:59Z`);
+  if (!Number.isFinite(end)) return false;
+  return now - end > CLOSED_VISIBLE_DAYS * 86_400_000;
+}
 
 export function unverifiableJudgmentIsCurrent(stage: Stage, now: Date = new Date()): boolean {
   if (!stage.unverifiable) return false;

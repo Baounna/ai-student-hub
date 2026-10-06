@@ -4,6 +4,9 @@ import {
   isRecentlyAdded,
   RECENTLY_ADDED_DAYS,
   getStages,
+  isClosed,
+  isLongClosed,
+  CLOSED_VISIBLE_DAYS,
   getStagesLastCheckedAt,
   getStagesCheckedAgeDays,
   isStagesListStale,
@@ -288,5 +291,43 @@ describe("the freshness rule, kept in two places", () => {
       .filter(Boolean)
       .sort()[0];
     expect(getStagesLastCheckedAt()).toBe(watchdogFloor);
+  });
+});
+
+describe("a listing whose deadline has passed", () => {
+  /**
+   * Two wrong answers and one right one. Removing it the day it closes leaves
+   * a student who bookmarked the row staring at a hole. Leaving it forever
+   * fills the board with dead listings. So: say it plainly for a month, then
+   * drop it.
+   */
+  const withDeadline = (deadline: string) => ({ id: "x", deadline }) as never;
+
+  it("is still shown, and marked closed, the day after it expires", () => {
+    const now = Date.parse("2026-10-06T12:00:00Z");
+    const stage = withDeadline("2026-10-05");
+    expect(isClosed(stage, now)).toBe(true);
+    expect(isLongClosed(stage, now)).toBe(false);
+  });
+
+  it("stays visible for the whole retention window", () => {
+    const closedOn = Date.parse("2026-10-05T23:59:59Z");
+    const lastDay = closedOn + CLOSED_VISIBLE_DAYS * 86_400_000;
+    expect(isLongClosed(withDeadline("2026-10-05"), lastDay)).toBe(false);
+    expect(isLongClosed(withDeadline("2026-10-05"), lastDay + 86_400_000)).toBe(true);
+  });
+
+  it("drops out of the board once the window passes", () => {
+    const stages = getStages();
+    // Nothing currently on the board is long closed, so the rule is inert
+    // today — it exists for the listings that will expire later.
+    expect(stages.every((s) => !isLongClosed(s))).toBe(true);
+  });
+
+  it("never treats a listing with no deadline as closed", () => {
+    // 99 of 102 publish no closing date. "We do not know" must not become
+    // "closed", or a student skips a job still taking applications.
+    expect(isClosed({ id: "y" } as never)).toBe(false);
+    expect(isLongClosed({ id: "y" } as never)).toBe(false);
   });
 });
