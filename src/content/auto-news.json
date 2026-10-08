@@ -1,7 +1,45 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T23:03:23.944Z",
+  "updatedAt": "2026-10-08T13:24:58.220Z",
   "items": [
+    {
+      "slug": "20261008-bridging-technical-depth-and-usability-the-story-behind-radars-r-5ce64f51",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/radar-redesign/",
+      "publishedAt": "2026-10-08T13:00:00.000Z",
+      "discoveredAt": "2026-10-08T13:24:58.220Z",
+      "locales": {
+        "en": {
+          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map and standar…"
+        },
+        "fr": {
+          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map and standar…"
+        }
+      }
+    },
+    {
+      "slug": "20261007-nodejs-26111-current-59749e32",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.11.1",
+      "publishedAt": "2026-10-07T23:56:26.000Z",
+      "discoveredAt": "2026-10-08T13:24:58.220Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.11.1 (Current)",
+          "summary": "Node.js 26.11.1 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.11.1 (Current)",
+          "summary": "Node.js 26.11.1 (Current)"
+        }
+      }
+    },
     {
       "slug": "20261007-introducing-claude-haiku-55-on-aws-161fece6",
       "topic": "AI Systems",
@@ -75,44 +113,6 @@
         "fr": {
           "title": "Multimodal open d1 decision models for the edge",
           "summary": "Multimodal open d1 decision models for the edge"
-        }
-      }
-    },
-    {
-      "slug": "20261007-building-an-evidence-grounded-agentic-security-operations-harnes-efc47ac2",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/agentic-security-operations/",
-      "publishedAt": "2026-10-07T16:30:36.000Z",
-      "discoveredAt": "2026-10-07T23:03:23.944Z",
-      "locales": {
-        "en": {
-          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
-          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers g…"
-        },
-        "fr": {
-          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
-          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers g…"
-        }
-      }
-    },
-    {
-      "slug": "20261007-nodejs-26110-current-5b67963f",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.11.0",
-      "publishedAt": "2026-10-07T14:45:09.000Z",
-      "discoveredAt": "2026-10-07T23:03:23.944Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.11.0 (Current)",
-          "summary": "Node.js 26.11.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.11.0 (Current)",
-          "summary": "Node.js 26.11.0 (Current)"
         }
       }
     },
@@ -364,6 +364,44 @@
       }
     },
     {
+      "slug": "20261007-building-an-evidence-grounded-agentic-security-operations-harnes-efc47ac2",
+      "topic": "Security & Standards",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/agentic-security-operations/",
+      "publishedAt": "2026-10-07T16:30:36.000Z",
+      "discoveredAt": "2026-10-07T23:03:23.944Z",
+      "locales": {
+        "en": {
+          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers g…"
+        },
+        "fr": {
+          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers g…"
+        }
+      }
+    },
+    {
+      "slug": "20261007-nodejs-26110-current-5b67963f",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.11.0",
+      "publishedAt": "2026-10-07T14:45:09.000Z",
+      "discoveredAt": "2026-10-07T23:03:23.944Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.11.0 (Current)",
+          "summary": "Node.js 26.11.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.11.0 (Current)",
+          "summary": "Node.js 26.11.0 (Current)"
+        }
+      }
+    },
+    {
       "slug": "20261007-rethinking-access-control-for-rag-with-amazon-quick-and-amazon-b-714592c5",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -436,44 +474,6 @@
         "fr": {
           "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
           "summary": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO"
-        }
-      }
-    },
-    {
-      "slug": "20261006-the-keys-to-the-internet-change-on-october-11-are-you-ready-1424f8a7",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-      "publishedAt": "2026-10-06T17:50:11.000Z",
-      "discoveredAt": "2026-10-06T22:38:43.858Z",
-      "locales": {
-        "en": {
-          "title": "The keys to the Internet change on October 11. Are you ready?",
-          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover."
-        },
-        "fr": {
-          "title": "The keys to the Internet change on October 11. Are you ready?",
-          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover."
-        }
-      }
-    },
-    {
-      "slug": "20260923-nodejs-22233-lts-095114ea",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v22.23.3",
-      "publishedAt": "2026-09-23T18:22:40.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 22.23.3 (LTS)",
-          "summary": "Node.js 22.23.3 (LTS)"
-        },
-        "fr": {
-          "title": "Node.js 22.23.3 (LTS)",
-          "summary": "Node.js 22.23.3 (LTS)"
         }
       }
     },
@@ -706,6 +706,44 @@
       }
     },
     {
+      "slug": "20261006-the-keys-to-the-internet-change-on-october-11-are-you-ready-1424f8a7",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+      "publishedAt": "2026-10-06T17:50:11.000Z",
+      "discoveredAt": "2026-10-06T22:38:43.858Z",
+      "locales": {
+        "en": {
+          "title": "The keys to the Internet change on October 11. Are you ready?",
+          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover."
+        },
+        "fr": {
+          "title": "The keys to the Internet change on October 11. Are you ready?",
+          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover."
+        }
+      }
+    },
+    {
+      "slug": "20260923-nodejs-22233-lts-095114ea",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v22.23.3",
+      "publishedAt": "2026-09-23T18:22:40.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 22.23.3 (LTS)",
+          "summary": "Node.js 22.23.3 (LTS)"
+        },
+        "fr": {
+          "title": "Node.js 22.23.3 (LTS)",
+          "summary": "Node.js 22.23.3 (LTS)"
+        }
+      }
+    },
+    {
       "slug": "20261007-beyond-hours-saved-building-the-business-case-for-agentic-automa-b6d728da",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -725,21 +763,21 @@
       }
     },
     {
-      "slug": "20261007-faster-scientific-image-analysis-with-nvidia-cuphoton-8200fc82",
+      "slug": "20261007-whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rende-60dd7f94",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/faster-scientific-image-analysis-with-nvidia-cuphoton/",
-      "publishedAt": "2026-10-07T00:12:47.000Z",
-      "discoveredAt": "2026-10-07T23:03:23.944Z",
+      "href": "https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities/",
+      "publishedAt": "2026-10-07T15:30:20.000Z",
+      "discoveredAt": "2026-10-08T13:24:58.220Z",
       "locales": {
         "en": {
-          "title": "Faster Scientific Image Analysis with NVIDIA cuPhoton",
-          "summary": "Observatories and telescopes, lasers and X-ray light sources, and other high-throughput instruments generate image data faster than CPU-bound pipelines can..."
+          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
+          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
         },
         "fr": {
-          "title": "Faster Scientific Image Analysis with NVIDIA cuPhoton",
-          "summary": "Observatories and telescopes, lasers and X-ray light sources, and other high-throughput instruments generate image data faster than CPU-bound pipelines can..."
+          "title": "What’s New for Game Developers: DLSS 5 with 3D-Guided Neural Rendering, NVIDIA ACE Updates, and New RTX Kit Capabilities",
+          "summary": "NVIDIA DLSS 5 introduces DLSS 3D-Guided Neural Rendering and granular controls that help game developers add lifelike lighting and material detail while..."
         }
       }
     },
@@ -778,44 +816,6 @@
         "fr": {
           "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
           "summary": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance"
-        }
-      }
-    },
-    {
-      "slug": "20261005-everything-we-launched-during-birthday-week-2026-0536bfa8",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
-      "publishedAt": "2026-10-05T13:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
-        },
-        "fr": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
-        }
-      }
-    },
-    {
-      "slug": "20260922-nodejs-26100-current-7d6e3532",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.10.0",
-      "publishedAt": "2026-09-22T09:03:49.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.10.0 (Current)",
-          "summary": "Node.js 26.10.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.10.0 (Current)",
-          "summary": "Node.js 26.10.0 (Current)"
         }
       }
     },
@@ -1048,6 +1048,44 @@
       }
     },
     {
+      "slug": "20261005-everything-we-launched-during-birthday-week-2026-0536bfa8",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+        },
+        "fr": {
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+        }
+      }
+    },
+    {
+      "slug": "20260922-nodejs-26100-current-7d6e3532",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.10.0",
+      "publishedAt": "2026-09-22T09:03:49.000Z",
+      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.10.0 (Current)",
+          "summary": "Node.js 26.10.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.10.0 (Current)",
+          "summary": "Node.js 26.10.0 (Current)"
+        }
+      }
+    },
+    {
       "slug": "20261007-how-qlik-built-grounded-enterprise-scale-ai-with-amazon-bedrock-f2fea423",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -1067,21 +1105,21 @@
       }
     },
     {
-      "slug": "20261006-how-doca-gpunetio-unifies-gpu-initiated-networking-across-the-nv-11769ab4",
+      "slug": "20261007-faster-scientific-image-analysis-with-nvidia-cuphoton-8200fc82",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/doca-gpunetio-gda-ki-unified-gpu-networking/",
-      "publishedAt": "2026-10-06T19:07:06.000Z",
-      "discoveredAt": "2026-10-06T22:38:43.858Z",
+      "href": "https://developer.nvidia.com/blog/faster-scientific-image-analysis-with-nvidia-cuphoton/",
+      "publishedAt": "2026-10-07T00:12:47.000Z",
+      "discoveredAt": "2026-10-07T23:03:23.944Z",
       "locales": {
         "en": {
-          "title": "How DOCA GPUNetIO Unifies GPU-Initiated Networking Across the NVIDIA Software Stack",
-          "summary": "GPU applications increasingly need networking and data movement to behave like first-class GPU-controlled operations rather than host-driven services. When the..."
+          "title": "Faster Scientific Image Analysis with NVIDIA cuPhoton",
+          "summary": "Observatories and telescopes, lasers and X-ray light sources, and other high-throughput instruments generate image data faster than CPU-bound pipelines can..."
         },
         "fr": {
-          "title": "How DOCA GPUNetIO Unifies GPU-Initiated Networking Across the NVIDIA Software Stack",
-          "summary": "GPU applications increasingly need networking and data movement to behave like first-class GPU-controlled operations rather than host-driven services. When the..."
+          "title": "Faster Scientific Image Analysis with NVIDIA cuPhoton",
+          "summary": "Observatories and telescopes, lasers and X-ray light sources, and other high-throughput instruments generate image data faster than CPU-bound pipelines can..."
         }
       }
     },
@@ -1120,44 +1158,6 @@
         "fr": {
           "title": "The Agent Said It Was Done. The Database Disagreed.",
           "summary": "The Agent Said It Was Done. The Database Disagreed."
-        }
-      }
-    },
-    {
-      "slug": "20261005-one-year-later-the-power-of-1111-interns-523bb8b1",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/one-year-later-1111-interns/",
-      "publishedAt": "2026-10-05T13:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "One year later: the power of 1.1.1.1 interns",
-          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
-        },
-        "fr": {
-          "title": "One year later: the power of 1.1.1.1 interns",
-          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
-        }
-      }
-    },
-    {
-      "slug": "20260916-nodejs-2690-current-077aebee",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.9.0",
-      "publishedAt": "2026-09-16T18:17:42.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.9.0 (Current)",
-          "summary": "Node.js 26.9.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.9.0 (Current)",
-          "summary": "Node.js 26.9.0 (Current)"
         }
       }
     },
@@ -1390,6 +1390,44 @@
       }
     },
     {
+      "slug": "20261005-one-year-later-the-power-of-1111-interns-523bb8b1",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/one-year-later-1111-interns/",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
+        },
+        "fr": {
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
+        }
+      }
+    },
+    {
+      "slug": "20260916-nodejs-2690-current-077aebee",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.9.0",
+      "publishedAt": "2026-09-16T18:17:42.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.9.0 (Current)",
+          "summary": "Node.js 26.9.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.9.0 (Current)",
+          "summary": "Node.js 26.9.0 (Current)"
+        }
+      }
+    },
+    {
       "slug": "20261007-automate-remediation-post-aws-devops-agent-investigation-87d41837",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -1409,21 +1447,21 @@
       }
     },
     {
-      "slug": "20261006-aicr-v10-open-stable-and-verifiable-gpu-cluster-configuration-d5ad2c1a",
+      "slug": "20261006-how-doca-gpunetio-unifies-gpu-initiated-networking-across-the-nv-11769ab4",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/aicr-v1-0-open-stable-and-verifiable-gpu-cluster-configuration/",
-      "publishedAt": "2026-10-06T16:13:50.000Z",
+      "href": "https://developer.nvidia.com/blog/doca-gpunetio-gda-ki-unified-gpu-networking/",
+      "publishedAt": "2026-10-06T19:07:06.000Z",
       "discoveredAt": "2026-10-06T22:38:43.858Z",
       "locales": {
         "en": {
-          "title": "AICR v1.0: Open, stable, and verifiable GPU cluster configuration",
-          "summary": "GPU-accelerated Kubernetes clusters depend on compatible versions across dozens of components, each on its own release cycle: host kernels, GPU drivers,..."
+          "title": "How DOCA GPUNetIO Unifies GPU-Initiated Networking Across the NVIDIA Software Stack",
+          "summary": "GPU applications increasingly need networking and data movement to behave like first-class GPU-controlled operations rather than host-driven services. When the..."
         },
         "fr": {
-          "title": "AICR v1.0: Open, stable, and verifiable GPU cluster configuration",
-          "summary": "GPU-accelerated Kubernetes clusters depend on compatible versions across dozens of components, each on its own release cycle: host kernels, GPU drivers,..."
+          "title": "How DOCA GPUNetIO Unifies GPU-Initiated Networking Across the NVIDIA Software Stack",
+          "summary": "GPU applications increasingly need networking and data movement to behave like first-class GPU-controlled operations rather than host-driven services. When the..."
         }
       }
     },
@@ -1462,44 +1500,6 @@
         "fr": {
           "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
           "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
-        }
-      }
-    },
-    {
-      "slug": "20261002-streamline-custom-video-pipelines-with-cloudflare-stream-and-wor-2464ff1b",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/streamline/",
-      "publishedAt": "2026-10-02T16:13:45.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
-          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
-        },
-        "fr": {
-          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
-          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
-        }
-      }
-    },
-    {
-      "slug": "20260909-nodejs-2682-current-dcb9ac31",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.2",
-      "publishedAt": "2026-09-09T16:09:17.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.2 (Current)",
-          "summary": "Node.js 26.8.2 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.2 (Current)",
-          "summary": "Node.js 26.8.2 (Current)"
         }
       }
     },
@@ -1732,6 +1732,44 @@
       }
     },
     {
+      "slug": "20261002-streamline-custom-video-pipelines-with-cloudflare-stream-and-wor-2464ff1b",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/streamline/",
+      "publishedAt": "2026-10-02T16:13:45.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
+        },
+        "fr": {
+          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
+        }
+      }
+    },
+    {
+      "slug": "20260909-nodejs-2682-current-dcb9ac31",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.2",
+      "publishedAt": "2026-09-09T16:09:17.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.2 (Current)",
+          "summary": "Node.js 26.8.2 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.2 (Current)",
+          "summary": "Node.js 26.8.2 (Current)"
+        }
+      }
+    },
+    {
       "slug": "20261007-building-ai-builders-playbook-for-closing-the-ai-knowledge-capab-822eef63",
       "topic": "Computer Systems",
       "source": "AWS ML Blog",
@@ -1751,21 +1789,21 @@
       }
     },
     {
-      "slug": "20261005-control-how-your-gpu-shares-work-with-green-contexts-d42af1fe",
+      "slug": "20261006-aicr-v10-open-stable-and-verifiable-gpu-cluster-configuration-d5ad2c1a",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/control-how-your-gpu-shares-work-with-green-contexts/",
-      "publishedAt": "2026-10-05T21:44:07.000Z",
+      "href": "https://developer.nvidia.com/blog/aicr-v1-0-open-stable-and-verifiable-gpu-cluster-configuration/",
+      "publishedAt": "2026-10-06T16:13:50.000Z",
       "discoveredAt": "2026-10-06T22:38:43.858Z",
       "locales": {
         "en": {
-          "title": "Control How Your GPU Shares Work with Green Contexts",
-          "summary": "GPU applications increasingly consist of multiple independent components running at the same time within a single process: a latency-sensitive operator..."
+          "title": "AICR v1.0: Open, stable, and verifiable GPU cluster configuration",
+          "summary": "GPU-accelerated Kubernetes clusters depend on compatible versions across dozens of components, each on its own release cycle: host kernels, GPU drivers,..."
         },
         "fr": {
-          "title": "Control How Your GPU Shares Work with Green Contexts",
-          "summary": "GPU applications increasingly consist of multiple independent components running at the same time within a single process: a latency-sensitive operator..."
+          "title": "AICR v1.0: Open, stable, and verifiable GPU cluster configuration",
+          "summary": "GPU-accelerated Kubernetes clusters depend on compatible versions across dozens of components, each on its own release cycle: host kernels, GPU drivers,..."
         }
       }
     },
@@ -1804,44 +1842,6 @@
         "fr": {
           "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
           "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
-        }
-      }
-    },
-    {
-      "slug": "20261002-introducing-web-search-api-via-ai-gateway-dcd0ac26",
-      "topic": "Computer Science",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/introducing-web-search-api/",
-      "publishedAt": "2026-10-02T13:28:10.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Web Search API via AI Gateway",
-          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
-        },
-        "fr": {
-          "title": "Introducing Web Search API via AI Gateway",
-          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
-        }
-      }
-    },
-    {
-      "slug": "20260909-nodejs-24210-lts-48e7f627",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v24.21.0",
-      "publishedAt": "2026-09-09T11:55:20.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 24.21.0 (LTS)",
-          "summary": "Node.js 24.21.0 (LTS)"
-        },
-        "fr": {
-          "title": "Node.js 24.21.0 (LTS)",
-          "summary": "Node.js 24.21.0 (LTS)"
         }
       }
     },
@@ -2055,6 +2055,44 @@
       }
     },
     {
+      "slug": "20261002-introducing-web-search-api-via-ai-gateway-dcd0ac26",
+      "topic": "Computer Science",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/introducing-web-search-api/",
+      "publishedAt": "2026-10-02T13:28:10.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Web Search API via AI Gateway",
+          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
+        },
+        "fr": {
+          "title": "Introducing Web Search API via AI Gateway",
+          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
+        }
+      }
+    },
+    {
+      "slug": "20260909-nodejs-24210-lts-48e7f627",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v24.21.0",
+      "publishedAt": "2026-09-09T11:55:20.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 24.21.0 (LTS)",
+          "summary": "Node.js 24.21.0 (LTS)"
+        },
+        "fr": {
+          "title": "Node.js 24.21.0 (LTS)",
+          "summary": "Node.js 24.21.0 (LTS)"
+        }
+      }
+    },
+    {
       "slug": "20261007-how-cornerstone-ondemand-cut-database-diagnosis-by-78-with-amazo-0f218c41",
       "topic": "Computer Science",
       "source": "AWS ML Blog",
@@ -2074,21 +2112,21 @@
       }
     },
     {
-      "slug": "20261005-nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-lev-3ef1c6a0",
-      "topic": "AI Systems",
+      "slug": "20261005-control-how-your-gpu-shares-work-with-green-contexts-d42af1fe",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/",
-      "publishedAt": "2026-10-05T21:10:42.000Z",
-      "discoveredAt": "2026-10-06T00:01:43.409Z",
+      "href": "https://developer.nvidia.com/blog/control-how-your-gpu-shares-work-with-green-contexts/",
+      "publishedAt": "2026-10-05T21:44:07.000Z",
+      "discoveredAt": "2026-10-06T22:38:43.858Z",
       "locales": {
         "en": {
-          "title": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents",
-          "summary": "A frontier language model is only one component of an AI agent. The surrounding agent system—often called a harness—determines how the model receives..."
+          "title": "Control How Your GPU Shares Work with Green Contexts",
+          "summary": "GPU applications increasingly consist of multiple independent components running at the same time within a single process: a latency-sensitive operator..."
         },
         "fr": {
-          "title": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents",
-          "summary": "A frontier language model is only one component of an AI agent. The surrounding agent system—often called a harness—determines how the model receives..."
+          "title": "Control How Your GPU Shares Work with Green Contexts",
+          "summary": "GPU applications increasingly consist of multiple independent components running at the same time within a single process: a latency-sensitive operator..."
         }
       }
     },
@@ -2127,44 +2165,6 @@
         "fr": {
           "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
           "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
-        }
-      }
-    },
-    {
-      "slug": "20261002-8-major-updates-to-cloudflare-observability-423bae1f",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/one-observability-platform/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "8 major updates to Cloudflare Observability",
-          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
-        },
-        "fr": {
-          "title": "8 major updates to Cloudflare Observability",
-          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-2681-current-c52a0716",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.1",
-      "publishedAt": "2026-08-26T22:11:36.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.1 (Current)",
-          "summary": "Node.js 26.8.1 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.1 (Current)",
-          "summary": "Node.js 26.8.1 (Current)"
         }
       }
     },
@@ -2302,25 +2302,6 @@
       }
     },
     {
-      "slug": "20260824-nist-researchers-supersize-quantum-technology-to-help-detect-fai-a6c33e64",
-      "topic": "Security & Standards",
-      "source": "NIST News",
-      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/08/nist-researchers-supersize-quantum-technology-help-detect-faint-photons",
-      "publishedAt": "2026-08-24T12:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "NIST Researchers Supersize Quantum Technology to Help Detect Faint Photons",
-          "summary": "Our everyday life is flooded with photons, the quantum building blocks of light. For cutting-edge technology, from quantum computing to deep-tissue imaging, detecting every single photon counts. “Photons carry information,” said…"
-        },
-        "fr": {
-          "title": "NIST Researchers Supersize Quantum Technology to Help Detect Faint Photons",
-          "summary": "Our everyday life is flooded with photons, the quantum building blocks of light. For cutting-edge technology, from quantum computing to deep-tissue imaging, detecting every single photon counts. “Photons carry information,” said…"
-        }
-      }
-    },
-    {
       "slug": "20260916-w3c-launches-first-pilot-of-program-to-support-open-source-proje-daf0158b",
       "topic": "Computer Science",
       "source": "W3C Blog",
@@ -2378,6 +2359,44 @@
       }
     },
     {
+      "slug": "20261002-8-major-updates-to-cloudflare-observability-423bae1f",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/one-observability-platform/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "8 major updates to Cloudflare Observability",
+          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
+        },
+        "fr": {
+          "title": "8 major updates to Cloudflare Observability",
+          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
+        }
+      }
+    },
+    {
+      "slug": "20260826-nodejs-2681-current-c52a0716",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.1",
+      "publishedAt": "2026-08-26T22:11:36.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.1 (Current)",
+          "summary": "Node.js 26.8.1 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.1 (Current)",
+          "summary": "Node.js 26.8.1 (Current)"
+        }
+      }
+    },
+    {
       "slug": "20261006-building-a-context-aware-ai-assistant-on-agentcore-and-openclaw-83a7693e",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2397,21 +2416,21 @@
       }
     },
     {
-      "slug": "20261005-validate-ai-factory-changes-with-digital-twins-and-ai-agents-8230a8dc",
+      "slug": "20261005-nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-lev-3ef1c6a0",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/validate-ai-factory-changes-with-digital-twins-and-ai-agents/",
-      "publishedAt": "2026-10-05T18:53:03.000Z",
-      "discoveredAt": "2026-10-07T23:03:23.944Z",
+      "href": "https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/",
+      "publishedAt": "2026-10-05T21:10:42.000Z",
+      "discoveredAt": "2026-10-06T00:01:43.409Z",
       "locales": {
         "en": {
-          "title": "Validate AI Factory Changes with Digital Twins and AI Agents",
-          "summary": "AI factories are some of the most complex operations in the world, combining GPUs, CPUs, switches, DPUs, and SuperNICs alongside schedulers, orchestration..."
+          "title": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents",
+          "summary": "A frontier language model is only one component of an AI agent. The surrounding agent system—often called a harness—determines how the model receives..."
         },
         "fr": {
-          "title": "Validate AI Factory Changes with Digital Twins and AI Agents",
-          "summary": "AI factories are some of the most complex operations in the world, combining GPUs, CPUs, switches, DPUs, and SuperNICs alongside schedulers, orchestration..."
+          "title": "NVIDIA AVO Reaches 100% on ARC-AGI-3, Demonstrating a Frontier-Level General-Purpose Architecture for Long-Horizon Autonomous Agents",
+          "summary": "A frontier language model is only one component of an AI agent. The surrounding agent system—often called a harness—determines how the model receives..."
         }
       }
     },
@@ -2450,44 +2469,6 @@
         "fr": {
           "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
           "summary": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning"
-        }
-      }
-    },
-    {
-      "slug": "20261002-introducing-cloudflare-traces-follow-requests-through-our-entire-9c3a3363",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflare-tracing/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
-          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
-        },
-        "fr": {
-          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
-          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-2680-current-1f44590f",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.0",
-      "publishedAt": "2026-08-26T14:29:48.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.0 (Current)",
-          "summary": "Node.js 26.8.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.0 (Current)",
-          "summary": "Node.js 26.8.0 (Current)"
         }
       }
     },
@@ -2682,6 +2663,44 @@
       }
     },
     {
+      "slug": "20261002-introducing-cloudflare-traces-follow-requests-through-our-entire-9c3a3363",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/cloudflare-tracing/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
+        },
+        "fr": {
+          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
+        }
+      }
+    },
+    {
+      "slug": "20260826-nodejs-2680-current-1f44590f",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.0",
+      "publishedAt": "2026-08-26T14:29:48.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.0 (Current)",
+          "summary": "Node.js 26.8.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.0 (Current)",
+          "summary": "Node.js 26.8.0 (Current)"
+        }
+      }
+    },
+    {
       "slug": "20261006-responsible-ai-governance-how-aws-positions-customers-to-align-w-de695e40",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2701,21 +2720,21 @@
       }
     },
     {
-      "slug": "20261001-how-nvidia-groq-3-lpx-deterministic-execution-drives-power-effic-ce9893f8",
+      "slug": "20261005-validate-ai-factory-changes-with-digital-twins-and-ai-agents-8230a8dc",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
-      "publishedAt": "2026-10-01T18:31:30.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "href": "https://developer.nvidia.com/blog/validate-ai-factory-changes-with-digital-twins-and-ai-agents/",
+      "publishedAt": "2026-10-05T18:53:03.000Z",
+      "discoveredAt": "2026-10-07T23:03:23.944Z",
       "locales": {
         "en": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+          "title": "Validate AI Factory Changes with Digital Twins and AI Agents",
+          "summary": "AI factories are some of the most complex operations in the world, combining GPUs, CPUs, switches, DPUs, and SuperNICs alongside schedulers, orchestration..."
         },
         "fr": {
-          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
-          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
+          "title": "Validate AI Factory Changes with Digital Twins and AI Agents",
+          "summary": "AI factories are some of the most complex operations in the world, combining GPUs, CPUs, switches, DPUs, and SuperNICs alongside schedulers, orchestration..."
         }
       }
     },
@@ -2754,44 +2773,6 @@
         "fr": {
           "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
           "summary": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction"
-        }
-      }
-    },
-    {
-      "slug": "20261002-updates-on-our-pledge-to-make-cloudflare-features-accessible-to--a7fc3ad4",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/enterprise-for-all-update/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
-          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
-        },
-        "fr": {
-          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
-          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
-        }
-      }
-    },
-    {
-      "slug": "20260826-nodejs-24200-lts-2b040562",
-      "topic": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v24.20.0",
-      "publishedAt": "2026-08-26T14:29:42.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 24.20.0 (LTS)",
-          "summary": "Node.js 24.20.0 (LTS)"
-        },
-        "fr": {
-          "title": "Node.js 24.20.0 (LTS)",
-          "summary": "Node.js 24.20.0 (LTS)"
         }
       }
     },
@@ -2929,25 +2910,6 @@
       }
     },
     {
-      "slug": "20260824-making-digital-identity-work-across-the-web-gdc-2026-f09de87c",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/a-global-digital-infrastructure-gdc-2026/",
-      "publishedAt": "2026-08-24T07:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Making digital identity work across the Web: GDC 2026",
-          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a focus on…"
-        },
-        "fr": {
-          "title": "Making digital identity work across the Web: GDC 2026",
-          "summary": "W3C Team and Members will present at Global Digital Collaboration Conference (GDC 26) which will bring together governments, standards organizations, open-source communities, the private sector, and civil society with a focus on…"
-        }
-      }
-    },
-    {
       "slug": "20260826-announcing-our-first-maintainers-in-residence-d1d0b248",
       "topic": "Systems & Backend",
       "source": "Rust Blog",
@@ -2986,6 +2948,44 @@
       }
     },
     {
+      "slug": "20261002-updates-on-our-pledge-to-make-cloudflare-features-accessible-to--a7fc3ad4",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/enterprise-for-all-update/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
+        },
+        "fr": {
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
+        }
+      }
+    },
+    {
+      "slug": "20260826-nodejs-24200-lts-2b040562",
+      "topic": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v24.20.0",
+      "publishedAt": "2026-08-26T14:29:42.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 24.20.0 (LTS)",
+          "summary": "Node.js 24.20.0 (LTS)"
+        },
+        "fr": {
+          "title": "Node.js 24.20.0 (LTS)",
+          "summary": "Node.js 24.20.0 (LTS)"
+        }
+      }
+    },
+    {
       "slug": "20261006-best-practices-for-amazon-sagemaker-hyperpod-administration-and--ed777402",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3005,21 +3005,21 @@
       }
     },
     {
-      "slug": "20261001-dense-vs-moe-models-active-parameters-throughput-and-when-to-cho-3f75c866",
+      "slug": "20261001-how-nvidia-groq-3-lpx-deterministic-execution-drives-power-effic-ce9893f8",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
-      "publishedAt": "2026-10-01T18:31:29.000Z",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin/",
+      "publishedAt": "2026-10-01T18:31:30.000Z",
       "discoveredAt": "2026-10-01T22:39:34.584Z",
       "locales": {
         "en": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
         },
         "fr": {
-          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
-          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
+          "title": "How NVIDIA Groq 3 LPX Deterministic Execution Drives Power-Efficient High-Interactivity Inference on NVIDIA Vera Rubin",
+          "summary": "Power is a defining constraint for AI factories. As AI workloads demand a full compute platform to serve them, each component of that platform must maximize..."
         }
       }
     },
@@ -3058,25 +3058,6 @@
         "fr": {
           "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
           "summary": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents"
-        }
-      }
-    },
-    {
-      "slug": "20261002-announcing-cloudflare-ohttp-gateway-expanding-access-to-cloudfla-ddac069f",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
-          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
-        },
-        "fr": {
-          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
-          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
         }
       }
     },
@@ -3233,6 +3214,25 @@
       }
     },
     {
+      "slug": "20261002-announcing-cloudflare-ohttp-gateway-expanding-access-to-cloudfla-ddac069f",
+      "topic": "Security & Standards",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
+        },
+        "fr": {
+          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
+        }
+      }
+    },
+    {
       "slug": "20261006-manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker--bec8b345",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3252,21 +3252,21 @@
       }
     },
     {
-      "slug": "20261001-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-facto-6510d815",
-      "topic": "Computer Systems",
+      "slug": "20261001-dense-vs-moe-models-active-parameters-throughput-and-when-to-cho-3f75c866",
+      "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
+      "href": "https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each/",
       "publishedAt": "2026-10-01T18:31:29.000Z",
       "discoveredAt": "2026-10-01T22:39:34.584Z",
       "locales": {
         "en": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
         },
         "fr": {
-          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
+          "title": "Dense vs. MoE Models: Active Parameters, Throughput, and When to Choose Each",
+          "summary": "How can a 30B-parameter model activate only 3B parameters per token, and still use the capacity of the larger model? Nemotron 3.5 Lightning illustrates the..."
         }
       }
     },
@@ -3305,25 +3305,6 @@
         "fr": {
           "title": "Holo4: powering generalist computer-use agents",
           "summary": "Holo4: powering generalist computer-use agents"
-        }
-      }
-    },
-    {
-      "slug": "20261002-follow-the-thread-a-new-dashboard-to-investigate-account-abuse-e58ff1b2",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Follow the thread: a new dashboard to investigate account abuse",
-          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
-        },
-        "fr": {
-          "title": "Follow the thread: a new dashboard to investigate account abuse",
-          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
         }
       }
     },
@@ -3480,6 +3461,25 @@
       }
     },
     {
+      "slug": "20261002-follow-the-thread-a-new-dashboard-to-investigate-account-abuse-e58ff1b2",
+      "topic": "Security & Standards",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Follow the thread: a new dashboard to investigate account abuse",
+          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
+        },
+        "fr": {
+          "title": "Follow the thread: a new dashboard to investigate account abuse",
+          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
+        }
+      }
+    },
+    {
       "slug": "20261006-build-a-voice-travel-concierge-with-amazon-bedrock-agentcore-man-34010b5d",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3499,21 +3499,21 @@
       }
     },
     {
-      "slug": "20261001-translating-cuda-tile-operations-from-python-to-rust-using-agent-833138d5",
-      "topic": "AI Systems",
+      "slug": "20261001-how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-facto-6510d815",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
-      "publishedAt": "2026-10-01T18:31:28.000Z",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
+      "publishedAt": "2026-10-01T18:31:29.000Z",
       "discoveredAt": "2026-10-01T22:39:34.584Z",
       "locales": {
         "en": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
+          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
         },
         "fr": {
-          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
-          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
+          "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
+          "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster..."
         }
       }
     },
@@ -3552,25 +3552,6 @@
         "fr": {
           "title": "Welcome RL Environments to the hub",
           "summary": "Welcome RL Environments to the hub"
-        }
-      }
-    },
-    {
-      "slug": "20261002-protected-quick-tunnels-simple-accountless-authentication-for-yo-c76f1b29",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/protected-quick-tunnels/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
-          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
-        },
-        "fr": {
-          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
-          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
         }
       }
     },
@@ -3727,6 +3708,25 @@
       }
     },
     {
+      "slug": "20261002-protected-quick-tunnels-simple-accountless-authentication-for-yo-c76f1b29",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/protected-quick-tunnels/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
+          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
+        },
+        "fr": {
+          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
+          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
+        }
+      }
+    },
+    {
       "slug": "20261005-introducing-glm-53-on-amazon-bedrock-cc694830",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3746,21 +3746,21 @@
       }
     },
     {
-      "slug": "20261001-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
+      "slug": "20261001-translating-cuda-tile-operations-from-python-to-rust-using-agent-833138d5",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
-      "publishedAt": "2026-10-01T18:31:27.000Z",
+      "href": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/",
+      "publishedAt": "2026-10-01T18:31:28.000Z",
       "discoveredAt": "2026-10-01T22:39:34.584Z",
       "locales": {
         "en": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
         },
         "fr": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+          "title": "Translating CUDA Tile Operations from Python to Rust Using Agentic AI",
+          "summary": "cuTile Rust (cutile-rs) is a tile-based system for safe, idiomatic GPU kernel authoring in the Rust programming language. Extending the Rust ownership model to..."
         }
       }
     },
@@ -3799,25 +3799,6 @@
         "fr": {
           "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
           "summary": "Accelerating vision-language models with LFM2.5-VL-DSpark"
-        }
-      }
-    },
-    {
-      "slug": "20261002-building-for-good-how-civil-society-organizations-are-automating-823db2de",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/civil-society-automation/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Building for good: How civil society organizations are automating on Cloudflare",
-          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
-        },
-        "fr": {
-          "title": "Building for good: How civil society organizations are automating on Cloudflare",
-          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
         }
       }
     },
@@ -3955,21 +3936,21 @@
       }
     },
     {
-      "slug": "20260824-minio-end-of-life-how-to-stay-patched-and-audit-ready-with-docke-52462813",
-      "topic": "Computer Science",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/minio-end-of-life-how-to-stay-patched-and-audit-ready-with-docker-els/",
-      "publishedAt": "2026-08-24T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "slug": "20261002-building-for-good-how-civil-society-organizations-are-automating-823db2de",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/civil-society-automation/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
       "locales": {
         "en": {
-          "title": "MinIO End of Life: How to Stay Patched and Audit-Ready with Docker ELS",
-          "summary": "MinIO reached end of life in February 2026. Docker Extended Lifecycle Support (ELS) keeps end-of-life software like it patched, compliant, and audit-ready for up to five years, covering versions upstream no longer supports all th…"
+          "title": "Building for good: How civil society organizations are automating on Cloudflare",
+          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
         },
         "fr": {
-          "title": "MinIO End of Life: How to Stay Patched and Audit-Ready with Docker ELS",
-          "summary": "MinIO reached end of life in February 2026. Docker Extended Lifecycle Support (ELS) keeps end-of-life software like it patched, compliant, and audit-ready for up to five years, covering versions upstream no longer supports all th…"
+          "title": "Building for good: How civil society organizations are automating on Cloudflare",
+          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
         }
       }
     },
@@ -3993,21 +3974,21 @@
       }
     },
     {
-      "slug": "20261001-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-64-82b93583",
-      "topic": "AI Performance",
+      "slug": "20261001-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
+      "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
+      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
       "publishedAt": "2026-10-01T18:31:27.000Z",
       "discoveredAt": "2026-10-01T22:39:34.584Z",
       "locales": {
         "en": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
         },
         "fr": {
-          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
         }
       }
     },
@@ -4046,25 +4027,6 @@
         "fr": {
           "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
           "summary": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows"
-        }
-      }
-    },
-    {
-      "slug": "20261002-2026-birthday-week-network-performance-update-d7660457",
-      "topic": "AI Performance",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "2026 Birthday week: network performance update",
-          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
-        },
-        "fr": {
-          "title": "2026 Birthday week: network performance update",
-          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
         }
       }
     },
@@ -4202,6 +4164,25 @@
       }
     },
     {
+      "slug": "20261002-2026-birthday-week-network-performance-update-d7660457",
+      "topic": "AI Performance",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "2026 Birthday week: network performance update",
+          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
+        },
+        "fr": {
+          "title": "2026 Birthday week: network performance update",
+          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
+        }
+      }
+    },
+    {
       "slug": "20261005-new-agent-skill-amazon-sagemaker-optimized-generative-ai-inferen-875cbdf4",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -4221,21 +4202,21 @@
       }
     },
     {
-      "slug": "20261001-benchmarking-llm-inference-at-scale-with-aiperf-88c32b0b",
+      "slug": "20261001-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-64-82b93583",
       "topic": "AI Performance",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
-      "publishedAt": "2026-10-01T18:31:26.000Z",
+      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
+      "publishedAt": "2026-10-01T18:31:27.000Z",
       "discoveredAt": "2026-10-01T22:39:34.584Z",
       "locales": {
         "en": {
-          "title": "Benchmarking LLM Inference at Scale with AIPerf",
-          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
         },
         "fr": {
-          "title": "Benchmarking LLM Inference at Scale with AIPerf",
-          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
         }
       }
     },
@@ -4259,40 +4240,21 @@
       }
     },
     {
-      "slug": "20260922-how-uk-aisi-and-evaleval-are-making-benchmark-results-reproducib-2960c64a",
-      "topic": "AI Performance",
+      "slug": "20260922-jun-kim-omlx-creator-and-maintainer-joins-hugging-face-to-suppor-fb8ad85c",
+      "topic": "AI Systems",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/evaleval-aisi",
+      "href": "https://huggingface.co/blog/omlx",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "discoveredAt": "2026-10-08T13:24:58.220Z",
       "locales": {
         "en": {
-          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
         },
         "fr": {
-          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
-        }
-      }
-    },
-    {
-      "slug": "20261001-introducing-clef-our-open-source-decision-models-and-new-rl-fine-ebb2d785",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/clef-decision-models/",
-      "publishedAt": "2026-10-01T15:34:02.000Z",
-      "discoveredAt": "2026-10-01T22:39:34.584Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
-          "summary": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tu…"
-        },
-        "fr": {
-          "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
-          "summary": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tu…"
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
         }
       }
     },
@@ -4430,6 +4392,25 @@
       }
     },
     {
+      "slug": "20261001-introducing-clef-our-open-source-decision-models-and-new-rl-fine-ebb2d785",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/clef-decision-models/",
+      "publishedAt": "2026-10-01T15:34:02.000Z",
+      "discoveredAt": "2026-10-01T22:39:34.584Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+          "summary": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tu…"
+        },
+        "fr": {
+          "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+          "summary": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tu…"
+        }
+      }
+    },
+    {
       "slug": "20261005-making-amazon-quick-enterprise-ready-automated-auditable-cross-a-b9ec7ad0",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -4449,21 +4430,21 @@
       }
     },
     {
-      "slug": "20261001-how-to-evaluate-ai-agents-from-tool-calls-to-task-completion-f6a9f53b",
-      "topic": "AI Systems",
+      "slug": "20261001-benchmarking-llm-inference-at-scale-with-aiperf-88c32b0b",
+      "topic": "AI Performance",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-evaluate-ai-agents-from-tool-calls-to-task-completion/",
-      "publishedAt": "2026-10-01T18:31:25.000Z",
+      "href": "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
+      "publishedAt": "2026-10-01T18:31:26.000Z",
       "discoveredAt": "2026-10-01T22:39:34.584Z",
       "locales": {
         "en": {
-          "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
-          "summary": "When you ship an AI agent, the key question is whether it can execute a chain of work across dozens of sequential tool calls against a live environment, and..."
+          "title": "Benchmarking LLM Inference at Scale with AIPerf",
+          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
         },
         "fr": {
-          "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
-          "summary": "When you ship an AI agent, the key question is whether it can execute a chain of work across dozens of sequential tool calls against a live environment, and..."
+          "title": "Benchmarking LLM Inference at Scale with AIPerf",
+          "summary": "You’re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send..."
         }
       }
     },
@@ -4487,40 +4468,21 @@
       }
     },
     {
-      "slug": "20260922-transformers-now-runs-llamacpp-quants-98acfe91",
-      "topic": "AI Systems",
+      "slug": "20260922-how-uk-aisi-and-evaleval-are-making-benchmark-results-reproducib-2960c64a",
+      "topic": "AI Performance",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "href": "https://huggingface.co/blog/evaleval-aisi",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
       "locales": {
         "en": {
-          "title": "Transformers now runs llama.cpp quants",
-          "summary": "Transformers now runs llama.cpp quants"
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
         },
         "fr": {
-          "title": "Transformers now runs llama.cpp quants",
-          "summary": "Transformers now runs llama.cpp quants"
-        }
-      }
-    },
-    {
-      "slug": "20261001-one-year-later-sovereign-ai-and-the-fight-for-choice-aff28bc6",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
-      "publishedAt": "2026-10-01T13:04:19.000Z",
-      "discoveredAt": "2026-10-01T13:08:39.943Z",
-      "locales": {
-        "en": {
-          "title": "One year later: Sovereign AI and the fight for choice",
-          "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice."
-        },
-        "fr": {
-          "title": "One year later: Sovereign AI and the fight for choice",
-          "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice."
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
         }
       }
     },
@@ -4559,6 +4521,44 @@
         "fr": {
           "title": "Recreating a 70-year love story frame by frame",
           "summary": "Discover how filmmakers and Google DeepMind used AI to recreate a couple's unrecorded past in the short film \"Love, Rendered.\""
+        }
+      }
+    },
+    {
+      "slug": "20260901-kubernetes-v137-etcd-rangestream-cuts-memory-use-on-large-list-r-b472f2bb",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/",
+      "publishedAt": "2026-09-01T18:30:00.000Z",
+      "discoveredAt": "2026-10-08T13:24:58.220Z",
+      "locales": {
+        "en": {
+          "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
+          "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
+        },
+        "fr": {
+          "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
+          "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable…"
+        }
+      }
+    },
+    {
+      "slug": "20261001-one-year-later-sovereign-ai-and-the-fight-for-choice-aff28bc6",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
+      "publishedAt": "2026-10-01T13:04:19.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "One year later: Sovereign AI and the fight for choice",
+          "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice."
+        },
+        "fr": {
+          "title": "One year later: Sovereign AI and the fight for choice",
+          "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice."
         }
       }
     }

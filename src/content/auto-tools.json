@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T23:03:25.028Z",
+  "updatedAt": "2026-10-08T13:24:59.349Z",
   "items": [
     {
       "slug": "20261031-vercel-laya-decision-model-now-available-on-ai-gateway-free-thro-e15fec79",
@@ -23,22 +23,62 @@
       }
     },
     {
-      "slug": "20261007-postgresql-postgresql-1519-1711-minor-release-action-may-be-requ-00cf1171",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261008-supabase-supabase-middleware-10-c639ad09",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/postgres-15-19-17-11-breaking-changes",
-      "publishedAt": "2026-10-07T23:03:25.028Z",
-      "discoveredAt": "2026-10-07T23:03:25.028Z",
+      "href": "https://supabase.com/changelog/supabase-middleware-1-0",
+      "publishedAt": "2026-10-08T13:24:59.349Z",
+      "discoveredAt": "2026-10-08T13:24:59.349Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
-          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
         },
         "fr": {
-          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
-          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
+        }
+      }
+    },
+    {
+      "slug": "20261008-cloudflare-bridging-technical-depth-and-usability-the-story-behi-5ce64f51",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/radar-redesign/",
+      "publishedAt": "2026-10-08T13:00:00.000Z",
+      "discoveredAt": "2026-10-08T13:24:59.349Z",
+      "locales": {
+        "en": {
+          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map a…"
+        },
+        "fr": {
+          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map a…"
+        }
+      }
+    },
+    {
+      "slug": "20261007-nodejs-nodejs-26111-current-59749e32",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.11.1",
+      "publishedAt": "2026-10-07T23:56:26.000Z",
+      "discoveredAt": "2026-10-08T13:24:59.349Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.11.1 (Current)",
+          "summary": "Node.js 26.11.1 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.11.1 (Current)",
+          "summary": "Node.js 26.11.1 (Current)"
         }
       }
     },
@@ -99,46 +139,6 @@
         "fr": {
           "title": "Multimodal open d1 decision models for the edge",
           "summary": "Multimodal open d1 decision models for the edge"
-        }
-      }
-    },
-    {
-      "slug": "20261007-cloudflare-building-an-evidence-grounded-agentic-security-operat-efc47ac2",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/agentic-security-operations/",
-      "publishedAt": "2026-10-07T16:30:36.000Z",
-      "discoveredAt": "2026-10-07T23:03:25.028Z",
-      "locales": {
-        "en": {
-          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
-          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system…"
-        },
-        "fr": {
-          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
-          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system…"
-        }
-      }
-    },
-    {
-      "slug": "20261007-nodejs-nodejs-26110-current-5b67963f",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.11.0",
-      "publishedAt": "2026-10-07T14:45:09.000Z",
-      "discoveredAt": "2026-10-07T23:03:25.028Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.11.0 (Current)",
-          "summary": "Node.js 26.11.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.11.0 (Current)",
-          "summary": "Node.js 26.11.0 (Current)"
         }
       }
     },
@@ -383,42 +383,82 @@
       }
     },
     {
-      "slug": "20261007-vercel-microfrontends-routing-is-now-free-for-firewall-mitigated-11a86591",
+      "slug": "20261008-vercel-ai-gateway-adds-confidence-based-decision-fallbacks-ai-ga-61b4e138",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/microfrontends-routing-is-now-free-for-firewall-mitigated-traffic",
-      "publishedAt": "2026-10-07T23:03:25.028Z",
-      "discoveredAt": "2026-10-07T23:03:25.028Z",
+      "href": "https://vercel.com/changelog/confidence-based-decision-fallbacks",
+      "publishedAt": "2026-10-08T13:24:59.349Z",
+      "discoveredAt": "2026-10-08T13:24:59.349Z",
       "locales": {
         "en": {
-          "title": "Microfrontends Routing is now free for Firewall-mitigated traffic Requests that are denied, challenged, or rate limited by the Vercel Firewall do not count towards billed Microfrontends Routing requests. Sage Abraham Software Engineer",
-          "summary": "7 October 7 Oct"
+          "title": "AI Gateway adds confidence-based decision fallbacks AI Gateway can now escalate a decision to a fallback model when the primary model's answer trips a confidence condition you set. Rohan Taneja Software Engineer, AI Gateway",
+          "summary": "6 October 6 Oct"
         },
         "fr": {
-          "title": "Microfrontends Routing is now free for Firewall-mitigated traffic Requests that are denied, challenged, or rate limited by the Vercel Firewall do not count towards billed Microfrontends Routing requests. Sage Abraham Software Engineer",
-          "summary": "7 October 7 Oct"
+          "title": "AI Gateway adds confidence-based decision fallbacks AI Gateway can now escalate a decision to a fallback model when the primary model's answer trips a confidence condition you set. Rohan Taneja Software Engineer, AI Gateway",
+          "summary": "6 October 6 Oct"
         }
       }
     },
     {
-      "slug": "20261007-supabase-health-check-advisors-ff04ed6f",
+      "slug": "20261008-supabase-logs-usage-based-pricing-f9fe585d",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/50577-health-check-advisors",
-      "publishedAt": "2026-10-07T23:03:25.028Z",
+      "href": "https://supabase.com/changelog/logs-usage-based-pricing",
+      "publishedAt": "2026-10-08T13:24:59.349Z",
+      "discoveredAt": "2026-10-08T13:24:59.349Z",
+      "locales": {
+        "en": {
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
+        },
+        "fr": {
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
+        }
+      }
+    },
+    {
+      "slug": "20261007-cloudflare-building-an-evidence-grounded-agentic-security-operat-efc47ac2",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/agentic-security-operations/",
+      "publishedAt": "2026-10-07T16:30:36.000Z",
       "discoveredAt": "2026-10-07T23:03:25.028Z",
       "locales": {
         "en": {
-          "title": "Health Check Advisors",
-          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
+          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system…"
         },
         "fr": {
-          "title": "Health Check Advisors",
-          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
+          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system…"
+        }
+      }
+    },
+    {
+      "slug": "20261007-nodejs-nodejs-26110-current-5b67963f",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.11.0",
+      "publishedAt": "2026-10-07T14:45:09.000Z",
+      "discoveredAt": "2026-10-07T23:03:25.028Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.11.0 (Current)",
+          "summary": "Node.js 26.11.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.11.0 (Current)",
+          "summary": "Node.js 26.11.0 (Current)"
         }
       }
     },
@@ -479,46 +519,6 @@
         "fr": {
           "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
           "summary": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO"
-        }
-      }
-    },
-    {
-      "slug": "20261006-cloudflare-the-keys-to-the-internet-change-on-october-11-are-you-1424f8a7",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-      "publishedAt": "2026-10-06T17:50:11.000Z",
-      "discoveredAt": "2026-10-06T22:38:45.590Z",
-      "locales": {
-        "en": {
-          "title": "The keys to the Internet change on October 11. Are you ready?",
-          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollove…"
-        },
-        "fr": {
-          "title": "The keys to the Internet change on October 11. Are you ready?",
-          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollove…"
-        }
-      }
-    },
-    {
-      "slug": "20260923-nodejs-nodejs-22233-lts-095114ea",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v22.23.3",
-      "publishedAt": "2026-09-23T18:22:40.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 22.23.3 (LTS)",
-          "summary": "Node.js 22.23.3 (LTS)"
-        },
-        "fr": {
-          "title": "Node.js 22.23.3 (LTS)",
-          "summary": "Node.js 22.23.3 (LTS)"
         }
       }
     },
@@ -763,42 +763,82 @@
       }
     },
     {
-      "slug": "20261007-vercel-openai-decisions-api-now-available-on-ai-gateway-vercel-a-0e16efad",
+      "slug": "20261008-vercel-nano-banana-21-now-available-on-ai-gateway-generate-and-e-8b62db98",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/openai-decisions-api-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-07T23:03:25.028Z",
-      "discoveredAt": "2026-10-07T23:03:25.028Z",
+      "href": "https://vercel.com/changelog/nano-banana-2-1-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-08T13:24:59.349Z",
+      "discoveredAt": "2026-10-08T13:24:59.349Z",
       "locales": {
         "en": {
-          "title": "OpenAI Decisions API now available on AI Gateway Vercel AI Gateway now supports OpenAI's Decisions API, with GPT-6 Luna Decisions and other decision models through the OpenAI SDK, AI SDK, and AI CLI +2 Jerilyn Zheng, Nick Oates, and 2 others",
-          "summary": "Sage Abraham Software Engineer"
+          "title": "Nano Banana 2.1 now available on AI Gateway Generate and edit images with Nano Banana 2.1 through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "Rohan Taneja Software Engineer, AI Gateway"
         },
         "fr": {
-          "title": "OpenAI Decisions API now available on AI Gateway Vercel AI Gateway now supports OpenAI's Decisions API, with GPT-6 Luna Decisions and other decision models through the OpenAI SDK, AI SDK, and AI CLI +2 Jerilyn Zheng, Nick Oates, and 2 others",
-          "summary": "Sage Abraham Software Engineer"
+          "title": "Nano Banana 2.1 now available on AI Gateway Generate and edit images with Nano Banana 2.1 through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "Rohan Taneja Software Engineer, AI Gateway"
         }
       }
     },
     {
-      "slug": "20261007-supabase-database-replication-is-now-pipelines-43d4a2f0",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
+      "slug": "20261007-postgresql-postgresql-1519-1711-minor-release-action-may-be-requ-00cf1171",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/database-replication-renamed-pipelines",
-      "publishedAt": "2026-10-07T13:18:37.807Z",
-      "discoveredAt": "2026-10-07T13:18:37.807Z",
+      "href": "https://supabase.com/changelog/postgres-15-19-17-11-breaking-changes",
+      "publishedAt": "2026-10-07T23:03:25.028Z",
+      "discoveredAt": "2026-10-07T23:03:25.028Z",
       "locales": {
         "en": {
-          "title": "Database Replication is now Pipelines",
-          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
+          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
+          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
         },
         "fr": {
-          "title": "Database Replication is now Pipelines",
-          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
+          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
+          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+        }
+      }
+    },
+    {
+      "slug": "20261006-cloudflare-the-keys-to-the-internet-change-on-october-11-are-you-1424f8a7",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+      "publishedAt": "2026-10-06T17:50:11.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "locales": {
+        "en": {
+          "title": "The keys to the Internet change on October 11. Are you ready?",
+          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollove…"
+        },
+        "fr": {
+          "title": "The keys to the Internet change on October 11. Are you ready?",
+          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollove…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-nodejs-nodejs-22233-lts-095114ea",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v22.23.3",
+      "publishedAt": "2026-09-23T18:22:40.000Z",
+      "discoveredAt": "2026-09-23T21:28:36.478Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 22.23.3 (LTS)",
+          "summary": "Node.js 22.23.3 (LTS)"
+        },
+        "fr": {
+          "title": "Node.js 22.23.3 (LTS)",
+          "summary": "Node.js 22.23.3 (LTS)"
         }
       }
     },
@@ -859,46 +899,6 @@
         "fr": {
           "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
           "summary": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance"
-        }
-      }
-    },
-    {
-      "slug": "20261005-cloudflare-everything-we-launched-during-birthday-week-2026-0536bfa8",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
-      "publishedAt": "2026-10-05T13:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
-      "locales": {
-        "en": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
-        },
-        "fr": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
-        }
-      }
-    },
-    {
-      "slug": "20260922-nodejs-nodejs-26100-current-7d6e3532",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.10.0",
-      "publishedAt": "2026-09-22T09:03:49.000Z",
-      "discoveredAt": "2026-09-22T11:34:36.830Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.10.0 (Current)",
-          "summary": "Node.js 26.10.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.10.0 (Current)",
-          "summary": "Node.js 26.10.0 (Current)"
         }
       }
     },
@@ -1143,42 +1143,82 @@
       }
     },
     {
-      "slug": "20261007-vercel-claude-haiku-55-now-available-on-ai-gateway-call-claude-h-e99f53f0",
+      "slug": "20261008-vercel-mistral-large-4-now-available-on-ai-gateway-call-mistral--e262ace0",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/claude-haiku-5-5-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-07T23:03:25.028Z",
-      "discoveredAt": "2026-10-07T23:03:25.028Z",
+      "href": "https://vercel.com/changelog/mistral-large-4-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-08T13:24:59.349Z",
+      "discoveredAt": "2026-10-08T13:24:59.349Z",
       "locales": {
         "en": {
-          "title": "Claude Haiku 5.5 now available on AI Gateway Call Claude Haiku 5.5 through Vercel AI Gateway with one API key: no provider account, automatic fallbacks, spend tracking, and traces on every request. Rohan Taneja, Zachary Chen, and 1 other",
-          "summary": "+2 Jerilyn Zheng, Nick Oates, and 2 others"
+          "title": "Mistral Large 4 now available on AI Gateway Call Mistral Large 4 through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         },
         "fr": {
-          "title": "Claude Haiku 5.5 now available on AI Gateway Call Claude Haiku 5.5 through Vercel AI Gateway with one API key: no provider account, automatic fallbacks, spend tracking, and traces on every request. Rohan Taneja, Zachary Chen, and 1 other",
-          "summary": "+2 Jerilyn Zheng, Nick Oates, and 2 others"
+          "title": "Mistral Large 4 now available on AI Gateway Call Mistral Large 4 through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
         }
       }
     },
     {
-      "slug": "20261007-cursor-observability-on-auto-pilot-d72f6df8",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
+      "slug": "20261007-supabase-health-check-advisors-ff04ed6f",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/50403-observability-autopilot",
-      "publishedAt": "2026-10-07T13:18:37.807Z",
-      "discoveredAt": "2026-10-07T13:18:37.807Z",
+      "href": "https://supabase.com/changelog/50577-health-check-advisors",
+      "publishedAt": "2026-10-07T23:03:25.028Z",
+      "discoveredAt": "2026-10-07T23:03:25.028Z",
       "locales": {
         "en": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
+          "title": "Health Check Advisors",
+          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
         },
         "fr": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
+          "title": "Health Check Advisors",
+          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
+        }
+      }
+    },
+    {
+      "slug": "20261005-cloudflare-everything-we-launched-during-birthday-week-2026-0536bfa8",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:16.644Z",
+      "locales": {
+        "en": {
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+        },
+        "fr": {
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+        }
+      }
+    },
+    {
+      "slug": "20260922-nodejs-nodejs-26100-current-7d6e3532",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.10.0",
+      "publishedAt": "2026-09-22T09:03:49.000Z",
+      "discoveredAt": "2026-09-22T11:34:36.830Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.10.0 (Current)",
+          "summary": "Node.js 26.10.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.10.0 (Current)",
+          "summary": "Node.js 26.10.0 (Current)"
         }
       }
     },
@@ -1239,46 +1279,6 @@
         "fr": {
           "title": "The Agent Said It Was Done. The Database Disagreed.",
           "summary": "The Agent Said It Was Done. The Database Disagreed."
-        }
-      }
-    },
-    {
-      "slug": "20261005-cloudflare-one-year-later-the-power-of-1111-interns-523bb8b1",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/one-year-later-1111-interns/",
-      "publishedAt": "2026-10-05T13:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
-      "locales": {
-        "en": {
-          "title": "One year later: the power of 1.1.1.1 interns",
-          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns pro…"
-        },
-        "fr": {
-          "title": "One year later: the power of 1.1.1.1 interns",
-          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns pro…"
-        }
-      }
-    },
-    {
-      "slug": "20260916-nodejs-nodejs-2690-current-077aebee",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.9.0",
-      "publishedAt": "2026-09-16T18:17:42.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.9.0 (Current)",
-          "summary": "Node.js 26.9.0 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.9.0 (Current)",
-          "summary": "Node.js 26.9.0 (Current)"
         }
       }
     },
@@ -1523,42 +1523,82 @@
       }
     },
     {
-      "slug": "20261007-vercel-glyph-cluster-is-now-available-in-stealth-for-free-on-ai--128d41b1",
+      "slug": "20261007-vercel-microfrontends-routing-is-now-free-for-firewall-mitigated-11a86591",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/glyph-cluster-is-now-available-in-stealth-for-free-on-ai-gateway",
+      "href": "https://vercel.com/changelog/microfrontends-routing-is-now-free-for-firewall-mitigated-traffic",
       "publishedAt": "2026-10-07T23:03:25.028Z",
       "discoveredAt": "2026-10-07T23:03:25.028Z",
       "locales": {
         "en": {
-          "title": "Glyph Cluster is now available in stealth for free on AI Gateway Call the stealth model Glyph Cluster for free through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "g\"/> Rohan Taneja, Zachary Chen, and 1 other"
+          "title": "Microfrontends Routing is now free for Firewall-mitigated traffic Requests that are denied, challenged, or rate limited by the Vercel Firewall do not count towards billed Microfrontends Routing requests. Sage Abraham Software Engineer",
+          "summary": "7 October 7 Oct"
         },
         "fr": {
-          "title": "Glyph Cluster is now available in stealth for free on AI Gateway Call the stealth model Glyph Cluster for free through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "g\"/> Rohan Taneja, Zachary Chen, and 1 other"
+          "title": "Microfrontends Routing is now free for Firewall-mitigated traffic Requests that are denied, challenged, or rate limited by the Vercel Firewall do not count towards billed Microfrontends Routing requests. Sage Abraham Software Engineer",
+          "summary": "7 October 7 Oct"
         }
       }
     },
     {
-      "slug": "20261007-supabase-read-replicas-moved-to-project-settings-infrastructure-c2cab453",
+      "slug": "20261007-supabase-database-replication-is-now-pipelines-43d4a2f0",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/read-replicas-moved-to-infrastructure",
+      "href": "https://supabase.com/changelog/database-replication-renamed-pipelines",
       "publishedAt": "2026-10-07T13:18:37.807Z",
       "discoveredAt": "2026-10-07T13:18:37.807Z",
       "locales": {
         "en": {
-          "title": "Read replicas moved to Project Settings → Infrastructure",
-          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
+          "title": "Database Replication is now Pipelines",
+          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
         },
         "fr": {
-          "title": "Read replicas moved to Project Settings → Infrastructure",
-          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
+          "title": "Database Replication is now Pipelines",
+          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
+        }
+      }
+    },
+    {
+      "slug": "20261005-cloudflare-one-year-later-the-power-of-1111-interns-523bb8b1",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/one-year-later-1111-interns/",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:16.644Z",
+      "locales": {
+        "en": {
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns pro…"
+        },
+        "fr": {
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns pro…"
+        }
+      }
+    },
+    {
+      "slug": "20260916-nodejs-nodejs-2690-current-077aebee",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.9.0",
+      "publishedAt": "2026-09-16T18:17:42.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.9.0 (Current)",
+          "summary": "Node.js 26.9.0 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.9.0 (Current)",
+          "summary": "Node.js 26.9.0 (Current)"
         }
       }
     },
@@ -1619,46 +1659,6 @@
         "fr": {
           "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
           "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta"
-        }
-      }
-    },
-    {
-      "slug": "20261002-cloudflare-8-major-updates-to-cloudflare-observability-423bae1f",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/one-observability-platform/",
-      "publishedAt": "2026-10-02T18:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:16.644Z",
-      "locales": {
-        "en": {
-          "title": "8 major updates to Cloudflare Observability",
-          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
-        },
-        "fr": {
-          "title": "8 major updates to Cloudflare Observability",
-          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
-        }
-      }
-    },
-    {
-      "slug": "20260909-nodejs-nodejs-2682-current-dcb9ac31",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v26.8.2",
-      "publishedAt": "2026-09-09T16:09:17.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 26.8.2 (Current)",
-          "summary": "Node.js 26.8.2 (Current)"
-        },
-        "fr": {
-          "title": "Node.js 26.8.2 (Current)",
-          "summary": "Node.js 26.8.2 (Current)"
         }
       }
     },
@@ -1903,42 +1903,82 @@
       }
     },
     {
-      "slug": "20261007-vercel-timestamp-attributes-are-now-supported-in-vercel-flags-ve-ed9467d2",
+      "slug": "20261007-vercel-openai-decisions-api-now-available-on-ai-gateway-vercel-a-0e16efad",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/timestamp-attributes-are-now-supported-in-vercel-flags",
+      "href": "https://vercel.com/changelog/openai-decisions-api-now-available-on-ai-gateway",
       "publishedAt": "2026-10-07T23:03:25.028Z",
       "discoveredAt": "2026-10-07T23:03:25.028Z",
       "locales": {
         "en": {
-          "title": "Timestamp attributes are now supported in Vercel Flags Vercel Flags now support timestamp attributes for date-based rule evaluation. Enable flags between two dates, for account age, or other time-based conditions. Vincent Derks Software Engineer",
-          "summary": "\"/> Kevin Dawkins, Zachary Chen, and 1 other"
+          "title": "OpenAI Decisions API now available on AI Gateway Vercel AI Gateway now supports OpenAI's Decisions API, with GPT-6 Luna Decisions and other decision models through the OpenAI SDK, AI SDK, and AI CLI +2 Jerilyn Zheng, Nick Oates, and 2 others",
+          "summary": "Sage Abraham Software Engineer"
         },
         "fr": {
-          "title": "Timestamp attributes are now supported in Vercel Flags Vercel Flags now support timestamp attributes for date-based rule evaluation. Enable flags between two dates, for account age, or other time-based conditions. Vincent Derks Software Engineer",
-          "summary": "\"/> Kevin Dawkins, Zachary Chen, and 1 other"
+          "title": "OpenAI Decisions API now available on AI Gateway Vercel AI Gateway now supports OpenAI's Decisions API, with GPT-6 Luna Decisions and other decision models through the OpenAI SDK, AI SDK, and AI CLI +2 Jerilyn Zheng, Nick Oates, and 2 others",
+          "summary": "Sage Abraham Software Engineer"
         }
       }
     },
     {
-      "slug": "20261006-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
+      "slug": "20261007-cursor-observability-on-auto-pilot-d72f6df8",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/multigres-private-alpha",
-      "publishedAt": "2026-10-06T22:38:45.590Z",
-      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "href": "https://supabase.com/changelog/50403-observability-autopilot",
+      "publishedAt": "2026-10-07T13:18:37.807Z",
+      "discoveredAt": "2026-10-07T13:18:37.807Z",
       "locales": {
         "en": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "Observability on Auto-Pilot",
+          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
         },
         "fr": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "Observability on Auto-Pilot",
+          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
+        }
+      }
+    },
+    {
+      "slug": "20261002-cloudflare-8-major-updates-to-cloudflare-observability-423bae1f",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/one-observability-platform/",
+      "publishedAt": "2026-10-02T18:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:16.644Z",
+      "locales": {
+        "en": {
+          "title": "8 major updates to Cloudflare Observability",
+          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
+        },
+        "fr": {
+          "title": "8 major updates to Cloudflare Observability",
+          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
+        }
+      }
+    },
+    {
+      "slug": "20260909-nodejs-nodejs-2682-current-dcb9ac31",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v26.8.2",
+      "publishedAt": "2026-09-09T16:09:17.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 26.8.2 (Current)",
+          "summary": "Node.js 26.8.2 (Current)"
+        },
+        "fr": {
+          "title": "Node.js 26.8.2 (Current)",
+          "summary": "Node.js 26.8.2 (Current)"
         }
       }
     },
@@ -1999,46 +2039,6 @@
         "fr": {
           "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
           "summary": "AutoSynthData: Generating Training Data for Enterprise Agents"
-        }
-      }
-    },
-    {
-      "slug": "20261002-cloudflare-streamline-custom-video-pipelines-with-cloudflare-str-2464ff1b",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/streamline/",
-      "publishedAt": "2026-10-02T16:13:45.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
-      "locales": {
-        "en": {
-          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
-          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
-        },
-        "fr": {
-          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
-          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
-        }
-      }
-    },
-    {
-      "slug": "20260909-nodejs-nodejs-24210-lts-48e7f627",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v24.21.0",
-      "publishedAt": "2026-09-09T11:55:20.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Node.js 24.21.0 (LTS)",
-          "summary": "Node.js 24.21.0 (LTS)"
-        },
-        "fr": {
-          "title": "Node.js 24.21.0 (LTS)",
-          "summary": "Node.js 24.21.0 (LTS)"
         }
       }
     },
@@ -2283,42 +2283,82 @@
       }
     },
     {
-      "slug": "20261007-vercel-microsoft-ai-models-are-now-available-on-ai-gateway-micro-a616128c",
+      "slug": "20261007-vercel-claude-haiku-55-now-available-on-ai-gateway-call-claude-h-e99f53f0",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/microsoft-ai-models-are-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-07T13:18:37.807Z",
-      "discoveredAt": "2026-10-07T13:18:37.807Z",
+      "href": "https://vercel.com/changelog/claude-haiku-5-5-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-07T23:03:25.028Z",
+      "discoveredAt": "2026-10-07T23:03:25.028Z",
       "locales": {
         "en": {
-          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Claude Haiku 5.5 now available on AI Gateway Call Claude Haiku 5.5 through Vercel AI Gateway with one API key: no provider account, automatic fallbacks, spend tracking, and traces on every request. Rohan Taneja, Zachary Chen, and 1 other",
+          "summary": "+2 Jerilyn Zheng, Nick Oates, and 2 others"
         },
         "fr": {
-          "title": "Microsoft AI models are now available on AI Gateway Microsoft AI's latest audio models for speech and transcription are available on AI Gateway. Kevin Dawkins, Zachary Chen, and 1 other",
-          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+          "title": "Claude Haiku 5.5 now available on AI Gateway Call Claude Haiku 5.5 through Vercel AI Gateway with one API key: no provider account, automatic fallbacks, spend tracking, and traces on every request. Rohan Taneja, Zachary Chen, and 1 other",
+          "summary": "+2 Jerilyn Zheng, Nick Oates, and 2 others"
         }
       }
     },
     {
-      "slug": "20261006-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261007-supabase-read-replicas-moved-to-project-settings-infrastructure-c2cab453",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/orioledb-public-beta",
-      "publishedAt": "2026-10-06T22:38:45.590Z",
-      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "href": "https://supabase.com/changelog/read-replicas-moved-to-infrastructure",
+      "publishedAt": "2026-10-07T13:18:37.807Z",
+      "discoveredAt": "2026-10-07T13:18:37.807Z",
       "locales": {
         "en": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+          "title": "Read replicas moved to Project Settings → Infrastructure",
+          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
         },
         "fr": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+          "title": "Read replicas moved to Project Settings → Infrastructure",
+          "summary": "Improvement Read replicas now live under Project Settings → Infrastructure. Database → Replication is for Pipelines destinations only. No API changes."
+        }
+      }
+    },
+    {
+      "slug": "20261002-cloudflare-streamline-custom-video-pipelines-with-cloudflare-str-2464ff1b",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/streamline/",
+      "publishedAt": "2026-10-02T16:13:45.000Z",
+      "discoveredAt": "2026-10-02T22:11:36.141Z",
+      "locales": {
+        "en": {
+          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
+        },
+        "fr": {
+          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
+        }
+      }
+    },
+    {
+      "slug": "20260909-nodejs-nodejs-24210-lts-48e7f627",
+      "toolName": "Node.js",
+      "category": "Systems & Backend",
+      "source": "Node.js Blog",
+      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
+      "href": "https://nodejs.org/en/blog/release/v24.21.0",
+      "publishedAt": "2026-09-09T11:55:20.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Node.js 24.21.0 (LTS)",
+          "summary": "Node.js 24.21.0 (LTS)"
+        },
+        "fr": {
+          "title": "Node.js 24.21.0 (LTS)",
+          "summary": "Node.js 24.21.0 (LTS)"
         }
       }
     },
@@ -2359,46 +2399,6 @@
         "fr": {
           "title": "Control How Your GPU Shares Work with Green Contexts",
           "summary": "GPU applications increasingly consist of multiple independent components running at the same time within a single process: a latency-sensitive operator..."
-        }
-      }
-    },
-    {
-      "slug": "20261001-hugging-face-introducing-olmo-core-3-open-scalable-training-infr-0bf00b70",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/olmocore3",
-      "publishedAt": "2026-10-01T15:01:43.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
-        },
-        "fr": {
-          "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-          "summary": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs"
-        }
-      }
-    },
-    {
-      "slug": "20261002-cloudflare-introducing-web-search-api-via-ai-gateway-dcd0ac26",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/introducing-web-search-api/",
-      "publishedAt": "2026-10-02T13:28:10.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Web Search API via AI Gateway",
-          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs,…"
-        },
-        "fr": {
-          "title": "Introducing Web Search API via AI Gateway",
-          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs,…"
         }
       }
     }
