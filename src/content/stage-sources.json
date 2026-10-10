@@ -1,0 +1,54 @@
+{
+  "note": "Employer job boards polled by scripts/find-stages.mjs. Seeded from the boards already represented in stages.json, because an employer who took a student once will take another. Add a line to widen the search; nothing here is scraped — every entry is a documented public JSON API.",
+  "greenhouse": [
+    "celonis",
+    "figma",
+    "robinhood",
+    "togetherai"
+  ],
+  "ashby": [
+    "cohere",
+    "mistral.ai"
+  ],
+  "smartrecruiters": [
+    "BoschGroup",
+    "Wavestone1"
+  ],
+  "workday": [
+    {
+      "tenant": "autodesk",
+      "pod": "wd1",
+      "site": "Ext"
+    },
+    {
+      "tenant": "nvidia",
+      "pod": "wd5",
+      "site": "NVIDIAExternalCareerSite"
+    },
+    {
+      "tenant": "nxp",
+      "pod": "wd3",
+      "site": "careers"
+    },
+    {
+      "tenant": "philips",
+      "pod": "wd3",
+      "site": "jobs-and-careers"
+    }
+  ],
+  "displayNames": {
+    "celonis": "Celonis",
+    "figma": "Figma",
+    "robinhood": "Robinhood",
+    "togetherai": "Together AI",
+    "cohere": "Cohere",
+    "mistral.ai": "Mistral AI",
+    "BoschGroup": "Robert Bosch",
+    "Wavestone1": "Wavestone",
+    "autodesk": "Autodesk",
+    "nvidia": "NVIDIA",
+    "nxp": "NXP Semiconductors",
+    "philips": "Philips"
+  },
+  "displayNamesNote": "A board slug is not a company name. Without this the agent proposed 'togetherai' and 'BoschGroup', which is how the board ends up looking machine-filled. Add a line whenever a board is added."
+}

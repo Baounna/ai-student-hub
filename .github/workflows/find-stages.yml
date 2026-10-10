@@ -1,0 +1,94 @@
+name: Internship Finder
+
+# The board only grew when somebody sat down and typed `npm run add:stage`.
+# Postings do not wait for that: fourteen closed in four days on 2026-10-06 and
+# 2026-10-10, and nothing was arriving to replace them. This looks for new ones.
+#
+# It PROPOSES. It never writes src/content/stages.json.
+#
+# The site tells a student that every link was opened and its page read by a
+# person, and that claim is the only reason this board is worth reading rather
+# than scraping. An agent that publishes straight to it makes the claim false
+# the first time it runs. So this commits a review file and opens one issue; a
+# human opens each link and pastes the command under the ones worth keeping.
+
+on:
+  schedule:
+    # Thursdays, deliberately offset from the Monday link check. The check
+    # removes what died; this proposes what replaces it, and splitting them
+    # means a week never passes with the board only shrinking.
+    - cron: "15 6 * * 4"
+  workflow_dispatch:
+
+concurrency:
+  group: ai-student-hub-main-automation
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Search the employer boards
+        id: find
+        run: |
+          set -o pipefail
+          node scripts/find-stages.mjs 2>&1 | tee "$RUNNER_TEMP/find.log"
+          count=$(node -e "
+            const d = require('./docs/agent/stage-candidates.json');
+            console.log(d.candidates.length);
+          ")
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+
+      # The agent only ever writes under docs/agent. Staging that path rather
+      # than -A is what stops a stray file riding along, which has happened
+      # twice in this repository.
+      - name: Commit the candidate list
+        run: |
+          if git diff --quiet -- docs/agent/stage-candidates.md docs/agent/stage-candidates.json; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "AI Student Hub Bot"
+          git config user.email "ai-student-hub-bot@users.noreply.github.com"
+          git add docs/agent/stage-candidates.md docs/agent/stage-candidates.json
+          git commit -m "chore(stages): refresh internship candidates
+
+          Proposed only. Nothing is added to the board until a person opens the
+          link and runs add:stage, because the site promises every listing was
+          read by a human."
+          git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+          git push
+
+      # One issue, reopened and updated — the same reason the watchdog and the
+      # link check work that way. A stream of alerts is how the last outage
+      # stayed invisible for eighty days.
+      - name: Open or update the review issue
+        if: always() && steps.find.outputs.count != '0' && steps.find.outputs.count != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="Internship candidates waiting for review"
+          BODY=$(printf '%s new posting(s) matched internship + AI/cyber and are not on the board yet.\n\nFull list with ready-to-paste commands: [docs/agent/stage-candidates.md](../blob/main/docs/agent/stage-candidates.md)\n\n**Open each link before adding it.** That is the step this agent does not do, and it is why the board is worth reading.\n\n```\n%s\n```\n' \
+            "${{ steps.find.outputs.count }}" "$(tail -n 20 "$RUNNER_TEMP/find.log" | tr -d '`')")
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
+          fi
