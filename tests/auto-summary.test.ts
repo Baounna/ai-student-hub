@@ -1,5 +1,6 @@
+import { readFileSync } from "node:fs";
 import { describe, it, expect } from "vitest";
-import { isUsableSummary, usableSummary, usableTitle } from "@/lib/auto-summary";
+import { isUsableSummary, usableSummary, usableTitle, decodeEntities } from "@/lib/auto-summary";
 import { getAutoNews } from "@/content/auto-news";
 import { getAutoTools } from "@/content/auto-tools";
 import { locales } from "@/i18n/config";
@@ -77,5 +78,40 @@ describe("the quality gate on machine-written text", () => {
     }
 
     expect(problems).toEqual([]);
+  });
+});
+
+describe("HTML entities from a feed", () => {
+  /**
+   * A Hugging Face title arrived as "The model that didn&apos;t exist" and
+   * reached the live news page with the escape intact, so a reader saw the
+   * literal characters. It also defeated the gate twice over: the entity WAS
+   * the markup the gate rejects, and the fallback it fell back to was built
+   * from the same undecoded title, so rejecting the summary produced a new
+   * string carrying the same escape.
+   */
+  it("decodes an escape before a reader ever sees it", () => {
+    expect(decodeEntities("didn&apos;t")).toBe("didn't");
+    expect(decodeEntities("A &amp; B")).toBe("A & B");
+    expect(decodeEntities("&#39;quoted&#39;")).toBe("'quoted'");
+    expect(decodeEntities("&#x27;hex&#x27;")).toBe("'hex'");
+    // Double-escaped, which is how this one arrived.
+    expect(decodeEntities("didn&amp;apos;t")).toBe("didn't");
+  });
+
+  it("does not let the fallback reintroduce what the gate removed", () => {
+    const out = usableSummary("", "The model that didn&apos;t exist", "Hugging Face Blog", "en");
+    expect(out).not.toMatch(/&[a-z]+;/i);
+    expect(out).toContain("didn't");
+  });
+
+  it("leaves ordinary text alone", () => {
+    expect(decodeEntities("A normal headline")).toBe("A normal headline");
+    expect(decodeEntities("")).toBe("");
+  });
+
+  it("decodes at ingestion too, so nothing new is written with one", () => {
+    const agent = readFileSync("scripts/auto-news-agent.mjs", "utf8");
+    expect(agent).toContain("decodeEntities");
   });
 });
