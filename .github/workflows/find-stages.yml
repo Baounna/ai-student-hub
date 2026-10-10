@@ -44,11 +44,14 @@ jobs:
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
 
+      # Discovery first, so a company added to the prospects list starts being
+      # polled the same week rather than waiting for somebody to notice. A
+      # prospect that has no board answers 404 and costs one request.
       - name: Search the employer boards
         id: find
         run: |
           set -o pipefail
-          node scripts/find-stages.mjs --write 2>&1 | tee "$RUNNER_TEMP/find.log"
+          node scripts/find-stages.mjs --discover --write 2>&1 | tee "$RUNNER_TEMP/find.log"
           count=$(node -e "
             const d = require('./docs/agent/stage-candidates.json');
             console.log(d.candidates.length);
@@ -68,13 +71,13 @@ jobs:
 
       - name: Commit the candidate list
         run: |
-          if git diff --quiet -- docs/agent/stage-candidates.md docs/agent/stage-candidates.json src/content/stages.json; then
+          if git diff --quiet -- docs/agent/stage-candidates.md docs/agent/stage-candidates.json src/content/stages.json src/content/stage-sources.json; then
             echo "Nothing changed."
             exit 0
           fi
           git config user.name "AI Student Hub Bot"
           git config user.email "ai-student-hub-bot@users.noreply.github.com"
-          git add docs/agent/stage-candidates.md docs/agent/stage-candidates.json src/content/stages.json
+          git add docs/agent/stage-candidates.md docs/agent/stage-candidates.json src/content/stages.json src/content/stage-sources.json
           git commit -m "chore(stages): add internships from employer job feeds
 
           Taken from the employers' own applicant-tracking APIs and stamped

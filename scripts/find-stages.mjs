@@ -53,8 +53,31 @@ const argv = process.argv.slice(2);
  * once in September", not a weaker one.
  */
 const WRITE = argv.includes("--write");
+/**
+ * --discover looks for employers the board has never heard of.
+ *
+ * Without it this polls the twelve boards seeded from stages.json, which is a
+ * closed loop: it finds new postings at Celonis and Bosch and can never find a
+ * company that is not already listed. The board would only ever deepen, never
+ * widen.
+ *
+ * None of these APIs publishes a directory, but all three answer by name: a
+ * board that exists returns 200 and its postings, one that does not returns
+ * 404. So a company is a hypothesis and the probe is the test. Confirmed
+ * boards are written into stage-sources.json and polled weekly from then on.
+ */
+const DISCOVER = argv.includes("--discover");
 /** A bad regex should cost a handful of wrong rows, not forty. */
 const WRITE_CAP = 15;
+/**
+ * And no more than this from any one employer in a run.
+ *
+ * The first widened run added fifteen listings of which twelve were Wavestone,
+ * because a consultancy with a hundred open internships drowns out nine other
+ * employers who have one each. The board already spreads employers when it
+ * renders; this stops one of them arriving in bulk in the first place.
+ */
+const PER_COMPANY_CAP = 4;
 const limitArg = Number.parseInt(argv[argv.indexOf("--limit") + 1] ?? "", 10);
 const LIMIT = Number.isFinite(limitArg) && limitArg > 0 ? Math.min(limitArg, 200) : 50;
 
@@ -275,7 +298,81 @@ async function fromWorkday({ tenant, pod, site }) {
   return { board: tenant, scanned, found };
 }
 
+/**
+ * A company name is not a board name. Greenhouse took "scaleai" and "dataiku"
+ * but refused "snyk" and "wandb"; Ashby took "elevenlabs" and "synthesia" and
+ * refused "huggingface". There is no rule, so each name is tried in a few
+ * plausible spellings and whatever answers is the truth.
+ */
+function slugVariants(name) {
+  const base = String(name).toLowerCase().replace(/[^a-z0-9]/g, "");
+  const dashed = String(name).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  return [...new Set([base, dashed, `${base}ai`, `${dashed}-ai`, base.replace(/ai$/, "")])].filter(Boolean);
+}
+
+async function discoverBoards(sources) {
+  const prospects = sources.prospects ?? [];
+  const known = new Set([
+    ...(sources.greenhouse ?? []),
+    ...(sources.ashby ?? []),
+    ...(sources.smartrecruiters ?? [])
+  ].map((b) => String(b).toLowerCase()));
+
+  const found = { greenhouse: [], ashby: [], smartrecruiters: [] };
+  for (const name of prospects) {
+    for (const slug of slugVariants(name)) {
+      if (known.has(slug.toLowerCase())) break;
+
+      const gh = await getJson(`https://boards-api.greenhouse.io/v1/boards/${slug}/jobs`);
+      if (Array.isArray(gh.data?.jobs) && gh.data.jobs.length) {
+        found.greenhouse.push(slug); known.add(slug.toLowerCase());
+        console.log(`  + greenhouse      ${slug} (${gh.data.jobs.length} postings)`);
+        break;
+      }
+      const ash = await getJson(`https://api.ashbyhq.com/posting-api/job-board/${slug}`);
+      if (Array.isArray(ash.data?.jobs) && ash.data.jobs.length) {
+        found.ashby.push(slug); known.add(slug.toLowerCase());
+        console.log(`  + ashby           ${slug} (${ash.data.jobs.length} postings)`);
+        break;
+      }
+      const sr = await getJson(`https://api.smartrecruiters.com/v1/companies/${slug}/postings?limit=1`);
+      if (Array.isArray(sr.data?.content) && sr.data.totalFound) {
+        found.smartrecruiters.push(slug); known.add(slug.toLowerCase());
+        console.log(`  + smartrecruiters ${slug} (${sr.data.totalFound} postings)`);
+        break;
+      }
+    }
+  }
+  return found;
+}
+
 const sources = JSON.parse(await fs.readFile(SOURCES, "utf8"));
+
+if (DISCOVER) {
+  console.log(`\n  Probing ${sources.prospects?.length ?? 0} companies for a job board.\n`);
+  const found = await discoverBoards(sources);
+  const added = found.greenhouse.length + found.ashby.length + found.smartrecruiters.length;
+  if (added) {
+    for (const key of ["greenhouse", "ashby", "smartrecruiters"]) {
+      sources[key] = [...new Set([...(sources[key] ?? []), ...found[key]])].sort();
+      for (const slug of found[key]) {
+        // A slug is not a company name, and the board is where that shows.
+        // A generated name is a placeholder, not an answer: this turns
+        // "figureai" into "Figure AI" rather than "Figureai", and the board
+        // still reads better when a person corrects it in the config.
+        sources.displayNames[slug] ??= slug
+          .replace(/-/g, " ")
+          .replace(/ai$/, " AI")
+          .replace(/\s+/g, " ")
+          .trim()
+          .replace(/\b([a-z])/g, (m) => m.toUpperCase())
+          .replace(/\bAi\b/g, "AI");
+      }
+    }
+    await fs.writeFile(SOURCES, `${JSON.stringify(sources, null, 2)}\n`);
+  }
+  console.log(`\n  ${added} new board${added === 1 ? "" : "s"} added to stage-sources.json\n`);
+}
 const DISPLAY_NAMES = sources.displayNames ?? {};
 const stages = JSON.parse(await fs.readFile(STAGES, "utf8"));
 
@@ -397,7 +494,14 @@ if (!picked.length) {
 let written = 0;
 if (WRITE) {
   const placeable = picked.filter((c) => c.country);
-  const toAdd = placeable.slice(0, WRITE_CAP);
+  const perCompany = new Map();
+  const spread = placeable.filter((c) => {
+    const seen = perCompany.get(c.company) ?? 0;
+    if (seen >= PER_COMPANY_CAP) return false;
+    perCompany.set(c.company, seen + 1);
+    return true;
+  });
+  const toAdd = spread.slice(0, WRITE_CAP);
   const existingIds = new Set(stages.items.map((i) => i.id));
   const rows = toAdd.map(toStage).filter((row) => !existingIds.has(row.id));
   if (rows.length) {
@@ -407,7 +511,8 @@ if (WRITE) {
     written = rows.length;
   }
   console.log(
-    `\n  --write: added ${written} of ${placeable.length} placeable (cap ${WRITE_CAP}); ` +
+    `\n  --write: added ${written} of ${spread.length} after spreading (cap ${WRITE_CAP}, ` +
+      `${PER_COMPANY_CAP} per employer); ` +
       `${picked.length - placeable.length} had no country and stay in the review file`
   );
 }

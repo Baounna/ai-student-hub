@@ -2,9 +2,44 @@
   "generatedAt": "2026-10-10",
   "boards": [
     {
+      "board": "algolia",
+      "scanned": 38,
+      "found": 0
+    },
+    {
+      "board": "anthropic",
+      "scanned": 645,
+      "found": 0
+    },
+    {
       "board": "celonis",
       "scanned": 226,
       "found": 5
+    },
+    {
+      "board": "cloudflare",
+      "scanned": 424,
+      "found": 0
+    },
+    {
+      "board": "databricks",
+      "scanned": 892,
+      "found": 1
+    },
+    {
+      "board": "datadog",
+      "scanned": 435,
+      "found": 0
+    },
+    {
+      "board": "dataiku",
+      "scanned": 17,
+      "found": 0
+    },
+    {
+      "board": "doctolib",
+      "scanned": 151,
+      "found": 1
     },
     {
       "board": "figma",
@@ -12,13 +47,48 @@
       "found": 2
     },
     {
+      "board": "figureai",
+      "scanned": 96,
+      "found": 1
+    },
+    {
+      "board": "jfrog",
+      "scanned": 66,
+      "found": 0
+    },
+    {
       "board": "robinhood",
       "scanned": 182,
       "found": 1
     },
     {
+      "board": "scaleai",
+      "scanned": 183,
+      "found": 0
+    },
+    {
+      "board": "stabilityai",
+      "scanned": 6,
+      "found": 0
+    },
+    {
       "board": "togetherai",
       "scanned": 80,
+      "found": 0
+    },
+    {
+      "board": "alan",
+      "scanned": 118,
+      "found": 0
+    },
+    {
+      "board": "backmarket",
+      "scanned": 32,
+      "found": 0
+    },
+    {
+      "board": "cerebras",
+      "scanned": 123,
       "found": 0
     },
     {
@@ -27,9 +97,99 @@
       "found": 1
     },
     {
+      "board": "deepl",
+      "scanned": 7,
+      "found": 0
+    },
+    {
+      "board": "dust",
+      "scanned": 23,
+      "found": 0
+    },
+    {
+      "board": "elevenlabs",
+      "scanned": 124,
+      "found": 0
+    },
+    {
+      "board": "hackerone",
+      "scanned": 8,
+      "found": 0
+    },
+    {
+      "board": "harvey",
+      "scanned": 350,
+      "found": 0
+    },
+    {
+      "board": "hopper",
+      "scanned": 19,
+      "found": 0
+    },
+    {
+      "board": "ledger",
+      "scanned": 10,
+      "found": 0
+    },
+    {
       "board": "mistral.ai",
       "scanned": 213,
       "found": 1
+    },
+    {
+      "board": "modal",
+      "scanned": 41,
+      "found": 1
+    },
+    {
+      "board": "openai",
+      "scanned": 815,
+      "found": 0
+    },
+    {
+      "board": "owkin",
+      "scanned": 5,
+      "found": 0
+    },
+    {
+      "board": "perplexity",
+      "scanned": 132,
+      "found": 3
+    },
+    {
+      "board": "photoroom",
+      "scanned": 14,
+      "found": 0
+    },
+    {
+      "board": "poolside",
+      "scanned": 2,
+      "found": 0
+    },
+    {
+      "board": "qonto",
+      "scanned": 49,
+      "found": 0
+    },
+    {
+      "board": "sierra",
+      "scanned": 195,
+      "found": 0
+    },
+    {
+      "board": "snyk",
+      "scanned": 22,
+      "found": 0
+    },
+    {
+      "board": "sorare",
+      "scanned": 2,
+      "found": 0
+    },
+    {
+      "board": "synthesia",
+      "scanned": 46,
+      "found": 0
     },
     {
       "board": "BoschGroup",
@@ -63,6 +223,76 @@
     }
   ],
   "candidates": [
+    {
+      "company": "Databricks",
+      "board": "databricks",
+      "role": "PhD GenAI Research Scientist Intern",
+      "location": "San Francisco, California",
+      "city": "San Francisco, California",
+      "country": "",
+      "href": "https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002",
+      "source": "greenhouse"
+    },
+    {
+      "company": "Doctolib",
+      "board": "doctolib",
+      "role": "Working Student B2C SEO & AI Search (x/f/m)",
+      "location": "Berlin, Berlin, Germany",
+      "city": "Berlin, Berlin",
+      "country": "DE",
+      "href": "https://job-boards.greenhouse.io/doctolib/jobs/8010483003",
+      "source": "greenhouse"
+    },
+    {
+      "company": "Figure AI",
+      "board": "figureai",
+      "role": "Security Engineer Intern [Winter 2027]",
+      "location": "San Jose, CA",
+      "city": "San Jose",
+      "country": "CA",
+      "href": "https://job-boards.greenhouse.io/figureai/jobs/4719593006",
+      "source": "greenhouse"
+    },
+    {
+      "company": "Modal",
+      "board": "modal",
+      "role": "ML Research Intern",
+      "location": "New York",
+      "city": "New York",
+      "country": "",
+      "href": "https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a",
+      "source": "ashby"
+    },
+    {
+      "company": "Perplexity",
+      "board": "perplexity",
+      "role": "Internship - Search Machine Learning Engineer",
+      "location": "Belgrade",
+      "city": "Belgrade",
+      "country": "",
+      "href": "https://jobs.ashbyhq.com/perplexity/9246cf02-26fd-4ae8-90c5-639c6e85e9e2",
+      "source": "ashby"
+    },
+    {
+      "company": "Perplexity",
+      "board": "perplexity",
+      "role": "Internship - Machine Learning Research Engineer",
+      "location": "Berlin",
+      "city": "Berlin",
+      "country": "",
+      "href": "https://jobs.ashbyhq.com/perplexity/b9e1ff15-d52a-46d5-abf0-26460f2a116c",
+      "source": "ashby"
+    },
+    {
+      "company": "Perplexity",
+      "board": "perplexity",
+      "role": "Internship - Search Machine Learning Engineer",
+      "location": "London",
+      "city": "London",
+      "country": "",
+      "href": "https://jobs.ashbyhq.com/perplexity/71168628-1998-47d3-87a9-be7bc56a430d",
+      "source": "ashby"
+    },
     {
       "company": "Robert Bosch",
       "board": "BoschGroup",

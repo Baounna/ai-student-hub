@@ -1,12 +1,75 @@
 # Internship candidates — 2026-10-10
 
-25 postings that match internship + AI/cyber and are not on the board yet.
+32 postings that match internship + AI/cyber and are not on the board yet.
 
 **Open each link before adding it.** That is the one step this agent does not do,
 and it is the reason the board is worth reading: the site tells a student every
 link was opened and its page read by a person. Nothing here has been.
 
 Copy the command under any posting you want to keep.
+
+### PhD GenAI Research Scientist Intern
+Databricks · San Francisco, California · via greenhouse
+
+<https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002>
+
+```
+npm run add:stage -- --role 'PhD GenAI Research Scientist Intern' --company 'Databricks' --city 'San Francisco, California' --deadline rolling --link 'https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002'
+```
+
+### Working Student B2C SEO & AI Search (x/f/m)
+Doctolib · Berlin, Berlin, Germany · via greenhouse
+
+<https://job-boards.greenhouse.io/doctolib/jobs/8010483003>
+
+```
+npm run add:stage -- --role 'Working Student B2C SEO & AI Search (x/f/m)' --company 'Doctolib' --city 'Berlin, Berlin' --country DE --deadline rolling --link 'https://job-boards.greenhouse.io/doctolib/jobs/8010483003'
+```
+
+### Security Engineer Intern [Winter 2027]
+Figure AI · San Jose, CA · via greenhouse
+
+<https://job-boards.greenhouse.io/figureai/jobs/4719593006>
+
+```
+npm run add:stage -- --role 'Security Engineer Intern [Winter 2027]' --company 'Figure AI' --city 'San Jose' --country CA --deadline rolling --link 'https://job-boards.greenhouse.io/figureai/jobs/4719593006'
+```
+
+### ML Research Intern
+Modal · New York · via ashby
+
+<https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a>
+
+```
+npm run add:stage -- --role 'ML Research Intern' --company 'Modal' --city 'New York' --deadline rolling --link 'https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a'
+```
+
+### Internship - Search Machine Learning Engineer
+Perplexity · Belgrade · via ashby
+
+<https://jobs.ashbyhq.com/perplexity/9246cf02-26fd-4ae8-90c5-639c6e85e9e2>
+
+```
+npm run add:stage -- --role 'Internship - Search Machine Learning Engineer' --company 'Perplexity' --city 'Belgrade' --deadline rolling --link 'https://jobs.ashbyhq.com/perplexity/9246cf02-26fd-4ae8-90c5-639c6e85e9e2'
+```
+
+### Internship - Machine Learning Research Engineer
+Perplexity · Berlin · via ashby
+
+<https://jobs.ashbyhq.com/perplexity/b9e1ff15-d52a-46d5-abf0-26460f2a116c>
+
+```
+npm run add:stage -- --role 'Internship - Machine Learning Research Engineer' --company 'Perplexity' --city 'Berlin' --deadline rolling --link 'https://jobs.ashbyhq.com/perplexity/b9e1ff15-d52a-46d5-abf0-26460f2a116c'
+```
+
+### Internship - Search Machine Learning Engineer
+Perplexity · London · via ashby
+
+<https://jobs.ashbyhq.com/perplexity/71168628-1998-47d3-87a9-be7bc56a430d>
+
+```
+npm run add:stage -- --role 'Internship - Search Machine Learning Engineer' --company 'Perplexity' --city 'London' --deadline rolling --link 'https://jobs.ashbyhq.com/perplexity/71168628-1998-47d3-87a9-be7bc56a430d'
+```
 
 ### AI & Data Quality Improvement Internship
 Robert Bosch · Beograd, rs · via smartrecruiters
