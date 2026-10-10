@@ -60,6 +60,23 @@ export type Stage = {
    * entry is raised again, because "we could not tell in October" is not a
    * reason to still be showing it in March.
    */
+  /**
+   * How this listing got here, and therefore what the page may claim about it.
+   *
+   * "person" — somebody opened the posting, read the page and typed it in. The
+   * first 88 entries, and anything added by hand since.
+   *
+   * "feed" — taken from the employer's own applicant-tracking API: Greenhouse,
+   * Ashby, SmartRecruiters or Workday. The title, company and location are the
+   * employer's own fields rather than anyone's transcription, and the weekly
+   * check re-confirms the posting against that same API.
+   *
+   * Neither is "better". They are different claims, and the page makes the one
+   * that is true for each row instead of one sentence that is only true for
+   * some of them. Absent means "person", because that is what every listing
+   * predating this field was.
+   */
+  addedBy?: "person" | "feed";
   unverifiable?: string;
   /** Why it could not be verified, in words a reader could be shown. */
   unverifiableReason?: string;
@@ -239,6 +256,14 @@ export function getStages(now = Date.now()) {
   const closed = sorted.filter((s) => isClosed(s, now));
 
   return [...dated, ...oneEmployerAtATime(rolling), ...closed];
+}
+
+/** How many listings each verification path accounts for, counted not claimed. */
+export function getVerificationSplit(now = Date.now()) {
+  const open = getStages(now).filter((stage) => !isClosed(stage, now));
+  const feed = open.filter((stage) => stage.addedBy === "feed").length;
+  const unverifiable = open.filter((stage) => stage.unverifiable).length;
+  return { total: open.length, feed, person: open.length - feed, unverifiable };
 }
 
 export function getOpenStages(now = Date.now()) {

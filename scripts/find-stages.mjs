@@ -40,6 +40,21 @@ const OUT_MD = path.join(OUT_DIR, "stage-candidates.md");
 const OUT_JSON = path.join(OUT_DIR, "stage-candidates.json");
 
 const argv = process.argv.slice(2);
+/**
+ * --write adds the candidates to the board.
+ *
+ * Without it this proposes and a person pastes the commands. With it the agent
+ * writes, and the page stops claiming a person read these: each one is stamped
+ * addedBy "feed", and /stages says so on the row and in its method note.
+ *
+ * Only structured employer APIs feed this. The title, company and location are
+ * the employer's own fields, and the Monday check re-confirms the posting
+ * against the same API — which is a different claim from "somebody clicked it
+ * once in September", not a weaker one.
+ */
+const WRITE = argv.includes("--write");
+/** A bad regex should cost a handful of wrong rows, not forty. */
+const WRITE_CAP = 15;
 const limitArg = Number.parseInt(argv[argv.indexOf("--limit") + 1] ?? "", 10);
 const LIMIT = Number.isFinite(limitArg) && limitArg > 0 ? Math.min(limitArg, 200) : 50;
 
@@ -57,7 +72,23 @@ const IS_INTERNSHIP =
   /\b(intern|internship|stage|stagiaire|alternan(?:ce|t)|apprenti|apprenticeship|working student|werkstudent|praktikum|thesis|master thesis|pfe|co-?op|placement|trainee)\b/i;
 
 const IS_RELEVANT =
-  /\b(ai|a\.i\.|artificial intelligence|machine learning|deep learning|ml|mlops|nlp|llm|genai|generative|data scien|data engineer|computer vision|cyber|cybers[ée]curit|security|s[ée]curit|infosec|soc|siem|pentest|penetration|forensic|cryptograph|crypto|malware|threat)\b/i;
+  /\b(ai|a\.i\.|artificial intelligence|machine learning|deep learning|ml|mlops|nlp|llm|genai|generative|data scien|data engineer|computer vision|cyber|cybers[ée]curit|security|s[ée]curit|infosec|soc|siem|pentest|penetration|forensic|cryptograph|malware|threat)\b/i;
+
+/**
+ * Business functions that are not this board, however the title is spelled.
+ *
+ * The first --write run added "Crypto Accounting Intern", "Crypto Operations
+ * Intern" and "Crypto Partnership Intern" at Robinhood: three of fifteen rows,
+ * a twenty per cent error rate, published with nobody reading them. "crypto"
+ * was in the relevance list for cryptography and matched cryptocurrency, and
+ * the roles themselves are accounting, operations and partnerships.
+ *
+ * Dropping the bare word fixes those three. This list is the backstop for the
+ * next one, because a keyword that means two things in two industries is not a
+ * mistake you make once.
+ */
+const WRONG_FUNCTION =
+  /\b(accounting|accountant|finance|financial|audit|tax|payroll|procurement|operations analyst|partnership|partnerships|sales|account executive|marketing|communications|recruit|talent acquisition|human resources|legal|counsel|customer success|supply chain|logistics)\b/i;
 
 /** Seniority words that mean the "intern" in the title was a department name. */
 const IS_SENIOR = /\b(senior|staff|principal|lead|director|head of|manager|vp|chief)\b/i;
@@ -147,6 +178,7 @@ function consider({ company, role, location, href, source }) {
   if (!role || !href) return;
   if (!IS_INTERNSHIP.test(role)) return;
   if (!IS_RELEVANT.test(role)) return;
+  if (WRONG_FUNCTION.test(role)) return;
   if (IS_SENIOR.test(role) && !/\b(intern|stagiaire|alternan)/i.test(role)) return;
   const { city, country } = splitLocation(location);
   candidates.push({
@@ -286,6 +318,38 @@ for (const c of fresh) {
 const picked = unique.slice(0, LIMIT);
 
 const today = new Date().toISOString().slice(0, 10);
+
+/** The same shape add-stage.mjs writes, so both paths produce one kind of row. */
+function slugify(value) {
+  return String(value)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function toStage(c) {
+  const kind = /\b(alternan|apprenti|apprenticeship|working student|werkstudent)\b/i.test(c.role)
+    ? "alternance"
+    : /\b(pfe|thesis|fin d'?[ée]tudes)\b/i.test(c.role)
+      ? "pfe"
+      : "stage";
+  return {
+    id: `${slugify(c.company)}-${slugify(c.role)}-${slugify(c.city || c.country || "remote")}-rolling`,
+    role: c.role,
+    company: c.company,
+    ...(c.city ? { city: c.city } : {}),
+    country: c.country,
+    kind,
+    href: c.href,
+    source: `${c.company} careers`,
+    postedAt: today,
+    checkedAt: today,
+    addedBy: "feed"
+  };
+}
+
 const shellQuote = (v) => `'${String(v).replace(/'/g, "'\\''")}'`;
 
 const lines = [
@@ -320,6 +384,32 @@ for (const c of picked) {
 if (!picked.length) {
   lines.push("_Nothing new this run. Every matching posting on these boards is already listed._");
   lines.push("");
+}
+
+/**
+ * Written only with --write, and only for candidates whose country resolved.
+ *
+ * A listing with no country lands under whatever the filter defaults to on a
+ * board where country is the control students actually use, so those stay in
+ * the review file for a person to place. Refusing to guess is the whole
+ * difference between this and a scraper.
+ */
+let written = 0;
+if (WRITE) {
+  const placeable = picked.filter((c) => c.country);
+  const toAdd = placeable.slice(0, WRITE_CAP);
+  const existingIds = new Set(stages.items.map((i) => i.id));
+  const rows = toAdd.map(toStage).filter((row) => !existingIds.has(row.id));
+  if (rows.length) {
+    stages.items.push(...rows);
+    stages.updatedAt = new Date().toISOString();
+    await fs.writeFile(STAGES, `${JSON.stringify(stages, null, 2)}\n`);
+    written = rows.length;
+  }
+  console.log(
+    `\n  --write: added ${written} of ${placeable.length} placeable (cap ${WRITE_CAP}); ` +
+      `${picked.length - placeable.length} had no country and stay in the review file`
+  );
 }
 
 await fs.mkdir(OUT_DIR, { recursive: true });

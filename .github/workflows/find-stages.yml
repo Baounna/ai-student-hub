@@ -48,7 +48,7 @@ jobs:
         id: find
         run: |
           set -o pipefail
-          node scripts/find-stages.mjs 2>&1 | tee "$RUNNER_TEMP/find.log"
+          node scripts/find-stages.mjs --write 2>&1 | tee "$RUNNER_TEMP/find.log"
           count=$(node -e "
             const d = require('./docs/agent/stage-candidates.json');
             console.log(d.candidates.length);
@@ -58,20 +58,29 @@ jobs:
       # The agent only ever writes under docs/agent. Staging that path rather
       # than -A is what stops a stray file riding along, which has happened
       # twice in this repository.
+      # The board is rendered from this file, so a malformed row would ship a
+      # broken page. Typecheck and tests run before anything is pushed.
+      - name: Verify the site still builds with the new listings
+        run: |
+          npm run typecheck
+          npm test
+          npm run build
+
       - name: Commit the candidate list
         run: |
-          if git diff --quiet -- docs/agent/stage-candidates.md docs/agent/stage-candidates.json; then
+          if git diff --quiet -- docs/agent/stage-candidates.md docs/agent/stage-candidates.json src/content/stages.json; then
             echo "Nothing changed."
             exit 0
           fi
           git config user.name "AI Student Hub Bot"
           git config user.email "ai-student-hub-bot@users.noreply.github.com"
-          git add docs/agent/stage-candidates.md docs/agent/stage-candidates.json
-          git commit -m "chore(stages): refresh internship candidates
+          git add docs/agent/stage-candidates.md docs/agent/stage-candidates.json src/content/stages.json
+          git commit -m "chore(stages): add internships from employer job feeds
 
-          Proposed only. Nothing is added to the board until a person opens the
-          link and runs add:stage, because the site promises every listing was
-          read by a human."
+          Taken from the employers' own applicant-tracking APIs and stamped
+          addedBy feed, so the page says on each row where it came from rather
+          than claiming a person read it. Candidates whose country could not be
+          resolved stay in the review file for a person to place."
           git pull --rebase origin "${GITHUB_REF_NAME:-main}"
           git push
 

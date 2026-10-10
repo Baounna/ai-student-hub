@@ -40,8 +40,8 @@ export function generateStaticParams() {
 function describe(code: string, count: number, locale: Locale): string {
   const name = countryLabel(code, locale);
   return locale === "fr"
-    ? `${count} stages, alternances et PFE en IA et cybersécurité ouverts aux étudiants, chaque lien ouvert et lu. ${name}.`
-    : `${count} internships, apprenticeships and final-year projects in AI and cybersecurity, each link opened and read. ${name}.`;
+    ? `${count} stages, alternances et PFE en IA et cybersécurité ouverts aux étudiants, vérifiés chaque semaine. ${name}.`
+    : `${count} internships, apprenticeships and final-year projects in AI and cybersecurity, re-checked every week. ${name}.`;
 }
 
 export async function generateMetadata(props: {

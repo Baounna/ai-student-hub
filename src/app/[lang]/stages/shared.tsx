@@ -39,6 +39,10 @@ const COPY = {
     // to tell, and the date would sit there unchanged for as long as the
     // listing stands.
     notVerified: "we could not verify this link",
+    // Said on the row, because the method note is at the bottom of the page and
+    // a reader deciding on one listing should not have to go looking for which
+    // kind it is.
+    fromFeed: "from the employer's job feed",
     apply: "View the offer",
     // Every card renders the same visible link text, so a screen reader's link
     // list was 96 identical "View the offer" entries with nothing to tell them
@@ -90,7 +94,7 @@ const COPY = {
       `No openings match that combination. All ${total} are one click away.`,
     methodTitle: "What \u201cchecked\u201d means here",
     methodBody:
-      "Every link is opened and its page read, not just pinged for a status code. Postings regularly answer HTTP 200 while saying, in the body, that they have closed \u2014 eight did on the most recent run, and they were removed. A listing is removed only after a person confirms it is gone; a refusal to serve us is treated as a fact about us, not about the job. Deadlines are shown only where the employer published one."
+      "Listings arrive two ways, and each row says which. Most were opened and read by a person before being typed in. The rest come straight from the employer's own job API \u2014 Greenhouse, Ashby, SmartRecruiters or Workday \u2014 so the title, company and location are the employer's own fields rather than anyone's transcription, and the weekly check re-confirms them against that same API. Either way the link is fetched and the page read, not just pinged for a status code: postings regularly answer HTTP 200 while saying, in the body, that they have closed, and those are removed. A refusal to serve us is treated as a fact about us, not about the job. Deadlines are shown only where the employer published one."
   },
   fr: {
     title: stagesPageTitle("fr"),
@@ -103,6 +107,7 @@ const COPY = {
     rolling: "Ouverte jusqu'à pourvoi - aucune date limite annoncée",
     checked: "lien vérifié le",
     notVerified: "nous n'avons pas pu vérifier ce lien",
+    fromFeed: "via le flux de recrutement de l'employeur",
     apply: "Voir l'offre",
     applyLabel: (role: string, company: string, place: string) => `Voir l'offre : ${role} chez ${company}, ${place}`,
     source: "via",
@@ -137,7 +142,7 @@ const COPY = {
       `Aucune offre ne correspond à cette combinaison. Les ${total} autres sont à un clic.`,
     methodTitle: "Ce que « vérifié » veut dire ici",
     methodBody:
-      "Chaque lien est ouvert et sa page lue, pas seulement testée par code HTTP : des offres répondent régulièrement 200 tout en indiquant, dans le corps de la page, qu'elles sont closes \u2014 huit lors de la dernière vérification, et elles ont été retirées. Une offre n'est retirée qu'après vérification humaine ; un refus de nous répondre est traité comme un fait nous concernant, pas comme une fermeture. Les dates limites ne sont affichées que lorsque l'employeur en publie une."
+      "Les offres arrivent de deux façons, et chaque ligne indique laquelle. La plupart ont été ouvertes et lues par une personne avant d'être saisies. Les autres viennent directement de l'API de recrutement de l'employeur \u2014 Greenhouse, Ashby, SmartRecruiters ou Workday \u2014 : l'intitulé, l'entreprise et le lieu sont donc les champs de l'employeur et non une retranscription, et la vérification hebdomadaire les reconfirme auprès de cette même API. Dans les deux cas le lien est ouvert et la page lue, pas seulement testée par code HTTP : des offres répondent régulièrement 200 tout en indiquant, dans le corps de la page, qu'elles sont closes, et elles sont retirées. Un refus de nous répondre est traité comme un fait nous concernant, pas comme une fermeture. Les dates limites ne sont affichées que lorsque l'employeur en publie une."
   }
 } as const;
 
@@ -274,6 +279,12 @@ export function StageRow({
           */}
         {!closed && isRecentlyAdded(stage) ? (
           <span className="text-xs font-semibold text-[color:var(--primary)]">{copy.recentBadge}</span>
+        ) : null}
+        {/* Which kind of listing this is, said here rather than only in the
+            method note at the foot of the page. A reader deciding on one row
+            should not have to go looking for how it was verified. */}
+        {stage.addedBy === "feed" ? (
+          <span className="text-xs text-[color:var(--muted)]">{copy.fromFeed}</span>
         ) : null}
         {stage.unverifiable ? (
           <span className="text-xs text-[color:var(--muted)]">{copy.notVerified}</span>

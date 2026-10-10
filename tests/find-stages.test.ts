@@ -14,13 +14,55 @@ import sources from "@/content/stage-sources.json";
 const AGENT = readFileSync("scripts/find-stages.mjs", "utf8");
 
 describe("the internship finder", () => {
-  it("never writes to the board", () => {
-    // It may read stages.json to deduplicate; it may not write it.
-    expect(AGENT).toMatch(/const STAGES = path\.join\(ROOT, "src\/content\/stages\.json"\)/);
-    const writes = [...AGENT.matchAll(/fs\.writeFile\(\s*([A-Za-z_]+)/g)].map((m) => m[1]);
-    expect(writes.length).toBeGreaterThan(0);
-    expect(writes).not.toContain("STAGES");
-    for (const target of writes) expect(target.startsWith("OUT_")).toBe(true);
+  /**
+   * This asserted that the agent never writes to stages.json. It does now —
+   * the owner asked for the adding to be automatic too, and that is his call
+   * to make about his own board.
+   *
+   * What replaced the guarantee is the thing that keeps the site honest: it
+   * writes ONLY behind --write, everything it writes is stamped addedBy
+   * "feed", and /stages says on each such row and in its method note that the
+   * listing came from the employer's job API rather than from a person reading
+   * the page. The claim moved to match the behaviour instead of the behaviour
+   * quietly breaking the claim.
+   */
+  it("writes to the board only behind an explicit flag", () => {
+    expect(AGENT).toMatch(/const WRITE = argv\.includes\("--write"\)/);
+    const writeBlock = AGENT.slice(AGENT.indexOf("if (WRITE) {"), AGENT.indexOf("await fs.mkdir"));
+    expect(writeBlock).toContain("fs.writeFile(STAGES");
+    // No path outside that block may touch the board.
+    const outside = AGENT.replace(writeBlock, "");
+    expect(outside).not.toContain("writeFile(STAGES");
+  });
+
+  it("stamps everything it adds, so the page can say where it came from", () => {
+    expect(AGENT).toMatch(/addedBy: "feed"/);
+    const shared = readFileSync("src/app/[lang]/stages/shared.tsx", "utf8");
+    expect(shared).toContain('stage.addedBy === "feed"');
+    expect(shared).toContain("fromFeed");
+  });
+
+  it("caps a run, so a bad keyword costs a few rows and not forty", () => {
+    // The first --write run added three Robinhood finance roles because
+    // "crypto" was in the relevance list for cryptography. The cap is why it
+    // was three and not every match on the board.
+    expect(AGENT).toMatch(/const WRITE_CAP = \d+/);
+    const cap = Number(AGENT.match(/const WRITE_CAP = (\d+)/)?.[1]);
+    expect(cap).toBeGreaterThan(0);
+    expect(cap).toBeLessThanOrEqual(25);
+  });
+
+  it("refuses to publish a listing whose country it could not work out", () => {
+    // Country is the filter students actually use; a guess puts a French role
+    // under Morocco. Those stay in the review file for a person to place.
+    expect(AGENT).toMatch(/picked\.filter\(\(c\) => c\.country\)/);
+  });
+
+  it("keeps finance and operations roles off an AI and security board", () => {
+    expect(AGENT).toContain("WRONG_FUNCTION");
+    expect(AGENT).toMatch(/if \(WRONG_FUNCTION\.test\(role\)\) return;/);
+    // The exact word that caused it: cryptography, not cryptocurrency.
+    expect(AGENT).not.toMatch(/cryptograph\|crypto\|/);
   });
 
   it("scrapes nothing — every source is a documented JSON API", () => {

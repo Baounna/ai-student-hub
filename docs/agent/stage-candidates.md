@@ -1,129 +1,12 @@
 # Internship candidates — 2026-10-10
 
-40 postings that match internship + AI/cyber and are not on the board yet.
+25 postings that match internship + AI/cyber and are not on the board yet.
 
 **Open each link before adding it.** That is the one step this agent does not do,
 and it is the reason the board is worth reading: the site tells a student every
 link was opened and its page read by a person. Nothing here has been.
 
 Copy the command under any posting you want to keep.
-
-### AI & Management Consulting Intern (Value Engineering - UKI Market)
-Celonis · London, United Kingdom · via greenhouse
-
-<https://job-boards.greenhouse.io/celonis/jobs/7986192003?gh_jid=7986192003>
-
-```
-npm run add:stage -- --role 'AI & Management Consulting Intern (Value Engineering - UKI Market)' --company 'Celonis' --city 'London' --country GB --deadline rolling --link 'https://job-boards.greenhouse.io/celonis/jobs/7986192003?gh_jid=7986192003'
-```
-
-### Intern AI & Management Consulting (Value Engineering)
-Celonis · Paris, France · via greenhouse
-
-<https://job-boards.greenhouse.io/celonis/jobs/7767090003?gh_jid=7767090003>
-
-```
-npm run add:stage -- --role 'Intern AI & Management Consulting (Value Engineering)' --company 'Celonis' --city 'Paris' --country FR --deadline rolling --link 'https://job-boards.greenhouse.io/celonis/jobs/7767090003?gh_jid=7767090003'
-```
-
-### Intern Applied AI Engineering / Strategic Consulting (CoE Tiger Team)
-Celonis · Madrid, Spain · via greenhouse
-
-<https://job-boards.greenhouse.io/celonis/jobs/7989895003?gh_jid=7989895003>
-
-```
-npm run add:stage -- --role 'Intern Applied AI Engineering / Strategic Consulting (CoE Tiger Team)' --company 'Celonis' --city 'Madrid' --country ES --deadline rolling --link 'https://job-boards.greenhouse.io/celonis/jobs/7989895003?gh_jid=7989895003'
-```
-
-### Intern Technology Consultant - Data & AI
-Celonis · Munich, Germany · via greenhouse
-
-<https://job-boards.greenhouse.io/celonis/jobs/7977924003?gh_jid=7977924003>
-
-```
-npm run add:stage -- --role 'Intern Technology Consultant - Data & AI' --company 'Celonis' --city 'Munich' --country DE --deadline rolling --link 'https://job-boards.greenhouse.io/celonis/jobs/7977924003?gh_jid=7977924003'
-```
-
-### Data Engineer Intern (2027)
-Figma · San Francisco, CA • New York, NY · via greenhouse
-
-<https://boards.greenhouse.io/figma/jobs/6178851004?gh_jid=6178851004>
-
-```
-npm run add:stage -- --role 'Data Engineer Intern (2027)' --company 'Figma' --city 'San Francisco' --country CA --deadline rolling --link 'https://boards.greenhouse.io/figma/jobs/6178851004?gh_jid=6178851004'
-```
-
-### PhD Intern, AI Applied Scientist (2027)
-Figma · San Francisco, CA • New York, NY · via greenhouse
-
-<https://boards.greenhouse.io/figma/jobs/6207801004?gh_jid=6207801004>
-
-```
-npm run add:stage -- --role 'PhD Intern, AI Applied Scientist (2027)' --company 'Figma' --city 'San Francisco' --country CA --deadline rolling --link 'https://boards.greenhouse.io/figma/jobs/6207801004?gh_jid=6207801004'
-```
-
-### Crypto Accounting Intern (Summer 2027)
-Robinhood · New York, NY · via greenhouse
-
-<https://boards.greenhouse.io/robinhood/jobs/8198153?t=gh_src=&gh_jid=8198153>
-
-```
-npm run add:stage -- --role 'Crypto Accounting Intern (Summer 2027)' --company 'Robinhood' --city 'New York' --country US --deadline rolling --link 'https://boards.greenhouse.io/robinhood/jobs/8198153?t=gh_src=&gh_jid=8198153'
-```
-
-### Crypto Operations Intern (Summer 2027)
-Robinhood · New York, NY · via greenhouse
-
-<https://boards.greenhouse.io/robinhood/jobs/8193484?t=gh_src=&gh_jid=8193484>
-
-```
-npm run add:stage -- --role 'Crypto Operations Intern (Summer 2027)' --company 'Robinhood' --city 'New York' --country US --deadline rolling --link 'https://boards.greenhouse.io/robinhood/jobs/8193484?t=gh_src=&gh_jid=8193484'
-```
-
-### Crypto Partnership Intern (Summer 2027)
-Robinhood · New York, NY · via greenhouse
-
-<https://boards.greenhouse.io/robinhood/jobs/8193710?t=gh_src=&gh_jid=8193710>
-
-```
-npm run add:stage -- --role 'Crypto Partnership Intern (Summer 2027)' --company 'Robinhood' --city 'New York' --country US --deadline rolling --link 'https://boards.greenhouse.io/robinhood/jobs/8193710?t=gh_src=&gh_jid=8193710'
-```
-
-### Artificial Intelligence / Machine Learning: Foundation Models - Intern
-Robert Bosch · Sunnyvale, us · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/BoschGroup/744000154759734>
-
-```
-npm run add:stage -- --role 'Artificial Intelligence / Machine Learning: Foundation Models - Intern' --company 'Robert Bosch' --city 'Sunnyvale' --country US --deadline rolling --link 'https://jobs.smartrecruiters.com/BoschGroup/744000154759734'
-```
-
-### Information Security and Privacy Intern
-Robert Bosch · Farmington Hills, us · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/BoschGroup/744000154757409>
-
-```
-npm run add:stage -- --role 'Information Security and Privacy Intern' --company 'Robert Bosch' --city 'Farmington Hills' --country US --deadline rolling --link 'https://jobs.smartrecruiters.com/BoschGroup/744000154757409'
-```
-
-### Master Thesis on What-If Reasoning in LLM Agents for Evaluating HEMS Parameter Effects Using Time-Series Foundation Models via MCP
-Robert Bosch · Renningen, de · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/BoschGroup/744000154643139>
-
-```
-npm run add:stage -- --role 'Master Thesis on What-If Reasoning in LLM Agents for Evaluating HEMS Parameter Effects Using Time-Series Foundation Models via MCP' --company 'Robert Bosch' --city 'Renningen' --country DE --deadline rolling --link 'https://jobs.smartrecruiters.com/BoschGroup/744000154643139'
-```
-
-### Werkstudent Wissensmanagement inkl. LLM Integration für Qualitätsmanagement-Tools (w/m/div.)
-Robert Bosch · Stuttgart-Feuerbach, de · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/BoschGroup/744000154633059>
-
-```
-npm run add:stage -- --role 'Werkstudent Wissensmanagement inkl. LLM Integration für Qualitätsmanagement-Tools (w/m/div.)' --company 'Robert Bosch' --city 'Stuttgart-Feuerbach' --country DE --deadline rolling --link 'https://jobs.smartrecruiters.com/BoschGroup/744000154633059'
-```
 
 ### AI & Data Quality Improvement Internship
 Robert Bosch · Beograd, rs · via smartrecruiters
@@ -132,24 +15,6 @@ Robert Bosch · Beograd, rs · via smartrecruiters
 
 ```
 npm run add:stage -- --role 'AI & Data Quality Improvement Internship' --company 'Robert Bosch' --city 'Beograd, rs' --deadline rolling --link 'https://jobs.smartrecruiters.com/BoschGroup/744000154627659'
-```
-
-### AI Strategy & Business Transformation - Stage de fin d'études (H/F) - Nantes
-Wavestone · Nantes, fr · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000154678122>
-
-```
-npm run add:stage -- --role 'AI Strategy & Business Transformation - Stage de fin d'\''études (H/F) - Nantes' --company 'Wavestone' --city 'Nantes' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000154678122'
-```
-
-### AI Strategy and Governance - Stage de fin d'études (H/F) - Nantes
-Wavestone · Nantes, fr · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000154678960>
-
-```
-npm run add:stage -- --role 'AI Strategy and Governance - Stage de fin d'\''études (H/F) - Nantes' --company 'Wavestone' --city 'Nantes' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000154678960'
 ```
 
 ### AI Analytics & Data Visualization - Stage de fin d'études (H/F)
