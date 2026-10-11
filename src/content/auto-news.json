@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-11T12:45:16.151Z",
+  "updatedAt": "2026-10-11T21:55:26.384Z",
   "items": [
     {
       "slug": "20261009-introducing-clef-omni-with-full-multimodality-plus-a-faster-clef-6229f18e",
@@ -3176,21 +3176,21 @@
       }
     },
     {
-      "slug": "20261002-updates-on-our-pledge-to-make-cloudflare-features-accessible-to--a7fc3ad4",
+      "slug": "20261002-introducing-cloudflare-traces-follow-requests-through-our-entire-9c3a3363",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/enterprise-for-all-update/",
+      "href": "https://blog.cloudflare.com/cloudflare-tracing/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-11T12:45:16.151Z",
+      "discoveredAt": "2026-10-11T21:55:26.384Z",
       "locales": {
         "en": {
-          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
-          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
+          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
         },
         "fr": {
-          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
-          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
+          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
         }
       }
     },
@@ -3423,21 +3423,21 @@
       }
     },
     {
-      "slug": "20261002-announcing-cloudflare-ohttp-gateway-expanding-access-to-cloudfla-ddac069f",
-      "topic": "Security & Standards",
+      "slug": "20261002-updates-on-our-pledge-to-make-cloudflare-features-accessible-to--a7fc3ad4",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+      "href": "https://blog.cloudflare.com/enterprise-for-all-update/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-10T21:40:49.615Z",
+      "discoveredAt": "2026-10-11T12:45:16.151Z",
       "locales": {
         "en": {
-          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
-          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
         },
         "fr": {
-          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
-          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
         }
       }
     },
@@ -3651,21 +3651,21 @@
       }
     },
     {
-      "slug": "20261002-follow-the-thread-a-new-dashboard-to-investigate-account-abuse-e58ff1b2",
+      "slug": "20261002-announcing-cloudflare-ohttp-gateway-expanding-access-to-cloudfla-ddac069f",
       "topic": "Security & Standards",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
+      "href": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
       "discoveredAt": "2026-10-10T21:40:49.615Z",
       "locales": {
         "en": {
-          "title": "Follow the thread: a new dashboard to investigate account abuse",
-          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
+          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
         },
         "fr": {
-          "title": "Follow the thread: a new dashboard to investigate account abuse",
-          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
+          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
         }
       }
     },
@@ -3841,25 +3841,6 @@
       }
     },
     {
-      "slug": "20260827-gemini-omni-11-flash-lets-you-build-with-more-control-a13e39d4",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
-      "publishedAt": "2026-08-27T16:11:32.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Gemini Omni 1.1 Flash lets you build with more control",
-          "summary": "Gemini Omni 1.1 Flash lets you build with more control"
-        },
-        "fr": {
-          "title": "Gemini Omni 1.1 Flash lets you build with more control",
-          "summary": "Gemini Omni 1.1 Flash lets you build with more control"
-        }
-      }
-    },
-    {
       "slug": "20260904-kubernetes-v137-kubeletinusernamespace-aka-rootless-mode-graduat-1560f468",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -3879,21 +3860,21 @@
       }
     },
     {
-      "slug": "20261002-protected-quick-tunnels-simple-accountless-authentication-for-yo-c76f1b29",
-      "topic": "Computer Systems",
+      "slug": "20261002-follow-the-thread-a-new-dashboard-to-investigate-account-abuse-e58ff1b2",
+      "topic": "Security & Standards",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/protected-quick-tunnels/",
+      "href": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-10T12:27:46.305Z",
+      "discoveredAt": "2026-10-10T21:40:49.615Z",
       "locales": {
         "en": {
-          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
-          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
+          "title": "Follow the thread: a new dashboard to investigate account abuse",
+          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
         },
         "fr": {
-          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
-          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
+          "title": "Follow the thread: a new dashboard to investigate account abuse",
+          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
         }
       }
     },
@@ -4069,25 +4050,6 @@
       }
     },
     {
-      "slug": "20260827-piloting-the-worlds-first-double-blind-ai-evaluations-d9b2bc36",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
-      "publishedAt": "2026-08-27T12:59:16.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Piloting the world's first double-blind AI evaluations",
-          "summary": "Piloting the world's first double-blind AI evaluations"
-        },
-        "fr": {
-          "title": "Piloting the world's first double-blind AI evaluations",
-          "summary": "Piloting the world's first double-blind AI evaluations"
-        }
-      }
-    },
-    {
       "slug": "20260903-kubernetes-v137-dra-updates-90b5ee36",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -4107,21 +4069,21 @@
       }
     },
     {
-      "slug": "20261002-building-for-good-how-civil-society-organizations-are-automating-823db2de",
+      "slug": "20261002-protected-quick-tunnels-simple-accountless-authentication-for-yo-c76f1b29",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/civil-society-automation/",
+      "href": "https://blog.cloudflare.com/protected-quick-tunnels/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
       "discoveredAt": "2026-10-10T12:27:46.305Z",
       "locales": {
         "en": {
-          "title": "Building for good: How civil society organizations are automating on Cloudflare",
-          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
+          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
+          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
         },
         "fr": {
-          "title": "Building for good: How civil society organizations are automating on Cloudflare",
-          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
+          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
+          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
         }
       }
     },
@@ -4316,21 +4278,21 @@
       }
     },
     {
-      "slug": "20261002-2026-birthday-week-network-performance-update-d7660457",
-      "topic": "AI Performance",
+      "slug": "20261002-building-for-good-how-civil-society-organizations-are-automating-823db2de",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
+      "href": "https://blog.cloudflare.com/civil-society-automation/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-09T22:36:02.957Z",
+      "discoveredAt": "2026-10-10T12:27:46.305Z",
       "locales": {
         "en": {
-          "title": "2026 Birthday week: network performance update",
-          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
+          "title": "Building for good: How civil society organizations are automating on Cloudflare",
+          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
         },
         "fr": {
-          "title": "2026 Birthday week: network performance update",
-          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
+          "title": "Building for good: How civil society organizations are automating on Cloudflare",
+          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
         }
       }
     },
@@ -4487,21 +4449,21 @@
       }
     },
     {
-      "slug": "20261002-8-major-updates-to-cloudflare-observability-423bae1f",
-      "topic": "Computer Systems",
+      "slug": "20261002-2026-birthday-week-network-performance-update-d7660457",
+      "topic": "AI Performance",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/one-observability-platform/",
+      "href": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "discoveredAt": "2026-10-09T22:36:02.957Z",
       "locales": {
         "en": {
-          "title": "8 major updates to Cloudflare Observability",
-          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
+          "title": "2026 Birthday week: network performance update",
+          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
         },
         "fr": {
-          "title": "8 major updates to Cloudflare Observability",
-          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
+          "title": "2026 Birthday week: network performance update",
+          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
         }
       }
     },
@@ -4525,21 +4487,21 @@
       }
     },
     {
-      "slug": "20260922-how-uk-aisi-and-evaleval-are-making-benchmark-results-reproducib-2960c64a",
-      "topic": "AI Performance",
+      "slug": "20260922-transformers-now-runs-llamacpp-quants-98acfe91",
+      "topic": "AI Systems",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/evaleval-aisi",
+      "href": "https://huggingface.co/blog/transformers-llama-cpp-quants",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-11T12:45:16.151Z",
+      "discoveredAt": "2026-10-11T21:55:26.384Z",
       "locales": {
         "en": {
-          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
         },
         "fr": {
-          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
+          "title": "Transformers now runs llama.cpp quants",
+          "summary": "Transformers now runs llama.cpp quants"
         }
       }
     },
@@ -4559,6 +4521,44 @@
         "fr": {
           "title": "Chatham scales its capital markets expertise with OpenAI",
           "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
+        }
+      }
+    },
+    {
+      "slug": "20261001-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
+      "publishedAt": "2026-10-01T18:31:27.000Z",
+      "discoveredAt": "2026-10-11T21:55:26.384Z",
+      "locales": {
+        "en": {
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+        },
+        "fr": {
+          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
+          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+        }
+      }
+    },
+    {
+      "slug": "20260902-proactive-cyber-defense-for-governments-and-enterprises-28b149c7",
+      "topic": "AI Systems",
+      "source": "Google AI Blog",
+      "sourceFeed": "https://blog.google/technology/ai/rss/",
+      "href": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+      "publishedAt": "2026-09-02T15:40:00.000Z",
+      "discoveredAt": "2026-10-11T21:55:26.384Z",
+      "locales": {
+        "en": {
+          "title": "Proactive cyber defense for governments and enterprises",
+          "summary": "The Fairwind Program is a limited access program for governments and trusted partners to use our cyber defense tools."
+        },
+        "fr": {
+          "title": "Proactive cyber defense for governments and enterprises",
+          "summary": "The Fairwind Program is a limited access program for governments and trusted partners to use our cyber defense tools."
         }
       }
     }
