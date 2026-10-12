@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-11T21:55:27.856Z",
+  "updatedAt": "2026-10-12T15:17:56.208Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -43,6 +43,26 @@
       }
     },
     {
+      "slug": "20261012-cloudflare-filter-reshape-and-redact-logs-before-export-with-tra-ae4b5b75",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/transformers-on-logpush/",
+      "publishedAt": "2026-10-12T14:44:59.000Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
+      "locales": {
+        "en": {
+          "title": "Filter, reshape, and redact logs before export with Transformers",
+          "summary": "Logpush now supports Transformers, allowing teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply those changes directly to log data…"
+        },
+        "fr": {
+          "title": "Filter, reshape, and redact logs before export with Transformers",
+          "summary": "Logpush now supports Transformers, allowing teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply those changes directly to log data…"
+        }
+      }
+    },
+    {
       "slug": "20261010-github-copilot-new-controls-and-chat-improvements-in-copilot-for-1e0e6608",
       "toolName": "GitHub Copilot",
       "category": "Developer Assistant",
@@ -59,26 +79,6 @@
         "fr": {
           "title": "New controls and chat improvements in Copilot for JetBrains",
           "summary": "This update brings more control over default models and MCP server in GitHub Copilot for JetBrains. It also makes diagnostics easier to address, improves chat navigation and account controls, and… The post New controls…"
-        }
-      }
-    },
-    {
-      "slug": "20261009-cloudflare-introducing-clef-omni-with-full-multimodality-plus-a--6229f18e",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
-      "publishedAt": "2026-10-09T18:27:34.000Z",
-      "discoveredAt": "2026-10-09T22:36:04.421Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
-          "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2…"
-        },
-        "fr": {
-          "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
-          "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2…"
         }
       }
     },
@@ -383,42 +383,62 @@
       }
     },
     {
-      "slug": "20261011-postgresql-postgresql-1519-1711-minor-release-action-may-be-requ-00cf1171",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261012-supabase-status-page-moves-to-incidentio-7e1c5736",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/postgres-15-19-17-11-breaking-changes",
-      "publishedAt": "2026-10-11T21:55:27.856Z",
-      "discoveredAt": "2026-10-11T21:55:27.856Z",
+      "href": "https://supabase.com/changelog/status-page-migration",
+      "publishedAt": "2026-10-12T15:17:56.208Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
-          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         },
         "fr": {
-          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
-          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         }
       }
     },
     {
-      "slug": "20261011-vercel-agents-can-now-buy-domains-with-the-vercel-cli-agents-can-418297e3",
+      "slug": "20261012-vercel-microsoft-decision-1-now-available-on-ai-gateway-call-mic-84f0e3fa",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/agents-can-now-buy-domains-with-the-vercel-cli",
-      "publishedAt": "2026-10-11T21:55:27.856Z",
-      "discoveredAt": "2026-10-11T21:55:27.856Z",
+      "href": "https://vercel.com/changelog/microsoft-decision-1-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-12T15:17:56.208Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "Agents can now buy domains with the Vercel CLI Agents can now use the Vercel CLI to purchase domains. Melkey Moksyakov, Esteban Suárez",
-          "summary": "9 October 9 Oct"
+          "title": "Microsoft Decision-1 now available on AI Gateway Call Microsoft's Decision-1 through Vercel AI Gateway with one API key to classify text, route requests, and track usage and spend +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
+          "summary": "Jay Gengelbach, Pranav Kanchi, and 1 other"
         },
         "fr": {
-          "title": "Agents can now buy domains with the Vercel CLI Agents can now use the Vercel CLI to purchase domains. Melkey Moksyakov, Esteban Suárez",
-          "summary": "9 October 9 Oct"
+          "title": "Microsoft Decision-1 now available on AI Gateway Call Microsoft's Decision-1 through Vercel AI Gateway with one API key to classify text, route requests, and track usage and spend +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
+          "summary": "Jay Gengelbach, Pranav Kanchi, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20261009-cloudflare-introducing-clef-omni-with-full-multimodality-plus-a--6229f18e",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+      "publishedAt": "2026-10-09T18:27:34.000Z",
+      "discoveredAt": "2026-10-09T22:36:04.421Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+          "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2…"
+        },
+        "fr": {
+          "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+          "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2…"
         }
       }
     },
@@ -439,26 +459,6 @@
         "fr": {
           "title": "GitHub Copilot weekly releases — October 5",
           "summary": "This week’s updates make Copilot easier to use across accounts and environments, with more control over what agents can access and how you manage their work. GitHub Copilot Claude Haiku… The post GitHub Copilot weekly r…"
-        }
-      }
-    },
-    {
-      "slug": "20261009-cloudflare-introducing-on-demand-cpu-and-memory-profiling-with-f-80903cd2",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-on-demand-profiling/",
-      "publishedAt": "2026-10-09T13:00:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:58.339Z",
-      "locales": {
-        "en": {
-          "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
-          "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bott…"
-        },
-        "fr": {
-          "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
-          "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bott…"
         }
       }
     },
@@ -763,42 +763,62 @@
       }
     },
     {
-      "slug": "20261011-supabase-database-replication-is-now-pipelines-43d4a2f0",
+      "slug": "20261012-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/database-replication-renamed-pipelines",
-      "publishedAt": "2026-10-11T21:55:27.856Z",
-      "discoveredAt": "2026-10-11T21:55:27.856Z",
+      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
+      "publishedAt": "2026-10-12T15:17:56.208Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "Database Replication is now Pipelines",
-          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         },
         "fr": {
-          "title": "Database Replication is now Pipelines",
-          "summary": "Improvement Database > Replication is now Database > Pipelines. Existing Replication URLs redirect to the new location. No API or pipeline behavior has changed."
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         }
       }
     },
     {
-      "slug": "20261011-vercel-grok-imagine-video-15-lite-on-ai-gateway-call-xais-grok-i-ba03c550",
+      "slug": "20261012-vercel-vercel-sandbox-creation-now-returns-a-ready-sandbox-verce-4bbc7d4d",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/grok-imagine-video-1-5-lite-on-ai-gateway",
-      "publishedAt": "2026-10-11T21:55:27.856Z",
-      "discoveredAt": "2026-10-11T21:55:27.856Z",
+      "href": "https://vercel.com/changelog/sandbox-create-waits-until-ready",
+      "publishedAt": "2026-10-12T15:17:56.208Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "Grok Imagine Video 1.5 Lite on AI Gateway Call xAI's Grok Imagine Video 1.5 Lite through Vercel AI Gateway with one API key, unified billing, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "Tom Lienard Software Engineer, Infrastructure"
+          "title": "Vercel Sandbox creation now returns a ready sandbox Vercel Sandbox creation is now more consistent and now includes startup time previously spent waiting in the first command. Tom Lienard Software Engineer, Infrastructure",
+          "summary": "Shohei Maeda Software Engineer"
         },
         "fr": {
-          "title": "Grok Imagine Video 1.5 Lite on AI Gateway Call xAI's Grok Imagine Video 1.5 Lite through Vercel AI Gateway with one API key, unified billing, and request traces. Zachary Chen, Jerilyn Zheng",
-          "summary": "Tom Lienard Software Engineer, Infrastructure"
+          "title": "Vercel Sandbox creation now returns a ready sandbox Vercel Sandbox creation is now more consistent and now includes startup time previously spent waiting in the first command. Tom Lienard Software Engineer, Infrastructure",
+          "summary": "Shohei Maeda Software Engineer"
+        }
+      }
+    },
+    {
+      "slug": "20261009-cloudflare-introducing-on-demand-cpu-and-memory-profiling-with-f-80903cd2",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+      "publishedAt": "2026-10-09T13:00:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:58.339Z",
+      "locales": {
+        "en": {
+          "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
+          "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bott…"
+        },
+        "fr": {
+          "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
+          "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bott…"
         }
       }
     },
@@ -819,26 +839,6 @@
         "fr": {
           "title": "CodeQL 2.27.2 improves C++, Go, Rust, and JavaScript analysis",
           "summary": "CodeQL 2.27.2 is now available, adding a C++ regular-expression parser and analysis improvements across several languages. CodeQL is the static analysis engine behind GitHub code scanning, which helps you find… The post…"
-        }
-      }
-    },
-    {
-      "slug": "20261009-cloudflare-deno-is-joining-cloudflare-f7c4a724",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/deno-joins-cloudflare/",
-      "publishedAt": "2026-10-09T12:50:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:58.339Z",
-      "locales": {
-        "en": {
-          "title": "Deno is joining Cloudflare",
-          "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places."
-        },
-        "fr": {
-          "title": "Deno is joining Cloudflare",
-          "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places."
         }
       }
     },
@@ -1143,42 +1143,62 @@
       }
     },
     {
-      "slug": "20261011-supabase-health-check-advisors-ff04ed6f",
+      "slug": "20261012-supabase-organization-invites-support-the-no-access-role-fba375fa",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/50577-health-check-advisors",
-      "publishedAt": "2026-10-11T12:45:17.161Z",
-      "discoveredAt": "2026-10-11T12:45:17.161Z",
+      "href": "https://supabase.com/changelog/no-access-org-role",
+      "publishedAt": "2026-10-12T15:17:56.208Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "Health Check Advisors",
-          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         },
         "fr": {
-          "title": "Health Check Advisors",
-          "summary": "Improvement Supabase Advisors now include service health checks: error rates across Auth, Storage, Edge Functions, and Data APIs, each with a severity level and a direct link to inves"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         }
       }
     },
     {
-      "slug": "20261011-vercel-new-pro-teams-now-default-to-30-day-deployment-retention--3526dea6",
+      "slug": "20261011-vercel-agents-can-now-buy-domains-with-the-vercel-cli-agents-can-418297e3",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/new-pro-teams-now-default-to-30-day-deployment-retention",
-      "publishedAt": "2026-10-11T12:45:17.161Z",
-      "discoveredAt": "2026-10-11T12:45:17.161Z",
+      "href": "https://vercel.com/changelog/agents-can-now-buy-domains-with-the-vercel-cli",
+      "publishedAt": "2026-10-11T21:55:27.856Z",
+      "discoveredAt": "2026-10-11T21:55:27.856Z",
       "locales": {
         "en": {
-          "title": "New Pro teams now default to 30-day deployment retention New Pro teams use 30-day deployment retention by default, with the option to keep longer history. Pranav Kanchi, Jay Gengelbach, and 1 other",
-          "summary": "-118.jpg\"/> Melkey Moksyakov, Esteban Suárez"
+          "title": "Agents can now buy domains with the Vercel CLI Agents can now use the Vercel CLI to purchase domains. Melkey Moksyakov, Esteban Suárez",
+          "summary": "9 October 9 Oct"
         },
         "fr": {
-          "title": "New Pro teams now default to 30-day deployment retention New Pro teams use 30-day deployment retention by default, with the option to keep longer history. Pranav Kanchi, Jay Gengelbach, and 1 other",
-          "summary": "-118.jpg\"/> Melkey Moksyakov, Esteban Suárez"
+          "title": "Agents can now buy domains with the Vercel CLI Agents can now use the Vercel CLI to purchase domains. Melkey Moksyakov, Esteban Suárez",
+          "summary": "9 October 9 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261009-cloudflare-deno-is-joining-cloudflare-f7c4a724",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+      "publishedAt": "2026-10-09T12:50:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:58.339Z",
+      "locales": {
+        "en": {
+          "title": "Deno is joining Cloudflare",
+          "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places."
+        },
+        "fr": {
+          "title": "Deno is joining Cloudflare",
+          "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places."
         }
       }
     },
@@ -1199,26 +1219,6 @@
         "fr": {
           "title": "Copilot code review: New organization billing options and controls",
           "summary": "This release adds new billing and license controls for Copilot code review admins: Billing: Organization owners can bill Copilot code reviews from members with a Copilot license to the organization’s… The post Copilot c…"
-        }
-      }
-    },
-    {
-      "slug": "20261008-cloudflare-bridging-technical-depth-and-usability-the-story-behi-5ce64f51",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/radar-redesign/",
-      "publishedAt": "2026-10-08T13:00:00.000Z",
-      "discoveredAt": "2026-10-08T13:24:59.349Z",
-      "locales": {
-        "en": {
-          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
-          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map a…"
-        },
-        "fr": {
-          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
-          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map a…"
         }
       }
     },
@@ -1283,22 +1283,22 @@
       }
     },
     {
-      "slug": "20261005-github-pgivm-116-released-9d0d6d1e",
+      "slug": "20261005-github-pgvector-087-released-9f7f16c5",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_ivm-116-released-3391/",
+      "href": "https://www.postgresql.org/about/news/pgvector-087-released-3392/",
       "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-11T21:55:27.856Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "pg_ivm 1.16 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault whe…"
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details:…"
         },
         "fr": {
-          "title": "pg_ivm 1.16 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault whe…"
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details:…"
         }
       }
     },
@@ -1523,42 +1523,62 @@
       }
     },
     {
-      "slug": "20261011-cursor-observability-on-auto-pilot-d72f6df8",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
+      "slug": "20261012-supabase-supabase-middleware-10-c639ad09",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/50403-observability-autopilot",
-      "publishedAt": "2026-10-11T12:45:17.161Z",
-      "discoveredAt": "2026-10-11T12:45:17.161Z",
+      "href": "https://supabase.com/changelog/supabase-middleware-1-0",
+      "publishedAt": "2026-10-12T15:17:56.208Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
         },
         "fr": {
-          "title": "Observability on Auto-Pilot",
-          "summary": "New Feature Hire an agent to watch your Supabase project. Prepared prompts for four monitoring roles, ready to run in Claude Routines, Codex, Cursor Automations, or any environment yo"
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
         }
       }
     },
     {
-      "slug": "20261011-vercel-deployment-storage-billing-begins-for-existing-pro-teams--bc0fa275",
+      "slug": "20261011-vercel-grok-imagine-video-15-lite-on-ai-gateway-call-xais-grok-i-ba03c550",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/deployment-storage-pricing-expands-to-existing-teams",
-      "publishedAt": "2026-10-11T12:45:17.161Z",
-      "discoveredAt": "2026-10-11T12:45:17.161Z",
+      "href": "https://vercel.com/changelog/grok-imagine-video-1-5-lite-on-ai-gateway",
+      "publishedAt": "2026-10-11T21:55:27.856Z",
+      "discoveredAt": "2026-10-11T21:55:27.856Z",
       "locales": {
         "en": {
-          "title": "Deployment Storage billing begins for existing Pro teams Existing Pro teams will pay $0.10 per GB-month for Deployment Storage and Functions Storage, and the retention window moves to 30 days on October 23. Jay Gengelbach, Pranav Kanchi, and 1 other",
-          "summary": "Pranav Kanchi, Jay Gengelbach, and 1 other"
+          "title": "Grok Imagine Video 1.5 Lite on AI Gateway Call xAI's Grok Imagine Video 1.5 Lite through Vercel AI Gateway with one API key, unified billing, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "Tom Lienard Software Engineer, Infrastructure"
         },
         "fr": {
-          "title": "Deployment Storage billing begins for existing Pro teams Existing Pro teams will pay $0.10 per GB-month for Deployment Storage and Functions Storage, and the retention window moves to 30 days on October 23. Jay Gengelbach, Pranav Kanchi, and 1 other",
-          "summary": "Pranav Kanchi, Jay Gengelbach, and 1 other"
+          "title": "Grok Imagine Video 1.5 Lite on AI Gateway Call xAI's Grok Imagine Video 1.5 Lite through Vercel AI Gateway with one API key, unified billing, and request traces. Zachary Chen, Jerilyn Zheng",
+          "summary": "Tom Lienard Software Engineer, Infrastructure"
+        }
+      }
+    },
+    {
+      "slug": "20261008-cloudflare-bridging-technical-depth-and-usability-the-story-behi-5ce64f51",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/radar-redesign/",
+      "publishedAt": "2026-10-08T13:00:00.000Z",
+      "discoveredAt": "2026-10-08T13:24:59.349Z",
+      "locales": {
+        "en": {
+          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map a…"
+        },
+        "fr": {
+          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map a…"
         }
       }
     },
@@ -1579,26 +1599,6 @@
         "fr": {
           "title": "Triage role users or higher can now archive pull requests",
           "summary": "Users with the triage role or higher in a repository can now archive and unarchive pull requests. Previously, archiving was limited to repository administrators, requiring trusted triagers to hand routine… The post Tria…"
-        }
-      }
-    },
-    {
-      "slug": "20261007-cloudflare-building-an-evidence-grounded-agentic-security-operat-efc47ac2",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/agentic-security-operations/",
-      "publishedAt": "2026-10-07T16:30:36.000Z",
-      "discoveredAt": "2026-10-07T23:03:25.028Z",
-      "locales": {
-        "en": {
-          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
-          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system…"
-        },
-        "fr": {
-          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
-          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system…"
         }
       }
     },
@@ -1663,22 +1663,22 @@
       }
     },
     {
-      "slug": "20261005-postgresql-pgvaulttde-v172-critical-crash-fixes-new-on-disk-form-35290beb",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261005-github-pgivm-116-released-9d0d6d1e",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v172-critical-crash-fixes-new-on-disk-format-and-stability-improvements-3393/",
+      "href": "https://www.postgresql.org/about/news/pg_ivm-116-released-3391/",
       "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-11T12:45:17.161Z",
+      "discoveredAt": "2026-10-11T21:55:27.856Z",
       "locales": {
         "en": {
-          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
-          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuse…"
+          "title": "pg_ivm 1.16 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault whe…"
         },
         "fr": {
-          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
-          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuse…"
+          "title": "pg_ivm 1.16 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault whe…"
         }
       }
     },
@@ -1903,42 +1903,62 @@
       }
     },
     {
-      "slug": "20261010-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
+      "slug": "20261012-supabase-logs-usage-based-pricing-f9fe585d",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/multigres-private-alpha",
-      "publishedAt": "2026-10-10T21:40:51.008Z",
-      "discoveredAt": "2026-10-10T21:40:51.008Z",
+      "href": "https://supabase.com/changelog/logs-usage-based-pricing",
+      "publishedAt": "2026-10-12T15:17:56.208Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
         },
         "fr": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
         }
       }
     },
     {
-      "slug": "20261010-vercel-liquid-ais-d1-is-available-on-ai-gateway-evaluate-typed-q-8bbfde4e",
+      "slug": "20261011-vercel-new-pro-teams-now-default-to-30-day-deployment-retention--3526dea6",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/liquid-ai-d1-is-available-on-ai-gateway",
-      "publishedAt": "2026-10-10T21:40:51.008Z",
-      "discoveredAt": "2026-10-10T21:40:51.008Z",
+      "href": "https://vercel.com/changelog/new-pro-teams-now-default-to-30-day-deployment-retention",
+      "publishedAt": "2026-10-11T12:45:17.161Z",
+      "discoveredAt": "2026-10-11T12:45:17.161Z",
       "locales": {
         "en": {
-          "title": "Liquid AI's d1 is available on AI Gateway Evaluate typed questions with Liquid d1 on Vercel AI Gateway using the AI SDK, HTTP API, or TypeSafe-compatible API. +2 Zachary Chen, Rohan Taneja, and 2 others",
-          "summary": "2 Jerilyn Zheng, Kevin Dawkins, and 2 others"
+          "title": "New Pro teams now default to 30-day deployment retention New Pro teams use 30-day deployment retention by default, with the option to keep longer history. Pranav Kanchi, Jay Gengelbach, and 1 other",
+          "summary": "-118.jpg\"/> Melkey Moksyakov, Esteban Suárez"
         },
         "fr": {
-          "title": "Liquid AI's d1 is available on AI Gateway Evaluate typed questions with Liquid d1 on Vercel AI Gateway using the AI SDK, HTTP API, or TypeSafe-compatible API. +2 Zachary Chen, Rohan Taneja, and 2 others",
-          "summary": "2 Jerilyn Zheng, Kevin Dawkins, and 2 others"
+          "title": "New Pro teams now default to 30-day deployment retention New Pro teams use 30-day deployment retention by default, with the option to keep longer history. Pranav Kanchi, Jay Gengelbach, and 1 other",
+          "summary": "-118.jpg\"/> Melkey Moksyakov, Esteban Suárez"
+        }
+      }
+    },
+    {
+      "slug": "20261007-cloudflare-building-an-evidence-grounded-agentic-security-operat-efc47ac2",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/agentic-security-operations/",
+      "publishedAt": "2026-10-07T16:30:36.000Z",
+      "discoveredAt": "2026-10-07T23:03:25.028Z",
+      "locales": {
+        "en": {
+          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system…"
+        },
+        "fr": {
+          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system…"
         }
       }
     },
@@ -1959,26 +1979,6 @@
         "fr": {
           "title": "Screen readers can navigate timelines as lists",
           "summary": "Screen readers can now navigate issue and pull request timelines as a list. When you move through a timeline, assistive technology can announce the list structure, item count, current position,… The post Screen readers…"
-        }
-      }
-    },
-    {
-      "slug": "20261006-cloudflare-the-keys-to-the-internet-change-on-october-11-are-you-1424f8a7",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-      "publishedAt": "2026-10-06T17:50:11.000Z",
-      "discoveredAt": "2026-10-06T22:38:45.590Z",
-      "locales": {
-        "en": {
-          "title": "The keys to the Internet change on October 11. Are you ready?",
-          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollove…"
-        },
-        "fr": {
-          "title": "The keys to the Internet change on October 11. Are you ready?",
-          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollove…"
         }
       }
     },
@@ -2043,22 +2043,22 @@
       }
     },
     {
-      "slug": "20261005-claude-dbforge-20262-adds-a-postgresql-debugger-visual-object-ed-4dad8a1f",
-      "toolName": "Claude",
-      "category": "AI Assistant",
+      "slug": "20261005-postgresql-pgvaulttde-v172-critical-crash-fixes-new-on-disk-form-35290beb",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-and-broader-context-for-dbforge-ai-assistant-3394/",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v172-critical-crash-fixes-new-on-disk-format-and-stability-improvements-3393/",
       "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-10T21:40:51.008Z",
+      "discoveredAt": "2026-10-11T12:45:17.161Z",
       "locales": {
         "en": {
-          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
-          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database manageme…"
+          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
+          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuse…"
         },
         "fr": {
-          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
-          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database manageme…"
+          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
+          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuse…"
         }
       }
     },
@@ -2083,22 +2083,22 @@
       }
     },
     {
-      "slug": "20260915-nist-nist-awards-more-than-30-million-for-mep-centers-in-11-stat-d9483720",
+      "slug": "20260915-nist-nist-finalizes-guidelines-on-protecting-online-identity-and-fce54ff4",
       "toolName": "NIST",
       "category": "Security & Standards",
       "source": "NIST News",
       "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/09/nist-awards-more-30-million-mep-centers-11-states-and-puerto-rico",
+      "href": "https://www.nist.gov/news-events/news/2026/09/nist-finalizes-guidelines-protecting-online-identity-and-access-tokens",
       "publishedAt": "2026-09-15T12:00:00.000Z",
-      "discoveredAt": "2026-10-11T21:55:27.856Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "NIST Awards More Than $30 Million for MEP Centers in 11 States and Puerto Rico",
-          "summary": "The awards will help small and medium-sized manufacturers increase the adoption of advanced manufacturing technology."
+          "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
+          "summary": "The finalized publication is designed to help organizations take effective steps to avoid exposing tokens to attackers."
         },
         "fr": {
-          "title": "NIST Awards More Than $30 Million for MEP Centers in 11 States and Puerto Rico",
-          "summary": "The awards will help small and medium-sized manufacturers increase the adoption of advanced manufacturing technology."
+          "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
+          "summary": "The finalized publication is designed to help organizations take effective steps to avoid exposing tokens to attackers."
         }
       }
     },
@@ -2283,42 +2283,62 @@
       }
     },
     {
-      "slug": "20261010-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261012-supabase-an-outdated-subset-of-tls-12-ciphers-will-be-disabled-o-d8a64b10",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/orioledb-public-beta",
-      "publishedAt": "2026-10-10T21:40:51.008Z",
-      "discoveredAt": "2026-10-10T21:40:51.008Z",
+      "href": "https://supabase.com/changelog/cbc-tls-ciphers-deprecated",
+      "publishedAt": "2026-10-12T00:00:00.000Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+          "title": "An outdated subset of TLS 1.2 ciphers will be disabled on project HTTP APIs",
+          "summary": "Oct 12, 2026"
         },
         "fr": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+          "title": "An outdated subset of TLS 1.2 ciphers will be disabled on project HTTP APIs",
+          "summary": "Oct 12, 2026"
         }
       }
     },
     {
-      "slug": "20261010-vercel-skip-sending-request-bodies-to-routing-middleware-set-ski-72fbd17b",
+      "slug": "20261011-vercel-deployment-storage-billing-begins-for-existing-pro-teams--bc0fa275",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/skip-sending-request-bodies-to-routing-middleware",
-      "publishedAt": "2026-10-10T21:40:51.008Z",
-      "discoveredAt": "2026-10-10T21:40:51.008Z",
+      "href": "https://vercel.com/changelog/deployment-storage-pricing-expands-to-existing-teams",
+      "publishedAt": "2026-10-11T12:45:17.161Z",
+      "discoveredAt": "2026-10-11T12:45:17.161Z",
       "locales": {
         "en": {
-          "title": "Skip sending request bodies to Routing Middleware Set skipMiddlewareRequestBody to stop forwarding the client request body to Routing Middleware, reducing Fast Origin Transfer usage and helping improve Time to First Byte. Shohei Maeda Software Engineer",
-          "summary": "8 October 8 Oct"
+          "title": "Deployment Storage billing begins for existing Pro teams Existing Pro teams will pay $0.10 per GB-month for Deployment Storage and Functions Storage, and the retention window moves to 30 days on October 23. Jay Gengelbach, Pranav Kanchi, and 1 other",
+          "summary": "Pranav Kanchi, Jay Gengelbach, and 1 other"
         },
         "fr": {
-          "title": "Skip sending request bodies to Routing Middleware Set skipMiddlewareRequestBody to stop forwarding the client request body to Routing Middleware, reducing Fast Origin Transfer usage and helping improve Time to First Byte. Shohei Maeda Software Engineer",
-          "summary": "8 October 8 Oct"
+          "title": "Deployment Storage billing begins for existing Pro teams Existing Pro teams will pay $0.10 per GB-month for Deployment Storage and Functions Storage, and the retention window moves to 30 days on October 23. Jay Gengelbach, Pranav Kanchi, and 1 other",
+          "summary": "Pranav Kanchi, Jay Gengelbach, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20261006-cloudflare-the-keys-to-the-internet-change-on-october-11-are-you-1424f8a7",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+      "publishedAt": "2026-10-06T17:50:11.000Z",
+      "discoveredAt": "2026-10-06T22:38:45.590Z",
+      "locales": {
+        "en": {
+          "title": "The keys to the Internet change on October 11. Are you ready?",
+          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollove…"
+        },
+        "fr": {
+          "title": "The keys to the Internet change on October 11. Are you ready?",
+          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollove…"
         }
       }
     },
@@ -2339,26 +2359,6 @@
         "fr": {
           "title": "Draft pull requests count toward pull request limits",
           "summary": "Maintainers are seeing more low-quality contributions in their repositories and need better ways to manage them. You can now configure pull request limits to also include draft pull requests. Previously,… The post Draft…"
-        }
-      }
-    },
-    {
-      "slug": "20261005-cloudflare-everything-we-launched-during-birthday-week-2026-0536bfa8",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
-      "publishedAt": "2026-10-05T13:00:00.000Z",
-      "discoveredAt": "2026-10-11T21:55:27.856Z",
-      "locales": {
-        "en": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
-        },
-        "fr": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
         }
       }
     },

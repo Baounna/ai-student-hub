@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-11T21:55:26.384Z",
+  "updatedAt": "2026-10-12T15:17:55.161Z",
   "items": [
     {
-      "slug": "20261009-introducing-clef-omni-with-full-multimodality-plus-a-faster-clef-6229f18e",
-      "topic": "AI Systems",
+      "slug": "20261012-filter-reshape-and-redact-logs-before-export-with-transformers-ae4b5b75",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
-      "publishedAt": "2026-10-09T18:27:34.000Z",
-      "discoveredAt": "2026-10-09T22:36:02.957Z",
+      "href": "https://blog.cloudflare.com/transformers-on-logpush/",
+      "publishedAt": "2026-10-12T14:44:59.000Z",
+      "discoveredAt": "2026-10-12T15:17:55.161Z",
       "locales": {
         "en": {
-          "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
-          "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2.0x."
+          "title": "Filter, reshape, and redact logs before export with Transformers",
+          "summary": "Logpush now supports Transformers, allowing teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply those changes directly to log data before it…"
         },
         "fr": {
-          "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
-          "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2.0x."
+          "title": "Filter, reshape, and redact logs before export with Transformers",
+          "summary": "Logpush now supports Transformers, allowing teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply those changes directly to log data before it…"
         }
       }
     },
@@ -364,21 +364,21 @@
       }
     },
     {
-      "slug": "20261009-introducing-on-demand-cpu-and-memory-profiling-with-flamegraphs--80903cd2",
-      "topic": "Computer Systems",
+      "slug": "20261009-introducing-clef-omni-with-full-multimodality-plus-a-faster-clef-6229f18e",
+      "topic": "AI Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/workers-on-demand-profiling/",
-      "publishedAt": "2026-10-09T13:00:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:57.050Z",
+      "href": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+      "publishedAt": "2026-10-09T18:27:34.000Z",
+      "discoveredAt": "2026-10-09T22:36:02.957Z",
       "locales": {
         "en": {
-          "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
-          "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bottlenecks."
+          "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+          "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2.0x."
         },
         "fr": {
-          "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
-          "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bottlenecks."
+          "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+          "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2.0x."
         }
       }
     },
@@ -706,21 +706,21 @@
       }
     },
     {
-      "slug": "20261009-deno-is-joining-cloudflare-f7c4a724",
+      "slug": "20261009-introducing-on-demand-cpu-and-memory-profiling-with-flamegraphs--80903cd2",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/deno-joins-cloudflare/",
-      "publishedAt": "2026-10-09T12:50:00.000Z",
+      "href": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+      "publishedAt": "2026-10-09T13:00:00.000Z",
       "discoveredAt": "2026-10-09T13:12:57.050Z",
       "locales": {
         "en": {
-          "title": "Deno is joining Cloudflare",
-          "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places."
+          "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
+          "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bottlenecks."
         },
         "fr": {
-          "title": "Deno is joining Cloudflare",
-          "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places."
+          "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
+          "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bottlenecks."
         }
       }
     },
@@ -1048,21 +1048,21 @@
       }
     },
     {
-      "slug": "20261008-bridging-technical-depth-and-usability-the-story-behind-radars-r-5ce64f51",
+      "slug": "20261009-deno-is-joining-cloudflare-f7c4a724",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/radar-redesign/",
-      "publishedAt": "2026-10-08T13:00:00.000Z",
-      "discoveredAt": "2026-10-08T13:24:58.220Z",
+      "href": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+      "publishedAt": "2026-10-09T12:50:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:57.050Z",
       "locales": {
         "en": {
-          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
-          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map and standar…"
+          "title": "Deno is joining Cloudflare",
+          "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places."
         },
         "fr": {
-          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
-          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map and standar…"
+          "title": "Deno is joining Cloudflare",
+          "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places."
         }
       }
     },
@@ -1390,21 +1390,21 @@
       }
     },
     {
-      "slug": "20261007-building-an-evidence-grounded-agentic-security-operations-harnes-efc47ac2",
-      "topic": "Security & Standards",
+      "slug": "20261008-bridging-technical-depth-and-usability-the-story-behind-radars-r-5ce64f51",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/agentic-security-operations/",
-      "publishedAt": "2026-10-07T16:30:36.000Z",
-      "discoveredAt": "2026-10-07T23:03:23.944Z",
+      "href": "https://blog.cloudflare.com/radar-redesign/",
+      "publishedAt": "2026-10-08T13:00:00.000Z",
+      "discoveredAt": "2026-10-08T13:24:58.220Z",
       "locales": {
         "en": {
-          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
-          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers g…"
+          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map and standar…"
         },
         "fr": {
-          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
-          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers g…"
+          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+          "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map and standar…"
         }
       }
     },
@@ -1713,21 +1713,21 @@
       }
     },
     {
-      "slug": "20261006-the-keys-to-the-internet-change-on-october-11-are-you-ready-1424f8a7",
-      "topic": "Computer Systems",
+      "slug": "20261007-building-an-evidence-grounded-agentic-security-operations-harnes-efc47ac2",
+      "topic": "Security & Standards",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-      "publishedAt": "2026-10-06T17:50:11.000Z",
-      "discoveredAt": "2026-10-06T22:38:43.858Z",
+      "href": "https://blog.cloudflare.com/agentic-security-operations/",
+      "publishedAt": "2026-10-07T16:30:36.000Z",
+      "discoveredAt": "2026-10-07T23:03:23.944Z",
       "locales": {
         "en": {
-          "title": "The keys to the Internet change on October 11. Are you ready?",
-          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover."
+          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers g…"
         },
         "fr": {
-          "title": "The keys to the Internet change on October 11. Are you ready?",
-          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover."
+          "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+          "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers g…"
         }
       }
     },
@@ -2036,21 +2036,21 @@
       }
     },
     {
-      "slug": "20261005-everything-we-launched-during-birthday-week-2026-0536bfa8",
+      "slug": "20261006-the-keys-to-the-internet-change-on-october-11-are-you-ready-1424f8a7",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
-      "publishedAt": "2026-10-05T13:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "href": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+      "publishedAt": "2026-10-06T17:50:11.000Z",
+      "discoveredAt": "2026-10-06T22:38:43.858Z",
       "locales": {
         "en": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+          "title": "The keys to the Internet change on October 11. Are you ready?",
+          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover."
         },
         "fr": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+          "title": "The keys to the Internet change on October 11. Are you ready?",
+          "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover."
         }
       }
     },
@@ -2359,21 +2359,21 @@
       }
     },
     {
-      "slug": "20261005-one-year-later-the-power-of-1111-interns-523bb8b1",
+      "slug": "20261005-everything-we-launched-during-birthday-week-2026-0536bfa8",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/one-year-later-1111-interns/",
+      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
       "publishedAt": "2026-10-05T13:00:00.000Z",
       "discoveredAt": "2026-10-05T14:32:15.255Z",
       "locales": {
         "en": {
-          "title": "One year later: the power of 1.1.1.1 interns",
-          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
         },
         "fr": {
-          "title": "One year later: the power of 1.1.1.1 interns",
-          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
         }
       }
     },
@@ -2663,21 +2663,21 @@
       }
     },
     {
-      "slug": "20261002-streamline-custom-video-pipelines-with-cloudflare-stream-and-wor-2464ff1b",
+      "slug": "20261005-one-year-later-the-power-of-1111-interns-523bb8b1",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/streamline/",
-      "publishedAt": "2026-10-02T16:13:45.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "href": "https://blog.cloudflare.com/one-year-later-1111-interns/",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
       "locales": {
         "en": {
-          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
-          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
         },
         "fr": {
-          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
-          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
         }
       }
     },
@@ -2929,21 +2929,21 @@
       }
     },
     {
-      "slug": "20261002-introducing-web-search-api-via-ai-gateway-dcd0ac26",
-      "topic": "Computer Science",
+      "slug": "20261002-8-major-updates-to-cloudflare-observability-423bae1f",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/introducing-web-search-api/",
-      "publishedAt": "2026-10-02T13:28:10.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "href": "https://blog.cloudflare.com/one-observability-platform/",
+      "publishedAt": "2026-10-02T18:00:00.000Z",
+      "discoveredAt": "2026-10-12T15:17:55.161Z",
       "locales": {
         "en": {
-          "title": "Introducing Web Search API via AI Gateway",
-          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
+          "title": "8 major updates to Cloudflare Observability",
+          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
         },
         "fr": {
-          "title": "Introducing Web Search API via AI Gateway",
-          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
+          "title": "8 major updates to Cloudflare Observability",
+          "summary": "Cloudflare is launching eight major updates that bring logs, traces, analytics, alerts, dashboards, querying, and telemetry export into one observability platform, with simpler and more predictable pricing."
         }
       }
     },
@@ -3176,21 +3176,21 @@
       }
     },
     {
-      "slug": "20261002-introducing-cloudflare-traces-follow-requests-through-our-entire-9c3a3363",
+      "slug": "20261002-streamline-custom-video-pipelines-with-cloudflare-stream-and-wor-2464ff1b",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflare-tracing/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-11T21:55:26.384Z",
+      "href": "https://blog.cloudflare.com/streamline/",
+      "publishedAt": "2026-10-02T16:13:45.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
       "locales": {
         "en": {
-          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
-          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
+          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
         },
         "fr": {
-          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
-          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
+          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+          "summary": "Streamline demonstrates how to build long-running, continuous video processing pipelines by pairing Cloudflare Workers and Durable Objects with a containerized media engine."
         }
       }
     },
@@ -3423,21 +3423,21 @@
       }
     },
     {
-      "slug": "20261002-updates-on-our-pledge-to-make-cloudflare-features-accessible-to--a7fc3ad4",
-      "topic": "Computer Systems",
+      "slug": "20261002-introducing-web-search-api-via-ai-gateway-dcd0ac26",
+      "topic": "Computer Science",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/enterprise-for-all-update/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-11T12:45:16.151Z",
+      "href": "https://blog.cloudflare.com/introducing-web-search-api/",
+      "publishedAt": "2026-10-02T13:28:10.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
       "locales": {
         "en": {
-          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
-          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
+          "title": "Introducing Web Search API via AI Gateway",
+          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
         },
         "fr": {
-          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
-          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
+          "title": "Introducing Web Search API via AI Gateway",
+          "summary": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup. Developers can now inject real-time web context into model inference calls via AI Gateway, REST APIs, or Worker…"
         }
       }
     },
@@ -3651,21 +3651,21 @@
       }
     },
     {
-      "slug": "20261002-announcing-cloudflare-ohttp-gateway-expanding-access-to-cloudfla-ddac069f",
-      "topic": "Security & Standards",
+      "slug": "20261002-introducing-cloudflare-traces-follow-requests-through-our-entire-9c3a3363",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+      "href": "https://blog.cloudflare.com/cloudflare-tracing/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-10T21:40:49.615Z",
+      "discoveredAt": "2026-10-11T21:55:26.384Z",
       "locales": {
         "en": {
-          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
-          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
+          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
         },
         "fr": {
-          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
-          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
+          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
+          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
         }
       }
     },
@@ -3860,21 +3860,21 @@
       }
     },
     {
-      "slug": "20261002-follow-the-thread-a-new-dashboard-to-investigate-account-abuse-e58ff1b2",
-      "topic": "Security & Standards",
+      "slug": "20261002-updates-on-our-pledge-to-make-cloudflare-features-accessible-to--a7fc3ad4",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
+      "href": "https://blog.cloudflare.com/enterprise-for-all-update/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-10T21:40:49.615Z",
+      "discoveredAt": "2026-10-11T12:45:16.151Z",
       "locales": {
         "en": {
-          "title": "Follow the thread: a new dashboard to investigate account abuse",
-          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
         },
         "fr": {
-          "title": "Follow the thread: a new dashboard to investigate account abuse",
-          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
         }
       }
     },
@@ -4069,21 +4069,21 @@
       }
     },
     {
-      "slug": "20261002-protected-quick-tunnels-simple-accountless-authentication-for-yo-c76f1b29",
-      "topic": "Computer Systems",
+      "slug": "20261002-announcing-cloudflare-ohttp-gateway-expanding-access-to-cloudfla-ddac069f",
+      "topic": "Security & Standards",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/protected-quick-tunnels/",
+      "href": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-10T12:27:46.305Z",
+      "discoveredAt": "2026-10-10T21:40:49.615Z",
       "locales": {
         "en": {
-          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
-          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
+          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
         },
         "fr": {
-          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
-          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
+          "title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+          "summary": "We’re announcing the closed beta of a self-serve Cloudflare OHTTP Gateway. We’re also renaming our Privacy Gateway to Cloudflare OHTTP Relay to better distinguish the two products."
         }
       }
     },
@@ -4278,21 +4278,21 @@
       }
     },
     {
-      "slug": "20261002-building-for-good-how-civil-society-organizations-are-automating-823db2de",
-      "topic": "Computer Systems",
+      "slug": "20261002-follow-the-thread-a-new-dashboard-to-investigate-account-abuse-e58ff1b2",
+      "topic": "Security & Standards",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/civil-society-automation/",
+      "href": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-10T12:27:46.305Z",
+      "discoveredAt": "2026-10-10T21:40:49.615Z",
       "locales": {
         "en": {
-          "title": "Building for good: How civil society organizations are automating on Cloudflare",
-          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
+          "title": "Follow the thread: a new dashboard to investigate account abuse",
+          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
         },
         "fr": {
-          "title": "Building for good: How civil society organizations are automating on Cloudflare",
-          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
+          "title": "Follow the thread: a new dashboard to investigate account abuse",
+          "summary": "Fraudsters are increasingly using AI to bypass stateless security checks. Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account a…"
         }
       }
     },
@@ -4449,21 +4449,21 @@
       }
     },
     {
-      "slug": "20261002-2026-birthday-week-network-performance-update-d7660457",
-      "topic": "AI Performance",
+      "slug": "20261002-protected-quick-tunnels-simple-accountless-authentication-for-yo-c76f1b29",
+      "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
+      "href": "https://blog.cloudflare.com/protected-quick-tunnels/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-09T22:36:02.957Z",
+      "discoveredAt": "2026-10-10T12:27:46.305Z",
       "locales": {
         "en": {
-          "title": "2026 Birthday week: network performance update",
-          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
+          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
+          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
         },
         "fr": {
-          "title": "2026 Birthday week: network performance update",
-          "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining u…"
+          "title": "Protected Quick Tunnels: simple accountless authentication for your next dev project",
+          "summary": "Quick Tunnels now support email authentication. Add --allowed-mail to one cloudflared command, and only the addresses or domains you list can reach your local app. No Cloudflare account required on either side."
         }
       }
     },
@@ -4487,21 +4487,21 @@
       }
     },
     {
-      "slug": "20260922-transformers-now-runs-llamacpp-quants-98acfe91",
-      "topic": "AI Systems",
+      "slug": "20260922-how-uk-aisi-and-evaleval-are-making-benchmark-results-reproducib-2960c64a",
+      "topic": "AI Performance",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "href": "https://huggingface.co/blog/evaleval-aisi",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-11T21:55:26.384Z",
+      "discoveredAt": "2026-10-12T15:17:55.161Z",
       "locales": {
         "en": {
-          "title": "Transformers now runs llama.cpp quants",
-          "summary": "Transformers now runs llama.cpp quants"
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
         },
         "fr": {
-          "title": "Transformers now runs llama.cpp quants",
-          "summary": "Transformers now runs llama.cpp quants"
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "summary": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible"
         }
       }
     },
@@ -4525,21 +4525,21 @@
       }
     },
     {
-      "slug": "20261001-how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation-d01a6b06",
-      "topic": "AI Systems",
+      "slug": "20261001-tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-64-82b93583",
+      "topic": "AI Performance",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/",
+      "href": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
       "publishedAt": "2026-10-01T18:31:27.000Z",
-      "discoveredAt": "2026-10-11T21:55:26.384Z",
+      "discoveredAt": "2026-10-12T15:17:55.161Z",
       "locales": {
         "en": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
         },
         "fr": {
-          "title": "How to Use AI Agents to Prepare 3D Scenes for Simulation",
-          "summary": "Agentic AI workflows can be used to prepare and validate digital twins for physical AI systems. Agents can inspect 3D scenes, author simulation-relevant data in..."
+          "title": "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+          "summary": "AI agents are moving from cloud data centers to vehicles, robots, and other edge devices. Unlike a chatbot that answers a single prompt, an agent works through..."
         }
       }
     },
