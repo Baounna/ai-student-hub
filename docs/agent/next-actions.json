@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T16:20:43.002Z",
+  "generatedAt": "2026-10-12T16:57:18.144Z",
   "target": {
     "monthlyRevenueUsd": 10
   },
@@ -31,12 +31,13 @@
     "citations": {
       "postsWithReferences": 24,
       "uncitedPostsEstimate": 0,
-      "sourcedNewsCount": 9,
-      "uncitedNewsEstimate": 1
+      "sourcedNewsCount": 10,
+      "uncitedNewsEstimate": 0,
+      "unverifiableAttributions": 0
     },
     "splitCoverage": {
-      "blogSplit": false,
-      "newsSplit": false
+      "blogSplit": true,
+      "newsSplit": true
     }
   },
   "monetization": {
@@ -78,128 +79,83 @@
   },
   "opportunities": [
     {
-      "slug": "20261005-reviewbench-an-open-benchmark-for-ai-code-review-4b0c57f2",
-      "source": "GitHub Blog",
-      "topic": "AI Performance",
-      "publishedAt": "2026-10-05T15:59:40.000Z",
-      "href": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
-      "sourceTitle": "ReviewBench: An open benchmark for AI code review",
-      "title": "ReviewBench: An open benchmark for AI code review: What It Means for AI/CS Students",
-      "keyword": "best ai model benchmark for students github blog",
-      "monetizationAngle": "benchmark + budget-friendly model/tool choice",
-      "cta": "Compare tools + student guide"
+      "slug": "20261012-replayssm-rethinking-state-storage-for-faster-hybrid-model-decod-1ae6a56c",
+      "source": "NVIDIA Developer Blog",
+      "topic": "AI Systems",
+      "publishedAt": "2026-10-12T16:20:48.000Z",
+      "href": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/",
+      "sourceTitle": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
+      "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding: What It Means for AI/CS Students",
+      "keyword": "how to build nvidia developer blog",
+      "monetizationAngle": "how to build and ship this update as a student project",
+      "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20261005-making-amazon-quick-enterprise-ready-automated-auditable-cross-a-b9ec7ad0",
+      "slug": "20261012-docker-hub-security-advisory-personal-access-tokens-transferred--b06c4bf6",
+      "source": "Docker Blog",
+      "topic": "Security & Standards",
+      "publishedAt": "2026-10-12T16:00:00.000Z",
+      "href": "https://www.docker.com/blog/docker-hub-security-advisory-cve-2026-105445/",
+      "sourceTitle": "Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions",
+      "title": "Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions: What It Means for AI/CS Students",
+      "keyword": "api security for student projects docker blog",
+      "monetizationAngle": "security checklist and reliability upgrade path for student apps",
+      "cta": "Security guide + resources"
+    },
+    {
+      "slug": "20261012-deploy-decision-models-with-llamacpp-on-amazon-sagemaker-ai-5314a62a",
       "source": "AWS ML Blog",
       "topic": "AI Systems",
-      "publishedAt": "2026-10-05T15:56:28.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion/",
-      "sourceTitle": "Making Amazon Quick enterprise-ready: Automated, auditable cross-account resource promotion",
-      "title": "Making Amazon Quick enterprise-ready: Automated, auditable cross-account resource promotion: What It Means for AI/CS Students",
+      "publishedAt": "2026-10-12T15:51:46.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/deploy-decision-models-with-llama-cpp-on-amazon-sagemaker-ai/",
+      "sourceTitle": "Deploy decision models with llama.cpp on Amazon SageMaker AI",
+      "title": "Deploy decision models with llama.cpp on Amazon SageMaker AI: What It Means for AI/CS Students",
       "keyword": "how to build aws ml blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20261005-agentic-retrieval-with-langchain-and-amazon-bedrock-knowledge-ba-a764a26c",
+      "slug": "20261012-run-multi-node-inference-workloads-using-ray-llm-deep-learning-c-8dfe752a",
       "source": "AWS ML Blog",
       "topic": "AI Systems",
-      "publishedAt": "2026-10-05T15:53:56.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/agentic-retrieval-with-langchain-and-amazon-bedrock-knowledge-bases/",
-      "sourceTitle": "Agentic retrieval with LangChain and Amazon Bedrock Knowledge Bases",
-      "title": "Agentic retrieval with LangChain and Amazon Bedrock Knowledge Bases: What It Means for AI/CS Students",
+      "publishedAt": "2026-10-12T15:50:14.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/run-multi-node-inference-workloads-using-ray-llm-deep-learning-containers/",
+      "sourceTitle": "Run multi-node inference workloads using Ray LLM Deep Learning Containers",
+      "title": "Run multi-node inference workloads using Ray LLM Deep Learning Containers: What It Means for AI/CS Students",
       "keyword": "how to build aws ml blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20261005-downgrading-user-roles-in-amazon-quick-e80698f3",
-      "source": "AWS ML Blog",
-      "topic": "AI Systems",
-      "publishedAt": "2026-10-05T15:51:38.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/downgrading-user-roles-in-amazon-quick/",
-      "sourceTitle": "Downgrading user roles in Amazon Quick",
-      "title": "Downgrading user roles in Amazon Quick: What It Means for AI/CS Students",
-      "keyword": "how to build aws ml blog",
+      "slug": "20261012-filter-reshape-and-redact-logs-before-export-with-transformers-ae4b5b75",
+      "source": "Cloudflare Blog",
+      "topic": "Computer Systems",
+      "publishedAt": "2026-10-12T14:44:59.000Z",
+      "href": "https://blog.cloudflare.com/transformers-on-logpush/",
+      "sourceTitle": "Filter, reshape, and redact logs before export with Transformers",
+      "title": "Filter, reshape, and redact logs before export with Transformers: What It Means for AI/CS Students",
+      "keyword": "how to build cloudflare blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20261005-evaluating-multi-agent-systems-for-explainability-and-helpfulnes-e07a3dc2",
-      "source": "AWS ML Blog",
+      "slug": "20261009-introducing-clef-omni-with-full-multimodality-plus-a-faster-clef-6229f18e",
+      "source": "Cloudflare Blog",
       "topic": "AI Systems",
-      "publishedAt": "2026-10-05T15:50:01.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/evaluating-multi-agent-systems-for-explainability-and-helpfulness-with-amazon-bedrock-agentcore/",
-      "sourceTitle": "Evaluating multi-agent systems for explainability and helpfulness with Amazon Bedrock AgentCore",
-      "title": "Evaluating multi-agent systems for explainability and helpfulness with Amazon Bedrock AgentCore: What It Means for AI/CS Students",
-      "keyword": "how to build aws ml blog",
-      "monetizationAngle": "how to build and ship this update as a student project",
-      "cta": "Resources stack + roadmap"
-    },
-    {
-      "slug": "20261005-our-approach-to-eu-text-provenance-rules-78ad5381",
-      "source": "OpenAI News",
-      "topic": "AI Systems",
-      "publishedAt": "2026-10-05T15:00:00.000Z",
-      "href": "https://openai.com/index/eu-text-provenance",
-      "sourceTitle": "Our approach to EU text provenance rules",
-      "title": "Our approach to EU text provenance rules: What It Means for AI/CS Students",
-      "keyword": "how to build openai news",
+      "publishedAt": "2026-10-09T18:27:34.000Z",
+      "href": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+      "sourceTitle": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+      "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash: What It Means for AI/CS Students",
+      "keyword": "how to build cloudflare blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     }
   ],
   "actions": [
     {
-      "priority": "P1",
-      "action": "Keep visible AI/CS split filters on both blog and news index pages.",
-      "why": "Split navigation helps users quickly enter the right track and increases session depth."
-    },
-    {
-      "priority": "P1",
-      "action": "Ensure every curated news brief has a valid source href.",
-      "why": "Uncited news weakens trust and violates source integrity standards."
-    },
-    {
-      "priority": "P1",
-      "action": "Add at least 3 valid affiliate links (name + final URL + placement).",
-      "why": "Without valid links, affiliate revenue path is blocked."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: home.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: resources.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: blog.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Cover missing affiliate placement: comparison.",
-      "why": "Missing placement means lost monetization intent on that traffic surface."
-    },
-    {
-      "priority": "P1",
-      "action": "Set NEXT_PUBLIC_PRODUCT_CHECKOUT_URL (Gumroad/LemonSqueezy) and test buy CTA.",
-      "why": "Product revenue cannot convert without a live checkout URL."
-    },
-    {
-      "priority": "P1",
-      "action": "Enable ConvertKit and connect newsletter form ID/API key.",
-      "why": "Email capture without automation loses warm leads and repeat conversions."
-    },
-    {
-      "priority": "P1",
-      "action": "Set lead magnet URLs for EN/FR and ensure CTA appears on home/resources/posts.",
-      "why": "Lead magnet is the lowest-friction conversion path for student traffic."
+      "priority": "P3",
+      "action": "Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows. These live in the Vercel environment; check them there or run this agent with those variables set.",
+      "why": "This run could see none of them, and an unchecked setting is not a broken one."
     },
     {
       "priority": "P2",
@@ -221,8 +177,8 @@
     "perRun": 2,
     "generatedCount": 2,
     "generatedFiles": [
-      "docs/agent/drafts/20261005--20261005-reviewbench-an-open-benchmark-for-ai-code-review-4b0c57f2.md",
-      "docs/agent/drafts/20261005--20261005-making-amazon-quick-enterprise-ready-automated-auditable-cross-a-b9ec7ad0.md"
+      "docs/agent/drafts/20261012--20261012-replayssm-rethinking-state-storage-for-faster-hybrid-model-decod-1ae6a56c.md",
+      "docs/agent/drafts/20261012--20261012-docker-hub-security-advisory-personal-access-tokens-transferred--b06c4bf6.md"
     ]
   }
 }

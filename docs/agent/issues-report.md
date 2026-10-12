@@ -1,28 +1,28 @@
 # AI and Cybersecurity News Agent Issue Sync
 
-Generated: 2026-10-05T17:23:37.260Z
+Generated: 2026-10-12T16:57:18.321Z
 Mode: disabled
 Repository: Baounna/ai-student-hub
 Max issues per run: 3
 
 ## Queue Sources
-- Operator: enabled=NO | actions=0 | queue=docs/agent/next-actions.json
-  - Selected this run: 0
-- Design: enabled=YES | actions=5 | queue=docs/agent/design-actions.json
-  - Queue generated at: 2026-10-05T17:23:37.093Z
+- Operator: enabled=YES | actions=4 | queue=docs/agent/next-actions.json
+  - Queue generated at: 2026-10-12T16:57:18.144Z
   - Selected this run: 3
+- Design: enabled=NO | actions=0 | queue=docs/agent/design-actions.json
+  - Selected this run: 0
 
 ## Run Summary
 - Created: 0
 - Already open/tracked: 0
 - Dry-run candidates: 3
 - Errors: 0
-- Tracked total: 12
+- Tracked total: 15
 
 ## Dry-run
-- [Design] [Design P1] Keep CS-first value proposition cards visible on homepage.
-- [Design] [Design P1] Use clean field-input styling for search with clear visual hierarchy.
-- [Design] [Design P2] Hide appearance panel on tools routes to reduce visual clutter.
+- [Operator] [Operator P2] Add lead magnet CTA on compare.
+- [Operator] [Operator P2] Publish 1 comparison-intent post/week from auto-news opportunities.
+- [Operator] [Operator P3] Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows…
 
 ## Tracked Actions
 - [Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -55,10 +55,19 @@ Max issues per run: 3
 - [Design P1] Use clean field-input styling for search with clear visual hierarchy.
   - Status: disabled
   - Last seen: 2026-10-05T17:23:37.260Z
+- [Operator P2] Add lead magnet CTA on compare.
+  - Status: disabled
+  - Last seen: 2026-10-12T16:57:18.321Z
+- [Operator P2] Publish 1 comparison-intent post/week from auto-news opportunities.
+  - Status: disabled
+  - Last seen: 2026-10-12T16:57:18.321Z
 - [Design P2] Hide appearance panel on tools routes to reduce visual clutter.
   - Status: disabled
   - Last seen: 2026-10-05T17:23:37.260Z
 - [Design P2] Keep AI/CS split filters on news page with track chips.
   - Status: disabled
   - Last seen: 2026-09-21T15:19:19.296Z
+- [Operator P3] Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows. These live in the Vercel environment; check them there or run this agent with those variables set.
+  - Status: disabled
+  - Last seen: 2026-10-12T16:57:18.321Z
 

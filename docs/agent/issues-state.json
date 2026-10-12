@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T17:23:37.260Z",
+  "generatedAt": "2026-10-12T16:57:18.321Z",
   "repository": "Baounna/ai-student-hub",
   "mode": "disabled",
   "maxPerRun": 3,
@@ -8,19 +8,19 @@
       "sourceId": "operator",
       "label": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "enabled": false,
-      "queueGeneratedAt": "",
-      "totalActions": 0,
-      "selectedCount": 0
+      "enabled": true,
+      "queueGeneratedAt": "2026-10-12T16:57:18.144Z",
+      "totalActions": 4,
+      "selectedCount": 3
     },
     {
       "sourceId": "design",
       "label": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "enabled": true,
-      "queueGeneratedAt": "2026-10-05T17:23:37.093Z",
-      "totalActions": 5,
-      "selectedCount": 3
+      "enabled": false,
+      "queueGeneratedAt": "",
+      "totalActions": 0,
+      "selectedCount": 0
     }
   ],
   "summary": {
@@ -28,7 +28,7 @@
     "existing": 0,
     "dryRun": 3,
     "errors": 0,
-    "tracked": 12
+    "tracked": 15
   },
   "items": [
     {
@@ -182,7 +182,7 @@
       "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
       "lastSeenAt": "2026-10-05T17:23:37.260Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "29e4e1db629195e3",
@@ -199,6 +199,40 @@
       "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
       "lastSeenAt": "2026-10-05T17:23:37.260Z",
+      "inQueue": false
+    },
+    {
+      "hash": "47e47e1d8303a4d2",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-10-12T16:57:18.144Z",
+      "priority": "P2",
+      "action": "Add lead magnet CTA on compare.",
+      "why": "Increases opt-ins per 100 visitors.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P2] Add lead magnet CTA on compare.",
+      "status": "disabled",
+      "createdAt": "2026-10-12T16:57:18.321Z",
+      "lastSeenAt": "2026-10-12T16:57:18.321Z",
+      "inQueue": true
+    },
+    {
+      "hash": "929a6c20e1dd7acf",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-10-12T16:57:18.144Z",
+      "priority": "P2",
+      "action": "Publish 1 comparison-intent post/week from auto-news opportunities.",
+      "why": "High-intent SEO posts improve both affiliate CTR and product click-through.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P2] Publish 1 comparison-intent post/week from auto-news opportunities.",
+      "status": "disabled",
+      "createdAt": "2026-10-12T16:57:18.321Z",
+      "lastSeenAt": "2026-10-12T16:57:18.321Z",
       "inQueue": true
     },
     {
@@ -216,7 +250,7 @@
       "status": "disabled",
       "createdAt": "2026-09-28T16:59:56.494Z",
       "lastSeenAt": "2026-10-05T17:23:37.260Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "8a7997bd695b6700",
@@ -234,6 +268,23 @@
       "createdAt": "2026-09-21T15:19:19.296Z",
       "lastSeenAt": "2026-09-21T15:19:19.296Z",
       "inQueue": false
+    },
+    {
+      "hash": "946e2d0e5f68543b",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-10-12T16:57:18.144Z",
+      "priority": "P3",
+      "action": "Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows. These live in the Vercel environment; check them there or run this agent with those variables set.",
+      "why": "This run could see none of them, and an unchecked setting is not a broken one.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P3] Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows…",
+      "status": "disabled",
+      "createdAt": "2026-10-12T16:57:18.321Z",
+      "lastSeenAt": "2026-10-12T16:57:18.321Z",
+      "inQueue": true
     }
   ]
 }

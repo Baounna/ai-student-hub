@@ -1,6 +1,6 @@
 # AI and Cybersecurity News Blog Operator Report
 
-Generated: 2026-10-05T16:20:43.002Z
+Generated: 2026-10-12T16:57:18.144Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -15,13 +15,13 @@ Internal target: $10.00/month (private operator metric)
 - CS share target >= 35.00%: YES
 - AI share ceiling <= 60.00%: YES
 - Required category coverage: YES
-- Split navigation (blog/news): NO/NO
+- Split navigation (blog/news): YES/YES
 
 ## Citation Coverage
 - Posts with references blocks: 24/24
 - Estimated uncited posts: 0
-- News entries with source href: 9/10
-- Estimated uncited news briefs: 1
+- News entries with source href: 10/10
+- Estimated uncited news briefs: 0
 
 ## Monetization Infrastructure
 - Valid affiliate links: 0/5
@@ -54,68 +54,50 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. ReviewBench: An open benchmark for AI code review: What It Means for AI/CS Students
-   - Source: GitHub Blog
-   - Keyword: best ai model benchmark for students github blog
-   - Monetization angle: benchmark + budget-friendly model/tool choice
-   - CTA: Compare tools + student guide
-2. Making Amazon Quick enterprise-ready: Automated, auditable cross-account resource promotion: What It Means for AI/CS Students
+1. ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding: What It Means for AI/CS Students
+   - Source: NVIDIA Developer Blog
+   - Keyword: how to build nvidia developer blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+2. Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions: What It Means for AI/CS Students
+   - Source: Docker Blog
+   - Keyword: api security for student projects docker blog
+   - Monetization angle: security checklist and reliability upgrade path for student apps
+   - CTA: Security guide + resources
+3. Deploy decision models with llama.cpp on Amazon SageMaker AI: What It Means for AI/CS Students
    - Source: AWS ML Blog
    - Keyword: how to build aws ml blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. Agentic retrieval with LangChain and Amazon Bedrock Knowledge Bases: What It Means for AI/CS Students
+4. Run multi-node inference workloads using Ray LLM Deep Learning Containers: What It Means for AI/CS Students
    - Source: AWS ML Blog
    - Keyword: how to build aws ml blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. Downgrading user roles in Amazon Quick: What It Means for AI/CS Students
-   - Source: AWS ML Blog
-   - Keyword: how to build aws ml blog
+5. Filter, reshape, and redact logs before export with Transformers: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-5. Evaluating multi-agent systems for explainability and helpfulness with Amazon Bedrock AgentCore: What It Means for AI/CS Students
-   - Source: AWS ML Blog
-   - Keyword: how to build aws ml blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. Our approach to EU text provenance rules: What It Means for AI/CS Students
-   - Source: OpenAI News
-   - Keyword: how to build openai news
+6. Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash: What It Means for AI/CS Students
+   - Source: Cloudflare Blog
+   - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
-1. [P1] Keep visible AI/CS split filters on both blog and news index pages.
-   - Why: Split navigation helps users quickly enter the right track and increases session depth.
-2. [P1] Ensure every curated news brief has a valid source href.
-   - Why: Uncited news weakens trust and violates source integrity standards.
-3. [P1] Add at least 3 valid affiliate links (name + final URL + placement).
-   - Why: Without valid links, affiliate revenue path is blocked.
-4. [P1] Cover missing affiliate placement: home.
-   - Why: Missing placement means lost monetization intent on that traffic surface.
-5. [P1] Cover missing affiliate placement: resources.
-   - Why: Missing placement means lost monetization intent on that traffic surface.
-6. [P1] Cover missing affiliate placement: blog.
-   - Why: Missing placement means lost monetization intent on that traffic surface.
-7. [P1] Cover missing affiliate placement: comparison.
-   - Why: Missing placement means lost monetization intent on that traffic surface.
-8. [P1] Set NEXT_PUBLIC_PRODUCT_CHECKOUT_URL (Gumroad/LemonSqueezy) and test buy CTA.
-   - Why: Product revenue cannot convert without a live checkout URL.
-9. [P1] Enable ConvertKit and connect newsletter form ID/API key.
-   - Why: Email capture without automation loses warm leads and repeat conversions.
-10. [P1] Set lead magnet URLs for EN/FR and ensure CTA appears on home/resources/posts.
-   - Why: Lead magnet is the lowest-friction conversion path for student traffic.
-11. [P2] Add lead magnet CTA on compare.
+1. [P3] Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows. These live in the Vercel environment; check them there or run this agent with those variables set.
+   - Why: This run could see none of them, and an unchecked setting is not a broken one.
+2. [P2] Add lead magnet CTA on compare.
    - Why: Increases opt-ins per 100 visitors.
-12. [P2] Publish 1 comparison-intent post/week from auto-news opportunities.
+3. [P2] Publish 1 comparison-intent post/week from auto-news opportunities.
    - Why: High-intent SEO posts improve both affiliate CTR and product click-through.
-13. [P3] Review weekly: CS share, citation coverage, and CTA CTR. Update weakest section copy.
+4. [P3] Review weekly: CS share, citation coverage, and CTA CTR. Update weakest section copy.
    - Why: Editorial quality and conversion copy iteration compound growth without extra acquisition cost.
 
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20261005--20261005-reviewbench-an-open-benchmark-for-ai-code-review-4b0c57f2.md
-- docs/agent/drafts/20261005--20261005-making-amazon-quick-enterprise-ready-automated-auditable-cross-a-b9ec7ad0.md
+- docs/agent/drafts/20261012--20261012-replayssm-rethinking-state-storage-for-faster-hybrid-model-decod-1ae6a56c.md
+- docs/agent/drafts/20261012--20261012-docker-hub-security-advisory-personal-access-tokens-transferred--b06c4bf6.md
 
