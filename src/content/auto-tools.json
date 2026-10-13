@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T00:36:51.465Z",
+  "updatedAt": "2026-10-13T14:07:42.683Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -43,6 +43,26 @@
       }
     },
     {
+      "slug": "20261013-github-search-and-filter-for-budgets-now-available-243a01f7",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-13-search-and-filter-for-budgets-now-available",
+      "publishedAt": "2026-10-13T12:06:09.000Z",
+      "discoveredAt": "2026-10-13T14:07:42.683Z",
+      "locales": {
+        "en": {
+          "title": "Search and filter for budgets now available",
+          "summary": "The “Budgets and alerts” page in your GitHub billing settings now shows all of your budgets in one list that you can search and filter. Whether you manage budgets for… The post Search and filter for budgets now availabl…"
+        },
+        "fr": {
+          "title": "Search and filter for budgets now available",
+          "summary": "The “Budgets and alerts” page in your GitHub billing settings now shows all of your budgets in one list that you can search and filter. Whether you manage budgets for… The post Search and filter for budgets now availabl…"
+        }
+      }
+    },
+    {
       "slug": "20261012-w3c-were-on-a-roll---epub-34-is-coming-93541ce9",
       "toolName": "W3C",
       "category": "Computer Science",
@@ -59,26 +79,6 @@
         "fr": {
           "title": "We’re on a roll - EPUB 3.4 is coming",
           "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standa…"
-        }
-      }
-    },
-    {
-      "slug": "20261012-github-push-attribution-for-commits-in-limited-public-preview-39f26c94",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-12-push-attribution-public-preview",
-      "publishedAt": "2026-10-12T16:30:11.000Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
-      "locales": {
-        "en": {
-          "title": "Push attribution for commits in limited public preview",
-          "summary": "GitHub now durably records the authenticated user who pushed each commit and surfaces that pusher identity in the UI and API alongside the existing author and committer fields. Commit author… The post Push attribution f…"
-        },
-        "fr": {
-          "title": "Push attribution for commits in limited public preview",
-          "summary": "GitHub now durably records the authenticated user who pushed each commit and surfaces that pusher identity in the UI and API alongside the existing author and committer fields. Commit author… The post Push attribution f…"
         }
       }
     },
@@ -383,42 +383,62 @@
       }
     },
     {
-      "slug": "20261013-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
+      "slug": "20261013-supabase-supabase-middleware-10-c639ad09",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/multigres-private-alpha",
-      "publishedAt": "2026-10-13T00:36:51.465Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "href": "https://supabase.com/changelog/supabase-middleware-1-0",
+      "publishedAt": "2026-10-13T14:07:42.683Z",
+      "discoveredAt": "2026-10-13T14:07:42.683Z",
       "locales": {
         "en": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
         },
         "fr": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
         }
       }
     },
     {
-      "slug": "20261013-vercel-muse-wonder-now-available-on-ai-gateway-call-metas-muse-w-3533aaa5",
+      "slug": "20261013-vercel-new-pro-teams-now-default-to-30-day-deployment-retention--3526dea6",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/muse-wonder-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-13T00:36:51.465Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "href": "https://vercel.com/changelog/new-pro-teams-now-default-to-30-day-deployment-retention",
+      "publishedAt": "2026-10-13T14:07:42.683Z",
+      "discoveredAt": "2026-10-13T14:07:42.683Z",
       "locales": {
         "en": {
-          "title": "Muse Wonder now available on AI Gateway Call Meta's Muse Wonder through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "12 October 12 Oct"
+          "title": "New Pro teams now default to 30-day deployment retention New Pro teams use 30-day deployment retention by default, with the option to keep longer history. Pranav Kanchi, Jay Gengelbach, and 1 other",
+          "summary": "-118.jpg\"/> Melkey Moksyakov, Esteban Suárez"
         },
         "fr": {
-          "title": "Muse Wonder now available on AI Gateway Call Meta's Muse Wonder through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "12 October 12 Oct"
+          "title": "New Pro teams now default to 30-day deployment retention New Pro teams use 30-day deployment retention by default, with the option to keep longer history. Pranav Kanchi, Jay Gengelbach, and 1 other",
+          "summary": "-118.jpg\"/> Melkey Moksyakov, Esteban Suárez"
+        }
+      }
+    },
+    {
+      "slug": "20261013-github-code-scanning-ai-scan-metrics-in-security-overview-ec7d63fa",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+      "publishedAt": "2026-10-13T12:03:17.000Z",
+      "discoveredAt": "2026-10-13T14:07:42.683Z",
+      "locales": {
+        "en": {
+          "title": "Code scanning AI Scan metrics in security overview",
+          "summary": "Organization and enterprise administrators can now observe the impact of AI Scan for pull requests in security overview. New metrics show how many AI Scan findings were generated, resolved, the… The post Code scanning A…"
+        },
+        "fr": {
+          "title": "Code scanning AI Scan metrics in security overview",
+          "summary": "Organization and enterprise administrators can now observe the impact of AI Scan for pull requests in security overview. New metrics show how many AI Scan findings were generated, resolved, the… The post Code scanning A…"
         }
       }
     },
@@ -439,26 +459,6 @@
         "fr": {
           "title": "What’s new in the W3C Website Design System",
           "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
-        }
-      }
-    },
-    {
-      "slug": "20261012-github-anonymous-organization-level-registries-for-dependabot-1ac16a9f",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-12-anonymous-organization-level-registries-for-dependabot",
-      "publishedAt": "2026-10-12T14:04:16.000Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
-      "locales": {
-        "en": {
-          "title": "Anonymous organization-level registries for Dependabot",
-          "summary": "You can now select Anonymous as the authentication method for an organization-level private registry. Use it for registries that Dependabot can reach without credentials, such as an internal package mirror… The post Ano…"
-        },
-        "fr": {
-          "title": "Anonymous organization-level registries for Dependabot",
-          "summary": "You can now select Anonymous as the authentication method for an organization-level private registry. Use it for registries that Dependabot can reach without credentials, such as an internal package mirror… The post Ano…"
         }
       }
     },
@@ -763,42 +763,62 @@
       }
     },
     {
-      "slug": "20261013-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261013-supabase-logs-usage-based-pricing-f9fe585d",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/orioledb-public-beta",
-      "publishedAt": "2026-10-13T00:36:51.465Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "href": "https://supabase.com/changelog/logs-usage-based-pricing",
+      "publishedAt": "2026-10-13T14:07:42.683Z",
+      "discoveredAt": "2026-10-13T14:07:42.683Z",
       "locales": {
         "en": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
         },
         "fr": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+          "title": "Logs usage-based pricing",
+          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
         }
       }
     },
     {
-      "slug": "20261013-vercel-liquid-ais-d1-is-available-on-ai-gateway-evaluate-typed-q-8bbfde4e",
+      "slug": "20261013-vercel-deployment-storage-billing-begins-for-existing-pro-teams--bc0fa275",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/liquid-ai-d1-is-available-on-ai-gateway",
-      "publishedAt": "2026-10-13T00:36:51.465Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "href": "https://vercel.com/changelog/deployment-storage-pricing-expands-to-existing-teams",
+      "publishedAt": "2026-10-13T14:07:42.683Z",
+      "discoveredAt": "2026-10-13T14:07:42.683Z",
       "locales": {
         "en": {
-          "title": "Liquid AI's d1 is available on AI Gateway Evaluate typed questions with Liquid d1 on Vercel AI Gateway using the AI SDK, HTTP API, or TypeSafe-compatible API. +2 Zachary Chen, Rohan Taneja, and 2 others",
-          "summary": "2 Jerilyn Zheng, Kevin Dawkins, and 2 others"
+          "title": "Deployment Storage billing begins for existing Pro teams Existing Pro teams will pay $0.10 per GB-month for Deployment Storage and Functions Storage, and the retention window moves to 30 days on October 23. Jay Gengelbach, Pranav Kanchi, and 1 other",
+          "summary": "Pranav Kanchi, Jay Gengelbach, and 1 other"
         },
         "fr": {
-          "title": "Liquid AI's d1 is available on AI Gateway Evaluate typed questions with Liquid d1 on Vercel AI Gateway using the AI SDK, HTTP API, or TypeSafe-compatible API. +2 Zachary Chen, Rohan Taneja, and 2 others",
-          "summary": "2 Jerilyn Zheng, Kevin Dawkins, and 2 others"
+          "title": "Deployment Storage billing begins for existing Pro teams Existing Pro teams will pay $0.10 per GB-month for Deployment Storage and Functions Storage, and the retention window moves to 30 days on October 23. Jay Gengelbach, Pranav Kanchi, and 1 other",
+          "summary": "Pranav Kanchi, Jay Gengelbach, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20261012-github-copilot-client-telemetry-user-attribution-and-configurabl-c1d34165",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+      "publishedAt": "2026-10-12T22:38:00.000Z",
+      "discoveredAt": "2026-10-13T14:07:42.683Z",
+      "locales": {
+        "en": {
+          "title": "Client telemetry user attribution and configurable capture",
+          "summary": "Enterprise administrators can now use telemetry in managed settings to attribute GitHub Copilot activity to a user without collecting their prompts, responses, or tool content. The telemetry.capture.identity setting add…"
+        },
+        "fr": {
+          "title": "Client telemetry user attribution and configurable capture",
+          "summary": "Enterprise administrators can now use telemetry in managed settings to attribute GitHub Copilot activity to a user without collecting their prompts, responses, or tool content. The telemetry.capture.identity setting add…"
         }
       }
     },
@@ -819,26 +839,6 @@
         "fr": {
           "title": "W3C Newsletter - September 2026",
           "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
-        }
-      }
-    },
-    {
-      "slug": "20261010-github-copilot-new-controls-and-chat-improvements-in-copilot-for-1e0e6608",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains",
-      "publishedAt": "2026-10-10T18:53:39.000Z",
-      "discoveredAt": "2026-10-10T21:40:51.008Z",
-      "locales": {
-        "en": {
-          "title": "New controls and chat improvements in Copilot for JetBrains",
-          "summary": "This update brings more control over default models and MCP server in GitHub Copilot for JetBrains. It also makes diagnostics easier to address, improves chat navigation and account controls, and… The post New controls…"
-        },
-        "fr": {
-          "title": "New controls and chat improvements in Copilot for JetBrains",
-          "summary": "This update brings more control over default models and MCP server in GitHub Copilot for JetBrains. It also makes diagnostics easier to address, improves chat navigation and account controls, and… The post New controls…"
         }
       }
     },
@@ -1143,42 +1143,62 @@
       }
     },
     {
-      "slug": "20261013-postgresql-postgresql-1519-1711-minor-release-action-may-be-requ-00cf1171",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261013-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/postgres-15-19-17-11-breaking-changes",
+      "href": "https://supabase.com/changelog/multigres-private-alpha",
       "publishedAt": "2026-10-13T00:36:51.465Z",
       "discoveredAt": "2026-10-13T00:36:51.465Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
-          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         },
         "fr": {
-          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
-          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         }
       }
     },
     {
-      "slug": "20261013-vercel-skip-sending-request-bodies-to-routing-middleware-set-ski-72fbd17b",
+      "slug": "20261013-vercel-muse-wonder-now-available-on-ai-gateway-call-metas-muse-w-3533aaa5",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/skip-sending-request-bodies-to-routing-middleware",
+      "href": "https://vercel.com/changelog/muse-wonder-now-available-on-ai-gateway",
       "publishedAt": "2026-10-13T00:36:51.465Z",
       "discoveredAt": "2026-10-13T00:36:51.465Z",
       "locales": {
         "en": {
-          "title": "Skip sending request bodies to Routing Middleware Set skipMiddlewareRequestBody to stop forwarding the client request body to Routing Middleware, reducing Fast Origin Transfer usage and helping improve Time to First Byte. Shohei Maeda Software Engineer",
-          "summary": "8 October 8 Oct"
+          "title": "Muse Wonder now available on AI Gateway Call Meta's Muse Wonder through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "12 October 12 Oct"
         },
         "fr": {
-          "title": "Skip sending request bodies to Routing Middleware Set skipMiddlewareRequestBody to stop forwarding the client request body to Routing Middleware, reducing Fast Origin Transfer usage and helping improve Time to First Byte. Shohei Maeda Software Engineer",
-          "summary": "8 October 8 Oct"
+          "title": "Muse Wonder now available on AI Gateway Call Meta's Muse Wonder through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "12 October 12 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261012-github-push-attribution-for-commits-in-limited-public-preview-39f26c94",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-12-push-attribution-public-preview",
+      "publishedAt": "2026-10-12T16:30:11.000Z",
+      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "locales": {
+        "en": {
+          "title": "Push attribution for commits in limited public preview",
+          "summary": "GitHub now durably records the authenticated user who pushed each commit and surfaces that pusher identity in the UI and API alongside the existing author and committer fields. Commit author… The post Push attribution f…"
+        },
+        "fr": {
+          "title": "Push attribution for commits in limited public preview",
+          "summary": "GitHub now durably records the authenticated user who pushed each commit and surfaces that pusher identity in the UI and API alongside the existing author and committer fields. Commit author… The post Push attribution f…"
         }
       }
     },
@@ -1199,26 +1219,6 @@
         "fr": {
           "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
           "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
-        }
-      }
-    },
-    {
-      "slug": "20261009-claude-github-copilot-weekly-releases-october-5-8e5ec290",
-      "toolName": "Claude",
-      "category": "AI Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5",
-      "publishedAt": "2026-10-09T22:58:23.000Z",
-      "discoveredAt": "2026-10-10T12:27:47.168Z",
-      "locales": {
-        "en": {
-          "title": "GitHub Copilot weekly releases — October 5",
-          "summary": "This week’s updates make Copilot easier to use across accounts and environments, with more control over what agents can access and how you manage their work. GitHub Copilot Claude Haiku… The post GitHub Copilot weekly r…"
-        },
-        "fr": {
-          "title": "GitHub Copilot weekly releases — October 5",
-          "summary": "This week’s updates make Copilot easier to use across accounts and environments, with more control over what agents can access and how you manage their work. GitHub Copilot Claude Haiku… The post GitHub Copilot weekly r…"
         }
       }
     },
@@ -1323,22 +1323,22 @@
       }
     },
     {
-      "slug": "20261005-claude-dbforge-20262-adds-a-postgresql-debugger-visual-object-ed-4dad8a1f",
-      "toolName": "Claude",
-      "category": "AI Assistant",
+      "slug": "20261005-postgresql-pgvaulttde-v172-critical-crash-fixes-new-on-disk-form-35290beb",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-and-broader-context-for-dbforge-ai-assistant-3394/",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v172-critical-crash-fixes-new-on-disk-format-and-stability-improvements-3393/",
       "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "discoveredAt": "2026-10-13T14:07:42.683Z",
       "locales": {
         "en": {
-          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
-          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database manageme…"
+          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
+          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuse…"
         },
         "fr": {
-          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
-          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database manageme…"
+          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
+          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuse…"
         }
       }
     },
@@ -1523,42 +1523,62 @@
       }
     },
     {
-      "slug": "20261012-supabase-status-page-moves-to-incidentio-7e1c5736",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
+      "slug": "20261013-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/status-page-migration",
-      "publishedAt": "2026-10-12T15:17:56.208Z",
-      "discoveredAt": "2026-10-12T15:17:56.208Z",
+      "href": "https://supabase.com/changelog/orioledb-public-beta",
+      "publishedAt": "2026-10-13T00:36:51.465Z",
+      "discoveredAt": "2026-10-13T00:36:51.465Z",
       "locales": {
         "en": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
+          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
         },
         "fr": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
+          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
         }
       }
     },
     {
-      "slug": "20261012-vercel-microsoft-decision-1-now-available-on-ai-gateway-call-mic-84f0e3fa",
+      "slug": "20261013-vercel-liquid-ais-d1-is-available-on-ai-gateway-evaluate-typed-q-8bbfde4e",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/microsoft-decision-1-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-12T15:17:56.208Z",
-      "discoveredAt": "2026-10-12T15:17:56.208Z",
+      "href": "https://vercel.com/changelog/liquid-ai-d1-is-available-on-ai-gateway",
+      "publishedAt": "2026-10-13T00:36:51.465Z",
+      "discoveredAt": "2026-10-13T00:36:51.465Z",
       "locales": {
         "en": {
-          "title": "Microsoft Decision-1 now available on AI Gateway Call Microsoft's Decision-1 through Vercel AI Gateway with one API key to classify text, route requests, and track usage and spend +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
-          "summary": "Jay Gengelbach, Pranav Kanchi, and 1 other"
+          "title": "Liquid AI's d1 is available on AI Gateway Evaluate typed questions with Liquid d1 on Vercel AI Gateway using the AI SDK, HTTP API, or TypeSafe-compatible API. +2 Zachary Chen, Rohan Taneja, and 2 others",
+          "summary": "2 Jerilyn Zheng, Kevin Dawkins, and 2 others"
         },
         "fr": {
-          "title": "Microsoft Decision-1 now available on AI Gateway Call Microsoft's Decision-1 through Vercel AI Gateway with one API key to classify text, route requests, and track usage and spend +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
-          "summary": "Jay Gengelbach, Pranav Kanchi, and 1 other"
+          "title": "Liquid AI's d1 is available on AI Gateway Evaluate typed questions with Liquid d1 on Vercel AI Gateway using the AI SDK, HTTP API, or TypeSafe-compatible API. +2 Zachary Chen, Rohan Taneja, and 2 others",
+          "summary": "2 Jerilyn Zheng, Kevin Dawkins, and 2 others"
+        }
+      }
+    },
+    {
+      "slug": "20261012-github-anonymous-organization-level-registries-for-dependabot-1ac16a9f",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-12-anonymous-organization-level-registries-for-dependabot",
+      "publishedAt": "2026-10-12T14:04:16.000Z",
+      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "locales": {
+        "en": {
+          "title": "Anonymous organization-level registries for Dependabot",
+          "summary": "You can now select Anonymous as the authentication method for an organization-level private registry. Use it for registries that Dependabot can reach without credentials, such as an internal package mirror… The post Ano…"
+        },
+        "fr": {
+          "title": "Anonymous organization-level registries for Dependabot",
+          "summary": "You can now select Anonymous as the authentication method for an organization-level private registry. Use it for registries that Dependabot can reach without credentials, such as an internal package mirror… The post Ano…"
         }
       }
     },
@@ -1579,26 +1599,6 @@
         "fr": {
           "title": "Crafting WCAG 3 for more accessible user experiences",
           "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
-        }
-      }
-    },
-    {
-      "slug": "20261009-github-codeql-2272-improves-c-go-rust-and-javascript-analysis-4ee9692c",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-09-codeql-2-27-2-improves-c-go-rust-and-javascript-analysis",
-      "publishedAt": "2026-10-09T21:32:54.000Z",
-      "discoveredAt": "2026-10-09T22:36:04.421Z",
-      "locales": {
-        "en": {
-          "title": "CodeQL 2.27.2 improves C++, Go, Rust, and JavaScript analysis",
-          "summary": "CodeQL 2.27.2 is now available, adding a C++ regular-expression parser and analysis improvements across several languages. CodeQL is the static analysis engine behind GitHub code scanning, which helps you find… The post…"
-        },
-        "fr": {
-          "title": "CodeQL 2.27.2 improves C++, Go, Rust, and JavaScript analysis",
-          "summary": "CodeQL 2.27.2 is now available, adding a C++ regular-expression parser and analysis improvements across several languages. CodeQL is the static analysis engine behind GitHub code scanning, which helps you find… The post…"
         }
       }
     },
@@ -1703,22 +1703,22 @@
       }
     },
     {
-      "slug": "20261005-github-pgvector-087-released-9f7f16c5",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
+      "slug": "20261005-claude-dbforge-20262-adds-a-postgresql-debugger-visual-object-ed-4dad8a1f",
+      "toolName": "Claude",
+      "category": "AI Assistant",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgvector-087-released-3392/",
+      "href": "https://www.postgresql.org/about/news/dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-and-broader-context-for-dbforge-ai-assistant-3394/",
       "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-12T15:17:56.208Z",
+      "discoveredAt": "2026-10-13T00:36:51.465Z",
       "locales": {
         "en": {
-          "title": "pgvector 0.8.7 Released",
-          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details:…"
+          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
+          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database manageme…"
         },
         "fr": {
-          "title": "pgvector 0.8.7 Released",
-          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details:…"
+          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
+          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database manageme…"
         }
       }
     },
@@ -1903,42 +1903,62 @@
       }
     },
     {
-      "slug": "20261012-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
+      "slug": "20261013-postgresql-postgresql-1519-1711-minor-release-action-may-be-requ-00cf1171",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
-      "publishedAt": "2026-10-12T15:17:56.208Z",
-      "discoveredAt": "2026-10-12T15:17:56.208Z",
+      "href": "https://supabase.com/changelog/postgres-15-19-17-11-breaking-changes",
+      "publishedAt": "2026-10-13T00:36:51.465Z",
+      "discoveredAt": "2026-10-13T00:36:51.465Z",
       "locales": {
         "en": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
+          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
         },
         "fr": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "PostgreSQL 15.19 / 17.11 minor release — action may be required for ltree, pgcrypto, btree_gist, and custom operators",
+          "summary": "Breaking Change Postgres minor upgrade to 15.19/17.11 fixes 44 CVEs. ltree and btree_gist indexes may need reindexing, and pgcrypto data encrypted with legacy ciphers needs re-encryption."
         }
       }
     },
     {
-      "slug": "20261012-vercel-vercel-sandbox-creation-now-returns-a-ready-sandbox-verce-4bbc7d4d",
+      "slug": "20261013-vercel-skip-sending-request-bodies-to-routing-middleware-set-ski-72fbd17b",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/sandbox-create-waits-until-ready",
-      "publishedAt": "2026-10-12T15:17:56.208Z",
-      "discoveredAt": "2026-10-12T15:17:56.208Z",
+      "href": "https://vercel.com/changelog/skip-sending-request-bodies-to-routing-middleware",
+      "publishedAt": "2026-10-13T00:36:51.465Z",
+      "discoveredAt": "2026-10-13T00:36:51.465Z",
       "locales": {
         "en": {
-          "title": "Vercel Sandbox creation now returns a ready sandbox Vercel Sandbox creation is now more consistent and now includes startup time previously spent waiting in the first command. Tom Lienard Software Engineer, Infrastructure",
-          "summary": "Shohei Maeda Software Engineer"
+          "title": "Skip sending request bodies to Routing Middleware Set skipMiddlewareRequestBody to stop forwarding the client request body to Routing Middleware, reducing Fast Origin Transfer usage and helping improve Time to First Byte. Shohei Maeda Software Engineer",
+          "summary": "8 October 8 Oct"
         },
         "fr": {
-          "title": "Vercel Sandbox creation now returns a ready sandbox Vercel Sandbox creation is now more consistent and now includes startup time previously spent waiting in the first command. Tom Lienard Software Engineer, Infrastructure",
-          "summary": "Shohei Maeda Software Engineer"
+          "title": "Skip sending request bodies to Routing Middleware Set skipMiddlewareRequestBody to stop forwarding the client request body to Routing Middleware, reducing Fast Origin Transfer usage and helping improve Time to First Byte. Shohei Maeda Software Engineer",
+          "summary": "8 October 8 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261010-github-copilot-new-controls-and-chat-improvements-in-copilot-for-1e0e6608",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains",
+      "publishedAt": "2026-10-10T18:53:39.000Z",
+      "discoveredAt": "2026-10-10T21:40:51.008Z",
+      "locales": {
+        "en": {
+          "title": "New controls and chat improvements in Copilot for JetBrains",
+          "summary": "This update brings more control over default models and MCP server in GitHub Copilot for JetBrains. It also makes diagnostics easier to address, improves chat navigation and account controls, and… The post New controls…"
+        },
+        "fr": {
+          "title": "New controls and chat improvements in Copilot for JetBrains",
+          "summary": "This update brings more control over default models and MCP server in GitHub Copilot for JetBrains. It also makes diagnostics easier to address, improves chat navigation and account controls, and… The post New controls…"
         }
       }
     },
@@ -1959,26 +1979,6 @@
         "fr": {
           "title": "2026 Climate Weeks: W3C and Web Sustainability",
           "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
-        }
-      }
-    },
-    {
-      "slug": "20261008-github-copilot-copilot-code-review-new-organization-billing-opti-8eab0c9a",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
-      "publishedAt": "2026-10-08T19:43:05.000Z",
-      "discoveredAt": "2026-10-09T22:36:04.421Z",
-      "locales": {
-        "en": {
-          "title": "Copilot code review: New organization billing options and controls",
-          "summary": "This release adds new billing and license controls for Copilot code review admins: Billing: Organization owners can bill Copilot code reviews from members with a Copilot license to the organization’s… The post Copilot c…"
-        },
-        "fr": {
-          "title": "Copilot code review: New organization billing options and controls",
-          "summary": "This release adds new billing and license controls for Copilot code review admins: Billing: Organization owners can bill Copilot code reviews from members with a Copilot license to the organization’s… The post Copilot c…"
         }
       }
     },
@@ -2083,42 +2083,42 @@
       }
     },
     {
-      "slug": "20261005-github-pgivm-116-released-9d0d6d1e",
+      "slug": "20261005-github-pgvector-087-released-9f7f16c5",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_ivm-116-released-3391/",
+      "href": "https://www.postgresql.org/about/news/pgvector-087-released-3392/",
       "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-11T21:55:27.856Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "pg_ivm 1.16 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault whe…"
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details:…"
         },
         "fr": {
-          "title": "pg_ivm 1.16 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault whe…"
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details:…"
         }
       }
     },
     {
-      "slug": "20260915-nist-nist-awards-more-than-30-million-for-mep-centers-in-11-stat-d9483720",
+      "slug": "20260915-nist-nist-finalizes-guidelines-on-protecting-online-identity-and-fce54ff4",
       "toolName": "NIST",
       "category": "Security & Standards",
       "source": "NIST News",
       "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/09/nist-awards-more-30-million-mep-centers-11-states-and-puerto-rico",
+      "href": "https://www.nist.gov/news-events/news/2026/09/nist-finalizes-guidelines-protecting-online-identity-and-access-tokens",
       "publishedAt": "2026-09-15T12:00:00.000Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "discoveredAt": "2026-10-13T14:07:42.683Z",
       "locales": {
         "en": {
-          "title": "NIST Awards More Than $30 Million for MEP Centers in 11 States and Puerto Rico",
-          "summary": "The awards will help small and medium-sized manufacturers increase the adoption of advanced manufacturing technology."
+          "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
+          "summary": "The finalized publication is designed to help organizations take effective steps to avoid exposing tokens to attackers."
         },
         "fr": {
-          "title": "NIST Awards More Than $30 Million for MEP Centers in 11 States and Puerto Rico",
-          "summary": "The awards will help small and medium-sized manufacturers increase the adoption of advanced manufacturing technology."
+          "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
+          "summary": "The finalized publication is designed to help organizations take effective steps to avoid exposing tokens to attackers."
         }
       }
     },
@@ -2283,42 +2283,62 @@
       }
     },
     {
-      "slug": "20261012-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "slug": "20261012-supabase-status-page-moves-to-incidentio-7e1c5736",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/no-access-org-role",
+      "href": "https://supabase.com/changelog/status-page-migration",
       "publishedAt": "2026-10-12T15:17:56.208Z",
       "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         },
         "fr": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         }
       }
     },
     {
-      "slug": "20261011-vercel-agents-can-now-buy-domains-with-the-vercel-cli-agents-can-418297e3",
+      "slug": "20261012-vercel-microsoft-decision-1-now-available-on-ai-gateway-call-mic-84f0e3fa",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/agents-can-now-buy-domains-with-the-vercel-cli",
-      "publishedAt": "2026-10-11T21:55:27.856Z",
-      "discoveredAt": "2026-10-11T21:55:27.856Z",
+      "href": "https://vercel.com/changelog/microsoft-decision-1-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-12T15:17:56.208Z",
+      "discoveredAt": "2026-10-12T15:17:56.208Z",
       "locales": {
         "en": {
-          "title": "Agents can now buy domains with the Vercel CLI Agents can now use the Vercel CLI to purchase domains. Melkey Moksyakov, Esteban Suárez",
-          "summary": "9 October 9 Oct"
+          "title": "Microsoft Decision-1 now available on AI Gateway Call Microsoft's Decision-1 through Vercel AI Gateway with one API key to classify text, route requests, and track usage and spend +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
+          "summary": "Jay Gengelbach, Pranav Kanchi, and 1 other"
         },
         "fr": {
-          "title": "Agents can now buy domains with the Vercel CLI Agents can now use the Vercel CLI to purchase domains. Melkey Moksyakov, Esteban Suárez",
-          "summary": "9 October 9 Oct"
+          "title": "Microsoft Decision-1 now available on AI Gateway Call Microsoft's Decision-1 through Vercel AI Gateway with one API key to classify text, route requests, and track usage and spend +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
+          "summary": "Jay Gengelbach, Pranav Kanchi, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20261009-claude-github-copilot-weekly-releases-october-5-8e5ec290",
+      "toolName": "Claude",
+      "category": "AI Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5",
+      "publishedAt": "2026-10-09T22:58:23.000Z",
+      "discoveredAt": "2026-10-10T12:27:47.168Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Copilot weekly releases — October 5",
+          "summary": "This week’s updates make Copilot easier to use across accounts and environments, with more control over what agents can access and how you manage their work. GitHub Copilot Claude Haiku… The post GitHub Copilot weekly r…"
+        },
+        "fr": {
+          "title": "GitHub Copilot weekly releases — October 5",
+          "summary": "This week’s updates make Copilot easier to use across accounts and environments, with more control over what agents can access and how you manage their work. GitHub Copilot Claude Haiku… The post GitHub Copilot weekly r…"
         }
       }
     },
@@ -2339,26 +2359,6 @@
         "fr": {
           "title": "W3C IRC bots now open source",
           "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
-        }
-      }
-    },
-    {
-      "slug": "20261008-github-triage-role-users-or-higher-can-now-archive-pull-requests-d821a136",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-08-triage-role-users-or-higher-can-now-archive-pull-requests",
-      "publishedAt": "2026-10-08T19:01:42.000Z",
-      "discoveredAt": "2026-10-08T23:19:11.392Z",
-      "locales": {
-        "en": {
-          "title": "Triage role users or higher can now archive pull requests",
-          "summary": "Users with the triage role or higher in a repository can now archive and unarchive pull requests. Previously, archiving was limited to repository administrators, requiring trusted triagers to hand routine… The post Tria…"
-        },
-        "fr": {
-          "title": "Triage role users or higher can now archive pull requests",
-          "summary": "Users with the triage role or higher in a repository can now archive and unarchive pull requests. Previously, archiving was limited to repository administrators, requiring trusted triagers to hand routine… The post Tria…"
         }
       }
     },
