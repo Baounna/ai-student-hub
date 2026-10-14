@@ -1,7 +1,102 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T22:42:20.913Z",
+  "updatedAt": "2026-10-14T11:47:54.422Z",
   "items": [
+    {
+      "slug": "20261014-introducing-group-activity-pages-02d7d696",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/introducing-group-activity-pages/",
+      "publishedAt": "2026-10-14T10:28:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:54.422Z",
+      "locales": {
+        "en": {
+          "title": "Introducing group activity pages",
+          "summary": "W3C groups now have an Activity page that shows, month by month, their charters, publications, meetings, participants and GitHub work in one place. The pages are in beta, and we would like your feedback."
+        },
+        "fr": {
+          "title": "Introducing group activity pages",
+          "summary": "W3C groups now have an Activity page that shows, month by month, their charters, publications, meetings, participants and GitHub work in one place. The pages are in beta, and we would like your feedback."
+        }
+      }
+    },
+    {
+      "slug": "20261014-google-deepmind-and-singapore-government-collaborate-to-build-fi-58e4191f",
+      "topic": "AI Systems",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "publishedAt": "2026-10-14T02:00:14.000Z",
+      "discoveredAt": "2026-10-14T11:47:54.422Z",
+      "locales": {
+        "en": {
+          "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+          "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress."
+        },
+        "fr": {
+          "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+          "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress."
+        }
+      }
+    },
+    {
+      "slug": "20261014-oct-14-2026-announcements-anthropic-opens-singapore-office-and-s-87253efe",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/singapore-office-opening",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:54.422Z",
+      "locales": {
+        "en": {
+          "title": "Oct 14, 2026 Announcements Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Category Title Oct 8, 2026"
+        },
+        "fr": {
+          "title": "Oct 14, 2026 Announcements Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Category Title Oct 8, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20261014-the-eus-next-chapter-in-ai-is-agentic-2f3282e4",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:54.422Z",
+      "locales": {
+        "en": {
+          "title": "The EU’s next chapter in AI is agentic",
+          "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value."
+        },
+        "fr": {
+          "title": "The EU’s next chapter in AI is agentic",
+          "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value."
+        }
+      }
+    },
+    {
+      "slug": "20261014-pgbouncer-1261-released---fixes-three-cves-c17dd73e",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgbouncer-1261-released-fixes-three-cves-3403/",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:54.422Z",
+      "locales": {
+        "en": {
+          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins and backen…"
+        },
+        "fr": {
+          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins and backen…"
+        }
+      }
+    },
     {
       "slug": "20261013-featured-redesigning-source-control-at-anthropic-as-our-merges-p-8c17f1f1",
       "topic": "Computer Systems",
@@ -56,25 +151,6 @@
         "fr": {
           "title": "Building agents that transact with Anchor Browser and AgentCore payments",
           "summary": "Learn how the AWS Generative AI Innovation Center Partner Agent Factory and Anchor Browser built AI agents that autonomously pay for x402-protected web resources and APIs. Amazon Bedrock AgentCore payments checks budgets, signs t…"
-        }
-      }
-    },
-    {
-      "slug": "20261013-developing-gemini-4-argon-responsibly-and-safely-471508c0",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "publishedAt": "2026-10-13T19:43:07.000Z",
-      "discoveredAt": "2026-10-13T22:42:20.913Z",
-      "locales": {
-        "en": {
-          "title": "Developing Gemini 4 Argon responsibly and safely",
-          "summary": "Developing Gemini 4 Argon responsibly and safely"
-        },
-        "fr": {
-          "title": "Developing Gemini 4 Argon responsibly and safely",
-          "summary": "Developing Gemini 4 Argon responsibly and safely"
         }
       }
     },
@@ -155,44 +231,6 @@
       }
     },
     {
-      "slug": "20261013-higgsfield-takes-ai-video-from-1-minute-to-over-10-ffc748cb",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/higgsfield-longer-videos-voice",
-      "publishedAt": "2026-10-13T12:00:00.000Z",
-      "discoveredAt": "2026-10-13T22:42:20.913Z",
-      "locales": {
-        "en": {
-          "title": "Higgsfield takes AI video from 1 minute to over 10",
-          "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
-        },
-        "fr": {
-          "title": "Higgsfield takes AI video from 1 minute to over 10",
-          "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
-        }
-      }
-    },
-    {
-      "slug": "20261012-were-on-a-roll---epub-34-is-coming-93541ce9",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/were-on-a-roll-epub-3-4-is-coming/",
-      "publishedAt": "2026-10-12T17:06:00.000Z",
-      "discoveredAt": "2026-10-13T00:36:50.292Z",
-      "locales": {
-        "en": {
-          "title": "We’re on a roll - EPUB 3.4 is coming",
-          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standard, but do…"
-        },
-        "fr": {
-          "title": "We’re on a roll - EPUB 3.4 is coming",
-          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standard, but do…"
-        }
-      }
-    },
-    {
       "slug": "20261012-docker-hub-security-advisory-personal-access-tokens-transferred--b06c4bf6",
       "topic": "Security & Standards",
       "source": "Docker Blog",
@@ -231,25 +269,6 @@
       }
     },
     {
-      "slug": "20261009-2026-10-07-postgresql-jdbc-42714-security-update-for-multiple-cv-9a10e836",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/2026-10-07-postgresql-jdbc-42714-security-update-for-multiple-cves-3399/",
-      "publishedAt": "2026-10-09T00:00:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:57.050Z",
-      "locales": {
-        "en": {
-          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
-          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the release no…"
-        },
-        "fr": {
-          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
-          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the release no…"
-        }
-      }
-    },
-    {
       "slug": "20261008-nist-joins-white-house-effort-to-drive-a-new-golden-age-of-scien-25dc3f92",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -265,25 +284,6 @@
         "fr": {
           "title": "NIST Joins White House Effort to Drive ‘A New Golden Age of Science’",
           "summary": "As the nation’s lead agency for measurement science and standards, NIST is uniquely positioned to bridge the distance between fundamental discovery and industrial capability."
-        }
-      }
-    },
-    {
-      "slug": "20261008-oct-8-2026-announcements-2026-usage-policy-update-7a238471",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
-      "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:10.076Z",
-      "locales": {
-        "en": {
-          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
-          "summary": "Category Title Oct 8, 2026"
-        },
-        "fr": {
-          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
-          "summary": "Category Title Oct 8, 2026"
         }
       }
     },
@@ -364,6 +364,101 @@
       }
     },
     {
+      "slug": "20261012-were-on-a-roll---epub-34-is-coming-93541ce9",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/were-on-a-roll-epub-3-4-is-coming/",
+      "publishedAt": "2026-10-12T17:06:00.000Z",
+      "discoveredAt": "2026-10-13T00:36:50.292Z",
+      "locales": {
+        "en": {
+          "title": "We’re on a roll - EPUB 3.4 is coming",
+          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standard, but do…"
+        },
+        "fr": {
+          "title": "We’re on a roll - EPUB 3.4 is coming",
+          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standard, but do…"
+        }
+      }
+    },
+    {
+      "slug": "20261013-developing-gemini-4-argon-responsibly-and-safely-471508c0",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "publishedAt": "2026-10-13T19:43:07.000Z",
+      "discoveredAt": "2026-10-13T22:42:20.913Z",
+      "locales": {
+        "en": {
+          "title": "Developing Gemini 4 Argon responsibly and safely",
+          "summary": "Developing Gemini 4 Argon responsibly and safely"
+        },
+        "fr": {
+          "title": "Developing Gemini 4 Argon responsibly and safely",
+          "summary": "Developing Gemini 4 Argon responsibly and safely"
+        }
+      }
+    },
+    {
+      "slug": "20261008-oct-8-2026-announcements-2026-usage-policy-update-7a238471",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:10.076Z",
+      "locales": {
+        "en": {
+          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
+          "summary": "Category Title Oct 8, 2026"
+        },
+        "fr": {
+          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
+          "summary": "Category Title Oct 8, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20261013-higgsfield-takes-ai-video-from-1-minute-to-over-10-ffc748cb",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "publishedAt": "2026-10-13T12:00:00.000Z",
+      "discoveredAt": "2026-10-13T22:42:20.913Z",
+      "locales": {
+        "en": {
+          "title": "Higgsfield takes AI video from 1 minute to over 10",
+          "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
+        },
+        "fr": {
+          "title": "Higgsfield takes AI video from 1 minute to over 10",
+          "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
+        }
+      }
+    },
+    {
+      "slug": "20261014-introducing-pglifecycle-20-beta-2f301e99",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/introducing-pglifecycle-20-beta-3401/",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:54.422Z",
+      "locales": {
+        "en": {
+          "title": "Introducing pglifecycle 2.0 beta",
+          "summary": "I’m pleased to announce the first public release of pglifecycle , an open source schema management tool for PostgreSQL. pglifecycle keeps your database schema in version control as structured YAML, with one file for each table, v…"
+        },
+        "fr": {
+          "title": "Introducing pglifecycle 2.0 beta",
+          "summary": "I’m pleased to announce the first public release of pglifecycle , an open source schema management tool for PostgreSQL. pglifecycle keeps your database schema in version control as structured YAML, with one file for each table, v…"
+        }
+      }
+    },
+    {
       "slug": "20260912-featured-how-we-contain-claude-across-products-as-agents-grow-mo-97cd97d2",
       "topic": "AI Systems",
       "source": "Anthropic Engineering",
@@ -417,25 +512,6 @@
         "fr": {
           "title": "Manage private pricing offers for Amazon Bedrock with managed entitlements",
           "summary": "Managing AI model access across dozens or hundreds of AWS accounts creates friction when each account must accept AWS Marketplace Private Pricing Offers individually. This post shows two ways to activate MPPO entitlements in AWS…"
-        }
-      }
-    },
-    {
-      "slug": "20261013-gemini-4-argon-for-robotics-884ebf3c",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-      "publishedAt": "2026-10-13T16:01:58.000Z",
-      "discoveredAt": "2026-10-13T22:42:20.913Z",
-      "locales": {
-        "en": {
-          "title": "Gemini 4 Argon for Robotics",
-          "summary": "Gemini 4 Argon for Robotics"
-        },
-        "fr": {
-          "title": "Gemini 4 Argon for Robotics",
-          "summary": "Gemini 4 Argon for Robotics"
         }
       }
     },
@@ -516,44 +592,6 @@
       }
     },
     {
-      "slug": "20261009-asana-cuts-model-costs-76x-in-browser-tests-with-gpt-61-sol-90995f7d",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/asana-browser-agent",
-      "publishedAt": "2026-10-09T07:00:00.000Z",
-      "discoveredAt": "2026-10-09T22:36:02.957Z",
-      "locales": {
-        "en": {
-          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-          "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
-        },
-        "fr": {
-          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-          "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
-        }
-      }
-    },
-    {
-      "slug": "20261009-whats-new-in-the-w3c-website-design-system-8d2b885c",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/whats-new-in-the-w3c-design-system-september-2026/",
-      "publishedAt": "2026-10-09T07:58:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:57.050Z",
-      "locales": {
-        "en": {
-          "title": "What’s new in the W3C Website Design System",
-          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
-        },
-        "fr": {
-          "title": "What’s new in the W3C Website Design System",
-          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
-        }
-      }
-    },
-    {
       "slug": "20261001-trust-docker-for-the-agents-you-dont-f08e107a",
       "topic": "AI Systems",
       "source": "Docker Blog",
@@ -592,25 +630,6 @@
       }
     },
     {
-      "slug": "20261007-pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-postgresql--f303bf81",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-postgresql-index-3396/",
-      "publishedAt": "2026-10-07T00:00:00.000Z",
-      "discoveredAt": "2026-10-07T13:18:36.603Z",
-      "locales": {
-        "en": {
-          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
-          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CREATE EXTEN…"
-        },
-        "fr": {
-          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
-          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CREATE EXTEN…"
-        }
-      }
-    },
-    {
       "slug": "20261008-nist-study-shows-how-the-toxic-substances-mixed-into-fentanyl-va-9acfb21c",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -626,25 +645,6 @@
         "fr": {
           "title": "NIST Study Shows How the Toxic Substances Mixed Into Fentanyl Vary Across the U.S. and Change Over Time",
           "summary": "Alerting first responders and law enforcement to the presence of these dangerous chemicals in local supplies of fentanyl can help save lives."
-        }
-      }
-    },
-    {
-      "slug": "20261008-oct-8-2026-announcements-building-on-our-commitment-to-american--26f50496",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
-      "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:10.076Z",
-      "locales": {
-        "en": {
-          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
-          "summary": "Announcements 2026 Usage Policy update Oct 8, 2026"
-        },
-        "fr": {
-          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
-          "summary": "Announcements 2026 Usage Policy update Oct 8, 2026"
         }
       }
     },
@@ -725,6 +725,101 @@
       }
     },
     {
+      "slug": "20261009-whats-new-in-the-w3c-website-design-system-8d2b885c",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/whats-new-in-the-w3c-design-system-september-2026/",
+      "publishedAt": "2026-10-09T07:58:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:57.050Z",
+      "locales": {
+        "en": {
+          "title": "What’s new in the W3C Website Design System",
+          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
+        },
+        "fr": {
+          "title": "What’s new in the W3C Website Design System",
+          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
+        }
+      }
+    },
+    {
+      "slug": "20261013-gemini-4-argon-for-robotics-884ebf3c",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "publishedAt": "2026-10-13T16:01:58.000Z",
+      "discoveredAt": "2026-10-13T22:42:20.913Z",
+      "locales": {
+        "en": {
+          "title": "Gemini 4 Argon for Robotics",
+          "summary": "Gemini 4 Argon for Robotics"
+        },
+        "fr": {
+          "title": "Gemini 4 Argon for Robotics",
+          "summary": "Gemini 4 Argon for Robotics"
+        }
+      }
+    },
+    {
+      "slug": "20261008-oct-8-2026-announcements-building-on-our-commitment-to-american--26f50496",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:10.076Z",
+      "locales": {
+        "en": {
+          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
+          "summary": "Announcements 2026 Usage Policy update Oct 8, 2026"
+        },
+        "fr": {
+          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
+          "summary": "Announcements 2026 Usage Policy update Oct 8, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20261009-asana-cuts-model-costs-76x-in-browser-tests-with-gpt-61-sol-90995f7d",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/asana-browser-agent",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "discoveredAt": "2026-10-09T22:36:02.957Z",
+      "locales": {
+        "en": {
+          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+          "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
+        },
+        "fr": {
+          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+          "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
+        }
+      }
+    },
+    {
+      "slug": "20261009-2026-10-07-postgresql-jdbc-42714-security-update-for-multiple-cv-9a10e836",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/2026-10-07-postgresql-jdbc-42714-security-update-for-multiple-cves-3399/",
+      "publishedAt": "2026-10-09T00:00:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:57.050Z",
+      "locales": {
+        "en": {
+          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
+          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the release no…"
+        },
+        "fr": {
+          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
+          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the release no…"
+        }
+      }
+    },
+    {
       "slug": "20261012-replayssm-rethinking-state-storage-for-faster-hybrid-model-decod-1ae6a56c",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -759,25 +854,6 @@
         "fr": {
           "title": "Natural language security queries at Orca Security using Amazon Bedrock",
           "summary": "Orca Security built Discovery AI, a natural language query agent on Amazon Bedrock that converts plain-English questions into Sonar queries. The post shares the multi-stage architecture and the results: 90% lower query cost, 93%…"
-        }
-      }
-    },
-    {
-      "slug": "20261013-gemini-4-argon-built-to-solve-your-hardest-problems-f1747161",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-      "publishedAt": "2026-10-13T16:01:52.000Z",
-      "discoveredAt": "2026-10-13T22:42:20.913Z",
-      "locales": {
-        "en": {
-          "title": "Gemini 4 Argon: Built to solve your hardest problems",
-          "summary": "Gemini 4 Argon: Built to solve your hardest problems"
-        },
-        "fr": {
-          "title": "Gemini 4 Argon: Built to solve your hardest problems",
-          "summary": "Gemini 4 Argon: Built to solve your hardest problems"
         }
       }
     },
@@ -858,44 +934,6 @@
       }
     },
     {
-      "slug": "20261009-sophos-cuts-threat-investigation-time-by-96-with-openai-daybreak-edd58468",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/sophos",
-      "publishedAt": "2026-10-09T07:00:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:57.050Z",
-      "locales": {
-        "en": {
-          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight."
-        },
-        "fr": {
-          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight."
-        }
-      }
-    },
-    {
-      "slug": "20261002-w3c-newsletter---september-2026-033e226a",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-newsletter-september-2026/",
-      "publishedAt": "2026-10-02T10:01:00.000Z",
-      "discoveredAt": "2026-10-02T12:29:54.806Z",
-      "locales": {
-        "en": {
-          "title": "W3C Newsletter - September 2026",
-          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
-        },
-        "fr": {
-          "title": "W3C Newsletter - September 2026",
-          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
-        }
-      }
-    },
-    {
       "slug": "20260924-manufacturing-trust-for-ai-agents-dockers-wearedevelopers-keynot-65334462",
       "topic": "AI Systems",
       "source": "Docker Blog",
@@ -934,25 +972,6 @@
       }
     },
     {
-      "slug": "20261007-pgplanfilter-100-released-dfa62bab",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_plan_filter-100-released-3352/",
-      "publishedAt": "2026-10-07T00:00:00.000Z",
-      "discoveredAt": "2026-10-07T13:18:36.603Z",
-      "locales": {
-        "en": {
-          "title": "pg_plan_filter 1.0.0 released",
-          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to prevent exe…"
-        },
-        "fr": {
-          "title": "pg_plan_filter 1.0.0 released",
-          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to prevent exe…"
-        }
-      }
-    },
-    {
       "slug": "20261005-physicist-jun-ye-wins-wolf-prize-in-physics-e9a43731",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -968,25 +987,6 @@
         "fr": {
           "title": "Physicist Jun Ye Wins Wolf Prize in Physics",
           "summary": "The award cites Ye’s achievement in “transformative, widely applicable advances in the control of ultracold atomic systems.”"
-        }
-      }
-    },
-    {
-      "slug": "20261008-oct-8-2026-announcements-introducing-the-anthropic-cyber-mission-db9c3550",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
-      "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:10.076Z",
-      "locales": {
-        "en": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Announcements Building on our commitment to American scientific discovery Oct 6, 2026"
-        },
-        "fr": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Announcements Building on our commitment to American scientific discovery Oct 6, 2026"
         }
       }
     },
@@ -1067,6 +1067,101 @@
       }
     },
     {
+      "slug": "20261002-w3c-newsletter---september-2026-033e226a",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-newsletter-september-2026/",
+      "publishedAt": "2026-10-02T10:01:00.000Z",
+      "discoveredAt": "2026-10-02T12:29:54.806Z",
+      "locales": {
+        "en": {
+          "title": "W3C Newsletter - September 2026",
+          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
+        },
+        "fr": {
+          "title": "W3C Newsletter - September 2026",
+          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
+        }
+      }
+    },
+    {
+      "slug": "20261013-gemini-4-argon-built-to-solve-your-hardest-problems-f1747161",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "publishedAt": "2026-10-13T16:01:52.000Z",
+      "discoveredAt": "2026-10-13T22:42:20.913Z",
+      "locales": {
+        "en": {
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "summary": "Gemini 4 Argon: Built to solve your hardest problems"
+        },
+        "fr": {
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "summary": "Gemini 4 Argon: Built to solve your hardest problems"
+        }
+      }
+    },
+    {
+      "slug": "20261008-oct-8-2026-announcements-introducing-the-anthropic-cyber-mission-db9c3550",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:10.076Z",
+      "locales": {
+        "en": {
+          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
+          "summary": "Announcements Building on our commitment to American scientific discovery Oct 6, 2026"
+        },
+        "fr": {
+          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
+          "summary": "Announcements Building on our commitment to American scientific discovery Oct 6, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20261009-sophos-cuts-threat-investigation-time-by-96-with-openai-daybreak-edd58468",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/sophos",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:57.050Z",
+      "locales": {
+        "en": {
+          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight."
+        },
+        "fr": {
+          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight."
+        }
+      }
+    },
+    {
+      "slug": "20261007-pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-postgresql--f303bf81",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-postgresql-index-3396/",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "discoveredAt": "2026-10-07T13:18:36.603Z",
+      "locales": {
+        "en": {
+          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
+          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CREATE EXTEN…"
+        },
+        "fr": {
+          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
+          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CREATE EXTEN…"
+        }
+      }
+    },
+    {
       "slug": "20261008-scale-bitwise-deterministic-pretraining-with-nvidia-megatron-cor-e7824102",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
@@ -1101,25 +1196,6 @@
         "fr": {
           "title": "How ShipStation Global built an AI IT help desk on Amazon Bedrock AgentCore",
           "summary": "ShipStation Global's engineering team built Deckhand, an AI IT help desk agent for Slack on Amazon Bedrock AgentCore. It answers routine IT questions from a curated knowledge base, reads error-message screenshots, and files Jira…"
-        }
-      }
-    },
-    {
-      "slug": "20261006-embeddinggemma-2-an-open-lightweight-multimodal-embedding-model-4dd29007",
-      "topic": "AI Systems",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-      "publishedAt": "2026-10-06T19:57:04.000Z",
-      "discoveredAt": "2026-10-06T22:38:43.858Z",
-      "locales": {
-        "en": {
-          "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-          "summary": "EmbeddingGemma 2: an open, lightweight multimodal embedding model"
-        },
-        "fr": {
-          "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-          "summary": "EmbeddingGemma 2: an open, lightweight multimodal embedding model"
         }
       }
     },
@@ -1200,44 +1276,6 @@
       }
     },
     {
-      "slug": "20261008-how-oracle-turns-days-of-work-into-minutes-with-chatgpt-and-code-112b5f00",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/oracle",
-      "publishedAt": "2026-10-08T16:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:10.076Z",
-      "locales": {
-        "en": {
-          "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-          "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex."
-        },
-        "fr": {
-          "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-          "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex."
-        }
-      }
-    },
-    {
-      "slug": "20260928-recap-of-the-web-ai-international-standards-seminar-generative-u-3bf72b81",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/recap-of-the-web-ai-international-standards-seminar-generative-ui-and-webskill/",
-      "publishedAt": "2026-09-28T08:17:00.000Z",
-      "discoveredAt": "2026-09-28T13:49:24.390Z",
-      "locales": {
-        "en": {
-          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
-          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges related to ge…"
-        },
-        "fr": {
-          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
-          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges related to ge…"
-        }
-      }
-    },
-    {
       "slug": "20260924-from-dockerfile-to-kit-the-docker-sandboxes-kit-specification-d28cb3fe",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -1276,25 +1314,6 @@
       }
     },
     {
-      "slug": "20261005-pgivm-116-released-9d0d6d1e",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_ivm-116-released-3391/",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "pg_ivm 1.16 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault when an IMMV…"
-        },
-        "fr": {
-          "title": "pg_ivm 1.16 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault when an IMMV…"
-        }
-      }
-    },
-    {
       "slug": "20260928-nist-provides-updates-on-national-construction-safety-team-activ-dd6ce6ec",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -1310,25 +1329,6 @@
         "fr": {
           "title": "NIST Provides Updates on National Construction Safety Team Activities",
           "summary": "The presentations highlighted the importance of NIST applying its own expertise and the expertise of others through collaborations and contracts."
-        }
-      }
-    },
-    {
-      "slug": "20261006-expanding-the-cyber-verification-program-announcements-oct-6-202-a22a6ca9",
-      "topic": "Security & Standards",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/cyber-verification-program",
-      "publishedAt": "2026-10-06T00:00:00.000Z",
-      "discoveredAt": "2026-10-10T12:27:46.305Z",
-      "locales": {
-        "en": {
-          "title": "Expanding the Cyber Verification Program Announcements Oct 6, 2026 We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
-          "summary": "anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa0a14bf0b6e0c82cdd1c3fad594dab33550cfc80-1920x1080.webp&w=3840&q=75\"/>"
-        },
-        "fr": {
-          "title": "Expanding the Cyber Verification Program Announcements Oct 6, 2026 We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
-          "summary": "anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa0a14bf0b6e0c82cdd1c3fad594dab33550cfc80-1920x1080.webp&w=3840&q=75\"/>"
         }
       }
     },
@@ -1409,6 +1409,101 @@
       }
     },
     {
+      "slug": "20260928-recap-of-the-web-ai-international-standards-seminar-generative-u-3bf72b81",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/recap-of-the-web-ai-international-standards-seminar-generative-ui-and-webskill/",
+      "publishedAt": "2026-09-28T08:17:00.000Z",
+      "discoveredAt": "2026-09-28T13:49:24.390Z",
+      "locales": {
+        "en": {
+          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
+          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges related to ge…"
+        },
+        "fr": {
+          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
+          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges related to ge…"
+        }
+      }
+    },
+    {
+      "slug": "20261006-embeddinggemma-2-an-open-lightweight-multimodal-embedding-model-4dd29007",
+      "topic": "AI Systems",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "publishedAt": "2026-10-06T19:57:04.000Z",
+      "discoveredAt": "2026-10-06T22:38:43.858Z",
+      "locales": {
+        "en": {
+          "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+          "summary": "EmbeddingGemma 2: an open, lightweight multimodal embedding model"
+        },
+        "fr": {
+          "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+          "summary": "EmbeddingGemma 2: an open, lightweight multimodal embedding model"
+        }
+      }
+    },
+    {
+      "slug": "20261006-expanding-the-cyber-verification-program-announcements-oct-6-202-a22a6ca9",
+      "topic": "Security & Standards",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/cyber-verification-program",
+      "publishedAt": "2026-10-06T00:00:00.000Z",
+      "discoveredAt": "2026-10-10T12:27:46.305Z",
+      "locales": {
+        "en": {
+          "title": "Expanding the Cyber Verification Program Announcements Oct 6, 2026 We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+          "summary": "anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa0a14bf0b6e0c82cdd1c3fad594dab33550cfc80-1920x1080.webp&w=3840&q=75\"/>"
+        },
+        "fr": {
+          "title": "Expanding the Cyber Verification Program Announcements Oct 6, 2026 We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+          "summary": "anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa0a14bf0b6e0c82cdd1c3fad594dab33550cfc80-1920x1080.webp&w=3840&q=75\"/>"
+        }
+      }
+    },
+    {
+      "slug": "20261008-how-oracle-turns-days-of-work-into-minutes-with-chatgpt-and-code-112b5f00",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/oracle",
+      "publishedAt": "2026-10-08T16:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:10.076Z",
+      "locales": {
+        "en": {
+          "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+          "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex."
+        },
+        "fr": {
+          "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+          "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex."
+        }
+      }
+    },
+    {
+      "slug": "20261007-pgplanfilter-100-released-dfa62bab",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_plan_filter-100-released-3352/",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "discoveredAt": "2026-10-07T13:18:36.603Z",
+      "locales": {
+        "en": {
+          "title": "pg_plan_filter 1.0.0 released",
+          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to prevent exe…"
+        },
+        "fr": {
+          "title": "pg_plan_filter 1.0.0 released",
+          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to prevent exe…"
+        }
+      }
+    },
+    {
       "slug": "20261008-5-steps-to-create-simready-assets-for-robotics-with-frontier-ai--e90cb073",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -1443,25 +1538,6 @@
         "fr": {
           "title": "Build long-horizon agents with Grok 4.7 on Amazon Bedrock",
           "summary": "Grok 4.7 is now available on Amazon Bedrock. In this post, we build a tool-calling agent on Grok 4.7 and evaluate it on three reasoning tasks at four reasoning effort levels, measuring correctness and token cost per completed tas…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-gemini-4-argon-our-next-era-of-frontier-intelligence-15e70ee5",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-      "publishedAt": "2026-09-30T20:01:45.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Gemini 4 Argon: our next era of frontier intelligence",
-          "summary": "Gemini 4 Argon: our next era of frontier intelligence"
-        },
-        "fr": {
-          "title": "Gemini 4 Argon: our next era of frontier intelligence",
-          "summary": "Gemini 4 Argon: our next era of frontier intelligence"
         }
       }
     },
@@ -1542,44 +1618,6 @@
       }
     },
     {
-      "slug": "20261008-legalon-halves-codex-costs-while-maintaining-development-speed-f6d3626e",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/legalon-halves-codex-costs",
-      "publishedAt": "2026-10-08T12:00:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:57.050Z",
-      "locales": {
-        "en": {
-          "title": "LegalOn halves Codex costs while maintaining development speed",
-          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically."
-        },
-        "fr": {
-          "title": "LegalOn halves Codex costs while maintaining development speed",
-          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically."
-        }
-      }
-    },
-    {
-      "slug": "20260925-crafting-wcag-3-for-more-accessible-user-experiences-90f5f71d",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/crafting-wcag-3-for-more-accessible-user-experiences/",
-      "publishedAt": "2026-09-25T12:50:00.000Z",
-      "discoveredAt": "2026-09-27T14:03:17.268Z",
-      "locales": {
-        "en": {
-          "title": "Crafting WCAG 3 for more accessible user experiences",
-          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
-        },
-        "fr": {
-          "title": "Crafting WCAG 3 for more accessible user experiences",
-          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
-        }
-      }
-    },
-    {
       "slug": "20260924-docker-and-cncf-partner-on-an-open-spec-for-agent-permissions-bfc64acb",
       "topic": "AI Systems",
       "source": "Docker Blog",
@@ -1618,25 +1656,6 @@
       }
     },
     {
-      "slug": "20261005-pgvaulttde-v172-critical-crash-fixes-new-on-disk-format-and-stab-35290beb",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v172-critical-crash-fixes-new-on-disk-format-and-stability-improvements-3393/",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
-          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuses on criti…"
-        },
-        "fr": {
-          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
-          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuses on criti…"
-        }
-      }
-    },
-    {
       "slug": "20260918-nist-awards-more-than-17-million-to-support-cybersecurity-workfo-e597abb2",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -1652,25 +1671,6 @@
         "fr": {
           "title": "NIST Awards More Than $1.7 Million to Support Cybersecurity Workforce Development Across 8 States",
           "summary": "Projects will address local cybersecurity workforce needs and will offer practical learning opportunities including internships, apprenticeships and hands-on projects."
-        }
-      }
-    },
-    {
-      "slug": "20261006-announcements-oct-6-2026-expanding-the-cyber-verification-progra-a22a6ca9",
-      "topic": "Security & Standards",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/cyber-verification-program",
-      "publishedAt": "2026-10-06T00:00:00.000Z",
-      "discoveredAt": "2026-10-07T13:18:36.603Z",
-      "locales": {
-        "en": {
-          "title": "Announcements Oct 6, 2026 Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
-          "summary": "Opus 5.5 performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5. Featur"
-        },
-        "fr": {
-          "title": "Announcements Oct 6, 2026 Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
-          "summary": "Opus 5.5 performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5. Featur"
         }
       }
     },
@@ -1732,6 +1732,101 @@
       }
     },
     {
+      "slug": "20260925-crafting-wcag-3-for-more-accessible-user-experiences-90f5f71d",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/crafting-wcag-3-for-more-accessible-user-experiences/",
+      "publishedAt": "2026-09-25T12:50:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:17.268Z",
+      "locales": {
+        "en": {
+          "title": "Crafting WCAG 3 for more accessible user experiences",
+          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
+        },
+        "fr": {
+          "title": "Crafting WCAG 3 for more accessible user experiences",
+          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
+        }
+      }
+    },
+    {
+      "slug": "20260930-gemini-4-argon-our-next-era-of-frontier-intelligence-15e70ee5",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "publishedAt": "2026-09-30T20:01:45.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "summary": "Gemini 4 Argon: our next era of frontier intelligence"
+        },
+        "fr": {
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "summary": "Gemini 4 Argon: our next era of frontier intelligence"
+        }
+      }
+    },
+    {
+      "slug": "20261006-announcements-oct-6-2026-expanding-the-cyber-verification-progra-a22a6ca9",
+      "topic": "Security & Standards",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/cyber-verification-program",
+      "publishedAt": "2026-10-06T00:00:00.000Z",
+      "discoveredAt": "2026-10-07T13:18:36.603Z",
+      "locales": {
+        "en": {
+          "title": "Announcements Oct 6, 2026 Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+          "summary": "Opus 5.5 performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5. Featur"
+        },
+        "fr": {
+          "title": "Announcements Oct 6, 2026 Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+          "summary": "Opus 5.5 performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5. Featur"
+        }
+      }
+    },
+    {
+      "slug": "20261008-legalon-halves-codex-costs-while-maintaining-development-speed-f6d3626e",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/legalon-halves-codex-costs",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:57.050Z",
+      "locales": {
+        "en": {
+          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically."
+        },
+        "fr": {
+          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically."
+        }
+      }
+    },
+    {
+      "slug": "20261005-pgivm-116-released-9d0d6d1e",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_ivm-116-released-3391/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "pg_ivm 1.16 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault when an IMMV…"
+        },
+        "fr": {
+          "title": "pg_ivm 1.16 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault when an IMMV…"
+        }
+      }
+    },
+    {
       "slug": "20261008-building-reliable-data-analytics-agents-lessons-from-the-kdd-cup-09637fb3",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
@@ -1766,25 +1861,6 @@
         "fr": {
           "title": "Mixture-of-Experts kernel engineering on Amazon SageMaker AI",
           "summary": "AWS engineers share kernel optimizations for fused Mixture-of-Experts (MoE) models on Amazon SageMaker AI: Swap-AB for WGMMA utilization, Triton backend routing for FP8 quantization, and eliminating Triton JIT recompilation. Toge…"
-        }
-      }
-    },
-    {
-      "slug": "20260930-introducing-synthid-bio-0a622a33",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/introducing-synthid-bio/",
-      "publishedAt": "2026-09-30T15:03:07.000Z",
-      "discoveredAt": "2026-09-30T22:13:14.519Z",
-      "locales": {
-        "en": {
-          "title": "Introducing SynthID Bio",
-          "summary": "Proof of concept for watermarking AI-generated proteins while preserving biological function."
-        },
-        "fr": {
-          "title": "Introducing SynthID Bio",
-          "summary": "Proof of concept for watermarking AI-generated proteins while preserving biological function."
         }
       }
     },
@@ -1865,44 +1941,6 @@
       }
     },
     {
-      "slug": "20261008-pollo-ai-turns-creative-ideas-into-campaigns-with-openai-ca1ec6c6",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/pollo-ai",
-      "publishedAt": "2026-10-08T12:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:10.076Z",
-      "locales": {
-        "en": {
-          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
-        },
-        "fr": {
-          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
-        }
-      }
-    },
-    {
-      "slug": "20260922-2026-climate-weeks-w3c-and-web-sustainability-050fad0e",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/2026-climate-weeks-w3c-and-web-sustainability/",
-      "publishedAt": "2026-09-22T12:40:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
-      "locales": {
-        "en": {
-          "title": "2026 Climate Weeks: W3C and Web Sustainability",
-          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3C’s horizo…"
-        },
-        "fr": {
-          "title": "2026 Climate Weeks: W3C and Web Sustainability",
-          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3C’s horizo…"
-        }
-      }
-    },
-    {
       "slug": "20260924-introducing-cloud-sandboxes-start-on-your-laptop-finish-in-the-c-cd2149d6",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -1941,25 +1979,6 @@
       }
     },
     {
-      "slug": "20261005-dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-a-4dad8a1f",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-and-broader-context-for-dbforge-ai-assistant-3394/",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
-          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database management softwar…"
-        },
-        "fr": {
-          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
-          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database management softwar…"
-        }
-      }
-    },
-    {
       "slug": "20260915-nist-awards-more-than-30-million-for-mep-centers-in-11-states-an-d9483720",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -1975,25 +1994,6 @@
         "fr": {
           "title": "NIST Awards More Than $30 Million for MEP Centers in 11 States and Puerto Rico",
           "summary": "The awards will help small and medium-sized manufacturers increase the adoption of advanced manufacturing technology."
-        }
-      }
-    },
-    {
-      "slug": "20261006-oct-6-2026-announcements-expanding-the-cyber-verification-progra-a22a6ca9",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/cyber-verification-program",
-      "publishedAt": "2026-10-06T00:00:00.000Z",
-      "discoveredAt": "2026-10-06T22:38:43.858Z",
-      "locales": {
-        "en": {
-          "title": "Oct 6, 2026 Announcements Expanding the Cyber Verification Program",
-          "summary": "Category Title Oct 2, 2026"
-        },
-        "fr": {
-          "title": "Oct 6, 2026 Announcements Expanding the Cyber Verification Program",
-          "summary": "Category Title Oct 2, 2026"
         }
       }
     },
@@ -2055,6 +2055,101 @@
       }
     },
     {
+      "slug": "20260922-2026-climate-weeks-w3c-and-web-sustainability-050fad0e",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/2026-climate-weeks-w3c-and-web-sustainability/",
+      "publishedAt": "2026-09-22T12:40:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "2026 Climate Weeks: W3C and Web Sustainability",
+          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3C’s horizo…"
+        },
+        "fr": {
+          "title": "2026 Climate Weeks: W3C and Web Sustainability",
+          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3C’s horizo…"
+        }
+      }
+    },
+    {
+      "slug": "20260930-introducing-synthid-bio-0a622a33",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/introducing-synthid-bio/",
+      "publishedAt": "2026-09-30T15:03:07.000Z",
+      "discoveredAt": "2026-09-30T22:13:14.519Z",
+      "locales": {
+        "en": {
+          "title": "Introducing SynthID Bio",
+          "summary": "Proof of concept for watermarking AI-generated proteins while preserving biological function."
+        },
+        "fr": {
+          "title": "Introducing SynthID Bio",
+          "summary": "Proof of concept for watermarking AI-generated proteins while preserving biological function."
+        }
+      }
+    },
+    {
+      "slug": "20261006-oct-6-2026-announcements-expanding-the-cyber-verification-progra-a22a6ca9",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/cyber-verification-program",
+      "publishedAt": "2026-10-06T00:00:00.000Z",
+      "discoveredAt": "2026-10-06T22:38:43.858Z",
+      "locales": {
+        "en": {
+          "title": "Oct 6, 2026 Announcements Expanding the Cyber Verification Program",
+          "summary": "Category Title Oct 2, 2026"
+        },
+        "fr": {
+          "title": "Oct 6, 2026 Announcements Expanding the Cyber Verification Program",
+          "summary": "Category Title Oct 2, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20261008-pollo-ai-turns-creative-ideas-into-campaigns-with-openai-ca1ec6c6",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/pollo-ai",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:10.076Z",
+      "locales": {
+        "en": {
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
+        },
+        "fr": {
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
+        }
+      }
+    },
+    {
+      "slug": "20261005-pgvaulttde-v172-critical-crash-fixes-new-on-disk-format-and-stab-35290beb",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v172-critical-crash-fixes-new-on-disk-format-and-stability-improvements-3393/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
+          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuses on criti…"
+        },
+        "fr": {
+          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
+          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuses on criti…"
+        }
+      }
+    },
+    {
       "slug": "20261007-the-machines-that-make-the-machines-61166596",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
@@ -2089,25 +2184,6 @@
         "fr": {
           "title": "Accessing OpenAI GPT models on Amazon Bedrock with global cross-Region inference in Thailand, Malaysia, Singapore, Indonesia, and Taiwan",
           "summary": "Learn how to run OpenAI GPT-6 Sol, Luna, and Astra on Amazon Bedrock through global cross-Region inference from Singapore, Jakarta, Thailand, Malaysia, and Taipei. This post covers the Converse and OpenAI-compatible APIs, IAM and…"
-        }
-      }
-    },
-    {
-      "slug": "20260924-introducing-gemini-38-live-with-live-avatar-e7107d9a",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
-      "publishedAt": "2026-09-24T16:20:39.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Gemini 3.8 Live with Live Avatar",
-          "summary": "Introducing Gemini 3.8 Live with Live Avatar"
-        },
-        "fr": {
-          "title": "Introducing Gemini 3.8 Live with Live Avatar",
-          "summary": "Introducing Gemini 3.8 Live with Live Avatar"
         }
       }
     },
@@ -2188,44 +2264,6 @@
       }
     },
     {
-      "slug": "20261008-disrupting-ai-enabled-false-front-operations-077dea1e",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-      "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:10.076Z",
-      "locales": {
-        "en": {
-          "title": "Disrupting AI-enabled “false front” operations",
-          "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging."
-        },
-        "fr": {
-          "title": "Disrupting AI-enabled “false front” operations",
-          "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging."
-        }
-      }
-    },
-    {
-      "slug": "20260921-w3c-irc-bots-now-open-source-28d6f244",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-irc-bots-now-open-source/",
-      "publishedAt": "2026-09-21T11:13:00.000Z",
-      "discoveredAt": "2026-09-21T12:44:08.101Z",
-      "locales": {
-        "en": {
-          "title": "W3C IRC bots now open source",
-          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
-        },
-        "fr": {
-          "title": "W3C IRC bots now open source",
-          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
-        }
-      }
-    },
-    {
       "slug": "20260922-meet-the-ecosystem-partners-and-customers-at-wearedevelopers-wit-14a094f0",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -2264,25 +2302,6 @@
       }
     },
     {
-      "slug": "20261005-pgvector-087-released-9f7f16c5",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgvector-087-released-3392/",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "pgvector 0.8.7 Released",
-          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details: https://g…"
-        },
-        "fr": {
-          "title": "pgvector 0.8.7 Released",
-          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details: https://g…"
-        }
-      }
-    },
-    {
       "slug": "20260915-nist-finalizes-guidelines-on-protecting-online-identity-and-acce-fce54ff4",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -2298,25 +2317,6 @@
         "fr": {
           "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
           "summary": "The finalized publication is designed to help organizations take effective steps to avoid exposing tokens to attackers."
-        }
-      }
-    },
-    {
-      "slug": "20261002-oct-2-2026-announcements-anthropic-invests-100-million-to-train--9f2dde65",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/claude-frontier-academy",
-      "publishedAt": "2026-10-02T00:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
-          "summary": "Category Title Oct 1, 2026 <"
-        },
-        "fr": {
-          "title": "Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
-          "summary": "Category Title Oct 1, 2026 <"
         }
       }
     },
@@ -2378,6 +2378,101 @@
       }
     },
     {
+      "slug": "20260921-w3c-irc-bots-now-open-source-28d6f244",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-irc-bots-now-open-source/",
+      "publishedAt": "2026-09-21T11:13:00.000Z",
+      "discoveredAt": "2026-09-21T12:44:08.101Z",
+      "locales": {
+        "en": {
+          "title": "W3C IRC bots now open source",
+          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
+        },
+        "fr": {
+          "title": "W3C IRC bots now open source",
+          "summary": "Two of W3C's IRC bots, RRSAgent and Zakim, are now open source. These bots help facilitate meetings coordinated on IRC, helping with chat logs, meeting minutes, agenda tracking and speaker queues."
+        }
+      }
+    },
+    {
+      "slug": "20260924-introducing-gemini-38-live-with-live-avatar-e7107d9a",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "publishedAt": "2026-09-24T16:20:39.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Gemini 3.8 Live with Live Avatar",
+          "summary": "Introducing Gemini 3.8 Live with Live Avatar"
+        },
+        "fr": {
+          "title": "Introducing Gemini 3.8 Live with Live Avatar",
+          "summary": "Introducing Gemini 3.8 Live with Live Avatar"
+        }
+      }
+    },
+    {
+      "slug": "20261002-oct-2-2026-announcements-anthropic-invests-100-million-to-train--9f2dde65",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/claude-frontier-academy",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+          "summary": "Category Title Oct 1, 2026 <"
+        },
+        "fr": {
+          "title": "Oct 2, 2026 Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+          "summary": "Category Title Oct 1, 2026 <"
+        }
+      }
+    },
+    {
+      "slug": "20261008-disrupting-ai-enabled-false-front-operations-077dea1e",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:10.076Z",
+      "locales": {
+        "en": {
+          "title": "Disrupting AI-enabled “false front” operations",
+          "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging."
+        },
+        "fr": {
+          "title": "Disrupting AI-enabled “false front” operations",
+          "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging."
+        }
+      }
+    },
+    {
+      "slug": "20261005-dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-a-4dad8a1f",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-and-broader-context-for-dbforge-ai-assistant-3394/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
+          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database management softwar…"
+        },
+        "fr": {
+          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
+          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database management softwar…"
+        }
+      }
+    },
+    {
       "slug": "20261007-scaling-decision-optimization-to-100-million-variables-and-beyon-51c57bf2",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
@@ -2412,25 +2507,6 @@
         "fr": {
           "title": "Deploy decision models with llama.cpp on Amazon SageMaker AI",
           "summary": "Learn how to deploy decision models with llama.cpp on Amazon SageMaker AI. This technical how-to serves OpenAI-compatible chat completions with the AWS Deep Learning Container for llama.cpp, then extends the runtime with SemIf to…"
-        }
-      }
-    },
-    {
-      "slug": "20260923-advancing-private-ai-compute-with-secure-server-side-memory-4c4abcff",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
-      "publishedAt": "2026-09-23T16:00:57.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Advancing Private AI Compute with secure, server-side memory",
-          "summary": "Introducing private, server-side memory to Private AI Compute for personal AI."
-        },
-        "fr": {
-          "title": "Advancing Private AI Compute with secure, server-side memory",
-          "summary": "Introducing private, server-side memory to Private AI Compute for personal AI."
         }
       }
     },
@@ -2511,44 +2587,6 @@
       }
     },
     {
-      "slug": "20261007-helping-teens-learn-plan-and-shape-the-future-of-ai-ad4e1464",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/teens-learn-and-plan",
-      "publishedAt": "2026-10-07T12:00:00.000Z",
-      "discoveredAt": "2026-10-07T23:03:23.944Z",
-      "locales": {
-        "en": {
-          "title": "Helping teens learn, plan, and shape the future of AI",
-          "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council."
-        },
-        "fr": {
-          "title": "Helping teens learn, plan, and shape the future of AI",
-          "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council."
-        }
-      }
-    },
-    {
-      "slug": "20260918-w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026-266b9a5f",
-      "topic": "AI Systems",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026/",
-      "publishedAt": "2026-09-18T16:49:00.000Z",
-      "discoveredAt": "2026-09-18T20:52:50.113Z",
-      "locales": {
-        "en": {
-          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
-          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber Resilience…"
-        },
-        "fr": {
-          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
-          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber Resilience…"
-        }
-      }
-    },
-    {
       "slug": "20260908-6-benefits-of-sandbox-environments-and-how-docker-sandboxes-deli-8f7b5812",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -2587,25 +2625,6 @@
       }
     },
     {
-      "slug": "20261001-pgpool-ii-473-468-4513-4418-and-4321-released-b4eb1817",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgpool-ii-473-468-4513-4418-and-4321-released-3390/",
-      "publishedAt": "2026-10-01T00:00:00.000Z",
-      "discoveredAt": "2026-10-01T13:08:39.943Z",
-      "locales": {
-        "en": {
-          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
-          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
-        },
-        "fr": {
-          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
-          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
-        }
-      }
-    },
-    {
       "slug": "20260910-nist-developed-quantum-sensors-improve-nuclear-monitoring-f07e8993",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -2621,25 +2640,6 @@
         "fr": {
           "title": "NIST-Developed Quantum Sensors Improve Nuclear Monitoring",
           "summary": "New X-ray measurements will allow scientists to more accurately monitor nuclear material at power plants and weapons facilities."
-        }
-      }
-    },
-    {
-      "slug": "20261001-oct-1-2026-announcements-barclays-scales-claude-to-upgrade-opera-91b1f786",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/barclays-scales-claude",
-      "publishedAt": "2026-10-01T00:00:00.000Z",
-      "discoveredAt": "2026-10-01T13:08:39.943Z",
-      "locales": {
-        "en": {
-          "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
-          "summary": "Category Title Sep 2"
-        },
-        "fr": {
-          "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
-          "summary": "Category Title Sep 2"
         }
       }
     },
@@ -2682,6 +2682,101 @@
       }
     },
     {
+      "slug": "20260918-w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026-266b9a5f",
+      "topic": "AI Systems",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-threat-modeling-and-the-cra-a-report-from-gdc-2026/",
+      "publishedAt": "2026-09-18T16:49:00.000Z",
+      "discoveredAt": "2026-09-18T20:52:50.113Z",
+      "locales": {
+        "en": {
+          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
+          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber Resilience…"
+        },
+        "fr": {
+          "title": "W3C, threat modeling, and the CRA: a report from GDC 2026",
+          "summary": "At GDC 2026, W3C Security Interest Group member Giovanni Corti shared how threat modeling was integrated into the revision of ETSI EN 304 617, the draft harmonized standard for browser cybersecurity under the EU Cyber Resilience…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-advancing-private-ai-compute-with-secure-server-side-memory-4c4abcff",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "publishedAt": "2026-09-23T16:00:57.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Advancing Private AI Compute with secure, server-side memory",
+          "summary": "Introducing private, server-side memory to Private AI Compute for personal AI."
+        },
+        "fr": {
+          "title": "Advancing Private AI Compute with secure, server-side memory",
+          "summary": "Introducing private, server-side memory to Private AI Compute for personal AI."
+        }
+      }
+    },
+    {
+      "slug": "20261001-oct-1-2026-announcements-barclays-scales-claude-to-upgrade-opera-91b1f786",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/barclays-scales-claude",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
+          "summary": "Category Title Sep 2"
+        },
+        "fr": {
+          "title": "Oct 1, 2026 Announcements Barclays scales Claude to upgrade operations and improve client experience",
+          "summary": "Category Title Sep 2"
+        }
+      }
+    },
+    {
+      "slug": "20261007-helping-teens-learn-plan-and-shape-the-future-of-ai-ad4e1464",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/teens-learn-and-plan",
+      "publishedAt": "2026-10-07T12:00:00.000Z",
+      "discoveredAt": "2026-10-07T23:03:23.944Z",
+      "locales": {
+        "en": {
+          "title": "Helping teens learn, plan, and shape the future of AI",
+          "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council."
+        },
+        "fr": {
+          "title": "Helping teens learn, plan, and shape the future of AI",
+          "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council."
+        }
+      }
+    },
+    {
+      "slug": "20261005-pgvector-087-released-9f7f16c5",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgvector-087-released-3392/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details: https://g…"
+        },
+        "fr": {
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details: https://g…"
+        }
+      }
+    },
+    {
       "slug": "20261007-whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rende-60dd7f94",
       "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
@@ -2716,25 +2811,6 @@
         "fr": {
           "title": "Run multi-node inference workloads using Ray LLM Deep Learning Containers",
           "summary": "Learn how to deploy one large language model across two GPU nodes on Amazon EKS using the multi-node Ray LLM Deep Learning Containers, with separate prefill and decode nodes behind one OpenAI-compatible endpoint. The pre-built co…"
-        }
-      }
-    },
-    {
-      "slug": "20260923-gemini-38-text-to-speech-says-hello-be2314c6",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-      "publishedAt": "2026-09-23T15:25:14.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Gemini 3.8 text-to-speech says hello",
-          "summary": "Gemini 3.8 text-to-speech says hello"
-        },
-        "fr": {
-          "title": "Gemini 3.8 text-to-speech says hello",
-          "summary": "Gemini 3.8 text-to-speech says hello"
         }
       }
     },
@@ -2815,44 +2891,6 @@
       }
     },
     {
-      "slug": "20261007-radisson-hotel-group-brings-hotel-discovery-into-chatgpt-04e9dc38",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/radisson",
-      "publishedAt": "2026-10-07T07:00:00.000Z",
-      "discoveredAt": "2026-10-07T23:03:23.944Z",
-      "locales": {
-        "en": {
-          "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-          "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips."
-        },
-        "fr": {
-          "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-          "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips."
-        }
-      }
-    },
-    {
-      "slug": "20260916-w3c-launches-first-pilot-of-program-to-support-open-source-proje-daf0158b",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-launches-first-pilot-of-program-to-support-open-source-projects/",
-      "publishedAt": "2026-09-16T13:53:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
-      "locales": {
-        "en": {
-          "title": "W3C launches first pilot of program to support Open Source projects",
-          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR policies design…"
-        },
-        "fr": {
-          "title": "W3C launches first pilot of program to support Open Source projects",
-          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR policies design…"
-        }
-      }
-    },
-    {
       "slug": "20260903-yolo-mode-agent-autonomy-without-the-guardrails-07d6a8e1",
       "topic": "AI Systems",
       "source": "Docker Blog",
@@ -2891,21 +2929,59 @@
       }
     },
     {
-      "slug": "20260929-dasha-18-index-recommendations-io-analysis-schema-checks-and-log-e42d6b25",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/dasha-18-index-recommendations-io-analysis-schema-checks-and-log-insights-3387/",
-      "publishedAt": "2026-09-29T00:00:00.000Z",
-      "discoveredAt": "2026-09-29T12:48:58.498Z",
+      "slug": "20260911-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
+      "publishedAt": "2026-09-11T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
       "locales": {
         "en": {
-          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
-          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
+          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
         },
         "fr": {
-          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
-          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
+          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
+        }
+      }
+    },
+    {
+      "slug": "20260916-w3c-launches-first-pilot-of-program-to-support-open-source-proje-daf0158b",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-launches-first-pilot-of-program-to-support-open-source-projects/",
+      "publishedAt": "2026-09-16T13:53:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:09.580Z",
+      "locales": {
+        "en": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR policies design…"
+        },
+        "fr": {
+          "title": "W3C launches first pilot of program to support Open Source projects",
+          "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the first pilot of a program allowing Open Source projects to mature within an ecosystem seeking to build a coherent open platform through processes and IPR policies design…"
+        }
+      }
+    },
+    {
+      "slug": "20260923-gemini-38-text-to-speech-says-hello-be2314c6",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+      "publishedAt": "2026-09-23T15:25:14.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Gemini 3.8 text-to-speech says hello",
+          "summary": "Gemini 3.8 text-to-speech says hello"
+        },
+        "fr": {
+          "title": "Gemini 3.8 text-to-speech says hello",
+          "summary": "Gemini 3.8 text-to-speech says hello"
         }
       }
     },
@@ -2929,21 +3005,40 @@
       }
     },
     {
-      "slug": "20260911-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
-      "publishedAt": "2026-09-11T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "slug": "20261007-radisson-hotel-group-brings-hotel-discovery-into-chatgpt-04e9dc38",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/radisson",
+      "publishedAt": "2026-10-07T07:00:00.000Z",
+      "discoveredAt": "2026-10-07T23:03:23.944Z",
       "locales": {
         "en": {
-          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
-          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
+          "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+          "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips."
         },
         "fr": {
-          "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
-          "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-580…"
+          "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+          "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips."
+        }
+      }
+    },
+    {
+      "slug": "20261001-pgpool-ii-473-468-4513-4418-and-4321-released-b4eb1817",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgpool-ii-473-468-4513-4418-and-4321-released-3390/",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:39.943Z",
+      "locales": {
+        "en": {
+          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
+          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
+        },
+        "fr": {
+          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
+          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
         }
       }
     },
@@ -2982,25 +3077,6 @@
         "fr": {
           "title": "ICYMI: What landed for AI builders in September 2026",
           "summary": "A monthly recap of the latest Amazon Bedrock, Amazon Bedrock AgentCore, and Strands updates from September 2026: broader model choice, faster serverless agents with built-in evaluation, and automated knowledge base syncing with n…"
-        }
-      }
-    },
-    {
-      "slug": "20260915-introducing-gemini-38-live-and-38-live-extended-thinking-f4c3141c",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-      "publishedAt": "2026-09-15T17:05:57.000Z",
-      "discoveredAt": "2026-09-15T21:18:37.392Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-          "summary": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking"
-        },
-        "fr": {
-          "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-          "summary": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking"
         }
       }
     },
@@ -3081,44 +3157,6 @@
       }
     },
     {
-      "slug": "20261007-gpt-6-and-intelligent-ui-for-everyone-0ca14509",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/gpt-6-for-everyone",
-      "publishedAt": "2026-10-07T00:00:00.000Z",
-      "discoveredAt": "2026-10-07T23:03:23.944Z",
-      "locales": {
-        "en": {
-          "title": "GPT-6 and Intelligent UI for everyone",
-          "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly."
-        },
-        "fr": {
-          "title": "GPT-6 and Intelligent UI for everyone",
-          "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly."
-        }
-      }
-    },
-    {
-      "slug": "20260909-a-compilation-of-w3c-in-japans-30th-anniversary-events-26d8dabd",
-      "topic": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/",
-      "publishedAt": "2026-09-09T20:50:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "A compilation of W3C in Japan's 30th anniversary events",
-          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event early Sept…"
-        },
-        "fr": {
-          "title": "A compilation of W3C in Japan's 30th anniversary events",
-          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event early Sept…"
-        }
-      }
-    },
-    {
       "slug": "20260902-building-reproducible-ai-evaluation-workflows-with-docker-sandbo-401ff3f4",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -3157,21 +3195,59 @@
       }
     },
     {
-      "slug": "20260928-plhaskell-v60-released-22b5aed3",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/plhaskell-v60-released-3388/",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "slug": "20260910-kubernetes-v137-scheduler-preemption-for-in-place-pod-resize-alp-e2763381",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
+      "publishedAt": "2026-09-10T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
       "locales": {
         "en": {
-          "title": "PL/Haskell v6.0 Released",
-          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
         },
         "fr": {
-          "title": "PL/Haskell v6.0 Released",
-          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
+        }
+      }
+    },
+    {
+      "slug": "20260909-a-compilation-of-w3c-in-japans-30th-anniversary-events-26d8dabd",
+      "topic": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/a-compilation-of-w3c-in-japans-30th-anniversary-events/",
+      "publishedAt": "2026-09-09T20:50:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "locales": {
+        "en": {
+          "title": "A compilation of W3C in Japan's 30th anniversary events",
+          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event early Sept…"
+        },
+        "fr": {
+          "title": "A compilation of W3C in Japan's 30th anniversary events",
+          "summary": "2026 marks the 30th anniversary of the establishment of W3C in Japan. As part of these commemorative activities, W3C Japan held an event for W3C members in May, an exhibition for the general public in June and an event early Sept…"
+        }
+      }
+    },
+    {
+      "slug": "20260915-introducing-gemini-38-live-and-38-live-extended-thinking-f4c3141c",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "publishedAt": "2026-09-15T17:05:57.000Z",
+      "discoveredAt": "2026-09-15T21:18:37.392Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+          "summary": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking"
+        },
+        "fr": {
+          "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+          "summary": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking"
         }
       }
     },
@@ -3195,21 +3271,40 @@
       }
     },
     {
-      "slug": "20260910-kubernetes-v137-scheduler-preemption-for-in-place-pod-resize-alp-e2763381",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
-      "publishedAt": "2026-09-10T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "slug": "20261007-gpt-6-and-intelligent-ui-for-everyone-0ca14509",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/gpt-6-for-everyone",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "discoveredAt": "2026-10-07T23:03:23.944Z",
       "locales": {
         "en": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
+          "title": "GPT-6 and Intelligent UI for everyone",
+          "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly."
         },
         "fr": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
+          "title": "GPT-6 and Intelligent UI for everyone",
+          "summary": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly."
+        }
+      }
+    },
+    {
+      "slug": "20260929-dasha-18-index-recommendations-io-analysis-schema-checks-and-log-e42d6b25",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/dasha-18-index-recommendations-io-analysis-schema-checks-and-log-insights-3387/",
+      "publishedAt": "2026-09-29T00:00:00.000Z",
+      "discoveredAt": "2026-09-29T12:48:58.498Z",
+      "locales": {
+        "en": {
+          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
+          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
+        },
+        "fr": {
+          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
+          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
         }
       }
     },
@@ -3248,25 +3343,6 @@
         "fr": {
           "title": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock",
           "summary": "Building an AI agent that works in a demo is a different problem from running one for 40 million developers. Postman and AWS share the architectural patterns behind Agent Mode: controlling tool sprawl, exposing schema-based reads…"
-        }
-      }
-    },
-    {
-      "slug": "20260908-alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter--80d284f5",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-      "publishedAt": "2026-09-08T14:00:15.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-          "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome."
-        },
-        "fr": {
-          "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-          "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome."
         }
       }
     },
@@ -3347,25 +3423,6 @@
       }
     },
     {
-      "slug": "20261006-atlassian-and-openai-expand-partnership-to-turn-enterprise-knowl-60ef2af3",
-      "topic": "Computer Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/atlassian-partnership",
-      "publishedAt": "2026-10-06T16:00:00.000Z",
-      "discoveredAt": "2026-10-06T22:38:43.858Z",
-      "locales": {
-        "en": {
-          "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-          "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work."
-        },
-        "fr": {
-          "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-          "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work."
-        }
-      }
-    },
-    {
       "slug": "20260902-below-the-harness-governing-a-multi-model-multi-harness-world-68dc5609",
       "topic": "AI Systems",
       "source": "Docker Blog",
@@ -3404,21 +3461,40 @@
       }
     },
     {
-      "slug": "20260928-pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform--1249398e",
-      "topic": "Computer Systems",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform-to-bridge-the-ai-prototype-to-production-chasm-3389/",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "slug": "20260909-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
+      "publishedAt": "2026-09-09T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
       "locales": {
         "en": {
-          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
-          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
         },
         "fr": {
-          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
-          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
+        }
+      }
+    },
+    {
+      "slug": "20260908-alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter--80d284f5",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "publishedAt": "2026-09-08T14:00:15.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+          "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome."
+        },
+        "fr": {
+          "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+          "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome."
         }
       }
     },
@@ -3442,21 +3518,40 @@
       }
     },
     {
-      "slug": "20260909-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
-      "publishedAt": "2026-09-09T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "slug": "20261006-atlassian-and-openai-expand-partnership-to-turn-enterprise-knowl-60ef2af3",
+      "topic": "Computer Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/atlassian-partnership",
+      "publishedAt": "2026-10-06T16:00:00.000Z",
+      "discoveredAt": "2026-10-06T22:38:43.858Z",
       "locales": {
         "en": {
-          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
-          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
+          "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+          "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work."
         },
         "fr": {
-          "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
-          "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned…"
+          "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+          "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work."
+        }
+      }
+    },
+    {
+      "slug": "20260928-plhaskell-v60-released-22b5aed3",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/plhaskell-v60-released-3388/",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "locales": {
+        "en": {
+          "title": "PL/Haskell v6.0 Released",
+          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
+        },
+        "fr": {
+          "title": "PL/Haskell v6.0 Released",
+          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
         }
       }
     },
@@ -3495,25 +3590,6 @@
         "fr": {
           "title": "Pay-per-inference for AI agents: How BlockRun and Incarna use Amazon Bedrock AgentCore payments",
           "summary": "Amazon Bedrock AgentCore payments gives AI agents a managed way to pay for services on demand, with spending limits enforced by the infrastructure. See how Incarna's agents pay BlockRun for model inference one request at a time o…"
-        }
-      }
-    },
-    {
-      "slug": "20260903-introducing-weathernext-3-our-most-advanced-and-accurate-global--56da2c8e",
-      "topic": "AI Systems",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
-      "publishedAt": "2026-09-03T15:02:08.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-          "summary": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model"
-        },
-        "fr": {
-          "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-          "summary": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model"
         }
       }
     },
@@ -3594,25 +3670,6 @@
       }
     },
     {
-      "slug": "20261006-how-jump-trading-is-scaling-quant-research-with-chatgpt-342677ae",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/jump-trading",
-      "publishedAt": "2026-10-06T12:00:00.000Z",
-      "discoveredAt": "2026-10-07T13:18:36.603Z",
-      "locales": {
-        "en": {
-          "title": "How Jump Trading is scaling quant research with ChatGPT",
-          "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review."
-        },
-        "fr": {
-          "title": "How Jump Trading is scaling quant research with ChatGPT",
-          "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review."
-        }
-      }
-    },
-    {
       "slug": "20260831-secure-by-default-is-your-only-way-forward-a7538814",
       "topic": "Computer Science",
       "source": "Docker Blog",
@@ -3651,21 +3708,40 @@
       }
     },
     {
-      "slug": "20260924-postgresql-19-beta-4-released-a454f777",
+      "slug": "20260908-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
       "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-19-beta-4-released-3386/",
-      "publishedAt": "2026-09-24T00:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
+      "publishedAt": "2026-09-08T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL 19 Beta 4 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
+          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
         },
         "fr": {
-          "title": "PostgreSQL 19 Beta 4 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
+          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
+        }
+      }
+    },
+    {
+      "slug": "20260903-introducing-weathernext-3-our-most-advanced-and-accurate-global--56da2c8e",
+      "topic": "AI Systems",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+      "publishedAt": "2026-09-03T15:02:08.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+          "summary": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model"
+        },
+        "fr": {
+          "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+          "summary": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model"
         }
       }
     },
@@ -3689,21 +3765,40 @@
       }
     },
     {
-      "slug": "20260908-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
-      "publishedAt": "2026-09-08T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "slug": "20261006-how-jump-trading-is-scaling-quant-research-with-chatgpt-342677ae",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/jump-trading",
+      "publishedAt": "2026-10-06T12:00:00.000Z",
+      "discoveredAt": "2026-10-07T13:18:36.603Z",
       "locales": {
         "en": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
+          "title": "How Jump Trading is scaling quant research with ChatGPT",
+          "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review."
         },
         "fr": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
+          "title": "How Jump Trading is scaling quant research with ChatGPT",
+          "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review."
+        }
+      }
+    },
+    {
+      "slug": "20260928-pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform--1249398e",
+      "topic": "Computer Systems",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgedge-announces-pgedge-starfleet-a-new-postgres-cloud-platform-to-bridge-the-ai-prototype-to-production-chasm-3389/",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "discoveredAt": "2026-09-28T15:51:30.407Z",
+      "locales": {
+        "en": {
+          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
+          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
+        },
+        "fr": {
+          "title": "pgEdge Announces pgEdge Starfleet, a New Postgres Cloud Platform to Bridge the AI Prototype to Production Chasm",
+          "summary": "ALEXANDRIA, Va. — Sept. 28, 2026 — pgEdge, the leading open source Postgres company for agentic AI and enterprise applications, today announced pgEdge Starfleet, a new Postgres cloud database platform built to bridge the widening…"
         }
       }
     },
@@ -3742,25 +3837,6 @@
         "fr": {
           "title": "Share GPU clusters across teams with isolation and fairness using Amazon SageMaker HyperPod",
           "summary": "A reference architecture for securely sharing one Amazon SageMaker HyperPod EKS cluster across multiple teams, using AWS IAM Identity Center for authentication, per-team SageMaker Domains and Kubernetes namespaces for isolation,…"
-        }
-      }
-    },
-    {
-      "slug": "20260902-proactive-cyber-defense-for-governments-and-enterprises-383dbcd7",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
-      "publishedAt": "2026-09-02T16:24:24.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Proactive cyber defense for governments and enterprises",
-          "summary": "Proactive cyber defense for governments and enterprises"
-        },
-        "fr": {
-          "title": "Proactive cyber defense for governments and enterprises",
-          "summary": "Proactive cyber defense for governments and enterprises"
         }
       }
     },
@@ -3841,25 +3917,6 @@
       }
     },
     {
-      "slug": "20261006-sharing-ai-progress-in-mathematics-47b9255d",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-      "publishedAt": "2026-10-06T12:00:00.000Z",
-      "discoveredAt": "2026-10-07T13:18:36.603Z",
-      "locales": {
-        "en": {
-          "title": "Sharing AI progress in mathematics",
-          "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub."
-        },
-        "fr": {
-          "title": "Sharing AI progress in mathematics",
-          "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub."
-        }
-      }
-    },
-    {
       "slug": "20260916-microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadr-7164ca73",
       "topic": "Computer Science",
       "source": "Azure AI Blog",
@@ -3879,21 +3936,40 @@
       }
     },
     {
-      "slug": "20260923-pgbouncer-1260-released---fixes-three-cves-10080888",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgbouncer-1260-released-fixes-three-cves-3385/",
-      "publishedAt": "2026-09-23T00:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "slug": "20260904-kubernetes-v137-kubeletinusernamespace-aka-rootless-mode-graduat-1560f468",
+      "topic": "Computer Science",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
+      "publishedAt": "2026-09-04T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
       "locales": {
         "en": {
-          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
+          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
         },
         "fr": {
-          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
+          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
+        }
+      }
+    },
+    {
+      "slug": "20260902-proactive-cyber-defense-for-governments-and-enterprises-383dbcd7",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+      "publishedAt": "2026-09-02T16:24:24.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "Proactive cyber defense for governments and enterprises",
+          "summary": "Proactive cyber defense for governments and enterprises"
+        },
+        "fr": {
+          "title": "Proactive cyber defense for governments and enterprises",
+          "summary": "Proactive cyber defense for governments and enterprises"
         }
       }
     },
@@ -3917,21 +3993,40 @@
       }
     },
     {
-      "slug": "20260904-kubernetes-v137-kubeletinusernamespace-aka-rootless-mode-graduat-1560f468",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
-      "publishedAt": "2026-09-04T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "slug": "20261006-sharing-ai-progress-in-mathematics-47b9255d",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "publishedAt": "2026-10-06T12:00:00.000Z",
+      "discoveredAt": "2026-10-07T13:18:36.603Z",
       "locales": {
         "en": {
-          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
-          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
+          "title": "Sharing AI progress in mathematics",
+          "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub."
         },
         "fr": {
-          "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
-          "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host,…"
+          "title": "Sharing AI progress in mathematics",
+          "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub."
+        }
+      }
+    },
+    {
+      "slug": "20260924-postgresql-19-beta-4-released-a454f777",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-19-beta-4-released-3386/",
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL 19 Beta 4 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
+        },
+        "fr": {
+          "title": "PostgreSQL 19 Beta 4 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the fourth beta release of PostgreSQL 19 is now available for download . This release contains PostgreSQL 19 feature previews ahead of general availability, though some detai…"
         }
       }
     },
@@ -3970,25 +4065,6 @@
         "fr": {
           "title": "Introducing Claude Haiku 5.5 on AWS",
           "summary": "Claude Haiku 5.5 is now available on Amazon Bedrock and Claude Platform on AWS. According to Anthropic, it is the fastest, most efficient model in the Claude 5.5 family, built for subagents and high-volume, cost-sensitive work, a…"
-        }
-      }
-    },
-    {
-      "slug": "20260902-introducing-gemini-38-flash-and-38-flash-cyber-18ef68f7",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
-      "publishedAt": "2026-09-02T16:18:31.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
-          "summary": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
-        },
-        "fr": {
-          "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
-          "summary": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
         }
       }
     },
@@ -4069,25 +4145,6 @@
       }
     },
     {
-      "slug": "20261006-advancing-computer-use-with-ironclad-9964af80",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/advancing-computer-use-with-ironclad",
-      "publishedAt": "2026-10-06T10:00:00.000Z",
-      "discoveredAt": "2026-10-06T22:38:43.858Z",
-      "locales": {
-        "en": {
-          "title": "Advancing computer use with Ironclad",
-          "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work."
-        },
-        "fr": {
-          "title": "Advancing computer use with Ironclad",
-          "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work."
-        }
-      }
-    },
-    {
       "slug": "20260910-microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for--6542ac34",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -4107,21 +4164,40 @@
       }
     },
     {
-      "slug": "20260922-sql-manager-for-postgresql-70-meet-the-ai-assistant-2ae8d80a",
+      "slug": "20260903-kubernetes-v137-dra-updates-90b5ee36",
       "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/sql-manager-for-postgresql-70-meet-the-ai-assistant-3379/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
+      "publishedAt": "2026-09-03T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
       "locales": {
         "en": {
-          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
-          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
+          "title": "Kubernetes v1.37: DRA Updates",
+          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
         },
         "fr": {
-          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
-          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
+          "title": "Kubernetes v1.37: DRA Updates",
+          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
+        }
+      }
+    },
+    {
+      "slug": "20260902-introducing-gemini-38-flash-and-38-flash-cyber-18ef68f7",
+      "topic": "AI Research",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+      "publishedAt": "2026-09-02T16:18:31.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+          "summary": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
+        },
+        "fr": {
+          "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+          "summary": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
         }
       }
     },
@@ -4145,21 +4221,40 @@
       }
     },
     {
-      "slug": "20260903-kubernetes-v137-dra-updates-90b5ee36",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
-      "publishedAt": "2026-09-03T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "slug": "20261006-advancing-computer-use-with-ironclad-9964af80",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "publishedAt": "2026-10-06T10:00:00.000Z",
+      "discoveredAt": "2026-10-06T22:38:43.858Z",
       "locales": {
         "en": {
-          "title": "Kubernetes v1.37: DRA Updates",
-          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
+          "title": "Advancing computer use with Ironclad",
+          "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work."
         },
         "fr": {
-          "title": "Kubernetes v1.37: DRA Updates",
-          "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases…"
+          "title": "Advancing computer use with Ironclad",
+          "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work."
+        }
+      }
+    },
+    {
+      "slug": "20260923-pgbouncer-1260-released---fixes-three-cves-10080888",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgbouncer-1260-released-fixes-three-cves-3385/",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
+        },
+        "fr": {
+          "title": "PgBouncer 1.26.0 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.0 has been released. This release fixes three CVEs: CVE-2026-19888: DoS due to crash, triggerable by unauthenticated clients. Caused by a SCRAM client-final-message without a nonce. CVE-2026-6668: DoS due to infini…"
         }
       }
     },
@@ -4202,25 +4297,6 @@
       }
     },
     {
-      "slug": "20260901-introducing-agentic-video-understanding-with-gemini-dfd1ea2e",
-      "topic": "AI Systems",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
-      "publishedAt": "2026-09-01T17:08:51.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Introducing agentic video understanding with Gemini",
-          "summary": "Introducing agentic video understanding with Gemini"
-        },
-        "fr": {
-          "title": "Introducing agentic video understanding with Gemini",
-          "summary": "Introducing agentic video understanding with Gemini"
-        }
-      }
-    },
-    {
       "slug": "20260924-when-chat-is-the-wrong-ui-234391b3",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -4259,21 +4335,21 @@
       }
     },
     {
-      "slug": "20261002-introducing-cloudflare-traces-follow-requests-through-our-entire-9c3a3363",
+      "slug": "20261002-updates-on-our-pledge-to-make-cloudflare-features-accessible-to--a7fc3ad4",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflare-tracing/",
+      "href": "https://blog.cloudflare.com/enterprise-for-all-update/",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-13T22:42:20.913Z",
+      "discoveredAt": "2026-10-14T11:47:54.422Z",
       "locales": {
         "en": {
-          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
-          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
         },
         "fr": {
-          "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
-          "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack."
+          "title": "Updates on our pledge to make Cloudflare features accessible to everyone",
+          "summary": "A year after pledging to eliminate two-tier product access, Cloudflare has expanded Logpush, multi-account governance, and higher platform limits to all accounts. Here is an update on our progress, how we dogfood these tools inte…"
         }
       }
     },
@@ -4297,25 +4373,6 @@
       }
     },
     {
-      "slug": "20261005-our-approach-to-eu-text-provenance-rules-78ad5381",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/eu-text-provenance",
-      "publishedAt": "2026-10-05T15:00:00.000Z",
-      "discoveredAt": "2026-10-05T16:20:42.066Z",
-      "locales": {
-        "en": {
-          "title": "Our approach to EU text provenance rules",
-          "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
-        },
-        "fr": {
-          "title": "Our approach to EU text provenance rules",
-          "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
-        }
-      }
-    },
-    {
       "slug": "20260910-the-economics-of-agent-optimization-how-ai-agent-governance-cont-d6870c93",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -4335,21 +4392,40 @@
       }
     },
     {
-      "slug": "20260922-pgsql-test-real-postgres-testing-for-faster-development-loops-212e48db",
+      "slug": "20260902-kubernetes-v137-scale-workloads-to-zero-with-horizontalpodautosc-d1c3bfab",
       "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgsql-test-real-postgres-testing-for-faster-development-loops-3380/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
+      "source": "Kubernetes Blog",
+      "sourceFeed": "https://kubernetes.io/feed.xml",
+      "href": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
+      "publishedAt": "2026-09-02T18:30:00.000Z",
+      "discoveredAt": "2026-09-12T13:22:21.927Z",
       "locales": {
         "en": {
-          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
-          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
+          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
         },
         "fr": {
-          "title": "pgsql-test: Real Postgres Testing for Faster Development Loops",
-          "summary": "Application code has fast testing loops: runners, fixtures, and red-green feedback in JavaScript, TypeScript, and Python. Postgres can be tested too, but database logic often sits outside those loops. Developers have to provision…"
+          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
+          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
+        }
+      }
+    },
+    {
+      "slug": "20260901-introducing-agentic-video-understanding-with-gemini-dfd1ea2e",
+      "topic": "AI Systems",
+      "source": "DeepMind Blog",
+      "sourceFeed": "https://deepmind.google/blog/rss.xml",
+      "href": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+      "publishedAt": "2026-09-01T17:08:51.000Z",
+      "discoveredAt": "2026-09-12T13:23:24.384Z",
+      "locales": {
+        "en": {
+          "title": "Introducing agentic video understanding with Gemini",
+          "summary": "Introducing agentic video understanding with Gemini"
+        },
+        "fr": {
+          "title": "Introducing agentic video understanding with Gemini",
+          "summary": "Introducing agentic video understanding with Gemini"
         }
       }
     },
@@ -4373,21 +4449,40 @@
       }
     },
     {
-      "slug": "20260902-kubernetes-v137-scale-workloads-to-zero-with-horizontalpodautosc-d1c3bfab",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
-      "publishedAt": "2026-09-02T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "slug": "20261005-our-approach-to-eu-text-provenance-rules-78ad5381",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/eu-text-provenance",
+      "publishedAt": "2026-10-05T15:00:00.000Z",
+      "discoveredAt": "2026-10-05T16:20:42.066Z",
       "locales": {
         "en": {
-          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
-          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
+          "title": "Our approach to EU text provenance rules",
+          "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
         },
         "fr": {
-          "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
-          "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external…"
+          "title": "Our approach to EU text provenance rules",
+          "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
+        }
+      }
+    },
+    {
+      "slug": "20260922-sql-manager-for-postgresql-70-meet-the-ai-assistant-2ae8d80a",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/sql-manager-for-postgresql-70-meet-the-ai-assistant-3379/",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:21.379Z",
+      "locales": {
+        "en": {
+          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
+          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
+        },
+        "fr": {
+          "title": "SQL Manager for PostgreSQL 7.0: meet the AI Assistant",
+          "summary": "This is a major release, and the headline feature is our new AI Assistant . We're starting to roll out AI capabilities across our database tools, and SQL Manager for PostgreSQL is the first to get them. It's also available in SQL…"
         }
       }
     },
@@ -4464,101 +4559,6 @@
         "fr": {
           "title": "Welcome RL Environments to the hub",
           "summary": "Welcome RL Environments to the hub"
-        }
-      }
-    },
-    {
-      "slug": "20261002-building-for-good-how-civil-society-organizations-are-automating-823db2de",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/civil-society-automation/",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "discoveredAt": "2026-10-13T22:42:20.913Z",
-      "locales": {
-        "en": {
-          "title": "Building for good: How civil society organizations are automating on Cloudflare",
-          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
-        },
-        "fr": {
-          "title": "Building for good: How civil society organizations are automating on Cloudflare",
-          "summary": "Some of the world's leading organizations are building the future of non-profit work with Cloudflare."
-        }
-      }
-    },
-    {
-      "slug": "20260909-recreating-a-70-year-love-story-frame-by-frame-e8269fc9",
-      "topic": "AI Systems",
-      "source": "Google AI Blog",
-      "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
-      "publishedAt": "2026-09-09T16:00:00.000Z",
-      "discoveredAt": "2026-10-10T12:27:46.305Z",
-      "locales": {
-        "en": {
-          "title": "Recreating a 70-year love story frame by frame",
-          "summary": "Discover how filmmakers and Google DeepMind used AI to recreate a couple's unrecorded past in the short film \"Love, Rendered.\""
-        },
-        "fr": {
-          "title": "Recreating a 70-year love story frame by frame",
-          "summary": "Discover how filmmakers and Google DeepMind used AI to recreate a couple's unrecorded past in the short film \"Love, Rendered.\""
-        }
-      }
-    },
-    {
-      "slug": "20261005-building-advertising-for-the-way-people-use-ai-3cbec84d",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
-      "publishedAt": "2026-10-05T10:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "Building advertising for the way people use AI",
-          "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
-        },
-        "fr": {
-          "title": "Building advertising for the way people use AI",
-          "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
-        }
-      }
-    },
-    {
-      "slug": "20260910-the-future-of-infrastructure-resiliency-starts-with-modernizatio-5b295c3c",
-      "topic": "AI Systems",
-      "source": "Azure AI Blog",
-      "sourceFeed": "https://azure.microsoft.com/en-us/blog/feed/",
-      "href": "https://azure.microsoft.com/en-us/blog/the-future-of-infrastructure-resiliency-starts-with-modernization/",
-      "publishedAt": "2026-09-10T16:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "The future of infrastructure resiliency starts with modernization",
-          "summary": "Modernization only succeeds when organizations have confidence that their infrastructure can withstand disruption and continue supporting critical operations. The post The future of infrastructure resiliency starts with moderniza…"
-        },
-        "fr": {
-          "title": "The future of infrastructure resiliency starts with modernization",
-          "summary": "Modernization only succeeds when organizations have confidence that their infrastructure can withstand disruption and continue supporting critical operations. The post The future of infrastructure resiliency starts with moderniza…"
-        }
-      }
-    },
-    {
-      "slug": "20260922-postgrescompare-220-released-ffbdcf1e",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgrescompare-220-released-3382/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T11:34:35.588Z",
-      "locales": {
-        "en": {
-          "title": "PostgresCompare 2.2.0 Released",
-          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
-        },
-        "fr": {
-          "title": "PostgresCompare 2.2.0 Released",
-          "summary": "PostgresCompare is pleased to announce the release of version 2.2.0, the first public release since 1.2.2 and the largest change in the product's history. The application has been rebuilt on a new foundation, and the 2.x series a…"
         }
       }
     }

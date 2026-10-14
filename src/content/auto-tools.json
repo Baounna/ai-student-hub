@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T22:42:22.355Z",
+  "updatedAt": "2026-10-14T11:47:55.564Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -43,6 +43,106 @@
       }
     },
     {
+      "slug": "20261014-github-introducing-group-activity-pages-02d7d696",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/introducing-group-activity-pages/",
+      "publishedAt": "2026-10-14T10:28:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
+      "locales": {
+        "en": {
+          "title": "Introducing group activity pages",
+          "summary": "W3C groups now have an Activity page that shows, month by month, their charters, publications, meetings, participants and GitHub work in one place. The pages are in beta, and we would like your feedback."
+        },
+        "fr": {
+          "title": "Introducing group activity pages",
+          "summary": "W3C groups now have an Activity page that shows, month by month, their charters, publications, meetings, participants and GitHub work in one place. The pages are in beta, and we would like your feedback."
+        }
+      }
+    },
+    {
+      "slug": "20261014-openai-platform-the-eus-next-chapter-in-ai-is-agentic-2f3282e4",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
+      "locales": {
+        "en": {
+          "title": "The EU’s next chapter in AI is agentic",
+          "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value."
+        },
+        "fr": {
+          "title": "The EU’s next chapter in AI is agentic",
+          "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value."
+        }
+      }
+    },
+    {
+      "slug": "20261014-anthropic-platform-oct-14-2026-announcements-anthropic-opens-sin-87253efe",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/singapore-office-opening",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
+      "locales": {
+        "en": {
+          "title": "Oct 14, 2026 Announcements Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Title"
+        },
+        "fr": {
+          "title": "Oct 14, 2026 Announcements Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Title"
+        }
+      }
+    },
+    {
+      "slug": "20261014-postgresql-pgbouncer-1261-released---fixes-three-cves-c17dd73e",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgbouncer-1261-released-fixes-three-cves-3403/",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
+      "locales": {
+        "en": {
+          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins…"
+        },
+        "fr": {
+          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins…"
+        }
+      }
+    },
+    {
+      "slug": "20261013-github-github-app-improvements-for-least-privilege-and-managemen-0acb22f3",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management",
+      "publishedAt": "2026-10-13T23:17:55.000Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
+      "locales": {
+        "en": {
+          "title": "GitHub App improvements for least privilege and management",
+          "summary": "We’re releasing several GitHub Apps improvements today that help developers move off of classic PATs, improve GitHub App management, and request fewer sensitive permissions. We’ve also made it easier for… The post GitHu…"
+        },
+        "fr": {
+          "title": "GitHub App improvements for least privilege and management",
+          "summary": "We’re releasing several GitHub Apps improvements today that help developers move off of classic PATs, improve GitHub App management, and request fewer sensitive permissions. We’ve also made it easier for… The post GitHu…"
+        }
+      }
+    },
+    {
       "slug": "20261013-notion-notion-38-context-for-your-agents-66f0e572",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -79,26 +179,6 @@
         "fr": {
           "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
           "summary": "NVIDIA is making the full NVIDIA Run:ai platform available as open source software, giving customers, developers, and ecosystem partners access to..."
-        }
-      }
-    },
-    {
-      "slug": "20261013-gemini-gemini-4-argon-in-github-copilot-619c2f7b",
-      "toolName": "Gemini",
-      "category": "AI Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot",
-      "publishedAt": "2026-10-13T18:39:56.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
-      "locales": {
-        "en": {
-          "title": "Gemini 4 Argon in GitHub Copilot",
-          "summary": "Gemini 4 Argon, Google’s newest frontier model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks. In early testing, Gemini 4 Argon… The post Gemini 4 Argon in…"
-        },
-        "fr": {
-          "title": "Gemini 4 Argon in GitHub Copilot",
-          "summary": "Gemini 4 Argon, Google’s newest frontier model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks. In early testing, Gemini 4 Argon… The post Gemini 4 Argon in…"
         }
       }
     },
@@ -163,26 +243,6 @@
       }
     },
     {
-      "slug": "20261013-openai-platform-higgsfield-takes-ai-video-from-1-minute-to-over--ffc748cb",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/higgsfield-longer-videos-voice",
-      "publishedAt": "2026-10-13T12:00:00.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
-      "locales": {
-        "en": {
-          "title": "Higgsfield takes AI video from 1 minute to over 10",
-          "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
-        },
-        "fr": {
-          "title": "Higgsfield takes AI video from 1 minute to over 10",
-          "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
-        }
-      }
-    },
-    {
       "slug": "20261013-cursor-oct-13-2026-0d06b935",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -199,26 +259,6 @@
         "fr": {
           "title": "Oct 13, 2026",
           "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20261012-w3c-were-on-a-roll---epub-34-is-coming-93541ce9",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/were-on-a-roll-epub-3-4-is-coming/",
-      "publishedAt": "2026-10-12T17:06:00.000Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
-      "locales": {
-        "en": {
-          "title": "We’re on a roll - EPUB 3.4 is coming",
-          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standa…"
-        },
-        "fr": {
-          "title": "We’re on a roll - EPUB 3.4 is coming",
-          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standa…"
         }
       }
     },
@@ -243,26 +283,6 @@
       }
     },
     {
-      "slug": "20261009-github-2026-10-07-postgresql-jdbc-42714-security-update-for-mult-9a10e836",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/2026-10-07-postgresql-jdbc-42714-security-update-for-multiple-cves-3399/",
-      "publishedAt": "2026-10-09T00:00:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:58.339Z",
-      "locales": {
-        "en": {
-          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
-          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the…"
-        },
-        "fr": {
-          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
-          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the…"
-        }
-      }
-    },
-    {
       "slug": "20261008-nist-nist-joins-white-house-effort-to-drive-a-new-golden-age-of--25dc3f92",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -279,26 +299,6 @@
         "fr": {
           "title": "NIST Joins White House Effort to Drive ‘A New Golden Age of Science’",
           "summary": "As the nation’s lead agency for measurement science and standards, NIST is uniquely positioned to bridge the distance between fundamental discovery and industrial capability."
-        }
-      }
-    },
-    {
-      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-2026-usage-policy-up-7a238471",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
-      "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:11.392Z",
-      "locales": {
-        "en": {
-          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
-          "summary": "Title"
-        },
-        "fr": {
-          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
-          "summary": "Title"
         }
       }
     },
@@ -383,42 +383,142 @@
       }
     },
     {
-      "slug": "20261013-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
+      "slug": "20261014-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
-      "publishedAt": "2026-10-13T22:42:22.355Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
+      "publishedAt": "2026-10-14T11:47:55.564Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
       "locales": {
         "en": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         },
         "fr": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         }
       }
     },
     {
-      "slug": "20261013-vercel-mai-image-26-and-mai-image-26-flash-now-available-on-ai-g-0eb0a057",
+      "slug": "20261014-vercel-drama-3-now-available-on-ai-gateway-generate-expressive-s-86b63b4a",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/mai-image-2-6-and-mai-image-2-6-flash-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-13T22:42:22.355Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "href": "https://vercel.com/changelog/drama-3-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-14T11:47:55.564Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
       "locales": {
         "en": {
-          "title": "MAI-Image-2.6 and MAI-Image-2.6-Flash now available on AI Gateway Generate and edit images with MAI-Image-2.6 and Flash through Vercel AI Gateway, with one API key, unified billing, and request traces Kevin Dawkins, Jerilyn Zheng, and 1 other",
+          "title": "Drama 3 now available on AI Gateway Generate expressive speech with Fish Audio's Drama 3 through Vercel AI Gateway, using one API key with spend tracking and request traces Jerilyn Zheng, Zachary Chen",
           "summary": "13 October 13 Oct"
         },
         "fr": {
-          "title": "MAI-Image-2.6 and MAI-Image-2.6-Flash now available on AI Gateway Generate and edit images with MAI-Image-2.6 and Flash through Vercel AI Gateway, with one API key, unified billing, and request traces Kevin Dawkins, Jerilyn Zheng, and 1 other",
+          "title": "Drama 3 now available on AI Gateway Generate expressive speech with Fish Audio's Drama 3 through Vercel AI Gateway, using one API key with spend tracking and request traces Jerilyn Zheng, Zachary Chen",
           "summary": "13 October 13 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261012-w3c-were-on-a-roll---epub-34-is-coming-93541ce9",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/were-on-a-roll-epub-3-4-is-coming/",
+      "publishedAt": "2026-10-12T17:06:00.000Z",
+      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "locales": {
+        "en": {
+          "title": "We’re on a roll - EPUB 3.4 is coming",
+          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standa…"
+        },
+        "fr": {
+          "title": "We’re on a roll - EPUB 3.4 is coming",
+          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standa…"
+        }
+      }
+    },
+    {
+      "slug": "20261013-openai-platform-higgsfield-takes-ai-video-from-1-minute-to-over--ffc748cb",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "publishedAt": "2026-10-13T12:00:00.000Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "locales": {
+        "en": {
+          "title": "Higgsfield takes AI video from 1 minute to over 10",
+          "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
+        },
+        "fr": {
+          "title": "Higgsfield takes AI video from 1 minute to over 10",
+          "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
+        }
+      }
+    },
+    {
+      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-2026-usage-policy-up-7a238471",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:11.392Z",
+      "locales": {
+        "en": {
+          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
+          "summary": "Title"
+        },
+        "fr": {
+          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
+          "summary": "Title"
+        }
+      }
+    },
+    {
+      "slug": "20261014-github-introducing-pglifecycle-20-beta-2f301e99",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/introducing-pglifecycle-20-beta-3401/",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
+      "locales": {
+        "en": {
+          "title": "Introducing pglifecycle 2.0 beta",
+          "summary": "I’m pleased to announce the first public release of pglifecycle , an open source schema management tool for PostgreSQL. pglifecycle keeps your database schema in version control as structured YAML, with one file for eac…"
+        },
+        "fr": {
+          "title": "Introducing pglifecycle 2.0 beta",
+          "summary": "I’m pleased to announce the first public release of pglifecycle , an open source schema management tool for PostgreSQL. pglifecycle keeps your database schema in version control as structured YAML, with one file for eac…"
+        }
+      }
+    },
+    {
+      "slug": "20261013-gemini-gemini-4-argon-in-github-copilot-619c2f7b",
+      "toolName": "Gemini",
+      "category": "AI Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot",
+      "publishedAt": "2026-10-13T18:39:56.000Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "locales": {
+        "en": {
+          "title": "Gemini 4 Argon in GitHub Copilot",
+          "summary": "Gemini 4 Argon, Google’s newest frontier model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks. In early testing, Gemini 4 Argon… The post Gemini 4 Argon in…"
+        },
+        "fr": {
+          "title": "Gemini 4 Argon in GitHub Copilot",
+          "summary": "Gemini 4 Argon, Google’s newest frontier model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks. In early testing, Gemini 4 Argon… The post Gemini 4 Argon in…"
         }
       }
     },
@@ -459,26 +559,6 @@
         "fr": {
           "title": "How to Rewrite Apache Spark UDFs for GPU Acceleration with AI Agents",
           "summary": "Enterprise applications have become increasingly demanding. Agentic AI has compounded the need for vast amounts of enterprise data with frequent, complex..."
-        }
-      }
-    },
-    {
-      "slug": "20261013-github-audit-github-code-quality-finding-dismissals-and-reopenin-3612cc43",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
-      "publishedAt": "2026-10-13T17:58:36.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
-      "locales": {
-        "en": {
-          "title": "Audit GitHub Code Quality finding dismissals and reopenings",
-          "summary": "You can now review manual dismissals and reopenings of GitHub Code Quality findings in your organization or enterprise audit log. Findings may appear in either your repository’s default-branch backlog or… The post Audit…"
-        },
-        "fr": {
-          "title": "Audit GitHub Code Quality finding dismissals and reopenings",
-          "summary": "You can now review manual dismissals and reopenings of GitHub Code Quality findings in your organization or enterprise audit log. Findings may appear in either your repository’s default-branch backlog or… The post Audit…"
         }
       }
     },
@@ -543,26 +623,6 @@
       }
     },
     {
-      "slug": "20261009-openai-platform-asana-cuts-model-costs-76x-in-browser-tests-with-90995f7d",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/asana-browser-agent",
-      "publishedAt": "2026-10-09T07:00:00.000Z",
-      "discoveredAt": "2026-10-09T22:36:04.421Z",
-      "locales": {
-        "en": {
-          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-          "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
-        },
-        "fr": {
-          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-          "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
-        }
-      }
-    },
-    {
       "slug": "20261007-cursor-remote-control-for-local-agents-c94ae882",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -579,26 +639,6 @@
         "fr": {
           "title": "Remote control for local agents",
           "summary": "You can now see and reply to the local agents running on your computer from the Cursor iOS app."
-        }
-      }
-    },
-    {
-      "slug": "20261009-w3c-whats-new-in-the-w3c-website-design-system-8d2b885c",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/whats-new-in-the-w3c-design-system-september-2026/",
-      "publishedAt": "2026-10-09T07:58:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:58.339Z",
-      "locales": {
-        "en": {
-          "title": "What’s new in the W3C Website Design System",
-          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
-        },
-        "fr": {
-          "title": "What’s new in the W3C Website Design System",
-          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
         }
       }
     },
@@ -623,26 +663,6 @@
       }
     },
     {
-      "slug": "20261007-github-pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-post-f303bf81",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-postgresql-index-3396/",
-      "publishedAt": "2026-10-07T00:00:00.000Z",
-      "discoveredAt": "2026-10-07T13:18:37.807Z",
-      "locales": {
-        "en": {
-          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
-          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CR…"
-        },
-        "fr": {
-          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
-          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CR…"
-        }
-      }
-    },
-    {
       "slug": "20261008-nist-nist-study-shows-how-the-toxic-substances-mixed-into-fentan-9acfb21c",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -659,26 +679,6 @@
         "fr": {
           "title": "NIST Study Shows How the Toxic Substances Mixed Into Fentanyl Vary Across the U.S. and Change Over Time",
           "summary": "Alerting first responders and law enforcement to the presence of these dangerous chemicals in local supplies of fentanyl can help save lives."
-        }
-      }
-    },
-    {
-      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-building-on-our-comm-26f50496",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
-      "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:11.392Z",
-      "locales": {
-        "en": {
-          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
-          "summary": "Announcements 2026 Usage Policy update"
-        },
-        "fr": {
-          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
-          "summary": "Announcements 2026 Usage Policy update"
         }
       }
     },
@@ -763,42 +763,142 @@
       }
     },
     {
-      "slug": "20261013-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "slug": "20261014-supabase-status-page-moves-to-incidentio-7e1c5736",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/no-access-org-role",
-      "publishedAt": "2026-10-13T22:42:22.355Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "href": "https://supabase.com/changelog/status-page-migration",
+      "publishedAt": "2026-10-14T11:47:55.564Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
       "locales": {
         "en": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         },
         "fr": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         }
       }
     },
     {
-      "slug": "20261013-vercel-repository-checkout-and-git-lfs-downloads-are-now-faster--6ba22338",
+      "slug": "20261014-vercel-muse-wonder-now-available-on-ai-gateway-call-metas-muse-w-3533aaa5",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/repository-checkout-and-git-lfs-downloads-are-now-faster",
-      "publishedAt": "2026-10-13T22:42:22.355Z",
+      "href": "https://vercel.com/changelog/muse-wonder-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-14T11:47:55.564Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
+      "locales": {
+        "en": {
+          "title": "Muse Wonder now available on AI Gateway Call Meta's Muse Wonder through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "12 October 12 Oct"
+        },
+        "fr": {
+          "title": "Muse Wonder now available on AI Gateway Call Meta's Muse Wonder through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "12 October 12 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261009-w3c-whats-new-in-the-w3c-website-design-system-8d2b885c",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/whats-new-in-the-w3c-design-system-september-2026/",
+      "publishedAt": "2026-10-09T07:58:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:58.339Z",
+      "locales": {
+        "en": {
+          "title": "What’s new in the W3C Website Design System",
+          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
+        },
+        "fr": {
+          "title": "What’s new in the W3C Website Design System",
+          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
+        }
+      }
+    },
+    {
+      "slug": "20261009-openai-platform-asana-cuts-model-costs-76x-in-browser-tests-with-90995f7d",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/asana-browser-agent",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "discoveredAt": "2026-10-09T22:36:04.421Z",
+      "locales": {
+        "en": {
+          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+          "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
+        },
+        "fr": {
+          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+          "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
+        }
+      }
+    },
+    {
+      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-building-on-our-comm-26f50496",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:11.392Z",
+      "locales": {
+        "en": {
+          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
+          "summary": "Announcements 2026 Usage Policy update"
+        },
+        "fr": {
+          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
+          "summary": "Announcements 2026 Usage Policy update"
+        }
+      }
+    },
+    {
+      "slug": "20261009-github-2026-10-07-postgresql-jdbc-42714-security-update-for-mult-9a10e836",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/2026-10-07-postgresql-jdbc-42714-security-update-for-multiple-cves-3399/",
+      "publishedAt": "2026-10-09T00:00:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:58.339Z",
+      "locales": {
+        "en": {
+          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
+          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the…"
+        },
+        "fr": {
+          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
+          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the…"
+        }
+      }
+    },
+    {
+      "slug": "20261013-github-audit-github-code-quality-finding-dismissals-and-reopenin-3612cc43",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings",
+      "publishedAt": "2026-10-13T17:58:36.000Z",
       "discoveredAt": "2026-10-13T22:42:22.355Z",
       "locales": {
         "en": {
-          "title": "Repository checkout and Git LFS downloads are now faster Git deployments now spend less time getting your project's files ready before the build runs. The improvements apply automatically. Andrew Healey Software Engineer",
-          "summary": "Kevin Dawkins, Jerilyn Zheng, and 1 other"
+          "title": "Audit GitHub Code Quality finding dismissals and reopenings",
+          "summary": "You can now review manual dismissals and reopenings of GitHub Code Quality findings in your organization or enterprise audit log. Findings may appear in either your repository’s default-branch backlog or… The post Audit…"
         },
         "fr": {
-          "title": "Repository checkout and Git LFS downloads are now faster Git deployments now spend less time getting your project's files ready before the build runs. The improvements apply automatically. Andrew Healey Software Engineer",
-          "summary": "Kevin Dawkins, Jerilyn Zheng, and 1 other"
+          "title": "Audit GitHub Code Quality finding dismissals and reopenings",
+          "summary": "You can now review manual dismissals and reopenings of GitHub Code Quality findings in your organization or enterprise audit log. Findings may appear in either your repository’s default-branch backlog or… The post Audit…"
         }
       }
     },
@@ -823,42 +923,22 @@
       }
     },
     {
-      "slug": "20261012-nvidia-replayssm-rethinking-state-storage-for-faster-hybrid-mode-1ae6a56c",
+      "slug": "20261012-nvidia-scaling-decision-optimization-to-100-million-variables-an-51c57bf2",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/",
-      "publishedAt": "2026-10-12T16:20:48.000Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "href": "https://developer.nvidia.com/blog/scaling-decision-optimization-to-100-million-variables-and-beyond-with-mpdlp-in-nvidia-cuopt/",
+      "publishedAt": "2026-10-12T19:27:50.000Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
       "locales": {
         "en": {
-          "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
-          "summary": "Hybrid models interleave state-space model (SSM) layers with a few attention layers. NVIDIA Nemotron 3, Qwen3.5 through Qwen3.8, Kimi-K3, and GLM-5.3-Flash are..."
+          "title": "Scaling Decision Optimization to 100 Million Variables and Beyond with mPDLP in NVIDIA cuOpt",
+          "summary": "Supply chain problems are expanding across more SKUs, lanes, and constraints than ever before, while energy grids are balancing more distributed sources in real..."
         },
         "fr": {
-          "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
-          "summary": "Hybrid models interleave state-space model (SSM) layers with a few attention layers. NVIDIA Nemotron 3, Qwen3.5 through Qwen3.8, Kimi-K3, and GLM-5.3-Flash are..."
-        }
-      }
-    },
-    {
-      "slug": "20261013-github-secret-scanning-blocks-anthropic-keys-by-default-adds-sal-1cc80f01",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce",
-      "publishedAt": "2026-10-13T16:12:36.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
-      "locales": {
-        "en": {
-          "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
-          "summary": "Secret scanning now detects new secret types from Salesforce, Anthropic, and Cloudsmith, with the new Anthropic secret types blocked with push protection by default. New secret scanning partner Salesforce is… The post S…"
-        },
-        "fr": {
-          "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
-          "summary": "Secret scanning now detects new secret types from Salesforce, Anthropic, and Cloudsmith, with the new Anthropic secret types blocked with push protection by default. New secret scanning partner Salesforce is… The post S…"
+          "title": "Scaling Decision Optimization to 100 Million Variables and Beyond with mPDLP in NVIDIA cuOpt",
+          "summary": "Supply chain problems are expanding across more SKUs, lanes, and constraints than ever before, while energy grids are balancing more distributed sources in real..."
         }
       }
     },
@@ -923,26 +1003,6 @@
       }
     },
     {
-      "slug": "20261009-openai-platform-sophos-cuts-threat-investigation-time-by-96-with-edd58468",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/sophos",
-      "publishedAt": "2026-10-09T07:00:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:58.339Z",
-      "locales": {
-        "en": {
-          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight."
-        },
-        "fr": {
-          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight."
-        }
-      }
-    },
-    {
       "slug": "20260923-cursor-sep-23-2026-eefe1c88",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -959,26 +1019,6 @@
         "fr": {
           "title": "Sep 23, 2026",
           "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20261002-w3c-w3c-newsletter---september-2026-033e226a",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-newsletter-september-2026/",
-      "publishedAt": "2026-10-02T10:01:00.000Z",
-      "discoveredAt": "2026-10-02T12:29:56.036Z",
-      "locales": {
-        "en": {
-          "title": "W3C Newsletter - September 2026",
-          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
-        },
-        "fr": {
-          "title": "W3C Newsletter - September 2026",
-          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
         }
       }
     },
@@ -1003,26 +1043,6 @@
       }
     },
     {
-      "slug": "20261007-postgresql-pgplanfilter-100-released-dfa62bab",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_plan_filter-100-released-3352/",
-      "publishedAt": "2026-10-07T00:00:00.000Z",
-      "discoveredAt": "2026-10-07T13:18:37.807Z",
-      "locales": {
-        "en": {
-          "title": "pg_plan_filter 1.0.0 released",
-          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to p…"
-        },
-        "fr": {
-          "title": "pg_plan_filter 1.0.0 released",
-          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to p…"
-        }
-      }
-    },
-    {
       "slug": "20261005-nist-physicist-jun-ye-wins-wolf-prize-in-physics-e9a43731",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -1039,26 +1059,6 @@
         "fr": {
           "title": "Physicist Jun Ye Wins Wolf Prize in Physics",
           "summary": "The award cites Ye’s achievement in “transformative, widely applicable advances in the control of ultracold atomic systems.”"
-        }
-      }
-    },
-    {
-      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-introducing-the-anth-db9c3550",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
-      "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:11.392Z",
-      "locales": {
-        "en": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Building on our commitment to American scientific discovery"
-        },
-        "fr": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Building on our commitment to American scientific discovery"
         }
       }
     },
@@ -1143,42 +1143,142 @@
       }
     },
     {
-      "slug": "20261013-supabase-supabase-middleware-10-c639ad09",
+      "slug": "20261014-supabase-public-alpha-supabase-go-sdk-107ff49a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-middleware-1-0",
-      "publishedAt": "2026-10-13T14:07:42.683Z",
-      "discoveredAt": "2026-10-13T14:07:42.683Z",
+      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
+      "publishedAt": "2026-10-14T11:47:55.564Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
       "locales": {
         "en": {
-          "title": "Supabase Middleware 1.0",
-          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         },
         "fr": {
-          "title": "Supabase Middleware 1.0",
-          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         }
       }
     },
     {
-      "slug": "20261013-vercel-gemini-4-argon-now-available-on-ai-gateway-call-googles-g-fd62725c",
+      "slug": "20261013-vercel-mai-image-26-and-mai-image-26-flash-now-available-on-ai-g-0eb0a057",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/gemini-4-argon-now-available-on-ai-gateway",
+      "href": "https://vercel.com/changelog/mai-image-2-6-and-mai-image-2-6-flash-now-available-on-ai-gateway",
       "publishedAt": "2026-10-13T22:42:22.355Z",
       "discoveredAt": "2026-10-13T22:42:22.355Z",
       "locales": {
         "en": {
-          "title": "Gemini 4 Argon now available on AI Gateway Call Google's Gemini 4 Argon through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
-          "summary": "Andrew Healey Software Engineer"
+          "title": "MAI-Image-2.6 and MAI-Image-2.6-Flash now available on AI Gateway Generate and edit images with MAI-Image-2.6 and Flash through Vercel AI Gateway, with one API key, unified billing, and request traces Kevin Dawkins, Jerilyn Zheng, and 1 other",
+          "summary": "13 October 13 Oct"
         },
         "fr": {
-          "title": "Gemini 4 Argon now available on AI Gateway Call Google's Gemini 4 Argon through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
-          "summary": "Andrew Healey Software Engineer"
+          "title": "MAI-Image-2.6 and MAI-Image-2.6-Flash now available on AI Gateway Generate and edit images with MAI-Image-2.6 and Flash through Vercel AI Gateway, with one API key, unified billing, and request traces Kevin Dawkins, Jerilyn Zheng, and 1 other",
+          "summary": "13 October 13 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261002-w3c-w3c-newsletter---september-2026-033e226a",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-newsletter-september-2026/",
+      "publishedAt": "2026-10-02T10:01:00.000Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
+      "locales": {
+        "en": {
+          "title": "W3C Newsletter - September 2026",
+          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
+        },
+        "fr": {
+          "title": "W3C Newsletter - September 2026",
+          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
+        }
+      }
+    },
+    {
+      "slug": "20261009-openai-platform-sophos-cuts-threat-investigation-time-by-96-with-edd58468",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/sophos",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:58.339Z",
+      "locales": {
+        "en": {
+          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight."
+        },
+        "fr": {
+          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight."
+        }
+      }
+    },
+    {
+      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-introducing-the-anth-db9c3550",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "publishedAt": "2026-10-08T00:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:11.392Z",
+      "locales": {
+        "en": {
+          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
+          "summary": "Building on our commitment to American scientific discovery"
+        },
+        "fr": {
+          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
+          "summary": "Building on our commitment to American scientific discovery"
+        }
+      }
+    },
+    {
+      "slug": "20261007-github-pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-post-f303bf81",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-postgresql-index-3396/",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "discoveredAt": "2026-10-07T13:18:37.807Z",
+      "locales": {
+        "en": {
+          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
+          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CR…"
+        },
+        "fr": {
+          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
+          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CR…"
+        }
+      }
+    },
+    {
+      "slug": "20261013-github-secret-scanning-blocks-anthropic-keys-by-default-adds-sal-1cc80f01",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce",
+      "publishedAt": "2026-10-13T16:12:36.000Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "locales": {
+        "en": {
+          "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
+          "summary": "Secret scanning now detects new secret types from Salesforce, Anthropic, and Cloudsmith, with the new Anthropic secret types blocked with push protection by default. New secret scanning partner Salesforce is… The post S…"
+        },
+        "fr": {
+          "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
+          "summary": "Secret scanning now detects new secret types from Salesforce, Anthropic, and Cloudsmith, with the new Anthropic secret types blocked with push protection by default. New secret scanning partner Salesforce is… The post S…"
         }
       }
     },
@@ -1203,42 +1303,22 @@
       }
     },
     {
-      "slug": "20261008-nvidia-scale-bitwise-deterministic-pretraining-with-nvidia-megat-e7824102",
+      "slug": "20261012-nvidia-replayssm-rethinking-state-storage-for-faster-hybrid-mode-1ae6a56c",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core/",
-      "publishedAt": "2026-10-08T22:44:01.000Z",
-      "discoveredAt": "2026-10-08T23:19:11.392Z",
+      "href": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/",
+      "publishedAt": "2026-10-12T16:20:48.000Z",
+      "discoveredAt": "2026-10-13T00:36:51.465Z",
       "locales": {
         "en": {
-          "title": "Scale Bitwise-Deterministic Pretraining with NVIDIA Megatron Core",
-          "summary": "Bitwise determinism makes large-scale pretraining easier to debug, validate, and resume reproducibly. These benefits become especially valuable when training..."
+          "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
+          "summary": "Hybrid models interleave state-space model (SSM) layers with a few attention layers. NVIDIA Nemotron 3, Qwen3.5 through Qwen3.8, Kimi-K3, and GLM-5.3-Flash are..."
         },
         "fr": {
-          "title": "Scale Bitwise-Deterministic Pretraining with NVIDIA Megatron Core",
-          "summary": "Bitwise determinism makes large-scale pretraining easier to debug, validate, and resume reproducibly. These benefits become especially valuable when training..."
-        }
-      }
-    },
-    {
-      "slug": "20261013-github-copilot-enterprise-managed-settings-enforcement-updates-5930bcfe",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
-      "publishedAt": "2026-10-13T15:20:10.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
-      "locales": {
-        "en": {
-          "title": "Enterprise managed settings enforcement updates",
-          "summary": "Enterprise administrators can now require supported GitHub Copilot clients to retrieve current server-managed settings at startup instead of relying on a cached policy. We are also adding minimum client version… The pos…"
-        },
-        "fr": {
-          "title": "Enterprise managed settings enforcement updates",
-          "summary": "Enterprise administrators can now require supported GitHub Copilot clients to retrieve current server-managed settings at startup instead of relying on a cached policy. We are also adding minimum client version… The pos…"
+          "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
+          "summary": "Hybrid models interleave state-space model (SSM) layers with a few attention layers. NVIDIA Nemotron 3, Qwen3.5 through Qwen3.8, Kimi-K3, and GLM-5.3-Flash are..."
         }
       }
     },
@@ -1303,26 +1383,6 @@
       }
     },
     {
-      "slug": "20261008-chatgpt-how-oracle-turns-days-of-work-into-minutes-with-chatgpt--112b5f00",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/oracle",
-      "publishedAt": "2026-10-08T16:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:11.392Z",
-      "locales": {
-        "en": {
-          "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-          "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex."
-        },
-        "fr": {
-          "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-          "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex."
-        }
-      }
-    },
-    {
       "slug": "20260912-cursor-skip-to-content-da250e67",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -1339,26 +1399,6 @@
         "fr": {
           "title": "Skip to content",
           "summary": ""
-        }
-      }
-    },
-    {
-      "slug": "20260928-w3c-recap-of-the-web-ai-international-standards-seminar-generati-3bf72b81",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/recap-of-the-web-ai-international-standards-seminar-generative-ui-and-webskill/",
-      "publishedAt": "2026-09-28T08:17:00.000Z",
-      "discoveredAt": "2026-09-28T13:49:25.565Z",
-      "locales": {
-        "en": {
-          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
-          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
-        },
-        "fr": {
-          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
-          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
         }
       }
     },
@@ -1383,26 +1423,6 @@
       }
     },
     {
-      "slug": "20261005-github-pgivm-116-released-9d0d6d1e",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_ivm-116-released-3391/",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
-      "locales": {
-        "en": {
-          "title": "pg_ivm 1.16 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault whe…"
-        },
-        "fr": {
-          "title": "pg_ivm 1.16 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault whe…"
-        }
-      }
-    },
-    {
       "slug": "20260928-nist-nist-provides-updates-on-national-construction-safety-team--dd6ce6ec",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -1419,26 +1439,6 @@
         "fr": {
           "title": "NIST Provides Updates on National Construction Safety Team Activities",
           "summary": "The presentations highlighted the importance of NIST applying its own expertise and the expertise of others through collaborations and contracts."
-        }
-      }
-    },
-    {
-      "slug": "20261007-anthropic-platform-responsible-scaling-policy-3a0b4572",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy",
-      "publishedAt": "2026-10-07T13:18:37.807Z",
-      "discoveredAt": "2026-10-07T13:18:37.807Z",
-      "locales": {
-        "en": {
-          "title": "Responsible Scaling Policy",
-          "summary": "ing Policy on the AI Exponential Security and compliance"
-        },
-        "fr": {
-          "title": "Responsible Scaling Policy",
-          "summary": "ing Policy on the AI Exponential Security and compliance"
         }
       }
     },
@@ -1523,42 +1523,142 @@
       }
     },
     {
-      "slug": "20261013-supabase-logs-usage-based-pricing-f9fe585d",
+      "slug": "20261014-supabase-opentelemetry-traces-and-metrics-in-the-supabase-net-sd-b83bb3b1",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/logs-usage-based-pricing",
-      "publishedAt": "2026-10-13T14:07:42.683Z",
-      "discoveredAt": "2026-10-13T14:07:42.683Z",
+      "href": "https://supabase.com/changelog/dotnet-opentelemetry-support",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
       "locales": {
         "en": {
-          "title": "Logs usage-based pricing",
-          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
+          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
+          "summary": "Oct 14, 2026"
         },
         "fr": {
-          "title": "Logs usage-based pricing",
-          "summary": "New Feature Supabase Logs is moving to usage-based pricing. We're announcing early so you have time to adjust — 90%+ of projects are within the included limits, with a grace peri"
+          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
+          "summary": "Oct 14, 2026"
         }
       }
     },
     {
-      "slug": "20261013-vercel-agents-can-now-buy-domains-with-the-vercel-cli-agents-can-418297e3",
+      "slug": "20261013-vercel-repository-checkout-and-git-lfs-downloads-are-now-faster--6ba22338",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/agents-can-now-buy-domains-with-the-vercel-cli",
+      "href": "https://vercel.com/changelog/repository-checkout-and-git-lfs-downloads-are-now-faster",
       "publishedAt": "2026-10-13T22:42:22.355Z",
       "discoveredAt": "2026-10-13T22:42:22.355Z",
       "locales": {
         "en": {
-          "title": "Agents can now buy domains with the Vercel CLI Agents can now use the Vercel CLI to purchase domains. Melkey Moksyakov, Esteban Suárez",
-          "summary": "9 October 9 Oct"
+          "title": "Repository checkout and Git LFS downloads are now faster Git deployments now spend less time getting your project's files ready before the build runs. The improvements apply automatically. Andrew Healey Software Engineer",
+          "summary": "Kevin Dawkins, Jerilyn Zheng, and 1 other"
         },
         "fr": {
-          "title": "Agents can now buy domains with the Vercel CLI Agents can now use the Vercel CLI to purchase domains. Melkey Moksyakov, Esteban Suárez",
-          "summary": "9 October 9 Oct"
+          "title": "Repository checkout and Git LFS downloads are now faster Git deployments now spend less time getting your project's files ready before the build runs. The improvements apply automatically. Andrew Healey Software Engineer",
+          "summary": "Kevin Dawkins, Jerilyn Zheng, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20260928-w3c-recap-of-the-web-ai-international-standards-seminar-generati-3bf72b81",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/recap-of-the-web-ai-international-standards-seminar-generative-ui-and-webskill/",
+      "publishedAt": "2026-09-28T08:17:00.000Z",
+      "discoveredAt": "2026-09-28T13:49:25.565Z",
+      "locales": {
+        "en": {
+          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
+          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
+        },
+        "fr": {
+          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
+          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
+        }
+      }
+    },
+    {
+      "slug": "20261008-chatgpt-how-oracle-turns-days-of-work-into-minutes-with-chatgpt--112b5f00",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/oracle",
+      "publishedAt": "2026-10-08T16:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:11.392Z",
+      "locales": {
+        "en": {
+          "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+          "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex."
+        },
+        "fr": {
+          "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+          "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex."
+        }
+      }
+    },
+    {
+      "slug": "20261007-anthropic-platform-responsible-scaling-policy-3a0b4572",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy",
+      "publishedAt": "2026-10-07T13:18:37.807Z",
+      "discoveredAt": "2026-10-07T13:18:37.807Z",
+      "locales": {
+        "en": {
+          "title": "Responsible Scaling Policy",
+          "summary": "ing Policy on the AI Exponential Security and compliance"
+        },
+        "fr": {
+          "title": "Responsible Scaling Policy",
+          "summary": "ing Policy on the AI Exponential Security and compliance"
+        }
+      }
+    },
+    {
+      "slug": "20261007-postgresql-pgplanfilter-100-released-dfa62bab",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_plan_filter-100-released-3352/",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "discoveredAt": "2026-10-07T13:18:37.807Z",
+      "locales": {
+        "en": {
+          "title": "pg_plan_filter 1.0.0 released",
+          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to p…"
+        },
+        "fr": {
+          "title": "pg_plan_filter 1.0.0 released",
+          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to p…"
+        }
+      }
+    },
+    {
+      "slug": "20261013-github-copilot-enterprise-managed-settings-enforcement-updates-5930bcfe",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+      "publishedAt": "2026-10-13T15:20:10.000Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "locales": {
+        "en": {
+          "title": "Enterprise managed settings enforcement updates",
+          "summary": "Enterprise administrators can now require supported GitHub Copilot clients to retrieve current server-managed settings at startup instead of relying on a cached policy. We are also adding minimum client version… The pos…"
+        },
+        "fr": {
+          "title": "Enterprise managed settings enforcement updates",
+          "summary": "Enterprise administrators can now require supported GitHub Copilot clients to retrieve current server-managed settings at startup instead of relying on a cached policy. We are also adding minimum client version… The pos…"
         }
       }
     },
@@ -1583,42 +1683,22 @@
       }
     },
     {
-      "slug": "20261008-nvidia-5-steps-to-create-simready-assets-for-robotics-with-front-e90cb073",
+      "slug": "20261008-nvidia-scale-bitwise-deterministic-pretraining-with-nvidia-megat-e7824102",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models/",
-      "publishedAt": "2026-10-08T20:57:59.000Z",
+      "href": "https://developer.nvidia.com/blog/scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core/",
+      "publishedAt": "2026-10-08T22:44:01.000Z",
       "discoveredAt": "2026-10-08T23:19:11.392Z",
       "locales": {
         "en": {
-          "title": "5 Steps to Create SimReady Assets for Robotics with Frontier AI Models",
-          "summary": "Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must configure and validate materials, collision..."
+          "title": "Scale Bitwise-Deterministic Pretraining with NVIDIA Megatron Core",
+          "summary": "Bitwise determinism makes large-scale pretraining easier to debug, validate, and resume reproducibly. These benefits become especially valuable when training..."
         },
         "fr": {
-          "title": "5 Steps to Create SimReady Assets for Robotics with Frontier AI Models",
-          "summary": "Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must configure and validate materials, collision..."
-        }
-      }
-    },
-    {
-      "slug": "20261013-github-improved-detection-for-withdrawn-dependabot-alerts-193f9a23",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-13-improved-detection-for-withdrawn-dependabot-alerts",
-      "publishedAt": "2026-10-13T14:03:57.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
-      "locales": {
-        "en": {
-          "title": "Improved detection for withdrawn Dependabot alerts",
-          "summary": "You can now more easily detect withdrawn Dependabot alerts. Dependabot withdraws and removes an alert when the advisory or vulnerability that produced it is no longer valid. Two changes help… The post Improved detection…"
-        },
-        "fr": {
-          "title": "Improved detection for withdrawn Dependabot alerts",
-          "summary": "You can now more easily detect withdrawn Dependabot alerts. Dependabot withdraws and removes an alert when the advisory or vulnerability that produced it is no longer valid. Two changes help… The post Improved detection…"
+          "title": "Scale Bitwise-Deterministic Pretraining with NVIDIA Megatron Core",
+          "summary": "Bitwise determinism makes large-scale pretraining easier to debug, validate, and resume reproducibly. These benefits become especially valuable when training..."
         }
       }
     },
@@ -1683,26 +1763,6 @@
       }
     },
     {
-      "slug": "20261008-openai-platform-legalon-halves-codex-costs-while-maintaining-dev-f6d3626e",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/legalon-halves-codex-costs",
-      "publishedAt": "2026-10-08T12:00:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:58.339Z",
-      "locales": {
-        "en": {
-          "title": "LegalOn halves Codex costs while maintaining development speed",
-          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically."
-        },
-        "fr": {
-          "title": "LegalOn halves Codex costs while maintaining development speed",
-          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically."
-        }
-      }
-    },
-    {
       "slug": "20260912-cursor-self-hosted-machines-b1ecdbca",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -1719,26 +1779,6 @@
         "fr": {
           "title": "Self-hosted machines",
           "summary": "Cursor supports self-hosted machines , which let you keep tool execution entirely in your own network. Your codebase, build outputs, and secrets all"
-        }
-      }
-    },
-    {
-      "slug": "20260925-w3c-crafting-wcag-3-for-more-accessible-user-experiences-90f5f71d",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/crafting-wcag-3-for-more-accessible-user-experiences/",
-      "publishedAt": "2026-09-25T12:50:00.000Z",
-      "discoveredAt": "2026-09-27T14:03:18.424Z",
-      "locales": {
-        "en": {
-          "title": "Crafting WCAG 3 for more accessible user experiences",
-          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
-        },
-        "fr": {
-          "title": "Crafting WCAG 3 for more accessible user experiences",
-          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
         }
       }
     },
@@ -1763,26 +1803,6 @@
       }
     },
     {
-      "slug": "20261005-postgresql-pgvaulttde-v172-critical-crash-fixes-new-on-disk-form-35290beb",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v172-critical-crash-fixes-new-on-disk-format-and-stability-improvements-3393/",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-13T14:07:42.683Z",
-      "locales": {
-        "en": {
-          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
-          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuse…"
-        },
-        "fr": {
-          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
-          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuse…"
-        }
-      }
-    },
-    {
       "slug": "20260918-nist-nist-awards-more-than-17-million-to-support-cybersecurity-w-e597abb2",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -1799,26 +1819,6 @@
         "fr": {
           "title": "NIST Awards More Than $1.7 Million to Support Cybersecurity Workforce Development Across 8 States",
           "summary": "Projects will address local cybersecurity workforce needs and will offer practical learning opportunities including internships, apprenticeships and hands-on projects."
-        }
-      }
-    },
-    {
-      "slug": "20261006-anthropic-platform-expanding-the-cyber-verification-program-anno-a22a6ca9",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/cyber-verification-program",
-      "publishedAt": "2026-10-06T00:00:00.000Z",
-      "discoveredAt": "2026-10-10T12:27:47.168Z",
-      "locales": {
-        "en": {
-          "title": "Expanding the Cyber Verification Program Announcements Oct 6, 2026 We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
-          "summary": "es%2F4zrzovbb%2Fwebsite%2Fa0a14bf0b6e0c82cdd1c3fad594dab33550cfc80-1920x1080.webp&w=3840&q=75\"/>"
-        },
-        "fr": {
-          "title": "Expanding the Cyber Verification Program Announcements Oct 6, 2026 We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
-          "summary": "es%2F4zrzovbb%2Fwebsite%2Fa0a14bf0b6e0c82cdd1c3fad594dab33550cfc80-1920x1080.webp&w=3840&q=75\"/>"
         }
       }
     },
@@ -1903,42 +1903,142 @@
       }
     },
     {
-      "slug": "20261013-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
+      "slug": "20261013-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/multigres-private-alpha",
-      "publishedAt": "2026-10-13T00:36:51.465Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
+      "publishedAt": "2026-10-13T22:42:22.355Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
       "locales": {
         "en": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         },
         "fr": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         }
       }
     },
     {
-      "slug": "20261013-vercel-new-pro-teams-now-default-to-30-day-deployment-retention--3526dea6",
+      "slug": "20261013-vercel-gemini-4-argon-now-available-on-ai-gateway-call-googles-g-fd62725c",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/new-pro-teams-now-default-to-30-day-deployment-retention",
-      "publishedAt": "2026-10-13T14:07:42.683Z",
-      "discoveredAt": "2026-10-13T14:07:42.683Z",
+      "href": "https://vercel.com/changelog/gemini-4-argon-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-13T22:42:22.355Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
       "locales": {
         "en": {
-          "title": "New Pro teams now default to 30-day deployment retention New Pro teams use 30-day deployment retention by default, with the option to keep longer history. Pranav Kanchi, Jay Gengelbach, and 1 other",
-          "summary": "-118.jpg\"/> Melkey Moksyakov, Esteban Suárez"
+          "title": "Gemini 4 Argon now available on AI Gateway Call Google's Gemini 4 Argon through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "Andrew Healey Software Engineer"
         },
         "fr": {
-          "title": "New Pro teams now default to 30-day deployment retention New Pro teams use 30-day deployment retention by default, with the option to keep longer history. Pranav Kanchi, Jay Gengelbach, and 1 other",
-          "summary": "-118.jpg\"/> Melkey Moksyakov, Esteban Suárez"
+          "title": "Gemini 4 Argon now available on AI Gateway Call Google's Gemini 4 Argon through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "Andrew Healey Software Engineer"
+        }
+      }
+    },
+    {
+      "slug": "20260925-w3c-crafting-wcag-3-for-more-accessible-user-experiences-90f5f71d",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/crafting-wcag-3-for-more-accessible-user-experiences/",
+      "publishedAt": "2026-09-25T12:50:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "Crafting WCAG 3 for more accessible user experiences",
+          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
+        },
+        "fr": {
+          "title": "Crafting WCAG 3 for more accessible user experiences",
+          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
+        }
+      }
+    },
+    {
+      "slug": "20261008-openai-platform-legalon-halves-codex-costs-while-maintaining-dev-f6d3626e",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/legalon-halves-codex-costs",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:58.339Z",
+      "locales": {
+        "en": {
+          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically."
+        },
+        "fr": {
+          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically."
+        }
+      }
+    },
+    {
+      "slug": "20261006-anthropic-platform-expanding-the-cyber-verification-program-anno-a22a6ca9",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/cyber-verification-program",
+      "publishedAt": "2026-10-06T00:00:00.000Z",
+      "discoveredAt": "2026-10-10T12:27:47.168Z",
+      "locales": {
+        "en": {
+          "title": "Expanding the Cyber Verification Program Announcements Oct 6, 2026 We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+          "summary": "es%2F4zrzovbb%2Fwebsite%2Fa0a14bf0b6e0c82cdd1c3fad594dab33550cfc80-1920x1080.webp&w=3840&q=75\"/>"
+        },
+        "fr": {
+          "title": "Expanding the Cyber Verification Program Announcements Oct 6, 2026 We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+          "summary": "es%2F4zrzovbb%2Fwebsite%2Fa0a14bf0b6e0c82cdd1c3fad594dab33550cfc80-1920x1080.webp&w=3840&q=75\"/>"
+        }
+      }
+    },
+    {
+      "slug": "20261005-github-pgvector-087-released-9f7f16c5",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgvector-087-released-3392/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
+      "locales": {
+        "en": {
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details:…"
+        },
+        "fr": {
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details:…"
+        }
+      }
+    },
+    {
+      "slug": "20261013-github-improved-detection-for-withdrawn-dependabot-alerts-193f9a23",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-13-improved-detection-for-withdrawn-dependabot-alerts",
+      "publishedAt": "2026-10-13T14:03:57.000Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "locales": {
+        "en": {
+          "title": "Improved detection for withdrawn Dependabot alerts",
+          "summary": "You can now more easily detect withdrawn Dependabot alerts. Dependabot withdraws and removes an alert when the advisory or vulnerability that produced it is no longer valid. Two changes help… The post Improved detection…"
+        },
+        "fr": {
+          "title": "Improved detection for withdrawn Dependabot alerts",
+          "summary": "You can now more easily detect withdrawn Dependabot alerts. Dependabot withdraws and removes an alert when the advisory or vulnerability that produced it is no longer valid. Two changes help… The post Improved detection…"
         }
       }
     },
@@ -1963,42 +2063,22 @@
       }
     },
     {
-      "slug": "20261008-nvidia-building-reliable-data-analytics-agents-lessons-from-the--09637fb3",
+      "slug": "20261008-nvidia-5-steps-to-create-simready-assets-for-robotics-with-front-e90cb073",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/building-reliable-data-analytics-agents-lessons-from-the-kdd-cup/",
-      "publishedAt": "2026-10-08T18:30:07.000Z",
+      "href": "https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models/",
+      "publishedAt": "2026-10-08T20:57:59.000Z",
       "discoveredAt": "2026-10-08T23:19:11.392Z",
       "locales": {
         "en": {
-          "title": "Building Reliable Data Analytics Agents: Lessons from the KDD Cup",
-          "summary": "The NVIDIA KGMON team placed second in the KDD Cup 2026 Data Agents competition with a system built around a simple idea of making an agent's harness smaller,..."
+          "title": "5 Steps to Create SimReady Assets for Robotics with Frontier AI Models",
+          "summary": "Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must configure and validate materials, collision..."
         },
         "fr": {
-          "title": "Building Reliable Data Analytics Agents: Lessons from the KDD Cup",
-          "summary": "The NVIDIA KGMON team placed second in the KDD Cup 2026 Data Agents competition with a system built around a simple idea of making an agent's harness smaller,..."
-        }
-      }
-    },
-    {
-      "slug": "20261013-github-search-and-filter-for-budgets-now-available-243a01f7",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-13-search-and-filter-for-budgets-now-available",
-      "publishedAt": "2026-10-13T12:06:09.000Z",
-      "discoveredAt": "2026-10-13T14:07:42.683Z",
-      "locales": {
-        "en": {
-          "title": "Search and filter for budgets now available",
-          "summary": "The “Budgets and alerts” page in your GitHub billing settings now shows all of your budgets in one list that you can search and filter. Whether you manage budgets for… The post Search and filter for budgets now availabl…"
-        },
-        "fr": {
-          "title": "Search and filter for budgets now available",
-          "summary": "The “Budgets and alerts” page in your GitHub billing settings now shows all of your budgets in one list that you can search and filter. Whether you manage budgets for… The post Search and filter for budgets now availabl…"
+          "title": "5 Steps to Create SimReady Assets for Robotics with Frontier AI Models",
+          "summary": "Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must configure and validate materials, collision..."
         }
       }
     },
@@ -2063,26 +2143,6 @@
       }
     },
     {
-      "slug": "20261008-openai-platform-pollo-ai-turns-creative-ideas-into-campaigns-wit-ca1ec6c6",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/pollo-ai",
-      "publishedAt": "2026-10-08T12:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:11.392Z",
-      "locales": {
-        "en": {
-          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
-        },
-        "fr": {
-          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
-        }
-      }
-    },
-    {
       "slug": "20260912-cursor-next-older-posts-26afffcc",
       "toolName": "Cursor",
       "category": "Developer Assistant",
@@ -2099,26 +2159,6 @@
         "fr": {
           "title": "Next → Older posts",
           "summary": ""
-        }
-      }
-    },
-    {
-      "slug": "20260922-w3c-2026-climate-weeks-w3c-and-web-sustainability-050fad0e",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/2026-climate-weeks-w3c-and-web-sustainability/",
-      "publishedAt": "2026-09-22T12:40:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:24.364Z",
-      "locales": {
-        "en": {
-          "title": "2026 Climate Weeks: W3C and Web Sustainability",
-          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
-        },
-        "fr": {
-          "title": "2026 Climate Weeks: W3C and Web Sustainability",
-          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
         }
       }
     },
@@ -2143,62 +2183,22 @@
       }
     },
     {
-      "slug": "20261005-claude-dbforge-20262-adds-a-postgresql-debugger-visual-object-ed-4dad8a1f",
-      "toolName": "Claude",
-      "category": "AI Assistant",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-and-broader-context-for-dbforge-ai-assistant-3394/",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
-      "locales": {
-        "en": {
-          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
-          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database manageme…"
-        },
-        "fr": {
-          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
-          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database manageme…"
-        }
-      }
-    },
-    {
-      "slug": "20260915-nist-nist-awards-more-than-30-million-for-mep-centers-in-11-stat-d9483720",
+      "slug": "20260915-nist-nist-finalizes-guidelines-on-protecting-online-identity-and-fce54ff4",
       "toolName": "NIST",
       "category": "Security & Standards",
       "source": "NIST News",
       "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/09/nist-awards-more-30-million-mep-centers-11-states-and-puerto-rico",
+      "href": "https://www.nist.gov/news-events/news/2026/09/nist-finalizes-guidelines-protecting-online-identity-and-access-tokens",
       "publishedAt": "2026-09-15T12:00:00.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
       "locales": {
         "en": {
-          "title": "NIST Awards More Than $30 Million for MEP Centers in 11 States and Puerto Rico",
-          "summary": "The awards will help small and medium-sized manufacturers increase the adoption of advanced manufacturing technology."
+          "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
+          "summary": "The finalized publication is designed to help organizations take effective steps to avoid exposing tokens to attackers."
         },
         "fr": {
-          "title": "NIST Awards More Than $30 Million for MEP Centers in 11 States and Puerto Rico",
-          "summary": "The awards will help small and medium-sized manufacturers increase the adoption of advanced manufacturing technology."
-        }
-      }
-    },
-    {
-      "slug": "20261006-claude-announcements-oct-6-2026-expanding-the-cyber-verification-a22a6ca9",
-      "toolName": "Claude",
-      "category": "AI Assistant",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/cyber-verification-program",
-      "publishedAt": "2026-10-06T00:00:00.000Z",
-      "discoveredAt": "2026-10-07T13:18:37.807Z",
-      "locales": {
-        "en": {
-          "title": "Announcements Oct 6, 2026 Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
-          "summary": "Opus 5.5 performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5."
-        },
-        "fr": {
-          "title": "Announcements Oct 6, 2026 Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
-          "summary": "Opus 5.5 performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5."
+          "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
+          "summary": "The finalized publication is designed to help organizations take effective steps to avoid exposing tokens to attackers."
         }
       }
     },
@@ -2283,122 +2283,122 @@
       }
     },
     {
-      "slug": "20261013-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261013-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/orioledb-public-beta",
-      "publishedAt": "2026-10-13T00:36:51.465Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "href": "https://supabase.com/changelog/no-access-org-role",
+      "publishedAt": "2026-10-13T22:42:22.355Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
       "locales": {
         "en": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         },
         "fr": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         }
       }
     },
     {
-      "slug": "20261013-vercel-deployment-storage-billing-begins-for-existing-pro-teams--bc0fa275",
+      "slug": "20261013-vercel-agents-can-now-buy-domains-with-the-vercel-cli-agents-can-418297e3",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/deployment-storage-pricing-expands-to-existing-teams",
-      "publishedAt": "2026-10-13T14:07:42.683Z",
-      "discoveredAt": "2026-10-13T14:07:42.683Z",
+      "href": "https://vercel.com/changelog/agents-can-now-buy-domains-with-the-vercel-cli",
+      "publishedAt": "2026-10-13T22:42:22.355Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
       "locales": {
         "en": {
-          "title": "Deployment Storage billing begins for existing Pro teams Existing Pro teams will pay $0.10 per GB-month for Deployment Storage and Functions Storage, and the retention window moves to 30 days on October 23. Jay Gengelbach, Pranav Kanchi, and 1 other",
-          "summary": "Pranav Kanchi, Jay Gengelbach, and 1 other"
+          "title": "Agents can now buy domains with the Vercel CLI Agents can now use the Vercel CLI to purchase domains. Melkey Moksyakov, Esteban Suárez",
+          "summary": "9 October 9 Oct"
         },
         "fr": {
-          "title": "Deployment Storage billing begins for existing Pro teams Existing Pro teams will pay $0.10 per GB-month for Deployment Storage and Functions Storage, and the retention window moves to 30 days on October 23. Jay Gengelbach, Pranav Kanchi, and 1 other",
-          "summary": "Pranav Kanchi, Jay Gengelbach, and 1 other"
+          "title": "Agents can now buy domains with the Vercel CLI Agents can now use the Vercel CLI to purchase domains. Melkey Moksyakov, Esteban Suárez",
+          "summary": "9 October 9 Oct"
         }
       }
     },
     {
-      "slug": "20260813-notion-model-selection-simplified-c763aea8",
-      "toolName": "Notion",
-      "category": "Productivity Workspace",
-      "source": "Notion Releases",
-      "sourceFeed": "https://www.notion.so/releases",
-      "href": "https://www.notion.so/releases/2026-08-14",
-      "publishedAt": "2026-08-13T23:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "slug": "20260922-w3c-2026-climate-weeks-w3c-and-web-sustainability-050fad0e",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/2026-climate-weeks-w3c-and-web-sustainability/",
+      "publishedAt": "2026-09-22T12:40:00.000Z",
+      "discoveredAt": "2026-09-22T21:16:24.364Z",
       "locales": {
         "en": {
-          "title": "Model selection, simplified",
-          "summary": "August 14, 2026"
+          "title": "2026 Climate Weeks: W3C and Web Sustainability",
+          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
         },
         "fr": {
-          "title": "Model selection, simplified",
-          "summary": "August 14, 2026"
+          "title": "2026 Climate Weeks: W3C and Web Sustainability",
+          "summary": "W3C’s Sustainable Web Interest Group shares updates about Web Sustainability Guidelines and Impact Ratings in time for Climate Week, with changes demonstrating impacts on People, Planet, and Prosperity and reflecting W3…"
         }
       }
     },
     {
-      "slug": "20261008-nvidia-how-doca-gpunetio-unifies-gpu-initiated-networking-across-11769ab4",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/doca-gpunetio-gda-ki-unified-gpu-networking/",
-      "publishedAt": "2026-10-08T14:51:05.000Z",
-      "discoveredAt": "2026-10-09T13:12:58.339Z",
+      "slug": "20261008-openai-platform-pollo-ai-turns-creative-ideas-into-campaigns-wit-ca1ec6c6",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/pollo-ai",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:11.392Z",
       "locales": {
         "en": {
-          "title": "How DOCA GPUNetIO Unifies GPU-Initiated Networking Across the NVIDIA Software Stack",
-          "summary": "GPU applications increasingly need networking and data movement to behave like first-class GPU-controlled operations rather than host-driven services. When the..."
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
         },
         "fr": {
-          "title": "How DOCA GPUNetIO Unifies GPU-Initiated Networking Across the NVIDIA Software Stack",
-          "summary": "GPU applications increasingly need networking and data movement to behave like first-class GPU-controlled operations rather than host-driven services. When the..."
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
         }
       }
     },
     {
-      "slug": "20261013-github-code-scanning-ai-scan-metrics-in-security-overview-ec7d63fa",
+      "slug": "20261006-claude-announcements-oct-6-2026-expanding-the-cyber-verification-a22a6ca9",
+      "toolName": "Claude",
+      "category": "AI Assistant",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/cyber-verification-program",
+      "publishedAt": "2026-10-06T00:00:00.000Z",
+      "discoveredAt": "2026-10-07T13:18:37.807Z",
+      "locales": {
+        "en": {
+          "title": "Announcements Oct 6, 2026 Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+          "summary": "Opus 5.5 performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5."
+        },
+        "fr": {
+          "title": "Announcements Oct 6, 2026 Expanding the Cyber Verification Program We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+          "summary": "Opus 5.5 performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5."
+        }
+      }
+    },
+    {
+      "slug": "20261005-github-pgivm-116-released-9d0d6d1e",
       "toolName": "GitHub",
       "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
-      "publishedAt": "2026-10-13T12:03:17.000Z",
-      "discoveredAt": "2026-10-13T14:07:42.683Z",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_ivm-116-released-3391/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
       "locales": {
         "en": {
-          "title": "Code scanning AI Scan metrics in security overview",
-          "summary": "Organization and enterprise administrators can now observe the impact of AI Scan for pull requests in security overview. New metrics show how many AI Scan findings were generated, resolved, the… The post Code scanning A…"
+          "title": "pg_ivm 1.16 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault whe…"
         },
         "fr": {
-          "title": "Code scanning AI Scan metrics in security overview",
-          "summary": "Organization and enterprise administrators can now observe the impact of AI Scan for pull requests in security overview. New metrics show how many AI Scan findings were generated, resolved, the… The post Code scanning A…"
-        }
-      }
-    },
-    {
-      "slug": "20261006-hugging-face-falcon-emirati-when-an-llm-learns-the-dialect-the-c-085f7195",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/tiiuae/falcon-emirati",
-      "publishedAt": "2026-10-06T06:44:39.000Z",
-      "discoveredAt": "2026-10-06T13:15:57.097Z",
-      "locales": {
-        "en": {
-          "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
-          "summary": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance"
-        },
-        "fr": {
-          "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
-          "summary": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance"
+          "title": "pg_ivm 1.16 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault whe…"
         }
       }
     }
