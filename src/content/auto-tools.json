@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T11:18:37.614Z",
+  "updatedAt": "2026-10-16T21:04:25.613Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -43,6 +43,106 @@
       }
     },
     {
+      "slug": "20261016-nvidia-code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark-786c68bd",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
+      "publishedAt": "2026-10-16T16:46:50.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+        },
+        "fr": {
+          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+        }
+      }
+    },
+    {
+      "slug": "20261016-docker-from-containers-to-sandboxes-developer-trust-in-the-agent-db9c1e9d",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/stack-overflow-survey-2026-ai-agent-trust/",
+      "publishedAt": "2026-10-16T16:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "From Containers to Sandboxes: Developer Trust in the Agentic Era",
+          "summary": "The 2026 Stack Overflow Developer Survey shows only 7% of developers trust AI output for important decisions. Here’s what that means for running agents safely."
+        },
+        "fr": {
+          "title": "From Containers to Sandboxes: Developer Trust in the Agentic Era",
+          "summary": "The 2026 Stack Overflow Developer Survey shows only 7% of developers trust AI output for important decisions. Here’s what that means for running agents safely."
+        }
+      }
+    },
+    {
+      "slug": "20261016-github-open-source-license-compliance-generally-available-f70342f0",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available",
+      "publishedAt": "2026-10-16T14:00:32.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Open source license compliance generally available",
+          "summary": "Enterprises can now manage their dependencies’ licenses at scale with sophisticated, ruleset-based checks that enforce a centralized policy. Open source license compliance is now generally available for GitHub Enterpris…"
+        },
+        "fr": {
+          "title": "Open source license compliance generally available",
+          "summary": "Enterprises can now manage their dependencies’ licenses at scale with sophisticated, ruleset-based checks that enforce a centralized policy. Open source license compliance is now generally available for GitHub Enterpris…"
+        }
+      }
+    },
+    {
+      "slug": "20261016-cloudflare-continuous-accountability-for-verified-bots-90fc70b2",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/verified-bots-accountability/",
+      "publishedAt": "2026-10-16T13:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Continuous accountability for Verified bots",
+          "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain acco…"
+        },
+        "fr": {
+          "title": "Continuous accountability for Verified bots",
+          "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain acco…"
+        }
+      }
+    },
+    {
+      "slug": "20261016-nist-new-chip-based-tape-measure-for-light-could-revolutionize-m-2221263d",
+      "toolName": "NIST",
+      "category": "Security & Standards",
+      "source": "NIST News",
+      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
+      "href": "https://www.nist.gov/news-events/news/2026/10/new-chip-based-tape-measure-light-could-revolutionize-mobile-timekeeping",
+      "publishedAt": "2026-10-16T12:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "New Chip-Based ‘Tape Measure’ for Light Could Revolutionize Mobile Timekeeping and Enhance National Security",
+          "summary": "The new device could help provide vital navigation signals when GPS is either unavailable or has been jammed."
+        },
+        "fr": {
+          "title": "New Chip-Based ‘Tape Measure’ for Light Could Revolutionize Mobile Timekeeping and Enhance National Security",
+          "summary": "The new device could help provide vital navigation signals when GPS is either unavailable or has been jammed."
+        }
+      }
+    },
+    {
       "slug": "20261016-anthropic-platform-responsible-scaling-policy-3a0b4572",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
@@ -59,26 +159,6 @@
         "fr": {
           "title": "Responsible Scaling Policy",
           "summary": "ing Policy on the AI Exponential Security and compliance"
-        }
-      }
-    },
-    {
-      "slug": "20261016-github-copilot-multi-repo-support-and-other-improvements-for-git-5c6d7a0c",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
-      "publishedAt": "2026-10-16T02:16:35.000Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
-      "locales": {
-        "en": {
-          "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
-          "summary": "Multi-repo support in Slack and Microsoft Teams GitHub Copilot in Slack and Microsoft Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigatin…"
-        },
-        "fr": {
-          "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
-          "summary": "Multi-repo support in Slack and Microsoft Teams GitHub Copilot in Slack and Microsoft Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigatin…"
         }
       }
     },
@@ -103,62 +183,42 @@
       }
     },
     {
-      "slug": "20261015-nvidia-nvidia-nemotron-35-super-vl-powers-specialized-agents-wit-652caa15",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
-      "publishedAt": "2026-10-15T19:23:24.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
-        },
-        "fr": {
-          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
-        }
-      }
-    },
-    {
-      "slug": "20261015-openai-platform-bringing-gpt-rosalind-to-academic-research-labs-a72d1e4d",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
+      "slug": "20261016-chatgpt-stack-overflow-for-agents-triples-signups-with-chatgpt-p-9db4940a",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-      "publishedAt": "2026-10-15T19:00:00.000Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
+      "href": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
       "locales": {
         "en": {
-          "title": "Bringing GPT-Rosalind to academic research labs",
-          "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research."
+          "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+          "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation."
         },
         "fr": {
-          "title": "Bringing GPT-Rosalind to academic research labs",
-          "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research."
+          "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+          "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation."
         }
       }
     },
     {
-      "slug": "20261015-cloudflare-a-fully-programmable-secure-web-gateway-068b055f",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/programmable-gateway-dlp/",
-      "publishedAt": "2026-10-15T17:11:12.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "slug": "20261016-go-interactive-refactoring-in-gopls-66b01ef3",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/interactive-refactoring",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
       "locales": {
         "en": {
-          "title": "A fully programmable secure web gateway",
-          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
+          "title": "Interactive refactoring in gopls",
+          "summary": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor."
         },
         "fr": {
-          "title": "A fully programmable secure web gateway",
-          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
+          "title": "Interactive refactoring in gopls",
+          "summary": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor."
         }
       }
     },
@@ -199,26 +259,6 @@
         "fr": {
           "title": "PostgreSQL 19 RC 1 Released!",
           "summary": "The PostgreSQL Global Development Group announces that the first release candidate of PostgreSQL 19 is now available for download. As a release candidate, PostgreSQL 19 RC 1 will be mostly identical to the initial relea…"
-        }
-      }
-    },
-    {
-      "slug": "20261014-docker-ai-agent-security-risks-what-can-go-wrong-when-agents-act-d0cedaae",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/ai-agent-security-risks/",
-      "publishedAt": "2026-10-14T22:08:33.000Z",
-      "discoveredAt": "2026-10-15T11:24:29.111Z",
-      "locales": {
-        "en": {
-          "title": "AI Agent Security Risks: What Can Go Wrong When Agents Act on Their Own",
-          "summary": "Learn the top AI agent security risks, from prompt injection to excessive autonomy and credential exposure, and how to contain them."
-        },
-        "fr": {
-          "title": "AI Agent Security Risks: What Can Go Wrong When Agents Act on Their Own",
-          "summary": "Learn the top AI agent security risks, from prompt injection to excessive autonomy and credential exposure, and how to contain them."
         }
       }
     },
@@ -283,26 +323,6 @@
       }
     },
     {
-      "slug": "20261014-go-better-http1-connection-reuse-1f9db072",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/http-connection-reuse",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
-      "locales": {
-        "en": {
-          "title": "Better HTTP/1 connection reuse",
-          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
-        },
-        "fr": {
-          "title": "Better HTTP/1 connection reuse",
-          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
-        }
-      }
-    },
-    {
       "slug": "20261013-notion-notion-38-context-for-your-agents-66f0e572",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -363,6 +383,126 @@
       }
     },
     {
+      "slug": "20261016-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/multigres-private-alpha",
+      "publishedAt": "2026-10-16T21:04:25.613Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+        },
+        "fr": {
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+        }
+      }
+    },
+    {
+      "slug": "20261016-vercel-reflection-ais-beam-now-available-on-ai-gateway-for-free--edc61255",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/reflection-ai-beam-now-available-on-ai-gateway-for-free",
+      "publishedAt": "2026-10-16T21:04:25.613Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Reflection AI's Beam now available on AI Gateway for free Try Reflection AI's Beam for free for a limited time on Vercel AI Gateway with one API key, spend tracking, and request traces +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
+          "summary": "16 October 16 Oct"
+        },
+        "fr": {
+          "title": "Reflection AI's Beam now available on AI Gateway for free Try Reflection AI's Beam for free for a limited time on Vercel AI Gateway with one API key, spend tracking, and request traces +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
+          "summary": "16 October 16 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261015-nvidia-nvidia-nemotron-35-super-vl-powers-specialized-agents-wit-652caa15",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
+      "publishedAt": "2026-10-15T19:23:24.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
+          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
+        },
+        "fr": {
+          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
+          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
+        }
+      }
+    },
+    {
+      "slug": "20261014-docker-ai-agent-security-risks-what-can-go-wrong-when-agents-act-d0cedaae",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/ai-agent-security-risks/",
+      "publishedAt": "2026-10-14T22:08:33.000Z",
+      "discoveredAt": "2026-10-15T11:24:29.111Z",
+      "locales": {
+        "en": {
+          "title": "AI Agent Security Risks: What Can Go Wrong When Agents Act on Their Own",
+          "summary": "Learn the top AI agent security risks, from prompt injection to excessive autonomy and credential exposure, and how to contain them."
+        },
+        "fr": {
+          "title": "AI Agent Security Risks: What Can Go Wrong When Agents Act on Their Own",
+          "summary": "Learn the top AI agent security risks, from prompt injection to excessive autonomy and credential exposure, and how to contain them."
+        }
+      }
+    },
+    {
+      "slug": "20261016-github-xcode-27-runner-image-generally-available-038384fb",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-15-xcode-27-runner-image-generally-available",
+      "publishedAt": "2026-10-16T04:36:30.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Xcode 27 runner image generally available",
+          "summary": "You can now use the generally available Xcode 27 runner image to build and test your Apple applications in GitHub Actions. Previously in public preview, this GitHub-hosted image runs on… The post Xcode 27 runner image g…"
+        },
+        "fr": {
+          "title": "Xcode 27 runner image generally available",
+          "summary": "You can now use the generally available Xcode 27 runner image to build and test your Apple applications in GitHub Actions. Previously in public preview, this GitHub-hosted image runs on… The post Xcode 27 runner image g…"
+        }
+      }
+    },
+    {
+      "slug": "20261015-cloudflare-a-fully-programmable-secure-web-gateway-068b055f",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/programmable-gateway-dlp/",
+      "publishedAt": "2026-10-15T17:11:12.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "A fully programmable secure web gateway",
+          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
+        },
+        "fr": {
+          "title": "A fully programmable secure web gateway",
+          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
+        }
+      }
+    },
+    {
       "slug": "20261008-nist-nist-joins-white-house-effort-to-drive-a-new-golden-age-of--25dc3f92",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -379,46 +519,6 @@
         "fr": {
           "title": "NIST Joins White House Effort to Drive ‘A New Golden Age of Science’",
           "summary": "As the nation’s lead agency for measurement science and standards, NIST is uniquely positioned to bridge the distance between fundamental discovery and industrial capability."
-        }
-      }
-    },
-    {
-      "slug": "20261016-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
-      "publishedAt": "2026-10-16T11:18:37.614Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
-      "locales": {
-        "en": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
-        },
-        "fr": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
-        }
-      }
-    },
-    {
-      "slug": "20261016-vercel-liquid-ais-d1-ultra-now-available-on-ai-gateway-call-liqu-7810597d",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/liquid-ais-d1-ultra-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-16T11:18:37.614Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
-      "locales": {
-        "en": {
-          "title": "Liquid AI's d1-ultra now available on AI Gateway Call Liquid AI's d1-ultra through Vercel AI Gateway with one API key, unified spend tracking, and request logs. Jerilyn Zheng, Zachary Chen",
-          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
-        },
-        "fr": {
-          "title": "Liquid AI's d1-ultra now available on AI Gateway Call Liquid AI's d1-ultra through Vercel AI Gateway with one API key, unified spend tracking, and request logs. Jerilyn Zheng, Zachary Chen",
-          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
         }
       }
     },
@@ -443,102 +543,62 @@
       }
     },
     {
-      "slug": "20261015-github-download-github-code-quality-license-usage-as-a-csv-a0a3bd71",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
-      "publishedAt": "2026-10-15T20:11:26.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Download GitHub Code Quality license usage as a CSV",
-          "summary": "You can now download a CSV report of your GitHub Code Quality license usage to reconcile your license count with your own records. The report includes: Each active committer who… The post Download GitHub Code Quality li…"
-        },
-        "fr": {
-          "title": "Download GitHub Code Quality license usage as a CSV",
-          "summary": "You can now download a CSV report of your GitHub Code Quality license usage to reconcile your license count with your own records. The report includes: Each active committer who… The post Download GitHub Code Quality li…"
-        }
-      }
-    },
-    {
-      "slug": "20261015-hugging-face-granite-switch-41-chat-decisions-and-speech-from-on-a01e0223",
+      "slug": "20261016-hugging-face-welcome-beam-a-501b-open-model-you-can-own-customiz-849b4231",
       "toolName": "Hugging Face",
       "category": "AI Platform",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "publishedAt": "2026-10-15T20:34:01.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "href": "https://huggingface.co/blog/reflection-beam",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
       "locales": {
         "en": {
-          "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-          "summary": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint"
+          "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+          "summary": "Welcome Beam: a 501B open model you can own, customize, and scale"
         },
         "fr": {
-          "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-          "summary": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint"
+          "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+          "summary": "Welcome Beam: a 501B open model you can own, customize, and scale"
         }
       }
     },
     {
-      "slug": "20261015-nvidia-nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai--24af6a51",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/",
-      "publishedAt": "2026-10-15T18:34:17.000Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
-          "summary": "NVIDIA is making the full NVIDIA Run:ai platform available as open source software, giving customers, developers, and ecosystem partners access to..."
-        },
-        "fr": {
-          "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
-          "summary": "NVIDIA is making the full NVIDIA Run:ai platform available as open source software, giving customers, developers, and ecosystem partners access to..."
-        }
-      }
-    },
-    {
-      "slug": "20261015-openai-platform-teaching-students-to-think-and-learn-through-que-fa14b8f7",
+      "slug": "20261015-openai-platform-bringing-gpt-rosalind-to-academic-research-labs-a72d1e4d",
       "toolName": "OpenAI Platform",
       "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
-      "publishedAt": "2026-10-15T13:00:00.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "href": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "publishedAt": "2026-10-15T19:00:00.000Z",
+      "discoveredAt": "2026-10-16T11:18:37.614Z",
       "locales": {
         "en": {
-          "title": "Teaching students to think and learn through questions",
-          "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning."
+          "title": "Bringing GPT-Rosalind to academic research labs",
+          "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research."
         },
         "fr": {
-          "title": "Teaching students to think and learn through questions",
-          "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning."
+          "title": "Bringing GPT-Rosalind to academic research labs",
+          "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research."
         }
       }
     },
     {
-      "slug": "20261015-cloudflare-deploy-with-void-41ee710a",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/deploy-with-void/",
-      "publishedAt": "2026-10-15T14:00:00.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "slug": "20261014-go-better-http1-connection-reuse-1f9db072",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/http-connection-reuse",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T21:38:48.576Z",
       "locales": {
         "en": {
-          "title": "Deploy with Void",
-          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
+          "title": "Better HTTP/1 connection reuse",
+          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
         },
         "fr": {
-          "title": "Deploy with Void",
-          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
+          "title": "Better HTTP/1 connection reuse",
+          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
         }
       }
     },
@@ -579,26 +639,6 @@
         "fr": {
           "title": "Perseid 0.1.0 is now available",
           "summary": "I am very pleased to announce that, after a long hiatus, Perseid 0.1.0, a set of utilities for versioning PostgreSQL database schemas, has been released. Perseid 0.1.0 is available from: Codeberg Git repository: https:/…"
-        }
-      }
-    },
-    {
-      "slug": "20261014-cursor-harbor-docker-sandboxes-run-safe-reproducible-agent-evals-b2acc86b",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/harbor-docker-sandboxes-run-safe-reproducible-agent-evals/",
-      "publishedAt": "2026-10-14T21:45:27.000Z",
-      "discoveredAt": "2026-10-15T11:24:29.111Z",
-      "locales": {
-        "en": {
-          "title": "Harbor + Docker Sandboxes: Run Safe, Reproducible Agent Evals",
-          "summary": "Harbor can now run every eval task in Docker Sandboxes Docker Sandboxes are MicroVM environments to run agents like Claude Code, Codex, Cursor, and more safely With Sandboxes, define custom network policies for fair, re…"
-        },
-        "fr": {
-          "title": "Harbor + Docker Sandboxes: Run Safe, Reproducible Agent Evals",
-          "summary": "Harbor can now run every eval task in Docker Sandboxes Docker Sandboxes are MicroVM environments to run agents like Claude Code, Codex, Cursor, and more safely With Sandboxes, define custom network policies for fair, re…"
         }
       }
     },
@@ -663,26 +703,6 @@
       }
     },
     {
-      "slug": "20261002-go-arch-specific-simd-in-go-aa4c22f4",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/archsimd",
-      "publishedAt": "2026-10-02T00:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
-      "locales": {
-        "en": {
-          "title": "Arch-specific SIMD in Go",
-          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
-        },
-        "fr": {
-          "title": "Arch-specific SIMD in Go",
-          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
-        }
-      }
-    },
-    {
       "slug": "20260916-notion-notion-37-agent-skills-for-your-whole-team-cd21ad33",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -743,6 +763,126 @@
       }
     },
     {
+      "slug": "20261016-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/orioledb-public-beta",
+      "publishedAt": "2026-10-16T21:04:25.613Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
+          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+        },
+        "fr": {
+          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
+          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+        }
+      }
+    },
+    {
+      "slug": "20261016-vercel-cat-jam-is-now-available-in-stealth-for-free-on-ai-gatewa-73da9d71",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/cat-jam-is-now-available-in-stealth-for-free-on-ai-gateway",
+      "publishedAt": "2026-10-16T21:04:25.613Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Cat Jam is now available in stealth for free on AI Gateway Call the stealth model Cat Jam for free through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "+2 Dima Voytenko, Hedi Zandi, and 2 others"
+        },
+        "fr": {
+          "title": "Cat Jam is now available in stealth for free on AI Gateway Call the stealth model Cat Jam for free through Vercel AI Gateway with one API key: no provider account, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "+2 Dima Voytenko, Hedi Zandi, and 2 others"
+        }
+      }
+    },
+    {
+      "slug": "20261015-nvidia-nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai--24af6a51",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/",
+      "publishedAt": "2026-10-15T18:34:17.000Z",
+      "discoveredAt": "2026-10-16T11:18:37.614Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
+          "summary": "NVIDIA is making the full NVIDIA Run:ai platform available as open source software, giving customers, developers, and ecosystem partners access to..."
+        },
+        "fr": {
+          "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
+          "summary": "NVIDIA is making the full NVIDIA Run:ai platform available as open source software, giving customers, developers, and ecosystem partners access to..."
+        }
+      }
+    },
+    {
+      "slug": "20261014-cursor-harbor-docker-sandboxes-run-safe-reproducible-agent-evals-b2acc86b",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/harbor-docker-sandboxes-run-safe-reproducible-agent-evals/",
+      "publishedAt": "2026-10-14T21:45:27.000Z",
+      "discoveredAt": "2026-10-15T11:24:29.111Z",
+      "locales": {
+        "en": {
+          "title": "Harbor + Docker Sandboxes: Run Safe, Reproducible Agent Evals",
+          "summary": "Harbor can now run every eval task in Docker Sandboxes Docker Sandboxes are MicroVM environments to run agents like Claude Code, Codex, Cursor, and more safely With Sandboxes, define custom network policies for fair, re…"
+        },
+        "fr": {
+          "title": "Harbor + Docker Sandboxes: Run Safe, Reproducible Agent Evals",
+          "summary": "Harbor can now run every eval task in Docker Sandboxes Docker Sandboxes are MicroVM environments to run agents like Claude Code, Codex, Cursor, and more safely With Sandboxes, define custom network policies for fair, re…"
+        }
+      }
+    },
+    {
+      "slug": "20261016-github-copilot-multi-repo-support-and-other-improvements-for-git-5c6d7a0c",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
+      "publishedAt": "2026-10-16T02:16:35.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Multi-repo support and other improvements for GitHub in Slack and Teams",
+          "summary": "Multi-repo support in Slack and Teams GitHub Copilot in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating issues, or… The po…"
+        },
+        "fr": {
+          "title": "Multi-repo support and other improvements for GitHub in Slack and Teams",
+          "summary": "Multi-repo support in Slack and Teams GitHub Copilot in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating issues, or… The po…"
+        }
+      }
+    },
+    {
+      "slug": "20261015-cloudflare-deploy-with-void-41ee710a",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/deploy-with-void/",
+      "publishedAt": "2026-10-15T14:00:00.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "Deploy with Void",
+          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
+        },
+        "fr": {
+          "title": "Deploy with Void",
+          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
+        }
+      }
+    },
+    {
       "slug": "20261008-nist-nist-study-shows-how-the-toxic-substances-mixed-into-fentan-9acfb21c",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -759,46 +899,6 @@
         "fr": {
           "title": "NIST Study Shows How the Toxic Substances Mixed Into Fentanyl Vary Across the U.S. and Change Over Time",
           "summary": "Alerting first responders and law enforcement to the presence of these dangerous chemicals in local supplies of fentanyl can help save lives."
-        }
-      }
-    },
-    {
-      "slug": "20261016-supabase-supabase-middleware-10-c639ad09",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-middleware-1-0",
-      "publishedAt": "2026-10-16T11:18:37.614Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
-      "locales": {
-        "en": {
-          "title": "Supabase Middleware 1.0",
-          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
-        },
-        "fr": {
-          "title": "Supabase Middleware 1.0",
-          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
-        }
-      }
-    },
-    {
-      "slug": "20261016-vercel-bring-your-own-cloud-on-aws-is-now-generally-available-br-4269a097",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/bring-your-own-cloud-on-aws-is-now-generally-available",
-      "publishedAt": "2026-10-16T11:18:37.614Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
-      "locales": {
-        "en": {
-          "title": "Bring Your Own Cloud on AWS is now generally available Bring Your Own Cloud on AWS is now generally available on Vercel. +2 Shilpa Apte, Javi Velasco, and 2 others",
-          "summary": "Tom Lienard, Marc Codina Segura, and 3 others"
-        },
-        "fr": {
-          "title": "Bring Your Own Cloud on AWS is now generally available Bring Your Own Cloud on AWS is now generally available on Vercel. +2 Shilpa Apte, Javi Velasco, and 2 others",
-          "summary": "Tom Lienard, Marc Codina Segura, and 3 others"
         }
       }
     },
@@ -823,102 +923,62 @@
       }
     },
     {
-      "slug": "20261015-github-copilot-upcoming-deprecation-of-selected-github-copilot-m-818ecaf7",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
-      "publishedAt": "2026-10-15T19:35:13.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
-          "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date… The post Upc…"
-        },
-        "fr": {
-          "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
-          "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date… The post Upc…"
-        }
-      }
-    },
-    {
-      "slug": "20261015-hugging-face-apertus-15-release-notes-e3c36d44",
+      "slug": "20261015-hugging-face-granite-switch-41-chat-decisions-and-speech-from-on-a01e0223",
       "toolName": "Hugging Face",
       "category": "AI Platform",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
-      "publishedAt": "2026-10-15T09:08:45.000Z",
+      "href": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+      "publishedAt": "2026-10-15T20:34:01.000Z",
       "discoveredAt": "2026-10-15T21:20:25.847Z",
       "locales": {
         "en": {
-          "title": "Apertus 1.5 Release Notes",
-          "summary": "Apertus 1.5 Release Notes"
+          "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+          "summary": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint"
         },
         "fr": {
-          "title": "Apertus 1.5 Release Notes",
-          "summary": "Apertus 1.5 Release Notes"
+          "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+          "summary": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint"
         }
       }
     },
     {
-      "slug": "20261015-nvidia-scale-agentic-coding-workflows-with-metas-muse-spark-open-33f29bf0",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
-      "publishedAt": "2026-10-15T18:29:53.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
-          "summary": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on..."
-        },
-        "fr": {
-          "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
-          "summary": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on..."
-        }
-      }
-    },
-    {
-      "slug": "20261015-openai-platform-sullivan-cromwell-brings-legal-expertise-into-ag-dd00c04c",
+      "slug": "20261015-openai-platform-teaching-students-to-think-and-learn-through-que-fa14b8f7",
       "toolName": "OpenAI Platform",
       "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/sullivan-cromwell",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
-      "locales": {
-        "en": {
-          "title": "Sullivan & Cromwell brings legal expertise into agreement review",
-          "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement."
-        },
-        "fr": {
-          "title": "Sullivan & Cromwell brings legal expertise into agreement review",
-          "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement."
-        }
-      }
-    },
-    {
-      "slug": "20261015-cloudflare-cloudflare-and-openai-making-ai-discovery-better-for--39780551",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
+      "href": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
       "publishedAt": "2026-10-15T13:00:00.000Z",
       "discoveredAt": "2026-10-15T21:20:25.847Z",
       "locales": {
         "en": {
-          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
-          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
+          "title": "Teaching students to think and learn through questions",
+          "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning."
         },
         "fr": {
-          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
-          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
+          "title": "Teaching students to think and learn through questions",
+          "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning."
+        }
+      }
+    },
+    {
+      "slug": "20261002-go-arch-specific-simd-in-go-aa4c22f4",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/archsimd",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:36.141Z",
+      "locales": {
+        "en": {
+          "title": "Arch-specific SIMD in Go",
+          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
+        },
+        "fr": {
+          "title": "Arch-specific SIMD in Go",
+          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
         }
       }
     },
@@ -959,26 +1019,6 @@
         "fr": {
           "title": "psqlODBC 18.00.0005 released with security fix for CVE-2026-109448",
           "summary": "The psqlODBC team has released version 18.00.0005 of psqlODBC, the official ODBC driver for PostgreSQL. This release fixes one security vulnerability and two bugs. All users should upgrade. Security issue CVE-2026-10944…"
-        }
-      }
-    },
-    {
-      "slug": "20261012-docker-docker-hub-security-advisory-personal-access-tokens-trans-b06c4bf6",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-hub-security-advisory-cve-2026-105445/",
-      "publishedAt": "2026-10-12T16:00:00.000Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
-      "locales": {
-        "en": {
-          "title": "Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions",
-          "summary": "CVE-2026-105445: Docker Hub account conversion could re-assign personal access tokens to a new owner. Read what happened, who was affected, and the fix."
-        },
-        "fr": {
-          "title": "Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions",
-          "summary": "CVE-2026-105445: Docker Hub account conversion could re-assign personal access tokens to a new owner. Read what happened, who was affected, and the fix."
         }
       }
     },
@@ -1043,26 +1083,6 @@
       }
     },
     {
-      "slug": "20260924-go-platform-independent-simd-in-go-e0645c8a",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/simd-experiment",
-      "publishedAt": "2026-09-24T00:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
-      "locales": {
-        "en": {
-          "title": "Platform-independent SIMD in Go",
-          "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
-        },
-        "fr": {
-          "title": "Platform-independent SIMD in Go",
-          "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
-        }
-      }
-    },
-    {
       "slug": "20260912-notion-see-whats-new-feab92d9",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1123,6 +1143,126 @@
       }
     },
     {
+      "slug": "20261016-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
+      "publishedAt": "2026-10-16T11:18:37.614Z",
+      "discoveredAt": "2026-10-16T11:18:37.614Z",
+      "locales": {
+        "en": {
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
+        },
+        "fr": {
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
+        }
+      }
+    },
+    {
+      "slug": "20261016-vercel-vercel-drives-is-now-generally-available-persistent-stora-c7af5245",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/vercel-drives-is-now-generally-available",
+      "publishedAt": "2026-10-16T21:04:25.613Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Vercel Drives is now generally available Persistent storage you mount into a Vercel Sandbox. Files outlive the sandbox, and you can fork a Drive for parallel workers. +3 Tom Lienard, Marc Codina Segura, and 3 others",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+        },
+        "fr": {
+          "title": "Vercel Drives is now generally available Persistent storage you mount into a Vercel Sandbox. Files outlive the sandbox, and you can fork a Drive for parallel workers. +3 Tom Lienard, Marc Codina Segura, and 3 others",
+          "summary": "zheng-128.jpg\"/> Zachary Chen, Jerilyn Zheng"
+        }
+      }
+    },
+    {
+      "slug": "20261015-nvidia-scale-agentic-coding-workflows-with-metas-muse-spark-open-33f29bf0",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+      "publishedAt": "2026-10-15T18:29:53.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+          "summary": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on..."
+        },
+        "fr": {
+          "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+          "summary": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on..."
+        }
+      }
+    },
+    {
+      "slug": "20261012-docker-docker-hub-security-advisory-personal-access-tokens-trans-b06c4bf6",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-hub-security-advisory-cve-2026-105445/",
+      "publishedAt": "2026-10-12T16:00:00.000Z",
+      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "locales": {
+        "en": {
+          "title": "Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions",
+          "summary": "CVE-2026-105445: Docker Hub account conversion could re-assign personal access tokens to a new owner. Read what happened, who was affected, and the fix."
+        },
+        "fr": {
+          "title": "Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions",
+          "summary": "CVE-2026-105445: Docker Hub account conversion could re-assign personal access tokens to a new owner. Read what happened, who was affected, and the fix."
+        }
+      }
+    },
+    {
+      "slug": "20261016-github-copilot-multi-repo-support-and-other-improvements-for-git-5c6d7a0c",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
+      "publishedAt": "2026-10-16T02:16:35.000Z",
+      "discoveredAt": "2026-10-16T11:18:37.614Z",
+      "locales": {
+        "en": {
+          "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
+          "summary": "Multi-repo support in Slack and Microsoft Teams GitHub Copilot in Slack and Microsoft Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigatin…"
+        },
+        "fr": {
+          "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
+          "summary": "Multi-repo support in Slack and Microsoft Teams GitHub Copilot in Slack and Microsoft Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigatin…"
+        }
+      }
+    },
+    {
+      "slug": "20261015-cloudflare-cloudflare-and-openai-making-ai-discovery-better-for--39780551",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
+      "publishedAt": "2026-10-15T13:00:00.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
+          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
+        },
+        "fr": {
+          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
+          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
+        }
+      }
+    },
+    {
       "slug": "20261005-nist-physicist-jun-ye-wins-wolf-prize-in-physics-e9a43731",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -1139,46 +1279,6 @@
         "fr": {
           "title": "Physicist Jun Ye Wins Wolf Prize in Physics",
           "summary": "The award cites Ye’s achievement in “transformative, widely applicable advances in the control of ultracold atomic systems.”"
-        }
-      }
-    },
-    {
-      "slug": "20261015-supabase-status-page-moves-to-incidentio-7e1c5736",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/status-page-migration",
-      "publishedAt": "2026-10-15T21:20:25.847Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
-        },
-        "fr": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
-        }
-      }
-    },
-    {
-      "slug": "20261015-vercel-introducing-token-pass-vercel-token-pass-now-in-early-acc-827aaf26",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/introducing-token-pass",
-      "publishedAt": "2026-10-15T21:20:25.847Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
-          "summary": "15 October 15 Oct"
-        },
-        "fr": {
-          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
-          "summary": "15 October 15 Oct"
         }
       }
     },
@@ -1203,102 +1303,62 @@
       }
     },
     {
-      "slug": "20261015-github-ai-scan-for-pull-requests-generally-available-39ed69c2",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
-      "publishedAt": "2026-10-15T15:04:51.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "AI Scan for pull requests generally available",
-          "summary": "Code scanning AI Scan for pull requests is now generally available. It complements CodeQL by finding vulnerabilities in pull request changes for languages and frameworks that CodeQL does not currently… The post AI Scan…"
-        },
-        "fr": {
-          "title": "AI Scan for pull requests generally available",
-          "summary": "Code scanning AI Scan for pull requests is now generally available. It complements CodeQL by finding vulnerabilities in pull request changes for languages and frameworks that CodeQL does not currently… The post AI Scan…"
-        }
-      }
-    },
-    {
-      "slug": "20261015-hugging-face-welcome-muse-spark-open-open-weight-frontier-multim-9d251ac6",
+      "slug": "20261015-hugging-face-apertus-15-release-notes-e3c36d44",
       "toolName": "Hugging Face",
       "category": "AI Platform",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/meta-muse-spark-open",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "href": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+      "publishedAt": "2026-10-15T09:08:45.000Z",
       "discoveredAt": "2026-10-15T21:20:25.847Z",
       "locales": {
         "en": {
-          "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-          "summary": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta"
+          "title": "Apertus 1.5 Release Notes",
+          "summary": "Apertus 1.5 Release Notes"
         },
         "fr": {
-          "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-          "summary": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta"
+          "title": "Apertus 1.5 Release Notes",
+          "summary": "Apertus 1.5 Release Notes"
         }
       }
     },
     {
-      "slug": "20261015-nvidia-validate-gpu-cluster-readiness-before-ai-workloads-land-a69161c4",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land/",
-      "publishedAt": "2026-10-15T18:13:31.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
-          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
-        },
-        "fr": {
-          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
-          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
-        }
-      }
-    },
-    {
-      "slug": "20261014-chatgpt-amp-puts-ai-agents-to-work-beyond-code-with-openai-model-a0e0fec2",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
+      "slug": "20261015-openai-platform-sullivan-cromwell-brings-legal-expertise-into-ag-dd00c04c",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/amp-beyond-coding",
-      "publishedAt": "2026-10-14T12:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
+      "href": "https://openai.com/index/sullivan-cromwell",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "discoveredAt": "2026-10-16T11:18:37.614Z",
       "locales": {
         "en": {
-          "title": "Amp puts AI agents to work beyond code with OpenAI models",
-          "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT."
+          "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+          "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement."
         },
         "fr": {
-          "title": "Amp puts AI agents to work beyond code with OpenAI models",
-          "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT."
+          "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+          "summary": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement."
         }
       }
     },
     {
-      "slug": "20261014-cloudflare-yandex-outage-data-shows-that-instead-of-going-dark-m-aad24f89",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/yandex-outage/",
-      "publishedAt": "2026-10-14T20:24:19.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
+      "slug": "20260924-go-platform-independent-simd-in-go-e0645c8a",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/simd-experiment",
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "discoveredAt": "2026-09-24T21:29:30.940Z",
       "locales": {
         "en": {
-          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
-          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
+          "title": "Platform-independent SIMD in Go",
+          "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
         },
         "fr": {
-          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
-          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
+          "title": "Platform-independent SIMD in Go",
+          "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
         }
       }
     },
@@ -1339,26 +1399,6 @@
         "fr": {
           "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
           "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins…"
-        }
-      }
-    },
-    {
-      "slug": "20261001-docker-trust-docker-for-the-agents-you-dont-f08e107a",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-cloud-sandboxes-wearedevelopers-recap/",
-      "publishedAt": "2026-10-01T18:26:12.000Z",
-      "discoveredAt": "2026-10-01T22:39:35.689Z",
-      "locales": {
-        "en": {
-          "title": "Trust Docker for the agents you don’t",
-          "summary": "At WeAreDevelopers, Docker introduced Cloud Sandboxes, the open Sandbox Kit specification, and a commitment to bring Kits to the CNCF for neutral governance."
-        },
-        "fr": {
-          "title": "Trust Docker for the agents you don’t",
-          "summary": "At WeAreDevelopers, Docker introduced Cloud Sandboxes, the open Sandbox Kit specification, and a commitment to bring Kits to the CNCF for neutral governance."
         }
       }
     },
@@ -1423,26 +1463,6 @@
       }
     },
     {
-      "slug": "20260916-go-size-specialized-memory-allocation-1f279c61",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/size-specialized-allocations",
-      "publishedAt": "2026-09-16T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:10.587Z",
-      "locales": {
-        "en": {
-          "title": "Size-Specialized Memory Allocation",
-          "summary": "Go 1.27 improves performance of small allocations using size-specialized allocation functions."
-        },
-        "fr": {
-          "title": "Size-Specialized Memory Allocation",
-          "summary": "Go 1.27 improves performance of small allocations using size-specialized allocation functions."
-        }
-      }
-    },
-    {
       "slug": "20260908-notion-control-which-ai-models-your-agents-can-use-5768ae4c",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1503,6 +1523,126 @@
       }
     },
     {
+      "slug": "20261016-supabase-supabase-middleware-10-c639ad09",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/supabase-middleware-1-0",
+      "publishedAt": "2026-10-16T11:18:37.614Z",
+      "discoveredAt": "2026-10-16T11:18:37.614Z",
+      "locales": {
+        "en": {
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
+        },
+        "fr": {
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
+        }
+      }
+    },
+    {
+      "slug": "20261016-vercel-liquid-ais-d1-ultra-now-available-on-ai-gateway-call-liqu-7810597d",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/liquid-ais-d1-ultra-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-16T11:18:37.614Z",
+      "discoveredAt": "2026-10-16T11:18:37.614Z",
+      "locales": {
+        "en": {
+          "title": "Liquid AI's d1-ultra now available on AI Gateway Call Liquid AI's d1-ultra through Vercel AI Gateway with one API key, unified spend tracking, and request logs. Jerilyn Zheng, Zachary Chen",
+          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
+        },
+        "fr": {
+          "title": "Liquid AI's d1-ultra now available on AI Gateway Call Liquid AI's d1-ultra through Vercel AI Gateway with one API key, unified spend tracking, and request logs. Jerilyn Zheng, Zachary Chen",
+          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
+        }
+      }
+    },
+    {
+      "slug": "20261015-nvidia-validate-gpu-cluster-readiness-before-ai-workloads-land-a69161c4",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land/",
+      "publishedAt": "2026-10-15T18:13:31.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
+        },
+        "fr": {
+          "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+          "summary": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training..."
+        }
+      }
+    },
+    {
+      "slug": "20261001-docker-trust-docker-for-the-agents-you-dont-f08e107a",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-cloud-sandboxes-wearedevelopers-recap/",
+      "publishedAt": "2026-10-01T18:26:12.000Z",
+      "discoveredAt": "2026-10-01T22:39:35.689Z",
+      "locales": {
+        "en": {
+          "title": "Trust Docker for the agents you don’t",
+          "summary": "At WeAreDevelopers, Docker introduced Cloud Sandboxes, the open Sandbox Kit specification, and a commitment to bring Kits to the CNCF for neutral governance."
+        },
+        "fr": {
+          "title": "Trust Docker for the agents you don’t",
+          "summary": "At WeAreDevelopers, Docker introduced Cloud Sandboxes, the open Sandbox Kit specification, and a commitment to bring Kits to the CNCF for neutral governance."
+        }
+      }
+    },
+    {
+      "slug": "20261015-github-download-github-code-quality-license-usage-as-a-csv-a0a3bd71",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
+      "publishedAt": "2026-10-15T20:11:26.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "Download GitHub Code Quality license usage as a CSV",
+          "summary": "You can now download a CSV report of your GitHub Code Quality license usage to reconcile your license count with your own records. The report includes: Each active committer who… The post Download GitHub Code Quality li…"
+        },
+        "fr": {
+          "title": "Download GitHub Code Quality license usage as a CSV",
+          "summary": "You can now download a CSV report of your GitHub Code Quality license usage to reconcile your license count with your own records. The report includes: Each active committer who… The post Download GitHub Code Quality li…"
+        }
+      }
+    },
+    {
+      "slug": "20261014-cloudflare-yandex-outage-data-shows-that-instead-of-going-dark-m-aad24f89",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/yandex-outage/",
+      "publishedAt": "2026-10-14T20:24:19.000Z",
+      "discoveredAt": "2026-10-14T21:38:48.576Z",
+      "locales": {
+        "en": {
+          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
+          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
+        },
+        "fr": {
+          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
+          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
+        }
+      }
+    },
+    {
       "slug": "20260928-nist-nist-provides-updates-on-national-construction-safety-team--dd6ce6ec",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -1519,46 +1659,6 @@
         "fr": {
           "title": "NIST Provides Updates on National Construction Safety Team Activities",
           "summary": "The presentations highlighted the importance of NIST applying its own expertise and the expertise of others through collaborations and contracts."
-        }
-      }
-    },
-    {
-      "slug": "20261015-supabase-public-alpha-supabase-go-sdk-107ff49a",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
-      "publishedAt": "2026-10-15T21:20:25.847Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "[Public Alpha] Supabase Go SDK",
-          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
-        },
-        "fr": {
-          "title": "[Public Alpha] Supabase Go SDK",
-          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
-        }
-      }
-    },
-    {
-      "slug": "20261015-vercel-vercel-daemons-is-now-in-public-beta-run-queue-consumers--9100b772",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-daemons-is-now-in-public-beta",
-      "publishedAt": "2026-10-15T21:20:25.847Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Vercel Daemons is now in public beta Run queue consumers, workflow workers, and self-hosted CI runners on Vercel. +2 Steren, Gal Schlezinger, and 2 others",
-          "summary": "+2 Jas Garcha, Krish Krish, and 2 others"
-        },
-        "fr": {
-          "title": "Vercel Daemons is now in public beta Run queue consumers, workflow workers, and self-hosted CI runners on Vercel. +2 Steren, Gal Schlezinger, and 2 others",
-          "summary": "+2 Jas Garcha, Krish Krish, and 2 others"
         }
       }
     },
@@ -1583,102 +1683,62 @@
       }
     },
     {
-      "slug": "20261015-github-agentic-autofix-for-code-scanning-alerts-general-availabi-b7ac4657",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
-      "publishedAt": "2026-10-15T13:49:20.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Agentic autofix for code scanning alerts general availability",
-          "summary": "Agentic autofix for code scanning alerts is now generally available. It remediates alerts by working across your codebase the way a developer would: it explores relevant files, proposes a fix,… The post Agentic autofix…"
-        },
-        "fr": {
-          "title": "Agentic autofix for code scanning alerts general availability",
-          "summary": "Agentic autofix for code scanning alerts is now generally available. It remediates alerts by working across your codebase the way a developer would: it explores relevant files, proposes a fix,… The post Agentic autofix…"
-        }
-      }
-    },
-    {
-      "slug": "20261015-hugging-face-welcome-flux3-image-klein-in-diffusers-3733c75a",
+      "slug": "20261015-hugging-face-welcome-muse-spark-open-open-weight-frontier-multim-9d251ac6",
       "toolName": "Hugging Face",
       "category": "AI Platform",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/flux-3",
+      "href": "https://huggingface.co/blog/meta-muse-spark-open",
       "publishedAt": "2026-10-15T00:00:00.000Z",
       "discoveredAt": "2026-10-15T21:20:25.847Z",
       "locales": {
         "en": {
-          "title": "Welcome FLUX.3 Image Klein in Diffusers",
-          "summary": "Welcome FLUX.3 Image Klein in Diffusers"
+          "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+          "summary": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta"
         },
         "fr": {
-          "title": "Welcome FLUX.3 Image Klein in Diffusers",
-          "summary": "Welcome FLUX.3 Image Klein in Diffusers"
+          "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+          "summary": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta"
         }
       }
     },
     {
-      "slug": "20261015-kubernetes-manage-kubernetes-node-fleets-with-nodewright-6b35eb72",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
-      "publishedAt": "2026-10-15T18:13:31.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
-        },
-        "fr": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
-        }
-      }
-    },
-    {
-      "slug": "20261014-openai-platform-sentinelone-cuts-malware-analysis-from-weeks-to--24cc989c",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
+      "slug": "20261014-chatgpt-amp-puts-ai-agents-to-work-beyond-code-with-openai-model-a0e0fec2",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/sentinelone",
+      "href": "https://openai.com/index/amp-beyond-coding",
       "publishedAt": "2026-10-14T12:00:00.000Z",
       "discoveredAt": "2026-10-14T21:38:48.576Z",
       "locales": {
         "en": {
-          "title": "SentinelOne cuts malware analysis from weeks to hours",
-          "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats."
+          "title": "Amp puts AI agents to work beyond code with OpenAI models",
+          "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT."
         },
         "fr": {
-          "title": "SentinelOne cuts malware analysis from weeks to hours",
-          "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats."
+          "title": "Amp puts AI agents to work beyond code with OpenAI models",
+          "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT."
         }
       }
     },
     {
-      "slug": "20261014-cloudflare-inside-hyperdrive-how-we-solved-a-rare-hyperdrive-mys-3dc14211",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/hyperdrive-mysql/",
-      "publishedAt": "2026-10-14T13:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
+      "slug": "20260916-go-size-specialized-memory-allocation-1f279c61",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/size-specialized-allocations",
+      "publishedAt": "2026-09-16T00:00:00.000Z",
+      "discoveredAt": "2026-09-16T21:16:10.587Z",
       "locales": {
         "en": {
-          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
-          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
+          "title": "Size-Specialized Memory Allocation",
+          "summary": "Go 1.27 improves performance of small allocations using size-specialized allocation functions."
         },
         "fr": {
-          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
-          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
+          "title": "Size-Specialized Memory Allocation",
+          "summary": "Go 1.27 improves performance of small allocations using size-specialized allocation functions."
         }
       }
     },
@@ -1719,26 +1779,6 @@
         "fr": {
           "title": "Introducing pglifecycle 2.0 beta",
           "summary": "I’m pleased to announce the first public release of pglifecycle , an open source schema management tool for PostgreSQL. pglifecycle keeps your database schema in version control as structured YAML, with one file for eac…"
-        }
-      }
-    },
-    {
-      "slug": "20260924-docker-manufacturing-trust-for-ai-agents-dockers-wearedevelopers-65334462",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/manufacturing-trust-for-ai-agents-keynote/",
-      "publishedAt": "2026-09-24T17:15:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
-      "locales": {
-        "en": {
-          "title": "Manufacturing Trust for AI Agents | Docker’s WeAreDevelopers Keynote",
-          "summary": "Docker's WeAreDevelopers keynote shows how Sandboxes, Kits, and Cloud Sandboxes give AI agents strong isolation and reproducible authority."
-        },
-        "fr": {
-          "title": "Manufacturing Trust for AI Agents | Docker’s WeAreDevelopers Keynote",
-          "summary": "Docker's WeAreDevelopers keynote shows how Sandboxes, Kits, and Cloud Sandboxes give AI agents strong isolation and reproducible authority."
         }
       }
     },
@@ -1803,26 +1843,6 @@
       }
     },
     {
-      "slug": "20260902-go-goroutine-leak-profiles-e3884685",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/goroutine-leak-profiles",
-      "publishedAt": "2026-09-02T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Goroutine Leak Profiles",
-          "summary": "Goroutine Leak Profiles"
-        },
-        "fr": {
-          "title": "Goroutine Leak Profiles",
-          "summary": "Goroutine Leak Profiles"
-        }
-      }
-    },
-    {
       "slug": "20260827-notion-ask-your-agent-to-suggest-edits-3d228486",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1883,6 +1903,126 @@
       }
     },
     {
+      "slug": "20261015-supabase-status-page-moves-to-incidentio-7e1c5736",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
+      "source": "Supabase Changelog",
+      "sourceFeed": "https://supabase.com/changelog",
+      "href": "https://supabase.com/changelog/status-page-migration",
+      "publishedAt": "2026-10-15T21:20:25.847Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+        },
+        "fr": {
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+        }
+      }
+    },
+    {
+      "slug": "20261016-vercel-bring-your-own-cloud-on-aws-is-now-generally-available-br-4269a097",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/bring-your-own-cloud-on-aws-is-now-generally-available",
+      "publishedAt": "2026-10-16T11:18:37.614Z",
+      "discoveredAt": "2026-10-16T11:18:37.614Z",
+      "locales": {
+        "en": {
+          "title": "Bring Your Own Cloud on AWS is now generally available Bring Your Own Cloud on AWS is now generally available on Vercel. +2 Shilpa Apte, Javi Velasco, and 2 others",
+          "summary": "Tom Lienard, Marc Codina Segura, and 3 others"
+        },
+        "fr": {
+          "title": "Bring Your Own Cloud on AWS is now generally available Bring Your Own Cloud on AWS is now generally available on Vercel. +2 Shilpa Apte, Javi Velasco, and 2 others",
+          "summary": "Tom Lienard, Marc Codina Segura, and 3 others"
+        }
+      }
+    },
+    {
+      "slug": "20261015-kubernetes-manage-kubernetes-node-fleets-with-nodewright-6b35eb72",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
+      "publishedAt": "2026-10-15T18:13:31.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "Manage Kubernetes Node Fleets with NodeWright",
+          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
+        },
+        "fr": {
+          "title": "Manage Kubernetes Node Fleets with NodeWright",
+          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
+        }
+      }
+    },
+    {
+      "slug": "20260924-docker-manufacturing-trust-for-ai-agents-dockers-wearedevelopers-65334462",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/manufacturing-trust-for-ai-agents-keynote/",
+      "publishedAt": "2026-09-24T17:15:00.000Z",
+      "discoveredAt": "2026-09-24T21:29:30.940Z",
+      "locales": {
+        "en": {
+          "title": "Manufacturing Trust for AI Agents | Docker’s WeAreDevelopers Keynote",
+          "summary": "Docker's WeAreDevelopers keynote shows how Sandboxes, Kits, and Cloud Sandboxes give AI agents strong isolation and reproducible authority."
+        },
+        "fr": {
+          "title": "Manufacturing Trust for AI Agents | Docker’s WeAreDevelopers Keynote",
+          "summary": "Docker's WeAreDevelopers keynote shows how Sandboxes, Kits, and Cloud Sandboxes give AI agents strong isolation and reproducible authority."
+        }
+      }
+    },
+    {
+      "slug": "20261015-github-copilot-upcoming-deprecation-of-selected-github-copilot-m-818ecaf7",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+      "publishedAt": "2026-10-15T19:35:13.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+          "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date… The post Upc…"
+        },
+        "fr": {
+          "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+          "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date… The post Upc…"
+        }
+      }
+    },
+    {
+      "slug": "20261014-cloudflare-inside-hyperdrive-how-we-solved-a-rare-hyperdrive-mys-3dc14211",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/hyperdrive-mysql/",
+      "publishedAt": "2026-10-14T13:00:00.000Z",
+      "discoveredAt": "2026-10-14T21:38:48.576Z",
+      "locales": {
+        "en": {
+          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
+          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
+        },
+        "fr": {
+          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
+          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
+        }
+      }
+    },
+    {
       "slug": "20260918-nist-nist-awards-more-than-17-million-to-support-cybersecurity-w-e597abb2",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -1899,46 +2039,6 @@
         "fr": {
           "title": "NIST Awards More Than $1.7 Million to Support Cybersecurity Workforce Development Across 8 States",
           "summary": "Projects will address local cybersecurity workforce needs and will offer practical learning opportunities including internships, apprenticeships and hands-on projects."
-        }
-      }
-    },
-    {
-      "slug": "20261015-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
-      "source": "Supabase Changelog",
-      "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
-      "publishedAt": "2026-10-15T11:24:29.111Z",
-      "discoveredAt": "2026-10-15T11:24:29.111Z",
-      "locales": {
-        "en": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
-        },
-        "fr": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
-        }
-      }
-    },
-    {
-      "slug": "20261015-vercel-muse-spark-open-now-available-on-ai-gateway-call-metas-mu-7e98fbae",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/muse-spark-open-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-15T21:20:25.847Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Muse Spark Open now available on AI Gateway Call Meta's Muse Spark Open through Vercel AI Gateway with one API key, no provider account, automatic fallbacks, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
-        },
-        "fr": {
-          "title": "Muse Spark Open now available on AI Gateway Call Meta's Muse Spark Open through Vercel AI Gateway with one API key, no provider account, automatic fallbacks, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
         }
       }
     },
@@ -1963,102 +2063,62 @@
       }
     },
     {
-      "slug": "20261015-github-email-notifications-for-repository-push-events-have-been--5fff4f29",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-email-notifications-for-repository-push-events-have-been-retired",
-      "publishedAt": "2026-10-15T13:42:19.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Email notifications for repository push events have been retired",
-          "summary": "As of October 15, 2026, email notifications for repository push events have been retired and are no longer sent. We shut down this feature to help prevent spam and abuse.… The post Email notifications for repository pus…"
-        },
-        "fr": {
-          "title": "Email notifications for repository push events have been retired",
-          "summary": "As of October 15, 2026, email notifications for repository push events have been retired and are no longer sent. We shut down this feature to help prevent spam and abuse.… The post Email notifications for repository pus…"
-        }
-      }
-    },
-    {
-      "slug": "20261014-hugging-face-hiro-acev2-simulating-extreme-weather-at-3-km-resol-672ebf75",
+      "slug": "20261015-hugging-face-welcome-flux3-image-klein-in-diffusers-3733c75a",
       "toolName": "Hugging Face",
       "category": "AI Platform",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/hiro-acev2",
-      "publishedAt": "2026-10-14T16:12:42.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
-      "locales": {
-        "en": {
-          "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
-          "summary": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost"
-        },
-        "fr": {
-          "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
-          "summary": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost"
-        }
-      }
-    },
-    {
-      "slug": "20261015-nvidia-efficient-moe-training-for-biological-foundation-models-dbf88787",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/efficient-moe-training-for-biological-foundation-models/",
-      "publishedAt": "2026-10-15T18:13:30.000Z",
+      "href": "https://huggingface.co/blog/flux-3",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
       "discoveredAt": "2026-10-15T21:20:25.847Z",
       "locales": {
         "en": {
-          "title": "Efficient MoE Training for Biological Foundation Models",
-          "summary": "As language models grow, scaling dense architectures becomes increasingly expensive. In a dense transformer, every token passes through every layer, so adding..."
+          "title": "Welcome FLUX.3 Image Klein in Diffusers",
+          "summary": "Welcome FLUX.3 Image Klein in Diffusers"
         },
         "fr": {
-          "title": "Efficient MoE Training for Biological Foundation Models",
-          "summary": "As language models grow, scaling dense architectures becomes increasingly expensive. In a dense transformer, every token passes through every layer, so adding..."
+          "title": "Welcome FLUX.3 Image Klein in Diffusers",
+          "summary": "Welcome FLUX.3 Image Klein in Diffusers"
         }
       }
     },
     {
-      "slug": "20261014-openai-platform-how-block-is-building-ai-powered-security-with-o-7d10f0dd",
+      "slug": "20261014-openai-platform-sentinelone-cuts-malware-analysis-from-weeks-to--24cc989c",
       "toolName": "OpenAI Platform",
       "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/block-ai-powered-security",
-      "publishedAt": "2026-10-14T07:00:00.000Z",
-      "discoveredAt": "2026-10-15T11:24:29.111Z",
+      "href": "https://openai.com/index/sentinelone",
+      "publishedAt": "2026-10-14T12:00:00.000Z",
+      "discoveredAt": "2026-10-14T21:38:48.576Z",
       "locales": {
         "en": {
-          "title": "How Block is building AI-powered security with OpenAI technology",
-          "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes."
+          "title": "SentinelOne cuts malware analysis from weeks to hours",
+          "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats."
         },
         "fr": {
-          "title": "How Block is building AI-powered security with OpenAI technology",
-          "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes."
+          "title": "SentinelOne cuts malware analysis from weeks to hours",
+          "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats."
         }
       }
     },
     {
-      "slug": "20261013-cloudflare-under-the-hood-off-the-hot-path-how-d1-scales-to-mill-6ec21beb",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/d1-control-plane/",
-      "publishedAt": "2026-10-13T16:20:18.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "slug": "20260902-go-goroutine-leak-profiles-e3884685",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/goroutine-leak-profiles",
+      "publishedAt": "2026-09-02T00:00:00.000Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
       "locales": {
         "en": {
-          "title": "Under the hood, off the hot path: How D1 scales to millions of databases",
-          "summary": "A deep dive into how D1 architected its control plane to scale and manage millions of databases, while keeping data plane query operations at the edge. We share guiding principles on how to build on the Developer Platfo…"
+          "title": "Goroutine Leak Profiles",
+          "summary": "Goroutine Leak Profiles"
         },
         "fr": {
-          "title": "Under the hood, off the hot path: How D1 scales to millions of databases",
-          "summary": "A deep dive into how D1 architected its control plane to scale and manage millions of databases, while keeping data plane query operations at the edge. We share guiding principles on how to build on the Developer Platfo…"
+          "title": "Goroutine Leak Profiles",
+          "summary": "Goroutine Leak Profiles"
         }
       }
     },
@@ -2099,26 +2159,6 @@
         "fr": {
           "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
           "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the…"
-        }
-      }
-    },
-    {
-      "slug": "20260924-docker-from-dockerfile-to-kit-the-docker-sandboxes-kit-specifica-d28cb3fe",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-sandbox-kit-spec/",
-      "publishedAt": "2026-09-24T16:00:00.000Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
-      "locales": {
-        "en": {
-          "title": "From Dockerfile to Kit: the Docker Sandboxes Kit Specification",
-          "summary": "Docker's Sandbox Kit Specification v3 packages an AI agent's network rules, credentials, and volumes as an ordinary, pinnable OCI image."
-        },
-        "fr": {
-          "title": "From Dockerfile to Kit: the Docker Sandboxes Kit Specification",
-          "summary": "Docker's Sandbox Kit Specification v3 packages an AI agent's network rules, credentials, and volumes as an ordinary, pinnable OCI image."
         }
       }
     },
@@ -2183,26 +2223,6 @@
       }
     },
     {
-      "slug": "20260826-go-generic-methods-daf7f81f",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/generic-methods",
-      "publishedAt": "2026-08-26T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Generic Methods",
-          "summary": "Generic Methods"
-        },
-        "fr": {
-          "title": "Generic Methods",
-          "summary": "Generic Methods"
-        }
-      }
-    },
-    {
       "slug": "20260818-notion-your-developer-portal-now-in-the-sidebar-7b336ba1",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -2263,142 +2283,122 @@
       }
     },
     {
-      "slug": "20260915-nist-nist-finalizes-guidelines-on-protecting-online-identity-and-fce54ff4",
-      "toolName": "NIST",
-      "category": "Security & Standards",
-      "source": "NIST News",
-      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/09/nist-finalizes-guidelines-protecting-online-identity-and-access-tokens",
-      "publishedAt": "2026-09-15T12:00:00.000Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
-      "locales": {
-        "en": {
-          "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
-          "summary": "The finalized publication is designed to help organizations take effective steps to avoid exposing tokens to attackers."
-        },
-        "fr": {
-          "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
-          "summary": "The finalized publication is designed to help organizations take effective steps to avoid exposing tokens to attackers."
-        }
-      }
-    },
-    {
-      "slug": "20261015-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "slug": "20261015-supabase-public-alpha-supabase-go-sdk-107ff49a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/no-access-org-role",
-      "publishedAt": "2026-10-15T11:24:29.111Z",
-      "discoveredAt": "2026-10-15T11:24:29.111Z",
-      "locales": {
-        "en": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
-        },
-        "fr": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
-        }
-      }
-    },
-    {
-      "slug": "20261015-vercel-vercel-connect-now-supports-secure-compute-connectors-can-79fd9ba9",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-connect-secure-compute",
+      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
       "publishedAt": "2026-10-15T21:20:25.847Z",
       "discoveredAt": "2026-10-15T21:20:25.847Z",
       "locales": {
         "en": {
-          "title": "Vercel Connect now supports Secure Compute Connectors can now reach providers that restrict access by IP address, using your Secure Compute network’s static IPs. +2 Dima Voytenko, Hedi Zandi, and 2 others",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         },
         "fr": {
-          "title": "Vercel Connect now supports Secure Compute Connectors can now reach providers that restrict access by IP address, using your Secure Compute network’s static IPs. +2 Dima Voytenko, Hedi Zandi, and 2 others",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         }
       }
     },
     {
-      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-introducing-the-anth-db9c3550",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
-      "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:11.392Z",
+      "slug": "20261015-vercel-introducing-token-pass-vercel-token-pass-now-in-early-acc-827aaf26",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/introducing-token-pass",
+      "publishedAt": "2026-10-15T21:20:25.847Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
       "locales": {
         "en": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
+          "summary": "15 October 15 Oct"
         },
         "fr": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
+          "summary": "15 October 15 Oct"
         }
       }
     },
     {
-      "slug": "20261014-github-copilot-hydrafusion-updates-and-new-max-option-116eea76",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
-      "publishedAt": "2026-10-14T20:01:35.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
-      "locales": {
-        "en": {
-          "title": "HydraFusion updates and new Max option",
-          "summary": "HydraFusion has an updated model pool, improved orchestration workflows, and introduces HydraFusion Max. Both HydraFusion and HydraFusion Max are available across VS Code, the GitHub Copilot app, and GitHub Copilot… The…"
-        },
-        "fr": {
-          "title": "HydraFusion updates and new Max option",
-          "summary": "HydraFusion has an updated model pool, improved orchestration workflows, and introduces HydraFusion Max. Both HydraFusion and HydraFusion Max are available across VS Code, the GitHub Copilot app, and GitHub Copilot… The…"
-        }
-      }
-    },
-    {
-      "slug": "20261013-hugging-face-run-fast-private-agents-on-device-with-lfm25-24b-a2-550c4c02",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-      "publishedAt": "2026-10-13T17:05:48.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
-      "locales": {
-        "en": {
-          "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
-          "summary": "Run fast, private agents on-device with LFM2.5-24B-A2B"
-        },
-        "fr": {
-          "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
-          "summary": "Run fast, private agents on-device with LFM2.5-24B-A2B"
-        }
-      }
-    },
-    {
-      "slug": "20261015-nvidia-introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-c-152ae0a4",
+      "slug": "20261015-nvidia-efficient-moe-training-for-biological-foundation-models-dbf88787",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning/",
+      "href": "https://developer.nvidia.com/blog/efficient-moe-training-for-biological-foundation-models/",
       "publishedAt": "2026-10-15T18:13:30.000Z",
       "discoveredAt": "2026-10-15T21:20:25.847Z",
       "locales": {
         "en": {
-          "title": "Introducing NV-Reason-CT Open 3D CT VLM for Radiologist Chain-of-Thought Reasoning",
-          "summary": "Radiology AI has made remarkable strides in detecting abnormalities across chest X-rays, pathology slides, and 2D scans. Yet one of the most clinically rich and..."
+          "title": "Efficient MoE Training for Biological Foundation Models",
+          "summary": "As language models grow, scaling dense architectures becomes increasingly expensive. In a dense transformer, every token passes through every layer, so adding..."
         },
         "fr": {
-          "title": "Introducing NV-Reason-CT Open 3D CT VLM for Radiologist Chain-of-Thought Reasoning",
-          "summary": "Radiology AI has made remarkable strides in detecting abnormalities across chest X-rays, pathology slides, and 2D scans. Yet one of the most clinically rich and..."
+          "title": "Efficient MoE Training for Biological Foundation Models",
+          "summary": "As language models grow, scaling dense architectures becomes increasingly expensive. In a dense transformer, every token passes through every layer, so adding..."
+        }
+      }
+    },
+    {
+      "slug": "20260924-docker-docker-and-cncf-partner-on-an-open-spec-for-agent-permiss-bfc64acb",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-sandbox-kit-spec-cncf/",
+      "publishedAt": "2026-09-24T16:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Docker and CNCF partner on an open spec for agent permissions",
+          "summary": "Docker is bringing the open source Sandbox Kit Spec to the CNCF, so AI agent permissions become a neutral, vendor independent standard built on OCI."
+        },
+        "fr": {
+          "title": "Docker and CNCF partner on an open spec for agent permissions",
+          "summary": "Docker is bringing the open source Sandbox Kit Spec to the CNCF, so AI agent permissions become a neutral, vendor independent standard built on OCI."
+        }
+      }
+    },
+    {
+      "slug": "20261015-github-ai-scan-for-pull-requests-generally-available-39ed69c2",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+      "publishedAt": "2026-10-15T15:04:51.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "AI Scan for pull requests generally available",
+          "summary": "Code scanning AI Scan for pull requests is now generally available. It complements CodeQL by finding vulnerabilities in pull request changes for languages and frameworks that CodeQL does not currently… The post AI Scan…"
+        },
+        "fr": {
+          "title": "AI Scan for pull requests generally available",
+          "summary": "Code scanning AI Scan for pull requests is now generally available. It complements CodeQL by finding vulnerabilities in pull request changes for languages and frameworks that CodeQL does not currently… The post AI Scan…"
+        }
+      }
+    },
+    {
+      "slug": "20261013-cloudflare-under-the-hood-off-the-hot-path-how-d1-scales-to-mill-6ec21beb",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/d1-control-plane/",
+      "publishedAt": "2026-10-13T16:20:18.000Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "locales": {
+        "en": {
+          "title": "Under the hood, off the hot path: How D1 scales to millions of databases",
+          "summary": "A deep dive into how D1 architected its control plane to scale and manage millions of databases, while keeping data plane query operations at the edge. We share guiding principles on how to build on the Developer Platfo…"
+        },
+        "fr": {
+          "title": "Under the hood, off the hot path: How D1 scales to millions of databases",
+          "summary": "A deep dive into how D1 architected its control plane to scale and manage millions of databases, while keeping data plane query operations at the edge. We share guiding principles on how to build on the Developer Platfo…"
         }
       }
     }
