@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T10:39:33.976Z",
+  "updatedAt": "2026-10-17T20:33:55.291Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -39,6 +39,26 @@
         "fr": {
           "title": "Laya decision model now available on AI Gateway, free through October 31 Laya from Convai Innovations is available on Vercel AI Gateway and free through October 31, 2026, when served by Boundless. Zachary Chen, Jerilyn Zheng",
           "summary": "1 October 1 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261017-cursor-next-older-posts-26afffcc",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/page/2",
+      "publishedAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "locales": {
+        "en": {
+          "title": "Next → Older posts",
+          "summary": "Next → Older posts"
+        },
+        "fr": {
+          "title": "Next → Older posts",
+          "summary": "Next → Older posts"
         }
       }
     },
@@ -203,26 +223,6 @@
       }
     },
     {
-      "slug": "20261016-cursor-oct-16-2026-24947120",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/cloud-agent-canvases-and-environments",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
-      "locales": {
-        "en": {
-          "title": "Oct 16, 2026",
-          "summary": "· Changelog"
-        },
-        "fr": {
-          "title": "Oct 16, 2026",
-          "summary": "· Changelog"
-        }
-      }
-    },
-    {
       "slug": "20261016-go-interactive-refactoring-in-gopls-66b01ef3",
       "toolName": "Go",
       "category": "Systems & Backend",
@@ -383,42 +383,62 @@
       }
     },
     {
-      "slug": "20261017-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
+      "slug": "20261017-supabase-status-page-moves-to-incidentio-7e1c5736",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
-      "publishedAt": "2026-10-17T10:39:33.976Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "href": "https://supabase.com/changelog/status-page-migration",
+      "publishedAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
       "locales": {
         "en": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         },
         "fr": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         }
       }
     },
     {
-      "slug": "20261017-vercel-deepseek-v41-flash-1017-now-available-on-ai-gateway-call--e5cf11d8",
+      "slug": "20261017-vercel-ai-gateway-logs-now-show-session-affinity-vercel-ai-gatew-f3b4b96b",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/deepseek-v4-1-flash-1017-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-17T10:39:33.976Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "href": "https://vercel.com/changelog/ai-gateway-logs-now-show-session-affinity",
+      "publishedAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
       "locales": {
         "en": {
-          "title": "DeepSeek V4.1 Flash 1017 now available on AI Gateway Call DeepSeek V4.1 Flash 1017 through Vercel AI Gateway with one API key, image input, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "title": "AI Gateway logs now show session affinity Vercel AI Gateway logs now group requests into sessions, with cache hit rate, cost, turns, and the coding agent behind each conversation. Sam Chitgopekar, Jerilyn Zheng",
           "summary": "17 October 17 Oct"
         },
         "fr": {
-          "title": "DeepSeek V4.1 Flash 1017 now available on AI Gateway Call DeepSeek V4.1 Flash 1017 through Vercel AI Gateway with one API key, image input, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "title": "AI Gateway logs now show session affinity Vercel AI Gateway logs now group requests into sessions, with cache hit rate, cost, turns, and the coding agent behind each conversation. Sam Chitgopekar, Jerilyn Zheng",
           "summary": "17 October 17 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261016-cursor-oct-16-2026-24947120",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/cloud-agent-canvases-and-environments",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "locales": {
+        "en": {
+          "title": "Oct 16, 2026",
+          "summary": "· Changelog"
+        },
+        "fr": {
+          "title": "Oct 16, 2026",
+          "summary": "· Changelog"
         }
       }
     },
@@ -583,26 +603,6 @@
       }
     },
     {
-      "slug": "20261013-cursor-oct-13-2026-0d06b935",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/origin-app-marketplace",
-      "publishedAt": "2026-10-13T00:00:00.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
-      "locales": {
-        "en": {
-          "title": "Oct 13, 2026",
-          "summary": "· Changelog"
-        },
-        "fr": {
-          "title": "Oct 13, 2026",
-          "summary": "· Changelog"
-        }
-      }
-    },
-    {
       "slug": "20261014-go-better-http1-connection-reuse-1f9db072",
       "toolName": "Go",
       "category": "Systems & Backend",
@@ -763,42 +763,62 @@
       }
     },
     {
-      "slug": "20261017-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "slug": "20261017-supabase-public-alpha-supabase-go-sdk-107ff49a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/no-access-org-role",
-      "publishedAt": "2026-10-17T10:39:33.976Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
+      "publishedAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
       "locales": {
         "en": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         },
         "fr": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         }
       }
     },
     {
-      "slug": "20261017-vercel-elorian-ais-glimpse-now-available-on-ai-gateway-call-elor-a256c10c",
+      "slug": "20261017-vercel-introducing-token-pass-vercel-token-pass-now-in-early-acc-827aaf26",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/elorian-ai-glimpse-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-17T10:39:33.976Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "href": "https://vercel.com/changelog/introducing-token-pass",
+      "publishedAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
       "locales": {
         "en": {
-          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces Jerilyn Zheng, Rohan Taneja, and 1 other",
-          "summary": "16 October 16 Oct"
+          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
+          "summary": "15 October 15 Oct"
         },
         "fr": {
-          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces Jerilyn Zheng, Rohan Taneja, and 1 other",
-          "summary": "16 October 16 Oct"
+          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
+          "summary": "15 October 15 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261013-cursor-oct-13-2026-0d06b935",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/origin-app-marketplace",
+      "publishedAt": "2026-10-13T00:00:00.000Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "locales": {
+        "en": {
+          "title": "Oct 13, 2026",
+          "summary": "· Changelog"
+        },
+        "fr": {
+          "title": "Oct 13, 2026",
+          "summary": "· Changelog"
         }
       }
     },
@@ -963,26 +983,6 @@
       }
     },
     {
-      "slug": "20261007-cursor-remote-control-for-local-agents-c94ae882",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/remote-control-local-agents",
-      "publishedAt": "2026-10-07T13:18:37.807Z",
-      "discoveredAt": "2026-10-07T13:18:37.807Z",
-      "locales": {
-        "en": {
-          "title": "Remote control for local agents",
-          "summary": "You can now see and reply to the local agents running on your computer from the Cursor iOS app."
-        },
-        "fr": {
-          "title": "Remote control for local agents",
-          "summary": "You can now see and reply to the local agents running on your computer from the Cursor iOS app."
-        }
-      }
-    },
-    {
       "slug": "20261002-go-arch-specific-simd-in-go-aa4c22f4",
       "toolName": "Go",
       "category": "Systems & Backend",
@@ -1143,42 +1143,62 @@
       }
     },
     {
-      "slug": "20261016-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
+      "slug": "20261017-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/multigres-private-alpha",
-      "publishedAt": "2026-10-16T21:04:25.613Z",
-      "discoveredAt": "2026-10-16T21:04:25.613Z",
-      "locales": {
-        "en": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
-        },
-        "fr": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
-        }
-      }
-    },
-    {
-      "slug": "20261017-perplexity-perplexitys-decider-v12-models-now-available-on-ai-ga-86e1f6b3",
-      "toolName": "Perplexity",
-      "category": "Research Assistant",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/perplexity-decider-v1-2-models-now-available-on-ai-gateway",
+      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
       "publishedAt": "2026-10-17T10:39:33.976Z",
       "discoveredAt": "2026-10-17T10:39:33.976Z",
       "locales": {
         "en": {
-          "title": "Perplexity's Decider V1.2 models now available on AI Gateway Call Perplexity Decider V1.2 and Decider Flash V1.2 through Vercel AI Gateway with one API key, shared budgets, and usage tracking. Jerilyn Zheng, Zachary Chen",
-          "summary": "\"/> Jerilyn Zheng, Rohan Taneja, and 1 other"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         },
         "fr": {
-          "title": "Perplexity's Decider V1.2 models now available on AI Gateway Call Perplexity Decider V1.2 and Decider Flash V1.2 through Vercel AI Gateway with one API key, shared budgets, and usage tracking. Jerilyn Zheng, Zachary Chen",
-          "summary": "\"/> Jerilyn Zheng, Rohan Taneja, and 1 other"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+        }
+      }
+    },
+    {
+      "slug": "20261017-vercel-liquid-ais-d1-ultra-now-available-on-ai-gateway-call-liqu-7810597d",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/liquid-ais-d1-ultra-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "locales": {
+        "en": {
+          "title": "Liquid AI's d1-ultra now available on AI Gateway Call Liquid AI's d1-ultra through Vercel AI Gateway with one API key, unified spend tracking, and request logs. Jerilyn Zheng, Zachary Chen",
+          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
+        },
+        "fr": {
+          "title": "Liquid AI's d1-ultra now available on AI Gateway Call Liquid AI's d1-ultra through Vercel AI Gateway with one API key, unified spend tracking, and request logs. Jerilyn Zheng, Zachary Chen",
+          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
+        }
+      }
+    },
+    {
+      "slug": "20261007-cursor-remote-control-for-local-agents-c94ae882",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/remote-control-local-agents",
+      "publishedAt": "2026-10-07T13:18:37.807Z",
+      "discoveredAt": "2026-10-07T13:18:37.807Z",
+      "locales": {
+        "en": {
+          "title": "Remote control for local agents",
+          "summary": "You can now see and reply to the local agents running on your computer from the Cursor iOS app."
+        },
+        "fr": {
+          "title": "Remote control for local agents",
+          "summary": "You can now see and reply to the local agents running on your computer from the Cursor iOS app."
         }
       }
     },
@@ -1343,26 +1363,6 @@
       }
     },
     {
-      "slug": "20260923-cursor-sep-23-2026-eefe1c88",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/rollouts-and-security-reviewer",
-      "publishedAt": "2026-09-23T00:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:36.478Z",
-      "locales": {
-        "en": {
-          "title": "Sep 23, 2026",
-          "summary": "· Changelog"
-        },
-        "fr": {
-          "title": "Sep 23, 2026",
-          "summary": "· Changelog"
-        }
-      }
-    },
-    {
       "slug": "20260924-go-platform-independent-simd-in-go-e0645c8a",
       "toolName": "Go",
       "category": "Systems & Backend",
@@ -1523,42 +1523,62 @@
       }
     },
     {
-      "slug": "20261016-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261017-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/orioledb-public-beta",
-      "publishedAt": "2026-10-16T21:04:25.613Z",
-      "discoveredAt": "2026-10-16T21:04:25.613Z",
-      "locales": {
-        "en": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
-        },
-        "fr": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
-        }
-      }
-    },
-    {
-      "slug": "20261017-vercel-vercel-daemons-is-now-in-public-beta-run-queue-consumers--9100b772",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-daemons-is-now-in-public-beta",
+      "href": "https://supabase.com/changelog/no-access-org-role",
       "publishedAt": "2026-10-17T10:39:33.976Z",
       "discoveredAt": "2026-10-17T10:39:33.976Z",
       "locales": {
         "en": {
-          "title": "Vercel Daemons is now in public beta Run queue consumers, workflow workers, and self-hosted CI runners on Vercel. +2 Steren, Gal Schlezinger, and 2 others",
-          "summary": "+2 Jas Garcha, Krish Krish, and 2 others"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         },
         "fr": {
-          "title": "Vercel Daemons is now in public beta Run queue consumers, workflow workers, and self-hosted CI runners on Vercel. +2 Steren, Gal Schlezinger, and 2 others",
-          "summary": "+2 Jas Garcha, Krish Krish, and 2 others"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+        }
+      }
+    },
+    {
+      "slug": "20261017-vercel-deepseek-v41-flash-1017-now-available-on-ai-gateway-call--e5cf11d8",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/deepseek-v4-1-flash-1017-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-17T10:39:33.976Z",
+      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "locales": {
+        "en": {
+          "title": "DeepSeek V4.1 Flash 1017 now available on AI Gateway Call DeepSeek V4.1 Flash 1017 through Vercel AI Gateway with one API key, image input, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "17 October 17 Oct"
+        },
+        "fr": {
+          "title": "DeepSeek V4.1 Flash 1017 now available on AI Gateway Call DeepSeek V4.1 Flash 1017 through Vercel AI Gateway with one API key, image input, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "17 October 17 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20260923-cursor-sep-23-2026-eefe1c88",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/rollouts-and-security-reviewer",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:36.478Z",
+      "locales": {
+        "en": {
+          "title": "Sep 23, 2026",
+          "summary": "· Changelog"
+        },
+        "fr": {
+          "title": "Sep 23, 2026",
+          "summary": "· Changelog"
         }
       }
     },
@@ -1683,22 +1703,22 @@
       }
     },
     {
-      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-introducing-the-anth-db9c3550",
+      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-building-on-our-comm-26f50496",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
       "locales": {
         "en": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
+          "summary": "Announcements 2026 Usage Policy update"
         },
         "fr": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
+          "summary": "Announcements 2026 Usage Policy update"
         }
       }
     },
@@ -1719,26 +1739,6 @@
         "fr": {
           "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
           "summary": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta"
-        }
-      }
-    },
-    {
-      "slug": "20260912-cursor-skip-to-content-da250e67",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog#main",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Skip to content",
-          "summary": ""
-        },
-        "fr": {
-          "title": "Skip to content",
-          "summary": ""
         }
       }
     },
@@ -1903,42 +1903,62 @@
       }
     },
     {
-      "slug": "20261016-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
+      "slug": "20261016-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
-      "publishedAt": "2026-10-16T11:18:37.614Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
+      "href": "https://supabase.com/changelog/multigres-private-alpha",
+      "publishedAt": "2026-10-16T21:04:25.613Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
       "locales": {
         "en": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         },
         "fr": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         }
       }
     },
     {
-      "slug": "20261017-vercel-muse-spark-open-now-available-on-ai-gateway-call-metas-mu-7e98fbae",
+      "slug": "20261017-vercel-elorian-ais-glimpse-now-available-on-ai-gateway-call-elor-a256c10c",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/muse-spark-open-now-available-on-ai-gateway",
+      "href": "https://vercel.com/changelog/elorian-ai-glimpse-now-available-on-ai-gateway",
       "publishedAt": "2026-10-17T10:39:33.976Z",
       "discoveredAt": "2026-10-17T10:39:33.976Z",
       "locales": {
         "en": {
-          "title": "Muse Spark Open now available on AI Gateway Call Meta's Muse Spark Open through Vercel AI Gateway with one API key, no provider account, automatic fallbacks, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces Jerilyn Zheng, Rohan Taneja, and 1 other",
+          "summary": "16 October 16 Oct"
         },
         "fr": {
-          "title": "Muse Spark Open now available on AI Gateway Call Meta's Muse Spark Open through Vercel AI Gateway with one API key, no provider account, automatic fallbacks, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces Jerilyn Zheng, Rohan Taneja, and 1 other",
+          "summary": "16 October 16 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20260912-cursor-skip-to-content-da250e67",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog#main",
+      "publishedAt": "2026-09-12T13:29:26.758Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Skip to content",
+          "summary": ""
+        },
+        "fr": {
+          "title": "Skip to content",
+          "summary": ""
         }
       }
     },
@@ -2063,22 +2083,22 @@
       }
     },
     {
-      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-2026-usage-policy-up-7a238471",
+      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-introducing-the-anth-db9c3550",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:11.392Z",
+      "discoveredAt": "2026-10-17T10:39:33.976Z",
       "locales": {
         "en": {
-          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
-          "summary": "Title"
+          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
+          "summary": "Building on our commitment to American scientific discovery"
         },
         "fr": {
-          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
-          "summary": "Title"
+          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
+          "summary": "Building on our commitment to American scientific discovery"
         }
       }
     },
@@ -2099,26 +2119,6 @@
         "fr": {
           "title": "Welcome FLUX.3 Image Klein in Diffusers",
           "summary": "Welcome FLUX.3 Image Klein in Diffusers"
-        }
-      }
-    },
-    {
-      "slug": "20260912-cursor-self-hosted-machines-b1ecdbca",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/self-hosted-machines",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Self-hosted machines",
-          "summary": "Cursor supports self-hosted machines , which let you keep tool execution entirely in your own network. Your codebase, build outputs, and secrets all"
-        },
-        "fr": {
-          "title": "Self-hosted machines",
-          "summary": "Cursor supports self-hosted machines , which let you keep tool execution entirely in your own network. Your codebase, build outputs, and secrets all"
         }
       }
     },
@@ -2283,42 +2283,62 @@
       }
     },
     {
-      "slug": "20261016-supabase-supabase-middleware-10-c639ad09",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
+      "slug": "20261016-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-middleware-1-0",
-      "publishedAt": "2026-10-16T11:18:37.614Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
-      "locales": {
-        "en": {
-          "title": "Supabase Middleware 1.0",
-          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
-        },
-        "fr": {
-          "title": "Supabase Middleware 1.0",
-          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
-        }
-      }
-    },
-    {
-      "slug": "20261016-vercel-reflection-ais-beam-now-available-on-ai-gateway-for-free--edc61255",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/reflection-ai-beam-now-available-on-ai-gateway-for-free",
+      "href": "https://supabase.com/changelog/orioledb-public-beta",
       "publishedAt": "2026-10-16T21:04:25.613Z",
       "discoveredAt": "2026-10-16T21:04:25.613Z",
       "locales": {
         "en": {
-          "title": "Reflection AI's Beam now available on AI Gateway for free Try Reflection AI's Beam for free for a limited time on Vercel AI Gateway with one API key, spend tracking, and request traces +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
-          "summary": "16 October 16 Oct"
+          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
+          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
         },
         "fr": {
-          "title": "Reflection AI's Beam now available on AI Gateway for free Try Reflection AI's Beam for free for a limited time on Vercel AI Gateway with one API key, spend tracking, and request traces +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
-          "summary": "16 October 16 Oct"
+          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
+          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+        }
+      }
+    },
+    {
+      "slug": "20261017-perplexity-perplexitys-decider-v12-models-now-available-on-ai-ga-86e1f6b3",
+      "toolName": "Perplexity",
+      "category": "Research Assistant",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/perplexity-decider-v1-2-models-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-17T10:39:33.976Z",
+      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "locales": {
+        "en": {
+          "title": "Perplexity's Decider V1.2 models now available on AI Gateway Call Perplexity Decider V1.2 and Decider Flash V1.2 through Vercel AI Gateway with one API key, shared budgets, and usage tracking. Jerilyn Zheng, Zachary Chen",
+          "summary": "\"/> Jerilyn Zheng, Rohan Taneja, and 1 other"
+        },
+        "fr": {
+          "title": "Perplexity's Decider V1.2 models now available on AI Gateway Call Perplexity Decider V1.2 and Decider Flash V1.2 through Vercel AI Gateway with one API key, shared budgets, and usage tracking. Jerilyn Zheng, Zachary Chen",
+          "summary": "\"/> Jerilyn Zheng, Rohan Taneja, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20260912-cursor-self-hosted-machines-b1ecdbca",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/self-hosted-machines",
+      "publishedAt": "2026-09-12T13:29:26.758Z",
+      "discoveredAt": "2026-09-12T13:29:26.758Z",
+      "locales": {
+        "en": {
+          "title": "Self-hosted machines",
+          "summary": "Cursor supports self-hosted machines , which let you keep tool execution entirely in your own network. Your codebase, build outputs, and secrets all"
+        },
+        "fr": {
+          "title": "Self-hosted machines",
+          "summary": "Cursor supports self-hosted machines , which let you keep tool execution entirely in your own network. Your codebase, build outputs, and secrets all"
         }
       }
     },
@@ -2343,62 +2363,42 @@
       }
     },
     {
-      "slug": "20261014-chatgpt-amp-puts-ai-agents-to-work-beyond-code-with-openai-model-a0e0fec2",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
+      "slug": "20261014-openai-platform-sentinelone-cuts-malware-analysis-from-weeks-to--24cc989c",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/amp-beyond-coding",
+      "href": "https://openai.com/index/sentinelone",
       "publishedAt": "2026-10-14T12:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
       "locales": {
         "en": {
-          "title": "Amp puts AI agents to work beyond code with OpenAI models",
-          "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT."
+          "title": "SentinelOne cuts malware analysis from weeks to hours",
+          "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats."
         },
         "fr": {
-          "title": "Amp puts AI agents to work beyond code with OpenAI models",
-          "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT."
+          "title": "SentinelOne cuts malware analysis from weeks to hours",
+          "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats."
         }
       }
     },
     {
-      "slug": "20260924-docker-from-dockerfile-to-kit-the-docker-sandboxes-kit-specifica-d28cb3fe",
+      "slug": "20260924-docker-docker-and-cncf-partner-on-an-open-spec-for-agent-permiss-bfc64acb",
       "toolName": "Docker",
       "category": "Developer Platform",
       "source": "Docker Blog",
       "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-sandbox-kit-spec/",
+      "href": "https://www.docker.com/blog/docker-sandbox-kit-spec-cncf/",
       "publishedAt": "2026-09-24T16:00:00.000Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
       "locales": {
         "en": {
-          "title": "From Dockerfile to Kit: the Docker Sandboxes Kit Specification",
-          "summary": "Docker's Sandbox Kit Specification v3 packages an AI agent's network rules, credentials, and volumes as an ordinary, pinnable OCI image."
+          "title": "Docker and CNCF partner on an open spec for agent permissions",
+          "summary": "Docker is bringing the open source Sandbox Kit Spec to the CNCF, so AI agent permissions become a neutral, vendor independent standard built on OCI."
         },
         "fr": {
-          "title": "From Dockerfile to Kit: the Docker Sandboxes Kit Specification",
-          "summary": "Docker's Sandbox Kit Specification v3 packages an AI agent's network rules, credentials, and volumes as an ordinary, pinnable OCI image."
-        }
-      }
-    },
-    {
-      "slug": "20261015-github-copilot-upcoming-deprecation-of-selected-github-copilot-m-818ecaf7",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
-      "publishedAt": "2026-10-15T19:35:13.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
-          "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date… The post Upc…"
-        },
-        "fr": {
-          "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
-          "summary": "We will deprecate the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on November 16th, 2026: Model Deprecation date… The post Upc…"
+          "title": "Docker and CNCF partner on an open spec for agent permissions",
+          "summary": "Docker is bringing the open source Sandbox Kit Spec to the CNCF, so AI agent permissions become a neutral, vendor independent standard built on OCI."
         }
       }
     }

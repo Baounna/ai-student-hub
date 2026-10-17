@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T10:39:32.648Z",
+  "updatedAt": "2026-10-17T20:33:54.192Z",
   "items": [
     {
       "slug": "20261016-accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros-930fe613",
@@ -3879,25 +3879,6 @@
       }
     },
     {
-      "slug": "20260902-building-reproducible-ai-evaluation-workflows-with-docker-sandbo-401ff3f4",
-      "topic": "Computer Science",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/building-reproducible-ai-evaluation-workflows-with-docker-sandboxes/",
-      "publishedAt": "2026-09-02T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Building Reproducible AI Evaluation Workflows with Docker Sandboxes",
-          "summary": "Learn how Docker Sandboxes can make AI evaluation workflows more reproducible with consistent execution, structured artifacts, and runtime evidence."
-        },
-        "fr": {
-          "title": "Building Reproducible AI Evaluation Workflows with Docker Sandboxes",
-          "summary": "Learn how Docker Sandboxes can make AI evaluation workflows more reproducible with consistent execution, structured artifacts, and runtime evidence."
-        }
-      }
-    },
-    {
       "slug": "20261008-bridging-technical-depth-and-usability-the-story-behind-radars-r-5ce64f51",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
@@ -4122,25 +4103,6 @@
         "fr": {
           "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
           "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight."
-        }
-      }
-    },
-    {
-      "slug": "20260902-below-the-harness-governing-a-multi-model-multi-harness-world-68dc5609",
-      "topic": "AI Systems",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/below-the-harness-governing-a-multi-model-multi-harness-world/",
-      "publishedAt": "2026-09-02T13:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Below the Harness: Governing a Multi-Model, Multi-Harness World",
-          "summary": "We believe the future is a multi-model, multi-harness world. And we think it needs a new trust model. In 1988, Norm Hardy described a problem that had been quietly breaking systems for years: the confused deputy. A program that t…"
-        },
-        "fr": {
-          "title": "Below the Harness: Governing a Multi-Model, Multi-Harness World",
-          "summary": "We believe the future is a multi-model, multi-harness world. And we think it needs a new trust model. In 1988, Norm Hardy described a problem that had been quietly breaking systems for years: the confused deputy. A program that t…"
         }
       }
     },
@@ -4430,25 +4392,6 @@
       }
     },
     {
-      "slug": "20260902-proactive-cyber-defense-for-governments-and-enterprises-383dbcd7",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
-      "publishedAt": "2026-09-02T16:24:24.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "Proactive cyber defense for governments and enterprises",
-          "summary": "Proactive cyber defense for governments and enterprises"
-        },
-        "fr": {
-          "title": "Proactive cyber defense for governments and enterprises",
-          "summary": "Proactive cyber defense for governments and enterprises"
-        }
-      }
-    },
-    {
       "slug": "20260922-gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foun-bcb27d91",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -4544,21 +4487,78 @@
       }
     },
     {
-      "slug": "20261015-expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia--581ab947",
-      "topic": "AI Systems",
+      "slug": "20261015-deploying-an-hstu-generative-recommender-with-nvidia-dynamo-trit-96188735",
+      "topic": "Computer Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia-scada-server-sdk/",
+      "href": "https://developer.nvidia.com/blog/deploying-an-hstu-generative-recommender-with-nvidia-dynamo-triton/",
       "publishedAt": "2026-10-15T18:13:25.000Z",
-      "discoveredAt": "2026-10-17T10:39:32.648Z",
+      "discoveredAt": "2026-10-17T20:33:54.192Z",
       "locales": {
         "en": {
-          "title": "Expanding AI Storage Access with NVIDIA cuObject and the NVIDIA SCADA Server SDK",
-          "summary": "AI infrastructure engineers, storage developers, and cloud service providers need fast and secure access to high-capacity file and object storage to support AI..."
+          "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
+          "summary": "Generative recommender (GR) systems are emerging as a powerful new approach for large-scale personalization. Instead of treating recommendation as a set of..."
         },
         "fr": {
-          "title": "Expanding AI Storage Access with NVIDIA cuObject and the NVIDIA SCADA Server SDK",
-          "summary": "AI infrastructure engineers, storage developers, and cloud service providers need fast and secure access to high-capacity file and object storage to support AI..."
+          "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
+          "summary": "Generative recommender (GR) systems are emerging as a powerful new approach for large-scale personalization. Instead of treating recommendation as a set of..."
+        }
+      }
+    },
+    {
+      "slug": "20261012-deploy-decision-models-with-llamacpp-on-amazon-sagemaker-ai-5314a62a",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/deploy-decision-models-with-llama-cpp-on-amazon-sagemaker-ai/",
+      "publishedAt": "2026-10-12T15:51:46.000Z",
+      "discoveredAt": "2026-10-17T20:33:54.192Z",
+      "locales": {
+        "en": {
+          "title": "Deploy decision models with llama.cpp on Amazon SageMaker AI",
+          "summary": "Learn how to deploy decision models with llama.cpp on Amazon SageMaker AI. This technical how-to serves OpenAI-compatible chat completions with the AWS Deep Learning Container for llama.cpp, then extends the runtime with SemIf to…"
+        },
+        "fr": {
+          "title": "Deploy decision models with llama.cpp on Amazon SageMaker AI",
+          "summary": "Learn how to deploy decision models with llama.cpp on Amazon SageMaker AI. This technical how-to serves OpenAI-compatible chat completions with the AWS Deep Learning Container for llama.cpp, then extends the runtime with SemIf to…"
+        }
+      }
+    },
+    {
+      "slug": "20261008-pollo-ai-turns-creative-ideas-into-campaigns-with-openai-ca1ec6c6",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/pollo-ai",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "discoveredAt": "2026-10-17T20:33:54.192Z",
+      "locales": {
+        "en": {
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
+        },
+        "fr": {
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
+        }
+      }
+    },
+    {
+      "slug": "20261005-everything-we-launched-during-birthday-week-2026-0536bfa8",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "discoveredAt": "2026-10-17T20:33:54.192Z",
+      "locales": {
+        "en": {
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+        },
+        "fr": {
+          "title": "Everything we launched during Birthday Week 2026",
+          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
         }
       }
     }
