@@ -1,6 +1,6 @@
-# Internship candidates — 2026-10-10
+# Internship candidates — 2026-10-18
 
-32 postings that match internship + AI/cyber and are not on the board yet.
+18 postings that match internship + AI/cyber and are not on the board yet.
 
 **Open each link before adding it.** That is the one step this agent does not do,
 and it is the reason the board is worth reading: the site tells a student every
@@ -17,22 +17,13 @@ Databricks · San Francisco, California · via greenhouse
 npm run add:stage -- --role 'PhD GenAI Research Scientist Intern' --company 'Databricks' --city 'San Francisco, California' --deadline rolling --link 'https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002'
 ```
 
-### Working Student B2C SEO & AI Search (x/f/m)
-Doctolib · Berlin, Berlin, Germany · via greenhouse
+### Hardware Security Engineer Intern (Summer 2027)
+Together AI · San Francisco · via greenhouse
 
-<https://job-boards.greenhouse.io/doctolib/jobs/8010483003>
-
-```
-npm run add:stage -- --role 'Working Student B2C SEO & AI Search (x/f/m)' --company 'Doctolib' --city 'Berlin, Berlin' --country DE --deadline rolling --link 'https://job-boards.greenhouse.io/doctolib/jobs/8010483003'
-```
-
-### Security Engineer Intern [Winter 2027]
-Figure AI · San Jose, CA · via greenhouse
-
-<https://job-boards.greenhouse.io/figureai/jobs/4719593006>
+<https://job-boards.greenhouse.io/togetherai/jobs/5238469007>
 
 ```
-npm run add:stage -- --role 'Security Engineer Intern [Winter 2027]' --company 'Figure AI' --city 'San Jose' --country CA --deadline rolling --link 'https://job-boards.greenhouse.io/figureai/jobs/4719593006'
+npm run add:stage -- --role 'Hardware Security Engineer Intern (Summer 2027)' --company 'Together AI' --city 'San Francisco' --deadline rolling --link 'https://job-boards.greenhouse.io/togetherai/jobs/5238469007'
 ```
 
 ### ML Research Intern
@@ -71,51 +62,6 @@ Perplexity · London · via ashby
 npm run add:stage -- --role 'Internship - Search Machine Learning Engineer' --company 'Perplexity' --city 'London' --deadline rolling --link 'https://jobs.ashbyhq.com/perplexity/71168628-1998-47d3-87a9-be7bc56a430d'
 ```
 
-### AI & Data Quality Improvement Internship
-Robert Bosch · Beograd, rs · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/BoschGroup/744000154627659>
-
-```
-npm run add:stage -- --role 'AI & Data Quality Improvement Internship' --company 'Robert Bosch' --city 'Beograd, rs' --deadline rolling --link 'https://jobs.smartrecruiters.com/BoschGroup/744000154627659'
-```
-
-### AI Analytics & Data Visualization - Stage de fin d'études (H/F)
-Wavestone · Puteaux, fr · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000154094559>
-
-```
-npm run add:stage -- --role 'AI Analytics & Data Visualization - Stage de fin d'\''études (H/F)' --company 'Wavestone' --city 'Puteaux' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000154094559'
-```
-
-### Comment optimiser les processus opérationnels en tirant profit de la GenAI afin d’assurer une livraison de bout en bout en garantissant la qualité de ces services en interne ? (Stage de fin d'études)
-Wavestone · Paris, fr · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000153673721>
-
-```
-npm run add:stage -- --role 'Comment optimiser les processus opérationnels en tirant profit de la GenAI afin d’assurer une livraison de bout en bout en garantissant la qualité de ces services en interne ? (Stage de fin d'\''études)' --company 'Wavestone' --city 'Paris' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000153673721'
-```
-
-### Workplace Security : Poste de travail moderne : comment éviter sa compromission ? (Stage de fin d'études)
-Wavestone · Paris, fr · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000153673789>
-
-```
-npm run add:stage -- --role 'Workplace Security : Poste de travail moderne : comment éviter sa compromission ? (Stage de fin d'\''études)' --company 'Wavestone' --city 'Paris' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000153673789'
-```
-
-### Internship Wavestone Luxembourg - Cybersecurity & Artificial Intelligence Consulting
-Wavestone · Leideleng, lu · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000151373865>
-
-```
-npm run add:stage -- --role 'Internship Wavestone Luxembourg - Cybersecurity & Artificial Intelligence Consulting' --company 'Wavestone' --city 'Leideleng' --country LU --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000151373865'
-```
-
 ### AI Engineering & Platforms - Stage de fin d'études (H/F)
 Wavestone · Puteaux, fr · via smartrecruiters
 
@@ -143,60 +89,6 @@ Wavestone · Puteaux, fr · via smartrecruiters
 npm run add:stage -- --role 'AI Strategy & Business Transformation - Stage de fin d'\''études (H/F)' --company 'Wavestone' --city 'Puteaux' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000151055869'
 ```
 
-### Stage de fin d’études — MLOps & IA en production : fiabilisation, optimisation et scalabilité des modèles (H/F)
-Wavestone · Puteaux, fr · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000150135669>
-
-```
-npm run add:stage -- --role 'Stage de fin d’études — MLOps & IA en production : fiabilisation, optimisation et scalabilité des modèles (H/F)' --company 'Wavestone' --city 'Puteaux' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000150135669'
-```
-
-### Stage Conseil en cybersécurité – SOC augmentés par l’IA
-Wavestone · Grand-lancy, ch · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000150133867>
-
-```
-npm run add:stage -- --role 'Stage Conseil en cybersécurité – SOC augmentés par l’IA' --company 'Wavestone' --city 'Grand-lancy' --country CH --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000150133867'
-```
-
-### Stage de fin d’études — LLM-as-a-Judge : évaluation automatique, fiabilité et qualité des modèles d’IA (H/F)
-Wavestone · Puteaux, fr · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000150135369>
-
-```
-npm run add:stage -- --role 'Stage de fin d’études — LLM-as-a-Judge : évaluation automatique, fiabilité et qualité des modèles d’IA (H/F)' --company 'Wavestone' --city 'Puteaux' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000150135369'
-```
-
-### Stage de fin d’études — Stratégie, gouvernance et sécurité de l’IA en entreprise (H/F)
-Wavestone · Puteaux, fr · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000150132230>
-
-```
-npm run add:stage -- --role 'Stage de fin d’études — Stratégie, gouvernance et sécurité de l’IA en entreprise (H/F)' --company 'Wavestone' --city 'Puteaux' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000150132230'
-```
-
-### Stage Conseil en Cybersécurité – Système multi-agents pour des tests d’intrusion assistés par IA
-Wavestone · Grand-lancy, ch · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000150123471>
-
-```
-npm run add:stage -- --role 'Stage Conseil en Cybersécurité – Système multi-agents pour des tests d’intrusion assistés par IA' --company 'Wavestone' --city 'Grand-lancy' --country CH --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000150123471'
-```
-
-### Stage conseil en cybersécurité – AI Gateway : benchmark des solutions et sécurisation de la passerelle IA
-Wavestone · Grand-lancy, ch · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000150109669>
-
-```
-npm run add:stage -- --role 'Stage conseil en cybersécurité – AI Gateway : benchmark des solutions et sécurisation de la passerelle IA' --company 'Wavestone' --city 'Grand-lancy' --country CH --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000150109669'
-```
-
 ### Custom SOC Intern - 2027
 NVIDIA · China, Shanghai · via workday
 
@@ -222,15 +114,6 @@ NVIDIA · US, CA, Santa Clara · via workday
 
 ```
 npm run add:stage -- --role 'PhD Research Intern, Generative AI - 2026' --company 'NVIDIA' --city 'Santa Clara' --country US --deadline rolling --link 'https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--Generative-AI---2026_JR2016035'
-```
-
-### Applied Research Intern, NLP - Fall 2026
-NVIDIA · US, CA, Santa Clara · via workday
-
-<https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Research-Intern--NLP---Fall-2026_JR2010488>
-
-```
-npm run add:stage -- --role 'Applied Research Intern, NLP - Fall 2026' --company 'NVIDIA' --city 'Santa Clara' --country US --deadline rolling --link 'https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Research-Intern--NLP---Fall-2026_JR2010488'
 ```
 
 ### AI Developer Technology Intern - 2027
@@ -269,30 +152,21 @@ NXP Semiconductors · Toulouse · via workday
 npm run add:stage -- --role 'Stage Ingénieur :  Vérification d’architectures d’interconnexion pour SoC automobiles (F/H)' --company 'NXP Semiconductors' --city 'Toulouse' --deadline rolling --link 'https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Toulouse/Stage-Ingnieur----Vrification-d-architectures-d-interconnexion-pour-SoC-automobiles--F-H-_R-10067015'
 ```
 
-### Internship – Digital Design & Generative AI Support (m/f/d)
-NXP Semiconductors · Gratkorn · via workday
+### AI Imaging Data Scientist Intern
+Philips · Shanghai · via workday
 
-<https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship---Digital-Design---Generative-AI-Support--m-f-d-_R-10064592>
-
-```
-npm run add:stage -- --role 'Internship – Digital Design & Generative AI Support (m/f/d)' --company 'NXP Semiconductors' --city 'Gratkorn' --deadline rolling --link 'https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship---Digital-Design---Generative-AI-Support--m-f-d-_R-10064592'
-```
-
-### Internship – Digital Verification & Generative AI Support (m/f/d)
-NXP Semiconductors · Gratkorn · via workday
-
-<https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship---Digital-Verification---Generative-AI-Support--m-f-d-_R-10064593>
+<https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Shanghai/AI-Data-Scientist-Intern_589226>
 
 ```
-npm run add:stage -- --role 'Internship – Digital Verification & Generative AI Support (m/f/d)' --company 'NXP Semiconductors' --city 'Gratkorn' --deadline rolling --link 'https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Gratkorn/Internship---Digital-Verification---Generative-AI-Support--m-f-d-_R-10064593'
+npm run add:stage -- --role 'AI Imaging Data Scientist Intern' --company 'Philips' --city 'Shanghai' --deadline rolling --link 'https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Shanghai/AI-Data-Scientist-Intern_589226'
 ```
 
-### Data, AI & Algorithm Internship – Philips Avent Experience Innovation
+### Internship: Synthetic Data Generation for Dental AI (Master)
 Philips · Eindhoven · via workday
 
-<https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Eindhoven/Data--AI---Algorithm-Internship---Philips-Avent-Experience-Innovation_586189>
+<https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Eindhoven/Internship--Synthetic-Data-Generation-for-Dental-AI--Master-_593359>
 
 ```
-npm run add:stage -- --role 'Data, AI & Algorithm Internship – Philips Avent Experience Innovation' --company 'Philips' --city 'Eindhoven' --deadline rolling --link 'https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Eindhoven/Data--AI---Algorithm-Internship---Philips-Avent-Experience-Innovation_586189'
+npm run add:stage -- --role 'Internship: Synthetic Data Generation for Dental AI (Master)' --company 'Philips' --city 'Eindhoven' --deadline rolling --link 'https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Eindhoven/Internship--Synthetic-Data-Generation-for-Dental-AI--Master-_593359'
 ```
 

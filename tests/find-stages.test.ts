@@ -55,7 +55,12 @@ describe("the internship finder", () => {
   it("refuses to publish a listing whose country it could not work out", () => {
     // Country is the filter students actually use; a guess puts a French role
     // under Morocco. Those stay in the review file for a person to place.
-    expect(AGENT).toMatch(/picked\.filter\(\(c\) => c\.country\)/);
+    expect(AGENT).toMatch(/c\.country && SERVED_COUNTRIES\.has\(c\.country\)/);
+    // And only countries this board serves. The first scheduled run tried to
+    // add a role in Shanghai, which is no use to a student in Casablanca and
+    // which nothing on the site renders a label for.
+    expect(AGENT).toContain("SERVED_COUNTRIES");
+    expect(AGENT).toMatch(/MAX_PER_COMPANY_ON_BOARD/);
   });
 
   it("keeps finance and operations roles off an AI and security board", () => {

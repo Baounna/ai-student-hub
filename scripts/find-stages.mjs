@@ -77,7 +77,38 @@ const WRITE_CAP = 15;
  * employers who have one each. The board already spreads employers when it
  * renders; this stops one of them arriving in bulk in the first place.
  */
-const PER_COMPANY_CAP = 4;
+const PER_COMPANY_CAP = 2;
+
+/**
+ * And a ceiling on how deep any employer may get on the board.
+ *
+ * A per-run cap bounds one Thursday; it does nothing about an employer
+ * accumulating over ten of them. Wavestone is already at 11 of 104 and
+ * Capgemini at 10 — and stages-order.test.ts forbids two consecutive rows from
+ * the same employer, which stops being satisfiable once one of them holds a
+ * large enough share, however the list is spread. That test failing is what
+ * stopped the first scheduled run from pushing anything at all.
+ *
+ * Twelve, because the deepest employer today is eleven and this is meant to
+ * stop the agent making the problem worse rather than to re-cut a board a
+ * person built by hand.
+ */
+const MAX_PER_COMPANY_ON_BOARD = 12;
+
+/**
+ * Countries this board is for.
+ *
+ * The first scheduled run tried to add an internship in China, and the tests
+ * stopped the whole push because nothing renders a label for CN. Adding that
+ * label would have been the wrong fix: a role in Shanghai is no use to a
+ * student in Casablanca, and the board's own country filter is the control
+ * those readers use. Europe, North Africa and North America is what this list
+ * serves, so that is what it collects.
+ */
+const SERVED_COUNTRIES = new Set([
+  "MA", "FR", "BE", "CH", "DE", "ES", "IE", "IT", "LU", "NL",
+  "PL", "PT", "SE", "GB", "AT", "DK", "FI", "NO", "CZ", "US", "CA"
+]);
 const limitArg = Number.parseInt(argv[argv.indexOf("--limit") + 1] ?? "", 10);
 const LIMIT = Number.isFinite(limitArg) && limitArg > 0 ? Math.min(limitArg, 200) : 50;
 
@@ -399,17 +430,25 @@ for (const r of sourceReport) {
  * Href alone misses a job re-posted under a new requisition id, which is common
  * enough that the same Bosch thesis would arrive every week forever.
  */
-const seenHref = new Set(stages.items.map((i) => i.href));
+/**
+ * Compared without the query string, because Greenhouse serves the same job at
+ * both /jobs/7989895003 and /jobs/7989895003?gh_jid=7989895003 and the API
+ * returns the second. Matching the raw string let one posting onto the board
+ * twice under two different ids — the same Celonis role in Madrid, listed
+ * twice, which is exactly the sloppiness a reader notices first.
+ */
+const bareUrl = (href) => String(href).split(/[?#]/)[0];
+const seenHref = new Set(stages.items.map((i) => bareUrl(i.href)));
 const seenPair = new Set(stages.items.map((i) => `${i.company}|${i.role}`.toLowerCase()));
 const fresh = candidates.filter(
-  (c) => !seenHref.has(c.href) && !seenPair.has(`${c.company}|${c.role}`.toLowerCase())
+  (c) => !seenHref.has(bareUrl(c.href)) && !seenPair.has(`${c.company}|${c.role}`.toLowerCase())
 );
 
 const unique = [];
 const seenNew = new Set();
 for (const c of fresh) {
-  if (seenNew.has(c.href)) continue;
-  seenNew.add(c.href);
+  if (seenNew.has(bareUrl(c.href))) continue;
+  seenNew.add(bareUrl(c.href));
   unique.push(c);
 }
 const picked = unique.slice(0, LIMIT);
@@ -493,12 +532,21 @@ if (!picked.length) {
  */
 let written = 0;
 if (WRITE) {
-  const placeable = picked.filter((c) => c.country);
+  const placeable = picked.filter((c) => c.country && SERVED_COUNTRIES.has(c.country));
+  // Seeded with what each employer already holds, so the ceiling counts the
+  // board and not just this run.
   const perCompany = new Map();
+  for (const item of stages.items) {
+    perCompany.set(item.company, (perCompany.get(item.company) ?? 0) + 1);
+  }
+  const addedThisRun = new Map();
   const spread = placeable.filter((c) => {
-    const seen = perCompany.get(c.company) ?? 0;
-    if (seen >= PER_COMPANY_CAP) return false;
-    perCompany.set(c.company, seen + 1);
+    const onBoard = perCompany.get(c.company) ?? 0;
+    const thisRun = addedThisRun.get(c.company) ?? 0;
+    if (onBoard >= MAX_PER_COMPANY_ON_BOARD) return false;
+    if (thisRun >= PER_COMPANY_CAP) return false;
+    perCompany.set(c.company, onBoard + 1);
+    addedThisRun.set(c.company, thisRun + 1);
     return true;
   });
   const toAdd = spread.slice(0, WRITE_CAP);
