@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T20:33:55.291Z",
+  "updatedAt": "2026-10-18T11:00:06.948Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -39,6 +39,26 @@
         "fr": {
           "title": "Laya decision model now available on AI Gateway, free through October 31 Laya from Convai Innovations is available on Vercel AI Gateway and free through October 31, 2026, when served by Boundless. Zachary Chen, Jerilyn Zheng",
           "summary": "1 October 1 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261018-postgresql-pghintplan-v190-released-48d3bd84",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_hint_plan-v190-released-3408/",
+      "publishedAt": "2026-10-18T00:00:00.000Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
+      "locales": {
+        "en": {
+          "title": "pg_hint_plan v1.9.0 Released",
+          "summary": "The pg_hint_plan development team is pleased to announce pg_hint_plan 1.9.0. This release of pg_hint_plan adds compatibility with PostgreSQL 19, and includes various improvements and bug fixes. For more details, see the…"
+        },
+        "fr": {
+          "title": "pg_hint_plan v1.9.0 Released",
+          "summary": "The pg_hint_plan development team is pleased to announce pg_hint_plan 1.9.0. This release of pg_hint_plan adds compatibility with PostgreSQL 19, and includes various improvements and bug fixes. For more details, see the…"
         }
       }
     },
@@ -263,26 +283,6 @@
       }
     },
     {
-      "slug": "20261015-postgresql-postgresql-19-rc-1-released-94ac5b10",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-19-rc-1-released-3409/",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL 19 RC 1 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the first release candidate of PostgreSQL 19 is now available for download. As a release candidate, PostgreSQL 19 RC 1 will be mostly identical to the initial relea…"
-        },
-        "fr": {
-          "title": "PostgreSQL 19 RC 1 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the first release candidate of PostgreSQL 19 is now available for download. As a release candidate, PostgreSQL 19 RC 1 will be mostly identical to the initial relea…"
-        }
-      }
-    },
-    {
       "slug": "20261014-kubernetes-why-is-my-kubernetes-job-still-pending-tracing-kueue--8c274fdc",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -383,42 +383,62 @@
       }
     },
     {
-      "slug": "20261017-supabase-status-page-moves-to-incidentio-7e1c5736",
+      "slug": "20261018-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/status-page-migration",
-      "publishedAt": "2026-10-17T20:33:55.291Z",
-      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
+      "publishedAt": "2026-10-18T11:00:06.948Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
       "locales": {
         "en": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         },
         "fr": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         }
       }
     },
     {
-      "slug": "20261017-vercel-ai-gateway-logs-now-show-session-affinity-vercel-ai-gatew-f3b4b96b",
+      "slug": "20261018-vercel-elorian-ais-glimpse-now-available-on-ai-gateway-call-elor-a256c10c",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/ai-gateway-logs-now-show-session-affinity",
-      "publishedAt": "2026-10-17T20:33:55.291Z",
-      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "href": "https://vercel.com/changelog/elorian-ai-glimpse-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-18T11:00:06.948Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
       "locales": {
         "en": {
-          "title": "AI Gateway logs now show session affinity Vercel AI Gateway logs now group requests into sessions, with cache hit rate, cost, turns, and the coding agent behind each conversation. Sam Chitgopekar, Jerilyn Zheng",
-          "summary": "17 October 17 Oct"
+          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Rohan Taneja, and 1 other",
+          "summary": "16 October 16 Oct"
         },
         "fr": {
-          "title": "AI Gateway logs now show session affinity Vercel AI Gateway logs now group requests into sessions, with cache hit rate, cost, turns, and the coding agent behind each conversation. Sam Chitgopekar, Jerilyn Zheng",
-          "summary": "17 October 17 Oct"
+          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Rohan Taneja, and 1 other",
+          "summary": "16 October 16 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261018-github-pgutlsmtp-v20-released-65b09b65",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_utl_smtp-v20-released-3395/",
+      "publishedAt": "2026-10-18T00:00:00.000Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
+      "locales": {
+        "en": {
+          "title": "pg_utl_smtp v2.0 released",
+          "summary": "Antananarivo, Madagascar - October 06, 2026 PostgreSQL UTL_SMTP compatibility extension pg_utl_smtp is a PostgreSQL extension to create, manage and use Oracle-style UTL_SMTP package. The use and behavior is just like wi…"
+        },
+        "fr": {
+          "title": "pg_utl_smtp v2.0 released",
+          "summary": "Antananarivo, Madagascar - October 06, 2026 PostgreSQL UTL_SMTP compatibility extension pg_utl_smtp is a PostgreSQL extension to create, manage and use Oracle-style UTL_SMTP package. The use and behavior is just like wi…"
         }
       }
     },
@@ -643,26 +663,6 @@
       }
     },
     {
-      "slug": "20261014-postgresql-perseid-010-is-now-available-2a994d7e",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/perseid-010-is-now-available-3405/",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
-      "locales": {
-        "en": {
-          "title": "Perseid 0.1.0 is now available",
-          "summary": "I am very pleased to announce that, after a long hiatus, Perseid 0.1.0, a set of utilities for versioning PostgreSQL database schemas, has been released. Perseid 0.1.0 is available from: Codeberg Git repository: https:/…"
-        },
-        "fr": {
-          "title": "Perseid 0.1.0 is now available",
-          "summary": "I am very pleased to announce that, after a long hiatus, Perseid 0.1.0, a set of utilities for versioning PostgreSQL database schemas, has been released. Perseid 0.1.0 is available from: Codeberg Git repository: https:/…"
-        }
-      }
-    },
-    {
       "slug": "20261006-kubernetes-the-shift-to-cgroup-v2-in-kubernetes-what-you-need-to-fc4272a4",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -763,42 +763,62 @@
       }
     },
     {
-      "slug": "20261017-supabase-public-alpha-supabase-go-sdk-107ff49a",
+      "slug": "20261018-supabase-supabase-middleware-10-c639ad09",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
-      "publishedAt": "2026-10-17T20:33:55.291Z",
-      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "href": "https://supabase.com/changelog/supabase-middleware-1-0",
+      "publishedAt": "2026-10-18T11:00:06.948Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
       "locales": {
         "en": {
-          "title": "[Public Alpha] Supabase Go SDK",
-          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
         },
         "fr": {
-          "title": "[Public Alpha] Supabase Go SDK",
-          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
         }
       }
     },
     {
-      "slug": "20261017-vercel-introducing-token-pass-vercel-token-pass-now-in-early-acc-827aaf26",
+      "slug": "20261018-vercel-reflection-ais-beam-now-available-on-ai-gateway-for-free--edc61255",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/introducing-token-pass",
-      "publishedAt": "2026-10-17T20:33:55.291Z",
-      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "href": "https://vercel.com/changelog/reflection-ai-beam-now-available-on-ai-gateway-for-free",
+      "publishedAt": "2026-10-18T11:00:06.948Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
       "locales": {
         "en": {
-          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
-          "summary": "15 October 15 Oct"
+          "title": "Reflection AI's Beam now available on AI Gateway for free Try Reflection AI's Beam for free for a limited time on Vercel AI Gateway with one API key, spend tracking, and request traces +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
+          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
         },
         "fr": {
-          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
-          "summary": "15 October 15 Oct"
+          "title": "Reflection AI's Beam now available on AI Gateway for free Try Reflection AI's Beam for free for a limited time on Vercel AI Gateway with one API key, spend tracking, and request traces +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
+          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+        }
+      }
+    },
+    {
+      "slug": "20261018-postgresql-fosdem-pgday-2027-two-days-of-postgresql-with-calls-f-a4fd570b",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/fosdem-pgday-2027-two-days-of-postgresql-with-calls-for-papers-and-sponsors-now-open-3412/",
+      "publishedAt": "2026-10-18T00:00:00.000Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
+      "locales": {
+        "en": {
+          "title": "FOSDEM PGDay 2027: two days of PostgreSQL, with calls for papers and sponsors now open!",
+          "summary": "Join us for FOSDEM PGDay 2027 on January 28 and 29 at the Brussels Marriott Hotel Grand Place . This year, we're expanding to two days, bringing you more PostgreSQL talks and more time to connect with fellow enthusiasts…"
+        },
+        "fr": {
+          "title": "FOSDEM PGDay 2027: two days of PostgreSQL, with calls for papers and sponsors now open!",
+          "summary": "Join us for FOSDEM PGDay 2027 on January 28 and 29 at the Brussels Marriott Hotel Grand Place . This year, we're expanding to two days, bringing you more PostgreSQL talks and more time to connect with fellow enthusiasts…"
         }
       }
     },
@@ -1023,26 +1043,6 @@
       }
     },
     {
-      "slug": "20261014-github-psqlodbc-18000005-released-with-security-fix-for-cve-2026-4714b5d1",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/psqlodbc-18000005-released-with-security-fix-for-cve-2026-109448-3404/",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
-      "locales": {
-        "en": {
-          "title": "psqlODBC 18.00.0005 released with security fix for CVE-2026-109448",
-          "summary": "The psqlODBC team has released version 18.00.0005 of psqlODBC, the official ODBC driver for PostgreSQL. This release fixes one security vulnerability and two bugs. All users should upgrade. Security issue CVE-2026-10944…"
-        },
-        "fr": {
-          "title": "psqlODBC 18.00.0005 released with security fix for CVE-2026-109448",
-          "summary": "The psqlODBC team has released version 18.00.0005 of psqlODBC, the official ODBC driver for PostgreSQL. This release fixes one security vulnerability and two bugs. All users should upgrade. Security issue CVE-2026-10944…"
-        }
-      }
-    },
-    {
       "slug": "20261005-kubernetes-scaling-kubernetes-workloads-with-node-swap-5af07d1e",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -1143,42 +1143,62 @@
       }
     },
     {
-      "slug": "20261017-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
+      "slug": "20261017-supabase-status-page-moves-to-incidentio-7e1c5736",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
-      "publishedAt": "2026-10-17T10:39:33.976Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
-      "locales": {
-        "en": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
-        },
-        "fr": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
-        }
-      }
-    },
-    {
-      "slug": "20261017-vercel-liquid-ais-d1-ultra-now-available-on-ai-gateway-call-liqu-7810597d",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/liquid-ais-d1-ultra-now-available-on-ai-gateway",
+      "href": "https://supabase.com/changelog/status-page-migration",
       "publishedAt": "2026-10-17T20:33:55.291Z",
       "discoveredAt": "2026-10-17T20:33:55.291Z",
       "locales": {
         "en": {
-          "title": "Liquid AI's d1-ultra now available on AI Gateway Call Liquid AI's d1-ultra through Vercel AI Gateway with one API key, unified spend tracking, and request logs. Jerilyn Zheng, Zachary Chen",
-          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         },
         "fr": {
-          "title": "Liquid AI's d1-ultra now available on AI Gateway Call Liquid AI's d1-ultra through Vercel AI Gateway with one API key, unified spend tracking, and request logs. Jerilyn Zheng, Zachary Chen",
-          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+        }
+      }
+    },
+    {
+      "slug": "20261018-vercel-vercel-daemons-is-now-in-public-beta-run-queue-consumers--9100b772",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/vercel-daemons-is-now-in-public-beta",
+      "publishedAt": "2026-10-18T11:00:06.948Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
+      "locales": {
+        "en": {
+          "title": "Vercel Daemons is now in public beta Run queue consumers, workflow workers, and self-hosted CI runners on Vercel. +2 Steren, Gal Schlezinger, and 2 others",
+          "summary": "+2 Jas Garcha, Krish Krish, and 2 others"
+        },
+        "fr": {
+          "title": "Vercel Daemons is now in public beta Run queue consumers, workflow workers, and self-hosted CI runners on Vercel. +2 Steren, Gal Schlezinger, and 2 others",
+          "summary": "+2 Jas Garcha, Krish Krish, and 2 others"
+        }
+      }
+    },
+    {
+      "slug": "20261018-github-crecheck-v60-has-been-released-485e3b80",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/crecheck-v60-has-been-released-3407/",
+      "publishedAt": "2026-10-18T00:00:00.000Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
+      "locales": {
+        "en": {
+          "title": "crecheck v6.0 has been released",
+          "summary": "Antananrivo, Madagascar - October 14, 2026 PostgreSQL credcheck extension The credcheck PostgreSQL extension provides few general credential checks, which will be evaluated during the user creation, during the password…"
+        },
+        "fr": {
+          "title": "crecheck v6.0 has been released",
+          "summary": "Antananrivo, Madagascar - October 14, 2026 PostgreSQL credcheck extension The credcheck PostgreSQL extension provides few general credential checks, which will be evaluated during the user creation, during the password…"
         }
       }
     },
@@ -1403,26 +1423,6 @@
       }
     },
     {
-      "slug": "20261014-postgresql-pgbouncer-1261-released---fixes-three-cves-c17dd73e",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgbouncer-1261-released-fixes-three-cves-3403/",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "discoveredAt": "2026-10-14T11:47:55.564Z",
-      "locales": {
-        "en": {
-          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins…"
-        },
-        "fr": {
-          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins…"
-        }
-      }
-    },
-    {
       "slug": "20260922-kubernetes-spotlight-on-sig-apps-bdc88dc4",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -1523,42 +1523,62 @@
       }
     },
     {
-      "slug": "20261017-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "slug": "20261017-supabase-public-alpha-supabase-go-sdk-107ff49a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/no-access-org-role",
-      "publishedAt": "2026-10-17T10:39:33.976Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
+      "publishedAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
       "locales": {
         "en": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         },
         "fr": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         }
       }
     },
     {
-      "slug": "20261017-vercel-deepseek-v41-flash-1017-now-available-on-ai-gateway-call--e5cf11d8",
+      "slug": "20261017-vercel-ai-gateway-logs-now-show-session-affinity-vercel-ai-gatew-f3b4b96b",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/deepseek-v4-1-flash-1017-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-17T10:39:33.976Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "href": "https://vercel.com/changelog/ai-gateway-logs-now-show-session-affinity",
+      "publishedAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
       "locales": {
         "en": {
-          "title": "DeepSeek V4.1 Flash 1017 now available on AI Gateway Call DeepSeek V4.1 Flash 1017 through Vercel AI Gateway with one API key, image input, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "title": "AI Gateway logs now show session affinity Vercel AI Gateway logs now group requests into sessions, with cache hit rate, cost, turns, and the coding agent behind each conversation. Sam Chitgopekar, Jerilyn Zheng",
           "summary": "17 October 17 Oct"
         },
         "fr": {
-          "title": "DeepSeek V4.1 Flash 1017 now available on AI Gateway Call DeepSeek V4.1 Flash 1017 through Vercel AI Gateway with one API key, image input, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "title": "AI Gateway logs now show session affinity Vercel AI Gateway logs now group requests into sessions, with cache hit rate, cost, turns, and the coding agent behind each conversation. Sam Chitgopekar, Jerilyn Zheng",
           "summary": "17 October 17 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261015-postgresql-postgresql-19-rc-1-released-94ac5b10",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-19-rc-1-released-3409/",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL 19 RC 1 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the first release candidate of PostgreSQL 19 is now available for download. As a release candidate, PostgreSQL 19 RC 1 will be mostly identical to the initial relea…"
+        },
+        "fr": {
+          "title": "PostgreSQL 19 RC 1 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the first release candidate of PostgreSQL 19 is now available for download. As a release candidate, PostgreSQL 19 RC 1 will be mostly identical to the initial relea…"
         }
       }
     },
@@ -1703,22 +1723,22 @@
       }
     },
     {
-      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-building-on-our-comm-26f50496",
+      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-2026-usage-policy-up-7a238471",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
       "locales": {
         "en": {
-          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
-          "summary": "Announcements 2026 Usage Policy update"
+          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
+          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
         },
         "fr": {
-          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
-          "summary": "Announcements 2026 Usage Policy update"
+          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
+          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
         }
       }
     },
@@ -1779,26 +1799,6 @@
         "fr": {
           "title": "GitHub Actions leaking secrets when Miri output is cached",
           "summary": "The Rust Security Response Team was notified that Miri stores all environment variables to target/ , allowing secrets to persist in caches. While not necessary a vulnerability in and of itself, when paired with GitHub A…"
-        }
-      }
-    },
-    {
-      "slug": "20261014-github-introducing-pglifecycle-20-beta-2f301e99",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/introducing-pglifecycle-20-beta-3401/",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "discoveredAt": "2026-10-14T11:47:55.564Z",
-      "locales": {
-        "en": {
-          "title": "Introducing pglifecycle 2.0 beta",
-          "summary": "I’m pleased to announce the first public release of pglifecycle , an open source schema management tool for PostgreSQL. pglifecycle keeps your database schema in version control as structured YAML, with one file for eac…"
-        },
-        "fr": {
-          "title": "Introducing pglifecycle 2.0 beta",
-          "summary": "I’m pleased to announce the first public release of pglifecycle , an open source schema management tool for PostgreSQL. pglifecycle keeps your database schema in version control as structured YAML, with one file for eac…"
         }
       }
     },
@@ -1903,42 +1903,62 @@
       }
     },
     {
-      "slug": "20261016-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
+      "slug": "20261017-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/multigres-private-alpha",
-      "publishedAt": "2026-10-16T21:04:25.613Z",
-      "discoveredAt": "2026-10-16T21:04:25.613Z",
-      "locales": {
-        "en": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
-        },
-        "fr": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
-        }
-      }
-    },
-    {
-      "slug": "20261017-vercel-elorian-ais-glimpse-now-available-on-ai-gateway-call-elor-a256c10c",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/elorian-ai-glimpse-now-available-on-ai-gateway",
+      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
       "publishedAt": "2026-10-17T10:39:33.976Z",
       "discoveredAt": "2026-10-17T10:39:33.976Z",
       "locales": {
         "en": {
-          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces Jerilyn Zheng, Rohan Taneja, and 1 other",
-          "summary": "16 October 16 Oct"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         },
         "fr": {
-          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces Jerilyn Zheng, Rohan Taneja, and 1 other",
-          "summary": "16 October 16 Oct"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+        }
+      }
+    },
+    {
+      "slug": "20261017-vercel-introducing-token-pass-vercel-token-pass-now-in-early-acc-827aaf26",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/introducing-token-pass",
+      "publishedAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
+          "summary": "15 October 15 Oct"
+        },
+        "fr": {
+          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
+          "summary": "15 October 15 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261014-postgresql-perseid-010-is-now-available-2a994d7e",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/perseid-010-is-now-available-3405/",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T21:38:48.576Z",
+      "locales": {
+        "en": {
+          "title": "Perseid 0.1.0 is now available",
+          "summary": "I am very pleased to announce that, after a long hiatus, Perseid 0.1.0, a set of utilities for versioning PostgreSQL database schemas, has been released. Perseid 0.1.0 is available from: Codeberg Git repository: https:/…"
+        },
+        "fr": {
+          "title": "Perseid 0.1.0 is now available",
+          "summary": "I am very pleased to announce that, after a long hiatus, Perseid 0.1.0, a set of utilities for versioning PostgreSQL database schemas, has been released. Perseid 0.1.0 is available from: Codeberg Git repository: https:/…"
         }
       }
     },
@@ -2083,22 +2103,22 @@
       }
     },
     {
-      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-introducing-the-anth-db9c3550",
+      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-building-on-our-comm-26f50496",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
       "locales": {
         "en": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
+          "summary": "Announcements 2026 Usage Policy update"
         },
         "fr": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
+          "summary": "Announcements 2026 Usage Policy update"
         }
       }
     },
@@ -2159,26 +2179,6 @@
         "fr": {
           "title": "Be alert: targeted attacks on prominent Rustaceans",
           "summary": "We believe that there is an ongoing campaign targeting rust-lang members and owners of popular crates that is attempting to compromise devices and accounts in order to use them to publish malware. What we've seen A vide…"
-        }
-      }
-    },
-    {
-      "slug": "20261009-github-2026-10-07-postgresql-jdbc-42714-security-update-for-mult-9a10e836",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/2026-10-07-postgresql-jdbc-42714-security-update-for-multiple-cves-3399/",
-      "publishedAt": "2026-10-09T00:00:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:58.339Z",
-      "locales": {
-        "en": {
-          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
-          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the…"
-        },
-        "fr": {
-          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
-          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the…"
         }
       }
     },
@@ -2283,42 +2283,62 @@
       }
     },
     {
-      "slug": "20261016-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261017-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/orioledb-public-beta",
-      "publishedAt": "2026-10-16T21:04:25.613Z",
-      "discoveredAt": "2026-10-16T21:04:25.613Z",
-      "locales": {
-        "en": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
-        },
-        "fr": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
-        }
-      }
-    },
-    {
-      "slug": "20261017-perplexity-perplexitys-decider-v12-models-now-available-on-ai-ga-86e1f6b3",
-      "toolName": "Perplexity",
-      "category": "Research Assistant",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/perplexity-decider-v1-2-models-now-available-on-ai-gateway",
+      "href": "https://supabase.com/changelog/no-access-org-role",
       "publishedAt": "2026-10-17T10:39:33.976Z",
       "discoveredAt": "2026-10-17T10:39:33.976Z",
       "locales": {
         "en": {
-          "title": "Perplexity's Decider V1.2 models now available on AI Gateway Call Perplexity Decider V1.2 and Decider Flash V1.2 through Vercel AI Gateway with one API key, shared budgets, and usage tracking. Jerilyn Zheng, Zachary Chen",
-          "summary": "\"/> Jerilyn Zheng, Rohan Taneja, and 1 other"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         },
         "fr": {
-          "title": "Perplexity's Decider V1.2 models now available on AI Gateway Call Perplexity Decider V1.2 and Decider Flash V1.2 through Vercel AI Gateway with one API key, shared budgets, and usage tracking. Jerilyn Zheng, Zachary Chen",
-          "summary": "\"/> Jerilyn Zheng, Rohan Taneja, and 1 other"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+        }
+      }
+    },
+    {
+      "slug": "20261017-vercel-liquid-ais-d1-ultra-now-available-on-ai-gateway-call-liqu-7810597d",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/liquid-ais-d1-ultra-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "locales": {
+        "en": {
+          "title": "Liquid AI's d1-ultra now available on AI Gateway Call Liquid AI's d1-ultra through Vercel AI Gateway with one API key, unified spend tracking, and request logs. Jerilyn Zheng, Zachary Chen",
+          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
+        },
+        "fr": {
+          "title": "Liquid AI's d1-ultra now available on AI Gateway Call Liquid AI's d1-ultra through Vercel AI Gateway with one API key, unified spend tracking, and request logs. Jerilyn Zheng, Zachary Chen",
+          "summary": "+2 Steren, Gal Schlezinger, and 2 others"
+        }
+      }
+    },
+    {
+      "slug": "20261014-github-psqlodbc-18000005-released-with-security-fix-for-cve-2026-4714b5d1",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/psqlodbc-18000005-released-with-security-fix-for-cve-2026-109448-3404/",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T21:38:48.576Z",
+      "locales": {
+        "en": {
+          "title": "psqlODBC 18.00.0005 released with security fix for CVE-2026-109448",
+          "summary": "The psqlODBC team has released version 18.00.0005 of psqlODBC, the official ODBC driver for PostgreSQL. This release fixes one security vulnerability and two bugs. All users should upgrade. Security issue CVE-2026-10944…"
+        },
+        "fr": {
+          "title": "psqlODBC 18.00.0005 released with security fix for CVE-2026-109448",
+          "summary": "The psqlODBC team has released version 18.00.0005 of psqlODBC, the official ODBC driver for PostgreSQL. This release fixes one security vulnerability and two bugs. All users should upgrade. Security issue CVE-2026-10944…"
         }
       }
     },
@@ -2363,42 +2383,22 @@
       }
     },
     {
-      "slug": "20261014-openai-platform-sentinelone-cuts-malware-analysis-from-weeks-to--24cc989c",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
+      "slug": "20261014-chatgpt-amp-puts-ai-agents-to-work-beyond-code-with-openai-model-a0e0fec2",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/sentinelone",
+      "href": "https://openai.com/index/amp-beyond-coding",
       "publishedAt": "2026-10-14T12:00:00.000Z",
-      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
       "locales": {
         "en": {
-          "title": "SentinelOne cuts malware analysis from weeks to hours",
-          "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats."
+          "title": "Amp puts AI agents to work beyond code with OpenAI models",
+          "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT."
         },
         "fr": {
-          "title": "SentinelOne cuts malware analysis from weeks to hours",
-          "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats."
-        }
-      }
-    },
-    {
-      "slug": "20260924-docker-docker-and-cncf-partner-on-an-open-spec-for-agent-permiss-bfc64acb",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-sandbox-kit-spec-cncf/",
-      "publishedAt": "2026-09-24T16:00:00.000Z",
-      "discoveredAt": "2026-10-17T20:33:55.291Z",
-      "locales": {
-        "en": {
-          "title": "Docker and CNCF partner on an open spec for agent permissions",
-          "summary": "Docker is bringing the open source Sandbox Kit Spec to the CNCF, so AI agent permissions become a neutral, vendor independent standard built on OCI."
-        },
-        "fr": {
-          "title": "Docker and CNCF partner on an open spec for agent permissions",
-          "summary": "Docker is bringing the open source Sandbox Kit Spec to the CNCF, so AI agent permissions become a neutral, vendor independent standard built on OCI."
+          "title": "Amp puts AI agents to work beyond code with OpenAI models",
+          "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT."
         }
       }
     }

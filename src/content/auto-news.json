@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T20:33:54.192Z",
+  "updatedAt": "2026-10-18T11:00:03.822Z",
   "items": [
+    {
+      "slug": "20261018-pghintplan-v190-released-48d3bd84",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_hint_plan-v190-released-3408/",
+      "publishedAt": "2026-10-18T00:00:00.000Z",
+      "discoveredAt": "2026-10-18T11:00:03.822Z",
+      "locales": {
+        "en": {
+          "title": "pg_hint_plan v1.9.0 Released",
+          "summary": "The pg_hint_plan development team is pleased to announce pg_hint_plan 1.9.0. This release of pg_hint_plan adds compatibility with PostgreSQL 19, and includes various improvements and bug fixes. For more details, see the release n…"
+        },
+        "fr": {
+          "title": "pg_hint_plan v1.9.0 Released",
+          "summary": "The pg_hint_plan development team is pleased to announce pg_hint_plan 1.9.0. This release of pg_hint_plan adds compatibility with PostgreSQL 19, and includes various improvements and bug fixes. For more details, see the release n…"
+        }
+      }
+    },
     {
       "slug": "20261016-accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros-930fe613",
       "topic": "AI Systems",
@@ -250,25 +269,6 @@
       }
     },
     {
-      "slug": "20261015-postgresql-19-rc-1-released-94ac5b10",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-19-rc-1-released-3409/",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "discoveredAt": "2026-10-15T21:20:24.444Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL 19 RC 1 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the first release candidate of PostgreSQL 19 is now available for download. As a release candidate, PostgreSQL 19 RC 1 will be mostly identical to the initial release of Post…"
-        },
-        "fr": {
-          "title": "PostgreSQL 19 RC 1 Released!",
-          "summary": "The PostgreSQL Global Development Group announces that the first release candidate of PostgreSQL 19 is now available for download. As a release candidate, PostgreSQL 19 RC 1 will be mostly identical to the initial release of Post…"
-        }
-      }
-    },
-    {
       "slug": "20261014-why-is-my-kubernetes-job-still-pending-tracing-kueue-admission-w-8c274fdc",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -360,6 +360,25 @@
         "fr": {
           "title": "Gemini 4 Argon: Built to solve your hardest problems",
           "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
+        }
+      }
+    },
+    {
+      "slug": "20261018-pgutlsmtp-v20-released-65b09b65",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_utl_smtp-v20-released-3395/",
+      "publishedAt": "2026-10-18T00:00:00.000Z",
+      "discoveredAt": "2026-10-18T11:00:03.822Z",
+      "locales": {
+        "en": {
+          "title": "pg_utl_smtp v2.0 released",
+          "summary": "Antananarivo, Madagascar - October 06, 2026 PostgreSQL UTL_SMTP compatibility extension pg_utl_smtp is a PostgreSQL extension to create, manage and use Oracle-style UTL_SMTP package. The use and behavior is just like with the UTL…"
+        },
+        "fr": {
+          "title": "pg_utl_smtp v2.0 released",
+          "summary": "Antananarivo, Madagascar - October 06, 2026 PostgreSQL UTL_SMTP compatibility extension pg_utl_smtp is a PostgreSQL extension to create, manage and use Oracle-style UTL_SMTP package. The use and behavior is just like with the UTL…"
         }
       }
     },
@@ -611,25 +630,6 @@
       }
     },
     {
-      "slug": "20261014-perseid-010-is-now-available-2a994d7e",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/perseid-010-is-now-available-3405/",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:47.383Z",
-      "locales": {
-        "en": {
-          "title": "Perseid 0.1.0 is now available",
-          "summary": "I am very pleased to announce that, after a long hiatus, Perseid 0.1.0, a set of utilities for versioning PostgreSQL database schemas, has been released. Perseid 0.1.0 is available from: Codeberg Git repository: https://codeberg.…"
-        },
-        "fr": {
-          "title": "Perseid 0.1.0 is now available",
-          "summary": "I am very pleased to announce that, after a long hiatus, Perseid 0.1.0, a set of utilities for versioning PostgreSQL database schemas, has been released. Perseid 0.1.0 is available from: Codeberg Git repository: https://codeberg.…"
-        }
-      }
-    },
-    {
       "slug": "20261006-the-shift-to-cgroup-v2-in-kubernetes-what-you-need-to-know-fc4272a4",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -721,6 +721,25 @@
         "fr": {
           "title": "Introducing Playground: Create and play custom games",
           "summary": "Playground is a new experimental gaming platform that lets you create, play, and share custom games."
+        }
+      }
+    },
+    {
+      "slug": "20261018-fosdem-pgday-2027-two-days-of-postgresql-with-calls-for-papers-a-a4fd570b",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/fosdem-pgday-2027-two-days-of-postgresql-with-calls-for-papers-and-sponsors-now-open-3412/",
+      "publishedAt": "2026-10-18T00:00:00.000Z",
+      "discoveredAt": "2026-10-18T11:00:03.822Z",
+      "locales": {
+        "en": {
+          "title": "FOSDEM PGDay 2027: two days of PostgreSQL, with calls for papers and sponsors now open!",
+          "summary": "Join us for FOSDEM PGDay 2027 on January 28 and 29 at the Brussels Marriott Hotel Grand Place . This year, we're expanding to two days, bringing you more PostgreSQL talks and more time to connect with fellow enthusiasts from arou…"
+        },
+        "fr": {
+          "title": "FOSDEM PGDay 2027: two days of PostgreSQL, with calls for papers and sponsors now open!",
+          "summary": "Join us for FOSDEM PGDay 2027 on January 28 and 29 at the Brussels Marriott Hotel Grand Place . This year, we're expanding to two days, bringing you more PostgreSQL talks and more time to connect with fellow enthusiasts from arou…"
         }
       }
     },
@@ -972,25 +991,6 @@
       }
     },
     {
-      "slug": "20261014-psqlodbc-18000005-released-with-security-fix-for-cve-2026-109448-4714b5d1",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/psqlodbc-18000005-released-with-security-fix-for-cve-2026-109448-3404/",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:47.383Z",
-      "locales": {
-        "en": {
-          "title": "psqlODBC 18.00.0005 released with security fix for CVE-2026-109448",
-          "summary": "The psqlODBC team has released version 18.00.0005 of psqlODBC, the official ODBC driver for PostgreSQL. This release fixes one security vulnerability and two bugs. All users should upgrade. Security issue CVE-2026-109448: heap me…"
-        },
-        "fr": {
-          "title": "psqlODBC 18.00.0005 released with security fix for CVE-2026-109448",
-          "summary": "The psqlODBC team has released version 18.00.0005 of psqlODBC, the official ODBC driver for PostgreSQL. This release fixes one security vulnerability and two bugs. All users should upgrade. Security issue CVE-2026-109448: heap me…"
-        }
-      }
-    },
-    {
       "slug": "20261005-scaling-kubernetes-workloads-with-node-swap-5af07d1e",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -1063,6 +1063,25 @@
         "fr": {
           "title": "The latest AI news we announced in September 2026",
           "summary": "Here are Google’s latest AI updates from September 2026"
+        }
+      }
+    },
+    {
+      "slug": "20261018-crecheck-v60-has-been-released-485e3b80",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/crecheck-v60-has-been-released-3407/",
+      "publishedAt": "2026-10-18T00:00:00.000Z",
+      "discoveredAt": "2026-10-18T11:00:03.822Z",
+      "locales": {
+        "en": {
+          "title": "crecheck v6.0 has been released",
+          "summary": "Antananrivo, Madagascar - October 14, 2026 PostgreSQL credcheck extension The credcheck PostgreSQL extension provides few general credential checks, which will be evaluated during the user creation, during the password change and…"
+        },
+        "fr": {
+          "title": "crecheck v6.0 has been released",
+          "summary": "Antananrivo, Madagascar - October 14, 2026 PostgreSQL credcheck extension The credcheck PostgreSQL extension provides few general credential checks, which will be evaluated during the user creation, during the password change and…"
         }
       }
     },
@@ -1314,25 +1333,6 @@
       }
     },
     {
-      "slug": "20261014-pgbouncer-1261-released---fixes-three-cves-c17dd73e",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgbouncer-1261-released-fixes-three-cves-3403/",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "discoveredAt": "2026-10-14T11:47:54.422Z",
-      "locales": {
-        "en": {
-          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins and backen…"
-        },
-        "fr": {
-          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins and backen…"
-        }
-      }
-    },
-    {
       "slug": "20260922-spotlight-on-sig-apps-bdc88dc4",
       "topic": "Cloud/DevOps",
       "source": "Kubernetes Blog",
@@ -1405,6 +1405,25 @@
         "fr": {
           "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
           "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted."
+        }
+      }
+    },
+    {
+      "slug": "20261015-postgresql-19-rc-1-released-94ac5b10",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-19-rc-1-released-3409/",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "discoveredAt": "2026-10-15T21:20:24.444Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL 19 RC 1 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the first release candidate of PostgreSQL 19 is now available for download. As a release candidate, PostgreSQL 19 RC 1 will be mostly identical to the initial release of Post…"
+        },
+        "fr": {
+          "title": "PostgreSQL 19 RC 1 Released!",
+          "summary": "The PostgreSQL Global Development Group announces that the first release candidate of PostgreSQL 19 is now available for download. As a release candidate, PostgreSQL 19 RC 1 will be mostly identical to the initial release of Post…"
         }
       }
     },
@@ -1656,25 +1675,6 @@
       }
     },
     {
-      "slug": "20261014-introducing-pglifecycle-20-beta-2f301e99",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/introducing-pglifecycle-20-beta-3401/",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "discoveredAt": "2026-10-14T11:47:54.422Z",
-      "locales": {
-        "en": {
-          "title": "Introducing pglifecycle 2.0 beta",
-          "summary": "I’m pleased to announce the first public release of pglifecycle , an open source schema management tool for PostgreSQL. pglifecycle keeps your database schema in version control as structured YAML, with one file for each table, v…"
-        },
-        "fr": {
-          "title": "Introducing pglifecycle 2.0 beta",
-          "summary": "I’m pleased to announce the first public release of pglifecycle , an open source schema management tool for PostgreSQL. pglifecycle keeps your database schema in version control as structured YAML, with one file for each table, v…"
-        }
-      }
-    },
-    {
       "slug": "20260921-kubernetes-v137-tracking-when-a-persistentvolumeclaim-was-last-u-a668dc12",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -1747,6 +1747,25 @@
         "fr": {
           "title": "Google Beam expands with new regions, partners, and customers",
           "summary": "We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network."
+        }
+      }
+    },
+    {
+      "slug": "20261014-perseid-010-is-now-available-2a994d7e",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/perseid-010-is-now-available-3405/",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T21:38:47.383Z",
+      "locales": {
+        "en": {
+          "title": "Perseid 0.1.0 is now available",
+          "summary": "I am very pleased to announce that, after a long hiatus, Perseid 0.1.0, a set of utilities for versioning PostgreSQL database schemas, has been released. Perseid 0.1.0 is available from: Codeberg Git repository: https://codeberg.…"
+        },
+        "fr": {
+          "title": "Perseid 0.1.0 is now available",
+          "summary": "I am very pleased to announce that, after a long hiatus, Perseid 0.1.0, a set of utilities for versioning PostgreSQL database schemas, has been released. Perseid 0.1.0 is available from: Codeberg Git repository: https://codeberg.…"
         }
       }
     },
@@ -1979,25 +1998,6 @@
       }
     },
     {
-      "slug": "20261009-2026-10-07-postgresql-jdbc-42714-security-update-for-multiple-cv-9a10e836",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/2026-10-07-postgresql-jdbc-42714-security-update-for-multiple-cves-3399/",
-      "publishedAt": "2026-10-09T00:00:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:57.050Z",
-      "locales": {
-        "en": {
-          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
-          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the release no…"
-        },
-        "fr": {
-          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
-          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the release no…"
-        }
-      }
-    },
-    {
       "slug": "20260916-kubernetes-v137-hardening-container-storage-with-bind-mount-opti-6cde82bb",
       "topic": "AI Systems",
       "source": "Kubernetes Blog",
@@ -2070,6 +2070,25 @@
         "fr": {
           "title": "New experts join Google’s AI & Economy team",
           "summary": "We are expanding our AI & Economy team with world-class academic advisors, fellows, and core internal researchers."
+        }
+      }
+    },
+    {
+      "slug": "20261014-psqlodbc-18000005-released-with-security-fix-for-cve-2026-109448-4714b5d1",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/psqlodbc-18000005-released-with-security-fix-for-cve-2026-109448-3404/",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T21:38:47.383Z",
+      "locales": {
+        "en": {
+          "title": "psqlODBC 18.00.0005 released with security fix for CVE-2026-109448",
+          "summary": "The psqlODBC team has released version 18.00.0005 of psqlODBC, the official ODBC driver for PostgreSQL. This release fixes one security vulnerability and two bugs. All users should upgrade. Security issue CVE-2026-109448: heap me…"
+        },
+        "fr": {
+          "title": "psqlODBC 18.00.0005 released with security fix for CVE-2026-109448",
+          "summary": "The psqlODBC team has released version 18.00.0005 of psqlODBC, the official ODBC driver for PostgreSQL. This release fixes one security vulnerability and two bugs. All users should upgrade. Security issue CVE-2026-109448: heap me…"
         }
       }
     },
@@ -2302,25 +2321,6 @@
       }
     },
     {
-      "slug": "20261007-pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-postgresql--f303bf81",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-postgresql-index-3396/",
-      "publishedAt": "2026-10-07T00:00:00.000Z",
-      "discoveredAt": "2026-10-07T13:18:36.603Z",
-      "locales": {
-        "en": {
-          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
-          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CREATE EXTEN…"
-        },
-        "fr": {
-          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
-          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CREATE EXTEN…"
-        }
-      }
-    },
-    {
       "slug": "20260915-kubernetes-v137-pod-level-resource-managers-graduated-to-beta-993e015b",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -2393,6 +2393,25 @@
         "fr": {
           "title": "Co-creating the future of fashion with Google",
           "summary": "Google worked side-by-side with designers Jane Wade and Sergio Hudson to custom-design Google Flow tools to prep for NYFW."
+        }
+      }
+    },
+    {
+      "slug": "20261014-pgbouncer-1261-released---fixes-three-cves-c17dd73e",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgbouncer-1261-released-fixes-three-cves-3403/",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:54.422Z",
+      "locales": {
+        "en": {
+          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins and backen…"
+        },
+        "fr": {
+          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
+          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins and backen…"
         }
       }
     },
@@ -2606,44 +2625,6 @@
       }
     },
     {
-      "slug": "20260903-announcing-rust-1981-c3f5c215",
-      "topic": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/09/03/Rust-1.98.1/",
-      "publishedAt": "2026-09-03T00:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Announcing Rust 1.98.1",
-          "summary": "Announcing Rust 1.98.1"
-        },
-        "fr": {
-          "title": "Announcing Rust 1.98.1",
-          "summary": "Announcing Rust 1.98.1"
-        }
-      }
-    },
-    {
-      "slug": "20261007-pgplanfilter-100-released-dfa62bab",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_plan_filter-100-released-3352/",
-      "publishedAt": "2026-10-07T00:00:00.000Z",
-      "discoveredAt": "2026-10-07T13:18:36.603Z",
-      "locales": {
-        "en": {
-          "title": "pg_plan_filter 1.0.0 released",
-          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to prevent exe…"
-        },
-        "fr": {
-          "title": "pg_plan_filter 1.0.0 released",
-          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to prevent exe…"
-        }
-      }
-    },
-    {
       "slug": "20260914-kubernetes-changed-block-tracking-api---beta-differences-081539c8",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -2716,6 +2697,25 @@
         "fr": {
           "title": "Making global data easier to explore",
           "summary": "Google and the UN system have launched the UN System Data Commons, a new open platform making global statistics accessible and easy to search."
+        }
+      }
+    },
+    {
+      "slug": "20261014-introducing-pglifecycle-20-beta-2f301e99",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/introducing-pglifecycle-20-beta-3401/",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:54.422Z",
+      "locales": {
+        "en": {
+          "title": "Introducing pglifecycle 2.0 beta",
+          "summary": "I’m pleased to announce the first public release of pglifecycle , an open source schema management tool for PostgreSQL. pglifecycle keeps your database schema in version control as structured YAML, with one file for each table, v…"
+        },
+        "fr": {
+          "title": "Introducing pglifecycle 2.0 beta",
+          "summary": "I’m pleased to announce the first public release of pglifecycle , an open source schema management tool for PostgreSQL. pglifecycle keeps your database schema in version control as structured YAML, with one file for each table, v…"
         }
       }
     },
@@ -2929,25 +2929,6 @@
       }
     },
     {
-      "slug": "20261005-pgivm-116-released-9d0d6d1e",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_ivm-116-released-3391/",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "pg_ivm 1.16 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault when an IMMV…"
-        },
-        "fr": {
-          "title": "pg_ivm 1.16 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault when an IMMV…"
-        }
-      }
-    },
-    {
       "slug": "20260914-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -3020,6 +3001,25 @@
         "fr": {
           "title": "AI for Societal Impact",
           "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
+        }
+      }
+    },
+    {
+      "slug": "20261009-2026-10-07-postgresql-jdbc-42714-security-update-for-multiple-cv-9a10e836",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/2026-10-07-postgresql-jdbc-42714-security-update-for-multiple-cves-3399/",
+      "publishedAt": "2026-10-09T00:00:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:57.050Z",
+      "locales": {
+        "en": {
+          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
+          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the release no…"
+        },
+        "fr": {
+          "title": "2026-10-07: PostgreSQL JDBC 42.7.14 Security update for multiple CVE&#x27;s",
+          "summary": "The PostgreSQL JDBC team has released a security release for 2 CVE's CVE-2026-107314 and the GitHub Security Advisory GHSA-rhp9-mr79-r74h and CVE-2026-107315 and the GitHub Security Advisory GHSA-f64h-wr5q-3qf3 See the release no…"
         }
       }
     },
@@ -3214,25 +3214,6 @@
       }
     },
     {
-      "slug": "20261005-pgvaulttde-v172-critical-crash-fixes-new-on-disk-format-and-stab-35290beb",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v172-critical-crash-fixes-new-on-disk-format-and-stability-improvements-3393/",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
-          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuses on criti…"
-        },
-        "fr": {
-          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
-          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuses on criti…"
-        }
-      }
-    },
-    {
       "slug": "20260911-kubernetes-v137-native-histograms-graduates-to-beta-b23e96a3",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -3305,6 +3286,25 @@
         "fr": {
           "title": "Building AI to accelerate science and improve lives",
           "summary": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …"
+        }
+      }
+    },
+    {
+      "slug": "20261007-pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-postgresql--f303bf81",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgx-bm25-10-bm25-ranked-full-text-search-as-a-native-postgresql-index-3396/",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "discoveredAt": "2026-10-07T13:18:36.603Z",
+      "locales": {
+        "en": {
+          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
+          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CREATE EXTEN…"
+        },
+        "fr": {
+          "title": "pgx-bm25 1.0: BM25 ranked full-text search as a native PostgreSQL index",
+          "summary": "PGX Inc. has released version 1.0 of pgx-bm25 , an extension that adds Okapi BM25 ranked full-text search to PostgreSQL as a native index access method. It supports PostgreSQL 17 and 18, and installs as bm25_native . CREATE EXTEN…"
         }
       }
     },
@@ -3499,25 +3499,6 @@
       }
     },
     {
-      "slug": "20261005-dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-a-4dad8a1f",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-and-broader-context-for-dbforge-ai-assistant-3394/",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
-          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database management softwar…"
-        },
-        "fr": {
-          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
-          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database management softwar…"
-        }
-      }
-    },
-    {
       "slug": "20260910-kubernetes-v137-scheduler-preemption-for-in-place-pod-resize-alp-e2763381",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -3571,6 +3552,25 @@
         "fr": {
           "title": "AI for everyone in every language",
           "summary": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed."
+        }
+      }
+    },
+    {
+      "slug": "20261007-pgplanfilter-100-released-dfa62bab",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_plan_filter-100-released-3352/",
+      "publishedAt": "2026-10-07T00:00:00.000Z",
+      "discoveredAt": "2026-10-07T13:18:36.603Z",
+      "locales": {
+        "en": {
+          "title": "pg_plan_filter 1.0.0 released",
+          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to prevent exe…"
+        },
+        "fr": {
+          "title": "pg_plan_filter 1.0.0 released",
+          "summary": "pg_plan_filter version 1.0.0 has been released. This loadable module test sstatements against specific configured criteria before execution, raising an error if the criteria are violated. This allows administrators to prevent exe…"
         }
       }
     },
@@ -3765,25 +3765,6 @@
       }
     },
     {
-      "slug": "20261005-pgvector-087-released-9f7f16c5",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgvector-087-released-3392/",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "discoveredAt": "2026-10-05T14:32:15.255Z",
-      "locales": {
-        "en": {
-          "title": "pgvector 0.8.7 Released",
-          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details: https://g…"
-        },
-        "fr": {
-          "title": "pgvector 0.8.7 Released",
-          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details: https://g…"
-        }
-      }
-    },
-    {
       "slug": "20260909-kubernetes-v137-introducing-node-lifecycle-conditions-06f4b9d8",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -3818,6 +3799,25 @@
         "fr": {
           "title": "New insights from Google’s AI & Economy ATLAS",
           "summary": "We’ve translated ATLAS’s millions of global data points into an interactive, open-access experience."
+        }
+      }
+    },
+    {
+      "slug": "20261005-pgivm-116-released-9d0d6d1e",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_ivm-116-released-3391/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "pg_ivm 1.16 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault when an IMMV…"
+        },
+        "fr": {
+          "title": "pg_ivm 1.16 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.16 . Changes since the v1.15 release include: What's Changed New features Add support for PostgreSQL 19 ( Devrim Gündüz ) Bug fixes Fix a segfault when an IMMV…"
         }
       }
     },
@@ -3993,25 +3993,6 @@
       }
     },
     {
-      "slug": "20261001-pgpool-ii-473-468-4513-4418-and-4321-released-b4eb1817",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgpool-ii-473-468-4513-4418-and-4321-released-3390/",
-      "publishedAt": "2026-10-01T00:00:00.000Z",
-      "discoveredAt": "2026-10-01T13:08:39.943Z",
-      "locales": {
-        "en": {
-          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
-          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
-        },
-        "fr": {
-          "title": "Pgpool-II 4.7.3, 4.6.8, 4.5.13, 4.4.18 and 4.3.21 released.",
-          "summary": "What is Pgpool-II? Pgpool-II is a tool to add useful features to PostgreSQL, including: connection pooling load balancing automatic failover and more . Minor releases Pgpool Global Development Group is pleased to announce the ava…"
-        }
-      }
-    },
-    {
       "slug": "20260908-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -4046,6 +4027,25 @@
         "fr": {
           "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
           "summary": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society."
+        }
+      }
+    },
+    {
+      "slug": "20261005-pgvaulttde-v172-critical-crash-fixes-new-on-disk-format-and-stab-35290beb",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_vault_tde-v172-critical-crash-fixes-new-on-disk-format-and-stability-improvements-3393/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
+          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuses on criti…"
+        },
+        "fr": {
+          "title": "pg_vault_tde v1.7.2 : Critical crash fixes, new on-disk format, and stability improvements",
+          "summary": "Version 1.7.2 of pg_vault_tde is now available. This is a binary patch release where extension version stays at 1.7, but users can distinguish the build at runtime using pg_vault_tde_build_version() . This update focuses on criti…"
         }
       }
     },
@@ -4221,25 +4221,6 @@
       }
     },
     {
-      "slug": "20260929-dasha-18-index-recommendations-io-analysis-schema-checks-and-log-e42d6b25",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/dasha-18-index-recommendations-io-analysis-schema-checks-and-log-insights-3387/",
-      "publishedAt": "2026-09-29T00:00:00.000Z",
-      "discoveredAt": "2026-09-29T12:48:58.498Z",
-      "locales": {
-        "en": {
-          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
-          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
-        },
-        "fr": {
-          "title": "Dasha 1.8: index recommendations, I/O analysis, schema checks and log insights",
-          "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
-        }
-      }
-    },
-    {
       "slug": "20260904-kubernetes-v137-kubeletinusernamespace-aka-rootless-mode-graduat-1560f468",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -4274,6 +4255,25 @@
         "fr": {
           "title": "DevFest is back",
           "summary": "DevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era."
+        }
+      }
+    },
+    {
+      "slug": "20261005-dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-a-4dad8a1f",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/dbforge-20262-adds-a-postgresql-debugger-visual-object-editors-and-broader-context-for-dbforge-ai-assistant-3394/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
+      "locales": {
+        "en": {
+          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
+          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database management softwar…"
+        },
+        "fr": {
+          "title": "dbForge 2026.2 Adds a PostgreSQL Debugger, Visual Object Editors and Broader Context for dbForge AI Assistant",
+          "summary": "The release adds a PostgreSQL Debugger, visual editors for event triggers, functions and procedures, as well as file attachments and model choice in dbForge AI Assistant. Devart, a leading developer of database management softwar…"
         }
       }
     },
@@ -4430,25 +4430,6 @@
       }
     },
     {
-      "slug": "20260928-plhaskell-v60-released-22b5aed3",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/plhaskell-v60-released-3388/",
-      "publishedAt": "2026-09-28T00:00:00.000Z",
-      "discoveredAt": "2026-09-28T15:51:30.407Z",
-      "locales": {
-        "en": {
-          "title": "PL/Haskell v6.0 Released",
-          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
-        },
-        "fr": {
-          "title": "PL/Haskell v6.0 Released",
-          "summary": "We are pleased to announce the release of version 6.0 of the PL/Haskell extension . This extension allows users to write PostgreSQL functions in the Haskell functional programming language. Instructions can be found here . Versio…"
-        }
-      }
-    },
-    {
       "slug": "20260903-kubernetes-v137-dra-updates-90b5ee36",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -4487,21 +4468,40 @@
       }
     },
     {
-      "slug": "20261015-deploying-an-hstu-generative-recommender-with-nvidia-dynamo-trit-96188735",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/deploying-an-hstu-generative-recommender-with-nvidia-dynamo-triton/",
-      "publishedAt": "2026-10-15T18:13:25.000Z",
-      "discoveredAt": "2026-10-17T20:33:54.192Z",
+      "slug": "20261005-pgvector-087-released-9f7f16c5",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgvector-087-released-3392/",
+      "publishedAt": "2026-10-05T00:00:00.000Z",
+      "discoveredAt": "2026-10-05T14:32:15.255Z",
       "locales": {
         "en": {
-          "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
-          "summary": "Generative recommender (GR) systems are emerging as a powerful new approach for large-scale personalization. Instead of treating recommendation as a set of..."
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details: https://g…"
         },
         "fr": {
-          "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
-          "summary": "Generative recommender (GR) systems are emerging as a powerful new approach for large-scale personalization. Instead of treating recommendation as a set of..."
+          "title": "pgvector 0.8.7 Released",
+          "summary": "pgvector 0.8.7 is now available. This release fixes a buffer overflow with IVFFlat index builds (CVE-2026-103484), which can lead to arbitrary code execution. Users are encouraged to upgrade when possible. More details: https://g…"
+        }
+      }
+    },
+    {
+      "slug": "20261015-expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia--581ab947",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia-scada-server-sdk/",
+      "publishedAt": "2026-10-15T18:13:25.000Z",
+      "discoveredAt": "2026-10-18T11:00:03.822Z",
+      "locales": {
+        "en": {
+          "title": "Expanding AI Storage Access with NVIDIA cuObject and the NVIDIA SCADA Server SDK",
+          "summary": "AI infrastructure engineers, storage developers, and cloud service providers need fast and secure access to high-capacity file and object storage to support AI..."
+        },
+        "fr": {
+          "title": "Expanding AI Storage Access with NVIDIA cuObject and the NVIDIA SCADA Server SDK",
+          "summary": "AI infrastructure engineers, storage developers, and cloud service providers need fast and secure access to high-capacity file and object storage to support AI..."
         }
       }
     },
@@ -4525,40 +4525,40 @@
       }
     },
     {
-      "slug": "20261008-pollo-ai-turns-creative-ideas-into-campaigns-with-openai-ca1ec6c6",
+      "slug": "20261008-legalon-halves-codex-costs-while-maintaining-development-speed-f6d3626e",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/pollo-ai",
+      "href": "https://openai.com/index/legalon-halves-codex-costs",
       "publishedAt": "2026-10-08T12:00:00.000Z",
-      "discoveredAt": "2026-10-17T20:33:54.192Z",
+      "discoveredAt": "2026-10-18T11:00:03.822Z",
       "locales": {
         "en": {
-          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
+          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically."
         },
         "fr": {
-          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
+          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically."
         }
       }
     },
     {
-      "slug": "20261005-everything-we-launched-during-birthday-week-2026-0536bfa8",
+      "slug": "20261005-one-year-later-the-power-of-1111-interns-523bb8b1",
       "topic": "Computer Systems",
       "source": "Cloudflare Blog",
       "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
+      "href": "https://blog.cloudflare.com/one-year-later-1111-interns/",
       "publishedAt": "2026-10-05T13:00:00.000Z",
-      "discoveredAt": "2026-10-17T20:33:54.192Z",
+      "discoveredAt": "2026-10-18T11:00:03.822Z",
       "locales": {
         "en": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
         },
         "fr": {
-          "title": "Everything we launched during Birthday Week 2026",
-          "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped."
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI…"
         }
       }
     }
