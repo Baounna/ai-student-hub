@@ -1,16 +1,16 @@
 # AI and Cybersecurity News Agent Issue Sync
 
-Generated: 2026-10-19T14:56:38.060Z
+Generated: 2026-10-19T15:51:44.691Z
 Mode: disabled
 Repository: Baounna/ai-student-hub
 Max issues per run: 3
 
 ## Queue Sources
-- Operator: enabled=YES | actions=4 | queue=docs/agent/next-actions.json
-  - Queue generated at: 2026-10-19T14:56:37.884Z
-  - Selected this run: 3
-- Design: enabled=NO | actions=0 | queue=docs/agent/design-actions.json
+- Operator: enabled=NO | actions=0 | queue=docs/agent/next-actions.json
   - Selected this run: 0
+- Design: enabled=YES | actions=5 | queue=docs/agent/design-actions.json
+  - Queue generated at: 2026-10-19T15:51:44.511Z
+  - Selected this run: 3
 
 ## Run Summary
 - Created: 0
@@ -20,9 +20,9 @@ Max issues per run: 3
 - Tracked total: 15
 
 ## Dry-run
-- [Operator] [Operator P2] Add lead magnet CTA on compare.
-- [Operator] [Operator P2] Publish 1 comparison-intent post/week from auto-news opportunities.
-- [Operator] [Operator P3] Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows…
+- [Design] [Design P1] Keep CS-first value proposition cards visible on homepage.
+- [Design] [Design P1] Use clean field-input styling for search with clear visual hierarchy.
+- [Design] [Design P2] Hide appearance panel on tools routes to reduce visual clutter.
 
 ## Tracked Actions
 - [Operator P1] Add at least 3 valid affiliate links (name + final URL + placement).
@@ -51,10 +51,10 @@ Max issues per run: 3
   - Last seen: 2026-09-18T11:23:23.441Z
 - [Design P1] Keep CS-first value proposition cards visible on homepage.
   - Status: disabled
-  - Last seen: 2026-10-12T18:11:37.246Z
+  - Last seen: 2026-10-19T15:51:44.691Z
 - [Design P1] Use clean field-input styling for search with clear visual hierarchy.
   - Status: disabled
-  - Last seen: 2026-10-12T18:11:37.246Z
+  - Last seen: 2026-10-19T15:51:44.691Z
 - [Operator P2] Add lead magnet CTA on compare.
   - Status: disabled
   - Last seen: 2026-10-19T14:56:38.060Z
@@ -63,7 +63,7 @@ Max issues per run: 3
   - Last seen: 2026-10-19T14:56:38.060Z
 - [Design P2] Hide appearance panel on tools routes to reduce visual clutter.
   - Status: disabled
-  - Last seen: 2026-10-12T18:11:37.246Z
+  - Last seen: 2026-10-19T15:51:44.691Z
 - [Design P2] Keep AI/CS split filters on news page with track chips.
   - Status: disabled
   - Last seen: 2026-09-21T15:19:19.296Z
