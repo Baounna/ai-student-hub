@@ -1,6 +1,6 @@
 # AI and Cybersecurity News Blog Operator Report
 
-Generated: 2026-10-12T16:57:18.144Z
+Generated: 2026-10-19T14:56:37.884Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -54,34 +54,34 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding: What It Means for AI/CS Students
-   - Source: NVIDIA Developer Blog
-   - Keyword: how to build nvidia developer blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-2. Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions: What It Means for AI/CS Students
-   - Source: Docker Blog
-   - Keyword: api security for student projects docker blog
-   - Monetization angle: security checklist and reliability upgrade path for student apps
-   - CTA: Security guide + resources
-3. Deploy decision models with llama.cpp on Amazon SageMaker AI: What It Means for AI/CS Students
-   - Source: AWS ML Blog
-   - Keyword: how to build aws ml blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-4. Run multi-node inference workloads using Ray LLM Deep Learning Containers: What It Means for AI/CS Students
-   - Source: AWS ML Blog
-   - Keyword: how to build aws ml blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. Filter, reshape, and redact logs before export with Transformers: What It Means for AI/CS Students
+1. Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities: What It Means for AI/CS Students
    - Source: Cloudflare Blog
    - Keyword: how to build cloudflare blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
+2. Improved thread navigation in W3C's mailing list archives: What It Means for AI/CS Students
+   - Source: W3C Blog
+   - Keyword: computer science workflow for students w3c blog
+   - Monetization angle: CS implementation and tooling decision for student budgets
+   - CTA: Resources + compare pages
+3. crecheck v6.0 has been released: What It Means for AI/CS Students
+   - Source: PostgreSQL News
+   - Keyword: how to build postgresql news
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. FOSDEM PGDay 2027: two days of PostgreSQL, with calls for papers and sponsors now open!: What It Means for AI/CS Students
+   - Source: PostgreSQL News
+   - Keyword: computer science workflow for students postgresql news
+   - Monetization angle: CS implementation and tooling decision for student budgets
+   - CTA: Resources + compare pages
+5. pg_utl_smtp v2.0 released: What It Means for AI/CS Students
+   - Source: PostgreSQL News
+   - Keyword: how to build postgresql news
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. pg_hint_plan v1.9.0 Released: What It Means for AI/CS Students
+   - Source: PostgreSQL News
+   - Keyword: how to build postgresql news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
 
@@ -98,6 +98,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20261012--20261012-replayssm-rethinking-state-storage-for-faster-hybrid-model-decod-1ae6a56c.md
-- docs/agent/drafts/20261012--20261012-docker-hub-security-advisory-personal-access-tokens-transferred--b06c4bf6.md
+- docs/agent/drafts/20261019--20261019-beyond-the-patch-protecting-your-netscaler-gateway-against-futur-acdbe7df.md
+- docs/agent/drafts/20261019--20261019-improved-thread-navigation-in-w3cs-mailing-list-archives-31b336fd.md
 

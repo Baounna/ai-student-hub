@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T18:11:37.246Z",
+  "generatedAt": "2026-10-19T14:56:38.060Z",
   "repository": "Baounna/ai-student-hub",
   "mode": "disabled",
   "maxPerRun": 3,
@@ -8,19 +8,19 @@
       "sourceId": "operator",
       "label": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "enabled": false,
-      "queueGeneratedAt": "",
-      "totalActions": 0,
-      "selectedCount": 0
+      "enabled": true,
+      "queueGeneratedAt": "2026-10-19T14:56:37.884Z",
+      "totalActions": 4,
+      "selectedCount": 3
     },
     {
       "sourceId": "design",
       "label": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "enabled": true,
-      "queueGeneratedAt": "2026-10-12T18:11:37.109Z",
-      "totalActions": 5,
-      "selectedCount": 3
+      "enabled": false,
+      "queueGeneratedAt": "",
+      "totalActions": 0,
+      "selectedCount": 0
     }
   ],
   "summary": {
@@ -182,7 +182,7 @@
       "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
       "lastSeenAt": "2026-10-12T18:11:37.246Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "29e4e1db629195e3",
@@ -199,14 +199,14 @@
       "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
       "lastSeenAt": "2026-10-12T18:11:37.246Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "47e47e1d8303a4d2",
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-10-12T16:57:18.144Z",
+      "queueGeneratedAt": "2026-10-19T14:56:37.884Z",
       "priority": "P2",
       "action": "Add lead magnet CTA on compare.",
       "why": "Increases opt-ins per 100 visitors.",
@@ -215,15 +215,15 @@
       "title": "[Operator P2] Add lead magnet CTA on compare.",
       "status": "disabled",
       "createdAt": "2026-10-12T16:57:18.321Z",
-      "lastSeenAt": "2026-10-12T16:57:18.321Z",
-      "inQueue": false
+      "lastSeenAt": "2026-10-19T14:56:38.060Z",
+      "inQueue": true
     },
     {
       "hash": "929a6c20e1dd7acf",
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-10-12T16:57:18.144Z",
+      "queueGeneratedAt": "2026-10-19T14:56:37.884Z",
       "priority": "P2",
       "action": "Publish 1 comparison-intent post/week from auto-news opportunities.",
       "why": "High-intent SEO posts improve both affiliate CTR and product click-through.",
@@ -232,8 +232,8 @@
       "title": "[Operator P2] Publish 1 comparison-intent post/week from auto-news opportunities.",
       "status": "disabled",
       "createdAt": "2026-10-12T16:57:18.321Z",
-      "lastSeenAt": "2026-10-12T16:57:18.321Z",
-      "inQueue": false
+      "lastSeenAt": "2026-10-19T14:56:38.060Z",
+      "inQueue": true
     },
     {
       "hash": "450ace15b309218f",
@@ -250,7 +250,7 @@
       "status": "disabled",
       "createdAt": "2026-09-28T16:59:56.494Z",
       "lastSeenAt": "2026-10-12T18:11:37.246Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "8a7997bd695b6700",
@@ -274,7 +274,7 @@
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-10-12T16:57:18.144Z",
+      "queueGeneratedAt": "2026-10-19T14:56:37.884Z",
       "priority": "P3",
       "action": "Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows. These live in the Vercel environment; check them there or run this agent with those variables set.",
       "why": "This run could see none of them, and an unchecked setting is not a broken one.",
@@ -283,8 +283,8 @@
       "title": "[Operator P3] Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows…",
       "status": "disabled",
       "createdAt": "2026-10-12T16:57:18.321Z",
-      "lastSeenAt": "2026-10-12T16:57:18.321Z",
-      "inQueue": false
+      "lastSeenAt": "2026-10-19T14:56:38.060Z",
+      "inQueue": true
     }
   ]
 }
