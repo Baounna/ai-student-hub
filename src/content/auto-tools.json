@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18T20:38:37.732Z",
+  "updatedAt": "2026-10-19T13:07:36.916Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -39,6 +39,66 @@
         "fr": {
           "title": "Laya decision model now available on AI Gateway, free through October 31 Laya from Convai Innovations is available on Vercel AI Gateway and free through October 31, 2026, when served by Boundless. Zachary Chen, Jerilyn Zheng",
           "summary": "1 October 1 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261019-cloudflare-beyond-the-patch-protecting-your-netscaler-gateway-ag-acdbe7df",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
+      "publishedAt": "2026-10-19T13:00:00.000Z",
+      "discoveredAt": "2026-10-19T13:07:36.916Z",
+      "locales": {
+        "en": {
+          "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
+          "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code."
+        },
+        "fr": {
+          "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
+          "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code."
+        }
+      }
+    },
+    {
+      "slug": "20261019-github-codeql-changes-for-macos-27-xcode-27-and-swift-64-d409fbac",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4",
+      "publishedAt": "2026-10-19T10:29:09.000Z",
+      "discoveredAt": "2026-10-19T13:07:36.916Z",
+      "locales": {
+        "en": {
+          "title": "CodeQL changes for macOS 27, Xcode 27, and Swift 6.4",
+          "summary": "Starting with macOS 27 and Xcode 27, Apple no longer includes Intel (x86_64) code in some of the system binaries and libraries that CodeQL relies on to trace builds. As… The post CodeQL changes for macOS 27, Xcode 27, a…"
+        },
+        "fr": {
+          "title": "CodeQL changes for macOS 27, Xcode 27, and Swift 6.4",
+          "summary": "Starting with macOS 27 and Xcode 27, Apple no longer includes Intel (x86_64) code in some of the system binaries and libraries that CodeQL relies on to trace builds. As… The post CodeQL changes for macOS 27, Xcode 27, a…"
+        }
+      }
+    },
+    {
+      "slug": "20261019-w3c-improved-thread-navigation-in-w3cs-mailing-list-archives-31b336fd",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/improved-thread-navigation-in-w3c-mailing-list-archives/",
+      "publishedAt": "2026-10-19T09:03:00.000Z",
+      "discoveredAt": "2026-10-19T13:07:36.916Z",
+      "locales": {
+        "en": {
+          "title": "Improved thread navigation in W3C's mailing list archives",
+          "summary": "A new feature is available in W3C's mailing list archives, aiming to make it easier to read and navigate message threads."
+        },
+        "fr": {
+          "title": "Improved thread navigation in W3C's mailing list archives",
+          "summary": "A new feature is available in W3C's mailing list archives, aiming to make it easier to read and navigate message threads."
         }
       }
     },
@@ -163,46 +223,6 @@
       }
     },
     {
-      "slug": "20261016-github-open-source-license-compliance-generally-available-f70342f0",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available",
-      "publishedAt": "2026-10-16T14:00:32.000Z",
-      "discoveredAt": "2026-10-16T21:04:25.613Z",
-      "locales": {
-        "en": {
-          "title": "Open source license compliance generally available",
-          "summary": "Enterprises can now manage their dependencies’ licenses at scale with sophisticated, ruleset-based checks that enforce a centralized policy. Open source license compliance is now generally available for GitHub Enterpris…"
-        },
-        "fr": {
-          "title": "Open source license compliance generally available",
-          "summary": "Enterprises can now manage their dependencies’ licenses at scale with sophisticated, ruleset-based checks that enforce a centralized policy. Open source license compliance is now generally available for GitHub Enterpris…"
-        }
-      }
-    },
-    {
-      "slug": "20261016-cloudflare-continuous-accountability-for-verified-bots-90fc70b2",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/verified-bots-accountability/",
-      "publishedAt": "2026-10-16T13:00:00.000Z",
-      "discoveredAt": "2026-10-16T21:04:25.613Z",
-      "locales": {
-        "en": {
-          "title": "Continuous accountability for Verified bots",
-          "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain acco…"
-        },
-        "fr": {
-          "title": "Continuous accountability for Verified bots",
-          "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain acco…"
-        }
-      }
-    },
-    {
       "slug": "20261016-nist-new-chip-based-tape-measure-for-light-could-revolutionize-m-2221263d",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -323,26 +343,6 @@
       }
     },
     {
-      "slug": "20261014-github-introducing-group-activity-pages-02d7d696",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/introducing-group-activity-pages/",
-      "publishedAt": "2026-10-14T10:28:00.000Z",
-      "discoveredAt": "2026-10-14T11:47:55.564Z",
-      "locales": {
-        "en": {
-          "title": "Introducing group activity pages",
-          "summary": "W3C groups now have an Activity page that shows, month by month, their charters, publications, meetings, participants and GitHub work in one place. The pages are in beta, and we would like your feedback."
-        },
-        "fr": {
-          "title": "Introducing group activity pages",
-          "summary": "W3C groups now have an Activity page that shows, month by month, their charters, publications, meetings, participants and GitHub work in one place. The pages are in beta, and we would like your feedback."
-        }
-      }
-    },
-    {
       "slug": "20261013-notion-notion-38-context-for-your-agents-66f0e572",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -383,42 +383,102 @@
       }
     },
     {
-      "slug": "20261018-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
+      "slug": "20261019-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/multigres-private-alpha",
-      "publishedAt": "2026-10-18T20:38:37.732Z",
-      "discoveredAt": "2026-10-18T20:38:37.732Z",
+      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
+      "publishedAt": "2026-10-19T13:07:36.916Z",
+      "discoveredAt": "2026-10-19T13:07:36.916Z",
       "locales": {
         "en": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         },
         "fr": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         }
       }
     },
     {
-      "slug": "20261018-vercel-deepseek-v41-flash-1017-now-available-on-ai-gateway-call--e5cf11d8",
+      "slug": "20261019-vercel-minimax-m31-flash-now-available-on-ai-gateway-for-free-ca-2302825f",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/deepseek-v4-1-flash-1017-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-18T20:38:37.732Z",
-      "discoveredAt": "2026-10-18T20:38:37.732Z",
+      "href": "https://vercel.com/changelog/minimax-m3-1-flash-now-available-on-ai-gateway-for-free",
+      "publishedAt": "2026-10-19T13:07:36.916Z",
+      "discoveredAt": "2026-10-19T13:07:36.916Z",
       "locales": {
         "en": {
-          "title": "DeepSeek V4.1 Flash 1017 now available on AI Gateway Call DeepSeek V4.1 Flash 1017 through Vercel AI Gateway with one API key, image input, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
-          "summary": "17 October 17 Oct"
+          "title": "MiniMax M3.1 Flash now available on AI Gateway for free Call MiniMax M3.1 Flash through Vercel AI Gateway with one API key: no provider account, automatic fallbacks, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "19 October 19 Oct"
         },
         "fr": {
-          "title": "DeepSeek V4.1 Flash 1017 now available on AI Gateway Call DeepSeek V4.1 Flash 1017 through Vercel AI Gateway with one API key, image input, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
-          "summary": "17 October 17 Oct"
+          "title": "MiniMax M3.1 Flash now available on AI Gateway for free Call MiniMax M3.1 Flash through Vercel AI Gateway with one API key: no provider account, automatic fallbacks, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "19 October 19 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261016-cloudflare-continuous-accountability-for-verified-bots-90fc70b2",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/verified-bots-accountability/",
+      "publishedAt": "2026-10-16T13:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Continuous accountability for Verified bots",
+          "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain acco…"
+        },
+        "fr": {
+          "title": "Continuous accountability for Verified bots",
+          "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain acco…"
+        }
+      }
+    },
+    {
+      "slug": "20261016-github-open-source-license-compliance-generally-available-f70342f0",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available",
+      "publishedAt": "2026-10-16T14:00:32.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Open source license compliance generally available",
+          "summary": "Enterprises can now manage their dependencies’ licenses at scale with sophisticated, ruleset-based checks that enforce a centralized policy. Open source license compliance is now generally available for GitHub Enterpris…"
+        },
+        "fr": {
+          "title": "Open source license compliance generally available",
+          "summary": "Enterprises can now manage their dependencies’ licenses at scale with sophisticated, ruleset-based checks that enforce a centralized policy. Open source license compliance is now generally available for GitHub Enterpris…"
+        }
+      }
+    },
+    {
+      "slug": "20261014-github-introducing-group-activity-pages-02d7d696",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/introducing-group-activity-pages/",
+      "publishedAt": "2026-10-14T10:28:00.000Z",
+      "discoveredAt": "2026-10-14T11:47:55.564Z",
+      "locales": {
+        "en": {
+          "title": "Introducing group activity pages",
+          "summary": "W3C groups now have an Activity page that shows, month by month, their charters, publications, meetings, participants and GitHub work in one place. The pages are in beta, and we would like your feedback."
+        },
+        "fr": {
+          "title": "Introducing group activity pages",
+          "summary": "W3C groups now have an Activity page that shows, month by month, their charters, publications, meetings, participants and GitHub work in one place. The pages are in beta, and we would like your feedback."
         }
       }
     },
@@ -543,46 +603,6 @@
       }
     },
     {
-      "slug": "20261016-github-xcode-27-runner-image-generally-available-038384fb",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-xcode-27-runner-image-generally-available",
-      "publishedAt": "2026-10-16T04:36:30.000Z",
-      "discoveredAt": "2026-10-16T21:04:25.613Z",
-      "locales": {
-        "en": {
-          "title": "Xcode 27 runner image generally available",
-          "summary": "You can now use the generally available Xcode 27 runner image to build and test your Apple applications in GitHub Actions. Previously in public preview, this GitHub-hosted image runs on… The post Xcode 27 runner image g…"
-        },
-        "fr": {
-          "title": "Xcode 27 runner image generally available",
-          "summary": "You can now use the generally available Xcode 27 runner image to build and test your Apple applications in GitHub Actions. Previously in public preview, this GitHub-hosted image runs on… The post Xcode 27 runner image g…"
-        }
-      }
-    },
-    {
-      "slug": "20261015-cloudflare-a-fully-programmable-secure-web-gateway-068b055f",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/programmable-gateway-dlp/",
-      "publishedAt": "2026-10-15T17:11:12.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "A fully programmable secure web gateway",
-          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
-        },
-        "fr": {
-          "title": "A fully programmable secure web gateway",
-          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
-        }
-      }
-    },
-    {
       "slug": "20261008-nist-nist-joins-white-house-effort-to-drive-a-new-golden-age-of--25dc3f92",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -703,26 +723,6 @@
       }
     },
     {
-      "slug": "20261012-w3c-were-on-a-roll---epub-34-is-coming-93541ce9",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/were-on-a-roll-epub-3-4-is-coming/",
-      "publishedAt": "2026-10-12T17:06:00.000Z",
-      "discoveredAt": "2026-10-13T00:36:51.465Z",
-      "locales": {
-        "en": {
-          "title": "We’re on a roll - EPUB 3.4 is coming",
-          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standa…"
-        },
-        "fr": {
-          "title": "We’re on a roll - EPUB 3.4 is coming",
-          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standa…"
-        }
-      }
-    },
-    {
       "slug": "20260916-notion-notion-37-agent-skills-for-your-whole-team-cd21ad33",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -763,42 +763,102 @@
       }
     },
     {
-      "slug": "20261018-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261019-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "toolName": "Supabase",
+      "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/orioledb-public-beta",
-      "publishedAt": "2026-10-18T20:38:37.732Z",
-      "discoveredAt": "2026-10-18T20:38:37.732Z",
+      "href": "https://supabase.com/changelog/no-access-org-role",
+      "publishedAt": "2026-10-19T13:07:36.916Z",
+      "discoveredAt": "2026-10-19T13:07:36.916Z",
       "locales": {
         "en": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         },
         "fr": {
-          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
-          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         }
       }
     },
     {
-      "slug": "20261018-perplexity-perplexitys-decider-v12-models-now-available-on-ai-ga-86e1f6b3",
-      "toolName": "Perplexity",
-      "category": "Research Assistant",
+      "slug": "20261019-vercel-introducing-token-pass-vercel-token-pass-now-in-early-acc-827aaf26",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/perplexity-decider-v1-2-models-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-18T20:38:37.732Z",
-      "discoveredAt": "2026-10-18T20:38:37.732Z",
+      "href": "https://vercel.com/changelog/introducing-token-pass",
+      "publishedAt": "2026-10-19T13:07:36.916Z",
+      "discoveredAt": "2026-10-19T13:07:36.916Z",
       "locales": {
         "en": {
-          "title": "Perplexity's Decider V1.2 models now available on AI Gateway Call Perplexity Decider V1.2 and Decider Flash V1.2 through Vercel AI Gateway with one API key, shared budgets, and usage tracking. Jerilyn Zheng, Zachary Chen",
-          "summary": "\"/> Jerilyn Zheng, Rohan Taneja, and 1 other"
+          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
+          "summary": "15 October 15 Oct"
         },
         "fr": {
-          "title": "Perplexity's Decider V1.2 models now available on AI Gateway Call Perplexity Decider V1.2 and Decider Flash V1.2 through Vercel AI Gateway with one API key, shared budgets, and usage tracking. Jerilyn Zheng, Zachary Chen",
-          "summary": "\"/> Jerilyn Zheng, Rohan Taneja, and 1 other"
+          "title": "Introducing Token Pass Vercel Token Pass, now in early access, gives your team $80 in monthly credit for featured open-weight models for $30, starting with GLM 5.3 and Kimi K3. Use it with your coding agent or to power a personal agent on Vercel. +2 Jas Garcha, Krish Krish, and 2 others",
+          "summary": "15 October 15 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261015-cloudflare-a-fully-programmable-secure-web-gateway-068b055f",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/programmable-gateway-dlp/",
+      "publishedAt": "2026-10-15T17:11:12.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "A fully programmable secure web gateway",
+          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
+        },
+        "fr": {
+          "title": "A fully programmable secure web gateway",
+          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
+        }
+      }
+    },
+    {
+      "slug": "20261016-github-xcode-27-runner-image-generally-available-038384fb",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-15-xcode-27-runner-image-generally-available",
+      "publishedAt": "2026-10-16T04:36:30.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Xcode 27 runner image generally available",
+          "summary": "You can now use the generally available Xcode 27 runner image to build and test your Apple applications in GitHub Actions. Previously in public preview, this GitHub-hosted image runs on… The post Xcode 27 runner image g…"
+        },
+        "fr": {
+          "title": "Xcode 27 runner image generally available",
+          "summary": "You can now use the generally available Xcode 27 runner image to build and test your Apple applications in GitHub Actions. Previously in public preview, this GitHub-hosted image runs on… The post Xcode 27 runner image g…"
+        }
+      }
+    },
+    {
+      "slug": "20261012-w3c-were-on-a-roll---epub-34-is-coming-93541ce9",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/were-on-a-roll-epub-3-4-is-coming/",
+      "publishedAt": "2026-10-12T17:06:00.000Z",
+      "discoveredAt": "2026-10-13T00:36:51.465Z",
+      "locales": {
+        "en": {
+          "title": "We’re on a roll - EPUB 3.4 is coming",
+          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standa…"
+        },
+        "fr": {
+          "title": "We’re on a roll - EPUB 3.4 is coming",
+          "summary": "The Publishing Maintenance Working Group at W3C has been quietly working on yet another update for the EPUB3 standard, and we're excited to share what we have been up to. Our goal is to not only maintain the EPUB standa…"
         }
       }
     },
@@ -923,46 +983,6 @@
       }
     },
     {
-      "slug": "20261016-github-multi-repository-support-and-other-improvements-for-githu-5c6d7a0c",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
-      "publishedAt": "2026-10-16T02:16:35.000Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
-      "locales": {
-        "en": {
-          "title": "Multi-repository support and other improvements for GitHub in Slack and Teams",
-          "summary": "@GitHub in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re creating issues, opening pull requests, or investigating bugs, you can work across repositories… The…"
-        },
-        "fr": {
-          "title": "Multi-repository support and other improvements for GitHub in Slack and Teams",
-          "summary": "@GitHub in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re creating issues, opening pull requests, or investigating bugs, you can work across repositories… The…"
-        }
-      }
-    },
-    {
-      "slug": "20261015-cloudflare-deploy-with-void-41ee710a",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/deploy-with-void/",
-      "publishedAt": "2026-10-15T14:00:00.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Deploy with Void",
-          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
-        },
-        "fr": {
-          "title": "Deploy with Void",
-          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
-        }
-      }
-    },
-    {
       "slug": "20261008-nist-nist-study-shows-how-the-toxic-substances-mixed-into-fentan-9acfb21c",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -1083,26 +1103,6 @@
       }
     },
     {
-      "slug": "20261009-w3c-whats-new-in-the-w3c-website-design-system-8d2b885c",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/whats-new-in-the-w3c-design-system-september-2026/",
-      "publishedAt": "2026-10-09T07:58:00.000Z",
-      "discoveredAt": "2026-10-09T13:12:58.339Z",
-      "locales": {
-        "en": {
-          "title": "What’s new in the W3C Website Design System",
-          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
-        },
-        "fr": {
-          "title": "What’s new in the W3C Website Design System",
-          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
-        }
-      }
-    },
-    {
       "slug": "20260912-notion-see-whats-new-feab92d9",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1143,42 +1143,102 @@
       }
     },
     {
-      "slug": "20261018-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
+      "slug": "20261018-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
-      "publishedAt": "2026-10-18T11:00:06.948Z",
-      "discoveredAt": "2026-10-18T11:00:06.948Z",
+      "href": "https://supabase.com/changelog/multigres-private-alpha",
+      "publishedAt": "2026-10-18T20:38:37.732Z",
+      "discoveredAt": "2026-10-18T20:38:37.732Z",
       "locales": {
         "en": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         },
         "fr": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         }
       }
     },
     {
-      "slug": "20261018-vercel-elorian-ais-glimpse-now-available-on-ai-gateway-call-elor-a256c10c",
+      "slug": "20261018-vercel-deepseek-v41-flash-1017-now-available-on-ai-gateway-call--e5cf11d8",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/elorian-ai-glimpse-now-available-on-ai-gateway",
-      "publishedAt": "2026-10-18T11:00:06.948Z",
-      "discoveredAt": "2026-10-18T11:00:06.948Z",
+      "href": "https://vercel.com/changelog/deepseek-v4-1-flash-1017-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-18T20:38:37.732Z",
+      "discoveredAt": "2026-10-18T20:38:37.732Z",
       "locales": {
         "en": {
-          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Rohan Taneja, and 1 other",
-          "summary": "16 October 16 Oct"
+          "title": "DeepSeek V4.1 Flash 1017 now available on AI Gateway Call DeepSeek V4.1 Flash 1017 through Vercel AI Gateway with one API key, image input, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "17 October 17 Oct"
         },
         "fr": {
-          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Rohan Taneja, and 1 other",
-          "summary": "16 October 16 Oct"
+          "title": "DeepSeek V4.1 Flash 1017 now available on AI Gateway Call DeepSeek V4.1 Flash 1017 through Vercel AI Gateway with one API key, image input, spend tracking, and traces on every request. Zachary Chen, Jerilyn Zheng",
+          "summary": "17 October 17 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261015-cloudflare-deploy-with-void-41ee710a",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/deploy-with-void/",
+      "publishedAt": "2026-10-15T14:00:00.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "Deploy with Void",
+          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
+        },
+        "fr": {
+          "title": "Deploy with Void",
+          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
+        }
+      }
+    },
+    {
+      "slug": "20261016-github-multi-repository-support-and-other-improvements-for-githu-5c6d7a0c",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
+      "publishedAt": "2026-10-16T02:16:35.000Z",
+      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "locales": {
+        "en": {
+          "title": "Multi-repository support and other improvements for GitHub in Slack and Teams",
+          "summary": "@GitHub in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re creating issues, opening pull requests, or investigating bugs, you can work across repositories… The…"
+        },
+        "fr": {
+          "title": "Multi-repository support and other improvements for GitHub in Slack and Teams",
+          "summary": "@GitHub in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re creating issues, opening pull requests, or investigating bugs, you can work across repositories… The…"
+        }
+      }
+    },
+    {
+      "slug": "20261009-w3c-whats-new-in-the-w3c-website-design-system-8d2b885c",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/whats-new-in-the-w3c-design-system-september-2026/",
+      "publishedAt": "2026-10-09T07:58:00.000Z",
+      "discoveredAt": "2026-10-09T13:12:58.339Z",
+      "locales": {
+        "en": {
+          "title": "What’s new in the W3C Website Design System",
+          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
+        },
+        "fr": {
+          "title": "What’s new in the W3C Website Design System",
+          "summary": "A significant update to the W3C Website Design System was published at the end of September 2026. Here’s what changed and why."
         }
       }
     },
@@ -1303,46 +1363,6 @@
       }
     },
     {
-      "slug": "20261016-github-copilot-multi-repo-support-and-other-improvements-for-git-5c6d7a0c",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
-      "publishedAt": "2026-10-16T02:16:35.000Z",
-      "discoveredAt": "2026-10-16T21:04:25.613Z",
-      "locales": {
-        "en": {
-          "title": "Multi-repo support and other improvements for GitHub in Slack and Teams",
-          "summary": "Multi-repo support in Slack and Teams GitHub Copilot in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating issues, or… The po…"
-        },
-        "fr": {
-          "title": "Multi-repo support and other improvements for GitHub in Slack and Teams",
-          "summary": "Multi-repo support in Slack and Teams GitHub Copilot in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating issues, or… The po…"
-        }
-      }
-    },
-    {
-      "slug": "20261015-cloudflare-cloudflare-and-openai-making-ai-discovery-better-for--39780551",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
-      "publishedAt": "2026-10-15T13:00:00.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
-          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
-        },
-        "fr": {
-          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
-          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
-        }
-      }
-    },
-    {
       "slug": "20261005-nist-physicist-jun-ye-wins-wolf-prize-in-physics-e9a43731",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -1463,26 +1483,6 @@
       }
     },
     {
-      "slug": "20261002-w3c-w3c-newsletter---september-2026-033e226a",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/w3c-newsletter-september-2026/",
-      "publishedAt": "2026-10-02T10:01:00.000Z",
-      "discoveredAt": "2026-10-02T12:29:56.036Z",
-      "locales": {
-        "en": {
-          "title": "W3C Newsletter - September 2026",
-          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
-        },
-        "fr": {
-          "title": "W3C Newsletter - September 2026",
-          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
-        }
-      }
-    },
-    {
       "slug": "20260908-notion-control-which-ai-models-your-agents-can-use-5768ae4c",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1523,42 +1523,102 @@
       }
     },
     {
-      "slug": "20261018-supabase-supabase-middleware-10-c639ad09",
-      "toolName": "Supabase",
-      "category": "Backend Platform",
+      "slug": "20261018-postgresql-orioledb-is-now-in-public-beta-with-paid-plans-and-pa-e567e00d",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-middleware-1-0",
-      "publishedAt": "2026-10-18T11:00:06.948Z",
-      "discoveredAt": "2026-10-18T11:00:06.948Z",
+      "href": "https://supabase.com/changelog/orioledb-public-beta",
+      "publishedAt": "2026-10-18T20:38:37.732Z",
+      "discoveredAt": "2026-10-18T20:38:37.732Z",
       "locales": {
         "en": {
-          "title": "Supabase Middleware 1.0",
-          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
+          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
+          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
         },
         "fr": {
-          "title": "Supabase Middleware 1.0",
-          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
+          "title": "OrioleDB is now in Public Beta with paid plans and paid features",
+          "summary": "Policy OrioleDB is now in Public Beta. Create OrioleDB projects on Free, Pro, Team, and Enterprise plans, with paid features and standard Postgres pricing. Existing alpha project"
         }
       }
     },
     {
-      "slug": "20261018-vercel-reflection-ais-beam-now-available-on-ai-gateway-for-free--edc61255",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
+      "slug": "20261018-perplexity-perplexitys-decider-v12-models-now-available-on-ai-ga-86e1f6b3",
+      "toolName": "Perplexity",
+      "category": "Research Assistant",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/reflection-ai-beam-now-available-on-ai-gateway-for-free",
-      "publishedAt": "2026-10-18T11:00:06.948Z",
-      "discoveredAt": "2026-10-18T11:00:06.948Z",
+      "href": "https://vercel.com/changelog/perplexity-decider-v1-2-models-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-18T20:38:37.732Z",
+      "discoveredAt": "2026-10-18T20:38:37.732Z",
       "locales": {
         "en": {
-          "title": "Reflection AI's Beam now available on AI Gateway for free Try Reflection AI's Beam for free for a limited time on Vercel AI Gateway with one API key, spend tracking, and request traces +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+          "title": "Perplexity's Decider V1.2 models now available on AI Gateway Call Perplexity Decider V1.2 and Decider Flash V1.2 through Vercel AI Gateway with one API key, shared budgets, and usage tracking. Jerilyn Zheng, Zachary Chen",
+          "summary": "\"/> Jerilyn Zheng, Rohan Taneja, and 1 other"
         },
         "fr": {
-          "title": "Reflection AI's Beam now available on AI Gateway for free Try Reflection AI's Beam for free for a limited time on Vercel AI Gateway with one API key, spend tracking, and request traces +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+          "title": "Perplexity's Decider V1.2 models now available on AI Gateway Call Perplexity Decider V1.2 and Decider Flash V1.2 through Vercel AI Gateway with one API key, shared budgets, and usage tracking. Jerilyn Zheng, Zachary Chen",
+          "summary": "\"/> Jerilyn Zheng, Rohan Taneja, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20261015-cloudflare-cloudflare-and-openai-making-ai-discovery-better-for--39780551",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
+      "publishedAt": "2026-10-15T13:00:00.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
+          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
+        },
+        "fr": {
+          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
+          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
+        }
+      }
+    },
+    {
+      "slug": "20261016-github-copilot-multi-repo-support-and-other-improvements-for-git-5c6d7a0c",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
+      "publishedAt": "2026-10-16T02:16:35.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "Multi-repo support and other improvements for GitHub in Slack and Teams",
+          "summary": "Multi-repo support in Slack and Teams GitHub Copilot in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating issues, or… The po…"
+        },
+        "fr": {
+          "title": "Multi-repo support and other improvements for GitHub in Slack and Teams",
+          "summary": "Multi-repo support in Slack and Teams GitHub Copilot in Slack and Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigating issues, or… The po…"
+        }
+      }
+    },
+    {
+      "slug": "20261002-w3c-w3c-newsletter---september-2026-033e226a",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/w3c-newsletter-september-2026/",
+      "publishedAt": "2026-10-02T10:01:00.000Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
+      "locales": {
+        "en": {
+          "title": "W3C Newsletter - September 2026",
+          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
+        },
+        "fr": {
+          "title": "W3C Newsletter - September 2026",
+          "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C."
         }
       }
     },
@@ -1683,46 +1743,6 @@
       }
     },
     {
-      "slug": "20261016-github-copilot-multi-repo-support-and-other-improvements-for-git-5c6d7a0c",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
-      "publishedAt": "2026-10-16T02:16:35.000Z",
-      "discoveredAt": "2026-10-16T11:18:37.614Z",
-      "locales": {
-        "en": {
-          "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
-          "summary": "Multi-repo support in Slack and Microsoft Teams GitHub Copilot in Slack and Microsoft Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigatin…"
-        },
-        "fr": {
-          "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
-          "summary": "Multi-repo support in Slack and Microsoft Teams GitHub Copilot in Slack and Microsoft Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigatin…"
-        }
-      }
-    },
-    {
-      "slug": "20261014-cloudflare-yandex-outage-data-shows-that-instead-of-going-dark-m-aad24f89",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/yandex-outage/",
-      "publishedAt": "2026-10-14T20:24:19.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
-      "locales": {
-        "en": {
-          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
-          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
-        },
-        "fr": {
-          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
-          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
-        }
-      }
-    },
-    {
       "slug": "20260928-nist-nist-provides-updates-on-national-construction-safety-team--dd6ce6ec",
       "toolName": "NIST",
       "category": "Security & Standards",
@@ -1843,26 +1863,6 @@
       }
     },
     {
-      "slug": "20260928-w3c-recap-of-the-web-ai-international-standards-seminar-generati-3bf72b81",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/recap-of-the-web-ai-international-standards-seminar-generative-ui-and-webskill/",
-      "publishedAt": "2026-09-28T08:17:00.000Z",
-      "discoveredAt": "2026-09-28T13:49:25.565Z",
-      "locales": {
-        "en": {
-          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
-          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
-        },
-        "fr": {
-          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
-          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
-        }
-      }
-    },
-    {
       "slug": "20260827-notion-ask-your-agent-to-suggest-edits-3d228486",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1903,62 +1903,122 @@
       }
     },
     {
-      "slug": "20261017-supabase-status-page-moves-to-incidentio-7e1c5736",
+      "slug": "20261018-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/status-page-migration",
-      "publishedAt": "2026-10-17T20:33:55.291Z",
-      "discoveredAt": "2026-10-17T20:33:55.291Z",
-      "locales": {
-        "en": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
-        },
-        "fr": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
-        }
-      }
-    },
-    {
-      "slug": "20261018-vercel-vercel-daemons-is-now-in-public-beta-run-queue-consumers--9100b772",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-daemons-is-now-in-public-beta",
+      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
       "publishedAt": "2026-10-18T11:00:06.948Z",
       "discoveredAt": "2026-10-18T11:00:06.948Z",
       "locales": {
         "en": {
-          "title": "Vercel Daemons is now in public beta Run queue consumers, workflow workers, and self-hosted CI runners on Vercel. +2 Steren, Gal Schlezinger, and 2 others",
-          "summary": "+2 Jas Garcha, Krish Krish, and 2 others"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         },
         "fr": {
-          "title": "Vercel Daemons is now in public beta Run queue consumers, workflow workers, and self-hosted CI runners on Vercel. +2 Steren, Gal Schlezinger, and 2 others",
-          "summary": "+2 Jas Garcha, Krish Krish, and 2 others"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         }
       }
     },
     {
-      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-introducing-the-anth-db9c3550",
+      "slug": "20261018-vercel-elorian-ais-glimpse-now-available-on-ai-gateway-call-elor-a256c10c",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/elorian-ai-glimpse-now-available-on-ai-gateway",
+      "publishedAt": "2026-10-18T11:00:06.948Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
+      "locales": {
+        "en": {
+          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Rohan Taneja, and 1 other",
+          "summary": "16 October 16 Oct"
+        },
+        "fr": {
+          "title": "Elorian AI's Glimpse now available on AI Gateway Call Elorian's Glimpse through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Rohan Taneja, and 1 other",
+          "summary": "16 October 16 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261014-cloudflare-yandex-outage-data-shows-that-instead-of-going-dark-m-aad24f89",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/yandex-outage/",
+      "publishedAt": "2026-10-14T20:24:19.000Z",
+      "discoveredAt": "2026-10-14T21:38:48.576Z",
+      "locales": {
+        "en": {
+          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
+          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
+        },
+        "fr": {
+          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
+          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
+        }
+      }
+    },
+    {
+      "slug": "20261016-github-copilot-multi-repo-support-and-other-improvements-for-git-5c6d7a0c",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates",
+      "publishedAt": "2026-10-16T02:16:35.000Z",
+      "discoveredAt": "2026-10-16T11:18:37.614Z",
+      "locales": {
+        "en": {
+          "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
+          "summary": "Multi-repo support in Slack and Microsoft Teams GitHub Copilot in Slack and Microsoft Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigatin…"
+        },
+        "fr": {
+          "title": "Multi-repo support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
+          "summary": "Multi-repo support in Slack and Microsoft Teams GitHub Copilot in Slack and Microsoft Teams now supports working across multiple repositories in a single conversation. Whether you’re tracking pull requests, investigatin…"
+        }
+      }
+    },
+    {
+      "slug": "20260928-w3c-recap-of-the-web-ai-international-standards-seminar-generati-3bf72b81",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/recap-of-the-web-ai-international-standards-seminar-generative-ui-and-webskill/",
+      "publishedAt": "2026-09-28T08:17:00.000Z",
+      "discoveredAt": "2026-09-28T13:49:25.565Z",
+      "locales": {
+        "en": {
+          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
+          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
+        },
+        "fr": {
+          "title": "Recap of the web & AI international standards seminar: generative UI and WebSkill",
+          "summary": "Hosted by the W3C Shenzhen Representative Office as part of the 2026 CCF Standards Technical Conference, this seminar brought together industry experts to discuss emerging technologies and standardization challenges rel…"
+        }
+      }
+    },
+    {
+      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-building-on-our-comm-26f50496",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-18T20:38:37.732Z",
+      "discoveredAt": "2026-10-19T13:07:36.916Z",
       "locales": {
         "en": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
+          "summary": "Announcements 2026 Usage Policy update"
         },
         "fr": {
-          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "Oct 8, 2026 Announcements Building on our commitment to American scientific discovery",
+          "summary": "Announcements 2026 Usage Policy update"
         }
       }
     },
@@ -2059,46 +2119,6 @@
         "fr": {
           "title": "Manufacturing Trust for AI Agents | Docker’s WeAreDevelopers Keynote",
           "summary": "Docker's WeAreDevelopers keynote shows how Sandboxes, Kits, and Cloud Sandboxes give AI agents strong isolation and reproducible authority."
-        }
-      }
-    },
-    {
-      "slug": "20261015-github-download-github-code-quality-license-usage-as-a-csv-a0a3bd71",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
-      "publishedAt": "2026-10-15T20:11:26.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Download GitHub Code Quality license usage as a CSV",
-          "summary": "You can now download a CSV report of your GitHub Code Quality license usage to reconcile your license count with your own records. The report includes: Each active committer who… The post Download GitHub Code Quality li…"
-        },
-        "fr": {
-          "title": "Download GitHub Code Quality license usage as a CSV",
-          "summary": "You can now download a CSV report of your GitHub Code Quality license usage to reconcile your license count with your own records. The report includes: Each active committer who… The post Download GitHub Code Quality li…"
-        }
-      }
-    },
-    {
-      "slug": "20261014-cloudflare-inside-hyperdrive-how-we-solved-a-rare-hyperdrive-mys-3dc14211",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/hyperdrive-mysql/",
-      "publishedAt": "2026-10-14T13:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
-      "locales": {
-        "en": {
-          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
-          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
-        },
-        "fr": {
-          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
-          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
         }
       }
     },
@@ -2223,26 +2243,6 @@
       }
     },
     {
-      "slug": "20260925-w3c-crafting-wcag-3-for-more-accessible-user-experiences-90f5f71d",
-      "toolName": "W3C",
-      "category": "Computer Science",
-      "source": "W3C Blog",
-      "sourceFeed": "https://www.w3.org/blog/feed/",
-      "href": "https://www.w3.org/blog/2026/crafting-wcag-3-for-more-accessible-user-experiences/",
-      "publishedAt": "2026-09-25T12:50:00.000Z",
-      "discoveredAt": "2026-09-27T14:03:18.424Z",
-      "locales": {
-        "en": {
-          "title": "Crafting WCAG 3 for more accessible user experiences",
-          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
-        },
-        "fr": {
-          "title": "Crafting WCAG 3 for more accessible user experiences",
-          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
-        }
-      }
-    },
-    {
       "slug": "20260818-notion-your-developer-portal-now-in-the-sidebar-7b336ba1",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -2283,122 +2283,122 @@
       }
     },
     {
-      "slug": "20261017-supabase-public-alpha-supabase-go-sdk-107ff49a",
+      "slug": "20261018-supabase-supabase-middleware-10-c639ad09",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
-      "publishedAt": "2026-10-17T20:33:55.291Z",
-      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "href": "https://supabase.com/changelog/supabase-middleware-1-0",
+      "publishedAt": "2026-10-18T11:00:06.948Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
       "locales": {
         "en": {
-          "title": "[Public Alpha] Supabase Go SDK",
-          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
         },
         "fr": {
-          "title": "[Public Alpha] Supabase Go SDK",
-          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
+          "title": "Supabase Middleware 1.0",
+          "summary": "New Feature @supabase/middleware 1.0.0 is stable: typed, composable middleware for fetch handlers. The engine runs wherever fetch runs, standalone or inside a framework through a shor"
         }
       }
     },
     {
-      "slug": "20261017-vercel-ai-gateway-logs-now-show-session-affinity-vercel-ai-gatew-f3b4b96b",
+      "slug": "20261018-vercel-reflection-ais-beam-now-available-on-ai-gateway-for-free--edc61255",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/ai-gateway-logs-now-show-session-affinity",
-      "publishedAt": "2026-10-17T20:33:55.291Z",
-      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "href": "https://vercel.com/changelog/reflection-ai-beam-now-available-on-ai-gateway-for-free",
+      "publishedAt": "2026-10-18T11:00:06.948Z",
+      "discoveredAt": "2026-10-18T11:00:06.948Z",
       "locales": {
         "en": {
-          "title": "AI Gateway logs now show session affinity Vercel AI Gateway logs now group requests into sessions, with cache hit rate, cost, turns, and the coding agent behind each conversation. Sam Chitgopekar, Jerilyn Zheng",
-          "summary": "17 October 17 Oct"
+          "title": "Reflection AI's Beam now available on AI Gateway for free Try Reflection AI's Beam for free for a limited time on Vercel AI Gateway with one API key, spend tracking, and request traces +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
+          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
         },
         "fr": {
-          "title": "AI Gateway logs now show session affinity Vercel AI Gateway logs now group requests into sessions, with cache hit rate, cost, turns, and the coding agent behind each conversation. Sam Chitgopekar, Jerilyn Zheng",
-          "summary": "17 October 17 Oct"
+          "title": "Reflection AI's Beam now available on AI Gateway for free Try Reflection AI's Beam for free for a limited time on Vercel AI Gateway with one API key, spend tracking, and request traces +2 Jerilyn Zheng, Kevin Dawkins, and 2 others",
+          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
         }
       }
     },
     {
-      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-2026-usage-policy-up-7a238471",
+      "slug": "20261014-cloudflare-inside-hyperdrive-how-we-solved-a-rare-hyperdrive-mys-3dc14211",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/hyperdrive-mysql/",
+      "publishedAt": "2026-10-14T13:00:00.000Z",
+      "discoveredAt": "2026-10-14T21:38:48.576Z",
+      "locales": {
+        "en": {
+          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
+          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
+        },
+        "fr": {
+          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
+          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
+        }
+      }
+    },
+    {
+      "slug": "20261015-github-download-github-code-quality-license-usage-as-a-csv-a0a3bd71",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
+      "publishedAt": "2026-10-15T20:11:26.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
+      "locales": {
+        "en": {
+          "title": "Download GitHub Code Quality license usage as a CSV",
+          "summary": "You can now download a CSV report of your GitHub Code Quality license usage to reconcile your license count with your own records. The report includes: Each active committer who… The post Download GitHub Code Quality li…"
+        },
+        "fr": {
+          "title": "Download GitHub Code Quality license usage as a CSV",
+          "summary": "You can now download a CSV report of your GitHub Code Quality license usage to reconcile your license count with your own records. The report includes: Each active committer who… The post Download GitHub Code Quality li…"
+        }
+      }
+    },
+    {
+      "slug": "20260925-w3c-crafting-wcag-3-for-more-accessible-user-experiences-90f5f71d",
+      "toolName": "W3C",
+      "category": "Computer Science",
+      "source": "W3C Blog",
+      "sourceFeed": "https://www.w3.org/blog/feed/",
+      "href": "https://www.w3.org/blog/2026/crafting-wcag-3-for-more-accessible-user-experiences/",
+      "publishedAt": "2026-09-25T12:50:00.000Z",
+      "discoveredAt": "2026-09-27T14:03:18.424Z",
+      "locales": {
+        "en": {
+          "title": "Crafting WCAG 3 for more accessible user experiences",
+          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
+        },
+        "fr": {
+          "title": "Crafting WCAG 3 for more accessible user experiences",
+          "summary": "In this post, W3C's Web Accessibility Initiative (WAI) Director Shawn Lawton Henry covers some of the stakes and challenges in developing W3C Accessibility Guidelines (WCAG) 3 that is under active development."
+        }
+      }
+    },
+    {
+      "slug": "20261008-anthropic-platform-oct-8-2026-announcements-introducing-the-anth-db9c3550",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "discoveredAt": "2026-10-18T11:00:06.948Z",
-      "locales": {
-        "en": {
-          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
-          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
-        },
-        "fr": {
-          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
-          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
-        }
-      }
-    },
-    {
-      "slug": "20261014-postgresql-pgbouncer-1261-released---fixes-three-cves-c17dd73e",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgbouncer-1261-released-fixes-three-cves-3403/",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
       "discoveredAt": "2026-10-18T20:38:37.732Z",
       "locales": {
         "en": {
-          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins…"
+          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
+          "summary": "Building on our commitment to American scientific discovery"
         },
         "fr": {
-          "title": "PgBouncer 1.26.1 released - Fixes three CVEs",
-          "summary": "PgBouncer 1.26.1 has been released. This release fixes three CVEs: CVE-2026-107350: Authentication bypass, allowing a client that knows the password of one SCRAM user to log in as any other SCRAM user, including admins…"
-        }
-      }
-    },
-    {
-      "slug": "20260912-cursor-self-hosted-machines-b1ecdbca",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/self-hosted-machines",
-      "publishedAt": "2026-09-12T13:29:26.758Z",
-      "discoveredAt": "2026-09-12T13:29:26.758Z",
-      "locales": {
-        "en": {
-          "title": "Self-hosted machines",
-          "summary": "Cursor supports self-hosted machines , which let you keep tool execution entirely in your own network. Your codebase, build outputs, and secrets all"
-        },
-        "fr": {
-          "title": "Self-hosted machines",
-          "summary": "Cursor supports self-hosted machines , which let you keep tool execution entirely in your own network. Your codebase, build outputs, and secrets all"
-        }
-      }
-    },
-    {
-      "slug": "20261015-kubernetes-manage-kubernetes-node-fleets-with-nodewright-6b35eb72",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
-      "publishedAt": "2026-10-15T18:13:31.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
-        },
-        "fr": {
-          "title": "Manage Kubernetes Node Fleets with NodeWright",
-          "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,..."
+          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
+          "summary": "Building on our commitment to American scientific discovery"
         }
       }
     }
