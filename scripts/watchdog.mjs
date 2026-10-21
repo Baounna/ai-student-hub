@@ -17,6 +17,7 @@ import { execFile } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { promisify } from "node:util";
+import { pathToFileURL } from "node:url";
 import { loadScriptEnv } from "./lib/load-env.mjs";
 
 // Same env loading the verify:* scripts use, so a check that depends on local
@@ -29,12 +30,25 @@ const SITE = (process.env.WATCHDOG_SITE_URL || "https://ai-student-hub-navy.verc
 const MAX_CONTENT_AGE_HOURS = Number.parseInt(process.env.WATCHDOG_MAX_CONTENT_AGE_HOURS || "72", 10);
 const TIMEOUT_SECONDS = 25;
 
-/** @type {{name:string, ok:boolean, detail:string, fixable:boolean}[]} */
+/** @type {{name:string, ok:boolean, detail:string, fixable:boolean, advisory:boolean}[]} */
 const results = [];
 
-function record(name, ok, detail, fixable = false) {
-  results.push({ name, ok, detail, fixable });
-  console.log(`${ok ? "✔" : "✖"} ${name} — ${detail}`);
+/**
+ * Three levels, because two were not enough.
+ *
+ * "Is the site broken" and "is there something for you to do" are different
+ * questions, and answering both with one bit forces a bad choice: either a
+ * backlog of listings awaiting a human judgement marks the site unhealthy for
+ * as long as it takes someone to reach them, or it is left out of the report
+ * and nobody finds out. The first is the always-on light. The second is how
+ * the finder sat broken for six days.
+ *
+ * So an advisory result is printed, tabled and listed under its own heading,
+ * and does not fail the run.
+ */
+function record(name, ok, detail, fixable = false, advisory = false) {
+  results.push({ name, ok, detail, fixable, advisory });
+  console.log(`${ok ? "✔" : advisory ? "•" : "✖"} ${name} — ${detail}`);
 }
 
 async function curlStatus(url) {
@@ -500,8 +514,10 @@ const PARKED_WORKFLOWS = new Set([
  * waiting". Only a definite no is healthy, because reporting an unknown as
  * healthy is how a real request goes unseen.
  */
-export function reviewVerdict(waiting, byDesign) {
-  const names = byDesign.join(", ");
+export function reviewVerdict(waiting, byDesign = []) {
+  // The run can succeed and still have left a request open, so there may be no
+  // failing workflow to name.
+  const names = byDesign.length ? byDesign.join(", ") : "The weekly link check";
   if (waiting === null) {
     return { ok: false, detail: `${names} asked for review and GitHub would not say whether that request is still open` };
   }
@@ -654,22 +670,25 @@ async function checkWorkflowHealth() {
         : `last run on main failed: ${unexpected.join(", ")}`
     );
 
-    if (byDesign.length) {
-      /**
-       * Reported, never silent: it is the difference between "nothing to do"
-       * and "something is waiting for you".
-       *
-       * But the question is whether anything is waiting NOW, not whether a run
-       * last Monday found something. A request resolved on the Tuesday -- by a
-       * person, or by --prune on the next run -- left this red for the rest of
-       * the week, reporting work already done. That is the always-on light
-       * again, one level up. So the review issue is the signal: the check opens
-       * it when a listing needs a person and closes it when none does, which
-       * makes its state a fact about today rather than about last Monday.
-       */
-      const verdict = reviewVerdict(await reviewIssueIsOpen(), byDesign);
-      record("Listings awaiting review", verdict.ok, verdict.detail);
-    }
+    /**
+     * Reported, never silent: it is the difference between "nothing to do" and
+     * "something is waiting for you".
+     *
+     * Asked unconditionally, and that matters. Gating it on the link check
+     * having FAILED was wrong twice over. The run conclusion is a fact about
+     * last Monday, so a request resolved on the Tuesday kept the line red for
+     * the rest of the week. And now that --prune handles the listings it can,
+     * the check exits 0 while still flagging the ones it cannot -- its first
+     * such run found two needing a human and reported success, which under the
+     * old gate meant the two were never mentioned at all. The run went green
+     * and the work went invisible, which is the failure this line exists for.
+     *
+     * So the review issue is the signal, whatever the run concluded: the check
+     * opens it when a listing needs a person and closes it when none does,
+     * which makes its state a fact about today.
+     */
+    const verdict = reviewVerdict(await reviewIssueIsOpen(), byDesign);
+    record("Listings awaiting review", verdict.ok, verdict.detail, false, true);
 
   } catch {
     // No gh, or no token — not a fault in the project itself.
@@ -695,7 +714,8 @@ function escapeTableCell(value) {
 }
 
 function buildReport() {
-  const failed = results.filter((r) => !r.ok);
+  const failed = results.filter((r) => !r.ok && !r.advisory);
+  const waiting = results.filter((r) => !r.ok && r.advisory);
   const lines = [];
 
   lines.push(failed.length ? "## 🔴 Health check failed" : "## 🟢 All checks passed");
@@ -705,7 +725,19 @@ function buildReport() {
   lines.push("| Check | Result | Detail |");
   lines.push("| --- | --- | --- |");
   for (const r of results) {
-    lines.push(`| ${r.name} | ${r.ok ? "✅" : "❌"} | ${escapeTableCell(r.detail)} |`);
+    const mark = r.ok ? "✅" : r.advisory ? "⏳" : "❌";
+    lines.push(`| ${r.name} | ${mark} | ${escapeTableCell(r.detail)} |`);
+  }
+
+  if (waiting.length) {
+    lines.push("");
+    lines.push("### Waiting on you");
+    lines.push("");
+    lines.push("Nothing is broken. These are judgements only a person can make.");
+    lines.push("");
+    for (const r of waiting) {
+      lines.push(`- **${r.name}** — ${r.detail}`);
+    }
   }
 
   if (failed.length) {
@@ -755,7 +787,8 @@ async function run() {
     record("Affiliate links", true, "not configured in this environment — skipped");
   }
 
-  const failed = results.filter((r) => !r.ok);
+  const failed = results.filter((r) => !r.ok && !r.advisory);
+  const advisories = results.filter((r) => !r.ok && r.advisory);
   const report = buildReport();
 
   if (process.env.GITHUB_OUTPUT) {
@@ -768,11 +801,33 @@ async function run() {
   await fs.writeFile(path.join(process.cwd(), "watchdog-report.md"), `${report}\n`, "utf8");
 
   console.log("--------------------------------");
-  console.log(failed.length ? `Watchdog: ${failed.length} check(s) failed.` : "Watchdog: all checks passed.");
+  console.log(
+    failed.length
+      ? `Watchdog: ${failed.length} check(s) failed.`
+      : advisories.length
+        ? `Watchdog: all checks passed. ${advisories.length} waiting on you.`
+        : "Watchdog: all checks passed."
+  );
   process.exitCode = failed.length ? 1 : 0;
 }
 
-run().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+/**
+ * Only sweep when run as a command.
+ *
+ * Two test files import this module for its pure helpers, and importing it ran
+ * the entire watchdog: twenty-seven seconds, a dozen gh calls, five requests to
+ * production -- and `npm ci`, concurrently with the test suite that imported
+ * it. Rewriting node_modules underneath a running test runner has already
+ * broken this repository once.
+ *
+ * find-stages.mjs and check-stages.mjs carry the same guard, for the same
+ * reason. tests/script-import-safety.test.ts holds all three to it.
+ */
+const invokedDirectly = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+
+if (invokedDirectly) {
+  run().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
