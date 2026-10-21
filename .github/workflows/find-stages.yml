@@ -4,13 +4,17 @@ name: Internship Finder
 # Postings do not wait for that: fourteen closed in four days on 2026-10-06 and
 # 2026-10-10, and nothing was arriving to replace them. This looks for new ones.
 #
-# It PROPOSES. It never writes src/content/stages.json.
+# It runs with --write, so it DOES add to src/content/stages.json -- but only
+# rows whose link it fetched and got an answer from, stamped addedBy feed so the
+# page says on each row where it came from.
 #
-# The site tells a student that every link was opened and its page read by a
-# person, and that claim is the only reason this board is worth reading rather
-# than scraping. An agent that publishes straight to it makes the claim false
-# the first time it runs. So this commits a review file and opens one issue; a
-# human opens each link and pastes the command under the ones worth keeping.
+# Every row says "link checked <date>" and the method note promises the link was
+# fetched and the page read, not pinged. An agent that published an API listing
+# straight to the board would make that false on the day it ran: the board had
+# been checked, the link had not. So the fetch is the gate. Whatever it cannot
+# settle -- a refusal, a country it could not resolve, a page that reads as
+# closed -- stays in the review file and goes to a person, who still has to
+# judge the one thing no fetch can: whether the role is what its title says.
 
 on:
   schedule:
@@ -96,7 +100,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TITLE="Internship candidates waiting for review"
-          BODY=$(printf '%s new posting(s) matched internship + AI/cyber and are not on the board yet.\n\nFull list with ready-to-paste commands: [docs/agent/stage-candidates.md](../blob/main/docs/agent/stage-candidates.md)\n\n**Open each link before adding it.** That is the step this agent does not do, and it is why the board is worth reading.\n\n```\n%s\n```\n' \
+          BODY=$(printf '%s new posting(s) matched internship + AI/cyber and are not on the board yet.\n\nFull list with ready-to-paste commands: [docs/agent/stage-candidates.md](../blob/main/docs/agent/stage-candidates.md)\n\n**Read each page before adding it.** The link has been fetched and answered; whether the role is what its title says is the judgement no fetch makes, and it is why the board is worth reading.\n\n```\n%s\n```\n' \
             "${{ steps.find.outputs.count }}" "$(tail -n 20 "$RUNNER_TEMP/find.log" | tr -d '`')")
           EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
           if [ -n "$EXISTING" ]; then

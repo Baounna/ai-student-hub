@@ -9,6 +9,7 @@ import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
+import { formatTier, tierHref } from "@/lib/donation-tiers";
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const params = await props.params;
@@ -48,30 +49,6 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
 }
 
 
-/**
- * A tier that does not pre-fill its amount is a label, not a choice.
- *
- * All three tiers pointed at the same URL, so picking $3 and picking $25 were
- * the same click and the reader had to type the amount anyway — the tier UI
- * implied a decision it never passed on. PayPal.me takes the amount as a path
- * segment (paypal.me/name/10), verified against the live handle.
- *
- * Only PayPal is handled: other providers encode amounts differently, and a
- * guessed format would silently drop the number. Anything else returns the
- * plain link, which is what the tiers already did.
- */
-function tierHref(baseHref: string | undefined, amount: string) {
-  if (!baseHref) return baseHref;
-  try {
-    const url = new URL(baseHref);
-    if (url.hostname !== "paypal.me" && url.hostname !== "www.paypal.me") return baseHref;
-    const value = amount.replace(/[^0-9.]/g, "");
-    if (!value) return baseHref;
-    return `${url.origin}${url.pathname.replace(/\/+$/, "")}/${value}`;
-  } catch {
-    return baseHref;
-  }
-}
 
 export default async function LocalizedDonatePage(props: { params: Promise<{ lang: string }> }) {
   const params = await props.params;
@@ -223,16 +200,18 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
             </p>
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
               {[
-                { amount: "$3", label: fr ? "Un café" : "Coffee support" },
-                { amount: "$10", label: fr ? "Soutien standard" : "Standard support" },
-                { amount: "$25", label: fr ? "Sponsor étudiant" : "Student sponsor" }
+                { amount: 3, label: fr ? "Un café" : "Coffee support" },
+                { amount: 10, label: fr ? "Soutien standard" : "Standard support" },
+                { amount: 25, label: fr ? "Sponsor étudiant" : "Student sponsor" }
               ].map((tier) => (
                 <article key={tier.amount} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
-                  <p className="text-2xl font-bold text-[color:var(--text-strong)]">{tier.amount}</p>
+                  <p className="text-2xl font-bold text-[color:var(--text-strong)]">
+                    {formatTier(tier.amount, siteConfig.donation.currency, locale)}
+                  </p>
                   <p className="mt-1 text-sm text-[color:var(--text)]">{tier.label}</p>
                   {hasLiveDonationLinks ? (
                     <a
-                      href={tierHref(uniquePrimaryMethods[0]?.href, tier.amount)}
+                      href={tierHref(uniquePrimaryMethods[0]?.href, tier.amount, siteConfig.donation.currency)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-primary mt-3 inline-flex"

@@ -226,6 +226,12 @@ export const siteConfig = {
   // existed: buymeacoffee.com/aistudenthub returns 404.
   donation: {
     paypalUrl: envValue("NEXT_PUBLIC_DONATION_PAYPAL_URL"),
+    // The tiers printed "$3" while the link sent "3" -- and paypal.me reads a
+    // bare number in the RECEIVING account's own currency, so on an account
+    // settling in dirhams "$3" charged 3 MAD, about thirty cents. The label and
+    // the link now carry the same currency, and it is set here rather than
+    // guessed: change it to EUR or MAD and both follow.
+    currency: (envValue("NEXT_PUBLIC_DONATION_CURRENCY") || "USD").toUpperCase(),
     cardUrl: envValue("NEXT_PUBLIC_DONATION_CARD_URL") || envValue("NEXT_PUBLIC_PRODUCT_CHECKOUT_URL"),
     cardLabel: envValue("NEXT_PUBLIC_DONATION_CARD_LABEL") || "Card checkout"
   },

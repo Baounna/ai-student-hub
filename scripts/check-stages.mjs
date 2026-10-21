@@ -90,8 +90,14 @@ export function listingHost(href) {
   }
 }
 
-/** Statuses that mean "we were refused", never "the posting is gone". */
-const BLOCKED_STATUSES = new Set([401, 403, 405, 429, 503, 999]);
+/**
+ * Statuses that mean "we were refused", never "the posting is gone".
+ *
+ * Exported because the finder has to make the same distinction before it dares
+ * stamp a row "link checked": a 403 is a fact about us, and a listing we were
+ * refused is one no row should claim we read.
+ */
+export const BLOCKED_STATUSES = new Set([401, 403, 405, 429, 503, 999]);
 
 /**
  * Sixteen requests to LinkedIn and eleven to Capgemini, fired back to back, is

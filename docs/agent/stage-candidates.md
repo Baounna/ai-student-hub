@@ -1,12 +1,35 @@
-# Internship candidates — 2026-10-18
+# Internship candidates — 2026-10-21
 
-18 postings that match internship + AI/cyber and are not on the board yet.
+20 postings that match internship + AI/cyber and are not on the board yet.
 
-**Open each link before adding it.** That is the one step this agent does not do,
-and it is the reason the board is worth reading: the site tells a student every
-link was opened and its page read by a person. Nothing here has been.
+Each link was fetched once before anything was written, so a candidate whose
+link does not resolve is marked here rather than offered. What no fetch can
+settle is whether the role is what its title says — that is the judgement
+these are waiting for, and it is why the board is worth reading.
 
 Copy the command under any posting you want to keep.
+
+### Intern Applied AI Engineering / Strategic Consulting (CoE Tiger Team)
+Celonis · Madrid, Spain · via greenhouse
+
+_Added to the board by this run: its link was fetched and answered._
+
+<https://job-boards.greenhouse.io/celonis/jobs/7989895003?gh_jid=7989895003>
+
+```
+npm run add:stage -- --role 'Intern Applied AI Engineering / Strategic Consulting (CoE Tiger Team)' --company 'Celonis' --city 'Madrid' --country ES --deadline rolling --link 'https://job-boards.greenhouse.io/celonis/jobs/7989895003?gh_jid=7989895003'
+```
+
+### Intern Applied AI Solution Consulting (Italy)
+Celonis · Milan, Italy · via greenhouse
+
+_Added to the board by this run: its link was fetched and answered._
+
+<https://job-boards.greenhouse.io/celonis/jobs/8014366003?gh_jid=8014366003>
+
+```
+npm run add:stage -- --role 'Intern Applied AI Solution Consulting (Italy)' --company 'Celonis' --city 'Milan' --country IT --deadline rolling --link 'https://job-boards.greenhouse.io/celonis/jobs/8014366003?gh_jid=8014366003'
+```
 
 ### PhD GenAI Research Scientist Intern
 Databricks · San Francisco, California · via greenhouse
@@ -17,6 +40,17 @@ Databricks · San Francisco, California · via greenhouse
 npm run add:stage -- --role 'PhD GenAI Research Scientist Intern' --company 'Databricks' --city 'San Francisco, California' --deadline rolling --link 'https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002'
 ```
 
+### Machine Learning Research Intern (Summer 2027)
+Scale AI · New York, NY; San Francisco, CA · via greenhouse
+
+_Added to the board by this run: its link was fetched and answered._
+
+<https://job-boards.greenhouse.io/scaleai/jobs/4735665005>
+
+```
+npm run add:stage -- --role 'Machine Learning Research Intern (Summer 2027)' --company 'Scale AI' --city 'New York, NY; San Francisco' --country CA --deadline rolling --link 'https://job-boards.greenhouse.io/scaleai/jobs/4735665005'
+```
+
 ### Hardware Security Engineer Intern (Summer 2027)
 Together AI · San Francisco · via greenhouse
 
@@ -24,6 +58,15 @@ Together AI · San Francisco · via greenhouse
 
 ```
 npm run add:stage -- --role 'Hardware Security Engineer Intern (Summer 2027)' --company 'Together AI' --city 'San Francisco' --deadline rolling --link 'https://job-boards.greenhouse.io/togetherai/jobs/5238469007'
+```
+
+### AI Content & Knowledge Manager Intern
+Back Market · Paris · via ashby
+
+<https://jobs.ashbyhq.com/backmarket/ae0b69b8-4051-4a31-a11f-f624be54b4e8>
+
+```
+npm run add:stage -- --role 'AI Content & Knowledge Manager Intern' --company 'Back Market' --city 'Paris' --deadline rolling --link 'https://jobs.ashbyhq.com/backmarket/ae0b69b8-4051-4a31-a11f-f624be54b4e8'
 ```
 
 ### ML Research Intern
@@ -62,31 +105,31 @@ Perplexity · London · via ashby
 npm run add:stage -- --role 'Internship - Search Machine Learning Engineer' --company 'Perplexity' --city 'London' --deadline rolling --link 'https://jobs.ashbyhq.com/perplexity/71168628-1998-47d3-87a9-be7bc56a430d'
 ```
 
-### AI Engineering & Platforms - Stage de fin d'études (H/F)
+### Consultant.e AI & Technology Transformation - Stage de fin d'études (H/F)
 Wavestone · Puteaux, fr · via smartrecruiters
 
-<https://jobs.smartrecruiters.com/Wavestone1/744000151303990>
+<https://jobs.smartrecruiters.com/Wavestone1/744000156729859>
 
 ```
-npm run add:stage -- --role 'AI Engineering & Platforms - Stage de fin d'\''études (H/F)' --company 'Wavestone' --city 'Puteaux' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000151303990'
-```
-
-### Stage de fin d'études - Consultant·e Agentic & GenAI Engineer (H/F)
-Wavestone · Puteaux, fr · via smartrecruiters
-
-<https://jobs.smartrecruiters.com/Wavestone1/744000151084744>
-
-```
-npm run add:stage -- --role 'Stage de fin d'\''études - Consultant·e Agentic & GenAI Engineer (H/F)' --company 'Wavestone' --city 'Puteaux' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000151084744'
+npm run add:stage -- --role 'Consultant.e AI & Technology Transformation - Stage de fin d'\''études (H/F)' --company 'Wavestone' --city 'Puteaux' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000156729859'
 ```
 
 ### AI Strategy & Business Transformation - Stage de fin d'études (H/F)
 Wavestone · Puteaux, fr · via smartrecruiters
 
-<https://jobs.smartrecruiters.com/Wavestone1/744000151055869>
+<https://jobs.smartrecruiters.com/Wavestone1/744000156728620>
 
 ```
-npm run add:stage -- --role 'AI Strategy & Business Transformation - Stage de fin d'\''études (H/F)' --company 'Wavestone' --city 'Puteaux' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000151055869'
+npm run add:stage -- --role 'AI Strategy & Business Transformation - Stage de fin d'\''études (H/F)' --company 'Wavestone' --city 'Puteaux' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000156728620'
+```
+
+### AI Strategy and Governance - Stage de fin d'études (H/F)
+Wavestone · Puteaux, fr · via smartrecruiters
+
+<https://jobs.smartrecruiters.com/Wavestone1/744000156728215>
+
+```
+npm run add:stage -- --role 'AI Strategy and Governance - Stage de fin d'\''études (H/F)' --company 'Wavestone' --city 'Puteaux' --country FR --deadline rolling --link 'https://jobs.smartrecruiters.com/Wavestone1/744000156728215'
 ```
 
 ### Custom SOC Intern - 2027
@@ -98,31 +141,15 @@ NVIDIA · China, Shanghai · via workday
 npm run add:stage -- --role 'Custom SOC Intern - 2027' --company 'NVIDIA' --city 'Shanghai' --country CN --deadline rolling --link 'https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Custom-SOC-Intern---2027_JR2024692'
 ```
 
-### Applied Deep Learning PhD Research Intern, Reinforcement Learning for LLMs - Fall 2026
-NVIDIA · US, CA, Santa Clara · via workday
-
-<https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Deep-Learning-PhD-Research-Intern--Reinforcement-Learning-for-LLMs---Fall-2026_JR2012398>
-
-```
-npm run add:stage -- --role 'Applied Deep Learning PhD Research Intern, Reinforcement Learning for LLMs - Fall 2026' --company 'NVIDIA' --city 'Santa Clara' --country US --deadline rolling --link 'https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Deep-Learning-PhD-Research-Intern--Reinforcement-Learning-for-LLMs---Fall-2026_JR2012398'
-```
-
-### PhD Research Intern, Generative AI - 2026
-NVIDIA · US, CA, Santa Clara · via workday
-
-<https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--Generative-AI---2026_JR2016035>
-
-```
-npm run add:stage -- --role 'PhD Research Intern, Generative AI - 2026' --company 'NVIDIA' --city 'Santa Clara' --country US --deadline rolling --link 'https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--Generative-AI---2026_JR2016035'
-```
-
 ### AI Developer Technology Intern - 2027
-NVIDIA · 2 Locations · via workday
+NVIDIA · Germany, Munich · via workday
+
+_Added to the board by this run: its link was fetched and answered._
 
 <https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Germany-Munich/AI-Developer-Technology-Intern---2027_JR2027497>
 
 ```
-npm run add:stage -- --role 'AI Developer Technology Intern - 2027' --company 'NVIDIA' --city '' --deadline rolling --link 'https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Germany-Munich/AI-Developer-Technology-Intern---2027_JR2027497'
+npm run add:stage -- --role 'AI Developer Technology Intern - 2027' --company 'NVIDIA' --city 'Munich' --country DE --deadline rolling --link 'https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Germany-Munich/AI-Developer-Technology-Intern---2027_JR2027497'
 ```
 
 ### AI Develop Intern
@@ -152,6 +179,15 @@ NXP Semiconductors · Toulouse · via workday
 npm run add:stage -- --role 'Stage Ingénieur :  Vérification d’architectures d’interconnexion pour SoC automobiles (F/H)' --company 'NXP Semiconductors' --city 'Toulouse' --deadline rolling --link 'https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Toulouse/Stage-Ingnieur----Vrification-d-architectures-d-interconnexion-pour-SoC-automobiles--F-H-_R-10067015'
 ```
 
+### Stage Ingénieur : Automatisation de la validation PMIC pour la sécurité automobile (F/H)
+NXP Semiconductors · Toulouse · via workday
+
+<https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Toulouse/Stage-Ingnieur---Automatisation-de-la-validation-PMIC-pour-la-scurit-automobile--F-H-_R-10066821>
+
+```
+npm run add:stage -- --role 'Stage Ingénieur : Automatisation de la validation PMIC pour la sécurité automobile (F/H)' --company 'NXP Semiconductors' --city 'Toulouse' --deadline rolling --link 'https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Toulouse/Stage-Ingnieur---Automatisation-de-la-validation-PMIC-pour-la-scurit-automobile--F-H-_R-10066821'
+```
+
 ### AI Imaging Data Scientist Intern
 Philips · Shanghai · via workday
 
@@ -159,14 +195,5 @@ Philips · Shanghai · via workday
 
 ```
 npm run add:stage -- --role 'AI Imaging Data Scientist Intern' --company 'Philips' --city 'Shanghai' --deadline rolling --link 'https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Shanghai/AI-Data-Scientist-Intern_589226'
-```
-
-### Internship: Synthetic Data Generation for Dental AI (Master)
-Philips · Eindhoven · via workday
-
-<https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Eindhoven/Internship--Synthetic-Data-Generation-for-Dental-AI--Master-_593359>
-
-```
-npm run add:stage -- --role 'Internship: Synthetic Data Generation for Dental AI (Master)' --company 'Philips' --city 'Eindhoven' --deadline rolling --link 'https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Eindhoven/Internship--Synthetic-Data-Generation-for-Dental-AI--Master-_593359'
 ```
 

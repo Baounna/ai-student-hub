@@ -7,14 +7,18 @@
  * closed in four days once, and nothing was replacing them. This finds
  * candidates so the adding is the only manual part left.
  *
- * It PROPOSES. It never writes to stages.json.
+ * Without --write it only PROPOSES: a review file and a ready-to-paste command
+ * per candidate. With --write it adds what it can stand behind, and the two are
+ * not the same set.
  *
- * That is not timidity, it is the site's one real claim: every link opened and
- * its page read by a person. An agent that publishes straight to the board
- * makes that false the first time it runs. So this produces a review file and
- * a ready-to-paste command per candidate; a human still opens each link, which
- * is the part that cannot be automated without giving up what makes the list
- * worth reading.
+ * The line between them is the site's one real claim. Every row says "link
+ * checked <date>", and the method note promises the link was fetched and the
+ * page read rather than pinged for a status code. So a row is only written
+ * after its link has actually been fetched and answered, it carries addedBy
+ * feed so the page says on the row where it came from, and anything the fetch
+ * could not settle -- a 403, an unresolved country, a page that reads as closed
+ * -- stays in the review file for a person. Refusing to guess is the whole
+ * difference between this and a scraper.
  *
  * Nothing is scraped. All four sources are documented public JSON APIs:
  *   Greenhouse       GET  boards-api.greenhouse.io/v1/boards/<board>/jobs
@@ -31,6 +35,15 @@
  */
 import fs from "node:fs/promises";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
+import {
+  BLOCKED_STATUSES,
+  expiredValidThrough,
+  gonePhrase,
+  listingHost,
+  redirectedAway
+} from "./check-stages.mjs";
+import { visibleText } from "./lib/visible-text.mjs";
 
 const ROOT = process.cwd();
 const SOURCES = path.join(ROOT, "src/content/stage-sources.json");
@@ -161,6 +174,66 @@ async function getJson(url, init) {
   }
 }
 
+/**
+ * Fetch the link a student would click, before any row claims it was checked.
+ *
+ * The four APIs prove the JOB is open, and that is the same evidence the Monday
+ * check gathers for a Greenhouse or Workday row -- it asks those same endpoints.
+ * What an API listing does not prove is that the href it handed us RESOLVES.
+ *
+ * And the row says "link checked <date>". The method note goes further and
+ * promises the link is fetched and the page read rather than pinged for a status
+ * code. On the Thursday a feed row was added, neither had happened: the board
+ * had been checked, the link had not, and the first real fetch was the following
+ * Monday. A student clicking into a 404 under a row dated today is precisely the
+ * small untruth this page exists not to tell.
+ *
+ * So every candidate is fetched once before it is written. The cap means at most
+ * fifteen requests a week, spread across employers by the per-company limit.
+ */
+export function linkVerdict({ status, text, raw, href, finalUrl, now = Date.now() }) {
+  // Refused is not gone. A listing we could not reach is one no row may claim we
+  // read, so it is not added -- but it is not called dead either, and it goes to
+  // the review file rather than the bin.
+  if (BLOCKED_STATUSES.has(status)) return { ok: false, reason: `the employer refused us (HTTP ${status})` };
+  if (!status) return { ok: false, reason: "the link could not be reached" };
+  if (status >= 400) return { ok: false, reason: `the link answers HTTP ${status}` };
+  const phrase = gonePhrase(text);
+  if (phrase) return { ok: false, reason: `the page says "${phrase}"` };
+  const expired = expiredValidThrough(raw, listingHost(href), now);
+  if (expired) return { ok: false, reason: `the page gives a closing date of ${expired}` };
+  if (redirectedAway(href, finalUrl)) return { ok: false, reason: "the link redirects away from the posting" };
+  return { ok: true, reason: "" };
+}
+
+export async function verifyLink(href) {
+  try {
+    const res = await fetch(href, {
+      redirect: "follow",
+      headers: { "User-Agent": UA, Accept: "text/html,application/xhtml+xml" },
+      signal: AbortSignal.timeout(25_000)
+    });
+    const raw = await res.text();
+    return linkVerdict({ status: res.status, text: visibleText(raw), raw, href, finalUrl: res.url });
+  } catch {
+    return { ok: false, reason: "the link could not be reached" };
+  }
+}
+
+/** One second between fetches. Nobody is waiting on this run. */
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+/**
+ * A board slug is not a company name, and consider() needs the map while the
+ * file that holds it can only be read inside the guard below.
+ *
+ * So it is declared here and filled there. Block-scoping it next to the read
+ * put it out of consider()'s reach, which makes every candidate a
+ * ReferenceError -- caught by one unused-variable warning, which is the whole
+ * reason that warning is not noise.
+ */
+let DISPLAY_NAMES = {};
+
 const candidates = [];
 const sourceReport = [];
 
@@ -196,10 +269,25 @@ const US_STATES = new Set(
   "AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC".split(" ")
 );
 
-function splitLocation(location) {
+/**
+ * Two-letter tokens that are a US state AND a country on this board.
+ *
+ * CA is California and Canada. MA is Massachusetts and Morocco. DE is Delaware
+ * and Germany, IN is Indiana and India, IL is Illinois and Israel.
+ *
+ * Computed rather than typed out, so the day a country joins COUNTRY_CODES its
+ * collisions join this set without anyone having to remember.
+ */
+const AMBIGUOUS_CODES = new Set(
+  [...US_STATES].filter((state) => Object.values(COUNTRY_CODES).includes(state))
+);
+
+export function splitLocation(location) {
   // Several locations in one string: take the first and let the reviewer see
-  // the rest in the link.
-  const first = String(location || "").split("\u2022")[0];
+  // the rest in the link. Greenhouse uses semicolons where Workday uses
+  // bullets -- "New York, NY; San Francisco, CA" is two places, and reading it
+  // as one left "NY; San Francisco" sitting in the city field.
+  const first = String(location || "").split(/[\u2022;]/)[0];
   const parts = first.split(",").map((p) => p.trim()).filter(Boolean);
   if (!parts.length || /^\d+\s+locations?$/i.test(first.trim())) return { city: "", country: "" };
 
@@ -217,6 +305,28 @@ function splitLocation(location) {
   if (head && parts.length > 1) return { city: parts[parts.length - 1], country: head };
 
   const tail = parts[parts.length - 1];
+
+  /**
+   * "New York, NY; San Francisco, CA" went onto the board as Canada.
+   *
+   * The country branch ran before the state branch, so every colliding token
+   * resolved to the country: a Boston internship would have been filed under
+   * Morocco, on the Morocco page of a site written in Morocco, under the one
+   * filter students actually use.
+   *
+   * An unambiguous state anywhere in the string settles it -- NY can only be
+   * New York. With nothing to settle it, the country is left blank and the
+   * candidate waits in the review file for a person, which is what that file
+   * is for. Guessing is what we are not willing to do here.
+   */
+  if (AMBIGUOUS_CODES.has(tail.toUpperCase()) && parts.length > 1) {
+    const settled = parts.some((part) => {
+      const code = part.toUpperCase();
+      return US_STATES.has(code) && !AMBIGUOUS_CODES.has(code);
+    });
+    return { city: parts.slice(0, -1).join(", "), country: settled ? "US" : "" };
+  }
+
   const tailCountry = asCountry(tail);
   if (tailCountry) {
     return { city: parts.slice(0, -1).join(", ") || "", country: tailCountry };
@@ -377,201 +487,252 @@ async function discoverBoards(sources) {
   return found;
 }
 
-const sources = JSON.parse(await fs.readFile(SOURCES, "utf8"));
+/**
+ * Only sweep when run as a command.
+ *
+ * Importing this file -- which the test of linkVerdict below does -- must not
+ * fire thirty requests at four employers' APIs and rewrite the review file. It
+ * did exactly that the first time a test imported it, which is the same trap
+ * check-stages.mjs carries this same guard for.
+ */
+const invokedDirectly = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 
-if (DISCOVER) {
-  console.log(`\n  Probing ${sources.prospects?.length ?? 0} companies for a job board.\n`);
-  const found = await discoverBoards(sources);
-  const added = found.greenhouse.length + found.ashby.length + found.smartrecruiters.length;
-  if (added) {
-    for (const key of ["greenhouse", "ashby", "smartrecruiters"]) {
-      sources[key] = [...new Set([...(sources[key] ?? []), ...found[key]])].sort();
-      for (const slug of found[key]) {
-        // A slug is not a company name, and the board is where that shows.
-        // A generated name is a placeholder, not an answer: this turns
-        // "figureai" into "Figure AI" rather than "Figureai", and the board
-        // still reads better when a person corrects it in the config.
-        sources.displayNames[slug] ??= slug
-          .replace(/-/g, " ")
-          .replace(/ai$/, " AI")
-          .replace(/\s+/g, " ")
-          .trim()
-          .replace(/\b([a-z])/g, (m) => m.toUpperCase())
-          .replace(/\bAi\b/g, "AI");
+if (invokedDirectly) {
+
+  const sources = JSON.parse(await fs.readFile(SOURCES, "utf8"));
+
+  if (DISCOVER) {
+    console.log(`\n  Probing ${sources.prospects?.length ?? 0} companies for a job board.\n`);
+    const found = await discoverBoards(sources);
+    const added = found.greenhouse.length + found.ashby.length + found.smartrecruiters.length;
+    if (added) {
+      for (const key of ["greenhouse", "ashby", "smartrecruiters"]) {
+        sources[key] = [...new Set([...(sources[key] ?? []), ...found[key]])].sort();
+        for (const slug of found[key]) {
+          // A slug is not a company name, and the board is where that shows.
+          // A generated name is a placeholder, not an answer: this turns
+          // "figureai" into "Figure AI" rather than "Figureai", and the board
+          // still reads better when a person corrects it in the config.
+          sources.displayNames[slug] ??= slug
+            .replace(/-/g, " ")
+            .replace(/ai$/, " AI")
+            .replace(/\s+/g, " ")
+            .trim()
+            .replace(/\b([a-z])/g, (m) => m.toUpperCase())
+            .replace(/\bAi\b/g, "AI");
+        }
       }
+      await fs.writeFile(SOURCES, `${JSON.stringify(sources, null, 2)}\n`);
     }
-    await fs.writeFile(SOURCES, `${JSON.stringify(sources, null, 2)}\n`);
+    console.log(`\n  ${added} new board${added === 1 ? "" : "s"} added to stage-sources.json\n`);
   }
-  console.log(`\n  ${added} new board${added === 1 ? "" : "s"} added to stage-sources.json\n`);
-}
-const DISPLAY_NAMES = sources.displayNames ?? {};
-const stages = JSON.parse(await fs.readFile(STAGES, "utf8"));
+  DISPLAY_NAMES = sources.displayNames ?? {};
+  const stages = JSON.parse(await fs.readFile(STAGES, "utf8"));
 
-console.log(`\n  Searching ${
-  (sources.greenhouse?.length ?? 0) +
-  (sources.ashby?.length ?? 0) +
-  (sources.smartrecruiters?.length ?? 0) +
-  (sources.workday?.length ?? 0)
-} employer boards.\n`);
+  console.log(`\n  Searching ${
+    (sources.greenhouse?.length ?? 0) +
+    (sources.ashby?.length ?? 0) +
+    (sources.smartrecruiters?.length ?? 0) +
+    (sources.workday?.length ?? 0)
+  } employer boards.\n`);
 
-for (const board of sources.greenhouse ?? []) sourceReport.push(await fromGreenhouse(board));
-for (const board of sources.ashby ?? []) sourceReport.push(await fromAshby(board));
-for (const board of sources.smartrecruiters ?? []) sourceReport.push(await fromSmartRecruiters(board));
-for (const board of sources.workday ?? []) sourceReport.push(await fromWorkday(board));
+  for (const board of sources.greenhouse ?? []) sourceReport.push(await fromGreenhouse(board));
+  for (const board of sources.ashby ?? []) sourceReport.push(await fromAshby(board));
+  for (const board of sources.smartrecruiters ?? []) sourceReport.push(await fromSmartRecruiters(board));
+  for (const board of sources.workday ?? []) sourceReport.push(await fromWorkday(board));
 
-for (const r of sourceReport) {
-  const detail = r.error ? `unreachable — ${r.error}` : `${r.found} of ${r.scanned}`;
-  console.log(`  ${String(r.board).padEnd(20)} ${detail}`);
-}
+  for (const r of sourceReport) {
+    const detail = r.error ? `unreachable — ${r.error}` : `${r.found} of ${r.scanned}`;
+    console.log(`  ${String(r.board).padEnd(20)} ${detail}`);
+  }
 
-/**
- * Already on the board, by link or by the pair that identifies a posting.
- *
- * Href alone misses a job re-posted under a new requisition id, which is common
- * enough that the same Bosch thesis would arrive every week forever.
- */
-/**
- * Compared without the query string, because Greenhouse serves the same job at
- * both /jobs/7989895003 and /jobs/7989895003?gh_jid=7989895003 and the API
- * returns the second. Matching the raw string let one posting onto the board
- * twice under two different ids — the same Celonis role in Madrid, listed
- * twice, which is exactly the sloppiness a reader notices first.
- */
-const bareUrl = (href) => String(href).split(/[?#]/)[0];
-const seenHref = new Set(stages.items.map((i) => bareUrl(i.href)));
-const seenPair = new Set(stages.items.map((i) => `${i.company}|${i.role}`.toLowerCase()));
-const fresh = candidates.filter(
-  (c) => !seenHref.has(bareUrl(c.href)) && !seenPair.has(`${c.company}|${c.role}`.toLowerCase())
-);
-
-const unique = [];
-const seenNew = new Set();
-for (const c of fresh) {
-  if (seenNew.has(bareUrl(c.href))) continue;
-  seenNew.add(bareUrl(c.href));
-  unique.push(c);
-}
-const picked = unique.slice(0, LIMIT);
-
-const today = new Date().toISOString().slice(0, 10);
-
-/** The same shape add-stage.mjs writes, so both paths produce one kind of row. */
-function slugify(value) {
-  return String(value)
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
-function toStage(c) {
-  const kind = /\b(alternan|apprenti|apprenticeship|working student|werkstudent)\b/i.test(c.role)
-    ? "alternance"
-    : /\b(pfe|thesis|fin d'?[ée]tudes)\b/i.test(c.role)
-      ? "pfe"
-      : "stage";
-  return {
-    id: `${slugify(c.company)}-${slugify(c.role)}-${slugify(c.city || c.country || "remote")}-rolling`,
-    role: c.role,
-    company: c.company,
-    ...(c.city ? { city: c.city } : {}),
-    country: c.country,
-    kind,
-    href: c.href,
-    source: `${c.company} careers`,
-    postedAt: today,
-    checkedAt: today,
-    addedBy: "feed"
-  };
-}
-
-const shellQuote = (v) => `'${String(v).replace(/'/g, "'\\''")}'`;
-
-const lines = [
-  `# Internship candidates — ${today}`,
-  "",
-  `${picked.length} posting${picked.length === 1 ? "" : "s"} that match internship + AI/cyber and are not on the board yet.`,
-  "",
-  "**Open each link before adding it.** That is the one step this agent does not do,",
-  "and it is the reason the board is worth reading: the site tells a student every",
-  "link was opened and its page read by a person. Nothing here has been.",
-  "",
-  "Copy the command under any posting you want to keep.",
-  ""
-];
-
-for (const c of picked) {
-  lines.push(`### ${c.role}`);
-  lines.push(`${c.company} · ${c.location || "location not stated"} · via ${c.source}`);
-  lines.push("");
-  lines.push(`<${c.href}>`);
-  lines.push("");
-  lines.push("```");
-  lines.push(
-    `npm run add:stage -- --role ${shellQuote(c.role)} --company ${shellQuote(c.company)} ` +
-      `--city ${shellQuote(c.city)}${c.country ? ` --country ${c.country}` : ""} ` +
-      `--deadline rolling --link ${shellQuote(c.href)}`
+  /**
+   * Already on the board, by link or by the pair that identifies a posting.
+   *
+   * Href alone misses a job re-posted under a new requisition id, which is common
+   * enough that the same Bosch thesis would arrive every week forever.
+   */
+  /**
+   * Compared without the query string, because Greenhouse serves the same job at
+   * both /jobs/7989895003 and /jobs/7989895003?gh_jid=7989895003 and the API
+   * returns the second. Matching the raw string let one posting onto the board
+   * twice under two different ids — the same Celonis role in Madrid, listed
+   * twice, which is exactly the sloppiness a reader notices first.
+   */
+  const bareUrl = (href) => String(href).split(/[?#]/)[0];
+  const seenHref = new Set(stages.items.map((i) => bareUrl(i.href)));
+  const seenPair = new Set(stages.items.map((i) => `${i.company}|${i.role}`.toLowerCase()));
+  const fresh = candidates.filter(
+    (c) => !seenHref.has(bareUrl(c.href)) && !seenPair.has(`${c.company}|${c.role}`.toLowerCase())
   );
-  lines.push("```");
-  lines.push("");
-}
 
-if (!picked.length) {
-  lines.push("_Nothing new this run. Every matching posting on these boards is already listed._");
-  lines.push("");
-}
+  const unique = [];
+  const seenNew = new Set();
+  for (const c of fresh) {
+    if (seenNew.has(bareUrl(c.href))) continue;
+    seenNew.add(bareUrl(c.href));
+    unique.push(c);
+  }
+  const picked = unique.slice(0, LIMIT);
 
-/**
- * Written only with --write, and only for candidates whose country resolved.
- *
- * A listing with no country lands under whatever the filter defaults to on a
- * board where country is the control students actually use, so those stay in
- * the review file for a person to place. Refusing to guess is the whole
- * difference between this and a scraper.
- */
-let written = 0;
-if (WRITE) {
-  const placeable = picked.filter((c) => c.country && SERVED_COUNTRIES.has(c.country));
-  // Seeded with what each employer already holds, so the ceiling counts the
-  // board and not just this run.
-  const perCompany = new Map();
-  for (const item of stages.items) {
-    perCompany.set(item.company, (perCompany.get(item.company) ?? 0) + 1);
+  const today = new Date().toISOString().slice(0, 10);
+
+  /** The same shape add-stage.mjs writes, so both paths produce one kind of row. */
+  function slugify(value) {
+    return String(value)
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
   }
-  const addedThisRun = new Map();
-  const spread = placeable.filter((c) => {
-    const onBoard = perCompany.get(c.company) ?? 0;
-    const thisRun = addedThisRun.get(c.company) ?? 0;
-    if (onBoard >= MAX_PER_COMPANY_ON_BOARD) return false;
-    if (thisRun >= PER_COMPANY_CAP) return false;
-    perCompany.set(c.company, onBoard + 1);
-    addedThisRun.set(c.company, thisRun + 1);
-    return true;
-  });
-  const toAdd = spread.slice(0, WRITE_CAP);
-  const existingIds = new Set(stages.items.map((i) => i.id));
-  const rows = toAdd.map(toStage).filter((row) => !existingIds.has(row.id));
-  if (rows.length) {
-    stages.items.push(...rows);
-    stages.updatedAt = new Date().toISOString();
-    await fs.writeFile(STAGES, `${JSON.stringify(stages, null, 2)}\n`);
-    written = rows.length;
+
+  function toStage(c) {
+    const kind = /\b(alternan|apprenti|apprenticeship|working student|werkstudent)\b/i.test(c.role)
+      ? "alternance"
+      : /\b(pfe|thesis|fin d'?[ée]tudes)\b/i.test(c.role)
+        ? "pfe"
+        : "stage";
+    return {
+      id: `${slugify(c.company)}-${slugify(c.role)}-${slugify(c.city || c.country || "remote")}-rolling`,
+      role: c.role,
+      company: c.company,
+      ...(c.city ? { city: c.city } : {}),
+      country: c.country,
+      kind,
+      href: c.href,
+      source: `${c.company} careers`,
+      postedAt: today,
+      checkedAt: today,
+      addedBy: "feed"
+    };
   }
-  console.log(
-    `\n  --write: added ${written} of ${spread.length} after spreading (cap ${WRITE_CAP}, ` +
-      `${PER_COMPANY_CAP} per employer); ` +
-      `${picked.length - placeable.length} had no country and stay in the review file`
+
+  const shellQuote = (v) => `'${String(v).replace(/'/g, "'\\''")}'`;
+
+  /**
+   * Built after the write pass, never before it.
+   *
+   * The verdict from verifying a link is the most useful thing this file can tell
+   * a person, and the two kinds of failure deserve different attention: a
+   * candidate skipped because the employer refused us is worth opening by hand, a
+   * candidate skipped because its own page says the role is filled is worth
+   * nothing. Building this list first meant every row read the same.
+   */
+  function buildMarkdown() {
+    const lines = [
+      `# Internship candidates — ${today}`,
+      "",
+      `${picked.length} posting${picked.length === 1 ? "" : "s"} that match internship + AI/cyber and are not on the board yet.`,
+      "",
+      "Each link was fetched once before anything was written, so a candidate whose",
+      "link does not resolve is marked here rather than offered. What no fetch can",
+      "settle is whether the role is what its title says — that is the judgement",
+      "these are waiting for, and it is why the board is worth reading.",
+      "",
+      "Copy the command under any posting you want to keep.",
+      ""
+    ];
+
+    for (const c of picked) {
+      lines.push(`### ${c.role}`);
+      lines.push(`${c.company} · ${c.location || "location not stated"} · via ${c.source}`);
+      lines.push("");
+      if (c.addedToBoard) {
+        lines.push("_Added to the board by this run: its link was fetched and answered._");
+        lines.push("");
+      } else if (c.notVerified) {
+        lines.push(`_Not added — ${c.notVerified}._`);
+        lines.push("");
+      }
+      lines.push(`<${c.href}>`);
+      lines.push("");
+      lines.push("```");
+      lines.push(
+        `npm run add:stage -- --role ${shellQuote(c.role)} --company ${shellQuote(c.company)} ` +
+          `--city ${shellQuote(c.city)}${c.country ? ` --country ${c.country}` : ""} ` +
+          `--deadline rolling --link ${shellQuote(c.href)}`
+      );
+      lines.push("```");
+      lines.push("");
+    }
+
+    if (!picked.length) {
+      lines.push("_Nothing new this run. Every matching posting on these boards is already listed._");
+      lines.push("");
+    }
+    return lines;
+  }
+
+  /**
+   * Written only with --write, and only for candidates whose country resolved.
+   *
+   * A listing with no country lands under whatever the filter defaults to on a
+   * board where country is the control students actually use, so those stay in
+   * the review file for a person to place. Refusing to guess is the whole
+   * difference between this and a scraper.
+   */
+  let written = 0;
+  if (WRITE) {
+    const placeable = picked.filter((c) => c.country && SERVED_COUNTRIES.has(c.country));
+    // Seeded with what each employer already holds, so the ceiling counts the
+    // board and not just this run.
+    const perCompany = new Map();
+    for (const item of stages.items) {
+      perCompany.set(item.company, (perCompany.get(item.company) ?? 0) + 1);
+    }
+    const addedThisRun = new Map();
+    const spread = placeable.filter((c) => {
+      const onBoard = perCompany.get(c.company) ?? 0;
+      const thisRun = addedThisRun.get(c.company) ?? 0;
+      if (onBoard >= MAX_PER_COMPANY_ON_BOARD) return false;
+      if (thisRun >= PER_COMPANY_CAP) return false;
+      perCompany.set(c.company, onBoard + 1);
+      addedThisRun.set(c.company, thisRun + 1);
+      return true;
+    });
+    // Fetched one at a time, and only until the cap is full: a run that needs
+    // fifteen rows makes fifteen requests, not one for every candidate found.
+    const toAdd = [];
+    const unverified = [];
+    for (const c of spread) {
+      if (toAdd.length >= WRITE_CAP) break;
+      const verdict = await verifyLink(c.href);
+      if (verdict.ok) {
+        c.addedToBoard = true;
+        toAdd.push(c);
+      } else {
+        c.notVerified = verdict.reason;
+        unverified.push(c);
+        console.log(`  SKIP  ${c.company} — ${c.role}: ${verdict.reason}`);
+      }
+      await sleep(1_000);
+    }
+    const existingIds = new Set(stages.items.map((i) => i.id));
+    const rows = toAdd.map(toStage).filter((row) => !existingIds.has(row.id));
+    if (rows.length) {
+      stages.items.push(...rows);
+      stages.updatedAt = new Date().toISOString();
+      await fs.writeFile(STAGES, `${JSON.stringify(stages, null, 2)}\n`);
+      written = rows.length;
+    }
+    console.log(
+      `\n  --write: added ${written} of ${spread.length} after spreading (cap ${WRITE_CAP}, ` +
+        `${PER_COMPANY_CAP} per employer); ` +
+        `${unverified.length} did not survive having their link fetched; ` +
+        `${picked.length - placeable.length} had no country and stay in the review file`
+    );
+  }
+
+  await fs.mkdir(OUT_DIR, { recursive: true });
+  await fs.writeFile(OUT_MD, `${buildMarkdown().join("\n")}\n`);
+  await fs.writeFile(
+    OUT_JSON,
+    `${JSON.stringify({ generatedAt: today, boards: sourceReport, candidates: picked }, null, 2)}\n`
   );
+
+  console.log(`\n  ${candidates.length} matched · ${unique.length} not already listed · ${picked.length} written`);
+  console.log(`  ${path.relative(ROOT, OUT_MD)}`);
+  console.log(`\n  Links already fetched. Read the pages, then paste the command under the ones worth keeping.\n`);
+
 }
-
-await fs.mkdir(OUT_DIR, { recursive: true });
-await fs.writeFile(OUT_MD, `${lines.join("\n")}\n`);
-await fs.writeFile(
-  OUT_JSON,
-  `${JSON.stringify({ generatedAt: today, boards: sourceReport, candidates: picked }, null, 2)}\n`
-);
-
-console.log(`\n  ${candidates.length} matched · ${unique.length} not already listed · ${picked.length} written`);
-console.log(`  ${path.relative(ROOT, OUT_MD)}`);
-console.log(`\n  Open each link, then paste the command under the ones worth keeping.\n`);
