@@ -126,6 +126,29 @@ jobs:
       # end for this reason, and 25 lines held the "probably gone" block plus
       # the summary but cut the "needs a human" one, so the issue reported a
       # count of suspect listings without naming them.
+      # Opened when something needs a person, CLOSED when nothing does.
+      #
+      # Only the opening half existed, so the issue stayed open after the work
+      # was done -- by a person, or now by --prune -- and the next reader could
+      # not tell a live request from a finished one. That is the same light that
+      # is always on, in a second place: the watchdog reads this signal, so a
+      # resolved request kept the site reporting unhealthy.
+      - name: Close the review issue when nothing needs a person
+        if: always() && steps.check.outputs.needs_review != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="Internship listings need a human look"
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" \
+              --body "Nothing is waiting any more: this week's check left no listing needing a person. Closing automatically."
+            gh issue close "$EXISTING"
+            echo "Closed review issue #$EXISTING."
+          else
+            echo "Nothing needs review and no issue is open."
+          fi
+
       - name: Open or update the review issue
         if: always() && steps.check.outputs.needs_review == 'true'
         env:

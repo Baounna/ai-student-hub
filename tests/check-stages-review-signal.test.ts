@@ -1,5 +1,9 @@
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "node:fs";
+import {
+  reviewVerdict
+  // @ts-expect-error - plain .mjs script, no types
+} from "../scripts/watchdog.mjs";
 
 /**
  * The workflow and the script have to agree on one word.
@@ -98,9 +102,15 @@ describe("a check that fails on purpose must not look like one that broke", () =
   it("still reports it, on a line of its own", () => {
     // Separating it must not mean hiding it: "nothing to do" and "something is
     // waiting for you" have to stay distinguishable.
+    //
+    // This used to grep the next 200 characters of the source for the literal
+    // `false`, which broke the moment the decision moved into a function --
+    // while the behaviour it cared about was intact and better. The behaviour
+    // is what it asserts now; tests/watchdog-review-signal.test.ts covers the
+    // three-way reading in full.
     expect(WATCHDOG).toContain('"Listings awaiting review"');
-    const block = WATCHDOG.slice(WATCHDOG.indexOf('"Listings awaiting review"'));
-    expect(block.slice(0, 200)).toMatch(/false/);
+    expect(reviewVerdict(true, ["Internship Link Check"]).ok).toBe(false);
+    expect(reviewVerdict(false, ["Internship Link Check"]).ok).toBe(true);
   });
 
   it("leaves every other workflow failing the health check", () => {

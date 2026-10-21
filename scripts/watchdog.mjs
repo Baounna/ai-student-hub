@@ -487,6 +487,50 @@ const PARKED_WORKFLOWS = new Set([
  * workflow_dispatch is deliberately manual and is not judged on staleness.
  */
 /** Every workflow file, whatever triggers it. */
+/**
+ * Whether the link check's review request is still open.
+ *
+ * Returns null when GitHub will not say, which is not the same as "nothing is
+ * waiting" and must never be reported as healthy.
+ */
+/**
+ * The three-way reading of a review request, kept pure so it can be tested.
+ *
+ * The subtlety worth a test: "GitHub would not say" is not "nothing is
+ * waiting". Only a definite no is healthy, because reporting an unknown as
+ * healthy is how a real request goes unseen.
+ */
+export function reviewVerdict(waiting, byDesign) {
+  const names = byDesign.join(", ");
+  if (waiting === null) {
+    return { ok: false, detail: `${names} asked for review and GitHub would not say whether that request is still open` };
+  }
+  if (waiting) {
+    return { ok: false, detail: `${names} flagged listings for a human — the review issue is still open` };
+  }
+  return { ok: true, detail: `${names} asked for review on its last run, and that request is already closed` };
+}
+
+async function reviewIssueIsOpen() {
+  try {
+    const { stdout } = await execFileAsync(
+      "gh",
+      [
+        "issue", "list",
+        "--state", "open",
+        "--search", "Internship listings need a human look in:title",
+        "--limit", "1",
+        "--json", "number"
+      ],
+      { maxBuffer: 1024 * 1024 }
+    );
+    const issues = JSON.parse(stdout);
+    return Array.isArray(issues) && issues.length > 0;
+  } catch {
+    return null;
+  }
+}
+
 async function allWorkflowFiles() {
   const dir = path.join(process.cwd(), ".github/workflows");
   return (await fs.readdir(dir)).filter((name) => name.endsWith(".yml") || name.endsWith(".yaml"));
@@ -611,13 +655,20 @@ async function checkWorkflowHealth() {
     );
 
     if (byDesign.length) {
-      // Reported, never silent: it is the difference between "nothing to do"
-      // and "something is waiting for you".
-      record(
-        "Listings awaiting review",
-        false,
-        `${byDesign.join(", ")} flagged listings for a human — see the open review issue`
-      );
+      /**
+       * Reported, never silent: it is the difference between "nothing to do"
+       * and "something is waiting for you".
+       *
+       * But the question is whether anything is waiting NOW, not whether a run
+       * last Monday found something. A request resolved on the Tuesday -- by a
+       * person, or by --prune on the next run -- left this red for the rest of
+       * the week, reporting work already done. That is the always-on light
+       * again, one level up. So the review issue is the signal: the check opens
+       * it when a listing needs a person and closes it when none does, which
+       * makes its state a fact about today rather than about last Monday.
+       */
+      const verdict = reviewVerdict(await reviewIssueIsOpen(), byDesign);
+      record("Listings awaiting review", verdict.ok, verdict.detail);
     }
 
   } catch {
