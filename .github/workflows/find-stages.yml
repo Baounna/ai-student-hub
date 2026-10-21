@@ -32,6 +32,23 @@ permissions:
   contents: write
   issues: write
 
+# next build runs with NODE_ENV=production, which trips the production config
+# validation in src/lib/env-validation.ts. Throwaway placeholders so the build
+# can be verified; the real values live in the deployment environment and are
+# never needed to compile.
+#
+# This block is why the finder was red from its first scheduled run on 15
+# October. CI, the link check and the watchdog all carry it; this workflow was
+# written last and did not. Discovery worked and the rows were built, then the
+# verify step threw before the commit step it gates -- so the agent has never
+# once added a listing from CI, and the failure looked like a finder bug for six
+# days while the finder itself was fine.
+env:
+  SITE_URL: https://ci.invalid
+  NEXT_PUBLIC_SITE_URL: https://ci.invalid
+  NEXT_PUBLIC_CONTACT_EMAIL: ci@ci.invalid
+  NEXT_PUBLIC_LEGAL_NAME: CI Build
+
 jobs:
   find:
     runs-on: ubuntu-latest
