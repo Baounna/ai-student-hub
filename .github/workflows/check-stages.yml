@@ -51,9 +51,21 @@ jobs:
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
 
-      # --write re-stamps checkedAt on everything that verified and leaves the
-      # suspect ones alone, so the page's "last checked" date becomes true
-      # without anything being deleted unattended.
+      # --write re-stamps checkedAt on everything that verified; --prune also
+      # removes what this run proved is gone.
+      #
+      # Removal used to wait for a person, and forty listings came off this
+      # board across seven manual sessions in twenty days — with dead links
+      # sitting on it in between, six days of them once, while readers arrived
+      # from a launch post. A weekly check whose findings wait for somebody to
+      # be free is late most of the time.
+      #
+      # Only the GONE verdict is pruned, and GONE demands evidence: a closure
+      # phrase in the body, a redirect off the posting, or a Workday 403 that
+      # the tenant's own search confirms. CHECK — the page could not be read —
+      # is never pruned and still goes to a person. At most fourteen a run, and
+      # nothing at all if more than 15% of the board looks gone at once, which
+      # is a job board refusing us rather than that many jobs closing.
       - name: Check every listing and re-stamp what passed
         id: check
         run: |
@@ -66,7 +78,7 @@ jobs:
           # is kept and re-raised at the end of the job instead, after the
           # reporting has happened.
           status=0
-          node scripts/check-stages.mjs --write 2>&1 | tee "$RUNNER_TEMP/stages.log" || status=$?
+          node scripts/check-stages.mjs --write --prune 2>&1 | tee "$RUNNER_TEMP/stages.log" || status=$?
           {
             echo "summary<<EOF"
             grep -E "still open .* need a human .* look gone" "$RUNNER_TEMP/stages.log" || echo "no summary line"

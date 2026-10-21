@@ -28,6 +28,39 @@ const FILE = fileArg !== -1 && process.argv[fileArg + 1]
   ? path.resolve(process.argv[fileArg + 1])
   : path.join(process.cwd(), "src/content/stages.json");
 const WRITE = process.argv.includes("--write");
+
+/**
+ * --prune removes the listings this run proved are gone.
+ *
+ * Detection has been automatic since the beginning; removal never was. Forty
+ * listings came off this board across seven manual sessions in twenty days,
+ * and between them the board carried dead links — six days of them once, while
+ * readers were arriving from a launch post. A weekly check whose findings wait
+ * for someone to be free is a weekly check that is late most of the time.
+ *
+ * Only the GONE verdict is pruned, and GONE already demands evidence rather
+ * than silence: a closure phrase in the body, a redirect off the posting, or a
+ * Workday 403 confirmed by the tenant's own search returning nothing. I opened
+ * roughly fifteen of these by hand before trusting it and every one was dead.
+ *
+ * CHECK is never pruned. That verdict means the page could not be read, which
+ * is a fact about us, and those keep going to a person.
+ */
+const PRUNE = process.argv.includes("--prune");
+
+/** At most this many in one run. A week of deaths has been two to fourteen. */
+const PRUNE_CAP = 14;
+
+/**
+ * And never more than this share of the board at once.
+ *
+ * If a third of the listings look gone, the likely explanation is that a job
+ * board went down or started refusing us, not that a third of the jobs closed
+ * on the same Monday. Deleting on that reading would empty the site. Past this
+ * line it removes nothing and says so, which is the behaviour a person would
+ * want from a script holding a knife.
+ */
+const PRUNE_MAX_SHARE = 0.15;
 /** Boards whose validThrough is a listing expiry of their own, not the employer's. */
 /**
  * Hosts whose validThrough is their own listing lifetime, not the employer's
@@ -565,6 +598,28 @@ async function checkOne(stage) {
   return { verdict: "OK", detail: `HTTP ${status}` };
 }
 
+
+/**
+ * What a run is allowed to remove. Pure, so the guards can be tested rather
+ * than trusted — the circuit breaker in particular, which only ever fires on
+ * the day something has gone badly wrong and must not be discovered broken
+ * then.
+ */
+export function prunePlan(goneCount, boardSize, { cap = PRUNE_CAP, maxShare = PRUNE_MAX_SHARE } = {}) {
+  if (goneCount <= 0) return { remove: 0, refused: "" };
+  const share = goneCount / Math.max(boardSize, 1);
+  if (share > maxShare) {
+    return {
+      remove: 0,
+      refused:
+        `${goneCount} of ${boardSize} look gone (${Math.round(share * 100)}%). ` +
+        `That is past the ${Math.round(maxShare * 100)}% line, so nothing was removed — ` +
+        `a share that size is usually a board refusing us, not that many jobs closing at once.`
+    };
+  }
+  return { remove: Math.min(goneCount, cap), refused: "" };
+}
+
 // Only sweep when run as a command. Importing this file (the tests do, for the
 // two helpers above) must not fire eighteen network requests.
 const invokedDirectly = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
@@ -677,15 +732,47 @@ if (results.GONE.length) {
   for (const { stage, detail } of results.GONE) console.log(`    ${stage.id}\n      ${detail}\n      ${stage.href}`);
 }
 
+let pruned = [];
+let pruneRefused = "";
+if (WRITE && PRUNE && results.GONE.length) {
+  const plan = prunePlan(results.GONE.length, file.items.length);
+  if (plan.refused) {
+    pruneRefused = plan.refused;
+  } else {
+    const take = results.GONE.slice(0, plan.remove);
+    const ids = new Set(take.map((g) => g.stage.id));
+    pruned = take.map((g) => ({ id: g.stage.id, company: g.stage.company, role: g.stage.role, detail: g.detail }));
+    file.items = file.items.filter((item) => !ids.has(item.id));
+  }
+}
+
 if (WRITE) {
   file.updatedAt = new Date().toISOString();
   await fs.writeFile(FILE, `${JSON.stringify(file, null, 2)}\n`);
   console.log(`\n  Re-stamped checkedAt on ${results.OK.length} entries and updatedAt on the file.`);
+  if (pruneRefused) console.log(`\n  NOT PRUNED — ${pruneRefused}`);
+  else if (pruned.length) {
+    console.log(`\n  Removed ${pruned.length} listing(s) this run:`);
+    for (const g of pruned) console.log(`    ${g.company} — ${g.role.slice(0, 48)}`);
+    if (results.GONE.length > pruned.length) {
+      console.log(`    (${results.GONE.length - pruned.length} more left for the next run; cap is ${PRUNE_CAP})`);
+    }
+  }
 } else {
   console.log("\n  Report only. Re-run with --write to re-stamp what passed.");
 }
 console.log("");
 
-process.exit(results.GONE.length ? 1 : 0);
+/**
+ * Exit non-zero only when something still needs a person.
+ *
+ * Before pruning, every gone listing meant a red run — and since listings die
+ * most weeks, that light was on every week and stopped carrying information.
+ * A run that found three dead listings and removed all three has nothing
+ * outstanding, so it reports success. One that refused to prune, or hit the
+ * cap, still has work waiting and still goes red.
+ */
+const outstanding = pruneRefused ? results.GONE.length : results.GONE.length - pruned.length;
+process.exit(outstanding > 0 ? 1 : 0);
 
 }
