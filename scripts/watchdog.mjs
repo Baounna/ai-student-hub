@@ -579,13 +579,46 @@ async function checkWorkflowHealth() {
       .filter((r) => r.conclusion === "failure")
       .map((r) => r.workflowName);
 
+    /**
+     * The link check fails on purpose when a listing looks gone, and listings
+     * look gone most weeks -- every run since 1 October has found at least one.
+     * So this line was red every week for a workflow doing exactly its job,
+     * and the health issue it opens has been stuck open since 11 October,
+     * unable to close.
+     *
+     * A light that is always on reports nothing, and this one was doing worse
+     * than nothing: it hid a real failure. The internship finder broke on its
+     * first scheduled run and sat broken for three days inside the same red
+     * line, indistinguishable from the check-stages red that is expected.
+     *
+     * So the designed signal is separated from the unexpected one. Review
+     * requests have their own channel -- an issue, opened and updated every
+     * run -- and get their own line here. Anything else failing still fails
+     * this check, which is what it is for.
+     */
+    const BY_DESIGN = new Set(["Internship Link Check"]);
+    const unexpected = failing.filter((name) => !BY_DESIGN.has(name));
+    const byDesign = failing.filter((name) => BY_DESIGN.has(name));
+
     record(
       "Workflow health",
-      failing.length === 0,
-      failing.length === 0
-        ? `latest run of all ${latest.size} workflows on main passed`
-        : `last run on main failed: ${failing.join(", ")}`
+      unexpected.length === 0,
+      unexpected.length === 0
+        ? `latest run of all ${latest.size} workflows on main passed${
+            byDesign.length ? ` (${byDesign.join(", ")} is asking for review, which is not a failure)` : ""
+          }`
+        : `last run on main failed: ${unexpected.join(", ")}`
     );
+
+    if (byDesign.length) {
+      // Reported, never silent: it is the difference between "nothing to do"
+      // and "something is waiting for you".
+      record(
+        "Listings awaiting review",
+        false,
+        `${byDesign.join(", ")} flagged listings for a human — see the open review issue`
+      );
+    }
 
   } catch {
     // No gh, or no token — not a fault in the project itself.
