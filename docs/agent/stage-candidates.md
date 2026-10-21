@@ -1,6 +1,6 @@
 # Internship candidates — 2026-10-21
 
-20 postings that match internship + AI/cyber and are not on the board yet.
+16 postings that match internship + AI/cyber and are not on the board yet.
 
 Each link was fetched once before anything was written, so a candidate whose
 link does not resolve is marked here rather than offered. What no fetch can
@@ -9,28 +9,6 @@ these are waiting for, and it is why the board is worth reading.
 
 Copy the command under any posting you want to keep.
 
-### Intern Applied AI Engineering / Strategic Consulting (CoE Tiger Team)
-Celonis · Madrid, Spain · via greenhouse
-
-_Added to the board by this run: its link was fetched and answered._
-
-<https://job-boards.greenhouse.io/celonis/jobs/7989895003?gh_jid=7989895003>
-
-```
-npm run add:stage -- --role 'Intern Applied AI Engineering / Strategic Consulting (CoE Tiger Team)' --company 'Celonis' --city 'Madrid' --country ES --deadline rolling --link 'https://job-boards.greenhouse.io/celonis/jobs/7989895003?gh_jid=7989895003'
-```
-
-### Intern Applied AI Solution Consulting (Italy)
-Celonis · Milan, Italy · via greenhouse
-
-_Added to the board by this run: its link was fetched and answered._
-
-<https://job-boards.greenhouse.io/celonis/jobs/8014366003?gh_jid=8014366003>
-
-```
-npm run add:stage -- --role 'Intern Applied AI Solution Consulting (Italy)' --company 'Celonis' --city 'Milan' --country IT --deadline rolling --link 'https://job-boards.greenhouse.io/celonis/jobs/8014366003?gh_jid=8014366003'
-```
-
 ### PhD GenAI Research Scientist Intern
 Databricks · San Francisco, California · via greenhouse
 
@@ -38,17 +16,6 @@ Databricks · San Francisco, California · via greenhouse
 
 ```
 npm run add:stage -- --role 'PhD GenAI Research Scientist Intern' --company 'Databricks' --city 'San Francisco, California' --deadline rolling --link 'https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002'
-```
-
-### Machine Learning Research Intern (Summer 2027)
-Scale AI · New York, NY; San Francisco, CA · via greenhouse
-
-_Added to the board by this run: its link was fetched and answered._
-
-<https://job-boards.greenhouse.io/scaleai/jobs/4735665005>
-
-```
-npm run add:stage -- --role 'Machine Learning Research Intern (Summer 2027)' --company 'Scale AI' --city 'New York, NY; San Francisco' --country CA --deadline rolling --link 'https://job-boards.greenhouse.io/scaleai/jobs/4735665005'
 ```
 
 ### Hardware Security Engineer Intern (Summer 2027)
@@ -139,17 +106,6 @@ NVIDIA · China, Shanghai · via workday
 
 ```
 npm run add:stage -- --role 'Custom SOC Intern - 2027' --company 'NVIDIA' --city 'Shanghai' --country CN --deadline rolling --link 'https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Custom-SOC-Intern---2027_JR2024692'
-```
-
-### AI Developer Technology Intern - 2027
-NVIDIA · Germany, Munich · via workday
-
-_Added to the board by this run: its link was fetched and answered._
-
-<https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Germany-Munich/AI-Developer-Technology-Intern---2027_JR2027497>
-
-```
-npm run add:stage -- --role 'AI Developer Technology Intern - 2027' --company 'NVIDIA' --city 'Munich' --country DE --deadline rolling --link 'https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Germany-Munich/AI-Developer-Technology-Intern---2027_JR2027497'
 ```
 
 ### AI Develop Intern
