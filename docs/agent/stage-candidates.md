@@ -1,6 +1,6 @@
-# Internship candidates — 2026-10-21
+# Internship candidates — 2026-10-22
 
-16 postings that match internship + AI/cyber and are not on the board yet.
+17 postings that match internship + AI/cyber and are not on the board yet.
 
 Each link was fetched once before anything was written, so a candidate whose
 link does not resolve is marked here rather than offered. What no fetch can
@@ -8,6 +8,17 @@ settle is whether the role is what its title says — that is the judgement
 these are waiting for, and it is why the board is worth reading.
 
 Copy the command under any posting you want to keep.
+
+### AI & Management Consulting Intern (Value Engineering - DACH Market)
+Celonis · Munich, Germany · via greenhouse
+
+_Added to the board by this run: its link was fetched and answered._
+
+<https://job-boards.greenhouse.io/celonis/jobs/7925721003?gh_jid=7925721003>
+
+```
+npm run add:stage -- --role 'AI & Management Consulting Intern (Value Engineering - DACH Market)' --company 'Celonis' --city 'Munich' --country DE --deadline rolling --link 'https://job-boards.greenhouse.io/celonis/jobs/7925721003?gh_jid=7925721003'
+```
 
 ### PhD GenAI Research Scientist Intern
 Databricks · San Francisco, California · via greenhouse
