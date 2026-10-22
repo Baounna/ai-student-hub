@@ -106,7 +106,16 @@ if (interactive) {
 const role = (answers.role || "").trim();
 const company = (answers.company || "").trim();
 const city = (answers.city || "").trim();
-const country = (answers.country || "MA").trim().toUpperCase();
+// "MA" is a fair default when a PERSON is answering the prompts: this board is
+// written in Morocco. It is not a fair default for a pasted command.
+//
+// The finder emits one add:stage command per candidate and deliberately omits
+// --country when it cannot resolve one -- 12 of the 17 commands in the last
+// review file had none, for exactly that reason. Defaulting here put a San
+// Francisco role on the Morocco page, which is the precise harm the finder was
+// changed to stop. The refusal to guess was undone one step later, in the same
+// direction, by the script the reviewer pastes into.
+const country = (answers.country || (interactive ? "MA" : "")).trim().toUpperCase();
 const kind = (answers.kind || "stage").trim().toLowerCase();
 const rawDeadline = (answers.deadline || "").trim();
 // "rolling" and blank both mean the posting published no closing date.
@@ -115,6 +124,16 @@ const href = (answers.link || answers.href || "").trim();
 
 if (!role || !company || !href) {
   fail("role, company and link are all required.");
+}
+if (!country) {
+  fail(
+    "--country is required. The finder leaves it out when it cannot tell, and " +
+      '"San Francisco, CA" is one of those: CA is California and Canada. Open ' +
+      "the posting and pass the two-letter code."
+  );
+}
+if (!/^[A-Z]{2}$/.test(country)) {
+  fail(`--country must be a two-letter code, got "${country}".`);
 }
 // A city is optional because not every employer publishes one -- Cohere lists
 // its internships as "Canada", remote. What is not allowed is a placeholder in

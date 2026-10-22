@@ -515,16 +515,40 @@ const PARKED_WORKFLOWS = new Set([
  * healthy is how a real request goes unseen.
  */
 export function reviewVerdict(waiting, byDesign = []) {
-  // The run can succeed and still have left a request open, so there may be no
-  // failing workflow to name.
-  const names = byDesign.length ? byDesign.join(", ") : "The weekly link check";
+  /*
+   * The run can succeed and still have left a request open, so there is often
+   * no failing workflow to name -- and after pruning, that is the NORMAL state.
+   *
+   * Which means the wording has to work when nothing asked for anything. It
+   * said "The weekly link check asked for review on its last run, and that
+   * request is already closed" on every green run, which is a claim that no
+   * review was ever requested. The whole point of this line is that it is a
+   * fact about today, so it does not get to invent a yesterday.
+   */
+  const asked = byDesign.length > 0;
+  const names = asked ? byDesign.join(", ") : "";
   if (waiting === null) {
-    return { ok: false, detail: `${names} asked for review and GitHub would not say whether that request is still open` };
+    return {
+      ok: false,
+      detail: asked
+        ? `${names} asked for review and GitHub would not say whether that request is still open`
+        : "GitHub would not say whether a review request is open"
+    };
   }
   if (waiting) {
-    return { ok: false, detail: `${names} flagged listings for a human — the review issue is still open` };
+    return {
+      ok: false,
+      detail: asked
+        ? `${names} flagged listings for a human — the review issue is still open`
+        : "listings are waiting for a person — the review issue is open"
+    };
   }
-  return { ok: true, detail: `${names} asked for review on its last run, and that request is already closed` };
+  return {
+    ok: true,
+    detail: asked
+      ? `${names} asked for review on its last run, and that request is already closed`
+      : "no listing is waiting for a person"
+  };
 }
 
 async function reviewIssueIsOpen() {
@@ -799,6 +823,24 @@ async function run() {
     );
   }
   await fs.writeFile(path.join(process.cwd(), "watchdog-report.md"), `${report}\n`, "utf8");
+
+  /**
+   * Publish the report on the run page, every run.
+   *
+   * watchdog-report.md is gitignored, never uploaded as an artifact, and the
+   * workflow only reads it on the unhealthy path -- it closes the issue and
+   * exits before the `cat` when everything passes. So the advisory added for
+   * exactly the green-run case ("all checks passed, 1 waiting on you") was
+   * computed correctly, written to a file nobody fetches, and dropped. The run
+   * went green and the work was visible only in the log of a green run, which
+   * is where it already was.
+   *
+   * The step summary is the one channel that shows up on a passing run without
+   * opening a red issue for work that is not a fault.
+   */
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `${report}\n`, "utf8");
+  }
 
   console.log("--------------------------------");
   console.log(

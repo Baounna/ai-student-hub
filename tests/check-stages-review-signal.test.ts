@@ -33,7 +33,7 @@ describe("the weekly check's review signal", () => {
   it("raises that marker for listings needing a human, not only for gone ones", () => {
     // The whole point: a 403 or an ambiguous page is the case a person has to
     // judge, and it used to produce no signal at all.
-    expect(SCRIPT).toMatch(/if \(results\.CHECK\.length \|\| results\.GONE\.length\)/);
+    expect(SCRIPT).toMatch(/if \(reviewMarkerNeeded\(results\.CHECK\.length, outstanding\)\)/);
   });
 
   it("does not let the script's exit code abort the reporting", () => {

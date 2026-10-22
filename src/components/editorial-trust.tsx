@@ -24,9 +24,16 @@ export function EditorialTrust({ locale, compact = false }: EditorialTrustProps)
             timestamps and the page says out loud. Claim that instead. */}
         <li>
           1.{" "}
+          {/* "every entry says when" was an absolute, and two listings break it:
+              a row the checker cannot verify shows "we could not verify this
+              link" INSTEAD of a date, by design. This panel renders on eleven
+              templates in both languages, so it was the site's most repeated
+              claim and it was wrong by two rows. Say what is actually true,
+              which is the better promise anyway: a date, or an admission,
+              never silence. */}
           {fr
-            ? "La liste des stages est revérifiée chaque semaine, et chaque offre indique quand."
-            : "The internship list is re-checked every week, and every entry says when."}
+            ? "La liste des stages est revérifiée chaque semaine : chaque offre affiche sa date de vérification, ou indique que nous n'avons pas pu la vérifier."
+            : "The internship list is re-checked every week, and every entry either shows its check date or says we could not verify it."}
         </li>
         <li>2. {fr ? "Sources explicites et références visibles." : "Explicit sources and visible references."}</li>
         <li>3. {fr ? "Recommandations orientées exécution et petit budget." : "Execution-first recommendations with budget-friendly constraints."}</li>

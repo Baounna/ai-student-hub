@@ -40,6 +40,15 @@ describe("donation tier links", () => {
     }
   });
 
+  it("falls back to the plain link rather than building a broken one", () => {
+    // NEXT_PUBLIC_DONATION_CURRENCY is read in one place and validated nowhere,
+    // so a deployment typo reaches this function. The test asserting the config
+    // is a 3-letter code can only see the environment the TEST runs in.
+    for (const bad of ["euros", "Euro", "\u20ac", "US", "USDD", ""]) {
+      expect(tierHref(base, 3, bad)).toBe(base);
+    }
+  });
+
   it("never produces a broken URL from odd input", () => {
     expect(tierHref(base, Number.NaN, "USD")).toBe(base);
     expect(tierHref(base, 0, "USD")).toBe(base);

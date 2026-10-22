@@ -203,6 +203,43 @@ export function linkVerdict({ status, text, raw, href, finalUrl, now = Date.now(
   const expired = expiredValidThrough(raw, listingHost(href), now);
   if (expired) return { ok: false, reason: `the page gives a closing date of ${expired}` };
   if (redirectedAway(href, finalUrl)) return { ok: false, reason: "the link redirects away from the posting" };
+
+  /**
+   * A page with nothing on it has not been read, whatever its status code.
+   *
+   * Without this the gate was vacuous on half the configured sources. A Workday
+   * requisition path that does not exist answers 200 with ZERO characters of
+   * text, and an Ashby one answers 200 with "You need to enable JavaScript to
+   * run this app." -- both of which this function called verified, so the row
+   * shipped stamped "link checked today" having read nothing. Measured against
+   * live tenants, not supposed.
+   *
+   * It matters here more than anywhere, because the finder BUILDS the Workday
+   * href itself out of a tenant, a site slug and a path rather than using a URL
+   * the API handed back. A wrong path is exactly what this fetch was added to
+   * catch, and it was the one thing it could not see.
+   *
+   * check-stages.mjs has carried this rule for the same reason -- same 400
+   * characters, comfortably below any real posting and well above a shell --
+   * and its comment states the standard this file has to meet: the page tells
+   * readers every link is opened and its page read, which cannot be true of a
+   * page that has nothing to read. Without it the two scripts disagreed about
+   * the same URL, the finder calling it verified on Thursday and the checker
+   * calling it unverifiable on Monday.
+   *
+   * Workday and Ashby candidates therefore wait in the review file. That is a
+   * real cost in volume and the right trade: the API proves the job is open,
+   * which is worth a line in the review file, but it is not a person having
+   * read the page, which is what the row would claim.
+   */
+  const visible = String(text).trim().length;
+  if (visible < 400) {
+    return {
+      ok: false,
+      reason: `the link answers HTTP ${status} with only ${visible} characters of text, so nothing was read`
+    };
+  }
+
   return { ok: true, reason: "" };
 }
 
@@ -300,30 +337,53 @@ export function splitLocation(location) {
     return "";
   };
 
-  // Workday leads with the country: "US, CA, Santa Clara".
-  const head = asCountry(parts[0]);
-  if (head && parts.length > 1) return { city: parts[parts.length - 1], country: head };
-
   const tail = parts[parts.length - 1];
 
   /**
-   * "New York, NY; San Francisco, CA" went onto the board as Canada.
+   * Workday leads with the country: "US, CA, Santa Clara", "China, Shanghai".
    *
-   * The country branch ran before the state branch, so every colliding token
-   * resolved to the country: a Boston internship would have been filed under
-   * Morocco, on the Morocco page of a site written in Morocco, under the one
-   * filter students actually use.
-   *
-   * An unambiguous state anywhere in the string settles it -- NY can only be
-   * New York. With nothing to settle it, the country is left blank and the
-   * candidate waits in the review file for a person, which is what that file
-   * is for. Guessing is what we are not willing to do here.
+   * Guarded on the tail not being a place code itself, because
+   * "Luxembourg, lu" -- a shape SmartRecruiters produces -- also has a
+   * resolvable head, and this branch returns the LAST part as the city. It was
+   * writing rows whose city read "lu". When both ends resolve, the tail is the
+   * country and the head is the city, which is the ordinary way round.
    */
-  if (AMBIGUOUS_CODES.has(tail.toUpperCase()) && parts.length > 1) {
-    const settled = parts.some((part) => {
-      const code = part.toUpperCase();
-      return US_STATES.has(code) && !AMBIGUOUS_CODES.has(code);
-    });
+  const head = asCountry(parts[0]);
+  if (head && parts.length > 1 && !asCountry(tail)) {
+    return { city: parts[parts.length - 1], country: head };
+  }
+
+  /**
+   * "New York, NY; San Francisco, CA" went onto the board as Canada, because
+   * the country branch ran before the state branch and CA is both California
+   * and Canada. A Boston internship would have been filed under Morocco, on
+   * the Morocco page of a site written in Morocco, under the one filter
+   * students actually use.
+   *
+   * But the first fix for that uppercased the tail before deciding, and case is
+   * the whole signal. Greenhouse writes a US STATE in capitals -- "San
+   * Francisco, CA". SmartRecruiters writes the COUNTRY in lower case --
+   * "Casablanca, ma", "Munich, de", "Toronto, ca". Uppercasing threw that away
+   * and sent every one of them to the review file unplaced, including a
+   * Moroccan cybersecurity internship, which is the single most on-target
+   * listing this board can hold. Ten German Bosch postings too.
+   *
+   * So only an UPPER-case two-letter token is ambiguous. A lower-case one is
+   * the country, said plainly by the source that wrote it.
+   *
+   * For the genuinely ambiguous ones, an unambiguous state anywhere in the
+   * WHOLE location settles it -- NY can only be New York -- and the scan uses
+   * the full string rather than `parts`, because `parts` stops at the first
+   * separator and so could never see the part that settles it. With nothing to
+   * settle it the country is left blank and a person places it, which is what
+   * refusing to guess means.
+   */
+  const upperTwoLetter = /^[A-Z]{2}$/.test(tail);
+  if (upperTwoLetter && AMBIGUOUS_CODES.has(tail) && parts.length > 1) {
+    const settled = String(location || "")
+      .split(/[\u2022;,]/)
+      .map((part) => part.trim().toUpperCase())
+      .some((code) => US_STATES.has(code) && !AMBIGUOUS_CODES.has(code));
     return { city: parts.slice(0, -1).join(", "), country: settled ? "US" : "" };
   }
 
@@ -650,7 +710,11 @@ if (invokedDirectly) {
       lines.push("```");
       lines.push(
         `npm run add:stage -- --role ${shellQuote(c.role)} --company ${shellQuote(c.company)} ` +
-          `--city ${shellQuote(c.city)}${c.country ? ` --country ${c.country}` : ""} ` +
+          // A visible placeholder, not an omission. An omitted --country used to be
+          // silently defaulted to MA by add-stage.mjs; it is refused now, and
+          // printing FILL-ME names the word to replace rather than leaving the
+          // reviewer to diff two commands to find what is missing.
+          `--city ${shellQuote(c.city)} --country ${c.country || "FILL-ME"} ` +
           `--deadline rolling --link ${shellQuote(c.href)}`
       );
       lines.push("```");

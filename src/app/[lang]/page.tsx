@@ -328,7 +328,13 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             omitted the verified listings entirely. Count the library, not the
             shelf. */}
         <p className="mt-4 text-sm text-[color:var(--muted)]">
-          {openStages.length} {locale === "fr" ? "stages vérifiés" : "verified internships"} • {allPosts.length}{" "}
+          {/* verifiedCount, not openStages.length. That count exists 150 lines
+              above precisely because two listings say on their own rows that
+              they could not be verified -- and the shelf header below already
+              printed the right number, so one screen carried "94 verified
+              internships" and "92 links verified" at the same time. The word is
+              "verified"; the number has to be the verified one. */}
+          {verifiedCount} {locale === "fr" ? "stages vérifiés" : "verified internships"} • {allPosts.length}{" "}
           {locale === "fr" ? "guides" : "guides"} • {allNews.length}{" "}
           {locale === "fr" ? "briefs d'actualité" : "news briefs"} • {categories.length}{" "}
           {locale === "fr" ? "domaines" : "domains"}

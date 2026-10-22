@@ -203,7 +203,7 @@ describe("a listing nobody could verify", () => {
     // raises the review issue.
     expect(script).toMatch(/const settled = verdict === "CHECK" && judgmentIsCurrent\(stage\)/);
     expect(script).toMatch(/if \(settled\) known\.push/);
-    expect(script).toMatch(/if \(results\.CHECK\.length \|\| results\.GONE\.length\)/);
+    expect(script).toMatch(/if \(reviewMarkerNeeded\(results\.CHECK\.length, outstanding\)\)/);
     // And are still printed, so suppressing the ask never means hiding them.
     expect(script).toContain("Already judged");
   });

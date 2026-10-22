@@ -133,8 +133,21 @@ jobs:
       # not tell a live request from a finished one. That is the same light that
       # is always on, in a second place: the watchdog reads this signal, so a
       # resolved request kept the site reporting unhealthy.
+      # check_status must be present, not just needs_review absent.
+      #
+      # needs_review is only ever written when the log contains the marker, so
+      # an UNSET output satisfies `!= 'true'` -- and the step then commented
+      # "nothing is waiting any more" and closed the issue on a run that
+      # verified nothing. If npm ci fails, or the script dies before printing
+      # the marker, every output of that step is empty. Opening a request needs
+      # positive evidence; closing one was accepting the absence of evidence,
+      # which destroyed the only human-actionable state this workflow produces
+      # and then told the human the opposite of the truth. The watchdog reads
+      # that closed issue and reports healthy, so a crashed run looked green.
+      #
+      # The fail step below already guards the empty case the same way.
       - name: Close the review issue when nothing needs a person
-        if: always() && steps.check.outputs.needs_review != 'true'
+        if: always() && steps.check.outputs.needs_review != 'true' && steps.check.outputs.check_status != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

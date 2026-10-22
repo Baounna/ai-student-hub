@@ -44,6 +44,33 @@ describe("reviewVerdict", () => {
     }
   });
 
+  /**
+   * After pruning, a green link-check run is the normal case, so there is
+   * usually no failing workflow to name — and every test here passed a name,
+   * so the no-name path was uncovered. It claimed "The weekly link check asked
+   * for review on its last run, and that request is already closed" on every
+   * green run: a yesterday it invented. This line exists to be a fact about
+   * today, so it does not get to do that.
+   */
+  describe("when no workflow asked for review", () => {
+    it("does not claim a request was made", () => {
+      for (const waiting of [true, false, null]) {
+        expect(reviewVerdict(waiting, []).detail).not.toMatch(/asked for review/);
+      }
+    });
+
+    it("still reports an open request, and still refuses to call an unknown healthy", () => {
+      expect(reviewVerdict(true, []).ok).toBe(false);
+      expect(reviewVerdict(null, []).ok).toBe(false);
+      expect(reviewVerdict(false, []).ok).toBe(true);
+      expect(reviewVerdict(false, []).detail).toBe("no listing is waiting for a person");
+    });
+
+    it("defaults the argument, so a caller may omit it entirely", () => {
+      expect(reviewVerdict(false).ok).toBe(true);
+    });
+  });
+
   it("does not render an em dash as an escape sequence", () => {
     // The detail strings are read by a person in a GitHub issue.
     for (const waiting of [true, false, null]) {

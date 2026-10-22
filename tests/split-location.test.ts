@@ -55,6 +55,40 @@ describe("splitLocation", () => {
     });
   });
 
+  /**
+   * Case is the signal, and the first fix for the CA/Canada collision threw it
+   * away by uppercasing the tail before deciding.
+   *
+   * Greenhouse writes a US STATE in capitals -- "San Francisco, CA".
+   * SmartRecruiters writes the COUNTRY in lower case -- "Casablanca, ma". For a
+   * day, every lower-case one went to the review file unplaced: Moroccan,
+   * German and Canadian postings, including a Moroccan cybersecurity internship,
+   * which is the single most on-target listing this board can hold.
+   */
+  it("reads a lower-case code as the country, the way SmartRecruiters writes it", () => {
+    expect(splitLocation("Casablanca, ma")).toEqual({ city: "Casablanca", country: "MA" });
+    expect(splitLocation("Munich, de")).toEqual({ city: "Munich", country: "DE" });
+    expect(splitLocation("Toronto, ca")).toEqual({ city: "Toronto", country: "CA" });
+    expect(splitLocation("Puteaux, fr")).toEqual({ city: "Puteaux", country: "FR" });
+  });
+
+  it("keeps the city when both ends of the string resolve", () => {
+    // "Luxembourg, lu" has a resolvable head, and the Workday country-first
+    // branch returns the LAST part as the city -- so this was writing rows
+    // whose city read "lu".
+    expect(splitLocation("Luxembourg, lu")).toEqual({ city: "Luxembourg", country: "LU" });
+    // Workday's real shapes still work.
+    expect(splitLocation("China, Shanghai")).toEqual({ city: "Shanghai", country: "CN" });
+  });
+
+  it("settles an ambiguous code from any part, in either separator", () => {
+    // The scan ran over `parts`, which stops at the first separator, so it could
+    // never see the part that settles it. Order-dependent before this.
+    expect(splitLocation("San Francisco, CA; New York, NY").country).toBe("US");
+    expect(splitLocation("San Francisco, CA \u2022 New York, NY").country).toBe("US");
+    expect(splitLocation("New York, NY; San Francisco, CA").country).toBe("US");
+  });
+
   it("refuses a placeholder that names no place at all", () => {
     expect(splitLocation("3 locations")).toEqual({ city: "", country: "" });
     expect(splitLocation("")).toEqual({ city: "", country: "" });

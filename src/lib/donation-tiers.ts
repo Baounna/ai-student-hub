@@ -23,6 +23,13 @@ export function tierHref(baseHref: string | undefined, amount: number, currency:
     const url = new URL(baseHref);
     if (url.hostname !== "paypal.me" && url.hostname !== "www.paypal.me") return baseHref;
     if (!Number.isFinite(amount) || amount <= 0) return baseHref;
+    // The label defends itself with a try/catch and degrades to "3 EUROS"; the
+    // URL had no such guard, so a deployment setting NEXT_PUBLIC_DONATION_CURRENCY
+    // to "euros" or "Euro" produced paypal.me/handle/3EUROS -- a broken payment
+    // link beside a label that still read fine. The two sides now fail the same
+    // way: an unusable code falls back to the plain link, where the reader types
+    // the amount themselves.
+    if (!/^[A-Z]{3}$/.test(currency)) return baseHref;
     // The currency goes in the path too. paypal.me/name/10 reads that 10 in the
     // RECEIVING account's currency, so a page printing "$10" beside a link
     // carrying only "10" was telling the reader a number PayPal would not

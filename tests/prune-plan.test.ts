@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import {
-  prunePlan
+  prunePlan,
+  reviewMarkerNeeded
   // @ts-expect-error - plain .mjs script, no types
 } from "../scripts/check-stages.mjs";
 
@@ -50,5 +51,35 @@ describe("what a run may remove", () => {
   it("does not divide by zero on an empty board", () => {
     expect(prunePlan(1, 0).remove).toBe(0);
     expect(prunePlan(1, 0).refused).not.toBe("");
+  });
+});
+
+/**
+ * The marker that raises the review issue has to describe what is LEFT.
+ *
+ * Before --prune, "found gone" and "needs a person" were the same number. They
+ * are not any more: a run that found three dead listings and removed all three
+ * printed the marker on the pre-prune count, so the workflow opened an issue
+ * telling a person to delete three entries it had already deleted — and
+ * because the marker was raised, the step that closes a finished request was
+ * suppressed, so the spurious one lingered. Only the exit code had been
+ * updated for pruning; the marker had not.
+ */
+describe("reviewMarkerNeeded", () => {
+  it("stays quiet when pruning cleared everything and nothing needs judging", () => {
+    expect(reviewMarkerNeeded(0, 0)).toBe(false);
+  });
+
+  it("fires for a listing that needs a person even with nothing gone", () => {
+    // A 429 from LinkedIn is not proof either way, and it still needs judging.
+    expect(reviewMarkerNeeded(2, 0)).toBe(true);
+  });
+
+  it("fires for gone listings the prune could not take", () => {
+    expect(reviewMarkerNeeded(0, 1)).toBe(true);
+  });
+
+  it("fires for both at once", () => {
+    expect(reviewMarkerNeeded(2, 3)).toBe(true);
   });
 });

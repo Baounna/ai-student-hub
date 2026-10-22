@@ -611,6 +611,19 @@ async function checkOne(stage) {
  * the day something has gone badly wrong and must not be discovered broken
  * then.
  */
+/**
+ * Whether this run has anything left for a person, after pruning.
+ *
+ * Pure and exported because two tests used to assert the condition by matching
+ * the script's source text, which broke the moment pruning changed what the
+ * condition should be -- while the behaviour they cared about was intact. The
+ * subtlety is that a CHECK alone is enough (a listing we were refused still
+ * needs judging), and that the gone count has to be the POST-prune one.
+ */
+export function reviewMarkerNeeded(checkCount, outstandingGone) {
+  return checkCount > 0 || outstandingGone > 0;
+}
+
 export function prunePlan(goneCount, boardSize, { cap = PRUNE_CAP, maxShare = PRUNE_MAX_SHARE } = {}) {
   if (goneCount <= 0) return { remove: 0, refused: "" };
   const share = goneCount / Math.max(boardSize, 1);
@@ -702,11 +715,15 @@ if (expired.length) console.log(`  ${expired.length} past their stated deadline`
  * follow it. tests/check-stages-review-signal.test.ts holds the two together.
  */
 const REVIEW_MARKER = "REVIEW REQUIRED";
-if (results.CHECK.length || results.GONE.length) {
-  console.log(
-    `\n  ${REVIEW_MARKER} — ${results.CHECK.length} need a human, ${results.GONE.length} look gone`
-  );
-}
+// Printed after pruning, not here. What a person has to act on is what is LEFT,
+// and before --prune existed those were the same number. They are not any more:
+// a run that found three dead listings and removed all three printed the marker
+// on the pre-prune count, so the workflow set needs_review=true and opened an
+// issue telling a person to "delete its entry from src/content/stages.json" for
+// three entries it had already deleted -- and because needs_review was true,
+// the step that closes a finished request was suppressed, so the spurious one
+// lingered. Two signals out of one state, and only the exit code was updated
+// for pruning.
 
 /*
  * Both blocks print near the end, and that position is load-bearing.
@@ -731,11 +748,6 @@ if (results.CHECK.length) {
   for (const { stage, detail } of results.CHECK) {
     console.log(`    ${stage.id}\n      ${detail}\n      ${stage.href}`);
   }
-}
-
-if (results.GONE.length) {
-  console.log("\n  Probably gone — open each, then remove it from stages.json by hand:");
-  for (const { stage, detail } of results.GONE) console.log(`    ${stage.id}\n      ${detail}\n      ${stage.href}`);
 }
 
 let pruned = [];
@@ -779,6 +791,25 @@ console.log("");
  * cap, still has work waiting and still goes red.
  */
 const outstanding = pruneRefused ? results.GONE.length : results.GONE.length - pruned.length;
+
+/*
+ * Now that pruning has happened, say what a person is actually left with.
+ *
+ * The workflow puts `tail -n 80` of this log into the review issue, so this has
+ * to stay near the end to survive the cut.
+ */
+const prunedIds = new Set(pruned.map((g) => g.id));
+const stillGone = results.GONE.filter(({ stage }) => !prunedIds.has(stage.id));
+if (stillGone.length) {
+  console.log("\n  Probably gone — open each, then remove it from stages.json by hand:");
+  for (const { stage, detail } of stillGone) console.log(`    ${stage.id}\n      ${detail}\n      ${stage.href}`);
+}
+
+if (reviewMarkerNeeded(results.CHECK.length, outstanding)) {
+  console.log(`\n  ${REVIEW_MARKER} — ${results.CHECK.length} need a human, ${outstanding} still look gone`);
+}
+console.log("");
+
 process.exit(outstanding > 0 ? 1 : 0);
 
 }
