@@ -405,11 +405,39 @@ async function run() {
 
     const pipelineRun = await runCommand("npm", ["run", "agent:all"]);
     runResults.push({ ...pipelineRun, type: "pipeline", attempt });
+    /*
+     * KNOWN COUPLING, not yet separated.
+     *
+     * `continue` spends an attempt, and spending both leaves success false,
+     * which sends restoreFileSnapshots to roll auto-news.json and
+     * auto-tools.json back. That is right when the pipeline half-wrote the
+     * content. It is wrong when the only thing that failed was the issue sync,
+     * which also runs inside agent:all and now exits non-zero when it was told
+     * to file issues and could not -- so a revoked token would make this
+     * discard content it had already fetched successfully, which is a
+     * notification failure destroying work.
+     *
+     * It cannot fire as configured: this workflow is workflow_dispatch only, so
+     * a person is watching, and autopilot-agent.yml now passes the token and
+     * `issues: write` that the sync needs. Separating them means the sync
+     * reporting after the content is safe and being re-raised at the end of the
+     * job, which is the shape .github/workflows/check-stages.yml already uses
+     * for its own exit code. Worth doing before this is put back on a schedule.
+     */
     if (!pipelineRun.ok) continue;
 
     const checks = [
       { args: ["run", "lint"] },
-      { args: ["run", "build"] },
+      // qualityEnv, not process.env. `next build` runs with NODE_ENV=production
+      // and src/lib/env-validation.ts throws without the four site keys, which
+      // buildQualityEnv already supplies to the two verify:* checks below. This
+      // one fell through to process.env, and autopilot-agent.yml sets no env
+      // block while .env.local is gitignored -- so on a runner the build threw
+      // every single time, both retries were spent on it, success stayed false,
+      // and restoreFileSnapshots then rolled auto-news.json and auto-tools.json
+      // back to their pre-run state. The pipeline fetched the content and then
+      // threw it away, run after run, over a missing placeholder.
+      { args: ["run", "build"], env: qualityEnv },
       { args: ["run", "verify:production"], env: qualityEnv },
       { args: ["run", "verify:affiliates"], env: qualityEnv },
       { args: ["run", "verify:public-content"] },

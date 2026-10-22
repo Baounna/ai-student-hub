@@ -1,4 +1,4 @@
-import { countryLabel, getStages, type Stage } from "@/content/stages";
+import { countryLabel, getStages, type Stage, type StageKind } from "@/content/stages";
 import type { Locale } from "@/i18n/config";
 
 /**
@@ -53,11 +53,128 @@ export function countryPagePath(code: string, locale: Locale): string {
   return `/${locale}/stages/${countrySlug(code)}`;
 }
 
-export function countryPageTitle(code: string, locale: Locale): string {
+/**
+ * The same test /stages uses to count security roles, because the data has no
+ * field for it.
+ *
+ * Copied rather than imported: the one copy lives inline in
+ * src/app/[lang]/stages/page.tsx, and the two must not drift -- a title that
+ * promises cyber from one regex while the board counts with another would be
+ * two different answers to the same question on two pages of the same site.
+ * tests/country-claims.test.ts reads that file and fails if the patterns stop
+ * matching. Move it here and import it from there the next time that page is
+ * open for editing.
+ */
+export const SECURITY_ROLE_PATTERN =
+  /cyber|s[ée]curit|\bSOC\b|\bSSI\b|pentest|forensic|\bIAM\b|\bCERT\b|vuln/i;
+
+export function isSecurityRole(role: string): boolean {
+  return SECURITY_ROLE_PATTERN.test(role);
+}
+
+/**
+ * How much of a country's list has to be security work before the title may
+ * say "cybersecurity".
+ *
+ * Every country page was titled "AI and cybersecurity internships in X", a
+ * two-part promise, and for most of them the second half was close to empty:
+ * Canada 0 of 4, the United States 1 of 12, Germany 1 of 9, and Morocco -- the
+ * audience these pages were built for -- 1 of 8. A student who searched for a
+ * cyber internship in Casablanca, landed on a page whose heading named one,
+ * and then read eight AI and data listings has been sent somewhere under false
+ * pretences; that is the trip this site exists to save them.
+ *
+ * A third, because the title has room for two subjects and the smaller one has
+ * to be worth a reader's click, not merely present. France keeps both halves
+ * on 39 of 53. The rest say AI and tech, which is true of every row -- and the
+ * cyber listings those countries do have are still a filter click away on the
+ * board, and still counted in the sentence under the heading.
+ */
+export const CYBER_TITLE_MIN_SHARE = 1 / 3;
+
+/** Counted from the country's own listings, never written down. */
+export function countrySecurityCount(code: string, now = Date.now()): number {
+  return (listingsByCountry(now).get(code) ?? []).filter((stage) => isSecurityRole(stage.role)).length;
+}
+
+/** Whether this country's list earns the word in its title and lead sentence. */
+export function countryNamesCyber(code: string, now = Date.now()): boolean {
+  const listings = listingsByCountry(now).get(code) ?? [];
+  if (!listings.length) return false;
+  return countrySecurityCount(code, now) / listings.length >= CYBER_TITLE_MIN_SHARE;
+}
+
+export function countryPageTitle(code: string, locale: Locale, now = Date.now()): string {
   const name = countryLabel(code, locale);
-  return locale === "fr"
-    ? `Stages IA et cybersécurité ${inCountryFr(name)}`
-    : `AI and cybersecurity internships in ${inCountryEn(name)}`;
+  const cyber = countryNamesCyber(code, now);
+  if (locale === "fr") {
+    return cyber
+      ? `Stages IA et cybersécurité ${inCountryFr(name)}`
+      : `Stages IA et informatique ${inCountryFr(name)}`;
+  }
+  return cyber
+    ? `AI and cybersecurity internships in ${inCountryEn(name)}`
+    : `AI and tech internships in ${inCountryEn(name)}`;
+}
+
+/**
+ * The kinds this country actually lists, in the order a reader meets them on
+ * the board.
+ *
+ * The lead paragraph and the ItemList description both said "internships,
+ * apprenticeships and final-year projects" over every country. The United
+ * States lists twelve internships and nothing else; Canada four; Morocco has
+ * no apprenticeship at all. Two of the three named categories were empty on
+ * those pages, which is a reader scrolling for an alternance that was never
+ * there.
+ */
+const KIND_ORDER: readonly StageKind[] = ["stage", "alternance", "pfe"];
+
+const KIND_PLURALS: Record<StageKind, Record<Locale, string>> = {
+  stage: { en: "internships", fr: "stages" },
+  alternance: { en: "apprenticeships", fr: "alternances" },
+  pfe: { en: "final-year projects", fr: "PFE" }
+};
+
+function joinList(parts: string[], locale: Locale): string {
+  if (parts.length <= 1) return parts[0] ?? "";
+  const last = parts[parts.length - 1];
+  return `${parts.slice(0, -1).join(", ")} ${locale === "fr" ? "et" : "and"} ${last}`;
+}
+
+/**
+ * The sentence under the heading, counted from the same listings the page then
+ * renders.
+ *
+ * Lives here rather than in the page so the H1 and this paragraph cannot
+ * disagree about whether the country has cyber work in it, and so a test can
+ * hold both to the data.
+ */
+export function countryPageBlurb(code: string, locale: Locale, now = Date.now()): string {
+  const listings = listingsByCountry(now).get(code) ?? [];
+  const name = countryLabel(code, locale);
+  const present = KIND_ORDER.filter((kind) => listings.some((stage) => stage.kind === kind));
+  const kinds = joinList(
+    present.map((kind) => KIND_PLURALS[kind][locale]),
+    locale
+  );
+  const subject = countryNamesCyber(code, now)
+    ? locale === "fr"
+      ? "IA et cybersécurité"
+      : "AI and cybersecurity"
+    : locale === "fr"
+      ? "IA et informatique"
+      : "AI and tech";
+
+  if (locale === "fr") {
+    // "stages" and "PFE" are masculine, "alternances" feminine: a list of only
+    // alternances would read "ouvertes". Agreement done properly, for the same
+    // reason the prepositions below are -- a French reader can tell when nobody
+    // who speaks their language read the page.
+    const agreement = present.some((kind) => kind !== "alternance") ? "ouverts" : "ouvertes";
+    return `${listings.length} ${kinds} en ${subject} ${agreement} aux étudiants, vérifiés chaque semaine. ${name}.`;
+  }
+  return `${listings.length} ${kinds} in ${subject}, re-checked every week. ${name}.`;
 }
 
 /**

@@ -2,6 +2,19 @@
 # with a lockfile that drifted far enough to break `npm ci` on every workflow
 # for eighty days. Weekly PRs keep that from happening silently again, and they
 # are the only automated route to a security patch for a transitive dependency.
+#
+# That last sentence was aspirational until 22 October 2026. This file schedules
+# weekly VERSION updates; a published advisory only opens its own PR if the
+# repository has Dependabot alerts and automated security fixes switched on, and
+# both were off. The gap showed on the day a critical Next.js RCE was published
+# for 16.0.0-16.4.0 while the site ran 16.3.8: no security PR appeared, and the
+# only reason the patch was available at all was that the routine Monday batch
+# happened to include 16.4.2. Both settings are on now, and a security PR
+# arrived within minutes of enabling them.
+#
+# If this file ever looks like it has stopped catching advisories, check those
+# two repository settings before changing anything here. Nothing in this file
+# can turn them on.
 version: 2
 updates:
   - package-ecosystem: npm

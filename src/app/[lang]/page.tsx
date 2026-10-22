@@ -9,7 +9,8 @@ import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { getAutoNews } from "@/content/auto-news";
 import { getLatestNews, getLocalizedNews } from "@/content/news";
-import { countryLabel, getOpenStages, kindLabel, stageCountrySummary } from "@/content/stages";
+import { getOpenStages, kindLabel, stageCountrySummary } from "@/content/stages";
+import { placeLabel } from "./stages/shared";
 import { siteConfig } from "@/config/site";
 import {
   getAllCategories,
@@ -386,35 +387,51 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             </span>
           </div>
           <ul className="divide-y divide-[color:var(--border)]">
-            {featuredStages.map((stage) => (
-              <li key={stage.id} className="flex flex-wrap items-baseline gap-x-2 gap-y-1 px-4 py-3">
-                <a
-                  href={stage.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="do-link py-1.5 text-sm font-semibold"
-                  aria-label={
-                    locale === "fr"
-                      ? `Voir l'offre : ${stage.role} chez ${stage.company}, ${stage.city}`
-                      : `View the offer: ${stage.role} at ${stage.company}, ${stage.city}`
-                  }
-                >
-                  {stage.role}
-                </a>
-                <span className="text-sm text-[color:var(--muted)]">
-                  — {stage.company} · {stage.city}, {countryLabel(stage.country, locale)} · {kindLabel(stage.kind, locale)}
-                </span>
-                {/* The rust accent existed in the palette and was used once in
-                    the whole codebase. A published closing date is the one thing
-                    on this page that is actually urgent, so it earns it. */}
-                {stage.deadline ? (
-                  <span className="text-xs font-semibold text-[color:var(--signal)]">
-                    {locale === "fr" ? "avant le " : "by "}
-                    {homeDateFmt.format(new Date(`${stage.deadline}T12:00:00Z`))}
+            {featuredStages.map((stage) => {
+              /*
+               * A missing city is absent here too, the way the board does it.
+               *
+               * city is optional -- Cohere lists its two internships as
+               * "Canada", remote, with no city -- and this row interpolated it
+               * raw. The visible line read "— Cohere · , Canada" and the link's
+               * accessible name ended ", undefined", which is what a screen
+               * reader would have said out loud. Those two rows sit mid-board
+               * today, so the home page escaped it only by which five listings
+               * the ordering happened to put first; the next import decides
+               * that, not us. placeLabel is the board's own handling, borrowed
+               * rather than copied, so the two cannot drift.
+               */
+              const place = placeLabel(stage, locale);
+              return (
+                <li key={stage.id} className="flex flex-wrap items-baseline gap-x-2 gap-y-1 px-4 py-3">
+                  <a
+                    href={stage.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="do-link py-1.5 text-sm font-semibold"
+                    aria-label={
+                      locale === "fr"
+                        ? `Voir l'offre : ${stage.role} chez ${stage.company}, ${place}`
+                        : `View the offer: ${stage.role} at ${stage.company}, ${place}`
+                    }
+                  >
+                    {stage.role}
+                  </a>
+                  <span className="text-sm text-[color:var(--muted)]">
+                    — {stage.company} · {place} · {kindLabel(stage.kind, locale)}
                   </span>
-                ) : null}
-              </li>
-            ))}
+                  {/* The rust accent existed in the palette and was used once in
+                      the whole codebase. A published closing date is the one thing
+                      on this page that is actually urgent, so it earns it. */}
+                  {stage.deadline ? (
+                    <span className="text-xs font-semibold text-[color:var(--signal)]">
+                      {locale === "fr" ? "avant le " : "by "}
+                      {homeDateFmt.format(new Date(`${stage.deadline}T12:00:00Z`))}
+                    </span>
+                  ) : null}
+                </li>
+              );
+            })}
           </ul>
           <div className="px-4 py-3">
             <Link href={`/${locale}/stages`} className="do-link text-sm">

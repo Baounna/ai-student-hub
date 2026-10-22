@@ -9,6 +9,13 @@ concurrency:
 
 permissions:
   contents: write
+  # The autopilot runs the same pipeline with AGENT_PIPELINE_INCLUDE_ISSUES=1
+  # and had neither this scope nor a token, so its "Issue sync" step listed the
+  # queue, wrote the state file and exited 0. This is the run nobody watches --
+  # it commits and pushes to main by itself -- so a queue it reports as synced
+  # and never files is a backlog with no reader at all. Configured to file
+  # issues and unable to file issues is the worst of both.
+  issues: write
 
 jobs:
   autopilot:
@@ -46,4 +53,15 @@ jobs:
           AGENT_PIPELINE_INCLUDE_ISSUES: "1"
           AGENT_PIPELINE_INCLUDE_VERIFY: "1"
           AGENT_PIPELINE_INCLUDE_PUBLIC_CONTENT_VERIFY: "1"
+          # Made to work rather than switched off, for the same reason as the
+          # scope above: this is the unattended arm, so a queued P1 that is not
+          # filed is a P1 nobody will ever be told about. Stated explicitly
+          # rather than left to the script's default, because relying on that
+          # default is exactly how it came to pass while doing nothing. The sync
+          # is idempotent across the autopilot's retries -- it matches an open
+          # issue by title and its own state hash -- so a second attempt
+          # re-reports the same issues rather than filing duplicates.
+          AGENT_ISSUES_ENABLED: "1"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: npm run agent:autopilot

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { StageRow, stagesCopy } from "./shared";
-import { countriesWithPages, countryPagePath } from "@/content/stage-countries";
+import { countriesWithPages, countryPagePath, isSecurityRole } from "@/content/stage-countries";
 import { headers } from "next/headers";
 import { Newsletter } from "@/components/newsletter";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -199,9 +199,13 @@ export default async function StagesPage(props: {
   // Matched on the role text because the data has no field for it. Deliberately
   // broad: the claim is "security or cyber", and over-counting a borderline
   // role is a smaller error than telling a reader the list is general tech.
-  const securityCount = stages.filter((stage) =>
-    /cyber|s[\u00e9e]curit|\bSOC\b|\bSSI\b|pentest|forensic|\bIAM\b|\bCERT\b|vuln/i.test(stage.role)
-  ).length;
+  //
+  // The pattern lives in stage-countries.ts because the country pages decide
+  // from the same count whether their title may say "cybersecurity" at all.
+  // Two copies of it meant two answers to one question were a typo apart, and
+  // the one that drifted would have been the one deciding whether a page
+  // promises something it does not have.
+  const securityCount = stages.filter((stage) => isSecurityRole(stage.role)).length;
   const stale = isStagesListStale();
   // Derived from the entries, not from the file's mtime: see
   // getStagesLastCheckedAt. The two disagreed by a day and the page showed the

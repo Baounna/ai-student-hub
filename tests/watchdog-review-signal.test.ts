@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
+  crashReport,
   reviewVerdict
   // @ts-expect-error - plain .mjs script, no types
 } from "../scripts/watchdog.mjs";
@@ -76,5 +77,51 @@ describe("reviewVerdict", () => {
     for (const waiting of [true, false, null]) {
       expect(reviewVerdict(waiting, by).detail).not.toContain("\\u");
     }
+  });
+});
+
+/**
+ * The watchdog has to be able to report its own failure.
+ *
+ * The reporting step runs `set -euo pipefail` and then
+ * `BODY=$(cat watchdog-report.md)`. That file was written at the very end of
+ * the run, after every check — so a throw outside a per-check try left no
+ * file, `cat` failed, the step failed, and no issue was opened or updated at
+ * all. The one workflow that exists because "the failures went to GitHub
+ * notifications, which had long since become noise" fell silent precisely when
+ * it had broken worst.
+ *
+ * The one rule the wording must keep: a run that checked nothing may not imply
+ * the site is fine.
+ */
+describe("crashReport", () => {
+  const at = new Date("2026-10-22T21:15:00Z");
+
+  it("says the health is unknown, and never that it passed", () => {
+    const report = crashReport(new Error("boom"), at);
+    expect(report).toContain("did not finish");
+    expect(report).toContain("health is unknown");
+    expect(report).not.toMatch(/passed|healthy|all checks/i);
+  });
+
+  it("separates a broken watchdog from a broken site", () => {
+    expect(crashReport(new Error("boom"), at)).toContain("not a verdict on the site");
+  });
+
+  it("includes the error so it can be acted on", () => {
+    expect(crashReport(new Error("npm ci exploded"), at)).toContain("npm ci exploded");
+  });
+
+  it("survives being handed something that is not an Error", () => {
+    for (const thrown of [undefined, null, "a string", 42, { nope: true }]) {
+      expect(() => crashReport(thrown, at)).not.toThrow();
+      expect(crashReport(thrown, at)).toContain("did not finish");
+    }
+  });
+
+  it("caps a runaway stack so the issue body stays postable", () => {
+    const huge = new Error("x");
+    huge.stack = "y".repeat(10_000);
+    expect(crashReport(huge, at).length).toBeLessThan(2_600);
   });
 });

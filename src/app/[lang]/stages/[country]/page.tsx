@@ -13,6 +13,7 @@ import { countryLabel, isClosed, type Stage } from "@/content/stages";
 import {
   countriesWithPages,
   countryFromSlug,
+  countryPageBlurb,
   countryPagePath,
   countryPageTitle,
   countrySlug,
@@ -37,13 +38,6 @@ export function generateStaticParams() {
   );
 }
 
-function describe(code: string, count: number, locale: Locale): string {
-  const name = countryLabel(code, locale);
-  return locale === "fr"
-    ? `${count} stages, alternances et PFE en IA et cybersécurité ouverts aux étudiants, vérifiés chaque semaine. ${name}.`
-    : `${count} internships, apprenticeships and final-year projects in AI and cybersecurity, re-checked every week. ${name}.`;
-}
-
 export async function generateMetadata(props: {
   params: Promise<{ lang: string; country: string }>;
 }): Promise<Metadata> {
@@ -52,9 +46,19 @@ export async function generateMetadata(props: {
   const code = countryFromSlug(params.country);
   if (!code) return {};
   const locale: Locale = params.lang;
-  const count = (listingsByCountry().get(code) ?? []).length;
   const title = countryPageTitle(code, locale);
-  const description = describe(code, count, locale);
+  /*
+   * Counted here, not written out once for every country.
+   *
+   * This sentence promised "internships, apprenticeships and final-year
+   * projects" on every country page. The United States lists twelve
+   * internships and nothing else, Canada four, and Morocco has no
+   * apprenticeship -- so two of the three categories a reader was offered were
+   * empty, in the search result as well as on the page. countryPageBlurb names
+   * only the kinds that are there, and only promises cyber where there is
+   * some.
+   */
+  const description = countryPageBlurb(code, locale);
   const path = `/stages/${countrySlug(code)}`;
 
   return {
@@ -116,7 +120,7 @@ export default async function StagesByCountryPage(props: {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: countryPageTitle(code, locale),
-    description: describe(code, listings.length, locale),
+    description: countryPageBlurb(code, locale),
     inLanguage: locale,
     url: absoluteUrl(countryPagePath(code, locale)),
     numberOfItems: openListings.length,
@@ -145,7 +149,7 @@ export default async function StagesByCountryPage(props: {
       />
 
       <h1 className="font-display text-3xl font-bold text-[color:var(--text-strong)] md:text-4xl">{title}</h1>
-      <p className="mt-3 text-[color:var(--text)]">{describe(code, listings.length, locale)}</p>
+      <p className="mt-3 text-[color:var(--text)]">{countryPageBlurb(code, locale)}</p>
       <p className="provenance mt-2">{copy.openCount(open, listings.length)}</p>
 
       <p className="mt-4 text-sm">

@@ -385,7 +385,16 @@ function buildReport({ generatedAt, mode, repository, maxPerRun, sources, create
 
 async function run() {
   const generatedAt = new Date().toISOString();
-  const enabled = toBoolean(process.env.AGENT_ISSUES_ENABLED, true);
+  // AGENT_ISSUES_ENABLED has three readings, and collapsing them into two is
+  // what turned this step into a decoration. The flag defaults to true, so a
+  // workflow that passed AGENT_PIPELINE_INCLUDE_ISSUES and a MAX_PER_RUN but no
+  // token landed in "dry-run": it listed its candidates, wrote its state file
+  // and exited 0. Three pipelines did precisely that, so a person who dispatched
+  // one read "Issue sync  PASS", concluded the P1 queue had been filed and never
+  // opened the issue list. Nobody asking is still a dry-run. Being told yes and
+  // being unable to is a failure, and the end of this function now says so.
+  const requested = toBoolean(process.env.AGENT_ISSUES_ENABLED, null);
+  const enabled = requested !== false;
   const maxPerRun = Math.max(0, Math.min(toInteger(process.env.AGENT_ISSUES_MAX_PER_RUN, 3), 20));
   const token = (process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "").trim();
   const repository = (process.env.GITHUB_REPOSITORY || "").trim();
@@ -589,6 +598,26 @@ async function run() {
 
   if (errors.length && mode === "enabled") {
     process.exitCode = 1;
+  }
+
+  // "Mode: dry-run" was the only trace of this, one line among seven, and it
+  // was read as normal. Name the variable that is missing and say what it cost
+  // this run, so the degradation is legible in the step log instead of being
+  // something a reader has to already suspect.
+  if (mode === "dry-run") {
+    const missing = [!token && "GITHUB_TOKEN", !repository && "GITHUB_REPOSITORY"].filter(Boolean);
+    console.error(
+      `Issue sync could not reach GitHub: ${missing.join(" and ")} ${missing.length > 1 ? "are" : "is"} not set, ` +
+        `so ${queuedActions.length} queued action(s) were listed here and nothing was filed.`
+    );
+
+    // Only a run that was explicitly told to file issues fails. A local
+    // `npm run agent:issues` with no token never asked for any and still wants
+    // its report, and failing that would just teach people to ignore this too.
+    if (requested === true) {
+      console.error("AGENT_ISSUES_ENABLED asked for issues. Grant the job `issues: write` and pass GITHUB_TOKEN and GITHUB_REPOSITORY, or set AGENT_ISSUES_ENABLED=0 and mean it.");
+      process.exitCode = 1;
+    }
   }
 }
 

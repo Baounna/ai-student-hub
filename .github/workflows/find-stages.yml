@@ -73,11 +73,31 @@ jobs:
         run: |
           set -o pipefail
           node scripts/find-stages.mjs --discover --write 2>&1 | tee "$RUNNER_TEMP/find.log"
-          count=$(node -e "
+          # `candidates` in that file is the whole picked list, and --write does
+          # not remove the rows it placed -- it only stamps addedToBoard on them.
+          # So this counted work already done: the issue announced "N new
+          # posting(s) ... are not on the board yet" with N including the rows the
+          # same run had just added, and the one candidate actually waiting for a
+          # person sat buried in a list of finished work. A number a reader cannot
+          # act on is how the review file stopped being read.
+          #
+          # What is genuinely waiting is what this run would not place: a country
+          # it does not serve, or a link that did not survive being fetched.
+          pending=$(node -e "
             const d = require('./docs/agent/stage-candidates.json');
-            console.log(d.candidates.length);
+            const rows = Array.isArray(d.candidates) ? d.candidates : [];
+            console.log(rows.filter((c) => !c.addedToBoard).length);
           ")
-          echo "count=$count" >> "$GITHUB_OUTPUT"
+          echo "pending=$pending" >> "$GITHUB_OUTPUT"
+          # Written last, and only on the path where discovery finished and the
+          # review file parsed. The close step below needs proof that this step
+          # ran rather than the absence of a count: every output of a step that
+          # died in `npm ci`, or in the script, is empty, and empty satisfies any
+          # `!= something` test. check-stages.yml's close step was exactly that
+          # shape and closed a live request on a run that verified nothing --
+          # destroying the only human-actionable state the workflow produces and
+          # then telling the human the opposite of the truth.
+          echo "find_ran=true" >> "$GITHUB_OUTPUT"
 
       # The agent only ever writes under docs/agent. Staging that path rather
       # than -A is what stops a stray file riding along, which has happened
@@ -111,14 +131,39 @@ jobs:
       # One issue, reopened and updated — the same reason the watchdog and the
       # link check work that way. A stream of alerts is how the last outage
       # stayed invisible for eighty days.
-      - name: Open or update the review issue
-        if: always() && steps.find.outputs.count != '0' && steps.find.outputs.count != ''
+      #
+      # Opened when candidates are waiting for a person, CLOSED when none are.
+      # Only the opening half existed here: `gh issue close` lived in
+      # watchdog.yml and check-stages.yml and nowhere else, so a run that found
+      # nothing to hand over simply skipped the step and the issue survived
+      # carrying last week's comment. A reader opening it a month later could not
+      # tell a live request from one somebody had already worked, and every
+      # comment on it looks current. That is the always-on light the watchdog's
+      # review line was fixed for, in a third place.
+      - name: Close the review issue when nothing is waiting for a person
+        if: always() && steps.find.outputs.find_ran == 'true' && steps.find.outputs.pending == '0'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TITLE="Internship candidates waiting for review"
-          BODY=$(printf '%s new posting(s) matched internship + AI/cyber and are not on the board yet.\n\nFull list with ready-to-paste commands: [docs/agent/stage-candidates.md](../blob/main/docs/agent/stage-candidates.md)\n\n**Read each page before adding it.** The link has been fetched and answered; whether the role is what its title says is the judgement no fetch makes, and it is why the board is worth reading.\n\n```\n%s\n```\n' \
-            "${{ steps.find.outputs.count }}" "$(tail -n 20 "$RUNNER_TEMP/find.log" | tr -d '`')")
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" \
+              --body "Nothing is waiting any more: this run left no candidate for a person to place — anything it found it could verify and add to the board itself. Closing automatically."
+            gh issue close "$EXISTING"
+            echo "Closed review issue #$EXISTING."
+          else
+            echo "No candidate is waiting and no issue is open."
+          fi
+
+      - name: Open or update the review issue
+        if: always() && steps.find.outputs.pending != '0' && steps.find.outputs.pending != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="Internship candidates waiting for review"
+          BODY=$(printf '%s posting(s) matched internship + AI/cyber and are waiting for a person to place. These are the ones this run would NOT add by itself: the country it advertises is one we do not serve, or its link did not survive being fetched. Anything the run could verify and place is already on the board and is not counted here.\n\nFull list with ready-to-paste commands: [docs/agent/stage-candidates.md](../blob/main/docs/agent/stage-candidates.md)\n\n**Read each page before adding it.** The link has been fetched and answered; whether the role is what its title says is the judgement no fetch makes, and it is why the board is worth reading.\n\n```\n%s\n```\n' \
+            "${{ steps.find.outputs.pending }}" "$(tail -n 20 "$RUNNER_TEMP/find.log" | tr -d '`')")
           EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
           if [ -n "$EXISTING" ]; then
             gh issue comment "$EXISTING" --body "$BODY"

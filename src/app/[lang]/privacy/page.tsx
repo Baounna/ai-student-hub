@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ogImageUrl } from "@/lib/seo";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
+import { isGa4Enabled } from "@/lib/runtime-config";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 
@@ -39,6 +40,24 @@ export default async function PrivacyPage(props: { params: Promise<{ lang: strin
   if (!isLocale(params.lang)) return null;
   const locale: Locale = params.lang;
   const fr = locale === "fr";
+  /*
+   * Read, not asserted.
+   *
+   * This page stated flatly that the site does not use Google Analytics, and
+   * called its analytics cookieless in the legal-basis paragraph. Both were
+   * true only because nobody had set ANALYTICS_MODE=ga4 in the Vercel
+   * dashboard: the root layout injects googletagmanager.com/gtag/js the moment
+   * that variable and a valid measurement id are both present. One click, and
+   * the privacy policy of a site whose whole claim is honest sourcing would be
+   * telling a reader in France and Morocco that a tracker on every page of it
+   * does not exist -- and nothing in the deploy would have flagged it, because
+   * the sentence was a string.
+   *
+   * Same condition the layout uses, from the same function, so the page cannot
+   * say one thing while the <head> does another. hasPaidLinks in
+   * src/config/site.ts is the precedent.
+   */
+  const ga4 = isGa4Enabled();
 
   return (
     <section className="page-shell max-w-5xl py-10 md:py-14">
@@ -117,8 +136,12 @@ export default async function PrivacyPage(props: { params: Promise<{ lang: strin
           </ul>
           <p className="mt-3 text-sm leading-7 text-[color:var(--muted)]">
             {fr
-              ? "Les polices de caractères sont servies depuis ce site, pas depuis un CDN externe : aucune requête vers Google Fonts. Aucun cookie publicitaire n'est déposé, et le site n'utilise pas Google Analytics."
-              : "Fonts are served from this site, not an external CDN: no request reaches Google Fonts. No advertising cookie is set, and the site does not use Google Analytics."}
+              ? ga4
+                ? "Les polices de caractères sont servies depuis ce site, pas depuis un CDN externe : aucune requête vers Google Fonts. Aucun cookie publicitaire n'est déposé. Google Analytics est en revanche chargé sur chaque page : Google reçoit votre visite et dépose ses propres cookies, votre adresse IP étant anonymisée."
+                : "Les polices de caractères sont servies depuis ce site, pas depuis un CDN externe : aucune requête vers Google Fonts. Aucun cookie publicitaire n'est déposé, et le site n'utilise pas Google Analytics."
+              : ga4
+                ? "Fonts are served from this site, not an external CDN: no request reaches Google Fonts. No advertising cookie is set. Google Analytics, however, is loaded on every page: Google receives your visit and sets its own cookies, with your IP address anonymised."
+                : "Fonts are served from this site, not an external CDN: no request reaches Google Fonts. No advertising cookie is set, and the site does not use Google Analytics."}
           </p>
         </section>
 
@@ -128,8 +151,12 @@ export default async function PrivacyPage(props: { params: Promise<{ lang: strin
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
             {fr
-              ? "Votre email reste chez Kit tant que vous êtes inscrit. Vous désabonner le retire de la liste, et vous pouvez demander sa suppression complète à l'adresse ci-dessous. La base légale est votre consentement pour la newsletter, et l'intérêt légitime pour la protection anti-robots et la mesure d'audience sans cookie."
-              : "Your email stays with Kit for as long as you are subscribed. Unsubscribing removes you from the list, and you can ask for full deletion at the address below. The legal basis is your consent for the newsletter, and legitimate interest for bot protection and cookieless analytics."}
+              ? ga4
+                ? "Votre email reste chez Kit tant que vous êtes inscrit. Vous désabonner le retire de la liste, et vous pouvez demander sa suppression complète à l'adresse ci-dessous. La base légale est votre consentement pour la newsletter, et l'intérêt légitime pour la protection anti-robots et la mesure d'audience sans cookie de l'hébergeur. Google Analytics, lui, est chargé en ce moment et dépose des cookies : il est nommé plus haut plutôt que laissé à découvrir."
+                : "Votre email reste chez Kit tant que vous êtes inscrit. Vous désabonner le retire de la liste, et vous pouvez demander sa suppression complète à l'adresse ci-dessous. La base légale est votre consentement pour la newsletter, et l'intérêt légitime pour la protection anti-robots et la mesure d'audience sans cookie."
+              : ga4
+                ? "Your email stays with Kit for as long as you are subscribed. Unsubscribing removes you from the list, and you can ask for full deletion at the address below. The legal basis is your consent for the newsletter, and legitimate interest for bot protection and the host's cookieless page-view count. Google Analytics is loaded at the moment and does set cookies: it is named above rather than left for you to find."
+                : "Your email stays with Kit for as long as you are subscribed. Unsubscribing removes you from the list, and you can ask for full deletion at the address below. The legal basis is your consent for the newsletter, and legitimate interest for bot protection and cookieless analytics."}
           </p>
         </section>
 

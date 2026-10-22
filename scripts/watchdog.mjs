@@ -514,6 +514,27 @@ const PARKED_WORKFLOWS = new Set([
  * waiting". Only a definite no is healthy, because reporting an unknown as
  * healthy is how a real request goes unseen.
  */
+/**
+ * The report to leave when the watchdog itself is what failed.
+ *
+ * Pure and exported so the wording can be held to one rule: it must not say the
+ * site is healthy, because at this point nothing is known about the site. The
+ * run that produces this has checked nothing.
+ */
+export function crashReport(error, now = new Date()) {
+  return [
+    "## 🔴 The health check did not finish",
+    "",
+    `Tried at ${now.toISOString().replace("T", " ").slice(0, 16)} UTC and stopped on an error, so`,
+    "**nothing below was checked and the site's health is unknown.** This is a",
+    "fault in the watchdog, not a verdict on the site.",
+    "",
+    "```",
+    String(error?.stack || error).slice(0, 2000),
+    "```"
+  ].join("\n");
+}
+
 export function reviewVerdict(waiting, byDesign = []) {
   /*
    * The run can succeed and still have left a request open, so there is often
@@ -868,8 +889,42 @@ async function run() {
 const invokedDirectly = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 
 if (invokedDirectly) {
-  run().catch((error) => {
+  run().catch(async (error) => {
     console.error(error);
     process.exitCode = 1;
+
+    /**
+     * Leave a report even when the watchdog itself is what broke.
+     *
+     * The reporting step runs `set -euo pipefail` and then
+     * `BODY=$(cat watchdog-report.md)`. That file is written at the very end of
+     * run(), after every check -- so a throw outside a per-check try, or the
+     * job being killed, left no file, `cat` failed, the step failed, and NO
+     * issue was opened or updated. The one workflow that exists because "the
+     * failures went to GitHub notifications, which had long since become
+     * noise" fell back to exactly those notifications precisely when it had
+     * broken worst, and said nothing.
+     *
+     * So the catch writes the smallest honest report: that the watchdog did not
+     * finish, and why. It cannot say the site is healthy, because it does not
+     * know -- and that is the thing worth telling someone.
+     */
+    const report = crashReport(error);
+
+    // Best effort by definition: this runs because something already failed, so
+    // every write here is wrapped and none of them may throw again.
+    try {
+      await fs.writeFile(path.join(process.cwd(), "watchdog-report.md"), `${report}\n`, "utf8");
+    } catch {}
+    try {
+      if (process.env.GITHUB_STEP_SUMMARY) {
+        await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `${report}\n`, "utf8");
+      }
+    } catch {}
+    try {
+      if (process.env.GITHUB_OUTPUT) {
+        await fs.appendFile(process.env.GITHUB_OUTPUT, "healthy=false\nneeds_lockfile_repair=false\n", "utf8");
+      }
+    } catch {}
   });
 }

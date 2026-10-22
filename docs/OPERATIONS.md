@@ -215,6 +215,54 @@ npm run auto:news
 npm run agent:blog
 ```
 
+## Dependencies and the lockfile
+
+**Never regenerate `package-lock.json` on macOS.** It will break `npm ci` in
+every workflow, and the failure does not look like a lockfile problem.
+
+npm records optional dependencies only for the platform that resolves them.
+This project is written on macOS arm64 and built on linux x64, and the two
+prune each other's `sharp` and resolver binaries. A lockfile written here drops
+77 entries — every darwin, musl and arm binary in the tree — and CI fails on
+`npm ci` with a message about an unrelated package. This was learned the
+expensive way: CI went red on 25 September and stayed red for 32 runs across
+four commits before the cause was found (commit `d3020e3` has the measurements).
+
+Measured, from that commit:
+
+| lockfile written by | result |
+| --- | --- |
+| macOS npm 11 | fails on node:20, node:22 and node:24 |
+| linux npm 10 | linux passes, macOS `npm ci` fails |
+| linux npm 11 | everything passes, both platforms |
+
+So the lockfile must come from linux with npm 11. Two ways to get one:
+
+**Let Dependabot do it.** Its PRs are generated on linux, which is why merging
+them is safe and why they are the normal route for any version change. Weekly
+PRs for minor and patch, majors one per PR. Dependabot alerts and automated
+security fixes are enabled, so a published advisory opens its own PR within
+hours rather than waiting for the Monday batch — that was off until 22 October
+2026, and the `dependabot.yml` comment calling Dependabot "the only automated
+route to a security patch" was aspirational until it was switched on.
+
+**Or do it in a container.** Needs Docker running:
+
+```bash
+# in a scratch directory holding only package.json and package-lock.json
+docker run --rm -v "$PWD":/w -w /w node:24 npm install --no-audit --no-fund
+```
+
+Copy the resulting `package-lock.json` back. Install into a copy rather than the
+repo: a container writing `node_modules` leaves linux binaries where macOS
+expects its own, which breaks the local test runner until `rm -rf node_modules
+&& npm ci`.
+
+Three things that were tried and do not work: declaring the `@emnapi` packages
+as explicit `optionalDependencies`, any npm flag, and falling back to
+`npm install` when `npm ci` fails — the last was correctly refused as weakening
+a CI gate, since a strict check is the entire point of committing a lockfile.
+
 ## Environment Variables
 
 Copy `.env.example` to `.env.local` and fill your real production values.

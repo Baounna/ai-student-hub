@@ -49,10 +49,15 @@ describe("the country boards", () => {
     // speaks their language read the page.
     const fr = countriesWithPages().map((c) => countryPageTitle(c, "fr"));
     const en = countriesWithPages().map((c) => countryPageTitle(c, "en"));
-    expect(fr).toContain("Stages IA et cybersécurité au Maroc");
+    // Asserted on the tail, because the subject half of the title now follows
+    // the country's own mix: it promised "AI and cybersecurity" over a Canadian
+    // list with no cyber role in it. See CYBER_TITLE_MIN_SHARE, and
+    // tests/country-claims.test.ts for the claim itself. This test is about the
+    // preposition and the article.
+    expect(fr.some((title) => title.endsWith("au Maroc"))).toBe(true);
     expect(fr.join(" ")).not.toMatch(/en (Maroc|Canada|États-Unis|Pays-Bas)/);
     expect(en.join(" ")).not.toMatch(/in (United States|United Kingdom|Netherlands)\b/);
-    expect(en).toContain("AI and cybersecurity internships in the United States");
+    expect(en.some((title) => title.endsWith("in the United States"))).toBe(true);
   });
 
   it("covers every listing it claims, and claims every listing it covers", () => {

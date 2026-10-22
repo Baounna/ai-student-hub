@@ -41,9 +41,57 @@ jobs:
           AGENT_PIPELINE_INCLUDE_PUBLIC_CONTENT_VERIFY: "1"
           AGENT_PIPELINE_ISSUES_MAX_PER_RUN: "3"
           AGENT_PIPELINE_WRITE_REPORTS: "1"
+          # Honestly off, and this is the one of the three where that is the
+          # right answer. AGENT_ISSUES_ENABLED defaults to true, so the sync ran
+          # with no token, degraded to a dry-run and exited 0 -- the step read as
+          # "the queue was filed" while nothing had been. This workflow's whole
+          # contract is that it proposes and never acts: it opens a PR instead of
+          # pushing, and the permissions block at the top deliberately grants no
+          # `issues: write`. Filing issues from here would be the one side effect
+          # that escapes the review the PR exists for, and it would do it before
+          # anybody has read the diff. The queue still arrives, in the PR's
+          # docs/agent/issues-report.md, where it can be read next to the content
+          # that produced it. Saying 0 means the report says "disabled" rather
+          # than "dry-run", which is the difference between a decision and an
+          # accident.
+          AGENT_ISSUES_ENABLED: "0"
         run: npm run agent:all
 
       - name: Run baseline quality checks
+        # verify:affiliates reads AFFILIATE_1..5_{NAME,URL,PLACEMENT} from
+        # .env.local or .env merged over process.env, and neither of those files
+        # is tracked. On a runner it therefore found five empty slots, printed
+        # "No valid affiliate links found" plus four missing placements, and
+        # exited 1. Under `bash -e` that killed the step on its third line, so
+        # verify:agents never ran and the "Create Pull Request" step was skipped
+        # because the job had failed -- which means the only step that produces
+        # anything a person can look at never ran. This workflow has never once
+        # opened its PR, and the failure read as an affiliate problem rather than
+        # as a missing config block.
+        #
+        # scripts/autopilot-agent.mjs already solved this in buildQualityEnv();
+        # these are the same throwaway rows it falls back to, chosen so that all
+        # four placements the checker requires (home, resources, blog,
+        # comparison) are covered. They carry no referral ID on purpose: the
+        # checker treats "well-formed but cannot earn" as fine while the site
+        # says it earns nothing, so this verifies the wiring without inventing a
+        # commercial relationship the site does not have.
+        env:
+          AFFILIATE_1_NAME: DigitalOcean
+          AFFILIATE_1_URL: https://www.digitalocean.com/
+          AFFILIATE_1_PLACEMENT: home/resources
+          AFFILIATE_2_NAME: Coursera
+          AFFILIATE_2_URL: https://www.coursera.org/
+          AFFILIATE_2_PLACEMENT: resources/blog
+          AFFILIATE_3_NAME: Notion
+          AFFILIATE_3_URL: https://www.notion.so/
+          AFFILIATE_3_PLACEMENT: blog/resources
+          AFFILIATE_4_NAME: GitHub Student Pack
+          AFFILIATE_4_URL: https://education.github.com/pack
+          AFFILIATE_4_PLACEMENT: comparison/blog
+          AFFILIATE_5_NAME: Hugging Face
+          AFFILIATE_5_URL: https://huggingface.co/
+          AFFILIATE_5_PLACEMENT: home/comparison
         run: |
           npm run lint
           npm run verify:public-content

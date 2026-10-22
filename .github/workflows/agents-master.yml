@@ -20,6 +20,13 @@ concurrency:
 
 permissions:
   contents: write
+  # The pipeline's "Issue sync" step runs in three of the four profiles here and
+  # had neither this scope nor a token, so it degraded to a dry-run and exited
+  # 0. Somebody dispatches `daily`, watches "Issue sync  PASS" go green and
+  # concludes the P1 queue is in the issue list; it is in a report file on main
+  # that nobody opens. Configured to file issues and unable to file issues is
+  # the worst of both.
+  issues: write
 
 jobs:
   run-agents:
@@ -107,6 +114,17 @@ jobs:
           echo "Resolved mode: $MODE"
 
       - name: Run unified agent pipeline
+        # Made to work rather than switched off: this workflow exists only on
+        # workflow_dispatch, so every run of it is a person asking for the
+        # queue to be filed, and the three profiles that enable issue sync are
+        # the ones they reach for when they want work handed to them. The flag
+        # is explicit now even though the script defaults to true, because the
+        # default is what let this read as enabled while being a dry-run; the
+        # sync fails loudly if the token or the scope above goes missing again.
+        env:
+          AGENT_ISSUES_ENABLED: "1"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: npm run agent:all
 
       # The feeds below are rendered by the site, and until now nothing checked
