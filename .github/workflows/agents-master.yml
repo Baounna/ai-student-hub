@@ -109,6 +109,31 @@ jobs:
       - name: Run unified agent pipeline
         run: npm run agent:all
 
+      # The feeds below are rendered by the site, and until now nothing checked
+      # them before they shipped.
+      #
+      # GitHub does not trigger workflows from a push made with the default
+      # GITHUB_TOKEN, so CI never runs on a commit this job pushes -- it is not
+      # a second pair of eyes arriving later, it is no eyes at all. check-stages
+      # and find-stages both run this gate before committing for that reason;
+      # the content agents did not, and they push twice a day.
+      #
+      # The env is step-level and throwaway. next build runs with
+      # NODE_ENV=production, which trips src/lib/env-validation.ts; the real
+      # values live in the deployment environment and are not needed to compile.
+      # Keeping it on the step rather than the workflow means `ci.invalid` cannot
+      # leak into the agents that actually fetch things.
+      - name: Verify the site still builds with the new content
+        run: |
+          npm run typecheck
+          npm test
+          npm run build
+        env:
+          SITE_URL: https://ci.invalid
+          NEXT_PUBLIC_SITE_URL: https://ci.invalid
+          NEXT_PUBLIC_CONTACT_EMAIL: ci@ci.invalid
+          NEXT_PUBLIC_LEGAL_NAME: CI Build
+
       - name: Commit and push updates
         shell: bash
         run: |
