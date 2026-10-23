@@ -1,7 +1,102 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T11:34:27.809Z",
+  "updatedAt": "2026-10-23T21:22:03.530Z",
   "items": [
+    {
+      "slug": "20261023-origin-range-requests-serving-large-files-without-range-request--94660a1a",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/origin-range-requests/",
+      "publishedAt": "2026-10-23T18:22:59.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Origin Range Requests: Serving large files without range-request tuning",
+          "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half."
+        },
+        "fr": {
+          "title": "Origin Range Requests: Serving large files without range-request tuning",
+          "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half."
+        }
+      }
+    },
+    {
+      "slug": "20261023-multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-bc7694eb",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+      "publishedAt": "2026-10-23T17:48:54.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide",
+          "summary": "Multi-Turn Reinforcement Learning (MTRL) on Amazon SageMaker AI trains models on the outcome of a whole multi-step task rather than labeled steps. This hands-on guide walks the full pipeline using Wordle: deploying the agent and…"
+        },
+        "fr": {
+          "title": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide",
+          "summary": "Multi-Turn Reinforcement Learning (MTRL) on Amazon SageMaker AI trains models on the outcome of a whole multi-step task rather than labeled steps. This hands-on guide walks the full pipeline using Wordle: deploying the agent and…"
+        }
+      }
+    },
+    {
+      "slug": "20261023-scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-8fc62fca",
+      "topic": "AI Performance",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/",
+      "publishedAt": "2026-10-23T17:27:55.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2",
+          "summary": "The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and..."
+        },
+        "fr": {
+          "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2",
+          "summary": "The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and..."
+        }
+      }
+    },
+    {
+      "slug": "20261023-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-u-298c8de0",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "publishedAt": "2026-10-23T17:00:00.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+          "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
+        },
+        "fr": {
+          "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+          "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
+        }
+      }
+    },
+    {
+      "slug": "20261023-litpivot-developing-research-ideas-through-dynamic-contextualiza-d5dfb55b",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/litpivot",
+      "publishedAt": "2026-10-23T16:15:50.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+          "summary": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape"
+        },
+        "fr": {
+          "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+          "summary": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape"
+        }
+      }
+    },
     {
       "slug": "20261023-open-call-for-guest-investigators-in-the-life-sciences-98d45c75",
       "topic": "AI Systems",
@@ -18,63 +113,6 @@
         "fr": {
           "title": "Open call for guest investigators in the life sciences",
           "summary": "Open call for guest investigators in the life sciences"
-        }
-      }
-    },
-    {
-      "slug": "20261023-openai-and-polands-nask-partner-to-advance-ai-safety-and-securit-15c1f8ef",
-      "topic": "Security & Standards",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "discoveredAt": "2026-10-23T11:34:27.809Z",
-      "locales": {
-        "en": {
-          "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
-          "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem."
-        },
-        "fr": {
-          "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
-          "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem."
-        }
-      }
-    },
-    {
-      "slug": "20261022-turning-database-grading-into-rl-rewards-post-training-agents-wi-95eb6975",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-      "publishedAt": "2026-10-22T22:24:34.000Z",
-      "discoveredAt": "2026-10-23T11:34:27.809Z",
-      "locales": {
-        "en": {
-          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-          "summary": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox"
-        },
-        "fr": {
-          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-          "summary": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox"
-        }
-      }
-    },
-    {
-      "slug": "20261022-amazon-polly-delivers-a-major-upgrade-to-its-generative-engine-bb00f309",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
-      "publishedAt": "2026-10-22T18:06:35.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "Amazon Polly delivers a major upgrade to its Generative engine",
-          "summary": "The Amazon Polly Generative engine gets a major upgrade: more expressive, more accurate speech with low latency, plus 14 new voices across 9 locales and general availability of Hindi and Finnish. This drop-in upgrade requires no…"
-        },
-        "fr": {
-          "title": "Amazon Polly delivers a major upgrade to its Generative engine",
-          "summary": "The Amazon Polly Generative engine gets a major upgrade: more expressive, more accurate speech with low latency, plus 14 new voices across 9 locales and general availability of Hindi and Finnish. This drop-in upgrade requires no…"
         }
       }
     },
@@ -117,25 +155,6 @@
       }
     },
     {
-      "slug": "20261022-how-to-read-data-into-gpu-memory-in-python-with-nvidia-gpudirect-8a0f68da",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-read-data-into-gpu-memory-in-python-with-nvidia-gpudirect-storage/",
-      "publishedAt": "2026-10-22T16:39:12.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "How to Read Data into GPU Memory in Python with NVIDIA GPUDirect Storage",
-          "summary": "GPU applications are processing ever-growing datasets with increasingly powerful accelerators. According to the 2025 Stanford AI Index, compute for notable AI..."
-        },
-        "fr": {
-          "title": "How to Read Data into GPU Memory in Python with NVIDIA GPUDirect Storage",
-          "summary": "GPU applications are processing ever-growing datasets with increasingly powerful accelerators. According to the 2025 Stanford AI Index, compute for notable AI..."
-        }
-      }
-    },
-    {
       "slug": "20261022-beyond-tree-cover-mapping-the-worlds-forest-types-e66e9796",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -151,25 +170,6 @@
         "fr": {
           "title": "Beyond tree cover: mapping the world’s forest types",
           "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types."
-        }
-      }
-    },
-    {
-      "slug": "20261022-localizing-compliance-at-scale-achieving-south-koreas-isms-certi-9873cb1e",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/k-isms/",
-      "publishedAt": "2026-10-22T13:00:00.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
-          "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program."
-        },
-        "fr": {
-          "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
-          "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program."
         }
       }
     },
@@ -364,6 +364,101 @@
       }
     },
     {
+      "slug": "20261023-bringing-post-quantum-cryptography-to-geographically-fenced-key--c3aa2fd8",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
+      "publishedAt": "2026-10-23T18:06:56.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Bringing post-quantum cryptography to geographically fenced key management",
+          "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quan…"
+        },
+        "fr": {
+          "title": "Bringing post-quantum cryptography to geographically fenced key management",
+          "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quan…"
+        }
+      }
+    },
+    {
+      "slug": "20261023-orchestrating-sagemaker-ai-endpoint-auto-scaling-with-aws-cdk-1c58a8d6",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/orchestrating-sagemaker-ai-endpoint-auto-scaling-with-aws-cdk/",
+      "publishedAt": "2026-10-23T16:30:10.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Orchestrating SageMaker AI endpoint auto scaling with AWS CDK",
+          "summary": "Updating a SageMaker AI endpoint that has Application Auto Scaling registered makes AWS CloudFormation and AWS CDK deployments fail. This post shows how to build a reusable AWS CDK construct with CloudFormation custom resources t…"
+        },
+        "fr": {
+          "title": "Orchestrating SageMaker AI endpoint auto scaling with AWS CDK",
+          "summary": "Updating a SageMaker AI endpoint that has Application Auto Scaling registered makes AWS CloudFormation and AWS CDK deployments fail. This post shows how to build a reusable AWS CDK construct with CloudFormation custom resources t…"
+        }
+      }
+    },
+    {
+      "slug": "20261023-scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-7f87dd9c",
+      "topic": "AI Performance",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+      "publishedAt": "2026-10-23T17:27:38.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1",
+          "summary": "Deploying a trained neural network involves more than translating each operator into a GPU kernel. It is a compilation problem with many legitimate answers. For..."
+        },
+        "fr": {
+          "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1",
+          "summary": "Deploying a trained neural network involves more than translating each operator into a GPU kernel. It is a compilation problem with many legitimate answers. For..."
+        }
+      }
+    },
+    {
+      "slug": "20261023-securing-our-frontier-model-training-environment-48e2274f",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "publishedAt": "2026-10-23T10:00:00.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Securing our frontier model training environment",
+          "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming."
+        },
+        "fr": {
+          "title": "Securing our frontier model training environment",
+          "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming."
+        }
+      }
+    },
+    {
+      "slug": "20261023-does-your-model-run-on-aws-trainium-look-it-up-64309091",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Does Your Model Run on AWS Trainium? Look It Up",
+          "summary": "Does Your Model Run on AWS Trainium? Look It Up"
+        },
+        "fr": {
+          "title": "Does Your Model Run on AWS Trainium? Look It Up",
+          "summary": "Does Your Model Run on AWS Trainium? Look It Up"
+        }
+      }
+    },
+    {
       "slug": "20261022-donating-agent-skills-to-the-agentic-ai-foundation-86405d6d",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -379,63 +474,6 @@
         "fr": {
           "title": "Donating Agent Skills to the Agentic AI Foundation",
           "summary": "Donating Agent Skills to the Agentic AI Foundation"
-        }
-      }
-    },
-    {
-      "slug": "20261022-build-more-responsive-apps-with-the-decisions-api-27825e30",
-      "topic": "Computer Science",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/decisions-api",
-      "publishedAt": "2026-10-22T19:00:00.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "Build more responsive apps with the Decisions API",
-          "summary": "Fast, focused, low-cost decisions for any application."
-        },
-        "fr": {
-          "title": "Build more responsive apps with the Decisions API",
-          "summary": "Fast, focused, low-cost decisions for any application."
-        }
-      }
-    },
-    {
-      "slug": "20261022-olmoearth-v13-state-of-the-art-embeddings-for-the-whole-planet-eaa0ebff",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-      "publishedAt": "2026-10-22T16:11:31.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
-          "summary": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet"
-        },
-        "fr": {
-          "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
-          "summary": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet"
-        }
-      }
-    },
-    {
-      "slug": "20261022-how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-man-ff227324",
-      "topic": "Computer Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
-      "publishedAt": "2026-10-22T18:01:53.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "How IskayPet unified corporate knowledge with Amazon Bedrock Managed Knowledge Bases",
-          "summary": "Learn how IskayPet, a leading pet care company in Iberia, built a multilingual corporate knowledge assistant on Amazon Bedrock Managed Knowledge Bases. The assistant answers employee questions across retail, veterinary, onboardin…"
-        },
-        "fr": {
-          "title": "How IskayPet unified corporate knowledge with Amazon Bedrock Managed Knowledge Bases",
-          "summary": "Learn how IskayPet, a leading pet care company in Iberia, built a multilingual corporate knowledge assistant on Amazon Bedrock Managed Knowledge Bases. The assistant answers employee questions across retail, veterinary, onboardin…"
         }
       }
     },
@@ -478,25 +516,6 @@
       }
     },
     {
-      "slug": "20261021-scaling-decision-optimization-to-100-million-variables-and-beyon-51c57bf2",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/scaling-decision-optimization-to-100-million-variables-and-beyond-with-mpdlp-in-nvidia-cuopt/",
-      "publishedAt": "2026-10-21T23:58:06.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "Scaling Decision Optimization to 100 Million Variables and Beyond with mPDLP in NVIDIA cuOpt",
-          "summary": "Supply chain problems are expanding across more SKUs, lanes, and constraints than ever before, while energy grids are balancing more distributed sources in real..."
-        },
-        "fr": {
-          "title": "Scaling Decision Optimization to 100 Million Variables and Beyond with mPDLP in NVIDIA cuOpt",
-          "summary": "Supply chain problems are expanding across more SKUs, lanes, and constraints than ever before, while energy grids are balancing more distributed sources in real..."
-        }
-      }
-    },
-    {
       "slug": "20261015-accelerating-the-search-for-antimicrobial-peptides-with-google-a-996b33c0",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -512,25 +531,6 @@
         "fr": {
           "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
           "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science."
-        }
-      }
-    },
-    {
-      "slug": "20261021-introducing-full-transaction-detection-for-cloudflare-waf-ad57fe47",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/full-transaction-waf/",
-      "publishedAt": "2026-10-21T14:10:42.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Introducing full transaction detection for Cloudflare WAF",
-          "summary": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that request-only ins…"
-        },
-        "fr": {
-          "title": "Introducing full transaction detection for Cloudflare WAF",
-          "summary": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that request-only ins…"
         }
       }
     },
@@ -725,6 +725,101 @@
       }
     },
     {
+      "slug": "20261022-localizing-compliance-at-scale-achieving-south-koreas-isms-certi-9873cb1e",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/k-isms/",
+      "publishedAt": "2026-10-22T13:00:00.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+          "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program."
+        },
+        "fr": {
+          "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+          "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program."
+        }
+      }
+    },
+    {
+      "slug": "20261023-visualize-points-and-routes-with-geojson-in-amazon-quick-sight-l-7b49b44d",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/visualize-points-and-routes-with-geojson-in-amazon-quick-sight-layer-maps/",
+      "publishedAt": "2026-10-23T16:24:55.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Visualize points and routes with GeoJSON in Amazon Quick Sight layer maps",
+          "summary": "Amazon Quick Sight layer maps now support Point and LineString geometry from the same GeoJSON workflow, so you can plot store locations and the routes between them. This post covers the dataset and GeoJSON structure layer maps re…"
+        },
+        "fr": {
+          "title": "Visualize points and routes with GeoJSON in Amazon Quick Sight layer maps",
+          "summary": "Amazon Quick Sight layer maps now support Point and LineString geometry from the same GeoJSON workflow, so you can plot store locations and the routes between them. This post covers the dataset and GeoJSON structure layer maps re…"
+        }
+      }
+    },
+    {
+      "slug": "20261023-using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simula-2bc7933d",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
+      "publishedAt": "2026-10-23T14:58:36.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
+          "summary": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions..."
+        },
+        "fr": {
+          "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
+          "summary": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions..."
+        }
+      }
+    },
+    {
+      "slug": "20261023-openai-and-polands-nask-partner-to-advance-ai-safety-and-securit-15c1f8ef",
+      "topic": "Security & Standards",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "discoveredAt": "2026-10-23T11:34:27.809Z",
+      "locales": {
+        "en": {
+          "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+          "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem."
+        },
+        "fr": {
+          "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+          "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem."
+        }
+      }
+    },
+    {
+      "slug": "20261022-turning-database-grading-into-rl-rewards-post-training-agents-wi-95eb6975",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "publishedAt": "2026-10-22T22:24:34.000Z",
+      "discoveredAt": "2026-10-23T11:34:27.809Z",
+      "locales": {
+        "en": {
+          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+          "summary": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox"
+        },
+        "fr": {
+          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+          "summary": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox"
+        }
+      }
+    },
+    {
       "slug": "20261021-physicist-christopher-stubbs-joins-anthropics-long-term-benefit--b12d9d8f",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -740,63 +835,6 @@
         "fr": {
           "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
           "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
-        }
-      }
-    },
-    {
-      "slug": "20261022-what-fde-means-at-openai-63c31ca5",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/forward-deployed-engineering-means",
-      "publishedAt": "2026-10-22T06:00:00.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "What FDE means at OpenAI",
-          "summary": "What forward deployed engineering means at OpenAI"
-        },
-        "fr": {
-          "title": "What FDE means at OpenAI",
-          "summary": "What forward deployed engineering means at OpenAI"
-        }
-      }
-    },
-    {
-      "slug": "20261022-ensemble-forecasting-with-ibm-granite-time-series-models-5d118fad",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
-      "publishedAt": "2026-10-22T07:51:31.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "Ensemble forecasting with IBM Granite time-series models",
-          "summary": "Ensemble forecasting with IBM Granite time-series models"
-        },
-        "fr": {
-          "title": "Ensemble forecasting with IBM Granite time-series models",
-          "summary": "Ensemble forecasting with IBM Granite time-series models"
-        }
-      }
-    },
-    {
-      "slug": "20261022-announcing-new-ways-to-customize-models-with-sagemaker-ai-withou-f70f2a2d",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
-      "publishedAt": "2026-10-22T18:00:04.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "Announcing new ways to customize models with SageMaker AI, without managing GPUs",
-          "summary": "Amazon SageMaker AI serverless model customization now includes training sessions, generally available today. You write and coordinate your own post-training loop (custom loss functions, reward signals, or multi-turn reinforcemen…"
-        },
-        "fr": {
-          "title": "Announcing new ways to customize models with SageMaker AI, without managing GPUs",
-          "summary": "Amazon SageMaker AI serverless model customization now includes training sessions, generally available today. You write and coordinate your own post-training loop (custom loss functions, reward signals, or multi-turn reinforcemen…"
         }
       }
     },
@@ -839,25 +877,6 @@
       }
     },
     {
-      "slug": "20261021-giga-scale-ai-and-the-ethernet-evolution-how-spectrum-x-ethernet-6d2b1182",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/giga-scale-ai-ethernet-evolution-spectrum-x-ethernet-rewrites-rules/",
-      "publishedAt": "2026-10-21T21:32:19.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Giga-Scale AI and the Ethernet Evolution: How Spectrum-X Ethernet Rewrites the Rules",
-          "summary": "The massive growth of generative AI has fundamentally altered data center design. As distributed model training scales to span hundreds of thousands of GPUs,..."
-        },
-        "fr": {
-          "title": "Giga-Scale AI and the Ethernet Evolution: How Spectrum-X Ethernet Rewrites the Rules",
-          "summary": "The massive growth of generative AI has fundamentally altered data center design. As distributed model training scales to span hundreds of thousands of GPUs,..."
-        }
-      }
-    },
-    {
       "slug": "20261014-google-deepmind-and-singapore-government-collaborate-to-build-fi-58e4191f",
       "topic": "AI Systems",
       "source": "DeepMind Blog",
@@ -873,25 +892,6 @@
         "fr": {
           "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
           "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress."
-        }
-      }
-    },
-    {
-      "slug": "20261021-cloudflare-deploys-protections-against-php2shell-vulnerability-daa5082a",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
-      "publishedAt": "2026-10-21T13:56:45.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare deploys protections against php2shell vulnerability",
-          "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed…"
-        },
-        "fr": {
-          "title": "Cloudflare deploys protections against php2shell vulnerability",
-          "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed…"
         }
       }
     },
@@ -1067,6 +1067,101 @@
       }
     },
     {
+      "slug": "20261021-introducing-full-transaction-detection-for-cloudflare-waf-ad57fe47",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/full-transaction-waf/",
+      "publishedAt": "2026-10-21T14:10:42.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "Introducing full transaction detection for Cloudflare WAF",
+          "summary": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that request-only ins…"
+        },
+        "fr": {
+          "title": "Introducing full transaction detection for Cloudflare WAF",
+          "summary": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that request-only ins…"
+        }
+      }
+    },
+    {
+      "slug": "20261023-how-bayer-crop-science-built-an-agentic-decision-engine-on-amazo-6fc2c0f1",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+      "publishedAt": "2026-10-23T16:21:36.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "How Bayer Crop Science built an agentic decision engine on Amazon Bedrock AgentCore with AWS Unified Operations",
+          "summary": "Bayer Crop Science built the Agentic Decision Engine (ADE), a multi-agent platform on Amazon Bedrock AgentCore that lets breeders, analysts, and researchers ask natural language questions about their analytics platform. This post…"
+        },
+        "fr": {
+          "title": "How Bayer Crop Science built an agentic decision engine on Amazon Bedrock AgentCore with AWS Unified Operations",
+          "summary": "Bayer Crop Science built the Agentic Decision Engine (ADE), a multi-agent platform on Amazon Bedrock AgentCore that lets breeders, analysts, and researchers ask natural language questions about their analytics platform. This post…"
+        }
+      }
+    },
+    {
+      "slug": "20261022-how-to-read-data-into-gpu-memory-in-python-with-nvidia-gpudirect-8a0f68da",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-to-read-data-into-gpu-memory-in-python-with-nvidia-gpudirect-storage/",
+      "publishedAt": "2026-10-22T16:39:12.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "How to Read Data into GPU Memory in Python with NVIDIA GPUDirect Storage",
+          "summary": "GPU applications are processing ever-growing datasets with increasingly powerful accelerators. According to the 2025 Stanford AI Index, compute for notable AI..."
+        },
+        "fr": {
+          "title": "How to Read Data into GPU Memory in Python with NVIDIA GPUDirect Storage",
+          "summary": "GPU applications are processing ever-growing datasets with increasingly powerful accelerators. According to the 2025 Stanford AI Index, compute for notable AI..."
+        }
+      }
+    },
+    {
+      "slug": "20261022-build-more-responsive-apps-with-the-decisions-api-27825e30",
+      "topic": "Computer Science",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/decisions-api",
+      "publishedAt": "2026-10-22T19:00:00.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "Build more responsive apps with the Decisions API",
+          "summary": "Fast, focused, low-cost decisions for any application."
+        },
+        "fr": {
+          "title": "Build more responsive apps with the Decisions API",
+          "summary": "Fast, focused, low-cost decisions for any application."
+        }
+      }
+    },
+    {
+      "slug": "20261022-olmoearth-v13-state-of-the-art-embeddings-for-the-whole-planet-eaa0ebff",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+      "publishedAt": "2026-10-22T16:11:31.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+          "summary": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet"
+        },
+        "fr": {
+          "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+          "summary": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet"
+        }
+      }
+    },
+    {
       "slug": "20261021-investing-in-the-public-benefit-were-committing-a-portion-of-ant-4c6c987b",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -1082,63 +1177,6 @@
         "fr": {
           "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
           "summary": "5 3840w\" src=\"/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
-        }
-      }
-    },
-    {
-      "slug": "20261022-uber-brings-chatgpt-work-to-all-employees-with-openai-ba6fa07d",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/uber-chatgpt-work-rollout",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "Uber brings ChatGPT Work to all employees with OpenAI",
-          "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows."
-        },
-        "fr": {
-          "title": "Uber brings ChatGPT Work to all employees with OpenAI",
-          "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows."
-        }
-      }
-    },
-    {
-      "slug": "20261021-nvidia-kumo-relational-outperforms-supervised-machine-learning-o-7104bc51",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/kumo-relational",
-      "publishedAt": "2026-10-21T18:26:30.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
-          "summary": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required"
-        },
-        "fr": {
-          "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
-          "summary": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required"
-        }
-      }
-    },
-    {
-      "slug": "20261022-write-your-own-training-loop-without-managing-gpus-with-amazon-s-df383ee8",
-      "topic": "Computer Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
-      "publishedAt": "2026-10-22T18:00:01.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "Write your own training loop — without managing GPUs — with Amazon SageMaker training session APIs",
-          "summary": "Amazon SageMaker AI training session APIs let you write your own LLM training loop (SFT, RL, or custom objectives) in a Python script while the service runs the GPUs. This post introduces the programming model and three SDK clien…"
-        },
-        "fr": {
-          "title": "Write your own training loop — without managing GPUs — with Amazon SageMaker training session APIs",
-          "summary": "Amazon SageMaker AI training session APIs let you write your own LLM training loop (SFT, RL, or custom objectives) in a Python script while the service runs the GPUs. This post introduces the programming model and three SDK clien…"
         }
       }
     },
@@ -1181,25 +1219,6 @@
       }
     },
     {
-      "slug": "20261021-running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes-81261272",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
-      "publishedAt": "2026-10-21T20:23:47.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
-          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
-        },
-        "fr": {
-          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
-          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
-        }
-      }
-    },
-    {
       "slug": "20261013-developing-gemini-4-argon-responsibly-and-safely-471508c0",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -1215,25 +1234,6 @@
         "fr": {
           "title": "Developing Gemini 4 Argon responsibly and safely",
           "summary": "Developing Gemini 4 Argon responsibly and safely"
-        }
-      }
-    },
-    {
-      "slug": "20261021-how-commercecom-and-cloudflare-are-getting-storefronts-ready-for-1318e449",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/webmcp-commerce/",
-      "publishedAt": "2026-10-21T13:00:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
-          "summary": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control."
-        },
-        "fr": {
-          "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
-          "summary": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control."
         }
       }
     },
@@ -1409,6 +1409,101 @@
       }
     },
     {
+      "slug": "20261021-cloudflare-deploys-protections-against-php2shell-vulnerability-daa5082a",
+      "topic": "Security & Standards",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+      "publishedAt": "2026-10-21T13:56:45.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare deploys protections against php2shell vulnerability",
+          "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed…"
+        },
+        "fr": {
+          "title": "Cloudflare deploys protections against php2shell vulnerability",
+          "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed…"
+        }
+      }
+    },
+    {
+      "slug": "20261022-amazon-polly-delivers-a-major-upgrade-to-its-generative-engine-bb00f309",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+      "publishedAt": "2026-10-22T18:06:35.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "Amazon Polly delivers a major upgrade to its Generative engine",
+          "summary": "The Amazon Polly Generative engine gets a major upgrade: more expressive, more accurate speech with low latency, plus 14 new voices across 9 locales and general availability of Hindi and Finnish. This drop-in upgrade requires no…"
+        },
+        "fr": {
+          "title": "Amazon Polly delivers a major upgrade to its Generative engine",
+          "summary": "The Amazon Polly Generative engine gets a major upgrade: more expressive, more accurate speech with low latency, plus 14 new voices across 9 locales and general availability of Hindi and Finnish. This drop-in upgrade requires no…"
+        }
+      }
+    },
+    {
+      "slug": "20261021-scaling-decision-optimization-to-100-million-variables-and-beyon-51c57bf2",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/scaling-decision-optimization-to-100-million-variables-and-beyond-with-mpdlp-in-nvidia-cuopt/",
+      "publishedAt": "2026-10-21T23:58:06.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "Scaling Decision Optimization to 100 Million Variables and Beyond with mPDLP in NVIDIA cuOpt",
+          "summary": "Supply chain problems are expanding across more SKUs, lanes, and constraints than ever before, while energy grids are balancing more distributed sources in real..."
+        },
+        "fr": {
+          "title": "Scaling Decision Optimization to 100 Million Variables and Beyond with mPDLP in NVIDIA cuOpt",
+          "summary": "Supply chain problems are expanding across more SKUs, lanes, and constraints than ever before, while energy grids are balancing more distributed sources in real..."
+        }
+      }
+    },
+    {
+      "slug": "20261022-what-fde-means-at-openai-63c31ca5",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/forward-deployed-engineering-means",
+      "publishedAt": "2026-10-22T06:00:00.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "What FDE means at OpenAI",
+          "summary": "What forward deployed engineering means at OpenAI"
+        },
+        "fr": {
+          "title": "What FDE means at OpenAI",
+          "summary": "What forward deployed engineering means at OpenAI"
+        }
+      }
+    },
+    {
+      "slug": "20261022-ensemble-forecasting-with-ibm-granite-time-series-models-5d118fad",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+      "publishedAt": "2026-10-22T07:51:31.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "Ensemble forecasting with IBM Granite time-series models",
+          "summary": "Ensemble forecasting with IBM Granite time-series models"
+        },
+        "fr": {
+          "title": "Ensemble forecasting with IBM Granite time-series models",
+          "summary": "Ensemble forecasting with IBM Granite time-series models"
+        }
+      }
+    },
+    {
       "slug": "20261020-investing-in-the-public-benefit-4c6c987b",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -1424,63 +1519,6 @@
         "fr": {
           "title": "Investing in the public benefit",
           "summary": "Investing in the public benefit"
-        }
-      }
-    },
-    {
-      "slug": "20261021-broad-access-through-consistent-standards-2ed22a61",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/broad-access-through-consistent-standards",
-      "publishedAt": "2026-10-21T21:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "Broad access through consistent standards",
-          "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies."
-        },
-        "fr": {
-          "title": "Broad access through consistent standards",
-          "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies."
-        }
-      }
-    },
-    {
-      "slug": "20261021-how-specializing-the-vocabulary-of-slms-can-cut-inference-cost-b-354f89a6",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
-      "publishedAt": "2026-10-21T17:35:36.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
-          "summary": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications"
-        },
-        "fr": {
-          "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
-          "summary": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications"
-        }
-      }
-    },
-    {
-      "slug": "20261022-deploy-ai-in-a-hipaa-eligible-environment-with-amazon-quick-35339532",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-in-a-hipaa-eligible-environment-with-amazon-quick/",
-      "publishedAt": "2026-10-22T17:48:22.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "Deploy AI in a HIPAA-eligible environment with Amazon Quick",
-          "summary": "Amazon Quick is a HIPAA-eligible service, but eligibility is not the same as compliance. This post explains who HIPAA applies to, how PHI flows through Amazon Quick, what the platform provides for regulated environments, and a st…"
-        },
-        "fr": {
-          "title": "Deploy AI in a HIPAA-eligible environment with Amazon Quick",
-          "summary": "Amazon Quick is a HIPAA-eligible service, but eligibility is not the same as compliance. This post explains who HIPAA applies to, how PHI flows through Amazon Quick, what the platform provides for regulated environments, and a st…"
         }
       }
     },
@@ -1523,25 +1561,6 @@
       }
     },
     {
-      "slug": "20261021-design-proteins-with-rfd4-proteina-using-reward-guided-inference-c72af149",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
-      "publishedAt": "2026-10-21T12:57:05.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
-          "summary": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino..."
-        },
-        "fr": {
-          "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
-          "summary": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino..."
-        }
-      }
-    },
-    {
       "slug": "20261013-gemini-4-argon-for-robotics-884ebf3c",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -1557,25 +1576,6 @@
         "fr": {
           "title": "Gemini 4 Argon for Robotics",
           "summary": "Gemini 4 Argon for Robotics"
-        }
-      }
-    },
-    {
-      "slug": "20261020-8-emudhra-certificates-are-compromised-heres-what-you-need-to-kn-8d204ac3",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
-      "publishedAt": "2026-10-20T22:20:16.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "8 eMudhra certificates are compromised. Here's what you need to know",
-          "summary": "Following the discovery that eight eMudhra intermediate certificates use weak keys, Cloudflare is deploying mitigations and releasing client updates. We explain the impact, our response, and what customers and developers should d…"
-        },
-        "fr": {
-          "title": "8 eMudhra certificates are compromised. Here's what you need to know",
-          "summary": "Following the discovery that eight eMudhra intermediate certificates use weak keys, Cloudflare is deploying mitigations and releasing client updates. We explain the impact, our response, and what customers and developers should d…"
         }
       }
     },
@@ -1751,6 +1751,101 @@
       }
     },
     {
+      "slug": "20261021-how-commercecom-and-cloudflare-are-getting-storefronts-ready-for-1318e449",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/webmcp-commerce/",
+      "publishedAt": "2026-10-21T13:00:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+          "summary": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control."
+        },
+        "fr": {
+          "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+          "summary": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control."
+        }
+      }
+    },
+    {
+      "slug": "20261022-how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-man-ff227324",
+      "topic": "Computer Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+      "publishedAt": "2026-10-22T18:01:53.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "How IskayPet unified corporate knowledge with Amazon Bedrock Managed Knowledge Bases",
+          "summary": "Learn how IskayPet, a leading pet care company in Iberia, built a multilingual corporate knowledge assistant on Amazon Bedrock Managed Knowledge Bases. The assistant answers employee questions across retail, veterinary, onboardin…"
+        },
+        "fr": {
+          "title": "How IskayPet unified corporate knowledge with Amazon Bedrock Managed Knowledge Bases",
+          "summary": "Learn how IskayPet, a leading pet care company in Iberia, built a multilingual corporate knowledge assistant on Amazon Bedrock Managed Knowledge Bases. The assistant answers employee questions across retail, veterinary, onboardin…"
+        }
+      }
+    },
+    {
+      "slug": "20261021-giga-scale-ai-and-the-ethernet-evolution-how-spectrum-x-ethernet-6d2b1182",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/giga-scale-ai-ethernet-evolution-spectrum-x-ethernet-rewrites-rules/",
+      "publishedAt": "2026-10-21T21:32:19.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "Giga-Scale AI and the Ethernet Evolution: How Spectrum-X Ethernet Rewrites the Rules",
+          "summary": "The massive growth of generative AI has fundamentally altered data center design. As distributed model training scales to span hundreds of thousands of GPUs,..."
+        },
+        "fr": {
+          "title": "Giga-Scale AI and the Ethernet Evolution: How Spectrum-X Ethernet Rewrites the Rules",
+          "summary": "The massive growth of generative AI has fundamentally altered data center design. As distributed model training scales to span hundreds of thousands of GPUs,..."
+        }
+      }
+    },
+    {
+      "slug": "20261022-uber-brings-chatgpt-work-to-all-employees-with-openai-ba6fa07d",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/uber-chatgpt-work-rollout",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+          "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows."
+        },
+        "fr": {
+          "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+          "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows."
+        }
+      }
+    },
+    {
+      "slug": "20261021-nvidia-kumo-relational-outperforms-supervised-machine-learning-o-7104bc51",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/kumo-relational",
+      "publishedAt": "2026-10-21T18:26:30.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+          "summary": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required"
+        },
+        "fr": {
+          "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+          "summary": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required"
+        }
+      }
+    },
+    {
       "slug": "20261020-an-update-on-independent-evaluators-dc9ed14d",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -1766,63 +1861,6 @@
         "fr": {
           "title": "An update on independent evaluators",
           "summary": "An update on independent evaluators"
-        }
-      }
-    },
-    {
-      "slug": "20261021-how-att-is-rethinking-in-house-legal-work-with-openai-4ab93569",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/att-legal",
-      "publishedAt": "2026-10-21T17:00:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "How AT&T is rethinking in-house legal work with OpenAI",
-          "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment."
-        },
-        "fr": {
-          "title": "How AT&T is rethinking in-house legal work with OpenAI",
-          "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment."
-        }
-      }
-    },
-    {
-      "slug": "20261021-profiling-torchneuron-part-1-system-level-profiling-on-aws-train-f9b499de",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-      "publishedAt": "2026-10-21T16:04:43.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-          "summary": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium."
-        },
-        "fr": {
-          "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-          "summary": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium."
-        }
-      }
-    },
-    {
-      "slug": "20261022-stream-low-latency-speech-from-ai-agents-using-kokoro-tts-on-ama-f0c8337a",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/stream-low-latency-speech-from-ai-agents-using-kokoro-tts-on-amazon-sagemaker-ai/",
-      "publishedAt": "2026-10-22T17:45:58.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "Stream low-latency speech from AI agents using Kokoro TTS on Amazon SageMaker AI",
-          "summary": "Voice agents often wait for an agent's full response before starting speech synthesis, adding latency users feel directly. This post shows how to stream each sentence to a Kokoro-82M text-to-speech model on Amazon SageMaker AI as…"
-        },
-        "fr": {
-          "title": "Stream low-latency speech from AI agents using Kokoro TTS on Amazon SageMaker AI",
-          "summary": "Voice agents often wait for an agent's full response before starting speech synthesis, adding latency users feel directly. This post shows how to stream each sentence to a Kokoro-82M text-to-speech model on Amazon SageMaker AI as…"
         }
       }
     },
@@ -1865,25 +1903,6 @@
       }
     },
     {
-      "slug": "20261021-inside-nvidia-sentry-secure-ai-agents-at-runtime-3a3a0075",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
-      "publishedAt": "2026-10-21T09:52:19.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
-          "summary": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using..."
-        },
-        "fr": {
-          "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
-          "summary": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using..."
-        }
-      }
-    },
-    {
       "slug": "20261013-gemini-4-argon-built-to-solve-your-hardest-problems-f1747161",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -1899,25 +1918,6 @@
         "fr": {
           "title": "Gemini 4 Argon: Built to solve your hardest problems",
           "summary": "Gemini 4 Argon: Built to solve your hardest problems"
-        }
-      }
-    },
-    {
-      "slug": "20261020-introducing-tsrs-a-port-of-typescript-to-rust-c5209e14",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/typescript-rust-port/",
-      "publishedAt": "2026-10-20T13:00:00.000Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
-      "locales": {
-        "en": {
-          "title": "Introducing tsrs: A port of TypeScript to Rust",
-          "summary": "Cloudflare is collaborating on tsrs, a Rust port of TypeScript that is up to 8x faster and uses 70% less memory."
-        },
-        "fr": {
-          "title": "Introducing tsrs: A port of TypeScript to Rust",
-          "summary": "Cloudflare is collaborating on tsrs, a Rust port of TypeScript that is up to 8x faster and uses 70% less memory."
         }
       }
     },
@@ -2093,6 +2093,101 @@
       }
     },
     {
+      "slug": "20261020-8-emudhra-certificates-are-compromised-heres-what-you-need-to-kn-8d204ac3",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
+      "publishedAt": "2026-10-20T22:20:16.000Z",
+      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "locales": {
+        "en": {
+          "title": "8 eMudhra certificates are compromised. Here's what you need to know",
+          "summary": "Following the discovery that eight eMudhra intermediate certificates use weak keys, Cloudflare is deploying mitigations and releasing client updates. We explain the impact, our response, and what customers and developers should d…"
+        },
+        "fr": {
+          "title": "8 eMudhra certificates are compromised. Here's what you need to know",
+          "summary": "Following the discovery that eight eMudhra intermediate certificates use weak keys, Cloudflare is deploying mitigations and releasing client updates. We explain the impact, our response, and what customers and developers should d…"
+        }
+      }
+    },
+    {
+      "slug": "20261022-announcing-new-ways-to-customize-models-with-sagemaker-ai-withou-f70f2a2d",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+      "publishedAt": "2026-10-22T18:00:04.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "Announcing new ways to customize models with SageMaker AI, without managing GPUs",
+          "summary": "Amazon SageMaker AI serverless model customization now includes training sessions, generally available today. You write and coordinate your own post-training loop (custom loss functions, reward signals, or multi-turn reinforcemen…"
+        },
+        "fr": {
+          "title": "Announcing new ways to customize models with SageMaker AI, without managing GPUs",
+          "summary": "Amazon SageMaker AI serverless model customization now includes training sessions, generally available today. You write and coordinate your own post-training loop (custom loss functions, reward signals, or multi-turn reinforcemen…"
+        }
+      }
+    },
+    {
+      "slug": "20261021-running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes-81261272",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
+      "publishedAt": "2026-10-21T20:23:47.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
+          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
+        },
+        "fr": {
+          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
+          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
+        }
+      }
+    },
+    {
+      "slug": "20261021-broad-access-through-consistent-standards-2ed22a61",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/broad-access-through-consistent-standards",
+      "publishedAt": "2026-10-21T21:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "Broad access through consistent standards",
+          "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies."
+        },
+        "fr": {
+          "title": "Broad access through consistent standards",
+          "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies."
+        }
+      }
+    },
+    {
+      "slug": "20261021-how-specializing-the-vocabulary-of-slms-can-cut-inference-cost-b-354f89a6",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+      "publishedAt": "2026-10-21T17:35:36.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+          "summary": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications"
+        },
+        "fr": {
+          "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+          "summary": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications"
+        }
+      }
+    },
+    {
       "slug": "20261020-preparing-for-the-2026-us-midterms-c9ddbc2b",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -2108,63 +2203,6 @@
         "fr": {
           "title": "Preparing for the 2026 US midterms",
           "summary": "Preparing for the 2026 US midterms"
-        }
-      }
-    },
-    {
-      "slug": "20261021-chatgpt-ads-expands-to-26-new-countries-as-over-100000-advertise-74fcf21e",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
-      "publishedAt": "2026-10-21T13:00:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
-          "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT."
-        },
-        "fr": {
-          "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
-          "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT."
-        }
-      }
-    },
-    {
-      "slug": "20261021-granite-speech-50-transcribe-translate-and-attribute-more-accura-9b35c0bf",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
-      "publishedAt": "2026-10-21T14:58:18.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
-          "summary": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster"
-        },
-        "fr": {
-          "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
-          "summary": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster"
-        }
-      }
-    },
-    {
-      "slug": "20261022-stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-a-529344d0",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
-      "publishedAt": "2026-10-22T16:30:06.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "Stop guessing auto scaling targets for TTS on Amazon SageMaker AI",
-          "summary": "Teams deploying custom text-to-speech models on Amazon SageMaker AI often guess at autoscaling thresholds, and a wrong guess either wastes GPU spend or breaches a latency SLO. This post deploys Kokoro-82M as a custom container an…"
-        },
-        "fr": {
-          "title": "Stop guessing auto scaling targets for TTS on Amazon SageMaker AI",
-          "summary": "Teams deploying custom text-to-speech models on Amazon SageMaker AI often guess at autoscaling thresholds, and a wrong guess either wastes GPU spend or breaches a latency SLO. This post deploys Kokoro-82M as a custom container an…"
         }
       }
     },
@@ -2207,25 +2245,6 @@
       }
     },
     {
-      "slug": "20261021-how-nvidia-openshell-reference-architecture-secures-and-governs--863eef03",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/",
-      "publishedAt": "2026-10-21T09:50:18.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
-          "summary": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex..."
-        },
-        "fr": {
-          "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
-          "summary": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex..."
-        }
-      }
-    },
-    {
       "slug": "20261006-embeddinggemma-2-an-open-lightweight-multimodal-embedding-model-4dd29007",
       "topic": "AI Systems",
       "source": "DeepMind Blog",
@@ -2241,25 +2260,6 @@
         "fr": {
           "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
           "summary": "EmbeddingGemma 2: an open, lightweight multimodal embedding model"
-        }
-      }
-    },
-    {
-      "slug": "20261019-cutting-our-inference-bill-by-68-by-being-obsessive-about-optimi-a26c408d",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/obsessive-inference-optimization/",
-      "publishedAt": "2026-10-19T19:12:53.000Z",
-      "discoveredAt": "2026-10-19T22:19:32.677Z",
-      "locales": {
-        "en": {
-          "title": "Cutting our inference bill by 68% by being obsessive about optimization",
-          "summary": "When our AI code reviewer's cost per run doubled, we dug into the token usage to find out why. Learn how we used prompt caching and intelligent model routing to slash our inference bill by 68% while speeding up reviews."
-        },
-        "fr": {
-          "title": "Cutting our inference bill by 68% by being obsessive about optimization",
-          "summary": "When our AI code reviewer's cost per run doubled, we dug into the token usage to find out why. Learn how we used prompt caching and intelligent model routing to slash our inference bill by 68% while speeding up reviews."
         }
       }
     },
@@ -2416,6 +2416,101 @@
       }
     },
     {
+      "slug": "20261020-introducing-tsrs-a-port-of-typescript-to-rust-c5209e14",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/typescript-rust-port/",
+      "publishedAt": "2026-10-20T13:00:00.000Z",
+      "discoveredAt": "2026-10-20T21:35:02.375Z",
+      "locales": {
+        "en": {
+          "title": "Introducing tsrs: A port of TypeScript to Rust",
+          "summary": "Cloudflare is collaborating on tsrs, a Rust port of TypeScript that is up to 8x faster and uses 70% less memory."
+        },
+        "fr": {
+          "title": "Introducing tsrs: A port of TypeScript to Rust",
+          "summary": "Cloudflare is collaborating on tsrs, a Rust port of TypeScript that is up to 8x faster and uses 70% less memory."
+        }
+      }
+    },
+    {
+      "slug": "20261022-write-your-own-training-loop-without-managing-gpus-with-amazon-s-df383ee8",
+      "topic": "Computer Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+      "publishedAt": "2026-10-22T18:00:01.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "Write your own training loop — without managing GPUs — with Amazon SageMaker training session APIs",
+          "summary": "Amazon SageMaker AI training session APIs let you write your own LLM training loop (SFT, RL, or custom objectives) in a Python script while the service runs the GPUs. This post introduces the programming model and three SDK clien…"
+        },
+        "fr": {
+          "title": "Write your own training loop — without managing GPUs — with Amazon SageMaker training session APIs",
+          "summary": "Amazon SageMaker AI training session APIs let you write your own LLM training loop (SFT, RL, or custom objectives) in a Python script while the service runs the GPUs. This post introduces the programming model and three SDK clien…"
+        }
+      }
+    },
+    {
+      "slug": "20261021-design-proteins-with-rfd4-proteina-using-reward-guided-inference-c72af149",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
+      "publishedAt": "2026-10-21T12:57:05.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
+          "summary": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino..."
+        },
+        "fr": {
+          "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
+          "summary": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino..."
+        }
+      }
+    },
+    {
+      "slug": "20261021-how-att-is-rethinking-in-house-legal-work-with-openai-4ab93569",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/att-legal",
+      "publishedAt": "2026-10-21T17:00:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "How AT&T is rethinking in-house legal work with OpenAI",
+          "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment."
+        },
+        "fr": {
+          "title": "How AT&T is rethinking in-house legal work with OpenAI",
+          "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment."
+        }
+      }
+    },
+    {
+      "slug": "20261021-profiling-torchneuron-part-1-system-level-profiling-on-aws-train-f9b499de",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+      "publishedAt": "2026-10-21T16:04:43.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+          "summary": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium."
+        },
+        "fr": {
+          "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+          "summary": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium."
+        }
+      }
+    },
+    {
       "slug": "20261020-anthropic-opens-singapore-office-and-signs-mou-with-the-governme-87253efe",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -2431,63 +2526,6 @@
         "fr": {
           "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
           "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
-        }
-      }
-    },
-    {
-      "slug": "20261021-openai-models-are-coming-to-google-cloud-61f4d014",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/openai-models-google-cloud",
-      "publishedAt": "2026-10-21T12:00:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "OpenAI models are coming to Google Cloud",
-          "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace."
-        },
-        "fr": {
-          "title": "OpenAI models are coming to Google Cloud",
-          "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace."
-        }
-      }
-    },
-    {
-      "slug": "20261021-announcing-simready-central-an-open-library-of-simulation-ready--99ae24e7",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
-      "publishedAt": "2026-10-21T10:59:42.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories",
-          "summary": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories"
-        },
-        "fr": {
-          "title": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories",
-          "summary": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories"
-        }
-      }
-    },
-    {
-      "slug": "20261022-how-rescale-built-an-ai-triage-agent-with-strands-agents-and-ai--03f22091",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-rescale-built-an-ai-triage-agent-with-strands-agents-and-ai-dlc/",
-      "publishedAt": "2026-10-22T16:25:57.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "How Rescale built an AI triage agent with Strands Agents and AI-DLC",
-          "summary": "Rescale used the AI-Driven Development Lifecycle (AI-DLC) framework on AWS, with Strands Agents and Amazon Bedrock, to build an intelligent test-triage agent in weeks. Learn how AI-DLC structures AI-assisted development and how R…"
-        },
-        "fr": {
-          "title": "How Rescale built an AI triage agent with Strands Agents and AI-DLC",
-          "summary": "Rescale used the AI-Driven Development Lifecycle (AI-DLC) framework on AWS, with Strands Agents and Amazon Bedrock, to build an intelligent test-triage agent in weeks. Learn how AI-DLC structures AI-assisted development and how R…"
         }
       }
     },
@@ -2530,25 +2568,6 @@
       }
     },
     {
-      "slug": "20261021-developing-an-ai-factory-digital-twin-with-an-agent-assisted-wor-dd48289e",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/developing-an-ai-factory-digital-twin-with-an-agent-assisted-workflow/",
-      "publishedAt": "2026-10-21T09:38:52.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow",
-          "summary": "Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams..."
-        },
-        "fr": {
-          "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow",
-          "summary": "Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams..."
-        }
-      }
-    },
-    {
       "slug": "20260930-gemini-4-argon-our-next-era-of-frontier-intelligence-15e70ee5",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -2564,25 +2583,6 @@
         "fr": {
           "title": "Gemini 4 Argon: our next era of frontier intelligence",
           "summary": "Gemini 4 Argon: our next era of frontier intelligence"
-        }
-      }
-    },
-    {
-      "slug": "20261019-introducing-clairic-a-new-system-one-class-of-extraction-models-d6e3fbf6",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/clairic-extraction-model/",
-      "publishedAt": "2026-10-19T17:48:26.000Z",
-      "discoveredAt": "2026-10-19T22:19:32.677Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Clairic, a new System One class of extraction models",
-          "summary": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs."
-        },
-        "fr": {
-          "title": "Introducing Clairic, a new System One class of extraction models",
-          "summary": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs."
         }
       }
     },
@@ -2720,6 +2720,101 @@
       }
     },
     {
+      "slug": "20261019-cutting-our-inference-bill-by-68-by-being-obsessive-about-optimi-a26c408d",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/obsessive-inference-optimization/",
+      "publishedAt": "2026-10-19T19:12:53.000Z",
+      "discoveredAt": "2026-10-19T22:19:32.677Z",
+      "locales": {
+        "en": {
+          "title": "Cutting our inference bill by 68% by being obsessive about optimization",
+          "summary": "When our AI code reviewer's cost per run doubled, we dug into the token usage to find out why. Learn how we used prompt caching and intelligent model routing to slash our inference bill by 68% while speeding up reviews."
+        },
+        "fr": {
+          "title": "Cutting our inference bill by 68% by being obsessive about optimization",
+          "summary": "When our AI code reviewer's cost per run doubled, we dug into the token usage to find out why. Learn how we used prompt caching and intelligent model routing to slash our inference bill by 68% while speeding up reviews."
+        }
+      }
+    },
+    {
+      "slug": "20261022-deploy-ai-in-a-hipaa-eligible-environment-with-amazon-quick-35339532",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/deploy-ai-in-a-hipaa-eligible-environment-with-amazon-quick/",
+      "publishedAt": "2026-10-22T17:48:22.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "Deploy AI in a HIPAA-eligible environment with Amazon Quick",
+          "summary": "Amazon Quick is a HIPAA-eligible service, but eligibility is not the same as compliance. This post explains who HIPAA applies to, how PHI flows through Amazon Quick, what the platform provides for regulated environments, and a st…"
+        },
+        "fr": {
+          "title": "Deploy AI in a HIPAA-eligible environment with Amazon Quick",
+          "summary": "Amazon Quick is a HIPAA-eligible service, but eligibility is not the same as compliance. This post explains who HIPAA applies to, how PHI flows through Amazon Quick, what the platform provides for regulated environments, and a st…"
+        }
+      }
+    },
+    {
+      "slug": "20261021-inside-nvidia-sentry-secure-ai-agents-at-runtime-3a3a0075",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+      "publishedAt": "2026-10-21T09:52:19.000Z",
+      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "locales": {
+        "en": {
+          "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
+          "summary": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using..."
+        },
+        "fr": {
+          "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
+          "summary": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using..."
+        }
+      }
+    },
+    {
+      "slug": "20261021-chatgpt-ads-expands-to-26-new-countries-as-over-100000-advertise-74fcf21e",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "publishedAt": "2026-10-21T13:00:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+          "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT."
+        },
+        "fr": {
+          "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+          "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT."
+        }
+      }
+    },
+    {
+      "slug": "20261021-granite-speech-50-transcribe-translate-and-attribute-more-accura-9b35c0bf",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+      "publishedAt": "2026-10-21T14:58:18.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+          "summary": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster"
+        },
+        "fr": {
+          "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+          "summary": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster"
+        }
+      }
+    },
+    {
       "slug": "20261020-strengthening-our-defenses-against-distillation-attacks-7f42709d",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -2735,63 +2830,6 @@
         "fr": {
           "title": "Strengthening our defenses against distillation attacks",
           "summary": "Strengthening our defenses against distillation attacks"
-        }
-      }
-    },
-    {
-      "slug": "20261021-patch-the-planet-global-response-coordination-as-agents-uncover--d3f51955",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-      "publishedAt": "2026-10-21T07:00:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-          "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source."
-        },
-        "fr": {
-          "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-          "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source."
-        }
-      }
-    },
-    {
-      "slug": "20261020-nvidia-cosmos3-h-dreams-bringing-clinical-surgery-to-life-throug-4eb9f708",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
-      "publishedAt": "2026-10-20T18:17:47.000Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-          "summary": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation"
-        },
-        "fr": {
-          "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-          "summary": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation"
-        }
-      }
-    },
-    {
-      "slug": "20261021-securing-quick-access-from-corporate-networks-with-aws-privateli-a872764d",
-      "topic": "Computer Science",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/securing-quick-access-from-corporate-networks-with-aws-privatelink/",
-      "publishedAt": "2026-10-21T23:38:38.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "Securing Quick access from corporate networks with AWS PrivateLink",
-          "summary": "Learn how to connect on-premises data sources to Amazon Quick privately with AWS PrivateLink, keeping analytics traffic off the public internet. This walkthrough covers VPC endpoints for user and API access, VPC connections for d…"
-        },
-        "fr": {
-          "title": "Securing Quick access from corporate networks with AWS PrivateLink",
-          "summary": "Learn how to connect on-premises data sources to Amazon Quick privately with AWS PrivateLink, keeping analytics traffic off the public internet. This walkthrough covers VPC endpoints for user and API access, VPC connections for d…"
         }
       }
     },
@@ -2834,25 +2872,6 @@
       }
     },
     {
-      "slug": "20261021-achieve-productive-ai-capacity-faster-and-more-predictably-with--cc380754",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod/",
-      "publishedAt": "2026-10-21T09:35:35.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "Achieve Productive AI Capacity Faster and More Predictably with NVIDIA DSX POD",
-          "summary": "AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute,..."
-        },
-        "fr": {
-          "title": "Achieve Productive AI Capacity Faster and More Predictably with NVIDIA DSX POD",
-          "summary": "AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute,..."
-        }
-      }
-    },
-    {
       "slug": "20260930-introducing-synthid-bio-0a622a33",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -2868,25 +2887,6 @@
         "fr": {
           "title": "Introducing SynthID Bio",
           "summary": "Proof of concept for watermarking AI-generated proteins while preserving biological function."
-        }
-      }
-    },
-    {
-      "slug": "20261019-beyond-the-patch-protecting-your-netscaler-gateway-against-futur-acdbe7df",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
-      "publishedAt": "2026-10-19T13:00:00.000Z",
-      "discoveredAt": "2026-10-19T13:07:35.606Z",
-      "locales": {
-        "en": {
-          "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
-          "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code."
-        },
-        "fr": {
-          "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
-          "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code."
         }
       }
     },
@@ -3024,6 +3024,101 @@
       }
     },
     {
+      "slug": "20261019-introducing-clairic-a-new-system-one-class-of-extraction-models-d6e3fbf6",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/clairic-extraction-model/",
+      "publishedAt": "2026-10-19T17:48:26.000Z",
+      "discoveredAt": "2026-10-19T22:19:32.677Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Clairic, a new System One class of extraction models",
+          "summary": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs."
+        },
+        "fr": {
+          "title": "Introducing Clairic, a new System One class of extraction models",
+          "summary": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs."
+        }
+      }
+    },
+    {
+      "slug": "20261022-stream-low-latency-speech-from-ai-agents-using-kokoro-tts-on-ama-f0c8337a",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/stream-low-latency-speech-from-ai-agents-using-kokoro-tts-on-amazon-sagemaker-ai/",
+      "publishedAt": "2026-10-22T17:45:58.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "Stream low-latency speech from AI agents using Kokoro TTS on Amazon SageMaker AI",
+          "summary": "Voice agents often wait for an agent's full response before starting speech synthesis, adding latency users feel directly. This post shows how to stream each sentence to a Kokoro-82M text-to-speech model on Amazon SageMaker AI as…"
+        },
+        "fr": {
+          "title": "Stream low-latency speech from AI agents using Kokoro TTS on Amazon SageMaker AI",
+          "summary": "Voice agents often wait for an agent's full response before starting speech synthesis, adding latency users feel directly. This post shows how to stream each sentence to a Kokoro-82M text-to-speech model on Amazon SageMaker AI as…"
+        }
+      }
+    },
+    {
+      "slug": "20261021-how-nvidia-openshell-reference-architecture-secures-and-governs--863eef03",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/",
+      "publishedAt": "2026-10-21T09:50:18.000Z",
+      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "locales": {
+        "en": {
+          "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
+          "summary": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex..."
+        },
+        "fr": {
+          "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
+          "summary": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex..."
+        }
+      }
+    },
+    {
+      "slug": "20261021-openai-models-are-coming-to-google-cloud-61f4d014",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/openai-models-google-cloud",
+      "publishedAt": "2026-10-21T12:00:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "OpenAI models are coming to Google Cloud",
+          "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace."
+        },
+        "fr": {
+          "title": "OpenAI models are coming to Google Cloud",
+          "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace."
+        }
+      }
+    },
+    {
+      "slug": "20261021-announcing-simready-central-an-open-library-of-simulation-ready--99ae24e7",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
+      "publishedAt": "2026-10-21T10:59:42.000Z",
+      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "locales": {
+        "en": {
+          "title": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories",
+          "summary": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories"
+        },
+        "fr": {
+          "title": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories",
+          "summary": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories"
+        }
+      }
+    },
+    {
       "slug": "20261020-introducing-the-anthropic-cyber-mission-db9c3550",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -3039,63 +3134,6 @@
         "fr": {
           "title": "Introducing the Anthropic Cyber Mission",
           "summary": "Introducing the Anthropic Cyber Mission"
-        }
-      }
-    },
-    {
-      "slug": "20261021-how-we-built-chatgpts-novel-ad-stack-for-user-trust-and-relevanc-edef63b5",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/building-chatgpt-ad-stack",
-      "publishedAt": "2026-10-21T07:00:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
-          "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale."
-        },
-        "fr": {
-          "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
-          "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale."
-        }
-      }
-    },
-    {
-      "slug": "20261020-fairstress-a-deeper-evaluation-of-fairness-in-llm-decision-makin-ca293d85",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/fairstress",
-      "publishedAt": "2026-10-20T16:09:19.000Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
-      "locales": {
-        "en": {
-          "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
-          "summary": "FairStress: A deeper evaluation of fairness in LLM decision-making"
-        },
-        "fr": {
-          "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
-          "summary": "FairStress: A deeper evaluation of fairness in LLM decision-making"
-        }
-      }
-    },
-    {
-      "slug": "20261021-5-production-challenges-in-multi-agent-systems-and-how-deep-insi-181d9eb7",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
-      "publishedAt": "2026-10-21T23:36:47.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "5 production challenges in multi-agent systems and how Deep Insight solved them",
-          "summary": "Many teams build a multi-agent AI prototype in days but hit a wall in production. This post defines five production challenges (orchestration, per-agent model selection, reliable operation, secure code execution, and monitoring)…"
-        },
-        "fr": {
-          "title": "5 production challenges in multi-agent systems and how Deep Insight solved them",
-          "summary": "Many teams build a multi-agent AI prototype in days but hit a wall in production. This post defines five production challenges (orchestration, per-agent model selection, reliable operation, secure code execution, and monitoring)…"
         }
       }
     },
@@ -3138,25 +3176,6 @@
       }
     },
     {
-      "slug": "20261019-accelerating-mamba-2-with-high-performance-forward-pass-kernels--6043d9bc",
-      "topic": "AI Performance",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
-      "publishedAt": "2026-10-19T19:29:30.000Z",
-      "discoveredAt": "2026-10-19T22:19:32.677Z",
-      "locales": {
-        "en": {
-          "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
-          "summary": "NVIDIA CUDA Tile (cuTile) is a Python-based DSL and parallel programming model for NVIDIA GPUs that automatically leverages advanced hardware capabilities to..."
-        },
-        "fr": {
-          "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
-          "summary": "NVIDIA CUDA Tile (cuTile) is a Python-based DSL and parallel programming model for NVIDIA GPUs that automatically leverages advanced hardware capabilities to..."
-        }
-      }
-    },
-    {
       "slug": "20260924-introducing-gemini-38-live-with-live-avatar-e7107d9a",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -3172,25 +3191,6 @@
         "fr": {
           "title": "Introducing Gemini 3.8 Live with Live Avatar",
           "summary": "Introducing Gemini 3.8 Live with Live Avatar"
-        }
-      }
-    },
-    {
-      "slug": "20261016-continuous-accountability-for-verified-bots-90fc70b2",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/verified-bots-accountability/",
-      "publishedAt": "2026-10-16T13:00:00.000Z",
-      "discoveredAt": "2026-10-16T21:04:23.843Z",
-      "locales": {
-        "en": {
-          "title": "Continuous accountability for Verified bots",
-          "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable ov…"
-        },
-        "fr": {
-          "title": "Continuous accountability for Verified bots",
-          "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable ov…"
         }
       }
     },
@@ -3309,6 +3309,101 @@
       }
     },
     {
+      "slug": "20261019-beyond-the-patch-protecting-your-netscaler-gateway-against-futur-acdbe7df",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
+      "publishedAt": "2026-10-19T13:00:00.000Z",
+      "discoveredAt": "2026-10-19T13:07:35.606Z",
+      "locales": {
+        "en": {
+          "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
+          "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code."
+        },
+        "fr": {
+          "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
+          "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code."
+        }
+      }
+    },
+    {
+      "slug": "20261022-stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-a-529344d0",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+      "publishedAt": "2026-10-22T16:30:06.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "Stop guessing auto scaling targets for TTS on Amazon SageMaker AI",
+          "summary": "Teams deploying custom text-to-speech models on Amazon SageMaker AI often guess at autoscaling thresholds, and a wrong guess either wastes GPU spend or breaches a latency SLO. This post deploys Kokoro-82M as a custom container an…"
+        },
+        "fr": {
+          "title": "Stop guessing auto scaling targets for TTS on Amazon SageMaker AI",
+          "summary": "Teams deploying custom text-to-speech models on Amazon SageMaker AI often guess at autoscaling thresholds, and a wrong guess either wastes GPU spend or breaches a latency SLO. This post deploys Kokoro-82M as a custom container an…"
+        }
+      }
+    },
+    {
+      "slug": "20261021-developing-an-ai-factory-digital-twin-with-an-agent-assisted-wor-dd48289e",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/developing-an-ai-factory-digital-twin-with-an-agent-assisted-workflow/",
+      "publishedAt": "2026-10-21T09:38:52.000Z",
+      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "locales": {
+        "en": {
+          "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow",
+          "summary": "Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams..."
+        },
+        "fr": {
+          "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow",
+          "summary": "Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams..."
+        }
+      }
+    },
+    {
+      "slug": "20261021-patch-the-planet-global-response-coordination-as-agents-uncover--d3f51955",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "publishedAt": "2026-10-21T07:00:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+          "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source."
+        },
+        "fr": {
+          "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+          "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source."
+        }
+      }
+    },
+    {
+      "slug": "20261020-nvidia-cosmos3-h-dreams-bringing-clinical-surgery-to-life-throug-4eb9f708",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+      "publishedAt": "2026-10-20T18:17:47.000Z",
+      "discoveredAt": "2026-10-20T21:35:02.375Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+          "summary": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation"
+        },
+        "fr": {
+          "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+          "summary": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation"
+        }
+      }
+    },
+    {
       "slug": "20261020-2026-usage-policy-update-7a238471",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -3324,63 +3419,6 @@
         "fr": {
           "title": "2026 Usage Policy update",
           "summary": "2026 Usage Policy update"
-        }
-      }
-    },
-    {
-      "slug": "20261021-using-thousands-of-ai-agents-to-uncover-new-leads-in-biological--1de8e62f",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-      "publishedAt": "2026-10-21T04:50:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Using thousands of AI agents to uncover new leads in biological data",
-          "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells."
-        },
-        "fr": {
-          "title": "Using thousands of AI agents to uncover new leads in biological data",
-          "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells."
-        }
-      }
-    },
-    {
-      "slug": "20261020-altk-evolve-how-learned-memory-tops-the--bench-leaderboard-on-cu-94e7f4f5",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
-      "publishedAt": "2026-10-20T15:19:48.000Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
-      "locales": {
-        "en": {
-          "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
-          "summary": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model"
-        },
-        "fr": {
-          "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
-          "summary": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model"
-        }
-      }
-    },
-    {
-      "slug": "20261021-adaptive-agentic-intelligence-framework-using-strands-agents-b6a64fed",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/adaptive-agentic-intelligence-framework-using-strands-agents/",
-      "publishedAt": "2026-10-21T21:23:26.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Adaptive agentic intelligence framework using Strands Agents",
-          "summary": "The Adaptive Agentic Intelligence Framework (AAIF), built with Strands Agents, handles routine tasks locally with small language models and routes complex requests to cloud models through Amazon Bedrock. This post walks through b…"
-        },
-        "fr": {
-          "title": "Adaptive agentic intelligence framework using Strands Agents",
-          "summary": "The Adaptive Agentic Intelligence Framework (AAIF), built with Strands Agents, handles routine tasks locally with small language models and routes complex requests to cloud models through Amazon Bedrock. This post walks through b…"
         }
       }
     },
@@ -3423,25 +3461,6 @@
       }
     },
     {
-      "slug": "20261016-accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros-930fe613",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros/",
-      "publishedAt": "2026-10-16T21:30:50.000Z",
-      "discoveredAt": "2026-10-17T10:39:32.648Z",
-      "locales": {
-        "en": {
-          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
-          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
-        },
-        "fr": {
-          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
-          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
-        }
-      }
-    },
-    {
       "slug": "20260923-advancing-private-ai-compute-with-secure-server-side-memory-4c4abcff",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -3457,25 +3476,6 @@
         "fr": {
           "title": "Advancing Private AI Compute with secure, server-side memory",
           "summary": "Introducing private, server-side memory to Private AI Compute for personal AI."
-        }
-      }
-    },
-    {
-      "slug": "20261015-a-fully-programmable-secure-web-gateway-068b055f",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/programmable-gateway-dlp/",
-      "publishedAt": "2026-10-15T17:11:12.000Z",
-      "discoveredAt": "2026-10-15T21:20:24.444Z",
-      "locales": {
-        "en": {
-          "title": "A fully programmable secure web gateway",
-          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
-        },
-        "fr": {
-          "title": "A fully programmable secure web gateway",
-          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
         }
       }
     },
@@ -3594,6 +3594,101 @@
       }
     },
     {
+      "slug": "20261016-continuous-accountability-for-verified-bots-90fc70b2",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/verified-bots-accountability/",
+      "publishedAt": "2026-10-16T13:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:23.843Z",
+      "locales": {
+        "en": {
+          "title": "Continuous accountability for Verified bots",
+          "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable ov…"
+        },
+        "fr": {
+          "title": "Continuous accountability for Verified bots",
+          "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable ov…"
+        }
+      }
+    },
+    {
+      "slug": "20261022-how-rescale-built-an-ai-triage-agent-with-strands-agents-and-ai--03f22091",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-rescale-built-an-ai-triage-agent-with-strands-agents-and-ai-dlc/",
+      "publishedAt": "2026-10-22T16:25:57.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "How Rescale built an AI triage agent with Strands Agents and AI-DLC",
+          "summary": "Rescale used the AI-Driven Development Lifecycle (AI-DLC) framework on AWS, with Strands Agents and Amazon Bedrock, to build an intelligent test-triage agent in weeks. Learn how AI-DLC structures AI-assisted development and how R…"
+        },
+        "fr": {
+          "title": "How Rescale built an AI triage agent with Strands Agents and AI-DLC",
+          "summary": "Rescale used the AI-Driven Development Lifecycle (AI-DLC) framework on AWS, with Strands Agents and Amazon Bedrock, to build an intelligent test-triage agent in weeks. Learn how AI-DLC structures AI-assisted development and how R…"
+        }
+      }
+    },
+    {
+      "slug": "20261021-achieve-productive-ai-capacity-faster-and-more-predictably-with--cc380754",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod/",
+      "publishedAt": "2026-10-21T09:35:35.000Z",
+      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "locales": {
+        "en": {
+          "title": "Achieve Productive AI Capacity Faster and More Predictably with NVIDIA DSX POD",
+          "summary": "AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute,..."
+        },
+        "fr": {
+          "title": "Achieve Productive AI Capacity Faster and More Predictably with NVIDIA DSX POD",
+          "summary": "AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute,..."
+        }
+      }
+    },
+    {
+      "slug": "20261021-how-we-built-chatgpts-novel-ad-stack-for-user-trust-and-relevanc-edef63b5",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/building-chatgpt-ad-stack",
+      "publishedAt": "2026-10-21T07:00:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+          "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale."
+        },
+        "fr": {
+          "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+          "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale."
+        }
+      }
+    },
+    {
+      "slug": "20261020-fairstress-a-deeper-evaluation-of-fairness-in-llm-decision-makin-ca293d85",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/fairstress",
+      "publishedAt": "2026-10-20T16:09:19.000Z",
+      "discoveredAt": "2026-10-20T21:35:02.375Z",
+      "locales": {
+        "en": {
+          "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
+          "summary": "FairStress: A deeper evaluation of fairness in LLM decision-making"
+        },
+        "fr": {
+          "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
+          "summary": "FairStress: A deeper evaluation of fairness in LLM decision-making"
+        }
+      }
+    },
+    {
       "slug": "20261020-building-on-our-commitment-to-american-scientific-discovery-26f50496",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -3609,63 +3704,6 @@
         "fr": {
           "title": "Building on our commitment to American scientific discovery",
           "summary": "Building on our commitment to American scientific discovery"
-        }
-      }
-    },
-    {
-      "slug": "20261021-cloudflare-links-vulnerability-discovery-to-defense-with-openai-9201054e",
-      "topic": "Security & Standards",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/cloudflare-cyber",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
-          "summary": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality."
-        },
-        "fr": {
-          "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
-          "summary": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality."
-        }
-      }
-    },
-    {
-      "slug": "20261020-hugging-face-torchtpu-tpus-natively-84cd8d44",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/hf-torchtpu",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
-      "locales": {
-        "en": {
-          "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
-          "summary": "Hugging Face ❤️ TorchTPU: TPUs, Natively"
-        },
-        "fr": {
-          "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
-          "summary": "Hugging Face ❤️ TorchTPU: TPUs, Natively"
-        }
-      }
-    },
-    {
-      "slug": "20261021-train-qwen3-on-aws-trainium-with-torchtitan-11335792",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
-      "publishedAt": "2026-10-21T20:00:22.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Train Qwen3 on AWS Trainium with torchtitan",
-          "summary": "Train Qwen3 on AWS Trainium with torchtitan three ways on a single trn2.48xlarge: the Hugging Face Transformers v5 modeling backend, torchtitan's native Qwen3, and NKI mixture-of-experts kernels. The same torchrun launcher and co…"
-        },
-        "fr": {
-          "title": "Train Qwen3 on AWS Trainium with torchtitan",
-          "summary": "Train Qwen3 on AWS Trainium with torchtitan three ways on a single trn2.48xlarge: the Hugging Face Transformers v5 modeling backend, torchtitan's native Qwen3, and NKI mixture-of-experts kernels. The same torchrun launcher and co…"
         }
       }
     },
@@ -3708,25 +3746,6 @@
       }
     },
     {
-      "slug": "20261016-code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark-786c68bd",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
-      "publishedAt": "2026-10-16T16:46:50.000Z",
-      "discoveredAt": "2026-10-16T21:04:23.843Z",
-      "locales": {
-        "en": {
-          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
-        },
-        "fr": {
-          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
-        }
-      }
-    },
-    {
       "slug": "20260923-gemini-38-text-to-speech-says-hello-be2314c6",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -3742,25 +3761,6 @@
         "fr": {
           "title": "Gemini 3.8 text-to-speech says hello",
           "summary": "Gemini 3.8 text-to-speech says hello"
-        }
-      }
-    },
-    {
-      "slug": "20261015-deploy-with-void-41ee710a",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/deploy-with-void/",
-      "publishedAt": "2026-10-15T14:00:00.000Z",
-      "discoveredAt": "2026-10-15T21:20:24.444Z",
-      "locales": {
-        "en": {
-          "title": "Deploy with Void",
-          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
-        },
-        "fr": {
-          "title": "Deploy with Void",
-          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
         }
       }
     },
@@ -3879,6 +3879,101 @@
       }
     },
     {
+      "slug": "20261015-a-fully-programmable-secure-web-gateway-068b055f",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/programmable-gateway-dlp/",
+      "publishedAt": "2026-10-15T17:11:12.000Z",
+      "discoveredAt": "2026-10-15T21:20:24.444Z",
+      "locales": {
+        "en": {
+          "title": "A fully programmable secure web gateway",
+          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
+        },
+        "fr": {
+          "title": "A fully programmable secure web gateway",
+          "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform."
+        }
+      }
+    },
+    {
+      "slug": "20261021-securing-quick-access-from-corporate-networks-with-aws-privateli-a872764d",
+      "topic": "Computer Science",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/securing-quick-access-from-corporate-networks-with-aws-privatelink/",
+      "publishedAt": "2026-10-21T23:38:38.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "Securing Quick access from corporate networks with AWS PrivateLink",
+          "summary": "Learn how to connect on-premises data sources to Amazon Quick privately with AWS PrivateLink, keeping analytics traffic off the public internet. This walkthrough covers VPC endpoints for user and API access, VPC connections for d…"
+        },
+        "fr": {
+          "title": "Securing Quick access from corporate networks with AWS PrivateLink",
+          "summary": "Learn how to connect on-premises data sources to Amazon Quick privately with AWS PrivateLink, keeping analytics traffic off the public internet. This walkthrough covers VPC endpoints for user and API access, VPC connections for d…"
+        }
+      }
+    },
+    {
+      "slug": "20261019-accelerating-mamba-2-with-high-performance-forward-pass-kernels--6043d9bc",
+      "topic": "AI Performance",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
+      "publishedAt": "2026-10-19T19:29:30.000Z",
+      "discoveredAt": "2026-10-19T22:19:32.677Z",
+      "locales": {
+        "en": {
+          "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
+          "summary": "NVIDIA CUDA Tile (cuTile) is a Python-based DSL and parallel programming model for NVIDIA GPUs that automatically leverages advanced hardware capabilities to..."
+        },
+        "fr": {
+          "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
+          "summary": "NVIDIA CUDA Tile (cuTile) is a Python-based DSL and parallel programming model for NVIDIA GPUs that automatically leverages advanced hardware capabilities to..."
+        }
+      }
+    },
+    {
+      "slug": "20261021-using-thousands-of-ai-agents-to-uncover-new-leads-in-biological--1de8e62f",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "publishedAt": "2026-10-21T04:50:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "Using thousands of AI agents to uncover new leads in biological data",
+          "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells."
+        },
+        "fr": {
+          "title": "Using thousands of AI agents to uncover new leads in biological data",
+          "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells."
+        }
+      }
+    },
+    {
+      "slug": "20261020-altk-evolve-how-learned-memory-tops-the--bench-leaderboard-on-cu-94e7f4f5",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
+      "publishedAt": "2026-10-20T15:19:48.000Z",
+      "discoveredAt": "2026-10-20T21:35:02.375Z",
+      "locales": {
+        "en": {
+          "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
+          "summary": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model"
+        },
+        "fr": {
+          "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
+          "summary": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model"
+        }
+      }
+    },
+    {
       "slug": "20261020-anthropic-invests-100-million-to-train-10000-engineers-and-tackl-9f2dde65",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -3894,63 +3989,6 @@
         "fr": {
           "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
           "summary": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap"
-        }
-      }
-    },
-    {
-      "slug": "20261021-democratic-governance-of-frontier-ai-part-ii-empowering-cyber-de-b2deaf97",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/empowering-cyber-defenders",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
-          "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions."
-        },
-        "fr": {
-          "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
-          "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions."
-        }
-      }
-    },
-    {
-      "slug": "20261020-anylanguagemodel-10-one-year-of-local-models-on-apple-platforms-2596ff92",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/anylanguagemodel-1-0",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
-      "locales": {
-        "en": {
-          "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
-          "summary": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms"
-        },
-        "fr": {
-          "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
-          "summary": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms"
-        }
-      }
-    },
-    {
-      "slug": "20261021-how-us-hunger-connects-leaders-and-data-using-amazon-quick-287298ad",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-u-s-hunger-connects-leaders-and-data-using-amazon-quick/",
-      "publishedAt": "2026-10-21T19:19:50.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "How U.S. Hunger connects leaders and data using Amazon Quick",
-          "summary": "U.S. Hunger, a nonprofit addressing food insecurity, uses Amazon Quick to connect organizational data with leadership decisions. Leaders explore applicant data directly, share KPI definitions and financial context in Quick Spaces…"
-        },
-        "fr": {
-          "title": "How U.S. Hunger connects leaders and data using Amazon Quick",
-          "summary": "U.S. Hunger, a nonprofit addressing food insecurity, uses Amazon Quick to connect organizational data with leadership decisions. Leaders explore applicant data directly, share KPI definitions and financial context in Quick Spaces…"
         }
       }
     },
@@ -3993,25 +4031,6 @@
       }
     },
     {
-      "slug": "20261015-nvidia-nemotron-35-super-vl-powers-specialized-agents-with-multi-652caa15",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
-      "publishedAt": "2026-10-15T19:23:24.000Z",
-      "discoveredAt": "2026-10-15T21:20:24.444Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
-        },
-        "fr": {
-          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
-        }
-      }
-    },
-    {
       "slug": "20260915-introducing-gemini-38-live-and-38-live-extended-thinking-f4c3141c",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -4027,25 +4046,6 @@
         "fr": {
           "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
           "summary": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking"
-        }
-      }
-    },
-    {
-      "slug": "20261015-cloudflare-and-openai-making-ai-discovery-better-for-everyone-39780551",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
-      "publishedAt": "2026-10-15T13:00:00.000Z",
-      "discoveredAt": "2026-10-15T21:20:24.444Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
-          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
-        },
-        "fr": {
-          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
-          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
         }
       }
     },
@@ -4145,21 +4145,97 @@
       }
     },
     {
-      "slug": "20260908-kubernetes-v137-advancing-workload-aware-scheduling-20f9c030",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
-      "publishedAt": "2026-09-08T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
+      "slug": "20261015-deploy-with-void-41ee710a",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/deploy-with-void/",
+      "publishedAt": "2026-10-15T14:00:00.000Z",
+      "discoveredAt": "2026-10-15T21:20:24.444Z",
       "locales": {
         "en": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
+          "title": "Deploy with Void",
+          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
         },
         "fr": {
-          "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
-          "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milest…"
+          "title": "Deploy with Void",
+          "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare."
+        }
+      }
+    },
+    {
+      "slug": "20261021-5-production-challenges-in-multi-agent-systems-and-how-deep-insi-181d9eb7",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+      "publishedAt": "2026-10-21T23:36:47.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "5 production challenges in multi-agent systems and how Deep Insight solved them",
+          "summary": "Many teams build a multi-agent AI prototype in days but hit a wall in production. This post defines five production challenges (orchestration, per-agent model selection, reliable operation, secure code execution, and monitoring)…"
+        },
+        "fr": {
+          "title": "5 production challenges in multi-agent systems and how Deep Insight solved them",
+          "summary": "Many teams build a multi-agent AI prototype in days but hit a wall in production. This post defines five production challenges (orchestration, per-agent model selection, reliable operation, secure code execution, and monitoring)…"
+        }
+      }
+    },
+    {
+      "slug": "20261016-accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros-930fe613",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros/",
+      "publishedAt": "2026-10-16T21:30:50.000Z",
+      "discoveredAt": "2026-10-17T10:39:32.648Z",
+      "locales": {
+        "en": {
+          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
+          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
+        },
+        "fr": {
+          "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
+          "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between..."
+        }
+      }
+    },
+    {
+      "slug": "20261021-cloudflare-links-vulnerability-discovery-to-defense-with-openai-9201054e",
+      "topic": "Security & Standards",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/cloudflare-cyber",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+          "summary": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality."
+        },
+        "fr": {
+          "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+          "summary": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality."
+        }
+      }
+    },
+    {
+      "slug": "20261020-hugging-face-torchtpu-tpus-natively-84cd8d44",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/hf-torchtpu",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "discoveredAt": "2026-10-20T21:35:02.375Z",
+      "locales": {
+        "en": {
+          "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
+          "summary": "Hugging Face ❤️ TorchTPU: TPUs, Natively"
+        },
+        "fr": {
+          "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
+          "summary": "Hugging Face ❤️ TorchTPU: TPUs, Natively"
         }
       }
     },
@@ -4179,63 +4255,6 @@
         "fr": {
           "title": "Barclays scales Claude to upgrade operations and improve client experience",
           "summary": "Barclays scales Claude to upgrade operations and improve client experience"
-        }
-      }
-    },
-    {
-      "slug": "20261020-franchisee-reconciles-cash-in-94-less-time-with-chatgpt-work-b3fcb2e4",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/ted-taylor-restaurant",
-      "publishedAt": "2026-10-20T10:00:00.000Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
-      "locales": {
-        "en": {
-          "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
-          "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow."
-        },
-        "fr": {
-          "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
-          "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow."
-        }
-      }
-    },
-    {
-      "slug": "20261020-mps-in-pytorch-215-3eb18e5f",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/mps-pytorch-2-15",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-20T11:31:45.871Z",
-      "locales": {
-        "en": {
-          "title": "MPS in PyTorch 2.15",
-          "summary": "MPS in PyTorch 2.15"
-        },
-        "fr": {
-          "title": "MPS in PyTorch 2.15",
-          "summary": "MPS in PyTorch 2.15"
-        }
-      }
-    },
-    {
-      "slug": "20261020-beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear--88d0e172",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
-      "publishedAt": "2026-10-20T21:14:10.000Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
-      "locales": {
-        "en": {
-          "title": "Beyond the KV cache: Training and serving i14’s Laplace 3B linear attention model on AWS Trainium2 with native PyTorch",
-          "summary": "Learn how i14 trained and served Laplace 3B, a linear attention model, on AWS Trainium2 using native PyTorch. Its recurrent state stays fixed at 29.5 MB per sequence regardless of context length, avoiding the growing key-value ca…"
-        },
-        "fr": {
-          "title": "Beyond the KV cache: Training and serving i14’s Laplace 3B linear attention model on AWS Trainium2 with native PyTorch",
-          "summary": "Learn how i14 trained and served Laplace 3B, a linear attention model, on AWS Trainium2 using native PyTorch. Its recurrent state stays fixed at 29.5 MB per sequence regardless of context length, avoiding the growing key-value ca…"
         }
       }
     },
@@ -4274,63 +4293,6 @@
         "fr": {
           "title": "Building Git infrastructure for agent-scale development",
           "summary": "We're rebuilding GitHub's Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development. The post Building Git infrastructure for agent-scale development appeared first on The GitHub Bl…"
-        }
-      }
-    },
-    {
-      "slug": "20261015-nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-24af6a51",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/",
-      "publishedAt": "2026-10-15T18:34:17.000Z",
-      "discoveredAt": "2026-10-16T11:18:35.597Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
-          "summary": "NVIDIA is making the full NVIDIA Run:ai platform available as open source software, giving customers, developers, and ecosystem partners access to..."
-        },
-        "fr": {
-          "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
-          "summary": "NVIDIA is making the full NVIDIA Run:ai platform available as open source software, giving customers, developers, and ecosystem partners access to..."
-        }
-      }
-    },
-    {
-      "slug": "20260908-alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter--80d284f5",
-      "topic": "AI Research",
-      "source": "DeepMind Blog",
-      "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-      "publishedAt": "2026-09-08T14:00:15.000Z",
-      "discoveredAt": "2026-09-12T13:23:24.384Z",
-      "locales": {
-        "en": {
-          "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-          "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome."
-        },
-        "fr": {
-          "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-          "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome."
-        }
-      }
-    },
-    {
-      "slug": "20261014-yandex-outage-data-shows-that-instead-of-going-dark-malicious-bo-aad24f89",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/yandex-outage/",
-      "publishedAt": "2026-10-14T20:24:19.000Z",
-      "discoveredAt": "2026-10-14T21:38:47.383Z",
-      "locales": {
-        "en": {
-          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
-          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
-        },
-        "fr": {
-          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
-          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
         }
       }
     },
@@ -4392,6 +4354,101 @@
       }
     },
     {
+      "slug": "20261015-cloudflare-and-openai-making-ai-discovery-better-for-everyone-39780551",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
+      "publishedAt": "2026-10-15T13:00:00.000Z",
+      "discoveredAt": "2026-10-15T21:20:24.444Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
+          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
+        },
+        "fr": {
+          "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
+          "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike."
+        }
+      }
+    },
+    {
+      "slug": "20261021-adaptive-agentic-intelligence-framework-using-strands-agents-b6a64fed",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/adaptive-agentic-intelligence-framework-using-strands-agents/",
+      "publishedAt": "2026-10-21T21:23:26.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "Adaptive agentic intelligence framework using Strands Agents",
+          "summary": "The Adaptive Agentic Intelligence Framework (AAIF), built with Strands Agents, handles routine tasks locally with small language models and routes complex requests to cloud models through Amazon Bedrock. This post walks through b…"
+        },
+        "fr": {
+          "title": "Adaptive agentic intelligence framework using Strands Agents",
+          "summary": "The Adaptive Agentic Intelligence Framework (AAIF), built with Strands Agents, handles routine tasks locally with small language models and routes complex requests to cloud models through Amazon Bedrock. This post walks through b…"
+        }
+      }
+    },
+    {
+      "slug": "20261016-code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark-786c68bd",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
+      "publishedAt": "2026-10-16T16:46:50.000Z",
+      "discoveredAt": "2026-10-16T21:04:23.843Z",
+      "locales": {
+        "en": {
+          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+        },
+        "fr": {
+          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+        }
+      }
+    },
+    {
+      "slug": "20261021-democratic-governance-of-frontier-ai-part-ii-empowering-cyber-de-b2deaf97",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/empowering-cyber-defenders",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+          "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions."
+        },
+        "fr": {
+          "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+          "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions."
+        }
+      }
+    },
+    {
+      "slug": "20261020-anylanguagemodel-10-one-year-of-local-models-on-apple-platforms-2596ff92",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/anylanguagemodel-1-0",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "discoveredAt": "2026-10-20T21:35:02.375Z",
+      "locales": {
+        "en": {
+          "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
+          "summary": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms"
+        },
+        "fr": {
+          "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
+          "summary": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms"
+        }
+      }
+    },
+    {
       "slug": "20261020-partnering-with-accenture-on-embedded-evaluation-47b87cc2",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -4407,63 +4464,6 @@
         "fr": {
           "title": "Partnering with Accenture on embedded evaluation",
           "summary": "Partnering with Accenture on embedded evaluation"
-        }
-      }
-    },
-    {
-      "slug": "20261020-terminal-x-matches-senior-investor-judgment-886-with-gpt-61-a84b6a7b",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/terminal-x",
-      "publishedAt": "2026-10-20T07:00:00.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-          "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol."
-        },
-        "fr": {
-          "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-          "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol."
-        }
-      }
-    },
-    {
-      "slug": "20261019-torchneuron-running-hf-models-on-aws-trainium-is-easier-than-eve-9dbc0d55",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/hf-torchneuron",
-      "publishedAt": "2026-10-19T00:00:00.000Z",
-      "discoveredAt": "2026-10-19T22:19:32.677Z",
-      "locales": {
-        "en": {
-          "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
-          "summary": "TorchNeuron: running HF models on AWS Trainium is easier than ever"
-        },
-        "fr": {
-          "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
-          "summary": "TorchNeuron: running HF models on AWS Trainium is easier than ever"
-        }
-      }
-    },
-    {
-      "slug": "20261020-workflow-context-for-ai-agents-with-smartsheet-mcp-on-aws-38a24b62",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/workflow-context-for-ai-agents-with-smartsheet-mcp-on-aws/",
-      "publishedAt": "2026-10-20T17:59:07.000Z",
-      "discoveredAt": "2026-10-23T11:34:27.809Z",
-      "locales": {
-        "en": {
-          "title": "Workflow context for AI agents with Smartsheet MCP on AWS",
-          "summary": "The Smartsheet Model Context Protocol (MCP) Server lets AI agents read, update, and act on live data. This post shows two ways to connect it on AWS: Amazon Quick for business teams and Kiro for developers, so your agents can work…"
-        },
-        "fr": {
-          "title": "Workflow context for AI agents with Smartsheet MCP on AWS",
-          "summary": "The Smartsheet Model Context Protocol (MCP) Server lets AI agents read, update, and act on live data. This post shows two ways to connect it on AWS: Amazon Quick for business teams and Kiro for developers, so your agents can work…"
         }
       }
     },
@@ -4506,44 +4506,6 @@
       }
     },
     {
-      "slug": "20261015-scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvi-33f29bf0",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
-      "publishedAt": "2026-10-15T18:29:53.000Z",
-      "discoveredAt": "2026-10-15T21:20:24.444Z",
-      "locales": {
-        "en": {
-          "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
-          "summary": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on..."
-        },
-        "fr": {
-          "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
-          "summary": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on..."
-        }
-      }
-    },
-    {
-      "slug": "20261014-inside-hyperdrive-how-we-solved-a-rare-hyperdrive-mysql-caching--3dc14211",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/hyperdrive-mysql/",
-      "publishedAt": "2026-10-14T13:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:47.383Z",
-      "locales": {
-        "en": {
-          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
-          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
-        },
-        "fr": {
-          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
-          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
-        }
-      }
-    },
-    {
       "slug": "20261014-psqlodbc-18000005-released-with-security-fix-for-cve-2026-109448-4714b5d1",
       "topic": "Security & Standards",
       "source": "PostgreSQL News",
@@ -4559,6 +4521,44 @@
         "fr": {
           "title": "psqlODBC 18.00.0005 released with security fix for CVE-2026-109448",
           "summary": "The psqlODBC team has released version 18.00.0005 of psqlODBC, the official ODBC driver for PostgreSQL. This release fixes one security vulnerability and two bugs. All users should upgrade. Security issue CVE-2026-109448: heap me…"
+        }
+      }
+    },
+    {
+      "slug": "20260914-devfest-is-back-bf70dc82",
+      "topic": "AI Systems",
+      "source": "Google AI Blog",
+      "sourceFeed": "https://blog.google/technology/ai/rss/",
+      "href": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+      "publishedAt": "2026-09-14T16:00:00.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "DevFest is back",
+          "summary": "DevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era."
+        },
+        "fr": {
+          "title": "DevFest is back",
+          "summary": "DevFest 2026 is back and here’s how you can connect with one of the more than 800 global events to build, secure, and scale in the agentic AI era."
+        }
+      }
+    },
+    {
+      "slug": "20261014-yandex-outage-data-shows-that-instead-of-going-dark-malicious-bo-aad24f89",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/yandex-outage/",
+      "publishedAt": "2026-10-14T20:24:19.000Z",
+      "discoveredAt": "2026-10-14T21:38:47.383Z",
+      "locales": {
+        "en": {
+          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
+          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
+        },
+        "fr": {
+          "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
+          "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks."
         }
       }
     }
