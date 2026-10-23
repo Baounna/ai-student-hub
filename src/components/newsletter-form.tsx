@@ -99,6 +99,24 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
    * says why, which is the difference between a broken form and a closed one.
    */
   const [verificationUnavailable, setVerificationUnavailable] = useState(false);
+  /**
+   * False until the reader actually reaches for the form.
+   *
+   * This component is rendered in the footer of the root locale layout, so the
+   * challenge used to mount on all 469 pages the moment they loaded: a DNS
+   * lookup and a TLS handshake to challenges.cloudflare.com, about 80 kB of
+   * script and an iframe, on /privacy and /terms and every news brief, for a
+   * form almost nobody who lands on those pages will use. That is more weight
+   * than every byte of first-party client JavaScript on this site put together
+   * (13.9 kB gzipped), and Next's preload for it raced three font files for the
+   * page's first connections. Verified before this change: the string
+   * "challenges.cloudflare.com" was in the served HTML of /en, /en/blog,
+   * /en/stages, /en/news, /en/resources, /en/privacy and /en/terms.
+   *
+   * Nothing about the signup changes -- the challenge still has to pass before
+   * the button opens. It just starts when there is a reader behind it.
+   */
+  const [armed, setArmed] = useState(false);
   const [deliveryStatus, setDeliveryStatus] = useState<"sent" | "queued" | "failed" | "unavailable" | null>(null);
   const sourceTag = normalizeSource(source, compact);
   const nextAction = getNextAction(sourceTag, locale);

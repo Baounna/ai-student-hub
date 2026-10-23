@@ -9,7 +9,8 @@ import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { getAutoNews } from "@/content/auto-news";
 import { getLatestNews, getLocalizedNews } from "@/content/news";
-import { getOpenStages, kindLabel, stageCountrySummary } from "@/content/stages";
+import { countryLabel, getOpenStages, kindLabel, stageCountrySummary } from "@/content/stages";
+import { countriesWithPages, countryPagePath, listingsByCountry } from "@/content/stage-countries";
 import { placeLabel } from "./stages/shared";
 import { siteConfig } from "@/config/site";
 import {
@@ -180,6 +181,13 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
   // verified -- "every link checked" was contradicted by the board below it.
   const verifiedCount = openStages.filter((stage) => !stage.unverifiable).length;
   const featuredStages = openStages.slice(0, 5);
+  // Only countries clearing COUNTRY_PAGE_MIN_LISTINGS have a page, so only
+  // those can be linked. Sorted by size: a reader scanning for their own
+  // country reads the big ones first, and there is no other useful order.
+  const countryListings = listingsByCountry();
+  const countryBoards = countriesWithPages()
+    .map((code) => ({ code, count: countryListings.get(code)?.length ?? 0 }))
+    .sort((a, b) => b.count - a.count);
 
   const audiencePaths =
     locale === "fr"
@@ -433,7 +441,31 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
               );
             })}
           </ul>
-          <div className="px-4 py-3">
+          {/* The country boards, linked from the page with the most authority.
+              They had one inbound link each -- from /stages -- and nothing else
+              on the site pointed at them: no post, no brief, no nav, no footer.
+              With no domain and no backlinks, internal structure is the one
+              ranking factor fully under our control, and these are the only
+              URLs that can answer a search for "stage IA Maroc" or "AI
+              internships Germany". The country breakdown higher up collapses to
+              "France, United States and 10 more", so it cannot carry the links;
+              this names the ones that have a page and how many each holds. */}
+          {countryBoards.length ? (
+            <div className="border-t border-[color:var(--border)] px-4 py-3">
+              <p className="text-xs text-[color:var(--muted)]">
+                {locale === "fr" ? "Par pays" : "By country"}
+              </p>
+              <div className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
+                {countryBoards.map(({ code, count }) => (
+                  <Link key={code} href={countryPagePath(code, locale)} className="do-link text-sm">
+                    {countryLabel(code, locale)}{" "}
+                    <span className="text-[color:var(--muted)]">({count})</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ) : null}
+          <div className="border-t border-[color:var(--border)] px-4 py-3">
             <Link href={`/${locale}/stages`} className="do-link text-sm">
               {locale === "fr"
                 ? `Voir les ${openStagesCount} offres`
