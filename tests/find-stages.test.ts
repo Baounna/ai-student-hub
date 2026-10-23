@@ -1,6 +1,10 @@
 import { readFileSync } from "node:fs";
 import { describe, it, expect } from "vitest";
 import sources from "@/content/stage-sources.json";
+import {
+  splitLocation
+  // @ts-expect-error - plain .mjs script, no types
+} from "../scripts/find-stages.mjs";
 
 /**
  * All 88 listings were added by a person typing `npm run add:stage`, which is
@@ -112,7 +116,17 @@ describe("the internship finder", () => {
   it("leaves the country blank rather than guessing it wrong", () => {
     // A wrong country puts a French listing under Morocco on a board whose
     // country filter is the thing students actually use.
+    //
+    // This asserted the exact source line `return { city: parts.join(", "),
+    // country: "" };` and broke the day that line correctly became
+    // `joinCity(parts)`. It is the fourth source-text assertion in this
+    // repository to fail on a change that was right -- a test that pins
+    // characters reports edits, not behaviour, and the behaviour is what
+    // mattered here. tests/split-location.test.ts owns the detail; this holds
+    // the rule.
     expect(AGENT).toContain("COUNTRY_CODES");
-    expect(AGENT).toMatch(/return \{ city: parts\.join\(", "\), country: "" \};/);
+    expect(splitLocation("Somewhere Unplaceable").country).toBe("");
+    expect(splitLocation("San Francisco, CA").country).toBe("");
+    expect(splitLocation("Casablanca, Morocco").country).toBe("MA");
   });
 });
