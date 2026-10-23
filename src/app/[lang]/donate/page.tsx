@@ -251,8 +251,8 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
               </h2>
               <p className="mt-2 text-sm text-[color:var(--text)]">
                 {fr
-                  ? "Vous pouvez soutenir le projet via le guide étudiant ou en partageant AI and Cybersecurity News."
-                  : "You can support the project via the student guide or by sharing AI and Cybersecurity News."}
+                  ? "Vous pouvez soutenir le projet en partageant AI and Cybersecurity News, ou en faisant circuler les articles carrière."
+                  : "You can support the project by sharing AI and Cybersecurity News, or by passing on the career articles."}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <Link href={getGuideCtaHref(locale)} className="btn-primary">

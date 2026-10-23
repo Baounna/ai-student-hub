@@ -69,6 +69,18 @@ const nextConfig = {
     }
 
     const apiHeaders = [...headers, { key: "X-Robots-Tag", value: "noindex, nofollow" }];
+    /*
+     * The image routes get everything except the noindex, and a CORP that
+     * allows the embedding their whole job depends on.
+     */
+    const imageHeaders = [
+      ...headers.filter((header) => header.key !== "Cross-Origin-Resource-Policy"),
+      // An image whose whole job is to render on someone else's domain should
+      // not forbid that, and "all" has to be stated rather than merely omitted
+      // because it is overriding the catch-all above.
+      { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
+      { key: "X-Robots-Tag", value: "all" }
+    ];
     const growthSprintNoindexHeaders = [...headers, { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" }];
 
     return [
@@ -83,6 +95,34 @@ const nextConfig = {
       {
         source: "/api/:path*",
         headers: apiHeaders
+      },
+      /*
+       * The two image routes, AFTER the catch-all, overriding its noindex.
+       *
+       * Every social card is /api/og and every article image is /api/cover, so
+       * the catch-all was serving "X-Robots-Tag: noindex, nofollow" on every
+       * image this site has. That is the other half of a bug already half
+       * fixed: robots.ts was changed to let crawlers FETCH these, and the first
+       * thing they read when they did was an instruction to ignore them.
+       * `image` is the one Article property Google actually renders, so no page
+       * could become a search thumbnail or a Discover card, and nothing here
+       * was eligible for Google Images. It stayed invisible because LinkedIn,
+       * Facebook and X do not honour X-Robots-Tag, so the previews anyone tests
+       * by hand worked fine.
+       *
+       * Measured, not assumed: listing these BEFORE the catch-all changes
+       * nothing, because a later matching rule wins. Hence the explicit
+       * positive value here rather than a negative lookahead on the catch-all
+       * -- a typo in a lookahead would silently expose a real API route, while
+       * a typo here only fails to fix an image.
+       */
+      {
+        source: "/api/og",
+        headers: imageHeaders
+      },
+      {
+        source: "/api/cover/:path*",
+        headers: imageHeaders
       },
       // The two routes that take a body. Next's default for a route handler is
       // "public, max-age=0, must-revalidate", measured on production — and
