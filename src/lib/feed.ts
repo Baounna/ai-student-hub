@@ -1,5 +1,6 @@
 import { newsBriefs } from "@/content/news";
 import { posts } from "@/content/posts";
+import { stageDigests } from "@/lib/stage-digest";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { feedPath } from "@/lib/feed-paths";
@@ -28,9 +29,9 @@ function escapeXml(value: string) {
     .replace(/'/g, "&apos;");
 }
 
-const CATEGORY: Record<Locale, { blog: string; news: string }> = {
-  en: { blog: "Blog", news: "News" },
-  fr: { blog: "Article", news: "Actualite" }
+const CATEGORY: Record<Locale, { blog: string; news: string; stages: string }> = {
+  en: { blog: "Blog", news: "News", stages: "Internships" },
+  fr: { blog: "Article", news: "Actualite", stages: "Stages" }
 };
 
 type FeedItem = {
@@ -39,6 +40,12 @@ type FeedItem = {
   description: string;
   publishedAt: string;
   category: string;
+  /**
+   * Set only when the link cannot serve as identity. Every weekly stage digest
+   * points at the same /stages?added=recent, and buildFeed uses the link as the
+   * guid, so without this two digests collide and a reader sees one of them.
+   */
+  guid?: string;
 };
 
 /**
@@ -76,7 +83,26 @@ function feedItems(locale: Locale): FeedItem[] {
     category: category.news
   }));
 
-  return [...blogItems, ...newsItems].sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
+  /*
+   * The board, as one item per week it grew rather than one per listing.
+   *
+   * It is the most valuable and most frequently updated thing here and it was
+   * not in the feed at all. A listing at a time would recreate exactly what the
+   * comment above describes -- fifteen rows on a good Thursday pushing the
+   * site's own writing down the page -- so a week of additions is one item.
+   */
+  const stageItems = stageDigests(locale).map((digest) => ({
+    link: absoluteUrl(digest.link),
+    guid: digest.guid,
+    title: digest.title,
+    description: digest.description,
+    publishedAt: digest.publishedAt,
+    category: category.stages
+  }));
+
+  return [...blogItems, ...newsItems, ...stageItems].sort((a, b) =>
+    a.publishedAt < b.publishedAt ? 1 : -1
+  );
 }
 
 function rfc822(value: string) {
@@ -95,7 +121,7 @@ export function buildFeed(locale: Locale) {
     <item>
       <title>${escapeXml(item.title)}</title>
       <link>${escapeXml(item.link)}</link>
-      <guid isPermaLink="true">${escapeXml(item.link)}</guid>
+      <guid isPermaLink="${item.guid ? "false" : "true"}">${escapeXml(item.guid ?? item.link)}</guid>
       <description>${escapeXml(item.description)}</description>
       <pubDate>${rfc822(item.publishedAt)}</pubDate>
       <category>${escapeXml(item.category)}</category>

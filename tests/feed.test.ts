@@ -4,6 +4,7 @@ import { posts } from "@/content/posts";
 import { locales } from "@/i18n/config";
 import { buildFeed } from "@/lib/feed";
 import { feedPath } from "@/lib/feed-paths";
+import { stageDigests } from "@/lib/stage-digest";
 
 /**
  * Not a full XML parse -- the repo has no parser and this is not worth a
@@ -59,11 +60,23 @@ describe("buildFeed", () => {
   it("carries the site's own writing and none of the auto briefs", () => {
     const xml = buildFeed("en");
 
-    expect((xml.match(/<item>/g) || []).length).toBe(posts.length + newsBriefs.length);
+    // Posts, news briefs, and one digest per week the internship board grew.
+    // The board is the most frequently updated thing on the site and was not in
+    // the feed at all; it goes in a week at a time precisely so it cannot do to
+    // the original writing what the auto briefs did.
+    expect((xml.match(/<item>/g) || []).length).toBe(
+      posts.length + newsBriefs.length + stageDigests("en").length
+    );
     // Those pages are noindex near-duplicates of other people's summaries; 60
     // of them used to sit above every original post in date order.
     expect(xml).not.toContain("/news/auto/");
     expect(xml).not.toContain("[Auto]");
+  });
+
+  it("never lets the board outnumber the writing", () => {
+    // The guard the auto briefs taught: whatever goes in the feed, a
+    // subscriber's reason for subscribing has to survive it.
+    expect(stageDigests("en").length).toBeLessThan(posts.length + newsBriefs.length);
   });
 
   it("dates lastBuildDate from the newest item, not the request", () => {
