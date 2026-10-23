@@ -89,6 +89,17 @@ describe("splitLocation", () => {
     expect(splitLocation("New York, NY; San Francisco, CA").country).toBe("US");
   });
 
+  it("does not say a city twice", () => {
+    // SmartRecruiters sends city and region separately, and for a city-state
+    // they are the same word, so a Doctolib row went onto the board reading
+    // "Berlin, Berlin". Collapsing repeats keeps the employer's own words and
+    // stops repeating them.
+    expect(splitLocation("Berlin, Berlin, de")).toEqual({ city: "Berlin", country: "DE" });
+    expect(splitLocation("Berlin, Berlin")).toEqual({ city: "Berlin", country: "" });
+    // A genuinely different second part is kept: that is the employer's wording.
+    expect(splitLocation("Paris, Ile-de-France, fr").city).toBe("Paris, Ile-de-France");
+  });
+
   it("refuses a placeholder that names no place at all", () => {
     expect(splitLocation("3 locations")).toEqual({ city: "", country: "" });
     expect(splitLocation("")).toEqual({ city: "", country: "" });

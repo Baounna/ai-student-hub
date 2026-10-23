@@ -372,6 +372,22 @@ export function splitLocation(location) {
   const parts = first.split(",").map((p) => p.trim()).filter(Boolean);
   if (!parts.length || /^\d+\s+locations?$/i.test(first.trim())) return { city: "", country: "" };
 
+  /**
+   * "Berlin, Berlin, de" is one city, not two.
+   *
+   * SmartRecruiters sends city and region as separate parts and for a
+   * city-state they are the same word, so joining what is left after the
+   * country gave a row whose city read "Berlin, Berlin". Collapsing repeats
+   * keeps the employer's own words -- it just stops saying them twice.
+   */
+  const joinCity = (parts) => {
+    const out = [];
+    for (const part of parts) {
+      if (!out.some((kept) => kept.toLowerCase() === part.toLowerCase())) out.push(part);
+    }
+    return out.join(", ");
+  };
+
   const asCountry = (value) => {
     const v = value.toLowerCase();
     if (COUNTRY_CODES[v]) return COUNTRY_CODES[v];
@@ -428,18 +444,18 @@ export function splitLocation(location) {
       .split(/[\u2022;,]/)
       .map((part) => part.trim().toUpperCase())
       .some((code) => US_STATES.has(code) && !AMBIGUOUS_CODES.has(code));
-    return { city: parts.slice(0, -1).join(", "), country: settled ? "US" : "" };
+    return { city: joinCity(parts.slice(0, -1)), country: settled ? "US" : "" };
   }
 
   const tailCountry = asCountry(tail);
   if (tailCountry) {
-    return { city: parts.slice(0, -1).join(", ") || "", country: tailCountry };
+    return { city: joinCity(parts.slice(0, -1)), country: tailCountry };
   }
   // A US state abbreviation names the country without naming it.
   if (US_STATES.has(tail.toUpperCase()) && parts.length > 1) {
-    return { city: parts.slice(0, -1).join(", "), country: "US" };
+    return { city: joinCity(parts.slice(0, -1)), country: "US" };
   }
-  return { city: parts.join(", "), country: "" };
+  return { city: joinCity(parts), country: "" };
 }
 
 function consider({ company, role, location, href, source }) {
