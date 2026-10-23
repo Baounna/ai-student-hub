@@ -46,7 +46,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Update your stack when a better performance/price option appears."
           ],
       nextStep: fr
-        ? "Prochaine étape: écrivez une comparaison claire avec un tableau coût/qualité."
+        ? "Prochaine étape : écrivez une comparaison claire avec un tableau coût/qualité."
         : "Next step: write a clear comparison with a cost/quality table."
     },
     "AI Systems": {
@@ -65,7 +65,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Measure latency, cost, and quality for credibility."
           ],
       nextStep: fr
-        ? "Prochaine étape: publiez un mini tutoriel avec architecture + mesure de latence."
+        ? "Prochaine étape : publiez un mini tutoriel avec architecture + mesure de latence."
         : "Next step: publish a mini tutorial with architecture and latency checks."
     },
     "Computer Systems": {
@@ -84,7 +84,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Link to your compare page to capture high intent."
           ],
       nextStep: fr
-        ? "Prochaine étape: créez un guide 'quelle option choisir selon votre budget'."
+        ? "Prochaine étape : créez un guide 'quelle option choisir selon votre budget'."
         : "Next step: create a 'which option fits your budget' guide."
     },
     "Computer Science": {
@@ -103,7 +103,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Publish a short LinkedIn recap linking back to your article."
           ],
       nextStep: fr
-        ? "Prochaine étape: transformez ce sujet en article pédagogique basé sur un exemple concret."
+        ? "Prochaine étape : transformez ce sujet en article pédagogique basé sur un exemple concret."
         : "Next step: turn this into a teaching article backed by one concrete example."
     }
   };
@@ -125,7 +125,7 @@ function getTopicBrief(topic: string, locale: Locale) {
             "Add 2 useful links to resources/compare."
           ],
       nextStep: fr
-        ? "Prochaine étape: reliez ce brief à une ressource et à un guide pratique."
+        ? "Prochaine étape : reliez ce brief à une ressource et à un guide pratique."
         : "Next step: connect this brief to one resource and one practical guide."
     }
   );

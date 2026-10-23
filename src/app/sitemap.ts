@@ -122,16 +122,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.95,
         changeFrequency: "hourly" as const
       },
-      {
-        // The live stream is fetched per request from feeds we do not control,
-        // so its true age is unknowable at build time. The auto-news snapshot
-        // is both its fallback and the freshest content we can prove it
-        // contains — a floor, never an overstatement.
-        route: "/news/live",
-        lastModified: autoNewsAt,
-        priority: 0.82,
-        changeFrequency: "hourly" as const
-      },
+      /*
+       * "/news/live" is not listed, and that is the point of its removal.
+       *
+       * It sat here at priority 0.82, changeFrequency hourly — the fourth
+       * loudest request on the whole site — for a page whose body is other
+       * people's headlines, their hostnames and a list of their feed URLs,
+       * with the French edition rendering the same English headlines. It now
+       * carries robots noindex (the reasoning is written out in
+       * src/app/[lang]/news/live/page.tsx), and a sitemap is a list of URLs we
+       * are asking to have indexed. Leaving the entry in would have been this
+       * file asking hourly for two near-duplicate pages that the pages
+       * themselves decline.
+       */
       { route: "/blog", lastModified: newestPostAt, priority: 0.92, changeFrequency: "daily" as const },
       { route: "/about", lastModified: EDITORIAL_PAGES_UPDATED_AT, priority: 0.68, changeFrequency: "monthly" as const },
       {

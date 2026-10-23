@@ -64,6 +64,12 @@ type TurnstileWidgetProps = {
  * was still empty after 25 seconds.
  *
  * Explicit render, so the callbacks exist and the form can gate on them.
+ *
+ * Mount this only once a reader has reached for the form -- see `armed` in
+ * src/components/newsletter-form.tsx. Rendering it unconditionally is what the
+ * footer form did, and because that footer is in the locale layout it meant the
+ * script tag below, its preload, and a cross-origin handshake on all 469 pages
+ * of the site, including the two legal pages nobody subscribes from.
  */
 export function TurnstileWidget({ locale, compact = false, onToken, onUnavailable }: TurnstileWidgetProps) {
   /**

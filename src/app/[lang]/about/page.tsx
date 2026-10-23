@@ -123,7 +123,7 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
           </p>
           <p className="body-copy mt-4">
             {locale === "fr"
-              ? "La mission d'AI and Cybersecurity News: transformer l'apprentissage passif en exécution mesurable avec résultats concrets."
+              ? "La mission d'AI and Cybersecurity News : transformer l'apprentissage passif en exécution mesurable avec résultats concrets."
               : "AI and Cybersecurity News exists to convert passive learning into measurable execution and practical outcomes."}
           </p>
           <p className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 text-sm text-[color:var(--text)]">

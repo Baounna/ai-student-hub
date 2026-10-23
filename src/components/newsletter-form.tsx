@@ -121,6 +121,23 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
   const sourceTag = normalizeSource(source, compact);
   const nextAction = getNextAction(sourceTag, locale);
 
+  /**
+   * Every way a reader can arrive at this form, so none of them is left
+   * holding an address with no challenge under it.
+   *
+   * Focus is the one that matters and it is not pointer-only: tabbing into the
+   * field fires it too, so a keyboard reader gets the challenge well before the
+   * button is in reach. Touch start is the same signal a few hundred
+   * milliseconds earlier on a phone, where the handshake is the slow part and
+   * focus settles late. A change event with no focus looks impossible until a
+   * password manager fills the address from its own UI -- that reader would
+   * reach an unarmed form, press the button, and collect a 403 for a challenge
+   * that was never offered.
+   */
+  function armBotProtection() {
+    setArmed(true);
+  }
+
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus("loading");
@@ -294,7 +311,10 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         onChange={(event) => {
           setEmail(event.target.value);
           clearStaleResult();
+          armBotProtection();
         }}
+        onFocus={armBotProtection}
+        onTouchStart={armBotProtection}
         placeholder={
           compact ? "you@school.edu" : locale === "fr" ? "Adresse email" : "Email address"
         }
@@ -310,11 +330,23 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       >
         {status === "loading" ? (locale === "fr" ? "Envoi..." : "Sending...") : ctaLabel}
       </button>
+      {/* The button is already disabled at this point and the challenge is not
+          on the page yet, so it needs a reason that is true right now. The
+          caption inside the block below says "tick the box above", and showing
+          that before the box exists is the dead-button bug one step removed:
+          the reader is told to do a thing they cannot find anywhere. */}
+      {botProtectionEnabled && !armed ? (
+        <p className={`mt-1 text-xs text-[color:var(--muted)] ${compact ? "col-span-2" : "sm:col-span-3"}`}>
+          {locale === "fr"
+            ? "Une vérification anti-robot apparaît dès que vous saisissez votre adresse."
+            : "A quick human check appears as soon as you start entering your address."}
+        </p>
+      ) : null}
       {/* Below the email field and above the button, which is the order the
           reader moves in. It used to render first, so on the full-width form
           the checkbox sat off-screen behind someone who had scrolled to the
           email box. */}
-      {botProtectionEnabled ? (
+      {botProtectionEnabled && armed ? (
         <div className={`min-w-0 ${compact ? "col-span-2" : "sm:col-span-3"}`}>
           <TurnstileWidget
             locale={locale}

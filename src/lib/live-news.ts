@@ -357,10 +357,24 @@ function parseSourcePayload(payload: string, source: FeedSource) {
   return [];
 }
 
+/**
+ * 2.5 seconds, down from ten.
+ *
+ * Seventeen sources are fetched together and the caller waits for the last one,
+ * so this number is not a per-feed budget: it is the worst case for the whole
+ * page. One host that accepts the connection and then stops talking used to
+ * hold /news and /news/live for ten seconds before the reader saw anything, and
+ * the only thing lost at the end of it was that host's headlines -- the page
+ * renders whatever came back. A feed that cannot answer in 2.5 seconds was
+ * going to be the slowest item on the page either way, and the auto-news
+ * snapshot in src/content/auto-news.json already covers it.
+ */
+const FEED_TIMEOUT_MS = 2_500;
+
 async function fetchFeed(source: FeedSource) {
   try {
     const response = await fetch(source.href, {
-      signal: AbortSignal.timeout(10_000),
+      signal: AbortSignal.timeout(FEED_TIMEOUT_MS),
       next: { revalidate: 60 * 30 }
     });
     if (!response.ok) return [];

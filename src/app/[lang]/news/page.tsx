@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { tagLabel } from "@/lib/tags";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +16,25 @@ import { formatReadTime } from "@/lib/read-time";
 import { Provenance } from "@/components/provenance";
 import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
-export const revalidate = 1800;
+/*
+ * There is no `export const revalidate` here any more, and that is not an
+ * omission.
+ *
+ * It said 1800, it read like the thing that kept this page half an hour fresh,
+ * and it did nothing at all: the root layout reads headers() for the CSP nonce,
+ * which makes every page in the tree render per request. Measured on this URL
+ * with the exported value still in place -- Cache-Control came back as
+ * `private, no-cache, no-store, max-age=0, must-revalidate`, which is the
+ * opposite of a 30-minute window.
+ *
+ * The thirty minutes that do exist are the `next: { revalidate: 60 * 30 }` on
+ * each feed fetch in src/lib/live-news.ts, and those keep working whatever this
+ * segment does -- the data cache is not the route cache. Next also infers a
+ * segment's revalidate from the fetches inside it, so should the layout ever
+ * stop calling headers(), this page lands on the same 1800 by itself rather
+ * than freezing. Keeping the line would have meant keeping a number that
+ * described a cache nobody had.
+ */
 
 type NewsSearchParams = {
   topic?: string | string[];
@@ -28,6 +47,135 @@ function formatPublishedDate(date: string, locale: Locale) {
     month: "short",
     day: "numeric"
   }).format(new Date(date));
+}
+
+const WEB_UPDATE_LIMIT = 12;
+
+type WebUpdate = {
+  key: string;
+  topic: string;
+  source: string;
+  publishedAt: string;
+  title: string;
+  summary: string;
+  href: string;
+  briefHref: string;
+};
+
+/** The committed snapshot of the same feeds, which needs no network at all. */
+function snapshotWebUpdates(locale: Locale): WebUpdate[] {
+  return getAutoNews(locale, WEB_UPDATE_LIMIT).map((item) => ({
+    key: `auto-${item.slug}`,
+    topic: item.topic,
+    source: item.source,
+    publishedAt: item.publishedAt,
+    title: item.title,
+    summary: item.summary,
+    href: item.href,
+    briefHref: `/${locale}/news/auto/${item.slug}`
+  }));
+}
+
+function WebUpdatesBody({
+  items,
+  updatedAt,
+  locale
+}: {
+  items: WebUpdate[];
+  updatedAt: string;
+  locale: Locale;
+}) {
+  return (
+    <>
+      {updatedAt ? (
+        <p className="mt-1 text-xs text-[color:var(--muted)]">
+          {locale === "fr" ? "Dernière synchronisation" : "Last sync"}: {formatPublishedDate(updatedAt, locale)}
+        </p>
+      ) : null}
+
+      {items.length ? (
+        <div className="mt-4 grid gap-3">
+          {items.map((item) => (
+            <article key={item.key} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
+              <Provenance
+                source={item.source}
+                topic={item.topic}
+                publishedAt={item.publishedAt}
+                locale={locale}
+                live
+              />
+              <h3 className="mt-2 text-base font-semibold text-[color:var(--text-strong)]">{item.title}</h3>
+              <p className="mt-2 text-sm text-[color:var(--text)]">{item.summary}</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {item.briefHref ? (
+                  <Link href={item.briefHref} className="btn-secondary px-3 py-1.5 text-xs">
+                    {locale === "fr" ? "Lire brief auto" : "Read auto brief"}
+                  </Link>
+                ) : null}
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="do-link inline-block pt-1 text-sm"
+                >
+                  {locale === "fr" ? "Source officielle" : "Official source"}
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <article className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
+          <p className="text-sm text-[color:var(--text)]">
+            {locale === "fr"
+              ? "Aucun nouvel item pour le moment. Revenez plus tard pour les prochaines mises à jour."
+              : "No new items yet. Check back soon for fresh updates."}
+          </p>
+        </article>
+      )}
+    </>
+  );
+}
+
+/**
+ * The only part of this page that touches the network, kept behind its own
+ * Suspense boundary.
+ *
+ * getLiveAiCsUpdates fetches seventeen third-party feeds and used to be awaited
+ * as the first statement of the page component, before a single element of JSX
+ * existed. So the time to first byte for /news was the time of the slowest of
+ * seventeen hosts we do not run, and the twenty-seven hand-written briefs
+ * underneath -- which are plain imports and need nothing -- waited behind them.
+ * Measured before this change: 270.8ms to first byte against 12-18ms for every
+ * other page on the site, and that was with DNS broken, so all seventeen
+ * fetches failed instantly. In production each one is a real request.
+ */
+async function LiveWebUpdates({ locale }: { locale: Locale }) {
+  const liveUpdates = await getLiveAiCsUpdates(WEB_UPDATE_LIMIT);
+
+  if (!liveUpdates.length) {
+    return <WebUpdatesBody items={snapshotWebUpdates(locale)} updatedAt={getAutoNewsUpdatedAt()} locale={locale} />;
+  }
+
+  return (
+    <WebUpdatesBody
+      items={liveUpdates.map((item, index) => ({
+        key: `live-${index}-${item.href}`,
+        topic: item.topic,
+        source: item.source,
+        publishedAt: item.publishedAt,
+        title: item.title,
+        summary:
+          locale === "fr"
+            ? "Mise à jour source officielle capturée en direct."
+            : "Official source update captured from live feed.",
+        href: item.href,
+        briefHref: ""
+      }))}
+      updatedAt={new Date().toISOString()}
+      locale={locale}
+    />
+  );
 }
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
@@ -76,35 +224,6 @@ export default async function LocalizedNewsPage(
   const locale: Locale = params.lang;
   const dict = getDictionary(locale);
   const allBriefs = getLocalizedNews(locale);
-  const autoNews = getAutoNews(locale, 12);
-  const liveUpdates = await getLiveAiCsUpdates(12);
-  const hasLiveUpdates = liveUpdates.length > 0;
-  const autoUpdatedAt = getAutoNewsUpdatedAt();
-  const webUpdates = hasLiveUpdates
-    ? liveUpdates.map((item, index) => ({
-        key: `live-${index}-${item.href}`,
-        topic: item.topic,
-        source: item.source,
-        publishedAt: item.publishedAt,
-        title: item.title,
-        summary:
-          locale === "fr"
-            ? "Mise à jour source officielle capturée en direct."
-            : "Official source update captured from live feed.",
-        href: item.href,
-        briefHref: ""
-      }))
-    : autoNews.map((item) => ({
-        key: `auto-${item.slug}`,
-        topic: item.topic,
-        source: item.source,
-        publishedAt: item.publishedAt,
-        title: item.title,
-        summary: item.summary,
-        href: item.href,
-        briefHref: `/${locale}/news/auto/${item.slug}`
-      }));
-  const webUpdatedAt = hasLiveUpdates ? new Date().toISOString() : autoUpdatedAt;
   const topics = getNewsTopics();
 
   const topicValue = searchParams?.topic;
@@ -282,52 +401,15 @@ export default async function LocalizedNewsPage(
             ? "Ces updates viennent de sources officielles et passent en priorité en haut de la page."
             : "These updates come from official sources and stay prioritized at the top of this page."}
         </p>
-        {webUpdatedAt ? (
-          <p className="mt-1 text-xs text-[color:var(--muted)]">
-            {locale === "fr" ? "Dernière synchronisation" : "Last sync"}: {formatPublishedDate(webUpdatedAt, locale)}
-          </p>
-        ) : null}
-
-        {webUpdates.length ? (
-          <div className="mt-4 grid gap-3">
-            {webUpdates.map((item) => (
-              <article key={item.key} className="rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
-                <Provenance
-                  source={item.source}
-                  topic={item.topic}
-                  publishedAt={item.publishedAt}
-                  locale={locale}
-                  live
-                />
-                <h3 className="mt-2 text-base font-semibold text-[color:var(--text-strong)]">{item.title}</h3>
-                <p className="mt-2 text-sm text-[color:var(--text)]">{item.summary}</p>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {item.briefHref ? (
-                    <Link href={item.briefHref} className="btn-secondary px-3 py-1.5 text-xs">
-                      {locale === "fr" ? "Lire brief auto" : "Read auto brief"}
-                    </Link>
-                  ) : null}
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="do-link inline-block pt-1 text-sm"
-                  >
-                    {locale === "fr" ? "Source officielle" : "Official source"}
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
-        ) : (
-          <article className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
-            <p className="text-sm text-[color:var(--text)]">
-              {locale === "fr"
-                ? "Aucun nouvel item pour le moment. Revenez plus tard pour les prochaines mises à jour."
-                : "No new items yet. Check back soon for fresh updates."}
-            </p>
-          </article>
-        )}
+        {/* The fallback is not a skeleton: it is the committed auto-news
+            snapshot, the same items this block falls back to when the feeds
+            answer with nothing. So the reader gets real, readable, linked
+            headlines in the first flush of HTML and the live set replaces them
+            when it arrives -- rather than an empty page held open by whichever
+            of seventeen hosts is slowest today. */}
+        <Suspense fallback={<WebUpdatesBody items={snapshotWebUpdates(locale)} updatedAt={getAutoNewsUpdatedAt()} locale={locale} />}>
+          <LiveWebUpdates locale={locale} />
+        </Suspense>
       </section>
 
       <div className="mt-6 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">

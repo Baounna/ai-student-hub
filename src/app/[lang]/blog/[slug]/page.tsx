@@ -302,7 +302,7 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
         </h2>
         <p className="mt-2 text-sm text-[color:var(--text)]">
           {locale === "fr"
-            ? "Choisissez votre prochain pas: stages, outils, ou guide carrière."
+            ? "Choisissez votre prochain pas : stages, outils, ou guide carrière."
             : "Pick your next action: internships, tools, or the career guide."}
         </p>
         <div className="mt-4 flex flex-wrap gap-2">

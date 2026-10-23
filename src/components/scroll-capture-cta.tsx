@@ -76,7 +76,17 @@ export function ScrollCaptureCta({ locale }: { locale: Locale }) {
           onClick={() => {
             setStoredValue("scroll_capture_dismissed", "1");
           }}
-          className="mt-2 text-xs text-[color:var(--muted)] underline"
+          // .tap-target, like both of its siblings in this card. At text-xs
+          // with no padding this measured 20.4px tall, under the 24x24 floor
+          // WCAG 2.2 sets in Target Size (Minimum), and none of that rule's
+          // exemptions apply: it is not inline in a sentence, not
+          // browser-default, and there is no second way to dismiss this
+          // banner. It is the smallest control on the site, and it is the one
+          // a reader presses when they want the panel to go away -- missing it
+          // means pressing the thing underneath instead.
+          // -ml-2 px-2 to match: the padding joins the hit area while the
+          // negative margin keeps the word itself flush with the copy above it.
+          className="tap-target -ml-2 mt-2 px-2 text-xs text-[color:var(--muted)] underline"
         >
           {locale === "fr" ? "Fermer" : "Dismiss"}
         </button>

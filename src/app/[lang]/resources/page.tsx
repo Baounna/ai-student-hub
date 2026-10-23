@@ -100,7 +100,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
           },
           {
             q: "Comment savoir si un outil améliore vraiment mon profil ?",
-            a: "Mesurez le résultat: démo en ligne, documentation claire, et meilleure qualité de candidature après 30 jours."
+            a: "Mesurez le résultat : démo en ligne, documentation claire, et meilleure qualité de candidature après 30 jours."
           }
         ]
       : [
@@ -293,7 +293,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             </ul>
             <p className="mt-3 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Repère: suivez le nombre de projets finalisés, la clarté de votre portfolio, et votre régularité."
+                ? "Repère : suivez le nombre de projets finalisés, la clarté de votre portfolio, et votre régularité."
                 : "Reference: track completed projects, portfolio clarity, and weekly consistency."}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">

@@ -529,7 +529,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             </dt>
             <dd className="mt-1 text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Chaque article suit la même structure: signal, impact pratique, action concrète, références."
+                ? "Chaque article suit la même structure : signal, impact pratique, action concrète, références."
                 : "Each article follows the same structure: signal, practical impact, concrete action, and references."}
             </dd>
           </div>
@@ -770,7 +770,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           <div className="space-y-3 p-4 text-sm text-[color:var(--text)]">
             <p>
               {locale === "fr"
-                ? "Progression simple: une boucle claire pour apprendre, construire, et documenter chaque semaine."
+                ? "Progression simple : une boucle claire pour apprendre, construire, et documenter chaque semaine."
                 : "Simple progression loop: learn, build, and document every week."}
             </p>
             <ul className="space-y-2">
@@ -792,7 +792,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             </ul>
             <div className="rounded border border-[color:var(--wiki-panel-border)] bg-[color:var(--surface)] p-3 text-xs text-[color:var(--muted)]">
               {locale === "fr"
-                ? "Repère: suivez votre nombre de projets finalisés, la qualité de documentation, et la constance."
+                ? "Repère : suivez votre nombre de projets finalisés, la qualité de documentation, et la constance."
                 : "Reference: track completed projects, documentation quality, and consistency."}
             </div>
             <div className="flex flex-wrap gap-2">

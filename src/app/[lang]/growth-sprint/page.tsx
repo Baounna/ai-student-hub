@@ -253,7 +253,7 @@ export default async function GrowthSprintPage(props: { params: Promise<{ lang: 
         mid:
           "Pour aller plus vite, ouvrez notre page resources et prenez un outil deploy + un outil productivity.",
         end:
-          "Vous voulez un système complet? Voyez les stages ouverts puis passez au guide étudiant."
+          "Vous voulez un système complet ? Voyez les stages ouverts puis passez au guide étudiant."
       }
     : {
         intro:

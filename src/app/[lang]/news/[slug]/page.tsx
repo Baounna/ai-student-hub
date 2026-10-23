@@ -151,14 +151,14 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
   const crossImpact =
     newsTrack === "cs"
       ? locale === "fr"
-        ? "Impact CS: architecture backend, fiabilité système, et performance déploiement."
+        ? "Impact CS : architecture backend, fiabilité système, et performance déploiement."
         : "CS impact: backend architecture, system reliability, and deployment performance."
       : newsTrack === "ai"
         ? locale === "fr"
-          ? "Impact IA: choix modèle, évaluation, et workflow expérimentation."
+          ? "Impact IA : choix modèle, évaluation, et workflow expérimentation."
           : "AI impact: model selection, evaluation quality, and experimentation workflow."
         : locale === "fr"
-          ? "Impact carrière: portfolio, candidatures, et storytelling entretien."
+          ? "Impact carrière : portfolio, candidatures, et storytelling entretien."
           : "Career impact: portfolio signal, applications, and interview storytelling.";
   const recentSignals = getLocalizedNews(locale).filter((item) => item.slug !== brief.slug).slice(0, 3);
   const topicReference = getTopicReference(brief.topic, locale);

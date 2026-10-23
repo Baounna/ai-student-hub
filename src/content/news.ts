@@ -117,7 +117,7 @@ export const newsBriefs: NewsBrief[] = [
         seoDescription:
           "Ce que montrait un tableau benchmark de février 2026 sur raisonnement, QA scientifique, maths, multimodal et UI/écran -- et pourquoi la page d'origine ne le prouve plus.",
         studentImpact:
-          "Les étudiants peuvent choisir un modèle par type de tâche réelle plutôt que par effet de mode: un modèle pour math/science, un autre pour multimodal ou exécution UI.",
+          "Les étudiants peuvent choisir un modèle par type de tâche réelle plutôt que par effet de mode : un modèle pour math/science, un autre pour multimodal ou exécution UI.",
         takeaways: [
           "Choisissez le modèle selon le type de tâche : le classement change avec le benchmark.",
           "Les pages de benchmarks sont mises à jour sur place. Notez la date et les chiffres utilisés, sinon la preuve disparaît.",

@@ -88,7 +88,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
   // suffix is 14 characters of the same budget. comparison.title still drives
   // the H1, the OG card title and the OG image text below.
   const metadataTitle = comparison.seoTitle || title;
-  // The French description used to be prefixed with "Guide outils étudiant: ".
+  // The French description used to be prefixed with "Guide outils étudiant : ".
   // Twenty-three characters of keywords the English version did without, in
   // front of a lede that was already long: two of these pages came out at 189
   // and 190 characters, so what a French reader actually saw in the results was
@@ -252,10 +252,27 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
             ) : null}
           </section>
 
+          {/* The same treatment the article tables got, which this one -- the
+              table these pages exist for -- never received.
+
+              It is min-w-[760px] inside a 332px content box at 360px, so 428px
+              of it is off-screen, the Tool and Price columns among them. Every
+              cell in those columns is plain text, so there is nothing in them
+              to tab to and a keyboard-only reader had no way to scroll the box
+              at all: the first two columns of the comparison were simply
+              unreachable. tabIndex makes the scroller itself a stop so the
+              arrow keys work, role and aria-label say what the stop is for
+              rather than announcing an unnamed group, and edge-fade-x fades
+              the content past the right edge so a sighted reader can tell it
+              continues -- a clean cut flush with the card border reads as the
+              end of the table. */}
           {safeTools.length ? (
             <section
               id="comparison-table"
-              className="anchor-offset overflow-x-auto rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] shadow-[0_18px_30px_-30px_rgba(8,24,54,0.72)]"
+              tabIndex={0}
+              role="group"
+              aria-label={fr ? "Tableau comparatif, défilement horizontal" : "Comparison table, scrolls horizontally"}
+              className="edge-fade-x anchor-offset overflow-x-auto rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] shadow-[0_18px_30px_-30px_rgba(8,24,54,0.72)]"
             >
               <table className="min-w-[760px] w-full text-left text-sm">
                 <thead className="bg-[color:var(--bg-soft)]/60 text-[color:var(--text)]">

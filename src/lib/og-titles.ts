@@ -4,7 +4,8 @@ import { getLocalizedPosts, getLocalizedComparisons } from "@/content/posts";
 import { getLocalizedNews } from "@/content/news";
 import { getAutoNews } from "@/content/auto-news";
 import { categoryName } from "@/lib/categories";
-import { getAllCategories, getAllTags } from "@/content/posts";
+import { getAllCategories, getAllTags, slugify } from "@/content/posts";
+import { getAllNewsTags } from "@/content/news";
 import { sanitizeTextInput } from "@/lib/input";
 import { siteConfig } from "@/config/site";
 import { countriesWithPages, countryPageTitle } from "@/content/stage-countries";
@@ -78,8 +79,30 @@ function buildKnownTitles(): Set<string> {
       const label = categoryName(category, locale);
       add(locale === "fr" ? `Articles ${label}` : `${label} articles`);
     }
-    for (const tag of getAllTags()) {
-      add(locale === "fr" ? `Articles #${tag}` : `#${tag} articles`);
+    /*
+     * Composed exactly as the page composes it, from exactly the tags the page
+     * builds params for.
+     *
+     * This used the RAW tag, so `project-based-learning` produced "#project-
+     * based-learning articles" while the page renders displayTag(slug) and
+     * publishes "#project based learning articles". normalize() only lowercases
+     * and collapses whitespace, so the two never matched and all 21 dashed tags
+     * fell through to the untitled brand card -- 42 pages. It also iterated
+     * post tags only, while the page's generateStaticParams unions them with
+     * the news tags, so 13 news-only tags were never in this set at all.
+     *
+     * Both halves now come from where the page gets them: slugify, then dashes
+     * to spaces. This is the fourth time this file has been the reason an
+     * og:image was wrong, and the first time the fix was to stop restating the
+     * page's transform and reuse it instead.
+     */
+    const displayTag = (slug: string) => slug.replace(/-/g, " ");
+    const tagSlugs = Array.from(
+      new Set([...getAllTags(), ...getAllNewsTags()].map((tag) => slugify(tag)))
+    );
+    for (const slug of tagSlugs) {
+      const name = displayTag(slug);
+      add(locale === "fr" ? `Articles #${name}` : `#${name} articles`);
     }
     add(stagesPageTitle(locale));
     /*

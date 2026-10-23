@@ -58,11 +58,21 @@
    * WCAG 1.4.11 asks 3:1 for exactly this, and it exempts only inactive or
    * browser-default controls, neither of which these are.
    *
-   * 3.51:1 on white, 3.36:1 on the page ground. Separate from --border on
+   * 3.60:1 on white, 3.45:1 on the page ground. Separate from --border on
    * purpose: darkening every divider to clear a rule written for controls
    * would make a 94-row list look like a spreadsheet.
+   *
+   * It was #848c75, which cleared 3:1 everywhere it was used except the one
+   * place nobody measured: the desktop header search box sits on
+   * --surface-strong and came out at 2.99:1. A hundredth short is still short,
+   * and it was short on the search box present on all 245 pages. #828a73 is
+   * one step darker and takes that pair to 3.07:1; every other pair this token
+   * touches moves the same way and stays above the bar -- 3.07 on
+   * --surface-strong, 3.17 on --bg-soft, 3.45 on --bg, 3.60 on --surface. The
+   * dark theme's value was already clear at 3.88:1 on its worst pair and is
+   * left alone.
    */
-  --control-border: #848c75;
+  --control-border: #828a73;
   --primary: #1b4d3e;
   --primary-strong: #123328;
   --primary-foreground: #ffffff;
@@ -108,7 +118,9 @@ html[data-theme="dark"] {
   --text-strong: #ebefe9;
   --muted: #8b968c;
   --border: #2a322c;
-  /* 3.87:1 against the input fill, 4.66:1 against the page. */
+  /* 3.86:1 against the input fill, 4.66:1 against the page, and 3.88:1 on
+     --surface-strong, which is the pair the light theme failed on. Clear here
+     already, so this value is unchanged. */
   --control-border: #73826f;
   --primary: #6ac3a0;
   --primary-strong: #8ad4b8;
@@ -204,7 +216,16 @@ html[data-content-width="wide"] {
      reach it. Without it listed here it would take the browser default ring,
      which is the one outline on the page nobody chose and which disappears
      against some themes. */
-  .reading-prose pre:focus-visible {
+  .reading-prose pre:focus-visible,
+  /* Same problem, and the comment above had already named it: a code block is
+     not the only thing here made focusable by hand. The horizontal scrollers
+     around the comparison tables carry tabindex="0" so a keyboard can reach
+     the columns that sit off the right edge of a phone, and each of them was
+     taking the browser's own ring instead -- the one outline on the page
+     nobody chose. Keyed on the attribute rather than named one scroller at a
+     time, because the next element given a tabindex by hand should not have to
+     remember to come back here. */
+  [tabindex="0"]:focus-visible {
     outline: 2px solid var(--focus-ring);
     outline-offset: 2px;
   }
@@ -283,10 +304,29 @@ html[data-content-width="wide"] {
     background: var(--primary-strong);
   }
 
+  /*
+   * The outlined button, drawn with a line you can actually see.
+   *
+   * The fill resolves to pure #ffffff in light -- --surface is already white,
+   * so mixing more white into it changes nothing -- which is 1.04:1 against
+   * the #fbfaf7 page. The border was the only thing marking the button's edge,
+   * and it was a 92/8 mix of --border and --text: 1.46:1 in light, 1.72:1 in
+   * dark. So the shape of "View the offer" on all 94 internship rows, and of
+   * the Filter button that submits the keyword search, was something a reader
+   * had to already know was there. WCAG 1.4.11 asks 3:1 for the boundary of a
+   * control, and this is the control a student has to find to apply.
+   *
+   * --control-border is the token the site already keeps for exactly this, and
+   * .field-input, .search-input and .blog-chip were all drawn with it while
+   * the one button sitting on the busiest page was not. 3.45:1 against the
+   * page, 3.60:1 against its own white fill, 3.07:1 on --surface-strong (the
+   * dismissable CTA card, which holds one of these); 4.66, 3.21 and 3.88 in
+   * dark. Hover keeps its pine shift and lands at 5.18:1 light, 3.62:1 dark.
+   */
   .btn-secondary {
     @apply inline-flex items-center justify-center rounded-xl border px-4 text-sm font-semibold;
     min-height: var(--control-height-md);
-    border-color: color-mix(in srgb, var(--border), var(--text) 8%);
+    border-color: var(--control-border);
     color: var(--text-strong);
     background: linear-gradient(
       180deg,
@@ -305,7 +345,7 @@ html[data-content-width="wide"] {
 
   @media (hover: hover) and (pointer: fine) {
     .btn-secondary:hover {
-      border-color: color-mix(in srgb, var(--border), var(--primary) 38%);
+      border-color: color-mix(in srgb, var(--control-border), var(--primary) 38%);
       background: color-mix(in srgb, var(--surface), #ffffff 14%);
       transform: translateY(-1px) scale(1.01);
     }
@@ -313,7 +353,7 @@ html[data-content-width="wide"] {
 
   .btn-secondary:active {
     transform: translateY(0) scale(0.99);
-    border-color: color-mix(in srgb, var(--border), var(--primary) 38%);
+    border-color: color-mix(in srgb, var(--control-border), var(--primary) 38%);
   }
 
   .card-hover {
@@ -1142,6 +1182,42 @@ button.blog-chip {
   display: inline-flex;
   align-items: center;
   min-height: 2.75rem;
+}
+
+/*
+ * A disclosure that still reads as one after it has been given a hit area.
+ *
+ * The "More countries" control on the internship board is a <summary>, and
+ * .tap-target sets display:inline-flex to get it to 44px. Any display other
+ * than list-item removes the browser's own triangle, which left a pill drawn
+ * exactly like the filter chips beside it -- so the one control on that row
+ * that expands something instead of filtering something was the one with
+ * nothing to say so. A screen reader was still told "collapsed"; a sighted
+ * reader was told nothing.
+ *
+ * The caret is drawn here rather than typed into the label so it cannot end up
+ * in the accessible name, and it is rotated rather than swapped for a second
+ * character so the open and closed states are the same glyph pointing two
+ * ways. No transition: a 44px control that rotates a caret under the thumb
+ * that just pressed it is motion nobody asked for.
+ */
+.chip-summary {
+  list-style: none;
+}
+
+.chip-summary::-webkit-details-marker {
+  display: none;
+}
+
+.chip-summary::after {
+  content: "\25BE";
+  display: inline-block;
+  margin-left: 0.4em;
+  font-size: 0.9em;
+}
+
+details[open] > .chip-summary::after {
+  transform: rotate(180deg);
 }
 
 /*

@@ -2,8 +2,8 @@ import { describe, it, expect } from "vitest";
 import { isKnownOgTitle, isKnownCoverSlug, knownOgTitleCount, knownCoverSlugCount } from "@/lib/og-titles";
 import { locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { getLocalizedPosts, getLocalizedComparisons, getAllCategories, getAllTags } from "@/content/posts";
-import { getLocalizedNews } from "@/content/news";
+import { getLocalizedPosts, getLocalizedComparisons, getAllCategories, getAllTags, slugify } from "@/content/posts";
+import { getLocalizedNews, getAllNewsTags } from "@/content/news";
 import { categoryName } from "@/lib/categories";
 import { comparePageTitle, stagesPageTitle } from "@/lib/page-titles";
 import { countriesWithPages, countryPageTitle } from "@/content/stage-countries";
@@ -47,8 +47,24 @@ describe("the set of renderable titles", () => {
         const label = categoryName(category, locale);
         check(locale === "fr" ? `Articles ${label}` : `${label} articles`, `${locale} category ${category}`);
       }
-      for (const tag of getAllTags()) {
-        check(locale === "fr" ? `Articles #${tag}` : `#${tag} articles`, `${locale} tag ${tag}`);
+      /*
+       * From the slug, not the raw tag — and from the same union the page
+       * builds params for.
+       *
+       * This test composed the expected title from the RAW tag, which is
+       * exactly the mistake og-titles.ts was making, so the two agreed with
+       * each other and disagreed with the 42 pages actually shipping. A test
+       * that restates the bug cannot see it. The page does
+       * displayTag(slugify(tag)); so does this, now, and the comment above
+       * claiming this file "reads the same page modules" is finally true of
+       * the tags as well.
+       */
+      const tagSlugs = Array.from(
+        new Set([...getAllTags(), ...getAllNewsTags()].map((tag) => slugify(tag)))
+      );
+      for (const slug of tagSlugs) {
+        const name = slug.replace(/-/g, " ");
+        check(locale === "fr" ? `Articles #${name}` : `#${name} articles`, `${locale} tag ${slug}`);
       }
     }
 

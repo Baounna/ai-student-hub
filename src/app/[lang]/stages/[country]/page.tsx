@@ -9,7 +9,7 @@ import { Newsletter } from "@/components/newsletter";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { ogImageUrl } from "@/lib/seo";
-import { countryLabel, isClosed, type Stage } from "@/content/stages";
+import { countryLabel, isClosed, isStagesListStale, type Stage } from "@/content/stages";
 import {
   countriesWithPages,
   countryFromSlug,
@@ -99,6 +99,10 @@ export default async function StagesByCountryPage(props: {
   const listings: Stage[] = listingsByCountry().get(code) ?? [];
   const openListings = listings.filter((stage) => !isClosed(stage));
   const open = openListings.length;
+  // The same judgment /stages makes, read from the same entries. See
+  // getStagesLastCheckedAt: it is derived from the rows rather than the file's
+  // mtime, because the two disagreed and the page showed the flattering one.
+  const stale = isStagesListStale();
 
   /**
    * The same ItemList /stages carries, scoped to this country.
@@ -152,6 +156,20 @@ export default async function StagesByCountryPage(props: {
       <p className="mt-3 text-[color:var(--text)]">{countryPageBlurb(code, locale)}</p>
       <p className="provenance mt-2">{copy.openCount(open, listings.length)}</p>
 
+      {/* The same warning /stages carries, on the pages a stranger actually
+          lands on. These ten URLs exist because they are what a search for
+          "stage IA Maroc" can reach, so for most readers this page IS the
+          board -- and it was the one version of it that did not admit when the
+          list had gone unchecked. A page of deadlines that quietly goes out of
+          date is worse than one that says so, and the staleness judgment was
+          already computed from the same rows a few files away. */}
+      {stale ? (
+        <div className="mt-6 rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
+          <h2 className="font-semibold text-[color:var(--text-strong)]">{copy.staleTitle}</h2>
+          <p className="mt-1 text-sm text-[color:var(--muted)]">{copy.staleBody}</p>
+        </div>
+      ) : null}
+
       <p className="mt-4 text-sm">
         <Link href={`/${locale}/stages`} className="do-link py-1.5">
           {locale === "fr"
@@ -174,13 +192,33 @@ export default async function StagesByCountryPage(props: {
               <Link
                 key={other}
                 href={countryPagePath(other, locale)}
-                className="tap-target rounded-full border border-[color:var(--border)] px-3 py-1 text-xs text-[color:var(--muted)] transition hover:text-[color:var(--text)]"
+                // --control-border, for the reason written on the board page's
+                // chipClass: --border over no fill is 1.29:1 against the page
+                // in light and 1.44:1 in dark, so these were words with
+                // nothing around them. 3.45:1 and 4.66:1 now.
+                className="tap-target rounded-full border border-[color:var(--control-border)] px-3 py-1 text-xs text-[color:var(--muted)] transition hover:text-[color:var(--text)]"
               >
                 {countryLabel(other, locale)} ({(listingsByCountry().get(other) ?? []).length})
               </Link>
             ))}
           </div>
         </nav>
+      ) : null}
+
+      {/* What "checked" means, on the pages that need it most.
+          These ten country boards are the ones a stranger arrives on from a
+          search, and they rendered the listings, the check dates and the
+          "we could not verify this link" admissions without the paragraph that
+          explains any of it -- the one thing on this site a scraped job board
+          does not have. The copy was already imported here for the row labels;
+          only the section was missing. It also carries the sentence that says
+          deadlines appear only where the employer published one, which is what
+          the rows themselves no longer repeat 92 times. */}
+      {listings.length > 0 ? (
+        <section className="mt-10 border-t border-[color:var(--border)] pt-6">
+          <h2 className="text-sm font-semibold text-[color:var(--text-strong)]">{copy.methodTitle}</h2>
+          <p className="mt-1 max-w-[70ch] text-sm text-[color:var(--muted)]">{copy.methodBody}</p>
+        </section>
       ) : null}
 
       <div className="mt-12">

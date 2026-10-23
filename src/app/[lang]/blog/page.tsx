@@ -361,7 +361,7 @@ export default async function LocalizedBlogPage(
             <div className="mt-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--bg-soft)] p-4">
               <p className="text-sm text-[color:var(--text-strong)]">
                 {locale === "fr"
-                  ? "Mais cela correspond a un outil que nous referencons :"
+                  ? "Mais cela correspond à un outil que nous référençons :"
                   : "It does match a tool we list:"}
               </p>
               <ul className="mt-2 space-y-1 text-sm">
@@ -442,7 +442,7 @@ export default async function LocalizedBlogPage(
 
           {queryRaw && (
             <div className="blog-aside-card rounded-xl p-4 text-sm text-[color:var(--text)]">
-              {locale === "fr" ? "Résultats pour: " : "Results for: "}
+              {locale === "fr" ? "Résultats pour : " : "Results for: "}
               <strong className="text-[color:var(--text-strong)]">{queryRaw}</strong>
               <Link href={`/${locale}/blog`} className="do-link ml-2 text-sm">
                 {locale === "fr" ? "Effacer" : "Clear"}

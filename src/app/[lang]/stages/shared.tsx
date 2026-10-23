@@ -32,7 +32,16 @@ const COPY = {
     empty: "No openings listed yet. The first entries go up this week.",
     closed: "Closed",
     deadline: "Apply by",
-    rolling: "Open until filled - no closing date given",
+    // There was a "rolling" line here -- "Open until filled - no closing date
+    // given", 40 characters -- and 92 of the 94 rows printed it, because only
+    // two listings in the data carry a deadline at all. So the single longest
+    // piece of text in the metadata block was the same sentence repeated 92
+    // times, saying nothing that distinguished one row from the next, and on a
+    // 332px screen it cost a line of its own on nearly every row. The fact is
+    // worth stating once: the method note already closes with "Deadlines are
+    // shown only where the employer published one", in both languages, and
+    // that note now renders on the country pages too. The slot stays for the
+    // two rows that have something to put in it.
     checked: "link checked",
     // Shown instead of a date, never beside one. "link checked 1 October" on a
     // row nobody could read is the kind of small untruth this page exists not
@@ -64,6 +73,10 @@ const COPY = {
       `${breakdown}. ${security} of ${total} are security or cyber roles.`,
     countryPagesLabel: "Internships by country",
     filterCountry: "Country",
+    // The count is in the label, so the disclosure is a decision rather than a
+    // guess: a reader can tell at a glance whether there are eight more
+    // countries behind it or one. See COUNTRY_CHIPS_SHOWN on the board page.
+    filterMoreCountries: (n: number) => `More countries (${n})`,
     filterKind: "Type",
     // "Added", not "Posted". postedAt is the day this board imported the
     // listing, which is a date we can stand behind; the employer's own
@@ -123,7 +136,8 @@ const COPY = {
     empty: "Aucune offre pour le moment. Les premières arrivent cette semaine.",
     closed: "Clôturée",
     deadline: "Candidater avant le",
-    rolling: "Ouverte jusqu'à pourvoi - aucune date limite annoncée",
+    // Retirée pour la même raison qu'en anglais : 92 lignes sur 94 affichaient
+    // la même phrase. La note de méthode la dit une fois, en bas de page.
     checked: "lien vérifié le",
     notVerified: "nous n'avons pas pu vérifier ce lien",
     fromFeed: "via le flux de recrutement de l'employeur",
@@ -143,6 +157,7 @@ const COPY = {
       `${breakdown}. ${security} sur ${total} sont des postes sécurité ou cyber.`,
     countryPagesLabel: "Les stages par pays",
     filterCountry: "Pays",
+    filterMoreCountries: (n: number) => `Autres pays (${n})`,
     filterKind: "Type",
     filterAdded: "Ajoutées",
     filterRecent: (days: number) => `${days} derniers jours`,
@@ -212,6 +227,44 @@ export function StageRow({
   const levelText = formatLevel(stage.level, locale);
   const roleLang = titleLanguage(stage.role, locale);
   /*
+   * The row's secondary facts, in the order a reader asks for them.
+   *
+   * Kind and place answer "is this for me and is it near me"; remote, duration
+   * and level are the follow-up. Splitting them lets the first pair carry the
+   * row's own weight while the rest stays quiet, which is the thing this row
+   * did not have: at 332px it printed five consecutive lines in the same weak
+   * grey, so there was nothing to read first.
+   */
+  const detail = [
+    stage.remote ? remoteLabel(stage.remote, locale) : "",
+    durationText,
+    levelText
+  ]
+    .filter(Boolean)
+    .join(" · ");
+  /*
+   * Where the row came from and when it was last looked at, on one line.
+   *
+   * These were three or four separate spans in a flex-wrap row -- "via
+   * Capgemini careers", "from the employer's job feed", "link checked 21
+   * October 2026" and, when the listing was new, "Recently added" -- and at
+   * 332px each one wrapped onto a line of its own. Every row on the board
+   * carries a source and a check verdict, so that is three to four lines of
+   * 12px grey text per listing, 94 times over, none of them ranked above the
+   * others. They answer one question between them, which is how much this row
+   * can be trusted, so they are one sentence now.
+   *
+   * The comment further down already argued that the recency signal belongs on
+   * the line a reader is reading for dates rather than in a badge beside it,
+   * and then the implementation added a separate span anyway. This is that
+   * argument carried out: same line, same sentence, recoloured and bolded.
+   */
+  const recent = !closed && isRecentlyAdded(stage);
+  const origin = [stage.source ? `${copy.source} ${stage.source}` : "", stage.addedBy === "feed" ? copy.fromFeed : ""]
+    .filter(Boolean)
+    .join(" · ");
+  const hasVerdict = Boolean(stage.unverifiable || stage.checkedAt);
+  /*
    * A row, not a card.
    *
    * This was rounded-xl + border + bg-surface + p-4 on every one of 102
@@ -246,7 +299,19 @@ export function StageRow({
           * list of 102 links navigable. The heading is the one a reader
           * actually browses by.
           */}
-        <h2 className="text-base font-semibold text-[color:var(--text-strong)]" lang={roleLang}>
+        {/* Clamped on phones only. Three roles on the board run past 100
+            characters and one runs to 199 -- "Comment optimiser les processus
+            operationnels en tirant profit de la GenAI..." -- which is five
+            lines of 16px semibold at 332px, a paragraph where a title should
+            be, pushing everything that tells a reader whether to care about
+            the row off the screen. A screen reader loses nothing: the apply
+            link's accessible name carries the role in full, which is why it
+            was given one. Above 640px there is room for the whole thing, so
+            the clamp lifts. */}
+        <h2
+          className="line-clamp-3 text-base font-semibold text-[color:var(--text-strong)] sm:line-clamp-none"
+          lang={roleLang}
+        >
           {stage.role}
         </h2>
         <span className="text-sm text-[color:var(--muted)]">— {stage.company}</span>
@@ -257,82 +322,90 @@ export function StageRow({
         ) : null}
       </div>
 
-      <p className="provenance mt-2">
+      {/* Kind and place in --text, the rest left in --muted. .provenance paints
+          its whole line --muted, so this row handed a reader five consecutive
+          lines of the same grey and no way to tell which one to read first.
+          These two are the facts that decide whether to keep reading -- what
+          kind of contract it is and where it is -- so they get the row's own
+          ink at 9.67:1, and remote, duration and level stay at 5.72:1 behind
+          them. The flex gap on .provenance supplies the space before the
+          second span, so the separator is written without one. */}
+      <p className="provenance mt-2 text-[color:var(--text)]">
         {kindLabel(stage.kind, locale)} · {place}
-        {stage.remote ? ` · ${remoteLabel(stage.remote, locale)}` : ""}
-        {durationText ? ` · ${durationText}` : ""}
-        {levelText ? ` · ${levelText}` : ""}
+        {detail ? <span className="text-[color:var(--muted)]">{`· ${detail}`}</span> : null}
       </p>
 
-      <div className="mt-3 flex flex-wrap items-center gap-3">
-        {/* An entry with no published closing date says so plainly.
-            Showing a date we made up would be worse than showing none. */}
-        {stage.deadline ? (
-          <span className="text-sm text-[color:var(--text)]">
-            {copy.deadline} {dateFmt.format(new Date(`${stage.deadline}T12:00:00Z`))}
-          </span>
-        ) : (
-          <span className="text-sm text-[color:var(--muted)]">{copy.rolling}</span>
-        )}
-        {!closed ? (
-          <a
-            href={stage.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={copy.applyLabel(stage.role, stage.company, place)}
-            className="btn-secondary px-3 py-1.5 text-xs"
-          >
-            {copy.apply}
-          </a>
-        ) : null}
-        {stage.source ? (
-          <span className="text-xs text-[color:var(--muted)]">
-            {copy.source} {stage.source}
-          </span>
-        ) : null}
-        {/*
-          * The freshness signal is the line that was already here, weighted --
-          * not a pill beside the title.
-          *
-          * "Recently added" used to be a bordered accent pill up by the role.
-          * LinkedIn marks a fresh posting by recolouring and bolding the
-          * timestamp it already renders -- same element, same slot, same text
-          * -- which is why its rows stay exactly the same height whether a job
-          * is new or not. A pill adds a box, competes with the title, and spends
-          * the accent on a third thing. This says the same fact in the place a
-          * reader already looks for dates.
-          *
-          * Still "added", never "posted": postedAt is the day this board
-          * imported the listing, and the employer's own publication date is not
-          * in the data.
-          */}
-        {/*
-          * Added AND checked, not one or the other.
-          *
-          * The recency signal replaced the verification date instead of sitting
-          * beside it, so the 31 newest rows showed no check date at all -- and
-          * the site promises on four pages that "every entry says when". The
-          * freshest third of the board was the part that did not, which is also
-          * where a dead Bosch listing sat reading "Recently added" with no date
-          * to question.
-          */}
-        {!closed && isRecentlyAdded(stage) ? (
-          <span className="text-xs font-semibold text-[color:var(--primary)]">{copy.recentBadge}</span>
-        ) : null}
-        {/* Which kind of listing this is, said here rather than only in the
-            method note at the foot of the page. A reader deciding on one row
-            should not have to go looking for how it was verified. */}
-        {stage.addedBy === "feed" ? (
-          <span className="text-xs text-[color:var(--muted)]">{copy.fromFeed}</span>
-        ) : null}
+      {/* Guarded, because a closed row with no deadline has nothing to put in
+          here and the wrapper's own top margin would be 12px of blank page on
+          every one of them. */}
+      {stage.deadline || !closed ? (
+        <div className="mt-3 flex flex-wrap items-center gap-3">
+          {/* Only the two rows that actually have a closing date. This slot used
+              to render "Open until filled - no closing date given" on the other
+              92, which is explained where copy.deadline is declared. Showing a
+              date we made up would still be worse than showing none. */}
+          {stage.deadline ? (
+            <span className="text-sm text-[color:var(--text)]">
+              {copy.deadline} {dateFmt.format(new Date(`${stage.deadline}T12:00:00Z`))}
+            </span>
+          ) : null}
+          {!closed ? (
+            <a
+              href={stage.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={copy.applyLabel(stage.role, stage.company, place)}
+              className="btn-secondary px-3 py-1.5 text-xs"
+            >
+              {copy.apply}
+            </a>
+          ) : null}
+        </div>
+      ) : null}
+
+      {/*
+        * The freshness signal is the line that was already here, weighted --
+        * not a pill beside the title.
+        *
+        * "Recently added" used to be a bordered accent pill up by the role.
+        * LinkedIn marks a fresh posting by recolouring and bolding the
+        * timestamp it already renders -- same element, same slot, same text --
+        * which is why its rows stay exactly the same height whether a job is
+        * new or not. A pill adds a box, competes with the title, and spends the
+        * accent on a third thing. This says the same fact in the place a reader
+        * already looks for dates.
+        *
+        * Still "added", never "posted": postedAt is the day this board imported
+        * the listing, and the employer's own publication date is not in the
+        * data.
+        *
+        * Added AND checked, not one or the other. The recency signal once
+        * replaced the verification date instead of sitting beside it, so the 31
+        * newest rows showed no check date at all -- and the site promises on
+        * four pages that "every entry says when". The freshest third of the
+        * board was the part that did not, which is also where a dead Bosch
+        * listing sat reading "Recently added" with no date to question. Both
+        * are still here. They are one line now rather than four spans, built
+        * from the `recent` and `origin` constants above, and the claim those
+        * four pages make is unchanged: a check date, or the admission that we
+        * could not get one, never silence.
+        *
+        * The feed origin is still said on the row rather than only in the
+        * method note, because a reader deciding on one listing should not have
+        * to go looking for how it was verified. It has simply moved into the
+        * same sentence as the source it qualifies.
+        */}
+      <p className="mt-2 text-xs text-[color:var(--muted)]">
+        {recent ? <span className="font-semibold text-[color:var(--primary)]">{copy.recentBadge}</span> : null}
+        {recent && (origin || hasVerdict) ? " · " : ""}
+        {origin}
+        {origin && hasVerdict ? " · " : ""}
         {stage.unverifiable ? (
-          <span className="text-xs text-[color:var(--muted)]">{copy.notVerified}</span>
+          copy.notVerified
         ) : stage.checkedAt ? (
-          <span className="text-xs text-[color:var(--muted)]">
-            {copy.checked} {dateFmt.format(new Date(`${stage.checkedAt}T12:00:00Z`))}
-          </span>
+          `${copy.checked} ${dateFmt.format(new Date(`${stage.checkedAt}T12:00:00Z`))}`
         ) : null}
-      </div>
+      </p>
     </li>
   );
 }

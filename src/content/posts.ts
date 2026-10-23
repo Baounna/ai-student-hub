@@ -209,7 +209,7 @@ const fallbackRecommendedTools: RecommendedTool[] = [
     category: { en: "Cloud/DevOps", fr: "Cloud/DevOps" },
     summary: {
       en: "Deploy AI and backend services quickly with free credits, managed databases, and simple scaling.",
-      fr: "Déploie rapidement des services IA et backend avec crédits gratuits, base managée et mise à l'échelle simple."
+      fr: "Déployez rapidement des services IA et backend avec crédits gratuits, base managée et mise à l'échelle simple."
     },
     benefit: {
       en: "Best for student demos, API deployments, and portfolio-grade delivery.",
@@ -727,7 +727,7 @@ export const comparisons: ComparisonPage[] = [
           fr: {
             price: "Instance Free 0 $/mois ; Starter 7 $/mois",
             bestFor: "Équipes qui veulent des déploiements décrits dans un fichier, pas dans un tableau de bord",
-            summary: "Un seul render.yaml déclare les services, donc l'environnement est relisible dans une pull request. L'instance Free se met en veille après 15 minutes d'inactivité, ce qui convient à une démo et pas à une tâche planifiée."
+            summary: "Un seul render.yaml déclare les services, donc l'environnement peut être relu en pull request. L'instance Free se met en veille après 15 minutes d'inactivité, ce qui convient à une démo et pas à une tâche planifiée."
           }
         }
       },
@@ -1453,7 +1453,7 @@ const basePosts: BlogPost[] = [
     references: [
       {
         source: "Google Cloud",
-        label: { en: "MLOps: Continuous delivery and automation pipelines", fr: "MLOps: pipelines de livraison continue et automatisation" },
+        label: { en: "MLOps: Continuous delivery and automation pipelines", fr: "MLOps : pipelines de livraison continue et automatisation" },
         href: "https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning"
       },
       {
@@ -1594,7 +1594,7 @@ const basePosts: BlogPost[] = [
         ]
       },
       fr: {
-        title: "Roadmap stage IA: de zéro signal à prêt pour l'entretien en 90 jours",
+        title: "Roadmap stage IA : de zéro signal à prêt pour l'entretien en 90 jours",
         seoTitle: "Roadmap stage IA : entretien en 90 jours",
         excerpt: "Un plan d'exécution sur 90 jours pour construire autorité, améliorer candidatures et obtenir des entretiens.",
         content: [
@@ -1775,7 +1775,7 @@ const basePosts: BlogPost[] = [
         ]
       },
       fr: {
-        title: "Roadmap informatique pour builders IA: ce qui compte vraiment",
+        title: "Roadmap informatique pour builders IA : ce qui compte vraiment",
         seoTitle: "Roadmap informatique pour builders IA",
         excerpt:
           "Un plan CS ciblé pour étudiants IA qui veulent de meilleures performances, des systèmes propres et de meilleures réponses en entretien.",

@@ -80,7 +80,13 @@ export function MobileQuickNav({ locale }: { locale: Locale }) {
 
   return (
     <nav
-      aria-label="Mobile quick navigation"
+      // Hardcoded English on all 122 French pages, announced as "Mobile quick
+      // navigation" to a French screen-reader user through a French
+      // synthesiser. It is the only landmark label on the site that was not
+      // localised -- every item inside it already is -- and it names the
+      // navigation bar that is permanently on screen on a phone, so it is the
+      // first thing a landmark list offers.
+      aria-label={locale === "fr" ? "Navigation rapide mobile" : "Mobile quick navigation"}
       className="fixed inset-x-3 bottom-3 z-40 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface-strong)] p-1.5 shadow-[0_24px_40px_-24px_rgba(7,19,42,0.8)] backdrop-blur-xl transition-transform duration-300 md:hidden"
       style={{ paddingBottom: "calc(0.375rem + env(safe-area-inset-bottom) * 0.4)" }}
     >
