@@ -388,6 +388,64 @@ export function scheduledWorkflowProblems(expected, lastRuns, now = Date.now()) 
  * said so. Asking each scheduled workflow about its own last run, by name, is
  * the only version of this check that can notice an absence.
  */
+/**
+ * Employer boards the finder lost, reported where a person will see it.
+ *
+ * The finder writes degradedSources into docs/agent/stage-candidates.json: the
+ * boards that answered last Thursday and do not answer now. It cannot raise
+ * this itself without failing a run that otherwise did everything right, and a
+ * line in a green run's log is where the last two silent failures hid.
+ *
+ * Advisory, because a lost board is not the site being broken -- it is the
+ * board quietly stopping growing, which is the slower and more expensive
+ * failure. It clears itself the moment the next run finds the source answering
+ * again, so it cannot become a light that is always on.
+ */
+async function checkDegradedSources() {
+  let parsed;
+  try {
+    const raw = await fs.readFile(path.join(process.cwd(), "docs/agent/stage-candidates.json"), "utf8");
+    parsed = JSON.parse(raw);
+  } catch {
+    record("Employer boards", true, "no board report to read yet");
+    return;
+  }
+
+  /*
+   * A report with no degradedSources field has not been CHECKED; it is not a
+   * report of health. Reading the absence of the field as "every board is fine"
+   * is the same mistake as the close step that treated an unset output as
+   * permission to close a live request -- twice today, absence of evidence read
+   * as evidence. Until the finder next runs, say exactly that.
+   */
+  if (!Array.isArray(parsed.degradedSources)) {
+    record(
+      "Employer boards",
+      true,
+      "the last board report predates this check — the next finder run will fill it in"
+    );
+    return;
+  }
+  const degraded = parsed.degradedSources;
+
+  if (!degraded.length) {
+    record("Employer boards", true, "every board that answered last run still answers");
+    return;
+  }
+
+  const named = degraded
+    .slice(0, 4)
+    .map((d) => `${d.board} (was ${d.was})`)
+    .join(", ");
+  record(
+    "Employer boards",
+    false,
+    `${degraded.length} stopped answering since the last run: ${named}${degraded.length > 4 ? ", …" : ""}`,
+    false,
+    true
+  );
+}
+
 async function checkScheduledWorkflowsStillFiring() {
   let expected;
   try {
@@ -823,6 +881,7 @@ async function run() {
   // green: verified against the live run of 2026-10-01, whose output has no
   // "Scheduled workflows" line at all.
   await checkScheduledWorkflowsStillFiring();
+  await checkDegradedSources();
   await checkVerifyScript("Agent health", "verify:agents");
   await checkVerifyScript("Security config", "verify:security");
   await checkVerifyScript("Public content", "verify:public-content");

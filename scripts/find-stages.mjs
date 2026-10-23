@@ -191,6 +191,50 @@ async function getJson(url, init) {
  * So every candidate is fetched once before it is written. The cap means at most
  * fifteen requests a week, spread across employers by the per-company limit.
  */
+/**
+ * Boards that worked last run and do not work now.
+ *
+ * The finder polls 44 employer boards and prints a line each. A board that
+ * breaks prints "unreachable -- HTTP 404" into a log nobody reads, the run
+ * exits 0, and the finder goes quietly blind while still reporting success.
+ * That is this project's recurring failure: the missing env block hid for a
+ * week, the watchdog's red light hid a real break for three days. Attribution
+ * without consequence is not a signal.
+ *
+ * Two shapes count, and the second is the one worth having:
+ *
+ *   - it errors now and did not before. Loud, easy.
+ *   - it answers cleanly with ZERO jobs having answered with hundreds last
+ *     week. No error at all. This is how an API that renamed a field dies:
+ *     `Array.isArray(data.jobs)` still passes, the array is just empty now, and
+ *     everything downstream looks like an employer who simply has no openings.
+ *
+ * Only boards that WERE working are compared. A board that has never answered
+ * is a bad entry in the source list, not a regression, and flagging it every
+ * Thursday is how a warning becomes something you learn to delete unread.
+ *
+ * A fall from 678 to 3 is deliberately not flagged. Hiring really does slow
+ * down, and a threshold would make this a guess; zero is the one number that
+ * cannot be explained away.
+ */
+export function sourceRegressions(previous = [], current = []) {
+  const before = new Map(
+    (Array.isArray(previous) ? previous : []).map((board) => [board.board, board])
+  );
+  const out = [];
+  for (const now of Array.isArray(current) ? current : []) {
+    const was = before.get(now.board);
+    const wasScanned = Number(was?.scanned ?? 0);
+    if (!was || wasScanned <= 0) continue;
+    if (now.error) {
+      out.push({ board: now.board, was: wasScanned, reason: `unreachable — ${now.error}` });
+    } else if (Number(now.scanned ?? 0) === 0) {
+      out.push({ board: now.board, was: wasScanned, reason: "answered with an empty board" });
+    }
+  }
+  return out;
+}
+
 export function linkVerdict({ status, text, raw, href, finalUrl, now = Date.now() }) {
   // Refused is not gone. A listing we could not reach is one no row may claim we
   // read, so it is not added -- but it is not called dead either, and it goes to
@@ -788,12 +832,50 @@ if (invokedDirectly) {
     );
   }
 
+  // Read last run's report BEFORE overwriting it: the committed file is the only
+  // record of which boards were working a week ago.
+  let previousBoards = [];
+  try {
+    previousBoards = JSON.parse(await fs.readFile(OUT_JSON, "utf8")).boards ?? [];
+  } catch {
+    // First run, or a malformed file. Nothing to compare against is not a fault.
+  }
+  const degraded = sourceRegressions(previousBoards, sourceReport);
+
   await fs.mkdir(OUT_DIR, { recursive: true });
   await fs.writeFile(OUT_MD, `${buildMarkdown().join("\n")}\n`);
   await fs.writeFile(
     OUT_JSON,
-    `${JSON.stringify({ generatedAt: today, boards: sourceReport, candidates: picked }, null, 2)}\n`
+    `${JSON.stringify(
+      { generatedAt: today, boards: sourceReport, degradedSources: degraded, candidates: picked },
+      null,
+      2
+    )}\n`
   );
+
+  /*
+   * One marker the workflow greps, and a step summary that shows up on a GREEN
+   * run -- which is the only kind of run this will happen on, since a broken
+   * board does not stop the finder from doing everything else correctly.
+   */
+  if (degraded.length) {
+    console.log(`\n  SOURCES DEGRADED — ${degraded.length} board(s) worked last run and do not now:`);
+    for (const d of degraded) console.log(`    ${d.board}: scanned ${d.was} last run, ${d.reason}`);
+    if (process.env.GITHUB_STEP_SUMMARY) {
+      const lines = [
+        "### Employer boards that stopped answering",
+        "",
+        "These worked on the previous run. A board that answers with an empty list",
+        "rather than an error is usually a renamed field, not an employer with no jobs.",
+        "",
+        ...degraded.map((d) => `- **${d.board}** — scanned ${d.was} last run, ${d.reason}`),
+        ""
+      ].join("\n");
+      try {
+        await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `${lines}\n`, "utf8");
+      } catch {}
+    }
+  }
 
   console.log(`\n  ${candidates.length} matched · ${unique.length} not already listed · ${picked.length} written`);
   console.log(`  ${path.relative(ROOT, OUT_MD)}`);
