@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-25T11:21:39.872Z",
+  "updatedAt": "2026-10-25T20:48:02.126Z",
   "items": [
     {
       "slug": "20261023-origin-range-requests-serving-large-files-without-range-request--94660a1a",
@@ -2986,25 +2986,6 @@
       }
     },
     {
-      "slug": "20260910-nist-developed-quantum-sensors-improve-nuclear-monitoring-f07e8993",
-      "topic": "Security & Standards",
-      "source": "NIST News",
-      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/09/nist-developed-quantum-sensors-improve-nuclear-monitoring",
-      "publishedAt": "2026-09-10T12:00:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "NIST-Developed Quantum Sensors Improve Nuclear Monitoring",
-          "summary": "New X-ray measurements will allow scientists to more accurately monitor nuclear material at power plants and weapons facilities."
-        },
-        "fr": {
-          "title": "NIST-Developed Quantum Sensors Improve Nuclear Monitoring",
-          "summary": "New X-ray measurements will allow scientists to more accurately monitor nuclear material at power plants and weapons facilities."
-        }
-      }
-    },
-    {
       "slug": "20260914-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -3571,25 +3552,6 @@
         "fr": {
           "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
           "summary": "Microsoft is advancing Azure cloud infrastructure with more efficient systems and Circular Centers that extend the useful life of datacenter hardware. The post Responsible infrastructure at hyperscale: Managing the full lifecycle…"
-        }
-      }
-    },
-    {
-      "slug": "20260910-kubernetes-v137-scheduler-preemption-for-in-place-pod-resize-alp-e2763381",
-      "topic": "Computer Science",
-      "source": "Kubernetes Blog",
-      "sourceFeed": "https://kubernetes.io/feed.xml",
-      "href": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
-      "publishedAt": "2026-09-10T18:30:00.000Z",
-      "discoveredAt": "2026-09-12T13:22:21.927Z",
-      "locales": {
-        "en": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
-        },
-        "fr": {
-          "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
-          "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, applic…"
         }
       }
     },
@@ -4559,6 +4521,44 @@
         "fr": {
           "title": "Partnerships",
           "summary": "sion, a federal initiative to accelerate scientific and technological discovery through AI. Oct 8, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20261014-inside-hyperdrive-how-we-solved-a-rare-hyperdrive-mysql-caching--3dc14211",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/hyperdrive-mysql/",
+      "publishedAt": "2026-10-14T13:00:00.000Z",
+      "discoveredAt": "2026-10-25T20:48:02.126Z",
+      "locales": {
+        "en": {
+          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
+          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
+        },
+        "fr": {
+          "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
+          "summary": "While adding MySQL support to Hyperdrive, we found a subtle protocol bug when caching query results. Here is how we tracked down a 0.001% rate error and made Hyperdrive MySQL generally available."
+        }
+      }
+    },
+    {
+      "slug": "20261021-how-us-hunger-connects-leaders-and-data-using-amazon-quick-287298ad",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-u-s-hunger-connects-leaders-and-data-using-amazon-quick/",
+      "publishedAt": "2026-10-21T19:19:50.000Z",
+      "discoveredAt": "2026-10-25T20:48:02.126Z",
+      "locales": {
+        "en": {
+          "title": "How U.S. Hunger connects leaders and data using Amazon Quick",
+          "summary": "U.S. Hunger, a nonprofit addressing food insecurity, uses Amazon Quick to connect organizational data with leadership decisions. Leaders explore applicant data directly, share KPI definitions and financial context in Quick Spaces…"
+        },
+        "fr": {
+          "title": "How U.S. Hunger connects leaders and data using Amazon Quick",
+          "summary": "U.S. Hunger, a nonprofit addressing food insecurity, uses Amazon Quick to connect organizational data with leadership decisions. Leaders explore applicant data directly, share KPI definitions and financial context in Quick Spaces…"
         }
       }
     }
