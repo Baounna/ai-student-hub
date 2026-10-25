@@ -2,7 +2,9 @@ import { readFileSync } from "node:fs";
 import { describe, it, expect } from "vitest";
 import sources from "@/content/stage-sources.json";
 import {
-  splitLocation
+  splitLocation,
+  IS_DOCTORAL_POSITION,
+  IS_RELEVANT
   // @ts-expect-error - plain .mjs script, no types
 } from "../scripts/find-stages.mjs";
 
@@ -81,13 +83,28 @@ describe("the internship finder", () => {
     expect(AGENT.toLowerCase()).not.toContain("linkedin.com/jobs/view");
   });
 
-  it("requires a posting to be an internship AND about AI or security", () => {
+  it("requires a posting to be a student position AND about AI or security", () => {
     // Either gate alone is useless: "intern" returns accountants, "security"
     // returns a bank's full-time SOC lead.
+    //
+    // The first gate widened when the board gained doctorates: a funded thesis
+    // carries no internship word, so IS_STUDENT_POSITION is the union of
+    // IS_INTERNSHIP and IS_DOCTORAL_POSITION. The relevance gate is unchanged
+    // and still mandatory, which is the half that does the real filtering.
     expect(AGENT).toContain("IS_INTERNSHIP");
+    expect(AGENT).toContain("IS_DOCTORAL_POSITION");
     expect(AGENT).toContain("IS_RELEVANT");
-    expect(AGENT).toMatch(/if \(!IS_INTERNSHIP\.test\(role\)\) return;/);
+    expect(AGENT).toMatch(/const IS_STUDENT_POSITION = \(role\) =>\s*\n?\s*IS_INTERNSHIP\.test\(role\) \|\| IS_DOCTORAL_POSITION\.test\(role\);/);
+    expect(AGENT).toMatch(/if \(!IS_STUDENT_POSITION\(role\)\) return;/);
     expect(AGENT).toMatch(/if \(!IS_RELEVANT\.test\(role\)\) return;/);
+  });
+
+  it("still admits nothing on a doctoral marker alone", () => {
+    // Widening the first gate must not widen the second. "Doctoral Researcher
+    // in Medieval History" passes IS_DOCTORAL_POSITION and must still be
+    // rejected by relevance.
+    expect(IS_DOCTORAL_POSITION.test("Doctoral Researcher in Medieval History")).toBe(true);
+    expect(IS_RELEVANT.test("Doctoral Researcher in Medieval History")).toBe(false);
   });
 
   it("sends Content-Type to Workday, which answers 500 without it", () => {

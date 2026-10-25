@@ -1,7 +1,24 @@
 import type { Locale } from "@/i18n/config";
 import raw from "@/content/stages.json";
 
-export type StageKind = "stage" | "alternance" | "pfe";
+/**
+ * "doctorat" is a funded thesis contract, not an internship.
+ *
+ * It belongs on this board because the reader is a final-year student
+ * choosing between a PFE and a thesis, and the PFE rows are already here.
+ *
+ * It will mostly arrive by hand. Checked before adding it: ADUM answers
+ * `Disallow: /`, FindAPhD disallows its own search pages, and EURAXESS, ABG
+ * and jobs.ac.uk publish no feed, no API and no autodiscovery -- so there is
+ * no legitimate automatic source, exactly as with the Moroccan listings. The
+ * 38 Greenhouse and Ashby boards the finder polls returned two doctoral-level
+ * roles on 25 October, and both were "PhD Intern", which is an internship for
+ * someone already doing a doctorate rather than a doctorate.
+ *
+ * Every Record keyed on this type is exhaustive, so adding the member here is
+ * what names the places that need the new word.
+ */
+export type StageKind = "stage" | "alternance" | "pfe" | "doctorat";
 export type StageRemote = "onsite" | "hybrid" | "remote";
 
 export type Stage = {
@@ -274,7 +291,12 @@ export function getOpenStages(now = Date.now()) {
 const KIND_LABELS: Record<StageKind, Record<Locale, string>> = {
   stage: { en: "Internship", fr: "Stage" },
   alternance: { en: "Apprenticeship", fr: "Alternance" },
-  pfe: { en: "Final-year project", fr: "PFE" }
+  pfe: { en: "Final-year project", fr: "PFE" },
+  // "Doctorat" in French, not "Thèse": the offer is a contract, and that is
+  // the word the offers themselves use. English keeps "PhD position" rather
+  // than "doctorate", because a reader scanning a row wants the thing they
+  // would apply for, not the qualification it ends in.
+  doctorat: { en: "PhD position", fr: "Doctorat" }
 };
 
 const REMOTE_LABELS: Record<StageRemote, Record<Locale, string>> = {

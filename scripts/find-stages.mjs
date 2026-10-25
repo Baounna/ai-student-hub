@@ -138,7 +138,10 @@ const UA =
 const IS_INTERNSHIP =
   /\b(intern|internship|stage|stagiaire|alternan(?:ce|t)|apprenti|apprenticeship|working student|werkstudent|praktikum|thesis|master thesis|pfe|co-?op|placement|trainee)\b/i;
 
-const IS_RELEVANT =
+/** Either gate opens the door; the kind is decided separately in toStage. */
+const IS_STUDENT_POSITION = (role) => IS_INTERNSHIP.test(role) || IS_DOCTORAL_POSITION.test(role);
+
+export const IS_RELEVANT =
   /\b(ai|a\.i\.|artificial intelligence|machine learning|deep learning|ml|mlops|nlp|llm|genai|generative|data scien|data engineer|computer vision|cyber|cybers[ée]curit|security|s[ée]curit|infosec|soc|siem|pentest|penetration|forensic|cryptograph|malware|threat)\b/i;
 
 /**
@@ -156,6 +159,18 @@ const IS_RELEVANT =
  */
 const WRONG_FUNCTION =
   /\b(accounting|accountant|finance|financial|audit|tax|payroll|procurement|operations analyst|partnership|partnerships|sales|account executive|marketing|communications|recruit|talent acquisition|human resources|legal|counsel|customer success|supply chain|logistics)\b/i;
+
+/**
+ * A doctoral POSITION, not a job that happens to require a doctorate.
+ *
+ * A bare "phd" is useless here: "Research Scientist (PhD)" is a staff job
+ * where the doctorate is an entry requirement, and "PhD Research Intern" --
+ * two of which are live on polled boards right now -- is a summer internship
+ * for someone already doing one. Both would be wrong on a row labelled
+ * "Doctorat". So the marker has to be followed by a word naming the position.
+ */
+export const IS_DOCTORAL_POSITION =
+  /\b(?:phd|ph\.d\.?|doctoral)[\s-]+(?:position|student|candidate|researcher|research fellow|fellowship|vacancy|opportunit)|\b(?:doctorant|doctorante|doktorand(?:in)?|dphil|contrat doctoral|th[eè]se de doctorat)\b/i;
 
 /** Seniority words that mean the "intern" in the title was a department name. */
 const IS_SENIOR = /\b(senior|staff|principal|lead|director|head of|manager|vp|chief)\b/i;
@@ -460,7 +475,7 @@ export function splitLocation(location) {
 
 function consider({ company, role, location, href, source }) {
   if (!role || !href) return;
-  if (!IS_INTERNSHIP.test(role)) return;
+  if (!IS_STUDENT_POSITION(role)) return;
   if (!IS_RELEVANT.test(role)) return;
   if (WRONG_FUNCTION.test(role)) return;
   if (IS_SENIOR.test(role) && !/\b(intern|stagiaire|alternan)/i.test(role)) return;
@@ -708,11 +723,28 @@ if (invokedDirectly) {
   }
 
   function toStage(c) {
+    /*
+     * A doctoral marker only means "doctorat" when no internship word is
+     * present.
+     *
+     * "PhD Research Intern" and "PhD GenAI Research Scientist Intern" are both
+     * real titles on polled boards, and both are summer internships FOR someone
+     * already doing a doctorate -- not a funded thesis. Measured on 25 October:
+     * those two were the entire doctoral-looking yield of 38 Greenhouse and
+     * Ashby boards, and neither is a doctorate. Classifying them as one would
+     * put an internship on a board row reading "Doctorat".
+     *
+     * "Master thesis" stays pfe, which is what it is.
+     */
+    const doctoral = IS_DOCTORAL_POSITION.test(c.role);
+    const internshipWord = /\b(intern|internship|stage|stagiaire|praktikum|co-?op|placement|trainee)\b/i.test(c.role);
     const kind = /\b(alternan|apprenti|apprenticeship|working student|werkstudent)\b/i.test(c.role)
       ? "alternance"
-      : /\b(pfe|thesis|fin d'?[ée]tudes)\b/i.test(c.role)
-        ? "pfe"
-        : "stage";
+      : doctoral && !internshipWord
+        ? "doctorat"
+        : /\b(pfe|thesis|fin d'?[ée]tudes)\b/i.test(c.role)
+          ? "pfe"
+          : "stage";
     return {
       id: `${slugify(c.company)}-${slugify(c.role)}-${slugify(c.city || c.country || "remote")}-rolling`,
       role: c.role,
@@ -798,7 +830,26 @@ if (invokedDirectly) {
    */
   let written = 0;
   if (WRITE) {
-    const placeable = picked.filter((c) => c.country && SERVED_COUNTRIES.has(c.country));
+    /*
+     * A doctoral candidate never auto-adds. It goes to the review file.
+     *
+     * The first run of the widened gate returned "PhD Researcher, AI Research"
+     * at Autodesk, and I cannot tell from the title whether that is a funded
+     * thesis or a staff research role that requires a doctorate. Only the page
+     * says, and a row labelled "Doctorat" that is actually a staff job is
+     * exactly the kind of small untruth this board is built not to tell.
+     *
+     * Internships do not need this because "Intern" in a title means the thing
+     * it says. "PhD" does not: it is the position in "PhD Student" and a
+     * requirement in "Research Scientist (PhD)", and the honest ones in between
+     * need somebody to read the posting.
+     *
+     * Same shape as the Workday and Ashby candidates, which also wait because a
+     * fetch cannot settle what they are.
+     */
+    const placeable = picked.filter(
+      (c) => c.country && SERVED_COUNTRIES.has(c.country) && !IS_DOCTORAL_POSITION.test(c.role)
+    );
     // Seeded with what each employer already holds, so the ceiling counts the
     // board and not just this run.
     const perCompany = new Map();

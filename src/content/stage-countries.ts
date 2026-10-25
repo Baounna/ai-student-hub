@@ -191,12 +191,15 @@ function capitalize(word: string): string {
  * those pages, which is a reader scrolling for an alternance that was never
  * there.
  */
-const KIND_ORDER: readonly StageKind[] = ["stage", "alternance", "pfe"];
+// Doctorat last: it is the longest commitment and the smallest set, so a
+// title that has to be cut keeps the words more readers are searching for.
+const KIND_ORDER: readonly StageKind[] = ["stage", "alternance", "pfe", "doctorat"];
 
 const KIND_PLURALS: Record<StageKind, Record<Locale, string>> = {
   stage: { en: "internships", fr: "stages" },
   alternance: { en: "apprenticeships", fr: "alternances" },
-  pfe: { en: "final-year projects", fr: "PFE" }
+  pfe: { en: "final-year projects", fr: "PFE" },
+  doctorat: { en: "PhD positions", fr: "doctorats" }
 };
 
 function joinList(parts: string[], locale: Locale): string {

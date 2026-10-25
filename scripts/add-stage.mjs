@@ -27,7 +27,10 @@ import { promisify } from "node:util";
 
 const execFileAsync = promisify(execFile);
 const FILE = path.join(process.cwd(), "src/content/stages.json");
-const KINDS = ["stage", "alternance", "pfe"];
+// doctorat is here so a funded thesis can be typed in by hand, which is the
+// only legitimate route: ADUM answers Disallow: /, FindAPhD disallows its own
+// search, and EURAXESS, ABG and jobs.ac.uk publish no feed or API.
+const KINDS = ["stage", "alternance", "pfe", "doctorat"];
 const REMOTES = ["onsite", "hybrid", "remote"];
 /**
  * Statuses that mean "we were refused", never "the page is gone".
