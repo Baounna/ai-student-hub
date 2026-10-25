@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { topicLabel } from "@/content/news";
 import Link from "next/link";
-import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { ArticleToc } from "@/components/article-toc";
 import { BackToTop } from "@/components/back-to-top";
@@ -14,9 +13,6 @@ import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
-import { absoluteUrl } from "@/lib/site-url";
-import { jsonLd } from "@/lib/json-ld";
-import { mainEntityOfPage, organizationAuthorNode, publisherNode } from "@/lib/schema";
 import { siteConfig } from "@/config/site";
 
 function formatPublishedDate(date: string, locale: Locale) {
@@ -163,6 +159,24 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
     // the curation there is ours. Undo by deleting this block the day these
     // pages carry original writing.
     robots: { index: false, follow: true },
+    /*
+     * No author claim on these pages.
+     *
+     * The root layout sets `authors` site-wide, which is right for everything
+     * this site writes. It is not right here: the body of an auto brief is
+     * another outlet's headline and their own summary paragraph, so declaring
+     * this site the author is the same false claim as the NewsArticle markup
+     * that used to sit further down this file, just quieter and in a field
+     * nobody inspects.
+     *
+     * Naming the source outlet instead would be wrong in the other direction --
+     * they did not write this page either. So the honest value is none, and an
+     * empty array is how Next drops an inherited field rather than replacing
+     * it. The provenance a reader needs is on the page itself: the source name,
+     * the link to the original, and the line saying it was generated
+     * automatically from an official source.
+     */
+    authors: [],
     description: item.summary,
     keywords: getSeoKeywords(params.lang, "newsPost", [
       item.topic,
@@ -192,7 +206,6 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
   if (!isLocale(params.lang)) return null;
 
   const locale: Locale = params.lang;
-  const nonce = (await headers()).get("x-csp-nonce") || undefined;
   const fr = locale === "fr";
   const dict = getDictionary(locale);
   const item = getAutoNewsBySlug(params.slug, locale);
@@ -209,26 +222,31 @@ export default async function AutoNewsDetailPage(props: { params: Promise<{ lang
     { id: "newsletter", label: "Newsletter" }
   ];
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    headline: item.title,
-    description: item.summary,
-    datePublished: item.publishedAt,
-    dateModified: item.discoveredAt,
-    inLanguage: locale,
-    publisher: publisherNode(),
-    author: organizationAuthorNode(),
-    mainEntityOfPage: mainEntityOfPage(`/${locale}/news/auto/${item.slug}`),
-    image: [absoluteUrl(ogImageUrl(item.title, item.topic))],
-    articleSection: item.topic,
-    citation: [item.href, item.sourceFeed]
-  };
-
+  // No JSON-LD here any more, and that is the fix rather than an omission.
+  //
+  // These 480 pages emitted NewsArticle with `headline: item.title` -- AWS's
+  // own headline, word for word -- `datePublished: item.publishedAt`, the
+  // moment AWS published, `dateModified: item.discoveredAt`, the moment our
+  // crawler first saw it, typed as an edit to an article we never wrote, and
+  // `author` and `publisher` both naming this site. Read literally, which is
+  // the only way a machine reads it, the markup stated that AI and
+  // Cybersecurity News published AWS's article at AWS's publication time. It
+  // was a byline over somebody else's reporting, on seventy percent of the
+  // site's URLs, and provenance honesty is the whole product here.
+  //
+  // Deleted rather than retyped as a WebPage with isBasedOn, which would have
+  // been correct and still pointless: the page carries robots noindex in
+  // generateMetadata above, for the reason written out at length there, so no
+  // rich result can come of any markup on it, and the provenance a reader or a
+  // consumer needs is already in the visible page -- the source name, the
+  // nofollowed link to the original, the line saying the brief is generated
+  // from it, and both references in the References list. A node that earns
+  // nothing is one more place the false byline can grow back. If these pages
+  // ever carry original writing, the robots block goes and an honest
+  // NewsArticle comes back with it.
   return (
     <article className="page-shell max-w-6xl py-10 md:py-12">
       <ReadingProgress />
-      <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(articleSchema) }} />
       <Breadcrumbs
         locale={locale}
         items={[

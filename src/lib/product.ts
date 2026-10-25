@@ -16,6 +16,21 @@ import { isSafeHttpUrl, normalizeHttpUrl } from "@/lib/url";
  */
 const GUIDE_EXISTS = false;
 
+/**
+ * Whether the guide exists, for callers that need the fact rather than a link.
+ *
+ * Exported because the sitemap and the product page both needed to know, and
+ * neither could ask: canSellProduct() conflates "the guide exists" with "a
+ * checkout URL is configured", and a sitemap cannot import a page module. So
+ * both files had resorted to inferring it from a link --
+ * `getGuideCtaHref("en") === "/en/product/ai-career-guide"` -- which is correct
+ * but duplicated the one fact in two places and would read as a riddle to
+ * whoever met it next.
+ */
+export function guideExists() {
+  return GUIDE_EXISTS;
+}
+
 export function getProductCheckoutUrl() {
   if (!GUIDE_EXISTS) return "";
   const raw = (process.env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();

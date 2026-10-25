@@ -5,6 +5,33 @@ import { Newsletter } from "@/components/newsletter";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
+import { guideExists } from "@/lib/product";
+
+/**
+ * Whether the guide exists, derived rather than decided here.
+ *
+ * src/lib/product.ts keeps GUIDE_EXISTS private, and getGuideCtaHref is the
+ * one exported thing that is a pure function of it: the career-guide call to
+ * action points at this route only when there is something here to arrive at,
+ * and at /blog?track=career otherwise. So reading the destination asks the
+ * constant the question without copying its answer.
+ *
+ * It matters that this is derived. This page was indexable at sitemap priority
+ * 0.86 -- above /blog and the country boards -- while its own meta description
+ * read "This guide is not written yet", and product.ts had already routed all
+ * twenty-eight inbound links away from it. So the one page nothing links to
+ * was the one being advertised hardest, and the snippet a reader would have
+ * seen under a brand that sells verified work was an admission that the page
+ * is empty. Worse than no result at all.
+ *
+ * Hand-coding the exclusion would have meant someone remembering to undo it
+ * the day the guide is written. This reverses itself, like every other call
+ * site product.ts governs. The same expression appears in src/app/sitemap.ts,
+ * which has to make the same decision and cannot import a page module; export
+ * GUIDE_EXISTS (or a guideExists() helper) from src/lib/product.ts and both
+ * should read that instead.
+ */
+const GUIDE_EXISTS = guideExists();
 
 /**
  * This page used to sell a guide nobody has written.
@@ -38,6 +65,10 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   return {
     title,
     description,
+    // Out of the index while there is nothing here. follow stays on: the three
+    // links in "What actually exists" go to the board, the blog and the tools
+    // lab, and those are the pages a reader who landed here should reach.
+    robots: GUIDE_EXISTS ? undefined : { index: false, follow: true },
     keywords: getSeoKeywords(params.lang, "product", [
       fr ? "preparation stage ia" : "ai internship preparation",
       fr ? "plan portfolio etudiant" : "student portfolio action plan"

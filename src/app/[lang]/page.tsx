@@ -139,7 +139,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           },
           {
             title: "3) Passer à l'action",
-            body: "Ouvrez la liste des stages ouverts, puis le guide carrière.",
+            body: "Ouvrez la liste des stages ouverts, puis les articles carrière.",
             href: getGuideCtaHref(locale),
             cta: "Lancer l'exécution"
           }
@@ -159,7 +159,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           },
           {
             title: "3) Execute",
-            body: "Move from planning to applying with the open internship list and the career guide.",
+            body: "Move from planning to applying with the open internship list and the career articles.",
             href: getGuideCtaHref(locale),
             cta: "Start execution"
           }

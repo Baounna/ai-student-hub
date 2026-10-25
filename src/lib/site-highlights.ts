@@ -7,7 +7,7 @@ import type { Locale } from "@/i18n/config";
  * The home page and the About page each carried their own copy of this list,
  * and both contained the sentence "Weekly AI + Cybersecurity updates" -- which
  * the EditorialTrust panel also printed, so the home page said it twice. It was
- * also not true: the newest hand-written piece is 24 September 2026 and there
+ * also not true: the newest hand-written piece is 19 September 2026 and there
  * are two publishing dates in the preceding seven months.
  *
  * One list, so a correction lands everywhere, and three claims that something

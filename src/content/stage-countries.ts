@@ -104,17 +104,80 @@ export function countryNamesCyber(code: string, now = Date.now()): boolean {
   return countrySecurityCount(code, now) / listings.length >= CYBER_TITLE_MIN_SHARE;
 }
 
+/**
+ * How much of a title a search result has room for, with " | AICyber" in it.
+ *
+ * The suffix comes from the metadata template in src/app/[lang]/layout.tsx and
+ * is ten characters, so a title has fifty before Google starts cutting. A title
+ * that gets truncated loses its tail, and the tail of these is the country --
+ * the one word the reader searched for.
+ */
+const TITLE_BUDGET = 60;
+const TITLE_SUFFIX_LENGTH = " | AICyber".length;
+
 export function countryPageTitle(code: string, locale: Locale, now = Date.now()): string {
   const name = countryLabel(code, locale);
   const cyber = countryNamesCyber(code, now);
   if (locale === "fr") {
-    return cyber
-      ? `Stages IA et cybersécurité ${inCountryFr(name)}`
-      : `Stages IA et informatique ${inCountryFr(name)}`;
+    /*
+     * "PFE", because that is the word the reader types.
+     *
+     * The French title was "Stages IA et informatique au Maroc" while the
+     * Morocco set contains PFE rows, KIND_PLURALS already holds the word, and
+     * the sentence underneath already printed it. In Morocco and Tunisia
+     * "stage PFE" and "offre de stage" are the dominant phrasings and PFE is
+     * the high-intent half of the pair -- a final-year student looking for a
+     * project is looking to be hired at the end of it. The one place the phrase
+     * had to appear for that search to find us was the one place it was
+     * missing.
+     *
+     * Composed from the kinds this country actually lists, like the blurb, so
+     * no title can promise an alternance to a country that has none. The order
+     * is search intent rather than the board's, because a title is read as a
+     * search result: "stage" first, then "PFE", then "alternance". And it is
+     * cut to fit -- France lists all three and
+     * "Stages, PFE et alternances en IA et cybersécurité en France" is 59
+     * characters before the suffix, which Google would truncate from the right
+     * and take "en France" off the end of. Dropping the last-named kind is a
+     * title that says less; losing the country is a title that no longer
+     * answers the search. The blurb underneath still names all three.
+     *
+     * EN is deliberately left alone. "final-year project" is not a phrase an
+     * English-speaking student searches, so adding it would spend the same
+     * fifty characters on a word nobody types.
+     */
+    const listings = listingsByCountry(now).get(code) ?? [];
+    const subject = cyber ? "IA et cybersécurité" : "IA et informatique";
+    const present = (["stage", "pfe", "alternance"] as const).filter((kind) =>
+      listings.some((stage) => stage.kind === kind)
+    );
+    const compose = (kinds: readonly StageKind[]) => {
+      const names = kinds.map((kind, index) =>
+        index === 0 ? capitalize(KIND_PLURALS[kind][locale]) : KIND_PLURALS[kind][locale]
+      );
+      return `${joinList(names, locale)} en ${subject} ${inCountryFr(name)}`;
+    };
+
+    // Unreachable for a country that has a page -- it needs four listings and
+    // every listing has a kind -- but a country with none would otherwise get a
+    // title opening on a space.
+    if (!present.length) return `Stages en ${subject} ${inCountryFr(name)}`;
+
+    // At least one kind, even if the country name is long enough to blow the
+    // budget on its own: a title with no subject in it is worse than a long one.
+    for (let count = present.length; count > 1; count -= 1) {
+      const candidate = compose(present.slice(0, count));
+      if (candidate.length + TITLE_SUFFIX_LENGTH <= TITLE_BUDGET) return candidate;
+    }
+    return compose(present.slice(0, 1));
   }
   return cyber
     ? `AI and cybersecurity internships in ${inCountryEn(name)}`
     : `AI and tech internships in ${inCountryEn(name)}`;
+}
+
+function capitalize(word: string): string {
+  return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
 /**
@@ -166,15 +229,30 @@ export function countryPageBlurb(code: string, locale: Locale, now = Date.now())
       ? "IA et informatique"
       : "AI and tech";
 
+  /*
+   * The country belongs in the sentence, not bolted onto the end of it.
+   *
+   * This used to finish "...re-checked every week. Morocco." -- the country
+   * name appended as its own sentence, in both languages. That is a keyword
+   * dropped into prose, and it landed in the meta description and the lead
+   * paragraph: the two places a reader decides whether a person wrote this page
+   * or a script did. Everything else on these pages is counted from the
+   * listings precisely so a reader can tell the difference, and one stray word
+   * gave it away. The country was already in the H1 and the title, so the
+   * append was not even buying a mention.
+   *
+   * inCountryEn and inCountryFr handle the article and the preposition, which
+   * is the whole reason they exist.
+   */
   if (locale === "fr") {
     // "stages" and "PFE" are masculine, "alternances" feminine: a list of only
     // alternances would read "ouvertes". Agreement done properly, for the same
     // reason the prepositions below are -- a French reader can tell when nobody
     // who speaks their language read the page.
     const agreement = present.some((kind) => kind !== "alternance") ? "ouverts" : "ouvertes";
-    return `${listings.length} ${kinds} en ${subject} ${agreement} aux étudiants, vérifiés chaque semaine. ${name}.`;
+    return `${listings.length} ${kinds} en ${subject} ${inCountryFr(name)}, ${agreement} aux étudiants, vérifiés chaque semaine.`;
   }
-  return `${listings.length} ${kinds} in ${subject}, re-checked every week. ${name}.`;
+  return `${listings.length} ${subject} ${kinds} in ${inCountryEn(name)}, re-checked every week.`;
 }
 
 /**

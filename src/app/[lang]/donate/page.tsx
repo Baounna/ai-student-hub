@@ -220,7 +220,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                     </a>
                   ) : (
                     <Link href={getGuideCtaHref(locale)} className="btn-secondary mt-3 inline-flex">
-                      {fr ? "Acheter le guide" : "Buy student guide"}
+                      {getGuideCtaLabel(locale)}
                     </Link>
                   )}
                 </article>
@@ -321,7 +321,7 @@ export default async function LocalizedDonatePage(props: { params: Promise<{ lan
                 {fr ? "Blog" : "Blog"}
               </Link>
               <Link href={getGuideCtaHref(locale)} className="btn-primary text-center">
-                {fr ? "Guide étudiant" : "Student guide"}
+                {getGuideCtaLabel(locale)}
               </Link>
             </div>
           </div>

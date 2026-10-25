@@ -11,7 +11,7 @@ import { recommendedTools, studentStudyTools } from "@/content/posts";
 import { hasPaidLinks, siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 import { jsonLd } from "@/lib/json-ld";
@@ -28,6 +28,12 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     description: dict.resources.subtitle,
     keywords: getSeoKeywords(params.lang, "resources"),
     openGraph: {
+      // Spread first, so anything this page sets below wins. Next merges
+      // metadata one top-level field at a time, so this page's own openGraph
+      // replaced the root layout's -- and with it og:site_name and og:locale.
+      // /fr/resources was sharing to LinkedIn with nothing saying it is in
+      // French.
+      ...openGraphDefaults(params.lang),
       title: dict.resources.title,
       description: dict.resources.subtitle,
       url: `/${params.lang}/resources`,
@@ -55,38 +61,30 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
   const checkoutUrl = getProductCheckoutUrl();
   const hasCheckoutUrl = canSellProduct();
   const toolsCount = recommendedTools.length;
-  const stackCards = [
-    {
-      title: locale === "fr" ? "Stack Starter" : "Starter Stack",
-      summary:
-        locale === "fr"
-          ? "Configuration minimale viable pour lancer votre premier projet déployé."
-          : "Minimum viable stack to ship your first deployed AI project.",
-      items: [
-        recommendedTools[0]?.name ?? "Cloud Deploy Stack",
-        recommendedTools[1]?.name ?? "AI Learning Platform"
-      ]
-    },
-    {
-      title: locale === "fr" ? "Stack Portfolio" : "Portfolio Stack",
-      summary:
-        locale === "fr"
-          ? "Conçue pour livrer vite, documenter proprement et candidater."
-          : "Designed for faster shipping, clean docs, and better applications.",
-      items: [
-        recommendedTools[0]?.name ?? "Cloud Deploy Stack",
-        recommendedTools[2]?.name ?? "Student Productivity Workspace"
-      ]
-    },
-    {
-      title: locale === "fr" ? "Stack Interview-Ready" : "Interview-Ready Stack",
-      summary:
-        locale === "fr"
-          ? "Équilibre entre exécution technique et signal carrière."
-          : "Balanced for technical execution and stronger career signal.",
-      items: recommendedTools.map((tool) => tool.name)
-    }
-  ];
+  /*
+   * The three "recommended stacks" are gone, and nothing replaces them.
+   *
+   * recommendedTools is [DigitalOcean, Coursera, Grammarly]. The three cards
+   * resolved to DigitalOcean + Coursera, DigitalOcean + Grammarly, and all
+   * three -- three subsets of the same three tools, each carrying a distinct
+   * purpose claim. "Minimum viable stack to ship your first deployed AI
+   * project" named one host and a course platform; "Balanced for technical
+   * execution and stronger career signal" named those two and a grammar
+   * checker. A reader who owns all three sees immediately that the taxonomy was
+   * invented to fill a grid, and the claims were the only thing distinguishing
+   * the cards from each other.
+   *
+   * There is no honest one-card version either: a "stack" of three unrelated
+   * tools is a list, and the list already exists forty lines down with each
+   * tool's own category, summary and benefit next to it. So the framing goes
+   * and the tool cards speak for themselves.
+   *
+   * The `??` fallbacks went with it: "Cloud Deploy Stack", "AI Learning
+   * Platform" and "Student Productivity Workspace" were the invented product
+   * names src/content/posts.ts records removing as names that "told a reader
+   * nothing". They were unreachable -- all three tools exist -- and survived
+   * here as the last copies in the codebase.
+   */
   const faqItems =
     locale === "fr"
       ? [
@@ -383,27 +381,6 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
               </div>
             </section>
           ) : null}
-
-          <section>
-            <div className="mb-4 flex items-end justify-between">
-              <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-                {locale === "fr" ? "Stacks recommandées" : "Recommended stacks"}
-              </h2>
-            </div>
-            <div className="grid gap-4 md:grid-cols-3">
-              {stackCards.map((stack) => (
-                <article key={stack.title} className="surface rounded-2xl p-5">
-                  <h3 className="font-display text-lg font-semibold text-[color:var(--text-strong)]">{stack.title}</h3>
-                  <p className="mt-2 text-sm text-[color:var(--text)]">{stack.summary}</p>
-                  <ul className="mt-3 space-y-1 text-sm text-[color:var(--text)]">
-                    {stack.items.map((tool) => (
-                      <li key={tool}>- {tool}</li>
-                    ))}
-                  </ul>
-                </article>
-              ))}
-            </div>
-          </section>
 
           <section className="surface rounded-2xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">

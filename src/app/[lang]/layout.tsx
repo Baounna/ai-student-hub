@@ -334,7 +334,7 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
               <div>
                 <p className="do-kicker">{locale === "fr" ? "Passage à l'action" : "Next step"}</p>
                 <h2 className="font-display mt-1 text-2xl font-semibold text-[color:var(--text-strong)]">
-                  {locale === "fr" ? "Transformez votre veille en exécution concrète" : "Turn your weekly learning into execution"}
+                  {locale === "fr" ? "Transformez votre veille en exécution concrète" : "Turn what you read into execution"}
                 </h2>
                 <p className="mt-2 text-sm text-[color:var(--text)]">
                   {locale === "fr"

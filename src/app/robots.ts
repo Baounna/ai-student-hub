@@ -23,6 +23,20 @@ export default function robots(): MetadataRoute.Robots {
         allow: ["/", "/api/og", "/api/cover"],
         disallow: [
           "/api/",
+          /*
+           * /health is an operational endpoint that sits outside /api/.
+           *
+           * It returns a JSON blob of timestamps and item counts for the
+           * watchdog, and because the route is /health rather than
+           * /api/health, the "/api/" line above never covered it, it is in no
+           * sitemap, and nothing links to it -- so the one thing keeping it out
+           * of search results was the X-Robots-Tag header the route sets
+           * itself. That header only works if a crawler spends a request
+           * fetching the JSON to read it. This line means it does not have to:
+           * the header stays as the backstop for anyone who links to /health
+           * directly, and the crawl is skipped. Keep both.
+           */
+          "/health",
           "/growth-sprint",
           "/en/growth-sprint",
           "/fr/growth-sprint"

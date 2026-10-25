@@ -124,30 +124,50 @@ const linuxDevopsWorkflowContentFr = [
   "L'intérêt n'est pas que ces commandes soient avancées. C'est que chacune remplace une supposition par une réponse, et que le temps gagné par une habitude opérationnelle est celui que vous passeriez sinon à redécouvrir, à minuit, laquelle de cinq causes possibles s'est produite."
 ];
 
+/**
+ * This article described a test and never shipped it.
+ *
+ * Paragraph 3 told the reader a thirty-line script "prints three PASS lines
+ * and exits 0; break the ownership comparison and the second case returns
+ * 200" -- a result nobody could reproduce, because the script was not here.
+ * Five of the sibling posts ship theirs in a fenced block; this one and
+ * llm-guardrails-and-evaluation-basics asked the reader to run something they
+ * had never been given, which is the article's own OWASP quote ("write tests
+ * ... do not deploy changes that make the tests fail") being recommended and
+ * withheld in the same paragraph.
+ *
+ * The script is now the last entry, and the prose says what it actually does.
+ * Deleting the owner comparison fails the second AND third case, not only the
+ * second, so the sentence says both.
+ */
 const securityChecklistContent = [
   "Most student security advice is a list of nouns. This is a list of commands, and the first one takes ten seconds: run git log --all --oneline -S 'sk-' in your project. If it prints a commit, a key is in your history right now, and deleting the file did not remove it.",
   "That is worth proving rather than believing. Commit a file containing OPENAI_API_KEY=sk-proj-REDACTEDEXAMPLE123, then git rm it and commit again. The working tree is clean, ls shows nothing. But git log --all --oneline -S 'sk-proj-REDACTEDEXAMPLE123' -- .env still lists both commits, and git grep -n 'sk-proj' $(git rev-list --all) -- .env prints the key itself, prefixed with the commit it lives in. Anyone who has ever cloned the repository has that object. Rotating the key is the fix; rewriting history is cleanup, not remediation.",
   "The second command is a test you can run. Authentication tells you who is calling; it does not tell you what they may read. OWASP files this as API1:2023, Broken Object Level Authorization, and describes the attack as manipulating \"the ID of an object that is sent within the request\". Write a handler that looks up the record, compares record.owner to the authenticated caller, and returns 404 rather than 403 when they differ — a 403 confirms the row exists, which is itself a leak.",
-  "Then assert it. A thirty-line script using only http.server and urllib can start the handler on 127.0.0.1, fire three requests — the owner reading their own row, a different user reading it, an anonymous caller reading it — and check the statuses are 200, 404, 404. Run it and it prints three PASS lines and exits 0; break the ownership comparison and the second case returns 200 and the script exits 1. OWASP's own prevention list ends with exactly this instruction: \"Write tests to evaluate the vulnerability of the authorization mechanism. Do not deploy changes that make the tests fail.\"",
+  "Then assert it. The script at the end of this article does that with nothing but http.server and urllib: it starts the handler on 127.0.0.1, fires three requests — the owner reading their own row, a different user reading it, an anonymous caller reading it — and checks the statuses are 200, 404, 404. Run it and it prints three PASS lines and exits 0; delete the ownership comparison and the second and third cases come back 200 and the script exits 1. OWASP's own prevention list ends with exactly this instruction: \"Write tests to evaluate the vulnerability of the authorization mechanism. Do not deploy changes that make the tests fail.\"",
   "Put a number on your body size limit, and look up what yours actually is, because the defaults disagree wildly. nginx caps request bodies at client_max_body_size 1m and answers 413 above it. Express is two orders of magnitude stricter: the limit option on express.json() \"defaults to '100kb'\". FastAPI and Starlette set no overall body limit at all — Starlette's maintainers resolved the request for one by saying it belongs in middleware you add yourself. So the same code behind nginx, behind Express, and served directly by Uvicorn has three different exposures, and only one of them is yours to configure.",
   "Treat any user text that reaches a prompt template as hostile, and do not expect the prompt to defend itself. OWASP's LLM01:2025 entry on prompt injection is blunt about the ceiling: \"Given the stochastic influence at the heart of the way models work, it is unclear if there are fool-proof methods of prevention for prompt injection.\" So cap the length, strip control characters, keep user text inside a delimited block, and put the authorisation decision in code rather than in a sentence asking the model to be careful.",
   "Rate limit everything public, per identity where you can and per address where you cannot. On an inference endpoint this is primarily a cost control, and the absence of it is how a free project becomes an unexpected invoice in an afternoon.",
   "Decide centrally what a log line and an error response may contain. A stack trace returned to the client describes your internals; a log line containing a token moves that token somewhere with weaker access control than where it started. Redact at the logging helper, not at each of the forty call sites.",
   "Make the dependency audit a gate rather than a habit. npm audit --audit-level=high sets, in npm's own words, \"the minimum level of vulnerability for npm audit to exit with a non-zero exit code\" — so putting that exact line in CI fails the build on a high or critical advisory and ignores the noise below it. Without the flag the default fails on any vulnerability at all, which is how teams learn to ignore the step.",
-  "None of this has to arrive at once, but each item above is checkable in a single command, which is the point. A student project where those commands pass is already ahead of most of what is published on the public internet."
+  "None of this has to arrive at once, but each item above is checkable in a single command, which is the point. A student project where those commands pass is already ahead of most of what is published on the public internet.",
+  "Here is that test, standard library only. The handler is deliberately tiny so that the authorisation decision is the only thing in it, and the server binds to port 0 so it never collides with anything you are already running.",
+  "```python\nimport http.server, json, sys, threading, urllib.error, urllib.request\n\nROWS = {\"1\": {\"owner\": \"alice\", \"body\": \"alice's note\"}}\nTOKENS = {\"alice-token\": \"alice\", \"bob-token\": \"bob\"}\n\nclass Handler(http.server.BaseHTTPRequestHandler):\n    def do_GET(self):\n        caller = TOKENS.get(self.headers.get(\"Authorization\", \"\"))\n        row = ROWS.get(self.path.rsplit(\"/\", 1)[-1])\n        # 404 and not 403: a 403 confirms the row exists, which is itself a\n        # leak. Delete the owner comparison below and watch the test fail.\n        if row is None or row[\"owner\"] != caller:\n            self.send_response(404); self.end_headers(); return\n        body = json.dumps(row).encode()\n        self.send_response(200)\n        self.send_header(\"Content-Type\", \"application/json\")\n        self.send_header(\"Content-Length\", str(len(body)))\n        self.end_headers()\n        self.wfile.write(body)\n\n    def log_message(self, *args):  # keep the PASS lines readable\n        pass\n\nserver = http.server.HTTPServer((\"127.0.0.1\", 0), Handler)\nthreading.Thread(target=server.serve_forever, daemon=True).start()\nurl = \"http://127.0.0.1:%d/rows/1\" % server.server_address[1]\n\ndef status(token):\n    request = urllib.request.Request(url)\n    if token:\n        request.add_header(\"Authorization\", token)\n    try:\n        with urllib.request.urlopen(request, timeout=5) as response:\n            return response.status\n    except urllib.error.HTTPError as error:\n        return error.code\n\nCASES = [(\"owner reads own row\", \"alice-token\", 200),\n         (\"other user reads it\", \"bob-token\", 404),\n         (\"anonymous reads it\", None, 404)]\n\nfailed = 0\nfor name, token, expected in CASES:\n    got = status(token)\n    failed += got != expected\n    print(\"%s %-20s expected %d, got %d\"\n          % (\"PASS\" if got == expected else \"FAIL\", name, expected, got))\n\nserver.shutdown()\nsys.exit(1 if failed else 0)\n```"
 ];
 
 const securityChecklistContentFr = [
   "La plupart des conseils de sécurité destinés aux étudiants sont une liste de noms communs. Ceci est une liste de commandes, et la première prend dix secondes : lancez git log --all --oneline -S 'sk-' dans votre projet. Si elle affiche un commit, une clé se trouve dans votre historique en ce moment même, et supprimer le fichier ne l'a pas enlevée.",
   "Cela vaut la peine d'être prouvé plutôt que cru. Commitez un fichier contenant OPENAI_API_KEY=sk-proj-REDACTEDEXAMPLE123, puis faites git rm dessus et commitez à nouveau. L'arbre de travail est propre, ls ne montre rien. Mais git log --all --oneline -S 'sk-proj-REDACTEDEXAMPLE123' -- .env liste toujours les deux commits, et git grep -n 'sk-proj' $(git rev-list --all) -- .env affiche la clé elle-même, préfixée par le commit qui la contient. Quiconque a déjà cloné le dépôt possède cet objet. Faire tourner la clé est le correctif ; réécrire l'historique est du nettoyage, pas une remédiation.",
   "La deuxième commande est un test que vous pouvez exécuter. L'authentification dit qui appelle ; elle ne dit pas ce que l'appelant a le droit de lire. L'OWASP classe cela en API1:2023, Broken Object Level Authorization, et décrit l'attaque comme la manipulation de « l'identifiant d'un objet envoyé dans la requête ». Écrivez un gestionnaire qui charge l'enregistrement, compare record.owner à l'appelant authentifié, et renvoie 404 plutôt que 403 en cas de différence — un 403 confirme que la ligne existe, ce qui est déjà une fuite.",
-  "Puis vérifiez-le. Un script d'une trentaine de lignes n'utilisant que http.server et urllib peut démarrer le gestionnaire sur 127.0.0.1, envoyer trois requêtes — le propriétaire qui lit sa propre ligne, un autre utilisateur qui la lit, un appelant anonyme qui la lit — et contrôler que les statuts sont 200, 404, 404. Lancez-le : il affiche trois lignes PASS et sort avec le code 0 ; cassez la comparaison de propriété et le deuxième cas renvoie 200 et le script sort avec 1. La liste de prévention de l'OWASP se termine précisément par cette consigne : « Écrivez des tests pour évaluer la vulnérabilité du mécanisme d'autorisation. Ne déployez pas de changements qui font échouer ces tests. »",
+  "Puis vérifiez-le. Le script à la fin de cet article le fait avec http.server et urllib seulement : il démarre le gestionnaire sur 127.0.0.1, envoie trois requêtes — le propriétaire qui lit sa propre ligne, un autre utilisateur qui la lit, un appelant anonyme qui la lit — et contrôle que les statuts sont 200, 404, 404. Lancez-le : il affiche trois lignes PASS et sort avec le code 0 ; supprimez la comparaison de propriété et les deuxième et troisième cas renvoient 200, et le script sort avec 1. La liste de prévention de l'OWASP se termine précisément par cette consigne : « Écrivez des tests pour évaluer la vulnérabilité du mécanisme d'autorisation. Ne déployez pas de changements qui font échouer ces tests. »",
   "Mettez un chiffre sur votre limite de taille de corps de requête, et allez vérifier laquelle s'applique chez vous, car les valeurs par défaut divergent énormément. nginx plafonne les corps de requête à client_max_body_size 1m et répond 413 au-delà. Express est deux ordres de grandeur plus strict : l'option limit d'express.json() « vaut par défaut '100kb' ». FastAPI et Starlette n'imposent aucune limite globale de corps — les mainteneurs de Starlette ont tranché la demande en répondant que cela relève d'un middleware que vous ajoutez vous-même. Le même code derrière nginx, derrière Express, et servi directement par Uvicorn présente donc trois expositions différentes, et une seule d'entre elles vous appartient.",
   "Considérez comme hostile tout texte utilisateur qui atteint un template de prompt, et n'attendez pas du prompt qu'il se défende seul. L'entrée LLM01:2025 de l'OWASP sur l'injection de prompt est nette sur le plafond atteignable : « Compte tenu de l'influence stochastique au cœur du fonctionnement des modèles, il n'est pas certain qu'il existe des méthodes de prévention infaillibles contre l'injection de prompt. » Plafonnez donc la longueur, retirez les caractères de contrôle, gardez le texte utilisateur dans un bloc délimité, et placez la décision d'autorisation dans le code plutôt que dans une phrase demandant au modèle d'être prudent.",
   "Limitez le débit de tout ce qui est public, par identité quand c'est possible et par adresse sinon. Sur un endpoint d'inférence, c'est d'abord un contrôle de coût, et son absence est la façon dont un projet gratuit devient une facture inattendue en un après-midi.",
   "Décidez de façon centralisée ce qu'une ligne de journal et une réponse d'erreur ont le droit de contenir. Une trace d'exécution renvoyée au client décrit vos entrailles ; une ligne de journal contenant un jeton déplace ce jeton vers un endroit moins bien protégé que son origine. Masquez dans la fonction de journalisation, pas dans chacun des quarante appels.",
   "Faites de l'audit de dépendances une barrière plutôt qu'une habitude. npm audit --audit-level=high définit, selon les termes de npm, « le niveau minimal de vulnérabilité pour que npm audit sorte avec un code de retour non nul » — placer cette ligne exacte dans la CI fait donc échouer le build sur une alerte high ou critical et ignore le bruit en dessous. Sans ce drapeau, le comportement par défaut échoue sur n'importe quelle vulnérabilité, ce qui est la façon dont les équipes apprennent à ignorer l'étape.",
-  "Rien de tout cela n'a besoin d'arriver d'un coup, mais chaque point ci-dessus se vérifie en une seule commande, et c'est bien l'objectif. Un projet étudiant où ces commandes passent est déjà devant l'essentiel de ce qui est publié sur l'internet public."
+  "Rien de tout cela n'a besoin d'arriver d'un coup, mais chaque point ci-dessus se vérifie en une seule commande, et c'est bien l'objectif. Un projet étudiant où ces commandes passent est déjà devant l'essentiel de ce qui est publié sur l'internet public.",
+  "Voici ce test, bibliothèque standard uniquement. Le gestionnaire est volontairement minuscule pour que la décision d'autorisation soit la seule chose qu'il contienne, et le serveur écoute sur le port 0 pour ne jamais entrer en conflit avec ce que vous faites déjà tourner.",
+  "```python\nimport http.server, json, sys, threading, urllib.error, urllib.request\n\nROWS = {\"1\": {\"owner\": \"alice\", \"body\": \"alice's note\"}}\nTOKENS = {\"alice-token\": \"alice\", \"bob-token\": \"bob\"}\n\nclass Handler(http.server.BaseHTTPRequestHandler):\n    def do_GET(self):\n        caller = TOKENS.get(self.headers.get(\"Authorization\", \"\"))\n        row = ROWS.get(self.path.rsplit(\"/\", 1)[-1])\n        # 404 and not 403: a 403 confirms the row exists, which is itself a\n        # leak. Delete the owner comparison below and watch the test fail.\n        if row is None or row[\"owner\"] != caller:\n            self.send_response(404); self.end_headers(); return\n        body = json.dumps(row).encode()\n        self.send_response(200)\n        self.send_header(\"Content-Type\", \"application/json\")\n        self.send_header(\"Content-Length\", str(len(body)))\n        self.end_headers()\n        self.wfile.write(body)\n\n    def log_message(self, *args):  # keep the PASS lines readable\n        pass\n\nserver = http.server.HTTPServer((\"127.0.0.1\", 0), Handler)\nthreading.Thread(target=server.serve_forever, daemon=True).start()\nurl = \"http://127.0.0.1:%d/rows/1\" % server.server_address[1]\n\ndef status(token):\n    request = urllib.request.Request(url)\n    if token:\n        request.add_header(\"Authorization\", token)\n    try:\n        with urllib.request.urlopen(request, timeout=5) as response:\n            return response.status\n    except urllib.error.HTTPError as error:\n        return error.code\n\nCASES = [(\"owner reads own row\", \"alice-token\", 200),\n         (\"other user reads it\", \"bob-token\", 404),\n         (\"anonymous reads it\", None, 404)]\n\nfailed = 0\nfor name, token, expected in CASES:\n    got = status(token)\n    failed += got != expected\n    print(\"%s %-20s expected %d, got %d\"\n          % (\"PASS\" if got == expected else \"FAIL\", name, expected, got))\n\nserver.shutdown()\nsys.exit(1 if failed else 0)\n```"
 ];
 
 const databaseDesignContent = [
@@ -316,32 +336,52 @@ const mlTestingPlaybookContentFr = [
   "```python\nimport numpy as np\nfrom sklearn.datasets import make_classification\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.pipeline import make_pipeline\nfrom sklearn.preprocessing import StandardScaler\n\nX, y = make_classification(n_samples=4000, n_features=20,\n                           n_informative=8, random_state=0)\n# train_test_split holds out 25 percent by default; that default is what\n# produces the numbers below.\nXtr, Xte, ytr, yte = train_test_split(X, y, random_state=0)\n\nscaler = StandardScaler().fit(Xtr)\nmodel = LogisticRegression(max_iter=1000).fit(scaler.transform(Xtr), ytr)\nprint(\"one fitted scaler, reused at serving : %.3f\" % model.score(scaler.transform(Xte), yte))\n\n# A fresh scaler per request. One row has no variance, so it maps to zeros\n# and the model returns the same class for everything.\nnaive = np.array([model.predict(StandardScaler().fit_transform(r.reshape(1, -1)))[0]\n                  for r in Xte])\nprint(\"a new scaler per request            : %.3f\" % (naive == yte).mean())\nprint(\"majority class in the held-out set  : %.3f\" % (max(np.bincount(yte)) / len(yte)))\n\npipe = make_pipeline(StandardScaler(), LogisticRegression(max_iter=1000)).fit(Xtr, ytr)\nprint(\"make_pipeline                       : %.3f\" % pipe.score(Xte, yte))\n```"
 ];
 
+/**
+ * Same omission as securityChecklistContent, same repair.
+ *
+ * "Four PASS lines and exit 0. This is a test suite, it takes an afternoon to
+ * write" described a file the reader did not have. It ships now, and it has a
+ * fifth case: paragraph 4 is entirely about normalising before matching, and
+ * nothing demonstrated it until a fullwidth lookalike of sk-123 was in the
+ * table folding to the plain form. So the prose says five, not four.
+ */
 const llmGuardrailsContent = [
   "The ceiling on prompt-based defence is documented, and it is lower than most student projects assume. OWASP's LLM01:2025 entry states that \"given the stochastic influence at the heart of the way models work, it is unclear if there are fool-proof methods of prevention for prompt injection\". So an instruction in a system prompt is a request. A check in code is a control. Everything below is the second kind.",
   "There are four places things go wrong, and each needs its own handling: the input you receive, the context you retrieve, the text the model generates, and the actions it is allowed to take. A system that validates only the input has left three doors open.",
   "Write the input check as a function with a test file, not as a paragraph in the prompt. About fifteen lines does it: raise if len(raw) > 4000, apply unicodedata.normalize('NFKC', raw) so fullwidth and lookalike forms collapse to their plain equivalents before any matching, strip control characters with a regex over the ranges \\x00-\\x08, \\x0b, \\x0c, \\x0e-\\x1f and \\x7f, and raise if nothing survives.",
-  "Then run it against named cases, which is a twelve-line list and a loop. A normal question passes; a 5,000-character input raises too_long; an input of only \\x00 and \\x1b raises empty after stripping; a question with an ANSI escape sequence in it passes with the escape removed. Four PASS lines and exit 0. This is a test suite, it takes an afternoon to write, and it is the difference between a guardrail and a hope.",
+  "Then run it against named cases, which is a short table and a loop. The script at the end of this article is that table, with five cases: a normal question passes; a 5,000-character input raises too_long; an input of only \\x00 and \\x1b raises empty; a question carrying an ANSI escape passes with the escape byte stripped and the bracket text left behind; and a fullwidth lookalike of sk-123 folds to the plain form, which is the NFKC line earning its place. Five PASS lines and exit 0. This is a test suite, it takes an afternoon to write, and it is the difference between a guardrail and a hope.",
   "Order matters in that function and it is worth knowing why: normalise before you match, or a check looking for a literal string misses the fullwidth version of the same characters, which NFKC would have folded. A length cap is also a cost control — an unbounded input is an unbounded bill on a metered endpoint.",
   "Treat retrieved context as untrusted, because it usually is. If your system ingests web pages or user uploads, that content can carry instructions aimed at the model rather than the reader. Keep retrieved material inside a delimited block — a <sources> element the model is told to answer only from — and never let it reach a code path that can act.",
   "Ground responses in those sources and make the citation part of the contract. A system that returns an answer alongside the passage it came from can be checked by the reader; one that returns a confident paragraph with no provenance cannot be checked at all, which is precisely what people mean when they complain about hallucination.",
   "Constrain actions rather than trusting intentions. If the model can call tools, the authorisation lives in the tool implementation, not in the instruction telling it which tools to use. Ask what the worst possible call would do, then make that call impossible rather than discouraged — the model is not the component you are securing.",
   "Log policy decisions as carefully as errors: what triggered a block, and what the system returned instead. Without that record you cannot distinguish guardrails that work from guardrails that are too strict from guardrails that are quietly failing open, and all three look identical from outside.",
-  "Decide what happens when a check fails and make it explicit. Fail closed for anything with consequences; failing open is acceptable only for non-critical enrichment. What is never acceptable is not having decided, which is how a disabled check survives a deploy unnoticed."
+  "Decide what happens when a check fails and make it explicit. Fail closed for anything with consequences; failing open is acceptable only for non-critical enrichment. What is never acceptable is not having decided, which is how a disabled check survives a deploy unnoticed.",
+  "Here is the function and its five cases, with no dependencies at all. The order of the two lines inside check() is the part worth copying rather than the regex: normalise, then strip.",
+  "```python\nimport re, sys, unicodedata\n\nCONTROL = re.compile(r\"[\\x00-\\x08\\x0b\\x0c\\x0e-\\x1f\\x7f]\")\n\nclass Rejected(Exception):\n    pass\n\ndef check(raw):\n    if len(raw) > 4000:\n        raise Rejected(\"too_long\")\n    # Normalise first, then strip. NFKC folds fullwidth and lookalike forms, so\n    # a later match on a literal string cannot be slipped past with fullwidth\n    # characters. Swapping these two lines is the bug this order prevents.\n    text = CONTROL.sub(\"\", unicodedata.normalize(\"NFKC\", raw))\n    if not text.strip():\n        raise Rejected(\"empty\")\n    return text\n\ndef verdict(raw):\n    try:\n        return \"ok\", check(raw)\n    except Rejected as rejection:\n        return str(rejection), None\n\nCASES = [\n    (\"a normal question\", \"What does NFKC actually fold?\", \"ok\", \"What does NFKC actually fold?\"),\n    (\"5,000 characters\", \"a\" * 5000, \"too_long\", None),\n    (\"control bytes only\", \"\\x00\\x1b\\x00\", \"empty\", None),\n    (\"an ANSI escape\", \"what is \\x1b[31mred\\x1b[0m?\", \"ok\", \"what is [31mred[0m?\"),\n    (\"fullwidth lookalike\", \"\\uff53\\uff4b-\\uff11\\uff12\\uff13\", \"ok\", \"sk-123\"),\n]\n\nfailed = 0\nfor name, raw, want, want_text in CASES:\n    got, text = verdict(raw)\n    ok = got == want and (want_text is None or text == want_text)\n    failed += not ok\n    print(\"%s %-20s %s\" % (\"PASS\" if ok else \"FAIL\", name, got if text is None else repr(text)))\n\nsys.exit(1 if failed else 0)\n```"
 ];
 
 const llmGuardrailsContentFr = [
   "Le plafond des défenses fondées sur le prompt est documenté, et il est plus bas que ne le supposent la plupart des projets étudiants. L'entrée LLM01:2025 de l'OWASP indique que « compte tenu de l'influence stochastique au cœur du fonctionnement des modèles, il n'est pas certain qu'il existe des méthodes de prévention infaillibles contre l'injection de prompt ». Une instruction dans un prompt système est donc une demande. Une vérification dans le code est un contrôle. Tout ce qui suit relève du second type.",
   "Quatre endroits posent problème, et chacun demande son propre traitement : l'entrée que vous recevez, le contexte que vous récupérez, le texte que le modèle génère, et les actions qu'il a le droit d'entreprendre. Un système qui ne valide que l'entrée a laissé trois portes ouvertes.",
   "Écrivez le contrôle d'entrée comme une fonction accompagnée d'un fichier de tests, pas comme un paragraphe dans le prompt. Une quinzaine de lignes suffisent : levez une exception si len(raw) > 4000, appliquez unicodedata.normalize('NFKC', raw) pour que les formes pleine chasse et les sosies typographiques se réduisent à leur équivalent simple avant toute comparaison, retirez les caractères de contrôle avec une expression régulière sur les plages \\x00-\\x08, \\x0b, \\x0c, \\x0e-\\x1f et \\x7f, et levez une exception s'il ne reste rien.",
-  "Exécutez-la ensuite contre des cas nommés, soit une liste de douze lignes et une boucle. Une question normale passe ; une entrée de 5 000 caractères lève too_long ; une entrée composée uniquement de \\x00 et \\x1b lève empty après nettoyage ; une question contenant une séquence d'échappement ANSI passe, l'échappement retiré. Quatre lignes PASS et une sortie 0. C'est une suite de tests, elle s'écrit en un après-midi, et c'est la différence entre un garde-fou et un espoir.",
+  "Exécutez-la ensuite contre des cas nommés, soit un petit tableau et une boucle. Le script à la fin de cet article est ce tableau, avec cinq cas : une question normale passe ; une entrée de 5 000 caractères lève too_long ; une entrée composée uniquement de \\x00 et \\x1b lève empty ; une question contenant une séquence d'échappement ANSI passe, l'octet d'échappement retiré et le texte entre crochets conservé ; et un sosie pleine chasse de sk-123 se replie sur la forme simple, ce qui justifie la ligne NFKC. Cinq lignes PASS et une sortie 0. C'est une suite de tests, elle s'écrit en un après-midi, et c'est la différence entre un garde-fou et un espoir.",
   "L'ordre compte dans cette fonction, et il vaut la peine de savoir pourquoi : normalisez avant de comparer, sinon un contrôle cherchant une chaîne littérale rate la version pleine chasse des mêmes caractères, que NFKC aurait repliée. Le plafond de longueur est aussi un contrôle de coût : une entrée sans borne est une facture sans borne sur un endpoint facturé à l'usage.",
   "Traitez le contexte récupéré comme non fiable, parce qu'il l'est généralement. Si votre système ingère des pages web ou des fichiers déposés par des utilisateurs, ce contenu peut porter des instructions destinées au modèle plutôt qu'au lecteur. Gardez la matière récupérée dans un bloc délimité — un élément <sources> dont on dit au modèle qu'il est sa seule source de réponse — et ne la laissez jamais atteindre un chemin de code capable d'agir.",
   "Ancrez les réponses dans ces sources et faites de la citation une partie du contrat. Un système qui renvoie une réponse accompagnée du passage dont elle provient peut être vérifié par le lecteur ; un système qui renvoie un paragraphe confiant sans provenance ne peut pas l'être du tout — exactement ce que les gens désignent quand ils parlent d'hallucination.",
   "Contraignez les actions plutôt que de faire confiance aux intentions. Si le modèle peut appeler des outils, l'autorisation vit dans l'implémentation de l'outil, pas dans l'instruction qui lui dit lesquels utiliser. Demandez-vous ce que ferait le pire appel possible, puis rendez cet appel impossible plutôt que déconseillé : le modèle n'est pas le composant que vous sécurisez.",
   "Journalisez les décisions de politique aussi soigneusement que les erreurs : ce qui a déclenché un blocage, et ce que le système a renvoyé à la place. Sans cette trace, impossible de distinguer des garde-fous qui fonctionnent, des garde-fous trop stricts et des garde-fous qui laissent silencieusement passer — vus de l'extérieur, les trois sont identiques.",
-  "Décidez de ce qui se passe quand un contrôle échoue, et rendez ce choix explicite. Échouez en bloquant dès qu'il y a des conséquences ; échouer en laissant passer n'est acceptable que pour un enrichissement non critique. Ce qui n'est jamais acceptable, c'est de ne pas avoir décidé — c'est ainsi qu'un contrôle désactivé survit à un déploiement sans que personne ne le remarque."
+  "Décidez de ce qui se passe quand un contrôle échoue, et rendez ce choix explicite. Échouez en bloquant dès qu'il y a des conséquences ; échouer en laissant passer n'est acceptable que pour un enrichissement non critique. Ce qui n'est jamais acceptable, c'est de ne pas avoir décidé — c'est ainsi qu'un contrôle désactivé survit à un déploiement sans que personne ne le remarque.",
+  "Voici la fonction et ses cinq cas, sans aucune dépendance. L'ordre des deux lignes dans check() est la partie à copier, plus que l'expression régulière : normaliser, puis nettoyer.",
+  "```python\nimport re, sys, unicodedata\n\nCONTROL = re.compile(r\"[\\x00-\\x08\\x0b\\x0c\\x0e-\\x1f\\x7f]\")\n\nclass Rejected(Exception):\n    pass\n\ndef check(raw):\n    if len(raw) > 4000:\n        raise Rejected(\"too_long\")\n    # Normalise first, then strip. NFKC folds fullwidth and lookalike forms, so\n    # a later match on a literal string cannot be slipped past with fullwidth\n    # characters. Swapping these two lines is the bug this order prevents.\n    text = CONTROL.sub(\"\", unicodedata.normalize(\"NFKC\", raw))\n    if not text.strip():\n        raise Rejected(\"empty\")\n    return text\n\ndef verdict(raw):\n    try:\n        return \"ok\", check(raw)\n    except Rejected as rejection:\n        return str(rejection), None\n\nCASES = [\n    (\"a normal question\", \"What does NFKC actually fold?\", \"ok\", \"What does NFKC actually fold?\"),\n    (\"5,000 characters\", \"a\" * 5000, \"too_long\", None),\n    (\"control bytes only\", \"\\x00\\x1b\\x00\", \"empty\", None),\n    (\"an ANSI escape\", \"what is \\x1b[31mred\\x1b[0m?\", \"ok\", \"what is [31mred[0m?\"),\n    (\"fullwidth lookalike\", \"\\uff53\\uff4b-\\uff11\\uff12\\uff13\", \"ok\", \"sk-123\"),\n]\n\nfailed = 0\nfor name, raw, want, want_text in CASES:\n    got, text = verdict(raw)\n    ok = got == want and (want_text is None or text == want_text)\n    failed += not ok\n    print(\"%s %-20s %s\" % (\"PASS\" if ok else \"FAIL\", name, got if text is None else repr(text)))\n\nsys.exit(1 if failed else 0)\n```"
 ];
 
+/**
+ * The twelve callouts below sold a "resource stack", "comparison templates"
+ * and "product templates": a curated system, a set of comparison documents
+ * and a product, none of which this site has. They now follow the house
+ * answer documented on BlogPost.affiliateCallout in posts.ts -- no links, and
+ * one thing the reader can do tonight, drawn from the article above it.
+ */
 export const csExpansionPosts: BlogPost[] = [
   {
     slug: "data-structures-and-algorithms-for-ai-engineers",
@@ -368,17 +408,14 @@ export const csExpansionPosts: BlogPost[] = [
     ],
     affiliateCallout: {
       headline: {
-        en: "Build faster with a practical CS execution stack",
-        fr: "Avancez plus vite avec une stack CS orientée exécution"
+        en: "Find the one loop that scans a list",
+        fr: "Trouvez la boucle qui parcourt une liste"
       },
       description: {
-        en: "Use the resource stack to practice algorithms, deploy benchmarks, and convert CS fundamentals into shipped artifacts.",
-        fr: "Utilisez la stack ressources pour pratiquer les algorithmes, déployer des benchmarks et transformer les bases CS en livrables réels."
+        en: "Search your pipeline for the place a loop asks whether it has seen a value before. If the answer lives in a list, move it into a set and time the step before and after.",
+        fr: "Cherchez dans votre pipeline l'endroit où une boucle demande si elle a déjà vu une valeur. Si la réponse vit dans une liste, déplacez-la dans un set et chronométrez l'étape avant et après."
       },
-      links: [
-        { label: { en: "Open CS resources", fr: "Ressources CS" }, href: "/resources", note: "Tool stack" },
-        { label: { en: "Compare cloud options", fr: "Comparer le cloud" }, href: "/compare", note: "Deployment" }
-      ]
+      links: []
     },
     // P3 quotes the collections docs verbatim on pop(0) and insert(0, v) costing O(n). P6 now cites the two pages that actually carry its claims after both were re-pointed: index types for the B-tree operators, the LIKE anchoring rule and the C-locale operator class, and multicolumn indexes for the leftmost-column rule. P7 cites the FAISS wiki, which names IndexFlatL2, IndexIVFFlat and nprobe; faiss.ai's landing page named none of them.
     paragraphCitations: { 3: [3], 6: [4, 5], 7: [6] },
@@ -457,17 +494,14 @@ export const csExpansionPosts: BlogPost[] = [
     ],
     affiliateCallout: {
       headline: {
-        en: "Ship this architecture with student-friendly infra",
-        fr: "Déployez cette architecture avec une infra adaptée étudiant"
+        en: "Count the calls with no timeout",
+        fr: "Comptez les appels sans délai d'expiration"
       },
       description: {
-        en: "Use comparison templates and hosting resources to implement this design with measurable reliability.",
-        fr: "Utilisez les comparatifs et ressources cloud pour implémenter ce design avec une fiabilité mesurable."
+        en: "Grep your project for every call that leaves your process and check which ones pass a timeout. The ones that do not will wait forever, and that is the documented default rather than an accident.",
+        fr: "Cherchez dans votre projet chaque appel qui sort de votre processus et vérifiez lesquels passent un délai d'expiration. Ceux qui n'en passent pas attendront indéfiniment, et c'est le comportement par défaut documenté, pas un accident."
       },
-      links: [
-        { label: { en: "Open architecture resources", fr: "Ressources architecture" }, href: "/resources", note: "Execution" },
-        { label: { en: "Open comparisons", fr: "Ouvrir comparatifs" }, href: "/compare", note: "High intent" }
-      ]
+      links: []
     },
     // All three from RFC 9110, quoted or defined there: 202 Accepted being intentionally noncommittal (P3), the rule that a client should not auto-retry a non-idempotent method (P4), and 503 with Retry-After (P7). Note RFC 9110 does not define 429 -- that is RFC 6585 -- so the 429 half of P4 is not covered by this marker. Refs 1, 2 and 3 are a factor list, a table of contents and an introduction; ref 5 is behind a Cloudflare interstitial. None is cited.
     paragraphCitations: { 3: [4], 4: [4], 7: [4] },
@@ -540,17 +574,14 @@ export const csExpansionPosts: BlogPost[] = [
     ],
     affiliateCallout: {
       headline: {
-        en: "Need low-friction backend deployment?",
-        fr: "Besoin d'un déploiement backend sans friction ?"
+        en: "Call your own endpoint twice",
+        fr: "Appelez votre endpoint deux fois"
       },
       description: {
-        en: "Use the resource stack to deploy your API, monitor latency, and keep costs predictable during student projects.",
-        fr: "Utilisez la stack ressources pour déployer votre API, suivre la latence, et garder des coûts prévisibles."
+        en: "Time the first request, then the second. If the second is no faster, the model is being loaded inside the handler, and that is the whole bug.",
+        fr: "Chronométrez la première requête, puis la seconde. Si la seconde n'est pas plus rapide, le modèle est chargé à l'intérieur du gestionnaire, et c'est tout le bug."
       },
-      links: [
-        { label: { en: "Open backend resources", fr: "Ressources backend" }, href: "/resources", note: "Tools" },
-        { label: { en: "Compare platforms", fr: "Comparer plateformes" }, href: "/compare", note: "Cloud options" }
-      ]
+      links: []
     },
     // P3: FastAPI's root page does show Pydantic request models and the generated /docs, and MDN defines 422 Unprocessable Content. P6: MDN states outright that a server may send 404 instead of 403 to hide a resource's existence, and defines 503 against a generic 500. The lifespan, threadpool and response_model claims live on FastAPI subpages, not the root URL cited here, so they stay uncited.
     paragraphCitations: { 3: [1, 3], 6: [3] },
@@ -623,17 +654,14 @@ export const csExpansionPosts: BlogPost[] = [
     ],
     affiliateCallout: {
       headline: {
-        en: "Use a cloud stack that fits this workflow",
-        fr: "Utilisez une stack cloud adaptée à ce workflow"
+        en: "Run ss -ltnp on your server",
+        fr: "Lancez ss -ltnp sur votre serveur"
       },
       description: {
-        en: "Deploy faster with student-friendly cloud options and compare platform tradeoffs before locking your stack.",
-        fr: "Déployez plus vite avec des options cloud étudiantes et comparez les compromis avant de verrouiller votre stack."
+        en: "Read what your server is actually listening on. Anything bound to 0.0.0.0 is reachable from the internet if the firewall allows it, and a published database port is how student projects get found by scanners.",
+        fr: "Lisez ce que votre serveur écoute réellement. Tout ce qui est lié à 0.0.0.0 est joignable depuis internet si le pare-feu l'autorise, et un port de base de données publié est la façon dont les projets étudiants sont trouvés par les scanners."
       },
-      links: [
-        { label: { en: "Open DevOps resources", fr: "Ressources DevOps" }, href: "/resources", note: "Tooling" },
-        { label: { en: "Open cloud comparison", fr: "Comparatif cloud" }, href: "/compare", note: "Decision" }
-      ]
+      links: []
     },
     // Every reference here used to be a landing page: kernel.org/doc/man-pages,
     // docs.docker.com, systemd.io, docs.github.com/en/actions (for an article
@@ -713,15 +741,15 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 86,
     relatedSlugs: ["backend-apis-for-ml-apps", "llm-guardrails-and-evaluation-basics"],
     affiliateCallout: {
-      headline: { en: "Apply this checklist with deployment-ready tooling", fr: "Appliquez cette checklist avec des outils prêts à déployer" },
-      description: {
-        en: "Use the resources stack for hosting, logging, and deployment controls with student-friendly setup.",
-        fr: "Utilisez la stack ressources pour hébergement, logs, et contrôles de déploiement avec une configuration étudiante."
+      headline: {
+        en: "Ten seconds: search your history for a key",
+        fr: "Dix secondes : cherchez une clé dans votre historique"
       },
-      links: [
-        { label: { en: "Open security resources", fr: "Ressources sécurité" }, href: "/resources", note: "Tools" },
-        { label: { en: "Compare secure hosts", fr: "Comparer hébergeurs" }, href: "/compare", note: "Security tradeoffs" }
-      ]
+      description: {
+        en: "Run git log --all --oneline -S 'sk-' in your project. If it prints a commit, the key is in every clone that was ever made, and rotating it is the fix -- not deleting the file.",
+        fr: "Lancez git log --all --oneline -S 'sk-' dans votre projet. Si la commande affiche un commit, la clé est dans chaque clone jamais effectué, et la faire tourner est le correctif -- pas supprimer le fichier."
+      },
+      links: []
     },
     // P2 and P3 quote OWASP API1:2023 verbatim, including its closing instruction to write authorization tests. P4 pairs nginx's client_max_body_size 1m default and its 413 with body-parser's 100kb default. P5 cites the OWASP LLM01:2025 entry it quotes, which was missing from this list entirely. P8's npm audit-level quote is real but this article's npm reference is cited by it; ref 2 (ASVS landing page) carries no requirement text and is cited by nothing.
     paragraphCitations: { 2: [1], 3: [1], 4: [3, 4], 5: [6] },
@@ -793,15 +821,15 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 84,
     relatedSlugs: ["backend-apis-for-ml-apps", "system-design-for-student-ai-projects"],
     affiliateCallout: {
-      headline: { en: "Deploy your data layer with student-friendly infra", fr: "Déployez votre couche data avec une infra adaptée" },
-      description: {
-        en: "Use cloud resources and comparison templates to choose a database stack that matches your workload.",
-        fr: "Utilisez ressources cloud et comparatifs pour choisir une stack base de données adaptée à votre charge."
+      headline: {
+        en: "Run your ingestion twice and count the rows",
+        fr: "Lancez votre ingestion deux fois et comptez les lignes"
       },
-      links: [
-        { label: { en: "Open data resources", fr: "Ressources data" }, href: "/resources", note: "Execution" },
-        { label: { en: "Compare platforms", fr: "Comparer plateformes" }, href: "/compare", note: "Decision" }
-      ]
+      description: {
+        en: "If the second run doubles the count, the pipeline is not idempotent -- and pipelines get re-run. The fix is a uniqueness constraint plus ON CONFLICT, not remembering never to run it again.",
+        fr: "Si la seconde exécution double le décompte, le pipeline n'est pas idempotent -- et les pipelines sont relancés. Le correctif est une contrainte d'unicité plus ON CONFLICT, pas le fait de penser à ne jamais le relancer."
+      },
+      links: []
     },
     // P2: the PostgreSQL manual both states that ANALYZE actually executes the statement and gives the BEGIN/ROLLBACK workaround the paragraph recommends. P4: pgvector documents the cosine operator, the vector_cosine_ops index, and both dimension ceilings -- 2,000 indexed, 16,000 unindexed. P6: SQLite's UPSERT page carries ON CONFLICT DO UPDATE, the excluded. qualifier, and its own sentence that UPSERT follows PostgreSQL's syntax.
     paragraphCitations: { 2: [1], 4: [2], 6: [3] },
@@ -855,15 +883,15 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 83,
     relatedSlugs: ["linux-devops-workflow-for-students", "deploy-ml-model-student-budget"],
     affiliateCallout: {
-      headline: { en: "Use this CI/CD flow with practical cloud options", fr: "Utilisez ce flow CI/CD avec des options cloud pratiques" },
-      description: {
-        en: "Pair this pipeline with hosting comparisons to keep deployments predictable and low-cost.",
-        fr: "Associez ce pipeline aux comparatifs cloud pour des déploiements prévisibles et low-cost."
+      headline: {
+        en: "Add the four concurrency lines",
+        fr: "Ajoutez les quatre lignes de concurrency"
       },
-      links: [
-        { label: { en: "Open deployment resources", fr: "Ressources déploiement" }, href: "/resources", note: "Tools" },
-        { label: { en: "Cloud comparisons", fr: "Comparatifs cloud" }, href: "/compare", note: "Budget" }
-      ]
+      description: {
+        en: "Open your workflow file and set concurrency with group: ci-${{ github.ref }} and cancel-in-progress: true. Then set timeout-minutes, because the documented default is six hours.",
+        fr: "Ouvrez votre fichier de workflow et ajoutez concurrency avec group: ci-${{ github.ref }} et cancel-in-progress: true. Puis fixez timeout-minutes, car la valeur par défaut documentée est de six heures."
+      },
+      links: []
     },
     // Four from the workflow syntax reference, which defines each key the paragraphs name: permissions and contents: read (P0), concurrency group with cancel-in-progress (P3), the documented 360-minute job default (P4), and fail-fast defaulting to true (P7). P6 quotes the billing page on Actions being free for public repositories, with the GitHub Free row of 2,000 minutes and 500 MB. P2's action versions stay uncited on purpose: they are correct -- checkout v7.0.1, setup-node v7.0.0, setup-python v7.0.0, cache v6.1.0 per each action's releases API -- but a workflow syntax page is not where a version is verified, so no marker there would mean anything.
     paragraphCitations: { 0: [1], 3: [1], 4: [1], 6: [2], 7: [1] },
@@ -922,15 +950,15 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 82,
     relatedSlugs: ["linux-devops-workflow-for-students", "system-design-for-student-ai-projects"],
     affiliateCallout: {
-      headline: { en: "Need a stack to ship and observe faster?", fr: "Besoin d'une stack pour livrer et observer plus vite ?" },
-      description: {
-        en: "Use the recommended resources to deploy monitoring-ready services and compare hosting tradeoffs.",
-        fr: "Utilisez les ressources recommandées pour déployer des services observables et comparer les compromis cloud."
+      headline: {
+        en: "Check whether your dashboard shows a mean",
+        fr: "Vérifiez si votre tableau de bord affiche une moyenne"
       },
-      links: [
-        { label: { en: "Open observability resources", fr: "Ressources observabilité" }, href: "/resources", note: "Tools" },
-        { label: { en: "Compare infra", fr: "Comparer infra" }, href: "/compare", note: "Cloud" }
-      ]
+      description: {
+        en: "Find the latency number you look at most. If it is an average, replace it with p50, p95 and p99 -- on a tail-heavy distribution the mean can sit above the ninety-fifth percentile.",
+        fr: "Trouvez le chiffre de latence que vous regardez le plus. Si c'est une moyenne, remplacez-la par p50, p95 et p99 -- sur une distribution à longue traîne, la moyenne peut se situer au-dessus du quatre-vingt-quinzième centile."
+      },
+      links: []
     },
     // Verified against each page's visible text. P0 names the statistics module and cites it for the method (quantiles n=100); the numbers are the author's dataset, reproduced independently. P1 quotes the histogram_quantile example verbatim from the Prometheus function docs. P3 matches the traceparent ABNF in the W3C spec. Ref 4 (OpenTelemetry docs root) supports no claim and is cited by nothing.
     paragraphCitations: { 0: [3], 1: [1], 3: [2] },
@@ -990,15 +1018,15 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 81,
     relatedSlugs: ["backend-apis-for-ml-apps", "system-design-for-student-ai-projects"],
     affiliateCallout: {
-      headline: { en: "Turn networking concepts into deployable projects", fr: "Transformez les concepts réseau en projets déployables" },
-      description: {
-        en: "Use cloud resources and comparison guides to test latency and reliability patterns in real deployments.",
-        fr: "Utilisez ressources cloud et comparatifs pour tester latence et fiabilité sur de vrais déploiements."
+      headline: {
+        en: "One curl, against your own API",
+        fr: "Un seul curl, sur votre propre API"
       },
-      links: [
-        { label: { en: "Open resources", fr: "Ouvrir ressources" }, href: "/resources", note: "Execution" },
-        { label: { en: "Open comparisons", fr: "Ouvrir comparatifs" }, href: "/compare", note: "Infrastructure" }
-      ]
+      description: {
+        en: "Run the curl from the first paragraph against your own endpoint and read dns, tls and ttfb as separate numbers. Then pass the URL twice in the same command and watch the second handshake cost nothing.",
+        fr: "Lancez le curl du premier paragraphe sur votre propre endpoint et lisez dns, tls et ttfb comme des chiffres distincts. Puis passez l'URL deux fois dans la même commande et regardez la seconde poignée de main ne rien coûter."
+      },
+      links: []
     },
     // P0 and P7: every --write-out variable named is documented on the curl manpage. P3: the TCP round-trip clause only, from MDN plus RFC 9293's three-way handshake. P4: three verbatim quotes from the requests quickstart. P2's Session connection-reuse claim stays uncited -- the quickstart page never mentions sessions.
     paragraphCitations: { 0: [1], 3: [3, 4], 4: [2], 7: [1] },
@@ -1057,15 +1085,15 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 80,
     relatedSlugs: ["linux-devops-workflow-for-students", "data-structures-and-algorithms-for-ai-engineers"],
     affiliateCallout: {
-      headline: { en: "Pair OS skills with deployment practice", fr: "Combinez skills système et pratique déploiement" },
-      description: {
-        en: "Use curated resources and cloud comparisons to apply OS concepts in real backend and AI services.",
-        fr: "Utilisez ressources et comparatifs cloud pour appliquer les concepts système sur des services réels."
+      headline: {
+        en: "Send SIGTERM to your own process",
+        fr: "Envoyez SIGTERM à votre propre processus"
       },
-      links: [
-        { label: { en: "Open resources", fr: "Ressources" }, href: "/resources", note: "Tool stack" },
-        { label: { en: "Compare hosts", fr: "Comparer hébergeurs" }, href: "/compare", note: "Deployment" }
-      ]
+      description: {
+        en: "Register the handler, run the service, then kill -TERM its pid. Either it finishes the request it was holding or it drops it -- and today, on every deploy, it drops it.",
+        fr: "Enregistrez le gestionnaire, lancez le service, puis faites kill -TERM sur son pid. Soit il termine la requête qu'il tenait, soit il l'abandonne -- et aujourd'hui, à chaque déploiement, il l'abandonne."
+      },
+      links: []
     },
     // P1: docker stop's SIGTERM default and 10s grace, plus systemd TimeoutStopSec. P2: Python signal docs, which state SIGINT becomes KeyboardInterrupt while SIGTERM gets no installed handler. P4: cgroup v2 memory.max, memory.events and oom_kill, all verbatim. P6: systemd Restart= values. P5 stays uncited -- --memory is on docker run, not the docker stop page cited here.
     paragraphCitations: { 1: [1, 3], 2: [4], 4: [2], 6: [3] },
@@ -1130,15 +1158,15 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 85,
     relatedSlugs: ["backend-apis-for-ml-apps", "llm-guardrails-and-evaluation-basics"],
     affiliateCallout: {
-      headline: { en: "Build a test-first ML workflow", fr: "Construisez un workflow ML test-first" },
-      description: {
-        en: "Use resources and product templates to build repeatable testing loops across data, model, and deployment.",
-        fr: "Utilisez ressources et templates pour des boucles de test répétables sur data, modèle, et déploiement."
+      headline: {
+        en: "Score your model through the serving path",
+        fr: "Évaluez votre modèle via le chemin de service"
       },
-      links: [
-        { label: { en: "Open ML resources", fr: "Ressources ML" }, href: "/resources", note: "Tools" },
-        { label: { en: "Career guides", fr: "Guides carrière" }, href: "/blog?track=career", note: "Workflow" }
-      ]
+      description: {
+        en: "Run your held-out set through the code your endpoint actually calls, not through your training script, and compare the two numbers. If they differ, the gap is your deployment.",
+        fr: "Faites passer votre jeu de test par le code que votre endpoint appelle réellement, pas par votre script d'entraînement, et comparez les deux chiffres. S'ils diffèrent, l'écart est votre déploiement."
+      },
+      links: []
     },
     // P2: sklearn's own leakage rationale for make_pipeline, plus Rules of ML #32 on reusing code between training and serving. P4 and P7: Rules of ML #5, on gating data into the algorithm and testing infrastructure independently of the learning. Ref 2 is a section index with no prose and is cited by nothing.
     paragraphCitations: { 2: [1, 3], 4: [3], 7: [3] },
@@ -1192,15 +1220,15 @@ export const csExpansionPosts: BlogPost[] = [
     popularScore: 84,
     relatedSlugs: ["transformers-rag-and-agents-for-students", "security-checklist-for-student-ai-and-cs-projects"],
     affiliateCallout: {
-      headline: { en: "Deploy safer LLM systems with practical tooling", fr: "Déployez des systèmes LLM plus fiables avec des outils pratiques" },
-      description: {
-        en: "Use resource and comparison pages to pick infra and workflow tools for guardrailed LLM deployments.",
-        fr: "Utilisez ressources et comparatifs pour choisir infra et workflow déploiement LLM avec guardrails."
+      headline: {
+        en: "Give your input check a test file",
+        fr: "Donnez un fichier de tests à votre contrôle d'entrée"
       },
-      links: [
-        { label: { en: "Open LLM resources", fr: "Ressources LLM" }, href: "/resources", note: "Tools" },
-        { label: { en: "Compare deployment options", fr: "Comparer options déploiement" }, href: "/compare", note: "Cloud" }
-      ]
+      description: {
+        en: "Five named cases is enough, and the script at the end of this article is all five. Until they run on every change, the guardrail is a hope rather than a control.",
+        fr: "Cinq cas nommés suffisent, et le script à la fin de l'article les contient tous. Tant qu'ils ne tournent pas à chaque modification, le garde-fou est un espoir, pas un contrôle."
+      },
+      links: []
     },
     // All four from OWASP LLM01:2025, quoted verbatim: no fool-proof prevention (P0), segregate untrusted content (P5), request source citations and assess groundedness (P6), least privilege and human-in-the-loop (P7). The Unicode normalisation paragraph stays uncited: the page covers base64 and emoji evasion, which is a different claim.
     paragraphCitations: { 0: [1], 5: [1], 6: [1], 7: [1] },

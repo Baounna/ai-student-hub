@@ -193,7 +193,7 @@ export default async function LocalizedAboutPage(props: { params: Promise<{ lang
         <p className="mt-2 text-sm text-[color:var(--text)]">
           {locale === "fr"
             ? "Commencez par les actualités, puis ressources, comparatifs, et enfin le blog pour l'exécution."
-            : "Start with news, then resources, comparisons, and the blog for weekly execution."}
+            : "Start with news, then resources, comparisons, and the blog for execution."}
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <Link href={`/${locale}/news`} className="btn-secondary">

@@ -47,6 +47,35 @@ export type BlogPost = {
    */
   popularScore: number;
   relatedSlugs: string[];
+  /**
+   * The callout under the article. It may only offer what exists.
+   *
+   * Eighteen posts -- six here and twelve in posts-cs.ts -- shared one
+   * February 2026 template written for a different publication. It offered
+   * "productivity templates", a "student productivity workspace", a "weekly
+   * roadmap", "comparison templates" and "product templates": five artefacts
+   * that appear nowhere in this repository. The weekly roadmap was the deleted
+   * "Free AI Career Roadmap" coming back under a new name. All eighteen also
+   * described /resources as "the resource stack", "the deployment stack" or
+   * "the execution stack", which promises a curated system; /resources is
+   * three recommended tools and a list of fifteen third-party links.
+   *
+   * The six September posts had already settled the answer, so all eighteen
+   * now follow it: links: [], and one instruction the reader can finish in
+   * about fifteen minutes, taken from the argument of the article above it.
+   *
+   * Two separate faults went out with the buttons rather than being repaired.
+   * student-ai-internship-roadmap carried the same "Open internships" button
+   * twice -- identical label, identical /stages href, differing only in a
+   * `note` field nothing renders, which also handed React two children with
+   * the same key. And four buttons labelled "Compare cloud options", "Cloud
+   * platform comparison" or "See full resources" all pointed at /resources,
+   * so two of them named a comparison page while going somewhere else.
+   *
+   * The rule for the next post: if the article contains no action a reader can
+   * take, say something true and small. An invented exercise is the same
+   * failure as an invented product.
+   */
   affiliateCallout: {
     headline: Record<Locale, string>;
     description: Record<Locale, string>;
@@ -1162,6 +1191,13 @@ const basePosts: BlogPost[] = [
       },
       links: []
     },
+    // Eleven workflows and three scheduled is a snapshot, not a standing fact,
+    // and the article invites the reader to go and check -- so it now says
+    // "then ran" rather than "run". At commit 6974888, the one the repair
+    // landed on, `git ls-tree 6974888 .github/workflows/` returns 11 files and
+    // 3 of them contain a `schedule:` trigger. Today the same repository has
+    // 14 workflows and 8 on a schedule, so a reader counting what is there now
+    // would have found the sentence wrong and had no way to tell which part.
     // P2: all three npm ci claims verbatim -- exits with an error on a mismatched lock, never writes to package.json, and is meant for CI. P5: both GitHub pages carry the identical sentence that scheduled workflows in a public repository are disabled automatically after 60 days of inactivity.
     paragraphCitations: { 2: [1], 5: [2, 3] },
     references: [
@@ -1186,7 +1222,7 @@ const basePosts: BlogPost[] = [
         title: "Why Your Side Project Breaks Quietly",
         excerpt: "Every workflow in this repository failed for eighty days and nobody noticed. The cause was a lockfile; the reason it lasted was alert fatigue.",
         content: [
-          "This site's jobs failed for eighty days. The drift went in on 24 June 2026 and was repaired on 12 September — you can count the days in the git log yourself. In between, all eleven workflows in the repository died on every trigger they had, and the three that run on a schedule went on failing on their own timers. Nothing alerted anyone, because everything alerted everyone: the notification count had passed six hundred, and a number that large is not information, it is wallpaper.",
+          "This site's jobs failed for eighty days. The drift went in on 24 June 2026 and was repaired on 12 September — you can count the days in the git log yourself. In between, all eleven workflows in the repository died on every trigger they had, and the three that then ran on a schedule went on failing on their own timers. Nothing alerted anyone, because everything alerted everyone: the notification count had passed six hundred, and a number that large is not information, it is wallpaper.",
           "The cause was almost insultingly small. `package.json` and `package-lock.json` had drifted apart. That single fact is enough to take down every job in a repository, and it is worth understanding exactly why, because the behaviour is deliberate.",
           "`npm install` and `npm ci` do not do the same thing. `npm install` treats the lockfile as a starting point: if it disagrees with `package.json`, it resolves the difference and rewrites the lock. `npm ci` treats the lockfile as a contract. If the two disagree, it does not reconcile them — it exits with an error and installs nothing. That is the entire point of the command: continuous integration should build exactly what was committed, not something adjacent to it.",
           "So the failure was correct. `npm ci` did its job. A dependency had been added locally with the lockfile out of sync, the mismatch was committed, and from that commit on every workflow refused to install and died before running a single test. The site kept serving whatever had been built last, which is why nothing looked wrong from outside.",
@@ -1207,7 +1243,7 @@ const basePosts: BlogPost[] = [
         seoDescription:
           "Tous les workflows de ce dépôt ont échoué pendant quatre-vingts jours sans que personne le remarque. La cause : un lockfile ; la durée : la fatigue d'alerte.",
         content: [
-          "Les tâches de ce site ont échoué pendant quatre-vingts jours. L'écart est entré le 24 juin 2026 et a été réparé le 12 septembre — vous pouvez compter les jours vous-même dans le journal git. Entre les deux, les onze workflows du dépôt mouraient à chaque déclencheur, et les trois qui tournent sur une planification ont continué d'échouer sur leurs propres minuteries. Personne n'a été alerté, parce que tout alertait tout le monde : le compteur de notifications avait dépassé six cents, et un nombre pareil n'est plus une information, c'est du papier peint.",
+          "Les tâches de ce site ont échoué pendant quatre-vingts jours. L'écart est entré le 24 juin 2026 et a été réparé le 12 septembre — vous pouvez compter les jours vous-même dans le journal git. Entre les deux, les onze workflows du dépôt mouraient à chaque déclencheur, et les trois qui tournaient alors sur une planification ont continué d'échouer sur leurs propres minuteries. Personne n'a été alerté, parce que tout alertait tout le monde : le compteur de notifications avait dépassé six cents, et un nombre pareil n'est plus une information, c'est du papier peint.",
           "La cause était presque vexante de petitesse. `package.json` et `package-lock.json` avaient divergé. Ce seul fait suffit à faire tomber tous les jobs d'un dépôt, et il vaut la peine de comprendre pourquoi, car ce comportement est délibéré.",
           "`npm install` et `npm ci` ne font pas la même chose. `npm install` considère le lockfile comme un point de départ : s'il diverge de `package.json`, il résout la différence et réécrit le lock. `npm ci` considère le lockfile comme un contrat. Si les deux divergent, il ne les réconcilie pas — il sort en erreur et n'installe rien. C'est précisément l'objet de la commande : l'intégration continue doit construire exactement ce qui a été commité, pas quelque chose d'approchant.",
           "L'échec était donc correct. `npm ci` a fait son travail. Une dépendance avait été ajoutée localement avec un lockfile désynchronisé, l'écart a été commité, et à partir de ce commit chaque workflow a refusé d'installer et est mort avant d'exécuter le moindre test. Le site continuait à servir la dernière version construite, ce qui explique que rien ne paraissait cassé de l'extérieur.",
@@ -1356,17 +1392,14 @@ const basePosts: BlogPost[] = [
     relatedSlugs: ["deploy-ml-model-student-budget", "student-ai-internship-roadmap"],
     affiliateCallout: {
       headline: {
-        en: "Build this faster with a student-friendly cloud stack",
-        fr: "Construisez plus vite avec une stack cloud adaptée aux étudiants"
+        en: "Put the setup instructions last",
+        fr: "Mettez l'installation en dernier"
       },
       description: {
-        en: "If you want to ship your project in days instead of weeks, use a managed deployment platform with free credits.",
-        fr: "Pour livrer en quelques jours au lieu de semaines, utilisez une plateforme de déploiement managée avec crédits gratuits."
+        en: "Open your project's README and reorder it: what the project does and a link first, then the architecture, then the tradeoffs you took, and installation at the bottom. Fifteen minutes, and it is the order a reviewer actually reads in.",
+        fr: "Ouvrez le README de votre projet et réordonnez-le : ce que fait le projet et un lien d'abord, puis l'architecture, puis les compromis retenus, et l'installation en bas. Un quart d'heure, et c'est l'ordre dans lequel un relecteur lit vraiment."
       },
-      links: [
-        { label: { en: "Compare cloud options", fr: "Comparer les options cloud" }, href: "/resources", note: "Affiliate comparison" },
-        { label: { en: "See full resources", fr: "Voir toutes les ressources" }, href: "/resources", note: "Tools I use" }
-      ]
+      links: []
     },
     references: [
       {
@@ -1432,21 +1465,14 @@ const basePosts: BlogPost[] = [
     relatedSlugs: ["ai-portfolio-project-recruiters-notice", "student-ai-internship-roadmap"],
     affiliateCallout: {
       headline: {
-        en: "Need low-cost deployment tools?",
-        fr: "Besoin d'outils de déploiement low-cost ?"
+        en: "Find out whether your budget is a brake",
+        fr: "Vérifiez si votre budget est un frein"
       },
       description: {
-        en: "Use the recommended hosting stack and credits-first tools to keep your monthly cost predictable.",
-        fr: "Utilisez la stack recommandée et des outils à crédits pour garder un coût mensuel prévisible."
+        en: "Open your platform's billing page and read what your budget actually does. If it only sends an email, add a maximum instance count or a request quota -- that is the control that refuses work instead of billing you for it.",
+        fr: "Ouvrez la page de facturation de votre plateforme et lisez ce que fait réellement votre budget. S'il n'envoie qu'un e-mail, ajoutez un nombre maximum d'instances ou un quota de requêtes -- c'est le contrôle qui refuse le travail au lieu de vous le facturer."
       },
-      links: [
-        { label: { en: "View recommended tools", fr: "Voir les outils recommandés" }, href: "/resources", note: "Affiliate links" },
-        {
-          label: { en: "Cloud platform comparison", fr: "Comparatif plateformes cloud" },
-          href: "/resources",
-          note: "High-intent guide"
-        }
-      ]
+      links: []
     },
     // P3: DistilBERT's abstract gives 40 percent smaller, 60 percent faster, 97 percent retained, and ONNX Runtime's own FAQ says the gain depends on model and hardware and can be worse on old devices. P4: Docker's definition of a container as code plus dependencies that runs the same elsewhere. P5: the Google Cloud budgets caution, quoted verbatim in the paragraph. Refs 1 and 2 describe their pages accurately but the article makes no claim either page supports, so nothing cites them.
     paragraphCitations: { 3: [4, 5], 4: [3], 5: [6] },
@@ -1544,15 +1570,32 @@ const basePosts: BlogPost[] = [
     relatedSlugs: ["ai-portfolio-project-recruiters-notice", "deploy-ml-model-student-budget"],
     affiliateCallout: {
       headline: {
-        en: "Get the full sprint system",
-        fr: "Obtenez le système sprint complet"
+        en: "Say your project out loud, timed",
+        fr: "Racontez votre projet à voix haute, chronométré"
       },
       description: {
-        en: "Use the weekly internship list and productivity templates to execute this 90-day plan consistently.",
-        fr: "Utilisez la liste hebdomadaire de stages et les templates de productivité pour exécuter ce plan 90 jours avec constance."
+        en: "Two minutes: the problem, why the obvious approach failed, what you did instead, and what you would change with more time. That last part is the one that reads as judgement rather than doubt.",
+        fr: "Deux minutes : le problème, pourquoi l'approche évidente a échoué, ce que vous avez fait à la place, et ce que vous changeriez avec plus de temps. C'est cette dernière partie qui se lit comme du jugement plutôt que comme un doute."
       },
       links: [
-        { label: { en: "Open internships", fr: "Stages ouverts" }, href: "/stages", note: "Weekly list" },
+        /*
+         * One link, on the one post whose whole subject is getting an
+         * internship.
+         *
+         * The February callouts were rewritten to the September form, which
+         * carries `links: []` because its value is a single instruction rather
+         * than a button. Correct everywhere except here: it took the last two
+         * /stages links on the site with it, and an SEO audit had already found
+         * that only two of twenty-seven posts linked to the board at all. The
+         * board is the best thing this site has and no article pointed at it.
+         *
+         * So: one button, not a row of them, and it goes to the thing the
+         * reader of this post is actually trying to find.
+         */
+        // `note` is required by AffiliateLink and rendered nowhere -- the
+        // template at blog/[slug] reads label and href only. Filled with
+        // something true rather than padding, since a required field nothing
+        // displays is a trap for whoever writes the next one.
         { label: { en: "Open internships", fr: "Stages ouverts" }, href: "/stages", note: "Verified weekly" }
       ]
     },
@@ -1628,17 +1671,14 @@ const basePosts: BlogPost[] = [
     relatedSlugs: ["student-ai-internship-roadmap", "ai-portfolio-project-recruiters-notice"],
     affiliateCallout: {
       headline: {
-        en: "Want a faster learning path?",
-        fr: "Vous voulez accélérer votre progression ?"
+        en: "Read thirty of your wrong predictions",
+        fr: "Lisez trente de vos prédictions fausses"
       },
       description: {
-        en: "Use the internship list + curated resources to turn these fundamentals into one portfolio project this month.",
-        fr: "Utilisez la liste de stages + ressources pour transformer ces fondamentaux en un projet portfolio ce mois-ci."
+        en: "Pull the errors out of your last model and read them one at a time. A pattern -- one category, one input length, one kind of phrasing -- is more actionable than another round of hyperparameter tuning.",
+        fr: "Sortez les erreurs de votre dernier modèle et lisez-les une par une. Un motif -- une catégorie, une longueur d'entrée, une tournure de phrase -- est plus exploitable qu'un nouveau tour de réglage d'hyperparamètres."
       },
-      links: [
-        { label: { en: "Open resources", fr: "Voir les ressources" }, href: "/resources", note: "Curated stack" },
-        { label: { en: "Open internships", fr: "Stages ouverts" }, href: "/stages", note: "Weekly list" }
-      ]
+      links: []
     },
     // P1: IBM's nested-concepts framing, plus Google's glossary defining a deep neural network as one with more than one hidden layer. P2: IBM on labelled data for supervised, feature extraction for unsupervised, and trial-and-error with reward functions for reinforcement. Ref 2 is a module index and ref 3 is a book landing page; neither carries an assertion this article makes, so neither is cited.
     paragraphCitations: { 1: [1, 4], 2: [1] },
@@ -1717,17 +1757,14 @@ const basePosts: BlogPost[] = [
     relatedSlugs: ["deploy-ml-model-student-budget", "ai-fundamentals-every-cs-student-should-know"],
     affiliateCallout: {
       headline: {
-        en: "Need a practical study stack?",
-        fr: "Besoin d'une stack d'étude pratique ?"
+        en: "Let the bug choose the chapter",
+        fr: "Laissez le bug choisir le chapitre"
       },
       description: {
-        en: "Use the student productivity workspace and weekly roadmap to execute this CS plan without burnout.",
-        fr: "Utilisez l'espace productivité et la roadmap hebdomadaire pour exécuter ce plan CS sans épuisement."
+        en: "Write down the one thing in your project that is currently slow, broken or unexplained. That names what to study this week -- complexity, operating systems or networking -- and curriculum order does not.",
+        fr: "Notez la seule chose qui, dans votre projet, est actuellement lente, cassée ou inexpliquée. C'est elle qui nomme ce qu'il faut étudier cette semaine -- complexité, systèmes d'exploitation ou réseau -- et l'ordre du programme ne le fait pas."
       },
-      links: [
-        { label: { en: "Open student tools", fr: "Outils étudiants" }, href: "/resources", note: "Execution stack" },
-        { label: { en: "See internship roadmap", fr: "Voir la roadmap stage" }, href: "/blog/student-ai-internship-roadmap", note: "Career path" }
-      ]
+      links: []
     },
     references: [
       {
@@ -1809,17 +1846,14 @@ const basePosts: BlogPost[] = [
     relatedSlugs: ["ai-fundamentals-every-cs-student-should-know", "deploy-ml-model-student-budget"],
     affiliateCallout: {
       headline: {
-        en: "Ship this architecture as a real project",
-        fr: "Livrez cette architecture comme vrai projet"
+        en: "Ask which layer failed, not whether it did",
+        fr: "Demandez quelle couche a échoué, pas si elle a échoué"
       },
       description: {
-        en: "Use the deployment stack and comparison guides to turn this system design into a live, interview-ready demo.",
-        fr: "Utilisez la stack de déploiement et les comparatifs pour transformer ce design en démo live prête pour l'entretien."
+        en: "Take ten questions your system answered badly and check, for each, whether the right passage came back at all. One end-to-end score cannot tell retrieval and generation apart.",
+        fr: "Prenez dix questions auxquelles votre système a mal répondu et vérifiez, pour chacune, si le bon passage est revenu. Un score unique de bout en bout ne distingue pas la recherche de la génération."
       },
-      links: [
-        { label: { en: "Compare cloud platforms", fr: "Comparer les plateformes cloud" }, href: "/compare", note: "High intent" },
-        { label: { en: "Open deployment resources", fr: "Ressources de déploiement" }, href: "/resources", note: "Tool stack" }
-      ]
+      links: []
     },
     // P1's attention and token-prediction sentence only: the Transformer paper's abstract for the architecture, and Google's LLM module for self-attention weighing importance across the input. The same paragraph's context-window clause is NOT covered -- 'context window' appears nowhere on either page. Refs 4 and 5 are book companion pages with no retrieval or agent content, so the RAG and agent paragraphs stay uncited.
     paragraphCitations: { 1: [1, 3] },
@@ -1905,15 +1939,24 @@ const basePosts: BlogPost[] = [
  */
 const WORDS_PER_MINUTE = 220;
 
-function measureReadTime(post: BlogPost): string {
-  // Read from locales.en, not post.content: the top-level content field is
-  // still [] at this point and only gets filled from the locale block below.
-  // Measuring the empty array reported "1 min read" for every post, including
-  // the 1,200-word ones — an understatement replacing an overstatement.
+function measureReadTime(post: BlogPost, locale: Locale): string {
+  // Measured per locale. This counted locales.en.content whatever page it was
+  // labelling, so a French reader was shown an English word count -- and the
+  // French bodies here run longer, which understated seven of the twenty-four
+  // French labels by a minute. The stored post.readTime below is still the
+  // English figure, since the posts array has no locale; getLocalizedPost and
+  // getLocalizedPosts override it with the figure for the page being rendered,
+  // and every page reads readTime through one of those two.
+  //
+  // Not post.content: the top-level content field is still [] at this point
+  // and only gets filled from the locale block below. Measuring the empty
+  // array reported "1 min read" for every post, including the 1,200-word ones
+  // — an understatement replacing an overstatement.
+  //
   // Prose only. A forty-line script is not read at 220 words per minute, and
   // counting one as prose inflates the estimate for exactly the articles that
   // ship something runnable -- which is a reason not to ship it.
-  const words = proseOnly(post.locales.en.content).reduce(
+  const words = proseOnly(post.locales[locale].content).reduce(
     (sum, paragraph) => sum + paragraph.split(/\s+/).filter(Boolean).length,
     0
   );
@@ -1923,7 +1966,7 @@ function measureReadTime(post: BlogPost): string {
 
 export const posts: BlogPost[] = [...basePosts, ...csExpansionPosts].map((post) => ({
   ...post,
-  readTime: measureReadTime(post)
+  readTime: measureReadTime(post, "en")
 }));
 
 for (const post of posts) {
@@ -1947,6 +1990,7 @@ export function getLocalizedPost(slug: string, locale: Locale) {
     seoTitle: localized.seoTitle,
     excerpt: localized.excerpt,
     seoDescription: localized.seoDescription,
+    readTime: measureReadTime(post, locale),
     content: localized.content
   };
 }
@@ -1961,6 +2005,7 @@ export function getLocalizedPosts(locale: Locale) {
       seoTitle: localized.seoTitle,
       excerpt: localized.excerpt,
       seoDescription: localized.seoDescription,
+      readTime: measureReadTime(post, locale),
       content: localized.content
     };
   });

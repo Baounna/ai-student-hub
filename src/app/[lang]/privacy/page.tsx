@@ -79,9 +79,19 @@ export default async function PrivacyPage(props: { params: Promise<{ lang: strin
             {fr ? "Données collectées" : "Data collected"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
+            {/* "Only (email, first name)" is contradicted two sections below by
+                this same page, which discloses -- accurately and in detail --
+                that Vercel receives your visit and that Cloudflare Turnstile
+                sits in the footer of every page and receives your IP and
+                browser signals whether or not you ever subscribe. An absolute
+                that the next paragraph disproves is worse on a privacy page
+                than anywhere else on the site, because this is the page a
+                reader opens precisely because they do not want to be told a
+                comfortable version. So: name what we ASK for, and point at
+                what the site's dependencies see. */}
             {fr
-              ? "Nous collectons uniquement les données nécessaires (email, prénom) pour envoyer la newsletter et des ressources."
-              : "We only collect data needed to deliver the newsletter and resources (email, first name)."}
+              ? "Les seules donn\u00e9es que nous vous demandons sont une adresse e-mail et un pr\u00e9nom, et uniquement si vous vous inscrivez \u00e0 la newsletter. Les services dont le site d\u00e9pend voient votre visite\u00a0: voir ci-dessous."
+              : "The only data we ask you for is an email address and a first name, and only if you subscribe to the newsletter. Services the site depends on do see your visit \u2014 see below."}
           </p>
         </section>
 

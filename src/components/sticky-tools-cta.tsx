@@ -117,8 +117,13 @@ export function StickyToolsCta({ locale, source }: StickyToolsCtaProps) {
                   {locale === "fr" ? "Guide" : "Guide"}
                 </TrackableAnchor>
               ) : (
+                /* Plural, deliberately. Singular "Guide" named a document that
+                   does not exist, and this is the one branch that renders while
+                   GUIDE_EXISTS is false. It is an xs button in a mobile strip,
+                   so the full getGuideCtaLabel would not fit -- "Guides" is
+                   short and true, since it points at the career articles. */
                 <Link href={getGuideCtaHref(locale)} className="btn-secondary text-center text-xs">
-                  {locale === "fr" ? "Guide" : "Guide"}
+                  {locale === "fr" ? "Guides" : "Guides"}
                 </Link>
               )}
             </div>

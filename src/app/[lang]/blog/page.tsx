@@ -159,7 +159,19 @@ export default async function LocalizedBlogPage(
           : locale === "fr"
             ? "Articles récents IA + cybersécurité"
             : "Latest AI + Cybersecurity articles";
-  const weekSnapshotTitle = locale === "fr" ? "Cette semaine sur AI and Cybersecurity News" : "This week on AI and Cybersecurity News";
+  /*
+   * "This week on…" promised a cadence the blog does not keep.
+   *
+   * The newest hand-written post is 19 September 2026, so the heading claimed
+   * weekly freshness over a page whose top entry was five weeks old -- in both
+   * languages. The three lines beneath it never change either: they are not
+   * content, they are the site describing its own structure, which is a fine
+   * thing to say as long as it does not pretend to be news.
+   *
+   * What IS weekly here is the internship board, and that claim is made on the
+   * board where it is true.
+   */
+  const weekSnapshotTitle = locale === "fr" ? "Comment ce blog est organis\u00e9" : "How this blog is organised";
   const searchPlaceholder = locale === "fr" ? "Rechercher par mot-clé..." : "Search by keyword...";
   const trackFilterOptions: Array<{ key: EditorialTrack | "all"; label: string; count: number }> = [
     {
@@ -309,9 +321,14 @@ export default async function LocalizedBlogPage(
                   : "2. Tool comparisons with a budget-friendly positioning."}
               </li>
               <li>
+                {/* Was "Resource and product CTA callouts inside long-form
+                    guides" / "Callouts ressources et CTA produits" -- which told
+                    a reader the guides contain product calls-to-action, named a
+                    product that does not exist, and left "Callouts" and "CTA"
+                    untranslated in the French. */}
                 {locale === "fr"
-                  ? "3. Callouts ressources et CTA produits dans les guides longue forme."
-                  : "3. Resource and product CTA callouts inside long-form guides."}
+                  ? "3. Sources v\u00e9rifi\u00e9es list\u00e9es au pied de chaque guide."
+                  : "3. Verified sources listed at the foot of every guide."}
               </li>
             </ul>
             <form action={`/${locale}/blog`} method="get" className="mt-4 flex flex-wrap items-center gap-2">

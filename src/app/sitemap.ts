@@ -1,13 +1,32 @@
 import type { MetadataRoute } from "next";
 import { comparisons, getAllCategories, getAllTags, posts, slugify } from "@/content/posts";
-import { newsBriefs } from "@/content/news";
+import { getAllNewsTags, newsBriefs } from "@/content/news";
 import { getAutoNewsUpdatedAt } from "@/content/auto-news";
 import { getAutoToolsUpdatedAt } from "@/content/auto-tools";
 import { locales } from "@/i18n/config";
 import { absoluteUrl } from "@/lib/site-url";
 import { getStagesUpdatedAt } from "@/content/stages";
 import { countriesWithPages, countryPagePath } from "@/content/stage-countries";
-import { isIndexableTaxonomy, postsInCategory, postsWithTag } from "@/lib/taxonomy";
+import { guideExists } from "@/lib/product";
+import { isIndexableTaxonomy, itemsWithTag, postsInCategory } from "@/lib/taxonomy";
+
+/**
+ * Whether the career guide exists, asked of the constant that governs it.
+ *
+ * /product/ai-career-guide sat in this file at priority 0.86 -- louder than
+ * /blog and the country boards -- while its own meta description read "This
+ * guide is not written yet" and src/lib/product.ts had already pointed all
+ * twenty-eight inbound links somewhere else. The sitemap was the loudest voice
+ * on the site asking to have an empty page ranked.
+ *
+ * GUIDE_EXISTS is private to src/lib/product.ts, so this reads the one export
+ * that is a pure function of it: the career-guide CTA lands on the product
+ * route only when the guide is real. Derived, not hand-excluded, so the entry
+ * comes back by itself the day the guide is written. The same expression is in
+ * src/app/[lang]/product/ai-career-guide/page.tsx, which has to make the same
+ * call; export GUIDE_EXISTS from product.ts and both should read that.
+ */
+const GUIDE_EXISTS = guideExists();
 
 /**
  * lastmod is a claim about the content, not about the deploy.
@@ -163,12 +182,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "weekly" as const
       },
       { route: "/donate", lastModified: EDITORIAL_PAGES_UPDATED_AT, priority: 0.52, changeFrequency: "monthly" as const },
-      {
-        route: "/product/ai-career-guide",
-        lastModified: EDITORIAL_PAGES_UPDATED_AT,
-        priority: 0.86,
-        changeFrequency: "weekly" as const
-      },
+      // Listed only once there is a guide to list. The page itself carries
+      // robots noindex under the same condition, so the two cannot disagree.
+      ...(GUIDE_EXISTS
+        ? [
+            {
+              route: "/product/ai-career-guide",
+              lastModified: EDITORIAL_PAGES_UPDATED_AT,
+              priority: 0.86,
+              changeFrequency: "weekly" as const
+            }
+          ]
+        : []),
       // The three policy pages were the only indexable pages the sitemap left
       // out. Each returns 200, carries a correct canonical and no noindex, and
       // the affiliate disclosure in particular is the page a reader looks for to
@@ -269,13 +294,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
+  /*
+   * Both tag sources, because the tag page renders both.
+   *
+   * This iterated post tags only, while the page's generateStaticParams unions
+   * post tags with news tags and the page body renders a "News on this topic"
+   * list under the articles. So a tag carried only by briefs got a real page
+   * with a real list on it and no entry here at all -- not a decision, just a
+   * source this loop never looked at. The threshold now counts what the page
+   * shows; see src/lib/taxonomy.ts.
+   */
+  const tagSlugs = Array.from(new Set([...getAllTags(), ...getAllNewsTags()].map((tag) => slugify(tag))));
+
   const tagPages = locales.flatMap((locale) =>
-    getAllTags()
-      .filter((tag) => isIndexableTaxonomy(postsWithTag(slugify(tag))))
+    tagSlugs
+      .filter((tag) => isIndexableTaxonomy(itemsWithTag(tag)))
       .map((tag) => ({
-      url: absoluteUrl(`/${locale}/blog/tag/${slugify(tag)}`),
-      // Same rule as categories, matched the way the tag page itself filters.
-      lastModified: asDate(newestPostIn((post) => post.tags.some((postTag) => slugify(postTag) === slugify(tag)))),
+      url: absoluteUrl(`/${locale}/blog/tag/${tag}`),
+      // Same rule as categories, matched the way the tag page itself filters --
+      // and across both lists, since a news-only tag has no post date to take.
+      lastModified: asDate(
+        newestOf([
+          newestPostIn((post) => post.tags.some((postTag) => slugify(postTag) === tag)),
+          newestOf(
+            newsBriefs
+              .filter((brief) => brief.tags.some((briefTag) => slugify(briefTag) === tag))
+              .map((brief) => brief.publishedAt)
+          )
+        ])
+      ),
       changeFrequency: "weekly" as const,
       priority: 0.65
     }))
