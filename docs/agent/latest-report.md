@@ -1,6 +1,6 @@
 # AI and Cybersecurity News Blog Operator Report
 
-Generated: 2026-10-19T14:56:37.884Z
+Generated: 2026-10-26T14:31:11.497Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -54,32 +54,32 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities: What It Means for AI/CS Students
-   - Source: Cloudflare Blog
-   - Keyword: how to build cloudflare blog
+1. Anthropic files S-1 with the SEC for proposed initial public offering: What It Means for AI/CS Students
+   - Source: Anthropic News
+   - Keyword: how to build anthropic news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. Improved thread navigation in W3C's mailing list archives: What It Means for AI/CS Students
-   - Source: W3C Blog
-   - Keyword: computer science workflow for students w3c blog
-   - Monetization angle: CS implementation and tooling decision for student budgets
-   - CTA: Resources + compare pages
-3. crecheck v6.0 has been released: What It Means for AI/CS Students
-   - Source: PostgreSQL News
-   - Keyword: how to build postgresql news
+2. How Fanatics and OpenAI streamline the fan experience: What It Means for AI/CS Students
+   - Source: OpenAI News
+   - Keyword: how to build openai news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-4. FOSDEM PGDay 2027: two days of PostgreSQL, with calls for papers and sponsors now open!: What It Means for AI/CS Students
+3. pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL: What It Means for AI/CS Students
    - Source: PostgreSQL News
    - Keyword: computer science workflow for students postgresql news
    - Monetization angle: CS implementation and tooling decision for student budgets
    - CTA: Resources + compare pages
-5. pg_utl_smtp v2.0 released: What It Means for AI/CS Students
+4. HypoPG 1.4.4 is out!: What It Means for AI/CS Students
    - Source: PostgreSQL News
    - Keyword: how to build postgresql news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-6. pg_hint_plan v1.9.0 Released: What It Means for AI/CS Students
+5. How to fund Rust contributors: What It Means for AI/CS Students
+   - Source: Rust Blog
+   - Keyword: how to build rust blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+6. pg_ivm 1.17 released: What It Means for AI/CS Students
    - Source: PostgreSQL News
    - Keyword: how to build postgresql news
    - Monetization angle: how to build and ship this update as a student project
@@ -98,6 +98,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20261019--20261019-beyond-the-patch-protecting-your-netscaler-gateway-against-futur-acdbe7df.md
-- docs/agent/drafts/20261019--20261019-improved-thread-navigation-in-w3cs-mailing-list-archives-31b336fd.md
+- docs/agent/drafts/20261026--20261026-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-off-edf59637.md
+- docs/agent/drafts/20261026--20261026-how-fanatics-and-openai-streamline-the-fan-experience-eb7708c5.md
 
