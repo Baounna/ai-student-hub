@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T14:31:11.689Z",
+  "generatedAt": "2026-10-26T15:27:07.101Z",
   "repository": "Baounna/ai-student-hub",
   "mode": "disabled",
   "maxPerRun": 3,
@@ -8,19 +8,19 @@
       "sourceId": "operator",
       "label": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "enabled": true,
-      "queueGeneratedAt": "2026-10-26T14:31:11.497Z",
-      "totalActions": 4,
-      "selectedCount": 3
+      "enabled": false,
+      "queueGeneratedAt": "",
+      "totalActions": 0,
+      "selectedCount": 0
     },
     {
       "sourceId": "design",
       "label": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "enabled": false,
-      "queueGeneratedAt": "",
-      "totalActions": 0,
-      "selectedCount": 0
+      "enabled": true,
+      "queueGeneratedAt": "2026-10-26T15:27:06.929Z",
+      "totalActions": 5,
+      "selectedCount": 3
     }
   ],
   "summary": {
@@ -172,7 +172,7 @@
       "sourceId": "design",
       "sourceLabel": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "queueGeneratedAt": "2026-10-19T15:51:44.511Z",
+      "queueGeneratedAt": "2026-10-26T15:27:06.929Z",
       "priority": "P1",
       "action": "Keep CS-first value proposition cards visible on homepage.",
       "why": "CS-first framing balances publication positioning beyond AI-only messaging.",
@@ -181,15 +181,15 @@
       "title": "[Design P1] Keep CS-first value proposition cards visible on homepage.",
       "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
-      "lastSeenAt": "2026-10-19T15:51:44.691Z",
-      "inQueue": false
+      "lastSeenAt": "2026-10-26T15:27:07.101Z",
+      "inQueue": true
     },
     {
       "hash": "29e4e1db629195e3",
       "sourceId": "design",
       "sourceLabel": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "queueGeneratedAt": "2026-10-19T15:51:44.511Z",
+      "queueGeneratedAt": "2026-10-26T15:27:06.929Z",
       "priority": "P1",
       "action": "Use clean field-input styling for search with clear visual hierarchy.",
       "why": "Simple high-contrast search fields improve scan speed and reduce visual noise.",
@@ -198,8 +198,8 @@
       "title": "[Design P1] Use clean field-input styling for search with clear visual hierarchy.",
       "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
-      "lastSeenAt": "2026-10-19T15:51:44.691Z",
-      "inQueue": false
+      "lastSeenAt": "2026-10-26T15:27:07.101Z",
+      "inQueue": true
     },
     {
       "hash": "47e47e1d8303a4d2",
@@ -216,7 +216,7 @@
       "status": "disabled",
       "createdAt": "2026-10-12T16:57:18.321Z",
       "lastSeenAt": "2026-10-26T14:31:11.689Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "929a6c20e1dd7acf",
@@ -233,14 +233,14 @@
       "status": "disabled",
       "createdAt": "2026-10-12T16:57:18.321Z",
       "lastSeenAt": "2026-10-26T14:31:11.689Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "450ace15b309218f",
       "sourceId": "design",
       "sourceLabel": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "queueGeneratedAt": "2026-10-19T15:51:44.511Z",
+      "queueGeneratedAt": "2026-10-26T15:27:06.929Z",
       "priority": "P2",
       "action": "Hide appearance panel on tools routes to reduce visual clutter.",
       "why": "Removing side controls on conversion pages keeps focus on decisions and CTAs.",
@@ -249,8 +249,8 @@
       "title": "[Design P2] Hide appearance panel on tools routes to reduce visual clutter.",
       "status": "disabled",
       "createdAt": "2026-09-28T16:59:56.494Z",
-      "lastSeenAt": "2026-10-19T15:51:44.691Z",
-      "inQueue": false
+      "lastSeenAt": "2026-10-26T15:27:07.101Z",
+      "inQueue": true
     },
     {
       "hash": "8a7997bd695b6700",
@@ -284,7 +284,7 @@
       "status": "disabled",
       "createdAt": "2026-10-12T16:57:18.321Z",
       "lastSeenAt": "2026-10-26T14:31:11.689Z",
-      "inQueue": true
+      "inQueue": false
     }
   ]
 }
