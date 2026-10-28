@@ -1,23 +1,61 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T22:10:41.288Z",
+  "updatedAt": "2026-10-28T12:48:38.285Z",
   "items": [
     {
-      "slug": "20261027-expanding-the-cyber-verification-program-a22a6ca9",
+      "slug": "20261028-expanding-our-partnership-with-gsa-to-bring-claude-to-all-levels-16faca12",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/cyber-verification-program",
-      "publishedAt": "2026-10-27T22:10:41.288Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "href": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "publishedAt": "2026-10-28T12:48:38.285Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
       "locales": {
         "en": {
-          "title": "Expanding the Cyber Verification Program",
-          "summary": "Expanding the Cyber Verification Program"
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
         },
         "fr": {
-          "title": "Expanding the Cyber Verification Program",
-          "summary": "Expanding the Cyber Verification Program"
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
+        }
+      }
+    },
+    {
+      "slug": "20261028-legora-is-building-the-agentic-operating-system-for-legal-work-2fc8e689",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+      "publishedAt": "2026-10-28T09:30:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "Legora is building the agentic operating system for legal work",
+          "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work."
+        },
+        "fr": {
+          "title": "Legora is building the agentic operating system for legal work",
+          "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work."
+        }
+      }
+    },
+    {
+      "slug": "20261028-postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-884d8d8f",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-3363/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
+        },
+        "fr": {
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
         }
       }
     },
@@ -155,25 +193,6 @@
       }
     },
     {
-      "slug": "20261027-openai-expands-partnership-with-oracle-to-bring-its-apps-to-chat-a3a87914",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/oracle-apps-in-chatgpt",
-      "publishedAt": "2026-10-27T07:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
-      "locales": {
-        "en": {
-          "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
-          "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings."
-        },
-        "fr": {
-          "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
-          "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings."
-        }
-      }
-    },
-    {
       "slug": "20261027-announcing-the-workload-conformance-working-group-72f530f5",
       "topic": "Cloud/DevOps",
       "source": "Kubernetes Blog",
@@ -246,25 +265,6 @@
         "fr": {
           "title": "Our Response To The eMudhra Key Disclosure Incident",
           "summary": "How the Go team responded to the eMudhra certificate compromise with our first-ever URGENT track security release."
-        }
-      }
-    },
-    {
-      "slug": "20261026-pgivm-117-released-25992fa2",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_ivm-117-released-3420/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
-      "locales": {
-        "en": {
-          "title": "pg_ivm 1.17 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
-        },
-        "fr": {
-          "title": "pg_ivm 1.17 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
         }
       }
     },
@@ -364,21 +364,59 @@
       }
     },
     {
-      "slug": "20261026-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-off-edf59637",
+      "slug": "20261027-expanding-the-cyber-verification-program-a22a6ca9",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/s1-sec",
-      "publishedAt": "2026-10-26T14:31:09.949Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "href": "https://www.anthropic.com/news/cyber-verification-program",
+      "publishedAt": "2026-10-27T22:10:41.288Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
       "locales": {
         "en": {
-          "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-          "summary": "Anthropic files S-1 with the SEC for proposed initial public offering"
+          "title": "Expanding the Cyber Verification Program",
+          "summary": "Expanding the Cyber Verification Program"
         },
         "fr": {
-          "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-          "summary": "Anthropic files S-1 with the SEC for proposed initial public offering"
+          "title": "Expanding the Cyber Verification Program",
+          "summary": "Expanding the Cyber Verification Program"
+        }
+      }
+    },
+    {
+      "slug": "20261027-retell-uses-openai-models-to-help-power-100m-monthly-calls-d42fb1eb",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/retell-ai",
+      "publishedAt": "2026-10-27T15:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "Retell uses OpenAI models to help power 100M monthly calls",
+          "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee."
+        },
+        "fr": {
+          "title": "Retell uses OpenAI models to help power 100M monthly calls",
+          "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee."
+        }
+      }
+    },
+    {
+      "slug": "20261028-estuary-expands-postgresql-cdc-with-targeted-backfills-and-scala-c3c04b2c",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/estuary-expands-postgresql-cdc-with-targeted-backfills-and-scalable-discovery-3419/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
+          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
+        },
+        "fr": {
+          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
+          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
         }
       }
     },
@@ -516,25 +554,6 @@
       }
     },
     {
-      "slug": "20261027-how-check-point-accelerates-vulnerability-research-with-daybreak-8cb33326",
-      "topic": "Security & Standards",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/check-point-daybreak",
-      "publishedAt": "2026-10-27T00:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
-      "locales": {
-        "en": {
-          "title": "How Check Point accelerates vulnerability research with Daybreak",
-          "summary": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster."
-        },
-        "fr": {
-          "title": "How Check Point accelerates vulnerability research with Daybreak",
-          "summary": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster."
-        }
-      }
-    },
-    {
       "slug": "20261014-why-is-my-kubernetes-job-still-pending-tracing-kueue-admission-w-8c274fdc",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -607,25 +626,6 @@
         "fr": {
           "title": "Help set Go's priorities for next year",
           "summary": "Share your experience with Go in the 2026 Go Developer Survey, open through November 3."
-        }
-      }
-    },
-    {
-      "slug": "20261026-hypopg-144-is-out-09c21e18",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/hypopg-144-is-out-3421/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
-      "locales": {
-        "en": {
-          "title": "HypoPG 1.4.4 is out!",
-          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
-        },
-        "fr": {
-          "title": "HypoPG 1.4.4 is out!",
-          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
         }
       }
     },
@@ -706,21 +706,59 @@
       }
     },
     {
-      "slug": "20261026-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-off-edf59637",
-      "topic": "AI Systems",
+      "slug": "20261027-partnerships-31508cd6",
+      "topic": "Computer Science",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/s1-sec",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "href": "https://www.anthropic.com/news/partnerships",
+      "publishedAt": "2026-10-27T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "Partnerships",
+          "summary": "nt partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API. Oct 27, 2026"
+        },
+        "fr": {
+          "title": "Partnerships",
+          "summary": "nt partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API. Oct 27, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20261027-openai-expands-partnership-with-oracle-to-bring-its-apps-to-chat-a3a87914",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "publishedAt": "2026-10-27T07:00:00.000Z",
       "discoveredAt": "2026-10-27T22:10:41.288Z",
       "locales": {
         "en": {
-          "title": "Anthropic files S-1 with the SEC for proposed initial public offering Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
-          "summary": "Announcements Oct 26, 2026"
+          "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+          "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings."
         },
         "fr": {
-          "title": "Anthropic files S-1 with the SEC for proposed initial public offering Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
-          "summary": "Announcements Oct 26, 2026"
+          "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+          "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings."
+        }
+      }
+    },
+    {
+      "slug": "20261028-oxynote-an-open-source-internal-wiki-with-live-postgresql-query--8703437b",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/oxynote-an-open-source-internal-wiki-with-live-postgresql-query-charts-3406/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
+          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
+        },
+        "fr": {
+          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
+          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
         }
       }
     },
@@ -858,25 +896,6 @@
       }
     },
     {
-      "slug": "20261026-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra-250e5d8f",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/greptile-code-review-codex-astra",
-      "publishedAt": "2026-10-26T22:00:00.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
-      "locales": {
-        "en": {
-          "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
-          "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework."
-        },
-        "fr": {
-          "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
-          "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework."
-        }
-      }
-    },
-    {
       "slug": "20261006-the-shift-to-cgroup-v2-in-kubernetes-what-you-need-to-know-fc4272a4",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -949,25 +968,6 @@
         "fr": {
           "title": "Interactive refactoring in gopls",
           "summary": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor."
-        }
-      }
-    },
-    {
-      "slug": "20261026-pghdrhistogram-100---exact-percentiles-in-postgresql-52a6bea1",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_hdr_histogram-100-exact-percentiles-in-postgresql-3418/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
-      "locales": {
-        "en": {
-          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
-          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
-        },
-        "fr": {
-          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
-          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
         }
       }
     },
@@ -1048,21 +1048,59 @@
       }
     },
     {
-      "slug": "20261023-open-call-for-guest-investigators-in-the-life-sciences-98d45c75",
+      "slug": "20261026-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-off-edf59637",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "publishedAt": "2026-10-23T11:34:27.809Z",
-      "discoveredAt": "2026-10-23T11:34:27.809Z",
+      "href": "https://www.anthropic.com/news/s1-sec",
+      "publishedAt": "2026-10-26T14:31:09.949Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
       "locales": {
         "en": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
+          "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+          "summary": "Anthropic files S-1 with the SEC for proposed initial public offering"
         },
         "fr": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
+          "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+          "summary": "Anthropic files S-1 with the SEC for proposed initial public offering"
+        }
+      }
+    },
+    {
+      "slug": "20261027-how-check-point-accelerates-vulnerability-research-with-daybreak-8cb33326",
+      "topic": "Security & Standards",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/check-point-daybreak",
+      "publishedAt": "2026-10-27T00:00:00.000Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "locales": {
+        "en": {
+          "title": "How Check Point accelerates vulnerability research with Daybreak",
+          "summary": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster."
+        },
+        "fr": {
+          "title": "How Check Point accelerates vulnerability research with Daybreak",
+          "summary": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster."
+        }
+      }
+    },
+    {
+      "slug": "20261028-revivedb-supabase-backups-restore-tested-against-the-source-sche-f15781fd",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/revivedb-supabase-backups-restore-tested-against-the-source-schema-3422/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
+          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
+        },
+        "fr": {
+          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
+          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
         }
       }
     },
@@ -1200,25 +1238,6 @@
       }
     },
     {
-      "slug": "20261026-working-with-academic-communities-to-build-scientific-understand-f16aefe8",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
-      "publishedAt": "2026-10-26T14:30:00.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
-      "locales": {
-        "en": {
-          "title": "Working with academic communities to build scientific understanding",
-          "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them."
-        },
-        "fr": {
-          "title": "Working with academic communities to build scientific understanding",
-          "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them."
-        }
-      }
-    },
-    {
       "slug": "20261005-scaling-kubernetes-workloads-with-node-swap-5af07d1e",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -1291,25 +1310,6 @@
         "fr": {
           "title": "Better HTTP/1 connection reuse",
           "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
-        }
-      }
-    },
-    {
-      "slug": "20261022-pgrecon-open-source-oracle-to-postgresql-migration-assessment-an-91970955",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgrecon-open-source-oracle-to-postgresql-migration-assessment-and-schema-conversion-3410/",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
-          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
-        },
-        "fr": {
-          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
-          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
         }
       }
     },
@@ -1390,21 +1390,59 @@
       }
     },
     {
-      "slug": "20261022-donating-agent-skills-to-the-agentic-ai-foundation-86405d6d",
+      "slug": "20261026-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-off-edf59637",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-      "publishedAt": "2026-10-22T21:32:55.849Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "href": "https://www.anthropic.com/news/s1-sec",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
       "locales": {
         "en": {
-          "title": "Donating Agent Skills to the Agentic AI Foundation",
-          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+          "title": "Anthropic files S-1 with the SEC for proposed initial public offering Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
+          "summary": "Announcements Oct 26, 2026"
         },
         "fr": {
-          "title": "Donating Agent Skills to the Agentic AI Foundation",
-          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+          "title": "Anthropic files S-1 with the SEC for proposed initial public offering Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
+          "summary": "Announcements Oct 26, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20261026-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra-250e5d8f",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/greptile-code-review-codex-astra",
+      "publishedAt": "2026-10-26T22:00:00.000Z",
+      "discoveredAt": "2026-10-26T22:38:04.323Z",
+      "locales": {
+        "en": {
+          "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+          "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework."
+        },
+        "fr": {
+          "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+          "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework."
+        }
+      }
+    },
+    {
+      "slug": "20261028-postgresql-anonymizer-33-major-security-update-f4b74201",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-33-major-security-update-3423/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
+          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
+        },
+        "fr": {
+          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
+          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
         }
       }
     },
@@ -1542,25 +1580,6 @@
       }
     },
     {
-      "slug": "20261026-gpt-61-sol-helps-coderabbit-strengthen-security-across-complex-c-1a1d4bf2",
-      "topic": "Security & Standards",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-      "publishedAt": "2026-10-26T13:45:00.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
-      "locales": {
-        "en": {
-          "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-          "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes."
-        },
-        "fr": {
-          "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-          "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes."
-        }
-      }
-    },
-    {
       "slug": "20260922-spotlight-on-sig-apps-bdc88dc4",
       "topic": "Cloud/DevOps",
       "source": "Kubernetes Blog",
@@ -1633,25 +1652,6 @@
         "fr": {
           "title": "Arch-specific SIMD in Go",
           "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
-        }
-      }
-    },
-    {
-      "slug": "20261022-safegrd-postgresql-backups-that-are-restored-and-checked-on-a-sc-1a9cacd2",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/safegrd-postgresql-backups-that-are-restored-and-checked-on-a-schedule-3414/",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
-          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
-        },
-        "fr": {
-          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
-          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
         }
       }
     },
@@ -1732,21 +1732,59 @@
       }
     },
     {
-      "slug": "20261021-physicist-christopher-stubbs-joins-anthropics-long-term-benefit--b12d9d8f",
+      "slug": "20261023-open-call-for-guest-investigators-in-the-life-sciences-98d45c75",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "publishedAt": "2026-10-21T21:40:08.512Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "publishedAt": "2026-10-23T11:34:27.809Z",
+      "discoveredAt": "2026-10-23T11:34:27.809Z",
       "locales": {
         "en": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
         },
         "fr": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
+        }
+      }
+    },
+    {
+      "slug": "20261026-working-with-academic-communities-to-build-scientific-understand-f16aefe8",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "publishedAt": "2026-10-26T14:30:00.000Z",
+      "discoveredAt": "2026-10-26T22:38:04.323Z",
+      "locales": {
+        "en": {
+          "title": "Working with academic communities to build scientific understanding",
+          "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them."
+        },
+        "fr": {
+          "title": "Working with academic communities to build scientific understanding",
+          "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them."
+        }
+      }
+    },
+    {
+      "slug": "20261026-pgivm-117-released-25992fa2",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_ivm-117-released-3420/",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "locales": {
+        "en": {
+          "title": "pg_ivm 1.17 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
+        },
+        "fr": {
+          "title": "pg_ivm 1.17 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
         }
       }
     },
@@ -1884,25 +1922,6 @@
       }
     },
     {
-      "slug": "20261026-chatgpts-expanding-world-of-work-64d59b55",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/chatgpt-expanding-world-of-work",
-      "publishedAt": "2026-10-26T10:00:00.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
-      "locales": {
-        "en": {
-          "title": "ChatGPT’s expanding world of work",
-          "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time."
-        },
-        "fr": {
-          "title": "ChatGPT’s expanding world of work",
-          "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time."
-        }
-      }
-    },
-    {
       "slug": "20260921-kubernetes-v137-tracking-when-a-persistentvolumeclaim-was-last-u-a668dc12",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -1975,25 +1994,6 @@
         "fr": {
           "title": "Platform-independent SIMD in Go",
           "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
-        }
-      }
-    },
-    {
-      "slug": "20261022-backupdrill-open-source-supabase-postgres-backups-with-automated-21a54640",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/backupdrill-open-source-supabase-postgres-backups-with-automated-restore-drills-3413/",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
-          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
-        },
-        "fr": {
-          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
-          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
         }
       }
     },
@@ -2074,21 +2074,59 @@
       }
     },
     {
-      "slug": "20261021-investing-in-the-public-benefit-were-committing-a-portion-of-ant-4c6c987b",
+      "slug": "20261022-donating-agent-skills-to-the-agentic-ai-foundation-86405d6d",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/public-benefit-fund",
-      "publishedAt": "2026-10-21T11:44:36.882Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "href": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "publishedAt": "2026-10-22T21:32:55.849Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
       "locales": {
         "en": {
-          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-          "summary": "5 3840w\" src=\"/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
         },
         "fr": {
-          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-          "summary": "5 3840w\" src=\"/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+        }
+      }
+    },
+    {
+      "slug": "20261026-gpt-61-sol-helps-coderabbit-strengthen-security-across-complex-c-1a1d4bf2",
+      "topic": "Security & Standards",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "publishedAt": "2026-10-26T13:45:00.000Z",
+      "discoveredAt": "2026-10-26T22:38:04.323Z",
+      "locales": {
+        "en": {
+          "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+          "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes."
+        },
+        "fr": {
+          "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+          "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes."
+        }
+      }
+    },
+    {
+      "slug": "20261026-hypopg-144-is-out-09c21e18",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/hypopg-144-is-out-3421/",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "locales": {
+        "en": {
+          "title": "HypoPG 1.4.4 is out!",
+          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
+        },
+        "fr": {
+          "title": "HypoPG 1.4.4 is out!",
+          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
         }
       }
     },
@@ -2226,25 +2264,6 @@
       }
     },
     {
-      "slug": "20261026-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-a-8f2f08b6",
-      "topic": "Security & Standards",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/openai-cut-incident-investigation",
-      "publishedAt": "2026-10-26T07:00:00.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
-      "locales": {
-        "en": {
-          "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
-          "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows."
-        },
-        "fr": {
-          "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
-          "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows."
-        }
-      }
-    },
-    {
       "slug": "20260916-kubernetes-v137-hardening-container-storage-with-bind-mount-opti-6cde82bb",
       "topic": "AI Systems",
       "source": "Kubernetes Blog",
@@ -2317,25 +2336,6 @@
         "fr": {
           "title": "Size-Specialized Memory Allocation",
           "summary": "Go 1.27 improves performance of small allocations using size-specialized allocation functions."
-        }
-      }
-    },
-    {
-      "slug": "20261022-pgcluu-v50-has-been-released-b35b9ae0",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgcluu-v50-has-been-released-3417/",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "pgCluu v5.0 has been released",
-          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
-        },
-        "fr": {
-          "title": "pgCluu v5.0 has been released",
-          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
         }
       }
     },
@@ -2416,21 +2416,59 @@
       }
     },
     {
-      "slug": "20261020-investing-in-the-public-benefit-4c6c987b",
+      "slug": "20261021-physicist-christopher-stubbs-joins-anthropics-long-term-benefit--b12d9d8f",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/public-benefit-fund",
-      "publishedAt": "2026-10-20T21:35:02.375Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
+      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "publishedAt": "2026-10-21T21:40:08.512Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
       "locales": {
         "en": {
-          "title": "Investing in the public benefit",
-          "summary": "Investing in the public benefit"
+          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
         },
         "fr": {
-          "title": "Investing in the public benefit",
-          "summary": "Investing in the public benefit"
+          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+        }
+      }
+    },
+    {
+      "slug": "20261026-chatgpts-expanding-world-of-work-64d59b55",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/chatgpt-expanding-world-of-work",
+      "publishedAt": "2026-10-26T10:00:00.000Z",
+      "discoveredAt": "2026-10-26T22:38:04.323Z",
+      "locales": {
+        "en": {
+          "title": "ChatGPT’s expanding world of work",
+          "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time."
+        },
+        "fr": {
+          "title": "ChatGPT’s expanding world of work",
+          "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time."
+        }
+      }
+    },
+    {
+      "slug": "20261026-pghdrhistogram-100---exact-percentiles-in-postgresql-52a6bea1",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_hdr_histogram-100-exact-percentiles-in-postgresql-3418/",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "locales": {
+        "en": {
+          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
+          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
+        },
+        "fr": {
+          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
+          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
         }
       }
     },
@@ -2568,25 +2606,6 @@
       }
     },
     {
-      "slug": "20261026-how-fanatics-and-openai-streamline-the-fan-experience-eb7708c5",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/fanatics-streamline-fan-experience",
-      "publishedAt": "2026-10-26T07:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
-      "locales": {
-        "en": {
-          "title": "How Fanatics and OpenAI streamline the fan experience",
-          "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement."
-        },
-        "fr": {
-          "title": "How Fanatics and OpenAI streamline the fan experience",
-          "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement."
-        }
-      }
-    },
-    {
       "slug": "20260915-kubernetes-v137-pod-level-resource-managers-graduated-to-beta-993e015b",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -2640,25 +2659,6 @@
         "fr": {
           "title": "New experts join Google’s AI & Economy team",
           "summary": "We are expanding our AI & Economy team with world-class academic advisors, fellows, and core internal researchers."
-        }
-      }
-    },
-    {
-      "slug": "20261020-fossasia-pgday-2027-bangkok-9-march-cfp-open-dcd97aff",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/fossasia-pgday-2027-bangkok-9-march-cfp-open-3398/",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "FOSSASIA PGDay 2027: Bangkok, 9 March – CFP Open",
-          "summary": "We are happy to announce that FOSSASIA PGDay returns to Thailand on 9 March, 2027 , bringing the PostgreSQL community together at True Digital Park, Bangkok . Visit the PGDay website for more details. About Event FOSSASIA PGDay i…"
-        },
-        "fr": {
-          "title": "FOSSASIA PGDay 2027: Bangkok, 9 March – CFP Open",
-          "summary": "We are happy to announce that FOSSASIA PGDay returns to Thailand on 9 March, 2027 , bringing the PostgreSQL community together at True Digital Park, Bangkok . Visit the PGDay website for more details. About Event FOSSASIA PGDay i…"
         }
       }
     },
@@ -2739,21 +2739,59 @@
       }
     },
     {
-      "slug": "20261020-an-update-on-independent-evaluators-dc9ed14d",
+      "slug": "20261021-investing-in-the-public-benefit-were-committing-a-portion-of-ant-4c6c987b",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "publishedAt": "2026-10-20T21:35:02.375Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
+      "href": "https://www.anthropic.com/news/public-benefit-fund",
+      "publishedAt": "2026-10-21T11:44:36.882Z",
+      "discoveredAt": "2026-10-21T11:44:36.882Z",
       "locales": {
         "en": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+          "summary": "5 3840w\" src=\"/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
         },
         "fr": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+          "summary": "5 3840w\" src=\"/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
+        }
+      }
+    },
+    {
+      "slug": "20261026-how-ultrafast-cut-incident-investigation-from-hours-to-minutes-a-8f2f08b6",
+      "topic": "Security & Standards",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/openai-cut-incident-investigation",
+      "publishedAt": "2026-10-26T07:00:00.000Z",
+      "discoveredAt": "2026-10-26T22:38:04.323Z",
+      "locales": {
+        "en": {
+          "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+          "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows."
+        },
+        "fr": {
+          "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+          "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows."
+        }
+      }
+    },
+    {
+      "slug": "20261022-pgrecon-open-source-oracle-to-postgresql-migration-assessment-an-91970955",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgrecon-open-source-oracle-to-postgresql-migration-assessment-and-schema-conversion-3410/",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
+          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
+        },
+        "fr": {
+          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
+          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
         }
       }
     },
@@ -2891,25 +2929,6 @@
       }
     },
     {
-      "slug": "20261026-introducing-gpt-61-terra-1758535a",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/introducing-gpt-6-1-terra",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
-      "locales": {
-        "en": {
-          "title": "Introducing GPT-6.1 Terra",
-          "summary": "Bringing fast and capable computer use to everyone"
-        },
-        "fr": {
-          "title": "Introducing GPT-6.1 Terra",
-          "summary": "Bringing fast and capable computer use to everyone"
-        }
-      }
-    },
-    {
       "slug": "20260914-kubernetes-changed-block-tracking-api---beta-differences-081539c8",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -2963,25 +2982,6 @@
         "fr": {
           "title": "Co-creating the future of fashion with Google",
           "summary": "Google worked side-by-side with designers Jane Wade and Sergio Hudson to custom-design Google Flow tools to prep for NYFW."
-        }
-      }
-    },
-    {
-      "slug": "20261020-sles-156-repositories-are-being-retired-e93c8961",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/sles-156-repositories-are-being-retired-3415/",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "SLES 15.6 repositories are being retired",
-          "summary": "The SLES 15.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL ZYPP archive .General support for SUSE Linux Enterprise Server (SLES) 15 SP6 (15.6) ended on December 31, 2025…"
-        },
-        "fr": {
-          "title": "SLES 15.6 repositories are being retired",
-          "summary": "The SLES 15.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL ZYPP archive .General support for SUSE Linux Enterprise Server (SLES) 15 SP6 (15.6) ended on December 31, 2025…"
         }
       }
     },
@@ -3043,21 +3043,59 @@
       }
     },
     {
-      "slug": "20261020-preparing-for-the-2026-us-midterms-c9ddbc2b",
+      "slug": "20261020-investing-in-the-public-benefit-4c6c987b",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-us-midterms",
+      "href": "https://www.anthropic.com/news/public-benefit-fund",
       "publishedAt": "2026-10-20T21:35:02.375Z",
       "discoveredAt": "2026-10-20T21:35:02.375Z",
       "locales": {
         "en": {
-          "title": "Preparing for the 2026 US midterms",
-          "summary": "Preparing for the 2026 US midterms"
+          "title": "Investing in the public benefit",
+          "summary": "Investing in the public benefit"
         },
         "fr": {
-          "title": "Preparing for the 2026 US midterms",
-          "summary": "Preparing for the 2026 US midterms"
+          "title": "Investing in the public benefit",
+          "summary": "Investing in the public benefit"
+        }
+      }
+    },
+    {
+      "slug": "20261026-how-fanatics-and-openai-streamline-the-fan-experience-eb7708c5",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/fanatics-streamline-fan-experience",
+      "publishedAt": "2026-10-26T07:00:00.000Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "locales": {
+        "en": {
+          "title": "How Fanatics and OpenAI streamline the fan experience",
+          "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement."
+        },
+        "fr": {
+          "title": "How Fanatics and OpenAI streamline the fan experience",
+          "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement."
+        }
+      }
+    },
+    {
+      "slug": "20261022-safegrd-postgresql-backups-that-are-restored-and-checked-on-a-sc-1a9cacd2",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/safegrd-postgresql-backups-that-are-restored-and-checked-on-a-schedule-3414/",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
+          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
+        },
+        "fr": {
+          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
+          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
         }
       }
     },
@@ -3176,25 +3214,6 @@
       }
     },
     {
-      "slug": "20261023-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-u-298c8de0",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-      "publishedAt": "2026-10-23T17:00:00.000Z",
-      "discoveredAt": "2026-10-23T21:22:03.530Z",
-      "locales": {
-        "en": {
-          "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-          "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
-        },
-        "fr": {
-          "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-          "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
-        }
-      }
-    },
-    {
       "slug": "20260914-kubernetes-v137-memory-qos-graduates-to-beta-4b75b986",
       "topic": "Computer Science",
       "source": "Kubernetes Blog",
@@ -3248,25 +3267,6 @@
         "fr": {
           "title": "Making global data easier to explore",
           "summary": "Google and the UN system have launched the UN System Data Commons, a new open platform making global statistics accessible and easy to search."
-        }
-      }
-    },
-    {
-      "slug": "20261020-rhel-100-and-96-repositories-are-being-retired-5859393c",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/rhel-100-and-96-repositories-are-being-retired-3411/",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
-      "locales": {
-        "en": {
-          "title": "RHEL 10.0 and 9.6 repositories are being retired",
-          "summary": "The RHEL 10.0 and RHEL 9.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL YUM archive . All PostgreSQL major versions that were built for these minor releases are available…"
-        },
-        "fr": {
-          "title": "RHEL 10.0 and 9.6 repositories are being retired",
-          "summary": "The RHEL 10.0 and RHEL 9.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL YUM archive . All PostgreSQL major versions that were built for these minor releases are available…"
         }
       }
     },
@@ -3328,21 +3328,59 @@
       }
     },
     {
-      "slug": "20261020-anthropic-opens-singapore-office-and-signs-mou-with-the-governme-87253efe",
+      "slug": "20261020-an-update-on-independent-evaluators-dc9ed14d",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/singapore-office-opening",
+      "href": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
       "publishedAt": "2026-10-20T21:35:02.375Z",
       "discoveredAt": "2026-10-20T21:35:02.375Z",
       "locales": {
         "en": {
-          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+          "title": "An update on independent evaluators",
+          "summary": "An update on independent evaluators"
         },
         "fr": {
-          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+          "title": "An update on independent evaluators",
+          "summary": "An update on independent evaluators"
+        }
+      }
+    },
+    {
+      "slug": "20261026-introducing-gpt-61-terra-1758535a",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T22:38:04.323Z",
+      "locales": {
+        "en": {
+          "title": "Introducing GPT-6.1 Terra",
+          "summary": "Bringing fast and capable computer use to everyone"
+        },
+        "fr": {
+          "title": "Introducing GPT-6.1 Terra",
+          "summary": "Bringing fast and capable computer use to everyone"
+        }
+      }
+    },
+    {
+      "slug": "20261022-backupdrill-open-source-supabase-postgres-backups-with-automated-21a54640",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/backupdrill-open-source-supabase-postgres-backups-with-automated-restore-drills-3413/",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
+          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
+        },
+        "fr": {
+          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
+          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
         }
       }
     },
@@ -3461,25 +3499,6 @@
       }
     },
     {
-      "slug": "20261023-securing-our-frontier-model-training-environment-48e2274f",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/securing-our-frontier-model-training-environment",
-      "publishedAt": "2026-10-23T10:00:00.000Z",
-      "discoveredAt": "2026-10-23T21:22:03.530Z",
-      "locales": {
-        "en": {
-          "title": "Securing our frontier model training environment",
-          "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming."
-        },
-        "fr": {
-          "title": "Securing our frontier model training environment",
-          "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming."
-        }
-      }
-    },
-    {
       "slug": "20261006-microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for--8d03f19e",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -3514,25 +3533,6 @@
         "fr": {
           "title": "AI for Societal Impact",
           "summary": "Explore this collection to see how experts and local leaders are using AI breakthroughs to ensure everyone can share the opportunity of AI."
-        }
-      }
-    },
-    {
-      "slug": "20261018-pgbackrest-2600-released-7af63325",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgbackrest-2600-released-3416/",
-      "publishedAt": "2026-10-18T00:00:00.000Z",
-      "discoveredAt": "2026-10-18T20:38:36.600Z",
-      "locales": {
-        "en": {
-          "title": "pgBackRest 2.60.0 Released",
-          "summary": "October 18, 2026 : The pgBackRest community is pleased to announce the release of pgBackRest 2.60.0, the latest version of the reliable, easy-to-use backup and restore solution that can seamlessly scale up to the largest database…"
-        },
-        "fr": {
-          "title": "pgBackRest 2.60.0 Released",
-          "summary": "October 18, 2026 : The pgBackRest community is pleased to announce the release of pgBackRest 2.60.0, the latest version of the reliable, easy-to-use backup and restore solution that can seamlessly scale up to the largest database…"
         }
       }
     },
@@ -3594,21 +3594,59 @@
       }
     },
     {
-      "slug": "20261020-strengthening-our-defenses-against-distillation-attacks-7f42709d",
+      "slug": "20261020-preparing-for-the-2026-us-midterms-c9ddbc2b",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/distillation-defenses",
+      "href": "https://www.anthropic.com/news/2026-us-midterms",
       "publishedAt": "2026-10-20T21:35:02.375Z",
       "discoveredAt": "2026-10-20T21:35:02.375Z",
       "locales": {
         "en": {
-          "title": "Strengthening our defenses against distillation attacks",
-          "summary": "Strengthening our defenses against distillation attacks"
+          "title": "Preparing for the 2026 US midterms",
+          "summary": "Preparing for the 2026 US midterms"
         },
         "fr": {
-          "title": "Strengthening our defenses against distillation attacks",
-          "summary": "Strengthening our defenses against distillation attacks"
+          "title": "Preparing for the 2026 US midterms",
+          "summary": "Preparing for the 2026 US midterms"
+        }
+      }
+    },
+    {
+      "slug": "20261023-rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-u-298c8de0",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "publishedAt": "2026-10-23T17:00:00.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+          "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
+        },
+        "fr": {
+          "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+          "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
+        }
+      }
+    },
+    {
+      "slug": "20261022-pgcluu-v50-has-been-released-b35b9ae0",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgcluu-v50-has-been-released-3417/",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "pgCluu v5.0 has been released",
+          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
+        },
+        "fr": {
+          "title": "pgCluu v5.0 has been released",
+          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
         }
       }
     },
@@ -3727,25 +3765,6 @@
       }
     },
     {
-      "slug": "20261023-anima-helps-clinics-cut-call-waits-by-75-with-gpt-6-and-gpt-live-c6099fc8",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/anima",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
-      "locales": {
-        "en": {
-          "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
-          "summary": "Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients."
-        },
-        "fr": {
-          "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
-          "summary": "Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients."
-        }
-      }
-    },
-    {
       "slug": "20260930-responsible-infrastructure-at-hyperscale-managing-the-full-lifec-6c13995c",
       "topic": "Computer Systems",
       "source": "Azure AI Blog",
@@ -3780,25 +3799,6 @@
         "fr": {
           "title": "Building AI to accelerate science and improve lives",
           "summary": "The true measure of AI is who it helps. Here’s how it’s impacting lives today. We're focused on key areas where advanced technology can help make extraordinary progress …"
-        }
-      }
-    },
-    {
-      "slug": "20261018-pghintplan-v190-released-48d3bd84",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_hint_plan-v190-released-3408/",
-      "publishedAt": "2026-10-18T00:00:00.000Z",
-      "discoveredAt": "2026-10-18T11:00:03.822Z",
-      "locales": {
-        "en": {
-          "title": "pg_hint_plan v1.9.0 Released",
-          "summary": "The pg_hint_plan development team is pleased to announce pg_hint_plan 1.9.0. This release of pg_hint_plan adds compatibility with PostgreSQL 19, and includes various improvements and bug fixes. For more details, see the release n…"
-        },
-        "fr": {
-          "title": "pg_hint_plan v1.9.0 Released",
-          "summary": "The pg_hint_plan development team is pleased to announce pg_hint_plan 1.9.0. This release of pg_hint_plan adds compatibility with PostgreSQL 19, and includes various improvements and bug fixes. For more details, see the release n…"
         }
       }
     },
@@ -3841,21 +3841,59 @@
       }
     },
     {
-      "slug": "20261020-introducing-the-anthropic-cyber-mission-db9c3550",
+      "slug": "20261020-anthropic-opens-singapore-office-and-signs-mou-with-the-governme-87253efe",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "href": "https://www.anthropic.com/news/singapore-office-opening",
       "publishedAt": "2026-10-20T21:35:02.375Z",
       "discoveredAt": "2026-10-20T21:35:02.375Z",
       "locales": {
         "en": {
-          "title": "Introducing the Anthropic Cyber Mission",
-          "summary": "Introducing the Anthropic Cyber Mission"
+          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
         },
         "fr": {
-          "title": "Introducing the Anthropic Cyber Mission",
-          "summary": "Introducing the Anthropic Cyber Mission"
+          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+        }
+      }
+    },
+    {
+      "slug": "20261023-securing-our-frontier-model-training-environment-48e2274f",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "publishedAt": "2026-10-23T10:00:00.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Securing our frontier model training environment",
+          "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming."
+        },
+        "fr": {
+          "title": "Securing our frontier model training environment",
+          "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming."
+        }
+      }
+    },
+    {
+      "slug": "20261020-fossasia-pgday-2027-bangkok-9-march-cfp-open-dcd97aff",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/fossasia-pgday-2027-bangkok-9-march-cfp-open-3398/",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "locales": {
+        "en": {
+          "title": "FOSSASIA PGDay 2027: Bangkok, 9 March – CFP Open",
+          "summary": "We are happy to announce that FOSSASIA PGDay returns to Thailand on 9 March, 2027 , bringing the PostgreSQL community together at True Digital Park, Bangkok . Visit the PGDay website for more details. About Event FOSSASIA PGDay i…"
+        },
+        "fr": {
+          "title": "FOSSASIA PGDay 2027: Bangkok, 9 March – CFP Open",
+          "summary": "We are happy to announce that FOSSASIA PGDay returns to Thailand on 9 March, 2027 , bringing the PostgreSQL community together at True Digital Park, Bangkok . Visit the PGDay website for more details. About Event FOSSASIA PGDay i…"
         }
       }
     },
@@ -3974,25 +4012,6 @@
       }
     },
     {
-      "slug": "20261023-openai-and-polands-nask-partner-to-advance-ai-safety-and-securit-15c1f8ef",
-      "topic": "Security & Standards",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "discoveredAt": "2026-10-23T11:34:27.809Z",
-      "locales": {
-        "en": {
-          "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
-          "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem."
-        },
-        "fr": {
-          "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
-          "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem."
-        }
-      }
-    },
-    {
       "slug": "20260929-sql-server-on-azure-local-is-now-generally-available-ae2f9eb0",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -4027,25 +4046,6 @@
         "fr": {
           "title": "AI for everyone in every language",
           "summary": "We’re moving beyond traditional text translation to build models that understand the world’s rich, living languages exactly as they are expressed."
-        }
-      }
-    },
-    {
-      "slug": "20261018-pgutlsmtp-v20-released-65b09b65",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_utl_smtp-v20-released-3395/",
-      "publishedAt": "2026-10-18T00:00:00.000Z",
-      "discoveredAt": "2026-10-18T11:00:03.822Z",
-      "locales": {
-        "en": {
-          "title": "pg_utl_smtp v2.0 released",
-          "summary": "Antananarivo, Madagascar - October 06, 2026 PostgreSQL UTL_SMTP compatibility extension pg_utl_smtp is a PostgreSQL extension to create, manage and use Oracle-style UTL_SMTP package. The use and behavior is just like with the UTL…"
-        },
-        "fr": {
-          "title": "pg_utl_smtp v2.0 released",
-          "summary": "Antananarivo, Madagascar - October 06, 2026 PostgreSQL UTL_SMTP compatibility extension pg_utl_smtp is a PostgreSQL extension to create, manage and use Oracle-style UTL_SMTP package. The use and behavior is just like with the UTL…"
         }
       }
     },
@@ -4088,21 +4088,59 @@
       }
     },
     {
-      "slug": "20261020-2026-usage-policy-update-7a238471",
+      "slug": "20261020-strengthening-our-defenses-against-distillation-attacks-7f42709d",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "href": "https://www.anthropic.com/news/distillation-defenses",
       "publishedAt": "2026-10-20T21:35:02.375Z",
       "discoveredAt": "2026-10-20T21:35:02.375Z",
       "locales": {
         "en": {
-          "title": "2026 Usage Policy update",
-          "summary": "2026 Usage Policy update"
+          "title": "Strengthening our defenses against distillation attacks",
+          "summary": "Strengthening our defenses against distillation attacks"
         },
         "fr": {
-          "title": "2026 Usage Policy update",
-          "summary": "2026 Usage Policy update"
+          "title": "Strengthening our defenses against distillation attacks",
+          "summary": "Strengthening our defenses against distillation attacks"
+        }
+      }
+    },
+    {
+      "slug": "20261023-anima-helps-clinics-cut-call-waits-by-75-with-gpt-6-and-gpt-live-c6099fc8",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/anima",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "locales": {
+        "en": {
+          "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
+          "summary": "Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients."
+        },
+        "fr": {
+          "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
+          "summary": "Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients."
+        }
+      }
+    },
+    {
+      "slug": "20261020-sles-156-repositories-are-being-retired-e93c8961",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/sles-156-repositories-are-being-retired-3415/",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "locales": {
+        "en": {
+          "title": "SLES 15.6 repositories are being retired",
+          "summary": "The SLES 15.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL ZYPP archive .General support for SUSE Linux Enterprise Server (SLES) 15 SP6 (15.6) ended on December 31, 2025…"
+        },
+        "fr": {
+          "title": "SLES 15.6 repositories are being retired",
+          "summary": "The SLES 15.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL ZYPP archive .General support for SUSE Linux Enterprise Server (SLES) 15 SP6 (15.6) ended on December 31, 2025…"
         }
       }
     },
@@ -4202,25 +4240,6 @@
       }
     },
     {
-      "slug": "20261022-build-more-responsive-apps-with-the-decisions-api-27825e30",
-      "topic": "Computer Science",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/decisions-api",
-      "publishedAt": "2026-10-22T19:00:00.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "Build more responsive apps with the Decisions API",
-          "summary": "Fast, focused, low-cost decisions for any application."
-        },
-        "fr": {
-          "title": "Build more responsive apps with the Decisions API",
-          "summary": "Fast, focused, low-cost decisions for any application."
-        }
-      }
-    },
-    {
       "slug": "20260929-fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-6cf86665",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -4255,25 +4274,6 @@
         "fr": {
           "title": "New insights from Google’s AI & Economy ATLAS",
           "summary": "We’ve translated ATLAS’s millions of global data points into an interactive, open-access experience."
-        }
-      }
-    },
-    {
-      "slug": "20261018-fosdem-pgday-2027-two-days-of-postgresql-with-calls-for-papers-a-a4fd570b",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/fosdem-pgday-2027-two-days-of-postgresql-with-calls-for-papers-and-sponsors-now-open-3412/",
-      "publishedAt": "2026-10-18T00:00:00.000Z",
-      "discoveredAt": "2026-10-18T11:00:03.822Z",
-      "locales": {
-        "en": {
-          "title": "FOSDEM PGDay 2027: two days of PostgreSQL, with calls for papers and sponsors now open!",
-          "summary": "Join us for FOSDEM PGDay 2027 on January 28 and 29 at the Brussels Marriott Hotel Grand Place . This year, we're expanding to two days, bringing you more PostgreSQL talks and more time to connect with fellow enthusiasts from arou…"
-        },
-        "fr": {
-          "title": "FOSDEM PGDay 2027: two days of PostgreSQL, with calls for papers and sponsors now open!",
-          "summary": "Join us for FOSDEM PGDay 2027 on January 28 and 29 at the Brussels Marriott Hotel Grand Place . This year, we're expanding to two days, bringing you more PostgreSQL talks and more time to connect with fellow enthusiasts from arou…"
         }
       }
     },
@@ -4316,40 +4316,78 @@
       }
     },
     {
-      "slug": "20261020-building-on-our-commitment-to-american-scientific-discovery-26f50496",
+      "slug": "20261020-introducing-the-anthropic-cyber-mission-db9c3550",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
       "publishedAt": "2026-10-20T21:35:02.375Z",
       "discoveredAt": "2026-10-20T21:35:02.375Z",
       "locales": {
         "en": {
-          "title": "Building on our commitment to American scientific discovery",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "Introducing the Anthropic Cyber Mission",
+          "summary": "Introducing the Anthropic Cyber Mission"
         },
         "fr": {
-          "title": "Building on our commitment to American scientific discovery",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "Introducing the Anthropic Cyber Mission",
+          "summary": "Introducing the Anthropic Cyber Mission"
         }
       }
     },
     {
-      "slug": "20261021-design-proteins-with-rfd4-proteina-using-reward-guided-inference-c72af149",
+      "slug": "20261023-openai-and-polands-nask-partner-to-advance-ai-safety-and-securit-15c1f8ef",
+      "topic": "Security & Standards",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "discoveredAt": "2026-10-23T11:34:27.809Z",
+      "locales": {
+        "en": {
+          "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+          "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem."
+        },
+        "fr": {
+          "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+          "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem."
+        }
+      }
+    },
+    {
+      "slug": "20261020-rhel-100-and-96-repositories-are-being-retired-5859393c",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/rhel-100-and-96-repositories-are-being-retired-3411/",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "discoveredAt": "2026-10-20T21:35:02.375Z",
+      "locales": {
+        "en": {
+          "title": "RHEL 10.0 and 9.6 repositories are being retired",
+          "summary": "The RHEL 10.0 and RHEL 9.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL YUM archive . All PostgreSQL major versions that were built for these minor releases are available…"
+        },
+        "fr": {
+          "title": "RHEL 10.0 and 9.6 repositories are being retired",
+          "summary": "The RHEL 10.0 and RHEL 9.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL YUM archive . All PostgreSQL major versions that were built for these minor releases are available…"
+        }
+      }
+    },
+    {
+      "slug": "20261021-developing-an-ai-factory-digital-twin-with-an-agent-assisted-wor-dd48289e",
       "topic": "AI Systems",
       "source": "NVIDIA Developer Blog",
       "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
-      "publishedAt": "2026-10-21T12:57:05.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "href": "https://developer.nvidia.com/blog/developing-an-ai-factory-digital-twin-with-an-agent-assisted-workflow/",
+      "publishedAt": "2026-10-21T19:49:30.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
       "locales": {
         "en": {
-          "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
-          "summary": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino..."
+          "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow",
+          "summary": "Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams..."
         },
         "fr": {
-          "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
-          "summary": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino..."
+          "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow",
+          "summary": "Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams..."
         }
       }
     },
@@ -4411,25 +4449,6 @@
       }
     },
     {
-      "slug": "20261022-what-fde-means-at-openai-63c31ca5",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/forward-deployed-engineering-means",
-      "publishedAt": "2026-10-22T06:00:00.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "What FDE means at OpenAI",
-          "summary": "What forward deployed engineering means at OpenAI"
-        },
-        "fr": {
-          "title": "What FDE means at OpenAI",
-          "summary": "What forward deployed engineering means at OpenAI"
-        }
-      }
-    },
-    {
       "slug": "20260928-enhancing-microsoft-azure-virtual-machine-lifecycle-9da1e117",
       "topic": "AI Systems",
       "source": "Azure AI Blog",
@@ -4464,25 +4483,6 @@
         "fr": {
           "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
           "summary": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society."
-        }
-      }
-    },
-    {
-      "slug": "20261018-crecheck-v60-has-been-released-485e3b80",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/crecheck-v60-has-been-released-3407/",
-      "publishedAt": "2026-10-18T00:00:00.000Z",
-      "discoveredAt": "2026-10-18T11:00:03.822Z",
-      "locales": {
-        "en": {
-          "title": "crecheck v6.0 has been released",
-          "summary": "Antananrivo, Madagascar - October 14, 2026 PostgreSQL credcheck extension The credcheck PostgreSQL extension provides few general credential checks, which will be evaluated during the user creation, during the password change and…"
-        },
-        "fr": {
-          "title": "crecheck v6.0 has been released",
-          "summary": "Antananrivo, Madagascar - October 14, 2026 PostgreSQL credcheck extension The credcheck PostgreSQL extension provides few general credential checks, which will be evaluated during the user creation, during the password change and…"
         }
       }
     },
@@ -4525,40 +4525,40 @@
       }
     },
     {
-      "slug": "20261020-anthropic-invests-100-million-to-train-10000-engineers-and-tackl-9f2dde65",
+      "slug": "20261020-2026-usage-policy-update-7a238471",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/claude-frontier-academy",
+      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
       "publishedAt": "2026-10-20T21:35:02.375Z",
       "discoveredAt": "2026-10-20T21:35:02.375Z",
       "locales": {
         "en": {
-          "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
-          "summary": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap"
+          "title": "2026 Usage Policy update",
+          "summary": "2026 Usage Policy update"
         },
         "fr": {
-          "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
-          "summary": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap"
+          "title": "2026 Usage Policy update",
+          "summary": "2026 Usage Policy update"
         }
       }
     },
     {
-      "slug": "20261021-inside-nvidia-sentry-secure-ai-agents-at-runtime-3a3a0075",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
-      "publishedAt": "2026-10-21T09:52:19.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "slug": "20261022-build-more-responsive-apps-with-the-decisions-api-27825e30",
+      "topic": "Computer Science",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/decisions-api",
+      "publishedAt": "2026-10-22T19:00:00.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
       "locales": {
         "en": {
-          "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
-          "summary": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using..."
+          "title": "Build more responsive apps with the Decisions API",
+          "summary": "Fast, focused, low-cost decisions for any application."
         },
         "fr": {
-          "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
-          "summary": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using..."
+          "title": "Build more responsive apps with the Decisions API",
+          "summary": "Fast, focused, low-cost decisions for any application."
         }
       }
     }
