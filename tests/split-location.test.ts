@@ -104,4 +104,41 @@ describe("splitLocation", () => {
     expect(splitLocation("3 locations")).toEqual({ city: "", country: "" });
     expect(splitLocation("")).toEqual({ city: "", country: "" });
   });
+
+  /*
+   * Spelled-out states. Three good US internships -- Databricks, Together AI
+   * and Modal -- sat unplaced in the review file for a week because the finder
+   * knew "CA" and not "California", and knew nothing at all about a bare
+   * "New York". Nothing was wrong with the listings.
+   */
+  it("reads a state written out", () => {
+    expect(splitLocation("San Francisco, California")).toEqual({ city: "San Francisco", country: "US" });
+    expect(splitLocation("Austin, Texas")).toEqual({ city: "Austin", country: "US" });
+    expect(splitLocation("Raleigh, North Carolina")).toEqual({ city: "Raleigh", country: "US" });
+  });
+
+  it("keeps a lone state name as the city, because it is the only location given", () => {
+    // Ashby writes Modal's posting as a bare "New York", meaning the city.
+    // Emptying the city to look tidy would throw away the only place named.
+    expect(splitLocation("New York")).toEqual({ city: "New York", country: "US" });
+  });
+
+  it("is not fooled by a city that shares a name with somewhere else", () => {
+    expect(splitLocation("Paris, Texas")).toEqual({ city: "Paris", country: "US" });
+    expect(splitLocation("Paris, fr")).toEqual({ city: "Paris", country: "FR" });
+  });
+
+  it("lets a state written out settle an ambiguous two-letter code", () => {
+    // CA is California and Canada, and nothing in "San Francisco, CA" settles
+    // it. A second location that spells its state out does.
+    expect(splitLocation("San Francisco, CA").country).toBe("");
+    expect(splitLocation("San Francisco, CA; Austin, Texas").country).toBe("US");
+  });
+
+  it("still refuses when nothing settles it", () => {
+    // The point of the whole function: a wrong guess files a French listing
+    // under Morocco on the filter students actually use.
+    expect(splitLocation("Boston, MA").country).toBe("");
+    expect(splitLocation("Somewhere, Nowhere").country).toBe("");
+  });
 });

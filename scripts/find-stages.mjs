@@ -378,6 +378,55 @@ const AMBIGUOUS_CODES = new Set(
   [...US_STATES].filter((state) => Object.values(COUNTRY_CODES).includes(state))
 );
 
+/**
+ * The same states written out, which the two-letter set never matches.
+ *
+ * Greenhouse writes "San Francisco, California" as readily as "San Francisco,
+ * CA", and Ashby writes a bare "New York". Three good US internships --
+ * Databricks, Together AI, Modal -- sat in the review file for a week because
+ * of it, waiting on a person to type US. Nothing was wrong with them; the
+ * finder simply had no rule for a spelled-out state.
+ */
+const US_STATE_NAMES = new Set([
+  "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut",
+  "delaware", "florida", "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa",
+  "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan",
+  "minnesota", "mississippi", "missouri", "montana", "nebraska", "nevada", "ohio",
+  "oklahoma", "oregon", "pennsylvania", "tennessee", "texas", "utah", "vermont",
+  "virginia", "washington", "wisconsin", "wyoming", "new hampshire", "new jersey",
+  "new mexico", "new york", "north carolina", "north dakota", "rhode island",
+  "south carolina", "south dakota", "west virginia", "district of columbia"
+]);
+
+/**
+ * Georgia is a US state and a country. It is not in COUNTRY_CODES today, so
+ * nothing collides -- but computing the set means the day someone adds it, the
+ * state name starts refusing to guess on its own, the way AMBIGUOUS_CODES
+ * already does for the two-letter forms.
+ */
+const AMBIGUOUS_STATE_NAMES = new Set(
+  [...US_STATE_NAMES].filter((name) => COUNTRY_CODES[name])
+);
+
+/**
+ * Does anything in the whole location name a US state that can only be one?
+ *
+ * Used to settle the ambiguous cases. It reads the full string rather than the
+ * parsed parts, because the parts stop at the first separator and the token
+ * that settles it is often past that: "Boston, MA; Austin, TX" is settled by
+ * TX, which `parts` never sees.
+ */
+const settlesAsUs = (location) =>
+  String(location || "")
+    .split(/[\u2022;,]/)
+    .map((part) => part.trim())
+    .some((part) => {
+      const upper = part.toUpperCase();
+      if (US_STATES.has(upper)) return !AMBIGUOUS_CODES.has(upper);
+      const lower = part.toLowerCase();
+      return US_STATE_NAMES.has(lower) && !AMBIGUOUS_STATE_NAMES.has(lower);
+    });
+
 export function splitLocation(location) {
   // Several locations in one string: take the first and let the reviewer see
   // the rest in the link. Greenhouse uses semicolons where Workday uses
@@ -455,11 +504,27 @@ export function splitLocation(location) {
    */
   const upperTwoLetter = /^[A-Z]{2}$/.test(tail);
   if (upperTwoLetter && AMBIGUOUS_CODES.has(tail) && parts.length > 1) {
-    const settled = String(location || "")
-      .split(/[\u2022;,]/)
-      .map((part) => part.trim().toUpperCase())
-      .some((code) => US_STATES.has(code) && !AMBIGUOUS_CODES.has(code));
-    return { city: joinCity(parts.slice(0, -1)), country: settled ? "US" : "" };
+    return { city: joinCity(parts.slice(0, -1)), country: settlesAsUs(location) ? "US" : "" };
+  }
+
+  /**
+   * The state spelled out: "San Francisco, California", or a bare "New York".
+   *
+   * This runs before the country branch below on purpose. The two sets do not
+   * overlap today, but if a country whose name is also a state's is ever added
+   * to COUNTRY_CODES, asCountry would answer first and quietly file an Atlanta
+   * listing under that country -- so the ambiguous ones are made to refuse
+   * here, before anything can guess.
+   *
+   * A lone state name keeps itself as the city, because that is what the
+   * employer wrote: Ashby's "New York" means the city, and replacing it with
+   * an empty string to look tidy would lose the only location there is.
+   */
+  const tailLower = tail.toLowerCase();
+  if (US_STATE_NAMES.has(tailLower)) {
+    const city = joinCity(parts.slice(0, -1)) || tail;
+    if (!AMBIGUOUS_STATE_NAMES.has(tailLower)) return { city, country: "US" };
+    return { city, country: settlesAsUs(location) ? "US" : "" };
   }
 
   const tailCountry = asCountry(tail);
