@@ -2,12 +2,14 @@
 import { spawn } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 import { loadScriptEnv } from "./lib/load-env.mjs";
 import { AUTOPILOT_COMMIT_PATHS, partitionByCommitPaths } from "./lib/autopilot-paths.mjs";
 
 const ROOT = process.cwd();
 loadScriptEnv(ROOT);
 const REPORT_FILE = path.join(ROOT, "docs/agent/autopilot-report.md");
+const PIPELINE_STATUS_FILE = path.join(ROOT, "docs/agent/pipeline-status.json");
 const PRESERVE_ON_FAILURE_FILES = [
   path.join(ROOT, "src/content/auto-news.json"),
   path.join(ROOT, "src/content/auto-tools.json")
@@ -211,6 +213,35 @@ function buildImpactNotes(changedFiles) {
   return notes;
 }
 
+/*
+ * Did the pipeline's failure leave the content on disk intact?
+ *
+ * Only `true` lets the caller keep src/content after a failed pipeline, so
+ * every uncertain case must answer `false`. Three of them are easy to get
+ * wrong, and each one would discard good content or keep bad content:
+ *
+ *   - no status file: the pipeline never got far enough to write one, so there
+ *     is no verdict to read. Absence of a failure is not a success.
+ *   - a status file from an earlier run: it describes different work. Its
+ *     `contentOk: true` says nothing about this run, so the timestamp is
+ *     checked, not just the field.
+ *   - `contentOk` missing: written by a pipeline older than this check. Unknown
+ *     reads as unsafe rather than as "fine".
+ */
+export function contentSurvivedPipelineFailure(status, runStartedAtIso) {
+  if (!status || typeof status !== "object") return false;
+  if (status.summary?.contentOk !== true) return false;
+
+  const generatedAt = Date.parse(status.generatedAt);
+  const runStartedAt = Date.parse(runStartedAtIso);
+  if (!Number.isFinite(generatedAt) || !Number.isFinite(runStartedAt)) return false;
+  // The pipeline stamps generatedAt when it starts, which is after this run
+  // started. A file stamped earlier belongs to a previous run.
+  if (generatedAt < runStartedAt) return false;
+
+  return Array.isArray(status.summary?.notifyFailed) && status.summary.notifyFailed.length > 0;
+}
+
 async function readJsonSafe(filePath) {
   try {
     const raw = await fs.readFile(filePath, "utf8");
@@ -282,7 +313,7 @@ async function restoreFileSnapshots(snapshots) {
   }
 }
 
-function buildReport({ generatedAt, attemptsUsed, runResults, changedFiles, committed, pushed, rolledBack, sourceCoverage }) {
+function buildReport({ generatedAt, attemptsUsed, runResults, changedFiles, committed, pushed, rolledBack, sourceCoverage, notifyFailures = [] }) {
   const lines = [];
   const gateResults = runResults.filter((item) => item.type === "quality");
   const pipelineResults = runResults.filter((item) => item.type === "pipeline");
@@ -297,6 +328,11 @@ function buildReport({ generatedAt, attemptsUsed, runResults, changedFiles, comm
   lines.push(`Committed: ${committed ? "YES" : "NO"}`);
   lines.push(`Pushed: ${pushed ? "YES" : "NO"}`);
   lines.push(`Content rollback on failure: ${rolledBack ? "YES" : "NO"}`);
+  if (notifyFailures.length) {
+    // The content is fine and committed; only the outward reporting failed. Say
+    // so plainly, because the run exits non-zero and the reason is not obvious.
+    lines.push(`Reporting that did not get out: ${notifyFailures.join(", ")} (content unaffected)`);
+  }
   lines.push("");
 
   lines.push("## What Changed");
@@ -372,6 +408,9 @@ async function run() {
   let success = false;
   let rolledBack = false;
   let baselineSnapshots = new Map();
+  // Reporting that did not get out. Does not block the content, but must still
+  // fail the run so nobody reads a green job as "the issues were filed".
+  const notifyFailures = [];
 
   if (shouldPull) {
     const detachedHead = await isDetachedHead();
@@ -406,25 +445,32 @@ async function run() {
     const pipelineRun = await runCommand("npm", ["run", "agent:all"]);
     runResults.push({ ...pipelineRun, type: "pipeline", attempt });
     /*
-     * KNOWN COUPLING, not yet separated.
+     * A failed pipeline is two different events, and they were conflated.
      *
-     * `continue` spends an attempt, and spending both leaves success false,
-     * which sends restoreFileSnapshots to roll auto-news.json and
-     * auto-tools.json back. That is right when the pipeline half-wrote the
-     * content. It is wrong when the only thing that failed was the issue sync,
-     * which also runs inside agent:all and now exits non-zero when it was told
-     * to file issues and could not -- so a revoked token would make this
-     * discard content it had already fetched successfully, which is a
-     * notification failure destroying work.
+     * Everything that writes content runs before the issue sync, so when the
+     * sync is the only thing that failed -- a revoked token, GitHub down -- the
+     * content was already fetched and written successfully. Treating that exit
+     * code as a content failure spent both attempts, left success false, and
+     * sent restoreFileSnapshots to roll auto-news.json and auto-tools.json back
+     * to their pre-run state: a notification failure destroying good work.
      *
-     * It cannot fire as configured: this workflow is workflow_dispatch only, so
-     * a person is watching, and autopilot-agent.yml now passes the token and
-     * `issues: write` that the sync needs. Separating them means the sync
-     * reporting after the content is safe and being re-raised at the end of the
-     * job, which is the shape .github/workflows/check-stages.yml already uses
-     * for its own exit code. Worth doing before this is put back on a schedule.
+     * So the pipeline's own verdict is read instead of inferred from the exit
+     * code. The sync failure is not swallowed -- it is carried in
+     * notifyFailures, reported, and re-raised in the exit code at the end of
+     * the run, which is the shape .github/workflows/check-stages.yml uses.
      */
-    if (!pipelineRun.ok) continue;
+    if (!pipelineRun.ok) {
+      const status = await readJsonSafe(PIPELINE_STATUS_FILE);
+      if (!contentSurvivedPipelineFailure(status, generatedAt)) continue;
+
+      for (const label of status.summary.notifyFailed) {
+        if (!notifyFailures.includes(label)) notifyFailures.push(label);
+      }
+      console.warn(
+        `autopilot: ${status.summary.notifyFailed.join(", ")} failed, but no content step did. ` +
+          "Keeping the content and failing the run at the end."
+      );
+    }
 
     const checks = [
       { args: ["run", "lint"] },
@@ -549,7 +595,8 @@ async function run() {
     committed,
     pushed,
     rolledBack,
-    sourceCoverage
+    sourceCoverage,
+    notifyFailures
   });
   await fs.mkdir(path.dirname(REPORT_FILE), { recursive: true });
   await fs.writeFile(REPORT_FILE, report, "utf8");
@@ -565,9 +612,25 @@ async function run() {
   if (shouldCommit && shouldPush && committed && !pushed) {
     process.exitCode = 1;
   }
+
+  // The content was kept and committed, which is the point of the separation,
+  // but reporting failed and that is still a failed run.
+  if (notifyFailures.length) {
+    console.error(`autopilot: reporting failed: ${notifyFailures.join(", ")}. Content was kept and committed.`);
+    process.exitCode = 1;
+  }
 }
 
-run().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+/*
+ * Importing this module must not run the autopilot. It pulls, builds, commits
+ * and can push; a test importing contentSurvivedPipelineFailure would otherwise
+ * set all of that off.
+ */
+const invokedDirectly = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+
+if (invokedDirectly) {
+  run().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}

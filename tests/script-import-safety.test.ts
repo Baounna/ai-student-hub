@@ -14,14 +14,21 @@ import { readFileSync, existsSync, rmSync } from "node:fs";
  *   that imported it. Rewriting node_modules underneath a running test runner
  *   has already broken this repository once.
  *
+ * - agent-pipeline.mjs runs every content agent, and autopilot-agent.mjs pulls,
+ *   builds, commits and can push. Both were guarded when tests started
+ *   importing their pure helpers, before either had cost anything.
+ *
  * check-stages.mjs had the guard from the start, with a comment explaining it,
- * and the other two were written later without it. That is the shape of this
+ * and the next two were written later without it. That is the shape of this
  * class of bug: one file gets it right and nothing makes the next one match.
+ * This list is what makes the next one match.
  */
 const GUARDED = [
   "scripts/check-stages.mjs",
   "scripts/find-stages.mjs",
-  "scripts/watchdog.mjs"
+  "scripts/watchdog.mjs",
+  "scripts/agent-pipeline.mjs",
+  "scripts/autopilot-agent.mjs"
 ];
 
 describe("script import safety", () => {

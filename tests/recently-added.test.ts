@@ -248,9 +248,42 @@ describe("the list's freshness claim", () => {
     }
   });
 
-  it("does not report the list as stale while the checkable links are fresh", () => {
-    expect(getStagesCheckedAgeDays()).toBeLessThanOrEqual(STALE_AFTER_DAYS);
-    expect(isStagesListStale()).toBe(false);
+  /**
+   * The staleness RULE, tested against dates this test chooses -- not against
+   * whether today's committed data happens to be fresh.
+   *
+   * It used to assert `getStagesCheckedAgeDays() <= STALE_AFTER_DAYS` on the
+   * live board, which is a claim about the calendar rather than about the code.
+   * The committed checkedAt is whatever the last Monday run wrote, so the
+   * assertion is true only while that run keeps happening. Measured with the
+   * clock moved forward: it fails on 10 November against the data committed on
+   * 26 October.
+   *
+   * And the failure mode is a deadlock. A test that fails because the board is
+   * stale blocks `npm test`, which is the gate every content agent runs before
+   * committing -- including the Monday link check whose whole job is to refresh
+   * the dates. So two missed weeks would wedge the one agent that could unwedge
+   * it. That is not hypothetical: one wrong date assertion blocked the finder
+   * and the news agent for two days on 29 October.
+   *
+   * Staleness is a content condition. The watchdog reports it, the page shows a
+   * banner for it, and neither of those stops a deploy. This asserts only that
+   * the threshold is applied in the right direction.
+   */
+  it("calls the list stale past the threshold and fresh inside it", () => {
+    const checked = getStagesLastCheckedAt();
+    const day = (n: number) => Date.parse(`${checked}T12:00:00Z`) + n * 86_400_000;
+
+    expect(getStagesCheckedAgeDays(day(0))).toBe(0);
+    expect(isStagesListStale(day(0))).toBe(false);
+
+    expect(getStagesCheckedAgeDays(day(STALE_AFTER_DAYS - 1))).toBeLessThan(STALE_AFTER_DAYS);
+    expect(isStagesListStale(day(STALE_AFTER_DAYS - 1))).toBe(false);
+
+    // One day past the threshold is stale, and the page says so rather than
+    // pretending otherwise.
+    expect(isStagesListStale(day(STALE_AFTER_DAYS + 1))).toBe(true);
+    expect(getStagesCheckedAgeDays(day(STALE_AFTER_DAYS + 1))).toBeGreaterThan(STALE_AFTER_DAYS);
   });
 
   it("still takes the oldest of the checkable entries, not the newest", () => {

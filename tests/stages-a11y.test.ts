@@ -93,11 +93,24 @@ describe("the country boards", () => {
  */
 describe("the listing row", () => {
   it("shows a deadline only where the employer published one", () => {
-    const stages = getStages();
+    // Read at a pinned date, not today's.
+    //
+    // `getStages()` drops a listing thirty days after its deadline passes, so
+    // with the live clock `dated.length` falls to zero once the two currently
+    // dated rows are retired -- measured with the clock moved forward, this
+    // assertion fails by 25 December. The claim it exists to make is about the
+    // ROW (a deadline is rendered only where one was published), not about how
+    // many dated rows the board happens to hold today.
+    //
+    // It matters because `npm test` gates every content agent, so a row test
+    // failing on a calendar boundary stops the news agent and the finder -- one
+    // date assertion did exactly that on 29 October.
+    const stages = getStages(Date.parse("2026-10-30T12:00:00Z"));
     const dated = stages.filter((stage) => stage.deadline);
-    // Two today. If the data ever becomes mostly dated, the slot stops being
-    // the repetition this change was about.
-    expect(dated.length).toBeGreaterThan(0);
+    // Still asserted as a minority, which is the condition that made the
+    // repeated "no closing date given" line worth removing. The lower bound is
+    // gone: zero dated rows is a valid board, and would be a data change rather
+    // than a defect.
     expect(dated.length).toBeLessThan(stages.length / 2);
     // The "no closing date given" line is gone from the row, in both languages.
     expect(ROW).not.toMatch(/copy\.rolling/);

@@ -64,7 +64,7 @@ type FeedItem = {
  * deal than sending them the twenty-seven, and the briefs stay one click away
  * on /news and /news/live where the curation is visible.
  */
-function feedItems(locale: Locale): FeedItem[] {
+function feedItems(locale: Locale, now: number): FeedItem[] {
   const category = CATEGORY[locale];
 
   const blogItems = posts.map((post) => ({
@@ -91,7 +91,7 @@ function feedItems(locale: Locale): FeedItem[] {
    * comment above describes -- fifteen rows on a good Thursday pushing the
    * site's own writing down the page -- so a week of additions is one item.
    */
-  const stageItems = stageDigests(locale).map((digest) => ({
+  const stageItems = stageDigests(locale, now).map((digest) => ({
     link: absoluteUrl(digest.link),
     guid: digest.guid,
     title: digest.title,
@@ -110,9 +110,20 @@ function rfc822(value: string) {
   return Number.isNaN(date.getTime()) ? new Date().toUTCString() : date.toUTCString();
 }
 
-export function buildFeed(locale: Locale) {
+/**
+ * `now` is injectable so the feed can be built for a given day.
+ *
+ * Production always passes nothing and gets the live clock, which is right: the
+ * feed is rendered per request. But the stage digests look back only three
+ * weeks, so a test that builds the feed with the real clock is asserting
+ * something about the calendar -- it passed in October and failed in November.
+ * And `npm test` is the gate every content agent runs before committing, so a
+ * test failing on a calendar boundary stops the news agent and the finder. That
+ * happened for real on 29 October over one date assertion.
+ */
+export function buildFeed(locale: Locale, now = Date.now()) {
   const dict = getDictionary(locale);
-  const items = feedItems(locale);
+  const items = feedItems(locale, now);
   const self = absoluteUrl(feedPath[locale]);
 
   const body = items

@@ -2,12 +2,42 @@
 import { spawn } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 import { loadScriptEnv } from "./lib/load-env.mjs";
 
 const ROOT = process.cwd();
 loadScriptEnv(ROOT);
 const REPORT_FILE = path.join(ROOT, "docs/agent/pipeline-report.md");
 const STATUS_FILE = path.join(ROOT, "docs/agent/pipeline-status.json");
+
+/*
+ * What a step's failure means for the content on disk.
+ *
+ * "content" writes to src/content, so a failure there may have left a file
+ * half-written and the caller is right to roll it back. "notify" only reports
+ * outward -- sync-operator-issues.mjs files GitHub issues -- so its failure
+ * destroys nothing, and must not be read as the content being bad. "verify"
+ * reads and asserts; a failure is real but it, too, wrote nothing.
+ *
+ * autopilot-agent.mjs reads these off pipeline-status.json to decide whether to
+ * roll src/content back, so a new step MUST be classified here. An unlisted id
+ * counts as "content", the cautious end: the caller then rolls back when it did
+ * not have to, rather than keeping a file the step may have corrupted.
+ */
+export const STEP_KINDS = {
+  "auto-tools": "content",
+  "auto-news": "content",
+  operator: "content",
+  design: "content",
+  "daily-checklist": "content",
+  issues: "notify",
+  verify: "verify",
+  "verify-public-content": "verify"
+};
+
+export function stepKind(id) {
+  return STEP_KINDS[id] || "content";
+}
 
 function toBoolean(value, fallback) {
   if (value == null || value === "") return fallback;
@@ -41,6 +71,7 @@ async function runStep(step, envExtras = {}) {
       resolve({
         id: step.id,
         label: step.label,
+        kind: stepKind(step.id),
         ok: false,
         code: -1,
         durationMs: Date.now() - startedAt,
@@ -52,6 +83,7 @@ async function runStep(step, envExtras = {}) {
       resolve({
         id: step.id,
         label: step.label,
+        kind: stepKind(step.id),
         ok: code === 0,
         code: typeof code === "number" ? code : -1,
         durationMs: Date.now() - startedAt,
@@ -173,17 +205,27 @@ async function run() {
     // Keep execution deterministic: each agent runs after its dependencies.
     const result = await runStep(step, envExtras);
     results.push(result);
-    if (!result.ok) break;
+    // A content or verify failure stops the run, because what follows depends
+    // on it. The issue sync does not: nothing downstream reads its output, and
+    // breaking here used to hide the verify steps' results behind an
+    // undelivered notification.
+    if (!result.ok && result.kind !== "notify") break;
   }
 
+  const failedSteps = results.filter((step) => !step.ok);
   const payload = {
     generatedAt,
     settings,
     summary: {
       total: results.length,
       passed: results.filter((step) => step.ok).length,
-      failed: results.filter((step) => !step.ok).length,
-      success: results.every((step) => step.ok)
+      failed: failedSteps.length,
+      success: failedSteps.length === 0,
+      // Read by autopilot-agent.mjs to decide whether src/content is safe to
+      // keep. contentOk false means a step that writes content failed; it says
+      // nothing about whether the issue sync got through.
+      contentOk: failedSteps.every((step) => step.kind === "notify"),
+      notifyFailed: failedSteps.filter((step) => step.kind === "notify").map((step) => step.label)
     },
     steps: results
   };
@@ -199,6 +241,12 @@ async function run() {
   console.log("--------------");
   console.log(`Steps executed: ${results.length}`);
   console.log(`Success: ${payload.summary.success ? "YES" : "NO"}`);
+  if (!payload.summary.success) {
+    console.log(`Content steps OK: ${payload.summary.contentOk ? "YES" : "NO"}`);
+    if (payload.summary.notifyFailed.length) {
+      console.log(`Reporting failed (content is unaffected): ${payload.summary.notifyFailed.join(", ")}`);
+    }
+  }
   if (settings.writeReports) {
     console.log(`Report: ${path.relative(ROOT, REPORT_FILE)}`);
     console.log(`Status: ${path.relative(ROOT, STATUS_FILE)}`);
@@ -211,7 +259,16 @@ async function run() {
   }
 }
 
-run().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+/*
+ * Importing this module must not run the pipeline. The exports above exist so a
+ * test can check the classification, and running it would fire every agent --
+ * network calls and writes to src/content -- during the suite.
+ */
+const invokedDirectly = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+
+if (invokedDirectly) {
+  run().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
