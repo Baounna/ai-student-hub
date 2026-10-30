@@ -1270,7 +1270,12 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["llm", "guardrails", "evaluation", "ai-safety"],
     cluster: "LLM Systems",
     publishedAt: "2026-02-09",
-    readTime: "14 min read",
+    // Vestigial. posts.ts overwrites this for every post at module load with
+    // measureReadTime(post, "en"), so the literal here never survives
+    // initialisation -- it is 6 min for this article, from 1,332 prose words.
+    // I set this to 14 before checking, which put a false number in the source
+    // where the next reader would believe it.
+    readTime: "6 min read",
     keywords: [
       "llm guardrails and evaluation basics",
       "open source llm evaluation",
@@ -1359,13 +1364,20 @@ export const csExpansionPosts: BlogPost[] = [
     locales: {
       en: {
         title: "LLM Guardrails and Evaluation Basics for Student Products",
-        seoTitle: "LLM Guardrails and Evaluation Basics",
-        excerpt: "A practical framework to reduce unsafe behavior and quality drift in LLM applications.",
+        // The <title> tag only; the H1 above stays as it is. Search Console
+        // shows this page for "open source llm evaluation" -- its largest
+        // query -- at position 15, and neither the old title nor the old
+        // excerpt contained the words it is being matched on. The article now
+        // answers that query, so the two lines Google renders in the result
+        // say so.
+        seoTitle: "LLM Guardrails and Open-Source Evaluation",
+        excerpt: "A practical framework for keeping an LLM application safe, and the open-source tools -- promptfoo, DeepEval, Inspect -- that measure whether it still works.",
         content: llmGuardrailsContent
       },
       fr: {
         title: "Bases guardrails et évaluation LLM",
-        excerpt: "Un cadre pratique pour réduire comportements risqués et dérive de qualité en applications LLM.",
+        seoTitle: "Garde-fous LLM et évaluation open source",
+        excerpt: "Un cadre pratique pour sécuriser une application LLM, et les outils open source -- promptfoo, DeepEval, Inspect -- qui mesurent si elle fonctionne toujours.",
         content: llmGuardrailsContentFr
       }
     },
