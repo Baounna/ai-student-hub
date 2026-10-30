@@ -617,12 +617,12 @@ export const csExpansionPosts: BlogPost[] = [
       {
         source: "MDN",
         label: { en: "HTTP response status codes", fr: "Codes de statut HTTP" },
-        href: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status"
+        href: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status"
       },
       {
         source: "OWASP",
         label: { en: "OWASP API Security Top 10", fr: "OWASP API Security Top 10" },
-        href: "https://owasp.org/API-Security/"
+        href: "https://api-security.owasp.org/"
       },
       {
         source: "PostgreSQL",
@@ -1323,7 +1323,7 @@ export const csExpansionPosts: BlogPost[] = [
       {
         source: "OWASP",
         label: { en: "OWASP Top 10 for LLM Applications", fr: "OWASP Top 10 pour applications LLM" },
-        href: "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+        href: "https://owasp.org/projects/top-10-for-large-language-model-applications"
       },
       {
         source: "NIST",
@@ -1333,7 +1333,7 @@ export const csExpansionPosts: BlogPost[] = [
       {
         source: "Anthropic",
         label: { en: "Building effective agents", fr: "Building effective agents" },
-        href: "https://www.anthropic.com/engineering/building-effective-agents"
+        href: "https://www.anthropic.com/research/building-effective-agents"
       },
       {
         source: "promptfoo",

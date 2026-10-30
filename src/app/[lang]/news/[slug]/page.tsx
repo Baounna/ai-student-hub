@@ -67,7 +67,7 @@ function getTopicReference(topic: string, locale: Locale) {
     },
     "Security & Performance": {
       label: locale === "fr" ? "OWASP API Security Top 10" : "OWASP API Security Top 10",
-      href: "https://owasp.org/API-Security/",
+      href: "https://api-security.owasp.org/",
       source: "OWASP"
     },
     MLOps: {

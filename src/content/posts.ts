@@ -1214,7 +1214,7 @@ const basePosts: BlogPost[] = [
       {
         source: "GitHub Docs",
         label: { en: "Events that trigger workflows (schedule)", fr: "Événements qui déclenchent les workflows (schedule)" },
-        href: "https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows"
+        href: "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows"
       }
     ],
     locales: {

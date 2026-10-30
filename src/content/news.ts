@@ -471,7 +471,7 @@ export const newsBriefs: NewsBrief[] = [
     tags: ["security", "api", "backend"],
     source: {
       name: "OWASP API Security documentation",
-      href: "https://owasp.org/API-Security/",
+      href: "https://api-security.owasp.org/",
       // "More student teams are adding API security baselines before launch" is
       // this publication's reading of a trend. OWASP's documentation is the
       // right background for the subject and says nothing about what student
