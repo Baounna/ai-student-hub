@@ -3,7 +3,7 @@ import { careerGuidePageTitle } from "@/lib/page-titles";
 import Link from "next/link";
 import { Newsletter } from "@/components/newsletter";
 import { isLocale, type Locale } from "@/i18n/config";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { guideExists } from "@/lib/product";
 
@@ -74,6 +74,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       fr ? "plan portfolio etudiant" : "student portfolio action plan"
     ]),
     openGraph: {
+      // Noindex keeps this out of search but not out of a shared link, and the
+      // French card named neither the site nor its language.
+      ...openGraphDefaults(params.lang),
       title,
       description,
       url: `/${params.lang}/product/ai-career-guide`,

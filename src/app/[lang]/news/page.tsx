@@ -9,7 +9,7 @@ import { getAutoNews, getAutoNewsUpdatedAt } from "@/content/auto-news";
 import { getLocalizedNews, getNewsTopics, getNewsTrack, getNewsTrackCounts, slugifyTopic, topicLabel, type NewsTrack } from "@/content/news";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getLiveAiCsUpdates } from "@/lib/live-news";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { formatReadTime } from "@/lib/read-time";
@@ -195,6 +195,10 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       params.lang === "fr" ? "outils developpeur" : "developer tools"
     ]),
     openGraph: {
+      // /news is the most-shared URL on the site and the French one shared as
+      // en_US, because a page that sets its own openGraph drops the layout's
+      // og:site_name and og:locale with it.
+      ...openGraphDefaults(params.lang),
       title: dict.news.title,
       description: dict.news.subtitle,
       url: `/${params.lang}/news`,

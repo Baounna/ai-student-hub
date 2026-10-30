@@ -48,7 +48,28 @@ export async function generateMetadata(): Promise<Metadata> {
     title: COPY[locale].title,
     description: COPY[locale].body,
     // A 404 is not a page to index, whichever language it answers in.
-    robots: { index: false, follow: true }
+    robots: { index: false, follow: true },
+    /*
+     * And it is not the home page either.
+     *
+     * The line above said "do not index this", while the root layout's
+     * alternates.canonical of "/" was still inherited, so every 404 this site
+     * serves also declared the home page to be its canonical address -- a page
+     * asking not to be indexed and naming a different URL as the real one in
+     * the same breath. The HTTP 404 settles it for any crawler that gets this
+     * far, so nothing visible changes; two contradictory instructions in one
+     * head is just not something to leave for the next reader to untangle.
+     *
+     * alternates replaces the layout's whole object rather than merging into
+     * it, which also drops the RSS <link> the root sets. On a 404 that is the
+     * right outcome: nothing here is a feed entry.
+     */
+    alternates: { canonical: null },
+    // Same reasoning for og:url, which the root sets to "/": a social card
+    // scraped from a missing page should not describe itself as the home page.
+    // Setting openGraph at all replaces the root's block entirely, so these
+    // two fields are the whole of it.
+    openGraph: { title: COPY[locale].title, description: COPY[locale].body }
   };
 }
 

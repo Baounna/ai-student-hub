@@ -5,7 +5,7 @@ import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
@@ -32,6 +32,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     // og:image, so every share of one rendered as a bare link. The same
     // generated card every other page already uses.
     openGraph: {
+      // A donation ask shared without og:site_name reads like a link from nobody,
+      // and the French one claimed to be English on top of that.
+      ...openGraphDefaults(params.lang),
       title: title,
       description: description,
       url: `/${params.lang}/donate`,

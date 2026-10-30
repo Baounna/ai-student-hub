@@ -381,6 +381,10 @@ const llmGuardrailsContentFr = [
  * and a product, none of which this site has. They now follow the house
  * answer documented on BlogPost.affiliateCallout in posts.ts -- no links, and
  * one thing the reader can do tonight, drawn from the article above it.
+ *
+ * Three of them carry one link each, to the internship board. Nine still carry
+ * none: a link is added where the board is the thing that reader is next
+ * trying to find, never to put a button on every post.
  */
 export const csExpansionPosts: BlogPost[] = [
   {
@@ -661,7 +665,35 @@ export const csExpansionPosts: BlogPost[] = [
         en: "Read what your server is actually listening on. Anything bound to 0.0.0.0 is reachable from the internet if the firewall allows it, and a published database port is how student projects get found by scanners.",
         fr: "Lisez ce que votre serveur écoute réellement. Tout ce qui est lié à 0.0.0.0 est joignable depuis internet si le pare-feu l'autorise, et un port de base de données publié est la façon dont les projets étudiants sont trouvés par les scanners."
       },
-      links: []
+      links: [
+        /*
+         * The first of three links to the board in this file.
+         *
+         * An SEO audit found that two of twenty-seven posts linked to /stages,
+         * and the rewrite that gave these callouts their one-instruction shape
+         * took both of those links with it. So the twelve posts a reader
+         * reaches by searching for Linux hardening, security checklists or
+         * prompt-injection defence -- the half of this site where a student
+         * with a security internship in mind actually lands -- offered no way
+         * through to the weekly-checked board, which is the best thing we have
+         * to give them. They finished the article and left.
+         *
+         * Three posts, not twelve. On the nine others the board is a change of
+         * subject, and a button that appears under every article stops being
+         * read. This one earns it: the article is about what a server exposes
+         * and who can reach it, which is the work the board's operational
+         * security and DevSecOps listings describe.
+         *
+         * `note` is required by AffiliateLink and rendered nowhere -- the
+         * template at blog/[slug] reads label and href only -- so it says
+         * something true for whoever edits this next rather than filler.
+         */
+        {
+          label: { en: "Open internships", fr: "Stages ouverts" },
+          href: "/stages",
+          note: "For the board's operational security and DevSecOps listings."
+        }
+      ]
     },
     // Every reference here used to be a landing page: kernel.org/doc/man-pages,
     // docs.docker.com, systemd.io, docs.github.com/en/actions (for an article
@@ -749,7 +781,20 @@ export const csExpansionPosts: BlogPost[] = [
         en: "Run git log --all --oneline -S 'sk-' in your project. If it prints a commit, the key is in every clone that was ever made, and rotating it is the fix -- not deleting the file.",
         fr: "Lancez git log --all --oneline -S 'sk-' dans votre projet. Si la commande affiche un commit, la clé est dans chaque clone jamais effectué, et la faire tourner est le correctif -- pas supprimer le fichier."
       },
-      links: []
+      links: [
+        // The security post, and the one page on this site a reader searching
+        // "student security internship" is likeliest to land on -- see the
+        // longer note on the Linux article above for why these three posts
+        // carry a link and the other nine do not. A student who has just
+        // audited their own project for leaked keys and broken authorization
+        // is reading for a job, and the board is where the SOC, GRC and audit
+        // openings are.
+        {
+          label: { en: "Open internships", fr: "Stages ouverts" },
+          href: "/stages",
+          note: "For the board's SOC, GRC and security audit listings."
+        }
+      ]
     },
     // P2 and P3 quote OWASP API1:2023 verbatim, including its closing instruction to write authorization tests. P4 pairs nginx's client_max_body_size 1m default and its 413 with body-parser's 100kb default. P5 cites the OWASP LLM01:2025 entry it quotes, which was missing from this list entirely. P8's npm audit-level quote is real but this article's npm reference is cited by it; ref 2 (ASVS landing page) carries no requirement text and is cited by nothing.
     paragraphCitations: { 2: [1], 3: [1], 4: [3, 4], 5: [6] },
@@ -1228,7 +1273,18 @@ export const csExpansionPosts: BlogPost[] = [
         en: "Five named cases is enough, and the script at the end of this article is all five. Until they run on every change, the guardrail is a hope rather than a control.",
         fr: "Cinq cas nommés suffisent, et le script à la fin de l'article les contient tous. Tant qu'ils ne tournent pas à chaque modification, le garde-fou est un espoir, pas un contrôle."
       },
-      links: []
+      links: [
+        // The third and last, for the same reason as the two above: this is
+        // the AI-security article, and a reader who has just written tests for
+        // a prompt-injection guardrail is the reader the board's AI security
+        // work was collected for. Nothing else on this site would have told
+        // them it exists.
+        {
+          label: { en: "Open internships", fr: "Stages ouverts" },
+          href: "/stages",
+          note: "For the board's AI and LLM security listings."
+        }
+      ]
     },
     // All four from OWASP LLM01:2025, quoted verbatim: no fool-proof prevention (P0), segregate untrusted content (P5), request source citations and assess groundedness (P6), least privilege and human-in-the-loop (P7). The Unicode normalisation paragraph stays uncited: the page covers base64 and emoji evasion, which is a different claim.
     paragraphCitations: { 0: [1], 5: [1], 6: [1], 7: [1] },

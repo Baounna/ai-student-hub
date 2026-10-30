@@ -98,13 +98,13 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
           "Le Web a été proposé en 1989 par Tim Berners-Lee pour partager la recherche scientifique.",
           "Le langage C, créé dans les années 1970, influence encore la plupart des langages modernes.",
           "Git (2005) est devenu l'outil standard pour la collaboration en ingénierie logicielle.",
-          "Un portfolio déployé augmente souvent plus le signal carrière qu'un grand nombre de certificats."
+          "L'expression « machine learning » remonte à un article d'Arthur Samuel publié chez IBM en 1959, sur un programme de dames."
         ]
       : [
           "The Web was proposed in 1989 by Tim Berners-Lee to share scientific research.",
           "The C language, created in the 1970s, still influences most modern programming languages.",
           "Git (2005) became the standard collaboration workflow for software engineering teams.",
-          "A deployed portfolio often creates stronger career signal than a stack of certificates."
+          "The phrase \"machine learning\" goes back to Arthur Samuel's 1959 IBM paper on a checkers-playing program."
         ];
 
   const milestoneItems =

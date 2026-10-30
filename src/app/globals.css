@@ -240,7 +240,32 @@ html[data-content-width="wide"] {
     line-height: 1.7;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
+    /*
+     * No overflow-x: hidden here, deliberately.
+     *
+     * It reads like a safety net and behaves like a shredder: anything wider
+     * than the viewport stops being scrollable and simply is not there. Two
+     * faults in this repo were made invisible by it and both are written up
+     * where they happened. The comparison matrix blew its mobile grid track
+     * out to 762px in a 390px viewport, and because the overflow could not be
+     * scrolled a reader got "$", "si", "co" where the price column should be,
+     * with no way to reach the rest -- see the note on the grid in
+     * compare/[slug]/page.tsx. The newsletter form came out 34px wider than
+     * its card on every news brief, sliced down the right edge, which is in
+     * the note in turnstile-widget.tsx. Both were found by eye rather than by
+     * the symptom that should have announced them, because the symptom had
+     * been turned off site-wide.
+     *
+     * It also clips what the focus rule above draws: outline-offset is 2px, so
+     * a control sitting flush to the right edge loses the ring that tells a
+     * keyboard reader where they are.
+     *
+     * Nothing needs it. Every element on the site with a minimum width wider
+     * than a phone -- the comparison tables at 760px, the post tables at
+     * 640px, the KPI table at 22rem -- sits inside its own overflow-x-auto
+     * scroller, and the long unbreakable strings in the auto-generated feeds
+     * are in paragraphs, which the overflow-wrap rule below already handles.
+     */
   }
 
   h1,

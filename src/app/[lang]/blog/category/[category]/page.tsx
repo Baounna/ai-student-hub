@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { getAllCategories, getCategoriesByTrack, getCategoryTrack, getPostsByCategory, slugify } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, coverImageUrl, ogImageUrl } from "@/lib/seo";
 import { formatReadTime } from "@/lib/read-time";
 import { categoryName } from "@/lib/categories";
@@ -77,6 +77,9 @@ export async function generateMetadata(
     // og:image, so every share of one rendered as a bare link. The same
     // generated card every other page already uses.
     openGraph: {
+      // Category pages are what get pasted into a thread as "here's the whole
+      // topic", and every French one of them shared as en_US.
+      ...openGraphDefaults(params.lang),
       title: categoryTitle,
       description: categoryDescription,
       url: `/${params.lang}/blog/category/${params.category}`,

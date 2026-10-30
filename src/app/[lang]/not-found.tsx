@@ -33,6 +33,29 @@ const COPY: Record<Locale, { kicker: string; title: string; body: string; home: 
  * /zz/blog — still escalates past this boundary to the root one, which is
  * right: there is no valid locale shell to render it in.
  */
+
+/*
+ * No metadata export here, and not for lack of trying.
+ *
+ * This boundary's head is the one next door's: a tab reading "AI and
+ * Cybersecurity News (FR)" over a page that says "Page introuvable", plus a
+ * canonical and an og:url naming the home page as the real address of an
+ * article that does not exist. The obvious repair is a generateMetadata here,
+ * the way src/app/not-found.tsx does it. It was written, built and served, and
+ * every one of those tags came back unchanged: Next resolves a route's head
+ * from its layouts and its page, so when blog/[slug] returns {} for a missing
+ * post the [lang] layout's metadata stands, and nothing in a nested not-found
+ * file is ever consulted. Next documents the metadata export for the root and
+ * global not-found files only.
+ *
+ * Measured on a production server rather than argued from the docs, because
+ * the dead export looked right in the diff. Next does inject
+ * `<meta name="robots" content="noindex">` itself, which is the tag that
+ * actually matters here, so what is left is a canonical on a page a reader
+ * cannot reach -- and it can only be fixed where the 404 is thrown, by the
+ * pages that call notFound(), not from this file.
+ */
+
 export default async function LocalizedNotFound() {
   // A Server Component, so there is no usePathname(). Middleware already puts
   // the request path on x-pathname for the layout's language switcher; this

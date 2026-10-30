@@ -42,7 +42,15 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       type: "website",
       images: [{ url: ogImageUrl(copy.title), width: 1200, height: 630, alt: copy.title }]
     },
-    twitter: { card: "summary_large_image", title: copy.title, description: copy.subtitle },
+    // images, like every other template. This route and its country pages were
+    // the only two that left it out, so the one page on this site people share
+    // to send someone a job was relying on X's og:image fallback for its card.
+    twitter: {
+      card: "summary_large_image",
+      title: copy.title,
+      description: copy.subtitle,
+      images: [ogImageUrl(copy.title)]
+    },
     alternates: localizedAlternates("/stages", params.lang)
   };
 }
@@ -304,7 +312,18 @@ export default async function StagesPage(props: {
   });
 
   return (
-    <section className="page-shell max-w-5xl py-10 md:py-12">
+    /*
+     * max-w-5xl was here and had never once applied. .page-shell declares
+     * max-width with !important, so the utility beside it loses whatever
+     * Tailwind's ordering does, and the board has always rendered at the
+     * shell's own measure -- so the class read as a decision about this page's
+     * reading width while describing nothing a reader has ever seen. Removed
+     * rather than forced: making it bite would narrow the rows by 8rem on a
+     * page nobody reviewed at that width, and it would make the board the one
+     * template on the site narrower than its shell, since every other page
+     * carries the same inert max-w-* class.
+     */
+    <section className="page-shell py-10 md:py-12">
       {/* jsonLd(), never bare JSON.stringify: a role or company name carrying
           "<" would otherwise close the script block and turn data into markup. */}
       <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(itemListSchema) }} />

@@ -3,7 +3,7 @@ import { ogImageUrl } from "@/lib/seo";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const params = await props.params;
@@ -21,6 +21,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     // home page. Next merges metadata per top-level field, so the whole object
     // comes from the parent or none of it does.
     openGraph: {
+      // Same per-field merge as the note above, for the two fields the layout was
+      // the only one carrying: og:site_name and og:locale.
+      ...openGraphDefaults(params.lang),
       title,
       description,
       url: `/${params.lang}/terms`,

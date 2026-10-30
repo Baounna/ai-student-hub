@@ -11,7 +11,7 @@ import { ReadingProgress } from "@/components/reading-progress";
 import { getAutoNews, getAutoNewsBySlug } from "@/content/auto-news";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { siteConfig } from "@/config/site";
 
@@ -184,6 +184,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
       params.lang === "fr" ? "brief auto ia" : "auto ai brief"
     ]),
     openGraph: {
+      // 480 of the site's URLs are these briefs. They are out of the index but not
+      // out of a share, and without this the card named no site and no language.
+      ...openGraphDefaults(params.lang),
       title: item.title,
       description: item.summary,
       url: `/${params.lang}/news/auto/${params.slug}`,

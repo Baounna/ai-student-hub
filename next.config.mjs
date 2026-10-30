@@ -149,6 +149,42 @@ const nextConfig = {
       {
         source: "/(.*)",
         headers
+      },
+      /*
+       * The three files every crawler asks for first, told they may be cached.
+       *
+       * All three are built once and marked static, and all three answered
+       * "public, max-age=0, must-revalidate" -- which tells a shared cache it
+       * may store the file and then forbids it from ever using what it stored
+       * without asking us again. So every crawler hit on /sitemap.xml came all
+       * the way back to the origin for a file that cannot have changed since
+       * the deploy, and the one spending that round trip is the crawler
+       * deciding how much of this site to read.
+       *
+       * AFTER the catch-all, following the note on the image routes above: a
+       * later matching rule wins, so anything listed before /(.*) is what gets
+       * overwritten. Served both ways on a production build before settling
+       * here, and both answered with this header -- "later wins" decides a key
+       * that two rules both set, and the catch-all sets no Cache-Control at
+       * all. It stays after it so that stops being load-bearing on the day the
+       * catch-all does set one.
+       *
+       * The values are the ones /feed.xml and the suggest route already send,
+       * so these three are not a fourth caching policy to keep in your head.
+       * A browser still revalidates (max-age=0 is untouched); only the CDN in
+       * front of it gets to answer, for an hour, and to serve what it has for
+       * a day while it refreshes. A deploy purges it, which is what makes an
+       * hour safe for a sitemap that lists dated content.
+       */
+      {
+        source: "/:file(sitemap.xml|robots.txt|manifest.webmanifest)",
+        headers: [
+          ...headers,
+          {
+            key: "Cache-Control",
+            value: "public, max-age=0, must-revalidate, s-maxage=3600, stale-while-revalidate=86400"
+          }
+        ]
       }
     ];
   }

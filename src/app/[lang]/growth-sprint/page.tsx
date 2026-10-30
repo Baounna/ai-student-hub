@@ -5,7 +5,7 @@ import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 
@@ -42,6 +42,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       fr ? "plan 14 jours blog ia" : "14 day ai blog plan"
     ]),
     openGraph: {
+      // Shared by link rather than found by search, which makes the card the whole
+      // first impression -- and it was missing the site's name and its language.
+      ...openGraphDefaults(params.lang),
       title,
       description,
       url: `/${params.lang}/growth-sprint`,

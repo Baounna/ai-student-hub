@@ -7,7 +7,7 @@ import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { getAutoNews } from "@/content/auto-news";
 import { isLocale, type Locale } from "@/i18n/config";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { getLiveAiCsUpdates, getLiveNewsSources, type LiveNewsItem } from "@/lib/live-news";
 
@@ -169,6 +169,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
       fr ? "veille informatique temps reel" : "real-time cybersecurity updates"
     ]),
     openGraph: {
+      // This page gets shared while a story is still moving, so the card is often
+      // the only thing a reader sees -- and in French it carried no locale at all.
+      ...openGraphDefaults(params.lang),
       title,
       description,
       url: `/${params.lang}/news/live`,

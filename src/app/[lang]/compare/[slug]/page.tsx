@@ -12,7 +12,7 @@ import { StickyToolsCta } from "@/components/sticky-tools-cta";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { comparisons, getLocalizedComparison } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
 import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
@@ -104,6 +104,10 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
       ...comparison.tools.map((tool) => `${tool.name} vs`)
     ]),
     openGraph: {
+      // The comparison pages are the ones that actually get shared, so this is where
+      // a French card announcing en_US cost the most. Spread first: the title,
+      // description, url and image below are this page's own.
+      ...openGraphDefaults(params.lang),
       title,
       description,
       url: `/${params.lang}/compare/${params.slug}`,

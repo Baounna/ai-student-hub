@@ -3,7 +3,7 @@ import { ogImageUrl } from "@/lib/seo";
 import Link from "next/link";
 import { hasPaidLinks, siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const params = await props.params;
@@ -30,6 +30,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     // home page. Next merges metadata per top-level field, so the whole object
     // comes from the parent or none of it does.
     openGraph: {
+      // Same per-field merge as the note above: the page a reader opens to check who
+      // we are shared with no og:site_name saying who we are.
+      ...openGraphDefaults(params.lang),
       title,
       description,
       url: `/${params.lang}/affiliate-disclosure`,

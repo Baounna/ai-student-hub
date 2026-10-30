@@ -9,7 +9,7 @@ import { getAllTags, getPostsByTag, slugify } from "@/content/posts";
 import { getAllNewsTags, getNewsByTag } from "@/content/news";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, coverImageUrl, ogImageUrl } from "@/lib/seo";
 import { formatReadTime } from "@/lib/read-time";
 import { siteConfig } from "@/config/site";
@@ -65,6 +65,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string; 
     // og:image, so every share of one rendered as a bare link. The same
     // generated card every other page already uses.
     openGraph: {
+      // Same as the category pages: 67 tag URLs, both languages, none of them
+      // telling a reader which language or which site the card came from.
+      ...openGraphDefaults(params.lang),
       title: tagTitle,
       description: tagDescription,
       url: `/${params.lang}/blog/tag/${params.tag}`,

@@ -5,7 +5,7 @@ import { Newsletter } from "@/components/newsletter";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { localizedAlternates } from "@/i18n/helpers";
+import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
@@ -18,6 +18,10 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     description: dict.about.subtitle,
     keywords: getSeoKeywords(params.lang, "about"),
     openGraph: {
+      // /fr/about is the page people link to when they explain the site, and its
+      // card announced itself as en_US with no site name: setting openGraph here at
+      // all replaced the layout's. Spread first, so the title below still wins.
+      ...openGraphDefaults(params.lang),
       title: dict.nav.about,
       description: dict.about.subtitle,
       url: `/${params.lang}/about`,

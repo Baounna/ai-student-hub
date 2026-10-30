@@ -6,6 +6,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { jsonLd } from "@/lib/json-ld";
 import { absoluteUrl } from "@/lib/site-url";
 import { Newsletter } from "@/components/newsletter";
+import { siteConfig } from "@/config/site";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { ogImageUrl } from "@/lib/seo";
@@ -72,7 +73,12 @@ export async function generateMetadata(props: {
       type: "website",
       images: [{ url: ogImageUrl(title), width: 1200, height: 630, alt: title }]
     },
-    twitter: { card: "summary_large_image", title, description },
+    // images, like every other template. X falls back to og:image when the
+    // twitter block omits it, so the card looked right -- but the two pages
+    // that were missing it were the board and its country pages, the only
+    // thing on this site anyone shares to find a job, and the fallback is a
+    // courtesy rather than a guarantee.
+    twitter: { card: "summary_large_image", title, description, images: [ogImageUrl(title)] },
     alternates: localizedAlternates(path, locale)
   };
 }
@@ -144,9 +150,20 @@ export default async function StagesByCountryPage(props: {
       {/* jsonLd(), never bare JSON.stringify: a role or company name carrying
           a "</script>" would otherwise close the tag early. */}
       <script type="application/ld+json" nonce={nonce} dangerouslySetInnerHTML={{ __html: jsonLd(itemListSchema) }} />
+      {/* Home first, like every other page on the site.
+          These twelve pages are the ones a stranger arrives on from a search,
+          and their trail started halfway down the site -- "AI and cyber
+          internships / France" -- so the one element on the page whose whole
+          job is to say where you are never said what site you were on, and
+          offered no way up to the front of it. Every other template, /stages
+          and the blog posts included, starts at the brand name. The component
+          emits the BreadcrumbList from this same array, so the structured data
+          was a level short too, and a crawler reading it was told these pages
+          sit at the top of the site rather than two levels down. */}
       <Breadcrumbs
         locale={locale}
         items={[
+          { label: siteConfig.brandName, href: `/${locale}` },
           { label: copy.title, href: `/${locale}/stages` },
           { label: name }
         ]}
