@@ -14,6 +14,13 @@ const nextConfig = {
     "/api/og": ["./src/assets/fonts/**"]
   },
   images: {
+    /*
+     * A favicon does not change. The only remote images here are Google's
+     * favicon service, fetched for the tool logos, and without a TTL the
+     * optimizer re-fetches and re-encodes them on its own default schedule for
+     * files that are identical every time.
+     */
+    minimumCacheTTL: 60 * 60 * 24 * 30,
     remotePatterns: [
       {
         protocol: "https",

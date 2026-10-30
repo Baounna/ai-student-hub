@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { countryLabel, getStages, getOpenStages } from "@/content/stages";
+import { countryLabel, getStages, getOpenStages, isClosed } from "@/content/stages";
 
 /**
  * Only four of the eighty-two listings carry a deadline, so the other
@@ -16,14 +16,46 @@ describe("internship ordering", () => {
     expect(new Set(stages.map((s) => s.id)).size).toBe(stages.length);
   });
 
-  it("puts dated listings first, in deadline order", () => {
-    const dated = stages.filter((s) => s.deadline);
-    const firstUndated = stages.findIndex((s) => !s.deadline);
-    const lastDated = stages.map((s) => Boolean(s.deadline)).lastIndexOf(true);
+  /**
+   * Among OPEN listings. The closed ones are last on purpose.
+   *
+   * This gathered every dated listing, closed ones included, and demanded
+   * ascending deadlines. getStages deliberately returns
+   * [open dated, open rolling, closed], so a lapsed deadline moves to the end
+   * and the sequence stops ascending -- which is correct behaviour and read as
+   * a failure.
+   *
+   * It passed for weeks because no deadline had lapsed yet. One did on 28
+   * October, and the next morning the internship finder's own build step went
+   * red over it: a scheduled agent blocked by a test that was wrong about a
+   * date. Time is now injected so the invariant is checked against a day of
+   * this test's choosing rather than whichever day CI happens to run.
+   */
+  it("puts open dated listings first, in deadline order", () => {
+    const withDeadlines = getStages(Date.parse("2026-10-20T12:00:00Z"));
+    const open = withDeadlines.filter((s) => !isClosed(s, Date.parse("2026-10-20T12:00:00Z")));
+    const deadlines = open.filter((s) => s.deadline).map((s) => s.deadline as string);
 
-    if (dated.length && firstUndated !== -1) expect(lastDated).toBeLessThan(stages.length);
-    const deadlines = dated.map((s) => s.deadline as string);
+    // Ordering is asserted on whatever dated rows exist, because sorting is
+    // true of zero and one as well. The count is NOT asserted: the two rows
+    // that carry a deadline today will eventually be pruned, and a test that
+    // then fails would block the Thursday finder for a data change that is
+    // correct -- which is exactly the failure this test just caused.
     expect(deadlines).toEqual([...deadlines].sort());
+    // Dated before rolling, within the open block.
+    const firstRolling = open.findIndex((s) => !s.deadline);
+    const lastDated = open.map((s) => Boolean(s.deadline)).lastIndexOf(true);
+    expect(lastDated).toBeLessThan(firstRolling);
+  });
+
+  it("keeps closed listings at the end, whatever their deadline", () => {
+    // The case that broke the finder: a deadline in the past sorts last, not
+    // into deadline order with the open ones.
+    const after = Date.parse("2026-10-29T12:00:00Z");
+    const ordered = getStages(after);
+    const firstClosed = ordered.findIndex((s) => isClosed(s, after));
+    if (firstClosed === -1) return;
+    expect(ordered.slice(firstClosed).every((s) => isClosed(s, after))).toBe(true);
   });
 
   it("does not let one employer own the opening rows", () => {

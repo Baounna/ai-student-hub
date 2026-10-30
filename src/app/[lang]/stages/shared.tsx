@@ -279,7 +279,25 @@ export function StageRow({
    * board, which has forty times as many, did not.
    */
   return (
-    <li key={stage.id} className={`py-4 ${closed ? "opacity-60" : ""}`}>
+    /*
+     * A closed row is de-emphasised by its own tokens, not by multiplying good
+     * ones by 0.6.
+     *
+     * opacity-60 was applied to the whole row, which took --muted from 6.19:1
+     * down to 2.97:1 against the page and put --text exactly on the 4.50
+     * boundary -- so a closed listing's badge, kind, place, provenance and
+     * check date all fell at or below readable. WCAG 1.4.3 exempts disabled
+     * CONTROLS, not de-emphasised content, and the comment higher up this file
+     * says the row is shown precisely so a reader can judge it for themselves.
+     *
+     * It was latent until 28 October, when the first deadline on the board
+     * lapsed and a closed row appeared for real.
+     *
+     * The de-emphasis survives: the "Closed" badge says so in words, and the
+     * title drops from --text-strong to --muted, which is a computable 6.19:1
+     * rather than whatever 0.6 happens to produce.
+     */
+    <li key={stage.id} className="py-4">
       <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
         {/*
           * The title's own language, when it can be told.
@@ -309,7 +327,9 @@ export function StageRow({
             was given one. Above 640px there is room for the whole thing, so
             the clamp lifts. */}
         <h2
-          className="line-clamp-3 text-base font-semibold text-[color:var(--text-strong)] sm:line-clamp-none"
+          className={`line-clamp-3 text-base font-semibold sm:line-clamp-none ${
+            closed ? "text-[color:var(--muted)]" : "text-[color:var(--text-strong)]"
+          }`}
           lang={roleLang}
         >
           {stage.role}
