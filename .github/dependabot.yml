@@ -73,5 +73,16 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+    groups:
+      # security-codeql.yml pins init, autobuild and analyze to the same SHA,
+      # and CodeQL requires them to match. Ungrouped, Dependabot raised one PR
+      # per action -- #47, #48, #49 -- and each was unmergeable on its own:
+      # whichever landed first would leave the other two behind and fail the
+      # workflow with "configuration error", which names neither the version
+      # nor the cause. Three PRs that are only correct as a set should be one
+      # PR.
+      codeql-action:
+        patterns:
+          - "github/codeql-action*"
     commit-message:
       prefix: "chore(ci)"

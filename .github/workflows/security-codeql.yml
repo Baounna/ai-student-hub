@@ -31,13 +31,20 @@ jobs:
           # have a git credential sitting in .git/config while it does.
           persist-credentials: false
 
+      # init, autobuild and analyze must stay on ONE version. Dependabot
+      # raises a separate PR per action, and merging any of them alone leaves
+      # the three mismatched, which CodeQL fails as "configuration error"
+      # rather than as a version problem -- PRs #47, #48 and #49 each failed
+      # that way. They are grouped in .github/dependabot.yml now so they
+      # arrive together; if that grouping is ever removed, bump all three in
+      # the same commit by hand.
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@2892aa5e19bbd11bc0cff5427e3b750a04d9e3c2 # v4.38.2
+        uses: github/codeql-action/init@9b3254085494b55a0f7c4c2b3d2d52cc712ce370 # v4.39.1
         with:
           languages: javascript
 
       - name: Autobuild
-        uses: github/codeql-action/autobuild@2892aa5e19bbd11bc0cff5427e3b750a04d9e3c2 # v4.38.2
+        uses: github/codeql-action/autobuild@9b3254085494b55a0f7c4c2b3d2d52cc712ce370 # v4.39.1
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@2892aa5e19bbd11bc0cff5427e3b750a04d9e3c2 # v4.38.2
+        uses: github/codeql-action/analyze@9b3254085494b55a0f7c4c2b3d2d52cc712ce370 # v4.39.1
