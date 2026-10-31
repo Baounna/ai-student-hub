@@ -1,42 +1,61 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-30T22:15:46.584Z",
+  "updatedAt": "2026-10-31T12:22:37.280Z",
   "items": [
     {
-      "slug": "20261030-preparing-for-the-2026-us-midterms-c9ddbc2b",
+      "slug": "20261031-an-update-on-independent-evaluators-dc9ed14d",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-us-midterms",
-      "publishedAt": "2026-10-30T22:15:46.584Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "href": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "publishedAt": "2026-10-31T12:22:37.280Z",
+      "discoveredAt": "2026-10-31T12:22:37.280Z",
       "locales": {
         "en": {
-          "title": "Preparing for the 2026 US midterms",
-          "summary": "Earlier this year, we"
+          "title": "An update on independent evaluators",
+          "summary": "To"
         },
         "fr": {
-          "title": "Preparing for the 2026 US midterms",
-          "summary": "Earlier this year, we"
+          "title": "An update on independent evaluators",
+          "summary": "To"
         }
       }
     },
     {
-      "slug": "20261030-preview-web-apps-live-as-your-coding-agent-builds-them-with-amaz-168738aa",
+      "slug": "20261031-e-maj-501-major-security-update-57a82fba",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/e-maj-501-major-security-update-3425/",
+      "publishedAt": "2026-10-31T00:00:00.000Z",
+      "discoveredAt": "2026-10-31T12:22:37.280Z",
+      "locales": {
+        "en": {
+          "title": "E-Maj 5.0.1 : Major Security Update.",
+          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
+        },
+        "fr": {
+          "title": "E-Maj 5.0.1 : Major Security Update.",
+          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
+        }
+      }
+    },
+    {
+      "slug": "20261030-managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-a-963a648b",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/preview-web-apps-live-as-your-coding-agent-builds-them-with-amazon-bedrock-agentcore-runtime/",
-      "publishedAt": "2026-10-30T21:40:03.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+      "publishedAt": "2026-10-30T22:42:24.000Z",
+      "discoveredAt": "2026-10-31T12:22:37.280Z",
       "locales": {
         "en": {
-          "title": "Preview web apps live as your coding agent builds them with Amazon Bedrock AgentCore runtime",
-          "summary": "Amazon Bedrock AgentCore Session endpoints give each runtime session an authenticated URL that forwards any HTTP method, path, and WebSocket connection to the ports you allow. In this post, you deploy a coding agent that keeps a…"
+          "title": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams",
+          "summary": "This post presents a five-stage operating model for managing Amazon Bedrock cost: attribute every dollar to an owner, make every request observable, enforce budgets, optimize platform defaults, and operate a review cadence. Writt…"
         },
         "fr": {
-          "title": "Preview web apps live as your coding agent builds them with Amazon Bedrock AgentCore runtime",
-          "summary": "Amazon Bedrock AgentCore Session endpoints give each runtime session an authenticated URL that forwards any HTTP method, path, and WebSocket connection to the ports you allow. In this post, you deploy a coding agent that keeps a…"
+          "title": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams",
+          "summary": "This post presents a five-stage operating model for managing Amazon Bedrock cost: attribute every dollar to an owner, make every request observable, enforce budgets, optimize platform defaults, and operate a review cadence. Writt…"
         }
       }
     },
@@ -250,25 +269,6 @@
       }
     },
     {
-      "slug": "20261028-postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-884d8d8f",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-3363/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
-          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
-        },
-        "fr": {
-          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
-          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
-        }
-      }
-    },
-    {
       "slug": "20261027-nist-report-provides-guidelines-for-transition-to-post-quantum-c-fc4af51d",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -364,40 +364,59 @@
       }
     },
     {
-      "slug": "20261030-anthropic-opens-singapore-office-and-signs-mou-with-the-governme-87253efe",
+      "slug": "20261030-preparing-for-the-2026-us-midterms-c9ddbc2b",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/singapore-office-opening",
+      "href": "https://www.anthropic.com/news/2026-us-midterms",
       "publishedAt": "2026-10-30T22:15:46.584Z",
       "discoveredAt": "2026-10-30T22:15:46.584Z",
       "locales": {
         "en": {
-          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-          "summary": "Anthropic has"
+          "title": "Preparing for the 2026 US midterms",
+          "summary": "Earlier this year, we"
         },
         "fr": {
-          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-          "summary": "Anthropic has"
+          "title": "Preparing for the 2026 US midterms",
+          "summary": "Earlier this year, we"
         }
       }
     },
     {
-      "slug": "20261030-how-worldwide-express-automated-freight-exceptions-with-amazon-b-45af7487",
+      "slug": "20261031-pgadmin-4-v919-released-20829b5b",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgadmin-4-v919-released-3426/",
+      "publishedAt": "2026-10-31T00:00:00.000Z",
+      "discoveredAt": "2026-10-31T12:22:37.280Z",
+      "locales": {
+        "en": {
+          "title": "pgAdmin 4 v9.19 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
+        },
+        "fr": {
+          "title": "pgAdmin 4 v9.19 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
+        }
+      }
+    },
+    {
+      "slug": "20261030-preview-web-apps-live-as-your-coding-agent-builds-them-with-amaz-168738aa",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
-      "publishedAt": "2026-10-30T17:32:20.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/preview-web-apps-live-as-your-coding-agent-builds-them-with-amazon-bedrock-agentcore-runtime/",
+      "publishedAt": "2026-10-30T21:40:03.000Z",
       "discoveredAt": "2026-10-30T22:15:46.584Z",
       "locales": {
         "en": {
-          "title": "How Worldwide Express automated freight exceptions with Amazon Bedrock",
-          "summary": "Worldwide Express automated its less-than-truckload freight billing-exception process with a multi-agent solution built on Amazon Bedrock. Six months after launch, the company cut active exceptions by 75%, improved time-to-cash b…"
+          "title": "Preview web apps live as your coding agent builds them with Amazon Bedrock AgentCore runtime",
+          "summary": "Amazon Bedrock AgentCore Session endpoints give each runtime session an authenticated URL that forwards any HTTP method, path, and WebSocket connection to the ports you allow. In this post, you deploy a coding agent that keeps a…"
         },
         "fr": {
-          "title": "How Worldwide Express automated freight exceptions with Amazon Bedrock",
-          "summary": "Worldwide Express automated its less-than-truckload freight billing-exception process with a multi-agent solution built on Amazon Bedrock. Six months after launch, the company cut active exceptions by 75%, improved time-to-cash b…"
+          "title": "Preview web apps live as your coding agent builds them with Amazon Bedrock AgentCore runtime",
+          "summary": "Amazon Bedrock AgentCore Session endpoints give each runtime session an authenticated URL that forwards any HTTP method, path, and WebSocket connection to the ports you allow. In this post, you deploy a coding agent that keeps a…"
         }
       }
     },
@@ -611,25 +630,6 @@
       }
     },
     {
-      "slug": "20261028-estuary-expands-postgresql-cdc-with-targeted-backfills-and-scala-c3c04b2c",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/estuary-expands-postgresql-cdc-with-targeted-backfills-and-scalable-discovery-3419/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
-      "locales": {
-        "en": {
-          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
-          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
-        },
-        "fr": {
-          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
-          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
-        }
-      }
-    },
-    {
       "slug": "20261016-new-chip-based-tape-measure-for-light-could-revolutionize-mobile-2221263d",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -706,40 +706,59 @@
       }
     },
     {
-      "slug": "20261030-strengthening-our-defenses-against-distillation-attacks-7f42709d",
+      "slug": "20261030-anthropic-opens-singapore-office-and-signs-mou-with-the-governme-87253efe",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/distillation-defenses",
-      "publishedAt": "2026-10-30T15:53:45.751Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "href": "https://www.anthropic.com/news/singapore-office-opening",
+      "publishedAt": "2026-10-30T22:15:46.584Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
       "locales": {
         "en": {
-          "title": "Strengthening our defenses against distillation attacks",
-          "summary": "Illicit distillat"
+          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Anthropic has"
         },
         "fr": {
-          "title": "Strengthening our defenses against distillation attacks",
-          "summary": "Illicit distillat"
+          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Anthropic has"
         }
       }
     },
     {
-      "slug": "20261030-configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-gov-bf0d3d19",
+      "slug": "20261028-postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-884d8d8f",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-3363/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
+        },
+        "fr": {
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
+        }
+      }
+    },
+    {
+      "slug": "20261030-how-worldwide-express-automated-freight-exceptions-with-amazon-b-45af7487",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
-      "publishedAt": "2026-10-30T17:27:45.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+      "publishedAt": "2026-10-30T17:32:20.000Z",
       "discoveredAt": "2026-10-30T22:15:46.584Z",
       "locales": {
         "en": {
-          "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
-          "summary": "The ChatGPT desktop app is now available on Amazon Bedrock in AWS GovCloud (US). This post walks through a controlled local deployment that routes model inference to Amazon Bedrock in AWS GovCloud (US-West) using API-mode sign-in…"
+          "title": "How Worldwide Express automated freight exceptions with Amazon Bedrock",
+          "summary": "Worldwide Express automated its less-than-truckload freight billing-exception process with a multi-agent solution built on Amazon Bedrock. Six months after launch, the company cut active exceptions by 75%, improved time-to-cash b…"
         },
         "fr": {
-          "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
-          "summary": "The ChatGPT desktop app is now available on Amazon Bedrock in AWS GovCloud (US). This post walks through a controlled local deployment that routes model inference to Amazon Bedrock in AWS GovCloud (US-West) using API-mode sign-in…"
+          "title": "How Worldwide Express automated freight exceptions with Amazon Bedrock",
+          "summary": "Worldwide Express automated its less-than-truckload freight billing-exception process with a multi-agent solution built on Amazon Bedrock. Six months after launch, the company cut active exceptions by 75%, improved time-to-cash b…"
         }
       }
     },
@@ -953,25 +972,6 @@
       }
     },
     {
-      "slug": "20261028-oxynote-an-open-source-internal-wiki-with-live-postgresql-query--8703437b",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/oxynote-an-open-source-internal-wiki-with-live-postgresql-query-charts-3406/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
-      "locales": {
-        "en": {
-          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
-          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
-        },
-        "fr": {
-          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
-          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
-        }
-      }
-    },
-    {
       "slug": "20261008-nist-joins-white-house-effort-to-drive-a-new-golden-age-of-scien-25dc3f92",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -1048,40 +1048,59 @@
       }
     },
     {
-      "slug": "20261030-introducing-the-anthropic-cyber-mission-db9c3550",
+      "slug": "20261030-strengthening-our-defenses-against-distillation-attacks-7f42709d",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "href": "https://www.anthropic.com/news/distillation-defenses",
       "publishedAt": "2026-10-30T15:53:45.751Z",
       "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "Introducing the Anthropic Cyber Mission",
-          "summary": "We’re launching"
+          "title": "Strengthening our defenses against distillation attacks",
+          "summary": "Illicit distillat"
         },
         "fr": {
-          "title": "Introducing the Anthropic Cyber Mission",
-          "summary": "We’re launching"
+          "title": "Strengthening our defenses against distillation attacks",
+          "summary": "Illicit distillat"
         }
       }
     },
     {
-      "slug": "20261029-how-the-uk-amazon-quick-user-group-grew-in-2026-cf0463a1",
+      "slug": "20261028-estuary-expands-postgresql-cdc-with-targeted-backfills-and-scala-c3c04b2c",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/estuary-expands-postgresql-cdc-with-targeted-backfills-and-scalable-discovery-3419/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
+          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
+        },
+        "fr": {
+          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
+          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
+        }
+      }
+    },
+    {
+      "slug": "20261030-configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-gov-bf0d3d19",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/",
-      "publishedAt": "2026-10-29T20:16:40.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+      "publishedAt": "2026-10-30T17:27:45.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
       "locales": {
         "en": {
-          "title": "How the UK Amazon Quick User Group grew in 2026",
-          "summary": "The UK Amazon Quick User Group's 2026 roundup: three quarterly meetups, 150+ attendees, and customer stories from Arriva, Carsa, and Propulse Lab on using agentic AI and Amazon Quick to turn data into faster decisions, higher sat…"
+          "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
+          "summary": "The ChatGPT desktop app is now available on Amazon Bedrock in AWS GovCloud (US). This post walks through a controlled local deployment that routes model inference to Amazon Bedrock in AWS GovCloud (US-West) using API-mode sign-in…"
         },
         "fr": {
-          "title": "How the UK Amazon Quick User Group grew in 2026",
-          "summary": "The UK Amazon Quick User Group's 2026 roundup: three quarterly meetups, 150+ attendees, and customer stories from Arriva, Carsa, and Propulse Lab on using agentic AI and Amazon Quick to turn data into faster decisions, higher sat…"
+          "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
+          "summary": "The ChatGPT desktop app is now available on Amazon Bedrock in AWS GovCloud (US). This post walks through a controlled local deployment that routes model inference to Amazon Bedrock in AWS GovCloud (US-West) using API-mode sign-in…"
         }
       }
     },
@@ -1295,25 +1314,6 @@
       }
     },
     {
-      "slug": "20261028-revivedb-supabase-backups-restore-tested-against-the-source-sche-f15781fd",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/revivedb-supabase-backups-restore-tested-against-the-source-schema-3422/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
-      "locales": {
-        "en": {
-          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
-          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
-        },
-        "fr": {
-          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
-          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
-        }
-      }
-    },
-    {
       "slug": "20261008-nist-study-shows-how-the-toxic-substances-mixed-into-fentanyl-va-9acfb21c",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -1390,40 +1390,59 @@
       }
     },
     {
-      "slug": "20261030-2026-usage-policy-update-7a238471",
+      "slug": "20261030-introducing-the-anthropic-cyber-mission-db9c3550",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
       "publishedAt": "2026-10-30T15:53:45.751Z",
       "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "2026 Usage Policy update",
-          "summary": "We’re publishi"
+          "title": "Introducing the Anthropic Cyber Mission",
+          "summary": "We’re launching"
         },
         "fr": {
-          "title": "2026 Usage Policy update",
-          "summary": "We’re publishi"
+          "title": "Introducing the Anthropic Cyber Mission",
+          "summary": "We’re launching"
         }
       }
     },
     {
-      "slug": "20261029-building-intent-driven-ui-testing-with-amazon-nova-act-1f3c261e",
+      "slug": "20261028-oxynote-an-open-source-internal-wiki-with-live-postgresql-query--8703437b",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/oxynote-an-open-source-internal-wiki-with-live-postgresql-query-charts-3406/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
+          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
+        },
+        "fr": {
+          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
+          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-how-the-uk-amazon-quick-user-group-grew-in-2026-cf0463a1",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act/",
-      "publishedAt": "2026-10-29T18:20:27.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/",
+      "publishedAt": "2026-10-29T20:16:40.000Z",
       "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "Building intent-driven UI testing with Amazon Nova Act",
-          "summary": "Epsilon's Agentic Platform team delivers UI testing as a managed, multi-tenant service built on Amazon Nova Act and Amazon Bedrock AgentCore Browser Tool. Tests are written in plain English and run on browsers managed by AWS, giv…"
+          "title": "How the UK Amazon Quick User Group grew in 2026",
+          "summary": "The UK Amazon Quick User Group's 2026 roundup: three quarterly meetups, 150+ attendees, and customer stories from Arriva, Carsa, and Propulse Lab on using agentic AI and Amazon Quick to turn data into faster decisions, higher sat…"
         },
         "fr": {
-          "title": "Building intent-driven UI testing with Amazon Nova Act",
-          "summary": "Epsilon's Agentic Platform team delivers UI testing as a managed, multi-tenant service built on Amazon Nova Act and Amazon Bedrock AgentCore Browser Tool. Tests are written in plain English and run on browsers managed by AWS, giv…"
+          "title": "How the UK Amazon Quick User Group grew in 2026",
+          "summary": "The UK Amazon Quick User Group's 2026 roundup: three quarterly meetups, 150+ attendees, and customer stories from Arriva, Carsa, and Propulse Lab on using agentic AI and Amazon Quick to turn data into faster decisions, higher sat…"
         }
       }
     },
@@ -1637,25 +1656,6 @@
       }
     },
     {
-      "slug": "20261028-postgresql-anonymizer-33-major-security-update-f4b74201",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-33-major-security-update-3423/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
-          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
-        },
-        "fr": {
-          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
-          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
-        }
-      }
-    },
-    {
       "slug": "20261005-physicist-jun-ye-wins-wolf-prize-in-physics-e9a43731",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -1732,40 +1732,59 @@
       }
     },
     {
-      "slug": "20261028-ai-for-science-expands-to-foundations-and-research-institutions-ad10900d",
+      "slug": "20261030-2026-usage-policy-update-7a238471",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-      "publishedAt": "2026-10-28T22:32:00.636Z",
-      "discoveredAt": "2026-10-28T22:32:00.636Z",
+      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "publishedAt": "2026-10-30T15:53:45.751Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "AI for Science expands to foundations and research institutions",
-          "summary": "AI for Science expands to foundations and research institutions"
+          "title": "2026 Usage Policy update",
+          "summary": "We’re publishi"
         },
         "fr": {
-          "title": "AI for Science expands to foundations and research institutions",
-          "summary": "AI for Science expands to foundations and research institutions"
+          "title": "2026 Usage Policy update",
+          "summary": "We’re publishi"
         }
       }
     },
     {
-      "slug": "20261029-build-a-repeatable-php-to-java-migration-engine-with-kiro-1d9d3dc9",
+      "slug": "20261028-revivedb-supabase-backups-restore-tested-against-the-source-sche-f15781fd",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/revivedb-supabase-backups-restore-tested-against-the-source-schema-3422/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
+          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
+        },
+        "fr": {
+          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
+          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-building-intent-driven-ui-testing-with-amazon-nova-act-1f3c261e",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/build-a-repeatable-php-to-java-migration-engine-with-kiro/",
-      "publishedAt": "2026-10-29T18:14:17.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act/",
+      "publishedAt": "2026-10-29T18:20:27.000Z",
       "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "Build a repeatable PHP-to-Java migration engine with Kiro",
-          "summary": "Turn a PHP-to-Java migration from a one-time leap of faith into a measurable, repeatable process with Kiro. This post walks through a reusable engine: a mechanical discovery scanner and an eight-phase, parity-first workflow that…"
+          "title": "Building intent-driven UI testing with Amazon Nova Act",
+          "summary": "Epsilon's Agentic Platform team delivers UI testing as a managed, multi-tenant service built on Amazon Nova Act and Amazon Bedrock AgentCore Browser Tool. Tests are written in plain English and run on browsers managed by AWS, giv…"
         },
         "fr": {
-          "title": "Build a repeatable PHP-to-Java migration engine with Kiro",
-          "summary": "Turn a PHP-to-Java migration from a one-time leap of faith into a measurable, repeatable process with Kiro. This post walks through a reusable engine: a mechanical discovery scanner and an eight-phase, parity-first workflow that…"
+          "title": "Building intent-driven UI testing with Amazon Nova Act",
+          "summary": "Epsilon's Agentic Platform team delivers UI testing as a managed, multi-tenant service built on Amazon Nova Act and Amazon Bedrock AgentCore Browser Tool. Tests are written in plain English and run on browsers managed by AWS, giv…"
         }
       }
     },
@@ -1979,25 +1998,6 @@
       }
     },
     {
-      "slug": "20261026-pgivm-117-released-25992fa2",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_ivm-117-released-3420/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
-      "locales": {
-        "en": {
-          "title": "pg_ivm 1.17 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
-        },
-        "fr": {
-          "title": "pg_ivm 1.17 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
-        }
-      }
-    },
-    {
       "slug": "20260928-nist-provides-updates-on-national-construction-safety-team-activ-dd6ce6ec",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -2074,40 +2074,59 @@
       }
     },
     {
-      "slug": "20261028-building-on-our-commitment-to-american-scientific-discovery-26f50496",
+      "slug": "20261028-ai-for-science-expands-to-foundations-and-research-institutions-ad10900d",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "href": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
       "publishedAt": "2026-10-28T22:32:00.636Z",
       "discoveredAt": "2026-10-28T22:32:00.636Z",
       "locales": {
         "en": {
-          "title": "Building on our commitment to American scientific discovery",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
         },
         "fr": {
-          "title": "Building on our commitment to American scientific discovery",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
         }
       }
     },
     {
-      "slug": "20261029-lend-and-borrow-resources-across-teams-with-aws-batchs-quota-man-8d9b5cf4",
+      "slug": "20261028-postgresql-anonymizer-33-major-security-update-f4b74201",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-33-major-security-update-3423/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
+          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
+        },
+        "fr": {
+          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
+          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-build-a-repeatable-php-to-java-migration-engine-with-kiro-1d9d3dc9",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
-      "publishedAt": "2026-10-29T16:58:57.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/build-a-repeatable-php-to-java-migration-engine-with-kiro/",
+      "publishedAt": "2026-10-29T18:14:17.000Z",
       "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "Lend and borrow resources across teams with AWS Batch’s quota management for SageMaker Training jobs",
-          "summary": "AWS Batch quota management is a new scheduling capability you can use to divide GPU capacity into quota shares per team or project, automatically lend idle capacity across shares, and use preemption to run your highest-priority S…"
+          "title": "Build a repeatable PHP-to-Java migration engine with Kiro",
+          "summary": "Turn a PHP-to-Java migration from a one-time leap of faith into a measurable, repeatable process with Kiro. This post walks through a reusable engine: a mechanical discovery scanner and an eight-phase, parity-first workflow that…"
         },
         "fr": {
-          "title": "Lend and borrow resources across teams with AWS Batch’s quota management for SageMaker Training jobs",
-          "summary": "AWS Batch quota management is a new scheduling capability you can use to divide GPU capacity into quota shares per team or project, automatically lend idle capacity across shares, and use preemption to run your highest-priority S…"
+          "title": "Build a repeatable PHP-to-Java migration engine with Kiro",
+          "summary": "Turn a PHP-to-Java migration from a one-time leap of faith into a measurable, repeatable process with Kiro. This post walks through a reusable engine: a mechanical discovery scanner and an eight-phase, parity-first workflow that…"
         }
       }
     },
@@ -2321,25 +2340,6 @@
       }
     },
     {
-      "slug": "20261026-hypopg-144-is-out-09c21e18",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/hypopg-144-is-out-3421/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
-      "locales": {
-        "en": {
-          "title": "HypoPG 1.4.4 is out!",
-          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
-        },
-        "fr": {
-          "title": "HypoPG 1.4.4 is out!",
-          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
-        }
-      }
-    },
-    {
       "slug": "20260918-nist-awards-more-than-17-million-to-support-cybersecurity-workfo-e597abb2",
       "topic": "Security & Standards",
       "source": "NIST News",
@@ -2378,25 +2378,6 @@
       }
     },
     {
-      "slug": "20260916-size-specialized-memory-allocation-1f279c61",
-      "topic": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/size-specialized-allocations",
-      "publishedAt": "2026-09-16T00:00:00.000Z",
-      "discoveredAt": "2026-09-16T21:16:09.580Z",
-      "locales": {
-        "en": {
-          "title": "Size-Specialized Memory Allocation",
-          "summary": "Go 1.27 improves performance of small allocations using size-specialized allocation functions."
-        },
-        "fr": {
-          "title": "Size-Specialized Memory Allocation",
-          "summary": "Go 1.27 improves performance of small allocations using size-specialized allocation functions."
-        }
-      }
-    },
-    {
       "slug": "20260921-github-actions-leaking-secrets-when-miri-output-is-cached-8695479b",
       "topic": "Systems & Backend",
       "source": "Rust Blog",
@@ -2416,40 +2397,59 @@
       }
     },
     {
-      "slug": "20261028-expanding-our-partnership-with-gsa-to-bring-claude-to-all-levels-16faca12",
+      "slug": "20261028-building-on-our-commitment-to-american-scientific-discovery-26f50496",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/expanding-partnership-gsa",
-      "publishedAt": "2026-10-28T12:48:38.285Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "publishedAt": "2026-10-28T22:32:00.636Z",
+      "discoveredAt": "2026-10-28T22:32:00.636Z",
       "locales": {
         "en": {
-          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
+          "title": "Building on our commitment to American scientific discovery",
+          "summary": "Building on our commitment to American scientific discovery"
         },
         "fr": {
-          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
+          "title": "Building on our commitment to American scientific discovery",
+          "summary": "Building on our commitment to American scientific discovery"
         }
       }
     },
     {
-      "slug": "20261029-how-moengage-turned-over-400-apis-into-agent-tools-with-agentcor-66eaaf2a",
+      "slug": "20261026-pgivm-117-released-25992fa2",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_ivm-117-released-3420/",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "locales": {
+        "en": {
+          "title": "pg_ivm 1.17 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
+        },
+        "fr": {
+          "title": "pg_ivm 1.17 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-lend-and-borrow-resources-across-teams-with-aws-batchs-quota-man-8d9b5cf4",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway/",
-      "publishedAt": "2026-10-29T16:54:52.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+      "publishedAt": "2026-10-29T16:58:57.000Z",
       "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "How MoEngage turned over 400 APIs into agent tools with AgentCore Gateway",
-          "summary": "MoEngage turned roughly 400 private REST APIs across 7 AWS Regions into permission-scoped agent tools with Amazon Bedrock AgentCore Gateway. No per-service MCP servers, no public endpoints, and no 400-tool context bloat. See how…"
+          "title": "Lend and borrow resources across teams with AWS Batch’s quota management for SageMaker Training jobs",
+          "summary": "AWS Batch quota management is a new scheduling capability you can use to divide GPU capacity into quota shares per team or project, automatically lend idle capacity across shares, and use preemption to run your highest-priority S…"
         },
         "fr": {
-          "title": "How MoEngage turned over 400 APIs into agent tools with AgentCore Gateway",
-          "summary": "MoEngage turned roughly 400 private REST APIs across 7 AWS Regions into permission-scoped agent tools with Amazon Bedrock AgentCore Gateway. No per-service MCP servers, no public endpoints, and no 400-tool context bloat. See how…"
+          "title": "Lend and borrow resources across teams with AWS Batch’s quota management for SageMaker Training jobs",
+          "summary": "AWS Batch quota management is a new scheduling capability you can use to divide GPU capacity into quota shares per team or project, automatically lend idle capacity across shares, and use preemption to run your highest-priority S…"
         }
       }
     },
@@ -2663,25 +2663,6 @@
       }
     },
     {
-      "slug": "20261026-pghdrhistogram-100---exact-percentiles-in-postgresql-52a6bea1",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_hdr_histogram-100-exact-percentiles-in-postgresql-3418/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
-      "locales": {
-        "en": {
-          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
-          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
-        },
-        "fr": {
-          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
-          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
-        }
-      }
-    },
-    {
       "slug": "20260918-new-experts-join-googles-ai-economy-team-079e661c",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -2720,40 +2701,59 @@
       }
     },
     {
-      "slug": "20261027-expanding-the-cyber-verification-program-a22a6ca9",
+      "slug": "20261028-expanding-our-partnership-with-gsa-to-bring-claude-to-all-levels-16faca12",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/cyber-verification-program",
-      "publishedAt": "2026-10-27T22:10:41.288Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "href": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "publishedAt": "2026-10-28T12:48:38.285Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
       "locales": {
         "en": {
-          "title": "Expanding the Cyber Verification Program",
-          "summary": "Expanding the Cyber Verification Program"
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
         },
         "fr": {
-          "title": "Expanding the Cyber Verification Program",
-          "summary": "Expanding the Cyber Verification Program"
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
         }
       }
     },
     {
-      "slug": "20261029-accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks--23037afd",
+      "slug": "20261026-hypopg-144-is-out-09c21e18",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/hypopg-144-is-out-3421/",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "locales": {
+        "en": {
+          "title": "HypoPG 1.4.4 is out!",
+          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
+        },
+        "fr": {
+          "title": "HypoPG 1.4.4 is out!",
+          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-how-moengage-turned-over-400-apis-into-agent-tools-with-agentcor-66eaaf2a",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/",
-      "publishedAt": "2026-10-29T16:11:08.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway/",
+      "publishedAt": "2026-10-29T16:54:52.000Z",
       "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "Accelerate agentic AI with NVIDIA Nemotron models on Amazon EKS and SageMaker HyperPod EKS",
-          "summary": "NVIDIA Nemotron 3.5 Super VL is a 120B-parameter mixture-of-experts model that pairs reasoning and tool use with multimodal understanding. This post explores its architecture and use cases, then shows how to deploy it on Amazon E…"
+          "title": "How MoEngage turned over 400 APIs into agent tools with AgentCore Gateway",
+          "summary": "MoEngage turned roughly 400 private REST APIs across 7 AWS Regions into permission-scoped agent tools with Amazon Bedrock AgentCore Gateway. No per-service MCP servers, no public endpoints, and no 400-tool context bloat. See how…"
         },
         "fr": {
-          "title": "Accelerate agentic AI with NVIDIA Nemotron models on Amazon EKS and SageMaker HyperPod EKS",
-          "summary": "NVIDIA Nemotron 3.5 Super VL is a 120B-parameter mixture-of-experts model that pairs reasoning and tool use with multimodal understanding. This post explores its architecture and use cases, then shows how to deploy it on Amazon E…"
+          "title": "How MoEngage turned over 400 APIs into agent tools with AgentCore Gateway",
+          "summary": "MoEngage turned roughly 400 private REST APIs across 7 AWS Regions into permission-scoped agent tools with Amazon Bedrock AgentCore Gateway. No per-service MCP servers, no public endpoints, and no 400-tool context bloat. See how…"
         }
       }
     },
@@ -2948,25 +2948,6 @@
       }
     },
     {
-      "slug": "20261022-pgrecon-open-source-oracle-to-postgresql-migration-assessment-an-91970955",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgrecon-open-source-oracle-to-postgresql-migration-assessment-and-schema-conversion-3410/",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
-          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
-        },
-        "fr": {
-          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
-          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
-        }
-      }
-    },
-    {
       "slug": "20260918-co-creating-the-future-of-fashion-with-google-13d62ca6",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -2986,40 +2967,59 @@
       }
     },
     {
-      "slug": "20261027-partnerships-31508cd6",
-      "topic": "Computer Science",
+      "slug": "20261027-expanding-the-cyber-verification-program-a22a6ca9",
+      "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/partnerships",
-      "publishedAt": "2026-10-27T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "href": "https://www.anthropic.com/news/cyber-verification-program",
+      "publishedAt": "2026-10-27T22:10:41.288Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
       "locales": {
         "en": {
-          "title": "Partnerships",
-          "summary": "nt partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API. Oct 27, 2026"
+          "title": "Expanding the Cyber Verification Program",
+          "summary": "Expanding the Cyber Verification Program"
         },
         "fr": {
-          "title": "Partnerships",
-          "summary": "nt partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API. Oct 27, 2026"
+          "title": "Expanding the Cyber Verification Program",
+          "summary": "Expanding the Cyber Verification Program"
         }
       }
     },
     {
-      "slug": "20261028-building-an-agentic-ai-platform-on-amazon-bedrock-agentcore-81ea71b4",
+      "slug": "20261026-pghdrhistogram-100---exact-percentiles-in-postgresql-52a6bea1",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_hdr_histogram-100-exact-percentiles-in-postgresql-3418/",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "locales": {
+        "en": {
+          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
+          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
+        },
+        "fr": {
+          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
+          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks--23037afd",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-10-28T18:28:26.000Z",
-      "discoveredAt": "2026-10-28T22:32:00.636Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/",
+      "publishedAt": "2026-10-29T16:11:08.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "Building an Agentic AI Platform on Amazon Bedrock AgentCore",
-          "summary": "Stand up a governed, multi-account Agentic AI Platform on Amazon Bedrock AgentCore. This post walks through the architecture and an open-source reference blueprint: the operating model, control plane, per-Workstream cells, separa…"
+          "title": "Accelerate agentic AI with NVIDIA Nemotron models on Amazon EKS and SageMaker HyperPod EKS",
+          "summary": "NVIDIA Nemotron 3.5 Super VL is a 120B-parameter mixture-of-experts model that pairs reasoning and tool use with multimodal understanding. This post explores its architecture and use cases, then shows how to deploy it on Amazon E…"
         },
         "fr": {
-          "title": "Building an Agentic AI Platform on Amazon Bedrock AgentCore",
-          "summary": "Stand up a governed, multi-account Agentic AI Platform on Amazon Bedrock AgentCore. This post walks through the architecture and an open-source reference blueprint: the operating model, control plane, per-Workstream cells, separa…"
+          "title": "Accelerate agentic AI with NVIDIA Nemotron models on Amazon EKS and SageMaker HyperPod EKS",
+          "summary": "NVIDIA Nemotron 3.5 Super VL is a 120B-parameter mixture-of-experts model that pairs reasoning and tool use with multimodal understanding. This post explores its architecture and use cases, then shows how to deploy it on Amazon E…"
         }
       }
     },
@@ -3214,25 +3214,6 @@
       }
     },
     {
-      "slug": "20261022-safegrd-postgresql-backups-that-are-restored-and-checked-on-a-sc-1a9cacd2",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/safegrd-postgresql-backups-that-are-restored-and-checked-on-a-schedule-3414/",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
-          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
-        },
-        "fr": {
-          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
-          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
-        }
-      }
-    },
-    {
       "slug": "20260917-making-global-data-easier-to-explore-e7b9d12d",
       "topic": "AI Systems",
       "source": "Google AI Blog",
@@ -3252,40 +3233,59 @@
       }
     },
     {
-      "slug": "20261026-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-off-edf59637",
-      "topic": "AI Systems",
+      "slug": "20261027-partnerships-31508cd6",
+      "topic": "Computer Science",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/s1-sec",
-      "publishedAt": "2026-10-26T14:31:09.949Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "href": "https://www.anthropic.com/news/partnerships",
+      "publishedAt": "2026-10-27T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
       "locales": {
         "en": {
-          "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-          "summary": "Anthropic files S-1 with the SEC for proposed initial public offering"
+          "title": "Partnerships",
+          "summary": "nt partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API. Oct 27, 2026"
         },
         "fr": {
-          "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-          "summary": "Anthropic files S-1 with the SEC for proposed initial public offering"
+          "title": "Partnerships",
+          "summary": "nt partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API. Oct 27, 2026"
         }
       }
     },
     {
-      "slug": "20261028-distributed-training-with-ray-train-dlcs-and-efa-on-eks-3364604a",
+      "slug": "20261022-pgrecon-open-source-oracle-to-postgresql-migration-assessment-an-91970955",
       "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgrecon-open-source-oracle-to-postgresql-migration-assessment-and-schema-conversion-3410/",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
+          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
+        },
+        "fr": {
+          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
+          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
+        }
+      }
+    },
+    {
+      "slug": "20261028-building-an-agentic-ai-platform-on-amazon-bedrock-agentcore-81ea71b4",
+      "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/distributed-training-with-ray-train-dlcs-and-efa-on-eks/",
-      "publishedAt": "2026-10-28T18:19:54.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-10-28T18:28:26.000Z",
       "discoveredAt": "2026-10-28T22:32:00.636Z",
       "locales": {
         "en": {
-          "title": "Distributed training with Ray Train DLCs and EFA on EKS",
-          "summary": "The Ray Train Deep Learning Container ships the full CUDA-through-EFA stack, so you build no image. This post walks through a reproducible sample that fine-tunes Qwen2.5-1.5B with PyTorch FSDP across eight GPUs on two EFA-enabled…"
+          "title": "Building an Agentic AI Platform on Amazon Bedrock AgentCore",
+          "summary": "Stand up a governed, multi-account Agentic AI Platform on Amazon Bedrock AgentCore. This post walks through the architecture and an open-source reference blueprint: the operating model, control plane, per-Workstream cells, separa…"
         },
         "fr": {
-          "title": "Distributed training with Ray Train DLCs and EFA on EKS",
-          "summary": "The Ray Train Deep Learning Container ships the full CUDA-through-EFA stack, so you build no image. This post walks through a reproducible sample that fine-tunes Qwen2.5-1.5B with PyTorch FSDP across eight GPUs on two EFA-enabled…"
+          "title": "Building an Agentic AI Platform on Amazon Bedrock AgentCore",
+          "summary": "Stand up a governed, multi-account Agentic AI Platform on Amazon Bedrock AgentCore. This post walks through the architecture and an open-source reference blueprint: the operating model, control plane, per-Workstream cells, separa…"
         }
       }
     },
@@ -3480,59 +3480,59 @@
       }
     },
     {
-      "slug": "20261022-backupdrill-open-source-supabase-postgres-backups-with-automated-21a54640",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/backupdrill-open-source-supabase-postgres-backups-with-automated-restore-drills-3413/",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
-          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
-        },
-        "fr": {
-          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
-          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
-        }
-      }
-    },
-    {
       "slug": "20261026-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-off-edf59637",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
       "href": "https://www.anthropic.com/news/s1-sec",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "publishedAt": "2026-10-26T14:31:09.949Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
       "locales": {
         "en": {
-          "title": "Anthropic files S-1 with the SEC for proposed initial public offering Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
-          "summary": "Announcements Oct 26, 2026"
+          "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+          "summary": "Anthropic files S-1 with the SEC for proposed initial public offering"
         },
         "fr": {
-          "title": "Anthropic files S-1 with the SEC for proposed initial public offering Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
-          "summary": "Announcements Oct 26, 2026"
+          "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+          "summary": "Anthropic files S-1 with the SEC for proposed initial public offering"
         }
       }
     },
     {
-      "slug": "20261028-accelerating-software-delivery-with-agentic-qa-automation-using--12048ccb",
-      "topic": "AI Systems",
+      "slug": "20261022-safegrd-postgresql-backups-that-are-restored-and-checked-on-a-sc-1a9cacd2",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/safegrd-postgresql-backups-that-are-restored-and-checked-on-a-schedule-3414/",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
+          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
+        },
+        "fr": {
+          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
+          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
+        }
+      }
+    },
+    {
+      "slug": "20261028-distributed-training-with-ray-train-dlcs-and-efa-on-eks-3364604a",
+      "topic": "Computer Science",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/accelerating-software-delivery-with-agentic-qa-automation-using-amazon-nova-act-part-3/",
-      "publishedAt": "2026-10-28T18:12:13.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/distributed-training-with-ray-train-dlcs-and-efa-on-eks/",
+      "publishedAt": "2026-10-28T18:19:54.000Z",
       "discoveredAt": "2026-10-28T22:32:00.636Z",
       "locales": {
         "en": {
-          "title": "Accelerating software delivery with agentic QA automation using Amazon Nova Act – Part 3",
-          "summary": "As QA test automation spreads across an organization, organizing tests and controlling who owns them becomes the real work. Part 3 of the QA Studio series on Amazon Nova Act adds applications that organize tests and report health…"
+          "title": "Distributed training with Ray Train DLCs and EFA on EKS",
+          "summary": "The Ray Train Deep Learning Container ships the full CUDA-through-EFA stack, so you build no image. This post walks through a reproducible sample that fine-tunes Qwen2.5-1.5B with PyTorch FSDP across eight GPUs on two EFA-enabled…"
         },
         "fr": {
-          "title": "Accelerating software delivery with agentic QA automation using Amazon Nova Act – Part 3",
-          "summary": "As QA test automation spreads across an organization, organizing tests and controlling who owns them becomes the real work. Part 3 of the QA Studio series on Amazon Nova Act adds applications that organize tests and report health…"
+          "title": "Distributed training with Ray Train DLCs and EFA on EKS",
+          "summary": "The Ray Train Deep Learning Container ships the full CUDA-through-EFA stack, so you build no image. This post walks through a reproducible sample that fine-tunes Qwen2.5-1.5B with PyTorch FSDP across eight GPUs on two EFA-enabled…"
         }
       }
     },
@@ -3727,59 +3727,59 @@
       }
     },
     {
-      "slug": "20261022-pgcluu-v50-has-been-released-b35b9ae0",
-      "topic": "Systems & Backend",
+      "slug": "20261026-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-off-edf59637",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/s1-sec",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "locales": {
+        "en": {
+          "title": "Anthropic files S-1 with the SEC for proposed initial public offering Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
+          "summary": "Announcements Oct 26, 2026"
+        },
+        "fr": {
+          "title": "Anthropic files S-1 with the SEC for proposed initial public offering Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
+          "summary": "Announcements Oct 26, 2026"
+        }
+      }
+    },
+    {
+      "slug": "20261022-backupdrill-open-source-supabase-postgres-backups-with-automated-21a54640",
+      "topic": "Computer Science",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgcluu-v50-has-been-released-3417/",
+      "href": "https://www.postgresql.org/about/news/backupdrill-open-source-supabase-postgres-backups-with-automated-restore-drills-3413/",
       "publishedAt": "2026-10-22T00:00:00.000Z",
       "discoveredAt": "2026-10-22T11:47:21.677Z",
       "locales": {
         "en": {
-          "title": "pgCluu v5.0 has been released",
-          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
+          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
+          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
         },
         "fr": {
-          "title": "pgCluu v5.0 has been released",
-          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
+          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
+          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
         }
       }
     },
     {
-      "slug": "20261023-open-call-for-guest-investigators-in-the-life-sciences-98d45c75",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "publishedAt": "2026-10-23T11:34:27.809Z",
-      "discoveredAt": "2026-10-23T11:34:27.809Z",
-      "locales": {
-        "en": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
-        },
-        "fr": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
-        }
-      }
-    },
-    {
-      "slug": "20261027-aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-contac-a5b99916",
+      "slug": "20261028-accelerating-software-delivery-with-agentic-qa-automation-using--12048ccb",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-contact-center-as-a-service/",
-      "publishedAt": "2026-10-27T18:03:12.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/accelerating-software-delivery-with-agentic-qa-automation-using-amazon-nova-act-part-3/",
+      "publishedAt": "2026-10-28T18:12:13.000Z",
+      "discoveredAt": "2026-10-28T22:32:00.636Z",
       "locales": {
         "en": {
-          "title": "AWS named a Leader in the 2026 Gartner Magic Quadrant for Contact Center as a Service",
-          "summary": "AWS has been named a Leader in the 2026 Gartner Magic Quadrant for Contact Center as a Service (CCaaS) for AWS Connect Customer. This recognition marks an important milestone for our team, and it reflects years of work pushing on…"
+          "title": "Accelerating software delivery with agentic QA automation using Amazon Nova Act – Part 3",
+          "summary": "As QA test automation spreads across an organization, organizing tests and controlling who owns them becomes the real work. Part 3 of the QA Studio series on Amazon Nova Act adds applications that organize tests and report health…"
         },
         "fr": {
-          "title": "AWS named a Leader in the 2026 Gartner Magic Quadrant for Contact Center as a Service",
-          "summary": "AWS has been named a Leader in the 2026 Gartner Magic Quadrant for Contact Center as a Service (CCaaS) for AWS Connect Customer. This recognition marks an important milestone for our team, and it reflects years of work pushing on…"
+          "title": "Accelerating software delivery with agentic QA automation using Amazon Nova Act – Part 3",
+          "summary": "As QA test automation spreads across an organization, organizing tests and controlling who owns them becomes the real work. Part 3 of the QA Studio series on Amazon Nova Act adds applications that organize tests and report health…"
         }
       }
     },
@@ -3974,59 +3974,59 @@
       }
     },
     {
-      "slug": "20261020-fossasia-pgday-2027-bangkok-9-march-cfp-open-dcd97aff",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/fossasia-pgday-2027-bangkok-9-march-cfp-open-3398/",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "FOSSASIA PGDay 2027: Bangkok, 9 March – CFP Open",
-          "summary": "We are happy to announce that FOSSASIA PGDay returns to Thailand on 9 March, 2027 , bringing the PostgreSQL community together at True Digital Park, Bangkok . Visit the PGDay website for more details. About Event FOSSASIA PGDay i…"
-        },
-        "fr": {
-          "title": "FOSSASIA PGDay 2027: Bangkok, 9 March – CFP Open",
-          "summary": "We are happy to announce that FOSSASIA PGDay returns to Thailand on 9 March, 2027 , bringing the PostgreSQL community together at True Digital Park, Bangkok . Visit the PGDay website for more details. About Event FOSSASIA PGDay i…"
-        }
-      }
-    },
-    {
-      "slug": "20261022-donating-agent-skills-to-the-agentic-ai-foundation-86405d6d",
+      "slug": "20261023-open-call-for-guest-investigators-in-the-life-sciences-98d45c75",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-      "publishedAt": "2026-10-22T21:32:55.849Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "publishedAt": "2026-10-23T11:34:27.809Z",
+      "discoveredAt": "2026-10-23T11:34:27.809Z",
       "locales": {
         "en": {
-          "title": "Donating Agent Skills to the Agentic AI Foundation",
-          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
         },
         "fr": {
-          "title": "Donating Agent Skills to the Agentic AI Foundation",
-          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
         }
       }
     },
     {
-      "slug": "20261027-announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs-89597713",
+      "slug": "20261022-pgcluu-v50-has-been-released-b35b9ae0",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgcluu-v50-has-been-released-3417/",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "pgCluu v5.0 has been released",
+          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
+        },
+        "fr": {
+          "title": "pgCluu v5.0 has been released",
+          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
+        }
+      }
+    },
+    {
+      "slug": "20261027-aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-contac-a5b99916",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs/",
-      "publishedAt": "2026-10-27T17:00:39.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-contact-center-as-a-service/",
+      "publishedAt": "2026-10-27T18:03:12.000Z",
       "discoveredAt": "2026-10-27T22:10:41.288Z",
       "locales": {
         "en": {
-          "title": "Announcing SOCI-indexed images for faster SageMaker AI jobs",
-          "summary": "Seekable OCI (SOCI) indexing for Amazon SageMaker AI training and processing jobs takes full container image download off the critical path. SageMaker AI lazy-loads your image to start containers in seconds instead of minutes, wi…"
+          "title": "AWS named a Leader in the 2026 Gartner Magic Quadrant for Contact Center as a Service",
+          "summary": "AWS has been named a Leader in the 2026 Gartner Magic Quadrant for Contact Center as a Service (CCaaS) for AWS Connect Customer. This recognition marks an important milestone for our team, and it reflects years of work pushing on…"
         },
         "fr": {
-          "title": "Announcing SOCI-indexed images for faster SageMaker AI jobs",
-          "summary": "Seekable OCI (SOCI) indexing for Amazon SageMaker AI training and processing jobs takes full container image download off the critical path. SageMaker AI lazy-loads your image to start containers in seconds instead of minutes, wi…"
+          "title": "AWS named a Leader in the 2026 Gartner Magic Quadrant for Contact Center as a Service",
+          "summary": "AWS has been named a Leader in the 2026 Gartner Magic Quadrant for Contact Center as a Service (CCaaS) for AWS Connect Customer. This recognition marks an important milestone for our team, and it reflects years of work pushing on…"
         }
       }
     },
@@ -4221,59 +4221,59 @@
       }
     },
     {
-      "slug": "20261020-sles-156-repositories-are-being-retired-e93c8961",
+      "slug": "20261022-donating-agent-skills-to-the-agentic-ai-foundation-86405d6d",
+      "topic": "AI Systems",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "publishedAt": "2026-10-22T21:32:55.849Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+        },
+        "fr": {
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+        }
+      }
+    },
+    {
+      "slug": "20261020-fossasia-pgday-2027-bangkok-9-march-cfp-open-dcd97aff",
       "topic": "Systems & Backend",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/sles-156-repositories-are-being-retired-3415/",
+      "href": "https://www.postgresql.org/about/news/fossasia-pgday-2027-bangkok-9-march-cfp-open-3398/",
       "publishedAt": "2026-10-20T00:00:00.000Z",
       "discoveredAt": "2026-10-21T11:44:36.882Z",
       "locales": {
         "en": {
-          "title": "SLES 15.6 repositories are being retired",
-          "summary": "The SLES 15.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL ZYPP archive .General support for SUSE Linux Enterprise Server (SLES) 15 SP6 (15.6) ended on December 31, 2025…"
+          "title": "FOSSASIA PGDay 2027: Bangkok, 9 March – CFP Open",
+          "summary": "We are happy to announce that FOSSASIA PGDay returns to Thailand on 9 March, 2027 , bringing the PostgreSQL community together at True Digital Park, Bangkok . Visit the PGDay website for more details. About Event FOSSASIA PGDay i…"
         },
         "fr": {
-          "title": "SLES 15.6 repositories are being retired",
-          "summary": "The SLES 15.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL ZYPP archive .General support for SUSE Linux Enterprise Server (SLES) 15 SP6 (15.6) ended on December 31, 2025…"
+          "title": "FOSSASIA PGDay 2027: Bangkok, 9 March – CFP Open",
+          "summary": "We are happy to announce that FOSSASIA PGDay returns to Thailand on 9 March, 2027 , bringing the PostgreSQL community together at True Digital Park, Bangkok . Visit the PGDay website for more details. About Event FOSSASIA PGDay i…"
         }
       }
     },
     {
-      "slug": "20261021-physicist-christopher-stubbs-joins-anthropics-long-term-benefit--b12d9d8f",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "publishedAt": "2026-10-21T21:40:08.512Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
-        },
-        "fr": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
-        }
-      }
-    },
-    {
-      "slug": "20261027-fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock-beaa9b25",
+      "slug": "20261027-announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs-89597713",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock/",
-      "publishedAt": "2026-10-27T16:53:02.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs/",
+      "publishedAt": "2026-10-27T17:00:39.000Z",
       "discoveredAt": "2026-10-27T22:10:41.288Z",
       "locales": {
         "en": {
-          "title": "Fix evaluation bias to unlock better models on Amazon Bedrock",
-          "summary": "Property Finder found that 96.8% of their vision-AI evaluation labels were inherited from the incumbent model, hiding its true accuracy. See how they built unbiased ground truth, applied evolutionary prompt optimization, and sele…"
+          "title": "Announcing SOCI-indexed images for faster SageMaker AI jobs",
+          "summary": "Seekable OCI (SOCI) indexing for Amazon SageMaker AI training and processing jobs takes full container image download off the critical path. SageMaker AI lazy-loads your image to start containers in seconds instead of minutes, wi…"
         },
         "fr": {
-          "title": "Fix evaluation bias to unlock better models on Amazon Bedrock",
-          "summary": "Property Finder found that 96.8% of their vision-AI evaluation labels were inherited from the incumbent model, hiding its true accuracy. See how they built unbiased ground truth, applied evolutionary prompt optimization, and sele…"
+          "title": "Announcing SOCI-indexed images for faster SageMaker AI jobs",
+          "summary": "Seekable OCI (SOCI) indexing for Amazon SageMaker AI training and processing jobs takes full container image download off the critical path. SageMaker AI lazy-loads your image to start containers in seconds instead of minutes, wi…"
         }
       }
     },
@@ -4411,59 +4411,59 @@
       }
     },
     {
-      "slug": "20261020-rhel-100-and-96-repositories-are-being-retired-5859393c",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/rhel-100-and-96-repositories-are-being-retired-3411/",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
-      "locales": {
-        "en": {
-          "title": "RHEL 10.0 and 9.6 repositories are being retired",
-          "summary": "The RHEL 10.0 and RHEL 9.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL YUM archive . All PostgreSQL major versions that were built for these minor releases are available…"
-        },
-        "fr": {
-          "title": "RHEL 10.0 and 9.6 repositories are being retired",
-          "summary": "The RHEL 10.0 and RHEL 9.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL YUM archive . All PostgreSQL major versions that were built for these minor releases are available…"
-        }
-      }
-    },
-    {
-      "slug": "20261021-investing-in-the-public-benefit-were-committing-a-portion-of-ant-4c6c987b",
+      "slug": "20261021-physicist-christopher-stubbs-joins-anthropics-long-term-benefit--b12d9d8f",
       "topic": "AI Systems",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/public-benefit-fund",
-      "publishedAt": "2026-10-21T11:44:36.882Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "publishedAt": "2026-10-21T21:40:08.512Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
       "locales": {
         "en": {
-          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-          "summary": "5 3840w\" src=\"/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
+          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
         },
         "fr": {
-          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-          "summary": "5 3840w\" src=\"/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
+          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
         }
       }
     },
     {
-      "slug": "20261027-exowatt-beats-frontier-models-on-accuracy-with-sagemaker-serverl-0d159fe4",
+      "slug": "20261020-sles-156-repositories-are-being-retired-e93c8961",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/sles-156-repositories-are-being-retired-3415/",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "locales": {
+        "en": {
+          "title": "SLES 15.6 repositories are being retired",
+          "summary": "The SLES 15.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL ZYPP archive .General support for SUSE Linux Enterprise Server (SLES) 15 SP6 (15.6) ended on December 31, 2025…"
+        },
+        "fr": {
+          "title": "SLES 15.6 repositories are being retired",
+          "summary": "The SLES 15.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL ZYPP archive .General support for SUSE Linux Enterprise Server (SLES) 15 SP6 (15.6) ended on December 31, 2025…"
+        }
+      }
+    },
+    {
+      "slug": "20261027-fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock-beaa9b25",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
       "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/exowatt-beats-frontier-models-on-accuracy-with-sagemaker-serverless-model-customization/",
-      "publishedAt": "2026-10-27T16:50:55.000Z",
+      "href": "https://aws.amazon.com/blogs/machine-learning/fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock/",
+      "publishedAt": "2026-10-27T16:53:02.000Z",
       "discoveredAt": "2026-10-27T22:10:41.288Z",
       "locales": {
         "en": {
-          "title": "Exowatt beats frontier models on accuracy with SageMaker serverless model customization",
-          "summary": "In this post, we show how Exowatt used Amazon SageMaker AI serverless model customization to build a repeatable AI pipeline that produces task-specific fine-tuned models for two deployment targets, edge and cloud, achieving highe…"
+          "title": "Fix evaluation bias to unlock better models on Amazon Bedrock",
+          "summary": "Property Finder found that 96.8% of their vision-AI evaluation labels were inherited from the incumbent model, hiding its true accuracy. See how they built unbiased ground truth, applied evolutionary prompt optimization, and sele…"
         },
         "fr": {
-          "title": "Exowatt beats frontier models on accuracy with SageMaker serverless model customization",
-          "summary": "In this post, we show how Exowatt used Amazon SageMaker AI serverless model customization to build a repeatable AI pipeline that produces task-specific fine-tuned models for two deployment targets, edge and cloud, achieving highe…"
+          "title": "Fix evaluation bias to unlock better models on Amazon Bedrock",
+          "summary": "Property Finder found that 96.8% of their vision-AI evaluation labels were inherited from the incumbent model, hiding its true accuracy. See how they built unbiased ground truth, applied evolutionary prompt optimization, and sele…"
         }
       }
     },
