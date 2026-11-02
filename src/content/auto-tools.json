@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01T21:59:50.309Z",
+  "updatedAt": "2026-11-02T15:44:45.066Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -23,42 +23,122 @@
       }
     },
     {
-      "slug": "20261101-anthropic-platform-ai-for-science-expands-to-foundations-and-res-ad10900d",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
+      "slug": "20261102-claude-expanding-our-partnership-with-gsa-to-bring-claude-to-all-16faca12",
+      "toolName": "Claude",
+      "category": "AI Assistant",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-      "publishedAt": "2026-11-01T21:59:50.309Z",
-      "discoveredAt": "2026-11-01T21:59:50.309Z",
+      "href": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "publishedAt": "2026-11-02T15:44:45.066Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
       "locales": {
         "en": {
-          "title": "AI for Science expands to foundations and research institutions",
-          "summary": "AI for Science expands to foundations and research institutions"
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
         },
         "fr": {
-          "title": "AI for Science expands to foundations and research institutions",
-          "summary": "AI for Science expands to foundations and research institutions"
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
         }
       }
     },
     {
-      "slug": "20261101-vercel-data-cache-is-moving-to-runtime-cache-data-cache-is-exiti-54728602",
+      "slug": "20261102-vercel-evaluate-vercel-flags-from-another-project-without-sharin-c9352982",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/data-cache-is-moving-to-runtime-cache",
-      "publishedAt": "2026-11-01T21:59:50.309Z",
-      "discoveredAt": "2026-11-01T21:59:50.309Z",
+      "href": "https://vercel.com/changelog/evaluate-vercel-flags-from-another-project-without-sharing-sdk-keys",
+      "publishedAt": "2026-11-02T15:44:45.066Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
       "locales": {
         "en": {
-          "title": "Data Cache is moving to Runtime Cache Data Cache is exiting beta and merging into Runtime Cache, which brings faster performance under load, 8–10x more cache storage per project, and deeper observability. Kelly Davis, Luba Kravchenko, and 1 other",
-          "summary": "30 October 30 Oct"
+          "title": "Evaluate Vercel Flags from another project without sharing SDK keys. Project Connections let applications evaluate flags defined in another Vercel project. Vincent Derks, Rauno Freiberg",
+          "summary": "2 November 2 Nov"
         },
         "fr": {
-          "title": "Data Cache is moving to Runtime Cache Data Cache is exiting beta and merging into Runtime Cache, which brings faster performance under load, 8–10x more cache storage per project, and deeper observability. Kelly Davis, Luba Kravchenko, and 1 other",
-          "summary": "30 October 30 Oct"
+          "title": "Evaluate Vercel Flags from another project without sharing SDK keys. Project Connections let applications evaluate flags defined in another Vercel project. Vincent Derks, Rauno Freiberg",
+          "summary": "2 November 2 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261102-openai-platform-introducing-the-grid-protectors-program-19244c7a",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/grid-protectors-program",
+      "publishedAt": "2026-11-02T15:00:00.000Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
+      "locales": {
+        "en": {
+          "title": "Introducing the Grid Protectors Program",
+          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
+        },
+        "fr": {
+          "title": "Introducing the Grid Protectors Program",
+          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
+        }
+      }
+    },
+    {
+      "slug": "20261102-cloudflare-how-we-halved-dns-build-delay-and-cut-memory-use-by-8-eb6ff730",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+      "publishedAt": "2026-11-02T14:00:00.000Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
+      "locales": {
+        "en": {
+          "title": "How we halved DNS build delay and cut memory use by 85%",
+          "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and h…"
+        },
+        "fr": {
+          "title": "How we halved DNS build delay and cut memory use by 85%",
+          "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and h…"
+        }
+      }
+    },
+    {
+      "slug": "20261102-docker-the-ecosystem-is-the-answer-docker-the-blueprint-alliance-7437f847",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-blueprint-alliance-agent-baseline/",
+      "publishedAt": "2026-11-02T14:00:00.000Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
+      "locales": {
+        "en": {
+          "title": "The Ecosystem is the Answer: Docker, the Blueprint Alliance, and the Importance of Collaboration in the Agentic Era",
+          "summary": "Docker is a founding member of the Blueprint Alliance, a 12-company reference architecture for securing AI agents, built around four governance questions."
+        },
+        "fr": {
+          "title": "The Ecosystem is the Answer: Docker, the Blueprint Alliance, and the Importance of Collaboration in the Agentic Era",
+          "summary": "Docker is a founding member of the Blueprint Alliance, a 12-company reference architecture for securing AI agents, built around four governance questions."
+        }
+      }
+    },
+    {
+      "slug": "20261102-nist-self-employed-solopreneur-nist-has-a-cybersecurity-guide-ju-50f64d3e",
+      "toolName": "NIST",
+      "category": "Security & Standards",
+      "source": "NIST News",
+      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
+      "href": "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you",
+      "publishedAt": "2026-11-02T12:00:00.000Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
+      "locales": {
+        "en": {
+          "title": "Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You",
+          "summary": "The guide is designed to help solopreneurs prioritize and implement a selection of actions from the NIST Cybersecurity Framework that would best help their businesses."
+        },
+        "fr": {
+          "title": "Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You",
+          "summary": "The guide is designed to help solopreneurs prioritize and implement a selection of actions from the NIST Cybersecurity Framework that would best help their businesses."
         }
       }
     },
@@ -123,46 +203,6 @@
       }
     },
     {
-      "slug": "20261030-cloudflare-4-real-tracking-exploitation-and-patching-of-emudhras-132cf973",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/emudhra-patching/",
-      "publishedAt": "2026-10-30T17:38:50.000Z",
-      "discoveredAt": "2026-10-30T22:15:48.157Z",
-      "locales": {
-        "en": {
-          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
-          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, an…"
-        },
-        "fr": {
-          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
-          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, an…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-openai-platform-making-it-easier-for-websites-to-express-ai-trai-25cc4c9b",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-      "publishedAt": "2026-10-30T09:30:00.000Z",
-      "discoveredAt": "2026-10-30T22:15:48.157Z",
-      "locales": {
-        "en": {
-          "title": "Making it easier for websites to express AI training preferences",
-          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
-        },
-        "fr": {
-          "title": "Making it easier for websites to express AI training preferences",
-          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
-        }
-      }
-    },
-    {
       "slug": "20261029-nodejs-nodejs-2700-alpha000-alpha-d07aa7b5",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -199,26 +239,6 @@
         "fr": {
           "title": "Webhook IP ranges added to the Meta API",
           "summary": "We’re adding IP ranges for GitHub webhook deliveries on github.com. The Meta API now includes these additional ranges in the hooks field. If you maintain a static network allowlist for… The post Webhook IP ranges added…"
-        }
-      }
-    },
-    {
-      "slug": "20261029-docker-coding-agent-horror-stories-the-cve-that-did-not-exist-6b5b11da",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/coding-agent-horror-stories-the-cve-that-did-not-exist/",
-      "publishedAt": "2026-10-29T13:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
-      "locales": {
-        "en": {
-          "title": "Coding Agent Horror Stories: The CVE That Did Not Exist",
-          "summary": "An AI code review agent invented a CVE and recommended dangerous fixes. Learn how Docker Sandboxes contain agents and why their output needs verification."
-        },
-        "fr": {
-          "title": "Coding Agent Horror Stories: The CVE That Did Not Exist",
-          "summary": "An AI code review agent invented a CVE and recommended dangerous fixes. Learn how Docker Sandboxes contain agents and why their output needs verification."
         }
       }
     },
@@ -279,26 +299,6 @@
         "fr": {
           "title": "Skip to content",
           "summary": "Skip to content"
-        }
-      }
-    },
-    {
-      "slug": "20261027-nist-nist-report-provides-guidelines-for-transition-to-post-quan-fc4af51d",
-      "toolName": "NIST",
-      "category": "Security & Standards",
-      "source": "NIST News",
-      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/10/nist-report-provides-guidelines-transition-post-quantum-cryptography",
-      "publishedAt": "2026-10-27T12:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:42.150Z",
-      "locales": {
-        "en": {
-          "title": "NIST Report Provides Guidelines for Transition to Post-Quantum Cryptography Standards",
-          "summary": "This report describes the timelines and migration activities for federal agencies, and it can serve as a key resource for technology providers and organizations that are developing their quantum-readiness road maps."
-        },
-        "fr": {
-          "title": "NIST Report Provides Guidelines for Transition to Post-Quantum Cryptography Standards",
-          "summary": "This report describes the timelines and migration activities for federal agencies, and it can serve as a key resource for technology providers and organizations that are developing their quantum-readiness road maps."
         }
       }
     },
@@ -403,42 +403,122 @@
       }
     },
     {
-      "slug": "20261101-anthropic-platform-open-call-for-guest-investigators-in-the-life-98d45c75",
+      "slug": "20261102-anthropic-platform-donating-agent-skills-to-the-agentic-ai-found-86405d6d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "publishedAt": "2026-11-01T21:59:50.309Z",
-      "discoveredAt": "2026-11-01T21:59:50.309Z",
+      "href": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "publishedAt": "2026-11-02T15:44:45.066Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
       "locales": {
         "en": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
         },
         "fr": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
         }
       }
     },
     {
-      "slug": "20261101-vercel-vercel-daemons-can-now-call-services-with-bindings-vercel-477abb1d",
+      "slug": "20261101-vercel-data-cache-is-moving-to-runtime-cache-data-cache-is-exiti-54728602",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-daemons-can-now-call-services-with-bindings",
+      "href": "https://vercel.com/changelog/data-cache-is-moving-to-runtime-cache",
       "publishedAt": "2026-11-01T21:59:50.309Z",
       "discoveredAt": "2026-11-01T21:59:50.309Z",
       "locales": {
         "en": {
-          "title": "Vercel Daemons can now call services with bindings Vercel Daemons can now call the services in their deployment through service bindings. Nik Sidnev",
-          "summary": "Kelly Davis, Luba Kravchenko, and 1 other"
+          "title": "Data Cache is moving to Runtime Cache Data Cache is exiting beta and merging into Runtime Cache, which brings faster performance under load, 8–10x more cache storage per project, and deeper observability. Kelly Davis, Luba Kravchenko, and 1 other",
+          "summary": "30 October 30 Oct"
         },
         "fr": {
-          "title": "Vercel Daemons can now call services with bindings Vercel Daemons can now call the services in their deployment through service bindings. Nik Sidnev",
-          "summary": "Kelly Davis, Luba Kravchenko, and 1 other"
+          "title": "Data Cache is moving to Runtime Cache Data Cache is exiting beta and merging into Runtime Cache, which brings faster performance under load, 8–10x more cache storage per project, and deeper observability. Kelly Davis, Luba Kravchenko, and 1 other",
+          "summary": "30 October 30 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261030-openai-platform-making-it-easier-for-websites-to-express-ai-trai-25cc4c9b",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "publishedAt": "2026-10-30T09:30:00.000Z",
+      "discoveredAt": "2026-10-30T22:15:48.157Z",
+      "locales": {
+        "en": {
+          "title": "Making it easier for websites to express AI training preferences",
+          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
+        },
+        "fr": {
+          "title": "Making it easier for websites to express AI training preferences",
+          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
+        }
+      }
+    },
+    {
+      "slug": "20261030-cloudflare-4-real-tracking-exploitation-and-patching-of-emudhras-132cf973",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/emudhra-patching/",
+      "publishedAt": "2026-10-30T17:38:50.000Z",
+      "discoveredAt": "2026-10-30T22:15:48.157Z",
+      "locales": {
+        "en": {
+          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, an…"
+        },
+        "fr": {
+          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, an…"
+        }
+      }
+    },
+    {
+      "slug": "20261102-docker-where-should-your-code-live-in-a-docker-sandbox-a6ff3130",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-sandbox-code-checkout-workflows/",
+      "publishedAt": "2026-11-02T14:00:00.000Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
+      "locales": {
+        "en": {
+          "title": "Where should your code live in a Docker Sandbox?",
+          "summary": "Docker Sandboxes support three ways to organize an agent’s code: shared mounts, Git worktrees, and clone mode. Here’s how to choose between them."
+        },
+        "fr": {
+          "title": "Where should your code live in a Docker Sandbox?",
+          "summary": "Docker Sandboxes support three ways to organize an agent’s code: shared mounts, Git worktrees, and clone mode. Here’s how to choose between them."
+        }
+      }
+    },
+    {
+      "slug": "20261027-nist-nist-report-provides-guidelines-for-transition-to-post-quan-fc4af51d",
+      "toolName": "NIST",
+      "category": "Security & Standards",
+      "source": "NIST News",
+      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
+      "href": "https://www.nist.gov/news-events/news/2026/10/nist-report-provides-guidelines-transition-post-quantum-cryptography",
+      "publishedAt": "2026-10-27T12:00:00.000Z",
+      "discoveredAt": "2026-10-27T22:10:42.150Z",
+      "locales": {
+        "en": {
+          "title": "NIST Report Provides Guidelines for Transition to Post-Quantum Cryptography Standards",
+          "summary": "This report describes the timelines and migration activities for federal agencies, and it can serve as a key resource for technology providers and organizations that are developing their quantum-readiness road maps."
+        },
+        "fr": {
+          "title": "NIST Report Provides Guidelines for Transition to Post-Quantum Cryptography Standards",
+          "summary": "This report describes the timelines and migration activities for federal agencies, and it can serve as a key resource for technology providers and organizations that are developing their quantum-readiness road maps."
         }
       }
     },
@@ -503,46 +583,6 @@
       }
     },
     {
-      "slug": "20261030-cloudflare-cloudflare-services-for-private-origins-is-now-genera-5e6112ff",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/private-origins-public-to-private/",
-      "publishedAt": "2026-10-30T14:23:43.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare services for private origins is now generally available",
-          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
-        },
-        "fr": {
-          "title": "Cloudflare services for private origins is now generally available",
-          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
-        }
-      }
-    },
-    {
-      "slug": "20261030-chatgpt-community-safety-report-and-new-protections-for-teens-c7606af4",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-      "publishedAt": "2026-10-30T09:00:00.000Z",
-      "discoveredAt": "2026-10-30T22:15:48.157Z",
-      "locales": {
-        "en": {
-          "title": "Community safety report and new protections for teens",
-          "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
-        },
-        "fr": {
-          "title": "Community safety report and new protections for teens",
-          "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
-        }
-      }
-    },
-    {
       "slug": "20261028-nodejs-nodejs-24222-lts-0912e56e",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -579,26 +619,6 @@
         "fr": {
           "title": "Route and orchestrate models with GitHub Copilot Fusion",
           "summary": "GitHub Copilot Fusion is generally available. Instead of picking a model for each task, choose Copilot Fusion and let Copilot intelligently route and orchestrate which models it uses for you.… The post Route and orchest…"
-        }
-      }
-    },
-    {
-      "slug": "20261028-docker-win-the-agentic-era-together-introducing-the-docker-navig-dc7f3109",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-navigator-partner-program/",
-      "publishedAt": "2026-10-28T13:00:00.000Z",
-      "discoveredAt": "2026-10-28T22:32:01.739Z",
-      "locales": {
-        "en": {
-          "title": "Win the Agentic Era, Together: Introducing the Docker Navigator Partner Program",
-          "summary": "Docker is launching the Navigator Partner Program, with three tiers, co-selling benefits, and a new incentive for every registered AI governance deal."
-        },
-        "fr": {
-          "title": "Win the Agentic Era, Together: Introducing the Docker Navigator Partner Program",
-          "summary": "Docker is launching the Navigator Partner Program, with three tiers, co-selling benefits, and a new incentive for every registered AI governance deal."
         }
       }
     },
@@ -659,26 +679,6 @@
         "fr": {
           "title": "Oct 20, 2026",
           "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20261016-nist-new-chip-based-tape-measure-for-light-could-revolutionize-m-2221263d",
-      "toolName": "NIST",
-      "category": "Security & Standards",
-      "source": "NIST News",
-      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/10/new-chip-based-tape-measure-light-could-revolutionize-mobile-timekeeping",
-      "publishedAt": "2026-10-16T12:00:00.000Z",
-      "discoveredAt": "2026-10-16T21:04:25.613Z",
-      "locales": {
-        "en": {
-          "title": "New Chip-Based ‘Tape Measure’ for Light Could Revolutionize Mobile Timekeeping and Enhance National Security",
-          "summary": "The new device could help provide vital navigation signals when GPS is either unavailable or has been jammed."
-        },
-        "fr": {
-          "title": "New Chip-Based ‘Tape Measure’ for Light Could Revolutionize Mobile Timekeeping and Enhance National Security",
-          "summary": "The new device could help provide vital navigation signals when GPS is either unavailable or has been jammed."
         }
       }
     },
@@ -763,62 +763,142 @@
       }
     },
     {
-      "slug": "20261101-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "slug": "20261102-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/no-access-org-role",
-      "publishedAt": "2026-11-01T21:59:50.309Z",
-      "discoveredAt": "2026-11-01T21:59:50.309Z",
+      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
+      "publishedAt": "2026-11-02T15:44:45.066Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
       "locales": {
         "en": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         },
         "fr": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         }
       }
     },
     {
-      "slug": "20261101-anthropic-platform-strengthening-our-defenses-against-distillati-7f42709d",
+      "slug": "20261102-anthropic-platform-preparing-for-the-2026-us-midterms-c9ddbc2b",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/distillation-defenses",
-      "publishedAt": "2026-11-01T21:59:50.309Z",
-      "discoveredAt": "2026-11-01T21:59:50.309Z",
+      "href": "https://www.anthropic.com/news/2026-us-midterms",
+      "publishedAt": "2026-11-02T15:44:45.066Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
       "locales": {
         "en": {
-          "title": "Strengthening our defenses against distillation attacks",
-          "summary": "Strengthening our defenses against distillation attacks"
+          "title": "Preparing for the 2026 US midterms",
+          "summary": "Preparing for the 2026 US midterms"
         },
         "fr": {
-          "title": "Strengthening our defenses against distillation attacks",
-          "summary": "Strengthening our defenses against distillation attacks"
+          "title": "Preparing for the 2026 US midterms",
+          "summary": "Preparing for the 2026 US midterms"
         }
       }
     },
     {
-      "slug": "20261101-vercel-ling-31-flash-1019-now-available-on-ai-gateway-for-free-l-0798c074",
+      "slug": "20261101-vercel-vercel-daemons-can-now-call-services-with-bindings-vercel-477abb1d",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/ling-3-1-flash-1019-now-available-on-ai-gateway-for-free",
-      "publishedAt": "2026-11-01T13:17:28.182Z",
-      "discoveredAt": "2026-11-01T13:17:28.182Z",
+      "href": "https://vercel.com/changelog/vercel-daemons-can-now-call-services-with-bindings",
+      "publishedAt": "2026-11-01T21:59:50.309Z",
+      "discoveredAt": "2026-11-01T21:59:50.309Z",
       "locales": {
         "en": {
-          "title": "Ling 3.1 Flash 1019 now available on AI Gateway for free Ling 3.1 Flash 1019 is now available on AI Gateway. Jerilyn Zheng, Zachary Chen",
-          "summary": "Nik Sidnev"
+          "title": "Vercel Daemons can now call services with bindings Vercel Daemons can now call the services in their deployment through service bindings. Nik Sidnev",
+          "summary": "Kelly Davis, Luba Kravchenko, and 1 other"
         },
         "fr": {
-          "title": "Ling 3.1 Flash 1019 now available on AI Gateway for free Ling 3.1 Flash 1019 is now available on AI Gateway. Jerilyn Zheng, Zachary Chen",
-          "summary": "Nik Sidnev"
+          "title": "Vercel Daemons can now call services with bindings Vercel Daemons can now call the services in their deployment through service bindings. Nik Sidnev",
+          "summary": "Kelly Davis, Luba Kravchenko, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20261030-chatgpt-community-safety-report-and-new-protections-for-teens-c7606af4",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "publishedAt": "2026-10-30T09:00:00.000Z",
+      "discoveredAt": "2026-10-30T22:15:48.157Z",
+      "locales": {
+        "en": {
+          "title": "Community safety report and new protections for teens",
+          "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
+        },
+        "fr": {
+          "title": "Community safety report and new protections for teens",
+          "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
+        }
+      }
+    },
+    {
+      "slug": "20261030-cloudflare-cloudflare-services-for-private-origins-is-now-genera-5e6112ff",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/private-origins-public-to-private/",
+      "publishedAt": "2026-10-30T14:23:43.000Z",
+      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare services for private origins is now generally available",
+          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
+        },
+        "fr": {
+          "title": "Cloudflare services for private origins is now generally available",
+          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
+        }
+      }
+    },
+    {
+      "slug": "20261029-docker-coding-agent-horror-stories-the-cve-that-did-not-exist-6b5b11da",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/coding-agent-horror-stories-the-cve-that-did-not-exist/",
+      "publishedAt": "2026-10-29T13:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "locales": {
+        "en": {
+          "title": "Coding Agent Horror Stories: The CVE That Did Not Exist",
+          "summary": "An AI code review agent invented a CVE and recommended dangerous fixes. Learn how Docker Sandboxes contain agents and why their output needs verification."
+        },
+        "fr": {
+          "title": "Coding Agent Horror Stories: The CVE That Did Not Exist",
+          "summary": "An AI code review agent invented a CVE and recommended dangerous fixes. Learn how Docker Sandboxes contain agents and why their output needs verification."
+        }
+      }
+    },
+    {
+      "slug": "20261016-nist-new-chip-based-tape-measure-for-light-could-revolutionize-m-2221263d",
+      "toolName": "NIST",
+      "category": "Security & Standards",
+      "source": "NIST News",
+      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
+      "href": "https://www.nist.gov/news-events/news/2026/10/new-chip-based-tape-measure-light-could-revolutionize-mobile-timekeeping",
+      "publishedAt": "2026-10-16T12:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
+      "locales": {
+        "en": {
+          "title": "New Chip-Based ‘Tape Measure’ for Light Could Revolutionize Mobile Timekeeping and Enhance National Security",
+          "summary": "The new device could help provide vital navigation signals when GPS is either unavailable or has been jammed."
+        },
+        "fr": {
+          "title": "New Chip-Based ‘Tape Measure’ for Light Could Revolutionize Mobile Timekeeping and Enhance National Security",
+          "summary": "The new device could help provide vital navigation signals when GPS is either unavailable or has been jammed."
         }
       }
     },
@@ -883,46 +963,6 @@
       }
     },
     {
-      "slug": "20261029-cloudflare-cloudflare-ddos-threat-report-2026-q3-more-swarms-few-470f90e2",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
-      "publishedAt": "2026-10-29T12:55:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-          "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent…"
-        },
-        "fr": {
-          "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-          "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-openai-platform-fair-use-benefits-everyone-d2282bcc",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/fair-use-benefits-everyone",
-      "publishedAt": "2026-10-30T00:00:00.000Z",
-      "discoveredAt": "2026-10-30T22:15:48.157Z",
-      "locales": {
-        "en": {
-          "title": "Fair use benefits everyone",
-          "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
-        },
-        "fr": {
-          "title": "Fair use benefits everyone",
-          "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
-        }
-      }
-    },
-    {
       "slug": "20261028-nodejs-nodejs-26130-lts-cc6a0ea7",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -959,26 +999,6 @@
         "fr": {
           "title": "GitHub Copilot app, Universe releases",
           "summary": "Work doesn’t always fit in a single repository or session. A feature can span several repositories. A launch plan can pull in specs, designs, and assets without touching a repository… The post GitHub Copilot app, Univer…"
-        }
-      }
-    },
-    {
-      "slug": "20261023-docker-php2shell-and-emudhra-patched-aecfe29a",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/php2shell-and-emudhra-patched/",
-      "publishedAt": "2026-10-23T13:08:08.000Z",
-      "discoveredAt": "2026-10-26T22:38:06.005Z",
-      "locales": {
-        "en": {
-          "title": "PHP2Shell and eMudhra Patched",
-          "summary": "PHP2Shell and the eMudhra certificate compromise landed in the same week. Docker published a fixed PHP image within 24 hours and rebuilt the trust store across the catalog."
-        },
-        "fr": {
-          "title": "PHP2Shell and eMudhra Patched",
-          "summary": "PHP2Shell and the eMudhra certificate compromise landed in the same week. Docker published a fixed PHP image within 24 hours and rebuilt the trust store across the catalog."
         }
       }
     },
@@ -1039,26 +1059,6 @@
         "fr": {
           "title": "Next → Older posts",
           "summary": "Next → Older posts"
-        }
-      }
-    },
-    {
-      "slug": "20261008-nist-nist-joins-white-house-effort-to-drive-a-new-golden-age-of--25dc3f92",
-      "toolName": "NIST",
-      "category": "Security & Standards",
-      "source": "NIST News",
-      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/10/nist-joins-white-house-effort-drive-new-golden-age-science",
-      "publishedAt": "2026-10-08T12:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:11.392Z",
-      "locales": {
-        "en": {
-          "title": "NIST Joins White House Effort to Drive ‘A New Golden Age of Science’",
-          "summary": "As the nation’s lead agency for measurement science and standards, NIST is uniquely positioned to bridge the distance between fundamental discovery and industrial capability."
-        },
-        "fr": {
-          "title": "NIST Joins White House Effort to Drive ‘A New Golden Age of Science’",
-          "summary": "As the nation’s lead agency for measurement science and standards, NIST is uniquely positioned to bridge the distance between fundamental discovery and industrial capability."
         }
       }
     },
@@ -1143,62 +1143,142 @@
       }
     },
     {
-      "slug": "20261101-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
+      "slug": "20261102-supabase-public-alpha-supabase-go-sdk-107ff49a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/multigres-private-alpha",
-      "publishedAt": "2026-11-01T21:59:50.309Z",
-      "discoveredAt": "2026-11-01T21:59:50.309Z",
+      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
+      "publishedAt": "2026-11-02T15:44:45.066Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
       "locales": {
         "en": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         },
         "fr": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         }
       }
     },
     {
-      "slug": "20261101-anthropic-platform-introducing-the-anthropic-cyber-mission-db9c3550",
+      "slug": "20261102-anthropic-platform-anthropic-opens-singapore-office-and-signs-mo-87253efe",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
-      "publishedAt": "2026-11-01T21:59:50.309Z",
-      "discoveredAt": "2026-11-01T21:59:50.309Z",
+      "href": "https://www.anthropic.com/news/singapore-office-opening",
+      "publishedAt": "2026-11-02T15:44:45.066Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
       "locales": {
         "en": {
-          "title": "Introducing the Anthropic Cyber Mission",
-          "summary": "Introducing the Anthropic Cyber Mission"
+          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
         },
         "fr": {
-          "title": "Introducing the Anthropic Cyber Mission",
-          "summary": "Introducing the Anthropic Cyber Mission"
+          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
         }
       }
     },
     {
-      "slug": "20261101-vercel-add-liveness-checks-to-your-daemons-vercel-daemons-now-su-27a0aac1",
+      "slug": "20261101-vercel-ling-31-flash-1019-now-available-on-ai-gateway-for-free-l-0798c074",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/add-liveness-checks-to-your-daemons",
+      "href": "https://vercel.com/changelog/ling-3-1-flash-1019-now-available-on-ai-gateway-for-free",
       "publishedAt": "2026-11-01T13:17:28.182Z",
       "discoveredAt": "2026-11-01T13:17:28.182Z",
       "locales": {
         "en": {
-          "title": "Add liveness checks to your Daemons Vercel Daemons now support configuring HTTP liveness checks, for restarting processes in a bad state proactively. Gal Schlezinger Software Engineer, Infrastructure",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+          "title": "Ling 3.1 Flash 1019 now available on AI Gateway for free Ling 3.1 Flash 1019 is now available on AI Gateway. Jerilyn Zheng, Zachary Chen",
+          "summary": "Nik Sidnev"
         },
         "fr": {
-          "title": "Add liveness checks to your Daemons Vercel Daemons now support configuring HTTP liveness checks, for restarting processes in a bad state proactively. Gal Schlezinger Software Engineer, Infrastructure",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+          "title": "Ling 3.1 Flash 1019 now available on AI Gateway for free Ling 3.1 Flash 1019 is now available on AI Gateway. Jerilyn Zheng, Zachary Chen",
+          "summary": "Nik Sidnev"
+        }
+      }
+    },
+    {
+      "slug": "20261030-openai-platform-fair-use-benefits-everyone-d2282bcc",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/fair-use-benefits-everyone",
+      "publishedAt": "2026-10-30T00:00:00.000Z",
+      "discoveredAt": "2026-10-30T22:15:48.157Z",
+      "locales": {
+        "en": {
+          "title": "Fair use benefits everyone",
+          "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
+        },
+        "fr": {
+          "title": "Fair use benefits everyone",
+          "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
+        }
+      }
+    },
+    {
+      "slug": "20261029-cloudflare-cloudflare-ddos-threat-report-2026-q3-more-swarms-few-470f90e2",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
+      "publishedAt": "2026-10-29T12:55:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+          "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent…"
+        },
+        "fr": {
+          "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+          "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent…"
+        }
+      }
+    },
+    {
+      "slug": "20261028-docker-win-the-agentic-era-together-introducing-the-docker-navig-dc7f3109",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-navigator-partner-program/",
+      "publishedAt": "2026-10-28T13:00:00.000Z",
+      "discoveredAt": "2026-10-28T22:32:01.739Z",
+      "locales": {
+        "en": {
+          "title": "Win the Agentic Era, Together: Introducing the Docker Navigator Partner Program",
+          "summary": "Docker is launching the Navigator Partner Program, with three tiers, co-selling benefits, and a new incentive for every registered AI governance deal."
+        },
+        "fr": {
+          "title": "Win the Agentic Era, Together: Introducing the Docker Navigator Partner Program",
+          "summary": "Docker is launching the Navigator Partner Program, with three tiers, co-selling benefits, and a new incentive for every registered AI governance deal."
+        }
+      }
+    },
+    {
+      "slug": "20261008-nist-nist-joins-white-house-effort-to-drive-a-new-golden-age-of--25dc3f92",
+      "toolName": "NIST",
+      "category": "Security & Standards",
+      "source": "NIST News",
+      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
+      "href": "https://www.nist.gov/news-events/news/2026/10/nist-joins-white-house-effort-drive-new-golden-age-science",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:11.392Z",
+      "locales": {
+        "en": {
+          "title": "NIST Joins White House Effort to Drive ‘A New Golden Age of Science’",
+          "summary": "As the nation’s lead agency for measurement science and standards, NIST is uniquely positioned to bridge the distance between fundamental discovery and industrial capability."
+        },
+        "fr": {
+          "title": "NIST Joins White House Effort to Drive ‘A New Golden Age of Science’",
+          "summary": "As the nation’s lead agency for measurement science and standards, NIST is uniquely positioned to bridge the distance between fundamental discovery and industrial capability."
         }
       }
     },
@@ -1263,46 +1343,6 @@
       }
     },
     {
-      "slug": "20261027-cloudflare-introducing-the-cloudflare-php-capture-the-flag-chall-54be98d0",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/php-ctf/",
-      "publishedAt": "2026-10-27T13:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:42.150Z",
-      "locales": {
-        "en": {
-          "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
-          "summary": "We are launching a PHP Capture the Flag challenge integrated with our Bug Bounty program to test our WAF protections. Security researchers are invited to bypass our defenses and capture the flag to help make the Interne…"
-        },
-        "fr": {
-          "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
-          "summary": "We are launching a PHP Capture the Flag challenge integrated with our Bug Bounty program to test our WAF protections. Security researchers are invited to bypass our defenses and capture the flag to help make the Interne…"
-        }
-      }
-    },
-    {
-      "slug": "20261029-openai-platform-an-updated-model-spec-for-more-capable-and-benef-7bf0065c",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/updated-model-spec",
-      "publishedAt": "2026-10-29T17:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
-      "locales": {
-        "en": {
-          "title": "An updated Model Spec for more capable and beneficial AI",
-          "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
-        },
-        "fr": {
-          "title": "An updated Model Spec for more capable and beneficial AI",
-          "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
-        }
-      }
-    },
-    {
       "slug": "20261021-nodejs-wednesday-october-21-2026-security-releases-e31bf18a",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -1339,26 +1379,6 @@
         "fr": {
           "title": "GitHub Enterprise now includes access to GitHub Copilot",
           "summary": "Enterprises working with a GitHub or Microsoft account team can now get Copilot included with GitHub Enterprise for every licensed user. Previously, you had to manage two things: how many… The post GitHub Enterprise now…"
-        }
-      }
-    },
-    {
-      "slug": "20261022-docker-security-update-on-php2shell-impact-for-docker-customers-a55661f5",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/security-update-on-php2shell-impact-for-docker-customers/",
-      "publishedAt": "2026-10-22T17:22:47.000Z",
-      "discoveredAt": "2026-10-22T21:32:56.966Z",
-      "locales": {
-        "en": {
-          "title": "Security Update on PHP2Shell: Impact for Docker Customers",
-          "summary": "On Tuesday, October 20, 2026, Docker began tracking two critical vulnerabilities in PHP, CVE-2026-109618 and CVE-2026-109619, commonly known as PHP2Shell."
-        },
-        "fr": {
-          "title": "Security Update on PHP2Shell: Impact for Docker Customers",
-          "summary": "On Tuesday, October 20, 2026, Docker began tracking two critical vulnerabilities in PHP, CVE-2026-109618 and CVE-2026-109619, commonly known as PHP2Shell."
         }
       }
     },
@@ -1419,26 +1439,6 @@
         "fr": {
           "title": "Oct 16, 2026",
           "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20261008-nist-nist-study-shows-how-the-toxic-substances-mixed-into-fentan-9acfb21c",
-      "toolName": "NIST",
-      "category": "Security & Standards",
-      "source": "NIST News",
-      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/10/nist-study-shows-how-toxic-substances-mixed-fentanyl-vary-across-us-and",
-      "publishedAt": "2026-10-08T12:00:00.000Z",
-      "discoveredAt": "2026-10-08T23:19:11.392Z",
-      "locales": {
-        "en": {
-          "title": "NIST Study Shows How the Toxic Substances Mixed Into Fentanyl Vary Across the U.S. and Change Over Time",
-          "summary": "Alerting first responders and law enforcement to the presence of these dangerous chemicals in local supplies of fentanyl can help save lives."
-        },
-        "fr": {
-          "title": "NIST Study Shows How the Toxic Substances Mixed Into Fentanyl Vary Across the U.S. and Change Over Time",
-          "summary": "Alerting first responders and law enforcement to the presence of these dangerous chemicals in local supplies of fentanyl can help save lives."
         }
       }
     },
@@ -1523,62 +1523,142 @@
       }
     },
     {
-      "slug": "20261101-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
+      "slug": "20261101-supabase-organization-invites-support-the-no-access-role-fba375fa",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
-      "publishedAt": "2026-11-01T13:17:28.182Z",
-      "discoveredAt": "2026-11-01T13:17:28.182Z",
-      "locales": {
-        "en": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
-        },
-        "fr": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
-        }
-      }
-    },
-    {
-      "slug": "20261101-anthropic-platform-2026-usage-policy-update-7a238471",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "href": "https://supabase.com/changelog/no-access-org-role",
       "publishedAt": "2026-11-01T21:59:50.309Z",
       "discoveredAt": "2026-11-01T21:59:50.309Z",
       "locales": {
         "en": {
-          "title": "2026 Usage Policy update",
-          "summary": "2026 Usage Policy update"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         },
         "fr": {
-          "title": "2026 Usage Policy update",
-          "summary": "2026 Usage Policy update"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         }
       }
     },
     {
-      "slug": "20261031-vercel-strix-now-supports-vercel-ai-gateway-strix-autonomous-pen-1faf9450",
+      "slug": "20261102-anthropic-platform-building-on-our-commitment-to-american-scient-26f50496",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "publishedAt": "2026-11-02T15:44:45.066Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
+      "locales": {
+        "en": {
+          "title": "Building on our commitment to American scientific discovery",
+          "summary": "Building on our commitment to American scientific discovery"
+        },
+        "fr": {
+          "title": "Building on our commitment to American scientific discovery",
+          "summary": "Building on our commitment to American scientific discovery"
+        }
+      }
+    },
+    {
+      "slug": "20261101-vercel-add-liveness-checks-to-your-daemons-vercel-daemons-now-su-27a0aac1",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/strix-now-supports-vercel-ai-gateway",
-      "publishedAt": "2026-10-31T21:30:58.241Z",
-      "discoveredAt": "2026-10-31T21:30:58.241Z",
+      "href": "https://vercel.com/changelog/add-liveness-checks-to-your-daemons",
+      "publishedAt": "2026-11-01T13:17:28.182Z",
+      "discoveredAt": "2026-11-01T13:17:28.182Z",
       "locales": {
         "en": {
-          "title": "Strix now supports Vercel AI Gateway Strix autonomous pen testing framework now supports Vercel AI Gateway as the default inference provider Harpreet Arora Product, AI infrastructure",
-          "summary": "29 October 29 Oct"
+          "title": "Add liveness checks to your Daemons Vercel Daemons now support configuring HTTP liveness checks, for restarting processes in a bad state proactively. Gal Schlezinger Software Engineer, Infrastructure",
+          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
         },
         "fr": {
-          "title": "Strix now supports Vercel AI Gateway Strix autonomous pen testing framework now supports Vercel AI Gateway as the default inference provider Harpreet Arora Product, AI infrastructure",
-          "summary": "29 October 29 Oct"
+          "title": "Add liveness checks to your Daemons Vercel Daemons now support configuring HTTP liveness checks, for restarting processes in a bad state proactively. Gal Schlezinger Software Engineer, Infrastructure",
+          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+        }
+      }
+    },
+    {
+      "slug": "20261029-openai-platform-an-updated-model-spec-for-more-capable-and-benef-7bf0065c",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/updated-model-spec",
+      "publishedAt": "2026-10-29T17:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "locales": {
+        "en": {
+          "title": "An updated Model Spec for more capable and beneficial AI",
+          "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
+        },
+        "fr": {
+          "title": "An updated Model Spec for more capable and beneficial AI",
+          "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
+        }
+      }
+    },
+    {
+      "slug": "20261027-cloudflare-introducing-the-cloudflare-php-capture-the-flag-chall-54be98d0",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/php-ctf/",
+      "publishedAt": "2026-10-27T13:00:00.000Z",
+      "discoveredAt": "2026-10-27T22:10:42.150Z",
+      "locales": {
+        "en": {
+          "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
+          "summary": "We are launching a PHP Capture the Flag challenge integrated with our Bug Bounty program to test our WAF protections. Security researchers are invited to bypass our defenses and capture the flag to help make the Interne…"
+        },
+        "fr": {
+          "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
+          "summary": "We are launching a PHP Capture the Flag challenge integrated with our Bug Bounty program to test our WAF protections. Security researchers are invited to bypass our defenses and capture the flag to help make the Interne…"
+        }
+      }
+    },
+    {
+      "slug": "20261023-docker-php2shell-and-emudhra-patched-aecfe29a",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/php2shell-and-emudhra-patched/",
+      "publishedAt": "2026-10-23T13:08:08.000Z",
+      "discoveredAt": "2026-10-26T22:38:06.005Z",
+      "locales": {
+        "en": {
+          "title": "PHP2Shell and eMudhra Patched",
+          "summary": "PHP2Shell and the eMudhra certificate compromise landed in the same week. Docker published a fixed PHP image within 24 hours and rebuilt the trust store across the catalog."
+        },
+        "fr": {
+          "title": "PHP2Shell and eMudhra Patched",
+          "summary": "PHP2Shell and the eMudhra certificate compromise landed in the same week. Docker published a fixed PHP image within 24 hours and rebuilt the trust store across the catalog."
+        }
+      }
+    },
+    {
+      "slug": "20261008-nist-nist-study-shows-how-the-toxic-substances-mixed-into-fentan-9acfb21c",
+      "toolName": "NIST",
+      "category": "Security & Standards",
+      "source": "NIST News",
+      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
+      "href": "https://www.nist.gov/news-events/news/2026/10/nist-study-shows-how-toxic-substances-mixed-fentanyl-vary-across-us-and",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "discoveredAt": "2026-10-08T23:19:11.392Z",
+      "locales": {
+        "en": {
+          "title": "NIST Study Shows How the Toxic Substances Mixed Into Fentanyl Vary Across the U.S. and Change Over Time",
+          "summary": "Alerting first responders and law enforcement to the presence of these dangerous chemicals in local supplies of fentanyl can help save lives."
+        },
+        "fr": {
+          "title": "NIST Study Shows How the Toxic Substances Mixed Into Fentanyl Vary Across the U.S. and Change Over Time",
+          "summary": "Alerting first responders and law enforcement to the presence of these dangerous chemicals in local supplies of fentanyl can help save lives."
         }
       }
     },
@@ -1643,46 +1723,6 @@
       }
     },
     {
-      "slug": "20261027-cloudflare-what-took-the-internet-offline-in-q3-2026-1332586c",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
-      "publishedAt": "2026-10-27T13:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:42.150Z",
-      "locales": {
-        "en": {
-          "title": "What took the Internet offline in Q3 2026",
-          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connecti…"
-        },
-        "fr": {
-          "title": "What took the Internet offline in Q3 2026",
-          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connecti…"
-        }
-      }
-    },
-    {
-      "slug": "20261029-openai-platform-how-we-detect-frontier-model-misalignment-d28967fc",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-      "publishedAt": "2026-10-29T09:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
-      "locales": {
-        "en": {
-          "title": "How we detect frontier model misalignment",
-          "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate."
-        },
-        "fr": {
-          "title": "How we detect frontier model misalignment",
-          "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate."
-        }
-      }
-    },
-    {
       "slug": "20261021-nodejs-nodejs-26121-current-2169860c",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -1719,26 +1759,6 @@
         "fr": {
           "title": "Security extension for the GitHub Copilot app",
           "summary": "You can now work through your repository’s GitHub code scanning alerts without leaving the GitHub Copilot app. The new GitHub security extension, now in public preview, lets you find the… The post Security extension for…"
-        }
-      }
-    },
-    {
-      "slug": "20261022-docker-activestate-partners-with-docker-to-secure-the-open-sourc-51179ce3",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-activestate-partnership/",
-      "publishedAt": "2026-10-22T11:30:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:22.919Z",
-      "locales": {
-        "en": {
-          "title": "ActiveState Partners with Docker to Secure the Open Source in Enterprise Containers",
-          "summary": "Container security spans the image, build, and runtime. See the practical steps that shrink your attack surface and keep vulnerabilities out of production."
-        },
-        "fr": {
-          "title": "ActiveState Partners with Docker to Secure the Open Source in Enterprise Containers",
-          "summary": "Container security spans the image, build, and runtime. See the practical steps that shrink your attack surface and keep vulnerabilities out of production."
         }
       }
     },
@@ -1799,26 +1819,6 @@
         "fr": {
           "title": "Oct 13, 2026",
           "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20261005-nist-physicist-jun-ye-wins-wolf-prize-in-physics-e9a43731",
-      "toolName": "NIST",
-      "category": "Security & Standards",
-      "source": "NIST News",
-      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/10/physicist-jun-ye-wins-wolf-prize-physics",
-      "publishedAt": "2026-10-05T12:00:00.000Z",
-      "discoveredAt": "2026-10-06T00:01:44.852Z",
-      "locales": {
-        "en": {
-          "title": "Physicist Jun Ye Wins Wolf Prize in Physics",
-          "summary": "The award cites Ye’s achievement in “transformative, widely applicable advances in the control of ultracold atomic systems.”"
-        },
-        "fr": {
-          "title": "Physicist Jun Ye Wins Wolf Prize in Physics",
-          "summary": "The award cites Ye’s achievement in “transformative, widely applicable advances in the control of ultracold atomic systems.”"
         }
       }
     },
@@ -1903,62 +1903,142 @@
       }
     },
     {
-      "slug": "20261101-supabase-status-page-moves-to-incidentio-7e1c5736",
+      "slug": "20261101-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/status-page-migration",
-      "publishedAt": "2026-11-01T13:17:28.182Z",
-      "discoveredAt": "2026-11-01T13:17:28.182Z",
+      "href": "https://supabase.com/changelog/multigres-private-alpha",
+      "publishedAt": "2026-11-01T21:59:50.309Z",
+      "discoveredAt": "2026-11-01T21:59:50.309Z",
       "locales": {
         "en": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         },
         "fr": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         }
       }
     },
     {
-      "slug": "20261101-anthropic-platform-physicist-christopher-stubbs-joins-anthropics-b12d9d8f",
+      "slug": "20261101-anthropic-platform-ai-for-science-expands-to-foundations-and-res-ad10900d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "publishedAt": "2026-11-01T13:17:28.182Z",
-      "discoveredAt": "2026-11-01T13:17:28.182Z",
+      "href": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "publishedAt": "2026-11-01T21:59:50.309Z",
+      "discoveredAt": "2026-11-01T21:59:50.309Z",
       "locales": {
         "en": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
         },
         "fr": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
         }
       }
     },
     {
-      "slug": "20261031-vercel-ip-geolocation-now-covers-more-visitors-at-higher-resolut-c5b513e9",
+      "slug": "20261031-vercel-strix-now-supports-vercel-ai-gateway-strix-autonomous-pen-1faf9450",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/improved-ip-geolocation-data",
+      "href": "https://vercel.com/changelog/strix-now-supports-vercel-ai-gateway",
       "publishedAt": "2026-10-31T21:30:58.241Z",
       "discoveredAt": "2026-10-31T21:30:58.241Z",
       "locales": {
         "en": {
-          "title": "IP geolocation now covers more visitors at higher resolution Vercel's IP geolocation data is now more accurate, derived from observed network behavior rather than registry records alone, with city and postal codes for more visitors. Adrien Thebo, Sage Abraham",
-          "summary": "Harpreet Arora Product, AI infrastructure"
+          "title": "Strix now supports Vercel AI Gateway Strix autonomous pen testing framework now supports Vercel AI Gateway as the default inference provider Harpreet Arora Product, AI infrastructure",
+          "summary": "29 October 29 Oct"
         },
         "fr": {
-          "title": "IP geolocation now covers more visitors at higher resolution Vercel's IP geolocation data is now more accurate, derived from observed network behavior rather than registry records alone, with city and postal codes for more visitors. Adrien Thebo, Sage Abraham",
-          "summary": "Harpreet Arora Product, AI infrastructure"
+          "title": "Strix now supports Vercel AI Gateway Strix autonomous pen testing framework now supports Vercel AI Gateway as the default inference provider Harpreet Arora Product, AI infrastructure",
+          "summary": "29 October 29 Oct"
+        }
+      }
+    },
+    {
+      "slug": "20261029-openai-platform-how-we-detect-frontier-model-misalignment-d28967fc",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "publishedAt": "2026-10-29T09:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "locales": {
+        "en": {
+          "title": "How we detect frontier model misalignment",
+          "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate."
+        },
+        "fr": {
+          "title": "How we detect frontier model misalignment",
+          "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate."
+        }
+      }
+    },
+    {
+      "slug": "20261027-cloudflare-what-took-the-internet-offline-in-q3-2026-1332586c",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
+      "publishedAt": "2026-10-27T13:00:00.000Z",
+      "discoveredAt": "2026-10-27T22:10:42.150Z",
+      "locales": {
+        "en": {
+          "title": "What took the Internet offline in Q3 2026",
+          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connecti…"
+        },
+        "fr": {
+          "title": "What took the Internet offline in Q3 2026",
+          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connecti…"
+        }
+      }
+    },
+    {
+      "slug": "20261022-docker-security-update-on-php2shell-impact-for-docker-customers-a55661f5",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/security-update-on-php2shell-impact-for-docker-customers/",
+      "publishedAt": "2026-10-22T17:22:47.000Z",
+      "discoveredAt": "2026-10-22T21:32:56.966Z",
+      "locales": {
+        "en": {
+          "title": "Security Update on PHP2Shell: Impact for Docker Customers",
+          "summary": "On Tuesday, October 20, 2026, Docker began tracking two critical vulnerabilities in PHP, CVE-2026-109618 and CVE-2026-109619, commonly known as PHP2Shell."
+        },
+        "fr": {
+          "title": "Security Update on PHP2Shell: Impact for Docker Customers",
+          "summary": "On Tuesday, October 20, 2026, Docker began tracking two critical vulnerabilities in PHP, CVE-2026-109618 and CVE-2026-109619, commonly known as PHP2Shell."
+        }
+      }
+    },
+    {
+      "slug": "20261005-nist-physicist-jun-ye-wins-wolf-prize-in-physics-e9a43731",
+      "toolName": "NIST",
+      "category": "Security & Standards",
+      "source": "NIST News",
+      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
+      "href": "https://www.nist.gov/news-events/news/2026/10/physicist-jun-ye-wins-wolf-prize-physics",
+      "publishedAt": "2026-10-05T12:00:00.000Z",
+      "discoveredAt": "2026-10-06T00:01:44.852Z",
+      "locales": {
+        "en": {
+          "title": "Physicist Jun Ye Wins Wolf Prize in Physics",
+          "summary": "The award cites Ye’s achievement in “transformative, widely applicable advances in the control of ultracold atomic systems.”"
+        },
+        "fr": {
+          "title": "Physicist Jun Ye Wins Wolf Prize in Physics",
+          "summary": "The award cites Ye’s achievement in “transformative, widely applicable advances in the control of ultracold atomic systems.”"
         }
       }
     },
@@ -2023,46 +2103,6 @@
       }
     },
     {
-      "slug": "20261026-cloudflare-cross-request-kv-cache-exposure-in-the-glm-53-workers-bfdba109",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
-      "publishedAt": "2026-10-26T22:01:23.000Z",
-      "discoveredAt": "2026-10-26T22:38:06.005Z",
-      "locales": {
-        "en": {
-          "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
-          "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue."
-        },
-        "fr": {
-          "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
-          "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue."
-        }
-      }
-    },
-    {
-      "slug": "20261029-openai-platform-how-ropes-gray-is-developing-ai-for-transactiona-2d992828",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/ropes-gray-ai-diligence",
-      "publishedAt": "2026-10-29T07:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
-      "locales": {
-        "en": {
-          "title": "How Ropes & Gray is developing AI for transactional diligence",
-          "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients."
-        },
-        "fr": {
-          "title": "How Ropes & Gray is developing AI for transactional diligence",
-          "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients."
-        }
-      }
-    },
-    {
       "slug": "20261021-nodejs-nodejs-24221-lts-8b081c5b",
       "toolName": "Node.js",
       "category": "Systems & Backend",
@@ -2099,26 +2139,6 @@
         "fr": {
           "title": "GitHub intelligence puts your code, context, and history to work",
           "summary": "Agents should understand more than your codebase—they should understand how your team works. Your preferences, repository conventions, skills, and custom instructions guide how changes should be made, while code in… The…"
-        }
-      }
-    },
-    {
-      "slug": "20261021-docker-your-agent-runs-in-a-docker-sandbox-now-it-can-join-a-tea-ad8116f3",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/band-ai-agents-docker-sandboxes/",
-      "publishedAt": "2026-10-21T16:10:49.000Z",
-      "discoveredAt": "2026-10-21T21:40:09.861Z",
-      "locales": {
-        "en": {
-          "title": "Your Agent Runs in a Docker Sandbox. Now It Can Join a Team.",
-          "summary": "Run AI agents in Docker Sandboxes with BAND AI. Learn how to connect isolated agents, collaborate across environments, and manage access securely."
-        },
-        "fr": {
-          "title": "Your Agent Runs in a Docker Sandbox. Now It Can Join a Team.",
-          "summary": "Run AI agents in Docker Sandboxes with BAND AI. Learn how to connect isolated agents, collaborate across environments, and manage access securely."
         }
       }
     },
@@ -2179,26 +2199,6 @@
         "fr": {
           "title": "Remote control for local agents",
           "summary": "You can now see and reply to the local agents running on your computer from the Cursor iOS app."
-        }
-      }
-    },
-    {
-      "slug": "20260928-nist-nist-provides-updates-on-national-construction-safety-team--dd6ce6ec",
-      "toolName": "NIST",
-      "category": "Security & Standards",
-      "source": "NIST News",
-      "sourceFeed": "https://www.nist.gov/news-events/news/rss.xml",
-      "href": "https://www.nist.gov/news-events/news/2026/09/nist-provides-updates-national-construction-safety-team-activities",
-      "publishedAt": "2026-09-28T12:00:00.000Z",
-      "discoveredAt": "2026-09-28T23:14:37.492Z",
-      "locales": {
-        "en": {
-          "title": "NIST Provides Updates on National Construction Safety Team Activities",
-          "summary": "The presentations highlighted the importance of NIST applying its own expertise and the expertise of others through collaborations and contracts."
-        },
-        "fr": {
-          "title": "NIST Provides Updates on National Construction Safety Team Activities",
-          "summary": "The presentations highlighted the importance of NIST applying its own expertise and the expertise of others through collaborations and contracts."
         }
       }
     },
@@ -2283,122 +2283,122 @@
       }
     },
     {
-      "slug": "20261031-supabase-aspnet-core-dependency-injection-for-the-supabase-net-s-e2f5eeb1",
+      "slug": "20261101-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/dotnet-dependency-injection-extension",
-      "publishedAt": "2026-10-31T21:30:58.241Z",
-      "discoveredAt": "2026-10-31T21:30:58.241Z",
-      "locales": {
-        "en": {
-          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
-        },
-        "fr": {
-          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
-        }
-      }
-    },
-    {
-      "slug": "20261101-anthropic-platform-an-update-on-independent-evaluators-dc9ed14d",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
       "publishedAt": "2026-11-01T13:17:28.182Z",
       "discoveredAt": "2026-11-01T13:17:28.182Z",
       "locales": {
         "en": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         },
         "fr": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         }
       }
     },
     {
-      "slug": "20261031-vercel-vercel-flags-starts-7x-faster-and-no-longer-extends-funct-2a82b319",
+      "slug": "20261101-anthropic-platform-open-call-for-guest-investigators-in-the-life-98d45c75",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "publishedAt": "2026-11-01T21:59:50.309Z",
+      "discoveredAt": "2026-11-01T21:59:50.309Z",
+      "locales": {
+        "en": {
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
+        },
+        "fr": {
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
+        }
+      }
+    },
+    {
+      "slug": "20261031-vercel-ip-geolocation-now-covers-more-visitors-at-higher-resolut-c5b513e9",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-flags-starts-7x-faster-and-no-longer-extends-function-duration",
-      "publishedAt": "2026-10-31T12:22:38.441Z",
-      "discoveredAt": "2026-10-31T12:22:38.441Z",
+      "href": "https://vercel.com/changelog/improved-ip-geolocation-data",
+      "publishedAt": "2026-10-31T21:30:58.241Z",
+      "discoveredAt": "2026-10-31T21:30:58.241Z",
       "locales": {
         "en": {
-          "title": "Vercel Flags starts 7x faster and no longer extends function duration Vercel Flags now initializes faster on cold starts using the flag datafile bundled with your deployment, and usage reporting no longer extends function duration. Luis Meyer, Andy Schneider, and 1 other",
-          "summary": "braham-128.jpg\"/> Adrien Thebo, Sage Abraham"
+          "title": "IP geolocation now covers more visitors at higher resolution Vercel's IP geolocation data is now more accurate, derived from observed network behavior rather than registry records alone, with city and postal codes for more visitors. Adrien Thebo, Sage Abraham",
+          "summary": "Harpreet Arora Product, AI infrastructure"
         },
         "fr": {
-          "title": "Vercel Flags starts 7x faster and no longer extends function duration Vercel Flags now initializes faster on cold starts using the flag datafile bundled with your deployment, and usage reporting no longer extends function duration. Luis Meyer, Andy Schneider, and 1 other",
-          "summary": "braham-128.jpg\"/> Adrien Thebo, Sage Abraham"
+          "title": "IP geolocation now covers more visitors at higher resolution Vercel's IP geolocation data is now more accurate, derived from observed network behavior rather than registry records alone, with city and postal codes for more visitors. Adrien Thebo, Sage Abraham",
+          "summary": "Harpreet Arora Product, AI infrastructure"
         }
       }
     },
     {
-      "slug": "20261028-docker-postgresql-anonymizer-33-major-security-update-f4b74201",
+      "slug": "20261029-openai-platform-how-ropes-gray-is-developing-ai-for-transactiona-2d992828",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/ropes-gray-ai-diligence",
+      "publishedAt": "2026-10-29T07:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "locales": {
+        "en": {
+          "title": "How Ropes & Gray is developing AI for transactional diligence",
+          "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients."
+        },
+        "fr": {
+          "title": "How Ropes & Gray is developing AI for transactional diligence",
+          "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients."
+        }
+      }
+    },
+    {
+      "slug": "20261026-cloudflare-cross-request-kv-cache-exposure-in-the-glm-53-workers-bfdba109",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "publishedAt": "2026-10-26T22:01:23.000Z",
+      "discoveredAt": "2026-10-26T22:38:06.005Z",
+      "locales": {
+        "en": {
+          "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+          "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue."
+        },
+        "fr": {
+          "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+          "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue."
+        }
+      }
+    },
+    {
+      "slug": "20261022-docker-activestate-partners-with-docker-to-secure-the-open-sourc-51179ce3",
       "toolName": "Docker",
       "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-33-major-security-update-3423/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:39.485Z",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-activestate-partnership/",
+      "publishedAt": "2026-10-22T11:30:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:22.919Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
-          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension th…"
+          "title": "ActiveState Partners with Docker to Secure the Open Source in Enterprise Containers",
+          "summary": "Container security spans the image, build, and runtime. See the practical steps that shrink your attack surface and keep vulnerabilities out of production."
         },
         "fr": {
-          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
-          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension th…"
-        }
-      }
-    },
-    {
-      "slug": "20261028-nvidia-nvidia-nemotron-35-super-vl-powers-specialized-agents-wit-652caa15",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
-      "publishedAt": "2026-10-28T21:11:44.000Z",
-      "discoveredAt": "2026-10-28T22:32:01.739Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
-        },
-        "fr": {
-          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
-        }
-      }
-    },
-    {
-      "slug": "20261027-hugging-face-build-specialized-multimodal-models-with-lfm3-db98bf59",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/LiquidAI/lfm3",
-      "publishedAt": "2026-10-27T17:16:52.000Z",
-      "discoveredAt": "2026-10-27T22:10:42.150Z",
-      "locales": {
-        "en": {
-          "title": "Build specialized multimodal models with LFM3",
-          "summary": "Build specialized multimodal models with LFM3"
-        },
-        "fr": {
-          "title": "Build specialized multimodal models with LFM3",
-          "summary": "Build specialized multimodal models with LFM3"
+          "title": "ActiveState Partners with Docker to Secure the Open Source in Enterprise Containers",
+          "summary": "Container security spans the image, build, and runtime. See the practical steps that shrink your attack surface and keep vulnerabilities out of production."
         }
       }
     }
