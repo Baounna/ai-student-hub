@@ -1,6 +1,6 @@
 # AI and Cybersecurity News Blog Operator Report
 
-Generated: 2026-10-26T14:31:11.497Z
+Generated: 2026-11-02T17:24:23.788Z
 Internal target: $10.00/month (private operator metric)
 
 ## Content Inventory
@@ -54,36 +54,36 @@ Internal target: $10.00/month (private operator metric)
 - Gap to target: $10.00
 
 ## Top Auto-News Opportunities
-1. Anthropic files S-1 with the SEC for proposed initial public offering: What It Means for AI/CS Students
-   - Source: Anthropic News
-   - Keyword: how to build anthropic news
+1. Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: how to build aws ml blog
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-2. How Fanatics and OpenAI streamline the fan experience: What It Means for AI/CS Students
+2. Build efficient agents with knowledge distillation on Amazon SageMaker AI: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: how to build aws ml blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+3. Agentic engineering intelligence with Amazon Nova Multimodal Embeddings and Amazon Bedrock AgentCore: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: how to build aws ml blog
+   - Monetization angle: how to build and ship this update as a student project
+   - CTA: Resources stack + roadmap
+4. How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock: What It Means for AI/CS Students
+   - Source: AWS ML Blog
+   - Keyword: api security for student projects aws ml blog
+   - Monetization angle: security checklist and reliability upgrade path for student apps
+   - CTA: Security guide + resources
+5. Introducing the Grid Protectors Program: What It Means for AI/CS Students
    - Source: OpenAI News
    - Keyword: how to build openai news
    - Monetization angle: how to build and ship this update as a student project
    - CTA: Resources stack + roadmap
-3. pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL: What It Means for AI/CS Students
-   - Source: PostgreSQL News
-   - Keyword: computer science workflow for students postgresql news
+6. Where should your code live in a Docker Sandbox?: What It Means for AI/CS Students
+   - Source: Docker Blog
+   - Keyword: computer science workflow for students docker blog
    - Monetization angle: CS implementation and tooling decision for student budgets
    - CTA: Resources + compare pages
-4. HypoPG 1.4.4 is out!: What It Means for AI/CS Students
-   - Source: PostgreSQL News
-   - Keyword: how to build postgresql news
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-5. How to fund Rust contributors: What It Means for AI/CS Students
-   - Source: Rust Blog
-   - Keyword: how to build rust blog
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
-6. pg_ivm 1.17 released: What It Means for AI/CS Students
-   - Source: PostgreSQL News
-   - Keyword: how to build postgresql news
-   - Monetization angle: how to build and ship this update as a student project
-   - CTA: Resources stack + roadmap
 
 ## Operator Action Queue
 1. [P3] Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows. These live in the Vercel environment; check them there or run this agent with those variables set.
@@ -98,6 +98,6 @@ Internal target: $10.00/month (private operator metric)
 ## Draft Generation
 - Draft slots per run: 2
 - New drafts generated: 2
-- docs/agent/drafts/20261026--20261026-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-off-edf59637.md
-- docs/agent/drafts/20261026--20261026-how-fanatics-and-openai-streamline-the-fan-experience-eb7708c5.md
+- docs/agent/drafts/20261102--20261102-prepare-web-content-for-amazon-bedrock-knowledge-bases-with-craw-cb7e6c40.md
+- docs/agent/drafts/20261102--20261102-build-efficient-agents-with-knowledge-distillation-on-amazon-sag-de143405.md
 
