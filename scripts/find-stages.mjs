@@ -49,6 +49,7 @@ const ROOT = process.cwd();
 const SOURCES = path.join(ROOT, "src/content/stage-sources.json");
 const STAGES = path.join(ROOT, "src/content/stages.json");
 const OUT_DIR = path.join(ROOT, "docs/agent");
+const REJECTIONS = path.join(ROOT, "docs/agent/stage-rejections.json");
 const OUT_MD = path.join(OUT_DIR, "stage-candidates.md");
 const OUT_JSON = path.join(OUT_DIR, "stage-candidates.json");
 
@@ -427,6 +428,46 @@ const settlesAsUs = (location) =>
       return US_STATE_NAMES.has(lower) && !AMBIGUOUS_STATE_NAMES.has(lower);
     });
 
+/*
+ * Candidates a person already opened, read, and said no to.
+ *
+ * The filter below only compared against what is ALREADY ON THE BOARD, so
+ * anything judged and rejected came back the following week, every week. Seven
+ * did on 30 October -- a Philips occupational-safety role that matched on the
+ * word "securite", three NXP chip-design internships, and three good roles in
+ * countries with no page to carry them. Re-judging the same seven every Monday
+ * is how a review list stops being read: when most of it is work you have
+ * already done, you skim, and the one new listing goes past with the rest.
+ *
+ * The two reasons behave differently on purpose:
+ *
+ *   off-topic           permanent. A role that is not AI or cybersecurity will
+ *                       not become one.
+ *   country-not-served  conditional. The role was fine; only the board was
+ *                       missing a page for its country. If SERVED_COUNTRIES
+ *                       ever gains that country, the listing is wanted, so the
+ *                       rejection lapses on its own rather than hiding it.
+ *
+ * Anything with an unknown reason is NOT skipped. A rejection file that
+ * silently swallows candidates because of a typo in a reason string would be
+ * invisible -- the listing simply never appears, and nothing says why.
+ */
+export function isRejected(candidate, rejections, servedCountries = SERVED_COUNTRIES) {
+  const bare = (href) => String(href ?? "").split(/[?#]/)[0];
+  const href = bare(candidate?.href);
+  if (!href) return false;
+
+  const match = (rejections?.items ?? []).find((r) => bare(r.href) === href);
+  if (!match) return false;
+
+  if (match.reason === "off-topic") return true;
+  if (match.reason === "country-not-served") {
+    // Served now: the only thing that was wrong has been fixed, so offer it.
+    return !(match.country && servedCountries.has(match.country));
+  }
+  return false;
+}
+
 export function splitLocation(location) {
   // Several locations in one string: take the first and let the reviewer see
   // the rest in the link. Greenhouse uses semicolons where Workday uses
@@ -728,6 +769,18 @@ if (invokedDirectly) {
   }
   DISPLAY_NAMES = sources.displayNames ?? {};
   const stages = JSON.parse(await fs.readFile(STAGES, "utf8"));
+  /*
+   * Missing or malformed rejections must not stop the finder: the worst case
+   * of reading none is the old behaviour, a few already-judged candidates
+   * offered again. Failing the run instead would cost a week of listings over
+   * a bookkeeping file.
+   */
+  let rejections = { items: [] };
+  try {
+    rejections = JSON.parse(await fs.readFile(REJECTIONS, "utf8"));
+  } catch {
+    console.warn(`find-stages: no readable ${path.relative(ROOT, REJECTIONS)}; offering every candidate.`);
+  }
 
   console.log(`\n  Searching ${
     (sources.greenhouse?.length ?? 0) +
@@ -763,7 +816,10 @@ if (invokedDirectly) {
   const seenHref = new Set(stages.items.map((i) => bareUrl(i.href)));
   const seenPair = new Set(stages.items.map((i) => `${i.company}|${i.role}`.toLowerCase()));
   const fresh = candidates.filter(
-    (c) => !seenHref.has(bareUrl(c.href)) && !seenPair.has(`${c.company}|${c.role}`.toLowerCase())
+    (c) =>
+      !seenHref.has(bareUrl(c.href)) &&
+      !seenPair.has(`${c.company}|${c.role}`.toLowerCase()) &&
+      !isRejected(c, rejections)
   );
 
   const unique = [];

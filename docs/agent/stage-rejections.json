@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-02",
+  "note": "Candidates a person opened, read, and said no to. find-stages.mjs skips these so the weekly review file does not re-offer work already judged. See scripts/find-stages.mjs for how each reason behaves.",
+  "items": [
+    {
+      "href": "https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Suresnes/Stagiaire-HSE--Hygine--Scurit--Environnement----Janvier-2027_592983",
+      "company": "Philips",
+      "role": "Stagiaire HSE (Hygiène, Sécurité, Environnement) _ Janvier 2027",
+      "rejectedAt": "2026-10-30",
+      "reason": "off-topic",
+      "detail": "Occupational health and safety: ISO 45001, risk prevention, reporting to the Health Safety Manager. It matched the filter on the word 'sécurité'."
+    },
+    {
+      "href": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Caen/Stage-Ingnieur---Conception-Numrique-SoC---Design-for-Test--F-H-_R-10064623-1",
+      "company": "NXP Semiconductors",
+      "role": "Stage Ingénieur : Conception Numérique SoC - Design for Test (F/H)",
+      "rejectedAt": "2026-10-30",
+      "reason": "off-topic",
+      "detail": "Digital IC design and production test. Real internship, not AI and not cybersecurity."
+    },
+    {
+      "href": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Toulouse/Stage-Ingnieur----Vrification-d-architectures-d-interconnexion-pour-SoC-automobiles--F-H-_R-10067015",
+      "company": "NXP Semiconductors",
+      "role": "Stage Ingénieur : Vérification d'architectures d'interconnexion pour SoC automobiles (F/H)",
+      "rejectedAt": "2026-10-30",
+      "reason": "off-topic",
+      "detail": "Functional verification of automotive SoCs. Hardware engineering, not AI or security."
+    },
+    {
+      "href": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Toulouse/Stage-Ingnieur---Automatisation-de-la-validation-PMIC-pour-la-scurit-automobile--F-H-_R-10066821",
+      "company": "NXP Semiconductors",
+      "role": "Stage Ingénieur : Automatisation de la validation PMIC pour la sécurité automobile (F/H)",
+      "rejectedAt": "2026-10-30",
+      "reason": "off-topic",
+      "detail": "PMIC validation under ISO 26262. 'Sécurité automobile' here is functional safety, not security."
+    },
+    {
+      "href": "https://jobs.ashbyhq.com/perplexity/9246cf02-26fd-4ae8-90c5-639c6e85e9e2",
+      "company": "Perplexity",
+      "role": "Internship - Search Machine Learning Engineer",
+      "rejectedAt": "2026-10-30",
+      "reason": "country-not-served",
+      "country": "RS",
+      "detail": "Belgrade. A good role; there is no country page to carry it."
+    },
+    {
+      "href": "https://jobs.smartrecruiters.com/BoschGroup/744000158674030",
+      "company": "Robert Bosch",
+      "role": "[Internship Program Q1 2027] AI Engineer Intern",
+      "rejectedAt": "2026-10-30",
+      "reason": "country-not-served",
+      "country": "VN",
+      "detail": "Ho Chi Minh City. A good role; there is no country page to carry it."
+    },
+    {
+      "href": "https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Shanghai/AI-Data-Scientist-Intern_589226",
+      "company": "Philips",
+      "role": "AI Imaging Data Scientist Intern",
+      "rejectedAt": "2026-10-30",
+      "reason": "country-not-served",
+      "country": "CN",
+      "detail": "Shanghai. A good role; there is no country page to carry it."
+    }
+  ]
+}
