@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-03T14:08:21.831Z",
+  "updatedAt": "2026-11-03T23:19:26.247Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -23,42 +23,102 @@
       }
     },
     {
-      "slug": "20261103-anthropic-platform-ai-for-science-expands-to-foundations-and-res-ad10900d",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
+      "slug": "20261103-claude-expanding-our-partnership-with-gsa-to-bring-claude-to-all-16faca12",
+      "toolName": "Claude",
+      "category": "AI Assistant",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-      "publishedAt": "2026-11-03T14:08:21.831Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "href": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "AI for Science expands to foundations and research institutions",
-          "summary": "AI for Science expands to foundations and research institutions"
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
         },
         "fr": {
-          "title": "AI for Science expands to foundations and research institutions",
-          "summary": "AI for Science expands to foundations and research institutions"
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
         }
       }
     },
     {
-      "slug": "20261103-vercel-evaluate-vercel-flags-from-another-project-without-sharin-c9352982",
+      "slug": "20261103-vercel-vercel-security-review-now-in-public-beta-vercel-security-f537ef36",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/evaluate-vercel-flags-from-another-project-without-sharing-sdk-keys",
-      "publishedAt": "2026-11-03T14:08:21.831Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "href": "https://vercel.com/changelog/vercel-security-review-public-beta",
+      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Evaluate Vercel Flags from another project without sharing SDK keys. Project Connections let applications evaluate flags defined in another Vercel project. Vincent Derks, Rauno Freiberg",
-          "summary": "m-lienard-128.jpg\"/> Joe Haddad, Tom Lienard"
+          "title": "Vercel Security Review now in public beta Vercel Security Review is now in public beta. Every push to your GitHub repositories is reviewed for vulnerabilities, and Vercel Agent can open the fix. +3 Nate McGrady, Karim Rahal, and 3 others",
+          "summary": "3 November 3 Nov"
         },
         "fr": {
-          "title": "Evaluate Vercel Flags from another project without sharing SDK keys. Project Connections let applications evaluate flags defined in another Vercel project. Vincent Derks, Rauno Freiberg",
-          "summary": "m-lienard-128.jpg\"/> Joe Haddad, Tom Lienard"
+          "title": "Vercel Security Review now in public beta Vercel Security Review is now in public beta. Every push to your GitHub repositories is reviewed for vulnerabilities, and Vercel Agent can open the fix. +3 Nate McGrady, Karim Rahal, and 3 others",
+          "summary": "3 November 3 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261103-nvidia-run-ai-models-for-edge-application-development-with-just--e060e1d4",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+      "publishedAt": "2026-11-03T20:37:09.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
+        },
+        "fr": {
+          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-github-dependabot-version-updates-support-agent-package-manager-51a16b58",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+      "publishedAt": "2026-11-03T20:24:07.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "Dependabot version updates support Agent Package Manager",
+          "summary": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot versio…"
+        },
+        "fr": {
+          "title": "Dependabot version updates support Agent Package Manager",
+          "summary": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot versio…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-hugging-face-statebench-testing-how-language-models-track-state--a55665cf",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/statebench",
+      "publishedAt": "2026-11-03T17:15:21.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "StateBench: Testing how language models track state changes over long documents",
+          "summary": "StateBench: Testing how language models track state changes over long documents"
+        },
+        "fr": {
+          "title": "StateBench: Testing how language models track state changes over long documents",
+          "summary": "StateBench: Testing how language models track state changes over long documents"
         }
       }
     },
@@ -83,82 +143,62 @@
       }
     },
     {
-      "slug": "20261103-github-dependabot-now-supports-python-315-342dbac0",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-03-dependabot-now-supports-python-3-15",
-      "publishedAt": "2026-11-03T13:49:32.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
-      "locales": {
-        "en": {
-          "title": "Dependabot now supports Python 3.15",
-          "summary": "You can now upgrade your projects to Python 3.15 and keep receiving Dependabot updates. Support for Python 3.15 is available to all github.com users and will be included in GitHub… The post Dependabot now supports Pytho…"
-        },
-        "fr": {
-          "title": "Dependabot now supports Python 3.15",
-          "summary": "You can now upgrade your projects to Python 3.15 and keep receiving Dependabot updates. Support for Python 3.15 is available to all github.com users and will be included in GitHub… The post Dependabot now supports Pytho…"
-        }
-      }
-    },
-    {
-      "slug": "20261103-chatgpt-heimstaden-is-changing-residential-real-estate-managemen-08b710f1",
+      "slug": "20261103-chatgpt-accelerating-engineering-for-the-physical-world-26c6032e",
       "toolName": "ChatGPT",
       "category": "AI Assistant",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/heimstaden",
-      "publishedAt": "2026-11-03T08:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "href": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "publishedAt": "2026-11-03T12:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Heimstaden is changing residential real estate management with AI",
-          "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe."
+          "title": "Accelerating engineering for the physical world",
+          "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world."
         },
         "fr": {
-          "title": "Heimstaden is changing residential real estate management with AI",
-          "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe."
+          "title": "Accelerating engineering for the physical world",
+          "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world."
         }
       }
     },
     {
-      "slug": "20261103-hugging-face-transformers-model-integration-contracts-fec0e46c",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/transformers-mic",
+      "slug": "20261103-rust-announcing-rustup-1293-2027eeb4",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/11/03/Rustup-1.29.3/",
       "publishedAt": "2026-11-03T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Transformers Model Integration Contracts",
-          "summary": "Transformers Model Integration Contracts"
+          "title": "Announcing rustup 1.29.3",
+          "summary": "The rustup team has published a new point release of rustup, 1.29.3. Rustup is the recommended tool to install Rust , a programming language that empowers everyone to build reliable and efficient software. What's new in…"
         },
         "fr": {
-          "title": "Transformers Model Integration Contracts",
-          "summary": "Transformers Model Integration Contracts"
+          "title": "Announcing rustup 1.29.3",
+          "summary": "The rustup team has published a new point release of rustup, 1.29.3. Rustup is the recommended tool to install Rust , a programming language that empowers everyone to build reliable and efficient software. What's new in…"
         }
       }
     },
     {
-      "slug": "20261102-nvidia-diagnose-distributed-ai-workload-failures-with-nvidia-att-53eb05fa",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
-      "publishedAt": "2026-11-02T23:39:38.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "slug": "20261103-github-pgbadger-v133-has-been-released-d6c21ac3",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgbadger-v133-has-been-released-3435/",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
-          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
+          "title": "pgbadger v13.3 has been released",
+          "summary": "Antananarivo, Madagascar - November 03, 2026 pgBadger pgBadger is a PostgreSQL performance analyzer, built for speed with fully detailed reports based on your PostgreSQL log files. pgBadger 13.3 was released today, this…"
         },
         "fr": {
-          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
-          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
+          "title": "pgbadger v13.3 has been released",
+          "summary": "Antananarivo, Madagascar - November 03, 2026 pgBadger pgBadger is a PostgreSQL performance analyzer, built for speed with fully detailed reports based on your PostgreSQL log files. pgBadger 13.3 was released today, this…"
         }
       }
     },
@@ -219,26 +259,6 @@
         "fr": {
           "title": "Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You",
           "summary": "The guide is designed to help solopreneurs prioritize and implement a selection of actions from the NIST Cybersecurity Framework that would best help their businesses."
-        }
-      }
-    },
-    {
-      "slug": "20261102-postgresql-security-release-for-psqlodbc-6786d77d",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/security-release-for-psqlodbc-3431/",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "Security release for psqlodbc",
-          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
-        },
-        "fr": {
-          "title": "Security release for psqlodbc",
-          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
         }
       }
     },
@@ -343,26 +363,6 @@
       }
     },
     {
-      "slug": "20261026-github-how-to-fund-rust-contributors-afa4745e",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/10/26/how-to-fund-rust-contributors/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T12:55:55.206Z",
-      "locales": {
-        "en": {
-          "title": "How to fund Rust contributors",
-          "summary": "TLDR: To fund general maintenance, donate to the Rust Foundation Maintainers Fund or sponsor the RustNL Maintainers Team To fund specific features and improvements, sponsor fundable Rust Project Goals To fund individual…"
-        },
-        "fr": {
-          "title": "How to fund Rust contributors",
-          "summary": "TLDR: To fund general maintenance, donate to the Rust Foundation Maintainers Fund or sponsor the RustNL Maintainers Team To fund specific features and improvements, sponsor fundable Rust Project Goals To fund individual…"
-        }
-      }
-    },
-    {
       "slug": "20261019-notion-agents-rebuilt-to-do-more-for-less-286ca2db",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -403,42 +403,102 @@
       }
     },
     {
-      "slug": "20261103-anthropic-platform-open-call-for-guest-investigators-in-the-life-98d45c75",
+      "slug": "20261103-anthropic-platform-donating-agent-skills-to-the-agentic-ai-found-86405d6d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "publishedAt": "2026-11-03T14:08:21.831Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "href": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
         },
         "fr": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
         }
       }
     },
     {
-      "slug": "20261103-vercel-projects-can-now-be-configured-with-verceltoml-vercel-now-d9f477ed",
+      "slug": "20261103-vercel-vercel-ci-no-longer-requires-a-linked-vercel-project-you--52e9b971",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/projects-can-now-be-configured-with-vercel-toml",
-      "publishedAt": "2026-11-03T00:56:41.966Z",
+      "href": "https://vercel.com/changelog/vercel-ci-no-longer-requires-a-linked-vercel-project",
+      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "Vercel CI no longer requires a linked Vercel project You can now use Vercel CI standalone. It is not longer a requirement to have a Vercel project as a pre-requisite Vojtech Miksu",
+          "summary": "+3 Nate McGrady, Karim Rahal, and 3 others"
+        },
+        "fr": {
+          "title": "Vercel CI no longer requires a linked Vercel project You can now use Vercel CI standalone. It is not longer a requirement to have a Vercel project as a pre-requisite Vojtech Miksu",
+          "summary": "+3 Nate McGrady, Karim Rahal, and 3 others"
+        }
+      }
+    },
+    {
+      "slug": "20261102-nvidia-diagnose-distributed-ai-workload-failures-with-nvidia-att-53eb05fa",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+      "publishedAt": "2026-11-02T23:39:38.000Z",
       "discoveredAt": "2026-11-03T00:56:41.966Z",
       "locales": {
         "en": {
-          "title": "Projects can now be configured with vercel.toml Vercel now supports vercel.toml, which allows you to to configure your project using the TOML configuration format Michael J. Sullivan, Ricardo Gonzalez",
-          "summary": "2 November 2 Nov"
+          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
         },
         "fr": {
-          "title": "Projects can now be configured with vercel.toml Vercel now supports vercel.toml, which allows you to to configure your project using the TOML configuration format Michael J. Sullivan, Ricardo Gonzalez",
-          "summary": "2 November 2 Nov"
+          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-github-look-up-a-resources-cost-center-with-the-github-rest-api-946f3d39",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-03-look-up-a-resources-cost-center-with-the-github-rest-api",
+      "publishedAt": "2026-11-03T15:27:13.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "Look up a resource’s cost center with the GitHub REST API",
+          "summary": "You can now use the GitHub REST API to find which cost center a user, organization, repository, or enterprise team belongs to. Previously, you had to list every cost center… The post Look up a resource’s cost center wit…"
+        },
+        "fr": {
+          "title": "Look up a resource’s cost center with the GitHub REST API",
+          "summary": "You can now use the GitHub REST API to find which cost center a user, organization, repository, or enterprise team belongs to. Previously, you had to list every cost center… The post Look up a resource’s cost center wit…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-hugging-face-palette-teaching-a-small-model-to-build-decks-in-yo-bc417703",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "publishedAt": "2026-11-03T16:35:36.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "Palette: teaching a small model to build decks in your design language",
+          "summary": "Palette: teaching a small model to build decks in your design language"
+        },
+        "fr": {
+          "title": "Palette: teaching a small model to build decks in your design language",
+          "summary": "Palette: teaching a small model to build decks in your design language"
         }
       }
     },
@@ -463,82 +523,62 @@
       }
     },
     {
-      "slug": "20261103-github-github-desktop-adds-short-lived-authentication-tokens-d29389a0",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-02-github-desktop-adds-short-lived-authentication-tokens",
-      "publishedAt": "2026-11-03T07:55:58.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
-      "locales": {
-        "en": {
-          "title": "GitHub Desktop adds short-lived authentication tokens",
-          "summary": "When you sign in to GitHub Desktop 3.6.10 or later, eligible accounts can now use short-lived, automatically refreshing authentication tokens. Short-lived access tokens reduce how long a leaked token can… The post GitHu…"
-        },
-        "fr": {
-          "title": "GitHub Desktop adds short-lived authentication tokens",
-          "summary": "When you sign in to GitHub Desktop 3.6.10 or later, eligible accounts can now use short-lived, automatically refreshing authentication tokens. Short-lived access tokens reduce how long a leaked token can… The post GitHu…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-openai-platform-rewarding-defenders-with-bigger-bug-bounties-6fd6ad79",
+      "slug": "20261103-openai-platform-how-cisco-defends-at-machine-speed-with-openai-a2357e70",
       "toolName": "OpenAI Platform",
       "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "publishedAt": "2026-11-02T18:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "href": "https://openai.com/index/cisco-cyber",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Rewarding defenders with bigger bug bounties",
-          "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
+          "title": "How Cisco defends at machine speed with OpenAI",
+          "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses."
         },
         "fr": {
-          "title": "Rewarding defenders with bigger bug bounties",
-          "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
+          "title": "How Cisco defends at machine speed with OpenAI",
+          "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses."
         }
       }
     },
     {
-      "slug": "20261030-hugging-face-nemotron-halloween-b2263e9f",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "publishedAt": "2026-10-30T17:57:24.000Z",
-      "discoveredAt": "2026-10-30T22:15:48.157Z",
+      "slug": "20261026-github-how-to-fund-rust-contributors-afa4745e",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/10/26/how-to-fund-rust-contributors/",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T12:55:55.206Z",
       "locales": {
         "en": {
-          "title": "nemotron-halloween",
-          "summary": "nemotron-halloween"
+          "title": "How to fund Rust contributors",
+          "summary": "TLDR: To fund general maintenance, donate to the Rust Foundation Maintainers Fund or sponsor the RustNL Maintainers Team To fund specific features and improvements, sponsor fundable Rust Project Goals To fund individual…"
         },
         "fr": {
-          "title": "nemotron-halloween",
-          "summary": "nemotron-halloween"
+          "title": "How to fund Rust contributors",
+          "summary": "TLDR: To fund general maintenance, donate to the Rust Foundation Maintainers Fund or sponsor the RustNL Maintainers Team To fund specific features and improvements, sponsor fundable Rust Project Goals To fund individual…"
         }
       }
     },
     {
-      "slug": "20261102-nvidia-keep-distributed-training-running-with-automated-workload-039049f2",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
-      "publishedAt": "2026-11-02T22:43:09.000Z",
+      "slug": "20261102-postgresql-security-release-for-psqlodbc-6786d77d",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/security-release-for-psqlodbc-3431/",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
       "discoveredAt": "2026-11-03T00:56:41.966Z",
       "locales": {
         "en": {
-          "title": "Keep Distributed Training Running with Automated Workload Recovery",
-          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
+          "title": "Security release for psqlodbc",
+          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
         },
         "fr": {
-          "title": "Keep Distributed Training Running with Automated Workload Recovery",
-          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
+          "title": "Security release for psqlodbc",
+          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
         }
       }
     },
@@ -599,26 +639,6 @@
         "fr": {
           "title": "NIST Report Provides Guidelines for Transition to Post-Quantum Cryptography Standards",
           "summary": "This report describes the timelines and migration activities for federal agencies, and it can serve as a key resource for technology providers and organizations that are developing their quantum-readiness road maps."
-        }
-      }
-    },
-    {
-      "slug": "20261102-github-hypopg-145-is-out-ebbd1267",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/hypopg-145-is-out-3428/",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "HypoPG 1.4.5 is out!",
-          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog…"
-        },
-        "fr": {
-          "title": "HypoPG 1.4.5 is out!",
-          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog…"
         }
       }
     },
@@ -723,26 +743,6 @@
       }
     },
     {
-      "slug": "20261020-rust-announcing-rustup-1292-80384129",
-      "toolName": "Rust",
-      "category": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/10/20/Rustup-1.29.2/",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:09.861Z",
-      "locales": {
-        "en": {
-          "title": "Announcing rustup 1.29.2",
-          "summary": "The rustup team is happy to announce the release of rustup version 1.29.2. Rustup is the recommended tool to install Rust , a programming language that empowers everyone to build reliable and efficient software. What's…"
-        },
-        "fr": {
-          "title": "Announcing rustup 1.29.2",
-          "summary": "The rustup team is happy to announce the release of rustup version 1.29.2. Rustup is the recommended tool to install Rust , a programming language that empowers everyone to build reliable and efficient software. What's…"
-        }
-      }
-    },
-    {
       "slug": "20261013-notion-notion-38-context-for-your-agents-66f0e572",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -763,62 +763,122 @@
       }
     },
     {
-      "slug": "20261103-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
+      "slug": "20261103-supabase-organization-invites-support-the-no-access-role-fba375fa",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
-      "publishedAt": "2026-11-03T14:08:21.831Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "href": "https://supabase.com/changelog/no-access-org-role",
+      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         },
         "fr": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         }
       }
     },
     {
-      "slug": "20261103-anthropic-platform-preparing-for-the-2026-us-midterms-c9ddbc2b",
+      "slug": "20261103-anthropic-platform-strengthening-our-defenses-against-distillati-7f42709d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-us-midterms",
-      "publishedAt": "2026-11-03T14:08:21.831Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "href": "https://www.anthropic.com/news/distillation-defenses",
+      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Preparing for the 2026 US midterms",
-          "summary": "Preparing for the 2026 US midterms"
+          "title": "Strengthening our defenses against distillation attacks",
+          "summary": "Strengthening our defenses against distillation attacks"
         },
         "fr": {
-          "title": "Preparing for the 2026 US midterms",
-          "summary": "Preparing for the 2026 US midterms"
+          "title": "Strengthening our defenses against distillation attacks",
+          "summary": "Strengthening our defenses against distillation attacks"
         }
       }
     },
     {
-      "slug": "20261103-vercel-vercel-mcp-now-supports-client-id-metadata-documents-verc-9a0861c2",
+      "slug": "20261103-vercel-diagnose-vercel-cli-setup-problems-with-vercel-doctor-dia-72f374bb",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-mcp-now-supports-client-id-metadata-documents",
-      "publishedAt": "2026-11-03T00:56:41.966Z",
+      "href": "https://vercel.com/changelog/vercel-cli-now-diagnoses-setup-problems-with-vercel-doctor",
+      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "Diagnose Vercel CLI setup problems with vercel doctor Diagnose Vercel CLI setup problems with vercel doctor. It checks your CLI version, login, team, project link, and vercel.json, and suggests fixes. Melkey Moksyakov Software Engineer",
+          "summary": "Vojtech Miksu"
+        },
+        "fr": {
+          "title": "Diagnose Vercel CLI setup problems with vercel doctor Diagnose Vercel CLI setup problems with vercel doctor. It checks your CLI version, login, team, project link, and vercel.json, and suggests fixes. Melkey Moksyakov Software Engineer",
+          "summary": "Vojtech Miksu"
+        }
+      }
+    },
+    {
+      "slug": "20261102-nvidia-keep-distributed-training-running-with-automated-workload-039049f2",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
+      "publishedAt": "2026-11-02T22:43:09.000Z",
       "discoveredAt": "2026-11-03T00:56:41.966Z",
       "locales": {
         "en": {
-          "title": "Vercel MCP now supports Client ID Metadata Documents Vercel MCP now accepts Client ID Metadata Documents (CIMD) as OAuth client IDs, so MCP clients connect without pre-registration or allowlisting. Josh Souphanthong, Mark Roberts",
-          "summary": "jpg\"/> Michael J. Sullivan, Ricardo Gonzalez"
+          "title": "Keep Distributed Training Running with Automated Workload Recovery",
+          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
         },
         "fr": {
-          "title": "Vercel MCP now supports Client ID Metadata Documents Vercel MCP now accepts Client ID Metadata Documents (CIMD) as OAuth client IDs, so MCP clients connect without pre-registration or allowlisting. Josh Souphanthong, Mark Roberts",
-          "summary": "jpg\"/> Michael J. Sullivan, Ricardo Gonzalez"
+          "title": "Keep Distributed Training Running with Automated Workload Recovery",
+          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-github-copilot-github-copilot-is-now-available-in-jetbrains-air-9c22661c",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
+      "publishedAt": "2026-11-03T15:11:46.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Copilot is now available in JetBrains Air",
+          "summary": "You can now delegate coding tasks, guide execution, and review results with GitHub Copilot in JetBrains Air. The integration uses the Agent Client Protocol (ACP) and supports tasks in your… The post GitHub Copilot is no…"
+        },
+        "fr": {
+          "title": "GitHub Copilot is now available in JetBrains Air",
+          "summary": "You can now delegate coding tasks, guide execution, and review results with GitHub Copilot in JetBrains Air. The integration uses the Agent Client Protocol (ACP) and supports tasks in your… The post GitHub Copilot is no…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-hugging-face-cwe-bench-v2-more-coverage-quality-and-transparency-20954e3a",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/cwe-bench",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "CWE-bench v2: More coverage, quality, and transparency",
+          "summary": "CWE-bench v2: More coverage, quality, and transparency"
+        },
+        "fr": {
+          "title": "CWE-bench v2: More coverage, quality, and transparency",
+          "summary": "CWE-bench v2: More coverage, quality, and transparency"
         }
       }
     },
@@ -843,82 +903,62 @@
       }
     },
     {
-      "slug": "20261102-github-security-risk-assessments-include-repository-protection-s-dd3056a1",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-02-security-risk-assessments-include-repository-protection-status",
-      "publishedAt": "2026-11-02T15:47:21.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "Security risk assessments include repository protection status",
-          "summary": "The GitHub code security risk assessment and secret risk assessment now show whether findings are in protected or unprotected repositories, helping you identify where to extend your security coverage. Organization… The…"
-        },
-        "fr": {
-          "title": "Security risk assessments include repository protection status",
-          "summary": "The GitHub code security risk assessment and secret risk assessment now show whether findings are in protected or unprotected repositories, helping you identify where to extend your security coverage. Organization… The…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-openai-platform-preparing-our-next-security-sprint-to-harden-ope-262cfa35",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
+      "slug": "20261103-chatgpt-heimstaden-is-changing-residential-real-estate-managemen-08b710f1",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "href": "https://openai.com/index/heimstaden",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
       "discoveredAt": "2026-11-03T14:08:21.831Z",
       "locales": {
         "en": {
-          "title": "Preparing our next security sprint to harden OpenAI",
-          "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
+          "title": "Heimstaden is changing residential real estate management with AI",
+          "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe."
         },
         "fr": {
-          "title": "Preparing our next security sprint to harden OpenAI",
-          "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
+          "title": "Heimstaden is changing residential real estate management with AI",
+          "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe."
         }
       }
     },
     {
-      "slug": "20261029-hugging-face-granite-switch-411-update-models-like-you-update-so-f3538b6f",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
-      "publishedAt": "2026-10-29T13:37:07.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "slug": "20261020-rust-announcing-rustup-1292-80384129",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/10/20/Rustup-1.29.2/",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:09.861Z",
       "locales": {
         "en": {
-          "title": "Granite Switch 4.1.1 — Update models like you update software",
-          "summary": "Granite Switch 4.1.1 — Update models like you update software"
+          "title": "Announcing rustup 1.29.2",
+          "summary": "The rustup team is happy to announce the release of rustup version 1.29.2. Rustup is the recommended tool to install Rust , a programming language that empowers everyone to build reliable and efficient software. What's…"
         },
         "fr": {
-          "title": "Granite Switch 4.1.1 — Update models like you update software",
-          "summary": "Granite Switch 4.1.1 — Update models like you update software"
+          "title": "Announcing rustup 1.29.2",
+          "summary": "The rustup team is happy to announce the release of rustup version 1.29.2. Rustup is the recommended tool to install Rust , a programming language that empowers everyone to build reliable and efficient software. What's…"
         }
       }
     },
     {
-      "slug": "20261102-nvidia-nvidia-pair-virtual-inference-router-expands-available-co-291ea19a",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network/",
-      "publishedAt": "2026-11-02T19:17:17.000Z",
+      "slug": "20261102-github-hypopg-145-is-out-ebbd1267",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/hypopg-145-is-out-3428/",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
       "discoveredAt": "2026-11-03T00:56:41.966Z",
       "locales": {
         "en": {
-          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
-          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
+          "title": "HypoPG 1.4.5 is out!",
+          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog…"
         },
         "fr": {
-          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
-          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
+          "title": "HypoPG 1.4.5 is out!",
+          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog…"
         }
       }
     },
@@ -979,26 +1019,6 @@
         "fr": {
           "title": "New Chip-Based ‘Tape Measure’ for Light Could Revolutionize Mobile Timekeeping and Enhance National Security",
           "summary": "The new device could help provide vital navigation signals when GPS is either unavailable or has been jammed."
-        }
-      }
-    },
-    {
-      "slug": "20261031-github-e-maj-501-major-security-update-57a82fba",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/e-maj-501-major-security-update-3425/",
-      "publishedAt": "2026-10-31T00:00:00.000Z",
-      "discoveredAt": "2026-10-31T12:22:38.441Z",
-      "locales": {
-        "en": {
-          "title": "E-Maj 5.0.1 : Major Security Update.",
-          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encoun…"
-        },
-        "fr": {
-          "title": "E-Maj 5.0.1 : Major Security Update.",
-          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encoun…"
         }
       }
     },
@@ -1103,26 +1123,6 @@
       }
     },
     {
-      "slug": "20261015-rust-announcing-rust-1991-610e3c34",
-      "toolName": "Rust",
-      "category": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/10/15/Rust-1.99.1/",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "discoveredAt": "2026-10-15T21:20:25.847Z",
-      "locales": {
-        "en": {
-          "title": "Announcing Rust 1.99.1",
-          "summary": "The Rust team has published a new point release of Rust, 1.99.1. Rust is a programming language that is empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via…"
-        },
-        "fr": {
-          "title": "Announcing Rust 1.99.1",
-          "summary": "The Rust team has published a new point release of Rust, 1.99.1. Rust is a programming language that is empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via…"
-        }
-      }
-    },
-    {
       "slug": "20260916-notion-notion-37-agent-skills-for-your-whole-team-cd21ad33",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1143,62 +1143,122 @@
       }
     },
     {
-      "slug": "20261103-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
+      "slug": "20261103-supabase-public-alpha-supabase-go-sdk-107ff49a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/multigres-private-alpha",
-      "publishedAt": "2026-11-03T14:08:21.831Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
+      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         },
         "fr": {
-          "title": "[Private Alpha] Multigres: operating system for Postgres",
-          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         }
       }
     },
     {
-      "slug": "20261103-anthropic-platform-anthropic-opens-singapore-office-and-signs-mo-87253efe",
+      "slug": "20261103-anthropic-platform-introducing-the-anthropic-cyber-mission-db9c3550",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/singapore-office-opening",
-      "publishedAt": "2026-11-03T14:08:21.831Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+          "title": "Introducing the Anthropic Cyber Mission",
+          "summary": "Introducing the Anthropic Cyber Mission"
         },
         "fr": {
-          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+          "title": "Introducing the Anthropic Cyber Mission",
+          "summary": "Introducing the Anthropic Cyber Mission"
         }
       }
     },
     {
-      "slug": "20261103-vercel-vercel-mcp-now-renders-deployments-as-an-interactive-card-553410a0",
+      "slug": "20261103-vercel-vercel-sandbox-with-drives-now-starts-up-to-24-faster-ver-06dd68e0",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt",
-      "publishedAt": "2026-11-03T00:56:41.966Z",
+      "href": "https://vercel.com/changelog/vercel-sandbox-with-drives-now-starts-up-to-2-4x-faster",
+      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "Vercel Sandbox with Drives now starts up to 2.4× faster Vercel Sandbox now creates sandboxes that mount Drives faster. Drives attach in less time when a sandbox starts, with no SDK upgrade or configuration change. Joe Haddad, Tom Lienard",
+          "summary": "Rauno Freiberg Design Engineer"
+        },
+        "fr": {
+          "title": "Vercel Sandbox with Drives now starts up to 2.4× faster Vercel Sandbox now creates sandboxes that mount Drives faster. Drives attach in less time when a sandbox starts, with no SDK upgrade or configuration change. Joe Haddad, Tom Lienard",
+          "summary": "Rauno Freiberg Design Engineer"
+        }
+      }
+    },
+    {
+      "slug": "20261102-nvidia-nvidia-pair-virtual-inference-router-expands-available-co-291ea19a",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network/",
+      "publishedAt": "2026-11-02T19:17:17.000Z",
       "discoveredAt": "2026-11-03T00:56:41.966Z",
       "locales": {
         "en": {
-          "title": "Vercel MCP now renders deployments as an interactive card Vercel MCP now renders interactive deployment cards in MCP Apps clients like ChatGPT. Track status, view build logs, and debug deployments in chat. Josh Souphanthong, Nathan Manousos",
-          "summary": "s-128.jpg\"/> Josh Souphanthong, Mark Roberts"
+          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
+          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
         },
         "fr": {
-          "title": "Vercel MCP now renders deployments as an interactive card Vercel MCP now renders interactive deployment cards in MCP Apps clients like ChatGPT. Track status, view build logs, and debug deployments in chat. Josh Souphanthong, Nathan Manousos",
-          "summary": "s-128.jpg\"/> Josh Souphanthong, Mark Roberts"
+          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
+          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
+        }
+      }
+    },
+    {
+      "slug": "20261103-github-codeql-2273-adds-python-315-features-and-json-data-extens-1a23e774",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-03-codeql-2-27-3-adds-python-3-15-features-and-json-data-extensions",
+      "publishedAt": "2026-11-03T14:56:03.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "CodeQL 2.27.3 adds Python 3.15 features and JSON data extensions",
+          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.3. It supports new Python 3.15 language… The post CodeQL 2.2…"
+        },
+        "fr": {
+          "title": "CodeQL 2.27.3 adds Python 3.15 features and JSON data extensions",
+          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.3. It supports new Python 3.15 language… The post CodeQL 2.2…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-hugging-face-transformers-model-integration-contracts-fec0e46c",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/transformers-mic",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "locales": {
+        "en": {
+          "title": "Transformers Model Integration Contracts",
+          "summary": "Transformers Model Integration Contracts"
+        },
+        "fr": {
+          "title": "Transformers Model Integration Contracts",
+          "summary": "Transformers Model Integration Contracts"
         }
       }
     },
@@ -1223,82 +1283,62 @@
       }
     },
     {
-      "slug": "20261102-github-pullrequesttarget-blocked-by-default-december-2-0e5ffbef",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2",
-      "publishedAt": "2026-11-02T15:14:46.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "pull_request_target blocked by default December 2",
-          "summary": "Starting December 2, 2026, GitHub Actions will block pull_request_target events by default in all public repositories, unless an applicable Actions event policy explicitly allows them. Enforcement was previously schedul…"
-        },
-        "fr": {
-          "title": "pull_request_target blocked by default December 2",
-          "summary": "Starting December 2, 2026, GitHub Actions will block pull_request_target events by default in all public repositories, unless an applicable Actions event policy explicitly allows them. Enforcement was previously schedul…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-openai-platform-scaling-git-at-openai-de4cf53f",
+      "slug": "20261103-openai-platform-openai-appoints-jill-hazelbaker-as-chief-corpora-3d509e27",
       "toolName": "OpenAI Platform",
       "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/scaling-git-at-openai",
-      "publishedAt": "2026-11-02T15:30:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "href": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Scaling Git at OpenAI",
-          "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible."
+          "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+          "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning."
         },
         "fr": {
-          "title": "Scaling Git at OpenAI",
-          "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible."
+          "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+          "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning."
         }
       }
     },
     {
-      "slug": "20261029-hugging-face-announcing-project-protostar-making-publicly-funded-e1c742c1",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/announcing-project-protostar",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "slug": "20261015-rust-announcing-rust-1991-610e3c34",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/10/15/Rust-1.99.1/",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "discoveredAt": "2026-10-15T21:20:25.847Z",
       "locales": {
         "en": {
-          "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
-          "summary": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready"
+          "title": "Announcing Rust 1.99.1",
+          "summary": "The Rust team has published a new point release of Rust, 1.99.1. Rust is a programming language that is empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via…"
         },
         "fr": {
-          "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
-          "summary": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready"
+          "title": "Announcing Rust 1.99.1",
+          "summary": "The Rust team has published a new point release of Rust, 1.99.1. Rust is a programming language that is empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via…"
         }
       }
     },
     {
-      "slug": "20261102-nvidia-build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-sample-85ba4f5e",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
-      "publishedAt": "2026-11-02T19:17:11.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "slug": "20261031-github-e-maj-501-major-security-update-57a82fba",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/e-maj-501-major-security-update-3425/",
+      "publishedAt": "2026-10-31T00:00:00.000Z",
+      "discoveredAt": "2026-10-31T12:22:38.441Z",
       "locales": {
         "en": {
-          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
-          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
+          "title": "E-Maj 5.0.1 : Major Security Update.",
+          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encoun…"
         },
         "fr": {
-          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
-          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
+          "title": "E-Maj 5.0.1 : Major Security Update.",
+          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encoun…"
         }
       }
     },
@@ -1359,26 +1399,6 @@
         "fr": {
           "title": "NIST Joins White House Effort to Drive ‘A New Golden Age of Science’",
           "summary": "As the nation’s lead agency for measurement science and standards, NIST is uniquely positioned to bridge the distance between fundamental discovery and industrial capability."
-        }
-      }
-    },
-    {
-      "slug": "20261031-docker-pgadmin-4-v919-released-20829b5b",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgadmin-4-v919-released-3426/",
-      "publishedAt": "2026-10-31T00:00:00.000Z",
-      "discoveredAt": "2026-10-31T12:22:38.441Z",
-      "locales": {
-        "en": {
-          "title": "pgAdmin 4 v9.19 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE…"
-        },
-        "fr": {
-          "title": "pgAdmin 4 v9.19 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE…"
         }
       }
     },
@@ -1483,26 +1503,6 @@
       }
     },
     {
-      "slug": "20261002-rust-demoting-i686-windows-targets-to-std-only-1c2cb744",
-      "toolName": "Rust",
-      "category": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/10/02/demoting-i686-windows-targets-to-std-only/",
-      "publishedAt": "2026-10-02T00:00:00.000Z",
-      "discoveredAt": "2026-10-02T12:29:56.036Z",
-      "locales": {
-        "en": {
-          "title": "Demoting i686 Windows targets to std-only",
-          "summary": "With Rust 1.100.0, the following changes to 32-bit Windows targets will happen: i686-pc-windows-msvc Tier 1 with host tools target will be demoted to Tier 1 without host tools. i686-pc-windows-gnu Tier 2 with host tools…"
-        },
-        "fr": {
-          "title": "Demoting i686 Windows targets to std-only",
-          "summary": "With Rust 1.100.0, the following changes to 32-bit Windows targets will happen: i686-pc-windows-msvc Tier 1 with host tools target will be demoted to Tier 1 without host tools. i686-pc-windows-gnu Tier 2 with host tools…"
-        }
-      }
-    },
-    {
       "slug": "20260912-notion-see-whats-new-feab92d9",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1523,62 +1523,122 @@
       }
     },
     {
-      "slug": "20261103-supabase-aspnet-core-dependency-injection-for-the-supabase-net-s-e2f5eeb1",
+      "slug": "20261103-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/dotnet-dependency-injection-extension",
-      "publishedAt": "2026-11-03T00:56:41.966Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
-        },
-        "fr": {
-          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
-        }
-      }
-    },
-    {
-      "slug": "20261103-anthropic-platform-building-on-our-commitment-to-american-scient-26f50496",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
       "publishedAt": "2026-11-03T14:08:21.831Z",
       "discoveredAt": "2026-11-03T14:08:21.831Z",
       "locales": {
         "en": {
-          "title": "Building on our commitment to American scientific discovery",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         },
         "fr": {
-          "title": "Building on our commitment to American scientific discovery",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         }
       }
     },
     {
-      "slug": "20261103-vercel-flags-explorer-redesigned-for-easier-override-sharing-fla-6fcdcf18",
+      "slug": "20261103-anthropic-platform-2026-usage-policy-update-7a238471",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "2026 Usage Policy update",
+          "summary": "2026 Usage Policy update"
+        },
+        "fr": {
+          "title": "2026 Usage Policy update",
+          "summary": "2026 Usage Policy update"
+        }
+      }
+    },
+    {
+      "slug": "20261103-vercel-evaluate-vercel-flags-from-another-project-without-sharin-c9352982",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/flags-explorer-redesigned-for-easier-override-sharing",
-      "publishedAt": "2026-11-03T00:56:41.966Z",
+      "href": "https://vercel.com/changelog/evaluate-vercel-flags-from-another-project-without-sharing-sdk-keys",
+      "publishedAt": "2026-11-03T14:08:21.831Z",
+      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "locales": {
+        "en": {
+          "title": "Evaluate Vercel Flags from another project without sharing SDK keys. Project Connections let applications evaluate flags defined in another Vercel project. Vincent Derks, Rauno Freiberg",
+          "summary": "m-lienard-128.jpg\"/> Joe Haddad, Tom Lienard"
+        },
+        "fr": {
+          "title": "Evaluate Vercel Flags from another project without sharing SDK keys. Project Connections let applications evaluate flags defined in another Vercel project. Vincent Derks, Rauno Freiberg",
+          "summary": "m-lienard-128.jpg\"/> Joe Haddad, Tom Lienard"
+        }
+      }
+    },
+    {
+      "slug": "20261102-nvidia-build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-sample-85ba4f5e",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
+      "publishedAt": "2026-11-02T19:17:11.000Z",
       "discoveredAt": "2026-11-03T00:56:41.966Z",
       "locales": {
         "en": {
-          "title": "Flags Explorer redesigned for easier override sharing Flags Explorer has been redesigned to co-locate overrides, branch recommendations, and any related actions. Rauno Freiberg Design Engineer",
-          "summary": "al.jpg\"/> Josh Souphanthong, Nathan Manousos"
+          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
+          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
         },
         "fr": {
-          "title": "Flags Explorer redesigned for easier override sharing Flags Explorer has been redesigned to co-locate overrides, branch recommendations, and any related actions. Rauno Freiberg Design Engineer",
-          "summary": "al.jpg\"/> Josh Souphanthong, Nathan Manousos"
+          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
+          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-github-dependabot-now-supports-python-315-342dbac0",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-03-dependabot-now-supports-python-3-15",
+      "publishedAt": "2026-11-03T13:49:32.000Z",
+      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "locales": {
+        "en": {
+          "title": "Dependabot now supports Python 3.15",
+          "summary": "You can now upgrade your projects to Python 3.15 and keep receiving Dependabot updates. Support for Python 3.15 is available to all github.com users and will be included in GitHub… The post Dependabot now supports Pytho…"
+        },
+        "fr": {
+          "title": "Dependabot now supports Python 3.15",
+          "summary": "You can now upgrade your projects to Python 3.15 and keep receiving Dependabot updates. Support for Python 3.15 is available to all github.com users and will be included in GitHub… The post Dependabot now supports Pytho…"
+        }
+      }
+    },
+    {
+      "slug": "20261030-hugging-face-nemotron-halloween-b2263e9f",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "publishedAt": "2026-10-30T17:57:24.000Z",
+      "discoveredAt": "2026-10-30T22:15:48.157Z",
+      "locales": {
+        "en": {
+          "title": "nemotron-halloween",
+          "summary": "nemotron-halloween"
+        },
+        "fr": {
+          "title": "nemotron-halloween",
+          "summary": "nemotron-halloween"
         }
       }
     },
@@ -1603,82 +1663,62 @@
       }
     },
     {
-      "slug": "20261029-github-webhook-ip-ranges-added-to-the-meta-api-3bf0ecbc",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-29-webhook-ip-ranges-added-to-the-meta-api",
-      "publishedAt": "2026-10-29T17:14:38.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
-      "locales": {
-        "en": {
-          "title": "Webhook IP ranges added to the Meta API",
-          "summary": "We’re adding IP ranges for GitHub webhook deliveries on github.com. The Meta API now includes these additional ranges in the hooks field. If you maintain a static network allowlist for… The post Webhook IP ranges added…"
-        },
-        "fr": {
-          "title": "Webhook IP ranges added to the Meta API",
-          "summary": "We’re adding IP ranges for GitHub webhook deliveries on github.com. The Meta API now includes these additional ranges in the hooks field. If you maintain a static network allowlist for… The post Webhook IP ranges added…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-openai-platform-introducing-the-grid-protectors-program-19244c7a",
+      "slug": "20261102-openai-platform-rewarding-defenders-with-bigger-bug-bounties-6fd6ad79",
       "toolName": "OpenAI Platform",
       "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/grid-protectors-program",
-      "publishedAt": "2026-11-02T15:00:00.000Z",
-      "discoveredAt": "2026-11-02T15:44:45.066Z",
+      "href": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "discoveredAt": "2026-11-03T14:08:21.831Z",
       "locales": {
         "en": {
-          "title": "Introducing the Grid Protectors Program",
-          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
+          "title": "Rewarding defenders with bigger bug bounties",
+          "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
         },
         "fr": {
-          "title": "Introducing the Grid Protectors Program",
-          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
+          "title": "Rewarding defenders with bigger bug bounties",
+          "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
         }
       }
     },
     {
-      "slug": "20261029-hugging-face-welcome-le-chonk-mistral-large-4-on-hugging-face-a1765f44",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/mistral-large4",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "slug": "20261002-rust-demoting-i686-windows-targets-to-std-only-1c2cb744",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/10/02/demoting-i686-windows-targets-to-std-only/",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "discoveredAt": "2026-10-02T12:29:56.036Z",
       "locales": {
         "en": {
-          "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
-          "summary": "Welcome Le Chonk: Mistral Large 4 on Hugging Face"
+          "title": "Demoting i686 Windows targets to std-only",
+          "summary": "With Rust 1.100.0, the following changes to 32-bit Windows targets will happen: i686-pc-windows-msvc Tier 1 with host tools target will be demoted to Tier 1 without host tools. i686-pc-windows-gnu Tier 2 with host tools…"
         },
         "fr": {
-          "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
-          "summary": "Welcome Le Chonk: Mistral Large 4 on Hugging Face"
+          "title": "Demoting i686 Windows targets to std-only",
+          "summary": "With Rust 1.100.0, the following changes to 32-bit Windows targets will happen: i686-pc-windows-msvc Tier 1 with host tools target will be demoted to Tier 1 without host tools. i686-pc-windows-gnu Tier 2 with host tools…"
         }
       }
     },
     {
-      "slug": "20261102-nvidia-code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark-786c68bd",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
-      "publishedAt": "2026-11-02T19:17:06.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "slug": "20261031-docker-pgadmin-4-v919-released-20829b5b",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgadmin-4-v919-released-3426/",
+      "publishedAt": "2026-10-31T00:00:00.000Z",
+      "discoveredAt": "2026-10-31T12:22:38.441Z",
       "locales": {
         "en": {
-          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+          "title": "pgAdmin 4 v9.19 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE…"
         },
         "fr": {
-          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+          "title": "pgAdmin 4 v9.19 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE…"
         }
       }
     },
@@ -1739,26 +1779,6 @@
         "fr": {
           "title": "NIST Study Shows How the Toxic Substances Mixed Into Fentanyl Vary Across the U.S. and Change Over Time",
           "summary": "Alerting first responders and law enforcement to the presence of these dangerous chemicals in local supplies of fentanyl can help save lives."
-        }
-      }
-    },
-    {
-      "slug": "20261028-postgresql-estuary-expands-postgresql-cdc-with-targeted-backfill-c3c04b2c",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/estuary-expands-postgresql-cdc-with-targeted-backfills-and-scalable-discovery-3419/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
-      "locales": {
-        "en": {
-          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
-          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings no…"
-        },
-        "fr": {
-          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
-          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings no…"
         }
       }
     },
@@ -1863,26 +1883,6 @@
       }
     },
     {
-      "slug": "20261001-rust-announcing-rust-1990-7d7cbf9b",
-      "toolName": "Rust",
-      "category": "Systems & Backend",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/10/01/Rust-1.99.0/",
-      "publishedAt": "2026-10-01T00:00:00.000Z",
-      "discoveredAt": "2026-10-01T13:08:41.196Z",
-      "locales": {
-        "en": {
-          "title": "Announcing Rust 1.99.0",
-          "summary": "The Rust team is happy to announce a new version of Rust, 1.99.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
-        },
-        "fr": {
-          "title": "Announcing Rust 1.99.0",
-          "summary": "The Rust team is happy to announce a new version of Rust, 1.99.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
-        }
-      }
-    },
-    {
       "slug": "20260908-notion-control-which-ai-models-your-agents-can-use-5768ae4c",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1903,62 +1903,122 @@
       }
     },
     {
-      "slug": "20261103-supabase-status-page-moves-to-incidentio-7e1c5736",
+      "slug": "20261103-supabase-private-alpha-multigres-operating-system-for-postgres-ce790382",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/status-page-migration",
-      "publishedAt": "2026-11-03T00:56:41.966Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "href": "https://supabase.com/changelog/multigres-private-alpha",
+      "publishedAt": "2026-11-03T14:08:21.831Z",
+      "discoveredAt": "2026-11-03T14:08:21.831Z",
       "locales": {
         "en": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         },
         "fr": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "[Private Alpha] Multigres: operating system for Postgres",
+          "summary": "New Feature Run Supabase with multi-AZ high availability (HA), automatic failover, and scalable connection pooling. Multigres is now in Private Alpha for selected Pro, Team, and Enter"
         }
       }
     },
     {
-      "slug": "20261103-anthropic-platform-physicist-christopher-stubbs-joins-anthropics-b12d9d8f",
+      "slug": "20261103-anthropic-platform-ai-for-science-expands-to-foundations-and-res-ad10900d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "publishedAt": "2026-11-03T00:56:41.966Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "href": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "publishedAt": "2026-11-03T14:08:21.831Z",
+      "discoveredAt": "2026-11-03T14:08:21.831Z",
       "locales": {
         "en": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
         },
         "fr": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
         }
       }
     },
     {
-      "slug": "20261103-vercel-vercel-sandbox-with-drives-now-starts-up-to-24x-faster-ve-06dd68e0",
+      "slug": "20261103-vercel-projects-can-now-be-configured-with-verceltoml-vercel-now-d9f477ed",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-sandbox-with-drives-now-starts-up-to-2-4x-faster",
+      "href": "https://vercel.com/changelog/projects-can-now-be-configured-with-vercel-toml",
       "publishedAt": "2026-11-03T00:56:41.966Z",
       "discoveredAt": "2026-11-03T00:56:41.966Z",
       "locales": {
         "en": {
-          "title": "Vercel Sandbox with Drives now starts up to 2.4x faster Vercel Sandbox now creates sandboxes that mount Drives faster. Drives attach in less time when a sandbox starts, with no SDK upgrade or configuration change. Joe Haddad, Tom Lienard",
-          "summary": "Rauno Freiberg Design Engineer"
+          "title": "Projects can now be configured with vercel.toml Vercel now supports vercel.toml, which allows you to to configure your project using the TOML configuration format Michael J. Sullivan, Ricardo Gonzalez",
+          "summary": "2 November 2 Nov"
         },
         "fr": {
-          "title": "Vercel Sandbox with Drives now starts up to 2.4x faster Vercel Sandbox now creates sandboxes that mount Drives faster. Drives attach in less time when a sandbox starts, with no SDK upgrade or configuration change. Joe Haddad, Tom Lienard",
-          "summary": "Rauno Freiberg Design Engineer"
+          "title": "Projects can now be configured with vercel.toml Vercel now supports vercel.toml, which allows you to to configure your project using the TOML configuration format Michael J. Sullivan, Ricardo Gonzalez",
+          "summary": "2 November 2 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261102-nvidia-code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark-786c68bd",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
+      "publishedAt": "2026-11-02T19:17:06.000Z",
+      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "locales": {
+        "en": {
+          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+        },
+        "fr": {
+          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-github-github-desktop-adds-short-lived-authentication-tokens-d29389a0",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-02-github-desktop-adds-short-lived-authentication-tokens",
+      "publishedAt": "2026-11-03T07:55:58.000Z",
+      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Desktop adds short-lived authentication tokens",
+          "summary": "When you sign in to GitHub Desktop 3.6.10 or later, eligible accounts can now use short-lived, automatically refreshing authentication tokens. Short-lived access tokens reduce how long a leaked token can… The post GitHu…"
+        },
+        "fr": {
+          "title": "GitHub Desktop adds short-lived authentication tokens",
+          "summary": "When you sign in to GitHub Desktop 3.6.10 or later, eligible accounts can now use short-lived, automatically refreshing authentication tokens. Short-lived access tokens reduce how long a leaked token can… The post GitHu…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-hugging-face-granite-switch-411-update-models-like-you-update-so-f3538b6f",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+      "publishedAt": "2026-10-29T13:37:07.000Z",
+      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "locales": {
+        "en": {
+          "title": "Granite Switch 4.1.1 — Update models like you update software",
+          "summary": "Granite Switch 4.1.1 — Update models like you update software"
+        },
+        "fr": {
+          "title": "Granite Switch 4.1.1 — Update models like you update software",
+          "summary": "Granite Switch 4.1.1 — Update models like you update software"
         }
       }
     },
@@ -1983,82 +2043,62 @@
       }
     },
     {
-      "slug": "20261028-github-copilot-route-and-orchestrate-models-with-github-copilot--194ab4b6",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
-      "publishedAt": "2026-10-28T16:00:00.000Z",
-      "discoveredAt": "2026-10-28T22:32:01.739Z",
-      "locales": {
-        "en": {
-          "title": "Route and orchestrate models with GitHub Copilot Fusion",
-          "summary": "GitHub Copilot Fusion is generally available. Instead of picking a model for each task, choose Copilot Fusion and let Copilot intelligently route and orchestrate which models it uses for you.… The post Route and orchest…"
-        },
-        "fr": {
-          "title": "Route and orchestrate models with GitHub Copilot Fusion",
-          "summary": "GitHub Copilot Fusion is generally available. Instead of picking a model for each task, choose Copilot Fusion and let Copilot intelligently route and orchestrate which models it uses for you.… The post Route and orchest…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-openai-platform-lifeval-ed4b5825",
+      "slug": "20261102-openai-platform-preparing-our-next-security-sprint-to-harden-ope-262cfa35",
       "toolName": "OpenAI Platform",
       "category": "AI Platform",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/lifeval",
-      "publishedAt": "2026-11-02T09:00:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "href": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "discoveredAt": "2026-11-03T14:08:21.831Z",
       "locales": {
         "en": {
-          "title": "LifeVal",
-          "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork."
+          "title": "Preparing our next security sprint to harden OpenAI",
+          "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
         },
         "fr": {
-          "title": "LifeVal",
-          "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork."
+          "title": "Preparing our next security sprint to harden OpenAI",
+          "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
         }
       }
     },
     {
-      "slug": "20261029-hugging-face-introducing-anyspeechrecognizer-and-anydecisionmode-85d97525",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/anydecisionmodel",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "slug": "20261001-rust-announcing-rust-1990-7d7cbf9b",
+      "toolName": "Rust",
+      "category": "Systems & Backend",
+      "source": "Rust Blog",
+      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
+      "href": "https://blog.rust-lang.org/2026/10/01/Rust-1.99.0/",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "discoveredAt": "2026-10-01T13:08:41.196Z",
       "locales": {
         "en": {
-          "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
-          "summary": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms"
+          "title": "Announcing Rust 1.99.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.99.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
         },
         "fr": {
-          "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
-          "summary": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms"
+          "title": "Announcing Rust 1.99.0",
+          "summary": "The Rust team is happy to announce a new version of Rust, 1.99.0. Rust is a programming language empowering everyone to build reliable and efficient software. If you have a previous version of Rust installed via rustup…"
         }
       }
     },
     {
-      "slug": "20261102-nvidia-running-frontier-class-ai-models-across-8-nvidia-dgx-spar-81261272",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
-      "publishedAt": "2026-11-02T19:17:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "slug": "20261028-kubernetes-postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-884d8d8f",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-3363/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
-          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (…"
         },
         "fr": {
-          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
-          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (…"
         }
       }
     },
@@ -2119,26 +2159,6 @@
         "fr": {
           "title": "Physicist Jun Ye Wins Wolf Prize in Physics",
           "summary": "The award cites Ye’s achievement in “transformative, widely applicable advances in the control of ultracold atomic systems.”"
-        }
-      }
-    },
-    {
-      "slug": "20261028-docker-oxynote-an-open-source-internal-wiki-with-live-postgresql-8703437b",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/oxynote-an-open-source-internal-wiki-with-live-postgresql-query-charts-3406/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
-      "locales": {
-        "en": {
-          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
-          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and…"
-        },
-        "fr": {
-          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
-          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and…"
         }
       }
     },
@@ -2243,26 +2263,6 @@
       }
     },
     {
-      "slug": "20260922-docker-announcing-a-maintainer-in-residence-scott-schafer-for-th-cab455e8",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Rust Blog",
-      "sourceFeed": "https://blog.rust-lang.org/feed.xml",
-      "href": "https://blog.rust-lang.org/2026/09/22/announcing-a-maintainer-in-residence-scott-schafer-for-the-cargo-team/",
-      "publishedAt": "2026-09-22T00:00:00.000Z",
-      "discoveredAt": "2026-09-22T21:16:24.364Z",
-      "locales": {
-        "en": {
-          "title": "Announcing a Maintainer in Residence: Scott Schafer for the Cargo team",
-          "summary": "At the end of August, we announced our first Maintainers in Residence, Rust Project contributors who are funded for their upstream contributions and maintenance work from the Rust Foundation Maintainers Fund (RFMF). Sin…"
-        },
-        "fr": {
-          "title": "Announcing a Maintainer in Residence: Scott Schafer for the Cargo team",
-          "summary": "At the end of August, we announced our first Maintainers in Residence, Rust Project contributors who are funded for their upstream contributions and maintenance work from the Rust Foundation Maintainers Fund (RFMF). Sin…"
-        }
-      }
-    },
-    {
       "slug": "20260827-notion-ask-your-agent-to-suggest-edits-3d228486",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -2283,122 +2283,122 @@
       }
     },
     {
-      "slug": "20261102-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
+      "slug": "20261103-supabase-aspnet-core-dependency-injection-for-the-supabase-net-s-e2f5eeb1",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
-      "publishedAt": "2026-11-02T15:44:45.066Z",
-      "discoveredAt": "2026-11-02T15:44:45.066Z",
+      "href": "https://supabase.com/changelog/dotnet-dependency-injection-extension",
+      "publishedAt": "2026-11-03T00:56:41.966Z",
+      "discoveredAt": "2026-11-03T00:56:41.966Z",
       "locales": {
         "en": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
         },
         "fr": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
         }
       }
     },
     {
-      "slug": "20261103-anthropic-platform-an-update-on-independent-evaluators-dc9ed14d",
+      "slug": "20261103-anthropic-platform-open-call-for-guest-investigators-in-the-life-98d45c75",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "publishedAt": "2026-11-03T00:56:41.966Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "publishedAt": "2026-11-03T14:08:21.831Z",
+      "discoveredAt": "2026-11-03T14:08:21.831Z",
       "locales": {
         "en": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
         },
         "fr": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
         }
       }
     },
     {
-      "slug": "20261103-vercel-longcat-25-now-available-on-ai-gateway-use-longcat-25-thr-1df2c9e9",
+      "slug": "20261103-vercel-vercel-mcp-now-supports-client-id-metadata-documents-verc-9a0861c2",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/longcat-2-5-now-available-on-ai-gateway",
+      "href": "https://vercel.com/changelog/vercel-mcp-now-supports-client-id-metadata-documents",
       "publishedAt": "2026-11-03T00:56:41.966Z",
       "discoveredAt": "2026-11-03T00:56:41.966Z",
       "locales": {
         "en": {
-          "title": "LongCat 2.5 now available on AI Gateway Use LongCat 2.5 through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces Jerilyn Zheng, Zachary Chen",
-          "summary": "erg-128.jpg\"/> Vincent Derks, Rauno Freiberg"
+          "title": "Vercel MCP now supports Client ID Metadata Documents Vercel MCP now accepts Client ID Metadata Documents (CIMD) as OAuth client IDs, so MCP clients connect without pre-registration or allowlisting. Josh Souphanthong, Mark Roberts",
+          "summary": "jpg\"/> Michael J. Sullivan, Ricardo Gonzalez"
         },
         "fr": {
-          "title": "LongCat 2.5 now available on AI Gateway Use LongCat 2.5 through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces Jerilyn Zheng, Zachary Chen",
-          "summary": "erg-128.jpg\"/> Vincent Derks, Rauno Freiberg"
+          "title": "Vercel MCP now supports Client ID Metadata Documents Vercel MCP now accepts Client ID Metadata Documents (CIMD) as OAuth client IDs, so MCP clients connect without pre-registration or allowlisting. Josh Souphanthong, Mark Roberts",
+          "summary": "jpg\"/> Michael J. Sullivan, Ricardo Gonzalez"
         }
       }
     },
     {
-      "slug": "20261027-cloudflare-what-took-the-internet-offline-in-q3-2026-1332586c",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
-      "publishedAt": "2026-10-27T13:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:42.150Z",
-      "locales": {
-        "en": {
-          "title": "What took the Internet offline in Q3 2026",
-          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connecti…"
-        },
-        "fr": {
-          "title": "What took the Internet offline in Q3 2026",
-          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connecti…"
-        }
-      }
-    },
-    {
-      "slug": "20261028-github-copilot-github-copilot-app-universe-releases-f3aa6dba",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-10-28-github-copilot-app-universe-releases",
-      "publishedAt": "2026-10-28T15:55:00.000Z",
-      "discoveredAt": "2026-10-28T22:32:01.739Z",
-      "locales": {
-        "en": {
-          "title": "GitHub Copilot app, Universe releases",
-          "summary": "Work doesn’t always fit in a single repository or session. A feature can span several repositories. A launch plan can pull in specs, designs, and assets without touching a repository… The post GitHub Copilot app, Univer…"
-        },
-        "fr": {
-          "title": "GitHub Copilot app, Universe releases",
-          "summary": "Work doesn’t always fit in a single repository or session. A feature can span several repositories. A launch plan can pull in specs, designs, and assets without touching a repository… The post GitHub Copilot app, Univer…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-openai-platform-qodo-builds-context-into-ai-code-review-with-cod-598c6194",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/qodo-codex-plugin",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "slug": "20261102-nvidia-running-frontier-class-ai-models-across-8-nvidia-dgx-spar-81261272",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
+      "publishedAt": "2026-11-02T19:17:00.000Z",
       "discoveredAt": "2026-11-03T00:56:41.966Z",
       "locales": {
         "en": {
-          "title": "Qodo builds context into AI code review with Codex",
-          "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
+          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
+          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
         },
         "fr": {
-          "title": "Qodo builds context into AI code review with Codex",
-          "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
+          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
+          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
+        }
+      }
+    },
+    {
+      "slug": "20261102-github-security-risk-assessments-include-repository-protection-s-dd3056a1",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-02-security-risk-assessments-include-repository-protection-status",
+      "publishedAt": "2026-11-02T15:47:21.000Z",
+      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "locales": {
+        "en": {
+          "title": "Security risk assessments include repository protection status",
+          "summary": "The GitHub code security risk assessment and secret risk assessment now show whether findings are in protected or unprotected repositories, helping you identify where to extend your security coverage. Organization… The…"
+        },
+        "fr": {
+          "title": "Security risk assessments include repository protection status",
+          "summary": "The GitHub code security risk assessment and secret risk assessment now show whether findings are in protected or unprotected repositories, helping you identify where to extend your security coverage. Organization… The…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-hugging-face-announcing-project-protostar-making-publicly-funded-e1c742c1",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/announcing-project-protostar",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "locales": {
+        "en": {
+          "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+          "summary": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready"
+        },
+        "fr": {
+          "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+          "summary": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready"
         }
       }
     }
