@@ -1,7 +1,45 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-02T17:24:22.513Z",
+  "updatedAt": "2026-11-03T00:56:40.841Z",
   "items": [
+    {
+      "slug": "20261102-diagnose-distributed-ai-workload-failures-with-nvidia-attributio-53eb05fa",
+      "topic": "Computer Science",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+      "publishedAt": "2026-11-02T23:39:38.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
+        },
+        "fr": {
+          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
+        }
+      }
+    },
+    {
+      "slug": "20261102-the-latest-ai-news-we-announced-in-october-2026-b8100302",
+      "topic": "AI Systems",
+      "source": "Google AI Blog",
+      "sourceFeed": "https://blog.google/technology/ai/rss/",
+      "href": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "publishedAt": "2026-11-02T17:45:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "The latest AI news we announced in October 2026",
+          "summary": "Here are Google’s latest AI updates from October 2026"
+        },
+        "fr": {
+          "title": "The latest AI news we announced in October 2026",
+          "summary": "Here are Google’s latest AI updates from October 2026"
+        }
+      }
+    },
     {
       "slug": "20261102-prepare-web-content-for-amazon-bedrock-knowledge-bases-with-craw-cb7e6c40",
       "topic": "Computer Systems",
@@ -22,21 +60,21 @@
       }
     },
     {
-      "slug": "20261102-introducing-the-grid-protectors-program-19244c7a",
+      "slug": "20261102-scaling-git-at-openai-de4cf53f",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/grid-protectors-program",
-      "publishedAt": "2026-11-02T15:00:00.000Z",
-      "discoveredAt": "2026-11-02T15:44:43.671Z",
+      "href": "https://openai.com/index/scaling-git-at-openai",
+      "publishedAt": "2026-11-02T15:30:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
       "locales": {
         "en": {
-          "title": "Introducing the Grid Protectors Program",
-          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
+          "title": "Scaling Git at OpenAI",
+          "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible."
         },
         "fr": {
-          "title": "Introducing the Grid Protectors Program",
-          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
+          "title": "Scaling Git at OpenAI",
+          "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible."
         }
       }
     },
@@ -98,6 +136,25 @@
       }
     },
     {
+      "slug": "20261102-security-release-for-psqlodbc-6786d77d",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/security-release-for-psqlodbc-3431/",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Security release for psqlodbc",
+          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
+        },
+        "fr": {
+          "title": "Security release for psqlodbc",
+          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
+        }
+      }
+    },
+    {
       "slug": "20261101-game-off-2026-the-theme-is-shift-8efc4c26",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -132,44 +189,6 @@
         "fr": {
           "title": "An update on independent evaluators",
           "summary": "To"
-        }
-      }
-    },
-    {
-      "slug": "20261031-e-maj-501-major-security-update-57a82fba",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/e-maj-501-major-security-update-3425/",
-      "publishedAt": "2026-10-31T00:00:00.000Z",
-      "discoveredAt": "2026-10-31T12:22:37.280Z",
-      "locales": {
-        "en": {
-          "title": "E-Maj 5.0.1 : Major Security Update.",
-          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
-        },
-        "fr": {
-          "title": "E-Maj 5.0.1 : Major Security Update.",
-          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-build-world-models-for-interactive-simulation-with-nvidia-cosmos-70cecf2c",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/",
-      "publishedAt": "2026-10-30T22:17:16.000Z",
-      "discoveredAt": "2026-11-02T17:24:22.513Z",
-      "locales": {
-        "en": {
-          "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
-          "summary": "Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into..."
-        },
-        "fr": {
-          "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
-          "summary": "Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into..."
         }
       }
     },
@@ -288,25 +307,6 @@
       }
     },
     {
-      "slug": "20261026-our-newest-ai-quest-mapping-the-human-brain-be77c96c",
-      "topic": "AI Systems",
-      "source": "Google AI Blog",
-      "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
-      "publishedAt": "2026-10-26T16:00:00.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
-      "locales": {
-        "en": {
-          "title": "Our newest AI Quest: Mapping the human brain",
-          "summary": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”"
-        },
-        "fr": {
-          "title": "Our newest AI Quest: Mapping the human brain",
-          "summary": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”"
-        }
-      }
-    },
-    {
       "slug": "20261026-our-response-to-the-emudhra-key-disclosure-incident-b19d44d9",
       "topic": "Security & Standards",
       "source": "Go Blog",
@@ -364,6 +364,44 @@
       }
     },
     {
+      "slug": "20261102-keep-distributed-training-running-with-automated-workload-recove-039049f2",
+      "topic": "Computer Science",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
+      "publishedAt": "2026-11-02T22:43:09.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Keep Distributed Training Running with Automated Workload Recovery",
+          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
+        },
+        "fr": {
+          "title": "Keep Distributed Training Running with Automated Workload Recovery",
+          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
+        }
+      }
+    },
+    {
+      "slug": "20261026-our-newest-ai-quest-mapping-the-human-brain-be77c96c",
+      "topic": "AI Systems",
+      "source": "Google AI Blog",
+      "sourceFeed": "https://blog.google/technology/ai/rss/",
+      "href": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+      "publishedAt": "2026-10-26T16:00:00.000Z",
+      "discoveredAt": "2026-10-26T22:38:04.323Z",
+      "locales": {
+        "en": {
+          "title": "Our newest AI Quest: Mapping the human brain",
+          "summary": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”"
+        },
+        "fr": {
+          "title": "Our newest AI Quest: Mapping the human brain",
+          "summary": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”"
+        }
+      }
+    },
+    {
       "slug": "20261102-build-efficient-agents-with-knowledge-distillation-on-amazon-sag-de143405",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -383,21 +421,21 @@
       }
     },
     {
-      "slug": "20261030-making-it-easier-for-websites-to-express-ai-training-preferences-25cc4c9b",
+      "slug": "20261102-introducing-the-grid-protectors-program-19244c7a",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-      "publishedAt": "2026-10-30T09:30:00.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "href": "https://openai.com/index/grid-protectors-program",
+      "publishedAt": "2026-11-02T15:00:00.000Z",
+      "discoveredAt": "2026-11-02T15:44:43.671Z",
       "locales": {
         "en": {
-          "title": "Making it easier for websites to express AI training preferences",
-          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
+          "title": "Introducing the Grid Protectors Program",
+          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
         },
         "fr": {
-          "title": "Making it easier for websites to express AI training preferences",
-          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
+          "title": "Introducing the Grid Protectors Program",
+          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
         }
       }
     },
@@ -459,6 +497,25 @@
       }
     },
     {
+      "slug": "20261102-hypopg-145-is-out-ebbd1267",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/hypopg-145-is-out-3428/",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "HypoPG 1.4.5 is out!",
+          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog Bug fixes…"
+        },
+        "fr": {
+          "title": "HypoPG 1.4.5 is out!",
+          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog Bug fixes…"
+        }
+      }
+    },
+    {
       "slug": "20261028-github-universe-2026-evolving-every-layer-of-the-stack-6c275e5f",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -493,44 +550,6 @@
         "fr": {
           "title": "Preparing for the 2026 US midterms",
           "summary": "Earlier this year, we"
-        }
-      }
-    },
-    {
-      "slug": "20261031-pgadmin-4-v919-released-20829b5b",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgadmin-4-v919-released-3426/",
-      "publishedAt": "2026-10-31T00:00:00.000Z",
-      "discoveredAt": "2026-10-31T12:22:37.280Z",
-      "locales": {
-        "en": {
-          "title": "pgAdmin 4 v9.19 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
-        },
-        "fr": {
-          "title": "pgAdmin 4 v9.19 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-build-a-validated-kubernetes-runtime-for-nvidia-dynamo-1ca84190",
-      "topic": "Computer Science",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/",
-      "publishedAt": "2026-10-30T21:35:34.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
-          "summary": "Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference..."
-        },
-        "fr": {
-          "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
-          "summary": "Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference..."
         }
       }
     },
@@ -649,25 +668,6 @@
       }
     },
     {
-      "slug": "20261021-southeast-asias-digital-economy-to-hit-368-billion-1778fb27",
-      "topic": "AI Systems",
-      "source": "Google AI Blog",
-      "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
-      "publishedAt": "2026-10-21T04:00:00.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "Southeast Asia’s digital economy to hit $368 billion",
-          "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035."
-        },
-        "fr": {
-          "title": "Southeast Asia’s digital economy to hit $368 billion",
-          "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035."
-        }
-      }
-    },
-    {
       "slug": "20261021-help-set-gos-priorities-for-next-year-1ecfd1ce",
       "topic": "Systems & Backend",
       "source": "Go Blog",
@@ -706,6 +706,44 @@
       }
     },
     {
+      "slug": "20261102-nvidia-pair-virtual-inference-router-expands-available-compute-o-291ea19a",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network/",
+      "publishedAt": "2026-11-02T19:17:17.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
+          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
+        },
+        "fr": {
+          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
+          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
+        }
+      }
+    },
+    {
+      "slug": "20261021-southeast-asias-digital-economy-to-hit-368-billion-1778fb27",
+      "topic": "AI Systems",
+      "source": "Google AI Blog",
+      "sourceFeed": "https://blog.google/technology/ai/rss/",
+      "href": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+      "publishedAt": "2026-10-21T04:00:00.000Z",
+      "discoveredAt": "2026-10-21T11:44:36.882Z",
+      "locales": {
+        "en": {
+          "title": "Southeast Asia’s digital economy to hit $368 billion",
+          "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035."
+        },
+        "fr": {
+          "title": "Southeast Asia’s digital economy to hit $368 billion",
+          "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035."
+        }
+      }
+    },
+    {
       "slug": "20261102-agentic-engineering-intelligence-with-amazon-nova-multimodal-emb-624d1683",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -725,21 +763,21 @@
       }
     },
     {
-      "slug": "20261030-community-safety-report-and-new-protections-for-teens-c7606af4",
-      "topic": "Security & Standards",
+      "slug": "20261102-lifeval-ed4b5825",
+      "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-      "publishedAt": "2026-10-30T09:00:00.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "href": "https://openai.com/index/lifeval",
+      "publishedAt": "2026-11-02T09:00:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
       "locales": {
         "en": {
-          "title": "Community safety report and new protections for teens",
-          "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
+          "title": "LifeVal",
+          "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork."
         },
         "fr": {
-          "title": "Community safety report and new protections for teens",
-          "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
+          "title": "LifeVal",
+          "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork."
         }
       }
     },
@@ -801,6 +839,25 @@
       }
     },
     {
+      "slug": "20261031-e-maj-501-major-security-update-57a82fba",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/e-maj-501-major-security-update-3425/",
+      "publishedAt": "2026-10-31T00:00:00.000Z",
+      "discoveredAt": "2026-10-31T12:22:37.280Z",
+      "locales": {
+        "en": {
+          "title": "E-Maj 5.0.1 : Major Security Update.",
+          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
+        },
+        "fr": {
+          "title": "E-Maj 5.0.1 : Major Security Update.",
+          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
+        }
+      }
+    },
+    {
       "slug": "20261028-octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-b-bedf4f27",
       "topic": "AI Systems",
       "source": "GitHub Blog",
@@ -835,44 +892,6 @@
         "fr": {
           "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
           "summary": "Anthropic has"
-        }
-      }
-    },
-    {
-      "slug": "20261028-postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-884d8d8f",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-3363/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
-          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
-        },
-        "fr": {
-          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
-          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-run-ai-models-for-edge-application-development-with-just-a-few-c-e060e1d4",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
-      "publishedAt": "2026-10-30T20:33:21.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
-          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
-        },
-        "fr": {
-          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
-          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
         }
       }
     },
@@ -991,25 +1010,6 @@
       }
     },
     {
-      "slug": "20261013-gemini-4-argon-built-to-solve-your-hardest-problems-c1e94fc8",
-      "topic": "AI Systems",
-      "source": "Google AI Blog",
-      "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-      "publishedAt": "2026-10-13T16:00:00.000Z",
-      "discoveredAt": "2026-10-13T22:42:20.913Z",
-      "locales": {
-        "en": {
-          "title": "Gemini 4 Argon: Built to solve your hardest problems",
-          "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
-        },
-        "fr": {
-          "title": "Gemini 4 Argon: Built to solve your hardest problems",
-          "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
-        }
-      }
-    },
-    {
       "slug": "20261016-interactive-refactoring-in-gopls-66b01ef3",
       "topic": "Systems & Backend",
       "source": "Go Blog",
@@ -1048,6 +1048,44 @@
       }
     },
     {
+      "slug": "20261102-build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples-85ba4f5e",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
+      "publishedAt": "2026-11-02T19:17:11.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
+          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
+        },
+        "fr": {
+          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
+          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
+        }
+      }
+    },
+    {
+      "slug": "20261013-gemini-4-argon-built-to-solve-your-hardest-problems-c1e94fc8",
+      "topic": "AI Systems",
+      "source": "Google AI Blog",
+      "sourceFeed": "https://blog.google/technology/ai/rss/",
+      "href": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "discoveredAt": "2026-10-13T22:42:20.913Z",
+      "locales": {
+        "en": {
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
+        },
+        "fr": {
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
+        }
+      }
+    },
+    {
       "slug": "20261102-how-circle-k-accelerated-devops-incident-triage-to-under-15-minu-5818becf",
       "topic": "Security & Standards",
       "source": "AWS ML Blog",
@@ -1067,21 +1105,21 @@
       }
     },
     {
-      "slug": "20261030-fair-use-benefits-everyone-d2282bcc",
+      "slug": "20261102-qodo-builds-context-into-ai-code-review-with-codex-598c6194",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/fair-use-benefits-everyone",
-      "publishedAt": "2026-10-30T00:00:00.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "href": "https://openai.com/index/qodo-codex-plugin",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
       "locales": {
         "en": {
-          "title": "Fair use benefits everyone",
-          "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
+          "title": "Qodo builds context into AI code review with Codex",
+          "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
         },
         "fr": {
-          "title": "Fair use benefits everyone",
-          "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
+          "title": "Qodo builds context into AI code review with Codex",
+          "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
         }
       }
     },
@@ -1143,6 +1181,25 @@
       }
     },
     {
+      "slug": "20261031-pgadmin-4-v919-released-20829b5b",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgadmin-4-v919-released-3426/",
+      "publishedAt": "2026-10-31T00:00:00.000Z",
+      "discoveredAt": "2026-10-31T12:22:37.280Z",
+      "locales": {
+        "en": {
+          "title": "pgAdmin 4 v9.19 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
+        },
+        "fr": {
+          "title": "pgAdmin 4 v9.19 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
+        }
+      }
+    },
+    {
       "slug": "20261022-how-bug-bounty-sharpens-one-researchers-security-skills-09be57be",
       "topic": "Security & Standards",
       "source": "GitHub Blog",
@@ -1177,44 +1234,6 @@
         "fr": {
           "title": "Strengthening our defenses against distillation attacks",
           "summary": "Illicit distillat"
-        }
-      }
-    },
-    {
-      "slug": "20261028-estuary-expands-postgresql-cdc-with-targeted-backfills-and-scala-c3c04b2c",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/estuary-expands-postgresql-cdc-with-targeted-backfills-and-scalable-discovery-3419/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
-      "locales": {
-        "en": {
-          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
-          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
-        },
-        "fr": {
-          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
-          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-build-specialized-agents-on-a-stack-you-control-with-nvidia-nemo-a4deda0c",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
-      "publishedAt": "2026-10-30T15:11:46.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
-          "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces..."
-        },
-        "fr": {
-          "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
-          "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces..."
         }
       }
     },
@@ -1333,25 +1352,6 @@
       }
     },
     {
-      "slug": "20261007-introducing-playground-create-and-play-custom-games-22643d6f",
-      "topic": "AI Systems",
-      "source": "Google AI Blog",
-      "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
-      "publishedAt": "2026-10-07T12:00:00.000Z",
-      "discoveredAt": "2026-10-07T13:18:36.603Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Playground: Create and play custom games",
-          "summary": "Playground is a new experimental gaming platform that lets you create, play, and share custom games."
-        },
-        "fr": {
-          "title": "Introducing Playground: Create and play custom games",
-          "summary": "Playground is a new experimental gaming platform that lets you create, play, and share custom games."
-        }
-      }
-    },
-    {
       "slug": "20261014-better-http1-connection-reuse-1f9db072",
       "topic": "Systems & Backend",
       "source": "Go Blog",
@@ -1390,6 +1390,44 @@
       }
     },
     {
+      "slug": "20261102-code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark-786c68bd",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
+      "publishedAt": "2026-11-02T19:17:06.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+        },
+        "fr": {
+          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+        }
+      }
+    },
+    {
+      "slug": "20261007-introducing-playground-create-and-play-custom-games-22643d6f",
+      "topic": "AI Systems",
+      "source": "Google AI Blog",
+      "sourceFeed": "https://blog.google/technology/ai/rss/",
+      "href": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "publishedAt": "2026-10-07T12:00:00.000Z",
+      "discoveredAt": "2026-10-07T13:18:36.603Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Playground: Create and play custom games",
+          "summary": "Playground is a new experimental gaming platform that lets you create, play, and share custom games."
+        },
+        "fr": {
+          "title": "Introducing Playground: Create and play custom games",
+          "summary": "Playground is a new experimental gaming platform that lets you create, play, and share custom games."
+        }
+      }
+    },
+    {
       "slug": "20261030-managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-a-963a648b",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -1409,21 +1447,21 @@
       }
     },
     {
-      "slug": "20261029-an-updated-model-spec-for-more-capable-and-beneficial-ai-7bf0065c",
-      "topic": "AI Systems",
+      "slug": "20261102-openai-appoints-dan-driscoll-as-senior-counselor-for-national-se-ff138f70",
+      "topic": "Security & Standards",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/updated-model-spec",
-      "publishedAt": "2026-10-29T17:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "href": "https://openai.com/index/dan-driscoll-joins-openai",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
       "locales": {
         "en": {
-          "title": "An updated Model Spec for more capable and beneficial AI",
-          "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
+          "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+          "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies."
         },
         "fr": {
-          "title": "An updated Model Spec for more capable and beneficial AI",
-          "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
+          "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+          "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies."
         }
       }
     },
@@ -1485,6 +1523,25 @@
       }
     },
     {
+      "slug": "20261028-postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-884d8d8f",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-3363/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
+        },
+        "fr": {
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
+        }
+      }
+    },
+    {
       "slug": "20261021-the-bridge-to-agent-scale-git-infrastructure-d345d795",
       "topic": "AI Systems",
       "source": "GitHub Blog",
@@ -1519,44 +1576,6 @@
         "fr": {
           "title": "Introducing the Anthropic Cyber Mission",
           "summary": "We’re launching"
-        }
-      }
-    },
-    {
-      "slug": "20261028-oxynote-an-open-source-internal-wiki-with-live-postgresql-query--8703437b",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/oxynote-an-open-source-internal-wiki-with-live-postgresql-query-charts-3406/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
-      "locales": {
-        "en": {
-          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
-          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
-        },
-        "fr": {
-          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
-          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-how-to-check-and-configure-nvidia-gpudirect-storage-for-your-pla-d93744a1",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/",
-      "publishedAt": "2026-10-30T15:09:18.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
-          "summary": "NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path..."
-        },
-        "fr": {
-          "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
-          "summary": "NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path..."
         }
       }
     },
@@ -1675,25 +1694,6 @@
       }
     },
     {
-      "slug": "20261002-the-latest-ai-news-we-announced-in-september-2026-1122627a",
-      "topic": "AI Systems",
-      "source": "Google AI Blog",
-      "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-      "publishedAt": "2026-10-02T15:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
-      "locales": {
-        "en": {
-          "title": "The latest AI news we announced in September 2026",
-          "summary": "Here are Google’s latest AI updates from September 2026"
-        },
-        "fr": {
-          "title": "The latest AI news we announced in September 2026",
-          "summary": "Here are Google’s latest AI updates from September 2026"
-        }
-      }
-    },
-    {
       "slug": "20261002-arch-specific-simd-in-go-aa4c22f4",
       "topic": "Systems & Backend",
       "source": "Go Blog",
@@ -1732,6 +1732,44 @@
       }
     },
     {
+      "slug": "20261102-running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes-81261272",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
+      "publishedAt": "2026-11-02T19:17:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
+          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
+        },
+        "fr": {
+          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
+          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
+        }
+      }
+    },
+    {
+      "slug": "20261002-the-latest-ai-news-we-announced-in-september-2026-1122627a",
+      "topic": "AI Systems",
+      "source": "Google AI Blog",
+      "sourceFeed": "https://blog.google/technology/ai/rss/",
+      "href": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "publishedAt": "2026-10-02T15:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "The latest AI news we announced in September 2026",
+          "summary": "Here are Google’s latest AI updates from September 2026"
+        },
+        "fr": {
+          "title": "The latest AI news we announced in September 2026",
+          "summary": "Here are Google’s latest AI updates from September 2026"
+        }
+      }
+    },
+    {
       "slug": "20261030-preview-web-apps-live-as-your-coding-agent-builds-them-with-amaz-168738aa",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -1751,21 +1789,21 @@
       }
     },
     {
-      "slug": "20261029-how-we-detect-frontier-model-misalignment-d28967fc",
+      "slug": "20261030-making-it-easier-for-websites-to-express-ai-training-preferences-25cc4c9b",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-      "publishedAt": "2026-10-29T09:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "href": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "publishedAt": "2026-10-30T09:30:00.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
       "locales": {
         "en": {
-          "title": "How we detect frontier model misalignment",
-          "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate."
+          "title": "Making it easier for websites to express AI training preferences",
+          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
         },
         "fr": {
-          "title": "How we detect frontier model misalignment",
-          "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate."
+          "title": "Making it easier for websites to express AI training preferences",
+          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
         }
       }
     },
@@ -1827,6 +1865,25 @@
       }
     },
     {
+      "slug": "20261028-estuary-expands-postgresql-cdc-with-targeted-backfills-and-scala-c3c04b2c",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/estuary-expands-postgresql-cdc-with-targeted-backfills-and-scalable-discovery-3419/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
+          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
+        },
+        "fr": {
+          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
+          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
+        }
+      }
+    },
+    {
       "slug": "20261020-how-3-java-champions-are-using-github-copilot-for-increased-prod-d3ec3a59",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -1861,44 +1918,6 @@
         "fr": {
           "title": "2026 Usage Policy update",
           "summary": "We’re publishi"
-        }
-      }
-    },
-    {
-      "slug": "20261028-revivedb-supabase-backups-restore-tested-against-the-source-sche-f15781fd",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/revivedb-supabase-backups-restore-tested-against-the-source-schema-3422/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
-      "locales": {
-        "en": {
-          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
-          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
-        },
-        "fr": {
-          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
-          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
-        }
-      }
-    },
-    {
-      "slug": "20261029-nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-a-1539ad47",
-      "topic": "AI Performance",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-ai-performance-per-watt/",
-      "publishedAt": "2026-10-29T19:58:59.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Vera Rubin and Blackwell Set a New Standard for Agentic AI Performance per Watt",
-          "summary": "AI agents have expanded inference from single-turn interactions into multi-step workflows that reason, invoke tools, coordinate subagents, and carry growing..."
-        },
-        "fr": {
-          "title": "NVIDIA Vera Rubin and Blackwell Set a New Standard for Agentic AI Performance per Watt",
-          "summary": "AI agents have expanded inference from single-turn interactions into multi-step workflows that reason, invoke tools, coordinate subagents, and carry growing..."
         }
       }
     },
@@ -2017,25 +2036,6 @@
       }
     },
     {
-      "slug": "20260928-watch-the-winning-trailer-from-the-future-vision-xprize-the-gift-1eadd562",
-      "topic": "AI Systems",
-      "source": "Google AI Blog",
-      "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
-      "publishedAt": "2026-09-28T19:00:00.000Z",
-      "discoveredAt": "2026-09-28T23:14:35.810Z",
-      "locales": {
-        "en": {
-          "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-          "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted."
-        },
-        "fr": {
-          "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-          "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted."
-        }
-      }
-    },
-    {
       "slug": "20260924-platform-independent-simd-in-go-e0645c8a",
       "topic": "Systems & Backend",
       "source": "Go Blog",
@@ -2074,6 +2074,44 @@
       }
     },
     {
+      "slug": "20261030-making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one-0a321f63",
+      "topic": "Computer Science",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+      "publishedAt": "2026-10-30T22:24:21.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One",
+          "summary": "Configuring and optimizing Kubernetes for new GPU hardware such as NVIDIA Vera Rubin is complex and error-prone. Drivers, kernels, runtimes, networking,..."
+        },
+        "fr": {
+          "title": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One",
+          "summary": "Configuring and optimizing Kubernetes for new GPU hardware such as NVIDIA Vera Rubin is complex and error-prone. Drivers, kernels, runtimes, networking,..."
+        }
+      }
+    },
+    {
+      "slug": "20260928-watch-the-winning-trailer-from-the-future-vision-xprize-the-gift-1eadd562",
+      "topic": "AI Systems",
+      "source": "Google AI Blog",
+      "sourceFeed": "https://blog.google/technology/ai/rss/",
+      "href": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+      "publishedAt": "2026-09-28T19:00:00.000Z",
+      "discoveredAt": "2026-09-28T23:14:35.810Z",
+      "locales": {
+        "en": {
+          "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+          "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted."
+        },
+        "fr": {
+          "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+          "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted."
+        }
+      }
+    },
+    {
       "slug": "20261030-how-worldwide-express-automated-freight-exceptions-with-amazon-b-45af7487",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2093,21 +2131,21 @@
       }
     },
     {
-      "slug": "20261029-how-ropes-gray-is-developing-ai-for-transactional-diligence-2d992828",
-      "topic": "AI Systems",
+      "slug": "20261030-community-safety-report-and-new-protections-for-teens-c7606af4",
+      "topic": "Security & Standards",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/ropes-gray-ai-diligence",
-      "publishedAt": "2026-10-29T07:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "href": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "publishedAt": "2026-10-30T09:00:00.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
       "locales": {
         "en": {
-          "title": "How Ropes & Gray is developing AI for transactional diligence",
-          "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients."
+          "title": "Community safety report and new protections for teens",
+          "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
         },
         "fr": {
-          "title": "How Ropes & Gray is developing AI for transactional diligence",
-          "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients."
+          "title": "Community safety report and new protections for teens",
+          "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
         }
       }
     },
@@ -2169,6 +2207,25 @@
       }
     },
     {
+      "slug": "20261028-oxynote-an-open-source-internal-wiki-with-live-postgresql-query--8703437b",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/oxynote-an-open-source-internal-wiki-with-live-postgresql-query-charts-3406/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
+          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
+        },
+        "fr": {
+          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
+          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
+        }
+      }
+    },
+    {
       "slug": "20261019-how-to-continue-a-github-copilot-app-session-in-vs-code-0f3dfef2",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -2203,44 +2260,6 @@
         "fr": {
           "title": "AI for Science expands to foundations and research institutions",
           "summary": "AI for Science expands to foundations and research institutions"
-        }
-      }
-    },
-    {
-      "slug": "20261028-postgresql-anonymizer-33-major-security-update-f4b74201",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-33-major-security-update-3423/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
-      "locales": {
-        "en": {
-          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
-          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
-        },
-        "fr": {
-          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
-          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
-        }
-      }
-    },
-    {
-      "slug": "20261029-unlocking-tensor-core-performance-for-machine-learning-interatom-a2355c48",
-      "topic": "AI Performance",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/",
-      "publishedAt": "2026-10-29T00:07:21.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
-          "summary": "Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These..."
-        },
-        "fr": {
-          "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
-          "summary": "Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These..."
         }
       }
     },
@@ -2359,25 +2378,6 @@
       }
     },
     {
-      "slug": "20260923-google-beam-expands-with-new-regions-partners-and-customers-8a86c970",
-      "topic": "AI Systems",
-      "source": "Google AI Blog",
-      "sourceFeed": "https://blog.google/technology/ai/rss/",
-      "href": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
-      "publishedAt": "2026-09-23T18:00:00.000Z",
-      "discoveredAt": "2026-09-23T21:28:35.112Z",
-      "locales": {
-        "en": {
-          "title": "Google Beam expands with new regions, partners, and customers",
-          "summary": "We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network."
-        },
-        "fr": {
-          "title": "Google Beam expands with new regions, partners, and customers",
-          "summary": "We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network."
-        }
-      }
-    },
-    {
       "slug": "20260921-github-actions-leaking-secrets-when-miri-output-is-cached-8695479b",
       "topic": "Systems & Backend",
       "source": "Rust Blog",
@@ -2393,6 +2393,44 @@
         "fr": {
           "title": "GitHub Actions leaking secrets when Miri output is cached",
           "summary": "The Rust Security Response Team was notified that Miri stores all environment variables to target/ , allowing secrets to persist in caches. While not necessary a vulnerability in and of itself, when paired with GitHub Actions cac…"
+        }
+      }
+    },
+    {
+      "slug": "20261030-build-world-models-for-interactive-simulation-with-nvidia-cosmos-70cecf2c",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/",
+      "publishedAt": "2026-10-30T22:17:16.000Z",
+      "discoveredAt": "2026-11-02T17:24:22.513Z",
+      "locales": {
+        "en": {
+          "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
+          "summary": "Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into..."
+        },
+        "fr": {
+          "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
+          "summary": "Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into..."
+        }
+      }
+    },
+    {
+      "slug": "20260923-google-beam-expands-with-new-regions-partners-and-customers-8a86c970",
+      "topic": "AI Systems",
+      "source": "Google AI Blog",
+      "sourceFeed": "https://blog.google/technology/ai/rss/",
+      "href": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
+      "publishedAt": "2026-09-23T18:00:00.000Z",
+      "discoveredAt": "2026-09-23T21:28:35.112Z",
+      "locales": {
+        "en": {
+          "title": "Google Beam expands with new regions, partners, and customers",
+          "summary": "We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network."
+        },
+        "fr": {
+          "title": "Google Beam expands with new regions, partners, and customers",
+          "summary": "We’re expanding Google Beam to five new countries, and partnering with Industrious for an extended network."
         }
       }
     },
@@ -2416,21 +2454,21 @@
       }
     },
     {
-      "slug": "20261029-credit-saison-achieves-954-roi-in-a-chatgpt-enterprise-pilot-6750c246",
+      "slug": "20261030-fair-use-benefits-everyone-d2282bcc",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/credit-saison",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "href": "https://openai.com/index/fair-use-benefits-everyone",
+      "publishedAt": "2026-10-30T00:00:00.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
       "locales": {
         "en": {
-          "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
-          "summary": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption."
+          "title": "Fair use benefits everyone",
+          "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
         },
         "fr": {
-          "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
-          "summary": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption."
+          "title": "Fair use benefits everyone",
+          "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
         }
       }
     },
@@ -2473,6 +2511,25 @@
       }
     },
     {
+      "slug": "20261028-revivedb-supabase-backups-restore-tested-against-the-source-sche-f15781fd",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/revivedb-supabase-backups-restore-tested-against-the-source-schema-3422/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
+          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
+        },
+        "fr": {
+          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
+          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
+        }
+      }
+    },
+    {
       "slug": "20261015-the-next-developer-interface-is-ambient-intelligence-5b6680e2",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -2507,44 +2564,6 @@
         "fr": {
           "title": "Building on our commitment to American scientific discovery",
           "summary": "Building on our commitment to American scientific discovery"
-        }
-      }
-    },
-    {
-      "slug": "20261026-pgivm-117-released-25992fa2",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_ivm-117-released-3420/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
-      "locales": {
-        "en": {
-          "title": "pg_ivm 1.17 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
-        },
-        "fr": {
-          "title": "pg_ivm 1.17 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
-        }
-      }
-    },
-    {
-      "slug": "20261028-support-new-ai-frameworks-faster-using-nvidia-workload-map-452b3e36",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map/",
-      "publishedAt": "2026-10-28T21:46:21.000Z",
-      "discoveredAt": "2026-11-02T17:24:22.513Z",
-      "locales": {
-        "en": {
-          "title": "Support New AI Frameworks Faster Using NVIDIA Workload Map",
-          "summary": "NVIDIA DSX AI Factory Platform brings together technologies to help the ecosystem design, build, and operate more efficient AI factories, including open source,..."
-        },
-        "fr": {
-          "title": "Support New AI Frameworks Faster Using NVIDIA Workload Map",
-          "summary": "NVIDIA DSX AI Factory Platform brings together technologies to help the ecosystem design, build, and operate more efficient AI factories, including open source,..."
         }
       }
     },
@@ -2644,6 +2663,25 @@
       }
     },
     {
+      "slug": "20261030-build-a-validated-kubernetes-runtime-for-nvidia-dynamo-1ca84190",
+      "topic": "Computer Science",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/",
+      "publishedAt": "2026-10-30T21:35:34.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "locales": {
+        "en": {
+          "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
+          "summary": "Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference..."
+        },
+        "fr": {
+          "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
+          "summary": "Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference..."
+        }
+      }
+    },
+    {
       "slug": "20261029-how-the-uk-amazon-quick-user-group-grew-in-2026-cf0463a1",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2663,21 +2701,21 @@
       }
     },
     {
-      "slug": "20261028-openai-and-servicenow-expand-partnership-across-enterprise-workf-75e2017e",
+      "slug": "20261029-an-updated-model-spec-for-more-capable-and-beneficial-ai-7bf0065c",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/openai-servicenow-partnership-expansion",
-      "publishedAt": "2026-10-28T13:15:00.000Z",
-      "discoveredAt": "2026-10-28T22:32:00.636Z",
+      "href": "https://openai.com/index/updated-model-spec",
+      "publishedAt": "2026-10-29T17:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-          "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex."
+          "title": "An updated Model Spec for more capable and beneficial AI",
+          "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
         },
         "fr": {
-          "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-          "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex."
+          "title": "An updated Model Spec for more capable and beneficial AI",
+          "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
         }
       }
     },
@@ -2720,6 +2758,25 @@
       }
     },
     {
+      "slug": "20261028-postgresql-anonymizer-33-major-security-update-f4b74201",
+      "topic": "Security & Standards",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-33-major-security-update-3423/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "locales": {
+        "en": {
+          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
+          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
+        },
+        "fr": {
+          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
+          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
+        }
+      }
+    },
+    {
       "slug": "20261015-staying-evergreen-how-we-automated-secure-access-and-repo-hygien-84007b3b",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -2754,44 +2811,6 @@
         "fr": {
           "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
           "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
-        }
-      }
-    },
-    {
-      "slug": "20261026-hypopg-144-is-out-09c21e18",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/hypopg-144-is-out-3421/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
-      "locales": {
-        "en": {
-          "title": "HypoPG 1.4.4 is out!",
-          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
-        },
-        "fr": {
-          "title": "HypoPG 1.4.4 is out!",
-          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
-        }
-      }
-    },
-    {
-      "slug": "20261028-nvidia-nemotron-35-super-vl-powers-specialized-agents-with-multi-652caa15",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
-      "publishedAt": "2026-10-28T21:11:44.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
-        },
-        "fr": {
-          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
         }
       }
     },
@@ -2891,6 +2910,25 @@
       }
     },
     {
+      "slug": "20261030-run-ai-models-for-edge-application-development-with-just-a-few-c-e060e1d4",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+      "publishedAt": "2026-10-30T20:33:21.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "locales": {
+        "en": {
+          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
+        },
+        "fr": {
+          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
+        }
+      }
+    },
+    {
       "slug": "20261029-building-intent-driven-ui-testing-with-amazon-nova-act-1f3c261e",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -2910,21 +2948,21 @@
       }
     },
     {
-      "slug": "20261028-the-future-of-the-firm-0dc3cf0b",
+      "slug": "20261029-how-we-detect-frontier-model-misalignment-d28967fc",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/the-future-of-the-firm",
-      "publishedAt": "2026-10-28T10:00:00.000Z",
-      "discoveredAt": "2026-10-28T22:32:00.636Z",
+      "href": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "publishedAt": "2026-10-29T09:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "The future of the firm",
-          "summary": "How AI might enter the org chart—beneath, beside, and between us."
+          "title": "How we detect frontier model misalignment",
+          "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate."
         },
         "fr": {
-          "title": "The future of the firm",
-          "summary": "How AI might enter the org chart—beneath, beside, and between us."
+          "title": "How we detect frontier model misalignment",
+          "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate."
         }
       }
     },
@@ -2967,6 +3005,25 @@
       }
     },
     {
+      "slug": "20261026-pgivm-117-released-25992fa2",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_ivm-117-released-3420/",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "locales": {
+        "en": {
+          "title": "pg_ivm 1.17 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
+        },
+        "fr": {
+          "title": "pg_ivm 1.17 released",
+          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
+        }
+      }
+    },
+    {
       "slug": "20261014-github-availability-report-september-2026-86f0f518",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -3001,44 +3058,6 @@
         "fr": {
           "title": "Expanding the Cyber Verification Program",
           "summary": "Expanding the Cyber Verification Program"
-        }
-      }
-    },
-    {
-      "slug": "20261026-pghdrhistogram-100---exact-percentiles-in-postgresql-52a6bea1",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_hdr_histogram-100-exact-percentiles-in-postgresql-3418/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
-      "locales": {
-        "en": {
-          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
-          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
-        },
-        "fr": {
-          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
-          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
-        }
-      }
-    },
-    {
-      "slug": "20261027-nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-ga-f1583806",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
-      "publishedAt": "2026-10-27T21:10:58.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
-          "summary": "NVIDIA RTX Spark is a new Windows PC platform for AI development, creation, and gaming in slim laptops and compact desktops. Powered by an NVIDIA Blackwell RTX..."
-        },
-        "fr": {
-          "title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
-          "summary": "NVIDIA RTX Spark is a new Windows PC platform for AI development, creation, and gaming in slim laptops and compact desktops. Powered by an NVIDIA Blackwell RTX..."
         }
       }
     },
@@ -3138,6 +3157,25 @@
       }
     },
     {
+      "slug": "20261030-build-specialized-agents-on-a-stack-you-control-with-nvidia-nemo-a4deda0c",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
+      "publishedAt": "2026-10-30T15:11:46.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "locales": {
+        "en": {
+          "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
+          "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces..."
+        },
+        "fr": {
+          "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
+          "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces..."
+        }
+      }
+    },
+    {
       "slug": "20261029-build-a-repeatable-php-to-java-migration-engine-with-kiro-1d9d3dc9",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3157,21 +3195,21 @@
       }
     },
     {
-      "slug": "20261028-legora-is-building-the-agentic-operating-system-for-legal-work-41c97fe8",
+      "slug": "20261029-how-ropes-gray-is-developing-ai-for-transactional-diligence-2d992828",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/legora",
-      "publishedAt": "2026-10-28T09:30:00.000Z",
-      "discoveredAt": "2026-10-28T22:32:00.636Z",
+      "href": "https://openai.com/index/ropes-gray-ai-diligence",
+      "publishedAt": "2026-10-29T07:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "Legora is building the agentic operating system for legal work",
-          "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work."
+          "title": "How Ropes & Gray is developing AI for transactional diligence",
+          "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients."
         },
         "fr": {
-          "title": "Legora is building the agentic operating system for legal work",
-          "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work."
+          "title": "How Ropes & Gray is developing AI for transactional diligence",
+          "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients."
         }
       }
     },
@@ -3214,6 +3252,25 @@
       }
     },
     {
+      "slug": "20261026-hypopg-144-is-out-09c21e18",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/hypopg-144-is-out-3421/",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "locales": {
+        "en": {
+          "title": "HypoPG 1.4.4 is out!",
+          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
+        },
+        "fr": {
+          "title": "HypoPG 1.4.4 is out!",
+          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
+        }
+      }
+    },
+    {
       "slug": "20261014-from-2500-requests-to-24-rebuilding-star-history-without-the-sta-cc3cc3fb",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -3248,44 +3305,6 @@
         "fr": {
           "title": "Partnerships",
           "summary": "nt partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API. Oct 27, 2026"
-        }
-      }
-    },
-    {
-      "slug": "20261022-pgrecon-open-source-oracle-to-postgresql-migration-assessment-an-91970955",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgrecon-open-source-oracle-to-postgresql-migration-assessment-and-schema-conversion-3410/",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
-          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
-        },
-        "fr": {
-          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
-          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
-        }
-      }
-    },
-    {
-      "slug": "20261027-memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-134-93982da0",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
-      "publishedAt": "2026-10-27T20:50:45.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
-      "locales": {
-        "en": {
-          "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
-          "summary": "Many AI workloads need only a fraction of a GPU. Giving each one an entire device can leave capacity idle; sharing GPUs lets platform teams serve more workloads..."
-        },
-        "fr": {
-          "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
-          "summary": "Many AI workloads need only a fraction of a GPU. Giving each one an entire device can leave capacity idle; sharing GPUs lets platform teams serve more workloads..."
         }
       }
     },
@@ -3385,6 +3404,25 @@
       }
     },
     {
+      "slug": "20261030-how-to-check-and-configure-nvidia-gpudirect-storage-for-your-pla-d93744a1",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/",
+      "publishedAt": "2026-10-30T15:09:18.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "locales": {
+        "en": {
+          "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
+          "summary": "NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path..."
+        },
+        "fr": {
+          "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
+          "summary": "NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path..."
+        }
+      }
+    },
+    {
       "slug": "20261029-lend-and-borrow-resources-across-teams-with-aws-batchs-quota-man-8d9b5cf4",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3404,21 +3442,21 @@
       }
     },
     {
-      "slug": "20261028-legora-is-building-the-agentic-operating-system-for-legal-work-2fc8e689",
+      "slug": "20261029-credit-saison-achieves-954-roi-in-a-chatgpt-enterprise-pilot-6750c246",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
-      "publishedAt": "2026-10-28T09:30:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "href": "https://openai.com/index/credit-saison",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
       "locales": {
         "en": {
-          "title": "Legora is building the agentic operating system for legal work",
-          "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work."
+          "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+          "summary": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption."
         },
         "fr": {
-          "title": "Legora is building the agentic operating system for legal work",
-          "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work."
+          "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+          "summary": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption."
         }
       }
     },
@@ -3461,6 +3499,25 @@
       }
     },
     {
+      "slug": "20261026-pghdrhistogram-100---exact-percentiles-in-postgresql-52a6bea1",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg_hdr_histogram-100-exact-percentiles-in-postgresql-3418/",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "locales": {
+        "en": {
+          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
+          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
+        },
+        "fr": {
+          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
+          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
+        }
+      }
+    },
+    {
       "slug": "20261013-githubs-model-for-secret-detection-finding-more-secrets-with-les-22c6ef69",
       "topic": "AI Systems",
       "source": "GitHub Blog",
@@ -3495,44 +3552,6 @@
         "fr": {
           "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
           "summary": "Anthropic files S-1 with the SEC for proposed initial public offering"
-        }
-      }
-    },
-    {
-      "slug": "20261022-safegrd-postgresql-backups-that-are-restored-and-checked-on-a-sc-1a9cacd2",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/safegrd-postgresql-backups-that-are-restored-and-checked-on-a-schedule-3414/",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
-          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
-        },
-        "fr": {
-          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
-          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
-        }
-      }
-    },
-    {
-      "slug": "20261026-3-ways-to-boost-moe-inference-on-nvidia-dgx-spark-c2853730",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
-      "publishedAt": "2026-10-26T22:25:17.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
-      "locales": {
-        "en": {
-          "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark",
-          "summary": "Generating tokens faster starts with identifying what limits inference performance. In the batch-size-1 evaluation of Ling-3.0-flash from Inclusion AI on NVIDIA..."
-        },
-        "fr": {
-          "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark",
-          "summary": "Generating tokens faster starts with identifying what limits inference performance. In the batch-size-1 evaluation of Ling-3.0-flash from Inclusion AI on NVIDIA..."
         }
       }
     },
@@ -3632,6 +3651,25 @@
       }
     },
     {
+      "slug": "20261029-nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-a-1539ad47",
+      "topic": "AI Performance",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-ai-performance-per-watt/",
+      "publishedAt": "2026-10-29T19:58:59.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Vera Rubin and Blackwell Set a New Standard for Agentic AI Performance per Watt",
+          "summary": "AI agents have expanded inference from single-turn interactions into multi-step workflows that reason, invoke tools, coordinate subagents, and carry growing..."
+        },
+        "fr": {
+          "title": "NVIDIA Vera Rubin and Blackwell Set a New Standard for Agentic AI Performance per Watt",
+          "summary": "AI agents have expanded inference from single-turn interactions into multi-step workflows that reason, invoke tools, coordinate subagents, and carry growing..."
+        }
+      }
+    },
+    {
       "slug": "20261029-how-moengage-turned-over-400-apis-into-agent-tools-with-agentcor-66eaaf2a",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3651,21 +3689,21 @@
       }
     },
     {
-      "slug": "20261027-retell-uses-openai-models-to-help-power-100m-monthly-calls-d42fb1eb",
+      "slug": "20261028-openai-and-servicenow-expand-partnership-across-enterprise-workf-75e2017e",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/retell-ai",
-      "publishedAt": "2026-10-27T15:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "href": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "publishedAt": "2026-10-28T13:15:00.000Z",
+      "discoveredAt": "2026-10-28T22:32:00.636Z",
       "locales": {
         "en": {
-          "title": "Retell uses OpenAI models to help power 100M monthly calls",
-          "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee."
+          "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+          "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex."
         },
         "fr": {
-          "title": "Retell uses OpenAI models to help power 100M monthly calls",
-          "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee."
+          "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+          "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex."
         }
       }
     },
@@ -3708,6 +3746,25 @@
       }
     },
     {
+      "slug": "20261022-pgrecon-open-source-oracle-to-postgresql-migration-assessment-an-91970955",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgrecon-open-source-oracle-to-postgresql-migration-assessment-and-schema-conversion-3410/",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
+          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
+        },
+        "fr": {
+          "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
+          "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
+        }
+      }
+    },
+    {
       "slug": "20261012-github-copilot-app-for-beginners-how-to-teach-copilot-about-your-d8d24172",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -3742,44 +3799,6 @@
         "fr": {
           "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
           "summary": "5 3840w\" src=\"/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/> Announcements Oct 26, 2026"
-        }
-      }
-    },
-    {
-      "slug": "20261022-backupdrill-open-source-supabase-postgres-backups-with-automated-21a54640",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/backupdrill-open-source-supabase-postgres-backups-with-automated-restore-drills-3413/",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
-          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
-        },
-        "fr": {
-          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
-          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
-        }
-      }
-    },
-    {
-      "slug": "20261026-fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-l-15c07a92",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
-      "publishedAt": "2026-10-26T20:49:12.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
-      "locales": {
-        "en": {
-          "title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
-          "summary": "As AI adoption expands globally, people across languages and cultures are using it in more aspects of their daily lives. General-purpose language models serve..."
-        },
-        "fr": {
-          "title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
-          "summary": "As AI adoption expands globally, people across languages and cultures are using it in more aspects of their daily lives. General-purpose language models serve..."
         }
       }
     },
@@ -3860,6 +3879,25 @@
       }
     },
     {
+      "slug": "20261029-unlocking-tensor-core-performance-for-machine-learning-interatom-a2355c48",
+      "topic": "AI Performance",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/",
+      "publishedAt": "2026-10-29T00:07:21.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "locales": {
+        "en": {
+          "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
+          "summary": "Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These..."
+        },
+        "fr": {
+          "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
+          "summary": "Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These..."
+        }
+      }
+    },
+    {
       "slug": "20261029-accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks--23037afd",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3879,21 +3917,21 @@
       }
     },
     {
-      "slug": "20261027-openai-expands-partnership-with-oracle-to-bring-its-apps-to-chat-a3a87914",
+      "slug": "20261028-the-future-of-the-firm-0dc3cf0b",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/oracle-apps-in-chatgpt",
-      "publishedAt": "2026-10-27T07:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "href": "https://openai.com/index/the-future-of-the-firm",
+      "publishedAt": "2026-10-28T10:00:00.000Z",
+      "discoveredAt": "2026-10-28T22:32:00.636Z",
       "locales": {
         "en": {
-          "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
-          "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings."
+          "title": "The future of the firm",
+          "summary": "How AI might enter the org chart—beneath, beside, and between us."
         },
         "fr": {
-          "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
-          "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings."
+          "title": "The future of the firm",
+          "summary": "How AI might enter the org chart—beneath, beside, and between us."
         }
       }
     },
@@ -3936,6 +3974,25 @@
       }
     },
     {
+      "slug": "20261022-safegrd-postgresql-backups-that-are-restored-and-checked-on-a-sc-1a9cacd2",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/safegrd-postgresql-backups-that-are-restored-and-checked-on-a-schedule-3414/",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
+          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
+        },
+        "fr": {
+          "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
+          "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
+        }
+      }
+    },
+    {
       "slug": "20261009-hack-the-world-why-hackathons-are-still-the-best-place-to-learn--8608b90d",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -3970,44 +4027,6 @@
         "fr": {
           "title": "Anthropic files S-1 with the SEC for proposed initial public offering Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
           "summary": "Announcements Oct 26, 2026"
-        }
-      }
-    },
-    {
-      "slug": "20261022-pgcluu-v50-has-been-released-b35b9ae0",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgcluu-v50-has-been-released-3417/",
-      "publishedAt": "2026-10-22T00:00:00.000Z",
-      "discoveredAt": "2026-10-22T11:47:21.677Z",
-      "locales": {
-        "en": {
-          "title": "pgCluu v5.0 has been released",
-          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
-        },
-        "fr": {
-          "title": "pgCluu v5.0 has been released",
-          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
-        }
-      }
-    },
-    {
-      "slug": "20261024-how-nvidia-mission-control-25-brings-autonomous-recovery-to-kube-320422ca",
-      "topic": "Computer Science",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
-      "publishedAt": "2026-10-24T00:20:16.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
-      "locales": {
-        "en": {
-          "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
-          "summary": "Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency..."
-        },
-        "fr": {
-          "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
-          "summary": "Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency..."
         }
       }
     },
@@ -4069,6 +4088,25 @@
       }
     },
     {
+      "slug": "20261028-support-new-ai-frameworks-faster-using-nvidia-workload-map-452b3e36",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map/",
+      "publishedAt": "2026-10-28T21:46:21.000Z",
+      "discoveredAt": "2026-11-02T17:24:22.513Z",
+      "locales": {
+        "en": {
+          "title": "Support New AI Frameworks Faster Using NVIDIA Workload Map",
+          "summary": "NVIDIA DSX AI Factory Platform brings together technologies to help the ecosystem design, build, and operate more efficient AI factories, including open source,..."
+        },
+        "fr": {
+          "title": "Support New AI Frameworks Faster Using NVIDIA Workload Map",
+          "summary": "NVIDIA DSX AI Factory Platform brings together technologies to help the ecosystem design, build, and operate more efficient AI factories, including open source,..."
+        }
+      }
+    },
+    {
       "slug": "20261028-building-an-agentic-ai-platform-on-amazon-bedrock-agentcore-81ea71b4",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -4088,21 +4126,21 @@
       }
     },
     {
-      "slug": "20261027-how-check-point-accelerates-vulnerability-research-with-daybreak-8cb33326",
-      "topic": "Security & Standards",
+      "slug": "20261028-legora-is-building-the-agentic-operating-system-for-legal-work-41c97fe8",
+      "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/check-point-daybreak",
-      "publishedAt": "2026-10-27T00:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "href": "https://openai.com/index/legora",
+      "publishedAt": "2026-10-28T09:30:00.000Z",
+      "discoveredAt": "2026-10-28T22:32:00.636Z",
       "locales": {
         "en": {
-          "title": "How Check Point accelerates vulnerability research with Daybreak",
-          "summary": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster."
+          "title": "Legora is building the agentic operating system for legal work",
+          "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work."
         },
         "fr": {
-          "title": "How Check Point accelerates vulnerability research with Daybreak",
-          "summary": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster."
+          "title": "Legora is building the agentic operating system for legal work",
+          "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work."
         }
       }
     },
@@ -4145,6 +4183,25 @@
       }
     },
     {
+      "slug": "20261022-backupdrill-open-source-supabase-postgres-backups-with-automated-21a54640",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/backupdrill-open-source-supabase-postgres-backups-with-automated-restore-drills-3413/",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
+          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
+        },
+        "fr": {
+          "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
+          "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
+        }
+      }
+    },
+    {
       "slug": "20261008-how-one-bug-bounty-researcher-chooses-the-features-they-investig-e98e25a5",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -4179,44 +4236,6 @@
         "fr": {
           "title": "Open call for guest investigators in the life sciences",
           "summary": "Open call for guest investigators in the life sciences"
-        }
-      }
-    },
-    {
-      "slug": "20261020-fossasia-pgday-2027-bangkok-9-march-cfp-open-dcd97aff",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/fossasia-pgday-2027-bangkok-9-march-cfp-open-3398/",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "FOSSASIA PGDay 2027: Bangkok, 9 March – CFP Open",
-          "summary": "We are happy to announce that FOSSASIA PGDay returns to Thailand on 9 March, 2027 , bringing the PostgreSQL community together at True Digital Park, Bangkok . Visit the PGDay website for more details. About Event FOSSASIA PGDay i…"
-        },
-        "fr": {
-          "title": "FOSSASIA PGDay 2027: Bangkok, 9 March – CFP Open",
-          "summary": "We are happy to announce that FOSSASIA PGDay returns to Thailand on 9 March, 2027 , bringing the PostgreSQL community together at True Digital Park, Bangkok . Visit the PGDay website for more details. About Event FOSSASIA PGDay i…"
-        }
-      }
-    },
-    {
-      "slug": "20261023-how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield-9b83a052",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
-      "publishedAt": "2026-10-23T18:41:40.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
-      "locales": {
-        "en": {
-          "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield",
-          "summary": "AI Factories are some of the most technologically complex operational environments ever created. Hundreds of thousands of GPUs, NVIDIA Spectrum-X Ethernet..."
-        },
-        "fr": {
-          "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield",
-          "summary": "AI Factories are some of the most technologically complex operational environments ever created. Hundreds of thousands of GPUs, NVIDIA Spectrum-X Ethernet..."
         }
       }
     },
@@ -4278,6 +4297,25 @@
       }
     },
     {
+      "slug": "20261028-nvidia-nemotron-35-super-vl-powers-specialized-agents-with-multi-652caa15",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
+      "publishedAt": "2026-10-28T21:11:44.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
+          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
+        },
+        "fr": {
+          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
+          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
+        }
+      }
+    },
+    {
       "slug": "20261028-distributed-training-with-ray-train-dlcs-and-efa-on-eks-3364604a",
       "topic": "Computer Science",
       "source": "AWS ML Blog",
@@ -4297,21 +4335,21 @@
       }
     },
     {
-      "slug": "20261026-greptile-takes-bug-detection-beyond-code-review-with-gpt-6-astra-250e5d8f",
+      "slug": "20261028-legora-is-building-the-agentic-operating-system-for-legal-work-2fc8e689",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/greptile-code-review-codex-astra",
-      "publishedAt": "2026-10-26T22:00:00.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
+      "href": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+      "publishedAt": "2026-10-28T09:30:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
       "locales": {
         "en": {
-          "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
-          "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework."
+          "title": "Legora is building the agentic operating system for legal work",
+          "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work."
         },
         "fr": {
-          "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
-          "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework."
+          "title": "Legora is building the agentic operating system for legal work",
+          "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work."
         }
       }
     },
@@ -4354,6 +4392,25 @@
       }
     },
     {
+      "slug": "20261022-pgcluu-v50-has-been-released-b35b9ae0",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgcluu-v50-has-been-released-3417/",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "discoveredAt": "2026-10-22T11:47:21.677Z",
+      "locales": {
+        "en": {
+          "title": "pgCluu v5.0 has been released",
+          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
+        },
+        "fr": {
+          "title": "pgCluu v5.0 has been released",
+          "summary": "Antananarivo, Madagascar - October 20, 2026 pgCluu PostgreSQL Cluster Utilization pgCluu is a Perl program used to perform a full audit of a PostgreSQL Cluster performances. It is divided in two parts, a collector used to grab st…"
+        }
+      }
+    },
+    {
       "slug": "20261007-secret-protection-must-scale-with-software-c13c9140",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -4388,44 +4445,6 @@
         "fr": {
           "title": "Donating Agent Skills to the Agentic AI Foundation",
           "summary": "Donating Agent Skills to the Agentic AI Foundation"
-        }
-      }
-    },
-    {
-      "slug": "20261020-sles-156-repositories-are-being-retired-e93c8961",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/sles-156-repositories-are-being-retired-3415/",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-21T11:44:36.882Z",
-      "locales": {
-        "en": {
-          "title": "SLES 15.6 repositories are being retired",
-          "summary": "The SLES 15.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL ZYPP archive .General support for SUSE Linux Enterprise Server (SLES) 15 SP6 (15.6) ended on December 31, 2025…"
-        },
-        "fr": {
-          "title": "SLES 15.6 repositories are being retired",
-          "summary": "The SLES 15.6 repositories are being retired from the main PostgreSQL RPM repository, and are moved to the PostgreSQL ZYPP archive .General support for SUSE Linux Enterprise Server (SLES) 15 SP6 (15.6) ended on December 31, 2025…"
-        }
-      }
-    },
-    {
-      "slug": "20261023-scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-8fc62fca",
-      "topic": "AI Performance",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/",
-      "publishedAt": "2026-10-23T17:27:55.000Z",
-      "discoveredAt": "2026-10-23T21:22:03.530Z",
-      "locales": {
-        "en": {
-          "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2",
-          "summary": "The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and..."
-        },
-        "fr": {
-          "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2",
-          "summary": "The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and..."
         }
       }
     },
@@ -4468,6 +4487,25 @@
       }
     },
     {
+      "slug": "20261027-nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-ga-f1583806",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
+      "publishedAt": "2026-10-27T21:10:58.000Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
+          "summary": "NVIDIA RTX Spark is a new Windows PC platform for AI development, creation, and gaming in slim laptops and compact desktops. Powered by an NVIDIA Blackwell RTX..."
+        },
+        "fr": {
+          "title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
+          "summary": "NVIDIA RTX Spark is a new Windows PC platform for AI development, creation, and gaming in slim laptops and compact desktops. Powered by an NVIDIA Blackwell RTX..."
+        }
+      }
+    },
+    {
       "slug": "20261028-accelerating-software-delivery-with-agentic-qa-automation-using--12048ccb",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -4487,21 +4525,21 @@
       }
     },
     {
-      "slug": "20261026-working-with-academic-communities-to-build-scientific-understand-f16aefe8",
+      "slug": "20261027-retell-uses-openai-models-to-help-power-100m-monthly-calls-d42fb1eb",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
-      "publishedAt": "2026-10-26T14:30:00.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
+      "href": "https://openai.com/index/retell-ai",
+      "publishedAt": "2026-10-27T15:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
       "locales": {
         "en": {
-          "title": "Working with academic communities to build scientific understanding",
-          "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them."
+          "title": "Retell uses OpenAI models to help power 100M monthly calls",
+          "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee."
         },
         "fr": {
-          "title": "Working with academic communities to build scientific understanding",
-          "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them."
+          "title": "Retell uses OpenAI models to help power 100M monthly calls",
+          "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee."
         }
       }
     },
@@ -4521,44 +4559,6 @@
         "fr": {
           "title": "Introducing Clairic, a new System One class of extraction models",
           "summary": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs."
-        }
-      }
-    },
-    {
-      "slug": "20260924-docker-and-cncf-partner-on-an-open-spec-for-agent-permissions-bfc64acb",
-      "topic": "AI Systems",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-sandbox-kit-spec-cncf/",
-      "publishedAt": "2026-09-24T16:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
-      "locales": {
-        "en": {
-          "title": "Docker and CNCF partner on an open spec for agent permissions",
-          "summary": "Docker is bringing the open source Sandbox Kit Spec to the CNCF, so AI agent permissions become a neutral, vendor independent standard built on OCI."
-        },
-        "fr": {
-          "title": "Docker and CNCF partner on an open spec for agent permissions",
-          "summary": "Docker is bringing the open source Sandbox Kit Spec to the CNCF, so AI agent permissions become a neutral, vendor independent standard built on OCI."
-        }
-      }
-    },
-    {
-      "slug": "20261021-physicist-christopher-stubbs-joins-anthropics-long-term-benefit--b12d9d8f",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "publishedAt": "2026-10-21T21:40:08.512Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
-      "locales": {
-        "en": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
-        },
-        "fr": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
         }
       }
     }
