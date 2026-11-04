@@ -251,7 +251,27 @@ function oneEmployerAtATime(items: Stage[]) {
 
 export function getStages(now = Date.now()) {
   // A listing closed more than a month ago has said what it had to say.
-  const sorted = payload.items.filter((item) => !isLongClosed(item, now)).sort((a, b) => {
+  return orderStages(payload.items.filter((item) => !isLongClosed(item, now)), now);
+}
+
+/**
+ * The reading order, as a function of the listings rather than of the file.
+ *
+ * This was inlined in getStages, so the only way to test it was to sort the
+ * committed board and hope it contained the case. tests/stages-order.test.ts
+ * did exactly that for "closed listings go last" -- the case the file's own
+ * comment calls "the case that broke the finder" -- and returned early when no
+ * listing was closed. One listing on the board carries a deadline at all, and
+ * it is in the future, so that test has asserted nothing since the previous
+ * deadline lapsed while still reporting green.
+ *
+ * It is also a narrow window by design: isLongClosed drops a listing a month
+ * after it closes, so a closed-but-still-shown listing exists only in the few
+ * weeks between. Waiting for live data to wander into that window is not
+ * testing. Handed its input, this can be asked directly.
+ */
+export function orderStages(items: Stage[], now = Date.now()) {
+  const sorted = [...items].sort((a, b) => {
     const aClosed = isClosed(a, now);
     const bClosed = isClosed(b, now);
     // Open first, then soonest deadline — the order someone applying needs.

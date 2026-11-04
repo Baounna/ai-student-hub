@@ -46,6 +46,36 @@ async function readText(filePath) {
   return fs.readFile(filePath, "utf8");
 }
 
+/**
+ * Does this source file contain this sentence, however the accents are spelled?
+ *
+ * Three fallback checks below looked for the French copy with its accents
+ * stripped -- "Aucune nouveaute captee pour le moment." -- and the pages say
+ * "Aucune nouveauté captée pour le moment." So they could never match, and
+ * their EN siblings in the same condition always did.
+ *
+ * It failed safe: it warns that a fallback "looks incomplete" rather than
+ * claiming one exists. But the branch runs only when a feed is empty, which is
+ * the one moment the check matters, and it could never have confirmed the thing
+ * it was written to confirm. A check that can only ever report the bad news is
+ * not a check.
+ *
+ * Both spellings are live in this codebase -- some files write the accent,
+ * others a \uXXXX escape -- so rather than fixing six string literals and
+ * leaving the next one to chance, the comparison stops caring. Escapes are
+ * decoded, diacritics removed, case folded, on both sides.
+ */
+function sameWords(haystack, needle) {
+  const flatten = (text) =>
+    String(text)
+      .replace(/\\u([0-9a-fA-F]{4})/g, (_, code) => String.fromCharCode(Number.parseInt(code, 16)))
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[\u2018\u2019]/g, "'")
+      .toLowerCase();
+  return flatten(haystack).includes(flatten(needle));
+}
+
 function parseTimestamp(value) {
   const timestamp = Date.parse(String(value || ""));
   return Number.isFinite(timestamp) ? timestamp : null;
@@ -130,8 +160,8 @@ async function run() {
     if (!autoTools.items.length) {
       const comparePageText = await readText(FILES.comparePage);
       const hasToolsFallback =
-        comparePageText.includes("No new tools captured yet.") &&
-        comparePageText.includes("Aucune nouveaute captee pour le moment.");
+        sameWords(comparePageText, "No new tools captured yet.") &&
+        sameWords(comparePageText, "Aucune nouveauté captée pour le moment.");
 
       if (hasToolsFallback) {
         ok("Auto tools feed is empty; EN/FR fallback state is present on tools page.");
@@ -170,11 +200,11 @@ async function run() {
         readText(FILES.liveNewsPage)
       ]);
       const hasNewsFallback =
-        newsPageText.includes("No new items yet.") &&
-        newsPageText.includes("Aucun nouvel item pour le moment.");
+        sameWords(newsPageText, "No new items yet.") &&
+        sameWords(newsPageText, "Aucun nouvel item pour le moment.");
       const hasLiveFallback =
-        liveNewsPageText.includes("No updates available right now") &&
-        liveNewsPageText.includes("Aucune mise a jour disponible");
+        sameWords(liveNewsPageText, "No updates available right now") &&
+        sameWords(liveNewsPageText, "Aucune mise à jour disponible");
 
       if (hasNewsFallback && hasLiveFallback) {
         ok("Auto news feed is empty; EN/FR fallback states are present on news pages.");

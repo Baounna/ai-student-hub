@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { countryLabel, getStages, getOpenStages, isClosed } from "@/content/stages";
+import { countryLabel, getStages, getOpenStages, isClosed, orderStages, type Stage } from "@/content/stages";
 
 /**
  * Only four of the eighty-two listings carry a deadline, so the other
@@ -48,14 +48,73 @@ describe("internship ordering", () => {
     expect(lastDated).toBeLessThan(firstRolling);
   });
 
-  it("keeps closed listings at the end, whatever their deadline", () => {
-    // The case that broke the finder: a deadline in the past sorts last, not
-    // into deadline order with the open ones.
-    const after = Date.parse("2026-10-29T12:00:00Z");
-    const ordered = getStages(after);
-    const firstClosed = ordered.findIndex((s) => isClosed(s, after));
-    if (firstClosed === -1) return;
-    expect(ordered.slice(firstClosed).every((s) => isClosed(s, after))).toBe(true);
+  describe("closed listings go last, whatever their deadline", () => {
+    /*
+     * The case the content file calls "the case that broke the finder", and it
+     * was untested.
+     *
+     * This sorted the committed board and returned early when nothing in it was
+     * closed. Exactly one of the 86 listings carries a deadline at all and it
+     * is in the future, so the one expect() in the test had not run since the
+     * previous deadline lapsed -- while the green tick said the rule was
+     * covered. And it is a narrow window by design: isLongClosed drops a
+     * listing a month after it closes, so live data passes through the state
+     * this rule is about for a few weeks at a time.
+     *
+     * orderStages takes its listings as an argument, so the case can simply be
+     * built. The live board is still checked below, for whenever it does hold
+     * one.
+     */
+    const NOW = Date.parse("2026-11-04T12:00:00Z");
+    const stage = (id: string, deadline?: string): Stage =>
+      ({
+        id,
+        company: id,
+        role: id,
+        country: "FR",
+        city: "Paris",
+        href: `https://example.com/${id}`,
+        kind: "stage",
+        deadline,
+        postedAt: "2026-11-01",
+        checkedAt: "2026-11-04",
+        addedBy: "person"
+      }) as unknown as Stage;
+
+    it("puts a lapsed deadline last, not in deadline order", () => {
+      const lapsed = stage("lapsed", "2026-10-01");
+      const soon = stage("soon", "2026-11-20");
+      const rolling = stage("rolling");
+
+      const ordered = orderStages([lapsed, soon, rolling], NOW);
+
+      expect(ordered.map((s) => s.id)).toEqual(["soon", "rolling", "lapsed"]);
+      // The thing that actually broke: sorted by date, the lapsed one is the
+      // earliest deadline and would have led the page.
+      expect(ordered.at(-1)!.id).toBe("lapsed");
+    });
+
+    it("keeps every closed listing behind every open one", () => {
+      const ordered = orderStages(
+        [stage("a", "2026-09-01"), stage("b"), stage("c", "2026-12-01"), stage("d", "2026-10-02"), stage("e")],
+        NOW
+      );
+      const firstClosed = ordered.findIndex((s) => isClosed(s, NOW));
+
+      expect(firstClosed).toBeGreaterThan(0);
+      expect(ordered.slice(firstClosed).every((s) => isClosed(s, NOW))).toBe(true);
+      expect(ordered.slice(0, firstClosed).some((s) => isClosed(s, NOW))).toBe(false);
+    });
+
+    it("holds on the live board too, whenever it has one", () => {
+      const after = Date.parse("2026-10-29T12:00:00Z");
+      const ordered = getStages(after);
+      const firstClosed = ordered.findIndex((s) => isClosed(s, after));
+      // Deliberately not failed when the board has none: pruning a lapsed
+      // listing is correct, and the rule itself is covered above.
+      if (firstClosed === -1) return;
+      expect(ordered.slice(firstClosed).every((s) => isClosed(s, after))).toBe(true);
+    });
   });
 
   it("does not let one employer own the opening rows", () => {

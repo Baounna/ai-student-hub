@@ -58,10 +58,46 @@ function getLineNumber(content, index) {
   return chunk.split("\n").length;
 }
 
+/**
+ * How few files would mean the scan has stopped working.
+ *
+ * src/app and src/components hold well over a hundred files between them. The
+ * number is a floor rather than the real count so that deleting a page does not
+ * fail this check; it is here to catch a walk that returned almost nothing.
+ */
+const MINIMUM_FILES = 60;
+
 async function run() {
   const files = (
     await Promise.all(TARGET_DIRS.map((dir) => walk(dir)))
   ).flat();
+
+  /*
+   * walk() swallows a failed readdir and returns an empty list, and nothing
+   * after it asked how many files there were. Rename src/app, move a directory,
+   * or run this from the wrong working directory and it printed "No
+   * private/internal wording found in public-facing copy." over nothing at all,
+   * and exited 0.
+   *
+   * That is the failure this repository keeps meeting: a report that says
+   * success on a path it never exercised. The clock sweep did it with a vitest
+   * flag that no longer existed, and the stage check's workflow did it by
+   * grepping for prose the script does not print. A privacy scan is a poor
+   * place for it -- its whole job is to be the thing that notices.
+   */
+  if (files.length < MINIMUM_FILES) {
+    console.error("Public content privacy check");
+    console.error("----------------------------");
+    console.error(
+      `Only ${files.length} file(s) were scanned, and there should be at least ${MINIMUM_FILES}.`
+    );
+    console.error(
+      "Nothing was verified. Check that this ran from the repository root and that",
+      `\n${TARGET_DIRS.map((dir) => path.relative(ROOT, dir)).join(" and ")} still exist.`
+    );
+    process.exitCode = 1;
+    return;
+  }
 
   const findings = [];
 

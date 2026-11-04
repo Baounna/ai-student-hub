@@ -158,7 +158,23 @@ if (!leadEn || !leadFr) {
 }
 
 const checkout = (env.NEXT_PUBLIC_PRODUCT_CHECKOUT_URL || "").trim();
-if (!isUrl(checkout)) {
+/*
+ * src/lib/product.ts holds GUIDE_EXISTS = false, in code, deliberately: the
+ * guide has not been written, and the gate is there so that selling it is an
+ * act somebody takes next to the comment explaining it rather than a dashboard
+ * click. While it is false, this variable changes nothing on any page.
+ *
+ * So the old line -- "not set, product page will show fallback CTA" -- told the
+ * operator a variable mattered when it was inert, and congratulated them for
+ * setting it. Read the gate instead of guessing. It is read as text because
+ * this is a plain script and that file is TypeScript.
+ */
+const guideExists = /const GUIDE_EXISTS = true/.test(
+  fs.readFileSync(path.join(cwd, "src/lib/product.ts"), "utf8")
+);
+if (!guideExists) {
+  ok("No product is for sale (GUIDE_EXISTS is false in src/lib/product.ts), so the checkout URL is not read.");
+} else if (!isUrl(checkout)) {
   warn("NEXT_PUBLIC_PRODUCT_CHECKOUT_URL not set. Product page will show fallback CTA.");
 } else {
   ok("Product checkout URL set.");
@@ -255,8 +271,19 @@ for (let i = 1; i <= 5; i += 1) {
 }
 
 const validAffiliates = affiliateRows.filter((row) => row.name && isUrl(row.url));
-if (validAffiliates.length < 3) {
-  error("Add at least 3 valid affiliate links (AFFILIATE_1..5).");
+/*
+ * This was an ERROR, which made "fewer than three tools featured" a condition
+ * that no environment could pass. How many tools a publication chooses to
+ * feature is editorial, not a deployment fault: a fresh environment with none
+ * configured renders a site that works, and the placement warnings below
+ * already say which sections would be empty.
+ *
+ * An error is for something that will break or mislead a reader. Keeping this
+ * one meant the preflight could not be run honestly on a clean environment,
+ * and a check that always fails gets run with --force or not at all.
+ */
+if (!validAffiliates.length) {
+  warn("No affiliate links configured (AFFILIATE_1..5). Partner sections will be empty.");
 } else {
   ok(`Affiliate links configured: ${validAffiliates.length}`);
 }
