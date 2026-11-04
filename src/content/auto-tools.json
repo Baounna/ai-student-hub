@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T14:28:47.922Z",
+  "updatedAt": "2026-11-04T23:38:59.532Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -23,42 +23,122 @@
       }
     },
     {
-      "slug": "20261104-anthropic-platform-physicist-christopher-stubbs-joins-anthropics-b12d9d8f",
+      "slug": "20261104-anthropic-platform-ai-for-science-expands-to-foundations-and-res-ad10900d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "publishedAt": "2026-11-04T14:28:47.922Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "href": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
         },
         "fr": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
         }
       }
     },
     {
-      "slug": "20261104-vercel-tencent-hy4-now-available-on-ai-gateway-call-tencent-hy4--0d2095d1",
+      "slug": "20261104-vercel-workflow-sdk-adds-idempotent-starts-workflow-sdk-start-ca-1ada6820",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/tencent-hy4-now-available-on-ai-gateway",
-      "publishedAt": "2026-11-04T14:28:47.922Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "href": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "Tencent Hy4 now available on AI Gateway Call Tencent Hy4 at 50% off through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "Vojtech Miksu"
+          "title": "Workflow SDK adds idempotent starts Workflow SDK start() can now claim a hook token atomically. Duplicate starts with the same token throw HookConflictError and never become a run. Alex Langenfeld",
+          "summary": "4 November 4 Nov"
         },
         "fr": {
-          "title": "Tencent Hy4 now available on AI Gateway Call Tencent Hy4 at 50% off through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "Vojtech Miksu"
+          "title": "Workflow SDK adds idempotent starts Workflow SDK start() can now claim a hook token atomically. Duplicate starts with the same token throw HookConflictError and never become a run. Alex Langenfeld",
+          "summary": "4 November 4 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261104-nvidia-how-nvidia-uses-ai-agents-to-streamline-ai-factory-operat-ad3c135f",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+      "publishedAt": "2026-11-04T22:13:03.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+          "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards..."
+        },
+        "fr": {
+          "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+          "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards..."
+        }
+      }
+    },
+    {
+      "slug": "20261104-github-codeql-2274-improves-accuracy-and-query-metadata-03daee1e",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-04-codeql-2-27-4-improves-accuracy-and-query-metadata",
+      "publishedAt": "2026-11-04T20:04:52.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
+          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
+        },
+        "fr": {
+          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
+          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
+        }
+      }
+    },
+    {
+      "slug": "20261104-hugging-face-dharma-field-extractor-any-document-in-structured-f-5afc49da",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "publishedAt": "2026-11-04T17:50:10.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
+        },
+        "fr": {
+          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
+        }
+      }
+    },
+    {
+      "slug": "20261104-openai-platform-openai-to-acquire-pierre-computer-company-inc-3a06f84c",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/openai-to-acquire-pierre",
+      "publishedAt": "2026-11-04T14:30:00.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+          "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code."
+        },
+        "fr": {
+          "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+          "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code."
         }
       }
     },
@@ -83,22 +163,22 @@
       }
     },
     {
-      "slug": "20261104-github-copilot-byok-and-enterprise-custom-models-in-the-copilot--0f281cab",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
-      "publishedAt": "2026-11-04T00:32:19.000Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "slug": "20261104-go-a-new-go-api-for-json-aed4d9c6",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/jsonv2",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "BYOK and enterprise custom models in the Copilot usage API",
-          "summary": "The Copilot usage metrics API now shows bring your own key (BYOK) usage across GitHub Copilot, so you can separate it from Copilot-hosted model usage. Reports cover two kinds of… The post BYOK and enterprise custom mode…"
+          "title": "A new Go API for JSON",
+          "summary": "Go 1.27 introduces new encoding/json/v2 and encoding/json/jsontext packages."
         },
         "fr": {
-          "title": "BYOK and enterprise custom models in the Copilot usage API",
-          "summary": "The Copilot usage metrics API now shows bring your own key (BYOK) usage across GitHub Copilot, so you can separate it from Copilot-hosted model usage. Reports cover two kinds of… The post BYOK and enterprise custom mode…"
+          "title": "A new Go API for JSON",
+          "summary": "Go 1.27 introduces new encoding/json/v2 and encoding/json/jsontext packages."
         }
       }
     },
@@ -119,66 +199,6 @@
         "fr": {
           "title": "Wednesday, November 11, 2026 Security Releases",
           "summary": "Wednesday, November 11, 2026 Security Releases"
-        }
-      }
-    },
-    {
-      "slug": "20261103-nvidia-run-ai-models-for-edge-application-development-with-just--e060e1d4",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
-      "publishedAt": "2026-11-03T20:37:09.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
-      "locales": {
-        "en": {
-          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
-          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
-        },
-        "fr": {
-          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
-          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
-        }
-      }
-    },
-    {
-      "slug": "20261103-hugging-face-statebench-testing-how-language-models-track-state--a55665cf",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/statebench",
-      "publishedAt": "2026-11-03T17:15:21.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
-      "locales": {
-        "en": {
-          "title": "StateBench: Testing how language models track state changes over long documents",
-          "summary": "StateBench: Testing how language models track state changes over long documents"
-        },
-        "fr": {
-          "title": "StateBench: Testing how language models track state changes over long documents",
-          "summary": "StateBench: Testing how language models track state changes over long documents"
-        }
-      }
-    },
-    {
-      "slug": "20261103-chatgpt-accelerating-engineering-for-the-physical-world-26c6032e",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-      "publishedAt": "2026-11-03T12:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
-      "locales": {
-        "en": {
-          "title": "Accelerating engineering for the physical world",
-          "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world."
-        },
-        "fr": {
-          "title": "Accelerating engineering for the physical world",
-          "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world."
         }
       }
     },
@@ -343,26 +363,6 @@
       }
     },
     {
-      "slug": "20261026-go-our-response-to-the-emudhra-key-disclosure-incident-b19d44d9",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/emudhra-incident",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-27T12:06:40.521Z",
-      "locales": {
-        "en": {
-          "title": "Our Response To The eMudhra Key Disclosure Incident",
-          "summary": "How the Go team responded to the eMudhra certificate compromise with our first-ever URGENT track security release."
-        },
-        "fr": {
-          "title": "Our Response To The eMudhra Key Disclosure Incident",
-          "summary": "How the Go team responded to the eMudhra certificate compromise with our first-ever URGENT track security release."
-        }
-      }
-    },
-    {
       "slug": "20261019-notion-agents-rebuilt-to-do-more-for-less-286ca2db",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -403,42 +403,122 @@
       }
     },
     {
-      "slug": "20261104-anthropic-platform-an-update-on-independent-evaluators-dc9ed14d",
+      "slug": "20261104-anthropic-platform-open-call-for-guest-investigators-in-the-life-98d45c75",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "publishedAt": "2026-11-04T14:28:47.922Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
         },
         "fr": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
         }
       }
     },
     {
-      "slug": "20261104-vercel-vercel-mcp-now-renders-deployments-as-an-interactive-card-553410a0",
+      "slug": "20261104-vercel-kimi-k31-pro-now-has-more-zdr-providers-on-ai-gateway-cal-16f95901",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt",
-      "publishedAt": "2026-11-04T14:28:47.922Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "href": "https://vercel.com/changelog/kimi-k3-1-pro-now-has-more-zdr-providers-on-ai-gateway",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "Vercel MCP now renders deployments as an interactive card Vercel MCP now renders interactive deployment cards in MCP Apps clients like ChatGPT. Track status, view build logs, and debug deployments in chat. Josh Souphanthong, Nathan Manousos",
-          "summary": "s-128.jpg\"/> Josh Souphanthong, Mark Roberts"
+          "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway Call Moonshot AI's Kimi K3.1 Pro and K3.1 Pro Highspeed through Vercel AI Gateway on Zero Data Retention providers, with automatic failover and request traces. Jerilyn Zheng Product, AI Gateway",
+          "summary": "Alex Langenfeld"
         },
         "fr": {
-          "title": "Vercel MCP now renders deployments as an interactive card Vercel MCP now renders interactive deployment cards in MCP Apps clients like ChatGPT. Track status, view build logs, and debug deployments in chat. Josh Souphanthong, Nathan Manousos",
-          "summary": "s-128.jpg\"/> Josh Souphanthong, Mark Roberts"
+          "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway Call Moonshot AI's Kimi K3.1 Pro and K3.1 Pro Highspeed through Vercel AI Gateway on Zero Data Retention providers, with automatic failover and request traces. Jerilyn Zheng Product, AI Gateway",
+          "summary": "Alex Langenfeld"
+        }
+      }
+    },
+    {
+      "slug": "20261104-nvidia-use-nvidia-nemo-to-turn-agent-failures-into-tests-and-har-ce98a184",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/",
+      "publishedAt": "2026-11-04T20:26:19.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
+          "summary": "Turn production evidence into prioritized issues and custom evaluations that help you improve prompts, tools, models, memory, skills, and harness code. When you..."
+        },
+        "fr": {
+          "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
+          "summary": "Turn production evidence into prioritized issues and custom evaluations that help you improve prompts, tools, models, memory, skills, and harness code. When you..."
+        }
+      }
+    },
+    {
+      "slug": "20261104-github-copilot-github-copilot-is-now-available-in-xcodes-coding--a05548ef",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
+      "publishedAt": "2026-11-04T19:10:40.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
+          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
+        },
+        "fr": {
+          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
+          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-hugging-face-statebench-testing-how-language-models-track-state--a55665cf",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/statebench",
+      "publishedAt": "2026-11-03T17:15:21.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "StateBench: Testing how language models track state changes over long documents",
+          "summary": "StateBench: Testing how language models track state changes over long documents"
+        },
+        "fr": {
+          "title": "StateBench: Testing how language models track state changes over long documents",
+          "summary": "StateBench: Testing how language models track state changes over long documents"
+        }
+      }
+    },
+    {
+      "slug": "20261104-openai-platform-a-thousand-fewer-paths-to-root-a4f4c423",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "publishedAt": "2026-11-04T08:00:00.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "A thousand fewer paths to root",
+          "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel."
+        },
+        "fr": {
+          "title": "A thousand fewer paths to root",
+          "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel."
         }
       }
     },
@@ -463,22 +543,22 @@
       }
     },
     {
-      "slug": "20261103-github-dependabot-version-updates-support-agent-package-manager-51a16b58",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
-      "publishedAt": "2026-11-03T20:24:07.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "slug": "20261026-go-our-response-to-the-emudhra-key-disclosure-incident-b19d44d9",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/emudhra-incident",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-27T12:06:40.521Z",
       "locales": {
         "en": {
-          "title": "Dependabot version updates support Agent Package Manager",
-          "summary": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot versio…"
+          "title": "Our Response To The eMudhra Key Disclosure Incident",
+          "summary": "How the Go team responded to the eMudhra certificate compromise with our first-ever URGENT track security release."
         },
         "fr": {
-          "title": "Dependabot version updates support Agent Package Manager",
-          "summary": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot versio…"
+          "title": "Our Response To The eMudhra Key Disclosure Incident",
+          "summary": "How the Go team responded to the eMudhra certificate compromise with our first-ever URGENT track security release."
         }
       }
     },
@@ -499,66 +579,6 @@
         "fr": {
           "title": "Node.js 27.0.0-alpha.0.0.0 (Alpha)",
           "summary": "Node.js 27.0.0-alpha.0.0.0 (Alpha)"
-        }
-      }
-    },
-    {
-      "slug": "20261102-nvidia-diagnose-distributed-ai-workload-failures-with-nvidia-att-53eb05fa",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
-      "publishedAt": "2026-11-02T23:39:38.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
-          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
-        },
-        "fr": {
-          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
-          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
-        }
-      }
-    },
-    {
-      "slug": "20261103-hugging-face-palette-teaching-a-small-model-to-build-decks-in-yo-bc417703",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "publishedAt": "2026-11-03T16:35:36.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
-      "locales": {
-        "en": {
-          "title": "Palette: teaching a small model to build decks in your design language",
-          "summary": "Palette: teaching a small model to build decks in your design language"
-        },
-        "fr": {
-          "title": "Palette: teaching a small model to build decks in your design language",
-          "summary": "Palette: teaching a small model to build decks in your design language"
-        }
-      }
-    },
-    {
-      "slug": "20261103-openai-platform-how-cisco-defends-at-machine-speed-with-openai-a2357e70",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/cisco-cyber",
-      "publishedAt": "2026-11-03T08:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
-      "locales": {
-        "en": {
-          "title": "How Cisco defends at machine speed with OpenAI",
-          "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses."
-        },
-        "fr": {
-          "title": "How Cisco defends at machine speed with OpenAI",
-          "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses."
         }
       }
     },
@@ -723,26 +743,6 @@
       }
     },
     {
-      "slug": "20261021-go-help-set-gos-priorities-for-next-year-1ecfd1ce",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/survey2026-announce",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:09.861Z",
-      "locales": {
-        "en": {
-          "title": "Help set Go's priorities for next year",
-          "summary": "Share your experience with Go in the 2026 Go Developer Survey, open through November 3."
-        },
-        "fr": {
-          "title": "Help set Go's priorities for next year",
-          "summary": "Share your experience with Go in the 2026 Go Developer Survey, open through November 3."
-        }
-      }
-    },
-    {
       "slug": "20261013-notion-notion-38-context-for-your-agents-66f0e572",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -763,62 +763,142 @@
       }
     },
     {
-      "slug": "20261104-supabase-opentelemetry-traces-and-metrics-in-the-supabase-net-sd-b83bb3b1",
+      "slug": "20261104-supabase-aspnet-core-dependency-injection-for-the-supabase-net-s-e2f5eeb1",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/dotnet-opentelemetry-support",
-      "publishedAt": "2026-11-04T14:28:47.922Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "href": "https://supabase.com/changelog/dotnet-dependency-injection-extension",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
+          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
         },
         "fr": {
-          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
+          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
         }
       }
     },
     {
-      "slug": "20261104-anthropic-platform-preparing-for-the-2026-us-midterms-c9ddbc2b",
+      "slug": "20261104-anthropic-platform-strengthening-our-defenses-against-distillati-7f42709d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-us-midterms",
-      "publishedAt": "2026-11-04T14:28:47.922Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "href": "https://www.anthropic.com/news/distillation-defenses",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "Preparing for the 2026 US midterms",
-          "summary": "Preparing for the 2026 US midterms"
+          "title": "Strengthening our defenses against distillation attacks",
+          "summary": "Strengthening our defenses against distillation attacks"
         },
         "fr": {
-          "title": "Preparing for the 2026 US midterms",
-          "summary": "Preparing for the 2026 US midterms"
+          "title": "Strengthening our defenses against distillation attacks",
+          "summary": "Strengthening our defenses against distillation attacks"
         }
       }
     },
     {
-      "slug": "20261104-vercel-flags-explorer-redesigned-for-easier-override-sharing-fla-6fcdcf18",
+      "slug": "20261104-vercel-projects-can-now-be-configured-with-verceltoml-vercel-now-d9f477ed",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/flags-explorer-redesigned-for-easier-override-sharing",
-      "publishedAt": "2026-11-04T14:28:47.922Z",
+      "href": "https://vercel.com/changelog/projects-can-now-be-configured-with-vercel-toml",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "Projects can now be configured with vercel.toml Vercel now supports vercel.toml, which allows you to to configure your project using the TOML configuration format Michael J. Sullivan, Ricardo Gonzalez",
+          "summary": "2 November 2 Nov"
+        },
+        "fr": {
+          "title": "Projects can now be configured with vercel.toml Vercel now supports vercel.toml, which allows you to to configure your project using the TOML configuration format Michael J. Sullivan, Ricardo Gonzalez",
+          "summary": "2 November 2 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261104-nvidia-nvidia-cuda-135-brings-nvidia-vera-rubin-ga-support-8e7c0f56",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+      "publishedAt": "2026-11-04T18:46:28.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
+          "summary": "As artificial intelligence and accelerated computing continue to push the boundaries of what's possible, the latest NVIDIA CUDA release arrives to unlock..."
+        },
+        "fr": {
+          "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
+          "summary": "As artificial intelligence and accelerated computing continue to push the boundaries of what's possible, the latest NVIDIA CUDA release arrives to unlock..."
+        }
+      }
+    },
+    {
+      "slug": "20261104-github-copilot-byok-and-enterprise-custom-models-in-the-copilot--0f281cab",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
+      "publishedAt": "2026-11-04T00:32:19.000Z",
       "discoveredAt": "2026-11-04T14:28:47.922Z",
       "locales": {
         "en": {
-          "title": "Flags Explorer redesigned for easier override sharing Flags Explorer has been redesigned to co-locate overrides, branch recommendations, and any related actions. Rauno Freiberg Design Engineer",
-          "summary": "al.jpg\"/> Josh Souphanthong, Nathan Manousos"
+          "title": "BYOK and enterprise custom models in the Copilot usage API",
+          "summary": "The Copilot usage metrics API now shows bring your own key (BYOK) usage across GitHub Copilot, so you can separate it from Copilot-hosted model usage. Reports cover two kinds of… The post BYOK and enterprise custom mode…"
         },
         "fr": {
-          "title": "Flags Explorer redesigned for easier override sharing Flags Explorer has been redesigned to co-locate overrides, branch recommendations, and any related actions. Rauno Freiberg Design Engineer",
-          "summary": "al.jpg\"/> Josh Souphanthong, Nathan Manousos"
+          "title": "BYOK and enterprise custom models in the Copilot usage API",
+          "summary": "The Copilot usage metrics API now shows bring your own key (BYOK) usage across GitHub Copilot, so you can separate it from Copilot-hosted model usage. Reports cover two kinds of… The post BYOK and enterprise custom mode…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-hugging-face-palette-teaching-a-small-model-to-build-decks-in-yo-bc417703",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "publishedAt": "2026-11-03T16:35:36.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "Palette: teaching a small model to build decks in your design language",
+          "summary": "Palette: teaching a small model to build decks in your design language"
+        },
+        "fr": {
+          "title": "Palette: teaching a small model to build decks in your design language",
+          "summary": "Palette: teaching a small model to build decks in your design language"
+        }
+      }
+    },
+    {
+      "slug": "20261104-openai-platform-daybreak-red-is-now-available-in-aws-govcloud-us-75679f5a",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "publishedAt": "2026-11-04T07:00:00.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+          "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work."
+        },
+        "fr": {
+          "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+          "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work."
         }
       }
     },
@@ -843,22 +923,22 @@
       }
     },
     {
-      "slug": "20261103-github-look-up-a-resources-cost-center-with-the-github-rest-api-946f3d39",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-03-look-up-a-resources-cost-center-with-the-github-rest-api",
-      "publishedAt": "2026-11-03T15:27:13.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "slug": "20261021-go-help-set-gos-priorities-for-next-year-1ecfd1ce",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/survey2026-announce",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:09.861Z",
       "locales": {
         "en": {
-          "title": "Look up a resource’s cost center with the GitHub REST API",
-          "summary": "You can now use the GitHub REST API to find which cost center a user, organization, repository, or enterprise team belongs to. Previously, you had to list every cost center… The post Look up a resource’s cost center wit…"
+          "title": "Help set Go's priorities for next year",
+          "summary": "Share your experience with Go in the 2026 Go Developer Survey, open through November 3."
         },
         "fr": {
-          "title": "Look up a resource’s cost center with the GitHub REST API",
-          "summary": "You can now use the GitHub REST API to find which cost center a user, organization, repository, or enterprise team belongs to. Previously, you had to list every cost center… The post Look up a resource’s cost center wit…"
+          "title": "Help set Go's priorities for next year",
+          "summary": "Share your experience with Go in the 2026 Go Developer Survey, open through November 3."
         }
       }
     },
@@ -879,66 +959,6 @@
         "fr": {
           "title": "Node.js 24.22.2 (LTS)",
           "summary": "Node.js 24.22.2 (LTS)"
-        }
-      }
-    },
-    {
-      "slug": "20261102-nvidia-keep-distributed-training-running-with-automated-workload-039049f2",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
-      "publishedAt": "2026-11-02T22:43:09.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "Keep Distributed Training Running with Automated Workload Recovery",
-          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
-        },
-        "fr": {
-          "title": "Keep Distributed Training Running with Automated Workload Recovery",
-          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
-        }
-      }
-    },
-    {
-      "slug": "20261103-hugging-face-cwe-bench-v2-more-coverage-quality-and-transparency-20954e3a",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/cwe-bench",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
-      "locales": {
-        "en": {
-          "title": "CWE-bench v2: More coverage, quality, and transparency",
-          "summary": "CWE-bench v2: More coverage, quality, and transparency"
-        },
-        "fr": {
-          "title": "CWE-bench v2: More coverage, quality, and transparency",
-          "summary": "CWE-bench v2: More coverage, quality, and transparency"
-        }
-      }
-    },
-    {
-      "slug": "20261103-chatgpt-heimstaden-is-changing-residential-real-estate-managemen-08b710f1",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/heimstaden",
-      "publishedAt": "2026-11-03T08:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
-      "locales": {
-        "en": {
-          "title": "Heimstaden is changing residential real estate management with AI",
-          "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe."
-        },
-        "fr": {
-          "title": "Heimstaden is changing residential real estate management with AI",
-          "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe."
         }
       }
     },
@@ -1103,26 +1123,6 @@
       }
     },
     {
-      "slug": "20261016-go-interactive-refactoring-in-gopls-66b01ef3",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/interactive-refactoring",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "discoveredAt": "2026-10-16T21:04:25.613Z",
-      "locales": {
-        "en": {
-          "title": "Interactive refactoring in gopls",
-          "summary": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor."
-        },
-        "fr": {
-          "title": "Interactive refactoring in gopls",
-          "summary": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor."
-        }
-      }
-    },
-    {
       "slug": "20260916-notion-notion-37-agent-skills-for-your-whole-team-cd21ad33",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1143,62 +1143,142 @@
       }
     },
     {
-      "slug": "20261104-supabase-status-page-moves-to-incidentio-7e1c5736",
+      "slug": "20261104-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/status-page-migration",
-      "publishedAt": "2026-11-04T14:28:47.922Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         },
         "fr": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         }
       }
     },
     {
-      "slug": "20261104-anthropic-platform-anthropic-opens-singapore-office-and-signs-mo-87253efe",
+      "slug": "20261104-anthropic-platform-introducing-the-anthropic-cyber-mission-db9c3550",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/singapore-office-opening",
-      "publishedAt": "2026-11-04T14:28:47.922Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+          "title": "Introducing the Anthropic Cyber Mission",
+          "summary": "Introducing the Anthropic Cyber Mission"
         },
         "fr": {
-          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+          "title": "Introducing the Anthropic Cyber Mission",
+          "summary": "Introducing the Anthropic Cyber Mission"
         }
       }
     },
     {
-      "slug": "20261103-vercel-vercel-security-review-now-in-public-beta-vercel-security-f537ef36",
+      "slug": "20261104-vercel-vercel-mcp-now-supports-client-id-metadata-documents-verc-9a0861c2",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-security-review-public-beta",
-      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "href": "https://vercel.com/changelog/vercel-mcp-now-supports-client-id-metadata-documents",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "Vercel MCP now supports Client ID Metadata Documents Vercel MCP now accepts Client ID Metadata Documents (CIMD) as OAuth client IDs, so MCP clients connect without pre-registration or allowlisting. Josh Souphanthong, Mark Roberts",
+          "summary": "jpg\"/> Michael J. Sullivan, Ricardo Gonzalez"
+        },
+        "fr": {
+          "title": "Vercel MCP now supports Client ID Metadata Documents Vercel MCP now accepts Client ID Metadata Documents (CIMD) as OAuth client IDs, so MCP clients connect without pre-registration or allowlisting. Josh Souphanthong, Mark Roberts",
+          "summary": "jpg\"/> Michael J. Sullivan, Ricardo Gonzalez"
+        }
+      }
+    },
+    {
+      "slug": "20261103-nvidia-run-ai-models-for-edge-application-development-with-just--e060e1d4",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+      "publishedAt": "2026-11-03T20:37:09.000Z",
       "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Vercel Security Review now in public beta Vercel Security Review is now in public beta. Every push to your GitHub repositories is reviewed for vulnerabilities, and Vercel Agent can open the fix. +3 Nate McGrady, Karim Rahal, and 3 others",
-          "summary": "3 November 3 Nov"
+          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
         },
         "fr": {
-          "title": "Vercel Security Review now in public beta Vercel Security Review is now in public beta. Every push to your GitHub repositories is reviewed for vulnerabilities, and Vercel Agent can open the fix. +3 Nate McGrady, Karim Rahal, and 3 others",
-          "summary": "3 November 3 Nov"
+          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-github-dependabot-version-updates-support-agent-package-manager-51a16b58",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+      "publishedAt": "2026-11-03T20:24:07.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "Dependabot version updates support Agent Package Manager",
+          "summary": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot versio…"
+        },
+        "fr": {
+          "title": "Dependabot version updates support Agent Package Manager",
+          "summary": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot versio…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-hugging-face-cwe-bench-v2-more-coverage-quality-and-transparency-20954e3a",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/cwe-bench",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "CWE-bench v2: More coverage, quality, and transparency",
+          "summary": "CWE-bench v2: More coverage, quality, and transparency"
+        },
+        "fr": {
+          "title": "CWE-bench v2: More coverage, quality, and transparency",
+          "summary": "CWE-bench v2: More coverage, quality, and transparency"
+        }
+      }
+    },
+    {
+      "slug": "20261104-openai-platform-devrev-delivers-autonomous-self-service-with-gpt-bf25be8f",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/devrev-enterprise-self-service",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+          "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service."
+        },
+        "fr": {
+          "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+          "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service."
         }
       }
     },
@@ -1223,22 +1303,22 @@
       }
     },
     {
-      "slug": "20261103-github-copilot-github-copilot-is-now-available-in-jetbrains-air-9c22661c",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
-      "publishedAt": "2026-11-03T15:11:46.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "slug": "20261016-go-interactive-refactoring-in-gopls-66b01ef3",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/interactive-refactoring",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:25.613Z",
       "locales": {
         "en": {
-          "title": "GitHub Copilot is now available in JetBrains Air",
-          "summary": "You can now delegate coding tasks, guide execution, and review results with GitHub Copilot in JetBrains Air. The integration uses the Agent Client Protocol (ACP) and supports tasks in your… The post GitHub Copilot is no…"
+          "title": "Interactive refactoring in gopls",
+          "summary": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor."
         },
         "fr": {
-          "title": "GitHub Copilot is now available in JetBrains Air",
-          "summary": "You can now delegate coding tasks, guide execution, and review results with GitHub Copilot in JetBrains Air. The integration uses the Agent Client Protocol (ACP) and supports tasks in your… The post GitHub Copilot is no…"
+          "title": "Interactive refactoring in gopls",
+          "summary": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor."
         }
       }
     },
@@ -1259,66 +1339,6 @@
         "fr": {
           "title": "Node.js 26.13.0 (LTS)",
           "summary": "Node.js 26.13.0 (LTS)"
-        }
-      }
-    },
-    {
-      "slug": "20261102-nvidia-nvidia-pair-virtual-inference-router-expands-available-co-291ea19a",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network/",
-      "publishedAt": "2026-11-02T19:17:17.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
-          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
-        },
-        "fr": {
-          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
-          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
-        }
-      }
-    },
-    {
-      "slug": "20261103-hugging-face-transformers-model-integration-contracts-fec0e46c",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/transformers-mic",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
-      "locales": {
-        "en": {
-          "title": "Transformers Model Integration Contracts",
-          "summary": "Transformers Model Integration Contracts"
-        },
-        "fr": {
-          "title": "Transformers Model Integration Contracts",
-          "summary": "Transformers Model Integration Contracts"
-        }
-      }
-    },
-    {
-      "slug": "20261103-openai-platform-openai-appoints-jill-hazelbaker-as-chief-corpora-3d509e27",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
-      "locales": {
-        "en": {
-          "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-          "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning."
-        },
-        "fr": {
-          "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-          "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning."
         }
       }
     },
@@ -1483,26 +1503,6 @@
       }
     },
     {
-      "slug": "20261014-go-better-http1-connection-reuse-1f9db072",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/http-connection-reuse",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:48.576Z",
-      "locales": {
-        "en": {
-          "title": "Better HTTP/1 connection reuse",
-          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
-        },
-        "fr": {
-          "title": "Better HTTP/1 connection reuse",
-          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
-        }
-      }
-    },
-    {
       "slug": "20260912-notion-see-whats-new-feab92d9",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1523,62 +1523,142 @@
       }
     },
     {
-      "slug": "20261104-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
+      "slug": "20261104-supabase-public-alpha-supabase-go-sdk-107ff49a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
-      "publishedAt": "2026-11-04T14:28:47.922Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         },
         "fr": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         }
       }
     },
     {
-      "slug": "20261104-anthropic-platform-building-on-our-commitment-to-american-scient-26f50496",
+      "slug": "20261104-anthropic-platform-2026-usage-policy-update-7a238471",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
-      "publishedAt": "2026-11-04T14:28:47.922Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "publishedAt": "2026-11-04T23:38:59.532Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "Building on our commitment to American scientific discovery",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "2026 Usage Policy update",
+          "summary": "2026 Usage Policy update"
         },
         "fr": {
-          "title": "Building on our commitment to American scientific discovery",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "2026 Usage Policy update",
+          "summary": "2026 Usage Policy update"
         }
       }
     },
     {
-      "slug": "20261103-vercel-vercel-ci-no-longer-requires-a-linked-vercel-project-you--52e9b971",
+      "slug": "20261104-vercel-tencent-hy4-now-available-on-ai-gateway-call-tencent-hy4--0d2095d1",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-ci-no-longer-requires-a-linked-vercel-project",
-      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "href": "https://vercel.com/changelog/tencent-hy4-now-available-on-ai-gateway",
+      "publishedAt": "2026-11-04T14:28:47.922Z",
+      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "locales": {
+        "en": {
+          "title": "Tencent Hy4 now available on AI Gateway Call Tencent Hy4 at 50% off through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "Vojtech Miksu"
+        },
+        "fr": {
+          "title": "Tencent Hy4 now available on AI Gateway Call Tencent Hy4 at 50% off through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "Vojtech Miksu"
+        }
+      }
+    },
+    {
+      "slug": "20261102-nvidia-diagnose-distributed-ai-workload-failures-with-nvidia-att-53eb05fa",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+      "publishedAt": "2026-11-02T23:39:38.000Z",
+      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "locales": {
+        "en": {
+          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
+        },
+        "fr": {
+          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-github-look-up-a-resources-cost-center-with-the-github-rest-api-946f3d39",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-03-look-up-a-resources-cost-center-with-the-github-rest-api",
+      "publishedAt": "2026-11-03T15:27:13.000Z",
       "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Vercel CI no longer requires a linked Vercel project You can now use Vercel CI standalone. It is not longer a requirement to have a Vercel project as a pre-requisite Vojtech Miksu",
-          "summary": "+3 Nate McGrady, Karim Rahal, and 3 others"
+          "title": "Look up a resource’s cost center with the GitHub REST API",
+          "summary": "You can now use the GitHub REST API to find which cost center a user, organization, repository, or enterprise team belongs to. Previously, you had to list every cost center… The post Look up a resource’s cost center wit…"
         },
         "fr": {
-          "title": "Vercel CI no longer requires a linked Vercel project You can now use Vercel CI standalone. It is not longer a requirement to have a Vercel project as a pre-requisite Vojtech Miksu",
-          "summary": "+3 Nate McGrady, Karim Rahal, and 3 others"
+          "title": "Look up a resource’s cost center with the GitHub REST API",
+          "summary": "You can now use the GitHub REST API to find which cost center a user, organization, repository, or enterprise team belongs to. Previously, you had to list every cost center… The post Look up a resource’s cost center wit…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-hugging-face-transformers-model-integration-contracts-fec0e46c",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/transformers-mic",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "locales": {
+        "en": {
+          "title": "Transformers Model Integration Contracts",
+          "summary": "Transformers Model Integration Contracts"
+        },
+        "fr": {
+          "title": "Transformers Model Integration Contracts",
+          "summary": "Transformers Model Integration Contracts"
+        }
+      }
+    },
+    {
+      "slug": "20261103-chatgpt-accelerating-engineering-for-the-physical-world-26c6032e",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "publishedAt": "2026-11-03T12:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "Accelerating engineering for the physical world",
+          "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world."
+        },
+        "fr": {
+          "title": "Accelerating engineering for the physical world",
+          "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world."
         }
       }
     },
@@ -1603,22 +1683,22 @@
       }
     },
     {
-      "slug": "20261103-github-codeql-2273-adds-python-315-features-and-json-data-extens-1a23e774",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-03-codeql-2-27-3-adds-python-3-15-features-and-json-data-extensions",
-      "publishedAt": "2026-11-03T14:56:03.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "slug": "20261014-go-better-http1-connection-reuse-1f9db072",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/http-connection-reuse",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T21:38:48.576Z",
       "locales": {
         "en": {
-          "title": "CodeQL 2.27.3 adds Python 3.15 features and JSON data extensions",
-          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.3. It supports new Python 3.15 language… The post CodeQL 2.2…"
+          "title": "Better HTTP/1 connection reuse",
+          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
         },
         "fr": {
-          "title": "CodeQL 2.27.3 adds Python 3.15 features and JSON data extensions",
-          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.3. It supports new Python 3.15 language… The post CodeQL 2.2…"
+          "title": "Better HTTP/1 connection reuse",
+          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
         }
       }
     },
@@ -1639,66 +1719,6 @@
         "fr": {
           "title": "Wednesday, October 21, 2026 Security Releases",
           "summary": "Wednesday, October 21, 2026 Security Releases"
-        }
-      }
-    },
-    {
-      "slug": "20261102-nvidia-build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-sample-85ba4f5e",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
-      "publishedAt": "2026-11-02T19:17:11.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
-          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
-        },
-        "fr": {
-          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
-          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
-        }
-      }
-    },
-    {
-      "slug": "20261030-hugging-face-nemotron-halloween-b2263e9f",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "publishedAt": "2026-10-30T17:57:24.000Z",
-      "discoveredAt": "2026-10-30T22:15:48.157Z",
-      "locales": {
-        "en": {
-          "title": "nemotron-halloween",
-          "summary": "nemotron-halloween"
-        },
-        "fr": {
-          "title": "nemotron-halloween",
-          "summary": "nemotron-halloween"
-        }
-      }
-    },
-    {
-      "slug": "20261102-openai-platform-rewarding-defenders-with-bigger-bug-bounties-6fd6ad79",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "publishedAt": "2026-11-02T18:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
-      "locales": {
-        "en": {
-          "title": "Rewarding defenders with bigger bug bounties",
-          "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
-        },
-        "fr": {
-          "title": "Rewarding defenders with bigger bug bounties",
-          "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
         }
       }
     },
@@ -1863,26 +1883,6 @@
       }
     },
     {
-      "slug": "20261002-go-arch-specific-simd-in-go-aa4c22f4",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/archsimd",
-      "publishedAt": "2026-10-02T00:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:36.141Z",
-      "locales": {
-        "en": {
-          "title": "Arch-specific SIMD in Go",
-          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
-        },
-        "fr": {
-          "title": "Arch-specific SIMD in Go",
-          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
-        }
-      }
-    },
-    {
       "slug": "20260908-notion-control-which-ai-models-your-agents-can-use-5768ae4c",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -1903,62 +1903,142 @@
       }
     },
     {
-      "slug": "20261104-supabase-breaking-change-supabase-cli-v3-is-local-by-default-and-07483b33",
+      "slug": "20261104-supabase-opentelemetry-traces-and-metrics-in-the-supabase-net-sd-b83bb3b1",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-cli-v3",
-      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "href": "https://supabase.com/changelog/dotnet-opentelemetry-support",
+      "publishedAt": "2026-11-04T14:28:47.922Z",
       "discoveredAt": "2026-11-04T14:28:47.922Z",
       "locales": {
         "en": {
-          "title": "Breaking Change: Supabase CLI v3 is local by default and confirms hosted changes",
-          "summary": "Nov 4, 2026"
+          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
         },
         "fr": {
-          "title": "Breaking Change: Supabase CLI v3 is local by default and confirms hosted changes",
-          "summary": "Nov 4, 2026"
+          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
         }
       }
     },
     {
-      "slug": "20261103-claude-expanding-our-partnership-with-gsa-to-bring-claude-to-all-16faca12",
-      "toolName": "Claude",
-      "category": "AI Assistant",
+      "slug": "20261104-anthropic-platform-physicist-christopher-stubbs-joins-anthropics-b12d9d8f",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/expanding-partnership-gsa",
-      "publishedAt": "2026-11-03T23:19:26.247Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "publishedAt": "2026-11-04T14:28:47.922Z",
+      "discoveredAt": "2026-11-04T14:28:47.922Z",
       "locales": {
         "en": {
-          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
+          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
         },
         "fr": {
-          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
+          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
         }
       }
     },
     {
-      "slug": "20261103-vercel-diagnose-vercel-cli-setup-problems-with-vercel-doctor-dia-72f374bb",
+      "slug": "20261104-vercel-vercel-mcp-now-renders-deployments-as-an-interactive-card-553410a0",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-cli-now-diagnoses-setup-problems-with-vercel-doctor",
-      "publishedAt": "2026-11-03T23:19:26.247Z",
+      "href": "https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt",
+      "publishedAt": "2026-11-04T14:28:47.922Z",
+      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "locales": {
+        "en": {
+          "title": "Vercel MCP now renders deployments as an interactive card Vercel MCP now renders interactive deployment cards in MCP Apps clients like ChatGPT. Track status, view build logs, and debug deployments in chat. Josh Souphanthong, Nathan Manousos",
+          "summary": "s-128.jpg\"/> Josh Souphanthong, Mark Roberts"
+        },
+        "fr": {
+          "title": "Vercel MCP now renders deployments as an interactive card Vercel MCP now renders interactive deployment cards in MCP Apps clients like ChatGPT. Track status, view build logs, and debug deployments in chat. Josh Souphanthong, Nathan Manousos",
+          "summary": "s-128.jpg\"/> Josh Souphanthong, Mark Roberts"
+        }
+      }
+    },
+    {
+      "slug": "20261102-nvidia-how-nvidia-factory-operations-blueprint-coordinates-ai-ag-a0a290cb",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/",
+      "publishedAt": "2026-11-02T22:53:01.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "How NVIDIA Factory Operations Blueprint Coordinates AI Agents to Investigate Production Issues",
+          "summary": "A Siemens report estimates that unplanned downtime costs an average large plant in the surveyed sectors $253 million per year. Whether investigating a failed..."
+        },
+        "fr": {
+          "title": "How NVIDIA Factory Operations Blueprint Coordinates AI Agents to Investigate Production Issues",
+          "summary": "A Siemens report estimates that unplanned downtime costs an average large plant in the surveyed sectors $253 million per year. Whether investigating a failed..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-github-copilot-github-copilot-is-now-available-in-jetbrains-air-9c22661c",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
+      "publishedAt": "2026-11-03T15:11:46.000Z",
       "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Diagnose Vercel CLI setup problems with vercel doctor Diagnose Vercel CLI setup problems with vercel doctor. It checks your CLI version, login, team, project link, and vercel.json, and suggests fixes. Melkey Moksyakov Software Engineer",
-          "summary": "Vojtech Miksu"
+          "title": "GitHub Copilot is now available in JetBrains Air",
+          "summary": "You can now delegate coding tasks, guide execution, and review results with GitHub Copilot in JetBrains Air. The integration uses the Agent Client Protocol (ACP) and supports tasks in your… The post GitHub Copilot is no…"
         },
         "fr": {
-          "title": "Diagnose Vercel CLI setup problems with vercel doctor Diagnose Vercel CLI setup problems with vercel doctor. It checks your CLI version, login, team, project link, and vercel.json, and suggests fixes. Melkey Moksyakov Software Engineer",
-          "summary": "Vojtech Miksu"
+          "title": "GitHub Copilot is now available in JetBrains Air",
+          "summary": "You can now delegate coding tasks, guide execution, and review results with GitHub Copilot in JetBrains Air. The integration uses the Agent Client Protocol (ACP) and supports tasks in your… The post GitHub Copilot is no…"
+        }
+      }
+    },
+    {
+      "slug": "20261030-hugging-face-nemotron-halloween-b2263e9f",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "publishedAt": "2026-10-30T17:57:24.000Z",
+      "discoveredAt": "2026-10-30T22:15:48.157Z",
+      "locales": {
+        "en": {
+          "title": "nemotron-halloween",
+          "summary": "nemotron-halloween"
+        },
+        "fr": {
+          "title": "nemotron-halloween",
+          "summary": "nemotron-halloween"
+        }
+      }
+    },
+    {
+      "slug": "20261103-openai-platform-how-cisco-defends-at-machine-speed-with-openai-a2357e70",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/cisco-cyber",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "How Cisco defends at machine speed with OpenAI",
+          "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses."
+        },
+        "fr": {
+          "title": "How Cisco defends at machine speed with OpenAI",
+          "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses."
         }
       }
     },
@@ -1983,22 +2063,22 @@
       }
     },
     {
-      "slug": "20261103-github-dependabot-now-supports-python-315-342dbac0",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-03-dependabot-now-supports-python-3-15",
-      "publishedAt": "2026-11-03T13:49:32.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "slug": "20261002-go-arch-specific-simd-in-go-aa4c22f4",
+      "toolName": "Go",
+      "category": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/archsimd",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:36.141Z",
       "locales": {
         "en": {
-          "title": "Dependabot now supports Python 3.15",
-          "summary": "You can now upgrade your projects to Python 3.15 and keep receiving Dependabot updates. Support for Python 3.15 is available to all github.com users and will be included in GitHub… The post Dependabot now supports Pytho…"
+          "title": "Arch-specific SIMD in Go",
+          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
         },
         "fr": {
-          "title": "Dependabot now supports Python 3.15",
-          "summary": "You can now upgrade your projects to Python 3.15 and keep receiving Dependabot updates. Support for Python 3.15 is available to all github.com users and will be included in GitHub… The post Dependabot now supports Pytho…"
+          "title": "Arch-specific SIMD in Go",
+          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
         }
       }
     },
@@ -2023,66 +2103,6 @@
       }
     },
     {
-      "slug": "20261102-nvidia-code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark-786c68bd",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
-      "publishedAt": "2026-11-02T19:17:06.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
-        },
-        "fr": {
-          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
-        }
-      }
-    },
-    {
-      "slug": "20261029-hugging-face-granite-switch-411-update-models-like-you-update-so-f3538b6f",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
-      "publishedAt": "2026-10-29T13:37:07.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
-      "locales": {
-        "en": {
-          "title": "Granite Switch 4.1.1 — Update models like you update software",
-          "summary": "Granite Switch 4.1.1 — Update models like you update software"
-        },
-        "fr": {
-          "title": "Granite Switch 4.1.1 — Update models like you update software",
-          "summary": "Granite Switch 4.1.1 — Update models like you update software"
-        }
-      }
-    },
-    {
-      "slug": "20261102-openai-platform-preparing-our-next-security-sprint-to-harden-ope-262cfa35",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "publishedAt": "2026-11-02T18:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
-      "locales": {
-        "en": {
-          "title": "Preparing our next security sprint to harden OpenAI",
-          "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
-        },
-        "fr": {
-          "title": "Preparing our next security sprint to harden OpenAI",
-          "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
-        }
-      }
-    },
-    {
       "slug": "20261001-rust-announcing-rust-1990-7d7cbf9b",
       "toolName": "Rust",
       "category": "Systems & Backend",
@@ -2103,22 +2123,22 @@
       }
     },
     {
-      "slug": "20261028-postgresql-estuary-expands-postgresql-cdc-with-targeted-backfill-c3c04b2c",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
+      "slug": "20261028-kubernetes-postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-884d8d8f",
+      "toolName": "Kubernetes",
+      "category": "Cloud/DevOps",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/estuary-expands-postgresql-cdc-with-targeted-backfills-and-scalable-discovery-3419/",
+      "href": "https://www.postgresql.org/about/news/postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-3363/",
       "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
-          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings no…"
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (…"
         },
         "fr": {
-          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
-          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings no…"
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (…"
         }
       }
     },
@@ -2243,26 +2263,6 @@
       }
     },
     {
-      "slug": "20260924-go-platform-independent-simd-in-go-e0645c8a",
-      "toolName": "Go",
-      "category": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/simd-experiment",
-      "publishedAt": "2026-09-24T00:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:30.940Z",
-      "locales": {
-        "en": {
-          "title": "Platform-independent SIMD in Go",
-          "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
-        },
-        "fr": {
-          "title": "Platform-independent SIMD in Go",
-          "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
-        }
-      }
-    },
-    {
       "slug": "20260827-notion-ask-your-agent-to-suggest-edits-3d228486",
       "toolName": "Notion",
       "category": "Productivity Workspace",
@@ -2283,122 +2283,122 @@
       }
     },
     {
-      "slug": "20261103-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "slug": "20261104-supabase-status-page-moves-to-incidentio-7e1c5736",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/no-access-org-role",
-      "publishedAt": "2026-11-03T23:19:26.247Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "href": "https://supabase.com/changelog/status-page-migration",
+      "publishedAt": "2026-11-04T14:28:47.922Z",
+      "discoveredAt": "2026-11-04T14:28:47.922Z",
       "locales": {
         "en": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         },
         "fr": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         }
       }
     },
     {
-      "slug": "20261103-anthropic-platform-donating-agent-skills-to-the-agentic-ai-found-86405d6d",
+      "slug": "20261104-anthropic-platform-an-update-on-independent-evaluators-dc9ed14d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-      "publishedAt": "2026-11-03T23:19:26.247Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "href": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "publishedAt": "2026-11-04T14:28:47.922Z",
+      "discoveredAt": "2026-11-04T14:28:47.922Z",
       "locales": {
         "en": {
-          "title": "Donating Agent Skills to the Agentic AI Foundation",
-          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+          "title": "An update on independent evaluators",
+          "summary": "An update on independent evaluators"
         },
         "fr": {
-          "title": "Donating Agent Skills to the Agentic AI Foundation",
-          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+          "title": "An update on independent evaluators",
+          "summary": "An update on independent evaluators"
         }
       }
     },
     {
-      "slug": "20261103-vercel-vercel-sandbox-with-drives-now-starts-up-to-24-faster-ver-06dd68e0",
+      "slug": "20261104-vercel-flags-explorer-redesigned-for-easier-override-sharing-fla-6fcdcf18",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-sandbox-with-drives-now-starts-up-to-2-4x-faster",
-      "publishedAt": "2026-11-03T23:19:26.247Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
-      "locales": {
-        "en": {
-          "title": "Vercel Sandbox with Drives now starts up to 2.4× faster Vercel Sandbox now creates sandboxes that mount Drives faster. Drives attach in less time when a sandbox starts, with no SDK upgrade or configuration change. Joe Haddad, Tom Lienard",
-          "summary": "Rauno Freiberg Design Engineer"
-        },
-        "fr": {
-          "title": "Vercel Sandbox with Drives now starts up to 2.4× faster Vercel Sandbox now creates sandboxes that mount Drives faster. Drives attach in less time when a sandbox starts, with no SDK upgrade or configuration change. Joe Haddad, Tom Lienard",
-          "summary": "Rauno Freiberg Design Engineer"
-        }
-      }
-    },
-    {
-      "slug": "20261027-cloudflare-what-took-the-internet-offline-in-q3-2026-1332586c",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
-      "publishedAt": "2026-10-27T13:00:00.000Z",
+      "href": "https://vercel.com/changelog/flags-explorer-redesigned-for-easier-override-sharing",
+      "publishedAt": "2026-11-04T14:28:47.922Z",
       "discoveredAt": "2026-11-04T14:28:47.922Z",
       "locales": {
         "en": {
-          "title": "What took the Internet offline in Q3 2026",
-          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connecti…"
+          "title": "Flags Explorer redesigned for easier override sharing Flags Explorer has been redesigned to co-locate overrides, branch recommendations, and any related actions. Rauno Freiberg Design Engineer",
+          "summary": "al.jpg\"/> Josh Souphanthong, Nathan Manousos"
         },
         "fr": {
-          "title": "What took the Internet offline in Q3 2026",
-          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connecti…"
+          "title": "Flags Explorer redesigned for easier override sharing Flags Explorer has been redesigned to co-locate overrides, branch recommendations, and any related actions. Rauno Freiberg Design Engineer",
+          "summary": "al.jpg\"/> Josh Souphanthong, Nathan Manousos"
         }
       }
     },
     {
-      "slug": "20261103-github-github-desktop-adds-short-lived-authentication-tokens-d29389a0",
+      "slug": "20261102-nvidia-keep-distributed-training-running-with-automated-workload-039049f2",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
+      "publishedAt": "2026-11-02T22:43:09.000Z",
+      "discoveredAt": "2026-11-03T00:56:41.966Z",
+      "locales": {
+        "en": {
+          "title": "Keep Distributed Training Running with Automated Workload Recovery",
+          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
+        },
+        "fr": {
+          "title": "Keep Distributed Training Running with Automated Workload Recovery",
+          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-github-codeql-2273-adds-python-315-features-and-json-data-extens-1a23e774",
       "toolName": "GitHub",
       "category": "Developer Platform",
       "source": "GitHub Changelog",
       "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-02-github-desktop-adds-short-lived-authentication-tokens",
-      "publishedAt": "2026-11-03T07:55:58.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "href": "https://github.blog/changelog/2026-11-03-codeql-2-27-3-adds-python-3-15-features-and-json-data-extensions",
+      "publishedAt": "2026-11-03T14:56:03.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "GitHub Desktop adds short-lived authentication tokens",
-          "summary": "When you sign in to GitHub Desktop 3.6.10 or later, eligible accounts can now use short-lived, automatically refreshing authentication tokens. Short-lived access tokens reduce how long a leaked token can… The post GitHu…"
+          "title": "CodeQL 2.27.3 adds Python 3.15 features and JSON data extensions",
+          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.3. It supports new Python 3.15 language… The post CodeQL 2.2…"
         },
         "fr": {
-          "title": "GitHub Desktop adds short-lived authentication tokens",
-          "summary": "When you sign in to GitHub Desktop 3.6.10 or later, eligible accounts can now use short-lived, automatically refreshing authentication tokens. Short-lived access tokens reduce how long a leaked token can… The post GitHu…"
+          "title": "CodeQL 2.27.3 adds Python 3.15 features and JSON data extensions",
+          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.3. It supports new Python 3.15 language… The post CodeQL 2.2…"
         }
       }
     },
     {
-      "slug": "20261021-nodejs-nodejs-24221-lts-8b081c5b",
-      "toolName": "Node.js",
-      "category": "Systems & Backend",
-      "source": "Node.js Blog",
-      "sourceFeed": "https://nodejs.org/en/feed/blog.xml",
-      "href": "https://nodejs.org/en/blog/release/v24.22.1",
-      "publishedAt": "2026-10-21T10:39:14.000Z",
-      "discoveredAt": "2026-10-21T11:44:38.137Z",
+      "slug": "20261029-hugging-face-granite-switch-411-update-models-like-you-update-so-f3538b6f",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+      "publishedAt": "2026-10-29T13:37:07.000Z",
+      "discoveredAt": "2026-10-30T15:53:47.336Z",
       "locales": {
         "en": {
-          "title": "Node.js 24.22.1 (LTS)",
-          "summary": "Node.js 24.22.1 (LTS)"
+          "title": "Granite Switch 4.1.1 — Update models like you update software",
+          "summary": "Granite Switch 4.1.1 — Update models like you update software"
         },
         "fr": {
-          "title": "Node.js 24.22.1 (LTS)",
-          "summary": "Node.js 24.22.1 (LTS)"
+          "title": "Granite Switch 4.1.1 — Update models like you update software",
+          "summary": "Granite Switch 4.1.1 — Update models like you update software"
         }
       }
     }

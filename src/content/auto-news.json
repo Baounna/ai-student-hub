@@ -1,7 +1,83 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T14:28:46.623Z",
+  "updatedAt": "2026-11-04T23:38:57.985Z",
   "items": [
+    {
+      "slug": "20261104-how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations-ad3c135f",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+      "publishedAt": "2026-11-04T22:13:03.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+          "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards..."
+        },
+        "fr": {
+          "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+          "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards..."
+        }
+      }
+    },
+    {
+      "slug": "20261104-use-decision-models-with-amazon-bedrock-agentcore-evaluations-eb6fb01c",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations/",
+      "publishedAt": "2026-11-04T18:46:36.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "Use decision models with Amazon Bedrock AgentCore Evaluations",
+          "summary": "Some agent-evaluation questions are narrow and repeatable, and decision models answer exactly that kind of question. This post shows how to connect two decision models, Jev and Strands Decider, to Amazon Bedrock AgentCore Evaluat…"
+        },
+        "fr": {
+          "title": "Use decision models with Amazon Bedrock AgentCore Evaluations",
+          "summary": "Some agent-evaluation questions are narrow and repeatable, and decision models answer exactly that kind of question. This post shows how to connect two decision models, Jev and Strands Decider, to Amazon Bedrock AgentCore Evaluat…"
+        }
+      }
+    },
+    {
+      "slug": "20261104-dharma-field-extractor-any-document-in-structured-fields-in-json-5afc49da",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "publishedAt": "2026-11-04T17:50:10.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
+        },
+        "fr": {
+          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
+        }
+      }
+    },
+    {
+      "slug": "20261104-openai-to-acquire-pierre-computer-company-inc-3a06f84c",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/openai-to-acquire-pierre",
+      "publishedAt": "2026-11-04T14:30:00.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+          "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code."
+        },
+        "fr": {
+          "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+          "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code."
+        }
+      }
+    },
     {
       "slug": "20261104-donating-agent-skills-to-the-agentic-ai-foundation-86405d6d",
       "topic": "AI Systems",
@@ -41,6 +117,25 @@
       }
     },
     {
+      "slug": "20261104-a-new-go-api-for-json-aed4d9c6",
+      "topic": "Computer Science",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/jsonv2",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "A new Go API for JSON",
+          "summary": "Go 1.27 introduces new encoding/json/v2 and encoding/json/jsontext packages."
+        },
+        "fr": {
+          "title": "A new Go API for JSON",
+          "summary": "Go 1.27 introduces new encoding/json/v2 and encoding/json/jsontext packages."
+        }
+      }
+    },
+    {
       "slug": "20261103-wednesday-november-11-2026-security-releases-47a0b5ef",
       "topic": "Security & Standards",
       "source": "Node.js Blog",
@@ -56,25 +151,6 @@
         "fr": {
           "title": "Wednesday, November 11, 2026 Security Releases",
           "summary": "Wednesday, November 11, 2026 Security Releases"
-        }
-      }
-    },
-    {
-      "slug": "20261103-statebench-testing-how-language-models-track-state-changes-over--a55665cf",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/statebench",
-      "publishedAt": "2026-11-03T17:15:21.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "StateBench: Testing how language models track state changes over long documents",
-          "summary": "StateBench: Testing how language models track state changes over long documents"
-        },
-        "fr": {
-          "title": "StateBench: Testing how language models track state changes over long documents",
-          "summary": "StateBench: Testing how language models track state changes over long documents"
         }
       }
     },
@@ -98,25 +174,6 @@
       }
     },
     {
-      "slug": "20261103-bring-structured-and-unstructured-data-together-with-amazon-quic-cf714de9",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/bring-structured-and-unstructured-data-together-with-amazon-quick/",
-      "publishedAt": "2026-11-03T16:49:29.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "Bring structured and unstructured data together with Amazon Quick",
-          "summary": "Amazon Quick brings structured and unstructured data together in one experience. In this post, you connect Amazon S3 as a knowledge base, enrich a dataset, build a Space, and create a custom chat agent that answers business quest…"
-        },
-        "fr": {
-          "title": "Bring structured and unstructured data together with Amazon Quick",
-          "summary": "Amazon Quick brings structured and unstructured data together in one experience. In this post, you connect Amazon S3 as a knowledge base, enrich a dataset, build a Space, and create a custom chat agent that answers business quest…"
-        }
-      }
-    },
-    {
       "slug": "20261103-arnis-turns-any-place-on-earth-into-a-minecraft-world-a9339aac",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -132,25 +189,6 @@
         "fr": {
           "title": "Arnis turns any place on Earth into a Minecraft world",
           "summary": "Louis Erbkamm built the first prototype in his free time. Now GitHub Copilot helps him maintain it alone. The post Arnis turns any place on Earth into a Minecraft world appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20261103-accelerating-engineering-for-the-physical-world-26c6032e",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-      "publishedAt": "2026-11-03T12:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "Accelerating engineering for the physical world",
-          "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world."
-        },
-        "fr": {
-          "title": "Accelerating engineering for the physical world",
-          "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world."
         }
       }
     },
@@ -189,25 +227,6 @@
         "fr": {
           "title": "pgbadger v13.3 has been released",
           "summary": "Antananarivo, Madagascar - November 03, 2026 pgBadger pgBadger is a PostgreSQL performance analyzer, built for speed with fully detailed reports based on your PostgreSQL log files. pgBadger 13.3 was released today, this is a main…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-diagnose-distributed-ai-workload-failures-with-nvidia-attributio-53eb05fa",
-      "topic": "Computer Science",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
-      "publishedAt": "2026-11-02T23:39:38.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
-          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
-        },
-        "fr": {
-          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
-          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
         }
       }
     },
@@ -326,25 +345,6 @@
       }
     },
     {
-      "slug": "20261026-our-response-to-the-emudhra-key-disclosure-incident-b19d44d9",
-      "topic": "Security & Standards",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/emudhra-incident",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-27T12:06:39.672Z",
-      "locales": {
-        "en": {
-          "title": "Our Response To The eMudhra Key Disclosure Incident",
-          "summary": "How the Go team responded to the eMudhra certificate compromise with our first-ever URGENT track security release."
-        },
-        "fr": {
-          "title": "Our Response To The eMudhra Key Disclosure Incident",
-          "summary": "How the Go team responded to the eMudhra certificate compromise with our first-ever URGENT track security release."
-        }
-      }
-    },
-    {
       "slug": "20261013-featured-redesigning-source-control-at-anthropic-as-our-merges-p-8c17f1f1",
       "topic": "Computer Systems",
       "source": "Anthropic Engineering",
@@ -360,6 +360,82 @@
         "fr": {
           "title": "Featured Redesigning source control at Anthropic As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months.",
           "summary": "Featured Redesigning source control at Anthropic As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five…"
+        }
+      }
+    },
+    {
+      "slug": "20261104-use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fi-ce98a184",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/",
+      "publishedAt": "2026-11-04T20:26:19.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
+          "summary": "Turn production evidence into prioritized issues and custom evaluations that help you improve prompts, tools, models, memory, skills, and harness code. When you..."
+        },
+        "fr": {
+          "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
+          "summary": "Turn production evidence into prioritized issues and custom evaluations that help you improve prompts, tools, models, memory, skills, and harness code. When you..."
+        }
+      }
+    },
+    {
+      "slug": "20261104-smart-approvals-in-amazon-quick-human-oversight-where-it-matters-8525aff3",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters/",
+      "publishedAt": "2026-11-04T16:33:03.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "Smart Approvals in Amazon Quick: Human oversight where it matters",
+          "summary": "Smart Approvals in Amazon Quick reviews eligible agent actions within your existing controls, reducing unnecessary approval prompts while keeping consequential decisions with a person. See how policy sets the boundary, how a clas…"
+        },
+        "fr": {
+          "title": "Smart Approvals in Amazon Quick: Human oversight where it matters",
+          "summary": "Smart Approvals in Amazon Quick reviews eligible agent actions within your existing controls, reducing unnecessary approval prompts while keeping consequential decisions with a person. See how policy sets the boundary, how a clas…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-statebench-testing-how-language-models-track-state-changes-over--a55665cf",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/statebench",
+      "publishedAt": "2026-11-03T17:15:21.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "StateBench: Testing how language models track state changes over long documents",
+          "summary": "StateBench: Testing how language models track state changes over long documents"
+        },
+        "fr": {
+          "title": "StateBench: Testing how language models track state changes over long documents",
+          "summary": "StateBench: Testing how language models track state changes over long documents"
+        }
+      }
+    },
+    {
+      "slug": "20261104-a-thousand-fewer-paths-to-root-a4f4c423",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "publishedAt": "2026-11-04T08:00:00.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "A thousand fewer paths to root",
+          "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel."
+        },
+        "fr": {
+          "title": "A thousand fewer paths to root",
+          "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel."
         }
       }
     },
@@ -402,6 +478,25 @@
       }
     },
     {
+      "slug": "20261026-our-response-to-the-emudhra-key-disclosure-incident-b19d44d9",
+      "topic": "Security & Standards",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/emudhra-incident",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "discoveredAt": "2026-10-27T12:06:39.672Z",
+      "locales": {
+        "en": {
+          "title": "Our Response To The eMudhra Key Disclosure Incident",
+          "summary": "How the Go team responded to the eMudhra certificate compromise with our first-ever URGENT track security release."
+        },
+        "fr": {
+          "title": "Our Response To The eMudhra Key Disclosure Incident",
+          "summary": "How the Go team responded to the eMudhra certificate compromise with our first-ever URGENT track security release."
+        }
+      }
+    },
+    {
       "slug": "20261029-nodejs-2700-alpha000-alpha-d07aa7b5",
       "topic": "Systems & Backend",
       "source": "Node.js Blog",
@@ -417,25 +512,6 @@
         "fr": {
           "title": "Node.js 27.0.0-alpha.0.0.0 (Alpha)",
           "summary": "Node.js 27.0.0-alpha.0.0.0 (Alpha)"
-        }
-      }
-    },
-    {
-      "slug": "20261103-palette-teaching-a-small-model-to-build-decks-in-your-design-lan-bc417703",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "publishedAt": "2026-11-03T16:35:36.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "Palette: teaching a small model to build decks in your design language",
-          "summary": "Palette: teaching a small model to build decks in your design language"
-        },
-        "fr": {
-          "title": "Palette: teaching a small model to build decks in your design language",
-          "summary": "Palette: teaching a small model to build decks in your design language"
         }
       }
     },
@@ -459,25 +535,6 @@
       }
     },
     {
-      "slug": "20261103-servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-ga-3e5d3574",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/",
-      "publishedAt": "2026-11-03T16:47:40.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway",
-          "summary": "Learn how to configure Amazon Bedrock AgentCore Gateway for an on-behalf-of (OBO) token exchange with Microsoft Entra ID, so an AI agent can call the ServiceNow REST API while preserving the calling user's identity. AgentCore Gat…"
-        },
-        "fr": {
-          "title": "ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway",
-          "summary": "Learn how to configure Amazon Bedrock AgentCore Gateway for an on-behalf-of (OBO) token exchange with Microsoft Entra ID, so an AI agent can call the ServiceNow REST API while preserving the calling user's identity. AgentCore Gat…"
-        }
-      }
-    },
-    {
       "slug": "20261101-game-off-2026-the-theme-is-shift-8efc4c26",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -493,25 +550,6 @@
         "fr": {
           "title": "Game Off 2026: The theme is SHIFT",
           "summary": "GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap perspectives, bend reality, or just press a certain key. The post Game Off 2026: The theme…"
-        }
-      }
-    },
-    {
-      "slug": "20261103-how-cisco-defends-at-machine-speed-with-openai-a2357e70",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/cisco-cyber",
-      "publishedAt": "2026-11-03T08:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "How Cisco defends at machine speed with OpenAI",
-          "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses."
-        },
-        "fr": {
-          "title": "How Cisco defends at machine speed with OpenAI",
-          "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses."
         }
       }
     },
@@ -550,25 +588,6 @@
         "fr": {
           "title": "Security release for psqlodbc",
           "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
-        }
-      }
-    },
-    {
-      "slug": "20261102-keep-distributed-training-running-with-automated-workload-recove-039049f2",
-      "topic": "Computer Science",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
-      "publishedAt": "2026-11-02T22:43:09.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "Keep Distributed Training Running with Automated Workload Recovery",
-          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
-        },
-        "fr": {
-          "title": "Keep Distributed Training Running with Automated Workload Recovery",
-          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
         }
       }
     },
@@ -687,21 +706,78 @@
       }
     },
     {
-      "slug": "20261021-help-set-gos-priorities-for-next-year-1ecfd1ce",
-      "topic": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/survey2026-announce",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "slug": "20261104-nvidia-cuda-135-brings-nvidia-vera-rubin-ga-support-8e7c0f56",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+      "publishedAt": "2026-11-04T18:46:28.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
       "locales": {
         "en": {
-          "title": "Help set Go's priorities for next year",
-          "summary": "Share your experience with Go in the 2026 Go Developer Survey, open through November 3."
+          "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
+          "summary": "As artificial intelligence and accelerated computing continue to push the boundaries of what's possible, the latest NVIDIA CUDA release arrives to unlock..."
         },
         "fr": {
-          "title": "Help set Go's priorities for next year",
-          "summary": "Share your experience with Go in the 2026 Go Developer Survey, open through November 3."
+          "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
+          "summary": "As artificial intelligence and accelerated computing continue to push the boundaries of what's possible, the latest NVIDIA CUDA release arrives to unlock..."
+        }
+      }
+    },
+    {
+      "slug": "20261104-four-layers-of-context-engineering-for-production-ai-agents-how--24432e46",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/",
+      "publishedAt": "2026-11-04T16:30:40.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "Four layers of context engineering for production AI agents: How Deep Insight applies them in working code",
+          "summary": "In production AI agents, context management is the real bottleneck. This post presents a four-layer context engineering framework (architecture, prompts, file-based tools, and verification agents), implemented in working code fro…"
+        },
+        "fr": {
+          "title": "Four layers of context engineering for production AI agents: How Deep Insight applies them in working code",
+          "summary": "In production AI agents, context management is the real bottleneck. This post presents a four-layer context engineering framework (architecture, prompts, file-based tools, and verification agents), implemented in working code fro…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-palette-teaching-a-small-model-to-build-decks-in-your-design-lan-bc417703",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "publishedAt": "2026-11-03T16:35:36.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "Palette: teaching a small model to build decks in your design language",
+          "summary": "Palette: teaching a small model to build decks in your design language"
+        },
+        "fr": {
+          "title": "Palette: teaching a small model to build decks in your design language",
+          "summary": "Palette: teaching a small model to build decks in your design language"
+        }
+      }
+    },
+    {
+      "slug": "20261104-daybreak-red-is-now-available-in-aws-govcloud-us-east-75679f5a",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "publishedAt": "2026-11-04T07:00:00.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+          "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work."
+        },
+        "fr": {
+          "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+          "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work."
         }
       }
     },
@@ -744,6 +820,25 @@
       }
     },
     {
+      "slug": "20261021-help-set-gos-priorities-for-next-year-1ecfd1ce",
+      "topic": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/survey2026-announce",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "Help set Go's priorities for next year",
+          "summary": "Share your experience with Go in the 2026 Go Developer Survey, open through November 3."
+        },
+        "fr": {
+          "title": "Help set Go's priorities for next year",
+          "summary": "Share your experience with Go in the 2026 Go Developer Survey, open through November 3."
+        }
+      }
+    },
+    {
       "slug": "20261028-nodejs-24222-lts-0912e56e",
       "topic": "Systems & Backend",
       "source": "Node.js Blog",
@@ -759,25 +854,6 @@
         "fr": {
           "title": "Node.js 24.22.2 (LTS)",
           "summary": "Node.js 24.22.2 (LTS)"
-        }
-      }
-    },
-    {
-      "slug": "20261103-cwe-bench-v2-more-coverage-quality-and-transparency-20954e3a",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/cwe-bench",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "CWE-bench v2: More coverage, quality, and transparency",
-          "summary": "CWE-bench v2: More coverage, quality, and transparency"
-        },
-        "fr": {
-          "title": "CWE-bench v2: More coverage, quality, and transparency",
-          "summary": "CWE-bench v2: More coverage, quality, and transparency"
         }
       }
     },
@@ -801,25 +877,6 @@
       }
     },
     {
-      "slug": "20261103-how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-8564eb54",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search/",
-      "publishedAt": "2026-11-03T16:43:20.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "How Gen Digital built Norton Revamp’s AI-curated News Engine with Amazon Bedrock AgentCore Web Search",
-          "summary": "Gen Digital built Norton Revamp, a generative AI-powered professional reputation management platform, with an AI-curated News Engine grounded by Web Search on Amazon Bedrock AgentCore. See how the Gen team delivers real-time, cit…"
-        },
-        "fr": {
-          "title": "How Gen Digital built Norton Revamp’s AI-curated News Engine with Amazon Bedrock AgentCore Web Search",
-          "summary": "Gen Digital built Norton Revamp, a generative AI-powered professional reputation management platform, with an AI-curated News Engine grounded by Web Search on Amazon Bedrock AgentCore. See how the Gen team delivers real-time, cit…"
-        }
-      }
-    },
-    {
       "slug": "20261028-github-universe-2026-evolving-every-layer-of-the-stack-6c275e5f",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -835,25 +892,6 @@
         "fr": {
           "title": "GitHub Universe 2026: Evolving every layer of the stack",
           "summary": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world. The post GitHub Universe 2026: Evolving every layer of the stack appeared first on The GitHub Blog ."
-        }
-      }
-    },
-    {
-      "slug": "20261103-heimstaden-is-changing-residential-real-estate-management-with-a-08b710f1",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/heimstaden",
-      "publishedAt": "2026-11-03T08:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:20.522Z",
-      "locales": {
-        "en": {
-          "title": "Heimstaden is changing residential real estate management with AI",
-          "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe."
-        },
-        "fr": {
-          "title": "Heimstaden is changing residential real estate management with AI",
-          "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe."
         }
       }
     },
@@ -892,25 +930,6 @@
         "fr": {
           "title": "HypoPG 1.4.5 is out!",
           "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog Bug fixes…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-nvidia-pair-virtual-inference-router-expands-available-compute-o-291ea19a",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network/",
-      "publishedAt": "2026-11-02T19:17:17.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
-          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
-        },
-        "fr": {
-          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
-          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
         }
       }
     },
@@ -1029,21 +1048,78 @@
       }
     },
     {
-      "slug": "20261016-interactive-refactoring-in-gopls-66b01ef3",
-      "topic": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/interactive-refactoring",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "discoveredAt": "2026-10-16T21:04:23.843Z",
+      "slug": "20261102-diagnose-distributed-ai-workload-failures-with-nvidia-attributio-53eb05fa",
+      "topic": "Computer Science",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+      "publishedAt": "2026-11-02T23:39:38.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
       "locales": {
         "en": {
-          "title": "Interactive refactoring in gopls",
-          "summary": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor."
+          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
         },
         "fr": {
-          "title": "Interactive refactoring in gopls",
-          "summary": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor."
+          "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+          "summary": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state..."
+        }
+      }
+    },
+    {
+      "slug": "20261104-how-indegene-is-modernizing-and-scaling-enterprise-data-quality--f8547738",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-indegene-is-modernizing-and-scaling-enterprise-data-quality-in-life-sciences/",
+      "publishedAt": "2026-11-04T16:25:57.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "How Indegene is modernizing and scaling enterprise data quality in life sciences",
+          "summary": "This post explores how Indegene built a production-grade, LLM-powered Data Quality Agent in its NEXT Unified Data Platform on AWS. The agent generates context-aware data quality rules, validates them, and produces ready-to-run SQ…"
+        },
+        "fr": {
+          "title": "How Indegene is modernizing and scaling enterprise data quality in life sciences",
+          "summary": "This post explores how Indegene built a production-grade, LLM-powered Data Quality Agent in its NEXT Unified Data Platform on AWS. The agent generates context-aware data quality rules, validates them, and produces ready-to-run SQ…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-cwe-bench-v2-more-coverage-quality-and-transparency-20954e3a",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/cwe-bench",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "CWE-bench v2: More coverage, quality, and transparency",
+          "summary": "CWE-bench v2: More coverage, quality, and transparency"
+        },
+        "fr": {
+          "title": "CWE-bench v2: More coverage, quality, and transparency",
+          "summary": "CWE-bench v2: More coverage, quality, and transparency"
+        }
+      }
+    },
+    {
+      "slug": "20261104-devrev-delivers-autonomous-self-service-with-gpt-61-sol-bf25be8f",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/devrev-enterprise-self-service",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+          "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service."
+        },
+        "fr": {
+          "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+          "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service."
         }
       }
     },
@@ -1086,6 +1162,25 @@
       }
     },
     {
+      "slug": "20261016-interactive-refactoring-in-gopls-66b01ef3",
+      "topic": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/interactive-refactoring",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "discoveredAt": "2026-10-16T21:04:23.843Z",
+      "locales": {
+        "en": {
+          "title": "Interactive refactoring in gopls",
+          "summary": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor."
+        },
+        "fr": {
+          "title": "Interactive refactoring in gopls",
+          "summary": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor."
+        }
+      }
+    },
+    {
       "slug": "20261028-nodejs-26130-lts-cc6a0ea7",
       "topic": "Systems & Backend",
       "source": "Node.js Blog",
@@ -1101,25 +1196,6 @@
         "fr": {
           "title": "Node.js 26.13.0 (LTS)",
           "summary": "Node.js 26.13.0 (LTS)"
-        }
-      }
-    },
-    {
-      "slug": "20261103-transformers-model-integration-contracts-fec0e46c",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/transformers-mic",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:20.522Z",
-      "locales": {
-        "en": {
-          "title": "Transformers Model Integration Contracts",
-          "summary": "Transformers Model Integration Contracts"
-        },
-        "fr": {
-          "title": "Transformers Model Integration Contracts",
-          "summary": "Transformers Model Integration Contracts"
         }
       }
     },
@@ -1143,25 +1219,6 @@
       }
     },
     {
-      "slug": "20261103-build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-a-462c228c",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-11-03T16:41:13.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "Build a semantic layer for agentic AI with EDB Postgres AI and Amazon Bedrock AgentCore",
-          "summary": "Learn how to build a governed semantic layer for agentic AI inside EDB Postgres AI and query it from a Strands Agents agent on Amazon Bedrock AgentCore. Business meaning, join paths, and access control all live in Postgres, with…"
-        },
-        "fr": {
-          "title": "Build a semantic layer for agentic AI with EDB Postgres AI and Amazon Bedrock AgentCore",
-          "summary": "Learn how to build a governed semantic layer for agentic AI inside EDB Postgres AI and query it from a Strands Agents agent on Amazon Bedrock AgentCore. Business meaning, join paths, and access control all live in Postgres, with…"
-        }
-      }
-    },
-    {
       "slug": "20261028-octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-b-bedf4f27",
       "topic": "AI Systems",
       "source": "GitHub Blog",
@@ -1177,25 +1234,6 @@
         "fr": {
           "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
           "summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report. The post Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents appeared fi…"
-        }
-      }
-    },
-    {
-      "slug": "20261103-openai-appoints-jill-hazelbaker-as-chief-corporate-affairs-offic-3d509e27",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-          "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning."
-        },
-        "fr": {
-          "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-          "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning."
         }
       }
     },
@@ -1234,25 +1272,6 @@
         "fr": {
           "title": "E-Maj 5.0.1 : Major Security Update.",
           "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples-85ba4f5e",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
-      "publishedAt": "2026-11-02T19:17:11.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
-          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
-        },
-        "fr": {
-          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
-          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
         }
       }
     },
@@ -1371,21 +1390,78 @@
       }
     },
     {
-      "slug": "20261014-better-http1-connection-reuse-1f9db072",
-      "topic": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/http-connection-reuse",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "discoveredAt": "2026-10-14T21:38:47.383Z",
+      "slug": "20261102-how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-a0a290cb",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/",
+      "publishedAt": "2026-11-02T22:53:01.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
       "locales": {
         "en": {
-          "title": "Better HTTP/1 connection reuse",
-          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
+          "title": "How NVIDIA Factory Operations Blueprint Coordinates AI Agents to Investigate Production Issues",
+          "summary": "A Siemens report estimates that unplanned downtime costs an average large plant in the surveyed sectors $253 million per year. Whether investigating a failed..."
         },
         "fr": {
-          "title": "Better HTTP/1 connection reuse",
-          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
+          "title": "How NVIDIA Factory Operations Blueprint Coordinates AI Agents to Investigate Production Issues",
+          "summary": "A Siemens report estimates that unplanned downtime costs an average large plant in the surveyed sectors $253 million per year. Whether investigating a failed..."
+        }
+      }
+    },
+    {
+      "slug": "20261104-how-u-mobile-built-agentic-telco-operations-with-amazon-bedrock--c8cea8f1",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-u-mobile-built-agentic-telco-operations-with-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-11-04T16:23:33.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "How U Mobile built agentic telco operations with Amazon Bedrock AgentCore",
+          "summary": "U Mobile, Malaysia's newest 5G network provider, built AiDaH, an agentic AI operations platform on Amazon Bedrock AgentCore that moves beyond AI assistance to autonomous action across telco operations. Nine months after productio…"
+        },
+        "fr": {
+          "title": "How U Mobile built agentic telco operations with Amazon Bedrock AgentCore",
+          "summary": "U Mobile, Malaysia's newest 5G network provider, built AiDaH, an agentic AI operations platform on Amazon Bedrock AgentCore that moves beyond AI assistance to autonomous action across telco operations. Nine months after productio…"
+        }
+      }
+    },
+    {
+      "slug": "20261103-transformers-model-integration-contracts-fec0e46c",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/transformers-mic",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T14:08:20.522Z",
+      "locales": {
+        "en": {
+          "title": "Transformers Model Integration Contracts",
+          "summary": "Transformers Model Integration Contracts"
+        },
+        "fr": {
+          "title": "Transformers Model Integration Contracts",
+          "summary": "Transformers Model Integration Contracts"
+        }
+      }
+    },
+    {
+      "slug": "20261103-accelerating-engineering-for-the-physical-world-26c6032e",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "publishedAt": "2026-11-03T12:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "Accelerating engineering for the physical world",
+          "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world."
+        },
+        "fr": {
+          "title": "Accelerating engineering for the physical world",
+          "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world."
         }
       }
     },
@@ -1428,6 +1504,25 @@
       }
     },
     {
+      "slug": "20261014-better-http1-connection-reuse-1f9db072",
+      "topic": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/http-connection-reuse",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "discoveredAt": "2026-10-14T21:38:47.383Z",
+      "locales": {
+        "en": {
+          "title": "Better HTTP/1 connection reuse",
+          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
+        },
+        "fr": {
+          "title": "Better HTTP/1 connection reuse",
+          "summary": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster."
+        }
+      }
+    },
+    {
       "slug": "20261021-nodejs-26121-current-2169860c",
       "topic": "Systems & Backend",
       "source": "Node.js Blog",
@@ -1443,25 +1538,6 @@
         "fr": {
           "title": "Node.js 26.12.1 (Current)",
           "summary": "Node.js 26.12.1 (Current)"
-        }
-      }
-    },
-    {
-      "slug": "20261030-nemotron-halloween-b2263e9f",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "publishedAt": "2026-10-30T17:57:24.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "nemotron-halloween",
-          "summary": "nemotron-halloween"
-        },
-        "fr": {
-          "title": "nemotron-halloween",
-          "summary": "nemotron-halloween"
         }
       }
     },
@@ -1485,25 +1561,6 @@
       }
     },
     {
-      "slug": "20261103-building-ultra-low-latency-voice-ai-applications-on-aws-4ed75b5a",
-      "topic": "Computer Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/building-ultra-low-latency-voice-ai-applications-on-aws/",
-      "publishedAt": "2026-11-03T16:40:54.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "Building ultra-low-latency voice AI applications on AWS",
-          "summary": "Learn how Cartesia, an AWS Partner, uses purpose-built State Space Models and AWS infrastructure to deliver sub-100ms text-to-speech and speech-to-text at global scale, and how to deploy its Sonic model on Amazon SageMaker AI or…"
-        },
-        "fr": {
-          "title": "Building ultra-low-latency voice AI applications on AWS",
-          "summary": "Learn how Cartesia, an AWS Partner, uses purpose-built State Space Models and AWS infrastructure to deliver sub-100ms text-to-speech and speech-to-text at global scale, and how to deploy its Sonic model on Amazon SageMaker AI or…"
-        }
-      }
-    },
-    {
       "slug": "20261022-how-bug-bounty-sharpens-one-researchers-security-skills-09be57be",
       "topic": "Security & Standards",
       "source": "GitHub Blog",
@@ -1519,25 +1576,6 @@
         "fr": {
           "title": "How bug bounty sharpens one researcher’s security skills",
           "summary": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers. The post How bug bounty sharpens one researcher’…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-rewarding-defenders-with-bigger-bug-bounties-6fd6ad79",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-      "publishedAt": "2026-11-02T18:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:20.522Z",
-      "locales": {
-        "en": {
-          "title": "Rewarding defenders with bigger bug bounties",
-          "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
-        },
-        "fr": {
-          "title": "Rewarding defenders with bigger bug bounties",
-          "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
         }
       }
     },
@@ -1576,25 +1614,6 @@
         "fr": {
           "title": "pgAdmin 4 v9.19 Released",
           "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark-786c68bd",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
-      "publishedAt": "2026-11-02T19:17:06.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
-        },
-        "fr": {
-          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
         }
       }
     },
@@ -1713,21 +1732,78 @@
       }
     },
     {
-      "slug": "20261002-arch-specific-simd-in-go-aa4c22f4",
-      "topic": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/archsimd",
-      "publishedAt": "2026-10-02T00:00:00.000Z",
-      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "slug": "20261102-keep-distributed-training-running-with-automated-workload-recove-039049f2",
+      "topic": "Computer Science",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
+      "publishedAt": "2026-11-02T22:43:09.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
       "locales": {
         "en": {
-          "title": "Arch-specific SIMD in Go",
-          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
+          "title": "Keep Distributed Training Running with Automated Workload Recovery",
+          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
         },
         "fr": {
-          "title": "Arch-specific SIMD in Go",
-          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
+          "title": "Keep Distributed Training Running with Automated Workload Recovery",
+          "summary": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-bring-structured-and-unstructured-data-together-with-amazon-quic-cf714de9",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/bring-structured-and-unstructured-data-together-with-amazon-quick/",
+      "publishedAt": "2026-11-03T16:49:29.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "Bring structured and unstructured data together with Amazon Quick",
+          "summary": "Amazon Quick brings structured and unstructured data together in one experience. In this post, you connect Amazon S3 as a knowledge base, enrich a dataset, build a Space, and create a custom chat agent that answers business quest…"
+        },
+        "fr": {
+          "title": "Bring structured and unstructured data together with Amazon Quick",
+          "summary": "Amazon Quick brings structured and unstructured data together in one experience. In this post, you connect Amazon S3 as a knowledge base, enrich a dataset, build a Space, and create a custom chat agent that answers business quest…"
+        }
+      }
+    },
+    {
+      "slug": "20261030-nemotron-halloween-b2263e9f",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "publishedAt": "2026-10-30T17:57:24.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "locales": {
+        "en": {
+          "title": "nemotron-halloween",
+          "summary": "nemotron-halloween"
+        },
+        "fr": {
+          "title": "nemotron-halloween",
+          "summary": "nemotron-halloween"
+        }
+      }
+    },
+    {
+      "slug": "20261103-how-cisco-defends-at-machine-speed-with-openai-a2357e70",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/cisco-cyber",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "How Cisco defends at machine speed with OpenAI",
+          "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses."
+        },
+        "fr": {
+          "title": "How Cisco defends at machine speed with OpenAI",
+          "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses."
         }
       }
     },
@@ -1770,6 +1846,25 @@
       }
     },
     {
+      "slug": "20261002-arch-specific-simd-in-go-aa4c22f4",
+      "topic": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/archsimd",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "discoveredAt": "2026-10-02T22:11:35.130Z",
+      "locales": {
+        "en": {
+          "title": "Arch-specific SIMD in Go",
+          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
+        },
+        "fr": {
+          "title": "Arch-specific SIMD in Go",
+          "summary": "Go 1.27 introduces experimental arch-specific SIMD vector APIs"
+        }
+      }
+    },
+    {
       "slug": "20261021-nodejs-24221-lts-8b081c5b",
       "topic": "Systems & Backend",
       "source": "Node.js Blog",
@@ -1785,25 +1880,6 @@
         "fr": {
           "title": "Node.js 24.22.1 (LTS)",
           "summary": "Node.js 24.22.1 (LTS)"
-        }
-      }
-    },
-    {
-      "slug": "20261029-granite-switch-411-update-models-like-you-update-software-f3538b6f",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
-      "publishedAt": "2026-10-29T13:37:07.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "Granite Switch 4.1.1 — Update models like you update software",
-          "summary": "Granite Switch 4.1.1 — Update models like you update software"
-        },
-        "fr": {
-          "title": "Granite Switch 4.1.1 — Update models like you update software",
-          "summary": "Granite Switch 4.1.1 — Update models like you update software"
         }
       }
     },
@@ -1827,25 +1903,6 @@
       }
     },
     {
-      "slug": "20261103-introducing-india-based-inference-for-kimi-k3-on-amazon-bedrock-8de1952e",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/introducing-india-based-inference-for-kimi-k3-on-amazon-bedrock/",
-      "publishedAt": "2026-11-03T16:32:54.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "Introducing India-based inference for Kimi K3 on Amazon Bedrock",
-          "summary": "Amazon Bedrock now offers in-country inference in India for Kimi K3, keeping processing within the Mumbai and Hyderabad Regions. This post explains the global and geographic cross-Region inference options and shares example code…"
-        },
-        "fr": {
-          "title": "Introducing India-based inference for Kimi K3 on Amazon Bedrock",
-          "summary": "Amazon Bedrock now offers in-country inference in India for Kimi K3, keeping processing within the Mumbai and Hyderabad Regions. This post explains the global and geographic cross-Region inference options and shares example code…"
-        }
-      }
-    },
-    {
       "slug": "20261021-the-bridge-to-agent-scale-git-infrastructure-d345d795",
       "topic": "AI Systems",
       "source": "GitHub Blog",
@@ -1861,25 +1918,6 @@
         "fr": {
           "title": "The bridge to agent-scale Git infrastructure",
           "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructu…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-preparing-our-next-security-sprint-to-harden-openai-262cfa35",
-      "topic": "Security & Standards",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-      "publishedAt": "2026-11-02T18:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:20.522Z",
-      "locales": {
-        "en": {
-          "title": "Preparing our next security sprint to harden OpenAI",
-          "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
-        },
-        "fr": {
-          "title": "Preparing our next security sprint to harden OpenAI",
-          "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
         }
       }
     },
@@ -1918,25 +1956,6 @@
         "fr": {
           "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
           "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes-81261272",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
-      "publishedAt": "2026-11-02T19:17:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
-          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
-        },
-        "fr": {
-          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
-          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
         }
       }
     },
@@ -2055,21 +2074,78 @@
       }
     },
     {
-      "slug": "20260924-platform-independent-simd-in-go-e0645c8a",
-      "topic": "Systems & Backend",
-      "source": "Go Blog",
-      "sourceFeed": "https://go.dev/blog/feed.atom",
-      "href": "https://go.dev/blog/simd-experiment",
-      "publishedAt": "2026-09-24T00:00:00.000Z",
-      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "slug": "20261102-nvidia-pair-virtual-inference-router-expands-available-compute-o-291ea19a",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network/",
+      "publishedAt": "2026-11-02T19:17:17.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
       "locales": {
         "en": {
-          "title": "Platform-independent SIMD in Go",
-          "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
+          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
+          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
         },
         "fr": {
-          "title": "Platform-independent SIMD in Go",
-          "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
+          "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
+          "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents...."
+        }
+      }
+    },
+    {
+      "slug": "20261103-servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-ga-3e5d3574",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/",
+      "publishedAt": "2026-11-03T16:47:40.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway",
+          "summary": "Learn how to configure Amazon Bedrock AgentCore Gateway for an on-behalf-of (OBO) token exchange with Microsoft Entra ID, so an AI agent can call the ServiceNow REST API while preserving the calling user's identity. AgentCore Gat…"
+        },
+        "fr": {
+          "title": "ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway",
+          "summary": "Learn how to configure Amazon Bedrock AgentCore Gateway for an on-behalf-of (OBO) token exchange with Microsoft Entra ID, so an AI agent can call the ServiceNow REST API while preserving the calling user's identity. AgentCore Gat…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-granite-switch-411-update-models-like-you-update-software-f3538b6f",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+      "publishedAt": "2026-10-29T13:37:07.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "locales": {
+        "en": {
+          "title": "Granite Switch 4.1.1 — Update models like you update software",
+          "summary": "Granite Switch 4.1.1 — Update models like you update software"
+        },
+        "fr": {
+          "title": "Granite Switch 4.1.1 — Update models like you update software",
+          "summary": "Granite Switch 4.1.1 — Update models like you update software"
+        }
+      }
+    },
+    {
+      "slug": "20261103-heimstaden-is-changing-residential-real-estate-management-with-a-08b710f1",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/heimstaden",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "discoveredAt": "2026-11-03T14:08:20.522Z",
+      "locales": {
+        "en": {
+          "title": "Heimstaden is changing residential real estate management with AI",
+          "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe."
+        },
+        "fr": {
+          "title": "Heimstaden is changing residential real estate management with AI",
+          "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe."
         }
       }
     },
@@ -2112,6 +2188,25 @@
       }
     },
     {
+      "slug": "20260924-platform-independent-simd-in-go-e0645c8a",
+      "topic": "Systems & Backend",
+      "source": "Go Blog",
+      "sourceFeed": "https://go.dev/blog/feed.atom",
+      "href": "https://go.dev/blog/simd-experiment",
+      "publishedAt": "2026-09-24T00:00:00.000Z",
+      "discoveredAt": "2026-09-24T21:29:28.824Z",
+      "locales": {
+        "en": {
+          "title": "Platform-independent SIMD in Go",
+          "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
+        },
+        "fr": {
+          "title": "Platform-independent SIMD in Go",
+          "summary": "Go 1.27 adds an experimental platform-agnostic SIMD API"
+        }
+      }
+    },
+    {
       "slug": "20261021-nodejs-22234-lts-ede39ede",
       "topic": "Systems & Backend",
       "source": "Node.js Blog",
@@ -2127,25 +2222,6 @@
         "fr": {
           "title": "Node.js 22.23.4 (LTS)",
           "summary": "Node.js 22.23.4 (LTS)"
-        }
-      }
-    },
-    {
-      "slug": "20261029-announcing-project-protostar-making-publicly-funded-science-ai-r-e1c742c1",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/announcing-project-protostar",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
-          "summary": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready"
-        },
-        "fr": {
-          "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
-          "summary": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready"
         }
       }
     },
@@ -2169,25 +2245,6 @@
       }
     },
     {
-      "slug": "20261102-prepare-web-content-for-amazon-bedrock-knowledge-bases-with-craw-cb7e6c40",
-      "topic": "Computer Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/",
-      "publishedAt": "2026-11-02T17:11:21.000Z",
-      "discoveredAt": "2026-11-02T17:24:22.513Z",
-      "locales": {
-        "en": {
-          "title": "Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI",
-          "summary": "This post shows how to use Crawl4AI, an open source web crawler, as a content preparation layer for Amazon Bedrock Knowledge Bases, handling JavaScript rendering, selective extraction, and custom metadata enrichment before web co…"
-        },
-        "fr": {
-          "title": "Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI",
-          "summary": "This post shows how to use Crawl4AI, an open source web crawler, as a content preparation layer for Amazon Bedrock Knowledge Bases, handling JavaScript rendering, selective extraction, and custom metadata enrichment before web co…"
-        }
-      }
-    },
-    {
       "slug": "20261020-how-3-java-champions-are-using-github-copilot-for-increased-prod-d3ec3a59",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -2203,25 +2260,6 @@
         "fr": {
           "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
           "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appe…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-scaling-git-at-openai-de4cf53f",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/scaling-git-at-openai",
-      "publishedAt": "2026-11-02T15:30:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "Scaling Git at OpenAI",
-          "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible."
-        },
-        "fr": {
-          "title": "Scaling Git at OpenAI",
-          "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible."
         }
       }
     },
@@ -2260,25 +2298,6 @@
         "fr": {
           "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
           "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-3-ways-to-boost-moe-inference-on-nvidia-dgx-spark-c2853730",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
-      "publishedAt": "2026-11-02T19:15:29.000Z",
-      "discoveredAt": "2026-11-03T14:08:20.522Z",
-      "locales": {
-        "en": {
-          "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark",
-          "summary": "Generating tokens faster starts with identifying what limits inference performance. In the batch-size-1 evaluation of Ling-3.0-flash from Inclusion AI on NVIDIA..."
-        },
-        "fr": {
-          "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark",
-          "summary": "Generating tokens faster starts with identifying what limits inference performance. In the batch-size-1 evaluation of Ling-3.0-flash from Inclusion AI on NVIDIA..."
         }
       }
     },
@@ -2397,6 +2416,82 @@
       }
     },
     {
+      "slug": "20261102-build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples-85ba4f5e",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
+      "publishedAt": "2026-11-02T19:17:11.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
+          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
+        },
+        "fr": {
+          "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
+          "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-8564eb54",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-gen-digital-built-norton-revamps-ai-curated-news-engine-with-amazon-bedrock-agentcore-web-search/",
+      "publishedAt": "2026-11-03T16:43:20.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "How Gen Digital built Norton Revamp’s AI-curated News Engine with Amazon Bedrock AgentCore Web Search",
+          "summary": "Gen Digital built Norton Revamp, a generative AI-powered professional reputation management platform, with an AI-curated News Engine grounded by Web Search on Amazon Bedrock AgentCore. See how the Gen team delivers real-time, cit…"
+        },
+        "fr": {
+          "title": "How Gen Digital built Norton Revamp’s AI-curated News Engine with Amazon Bedrock AgentCore Web Search",
+          "summary": "Gen Digital built Norton Revamp, a generative AI-powered professional reputation management platform, with an AI-curated News Engine grounded by Web Search on Amazon Bedrock AgentCore. See how the Gen team delivers real-time, cit…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-announcing-project-protostar-making-publicly-funded-science-ai-r-e1c742c1",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/announcing-project-protostar",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "locales": {
+        "en": {
+          "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+          "summary": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready"
+        },
+        "fr": {
+          "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+          "summary": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready"
+        }
+      }
+    },
+    {
+      "slug": "20261103-openai-appoints-jill-hazelbaker-as-chief-corporate-affairs-offic-3d509e27",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+          "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning."
+        },
+        "fr": {
+          "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+          "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning."
+        }
+      }
+    },
+    {
       "slug": "20261030-2026-usage-policy-update-7a238471",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -2454,25 +2549,6 @@
       }
     },
     {
-      "slug": "20261029-welcome-le-chonk-mistral-large-4-on-hugging-face-a1765f44",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/mistral-large4",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
-          "summary": "Welcome Le Chonk: Mistral Large 4 on Hugging Face"
-        },
-        "fr": {
-          "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
-          "summary": "Welcome Le Chonk: Mistral Large 4 on Hugging Face"
-        }
-      }
-    },
-    {
       "slug": "20261013-developing-gemini-4-argon-responsibly-and-safely-471508c0",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -2492,25 +2568,6 @@
       }
     },
     {
-      "slug": "20261102-build-efficient-agents-with-knowledge-distillation-on-amazon-sag-de143405",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/build-efficient-agents-with-knowledge-distillation-on-amazon-sagemaker-ai/",
-      "publishedAt": "2026-11-02T17:01:31.000Z",
-      "discoveredAt": "2026-11-02T17:24:22.513Z",
-      "locales": {
-        "en": {
-          "title": "Build efficient agents with knowledge distillation on Amazon SageMaker AI",
-          "summary": "Agentic assistants built on frontier models run a multi-step tool loop, and paying frontier prices on every step is hard to sustain at production scale. This post shows how to use sequence-level knowledge distillation (SeqKD) to…"
-        },
-        "fr": {
-          "title": "Build efficient agents with knowledge distillation on Amazon SageMaker AI",
-          "summary": "Agentic assistants built on frontier models run a multi-step tool loop, and paying frontier prices on every step is hard to sustain at production scale. This post shows how to use sequence-level knowledge distillation (SeqKD) to…"
-        }
-      }
-    },
-    {
       "slug": "20261019-how-to-continue-a-github-copilot-app-session-in-vs-code-0f3dfef2",
       "topic": "Computer Science",
       "source": "GitHub Blog",
@@ -2526,25 +2583,6 @@
         "fr": {
           "title": "How to continue a GitHub Copilot app session in VS Code",
           "summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context. The post How to continue a GitHub Copilot app session in VS Code appeared first on The…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-introducing-the-grid-protectors-program-19244c7a",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/grid-protectors-program",
-      "publishedAt": "2026-11-02T15:00:00.000Z",
-      "discoveredAt": "2026-11-02T15:44:43.671Z",
-      "locales": {
-        "en": {
-          "title": "Introducing the Grid Protectors Program",
-          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
-        },
-        "fr": {
-          "title": "Introducing the Grid Protectors Program",
-          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
         }
       }
     },
@@ -2583,25 +2621,6 @@
         "fr": {
           "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
           "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one-0a321f63",
-      "topic": "Computer Science",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
-      "publishedAt": "2026-10-30T22:24:21.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One",
-          "summary": "Configuring and optimizing Kubernetes for new GPU hardware such as NVIDIA Vera Rubin is complex and error-prone. Drivers, kernels, runtimes, networking,..."
-        },
-        "fr": {
-          "title": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One",
-          "summary": "Configuring and optimizing Kubernetes for new GPU hardware such as NVIDIA Vera Rubin is complex and error-prone. Drivers, kernels, runtimes, networking,..."
         }
       }
     },
@@ -2682,6 +2701,82 @@
       }
     },
     {
+      "slug": "20261102-code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark-786c68bd",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
+      "publishedAt": "2026-11-02T19:17:06.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+        },
+        "fr": {
+          "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+          "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-a-462c228c",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-11-03T16:41:13.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "Build a semantic layer for agentic AI with EDB Postgres AI and Amazon Bedrock AgentCore",
+          "summary": "Learn how to build a governed semantic layer for agentic AI inside EDB Postgres AI and query it from a Strands Agents agent on Amazon Bedrock AgentCore. Business meaning, join paths, and access control all live in Postgres, with…"
+        },
+        "fr": {
+          "title": "Build a semantic layer for agentic AI with EDB Postgres AI and Amazon Bedrock AgentCore",
+          "summary": "Learn how to build a governed semantic layer for agentic AI inside EDB Postgres AI and query it from a Strands Agents agent on Amazon Bedrock AgentCore. Business meaning, join paths, and access control all live in Postgres, with…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-welcome-le-chonk-mistral-large-4-on-hugging-face-a1765f44",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/mistral-large4",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "locales": {
+        "en": {
+          "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+          "summary": "Welcome Le Chonk: Mistral Large 4 on Hugging Face"
+        },
+        "fr": {
+          "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+          "summary": "Welcome Le Chonk: Mistral Large 4 on Hugging Face"
+        }
+      }
+    },
+    {
+      "slug": "20261102-rewarding-defenders-with-bigger-bug-bounties-6fd6ad79",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "discoveredAt": "2026-11-03T14:08:20.522Z",
+      "locales": {
+        "en": {
+          "title": "Rewarding defenders with bigger bug bounties",
+          "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
+        },
+        "fr": {
+          "title": "Rewarding defenders with bigger bug bounties",
+          "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
+        }
+      }
+    },
+    {
       "slug": "20261028-ai-for-science-expands-to-foundations-and-research-institutions-ad10900d",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -2739,25 +2834,6 @@
       }
     },
     {
-      "slug": "20261029-introducing-anyspeechrecognizer-and-anydecisionmodel-open-models-85d97525",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/anydecisionmodel",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
-          "summary": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms"
-        },
-        "fr": {
-          "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
-          "summary": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms"
-        }
-      }
-    },
-    {
       "slug": "20261013-gemini-4-argon-for-robotics-884ebf3c",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -2773,25 +2849,6 @@
         "fr": {
           "title": "Gemini 4 Argon for Robotics",
           "summary": "Gemini 4 Argon for Robotics"
-        }
-      }
-    },
-    {
-      "slug": "20261102-agentic-engineering-intelligence-with-amazon-nova-multimodal-emb-624d1683",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/agentic-engineering-intelligence-with-amazon-nova-multimodal-embeddings-and-amazon-bedrock-agentcore/",
-      "publishedAt": "2026-11-02T17:01:16.000Z",
-      "discoveredAt": "2026-11-02T17:24:22.513Z",
-      "locales": {
-        "en": {
-          "title": "Agentic engineering intelligence with Amazon Nova Multimodal Embeddings and Amazon Bedrock AgentCore",
-          "summary": "Learn how to build a multi-agent engineering assistant that compresses aerospace component substitution evaluation from days to minutes, using Amazon Nova Multimodal Embeddings, Amazon Bedrock AgentCore, and the Strands Agents SD…"
-        },
-        "fr": {
-          "title": "Agentic engineering intelligence with Amazon Nova Multimodal Embeddings and Amazon Bedrock AgentCore",
-          "summary": "Learn how to build a multi-agent engineering assistant that compresses aerospace component substitution evaluation from days to minutes, using Amazon Nova Multimodal Embeddings, Amazon Bedrock AgentCore, and the Strands Agents SD…"
         }
       }
     },
@@ -2815,25 +2872,6 @@
       }
     },
     {
-      "slug": "20261102-lifeval-ed4b5825",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/lifeval",
-      "publishedAt": "2026-11-02T09:00:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "LifeVal",
-          "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork."
-        },
-        "fr": {
-          "title": "LifeVal",
-          "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork."
-        }
-      }
-    },
-    {
       "slug": "20261028-revivedb-supabase-backups-restore-tested-against-the-source-sche-f15781fd",
       "topic": "Systems & Backend",
       "source": "PostgreSQL News",
@@ -2849,25 +2887,6 @@
         "fr": {
           "title": "ReviveDB: Supabase backups restore-tested against the source schema",
           "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-build-world-models-for-interactive-simulation-with-nvidia-cosmos-70cecf2c",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/",
-      "publishedAt": "2026-10-30T22:17:16.000Z",
-      "discoveredAt": "2026-11-02T17:24:22.513Z",
-      "locales": {
-        "en": {
-          "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
-          "summary": "Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into..."
-        },
-        "fr": {
-          "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
-          "summary": "Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into..."
         }
       }
     },
@@ -2929,6 +2948,82 @@
       }
     },
     {
+      "slug": "20261102-running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes-81261272",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
+      "publishedAt": "2026-11-02T19:17:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
+          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
+        },
+        "fr": {
+          "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
+          "summary": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-building-ultra-low-latency-voice-ai-applications-on-aws-4ed75b5a",
+      "topic": "Computer Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/building-ultra-low-latency-voice-ai-applications-on-aws/",
+      "publishedAt": "2026-11-03T16:40:54.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "Building ultra-low-latency voice AI applications on AWS",
+          "summary": "Learn how Cartesia, an AWS Partner, uses purpose-built State Space Models and AWS infrastructure to deliver sub-100ms text-to-speech and speech-to-text at global scale, and how to deploy its Sonic model on Amazon SageMaker AI or…"
+        },
+        "fr": {
+          "title": "Building ultra-low-latency voice AI applications on AWS",
+          "summary": "Learn how Cartesia, an AWS Partner, uses purpose-built State Space Models and AWS infrastructure to deliver sub-100ms text-to-speech and speech-to-text at global scale, and how to deploy its Sonic model on Amazon SageMaker AI or…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-introducing-anyspeechrecognizer-and-anydecisionmodel-open-models-85d97525",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/anydecisionmodel",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "locales": {
+        "en": {
+          "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+          "summary": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms"
+        },
+        "fr": {
+          "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+          "summary": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms"
+        }
+      }
+    },
+    {
+      "slug": "20261102-preparing-our-next-security-sprint-to-harden-openai-262cfa35",
+      "topic": "Security & Standards",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "discoveredAt": "2026-11-03T14:08:20.522Z",
+      "locales": {
+        "en": {
+          "title": "Preparing our next security sprint to harden OpenAI",
+          "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
+        },
+        "fr": {
+          "title": "Preparing our next security sprint to harden OpenAI",
+          "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
+        }
+      }
+    },
+    {
       "slug": "20261028-building-on-our-commitment-to-american-scientific-discovery-26f50496",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -2986,25 +3081,6 @@
       }
     },
     {
-      "slug": "20261028-nvidia-nemotron-35-transcribe-and-granary-v2-intelligent-multili-7ae8eb20",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-      "publishedAt": "2026-10-28T14:58:17.000Z",
-      "discoveredAt": "2026-10-28T22:32:00.636Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
-          "summary": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt"
-        },
-        "fr": {
-          "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
-          "summary": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt"
-        }
-      }
-    },
-    {
       "slug": "20261013-gemini-4-argon-built-to-solve-your-hardest-problems-f1747161",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -3020,25 +3096,6 @@
         "fr": {
           "title": "Gemini 4 Argon: Built to solve your hardest problems",
           "summary": "Gemini 4 Argon: Built to solve your hardest problems"
-        }
-      }
-    },
-    {
-      "slug": "20261102-how-circle-k-accelerated-devops-incident-triage-to-under-15-minu-5818becf",
-      "topic": "Security & Standards",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
-      "publishedAt": "2026-11-02T17:00:58.000Z",
-      "discoveredAt": "2026-11-02T17:24:22.513Z",
-      "locales": {
-        "en": {
-          "title": "How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock",
-          "summary": "Circle K's DevOps team cut incident triage from 45-60 minutes to under 15 by building an agentic triage system on Amazon Bedrock. This post walks through the architecture, the initial Amazon Bedrock Flows implementation, the migr…"
-        },
-        "fr": {
-          "title": "How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock",
-          "summary": "Circle K's DevOps team cut incident triage from 45-60 minutes to under 15 by building an agentic triage system on Amazon Bedrock. This post walks through the architecture, the initial Amazon Bedrock Flows implementation, the migr…"
         }
       }
     },
@@ -3062,25 +3119,6 @@
       }
     },
     {
-      "slug": "20261102-qodo-builds-context-into-ai-code-review-with-codex-598c6194",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/qodo-codex-plugin",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "Qodo builds context into AI code review with Codex",
-          "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
-        },
-        "fr": {
-          "title": "Qodo builds context into AI code review with Codex",
-          "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
-        }
-      }
-    },
-    {
       "slug": "20261028-postgresql-anonymizer-33-major-security-update-f4b74201",
       "topic": "Security & Standards",
       "source": "PostgreSQL News",
@@ -3096,25 +3134,6 @@
         "fr": {
           "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
           "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-build-a-validated-kubernetes-runtime-for-nvidia-dynamo-1ca84190",
-      "topic": "Computer Science",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/",
-      "publishedAt": "2026-10-30T21:35:34.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
-          "summary": "Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference..."
-        },
-        "fr": {
-          "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
-          "summary": "Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference..."
         }
       }
     },
@@ -3176,6 +3195,82 @@
       }
     },
     {
+      "slug": "20261102-3-ways-to-boost-moe-inference-on-nvidia-dgx-spark-c2853730",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
+      "publishedAt": "2026-11-02T19:15:29.000Z",
+      "discoveredAt": "2026-11-03T14:08:20.522Z",
+      "locales": {
+        "en": {
+          "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark",
+          "summary": "Generating tokens faster starts with identifying what limits inference performance. In the batch-size-1 evaluation of Ling-3.0-flash from Inclusion AI on NVIDIA..."
+        },
+        "fr": {
+          "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark",
+          "summary": "Generating tokens faster starts with identifying what limits inference performance. In the batch-size-1 evaluation of Ling-3.0-flash from Inclusion AI on NVIDIA..."
+        }
+      }
+    },
+    {
+      "slug": "20261103-introducing-india-based-inference-for-kimi-k3-on-amazon-bedrock-8de1952e",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/introducing-india-based-inference-for-kimi-k3-on-amazon-bedrock/",
+      "publishedAt": "2026-11-03T16:32:54.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "Introducing India-based inference for Kimi K3 on Amazon Bedrock",
+          "summary": "Amazon Bedrock now offers in-country inference in India for Kimi K3, keeping processing within the Mumbai and Hyderabad Regions. This post explains the global and geographic cross-Region inference options and shares example code…"
+        },
+        "fr": {
+          "title": "Introducing India-based inference for Kimi K3 on Amazon Bedrock",
+          "summary": "Amazon Bedrock now offers in-country inference in India for Kimi K3, keeping processing within the Mumbai and Hyderabad Regions. This post explains the global and geographic cross-Region inference options and shares example code…"
+        }
+      }
+    },
+    {
+      "slug": "20261028-nvidia-nemotron-35-transcribe-and-granary-v2-intelligent-multili-7ae8eb20",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "publishedAt": "2026-10-28T14:58:17.000Z",
+      "discoveredAt": "2026-10-28T22:32:00.636Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+          "summary": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt"
+        },
+        "fr": {
+          "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+          "summary": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt"
+        }
+      }
+    },
+    {
+      "slug": "20261102-scaling-git-at-openai-de4cf53f",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/scaling-git-at-openai",
+      "publishedAt": "2026-11-02T15:30:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Scaling Git at OpenAI",
+          "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible."
+        },
+        "fr": {
+          "title": "Scaling Git at OpenAI",
+          "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible."
+        }
+      }
+    },
+    {
       "slug": "20261028-expanding-our-partnership-with-gsa-to-bring-claude-to-all-levels-16faca12",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -3233,25 +3328,6 @@
       }
     },
     {
-      "slug": "20261027-build-specialized-multimodal-models-with-lfm3-db98bf59",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/LiquidAI/lfm3",
-      "publishedAt": "2026-10-27T17:16:52.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
-      "locales": {
-        "en": {
-          "title": "Build specialized multimodal models with LFM3",
-          "summary": "Build specialized multimodal models with LFM3"
-        },
-        "fr": {
-          "title": "Build specialized multimodal models with LFM3",
-          "summary": "Build specialized multimodal models with LFM3"
-        }
-      }
-    },
-    {
       "slug": "20261006-embeddinggemma-2-an-open-lightweight-multimodal-embedding-model-4dd29007",
       "topic": "AI Systems",
       "source": "DeepMind Blog",
@@ -3267,25 +3343,6 @@
         "fr": {
           "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
           "summary": "EmbeddingGemma 2: an open, lightweight multimodal embedding model"
-        }
-      }
-    },
-    {
-      "slug": "20261030-managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-a-963a648b",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
-      "publishedAt": "2026-10-30T22:42:24.000Z",
-      "discoveredAt": "2026-10-31T12:22:37.280Z",
-      "locales": {
-        "en": {
-          "title": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams",
-          "summary": "This post presents a five-stage operating model for managing Amazon Bedrock cost: attribute every dollar to an owner, make every request observable, enforce budgets, optimize platform defaults, and operate a review cadence. Writt…"
-        },
-        "fr": {
-          "title": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams",
-          "summary": "This post presents a five-stage operating model for managing Amazon Bedrock cost: attribute every dollar to an owner, make every request observable, enforce budgets, optimize platform defaults, and operate a review cadence. Writt…"
         }
       }
     },
@@ -3309,25 +3366,6 @@
       }
     },
     {
-      "slug": "20261102-openai-appoints-dan-driscoll-as-senior-counselor-for-national-se-ff138f70",
-      "topic": "Security & Standards",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/dan-driscoll-joins-openai",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-          "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies."
-        },
-        "fr": {
-          "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-          "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies."
-        }
-      }
-    },
-    {
       "slug": "20261026-pgivm-117-released-25992fa2",
       "topic": "Systems & Backend",
       "source": "PostgreSQL News",
@@ -3343,25 +3381,6 @@
         "fr": {
           "title": "pg_ivm 1.17 released",
           "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-run-ai-models-for-edge-application-development-with-just-a-few-c-e060e1d4",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
-      "publishedAt": "2026-10-30T20:33:21.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
-          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
-        },
-        "fr": {
-          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
-          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
         }
       }
     },
@@ -3423,6 +3442,82 @@
       }
     },
     {
+      "slug": "20261030-making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one-0a321f63",
+      "topic": "Computer Science",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+      "publishedAt": "2026-10-30T22:24:21.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One",
+          "summary": "Configuring and optimizing Kubernetes for new GPU hardware such as NVIDIA Vera Rubin is complex and error-prone. Drivers, kernels, runtimes, networking,..."
+        },
+        "fr": {
+          "title": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One",
+          "summary": "Configuring and optimizing Kubernetes for new GPU hardware such as NVIDIA Vera Rubin is complex and error-prone. Drivers, kernels, runtimes, networking,..."
+        }
+      }
+    },
+    {
+      "slug": "20261102-prepare-web-content-for-amazon-bedrock-knowledge-bases-with-craw-cb7e6c40",
+      "topic": "Computer Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/",
+      "publishedAt": "2026-11-02T17:11:21.000Z",
+      "discoveredAt": "2026-11-02T17:24:22.513Z",
+      "locales": {
+        "en": {
+          "title": "Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI",
+          "summary": "This post shows how to use Crawl4AI, an open source web crawler, as a content preparation layer for Amazon Bedrock Knowledge Bases, handling JavaScript rendering, selective extraction, and custom metadata enrichment before web co…"
+        },
+        "fr": {
+          "title": "Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI",
+          "summary": "This post shows how to use Crawl4AI, an open source web crawler, as a content preparation layer for Amazon Bedrock Knowledge Bases, handling JavaScript rendering, selective extraction, and custom metadata enrichment before web co…"
+        }
+      }
+    },
+    {
+      "slug": "20261027-build-specialized-multimodal-models-with-lfm3-db98bf59",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "publishedAt": "2026-10-27T17:16:52.000Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "locales": {
+        "en": {
+          "title": "Build specialized multimodal models with LFM3",
+          "summary": "Build specialized multimodal models with LFM3"
+        },
+        "fr": {
+          "title": "Build specialized multimodal models with LFM3",
+          "summary": "Build specialized multimodal models with LFM3"
+        }
+      }
+    },
+    {
+      "slug": "20261102-introducing-the-grid-protectors-program-19244c7a",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/grid-protectors-program",
+      "publishedAt": "2026-11-02T15:00:00.000Z",
+      "discoveredAt": "2026-11-02T15:44:43.671Z",
+      "locales": {
+        "en": {
+          "title": "Introducing the Grid Protectors Program",
+          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
+        },
+        "fr": {
+          "title": "Introducing the Grid Protectors Program",
+          "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
+        }
+      }
+    },
+    {
       "slug": "20261027-expanding-the-cyber-verification-program-a22a6ca9",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -3480,25 +3575,6 @@
       }
     },
     {
-      "slug": "20261027-can-we-trust-llms-to-judge-whether-a-research-idea-is-novel-34370e88",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/novelty-bench",
-      "publishedAt": "2026-10-27T16:12:42.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
-      "locales": {
-        "en": {
-          "title": "Can we trust LLMs to judge whether a research idea is novel?",
-          "summary": "Can we trust LLMs to judge whether a research idea is novel?"
-        },
-        "fr": {
-          "title": "Can we trust LLMs to judge whether a research idea is novel?",
-          "summary": "Can we trust LLMs to judge whether a research idea is novel?"
-        }
-      }
-    },
-    {
       "slug": "20260930-gemini-4-argon-our-next-era-of-frontier-intelligence-15e70ee5",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -3514,25 +3590,6 @@
         "fr": {
           "title": "Gemini 4 Argon: our next era of frontier intelligence",
           "summary": "Gemini 4 Argon: our next era of frontier intelligence"
-        }
-      }
-    },
-    {
-      "slug": "20261030-preview-web-apps-live-as-your-coding-agent-builds-them-with-amaz-168738aa",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/preview-web-apps-live-as-your-coding-agent-builds-them-with-amazon-bedrock-agentcore-runtime/",
-      "publishedAt": "2026-10-30T21:40:03.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "Preview web apps live as your coding agent builds them with Amazon Bedrock AgentCore runtime",
-          "summary": "Amazon Bedrock AgentCore Session endpoints give each runtime session an authenticated URL that forwards any HTTP method, path, and WebSocket connection to the ports you allow. In this post, you deploy a coding agent that keeps a…"
-        },
-        "fr": {
-          "title": "Preview web apps live as your coding agent builds them with Amazon Bedrock AgentCore runtime",
-          "summary": "Amazon Bedrock AgentCore Session endpoints give each runtime session an authenticated URL that forwards any HTTP method, path, and WebSocket connection to the ports you allow. In this post, you deploy a coding agent that keeps a…"
         }
       }
     },
@@ -3556,25 +3613,6 @@
       }
     },
     {
-      "slug": "20261030-making-it-easier-for-websites-to-express-ai-training-preferences-25cc4c9b",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-      "publishedAt": "2026-10-30T09:30:00.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "Making it easier for websites to express AI training preferences",
-          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
-        },
-        "fr": {
-          "title": "Making it easier for websites to express AI training preferences",
-          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
-        }
-      }
-    },
-    {
       "slug": "20261026-hypopg-144-is-out-09c21e18",
       "topic": "Systems & Backend",
       "source": "PostgreSQL News",
@@ -3590,25 +3628,6 @@
         "fr": {
           "title": "HypoPG 1.4.4 is out!",
           "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-build-specialized-agents-on-a-stack-you-control-with-nvidia-nemo-a4deda0c",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
-      "publishedAt": "2026-10-30T15:11:46.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
-          "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces..."
-        },
-        "fr": {
-          "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
-          "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces..."
         }
       }
     },
@@ -3670,6 +3689,82 @@
       }
     },
     {
+      "slug": "20261030-build-world-models-for-interactive-simulation-with-nvidia-cosmos-70cecf2c",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/",
+      "publishedAt": "2026-10-30T22:17:16.000Z",
+      "discoveredAt": "2026-11-02T17:24:22.513Z",
+      "locales": {
+        "en": {
+          "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
+          "summary": "Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into..."
+        },
+        "fr": {
+          "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
+          "summary": "Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into..."
+        }
+      }
+    },
+    {
+      "slug": "20261102-build-efficient-agents-with-knowledge-distillation-on-amazon-sag-de143405",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/build-efficient-agents-with-knowledge-distillation-on-amazon-sagemaker-ai/",
+      "publishedAt": "2026-11-02T17:01:31.000Z",
+      "discoveredAt": "2026-11-02T17:24:22.513Z",
+      "locales": {
+        "en": {
+          "title": "Build efficient agents with knowledge distillation on Amazon SageMaker AI",
+          "summary": "Agentic assistants built on frontier models run a multi-step tool loop, and paying frontier prices on every step is hard to sustain at production scale. This post shows how to use sequence-level knowledge distillation (SeqKD) to…"
+        },
+        "fr": {
+          "title": "Build efficient agents with knowledge distillation on Amazon SageMaker AI",
+          "summary": "Agentic assistants built on frontier models run a multi-step tool loop, and paying frontier prices on every step is hard to sustain at production scale. This post shows how to use sequence-level knowledge distillation (SeqKD) to…"
+        }
+      }
+    },
+    {
+      "slug": "20261027-can-we-trust-llms-to-judge-whether-a-research-idea-is-novel-34370e88",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/novelty-bench",
+      "publishedAt": "2026-10-27T16:12:42.000Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "locales": {
+        "en": {
+          "title": "Can we trust LLMs to judge whether a research idea is novel?",
+          "summary": "Can we trust LLMs to judge whether a research idea is novel?"
+        },
+        "fr": {
+          "title": "Can we trust LLMs to judge whether a research idea is novel?",
+          "summary": "Can we trust LLMs to judge whether a research idea is novel?"
+        }
+      }
+    },
+    {
+      "slug": "20261102-lifeval-ed4b5825",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/lifeval",
+      "publishedAt": "2026-11-02T09:00:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "LifeVal",
+          "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork."
+        },
+        "fr": {
+          "title": "LifeVal",
+          "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork."
+        }
+      }
+    },
+    {
       "slug": "20261027-partnerships-31508cd6",
       "topic": "Computer Science",
       "source": "Anthropic News",
@@ -3727,25 +3822,6 @@
       }
     },
     {
-      "slug": "20261023-litpivot-developing-research-ideas-through-dynamic-contextualiza-d5dfb55b",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/litpivot",
-      "publishedAt": "2026-10-23T16:15:50.000Z",
-      "discoveredAt": "2026-10-23T21:22:03.530Z",
-      "locales": {
-        "en": {
-          "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
-          "summary": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape"
-        },
-        "fr": {
-          "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
-          "summary": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape"
-        }
-      }
-    },
-    {
       "slug": "20260930-introducing-synthid-bio-0a622a33",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -3761,25 +3837,6 @@
         "fr": {
           "title": "Introducing SynthID Bio",
           "summary": "Proof of concept for watermarking AI-generated proteins while preserving biological function."
-        }
-      }
-    },
-    {
-      "slug": "20261030-how-worldwide-express-automated-freight-exceptions-with-amazon-b-45af7487",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
-      "publishedAt": "2026-10-30T17:32:20.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "How Worldwide Express automated freight exceptions with Amazon Bedrock",
-          "summary": "Worldwide Express automated its less-than-truckload freight billing-exception process with a multi-agent solution built on Amazon Bedrock. Six months after launch, the company cut active exceptions by 75%, improved time-to-cash b…"
-        },
-        "fr": {
-          "title": "How Worldwide Express automated freight exceptions with Amazon Bedrock",
-          "summary": "Worldwide Express automated its less-than-truckload freight billing-exception process with a multi-agent solution built on Amazon Bedrock. Six months after launch, the company cut active exceptions by 75%, improved time-to-cash b…"
         }
       }
     },
@@ -3803,25 +3860,6 @@
       }
     },
     {
-      "slug": "20261030-community-safety-report-and-new-protections-for-teens-c7606af4",
-      "topic": "Security & Standards",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-      "publishedAt": "2026-10-30T09:00:00.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "Community safety report and new protections for teens",
-          "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
-        },
-        "fr": {
-          "title": "Community safety report and new protections for teens",
-          "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
-        }
-      }
-    },
-    {
       "slug": "20261026-pghdrhistogram-100---exact-percentiles-in-postgresql-52a6bea1",
       "topic": "Computer Science",
       "source": "PostgreSQL News",
@@ -3837,25 +3875,6 @@
         "fr": {
           "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
           "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-how-to-check-and-configure-nvidia-gpudirect-storage-for-your-pla-d93744a1",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/",
-      "publishedAt": "2026-10-30T15:09:18.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
-          "summary": "NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path..."
-        },
-        "fr": {
-          "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
-          "summary": "NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path..."
         }
       }
     },
@@ -3894,6 +3913,82 @@
         "fr": {
           "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
           "summary": "The opportunity is bigger than making individual tasks faster. It’s to build a system that learns from how infrastructure is designed, sourced, and operated. The post AI transformation across the infrastructure lifecycle: From su…"
+        }
+      }
+    },
+    {
+      "slug": "20261030-build-a-validated-kubernetes-runtime-for-nvidia-dynamo-1ca84190",
+      "topic": "Computer Science",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/",
+      "publishedAt": "2026-10-30T21:35:34.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "locales": {
+        "en": {
+          "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
+          "summary": "Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference..."
+        },
+        "fr": {
+          "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
+          "summary": "Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference..."
+        }
+      }
+    },
+    {
+      "slug": "20261102-agentic-engineering-intelligence-with-amazon-nova-multimodal-emb-624d1683",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/agentic-engineering-intelligence-with-amazon-nova-multimodal-embeddings-and-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-11-02T17:01:16.000Z",
+      "discoveredAt": "2026-11-02T17:24:22.513Z",
+      "locales": {
+        "en": {
+          "title": "Agentic engineering intelligence with Amazon Nova Multimodal Embeddings and Amazon Bedrock AgentCore",
+          "summary": "Learn how to build a multi-agent engineering assistant that compresses aerospace component substitution evaluation from days to minutes, using Amazon Nova Multimodal Embeddings, Amazon Bedrock AgentCore, and the Strands Agents SD…"
+        },
+        "fr": {
+          "title": "Agentic engineering intelligence with Amazon Nova Multimodal Embeddings and Amazon Bedrock AgentCore",
+          "summary": "Learn how to build a multi-agent engineering assistant that compresses aerospace component substitution evaluation from days to minutes, using Amazon Nova Multimodal Embeddings, Amazon Bedrock AgentCore, and the Strands Agents SD…"
+        }
+      }
+    },
+    {
+      "slug": "20261023-litpivot-developing-research-ideas-through-dynamic-contextualiza-d5dfb55b",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/litpivot",
+      "publishedAt": "2026-10-23T16:15:50.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+          "summary": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape"
+        },
+        "fr": {
+          "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+          "summary": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape"
+        }
+      }
+    },
+    {
+      "slug": "20261102-qodo-builds-context-into-ai-code-review-with-codex-598c6194",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/qodo-codex-plugin",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "Qodo builds context into AI code review with Codex",
+          "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
+        },
+        "fr": {
+          "title": "Qodo builds context into AI code review with Codex",
+          "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
         }
       }
     },
@@ -3955,25 +4050,6 @@
       }
     },
     {
-      "slug": "20261023-does-your-model-run-on-aws-trainium-look-it-up-64309091",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/torch-neuronx-model-support",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "discoveredAt": "2026-10-23T21:22:03.530Z",
-      "locales": {
-        "en": {
-          "title": "Does Your Model Run on AWS Trainium? Look It Up",
-          "summary": "Does Your Model Run on AWS Trainium? Look It Up"
-        },
-        "fr": {
-          "title": "Does Your Model Run on AWS Trainium? Look It Up",
-          "summary": "Does Your Model Run on AWS Trainium? Look It Up"
-        }
-      }
-    },
-    {
       "slug": "20260924-introducing-gemini-38-live-with-live-avatar-e7107d9a",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -3989,25 +4065,6 @@
         "fr": {
           "title": "Introducing Gemini 3.8 Live with Live Avatar",
           "summary": "Introducing Gemini 3.8 Live with Live Avatar"
-        }
-      }
-    },
-    {
-      "slug": "20261030-configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-gov-bf0d3d19",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
-      "publishedAt": "2026-10-30T17:27:45.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
-          "summary": "The ChatGPT desktop app is now available on Amazon Bedrock in AWS GovCloud (US). This post walks through a controlled local deployment that routes model inference to Amazon Bedrock in AWS GovCloud (US-West) using API-mode sign-in…"
-        },
-        "fr": {
-          "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
-          "summary": "The ChatGPT desktop app is now available on Amazon Bedrock in AWS GovCloud (US). This post walks through a controlled local deployment that routes model inference to Amazon Bedrock in AWS GovCloud (US-West) using API-mode sign-in…"
         }
       }
     },
@@ -4031,25 +4088,6 @@
       }
     },
     {
-      "slug": "20261030-fair-use-benefits-everyone-d2282bcc",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/fair-use-benefits-everyone",
-      "publishedAt": "2026-10-30T00:00:00.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "Fair use benefits everyone",
-          "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
-        },
-        "fr": {
-          "title": "Fair use benefits everyone",
-          "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
-        }
-      }
-    },
-    {
       "slug": "20261022-pgrecon-open-source-oracle-to-postgresql-migration-assessment-an-91970955",
       "topic": "Computer Science",
       "source": "PostgreSQL News",
@@ -4065,25 +4103,6 @@
         "fr": {
           "title": "pgrecon: open-source Oracle to PostgreSQL migration assessment and schema conversion",
           "summary": "pgrecon , an Apache-2.0 licensed Oracle to PostgreSQL migration assessment and schema conversion tool, is now public. The current release is 0.7.3. pgrecon works entirely offline. A reviewable, read-only SQL*Plus script produces…"
-        }
-      }
-    },
-    {
-      "slug": "20261029-nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-a-1539ad47",
-      "topic": "AI Performance",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-ai-performance-per-watt/",
-      "publishedAt": "2026-10-29T19:58:59.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Vera Rubin and Blackwell Set a New Standard for Agentic AI Performance per Watt",
-          "summary": "AI agents have expanded inference from single-turn interactions into multi-step workflows that reason, invoke tools, coordinate subagents, and carry growing..."
-        },
-        "fr": {
-          "title": "NVIDIA Vera Rubin and Blackwell Set a New Standard for Agentic AI Performance per Watt",
-          "summary": "AI agents have expanded inference from single-turn interactions into multi-step workflows that reason, invoke tools, coordinate subagents, and carry growing..."
         }
       }
     },
@@ -4126,6 +4145,82 @@
       }
     },
     {
+      "slug": "20261030-run-ai-models-for-edge-application-development-with-just-a-few-c-e060e1d4",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+      "publishedAt": "2026-10-30T20:33:21.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "locales": {
+        "en": {
+          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
+        },
+        "fr": {
+          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
+        }
+      }
+    },
+    {
+      "slug": "20261102-how-circle-k-accelerated-devops-incident-triage-to-under-15-minu-5818becf",
+      "topic": "Security & Standards",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+      "publishedAt": "2026-11-02T17:00:58.000Z",
+      "discoveredAt": "2026-11-02T17:24:22.513Z",
+      "locales": {
+        "en": {
+          "title": "How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock",
+          "summary": "Circle K's DevOps team cut incident triage from 45-60 minutes to under 15 by building an agentic triage system on Amazon Bedrock. This post walks through the architecture, the initial Amazon Bedrock Flows implementation, the migr…"
+        },
+        "fr": {
+          "title": "How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock",
+          "summary": "Circle K's DevOps team cut incident triage from 45-60 minutes to under 15 by building an agentic triage system on Amazon Bedrock. This post walks through the architecture, the initial Amazon Bedrock Flows implementation, the migr…"
+        }
+      }
+    },
+    {
+      "slug": "20261023-does-your-model-run-on-aws-trainium-look-it-up-64309091",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Does Your Model Run on AWS Trainium? Look It Up",
+          "summary": "Does Your Model Run on AWS Trainium? Look It Up"
+        },
+        "fr": {
+          "title": "Does Your Model Run on AWS Trainium? Look It Up",
+          "summary": "Does Your Model Run on AWS Trainium? Look It Up"
+        }
+      }
+    },
+    {
+      "slug": "20261102-openai-appoints-dan-driscoll-as-senior-counselor-for-national-se-ff138f70",
+      "topic": "Security & Standards",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/dan-driscoll-joins-openai",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
+      "locales": {
+        "en": {
+          "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+          "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies."
+        },
+        "fr": {
+          "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+          "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies."
+        }
+      }
+    },
+    {
       "slug": "20261026-investing-in-the-public-benefit-were-committing-a-portion-of-ant-4c6c987b",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -4164,25 +4259,6 @@
       }
     },
     {
-      "slug": "20261022-turning-database-grading-into-rl-rewards-post-training-agents-wi-95eb6975",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-      "publishedAt": "2026-10-22T22:24:34.000Z",
-      "discoveredAt": "2026-10-23T11:34:27.809Z",
-      "locales": {
-        "en": {
-          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-          "summary": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox"
-        },
-        "fr": {
-          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-          "summary": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox"
-        }
-      }
-    },
-    {
       "slug": "20260923-advancing-private-ai-compute-with-secure-server-side-memory-4c4abcff",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -4198,25 +4274,6 @@
         "fr": {
           "title": "Advancing Private AI Compute with secure, server-side memory",
           "summary": "Introducing private, server-side memory to Private AI Compute for personal AI."
-        }
-      }
-    },
-    {
-      "slug": "20261029-how-the-uk-amazon-quick-user-group-grew-in-2026-cf0463a1",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-the-uk-amazon-quick-user-group-grew-in-2026/",
-      "publishedAt": "2026-10-29T20:16:40.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "How the UK Amazon Quick User Group grew in 2026",
-          "summary": "The UK Amazon Quick User Group's 2026 roundup: three quarterly meetups, 150+ attendees, and customer stories from Arriva, Carsa, and Propulse Lab on using agentic AI and Amazon Quick to turn data into faster decisions, higher sat…"
-        },
-        "fr": {
-          "title": "How the UK Amazon Quick User Group grew in 2026",
-          "summary": "The UK Amazon Quick User Group's 2026 roundup: three quarterly meetups, 150+ attendees, and customer stories from Arriva, Carsa, and Propulse Lab on using agentic AI and Amazon Quick to turn data into faster decisions, higher sat…"
         }
       }
     },
@@ -4240,25 +4297,6 @@
       }
     },
     {
-      "slug": "20261029-an-updated-model-spec-for-more-capable-and-beneficial-ai-7bf0065c",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/updated-model-spec",
-      "publishedAt": "2026-10-29T17:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "An updated Model Spec for more capable and beneficial AI",
-          "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
-        },
-        "fr": {
-          "title": "An updated Model Spec for more capable and beneficial AI",
-          "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
-        }
-      }
-    },
-    {
       "slug": "20261022-safegrd-postgresql-backups-that-are-restored-and-checked-on-a-sc-1a9cacd2",
       "topic": "Computer Science",
       "source": "PostgreSQL News",
@@ -4274,25 +4312,6 @@
         "fr": {
           "title": "SafeGrd: PostgreSQL backups that are restored and checked on a schedule",
           "summary": "SafeGrd is a new backup service for PostgreSQL 13 and later that restores every backup on a schedule and checks the row counts. It takes a backup, restores it later into memory or a throwaway database, and counts what came back,…"
-        }
-      }
-    },
-    {
-      "slug": "20261029-unlocking-tensor-core-performance-for-machine-learning-interatom-a2355c48",
-      "topic": "AI Performance",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/",
-      "publishedAt": "2026-10-29T00:07:21.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
-          "summary": "Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These..."
-        },
-        "fr": {
-          "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
-          "summary": "Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These..."
         }
       }
     },
@@ -4335,6 +4354,82 @@
       }
     },
     {
+      "slug": "20261030-build-specialized-agents-on-a-stack-you-control-with-nvidia-nemo-a4deda0c",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
+      "publishedAt": "2026-10-30T15:11:46.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "locales": {
+        "en": {
+          "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
+          "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces..."
+        },
+        "fr": {
+          "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
+          "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces..."
+        }
+      }
+    },
+    {
+      "slug": "20261030-managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-a-963a648b",
+      "topic": "AI Systems",
+      "source": "AWS ML Blog",
+      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "href": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+      "publishedAt": "2026-10-30T22:42:24.000Z",
+      "discoveredAt": "2026-10-31T12:22:37.280Z",
+      "locales": {
+        "en": {
+          "title": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams",
+          "summary": "This post presents a five-stage operating model for managing Amazon Bedrock cost: attribute every dollar to an owner, make every request observable, enforce budgets, optimize platform defaults, and operate a review cadence. Writt…"
+        },
+        "fr": {
+          "title": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams",
+          "summary": "This post presents a five-stage operating model for managing Amazon Bedrock cost: attribute every dollar to an owner, make every request observable, enforce budgets, optimize platform defaults, and operate a review cadence. Writt…"
+        }
+      }
+    },
+    {
+      "slug": "20261022-turning-database-grading-into-rl-rewards-post-training-agents-wi-95eb6975",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "publishedAt": "2026-10-22T22:24:34.000Z",
+      "discoveredAt": "2026-10-23T11:34:27.809Z",
+      "locales": {
+        "en": {
+          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+          "summary": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox"
+        },
+        "fr": {
+          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+          "summary": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox"
+        }
+      }
+    },
+    {
+      "slug": "20261030-making-it-easier-for-websites-to-express-ai-training-preferences-25cc4c9b",
+      "topic": "AI Systems",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "publishedAt": "2026-10-30T09:30:00.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "locales": {
+        "en": {
+          "title": "Making it easier for websites to express AI training preferences",
+          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
+        },
+        "fr": {
+          "title": "Making it easier for websites to express AI training preferences",
+          "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
+        }
+      }
+    },
+    {
       "slug": "20261026-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-off-edf59637",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -4373,25 +4468,6 @@
       }
     },
     {
-      "slug": "20261022-olmoearth-v13-state-of-the-art-embeddings-for-the-whole-planet-eaa0ebff",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-      "publishedAt": "2026-10-22T16:11:31.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
-      "locales": {
-        "en": {
-          "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
-          "summary": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet"
-        },
-        "fr": {
-          "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
-          "summary": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet"
-        }
-      }
-    },
-    {
       "slug": "20260923-gemini-38-text-to-speech-says-hello-be2314c6",
       "topic": "AI Research",
       "source": "DeepMind Blog",
@@ -4407,25 +4483,6 @@
         "fr": {
           "title": "Gemini 3.8 text-to-speech says hello",
           "summary": "Gemini 3.8 text-to-speech says hello"
-        }
-      }
-    },
-    {
-      "slug": "20261029-building-intent-driven-ui-testing-with-amazon-nova-act-1f3c261e",
-      "topic": "AI Systems",
-      "source": "AWS ML Blog",
-      "sourceFeed": "https://aws.amazon.com/blogs/machine-learning/feed/",
-      "href": "https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act/",
-      "publishedAt": "2026-10-29T18:20:27.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "Building intent-driven UI testing with Amazon Nova Act",
-          "summary": "Epsilon's Agentic Platform team delivers UI testing as a managed, multi-tenant service built on Amazon Nova Act and Amazon Bedrock AgentCore Browser Tool. Tests are written in plain English and run on browsers managed by AWS, giv…"
-        },
-        "fr": {
-          "title": "Building intent-driven UI testing with Amazon Nova Act",
-          "summary": "Epsilon's Agentic Platform team delivers UI testing as a managed, multi-tenant service built on Amazon Nova Act and Amazon Bedrock AgentCore Browser Tool. Tests are written in plain English and run on browsers managed by AWS, giv…"
         }
       }
     },
@@ -4449,25 +4506,6 @@
       }
     },
     {
-      "slug": "20261029-how-we-detect-frontier-model-misalignment-d28967fc",
-      "topic": "AI Systems",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-      "publishedAt": "2026-10-29T09:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "How we detect frontier model misalignment",
-          "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate."
-        },
-        "fr": {
-          "title": "How we detect frontier model misalignment",
-          "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate."
-        }
-      }
-    },
-    {
       "slug": "20261022-backupdrill-open-source-supabase-postgres-backups-with-automated-21a54640",
       "topic": "Computer Science",
       "source": "PostgreSQL News",
@@ -4483,25 +4521,6 @@
         "fr": {
           "title": "BackupDrill: open-source Supabase Postgres backups with automated restore drills",
           "summary": "BackupDrill backs up Supabase Postgres databases to a bucket you own, then restores each backup into a throwaway PostgreSQL instance to check it restores. Most teams find out whether their pg_dump backups work on the day they nee…"
-        }
-      }
-    },
-    {
-      "slug": "20261028-support-new-ai-frameworks-faster-using-nvidia-workload-map-452b3e36",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map/",
-      "publishedAt": "2026-10-28T21:46:21.000Z",
-      "discoveredAt": "2026-11-02T17:24:22.513Z",
-      "locales": {
-        "en": {
-          "title": "Support New AI Frameworks Faster Using NVIDIA Workload Map",
-          "summary": "NVIDIA DSX AI Factory Platform brings together technologies to help the ecosystem design, build, and operate more efficient AI factories, including open source,..."
-        },
-        "fr": {
-          "title": "Support New AI Frameworks Faster Using NVIDIA Workload Map",
-          "summary": "NVIDIA DSX AI Factory Platform brings together technologies to help the ecosystem design, build, and operate more efficient AI factories, including open source,..."
         }
       }
     },
@@ -4540,25 +4559,6 @@
         "fr": {
           "title": "SQL Server on Azure Local is now generally available",
           "summary": "With SQL Server on Azure Local, customers can modernize where their data resides while maintaining control over infrastructure, connectivity, and data placement. The post SQL Server on Azure Local is now generally available appea…"
-        }
-      }
-    },
-    {
-      "slug": "20261023-open-call-for-guest-investigators-in-the-life-sciences-98d45c75",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "publishedAt": "2026-10-23T11:34:27.809Z",
-      "discoveredAt": "2026-10-23T11:34:27.809Z",
-      "locales": {
-        "en": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
-        },
-        "fr": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
         }
       }
     }
