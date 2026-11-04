@@ -64,7 +64,7 @@ describe("reviewVerdict", () => {
       expect(reviewVerdict(true, []).ok).toBe(false);
       expect(reviewVerdict(null, []).ok).toBe(false);
       expect(reviewVerdict(false, []).ok).toBe(true);
-      expect(reviewVerdict(false, []).detail).toBe("no listing is waiting for a person");
+      expect(reviewVerdict(false, []).detail).toBe("nothing is waiting for a person");
     });
 
     it("defaults the argument, so a caller may omit it entirely", () => {

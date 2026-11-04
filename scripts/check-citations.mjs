@@ -107,22 +107,27 @@ if (invokedDirectly) {
       `${by("gone").length} gone · ${by("check").length} could not be read`
   );
 
-  if (by("gone").length || by("moved").length) {
-    console.log("\n  Needs a person — open each, read the page, then fix or replace the citation:");
-    for (const result of [...by("gone"), ...by("moved")]) {
-      console.log(`    ${result.file}  ${result.owner}`);
-      console.log(`      ${result.detail}`);
-      console.log(`      ${result.href}`);
-    }
-  }
-
   if (by("check").length) {
+    // First, and the actionable block last, because the workflow puts a tail
+    // of this log into the issue body. The stage check's workflow records the
+    // same bug: its tail held the harmless block and cut the one a person
+    // had to act on.
+    //
     // Printed, but it does not fail the run. With an honest user-agent some
     // publishers refuse us every single week, and a check that fails every week
     // is a check nobody reads.
     console.log("\n  Could not be read — proves nothing either way, no action:");
     for (const result of by("check")) {
       console.log(`    ${result.detail}  ${result.href}`);
+    }
+  }
+
+  if (by("gone").length || by("moved").length) {
+    console.log("\n  Needs a person — open each, read the page, then fix or replace the citation:");
+    for (const result of [...by("gone"), ...by("moved")]) {
+      console.log(`    ${result.file}  ${result.owner}`);
+      console.log(`      ${result.detail}`);
+      console.log(`      ${result.href}`);
     }
   }
 

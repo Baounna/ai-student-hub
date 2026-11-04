@@ -1,7 +1,8 @@
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "node:fs";
 import {
-  reviewVerdict
+  reviewVerdict,
+  REVIEW_CHANNELS
   // @ts-expect-error - plain .mjs script, no types
 } from "../scripts/watchdog.mjs";
 
@@ -93,7 +94,12 @@ describe("a check that fails on purpose must not look like one that broke", () =
   const WATCHDOG = readFileSync("scripts/watchdog.mjs", "utf8");
 
   it("does not count the review request as a workflow failure", () => {
-    expect(WATCHDOG).toMatch(/const BY_DESIGN = new Set\(\["Internship Link Check"\]\)/);
+    // This matched the literal `new Set(["Internship Link Check"])`, which
+    // broke the moment a second review channel arrived -- while the behaviour
+    // it cared about was intact and the table was the improvement. The same
+    // lesson as the test below it: assert the behaviour, not the spelling.
+    const channels = REVIEW_CHANNELS as { failsOnPurpose: string | null }[];
+    expect(channels.map((channel) => channel.failsOnPurpose)).toContain("Internship Link Check");
     expect(WATCHDOG).toMatch(/const unexpected = failing\.filter\(\(name\) => !BY_DESIGN\.has\(name\)\)/);
     // Workflow health is judged on the unexpected failures only.
     expect(WATCHDOG).toMatch(/"Workflow health",\s*\n\s*unexpected\.length === 0/);

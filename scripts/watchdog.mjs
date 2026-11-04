@@ -593,6 +593,37 @@ export function crashReport(error, now = new Date()) {
   ].join("\n");
 }
 
+/**
+ * Every way this project asks a person for something, in one table.
+ *
+ * Two facts have to agree, and they used to live apart. The issue title tells
+ * "Listings awaiting review" where to look for an open request; the workflow
+ * name tells "Workflow health" that a red run from that workflow is the request
+ * and not a fault. Held apart, they drift.
+ *
+ * They had already drifted twice when this table was written:
+ *
+ *   The citation check was in neither. The first Thursday a cited source moved,
+ *   workflow health would have gone red for good -- the always-on light the
+ *   comment at BY_DESIGN was written about -- while the issue it opened stayed
+ *   invisible in the line whose entire job is to surface it.
+ *
+ *   The internship finder's issue was in neither either, and that one was not
+ *   hypothetical: "Internship candidates waiting for review" had been open
+ *   since 21 October with the nightly report saying nothing was waiting, for a
+ *   fortnight.
+ *
+ * `failsOnPurpose` is null for a workflow that does not fail when it wants a
+ * person. The finder only opens its issue and exits 0, so naming it as
+ * by-design would excuse a genuine break in the one workflow that adds listings.
+ * An absent workflow name means "watch the issue, and still trust the red".
+ */
+export const REVIEW_CHANNELS = [
+  { issue: "Internship listings need a human look", failsOnPurpose: "Internship Link Check" },
+  { issue: "Cited sources need a human look", failsOnPurpose: "Citation Link Check" },
+  { issue: "Internship candidates waiting for review", failsOnPurpose: null }
+];
+
 export function reviewVerdict(waiting, byDesign = []) {
   /*
    * The run can succeed and still have left a request open, so there is often
@@ -618,36 +649,46 @@ export function reviewVerdict(waiting, byDesign = []) {
     return {
       ok: false,
       detail: asked
-        ? `${names} flagged listings for a human — the review issue is still open`
-        : "listings are waiting for a person — the review issue is open"
+        ? `${names} asked for a person — the review issue is still open`
+        : "something is waiting for a person — a review issue is open"
     };
   }
   return {
     ok: true,
     detail: asked
       ? `${names} asked for review on its last run, and that request is already closed`
-      : "no listing is waiting for a person"
+      : "nothing is waiting for a person"
   };
 }
 
 async function reviewIssueIsOpen() {
-  try {
-    const { stdout } = await execFileAsync(
-      "gh",
-      [
-        "issue", "list",
-        "--state", "open",
-        "--search", "Internship listings need a human look in:title",
-        "--limit", "1",
-        "--json", "number"
-      ],
-      { maxBuffer: 1024 * 1024 }
-    );
-    const issues = JSON.parse(stdout);
-    return Array.isArray(issues) && issues.length > 0;
-  } catch {
-    return null;
+  let anyOpen = false;
+
+  for (const { issue } of REVIEW_CHANNELS) {
+    try {
+      const { stdout } = await execFileAsync(
+        "gh",
+        [
+          "issue", "list",
+          "--state", "open",
+          "--search", `${issue} in:title`,
+          "--limit", "1",
+          "--json", "number"
+        ],
+        { maxBuffer: 1024 * 1024 }
+      );
+      const issues = JSON.parse(stdout);
+      if (Array.isArray(issues) && issues.length > 0) anyOpen = true;
+    } catch {
+      // One channel we could not read means the answer for the whole line is
+      // unknown, and an unknown is never reported as healthy. Returning false
+      // here because the other channel answered would be reporting the absence
+      // of evidence as evidence of absence.
+      return null;
+    }
   }
+
+  return anyOpen;
 }
 
 async function allWorkflowFiles() {
@@ -759,7 +800,9 @@ async function checkWorkflowHealth() {
      * run -- and get their own line here. Anything else failing still fails
      * this check, which is what it is for.
      */
-    const BY_DESIGN = new Set(["Internship Link Check"]);
+    const BY_DESIGN = new Set(
+      REVIEW_CHANNELS.map((channel) => channel.failsOnPurpose).filter(Boolean)
+    );
     const unexpected = failing.filter((name) => !BY_DESIGN.has(name));
     const byDesign = failing.filter((name) => BY_DESIGN.has(name));
 

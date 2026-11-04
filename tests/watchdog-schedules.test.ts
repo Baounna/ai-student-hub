@@ -1,6 +1,8 @@
 import { describe, it, expect } from "vitest";
+import { readFileSync, readdirSync } from "node:fs";
+import path from "node:path";
 // @ts-expect-error - plain .mjs script, no types
-import { scheduledWorkflowProblems, scheduledWorkflowVerdict } from "../scripts/watchdog.mjs";
+import { scheduledWorkflowProblems, scheduledWorkflowVerdict, REVIEW_CHANNELS } from "../scripts/watchdog.mjs";
 
 /**
  * The failure this covers is the one the project already had: the writer agent
@@ -163,5 +165,65 @@ describe("scheduledWorkflowVerdict", () => {
 
     expect(verdict.ok).toBe(false);
     expect(verdict.detail).toMatch(/never run/);
+  });
+});
+
+/**
+ * A workflow that fails on purpose to ask for a person has to be named in two
+ * places: once so "Workflow health" reads its red run as a request rather than
+ * a fault, and once so "Listings awaiting review" knows which issue carries the
+ * request. scripts/watchdog.mjs keeps them in one table for that reason.
+ *
+ * The Citation Link Check shipped in neither. Had this test not been written
+ * with it, the first Thursday a cited source moved would have pinned workflow
+ * health red for good -- the always-on light this file's own comments were
+ * written about -- while the issue it opened stayed invisible in the line whose
+ * whole job is to surface it.
+ */
+describe("review channels", () => {
+  const DIR = ".github/workflows";
+  const workflows = readdirSync(DIR)
+    .filter((name) => name.endsWith(".yml") || name.endsWith(".yaml"))
+    .map((name) => ({ name, text: readFileSync(path.join(DIR, name), "utf8") }));
+
+  it("knows every workflow that opens a review issue", () => {
+    const declared = new Set(REVIEW_CHANNELS.map((channel: { issue: string }) => channel.issue));
+    const opened = new Set<string>();
+
+    for (const { text } of workflows) {
+      // The issue steps assign the title to TITLE before using it.
+      for (const match of text.matchAll(/^\s*TITLE="([^"]+)"/gm)) opened.add(match[1]);
+    }
+
+    expect(opened.size).toBeGreaterThan(0);
+    expect([...opened].filter((title) => !declared.has(title))).toEqual([]);
+  });
+
+  it("names only workflows that exist", () => {
+    const names = new Set(
+      workflows.map(({ text }) => text.match(/^name:\s*(.+)$/m)?.[1]?.trim()).filter(Boolean)
+    );
+    const named = (REVIEW_CHANNELS as { failsOnPurpose: string | null }[])
+      .map((channel) => channel.failsOnPurpose)
+      .filter((workflow): workflow is string => Boolean(workflow));
+
+    expect(named.length).toBeGreaterThan(0);
+    for (const workflow of named) expect(names, workflow).toContain(workflow);
+  });
+
+  it("excuses a red run only for a workflow that fails on purpose", () => {
+    // The finder opens its issue and exits 0. Listing it as by-design would
+    // excuse a genuine break in the one workflow that adds listings to the
+    // board -- which is the failure mode that hid for three days once already.
+    const channels = REVIEW_CHANNELS as { issue: string; failsOnPurpose: string | null }[];
+    const finder = channels.find((channel) => channel.issue.includes("candidates waiting"));
+    expect(finder?.failsOnPurpose).toBeNull();
+
+    for (const { failsOnPurpose } of channels) {
+      if (!failsOnPurpose) continue;
+      const file = workflows.find(({ text }) => text.includes(`name: ${failsOnPurpose}`));
+      expect(file, failsOnPurpose).toBeTruthy();
+      expect(file!.text, failsOnPurpose).toMatch(/exit 1/);
+    }
   });
 });

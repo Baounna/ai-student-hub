@@ -91,7 +91,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TITLE="Cited sources need a human look"
-          BODY=$(printf 'A cited page no longer answers where the content says it does.\n\n```\n%s\n```\n\nOpen each one and READ the page it lands on now. A citation is a claim that this page supports a specific sentence, so a new address is not a fix on its own: if the new page no longer says it, the sentence needs a different source or needs to go.\n\nLinks marked "could not be read" prove nothing either way and need no action — that is a fact about us, not about the page.\n\nRun: `%s`\n' "$(tail -n 60 "$RUNNER_TEMP/citations.log" | tr -d '`')" "npm run check:citations")
+          BODY=$(printf 'A cited page no longer answers where the content says it does.\n\n```\n%s\n```\n\nOpen each one and READ the page it lands on now. A citation is a claim that this page supports a specific sentence, so a new address is not a fix on its own: if the new page no longer says it, the sentence needs a different source or needs to go.\n\nLinks marked "could not be read" prove nothing either way and need no action — that is a fact about us, not about the page.\n\nRun: `%s`\n' "$(tail -n 80 "$RUNNER_TEMP/citations.log" | tr -d '`')" "npm run check:citations")
           EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
           if [ -n "$EXISTING" ]; then
             gh issue comment "$EXISTING" --body "$BODY"
