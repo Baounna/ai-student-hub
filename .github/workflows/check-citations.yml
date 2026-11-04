@@ -1,0 +1,107 @@
+name: Citation Link Check
+
+# The internship board has had a weekly link check since September. The guides
+# never had one, and they are the part of the site whose whole claim is that
+# every source was opened and read.
+#
+# Five cited pages had already moved under us before anyone looked -- the OWASP
+# LLM Top 10, Anthropic's agents post, MDN's HTTP status reference, the OWASP
+# API list and the GitHub Actions events page. Each was found by hand, months
+# late. Nothing would ever have said so.
+#
+# Unlike the stage check, this one changes nothing on disk. A citation says a
+# specific page supports a specific sentence; when that page moves, the new
+# address may say something else entirely, and the only way to know is to read
+# it. So the output is for a person, and the job's whole purpose is to open the
+# issue that tells them.
+
+on:
+  schedule:
+    # Thursdays, so it does not land on the same morning as the internship
+    # check. A day of the week is also what the watchdog reads as "weekly":
+    # cadenceHours() in scripts/watchdog.mjs treats a cron with no day-of-week
+    # as daily, so a monthly schedule here would make the watchdog report this
+    # workflow as overdue every month of its life.
+    - cron: "10 6 * * 4"
+  workflow_dispatch:
+
+concurrency:
+  group: ai-student-hub-check-citations
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Fetch every cited page
+        id: check
+        run: |
+          set -o pipefail
+          # The script exits 1 when a citation no longer answers. Under `bash -e`
+          # that would abort the step before the outputs below are written, so
+          # the review issue would never open -- exactly the week it is for.
+          # The stage check learned this the hard way; the status is kept and
+          # re-raised at the end instead.
+          status=0
+          node scripts/check-citations.mjs 2>&1 | tee "$RUNNER_TEMP/citations.log" || status=$?
+          if grep -q "REVIEW REQUIRED" "$RUNNER_TEMP/citations.log"; then
+            echo "needs_review=true" >> "$GITHUB_OUTPUT"
+          fi
+          echo "check_status=$status" >> "$GITHUB_OUTPUT"
+
+      # Closing needs positive evidence that a check actually ran. An unset
+      # output satisfies `!= 'true'`, so without the second condition a crashed
+      # install would close the issue and tell the reader everything was fine.
+      - name: Close the review issue when every citation answers
+        if: always() && steps.check.outputs.needs_review != 'true' && steps.check.outputs.check_status != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="Cited sources need a human look"
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" \
+              --body "Every cited page answers where the content says it does. Closing automatically."
+            gh issue close "$EXISTING"
+            echo "Closed review issue #$EXISTING."
+          else
+            echo "Nothing needs review and no issue is open."
+          fi
+
+      # One issue, reopened and updated, rather than a new one each week. A
+      # stream of alerts is how the last outage stayed invisible for eighty days.
+      - name: Open or update the review issue
+        if: always() && steps.check.outputs.needs_review == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="Cited sources need a human look"
+          BODY=$(printf 'A cited page no longer answers where the content says it does.\n\n```\n%s\n```\n\nOpen each one and READ the page it lands on now. A citation is a claim that this page supports a specific sentence, so a new address is not a fix on its own: if the new page no longer says it, the sentence needs a different source or needs to go.\n\nLinks marked "could not be read" prove nothing either way and need no action — that is a fact about us, not about the page.\n\nRun: `%s`\n' "$(tail -n 60 "$RUNNER_TEMP/citations.log" | tr -d '`')" "npm run check:citations")
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number' || true)
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
+          fi
+
+      # Last, so the reporting above has already happened.
+      - name: Fail the job if a citation no longer answers
+        if: always() && steps.check.outputs.check_status != '0' && steps.check.outputs.check_status != ''
+        run: |
+          echo "check-citations.mjs exited ${{ steps.check.outputs.check_status }} — see the review issue."
+          exit 1

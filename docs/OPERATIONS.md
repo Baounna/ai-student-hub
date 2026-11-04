@@ -747,6 +747,31 @@ Important:
 - Edit `src/content/posts.ts` in `comparisons`
 - Add intent keyword + tools + affiliate links
 
+### Link rot
+
+Two checks, because the two kinds of link make different promises and fail
+differently.
+
+```bash
+npm run check:stages     # the internship board
+npm run check:citations   # every source the guides cite, and the tool links
+```
+
+`check:stages` runs every Monday (`.github/workflows/check-stages.yml`). It
+re-stamps `checkedAt` on listings that verified and, with `--prune`, removes the
+ones it can prove are gone.
+
+`check:citations` runs every Thursday
+(`.github/workflows/check-citations.yml`) and changes nothing on disk. A
+citation is a claim that a specific page supports a specific sentence, so when a
+page moves, swapping in the new URL is not a fix: the new page may not say it.
+Both open a single review issue and close it again when nothing is waiting.
+
+Both treat "could not read it" as its own verdict, never as a dead link. A 403,
+a 429 or a timeout is a fact about us, not about the page, and a checker that
+merges the two reports broken links that are not broken — which happened on this
+content once, for twenty-five links that were all fine.
+
 ## Growth Operating Docs
 
 - Revenue model and conversion assumptions: `docs/revenue-model.md`

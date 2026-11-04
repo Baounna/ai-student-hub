@@ -28,7 +28,8 @@ const GUARDED = [
   "scripts/find-stages.mjs",
   "scripts/watchdog.mjs",
   "scripts/agent-pipeline.mjs",
-  "scripts/autopilot-agent.mjs"
+  "scripts/autopilot-agent.mjs",
+  "scripts/check-citations.mjs"
 ];
 
 describe("script import safety", () => {
