@@ -1,4 +1,4 @@
-import { countryLabel, getOpenStages, type Stage } from "@/content/stages";
+import { countryLabel, getOpenStages, isRecentlyAdded, type Stage } from "@/content/stages";
 import type { Locale } from "@/i18n/config";
 
 /**
@@ -120,11 +120,30 @@ export function stageDigests(locale: Locale, now = Date.now()): StageDigest[] {
         : `From ${list}${rest > 0 ? ` and ${rest} other employer${rest === 1 ? "" : "s"}` : ""}. ` +
           "Each link was fetched and answered before it was listed.";
 
+    /*
+     * `?added=recent` is the board's "last 7 days" filter, and this window is
+     * three weeks, so it was the right link for exactly one of the three
+     * digests in the feed. A subscriber opening last fortnight's "3 new AI and
+     * cyber internships, verified" landed on a page headed with a different
+     * count, containing none of the three. The feed's whole claim is that each
+     * of those listings was fetched and answered; sending the reader somewhere
+     * they cannot see them undoes it.
+     *
+     * The board has no per-week filter, so an older week links to the whole
+     * board, where the listings are and where the named employers can be found.
+     * It stops promising a filtered view that does not exist.
+     */
+    // The board's own predicate, not a second copy of the arithmetic. Asking
+    // "would that filter actually show one of these rows" is the question, and
+    // a near-copy that rounded a boundary differently would send the reader to
+    // a filter that excludes the very week the item announces.
+    const withinRecentFilter = rows.some((row) => isRecentlyAdded(row, new Date(now)));
+
     digests.push({
       weekKey,
-      link: `/${locale}/stages?added=recent`,
-      // The link is the same every week, and the feed uses the link as the guid,
-      // so two digests would collide and a reader would see one. An explicit
+      link: withinRecentFilter ? `/${locale}/stages?added=recent` : `/${locale}/stages`,
+      // Two weeks can share a link, and the feed uses the link as the guid, so
+      // the digests would collide and a reader would see one. An explicit
       // non-permalink guid is what RSS provides for exactly this.
       guid: `stages-digest-${locale}-${weekKey}`,
       title,

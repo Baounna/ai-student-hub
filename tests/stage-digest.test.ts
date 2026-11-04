@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { isoWeekKey, stageDigests } from "@/lib/stage-digest";
+import { RECENTLY_ADDED_DAYS } from "@/content/stages";
 import { buildFeed } from "@/lib/feed";
 import { locales } from "@/i18n/config";
 
@@ -45,14 +46,40 @@ describe("stage digests", () => {
   });
 
   it("gives each week its own non-permalink guid", () => {
-    // Every digest points at the same /stages?added=recent, and the feed uses
-    // the link as the guid, so without this two weeks collide and a reader sees
-    // one of them.
+    // Weeks share a link -- every week older than the board's "last 7 days"
+    // filter points at the whole board -- and the feed uses the link as the
+    // guid, so without an explicit one two weeks collide and a reader sees one.
     const digests = stageDigests("en", ANCHOR);
     const guids = new Set(digests.map((d) => d.guid));
     expect(guids.size).toBe(digests.length);
     const links = new Set(digests.map((d) => d.link));
-    expect(links.size).toBe(1);
+    expect(links.size).toBeLessThan(digests.length);
+  });
+
+  it("only sends a reader to the recent filter when it would show that week", () => {
+    /*
+     * The link was `?added=recent` for every week. That filter is the board's
+     * last SEVEN days and this window is three WEEKS, so it was right for one
+     * digest of the three: a subscriber opening last fortnight's "3 new AI and
+     * cyber internships, verified" landed on a page headed with a different
+     * count and containing none of the three.
+     *
+     * A feed whose every title ends in "verified" cannot send the reader
+     * somewhere the listings are not.
+     */
+    for (const locale of locales) {
+      const digests = stageDigests(locale, ANCHOR);
+      const filtered = digests.filter((d) => d.link.includes("added=recent"));
+      expect(filtered.length).toBeLessThanOrEqual(1);
+
+      for (const digest of digests) {
+        const days = (ANCHOR - Date.parse(`${digest.publishedAt}T12:00:00Z`)) / 86_400_000;
+        const couldBeShown = days >= 0 && days <= RECENTLY_ADDED_DAYS;
+        expect(digest.link.includes("added=recent"), `${digest.weekKey} ${digest.link}`).toBe(couldBeShown);
+        // Whichever it is, it has to be a real board URL for this locale.
+        expect(digest.link.startsWith(`/${locale}/stages`)).toBe(true);
+      }
+    }
   });
 
   it("does not reach back to the week the board was seeded", () => {
