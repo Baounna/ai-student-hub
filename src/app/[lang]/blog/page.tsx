@@ -12,9 +12,11 @@ import {
   getLocalizedPosts,
   getPostTrack,
   getTrackCounts,
+  getTrackLabel,
   slugify
 } from "@/content/posts";
 import { isLocale, type Locale } from "@/i18n/config";
+import { withColon } from "@/i18n/typography";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { citedReferenceCount, referenceCountLabel } from "@/lib/citations";
@@ -181,17 +183,17 @@ export default async function LocalizedBlogPage(
     },
     {
       key: "ai",
-      label: locale === "fr" ? "IA" : "AI",
+      label: getTrackLabel("ai", locale),
       count: trackCounts.ai
     },
     {
       key: "cs",
-      label: locale === "fr" ? "Informatique" : "Computer Science",
+      label: getTrackLabel("cs", locale),
       count: trackCounts.cs
     },
     {
       key: "career",
-      label: locale === "fr" ? "Carrière" : "Career",
+      label: getTrackLabel("career", locale),
       count: trackCounts.career
     }
   ];
@@ -272,8 +274,9 @@ export default async function LocalizedBlogPage(
                 {locale === "fr" ? "Répartition IA + cybersécurité" : "AI + Cybersecurity split"}
               </p>
               <p className="mt-1 text-xs text-[color:var(--muted)]">
-                AI: {trackCounts.ai} • {locale === "fr" ? "Informatique" : "Computer Science"}: {trackCounts.cs} •{" "}
-                {locale === "fr" ? "Carrière" : "Career"}: {trackCounts.career}
+                {withColon(getTrackLabel("ai", locale), locale)} {trackCounts.ai} •{" "}
+                {withColon(getTrackLabel("cs", locale), locale)} {trackCounts.cs} •{" "}
+                {withColon(getTrackLabel("career", locale), locale)} {trackCounts.career}
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 {trackFilterOptions.map((option) => {

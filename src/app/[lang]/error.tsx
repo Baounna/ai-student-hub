@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { localeFromPathname, type Locale } from "@/i18n/config";
+import { withColon } from "@/i18n/typography";
 import { sectionRecoveryLink } from "@/lib/recovery-link";
 
 /**
@@ -103,7 +104,7 @@ export default function LocalizedError({
             line. Next only sets it for server-side failures, hence the guard. */}
         {error.digest ? (
           <p className="mt-6 text-xs text-[color:var(--muted)]">
-            {copy.reference}: {error.digest}
+            {withColon(copy.reference, locale)} {error.digest}
           </p>
         ) : null}
       </div>

@@ -6,8 +6,10 @@ import Link from "next/link";
 import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { getAutoNews, getAutoNewsUpdatedAt } from "@/content/auto-news";
+import { getTrackLabel } from "@/content/posts";
 import { getLocalizedNews, getNewsTopics, getNewsTrack, getNewsTrackCounts, slugifyTopic, topicLabel, type NewsTrack } from "@/content/news";
 import { isLocale, type Locale } from "@/i18n/config";
+import { withColon } from "@/i18n/typography";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getLiveAiCsUpdates } from "@/lib/live-news";
@@ -89,7 +91,8 @@ function WebUpdatesBody({
     <>
       {updatedAt ? (
         <p className="mt-1 text-xs text-[color:var(--muted)]">
-          {locale === "fr" ? "Dernière synchronisation" : "Last sync"}: {formatPublishedDate(updatedAt, locale)}
+          {withColon(locale === "fr" ? "Dernière synchronisation" : "Last sync", locale)}{" "}
+          {formatPublishedDate(updatedAt, locale)}
         </p>
       ) : null}
 
@@ -265,9 +268,12 @@ export default async function LocalizedNewsPage(
 
   const trackOptions: Array<{ key: NewsTrack | "all"; label: string; count: number }> = [
     { key: "all", label: locale === "fr" ? "Tout IA + CS" : "All AI + Cybersecurity", count: allBriefs.length },
-    { key: "ai", label: locale === "fr" ? "IA" : "AI", count: trackCounts.ai },
-    { key: "cs", label: locale === "fr" ? "Informatique" : "Computer Science", count: trackCounts.cs },
-    { key: "career", label: locale === "fr" ? "Carrière" : "Career", count: trackCounts.career }
+    // getTrackLabel, not three locale ternaries. NewsTrack and EditorialTrack
+    // are the same three tracks under two names, and the blog page's copies of
+    // these strings had already drifted out of step with its own filter chips.
+    { key: "ai", label: getTrackLabel("ai", locale), count: trackCounts.ai },
+    { key: "cs", label: getTrackLabel("cs", locale), count: trackCounts.cs },
+    { key: "career", label: getTrackLabel("career", locale), count: trackCounts.career }
   ];
 
   const buildNewsFilterHref = (nextTrack: NewsTrack | "all", nextTopic = topicFilter) => {
@@ -497,7 +503,8 @@ export default async function LocalizedNewsPage(
               </h2>
               <p className="card-copy mt-3 text-[color:var(--text)]">{brief.summary}</p>
               <p className="mt-3 text-sm text-[color:var(--muted)]">
-                <span className="font-semibold text-[color:var(--text-strong)]">{dict.news.impact}:</span> {brief.studentImpact}
+                <span className="font-semibold text-[color:var(--text-strong)]">{withColon(dict.news.impact, locale)}</span>{" "}
+                {brief.studentImpact}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {brief.tags.slice(0, 3).map((tag) => (

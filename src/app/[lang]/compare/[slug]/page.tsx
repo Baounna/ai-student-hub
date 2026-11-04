@@ -12,6 +12,7 @@ import { StickyToolsCta } from "@/components/sticky-tools-cta";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { comparisons, getLocalizedComparison } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
+import { withColon } from "@/i18n/typography";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { isSafeHttpUrl } from "@/lib/url";
@@ -217,7 +218,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
           <section id="verdict" className="anchor-offset blog-aside-card rounded-2xl p-6">
             <p className="do-kicker">{fr ? "Verdict rapide" : "Quick verdict"}</p>
             <h2 className="font-display section-title mt-2 font-semibold text-[color:var(--text-strong)]">
-              {fr ? "Option recommandée" : "Recommended default"}: {recommendedLabel}
+              {withColon(fr ? "Option recommandée" : "Recommended default", locale)} {recommendedLabel}
             </h2>
             {/* "ranks first" described a computation that does not exist: the
                 recommendation is safeTools[0], the first entry of a hand-written

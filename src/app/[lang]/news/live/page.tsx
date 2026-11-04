@@ -7,6 +7,7 @@ import { EditorialTrust } from "@/components/editorial-trust";
 import { Newsletter } from "@/components/newsletter";
 import { getAutoNews } from "@/content/auto-news";
 import { isLocale, type Locale } from "@/i18n/config";
+import { withColon } from "@/i18n/typography";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl } from "@/lib/seo";
 import { getLiveAiCsUpdates, getLiveNewsSources, type LiveNewsItem } from "@/lib/live-news";
@@ -100,7 +101,7 @@ function UpdateStream({ updates, locale }: { updates: LiveNewsItem[]; locale: Lo
             </a>
           </h2>
           <p className="mt-3 text-sm text-[color:var(--muted)]">
-            {fr ? "Source officielle" : "Official source"}:{" "}
+            {withColon(fr ? "Source officielle" : "Official source", locale)}{" "}
             {/* The full href was printed as visible text, so a card could
                 carry 90 characters of URL and overflow on a phone. The
                 host is what tells a reader where they are going. */}

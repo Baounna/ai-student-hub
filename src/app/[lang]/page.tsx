@@ -24,6 +24,7 @@ import {
   slugify
 } from "@/content/posts";
 import { isLocale, type Locale } from "@/i18n/config";
+import { withColon } from "@/i18n/typography";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
@@ -651,7 +652,7 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
               </div>
               <div className="mt-4 border-t border-[color:var(--wiki-panel-border)] pt-3 text-sm">
                 <span className="font-semibold text-[color:var(--text-strong)]">
-                  {locale === "fr" ? "Récemment en vedette:" : "Recently featured:"}
+                  {withColon(locale === "fr" ? "Récemment en vedette" : "Recently featured", locale)}
                 </span>{" "}
                 <span className="text-[color:var(--text)]">
                   {sidePosts.map((post, idx) => (
@@ -684,7 +685,9 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
               ))}
             </ul>
             <div className="mt-4 border-t border-[color:var(--wiki-panel-border)] pt-3 text-sm">
-              <span className="font-semibold text-[color:var(--text-strong)]">{locale === "fr" ? "Voir aussi:" : "See also:"}</span>{" "}
+              <span className="font-semibold text-[color:var(--text-strong)]">
+                {withColon(locale === "fr" ? "Voir aussi" : "See also", locale)}
+              </span>{" "}
               <Link href={`/${locale}/news`} className="do-link inline-block py-1.5">
                 {locale === "fr" ? "Toutes les actualités" : "All news"}
               </Link>{" "}

@@ -6,6 +6,7 @@ import { headers } from "next/headers";
 import { Newsletter } from "@/components/newsletter";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { isLocale, type Locale } from "@/i18n/config";
+import { withColon } from "@/i18n/typography";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { jsonLd } from "@/lib/json-ld";
 import { ogImageUrl } from "@/lib/seo";
@@ -334,7 +335,7 @@ export default async function StagesPage(props: {
         <h1 className="font-display hero-title font-bold text-[color:var(--text-strong)]">{copy.title}</h1>
         <p className="mt-3 max-w-2xl text-[color:var(--text)]">{copy.subtitle}</p>
         <p className="provenance mt-4">
-          {copy.updated}: {copy.daysAgo(ageDays)}
+          {withColon(copy.updated, locale)} {copy.daysAgo(ageDays)}
           {stages.length > 0 ? ` · ${copy.openCount(openCount, stages.length)}` : ""}
         </p>
       </header>

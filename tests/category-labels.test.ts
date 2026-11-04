@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { categoryName } from "@/lib/categories";
-import { getAllCategories } from "@/content/posts";
+import { getAllCategories, getTrackLabel } from "@/content/posts";
 
 /**
  * The French names for the eight categories have existed since the typeahead
@@ -46,6 +46,47 @@ describe("category labels", () => {
         if (!/\{\s*(?:post|featuredPost|candidate|brief)\.category\s*\}/.test(line)) return;
         if (line.includes("categoryName")) return;
         offenders.push(`${file}:${index + 1}`);
+      });
+    }
+
+    expect(offenders).toEqual([]);
+  });
+});
+
+/**
+ * The same bug one level up, in the three editorial tracks.
+ *
+ * getTrackLabel existed and was called from nowhere, while /blog wrote the
+ * labels out by hand twice -- once for the filter chips, once for the split
+ * line directly above them. The two hand-written copies disagreed: the line
+ * said "AI: 6" and the chip below it said "IA ( 6 )", on the same French
+ * screen, about the same six posts, under a heading reading "Répartition IA".
+ */
+describe("track labels", () => {
+  const tracks = ["ai", "cs", "career"] as const;
+
+  it("has a distinct French label for every track", () => {
+    for (const track of tracks) {
+      const fr = getTrackLabel(track, "fr");
+      const en = getTrackLabel(track, "en");
+      expect(fr, track).toBeTruthy();
+      expect(en, track).toBeTruthy();
+      expect(fr, track).not.toBe(en);
+    }
+  });
+
+  it("is never written out by hand in a rendered page", () => {
+    const labels = tracks.flatMap((track) => [getTrackLabel(track, "fr"), getTrackLabel(track, "en")]);
+    const offenders: string[] = [];
+
+    for (const file of tsxFiles("src/app")) {
+      const source = readFileSync(file, "utf8");
+      source.split("\n").forEach((line, index) => {
+        // The shape of the bug: a locale ternary choosing between the two
+        // labels this helper already returns.
+        if (!/locale === "fr" \?/.test(line)) return;
+        if (!labels.some((label) => line.includes(`"${label}"`))) return;
+        offenders.push(`${file}:${index + 1}  ${line.trim().slice(0, 70)}`);
       });
     }
 

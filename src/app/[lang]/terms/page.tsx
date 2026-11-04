@@ -3,6 +3,7 @@ import { ogImageUrl } from "@/lib/seo";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
+import { withColon } from "@/i18n/typography";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
@@ -90,7 +91,7 @@ export default async function TermsPage(props: { params: Promise<{ lang: string 
             {fr ? "Entité légale" : "Legal entity"}
           </h2>
           <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
-            {fr ? `Opérateur: ${siteConfig.termsLegalEntity}. Contact: ` : `Operator: ${siteConfig.termsLegalEntity}. Contact: `}
+            {`${withColon(fr ? "Opérateur" : "Operator", locale)} ${siteConfig.termsLegalEntity}. ${withColon("Contact", locale)} `}
             <a href={`mailto:${siteConfig.contactEmail}`} className="do-link">
               {siteConfig.contactEmail}
             </a>

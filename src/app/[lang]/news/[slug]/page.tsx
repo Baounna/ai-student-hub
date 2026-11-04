@@ -14,6 +14,7 @@ import { ReadingProgress } from "@/components/reading-progress";
 import { getLocalizedNews, getNewsBySlug, getNewsTrack, topicLabel } from "@/content/news";
 import { getLocalizedPost, slugify } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
+import { withColon } from "@/i18n/typography";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { briefReferences } from "@/lib/news-references";
@@ -249,9 +250,7 @@ export default async function LocalizedNewsArticlePage(props: { params: Promise<
             <p className="do-kicker">{locale === "fr" ? "Brief en bref" : "Brief at a glance"}</p>
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
-                {locale === "fr"
-                  ? `1. Thème: ${topicLabel(brief.topic, locale)}`
-                  : `1. Topic: ${topicLabel(brief.topic, locale)}`}
+                {`1. ${withColon(locale === "fr" ? "Thème" : "Topic", locale)} ${topicLabel(brief.topic, locale)}`}
               </li>
               <li>
                 {locale === "fr"

@@ -12,6 +12,7 @@ import { ToolLogo } from "@/components/ui/tool-logo";
 import { getAutoTools, getAutoToolsUpdatedAt } from "@/content/auto-tools";
 import { getLocalizedComparisons, recommendedTools, studentStudyTools } from "@/content/posts";
 import { isLocale, locales, type Locale } from "@/i18n/config";
+import { withColon } from "@/i18n/typography";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
 import { sanitizeSearchQuery } from "@/lib/input";
 import { matchesAllTerms, searchTerms } from "@/lib/search";
@@ -477,7 +478,7 @@ export default async function LocalizedCompareIndexPage(
               </div>
               {autoToolsUpdatedAt ? (
                 <p className="text-xs text-[color:var(--muted)]">
-                  {fr ? "Dernière synchro" : "Last sync"}: {formatPublishedDate(autoToolsUpdatedAt, locale)}
+                  {withColon(fr ? "Dernière synchro" : "Last sync", locale)} {formatPublishedDate(autoToolsUpdatedAt, locale)}
                 </p>
               ) : null}
             </div>
@@ -504,7 +505,7 @@ export default async function LocalizedCompareIndexPage(
                     <p className="mt-2 text-sm text-[color:var(--text)]">{item.summary}</p>
                     <div className="mt-3 flex flex-wrap items-center gap-3 text-xs">
                       <span className="text-[color:var(--muted)]">
-                        {fr ? "Source" : "Source"}: {item.source}
+                        {withColon("Source", locale)} {item.source}
                       </span>
                       <a
                         href={item.href}

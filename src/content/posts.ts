@@ -2039,10 +2039,24 @@ export function getPostsByTrack(track: EditorialTrack, locale: Locale) {
   return getLocalizedPosts(locale).filter((post) => getPostTrack(post) === track);
 }
 
+/**
+ * What a reader is shown each track is called.
+ *
+ * This existed and was called from nowhere, while the blog page wrote the three
+ * labels out by hand twice -- once for the filter chips and once for the split
+ * line above them. The hand-written pair disagreed: the chips said "IA" and the
+ * line said "AI", in adjacent elements on the same French screen, for the same
+ * six posts. The FR half of a bilingual publication cannot call one thing two
+ * names a centimetre apart.
+ *
+ * So the labels live here and the page asks. "CS" was this function's old
+ * answer for the cs track and was never rendered anywhere; the strings below
+ * are the ones the page has always shown.
+ */
 export function getTrackLabel(track: EditorialTrack, locale: Locale) {
   if (track === "ai") return locale === "fr" ? "IA" : "AI";
   if (track === "career") return locale === "fr" ? "Carrière" : "Career";
-  return "CS";
+  return locale === "fr" ? "Informatique" : "Computer Science";
 }
 
 export function getCategoriesByTrack(track: EditorialTrack) {
