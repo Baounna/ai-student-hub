@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { affiliateDisclosureVerdict } from "./lib/affiliate-disclosure.mjs";
 
 const cwd = process.cwd();
 const envFiles = [".env.local", ".env"];
@@ -287,11 +288,10 @@ const legalContact = (env.PRIVACY_CONTACT_EMAIL || "").trim();
 if (legalContact && !isEmail(legalContact)) {
   error("PRIVACY_CONTACT_EMAIL is invalid.");
 }
-if (!((env.AFFILIATE_DISCLOSURE_TEXT_EN || "").trim() && (env.AFFILIATE_DISCLOSURE_TEXT_FR || "").trim())) {
-  warn("Affiliate disclosure texts (EN/FR) are not fully set.");
-} else {
-  ok("Affiliate disclosure texts set.");
-}
+const disclosure = affiliateDisclosureVerdict(env);
+if (disclosure.level === "error") error(disclosure.message);
+else if (disclosure.level === "warn") warn(disclosure.message);
+else ok(disclosure.message);
 
 if (boolish(env.TRACKING_DEBUG) || boolish(env.NEXT_PUBLIC_TRACKING_DEBUG)) {
   warn("Tracking debug is enabled. Disable for production.");
