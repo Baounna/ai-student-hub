@@ -783,7 +783,7 @@ pull request via `.github/workflows/ci.yml`.
 ### Unit tests
 
 - Runner: [Vitest](https://vitest.dev/) (`npm run test`, or `npm run test:watch`).
-- Location: `tests/*.test.ts`, with the `@/` alias resolved in `vitest.config.ts`.
+- Location: `tests/*.test.ts`, with the `@/` alias resolved in `vitest.config.mts`.
 - Coverage focuses on the security-sensitive lib layer: URL safety (`src/lib/url.ts`),
   the SSRF webhook guard (`src/lib/security.ts`), client-IP parsing (`src/lib/request.ts`),
   the tracking allowlist/sanitizer (`src/lib/tracking-schema.ts`), and OAuth error copy.

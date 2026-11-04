@@ -44,7 +44,10 @@ describe("script import safety", () => {
 
   it.each(GUARDED)("%s imports without doing any work", async (file) => {
     const started = Date.now();
-    const loaded = await import(`../${file}`);
+    // @vite-ignore: the point of this test is that the real file is loaded.
+    // Letting Vite rewrite the specifier makes it bundle every script in the
+    // directory instead, so the import is left to the runtime on purpose.
+    const loaded = await import(/* @vite-ignore */ `../${file}`);
     const elapsed = Date.now() - started;
     // Generous: an unguarded watchdog took 27 seconds, an unguarded finder 36.
     expect(elapsed).toBeLessThan(5_000);

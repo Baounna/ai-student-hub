@@ -42,7 +42,7 @@ let realFailures = 0;
 for (const date of run) {
   const result = spawnSync(
     "npx",
-    ["vitest", "run", "--config", "vitest.clock.config.ts"],
+    ["vitest", "run", "--config", "vitest.clock.config.mts"],
     { env: { ...process.env, FAKE_TODAY: date }, encoding: "utf8", maxBuffer: 32 * 1024 * 1024 }
   );
   const out = `${result.stdout ?? ""}${result.stderr ?? ""}`;
