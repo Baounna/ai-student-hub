@@ -456,7 +456,7 @@ const fallbackStudentStudyTools: StudentStudyTool[] = [
       fr: "Planification hebdo des objectifs d'étude et exécution projet."
     },
     keywords: ["notes", "planning", "workspace", "tasks"],
-    href: "https://www.notion.so/",
+    href: "https://www.notion.com/",
     source: "Notion"
   },
   {

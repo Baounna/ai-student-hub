@@ -542,7 +542,7 @@ export const csExpansionPosts: BlogPost[] = [
       {
         source: "IETF",
         label: { en: "HTTP Semantics (RFC 9110)", fr: "HTTP Semantics (RFC 9110)" },
-        href: "https://www.rfc-editor.org/rfc/rfc9110"
+        href: "https://www.rfc-editor.org/rfc/rfc9110.html"
       },
       {
         source: "Cloudflare",
@@ -821,7 +821,7 @@ export const csExpansionPosts: BlogPost[] = [
       {
         source: "OWASP",
         label: { en: "OWASP ASVS", fr: "OWASP ASVS" },
-        href: "https://owasp.org/ASVS/"
+        href: "https://asvs.owasp.org/"
       },
       {
         source: "nginx",
@@ -1108,7 +1108,7 @@ export const csExpansionPosts: BlogPost[] = [
       {
         source: "RFC Editor",
         label: { en: "RFC 9293 (TCP)", fr: "RFC 9293 (TCP)" },
-        href: "https://www.rfc-editor.org/rfc/rfc9293"
+        href: "https://www.rfc-editor.org/rfc/rfc9293.html"
       }
     ],
     locales: {

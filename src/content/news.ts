@@ -199,7 +199,7 @@ export const newsBriefs: NewsBrief[] = [
     tags: ["multimodal", "vision", "research"],
     source: {
       name: "Google DeepMind blog",
-      href: "https://deepmind.google/discover/blog/",
+      href: "https://deepmind.google/blog/",
       direct: false
     },
     relatedPostSlugs: ["ai-portfolio-project-recruiters-notice"],
