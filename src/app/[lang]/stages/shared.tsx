@@ -33,8 +33,9 @@ const COPY = {
     closed: "Closed",
     deadline: "Apply by",
     // There was a "rolling" line here -- "Open until filled - no closing date
-    // given", 40 characters -- and 92 of the 94 rows printed it, because only
-    // two listings in the data carry a deadline at all. So the single longest
+    // given", 40 characters -- and 92 of the 94 rows printed it, because almost
+    // nothing on this board carries a deadline at all: two of 94 then, one of
+    // 86 now. So the single longest
     // piece of text in the metadata block was the same sentence repeated 92
     // times, saying nothing that distinguished one row from the next, and on a
     // 332px screen it cost a line of its own on nearly every row. The fact is

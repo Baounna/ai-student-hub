@@ -330,6 +330,34 @@ html[data-content-width="wide"] {
   }
 
   /*
+   * A disabled primary button has to look disabled.
+   *
+   * The newsletter form disables its submit until the bot challenge returns a
+   * token, and with Turnstile configured that is the state the footer form is
+   * in on EVERY page at load. The disabled appearance lived in Tailwind
+   * `disabled:` utilities on the full-width variant only, so the compact one --
+   * the footer, on every page -- kept the gradient, the hover lift and the
+   * press, and did nothing when clicked. The caption underneath explains why,
+   * which is no help to a reader who has no reason to read it: the button
+   * looked live.
+   *
+   * It belongs here rather than in a class list, so it covers the next use of
+   * .btn-primary without anyone having to remember.
+   */
+  .btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+    filter: saturate(0.55);
+  }
+
+  .btn-primary:disabled:hover,
+  .btn-primary:disabled:active {
+    transform: none;
+    background: linear-gradient(135deg, var(--primary) 0%, color-mix(in srgb, var(--primary), #99bcff 22%) 100%);
+  }
+
+  /*
    * The outlined button, drawn with a line you can actually see.
    *
    * The fill resolves to pure #ffffff in light -- --surface is already white,

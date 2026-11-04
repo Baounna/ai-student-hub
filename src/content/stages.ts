@@ -203,13 +203,18 @@ export function isClosed(stage: Stage, now = Date.now()) {
 /**
  * One employer at a time, so no single one owns the first screen.
  *
- * Only four of the eighty-two listings carry a deadline, so the other
- * seventy-eight fell through every other rule to the alphabetical tiebreak and
- * came out grouped by employer: four consecutive Armee de l'Air rows inside the
- * first six, Capgemini's ten together further down. A reader scanning for a
- * city or a kind of role saw one company repeated instead of the range the list
- * actually covers, and the Moroccan listings -- nine of eighty-two -- sat
- * wherever their employer's initial put them.
+ * When this was written the board held eighty-two listings and four of them
+ * carried a deadline, so the other seventy-eight fell through every other rule
+ * to the alphabetical tiebreak and came out grouped by employer: four
+ * consecutive Armee de l'Air rows inside the first six, Capgemini's ten
+ * together further down. A reader scanning for a city or a kind of role saw one
+ * company repeated instead of the range the list actually covers, and the
+ * Moroccan listings -- nine of eighty-two -- sat wherever their employer's
+ * initial put them.
+ *
+ * The figures are a snapshot of the day, kept because they are what the
+ * decision was made on. They move: eighty-six listings and one deadline today,
+ * which only makes the tiebreak matter more.
  *
  * Round-robin instead: one role per employer, then the next from each, in a
  * fixed order. It is deterministic, so the page does not reshuffle between

@@ -117,7 +117,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
    * the button opens. It just starts when there is a reader behind it.
    */
   const [armed, setArmed] = useState(false);
-  const [deliveryStatus, setDeliveryStatus] = useState<"sent" | "queued" | "failed" | "unavailable" | null>(null);
+  const [deliveryStatus, setDeliveryStatus] = useState<"sent" | "failed" | "unavailable" | null>(null);
   const sourceTag = normalizeSource(source, compact);
   const nextAction = getNextAction(sourceTag, locale);
 
@@ -170,7 +170,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       }
       const data = (await response.json()) as {
         forwarded?: boolean;
-        deliveryStatus?: "sent" | "queued" | "failed" | "unavailable";
+        deliveryStatus?: "sent" | "failed" | "unavailable";
       };
 
       // The HTTP request succeeding and the reader being subscribed are two
@@ -179,8 +179,13 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
       // so, but this event did not, so every rejected signup was counted as a
       // successful one. With an invalid API key that is 100% of them -- and the
       // one dashboard that would show the key was broken reported the opposite.
-      const delivery = data.deliveryStatus || (data.forwarded ? "sent" : "queued");
-      const subscribed = delivery === "sent" || delivery === "queued";
+      // The fallback is for a response without the field, and it now fails
+      // closed. It used to default to "queued", which this line counted as
+      // subscribed -- so a 200 with no deliveryStatus cleared the form and
+      // reported success for an address that had not reached anyone. That is
+      // the very thing the paragraph above is about.
+      const delivery = data.deliveryStatus || (data.forwarded ? "sent" : "failed");
+      const subscribed = delivery === "sent";
 
       setStatus("success");
       setDeliveryStatus(delivery);
@@ -209,9 +214,11 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
 
   const formClass = compact ? "mt-4 grid grid-cols-[1fr_auto] gap-2" : "mt-6 grid gap-3 sm:grid-cols-3";
   const emailClass = compact ? "field-input px-3" : "field-input";
-  const buttonClass = compact
-    ? "btn-primary h-11 px-4 py-0 text-sm"
-    : "btn-primary h-11 px-4 py-0 text-sm disabled:cursor-not-allowed disabled:opacity-70";
+  // One class for both variants. The disabled appearance is on .btn-primary
+  // itself in globals.css now; it used to be these two Tailwind utilities,
+  // present on the full-width form and missing from the compact one, which is
+  // the one in the footer of every page.
+  const buttonClass = "btn-primary h-11 px-4 py-0 text-sm";
   const statusColumnClass = compact ? "col-span-2" : "sm:col-span-3";
 
   const showWarning = status === "success" && (deliveryStatus === "unavailable" || deliveryStatus === "failed");
@@ -226,14 +233,17 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         ? "La newsletter n'est pas encore ouverte aux inscriptions. Votre adresse n'a pas été enregistrée."
         : "The newsletter is not open for signups yet, so your address was not saved.";
 
-  const successText =
-    deliveryStatus === "sent"
-      ? locale === "fr"
-        ? "Parfait. Vérifiez votre boîte mail."
-        : "Great. Check your inbox."
-      : locale === "fr"
-        ? "Inscription enregistrée. Vous recevrez les prochaines mises à jour."
-        : "Signup saved. You will receive upcoming updates.";
+  /*
+   * One success wording, because there is one success state.
+   *
+   * showSuccess is true only when the status is success and the warning is not
+   * showing, and the warning covers "unavailable" and "failed" -- so the only
+   * delivery status that reaches this is "sent". The second branch existed for
+   * "queued", which the route could never produce, and it said "Signup saved.
+   * You will receive upcoming updates." about an address that had been saved
+   * nowhere.
+   */
+  const successText = locale === "fr" ? "Parfait. Vérifiez votre boîte mail." : "Great. Check your inbox.";
 
   // vous, like every other French string in this form.
   const errorText =

@@ -78,3 +78,39 @@ describe("the newsletter form's bot challenge", () => {
     expect(localeLayout).not.toContain("challenges.cloudflare.com");
   });
 });
+
+/**
+ * A button the reader cannot use must not look usable.
+ *
+ * The submit is disabled until the challenge returns a token, which with
+ * Turnstile configured is the state the FOOTER form is in on load, on every
+ * page. The disabled appearance was two Tailwind utilities on the full-width
+ * variant's class list and absent from the compact one, so the footer button
+ * kept its gradient, its hover lift and its press animation and did nothing
+ * when clicked. The caption under it explains why, which does not help a
+ * reader with no reason to read it.
+ */
+describe("the disabled submit looks disabled", () => {
+  const CSS = readFileSync("src/app/globals.css", "utf8");
+  const FORM = readFileSync("src/components/newsletter-form.tsx", "utf8");
+
+  it("styles .btn-primary:disabled in the stylesheet, not in one class list", () => {
+    expect(CSS).toMatch(/\.btn-primary:disabled\s*\{/);
+    expect(CSS).toMatch(/\.btn-primary:disabled\s*\{[^}]*cursor:\s*not-allowed/);
+    expect(CSS).toMatch(/\.btn-primary:disabled\s*\{[^}]*opacity/);
+  });
+
+  it("stops the hover lift and the press on a disabled button", () => {
+    // Without these it still animates under the cursor, which is the part that
+    // reads as "this works".
+    expect(CSS).toMatch(/\.btn-primary:disabled:hover[\s\S]{0,120}transform:\s*none/);
+  });
+
+  it("gives the compact and full-width forms the same button appearance", () => {
+    // The bug was a `compact ? ... : ...` that differed only in the disabled
+    // utilities, so the variant used on every page was the unstyled one.
+    const match = FORM.match(/const buttonClass = ([^;]+);/);
+    expect(match).toBeTruthy();
+    expect(match![1]).not.toContain("compact");
+  });
+});

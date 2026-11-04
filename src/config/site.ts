@@ -23,12 +23,16 @@ function envValue(key: string) {
  *
  * "d IA", "j aide", "l article" are not spellings; they are what is left after
  * text has been run through something that stripped its accents and
- * apostrophes. FOUNDER_BIO_FR and LINKEDIN_SHORT_BIO_FR in .env.local are in
- * exactly that state, so /fr/about introduced the author with "Etudiant en
+ * apostrophes. FOUNDER_BIO_FR and LINKEDIN_SHORT_BIO_FR arrived in .env.local
+ * in exactly that state, so /fr/about introduced the author with "Etudiant en
  * derniere annee d IA, ... j aide les etudiants a transformer" -- under the
  * heading "Fondateur", on a site whose whole pitch is care. The built-in
- * fallbacks a few lines down are correct, and production happens not to set
+ * fallbacks a few lines down are correct, and production happened not to set
  * these, which is the only reason a reader never saw it.
+ *
+ * Both are commented out in .env.local now, with a note saying why, so the
+ * check below is guarding against the next paste rather than describing a
+ * value sitting there today.
  *
  * So an override that cannot be French is not used. Falling back to correct
  * copy is always better than publishing broken copy, and this is the kind of

@@ -138,11 +138,14 @@ export default async function LocalizedBlogPage(
   const highlightCategories = categories.slice(0, 5);
   const totalReadMinutes = allPosts.reduce((sum, post) => sum + (Number.parseInt(post.readTime, 10) || 0), 0);
   const averageReadMinutes = allPosts.length ? Math.max(1, Math.round(totalReadMinutes / allPosts.length)) : 0;
-  // 105 entries are listed across the 24 posts; 67 of them are pointed at by a
-  // paragraph. The card is headed "Evidence", and a source a paragraph checks
-  // itself against is evidence while one that is merely listed is a reading
-  // list, so the card shows the figure that matches its own heading. Every
-  // article still lists all of its own references.
+  // Both figures are computed, not written down: the counts drifted to 110
+  // listed and 72 cited while this comment still said 105 and 67, and the page
+  // was printing the right number beside the wrong one in the source.
+  //
+  // The card is headed "Evidence", and a source a paragraph checks itself
+  // against is evidence while one that is merely listed is a reading list, so
+  // the card shows the figure that matches its own heading. Every article still
+  // lists all of its own references.
   const totalCitedReferences = allPosts.reduce((sum, post) => sum + citedReferenceCount(post), 0);
   const sourceLabel = locale === "fr" ? "sources citées" : "cited sources";
   const streamHeading =

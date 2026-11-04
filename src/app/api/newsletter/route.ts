@@ -88,13 +88,22 @@ export async function POST(request: Request) {
     // the reader something untrue and loses them: report it as unavailable so
     // the form can say the list is not open yet.
     const providerUnavailable = Boolean(subscribeResult.skipped);
-    const deliveryStatus = emailForwarded
-      ? "sent"
-      : providerUnavailable
-        ? "unavailable"
-        : subscribeResult.ok
-          ? "queued"
-          : "failed";
+    /*
+     * Three states, not four. There was a "queued" between "unavailable" and
+     * "failed", reached when `subscribeResult.ok` was true -- but
+     * emailForwarded is `ok && !skipped` and providerUnavailable is `skipped`,
+     * so by the time control gets here `ok` cannot still be true. It was
+     * unreachable from the day those two lines were written, and the form
+     * carried reader-facing copy for it ("Signup saved. You will receive
+     * upcoming updates.") that could never render.
+     *
+     * It mattered more than dead code usually does: the form's fallback for a
+     * missing deliveryStatus defaulted to "queued", which it counted as
+     * subscribed. There is no queue anywhere in this path -- the address is
+     * either accepted by ConvertKit or gone -- so the one name in the set that
+     * implied a saved address was also the one an unknown outcome fell back to.
+     */
+    const deliveryStatus = emailForwarded ? "sent" : providerUnavailable ? "unavailable" : "failed";
 
     // stored must mean stored. It was `!providerUnavailable`, so a genuine
     // ConvertKit failure — an outage, a timeout, a rejected key — reported
