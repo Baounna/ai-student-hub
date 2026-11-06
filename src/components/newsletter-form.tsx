@@ -2,6 +2,7 @@
 
 import { useId, useState } from "react";
 import type { Locale } from "@/i18n/config";
+import { withColon } from "@/i18n/typography";
 import { trackEvent } from "@/lib/track";
 import { TurnstileWidget, botProtectionEnabled } from "@/components/ui/turnstile-widget";
 import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
@@ -404,7 +405,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         <div className={`status-warning ${statusColumnClass} rounded-lg px-3 py-2 text-xs`}>
           <p>{warningText}</p>
           <a href={nextAction.href} className="do-link mt-1 inline-block">
-            {locale === "fr" ? "En attendant:" : "In the meantime:"} {nextAction.label}
+            {withColon(locale === "fr" ? "En attendant" : "In the meantime", locale)} {nextAction.label}
           </a>
         </div>
       )}
@@ -412,7 +413,7 @@ export function NewsletterForm({ compact = false, locale, ctaLabel, source }: Ne
         <div className={`status-success ${statusColumnClass} rounded-lg px-3 py-2 text-xs`}>
           <p>{successText}</p>
           <a href={nextAction.href} className="do-link mt-1 inline-block">
-            {locale === "fr" ? "Prochaine action:" : "Next action:"} {nextAction.label}
+            {withColon(locale === "fr" ? "Prochaine action" : "Next action", locale)} {nextAction.label}
           </a>
         </div>
       )}

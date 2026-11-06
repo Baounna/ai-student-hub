@@ -5,6 +5,7 @@ import { normalizeLocale, normalizeSource, subscribeConvertKit } from "@/lib/con
 import { isTrustedMutationRequest } from "@/lib/security";
 import { isValidEmail, sanitizeEmailInput, sanitizeSourceInput, sanitizeTextInput } from "@/lib/input";
 import { verifyBotChallenge } from "@/lib/bot-protection";
+import { campusTag, recognizeCampus } from "@/lib/campus";
 
 type NewsletterPayload = {
   email?: string;
@@ -75,11 +76,30 @@ export async function POST(request: Request) {
     const locale = normalizeLocale(body.locale);
     const source = normalizeSource(sanitizeSourceInput(body.source, "newsletter"), "newsletter");
     const firstName = sanitizeTextInput(body.name, { maxLength: 80 });
+
+    /*
+     * The institution is derived here, from the address, and never read from
+     * the request body.
+     *
+     * A client-supplied campus tag would be a claim the server repeats without
+     * checking -- anyone could post `campus: "um6p"` with a Gmail address and
+     * land in that institution's segment. Deriving it from the email means the
+     * tag and the address can never disagree.
+     *
+     * It is derived for every signup, not only the ones from /campus. A student
+     * who subscribes from the footer with their university address is just as
+     * much a student of that faculty, and nothing is gained by making the form
+     * they happened to use decide whether they are recognised.
+     */
+    const campus = recognizeCampus(email);
+    const campusLabelTag = campusTag(campus);
+
     const subscribeResult = await subscribeConvertKit({
       email,
       firstName: firstName || undefined,
       locale,
-      source
+      source,
+      extraTags: campusLabelTag ? [campusLabelTag] : []
     });
     const emailForwarded = subscribeResult.ok && !subscribeResult.skipped;
 
@@ -129,6 +149,18 @@ export async function POST(request: Request) {
       stored,
       deliveryStatus,
       emailDeliveryFailed: !subscribeResult.ok,
+      /*
+       * Echoed back so the campus page can confirm what was actually recorded,
+       * rather than repeating what it guessed while the reader was typing. The
+       * page does its own recognition for instant feedback; this is the server
+       * saying which institution the subscription was really filed under, and
+       * it is the one of the two that is true.
+       *
+       * null when the address carries no institution claim, and null when the
+       * address was not stored at all -- there is no segment to report for a
+       * subscription that did not happen.
+       */
+      campus: emailForwarded && campus.kind !== "other" ? { slug: campus.slug, kind: campus.kind } : null,
       message: emailForwarded
         ? "Subscription confirmed. Check your inbox."
         : providerUnavailable

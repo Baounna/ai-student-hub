@@ -4,7 +4,14 @@ const TRACKED_EVENTS = [
   "newsletter_submit_error",
   "affiliate_click",
   "product_checkout_click",
-  "article_share"
+  "article_share",
+  // The campus signup is counted separately from the newsletter one. Both end
+  // at the same provider, but the question each answers is different: the
+  // newsletter number says how many readers want updates, and these say how
+  // many students reached the site through their own faculty -- which is the
+  // only number that can show whether the campus page does anything.
+  "campus_submit_success",
+  "campus_submit_error"
 ] as const;
 
 const trackedEventSet = new Set<string>(TRACKED_EVENTS);

@@ -47,6 +47,37 @@ const CODE_KEY_BEFORE_PUNCT = /[\w.]+[-_.][\w.]+\s*[:;]/;
  */
 const BARE_PUNCT = /\S[:;!?](\s|$)/;
 
+/**
+ * Turn `\u00e9` back into an accented letter before judging a string.
+ *
+ * Two separate failures came from not doing this, in opposite directions. The
+ * privacy page writes its French as escapes, so LOOKS_FRENCH saw no accent and
+ * skipped the whole paragraph -- the scan was blind to a page of French. And
+ * where that same page writes the space correctly as `\u00a0:`, the raw source
+ * reads `...e0:`, so BARE_PUNCT saw a bare colon and reported a line that was
+ * already right. A detector that is blind to real French and noisy about
+ * correct French is worse than none, because the noise is what gets it muted.
+ */
+function decodeEscapes(str: string): string {
+  return str.replace(/\\u([0-9a-fA-F]{4})/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
+}
+
+/**
+ * The French half of `locale === "fr" ? X : Y`.
+ *
+ * Plenty of real French labels carry no accented letter at all -- "En
+ * attendant:", "Prochaine action:" -- so LOOKS_FRENCH, which is the only thing
+ * telling French from English here, cannot see them. Both of those shipped in
+ * the footer of all 469 pages.
+ *
+ * The capture is positional, and that is the whole trick: in this ternary the
+ * string immediately after the condition is the French one and the string after
+ * the colon is the English one. Treating every literal on the line as French
+ * would flag "In the meantime:", which is correct English and must keep its
+ * bare colon.
+ */
+const FRENCH_BRANCH = /locale === "fr"\s*\?\s*"((?:[^"\\]|\\.)*)"/g;
+
 function sourceFiles(dir: string): string[] {
   const out: string[] = [];
   for (const entry of readdirSync(dir)) {
@@ -109,7 +140,17 @@ for (const file of ROOTS.flatMap(sourceFiles)) {
     const literals = [
       ...[...line.matchAll(/"((?:[^"\\]|\\.){10,400})"/g)].map((m) => m[1]),
       ...[...line.matchAll(/`([^`]{10,400})`/g)].map((m) => m[1].replace(/\$\{[^}]*\}/g, "X"))
-    ];
+    ].map(decodeEscapes);
+
+    /**
+     * Strings known to be French by position rather than by accent, so the
+     * accent test is skipped for them. The length floor is 3 rather than the
+     * 10 above because these are labels, not sentences, and "Thème:" is six
+     * characters.
+     */
+    const frenchByPosition = [...line.matchAll(FRENCH_BRANCH)]
+      .map((m) => decodeEscapes(m[1]))
+      .filter((str) => str.length >= 3);
 
     for (const str of literals) {
       if (!LOOKS_FRENCH.test(str)) continue;
@@ -118,6 +159,13 @@ for (const file of ROOTS.flatMap(sourceFiles)) {
       if (CODE_KEY_BEFORE_PUNCT.test(str)) continue;
       const hit = str.match(/.{0,24}\S[:;!?](\s|$).{0,10}/)?.[0] ?? str.slice(0, 40);
       offenders.push(`${file}:${index + 1} …${hit}…`);
+    }
+
+    for (const str of frenchByPosition) {
+      if (LOOKS_LIKE_CODE.test(str)) continue;
+      if (!BARE_PUNCT.test(str)) continue;
+      if (CODE_KEY_BEFORE_PUNCT.test(str)) continue;
+      offenders.push(`${file}:${index + 1} (French branch, no accent to go by) ${str.slice(0, 48)}`);
     }
 
     if (!JSX_TEXT_PUNCT.test(line)) return;
@@ -184,6 +232,47 @@ describe("French typography", () => {
     it("leaves a type annotation alone", () => {
       expect(jsxOffends("function UpdateStream({ updates, locale }: { updates: Item[]; locale: Locale }) {")).toBe(false);
       expect(jsxOffends('export function BackToTop({ locale = "en" }: { locale?: Locale }) {')).toBe(false);
+    });
+
+    /**
+     * The French half of a ternary, which carries no accent in plenty of real
+     * labels. Held against the real pattern, not a copy of it.
+     */
+    const frenchBranchOffends = (line: string) =>
+      [...line.matchAll(FRENCH_BRANCH)]
+        .map((m) => decodeEscapes(m[1]))
+        .filter((str) => str.length >= 3)
+        .some((str) => !LOOKS_LIKE_CODE.test(str) && BARE_PUNCT.test(str) && !CODE_KEY_BEFORE_PUNCT.test(str));
+
+    it("catches an accent-free French label in a ternary", () => {
+      // Both of these shipped in the footer of all 469 pages: no accented
+      // letter anywhere, so the accent test could never reach them.
+      expect(frenchBranchOffends('{locale === "fr" ? "En attendant:" : "In the meantime:"}')).toBe(true);
+      expect(frenchBranchOffends('{locale === "fr" ? "Prochaine action:" : "Next action:"}')).toBe(true);
+      expect(frenchBranchOffends('{locale === "fr" ? "En attendant\u00a0:" : "In the meantime:"}')).toBe(false);
+    });
+
+    it("judges the French half and not the English half", () => {
+      // "In the meantime:" is correct English and must keep its bare colon.
+      // Treating every string on the line as French would report it, and a
+      // detector that reports correct text is one that gets switched off.
+      expect(frenchBranchOffends('{locale === "fr" ? "En attendant\u00a0:" : "Next action:"}')).toBe(false);
+    });
+
+    it("reads an escaped accent as an accent", () => {
+      // The privacy page writes its French as escapes. Without decoding, the
+      // accent test saw no accent and skipped a whole page of French.
+      expect(LOOKS_FRENCH.test("donn\\u00e9es")).toBe(false);
+      expect(LOOKS_FRENCH.test(decodeEscapes("donn\\u00e9es"))).toBe(true);
+    });
+
+    it("does not report a correctly escaped non-breaking space", () => {
+      // Raw source reads "...visite\u00a0:", whose last two characters before
+      // the colon are "0" and ":" -- a bare colon, as far as a scan of the
+      // undecoded text can tell. This line is already correct.
+      const correct = "Les services dont le site d\\u00e9pend voient votre visite\\u00a0: voir ci-dessous.";
+      expect(BARE_PUNCT.test(correct)).toBe(true);
+      expect(BARE_PUNCT.test(decodeEscapes(correct))).toBe(false);
     });
 
     it("leaves English prose and quoted config keys alone", () => {

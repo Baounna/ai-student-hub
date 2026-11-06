@@ -413,6 +413,14 @@ export default async function LocalizedLayout(props: { children: React.ReactNode
                 </TrackableAnchor>
               </li>
               <li>
+                {/* Named for the reader it is for, not for the mechanism. "Campus
+                    access" means nothing to a student who has not seen the page;
+                    "for your faculty" tells them in three words whether to click. */}
+                <Link href={`/${locale}/campus`} className="transition hover:text-[color:var(--text-strong)]">
+                  {locale === "fr" ? "Pour votre faculté" : "For your faculty"}
+                </Link>
+              </li>
+              <li>
                 <a href={feedPath[locale]} className="transition hover:text-[color:var(--text-strong)]">
                   RSS
                 </a>

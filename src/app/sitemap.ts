@@ -199,6 +199,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       // the affiliate disclosure in particular is the page a reader looks for to
       // decide whether to trust a recommendation -- it should be findable.
       // Low priority because they are not what anyone arrives for.
+      /*
+       * The campus page is listed high because it is the one page on this site
+       * written for a specific person who can be reached: a student at a named
+       * Moroccan institution. Everything else here competes for a search term;
+       * this one is handed out on a poster and in a class group, so the figures
+       * on it are rebuilt on every request and its lastModified follows the
+       * board rather than the editorial pages.
+       */
+      { route: "/campus", lastModified: getStagesUpdatedAt(), priority: 0.8, changeFrequency: "weekly" as const },
       { route: "/privacy", lastModified: EDITORIAL_PAGES_UPDATED_AT, priority: 0.2, changeFrequency: "yearly" as const },
       { route: "/terms", lastModified: EDITORIAL_PAGES_UPDATED_AT, priority: 0.2, changeFrequency: "yearly" as const },
       {
