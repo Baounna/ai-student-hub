@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T14:13:37.575Z",
+  "updatedAt": "2026-11-06T23:06:23.044Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -23,42 +23,102 @@
       }
     },
     {
-      "slug": "20261106-anthropic-platform-ai-for-science-expands-to-foundations-and-res-ad10900d",
+      "slug": "20261106-anthropic-platform-investing-in-the-public-benefit-were-committi-4c6c987b",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "href": "https://www.anthropic.com/news/public-benefit-fund",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "AI for Science expands to foundations and research institutions",
-          "summary": "AI for Science expands to foundations and research institutions"
+          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+          "summary": "/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
         },
         "fr": {
-          "title": "AI for Science expands to foundations and research institutions",
-          "summary": "AI for Science expands to foundations and research institutions"
+          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+          "summary": "/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
         }
       }
     },
     {
-      "slug": "20261106-vercel-workflow-sdk-adds-idempotent-starts-workflow-sdk-start-ca-1ada6820",
+      "slug": "20261106-cursor-voice-chat-with-agents-e8621bae",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/voice-chat",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "Voice Chat with Agents",
+          "summary": "You can now talk with your agents in a realtime voice call. Describe a change out loud, ask what an agent is working on, and hear updates as the work moves forward."
+        },
+        "fr": {
+          "title": "Voice Chat with Agents",
+          "summary": "You can now talk with your agents in a realtime voice call. Describe a change out loud, ask what an agent is working on, and hear updates as the work moves forward."
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-ai-gateway-adds-deepseek-search-and-fetch-tools-ai-gatewa-8d6a841a",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "href": "https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "Workflow SDK adds idempotent starts Workflow SDK start() can now claim a hook token atomically. Duplicate starts with the same token throw HookConflictError and never become a run. Alex Langenfeld",
-          "summary": "4 November 4 Nov"
+          "title": "AI Gateway adds DeepSeek Search and Fetch tools AI Gateway now supports DeepSeek Search and Fetch. Search the web and retrieve page content with any tool-calling model and one API key. Jerilyn Zheng, Zachary Chen",
+          "summary": "6 November 6 Nov"
         },
         "fr": {
-          "title": "Workflow SDK adds idempotent starts Workflow SDK start() can now claim a hook token atomically. Duplicate starts with the same token throw HookConflictError and never become a run. Alex Langenfeld",
-          "summary": "4 November 4 Nov"
+          "title": "AI Gateway adds DeepSeek Search and Fetch tools AI Gateway now supports DeepSeek Search and Fetch. Search the web and retrieve page content with any tool-calling model and one API key. Jerilyn Zheng, Zachary Chen",
+          "summary": "6 November 6 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261106-nvidia-speed-up-image-generation-with-flux-3-image-klein-on-nvid-a2d076a9",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+      "publishedAt": "2026-11-06T22:20:31.000Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
+          "summary": "When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an..."
+        },
+        "fr": {
+          "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
+          "summary": "When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an..."
+        }
+      }
+    },
+    {
+      "slug": "20261106-github-copilot-copilot-impact-dashboard-adds-chat-and-vs-code-ag-df141a94",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage",
+      "publishedAt": "2026-11-06T22:17:28.000Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "Copilot impact dashboard adds chat and VS Code agent usage",
+          "summary": "The Agent adoption chart in the Copilot impact dashboard now includes Copilot Chat and the VS Code Agents window, so you can see engagement across nine Copilot experiences. The adoption… The post Copilot impact dashboar…"
+        },
+        "fr": {
+          "title": "Copilot impact dashboard adds chat and VS Code agent usage",
+          "summary": "The Agent adoption chart in the Copilot impact dashboard now includes Copilot Chat and the VS Code Agents window, so you can see engagement across nine Copilot experiences. The adoption… The post Copilot impact dashboar…"
         }
       }
     },
@@ -103,6 +163,26 @@
       }
     },
     {
+      "slug": "20261106-openai-platform-partnering-with-hacktron-to-find-vulnerabilities-bc8f9eac",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/partnering-with-hacktron",
+      "publishedAt": "2026-11-06T08:00:00.000Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+          "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI."
+        },
+        "fr": {
+          "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+          "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI."
+        }
+      }
+    },
+    {
       "slug": "20261106-docker-docker-sandboxes-vs-containers-choosing-the-right-isolati-b683d1c4",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -119,86 +199,6 @@
         "fr": {
           "title": "Docker Sandboxes vs. Containers: Choosing the Right Isolation for AI Agents",
           "summary": "A container shares the host kernel. Docker Sandboxes are microVMs with their own kernel and private Docker Engine. See how they differ and when to use each."
-        }
-      }
-    },
-    {
-      "slug": "20261106-github-copilot-usage-metrics-api-adds-code-review-details-and-ad-dcf7efe8",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate",
-      "publishedAt": "2026-11-06T00:19:07.000Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
-      "locales": {
-        "en": {
-          "title": "Usage metrics API adds code review details and addressed rate",
-          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-rev…"
-        },
-        "fr": {
-          "title": "Usage metrics API adds code review details and addressed rate",
-          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-rev…"
-        }
-      }
-    },
-    {
-      "slug": "20261105-cursor-build-live-apps-in-cursor-01b9f238",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/build-live-apps",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Build Live Apps in Cursor",
-          "summary": "Agents have lowered the cost of writing code, but most apps and tools that users build never make it off of localhost. Now, you can build live apps directly in Curs"
-        },
-        "fr": {
-          "title": "Build Live Apps in Cursor",
-          "summary": "Agents have lowered the cost of writing code, but most apps and tools that users build never make it off of localhost. Now, you can build live apps directly in Curs"
-        }
-      }
-    },
-    {
-      "slug": "20261105-nvidia-how-nvidia-openshell-reference-architecture-secures-and-g-863eef03",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/",
-      "publishedAt": "2026-11-05T21:29:16.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
-          "summary": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex..."
-        },
-        "fr": {
-          "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
-          "summary": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex..."
-        }
-      }
-    },
-    {
-      "slug": "20261105-openai-platform-cultfit-builds-operational-muscle-with-codex-c88b52d0",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/cultfit-builds-with-codex",
-      "publishedAt": "2026-11-05T20:00:00.000Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
-      "locales": {
-        "en": {
-          "title": "Cult.fit builds operational muscle with Codex",
-          "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done."
-        },
-        "fr": {
-          "title": "Cult.fit builds operational muscle with Codex",
-          "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done."
         }
       }
     },
@@ -403,42 +403,102 @@
       }
     },
     {
-      "slug": "20261106-claude-expanding-our-partnership-with-gsa-to-bring-claude-to-all-16faca12",
-      "toolName": "Claude",
-      "category": "AI Assistant",
+      "slug": "20261106-anthropic-platform-physicist-christopher-stubbs-joins-anthropics-b12d9d8f",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/expanding-partnership-gsa",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
+          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
         },
         "fr": {
-          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
+          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
         }
       }
     },
     {
-      "slug": "20261106-vercel-kimi-k31-pro-now-has-more-zdr-providers-on-ai-gateway-cal-16f95901",
+      "slug": "20261105-cursor-build-live-apps-in-cursor-01b9f238",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/build-live-apps",
+      "publishedAt": "2026-11-05T23:37:29.796Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "Build Live Apps in Cursor",
+          "summary": "Agents have lowered the cost of writing code, but most apps and tools that users build never make it off of localhost. Now, you can build live apps directly in Curs"
+        },
+        "fr": {
+          "title": "Build Live Apps in Cursor",
+          "summary": "Agents have lowered the cost of writing code, but most apps and tools that users build never make it off of localhost. Now, you can build live apps directly in Curs"
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-vercel-cli-can-now-set-new-projects-to-expire-set-new-pro-fc7161ee",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/kimi-k3-1-pro-now-has-more-zdr-providers-on-ai-gateway",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "href": "https://vercel.com/changelog/vercel-cli-can-now-set-new-projects-to-expire",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "Vercel CLI can now set new projects to expire Set new projects to expire when you deploy them, and remove the expiration with vercel project keep. Thibault Miranda de Oliveira Engineering, Growth",
+          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+        },
+        "fr": {
+          "title": "Vercel CLI can now set new projects to expire Set new projects to expire when you deploy them, and remove the expiration with vercel project keep. Thibault Miranda de Oliveira Engineering, Growth",
+          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+        }
+      }
+    },
+    {
+      "slug": "20261106-nvidia-how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-874cfb41",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency/",
+      "publishedAt": "2026-11-06T18:40:31.000Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
+          "summary": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a..."
+        },
+        "fr": {
+          "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
+          "summary": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a..."
+        }
+      }
+    },
+    {
+      "slug": "20261106-github-copilot-usage-metrics-api-adds-code-review-details-and-ad-dcf7efe8",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate",
+      "publishedAt": "2026-11-06T00:19:07.000Z",
       "discoveredAt": "2026-11-06T14:13:37.575Z",
       "locales": {
         "en": {
-          "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway Call Moonshot AI's Kimi K3.1 Pro and K3.1 Pro Highspeed through Vercel AI Gateway on Zero Data Retention providers, with automatic failover and request traces. Jerilyn Zheng Product, AI Gateway",
-          "summary": "Alex Langenfeld"
+          "title": "Usage metrics API adds code review details and addressed rate",
+          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-rev…"
         },
         "fr": {
-          "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway Call Moonshot AI's Kimi K3.1 Pro and K3.1 Pro Highspeed through Vercel AI Gateway on Zero Data Retention providers, with automatic failover and request traces. Jerilyn Zheng Product, AI Gateway",
-          "summary": "Alex Langenfeld"
+          "title": "Usage metrics API adds code review details and addressed rate",
+          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-rev…"
         }
       }
     },
@@ -483,6 +543,26 @@
       }
     },
     {
+      "slug": "20261106-openai-platform-measuring-how-ai-agents-handle-everyday-wet-lab--cfd4354a",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "Measuring how AI agents handle everyday wet-lab science",
+          "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science."
+        },
+        "fr": {
+          "title": "Measuring how AI agents handle everyday wet-lab science",
+          "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science."
+        }
+      }
+    },
+    {
       "slug": "20261105-docker-docker-and-activestate-extending-secure-defaults-to-the-p-d8887584",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -499,86 +579,6 @@
         "fr": {
           "title": "Docker and ActiveState Extending Secure Defaults to the Packages Developers Install",
           "summary": "Docker partners with ActiveState to continue to provide one standard for trusted content across everything you and your teams build on."
-        }
-      }
-    },
-    {
-      "slug": "20261106-github-copilot-usage-metrics-api-flags-telemetry-and-version-gap-b6de41f0",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-05-usage-metrics-api-flags-telemetry-and-version-gaps",
-      "publishedAt": "2026-11-06T00:08:31.000Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
-      "locales": {
-        "en": {
-          "title": "Usage metrics API flags telemetry and version gaps",
-          "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags…"
-        },
-        "fr": {
-          "title": "Usage metrics API flags telemetry and version gaps",
-          "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags…"
-        }
-      }
-    },
-    {
-      "slug": "20261027-cursor-skip-to-content-da250e67",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog#main",
-      "publishedAt": "2026-10-27T12:06:40.521Z",
-      "discoveredAt": "2026-10-27T12:06:40.521Z",
-      "locales": {
-        "en": {
-          "title": "Skip to content",
-          "summary": "Skip to content"
-        },
-        "fr": {
-          "title": "Skip to content",
-          "summary": "Skip to content"
-        }
-      }
-    },
-    {
-      "slug": "20261105-nvidia-five-ways-nvidia-co-design-maximizes-the-value-of-every-b-6823fc9a",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
-      "publishedAt": "2026-11-05T17:14:21.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory",
-          "summary": "In an AI factory, high bandwidth memory (HBM)is the fastest, most expensive, and most contested memory tier. Every byte spent on a redundant weight copy, an..."
-        },
-        "fr": {
-          "title": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory",
-          "summary": "In an AI factory, high bandwidth memory (HBM)is the fastest, most expensive, and most contested memory tier. Every byte spent on a redundant weight copy, an..."
-        }
-      }
-    },
-    {
-      "slug": "20261105-chatgpt-australian-universities-are-creating-ai-native-graduates-b58fee4e",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/australian-universities-ai-native-graduates",
-      "publishedAt": "2026-11-05T17:00:00.000Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
-      "locales": {
-        "en": {
-          "title": "Australian universities are creating AI-native graduates",
-          "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce."
-        },
-        "fr": {
-          "title": "Australian universities are creating AI-native graduates",
-          "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce."
         }
       }
     },
@@ -763,62 +763,122 @@
       }
     },
     {
-      "slug": "20261106-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
+      "slug": "20261106-supabase-public-beta-supabase-knowledge-base-ac9824a3",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "href": "https://supabase.com/changelog/kb-launch",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
+          "title": "[Public Beta] Supabase Knowledge Base",
+          "summary": "New Feature The Supabase Knowledge Base is live in public beta at supabase.com/kb. It hosts troubleshooting and migration guides for developers and their agents."
         },
         "fr": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
+          "title": "[Public Beta] Supabase Knowledge Base",
+          "summary": "New Feature The Supabase Knowledge Base is live in public beta at supabase.com/kb. It hosts troubleshooting and migration guides for developers and their agents."
         }
       }
     },
     {
-      "slug": "20261106-anthropic-platform-donating-agent-skills-to-the-agentic-ai-found-86405d6d",
+      "slug": "20261106-anthropic-platform-an-update-on-independent-evaluators-dc9ed14d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "href": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "Donating Agent Skills to the Agentic AI Foundation",
-          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+          "title": "An update on independent evaluators",
+          "summary": "An update on independent evaluators"
         },
         "fr": {
-          "title": "Donating Agent Skills to the Agentic AI Foundation",
-          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+          "title": "An update on independent evaluators",
+          "summary": "An update on independent evaluators"
         }
       }
     },
     {
-      "slug": "20261105-vercel-token-pass-credit-now-applies-automatically-across-ai-gat-1564a9d4",
+      "slug": "20261027-cursor-skip-to-content-da250e67",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog#main",
+      "publishedAt": "2026-10-27T12:06:40.521Z",
+      "discoveredAt": "2026-10-27T12:06:40.521Z",
+      "locales": {
+        "en": {
+          "title": "Skip to content",
+          "summary": "Skip to content"
+        },
+        "fr": {
+          "title": "Skip to content",
+          "summary": "Skip to content"
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-vercel-tracing-is-now-generally-available-vercel-tracing--05a03358",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/token-pass-credit-now-applies-automatically-across-ai-gateway",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "href": "https://vercel.com/changelog/vercel-tracing-is-now-generally-available",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "Token Pass credit now applies automatically across AI Gateway Token Pass credit now applies automatically to included model usage through AI Gateway, whether a request authenticates with an API key, OIDC token, or fx login Roman Olynyk, Krish, and 1 other",
-          "summary": "6 November 6 Nov"
+          "title": "Vercel Tracing is now generally available Vercel Tracing is now generally available on all plans. Search every span with KQL in the dashboard or CLI. New Next.js 16.5 projects get tracing with no setup, and traces now stay for up to 14 days. Darpan Kakadia, Luc Leray, and 1 other",
+          "summary": "Thibault Miranda de Oliveira Engineering, Growth"
         },
         "fr": {
-          "title": "Token Pass credit now applies automatically across AI Gateway Token Pass credit now applies automatically to included model usage through AI Gateway, whether a request authenticates with an API key, OIDC token, or fx login Roman Olynyk, Krish, and 1 other",
-          "summary": "6 November 6 Nov"
+          "title": "Vercel Tracing is now generally available Vercel Tracing is now generally available on all plans. Search every span with KQL in the dashboard or CLI. New Next.js 16.5 projects get tracing with no setup, and traces now stay for up to 14 days. Darpan Kakadia, Luc Leray, and 1 other",
+          "summary": "Thibault Miranda de Oliveira Engineering, Growth"
+        }
+      }
+    },
+    {
+      "slug": "20261106-nvidia-accelerating-reinforcement-learning-weight-refit-with-the-ee3ebb0c",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
+      "publishedAt": "2026-11-06T18:22:43.000Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
+          "summary": "During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For..."
+        },
+        "fr": {
+          "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
+          "summary": "During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For..."
+        }
+      }
+    },
+    {
+      "slug": "20261106-github-copilot-usage-metrics-api-flags-telemetry-and-version-gap-b6de41f0",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-05-usage-metrics-api-flags-telemetry-and-version-gaps",
+      "publishedAt": "2026-11-06T00:08:31.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Usage metrics API flags telemetry and version gaps",
+          "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags…"
+        },
+        "fr": {
+          "title": "Usage metrics API flags telemetry and version gaps",
+          "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags…"
         }
       }
     },
@@ -863,6 +923,26 @@
       }
     },
     {
+      "slug": "20261105-openai-platform-cultfit-builds-operational-muscle-with-codex-c88b52d0",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/cultfit-builds-with-codex",
+      "publishedAt": "2026-11-05T20:00:00.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Cult.fit builds operational muscle with Codex",
+          "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done."
+        },
+        "fr": {
+          "title": "Cult.fit builds operational muscle with Codex",
+          "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done."
+        }
+      }
+    },
+    {
       "slug": "20261105-docker-cncf-score-project-improved-its-security-posture-by-joini-a5d316f6",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -879,86 +959,6 @@
         "fr": {
           "title": "CNCF Score project improved its security posture by joining the Docker-Sponsored Open Source Program",
           "summary": "See how CNCF Score improved container security with Docker Scout, Hardened Images, and the Docker-Sponsored Open Source Program."
-        }
-      }
-    },
-    {
-      "slug": "20261105-github-secret-scanning-upgrades-detectors-adds-spacex-as-partner-e6f7bb0a",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-05-secret-scanning-upgrades-detectors-adds-spacex-as-partner",
-      "publishedAt": "2026-11-05T15:48:50.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
-          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
-        },
-        "fr": {
-          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
-          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
-        }
-      }
-    },
-    {
-      "slug": "20261020-cursor-oct-20-2026-e52ce5a4",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/agent-sdk",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T22:38:06.005Z",
-      "locales": {
-        "en": {
-          "title": "Oct 20, 2026",
-          "summary": "· Changelog"
-        },
-        "fr": {
-          "title": "Oct 20, 2026",
-          "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20261104-nvidia-how-nvidia-uses-ai-agents-to-streamline-ai-factory-operat-ad3c135f",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
-      "publishedAt": "2026-11-04T22:13:03.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
-          "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards..."
-        },
-        "fr": {
-          "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
-          "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards..."
-        }
-      }
-    },
-    {
-      "slug": "20261105-openai-platform-gpt6-cyber-advancing-the-frontier-of-aligned-cyb-53c56afb",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/introducing-gpt-6-cyber",
-      "publishedAt": "2026-11-05T09:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-          "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope."
-        },
-        "fr": {
-          "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-          "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope."
         }
       }
     },
@@ -1143,62 +1143,122 @@
       }
     },
     {
-      "slug": "20261106-supabase-public-alpha-supabase-go-sdk-107ff49a",
+      "slug": "20261106-supabase-aspnet-core-dependency-injection-for-the-supabase-net-s-e2f5eeb1",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "href": "https://supabase.com/changelog/dotnet-dependency-injection-extension",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "[Public Alpha] Supabase Go SDK",
-          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
+          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
         },
         "fr": {
-          "title": "[Public Alpha] Supabase Go SDK",
-          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
+          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
         }
       }
     },
     {
-      "slug": "20261106-anthropic-platform-preparing-for-the-2026-us-midterms-c9ddbc2b",
+      "slug": "20261106-anthropic-platform-strengthening-our-defenses-against-distillati-7f42709d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-us-midterms",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "href": "https://www.anthropic.com/news/distillation-defenses",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "Preparing for the 2026 US midterms",
-          "summary": "Preparing for the 2026 US midterms"
+          "title": "Strengthening our defenses against distillation attacks",
+          "summary": "Strengthening our defenses against distillation attacks"
         },
         "fr": {
-          "title": "Preparing for the 2026 US midterms",
-          "summary": "Preparing for the 2026 US midterms"
+          "title": "Strengthening our defenses against distillation attacks",
+          "summary": "Strengthening our defenses against distillation attacks"
         }
       }
     },
     {
-      "slug": "20261105-vercel-vercel-schedules-is-now-in-public-beta-vercel-schedules-i-176b4a36",
+      "slug": "20261020-cursor-oct-20-2026-e52ce5a4",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/agent-sdk",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "discoveredAt": "2026-10-26T22:38:06.005Z",
+      "locales": {
+        "en": {
+          "title": "Oct 20, 2026",
+          "summary": "· Changelog"
+        },
+        "fr": {
+          "title": "Oct 20, 2026",
+          "summary": "· Changelog"
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-ampersand-from-humans-now-available-on-ai-gateway-call-hu-c1198ca2",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
+      "href": "https://vercel.com/changelog/humans-and-ampersand-now-available-on-ai-gateway",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "Ampersand from Humans& now available on AI Gateway Call Humans&'s Ampersand through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. +3 Gregor Martynus, Esteban Suárez, and 3 others",
+          "summary": "-128.jpg\"/> Roman Olynyk, Krish, and 1 other"
+        },
+        "fr": {
+          "title": "Ampersand from Humans& now available on AI Gateway Call Humans&'s Ampersand through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. +3 Gregor Martynus, Esteban Suárez, and 3 others",
+          "summary": "-128.jpg\"/> Roman Olynyk, Krish, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20261106-nvidia-run-ai-models-for-edge-application-development-with-just--e060e1d4",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+      "publishedAt": "2026-11-06T17:47:24.000Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
+        },
+        "fr": {
+          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
+        }
+      }
+    },
+    {
+      "slug": "20261105-github-secret-scanning-upgrades-detectors-adds-spacex-as-partner-e6f7bb0a",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-05-secret-scanning-upgrades-detectors-adds-spacex-as-partner",
+      "publishedAt": "2026-11-05T15:48:50.000Z",
       "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "Vercel Schedules is now in public beta Vercel Schedules is now in public beta. Run tasks on a cron cadence or at a single point in time, dispatching to a Vercel Function or a Vercel Queue topic, in any Vercel environment. Schedules can also be used through dynamic schedules in Eve. +3 Elliot Dauber, Casey Gowrie, and 3 others",
-          "summary": "5 November 5 Nov"
+          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
+          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
         },
         "fr": {
-          "title": "Vercel Schedules is now in public beta Vercel Schedules is now in public beta. Run tasks on a cron cadence or at a single point in time, dispatching to a Vercel Function or a Vercel Queue topic, in any Vercel environment. Schedules can also be used through dynamic schedules in Eve. +3 Elliot Dauber, Casey Gowrie, and 3 others",
-          "summary": "5 November 5 Nov"
+          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
+          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
         }
       }
     },
@@ -1243,6 +1303,26 @@
       }
     },
     {
+      "slug": "20261105-chatgpt-australian-universities-are-creating-ai-native-graduates-b58fee4e",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Australian universities are creating AI-native graduates",
+          "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce."
+        },
+        "fr": {
+          "title": "Australian universities are creating AI-native graduates",
+          "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce."
+        }
+      }
+    },
+    {
       "slug": "20261102-docker-the-ecosystem-is-the-answer-docker-the-blueprint-alliance-7437f847",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -1259,86 +1339,6 @@
         "fr": {
           "title": "The Ecosystem is the Answer: Docker, the Blueprint Alliance, and the Importance of Collaboration in the Agentic Era",
           "summary": "Docker is a founding member of the Blueprint Alliance, a 12-company reference architecture for securing AI agents, built around four governance questions."
-        }
-      }
-    },
-    {
-      "slug": "20261105-github-new-pull-request-overview-page-in-public-preview-3bcdfa6e",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview",
-      "publishedAt": "2026-11-05T08:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "New pull request overview page in public preview",
-          "summary": "On a long pull request, checking what’s blocking often means scrolling past dozens of comments and timeline events just to reach the merge box. And once you’re there, you still… The post New pull request overview page i…"
-        },
-        "fr": {
-          "title": "New pull request overview page in public preview",
-          "summary": "On a long pull request, checking what’s blocking often means scrolling past dozens of comments and timeline events just to reach the merge box. And once you’re there, you still… The post New pull request overview page i…"
-        }
-      }
-    },
-    {
-      "slug": "20261017-cursor-next-older-posts-26afffcc",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/page/2",
-      "publishedAt": "2026-10-17T20:33:55.291Z",
-      "discoveredAt": "2026-10-17T20:33:55.291Z",
-      "locales": {
-        "en": {
-          "title": "Next → Older posts",
-          "summary": "Next → Older posts"
-        },
-        "fr": {
-          "title": "Next → Older posts",
-          "summary": "Next → Older posts"
-        }
-      }
-    },
-    {
-      "slug": "20261104-nvidia-use-nvidia-nemo-to-turn-agent-failures-into-tests-and-har-ce98a184",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/",
-      "publishedAt": "2026-11-04T20:26:19.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
-          "summary": "Turn production evidence into prioritized issues and custom evaluations that help you improve prompts, tools, models, memory, skills, and harness code. When you..."
-        },
-        "fr": {
-          "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
-          "summary": "Turn production evidence into prioritized issues and custom evaluations that help you improve prompts, tools, models, memory, skills, and harness code. When you..."
-        }
-      }
-    },
-    {
-      "slug": "20261105-chatgpt-merge-builds-product-and-business-tools-with-openai-tech-300d9110",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/merge-builds-with-openai",
-      "publishedAt": "2026-11-05T08:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Merge builds product and business tools with OpenAI technology",
-          "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates."
-        },
-        "fr": {
-          "title": "Merge builds product and business tools with OpenAI technology",
-          "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates."
         }
       }
     },
@@ -1523,62 +1523,122 @@
       }
     },
     {
-      "slug": "20261105-supabase-opentelemetry-traces-and-metrics-in-the-supabase-net-sd-b83bb3b1",
+      "slug": "20261106-supabase-organization-invites-support-the-no-access-role-fba375fa",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/dotnet-opentelemetry-support",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "href": "https://supabase.com/changelog/no-access-org-role",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         },
         "fr": {
-          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
+          "title": "Organization invites support the No access role",
+          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
         }
       }
     },
     {
-      "slug": "20261106-anthropic-platform-anthropic-opens-singapore-office-and-signs-mo-87253efe",
+      "slug": "20261106-anthropic-platform-introducing-the-anthropic-cyber-mission-db9c3550",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/singapore-office-opening",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+          "title": "Introducing the Anthropic Cyber Mission",
+          "summary": "Introducing the Anthropic Cyber Mission"
         },
         "fr": {
-          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+          "title": "Introducing the Anthropic Cyber Mission",
+          "summary": "Introducing the Anthropic Cyber Mission"
         }
       }
     },
     {
-      "slug": "20261105-vercel-gemini-omni-12-flash-now-available-on-ai-gateway-generate-6fd883e8",
+      "slug": "20261017-cursor-next-older-posts-26afffcc",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/page/2",
+      "publishedAt": "2026-10-17T20:33:55.291Z",
+      "discoveredAt": "2026-10-17T20:33:55.291Z",
+      "locales": {
+        "en": {
+          "title": "Next → Older posts",
+          "summary": "Next → Older posts"
+        },
+        "fr": {
+          "title": "Next → Older posts",
+          "summary": "Next → Older posts"
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-workflow-sdk-adds-idempotent-starts-workflow-sdk-start-ca-1ada6820",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
+      "href": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Workflow SDK adds idempotent starts Workflow SDK start() can now claim a hook token atomically. Duplicate starts with the same token throw HookConflictError and never become a run. Alex Langenfeld",
+          "summary": "4 November 4 Nov"
+        },
+        "fr": {
+          "title": "Workflow SDK adds idempotent starts Workflow SDK start() can now claim a hook token atomically. Duplicate starts with the same token throw HookConflictError and never become a run. Alex Langenfeld",
+          "summary": "4 November 4 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261105-nvidia-how-nvidia-openshell-reference-architecture-secures-and-g-863eef03",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/",
+      "publishedAt": "2026-11-05T21:29:16.000Z",
       "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "Gemini Omni 1.2 Flash now available on AI Gateway Generate videos with Gemini Omni 1.2 Flash through Vercel AI Gateway using one API key, with spend tracking and request traces. Jerilyn Zheng, Walter Korman, and 1 other",
-          "summary": "+3 Elliot Dauber, Casey Gowrie, and 3 others"
+          "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
+          "summary": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex..."
         },
         "fr": {
-          "title": "Gemini Omni 1.2 Flash now available on AI Gateway Generate videos with Gemini Omni 1.2 Flash through Vercel AI Gateway using one API key, with spend tracking and request traces. Jerilyn Zheng, Walter Korman, and 1 other",
-          "summary": "+3 Elliot Dauber, Casey Gowrie, and 3 others"
+          "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
+          "summary": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex..."
+        }
+      }
+    },
+    {
+      "slug": "20261105-github-new-pull-request-overview-page-in-public-preview-3bcdfa6e",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "New pull request overview page in public preview",
+          "summary": "On a long pull request, checking what’s blocking often means scrolling past dozens of comments and timeline events just to reach the merge box. And once you’re there, you still… The post New pull request overview page i…"
+        },
+        "fr": {
+          "title": "New pull request overview page in public preview",
+          "summary": "On a long pull request, checking what’s blocking often means scrolling past dozens of comments and timeline events just to reach the merge box. And once you’re there, you still… The post New pull request overview page i…"
         }
       }
     },
@@ -1623,6 +1683,26 @@
       }
     },
     {
+      "slug": "20261105-openai-platform-gpt6-cyber-advancing-the-frontier-of-aligned-cyb-53c56afb",
+      "toolName": "OpenAI Platform",
+      "category": "AI Platform",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/introducing-gpt-6-cyber",
+      "publishedAt": "2026-11-05T09:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+          "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope."
+        },
+        "fr": {
+          "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+          "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope."
+        }
+      }
+    },
+    {
       "slug": "20261102-docker-where-should-your-code-live-in-a-docker-sandbox-a6ff3130",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -1639,86 +1719,6 @@
         "fr": {
           "title": "Where should your code live in a Docker Sandbox?",
           "summary": "Docker Sandboxes support three ways to organize an agent’s code: shared mounts, Git worktrees, and clone mode. Here’s how to choose between them."
-        }
-      }
-    },
-    {
-      "slug": "20261104-github-codeql-2274-improves-accuracy-and-query-metadata-03daee1e",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-04-codeql-2-27-4-improves-accuracy-and-query-metadata",
-      "publishedAt": "2026-11-04T20:04:52.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
-          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
-        },
-        "fr": {
-          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
-          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
-        }
-      }
-    },
-    {
-      "slug": "20261016-cursor-oct-16-2026-24947120",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/cloud-agent-canvases-and-environments",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "discoveredAt": "2026-10-17T10:39:33.976Z",
-      "locales": {
-        "en": {
-          "title": "Oct 16, 2026",
-          "summary": "· Changelog"
-        },
-        "fr": {
-          "title": "Oct 16, 2026",
-          "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20261104-nvidia-nvidia-cuda-135-brings-nvidia-vera-rubin-ga-support-8e7c0f56",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
-      "publishedAt": "2026-11-04T18:46:28.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
-          "summary": "As artificial intelligence and accelerated computing continue to push the boundaries of what's possible, the latest NVIDIA CUDA release arrives to unlock..."
-        },
-        "fr": {
-          "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
-          "summary": "As artificial intelligence and accelerated computing continue to push the boundaries of what's possible, the latest NVIDIA CUDA release arrives to unlock..."
-        }
-      }
-    },
-    {
-      "slug": "20261105-openai-platform-setting-a-new-standard-for-responsible-ai-infras-f9356757",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-      "publishedAt": "2026-11-05T02:00:00.000Z",
-      "discoveredAt": "2026-11-05T14:35:46.849Z",
-      "locales": {
-        "en": {
-          "title": "Setting a new standard for responsible AI infrastructure",
-          "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development."
-        },
-        "fr": {
-          "title": "Setting a new standard for responsible AI infrastructure",
-          "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development."
         }
       }
     },
@@ -1903,62 +1903,122 @@
       }
     },
     {
-      "slug": "20261105-supabase-status-page-moves-to-incidentio-7e1c5736",
+      "slug": "20261106-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/status-page-migration",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
-        },
-        "fr": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
-        }
-      }
-    },
-    {
-      "slug": "20261106-anthropic-platform-building-on-our-commitment-to-american-scient-26f50496",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
       "publishedAt": "2026-11-06T14:13:37.575Z",
       "discoveredAt": "2026-11-06T14:13:37.575Z",
       "locales": {
         "en": {
-          "title": "Building on our commitment to American scientific discovery",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         },
         "fr": {
-          "title": "Building on our commitment to American scientific discovery",
-          "summary": "Building on our commitment to American scientific discovery"
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         }
       }
     },
     {
-      "slug": "20261105-vercel-tencent-hy4-now-available-on-ai-gateway-call-tencent-hy4--0d2095d1",
+      "slug": "20261106-anthropic-platform-2026-usage-policy-update-7a238471",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "2026 Usage Policy update",
+          "summary": "2026 Usage Policy update"
+        },
+        "fr": {
+          "title": "2026 Usage Policy update",
+          "summary": "2026 Usage Policy update"
+        }
+      }
+    },
+    {
+      "slug": "20261016-cursor-oct-16-2026-24947120",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/cloud-agent-canvases-and-environments",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "discoveredAt": "2026-10-17T10:39:33.976Z",
+      "locales": {
+        "en": {
+          "title": "Oct 16, 2026",
+          "summary": "· Changelog"
+        },
+        "fr": {
+          "title": "Oct 16, 2026",
+          "summary": "· Changelog"
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-kimi-k31-pro-now-has-more-zdr-providers-on-ai-gateway-cal-16f95901",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/tencent-hy4-now-available-on-ai-gateway",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
+      "href": "https://vercel.com/changelog/kimi-k3-1-pro-now-has-more-zdr-providers-on-ai-gateway",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway Call Moonshot AI's Kimi K3.1 Pro and K3.1 Pro Highspeed through Vercel AI Gateway on Zero Data Retention providers, with automatic failover and request traces. Jerilyn Zheng Product, AI Gateway",
+          "summary": "Alex Langenfeld"
+        },
+        "fr": {
+          "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway Call Moonshot AI's Kimi K3.1 Pro and K3.1 Pro Highspeed through Vercel AI Gateway on Zero Data Retention providers, with automatic failover and request traces. Jerilyn Zheng Product, AI Gateway",
+          "summary": "Alex Langenfeld"
+        }
+      }
+    },
+    {
+      "slug": "20261105-nvidia-five-ways-nvidia-co-design-maximizes-the-value-of-every-b-6823fc9a",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+      "publishedAt": "2026-11-05T17:14:21.000Z",
       "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "Tencent Hy4 now available on AI Gateway Call Tencent Hy4 at 50% off through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "Vojtech Miksu"
+          "title": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory",
+          "summary": "In an AI factory, high bandwidth memory (HBM)is the fastest, most expensive, and most contested memory tier. Every byte spent on a redundant weight copy, an..."
         },
         "fr": {
-          "title": "Tencent Hy4 now available on AI Gateway Call Tencent Hy4 at 50% off through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "Vojtech Miksu"
+          "title": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory",
+          "summary": "In an AI factory, high bandwidth memory (HBM)is the fastest, most expensive, and most contested memory tier. Every byte spent on a redundant weight copy, an..."
+        }
+      }
+    },
+    {
+      "slug": "20261104-github-codeql-2274-improves-accuracy-and-query-metadata-03daee1e",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-04-codeql-2-27-4-improves-accuracy-and-query-metadata",
+      "publishedAt": "2026-11-04T20:04:52.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
+          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
+        },
+        "fr": {
+          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
+          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
         }
       }
     },
@@ -2003,6 +2063,26 @@
       }
     },
     {
+      "slug": "20261105-chatgpt-merge-builds-product-and-business-tools-with-openai-tech-300d9110",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/merge-builds-with-openai",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "Merge builds product and business tools with OpenAI technology",
+          "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates."
+        },
+        "fr": {
+          "title": "Merge builds product and business tools with OpenAI technology",
+          "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates."
+        }
+      }
+    },
+    {
       "slug": "20261029-docker-coding-agent-horror-stories-the-cve-that-did-not-exist-6b5b11da",
       "toolName": "Docker",
       "category": "Developer Platform",
@@ -2019,86 +2099,6 @@
         "fr": {
           "title": "Coding Agent Horror Stories: The CVE That Did Not Exist",
           "summary": "An AI code review agent invented a CVE and recommended dangerous fixes. Learn how Docker Sandboxes contain agents and why their output needs verification."
-        }
-      }
-    },
-    {
-      "slug": "20261104-github-copilot-github-copilot-is-now-available-in-xcodes-coding--a05548ef",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
-      "publishedAt": "2026-11-04T19:10:40.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
-          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
-        },
-        "fr": {
-          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
-          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
-        }
-      }
-    },
-    {
-      "slug": "20261013-cursor-oct-13-2026-0d06b935",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/origin-app-marketplace",
-      "publishedAt": "2026-10-13T00:00:00.000Z",
-      "discoveredAt": "2026-10-13T22:42:22.355Z",
-      "locales": {
-        "en": {
-          "title": "Oct 13, 2026",
-          "summary": "· Changelog"
-        },
-        "fr": {
-          "title": "Oct 13, 2026",
-          "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20261104-kubernetes-configure-certify-and-operate-kubernetes-gpu-clusters-527bad4b",
-      "toolName": "Kubernetes",
-      "category": "Cloud/DevOps",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
-      "publishedAt": "2026-11-04T17:42:06.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS",
-          "summary": "One underperforming GPU can slow an entire distributed training job. The node may pass basic health checks and show normal utilization, leaving operators to..."
-        },
-        "fr": {
-          "title": "Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS",
-          "summary": "One underperforming GPU can slow an entire distributed training job. The node may pass basic health checks and show normal utilization, leaving operators to..."
-        }
-      }
-    },
-    {
-      "slug": "20261105-openai-platform-franklin-templeton-uses-openai-to-support-invest-c0d7b080",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/franklin-templeton",
-      "publishedAt": "2026-11-05T00:00:00.000Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
-      "locales": {
-        "en": {
-          "title": "Franklin Templeton uses OpenAI to support investment research",
-          "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks."
-        },
-        "fr": {
-          "title": "Franklin Templeton uses OpenAI to support investment research",
-          "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks."
         }
       }
     },
@@ -2283,122 +2283,122 @@
       }
     },
     {
-      "slug": "20261105-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
+      "slug": "20261106-supabase-public-alpha-supabase-go-sdk-107ff49a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
-      "publishedAt": "2026-11-05T14:35:46.849Z",
-      "discoveredAt": "2026-11-05T14:35:46.849Z",
+      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
       "locales": {
         "en": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         },
         "fr": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         }
       }
     },
     {
-      "slug": "20261105-anthropic-platform-open-call-for-guest-investigators-in-the-life-98d45c75",
+      "slug": "20261106-anthropic-platform-ai-for-science-expands-to-foundations-and-res-ad10900d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "href": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
       "locales": {
         "en": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
         },
         "fr": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
         }
       }
     },
     {
-      "slug": "20261105-vercel-vercel-security-review-now-in-public-beta-vercel-security-f537ef36",
+      "slug": "20261013-cursor-oct-13-2026-0d06b935",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "Cursor Changelog",
+      "sourceFeed": "https://www.cursor.com/changelog",
+      "href": "https://www.cursor.com/changelog/origin-app-marketplace",
+      "publishedAt": "2026-10-13T00:00:00.000Z",
+      "discoveredAt": "2026-10-13T22:42:22.355Z",
+      "locales": {
+        "en": {
+          "title": "Oct 13, 2026",
+          "summary": "· Changelog"
+        },
+        "fr": {
+          "title": "Oct 13, 2026",
+          "summary": "· Changelog"
+        }
+      }
+    },
+    {
+      "slug": "20261105-vercel-token-pass-credit-now-applies-automatically-across-ai-gat-1564a9d4",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-security-review-public-beta",
-      "publishedAt": "2026-11-05T14:35:46.849Z",
-      "discoveredAt": "2026-11-05T14:35:46.849Z",
+      "href": "https://vercel.com/changelog/token-pass-credit-now-applies-automatically-across-ai-gateway",
+      "publishedAt": "2026-11-05T23:37:29.796Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "Vercel Security Review now in public beta Vercel Security Review is now in public beta. Every push to your GitHub repositories is reviewed for vulnerabilities, and Vercel Agent can open the fix. +3 Nate McGrady, Karim Rahal, and 3 others",
-          "summary": "3 November 3 Nov"
+          "title": "Token Pass credit now applies automatically across AI Gateway Token Pass credit now applies automatically to included model usage through AI Gateway, whether a request authenticates with an API key, OIDC token, or fx login Roman Olynyk, Krish, and 1 other",
+          "summary": "6 November 6 Nov"
         },
         "fr": {
-          "title": "Vercel Security Review now in public beta Vercel Security Review is now in public beta. Every push to your GitHub repositories is reviewed for vulnerabilities, and Vercel Agent can open the fix. +3 Nate McGrady, Karim Rahal, and 3 others",
-          "summary": "3 November 3 Nov"
+          "title": "Token Pass credit now applies automatically across AI Gateway Token Pass credit now applies automatically to included model usage through AI Gateway, whether a request authenticates with an API key, OIDC token, or fx login Roman Olynyk, Krish, and 1 other",
+          "summary": "6 November 6 Nov"
         }
       }
     },
     {
-      "slug": "20261103-hugging-face-palette-teaching-a-small-model-to-build-decks-in-yo-bc417703",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "publishedAt": "2026-11-03T16:35:36.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "slug": "20261104-nvidia-how-nvidia-uses-ai-agents-to-streamline-ai-factory-operat-ad3c135f",
+      "toolName": "NVIDIA",
+      "category": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+      "publishedAt": "2026-11-04T22:13:03.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "Palette: teaching a small model to build decks in your design language",
-          "summary": "Palette: teaching a small model to build decks in your design language"
+          "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+          "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards..."
         },
         "fr": {
-          "title": "Palette: teaching a small model to build decks in your design language",
-          "summary": "Palette: teaching a small model to build decks in your design language"
+          "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+          "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards..."
         }
       }
     },
     {
-      "slug": "20261030-cloudflare-cloudflare-services-for-private-origins-is-now-genera-5e6112ff",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/private-origins-public-to-private/",
-      "publishedAt": "2026-10-30T14:23:43.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "slug": "20261104-github-copilot-github-copilot-is-now-available-in-xcodes-coding--a05548ef",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
+      "publishedAt": "2026-11-04T19:10:40.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
       "locales": {
         "en": {
-          "title": "Cloudflare services for private origins is now generally available",
-          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
+          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
+          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
         },
         "fr": {
-          "title": "Cloudflare services for private origins is now generally available",
-          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
-        }
-      }
-    },
-    {
-      "slug": "20261028-docker-win-the-agentic-era-together-introducing-the-docker-navig-dc7f3109",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-navigator-partner-program/",
-      "publishedAt": "2026-10-28T13:00:00.000Z",
-      "discoveredAt": "2026-10-28T22:32:01.739Z",
-      "locales": {
-        "en": {
-          "title": "Win the Agentic Era, Together: Introducing the Docker Navigator Partner Program",
-          "summary": "Docker is launching the Navigator Partner Program, with three tiers, co-selling benefits, and a new incentive for every registered AI governance deal."
-        },
-        "fr": {
-          "title": "Win the Agentic Era, Together: Introducing the Docker Navigator Partner Program",
-          "summary": "Docker is launching the Navigator Partner Program, with three tiers, co-selling benefits, and a new incentive for every registered AI governance deal."
+          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
+          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
         }
       }
     }
