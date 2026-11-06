@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05T23:37:29.796Z",
+  "updatedAt": "2026-11-06T14:13:37.575Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -23,22 +23,122 @@
       }
     },
     {
-      "slug": "20261105-anthropic-platform-open-call-for-guest-investigators-in-the-life-98d45c75",
+      "slug": "20261106-anthropic-platform-ai-for-science-expands-to-foundations-and-res-ad10900d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "href": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
       "locales": {
         "en": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
         },
         "fr": {
-          "title": "Open call for guest investigators in the life sciences",
-          "summary": "Open call for guest investigators in the life sciences"
+          "title": "AI for Science expands to foundations and research institutions",
+          "summary": "AI for Science expands to foundations and research institutions"
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-workflow-sdk-adds-idempotent-starts-workflow-sdk-start-ca-1ada6820",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Workflow SDK adds idempotent starts Workflow SDK start() can now claim a hook token atomically. Duplicate starts with the same token throw HookConflictError and never become a run. Alex Langenfeld",
+          "summary": "4 November 4 Nov"
+        },
+        "fr": {
+          "title": "Workflow SDK adds idempotent starts Workflow SDK start() can now claim a hook token atomically. Duplicate starts with the same token throw HookConflictError and never become a run. Alex Langenfeld",
+          "summary": "4 November 4 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261106-hugging-face-toyblocks-a-controlled-world-for-robot-learning-and-be1ba71e",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/toyblocks",
+      "publishedAt": "2026-11-06T14:00:48.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+          "summary": "ToyBlocks: A controlled world for robot learning and evaluation"
+        },
+        "fr": {
+          "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+          "summary": "ToyBlocks: A controlled world for robot learning and evaluation"
+        }
+      }
+    },
+    {
+      "slug": "20261106-cloudflare-the-post-quantum-future-of-web-privacy-5668b3c6",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/vole-mole/",
+      "publishedAt": "2026-11-06T14:00:00.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "The post-quantum future of web privacy",
+          "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may…"
+        },
+        "fr": {
+          "title": "The post-quantum future of web privacy",
+          "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may…"
+        }
+      }
+    },
+    {
+      "slug": "20261106-docker-docker-sandboxes-vs-containers-choosing-the-right-isolati-b683d1c4",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-sandboxes-vs-containers/",
+      "publishedAt": "2026-11-06T03:17:04.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Docker Sandboxes vs. Containers: Choosing the Right Isolation for AI Agents",
+          "summary": "A container shares the host kernel. Docker Sandboxes are microVMs with their own kernel and private Docker Engine. See how they differ and when to use each."
+        },
+        "fr": {
+          "title": "Docker Sandboxes vs. Containers: Choosing the Right Isolation for AI Agents",
+          "summary": "A container shares the host kernel. Docker Sandboxes are microVMs with their own kernel and private Docker Engine. See how they differ and when to use each."
+        }
+      }
+    },
+    {
+      "slug": "20261106-github-copilot-usage-metrics-api-adds-code-review-details-and-ad-dcf7efe8",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate",
+      "publishedAt": "2026-11-06T00:19:07.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Usage metrics API adds code review details and addressed rate",
+          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-rev…"
+        },
+        "fr": {
+          "title": "Usage metrics API adds code review details and addressed rate",
+          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-rev…"
         }
       }
     },
@@ -63,26 +163,6 @@
       }
     },
     {
-      "slug": "20261105-vercel-token-pass-credit-now-applies-automatically-across-ai-gat-1564a9d4",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/token-pass-credit-now-applies-automatically-across-ai-gateway",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Token Pass credit now applies automatically across AI Gateway Token Pass credit now applies automatically to included model usage through AI Gateway, whether a request authenticates with an API key, OIDC token, or fx login Roman Olynyk, Krish, and 1 other",
-          "summary": "6 November 6 Nov"
-        },
-        "fr": {
-          "title": "Token Pass credit now applies automatically across AI Gateway Token Pass credit now applies automatically to included model usage through AI Gateway, whether a request authenticates with an API key, OIDC token, or fx login Roman Olynyk, Krish, and 1 other",
-          "summary": "6 November 6 Nov"
-        }
-      }
-    },
-    {
       "slug": "20261105-nvidia-how-nvidia-openshell-reference-architecture-secures-and-g-863eef03",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -103,42 +183,22 @@
       }
     },
     {
-      "slug": "20261105-hugging-face-new-nvidia-cosmos-3-open-models-for-interactive-wor-e8690f74",
-      "toolName": "Hugging Face",
+      "slug": "20261105-openai-platform-cultfit-builds-operational-muscle-with-codex-c88b52d0",
+      "toolName": "OpenAI Platform",
       "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "publishedAt": "2026-11-05T19:35:16.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/cultfit-builds-with-codex",
+      "publishedAt": "2026-11-05T20:00:00.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
       "locales": {
         "en": {
-          "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-          "summary": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation"
+          "title": "Cult.fit builds operational muscle with Codex",
+          "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done."
         },
         "fr": {
-          "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-          "summary": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation"
-        }
-      }
-    },
-    {
-      "slug": "20261105-cloudflare-agents-arent-humans-but-they-kinda-are-f64889a7",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/trusted-agent-delegation/",
-      "publishedAt": "2026-11-05T17:03:04.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Agents aren’t humans (but they kinda are)",
-          "summary": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this autom…"
-        },
-        "fr": {
-          "title": "Agents aren’t humans (but they kinda are)",
-          "summary": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this autom…"
+          "title": "Cult.fit builds operational muscle with Codex",
+          "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done."
         }
       }
     },
@@ -159,46 +219,6 @@
         "fr": {
           "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
           "summary": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing."
-        }
-      }
-    },
-    {
-      "slug": "20261105-github-secret-scanning-upgrades-detectors-adds-spacex-as-partner-e6f7bb0a",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-05-secret-scanning-upgrades-detectors-adds-spacex-as-partner",
-      "publishedAt": "2026-11-05T15:48:50.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
-          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
-        },
-        "fr": {
-          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
-          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
-        }
-      }
-    },
-    {
-      "slug": "20261105-docker-docker-and-activestate-extending-secure-defaults-to-the-p-d8887584",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-activestate-trusted-content/",
-      "publishedAt": "2026-11-05T15:28:22.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Docker and ActiveState Extending Secure Defaults to the Packages Developers Install",
-          "summary": "Docker partners with ActiveState to continue to provide one standard for trusted content across everything you and your teams build on."
-        },
-        "fr": {
-          "title": "Docker and ActiveState Extending Secure Defaults to the Packages Developers Install",
-          "summary": "Docker partners with ActiveState to continue to provide one standard for trusted content across everything you and your teams build on."
         }
       }
     },
@@ -239,26 +259,6 @@
         "fr": {
           "title": "W3C Newsletter - October 2026",
           "summary": "W3C President and Interim CEO Dominique Hazaël-Massieux shares timely and notable highlights and information selected from the busy and prolific work last month at W3C such as TPAC 2026, AI @ W3C, progress on Identity a…"
-        }
-      }
-    },
-    {
-      "slug": "20261105-openai-platform-gpt6-cyber-advancing-the-frontier-of-aligned-cyb-53c56afb",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/introducing-gpt-6-cyber",
-      "publishedAt": "2026-11-05T09:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-          "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope."
-        },
-        "fr": {
-          "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-          "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope."
         }
       }
     },
@@ -403,22 +403,122 @@
       }
     },
     {
-      "slug": "20261105-anthropic-platform-physicist-christopher-stubbs-joins-anthropics-b12d9d8f",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
+      "slug": "20261106-claude-expanding-our-partnership-with-gsa-to-bring-claude-to-all-16faca12",
+      "toolName": "Claude",
+      "category": "AI Assistant",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
+      "href": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
+        },
+        "fr": {
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-kimi-k31-pro-now-has-more-zdr-providers-on-ai-gateway-cal-16f95901",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/kimi-k3-1-pro-now-has-more-zdr-providers-on-ai-gateway",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway Call Moonshot AI's Kimi K3.1 Pro and K3.1 Pro Highspeed through Vercel AI Gateway on Zero Data Retention providers, with automatic failover and request traces. Jerilyn Zheng Product, AI Gateway",
+          "summary": "Alex Langenfeld"
+        },
+        "fr": {
+          "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway Call Moonshot AI's Kimi K3.1 Pro and K3.1 Pro Highspeed through Vercel AI Gateway on Zero Data Retention providers, with automatic failover and request traces. Jerilyn Zheng Product, AI Gateway",
+          "summary": "Alex Langenfeld"
+        }
+      }
+    },
+    {
+      "slug": "20261106-hugging-face-egyptian-and-nigerian-english-join-the-open-asr-lea-82196d4e",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+          "summary": "Egyptian and Nigerian English join the Open ASR Leaderboard"
+        },
+        "fr": {
+          "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+          "summary": "Egyptian and Nigerian English join the Open ASR Leaderboard"
+        }
+      }
+    },
+    {
+      "slug": "20261105-cloudflare-agents-arent-humans-but-they-kinda-are-f64889a7",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/trusted-agent-delegation/",
+      "publishedAt": "2026-11-05T17:03:04.000Z",
       "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "Agents aren’t humans (but they kinda are)",
+          "summary": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this autom…"
         },
         "fr": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "Agents aren’t humans (but they kinda are)",
+          "summary": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this autom…"
+        }
+      }
+    },
+    {
+      "slug": "20261105-docker-docker-and-activestate-extending-secure-defaults-to-the-p-d8887584",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-activestate-trusted-content/",
+      "publishedAt": "2026-11-05T15:28:22.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "Docker and ActiveState Extending Secure Defaults to the Packages Developers Install",
+          "summary": "Docker partners with ActiveState to continue to provide one standard for trusted content across everything you and your teams build on."
+        },
+        "fr": {
+          "title": "Docker and ActiveState Extending Secure Defaults to the Packages Developers Install",
+          "summary": "Docker partners with ActiveState to continue to provide one standard for trusted content across everything you and your teams build on."
+        }
+      }
+    },
+    {
+      "slug": "20261106-github-copilot-usage-metrics-api-flags-telemetry-and-version-gap-b6de41f0",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-05-usage-metrics-api-flags-telemetry-and-version-gaps",
+      "publishedAt": "2026-11-06T00:08:31.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Usage metrics API flags telemetry and version gaps",
+          "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags…"
+        },
+        "fr": {
+          "title": "Usage metrics API flags telemetry and version gaps",
+          "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags…"
         }
       }
     },
@@ -443,26 +543,6 @@
       }
     },
     {
-      "slug": "20261105-vercel-vercel-schedules-is-now-in-public-beta-vercel-schedules-i-176b4a36",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Vercel Schedules is now in public beta Vercel Schedules is now in public beta. Run tasks on a cron cadence or at a single point in time, dispatching to a Vercel Function or a Vercel Queue topic, in any Vercel environment. Schedules can also be used through dynamic schedules in Eve. +3 Elliot Dauber, Casey Gowrie, and 3 others",
-          "summary": "5 November 5 Nov"
-        },
-        "fr": {
-          "title": "Vercel Schedules is now in public beta Vercel Schedules is now in public beta. Run tasks on a cron cadence or at a single point in time, dispatching to a Vercel Function or a Vercel Queue topic, in any Vercel environment. Schedules can also be used through dynamic schedules in Eve. +3 Elliot Dauber, Casey Gowrie, and 3 others",
-          "summary": "5 November 5 Nov"
-        }
-      }
-    },
-    {
       "slug": "20261105-nvidia-five-ways-nvidia-co-design-maximizes-the-value-of-every-b-6823fc9a",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -483,42 +563,22 @@
       }
     },
     {
-      "slug": "20261105-hugging-face-a-closer-look-at-phonon-tts-launching-high-quality--89209ab6",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/phonon-tts",
-      "publishedAt": "2026-11-05T00:00:00.000Z",
-      "discoveredAt": "2026-11-05T14:35:46.849Z",
+      "slug": "20261105-chatgpt-australian-universities-are-creating-ai-native-graduates-b58fee4e",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
       "locales": {
         "en": {
-          "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
-          "summary": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks."
+          "title": "Australian universities are creating AI-native graduates",
+          "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce."
         },
         "fr": {
-          "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
-          "summary": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks."
-        }
-      }
-    },
-    {
-      "slug": "20261104-cloudflare-see-the-agents-set-the-terms-new-visibility-and-contr-c62c3211",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/personal-agents-visibility-control/",
-      "publishedAt": "2026-11-04T14:00:00.000Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
-      "locales": {
-        "en": {
-          "title": "See the agents, set the terms: new visibility and control for personal agents",
-          "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access."
-        },
-        "fr": {
-          "title": "See the agents, set the terms: new visibility and control for personal agents",
-          "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access."
+          "title": "Australian universities are creating AI-native graduates",
+          "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce."
         }
       }
     },
@@ -539,46 +599,6 @@
         "fr": {
           "title": "The latest AI news we announced in October 2026",
           "summary": "Here are Google’s latest AI updates from October 2026"
-        }
-      }
-    },
-    {
-      "slug": "20261105-github-new-pull-request-overview-page-in-public-preview-3bcdfa6e",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview",
-      "publishedAt": "2026-11-05T08:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "New pull request overview page in public preview",
-          "summary": "On a long pull request, checking what’s blocking often means scrolling past dozens of comments and timeline events just to reach the merge box. And once you’re there, you still… The post New pull request overview page i…"
-        },
-        "fr": {
-          "title": "New pull request overview page in public preview",
-          "summary": "On a long pull request, checking what’s blocking often means scrolling past dozens of comments and timeline events just to reach the merge box. And once you’re there, you still… The post New pull request overview page i…"
-        }
-      }
-    },
-    {
-      "slug": "20261105-docker-cncf-score-project-improved-its-security-posture-by-joini-a5d316f6",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/cncf-score-project-improved-its-security-posture-by-joining-the-docker-sponsored-open-source-program/",
-      "publishedAt": "2026-11-05T14:00:00.000Z",
-      "discoveredAt": "2026-11-05T14:35:46.849Z",
-      "locales": {
-        "en": {
-          "title": "CNCF Score project improved its security posture by joining the Docker-Sponsored Open Source Program",
-          "summary": "See how CNCF Score improved container security with Docker Scout, Hardened Images, and the Docker-Sponsored Open Source Program."
-        },
-        "fr": {
-          "title": "CNCF Score project improved its security posture by joining the Docker-Sponsored Open Source Program",
-          "summary": "See how CNCF Score improved container security with Docker Scout, Hardened Images, and the Docker-Sponsored Open Source Program."
         }
       }
     },
@@ -619,26 +639,6 @@
         "fr": {
           "title": "Historical www-talk archives made complete",
           "summary": "W3C's archives of the www-talk mailing list are now complete, back to its creation in October 1991. This post lists some of the more interesting messages in the early development of the Web."
-        }
-      }
-    },
-    {
-      "slug": "20261105-chatgpt-merge-builds-product-and-business-tools-with-openai-tech-300d9110",
-      "toolName": "ChatGPT",
-      "category": "AI Assistant",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/merge-builds-with-openai",
-      "publishedAt": "2026-11-05T08:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Merge builds product and business tools with OpenAI technology",
-          "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates."
-        },
-        "fr": {
-          "title": "Merge builds product and business tools with OpenAI technology",
-          "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates."
         }
       }
     },
@@ -763,42 +763,142 @@
       }
     },
     {
-      "slug": "20261105-supabase-opentelemetry-traces-and-metrics-in-the-supabase-net-sd-b83bb3b1",
+      "slug": "20261106-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/dotnet-opentelemetry-support",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
       "locales": {
         "en": {
-          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         },
         "fr": {
-          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
+          "title": "The Supabase .NET SDK is now officially supported",
+          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
         }
       }
     },
     {
-      "slug": "20261105-anthropic-platform-an-update-on-independent-evaluators-dc9ed14d",
+      "slug": "20261106-anthropic-platform-donating-agent-skills-to-the-agentic-ai-found-86405d6d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "href": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+        },
+        "fr": {
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+        }
+      }
+    },
+    {
+      "slug": "20261105-vercel-token-pass-credit-now-applies-automatically-across-ai-gat-1564a9d4",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/token-pass-credit-now-applies-automatically-across-ai-gateway",
       "publishedAt": "2026-11-05T23:37:29.796Z",
       "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "Token Pass credit now applies automatically across AI Gateway Token Pass credit now applies automatically to included model usage through AI Gateway, whether a request authenticates with an API key, OIDC token, or fx login Roman Olynyk, Krish, and 1 other",
+          "summary": "6 November 6 Nov"
         },
         "fr": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "Token Pass credit now applies automatically across AI Gateway Token Pass credit now applies automatically to included model usage through AI Gateway, whether a request authenticates with an API key, OIDC token, or fx login Roman Olynyk, Krish, and 1 other",
+          "summary": "6 November 6 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261105-hugging-face-new-nvidia-cosmos-3-open-models-for-interactive-wor-e8690f74",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "publishedAt": "2026-11-05T19:35:16.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+          "summary": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation"
+        },
+        "fr": {
+          "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+          "summary": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation"
+        }
+      }
+    },
+    {
+      "slug": "20261104-cloudflare-see-the-agents-set-the-terms-new-visibility-and-contr-c62c3211",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+      "publishedAt": "2026-11-04T14:00:00.000Z",
+      "discoveredAt": "2026-11-04T14:28:47.922Z",
+      "locales": {
+        "en": {
+          "title": "See the agents, set the terms: new visibility and control for personal agents",
+          "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access."
+        },
+        "fr": {
+          "title": "See the agents, set the terms: new visibility and control for personal agents",
+          "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access."
+        }
+      }
+    },
+    {
+      "slug": "20261105-docker-cncf-score-project-improved-its-security-posture-by-joini-a5d316f6",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/cncf-score-project-improved-its-security-posture-by-joining-the-docker-sponsored-open-source-program/",
+      "publishedAt": "2026-11-05T14:00:00.000Z",
+      "discoveredAt": "2026-11-05T14:35:46.849Z",
+      "locales": {
+        "en": {
+          "title": "CNCF Score project improved its security posture by joining the Docker-Sponsored Open Source Program",
+          "summary": "See how CNCF Score improved container security with Docker Scout, Hardened Images, and the Docker-Sponsored Open Source Program."
+        },
+        "fr": {
+          "title": "CNCF Score project improved its security posture by joining the Docker-Sponsored Open Source Program",
+          "summary": "See how CNCF Score improved container security with Docker Scout, Hardened Images, and the Docker-Sponsored Open Source Program."
+        }
+      }
+    },
+    {
+      "slug": "20261105-github-secret-scanning-upgrades-detectors-adds-spacex-as-partner-e6f7bb0a",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-05-secret-scanning-upgrades-detectors-adds-spacex-as-partner",
+      "publishedAt": "2026-11-05T15:48:50.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
+          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
+        },
+        "fr": {
+          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
+          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
         }
       }
     },
@@ -823,26 +923,6 @@
       }
     },
     {
-      "slug": "20261105-vercel-gemini-omni-12-flash-now-available-on-ai-gateway-generate-6fd883e8",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Gemini Omni 1.2 Flash now available on AI Gateway Generate videos with Gemini Omni 1.2 Flash through Vercel AI Gateway using one API key, with spend tracking and request traces. Jerilyn Zheng, Walter Korman, and 1 other",
-          "summary": "+3 Elliot Dauber, Casey Gowrie, and 3 others"
-        },
-        "fr": {
-          "title": "Gemini Omni 1.2 Flash now available on AI Gateway Generate videos with Gemini Omni 1.2 Flash through Vercel AI Gateway using one API key, with spend tracking and request traces. Jerilyn Zheng, Walter Korman, and 1 other",
-          "summary": "+3 Elliot Dauber, Casey Gowrie, and 3 others"
-        }
-      }
-    },
-    {
       "slug": "20261104-nvidia-how-nvidia-uses-ai-agents-to-streamline-ai-factory-operat-ad3c135f",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -863,42 +943,22 @@
       }
     },
     {
-      "slug": "20261104-hugging-face-dharma-field-extractor-any-document-in-structured-f-5afc49da",
-      "toolName": "Hugging Face",
+      "slug": "20261105-openai-platform-gpt6-cyber-advancing-the-frontier-of-aligned-cyb-53c56afb",
+      "toolName": "OpenAI Platform",
       "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
-      "publishedAt": "2026-11-04T17:50:10.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/introducing-gpt-6-cyber",
+      "publishedAt": "2026-11-05T09:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
-          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
+          "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+          "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope."
         },
         "fr": {
-          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
-          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
-        }
-      }
-    },
-    {
-      "slug": "20261103-cloudflare-introducing-zero-wire-a-hub-for-investigating-critica-af5c97bd",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/zero-wire/",
-      "publishedAt": "2026-11-03T14:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
-          "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure."
-        },
-        "fr": {
-          "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
-          "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure."
+          "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+          "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope."
         }
       }
     },
@@ -919,46 +979,6 @@
         "fr": {
           "title": "Our newest AI Quest: Mapping the human brain",
           "summary": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”"
-        }
-      }
-    },
-    {
-      "slug": "20261104-github-codeql-2274-improves-accuracy-and-query-metadata-03daee1e",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-04-codeql-2-27-4-improves-accuracy-and-query-metadata",
-      "publishedAt": "2026-11-04T20:04:52.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
-          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
-        },
-        "fr": {
-          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
-          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-docker-the-ecosystem-is-the-answer-docker-the-blueprint-alliance-7437f847",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-blueprint-alliance-agent-baseline/",
-      "publishedAt": "2026-11-02T14:00:00.000Z",
-      "discoveredAt": "2026-11-02T15:44:45.066Z",
-      "locales": {
-        "en": {
-          "title": "The Ecosystem is the Answer: Docker, the Blueprint Alliance, and the Importance of Collaboration in the Agentic Era",
-          "summary": "Docker is a founding member of the Blueprint Alliance, a 12-company reference architecture for securing AI agents, built around four governance questions."
-        },
-        "fr": {
-          "title": "The Ecosystem is the Answer: Docker, the Blueprint Alliance, and the Importance of Collaboration in the Agentic Era",
-          "summary": "Docker is a founding member of the Blueprint Alliance, a 12-company reference architecture for securing AI agents, built around four governance questions."
         }
       }
     },
@@ -999,26 +1019,6 @@
         "fr": {
           "title": "W3C launches second pilot of program to support Open Source projects",
           "summary": "In this blog post, Ian Jacobs, Strategy Team, introduces the second pilot of the W3C Open Source program: a polyfill for the WebMCP API. WebMCP is a new JavaScript interface that allows web developers to expose their we…"
-        }
-      }
-    },
-    {
-      "slug": "20261105-openai-platform-setting-a-new-standard-for-responsible-ai-infras-f9356757",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-      "publishedAt": "2026-11-05T02:00:00.000Z",
-      "discoveredAt": "2026-11-05T14:35:46.849Z",
-      "locales": {
-        "en": {
-          "title": "Setting a new standard for responsible AI infrastructure",
-          "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development."
-        },
-        "fr": {
-          "title": "Setting a new standard for responsible AI infrastructure",
-          "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development."
         }
       }
     },
@@ -1143,42 +1143,142 @@
       }
     },
     {
-      "slug": "20261105-supabase-status-page-moves-to-incidentio-7e1c5736",
+      "slug": "20261106-supabase-public-alpha-supabase-go-sdk-107ff49a",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/status-page-migration",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
       "locales": {
         "en": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         },
         "fr": {
-          "title": "Status page moves to incident.io",
-          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+          "title": "[Public Alpha] Supabase Go SDK",
+          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
         }
       }
     },
     {
-      "slug": "20261105-anthropic-platform-strengthening-our-defenses-against-distillati-7f42709d",
+      "slug": "20261106-anthropic-platform-preparing-for-the-2026-us-midterms-c9ddbc2b",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/distillation-defenses",
+      "href": "https://www.anthropic.com/news/2026-us-midterms",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Preparing for the 2026 US midterms",
+          "summary": "Preparing for the 2026 US midterms"
+        },
+        "fr": {
+          "title": "Preparing for the 2026 US midterms",
+          "summary": "Preparing for the 2026 US midterms"
+        }
+      }
+    },
+    {
+      "slug": "20261105-vercel-vercel-schedules-is-now-in-public-beta-vercel-schedules-i-176b4a36",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
       "publishedAt": "2026-11-05T23:37:29.796Z",
       "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "Strengthening our defenses against distillation attacks",
-          "summary": "Strengthening our defenses against distillation attacks"
+          "title": "Vercel Schedules is now in public beta Vercel Schedules is now in public beta. Run tasks on a cron cadence or at a single point in time, dispatching to a Vercel Function or a Vercel Queue topic, in any Vercel environment. Schedules can also be used through dynamic schedules in Eve. +3 Elliot Dauber, Casey Gowrie, and 3 others",
+          "summary": "5 November 5 Nov"
         },
         "fr": {
-          "title": "Strengthening our defenses against distillation attacks",
-          "summary": "Strengthening our defenses against distillation attacks"
+          "title": "Vercel Schedules is now in public beta Vercel Schedules is now in public beta. Run tasks on a cron cadence or at a single point in time, dispatching to a Vercel Function or a Vercel Queue topic, in any Vercel environment. Schedules can also be used through dynamic schedules in Eve. +3 Elliot Dauber, Casey Gowrie, and 3 others",
+          "summary": "5 November 5 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261105-hugging-face-a-closer-look-at-phonon-tts-launching-high-quality--89209ab6",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/phonon-tts",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "discoveredAt": "2026-11-05T14:35:46.849Z",
+      "locales": {
+        "en": {
+          "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+          "summary": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks."
+        },
+        "fr": {
+          "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+          "summary": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks."
+        }
+      }
+    },
+    {
+      "slug": "20261103-cloudflare-introducing-zero-wire-a-hub-for-investigating-critica-af5c97bd",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/zero-wire/",
+      "publishedAt": "2026-11-03T14:00:00.000Z",
+      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
+          "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure."
+        },
+        "fr": {
+          "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
+          "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure."
+        }
+      }
+    },
+    {
+      "slug": "20261102-docker-the-ecosystem-is-the-answer-docker-the-blueprint-alliance-7437f847",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-blueprint-alliance-agent-baseline/",
+      "publishedAt": "2026-11-02T14:00:00.000Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
+      "locales": {
+        "en": {
+          "title": "The Ecosystem is the Answer: Docker, the Blueprint Alliance, and the Importance of Collaboration in the Agentic Era",
+          "summary": "Docker is a founding member of the Blueprint Alliance, a 12-company reference architecture for securing AI agents, built around four governance questions."
+        },
+        "fr": {
+          "title": "The Ecosystem is the Answer: Docker, the Blueprint Alliance, and the Importance of Collaboration in the Agentic Era",
+          "summary": "Docker is a founding member of the Blueprint Alliance, a 12-company reference architecture for securing AI agents, built around four governance questions."
+        }
+      }
+    },
+    {
+      "slug": "20261105-github-new-pull-request-overview-page-in-public-preview-3bcdfa6e",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "New pull request overview page in public preview",
+          "summary": "On a long pull request, checking what’s blocking often means scrolling past dozens of comments and timeline events just to reach the merge box. And once you’re there, you still… The post New pull request overview page i…"
+        },
+        "fr": {
+          "title": "New pull request overview page in public preview",
+          "summary": "On a long pull request, checking what’s blocking often means scrolling past dozens of comments and timeline events just to reach the merge box. And once you’re there, you still… The post New pull request overview page i…"
         }
       }
     },
@@ -1203,26 +1303,6 @@
       }
     },
     {
-      "slug": "20261105-vercel-tencent-hy4-now-available-on-ai-gateway-call-tencent-hy4--0d2095d1",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/tencent-hy4-now-available-on-ai-gateway",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Tencent Hy4 now available on AI Gateway Call Tencent Hy4 at 50% off through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "Vojtech Miksu"
-        },
-        "fr": {
-          "title": "Tencent Hy4 now available on AI Gateway Call Tencent Hy4 at 50% off through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
-          "summary": "Vojtech Miksu"
-        }
-      }
-    },
-    {
       "slug": "20261104-nvidia-use-nvidia-nemo-to-turn-agent-failures-into-tests-and-har-ce98a184",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -1243,42 +1323,22 @@
       }
     },
     {
-      "slug": "20261103-hugging-face-statebench-testing-how-language-models-track-state--a55665cf",
-      "toolName": "Hugging Face",
-      "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/statebench",
-      "publishedAt": "2026-11-03T17:15:21.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "slug": "20261105-chatgpt-merge-builds-product-and-business-tools-with-openai-tech-300d9110",
+      "toolName": "ChatGPT",
+      "category": "AI Assistant",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/merge-builds-with-openai",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "StateBench: Testing how language models track state changes over long documents",
-          "summary": "StateBench: Testing how language models track state changes over long documents"
+          "title": "Merge builds product and business tools with OpenAI technology",
+          "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates."
         },
         "fr": {
-          "title": "StateBench: Testing how language models track state changes over long documents",
-          "summary": "StateBench: Testing how language models track state changes over long documents"
-        }
-      }
-    },
-    {
-      "slug": "20261102-cloudflare-how-we-halved-dns-build-delay-and-cut-memory-use-by-8-eb6ff730",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
-      "publishedAt": "2026-11-02T14:00:00.000Z",
-      "discoveredAt": "2026-11-02T15:44:45.066Z",
-      "locales": {
-        "en": {
-          "title": "How we halved DNS build delay and cut memory use by 85%",
-          "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and h…"
-        },
-        "fr": {
-          "title": "How we halved DNS build delay and cut memory use by 85%",
-          "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and h…"
+          "title": "Merge builds product and business tools with OpenAI technology",
+          "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates."
         }
       }
     },
@@ -1299,46 +1359,6 @@
         "fr": {
           "title": "Southeast Asia’s digital economy to hit $368 billion",
           "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035."
-        }
-      }
-    },
-    {
-      "slug": "20261104-github-copilot-github-copilot-is-now-available-in-xcodes-coding--a05548ef",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
-      "publishedAt": "2026-11-04T19:10:40.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
-          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
-        },
-        "fr": {
-          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
-          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-docker-where-should-your-code-live-in-a-docker-sandbox-a6ff3130",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-sandbox-code-checkout-workflows/",
-      "publishedAt": "2026-11-02T14:00:00.000Z",
-      "discoveredAt": "2026-11-02T15:44:45.066Z",
-      "locales": {
-        "en": {
-          "title": "Where should your code live in a Docker Sandbox?",
-          "summary": "Docker Sandboxes support three ways to organize an agent’s code: shared mounts, Git worktrees, and clone mode. Here’s how to choose between them."
-        },
-        "fr": {
-          "title": "Where should your code live in a Docker Sandbox?",
-          "summary": "Docker Sandboxes support three ways to organize an agent’s code: shared mounts, Git worktrees, and clone mode. Here’s how to choose between them."
         }
       }
     },
@@ -1379,26 +1399,6 @@
         "fr": {
           "title": "Web of Things Working Group recharter: New momentum for IoT interoperability",
           "summary": "The Web of Things (WoT) Working Group rechartered for two years to improve IoT interoperability and address physical AI use cases. WoT counteracts fragmentation in IoT by providing building blocks that enable seamless d…"
-        }
-      }
-    },
-    {
-      "slug": "20261104-openai-platform-openai-to-acquire-pierre-computer-company-inc-3a06f84c",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/openai-to-acquire-pierre",
-      "publishedAt": "2026-11-04T14:30:00.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "OpenAI to acquire Pierre Computer Company, Inc.",
-          "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code."
-        },
-        "fr": {
-          "title": "OpenAI to acquire Pierre Computer Company, Inc.",
-          "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code."
         }
       }
     },
@@ -1523,42 +1523,142 @@
       }
     },
     {
-      "slug": "20261105-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
+      "slug": "20261105-supabase-opentelemetry-traces-and-metrics-in-the-supabase-net-sd-b83bb3b1",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
-      "publishedAt": "2026-11-05T14:35:46.849Z",
-      "discoveredAt": "2026-11-05T14:35:46.849Z",
-      "locales": {
-        "en": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
-        },
-        "fr": {
-          "title": "Scoped personal access tokens are now generally available",
-          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
-        }
-      }
-    },
-    {
-      "slug": "20261105-anthropic-platform-introducing-the-anthropic-cyber-mission-db9c3550",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "href": "https://supabase.com/changelog/dotnet-opentelemetry-support",
       "publishedAt": "2026-11-05T23:37:29.796Z",
       "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "Introducing the Anthropic Cyber Mission",
-          "summary": "Introducing the Anthropic Cyber Mission"
+          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
         },
         "fr": {
-          "title": "Introducing the Anthropic Cyber Mission",
-          "summary": "Introducing the Anthropic Cyber Mission"
+          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
+        }
+      }
+    },
+    {
+      "slug": "20261106-anthropic-platform-anthropic-opens-singapore-office-and-signs-mo-87253efe",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/singapore-office-opening",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+        },
+        "fr": {
+          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+        }
+      }
+    },
+    {
+      "slug": "20261105-vercel-gemini-omni-12-flash-now-available-on-ai-gateway-generate-6fd883e8",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway",
+      "publishedAt": "2026-11-05T23:37:29.796Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "Gemini Omni 1.2 Flash now available on AI Gateway Generate videos with Gemini Omni 1.2 Flash through Vercel AI Gateway using one API key, with spend tracking and request traces. Jerilyn Zheng, Walter Korman, and 1 other",
+          "summary": "+3 Elliot Dauber, Casey Gowrie, and 3 others"
+        },
+        "fr": {
+          "title": "Gemini Omni 1.2 Flash now available on AI Gateway Generate videos with Gemini Omni 1.2 Flash through Vercel AI Gateway using one API key, with spend tracking and request traces. Jerilyn Zheng, Walter Korman, and 1 other",
+          "summary": "+3 Elliot Dauber, Casey Gowrie, and 3 others"
+        }
+      }
+    },
+    {
+      "slug": "20261104-hugging-face-dharma-field-extractor-any-document-in-structured-f-5afc49da",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "publishedAt": "2026-11-04T17:50:10.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
+        },
+        "fr": {
+          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
+        }
+      }
+    },
+    {
+      "slug": "20261102-cloudflare-how-we-halved-dns-build-delay-and-cut-memory-use-by-8-eb6ff730",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+      "publishedAt": "2026-11-02T14:00:00.000Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
+      "locales": {
+        "en": {
+          "title": "How we halved DNS build delay and cut memory use by 85%",
+          "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and h…"
+        },
+        "fr": {
+          "title": "How we halved DNS build delay and cut memory use by 85%",
+          "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and h…"
+        }
+      }
+    },
+    {
+      "slug": "20261102-docker-where-should-your-code-live-in-a-docker-sandbox-a6ff3130",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-sandbox-code-checkout-workflows/",
+      "publishedAt": "2026-11-02T14:00:00.000Z",
+      "discoveredAt": "2026-11-02T15:44:45.066Z",
+      "locales": {
+        "en": {
+          "title": "Where should your code live in a Docker Sandbox?",
+          "summary": "Docker Sandboxes support three ways to organize an agent’s code: shared mounts, Git worktrees, and clone mode. Here’s how to choose between them."
+        },
+        "fr": {
+          "title": "Where should your code live in a Docker Sandbox?",
+          "summary": "Docker Sandboxes support three ways to organize an agent’s code: shared mounts, Git worktrees, and clone mode. Here’s how to choose between them."
+        }
+      }
+    },
+    {
+      "slug": "20261104-github-codeql-2274-improves-accuracy-and-query-metadata-03daee1e",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-04-codeql-2-27-4-improves-accuracy-and-query-metadata",
+      "publishedAt": "2026-11-04T20:04:52.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
+          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
+        },
+        "fr": {
+          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
+          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
         }
       }
     },
@@ -1583,26 +1683,6 @@
       }
     },
     {
-      "slug": "20261105-vercel-vercel-security-review-now-in-public-beta-vercel-security-f537ef36",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-security-review-public-beta",
-      "publishedAt": "2026-11-05T14:35:46.849Z",
-      "discoveredAt": "2026-11-05T14:35:46.849Z",
-      "locales": {
-        "en": {
-          "title": "Vercel Security Review now in public beta Vercel Security Review is now in public beta. Every push to your GitHub repositories is reviewed for vulnerabilities, and Vercel Agent can open the fix. +3 Nate McGrady, Karim Rahal, and 3 others",
-          "summary": "3 November 3 Nov"
-        },
-        "fr": {
-          "title": "Vercel Security Review now in public beta Vercel Security Review is now in public beta. Every push to your GitHub repositories is reviewed for vulnerabilities, and Vercel Agent can open the fix. +3 Nate McGrady, Karim Rahal, and 3 others",
-          "summary": "3 November 3 Nov"
-        }
-      }
-    },
-    {
       "slug": "20261104-nvidia-nvidia-cuda-135-brings-nvidia-vera-rubin-ga-support-8e7c0f56",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -1623,42 +1703,22 @@
       }
     },
     {
-      "slug": "20261103-hugging-face-palette-teaching-a-small-model-to-build-decks-in-yo-bc417703",
-      "toolName": "Hugging Face",
+      "slug": "20261105-openai-platform-setting-a-new-standard-for-responsible-ai-infras-f9356757",
+      "toolName": "OpenAI Platform",
       "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "publishedAt": "2026-11-03T16:35:36.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "publishedAt": "2026-11-05T02:00:00.000Z",
+      "discoveredAt": "2026-11-05T14:35:46.849Z",
       "locales": {
         "en": {
-          "title": "Palette: teaching a small model to build decks in your design language",
-          "summary": "Palette: teaching a small model to build decks in your design language"
+          "title": "Setting a new standard for responsible AI infrastructure",
+          "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development."
         },
         "fr": {
-          "title": "Palette: teaching a small model to build decks in your design language",
-          "summary": "Palette: teaching a small model to build decks in your design language"
-        }
-      }
-    },
-    {
-      "slug": "20261030-cloudflare-4-real-tracking-exploitation-and-patching-of-emudhras-132cf973",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/emudhra-patching/",
-      "publishedAt": "2026-10-30T17:38:50.000Z",
-      "discoveredAt": "2026-10-30T22:15:48.157Z",
-      "locales": {
-        "en": {
-          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
-          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, an…"
-        },
-        "fr": {
-          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
-          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, an…"
+          "title": "Setting a new standard for responsible AI infrastructure",
+          "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development."
         }
       }
     },
@@ -1679,46 +1739,6 @@
         "fr": {
           "title": "Gemini 4 Argon: Built to solve your hardest problems",
           "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
-        }
-      }
-    },
-    {
-      "slug": "20261104-github-copilot-byok-and-enterprise-custom-models-in-the-copilot--0f281cab",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
-      "publishedAt": "2026-11-04T00:32:19.000Z",
-      "discoveredAt": "2026-11-04T14:28:47.922Z",
-      "locales": {
-        "en": {
-          "title": "BYOK and enterprise custom models in the Copilot usage API",
-          "summary": "The Copilot usage metrics API now shows bring your own key (BYOK) usage across GitHub Copilot, so you can separate it from Copilot-hosted model usage. Reports cover two kinds of… The post BYOK and enterprise custom mode…"
-        },
-        "fr": {
-          "title": "BYOK and enterprise custom models in the Copilot usage API",
-          "summary": "The Copilot usage metrics API now shows bring your own key (BYOK) usage across GitHub Copilot, so you can separate it from Copilot-hosted model usage. Reports cover two kinds of… The post BYOK and enterprise custom mode…"
-        }
-      }
-    },
-    {
-      "slug": "20261029-docker-coding-agent-horror-stories-the-cve-that-did-not-exist-6b5b11da",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/coding-agent-horror-stories-the-cve-that-did-not-exist/",
-      "publishedAt": "2026-10-29T13:00:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
-      "locales": {
-        "en": {
-          "title": "Coding Agent Horror Stories: The CVE That Did Not Exist",
-          "summary": "An AI code review agent invented a CVE and recommended dangerous fixes. Learn how Docker Sandboxes contain agents and why their output needs verification."
-        },
-        "fr": {
-          "title": "Coding Agent Horror Stories: The CVE That Did Not Exist",
-          "summary": "An AI code review agent invented a CVE and recommended dangerous fixes. Learn how Docker Sandboxes contain agents and why their output needs verification."
         }
       }
     },
@@ -1759,26 +1779,6 @@
         "fr": {
           "title": "Improved thread navigation in W3C's mailing list archives",
           "summary": "A new feature is available in W3C's mailing list archives, aiming to make it easier to read and navigate message threads."
-        }
-      }
-    },
-    {
-      "slug": "20261104-openai-platform-a-thousand-fewer-paths-to-root-a4f4c423",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/a-thousand-fewer-paths-to-root",
-      "publishedAt": "2026-11-04T08:00:00.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "A thousand fewer paths to root",
-          "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel."
-        },
-        "fr": {
-          "title": "A thousand fewer paths to root",
-          "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel."
         }
       }
     },
@@ -1903,42 +1903,142 @@
       }
     },
     {
-      "slug": "20261105-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "slug": "20261105-supabase-status-page-moves-to-incidentio-7e1c5736",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/no-access-org-role",
-      "publishedAt": "2026-11-05T14:35:46.849Z",
-      "discoveredAt": "2026-11-05T14:35:46.849Z",
-      "locales": {
-        "en": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
-        },
-        "fr": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
-        }
-      }
-    },
-    {
-      "slug": "20261105-anthropic-platform-2026-usage-policy-update-7a238471",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "href": "https://supabase.com/changelog/status-page-migration",
       "publishedAt": "2026-11-05T23:37:29.796Z",
       "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "2026 Usage Policy update",
-          "summary": "2026 Usage Policy update"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         },
         "fr": {
-          "title": "2026 Usage Policy update",
-          "summary": "2026 Usage Policy update"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
+        }
+      }
+    },
+    {
+      "slug": "20261106-anthropic-platform-building-on-our-commitment-to-american-scient-26f50496",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "publishedAt": "2026-11-06T14:13:37.575Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Building on our commitment to American scientific discovery",
+          "summary": "Building on our commitment to American scientific discovery"
+        },
+        "fr": {
+          "title": "Building on our commitment to American scientific discovery",
+          "summary": "Building on our commitment to American scientific discovery"
+        }
+      }
+    },
+    {
+      "slug": "20261105-vercel-tencent-hy4-now-available-on-ai-gateway-call-tencent-hy4--0d2095d1",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/tencent-hy4-now-available-on-ai-gateway",
+      "publishedAt": "2026-11-05T23:37:29.796Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "Tencent Hy4 now available on AI Gateway Call Tencent Hy4 at 50% off through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "Vojtech Miksu"
+        },
+        "fr": {
+          "title": "Tencent Hy4 now available on AI Gateway Call Tencent Hy4 at 50% off through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. Jerilyn Zheng, Zachary Chen",
+          "summary": "Vojtech Miksu"
+        }
+      }
+    },
+    {
+      "slug": "20261103-hugging-face-statebench-testing-how-language-models-track-state--a55665cf",
+      "toolName": "Hugging Face",
+      "category": "AI Platform",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/statebench",
+      "publishedAt": "2026-11-03T17:15:21.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "locales": {
+        "en": {
+          "title": "StateBench: Testing how language models track state changes over long documents",
+          "summary": "StateBench: Testing how language models track state changes over long documents"
+        },
+        "fr": {
+          "title": "StateBench: Testing how language models track state changes over long documents",
+          "summary": "StateBench: Testing how language models track state changes over long documents"
+        }
+      }
+    },
+    {
+      "slug": "20261030-cloudflare-4-real-tracking-exploitation-and-patching-of-emudhras-132cf973",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/emudhra-patching/",
+      "publishedAt": "2026-10-30T17:38:50.000Z",
+      "discoveredAt": "2026-10-30T22:15:48.157Z",
+      "locales": {
+        "en": {
+          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, an…"
+        },
+        "fr": {
+          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, an…"
+        }
+      }
+    },
+    {
+      "slug": "20261029-docker-coding-agent-horror-stories-the-cve-that-did-not-exist-6b5b11da",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/coding-agent-horror-stories-the-cve-that-did-not-exist/",
+      "publishedAt": "2026-10-29T13:00:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "locales": {
+        "en": {
+          "title": "Coding Agent Horror Stories: The CVE That Did Not Exist",
+          "summary": "An AI code review agent invented a CVE and recommended dangerous fixes. Learn how Docker Sandboxes contain agents and why their output needs verification."
+        },
+        "fr": {
+          "title": "Coding Agent Horror Stories: The CVE That Did Not Exist",
+          "summary": "An AI code review agent invented a CVE and recommended dangerous fixes. Learn how Docker Sandboxes contain agents and why their output needs verification."
+        }
+      }
+    },
+    {
+      "slug": "20261104-github-copilot-github-copilot-is-now-available-in-xcodes-coding--a05548ef",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
+      "publishedAt": "2026-11-04T19:10:40.000Z",
+      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
+          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
+        },
+        "fr": {
+          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
+          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
         }
       }
     },
@@ -1963,26 +2063,6 @@
       }
     },
     {
-      "slug": "20261105-vercel-vercel-ci-no-longer-requires-a-linked-vercel-project-you--52e9b971",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-ci-no-longer-requires-a-linked-vercel-project",
-      "publishedAt": "2026-11-05T14:35:46.849Z",
-      "discoveredAt": "2026-11-05T14:35:46.849Z",
-      "locales": {
-        "en": {
-          "title": "Vercel CI no longer requires a linked Vercel project You can now use Vercel CI standalone. It is not longer a requirement to have a Vercel project as a pre-requisite Vojtech Miksu",
-          "summary": "+3 Nate McGrady, Karim Rahal, and 3 others"
-        },
-        "fr": {
-          "title": "Vercel CI no longer requires a linked Vercel project You can now use Vercel CI standalone. It is not longer a requirement to have a Vercel project as a pre-requisite Vojtech Miksu",
-          "summary": "+3 Nate McGrady, Karim Rahal, and 3 others"
-        }
-      }
-    },
-    {
       "slug": "20261104-kubernetes-configure-certify-and-operate-kubernetes-gpu-clusters-527bad4b",
       "toolName": "Kubernetes",
       "category": "Cloud/DevOps",
@@ -2003,42 +2083,22 @@
       }
     },
     {
-      "slug": "20261103-hugging-face-cwe-bench-v2-more-coverage-quality-and-transparency-20954e3a",
-      "toolName": "Hugging Face",
+      "slug": "20261105-openai-platform-franklin-templeton-uses-openai-to-support-invest-c0d7b080",
+      "toolName": "OpenAI Platform",
       "category": "AI Platform",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/cwe-bench",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
+      "source": "OpenAI News",
+      "sourceFeed": "https://openai.com/news/rss.xml",
+      "href": "https://openai.com/index/franklin-templeton",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
       "locales": {
         "en": {
-          "title": "CWE-bench v2: More coverage, quality, and transparency",
-          "summary": "CWE-bench v2: More coverage, quality, and transparency"
+          "title": "Franklin Templeton uses OpenAI to support investment research",
+          "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks."
         },
         "fr": {
-          "title": "CWE-bench v2: More coverage, quality, and transparency",
-          "summary": "CWE-bench v2: More coverage, quality, and transparency"
-        }
-      }
-    },
-    {
-      "slug": "20261030-cloudflare-cloudflare-services-for-private-origins-is-now-genera-5e6112ff",
-      "toolName": "Cloudflare",
-      "category": "Cloud Platform",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/private-origins-public-to-private/",
-      "publishedAt": "2026-10-30T14:23:43.000Z",
-      "discoveredAt": "2026-10-30T15:53:47.336Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare services for private origins is now generally available",
-          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
-        },
-        "fr": {
-          "title": "Cloudflare services for private origins is now generally available",
-          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
+          "title": "Franklin Templeton uses OpenAI to support investment research",
+          "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks."
         }
       }
     },
@@ -2059,46 +2119,6 @@
         "fr": {
           "title": "Introducing Playground: Create and play custom games",
           "summary": "Playground is a new experimental gaming platform that lets you create, play, and share custom games."
-        }
-      }
-    },
-    {
-      "slug": "20261103-github-dependabot-version-updates-support-agent-package-manager-51a16b58",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
-      "publishedAt": "2026-11-03T20:24:07.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
-      "locales": {
-        "en": {
-          "title": "Dependabot version updates support Agent Package Manager",
-          "summary": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot versio…"
-        },
-        "fr": {
-          "title": "Dependabot version updates support Agent Package Manager",
-          "summary": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot versio…"
-        }
-      }
-    },
-    {
-      "slug": "20261028-docker-win-the-agentic-era-together-introducing-the-docker-navig-dc7f3109",
-      "toolName": "Docker",
-      "category": "Developer Platform",
-      "source": "Docker Blog",
-      "sourceFeed": "https://www.docker.com/blog/feed/",
-      "href": "https://www.docker.com/blog/docker-navigator-partner-program/",
-      "publishedAt": "2026-10-28T13:00:00.000Z",
-      "discoveredAt": "2026-10-28T22:32:01.739Z",
-      "locales": {
-        "en": {
-          "title": "Win the Agentic Era, Together: Introducing the Docker Navigator Partner Program",
-          "summary": "Docker is launching the Navigator Partner Program, with three tiers, co-selling benefits, and a new incentive for every registered AI governance deal."
-        },
-        "fr": {
-          "title": "Win the Agentic Era, Together: Introducing the Docker Navigator Partner Program",
-          "summary": "Docker is launching the Navigator Partner Program, with three tiers, co-selling benefits, and a new incentive for every registered AI governance deal."
         }
       }
     },
@@ -2139,26 +2159,6 @@
         "fr": {
           "title": "Introducing group activity pages",
           "summary": "W3C groups now have an Activity page that shows, month by month, their charters, publications, meetings, participants and GitHub work in one place. The pages are in beta, and we would like your feedback."
-        }
-      }
-    },
-    {
-      "slug": "20261104-openai-platform-daybreak-red-is-now-available-in-aws-govcloud-us-75679f5a",
-      "toolName": "OpenAI Platform",
-      "category": "AI Platform",
-      "source": "OpenAI News",
-      "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/daybreak-red-aws-govcloud",
-      "publishedAt": "2026-11-04T07:00:00.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-          "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work."
-        },
-        "fr": {
-          "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-          "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work."
         }
       }
     },
@@ -2283,122 +2283,122 @@
       }
     },
     {
-      "slug": "20261104-supabase-aspnet-core-dependency-injection-for-the-supabase-net-s-e2f5eeb1",
+      "slug": "20261105-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/dotnet-dependency-injection-extension",
-      "publishedAt": "2026-11-04T23:38:59.532Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
+      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
+      "publishedAt": "2026-11-05T14:35:46.849Z",
+      "discoveredAt": "2026-11-05T14:35:46.849Z",
       "locales": {
         "en": {
-          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         },
         "fr": {
-          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         }
       }
     },
     {
-      "slug": "20261105-anthropic-platform-investing-in-the-public-benefit-were-committi-4c6c987b",
+      "slug": "20261105-anthropic-platform-open-call-for-guest-investigators-in-the-life-98d45c75",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/public-benefit-fund",
-      "publishedAt": "2026-11-05T14:35:46.849Z",
-      "discoveredAt": "2026-11-05T14:35:46.849Z",
+      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "publishedAt": "2026-11-05T23:37:29.796Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
       "locales": {
         "en": {
-          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-          "summary": "/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
         },
         "fr": {
-          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-          "summary": "/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
         }
       }
     },
     {
-      "slug": "20261007-cursor-remote-control-for-local-agents-c94ae882",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "Cursor Changelog",
-      "sourceFeed": "https://www.cursor.com/changelog",
-      "href": "https://www.cursor.com/changelog/remote-control-local-agents",
-      "publishedAt": "2026-10-07T13:18:37.807Z",
-      "discoveredAt": "2026-10-07T13:18:37.807Z",
-      "locales": {
-        "en": {
-          "title": "Remote control for local agents",
-          "summary": "You can now see and reply to the local agents running on your computer from the Cursor iOS app."
-        },
-        "fr": {
-          "title": "Remote control for local agents",
-          "summary": "You can now see and reply to the local agents running on your computer from the Cursor iOS app."
-        }
-      }
-    },
-    {
-      "slug": "20261105-vercel-diagnose-vercel-cli-setup-problems-with-vercel-doctor-dia-72f374bb",
+      "slug": "20261105-vercel-vercel-security-review-now-in-public-beta-vercel-security-f537ef36",
       "toolName": "Vercel",
       "category": "Cloud Platform",
       "source": "Vercel Changelog",
       "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-cli-now-diagnoses-setup-problems-with-vercel-doctor",
+      "href": "https://vercel.com/changelog/vercel-security-review-public-beta",
       "publishedAt": "2026-11-05T14:35:46.849Z",
       "discoveredAt": "2026-11-05T14:35:46.849Z",
       "locales": {
         "en": {
-          "title": "Diagnose Vercel CLI setup problems with vercel doctor Diagnose Vercel CLI setup problems with vercel doctor. It checks your CLI version, login, team, project link, and vercel.json, and suggests fixes. Melkey Moksyakov Software Engineer",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+          "title": "Vercel Security Review now in public beta Vercel Security Review is now in public beta. Every push to your GitHub repositories is reviewed for vulnerabilities, and Vercel Agent can open the fix. +3 Nate McGrady, Karim Rahal, and 3 others",
+          "summary": "3 November 3 Nov"
         },
         "fr": {
-          "title": "Diagnose Vercel CLI setup problems with vercel doctor Diagnose Vercel CLI setup problems with vercel doctor. It checks your CLI version, login, team, project link, and vercel.json, and suggests fixes. Melkey Moksyakov Software Engineer",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+          "title": "Vercel Security Review now in public beta Vercel Security Review is now in public beta. Every push to your GitHub repositories is reviewed for vulnerabilities, and Vercel Agent can open the fix. +3 Nate McGrady, Karim Rahal, and 3 others",
+          "summary": "3 November 3 Nov"
         }
       }
     },
     {
-      "slug": "20261103-nvidia-run-ai-models-for-edge-application-development-with-just--e060e1d4",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
-      "publishedAt": "2026-11-03T20:37:09.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
-      "locales": {
-        "en": {
-          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
-          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
-        },
-        "fr": {
-          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
-          "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
-        }
-      }
-    },
-    {
-      "slug": "20261103-hugging-face-transformers-model-integration-contracts-fec0e46c",
+      "slug": "20261103-hugging-face-palette-teaching-a-small-model-to-build-decks-in-yo-bc417703",
       "toolName": "Hugging Face",
       "category": "AI Platform",
       "source": "Hugging Face Blog",
       "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/transformers-mic",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T14:08:21.831Z",
+      "href": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "publishedAt": "2026-11-03T16:35:36.000Z",
+      "discoveredAt": "2026-11-03T23:19:26.247Z",
       "locales": {
         "en": {
-          "title": "Transformers Model Integration Contracts",
-          "summary": "Transformers Model Integration Contracts"
+          "title": "Palette: teaching a small model to build decks in your design language",
+          "summary": "Palette: teaching a small model to build decks in your design language"
         },
         "fr": {
-          "title": "Transformers Model Integration Contracts",
-          "summary": "Transformers Model Integration Contracts"
+          "title": "Palette: teaching a small model to build decks in your design language",
+          "summary": "Palette: teaching a small model to build decks in your design language"
+        }
+      }
+    },
+    {
+      "slug": "20261030-cloudflare-cloudflare-services-for-private-origins-is-now-genera-5e6112ff",
+      "toolName": "Cloudflare",
+      "category": "Cloud Platform",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/private-origins-public-to-private/",
+      "publishedAt": "2026-10-30T14:23:43.000Z",
+      "discoveredAt": "2026-10-30T15:53:47.336Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare services for private origins is now generally available",
+          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
+        },
+        "fr": {
+          "title": "Cloudflare services for private origins is now generally available",
+          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
+        }
+      }
+    },
+    {
+      "slug": "20261028-docker-win-the-agentic-era-together-introducing-the-docker-navig-dc7f3109",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "Docker Blog",
+      "sourceFeed": "https://www.docker.com/blog/feed/",
+      "href": "https://www.docker.com/blog/docker-navigator-partner-program/",
+      "publishedAt": "2026-10-28T13:00:00.000Z",
+      "discoveredAt": "2026-10-28T22:32:01.739Z",
+      "locales": {
+        "en": {
+          "title": "Win the Agentic Era, Together: Introducing the Docker Navigator Partner Program",
+          "summary": "Docker is launching the Navigator Partner Program, with three tiers, co-selling benefits, and a new incentive for every registered AI governance deal."
+        },
+        "fr": {
+          "title": "Win the Agentic Era, Together: Introducing the Docker Navigator Partner Program",
+          "summary": "Docker is launching the Navigator Partner Program, with three tiers, co-selling benefits, and a new incentive for every registered AI governance deal."
         }
       }
     }
