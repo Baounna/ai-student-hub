@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T23:06:21.841Z",
+  "updatedAt": "2026-11-07T12:56:41.379Z",
   "items": [
+    {
+      "slug": "20261107-agensgraph-218-released-graph-database-on-postgresql-18-with-exp-d6696e41",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/agensgraph-218-released-graph-database-on-postgresql-18-with-expanded-iso-gql-support-3437/",
+      "publishedAt": "2026-11-07T00:00:00.000Z",
+      "discoveredAt": "2026-11-07T12:56:41.379Z",
+      "locales": {
+        "en": {
+          "title": "AgensGraph 2.18 Released: Graph Database on PostgreSQL 18 with Expanded ISO GQL Support",
+          "summary": "The AgensGraph Development Team is pleased to announce the release of AgensGraph v2.18.6.1, the latest version in the 2.18 series. AgensGraph is an open-source graph database, built on PostgreSQL 18.6, that runs SQL and graph que…"
+        },
+        "fr": {
+          "title": "AgensGraph 2.18 Released: Graph Database on PostgreSQL 18 with Expanded ISO GQL Support",
+          "summary": "The AgensGraph Development Team is pleased to announce the release of AgensGraph v2.18.6.1, the latest version in the 2.18 series. AgensGraph is an open-source graph database, built on PostgreSQL 18.6, that runs SQL and graph que…"
+        }
+      }
+    },
     {
       "slug": "20261106-speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blac-a2d076a9",
       "topic": "Computer Systems",
@@ -250,25 +269,6 @@
       }
     },
     {
-      "slug": "20261105-mydbr-77-brings-web-reporting-to-postgresql-c37005d8",
-      "topic": "Computer Science",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/mydbr-77-brings-web-reporting-to-postgresql-3424/",
-      "publishedAt": "2026-11-05T00:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:28.861Z",
-      "locales": {
-        "en": {
-          "title": "myDBR 7.7 brings web reporting to PostgreSQL",
-          "summary": "Helsinki, Finland, 2026-10-28 - myDBR.com announced PostgreSQL support in myDBR, its web-based reporting platform for SQL databases. PostgreSQL 12 or later can now hold both myDBR's own objects and the reports, alongside the MySQ…"
-        },
-        "fr": {
-          "title": "myDBR 7.7 brings web reporting to PostgreSQL",
-          "summary": "Helsinki, Finland, 2026-10-28 - myDBR.com announced PostgreSQL support in myDBR, its web-based reporting platform for SQL databases. PostgreSQL 12 or later can now hold both myDBR's own objects and the reports, alongside the MySQ…"
-        }
-      }
-    },
-    {
       "slug": "20261104-a-new-go-api-for-json-aed4d9c6",
       "topic": "Computer Science",
       "source": "Go Blog",
@@ -360,6 +360,25 @@
         "fr": {
           "title": "Featured Redesigning source control at Anthropic As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months.",
           "summary": "Featured Redesigning source control at Anthropic As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five…"
+        }
+      }
+    },
+    {
+      "slug": "20261107-brume-fk-safe-pseudonymization-for-postgresql-test-and-debug-cop-138a705a",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/brume-fk-safe-pseudonymization-for-postgresql-test-and-debug-copies-3434/",
+      "publishedAt": "2026-11-07T00:00:00.000Z",
+      "discoveredAt": "2026-11-07T12:56:41.379Z",
+      "locales": {
+        "en": {
+          "title": "Brume: FK-safe pseudonymization for PostgreSQL test and debug copies",
+          "summary": "Brume 2.1, an open source (Apache 2.0) tool that creates deterministic, foreign-key-safe pseudonymized copies of PostgreSQL databases for testing, debugging and demos, is now available. Why Brume? Development teams often need rea…"
+        },
+        "fr": {
+          "title": "Brume: FK-safe pseudonymization for PostgreSQL test and debug copies",
+          "summary": "Brume 2.1, an open source (Apache 2.0) tool that creates deterministic, foreign-key-safe pseudonymized copies of PostgreSQL databases for testing, debugging and demos, is now available. Why Brume? Development teams often need rea…"
         }
       }
     },
@@ -611,25 +630,6 @@
       }
     },
     {
-      "slug": "20261105-reindb-read-only-performance-monitoring-for-postgresql-first-dat-46203de9",
-      "topic": "AI Performance",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/reindb-read-only-performance-monitoring-for-postgresql-first-database-free-3432/",
-      "publishedAt": "2026-11-05T00:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:28.861Z",
-      "locales": {
-        "en": {
-          "title": "ReinDB: read-only performance monitoring for PostgreSQL, first database free",
-          "summary": "Bandlei has released ReinDB, read-only performance monitoring for PostgreSQL, self-managed or on Amazon RDS and Aurora. ReinDB learns what normal looks like for each database and statement, hour by hour, using pg_stat_statements,…"
-        },
-        "fr": {
-          "title": "ReinDB: read-only performance monitoring for PostgreSQL, first database free",
-          "summary": "Bandlei has released ReinDB, read-only performance monitoring for PostgreSQL, self-managed or on Amazon RDS and Aurora. ReinDB learns what normal looks like for each database and statement, hour by hour, using pg_stat_statements,…"
-        }
-      }
-    },
-    {
       "slug": "20261026-our-response-to-the-emudhra-key-disclosure-incident-b19d44d9",
       "topic": "Security & Standards",
       "source": "Go Blog",
@@ -702,6 +702,25 @@
         "fr": {
           "title": "Announcing the Workload Conformance Working Group",
           "summary": "We are excited to announce that the Kubernetes community now has a Workload Conformance Working Group . The working group is writing a shared standard for how workloads behave at runtime on Kubernetes. To get it right, we need in…"
+        }
+      }
+    },
+    {
+      "slug": "20261107-heapdeck-an-on-call-monitor-for-postgresql-on-iphone-and-ipad-f6a1d3fc",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/heapdeck-an-on-call-monitor-for-postgresql-on-iphone-and-ipad-3436/",
+      "publishedAt": "2026-11-07T00:00:00.000Z",
+      "discoveredAt": "2026-11-07T12:56:41.379Z",
+      "locales": {
+        "en": {
+          "title": "HeapDeck: an on-call monitor for PostgreSQL on iPhone and iPad",
+          "summary": "HeapDeck is a new native app for engineers on call for PostgreSQL 13 to 19, on the App Store for iPhone and iPad. It opens on one health verdict with ten tiles. The Locks screen draws the tree from pg_blocking_pids() with the roo…"
+        },
+        "fr": {
+          "title": "HeapDeck: an on-call monitor for PostgreSQL on iPhone and iPad",
+          "summary": "HeapDeck is a new native app for engineers on call for PostgreSQL 13 to 19, on the App Store for iPhone and iPad. It opens on one health verdict with ten tiles. The Locks screen draws the tree from pg_blocking_pids() with the roo…"
         }
       }
     },
@@ -953,25 +972,6 @@
       }
     },
     {
-      "slug": "20261105-autobase-212-released-aab5ba28",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/autobase-212-released-3430/",
-      "publishedAt": "2026-11-05T00:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:28.861Z",
-      "locales": {
-        "en": {
-          "title": "Autobase 2.12 released",
-          "summary": "We are pleased to announce the release of Autobase 2.12 ! Highlights Built-in Monitoring Dashboards Autobase isn't intended to replace your monitoring system. Instead, we've integrated with Netdata, which we consider one of the b…"
-        },
-        "fr": {
-          "title": "Autobase 2.12 released",
-          "summary": "We are pleased to announce the release of Autobase 2.12 ! Highlights Built-in Monitoring Dashboards Autobase isn't intended to replace your monitoring system. Instead, we've integrated with Netdata, which we consider one of the b…"
-        }
-      }
-    },
-    {
       "slug": "20261021-help-set-gos-priorities-for-next-year-1ecfd1ce",
       "topic": "Systems & Backend",
       "source": "Go Blog",
@@ -1044,6 +1044,25 @@
         "fr": {
           "title": "Why Is My Kubernetes Job Still Pending? Tracing Kueue Admission with Headlamp",
           "summary": "You submit a Kubernetes Job and wait for its Pods to appear. A minute passes. Then another. The Job is still suspended, there are no application logs, and there may not even be a Pod to inspect. In a cluster managed by Kueue , th…"
+        }
+      }
+    },
+    {
+      "slug": "20261107-pg-observability-map-100-released-730d445a",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg-observability-map-100-released-3427/",
+      "publishedAt": "2026-11-07T00:00:00.000Z",
+      "discoveredAt": "2026-11-07T12:56:41.379Z",
+      "locales": {
+        "en": {
+          "title": "PG Observability Map 1.0.0 Released",
+          "summary": "We are pleased to announce the initial release (1.0.0) of PG Observability Map , a interactive web-based tool designed to visualize and explore PostgreSQL observability, metrics, and internal diagnostic views. Key Features &amp;…"
+        },
+        "fr": {
+          "title": "PG Observability Map 1.0.0 Released",
+          "summary": "We are pleased to announce the initial release (1.0.0) of PG Observability Map , a interactive web-based tool designed to visualize and explore PostgreSQL observability, metrics, and internal diagnostic views. Key Features &amp;…"
         }
       }
     },
@@ -1295,25 +1314,6 @@
       }
     },
     {
-      "slug": "20261103-pgbadger-v133-has-been-released-d6c21ac3",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgbadger-v133-has-been-released-3435/",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "pgbadger v13.3 has been released",
-          "summary": "Antananarivo, Madagascar - November 03, 2026 pgBadger pgBadger is a PostgreSQL performance analyzer, built for speed with fully detailed reports based on your PostgreSQL log files. pgBadger 13.3 was released today, this is a main…"
-        },
-        "fr": {
-          "title": "pgbadger v13.3 has been released",
-          "summary": "Antananarivo, Madagascar - November 03, 2026 pgBadger pgBadger is a PostgreSQL performance analyzer, built for speed with fully detailed reports based on your PostgreSQL log files. pgBadger 13.3 was released today, this is a main…"
-        }
-      }
-    },
-    {
       "slug": "20261016-interactive-refactoring-in-gopls-66b01ef3",
       "topic": "Systems & Backend",
       "source": "Go Blog",
@@ -1386,6 +1386,25 @@
         "fr": {
           "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know",
           "summary": "In Linux, cgroups (control groups) are a kernel feature used for managing system resources. Kubernetes uses cgroups to allocate resources like CPU and memory to containers, ensuring that applications run smoothly without interfer…"
+        }
+      }
+    },
+    {
+      "slug": "20261105-mydbr-77-brings-web-reporting-to-postgresql-c37005d8",
+      "topic": "Computer Science",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/mydbr-77-brings-web-reporting-to-postgresql-3424/",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:28.861Z",
+      "locales": {
+        "en": {
+          "title": "myDBR 7.7 brings web reporting to PostgreSQL",
+          "summary": "Helsinki, Finland, 2026-10-28 - myDBR.com announced PostgreSQL support in myDBR, its web-based reporting platform for SQL databases. PostgreSQL 12 or later can now hold both myDBR's own objects and the reports, alongside the MySQ…"
+        },
+        "fr": {
+          "title": "myDBR 7.7 brings web reporting to PostgreSQL",
+          "summary": "Helsinki, Finland, 2026-10-28 - myDBR.com announced PostgreSQL support in myDBR, its web-based reporting platform for SQL databases. PostgreSQL 12 or later can now hold both myDBR's own objects and the reports, alongside the MySQ…"
         }
       }
     },
@@ -1637,25 +1656,6 @@
       }
     },
     {
-      "slug": "20261102-security-release-for-psqlodbc-6786d77d",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/security-release-for-psqlodbc-3431/",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "Security release for psqlodbc",
-          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
-        },
-        "fr": {
-          "title": "Security release for psqlodbc",
-          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
-        }
-      }
-    },
-    {
       "slug": "20261014-better-http1-connection-reuse-1f9db072",
       "topic": "Systems & Backend",
       "source": "Go Blog",
@@ -1728,6 +1728,25 @@
         "fr": {
           "title": "Scaling Kubernetes Workloads with Node Swap",
           "summary": "Memory is often the first hard limit a Kubernetes cluster hits. Nodes run out of RAM long before they run out of CPU, and the new wave of agentic AI workloads makes this worse. These workloads demand large memory footprints to st…"
+        }
+      }
+    },
+    {
+      "slug": "20261105-reindb-read-only-performance-monitoring-for-postgresql-first-dat-46203de9",
+      "topic": "AI Performance",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/reindb-read-only-performance-monitoring-for-postgresql-first-database-free-3432/",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:28.861Z",
+      "locales": {
+        "en": {
+          "title": "ReinDB: read-only performance monitoring for PostgreSQL, first database free",
+          "summary": "Bandlei has released ReinDB, read-only performance monitoring for PostgreSQL, self-managed or on Amazon RDS and Aurora. ReinDB learns what normal looks like for each database and statement, hour by hour, using pg_stat_statements,…"
+        },
+        "fr": {
+          "title": "ReinDB: read-only performance monitoring for PostgreSQL, first database free",
+          "summary": "Bandlei has released ReinDB, read-only performance monitoring for PostgreSQL, self-managed or on Amazon RDS and Aurora. ReinDB learns what normal looks like for each database and statement, hour by hour, using pg_stat_statements,…"
         }
       }
     },
@@ -1979,25 +1998,6 @@
       }
     },
     {
-      "slug": "20261102-hypopg-145-is-out-ebbd1267",
-      "topic": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/hypopg-145-is-out-3428/",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:40.841Z",
-      "locales": {
-        "en": {
-          "title": "HypoPG 1.4.5 is out!",
-          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog Bug fixes…"
-        },
-        "fr": {
-          "title": "HypoPG 1.4.5 is out!",
-          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog Bug fixes…"
-        }
-      }
-    },
-    {
       "slug": "20261002-arch-specific-simd-in-go-aa4c22f4",
       "topic": "Systems & Backend",
       "source": "Go Blog",
@@ -2051,6 +2051,25 @@
         "fr": {
           "title": "Physicist Jun Ye Wins Wolf Prize in Physics",
           "summary": "The award cites Ye’s achievement in “transformative, widely applicable advances in the control of ultracold atomic systems.”"
+        }
+      }
+    },
+    {
+      "slug": "20261105-autobase-212-released-aab5ba28",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/autobase-212-released-3430/",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:28.861Z",
+      "locales": {
+        "en": {
+          "title": "Autobase 2.12 released",
+          "summary": "We are pleased to announce the release of Autobase 2.12 ! Highlights Built-in Monitoring Dashboards Autobase isn't intended to replace your monitoring system. Instead, we've integrated with Netdata, which we consider one of the b…"
+        },
+        "fr": {
+          "title": "Autobase 2.12 released",
+          "summary": "We are pleased to announce the release of Autobase 2.12 ! Highlights Built-in Monitoring Dashboards Autobase isn't intended to replace your monitoring system. Instead, we've integrated with Netdata, which we consider one of the b…"
         }
       }
     },
@@ -2302,25 +2321,6 @@
       }
     },
     {
-      "slug": "20261031-e-maj-501-major-security-update-57a82fba",
-      "topic": "Security & Standards",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/e-maj-501-major-security-update-3425/",
-      "publishedAt": "2026-10-31T00:00:00.000Z",
-      "discoveredAt": "2026-10-31T12:22:37.280Z",
-      "locales": {
-        "en": {
-          "title": "E-Maj 5.0.1 : Major Security Update.",
-          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
-        },
-        "fr": {
-          "title": "E-Maj 5.0.1 : Major Security Update.",
-          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
-        }
-      }
-    },
-    {
       "slug": "20260924-platform-independent-simd-in-go-e0645c8a",
       "topic": "Systems & Backend",
       "source": "Go Blog",
@@ -2355,6 +2355,25 @@
         "fr": {
           "title": "NIST Provides Updates on National Construction Safety Team Activities",
           "summary": "The presentations highlighted the importance of NIST applying its own expertise and the expertise of others through collaborations and contracts."
+        }
+      }
+    },
+    {
+      "slug": "20261103-pgbadger-v133-has-been-released-d6c21ac3",
+      "topic": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pgbadger-v133-has-been-released-3435/",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "pgbadger v13.3 has been released",
+          "summary": "Antananarivo, Madagascar - November 03, 2026 pgBadger pgBadger is a PostgreSQL performance analyzer, built for speed with fully detailed reports based on your PostgreSQL log files. pgBadger 13.3 was released today, this is a main…"
+        },
+        "fr": {
+          "title": "pgbadger v13.3 has been released",
+          "summary": "Antananarivo, Madagascar - November 03, 2026 pgBadger pgBadger is a PostgreSQL performance analyzer, built for speed with fully detailed reports based on your PostgreSQL log files. pgBadger 13.3 was released today, this is a main…"
         }
       }
     },
@@ -2606,21 +2625,21 @@
       }
     },
     {
-      "slug": "20261031-pgadmin-4-v919-released-20829b5b",
-      "topic": "Systems & Backend",
+      "slug": "20261102-security-release-for-psqlodbc-6786d77d",
+      "topic": "Security & Standards",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgadmin-4-v919-released-3426/",
-      "publishedAt": "2026-10-31T00:00:00.000Z",
-      "discoveredAt": "2026-10-31T12:22:37.280Z",
+      "href": "https://www.postgresql.org/about/news/security-release-for-psqlodbc-3431/",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
       "locales": {
         "en": {
-          "title": "pgAdmin 4 v9.19 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
+          "title": "Security release for psqlodbc",
+          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
         },
         "fr": {
-          "title": "pgAdmin 4 v9.19 Released",
-          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
+          "title": "Security release for psqlodbc",
+          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
         }
       }
     },
@@ -2872,21 +2891,21 @@
       }
     },
     {
-      "slug": "20261028-postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-884d8d8f",
-      "topic": "Computer Science",
+      "slug": "20261102-hypopg-145-is-out-ebbd1267",
+      "topic": "Systems & Backend",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-3363/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "href": "https://www.postgresql.org/about/news/hypopg-145-is-out-3428/",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "discoveredAt": "2026-11-03T00:56:40.841Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
-          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
+          "title": "HypoPG 1.4.5 is out!",
+          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog Bug fixes…"
         },
         "fr": {
-          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
-          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
+          "title": "HypoPG 1.4.5 is out!",
+          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog Bug fixes…"
         }
       }
     },
@@ -3119,21 +3138,21 @@
       }
     },
     {
-      "slug": "20261028-estuary-expands-postgresql-cdc-with-targeted-backfills-and-scala-c3c04b2c",
-      "topic": "Computer Science",
+      "slug": "20261031-e-maj-501-major-security-update-57a82fba",
+      "topic": "Security & Standards",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/estuary-expands-postgresql-cdc-with-targeted-backfills-and-scalable-discovery-3419/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "href": "https://www.postgresql.org/about/news/e-maj-501-major-security-update-3425/",
+      "publishedAt": "2026-10-31T00:00:00.000Z",
+      "discoveredAt": "2026-10-31T12:22:37.280Z",
       "locales": {
         "en": {
-          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
-          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
+          "title": "E-Maj 5.0.1 : Major Security Update.",
+          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
         },
         "fr": {
-          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
-          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
+          "title": "E-Maj 5.0.1 : Major Security Update.",
+          "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
         }
       }
     },
@@ -3366,21 +3385,21 @@
       }
     },
     {
-      "slug": "20261028-oxynote-an-open-source-internal-wiki-with-live-postgresql-query--8703437b",
-      "topic": "Computer Science",
+      "slug": "20261031-pgadmin-4-v919-released-20829b5b",
+      "topic": "Systems & Backend",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/oxynote-an-open-source-internal-wiki-with-live-postgresql-query-charts-3406/",
-      "publishedAt": "2026-10-28T00:00:00.000Z",
-      "discoveredAt": "2026-10-28T12:48:38.285Z",
+      "href": "https://www.postgresql.org/about/news/pgadmin-4-v919-released-3426/",
+      "publishedAt": "2026-10-31T00:00:00.000Z",
+      "discoveredAt": "2026-10-31T12:22:37.280Z",
       "locales": {
         "en": {
-          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
-          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
+          "title": "pgAdmin 4 v9.19 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
         },
         "fr": {
-          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
-          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
+          "title": "pgAdmin 4 v9.19 Released",
+          "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
         }
       }
     },
@@ -3594,21 +3613,21 @@
       }
     },
     {
-      "slug": "20261028-revivedb-supabase-backups-restore-tested-against-the-source-sche-f15781fd",
-      "topic": "Systems & Backend",
+      "slug": "20261028-postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-884d8d8f",
+      "topic": "Computer Science",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/revivedb-supabase-backups-restore-tested-against-the-source-schema-3422/",
+      "href": "https://www.postgresql.org/about/news/postgresqlscale24x-cfp-closing-soon-on-nov-1-2027-3363/",
       "publishedAt": "2026-10-28T00:00:00.000Z",
       "discoveredAt": "2026-10-28T12:48:38.285Z",
       "locales": {
         "en": {
-          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
-          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
         },
         "fr": {
-          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
-          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
+          "title": "PostgreSQL@SCaLE24x CfP closing soon on Nov 1, 2027",
+          "summary": "Hi folks! We're hosting a PostgreSQL track at SCaLE again — come join us in sunny Pasadena! PostgreSQL@SCaLE is a two-day event on Thursday–Friday, April 1–2, 2027, at the Pasadena Convention Center, part of SCaLE 24x (April 1–4)…"
         }
       }
     },
@@ -3822,21 +3841,21 @@
       }
     },
     {
-      "slug": "20261028-postgresql-anonymizer-33-major-security-update-f4b74201",
-      "topic": "Security & Standards",
+      "slug": "20261028-estuary-expands-postgresql-cdc-with-targeted-backfills-and-scala-c3c04b2c",
+      "topic": "Computer Science",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-33-major-security-update-3423/",
+      "href": "https://www.postgresql.org/about/news/estuary-expands-postgresql-cdc-with-targeted-backfills-and-scalable-discovery-3419/",
       "publishedAt": "2026-10-28T00:00:00.000Z",
       "discoveredAt": "2026-10-28T12:48:38.285Z",
       "locales": {
         "en": {
-          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
-          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
+          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
+          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
         },
         "fr": {
-          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
-          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
+          "title": "Estuary Expands PostgreSQL CDC with Targeted Backfills and Scalable Discovery",
+          "summary": "Estuary has released several updates to its PostgreSQL change data capture (CDC) connector focused on backfill recovery, discovery at scale, and schema-change detection. Targeted Backfills PostgreSQL capture bindings now support…"
         }
       }
     },
@@ -4050,21 +4069,21 @@
       }
     },
     {
-      "slug": "20261026-pgivm-117-released-25992fa2",
-      "topic": "Systems & Backend",
+      "slug": "20261028-oxynote-an-open-source-internal-wiki-with-live-postgresql-query--8703437b",
+      "topic": "Computer Science",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_ivm-117-released-3420/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "href": "https://www.postgresql.org/about/news/oxynote-an-open-source-internal-wiki-with-live-postgresql-query-charts-3406/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
       "locales": {
         "en": {
-          "title": "pg_ivm 1.17 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
+          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
+          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
         },
         "fr": {
-          "title": "pg_ivm 1.17 released",
-          "summary": "IVM Development Group is pleased to announce the release of pg_ivm 1.17 . Changes since the v1.16 release include: What's Changed New features Add replace option to restore_immv() (Yugo Nagata) Allow restore_immv() to replace exi…"
+          "title": "Oxynote: an open source internal wiki with live PostgreSQL query charts",
+          "summary": "Oxynote is a new open-source (Apache-2.0) internal wiki for engineering teams. A page can include a chart that runs its own query against Prometheus, PostgreSQL, MySQL, or MariaDB right next to the explanatory text, and changes t…"
         }
       }
     },
@@ -4259,21 +4278,21 @@
       }
     },
     {
-      "slug": "20261026-hypopg-144-is-out-09c21e18",
+      "slug": "20261028-revivedb-supabase-backups-restore-tested-against-the-source-sche-f15781fd",
       "topic": "Systems & Backend",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/hypopg-144-is-out-3421/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "href": "https://www.postgresql.org/about/news/revivedb-supabase-backups-restore-tested-against-the-source-schema-3422/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
       "locales": {
         "en": {
-          "title": "HypoPG 1.4.4 is out!",
-          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
+          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
+          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
         },
         "fr": {
-          "title": "HypoPG 1.4.4 is out!",
-          "summary": "HypoPG 1.4.4 is out! Tainan, Taiwan - Sun 25 Oct 2026 HypoPG 1.4.4 I'm pleased to announce the release of the version 1.4.4 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above…"
+          "title": "ReviveDB: Supabase backups restore-tested against the source schema",
+          "summary": "ReviveDB backs up Supabase projects on Postgres 17 outside Supabase, and restores every database backup into a temporary PostgreSQL database before it counts as verified. The restore is compared with an inventory of the source: t…"
         }
       }
     },
@@ -4468,21 +4487,21 @@
       }
     },
     {
-      "slug": "20261026-pghdrhistogram-100---exact-percentiles-in-postgresql-52a6bea1",
-      "topic": "Computer Science",
+      "slug": "20261028-postgresql-anonymizer-33-major-security-update-f4b74201",
+      "topic": "Security & Standards",
       "source": "PostgreSQL News",
       "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pg_hdr_histogram-100-exact-percentiles-in-postgresql-3418/",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-10-26T14:31:09.949Z",
+      "href": "https://www.postgresql.org/about/news/postgresql-anonymizer-33-major-security-update-3423/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "discoveredAt": "2026-10-28T12:48:38.285Z",
       "locales": {
         "en": {
-          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
-          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
+          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
+          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
         },
         "fr": {
-          "title": "pg_hdr_histogram 1.0.0 - exact percentiles in PostgreSQL",
-          "summary": "pg_hdr_histogram is a PostgreSQL extension for exact-latency percentiles. Most monitoring tools approximate percentiles from fixed buckets. pg_hdr_histogram stores a full HDR histogram as a first-class type, so p50 / p99 / p99.9…"
+          "title": "PostgreSQL Anonymizer 3.3 : Major Security Update",
+          "summary": "Eymoutiers, France, October 27th, 2026 Dalibo is pleased to announce PostgreSQL Anonymizer 3.3 with a panel of important security fixes. Enhanced Privacy Protection for Your Data PostgreSQL Anonymizer is an extension that hides o…"
         }
       }
     },
@@ -4540,25 +4559,6 @@
         "fr": {
           "title": "ServiceNow on-behalf-of token exchange with Bedrock AgentCore Gateway",
           "summary": "Learn how to configure Amazon Bedrock AgentCore Gateway for an on-behalf-of (OBO) token exchange with Microsoft Entra ID, so an AI agent can call the ServiceNow REST API while preserving the calling user's identity. AgentCore Gat…"
-        }
-      }
-    },
-    {
-      "slug": "20261026-anthropic-files-s-1-with-the-sec-for-proposed-initial-public-off-edf59637",
-      "topic": "AI Systems",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/s1-sec",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:28.861Z",
-      "locales": {
-        "en": {
-          "title": "Anthropic files S-1 with the SEC for proposed initial public offering Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
-          "summary": "Announcements Oct 26, 2026"
-        },
-        "fr": {
-          "title": "Anthropic files S-1 with the SEC for proposed initial public offering Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
-          "summary": "Announcements Oct 26, 2026"
         }
       }
     }

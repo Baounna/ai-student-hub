@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T23:06:23.044Z",
+  "updatedAt": "2026-11-07T12:56:42.840Z",
   "items": [
     {
       "slug": "20261201-supabase-framework-adapters-in-supabaseserver-are-deprecated-d76214ae",
@@ -23,22 +23,82 @@
       }
     },
     {
-      "slug": "20261106-anthropic-platform-investing-in-the-public-benefit-were-committi-4c6c987b",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
+      "slug": "20261107-claude-expanding-our-partnership-with-gsa-to-bring-claude-to-all-16faca12",
+      "toolName": "Claude",
+      "category": "AI Assistant",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/public-benefit-fund",
-      "publishedAt": "2026-11-06T23:06:23.044Z",
-      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "href": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
       "locales": {
         "en": {
-          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-          "summary": "/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
         },
         "fr": {
-          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-          "summary": "/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "summary": "Expanding our partnership with GSA to bring Claude to all levels of government"
+        }
+      }
+    },
+    {
+      "slug": "20261107-vercel-chat-sdk-agents-can-now-stream-generative-ui-with-json-re-ca6f08fa",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/json-render-and-chat-sdk-agents",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "Chat SDK agents can now stream generative UI with json-render Stream AI-generated cards from one typed catalog to Slack, Teams, and every other Chat SDK platform. Railly Hugo, Lahfir, and 1 other",
+          "summary": "6 November 6 Nov"
+        },
+        "fr": {
+          "title": "Chat SDK agents can now stream generative UI with json-render Stream AI-generated cards from one typed catalog to Slack, Teams, and every other Chat SDK platform. Railly Hugo, Lahfir, and 1 other",
+          "summary": "6 November 6 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261107-github-copilot-copilot-code-review-api-management-and-review-ove-d28d7745",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates",
+      "publishedAt": "2026-11-07T00:27:19.000Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "Copilot code review: API management and review overview updates",
+          "summary": "You can now manage GitHub Copilot code review settings through the REST and GraphQL APIs, from enterprise policy down to individual repositories. Copilot’s review overview comment is now more compact,… The post Copilot…"
+        },
+        "fr": {
+          "title": "Copilot code review: API management and review overview updates",
+          "summary": "You can now manage GitHub Copilot code review settings through the REST and GraphQL APIs, from enterprise policy down to individual repositories. Copilot’s review overview comment is now more compact,… The post Copilot…"
+        }
+      }
+    },
+    {
+      "slug": "20261107-docker-agensgraph-218-released-graph-database-on-postgresql-18-w-d6696e41",
+      "toolName": "Docker",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/agensgraph-218-released-graph-database-on-postgresql-18-with-expanded-iso-gql-support-3437/",
+      "publishedAt": "2026-11-07T00:00:00.000Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "AgensGraph 2.18 Released: Graph Database on PostgreSQL 18 with Expanded ISO GQL Support",
+          "summary": "The AgensGraph Development Team is pleased to announce the release of AgensGraph v2.18.6.1, the latest version in the 2.18 series. AgensGraph is an open-source graph database, built on PostgreSQL 18.6, that runs SQL and…"
+        },
+        "fr": {
+          "title": "AgensGraph 2.18 Released: Graph Database on PostgreSQL 18 with Expanded ISO GQL Support",
+          "summary": "The AgensGraph Development Team is pleased to announce the release of AgensGraph v2.18.6.1, the latest version in the 2.18 series. AgensGraph is an open-source graph database, built on PostgreSQL 18.6, that runs SQL and…"
         }
       }
     },
@@ -63,26 +123,6 @@
       }
     },
     {
-      "slug": "20261106-vercel-ai-gateway-adds-deepseek-search-and-fetch-tools-ai-gatewa-8d6a841a",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools",
-      "publishedAt": "2026-11-06T23:06:23.044Z",
-      "discoveredAt": "2026-11-06T23:06:23.044Z",
-      "locales": {
-        "en": {
-          "title": "AI Gateway adds DeepSeek Search and Fetch tools AI Gateway now supports DeepSeek Search and Fetch. Search the web and retrieve page content with any tool-calling model and one API key. Jerilyn Zheng, Zachary Chen",
-          "summary": "6 November 6 Nov"
-        },
-        "fr": {
-          "title": "AI Gateway adds DeepSeek Search and Fetch tools AI Gateway now supports DeepSeek Search and Fetch. Search the web and retrieve page content with any tool-calling model and one API key. Jerilyn Zheng, Zachary Chen",
-          "summary": "6 November 6 Nov"
-        }
-      }
-    },
-    {
       "slug": "20261106-nvidia-speed-up-image-generation-with-flux-3-image-klein-on-nvid-a2d076a9",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -99,26 +139,6 @@
         "fr": {
           "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
           "summary": "When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an..."
-        }
-      }
-    },
-    {
-      "slug": "20261106-github-copilot-copilot-impact-dashboard-adds-chat-and-vs-code-ag-df141a94",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage",
-      "publishedAt": "2026-11-06T22:17:28.000Z",
-      "discoveredAt": "2026-11-06T23:06:23.044Z",
-      "locales": {
-        "en": {
-          "title": "Copilot impact dashboard adds chat and VS Code agent usage",
-          "summary": "The Agent adoption chart in the Copilot impact dashboard now includes Copilot Chat and the VS Code Agents window, so you can see engagement across nine Copilot experiences. The adoption… The post Copilot impact dashboar…"
-        },
-        "fr": {
-          "title": "Copilot impact dashboard adds chat and VS Code agent usage",
-          "summary": "The Agent adoption chart in the Copilot impact dashboard now includes Copilot Chat and the VS Code Agents window, so you can see engagement across nine Copilot experiences. The adoption… The post Copilot impact dashboar…"
         }
       }
     },
@@ -263,26 +283,6 @@
       }
     },
     {
-      "slug": "20261105-cursor-mydbr-77-brings-web-reporting-to-postgresql-c37005d8",
-      "toolName": "Cursor",
-      "category": "Developer Assistant",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/mydbr-77-brings-web-reporting-to-postgresql-3424/",
-      "publishedAt": "2026-11-05T00:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "myDBR 7.7 brings web reporting to PostgreSQL",
-          "summary": "Helsinki, Finland, 2026-10-28 - myDBR.com announced PostgreSQL support in myDBR, its web-based reporting platform for SQL databases. PostgreSQL 12 or later can now hold both myDBR's own objects and the reports, alongsid…"
-        },
-        "fr": {
-          "title": "myDBR 7.7 brings web reporting to PostgreSQL",
-          "summary": "Helsinki, Finland, 2026-10-28 - myDBR.com announced PostgreSQL support in myDBR, its web-based reporting platform for SQL databases. PostgreSQL 12 or later can now hold both myDBR's own objects and the reports, alongsid…"
-        }
-      }
-    },
-    {
       "slug": "20261104-go-a-new-go-api-for-json-aed4d9c6",
       "toolName": "Go",
       "category": "Systems & Backend",
@@ -403,22 +403,82 @@
       }
     },
     {
-      "slug": "20261106-anthropic-platform-physicist-christopher-stubbs-joins-anthropics-b12d9d8f",
+      "slug": "20261107-anthropic-platform-donating-agent-skills-to-the-agentic-ai-found-86405d6d",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "href": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+        },
+        "fr": {
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "summary": "Donating Agent Skills to the Agentic AI Foundation"
+        }
+      }
+    },
+    {
+      "slug": "20261107-vercel-vercel-schedules-is-now-in-public-beta-vercel-schedules-i-176b4a36",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "Vercel Schedules is now in public beta Vercel Schedules is now in public beta. Run tasks on a cron cadence or at a single point in time, dispatching to a Vercel Function or a Vercel Queue topic, in any Vercel environment. Schedules can also be used through dynamic schedules in Eve. +3 Elliot Dauber, Casey Gowrie, and 3 others",
+          "summary": "5 November 5 Nov"
+        },
+        "fr": {
+          "title": "Vercel Schedules is now in public beta Vercel Schedules is now in public beta. Run tasks on a cron cadence or at a single point in time, dispatching to a Vercel Function or a Vercel Queue topic, in any Vercel environment. Schedules can also be used through dynamic schedules in Eve. +3 Elliot Dauber, Casey Gowrie, and 3 others",
+          "summary": "5 November 5 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261106-github-copilot-copilot-impact-dashboard-adds-chat-and-vs-code-ag-df141a94",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage",
+      "publishedAt": "2026-11-06T22:17:28.000Z",
       "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "Copilot impact dashboard adds chat and VS Code agent usage",
+          "summary": "The Agent adoption chart in the Copilot impact dashboard now includes Copilot Chat and the VS Code Agents window, so you can see engagement across nine Copilot experiences. The adoption… The post Copilot impact dashboar…"
         },
         "fr": {
-          "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-          "summary": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust"
+          "title": "Copilot impact dashboard adds chat and VS Code agent usage",
+          "summary": "The Agent adoption chart in the Copilot impact dashboard now includes Copilot Chat and the VS Code Agents window, so you can see engagement across nine Copilot experiences. The adoption… The post Copilot impact dashboar…"
+        }
+      }
+    },
+    {
+      "slug": "20261107-postgresql-brume-fk-safe-pseudonymization-for-postgresql-test-an-138a705a",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/brume-fk-safe-pseudonymization-for-postgresql-test-and-debug-copies-3434/",
+      "publishedAt": "2026-11-07T00:00:00.000Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "Brume: FK-safe pseudonymization for PostgreSQL test and debug copies",
+          "summary": "Brume 2.1, an open source (Apache 2.0) tool that creates deterministic, foreign-key-safe pseudonymized copies of PostgreSQL databases for testing, debugging and demos, is now available. Why Brume? Development teams ofte…"
+        },
+        "fr": {
+          "title": "Brume: FK-safe pseudonymization for PostgreSQL test and debug copies",
+          "summary": "Brume 2.1, an open source (Apache 2.0) tool that creates deterministic, foreign-key-safe pseudonymized copies of PostgreSQL databases for testing, debugging and demos, is now available. Why Brume? Development teams ofte…"
         }
       }
     },
@@ -443,26 +503,6 @@
       }
     },
     {
-      "slug": "20261106-vercel-vercel-cli-can-now-set-new-projects-to-expire-set-new-pro-fc7161ee",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-cli-can-now-set-new-projects-to-expire",
-      "publishedAt": "2026-11-06T23:06:23.044Z",
-      "discoveredAt": "2026-11-06T23:06:23.044Z",
-      "locales": {
-        "en": {
-          "title": "Vercel CLI can now set new projects to expire Set new projects to expire when you deploy them, and remove the expiration with vercel project keep. Thibault Miranda de Oliveira Engineering, Growth",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
-        },
-        "fr": {
-          "title": "Vercel CLI can now set new projects to expire Set new projects to expire when you deploy them, and remove the expiration with vercel project keep. Thibault Miranda de Oliveira Engineering, Growth",
-          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
-        }
-      }
-    },
-    {
       "slug": "20261106-nvidia-how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-874cfb41",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -479,26 +519,6 @@
         "fr": {
           "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
           "summary": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a..."
-        }
-      }
-    },
-    {
-      "slug": "20261106-github-copilot-usage-metrics-api-adds-code-review-details-and-ad-dcf7efe8",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate",
-      "publishedAt": "2026-11-06T00:19:07.000Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
-      "locales": {
-        "en": {
-          "title": "Usage metrics API adds code review details and addressed rate",
-          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-rev…"
-        },
-        "fr": {
-          "title": "Usage metrics API adds code review details and addressed rate",
-          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-rev…"
         }
       }
     },
@@ -643,26 +663,6 @@
       }
     },
     {
-      "slug": "20261105-postgresql-reindb-read-only-performance-monitoring-for-postgresq-46203de9",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/reindb-read-only-performance-monitoring-for-postgresql-first-database-free-3432/",
-      "publishedAt": "2026-11-05T00:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "ReinDB: read-only performance monitoring for PostgreSQL, first database free",
-          "summary": "Bandlei has released ReinDB, read-only performance monitoring for PostgreSQL, self-managed or on Amazon RDS and Aurora. ReinDB learns what normal looks like for each database and statement, hour by hour, using pg_stat_s…"
-        },
-        "fr": {
-          "title": "ReinDB: read-only performance monitoring for PostgreSQL, first database free",
-          "summary": "Bandlei has released ReinDB, read-only performance monitoring for PostgreSQL, self-managed or on Amazon RDS and Aurora. ReinDB learns what normal looks like for each database and statement, hour by hour, using pg_stat_s…"
-        }
-      }
-    },
-    {
       "slug": "20261026-go-our-response-to-the-emudhra-key-disclosure-incident-b19d44d9",
       "toolName": "Go",
       "category": "Systems & Backend",
@@ -763,42 +763,102 @@
       }
     },
     {
-      "slug": "20261106-supabase-public-beta-supabase-knowledge-base-ac9824a3",
+      "slug": "20261107-supabase-opentelemetry-traces-and-metrics-in-the-supabase-net-sd-b83bb3b1",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/kb-launch",
-      "publishedAt": "2026-11-06T23:06:23.044Z",
-      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "href": "https://supabase.com/changelog/dotnet-opentelemetry-support",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
       "locales": {
         "en": {
-          "title": "[Public Beta] Supabase Knowledge Base",
-          "summary": "New Feature The Supabase Knowledge Base is live in public beta at supabase.com/kb. It hosts troubleshooting and migration guides for developers and their agents."
+          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
         },
         "fr": {
-          "title": "[Public Beta] Supabase Knowledge Base",
-          "summary": "New Feature The Supabase Knowledge Base is live in public beta at supabase.com/kb. It hosts troubleshooting and migration guides for developers and their agents."
+          "title": "OpenTelemetry traces and metrics in the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now emits traces and metrics for Auth, Postgrest, Storage, and Functions. Collect them with OpenTelemetry and export to any observability backend."
         }
       }
     },
     {
-      "slug": "20261106-anthropic-platform-an-update-on-independent-evaluators-dc9ed14d",
+      "slug": "20261107-anthropic-platform-open-call-for-guest-investigators-in-the-life-98d45c75",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "publishedAt": "2026-11-06T23:06:23.044Z",
-      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "href": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
       "locales": {
         "en": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
         },
         "fr": {
-          "title": "An update on independent evaluators",
-          "summary": "An update on independent evaluators"
+          "title": "Open call for guest investigators in the life sciences",
+          "summary": "Open call for guest investigators in the life sciences"
+        }
+      }
+    },
+    {
+      "slug": "20261107-vercel-gemini-omni-12-flash-now-available-on-ai-gateway-generate-6fd883e8",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "Gemini Omni 1.2 Flash now available on AI Gateway Generate videos with Gemini Omni 1.2 Flash through Vercel AI Gateway using one API key, with spend tracking and request traces. Jerilyn Zheng, Walter Korman, and 1 other",
+          "summary": "+3 Elliot Dauber, Casey Gowrie, and 3 others"
+        },
+        "fr": {
+          "title": "Gemini Omni 1.2 Flash now available on AI Gateway Generate videos with Gemini Omni 1.2 Flash through Vercel AI Gateway using one API key, with spend tracking and request traces. Jerilyn Zheng, Walter Korman, and 1 other",
+          "summary": "+3 Elliot Dauber, Casey Gowrie, and 3 others"
+        }
+      }
+    },
+    {
+      "slug": "20261106-github-copilot-github-copilot-weekly-releases-november-2-5175c20e",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2",
+      "publishedAt": "2026-11-06T21:00:26.000Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "GitHub Copilot weekly releases — November 2",
+          "summary": "This week, Copilot comes to JetBrains Air and Xcode’s coding assistant, with updates to help you manage pull requests, settings, and agent sessions. GitHub Copilot app Set up Agent Merge… The post GitHub Copilot weekly…"
+        },
+        "fr": {
+          "title": "GitHub Copilot weekly releases — November 2",
+          "summary": "This week, Copilot comes to JetBrains Air and Xcode’s coding assistant, with updates to help you manage pull requests, settings, and agent sessions. GitHub Copilot app Set up Agent Merge… The post GitHub Copilot weekly…"
+        }
+      }
+    },
+    {
+      "slug": "20261107-postgresql-heapdeck-an-on-call-monitor-for-postgresql-on-iphone--f6a1d3fc",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/heapdeck-an-on-call-monitor-for-postgresql-on-iphone-and-ipad-3436/",
+      "publishedAt": "2026-11-07T00:00:00.000Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "HeapDeck: an on-call monitor for PostgreSQL on iPhone and iPad",
+          "summary": "HeapDeck is a new native app for engineers on call for PostgreSQL 13 to 19, on the App Store for iPhone and iPad. It opens on one health verdict with ten tiles. The Locks screen draws the tree from pg_blocking_pids() wi…"
+        },
+        "fr": {
+          "title": "HeapDeck: an on-call monitor for PostgreSQL on iPhone and iPad",
+          "summary": "HeapDeck is a new native app for engineers on call for PostgreSQL 13 to 19, on the App Store for iPhone and iPad. It opens on one health verdict with ten tiles. The Locks screen draws the tree from pg_blocking_pids() wi…"
         }
       }
     },
@@ -823,26 +883,6 @@
       }
     },
     {
-      "slug": "20261106-vercel-vercel-tracing-is-now-generally-available-vercel-tracing--05a03358",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/vercel-tracing-is-now-generally-available",
-      "publishedAt": "2026-11-06T23:06:23.044Z",
-      "discoveredAt": "2026-11-06T23:06:23.044Z",
-      "locales": {
-        "en": {
-          "title": "Vercel Tracing is now generally available Vercel Tracing is now generally available on all plans. Search every span with KQL in the dashboard or CLI. New Next.js 16.5 projects get tracing with no setup, and traces now stay for up to 14 days. Darpan Kakadia, Luc Leray, and 1 other",
-          "summary": "Thibault Miranda de Oliveira Engineering, Growth"
-        },
-        "fr": {
-          "title": "Vercel Tracing is now generally available Vercel Tracing is now generally available on all plans. Search every span with KQL in the dashboard or CLI. New Next.js 16.5 projects get tracing with no setup, and traces now stay for up to 14 days. Darpan Kakadia, Luc Leray, and 1 other",
-          "summary": "Thibault Miranda de Oliveira Engineering, Growth"
-        }
-      }
-    },
-    {
       "slug": "20261106-nvidia-accelerating-reinforcement-learning-weight-refit-with-the-ee3ebb0c",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -859,26 +899,6 @@
         "fr": {
           "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
           "summary": "During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For..."
-        }
-      }
-    },
-    {
-      "slug": "20261106-github-copilot-usage-metrics-api-flags-telemetry-and-version-gap-b6de41f0",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-05-usage-metrics-api-flags-telemetry-and-version-gaps",
-      "publishedAt": "2026-11-06T00:08:31.000Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
-      "locales": {
-        "en": {
-          "title": "Usage metrics API flags telemetry and version gaps",
-          "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags…"
-        },
-        "fr": {
-          "title": "Usage metrics API flags telemetry and version gaps",
-          "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags…"
         }
       }
     },
@@ -1023,26 +1043,6 @@
       }
     },
     {
-      "slug": "20261105-postgresql-autobase-212-released-aab5ba28",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/autobase-212-released-3430/",
-      "publishedAt": "2026-11-05T00:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Autobase 2.12 released",
-          "summary": "We are pleased to announce the release of Autobase 2.12 ! Highlights Built-in Monitoring Dashboards Autobase isn't intended to replace your monitoring system. Instead, we've integrated with Netdata, which we consider on…"
-        },
-        "fr": {
-          "title": "Autobase 2.12 released",
-          "summary": "We are pleased to announce the release of Autobase 2.12 ! Highlights Built-in Monitoring Dashboards Autobase isn't intended to replace your monitoring system. Instead, we've integrated with Netdata, which we consider on…"
-        }
-      }
-    },
-    {
       "slug": "20261021-go-help-set-gos-priorities-for-next-year-1ecfd1ce",
       "toolName": "Go",
       "category": "Systems & Backend",
@@ -1143,42 +1143,102 @@
       }
     },
     {
-      "slug": "20261106-supabase-aspnet-core-dependency-injection-for-the-supabase-net-s-e2f5eeb1",
+      "slug": "20261107-supabase-status-page-moves-to-incidentio-7e1c5736",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/dotnet-dependency-injection-extension",
-      "publishedAt": "2026-11-06T23:06:23.044Z",
-      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "href": "https://supabase.com/changelog/status-page-migration",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
       "locales": {
         "en": {
-          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         },
         "fr": {
-          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
-          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
+          "title": "Status page moves to incident.io",
+          "summary": "Improvement status.supabase.com now runs on incident.io. Email subscribers carry over. SMS, Slack, webhook, and RSS subscribers must resubscribe; the new page supports only Email, RSS"
         }
       }
     },
     {
-      "slug": "20261106-anthropic-platform-strengthening-our-defenses-against-distillati-7f42709d",
+      "slug": "20261107-anthropic-platform-preparing-for-the-2026-us-midterms-c9ddbc2b",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/distillation-defenses",
+      "href": "https://www.anthropic.com/news/2026-us-midterms",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "Preparing for the 2026 US midterms",
+          "summary": "Preparing for the 2026 US midterms"
+        },
+        "fr": {
+          "title": "Preparing for the 2026 US midterms",
+          "summary": "Preparing for the 2026 US midterms"
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-ai-gateway-adds-deepseek-search-and-fetch-tools-ai-gatewa-8d6a841a",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools",
       "publishedAt": "2026-11-06T23:06:23.044Z",
       "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "Strengthening our defenses against distillation attacks",
-          "summary": "Strengthening our defenses against distillation attacks"
+          "title": "AI Gateway adds DeepSeek Search and Fetch tools AI Gateway now supports DeepSeek Search and Fetch. Search the web and retrieve page content with any tool-calling model and one API key. Jerilyn Zheng, Zachary Chen",
+          "summary": "6 November 6 Nov"
         },
         "fr": {
-          "title": "Strengthening our defenses against distillation attacks",
-          "summary": "Strengthening our defenses against distillation attacks"
+          "title": "AI Gateway adds DeepSeek Search and Fetch tools AI Gateway now supports DeepSeek Search and Fetch. Search the web and retrieve page content with any tool-calling model and one API key. Jerilyn Zheng, Zachary Chen",
+          "summary": "6 November 6 Nov"
+        }
+      }
+    },
+    {
+      "slug": "20261106-github-github-in-slack-and-teams-is-generally-available-and-more-23359978",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available",
+      "publishedAt": "2026-11-06T20:31:08.000Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "@GitHub in Slack and Teams is generally available and more",
+          "summary": "Turn conversations into code with @GitHub in Slack and Teams! Investigate bugs, create issues, implement changes, and open pull requests—all without leaving your conversation. What’s new Build and review together… The p…"
+        },
+        "fr": {
+          "title": "@GitHub in Slack and Teams is generally available and more",
+          "summary": "Turn conversations into code with @GitHub in Slack and Teams! Investigate bugs, create issues, implement changes, and open pull requests—all without leaving your conversation. What’s new Build and review together… The p…"
+        }
+      }
+    },
+    {
+      "slug": "20261107-github-pg-observability-map-100-released-730d445a",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/pg-observability-map-100-released-3427/",
+      "publishedAt": "2026-11-07T00:00:00.000Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "PG Observability Map 1.0.0 Released",
+          "summary": "We are pleased to announce the initial release (1.0.0) of PG Observability Map , a interactive web-based tool designed to visualize and explore PostgreSQL observability, metrics, and internal diagnostic views. Key Featu…"
+        },
+        "fr": {
+          "title": "PG Observability Map 1.0.0 Released",
+          "summary": "We are pleased to announce the initial release (1.0.0) of PG Observability Map , a interactive web-based tool designed to visualize and explore PostgreSQL observability, metrics, and internal diagnostic views. Key Featu…"
         }
       }
     },
@@ -1203,26 +1263,6 @@
       }
     },
     {
-      "slug": "20261106-vercel-ampersand-from-humans-now-available-on-ai-gateway-call-hu-c1198ca2",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/humans-and-ampersand-now-available-on-ai-gateway",
-      "publishedAt": "2026-11-06T23:06:23.044Z",
-      "discoveredAt": "2026-11-06T23:06:23.044Z",
-      "locales": {
-        "en": {
-          "title": "Ampersand from Humans& now available on AI Gateway Call Humans&'s Ampersand through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. +3 Gregor Martynus, Esteban Suárez, and 3 others",
-          "summary": "-128.jpg\"/> Roman Olynyk, Krish, and 1 other"
-        },
-        "fr": {
-          "title": "Ampersand from Humans& now available on AI Gateway Call Humans&'s Ampersand through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. +3 Gregor Martynus, Esteban Suárez, and 3 others",
-          "summary": "-128.jpg\"/> Roman Olynyk, Krish, and 1 other"
-        }
-      }
-    },
-    {
       "slug": "20261106-nvidia-run-ai-models-for-edge-application-development-with-just--e060e1d4",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -1239,26 +1279,6 @@
         "fr": {
           "title": "Run AI Models for Edge Application Development with Just a Few Commands",
           "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,..."
-        }
-      }
-    },
-    {
-      "slug": "20261105-github-secret-scanning-upgrades-detectors-adds-spacex-as-partner-e6f7bb0a",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-05-secret-scanning-upgrades-detectors-adds-spacex-as-partner",
-      "publishedAt": "2026-11-05T15:48:50.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
-          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
-        },
-        "fr": {
-          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
-          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
         }
       }
     },
@@ -1403,26 +1423,6 @@
       }
     },
     {
-      "slug": "20261103-github-pgbadger-v133-has-been-released-d6c21ac3",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/pgbadger-v133-has-been-released-3435/",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:26.247Z",
-      "locales": {
-        "en": {
-          "title": "pgbadger v13.3 has been released",
-          "summary": "Antananarivo, Madagascar - November 03, 2026 pgBadger pgBadger is a PostgreSQL performance analyzer, built for speed with fully detailed reports based on your PostgreSQL log files. pgBadger 13.3 was released today, this…"
-        },
-        "fr": {
-          "title": "pgbadger v13.3 has been released",
-          "summary": "Antananarivo, Madagascar - November 03, 2026 pgBadger pgBadger is a PostgreSQL performance analyzer, built for speed with fully detailed reports based on your PostgreSQL log files. pgBadger 13.3 was released today, this…"
-        }
-      }
-    },
-    {
       "slug": "20261016-go-interactive-refactoring-in-gopls-66b01ef3",
       "toolName": "Go",
       "category": "Systems & Backend",
@@ -1523,42 +1523,102 @@
       }
     },
     {
-      "slug": "20261106-supabase-organization-invites-support-the-no-access-role-fba375fa",
+      "slug": "20261107-supabase-scoped-personal-access-tokens-are-now-generally-availab-a630ac95",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/no-access-org-role",
-      "publishedAt": "2026-11-06T23:06:23.044Z",
-      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "href": "https://supabase.com/changelog/scoped-personal-access-tokens-ga",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
       "locales": {
         "en": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         },
         "fr": {
-          "title": "Organization invites support the No access role",
-          "summary": "Improvement Organization invites on Team and Enterprise plans now support the No access role, so admins can default new members to zero project access instead of Read-only access to e"
+          "title": "Scoped personal access tokens are now generally available",
+          "summary": "New Feature Scoped personal access tokens are now available to everyone. Limit a token to specific projects or organizations and grant only the permissions it needs on the Management"
         }
       }
     },
     {
-      "slug": "20261106-anthropic-platform-introducing-the-anthropic-cyber-mission-db9c3550",
+      "slug": "20261107-anthropic-platform-anthropic-opens-singapore-office-and-signs-mo-87253efe",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "href": "https://www.anthropic.com/news/singapore-office-opening",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+        },
+        "fr": {
+          "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+          "summary": "Anthropic opens Singapore office and signs MOU with the Government of Singapore"
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-vercel-cli-can-now-set-new-projects-to-expire-set-new-pro-fc7161ee",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/vercel-cli-can-now-set-new-projects-to-expire",
       "publishedAt": "2026-11-06T23:06:23.044Z",
       "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "Introducing the Anthropic Cyber Mission",
-          "summary": "Introducing the Anthropic Cyber Mission"
+          "title": "Vercel CLI can now set new projects to expire Set new projects to expire when you deploy them, and remove the expiration with vercel project keep. Thibault Miranda de Oliveira Engineering, Growth",
+          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
         },
         "fr": {
-          "title": "Introducing the Anthropic Cyber Mission",
-          "summary": "Introducing the Anthropic Cyber Mission"
+          "title": "Vercel CLI can now set new projects to expire Set new projects to expire when you deploy them, and remove the expiration with vercel project keep. Thibault Miranda de Oliveira Engineering, Growth",
+          "summary": "mage__98_.png\"/> Jerilyn Zheng, Zachary Chen"
+        }
+      }
+    },
+    {
+      "slug": "20261106-github-copilot-usage-metrics-api-adds-code-review-details-and-ad-dcf7efe8",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate",
+      "publishedAt": "2026-11-06T00:19:07.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Usage metrics API adds code review details and addressed rate",
+          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-rev…"
+        },
+        "fr": {
+          "title": "Usage metrics API adds code review details and addressed rate",
+          "summary": "The enterprise and organization repository-level Copilot usage metrics reports now show what happens to Copilot code review feedback. A new copilot_code_review object on each repos-1-day row reports how many Copilot-rev…"
+        }
+      }
+    },
+    {
+      "slug": "20261105-cursor-mydbr-77-brings-web-reporting-to-postgresql-c37005d8",
+      "toolName": "Cursor",
+      "category": "Developer Assistant",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/mydbr-77-brings-web-reporting-to-postgresql-3424/",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "myDBR 7.7 brings web reporting to PostgreSQL",
+          "summary": "Helsinki, Finland, 2026-10-28 - myDBR.com announced PostgreSQL support in myDBR, its web-based reporting platform for SQL databases. PostgreSQL 12 or later can now hold both myDBR's own objects and the reports, alongsid…"
+        },
+        "fr": {
+          "title": "myDBR 7.7 brings web reporting to PostgreSQL",
+          "summary": "Helsinki, Finland, 2026-10-28 - myDBR.com announced PostgreSQL support in myDBR, its web-based reporting platform for SQL databases. PostgreSQL 12 or later can now hold both myDBR's own objects and the reports, alongsid…"
         }
       }
     },
@@ -1583,26 +1643,6 @@
       }
     },
     {
-      "slug": "20261106-vercel-workflow-sdk-adds-idempotent-starts-workflow-sdk-start-ca-1ada6820",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
-      "locales": {
-        "en": {
-          "title": "Workflow SDK adds idempotent starts Workflow SDK start() can now claim a hook token atomically. Duplicate starts with the same token throw HookConflictError and never become a run. Alex Langenfeld",
-          "summary": "4 November 4 Nov"
-        },
-        "fr": {
-          "title": "Workflow SDK adds idempotent starts Workflow SDK start() can now claim a hook token atomically. Duplicate starts with the same token throw HookConflictError and never become a run. Alex Langenfeld",
-          "summary": "4 November 4 Nov"
-        }
-      }
-    },
-    {
       "slug": "20261105-nvidia-how-nvidia-openshell-reference-architecture-secures-and-g-863eef03",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -1619,26 +1659,6 @@
         "fr": {
           "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
           "summary": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex..."
-        }
-      }
-    },
-    {
-      "slug": "20261105-github-new-pull-request-overview-page-in-public-preview-3bcdfa6e",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview",
-      "publishedAt": "2026-11-05T08:00:00.000Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "New pull request overview page in public preview",
-          "summary": "On a long pull request, checking what’s blocking often means scrolling past dozens of comments and timeline events just to reach the merge box. And once you’re there, you still… The post New pull request overview page i…"
-        },
-        "fr": {
-          "title": "New pull request overview page in public preview",
-          "summary": "On a long pull request, checking what’s blocking often means scrolling past dozens of comments and timeline events just to reach the merge box. And once you’re there, you still… The post New pull request overview page i…"
         }
       }
     },
@@ -1783,26 +1803,6 @@
       }
     },
     {
-      "slug": "20261102-postgresql-security-release-for-psqlodbc-6786d77d",
-      "toolName": "PostgreSQL",
-      "category": "Systems & Backend",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/security-release-for-psqlodbc-3431/",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "Security release for psqlodbc",
-          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
-        },
-        "fr": {
-          "title": "Security release for psqlodbc",
-          "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
-        }
-      }
-    },
-    {
       "slug": "20261014-go-better-http1-connection-reuse-1f9db072",
       "toolName": "Go",
       "category": "Systems & Backend",
@@ -1903,42 +1903,102 @@
       }
     },
     {
-      "slug": "20261106-supabase-the-supabase-net-sdk-is-now-officially-supported-b0245da9",
+      "slug": "20261106-supabase-public-beta-supabase-knowledge-base-ac9824a3",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-dotnet-official-support",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
-      "locales": {
-        "en": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
-        },
-        "fr": {
-          "title": "The Supabase .NET SDK is now officially supported",
-          "summary": "New Feature The .NET SDK for Supabase is now officially supported. It's the recommended way to build on Supabase from any .NET platform: ASP.NET, Blazor, MAUI, Unity, Azure, and"
-        }
-      }
-    },
-    {
-      "slug": "20261106-anthropic-platform-2026-usage-policy-update-7a238471",
-      "toolName": "Anthropic Platform",
-      "category": "AI Platform",
-      "source": "Anthropic News",
-      "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "href": "https://supabase.com/changelog/kb-launch",
       "publishedAt": "2026-11-06T23:06:23.044Z",
       "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "2026 Usage Policy update",
-          "summary": "2026 Usage Policy update"
+          "title": "[Public Beta] Supabase Knowledge Base",
+          "summary": "New Feature The Supabase Knowledge Base is live in public beta at supabase.com/kb. It hosts troubleshooting and migration guides for developers and their agents."
         },
         "fr": {
-          "title": "2026 Usage Policy update",
-          "summary": "2026 Usage Policy update"
+          "title": "[Public Beta] Supabase Knowledge Base",
+          "summary": "New Feature The Supabase Knowledge Base is live in public beta at supabase.com/kb. It hosts troubleshooting and migration guides for developers and their agents."
+        }
+      }
+    },
+    {
+      "slug": "20261107-anthropic-platform-building-on-our-commitment-to-american-scient-26f50496",
+      "toolName": "Anthropic Platform",
+      "category": "AI Platform",
+      "source": "Anthropic News",
+      "sourceFeed": "https://www.anthropic.com/news",
+      "href": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "publishedAt": "2026-11-07T12:56:42.840Z",
+      "discoveredAt": "2026-11-07T12:56:42.840Z",
+      "locales": {
+        "en": {
+          "title": "Building on our commitment to American scientific discovery",
+          "summary": "Building on our commitment to American scientific discovery"
+        },
+        "fr": {
+          "title": "Building on our commitment to American scientific discovery",
+          "summary": "Building on our commitment to American scientific discovery"
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-vercel-tracing-is-now-generally-available-vercel-tracing--05a03358",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/vercel-tracing-is-now-generally-available",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "Vercel Tracing is now generally available Vercel Tracing is now generally available on all plans. Search every span with KQL in the dashboard or CLI. New Next.js 16.5 projects get tracing with no setup, and traces now stay for up to 14 days. Darpan Kakadia, Luc Leray, and 1 other",
+          "summary": "Thibault Miranda de Oliveira Engineering, Growth"
+        },
+        "fr": {
+          "title": "Vercel Tracing is now generally available Vercel Tracing is now generally available on all plans. Search every span with KQL in the dashboard or CLI. New Next.js 16.5 projects get tracing with no setup, and traces now stay for up to 14 days. Darpan Kakadia, Luc Leray, and 1 other",
+          "summary": "Thibault Miranda de Oliveira Engineering, Growth"
+        }
+      }
+    },
+    {
+      "slug": "20261106-github-copilot-usage-metrics-api-flags-telemetry-and-version-gap-b6de41f0",
+      "toolName": "GitHub Copilot",
+      "category": "Developer Assistant",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-05-usage-metrics-api-flags-telemetry-and-version-gaps",
+      "publishedAt": "2026-11-06T00:08:31.000Z",
+      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "locales": {
+        "en": {
+          "title": "Usage metrics API flags telemetry and version gaps",
+          "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags…"
+        },
+        "fr": {
+          "title": "Usage metrics API flags telemetry and version gaps",
+          "summary": "The Copilot usage metrics API now shows which users are missing client telemetry or are running IDE or extension versions below the usage metrics minimums. New per-user fields appear in… The post Usage metrics API flags…"
+        }
+      }
+    },
+    {
+      "slug": "20261105-postgresql-reindb-read-only-performance-monitoring-for-postgresq-46203de9",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/reindb-read-only-performance-monitoring-for-postgresql-first-database-free-3432/",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "ReinDB: read-only performance monitoring for PostgreSQL, first database free",
+          "summary": "Bandlei has released ReinDB, read-only performance monitoring for PostgreSQL, self-managed or on Amazon RDS and Aurora. ReinDB learns what normal looks like for each database and statement, hour by hour, using pg_stat_s…"
+        },
+        "fr": {
+          "title": "ReinDB: read-only performance monitoring for PostgreSQL, first database free",
+          "summary": "Bandlei has released ReinDB, read-only performance monitoring for PostgreSQL, self-managed or on Amazon RDS and Aurora. ReinDB learns what normal looks like for each database and statement, hour by hour, using pg_stat_s…"
         }
       }
     },
@@ -1963,26 +2023,6 @@
       }
     },
     {
-      "slug": "20261106-vercel-kimi-k31-pro-now-has-more-zdr-providers-on-ai-gateway-cal-16f95901",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/kimi-k3-1-pro-now-has-more-zdr-providers-on-ai-gateway",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
-      "locales": {
-        "en": {
-          "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway Call Moonshot AI's Kimi K3.1 Pro and K3.1 Pro Highspeed through Vercel AI Gateway on Zero Data Retention providers, with automatic failover and request traces. Jerilyn Zheng Product, AI Gateway",
-          "summary": "Alex Langenfeld"
-        },
-        "fr": {
-          "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway Call Moonshot AI's Kimi K3.1 Pro and K3.1 Pro Highspeed through Vercel AI Gateway on Zero Data Retention providers, with automatic failover and request traces. Jerilyn Zheng Product, AI Gateway",
-          "summary": "Alex Langenfeld"
-        }
-      }
-    },
-    {
       "slug": "20261105-nvidia-five-ways-nvidia-co-design-maximizes-the-value-of-every-b-6823fc9a",
       "toolName": "NVIDIA",
       "category": "Computer Systems",
@@ -1999,26 +2039,6 @@
         "fr": {
           "title": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory",
           "summary": "In an AI factory, high bandwidth memory (HBM)is the fastest, most expensive, and most contested memory tier. Every byte spent on a redundant weight copy, an..."
-        }
-      }
-    },
-    {
-      "slug": "20261104-github-codeql-2274-improves-accuracy-and-query-metadata-03daee1e",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-04-codeql-2-27-4-improves-accuracy-and-query-metadata",
-      "publishedAt": "2026-11-04T20:04:52.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
-          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
-        },
-        "fr": {
-          "title": "CodeQL 2.27.4 improves accuracy and query metadata",
-          "summary": "CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.27.4 with query accuracy improvements across several… The post…"
         }
       }
     },
@@ -2163,26 +2183,6 @@
       }
     },
     {
-      "slug": "20261102-github-hypopg-145-is-out-ebbd1267",
-      "toolName": "GitHub",
-      "category": "Developer Platform",
-      "source": "PostgreSQL News",
-      "sourceFeed": "https://www.postgresql.org/news.rss",
-      "href": "https://www.postgresql.org/about/news/hypopg-145-is-out-3428/",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "discoveredAt": "2026-11-03T00:56:41.966Z",
-      "locales": {
-        "en": {
-          "title": "HypoPG 1.4.5 is out!",
-          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog…"
-        },
-        "fr": {
-          "title": "HypoPG 1.4.5 is out!",
-          "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog…"
-        }
-      }
-    },
-    {
       "slug": "20261002-go-arch-specific-simd-in-go-aa4c22f4",
       "toolName": "Go",
       "category": "Systems & Backend",
@@ -2283,42 +2283,102 @@
       }
     },
     {
-      "slug": "20261106-supabase-public-alpha-supabase-go-sdk-107ff49a",
+      "slug": "20261106-supabase-aspnet-core-dependency-injection-for-the-supabase-net-s-e2f5eeb1",
       "toolName": "Supabase",
       "category": "Backend Platform",
       "source": "Supabase Changelog",
       "sourceFeed": "https://supabase.com/changelog",
-      "href": "https://supabase.com/changelog/supabase-go-public-alpha",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "href": "https://supabase.com/changelog/dotnet-dependency-injection-extension",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "[Public Alpha] Supabase Go SDK",
-          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
+          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
         },
         "fr": {
-          "title": "[Public Alpha] Supabase Go SDK",
-          "summary": "New Feature The official Supabase Go SDK v0.1.0-alpha.1 is in public alpha. Its initial feature set lets your backend verify end-user access tokens and query your database as that use"
+          "title": "ASP.NET Core dependency injection for the Supabase .NET SDK",
+          "summary": "New Feature The .NET SDK now ships an ASP.NET Core dependency injection package. A single method registers the main client and all sub-clients, so you don't have to wire it up by"
         }
       }
     },
     {
-      "slug": "20261106-anthropic-platform-ai-for-science-expands-to-foundations-and-res-ad10900d",
+      "slug": "20261106-anthropic-platform-investing-in-the-public-benefit-were-committi-4c6c987b",
       "toolName": "Anthropic Platform",
       "category": "AI Platform",
       "source": "Anthropic News",
       "sourceFeed": "https://www.anthropic.com/news",
-      "href": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-      "publishedAt": "2026-11-06T14:13:37.575Z",
-      "discoveredAt": "2026-11-06T14:13:37.575Z",
+      "href": "https://www.anthropic.com/news/public-benefit-fund",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
       "locales": {
         "en": {
-          "title": "AI for Science expands to foundations and research institutions",
-          "summary": "AI for Science expands to foundations and research institutions"
+          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+          "summary": "/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
         },
         "fr": {
-          "title": "AI for Science expands to foundations and research institutions",
-          "summary": "AI for Science expands to foundations and research institutions"
+          "title": "Investing in the public benefit We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+          "summary": "/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcbdc2eac6dfb37cf596d8f9fb32783036b5737c2-2000x1125.jpg&w=3840&q=75\"/>"
+        }
+      }
+    },
+    {
+      "slug": "20261106-vercel-ampersand-from-humans-now-available-on-ai-gateway-call-hu-c1198ca2",
+      "toolName": "Vercel",
+      "category": "Cloud Platform",
+      "source": "Vercel Changelog",
+      "sourceFeed": "https://vercel.com/changelog",
+      "href": "https://vercel.com/changelog/humans-and-ampersand-now-available-on-ai-gateway",
+      "publishedAt": "2026-11-06T23:06:23.044Z",
+      "discoveredAt": "2026-11-06T23:06:23.044Z",
+      "locales": {
+        "en": {
+          "title": "Ampersand from Humans& now available on AI Gateway Call Humans&'s Ampersand through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. +3 Gregor Martynus, Esteban Suárez, and 3 others",
+          "summary": "-128.jpg\"/> Roman Olynyk, Krish, and 1 other"
+        },
+        "fr": {
+          "title": "Ampersand from Humans& now available on AI Gateway Call Humans&'s Ampersand through Vercel AI Gateway with one API key, no provider account, spend tracking, and request traces. +3 Gregor Martynus, Esteban Suárez, and 3 others",
+          "summary": "-128.jpg\"/> Roman Olynyk, Krish, and 1 other"
+        }
+      }
+    },
+    {
+      "slug": "20261105-github-secret-scanning-upgrades-detectors-adds-spacex-as-partner-e6f7bb0a",
+      "toolName": "GitHub",
+      "category": "Developer Platform",
+      "source": "GitHub Changelog",
+      "sourceFeed": "https://github.blog/changelog/feed/",
+      "href": "https://github.blog/changelog/2026-11-05-secret-scanning-upgrades-detectors-adds-spacex-as-partner",
+      "publishedAt": "2026-11-05T15:48:50.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
+          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
+        },
+        "fr": {
+          "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
+          "summary": "This update expands secret scanning’s detection coverage: New partner: SpaceX is now a secret scanning partner. New detector: GitHub now detects starlink_public_api_v2_secret. Upgraded detectors: Alibaba, AWS, Google, O…"
+        }
+      }
+    },
+    {
+      "slug": "20261105-postgresql-autobase-212-released-aab5ba28",
+      "toolName": "PostgreSQL",
+      "category": "Systems & Backend",
+      "source": "PostgreSQL News",
+      "sourceFeed": "https://www.postgresql.org/news.rss",
+      "href": "https://www.postgresql.org/about/news/autobase-212-released-3430/",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:29.796Z",
+      "locales": {
+        "en": {
+          "title": "Autobase 2.12 released",
+          "summary": "We are pleased to announce the release of Autobase 2.12 ! Highlights Built-in Monitoring Dashboards Autobase isn't intended to replace your monitoring system. Instead, we've integrated with Netdata, which we consider on…"
+        },
+        "fr": {
+          "title": "Autobase 2.12 released",
+          "summary": "We are pleased to announce the release of Autobase 2.12 ! Highlights Built-in Monitoring Dashboards Autobase isn't intended to replace your monitoring system. Instead, we've integrated with Netdata, which we consider on…"
         }
       }
     },
@@ -2339,66 +2399,6 @@
         "fr": {
           "title": "Oct 13, 2026",
           "summary": "· Changelog"
-        }
-      }
-    },
-    {
-      "slug": "20261105-vercel-token-pass-credit-now-applies-automatically-across-ai-gat-1564a9d4",
-      "toolName": "Vercel",
-      "category": "Cloud Platform",
-      "source": "Vercel Changelog",
-      "sourceFeed": "https://vercel.com/changelog",
-      "href": "https://vercel.com/changelog/token-pass-credit-now-applies-automatically-across-ai-gateway",
-      "publishedAt": "2026-11-05T23:37:29.796Z",
-      "discoveredAt": "2026-11-05T23:37:29.796Z",
-      "locales": {
-        "en": {
-          "title": "Token Pass credit now applies automatically across AI Gateway Token Pass credit now applies automatically to included model usage through AI Gateway, whether a request authenticates with an API key, OIDC token, or fx login Roman Olynyk, Krish, and 1 other",
-          "summary": "6 November 6 Nov"
-        },
-        "fr": {
-          "title": "Token Pass credit now applies automatically across AI Gateway Token Pass credit now applies automatically to included model usage through AI Gateway, whether a request authenticates with an API key, OIDC token, or fx login Roman Olynyk, Krish, and 1 other",
-          "summary": "6 November 6 Nov"
-        }
-      }
-    },
-    {
-      "slug": "20261104-nvidia-how-nvidia-uses-ai-agents-to-streamline-ai-factory-operat-ad3c135f",
-      "toolName": "NVIDIA",
-      "category": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
-      "publishedAt": "2026-11-04T22:13:03.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
-          "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards..."
-        },
-        "fr": {
-          "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
-          "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards..."
-        }
-      }
-    },
-    {
-      "slug": "20261104-github-copilot-github-copilot-is-now-available-in-xcodes-coding--a05548ef",
-      "toolName": "GitHub Copilot",
-      "category": "Developer Assistant",
-      "source": "GitHub Changelog",
-      "sourceFeed": "https://github.blog/changelog/feed/",
-      "href": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
-      "publishedAt": "2026-11-04T19:10:40.000Z",
-      "discoveredAt": "2026-11-04T23:38:59.532Z",
-      "locales": {
-        "en": {
-          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
-          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
-        },
-        "fr": {
-          "title": "GitHub Copilot is now available in Xcode’s coding assistant",
-          "summary": "You can now work with GitHub Copilot directly in Xcode’s built-in coding assistant, bringing Copilot into your native Xcode workflow. The integration is now in public preview, available starting with… The post GitHub Co…"
         }
       }
     }
