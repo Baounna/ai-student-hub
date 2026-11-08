@@ -35,7 +35,7 @@ const EDITORIAL_ADVISORY_DAYS = Number.parseInt(process.env.WATCHDOG_EDITORIAL_A
 const EDITORIAL_FAIL_DAYS = Number.parseInt(process.env.WATCHDOG_EDITORIAL_FAIL_DAYS || "120", 10);
 const TIMEOUT_SECONDS = 25;
 
-/** @type {{name:string, ok:boolean, detail:string, fixable:boolean, advisory:boolean}[]} */
+/** @type {{name:string, ok:boolean, detail:string, fixable:boolean, advisory:boolean, skipped?:boolean}[]} */
 const results = [];
 
 /**
@@ -54,6 +54,29 @@ const results = [];
 function record(name, ok, detail, fixable = false, advisory = false) {
   results.push({ name, ok, detail, fixable, advisory });
   console.log(`${ok ? "✔" : advisory ? "•" : "✖"} ${name} — ${detail}`);
+}
+
+/**
+ * A check that did not run.
+ *
+ * Six checks recorded "I could not look" as a pass: the workflow list could
+ * not be read, the gh CLI was absent, the board report did not exist yet,
+ * affiliate links were not configured here. Every one printed ✔ and counted
+ * toward "Watchdog: all checks passed", so a run in which three checks never
+ * executed was indistinguishable from one in which they all succeeded.
+ *
+ * This file argues the point itself elsewhere -- checkDegradedSources refuses
+ * to read a missing field as health, because "absence of evidence is not
+ * evidence" -- and main() carries a comment about a check that "has therefore
+ * never executed once, and said so in green". The same reasoning, applied to
+ * the record it writes.
+ *
+ * Not a failure: a machine without the gh CLI is not a broken site. It is
+ * simply not a pass, and the report now says which.
+ */
+function skip(name, detail) {
+  results.push({ name, ok: true, detail, fixable: false, advisory: false, skipped: true });
+  console.log(`· ${name} — ${detail} [not checked]`);
 }
 
 async function curlStatus(url) {
@@ -194,7 +217,7 @@ export function editorialAgeVerdict(newest, nowMs, advisoryDays, failDays) {
   const dated = newest.filter((entry) => Number.isFinite(Date.parse(entry.date || "")));
 
   if (!dated.length) {
-    return { ok: true, advisory: true, detail: "no dated article or brief could be read" };
+    return { ok: false, advisory: true, detail: "no dated article or brief could be read" };
   }
 
   const aged = dated
@@ -205,7 +228,7 @@ export function editorialAgeVerdict(newest, nowMs, advisoryDays, failDays) {
   const summary = aged.map((entry) => `${entry.label} ${entry.days}d`).join(", ");
 
   if (worst.days < advisoryDays) return { ok: true, advisory: false, detail: `newest: ${summary}` };
-  if (worst.days < failDays) return { ok: true, advisory: true, detail: `nothing new in a while — ${summary}` };
+  if (worst.days < failDays) return { ok: false, advisory: true, detail: `nothing new in a while — ${summary}` };
   return { ok: false, advisory: false, detail: `the site says "latest" over this — ${summary}` };
 }
 
@@ -253,7 +276,7 @@ export function newsletterCadenceVerdict(sentAt, waitingDraft, nowMs, overdueDay
   const waiting = waitingDraft ? `, ${waitingDraft} is waiting` : ", no draft is waiting";
 
   if (!Number.isFinite(sent)) {
-    return { ok: true, advisory: true, detail: `no issue has ever been sent${waiting}` };
+    return { ok: false, advisory: true, detail: `no issue has ever been sent${waiting}` };
   }
 
   const days = Math.floor((nowMs - sent) / 86_400_000);
@@ -261,7 +284,7 @@ export function newsletterCadenceVerdict(sentAt, waitingDraft, nowMs, overdueDay
     return { ok: true, advisory: false, detail: `last issue sent ${days}d ago` };
   }
   return {
-    ok: true,
+    ok: false,
     advisory: true,
     detail: `last issue sent ${days}d ago, and the site promises one a week${waiting}`
   };
@@ -375,9 +398,15 @@ async function checkNewsSourcesStillProducing() {
   }
 
   const named = quiet.slice(0, 4).map((entry) => `${entry.source} (${entry.days}d)`).join(", ");
+  /*
+   * An advisory in this file is `ok: false, advisory: true` -- see
+   * checkDegradedSources. Returning `ok: true` alongside `advisory: true`
+   * prints a tick and lands in neither bucket of the summary, so a quiet feed
+   * was counted toward "all checks passed".
+   */
   record(
     "News sources",
-    silent.length === 0,
+    false,
     `${quiet.length} of ${total} quiet for ${NEWS_SOURCE_QUIET_ADVISORY_DAYS}+ days: ${named}${quiet.length > 4 ? ", …" : ""}`,
     false,
     silent.length === 0
@@ -411,7 +440,7 @@ async function checkStagesFreshness() {
     const items = Array.isArray(data.items) ? data.items : [];
 
     if (items.length === 0) {
-      record("Stages list", true, "no entries yet — nothing to go stale");
+      skip("Stages list", "no entries yet — nothing to go stale");
       return;
     }
 
@@ -645,7 +674,7 @@ async function checkDegradedSources() {
     const raw = await fs.readFile(path.join(process.cwd(), "docs/agent/stage-candidates.json"), "utf8");
     parsed = JSON.parse(raw);
   } catch {
-    record("Employer boards", true, "no board report to read yet");
+    skip("Employer boards", "no board report to read yet");
     return;
   }
 
@@ -657,11 +686,7 @@ async function checkDegradedSources() {
    * as evidence. Until the finder next runs, say exactly that.
    */
   if (!Array.isArray(parsed.degradedSources)) {
-    record(
-      "Employer boards",
-      true,
-      "the last board report predates this check — the next finder run will fill it in"
-    );
+    skip("Employer boards", "the last board report predates this check — the next finder run will fill it in");
     return;
   }
   const degraded = parsed.degradedSources;
@@ -689,7 +714,7 @@ async function checkScheduledWorkflowsStillFiring() {
   try {
     expected = (await scheduledWorkflows()).filter((w) => !PARKED_WORKFLOWS.has(w.file));
   } catch {
-    record("Scheduled workflows", true, "could not read .github/workflows — skipped");
+    skip("Scheduled workflows", "could not read .github/workflows");
     return;
   }
 
@@ -1076,7 +1101,7 @@ async function checkWorkflowHealth() {
 
   } catch {
     // No gh, or no token — not a fault in the project itself.
-    record("Workflow health", true, "gh CLI unavailable here — skipped");
+    skip("Workflow health", "gh CLI unavailable here");
   }
 }
 
@@ -1102,7 +1127,20 @@ function buildReport() {
   const waiting = results.filter((r) => !r.ok && r.advisory);
   const lines = [];
 
-  lines.push(failed.length ? "## 🔴 Health check failed" : "## 🟢 All checks passed");
+  /*
+   * "All checks passed" may not headline a report over checks that did not
+   * run. Six of them recorded a skip as a pass, so a run in which the gh CLI
+   * was absent and the workflow list was unreadable carried the same headline
+   * as one in which everything was verified.
+   */
+  const notChecked = results.filter((r) => r.skipped);
+  lines.push(
+    failed.length
+      ? "## 🔴 Health check failed"
+      : notChecked.length
+        ? `## 🟢 Everything checked passed — ${notChecked.length} not checked`
+        : "## 🟢 All checks passed"
+  );
   lines.push("");
   lines.push(`Checked \`${SITE}\` at ${new Date().toISOString().replace("T", " ").slice(0, 16)} UTC.`);
   lines.push("");
@@ -1172,7 +1210,7 @@ async function run() {
   if (isConfiguredHere("AFFILIATE_1_URL")) {
     await checkVerifyScript("Affiliate links", "verify:affiliates");
   } else {
-    record("Affiliate links", true, "not configured in this environment — skipped");
+    skip("Affiliate links", "not configured in this environment");
   }
 
   const failed = results.filter((r) => !r.ok && !r.advisory);
@@ -1207,12 +1245,24 @@ async function run() {
   }
 
   console.log("--------------------------------");
+  /*
+   * "All checks passed" may not be printed over checks that did not run. Six
+   * of them recorded a skip as a pass, so a run in which the gh CLI was absent
+   * and the workflow list was unreadable produced the same headline as one in
+   * which everything was verified.
+   */
+  const notChecked = results.filter((r) => r.skipped);
+  const passed = results.length - notChecked.length - failed.length - advisories.length;
+  const tail = [
+    advisories.length ? `${advisories.length} waiting on you` : "",
+    notChecked.length ? `${notChecked.length} not checked` : ""
+  ]
+    .filter(Boolean)
+    .join(", ");
   console.log(
     failed.length
-      ? `Watchdog: ${failed.length} check(s) failed.`
-      : advisories.length
-        ? `Watchdog: all checks passed. ${advisories.length} waiting on you.`
-        : "Watchdog: all checks passed."
+      ? `Watchdog: ${failed.length} check(s) failed${tail ? `. ${tail}` : "."}`
+      : `Watchdog: ${passed} check(s) passed${tail ? `. ${tail}` : "."}`
   );
   process.exitCode = failed.length ? 1 : 0;
 }

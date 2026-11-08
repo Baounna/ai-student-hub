@@ -23,9 +23,17 @@ describe("newsletterCadenceVerdict", () => {
   it("says plainly that nothing has ever been sent", () => {
     const v = newsletterCadenceVerdict(null, "drafts/issue-2026-11-08.html", NOW, 14);
     expect(v.detail).toContain("no issue has ever been sent");
-    // Advisory, not failing: a person has not done something only a person can
-    // do. Nothing is broken.
-    expect(v.ok).toBe(true);
+    /*
+     * An advisory in watchdog.mjs is `ok: false, advisory: true` -- that is
+     * what puts it in the "waiting on you" bucket of the report. These
+     * verdicts originally returned `ok: true` alongside `advisory: true`,
+     * which printed a tick and landed in neither bucket, so a promise the site
+     * was not keeping counted toward "all checks passed".
+     *
+     * It is still not a failure: the run does not go red over work only a
+     * person can do. It is simply not a pass either.
+     */
+    expect(v.ok).toBe(false);
     expect(v.advisory).toBe(true);
   });
 
@@ -72,9 +80,15 @@ describe("editorialAgeVerdict", () => {
   });
 
   it("warns before it fails", () => {
+    // Advisory is ok:false + advisory:true, which is what reaches the report's
+    // "waiting on you" section. ok:true there would print a tick instead.
     const v = editorialAgeVerdict([entry("blog", 90)], NOW, 60, 120);
-    expect(v.ok).toBe(true);
+    expect(v.ok).toBe(false);
     expect(v.advisory).toBe(true);
+    // Still not a failure: the run does not go red over unwritten articles.
+    const broken = editorialAgeVerdict([entry("briefs", 300)], NOW, 60, 120);
+    expect(broken.ok).toBe(false);
+    expect(broken.advisory).toBe(false);
   });
 
   it("never reports unreadable dates as healthy", () => {
@@ -99,5 +113,55 @@ describe("both checks run in the daily job", () => {
     // silently finds nothing and reports "no dated article" forever.
     const posts = readFileSync("src/content/posts.ts", "utf8");
     expect(posts).toMatch(/publishedAt:\s*"\d{4}-\d{2}-\d{2}"/);
+  });
+});
+
+/**
+ * A check that did not run is not a check that passed.
+ *
+ * Six sites recorded "I could not look" as a pass: the workflow list could not
+ * be read, the gh CLI was absent, the board report did not exist yet,
+ * affiliate links were not configured here. Each printed a tick and counted
+ * toward "Watchdog: all checks passed", so a run in which three checks never
+ * executed was indistinguishable from one in which they all succeeded.
+ *
+ * This is the same distinction `npm run invariants` draws with its third
+ * status, and the one this file already argues for elsewhere:
+ * checkDegradedSources refuses to read a missing field as health.
+ */
+describe("checks that did not run", () => {
+  const WATCHDOG = readFileSync("scripts/watchdog.mjs", "utf8");
+
+  it("has a status for them that is not a pass", () => {
+    expect(WATCHDOG).toMatch(/function skip\(name, detail\) \{/);
+    expect(WATCHDOG).toMatch(/skipped: true/);
+  });
+
+  it("uses it everywhere the old code claimed a pass it had not earned", () => {
+    for (const detail of [
+      "no entries yet",
+      "no board report to read yet",
+      "predates this check",
+      "could not read .github/workflows",
+      "gh CLI unavailable here",
+      "not configured in this environment"
+    ]) {
+      const site = WATCHDOG.slice(Math.max(0, WATCHDOG.indexOf(detail) - 120), WATCHDOG.indexOf(detail));
+      expect(site, detail).toMatch(/skip\(/);
+    }
+  });
+
+  it("refuses to headline a run as all-passed when something was not checked", () => {
+    // The report and the console line both have to say it, because the console
+    // line is what a person reads in a green run's log.
+    expect(WATCHDOG).toMatch(/not checked/);
+    expect(WATCHDOG).toMatch(/Everything checked passed/);
+    expect(WATCHDOG).not.toMatch(/\? `Watchdog: \$\{failed\.length\} check\(s\) failed\.`\s*\n\s*: advisories\.length/);
+  });
+
+  it("does not turn a skip into a failure either", () => {
+    // A machine without the gh CLI is not a broken site. skip() records ok:true
+    // so the run stays green; it is the headline and the table that change.
+    expect(WATCHDOG).toMatch(/results\.push\(\{ name, ok: true, detail, fixable: false, advisory: false, skipped: true \}\)/);
   });
 });

@@ -1,6 +1,6 @@
 {
-  "epoch": 6,
-  "baselineTests": 927,
+  "epoch": 7,
+  "baselineTests": 931,
   "invariants": {
     "1": {
       "status": "hand-checked",
@@ -44,7 +44,7 @@
     },
     "11": {
       "status": "pass",
-      "evidence": "927 tests passing (baseline 919)"
+      "evidence": "931 tests passing (baseline 927)"
     },
     "12": {
       "status": "hand-checked",
@@ -59,7 +59,8 @@
     "B-2 proportional interleave on /stages",
     "B-3 Anthropic Engineering moved to /research",
     "LOOP-2 invariant 7 measured",
-    "LOOP-3 invariant 10 measured"
+    "LOOP-3 invariant 10 measured",
+    "WATCHDOG-1 a skip is no longer a pass, and the advisory convention corrected"
   ],
   "couplings": [
     {
@@ -90,7 +91,8 @@
     }
   ],
   "knownWeaknesses": [
-    "RECORDED epoch 6: watchdog.mjs:1175 records a SKIPPED check as green — record(\"Affiliate links\", true, \"not configured … skipped\"). The alarm can fire, so invariant 10 passes, but a skip is not a pass. The watchdog lacks the third status npm run invariants has.",
+    "RESOLVED epoch 4, CONFIRMED epoch 7 in production: Anthropic Engineering 1 item -> 11, all under /research/.",
+    "RESOLVED epoch 7: six checks recorded a skip as a pass; three checks returned ok:true with advisory:true and printed as ticks, so work waiting on a person counted toward 'all checks passed'.",
     "RECORDED epoch 5: growth-sprint/page.tsx:359 reaches /product/ai-career-guide without passing getGuideCtaHref. Defensible on an internal robots-disallowed page; a live claim if that page ever stops being internal.",
     "RESOLVED in epoch 4: Anthropic Engineering silent since 13 Oct. Anthropic moved posts from /engineering/<slug> to /research/<slug>; 60 anchors, 0 matched the old rule, 21 match the new one.",
     "RESOLVED in epoch 3: orderStages top-bias. Measured after: 1 (was 2) at 10/86, 2 (was 3) at 15/100, 3 (was 4) at 25/100, 4 (was 7) at 40/120.",
