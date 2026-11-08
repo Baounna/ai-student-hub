@@ -57,21 +57,12 @@ jobs:
       # a week and the board moves twice a week. Drafting here also means the
       # issue that goes out was built from the board as it stands this morning,
       # not as it stood whenever somebody last remembered.
+      #
+      # The draft itself is never committed: drafts/ is ignored, and the HTML
+      # is output rather than source. What must survive the run is the ledger,
+      # and that is the step below the send.
       - name: Draft this week's issue
         run: npm run draft:issue
-
-      - name: Commit the draft
-        run: |
-          git config user.name "AI Student Hub Bot"
-          git config user.email "bot@users.noreply.github.com"
-          if git diff --quiet -- drafts/; then
-            echo "No draft changes to commit."
-          else
-            git add drafts/
-            git commit -m "chore(newsletter): draft this week's issue"
-            git pull --rebase --autostash
-            git push
-          fi
 
       # Always runs, always harmless: it prints what WOULD go out and fails the
       # step if a guard refuses, so a broken draft is visible before anyone is
@@ -102,14 +93,19 @@ jobs:
         run: |
           git config user.name "AI Student Hub Bot"
           git config user.email "bot@users.noreply.github.com"
-          if git diff --quiet -- drafts/; then
-            echo "Ledger unchanged."
-          else
-            git add drafts/
-            git commit -m "chore(newsletter): record the issue as sent"
-            git pull --rebase --autostash
-            git push
+          # Only the ledger. drafts/ is ignored on purpose -- the HTML is
+          # output, reviewed and discarded -- and .last-issue.json is the one
+          # file here that is state. The first real send reported "Ledger
+          # unchanged" and committed nothing, because at that point the whole
+          # directory was ignored and there was nothing git could see.
+          if git diff --quiet -- drafts/.last-issue.json; then
+            echo "Ledger unchanged — nothing was recorded, which after a send is a fault."
+            exit 1
           fi
+          git add drafts/.last-issue.json
+          git commit -m "chore(newsletter): record the issue as sent"
+          git pull --rebase --autostash
+          git push
 
       # Only when nothing was sent. A ready draft nobody has been told about is
       # the state this whole project keeps rediscovering: work sitting in a

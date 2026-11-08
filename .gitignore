@@ -34,7 +34,20 @@ watchdog-report.md
 # Anchored: a bare "drafts/" matches any directory of that name at any depth,
 # which silently covered docs/agent/drafts too -- and made it impossible to
 # keep a tracked examples/ folder underneath it.
-/drafts/
+#
+# The contents are ignored; the LEDGER is not. .last-issue.json is the record
+# of what has actually been sent, and it is the only file here that is state
+# rather than output. Ignoring it meant every CI checkout began with no record
+# at all: the "no issue in the last five days" guard could never fire there,
+# and `draft:issue` would have re-offered the same twelve listings the
+# following Monday. The first real send, on 8 November 2026, reported "Ledger
+# unchanged" and committed nothing, which is how this was found.
+#
+# Written as /drafts/* rather than /drafts/ on purpose: git cannot re-include a
+# file whose parent DIRECTORY is excluded, so the directory has to stay
+# visible for the negation below to mean anything.
+/drafts/*
+!/drafts/.last-issue.json
 
 # Generated article drafts. Same rule as /drafts at the root: these are the
 # pipeline's output, reviewed by hand, not source. 498 of the 743 tracked files

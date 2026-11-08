@@ -1,4 +1,5 @@
 import { describe, it, expect } from "vitest";
+import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 // @ts-expect-error - plain .mjs script, no types
 import { MAX_DRAFT_AGE_DAYS, MIN_DAYS_BETWEEN_ISSUES, sendGuards } from "../scripts/send-issue.mjs";
@@ -116,5 +117,53 @@ describe("the sender itself", () => {
 
   it("refuses to guess which draft when two are waiting", () => {
     expect(SCRIPT).toMatch(/drafts are waiting\. Name one/);
+  });
+});
+
+/**
+ * The ledger has to survive a fresh checkout.
+ *
+ * `/drafts/` was ignored in full, so every CI run began with no record of what
+ * had been sent. The "no issue in the last five days" guard could never fire
+ * there, and `draft:issue` — which computes "new since the last issue" from
+ * that same file — would have re-offered the identical twelve listings the
+ * following Monday.
+ *
+ * The first real send, on 8 November 2026, went out correctly and then logged
+ * "Ledger unchanged" and committed nothing. The send worked; the memory of it
+ * did not. That is the shape of every bug this project keeps finding: the
+ * loud half succeeds and the quiet half is never checked.
+ */
+describe("the sent ledger", () => {
+  it("is tracked by git, not ignored with the drafts", () => {
+    // git ls-files is the only honest test of this. The file existing on a
+    // developer's disk proves nothing about a fresh checkout — which is
+    // exactly the assumption that produced the bug.
+    const tracked = execFileSync("git", ["ls-files", "drafts/.last-issue.json"], { encoding: "utf8" }).trim();
+    expect(tracked).toBe("drafts/.last-issue.json");
+  });
+
+  it("keeps the drafts themselves out of the repository", () => {
+    // The negation must re-include one file, not undo the whole rule.
+    const tracked = execFileSync("git", ["ls-files", "drafts/"], { encoding: "utf8" }).trim().split("\n");
+    expect(tracked).toEqual(["drafts/.last-issue.json"]);
+  });
+
+  it("is written as /drafts/* so the negation can work at all", () => {
+    // git cannot re-include a file whose parent directory is excluded, so
+    // "/drafts/" would make the "!" line below it meaningless.
+    const ignore = readFileSync(".gitignore", "utf8");
+    expect(ignore).toMatch(/^\/drafts\/\*$/m);
+    expect(ignore).toMatch(/^!\/drafts\/\.last-issue\.json$/m);
+    expect(ignore).not.toMatch(/^\/drafts\/$/m);
+  });
+
+  it("makes the workflow fail when a send records nothing", () => {
+    // "Ledger unchanged" after a send is not an absence of news; it is the
+    // send having been forgotten.
+    const workflow = readFileSync(".github/workflows/send-issue.yml", "utf8");
+    expect(workflow).toMatch(/git diff --quiet -- drafts\/\.last-issue\.json/);
+    expect(workflow).toMatch(/after a send is a fault/);
+    expect(workflow).toMatch(/exit 1/);
   });
 });
