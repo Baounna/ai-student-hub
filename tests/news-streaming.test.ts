@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
-import { titleKey } from "@/lib/live-news";
+import { anchorTitle, MAX_TITLE_CHARS, titleKey } from "@/lib/live-news";
 
 /**
  * /news used to be the slowest page on the site by an order of magnitude.
@@ -142,5 +142,57 @@ describe("the same story from two sources", () => {
     expect(titleDedupeIndex).toBeGreaterThan(sortIndex);
     // And the deduplicated list is the one that actually reaches the reader.
     expect(SOURCE).toMatch(/const candidatePool = recent\.length \? recent : unique;/);
+  });
+});
+
+/**
+ * A headline is the headline, not the whole card.
+ *
+ * `parsePageItems` took an <a> element's text as the title, and a source whose
+ * card anchor wraps a label, the headline and the summary gave back all three.
+ * On 8 November 2026 the home page carried this as one heading, cut mid-word by
+ * the renderer: "Investing in the public benefit We're committing a portion of
+ * Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a
+ * structure that increa".
+ */
+describe("the headline taken from a card link", () => {
+  it("prefers the heading element inside the anchor", () => {
+    expect(
+      anchorTitle('<span>Featured</span><h3>Redesigning source control at Anthropic</h3><p>As our merges per day grew more than tenfold, source control became the bottleneck.</p>')
+    ).toBe("Redesigning source control at Anthropic");
+    // The label above the card used to lead the title.
+    expect(anchorTitle("<h2>Speed Up Image Generation with FLUX 3</h2>")).toBe("Speed Up Image Generation with FLUX 3");
+  });
+
+  it("falls back to the anchor text when there is no heading", () => {
+    expect(anchorTitle("<span>ToyBlocks: A controlled world for robot learning</span>")).toBe(
+      "ToyBlocks: A controlled world for robot learning"
+    );
+  });
+
+  it("leaves room for the longest headline that was actually real", () => {
+    // NIST, 108 characters, on the board the day this was written. The ceiling
+    // has to clear it comfortably or the fix starts dropping real news.
+    const longestReal =
+      "New Chip-Based ‘Tape Measure’ for Light Could Revolutionize Mobile Timekeeping and Enhance National Security";
+    expect(longestReal.length).toBeLessThan(MAX_TITLE_CHARS);
+    expect(MAX_TITLE_CHARS).toBeGreaterThanOrEqual(120);
+  });
+
+  it("drops an item rather than showing a severed paragraph", () => {
+    const swallowed =
+      "Investing in the public benefit We're committing a portion of Anthropic's shares to the Anthropic Public Benefit Fund, a new entity with a structure that increa";
+    expect(swallowed.length).toBeGreaterThan(MAX_TITLE_CHARS);
+    const SOURCE = read("src/lib/live-news.ts");
+    expect(SOURCE).toMatch(/title\.length > MAX_TITLE_CHARS/);
+  });
+
+  it("applies the same rule to the committed snapshot, not only the live fetch", () => {
+    // Both paths scrape the same pages; a fix in one leaves the other writing
+    // mangled titles into src/content/auto-news.json every twelve hours.
+    const script = read("scripts/auto-news-agent.mjs");
+    expect(script).toMatch(/MAX_TITLE_CHARS = 140/);
+    expect(script).toMatch(/title\.length > MAX_TITLE_CHARS/);
+    expect(script).toMatch(/<\(h\[1-4\]\)/);
   });
 });

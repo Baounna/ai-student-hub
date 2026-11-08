@@ -32,8 +32,19 @@ import { canSellProduct, getProductCheckoutUrl } from "@/lib/product";
 import { formatReadTime } from "@/lib/read-time";
 import { getGuideCtaHref, getGuideCtaLabel } from "@/lib/product";
 
+/**
+ * The signal dates, in the same field order as every other date on the page.
+ *
+ * This used `en-US`, so one screen carried "Nov 7, 2026" for a web signal and
+ * "10 November 2026" for an internship deadline -- month-first in one place and
+ * day-first a few hundred pixels below, in the same column of the same page.
+ * The French column never had the problem, because both formatters resolved to
+ * `fr-FR`; only an English reader saw the two orders. `en-GB` matches the
+ * deadline formatter below, which the comment there records being fixed once
+ * already for the same reason.
+ */
 function formatPublishedDate(date: string, locale: Locale) {
-  return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-US", {
+  return new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-GB", {
     year: "numeric",
     month: "short",
     day: "numeric"
@@ -210,7 +221,10 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
             links: [
               { href: leadMagnetHref, text: "Stages ouverts", external: true },
               { href: getGuideCtaHref(locale), text: getGuideCtaLabel(locale) },
-              { href: `/${locale}/resources`, text: locale === "fr" ? "Guides petit budget" : "Budget-friendly guides" }
+              // Inside the `locale === "fr"` arm already: the English half of
+              // this ternary was unreachable, and a later edit moving this line
+              // out would have carried a silent French-only string with it.
+              { href: `/${locale}/resources`, text: "Guides petit budget" }
             ]
           }
         ]
@@ -264,19 +278,24 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
   const checkoutUrl = getProductCheckoutUrl();
   const hasCheckoutUrl = canSellProduct();
 
+  /**
+   * Proper names, so both arms of the old ternaries held the same string. They
+   * read as translated text and are not: "NIST AI Risk Management Framework" is
+   * the document's title in either language.
+   */
   const knowledgeReferences = [
     {
-      label: locale === "fr" ? "NIST AI Risk Management Framework" : "NIST AI Risk Management Framework",
+      label: "NIST AI Risk Management Framework",
       href: "https://www.nist.gov/itl/ai-risk-management-framework",
       source: "NIST"
     },
     {
-      label: locale === "fr" ? "ACM Computing Curricula" : "ACM Computing Curricula",
+      label: "ACM Computing Curricula",
       href: "https://www.acm.org/education/curricula-recommendations",
       source: "ACM"
     },
     {
-      label: locale === "fr" ? "OpenAI Newsroom" : "OpenAI Newsroom",
+      label: "OpenAI Newsroom",
       href: "https://openai.com/news/",
       source: "OpenAI"
     },

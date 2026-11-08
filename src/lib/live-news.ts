@@ -321,6 +321,43 @@ function parseAtomEntries(xml: string, source: FeedSource) {
     .filter((item): item is LiveNewsItem => Boolean(item));
 }
 
+/**
+ * The headline inside a card link, not the whole card.
+ *
+ * `parsePageItems` reads a source's HTML and takes an <a> element's text as the
+ * title. On a site whose card anchor wraps a label, the headline AND the
+ * summary -- anthropic.com/news does -- that produces one "title" holding all
+ * three. Live on the home page on 8 November 2026, as a 195-character heading:
+ *
+ *   "Investing in the public benefit We're committing a portion of Anthropic's
+ *    shares to the Anthropic Public Benefit Fund, a new entity with a structure
+ *    that increa"
+ *
+ * -- cut mid-word by the renderer, because nothing upstream had an opinion
+ * about how long a headline can be. A second one ran to 237 characters and
+ * began with the word "Featured", the label above the card.
+ *
+ * Two rules, in order. If the anchor contains a heading element, that is the
+ * headline and the rest is card furniture. Otherwise the anchor text is used as
+ * before -- and if it is longer than any real headline, the item is dropped
+ * rather than shown mangled. The longest genuine headline across the 240 items
+ * then on the board was 108 characters ("New Chip-Based 'Tape Measure' for
+ * Light Could Revolutionize Mobile Timekeeping and Enhance National Security",
+ * NIST), so the ceiling sits well clear of it. Sixteen items per source are
+ * kept; losing one to this costs a reader nothing, and showing a severed
+ * paragraph where a headline belongs costs them trust in all the others.
+ */
+export const MAX_TITLE_CHARS = 140;
+
+export function anchorTitle(innerHtml: string): string {
+  const heading = innerHtml.match(/<(h[1-4])\b[^>]*>([\s\S]*?)<\/\1>/i);
+  if (heading) {
+    const text = cleanupText(heading[2] || "");
+    if (text) return text;
+  }
+  return cleanupText(innerHtml);
+}
+
 function parsePageItems(html: string, source: FeedSource) {
   const anchors = Array.from(html.matchAll(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi));
   const ignoreTitle = /^(learn more|read more|read|more|news|all news|menu|home|about|contact|privacy|terms|log in|sign in|get started)$/i;
@@ -333,8 +370,8 @@ function parsePageItems(html: string, source: FeedSource) {
     if (!isFirstPartySourceLink(source, href)) continue;
     if (dedupe.has(href)) continue;
 
-    const title = cleanupText(match[2] || "").replace(/\s*\|\s*(anthropic|openai).*$/i, "").trim();
-    if (!title || title.length < 12 || ignoreTitle.test(title)) continue;
+    const title = anchorTitle(match[2] || "").replace(/\s*\|\s*(anthropic|openai).*$/i, "").trim();
+    if (!title || title.length < 12 || title.length > MAX_TITLE_CHARS || ignoreTitle.test(title)) continue;
 
     const start = Math.max(0, (match.index || 0) - 180);
     const end = Math.min(html.length, (match.index || 0) + match[0].length + 220);
