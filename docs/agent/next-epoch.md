@@ -1,63 +1,56 @@
-# Epoch 8 — brief
+# Epoch 9 — confirmation only
 
-Written at the end of epoch 7. Read `docs/agent/convergence.json` and
-`docs/agent/epoch-7.md` first.
+**Do not run this before Thursday 12 November 2026.** There is nothing to
+confirm until the Internship Finder has run, and nothing else is known to be
+wrong. Running it earlier means inventing work.
 
-**This is expected to be the last epoch.** Epoch 7 left one confirmation
-outstanding and no known reader-visible defect. If phase 1 confirms it and
-finds nothing new, declare convergence and stop. Do not invent a unit.
+Read `docs/agent/convergence.json` and `docs/agent/epoch-8.md` first.
 
-## Phase 1 — MEASURE
+## The only question
 
 ```
+gh run list --workflow=find-stages.yml --limit 3
 npm run invariants
 npm run health
 node scripts/watchdog.mjs
 git fetch && git status -sb
-gh run list --workflow=find-stages.yml --limit 3
 ```
 
-**The Internship Finder is the whole question.** It failed 29 October and 5
-November on a frozen ratio in a test; the fix has been on `main` since 8
-November. Thursday 12 November is the first run that can confirm it.
+The Finder failed on 29 October and 5 November, both times because a test
+capped one employer at 2 of the opening 12 rows — a ratio true of an 81-listing
+board, frozen while the board grew. The workflow runs the suite before
+committing, so the run aborted and the listings it had just found were thrown
+away. The fix has been on `main` since 8 November.
 
-- Succeeded → the board grew for the first time in three weeks. Say it plainly;
-  it is the most consequential thing this loop produced, and three epochs
-  declined to claim it in advance.
-- Failed → read `gh run view <id> --log` before theorising. That is how epoch 1
-  found the cause when four audit agents and the watchdog had missed it, and
-  the fix would then be epoch 8's unit.
+- **Succeeded** → the board grew for the first time since 29 October. Say it
+  plainly. Three epochs declined to claim it in advance; this is the epoch that
+  gets to. Then declare the loop converged, write `epoch-9.md`, and **write no
+  epoch 10 brief**.
+- **Failed** → read `gh run view <id> --log` before theorising. That is how
+  epoch 1 found the cause when four audit agents and the watchdog had all
+  missed it. The fix is then epoch 9's unit.
 
-Also confirm the watchdog's new fourth status behaves in CI, where the gh CLI
-and the workflow directory are present — the six skip sites should not fire
-there, and the headline should read "All checks passed" rather than
-"Everything checked passed — N not checked".
+## If it converged
 
-## Phase 2 — ACT (only with a reason)
+Say so, and stop. The remaining items belong to the owner and no epoch can
+close them:
 
-If something is failing, fix it. Otherwise the ranked candidates, none urgent:
+- send the first newsletter — nothing has ever been sent, and `/campus`
+  promises students it will be
+- write or retire the nine February briefs
+- decide whether `WATCHDOG_EDITORIAL_FAIL_DAYS` should rise, or accept a
+  permanently red editorial alarm
+- turn on Vercel Web Analytics
 
-- **LOOP-4**: promote invariant 1, 6, 9 or 12 out of `hand-checked`. Invariant
-  2 was tried in epoch 2 and the reason it cannot be automated is written down
-  — do not re-attempt it naively.
-- **C-2**: `readTime` literals in `posts.ts` / `posts-cs.ts` contradict what
-  the page renders (`"18 min read"` where the page computes and shows "5 min
-  read"). Dead, but misleading to a reader of the source. Deleting the field is
-  mechanical and touches ~24 objects.
-
-## Phase 3 — PROVE
-
-Four checks clean, tests never below **931**. Write `epoch-8.md`, update the
-ledger. If the loop converged, say so and write **no** epoch 9 brief — an
-unnecessary brief is an invitation to invent work.
+Five invariants remain `hand-checked` (1, 2, 6, 9, 12). Promoting them is
+available work, not needed work — and invariant 2 was attempted in epoch 2 and
+the reason it cannot be automated is written down. Do not re-attempt it naively.
 
 ## Standing rules
 
-Evidence before theory — the first version of a measurement has been wrong
-three epochs running, and looking at the finding is what saved each one.
-Record, don't fix, outside the unit. Nothing may cost money. Never weaken the
-CSP, edit `auto-news.json` or `auto-tools.json`, deploy, merge, send anything,
-regenerate the lockfile on macOS, or write editorial content. Pushing is the
-owner's call; he has given it twice, each time for that push only. The site is
-in no affiliate programme (`src/config/site.ts:242-246`). AGENTS.md is binding.
-At most two subagents, reading only.
+Evidence before theory — the first description of a problem has now been wrong
+four epochs running. Record, don't fix, outside the unit. Nothing may cost
+money. Never weaken the CSP, edit `auto-news.json` or `auto-tools.json`,
+deploy, merge, send anything, regenerate the lockfile on macOS, or write
+editorial content. Pushing is the owner's call. The site is in no affiliate
+programme (`src/config/site.ts:242-246`). AGENTS.md is binding.

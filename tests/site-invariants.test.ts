@@ -132,3 +132,41 @@ describe("one notion of 'reference' on /blog", () => {
     expect(BLOG).toMatch(/const sourceLabel = locale === "fr" \? "sources citées" : "cited sources";/);
   });
 });
+
+/**
+ * Invariant 3, in the content layer rather than the page.
+ *
+ * Every post carried a hand-typed `readTime`, and the numbers were wrong by a
+ * factor of three — posts declaring "18 min read" rendered "5 min read",
+ * because `posts` and `getLocalizedPosts` both overwrite the field with
+ * measureReadTime before any page reads it. So the literal was invisible to a
+ * reader and misleading to the next person to edit the file: a stored value
+ * that nothing stores and nothing shows.
+ *
+ * The field stays — eight render sites read it — but the authored type no
+ * longer has it, so a new post cannot carry one.
+ */
+describe("reading time is measured, not declared", () => {
+  it("has no authored literal left in either content file", () => {
+    for (const file of ["src/content/posts.ts", "src/content/posts-cs.ts"]) {
+      expect(readFileSync(file, "utf8"), file).not.toMatch(/readTime: "/);
+    }
+  });
+
+  it("makes it impossible to author one", () => {
+    // Omit<BlogPost, "readTime"> is what enforces this; the arrays were typed
+    // BlogPost[], which is what allowed the contradiction to sit there.
+    const posts = readFileSync("src/content/posts.ts", "utf8");
+    expect(posts).toMatch(/export type AuthoredPost = Omit<BlogPost, "readTime">;/);
+    expect(posts).toMatch(/const basePosts: AuthoredPost\[\] = \[/);
+    expect(readFileSync("src/content/posts-cs.ts", "utf8")).toMatch(/csExpansionPosts: AuthoredPost\[\] = \[/);
+  });
+
+  it("still gives every rendered post a reading time", () => {
+    // The field is read in eight places; removing it would have broken them
+    // all. What was removed is the authored value, not the field.
+    const posts = readFileSync("src/content/posts.ts", "utf8");
+    expect(posts).toMatch(/readTime: measureReadTime\(post, "en"\)/);
+    expect(posts).toMatch(/readTime: measureReadTime\(post, locale\)/);
+  });
+});

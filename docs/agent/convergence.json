@@ -1,6 +1,6 @@
 {
-  "epoch": 7,
-  "baselineTests": 931,
+  "epoch": 8,
+  "baselineTests": 934,
   "invariants": {
     "1": {
       "status": "hand-checked",
@@ -44,7 +44,7 @@
     },
     "11": {
       "status": "pass",
-      "evidence": "931 tests passing (baseline 927)"
+      "evidence": "934 tests passing (baseline 931)"
     },
     "12": {
       "status": "hand-checked",
@@ -60,7 +60,8 @@
     "B-3 Anthropic Engineering moved to /research",
     "LOOP-2 invariant 7 measured",
     "LOOP-3 invariant 10 measured",
-    "WATCHDOG-1 a skip is no longer a pass, and the advisory convention corrected"
+    "WATCHDOG-1 a skip is no longer a pass, and the advisory convention corrected",
+    "C-2 authored readTime literals removed"
   ],
   "couplings": [
     {
@@ -91,6 +92,7 @@
     }
   ],
   "knownWeaknesses": [
+    "RESOLVED epoch 8: 24 hand-typed readTime literals, wrong by a factor of three and overwritten before render. AuthoredPost now omits the field so none can be authored again.",
     "RESOLVED epoch 4, CONFIRMED epoch 7 in production: Anthropic Engineering 1 item -> 11, all under /research/.",
     "RESOLVED epoch 7: six checks recorded a skip as a pass; three checks returned ok:true with advisory:true and printed as ticks, so work waiting on a person counted toward 'all checks passed'.",
     "RECORDED epoch 5: growth-sprint/page.tsx:359 reaches /product/ai-career-guide without passing getGuideCtaHref. Defensible on an internal robots-disallowed page; a live claim if that page ever stops being internal.",
@@ -106,5 +108,6 @@
     "raise WATCHDOG_EDITORIAL_FAIL_DAYS, or accept a permanently red editorial alarm"
   ],
   "measuredAt": "Invariant 4 measures a DEPLOYED site. A fix committed locally reads as still failing until it ships; point NEXT_PUBLIC_SITE_URL at a local production server to check before deploy.",
-  "nextEpoch": "docs/agent/next-epoch.md"
+  "nextEpoch": "docs/agent/next-epoch.md",
+  "pending": "Internship Finder, Thursday 12 November 2026. Failed 29 Oct and 5 Nov on a frozen ratio in a test; fix on main since 8 Nov."
 }

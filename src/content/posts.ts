@@ -29,6 +29,18 @@ export type BlogPost = {
   tags: string[];
   cluster: string;
   publishedAt: string;
+  /**
+   * Filled by measureReadTime, never authored.
+   *
+   * It used to be hand-typed on every post, and the numbers were wrong by a
+   * factor of three: posts declaring "18 min read" rendered "5 min read",
+   * because `posts` and `getLocalizedPosts` both overwrite this field before
+   * any page reads it. The literals were therefore invisible to a reader and
+   * misleading to the next person to edit the file -- a stored value that
+   * nothing stores and nothing shows.
+   *
+   * AuthoredPost below omits it, so a new post cannot carry one again.
+   */
   readTime: string;
   keywords: string[];
   /**
@@ -781,7 +793,7 @@ export const comparisons: ComparisonPage[] = [
   }
 ];
 
-const basePosts: BlogPost[] = [
+const basePosts: AuthoredPost[] = [
   {
     slug: "how-to-read-an-ai-paper",
     title: "How to Read an AI Paper",
@@ -792,7 +804,6 @@ const basePosts: BlogPost[] = [
     tags: ["research", "learning", "ai"],
     cluster: "AI Fundamentals",
     publishedAt: "2026-09-19",
-    readTime: "",
     keywords: ["how to read an ai paper", "three pass method", "arxiv not peer reviewed", "reading machine learning papers", "research paper for students"],
     popularScore: 59,
     relatedSlugs: [
@@ -882,7 +893,6 @@ const basePosts: BlogPost[] = [
     tags: ["ml", "reproducibility", "tooling"],
     cluster: "ML Engineering",
     publishedAt: "2026-09-19",
-    readTime: "",
     keywords: ["reproducible machine learning", "different results every run", "random seed pytorch numpy", "restart and run all", "pip freeze requirements"],
     popularScore: 61,
     relatedSlugs: [
@@ -975,7 +985,6 @@ const basePosts: BlogPost[] = [
     tags: ["ml", "evaluation", "data"],
     cluster: "ML Engineering",
     publishedAt: "2026-09-19",
-    readTime: "",
     keywords: ["data leakage machine learning", "why is my accuracy so high", "train test split leakage", "scikit-learn pipeline leakage", "group split"],
     popularScore: 64,
     relatedSlugs: [
@@ -1074,7 +1083,6 @@ const basePosts: BlogPost[] = [
     tags: ["llm", "security", "rag"],
     cluster: "LLM Systems",
     publishedAt: "2026-09-19",
-    readTime: "",
     keywords: ["prompt injection", "indirect prompt injection", "llm security", "system prompt not a security control", "rag security"],
     popularScore: 66,
     relatedSlugs: [
@@ -1176,7 +1184,6 @@ const basePosts: BlogPost[] = [
     tags: ["ci", "automation", "monitoring"],
     cluster: "Cloud/DevOps",
     publishedAt: "2026-09-19",
-    readTime: "",
     keywords: ["npm ci lockfile error", "ci fails silently", "alert fatigue", "scheduled workflow disabled", "side project monitoring"],
     popularScore: 58,
     relatedSlugs: ["cicd-for-ml-and-backend-projects", "observability-for-student-engineers"],
@@ -1272,7 +1279,6 @@ const basePosts: BlogPost[] = [
     tags: ["security", "vulnerabilities", "dependencies"],
     cluster: "Security & Performance",
     publishedAt: "2026-09-19",
-    readTime: "",
     keywords: ["how to read a cve", "cvss score meaning", "cisa kev", "epss", "npm audit triage"],
     popularScore: 62,
     relatedSlugs: [
@@ -1386,7 +1392,6 @@ const basePosts: BlogPost[] = [
     tags: ["portfolio", "internships", "project-based-learning"],
     cluster: "AI Portfolio Projects",
     publishedAt: "2026-02-18",
-    readTime: "12 min read",
     keywords: ["ai portfolio project for students", "machine learning portfolio", "ai internship project"],
     popularScore: 98,
     relatedSlugs: ["deploy-ml-model-student-budget", "student-ai-internship-roadmap"],
@@ -1459,7 +1464,6 @@ const basePosts: BlogPost[] = [
     tags: ["deployment", "mlops", "cost-control"],
     cluster: "Tools, Deployment & Monetization",
     publishedAt: "2026-02-16",
-    readTime: "10 min read",
     keywords: ["deploy ml model free", "student mlops", "cheap cloud for ai apps"],
     popularScore: 95,
     relatedSlugs: ["ai-portfolio-project-recruiters-notice", "student-ai-internship-roadmap"],
@@ -1564,7 +1568,6 @@ const basePosts: BlogPost[] = [
     tags: ["internship", "career", "authority-building"],
     cluster: "Career & Internship Prep",
     publishedAt: "2026-02-14",
-    readTime: "11 min read",
     keywords: ["ai internship roadmap", "machine learning internship prep", "student ai career plan"],
     popularScore: 93,
     relatedSlugs: ["ai-portfolio-project-recruiters-notice", "deploy-ml-model-student-budget"],
@@ -1665,7 +1668,6 @@ const basePosts: BlogPost[] = [
     tags: ["ai-basics", "machine-learning", "deep-learning"],
     cluster: "AI Fundamentals",
     publishedAt: "2026-02-10",
-    readTime: "9 min read",
     keywords: ["ai fundamentals for cs students", "machine learning basics", "deep learning concepts"],
     popularScore: 91,
     relatedSlugs: ["student-ai-internship-roadmap", "ai-portfolio-project-recruiters-notice"],
@@ -1751,7 +1753,6 @@ const basePosts: BlogPost[] = [
     tags: ["algorithms", "data-structures", "systems-design"],
     cluster: "CS Fundamentals for AI",
     publishedAt: "2026-02-09",
-    readTime: "10 min read",
     keywords: ["cybersecurity roadmap for ai students", "cs fundamentals for ml engineers", "algorithms for ai"],
     popularScore: 89,
     relatedSlugs: ["deploy-ml-model-student-budget", "ai-fundamentals-every-cs-student-should-know"],
@@ -1840,7 +1841,6 @@ const basePosts: BlogPost[] = [
     tags: ["transformers", "rag", "agents"],
     cluster: "Modern AI Systems",
     publishedAt: "2026-02-08",
-    readTime: "11 min read",
     keywords: ["transformers rag agents for students", "llm system design", "student rag architecture"],
     popularScore: 92,
     relatedSlugs: ["ai-fundamentals-every-cs-student-should-know", "deploy-ml-model-student-budget"],
@@ -1937,9 +1937,17 @@ const basePosts: BlogPost[] = [
  * is short the label now says so. That is unflattering and correct, and it
  * makes it obvious which posts still need writing.
  */
+/**
+ * A post as it is written: everything but the reading time, which is measured.
+ *
+ * Declaring the authored arrays as BlogPost[] is what allowed a hand-typed
+ * readTime to sit in the file contradicting the page for as long as it did.
+ */
+export type AuthoredPost = Omit<BlogPost, "readTime">;
+
 const WORDS_PER_MINUTE = 220;
 
-function measureReadTime(post: BlogPost, locale: Locale): string {
+function measureReadTime(post: AuthoredPost, locale: Locale): string {
   // Measured per locale. This counted locales.en.content whatever page it was
   // labelling, so a French reader was shown an English word count -- and the
   // French bodies here run longer, which understated seven of the twenty-four

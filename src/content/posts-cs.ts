@@ -1,4 +1,4 @@
-import type { BlogPost } from "@/content/posts";
+import type { AuthoredPost } from "@/content/posts";
 
 const dsaForAiEngineersContent = [
   "The version of this that costs you a weekend is not an interview question about sorting. It is a deduplication pass that was instant on a 2,000-row sample and is still running on the full export. Nothing about the model changed. One line inside the loop is scanning a list.",
@@ -400,7 +400,7 @@ const llmGuardrailsContentFr = [
  * none: a link is added where the board is the thing that reader is next
  * trying to find, never to put a button on every post.
  */
-export const csExpansionPosts: BlogPost[] = [
+export const csExpansionPosts: AuthoredPost[] = [
   {
     slug: "data-structures-and-algorithms-for-ai-engineers",
     title: "Data Structures and Algorithms for AI Engineers: What Matters in Production",
@@ -412,7 +412,6 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["algorithms", "data-structures", "complexity", "retrieval"],
     cluster: "CS Fundamentals",
     publishedAt: "2026-02-20",
-    readTime: "18 min read",
     keywords: [
       "data structures and algorithms for ai engineers",
       "cs fundamentals for ml engineers",
@@ -498,7 +497,6 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["system-design", "backend", "architecture", "reliability"],
     cluster: "Systems and Backend",
     publishedAt: "2026-02-19",
-    readTime: "18 min read",
     keywords: [
       "system design for student ai projects",
       "backend architecture for ai apps",
@@ -578,7 +576,6 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["backend", "fastapi", "api-design", "ml-engineering"],
     cluster: "Systems and Backend",
     publishedAt: "2026-02-18",
-    readTime: "17 min read",
     keywords: [
       "backend apis for ml apps",
       "fastapi for machine learning",
@@ -658,7 +655,6 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["linux", "devops", "deployment", "ci-cd"],
     cluster: "Cloud and DevOps",
     publishedAt: "2026-02-17",
-    readTime: "17 min read",
     keywords: [
       "linux devops workflow for students",
       "devops for ai projects",
@@ -778,7 +774,6 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["security", "api-security", "auth", "reliability"],
     cluster: "Security and Reliability",
     publishedAt: "2026-02-16",
-    readTime: "9 min read",
     keywords: [
       "security checklist for student ai projects",
       "api security for students",
@@ -871,7 +866,6 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["database", "rag", "postgres", "schema-design"],
     cluster: "Systems and Backend",
     publishedAt: "2026-02-15",
-    readTime: "8 min read",
     keywords: [
       "database design for rag and ml apps",
       "postgres schema for ai apps",
@@ -933,7 +927,6 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["ci-cd", "github-actions", "release-engineering", "devops"],
     cluster: "Cloud and DevOps",
     publishedAt: "2026-02-14",
-    readTime: "8 min read",
     keywords: [
       "ci cd for ml and backend projects",
       "github actions for student developers",
@@ -1000,7 +993,6 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["observability", "metrics", "logs", "tracing"],
     cluster: "Security and Reliability",
     publishedAt: "2026-02-13",
-    readTime: "8 min read",
     keywords: [
       "observability for student engineers",
       "logs metrics traces for ai apps",
@@ -1068,7 +1060,6 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["networking", "http", "latency", "distributed-systems"],
     cluster: "CS Fundamentals",
     publishedAt: "2026-02-12",
-    readTime: "7 min read",
     keywords: [
       "networking basics for ai backend engineers",
       "http latency for api design",
@@ -1135,7 +1126,6 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["operating-systems", "linux", "performance", "debugging"],
     cluster: "CS Fundamentals",
     publishedAt: "2026-02-11",
-    readTime: "7 min read",
     keywords: [
       "operating systems skills for ai builders",
       "linux debugging for student engineers",
@@ -1208,7 +1198,6 @@ export const csExpansionPosts: BlogPost[] = [
     tags: ["ml-engineering", "testing", "evaluation", "quality"],
     cluster: "ML Engineering",
     publishedAt: "2026-02-10",
-    readTime: "8 min read",
     keywords: [
       "ml engineering testing playbook",
       "machine learning quality assurance",
@@ -1275,7 +1264,6 @@ export const csExpansionPosts: BlogPost[] = [
     // initialisation -- it is 6 min for this article, from 1,332 prose words.
     // I set this to 14 before checking, which put a false number in the source
     // where the next reader would believe it.
-    readTime: "6 min read",
     keywords: [
       "llm guardrails and evaluation basics",
       "open source llm evaluation",
