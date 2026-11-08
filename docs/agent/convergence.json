@@ -1,6 +1,6 @@
 {
-  "epoch": 9,
-  "baselineTests": 945,
+  "epoch": 10,
+  "baselineTests": 968,
   "invariants": {
     "1": {
       "status": "hand-checked",
@@ -35,8 +35,8 @@
       "evidence": "no page file resolves to two locale tags for one language"
     },
     "9": {
-      "status": "hand-checked",
-      "evidence": "tests/french-typography.test.ts covers the spacing; articles and elision are read by eye"
+      "status": "pass",
+      "evidence": "774 French strings: elision checked here, U+00A0 spacing by tests/french-typography.test.ts"
     },
     "10": {
       "status": "pass",
@@ -44,7 +44,7 @@
     },
     "11": {
       "status": "pass",
-      "evidence": "945 tests passing (baseline 934)"
+      "evidence": "968 tests passing (baseline 945)"
     },
     "12": {
       "status": "pass",
@@ -62,7 +62,9 @@
     "LOOP-3 invariant 10 measured",
     "WATCHDOG-1 a skip is no longer a pass, and the advisory convention corrected",
     "C-2 authored readTime literals removed",
-    "LOOP-4 invariants 6 and 12 measured"
+    "LOOP-4 invariants 6 and 12 measured",
+    "NEWSLETTER-1 send:issue with six guards, parked pending KIT_API_KEY",
+    "LOOP-5 invariant 9 elision measured"
   ],
   "couplings": [
     {
@@ -101,7 +103,8 @@
     "RESOLVED in epoch 4: Anthropic Engineering silent since 13 Oct. Anthropic moved posts from /engineering/<slug> to /research/<slug>; 60 anchors, 0 matched the old rule, 21 match the new one.",
     "RESOLVED in epoch 3: orderStages top-bias. Measured after: 1 (was 2) at 10/86, 2 (was 3) at 15/100, 3 (was 4) at 25/100, 4 (was 7) at 40/120.",
     "invariant 2 has no reliable automation: a per-item count and a page aggregate are indistinguishable in rendered text",
-    "invariants 1, 2, 6, 9, 12 remain hand-checked; 7 promoted in epoch 5, 10 in epoch 6"
+    "invariants 1, 2, 6, 9, 12 remain hand-checked; 7 promoted in epoch 5, 10 in epoch 6",
+    "invariants 1 and 2 remain hand-checked. 2 cannot be automated (reason recorded in epoch 2); 1 has no obvious measurement."
   ],
   "ownerDecisions": [
     "PUSH: the Internship Finder runs Thursdays against origin/main and its fix is unpushed; it will fail a third time otherwise",

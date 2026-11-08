@@ -340,6 +340,90 @@ async function invariant8(files) {
   record(8, "fail", offenders.join("; "));
 }
 
+// ---------------------------------------------------------------- invariant 9
+/**
+ * French is French: the spacing, and the elision.
+ *
+ * Half of this invariant has been enforced for a while —
+ * tests/french-typography.test.ts holds the U+00A0 before `:` `;` `!` `?`, and
+ * it learned to decode \uXXXX escapes and to read the French half of a ternary
+ * by position after missing twelve colons that way. The other half was
+ * "articles and elision are read by eye", which is how
+ *
+ *     "un service de Université Ibn Tofaïl"
+ *     "Pour les étudiants de Agadir"
+ *
+ * reached a rendered page in this project. Both were caught by looking at the
+ * page, which is not a method.
+ *
+ * Narrow on purpose, after the lesson of invariant 2. Only `de` and `que`
+ * before a vowel are checked, because those elide in essentially every
+ * context. `le` and `la` are left alone: "la une", "le onze" and every h-aspiré
+ * are real exceptions, and a rule that flags them is a rule somebody switches
+ * off. Measured against the whole of src/ before being written: zero hits, so
+ * it starts from a clean codebase rather than a backlog.
+ */
+const FRENCH_VOWELS = "aàâäeéèêëiîïoôöuùûüyAÀÂEÉÈÊIÎÏOÔUÙÛY";
+
+export function elisionProblems(text) {
+  const problems = [];
+  for (const [word, replacement] of [
+    ["de", "d'"],
+    ["que", "qu'"]
+  ]) {
+    const re = new RegExp(`\\b${word} [${FRENCH_VOWELS}]`, "g");
+    let hit;
+    while ((hit = re.exec(text))) {
+      problems.push({ found: hit[0], expected: `${replacement}${hit[0].slice(word.length + 1)}` });
+    }
+  }
+  return problems;
+}
+
+/** The French half of a locale ternary, and every `fr:` value. */
+export function frenchStrings(source) {
+  const decode = (str) => str.replace(/\\u([0-9a-fA-F]{4})/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
+  const out = [];
+  for (const re of [/locale === "fr"\s*\?\s*"((?:[^"\\]|\\.)*)"/g, /\bfr:\s*"((?:[^"\\]|\\.)*)"/g]) {
+    let hit;
+    while ((hit = re.exec(source))) out.push(decode(hit[1]));
+  }
+  return out;
+}
+
+async function invariant9() {
+  const files = [];
+  const walk = async (dir) => {
+    for (const entry of await fs.readdir(dir, { withFileTypes: true })) {
+      if (entry.name.startsWith(".")) continue;
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) await walk(full);
+      else if (/\.(ts|tsx)$/.test(entry.name)) files.push(full);
+    }
+  };
+  await walk(path.join(ROOT, "src"));
+
+  const offenders = [];
+  let scanned = 0;
+  for (const file of files) {
+    const source = await fs.readFile(file, "utf8");
+    for (const text of frenchStrings(source)) {
+      scanned += 1;
+      for (const problem of elisionProblems(text)) {
+        offenders.push(`${path.relative(ROOT, file)}: "${problem.found}" should be "${problem.expected}"`);
+      }
+    }
+  }
+
+  if (!scanned) return record(9, "hand-checked", "no French strings found to scan; read src/i18n by hand");
+  if (offenders.length) return record(9, "fail", offenders.slice(0, 5).join("; "));
+  record(
+    9,
+    "pass",
+    `${scanned} French strings: elision checked here, U+00A0 spacing by tests/french-typography.test.ts`
+  );
+}
+
 // --------------------------------------------------------------- invariant 10
 /**
  * Every alarm can go red.
@@ -537,7 +621,6 @@ async function invariant12() {
 /** Invariants with no automation yet. Named so they cannot hide among the passes. */
 function handChecked() {
   record(1, "hand-checked", "no automation; read each page's claims against today's data (epoch 1: /stages, /news, /blog carry staleness notices)");
-  record(9, "hand-checked", "tests/french-typography.test.ts covers the spacing; articles and elision are read by eye");
 }
 
 async function main() {
@@ -552,6 +635,7 @@ async function main() {
   await invariant8(files);
   invariant2();
   await invariant4(routes);
+  await invariant9();
   await invariant10();
   await invariant11();
   await invariant12();
