@@ -7,6 +7,7 @@ import { locales } from "@/i18n/config";
 import { absoluteUrl } from "@/lib/site-url";
 import { getStagesUpdatedAt } from "@/content/stages";
 import { countriesWithPages, countryPagePath } from "@/content/stage-countries";
+import { INSTITUTIONS } from "@/lib/campus";
 import { guideExists } from "@/lib/product";
 import { isIndexableTaxonomy, itemsWithTag, postsInCategory } from "@/lib/taxonomy";
 
@@ -208,6 +209,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
        * board rather than the editorial pages.
        */
       { route: "/campus", lastModified: getStagesUpdatedAt(), priority: 0.8, changeFrequency: "weekly" as const },
+      /*
+       * One entry per named institution, below /campus itself.
+       *
+       * These are the URLs handed to a faculty to publish, so they have to be
+       * discoverable without that link existing yet -- a page nobody has linked
+       * to and no sitemap mentions is a page that does not exist as far as a
+       * search engine is concerned. Priority sits under /campus because each
+       * one serves a slice of the same audience, and lastModified follows the
+       * board for the same reason /campus does: the figures on them are the
+       * part that changes.
+       */
+      ...INSTITUTIONS.map((institution) => ({
+        route: `/campus/${institution.slug}`,
+        lastModified: getStagesUpdatedAt(),
+        priority: 0.6,
+        changeFrequency: "weekly" as const
+      })),
       { route: "/privacy", lastModified: EDITORIAL_PAGES_UPDATED_AT, priority: 0.2, changeFrequency: "yearly" as const },
       { route: "/terms", lastModified: EDITORIAL_PAGES_UPDATED_AT, priority: 0.2, changeFrequency: "yearly" as const },
       {

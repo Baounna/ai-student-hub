@@ -25,3 +25,21 @@ export function withColon(label: string, locale: Locale): string {
   const text = label.replace(/[\s\u00a0]+$/, "");
   return locale === "fr" ? `${text}\u00a0:` : `${text}:`;
 }
+
+/**
+ * "de Rabat", but "d'Agadir" -- the elision French requires before a vowel.
+ *
+ * Written as a function because the names it has to join to are data, not
+ * literals: the campus pages compose a sentence around an institution and a
+ * city read from a list, and "un service de Université Ibn Tofaïl" is what
+ * string concatenation produces on its own. A French reader does not experience
+ * that as a small slip; it reads as a page about their faculty written by
+ * someone who does not speak the language of the page.
+ *
+ * `h` is deliberately not treated as a vowel. French elides before an h muet
+ * and not before an h aspiré, and nothing in the data distinguishes them, so
+ * the safe answer for an h-initial name is the unelided form.
+ */
+export function frenchDe(name: string): string {
+  return /^[aeiouàâäéèêëîïôöùûü]/i.test(name) ? `d'${name}` : `de ${name}`;
+}

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CampusFacts } from "@/components/campus-facts";
 import { CampusForm } from "@/components/campus-form";
+import { CampusLimits } from "@/components/campus-limits";
 import { INSTITUTIONS } from "@/lib/campus";
-import { countryLabel, getOpenStages, getStagesLastCheckedAt } from "@/content/stages";
 import { isLocale, type Locale } from "@/i18n/config";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
-import { withColon } from "@/i18n/typography";
 import { ogImageUrl } from "@/lib/seo";
 
 const TITLE = {
@@ -64,36 +64,6 @@ export default async function CampusPage(props: { params: Promise<{ lang: string
   if (!isLocale(params.lang)) return null;
   const locale: Locale = params.lang;
   const fr = locale === "fr";
-
-  const open = getOpenStages();
-  const byCountry = new Map<string, number>();
-  for (const stage of open) byCountry.set(stage.country, (byCountry.get(stage.country) || 0) + 1);
-  const topCountries = [...byCountry.entries()].sort((a, b) => b[1] - a[1]).slice(0, 4);
-  const pfeCount = open.filter((stage) => stage.kind === "pfe").length;
-  const lastChecked = getStagesLastCheckedAt();
-
-  const facts = [
-    {
-      label: fr ? "Offres ouvertes" : "Open listings",
-      value: String(open.length),
-      note: fr ? "vérifiées une par une, lien par lien" : "verified one by one, link by link"
-    },
-    {
-      label: fr ? "Dont PFE" : "Final-year projects",
-      value: String(pfeCount),
-      note: fr ? `sur ${open.length} offres` : `of ${open.length} listings`
-    },
-    {
-      label: fr ? "Établissements nommés" : "Institutions named",
-      value: String(INSTITUTIONS.length),
-      note: fr ? "et toute adresse .ac.ma est acceptée" : "and any .ac.ma address is accepted"
-    },
-    {
-      label: fr ? "Coût pour la faculté" : "Cost to the faculty",
-      value: "0 MAD",
-      note: fr ? "aucun compte, aucune licence, aucun contrat" : "no account, no licence, no contract"
-    }
-  ];
 
   const steps = fr
     ? [
@@ -158,34 +128,7 @@ export default async function CampusPage(props: { params: Promise<{ lang: string
         <h2 className="font-display text-xl font-semibold text-[color:var(--text-strong)]">
           {fr ? "Ce qu'il y a derrière" : "What is behind it"}
         </h2>
-        <dl className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {facts.map((fact) => (
-            <div key={fact.label} className="surface rounded-xl p-4">
-              <dt className="text-xs uppercase tracking-wide text-[color:var(--muted)]">{fact.label}</dt>
-              <dd className="mt-1 font-display text-2xl font-bold tabular-nums text-[color:var(--text-strong)]">{fact.value}</dd>
-              <dd className="mt-1 text-xs text-[color:var(--muted)]">{fact.note}</dd>
-            </div>
-          ))}
-        </dl>
-        <p className="mt-4 text-sm text-[color:var(--muted)]">
-          {withColon(fr ? "Répartition par pays" : "Where the listings are", locale)}{" "}
-          {topCountries.map(([code, count], index) => (
-            <span key={code}>
-              {index > 0 ? " • " : ""}
-              {withColon(countryLabel(code, locale), locale)} {count}
-            </span>
-          ))}
-          {". "}
-          {fr
-            ? "La majorité des offres sont en Europe. C'est la réalité du marché du stage pour un étudiant marocain en informatique, et le tableau le montre plutôt que de le masquer."
-            : "Most listings are in Europe. That is the reality of the internship market for a Moroccan computing student, and the board shows it rather than hiding it."}
-        </p>
-        {lastChecked ? (
-          <p className="mt-2 text-xs text-[color:var(--muted)]">
-            {withColon(fr ? "Dernière vérification des liens" : "Links last verified", locale)}{" "}
-            <time dateTime={lastChecked}>{new Date(lastChecked).toLocaleDateString(fr ? "fr-FR" : "en-GB")}</time>
-          </p>
-        ) : null}
+        <CampusFacts locale={locale} />
       </section>
 
       <section className="mt-10">
@@ -214,23 +157,7 @@ export default async function CampusPage(props: { params: Promise<{ lang: string
           limit here is one a student would otherwise discover for themselves
           and feel misled by.
         */}
-        <ul className="mt-4 grid gap-3 text-sm text-[color:var(--muted)]">
-          <li>
-            {fr
-              ? "Ce n'est pas un intermédiaire. Votre candidature part chez l'employeur, par son propre formulaire. Le site ne transmet aucun dossier et ne touche aucune commission sur un recrutement."
-              : "This is not an intermediary. Your application goes to the employer, through their own form. The site forwards no applications and takes no commission on a hire."}
-          </li>
-          <li>
-            {fr
-              ? `Ce n'est pas exhaustif. ${open.length} offres sont suivies, pas tout le marché. Une offre absente n'a pas été écartée : elle n'a pas été trouvée.`
-              : `This is not exhaustive. ${open.length} listings are tracked, not the whole market. A listing that is missing was not rejected; it was not found.`}
-          </li>
-          <li>
-            {fr
-              ? "Ce n'est pas un service de la faculté. Le site est un projet d'étudiant, indépendant, et il ne parle au nom d'aucun établissement."
-              : "This is not a faculty service. The site is an independent student project and speaks for no institution."}
-          </li>
-        </ul>
+        <CampusLimits locale={locale} />
       </section>
 
       <section className="glass mt-10 max-w-3xl rounded-2xl p-6">

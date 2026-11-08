@@ -31,6 +31,14 @@ export type Institution = {
   name: string;
   city: string;
   /**
+   * The French definite article the name takes, or null for a proper name that
+   * takes none. "l'Université Ibn Tofaïl" and "l'École Mohammadia", but "Al
+   * Akhawayn University" -- which is why this is a field and not a rule derived
+   * from the first letter: all four of those names begin with a vowel, and only
+   * three of them are common-noun phrases that take an article.
+   */
+  frArticle: "l'" | null;
+  /**
    * Email domains, lower-case and without a leading dot. A match is the exact
    * domain or any subdomain of it, so `ensias.um5.ac.ma` matches `um5.ac.ma`
    * and a faculty that gives out `@flsh.uca.ma` needs no separate entry.
@@ -62,25 +70,49 @@ const ACADEMIC_SUFFIX = "ac.ma";
  * `recognize` ends in a path that admits everyone regardless.
  */
 export const INSTITUTIONS: Institution[] = [
-  { slug: "um5", name: "Université Mohammed V de Rabat", city: "Rabat", domains: ["um5.ac.ma", "um5r.ac.ma", "um5s.net.ma"] },
-  { slug: "univh2c", name: "Université Hassan II de Casablanca", city: "Casablanca", domains: ["univh2c.ma", "univh2m.ac.ma"] },
-  { slug: "uca", name: "Université Cadi Ayyad", city: "Marrakech", domains: ["uca.ma", "uca.ac.ma", "edu.uca.ac.ma"] },
-  { slug: "usmba", name: "Université Sidi Mohamed Ben Abdellah", city: "Fès", domains: ["usmba.ac.ma"] },
-  { slug: "uae", name: "Université Abdelmalek Essaâdi", city: "Tétouan", domains: ["uae.ac.ma"] },
-  { slug: "uit", name: "Université Ibn Tofaïl", city: "Kénitra", domains: ["uit.ac.ma"] },
-  { slug: "uiz", name: "Université Ibn Zohr", city: "Agadir", domains: ["uiz.ac.ma"] },
-  { slug: "ump", name: "Université Mohammed Premier", city: "Oujda", domains: ["ump.ac.ma"] },
-  { slug: "uhp", name: "Université Hassan Premier", city: "Settat", domains: ["uhp.ac.ma"] },
-  { slug: "ucd", name: "Université Chouaïb Doukkali", city: "El Jadida", domains: ["ucd.ac.ma"] },
-  { slug: "usms", name: "Université Sultan Moulay Slimane", city: "Béni Mellal", domains: ["usms.ac.ma"] },
-  { slug: "um6p", name: "Université Mohammed VI Polytechnique", city: "Ben Guerir", domains: ["um6p.ma"] },
-  { slug: "uemf", name: "Université Euromed de Fès", city: "Fès", domains: ["uemf.ma"] },
-  { slug: "aui", name: "Al Akhawayn University", city: "Ifrane", domains: ["aui.ma"] },
-  { slug: "emi", name: "École Mohammadia d'Ingénieurs", city: "Rabat", domains: ["emi.ac.ma"] },
-  { slug: "inpt", name: "Institut National des Postes et Télécommunications", city: "Rabat", domains: ["inpt.ac.ma"] },
-  { slug: "enim", name: "École Nationale Supérieure des Mines", city: "Rabat", domains: ["enim.ac.ma"] },
-  { slug: "iav", name: "Institut Agronomique et Vétérinaire Hassan II", city: "Rabat", domains: ["iav.ac.ma"] }
+  { slug: "um5", name: "Université Mohammed V de Rabat", city: "Rabat", frArticle: "l'", domains: ["um5.ac.ma", "um5r.ac.ma", "um5s.net.ma"] },
+  { slug: "univh2c", name: "Université Hassan II de Casablanca", city: "Casablanca", frArticle: "l'", domains: ["univh2c.ma", "univh2m.ac.ma"] },
+  { slug: "uca", name: "Université Cadi Ayyad", city: "Marrakech", frArticle: "l'", domains: ["uca.ma", "uca.ac.ma", "edu.uca.ac.ma"] },
+  { slug: "usmba", name: "Université Sidi Mohamed Ben Abdellah", city: "Fès", frArticle: "l'", domains: ["usmba.ac.ma"] },
+  { slug: "uae", name: "Université Abdelmalek Essaâdi", city: "Tétouan", frArticle: "l'", domains: ["uae.ac.ma"] },
+  { slug: "uit", name: "Université Ibn Tofaïl", city: "Kénitra", frArticle: "l'", domains: ["uit.ac.ma"] },
+  { slug: "uiz", name: "Université Ibn Zohr", city: "Agadir", frArticle: "l'", domains: ["uiz.ac.ma"] },
+  { slug: "ump", name: "Université Mohammed Premier", city: "Oujda", frArticle: "l'", domains: ["ump.ac.ma"] },
+  { slug: "uhp", name: "Université Hassan Premier", city: "Settat", frArticle: "l'", domains: ["uhp.ac.ma"] },
+  { slug: "ucd", name: "Université Chouaïb Doukkali", city: "El Jadida", frArticle: "l'", domains: ["ucd.ac.ma"] },
+  { slug: "usms", name: "Université Sultan Moulay Slimane", city: "Béni Mellal", frArticle: "l'", domains: ["usms.ac.ma"] },
+  { slug: "um6p", name: "Université Mohammed VI Polytechnique", city: "Ben Guerir", frArticle: "l'", domains: ["um6p.ma"] },
+  { slug: "uemf", name: "Université Euromed de Fès", city: "Fès", frArticle: "l'", domains: ["uemf.ma"] },
+  { slug: "aui", name: "Al Akhawayn University", city: "Ifrane", frArticle: null, domains: ["aui.ma"] },
+  { slug: "emi", name: "École Mohammadia d'Ingénieurs", city: "Rabat", frArticle: "l'", domains: ["emi.ac.ma"] },
+  { slug: "inpt", name: "Institut National des Postes et Télécommunications", city: "Rabat", frArticle: "l'", domains: ["inpt.ac.ma"] },
+  { slug: "enim", name: "École Nationale Supérieure des Mines", city: "Rabat", frArticle: "l'", domains: ["enim.ac.ma"] },
+  { slug: "iav", name: "Institut Agronomique et Vétérinaire Hassan II", city: "Rabat", frArticle: "l'", domains: ["iav.ac.ma"] }
 ];
+
+/**
+ * The institution a `/campus/<slug>` URL names, or null.
+ *
+ * Deliberately a lookup on `INSTITUTIONS` and not on anything derived from a
+ * request: the slug in the URL decides which name is printed on the page, so an
+ * unknown slug has to 404 rather than fall through to a generic page. A page
+ * that carried an institution's name without that name being on the list would
+ * be a page claiming to be made for a faculty we know nothing about.
+ */
+export function getInstitutionBySlug(slug: string): Institution | null {
+  return INSTITUTIONS.find((institution) => institution.slug === slug) || null;
+}
+
+/**
+ * The institution's name as it appears inside a French sentence.
+ *
+ * Combine it with `frenchDe` for the genitive: `frenchDe(institutionWithArticleFr(i))`
+ * gives "de l'Université Ibn Tofaïl" and "d'Al Akhawayn University", both of
+ * which a concatenation would get wrong in a different way.
+ */
+export function institutionWithArticleFr(institution: Institution): string {
+  return institution.frArticle ? `${institution.frArticle}${institution.name}` : institution.name;
+}
 
 export type CampusMatch =
   /** A domain on the named list: we can greet them by their institution. */
