@@ -16,6 +16,12 @@ import path from "node:path";
 const OUT = path.join(process.cwd(), "drafts");
 const STATE = path.join(OUT, ".last-issue.json");
 
+const argv = process.argv.slice(2);
+const wanted = (() => {
+  const i = argv.indexOf("--issue");
+  return i === -1 ? "" : argv[i + 1] || "";
+})();
+
 const pending = (await fs.readdir(OUT))
   .filter((f) => f.endsWith(".pending.json"))
   .sort();
@@ -25,7 +31,39 @@ if (!pending.length) {
   process.exit(0);
 }
 
-const newest = pending[pending.length - 1];
+/**
+ * With two drafts waiting, which one was sent is not something this file can
+ * know, and the last one by filename is the wrong guess as often as not.
+ *
+ * It happened: a draft from 6 October sat unsent for a month while the board
+ * moved on, five of its twelve listings closed, and a fresh draft was written
+ * on 8 November. Pasting the October HTML into Kit and running this script
+ * would have retired the November listings -- so those twelve would never be
+ * offered again -- and left the five dead ones marked unsent, ready to be
+ * offered a second time. Nothing would have reported either half of that.
+ *
+ * So it asks instead. Naming the issue costs one flag and makes the person who
+ * sent it the one who says which it was, which is the same principle that put
+ * this script in a separate file from the draft in the first place.
+ */
+let newest;
+if (wanted) {
+  const named = `issue-${wanted}.pending.json`;
+  if (!pending.includes(named)) {
+    console.error(`\n  No draft is waiting for ${wanted}. Waiting: ${pending.map((f) => f.slice(6, 16)).join(", ")}.\n`);
+    process.exit(1);
+  }
+  newest = named;
+} else if (pending.length > 1) {
+  console.error(`\n  ${pending.length} drafts are waiting, so which one you sent cannot be guessed:\n`);
+  for (const f of pending) console.error(`    ${f.slice(6, 16)}   drafts/issue-${f.slice(6, 16)}.html`);
+  console.error(`\n  Name the one you sent:  npm run draft:sent -- --issue ${pending[pending.length - 1].slice(6, 16)}`);
+  console.error(`  A draft you are not going to send can simply be deleted.\n`);
+  process.exit(1);
+} else {
+  newest = pending[0];
+}
+
 const { draftedAt, ids = [], slugs = [] } = JSON.parse(await fs.readFile(path.join(OUT, newest), "utf8"));
 
 let coveredIds = [];

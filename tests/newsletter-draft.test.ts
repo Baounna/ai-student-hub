@@ -1,4 +1,7 @@
-import { readFileSync } from "node:fs";
+import { spawnSync } from "node:child_process";
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import path from "node:path";
 import { describe, it, expect } from "vitest";
 import { getStages } from "@/content/stages";
 
@@ -65,5 +68,85 @@ describe("the weekly issue", () => {
     // showing 102.
     expect(DRAFT).toContain("onSiteOther");
     expect(DRAFT).toMatch(/open\.length - picked\.length/);
+  });
+});
+
+/**
+ * Which draft was sent is a fact only the sender has.
+ *
+ * mark-issue-sent.mjs took the last pending file by name, which is a guess, and
+ * on 8 November there were two: a draft from 6 October that had sat unsent long
+ * enough for five of its twelve listings to close, and a fresh one written that
+ * day. Pasting the October HTML into Kit and running the script would have
+ * retired the November listings and left the five dead ones marked unsent --
+ * silently, in both directions.
+ *
+ * Run as a process rather than read as text, because what matters is the exit
+ * code and whether the ledger was touched, neither of which a source match can
+ * show.
+ */
+describe("recording which issue was sent", () => {
+  const SCRIPT = path.resolve("scripts/mark-issue-sent.mjs");
+
+  function workspace(dates: string[]) {
+    const dir = mkdtempSync(path.join(tmpdir(), "issue-sent-"));
+    mkdirSync(path.join(dir, "drafts"));
+    for (const date of dates) {
+      writeFileSync(
+        path.join(dir, "drafts", `issue-${date}.pending.json`),
+        JSON.stringify({ draftedAt: date, ids: [`listing-${date}`], slugs: [`guide-${date}`] })
+      );
+    }
+    return dir;
+  }
+
+  function run(dir: string, args: string[] = []) {
+    const result = spawnSync(process.execPath, [SCRIPT, ...args], { cwd: dir, encoding: "utf8" });
+    return { status: result.status, output: `${result.stdout}${result.stderr}` };
+  }
+
+  const ledger = (dir: string) => path.join(dir, "drafts", ".last-issue.json");
+
+  it("refuses to guess when two drafts are waiting", () => {
+    const dir = workspace(["2026-10-06", "2026-11-08"]);
+    const { status, output } = run(dir);
+
+    expect(status).toBe(1);
+    expect(output).toContain("2026-10-06");
+    expect(output).toContain("2026-11-08");
+    // Neither draft may be retired, and no send may be recorded.
+    expect(existsSync(ledger(dir))).toBe(false);
+    expect(existsSync(path.join(dir, "drafts", "issue-2026-10-06.pending.json"))).toBe(true);
+    expect(existsSync(path.join(dir, "drafts", "issue-2026-11-08.pending.json"))).toBe(true);
+  });
+
+  it("records the issue the sender names, and only that one", () => {
+    const dir = workspace(["2026-10-06", "2026-11-08"]);
+    const { status } = run(dir, ["--issue", "2026-11-08"]);
+
+    expect(status).toBe(0);
+    const state = JSON.parse(readFileSync(ledger(dir), "utf8"));
+    expect(state.coveredIds).toEqual(["listing-2026-11-08"]);
+    expect(state.coveredIds).not.toContain("listing-2026-10-06");
+    expect(existsSync(path.join(dir, "drafts", "issue-2026-11-08.pending.json"))).toBe(false);
+    // The draft that was not sent is still waiting, not quietly consumed.
+    expect(existsSync(path.join(dir, "drafts", "issue-2026-10-06.pending.json"))).toBe(true);
+  });
+
+  it("still needs no flag when there is only one draft", () => {
+    const dir = workspace(["2026-11-08"]);
+    const { status } = run(dir);
+
+    expect(status).toBe(0);
+    expect(JSON.parse(readFileSync(ledger(dir), "utf8")).coveredIds).toEqual(["listing-2026-11-08"]);
+  });
+
+  it("says so when the named issue is not waiting", () => {
+    const dir = workspace(["2026-11-08"]);
+    const { status, output } = run(dir, ["--issue", "2026-10-06"]);
+
+    expect(status).toBe(1);
+    expect(output).toContain("2026-11-08");
+    expect(existsSync(ledger(dir))).toBe(false);
   });
 });
