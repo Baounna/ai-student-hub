@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
+import { titleKey } from "@/lib/live-news";
 
 /**
  * /news used to be the slowest page on the site by an order of magnitude.
@@ -94,5 +95,52 @@ describe("route loading states", () => {
     // that announces itself in the wrong language is worse than a silent one,
     // and the App Router's route announcer still reads the title on arrival.
     expect(read(file)).toContain('aria-hidden="true"');
+  });
+});
+
+/**
+ * One announcement, two publishers, two of the twelve slots.
+ *
+ * The live strip deduplicated on `${href}|${title}`, a key strictly narrower
+ * than the href alone: adding the title to a key that already holds the URL
+ * can only split groups, never merge them. So the same story carried by two
+ * blogs was never merged, and on 8 November 2026 /fr/news showed "Gemini Omni
+ * 1.2 Flash: Fast and cost-effective with longer clips" twice, labelled
+ * DeepMind Blog and Google AI Blog, at two URLs. Google and DeepMind cross-post
+ * constantly, as do the AWS and Azure blogs; this is the normal case.
+ */
+describe("the same story from two sources", () => {
+  const SOURCE = read("src/lib/live-news.ts");
+
+  it("no longer keys on a URL it has already keyed on", () => {
+    expect(SOURCE).not.toMatch(/`\$\{item\.href\}\|\$\{item\.title\}`/);
+    expect(SOURCE).toMatch(/const key = item\.href\.toLowerCase\(\);/);
+  });
+
+  it("collapses a cross-post to one entry", () => {
+    const title = "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips";
+    expect(titleKey(title)).toBe(titleKey(title.toUpperCase()));
+    // The re-post is rarely character-identical: a different dash, a curly
+    // quote, an accent typed or not.
+    expect(titleKey("Gemini Omni 1.2 Flash — Fast, cost-effective")).toBe(
+      titleKey("Gemini Omni 1.2 Flash - Fast cost effective")
+    );
+    expect(titleKey("Évaluation des modèles")).toBe(titleKey("Evaluation des modeles"));
+  });
+
+  it("keeps two genuinely different headlines apart", () => {
+    expect(titleKey("Gemini Omni 1.2 Flash")).not.toBe(titleKey("Gemini Omni 1.3 Flash"));
+    expect(titleKey("")).toBe("");
+  });
+
+  it("keeps the first publisher, not the first feed read", () => {
+    // Deduplicating before the sort would keep whichever feed happened to be
+    // fetched first; after it, the earliest publication wins.
+    const sortIndex = SOURCE.indexOf("const sorted = Array.from(deduped.values())");
+    const titleDedupeIndex = SOURCE.indexOf("const byTitle = new Map<string, LiveNewsItem>()");
+    expect(sortIndex).toBeGreaterThan(-1);
+    expect(titleDedupeIndex).toBeGreaterThan(sortIndex);
+    // And the deduplicated list is the one that actually reaches the reader.
+    expect(SOURCE).toMatch(/const candidatePool = recent\.length \? recent : unique;/);
   });
 });

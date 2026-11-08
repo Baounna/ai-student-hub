@@ -310,6 +310,40 @@ export default async function LocalizedNewsPage(
           </Link>
         </div>
 
+        {/*
+          The freshest thing on the page now sits above the hand-written
+          briefs, which is what the paragraph inside this block already
+          promised the reader: these updates "passent en priorite en haut de la
+          page". They sat below them instead, under a featured brief whose date
+          on 8 November 2026 read "19 fevr. 2026", so the page opened with
+          nine-month-old writing and a reader concluded, reasonably, that
+          nothing here had moved since February.
+        */}
+        <section className="mb-6 surface rounded-2xl p-6">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
+              {locale === "fr" ? "Nouveautés AI + Cybersecurity depuis le web" : "Latest AI + Cybersecurity from the web"}
+            </h2>
+            <Link href={`/${locale}/news/live`} className="btn-secondary">
+              {locale === "fr" ? "Flux live complet" : "Open full live stream"}
+            </Link>
+          </div>
+          <p className="mt-2 text-sm text-[color:var(--text)]">
+            {locale === "fr"
+              ? "Ces updates viennent de sources officielles et passent en priorité en haut de la page."
+              : "These updates come from official sources and stay prioritized at the top of this page."}
+          </p>
+          {/* The fallback is not a skeleton: it is the committed auto-news
+              snapshot, the same items this block falls back to when the feeds
+              answer with nothing. So the reader gets real, readable, linked
+              headlines in the first flush of HTML and the live set replaces them
+              when it arrives -- rather than an empty page held open by whichever
+              of seventeen hosts is slowest today. */}
+          <Suspense fallback={<WebUpdatesBody items={snapshotWebUpdates(locale)} updatedAt={getAutoNewsUpdatedAt()} locale={locale} />}>
+            <LiveWebUpdates locale={locale} />
+          </Suspense>
+        </section>
+
         <div className="grid gap-4 xl:grid-cols-[0.92fr,1.45fr]">
           <aside
             className="space-y-3"
@@ -397,30 +431,6 @@ export default async function LocalizedNewsPage(
         </div>
       </div>
 
-      <section className="mt-6 surface rounded-2xl p-6">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">
-            {locale === "fr" ? "Nouveautés AI + Cybersecurity depuis le web" : "Latest AI + Cybersecurity from the web"}
-          </h2>
-          <Link href={`/${locale}/news/live`} className="btn-secondary">
-            {locale === "fr" ? "Flux live complet" : "Open full live stream"}
-          </Link>
-        </div>
-        <p className="mt-2 text-sm text-[color:var(--text)]">
-          {locale === "fr"
-            ? "Ces updates viennent de sources officielles et passent en priorité en haut de la page."
-            : "These updates come from official sources and stay prioritized at the top of this page."}
-        </p>
-        {/* The fallback is not a skeleton: it is the committed auto-news
-            snapshot, the same items this block falls back to when the feeds
-            answer with nothing. So the reader gets real, readable, linked
-            headlines in the first flush of HTML and the live set replaces them
-            when it arrives -- rather than an empty page held open by whichever
-            of seventeen hosts is slowest today. */}
-        <Suspense fallback={<WebUpdatesBody items={snapshotWebUpdates(locale)} updatedAt={getAutoNewsUpdatedAt()} locale={locale} />}>
-          <LiveWebUpdates locale={locale} />
-        </Suspense>
-      </section>
 
       <div className="mt-6 rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--primary)]">

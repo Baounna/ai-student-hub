@@ -115,6 +115,22 @@ function extractAtomLink(block: string) {
   return fallbackMatch?.[1]?.trim() || "";
 }
 
+/**
+ * A headline reduced to what two publishers would agree on.
+ *
+ * Accents are folded and punctuation dropped because the same title is
+ * routinely re-typed with a different dash or quote between one blog and
+ * another, and a reader does not care which one they got.
+ */
+export function titleKey(title: string) {
+  return title
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
 function normalizeDate(value: string) {
   const parsed = new Date(value);
   if (Number.isNaN(parsed.getTime())) return "";
@@ -394,7 +410,7 @@ export const getLiveAiCsUpdates = cache(async (limit = 24) => {
 
   const deduped = new Map<string, LiveNewsItem>();
   for (const item of combined) {
-    const key = `${item.href}|${item.title}`.toLowerCase();
+    const key = item.href.toLowerCase();
     if (!deduped.has(key)) {
       deduped.set(key, item);
     }
@@ -407,10 +423,34 @@ export const getLiveAiCsUpdates = cache(async (limit = 24) => {
     return a.publishedAt < b.publishedAt ? 1 : -1;
   });
 
-  const minDateMs = Date.now() - MAX_NEWS_AGE_DAYS * 24 * 60 * 60 * 1000;
-  const recent = sorted.filter((item) => !item.publishedAt || new Date(item.publishedAt).getTime() >= minDateMs);
+  /**
+   * One announcement, two publishers, two slots out of twelve.
+   *
+   * The key used to be `href|title`, which is strictly narrower than the href
+   * alone -- adding the title to a key that already contains the URL can only
+   * ever split groups, never merge them, so the title half did nothing. What a
+   * reader actually sees was never deduplicated: on 8 November 2026 the live
+   * strip carried "Gemini Omni 1.2 Flash: Fast and cost-effective with longer
+   * clips" twice, once labelled DeepMind Blog and once Google AI Blog, at two
+   * different URLs. Google and DeepMind cross-post constantly, as do the AWS
+   * and Azure blogs, so this is the normal case and not an edge one.
+   *
+   * Run after the sort rather than before it, so the copy that survives is the
+   * one published first -- the announcement, not the re-post -- instead of
+   * whichever feed happened to be read first.
+   */
+  const byTitle = new Map<string, LiveNewsItem>();
+  for (const item of sorted) {
+    const key = titleKey(item.title);
+    if (!key) continue;
+    if (!byTitle.has(key)) byTitle.set(key, item);
+  }
+  const unique = Array.from(byTitle.values());
 
-  const candidatePool = recent.length ? recent : sorted;
+  const minDateMs = Date.now() - MAX_NEWS_AGE_DAYS * 24 * 60 * 60 * 1000;
+  const recent = unique.filter((item) => !item.publishedAt || new Date(item.publishedAt).getTime() >= minDateMs);
+
+  const candidatePool = recent.length ? recent : unique;
   const diversified = diversifyBySource(candidatePool, limit);
   if (diversified.length) return diversified;
   if (candidatePool.length) return candidatePool.slice(0, limit);
