@@ -1,6 +1,6 @@
 {
-  "epoch": 4,
-  "baselineTests": 908,
+  "epoch": 5,
+  "baselineTests": 919,
   "invariants": {
     "1": {
       "status": "hand-checked",
@@ -27,8 +27,8 @@
       "evidence": "npm run health reports it: no issue has ever been sent"
     },
     "7": {
-      "status": "hand-checked",
-      "evidence": "grep hasPaidLinks in src/config/site.ts and GUIDE_EXISTS in src/lib/product.ts; both gates still drive the copy"
+      "status": "pass",
+      "evidence": "hasPaidLinks=false, and both disclosures are the wording that belongs to it; GUIDE_EXISTS=false, every reader-facing CTA routed through the gate"
     },
     "8": {
       "status": "pass",
@@ -44,7 +44,7 @@
     },
     "11": {
       "status": "pass",
-      "evidence": "908 tests passing (baseline 903)"
+      "evidence": "919 tests passing (baseline 908)"
     },
     "12": {
       "status": "hand-checked",
@@ -57,7 +57,8 @@
     "LOOP-1 npm run invariants",
     "C-1 one notion of reference on /blog",
     "B-2 proportional interleave on /stages",
-    "B-3 Anthropic Engineering moved to /research"
+    "B-3 Anthropic Engineering moved to /research",
+    "LOOP-2 invariant 7 measured"
   ],
   "couplings": [
     {
@@ -88,10 +89,11 @@
     }
   ],
   "knownWeaknesses": [
+    "RECORDED epoch 5: growth-sprint/page.tsx:359 reaches /product/ai-career-guide without passing getGuideCtaHref. Defensible on an internal robots-disallowed page; a live claim if that page ever stops being internal.",
     "RESOLVED in epoch 4: Anthropic Engineering silent since 13 Oct. Anthropic moved posts from /engineering/<slug> to /research/<slug>; 60 anchors, 0 matched the old rule, 21 match the new one.",
     "RESOLVED in epoch 3: orderStages top-bias. Measured after: 1 (was 2) at 10/86, 2 (was 3) at 15/100, 3 (was 4) at 25/100, 4 (was 7) at 40/120.",
     "invariant 2 has no reliable automation: a per-item count and a page aggregate are indistinguishable in rendered text",
-    "invariants 1, 2, 6, 7, 9, 10, 12 are hand-checked and should be promoted as automation becomes possible"
+    "invariants 1, 2, 6, 9, 10, 12 are hand-checked; 7 was promoted in epoch 5"
   ],
   "ownerDecisions": [
     "PUSH: the Internship Finder runs Thursdays against origin/main and its fix is unpushed; it will fail a third time otherwise",

@@ -169,6 +169,100 @@ async function invariant5(files) {
   record(5, "fail", offenders.join("; "));
 }
 
+// ---------------------------------------------------------------- invariant 7
+/**
+ * Disclosure matches reality.
+ *
+ * Two gates govern reader-facing claims on four pages. `hasPaidLinks`
+ * (src/config/site.ts) decides whether the site says it earns a commission,
+ * and `GUIDE_EXISTS` (src/lib/product.ts) decides whether it offers a guide
+ * for sale. Both are currently false, and nothing checked that the copy still
+ * agreed with them.
+ *
+ * The cost of getting this wrong is not hypothetical. A session working on
+ * this repository read the names `affiliateHref` and `affiliate_click`,
+ * concluded the site took a commission -- it does not, and site.ts:242-246
+ * records the commission wording being removed for exactly that reason -- and
+ * wrote the claim into a formal letter addressed to a university Dean.
+ *
+ * Measured rather than matched loosely: the two canonical disclosure strings
+ * are read out of site.ts, the gate is evaluated from the same regex and the
+ * same environment the gate itself uses, and the effective text must be the
+ * one belonging to the gate's value. An environment override that contradicts
+ * the gate therefore fails rather than passing quietly.
+ */
+export function disclosureVerdict({ hasPaidLinks, effective, canonical }) {
+  const wanted = hasPaidLinks ? canonical.paid : canonical.unpaid;
+  for (const locale of ["en", "fr"]) {
+    if (effective[locale] !== wanted[locale]) {
+      return {
+        ok: false,
+        why: `hasPaidLinks=${hasPaidLinks} but the ${locale.toUpperCase()} disclosure is not the one that belongs to it (environment override, or the copy was edited away from the gate)`
+      };
+    }
+  }
+  return { ok: true, why: `hasPaidLinks=${hasPaidLinks}, and both disclosures are the wording that belongs to it` };
+}
+
+/** Every route to the guide must pass through the gate that decides it exists. */
+export function guideVerdict({ guideExists, gateIsWired, directLinks }) {
+  if (!gateIsWired) return { ok: false, why: "getGuideCtaHref no longer branches on GUIDE_EXISTS" };
+  if (!guideExists && directLinks.length) {
+    return { ok: false, why: `GUIDE_EXISTS=false but ${directLinks.length} page(s) link the product route directly: ${directLinks.join(", ")}` };
+  }
+  return { ok: true, why: `GUIDE_EXISTS=${guideExists}, every reader-facing CTA routed through the gate` };
+}
+
+async function invariant7() {
+  const site = await fs.readFile(path.join(ROOT, "src/config/site.ts"), "utf8");
+  const product = await fs.readFile(path.join(ROOT, "src/lib/product.ts"), "utf8");
+
+  // The gate, evaluated from the definition rather than from a copy of it.
+  const referral = site.match(/const REFERRAL_PARAM = (\/.+\/[a-z]*);/)?.[1];
+  if (!referral) return record(7, "hand-checked", "REFERRAL_PARAM not found in src/config/site.ts; read the gate by hand");
+  const [, body, flags] = referral.match(/^\/([\s\S]*)\/([a-z]*)$/);
+  const referralRe = new RegExp(body, flags);
+  const hasPaidLinks =
+    Boolean(process.env.NEXT_PUBLIC_DIGITALOCEAN_REF) ||
+    [1, 2, 3, 4, 5].some((i) => referralRe.test(process.env[`AFFILIATE_${i}_URL`] || ""));
+
+  // Both canonical wordings, read out of the ternary that chooses between them.
+  const strings = [...site.matchAll(/en: "([^"]*(?:affiliate|parrainage|commission)[^"]*)",\s*\n\s*fr: "([^"]*)"/g)];
+  if (strings.length < 2) return record(7, "hand-checked", "could not read both disclosure wordings from src/config/site.ts");
+  const canonical = { paid: { en: strings[0][1], fr: strings[0][2] }, unpaid: { en: strings[1][1], fr: strings[1][2] } };
+
+  const effective = {
+    en: process.env.AFFILIATE_DISCLOSURE_TEXT_EN || (hasPaidLinks ? canonical.paid.en : canonical.unpaid.en),
+    fr: process.env.AFFILIATE_DISCLOSURE_TEXT_FR || (hasPaidLinks ? canonical.paid.fr : canonical.unpaid.fr)
+  };
+
+  const disclosure = disclosureVerdict({ hasPaidLinks, effective, canonical });
+
+  const guideExists = product.match(/const GUIDE_EXISTS = (true|false);/)?.[1] === "true";
+  const gateIsWired = /GUIDE_EXISTS \? `\/\$\{locale\}\/product\/ai-career-guide`/.test(product);
+
+  const directLinks = [];
+  for (const { route, file } of await pageFiles()) {
+    if (route === "/product") continue;
+    /*
+     * /growth-sprint links the product route directly, as a button labelled
+     * "Optimize product page". That is the owner's own shortcut on an internal,
+     * robots-disallowed checklist -- a place to go and work, not a claim to a
+     * reader that a guide is for sale. It is excluded for the same stated
+     * reason as in invariant 3, from the same set, rather than by loosening the
+     * rule until it stops noticing.
+     */
+    if (NOT_READER_FACING.has(route)) continue;
+    const source = await fs.readFile(file, "utf8");
+    if (/\/product\/ai-career-guide/.test(source.replace(/\/\*[\s\S]*?\*\//g, ""))) directLinks.push(route || "/");
+  }
+
+  const guide = guideVerdict({ guideExists, gateIsWired, directLinks });
+
+  if (disclosure.ok && guide.ok) return record(7, "pass", `${disclosure.why}; ${guide.why}`);
+  record(7, "fail", [disclosure.ok ? null : disclosure.why, guide.ok ? null : guide.why].filter(Boolean).join("; "));
+}
+
 // ---------------------------------------------------------------- invariant 8
 /**
  * One date format per locale per page.
@@ -220,7 +314,6 @@ async function invariant11() {
 function handChecked() {
   record(1, "hand-checked", "no automation; read each page's claims against today's data (epoch 1: /stages, /news, /blog carry staleness notices)");
   record(6, "hand-checked", "npm run health reports it: no issue has ever been sent");
-  record(7, "hand-checked", "grep hasPaidLinks in src/config/site.ts and GUIDE_EXISTS in src/lib/product.ts; both gates still drive the copy");
   record(9, "hand-checked", "tests/french-typography.test.ts covers the spacing; articles and elision are read by eye");
   record(10, "hand-checked", "every check added in epochs 0-1 has a test proving it can go red; older checks unaudited");
   record(12, "hand-checked", "npm run health");
@@ -233,6 +326,7 @@ async function main() {
   handChecked();
   await invariant3(files);
   await invariant5(files);
+  await invariant7();
   await invariant8(files);
   invariant2();
   await invariant4(routes);
