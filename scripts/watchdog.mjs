@@ -30,6 +30,9 @@ const SITE = (process.env.WATCHDOG_SITE_URL || "https://ai-student-hub-navy.verc
 const MAX_CONTENT_AGE_HOURS = Number.parseInt(process.env.WATCHDOG_MAX_CONTENT_AGE_HOURS || "72", 10);
 const NEWS_SOURCE_QUIET_ADVISORY_DAYS = Number.parseInt(process.env.WATCHDOG_NEWS_SOURCE_ADVISORY_DAYS || "10", 10);
 const NEWS_SOURCE_QUIET_FAIL_DAYS = Number.parseInt(process.env.WATCHDOG_NEWS_SOURCE_FAIL_DAYS || "21", 10);
+const NEWSLETTER_OVERDUE_DAYS = Number.parseInt(process.env.WATCHDOG_NEWSLETTER_OVERDUE_DAYS || "14", 10);
+const EDITORIAL_ADVISORY_DAYS = Number.parseInt(process.env.WATCHDOG_EDITORIAL_ADVISORY_DAYS || "60", 10);
+const EDITORIAL_FAIL_DAYS = Number.parseInt(process.env.WATCHDOG_EDITORIAL_FAIL_DAYS || "120", 10);
 const TIMEOUT_SECONDS = 25;
 
 /** @type {{name:string, ok:boolean, detail:string, fixable:boolean, advisory:boolean}[]} */
@@ -169,6 +172,125 @@ async function checkContentFreshness() {
  * the owner learns to skip. Sources are named either way, because "some feeds
  * are quiet" is not something anyone can act on.
  */
+/**
+ * How old the newest hand-written thing on the site is.
+ *
+ * The blog and the news briefs are the only content a person writes here, and
+ * nothing watched their age. On 2026-11-08 the newest blog post was dated
+ * 2026-09-19 and all nine news briefs were February 2026, sitting under
+ * headings that read "Latest AI + Cybersecurity articles" and "Articles
+ * recents". The automated half of the site -- listings, signals -- refreshes
+ * itself twice a day and hides that, which is exactly why it needs its own
+ * check: the page looks alive while the writing has not moved in nine months.
+ *
+ * Reporting only. This check never edits, retires or re-dates an article; what
+ * to write is the owner's call and nobody else's.
+ *
+ * Both thresholds are env-overridable because the right number depends on how
+ * often he intends to publish, and an alarm set to the wrong cadence is one he
+ * stops reading -- the failure this file exists to prevent.
+ */
+export function editorialAgeVerdict(newest, nowMs, advisoryDays, failDays) {
+  const dated = newest.filter((entry) => Number.isFinite(Date.parse(entry.date || "")));
+
+  if (!dated.length) {
+    return { ok: true, advisory: true, detail: "no dated article or brief could be read" };
+  }
+
+  const aged = dated
+    .map((entry) => ({ label: entry.label, days: Math.floor((nowMs - Date.parse(entry.date)) / 86_400_000) }))
+    .sort((a, b) => b.days - a.days);
+
+  const worst = aged[0];
+  const summary = aged.map((entry) => `${entry.label} ${entry.days}d`).join(", ");
+
+  if (worst.days < advisoryDays) return { ok: true, advisory: false, detail: `newest: ${summary}` };
+  if (worst.days < failDays) return { ok: true, advisory: true, detail: `nothing new in a while — ${summary}` };
+  return { ok: false, advisory: false, detail: `the site says "latest" over this — ${summary}` };
+}
+
+async function checkEditorialAge() {
+  const newestIn = async (file, label) => {
+    try {
+      const raw = await fs.readFile(path.join(process.cwd(), file), "utf8");
+      const dates = [...raw.matchAll(/publishedAt:\s*"(\d{4}-\d{2}-\d{2})"/g)].map((m) => m[1]).sort();
+      return { label, date: dates.length ? dates[dates.length - 1] : "" };
+    } catch {
+      return { label, date: "" };
+    }
+  };
+
+  const newest = [
+    await newestIn("src/content/posts.ts", "blog"),
+    await newestIn("src/content/posts-cs.ts", "blog (cs)"),
+    await newestIn("src/content/news.ts", "briefs")
+  ].filter((entry) => entry.date);
+
+  const verdict = editorialAgeVerdict(newest, Date.now(), EDITORIAL_ADVISORY_DAYS, EDITORIAL_FAIL_DAYS);
+  record("Editorial freshness", verdict.ok, verdict.detail, false, verdict.advisory);
+}
+
+/**
+ * How long it has been since an issue actually went out.
+ *
+ * Every page on the site carries "At most one email a week" and a signup form,
+ * and drafts/.last-issue.json has carried `sentAt: null` since it was reset --
+ * no issue has ever been sent. src/i18n/dictionaries.ts:165-169 records the
+ * same thing from the copy's side.
+ *
+ * Separated from the draft script on purpose: writing a draft is not sending
+ * it, and the two were one action until three September drafts retired their
+ * listings without an email going out. This check reports the gap between the
+ * promise and the record, and names the draft that is waiting, so the answer is
+ * one paste into Kit rather than an investigation.
+ *
+ * Advisory, never failing. Nothing is broken -- a person has not done something
+ * only a person can do, and marking the site unhealthy for as long as that
+ * takes is the bad choice the three-level model exists to avoid.
+ */
+export function newsletterCadenceVerdict(sentAt, waitingDraft, nowMs, overdueDays) {
+  const sent = Date.parse(sentAt || "");
+  const waiting = waitingDraft ? `, ${waitingDraft} is waiting` : ", no draft is waiting";
+
+  if (!Number.isFinite(sent)) {
+    return { ok: true, advisory: true, detail: `no issue has ever been sent${waiting}` };
+  }
+
+  const days = Math.floor((nowMs - sent) / 86_400_000);
+  if (days < overdueDays) {
+    return { ok: true, advisory: false, detail: `last issue sent ${days}d ago` };
+  }
+  return {
+    ok: true,
+    advisory: true,
+    detail: `last issue sent ${days}d ago, and the site promises one a week${waiting}`
+  };
+}
+
+async function checkNewsletterCadence() {
+  const draftsDir = path.join(process.cwd(), "drafts");
+
+  let sentAt = null;
+  try {
+    const raw = await fs.readFile(path.join(draftsDir, ".last-issue.json"), "utf8");
+    sentAt = JSON.parse(raw).sentAt ?? null;
+  } catch {
+    // No ledger yet. Reported below as never sent, which is what that means.
+  }
+
+  let waitingDraft = "";
+  try {
+    const pending = (await fs.readdir(draftsDir)).filter((f) => f.endsWith(".pending.json")).sort();
+    if (pending.length) waitingDraft = `drafts/issue-${pending[pending.length - 1].slice(6, 16)}.html`;
+    if (pending.length > 1) waitingDraft += ` (${pending.length} drafts pending)`;
+  } catch {
+    // No drafts directory: waitingDraft stays empty and the detail says so.
+  }
+
+  const verdict = newsletterCadenceVerdict(sentAt, waitingDraft, Date.now(), NEWSLETTER_OVERDUE_DAYS);
+  record("Newsletter cadence", verdict.ok, verdict.detail, false, verdict.advisory);
+}
+
 /**
  * The judgement, separated from the file read so it can be tested.
  *
@@ -1027,6 +1149,8 @@ async function run() {
   await checkLiveSite();
   await checkContentFreshness();
   await checkNewsSourcesStillProducing();
+  await checkNewsletterCadence();
+  await checkEditorialAge();
   await checkStagesFreshness();
   await checkLockfile();
   await checkVulnerabilities();
