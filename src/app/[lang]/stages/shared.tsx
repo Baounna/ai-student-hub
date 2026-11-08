@@ -20,7 +20,7 @@ const COPY = {
     // Regions, not a country list. The exact breakdown is on the next line and
     // is counted from the data; naming countries here meant editing the title
     // every time the board grew, which is how it came to say "Morocco and
-    // France" for a list that was 73 French and 9 Moroccan.
+    // France" for a list that was by then 73 French and 9 Moroccan.
     title: stagesPageTitle("en"),
     // <title> only, the same split the posts and news briefs use: the heading
     // above stays readable while the search result fits. The regional title

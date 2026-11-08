@@ -2,10 +2,14 @@
 /**
  * Find internships the board does not have yet.
  *
- * Every one of the 88 listings was added by a person typing `npm run add:stage`.
- * That is why the board grows slowly while postings die quickly -- fourteen
- * closed in four days once, and nothing was replacing them. This finds
- * candidates so the adding is the only manual part left.
+ * The board was built by hand: for months every listing arrived through a
+ * person typing `npm run add:stage`, which is why it grew slowly while
+ * postings died quickly -- fourteen closed in four days once, and nothing was
+ * replacing them. This finds candidates so the adding is not the only route.
+ *
+ * It now adds some itself. The first listings this script committed landed on
+ * 8 November 2026, after two scheduled runs had failed on a frozen ratio in a
+ * test and thrown away everything they found.
  *
  * Without --write it only PROPOSES: a review file and a ready-to-paste command
  * per candidate. With --write it adds what it can stand behind, and the two are

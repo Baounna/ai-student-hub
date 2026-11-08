@@ -83,8 +83,10 @@ export default async function StagesPage(props: {
   /**
    * Country and kind, read from the URL.
    *
-   * Eleven countries and 111 rows in one flat list means a student in
-   * Casablanca scrolls past a hundred French listings to find nine, and the
+   * A flat list across eleven countries means a student in Casablanca scrolls
+   * past every French listing to reach the Moroccan ones -- 111 rows and nine
+   * of them when this was written, and it is the ratio that matters here, not
+   * the number. The
    * scope line above now tells them those nine exist -- which made the absence
    * of a way to reach them worse, not better. Naming a subset you give nobody a
    * route to is its own small cruelty.
@@ -145,7 +147,7 @@ export default async function StagesPage(props: {
    *
    * The data has no skills field, so the only route to a topic is the words the
    * employer already wrote: a reader after NLP, Kubernetes or Casablanca has to
-   * read all 104 rows to find the four.
+   * read every row to find the few that match.
    *
    * The blog's matcher, not a second one. It already folds accents -- half
    * these roles are French and nobody types "Sécurité" with the accent on a
@@ -204,9 +206,11 @@ export default async function StagesPage(props: {
    * first actual internship about 1,300px down a page whose entire purpose is
    * internships.
    *
-   * Four, because the top four countries are 82 of the 94 listings. Eight of
-   * the twelve have four listings or fewer, and those are the ones worth a
-   * click to reach rather than four rows of standing cost for every reader.
+   * Four, because the top four countries hold most of the board -- 82 of 94
+   * when this was chosen, 77 of 88 today -- while the long tail is countries
+   * with four listings or fewer. Those are worth a click to reach rather than
+   * four rows of standing cost for every reader. Recheck the shape if it
+   * changes, not the absolute numbers.
    *
    * <details> rather than a toggle: it needs no JavaScript, a keyboard opens
    * it with Enter or Space for free, and the chips inside stay real <Link>s
