@@ -169,6 +169,57 @@ async function invariant5(files) {
   record(5, "fail", offenders.join("; "));
 }
 
+// ---------------------------------------------------------------- invariant 6
+/**
+ * The cadence promised equals the cadence kept.
+ *
+ * Every page carries "At most one email a week" over a signup form, and
+ * drafts/.last-issue.json has said `sentAt: null` since it was reset. The
+ * watchdog reports the gap as something waiting on a person, which it is. This
+ * reports it as what it also is: a sentence on the site that is not true.
+ *
+ * A promise with nothing behind it is the defect this project's whole
+ * honesty rule exists for, and it has the distinction of being the one that
+ * costs a reader something -- a student gives an address expecting listings.
+ *
+ * Fourteen days of grace on a weekly promise, because a week late is a late
+ * issue and a month late is a different cadence.
+ */
+export function cadenceVerdict({ promisesWeekly, sentAt, nowMs, graceDays }) {
+  if (!promisesWeekly) return { ok: true, why: "the copy promises no cadence, so there is none to keep" };
+
+  const sent = Date.parse(sentAt || "");
+  if (!Number.isFinite(sent)) {
+    return { ok: false, why: "the copy promises an email a week and none has ever been sent" };
+  }
+
+  const days = Math.floor((nowMs - sent) / 86_400_000);
+  if (days > graceDays) {
+    return { ok: false, why: `the copy promises an email a week; the last one was ${days} days ago` };
+  }
+  return { ok: true, why: `last issue ${days} days ago, within the promised cadence` };
+}
+
+async function invariant6() {
+  const sources = await Promise.all(
+    ["src/components/newsletter.tsx", "src/i18n/dictionaries.ts"].map((f) =>
+      fs.readFile(path.join(ROOT, f), "utf8").catch(() => "")
+    )
+  );
+  const weekly = /one email a week|un email par semaine/i;
+  const promisesWeekly = sources.some((text) => weekly.test(text));
+
+  let sentAt = null;
+  try {
+    sentAt = JSON.parse(await fs.readFile(path.join(ROOT, "drafts/.last-issue.json"), "utf8")).sentAt ?? null;
+  } catch {
+    // No ledger is the same fact as nothing sent.
+  }
+
+  const verdict = cadenceVerdict({ promisesWeekly, sentAt, nowMs: Date.now(), graceDays: 14 });
+  record(6, verdict.ok ? "pass" : "fail", verdict.why);
+}
+
 // ---------------------------------------------------------------- invariant 7
 /**
  * Disclosure matches reality.
@@ -427,12 +478,66 @@ async function invariant11() {
   }
 }
 
+// --------------------------------------------------------------- invariant 12
+/**
+ * Everything npm run health reports is a decision, not a defect.
+ *
+ * The health report exists so that someone returning after weeks learns the
+ * truth in two minutes. That only works if its list means one thing. A list
+ * mixing "you have not sent the newsletter" with "a scheduled job is broken"
+ * teaches its reader to skim, and skimming is how the Internship Finder sat
+ * failing for ten days.
+ *
+ * So every line it prints must match something already written down as the
+ * owner's to decide. A line nobody has classified is, by definition, something
+ * new -- and new is what this invariant is for.
+ */
+export function healthVerdict(needsYou, ownerDecisions) {
+  const unexplained = needsYou.filter((line) => !ownerDecisions.some((known) => line.includes(known)));
+  if (!unexplained.length) {
+    return { ok: true, why: `${needsYou.length} item(s), all of them decisions already recorded as the owner's` };
+  }
+  return { ok: false, why: `${unexplained.length} item(s) are not owner decisions: ${unexplained.map((l) => l.trim()).join("; ")}` };
+}
+
+/**
+ * Signatures of the three standing owner decisions, kept here rather than read
+ * from the ledger so the check cannot be silenced by editing a JSON file.
+ */
+const OWNER_DECISIONS = [
+  "says \"latest\" over content that is not",
+  "promises an email that is not going out",
+  "write or retire"
+];
+
+async function invariant12() {
+  let output;
+  try {
+    const result = await execFileAsync("node", [path.join(ROOT, "scripts/health.mjs")], { maxBuffer: 8_000_000 });
+    output = `${result.stdout}`;
+  } catch (error) {
+    // Exit 1 is the documented "something needs you" state, not a crash.
+    output = `${error?.stdout || ""}`;
+    if (!output) return record(12, "hand-checked", `npm run health did not produce output — ${String(error?.message || error).slice(0, 70)}`);
+  }
+
+  const tail = output.slice(output.indexOf("In one line"));
+  const needsYou = tail
+    .split("\n")
+    .filter((line) => line.trim().startsWith("\u00b7"))
+    .map((line) => line.replace(/^\s*\u00b7\s*/, ""));
+
+  if (!tail.includes("In one line")) return record(12, "hand-checked", "could not find the summary in npm run health output");
+  if (!needsYou.length) return record(12, "pass", "npm run health reports nothing needing a person");
+
+  const verdict = healthVerdict(needsYou, OWNER_DECISIONS);
+  record(12, verdict.ok ? "pass" : "fail", verdict.why);
+}
+
 /** Invariants with no automation yet. Named so they cannot hide among the passes. */
 function handChecked() {
   record(1, "hand-checked", "no automation; read each page's claims against today's data (epoch 1: /stages, /news, /blog carry staleness notices)");
-  record(6, "hand-checked", "npm run health reports it: no issue has ever been sent");
   record(9, "hand-checked", "tests/french-typography.test.ts covers the spacing; articles and elision are read by eye");
-  record(12, "hand-checked", "npm run health");
 }
 
 async function main() {
@@ -442,12 +547,14 @@ async function main() {
   handChecked();
   await invariant3(files);
   await invariant5(files);
+  await invariant6();
   await invariant7();
   await invariant8(files);
   invariant2();
   await invariant4(routes);
   await invariant10();
   await invariant11();
+  await invariant12();
 
   const ordered = Object.fromEntries(Object.keys(results).map(Number).sort((a, b) => a - b).map((n) => [n, results[n]]));
 

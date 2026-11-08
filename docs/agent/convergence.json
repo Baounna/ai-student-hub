@@ -1,6 +1,6 @@
 {
-  "epoch": 8,
-  "baselineTests": 934,
+  "epoch": 9,
+  "baselineTests": 945,
   "invariants": {
     "1": {
       "status": "hand-checked",
@@ -23,8 +23,8 @@
       "evidence": "every page renders <=1 of its own (13 pages)"
     },
     "6": {
-      "status": "hand-checked",
-      "evidence": "npm run health reports it: no issue has ever been sent"
+      "status": "fail",
+      "evidence": "the copy promises an email a week and none has ever been sent"
     },
     "7": {
       "status": "pass",
@@ -44,11 +44,11 @@
     },
     "11": {
       "status": "pass",
-      "evidence": "934 tests passing (baseline 931)"
+      "evidence": "945 tests passing (baseline 934)"
     },
     "12": {
-      "status": "hand-checked",
-      "evidence": "npm run health"
+      "status": "pass",
+      "evidence": "2 item(s), all of them decisions already recorded as the owner's"
     }
   },
   "unitsDone": [
@@ -61,7 +61,8 @@
     "LOOP-2 invariant 7 measured",
     "LOOP-3 invariant 10 measured",
     "WATCHDOG-1 a skip is no longer a pass, and the advisory convention corrected",
-    "C-2 authored readTime literals removed"
+    "C-2 authored readTime literals removed",
+    "LOOP-4 invariants 6 and 12 measured"
   ],
   "couplings": [
     {
@@ -92,6 +93,7 @@
     }
   ],
   "knownWeaknesses": [
+    "CONFIRMED epoch 9: the Internship Finder succeeded on a manual dispatch and the board grew 86 -> 88, the first growth since 29 October.",
     "RESOLVED epoch 8: 24 hand-typed readTime literals, wrong by a factor of three and overwritten before render. AuthoredPost now omits the field so none can be authored again.",
     "RESOLVED epoch 4, CONFIRMED epoch 7 in production: Anthropic Engineering 1 item -> 11, all under /research/.",
     "RESOLVED epoch 7: six checks recorded a skip as a pass; three checks returned ok:true with advisory:true and printed as ticks, so work waiting on a person counted toward 'all checks passed'.",
@@ -109,5 +111,6 @@
   ],
   "measuredAt": "Invariant 4 measures a DEPLOYED site. A fix committed locally reads as still failing until it ships; point NEXT_PUBLIC_SITE_URL at a local production server to check before deploy.",
   "nextEpoch": "docs/agent/next-epoch.md",
-  "pending": "Internship Finder, Thursday 12 November 2026. Failed 29 Oct and 5 Nov on a frozen ratio in a test; fix on main since 8 Nov."
+  "pending": null,
+  "converged": "2026-11-08. Stop condition met: 0 regressions in 9 epochs, 0 new, and the one failing invariant (6) is the owner's decision to send the first newsletter."
 }

@@ -168,7 +168,18 @@ async function theJobs() {
       ["run", "list", "--limit", "40", "--json", "name,conclusion,createdAt,event"],
       { maxBuffer: 4_000_000 }
     );
-    const runs = JSON.parse(stdout).filter((r) => r.event === "schedule");
+    /*
+     * Cadence comes from the scheduled runs; the verdict comes from the most
+     * recent run of any kind.
+     *
+     * Filtering to `schedule` alone meant a manual run could not clear a
+     * reported failure. On 8 November the Internship Finder was dispatched by
+     * hand to confirm a fix, succeeded, and committed two listings -- and this
+     * report went on naming its 5 November scheduled failure, because the run
+     * that proved it fixed was the wrong event type to be seen.
+     */
+    const all = JSON.parse(stdout);
+    const runs = all.filter((r) => r.event === "schedule");
     if (!runs.length) {
       say("  no scheduled runs in the last 40 — nothing has fired");
       flag("  scheduled jobs are not firing");
@@ -176,10 +187,17 @@ async function theJobs() {
     }
     const byName = new Map();
     for (const run of runs) if (!byName.has(run.name)) byName.set(run.name, run);
+    const latestAny = new Map();
+    for (const run of all) if (!latestAny.has(run.name)) latestAny.set(run.name, run);
+
     for (const [name, run] of byName) {
       const age = Math.floor((NOW - Date.parse(run.createdAt)) / DAY);
-      const bad = run.conclusion && run.conclusion !== "success";
-      const line = `  ${name} — last ${age}d ago, ${run.conclusion || "running"}`;
+      const newest = latestAny.get(name) || run;
+      const bad = newest.conclusion && newest.conclusion !== "success";
+      const manual = newest !== run && newest.conclusion === "success";
+      const line = manual
+        ? `  ${name} — scheduled ${age}d ago (${run.conclusion}), since confirmed by a manual run`
+        : `  ${name} — last ${age}d ago, ${newest.conclusion || "running"}`;
       say(bad ? flag(line) : line);
     }
   } catch {
