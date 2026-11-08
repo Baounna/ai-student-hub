@@ -1,6 +1,6 @@
 {
-  "epoch": 3,
-  "baselineTests": 903,
+  "epoch": 4,
+  "baselineTests": 908,
   "invariants": {
     "1": {
       "status": "hand-checked",
@@ -44,7 +44,7 @@
     },
     "11": {
       "status": "pass",
-      "evidence": "903 tests passing (baseline 903)"
+      "evidence": "908 tests passing (baseline 903)"
     },
     "12": {
       "status": "hand-checked",
@@ -56,7 +56,8 @@
     "A-1 finder unblocked",
     "LOOP-1 npm run invariants",
     "C-1 one notion of reference on /blog",
-    "B-2 proportional interleave on /stages"
+    "B-2 proportional interleave on /stages",
+    "B-3 Anthropic Engineering moved to /research"
   ],
   "couplings": [
     {
@@ -87,6 +88,7 @@
     }
   ],
   "knownWeaknesses": [
+    "RESOLVED in epoch 4: Anthropic Engineering silent since 13 Oct. Anthropic moved posts from /engineering/<slug> to /research/<slug>; 60 anchors, 0 matched the old rule, 21 match the new one.",
     "RESOLVED in epoch 3: orderStages top-bias. Measured after: 1 (was 2) at 10/86, 2 (was 3) at 15/100, 3 (was 4) at 25/100, 4 (was 7) at 40/120.",
     "invariant 2 has no reliable automation: a per-item count and a page aggregate are indistinguishable in rendered text",
     "invariants 1, 2, 6, 7, 9, 10, 12 are hand-checked and should be promoted as automation becomes possible"

@@ -26,7 +26,7 @@ function parsePositiveInt(value: string | undefined, fallback: number) {
 
 const LIVE_NEWS_MAX_PER_SOURCE = parsePositiveInt(process.env.LIVE_NEWS_MAX_PER_SOURCE, 8);
 
-const FEED_SOURCES: FeedSource[] = [
+export const FEED_SOURCES: FeedSource[] = [
   {
     name: "Anthropic News",
     href: "https://www.anthropic.com/news",
@@ -39,7 +39,26 @@ const FEED_SOURCES: FeedSource[] = [
     href: "https://www.anthropic.com/engineering",
     kind: "page",
     allowedRoots: ["anthropic.com"],
-    pathAllow: [/^\/engineering\/[a-z0-9-]/i]
+    /*
+     * Anthropic moved these posts from /engineering/<slug> to /research/<slug>.
+     *
+     * The section page is still at /engineering and still answers 200, so
+     * nothing looked broken: the fetch succeeded, the anchors were read, and
+     * every one of them was rejected because none began with /engineering/.
+     * parsePageItems returned an empty array, the run printed a success line,
+     * and the entries already in the file went on being served. The source
+     * went quiet on 13 October 2026 and nothing noticed until the per-source
+     * freshness check added to the watchdog named it at 25 days.
+     *
+     * Verified against the live page on 2026-11-08: 60 anchors, 0 matching the
+     * old pattern, 21 articles matching this one.
+     *
+     * The slug must contain a hyphen. /research/team is a staff page, not an
+     * article, and it is the only /research/ link on the page without one.
+     * Both prefixes are kept because the old URLs still resolve and the items
+     * already in auto-news.json carry them.
+     */
+    pathAllow: [/^\/(engineering|research)\/[a-z0-9]+(-[a-z0-9]+)+/i]
   },
   {
     name: "OpenAI News",

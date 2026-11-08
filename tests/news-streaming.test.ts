@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
-import { anchorTitle, MAX_TITLE_CHARS, titleKey } from "@/lib/live-news";
+import { anchorTitle, FEED_SOURCES, MAX_TITLE_CHARS, titleKey } from "@/lib/live-news";
 
 /**
  * /news used to be the slowest page on the site by an order of magnitude.
@@ -194,5 +194,57 @@ describe("the headline taken from a card link", () => {
     expect(script).toMatch(/MAX_TITLE_CHARS = 140/);
     expect(script).toMatch(/title\.length > MAX_TITLE_CHARS/);
     expect(script).toMatch(/<\(h\[1-4\]\)/);
+  });
+});
+
+/**
+ * A source that moved its articles and failed silently.
+ *
+ * Anthropic moved its engineering posts from /engineering/<slug> to
+ * /research/<slug>. The section page is still at /engineering and still
+ * answers 200, so nothing looked broken: the fetch succeeded, the anchors were
+ * read, and every one was rejected for not beginning with /engineering/.
+ * parsePageItems returned an empty array, the run printed success, and the
+ * entries already in the file went on being served.
+ *
+ * It went quiet on 13 October 2026. Nothing noticed until the per-source
+ * freshness check named it at 25 days — which is what that check was added
+ * for, and the first time it has paid for itself.
+ *
+ * Measured against the live page on 2026-11-08: 60 anchors, 0 matching the old
+ * pattern, 21 articles matching the new one.
+ */
+describe("the Anthropic Engineering source after it moved", () => {
+  const source = FEED_SOURCES.find((s) => s.name === "Anthropic Engineering");
+  const matches = (p: string) => Boolean(source?.pathAllow?.some((re) => re.test(p)));
+
+  it("is still a configured source at all", () => {
+    expect(source).toBeDefined();
+    expect(source?.href).toBe("https://www.anthropic.com/engineering");
+  });
+
+  it("accepts the articles at their new address", () => {
+    expect(matches("/research/effective-context-engineering-for-ai-agents")).toBe(true);
+    // One real slug carries capitals; the rule has to be case-insensitive.
+    expect(matches("/research/AI-resistant-technical-evaluations")).toBe(true);
+  });
+
+  it("still accepts the old address, which still resolves", () => {
+    // auto-news.json already holds items under the old URLs.
+    expect(matches("/engineering/claude-code-best-practices")).toBe(true);
+  });
+
+  it("does not mistake the staff page for an article", () => {
+    // /research/team is the only /research/ link on the page with no hyphen in
+    // its slug, which is what separates the two.
+    expect(matches("/research/team")).toBe(false);
+    expect(matches("/engineering")).toBe(false);
+  });
+
+  it("fixes both scrapers, not just the one a reader hits first", () => {
+    // The live fetch and the committed snapshot read the same page. Fixing one
+    // leaves the other writing nothing into auto-news.json every twelve hours.
+    const literal = String(source?.pathAllow?.[0]);
+    expect(read("scripts/auto-news-agent.mjs")).toContain(literal);
   });
 });
