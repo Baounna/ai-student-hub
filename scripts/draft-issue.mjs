@@ -262,10 +262,6 @@ await fs.writeFile(path.join(OUT, `issue-${today}.html`), html);
  * draft:sent` promotes the pending file once the issue is actually sent, which
  * is the only moment the claim becomes true.
  */
-await fs.writeFile(
-  path.join(OUT, `issue-${today}.pending.json`),
-  `${JSON.stringify({ draftedAt: today, ids: picked.map((s) => s.id), slugs: newGuides.map((g) => g.slug) }, null, 2)}\n`
-);
 
 /**
  * The countries this issue actually contains, named in the subject.
@@ -288,6 +284,24 @@ const subject = !picked.length
   : remaining > 0
     ? `${picked.length} internships closing soonest - ${subjectWhere}`
     : `${picked.length} tech internship${picked.length === 1 ? "" : "s"} - ${subjectWhere}`;
+/*
+ * Written after the subject, and carrying it.
+ *
+ * The pending file used to be written before the subject existed, so the only
+ * record of what the issue was called was a line printed to a terminal. A
+ * sender reading this file then had to re-derive the subject from the same
+ * inputs, and two implementations of "what is this issue called" drift -- the
+ * one in the email and the one in the ledger.
+ */
+await fs.writeFile(
+  path.join(OUT, `issue-${today}.pending.json`),
+  `${JSON.stringify(
+    { draftedAt: today, subject, ids: picked.map((s) => s.id), slugs: newGuides.map((g) => g.slug) },
+    null,
+    2
+  )}\n`
+);
+
 console.log(`
   Subject: ${subject}
 

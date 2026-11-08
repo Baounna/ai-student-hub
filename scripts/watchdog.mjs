@@ -884,7 +884,14 @@ export function crashReport(error, now = new Date()) {
 export const REVIEW_CHANNELS = [
   { issue: "Internship listings need a human look", failsOnPurpose: "Internship Link Check" },
   { issue: "Cited sources need a human look", failsOnPurpose: "Citation Link Check" },
-  { issue: "Internship candidates waiting for review", failsOnPurpose: null }
+  { issue: "Internship candidates waiting for review", failsOnPurpose: null },
+  /*
+   * Opened by Send Newsletter Issue when a draft has passed every guard and
+   * the repository is not armed to send by itself. A ready issue nobody has
+   * been told about is the state this project keeps rediscovering: work
+   * sitting in the log of a green run.
+   */
+  { issue: "A newsletter issue is ready to send", failsOnPurpose: null }
 ];
 
 export function reviewVerdict(waiting, byDesign = []) {

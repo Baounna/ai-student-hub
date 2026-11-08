@@ -35,7 +35,8 @@
     "find:stages": "node scripts/find-stages.mjs",
     "test:clock": "node scripts/clock-sweep.mjs",
     "health": "node scripts/health.mjs",
-    "invariants": "node scripts/invariants.mjs"
+    "invariants": "node scripts/invariants.mjs",
+    "send:issue": "node scripts/send-issue.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

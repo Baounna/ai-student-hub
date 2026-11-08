@@ -1,0 +1,130 @@
+name: Send Newsletter Issue
+
+# Separate from the finder and the draft on purpose.
+#
+# draft-issue.mjs and mark-issue-sent.mjs are separate files because writing a
+# draft is not sending it, and when the two were one action three September
+# drafts retired their listings without an email ever going out. The same line
+# holds here: this workflow prepares and verifies on a schedule, and sends only
+# when a person asks or when the repository has been explicitly armed.
+#
+# An email is the one irreversible thing in this repository. Everything else
+# can be undone with git.
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type "send" to actually send. Anything else is a dry run.'
+        required: true
+        default: "dry-run"
+  schedule:
+    # Mondays, after the Monday link check has removed what died. Drafting
+    # before that check would build an issue around listings it is about to
+    # retire.
+    - cron: "30 8 * * 1"
+
+concurrency:
+  group: ai-student-hub-main-automation
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+env:
+  SITE_URL: https://ci.invalid
+  NEXT_PUBLIC_SITE_URL: https://ci.invalid
+  NEXT_PUBLIC_CONTACT_EMAIL: ci@ci.invalid
+  NEXT_PUBLIC_LEGAL_NAME: CI Build
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      # A fresh draft every run, because the guards refuse anything older than
+      # a week and the board moves twice a week. Drafting here also means the
+      # issue that goes out was built from the board as it stands this morning,
+      # not as it stood whenever somebody last remembered.
+      - name: Draft this week's issue
+        run: npm run draft:issue
+
+      - name: Commit the draft
+        run: |
+          git config user.name "AI Student Hub Bot"
+          git config user.email "bot@users.noreply.github.com"
+          if git diff --quiet -- drafts/; then
+            echo "No draft changes to commit."
+          else
+            git add drafts/
+            git commit -m "chore(newsletter): draft this week's issue"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      # Always runs, always harmless: it prints what WOULD go out and fails the
+      # step if a guard refuses, so a broken draft is visible before anyone is
+      # asked to approve it.
+      - name: Check what would be sent
+        env:
+          KIT_API_KEY: ${{ secrets.KIT_API_KEY }}
+        run: npm run send:issue
+
+      # Two conditions, both deliberate. A manual run must type "send"; a
+      # scheduled run sends only if the repository variable AUTO_SEND_ISSUE is
+      # exactly "true". Default is off, so arming the automation is a decision
+      # somebody makes once, in the open, rather than a side effect of merging
+      # this file.
+      - name: Send
+        if: |
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.confirm == 'send') ||
+          (github.event_name == 'schedule' && vars.AUTO_SEND_ISSUE == 'true')
+        env:
+          KIT_API_KEY: ${{ secrets.KIT_API_KEY }}
+        run: npm run send:issue -- --send
+
+      - name: Record the send
+        if: |
+          success() &&
+          ((github.event_name == 'workflow_dispatch' && github.event.inputs.confirm == 'send') ||
+           (github.event_name == 'schedule' && vars.AUTO_SEND_ISSUE == 'true'))
+        run: |
+          git config user.name "AI Student Hub Bot"
+          git config user.email "bot@users.noreply.github.com"
+          if git diff --quiet -- drafts/; then
+            echo "Ledger unchanged."
+          else
+            git add drafts/
+            git commit -m "chore(newsletter): record the issue as sent"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      # Only when nothing was sent. A ready draft nobody has been told about is
+      # the state this whole project keeps rediscovering: work sitting in a
+      # green run's log.
+      - name: Say an issue is ready
+        if: |
+          success() && github.event_name == 'schedule' && vars.AUTO_SEND_ISSUE != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="A newsletter issue is ready to send"
+          BODY=$(printf 'This week'"'"'s issue is drafted and passed every guard: the draft is fresh, every listing in it is still open, and no issue has gone out in the last five days.\n\nSend it by running the **Send Newsletter Issue** workflow and typing `send`, or locally with `npm run send:issue -- --send`.\n\nTo stop being asked and let it send itself every Monday, set the repository variable `AUTO_SEND_ISSUE` to `true`.\n')
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
+          fi
