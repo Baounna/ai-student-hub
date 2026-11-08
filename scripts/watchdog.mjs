@@ -28,6 +28,8 @@ const execFileAsync = promisify(execFile);
 
 const SITE = (process.env.WATCHDOG_SITE_URL || "https://ai-student-hub-navy.vercel.app").replace(/\/+$/, "");
 const MAX_CONTENT_AGE_HOURS = Number.parseInt(process.env.WATCHDOG_MAX_CONTENT_AGE_HOURS || "72", 10);
+const NEWS_SOURCE_QUIET_ADVISORY_DAYS = Number.parseInt(process.env.WATCHDOG_NEWS_SOURCE_ADVISORY_DAYS || "10", 10);
+const NEWS_SOURCE_QUIET_FAIL_DAYS = Number.parseInt(process.env.WATCHDOG_NEWS_SOURCE_FAIL_DAYS || "21", 10);
 const TIMEOUT_SECONDS = 25;
 
 /** @type {{name:string, ok:boolean, detail:string, fixable:boolean, advisory:boolean}[]} */
@@ -145,6 +147,120 @@ async function checkContentFreshness() {
   }
 }
 
+
+/**
+ * Whether each news source is still producing, not just the file as a whole.
+ *
+ * "Content freshness" above reads auto-news.json's updatedAt, and that file is
+ * rewritten every twelve hours as long as ANY source answers. Nineteen sources
+ * feed it, so seventeen healthy ones keep the timestamp green while a dead one
+ * sits there contributing nothing. A source that redesigns its HTML does not
+ * fail loudly -- parsePageItems simply matches no anchors and returns an empty
+ * array, the run prints a success line, and the stale entries already in the
+ * file go on being served.
+ *
+ * Measured on 2026-11-08: Anthropic Engineering had produced nothing for 26
+ * days and Kubernetes Blog for 9, against a file updated the previous evening
+ * and a watchdog reporting content freshness as healthy. One scheduled run's
+ * log showed four of the nineteen sources returning items at all.
+ *
+ * Advisory, not failing, below the higher threshold: a blog that posts monthly
+ * is not broken, and a check that cries wolf at every quiet fortnight is one
+ * the owner learns to skip. Sources are named either way, because "some feeds
+ * are quiet" is not something anyone can act on.
+ */
+/**
+ * The judgement, separated from the file read so it can be tested.
+ *
+ * You cannot make a third party's blog go quiet to prove the alarm works, which
+ * is the same reason scheduledWorkflowProblems is a pure function.
+ *
+ * Returns every source whose newest item is older than `advisoryDays`, worst
+ * first, and marks those past `failDays` as silent. A source with no readable
+ * date at all counts as unreadable rather than quiet -- absence of evidence is
+ * not evidence, the distinction this file already insists on for employer
+ * boards.
+ */
+export function quietNewsSources(items, nowMs, advisoryDays, failDays) {
+  const newestBySource = new Map();
+  for (const item of items || []) {
+    const seen = Date.parse(item?.discoveredAt || item?.publishedAt || "");
+    if (!Number.isFinite(seen)) continue;
+    const previous = newestBySource.get(item.source);
+    if (previous === undefined || seen > previous) newestBySource.set(item.source, seen);
+  }
+
+  const quiet = [...newestBySource.entries()]
+    .map(([source, seen]) => ({ source, days: Math.floor((nowMs - seen) / 86_400_000) }))
+    .filter((entry) => entry.days >= advisoryDays)
+    .sort((a, b) => b.days - a.days);
+
+  return { total: newestBySource.size, quiet, silent: quiet.filter((entry) => entry.days >= failDays) };
+}
+
+/**
+ * Whether each news source is still producing, not just the file as a whole.
+ *
+ * "Content freshness" above reads auto-news.json's updatedAt, and that file is
+ * rewritten every twelve hours as long as ANY source answers. Nineteen sources
+ * feed it, so seventeen healthy ones keep the timestamp green while a dead one
+ * sits there contributing nothing. A source that redesigns its HTML does not
+ * fail loudly -- parsePageItems simply matches no anchors and returns an empty
+ * array, the run prints a success line, and the stale entries already in the
+ * file go on being served.
+ *
+ * Measured on 2026-11-08: Anthropic Engineering had produced nothing for 26
+ * days and Kubernetes Blog for 9, against a file updated the previous evening
+ * and a watchdog reporting content freshness as healthy. One scheduled run's
+ * log showed four of the nineteen sources returning items at all.
+ *
+ * Advisory, not failing, below the higher threshold: a blog that posts monthly
+ * is not broken, and a check that cries wolf at every quiet fortnight is one
+ * the owner learns to skip. Sources are named either way, because "some feeds
+ * are quiet" is not something anyone can act on.
+ */
+async function checkNewsSourcesStillProducing() {
+  let data;
+  try {
+    const raw = await fs.readFile(path.join(process.cwd(), "src/content/auto-news.json"), "utf8");
+    data = JSON.parse(raw);
+  } catch (error) {
+    record("News sources", true, `no auto-news.json to read — ${String(error?.message || error).slice(0, 60)}`, false, true);
+    return;
+  }
+
+  const items = Array.isArray(data.items) ? data.items : [];
+  if (!items.length) {
+    record("News sources", false, "auto-news.json holds no items at all");
+    return;
+  }
+
+  const { total, quiet, silent } = quietNewsSources(
+    items,
+    Date.now(),
+    NEWS_SOURCE_QUIET_ADVISORY_DAYS,
+    NEWS_SOURCE_QUIET_FAIL_DAYS
+  );
+
+  if (!total) {
+    record("News sources", false, `${items.length} items carry no readable discoveredAt`);
+    return;
+  }
+
+  if (!quiet.length) {
+    record("News sources", true, `all ${total} sources produced within ${NEWS_SOURCE_QUIET_ADVISORY_DAYS} days`);
+    return;
+  }
+
+  const named = quiet.slice(0, 4).map((entry) => `${entry.source} (${entry.days}d)`).join(", ");
+  record(
+    "News sources",
+    silent.length === 0,
+    `${quiet.length} of ${total} quiet for ${NEWS_SOURCE_QUIET_ADVISORY_DAYS}+ days: ${named}${quiet.length > 4 ? ", …" : ""}`,
+    false,
+    silent.length === 0
+  );
+}
 
 /**
  * The stages list is the one thing here that rots by standing still: a page of
@@ -910,6 +1026,7 @@ async function run() {
 
   await checkLiveSite();
   await checkContentFreshness();
+  await checkNewsSourcesStillProducing();
   await checkStagesFreshness();
   await checkLockfile();
   await checkVulnerabilities();

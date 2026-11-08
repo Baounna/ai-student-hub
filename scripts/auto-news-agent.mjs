@@ -913,10 +913,24 @@ async function run() {
   await fs.mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
   await fs.writeFile(OUTPUT_FILE, `${JSON.stringify(output, null, 2)}\n`, "utf8");
 
+  /*
+   * `added` counts what entered the dedupe POOL, before trimByAge and the
+   * per-source cap cut that pool down to what is written. Printed under the
+   * label "Added items" it read as news added to the site: one run logged
+   * "Added items: 3505" against a file holding 240, 3,265 of which had already
+   * been discarded by the time the line was printed. A log nobody can trust is
+   * a log nobody reads, and this one is the only record of what the job did.
+   *
+   * What is reported now is what survived into the file, counted off the
+   * written items themselves rather than off a tally kept beside them.
+   */
+  const addedToFile = merged.filter((item) => item.discoveredAt === nowIso).length;
+
   console.log("--------------------------------");
   console.log(`Existing items: ${currentItems.length}`);
   console.log(`Fetched items: ${freshItems.length}`);
-  console.log(`Added items: ${added}`);
+  console.log(`New candidates seen: ${added} (before the age trim and the per-source cap)`);
+  console.log(`New in the saved file: ${addedToFile}`);
   console.log(`Saved items: ${merged.length}`);
   console.log(`Healthy sources: ${healthySources}/${sourceResults.length}`);
   console.log(`Failed sources: ${failedSources}`);
