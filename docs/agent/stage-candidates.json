@@ -1,184 +1,184 @@
 {
-  "generatedAt": "2026-10-30",
+  "generatedAt": "2026-11-08",
   "boards": [
     {
       "board": "algolia",
-      "scanned": 26,
+      "scanned": 28,
       "found": 0
     },
     {
       "board": "anthropic",
-      "scanned": 671,
+      "scanned": 675,
       "found": 0
     },
     {
       "board": "celonis",
-      "scanned": 232,
-      "found": 6
+      "scanned": 233,
+      "found": 3
     },
     {
       "board": "cloudflare",
-      "scanned": 461,
+      "scanned": 464,
       "found": 0
     },
     {
       "board": "databricks",
-      "scanned": 901,
+      "scanned": 922,
       "found": 1
     },
     {
       "board": "datadog",
-      "scanned": 396,
+      "scanned": 401,
       "found": 0
     },
     {
       "board": "dataiku",
-      "scanned": 16,
+      "scanned": 15,
       "found": 0
     },
     {
       "board": "doctolib",
-      "scanned": 153,
-      "found": 1
+      "error": "HTTP 404",
+      "found": 0
     },
     {
       "board": "figma",
-      "scanned": 140,
+      "scanned": 145,
       "found": 3
     },
     {
       "board": "figureai",
-      "scanned": 99,
+      "scanned": 103,
       "found": 0
     },
     {
       "board": "jfrog",
-      "scanned": 71,
+      "scanned": 73,
       "found": 0
     },
     {
       "board": "robinhood",
-      "scanned": 163,
+      "scanned": 150,
       "found": 0
     },
     {
       "board": "scaleai",
-      "scanned": 169,
+      "scanned": 168,
       "found": 1
     },
     {
       "board": "stabilityai",
-      "scanned": 3,
+      "scanned": 1,
       "found": 0
     },
     {
       "board": "togetherai",
-      "scanned": 86,
-      "found": 1
-    },
-    {
-      "board": "alan",
-      "scanned": 130,
+      "scanned": 78,
       "found": 0
     },
     {
+      "board": "alan",
+      "scanned": 133,
+      "found": 1
+    },
+    {
       "board": "backmarket",
-      "scanned": 33,
+      "scanned": 34,
       "found": 1
     },
     {
       "board": "cerebras",
-      "scanned": 117,
+      "scanned": 121,
       "found": 0
     },
     {
       "board": "cohere",
-      "scanned": 121,
+      "scanned": 124,
       "found": 1
     },
     {
       "board": "deepl",
-      "scanned": 9,
+      "scanned": 8,
       "found": 0
     },
     {
       "board": "dust",
-      "scanned": 29,
+      "scanned": 31,
       "found": 0
     },
     {
       "board": "elevenlabs",
-      "scanned": 151,
+      "scanned": 137,
       "found": 0
     },
     {
       "board": "hackerone",
-      "scanned": 12,
+      "scanned": 14,
       "found": 0
     },
     {
       "board": "harvey",
-      "scanned": 382,
+      "scanned": 373,
       "found": 0
     },
     {
       "board": "hopper",
-      "scanned": 18,
+      "scanned": 21,
       "found": 0
     },
     {
       "board": "ledger",
-      "scanned": 12,
+      "scanned": 14,
       "found": 0
     },
     {
       "board": "mistral.ai",
-      "scanned": 228,
-      "found": 1
+      "scanned": 235,
+      "found": 3
     },
     {
       "board": "modal",
-      "scanned": 43,
+      "scanned": 44,
       "found": 1
     },
     {
       "board": "openai",
-      "scanned": 814,
+      "scanned": 818,
       "found": 0
     },
     {
       "board": "owkin",
-      "scanned": 7,
-      "found": 0
-    },
-    {
-      "board": "perplexity",
-      "scanned": 134,
-      "found": 3
-    },
-    {
-      "board": "photoroom",
       "scanned": 10,
       "found": 0
     },
     {
+      "board": "perplexity",
+      "scanned": 137,
+      "found": 3
+    },
+    {
+      "board": "photoroom",
+      "scanned": 8,
+      "found": 0
+    },
+    {
       "board": "poolside",
-      "scanned": 2,
+      "scanned": 4,
       "found": 0
     },
     {
       "board": "qonto",
-      "scanned": 47,
+      "scanned": 53,
       "found": 0
     },
     {
       "board": "sierra",
-      "scanned": 219,
+      "scanned": 217,
       "found": 0
     },
     {
       "board": "snyk",
-      "scanned": 37,
+      "scanned": 39,
       "found": 0
     },
     {
@@ -188,175 +188,82 @@
     },
     {
       "board": "synthesia",
-      "scanned": 33,
+      "scanned": 32,
       "found": 0
     },
     {
       "board": "BoschGroup",
       "scanned": 100,
-      "found": 1
+      "found": 0
     },
     {
       "board": "Wavestone1",
       "scanned": 100,
-      "found": 7
+      "found": 6
     },
     {
       "board": "autodesk",
-      "scanned": 5,
+      "scanned": 4,
       "found": 0
     },
     {
       "board": "nvidia",
       "scanned": 60,
-      "found": 4
+      "found": 3
     },
     {
       "board": "nxp",
-      "scanned": 60,
-      "found": 3
+      "scanned": 0,
+      "found": 0
     },
     {
       "board": "philips",
       "scanned": 60,
-      "found": 2
+      "found": 1
     }
   ],
-  "degradedSources": [],
+  "degradedSources": [
+    {
+      "board": "doctolib",
+      "was": 153,
+      "reason": "unreachable — HTTP 404"
+    },
+    {
+      "board": "nxp",
+      "was": 60,
+      "reason": "answered with an empty board"
+    }
+  ],
   "candidates": [
     {
-      "company": "Celonis",
-      "board": "celonis",
-      "role": "Intern Deployment Engineer - Data & AI",
-      "location": "Munich, Germany",
-      "city": "Munich",
-      "country": "DE",
-      "href": "https://job-boards.greenhouse.io/celonis/jobs/7986440003?gh_jid=7986440003",
-      "source": "greenhouse",
-      "addedToBoard": true
-    },
-    {
-      "company": "Celonis",
-      "board": "celonis",
-      "role": "Intern Technology Consultant - Data & AI",
-      "location": "Munich, Germany",
-      "city": "Munich",
-      "country": "DE",
-      "href": "https://job-boards.greenhouse.io/celonis/jobs/8042925003?gh_jid=8042925003",
-      "source": "greenhouse",
-      "addedToBoard": true
-    },
-    {
-      "company": "Databricks",
-      "board": "databricks",
-      "role": "PhD GenAI Research Scientist Intern",
-      "location": "San Francisco, California",
-      "city": "San Francisco, California",
-      "country": "",
-      "href": "https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002",
-      "source": "greenhouse"
-    },
-    {
-      "company": "Doctolib",
-      "board": "doctolib",
-      "role": "Machine Learning Engineer Intern (x/f/m)",
-      "location": "Paris, Paris, France",
-      "city": "Paris",
-      "country": "FR",
-      "href": "https://job-boards.greenhouse.io/doctolib/jobs/8042970003",
-      "source": "greenhouse",
-      "addedToBoard": true
-    },
-    {
-      "company": "Figma",
-      "board": "figma",
-      "role": "PhD Intern, Security Engineer (2027)",
-      "location": "San Francisco, CA • New York, NY",
-      "city": "San Francisco",
-      "country": "US",
-      "href": "https://boards.greenhouse.io/figma/jobs/6238015004?gh_jid=6238015004",
-      "source": "greenhouse",
-      "addedToBoard": true
-    },
-    {
-      "company": "Together AI",
-      "board": "togetherai",
-      "role": "Hardware Security Engineer Intern (Summer 2027)",
-      "location": "San Francisco",
-      "city": "San Francisco",
-      "country": "",
-      "href": "https://job-boards.greenhouse.io/togetherai/jobs/5238469007",
-      "source": "greenhouse"
-    },
-    {
-      "company": "Back Market",
-      "board": "backmarket",
-      "role": "AI Content & Knowledge Manager Intern",
+      "company": "Alan",
+      "board": "alan",
+      "role": "Security Associate - Internship",
       "location": "Paris",
       "city": "Paris",
       "country": "",
-      "href": "https://jobs.ashbyhq.com/backmarket/ae0b69b8-4051-4a31-a11f-f624be54b4e8",
+      "href": "https://jobs.ashbyhq.com/alan/a725479a-de87-45d9-afe6-e3273dc6d704",
       "source": "ashby"
     },
     {
-      "company": "Modal",
-      "board": "modal",
-      "role": "ML Research Intern",
-      "location": "New York",
-      "city": "New York",
+      "company": "Mistral AI",
+      "board": "mistral.ai",
+      "role": "AI Scientist Intern - (Internship, Masters or Phd)",
+      "location": "Paris",
+      "city": "Paris",
       "country": "",
-      "href": "https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a",
+      "href": "https://jobs.ashbyhq.com/mistral.ai/f7245b49-92a0-4111-bba1-343183de7d97",
       "source": "ashby"
     },
     {
-      "company": "Perplexity",
-      "board": "perplexity",
-      "role": "Internship - Search Machine Learning Engineer",
-      "location": "Belgrade",
-      "city": "Belgrade",
+      "company": "Mistral AI",
+      "board": "mistral.ai",
+      "role": "AI Scientist Intern - (Internship, Masters or Phd)",
+      "location": "Palo Alto",
+      "city": "Palo Alto",
       "country": "",
-      "href": "https://jobs.ashbyhq.com/perplexity/9246cf02-26fd-4ae8-90c5-639c6e85e9e2",
+      "href": "https://jobs.ashbyhq.com/mistral.ai/7c401bbf-ee63-4fcd-a44a-a16b9b787697",
       "source": "ashby"
-    },
-    {
-      "company": "Perplexity",
-      "board": "perplexity",
-      "role": "Internship - Machine Learning Research Engineer",
-      "location": "Berlin",
-      "city": "Berlin",
-      "country": "",
-      "href": "https://jobs.ashbyhq.com/perplexity/b9e1ff15-d52a-46d5-abf0-26460f2a116c",
-      "source": "ashby"
-    },
-    {
-      "company": "Perplexity",
-      "board": "perplexity",
-      "role": "Internship - Search Machine Learning Engineer",
-      "location": "London",
-      "city": "London",
-      "country": "",
-      "href": "https://jobs.ashbyhq.com/perplexity/71168628-1998-47d3-87a9-be7bc56a430d",
-      "source": "ashby"
-    },
-    {
-      "company": "Robert Bosch",
-      "board": "BoschGroup",
-      "role": "[Internship Program Q1 2027] AI Engineer Intern",
-      "location": "Ho Chi Minh, vn",
-      "city": "Ho Chi Minh, vn",
-      "country": "",
-      "href": "https://jobs.smartrecruiters.com/BoschGroup/744000158674030",
-      "source": "smartrecruiters"
-    },
-    {
-      "company": "Wavestone",
-      "board": "Wavestone1",
-      "role": "[Nantes] Consultant.e AI & Technology Transformation - Stage de fin d'études (H/F)",
-      "location": "Nantes, fr",
-      "city": "Nantes",
-      "country": "FR",
-      "href": "https://jobs.smartrecruiters.com/Wavestone1/744000157406885",
-      "source": "smartrecruiters"
     },
     {
       "company": "Wavestone",
@@ -365,8 +272,9 @@
       "location": "Puteaux, fr",
       "city": "Puteaux",
       "country": "FR",
-      "href": "https://jobs.smartrecruiters.com/Wavestone1/744000156729859",
-      "source": "smartrecruiters"
+      "href": "https://jobs.smartrecruiters.com/Wavestone1/744000159679228",
+      "source": "smartrecruiters",
+      "addedToBoard": true
     },
     {
       "company": "Wavestone",
@@ -375,8 +283,9 @@
       "location": "Puteaux, fr",
       "city": "Puteaux",
       "country": "FR",
-      "href": "https://jobs.smartrecruiters.com/Wavestone1/744000156728620",
-      "source": "smartrecruiters"
+      "href": "https://jobs.smartrecruiters.com/Wavestone1/744000159667949",
+      "source": "smartrecruiters",
+      "addedToBoard": true
     },
     {
       "company": "Wavestone",
@@ -396,56 +305,6 @@
       "city": "Shanghai",
       "country": "CN",
       "href": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Custom-SOC-Intern---2027_JR2024692",
-      "source": "workday"
-    },
-    {
-      "company": "NXP Semiconductors",
-      "board": "nxp",
-      "role": "Stage Ingénieur : Conception Numérique SoC - Design for Test (F/H)",
-      "location": "Caen",
-      "city": "Caen",
-      "country": "",
-      "href": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Caen/Stage-Ingnieur---Conception-Numrique-SoC---Design-for-Test--F-H-_R-10064623-1",
-      "source": "workday"
-    },
-    {
-      "company": "NXP Semiconductors",
-      "board": "nxp",
-      "role": "Stage Ingénieur :  Vérification d’architectures d’interconnexion pour SoC automobiles (F/H)",
-      "location": "Toulouse",
-      "city": "Toulouse",
-      "country": "",
-      "href": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Toulouse/Stage-Ingnieur----Vrification-d-architectures-d-interconnexion-pour-SoC-automobiles--F-H-_R-10067015",
-      "source": "workday"
-    },
-    {
-      "company": "NXP Semiconductors",
-      "board": "nxp",
-      "role": "Stage Ingénieur : Automatisation de la validation PMIC pour la sécurité automobile (F/H)",
-      "location": "Toulouse",
-      "city": "Toulouse",
-      "country": "",
-      "href": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Toulouse/Stage-Ingnieur---Automatisation-de-la-validation-PMIC-pour-la-scurit-automobile--F-H-_R-10066821",
-      "source": "workday"
-    },
-    {
-      "company": "Philips",
-      "board": "philips",
-      "role": "AI Imaging Data Scientist Intern",
-      "location": "Shanghai",
-      "city": "Shanghai",
-      "country": "",
-      "href": "https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Shanghai/AI-Data-Scientist-Intern_589226",
-      "source": "workday"
-    },
-    {
-      "company": "Philips",
-      "board": "philips",
-      "role": "Stagiaire HSE (Hygiène, Sécurité, Environnement) _ Janvier 2027",
-      "location": "Suresnes",
-      "city": "Suresnes",
-      "country": "",
-      "href": "https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Suresnes/Stagiaire-HSE--Hygine--Scurit--Environnement----Janvier-2027_592983",
       "source": "workday"
     }
   ]
