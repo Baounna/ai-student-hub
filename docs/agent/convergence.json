@@ -1,11 +1,11 @@
 {
-  "epoch": 0,
-  "baselineTests": 892,
-  "testsNow": 898,
+  "epoch": 1,
+  "baselineTests": 898,
+  "testsNow": 899,
   "invariants": {
     "1": "pass — /news and /blog now carry the staleness notice; /resources no longer points at a template it does not have",
     "2": "fail — /blog prints '72 cited sources' while its per-card chips sum to 106; two notions of 'reference' on one screen (batch C)",
-    "3": "pass — no reader-visible count is a literal; dead readTime literals exist but render nothing (batch C)",
+    "3": "pass — and one frozen constant removed from a TEST this epoch: tests/stages-order.test.ts capped an employer at 2 of the opening 12, a ratio true of an 81-listing board. Derived from the board now.",
     "4": "pass — home, stages, blog, resources verified structurally identical across locales",
     "5": "pass — fixed this epoch; /resources rendered 3 signup blocks, now 1 + footer. Every page verified <= 1 of its own",
     "6": "fail — OWNER: the copy promises one email a week and none has ever been sent",
@@ -14,24 +14,47 @@
     "9": "pass — 'temps de delivery' and 'convertir l'audience' fixed; typography test guards the rest",
     "10": "pass — every check added this session has a test proving it can go red",
     "11": "pass — 898 tests, lint, typecheck, build clean",
-    "12": "fail — npm run health reports 2 engineering items, not only owner decisions: Internship Finder's last run failed, and 1 news source has been silent 21+ days"
+    "12": "fail — npm run health still reports 1 engineering item: one news source silent 21+ days. The Internship Finder failure is fixed at the cause but will only read green after its next scheduled run (Thu)."
   },
-  "batchesDone": ["G", "B", "C-partial", "E"],
+  "batchesDone": [
+    "G",
+    "B",
+    "C-partial",
+    "E",
+    "A-partial"
+  ],
   "couplings": [
     {
       "found": 0,
-      "between": ["E", "F"],
+      "between": [
+        "E",
+        "F"
+      ],
       "note": "the /resources subtitle is resources copy but lives in src/i18n/dictionaries.ts, which is batch F. Fixing E's French required touching F."
     },
     {
       "found": 0,
-      "between": ["E", "C"],
+      "between": [
+        "E",
+        "C"
+      ],
       "note": "the Coursera benefit line is rendered by /resources but lives in src/content/posts.ts, which is batch C. Same split."
     },
     {
       "found": 0,
-      "between": ["B", "C"],
+      "between": [
+        "B",
+        "C"
+      ],
       "note": "the live-news block was moved above the briefs BECAUSE the briefs are stale. If C refreshes the briefs, B's ordering loses its justification and must be re-decided."
+    },
+    {
+      "found": 1,
+      "between": [
+        "A",
+        "G"
+      ],
+      "note": "the finder's workflow runs the test suite before committing, so a test that encodes a stale ratio silently stops the board growing. A guard and the data it guards are coupled: freeze the guard and the data is what breaks."
     }
   ],
   "ownerDecisions": [
@@ -39,5 +62,8 @@
     "write or retire the February briefs (watchdog editorial freshness is red at 262 days)",
     "whether WATCHDOG_EDITORIAL_FAIL_DAYS should be raised so the alarm is not permanently red"
   ],
-  "nextBatch": "A or C — A resolves invariant 12's Internship Finder failure; C resolves invariant 2"
+  "nextBatch": "C — invariant 2 (/blog prints 72 cited sources over chips summing 106), plus the dead readTime literals",
+  "knownWeaknesses": [
+    "orderStages over-represents the deepest employer near the top: measured 2 where 1.40 is fair (10 of 86), 3 where 1.80 is fair (15 of 100), 7 where 4.00 is fair (40 of 120). A deep employer's fractional positions all start near zero while a single-posting employer sits at the midpoint and cannot appear early at all. Pinned by a test, not yet fixed."
+  ]
 }

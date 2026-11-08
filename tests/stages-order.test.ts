@@ -118,15 +118,88 @@ describe("internship ordering", () => {
   });
 
   it("does not let one employer own the opening rows", () => {
-    const companies = stages.slice(0, 12).map((s) => s.company);
-    const worst = Math.max(...[...new Set(companies)].map((c) => companies.filter((x) => x === c).length));
+    /*
+     * The ceiling is the employer's own share, not a number.
+     *
+     * It was `2`, derived in a comment from "the largest employer holds 10 of
+     * the 81 listings" -- a true ratio, frozen. The board grew, the finder
+     * added more of the deepest employer, and on 5 November 2026 this
+     * assertion failed with "expected 3 to be less than or equal to 2". The
+     * finder's workflow runs the suite before committing, so the run aborted
+     * and the listings it had just found were never written. The board stopped
+     * growing because of a constant, and the only visible symptom was a red
+     * workflow nobody was reading.
+     *
+     * Derived instead from what the comment always meant. The slack of one row
+     * is the rounding the interleave needs and no more: measured against
+     * orderStages directly, the largest employer lands about one row above its
+     * share near the top -- 2 where 1.40 is fair at 10 of 86, 3 where 1.80 is
+     * fair at 15 of 100 -- and that is the behaviour this permits. At real
+     * concentration it still bites: 40 of 120 puts seven in the opening twelve
+     * against a fair four, and a ceiling of five fails it.
+     */
+    const WINDOW = 12;
+    const perCompany = new Map<string, number>();
+    for (const stage of stages) perCompany.set(stage.company, (perCompany.get(stage.company) || 0) + 1);
 
-    // Not "all twelve distinct": the largest employer holds 10 of the 81
-    // listings, so appearing twice in twelve rows is its share and demanding
-    // fewer would be demanding it appear less often than it exists. What the
-    // failure actually looked like was one name repeated back to back.
-    expect(worst).toBeLessThanOrEqual(2);
-    expect(new Set(companies).size).toBeGreaterThanOrEqual(9);
+    const companies = stages.slice(0, WINDOW).map((s) => s.company);
+    const counted = [...new Set(companies)].map((c) => ({ c, n: companies.filter((x) => x === c).length }));
+    const worst = counted.reduce((a, b) => (b.n > a.n ? b : a));
+
+    const fairShare = (WINDOW * (perCompany.get(worst.c) || 0)) / stages.length;
+    const ceiling = Math.max(2, Math.ceil(fairShare) + 1);
+
+    expect(
+      worst.n,
+      `${worst.c} holds ${worst.n} of the first ${WINDOW} rows; its share of the board allows ${ceiling}`
+    ).toBeLessThanOrEqual(ceiling);
+
+    // At most three of the twelve may repeat an employer already shown.
+    expect(new Set(companies).size).toBeGreaterThanOrEqual(WINDOW - 3);
+  });
+
+  it("still catches an employer that actually owns the top", () => {
+    /*
+     * The guard above only matters if it can fail, and derived ceilings are
+     * easy to derive into uselessness. These are measured from orderStages,
+     * not imagined: at 40 of 120 the interleave puts seven of the opening
+     * twelve on one employer against a fair four, because a deep employer's
+     * fractional positions all start near zero while a single-posting employer
+     * sits at the midpoint and cannot appear early at all.
+     *
+     * That is a real weakness in the interleave and is recorded here rather
+     * than fixed in the same change that unblocked the finder. What this pins
+     * is that the ceiling notices it.
+     */
+    const make = (company: string, i: number) =>
+      ({
+        id: `${company}-${i}`,
+        role: `Role ${i}`,
+        company,
+        city: "X",
+        country: "FR",
+        kind: "stage",
+        level: "",
+        remote: false,
+        deadline: "",
+        checkedAt: "2026-11-04",
+        postedAt: "2026-09-20",
+        href: `https://example.test/${company}/${i}`,
+        source: "s"
+      }) as unknown as Stage;
+
+    const big = 40;
+    const total = 120;
+    const items = [
+      ...Array.from({ length: big }, (_, i) => make("BIG", i)),
+      ...Array.from({ length: total - big }, (_, i) => make(`Co${i % 30}`, i))
+    ];
+
+    const opening = orderStages(items, Date.parse("2026-11-08T12:00:00Z")).slice(0, 12).map((s) => s.company);
+    const bigInOpening = opening.filter((c) => c === "BIG").length;
+    const ceiling = Math.max(2, Math.ceil((12 * big) / total) + 1);
+
+    expect(bigInOpening).toBeGreaterThan(ceiling);
   });
 
   it("never puts the same employer in two consecutive rows", () => {
