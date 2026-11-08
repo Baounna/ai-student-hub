@@ -4,6 +4,8 @@ import { categoryName } from "@/lib/categories";
 import Image from "next/image";
 import Link from "next/link";
 import { EditorialTrust } from "@/components/editorial-trust";
+import { ContentAgeNotice } from "@/components/content-age-notice";
+import { newestPublishedAt } from "@/lib/content-age";
 import { Newsletter } from "@/components/newsletter";
 import {
   type EditorialTrack,
@@ -218,6 +220,8 @@ export default async function LocalizedBlogPage(
             <p className="do-kicker">{dict.blog.latest}</p>
             <h1 className="font-display hero-title mt-3 font-bold text-[color:var(--text-strong)]">{dict.blog.title}</h1>
             <p className="body-copy mt-4 max-w-2xl text-[color:var(--text)]">{dict.blog.subtitle}</p>
+            {/* The kicker above reads "Latest articles". */}
+            <ContentAgeNotice locale={locale} newest={newestPublishedAt(allPosts)} kind="articles" />
 
             <div className="mt-6 flex flex-wrap gap-3">
               <Link href={`/${locale}/resources`} className="btn-primary">

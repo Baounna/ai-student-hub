@@ -4,6 +4,7 @@ import { tagLabel } from "@/lib/tags";
 import Image from "next/image";
 import Link from "next/link";
 import { EditorialTrust } from "@/components/editorial-trust";
+import { ContentAgeNotice } from "@/components/content-age-notice";
 import { Newsletter } from "@/components/newsletter";
 import { getAutoNews, getAutoNewsUpdatedAt } from "@/content/auto-news";
 import { getTrackLabel } from "@/content/posts";
@@ -12,6 +13,7 @@ import { isLocale, type Locale } from "@/i18n/config";
 import { withColon } from "@/i18n/typography";
 import { getDictionary } from "@/i18n/dictionaries";
 import { localizedAlternates, openGraphDefaults } from "@/i18n/helpers";
+import { newestPublishedAt } from "@/lib/content-age";
 import { getLiveAiCsUpdates } from "@/lib/live-news";
 import { getSeoKeywords, ogImageUrl, coverImageUrl } from "@/lib/seo";
 import { formatReadTime } from "@/lib/read-time";
@@ -493,6 +495,10 @@ export default async function LocalizedNewsPage(
       <div className="mt-8 grid gap-6 md:grid-cols-[2fr,1fr]">
         <div className="space-y-4">
           <h2 className="font-display text-2xl font-semibold text-[color:var(--text-strong)]">{streamHeading}</h2>
+          {/* The heading above says "récentes". When the briefs stop being
+              recent the page says that too, instead of letting the word carry
+              weight the content no longer supports. */}
+          <ContentAgeNotice locale={locale} newest={newestPublishedAt(allBriefs)} kind="briefs" />
 
           {streamBriefs.map((brief) => (
             <article key={brief.slug} className="card-hover glass rounded-2xl p-6">
