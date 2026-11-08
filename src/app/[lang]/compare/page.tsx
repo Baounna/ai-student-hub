@@ -97,7 +97,7 @@ export default async function LocalizedCompareIndexPage(
   const availableComparisons = getLocalizedComparisons(locale)
     .map((comparison) => ({
       ...comparison,
-      tools: comparison.tools.filter((tool) => isSafeHttpUrl(tool.affiliateHref))
+      tools: comparison.tools.filter((tool) => isSafeHttpUrl(tool.toolHref))
     }))
     .filter((comparison) => comparison.tools.length > 0);
 
@@ -228,10 +228,10 @@ export default async function LocalizedCompareIndexPage(
               </Link>
               {defaultTool ? (
                 <TrackableAnchor
-                  href={defaultTool.affiliateHref}
+                  href={defaultTool.toolHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  event="affiliate_click"
+                  event="tool_click"
                   meta={{ page: "compare_index_hero", tool: defaultTool.name, locale }}
                   className="btn-secondary"
                 >

@@ -31,7 +31,7 @@ export function TrackableAnchor({ href, event, className, target, rel, meta, chi
   // them. Declaring them sponsored both stated something untrue and told Google
   // to discount a link we actually stand behind. Add it back the day real
   // affiliate IDs go into the links, because then it will be required.
-  if (event === "affiliate_click") {
+  if (event === "tool_click") {
     relTokens.add("noopener");
     relTokens.add("noreferrer");
   }

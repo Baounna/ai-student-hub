@@ -570,7 +570,7 @@ async function detectCtaCoverage() {
     const source = await safeReadText(filePath);
     coverage[surface] = {
       hasLeadMagnet: /lead_magnet_click/.test(source),
-      hasAffiliate: /affiliate_click/.test(source),
+      hasAffiliate: /tool_click/.test(source),
       hasProductCheckout: /product_checkout_click/.test(source)
     };
   }

@@ -416,10 +416,10 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                         {relatedTools.slice(0, 2).map((tool) => (
                           <TrackableAnchor
                             key={`mid-${tool.name}`}
-                            href={tool.affiliateHref}
+                            href={tool.toolHref}
                             target="_blank"
                             rel="noopener noreferrer"
-                            event="affiliate_click"
+                            event="tool_click"
                             meta={{ page: "blog_post_mid_block", tool: tool.name, slug: post.slug, locale }}
                             className="btn-secondary px-3 py-1.5 text-xs"
                           >
@@ -531,10 +531,10 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                   <p className="mt-1 text-xs text-[color:var(--text)]">{tool.summary[locale]}</p>
                   <p className="mt-2 text-xs text-[color:var(--muted)]">{tool.benefit[locale]}</p>
                   <TrackableAnchor
-                    href={tool.affiliateHref}
+                    href={tool.toolHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    event="affiliate_click"
+                    event="tool_click"
                     meta={{ page: "blog_post_related_tools", tool: tool.name, slug: post.slug, locale }}
                     className="btn-secondary mt-3 inline-flex px-3 py-1.5 text-xs"
                   >
@@ -574,10 +574,10 @@ export default async function LocalizedBlogPostPage(props: { params: Promise<{ l
                       <td className="px-4 py-3 text-[color:var(--text)]">{tool.benefit[locale]}</td>
                       <td className="px-4 py-3">
                         <TrackableAnchor
-                          href={tool.affiliateHref}
+                          href={tool.toolHref}
                           target="_blank"
                           rel="noopener noreferrer"
-                          event="affiliate_click"
+                          event="tool_click"
                           meta={{ page: "blog_post_tools_table", tool: tool.name, slug: post.slug, locale, rank: index + 1 }}
                           className="do-link inline-block py-1.5 text-sm"
                         >

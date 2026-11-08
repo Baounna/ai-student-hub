@@ -144,7 +144,22 @@ export type RecommendedTool = {
   category: Record<Locale, string>;
   summary: Record<Locale, string>;
   benefit: Record<Locale, string>;
-  affiliateHref: string;
+  /**
+   * The tool's own page, with UTM parameters for our own analytics.
+   *
+   * It was called `affiliateHref` until 8 November 2026, and the name was a
+   * statement about an intention that was abandoned: this site is in no
+   * affiliate programme and earns nothing from these links, which
+   * src/config/site.ts:242-246 records being made true by removing the
+   * commission wording. The name outlived the plan.
+   *
+   * It is not a harmless leftover. A session working on this repository read
+   * `affiliateHref` and `affiliate_click`, concluded the site took a
+   * commission, and wrote that into a formal letter addressed to a university
+   * Dean. A name is documentation, and that one documented the wrong thing for
+   * everybody who read it afterwards.
+   */
+  toolHref: string;
 };
 
 export type StudentStudyTool = {
@@ -164,7 +179,7 @@ export type StudentStudyTool = {
 // both locales and can simply be repeated; prose cannot.
 export type ComparisonTool = {
   name: string;
-  affiliateHref: string;
+  toolHref: string;
   locales: Record<Locale, { price: string; bestFor: string; summary: string }>;
 };
 
@@ -256,7 +271,7 @@ const fallbackRecommendedTools: RecommendedTool[] = [
       en: "Best for student demos, API deployments, and portfolio-grade delivery.",
       fr: "Idéal pour des démos étudiantes, déploiement d'API et livrables portfolio."
     },
-    affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=resources&utm_campaign=hosting")
+    toolHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=resources&utm_campaign=hosting")
   },
   {
     name: "Coursera",
@@ -270,7 +285,7 @@ const fallbackRecommendedTools: RecommendedTool[] = [
       en: "Best for focused upskilling across AI and core cybersecurity.",
       fr: "Idéal pour monter en compétence sur l'IA et les fondamentaux de la cybersécurité."
     },
-    affiliateHref:
+    toolHref:
       "https://www.coursera.org/?utm_source=ai_student_hub&utm_medium=resources&utm_campaign=courses"
   },
   {
@@ -288,7 +303,7 @@ const fallbackRecommendedTools: RecommendedTool[] = [
       en: "Useful when you write technical English as a second language.",
       fr: "Utile quand on rédige en anglais technique sans être anglophone."
     },
-    affiliateHref:
+    toolHref:
       "https://www.grammarly.com/?utm_source=ai_student_hub&utm_medium=resources&utm_campaign=writing"
   }
 ];
@@ -317,7 +332,7 @@ const envRecommendedTools: RecommendedTool[] = envAffiliates
     summary: { en: item.summaryEn, fr: item.summaryFr },
     // Not a second invented sentence. The description is the description.
     benefit: { en: item.summaryEn, fr: item.summaryFr },
-    affiliateHref: item.url
+    toolHref: item.url
   }));
 
 /**
@@ -594,7 +609,7 @@ export const comparisons: ComparisonPage[] = [
     tools: [
       {
         name: "DigitalOcean",
-        affiliateHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_a"),
+        toolHref: withUtm(digitalOceanBase, "utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_a"),
         locales: {
           en: {
             price: "$0/mo static sites (3 apps); containers from $5/mo",
@@ -610,7 +625,7 @@ export const comparisons: ComparisonPage[] = [
       },
       {
         name: "Render",
-        affiliateHref:
+        toolHref:
           "https://render.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_b",
         locales: {
           en: {
@@ -627,7 +642,7 @@ export const comparisons: ComparisonPage[] = [
       },
       {
         name: "Railway",
-        affiliateHref:
+        toolHref:
           "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=platform_c",
         locales: {
           en: {
@@ -668,7 +683,7 @@ export const comparisons: ComparisonPage[] = [
         // "Try this tool", that took a reader to a cloud host. Its two siblings
         // point at nestjs.com and gofiber.io, and this page's own reference list
         // links FastAPI correctly -- the card was the only thing disagreeing.
-        affiliateHref: "https://fastapi.tiangolo.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_fastapi",
+        toolHref: "https://fastapi.tiangolo.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_fastapi",
         locales: {
           en: {
             price: "MIT-licensed; you pay only for hosting",
@@ -684,7 +699,7 @@ export const comparisons: ComparisonPage[] = [
       },
       {
         name: "Node.js + NestJS",
-        affiliateHref:
+        toolHref:
           "https://nestjs.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_node",
         locales: {
           en: {
@@ -701,7 +716,7 @@ export const comparisons: ComparisonPage[] = [
       },
       {
         name: "Go + Fiber",
-        affiliateHref:
+        toolHref:
           "https://gofiber.io/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=backend_go",
         locales: {
           en: {
@@ -740,7 +755,7 @@ export const comparisons: ComparisonPage[] = [
     tools: [
       {
         name: "GitHub Actions + Docker",
-        affiliateHref:
+        toolHref:
           "https://github.com/features/actions?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_actions",
         locales: {
           en: {
@@ -757,7 +772,7 @@ export const comparisons: ComparisonPage[] = [
       },
       {
         name: "Render Blueprints",
-        affiliateHref:
+        toolHref:
           "https://render.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_render",
         locales: {
           en: {
@@ -774,7 +789,7 @@ export const comparisons: ComparisonPage[] = [
       },
       {
         name: "Railway Templates",
-        affiliateHref:
+        toolHref:
           "https://railway.com/?utm_source=ai_student_hub&utm_medium=comparison&utm_campaign=devops_railway",
         locales: {
           en: {

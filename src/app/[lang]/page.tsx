@@ -910,10 +910,10 @@ export default async function LocalizedHomePage(props: { params: Promise<{ lang:
                 <p className="mt-1 break-words text-sm text-[color:var(--text)]">{tool.summary[locale]}</p>
                 <p className="mt-1 text-xs text-[color:var(--muted)]">{tool.benefit[locale]}</p>
                 <TrackableAnchor
-                  href={tool.affiliateHref}
+                  href={tool.toolHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  event="affiliate_click"
+                  event="tool_click"
                   meta={{ page: "home_wiki", tool: tool.name, locale }}
                   className="btn-secondary mt-3 inline-flex px-3 py-1.5 text-xs"
                 >

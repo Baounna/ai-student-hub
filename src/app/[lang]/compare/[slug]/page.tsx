@@ -135,7 +135,7 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
 
   if (!comparison) notFound();
 
-  const safeTools = comparison.tools.filter((tool) => isSafeHttpUrl(tool.affiliateHref));
+  const safeTools = comparison.tools.filter((tool) => isSafeHttpUrl(tool.toolHref));
   const recommendedTool = safeTools[0];
   const recommendedLabel = recommendedTool?.name || (fr ? "Aucune option active" : "No active option");
 
@@ -174,10 +174,10 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
             </p>
             {recommendedTool ? (
               <TrackableAnchor
-                href={recommendedTool.affiliateHref}
+                href={recommendedTool.toolHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                event="affiliate_click"
+                event="tool_click"
                 meta={{ page: "comparison_hero", tool: recommendedTool.name, slug: comparison.slug, locale }}
                 className="btn-primary mt-4 inline-block"
               >
@@ -309,10 +309,10 @@ export default async function LocalizedComparisonPage(props: { params: Promise<{
                       <td className="px-4 py-4 text-[color:var(--text)]">{tool.bestFor}</td>
                       <td className="px-4 py-4">
                         <TrackableAnchor
-                          href={tool.affiliateHref}
+                          href={tool.toolHref}
                           target="_blank"
                           rel="noopener noreferrer"
-                          event="affiliate_click"
+                          event="tool_click"
                           meta={{ page: "comparison", tool: tool.name, slug: comparison.slug, locale }}
                           className="btn-primary px-3 py-2 text-xs"
                         >

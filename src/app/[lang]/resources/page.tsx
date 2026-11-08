@@ -344,10 +344,10 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                 <p className="card-copy mt-3 text-[color:var(--text)]">{tool.summary[locale]}</p>
                 <p className="mt-3 text-xs text-[color:var(--muted)]">{tool.benefit[locale]}</p>
                 <TrackableAnchor
-                  href={tool.affiliateHref}
+                  href={tool.toolHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  event="affiliate_click"
+                  event="tool_click"
                   meta={{ page: "resources", tool: tool.name, locale }}
                   className="btn-primary mt-auto inline-block"
                 >
@@ -382,7 +382,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
                     href={partner.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    event="affiliate_click"
+                    event="tool_click"
                     meta={{ page: "resources_partners", partner: partner.name, placement: partner.placement, locale }}
                     className="inline-flex items-center justify-between rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] px-4 py-3 text-sm text-[color:var(--text)] hover:border-[color:var(--primary)]/35"
                   >

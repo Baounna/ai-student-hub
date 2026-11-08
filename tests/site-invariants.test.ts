@@ -1,4 +1,5 @@
 import { describe, it, expect } from "vitest";
+import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
 
@@ -168,5 +169,56 @@ describe("reading time is measured, not declared", () => {
     const posts = readFileSync("src/content/posts.ts", "utf8");
     expect(posts).toMatch(/readTime: measureReadTime\(post, "en"\)/);
     expect(posts).toMatch(/readTime: measureReadTime\(post, locale\)/);
+  });
+});
+
+/**
+ * A name is documentation, and these two documented the wrong thing.
+ *
+ * `affiliateHref` and `affiliate_click` were statements about an intention
+ * that was abandoned: this site is in no affiliate programme and earns nothing
+ * from those links, which src/config/site.ts:242-246 records being made true
+ * by removing the commission wording from the disclosure. The names outlived
+ * the plan by months.
+ *
+ * Not a harmless leftover. A session working on this repository read them,
+ * concluded the site took a commission, and wrote that into a formal letter
+ * addressed to a university Dean. Everyone who reads a name afterwards
+ * inherits whatever it claims.
+ */
+describe("names that describe what the thing is", () => {
+  const sources = execFileSync("git", ["ls-files", "src", "scripts"], { encoding: "utf8" })
+    .trim()
+    .split("\n")
+    .filter((f) => /\.(ts|tsx|mjs)$/.test(f));
+
+  it("no longer calls an ordinary link an affiliate link", () => {
+    /*
+     * Code, not prose. Several comments narrate the rename and have to keep
+     * the old spelling to still make sense — including the one on the field
+     * itself, which explains what the name used to claim. Excluding those
+     * files by name would also stop the check noticing a real use in them.
+     */
+    const code = (source: string) => source.replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
+
+    const offenders: string[] = [];
+    for (const file of sources) {
+      if (/\baffiliateHref\b|\baffiliate_click\b/.test(code(readFileSync(file, "utf8")))) offenders.push(file);
+    }
+    expect(offenders).toEqual([]);
+  });
+
+  it("keeps the disclosure page, which is correctly named", () => {
+    // "Affiliate disclosure" is the standard name for the page that answers
+    // the question, and the honest answer there is "none". Renaming the route
+    // would break inbound links and the sitemap to fix nothing.
+    expect(existsSync(path.join(LANG_DIR, "affiliate-disclosure/page.tsx"))).toBe(true);
+    expect(readFileSync("src/app/sitemap.ts", "utf8")).toContain('"/affiliate-disclosure"');
+  });
+
+  it("still tracks the click, under a name that says what was clicked", () => {
+    const schema = readFileSync("src/lib/tracking-schema.ts", "utf8");
+    expect(schema).toMatch(/"tool_click"/);
+    expect(schema).not.toMatch(/"affiliate_click"/);
   });
 });

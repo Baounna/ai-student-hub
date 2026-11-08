@@ -2,7 +2,7 @@ const TRACKED_EVENTS = [
   "lead_magnet_click",
   "newsletter_submit_success",
   "newsletter_submit_error",
-  "affiliate_click",
+  "tool_click",
   "product_checkout_click",
   "article_share",
   // The campus signup is counted separately from the newsletter one. Both end

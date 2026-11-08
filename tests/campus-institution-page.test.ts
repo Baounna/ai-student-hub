@@ -93,7 +93,7 @@ describe("campus institution pages", () => {
     // it carries neither.
     for (const [name, source] of [["establishment page", PAGE], ["campus index", INDEX]] as const) {
       const body = code(source);
-      expect(body, `${name} must not link an affiliate URL`).not.toMatch(/affiliateHref|affiliate_click|AffiliateDisclosure/);
+      expect(body, `${name} must not link an affiliate URL`).not.toMatch(/toolHref|tool_click|AffiliateDisclosure/);
       expect(body, `${name} must not push the paid guide`).not.toMatch(/getGuideCtaHref|getGuideCtaLabel/);
       expect(body, `${name} must not solicit a donation`).not.toMatch(/\/donate|paypal/i);
     }

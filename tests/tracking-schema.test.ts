@@ -3,7 +3,7 @@ import { sanitizeTrackPayload, isTrackEventName } from "@/lib/tracking-schema";
 
 describe("isTrackEventName", () => {
   it("accepts allowlisted events only", () => {
-    expect(isTrackEventName("affiliate_click")).toBe(true);
+    expect(isTrackEventName("tool_click")).toBe(true);
     expect(isTrackEventName("article_share")).toBe(true);
     expect(isTrackEventName("not_a_real_event")).toBe(false);
     expect(isTrackEventName("")).toBe(false);
@@ -24,12 +24,12 @@ describe("sanitizeTrackPayload", () => {
 
   it("accepts a valid event and sanitizes meta", () => {
     const result = sanitizeTrackPayload({
-      event: "affiliate_click",
+      event: "tool_click",
       meta: { source: "  home  ", count: 3, flag: true, bad: { nested: 1 }, junk: NaN }
     });
     expect(result.ok).toBe(true);
     if (!result.ok) return;
-    expect(result.data.event).toBe("affiliate_click");
+    expect(result.data.event).toBe("tool_click");
     expect(result.data.meta.source).toBe("home"); // trimmed
     expect(result.data.meta.count).toBe(3);
     expect(result.data.meta.flag).toBe(true);
