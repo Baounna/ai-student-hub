@@ -77,53 +77,39 @@ async function fetchText(url) {
   return stdout;
 }
 
-/** Visible text, with scripts removed so the RSC payload cannot be mistaken for content. */
-const visible = (html) =>
-  html
-    .replace(/<script[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[\s\S]*?<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;|&#160;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/\s+/g, " ");
-
 // ---------------------------------------------------------------- invariant 2
 /**
- * One number, one value per screen.
+ * One number, one value per screen — NOT automated, and here is why.
  *
- * Narrow on purpose. It looks only for the same counted noun carrying two
- * different numbers on one page -- the shape of the real defect: /blog printing
- * "72 cited sources" in a tile while the per-card chips on the same screen said
- * "6 sources", two notions of the same word with nothing telling them apart.
- * A general "no two numbers disagree" check would flag every price, year and
- * percentage on the site and be switched off within a week.
+ * The first attempt flagged every counted noun carrying two values on one
+ * page. Measured against /blog it returned "sources = 72 and 4 and 3 and 1 and
+ * 2 and 6", and against /campus "listings = 2 and 3". Those are not defects:
+ * they are per-item counts, and twenty-four articles legitimately cite
+ * different numbers of sources. The heuristic cannot tell a page-level
+ * aggregate from a per-row figure, and every value it reported after the real
+ * one was noise.
+ *
+ * The defect it was written for is narrower than the rule: an AGGREGATE
+ * disagreeing with the per-item figures carrying the same label. /blog printed
+ * "72 cited sources" in a summary tile while the chips beside each article
+ * said "6 sources", and the same article read 6 in the stream and 4 in the
+ * picks. Detecting that needs to know which figure is a summary, which this
+ * cannot know from rendered text.
+ *
+ * So it is hand-checked, with the procedure written down, rather than
+ * automated into something that cries wolf. A check that reports six values
+ * where one is real is a check somebody switches off, and the switching off is
+ * what this whole script exists to prevent.
  */
-async function invariant2(routes) {
-  const offenders = [];
-  for (const route of routes) {
-    for (const locale of ["fr", "en"]) {
-      let text;
-      try {
-        text = visible(await fetchText(`${SITE}/${locale}${route}`));
-      } catch {
-        return record(2, "hand-checked", `network unavailable; run: curl -s ${SITE}/fr${route}`);
-      }
-      const seen = new Map();
-      for (const match of text.matchAll(/(\d+)\s+(?:[a-zà-ÿ]+\s+)?([a-zà-ÿ]+)/gi)) {
-        const noun = match[2].toLowerCase();
-        if (!COUNTED.includes(noun)) continue;
-        const value = match[1];
-        const key = `${locale}${route}|${noun}`;
-        if (!seen.has(key)) seen.set(key, new Set());
-        seen.get(key).add(value);
-      }
-      for (const [key, values] of seen) {
-        if (values.size > 1) offenders.push(`${key} = ${[...values].join(" and ")}`);
-      }
-    }
-  }
-  if (!offenders.length) return record(2, "pass", `no counted noun carries two values on one page (${routes.length} routes x2 locales)`);
-  record(2, "fail", offenders.slice(0, 6).join("; ") + (offenders.length > 6 ? ` (+${offenders.length - 6})` : ""));
+function invariant2() {
+  record(
+    2,
+    "hand-checked",
+    "no reliable automation: a per-item count and a page aggregate are indistinguishable in rendered text. " +
+      "Procedure: on each page, list every summary figure and the per-row figures sharing its noun, and confirm " +
+      "each is labelled with which quantity it is (src/lib/citations.ts referenceCountLabel is the pattern). " +
+      "Last done 2026-11-08 on /blog: tile 72 cited sources, cards 'cited sources' or 'sources consulted', no bare 'sources'."
+  );
 }
 
 // ---------------------------------------------------------------- invariant 3
@@ -167,8 +153,8 @@ async function invariant4(routes) {
     if (a.levels !== b.levels) offenders.push(`${route || "/"}: heading levels fr=${a.levels.length} en=${b.levels.length}`);
     else if (Math.abs(a.anchors - b.anchors) > 0) offenders.push(`${route || "/"}: anchors fr=${a.anchors} en=${b.anchors}`);
   }
-  if (!offenders.length) return record(4, "pass", `heading sequence and anchor count identical across locales (${routes.length} routes)`);
-  record(4, "fail", offenders.slice(0, 6).join("; "));
+  if (!offenders.length) return record(4, "pass", `heading sequence and anchor count identical across locales (${routes.length} routes, measured at ${SITE})`);
+  record(4, "fail", `measured at ${SITE} — ` + offenders.slice(0, 6).join("; "));
 }
 
 // ---------------------------------------------------------------- invariant 5
@@ -248,7 +234,7 @@ async function main() {
   await invariant3(files);
   await invariant5(files);
   await invariant8(files);
-  await invariant2(routes);
+  invariant2();
   await invariant4(routes);
   await invariant11();
 

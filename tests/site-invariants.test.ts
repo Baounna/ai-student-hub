@@ -89,3 +89,46 @@ describe("site invariants", () => {
     expect(readFileSync("src/i18n/dictionaries.ts", "utf8")).not.toMatch(/convertir l'audience/);
   });
 });
+
+/**
+ * Invariant 2, for the defect that produced it.
+ *
+ * /blog printed "72 cited sources" in its Evidence tile while the per-card
+ * chips on the same screen summed to 106, and the same post appeared as "6
+ * sources" in the stream and "4 cited sources" in the picks — two numbers for
+ * one article on one page. The tile counted references a paragraph points at;
+ * the chips counted every reference listed. Both were called "sources".
+ *
+ * src/lib/citations.ts has distinguished the two since it was written: a
+ * reference a paragraph points at is a citation, one that is only listed is a
+ * reading list, and referenceCountLabel says which. The cards were the only
+ * place that ignored it.
+ */
+describe("one notion of 'reference' on /blog", () => {
+  const BLOG = readFileSync(path.join(LANG_DIR, "blog/page.tsx"), "utf8");
+
+  it("never prints a bare reference count under the bare word sources", () => {
+    expect(BLOG).not.toMatch(/\{featuredPost\.references\.length\} \{locale === "fr" \? "sources" : "sources"\}/);
+    expect(BLOG).not.toMatch(/\{post\.references\.length\} \{locale === "fr" \? "sources" : "sources"\}/);
+  });
+
+  it("labels every count with which of the two it is", () => {
+    // Three renderings of the same quantity: featured card, stream card, pick.
+    const labelled = BLOG.match(/referenceCountLabel\(citedReferenceCount\(/g) || [];
+    expect(labelled.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it("shows one number per post, whichever card it appears on", () => {
+    // The expression is identical in all three places, so a post cannot read
+    // 6 in the stream and 4 in the picks again.
+    const expression = BLOG.match(/citedReferenceCount\((featuredPost|post)\) \|\| \1\.references\.length/g) || [];
+    expect(expression.length).toBeGreaterThanOrEqual(2);
+  });
+
+  it("keeps the tile summing the quantity its own label names", () => {
+    // "cited sources" must remain the sum of the cards labelled cited, so the
+    // two are reconcilable by a reader who adds them up.
+    expect(BLOG).toMatch(/allPosts\.reduce\(\(sum, post\) => sum \+ citedReferenceCount\(post\), 0\)/);
+    expect(BLOG).toMatch(/const sourceLabel = locale === "fr" \? "sources citées" : "cited sources";/);
+  });
+});

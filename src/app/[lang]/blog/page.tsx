@@ -434,8 +434,19 @@ export default async function LocalizedBlogPage(
                 <span className="text-xs text-[color:var(--muted)]">
                   {formatPublishedDate(featuredPost.publishedAt, locale)}
                 </span>
+                  {/* The same notion, and the same label, as the "Editor's
+                      picks" cards below and the Evidence tile above. These
+                      printed post.references.length under the bare word
+                      "sources", so one article appeared as "6 sources" in the
+                      stream and "4 cited sources" in the picks -- two numbers
+                      for one post on one page -- while the tile summed only
+                      the cited ones and read 72 against chips summing 106.
+                      A reference a paragraph points at is a citation; one that
+                      is only listed is a reading list, and referenceCountLabel
+                      has said so since it was written. */}
                 <span className="blog-chip rounded-full px-2 py-0.5 text-[11px] text-[color:var(--muted)]">
-                  {featuredPost.references.length} {locale === "fr" ? "sources" : "sources"}
+                  {citedReferenceCount(featuredPost) || featuredPost.references.length}{" "}
+                  {referenceCountLabel(citedReferenceCount(featuredPost), locale)}
                 </span>
               </div>
               <div className="mt-5 flex flex-wrap gap-3">
@@ -529,7 +540,8 @@ export default async function LocalizedBlogPage(
                     <p className="text-xs text-[color:var(--muted)]">{formatReadTime(post.readTime, locale)}</p>
                     <p className="text-xs text-[color:var(--muted)]">{formatPublishedDate(post.publishedAt, locale)}</p>
                     <span className="blog-chip rounded-full px-2 py-0.5 text-[11px] text-[color:var(--muted)]">
-                      {post.references.length} {locale === "fr" ? "sources" : "sources"}
+                      {citedReferenceCount(post) || post.references.length}{" "}
+                      {referenceCountLabel(citedReferenceCount(post), locale)}
                     </span>
                   </div>
                   <h3 className="font-display section-title mt-3 font-semibold text-[color:var(--text-strong)]">
