@@ -1,6 +1,6 @@
 {
-  "epoch": 5,
-  "baselineTests": 919,
+  "epoch": 6,
+  "baselineTests": 927,
   "invariants": {
     "1": {
       "status": "hand-checked",
@@ -39,12 +39,12 @@
       "evidence": "tests/french-typography.test.ts covers the spacing; articles and elision are read by eye"
     },
     "10": {
-      "status": "hand-checked",
-      "evidence": "every check added in epochs 0-1 has a test proving it can go red; older checks unaudited"
+      "status": "pass",
+      "evidence": "all 16 watchdog checks have a path to red"
     },
     "11": {
       "status": "pass",
-      "evidence": "919 tests passing (baseline 908)"
+      "evidence": "927 tests passing (baseline 919)"
     },
     "12": {
       "status": "hand-checked",
@@ -58,7 +58,8 @@
     "C-1 one notion of reference on /blog",
     "B-2 proportional interleave on /stages",
     "B-3 Anthropic Engineering moved to /research",
-    "LOOP-2 invariant 7 measured"
+    "LOOP-2 invariant 7 measured",
+    "LOOP-3 invariant 10 measured"
   ],
   "couplings": [
     {
@@ -89,11 +90,12 @@
     }
   ],
   "knownWeaknesses": [
+    "RECORDED epoch 6: watchdog.mjs:1175 records a SKIPPED check as green — record(\"Affiliate links\", true, \"not configured … skipped\"). The alarm can fire, so invariant 10 passes, but a skip is not a pass. The watchdog lacks the third status npm run invariants has.",
     "RECORDED epoch 5: growth-sprint/page.tsx:359 reaches /product/ai-career-guide without passing getGuideCtaHref. Defensible on an internal robots-disallowed page; a live claim if that page ever stops being internal.",
     "RESOLVED in epoch 4: Anthropic Engineering silent since 13 Oct. Anthropic moved posts from /engineering/<slug> to /research/<slug>; 60 anchors, 0 matched the old rule, 21 match the new one.",
     "RESOLVED in epoch 3: orderStages top-bias. Measured after: 1 (was 2) at 10/86, 2 (was 3) at 15/100, 3 (was 4) at 25/100, 4 (was 7) at 40/120.",
     "invariant 2 has no reliable automation: a per-item count and a page aggregate are indistinguishable in rendered text",
-    "invariants 1, 2, 6, 9, 10, 12 are hand-checked; 7 was promoted in epoch 5"
+    "invariants 1, 2, 6, 9, 12 remain hand-checked; 7 promoted in epoch 5, 10 in epoch 6"
   ],
   "ownerDecisions": [
     "PUSH: the Internship Finder runs Thursdays against origin/main and its fix is unpushed; it will fail a third time otherwise",

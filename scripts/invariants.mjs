@@ -289,6 +289,123 @@ async function invariant8(files) {
   record(8, "fail", offenders.join("; "));
 }
 
+// --------------------------------------------------------------- invariant 10
+/**
+ * Every alarm can go red.
+ *
+ * This repository has fixed "a check that passes without checking" three times
+ * under three names, and the git log carries one called exactly that. The
+ * invariant guarding against a fourth was itself recorded as hand-checked,
+ * with the evidence "checks added in epochs 0-1 have tests proving they can
+ * fail; older checks unaudited".
+ *
+ * A check can go red if any of its `record()` call sites passes something
+ * other than a literal `true` for `ok`. The subtlety is that a name does not
+ * have to be a literal: `checkVerifyScript(label, script)` records under its
+ * parameter, so four of the watchdog's checks never appear beside a literal
+ * name at all. A first version of this that matched only literals reported
+ * "Affiliate links" as unable to fail, which is wrong -- it routes through
+ * that helper, and that helper records `label, false` on failure.
+ *
+ * So helpers that record under an identifier are resolved: whether such a
+ * helper can go red is inherited by every check whose name is passed into it.
+ */
+export function alarmsThatCannotFail(source) {
+  const sites = [];
+  const re = /\brecord\(/g;
+  let match;
+  while ((match = re.exec(source))) {
+    let depth = 1;
+    let i = match.index + match[0].length;
+    let inString = null;
+    let previous = "";
+    while (i < source.length && depth > 0) {
+      const c = source[i];
+      if (inString) {
+        if (c === inString && previous !== "\\") inString = null;
+      } else if (c === '"' || c === "'" || c === "`") inString = c;
+      else if (c === "(") depth += 1;
+      else if (c === ")") depth -= 1;
+      previous = c;
+      i += 1;
+    }
+    sites.push({ args: source.slice(match.index + match[0].length, i - 1), at: match.index });
+  }
+
+  const splitTop = (args) => {
+    const parts = [];
+    let depth = 0;
+    let cur = "";
+    let inString = null;
+    let previous = "";
+    for (const c of args) {
+      if (inString) {
+        cur += c;
+        if (c === inString && previous !== "\\") inString = null;
+        previous = c;
+        continue;
+      }
+      if (c === '"' || c === "'" || c === "`") { inString = c; cur += c; previous = c; continue; }
+      if ("([{".includes(c)) depth += 1;
+      if (")]}".includes(c)) depth -= 1;
+      if (c === "," && depth === 0) { parts.push(cur.trim()); cur = ""; previous = c; continue; }
+      cur += c;
+      previous = c;
+    }
+    if (cur.trim()) parts.push(cur.trim());
+    return parts;
+  };
+
+  /** The function a byte offset sits inside, by the nearest declaration above it. */
+  const enclosing = (at) => {
+    const declarations = [...source.slice(0, at).matchAll(/(?:async\s+)?function\s+([A-Za-z0-9_]+)\s*\(/g)];
+    return declarations.length ? declarations[declarations.length - 1][1] : "";
+  };
+
+  const byName = new Map();
+  const helpers = new Map();
+
+  for (const site of sites) {
+    const args = splitTop(site.args);
+    const ok = (args[1] || "").replace(/\s+/g, " ");
+    const literal = args[0]?.match(/^"([^"]+)"$/);
+    if (literal) {
+      if (!byName.has(literal[1])) byName.set(literal[1], []);
+      byName.get(literal[1]).push(ok);
+    } else {
+      const fn = enclosing(site.at);
+      if (!fn) continue;
+      if (!helpers.has(fn)) helpers.set(fn, []);
+      helpers.get(fn).push(ok);
+    }
+  }
+
+  // A name handed to a recording helper inherits that helper's red-ability.
+  for (const [fn, oks] of helpers) {
+    const call = new RegExp(`\\b${fn}\\(\\s*"([^"]+)"`, "g");
+    let hit;
+    while ((hit = call.exec(source))) {
+      if (!byName.has(hit[1])) byName.set(hit[1], []);
+      byName.get(hit[1]).push(...oks);
+    }
+  }
+
+  const stuck = [];
+  for (const [name, oks] of byName) {
+    if (!oks.some((ok) => ok !== "true")) stuck.push(name);
+  }
+  return { total: byName.size, stuck: stuck.sort() };
+}
+
+async function invariant10() {
+  const watchdog = await fs.readFile(path.join(ROOT, "scripts/watchdog.mjs"), "utf8");
+  const { total, stuck } = alarmsThatCannotFail(watchdog);
+
+  if (!total) return record(10, "hand-checked", "no record() call sites found in scripts/watchdog.mjs; read it by hand");
+  if (!stuck.length) return record(10, "pass", `all ${total} watchdog checks have a path to red`);
+  record(10, "fail", `${stuck.length} of ${total} can never go red: ${stuck.join(", ")}`);
+}
+
 // --------------------------------------------------------------- invariant 11
 /** The suite, and the baseline it may not drop below. */
 async function invariant11() {
@@ -315,7 +432,6 @@ function handChecked() {
   record(1, "hand-checked", "no automation; read each page's claims against today's data (epoch 1: /stages, /news, /blog carry staleness notices)");
   record(6, "hand-checked", "npm run health reports it: no issue has ever been sent");
   record(9, "hand-checked", "tests/french-typography.test.ts covers the spacing; articles and elision are read by eye");
-  record(10, "hand-checked", "every check added in epochs 0-1 has a test proving it can go red; older checks unaudited");
   record(12, "hand-checked", "npm run health");
 }
 
@@ -330,6 +446,7 @@ async function main() {
   await invariant8(files);
   invariant2();
   await invariant4(routes);
+  await invariant10();
   await invariant11();
 
   const ordered = Object.fromEntries(Object.keys(results).map(Number).sort((a, b) => a - b).map((n) => [n, results[n]]));
