@@ -162,11 +162,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
       // the same three things already exist in src/content/stages.ts
       // (KIND_LABELS) and are what the list itself renders, so the newsletter
       // block uses them rather than inventing a second English vocabulary.
-      // "One email a week" is a floor, and nothing sends one -- the drafting
-      // script exists, the sending does not. A ceiling is the version that can
-      // be kept: it still answers "will you spam me", without promising an
-      // email that may not arrive. Restore the cadence the week something
-      // actually sends on a schedule.
+      // "One email a week" is a floor, and a floor is a promise to deliver.
+      // A ceiling is the version that can be kept: it still answers "will you
+      // spam me", without committing to an email that may not arrive on a
+      // given week. Sending exists now -- npm run send:issue, first used on 8
+      // November 2026 -- but the ceiling stays, because a weekly floor is only
+      // honest once the weekly job has kept it for a while.
       badge: "Internships and apprenticeships",
       title: "Open tech internships, verified weekly",
       description:

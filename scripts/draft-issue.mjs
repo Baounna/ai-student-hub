@@ -2,11 +2,15 @@
 /**
  * Draft the weekly internship email from the list itself.
  *
- * The signup form promises "one email a week". Zero have ever been sent. The
- * gap between those two facts is the same kind of untruth the roadmap was, and
- * the reason it persists is that writing an issue by hand every week is work
- * nobody sustains. So the issue is generated from src/content/stages.json and
- * the weekly job becomes: run this, read it, send it.
+ * The signup form promises "one email a week", and for a long time none went
+ * out -- the gap between those two facts was the same kind of untruth the
+ * roadmap was, and it persisted because writing an issue by hand every week is
+ * work nobody sustains. So the issue is generated from src/content/stages.json
+ * and the weekly job became: run this, read it, send it.
+ *
+ * The first issue from this script went out on 8 November 2026, twelve
+ * listings, to one subscriber. `npm run send:issue` does the sending now, so
+ * the loop no longer depends on anyone remembering.
  *
  *   npm run draft:issue              what is new since the last issue
  *   npm run draft:issue -- --all     every open listing, not just what is new
@@ -253,10 +257,11 @@ await fs.writeFile(path.join(OUT, `issue-${today}.html`), html);
  * This wrote the sent-ledger on every run, directly under a line reading
  * "Nothing was sent" -- and sending really is a separate manual step: the
  * script produces HTML a person then pastes into Kit. So every draft that was
- * generated and not sent silently retired its listings. Three drafts exist in
- * this folder from September, no issue has ever gone out, and the ledger
- * claimed 48 of 102 listings covered: the first real issue would have skipped
- * nearly half the board, and nobody would have seen that happen.
+ * generated and not sent silently retired its listings. Three drafts existed
+ * in this folder from September against a single issue that had actually gone
+ * out, and the ledger claimed 48 of 102 listings covered: the first real issue
+ * would have skipped nearly half the board, and nobody would have seen that
+ * happen.
  *
  * The ids go into a pending file beside the draft instead. `npm run
  * draft:sent` promotes the pending file once the issue is actually sent, which

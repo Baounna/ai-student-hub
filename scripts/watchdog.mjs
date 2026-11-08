@@ -257,9 +257,10 @@ async function checkEditorialAge() {
  * How long it has been since an issue actually went out.
  *
  * Every page on the site carries "At most one email a week" and a signup form,
- * and drafts/.last-issue.json has carried `sentAt: null` since it was reset --
- * no issue has ever been sent. src/i18n/dictionaries.ts:165-169 records the
- * same thing from the copy's side.
+ * and for a long time drafts/.last-issue.json carried `sentAt: null` against
+ * that promise. The first issue from this pipeline went out on 8 November
+ * 2026; what this watches now is whether the cadence is being kept, not
+ * whether it has ever started.
  *
  * Separated from the draft script on purpose: writing a draft is not sending
  * it, and the two were one action until three September drafts retired their

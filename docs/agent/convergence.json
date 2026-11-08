@@ -1,6 +1,6 @@
 {
-  "epoch": 10,
-  "baselineTests": 968,
+  "epoch": 11,
+  "baselineTests": 975,
   "invariants": {
     "1": {
       "status": "hand-checked",
@@ -23,8 +23,8 @@
       "evidence": "every page renders <=1 of its own (13 pages)"
     },
     "6": {
-      "status": "fail",
-      "evidence": "the copy promises an email a week and none has ever been sent"
+      "status": "pass",
+      "evidence": "last issue 0 days ago, within the promised cadence"
     },
     "7": {
       "status": "pass",
@@ -44,11 +44,11 @@
     },
     "11": {
       "status": "pass",
-      "evidence": "968 tests passing (baseline 945)"
+      "evidence": "975 tests passing (baseline 968)"
     },
     "12": {
       "status": "pass",
-      "evidence": "2 item(s), all of them decisions already recorded as the owner's"
+      "evidence": "1 item(s), all of them decisions already recorded as the owner's"
     }
   },
   "unitsDone": [
@@ -64,7 +64,8 @@
     "C-2 authored readTime literals removed",
     "LOOP-4 invariants 6 and 12 measured",
     "NEWSLETTER-1 send:issue with six guards, parked pending KIT_API_KEY",
-    "LOOP-5 invariant 9 elision measured"
+    "LOOP-5 invariant 9 elision measured",
+    "DOC-1 four comments claiming nothing had ever been sent"
   ],
   "couplings": [
     {
@@ -95,6 +96,7 @@
     }
   ],
   "knownWeaknesses": [
+    "RESOLVED epoch 11: four source comments asserted no issue had ever been sent; Kit showed two had. A test now ties the claim to drafts/.last-issue.json.",
     "CONFIRMED epoch 9: the Internship Finder succeeded on a manual dispatch and the board grew 86 -> 88, the first growth since 29 October.",
     "RESOLVED epoch 8: 24 hand-typed readTime literals, wrong by a factor of three and overwritten before render. AuthoredPost now omits the field so none can be authored again.",
     "RESOLVED epoch 4, CONFIRMED epoch 7 in production: Anthropic Engineering 1 item -> 11, all under /research/.",
@@ -107,10 +109,10 @@
     "invariants 1 and 2 remain hand-checked. 2 cannot be automated (reason recorded in epoch 2); 1 has no obvious measurement."
   ],
   "ownerDecisions": [
-    "PUSH: the Internship Finder runs Thursdays against origin/main and its fix is unpushed; it will fail a third time otherwise",
-    "send the first newsletter",
+    "the newsletter has one subscriber — share the campus link",
     "write or retire the February briefs",
-    "raise WATCHDOG_EDITORIAL_FAIL_DAYS, or accept a permanently red editorial alarm"
+    "turn on Vercel Web Analytics",
+    "arm AUTO_SEND_ISSUE once there is an audience"
   ],
   "measuredAt": "Invariant 4 measures a DEPLOYED site. A fix committed locally reads as still failing until it ships; point NEXT_PUBLIC_SITE_URL at a local production server to check before deploy.",
   "nextEpoch": "docs/agent/next-epoch.md",
