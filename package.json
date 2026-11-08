@@ -34,7 +34,8 @@
     "draft:sent": "node scripts/mark-issue-sent.mjs",
     "find:stages": "node scripts/find-stages.mjs",
     "test:clock": "node scripts/clock-sweep.mjs",
-    "health": "node scripts/health.mjs"
+    "health": "node scripts/health.mjs",
+    "invariants": "node scripts/invariants.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
