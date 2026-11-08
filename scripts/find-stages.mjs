@@ -107,9 +107,18 @@ const PER_COMPANY_CAP = 2;
  * large enough share, however the list is spread. That test failing is what
  * stopped the first scheduled run from pushing anything at all.
  *
- * Twelve, because the deepest employer today is eleven and this is meant to
- * stop the agent making the problem worse rather than to re-cut a board a
- * person built by hand.
+ * Twelve, chosen when the deepest employer was eleven: one above the worst
+ * case, so the rule would stop the agent making the problem worse without
+ * re-cutting a board a person had built by hand.
+ *
+ * It is no longer slack. Wavestone reached twelve on 8 November 2026 -- two of
+ * them added by this script on its first successful run -- so the cap now
+ * binds, and the next Wavestone posting this finder sees will be refused.
+ *
+ * That is the rule working, not failing: a board where one consultancy holds
+ * an eighth of everything is the thing it exists to prevent. Raising it is a
+ * judgement about what the board is for, not a maintenance task, so the number
+ * stays until someone decides otherwise.
  */
 const MAX_PER_COMPANY_ON_BOARD = 12;
 
