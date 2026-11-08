@@ -1,60 +1,58 @@
-# Epoch 3 — brief
+# Epoch 4 — brief
 
-Written at the end of epoch 2, while the evidence was fresh. Read
-`docs/agent/convergence.json` and `docs/agent/epoch-2.md` first.
+Written at the end of epoch 3. Read `docs/agent/convergence.json` and
+`docs/agent/epoch-3.md` first.
 
 ## Phase 1 — MEASURE
 
 ```
-npm run invariants        # 0 failing, 7 hand-checked as of epoch 2
-npm run health            # 1 engineering item expected: a quiet news source
+npm run invariants        # expect 0 failing, 7 hand-checked
+npm run health
 git fetch && git status -sb
+gh run list --workflow=find-stages.yml --limit 3
 ```
 
-Diff against `convergence.json`. A `pass` that was `hand-checked` is
-**MEASURED**, not FIXED.
-
-Expect one change you did not make: the Internship Finder runs Thursdays. If it
-has run since epoch 1 and succeeded, that is the confirmation epoch 1
-deliberately did not claim.
+**Check the Finder first.** If the branch was pushed, Thursday's run is the
+confirmation epochs 1 and 3 both declined to claim. If it was not pushed, the
+run failed a third time for the same reason, and that is the single most
+valuable thing to tell the owner — ahead of this epoch's unit.
 
 ## Phase 2 — ACT (one unit)
 
-**Unit B-2: the interleave that puts one employer at the top.**
+**Unit B-3: the news source that has gone silent.**
 
-- *Trigger*: measured in epoch 1 against `orderStages` directly — the deepest
-  employer takes 2 of the opening 12 where 1.40 is its share (10 of 86), 3
-  where 1.80 is fair (15 of 100), and **7 where 4.00 is fair** (40 of 120). A
-  deep employer's fractional positions all start near zero, while an employer
-  with one posting sits at the midpoint and cannot appear early at all.
-- *Scope*: `oneEmployerAtATime` and `orderStages` in `src/content/stages.ts`;
-  `tests/stages-order.test.ts`.
-- *Exit condition*: at every share measured above, the deepest employer holds
-  no more than `ceil(fair share) + 1` of the opening twelve — and no two
-  consecutive rows share an employer, which is the property the current
-  interleave was written to get and must not lose.
-- *Test*: the existing "still catches an employer that actually owns the top"
-  test asserts the ceiling is **exceeded** at 40 of 120. When the interleave is
-  fixed, that test must be inverted to assert the ceiling now holds, and the
-  table of four shares measured as a regression guard.
+- *Trigger*: `npm run health` and the daily watchdog both report one source
+  quiet for 21+ days — Anthropic Engineering, last item 13 October. The
+  per-source check added in an earlier epoch found it; nothing has diagnosed
+  it. A page that redesigns its HTML stops matching `parsePageItems`, returns
+  an empty array, and the run still prints success.
+- *Scope*: `src/lib/live-news.ts` (`FEED_SOURCES`, `parsePageItems`),
+  `scripts/auto-news-agent.mjs`. **Not** `src/content/auto-news.json` — machine-written.
+- *Exit condition*: either the source produces items again, or it is removed
+  from `FEED_SOURCES` with the reason recorded, or — if the page cannot be
+  reached from this machine, which is likely — the diagnosis is written down
+  and the unit is closed as owner-blocked rather than guessed at.
+- *Test*: whichever outcome, the per-source freshness check must still be able
+  to go red. If a source is removed, assert the removal is deliberate and not
+  silent.
 
-**Do not** touch `readTime` literals, post dates, or article text. One unit per
-epoch.
+Note: `anthropic.com` and `github.com` are unreachable from the owner's
+machine. If the page cannot be fetched, say so and close the unit as
+network-blocked — **do not** infer the cause from the parser alone and present
+it as fact.
 
 ## Phase 3 — PROVE
 
 Re-run `npm run invariants` and `npm run health`. Four checks clean, tests
-never below **903**. Verify `/fr/stages` and `/en/stages` on a production
-server. Write `epoch-3.md`, update the ledger, and **write the epoch 4 brief**.
-Separate commits for separate concerns.
+never below **903**. Write `epoch-4.md`, update the ledger, write the epoch 5
+brief. Separate commits for separate concerns.
 
 ## Standing rules
 
-Evidence before theory — anything involving a scheduled job starts with
-`gh run view <id> --log`. Record, don't fix, when a finding is outside the
-unit. Nothing may cost money. Never weaken the CSP, edit `auto-news.json`,
-push, deploy, merge, send, regenerate the lockfile on macOS, or write editorial
-content. The site is in no affiliate programme. AGENTS.md is binding: read
-`node_modules/next/dist/docs/` before using a framework API.
-
-At most two subagents, reading only.
+Evidence before theory. Record, don't fix, outside the unit. Nothing may cost
+money. Never weaken the CSP, edit `auto-news.json` or `auto-tools.json`, push,
+deploy, merge, send anything, regenerate the lockfile on macOS, or write
+editorial content. The site is in no affiliate programme
+(`src/config/site.ts:242-246`). AGENTS.md is binding: read
+`node_modules/next/dist/docs/` before using a framework API. At most two
+subagents, reading only.

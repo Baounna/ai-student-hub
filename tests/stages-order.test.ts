@@ -158,18 +158,33 @@ describe("internship ordering", () => {
     expect(new Set(companies).size).toBeGreaterThanOrEqual(WINDOW - 3);
   });
 
-  it("still catches an employer that actually owns the top", () => {
+  it("gives the deepest employer its share of the opening rows and no more", () => {
     /*
-     * The guard above only matters if it can fail, and derived ceilings are
-     * easy to derive into uselessness. These are measured from orderStages,
-     * not imagined: at 40 of 120 the interleave puts seven of the opening
-     * twelve on one employer against a fair four, because a deep employer's
-     * fractional positions all start near zero while a single-posting employer
-     * sits at the midpoint and cannot appear early at all.
+     * This test used to assert the opposite.
      *
-     * That is a real weakness in the interleave and is recorded here rather
-     * than fixed in the same change that unblocked the finder. What this pins
-     * is that the ceiling notices it.
+     * Epoch 1 measured the old interleave and pinned what it actually did: at
+     * 40 of 120 it put SEVEN of the opening twelve on one employer, where four
+     * is that employer's share. Giving each posting a fractional position
+     * within its own run, `(index + 0.5) / count`, puts a deep employer's
+     * first seven below 0.1667 -- the earliest position any three-posting
+     * employer can reach -- so the top of the page belonged to whoever had the
+     * most listings, and an employer with one posting could not appear in the
+     * first half at all.
+     *
+     * Epoch 3 replaced it with placement: each row goes to whoever is furthest
+     * below the share they should have had by then. The table below is the
+     * same four concentrations, measured before and after:
+     *
+     *   share        fair   before   after
+     *   10 of 86     1.40      2       1
+     *   15 of 100    1.80      3       2
+     *   25 of 100    3.00      4       3
+     *   40 of 120    4.00      7       4
+     *
+     * The guard is the ceiling the live board is held to in the test above --
+     * its share rounded up, plus one row of slack -- applied to a synthetic
+     * board, because waiting for one employer to reach a third of the listings
+     * before finding out is not testing.
      */
     const make = (company: string, i: number) =>
       ({
@@ -188,18 +203,38 @@ describe("internship ordering", () => {
         source: "s"
       }) as unknown as Stage;
 
-    const big = 40;
-    const total = 120;
-    const items = [
-      ...Array.from({ length: big }, (_, i) => make("BIG", i)),
-      ...Array.from({ length: total - big }, (_, i) => make(`Co${i % 30}`, i))
-    ];
+    const WHEN = Date.parse("2026-11-08T12:00:00Z");
 
-    const opening = orderStages(items, Date.parse("2026-11-08T12:00:00Z")).slice(0, 12).map((s) => s.company);
-    const bigInOpening = opening.filter((c) => c === "BIG").length;
-    const ceiling = Math.max(2, Math.ceil((12 * big) / total) + 1);
+    for (const [big, total, expected] of [
+      [10, 86, 1],
+      [15, 100, 2],
+      [25, 100, 3],
+      [40, 120, 4]
+    ] as const) {
+      const items = [
+        ...Array.from({ length: big }, (_, i) => make("BIG", i)),
+        ...Array.from({ length: total - big }, (_, i) => make(`Co${i % 30}`, i))
+      ];
 
-    expect(bigInOpening).toBeGreaterThan(ceiling);
+      const ordered = orderStages(items, WHEN);
+      const opening = ordered.slice(0, 12).map((s) => s.company);
+      const bigInOpening = opening.filter((c) => c === "BIG").length;
+      const ceiling = Math.max(2, Math.ceil((12 * big) / total) + 1);
+
+      expect(bigInOpening, `BIG at ${big} of ${total}`).toBeLessThanOrEqual(ceiling);
+      // Pinned exactly, so a future change that merely stays under the ceiling
+      // while drifting back towards the old behaviour still shows up here.
+      expect(bigInOpening, `BIG at ${big} of ${total}`).toBe(expected);
+
+      // The property the previous interleave was written to get, which this
+      // must not lose: no two consecutive rows share an employer.
+      const companies = ordered.map((s) => s.company);
+      expect(companies.filter((c, i) => i > 0 && c === companies[i - 1])).toEqual([]);
+
+      // And every listing is still present exactly once.
+      expect(ordered).toHaveLength(total);
+      expect(new Set(ordered.map((s) => s.id)).size).toBe(total);
+    }
   });
 
   it("never puts the same employer in two consecutive rows", () => {

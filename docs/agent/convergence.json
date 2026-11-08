@@ -1,5 +1,5 @@
 {
-  "epoch": 2,
+  "epoch": 3,
   "baselineTests": 903,
   "invariants": {
     "1": {
@@ -44,7 +44,7 @@
     },
     "11": {
       "status": "pass",
-      "evidence": "903 tests passing (baseline 898)"
+      "evidence": "903 tests passing (baseline 903)"
     },
     "12": {
       "status": "hand-checked",
@@ -55,7 +55,8 @@
     "E-1 resources claims and French",
     "A-1 finder unblocked",
     "LOOP-1 npm run invariants",
-    "C-1 one notion of reference on /blog"
+    "C-1 one notion of reference on /blog",
+    "B-2 proportional interleave on /stages"
   ],
   "couplings": [
     {
@@ -86,11 +87,12 @@
     }
   ],
   "knownWeaknesses": [
-    "orderStages over-concentrates the deepest employer near the top: 2 where 1.40 is fair (10/86), 3 where 1.80 is fair (15/100), 7 where 4.00 is fair (40/120)",
+    "RESOLVED in epoch 3: orderStages top-bias. Measured after: 1 (was 2) at 10/86, 2 (was 3) at 15/100, 3 (was 4) at 25/100, 4 (was 7) at 40/120.",
     "invariant 2 has no reliable automation: a per-item count and a page aggregate are indistinguishable in rendered text",
     "invariants 1, 2, 6, 7, 9, 10, 12 are hand-checked and should be promoted as automation becomes possible"
   ],
   "ownerDecisions": [
+    "PUSH: the Internship Finder runs Thursdays against origin/main and its fix is unpushed; it will fail a third time otherwise",
     "send the first newsletter",
     "write or retire the February briefs",
     "raise WATCHDOG_EDITORIAL_FAIL_DAYS, or accept a permanently red editorial alarm"

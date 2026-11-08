@@ -230,28 +230,76 @@ function oneEmployerAtATime(items: Stage[]) {
     else byCompany.set(item.company, [item]);
   }
 
-  // Spread each employer evenly across the whole list, rather than dealing one
-  // card per employer per round.
-  //
-  // Round-robin spreads the opening rows well and strands the tail: employers
-  // with a single posting drop out after round one, so once only the biggest is
-  // left its remainder lands consecutively. Capgemini has 10 of the 81 and the
-  // next deepest has 6, so the last four rows were Capgemini four times -- the
-  // clustering this exists to prevent, moved to the bottom rather than removed.
-  // Ordering the queues by depth first does not help, because the arithmetic is
-  // the same.
-  //
-  // Giving each posting a fractional position within its own employer's run and
-  // sorting on that interleaves every employer across the full length at once.
-  // An employer with ten postings lands one every eighth row; one with a single
-  // posting lands in the middle of the list rather than at the front of it.
-  const spread = [...byCompany.entries()].flatMap(([company, list]) =>
-    list.map((stage, index) => ({ stage, company, at: (index + 0.5) / list.length }))
-  );
+  /*
+   * Fill each row with whichever employer is furthest below its share so far.
+   *
+   * Two earlier attempts, and why they failed, because the arithmetic is not
+   * obvious:
+   *
+   * Round-robin -- one role per employer, then the next from each -- spreads
+   * the opening rows well and strands the tail. Employers with a single
+   * posting drop out after round one, so once only the deepest is left its
+   * remainder lands consecutively: the last four rows were one name.
+   *
+   * Giving each posting a fractional position within its own employer's run,
+   * `(index + 0.5) / count`, and sorting on it removed the consecutive runs
+   * but handed the deepest employer the top of the page. An employer with 40
+   * of 120 postings has its first seven at 0.0125 through 0.1625, all of them
+   * below 0.1667 -- the earliest position any three-posting employer can
+   * reach. Measured: seven of the opening twelve rows, where four is its
+   * share, and an employer with one posting could not appear in the first half
+   * of the list at all. Spreading each employer evenly over its OWN run is not
+   * the same as spreading it evenly over the page.
+   *
+   * What a reader is owed is proportionality at every depth: in any first k
+   * rows, an employer with n of N postings should hold about k*n/N of them.
+   * That is a placement, not a sort key -- sorting by target position bunches
+   * every employer that shares one. So the rows are filled one at a time, and
+   * each goes to whoever is furthest below the share they should have had by
+   * then. An employer that has just been placed drops below the others by
+   * construction, which is what keeps two of the same name apart without a
+   * rule saying so.
+   *
+   * Deterministic: queues are built in company order and a tie leaves the
+   * incumbent, so the page does not reshuffle between builds.
+   */
+  const total = items.length;
+  if (!total) return [];
 
-  return spread
-    .sort((a, b) => a.at - b.at || a.company.localeCompare(b.company))
-    .map((entry) => entry.stage);
+  const queues = [...byCompany.entries()]
+    .map(([company, list]) => ({ company, list, size: list.length, taken: 0 }))
+    .sort((a, b) => a.company.localeCompare(b.company));
+
+  const ordered: Stage[] = [];
+  let previous = "";
+
+  for (let slot = 0; slot < total; slot += 1) {
+    const available = queues.filter((queue) => queue.taken < queue.size);
+    // Skip the employer in the row above, unless it is the only one left --
+    // at which point consecutive rows are arithmetic, not a choice.
+    const others = available.filter((queue) => queue.company !== previous);
+    const pool = others.length ? others : available;
+
+    const share = (queue: (typeof queues)[number]) => ((slot + 1) * queue.size) / total - queue.taken;
+
+    let best = pool[0];
+    let bestShare = share(best);
+    for (const queue of pool.slice(1)) {
+      const deficit = share(queue);
+      // Strictly greater, so an exact tie keeps the alphabetically earlier
+      // queue and the order stays stable across builds.
+      if (deficit > bestShare + 1e-9) {
+        best = queue;
+        bestShare = deficit;
+      }
+    }
+
+    ordered.push(best.list[best.taken]);
+    best.taken += 1;
+    previous = best.company;
+  }
+
+  return ordered;
 }
 
 export function getStages(now = Date.now()) {
