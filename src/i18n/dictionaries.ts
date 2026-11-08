@@ -235,7 +235,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       seoTitle: "Outils IA + cybersécurité",
       title: "Outils recommandés pour builders IA + cybersécurité",
       subtitle:
-        "Des outils choisis pour un ROI concret : livrer plus vite, apprendre mieux et convertir l'audience sur l'IA et la cybersécurité."
+        "Des outils choisis pour un ROI concret : livrer plus vite, apprendre mieux, et travailler de façon orientée exécution sur l'IA et la cybersécurité."
     },
     news: {
       title: "Actualités IA + Cybersécurité pour tous",

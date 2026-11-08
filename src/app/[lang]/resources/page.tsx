@@ -8,6 +8,9 @@ import { Newsletter } from "@/components/newsletter";
 import { TrackableAnchor } from "@/components/trackable-anchor";
 import { ToolLogo } from "@/components/ui/tool-logo";
 import { recommendedTools, studentStudyTools } from "@/content/posts";
+
+/** How many study-stack cards the page shows, named so the count can use it. */
+const STUDY_TOOLS_SHOWN = 4;
 import { hasPaidLinks, siteConfig } from "@/config/site";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
@@ -60,7 +63,15 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
   const leadMagnetHref = locale === "fr" ? siteConfig.leadMagnet.frUrl : siteConfig.leadMagnet.enUrl;
   const checkoutUrl = getProductCheckoutUrl();
   const hasCheckoutUrl = canSellProduct();
-  const toolsCount = recommendedTools.length;
+  /*
+   * The page renders two sets -- four study-stack cards and three recommended
+   * tools -- and this line counted only the second, under the words "active
+   * tools in the shortlist". A reader who could see seven tools was told there
+   * were three, and no label said which three. Counted off the rendered sets so
+   * the two cannot drift again.
+   */
+  const studyTools = studentStudyTools.slice(0, STUDY_TOOLS_SHOWN);
+  const toolsCount = studyTools.length + recommendedTools.length;
   /*
    * The three "recommended stacks" are gone, and nothing replaces them.
    *
@@ -170,7 +181,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             <ul className="mt-3 space-y-2 text-sm text-[color:var(--text)]">
               <li>
                 {locale === "fr"
-                  ? "1. Priorité aux outils qui réduisent temps de delivery."
+                  ? "1. Priorité aux outils qui réduisent le temps de mise en ligne."
                   : "1. Prioritize tools that reduce shipping time."}
               </li>
               <li>
@@ -240,7 +251,7 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             </div>
 
             <div className="grid gap-3 md:grid-cols-2">
-              {studentStudyTools.slice(0, 4).map((tool) => (
+              {studyTools.map((tool) => (
                 <article key={tool.name} className="blog-chip rounded-xl p-4">
                   <div className="flex items-start gap-3">
                     <ToolLogo
@@ -265,7 +276,11 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
 
           <section className="surface rounded-2xl p-6">
             <h2 className="font-display section-title font-semibold text-[color:var(--text-strong)]">
-              {locale === "fr" ? "Plan d'apprentissage 30 jours" : "30-day learning plan"}
+              {/* Three steps, and each one says "each week" -- so this is a
+                  weekly loop you repeat, not a thirty-day course with three
+                  phases. The heading now names what the list underneath it
+                  actually is. */}
+              {locale === "fr" ? "Boucle d'apprentissage hebdomadaire" : "Weekly learning loop"}
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
@@ -388,8 +403,8 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
             </h2>
             <p className="mt-2 text-sm text-[color:var(--text)]">
               {locale === "fr"
-                ? "Utilisez le template du lab outils pour choisir la meilleure option selon votre budget étudiant."
-                : "Use the tools-lab template to choose the best option by budget constraints and deployment speed."}
+                ? "Comparez les options par budget et par temps de mise en ligne avant de choisir."
+                : "Compare the options by budget and deployment time before choosing."}
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <Link href={`/${locale}/news`} className="btn-secondary">
@@ -446,7 +461,6 @@ export default async function LocalizedResourcesPage(props: { params: Promise<{ 
               </Link>
             </div>
           </div>
-          <Newsletter compact locale={locale} source="resources_aside" />
         </aside>
       </div>
     </div>

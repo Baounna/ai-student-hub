@@ -256,7 +256,7 @@ const fallbackRecommendedTools: RecommendedTool[] = [
     },
     benefit: {
       en: "Best for focused upskilling across AI and core cybersecurity.",
-      fr: "Idéal pour monter en compétence sur l'IA et l'informatique fondamentale."
+      fr: "Idéal pour monter en compétence sur l'IA et les fondamentaux de la cybersécurité."
     },
     affiliateHref:
       "https://www.coursera.org/?utm_source=ai_student_hub&utm_medium=resources&utm_campaign=courses"

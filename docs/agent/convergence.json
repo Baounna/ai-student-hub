@@ -1,0 +1,43 @@
+{
+  "epoch": 0,
+  "baselineTests": 892,
+  "testsNow": 898,
+  "invariants": {
+    "1": "pass — /news and /blog now carry the staleness notice; /resources no longer points at a template it does not have",
+    "2": "fail — /blog prints '72 cited sources' while its per-card chips sum to 106; two notions of 'reference' on one screen (batch C)",
+    "3": "pass — no reader-visible count is a literal; dead readTime literals exist but render nothing (batch C)",
+    "4": "pass — home, stages, blog, resources verified structurally identical across locales",
+    "5": "pass — fixed this epoch; /resources rendered 3 signup blocks, now 1 + footer. Every page verified <= 1 of its own",
+    "6": "fail — OWNER: the copy promises one email a week and none has ever been sent",
+    "7": "pass — disclosure agrees with hasPaidLinks (no affiliate programme, no commission); guide CTAs route through GUIDE_EXISTS",
+    "8": "pass on pages checked — home unified this session; blog, stages, resources each use one format",
+    "9": "pass — 'temps de delivery' and 'convertir l'audience' fixed; typography test guards the rest",
+    "10": "pass — every check added this session has a test proving it can go red",
+    "11": "pass — 898 tests, lint, typecheck, build clean",
+    "12": "fail — npm run health reports 2 engineering items, not only owner decisions: Internship Finder's last run failed, and 1 news source has been silent 21+ days"
+  },
+  "batchesDone": ["G", "B", "C-partial", "E"],
+  "couplings": [
+    {
+      "found": 0,
+      "between": ["E", "F"],
+      "note": "the /resources subtitle is resources copy but lives in src/i18n/dictionaries.ts, which is batch F. Fixing E's French required touching F."
+    },
+    {
+      "found": 0,
+      "between": ["E", "C"],
+      "note": "the Coursera benefit line is rendered by /resources but lives in src/content/posts.ts, which is batch C. Same split."
+    },
+    {
+      "found": 0,
+      "between": ["B", "C"],
+      "note": "the live-news block was moved above the briefs BECAUSE the briefs are stale. If C refreshes the briefs, B's ordering loses its justification and must be re-decided."
+    }
+  ],
+  "ownerDecisions": [
+    "send the first newsletter (invariant 6)",
+    "write or retire the February briefs (watchdog editorial freshness is red at 262 days)",
+    "whether WATCHDOG_EDITORIAL_FAIL_DAYS should be raised so the alarm is not permanently red"
+  ],
+  "nextBatch": "A or C — A resolves invariant 12's Internship Finder failure; C resolves invariant 2"
+}
