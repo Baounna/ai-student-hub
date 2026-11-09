@@ -1,6 +1,6 @@
 # AI and Cybersecurity News Blog Design Agent Report
 
-Generated: 2026-11-02T18:48:53.713Z
+Generated: 2026-11-09T19:06:15.006Z
 Target score: 88/100
 Score: 82/100 (139/170 weighted points)
 
