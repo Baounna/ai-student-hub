@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T18:48:53.819Z",
+  "generatedAt": "2026-11-09T17:46:34.998Z",
   "repository": "Baounna/ai-student-hub",
   "mode": "disabled",
   "maxPerRun": 3,
@@ -8,19 +8,19 @@
       "sourceId": "operator",
       "label": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "enabled": false,
-      "queueGeneratedAt": "",
-      "totalActions": 0,
-      "selectedCount": 0
+      "enabled": true,
+      "queueGeneratedAt": "2026-11-09T17:46:34.822Z",
+      "totalActions": 6,
+      "selectedCount": 3
     },
     {
       "sourceId": "design",
       "label": "Design",
       "queueFile": "docs/agent/design-actions.json",
-      "enabled": true,
-      "queueGeneratedAt": "2026-11-02T18:48:53.713Z",
-      "totalActions": 5,
-      "selectedCount": 3
+      "enabled": false,
+      "queueGeneratedAt": "",
+      "totalActions": 0,
+      "selectedCount": 0
     }
   ],
   "summary": {
@@ -28,7 +28,7 @@
     "existing": 0,
     "dryRun": 3,
     "errors": 0,
-    "tracked": 15
+    "tracked": 17
   },
   "items": [
     {
@@ -151,6 +151,23 @@
       "inQueue": false
     },
     {
+      "hash": "2f9a6d0d6d9af43c",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-11-09T17:46:34.822Z",
+      "priority": "P1",
+      "action": "Increase CS editorial share to at least 35%.",
+      "why": "Balanced AI + CS coverage improves relevance for engineering students and diversifies SEO intent.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P1] Increase CS editorial share to at least 35%.",
+      "status": "disabled",
+      "createdAt": "2026-11-09T17:46:34.998Z",
+      "lastSeenAt": "2026-11-09T17:46:34.998Z",
+      "inQueue": true
+    },
+    {
       "hash": "3ddc93b51f373fa2",
       "sourceId": "operator",
       "sourceLabel": "Operator",
@@ -168,6 +185,23 @@
       "inQueue": false
     },
     {
+      "hash": "95867a02c29964c4",
+      "sourceId": "operator",
+      "sourceLabel": "Operator",
+      "queueFile": "docs/agent/next-actions.json",
+      "queueGeneratedAt": "2026-11-09T17:46:34.822Z",
+      "priority": "P1",
+      "action": "Restore missing required categories: AI Fundamentals, ML Engineering, LLM Systems, CS Fundamentals, Systems & Backend, Cloud/DevOps, Security & Performance, Career/Interviews.",
+      "why": "Category coverage keeps the publication architecture complete for AI + CS discovery.",
+      "file": "",
+      "checkId": "",
+      "title": "[Operator P1] Restore missing required categories: AI Fundamentals, ML Engineering, LLM Systems,…",
+      "status": "disabled",
+      "createdAt": "2026-11-09T17:46:34.998Z",
+      "lastSeenAt": "2026-11-09T17:46:34.998Z",
+      "inQueue": true
+    },
+    {
       "hash": "284d61272ba9505d",
       "sourceId": "design",
       "sourceLabel": "Design",
@@ -182,7 +216,7 @@
       "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
       "lastSeenAt": "2026-11-02T18:48:53.819Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "29e4e1db629195e3",
@@ -199,14 +233,14 @@
       "status": "disabled",
       "createdAt": "2026-09-12T13:25:18.069Z",
       "lastSeenAt": "2026-11-02T18:48:53.819Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "47e47e1d8303a4d2",
       "sourceId": "operator",
       "sourceLabel": "Operator",
       "queueFile": "docs/agent/next-actions.json",
-      "queueGeneratedAt": "2026-11-02T17:24:23.788Z",
+      "queueGeneratedAt": "2026-11-09T17:46:34.822Z",
       "priority": "P2",
       "action": "Add lead magnet CTA on compare.",
       "why": "Increases opt-ins per 100 visitors.",
@@ -215,8 +249,8 @@
       "title": "[Operator P2] Add lead magnet CTA on compare.",
       "status": "disabled",
       "createdAt": "2026-10-12T16:57:18.321Z",
-      "lastSeenAt": "2026-11-02T17:24:23.922Z",
-      "inQueue": false
+      "lastSeenAt": "2026-11-09T17:46:34.998Z",
+      "inQueue": true
     },
     {
       "hash": "929a6c20e1dd7acf",
@@ -250,7 +284,7 @@
       "status": "disabled",
       "createdAt": "2026-09-28T16:59:56.494Z",
       "lastSeenAt": "2026-11-02T18:48:53.819Z",
-      "inQueue": true
+      "inQueue": false
     },
     {
       "hash": "8a7997bd695b6700",

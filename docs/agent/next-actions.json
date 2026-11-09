@@ -1,35 +1,44 @@
 {
-  "generatedAt": "2026-11-02T17:24:23.788Z",
+  "generatedAt": "2026-11-09T17:46:34.822Z",
   "target": {
     "monthlyRevenueUsd": 10
   },
   "summary": {
-    "postsCount": 24,
+    "postsCount": 0,
     "comparisonsCount": 3,
     "newsCount": 10,
     "autoNewsCount": 240
   },
   "editorial": {
-    "postsCount": 24,
+    "postsCount": 0,
     "newsCount": 10,
     "categories": {
-      "total": 8,
-      "missingRequired": []
+      "total": 0,
+      "missingRequired": [
+        "AI Fundamentals",
+        "ML Engineering",
+        "LLM Systems",
+        "CS Fundamentals",
+        "Systems & Backend",
+        "Cloud/DevOps",
+        "Security & Performance",
+        "Career/Interviews"
+      ]
     },
     "tracks": {
       "counts": {
-        "ai": 6,
-        "cs": 16,
-        "career": 2
+        "ai": 0,
+        "cs": 0,
+        "career": 0
       },
-      "total": 24,
-      "aiShare": 0.25,
-      "csShare": 0.6666666666666666,
+      "total": 1,
+      "aiShare": 0,
+      "csShare": 0,
       "minCsShare": 0.35,
       "maxAiShare": 0.6
     },
     "citations": {
-      "postsWithReferences": 24,
+      "postsWithReferences": 0,
       "uncitedPostsEstimate": 0,
       "sourcedNewsCount": 10,
       "uncitedNewsEstimate": 0,
@@ -79,79 +88,89 @@
   },
   "opportunities": [
     {
-      "slug": "20261102-prepare-web-content-for-amazon-bedrock-knowledge-bases-with-craw-cb7e6c40",
-      "source": "AWS ML Blog",
+      "slug": "20261109-nemotron-personas-finance-japan-a-synthetic-dataset-capturing-ja-057e22ab",
+      "source": "Hugging Face Blog",
+      "topic": "AI Systems",
+      "publishedAt": "2026-11-09T15:05:57.000Z",
+      "href": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+      "sourceTitle": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan&apos;s Demographics and Financial Context",
+      "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan&apos;s Demographics and Financial Context: What It Means for AI/CS Students",
+      "keyword": "how to build hugging face blog",
+      "monetizationAngle": "how to build and ship this update as a student project",
+      "cta": "Resources stack + roadmap"
+    },
+    {
+      "slug": "20261109-launching-the-vite-ecosystem-fund-d079a8b6",
+      "source": "Cloudflare Blog",
       "topic": "Computer Systems",
-      "publishedAt": "2026-11-02T17:11:21.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/",
-      "sourceTitle": "Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI",
-      "title": "Prepare web content for Amazon Bedrock Knowledge Bases with Crawl4AI: What It Means for AI/CS Students",
-      "keyword": "how to build aws ml blog",
+      "publishedAt": "2026-11-09T13:00:00.000Z",
+      "href": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
+      "sourceTitle": "Launching the Vite Ecosystem Fund",
+      "title": "Launching the Vite Ecosystem Fund: What It Means for AI/CS Students",
+      "keyword": "how to build cloudflare blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20261102-build-efficient-agents-with-knowledge-distillation-on-amazon-sag-de143405",
-      "source": "AWS ML Blog",
+      "slug": "20261109-your-experts-have-partners-thereaposs-hope-for-keeping-them-toge-7b1451fc",
+      "source": "Hugging Face Blog",
       "topic": "AI Systems",
-      "publishedAt": "2026-11-02T17:01:31.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/build-efficient-agents-with-knowledge-distillation-on-amazon-sagemaker-ai/",
-      "sourceTitle": "Build efficient agents with knowledge distillation on Amazon SageMaker AI",
-      "title": "Build efficient agents with knowledge distillation on Amazon SageMaker AI: What It Means for AI/CS Students",
-      "keyword": "how to build aws ml blog",
+      "publishedAt": "2026-11-09T12:34:29.000Z",
+      "href": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+      "sourceTitle": "Your Experts Have Partners. There&apos;s HOPE for Keeping Them Together",
+      "title": "Your Experts Have Partners. There&apos;s HOPE for Keeping Them Together: What It Means for AI/CS Students",
+      "keyword": "how to build hugging face blog",
       "monetizationAngle": "how to build and ship this update as a student project",
       "cta": "Resources stack + roadmap"
     },
     {
-      "slug": "20261102-agentic-engineering-intelligence-with-amazon-nova-multimodal-emb-624d1683",
-      "source": "AWS ML Blog",
-      "topic": "AI Systems",
-      "publishedAt": "2026-11-02T17:01:16.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/agentic-engineering-intelligence-with-amazon-nova-multimodal-embeddings-and-amazon-bedrock-agentcore/",
-      "sourceTitle": "Agentic engineering intelligence with Amazon Nova Multimodal Embeddings and Amazon Bedrock AgentCore",
-      "title": "Agentic engineering intelligence with Amazon Nova Multimodal Embeddings and Amazon Bedrock AgentCore: What It Means for AI/CS Students",
-      "keyword": "how to build aws ml blog",
-      "monetizationAngle": "how to build and ship this update as a student project",
-      "cta": "Resources stack + roadmap"
-    },
-    {
-      "slug": "20261102-how-circle-k-accelerated-devops-incident-triage-to-under-15-minu-5818becf",
-      "source": "AWS ML Blog",
-      "topic": "Security & Standards",
-      "publishedAt": "2026-11-02T17:00:58.000Z",
-      "href": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
-      "sourceTitle": "How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock",
-      "title": "How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock: What It Means for AI/CS Students",
-      "keyword": "api security for student projects aws ml blog",
-      "monetizationAngle": "security checklist and reliability upgrade path for student apps",
-      "cta": "Security guide + resources"
-    },
-    {
-      "slug": "20261102-introducing-the-grid-protectors-program-19244c7a",
-      "source": "OpenAI News",
-      "topic": "AI Systems",
-      "publishedAt": "2026-11-02T15:00:00.000Z",
-      "href": "https://openai.com/index/grid-protectors-program",
-      "sourceTitle": "Introducing the Grid Protectors Program",
-      "title": "Introducing the Grid Protectors Program: What It Means for AI/CS Students",
-      "keyword": "how to build openai news",
-      "monetizationAngle": "how to build and ship this update as a student project",
-      "cta": "Resources stack + roadmap"
-    },
-    {
-      "slug": "20261102-where-should-your-code-live-in-a-docker-sandbox-a6ff3130",
-      "source": "Docker Blog",
+      "slug": "20261109-dasha-110-patroni-auto-discovery-wait-analysis-and-replication-s-b73e2391",
+      "source": "PostgreSQL News",
       "topic": "Computer Science",
-      "publishedAt": "2026-11-02T14:00:00.000Z",
-      "href": "https://www.docker.com/blog/docker-sandbox-code-checkout-workflows/",
-      "sourceTitle": "Where should your code live in a Docker Sandbox?",
-      "title": "Where should your code live in a Docker Sandbox?: What It Means for AI/CS Students",
-      "keyword": "computer science workflow for students docker blog",
+      "publishedAt": "2026-11-09T00:00:00.000Z",
+      "href": "https://www.postgresql.org/about/news/dasha-110-patroni-auto-discovery-wait-analysis-and-replication-slot-forecasts-for-postgresql-3438/",
+      "sourceTitle": "Dasha 1.10: Patroni auto-discovery, wait analysis and replication slot forecasts for PostgreSQL",
+      "title": "Dasha 1.10: Patroni auto-discovery, wait analysis and replication slot forecasts for PostgreSQL: What It Means for AI/CS Students",
+      "keyword": "computer science workflow for students postgresql news",
       "monetizationAngle": "CS implementation and tooling decision for student budgets",
       "cta": "Resources + compare pages"
+    },
+    {
+      "slug": "20261108-demystifying-evals-for-ai-agents-cb9bb6ac",
+      "source": "Anthropic Engineering",
+      "topic": "AI Systems",
+      "publishedAt": "2026-11-08T13:19:27.135Z",
+      "href": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents",
+      "sourceTitle": "Demystifying evals for AI agents",
+      "title": "Demystifying evals for AI agents: What It Means for AI/CS Students",
+      "keyword": "how to build anthropic engineering",
+      "monetizationAngle": "how to build and ship this update as a student project",
+      "cta": "Resources stack + roadmap"
+    },
+    {
+      "slug": "20261108-quantifying-infrastructure-noise-in-agentic-coding-evals-83178387",
+      "source": "Anthropic Engineering",
+      "topic": "AI Systems",
+      "publishedAt": "2026-11-08T13:19:27.135Z",
+      "href": "https://www.anthropic.com/research/infrastructure-noise",
+      "sourceTitle": "Quantifying infrastructure noise in agentic coding evals",
+      "title": "Quantifying infrastructure noise in agentic coding evals: What It Means for AI/CS Students",
+      "keyword": "how to build anthropic engineering",
+      "monetizationAngle": "how to build and ship this update as a student project",
+      "cta": "Resources stack + roadmap"
     }
   ],
   "actions": [
+    {
+      "priority": "P1",
+      "action": "Increase CS editorial share to at least 35%.",
+      "why": "Balanced AI + CS coverage improves relevance for engineering students and diversifies SEO intent."
+    },
+    {
+      "priority": "P1",
+      "action": "Restore missing required categories: AI Fundamentals, ML Engineering, LLM Systems, CS Fundamentals, Systems & Backend, Cloud/DevOps, Security & Performance, Career/Interviews.",
+      "why": "Category coverage keeps the publication architecture complete for AI + CS discovery."
+    },
     {
       "priority": "P3",
       "action": "Not checked from CI: email provider, lead magnet URLs, checkout URL, affiliate rows. These live in the Vercel environment; check them there or run this agent with those variables set.",
@@ -177,8 +196,8 @@
     "perRun": 2,
     "generatedCount": 2,
     "generatedFiles": [
-      "docs/agent/drafts/20261102--20261102-prepare-web-content-for-amazon-bedrock-knowledge-bases-with-craw-cb7e6c40.md",
-      "docs/agent/drafts/20261102--20261102-build-efficient-agents-with-knowledge-distillation-on-amazon-sag-de143405.md"
+      "docs/agent/drafts/20261109--20261109-nemotron-personas-finance-japan-a-synthetic-dataset-capturing-ja-057e22ab.md",
+      "docs/agent/drafts/20261109--20261109-launching-the-vite-ecosystem-fund-d079a8b6.md"
     ]
   }
 }
