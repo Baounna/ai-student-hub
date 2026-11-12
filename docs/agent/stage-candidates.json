@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-11-08",
+  "generatedAt": "2026-11-12",
   "boards": [
     {
       "board": "algolia",
-      "scanned": 28,
+      "scanned": 29,
       "found": 0
     },
     {
       "board": "anthropic",
-      "scanned": 675,
+      "scanned": 672,
       "found": 0
     },
     {
       "board": "celonis",
-      "scanned": 233,
-      "found": 3
+      "scanned": 262,
+      "found": 4
     },
     {
       "board": "cloudflare",
-      "scanned": 464,
+      "scanned": 483,
       "found": 0
     },
     {
       "board": "databricks",
-      "scanned": 922,
-      "found": 1
+      "scanned": 911,
+      "found": 0
     },
     {
       "board": "datadog",
-      "scanned": 401,
+      "scanned": 386,
       "found": 0
     },
     {
@@ -43,72 +43,72 @@
     },
     {
       "board": "figma",
-      "scanned": 145,
+      "scanned": 141,
       "found": 3
     },
     {
       "board": "figureai",
-      "scanned": 103,
+      "scanned": 101,
       "found": 0
     },
     {
       "board": "jfrog",
-      "scanned": 73,
+      "scanned": 76,
       "found": 0
     },
     {
       "board": "robinhood",
-      "scanned": 150,
+      "scanned": 155,
       "found": 0
     },
     {
       "board": "scaleai",
-      "scanned": 168,
+      "scanned": 169,
       "found": 1
     },
     {
       "board": "stabilityai",
-      "scanned": 1,
+      "scanned": 2,
       "found": 0
     },
     {
       "board": "togetherai",
-      "scanned": 78,
+      "scanned": 80,
       "found": 0
     },
     {
       "board": "alan",
-      "scanned": 133,
+      "scanned": 138,
       "found": 1
     },
     {
       "board": "backmarket",
-      "scanned": 34,
+      "scanned": 33,
       "found": 1
     },
     {
       "board": "cerebras",
-      "scanned": 121,
+      "scanned": 125,
       "found": 0
     },
     {
       "board": "cohere",
-      "scanned": 124,
+      "scanned": 122,
       "found": 1
     },
     {
       "board": "deepl",
-      "scanned": 8,
+      "scanned": 7,
       "found": 0
     },
     {
       "board": "dust",
-      "scanned": 31,
+      "scanned": 32,
       "found": 0
     },
     {
       "board": "elevenlabs",
-      "scanned": 137,
+      "scanned": 130,
       "found": 0
     },
     {
@@ -118,32 +118,32 @@
     },
     {
       "board": "harvey",
-      "scanned": 373,
+      "scanned": 381,
       "found": 0
     },
     {
       "board": "hopper",
-      "scanned": 21,
+      "scanned": 23,
       "found": 0
     },
     {
       "board": "ledger",
-      "scanned": 14,
+      "scanned": 12,
       "found": 0
     },
     {
       "board": "mistral.ai",
-      "scanned": 235,
+      "scanned": 240,
       "found": 3
     },
     {
       "board": "modal",
-      "scanned": 44,
+      "scanned": 43,
       "found": 1
     },
     {
       "board": "openai",
-      "scanned": 818,
+      "scanned": 824,
       "found": 0
     },
     {
@@ -153,12 +153,12 @@
     },
     {
       "board": "perplexity",
-      "scanned": 137,
+      "scanned": 136,
       "found": 3
     },
     {
       "board": "photoroom",
-      "scanned": 8,
+      "scanned": 7,
       "found": 0
     },
     {
@@ -168,17 +168,17 @@
     },
     {
       "board": "qonto",
-      "scanned": 53,
+      "scanned": 61,
       "found": 0
     },
     {
       "board": "sierra",
-      "scanned": 217,
+      "scanned": 200,
       "found": 0
     },
     {
       "board": "snyk",
-      "scanned": 39,
+      "scanned": 38,
       "found": 0
     },
     {
@@ -194,7 +194,7 @@
     {
       "board": "BoschGroup",
       "scanned": 100,
-      "found": 0
+      "found": 3
     },
     {
       "board": "Wavestone1",
@@ -209,7 +209,7 @@
     {
       "board": "nvidia",
       "scanned": 60,
-      "found": 3
+      "found": 2
     },
     {
       "board": "nxp",
@@ -219,22 +219,22 @@
     {
       "board": "philips",
       "scanned": 60,
-      "found": 1
+      "found": 0
     }
   ],
-  "degradedSources": [
-    {
-      "board": "doctolib",
-      "was": 153,
-      "reason": "unreachable — HTTP 404"
-    },
-    {
-      "board": "nxp",
-      "was": 60,
-      "reason": "answered with an empty board"
-    }
-  ],
+  "degradedSources": [],
   "candidates": [
+    {
+      "company": "Celonis",
+      "board": "celonis",
+      "role": "Summernaut Program - AI & Management Consulting (Value Engineering) Summer Intern",
+      "location": "Raleigh, US, North Carolina",
+      "city": "Raleigh, US",
+      "country": "US",
+      "href": "https://job-boards.greenhouse.io/celonis/jobs/8198760003?gh_jid=8198760003",
+      "source": "greenhouse",
+      "addedToBoard": true
+    },
     {
       "company": "Alan",
       "board": "alan",
@@ -248,7 +248,7 @@
     {
       "company": "Mistral AI",
       "board": "mistral.ai",
-      "role": "AI Scientist Intern - (Internship, Masters or Phd)",
+      "role": "AI Scientist - (Internship, Masters or Phd)",
       "location": "Paris",
       "city": "Paris",
       "country": "",
@@ -266,26 +266,36 @@
       "source": "ashby"
     },
     {
-      "company": "Wavestone",
-      "board": "Wavestone1",
-      "role": "Consultant.e AI & Technology Transformation - Stage de fin d'études (H/F)",
-      "location": "Puteaux, fr",
-      "city": "Puteaux",
-      "country": "FR",
-      "href": "https://jobs.smartrecruiters.com/Wavestone1/744000159679228",
+      "company": "Robert Bosch",
+      "board": "BoschGroup",
+      "role": "Praktikum als GenAI-Wissensassistent*in für den Bereich Engineering (w/m/div.)",
+      "location": "Wernau (Neckar), de",
+      "city": "Wernau (Neckar)",
+      "country": "DE",
+      "href": "https://jobs.smartrecruiters.com/BoschGroup/744000161272219",
       "source": "smartrecruiters",
       "addedToBoard": true
     },
     {
-      "company": "Wavestone",
-      "board": "Wavestone1",
-      "role": "AI Strategy & Business Transformation - Stage de fin d'études (H/F)",
-      "location": "Puteaux, fr",
-      "city": "Puteaux",
-      "country": "FR",
-      "href": "https://jobs.smartrecruiters.com/Wavestone1/744000159667949",
+      "company": "Robert Bosch",
+      "board": "BoschGroup",
+      "role": "Internship in GenAI Knowledge Assistant for Engineering",
+      "location": "Wernau (Neckar), de",
+      "city": "Wernau (Neckar)",
+      "country": "DE",
+      "href": "https://jobs.smartrecruiters.com/BoschGroup/744000161271789",
       "source": "smartrecruiters",
       "addedToBoard": true
+    },
+    {
+      "company": "Robert Bosch",
+      "board": "BoschGroup",
+      "role": "Internship - Digitalization & AI for Wiper Blade Testing",
+      "location": "Tienen, be",
+      "city": "Tienen",
+      "country": "BE",
+      "href": "https://jobs.smartrecruiters.com/BoschGroup/744000161264139",
+      "source": "smartrecruiters"
     },
     {
       "company": "Wavestone",
@@ -296,16 +306,6 @@
       "country": "FR",
       "href": "https://jobs.smartrecruiters.com/Wavestone1/744000156728215",
       "source": "smartrecruiters"
-    },
-    {
-      "company": "NVIDIA",
-      "board": "nvidia",
-      "role": "Custom SOC Intern - 2027",
-      "location": "China, Shanghai",
-      "city": "Shanghai",
-      "country": "CN",
-      "href": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Custom-SOC-Intern---2027_JR2024692",
-      "source": "workday"
     }
   ]
 }
