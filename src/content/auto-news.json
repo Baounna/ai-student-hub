@@ -1,23 +1,61 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T23:36:17.598Z",
+  "updatedAt": "2026-11-13T14:31:04.517Z",
   "items": [
     {
-      "slug": "20261112-build-once-run-on-any-agent-a-practical-guide-to-agent-skills-657af331",
+      "slug": "20261113-llamacpp-v100-a-stronger-foundation-for-the-local-ai-ecosystem-40e78db6",
       "topic": "AI Systems",
-      "source": "GitHub Blog",
-      "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
-      "publishedAt": "2026-11-12T22:54:52.000Z",
-      "discoveredAt": "2026-11-12T23:36:17.598Z",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "publishedAt": "2026-11-13T14:05:22.000Z",
+      "discoveredAt": "2026-11-13T14:31:04.517Z",
       "locales": {
         "en": {
-          "title": "Build once, run on any agent: A practical guide to agent skills",
-          "summary": "Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain specific to the host that runs them. The post Build once, run on any agent: A practical gu…"
+          "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+          "summary": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem"
         },
         "fr": {
-          "title": "Build once, run on any agent: A practical guide to agent skills",
-          "summary": "Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain specific to the host that runs them. The post Build once, run on any agent: A practical gu…"
+          "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+          "summary": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem"
+        }
+      }
+    },
+    {
+      "slug": "20261113-introducing-spend-management-spending-limits-and-alerts-for-clou-1c51c033",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/spend-management/",
+      "publishedAt": "2026-11-13T14:00:00.000Z",
+      "discoveredAt": "2026-11-13T14:31:04.517Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Spend Management: Spending limits and alerts for Cloudflare",
+          "summary": "Spend Management adds opt-in spending caps for Cloudflare Workers and Durable Objects, and more products soon. Here is how we built the metering pipeline that turns usage into runtime decisions."
+        },
+        "fr": {
+          "title": "Introducing Spend Management: Spending limits and alerts for Cloudflare",
+          "summary": "Spend Management adds opt-in spending caps for Cloudflare Workers and Durable Objects, and more products soon. Here is how we built the metering pipeline that turns usage into runtime decisions."
+        }
+      }
+    },
+    {
+      "slug": "20261113-github-availability-report-october-2026-126f7948",
+      "topic": "Computer Science",
+      "source": "GitHub Blog",
+      "sourceFeed": "https://github.blog/feed/",
+      "href": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
+      "publishedAt": "2026-11-13T00:20:16.000Z",
+      "discoveredAt": "2026-11-13T14:31:04.517Z",
+      "locales": {
+        "en": {
+          "title": "GitHub availability report: October 2026",
+          "summary": "In October, we experienced eight incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: October 2026 appeared first on The GitHub Blog ."
+        },
+        "fr": {
+          "title": "GitHub availability report: October 2026",
+          "summary": "In October, we experienced eight incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: October 2026 appeared first on The GitHub Blog ."
         }
       }
     },
@@ -56,25 +94,6 @@
         "fr": {
           "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
           "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact."
-        }
-      }
-    },
-    {
-      "slug": "20261112-llmon-an-llm-native-markup-language-now-in-granite-41-3b-and-8b-a88bddb1",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-      "publishedAt": "2026-11-12T19:07:35.000Z",
-      "discoveredAt": "2026-11-12T23:36:17.598Z",
-      "locales": {
-        "en": {
-          "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
-          "summary": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B"
-        },
-        "fr": {
-          "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
-          "summary": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B"
         }
       }
     },
@@ -170,25 +189,6 @@
         "fr": {
           "title": "PostgreSQL 18.7, 17.12, 16.16, 15.20, 14.25, and 19 RC 2 Released!",
           "summary": "The PostgreSQL Global Development Group has released an update to all supported versions of PostgreSQL, including 18.7, 17.12, 16.16, 15.20, and 14.25, as well as the second release candidate of PostgreSQL 19. This release fixes…"
-        }
-      }
-    },
-    {
-      "slug": "20261111-choosing-quepaxa-an-unusual-consensus-algorithm-d8029d8e",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/choosing-quepaxa/",
-      "publishedAt": "2026-11-11T14:24:46.000Z",
-      "discoveredAt": "2026-11-12T00:39:32.031Z",
-      "locales": {
-        "en": {
-          "title": "Choosing QuePaxa, an unusual consensus algorithm",
-          "summary": "Cloudflare is building an experimental consensus service using a never-before-deployed consensus algorithm, QuePaxa. In this post we explain how QuePaxa works and why we chose it."
-        },
-        "fr": {
-          "title": "Choosing QuePaxa, an unusual consensus algorithm",
-          "summary": "Cloudflare is building an experimental consensus service using a never-before-deployed consensus algorithm, QuePaxa. In this post we explain how QuePaxa works and why we chose it."
         }
       }
     },
@@ -364,21 +364,59 @@
       }
     },
     {
-      "slug": "20261110-git-security-vulnerabilities-announced-7bd6d578",
-      "topic": "Security & Standards",
-      "source": "GitHub Blog",
-      "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
-      "publishedAt": "2026-11-10T18:00:00.000Z",
-      "discoveredAt": "2026-11-10T23:17:04.643Z",
+      "slug": "20261112-llmon-an-llm-native-markup-language-now-in-granite-41-3b-and-8b-a88bddb1",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "publishedAt": "2026-11-12T19:07:35.000Z",
+      "discoveredAt": "2026-11-12T23:36:17.598Z",
       "locales": {
         "en": {
-          "title": "Git security vulnerabilities announced",
-          "summary": "Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and imports. Here is what users need to know. The post Git security vulnerabilities announce…"
+          "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+          "summary": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B"
         },
         "fr": {
-          "title": "Git security vulnerabilities announced",
-          "summary": "Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and imports. Here is what users need to know. The post Git security vulnerabilities announce…"
+          "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+          "summary": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B"
+        }
+      }
+    },
+    {
+      "slug": "20261111-choosing-quepaxa-an-unusual-consensus-algorithm-d8029d8e",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/choosing-quepaxa/",
+      "publishedAt": "2026-11-11T14:24:46.000Z",
+      "discoveredAt": "2026-11-12T00:39:32.031Z",
+      "locales": {
+        "en": {
+          "title": "Choosing QuePaxa, an unusual consensus algorithm",
+          "summary": "Cloudflare is building an experimental consensus service using a never-before-deployed consensus algorithm, QuePaxa. In this post we explain how QuePaxa works and why we chose it."
+        },
+        "fr": {
+          "title": "Choosing QuePaxa, an unusual consensus algorithm",
+          "summary": "Cloudflare is building an experimental consensus service using a never-before-deployed consensus algorithm, QuePaxa. In this post we explain how QuePaxa works and why we chose it."
+        }
+      }
+    },
+    {
+      "slug": "20261112-build-once-run-on-any-agent-a-practical-guide-to-agent-skills-657af331",
+      "topic": "AI Systems",
+      "source": "GitHub Blog",
+      "sourceFeed": "https://github.blog/feed/",
+      "href": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
+      "publishedAt": "2026-11-12T22:54:52.000Z",
+      "discoveredAt": "2026-11-12T23:36:17.598Z",
+      "locales": {
+        "en": {
+          "title": "Build once, run on any agent: A practical guide to agent skills",
+          "summary": "Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain specific to the host that runs them. The post Build once, run on any agent: A practical gu…"
+        },
+        "fr": {
+          "title": "Build once, run on any agent: A practical guide to agent skills",
+          "summary": "Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain specific to the host that runs them. The post Build once, run on any agent: A practical gu…"
         }
       }
     },
@@ -417,25 +455,6 @@
         "fr": {
           "title": "Supporting research on AI and children’s safety",
           "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people."
-        }
-      }
-    },
-    {
-      "slug": "20261112-the-definitive-fine-tuning-guide-for-3d-generation-models-56dac742",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/3d-lora-finetuning",
-      "publishedAt": "2026-11-12T00:00:00.000Z",
-      "discoveredAt": "2026-11-12T15:08:58.932Z",
-      "locales": {
-        "en": {
-          "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
-          "summary": "The Definitive Fine-Tuning Guide for 3D Generation Models"
-        },
-        "fr": {
-          "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
-          "summary": "The Definitive Fine-Tuning Guide for 3D Generation Models"
         }
       }
     },
@@ -531,25 +550,6 @@
         "fr": {
           "title": "Dasha 1.10: Patroni auto-discovery, wait analysis and replication slot forecasts for PostgreSQL",
           "summary": "Dasha is an open source performance dashboard for PostgreSQL fleets. It connects to your clusters with a read-only role, shows what the databases are doing right now, and explains what to do about it. Nothing is installed on the…"
-        }
-      }
-    },
-    {
-      "slug": "20261109-launching-the-vite-ecosystem-fund-d079a8b6",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
-      "publishedAt": "2026-11-09T13:00:00.000Z",
-      "discoveredAt": "2026-11-09T16:11:39.779Z",
-      "locales": {
-        "en": {
-          "title": "Launching the Vite Ecosystem Fund",
-          "summary": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not employed by Cloudf…"
-        },
-        "fr": {
-          "title": "Launching the Vite Ecosystem Fund",
-          "summary": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not employed by Cloudf…"
         }
       }
     },
@@ -725,21 +725,59 @@
       }
     },
     {
-      "slug": "20261106-beyond-code-generation-a-developers-guide-to-agentic-engineering-5ab88d15",
+      "slug": "20261112-the-definitive-fine-tuning-guide-for-3d-generation-models-56dac742",
       "topic": "AI Systems",
-      "source": "GitHub Blog",
-      "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
-      "publishedAt": "2026-11-06T22:15:59.000Z",
-      "discoveredAt": "2026-11-06T23:06:21.841Z",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/3d-lora-finetuning",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
+      "discoveredAt": "2026-11-12T15:08:58.932Z",
       "locales": {
         "en": {
-          "title": "Beyond code generation: A developer’s guide to agentic engineering",
-          "summary": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment. The post Beyond code generation…"
+          "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+          "summary": "The Definitive Fine-Tuning Guide for 3D Generation Models"
         },
         "fr": {
-          "title": "Beyond code generation: A developer’s guide to agentic engineering",
-          "summary": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment. The post Beyond code generation…"
+          "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+          "summary": "The Definitive Fine-Tuning Guide for 3D Generation Models"
+        }
+      }
+    },
+    {
+      "slug": "20261109-launching-the-vite-ecosystem-fund-d079a8b6",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
+      "publishedAt": "2026-11-09T13:00:00.000Z",
+      "discoveredAt": "2026-11-09T16:11:39.779Z",
+      "locales": {
+        "en": {
+          "title": "Launching the Vite Ecosystem Fund",
+          "summary": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not employed by Cloudf…"
+        },
+        "fr": {
+          "title": "Launching the Vite Ecosystem Fund",
+          "summary": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not employed by Cloudf…"
+        }
+      }
+    },
+    {
+      "slug": "20261110-git-security-vulnerabilities-announced-7bd6d578",
+      "topic": "Security & Standards",
+      "source": "GitHub Blog",
+      "sourceFeed": "https://github.blog/feed/",
+      "href": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
+      "publishedAt": "2026-11-10T18:00:00.000Z",
+      "discoveredAt": "2026-11-10T23:17:04.643Z",
+      "locales": {
+        "en": {
+          "title": "Git security vulnerabilities announced",
+          "summary": "Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and imports. Here is what users need to know. The post Git security vulnerabilities announce…"
+        },
+        "fr": {
+          "title": "Git security vulnerabilities announced",
+          "summary": "Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and imports. Here is what users need to know. The post Git security vulnerabilities announce…"
         }
       }
     },
@@ -778,25 +816,6 @@
         "fr": {
           "title": "Gilbert + Tobin rethinks the business of law with AI",
           "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin."
-        }
-      }
-    },
-    {
-      "slug": "20261111-botpsy-on-device-personal-assistant-with-a-sub-billion-parameter-b22522d1",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/qvac/botpsy",
-      "publishedAt": "2026-11-11T05:01:16.000Z",
-      "discoveredAt": "2026-11-11T14:15:20.233Z",
-      "locales": {
-        "en": {
-          "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-          "summary": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model"
-        },
-        "fr": {
-          "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-          "summary": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model"
         }
       }
     },
@@ -892,25 +911,6 @@
         "fr": {
           "title": "AgensGraph 2.18 Released: Graph Database on PostgreSQL 18 with Expanded ISO GQL Support",
           "summary": "The AgensGraph Development Team is pleased to announce the release of AgensGraph v2.18.6.1, the latest version in the 2.18 series. AgensGraph is an open-source graph database, built on PostgreSQL 18.6, that runs SQL and graph que…"
-        }
-      }
-    },
-    {
-      "slug": "20261106-the-post-quantum-future-of-web-privacy-5668b3c6",
-      "topic": "Security & Standards",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/vole-mole/",
-      "publishedAt": "2026-11-06T14:00:00.000Z",
-      "discoveredAt": "2026-11-06T14:13:36.251Z",
-      "locales": {
-        "en": {
-          "title": "The post-quantum future of web privacy",
-          "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close…"
-        },
-        "fr": {
-          "title": "The post-quantum future of web privacy",
-          "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close…"
         }
       }
     },
@@ -1086,21 +1086,59 @@
       }
     },
     {
-      "slug": "20261105-inside-githubs-new-git-storage-architecture-e8ad3aaf",
+      "slug": "20261111-botpsy-on-device-personal-assistant-with-a-sub-billion-parameter-b22522d1",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/qvac/botpsy",
+      "publishedAt": "2026-11-11T05:01:16.000Z",
+      "discoveredAt": "2026-11-11T14:15:20.233Z",
+      "locales": {
+        "en": {
+          "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+          "summary": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model"
+        },
+        "fr": {
+          "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+          "summary": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model"
+        }
+      }
+    },
+    {
+      "slug": "20261106-the-post-quantum-future-of-web-privacy-5668b3c6",
+      "topic": "Security & Standards",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/vole-mole/",
+      "publishedAt": "2026-11-06T14:00:00.000Z",
+      "discoveredAt": "2026-11-06T14:13:36.251Z",
+      "locales": {
+        "en": {
+          "title": "The post-quantum future of web privacy",
+          "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close…"
+        },
+        "fr": {
+          "title": "The post-quantum future of web privacy",
+          "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close…"
+        }
+      }
+    },
+    {
+      "slug": "20261106-beyond-code-generation-a-developers-guide-to-agentic-engineering-5ab88d15",
       "topic": "AI Systems",
       "source": "GitHub Blog",
       "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
-      "publishedAt": "2026-11-05T20:23:21.000Z",
-      "discoveredAt": "2026-11-05T23:37:28.861Z",
+      "href": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+      "publishedAt": "2026-11-06T22:15:59.000Z",
+      "discoveredAt": "2026-11-06T23:06:21.841Z",
       "locales": {
         "en": {
-          "title": "Inside GitHub’s new Git storage architecture",
-          "summary": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works. The post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog ."
+          "title": "Beyond code generation: A developer’s guide to agentic engineering",
+          "summary": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment. The post Beyond code generation…"
         },
         "fr": {
-          "title": "Inside GitHub’s new Git storage architecture",
-          "summary": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works. The post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog ."
+          "title": "Beyond code generation: A developer’s guide to agentic engineering",
+          "summary": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment. The post Beyond code generation…"
         }
       }
     },
@@ -1139,25 +1177,6 @@
         "fr": {
           "title": "ChatGPT Plus for veterans and servicemembers",
           "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers."
-        }
-      }
-    },
-    {
-      "slug": "20261111-token-pooling-aware-training-for-multi-vector-embedding-models-d2296a64",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/token-pooling",
-      "publishedAt": "2026-11-11T00:00:00.000Z",
-      "discoveredAt": "2026-11-12T00:39:32.031Z",
-      "locales": {
-        "en": {
-          "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
-          "summary": "Token Pooling-Aware Training for Multi-Vector Embedding Models"
-        },
-        "fr": {
-          "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
-          "summary": "Token Pooling-Aware Training for Multi-Vector Embedding Models"
         }
       }
     },
@@ -1253,25 +1272,6 @@
         "fr": {
           "title": "Brume: FK-safe pseudonymization for PostgreSQL test and debug copies",
           "summary": "Brume 2.1, an open source (Apache 2.0) tool that creates deterministic, foreign-key-safe pseudonymized copies of PostgreSQL databases for testing, debugging and demos, is now available. Why Brume? Development teams often need rea…"
-        }
-      }
-    },
-    {
-      "slug": "20261105-agents-arent-humans-but-they-kinda-are-f64889a7",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/trusted-agent-delegation/",
-      "publishedAt": "2026-11-05T17:03:04.000Z",
-      "discoveredAt": "2026-11-05T23:37:28.861Z",
-      "locales": {
-        "en": {
-          "title": "Agents aren’t humans (but they kinda are)",
-          "summary": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this automated traff…"
-        },
-        "fr": {
-          "title": "Agents aren’t humans (but they kinda are)",
-          "summary": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this automated traff…"
         }
       }
     },
@@ -1447,21 +1447,59 @@
       }
     },
     {
-      "slug": "20261105-accessibility-statements-now-have-a-home-on-github-48501098",
-      "topic": "Computer Science",
-      "source": "GitHub Blog",
-      "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/",
-      "publishedAt": "2026-11-05T16:00:00.000Z",
+      "slug": "20261111-token-pooling-aware-training-for-multi-vector-embedding-models-d2296a64",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/token-pooling",
+      "publishedAt": "2026-11-11T00:00:00.000Z",
+      "discoveredAt": "2026-11-12T00:39:32.031Z",
+      "locales": {
+        "en": {
+          "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+          "summary": "Token Pooling-Aware Training for Multi-Vector Embedding Models"
+        },
+        "fr": {
+          "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+          "summary": "Token Pooling-Aware Training for Multi-Vector Embedding Models"
+        }
+      }
+    },
+    {
+      "slug": "20261105-agents-arent-humans-but-they-kinda-are-f64889a7",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/trusted-agent-delegation/",
+      "publishedAt": "2026-11-05T17:03:04.000Z",
       "discoveredAt": "2026-11-05T23:37:28.861Z",
       "locales": {
         "en": {
-          "title": "Accessibility statements now have a home on GitHub",
-          "summary": "GitHub now highlights ACCESSIBILITY.md files and helps maintainers document accessibility goals, known barriers, supported environments, contributor expectations, and reporting processes. The post Accessibility statements now hav…"
+          "title": "Agents aren’t humans (but they kinda are)",
+          "summary": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this automated traff…"
         },
         "fr": {
-          "title": "Accessibility statements now have a home on GitHub",
-          "summary": "GitHub now highlights ACCESSIBILITY.md files and helps maintainers document accessibility goals, known barriers, supported environments, contributor expectations, and reporting processes. The post Accessibility statements now hav…"
+          "title": "Agents aren’t humans (but they kinda are)",
+          "summary": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this automated traff…"
+        }
+      }
+    },
+    {
+      "slug": "20261105-inside-githubs-new-git-storage-architecture-e8ad3aaf",
+      "topic": "AI Systems",
+      "source": "GitHub Blog",
+      "sourceFeed": "https://github.blog/feed/",
+      "href": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+      "publishedAt": "2026-11-05T20:23:21.000Z",
+      "discoveredAt": "2026-11-05T23:37:28.861Z",
+      "locales": {
+        "en": {
+          "title": "Inside GitHub’s new Git storage architecture",
+          "summary": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works. The post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog ."
+        },
+        "fr": {
+          "title": "Inside GitHub’s new Git storage architecture",
+          "summary": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works. The post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog ."
         }
       }
     },
@@ -1504,40 +1542,21 @@
       }
     },
     {
-      "slug": "20261110-pay-for-hugging-face-hub-with-your-google-cloud-account-724fae92",
+      "slug": "20261110-opening-the-datasets-behind-our-ai-weather-models-51d2fad2",
       "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/hub-gcp-marketplace",
-      "publishedAt": "2026-11-10T00:00:00.000Z",
-      "discoveredAt": "2026-11-10T23:17:04.643Z",
-      "locales": {
-        "en": {
-          "title": "Pay for Hugging Face Hub with your Google Cloud Account",
-          "summary": "Pay for Hugging Face Hub with your Google Cloud Account"
-        },
-        "fr": {
-          "title": "Pay for Hugging Face Hub with your Google Cloud Account",
-          "summary": "Pay for Hugging Face Hub with your Google Cloud Account"
-        }
-      }
-    },
-    {
-      "slug": "20261109-gemini-robotics-25-accelerates-real-world-general-dexterity-a98763b8",
-      "topic": "AI Research",
       "source": "DeepMind Blog",
       "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
-      "publishedAt": "2026-11-09T19:51:47.000Z",
-      "discoveredAt": "2026-11-10T23:17:04.643Z",
+      "href": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "publishedAt": "2026-11-10T11:13:04.000Z",
+      "discoveredAt": "2026-11-13T14:31:04.517Z",
       "locales": {
         "en": {
-          "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
-          "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety"
+          "title": "Opening the datasets behind our AI weather models",
+          "summary": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly."
         },
         "fr": {
-          "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
-          "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety"
+          "title": "Opening the datasets behind our AI weather models",
+          "summary": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly."
         }
       }
     },
@@ -1614,25 +1633,6 @@
         "fr": {
           "title": "HeapDeck: an on-call monitor for PostgreSQL on iPhone and iPad",
           "summary": "HeapDeck is a new native app for engineers on call for PostgreSQL 13 to 19, on the App Store for iPhone and iPad. It opens on one health verdict with ten tiles. The Locks screen draws the tree from pg_blocking_pids() with the roo…"
-        }
-      }
-    },
-    {
-      "slug": "20261104-see-the-agents-set-the-terms-new-visibility-and-control-for-pers-c62c3211",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/personal-agents-visibility-control/",
-      "publishedAt": "2026-11-04T14:00:00.000Z",
-      "discoveredAt": "2026-11-04T14:28:46.623Z",
-      "locales": {
-        "en": {
-          "title": "See the agents, set the terms: new visibility and control for personal agents",
-          "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access."
-        },
-        "fr": {
-          "title": "See the agents, set the terms: new visibility and control for personal agents",
-          "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access."
         }
       }
     },
@@ -1808,21 +1808,59 @@
       }
     },
     {
-      "slug": "20261103-arnis-turns-any-place-on-earth-into-a-minecraft-world-a9339aac",
+      "slug": "20261110-pay-for-hugging-face-hub-with-your-google-cloud-account-724fae92",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/hub-gcp-marketplace",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "discoveredAt": "2026-11-10T23:17:04.643Z",
+      "locales": {
+        "en": {
+          "title": "Pay for Hugging Face Hub with your Google Cloud Account",
+          "summary": "Pay for Hugging Face Hub with your Google Cloud Account"
+        },
+        "fr": {
+          "title": "Pay for Hugging Face Hub with your Google Cloud Account",
+          "summary": "Pay for Hugging Face Hub with your Google Cloud Account"
+        }
+      }
+    },
+    {
+      "slug": "20261104-see-the-agents-set-the-terms-new-visibility-and-control-for-pers-c62c3211",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+      "publishedAt": "2026-11-04T14:00:00.000Z",
+      "discoveredAt": "2026-11-04T14:28:46.623Z",
+      "locales": {
+        "en": {
+          "title": "See the agents, set the terms: new visibility and control for personal agents",
+          "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access."
+        },
+        "fr": {
+          "title": "See the agents, set the terms: new visibility and control for personal agents",
+          "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access."
+        }
+      }
+    },
+    {
+      "slug": "20261105-accessibility-statements-now-have-a-home-on-github-48501098",
       "topic": "Computer Science",
       "source": "GitHub Blog",
       "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
-      "publishedAt": "2026-11-03T16:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "href": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/",
+      "publishedAt": "2026-11-05T16:00:00.000Z",
+      "discoveredAt": "2026-11-05T23:37:28.861Z",
       "locales": {
         "en": {
-          "title": "Arnis turns any place on Earth into a Minecraft world",
-          "summary": "Louis Erbkamm built the first prototype in his free time. Now GitHub Copilot helps him maintain it alone. The post Arnis turns any place on Earth into a Minecraft world appeared first on The GitHub Blog ."
+          "title": "Accessibility statements now have a home on GitHub",
+          "summary": "GitHub now highlights ACCESSIBILITY.md files and helps maintainers document accessibility goals, known barriers, supported environments, contributor expectations, and reporting processes. The post Accessibility statements now hav…"
         },
         "fr": {
-          "title": "Arnis turns any place on Earth into a Minecraft world",
-          "summary": "Louis Erbkamm built the first prototype in his free time. Now GitHub Copilot helps him maintain it alone. The post Arnis turns any place on Earth into a Minecraft world appeared first on The GitHub Blog ."
+          "title": "Accessibility statements now have a home on GitHub",
+          "summary": "GitHub now highlights ACCESSIBILITY.md files and helps maintainers document accessibility goals, known barriers, supported environments, contributor expectations, and reporting processes. The post Accessibility statements now hav…"
         }
       }
     },
@@ -1865,40 +1903,21 @@
       }
     },
     {
-      "slug": "20261110-decision-models-in-hugging-face-3229de0d",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/decision",
-      "publishedAt": "2026-11-10T00:00:00.000Z",
-      "discoveredAt": "2026-11-10T23:17:04.643Z",
-      "locales": {
-        "en": {
-          "title": "Decision Models in Hugging Face",
-          "summary": "Decision Models in Hugging Face"
-        },
-        "fr": {
-          "title": "Decision Models in Hugging Face",
-          "summary": "Decision Models in Hugging Face"
-        }
-      }
-    },
-    {
-      "slug": "20261105-gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips-825a50d1",
+      "slug": "20261109-gemini-robotics-25-accelerates-real-world-general-dexterity-a98763b8",
       "topic": "AI Research",
       "source": "DeepMind Blog",
       "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
-      "publishedAt": "2026-11-05T17:05:16.000Z",
-      "discoveredAt": "2026-11-05T23:37:28.861Z",
+      "href": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "publishedAt": "2026-11-09T19:51:47.000Z",
+      "discoveredAt": "2026-11-10T23:17:04.643Z",
       "locales": {
         "en": {
-          "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-          "summary": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips"
+          "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+          "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety"
         },
         "fr": {
-          "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-          "summary": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips"
+          "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+          "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety"
         }
       }
     },
@@ -1975,25 +1994,6 @@
         "fr": {
           "title": "PG Observability Map 1.0.0 Released",
           "summary": "We are pleased to announce the initial release (1.0.0) of PG Observability Map , a interactive web-based tool designed to visualize and explore PostgreSQL observability, metrics, and internal diagnostic views. Key Features &amp;…"
-        }
-      }
-    },
-    {
-      "slug": "20261103-introducing-zero-wire-a-hub-for-investigating-critical-internet--af5c97bd",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/zero-wire/",
-      "publishedAt": "2026-11-03T14:00:00.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
-          "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure."
-        },
-        "fr": {
-          "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
-          "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure."
         }
       }
     },
@@ -2150,21 +2150,59 @@
       }
     },
     {
-      "slug": "20261101-game-off-2026-the-theme-is-shift-8efc4c26",
+      "slug": "20261110-decision-models-in-hugging-face-3229de0d",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/decision",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "discoveredAt": "2026-11-10T23:17:04.643Z",
+      "locales": {
+        "en": {
+          "title": "Decision Models in Hugging Face",
+          "summary": "Decision Models in Hugging Face"
+        },
+        "fr": {
+          "title": "Decision Models in Hugging Face",
+          "summary": "Decision Models in Hugging Face"
+        }
+      }
+    },
+    {
+      "slug": "20261103-introducing-zero-wire-a-hub-for-investigating-critical-internet--af5c97bd",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/zero-wire/",
+      "publishedAt": "2026-11-03T14:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
+          "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure."
+        },
+        "fr": {
+          "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
+          "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure."
+        }
+      }
+    },
+    {
+      "slug": "20261103-arnis-turns-any-place-on-earth-into-a-minecraft-world-a9339aac",
       "topic": "Computer Science",
       "source": "GitHub Blog",
       "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
-      "publishedAt": "2026-11-01T21:36:00.000Z",
-      "discoveredAt": "2026-11-01T21:59:49.458Z",
+      "href": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
+      "publishedAt": "2026-11-03T16:00:00.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
       "locales": {
         "en": {
-          "title": "Game Off 2026: The theme is SHIFT",
-          "summary": "GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap perspectives, bend reality, or just press a certain key. The post Game Off 2026: The theme…"
+          "title": "Arnis turns any place on Earth into a Minecraft world",
+          "summary": "Louis Erbkamm built the first prototype in his free time. Now GitHub Copilot helps him maintain it alone. The post Arnis turns any place on Earth into a Minecraft world appeared first on The GitHub Blog ."
         },
         "fr": {
-          "title": "Game Off 2026: The theme is SHIFT",
-          "summary": "GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap perspectives, bend reality, or just press a certain key. The post Game Off 2026: The theme…"
+          "title": "Arnis turns any place on Earth into a Minecraft world",
+          "summary": "Louis Erbkamm built the first prototype in his free time. Now GitHub Copilot helps him maintain it alone. The post Arnis turns any place on Earth into a Minecraft world appeared first on The GitHub Blog ."
         }
       }
     },
@@ -2207,40 +2245,21 @@
       }
     },
     {
-      "slug": "20261109-nemotron-personas-finance-japan-a-synthetic-dataset-capturing-ja-057e22ab",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
-      "publishedAt": "2026-11-09T15:05:57.000Z",
-      "discoveredAt": "2026-11-09T16:11:39.779Z",
-      "locales": {
-        "en": {
-          "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan&apos;s Demographics and Financial Context",
-          "summary": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan&apos;s Demographics and Financial Context"
-        },
-        "fr": {
-          "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan&apos;s Demographics and Financial Context",
-          "summary": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan&apos;s Demographics and Financial Context"
-        }
-      }
-    },
-    {
-      "slug": "20261103-agentic-cheminformatics-with-google-antigravity-7b04a568",
-      "topic": "AI Systems",
+      "slug": "20261105-gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips-825a50d1",
+      "topic": "AI Research",
       "source": "DeepMind Blog",
       "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
-      "publishedAt": "2026-11-03T17:01:49.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "href": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "publishedAt": "2026-11-05T17:05:16.000Z",
+      "discoveredAt": "2026-11-05T23:37:28.861Z",
       "locales": {
         "en": {
-          "title": "Agentic cheminformatics with Google Antigravity",
-          "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles."
+          "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+          "summary": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips"
         },
         "fr": {
-          "title": "Agentic cheminformatics with Google Antigravity",
-          "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles."
+          "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+          "summary": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips"
         }
       }
     },
@@ -2317,25 +2336,6 @@
         "fr": {
           "title": "myDBR 7.7 brings web reporting to PostgreSQL",
           "summary": "Helsinki, Finland, 2026-10-28 - myDBR.com announced PostgreSQL support in myDBR, its web-based reporting platform for SQL databases. PostgreSQL 12 or later can now hold both myDBR's own objects and the reports, alongside the MySQ…"
-        }
-      }
-    },
-    {
-      "slug": "20261102-how-we-halved-dns-build-delay-and-cut-memory-use-by-85-eb6ff730",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
-      "publishedAt": "2026-11-02T14:00:00.000Z",
-      "discoveredAt": "2026-11-02T15:44:43.671Z",
-      "locales": {
-        "en": {
-          "title": "How we halved DNS build delay and cut memory use by 85%",
-          "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and halving bui…"
-        },
-        "fr": {
-          "title": "How we halved DNS build delay and cut memory use by 85%",
-          "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and halving bui…"
         }
       }
     },
@@ -2473,21 +2473,59 @@
       }
     },
     {
-      "slug": "20261028-github-universe-2026-evolving-every-layer-of-the-stack-6c275e5f",
+      "slug": "20261109-nemotron-personas-finance-japan-a-synthetic-dataset-capturing-ja-057e22ab",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+      "publishedAt": "2026-11-09T15:05:57.000Z",
+      "discoveredAt": "2026-11-09T16:11:39.779Z",
+      "locales": {
+        "en": {
+          "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan&apos;s Demographics and Financial Context",
+          "summary": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan&apos;s Demographics and Financial Context"
+        },
+        "fr": {
+          "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan&apos;s Demographics and Financial Context",
+          "summary": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan&apos;s Demographics and Financial Context"
+        }
+      }
+    },
+    {
+      "slug": "20261102-how-we-halved-dns-build-delay-and-cut-memory-use-by-85-eb6ff730",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+      "publishedAt": "2026-11-02T14:00:00.000Z",
+      "discoveredAt": "2026-11-02T15:44:43.671Z",
+      "locales": {
+        "en": {
+          "title": "How we halved DNS build delay and cut memory use by 85%",
+          "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and halving bui…"
+        },
+        "fr": {
+          "title": "How we halved DNS build delay and cut memory use by 85%",
+          "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and halving bui…"
+        }
+      }
+    },
+    {
+      "slug": "20261101-game-off-2026-the-theme-is-shift-8efc4c26",
       "topic": "Computer Science",
       "source": "GitHub Blog",
       "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
-      "publishedAt": "2026-10-28T16:09:28.000Z",
-      "discoveredAt": "2026-10-28T22:32:00.636Z",
+      "href": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
+      "publishedAt": "2026-11-01T21:36:00.000Z",
+      "discoveredAt": "2026-11-01T21:59:49.458Z",
       "locales": {
         "en": {
-          "title": "GitHub Universe 2026: Evolving every layer of the stack",
-          "summary": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world. The post GitHub Universe 2026: Evolving every layer of the stack appeared first on The GitHub Blog ."
+          "title": "Game Off 2026: The theme is SHIFT",
+          "summary": "GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap perspectives, bend reality, or just press a certain key. The post Game Off 2026: The theme…"
         },
         "fr": {
-          "title": "GitHub Universe 2026: Evolving every layer of the stack",
-          "summary": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world. The post GitHub Universe 2026: Evolving every layer of the stack appeared first on The GitHub Blog ."
+          "title": "Game Off 2026: The theme is SHIFT",
+          "summary": "GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap perspectives, bend reality, or just press a certain key. The post Game Off 2026: The theme…"
         }
       }
     },
@@ -2530,40 +2568,21 @@
       }
     },
     {
-      "slug": "20261109-your-experts-have-partners-thereaposs-hope-for-keeping-them-toge-7b1451fc",
+      "slug": "20261103-agentic-cheminformatics-with-google-antigravity-7b04a568",
       "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
-      "publishedAt": "2026-11-09T12:34:29.000Z",
-      "discoveredAt": "2026-11-09T16:11:39.779Z",
-      "locales": {
-        "en": {
-          "title": "Your Experts Have Partners. There&apos;s HOPE for Keeping Them Together",
-          "summary": "Your Experts Have Partners. There&apos;s HOPE for Keeping Them Together"
-        },
-        "fr": {
-          "title": "Your Experts Have Partners. There&apos;s HOPE for Keeping Them Together",
-          "summary": "Your Experts Have Partners. There&apos;s HOPE for Keeping Them Together"
-        }
-      }
-    },
-    {
-      "slug": "20261030-speeding-up-planning-decisions-with-ai-094c331a",
-      "topic": "AI Research",
       "source": "DeepMind Blog",
       "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
-      "publishedAt": "2026-10-30T14:18:30.000Z",
-      "discoveredAt": "2026-11-02T15:44:43.671Z",
+      "href": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "publishedAt": "2026-11-03T17:01:49.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
       "locales": {
         "en": {
-          "title": "Speeding up planning decisions with AI",
-          "summary": "Google DeepMind and UK government work together to reduce planning assessment times"
+          "title": "Agentic cheminformatics with Google Antigravity",
+          "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles."
         },
         "fr": {
-          "title": "Speeding up planning decisions with AI",
-          "summary": "Google DeepMind and UK government work together to reduce planning assessment times"
+          "title": "Agentic cheminformatics with Google Antigravity",
+          "summary": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles."
         }
       }
     },
@@ -2640,25 +2659,6 @@
         "fr": {
           "title": "ReinDB: read-only performance monitoring for PostgreSQL, first database free",
           "summary": "Bandlei has released ReinDB, read-only performance monitoring for PostgreSQL, self-managed or on Amazon RDS and Aurora. ReinDB learns what normal looks like for each database and statement, hour by hour, using pg_stat_statements,…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-4-real-tracking-exploitation-and-patching-of-emudhras-weak-keys-132cf973",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/emudhra-patching/",
-      "publishedAt": "2026-10-30T17:38:50.000Z",
-      "discoveredAt": "2026-10-30T22:15:46.584Z",
-      "locales": {
-        "en": {
-          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
-          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much…"
-        },
-        "fr": {
-          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
-          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much…"
         }
       }
     },
@@ -2777,21 +2777,59 @@
       }
     },
     {
-      "slug": "20261028-octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-b-bedf4f27",
+      "slug": "20261109-your-experts-have-partners-thereaposs-hope-for-keeping-them-toge-7b1451fc",
       "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+      "publishedAt": "2026-11-09T12:34:29.000Z",
+      "discoveredAt": "2026-11-09T16:11:39.779Z",
+      "locales": {
+        "en": {
+          "title": "Your Experts Have Partners. There&apos;s HOPE for Keeping Them Together",
+          "summary": "Your Experts Have Partners. There&apos;s HOPE for Keeping Them Together"
+        },
+        "fr": {
+          "title": "Your Experts Have Partners. There&apos;s HOPE for Keeping Them Together",
+          "summary": "Your Experts Have Partners. There&apos;s HOPE for Keeping Them Together"
+        }
+      }
+    },
+    {
+      "slug": "20261030-4-real-tracking-exploitation-and-patching-of-emudhras-weak-keys-132cf973",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/emudhra-patching/",
+      "publishedAt": "2026-10-30T17:38:50.000Z",
+      "discoveredAt": "2026-10-30T22:15:46.584Z",
+      "locales": {
+        "en": {
+          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much…"
+        },
+        "fr": {
+          "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+          "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much…"
+        }
+      }
+    },
+    {
+      "slug": "20261028-github-universe-2026-evolving-every-layer-of-the-stack-6c275e5f",
+      "topic": "Computer Science",
       "source": "GitHub Blog",
       "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
-      "publishedAt": "2026-10-28T16:07:40.000Z",
+      "href": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+      "publishedAt": "2026-10-28T16:09:28.000Z",
       "discoveredAt": "2026-10-28T22:32:00.636Z",
       "locales": {
         "en": {
-          "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
-          "summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report. The post Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents appeared fi…"
+          "title": "GitHub Universe 2026: Evolving every layer of the stack",
+          "summary": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world. The post GitHub Universe 2026: Evolving every layer of the stack appeared first on The GitHub Blog ."
         },
         "fr": {
-          "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
-          "summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report. The post Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents appeared fi…"
+          "title": "GitHub Universe 2026: Evolving every layer of the stack",
+          "summary": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world. The post GitHub Universe 2026: Evolving every layer of the stack appeared first on The GitHub Blog ."
         }
       }
     },
@@ -2834,40 +2872,21 @@
       }
     },
     {
-      "slug": "20261106-toyblocks-a-controlled-world-for-robot-learning-and-evaluation-be1ba71e",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/toyblocks",
-      "publishedAt": "2026-11-06T14:00:48.000Z",
-      "discoveredAt": "2026-11-06T14:13:36.251Z",
-      "locales": {
-        "en": {
-          "title": "ToyBlocks: A controlled world for robot learning and evaluation",
-          "summary": "ToyBlocks: A controlled world for robot learning and evaluation"
-        },
-        "fr": {
-          "title": "ToyBlocks: A controlled world for robot learning and evaluation",
-          "summary": "ToyBlocks: A controlled world for robot learning and evaluation"
-        }
-      }
-    },
-    {
-      "slug": "20261028-gemini-4-carbon-our-next-frontier-model-b0da25ea",
-      "topic": "AI Systems",
+      "slug": "20261030-speeding-up-planning-decisions-with-ai-094c331a",
+      "topic": "AI Research",
       "source": "DeepMind Blog",
       "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-      "publishedAt": "2026-10-28T17:00:58.000Z",
-      "discoveredAt": "2026-10-28T22:32:00.636Z",
+      "href": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+      "publishedAt": "2026-10-30T14:18:30.000Z",
+      "discoveredAt": "2026-11-02T15:44:43.671Z",
       "locales": {
         "en": {
-          "title": "Gemini 4 Carbon: Our next frontier model",
-          "summary": "Gemini 4 Carbon: Our next frontier model"
+          "title": "Speeding up planning decisions with AI",
+          "summary": "Google DeepMind and UK government work together to reduce planning assessment times"
         },
         "fr": {
-          "title": "Gemini 4 Carbon: Our next frontier model",
-          "summary": "Gemini 4 Carbon: Our next frontier model"
+          "title": "Speeding up planning decisions with AI",
+          "summary": "Google DeepMind and UK government work together to reduce planning assessment times"
         }
       }
     },
@@ -2925,25 +2944,6 @@
         "fr": {
           "title": "Autobase 2.12 released",
           "summary": "We are pleased to announce the release of Autobase 2.12 ! Highlights Built-in Monitoring Dashboards Autobase isn't intended to replace your monitoring system. Instead, we've integrated with Netdata, which we consider one of the b…"
-        }
-      }
-    },
-    {
-      "slug": "20261030-cloudflare-services-for-private-origins-is-now-generally-availab-5e6112ff",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/private-origins-public-to-private/",
-      "publishedAt": "2026-10-30T14:23:43.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare services for private origins is now generally available",
-          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
-        },
-        "fr": {
-          "title": "Cloudflare services for private origins is now generally available",
-          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
         }
       }
     },
@@ -3062,21 +3062,59 @@
       }
     },
     {
-      "slug": "20261022-how-bug-bounty-sharpens-one-researchers-security-skills-09be57be",
-      "topic": "Security & Standards",
-      "source": "GitHub Blog",
-      "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
-      "publishedAt": "2026-10-22T17:21:30.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "slug": "20261106-toyblocks-a-controlled-world-for-robot-learning-and-evaluation-be1ba71e",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/toyblocks",
+      "publishedAt": "2026-11-06T14:00:48.000Z",
+      "discoveredAt": "2026-11-06T14:13:36.251Z",
       "locales": {
         "en": {
-          "title": "How bug bounty sharpens one researcher’s security skills",
-          "summary": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers. The post How bug bounty sharpens one researcher’…"
+          "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+          "summary": "ToyBlocks: A controlled world for robot learning and evaluation"
         },
         "fr": {
-          "title": "How bug bounty sharpens one researcher’s security skills",
-          "summary": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers. The post How bug bounty sharpens one researcher’…"
+          "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+          "summary": "ToyBlocks: A controlled world for robot learning and evaluation"
+        }
+      }
+    },
+    {
+      "slug": "20261030-cloudflare-services-for-private-origins-is-now-generally-availab-5e6112ff",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/private-origins-public-to-private/",
+      "publishedAt": "2026-10-30T14:23:43.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare services for private origins is now generally available",
+          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
+        },
+        "fr": {
+          "title": "Cloudflare services for private origins is now generally available",
+          "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity."
+        }
+      }
+    },
+    {
+      "slug": "20261028-octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-b-bedf4f27",
+      "topic": "AI Systems",
+      "source": "GitHub Blog",
+      "sourceFeed": "https://github.blog/feed/",
+      "href": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+      "publishedAt": "2026-10-28T16:07:40.000Z",
+      "discoveredAt": "2026-10-28T22:32:00.636Z",
+      "locales": {
+        "en": {
+          "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+          "summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report. The post Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents appeared fi…"
+        },
+        "fr": {
+          "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+          "summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report. The post Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents appeared fi…"
         }
       }
     },
@@ -3119,40 +3157,21 @@
       }
     },
     {
-      "slug": "20261106-egyptian-and-nigerian-english-join-the-open-asr-leaderboard-82196d4e",
+      "slug": "20261028-gemini-4-carbon-our-next-frontier-model-b0da25ea",
       "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-      "publishedAt": "2026-11-06T00:00:00.000Z",
-      "discoveredAt": "2026-11-06T14:13:36.251Z",
-      "locales": {
-        "en": {
-          "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
-          "summary": "Egyptian and Nigerian English join the Open ASR Leaderboard"
-        },
-        "fr": {
-          "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
-          "summary": "Egyptian and Nigerian English join the Open ASR Leaderboard"
-        }
-      }
-    },
-    {
-      "slug": "20261027-genie-4-a-new-generation-of-world-simulation-d17d13a0",
-      "topic": "AI Research",
       "source": "DeepMind Blog",
       "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "publishedAt": "2026-10-27T16:01:38.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "href": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "publishedAt": "2026-10-28T17:00:58.000Z",
+      "discoveredAt": "2026-10-28T22:32:00.636Z",
       "locales": {
         "en": {
-          "title": "Genie 4: A new generation of world simulation",
-          "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation."
+          "title": "Gemini 4 Carbon: Our next frontier model",
+          "summary": "Gemini 4 Carbon: Our next frontier model"
         },
         "fr": {
-          "title": "Genie 4: A new generation of world simulation",
-          "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation."
+          "title": "Gemini 4 Carbon: Our next frontier model",
+          "summary": "Gemini 4 Carbon: Our next frontier model"
         }
       }
     },
@@ -3210,25 +3229,6 @@
         "fr": {
           "title": "pgbadger v13.3 has been released",
           "summary": "Antananarivo, Madagascar - November 03, 2026 pgBadger pgBadger is a PostgreSQL performance analyzer, built for speed with fully detailed reports based on your PostgreSQL log files. pgBadger 13.3 was released today, this is a main…"
-        }
-      }
-    },
-    {
-      "slug": "20261029-cloudflare-ddos-threat-report-2026-q3-more-swarms-fewer-giants-470f90e2",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
-      "publishedAt": "2026-10-29T12:55:00.000Z",
-      "discoveredAt": "2026-10-30T15:53:45.751Z",
-      "locales": {
-        "en": {
-          "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-          "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet tak…"
-        },
-        "fr": {
-          "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-          "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet tak…"
         }
       }
     },
@@ -3347,21 +3347,59 @@
       }
     },
     {
-      "slug": "20261021-the-bridge-to-agent-scale-git-infrastructure-d345d795",
+      "slug": "20261106-egyptian-and-nigerian-english-join-the-open-asr-leaderboard-82196d4e",
       "topic": "AI Systems",
-      "source": "GitHub Blog",
-      "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
-      "publishedAt": "2026-10-21T16:00:00.000Z",
-      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "discoveredAt": "2026-11-06T14:13:36.251Z",
       "locales": {
         "en": {
-          "title": "The bridge to agent-scale Git infrastructure",
-          "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructu…"
+          "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+          "summary": "Egyptian and Nigerian English join the Open ASR Leaderboard"
         },
         "fr": {
-          "title": "The bridge to agent-scale Git infrastructure",
-          "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructu…"
+          "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+          "summary": "Egyptian and Nigerian English join the Open ASR Leaderboard"
+        }
+      }
+    },
+    {
+      "slug": "20261029-cloudflare-ddos-threat-report-2026-q3-more-swarms-fewer-giants-470f90e2",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
+      "publishedAt": "2026-10-29T12:55:00.000Z",
+      "discoveredAt": "2026-10-30T15:53:45.751Z",
+      "locales": {
+        "en": {
+          "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+          "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet tak…"
+        },
+        "fr": {
+          "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+          "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet tak…"
+        }
+      }
+    },
+    {
+      "slug": "20261022-how-bug-bounty-sharpens-one-researchers-security-skills-09be57be",
+      "topic": "Security & Standards",
+      "source": "GitHub Blog",
+      "sourceFeed": "https://github.blog/feed/",
+      "href": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+      "publishedAt": "2026-10-22T17:21:30.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "locales": {
+        "en": {
+          "title": "How bug bounty sharpens one researcher’s security skills",
+          "summary": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers. The post How bug bounty sharpens one researcher’…"
+        },
+        "fr": {
+          "title": "How bug bounty sharpens one researcher’s security skills",
+          "summary": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers. The post How bug bounty sharpens one researcher’…"
         }
       }
     },
@@ -3404,40 +3442,21 @@
       }
     },
     {
-      "slug": "20261105-new-nvidia-cosmos-3-open-models-for-interactive-world-simulation-e8690f74",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "publishedAt": "2026-11-05T19:35:16.000Z",
-      "discoveredAt": "2026-11-05T23:37:28.861Z",
-      "locales": {
-        "en": {
-          "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-          "summary": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation"
-        },
-        "fr": {
-          "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-          "summary": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation"
-        }
-      }
-    },
-    {
-      "slug": "20261022-beyond-tree-cover-mapping-the-worlds-forest-types-e66e9796",
+      "slug": "20261027-genie-4-a-new-generation-of-world-simulation-d17d13a0",
       "topic": "AI Research",
       "source": "DeepMind Blog",
       "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-      "publishedAt": "2026-10-22T14:30:24.000Z",
-      "discoveredAt": "2026-10-22T21:32:55.849Z",
+      "href": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "publishedAt": "2026-10-27T16:01:38.000Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
       "locales": {
         "en": {
-          "title": "Beyond tree cover: mapping the world’s forest types",
-          "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types."
+          "title": "Genie 4: A new generation of world simulation",
+          "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation."
         },
         "fr": {
-          "title": "Beyond tree cover: mapping the world’s forest types",
-          "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types."
+          "title": "Genie 4: A new generation of world simulation",
+          "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation."
         }
       }
     },
@@ -3495,25 +3514,6 @@
         "fr": {
           "title": "Security release for psqlodbc",
           "summary": "The PostgreSQL ODBC project has released version 18.00.0006 to fix multiple security issues see the Changelog for details"
-        }
-      }
-    },
-    {
-      "slug": "20261027-introducing-the-cloudflare-php-capture-the-flag-challenge-54be98d0",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/php-ctf/",
-      "publishedAt": "2026-10-27T13:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
-      "locales": {
-        "en": {
-          "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
-          "summary": "We are launching a PHP Capture the Flag challenge integrated with our Bug Bounty program to test our WAF protections. Security researchers are invited to bypass our defenses and capture the flag to help make the Internet safer."
-        },
-        "fr": {
-          "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
-          "summary": "We are launching a PHP Capture the Flag challenge integrated with our Bug Bounty program to test our WAF protections. Security researchers are invited to bypass our defenses and capture the flag to help make the Internet safer."
         }
       }
     },
@@ -3613,21 +3613,59 @@
       }
     },
     {
-      "slug": "20261020-how-3-java-champions-are-using-github-copilot-for-increased-prod-d3ec3a59",
-      "topic": "Computer Science",
-      "source": "GitHub Blog",
-      "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
-      "publishedAt": "2026-10-20T16:05:03.000Z",
-      "discoveredAt": "2026-10-20T21:35:02.375Z",
+      "slug": "20261105-new-nvidia-cosmos-3-open-models-for-interactive-world-simulation-e8690f74",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "publishedAt": "2026-11-05T19:35:16.000Z",
+      "discoveredAt": "2026-11-05T23:37:28.861Z",
       "locales": {
         "en": {
-          "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
-          "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appe…"
+          "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+          "summary": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation"
         },
         "fr": {
-          "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
-          "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appe…"
+          "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+          "summary": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation"
+        }
+      }
+    },
+    {
+      "slug": "20261027-introducing-the-cloudflare-php-capture-the-flag-challenge-54be98d0",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/php-ctf/",
+      "publishedAt": "2026-10-27T13:00:00.000Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "locales": {
+        "en": {
+          "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
+          "summary": "We are launching a PHP Capture the Flag challenge integrated with our Bug Bounty program to test our WAF protections. Security researchers are invited to bypass our defenses and capture the flag to help make the Internet safer."
+        },
+        "fr": {
+          "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
+          "summary": "We are launching a PHP Capture the Flag challenge integrated with our Bug Bounty program to test our WAF protections. Security researchers are invited to bypass our defenses and capture the flag to help make the Internet safer."
+        }
+      }
+    },
+    {
+      "slug": "20261021-the-bridge-to-agent-scale-git-infrastructure-d345d795",
+      "topic": "AI Systems",
+      "source": "GitHub Blog",
+      "sourceFeed": "https://github.blog/feed/",
+      "href": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+      "publishedAt": "2026-10-21T16:00:00.000Z",
+      "discoveredAt": "2026-10-21T21:40:08.512Z",
+      "locales": {
+        "en": {
+          "title": "The bridge to agent-scale Git infrastructure",
+          "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructu…"
+        },
+        "fr": {
+          "title": "The bridge to agent-scale Git infrastructure",
+          "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructu…"
         }
       }
     },
@@ -3670,40 +3708,21 @@
       }
     },
     {
-      "slug": "20261105-a-closer-look-at-phonon-tts-launching-high-quality-on-device-spe-89209ab6",
-      "topic": "AI Performance",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/phonon-tts",
-      "publishedAt": "2026-11-05T00:00:00.000Z",
-      "discoveredAt": "2026-11-05T14:35:45.598Z",
-      "locales": {
-        "en": {
-          "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
-          "summary": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks."
-        },
-        "fr": {
-          "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
-          "summary": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks."
-        }
-      }
-    },
-    {
-      "slug": "20261015-accelerating-the-search-for-antimicrobial-peptides-with-google-a-996b33c0",
+      "slug": "20261022-beyond-tree-cover-mapping-the-worlds-forest-types-e66e9796",
       "topic": "AI Research",
       "source": "DeepMind Blog",
       "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-      "publishedAt": "2026-10-15T16:08:03.000Z",
-      "discoveredAt": "2026-10-15T21:20:24.444Z",
+      "href": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "publishedAt": "2026-10-22T14:30:24.000Z",
+      "discoveredAt": "2026-10-22T21:32:55.849Z",
       "locales": {
         "en": {
-          "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-          "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science."
+          "title": "Beyond tree cover: mapping the world’s forest types",
+          "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types."
         },
         "fr": {
-          "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-          "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science."
+          "title": "Beyond tree cover: mapping the world’s forest types",
+          "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types."
         }
       }
     },
@@ -3761,25 +3780,6 @@
         "fr": {
           "title": "HypoPG 1.4.5 is out!",
           "summary": "Tainan, Taiwan - Sun 1 Nov 2026 HypoPG 1.4.5 I'm pleased to announce the release of the version 1.4.5 of HypoPG, an extension adding support for Hypothetical Indexes, compatible with PostgreSQL 9.2 and above. Changelog Bug fixes…"
-        }
-      }
-    },
-    {
-      "slug": "20261027-what-took-the-internet-offline-in-q3-2026-1332586c",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
-      "publishedAt": "2026-10-27T13:00:00.000Z",
-      "discoveredAt": "2026-10-27T22:10:41.288Z",
-      "locales": {
-        "en": {
-          "title": "What took the Internet offline in Q3 2026",
-          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connectivity and t…"
-        },
-        "fr": {
-          "title": "What took the Internet offline in Q3 2026",
-          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connectivity and t…"
         }
       }
     },
@@ -3860,21 +3860,59 @@
       }
     },
     {
-      "slug": "20261019-how-to-continue-a-github-copilot-app-session-in-vs-code-0f3dfef2",
+      "slug": "20261105-a-closer-look-at-phonon-tts-launching-high-quality-on-device-spe-89209ab6",
+      "topic": "AI Performance",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/phonon-tts",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "discoveredAt": "2026-11-05T14:35:45.598Z",
+      "locales": {
+        "en": {
+          "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+          "summary": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks."
+        },
+        "fr": {
+          "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+          "summary": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks."
+        }
+      }
+    },
+    {
+      "slug": "20261027-what-took-the-internet-offline-in-q3-2026-1332586c",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
+      "publishedAt": "2026-10-27T13:00:00.000Z",
+      "discoveredAt": "2026-10-27T22:10:41.288Z",
+      "locales": {
+        "en": {
+          "title": "What took the Internet offline in Q3 2026",
+          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connectivity and t…"
+        },
+        "fr": {
+          "title": "What took the Internet offline in Q3 2026",
+          "summary": "An examination of global Internet disruptions observed by Cloudflare Radar during the third quarter of 2026. This review analyzes how power failures, natural disasters, and government shutdowns impacted network connectivity and t…"
+        }
+      }
+    },
+    {
+      "slug": "20261020-how-3-java-champions-are-using-github-copilot-for-increased-prod-d3ec3a59",
       "topic": "Computer Science",
       "source": "GitHub Blog",
       "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
-      "publishedAt": "2026-10-19T18:47:22.000Z",
-      "discoveredAt": "2026-10-19T22:19:32.677Z",
+      "href": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
+      "publishedAt": "2026-10-20T16:05:03.000Z",
+      "discoveredAt": "2026-10-20T21:35:02.375Z",
       "locales": {
         "en": {
-          "title": "How to continue a GitHub Copilot app session in VS Code",
-          "summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context. The post How to continue a GitHub Copilot app session in VS Code appeared first on The…"
+          "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+          "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appe…"
         },
         "fr": {
-          "title": "How to continue a GitHub Copilot app session in VS Code",
-          "summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context. The post How to continue a GitHub Copilot app session in VS Code appeared first on The…"
+          "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+          "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appe…"
         }
       }
     },
@@ -3917,40 +3955,21 @@
       }
     },
     {
-      "slug": "20261104-dharma-field-extractor-any-document-in-structured-fields-in-json-5afc49da",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
-      "publishedAt": "2026-11-04T17:50:10.000Z",
-      "discoveredAt": "2026-11-04T23:38:57.985Z",
-      "locales": {
-        "en": {
-          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
-          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
-        },
-        "fr": {
-          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
-          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
-        }
-      }
-    },
-    {
-      "slug": "20261014-google-deepmind-and-singapore-government-collaborate-to-build-fi-58e4191f",
-      "topic": "AI Systems",
+      "slug": "20261015-accelerating-the-search-for-antimicrobial-peptides-with-google-a-996b33c0",
+      "topic": "AI Research",
       "source": "DeepMind Blog",
       "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-      "publishedAt": "2026-10-14T02:00:14.000Z",
-      "discoveredAt": "2026-10-14T11:47:54.422Z",
+      "href": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "publishedAt": "2026-10-15T16:08:03.000Z",
+      "discoveredAt": "2026-10-15T21:20:24.444Z",
       "locales": {
         "en": {
-          "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-          "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress."
+          "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+          "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science."
         },
         "fr": {
-          "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-          "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress."
+          "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+          "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science."
         }
       }
     },
@@ -4008,25 +4027,6 @@
         "fr": {
           "title": "E-Maj 5.0.1 : Major Security Update.",
           "summary": "We are very glad to announce the E-Maj 5.0.1 version. E-Maj is a PostgreSQL extension which enables fine-grained write logging and time travel on subsets of the database. This version mainly fixes a vulnerability encountered in a…"
-        }
-      }
-    },
-    {
-      "slug": "20261026-cross-request-kv-cache-exposure-in-the-glm-53-workers-ai-model-a-bfdba109",
-      "topic": "AI Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
-      "publishedAt": "2026-10-26T22:01:23.000Z",
-      "discoveredAt": "2026-10-26T22:38:04.323Z",
-      "locales": {
-        "en": {
-          "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
-          "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue."
-        },
-        "fr": {
-          "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
-          "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue."
         }
       }
     },
@@ -4107,21 +4107,59 @@
       }
     },
     {
-      "slug": "20261015-the-next-developer-interface-is-ambient-intelligence-5b6680e2",
+      "slug": "20261104-dharma-field-extractor-any-document-in-structured-fields-in-json-5afc49da",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "publishedAt": "2026-11-04T17:50:10.000Z",
+      "discoveredAt": "2026-11-04T23:38:57.985Z",
+      "locales": {
+        "en": {
+          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
+        },
+        "fr": {
+          "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+          "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out"
+        }
+      }
+    },
+    {
+      "slug": "20261026-cross-request-kv-cache-exposure-in-the-glm-53-workers-ai-model-a-bfdba109",
+      "topic": "AI Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "publishedAt": "2026-10-26T22:01:23.000Z",
+      "discoveredAt": "2026-10-26T22:38:04.323Z",
+      "locales": {
+        "en": {
+          "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+          "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue."
+        },
+        "fr": {
+          "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+          "summary": "A configuration mismatch in GLM 5.3 on Workers AI triggered an SGLang bug that exposed KV cache pages across requests. Here is how we addressed the issue."
+        }
+      }
+    },
+    {
+      "slug": "20261019-how-to-continue-a-github-copilot-app-session-in-vs-code-0f3dfef2",
       "topic": "Computer Science",
       "source": "GitHub Blog",
       "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/",
-      "publishedAt": "2026-10-15T19:39:27.000Z",
-      "discoveredAt": "2026-10-15T21:20:24.444Z",
+      "href": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+      "publishedAt": "2026-10-19T18:47:22.000Z",
+      "discoveredAt": "2026-10-19T22:19:32.677Z",
       "locales": {
         "en": {
-          "title": "The next developer interface is ambient intelligence",
-          "summary": "AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building. The post The next developer interface is ambient intelligence a…"
+          "title": "How to continue a GitHub Copilot app session in VS Code",
+          "summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context. The post How to continue a GitHub Copilot app session in VS Code appeared first on The…"
         },
         "fr": {
-          "title": "The next developer interface is ambient intelligence",
-          "summary": "AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building. The post The next developer interface is ambient intelligence a…"
+          "title": "How to continue a GitHub Copilot app session in VS Code",
+          "summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context. The post How to continue a GitHub Copilot app session in VS Code appeared first on The…"
         }
       }
     },
@@ -4164,40 +4202,21 @@
       }
     },
     {
-      "slug": "20261103-statebench-testing-how-language-models-track-state-changes-over--a55665cf",
+      "slug": "20261014-google-deepmind-and-singapore-government-collaborate-to-build-fi-58e4191f",
       "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/allenai/statebench",
-      "publishedAt": "2026-11-03T17:15:21.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "StateBench: Testing how language models track state changes over long documents",
-          "summary": "StateBench: Testing how language models track state changes over long documents"
-        },
-        "fr": {
-          "title": "StateBench: Testing how language models track state changes over long documents",
-          "summary": "StateBench: Testing how language models track state changes over long documents"
-        }
-      }
-    },
-    {
-      "slug": "20261013-developing-gemini-4-argon-responsibly-and-safely-471508c0",
-      "topic": "AI Research",
       "source": "DeepMind Blog",
       "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "publishedAt": "2026-10-13T19:43:07.000Z",
-      "discoveredAt": "2026-10-13T22:42:20.913Z",
+      "href": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "publishedAt": "2026-10-14T02:00:14.000Z",
+      "discoveredAt": "2026-10-14T11:47:54.422Z",
       "locales": {
         "en": {
-          "title": "Developing Gemini 4 Argon responsibly and safely",
-          "summary": "Developing Gemini 4 Argon responsibly and safely"
+          "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+          "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress."
         },
         "fr": {
-          "title": "Developing Gemini 4 Argon responsibly and safely",
-          "summary": "Developing Gemini 4 Argon responsibly and safely"
+          "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+          "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress."
         }
       }
     },
@@ -4255,25 +4274,6 @@
         "fr": {
           "title": "pgAdmin 4 v9.19 Released",
           "summary": "The pgAdmin Development Team is pleased to announce pgAdmin 4 version 9.19. This release of pgAdmin 4 includes 136 bug fixes and new features, including fixes for 15 security vulnerabilities (CVE-2026-116238 through CVE-2026-1162…"
-        }
-      }
-    },
-    {
-      "slug": "20261023-origin-range-requests-serving-large-files-without-range-request--94660a1a",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/origin-range-requests/",
-      "publishedAt": "2026-10-23T18:22:59.000Z",
-      "discoveredAt": "2026-10-23T21:22:03.530Z",
-      "locales": {
-        "en": {
-          "title": "Origin Range Requests: Serving large files without range-request tuning",
-          "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half."
-        },
-        "fr": {
-          "title": "Origin Range Requests: Serving large files without range-request tuning",
-          "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half."
         }
       }
     },
@@ -4354,21 +4354,59 @@
       }
     },
     {
-      "slug": "20261015-staying-evergreen-how-we-automated-secure-access-and-repo-hygien-84007b3b",
+      "slug": "20261103-statebench-testing-how-language-models-track-state-changes-over--a55665cf",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/allenai/statebench",
+      "publishedAt": "2026-11-03T17:15:21.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
+      "locales": {
+        "en": {
+          "title": "StateBench: Testing how language models track state changes over long documents",
+          "summary": "StateBench: Testing how language models track state changes over long documents"
+        },
+        "fr": {
+          "title": "StateBench: Testing how language models track state changes over long documents",
+          "summary": "StateBench: Testing how language models track state changes over long documents"
+        }
+      }
+    },
+    {
+      "slug": "20261023-origin-range-requests-serving-large-files-without-range-request--94660a1a",
+      "topic": "Computer Systems",
+      "source": "Cloudflare Blog",
+      "sourceFeed": "https://blog.cloudflare.com/rss/",
+      "href": "https://blog.cloudflare.com/origin-range-requests/",
+      "publishedAt": "2026-10-23T18:22:59.000Z",
+      "discoveredAt": "2026-10-23T21:22:03.530Z",
+      "locales": {
+        "en": {
+          "title": "Origin Range Requests: Serving large files without range-request tuning",
+          "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half."
+        },
+        "fr": {
+          "title": "Origin Range Requests: Serving large files without range-request tuning",
+          "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half."
+        }
+      }
+    },
+    {
+      "slug": "20261015-the-next-developer-interface-is-ambient-intelligence-5b6680e2",
       "topic": "Computer Science",
       "source": "GitHub Blog",
       "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
-      "publishedAt": "2026-10-15T18:00:00.000Z",
-      "discoveredAt": "2026-10-16T11:18:35.597Z",
+      "href": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/",
+      "publishedAt": "2026-10-15T19:39:27.000Z",
+      "discoveredAt": "2026-10-15T21:20:24.444Z",
       "locales": {
         "en": {
-          "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
-          "summary": "Put native GitHub features to work to review outside collaborator access and archive stale repositories. The post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blo…"
+          "title": "The next developer interface is ambient intelligence",
+          "summary": "AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building. The post The next developer interface is ambient intelligence a…"
         },
         "fr": {
-          "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
-          "summary": "Put native GitHub features to work to review outside collaborator access and archive stale repositories. The post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blo…"
+          "title": "The next developer interface is ambient intelligence",
+          "summary": "AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building. The post The next developer interface is ambient intelligence a…"
         }
       }
     },
@@ -4411,40 +4449,21 @@
       }
     },
     {
-      "slug": "20261103-palette-teaching-a-small-model-to-build-decks-in-your-design-lan-bc417703",
-      "topic": "AI Systems",
-      "source": "Hugging Face Blog",
-      "sourceFeed": "https://huggingface.co/blog/feed.xml",
-      "href": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-      "publishedAt": "2026-11-03T16:35:36.000Z",
-      "discoveredAt": "2026-11-03T23:19:25.270Z",
-      "locales": {
-        "en": {
-          "title": "Palette: teaching a small model to build decks in your design language",
-          "summary": "Palette: teaching a small model to build decks in your design language"
-        },
-        "fr": {
-          "title": "Palette: teaching a small model to build decks in your design language",
-          "summary": "Palette: teaching a small model to build decks in your design language"
-        }
-      }
-    },
-    {
-      "slug": "20261013-gemini-4-argon-for-robotics-884ebf3c",
+      "slug": "20261013-developing-gemini-4-argon-responsibly-and-safely-471508c0",
       "topic": "AI Research",
       "source": "DeepMind Blog",
       "sourceFeed": "https://deepmind.google/blog/rss.xml",
-      "href": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-      "publishedAt": "2026-10-13T16:01:58.000Z",
+      "href": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "publishedAt": "2026-10-13T19:43:07.000Z",
       "discoveredAt": "2026-10-13T22:42:20.913Z",
       "locales": {
         "en": {
-          "title": "Gemini 4 Argon for Robotics",
-          "summary": "Gemini 4 Argon for Robotics"
+          "title": "Developing Gemini 4 Argon responsibly and safely",
+          "summary": "Developing Gemini 4 Argon responsibly and safely"
         },
         "fr": {
-          "title": "Gemini 4 Argon for Robotics",
-          "summary": "Gemini 4 Argon for Robotics"
+          "title": "Developing Gemini 4 Argon responsibly and safely",
+          "summary": "Developing Gemini 4 Argon responsibly and safely"
         }
       }
     },
@@ -4487,25 +4506,6 @@
       }
     },
     {
-      "slug": "20261023-bringing-post-quantum-cryptography-to-geographically-fenced-key--c3aa2fd8",
-      "topic": "Computer Systems",
-      "source": "Cloudflare Blog",
-      "sourceFeed": "https://blog.cloudflare.com/rss/",
-      "href": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
-      "publishedAt": "2026-10-23T18:06:56.000Z",
-      "discoveredAt": "2026-10-23T21:22:03.530Z",
-      "locales": {
-        "en": {
-          "title": "Bringing post-quantum cryptography to geographically fenced key management",
-          "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quan…"
-        },
-        "fr": {
-          "title": "Bringing post-quantum cryptography to geographically fenced key management",
-          "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quan…"
-        }
-      }
-    },
-    {
       "slug": "20261028-ai-for-science-expands-to-foundations-and-research-institutions-ad10900d",
       "topic": "AI Systems",
       "source": "Anthropic News",
@@ -4544,21 +4544,21 @@
       }
     },
     {
-      "slug": "20261014-github-availability-report-september-2026-86f0f518",
-      "topic": "Computer Science",
-      "source": "GitHub Blog",
-      "sourceFeed": "https://github.blog/feed/",
-      "href": "https://github.blog/news-insights/company-news/github-availability-report-september-2026/",
-      "publishedAt": "2026-10-14T20:01:35.000Z",
-      "discoveredAt": "2026-10-14T21:38:47.383Z",
+      "slug": "20261103-palette-teaching-a-small-model-to-build-decks-in-your-design-lan-bc417703",
+      "topic": "AI Systems",
+      "source": "Hugging Face Blog",
+      "sourceFeed": "https://huggingface.co/blog/feed.xml",
+      "href": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "publishedAt": "2026-11-03T16:35:36.000Z",
+      "discoveredAt": "2026-11-03T23:19:25.270Z",
       "locales": {
         "en": {
-          "title": "GitHub availability report: September 2026",
-          "summary": "In September, we experienced two incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: September 2026 appeared first on The GitHub Blog ."
+          "title": "Palette: teaching a small model to build decks in your design language",
+          "summary": "Palette: teaching a small model to build decks in your design language"
         },
         "fr": {
-          "title": "GitHub availability report: September 2026",
-          "summary": "In September, we experienced two incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: September 2026 appeared first on The GitHub Blog ."
+          "title": "Palette: teaching a small model to build decks in your design language",
+          "summary": "Palette: teaching a small model to build decks in your design language"
         }
       }
     }
