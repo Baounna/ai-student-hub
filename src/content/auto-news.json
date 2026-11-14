@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T23:30:59.246Z",
+  "updatedAt": "2026-11-14T13:28:12.268Z",
   "items": [
+    {
+      "slug": "20261114-using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simula-2bc7933d",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
+      "publishedAt": "2026-11-14T01:07:04.000Z",
+      "discoveredAt": "2026-11-14T13:28:12.268Z",
+      "locales": {
+        "en": {
+          "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
+          "summary": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions..."
+        },
+        "fr": {
+          "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
+          "summary": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions..."
+        }
+      }
+    },
     {
       "slug": "20261113-building-strong-safety-evaluations-26498fde",
       "topic": "Security & Standards",
@@ -37,25 +56,6 @@
         "fr": {
           "title": "Production MLOps at GS Caltex with Amazon SageMaker Canvas, part 1",
           "summary": "GS Caltex connects Amazon SageMaker Canvas to Amazon SageMaker Pipelines so process engineers' no-code models run in production. This post shows how ML engineers reuse validated preprocessing flows and models, cutting deployment…"
-        }
-      }
-    },
-    {
-      "slug": "20261113-faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-02e137f3",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas/",
-      "publishedAt": "2026-11-13T22:14:10.000Z",
-      "discoveredAt": "2026-11-13T23:30:59.246Z",
-      "locales": {
-        "en": {
-          "title": "Faster Scientific Simulations with New FP64 Algorithms in NVIDIA cuBLAS",
-          "summary": "Many scientific simulations, from molecular chemistry to materials science, spend the majority of their execution time computing high-precision dense general..."
-        },
-        "fr": {
-          "title": "Faster Scientific Simulations with New FP64 Algorithms in NVIDIA cuBLAS",
-          "summary": "Many scientific simulations, from molecular chemistry to materials science, spend the majority of their execution time computing high-precision dense general..."
         }
       }
     },
@@ -364,6 +364,25 @@
       }
     },
     {
+      "slug": "20261113-faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-02e137f3",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas/",
+      "publishedAt": "2026-11-13T22:14:10.000Z",
+      "discoveredAt": "2026-11-13T23:30:59.246Z",
+      "locales": {
+        "en": {
+          "title": "Faster Scientific Simulations with New FP64 Algorithms in NVIDIA cuBLAS",
+          "summary": "Many scientific simulations, from molecular chemistry to materials science, spend the majority of their execution time computing high-precision dense general..."
+        },
+        "fr": {
+          "title": "Faster Scientific Simulations with New FP64 Algorithms in NVIDIA cuBLAS",
+          "summary": "Many scientific simulations, from molecular chemistry to materials science, spend the majority of their execution time computing high-precision dense general..."
+        }
+      }
+    },
+    {
       "slug": "20261108-the-components-of-agent-memory-594105e3",
       "topic": "AI Systems",
       "source": "Anthropic Engineering",
@@ -398,25 +417,6 @@
         "fr": {
           "title": "Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard",
           "summary": "Coding agents work in tasks, and the number that matters is cost per solved task, not price per token. In this post, you use the AWS CDK to deploy LiteLLM with the NVIDIA NeMo Switchyard routing plugin on Amazon Bedrock, then mea…"
-        }
-      }
-    },
-    {
-      "slug": "20261113-run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton-4194ee65",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
-      "publishedAt": "2026-11-13T21:17:30.000Z",
-      "discoveredAt": "2026-11-13T23:30:59.246Z",
-      "locales": {
-        "en": {
-          "title": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton",
-          "summary": "Imaging black holes is challenging because they are distant and appear tiny in the sky—for example, M87*’s observed ring spans just 42 microarcseconds. The..."
-        },
-        "fr": {
-          "title": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton",
-          "summary": "Imaging black holes is challenging because they are distant and appear tiny in the sky—for example, M87*’s observed ring spans just 42 microarcseconds. The..."
         }
       }
     },
@@ -725,6 +725,25 @@
       }
     },
     {
+      "slug": "20261113-run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton-4194ee65",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+      "publishedAt": "2026-11-13T21:17:30.000Z",
+      "discoveredAt": "2026-11-13T23:30:59.246Z",
+      "locales": {
+        "en": {
+          "title": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton",
+          "summary": "Imaging black holes is challenging because they are distant and appear tiny in the sky—for example, M87*’s observed ring spans just 42 microarcseconds. The..."
+        },
+        "fr": {
+          "title": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton",
+          "summary": "Imaging black holes is challenging because they are distant and appear tiny in the sky—for example, M87*’s observed ring spans just 42 microarcseconds. The..."
+        }
+      }
+    },
+    {
       "slug": "20261108-how-we-contain-claude-across-products-2c07053c",
       "topic": "Computer Systems",
       "source": "Anthropic Engineering",
@@ -759,25 +778,6 @@
         "fr": {
           "title": "Architecture patterns for fast session startup on Amazon Bedrock AgentCore runtime",
           "summary": "Amazon Bedrock AgentCore runtime V2 snapshots your initialized environment and restores it for each new session, so session start no longer grows with image size. This post explains how V2 starts a session, how to measure session…"
-        }
-      }
-    },
-    {
-      "slug": "20261113-run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-usi-a05643d8",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla/",
-      "publishedAt": "2026-11-13T18:57:35.000Z",
-      "discoveredAt": "2026-11-13T23:30:59.246Z",
-      "locales": {
-        "en": {
-          "title": "Run Native DLA Inference in Python on NVIDIA Jetson AGX Orin Using cuDLA",
-          "summary": "AI applications at the edge often need to run multiple neural networks within limited compute and power budgets. NVIDIA Deep Learning Accelerator (DLA)..."
-        },
-        "fr": {
-          "title": "Run Native DLA Inference in Python on NVIDIA Jetson AGX Orin Using cuDLA",
-          "summary": "AI applications at the edge often need to run multiple neural networks within limited compute and power budgets. NVIDIA Deep Learning Accelerator (DLA)..."
         }
       }
     },
@@ -1086,6 +1086,25 @@
       }
     },
     {
+      "slug": "20261113-run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-usi-a05643d8",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla/",
+      "publishedAt": "2026-11-13T18:57:35.000Z",
+      "discoveredAt": "2026-11-13T23:30:59.246Z",
+      "locales": {
+        "en": {
+          "title": "Run Native DLA Inference in Python on NVIDIA Jetson AGX Orin Using cuDLA",
+          "summary": "AI applications at the edge often need to run multiple neural networks within limited compute and power budgets. NVIDIA Deep Learning Accelerator (DLA)..."
+        },
+        "fr": {
+          "title": "Run Native DLA Inference in Python on NVIDIA Jetson AGX Orin Using cuDLA",
+          "summary": "AI applications at the edge often need to run multiple neural networks within limited compute and power budgets. NVIDIA Deep Learning Accelerator (DLA)..."
+        }
+      }
+    },
+    {
       "slug": "20261108-an-update-on-recent-claude-code-quality-reports-00aee046",
       "topic": "Computer Systems",
       "source": "Anthropic Engineering",
@@ -1120,25 +1139,6 @@
         "fr": {
           "title": "OpenFold3 on Amazon SageMaker JumpStart: Predict biomolecular structures",
           "summary": "Deploy OpenFold3-preview from Amazon SageMaker JumpStart to predict 3D structures of proteins, DNA, RNA, and ligand complexes in your own AWS account. The post covers asynchronous inference, multi-GPU parallelism, bringing your o…"
-        }
-      }
-    },
-    {
-      "slug": "20261113-adapt-human-motion-for-robots-with-nvidia-soma-retargeter-647ecc58",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/",
-      "publishedAt": "2026-11-13T00:46:19.000Z",
-      "discoveredAt": "2026-11-13T23:30:59.246Z",
-      "locales": {
-        "en": {
-          "title": "Adapt Human Motion for Robots with NVIDIA SOMA Retargeter",
-          "summary": "Human motion offers roboticists a great starting point for teaching humanoid robots how to move. A human demonstration captures the coordination and timing..."
-        },
-        "fr": {
-          "title": "Adapt Human Motion for Robots with NVIDIA SOMA Retargeter",
-          "summary": "Human motion offers roboticists a great starting point for teaching humanoid robots how to move. A human demonstration captures the coordination and timing..."
         }
       }
     },
@@ -1447,6 +1447,25 @@
       }
     },
     {
+      "slug": "20261113-adapt-human-motion-for-robots-with-nvidia-soma-retargeter-647ecc58",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/",
+      "publishedAt": "2026-11-13T00:46:19.000Z",
+      "discoveredAt": "2026-11-13T23:30:59.246Z",
+      "locales": {
+        "en": {
+          "title": "Adapt Human Motion for Robots with NVIDIA SOMA Retargeter",
+          "summary": "Human motion offers roboticists a great starting point for teaching humanoid robots how to move. A human demonstration captures the coordination and timing..."
+        },
+        "fr": {
+          "title": "Adapt Human Motion for Robots with NVIDIA SOMA Retargeter",
+          "summary": "Human motion offers roboticists a great starting point for teaching humanoid robots how to move. A human demonstration captures the coordination and timing..."
+        }
+      }
+    },
+    {
       "slug": "20261108-scaling-managed-agents-decoupling-the-brain-from-the-hands-fe35c48a",
       "topic": "AI Systems",
       "source": "Anthropic Engineering",
@@ -1481,25 +1500,6 @@
         "fr": {
           "title": "Cost-optimizing AssemblyAI speech-to-text inference on AWS with Amazon EC2 Spot",
           "summary": "Learn how AssemblyAI runs cost-optimized speech-to-text inference at scale on AWS, using Amazon ECS, Amazon EC2 Spot GPU instances, and an Amazon SQS-based retry architecture to achieve 70% cost savings while maintaining SLA comm…"
-        }
-      }
-    },
-    {
-      "slug": "20261112-when-one-gpu-isnt-enough-serving-glm-53-across-two-nvidia-dgx-st-dbb6a705",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
-      "publishedAt": "2026-11-12T22:40:36.000Z",
-      "discoveredAt": "2026-11-13T23:30:59.246Z",
-      "locales": {
-        "en": {
-          "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
-          "summary": "Running a frontier-scale model locally means keeping all its weights in GPU memory; the largest models no longer fit on one machine. Two NVIDIA DGX Stations..."
-        },
-        "fr": {
-          "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
-          "summary": "Running a frontier-scale model locally means keeping all its weights in GPU memory; the largest models no longer fit on one machine. Two NVIDIA DGX Stations..."
         }
       }
     },
@@ -1808,6 +1808,25 @@
       }
     },
     {
+      "slug": "20261112-when-one-gpu-isnt-enough-serving-glm-53-across-two-nvidia-dgx-st-dbb6a705",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+      "publishedAt": "2026-11-12T22:40:36.000Z",
+      "discoveredAt": "2026-11-13T23:30:59.246Z",
+      "locales": {
+        "en": {
+          "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
+          "summary": "Running a frontier-scale model locally means keeping all its weights in GPU memory; the largest models no longer fit on one machine. Two NVIDIA DGX Stations..."
+        },
+        "fr": {
+          "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
+          "summary": "Running a frontier-scale model locally means keeping all its weights in GPU memory; the largest models no longer fit on one machine. Two NVIDIA DGX Stations..."
+        }
+      }
+    },
+    {
       "slug": "20261108-how-we-built-claude-code-auto-mode-a-safer-way-to-skip-permissio-b23f6db0",
       "topic": "Computer Systems",
       "source": "Anthropic Engineering",
@@ -1842,25 +1861,6 @@
         "fr": {
           "title": "Cost attribution and controls for AI developer and productivity tools on Amazon Bedrock",
           "summary": "Amazon Bedrock provides built-in, zero-instrumentation cost attribution that traces every inference call back to the IAM principal that made it. This post shows how to attribute per-user Bedrock costs for AI developer and product…"
-        }
-      }
-    },
-    {
-      "slug": "20261110-running-av-reasoning-models-within-onboard-compute-and-latency-l-5a1c4dfb",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
-      "publishedAt": "2026-11-10T22:04:05.000Z",
-      "discoveredAt": "2026-11-10T23:17:04.643Z",
-      "locales": {
-        "en": {
-          "title": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
-          "summary": "Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide..."
-        },
-        "fr": {
-          "title": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
-          "summary": "Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide..."
         }
       }
     },
@@ -2150,6 +2150,25 @@
       }
     },
     {
+      "slug": "20261110-running-av-reasoning-models-within-onboard-compute-and-latency-l-5a1c4dfb",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+      "publishedAt": "2026-11-10T22:04:05.000Z",
+      "discoveredAt": "2026-11-10T23:17:04.643Z",
+      "locales": {
+        "en": {
+          "title": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
+          "summary": "Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide..."
+        },
+        "fr": {
+          "title": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
+          "summary": "Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide..."
+        }
+      }
+    },
+    {
       "slug": "20261108-eval-awareness-in-claude-opus-46s-browsecomp-performance-391a2df2",
       "topic": "AI Performance",
       "source": "Anthropic Engineering",
@@ -2184,25 +2203,6 @@
         "fr": {
           "title": "Build a model improvement flywheel with Amazon SageMaker HyperPod Data Capture",
           "summary": "Amazon SageMaker HyperPod Data Capture records live inference inputs and outputs to Amazon S3. This post walks through one end-to-end example: capturing a support router's production traffic, surfacing a new-product blind spot wi…"
-        }
-      }
-    },
-    {
-      "slug": "20261110-start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot-ce98a6a1",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
-      "publishedAt": "2026-11-10T17:17:33.000Z",
-      "discoveredAt": "2026-11-10T23:17:04.643Z",
-      "locales": {
-        "en": {
-          "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
-          "summary": "NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference..."
-        },
-        "fr": {
-          "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
-          "summary": "NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference..."
         }
       }
     },
@@ -2473,6 +2473,25 @@
       }
     },
     {
+      "slug": "20261110-start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot-ce98a6a1",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
+      "publishedAt": "2026-11-10T17:17:33.000Z",
+      "discoveredAt": "2026-11-10T23:17:04.643Z",
+      "locales": {
+        "en": {
+          "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
+          "summary": "NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference..."
+        },
+        "fr": {
+          "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
+          "summary": "NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference..."
+        }
+      }
+    },
+    {
       "slug": "20261108-building-a-c-compiler-with-a-team-of-parallel-claudes-4389fb28",
       "topic": "Computer Science",
       "source": "Anthropic Engineering",
@@ -2507,25 +2526,6 @@
         "fr": {
           "title": "Deploy frontier AI models on AWS Trainium with SGLang-Neuron",
           "summary": "SGLang-Neuron is now publicly available through an AWS Deep Learning Container. With SGLang-Neuron, you can serve models and generate reinforcement learning rollouts with SGLang on AWS Trainium using the same SGLang interface you…"
-        }
-      }
-    },
-    {
-      "slug": "20261110-agent-substrate-advancing-kubernetes-for-agents-at-scale-863e6036",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale/",
-      "publishedAt": "2026-11-10T15:05:30.000Z",
-      "discoveredAt": "2026-11-10T23:17:04.643Z",
-      "locales": {
-        "en": {
-          "title": "Agent Substrate: Advancing Kubernetes for Agents at Scale",
-          "summary": "AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn’t built for that. Running one Pod per..."
-        },
-        "fr": {
-          "title": "Agent Substrate: Advancing Kubernetes for Agents at Scale",
-          "summary": "AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn’t built for that. Running one Pod per..."
         }
       }
     },
@@ -2777,6 +2777,25 @@
       }
     },
     {
+      "slug": "20261110-agent-substrate-advancing-kubernetes-for-agents-at-scale-863e6036",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale/",
+      "publishedAt": "2026-11-10T15:05:30.000Z",
+      "discoveredAt": "2026-11-10T23:17:04.643Z",
+      "locales": {
+        "en": {
+          "title": "Agent Substrate: Advancing Kubernetes for Agents at Scale",
+          "summary": "AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn’t built for that. Running one Pod per..."
+        },
+        "fr": {
+          "title": "Agent Substrate: Advancing Kubernetes for Agents at Scale",
+          "summary": "AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn’t built for that. Running one Pod per..."
+        }
+      }
+    },
+    {
       "slug": "20261108-quantifying-infrastructure-noise-in-agentic-coding-evals-83178387",
       "topic": "AI Systems",
       "source": "Anthropic Engineering",
@@ -2811,25 +2830,6 @@
         "fr": {
           "title": "How Natera designed an agentic AI system for lab ops with Amazon Bedrock AgentCore",
           "summary": "Natera built SWARM, an agentic AI system on Amazon Bedrock AgentCore that captures institutional lab-operations knowledge and deploys it at scale. This post walks through the full architecture, from knowledge base construction to…"
-        }
-      }
-    },
-    {
-      "slug": "20261110-manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-ku-c71df797",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
-      "publishedAt": "2026-11-10T15:02:52.000Z",
-      "discoveredAt": "2026-11-10T23:17:04.643Z",
-      "locales": {
-        "en": {
-          "title": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
-          "summary": "NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure—NVIDIA Kubernetes Engine (NVKE) and..."
-        },
-        "fr": {
-          "title": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
-          "summary": "NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure—NVIDIA Kubernetes Engine (NVKE) and..."
         }
       }
     },
@@ -3062,6 +3062,25 @@
       }
     },
     {
+      "slug": "20261110-manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-ku-c71df797",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+      "publishedAt": "2026-11-10T15:02:52.000Z",
+      "discoveredAt": "2026-11-10T23:17:04.643Z",
+      "locales": {
+        "en": {
+          "title": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
+          "summary": "NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure—NVIDIA Kubernetes Engine (NVKE) and..."
+        },
+        "fr": {
+          "title": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
+          "summary": "NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure—NVIDIA Kubernetes Engine (NVKE) and..."
+        }
+      }
+    },
+    {
       "slug": "20261108-demystifying-evals-for-ai-agents-cb9bb6ac",
       "topic": "AI Systems",
       "source": "Anthropic Engineering",
@@ -3096,25 +3115,6 @@
         "fr": {
           "title": "Four Amazon Bedrock inference choices that affect cost",
           "summary": "Your Amazon Bedrock inference bill can keep climbing even after you tune prompts and application logic. Four request-level choices (cache duration, service tier, reasoning effort, and maxTokens) change how many tokens the service…"
-        }
-      }
-    },
-    {
-      "slug": "20261110-validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidi-29a3eb71",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
-      "publishedAt": "2026-11-10T00:13:40.000Z",
-      "discoveredAt": "2026-11-12T00:39:32.031Z",
-      "locales": {
-        "en": {
-          "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
-          "summary": "As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform..."
-        },
-        "fr": {
-          "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
-          "summary": "As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform..."
         }
       }
     },
@@ -3347,6 +3347,25 @@
       }
     },
     {
+      "slug": "20261110-validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidi-29a3eb71",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+      "publishedAt": "2026-11-10T00:13:40.000Z",
+      "discoveredAt": "2026-11-12T00:39:32.031Z",
+      "locales": {
+        "en": {
+          "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
+          "summary": "As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform..."
+        },
+        "fr": {
+          "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
+          "summary": "As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform..."
+        }
+      }
+    },
+    {
       "slug": "20261013-featured-redesigning-source-control-at-anthropic-as-our-merges-p-8c17f1f1",
       "topic": "Computer Systems",
       "source": "Anthropic Engineering",
@@ -3381,25 +3400,6 @@
         "fr": {
           "title": "Tokenomics at scale: Track and cap Amazon Bedrock spend per IAM principal with CUR 2.0 and AWS Budgets",
           "summary": "Get per-identity Amazon Bedrock cost visibility and enforceable spend limits using only AWS-native features, with no application code for the common case. Attribute spend with IAM principal tags, report with CUR 2.0 or Cost Explo…"
-        }
-      }
-    },
-    {
-      "slug": "20261109-make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5-29679bac",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5/",
-      "publishedAt": "2026-11-09T19:09:36.000Z",
-      "discoveredAt": "2026-11-10T01:30:14.928Z",
-      "locales": {
-        "en": {
-          "title": "Make a Robot Arm Feel Weightless with NVIDIA Holoscan 5",
-          "summary": "Picture guiding a robot arm by hand while its motors supply just enough torque to support its weight and keep the robot upright. This simple interaction, a..."
-        },
-        "fr": {
-          "title": "Make a Robot Arm Feel Weightless with NVIDIA Holoscan 5",
-          "summary": "Picture guiding a robot arm by hand while its motors supply just enough torque to support its weight and keep the robot upright. This simple interaction, a..."
         }
       }
     },
@@ -3613,6 +3613,25 @@
       }
     },
     {
+      "slug": "20261109-make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5-29679bac",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5/",
+      "publishedAt": "2026-11-09T19:09:36.000Z",
+      "discoveredAt": "2026-11-10T01:30:14.928Z",
+      "locales": {
+        "en": {
+          "title": "Make a Robot Arm Feel Weightless with NVIDIA Holoscan 5",
+          "summary": "Picture guiding a robot arm by hand while its motors supply just enough torque to support its weight and keep the robot upright. This simple interaction, a..."
+        },
+        "fr": {
+          "title": "Make a Robot Arm Feel Weightless with NVIDIA Holoscan 5",
+          "summary": "Picture guiding a robot arm by hand while its motors supply just enough torque to support its weight and keep the robot upright. This simple interaction, a..."
+        }
+      }
+    },
+    {
       "slug": "20261013-redesigning-source-control-at-anthropic-26049a43",
       "topic": "Computer Systems",
       "source": "Anthropic Engineering",
@@ -3647,25 +3666,6 @@
         "fr": {
           "title": "Optimizing cost per task and proving agent ROI on Amazon Bedrock",
           "summary": "Comparing per-token prices hides the real cost of running a model on Amazon Bedrock. This post shows how to calculate the true cost per task across four hidden cost drivers, reduce it with caching, routing, and output constraints…"
-        }
-      }
-    },
-    {
-      "slug": "20261109-nvidia-nemotron-35-super-vl-powers-specialized-agents-with-multi-652caa15",
-      "topic": "AI Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
-      "publishedAt": "2026-11-09T17:57:41.000Z",
-      "discoveredAt": "2026-11-10T01:30:14.928Z",
-      "locales": {
-        "en": {
-          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
-        },
-        "fr": {
-          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
         }
       }
     },
@@ -3879,6 +3879,25 @@
       }
     },
     {
+      "slug": "20261109-nvidia-nemotron-35-super-vl-powers-specialized-agents-with-multi-652caa15",
+      "topic": "AI Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
+      "publishedAt": "2026-11-09T17:57:41.000Z",
+      "discoveredAt": "2026-11-10T01:30:14.928Z",
+      "locales": {
+        "en": {
+          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
+          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
+        },
+        "fr": {
+          "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
+          "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,..."
+        }
+      }
+    },
+    {
       "slug": "20261112-building-a-self-service-llm-gateway-with-amazon-bedrock-and-lite-b7b9161e",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -3894,25 +3913,6 @@
         "fr": {
           "title": "Building a self-service LLM gateway with Amazon Bedrock and LiteLLM",
           "summary": "Build a self-service LLM gateway with LiteLLM on AWS Fargate that puts Amazon Bedrock foundation models behind an OpenAI-compatible API. Developers get instant access through a single API key, while platform teams gain per-user c…"
-        }
-      }
-    },
-    {
-      "slug": "20261106-speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blac-a2d076a9",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
-      "publishedAt": "2026-11-06T22:20:31.000Z",
-      "discoveredAt": "2026-11-06T23:06:21.841Z",
-      "locales": {
-        "en": {
-          "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
-          "summary": "When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an..."
-        },
-        "fr": {
-          "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
-          "summary": "When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an..."
         }
       }
     },
@@ -4126,6 +4126,25 @@
       }
     },
     {
+      "slug": "20261106-speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blac-a2d076a9",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+      "publishedAt": "2026-11-06T22:20:31.000Z",
+      "discoveredAt": "2026-11-06T23:06:21.841Z",
+      "locales": {
+        "en": {
+          "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
+          "summary": "When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an..."
+        },
+        "fr": {
+          "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
+          "summary": "When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an..."
+        }
+      }
+    },
+    {
       "slug": "20261112-run-agents-securely-and-efficiently-with-the-next-generation-age-66bdd92f",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -4141,25 +4160,6 @@
         "fr": {
           "title": "Run agents securely and efficiently with the next generation AgentCore runtime",
           "summary": "AI agents now run multi-step workloads for hours and act on behalf of users, raising the bar for secure, scalable agent compute. Learn how the next generation of Amazon Bedrock AgentCore runtime delivers hardware-isolated session…"
-        }
-      }
-    },
-    {
-      "slug": "20261106-how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-effici-874cfb41",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency/",
-      "publishedAt": "2026-11-06T18:40:31.000Z",
-      "discoveredAt": "2026-11-06T23:06:21.841Z",
-      "locales": {
-        "en": {
-          "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
-          "summary": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a..."
-        },
-        "fr": {
-          "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
-          "summary": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a..."
         }
       }
     },
@@ -4373,6 +4373,25 @@
       }
     },
     {
+      "slug": "20261106-how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-effici-874cfb41",
+      "topic": "Computer Systems",
+      "source": "NVIDIA Developer Blog",
+      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
+      "href": "https://developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency/",
+      "publishedAt": "2026-11-06T18:40:31.000Z",
+      "discoveredAt": "2026-11-06T23:06:21.841Z",
+      "locales": {
+        "en": {
+          "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
+          "summary": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a..."
+        },
+        "fr": {
+          "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
+          "summary": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a..."
+        }
+      }
+    },
+    {
       "slug": "20261112-migrate-to-amazon-bedrock-managed-knowledge-base-with-your-codin-9e1f41c1",
       "topic": "AI Systems",
       "source": "AWS ML Blog",
@@ -4388,25 +4407,6 @@
         "fr": {
           "title": "Migrate to Amazon Bedrock Managed Knowledge Base with your coding agent",
           "summary": "The migration guide in the amazon-bedrock skill helps you migrate a customer-managed Amazon Bedrock knowledge base to a Managed Knowledge Base. Your coding agent plans the move with read-only discovery, creates the new knowledge…"
-        }
-      }
-    },
-    {
-      "slug": "20261106-accelerating-reinforcement-learning-weight-refit-with-the-reshar-ee3ebb0c",
-      "topic": "Computer Systems",
-      "source": "NVIDIA Developer Blog",
-      "sourceFeed": "https://developer.nvidia.com/blog/feed/",
-      "href": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
-      "publishedAt": "2026-11-06T18:22:43.000Z",
-      "discoveredAt": "2026-11-06T23:06:21.841Z",
-      "locales": {
-        "en": {
-          "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
-          "summary": "During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For..."
-        },
-        "fr": {
-          "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
-          "summary": "During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For..."
         }
       }
     },
@@ -4449,21 +4449,21 @@
       }
     },
     {
-      "slug": "20261109-coderabbit-scales-agentic-software-development-and-ships-20x-mor-23b94c69",
+      "slug": "20261109-kuken-industries-searches-70-years-of-drawings-in-minutes-932fe34b",
       "topic": "AI Systems",
       "source": "OpenAI News",
       "sourceFeed": "https://openai.com/news/rss.xml",
-      "href": "https://openai.com/index/coderabbit-codex-daybreak",
+      "href": "https://openai.com/index/kuken",
       "publishedAt": "2026-11-09T08:00:00.000Z",
-      "discoveredAt": "2026-11-10T01:30:14.928Z",
+      "discoveredAt": "2026-11-14T13:28:12.268Z",
       "locales": {
         "en": {
-          "title": "CodeRabbit scales agentic software development and ships 20x more",
-          "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team."
+          "title": "Kuken Industries searches 70 years of drawings in minutes",
+          "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour."
         },
         "fr": {
-          "title": "CodeRabbit scales agentic software development and ships 20x more",
-          "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team."
+          "title": "Kuken Industries searches 70 years of drawings in minutes",
+          "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour."
         }
       }
     },
